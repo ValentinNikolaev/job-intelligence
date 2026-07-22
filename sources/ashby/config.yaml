@@ -1,0 +1,62 @@
+version: 1
+timeout_seconds: 30
+
+# Ashby boards expose all of a company's jobs. Keep only remote engineering
+# roles whose declared primary or secondary location covers the target market.
+filters:
+  remote_only: true
+  location_terms:
+    - Italy
+    - Germany
+    - Netherlands
+    - Europe
+    - European Union
+    - EMEA
+    - Worldwide
+    - Anywhere
+    - Global
+  title_terms:
+    - backend
+    - software engineer
+    - software developer
+    - platform engineer
+    - cloud engineer
+    - infrastructure engineer
+    - site reliability
+    - SRE
+    - technical lead
+    - tech lead
+    - engineering lead
+    - engineering manager
+    - lead engineer
+    - senior engineer
+    - staff engineer
+    - principal engineer
+
+boards:
+  - name: amboss
+    company: AMBOSS
+  - name: ashby
+    company: Ashby
+  - name: codesphere
+    company: Codesphere
+  - name: docker
+    company: Docker
+  - name: hopper
+    company: Hopper
+  - name: jimdo.com
+    company: Jimdo
+  - name: kong
+    company: Kong
+  - name: n8n
+    company: n8n
+  - name: satispay
+    company: Satispay
+  - name: stream
+    company: Stream
+  - name: tuotempo
+    company: TuoTempo
+  - name: weaviate
+    company: Weaviate
+  - name: ygo
+    company: YGO

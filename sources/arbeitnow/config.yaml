@@ -1,0 +1,9 @@
+# Arbeitnow is a public feed and requires no API key.
+version: 1
+
+# Stop after this many pages. Set to null to follow pagination until the feed ends.
+max_pages: 5
+timeout_seconds: 30
+
+# Optional documented API filter. Set to true, false, or null for no filter.
+visa_sponsorship: null

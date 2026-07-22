@@ -1,0 +1,44 @@
+# Search settings only. Keep ADZUNA_APP_ID and ADZUNA_APP_KEY in ../.env.
+version: 1
+
+# The default Adzuna quotas are 250/day, 1000/week, and 2500/month.
+# Eleven requests per hourly run leaves roughly a 10% monthly reserve when
+# running nine times per workday over a 22-workday month.
+request_budget: 11
+results_per_page: 50
+max_pages_per_query: 11
+timeout_seconds: 30
+
+# Add one or more searches. Pages are fetched round-robin across queries.
+queries:
+  - country: it
+    what: "senior backend engineer"
+    max_days_old: 14
+    sort_by: date
+    max_pages: 3
+
+  - country: it
+    what: "golang backend engineer"
+    max_days_old: 14
+    sort_by: date
+    max_pages: 3
+
+  - country: it
+    what: "senior php backend developer"
+    max_days_old: 14
+    sort_by: date
+    max_pages: 2
+
+  - country: it
+    what: "backend technical lead"
+    max_days_old: 14
+    sort_by: date
+    max_pages: 1
+
+  - country: it
+    what: "backend engineer"
+    where: "Roma"
+    distance: 80
+    max_days_old: 14
+    sort_by: date
+    max_pages: 2

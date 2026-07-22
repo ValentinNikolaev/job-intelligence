@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate Vacancy Catalog"
+  short_description: "Generate the registry vacancy catalog"
+  default_prompt: "Use $generate-vacancy-catalog to regenerate the vacancy catalog in a separate operating-system process."

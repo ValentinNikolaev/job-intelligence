@@ -1,0 +1,43 @@
+# Search settings only. Keep JOOBLE_API_KEY in ../.env.
+version: 1
+
+# Jooble stated a default quota of 500 requests for this key, but its public
+# documentation does not state a reset period. This is a per-run safety budget,
+# not a claim about a daily or monthly allowance.
+request_budget: 10
+results_per_page: 50
+max_pages_per_profile: 5
+timeout_seconds: 30
+
+# Profiles are fetched round-robin under the shared request budget. Set enabled
+# to false to keep a profile without running it.
+query_profiles:
+  - name: backend-italy
+    keywords: "senior backend engineer"
+    location: "Italy"
+    max_pages: 2
+
+  - name: golang-italy
+    keywords: "golang backend engineer"
+    location: "Italy"
+    max_pages: 2
+
+  - name: php-italy
+    keywords: "senior php backend developer"
+    location: "Italy"
+    max_pages: 1
+
+  - name: tech-lead-italy
+    keywords: "backend technical lead"
+    location: "Italy"
+    max_pages: 1
+
+  - name: backend-remote-europe
+    keywords: "remote senior backend engineer"
+    location: "Europe"
+    max_pages: 2
+
+  - name: golang-remote-europe
+    keywords: "remote golang backend engineer"
+    location: "Europe"
+    max_pages: 2

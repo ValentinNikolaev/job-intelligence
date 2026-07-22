@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "job-intelligence"
+version = "0.1.0"
+description = "Minimal local-first job vacancy collector"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0,<7"]
+
+[project.scripts]
+job-intel = "jobintel.cli:main"
+
+[tool.setuptools]
+packages = ["jobintel", "discovery", "discovery.ashby"]

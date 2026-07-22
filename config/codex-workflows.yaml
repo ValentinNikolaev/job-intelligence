@@ -1,0 +1,23 @@
+schema_version: 1
+note: >-
+  These settings document which model to select when creating each Codex task.
+  Project code cannot switch the active Codex model. The publisher derives its
+  provenance label from the explicitly selected workflow.
+priority_score: 80
+prepare_min_score: 65
+workflows:
+  analyze:
+    model: gpt-5.6-luna
+    reasoning: low
+    model_label: codex:gpt-5.6-luna:low
+    purpose: High-volume vacancy scoring and initial selection.
+  prepare:
+    model: gpt-5.5
+    reasoning: medium
+    model_label: codex:gpt-5.5:medium
+    purpose: Normal application packages for vacancies scoring from 65 up to 79.
+  prepare_priority:
+    model: gpt-5.6-terra
+    reasoning: medium
+    model_label: codex:gpt-5.6-terra:medium
+    purpose: Application packages for vacancies with a match score of at least 80.

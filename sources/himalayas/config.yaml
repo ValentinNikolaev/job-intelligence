@@ -1,0 +1,47 @@
+# Himalayas is a free public API and requires no API key.
+version: 1
+timeout_seconds: 30
+
+# Search results use 1-based pages. Each query can override this with max_pages.
+max_pages_per_query: 5
+
+queries:
+  - q: "backend engineer"
+    country: "IT"
+    exclude_worldwide: true
+    seniority: "Senior"
+    sort: "recent"
+    max_pages: 2
+
+  - q: "golang"
+    country: "IT"
+    exclude_worldwide: true
+    seniority: "Senior"
+    sort: "recent"
+    max_pages: 2
+
+  - q: "php backend"
+    country: "IT"
+    exclude_worldwide: true
+    seniority: "Senior"
+    sort: "recent"
+    max_pages: 2
+
+  - q: "technical lead"
+    country: "IT"
+    exclude_worldwide: true
+    seniority: "Manager"
+    sort: "recent"
+    max_pages: 2
+
+  - q: "backend engineer"
+    worldwide: true
+    seniority: "Senior"
+    sort: "recent"
+    max_pages: 2
+
+  - q: "golang"
+    worldwide: true
+    seniority: "Senior"
+    sort: "recent"
+    max_pages: 2
