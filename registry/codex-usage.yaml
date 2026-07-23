@@ -10,3 +10,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: c2401da594a54cba804ad20d45362ea1
+  recorded_at: '2026-07-23T21:18:15Z'
+  workflow: prepare
+  model: codex:gpt-5.5:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 22000
+  output_tokens: 12500
+  total_tokens: 34500
+  note: Estimated by Codex for normal preparation automation; exact task usage unavailable
+    in surface.
