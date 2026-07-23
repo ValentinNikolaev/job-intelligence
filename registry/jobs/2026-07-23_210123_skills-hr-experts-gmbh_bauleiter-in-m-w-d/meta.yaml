@@ -1,0 +1,26 @@
+schema_version: 2
+id: 619c89be-4a2e-4d44-8405-6d2a393630b8
+title: Bauleiter(in) (m/w/d)
+company: SKILLs HR Experts GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: bauleiterin-hamburg-481926
+  url: https://www.arbeitnow.com/jobs/companies/skills-hr-experts-gmbh/bauleiterin-hamburg-481926
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-23T16:00:31Z'
+discovered_at: '2026-07-23T21:01:23Z'
+updated_at: '2026-07-23T21:01:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:01:23Z'
+fingerprint: sha256:6f3a56a84c40ade449bc1788c63c0e1db7fb4a945c5cd43428cae59696bf5566
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

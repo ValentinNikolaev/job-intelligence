@@ -1,0 +1,23 @@
+schema_version: 2
+id: a7be2eaa-57b1-49f1-a32f-ab84d0b9768a
+title: Senior Backend Engineer - Activations
+company: LiveRamp
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '9222582080146728461'
+  url: https://jooble.org/desc/9222582080146728461?ckey=remote+senior+backend+engineer&rgn=55180&pos=30&groupId=2134052230&elckey=-3163107799733520165&p=1&aq=-8676479288463394413&cid=15922&jobAge=15&brelb=10&bscr=828.86145&scr=828.86145
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-23T21:04:24Z'
+updated_at: '2026-07-23T21:04:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:04:24Z'
+fingerprint: sha256:ccde44b6b16efaf6d7b753b145360956face1f7c1bb1d678039df37f815fd7f2
+data_source: jooble
+content_source: jooble
+company_content_source: null

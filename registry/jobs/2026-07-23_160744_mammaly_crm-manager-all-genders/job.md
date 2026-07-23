@@ -62,4 +62,4 @@ Hands-on Mentalität und eigenständiges Arbeiten
 
 - Als Bonus außerdem für dich: Wir bieten 75% MA Rabatt an auf Bestellungen bis zu einem Warenwert von 100 Euro pro Monat, BaV, BkV, und vieles Mehr gehören zum Standard.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

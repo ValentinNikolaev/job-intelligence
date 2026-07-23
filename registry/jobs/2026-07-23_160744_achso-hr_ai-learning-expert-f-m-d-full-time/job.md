@@ -1,6 +1,6 @@
 # AI Learning Expert (f/m/d) - full time
 
-Posted: 2026-07-23T12:30:29Z
+Posted: 2026-07-23T16:59:02Z
 
 **Who we are**
 
@@ -62,4 +62,4 @@ We're a fast-growing tech company helping businesses make smarter decisions thro
 
 Send us your CV and a short note on the AI tool you've found most useful in the last 3 months – and why. We read every application ourselves.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

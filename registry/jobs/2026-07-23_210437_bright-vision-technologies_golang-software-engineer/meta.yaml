@@ -1,0 +1,23 @@
+schema_version: 2
+id: 1b769726-11ab-4f1d-8d13-c008c156b06d
+title: Golang Software Engineer
+company: Bright Vision Technologies
+company_url: null
+location: Tempe, AZ
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '5776076754057474675'
+  url: https://jooble.org/desc/5776076754057474675?ckey=remote+golang+backend+engineer&rgn=55180&pos=10&groupId=1106121903&elckey=-8770618333941192245&p=1&aq=4092508146547491126&cid=15922&jobAge=87&brelb=100&bscr=230.95117&scr=230.95117
+published_at: '2026-07-20T00:00:00.0000000'
+discovered_at: '2026-07-23T21:04:37Z'
+updated_at: '2026-07-23T21:04:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:04:37Z'
+fingerprint: sha256:00f051617ec2e25dd0b7c50de5ed998624c45c8482bced34cbbc9faabd6369bf
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -58,4 +58,4 @@ In der Zentrale am Standort München wird nun ein ELO/ECM Softwareentwickler (m/
 
 Du fühlst Dich angesprochen?Dann bewirb Dich mit deinem Lebenslauf hier über das Bewerbungsformular oder via E-Mail.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

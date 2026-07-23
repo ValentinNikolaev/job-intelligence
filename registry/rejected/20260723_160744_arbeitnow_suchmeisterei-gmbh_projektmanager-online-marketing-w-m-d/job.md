@@ -1,6 +1,6 @@
 # Projektmanager Online-Marketing (w/m/d)
 
-Posted: 2026-07-23T13:30:58Z
+Posted: 2026-07-23T17:59:03Z
 
 ## Rejection
 
@@ -9,7 +9,7 @@ Posted: 2026-07-23T13:30:58Z
 
 ## Deine Aufgaben
 
-__Worum es bei uns gerade geh__t
+**Worum es bei uns gerade geh**t
 
 Projektmanagement im Online-Marketing bedeutet bei uns nicht, Tickets zu verwalten.
 
@@ -19,7 +19,7 @@ KI verändert gerade, wie wir arbeiten und was Kund:innen erwarten.
 
 Wir suchen jemanden, der das als Chance begreift und beides kann: strategisch denken und hands-on umsetzen.
 
-**Was du bei uns machst**
+## Was du bei uns machst
 
 - Du führst die Kundenbeziehung: Ziele und Roadmaps werden gemeinsam mit Kund:innen definiert, Kick-offs, Quartals-Reviews und Jour Fixes liegen bei dir
 
@@ -35,7 +35,7 @@ Wir suchen jemanden, der das als Chance begreift und beides kann: strategisch de
 
 - Du gestaltest den PM-Fachbereich aktiv mit: Standards, Learnings, Methoden
 
-Wie wir arbeiten
+## Wie wir arbeiten
 
 - Wir denken Kanäle zusammen und nicht in Silos
 
@@ -45,7 +45,7 @@ Wie wir arbeiten
 
 - Entscheidungen treffen wir gemeinsam und transparent
 
-**Wie der Job konkret aussieht**
+## Wie der Job konkret aussieht
 
 - Du arbeitest an mehreren Kundenprojekten gleichzeitig und bist die zentrale Ansprechperson für deine Kund:innen
 
@@ -70,7 +70,6 @@ Wie wir arbeiten
 - Strukturiertes, eigenverantwortliches Arbeiten auch mit mehreren Projekten, Deadlines und Stakeholdern parallel
 
 - Deutschkenntnisse im Kompetenzniveau C1
-
 Kurz gesagt: Du bist Ansprechperson, Strateg:in und Macher:in in einem.
 
 Du erfüllst nicht jedes Kriterium? Kein Problem. Wenn du glaubst, die Position passt zu dir, freuen wir uns auf deine Bewerbung.
@@ -101,4 +100,4 @@ Du erfüllst nicht jedes Kriterium? Kein Problem. Wenn du glaubst, die Position 
 
 Nach der Einarbeitung von etwa zwei Monaten kannst du größtenteils remote arbeiten, mit mindestens fünf Tagen pro Monat im Büro.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

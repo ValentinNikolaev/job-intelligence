@@ -86,4 +86,4 @@ Möglichkeit des Bike-Leasing und der betrieblichen Altersversorgung
 
 *(Auch wenn wir zur besseren Lesbarkeit im obigen Text die männliche Form gewählt haben,* *beziehen sich die Angaben auf Angehörige aller Geschlechter.)*
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,6 +1,6 @@
 # Produktentwickler (m/w/d)
 
-Posted: 2026-07-23T11:00:47Z
+Posted: 2026-07-23T15:29:02Z
 
 Sie begeistern sich für die Entwicklung innovativer technischer Produkte und möchten die Mobilität von morgen aktiv mitgestalten? Dann werden Sie Teil unseres Entwicklungsteams und bringen Sie Ihre Expertise in die Konstruktion und Optimierung anspruchsvoller mechanischer und elektromechanischer Komponenten für die Automobilindustrie ein. In einem internationalen Umfeld arbeiten Sie an zukunftsweisenden Lösungen – von der ersten Idee bis zur Serienreife.
 
@@ -68,4 +68,4 @@ Sie begeistern sich für die Entwicklung innovativer technischer Produkte und m�
 
 Wir freuen uns auf Ihre Bewerbung
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

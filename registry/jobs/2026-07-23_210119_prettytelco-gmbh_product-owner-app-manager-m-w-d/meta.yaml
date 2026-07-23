@@ -1,0 +1,26 @@
+schema_version: 2
+id: 5cc995af-7bb2-4b48-90bc-87d50574f8fd
+title: Product Owner / App Manager m/w/d
+company: prettyTELCO GmbH
+company_url: null
+location: Reken
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: product-owner-app-manager-reken-122807
+  url: https://www.arbeitnow.com/jobs/companies/prettytelco-gmbh/product-owner-app-manager-reken-122807
+  metadata:
+    tags:
+    - Project Management
+published_at: '2026-07-23T16:30:29Z'
+discovered_at: '2026-07-23T21:01:19Z'
+updated_at: '2026-07-23T21:01:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:01:19Z'
+fingerprint: sha256:17fe0f1683508587cca4fb62cbccd410bcf9b3e2ee7959a9c18bd5c41bdb2229
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

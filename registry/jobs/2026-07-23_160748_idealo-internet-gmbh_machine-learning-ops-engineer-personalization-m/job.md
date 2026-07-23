@@ -92,4 +92,4 @@ Strong communication and collaboration skills across technical and non-technical
 
 #LI-MR1
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

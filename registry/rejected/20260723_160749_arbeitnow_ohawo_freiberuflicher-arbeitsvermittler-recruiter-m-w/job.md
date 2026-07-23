@@ -47,4 +47,4 @@ Wir suchen einen motivierten und erfahrenen **Arbeitsvermittler / Recruiter (m/w
 
 Wenn Sie Erfahrung in der Arbeitsvermittlung mitbringen, gerne neue Kunden gewinnen und Freude daran haben, Unternehmen und Bewerber erfolgreich zusammenzubringen, freuen wir uns auf Ihre Bewerbung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

@@ -1,6 +1,6 @@
 # ITSC Manager-1st Line of Defense (m/w/d)
 
-Posted: 2026-07-23T13:31:01Z
+Posted: 2026-07-23T17:59:03Z
 
 **Über uns**
 
@@ -56,4 +56,4 @@ Unsere Teams arbeiten in Bereichen wie Banking & Payments, Cards und Trusted Sol
 
 - **Rabatte**: Mitgliedschaft bei Corporate Benefits u.v.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

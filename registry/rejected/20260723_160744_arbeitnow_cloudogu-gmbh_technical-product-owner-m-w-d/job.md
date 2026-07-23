@@ -55,4 +55,4 @@ Die Rolle bietet dir die Option, dich zur/zum Product Owner weiterzuentwickeln. 
 
 Wenn du gerne Menschen, Technik und Projekte zusammenbringst und spürbaren Impact schaffen möchtest, dann ist Cloudogu dein **space to be.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

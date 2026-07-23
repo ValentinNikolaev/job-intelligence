@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4593499040531709814'
+source_url: https://jooble.org/desc/-4593499040531709814?ckey=remote+senior+backend+engineer&rgn=55180&pos=45&groupId=2134052230&elckey=-3163107799733520165&p=1&aq=-8676479288463394413&cid=15922&jobAge=759&brelb=100&bscr=615.8981&scr=615.8981
+title: Senior Java Backend Engineer - Azure Microservices
+company: NTT DATA, Inc.
+location: Mexico
+published_at: '2026-06-22T19:43:06.6700000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-22T19:43:06.6700000 is older than 7 days
+updated_at: '2026-07-23T21:04:31Z'
+rejected_at: '2026-07-23T21:04:31Z'

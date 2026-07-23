@@ -28,6 +28,7 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
 
 - At the end of every successful task that changes repository files, regenerate the vacancy catalog when the workflow requires it, run the relevant checks, and inspect the complete Git diff.
 - Stage every added, modified, renamed, and deleted project file with `git add -A`. Never stage ignored secrets, `.codex-work/`, IDE files, caches, or virtual environments.
+- Every Job Intelligence task must finish by inspecting `git status` and the complete diff, staging every real project change with `git add -A`, committing once, and pushing the current branch to `origin` when the tree has changes. Never leave real project changes unstaged or uncommitted. Preserve only ignored secrets, `.codex-work/`, IDE files, caches, and virtual environments.
 - Commit the complete task as the final repository mutation with a concise message, then push the current branch to `origin`.
 - If there are no repository changes, do not create an empty commit; report that no push was needed.
 - End the user-facing report with a short changelog derived from the committed diff, followed by the commit hash and push result.

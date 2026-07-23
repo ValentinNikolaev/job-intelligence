@@ -1,0 +1,26 @@
+schema_version: 2
+id: aad2e771-3da8-4ff3-92b6-a675e133ed77
+title: SAP MM Inhouse Berater (m/w/d) / Bis zu 60% Home Office Anteil
+company: SAPPLIER GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sap-mm-inhouse-berater-bis-zu-60-home-office-anteil-hamburg-384010
+  url: https://www.arbeitnow.com/jobs/companies/sapplier-gmbh/sap-mm-inhouse-berater-bis-zu-60-home-office-anteil-hamburg-384010
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-23T16:30:27Z'
+discovered_at: '2026-07-23T21:01:21Z'
+updated_at: '2026-07-23T21:01:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:01:21Z'
+fingerprint: sha256:c55b36dd5db34b0977ce852aa64cf6ac812958d51faef8fec7a7d8219c427b9c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

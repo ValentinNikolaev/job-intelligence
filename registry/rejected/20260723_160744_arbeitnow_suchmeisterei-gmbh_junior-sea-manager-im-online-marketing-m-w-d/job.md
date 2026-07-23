@@ -1,6 +1,6 @@
 # Junior SEA Manager im Online-Marketing (m/w/d)
 
-Posted: 2026-07-23T13:30:57Z
+Posted: 2026-07-23T17:59:03Z
 
 ## Rejection
 
@@ -15,7 +15,7 @@ SEA verändert sich gerade grundlegend. Performance Max, Smart Bidding und KI-ge
 
 Für uns bedeutet das: Wir entwickeln SEA weiter. Nicht als Buzzword, sondern in der täglichen Arbeit mit echten Kund:innen. Wenn du Lust hast, neben deinem Wissen in SEA auch deine Fähigkeiten rund um KI auszubauen und früh Verantwortung für eigene Accounts zu übernehmen, dann bist du hier richtig.
 
-**Was du bei uns machst**
+## Was du bei uns machst
 
 - Du betreust eigene, kleinere Accounts und bist deren zentrale Ansprechperson für SEA, fachlich begleitet von erfahreneren Kolleg:innen
 
@@ -29,7 +29,7 @@ Für uns bedeutet das: Wir entwickeln SEA weiter. Nicht als Buzzword, sondern in
 
 - Du arbeitest eng mit SEO/GEO, Tracking, Social und Projektmanagement zusammen
 
-Wie wir arbeiten
+## Wie wir arbeiten
 
 - Wir haben keine Ellenbogenkultur – das Teamgefüge ist stark und alle helfen einander
 
@@ -39,7 +39,7 @@ Wie wir arbeiten
 
 - Entscheidungen entstehen im Austausch und nicht im Alleingang
 
-**Wie der Job konkret aussieht**
+## Wie der Job konkret aussieht
 
 - Du arbeitest an mehreren Accounts parallel
 
@@ -64,7 +64,6 @@ Wie wir arbeiten
 - Strukturierte Arbeitsweise und Verlässlichkeit
 
 - Deutschkenntnisse im Kompetenzniveau C1
-
 Du musst nicht alles können. Entscheidend ist, dass du verstehen willst, warum Kampagnen funktionieren oder nicht.
 
 Wenn du glaubst, die Position passt zu dir und du bist motiviert, dann freuen wir uns auf deine Bewerbung.
@@ -90,7 +89,6 @@ Wenn du glaubst, die Position passt zu dir und du bist motiviert, dann freuen wi
 - Bezahlte Überstunden, sofern sie überhaupt anfallen
 
 - Unbefristeter Arbeitsvertrag und transparente Gehaltsstruktur
-
 Nach der Einarbeitung von etwa zwei Monaten kannst du größtenteils remote arbeiten, mit mindestens fünf Tagen pro Monat im Büro.
 
 Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

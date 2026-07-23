@@ -49,4 +49,4 @@ Dann lass uns über diese Möglichkeit bei einem unserer Stammkunden, einem SAP 
 
 - bis zu 90.000€ (im Paket) (abhängig von Erfahrung)
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

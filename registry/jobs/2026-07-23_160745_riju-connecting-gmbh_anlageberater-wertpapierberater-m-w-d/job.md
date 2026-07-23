@@ -46,4 +46,4 @@ Sollten wir Ihr Interesse geweckt haben, lassen Sie usn gerne Ihre Bewerbungsunt
 
 Bei Fragen stehen wir Ihnen gerne unter 069-850966010 oder 0160-99806405 zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

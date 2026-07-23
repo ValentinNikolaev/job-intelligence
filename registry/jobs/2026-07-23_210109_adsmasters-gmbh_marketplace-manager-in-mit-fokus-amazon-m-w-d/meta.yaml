@@ -1,0 +1,27 @@
+schema_version: 2
+id: 76eeca59-205b-4861-8531-3498bc1623c7
+title: Marketplace Manager/in mit Fokus Amazon (m/w/d)
+company: Adsmasters GmbH
+company_url: null
+location: Düsseldorf
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: marketplace-manager-in-mit-fokus-amazon-dusseldorf-175464
+  url: https://www.arbeitnow.com/jobs/companies/adsmasters-gmbh/marketplace-manager-in-mit-fokus-amazon-dusseldorf-175464
+  metadata:
+    tags:
+    - Remote
+    - Marketing and Communication
+published_at: '2026-07-23T18:30:31Z'
+discovered_at: '2026-07-23T21:01:09Z'
+updated_at: '2026-07-23T21:01:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:01:09Z'
+fingerprint: sha256:e80da3fca2b49fcaa275808677a82c9a014bda2a084c1f9c9ef4863f47b753c7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

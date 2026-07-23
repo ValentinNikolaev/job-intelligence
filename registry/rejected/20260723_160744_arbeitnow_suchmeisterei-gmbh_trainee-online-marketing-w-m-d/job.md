@@ -1,6 +1,6 @@
 # Trainee Online-Marketing (w/m/d)
 
-Posted: 2026-07-23T13:30:57Z
+Posted: 2026-07-23T17:59:03Z
 
 ## Rejection
 
@@ -13,7 +13,7 @@ Posted: 2026-07-23T13:30:57Z
 
 Online-Marketing verändert sich gerade schneller als je zuvor. SEO/GEO, KI-gestützte Kampagnensteuerung, neue Plattformen: wer heute einsteigt, lernt das Fach in einem Moment, in dem sich die Grundlagen neu schreiben.Unser Traineeship ist kein Zuschauprogramm. Du arbeitest von Anfang an echten Kundenprojekten, lernst alle Disziplinen kennen und übernimmst früh Verantwortung.
 
-**Was du bei uns machst**
+## Was du bei uns machst
 
 - Du durchläufst in den ersten 6 Monaten alle Kernbereiche: SEO/GEO, SEA, Social Media, Programmatic Ads und Web Analytics
 
@@ -27,7 +27,7 @@ Online-Marketing verändert sich gerade schneller als je zuvor. SEO/GEO, KI-gest
 
 - In den zweiten 6 Monaten spezialisierst du dich auf den Bereich, der dir am meisten liegt
 
-Wie wir arbeiten
+## Wie wir arbeiten
 
 - Wir denken Kanäle zusammen und nicht in Silos
 
@@ -37,7 +37,7 @@ Wie wir arbeiten
 
 - Entscheidungen treffen wir gemeinsam und transparent
 
-**Wie das Traineeship konkret aussieht**
+## Wie das Traineeship konkret aussieht
 
 - Du startest mit einer durchdachten Einarbeitung: theoretische Grundlagen und praktische Aufgaben direkt für echte Kund:innen, von Anfang an
 
@@ -62,7 +62,6 @@ Wie wir arbeiten
 - Strukturiertes, verantwortungsbewusstes Arbeiten mit hohem Qualitätsanspruch
 
 - Deutschkenntnisse im Kompetenzniveau C1
-
 Kurz gesagt: Du bringst Neugier und Lernbereitschaft mit, den Rest lernst du bei uns.
 
 Du erfüllst nicht jedes Kriterium? Kein Problem. Wenn du glaubst, die Position passt zu dir, freuen wir uns auf deine Bewerbung.
@@ -86,7 +85,6 @@ Du erfüllst nicht jedes Kriterium? Kein Problem. Wenn du glaubst, die Position 
 - Bezahlte Überstunden, sofern sie überhaupt anfallen
 
 - Faire und transparente Gehaltsstruktur
-
 Nach der Einarbeitung von etwa zwei Monaten kannst du größtenteils remote arbeiten, mit mindestens fünf Tagen pro Monat im Büro.
 
 Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

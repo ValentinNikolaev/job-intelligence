@@ -50,4 +50,4 @@ Auch Kandidatinnen und Kandidaten mit Entwicklungspotenzial für eine zukünftig
 
 Unser Mandant zählt zu den technologisch führenden Industrieunternehmen seiner Branche. Im Zuge der Neuausrichtung des Geschäftsführungsteams wird eine technisch geprägte Unternehmerpersönlichkeit gesucht, die Innovation, industrielle Leistungsfähigkeit und Operational Excellence nachhaltig weiterentwickelt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

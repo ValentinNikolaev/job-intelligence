@@ -44,4 +44,4 @@ Posted: 2026-07-23T12:00:57Z
 
 - **Attraktive Benefits:** Du bekommst ein attraktives Gehalt, diverse Benefits und coole Mitarbeiterevents.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

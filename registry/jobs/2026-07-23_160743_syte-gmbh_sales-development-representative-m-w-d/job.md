@@ -78,4 +78,4 @@ Dein persönliches Benefit-Budget: 2.200,00 € jährlich für das, was dir wich
 
 - **BusinessBike**: Durch unsere Zusammenarbeit mit BusinessBike kannst du ganz einfach dein Wunschrad leasen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

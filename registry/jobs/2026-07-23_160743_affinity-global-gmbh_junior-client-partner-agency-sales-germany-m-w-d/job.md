@@ -1,6 +1,6 @@
-# (Junior) Client Partner, Agency Sales Germany (m/w/d)
+# (Junior) Client Partner, Agency Sales (m/w/d)
 
-Posted: 2026-07-23T14:00:32Z
+Posted: 2026-07-23T18:29:02Z
 
 **Standort:** Berlin, Hamburg oder Remote
 

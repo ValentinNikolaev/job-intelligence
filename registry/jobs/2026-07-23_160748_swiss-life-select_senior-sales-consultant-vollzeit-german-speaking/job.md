@@ -67,4 +67,4 @@ Klare Kommunikation in Deutsch und Englisch, sachlich, effizient, ohne Umwege.
 
 Führung mit Struktur, nicht mit Vision, sondern mit System.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

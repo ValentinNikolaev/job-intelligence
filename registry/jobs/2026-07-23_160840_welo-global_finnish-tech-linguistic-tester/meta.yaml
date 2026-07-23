@@ -24,12 +24,12 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        count: '100'
-        industry: dev
         geo: italy
+        industry: dev
+        count: '100'
 published_at: '2026-07-17T08:55:05Z'
 discovered_at: '2026-07-23T16:08:40Z'
-updated_at: '2026-07-23T16:08:40Z'
+updated_at: '2026-07-23T21:03:30Z'
 status: found
 status_history:
 - status: found

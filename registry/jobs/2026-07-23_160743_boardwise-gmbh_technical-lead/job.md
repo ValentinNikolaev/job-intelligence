@@ -1,6 +1,6 @@
-# Technical Lead
+# Technical Lead (f/m/d)
 
-Posted: 2026-07-23T14:30:33Z
+Posted: 2026-07-23T18:59:03Z
 
 ## Your mission
 
@@ -139,4 +139,4 @@ F#, [ASP.NET](http://ASP.NET) Core, React, Azure, Microsoft 365, Event-Driven Ar
 
 Work from wherever you're most productive—our Hamburg office, your home office, or a camper van somewhere in southern Europe.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

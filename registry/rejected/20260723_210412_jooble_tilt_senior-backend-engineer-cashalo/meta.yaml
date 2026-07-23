@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5544957112436910970'
+source_url: https://jooble.org/desc/-5544957112436910970?ckey=remote+senior+backend+engineer&rgn=55180&pos=10&groupId=2134052230&elckey=-3163107799733520165&p=1&aq=-8676479288463394413&cid=15922&jobAge=178&brelb=100&bscr=899.1842&scr=899.1842
+title: Senior Backend Engineer, Cashalo
+company: Tilt
+location: Australia
+published_at: '2026-07-16T04:12:10.5800000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-16T04:12:10.5800000 is older than 7 days
+updated_at: '2026-07-23T21:04:12Z'
+rejected_at: '2026-07-23T21:04:12Z'

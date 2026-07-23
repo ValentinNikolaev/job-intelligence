@@ -66,4 +66,4 @@ Dann freuen wir uns darauf, Dich kennenzulernen.
 
 Schick uns einfach Deinen Lebenslauf, Deine Gehaltsvorstellung und Dein frühestmögliches Startdatum zu. Ein Anschreiben ist nicht erforderlich.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

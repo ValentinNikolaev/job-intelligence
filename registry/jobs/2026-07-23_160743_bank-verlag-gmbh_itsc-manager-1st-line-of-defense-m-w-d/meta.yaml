@@ -1,7 +1,7 @@
 schema_version: 2
 id: 251f94f0-f9e8-4e99-9314-816c59adad89
 title: ITSC Manager-1st Line of Defense (m/w/d)
-company: Bank-Verlag GmbH
+company: Netcetera Software Services GmbH
 company_url: null
 location: Cologne
 remote: false
@@ -9,20 +9,20 @@ employment_type: berufserfahren
 sources:
 - source: arbeitnow
   source_job_id: itsc-manager-1st-line-of-defense-cologne-20819
-  url: https://www.arbeitnow.com/jobs/companies/bank-verlag-gmbh/itsc-manager-1st-line-of-defense-cologne-20819
+  url: https://www.arbeitnow.com/jobs/companies/netcetera-software-services-gmbh/itsc-manager-1st-line-of-defense-cologne-20819
   metadata:
     tags:
     - IT Security
     job_types:
     - berufserfahren
-published_at: '2026-07-23T13:31:01Z'
+published_at: '2026-07-23T17:59:03Z'
 discovered_at: '2026-07-23T16:07:43Z'
-updated_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T21:01:38Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-23T16:07:43Z'
-fingerprint: sha256:80e482805d09c9c83d3f2da355d14c1a07f874a64242127dd93c56e7f79730c3
+fingerprint: sha256:5e9102c085435d786b00e70fe12c0c2226207bc73ebafc4d7706b1d3dc638625
 data_source: arbeitnow
 content_source: arbeitnow
 company_content_source: null

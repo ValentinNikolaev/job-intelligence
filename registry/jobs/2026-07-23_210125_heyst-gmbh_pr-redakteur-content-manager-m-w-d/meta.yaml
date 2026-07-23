@@ -1,0 +1,27 @@
+schema_version: 2
+id: 0284e836-e3a3-41a5-a652-b4c71e7eae05
+title: PR-Redakteur & Content Manager (m/w/d)
+company: Heyst GmbH
+company_url: null
+location: Essen
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: pr-redakteur-content-manager-essen-488090
+  url: https://www.arbeitnow.com/jobs/companies/heyst-gmbh/pr-redakteur-content-manager-essen-488090
+  metadata:
+    tags:
+    - Public Relations
+    - Corporate Communication
+published_at: '2026-07-23T15:30:29Z'
+discovered_at: '2026-07-23T21:01:25Z'
+updated_at: '2026-07-23T21:01:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:01:25Z'
+fingerprint: sha256:1d99c2d9b1caecc4f678199cb2686fbbc21c3fceed574d049c720a700d9bac1b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

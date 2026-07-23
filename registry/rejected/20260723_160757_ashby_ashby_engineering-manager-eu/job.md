@@ -181,9 +181,9 @@ BENEFITS
 
  - Competitive salary and equity.
 
- - 10-year exercise window for stock options. You shouldn’t feel pressure to purchase stock options if you leave Ashby —do it when you feel financially comfortable.
+ - 10-year exercise window for stock options. You shouldn’t feel pressure to purchase stock options if you leave Ashby - do it when you feel financially comfortable.
 
- - Unlimited PTO with four weeks recommended per year. Expect “Vacation?” in our one-on-one agenda until you start taking it 😅.
+ - Unlimited PTO, and we will encourage you to take it.
 
  - Generous equipment, software, and office furniture budget. Get what you need to be happy and productive!
 

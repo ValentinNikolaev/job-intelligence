@@ -46,4 +46,4 @@ Quereinsteiger mit erfolgsorientiertem Vertriebssinn und Sportart- bzw. Sportaff
 
 **Bewirb Dich jetzt!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

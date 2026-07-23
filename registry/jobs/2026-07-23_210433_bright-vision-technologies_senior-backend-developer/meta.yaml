@@ -1,0 +1,23 @@
+schema_version: 2
+id: 93f049b2-2cd9-465f-9b9b-f9c9f906d2f5
+title: Senior Backend Developer
+company: Bright Vision Technologies
+company_url: null
+location: Illinois
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-5778534142102873889'
+  url: https://jooble.org/desc/-5778534142102873889?ckey=remote+senior+backend+engineer&rgn=55180&pos=49&groupId=2134052230&elckey=-3163107799733520165&p=1&aq=-8676479288463394413&cid=15922&jobAge=39&brelb=100&bscr=437.1175&scr=437.1175
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-23T21:04:33Z'
+updated_at: '2026-07-23T21:04:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T21:04:33Z'
+fingerprint: sha256:92ce94811fa28f4ecfddd00a093542d2cd3b4c4ee17bb0447630e412d727298d
+data_source: jooble
+content_source: jooble
+company_content_source: null

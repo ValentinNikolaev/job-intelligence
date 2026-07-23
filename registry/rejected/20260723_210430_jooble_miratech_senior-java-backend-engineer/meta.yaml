@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '5475048942801317265'
+source_url: https://jooble.org/desc/5475048942801317265?ckey=remote+senior+backend+engineer&rgn=55180&pos=43&groupId=2134052230&elckey=-3163107799733520165&p=1&aq=-8676479288463394413&cid=15922&jobAge=567&brelb=100&bscr=649.39435&scr=649.39435
+title: Senior Java Backend Engineer
+company: Miratech
+location: Atlanta, GA
+published_at: '2026-06-30T10:49:30.9830000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-30T10:49:30.9830000 is older than 7 days
+updated_at: '2026-07-23T21:04:30Z'
+rejected_at: '2026-07-23T21:04:30Z'

@@ -1,7 +1,7 @@
 schema_version: 2
 id: d6bd2dc9-ed71-4879-8226-1bfc7aae6388
 title: Application Manager (m/w/d) Cards Prodcution
-company: Bank-Verlag GmbH
+company: Netcetera Software Services GmbH
 company_url: null
 location: Cologne
 remote: false
@@ -9,20 +9,20 @@ employment_type: berufserfahren
 sources:
 - source: arbeitnow
   source_job_id: application-manager-cards-prodcution-cologne-312355
-  url: https://www.arbeitnow.com/jobs/companies/bank-verlag-gmbh/application-manager-cards-prodcution-cologne-312355
+  url: https://www.arbeitnow.com/jobs/companies/netcetera-software-services-gmbh/application-manager-cards-prodcution-cologne-312355
   metadata:
     tags:
     - Applications Administration
     job_types:
     - berufserfahren
-published_at: '2026-07-23T13:31:00Z'
+published_at: '2026-07-23T17:59:03Z'
 discovered_at: '2026-07-23T16:07:43Z'
-updated_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T21:01:39Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-23T16:07:43Z'
-fingerprint: sha256:744f550d8601423c1f8cfe8da5da59de56835a120b416883b9d13eb07032ca40
+fingerprint: sha256:054a6186cf247155c23afcf1708786e63f05788ef93eafdb4a190c7c2a5c05fc
 data_source: arbeitnow
 content_source: arbeitnow
 company_content_source: null

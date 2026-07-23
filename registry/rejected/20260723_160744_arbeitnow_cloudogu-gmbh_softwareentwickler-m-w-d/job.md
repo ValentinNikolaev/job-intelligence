@@ -57,4 +57,4 @@ Du hast die Möglichkeit, dein technisches Know-how kontinuierlich auszubauen, n
 
 Wenn du Freude daran hast, nachhaltige Software zu entwickeln, gemeinsam mit Kund:innen Herausforderungen zu lösen und dich fachlich wie persönlich weiterzuentwickeln, dann ist Cloudogu dein **space to be.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
