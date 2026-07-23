@@ -77,7 +77,9 @@ class AdzunaCollector:
 
     def fetch(self) -> Iterable[NormalizedJob]:
         if not self.app_id or not self.app_key:
-            raise ValueError("ADZUNA_APP_ID and ADZUNA_APP_KEY must be set in sources/.env")
+            raise ValueError(
+                "ADZUNA_APP_ID and ADZUNA_APP_KEY must be set in the environment or sources/.env"
+            )
         if not self.queries:
             raise ValueError("Adzuna queries are empty; edit sources/adzuna/config.yaml")
         if self.request_budget == 0:

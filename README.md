@@ -32,7 +32,7 @@ Copy-Item sources/.env.example sources/.env
 
 On macOS or Linux, activation is `source .venv/bin/activate` and the copy command is `cp sources/.env.example sources/.env`.
 
-Edit `sources/.env`:
+Edit `sources/.env` for local interactive runs:
 
 ```dotenv
 ADZUNA_APP_ID=your-app-id
@@ -40,7 +40,18 @@ ADZUNA_APP_KEY=your-app-key
 JOOBLE_API_KEY=your-api-key
 ```
 
-`sources/.env` is ignored by Git. Real credentials must never be added to `.env.example` or source files.
+`sources/.env` is ignored by Git. Real credentials must never be added to `.env.example` or source files. Scheduled CodexSandboxOnline runs should provide the same names as task or host environment secrets instead:
+
+```text
+ADZUNA_APP_ID
+ADZUNA_APP_KEY
+JOOBLE_API_KEY
+```
+
+The process environment wins over `sources/.env`, so the same code works in both
+local and Online execution. If an Online secret is missing, only the affected
+source should fail; `python run.py all` continues collecting from the remaining
+configured sources and reports the failure separately.
 
 Adzuna search terms and filters live in
 [`sources/adzuna/config.yaml`](sources/adzuna/config.yaml), not in `.env`:
@@ -247,12 +258,11 @@ the provenance label, but does not switch the active model. If a configured mode
 unavailable, the task must report that limitation instead of publishing under another
 workflow.
 
-For Scheduled Tasks, prefer Local mode and run the versioned prompts serially: collection,
-analysis, priority preparation, then normal preparation. Each model-dependent run handles
-exactly one vacancy, so its cadence controls token use. Local mode is the simplest option
-because `sources/.env` is intentionally ignored by Git and is unavailable in a clean
-worktree. Worktree mode requires a committed repository baseline plus an explicit secret
-provisioning mechanism; never commit `sources/.env`.
+For Scheduled Tasks, prefer CodexSandboxOnline mode when available and run the versioned
+prompts serially: collection, analysis, priority preparation, then normal preparation.
+Each model-dependent run handles exactly one vacancy, so its cadence controls token use.
+Online or worktree execution requires a committed repository baseline plus explicit secret
+provisioning through the task or host environment; never commit `sources/.env`.
 
 The collection task is suitable for a three-hour cadence with GPT-5.6 Luna and low
 reasoning. Every successful mutating task finishes by cataloging, validating, committing

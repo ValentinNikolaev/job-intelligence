@@ -5,13 +5,14 @@ normalizes the returned vacancies, and stores them through the shared registry.
 
 ## Credentials
 
-Put the API key in the ignored `sources/.env` file:
+For local runs, put the API key in the ignored `sources/.env` file:
 
 ```dotenv
 JOOBLE_API_KEY=your-api-key
 ```
 
-`JOOBLE_CONFIG` may optionally point to another YAML configuration file.
+Scheduled CodexSandboxOnline runs should provide the same name as an environment secret
+for the task or host. `JOOBLE_CONFIG` may optionally point to another YAML configuration file.
 
 ## Multiple query profiles
 

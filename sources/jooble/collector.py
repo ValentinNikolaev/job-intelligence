@@ -64,7 +64,7 @@ class JoobleCollector:
 
     def fetch(self) -> Iterable[NormalizedJob]:
         if not self.api_key:
-            raise ValueError("JOOBLE_API_KEY must be set in sources/.env")
+            raise ValueError("JOOBLE_API_KEY must be set in the environment or sources/.env")
         if not self.profiles:
             raise ValueError("Jooble query profiles are empty; edit sources/jooble/config.yaml")
         if self.request_budget == 0:
