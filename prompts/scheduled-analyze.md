@@ -10,3 +10,7 @@ mapping, then publish it with `python run.py analyze-batch --input
 .codex-work/analyze-batch.yaml --workflow analyze`. If the configured model is
 unavailable or does not match, report the mismatch and do not publish. Never call the
 OpenAI Platform API from project code. The workflow skill owns its final catalog step.
+After the Codex run, record exact usage when the current Codex surface exposes it:
+`python run.py usage record --workflow analyze --model <configured-label>
+--input-tokens <n> --output-tokens <n> --total-tokens <n> --credits <n>`. If exact
+credits are unavailable, record an estimate explicitly with `--measurement estimated`.

@@ -123,6 +123,8 @@ python run.py doctor
 python run.py api workflow-summary --json
 python run.py api workflow-limits --json
 python run.py api source-usage --json
+python run.py usage record --workflow analyze --model codex:gpt-5.6-luna:low --input-tokens 1234 --output-tokens 456 --credits 0.12
+python run.py usage summary
 python run.py api catalog-vacancies --json
 python run.py api queues analyze --json --limit 10
 python run.py api queues prepare --json
@@ -150,6 +152,19 @@ API requests: 11
 ```
 
 `all` isolates collector failures: it continues with other sources and exits non-zero if any source failed. To avoid one large feed monopolizing a scheduled run, collection targets process at most 100 fetched vacancies per collector by default. Override this with `--collection-limit <n>` or `JOBINTEL_COLLECTION_LIMIT`; use `0` for unlimited. Completed collectors append API request usage to `registry/source-api-usage.yaml`, grouped by source with cumulative totals and per-run entries. The index is regenerated from registry metadata after the run.
+
+Codex task usage is recorded separately in `registry/codex-usage.yaml`. After each
+scheduled or interactive Codex run, record the usage shown by Codex:
+
+```text
+python run.py usage record --workflow analyze --model codex:gpt-5.6-luna:low \
+  --input-tokens <n> --output-tokens <n> --total-tokens <n> --credits <n>
+```
+
+Token and credit fields are optional because Codex may expose different usage details
+by surface. Use `--measurement estimated` for a local estimate; estimates are not an
+account-level credit balance. The append-only log is available through
+`python run.py api codex-usage --json`.
 
 ## Registry
 

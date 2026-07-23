@@ -35,6 +35,7 @@ from .prefilter import RejectedRegistry, prefilter_job
 from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
 from .triage import should_skip_model, write_triage
+from .usage import CodexUsageLog
 
 
 def _configure_stdio() -> None:
@@ -47,7 +48,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'status', 'pending', 'analyze', 'analyze-batch', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -75,6 +76,14 @@ def _parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--limit", type=int, help="maximum rows for API queue commands")
     parser.add_argument("--pack", type=Path, help="analysis pack path for pending analyze")
+    parser.add_argument("--run-id", help="external Codex run identifier for usage recording")
+    parser.add_argument("--model", help="model label for usage recording")
+    parser.add_argument("--input-tokens", type=int, help="reported input token count")
+    parser.add_argument("--output-tokens", type=int, help="reported output token count")
+    parser.add_argument("--total-tokens", type=int, help="reported total token count")
+    parser.add_argument("--credits", type=float, help="reported credit cost")
+    parser.add_argument("--measurement", choices=("reported", "estimated"), default="reported")
+    parser.add_argument("--note", help="optional usage note")
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     return parser
@@ -137,6 +146,9 @@ def main(argv: list[str] | None = None) -> int:
         except Exception as exc:
             print(f"Triage error: {exc}", file=sys.stderr)
             return 1
+
+    if target == "usage":
+        return _run_usage(args, registry_dir)
 
     if target == "reindex":
         if args.arguments or args.force or args.profile or args.input or args.workflow:
@@ -588,6 +600,37 @@ def _run_analysis_batch(
     print(f"Analyzed: {summary.analyzed}")
     print(f"Skipped unchanged: {summary.skipped}")
     print("Errors: 0")
+    return 0
+
+
+def _run_usage(args: argparse.Namespace, registry_dir: Path) -> int:
+    if len(args.arguments) != 1 or args.arguments[0] not in {"record", "summary"}:
+        print("Usage: python run.py usage record --workflow <name> --model <label> [usage fields]", file=sys.stderr)
+        return 2
+    if args.arguments[0] == "summary":
+        from .workflow_api import codex_usage
+
+        print(json.dumps(codex_usage(registry_dir), ensure_ascii=False, indent=2, sort_keys=True))
+        return 0
+    if not args.workflow or not args.model:
+        print("usage record requires --workflow and --model", file=sys.stderr)
+        return 2
+    try:
+        run = CodexUsageLog(registry_dir / "codex-usage.yaml").record(
+            workflow=args.workflow,
+            model=args.model,
+            run_id=args.run_id,
+            input_tokens=args.input_tokens,
+            output_tokens=args.output_tokens,
+            total_tokens=args.total_tokens,
+            credits=args.credits,
+            measurement=args.measurement,
+            note=args.note,
+        )
+    except Exception as exc:
+        print(f"Usage record error: {exc}", file=sys.stderr)
+        return 1
+    print(json.dumps(run, ensure_ascii=False, indent=2, sort_keys=True))
     return 0
 
 
