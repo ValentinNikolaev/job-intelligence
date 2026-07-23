@@ -21,11 +21,20 @@ from .applications import (
 )
 from .collector import Collector, discover_collectors
 from .config import load_env
-from .matching import AnalysisSummary, CodexMatchDraftClient, MatchAnalyzer
+from .matching import (
+    AnalysisSummary,
+    CodexMatchDraftClient,
+    MatchAnalyzer,
+    build_analysis_pack,
+    dump_analysis_pack,
+    load_analysis_pack,
+    publish_analysis_batch,
+)
 from .models import CollectorSummary
 from .prefilter import RejectedRegistry, prefilter_job
 from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
+from .triage import should_skip_model, write_triage
 
 
 def _configure_stdio() -> None:
@@ -38,7 +47,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'api', 'status', 'pending', 'analyze', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'status', 'pending', 'analyze', 'analyze-batch', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -65,6 +74,7 @@ def _parser() -> argparse.ArgumentParser:
         help="maximum fetched vacancies to process per collector; default: 100; use 0 for unlimited",
     )
     parser.add_argument("--limit", type=int, help="maximum rows for API queue commands")
+    parser.add_argument("--pack", type=Path, help="analysis pack path for pending analyze")
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     return parser
@@ -110,6 +120,23 @@ def main(argv: list[str] | None = None) -> int:
         print("Status updated." if changed else "Status already current.")
         print("Regenerate the catalog through the separate $generate-vacancy-catalog process.")
         return 0
+
+    if target == "triage":
+        if args.arguments or args.input or args.workflow or args.force or args.json or args.pack:
+            print("Usage: python run.py triage", file=sys.stderr)
+            return 2
+        try:
+            directories = resolve_job_directories(registry_dir, "all")
+            counts = {"high": 0, "medium": 0, "low": 0, "skip_model": 0}
+            for directory in directories:
+                result = write_triage(directory)
+                counts[str(result["confidence"])] += 1
+                counts["skip_model"] += int(bool(result["skip_model"]))
+            print(json.dumps({"triaged": len(directories), **counts}, indent=2, sort_keys=True))
+            return 0
+        except Exception as exc:
+            print(f"Triage error: {exc}", file=sys.stderr)
+            return 1
 
     if target == "reindex":
         if args.arguments or args.force or args.profile or args.input or args.workflow:
@@ -161,6 +188,8 @@ def main(argv: list[str] | None = None) -> int:
 
     if target == "analyze":
         return _run_analysis(args, config, project_root, registry_dir)
+    if target == "analyze-batch":
+        return _run_analysis_batch(args, config, project_root, registry_dir)
     if target == "prepare":
         return _run_preparation(args, config, project_root, registry_dir)
     if target == "pending":
@@ -529,6 +558,39 @@ def _run_analysis(
     return 1 if summary.errors else 0
 
 
+def _run_analysis_batch(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> int:
+    if args.arguments or not args.input or not args.workflow or args.workflow.replace("-", "_") != "analyze":
+        print("Usage: python run.py analyze-batch --input <batch.yaml> --workflow analyze", file=sys.stderr)
+        return 2
+    try:
+        _, model_label = _selected_workflow(args.workflow, project_root, {"analyze"})
+        pack = load_analysis_pack(args.input)
+        results = pack.get("results")
+        if not isinstance(results, dict):
+            raise ValueError("batch input must contain a results mapping keyed by directory")
+        profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+        analyzer = MatchAnalyzer(
+            registry_dir,
+            profile_paths,
+            CodexMatchDraftClient(project_root / ".codex-work" / "unused-match.yaml", model=model_label),
+        )
+        summary = publish_analysis_batch(pack, results, analyzer)
+        Registry(registry_dir).regenerate_index()
+    except Exception as exc:
+        print(f"Batch analysis failed: {exc}", file=sys.stderr)
+        return 1
+    print(f"Selected: {summary.selected}")
+    print(f"Analyzed: {summary.analyzed}")
+    print(f"Skipped unchanged: {summary.skipped}")
+    print("Errors: 0")
+    return 0
+
+
 def _profile_paths(
     cli_paths: list[Path] | None,
     config: dict[str, str],
@@ -541,6 +603,9 @@ def _profile_paths(
     if configured:
         paths = [Path(value.strip()) for value in configured.split(os.pathsep) if value.strip()]
         return [(path if path.is_absolute() else project_root / path).resolve() for path in paths]
+    compact = registry_dir / "candidate" / "match-profile.md"
+    if compact.is_file():
+        return [compact.resolve()]
     return [
         (registry_dir / "candidate" / "linkedin-profile.md").resolve(),
         (registry_dir / "candidate" / "backend-engineer-cv.md").resolve(),
@@ -637,9 +702,24 @@ def _run_pending(
         policy, model_label = _selected_workflow(args.workflow, project_root, allowed)
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+        if stage == "analyze" and args.pack:
+            pack = build_analysis_pack(
+                registry_dir,
+                profile_paths,
+                limit=args.limit,
+                triage_skip=should_skip_model,
+            )
+            dump_analysis_pack(pack, args.pack.resolve())
+            print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
+            return 0
+        if args.pack:
+            print("--pack is valid only for pending analyze", file=sys.stderr)
+            return 2
         directories = resolve_job_directories(registry_dir, selector)
         for directory in directories:
             if stage == "analyze":
+                if should_skip_model(directory):
+                    continue
                 checker = MatchAnalyzer(
                     registry_dir,
                     profile_paths,

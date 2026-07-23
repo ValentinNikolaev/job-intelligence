@@ -1,9 +1,9 @@
-# Analyze one vacancy
+# Analyze a sealed batch
 
 1. Read `config/codex-workflows.yaml` and confirm the task uses the `analyze` model and reasoning level.
-2. Run `python run.py pending analyze all --workflow analyze`.
-3. If the command prints no path, report that analysis is current and stop.
-4. Select only the first printed vacancy directory. Read its `meta.yaml` and `job.md`, plus the configured files under `registry/candidate/` and `prompts/vacancy-match.md`. Do not read another vacancy.
-5. Evaluate the vacancy and write the exact YAML draft required by `prompts/vacancy-match.md` to `.codex-work/analyze/<vacancy-directory>.yaml`.
-6. Publish it with `python run.py analyze <vacancy-directory> --input <draft-path> --workflow analyze`.
-7. If validation fails, correct only the draft and retry. Confirm `match.yaml`, `match.md`, and `registry/index.md` exist and are valid.
+2. Run `python run.py triage` and then `python run.py pending analyze all --limit 10 --pack .codex-work/analyze-pack.yaml`.
+3. If the pack has no items, report that analysis is current and stop.
+4. Read only the sealed pack and the selected batch prompt. Evaluate every item independently; do not compare vacancies or reuse conclusions.
+5. Add a `results` mapping keyed by every exact input `directory`. Each value must be the exact YAML match mapping required by `prompts/vacancy-match.md`. Do not add prose.
+6. Publish with `python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow analyze`.
+7. If validation fails, correct only the batch draft and retry. Confirm all published `match.yaml`, `match.md`, and `registry/index.md` files exist and are valid.

@@ -204,9 +204,11 @@ registry/jobs/<job-directory>/
 └── match.md
 ```
 
-By default the profile combines the two files in `registry/candidate/`. Override
-them by repeating `--profile`, or set `CANDIDATE_PROFILE_PATHS` to an OS path
-list. For example:
+By default analysis uses the reviewed compact `registry/candidate/match-profile.md`
+when present; otherwise it combines the two full candidate source files. Override
+them by repeating `--profile`, or set `CANDIDATE_PROFILE_PATHS` to an OS path list.
+The compact profile is for analysis only; preparation still uses the full sources.
+For example:
 
 ```text
 python run.py analyze <vacancy> --profile profile/profile.md --input draft.yaml --workflow analyze
@@ -216,6 +218,20 @@ python run.py analyze <vacancy> --profile profile/profile.md --input draft.yaml 
 label prevent unchanged work from being selected again. `--force` bypasses that cache. The index shows
 unanalyzed jobs, orders analyzed jobs by score descending, and never uses another
 vacancy as model context.
+
+For high-throughput scheduled analysis, create and publish a sealed batch:
+
+```text
+python run.py triage
+python run.py pending analyze all --limit 10 --pack .codex-work/analyze-pack.yaml
+# Codex adds a strict `results` mapping to the pack.
+python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow analyze
+```
+
+`triage.yaml` is deterministic and high-confidence skips never enter the model queue.
+Batch publication fails if any result is missing, extra, invalid, or based on stale
+candidate/vacancy hashes. The batch is an analysis optimization only; preparation
+remains one vacancy per task.
 
 See [the matching design](docs/matching-architecture.md) for the schema, rubric,
 hard-rejection rules, and cache behavior.

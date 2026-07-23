@@ -1,0 +1,10 @@
+schema_version: 1
+triage_version: deterministic-triage-v1
+vacancy_id: 128c2ab0-cb19-4278-9662-3a82cd48e168
+skip_model: true
+reason: junior
+confidence: high
+matched_title_rules:
+- junior
+- consulting
+triaged_at: '2026-07-23T19:22:39Z'

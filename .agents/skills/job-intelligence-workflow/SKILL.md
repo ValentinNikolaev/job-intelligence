@@ -10,7 +10,8 @@ Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code.
 ## Choose one mode
 
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
-- For analysis, follow `references/analyze.md` and process exactly one pending vacancy.
+- For analysis, follow `references/analyze.md` and process a sealed batch of up to 10
+  pending vacancies. Preparation remains exactly one vacancy per task.
 - For a normal application package, follow `references/prepare.md` with workflow `prepare` and process exactly one vacancy whose match score is at least `prepare_min_score` and below `priority_score`.
 - For a priority application package, follow `references/prepare.md` with workflow `prepare_priority` and process exactly one vacancy whose match score is at least `priority_score`.
 - For a user-requested status change, run `python run.py status <vacancy-id-or-directory> <status>`. Never change status without an explicit user request. Preserve the complete history through the command.
@@ -19,7 +20,9 @@ Read `config/codex-workflows.yaml` before model-dependent work. The selected Sch
 
 ## Common rules
 
-1. Read only the selected vacancy, the configured candidate source files, and the relevant prompt. Do not read another vacancy's match or application package.
+1. For preparation, read only the selected vacancy, the configured candidate source
+   files, and the relevant prompt. For analysis, read only the sealed input pack and
+   the batch prompt; do not compare vacancies or read another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
 3. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
 4. If publication fails validation, fix the draft and retry. Do not edit generated cache metadata by hand.

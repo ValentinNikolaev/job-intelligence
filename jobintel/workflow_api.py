@@ -9,6 +9,7 @@ import yaml
 from .applications import ApplicationGenerator, CodexApplicationDraftClient, HostMarkdownDocxConverter
 from .catalog_data import CatalogVacancy, load_catalog_vacancies
 from .matching import CodexMatchDraftClient, MatchAnalyzer
+from .triage import should_skip_model
 from .workflows import WorkflowPolicy, load_workflow_policy
 
 
@@ -146,6 +147,8 @@ def queue_items(
     for vacancy in vacancies:
         directory = vacancy.directory
         if workflow == "analyze":
+            if should_skip_model(directory):
+                continue
             checker = MatchAnalyzer(
                 registry_root,
                 profile_paths,

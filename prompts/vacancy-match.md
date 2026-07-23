@@ -1,6 +1,8 @@
 # Vacancy match analysis
 
-Evaluate exactly one vacancy against the authoritative Candidate Profile.
+Evaluate one sealed vacancy against the authoritative Candidate Profile. The same
+prompt may be used for a batch: evaluate each record independently, do not compare
+vacancies, and do not reuse conclusions across records.
 
 ## Candidate truth rules
 
@@ -36,5 +38,9 @@ concerns:
 hard_rejection: false
 hard_rejection_reason: null
 ```
+
+For a batch, return a YAML mapping with `results`. Each result key must be the exact
+vacancy `directory` from the input pack and each value must contain exactly the mapping
+above. Do not add commentary outside YAML.
 
 Do not add cache metadata. The deterministic publisher adds timestamps, hashes, prompt version, and the Codex model label after validation.

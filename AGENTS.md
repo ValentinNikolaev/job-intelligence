@@ -16,7 +16,9 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
 ## Workflow boundaries
 
 - Keep collection, normalization, deduplication, hashing, validation, atomic publishing, DOCX conversion, and index generation deterministic and covered by tests.
-- Process exactly one vacancy per Codex analysis or preparation task so another vacancy cannot contaminate its context.
+- Process preparation exactly one vacancy per Codex task. Analysis may use the sealed
+  batch contract (up to 10 vacancies) when every result is keyed to its input directory,
+  evaluated independently, and published only after deterministic validation.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
 - Change vacancy status only after an explicit user request, through `python run.py status`; never infer status from artifacts or external events.

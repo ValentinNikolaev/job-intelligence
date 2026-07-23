@@ -116,6 +116,16 @@ class AnalysisSummary:
     errors: int = 0
 
 
+@dataclass(frozen=True, slots=True)
+class AnalysisPack:
+    schema_version: int
+    workflow: str
+    prompt_version: str
+    profile: str
+    profile_version: str
+    items: tuple[dict[str, Any], ...]
+
+
 class CodexMatchDraftClient:
     """Load a match draft produced by the active Codex task."""
 
@@ -185,9 +195,50 @@ class MatchAnalyzer:
                     score if isinstance(score, int) and not isinstance(score, bool) else None,
                 )
 
-        analysis = validate_match(self.client.analyze(candidate_profile=profile_text, vacancy=vacancy))
+        analysis = self.client.analyze(candidate_profile=profile_text, vacancy=vacancy)
+        return self.publish_analysis(
+            directory,
+            analysis,
+            force=force,
+            expected_profile_version=profile_version,
+            expected_job_version=job_version,
+        )
+
+    def publish_analysis(
+        self,
+        directory: Path,
+        analysis: Mapping[str, Any],
+        *,
+        force: bool = False,
+        expected_profile_version: str | None = None,
+        expected_job_version: str | None = None,
+    ) -> AnalysisResult:
+        profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
+        del profile_text, vacancy
+        if expected_profile_version and expected_profile_version != profile_version:
+            raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")
+        if expected_job_version and expected_job_version != job_version:
+            raise MatchError(f"vacancy changed after the analysis pack was created: {directory}")
+        match_path = directory / "match.yaml"
+        if not force and match_path.exists():
+            existing = _read_yaml_mapping(match_path, "match analysis")
+            if (
+                existing.get("profile_version") == profile_version
+                and existing.get("job_version") == job_version
+                and existing.get("prompt_version") == PROMPT_VERSION
+                and existing.get("model") == self.model
+            ):
+                score = existing.get("score")
+                return AnalysisResult(
+                    "skipped",
+                    str(meta.get("id", "")),
+                    directory.name,
+                    score if isinstance(score, int) and not isinstance(score, bool) else None,
+                )
+
+        validated = validate_match(analysis)
         stored = {
-            **analysis,
+            **validated,
             "analyzed_at": _utc_iso(self._clock()),
             "profile_version": profile_version,
             "job_version": job_version,
@@ -244,6 +295,107 @@ class MatchAnalyzer:
             sections.append(f"## Source: {path.name}\n\n{content}")
         profile_text = "\n\n".join(sections)
         return profile_text, _content_version(profile_text)
+
+
+def build_analysis_pack(
+    registry_root: Path,
+    profile_paths: Sequence[Path],
+    *,
+    limit: int | None = None,
+    triage_skip: Callable[[Path], bool] | None = None,
+) -> AnalysisPack:
+    """Create a sealed, deterministic input pack for one batched Codex run."""
+    analyzer = MatchAnalyzer(
+        registry_root,
+        profile_paths,
+        CodexMatchDraftClient(Path("unused-match.yaml"), model="pack-builder"),
+    )
+    profile, profile_version = analyzer._load_profile()
+    items: list[dict[str, Any]] = []
+    for directory in analyzer.resolve("all"):
+        if triage_skip and triage_skip(directory):
+            continue
+        if analyzer.is_current(directory):
+            continue
+        _, _, meta, vacancy, job_version = analyzer._inputs(directory)
+        items.append(
+            {
+                "vacancy_id": str(meta.get("id", "")),
+                "directory": directory.name,
+                "profile_version": profile_version,
+                "job_version": job_version,
+                "vacancy": vacancy,
+            }
+        )
+        if limit is not None and len(items) >= limit:
+            break
+    return AnalysisPack(1, "analyze", PROMPT_VERSION, profile, profile_version, tuple(items))
+
+
+def dump_analysis_pack(pack: AnalysisPack, path: Path) -> None:
+    payload = {
+        "schema_version": pack.schema_version,
+        "workflow": pack.workflow,
+        "prompt_version": pack.prompt_version,
+        "profile": {"text": pack.profile, "version": pack.profile_version},
+        "items": list(pack.items),
+    }
+    _write_atomic(path, yaml.safe_dump(payload, allow_unicode=True, sort_keys=False))
+
+
+def load_analysis_pack(path: Path) -> dict[str, Any]:
+    loaded = _read_yaml_mapping(path, "analysis pack")
+    if loaded.get("schema_version") != 1 or loaded.get("workflow") != "analyze":
+        raise MatchError("analysis pack must use schema_version 1 and workflow analyze")
+    if not isinstance(loaded.get("profile"), dict) or not isinstance(loaded.get("items"), list):
+        raise MatchError("analysis pack requires profile and items")
+    if not isinstance(loaded["profile"].get("text"), str) or not isinstance(loaded["profile"].get("version"), str):
+        raise MatchError("analysis pack profile requires text and version")
+    if loaded.get("prompt_version") != PROMPT_VERSION:
+        raise MatchError("analysis pack prompt_version is stale")
+    return loaded
+
+
+def publish_analysis_batch(
+    pack: Mapping[str, Any],
+    results: Mapping[str, Any],
+    analyzer: MatchAnalyzer,
+) -> AnalysisSummary:
+    """Validate and publish a complete batch; a missing/duplicate key fails closed."""
+    items = pack.get("items")
+    if not isinstance(items, list) or not items:
+        raise MatchError("analysis pack has no items")
+    if set(results) != {str(item.get("directory", "")) for item in items if isinstance(item, dict)}:
+        raise MatchError("batch results must contain exactly one result for every pack directory")
+    validated: dict[str, dict[str, Any]] = {}
+    for item in items:
+        if not isinstance(item, dict):
+            raise MatchError("analysis pack item must be a mapping")
+        directory_name = str(item.get("directory", ""))
+        directory = analyzer.registry_root / "jobs" / directory_name
+        _, profile_version, _, _, job_version = analyzer._inputs(directory)
+        if str(item.get("profile_version", "")) != profile_version:
+            raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")
+        if str(item.get("job_version", "")) != job_version:
+            raise MatchError(f"vacancy changed after the analysis pack was created: {directory}")
+        result = results[directory_name]
+        if not isinstance(result, Mapping):
+            raise MatchError(f"batch result must be a mapping: {directory_name}")
+        validated[directory_name] = validate_match(result)
+    summary = AnalysisSummary(selected=len(items))
+    for item in items:
+        directory = analyzer.registry_root / "jobs" / str(item.get("directory", ""))
+        result = analyzer.publish_analysis(
+            directory,
+            validated[directory.name],
+            expected_profile_version=str(item.get("profile_version", "")),
+            expected_job_version=str(item.get("job_version", "")),
+        )
+        if result.status == "skipped":
+            summary.skipped += 1
+        else:
+            summary.analyzed += 1
+    return summary
 
 
 def validate_match(value: Mapping[str, Any]) -> dict[str, Any]:
