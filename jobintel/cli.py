@@ -27,6 +27,13 @@ from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
 
 
+def _configure_stdio() -> None:
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, "reconfigure", None)
+        if reconfigure is not None:
+            reconfigure(encoding="utf-8", errors="backslashreplace")
+
+
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
@@ -61,6 +68,7 @@ def _parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    _configure_stdio()
     args = _parser().parse_args(argv)
     project_root = Path(__file__).resolve().parents[1]
     sources_dir = (args.sources or project_root / "sources").resolve()
