@@ -120,6 +120,12 @@ python run.py reindex
 python run.py status <job-directory-or-vacancy-id> <status>
 python run.py catalog
 python run.py doctor
+python run.py api workflow-summary --json
+python run.py api workflow-limits --json
+python run.py api source-usage --json
+python run.py api catalog-vacancies --json
+python run.py api queues analyze --json --limit 10
+python run.py api queues prepare --json
 python run.py pending analyze all --workflow analyze
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
 python run.py pending prepare all --workflow prepare
@@ -289,6 +295,13 @@ operating-system process at the
 end of every successful collection, analysis, preparation, or manual status change. Its
 deterministic command writes [`catalog/index.md`](catalog/index.md) from `meta.yaml` and
 existing application artifacts without modifying vacancy data.
+
+Catalog and workflow state also have a JSON contract intended for scheduled tasks,
+Docker wrappers, and future HTTP endpoints. `python run.py api catalog-vacancies --json`
+returns normalized vacancy rows with source links, match scores, status timestamps, and
+available application artifact paths. `python run.py api workflow-summary --json`,
+`source-usage --json`, and `queues <workflow> --json` expose backlog, source request
+usage, queue selection, and estimated input-token budget status without invoking a model.
 
 For up to 100 vacancies the catalog stays in one file. Larger registries receive monthly
 files plus a summary index. Entries are sorted by `discovered_at`, newest first; all

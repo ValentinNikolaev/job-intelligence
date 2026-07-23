@@ -1,0 +1,30 @@
+score: 58
+recommendation: possible_match
+summary: Strong backend and platform engineering overlap through Go services, Kubernetes
+  and Helm deployments, AWS-based event analytics infrastructure, reliability automation,
+  and performance optimization; the profile does not demonstrate the role's core data-platform
+  tooling and Berlin location compatibility is uncertain.
+strengths:
+- Demonstrated Go backend development and design of scalable, event-driven analytics
+  infrastructure with queues, EventBridge, routing, retries, backpressure, and 99.9%
+  delivery reliability.
+- Direct Kubernetes migration and Helm, GitHub Actions, ArgoCD, AWS, monitoring, and
+  production reliability experience align with infrastructure and automation responsibilities.
+- Evidence of query and workload optimization, API-layer development, and pragmatic
+  technical leadership across production systems.
+gaps:
+- No explicit evidence of Terraform, modern query engines such as Snowflake, Databricks,
+  BigQuery, or Trino, or orchestration tools such as Airflow or Dagster.
+- No explicit evidence of Python, dbt, Kafka/Flink, or petabyte-scale data systems.
+concerns:
+- The role is listed as non-remote in Berlin, while the candidate profile places Valentin
+  in Italy and does not state relocation or commuting preferences.
+- The profile does not establish direct ownership of a self-service data platform
+  or AI-ready data infrastructure beyond adjacent analytics and automation systems.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-23T18:10:49Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c67b9e9dbb97a310a5adcf55a67c938349727eb2673ee6fb95178caa6dcd234f
+prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,28 @@
+score: 12
+recommendation: not_match
+summary: The candidate is an experienced backend software engineer and technical lead,
+  but this vacancy is an on-site civil-construction site manager role requiring long-term
+  civil/road construction and wind-park coordination experience, German fluency, and
+  nationwide travel.
+strengths:
+- Extensive senior engineering and technical leadership experience.
+- Experience coordinating complex technical systems and cross-functional delivery.
+- Holds a master's degree in computer science.
+gaps:
+- No documented experience in civil engineering, road construction, site management,
+  wind-park infrastructure, construction measurement, or VOB/DIN/RSA requirements.
+- No documented German language proficiency.
+- No documented nationwide construction-site travel or driver's licence.
+concerns:
+- The role is based in Aschersleben and requires independent on-site leadership, while
+  the candidate profile places him in Italy and does not state relocation or on-site
+  availability.
+hard_rejection: true
+hard_rejection_reason: The vacancy requires very good German and a fundamentally different
+  mandatory professional background in civil/wind-park construction; the candidate
+  profile documents neither.
+analyzed_at: '2026-07-23T17:25:07Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:f2f0904c914aa597b8af2d1702a0f3dc79071a8d84dc027ce3024c7da28e2c67
+prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+model: codex:gpt-5.6-luna:low

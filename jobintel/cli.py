@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 from datetime import datetime, timezone
@@ -37,7 +38,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'status', 'pending', 'analyze', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'api', 'status', 'pending', 'analyze', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -63,6 +64,8 @@ def _parser() -> argparse.ArgumentParser:
         type=int,
         help="maximum fetched vacancies to process per collector; default: 100; use 0 for unlimited",
     )
+    parser.add_argument("--limit", type=int, help="maximum rows for API queue commands")
+    parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     return parser
 
@@ -144,6 +147,9 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"   {row['url']}")
         return 0
 
+    if target == "api":
+        return _run_api(args, project_root, sources_dir, registry_dir, env_path)
+
     if target == "doctor":
         return _run_doctor(args, project_root, sources_dir, registry_dir, env_path)
 
@@ -160,10 +166,10 @@ def main(argv: list[str] | None = None) -> int:
     if target == "pending":
         return _run_pending(args, config, project_root, registry_dir)
 
-    if args.force or args.profile or args.input or args.workflow:
+    if args.force or args.profile or args.input or args.workflow or args.limit or args.json:
         print(
-            "--force, --profile, --input, and --workflow are only valid with "
-            "'pending', 'analyze', or 'prepare'.",
+            "--force, --profile, --input, --workflow, --limit, and --json are only valid "
+            "with supported targets.",
             file=sys.stderr,
         )
         return 2
@@ -388,6 +394,82 @@ def _read_yaml_file(path: Path, label: str) -> dict[str, Any]:
     if not isinstance(loaded, dict):
         raise ValueError(f"{label} must be a YAML mapping: {path}")
     return loaded
+
+
+def _run_api(
+    args: argparse.Namespace,
+    project_root: Path,
+    sources_dir: Path,
+    registry_dir: Path,
+    env_path: Path,
+) -> int:
+    if args.force or args.input:
+        print("--force and --input are not valid with api", file=sys.stderr)
+        return 2
+    if not args.json:
+        print("api commands require --json", file=sys.stderr)
+        return 2
+    if not args.arguments:
+        print(
+            "Usage: python run.py api <workflow-summary|workflow-limits|source-usage|"
+            "codex-usage|catalog-vacancies|queues> --json",
+            file=sys.stderr,
+        )
+        return 2
+
+    try:
+        config = load_env(env_path)
+    except Exception:
+        config = {}
+    try:
+        profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+        try:
+            collection_limit = _collection_limit(args.collection_limit, config)
+        except ValueError:
+            collection_limit = 100
+        from .workflow_api import (
+            catalog_vacancies,
+            codex_usage,
+            queue_response,
+            source_usage,
+            workflow_limits,
+            workflow_summary,
+        )
+
+        command = args.arguments[0].replace("_", "-").casefold()
+        if command == "workflow-summary":
+            payload = workflow_summary(project_root, registry_dir, config, profile_paths)
+        elif command == "workflow-limits":
+            payload = workflow_limits(project_root, collection_limit)
+        elif command == "source-usage":
+            payload = source_usage(registry_dir)
+        elif command == "codex-usage":
+            payload = codex_usage(registry_dir)
+        elif command == "catalog-vacancies":
+            payload = catalog_vacancies(registry_dir)
+        elif command == "queues":
+            if len(args.arguments) != 2:
+                raise ValueError("api queues requires one workflow: analyze, prepare, or prepare-priority")
+            workflow = args.arguments[1].replace("_", "-")
+            if workflow == "prepare-priority":
+                workflow_name = "prepare_priority"
+            else:
+                workflow_name = workflow
+            payload = queue_response(
+                workflow_name,
+                project_root,
+                registry_dir,
+                profile_paths,
+                limit=args.limit,
+            )
+        else:
+            raise ValueError(f"unknown api command: {args.arguments[0]}")
+    except Exception as exc:
+        print(f"API command failed: {exc}", file=sys.stderr)
+        return 1
+
+    print(json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True))
+    return 0
 
 
 def _run_analysis(

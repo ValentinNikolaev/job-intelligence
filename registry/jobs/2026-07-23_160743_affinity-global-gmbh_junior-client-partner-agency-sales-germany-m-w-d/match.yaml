@@ -1,0 +1,31 @@
+score: 12
+recommendation: not_match
+summary: The vacancy is a German-market agency sales role in digital advertising,
+  whereas the candidate profile documents a backend engineering and technical leadership
+  career with no media-sales experience or German-language evidence.
+strengths:
+- Extensive experience collaborating with product, business, and technical stakeholders.
+- Experience with digital products, analytics infrastructure, and customer-facing
+  communication systems.
+gaps:
+- No documented agency sales, direct sales, account management, or campaign-selling
+  experience.
+- No documented knowledge of digital advertising formats or campaign KPIs.
+- No German-language proficiency is stated, despite the requirement for very good
+  German and work with the German market.
+- The candidate is based in Italy and no relocation or Berlin-area availability is
+  stated.
+concerns:
+- The role's junior commercial focus is fundamentally different from the candidate's
+  senior backend engineering specialization.
+- Location compatibility is uncertain because the vacancy is Berlin/Hamburg or remote
+  with a hybrid model and the profile gives no relevant preference.
+hard_rejection: true
+hard_rejection_reason: Very good German is an essential stated requirement for this
+  German-market client-partner role, but the authoritative candidate profiles provide
+  no German proficiency; the core sales background is also unsupported.
+analyzed_at: '2026-07-23T16:50:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2f298e73436d3941984fe3f65244f92483c734615ed45c3139781c6a3eaa21f3
+prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+model: codex:gpt-5.6-luna:low

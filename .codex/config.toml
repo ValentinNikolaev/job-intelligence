@@ -1,0 +1,5 @@
+[permissions.python-access.network]
+enabled = true
+
+[permissions.python-access.network.domains]
+"*" = "allow"

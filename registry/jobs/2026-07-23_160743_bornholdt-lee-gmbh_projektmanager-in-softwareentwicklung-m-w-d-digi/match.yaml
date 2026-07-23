@@ -1,0 +1,35 @@
+score: 38
+recommendation: weak_match
+summary: The candidate has substantial software engineering and technical leadership
+  experience, including agile planning, roadmap support, task allocation, and delivery
+  from draft to production, but the profile does not establish agency-side digital
+  product project management, budget or forecasting ownership, German proficiency,
+  or residence in Germany for on-site workshops.
+strengths:
+- More than 15 years of software development experience across digital products and
+  a digital-health platform.
+- Technical Lead experience coordinating delivery, agile planning, roadmaps, release
+  plans, assignments, and team performance metrics.
+- Experience collaborating with product and engineering stakeholders and leading teams
+  through production delivery.
+- Strong analytical and operational background in systems, reliability, monitoring,
+  and process improvement.
+gaps:
+- No explicit evidence of owning project budgets, forecasting, project controlling,
+  or capacity planning across multiple client projects.
+- No explicit agency- or service-provider-side project management experience.
+- No stated experience with Jira, Confluence, or comparable project-management tooling.
+- German proficiency is not stated; the profile lists English and Ukrainian, with
+  conflicting LinkedIn language entries.
+concerns:
+- The vacancy is based in Hamburg and expects local availability for customer workshops,
+  while the candidate profile places him in Italy.
+- The role is primarily project management and customer coordination rather than backend
+  engineering, so the transition from technical leadership is material uncertainty.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-23T17:20:33Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:46a5cbdc48469ba5ed9d8064537b5dd2f5bf8de5750f089658f99a80680d0fa7
+prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+model: codex:gpt-5.6-luna:low
