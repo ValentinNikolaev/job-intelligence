@@ -13,6 +13,9 @@ from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
 
 
+ROOT = Path(__file__).resolve().parents[1]
+
+
 def make_job(**overrides: object) -> NormalizedJob:
     values: dict[str, object] = {
         "source": "direct",
@@ -145,6 +148,19 @@ class MatchingTests(unittest.TestCase):
 
         self.assertEqual(84, result["score"])
         self.assertEqual("codex:gpt-5.6-luna:low", client.model)
+
+    def test_match_prompt_documents_candidate_specific_score_adjustments(self) -> None:
+        prompt = (ROOT / "prompts" / "vacancy-match.md").read_text(encoding="utf-8")
+
+        self.assertIn("decrease the score for roles that are not remote", prompt)
+        self.assertIn("decrease the score when Spring Boot is a central requirement", prompt)
+        self.assertIn("increase the score when the role offers a relocation package", prompt)
+        self.assertIn("increase the score when PHP is a meaningful part of the role", prompt)
+        self.assertIn("increase the score when Go or Golang is a meaningful part of the role", prompt)
+        self.assertIn("increase the score when the role is based in Roma or Rome", prompt)
+        self.assertIn("increase the score when the role involves support automation", prompt)
+        self.assertIn("increase the score when the role is in the mail/email domain", prompt)
+        self.assertIn("increase the score when the role is in the support domain", prompt)
 
     def test_index_orders_analyzed_scores_then_unanalyzed(self) -> None:
         ids = iter(("vacancy-2", "vacancy-3"))
