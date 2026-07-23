@@ -13,8 +13,9 @@ ADZUNA_APP_ID=your-app-id
 ADZUNA_APP_KEY=your-app-key
 ```
 
-Scheduled CodexSandboxOnline runs should provide the same names as environment secrets
-for the task or host. Edit [`config.yaml`](config.yaml) to add searches. Each list item becomes one
+Scheduled tasks that use CodexSandboxOnline for sandboxed command execution should
+provide the same names as environment secrets for the task or host. Edit
+[`config.yaml`](config.yaml) to add searches. Each list item becomes one
 independent Adzuna search; pagination is round-robin so every query gets a
 first page before a broad query can consume the run budget.
 

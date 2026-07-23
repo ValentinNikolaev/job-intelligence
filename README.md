@@ -40,7 +40,7 @@ ADZUNA_APP_KEY=your-app-key
 JOOBLE_API_KEY=your-api-key
 ```
 
-`sources/.env` is ignored by Git. Real credentials must never be added to `.env.example` or source files. Scheduled CodexSandboxOnline runs should provide the same names as task or host environment secrets instead:
+`sources/.env` is ignored by Git. Real credentials must never be added to `.env.example` or source files. Scheduled tasks that use CodexSandboxOnline for sandboxed command execution should provide the same names as task or host environment secrets instead:
 
 ```text
 ADZUNA_APP_ID
@@ -49,7 +49,7 @@ JOOBLE_API_KEY
 ```
 
 The process environment wins over `sources/.env`, so the same code works in both
-local and Online execution. If an Online secret is missing, only the affected
+local and CodexSandboxOnline execution. If an Online secret is missing, only the affected
 source should fail; `python run.py all` continues collecting from the remaining
 configured sources and reports the failure separately.
 
@@ -258,11 +258,12 @@ the provenance label, but does not switch the active model. If a configured mode
 unavailable, the task must report that limitation instead of publishing under another
 workflow.
 
-For Scheduled Tasks, prefer CodexSandboxOnline mode when available and run the versioned
-prompts serially: collection, analysis, priority preparation, then normal preparation.
-Each model-dependent run handles exactly one vacancy, so its cadence controls token use.
-Online or worktree execution requires a committed repository baseline plus explicit secret
-provisioning through the task or host environment; never commit `sources/.env`.
+For Scheduled Tasks, use CodexSandboxOnline for sandboxed command execution when
+collectors need network access, and run the versioned prompts serially: collection,
+analysis, priority preparation, then normal preparation. Each model-dependent run handles
+exactly one vacancy, so its cadence controls token use. CodexSandboxOnline or worktree
+execution requires a committed repository baseline plus explicit secret provisioning
+through the task or host environment; never commit `sources/.env`.
 
 The collection task is suitable for a three-hour cadence with GPT-5.6 Luna and low
 reasoning. Every successful mutating task finishes by cataloging, validating, committing
