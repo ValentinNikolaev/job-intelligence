@@ -1,27 +1,20 @@
-score: 12
+score: 18
 recommendation: not_match
-summary: The candidate profile documents extensive backend engineering and technical
-  leadership experience, but does not support the vacancy's core account-management,
-  customer-campaign, digital advertising, or CRM responsibilities.
+summary: The role is account management rather than backend engineering and does not
+  align with the documented career profile.
 strengths:
-- Extensive experience collaborating with product, support, and engineering stakeholders.
-- Documented analytics, automation, and reliability work that could provide limited
-  transferable data-oriented context.
+- Cross-functional collaboration and stakeholder communication
 gaps:
-- No documented account management, customer success, campaign management, media,
-  or digital advertising experience.
-- No documented experience with client-facing campaign recommendations, upselling,
-  or HubSpot CRM.
-- The vacancy requires good German and English; the candidate profile documents English
-  but no German.
+- Account management experience
+- commercial ownership
+- and customer portfolio management are not evidenced
 concerns:
-- The role is a customer-facing specialist position in digital advertising, fundamentally
-  different from the candidate's documented backend engineering career.
+- Fundamental role-family mismatch
 hard_rejection: true
-hard_rejection_reason: The vacancy's core role and mandatory German-language requirement
-  are not supported by the candidate profile.
-analyzed_at: '2026-07-23T16:55:13Z'
+hard_rejection_reason: Role requires account-management work outside the candidate's
+  demonstrated software-engineering track.
+analyzed_at: '2026-07-23T21:10:15Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:0f493f10c244c9c942425e65a67a0422f90e78a4bd7338a7abfbc973573f1183
-prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
 model: codex:gpt-5.6-luna:low

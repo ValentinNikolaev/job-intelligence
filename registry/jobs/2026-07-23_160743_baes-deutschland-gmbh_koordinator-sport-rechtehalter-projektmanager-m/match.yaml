@@ -1,32 +1,21 @@
-score: 20
+score: 14
 recommendation: not_match
-summary: The candidate has substantial technical leadership, planning, reporting-adjacent,
-  and cross-functional experience, but the role is centered on sports-rights-holder
-  coordination and microsponsoring rather than backend engineering. The profile does
-  not document sports marketing, CRM, MS Office/Excel, German, or Berlin relocation
-  compatibility.
+summary: Sports rights coordination and project management are not supported by the
+  candidate evidence.
 strengths:
-- More than 15 years of software development experience with technical leadership
-  and ownership of delivery planning.
-- Documented cross-functional collaboration with product, business, and operational
-  stakeholders.
-- Experience with analytics infrastructure, reporting-oriented systems, performance
-  metrics, and operational reliability.
+- General coordination with product and engineering stakeholders
 gaps:
-- No documented experience with professional sports clubs, sports-rights holders,
-  sponsorship, or sports marketing.
-- No documented CRM-system experience or MS Office/Excel proficiency.
-- The candidate is based in Italy and the profile does not state Berlin relocation
-  or an ability to work primarily from a Berlin office.
+- Sports rights
+- event coordination
+- partner management
+- and German fluency are not evidenced
 concerns:
-- The vacancy is a domain-specific coordination and project-management role, while
-  the candidate profile is focused on backend engineering and technical leadership.
-- German-language proficiency is not documented, although the vacancy is written in
-  German and involves direct contact with German sports clubs.
-hard_rejection: false
-hard_rejection_reason: null
-analyzed_at: '2026-07-23T17:00:23Z'
+- Fundamental domain and role mismatch
+hard_rejection: true
+hard_rejection_reason: The position is centered on sports-rights coordination rather
+  than software engineering.
+analyzed_at: '2026-07-23T21:10:15Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:f0ba24dd41b94b7011f3d6b2d3fc61c20ffcac8079d7d7de3721d3f577be81bf
-prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
 model: codex:gpt-5.6-luna:low

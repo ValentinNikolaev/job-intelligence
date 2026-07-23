@@ -1,31 +1,26 @@
-score: 18
-recommendation: not_match
-summary: Senior backend engineering experience is relevant to production reliability
-  and infrastructure, but the profile does not demonstrate the required IT service
-  continuity management ownership, recovery planning, or related standards expertise
-  for this ITSC Manager role.
+score: 32
+recommendation: weak_match
+summary: Reliability and regulated-finance exposure help, but formal IT continuity
+  management, recovery planning, and standards ownership are not evidenced.
 strengths:
-- 15+ years of software engineering experience with production reliability, monitoring,
-  incident troubleshooting, and infrastructure work.
-- Experience with AWS, Kubernetes, CI/CD, microservices, and operationally critical
-  communication systems.
-- MSc in Computer Science.
+- Production reliability
+- monitoring
+- incident response
+- fintech and compliance exposure
 gaps:
-- No documented experience building or managing an IT service continuity or business
-  continuity management system.
-- No documented ISO 27031, ITIL, ISO 22301, ISO 27001, KritisV, or DORA experience.
-- No documented business impact analysis, RTO/KPI definition, IT recovery-plan ownership,
-  or continuity exercise leadership.
+- ITSCM
+- ISO 27031
+- ITIL
+- ISO 22301
+- DORA
+- business-impact analysis
+- and recovery-plan ownership are not evidenced
 concerns:
-- The role requires very good German and good English; the profile documents English
-  but does not document German.
-- The position is onsite in Cologne while the profile lists Rome, Italy, and relocation
-  or commuting preferences are unknown.
-hard_rejection: true
-hard_rejection_reason: The role's essential multi-year IT service continuity or IT
-  emergency-management experience is not supported by the candidate profile.
-analyzed_at: '2026-07-23T17:10:36Z'
+- Strong German requirement and Cologne presence are additional risks
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-23T21:10:15Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:bafe8b5b73a4b737908147caaf141a267c7e757626ca2662d3d482fd0c77da6d
-prompt_version: job-match-v1:sha256:b64242ddabc7365c5bacb6ea79edd86a339c9a864cc5181c684c53f91b4d41c2
+job_version: sha256:55dcd62437d9c93297554bc44070765a1043d9c732ccbe20d3746fc6348a0b3b
+prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
 model: codex:gpt-5.6-luna:low
