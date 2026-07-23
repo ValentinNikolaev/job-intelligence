@@ -138,10 +138,11 @@ Created: 15
 Updated: 3
 Duplicates merged: 6
 Unchanged: 96
+Rejected: 0
 Errors: 0
 ```
 
-`all` isolates collector failures: it continues with other sources and exits non-zero if any source failed. The index is regenerated from registry metadata after the run.
+`all` isolates collector failures: it continues with other sources and exits non-zero if any source failed. To avoid one large feed monopolizing a scheduled run, collection targets process at most 100 fetched vacancies per collector by default. Override this with `--collection-limit <n>` or `JOBINTEL_COLLECTION_LIMIT`; use `0` for unlimited. The index is regenerated from registry metadata after the run.
 
 ## Registry
 
@@ -173,11 +174,12 @@ The registry uses exact `(source, source_job_id)` identity first. For a new sour
 Collected vacancy directories are not ignored, so the registry can be inspected, diffed, and committed if desired. Review source terms and the sensitivity of your search data before publishing it.
 
 Collection applies a deterministic prefilter before writing to the main registry.
-Vacancies older than seven days, obvious non-profile roles such as QA Automation,
-Android, or iOS, and hard local-language requirements for German or French are
-kept out of `registry/jobs/`. Hard Italian requirements are also rejected unless
-the vacancy explicitly requires English. English language requirements are always
-a green light for the language filter. Rejected records are written under
+Vacancies older than seven days and obvious non-profile roles such as QA Automation,
+Android, or iOS are kept out of `registry/jobs/`. Hard requirements for European
+languages other than English, Russian, or Ukrainian are rejected; hard Italian is
+also rejected unless the vacancy explicitly requires English. English language
+requirements are always a green light for the language filter, and optional European
+languages are allowed because the candidate can proceed in English. Rejected records are written under
 `registry/rejected/` with a structured `rejection_reason` in `meta.yaml` and the
 same reason at the top of `job.md`.
 

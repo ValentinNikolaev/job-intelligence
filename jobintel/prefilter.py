@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-import os
 import re
+import os
 import uuid
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
@@ -60,10 +60,12 @@ def prefilter_job(
     )
     if _has_english_requirement(full_text):
         return None
-    if _has_hard_language_requirement(full_text, "german"):
-        return Rejection("language_requirement", "hard German language requirement without English green light")
-    if _has_hard_language_requirement(full_text, "french"):
-        return Rejection("language_requirement", "hard French language requirement without English green light")
+    blocking_language = _hard_blocking_language_requirement(full_text)
+    if blocking_language is not None:
+        return Rejection(
+            "language_requirement",
+            f"hard {blocking_language} language requirement without English green light",
+        )
     if _has_hard_language_requirement(full_text, "italian"):
         return Rejection("language_requirement", "hard Italian language requirement without English green light")
     return None
@@ -147,9 +149,31 @@ def _has_english_requirement(text: str) -> bool:
 
 def _has_hard_language_requirement(text: str, language: str) -> bool:
     aliases = {
+        "albanian": r"albanian|shqip",
+        "bulgarian": r"bulgarian|български|bulgaro",
+        "croatian": r"croatian|hrvatski|croato",
+        "czech": r"czech|čeština|czech language|ceco",
+        "danish": r"danish|dansk|danese",
+        "dutch": r"dutch|nederlands|olandese",
+        "estonian": r"estonian|eesti|estone",
+        "finnish": r"finnish|suomi|finlandese",
         "german": r"german|deutsch|tedesco|allemand",
+        "greek": r"greek|ελληνικά|greco",
+        "hungarian": r"hungarian|magyar|ungherese",
         "french": r"french|français|francais|francese",
         "italian": r"italian|italiano|italien|italienne",
+        "latvian": r"latvian|latviešu|lettone",
+        "lithuanian": r"lithuanian|lietuvių|lituano",
+        "norwegian": r"norwegian|norsk|norvegese",
+        "polish": r"polish|polski|polacco",
+        "portuguese": r"portuguese|português|portoghese",
+        "romanian": r"romanian|română|rumeno",
+        "serbian": r"serbian|srpski|serbo",
+        "slovak": r"slovak|slovenčina|slovacco",
+        "slovenian": r"slovenian|slovenščina|sloveno",
+        "spanish": r"spanish|español|espanol|spagnolo",
+        "swedish": r"swedish|svenska|svedese",
+        "turkish": r"turkish|türkçe|turco",
     }[language]
     hard = r"required|mandatory|must|fluent|native|excellent|professional|mother tongue|b2|c1|c2"
     return bool(
@@ -158,6 +182,39 @@ def _has_hard_language_requirement(text: str, language: str) -> bool:
         or (language == "german" and re.search(r"\bdeutschkenntnisse\b", text))
         or (language == "italian" and re.search(r"\bmadrelingua italiana\b", text))
     )
+
+
+def _hard_blocking_language_requirement(text: str) -> str | None:
+    languages = (
+        "albanian",
+        "bulgarian",
+        "croatian",
+        "czech",
+        "danish",
+        "dutch",
+        "estonian",
+        "finnish",
+        "french",
+        "german",
+        "greek",
+        "hungarian",
+        "latvian",
+        "lithuanian",
+        "norwegian",
+        "polish",
+        "portuguese",
+        "romanian",
+        "serbian",
+        "slovak",
+        "slovenian",
+        "spanish",
+        "swedish",
+        "turkish",
+    )
+    for language in languages:
+        if _has_hard_language_requirement(text, language):
+            return language.title()
+    return None
 
 
 def _parse_timestamp(value: str | None) -> datetime | None:

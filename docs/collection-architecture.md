@@ -19,7 +19,7 @@ Source API
 
 - A source collector owns authentication, pagination, filters, and mapping one API schema to `NormalizedJob`.
 - The registry owns both identity checks, canonical field selection, safe filesystem writes, and index generation.
-- The shared prefilter owns deterministic rejection of stale, language-incompatible, or obviously profile-incompatible records before they enter the main registry.
+- The shared prefilter owns deterministic rejection of stale, language-incompatible, or obviously profile-incompatible records before they enter the main registry. Language rejection applies only to hard requirements; optional European languages remain eligible.
 - `meta.yaml` is authoritative. Markdown is a human-readable projection.
 - The CLI discovers collectors from `sources/*/collector.py`, so source implementations remain isolated.
 
@@ -252,7 +252,7 @@ python run.py list
 python run.py reindex
 ```
 
-`all` catches errors around each collector, prints a per-source summary, continues with the remaining collectors, regenerates the index, and exits non-zero if any collector failed. A single source failure occurs before or between atomic registry upserts, so existing files remain valid.
+`all` catches errors around each collector, prints a per-source summary, continues with the remaining collectors, regenerates the index, and exits non-zero if any collector failed. Collection targets process at most 100 fetched vacancies per collector by default so a large feed cannot monopolize a scheduled run. A single source failure occurs before or between atomic registry upserts, so existing files remain valid.
 
 ## 13. MVP Implementation Plan
 

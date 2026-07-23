@@ -49,6 +49,11 @@ def _parser() -> argparse.ArgumentParser:
         "--workflow",
         help="configured Codex workflow: analyze, prepare, or prepare-priority",
     )
+    parser.add_argument(
+        "--collection-limit",
+        type=int,
+        help="maximum fetched vacancies to process per collector; default: 100; use 0 for unlimited",
+    )
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     return parser
 
@@ -128,6 +133,11 @@ def main(argv: list[str] | None = None) -> int:
             file=sys.stderr,
         )
         return 2
+    try:
+        collection_limit = _collection_limit(args.collection_limit, config)
+    except ValueError as exc:
+        print(f"Configuration error: {exc}", file=sys.stderr)
+        return 2
 
     if target == "ashby" and args.arguments[:1] == ["discover"]:
         if len(args.arguments) == 1:
@@ -178,7 +188,13 @@ def main(argv: list[str] | None = None) -> int:
 
     failed = False
     for name, collector in selected:
-        summary = _run_collector(name, collector, registry, rejected_registry)
+        summary = _run_collector(
+            name,
+            collector,
+            registry,
+            rejected_registry,
+            limit=collection_limit,
+        )
         _print_summary(summary)
         failed = failed or summary.errors > 0
 
@@ -195,10 +211,15 @@ def _run_collector(
     collector: Collector,
     registry: Registry,
     rejected_registry: RejectedRegistry,
+    *,
+    limit: int | None,
 ) -> CollectorSummary:
     summary = CollectorSummary(source=name)
     try:
         for job in collector.fetch():
+            if limit is not None and summary.fetched >= limit:
+                summary.limit_reached = True
+                break
             summary.fetched += 1
             try:
                 rejection = prefilter_job(job)
@@ -223,6 +244,19 @@ def _run_collector(
     return summary
 
 
+def _collection_limit(cli_limit: int | None, config: dict[str, str]) -> int | None:
+    raw = cli_limit if cli_limit is not None else config.get("JOBINTEL_COLLECTION_LIMIT", "100")
+    if raw in (None, ""):
+        return 100
+    try:
+        limit = int(raw)
+    except (TypeError, ValueError) as exc:
+        raise ValueError("JOBINTEL_COLLECTION_LIMIT must be a positive integer or 0 for unlimited") from exc
+    if limit < 0:
+        raise ValueError("JOBINTEL_COLLECTION_LIMIT must be a positive integer or 0 for unlimited")
+    return None if limit == 0 else limit
+
+
 def _print_summary(summary: CollectorSummary) -> None:
     print(f"Source: {summary.source}")
     print(f"Fetched: {summary.fetched}")
@@ -232,6 +266,8 @@ def _print_summary(summary: CollectorSummary) -> None:
     print(f"Unchanged: {summary.unchanged}")
     print(f"Rejected: {summary.rejected}")
     print(f"Errors: {summary.errors}")
+    if summary.limit_reached:
+        print(f"Limit reached: {summary.limit_reached}")
 
 
 def _run_analysis(

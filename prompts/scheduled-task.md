@@ -3,7 +3,7 @@
 Work only inside the configured `job-intelligence` repository. Read `AGENTS.md` and use `$job-intelligence-workflow` in collection mode.
 
 1. Preserve unrelated user changes and never expose or commit secrets from `sources/.env`.
-2. Run all configured vacancy collectors with `python run.py all`. A failure in one source must not stop successful sources.
+2. Run all configured vacancy collectors with `python run.py all`. The default per-collector collection limit should prevent one large source from monopolizing the run. A failure in one source must not stop successful sources.
 3. Run `python run.py reindex` and let `$job-intelligence-workflow` run and verify the final catalog process.
 4. Run `python -m unittest discover -v` and the OpenAI Platform API prohibition scan.
 5. Inspect the entire repository diff. Stage every added, modified, renamed, and deleted project file with `git add -A`, while confirming that `sources/.env`, `.codex-work/`, IDE files, caches, and virtual environments remain ignored.

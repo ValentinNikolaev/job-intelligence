@@ -58,16 +58,29 @@ class PrefilterTests(unittest.TestCase):
 
         self.assertIsNone(rejection)
 
-    def test_rejects_hard_local_language_without_english(self) -> None:
+    def test_rejects_hard_european_language_without_english(self) -> None:
         for description in (
             "Fluent German is mandatory for this role.",
             "French C1 required for customer workshops.",
+            "Spanish B2 required for customer workshops.",
+            "Fluent Polish is mandatory for local stakeholders.",
             "Italiano fluente mandatory for daily work with the team.",
         ):
             with self.subTest(description=description):
                 rejection = prefilter_job(make_job(description=description), now=self.now)
                 self.assertIsNotNone(rejection)
                 self.assertEqual("language_requirement", rejection.category)
+
+    def test_allows_russian_ukrainian_and_optional_european_languages(self) -> None:
+        for description in (
+            "Fluent Russian is required for this role.",
+            "Ukrainian C1 required for partner conversations.",
+            "Italian is nice to have for local onboarding.",
+            "Spanish is optional and only nice to have.",
+            "German would be a plus.",
+        ):
+            with self.subTest(description=description):
+                self.assertIsNone(prefilter_job(make_job(description=description), now=self.now))
 
     def test_rejected_registry_always_writes_reason(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
