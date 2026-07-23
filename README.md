@@ -38,6 +38,8 @@ Edit `sources/.env` for local interactive runs:
 ADZUNA_APP_ID=your-app-id
 ADZUNA_APP_KEY=your-app-key
 JOOBLE_API_KEY=your-api-key
+TELEGRAM_BOT_TOKEN=your-telegram-bot-token
+TELEGRAM_CHAT_ID=your-telegram-chat-id
 ```
 
 `sources/.env` is ignored by Git. Real credentials must never be added to `.env.example` or source files. Scheduled tasks that use CodexSandboxOnline for sandboxed command execution should provide the same names as task or host environment secrets instead:
@@ -46,6 +48,8 @@ JOOBLE_API_KEY=your-api-key
 ADZUNA_APP_ID
 ADZUNA_APP_KEY
 JOOBLE_API_KEY
+TELEGRAM_BOT_TOKEN
+TELEGRAM_CHAT_ID
 ```
 
 The process environment wins over `sources/.env`, so the same code works in both
