@@ -84,6 +84,7 @@ class PrefilterTests(unittest.TestCase):
 
             self.assertEqual("role_mismatch", meta["rejection_category"])
             self.assertTrue(meta["rejection_reason"])
+            self.assertIn("Posted: 2026-07-22T12:00:00Z", markdown)
             self.assertIn("## Rejection", markdown)
             self.assertIn("Reason:", markdown)
 

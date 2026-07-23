@@ -61,6 +61,12 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual(before, after)
         self.assertEqual(1, len(self._directories()))
 
+    def test_job_markdown_includes_posting_date_when_available(self) -> None:
+        self.registry.upsert(make_job(published_at="2026-07-20T10:00:00Z"))
+        markdown = (self._directories()[0] / "job.md").read_text(encoding="utf-8")
+
+        self.assertIn("Posted: 2026-07-20T10:00:00Z", markdown)
+
     def test_status_is_initialized_and_manual_updates_preserve_history(self) -> None:
         created = self.registry.upsert(make_job())
         meta = self._meta()

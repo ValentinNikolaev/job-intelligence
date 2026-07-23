@@ -248,7 +248,9 @@ class Registry:
             temp_dir.mkdir(parents=False)
             (temp_dir / "meta.yaml").write_text(_dump_yaml(meta), encoding="utf-8", newline="\n")
             (temp_dir / "job.md").write_text(
-                _render_markdown(meta["title"], job.description), encoding="utf-8", newline="\n"
+                _render_job_markdown(meta["title"], job.description, meta["published_at"]),
+                encoding="utf-8",
+                newline="\n",
             )
             if meta["company_content_source"]:
                 (temp_dir / "company.md").write_text(
@@ -345,7 +347,11 @@ class Registry:
                 selected_company_body = (job.company_description or "").strip()
                 meta["company_content_source"] = source
 
-        new_job_markdown = _render_markdown(str(meta["title"]), selected_job_body)
+        new_job_markdown = _render_job_markdown(
+            str(meta["title"]),
+            selected_job_body,
+            _clean_optional(meta.get("published_at")),
+        )
         old_job_markdown = job_path.read_text(encoding="utf-8") if job_path.exists() else ""
         new_company_markdown = (
             _render_markdown(str(meta["company"]), selected_company_body)
@@ -461,12 +467,24 @@ def _render_markdown(heading: str, body: str) -> str:
     return f"# {heading.strip()}\n" + (f"\n{cleaned}\n" if cleaned else "")
 
 
+def _render_job_markdown(heading: str, body: str, published_at: str | None) -> str:
+    metadata = ""
+    if _clean_optional(published_at):
+        metadata = f"\nPosted: {str(published_at).strip()}\n"
+    cleaned = body.strip()
+    return f"# {heading.strip()}\n{metadata}" + (f"\n{cleaned}\n" if cleaned else "")
+
+
 def _read_markdown_body(path: Path) -> str:
     if not path.exists():
         return ""
     text = path.read_text(encoding="utf-8")
     lines = text.splitlines()
     if lines and lines[0].startswith("# "):
+        lines = lines[1:]
+    if lines and lines[0] == "":
+        lines = lines[1:]
+    if lines and lines[0].startswith("Posted: "):
         lines = lines[1:]
     return "\n".join(lines).strip()
 

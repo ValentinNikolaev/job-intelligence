@@ -12,7 +12,7 @@ import yaml
 
 from .models import NormalizedJob
 from .normalization import slug
-from .registry import _dump_yaml, _render_markdown, _utc_iso
+from .registry import _dump_yaml, _render_job_markdown, _utc_iso
 
 
 MAX_JOB_AGE_DAYS = 7
@@ -189,7 +189,7 @@ def _render_rejected_markdown(job: NormalizedJob, rejection: Rejection) -> str:
         f"- Category: {rejection.category}\n"
         f"- Reason: {rejection.reason}\n"
     )
-    return _render_markdown(job.title, reason + "\n" + job.description)
+    return _render_job_markdown(job.title, reason + "\n" + job.description, job.published_at)
 
 
 def _write_text_if_changed(path: Path, content: str) -> bool:
