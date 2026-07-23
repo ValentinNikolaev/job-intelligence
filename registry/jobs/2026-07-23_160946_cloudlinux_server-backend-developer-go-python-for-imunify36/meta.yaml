@@ -1,0 +1,23 @@
+schema_version: 2
+id: 22928af7-ed97-4ab7-949b-902df1d475e5
+title: Server Backend Developer (Go + Python) for Imunify360
+company: Cloudlinux
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '4908905711695839727'
+  url: https://jooble.org/away/4908905711695839727?p=1&pos=29&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=130&brelb=15&scr=259.9862&bscr=259.9862&aq=-219571553928410445&elckey=6901345313991043770
+published_at: '2026-07-18T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:46Z'
+updated_at: '2026-07-23T16:09:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:46Z'
+fingerprint: sha256:1aad658547d37bbf73685e8a34574b500068a27f9f6c51a8fd2b4940976fb9d1
+data_source: jooble
+content_source: jooble
+company_content_source: null

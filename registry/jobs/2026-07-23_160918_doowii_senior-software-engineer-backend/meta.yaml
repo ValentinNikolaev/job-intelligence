@@ -1,0 +1,23 @@
+schema_version: 2
+id: d93b1314-88c9-43a3-b031-8f252c3ef787
+title: Senior Software Engineer, Backend
+company: Doowii
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-8929462824312488'
+  url: https://jooble.org/away/-8929462824312488?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=10&brelb=15&scr=958.87195&bscr=958.87195&aq=2914900777975888200&elckey=-5937888225510835766
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:18Z'
+updated_at: '2026-07-23T16:09:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:18Z'
+fingerprint: sha256:d8e00c526a30036e75c69f068c79b8fc1317527f38b38353882500077d953697
+data_source: jooble
+content_source: jooble
+company_content_source: null

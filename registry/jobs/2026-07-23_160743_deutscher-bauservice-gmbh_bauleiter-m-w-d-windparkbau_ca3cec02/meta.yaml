@@ -1,0 +1,26 @@
+schema_version: 2
+id: ca3cec02-1395-4d5a-82c8-dfb3bfc11137
+title: Bauleiter (m/w/d) - Windparkbau
+company: Deutscher Bauservice GmbH
+company_url: null
+location: Freiburg im Breisgau
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: bauleiter-windparkbau-freiburg-im-breisgau-341135
+  url: https://www.arbeitnow.com/jobs/companies/deutscher-bauservice-gmbh/bauleiter-windparkbau-freiburg-im-breisgau-341135
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-23T14:00:30Z'
+discovered_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T16:07:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:43Z'
+fingerprint: sha256:fab39fe235b5d541ae671a509777acf614ecf15ec118bd2d51cbc2881333da3c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

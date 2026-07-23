@@ -1,0 +1,47 @@
+schema_version: 2
+id: ae0dd963-a0a1-4bc0-8cca-7f8062605195
+title: Expert Backend Engineer (Get Discovered)
+company: Jimdo
+company_url: https://jobs.ashbyhq.com/jimdo.com
+location: Germany
+remote: true
+employment_type: FullTime
+sources:
+- source: ashby
+  source_job_id: 5c30cec1-4019-4f5e-86e3-1fb6ae0882f0
+  url: https://jobs.ashbyhq.com/jimdo.com/5c30cec1-4019-4f5e-86e3-1fb6ae0882f0
+  metadata:
+    board: jimdo.com
+    application_url: https://jobs.ashbyhq.com/jimdo.com/5c30cec1-4019-4f5e-86e3-1fb6ae0882f0/application
+    department: Engineering
+    team: Engineering
+    workplace_type: Remote
+    secondary_locations:
+    - location: Italy
+      address:
+        postalAddress:
+          addressCountry: Italy
+    - location: Portugal
+      address:
+        postalAddress:
+          addressCountry: Portugal
+    - location: Spain
+      address:
+        postalAddress:
+          addressCountry: Spain
+    compensation:
+      compensationTierSummary: null
+      scrapeableCompensationSalarySummary: null
+      compensationTiers: []
+      summaryComponents: []
+published_at: '2026-07-17T14:35:39.113+00:00'
+discovered_at: '2026-07-23T16:08:00Z'
+updated_at: '2026-07-23T16:08:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:00Z'
+fingerprint: sha256:9c46c566022bcfdf74a91b6e13f63a9bfba9dfd28a0ef9174f633d49f6f6fe9e
+data_source: ashby
+content_source: ashby
+company_content_source: null

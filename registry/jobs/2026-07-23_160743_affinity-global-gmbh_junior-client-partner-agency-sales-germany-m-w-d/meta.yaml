@@ -1,0 +1,28 @@
+schema_version: 2
+id: 34e80bcf-9cab-499f-aa0c-f03765bb3714
+title: (Junior) Client Partner, Agency Sales Germany (m/w/d)
+company: Affinity Global GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: junior-client-partner-agency-sales-germany-berlin-429211
+  url: https://www.arbeitnow.com/jobs/companies/affinity-global-gmbh/junior-client-partner-agency-sales-germany-berlin-429211
+  metadata:
+    tags:
+    - Online Marketing
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-23T14:00:32Z'
+discovered_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T16:07:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:43Z'
+fingerprint: sha256:11fe3ca4cd86a2abc6c21b3c4defe4d5bb275548885a2daa3adeb9544d8059e8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

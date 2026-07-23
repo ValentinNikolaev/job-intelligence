@@ -1,0 +1,26 @@
+schema_version: 2
+id: cf5004b6-80b5-4818-b79c-2cf6374b09dd
+title: Serviceleitung (m/w/d)
+company: Autohaus Walter Mulfinger GmbH
+company_url: null
+location: Backnang
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: serviceleitung-backnang-352478
+  url: https://www.arbeitnow.com/jobs/companies/autohaus-walter-mulfinger-gmbh/serviceleitung-backnang-352478
+  metadata:
+    tags:
+    - Customer Service
+published_at: '2026-07-23T10:00:27Z'
+discovered_at: '2026-07-23T16:07:50Z'
+updated_at: '2026-07-23T16:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:50Z'
+fingerprint: sha256:f7a08c34290caf0711f8f5867aa794043d4cb1c99af7a13b589ccdadaf46f07c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

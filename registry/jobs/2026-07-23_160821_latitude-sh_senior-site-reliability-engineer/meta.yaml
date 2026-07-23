@@ -1,0 +1,84 @@
+schema_version: 2
+id: ba9426c4-03bb-4777-887e-41cd53b2fd1b
+title: Senior Site Reliability Engineer
+company: Latitude.sh
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Contractor
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/latitude-sh/jobs/senior-site-reliability-engineer
+  url: https://himalayas.app/companies/latitude-sh/jobs/senior-site-reliability-engineer
+  metadata:
+    location_restrictions: []
+    excerpt: About Latitude. sh Latitude. sh's global computing platform was launched
+      in 2019, enabling businesses to programmatically deploy single-tenant Bare Metal
+      instances in different parts of the world.
+    company_slug: latitude-sh
+    company_logo: https://cdn-images.himalayas.app/d2jq225rs0pirsq635hbumeje3yu
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Site-Reliability-Engineering
+    - DevOps
+    - Infrastructure-Engineering
+    - System-Administration
+    - Cloud-Engineer
+    expiry_at: '2026-08-19T02:49:55Z'
+    discovered_by:
+    - query_index: 6
+      parameters:
+        worldwide: 'true'
+        sort: recent
+        q: golang
+        seniority: Senior
+published_at: '2026-07-20T20:32:40Z'
+discovered_at: '2026-07-23T16:08:21Z'
+updated_at: '2026-07-23T16:08:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:21Z'
+fingerprint: sha256:91ab7d6c0370c515b00b3423e43397e8110d272984ff3ede9f0693cbf6a5804c
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

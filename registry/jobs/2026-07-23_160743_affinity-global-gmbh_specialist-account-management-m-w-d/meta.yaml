@@ -1,0 +1,28 @@
+schema_version: 2
+id: 76d12606-f6d0-4ed6-baa3-71bda12b0e47
+title: Specialist Account Management (m/w/d)
+company: Affinity Global GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: specialist-account-management-berlin-91035
+  url: https://www.arbeitnow.com/jobs/companies/affinity-global-gmbh/specialist-account-management-berlin-91035
+  metadata:
+    tags:
+    - Online Marketing
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-23T14:00:32Z'
+discovered_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T16:07:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:43Z'
+fingerprint: sha256:8a87925143ea1fa6d83f6b8fc8fa15e86e8e38b09fddcbf0cb80b5eaad0bc744
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

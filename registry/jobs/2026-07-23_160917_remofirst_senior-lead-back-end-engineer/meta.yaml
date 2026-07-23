@@ -1,0 +1,23 @@
+schema_version: 2
+id: e95fcf20-453a-4456-9d21-4822ed945761
+title: Senior Lead Back End Engineer
+company: RemoFirst
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-2504929402598890537'
+  url: https://jooble.org/away/-2504929402598890537?p=1&pos=18&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=10&brelb=15&scr=1030.9054&bscr=1030.9054&aq=2914900777975888200&elckey=-5937888225510835766
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:17Z'
+updated_at: '2026-07-23T16:09:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:17Z'
+fingerprint: sha256:89fe20adc3140ee978cd74fe623e74564efea8288515e6d1e14a079d5b4dc0b1
+data_source: jooble
+content_source: jooble
+company_content_source: null

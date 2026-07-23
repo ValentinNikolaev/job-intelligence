@@ -1,0 +1,45 @@
+schema_version: 2
+id: 74951e94-9b77-42b6-8534-fe60e7e1c793
+title: Staff Design Engineer
+company: Miro
+company_url: null
+location: Denmark,  Europe,  UK
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '147065'
+  url: https://jobicy.com/jobs/147065-staff-design-engineer
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/e0b9df37-221.jpg
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: 'About the TeamThe Canvas, Multiplayer & AI team sits at the heart of
+      what Miro is: an infinite, multiplayer surface where millions of people think
+      together, run workshops, map systems, and build things. This team owns the core
+      interaction layer that makes the canvas feel fast, fluid, and alive — from rendering
+      and input handling…'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-18T01:40:03Z'
+discovered_at: '2026-07-23T16:08:40Z'
+updated_at: '2026-07-23T16:08:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:40Z'
+fingerprint: sha256:df575e98885e2922ce94d6b3f2baec4844856fd2f2125e6d8d17c7ac034e5e37
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

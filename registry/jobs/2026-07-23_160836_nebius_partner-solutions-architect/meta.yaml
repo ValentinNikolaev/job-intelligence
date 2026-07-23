@@ -1,0 +1,51 @@
+schema_version: 2
+id: dcceb6f4-7453-43cb-95bd-d8d18e6e81d6
+title: Partner Solutions Architect
+company: Nebius
+company_url: null
+location: Europe
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149503'
+  url: https://jobicy.com/jobs/149503-partner-solutions-architect
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/d90c0566-221.webp
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: 'About Nebius: Nebius is leading a new era in cloud infrastructure for
+      the global AI economy. We are building a full-stack AI cloud platform that supports
+      developers and enterprises from data and model training through to production
+      deployment, without the cost and complexity of building large in-house AI/ML
+      infrastructure. Built by engineers, for engineers. From…'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+    - query_index: 7
+      parameters:
+        count: '100'
+        tag: technical lead
+        industry: dev
+        geo: europe
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-21T09:20:04Z'
+discovered_at: '2026-07-23T16:08:36Z'
+updated_at: '2026-07-23T16:08:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:36Z'
+fingerprint: sha256:3c5b4b3919dba95a88c50baedd55331071c59105681c7a716e6e8d44c9561e79
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

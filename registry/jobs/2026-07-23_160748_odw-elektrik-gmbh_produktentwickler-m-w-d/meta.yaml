@@ -1,0 +1,28 @@
+schema_version: 2
+id: 3095c88b-5799-4110-b8cf-d2cadf6b6c75
+title: Produktentwickler (m/w/d)
+company: ODW-ELEKTRIK GmbH
+company_url: null
+location: Steinau an der Straße
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: produktentwickler-steinau-an-der-strasse-26081
+  url: https://www.arbeitnow.com/jobs/companies/odw-elektrik-gmbh/produktentwickler-steinau-an-der-strasse-26081
+  metadata:
+    tags:
+    - Automotive Engineering
+    job_types:
+    - berufserfahren
+published_at: '2026-07-23T11:00:47Z'
+discovered_at: '2026-07-23T16:07:48Z'
+updated_at: '2026-07-23T16:07:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:48Z'
+fingerprint: sha256:f8707597fc0e0d66d90323158769d4ecaccf8e74d63200e757cf8e187f10e575
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,40 @@
+schema_version: 2
+id: 62fc933d-d3c1-4fae-b901-42180f5b3066
+title: Finnish Tech Linguistic Tester
+company: Welo Global
+company_url: null
+location: Anywhere
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '146757'
+  url: https://jobicy.com/jobs/146757-finnish-tech-linguistic-tester
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/83c40f94-221.webp
+    industry:
+    - QA &amp; Testing
+    level: Entry-Level, Junior
+    excerpt: As a trusted global transformation partner, Welocalize accelerates the
+      global business journey by enabling brands and companies to reach, engage, and
+      grow international audiences. Welocalize delivers multilingual content transformation
+      services in translation, localization, and adaptation for over 250 languages
+      with a growing network of over 400,000 in-country linguistic resources. Driving
+      innovation in language services, Welocalize…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+published_at: '2026-07-17T08:55:05Z'
+discovered_at: '2026-07-23T16:08:40Z'
+updated_at: '2026-07-23T16:08:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:40Z'
+fingerprint: sha256:f2af58c3a55fdf3a1d30427a5fc61d1312c9a0533d8586405fb5d1240b5c9e70
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

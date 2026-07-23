@@ -1,0 +1,15 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/kubbly/jobs/senior-software-engineer-remote
+source_url: https://himalayas.app/companies/kubbly/jobs/senior-software-engineer-remote
+title: Senior Software Engineer - Remote
+company: Kubbly
+location: Austria, Belgium, Bolivia, Brazil, Bulgaria, Colombia, Croatia, Czechia,
+  Denmark, Ecuador, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Netherlands,
+  Norway, Paraguay, Peru, Poland, Portugal, Romania, Serbia, Slovakia, Spain, Sweden,
+  Switzerland, United Kingdom, Uruguay, Venezuela
+published_at: '2026-06-24T13:34:28Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-24T13:34:28Z is older than 7 days
+updated_at: '2026-07-23T16:08:22Z'
+rejected_at: '2026-07-23T16:08:22Z'

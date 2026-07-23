@@ -1,0 +1,28 @@
+schema_version: 2
+id: 939c94c6-8697-4c22-9d3c-0b9b9dc8b4b5
+title: Head of Artist Partnerships (f/m/x)
+company: Otherworldly Artists
+company_url: null
+location: Berlin
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: head-of-artist-partnerships-berlin-320075
+  url: https://www.arbeitnow.com/jobs/companies/otherworldly-artists/head-of-artist-partnerships-berlin-320075
+  metadata:
+    tags:
+    - Business Development
+    job_types:
+    - professional / experienced
+published_at: '2026-07-23T11:30:41Z'
+discovered_at: '2026-07-23T16:07:46Z'
+updated_at: '2026-07-23T16:07:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:46Z'
+fingerprint: sha256:3f80a8abbea2511838bd7f8ff89bd3c5c560f5098f3a790c0272c3dc426f10ba
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

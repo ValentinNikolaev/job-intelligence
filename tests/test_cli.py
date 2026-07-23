@@ -9,6 +9,8 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
+import yaml
+
 from jobintel.cli import _run_collector, main
 from jobintel.models import NormalizedJob
 from jobintel.prefilter import RejectedRegistry
@@ -99,6 +101,90 @@ class CliTests(unittest.TestCase):
             self.assertTrue(first.limit_reached)
             self.assertEqual(2, second.fetched)
             self.assertTrue(second.limit_reached)
+
+    def test_top_lists_analyzed_active_vacancies_without_source_env(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            env_path = root / "broken.env"
+            env_path.write_text("this is not dotenv\n", encoding="utf-8")
+            registry = Registry(
+                registry_root,
+                clock=lambda: datetime(2026, 7, 23, tzinfo=timezone.utc),
+                id_factory=lambda: "vacancy-1",
+            )
+            first = registry.upsert(
+                NormalizedJob(
+                    source="direct",
+                    source_job_id="job-1",
+                    source_url="https://example.test/jobs/1",
+                    title="Backend Engineer",
+                    company="Example",
+                    description="Build services.",
+                )
+            )
+            registry.update_status(first.vacancy_id, "closed")
+            registry = Registry(
+                registry_root,
+                clock=lambda: datetime(2026, 7, 24, tzinfo=timezone.utc),
+                id_factory=lambda: "vacancy-2",
+            )
+            second = registry.upsert(
+                NormalizedJob(
+                    source="direct",
+                    source_job_id="job-2",
+                    source_url="https://example.test/jobs/2",
+                    title="Senior Backend Engineer",
+                    company="Example",
+                    description="Build services.",
+                )
+            )
+            third = registry.upsert(
+                NormalizedJob(
+                    source="direct",
+                    source_job_id="job-3",
+                    source_url="https://example.test/jobs/3",
+                    title="Platform Engineer",
+                    company="Acme",
+                    description="Build platforms.",
+                )
+            )
+            _write_match(registry_root, first.directory, 99)
+            _write_match(registry_root, second.directory, 84)
+            _write_match(registry_root, third.directory, 91)
+
+            output = StringIO()
+            with redirect_stdout(output):
+                self.assertEqual(
+                    0,
+                    main(["top", "5", "--registry", str(registry_root), "--env", str(env_path)]),
+                )
+
+            text = output.getvalue()
+            self.assertIn("Top vacancies: 2", text)
+            self.assertIn("1. 91/100 Acme", text)
+            self.assertIn("2. 84/100 Example", text)
+            self.assertNotIn("99/100", text)
+
+
+def _write_match(registry_root: Path, directory: str, score: int) -> None:
+    (registry_root / "jobs" / directory / "match.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "score": score,
+                "recommendation": "strong_match",
+                "summary": "Good fit.",
+                "strengths": ["Backend"],
+                "gaps": [],
+                "concerns": [],
+                "hard_rejection": False,
+                "hard_rejection_reason": None,
+            },
+            allow_unicode=True,
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
 
 
 if __name__ == "__main__":

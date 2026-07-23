@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '147723'
+source_url: https://jobicy.com/jobs/147723-financial-software-engineer
+title: Financial Software Engineer
+company: Hire Feed
+location: Anywhere
+published_at: '2026-06-25T06:05:40Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-25T06:05:40Z is older than 7 days
+updated_at: '2026-07-23T16:08:45Z'
+rejected_at: '2026-07-23T16:08:45Z'

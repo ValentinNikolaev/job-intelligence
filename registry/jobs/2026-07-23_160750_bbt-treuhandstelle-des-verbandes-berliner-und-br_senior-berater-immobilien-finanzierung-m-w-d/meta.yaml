@@ -1,0 +1,29 @@
+schema_version: 2
+id: ea2d2d7e-c508-407b-ab06-e308fd51c5ef
+title: Senior Berater (Immobilien-)Finanzierung (m/w/d)
+company: BBT Treuhandstelle des Verbandes Berliner und Brandenburgischer Wohnungsunternehmen
+  GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-berater-immobilien-finanzierung-berlin-84152
+  url: https://www.arbeitnow.com/jobs/companies/bbt-treuhandstelle-des-verbandes-berliner-und-brandenburgischer-wohnungsunternehmen-gmbh/senior-berater-immobilien-finanzierung-berlin-84152
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - berufserfahren
+published_at: '2026-07-23T10:00:26Z'
+discovered_at: '2026-07-23T16:07:50Z'
+updated_at: '2026-07-23T16:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:50Z'
+fingerprint: sha256:6469eef8cbb521ac81dfc45022c49e880760b68ba5527e17d641a4ba21e24a22
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

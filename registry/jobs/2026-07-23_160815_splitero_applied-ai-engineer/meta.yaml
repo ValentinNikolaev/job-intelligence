@@ -1,0 +1,91 @@
+schema_version: 2
+id: cad1e47d-d562-43a2-a684-35fdeb405b68
+title: Applied AI Engineer
+company: Splitero
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/splitero/jobs/applied-ai-engineer
+  url: https://himalayas.app/companies/splitero/jobs/applied-ai-engineer
+  metadata:
+    location_restrictions: []
+    excerpt: About the JobAs Splitero's Applied AI Engineer, you will own the identification,
+      scoping, and delivery of AI-powered capabilities across our product and operations.
+    company_slug: splitero
+    company_logo: https://cdn-images.himalayas.app/32u9we1q54va2imxi9fxhl2r9yqa
+    seniority:
+    - Senior
+    parent_categories:
+    - Data Science
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Applied-AI-Engineer
+    - AI-Engineering
+    - Machine-Learning-Engineering
+    - Product-Engineering
+    - Backend-Engineering
+    - Senior-Applied-AI-Engineer
+    salary:
+      period: annual
+      min: 135000
+      max: 175000
+      currency: USD
+    expiry_at: '2026-09-21T10:54:59Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        worldwide: 'true'
+        sort: recent
+        q: backend engineer
+        seniority: Senior
+published_at: '2026-07-23T10:55:00Z'
+discovered_at: '2026-07-23T16:08:15Z'
+updated_at: '2026-07-23T16:08:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:15Z'
+fingerprint: sha256:e3fe8dc6c768a0ce1432dbdcf896c5143cbe682b553935a881f5731cd0fe4071
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

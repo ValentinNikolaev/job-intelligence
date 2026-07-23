@@ -1,0 +1,23 @@
+schema_version: 2
+id: 6db2bf64-63b0-4c8f-b2b0-283513b1ebbe
+title: Senior Software Engineer, Backend (Lake Analytics Platform)
+company: Affirm
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-4457688710464590864'
+  url: https://jooble.org/away/-4457688710464590864?p=1&pos=38&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=106&brelb=15&scr=804.7992&bscr=804.7992&aq=2914900777975888200&elckey=-5937888225510835766
+published_at: '2026-07-19T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:26Z'
+updated_at: '2026-07-23T16:09:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:26Z'
+fingerprint: sha256:e6803b36d8f92b8ec7ddae948f75f781a8e72b7f97bfa57f0ac19c93524bafd7
+data_source: jooble
+content_source: jooble
+company_content_source: null

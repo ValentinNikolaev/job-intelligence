@@ -1,0 +1,15 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/senior-web-engineer
+source_url: https://himalayas.app/companies/canonical/jobs/senior-web-engineer
+title: Senior Web Engineer
+company: Canonical
+location: Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia,
+  Finland, France, Germany, Greece, Hungary, Ireland, Israel, Italy, Latvia, Lithuania,
+  Luxembourg, Malta, Netherlands, Norway, Poland, Portugal, Romania, Russian Federation,
+  Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom
+published_at: '2026-06-21T11:12:18Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-21T11:12:18Z is older than 7 days
+updated_at: '2026-07-23T16:08:23Z'
+rejected_at: '2026-07-23T16:08:23Z'

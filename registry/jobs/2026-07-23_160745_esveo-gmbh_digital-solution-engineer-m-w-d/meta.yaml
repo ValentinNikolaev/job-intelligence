@@ -1,0 +1,26 @@
+schema_version: 2
+id: fd43e9f1-7169-4020-b088-ef4a1675a50b
+title: Digital Solution Engineer (m/w/d)
+company: esveo GmbH
+company_url: null
+location: Dresden
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: digital-solution-engineer-dresden-364195
+  url: https://www.arbeitnow.com/jobs/companies/esveo-gmbh/digital-solution-engineer-dresden-364195
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-23T12:01:00Z'
+discovered_at: '2026-07-23T16:07:45Z'
+updated_at: '2026-07-23T16:07:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:45Z'
+fingerprint: sha256:ffe8e3b29fd2eb5d4fb99a82f1bba0c33dc2935719637c4f1903defe5c3b29a1
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,23 @@
+schema_version: 2
+id: a4f1cdd1-8a9f-46a0-a303-b7abf1676ab4
+title: Staff Backend Engineer - Grafana App Platform
+company: Grafana Labs
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '492519624296371161'
+  url: https://jooble.org/away/492519624296371161?p=1&pos=21&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=10&brelb=15&scr=483.86438&bscr=483.86438&aq=-219571553928410445&elckey=6901345313991043770
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:42Z'
+updated_at: '2026-07-23T16:09:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:42Z'
+fingerprint: sha256:612371ae536ef86446741c4e91d897f39993d2a2696a2088fb7e5b559c145a1f
+data_source: jooble
+content_source: jooble
+company_content_source: null

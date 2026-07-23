@@ -1,0 +1,56 @@
+schema_version: 2
+id: 3de3fc32-e95c-45b9-a2ff-0d13136a46a3
+title: Full Stack Engineer
+company: AvaTrade
+company_url: null
+location: Italy
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/avatrade/jobs/full-stack-engineer
+  url: https://himalayas.app/companies/avatrade/jobs/full-stack-engineer
+  metadata:
+    location_restrictions:
+    - name: Italy
+    excerpt: DescriptionWe are seeking a Senior Full Stack Engineer to join our Development
+      team.
+    company_slug: avatrade
+    company_logo: https://cdn-images.himalayas.app/yvjbx9ljh55qwajr9y49w3usyyc9
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - 1
+    categories:
+    - Fullstack-Development
+    - Software-Engineering
+    - Frontend-Development
+    - Backend-Development
+    - Web-Development
+    - Full-Stack-Engineer
+    - Full-Stack-Engineering
+    - Full-Stack-Developer
+    - Full-Stack-Software-Engineering
+    - Full-Stack-Software-Developer
+    expiry_at: '2026-09-17T00:07:29Z'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        sort: recent
+        country: IT
+        q: backend engineer
+        exclude_worldwide: 'true'
+        seniority: Senior
+published_at: '2026-07-19T00:07:29Z'
+discovered_at: '2026-07-23T16:08:10Z'
+updated_at: '2026-07-23T16:08:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:10Z'
+fingerprint: sha256:293a6ed6600df598344895d501ce618832ac7c7ecf15f0900187d939d21cb456
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/tether-operations-limited/jobs/software-engineer-p2p-100-remote-worldwide
+source_url: https://himalayas.app/companies/tether-operations-limited/jobs/software-engineer-p2p-100-remote-worldwide
+title: Software Engineer P2P (100% Remote, Worldwide)
+company: Tether Operations Limited
+location: Worldwide
+published_at: '2026-07-11T05:27:32Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-11T05:27:32Z is older than 7 days
+updated_at: '2026-07-23T16:08:19Z'
+rejected_at: '2026-07-23T16:08:19Z'

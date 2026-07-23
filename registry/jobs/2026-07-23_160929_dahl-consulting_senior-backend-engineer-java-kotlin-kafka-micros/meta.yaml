@@ -1,0 +1,23 @@
+schema_version: 2
+id: 1e617841-4861-4488-bd6a-aacc523d0731
+title: Senior Backend Engineer (Java/Kotlin, Kafka, Microservices)
+company: Dahl Consulting
+company_url: null
+location: Remote
+remote: true
+employment_type: Temporary
+sources:
+- source: jooble
+  source_job_id: '169973449425409555'
+  url: https://jooble.org/desc/169973449425409555?ckey=remote+senior+backend+engineer&rgn=55180&pos=47&groupId=2134052230&elckey=-5937888225510835766&p=1&aq=2914900777975888200&cid=15922&jobAge=154&brelb=100&bscr=712.7041&scr=712.7041
+published_at: '2026-07-17T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:29Z'
+updated_at: '2026-07-23T16:09:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:29Z'
+fingerprint: sha256:eb1b0b360e934ae3a36bc9da4dce7c7db25be0ea629600f7c7aadb77d6e4f856
+data_source: jooble
+content_source: jooble
+company_content_source: null

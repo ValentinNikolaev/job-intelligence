@@ -1,0 +1,26 @@
+schema_version: 2
+id: 8a444a66-cf01-40e2-abd2-2e75b7997d2c
+title: Senior Accountant / Bilanzbuchhalter (m/w/d)
+company: PRIME HR Agentur®
+company_url: null
+location: Augsburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-accountant-bilanzbuchhalter-augsburg-424907
+  url: https://www.arbeitnow.com/jobs/companies/prime-hr-agentur/senior-accountant-bilanzbuchhalter-augsburg-424907
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-23T09:30:29Z'
+discovered_at: '2026-07-23T16:07:52Z'
+updated_at: '2026-07-23T16:07:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:52Z'
+fingerprint: sha256:346734aa40d7607afae0164b48b98897def55cf7d5f2ded598eb7ba43a3b2cad
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

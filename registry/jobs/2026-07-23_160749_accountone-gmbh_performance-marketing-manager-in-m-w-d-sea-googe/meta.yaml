@@ -1,0 +1,26 @@
+schema_version: 2
+id: e78ed9cb-da93-4a00-989a-e4da64e5d27d
+title: Performance Marketing Manager/in (m/w/d) - SEA / Googel Ads
+company: AccountOne GmbH
+company_url: null
+location: Flensburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: performance-marketing-manager-in-sea-googel-ads-flensburg-353535
+  url: https://www.arbeitnow.com/jobs/companies/accountone-gmbh/performance-marketing-manager-in-sea-googel-ads-flensburg-353535
+  metadata:
+    tags:
+    - Marketing and Communication
+published_at: '2026-07-23T10:30:29Z'
+discovered_at: '2026-07-23T16:07:49Z'
+updated_at: '2026-07-23T16:07:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:49Z'
+fingerprint: sha256:bb9ed34fc660a4ccd04acacd632a3b9eee9ba5d9f3b53562ce43823e4e22d000
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

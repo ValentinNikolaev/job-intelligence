@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/defuse-labs/jobs/senior-software-engineer-solvers
+source_url: https://himalayas.app/companies/defuse-labs/jobs/senior-software-engineer-solvers
+title: Senior Software Engineer (Solvers)
+company: Defuse Labs
+location: Worldwide
+published_at: '2026-07-14T14:32:25Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-14T14:32:25Z is older than 7 days
+updated_at: '2026-07-23T16:08:17Z'
+rejected_at: '2026-07-23T16:08:17Z'

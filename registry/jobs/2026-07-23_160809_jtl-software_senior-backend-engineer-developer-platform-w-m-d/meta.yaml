@@ -1,0 +1,98 @@
+schema_version: 2
+id: d339ea88-0732-4733-89bb-3b0d3f1628ef
+title: Senior Backend Engineer - Developer Platform (w/m/d)
+company: JTL-Software
+company_url: null
+location: Australia, Austria, Belgium, Canada, Czechia, Denmark, Finland, France,
+  Germany, Greece, Hungary, Ireland, Italy, Netherlands, New Zealand, Norway, Poland,
+  Portugal, Slovakia, Spain, Sweden, Switzerland, United Kingdom, United States
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/jtl-software/jobs/senior-backend-engineer-developer-platform-w-m-d
+  url: https://himalayas.app/companies/jtl-software/jobs/senior-backend-engineer-developer-platform-w-m-d
+  metadata:
+    location_restrictions:
+    - name: Australia
+    - name: Austria
+    - name: Belgium
+    - name: Canada
+    - name: Czechia
+    - name: Denmark
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Greece
+    - name: Hungary
+    - name: Ireland
+    - name: Italy
+    - name: Netherlands
+    - name: New Zealand
+    - name: Norway
+    - name: Poland
+    - name: Portugal
+    - name: Slovakia
+    - name: Spain
+    - name: Sweden
+    - name: Switzerland
+    - name: United Kingdom
+    - name: United States
+    excerpt: deine aufgabeJTL zählt zu den führenden Anbietern von E-Commerce Software
+      im deutschsprachigen Raum, mit rund 450 Mitarbeitenden in der Gruppe und mehr
+      als 50.
+    company_slug: jtl-software
+    company_logo: https://cdn-images.himalayas.app/wq078khqs56rstwnav4kiw9d06jl
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -10
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -1
+    - 0
+    - 1
+    - 2
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 12
+    - 12.75
+    - 14
+    categories:
+    - Backend-Engineering
+    - Developer-Platforms
+    - Cloud-Engineer
+    - Platform-Engineering
+    - Internal-Developer-Tools
+    - Senior-Developer-Platform-Engineer
+    - Senior-Backend-Engineer-(Java-Kotlin)
+    - Backend-Engineer
+    expiry_at: '2026-09-17T06:17:52Z'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        sort: recent
+        country: IT
+        q: backend engineer
+        exclude_worldwide: 'true'
+        seniority: Senior
+published_at: '2026-07-19T06:17:53Z'
+discovered_at: '2026-07-23T16:08:09Z'
+updated_at: '2026-07-23T16:08:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:09Z'
+fingerprint: sha256:b63e873df85a7cd460b69a3c103b7eb1b6f41089ebeb15fe68b9ff52eddd624c
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

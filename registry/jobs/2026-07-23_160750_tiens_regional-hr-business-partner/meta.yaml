@@ -1,0 +1,30 @@
+schema_version: 2
+id: e72d4ff7-b19b-48f8-bf31-631eb0e89755
+title: Regional HR Business Partner
+company: Tiens
+company_url: null
+location: Berlin
+remote: true
+employment_type: manager
+sources:
+- source: arbeitnow
+  source_job_id: regional-hr-business-partner-berlin-481293
+  url: https://www.arbeitnow.com/jobs/companies/tiens/regional-hr-business-partner-berlin-481293
+  metadata:
+    tags:
+    - Remote
+    - Management
+    - Team Leader
+    job_types:
+    - manager
+published_at: '2026-07-23T10:30:26Z'
+discovered_at: '2026-07-23T16:07:50Z'
+updated_at: '2026-07-23T16:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:50Z'
+fingerprint: sha256:b153df0b50ffaec87522e4440e54ca0d3497d0eba38fe9758bf42919d99d2102
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

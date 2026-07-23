@@ -1,0 +1,28 @@
+schema_version: 2
+id: ce18e804-3dcf-4ae8-b525-e0f77a67e829
+title: Debitorenbuchhalter:in
+company: Happe Gruppe
+company_url: null
+location: Rheda-Wiedenbrück
+remote: false
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: debitorenbuchhalterin-rheda-wiedenbruck-454845
+  url: https://www.arbeitnow.com/jobs/companies/happe-gruppe/debitorenbuchhalterin-rheda-wiedenbruck-454845
+  metadata:
+    tags:
+    - Accounts Receivable
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-23T12:30:28Z'
+discovered_at: '2026-07-23T16:07:44Z'
+updated_at: '2026-07-23T16:07:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:44Z'
+fingerprint: sha256:ddae90922dfc6e863e78b269e480905e9776c6eeaac288356c9777c3be132ac9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 2be7c9cf-5a90-4ca0-80ee-e6a1dba73bf6
+title: Designer (m/w/d)
+company: SW Studios GmbH
+company_url: null
+location: Hanover
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: designer-hanover-124170
+  url: https://www.arbeitnow.com/jobs/companies/sw-studios-gmbh/designer-hanover-124170
+  metadata:
+    tags:
+    - Product Design
+    - Industrial Design
+published_at: '2026-07-23T12:00:59Z'
+discovered_at: '2026-07-23T16:07:45Z'
+updated_at: '2026-07-23T16:07:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:45Z'
+fingerprint: sha256:448323aef77ed20300e23ad6f85ff2a8c0f9dc3ad213b4fe776ef276c3f1faf4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

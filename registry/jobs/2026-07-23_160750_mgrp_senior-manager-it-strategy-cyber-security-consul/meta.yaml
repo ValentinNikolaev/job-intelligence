@@ -1,0 +1,28 @@
+schema_version: 2
+id: 30c85b91-5218-460f-aac1-9b06129169ee
+title: Senior Manager IT Strategy & Cyber Security Consulting (m/w/d)
+company: MGRP
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-manager-it-strategy-cyber-security-consulting-frankfurt-am-main-175582
+  url: https://www.arbeitnow.com/jobs/companies/mgrp/senior-manager-it-strategy-cyber-security-consulting-frankfurt-am-main-175582
+  metadata:
+    tags:
+    - Business Consulting
+    job_types:
+    - berufserfahren
+published_at: '2026-07-23T10:30:26Z'
+discovered_at: '2026-07-23T16:07:50Z'
+updated_at: '2026-07-23T16:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:50Z'
+fingerprint: sha256:a6803dc9c04b521eb9fe2f1e4fda74679a0e379af2259154de5fb9c02590261a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

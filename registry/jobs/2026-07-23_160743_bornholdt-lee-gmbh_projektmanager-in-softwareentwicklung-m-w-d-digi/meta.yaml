@@ -1,0 +1,26 @@
+schema_version: 2
+id: e43cb2b5-a796-45fa-91f5-0f96932a1895
+title: Projektmanager*in Softwareentwicklung (m/w/d) Digital-Health
+company: Bornholdt Lee GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: projektmanagerin-softwareentwicklung-digital-health-hamburg-352292
+  url: https://www.arbeitnow.com/jobs/companies/bornholdt-lee-gmbh/projektmanagerin-softwareentwicklung-digital-health-hamburg-352292
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-23T13:31:00Z'
+discovered_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T16:07:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:43Z'
+fingerprint: sha256:bd661949557137c8f90c2188bdde52eb422eb6318936ad27e32494a3e085e2bf
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

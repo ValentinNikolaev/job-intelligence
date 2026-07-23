@@ -1,0 +1,28 @@
+schema_version: 2
+id: f4aecb24-a10c-49d9-9d7c-cd07bdb902e5
+title: Sales Development Representative (m/w/d)
+company: syte GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: sales-development-representative-berlin-437489
+  url: https://www.arbeitnow.com/jobs/companies/syte-gmbh/sales-development-representative-berlin-437489
+  metadata:
+    tags:
+    - Business Development
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-23T13:30:59Z'
+discovered_at: '2026-07-23T16:07:43Z'
+updated_at: '2026-07-23T16:07:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:43Z'
+fingerprint: sha256:5d9754dc0ba8f58cc5a98157205a311c609d2bfd4b4e3bf58b4a55ff6d16337e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

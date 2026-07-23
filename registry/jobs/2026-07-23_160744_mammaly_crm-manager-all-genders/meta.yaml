@@ -1,0 +1,30 @@
+schema_version: 2
+id: 05bd1310-2aaa-4baa-8a63-91cf91322088
+title: CRM Manager (all genders)
+company: mammaly
+company_url: null
+location: Berlin
+remote: true
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: crm-manager-all-genders-berlin-433089
+  url: https://www.arbeitnow.com/jobs/companies/mammaly/crm-manager-all-genders-berlin-433089
+  metadata:
+    tags:
+    - Remote
+    - CRM
+    - Direct Marketing
+    job_types:
+    - berufserfahren
+published_at: '2026-07-23T13:30:58Z'
+discovered_at: '2026-07-23T16:07:44Z'
+updated_at: '2026-07-23T16:07:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:44Z'
+fingerprint: sha256:e1eabe0b49b1b2b10416c7ecc51a0cfe1ce2f91a6ac3c27ab1dfc121038379b0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

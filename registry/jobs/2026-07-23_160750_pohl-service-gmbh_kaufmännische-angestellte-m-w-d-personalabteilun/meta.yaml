@@ -1,0 +1,28 @@
+schema_version: 2
+id: d06857c6-9687-4887-9cc4-dd1c64942013
+title: Kaufmännische Angestellte (m/w/d) Personalabteilung
+company: POHL Service GmbH
+company_url: null
+location: Hohenwestedt
+remote: false
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: kaufmannische-angestellte-personalabteilung-hohenwestedt-244228
+  url: https://www.arbeitnow.com/jobs/companies/pohl-service-gmbh/kaufmannische-angestellte-personalabteilung-hohenwestedt-244228
+  metadata:
+    tags:
+    - Administration and Secretariat
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-23T10:00:27Z'
+discovered_at: '2026-07-23T16:07:50Z'
+updated_at: '2026-07-23T16:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:50Z'
+fingerprint: sha256:6981596c05aedb7a1b0d311526d2df5b4b707bb55c72605d19a5226c72c1204c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

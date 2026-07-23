@@ -1,0 +1,26 @@
+schema_version: 2
+id: f092fde1-bfa0-4f01-b25d-e22efbc759a8
+title: Data Analyst / Analytics Engineer (m/w/d)
+company: AccountOne GmbH
+company_url: null
+location: Flensburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: data-analyst-analytics-engineer-flensburg-194471
+  url: https://www.arbeitnow.com/jobs/companies/accountone-gmbh/data-analyst-analytics-engineer-flensburg-194471
+  metadata:
+    tags:
+    - Data Scientist
+published_at: '2026-07-23T10:30:28Z'
+discovered_at: '2026-07-23T16:07:49Z'
+updated_at: '2026-07-23T16:07:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:49Z'
+fingerprint: sha256:bfe95f4c954fb6723b6caa11ce52b04c0b031de8e43fe568cf396894bc3d07a6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

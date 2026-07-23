@@ -1,0 +1,23 @@
+schema_version: 2
+id: 5ccac38b-a5f1-487c-a51c-e07045933017
+title: Senior Backend Engineer
+company: Hubs.is
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-38381727137515295'
+  url: https://jooble.org/away/-38381727137515295?p=1&pos=12&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=154&brelb=15&scr=2380.3008&bscr=2380.3008&aq=2914900777975888200&elckey=-5937888225510835766
+published_at: '2026-07-17T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:14Z'
+updated_at: '2026-07-23T16:09:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:14Z'
+fingerprint: sha256:ba4e1c16014238da61e734d35402f3695625f23331a7b68a4679983bafe6a86d
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,59 @@
+schema_version: 2
+id: f2572c60-e313-42e4-b7c8-31880299ca00
+title: Senior AI Engineer
+company: eMerchantPay
+company_url: null
+location: Bulgaria
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '144139'
+  url: https://jobicy.com/jobs/144139-senior-ai-engineer-3
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/1cf6dc20-221.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: emerchantpay is a leading global payment service provider and acquirer
+      for online, mobile, in-store and over the phone payments. Our global payments
+      solution is available through a simple integration, offering a diverse range
+      of features, including global acquiring, global and local payment methods, advanced
+      fraud management and performance optimisation. We empower businesses to design
+      seamless…
+    discovered_by:
+    - query_index: 2
+      parameters:
+        count: '100'
+        tag: backend
+        industry: dev
+        geo: europe
+    - query_index: 5
+      parameters:
+        count: '100'
+        tag: backend
+        industry: dev
+        geo: emea
+    - query_index: 7
+      parameters:
+        count: '100'
+        tag: technical lead
+        industry: dev
+        geo: europe
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-20T03:05:09Z'
+discovered_at: '2026-07-23T16:08:47Z'
+updated_at: '2026-07-23T16:08:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:47Z'
+fingerprint: sha256:3cabe65e83a12c0e593f3f0a3270f8b421a8187c62598ae86f4f57c2d14c1f2c
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

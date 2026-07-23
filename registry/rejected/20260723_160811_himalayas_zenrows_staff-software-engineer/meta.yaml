@@ -1,0 +1,18 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/zenrows/jobs/staff-software-engineer
+source_url: https://himalayas.app/companies/zenrows/jobs/staff-software-engineer
+title: Staff Software Engineer
+company: ZenRows
+location: Afghanistan, Algeria, Angola, Austria, Bahrain, Belgium, Bulgaria, Cameroon,
+  Congo, The Democratic Republic of the, Czechia, Denmark, Egypt, Ethiopia, Finland,
+  France, Germany, Ghana, Greece, Hungary, Iran, Iraq, Ireland, Israel, Italy, Kenya,
+  Kuwait, Libya, Morocco, Netherlands, Nigeria, Norway, Oman, Pakistan, Poland, Portugal,
+  Qatar, Romania, Russian Federation, Saudi Arabia, Senegal, South Africa, Spain,
+  Sudan, Sweden, Switzerland, Tunisia, Turkey, Ukraine, United Arab Emirates, United
+  Kingdom
+published_at: '2026-07-02T13:57:28Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-02T13:57:28Z is older than 7 days
+updated_at: '2026-07-23T16:08:11Z'
+rejected_at: '2026-07-23T16:08:11Z'

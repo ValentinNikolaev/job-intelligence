@@ -1,0 +1,30 @@
+schema_version: 2
+id: 311a7d1b-f56c-446c-88fb-e978ab299d8e
+title: Machine Learning Ops Engineer - Personalization (m|w|d)
+company: idealo internet GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: machine-learning-ops-engineer-personalization-mwd-berlin-492895
+  url: https://www.arbeitnow.com/jobs/companies/idealo-internet-gmbh/machine-learning-ops-engineer-personalization-mwd-berlin-492895
+  metadata:
+    tags:
+    - Internet and software
+    - professional
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-07-23T11:20:20Z'
+discovered_at: '2026-07-23T16:07:48Z'
+updated_at: '2026-07-23T16:07:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:48Z'
+fingerprint: sha256:fea4fdc007c70bd6d3670270d05b7488c2db5d040c0cae40a9b827def83054ba
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

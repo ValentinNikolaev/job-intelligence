@@ -1,0 +1,23 @@
+schema_version: 2
+id: 5baa42e0-79c9-4416-8bac-02b77a761835
+title: Senior Backend Engineer - Databases Pyroscope
+company: Grafana Labs
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '8702141661930224957'
+  url: https://jooble.org/desc/8702141661930224957?ckey=remote+senior+backend+engineer&rgn=55180&pos=40&groupId=2134052230&elckey=-5937888225510835766&p=1&aq=2914900777975888200&cid=15922&jobAge=34&brelb=100&bscr=797.2637&scr=797.2637
+published_at: '2026-07-22T11:49:50.1744086+00:00'
+discovered_at: '2026-07-23T16:09:26Z'
+updated_at: '2026-07-23T16:09:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:26Z'
+fingerprint: sha256:c0418dfc6801bcb5cee1ccf62eb86eae0889360c3a0530df9c1648c7e3991f3e
+data_source: jooble
+content_source: jooble
+company_content_source: null

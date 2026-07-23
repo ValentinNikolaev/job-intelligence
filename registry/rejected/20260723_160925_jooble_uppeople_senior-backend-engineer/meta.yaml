@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-422403069377925351'
+source_url: https://jooble.org/desc/-422403069377925351?ckey=remote+senior+backend+engineer&rgn=55180&pos=35&groupId=2134052230&elckey=-5937888225510835766&p=1&aq=2914900777975888200&cid=15922&jobAge=1714&brelb=100&bscr=836.10803&scr=836.10803
+title: Senior Backend Engineer
+company: UPPEOPLE
+location: Remote
+published_at: '2026-05-13T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-05-13T00:00:00.0000000 is older than 7 days
+updated_at: '2026-07-23T16:09:25Z'
+rejected_at: '2026-07-23T16:09:25Z'

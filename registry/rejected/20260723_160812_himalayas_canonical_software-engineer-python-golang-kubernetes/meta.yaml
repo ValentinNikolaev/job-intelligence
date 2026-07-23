@@ -1,0 +1,16 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/software-engineer-python-golang-kubernetes
+source_url: https://himalayas.app/companies/canonical/jobs/software-engineer-python-golang-kubernetes
+title: Software Engineer - Python/Golang - Kubernetes
+company: Canonical
+location: Algeria, Argentina, Austria, Bahrain, Belgium, Brazil, Canada, Czechia,
+  Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece, Hungary, Ireland,
+  Israel, Italy, Kenya, Kuwait, Mexico, Morocco, Netherlands, Nigeria, Norway, Oman,
+  Poland, Portugal, Qatar, Romania, Saudi Arabia, Senegal, South Africa, Spain, Sweden,
+  Switzerland, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States
+published_at: '2026-06-21T18:06:10Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-21T18:06:10Z is older than 7 days
+updated_at: '2026-07-23T16:08:12Z'
+rejected_at: '2026-07-23T16:08:12Z'

@@ -1,0 +1,57 @@
+schema_version: 2
+id: b8ef803c-8eea-41db-86b7-936b1db6921c
+title: Software Engineer - (Connect Platform)
+company: Enode
+company_url: null
+location: Europe,  Norway
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149497'
+  url: https://jobicy.com/jobs/149497-software-engineer-connect-platform
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/70d7b7e3-221.webp
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: About EnodeThe grid was built for predictable, centralised power. Today
+      it's absorbing intermittent supply from grid scale solar and wind, alongside
+      dynamic demand from EVs, heat pumps, and home batteries. The missing piece is
+      software that can connect and orchestrate these devices at scale.Enode provides
+      the infrastructure layer that makes this possible. Our Connect API…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+    - query_index: 2
+      parameters:
+        count: '100'
+        tag: backend
+        industry: dev
+        geo: europe
+    - query_index: 5
+      parameters:
+        count: '100'
+        tag: backend
+        industry: dev
+        geo: emea
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-21T09:19:54Z'
+discovered_at: '2026-07-23T16:08:37Z'
+updated_at: '2026-07-23T16:08:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:37Z'
+fingerprint: sha256:d7989904bc03686652c6b1c2524b33fc000a0d35ff0639cb78197cd390e274fc
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

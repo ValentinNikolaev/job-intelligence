@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/sysdig/jobs/staff-software-engineer-cloud-provider-team
+source_url: https://himalayas.app/companies/sysdig/jobs/staff-software-engineer-cloud-provider-team
+title: Staff Software Engineer (Cloud Provider Team)
+company: Sysdig
+location: Italy
+published_at: '2026-07-01T14:13:22Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-01T14:13:22Z is older than 7 days
+updated_at: '2026-07-23T16:08:11Z'
+rejected_at: '2026-07-23T16:08:11Z'

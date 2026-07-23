@@ -5,7 +5,7 @@ import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable
+from typing import Any, Iterable
 
 import yaml
 
@@ -30,7 +30,7 @@ from .workflows import WorkflowPolicy, load_workflow_policy
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'doctor', 'status', 'pending', 'analyze', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'status', 'pending', 'analyze', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -110,6 +110,30 @@ def main(argv: list[str] | None = None) -> int:
             print(f"Index error: {exc}", file=sys.stderr)
             return 1
         print("Index regenerated." if changed else "Index already current.")
+        return 0
+
+    if target == "top":
+        if args.force or args.profile or args.input or args.workflow:
+            print("Usage: python run.py top [limit]", file=sys.stderr)
+            return 2
+        try:
+            limit = _top_limit(args.arguments)
+            rows = _top_vacancies(registry_dir, limit=limit)
+        except Exception as exc:
+            print(f"Top vacancies error: {exc}", file=sys.stderr)
+            return 1
+        if not rows:
+            print("Top vacancies: no analyzed active vacancies.")
+            return 0
+        print(f"Top vacancies: {len(rows)}")
+        for index, row in enumerate(rows, start=1):
+            print(
+                f"{index}. {row['score']}/100 "
+                f"{row['company']} — {row['title']} "
+                f"({row['recommendation']}, {row['directory']})"
+            )
+            if row["url"]:
+                print(f"   {row['url']}")
         return 0
 
     if target == "doctor":
@@ -281,6 +305,81 @@ def _print_summary(summary: CollectorSummary) -> None:
     print(f"API requests: {summary.api_requests}")
     if summary.limit_reached:
         print(f"Limit reached: {summary.limit_reached}")
+
+
+def _top_limit(arguments: list[str]) -> int:
+    if len(arguments) > 1:
+        raise ValueError("usage: python run.py top [limit]")
+    if not arguments:
+        return 5
+    try:
+        limit = int(arguments[0])
+    except ValueError as exc:
+        raise ValueError("top limit must be a positive integer") from exc
+    if limit <= 0:
+        raise ValueError("top limit must be a positive integer")
+    return limit
+
+
+def _top_vacancies(registry_dir: Path, *, limit: int = 5) -> list[dict[str, Any]]:
+    inactive_statuses = {"rejected", "withdrawn", "closed"}
+    rows: list[dict[str, Any]] = []
+    for meta_path in sorted((registry_dir / "jobs").glob("*/meta.yaml")):
+        match_path = meta_path.parent / "match.yaml"
+        if not match_path.is_file():
+            continue
+        meta = _read_yaml_file(meta_path, "vacancy metadata")
+        if str(meta.get("status", "")).strip().casefold() in inactive_statuses:
+            continue
+        match = _read_yaml_file(match_path, "match analysis")
+        score = match.get("score")
+        recommendation = match.get("recommendation")
+        if isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100:
+            raise ValueError(f"match analysis has invalid score: {match_path}")
+        if recommendation not in {
+            "strong_match",
+            "match",
+            "possible_match",
+            "weak_match",
+            "not_match",
+        }:
+            raise ValueError(f"match analysis has invalid recommendation: {match_path}")
+        sources = meta.get("sources")
+        url = ""
+        if isinstance(sources, list) and sources:
+            first_source = sources[0]
+            if isinstance(first_source, dict):
+                url = str(first_source.get("url") or "")
+        rows.append(
+            {
+                "score": score,
+                "recommendation": str(recommendation).replace("_", " "),
+                "discovered_at": str(meta.get("discovered_at") or ""),
+                "company": str(meta.get("company") or ""),
+                "title": str(meta.get("title") or ""),
+                "directory": meta_path.parent.name,
+                "url": url,
+            }
+        )
+    rows.sort(
+        key=lambda row: (
+            int(row["score"]),
+            str(row["discovered_at"]),
+            str(row["directory"]),
+        ),
+        reverse=True,
+    )
+    return rows[:limit]
+
+
+def _read_yaml_file(path: Path, label: str) -> dict[str, Any]:
+    try:
+        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError) as exc:
+        raise ValueError(f"cannot read {label} {path}: {exc}") from exc
+    if not isinstance(loaded, dict):
+        raise ValueError(f"{label} must be a YAML mapping: {path}")
+    return loaded
 
 
 def _run_analysis(

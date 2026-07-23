@@ -1,0 +1,26 @@
+schema_version: 2
+id: e681fd96-31ff-4163-8e16-9c9a66b8657e
+title: Call Center Agent (m/w/d) für Tele Sales Sportmarketing
+company: BAES Deutschland GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: call-center-agent-fur-tele-sales-sportmarketing-berlin-197998
+  url: https://www.arbeitnow.com/jobs/companies/baes-deutschland-gmbh/call-center-agent-fur-tele-sales-sportmarketing-berlin-197998
+  metadata:
+    tags:
+    - Distribution Marketing
+published_at: '2026-07-23T13:30:58Z'
+discovered_at: '2026-07-23T16:07:44Z'
+updated_at: '2026-07-23T16:07:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:44Z'
+fingerprint: sha256:4af567e65f0dc79227393262b5cc5aa2c11fa874d2b582663d7e3177b84707ba
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,26 @@
+schema_version: 2
+id: 544ceac7-7d9c-44e5-91fa-6735e1ca1356
+title: Leitung Qualitätsmanagement und Regulatory Affairs (m/w/d)
+company: epias GmbH
+company_url: null
+location: Idstein
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: leitung-qualitatsmanagement-und-regulatory-affairs-idstein-399895
+  url: https://www.arbeitnow.com/jobs/companies/epias-gmbh/leitung-qualitatsmanagement-und-regulatory-affairs-idstein-399895
+  metadata:
+    tags:
+    - Quality Management
+published_at: '2026-07-23T09:01:08Z'
+discovered_at: '2026-07-23T16:07:54Z'
+updated_at: '2026-07-23T16:07:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:54Z'
+fingerprint: sha256:4a7cd4473751f85662ad3a2fa1abb200db2e1f066c6963f9b7f7075dfd6f2c0f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

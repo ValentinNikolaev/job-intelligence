@@ -1,0 +1,24 @@
+schema_version: 2
+id: 6fb518f6-72b0-4322-843d-4baedd75ecfd
+title: Senior IT Trainer - Prestigious US Law Firm - Highly Competitive Salary + Exceptional
+  Benefits
+company: Larbey Evans
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-128235107026598009'
+  url: https://jooble.org/jdp/-128235107026598009?ckey=senior+backend+engineer&rgn=55179&pos=5&groupId=293749696&elckey=-8191175714060939389&p=1&aq=5726757580127614286&cid=15922&jobAge=156&brelb=100&bscr=15.681679&scr=15.681679
+published_at: '2026-07-16T21:17:07.4730000'
+discovered_at: '2026-07-23T16:08:58Z'
+updated_at: '2026-07-23T16:08:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:58Z'
+fingerprint: sha256:aab22cbc8e66e541b360ad214131eec07dc980735d4f0f1ead8f438df5ea06ea
+data_source: jooble
+content_source: jooble
+company_content_source: null

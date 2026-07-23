@@ -1,0 +1,57 @@
+schema_version: 2
+id: 189cf72b-e65f-4275-bd18-53e0ceae2805
+title: Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu
+company: Canonical Ltd.
+company_url: null
+location: Anywhere
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149581'
+  url: https://jobicy.com/jobs/149581-graduate-software-engineer-open-source-and-linux-canonical-ubuntu
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png
+    industry:
+    - Software Engineering
+    level: Entry-Level, Junior
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets. Our platform, Ubuntu,
+      is very widely used in breakthrough enterprise initiatives such as public cloud,
+      data science, AI, engineering innovation, and IoT. Our customers include the
+      world's leading public cloud and silicon providers, and industry leaders…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+    - query_index: 3
+      parameters:
+        count: '100'
+        tag: golang
+        industry: dev
+        geo: emea
+    - query_index: 4
+      parameters:
+        count: '100'
+        tag: golang
+        industry: dev
+        geo: europe
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-21T16:21:06Z'
+discovered_at: '2026-07-23T16:08:28Z'
+updated_at: '2026-07-23T16:08:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:28Z'
+fingerprint: sha256:feff061a89e997095dfe5daae3a09718c21ddb5831cbe3806eada12710384ad6
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

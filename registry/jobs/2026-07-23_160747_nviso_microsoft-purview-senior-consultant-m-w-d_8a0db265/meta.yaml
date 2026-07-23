@@ -1,0 +1,28 @@
+schema_version: 2
+id: 8a0db265-1f06-4df1-9072-60792e18ecea
+title: Microsoft Purview Senior Consultant (m/w/d)
+company: NVISO
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: microsoft-purview-senior-consultant-frankfurt-am-main-183899
+  url: https://www.arbeitnow.com/jobs/companies/nviso/microsoft-purview-senior-consultant-frankfurt-am-main-183899
+  metadata:
+    tags:
+    - IT Security
+    job_types:
+    - professional / experienced
+published_at: '2026-07-23T11:30:40Z'
+discovered_at: '2026-07-23T16:07:47Z'
+updated_at: '2026-07-23T16:07:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:47Z'
+fingerprint: sha256:19ccac85868e78d417ac0967f88a3c7b0777588412add6ab42d9ad84f7ec56dc
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

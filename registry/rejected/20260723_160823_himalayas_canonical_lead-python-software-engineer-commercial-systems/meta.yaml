@@ -1,0 +1,15 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems
+source_url: https://himalayas.app/companies/canonical/jobs/lead-python-software-engineer-commercial-systems
+title: Lead Python Software Engineer, Commercial Systems
+company: Canonical
+location: Austria, Belgium, Bulgaria, Czechia, Denmark, Finland, France, Germany,
+  Greece, Hungary, Ireland, Israel, Italy, Netherlands, Norway, Poland, Portugal,
+  Romania, Russian Federation, Spain, Sweden, Switzerland, Turkey, Ukraine, United
+  Kingdom
+published_at: '2026-06-21T20:26:28Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-21T20:26:28Z is older than 7 days
+updated_at: '2026-07-23T16:08:23Z'
+rejected_at: '2026-07-23T16:08:23Z'

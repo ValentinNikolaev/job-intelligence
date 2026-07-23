@@ -1,0 +1,28 @@
+schema_version: 2
+id: ecc97502-24bc-498a-92b2-9e2961f416a6
+title: Senior Frontend Developer mit Schwerpunkt UX/UI-Design*
+company: Haeger Consulting GmbH
+company_url: null
+location: Bonn
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-frontend-developer-mit-schwerpunkt-ux-ui-design-bonn-17843
+  url: https://www.arbeitnow.com/jobs/companies/haeger-consulting-gmbh/senior-frontend-developer-mit-schwerpunkt-ux-ui-design-bonn-17843
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - berufserfahren
+published_at: '2026-07-23T11:00:46Z'
+discovered_at: '2026-07-23T16:07:49Z'
+updated_at: '2026-07-23T16:07:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:49Z'
+fingerprint: sha256:f28e0c57a87382db7d127f2b8244f4f53b093e616848481d0b844c06c2aa2952
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 66253adc-8076-4276-aad0-f70b5135b45a
+title: Senior Produktmanager KI-Produkte (m/w/d)
+company: EuraTel GmbH
+company_url: null
+location: Leipzig
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-produktmanager-ki-produkte-leipzig-460874
+  url: https://www.arbeitnow.com/jobs/companies/euratel-gmbh/senior-produktmanager-ki-produkte-leipzig-460874
+  metadata:
+    tags:
+    - Management
+    - Team Leader
+    job_types:
+    - berufserfahren
+published_at: '2026-07-23T08:30:27Z'
+discovered_at: '2026-07-23T16:07:54Z'
+updated_at: '2026-07-23T16:07:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:54Z'
+fingerprint: sha256:413952b18000f33ad514e34cc723dfe1c12ac19eb467b062624eb2107a048dd7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

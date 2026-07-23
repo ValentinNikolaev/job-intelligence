@@ -1,0 +1,23 @@
+schema_version: 2
+id: 947d4ea5-fe39-4130-a740-6b9e3f5f4951
+title: Senior Backend Engineer
+company: ImagineArt
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '8983775265421147429'
+  url: https://jooble.org/away/8983775265421147429?p=1&pos=1&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=106&brelb=15&scr=2846.9658&bscr=2846.9658&aq=2914900777975888200&elckey=-5937888225510835766
+published_at: '2026-07-19T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:08Z'
+updated_at: '2026-07-23T16:09:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:08Z'
+fingerprint: sha256:b7a85af6eded3930c155a952cccca914f0b19db59a88cc754e924e429e6748c4
+data_source: jooble
+content_source: jooble
+company_content_source: null

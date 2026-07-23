@@ -1,0 +1,51 @@
+schema_version: 2
+id: fab1a62f-877b-4d0e-ac23-f88d150a8aa4
+title: Embedded & Desktop Linux Systems Engineer - Optimisation
+company: Canonical Ltd.
+company_url: null
+location: Anywhere
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149567'
+  url: https://jobicy.com/jobs/149567-embedded-desktop-linux-systems-engineer-optimisation
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: Work across the full Linux stack from kernel through GUI to optimise
+      Ubuntu, the world’s most widely used Linux desktop and server, for the latest
+      silicon.The role is a fast-paced, problem-solving role that’s challenging yet
+      very exciting. The right candidate must be resourceful, articulate, and able
+      to deliver on a wide variety of solutions across…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+    - query_index: 7
+      parameters:
+        count: '100'
+        tag: technical lead
+        industry: dev
+        geo: europe
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-21T16:20:40Z'
+discovered_at: '2026-07-23T16:08:29Z'
+updated_at: '2026-07-23T16:08:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:29Z'
+fingerprint: sha256:608d2a8a5961b9459fe57bf2b4f598c4afcdf3c4be032bca785bf60c877336ca
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

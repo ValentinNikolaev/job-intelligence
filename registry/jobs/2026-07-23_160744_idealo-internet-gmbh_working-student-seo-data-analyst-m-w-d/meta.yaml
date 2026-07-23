@@ -1,0 +1,30 @@
+schema_version: 2
+id: 0a71e96f-7ce8-4283-922a-20d2757a8bc0
+title: Working Student SEO Data Analyst​ (m|w|d)
+company: idealo internet GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full-time permanent, entry
+sources:
+- source: arbeitnow
+  source_job_id: working-student-seo-data-analyst-mwd-berlin-39329
+  url: https://www.arbeitnow.com/jobs/companies/idealo-internet-gmbh/working-student-seo-data-analyst-mwd-berlin-39329
+  metadata:
+    tags:
+    - Internet and software
+    - college coursework completed
+    job_types:
+    - Full-time permanent
+    - entry
+published_at: '2026-07-23T13:20:14Z'
+discovered_at: '2026-07-23T16:07:44Z'
+updated_at: '2026-07-23T16:07:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:44Z'
+fingerprint: sha256:306965d3fcc0a7daa124e38cb76e4a328c2704129c35efcb1ba13b18c87a604c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

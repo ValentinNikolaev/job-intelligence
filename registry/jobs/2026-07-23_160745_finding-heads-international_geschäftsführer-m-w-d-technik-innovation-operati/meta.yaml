@@ -1,0 +1,29 @@
+schema_version: 2
+id: 1cd518b9-30f2-44a0-9ca4-43fc036e3541
+title: Geschäftsführer (m/w/d) Technik/Innovation/Operational Ecellence
+company: Finding Heads International
+company_url: null
+location: Braunschweig
+remote: false
+employment_type: geschäftsleitung
+sources:
+- source: arbeitnow
+  source_job_id: geschaftsfuhrer-technik-innovation-operational-ecellence-braunschweig-31978
+  url: https://www.arbeitnow.com/jobs/companies/finding-heads-international/geschaftsfuhrer-technik-innovation-operational-ecellence-braunschweig-31978
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+    job_types:
+    - geschäftsleitung
+published_at: '2026-07-23T11:30:41Z'
+discovered_at: '2026-07-23T16:07:45Z'
+updated_at: '2026-07-23T16:07:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:45Z'
+fingerprint: sha256:5d3717c9ade794a801797f1b13704499c6c0456e7126ae49810f8f4e55bb0c60
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

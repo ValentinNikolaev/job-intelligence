@@ -1,0 +1,26 @@
+schema_version: 2
+id: 95961f16-8d25-43a5-94a7-7168ccd56468
+title: Community Marketing Manager/in / Brand Evangelist (m/w/d)
+company: AccountOne GmbH
+company_url: null
+location: Flensburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: community-marketing-manager-in-brand-evangelist-flensburg-450577
+  url: https://www.arbeitnow.com/jobs/companies/accountone-gmbh/community-marketing-manager-in-brand-evangelist-flensburg-450577
+  metadata:
+    tags:
+    - Marketing and Communication
+published_at: '2026-07-23T10:30:28Z'
+discovered_at: '2026-07-23T16:07:49Z'
+updated_at: '2026-07-23T16:07:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:49Z'
+fingerprint: sha256:3a5703926c60c1b8624b15745e112b208ebc224932da89b4b00807583db3d3cb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

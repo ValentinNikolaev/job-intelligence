@@ -1,0 +1,91 @@
+schema_version: 2
+id: 4a678b82-f20a-400e-829d-df612bd5ef68
+title: Senior Software Engineer - FP/Scala/C#/TS
+company: Superformula
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Contractor
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/superformula/jobs/senior-software-engineer-fp-scala-c-ts
+  url: https://himalayas.app/companies/superformula/jobs/senior-software-engineer-fp-scala-c-ts
+  metadata:
+    location_restrictions: []
+    excerpt: Build software that solves real problems.  We're looking for a Senior
+      Software Engineer who loves crafting thoughtful, scalable systems and collaborating
+      with other talented engineers.
+    company_slug: superformula
+    company_logo: https://cdn-images.himalayas.app/wzut6l0if8j1pwoltqj7ukpptzoq
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Software-Engineer
+    - Software-Engineering
+    - Backend-Development
+    - Cloud-Engineer
+    - Fullstack-Development
+    - Senior-C#-.NET-Software-Engineer
+    - Senior-Scala-Engineer
+    - Senior-Scala-Developer
+    - Senior-Full-Stack-Developer-(Scala-+-React-React-Native)
+    - Scala-Software-Engineer
+    expiry_at: '2026-09-18T00:27:01Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        worldwide: 'true'
+        sort: recent
+        q: backend engineer
+        seniority: Senior
+published_at: '2026-07-20T00:27:01Z'
+discovered_at: '2026-07-23T16:08:15Z'
+updated_at: '2026-07-23T16:08:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:15Z'
+fingerprint: sha256:52cd2e73d79cf63094cdd512c2282980fb39a868774891eb45ce1187bb4bd513
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

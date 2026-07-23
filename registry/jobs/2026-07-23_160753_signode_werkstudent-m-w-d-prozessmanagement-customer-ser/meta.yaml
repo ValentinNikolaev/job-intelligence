@@ -1,0 +1,31 @@
+schema_version: 2
+id: c193b66a-9064-44a9-99b9-51eb8b836a5d
+title: Werkstudent (m/w/d) Prozessmanagement & Customer Service
+company: Signode
+company_url: null
+location: Hilden
+remote: false
+employment_type: Internship, student (college)
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-prozessmanagement-customer-service-hilden-205674
+  url: https://www.arbeitnow.com/jobs/companies/signode/werkstudent-prozessmanagement-customer-service-hilden-205674
+  metadata:
+    tags:
+    - Customer service
+    - call center
+    - high school coursework
+    job_types:
+    - Internship
+    - student (college)
+published_at: '2026-07-23T09:20:21Z'
+discovered_at: '2026-07-23T16:07:53Z'
+updated_at: '2026-07-23T16:07:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:07:53Z'
+fingerprint: sha256:901334a5666fbbab3fff9ee7f8f440f4cfd6df115dcf6c89efe0581d466e1a30
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

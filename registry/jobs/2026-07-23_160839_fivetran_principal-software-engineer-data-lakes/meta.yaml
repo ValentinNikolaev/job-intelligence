@@ -1,0 +1,51 @@
+schema_version: 2
+id: b5235d60-5d3e-446a-b0d7-0d9fc47115e3
+title: Principal Software Engineer - Data Lakes
+company: Fivetran
+company_url: null
+location: EMEA,  Germany
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '146976'
+  url: https://jobicy.com/jobs/146976-principal-software-engineer-data-lakes
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/3b8e4532-221-1.jpg
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: 'From Fivetran’s founding until now, our mission has remained the same:
+      to make access to data as simple and reliable as electricity. With Fivetran,
+      customer data arrives in their warehouses, canonical and ready to query, with
+      no engineering or maintenance required. We’re proud that more organizations
+      continue to leverage our technology every day to become…'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        industry: dev
+        geo: italy
+    - query_index: 7
+      parameters:
+        count: '100'
+        tag: technical lead
+        industry: dev
+        geo: europe
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        industry: dev
+        geo: europe
+published_at: '2026-07-18T19:10:03Z'
+discovered_at: '2026-07-23T16:08:39Z'
+updated_at: '2026-07-23T16:08:39Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:08:39Z'
+fingerprint: sha256:7947954b9cb9bba09a2fd5309c82a6c5f1007c86bdd00b4bd76dfe94011a2eae
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

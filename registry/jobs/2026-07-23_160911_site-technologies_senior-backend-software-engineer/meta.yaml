@@ -1,0 +1,23 @@
+schema_version: 2
+id: d1853465-cbaa-4c9b-a382-be4b6cc2d552
+title: Senior Backend Software Engineer
+company: SITE Technologies
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-5797277930019027121'
+  url: https://jooble.org/away/-5797277930019027121?p=1&pos=7&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=130&brelb=15&scr=2451.2507&bscr=2451.2507&aq=2914900777975888200&elckey=-5937888225510835766
+published_at: '2026-07-18T00:00:00.0000000'
+discovered_at: '2026-07-23T16:09:11Z'
+updated_at: '2026-07-23T16:09:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-23T16:09:11Z'
+fingerprint: sha256:75101946aacb291f344043e64af49510fb16c5f6529a44625f56d99c3c3ae986
+data_source: jooble
+content_source: jooble
+company_content_source: null
