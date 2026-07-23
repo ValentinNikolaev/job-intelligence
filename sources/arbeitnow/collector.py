@@ -46,8 +46,14 @@ class ArbeitnowCollector:
         self.timeout = _positive_float(settings.get("timeout_seconds", 30), "timeout_seconds")
         self._opener = opener
         self._sleep = sleep
+        self._request_count = 0
+
+    @property
+    def api_requests(self) -> int:
+        return self._request_count
 
     def fetch(self) -> Iterable[NormalizedJob]:
+        self._request_count = 0
         url = _initial_url(self.visa_sponsorship)
         visited_pages: set[str] = set()
         seen_job_ids: set[str] = set()
@@ -80,6 +86,7 @@ class ArbeitnowCollector:
 
     def _get_json(self, request: Request, context: str) -> dict[str, Any]:
         for attempt in range(3):
+            self._request_count += 1
             try:
                 with self._opener(request, timeout=self.timeout) as response:
                     payload = json.loads(response.read().decode("utf-8"))

@@ -44,8 +44,14 @@ class JobicyCollector:
         self.timeout = _positive_float(settings.get("timeout_seconds", 30), "timeout_seconds")
         self.queries = _parse_queries(settings.get("queries"))
         self._opener = opener
+        self._request_count = 0
+
+    @property
+    def api_requests(self) -> int:
+        return self._request_count
 
     def fetch(self) -> Iterable[NormalizedJob]:
+        self._request_count = 0
         if not self.queries:
             raise ValueError("Jobicy queries are empty; edit sources/jobicy/config.yaml")
 
@@ -78,6 +84,7 @@ class JobicyCollector:
         )
         context = f"Jobicy query {query.index}"
         try:
+            self._request_count += 1
             with self._opener(request, timeout=self.timeout) as response:
                 payload = json.loads(response.read().decode("utf-8"))
         except HTTPError as exc:

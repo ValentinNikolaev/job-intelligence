@@ -3,11 +3,13 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
 import yaml
 
+from .api_usage import ApiUsageLog
 from .catalog import generate_catalog
 from .applications import (
     ApplicationGenerator,
@@ -176,6 +178,8 @@ def main(argv: list[str] | None = None) -> int:
 
     registry = Registry(registry_dir)
     rejected_registry = RejectedRegistry(registry_dir)
+    api_usage = ApiUsageLog(registry_dir / "source-api-usage.yaml")
+    run_started_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
     if target == "all":
         selected: Iterable[tuple[str, Collector]] = sorted(collectors.items())
@@ -196,6 +200,11 @@ def main(argv: list[str] | None = None) -> int:
             limit=collection_limit,
         )
         _print_summary(summary)
+        try:
+            api_usage.record(summary, run_started_at=run_started_at)
+        except Exception as exc:
+            failed = True
+            print(f"API usage log error: {exc}", file=sys.stderr)
         failed = failed or summary.errors > 0
 
     try:
@@ -241,6 +250,9 @@ def _run_collector(
     collector_errors = getattr(collector, "errors", 0)
     if isinstance(collector_errors, int) and collector_errors > 0:
         summary.errors += collector_errors
+    requests = getattr(collector, "api_requests", 0)
+    if isinstance(requests, int) and requests > 0:
+        summary.api_requests = requests
     return summary
 
 
@@ -266,6 +278,7 @@ def _print_summary(summary: CollectorSummary) -> None:
     print(f"Unchanged: {summary.unchanged}")
     print(f"Rejected: {summary.rejected}")
     print(f"Errors: {summary.errors}")
+    print(f"API requests: {summary.api_requests}")
     if summary.limit_reached:
         print(f"Limit reached: {summary.limit_reached}")
 

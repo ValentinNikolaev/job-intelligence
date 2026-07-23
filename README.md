@@ -140,9 +140,10 @@ Duplicates merged: 6
 Unchanged: 96
 Rejected: 0
 Errors: 0
+API requests: 11
 ```
 
-`all` isolates collector failures: it continues with other sources and exits non-zero if any source failed. To avoid one large feed monopolizing a scheduled run, collection targets process at most 100 fetched vacancies per collector by default. Override this with `--collection-limit <n>` or `JOBINTEL_COLLECTION_LIMIT`; use `0` for unlimited. The index is regenerated from registry metadata after the run.
+`all` isolates collector failures: it continues with other sources and exits non-zero if any source failed. To avoid one large feed monopolizing a scheduled run, collection targets process at most 100 fetched vacancies per collector by default. Override this with `--collection-limit <n>` or `JOBINTEL_COLLECTION_LIMIT`; use `0` for unlimited. Completed collectors append API request usage to `registry/source-api-usage.yaml`, grouped by source with cumulative totals and per-run entries. The index is regenerated from registry metadata after the run.
 
 ## Registry
 

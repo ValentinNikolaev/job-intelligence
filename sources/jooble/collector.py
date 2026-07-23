@@ -62,6 +62,10 @@ class JoobleCollector:
         self._sleep = sleep
         self._request_count = 0
 
+    @property
+    def api_requests(self) -> int:
+        return self._request_count
+
     def fetch(self) -> Iterable[NormalizedJob]:
         if not self.api_key:
             raise ValueError("JOOBLE_API_KEY must be set in the environment or sources/.env")

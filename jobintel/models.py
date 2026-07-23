@@ -65,6 +65,7 @@ class CollectorSummary:
     unchanged: int = 0
     rejected: int = 0
     errors: int = 0
+    api_requests: int = 0
     limit_reached: bool = False
 
     def record(self, status: str) -> None:
@@ -91,5 +92,6 @@ class CollectorSummary:
             "unchanged": self.unchanged,
             "rejected": self.rejected,
             "errors": self.errors,
+            "api_requests": self.api_requests,
             "limit_reached": self.limit_reached,
         }

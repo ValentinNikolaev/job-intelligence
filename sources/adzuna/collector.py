@@ -75,6 +75,10 @@ class AdzunaCollector:
         self._sleep = sleep
         self._request_count = 0
 
+    @property
+    def api_requests(self) -> int:
+        return self._request_count
+
     def fetch(self) -> Iterable[NormalizedJob]:
         if not self.app_id or not self.app_key:
             raise ValueError(

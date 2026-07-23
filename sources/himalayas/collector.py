@@ -72,8 +72,14 @@ class HimalayasCollector:
         self.queries = _parse_queries(settings.get("queries"), default_max_pages)
         self._opener = opener
         self._sleep = sleep
+        self._request_count = 0
+
+    @property
+    def api_requests(self) -> int:
+        return self._request_count
 
     def fetch(self) -> Iterable[NormalizedJob]:
+        self._request_count = 0
         if not self.queries:
             raise ValueError("Himalayas queries are empty; edit sources/himalayas/config.yaml")
 
@@ -130,6 +136,7 @@ class HimalayasCollector:
 
     def _get_json(self, request: Request, context: str) -> dict[str, Any]:
         for attempt in range(3):
+            self._request_count += 1
             try:
                 with self._opener(request, timeout=self.timeout) as response:
                     payload = json.loads(response.read().decode("utf-8"))

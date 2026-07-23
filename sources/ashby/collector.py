@@ -32,6 +32,11 @@ class AshbyCollector:
         self.timeout = self.registry.timeout_seconds
         self._opener = opener
         self.errors = 0
+        self._request_count = 0
+
+    @property
+    def api_requests(self) -> int:
+        return self._request_count
 
     def fetch(self) -> Iterable[NormalizedJob]:
         if not self.registry.boards:
@@ -40,6 +45,7 @@ class AshbyCollector:
                 "'python run.py ashby discover <board-or-url>'"
             )
         self.errors = 0
+        self._request_count = 0
         seen: set[str] = set()
         for board in self.registry.boards:
             try:
@@ -62,6 +68,7 @@ class AshbyCollector:
             headers={"Accept": "application/json", "User-Agent": "job-intelligence/0.1"},
         )
         try:
+            self._request_count += 1
             with self._opener(request, timeout=self.timeout) as response:
                 payload = json.loads(response.read().decode("utf-8"))
         except HTTPError as exc:

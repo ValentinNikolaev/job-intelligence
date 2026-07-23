@@ -252,7 +252,7 @@ python run.py list
 python run.py reindex
 ```
 
-`all` catches errors around each collector, prints a per-source summary, continues with the remaining collectors, regenerates the index, and exits non-zero if any collector failed. Collection targets process at most 100 fetched vacancies per collector by default so a large feed cannot monopolize a scheduled run. A single source failure occurs before or between atomic registry upserts, so existing files remain valid.
+`all` catches errors around each collector, prints a per-source summary, continues with the remaining collectors, regenerates the index, and exits non-zero if any collector failed. Collection targets process at most 100 fetched vacancies per collector by default so a large feed cannot monopolize a scheduled run. Completed collectors append API request counts to `registry/source-api-usage.yaml` so source quotas can be monitored across runs. A single source failure occurs before or between atomic registry upserts, so existing files remain valid.
 
 ## 13. MVP Implementation Plan
 
