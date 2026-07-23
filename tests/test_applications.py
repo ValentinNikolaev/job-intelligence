@@ -231,6 +231,28 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual("old: true", (target / "manifest.yaml").read_text(encoding="utf-8"))
         self.assertEqual([], list(self.directory.glob(".application.*.backup")))
 
+    def test_permission_denied_on_default_application_uses_marked_fallback_directory(self) -> None:
+        target = self.directory / "application"
+        target.mkdir()
+        (target / "cv.md").write_text("old", encoding="utf-8")
+        real_replace = os.replace
+
+        def deny_default_application(source: object, destination: object) -> None:
+            if Path(source) == target:
+                raise PermissionError("access denied")
+            real_replace(source, destination)
+
+        with patch("jobintel.applications.os.replace", side_effect=deny_default_application):
+            result = self._generator(FakeClient(), FakeConverter()).generate_directory(self.directory)
+
+        fallback = self.directory / "application-codex"
+        meta = yaml.safe_load((self.directory / "meta.yaml").read_text(encoding="utf-8"))
+        self.assertEqual("prepared", result.status)
+        self.assertEqual("application-codex", meta["application_directory"])
+        self.assertTrue((fallback / "manifest.yaml").is_file())
+        self.assertEqual("old", (target / "cv.md").read_text(encoding="utf-8"))
+        self.assertTrue(self._generator(FakeClient(), FakeConverter()).is_current(self.directory))
+
     def test_invalid_markdown_contract_is_not_published(self) -> None:
         payload = application_payload()
         payload["analysis_markdown"] = "# Missing required sections\n"

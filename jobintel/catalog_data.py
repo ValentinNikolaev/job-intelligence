@@ -106,7 +106,7 @@ def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
                 score=match["score"] if match else None,
                 recommendation=match["recommendation"] if match else None,
                 sources=_source_refs(meta["sources"], meta_path),
-                artifacts=_artifacts(directory),
+                artifacts=_artifacts(directory, meta),
             )
         )
     rows.sort(key=lambda row: (row.discovered_at, row.vacancy_id), reverse=True)
@@ -130,8 +130,9 @@ def _source_refs(value: Any, path: Path) -> tuple[dict[str, Any], ...]:
     return tuple(refs)
 
 
-def _artifacts(directory: Path) -> ArtifactLinks:
-    application = directory / "application"
+def _artifacts(directory: Path, meta: dict[str, Any]) -> ArtifactLinks:
+    application_name = str(meta.get("application_directory", "application")).strip()
+    application = directory / application_name
     return ArtifactLinks(
         job_md=_artifact(directory / "job.md"),
         company_md=_artifact(directory / "company.md"),

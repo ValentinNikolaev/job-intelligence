@@ -5,6 +5,8 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
+import yaml
+
 from jobintel.catalog import generate_catalog
 from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
@@ -88,6 +90,22 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue((self.catalog_root / "2026-07.md").is_file())
         self.assertTrue((self.catalog_root / "2026-08.md").is_file())
         self.assertLess(index.index("2026-08"), index.index("2026-07"))
+
+    def test_catalog_uses_application_directory_marked_in_metadata(self) -> None:
+        created = self.registry.upsert(make_job("fallback", "Fallback Engineer"))
+        directory = self.registry_root / "jobs" / created.directory
+        fallback = directory / "application-codex"
+        fallback.mkdir()
+        (fallback / "cv.md").write_text("cv", encoding="utf-8")
+        meta_path = directory / "meta.yaml"
+        meta = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+        meta["application_directory"] = "application-codex"
+        meta_path.write_text(yaml.safe_dump(meta, sort_keys=False), encoding="utf-8")
+
+        generate_catalog(self.registry_root, self.catalog_root)
+
+        content = (self.catalog_root / "index.md").read_text(encoding="utf-8")
+        self.assertIn("application-codex/cv.md", content)
 
 
 if __name__ == "__main__":

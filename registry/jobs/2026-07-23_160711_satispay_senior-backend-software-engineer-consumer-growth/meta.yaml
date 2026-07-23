@@ -21,3 +21,4 @@ fingerprint: sha256:79f037da0b2c41e8876e9cfedaefa3d817a4ad765659873344a9cf4e64c3
 data_source: adzuna
 content_source: adzuna
 company_content_source: null
+application_directory: application-codex

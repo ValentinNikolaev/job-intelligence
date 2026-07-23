@@ -31,3 +31,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: eb33f17652d247a5ac88666fec52740b
+  recorded_at: '2026-07-23T21:40:26Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 6548
+  output_tokens: 4613
+  total_tokens: 11161
+  note: Estimated from priority queue input estimate and published Markdown draft
+    character count; task usage was not reported.

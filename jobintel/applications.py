@@ -23,6 +23,9 @@ APPLICATION_FILES = {
     "interview_preparation_markdown": "interview-preparation.md",
 }
 
+_DEFAULT_APPLICATION_DIRECTORY = "application"
+_FALLBACK_APPLICATION_DIRECTORY = "application-codex"
+
 _REQUIRED_HEADINGS = {
     "analysis_markdown": (
         "Vacancy Summary",
@@ -200,7 +203,7 @@ class ApplicationGenerator:
             "prompt_version": prompt_version,
             "model": self.model,
         }
-        application_dir = directory / "application"
+        application_dir = _application_directory(directory, meta)
         manifest_path = application_dir / "manifest.yaml"
         if not force and _package_is_current(application_dir, manifest_path, expected_versions):
             return PreparationResult("skipped", vacancy_id, directory.name)
@@ -237,7 +240,14 @@ class ApplicationGenerator:
                 staging / "manifest.yaml",
                 yaml.safe_dump(manifest, allow_unicode=True, sort_keys=False),
             )
-            _publish_staged_package(staging, application_dir, manifest["files"])
+            try:
+                _publish_staged_package(staging, application_dir, manifest["files"])
+            except PermissionError:
+                if application_dir.name != _DEFAULT_APPLICATION_DIRECTORY:
+                    raise
+                application_dir = directory / _FALLBACK_APPLICATION_DIRECTORY
+                _publish_staged_package(staging, application_dir, manifest["files"])
+                _record_application_directory(directory / "meta.yaml", meta, application_dir.name)
         finally:
             shutil.rmtree(staging, ignore_errors=True)
 
@@ -256,7 +266,7 @@ class ApplicationGenerator:
             "prompt_version": prompt_version,
             "model": self.model,
         }
-        application_dir = directory / "application"
+        application_dir = _application_directory(directory, meta)
         return _package_is_current(
             application_dir, application_dir / "manifest.yaml", expected_versions
         )
@@ -352,9 +362,12 @@ def _load_vacancy(
         "job_description": job_text,
         "provided_company_information": company_text or None,
     }
+    versioned_metadata = {
+        key: value for key, value in meta.items() if key != "application_directory"
+    }
     vacancy_version = _content_version(
         json.dumps(
-            {"metadata": dict(meta), "job_description": job_text},
+            {"metadata": versioned_metadata, "job_description": job_text},
             ensure_ascii=False,
             sort_keys=True,
             separators=(",", ":"),
@@ -362,6 +375,22 @@ def _load_vacancy(
     )
     company_version = _content_version(company_text)
     return vacancy, vacancy_version, company_version
+
+
+def _application_directory(directory: Path, meta: Mapping[str, Any]) -> Path:
+    name = str(meta.get("application_directory", _DEFAULT_APPLICATION_DIRECTORY)).strip()
+    if not name or Path(name).name != name or not name.startswith("application"):
+        raise ApplicationError("application_directory must be a single application-prefixed directory name")
+    return directory / name
+
+
+def _record_application_directory(meta_path: Path, meta: Mapping[str, Any], directory_name: str) -> None:
+    updated = dict(meta)
+    updated["application_directory"] = directory_name
+    _write_text(
+        meta_path,
+        yaml.safe_dump(updated, allow_unicode=True, sort_keys=False),
+    )
 
 
 def _package_is_current(
