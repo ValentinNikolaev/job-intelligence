@@ -316,7 +316,7 @@ class ApplicationTests(unittest.TestCase):
 
     def test_pending_prepare_queues_are_disjoint_and_exclude_low_scores(self) -> None:
         directories: dict[int, str] = {}
-        for score in (64, 65, 79, 80):
+        for score in (64, 65, 74, 75):
             registry = Registry(
                 self.registry_root,
                 clock=lambda: self.now,
@@ -376,10 +376,10 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(0, priority_exit)
         self.assertNotIn(directories[64], normal.getvalue())
         self.assertIn(directories[65], normal.getvalue())
-        self.assertIn(directories[79], normal.getvalue())
-        self.assertNotIn(directories[80], normal.getvalue())
+        self.assertIn(directories[74], normal.getvalue())
+        self.assertNotIn(directories[75], normal.getvalue())
         self.assertNotIn(directories[65], priority.getvalue())
-        self.assertIn(directories[80], priority.getvalue())
+        self.assertIn(directories[75], priority.getvalue())
 
 
 if __name__ == "__main__":

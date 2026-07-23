@@ -14,10 +14,10 @@ class WorkflowPolicyTests(unittest.TestCase):
 
         self.assertFalse(policy.prepare_score_is_eligible("prepare", 64))
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 65))
-        self.assertTrue(policy.prepare_score_is_eligible("prepare", 79))
-        self.assertFalse(policy.prepare_score_is_eligible("prepare", 80))
-        self.assertFalse(policy.prepare_score_is_eligible("prepare-priority", 79))
-        self.assertTrue(policy.prepare_score_is_eligible("prepare-priority", 80))
+        self.assertTrue(policy.prepare_score_is_eligible("prepare", 74))
+        self.assertFalse(policy.prepare_score_is_eligible("prepare", 75))
+        self.assertFalse(policy.prepare_score_is_eligible("prepare-priority", 74))
+        self.assertTrue(policy.prepare_score_is_eligible("prepare-priority", 75))
         self.assertEqual(
             "codex:gpt-5.6-terra:medium",
             policy.workflow("prepare-priority").model_label,

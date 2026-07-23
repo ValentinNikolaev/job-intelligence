@@ -245,7 +245,7 @@ content, prompt, and model. Unchanged packages are skipped unless `--force` is s
 The source CV and LinkedIn registry are never modified.
 
 Preparation is score-gated before any draft is read or published. Normal preparation
-accepts scores from 65 through 79, priority preparation accepts scores from 80 through
+accepts scores from 65 through 74, priority preparation accepts scores from 75 through
 100, and scores below 65 are intentionally excluded.
 
 See [the application workflow design](docs/application-architecture.md) for isolation,
@@ -260,8 +260,8 @@ Create separate tasks because a running task cannot switch its own model:
 | Task | Model | Reasoning |
 |---|---|---|
 | Analyze | GPT-5.6 Luna | low |
-| Normal prepare (score 65-79) | GPT-5.5 | medium |
-| Priority prepare (score at least 80) | GPT-5.6 Terra | medium |
+| Normal prepare (score 65-74) | GPT-5.5 | medium |
+| Priority prepare (score at least 75) | GPT-5.6 Terra | medium |
 
 The authoritative routing policy is
 [`config/codex-workflows.yaml`](config/codex-workflows.yaml). The configured model must be

@@ -36,8 +36,8 @@ values locally without invoking a model.
 
 ## Model routing
 
-Normal packages use GPT-5.5 with medium reasoning for scores from 65 through 79.
-Vacancies scoring at least 80 use GPT-5.6 Terra with medium reasoning; scores below 65
+Normal packages use GPT-5.5 with medium reasoning for scores from 65 through 74.
+Vacancies scoring at least 75 use GPT-5.6 Terra with medium reasoning; scores below 65
 are not prepared. These are separate Codex tasks because a running task
 cannot switch its own model. If the configured model is unavailable, report the problem
 instead of publishing under an inaccurate label.
