@@ -13,25 +13,25 @@ timeout_seconds: 30
 queries:
   - country: it
     what: "senior backend engineer"
-    max_days_old: 14
+    max_days_old: 7
     sort_by: date
     max_pages: 3
 
   - country: it
     what: "golang backend engineer"
-    max_days_old: 14
+    max_days_old: 7
     sort_by: date
     max_pages: 3
 
   - country: it
     what: "senior php backend developer"
-    max_days_old: 14
+    max_days_old: 7
     sort_by: date
     max_pages: 2
 
   - country: it
     what: "backend technical lead"
-    max_days_old: 14
+    max_days_old: 7
     sort_by: date
     max_pages: 1
 
@@ -39,6 +39,6 @@ queries:
     what: "backend engineer"
     where: "Roma"
     distance: 80
-    max_days_old: 14
+    max_days_old: 7
     sort_by: date
     max_pages: 2

@@ -30,6 +30,9 @@ queries:
     max_pages: 3
 ```
 
+Primary search profiles should keep `max_days_old` at 7 or lower. The shared
+collection prefilter also rejects older known publication dates from every source.
+
 `country` must be one of the countries supported by Adzuna. A query needs at
 least one of `what`, `what_and`, `what_phrase`, `what_or`, or `title_only`.
 The collector accepts the search parameters from the official OpenAPI contract:

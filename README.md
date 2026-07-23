@@ -172,6 +172,15 @@ The registry uses exact `(source, source_job_id)` identity first. For a new sour
 
 Collected vacancy directories are not ignored, so the registry can be inspected, diffed, and committed if desired. Review source terms and the sensitivity of your search data before publishing it.
 
+Collection applies a deterministic prefilter before writing to the main registry.
+Vacancies older than seven days, obvious non-profile roles such as QA Automation,
+Android, or iOS, and hard local-language requirements for German or French are
+kept out of `registry/jobs/`. Hard Italian requirements are also rejected unless
+the vacancy explicitly requires English. English language requirements are always
+a green light for the language filter. Rejected records are written under
+`registry/rejected/` with a structured `rejection_reason` in `meta.yaml` and the
+same reason at the top of `job.md`.
+
 ### Match analysis and ranking
 
 The `$job-intelligence-workflow` Codex skill compares one vacancy at a time with

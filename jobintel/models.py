@@ -63,6 +63,7 @@ class CollectorSummary:
     updated: int = 0
     merged: int = 0
     unchanged: int = 0
+    rejected: int = 0
     errors: int = 0
 
     def record(self, status: str) -> None:
@@ -74,6 +75,8 @@ class CollectorSummary:
             self.merged += 1
         elif status == "unchanged":
             self.unchanged += 1
+        elif status == "rejected":
+            self.rejected += 1
         else:
             raise ValueError(f"unknown upsert status: {status}")
 
@@ -85,5 +88,6 @@ class CollectorSummary:
             "updated": self.updated,
             "duplicates_merged": self.merged,
             "unchanged": self.unchanged,
+            "rejected": self.rejected,
             "errors": self.errors,
         }

@@ -20,6 +20,7 @@ from .collector import Collector, discover_collectors
 from .config import load_env
 from .matching import AnalysisSummary, CodexMatchDraftClient, MatchAnalyzer
 from .models import CollectorSummary
+from .prefilter import RejectedRegistry, prefilter_job
 from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
 
@@ -164,6 +165,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     registry = Registry(registry_dir)
+    rejected_registry = RejectedRegistry(registry_dir)
 
     if target == "all":
         selected: Iterable[tuple[str, Collector]] = sorted(collectors.items())
@@ -176,7 +178,7 @@ def main(argv: list[str] | None = None) -> int:
 
     failed = False
     for name, collector in selected:
-        summary = _run_collector(name, collector, registry)
+        summary = _run_collector(name, collector, registry, rejected_registry)
         _print_summary(summary)
         failed = failed or summary.errors > 0
 
@@ -188,12 +190,22 @@ def main(argv: list[str] | None = None) -> int:
     return 1 if failed else 0
 
 
-def _run_collector(name: str, collector: Collector, registry: Registry) -> CollectorSummary:
+def _run_collector(
+    name: str,
+    collector: Collector,
+    registry: Registry,
+    rejected_registry: RejectedRegistry,
+) -> CollectorSummary:
     summary = CollectorSummary(source=name)
     try:
         for job in collector.fetch():
             summary.fetched += 1
             try:
+                rejection = prefilter_job(job)
+                if rejection is not None:
+                    rejected_registry.upsert(job, rejection)
+                    summary.record("rejected")
+                    continue
                 result = registry.upsert(job)
                 summary.record(result.status)
             except Exception as exc:
@@ -218,6 +230,7 @@ def _print_summary(summary: CollectorSummary) -> None:
     print(f"Updated: {summary.updated}")
     print(f"Duplicates merged: {summary.merged}")
     print(f"Unchanged: {summary.unchanged}")
+    print(f"Rejected: {summary.rejected}")
     print(f"Errors: {summary.errors}")
 
 

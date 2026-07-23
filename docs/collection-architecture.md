@@ -19,6 +19,7 @@ Source API
 
 - A source collector owns authentication, pagination, filters, and mapping one API schema to `NormalizedJob`.
 - The registry owns both identity checks, canonical field selection, safe filesystem writes, and index generation.
+- The shared prefilter owns deterministic rejection of stale, language-incompatible, or obviously profile-incompatible records before they enter the main registry.
 - `meta.yaml` is authoritative. Markdown is a human-readable projection.
 - The CLI discovers collectors from `sources/*/collector.py`, so source implementations remain isolated.
 
@@ -210,14 +211,15 @@ For `job.md`, a higher-ranked description wins; at equal rank, the longer non-em
 ## 9. Registry Upsert Algorithm
 
 1. Validate the normalized job and compute its fingerprint.
-2. Look up `(source, source_job_id)`.
-3. If found, use that directory. Compare its reference, canonical fields, and preferred Markdown. Write only if meaningful data changed.
-4. Otherwise, look up the fingerprint among other sources. If found, use that candidate and append the new source reference.
-5. If neither lookup matches, generate a UUID, create one human-readable directory from the UTC discovery time, and write the initial canonical files.
-6. Preserve `discovered_at` forever. Set `updated_at` only when metadata or preferred content changed.
-7. Write each file via a temporary sibling and atomic replace. On initial creation, build a temporary directory and rename it only after all content is valid.
-8. Classify the result as `created`, `updated`, `merged`, or `unchanged`.
-9. After a collector finishes, fully regenerate `index.md` from all valid `meta.yaml` files.
+2. Apply the shared prefilter. Rejected jobs are written under `registry/rejected/` with a mandatory reason and never enter `registry/jobs/`.
+3. Look up `(source, source_job_id)`.
+4. If found, use that directory. Compare its reference, canonical fields, and preferred Markdown. Write only if meaningful data changed.
+5. Otherwise, look up the fingerprint among other sources. If found, use that candidate and append the new source reference.
+6. If neither lookup matches, generate a UUID, create one human-readable directory from the UTC discovery time, and write the initial canonical files.
+7. Preserve `discovered_at` forever. Set `updated_at` only when metadata or preferred content changed.
+8. Write each file via a temporary sibling and atomic replace. On initial creation, build a temporary directory and rename it only after all content is valid.
+9. Classify the result as `created`, `updated`, `merged`, `unchanged`, or `rejected`.
+10. After a collector finishes, fully regenerate `index.md` from all valid `meta.yaml` files.
 
 Known source records can be updated or unchanged. A new source with a known fingerprint is merged. A new fingerprint is created. Unchanged input produces no file changes, including no timestamp churn.
 
