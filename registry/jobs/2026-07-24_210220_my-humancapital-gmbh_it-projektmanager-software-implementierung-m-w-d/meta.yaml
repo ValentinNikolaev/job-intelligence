@@ -1,0 +1,27 @@
+schema_version: 2
+id: e1403d20-ee54-4fdb-bcda-677228fc96e2
+title: IT Projektmanager Software Implementierung (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: it-projektmanager-software-implementierung-munich-473689
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/it-projektmanager-software-implementierung-munich-473689
+  metadata:
+    tags:
+    - Project Management
+published_at: '2026-07-24T17:00:29Z'
+discovered_at: '2026-07-24T21:02:20Z'
+updated_at: '2026-07-24T21:02:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:20Z'
+analysis_priority: 0
+fingerprint: sha256:8424251dfa10be5f0e2e6a529cc446d7558a2b2bed37ed2ec866f36482c9de81
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

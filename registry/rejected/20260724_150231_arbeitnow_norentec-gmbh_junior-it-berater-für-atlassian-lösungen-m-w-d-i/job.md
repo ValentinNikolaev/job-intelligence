@@ -77,4 +77,4 @@ Keine Sorge, wenn du nicht jeden Punkt zu 100 % abdeckst – wichtiger ist uns d
 
 Für Fragen erreichst du uns jederzeit unter 0151 57613167 – Wir freuen uns auf dich!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

@@ -1,0 +1,27 @@
+schema_version: 2
+id: f4065341-dfeb-4d03-a008-6eac6a43c5b6
+title: SAP Inhouse Consultant Business Partner (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sap-inhouse-consultant-business-partner-munich-329294
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/sap-inhouse-consultant-business-partner-munich-329294
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-24T17:00:33Z'
+discovered_at: '2026-07-24T21:02:08Z'
+updated_at: '2026-07-24T21:02:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:08Z'
+analysis_priority: 0
+fingerprint: sha256:5525faa26b258a536b0845159903af113b1bf47cb189d7d11d7e5ec83dbf0d54
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

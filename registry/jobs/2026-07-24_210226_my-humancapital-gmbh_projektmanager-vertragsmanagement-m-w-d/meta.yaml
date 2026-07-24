@@ -1,0 +1,27 @@
+schema_version: 2
+id: 68cc0ac7-1b74-4465-9b16-2d9ffd513cd5
+title: Projektmanager Vertragsmanagement (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: projektmanager-vertragsmanagement-munich-297407
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/projektmanager-vertragsmanagement-munich-297407
+  metadata:
+    tags:
+    - Project Management
+published_at: '2026-07-24T17:00:28Z'
+discovered_at: '2026-07-24T21:02:26Z'
+updated_at: '2026-07-24T21:02:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:26Z'
+analysis_priority: 0
+fingerprint: sha256:6e1abfde0ca7a408dd30bfa2c8a6c082b18a5ae3a23d53c124d78c5310f3d652
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

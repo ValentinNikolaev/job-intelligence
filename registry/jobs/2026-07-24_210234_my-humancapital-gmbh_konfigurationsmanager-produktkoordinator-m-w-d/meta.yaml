@@ -1,0 +1,27 @@
+schema_version: 2
+id: 693605a1-48eb-4065-833d-9a0878b767b7
+title: Konfigurationsmanager / Produktkoordinator (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: konfigurationsmanager-produktkoordinator-munich-16110
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/konfigurationsmanager-produktkoordinator-munich-16110
+  metadata:
+    tags:
+    - Project Management
+published_at: '2026-07-24T17:00:26Z'
+discovered_at: '2026-07-24T21:02:34Z'
+updated_at: '2026-07-24T21:02:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:34Z'
+analysis_priority: 0
+fingerprint: sha256:6a5093fa08db97d9869cb6d6b140848a9b88dbfdefaf3578c835b12c2e92fa0e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

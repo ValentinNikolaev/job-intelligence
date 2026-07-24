@@ -82,4 +82,4 @@ Als DevOps Engineer bei uns wirst du Teil eines dynamischen Teams, das sich der 
 
 - 24.12 und 31.12 Betriebsferien
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

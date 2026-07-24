@@ -1,0 +1,27 @@
+schema_version: 2
+id: df564137-47b1-4e43-b7e1-cf7163c31d51
+title: Technischer Sachbearbeiter Disposition (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Wangen im Allgäu
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: technischer-sachbearbeiter-disposition-wangen-im-allgau-481672
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/technischer-sachbearbeiter-disposition-wangen-im-allgau-481672
+  metadata:
+    tags:
+    - Technical Documentation
+published_at: '2026-07-24T17:00:34Z'
+discovered_at: '2026-07-24T21:02:05Z'
+updated_at: '2026-07-24T21:02:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:05Z'
+analysis_priority: 0
+fingerprint: sha256:aebdc3477988ee4aa04f24ef7012647b43b8e5ef6c24f558809045752ef7f293
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

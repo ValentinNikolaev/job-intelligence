@@ -1,0 +1,27 @@
+schema_version: 2
+id: f10057db-483f-431c-8901-700e96c8e640
+title: Projektleiter (m/w/d) Simulationssysteme
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: projektleiter-simulationssysteme-munich-337836
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/projektleiter-simulationssysteme-munich-337836
+  metadata:
+    tags:
+    - Project Management
+published_at: '2026-07-24T17:00:29Z'
+discovered_at: '2026-07-24T21:02:21Z'
+updated_at: '2026-07-24T21:02:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:21Z'
+analysis_priority: 0
+fingerprint: sha256:af3c73223f12cfd0071c428050318486af8d76b1021feb49bf99c3601c874ebb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

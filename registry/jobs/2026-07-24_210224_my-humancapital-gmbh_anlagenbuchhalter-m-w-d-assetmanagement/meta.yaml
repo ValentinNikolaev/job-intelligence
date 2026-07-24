@@ -1,0 +1,27 @@
+schema_version: 2
+id: 52ccb348-5a5b-4ff4-af86-e4ca3e7c8ba2
+title: Anlagenbuchhalter (m/w/d) Assetmanagement
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: anlagenbuchhalter-assetmanagement-munich-189973
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/anlagenbuchhalter-assetmanagement-munich-189973
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-24T17:00:28Z'
+discovered_at: '2026-07-24T21:02:24Z'
+updated_at: '2026-07-24T21:02:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:24Z'
+analysis_priority: 0
+fingerprint: sha256:c2e7261bbd18609b932771415712c5a88cfc19475795c50661fb74d83b3e12e0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -62,4 +62,4 @@ Du arbeitest eng mit Gründer:innen an dem, was ihr Startup gerade weiterbringt:
 
 - Die Chance, Startup-Ökosysteme in Deutschland aktiv mitzugestalten und das auch jenseits der üblichen Hotspots
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

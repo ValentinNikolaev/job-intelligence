@@ -1,0 +1,27 @@
+schema_version: 2
+id: f519f8c9-5929-4f50-98d0-647e73c68aff
+title: Personalreferent (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: personalreferent-munich-453120
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/personalreferent-munich-453120
+  metadata:
+    tags:
+    - HR
+published_at: '2026-07-24T17:00:32Z'
+discovered_at: '2026-07-24T21:02:11Z'
+updated_at: '2026-07-24T21:02:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:11Z'
+analysis_priority: 0
+fingerprint: sha256:6639149075ec4ab44f9cde51d6dbffb32fd6660dc36913570d2c84c9525011b9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

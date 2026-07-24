@@ -1,0 +1,27 @@
+schema_version: 2
+id: dd364fe7-6116-4c0c-ba9e-815c461d1c96
+title: Kreditsachbearbeiter (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: kreditsachbearbeiter-munich-146326
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/kreditsachbearbeiter-munich-146326
+  metadata:
+    tags:
+    - Credit Analysis
+published_at: '2026-07-24T17:00:30Z'
+discovered_at: '2026-07-24T21:02:19Z'
+updated_at: '2026-07-24T21:02:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:19Z'
+analysis_priority: 0
+fingerprint: sha256:10bfa0ebb3fd6342b22dee6f7a1ea32608c98fafb0cae20bf8a1d0ed0b4a7d5a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

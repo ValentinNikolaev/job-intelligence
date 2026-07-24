@@ -1,0 +1,27 @@
+schema_version: 2
+id: ba261498-27a1-4942-8325-3720f6e1a4f0
+title: Sachbearbeiter Customer Service und Kundenbetreuung (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sachbearbeiter-customer-service-und-kundenbetreuung-munich-372781
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/sachbearbeiter-customer-service-und-kundenbetreuung-munich-372781
+  metadata:
+    tags:
+    - Customer Service
+published_at: '2026-07-24T17:00:30Z'
+discovered_at: '2026-07-24T21:02:16Z'
+updated_at: '2026-07-24T21:02:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:16Z'
+analysis_priority: 0
+fingerprint: sha256:655f6c7b1a7086836b3ad723da85e5ab767afe9dc4fc08d97f8b2c097990b20f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

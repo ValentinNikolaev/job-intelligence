@@ -1,0 +1,27 @@
+schema_version: 2
+id: 39fcd451-f282-4339-ad2d-e8ab14bbe317
+title: Sachbearbeiter Controlling und Finanzen (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sachbearbeiter-controlling-und-finanzen-munich-342026
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/sachbearbeiter-controlling-und-finanzen-munich-342026
+  metadata:
+    tags:
+    - Controlling
+published_at: '2026-07-24T17:00:32Z'
+discovered_at: '2026-07-24T21:02:14Z'
+updated_at: '2026-07-24T21:02:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:14Z'
+analysis_priority: 0
+fingerprint: sha256:5fd417ffd0a4d7ac0dc1de07ecda75451052c2c87a50a9e0230115ee7fcd7a4b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

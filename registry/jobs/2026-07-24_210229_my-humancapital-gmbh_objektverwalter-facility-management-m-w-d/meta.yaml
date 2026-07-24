@@ -1,0 +1,29 @@
+schema_version: 2
+id: 2a8730db-93cb-4dd6-a06f-ecc760c8e6a7
+title: Objektverwalter Facility Management (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: objektverwalter-facility-management-munich-356398
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/objektverwalter-facility-management-munich-356398
+  metadata:
+    tags:
+    - Building
+    - Supply
+    - Safety Services Engineering
+published_at: '2026-07-24T17:00:28Z'
+discovered_at: '2026-07-24T21:02:29Z'
+updated_at: '2026-07-24T21:02:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:02:29Z'
+analysis_priority: 0
+fingerprint: sha256:d191fed580a8b1b1e6d49073763c94cae5ea95cd079737f5fa8087c368b19f78
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
