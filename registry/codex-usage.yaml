@@ -124,3 +124,14 @@ runs:
   total_tokens: 12735
   note: Estimated from priority queue input estimate and generated single-vacancy
     application package; exact task usage unavailable.
+- run_id: 36f35c6c0d9945ab872ed392603d61e0
+  recorded_at: '2026-07-24T18:55:33Z'
+  workflow: prepare
+  model: codex:gpt-5.5:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 52000
+  output_tokens: 21000
+  total_tokens: 73000
+  note: Estimated Codex usage for normal application preparation automation job-intelligence-normal-application-preparation
+    on 2026-07-24.
