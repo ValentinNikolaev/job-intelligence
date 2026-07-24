@@ -1,0 +1,30 @@
+schema_version: 2
+id: 38095975-ed60-44c9-9960-5fcb0ee1391a
+title: Junior Manager Data & Operations (m/w/d) (60-80%)
+company: FASE
+company_url: null
+location: Munich
+remote: true
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: junior-manager-data-operations-60-80-munich-329814
+  url: https://www.arbeitnow.com/jobs/companies/fase/junior-manager-data-operations-60-80-munich-329814
+  metadata:
+    tags:
+    - Remote
+    - Database Administration
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-24T13:00:29Z'
+discovered_at: '2026-07-24T15:02:24Z'
+updated_at: '2026-07-24T15:02:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T15:02:24Z'
+analysis_priority: 0
+fingerprint: sha256:a4c83c2f36cb1b83c832601ffbba756816852606739415767096e934fbc65717
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

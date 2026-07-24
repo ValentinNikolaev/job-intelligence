@@ -1,0 +1,24 @@
+schema_version: 2
+id: f2a11fb2-ace0-4a5a-8a53-157fe6a2c31b
+title: Talent Acquisition Specialist
+company: Wellhub
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: talent-acquisition-specialist-berlin-337380
+  url: https://www.arbeitnow.com/jobs/companies/wellhub/talent-acquisition-specialist-berlin-337380
+published_at: '2026-07-24T13:45:50Z'
+discovered_at: '2026-07-24T15:02:16Z'
+updated_at: '2026-07-24T15:02:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T15:02:16Z'
+analysis_priority: 0
+fingerprint: sha256:c8998ac174531d264f06f56c7005f7ccce39cd1aefb88adb18e9a981b3710328
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

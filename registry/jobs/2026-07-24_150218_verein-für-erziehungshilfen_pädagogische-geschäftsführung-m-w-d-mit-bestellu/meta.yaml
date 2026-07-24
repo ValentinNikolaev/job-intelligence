@@ -1,0 +1,30 @@
+schema_version: 2
+id: 6d034a07-ebf4-4d04-a79b-2814bd654ba5
+title: Pädagogische Geschäftsführung (m/w/d) mit Bestellung zum hauptamtlichen Vorstandsmitglied
+company: Verein für Erziehungshilfen
+company_url: null
+location: Dortmund
+remote: false
+employment_type: geschäftsleitung
+sources:
+- source: arbeitnow
+  source_job_id: padagogische-geschaftsfuhrung-mit-bestellung-zum-hauptamtlichen-vorstandsmitglied-dortmund-402639
+  url: https://www.arbeitnow.com/jobs/companies/verein-fur-erziehungshilfen/padagogische-geschaftsfuhrung-mit-bestellung-zum-hauptamtlichen-vorstandsmitglied-dortmund-402639
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+    job_types:
+    - geschäftsleitung
+published_at: '2026-07-24T13:30:49Z'
+discovered_at: '2026-07-24T15:02:18Z'
+updated_at: '2026-07-24T15:02:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T15:02:18Z'
+analysis_priority: 0
+fingerprint: sha256:fa847236108ee28772e07044ec8abce981689c7f63abf8fdba6ed3c547801808
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -82,4 +82,4 @@ Sie hatten nun die Gelegenheit, uns kennenzulernen. Nun w√ºrden wir gerne mehr √
 
 Bewerben Sie sich - digital, unkompliziert und im besten Fall: noch heute!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

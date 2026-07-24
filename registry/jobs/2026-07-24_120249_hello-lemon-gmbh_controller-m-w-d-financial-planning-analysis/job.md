@@ -68,4 +68,4 @@ Klingt das nach Ihrer nächsten Herausforderung? Dann bewerben Sie sich jetzt di
 
 Wir beurteilen qualifizierte Bewerber:innen ohne Rücksicht auf Geschlecht, Herkunft, Kultur, Mentalität, Alter, Behinderung, Religion und sexuelle Orientierung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

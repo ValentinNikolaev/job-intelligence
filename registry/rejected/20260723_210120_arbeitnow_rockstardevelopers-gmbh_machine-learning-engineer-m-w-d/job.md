@@ -89,4 +89,4 @@ Kein Muss, aber je mehr davon, desto besser:
 
 Dann bewirb dich, ein Lebenslauf reicht, ein Anschreiben brauchst du nicht. Wenn du früh verfügbar bist, ist das ein klares Plus. Wir melden uns innerhalb weniger Tage.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -48,4 +48,4 @@ What You Bring
 
 **No cover letter required!** Instead, share **2-3 sentences** about why you’re excited about this role and what makes Sidestream appealing to you. You can also include links to projects you’ve worked on to give us an impression of your skills and contributions.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

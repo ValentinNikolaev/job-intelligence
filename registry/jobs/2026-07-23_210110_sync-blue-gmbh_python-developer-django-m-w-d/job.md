@@ -52,4 +52,4 @@ Wir sind ein dynamisches, hoch motiviertes Team mit familiärem Umgang. Als Ausg
 
 Wenn du Lust auf Verantwortung, moderne Technologien und ein Umfeld hast, in dem deine Arbeit wirklich zählt, freuen wir uns darauf, dich kennenzulernen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

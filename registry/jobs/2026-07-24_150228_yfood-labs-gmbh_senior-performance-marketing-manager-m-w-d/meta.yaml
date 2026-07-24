@@ -1,0 +1,29 @@
+schema_version: 2
+id: c3a00407-4d08-4891-a9c8-57a9f83c7ef5
+title: Senior Performance Marketing Manager (m/w/d)
+company: yfood Labs GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-performance-marketing-manager-munich-113245
+  url: https://www.arbeitnow.com/jobs/companies/yfood-labs-gmbh/senior-performance-marketing-manager-munich-113245
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T13:00:28Z'
+discovered_at: '2026-07-24T15:02:28Z'
+updated_at: '2026-07-24T15:02:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T15:02:28Z'
+analysis_priority: 0
+fingerprint: sha256:16a50a32af9cfd0ff4e144ca04536cc625be2535908478e3784868050f3cd1d9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

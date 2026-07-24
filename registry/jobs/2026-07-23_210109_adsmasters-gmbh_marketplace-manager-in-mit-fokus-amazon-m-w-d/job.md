@@ -76,4 +76,4 @@ Bei AdsMasters hängen die Core Values nicht nur an irgendeiner Wand im Eingangs
 
 - Wir stehen auf finanziell stabilen Beinen. Unsere finanzielle Reichweite liegt bei über 10 Monaten.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

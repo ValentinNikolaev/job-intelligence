@@ -68,4 +68,4 @@ Moderne Hardware und die passenden Tools unterstützen dich in deiner täglichen
 
 Regelmäßige Team-Events und gemeinsame Erlebnisse gehören für uns genauso dazu wie ambitionierte Ziele – zuletzt waren wir Fallschirm springen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

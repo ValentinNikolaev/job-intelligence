@@ -1,0 +1,24 @@
+schema_version: 2
+id: 8f889a30-36eb-461e-9275-130806f6ac46
+title: Remote Golang Engineer
+company: Canonical Ltd.
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-2433591480934210484'
+  url: https://jooble.org/desc/-2433591480934210484?ckey=remote+golang+backend+engineer&rgn=55180&pos=26&groupId=1106121903&elckey=-1305930863621372681&p=1&aq=-759420615786578235&cid=15922&jobAge=81&brelb=100&bscr=206.51859&scr=206.51859
+published_at: '2026-07-21T12:02:13.8600000'
+discovered_at: '2026-07-24T15:05:21Z'
+updated_at: '2026-07-24T15:07:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T15:05:21Z'
+analysis_priority: 0
+fingerprint: sha256:2b3972bec7268298340aae70dcfb5855d7d7331234205901a187b930178e3b4c
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,11 +1,11 @@
 # QA Automation Engineer - Pro
 
-Posted: 2026-06-23T02:31:46Z
+Posted: 2026-07-24T10:05:05Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-23T02:31:46Z is older than 7 days
+- Category: role_mismatch
+- Reason: title is an obvious mismatch for a backend profile
 
 ## **Building the Future of Crypto **
 

@@ -1,0 +1,28 @@
+schema_version: 2
+id: 1e432a30-30c1-427f-8e55-878cc37053de
+title: Solution Engineer - Manufacturing SaaS Platform (all genders)
+company: eschbach GmbH
+company_url: null
+location: Bad Säckingen
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: solution-engineer-manufacturing-saas-platform-all-genders-bad-sackingen-367795
+  url: https://www.arbeitnow.com/jobs/companies/eschbach-gmbh/solution-engineer-manufacturing-saas-platform-all-genders-bad-sackingen-367795
+  metadata:
+    tags:
+    - Consulting
+    - Engineering
+published_at: '2026-07-24T13:30:48Z'
+discovered_at: '2026-07-24T15:02:21Z'
+updated_at: '2026-07-24T15:02:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T15:02:21Z'
+analysis_priority: 0
+fingerprint: sha256:91e9e2e5a572b6fed5341982daa9f99d6273bc6d713ec1ef14fe469c8ea21ba7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

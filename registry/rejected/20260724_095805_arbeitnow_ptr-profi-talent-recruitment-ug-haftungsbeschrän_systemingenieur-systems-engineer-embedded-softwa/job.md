@@ -57,4 +57,4 @@ Posted: 2026-07-24T07:00:49Z
 
 - Verkehrsgünstige Lage mit kostenfreien Parkmöglichkeiten und sehr guter ÖPNV-Anbindung
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

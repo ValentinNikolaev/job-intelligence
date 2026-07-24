@@ -82,4 +82,4 @@ Dann schick uns einfach Deine Bewerbung mit Arbeitsproben oder deinem Social Med
 
 **Du erfüllst nicht alle Voraussetzungen?** Egal, let's get in touch! Uns ist vor allem ein gutes Connecten im Team wichtig – den Rest bringen wir Dir bei!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

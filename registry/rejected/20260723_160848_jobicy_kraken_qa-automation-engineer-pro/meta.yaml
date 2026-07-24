@@ -4,9 +4,9 @@ source_job_id: '144513'
 source_url: https://jobicy.com/jobs/144513-qa-automation-engineer-pro
 title: QA Automation Engineer - Pro
 company: Kraken
-location: UK
-published_at: '2026-06-23T02:31:46Z'
-rejection_category: stale
-rejection_reason: published_at 2026-06-23T02:31:46Z is older than 7 days
-updated_at: '2026-07-23T21:03:38Z'
+location: Europe
+published_at: '2026-07-24T10:05:05Z'
+rejection_category: role_mismatch
+rejection_reason: title is an obvious mismatch for a backend profile
+updated_at: '2026-07-24T15:06:10Z'
 rejected_at: '2026-07-23T16:08:48Z'
