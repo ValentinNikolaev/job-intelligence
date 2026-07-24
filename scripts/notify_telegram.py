@@ -2,10 +2,13 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+from datetime import datetime, timezone
 import json
+import os
 import shutil
 import sys
 from pathlib import Path
+import re
 
 from jobintel.config import load_env
 
@@ -18,6 +21,10 @@ def _parser() -> argparse.ArgumentParser:
     source = parser.add_mutually_exclusive_group(required=True)
     source.add_argument("--message")
     source.add_argument("--message-file", type=Path)
+    parser.add_argument(
+        "--initiator",
+        help="Internal automation or task name to include in the Telegram message.",
+    )
     return parser
 
 
@@ -31,6 +38,38 @@ def notification_config() -> tuple[str, str]:
         config.get("TELEGRAM_BOT_TOKEN", "").strip(),
         config.get("TELEGRAM_CHAT_ID", "").strip(),
     )
+
+
+def message_with_initiator(message: str, initiator: str | None) -> str:
+    clean_message = message.strip()
+    clean_initiator = (initiator or "").strip()
+    if not clean_initiator:
+        return clean_message
+    line = f"Internal initiator: {clean_initiator}"
+    if clean_message.startswith("Internal initiator:"):
+        return clean_message
+    return f"{line}\n{clean_message}" if clean_message else line
+
+
+def preserve_unsent_message(
+    message: str,
+    *,
+    source_file: Path | None,
+    prefix: str | None = None,
+) -> Path:
+    directory = source_file.parent if source_file is not None else Path(".codex-work")
+    directory.mkdir(parents=True, exist_ok=True)
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    clean_prefix = re.sub(r"[^A-Za-z0-9_.-]+", "-", (prefix or "unsent").strip()).strip("-")
+    if not clean_prefix:
+        clean_prefix = "unsent"
+    target = directory / f"telegram-message-{clean_prefix}-{timestamp}-{os.getpid()}.txt"
+    counter = 1
+    while target.exists():
+        target = directory / f"telegram-message-{clean_prefix}-{timestamp}-{os.getpid()}-{counter}.txt"
+        counter += 1
+    target.write_text(message, encoding="utf-8")
+    return target
 
 
 async def send_message(message: str, *, token: str, chat_id: str) -> dict[str, object]:
@@ -72,17 +111,30 @@ async def send_message(message: str, *, token: str, chat_id: str) -> dict[str, o
 
 async def _main() -> int:
     args = _parser().parse_args()
+    message = args.message
+    if args.message_file is not None:
+        message = args.message_file.read_text(encoding="utf-8")
+    message = message_with_initiator(message or "", args.initiator)
     token, chat_id = notification_config()
     if not token or not chat_id:
         print("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID are required", file=sys.stderr)
+        preserved = preserve_unsent_message(
+            message,
+            source_file=args.message_file,
+            prefix=args.initiator or "missing-secrets",
+        )
+        print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 2
     try:
-        message = args.message
-        if args.message_file is not None:
-            message = args.message_file.read_text(encoding="utf-8")
-        await send_message(message or "", token=token, chat_id=chat_id)
+        await send_message(message, token=token, chat_id=chat_id)
     except Exception as exc:
         print(f"Telegram notification error: {exc}", file=sys.stderr)
+        preserved = preserve_unsent_message(
+            message,
+            source_file=args.message_file,
+            prefix=args.initiator or "send-failed",
+        )
+        print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 1
     print("Telegram notification sent.")
     return 0

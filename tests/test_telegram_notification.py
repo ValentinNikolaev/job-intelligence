@@ -6,7 +6,7 @@ from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import AsyncMock, patch
 
-from scripts.notify_telegram import notification_config, send_message
+from scripts.notify_telegram import message_with_initiator, notification_config, preserve_unsent_message, send_message
 
 
 class TelegramNotificationTests(unittest.TestCase):
@@ -37,6 +37,28 @@ class TelegramNotificationTests(unittest.TestCase):
 
         self.assertEqual("file-token", token)
         self.assertEqual("env-chat", chat_id)
+
+    def test_message_with_initiator_adds_internal_source_once(self) -> None:
+        message = message_with_initiator("Title\nScore: 68", "Job Intelligence: normal preparation")
+
+        self.assertEqual(
+            "Internal initiator: Job Intelligence: normal preparation\nTitle\nScore: 68",
+            message,
+        )
+        self.assertEqual(message, message_with_initiator(message, "Another initiator"))
+
+    def test_preserves_unsent_message_with_unique_prefixed_name(self) -> None:
+        with TemporaryDirectory() as temporary:
+            source = Path(temporary) / "telegram-message.txt"
+            first = preserve_unsent_message("first", source_file=source, prefix="normal preparation")
+            second = preserve_unsent_message("second", source_file=source, prefix="normal preparation")
+
+            self.assertEqual(Path(temporary), first.parent)
+            self.assertEqual(Path(temporary), second.parent)
+            self.assertNotEqual(first, second)
+            self.assertTrue(first.name.startswith("telegram-message-normal-preparation-"))
+            self.assertEqual("first", first.read_text(encoding="utf-8"))
+            self.assertEqual("second", second.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":
