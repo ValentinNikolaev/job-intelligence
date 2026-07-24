@@ -88,4 +88,4 @@ Zusicherung absoluter Vertraulichkeit (Garantie der Diskretion)
 
 Im Rahmen unseres Rekrutierungsprozesses garantieren wir Ihnen absolute Vertraulichkeit sowie die strikte Wahrung Ihrer Anonymität gegenüber Dritten. Uns übermittelte Sperrvermerke – insbesondere im Hinblick auf ein bestehendes Beschäftigungsverhältnis – werden mit höchster Diskretion und Gewissenhaftigkeit beachtet. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt unter strikter Einhaltung der geltenden Datenschutzvorschriften (DSGVO) und ausschließlich zweckgebunden für dieses Besetzungsverfahren.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

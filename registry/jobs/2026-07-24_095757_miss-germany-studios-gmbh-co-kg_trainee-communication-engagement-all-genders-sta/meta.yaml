@@ -1,0 +1,29 @@
+schema_version: 2
+id: 56df9784-bb39-4174-8ae4-d2641e8f8e3c
+title: 'Trainee Communication & Engagement (all genders) | Start: 01.01.2027'
+company: Miss Germany Studios GmbH & Co. KG
+company_url: null
+location: Cologne
+remote: false
+employment_type: Traineeship, berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: trainee-communication-engagement-all-genders-start-01012027-cologne-161327
+  url: https://www.arbeitnow.com/jobs/companies/miss-germany-studios-gmbh-co-kg/trainee-communication-engagement-all-genders-start-01012027-cologne-161327
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - Traineeship
+    - berufseinstieg
+published_at: '2026-07-24T08:30:28Z'
+discovered_at: '2026-07-24T09:57:57Z'
+updated_at: '2026-07-24T09:57:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:57:57Z'
+fingerprint: sha256:0bd322812ac3f4484f238f7ea3f875373d882fe98d9e122e2fda015c9a6e2a96
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -3,24 +3,20 @@
 **Score:** 5/100  
 **Recommendation:** Not Match
 
-Construction-site leadership and wind-park infrastructure experience are absent from the candidate profile.
+This is a construction-site leadership role requiring civil engineering, wind-park construction, German, and travel credentials absent from the candidate profile.
 
 ## Why it matches
 
-- General planning and coordination experience
+- Coordination and technical problem-solving are only broadly transferable.
 
 ## Gaps
 
-- Civil construction
-- wind-park projects
-- site supervision
-- construction regulations
-- and German fluency are not evidenced
+- Civil/tiefbau experience, wind-park projects, construction regulations, site supervision, German, and driving license are not evidenced.
 
 ## Concerns
 
-- Fundamental profession mismatch and extensive travel requirement
+- The occupation and required qualifications are unrelated to software engineering.
 
 ## Hard rejection
 
-- The vacancy requires construction and wind-park site expertise not present in the candidate evidence.
+- Core occupation and qualification mismatch: construction site management.

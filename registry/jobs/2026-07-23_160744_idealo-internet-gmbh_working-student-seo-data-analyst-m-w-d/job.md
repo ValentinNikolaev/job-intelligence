@@ -80,4 +80,4 @@ You enjoy tackling challenges actively and solving them pragmatically.
 
 #LI-NY1
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

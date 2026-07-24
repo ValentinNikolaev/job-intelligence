@@ -1,0 +1,28 @@
+schema_version: 2
+id: 33f7f6db-34fa-4e76-a712-93ffed7a144b
+title: Steuerberater (m/w/d) in Schopp, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Schopp
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-schopp-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-259030
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-schopp-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-259030
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-24T06:30:33Z'
+discovered_at: '2026-07-24T09:58:07Z'
+updated_at: '2026-07-24T09:58:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:07Z'
+fingerprint: sha256:d2b5490720cd281771bc58b992809e14ab494ab00583c84746af0e2d84246b7f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

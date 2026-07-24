@@ -3,19 +3,16 @@
 **Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong backend fit with Go, distributed systems, AWS, payments, and production reliability experience; consumer-growth domain is adjacent.
+Strong backend fit for a senior growth-engineering role, with Go, event-driven systems, payments, AWS, and measurable production impact.
 
 ## Why it matches
 
-- Go backend development
-- event-driven and scalable systems
-- AWS and production reliability
-- payments and fintech-related experience
+- Go backend; AWS and event-driven architecture; payments/fintech experience; performance and reliability ownership.
 
 ## Gaps
 
-- No explicit evidence of experimentation or consumer-growth analytics ownership
+- Consumer-growth experimentation and exact stack details are not fully evidenced.
 
 ## Concerns
 
-- Role location is in the Milan area; relocation or commuting expectations are unclear
+- Italian location is compatible; confirm work arrangement and any role-specific growth analytics expectations.

@@ -1,27 +1,18 @@
 # Match Analysis
 
-**Score:** 32/100  
-**Recommendation:** Weak Match
+**Score:** 25/100  
+**Recommendation:** Not Match
 
-Reliability and regulated-finance exposure help, but formal IT continuity management, recovery planning, and standards ownership are not evidenced.
+The role is specialized IT continuity and security governance, while the candidate profile is focused on backend engineering and delivery leadership.
 
 ## Why it matches
 
-- Production reliability
-- monitoring
-- incident response
-- fintech and compliance exposure
+- Production reliability; incident-related resilience; infrastructure understanding; technical leadership.
 
 ## Gaps
 
-- ITSCM
-- ISO 27031
-- ITIL
-- ISO 22301
-- DORA
-- business-impact analysis
-- and recovery-plan ownership are not evidenced
+- ITSCM, ISO/ITIL/BSI/DORA standards, business continuity, RTO/BIA, and German proficiency are not evidenced.
 
 ## Concerns
 
-- Strong German requirement and Cologne presence are additional risks
+- The mandatory domain expertise is absent.

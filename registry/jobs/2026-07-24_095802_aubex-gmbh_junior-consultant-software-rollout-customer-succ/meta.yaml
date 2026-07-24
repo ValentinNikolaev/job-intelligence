@@ -1,0 +1,27 @@
+schema_version: 2
+id: 606b5fb6-3748-4762-9a91-8c0f29138646
+title: (Junior) Consultant Software-Rollout & Customer Success (w/m/d)
+company: aubex GmbH
+company_url: null
+location: Hockenheim
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: junior-consultant-software-rollout-customer-success-hockenheim-182149
+  url: https://www.arbeitnow.com/jobs/companies/aubex-gmbh/junior-consultant-software-rollout-customer-success-hockenheim-182149
+  metadata:
+    tags:
+    - Consulting
+    - Engineering
+published_at: '2026-07-24T07:30:47Z'
+discovered_at: '2026-07-24T09:58:02Z'
+updated_at: '2026-07-24T09:58:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:02Z'
+fingerprint: sha256:a97ae247d3022be5ba451fef46f0a9f50ed73fd268562d6ed6a91524a7f497ad
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

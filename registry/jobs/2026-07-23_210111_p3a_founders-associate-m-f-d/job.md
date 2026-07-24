@@ -70,4 +70,4 @@ The platform on which you will be working can be divided into (4) areas: Wealth 
 
 Per aspera ad astra.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

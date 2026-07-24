@@ -1,29 +1,18 @@
 # Match Analysis
 
-**Score:** 67/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Leadership, architecture, delivery, reliability, and AI-assisted engineering align well, while the required Microsoft stack is a major gap.
+Strong leadership and hands-on backend/reliability alignment, but the required Microsoft/.NET and frontend stack is a substantial gap.
 
 ## Why it matches
 
-- Technical leadership
-- mentoring and hiring interviews
-- architecture
-- delivery planning
-- production reliability
-- AI automation experience
+- Technical leadership; team coaching and hiring; architecture and delivery; AI-assisted engineering; scalable SaaS and cloud systems.
 
 ## Gaps
 
-- ASP.NET Core
-- C#
-- F#
-- React
-- TypeScript
-- JavaScript
-- and Azure are not evidenced
+- ASP.NET Core, C#, F#, React, TypeScript, Azure, and Microsoft 365 APIs are not evidenced.
 
 ## Concerns
 
-- The core technology stack differs materially from the candidate's Go/PHP background
+- Remote-first setup is attractive; score is limited by multiple explicit stack requirements.

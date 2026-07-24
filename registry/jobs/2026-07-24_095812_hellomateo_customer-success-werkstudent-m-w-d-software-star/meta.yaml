@@ -1,0 +1,29 @@
+schema_version: 2
+id: a6c3d6dc-05eb-48d0-8a16-08d99fe934e7
+title: Customer Success Werkstudent (m/w/d) - Software Startup
+company: hellomateo
+company_url: null
+location: Berlin
+remote: false
+employment_type: Working student, hilfstätigkeit / student
+sources:
+- source: arbeitnow
+  source_job_id: customer-success-werkstudent-software-startup-berlin-50416
+  url: https://www.arbeitnow.com/jobs/companies/hellomateo/customer-success-werkstudent-software-startup-berlin-50416
+  metadata:
+    tags:
+    - Helpdesk
+    job_types:
+    - Working student
+    - hilfstätigkeit / student
+published_at: '2026-07-23T20:30:28Z'
+discovered_at: '2026-07-24T09:58:12Z'
+updated_at: '2026-07-24T09:58:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:12Z'
+fingerprint: sha256:52ef34a6081f92b32b0bf6f57c7a30e1f146681113c1d0380d6f42c1f3eb4d95
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

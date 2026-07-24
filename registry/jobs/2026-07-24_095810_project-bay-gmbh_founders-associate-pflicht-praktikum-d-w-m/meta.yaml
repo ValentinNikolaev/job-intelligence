@@ -1,0 +1,30 @@
+schema_version: 2
+id: 58a6e875-ac19-4f5f-8f26-d612d9bfa007
+title: Founders Associate (Pflicht-Praktikum) (d/w/m)
+company: Project Bay GmbH
+company_url: null
+location: Sylt
+remote: true
+employment_type: Internship
+sources:
+- source: arbeitnow
+  source_job_id: founders-associate-pflicht-praktikum-sylt-224685
+  url: https://www.arbeitnow.com/jobs/companies/project-bay-gmbh/founders-associate-pflicht-praktikum-sylt-224685
+  metadata:
+    tags:
+    - Remote
+    - Directors
+    - Chief Executives
+    job_types:
+    - Internship
+published_at: '2026-07-24T06:00:32Z'
+discovered_at: '2026-07-24T09:58:10Z'
+updated_at: '2026-07-24T09:58:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:10Z'
+fingerprint: sha256:615e63f4b58c11ffb9731c1247bfe5ac304cefb1eef00b0de16bdf8b2428d781
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

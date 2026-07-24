@@ -1,23 +1,18 @@
-score: 74
-recommendation: match
-summary: Good cloud and platform alignment through AWS, Kubernetes, Helm, ArgoCD,
-  GitHub Actions, monitoring, and incident troubleshooting.
+score: 88
+recommendation: strong_match
+summary: Excellent match for AWS cloud operations and platform reliability, including
+  Kubernetes, CI/CD, GitOps, observability, and incident response.
 strengths:
-- AWS
-- Kubernetes
-- Helm and ArgoCD
-- CI/CD
-- observability
-- production operations
+- AWS; Kubernetes/EKS-adjacent operations; GitHub Actions/ArgoCD/Helm; production
+  reliability; backend development.
 gaps:
-- No explicit evidence of the employer's exact cloud stack or extensive infrastructure-as-code
-  ownership
+- Customer on-premise operations and some named tools are not evidenced.
 concerns:
-- German language and Cologne work-location expectations may affect fit
+- Cologne/on-premise customer support and German-language requirements should be confirmed.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-23T21:10:15Z'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:e49d3ed097f1777d47a92182ac93b6e016b9e169be7507fcb81e920c7db6e47f
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+job_version: sha256:1aa5a815f1dbe4529de577c6fe23e400cae214b23a957548a0625de0922ca6eb
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

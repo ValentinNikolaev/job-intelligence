@@ -1,0 +1,28 @@
+schema_version: 2
+id: b19f2d0c-b948-4b6d-8bd6-0ce8b3feaaa8
+title: Rockwell PharmaSuite MES Project Manager (all genders)
+company: Accenture
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: rockwell-pharmasuite-mes-project-manager-all-genders-frankfurt-am-main-466809
+  url: https://www.arbeitnow.com/jobs/companies/accenture/rockwell-pharmasuite-mes-project-manager-all-genders-frankfurt-am-main-466809
+  metadata:
+    tags:
+    - Consulting
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T08:30:26Z'
+discovered_at: '2026-07-24T09:57:58Z'
+updated_at: '2026-07-24T09:57:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:57:58Z'
+fingerprint: sha256:63c9100aa287589af00848ebad015a1fbe1abc99c7f0025322af29f5621ac135
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

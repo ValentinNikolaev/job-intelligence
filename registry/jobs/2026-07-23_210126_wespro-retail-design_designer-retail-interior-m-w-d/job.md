@@ -76,4 +76,4 @@ Unser Büro befindet sich in Berlin-Bohnsdorf und ist sowohl mit dem Auto (Nähe
 
 Dann freuen wir uns darauf, dich kennenzulernen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

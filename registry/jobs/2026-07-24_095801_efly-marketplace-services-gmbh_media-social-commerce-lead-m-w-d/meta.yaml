@@ -1,0 +1,26 @@
+schema_version: 2
+id: b3a9f2ae-6883-4c8a-aa5a-053431f73948
+title: Media & Social Commerce Lead (m/w/d)
+company: eFLY Marketplace Services GmbH
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: media-social-commerce-lead-stuttgart-451331
+  url: https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/media-social-commerce-lead-stuttgart-451331
+  metadata:
+    tags:
+    - Marketing and Communication
+published_at: '2026-07-24T08:00:49Z'
+discovered_at: '2026-07-24T09:58:01Z'
+updated_at: '2026-07-24T09:58:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:01Z'
+fingerprint: sha256:143312ce4bd4c48f3ccacb981939de5f3505a854757d0033c710622b3492182e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

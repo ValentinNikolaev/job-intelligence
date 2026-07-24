@@ -1,0 +1,28 @@
+schema_version: 2
+id: 32e781d8-ef52-4f9d-9e00-d2528ffa4e43
+title: Steuerberater (m/w/d) in Oberstenfeld, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Oberstenfeld
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-oberstenfeld-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-50021
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-oberstenfeld-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-50021
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-24T06:30:32Z'
+discovered_at: '2026-07-24T09:58:10Z'
+updated_at: '2026-07-24T09:58:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:10Z'
+fingerprint: sha256:b8a9a1b86d6c913c71c0dfd2e9b7314f267ca94c1270a957eab196040431d8aa
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

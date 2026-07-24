@@ -1,0 +1,29 @@
+schema_version: 2
+id: b45582ab-d46a-47e0-a10f-854a9a516c71
+title: Application Consultant für ERP-Bausoftware (m/w/d)
+company: Husemann & Fritz GmbH
+company_url: null
+location: Bielefeld
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: application-consultant-fur-erp-bausoftware-bielefeld-248595
+  url: https://www.arbeitnow.com/jobs/companies/husemann-fritz-gmbh/application-consultant-fur-erp-bausoftware-bielefeld-248595
+  metadata:
+    tags:
+    - Consulting
+    - Engineering
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T06:00:30Z'
+discovered_at: '2026-07-24T09:58:11Z'
+updated_at: '2026-07-24T09:58:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:11Z'
+fingerprint: sha256:b2d185299b94fa32b542a7f3f85af03c8f8bb96f3630546cf52ef6cc4f1bc98b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

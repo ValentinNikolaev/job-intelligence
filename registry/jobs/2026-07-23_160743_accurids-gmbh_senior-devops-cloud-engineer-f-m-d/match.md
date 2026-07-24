@@ -1,23 +1,18 @@
 # Match Analysis
 
-**Score:** 74/100  
-**Recommendation:** Match
+**Score:** 88/100  
+**Recommendation:** Strong Match
 
-Good cloud and platform alignment through AWS, Kubernetes, Helm, ArgoCD, GitHub Actions, monitoring, and incident troubleshooting.
+Excellent match for AWS cloud operations and platform reliability, including Kubernetes, CI/CD, GitOps, observability, and incident response.
 
 ## Why it matches
 
-- AWS
-- Kubernetes
-- Helm and ArgoCD
-- CI/CD
-- observability
-- production operations
+- AWS; Kubernetes/EKS-adjacent operations; GitHub Actions/ArgoCD/Helm; production reliability; backend development.
 
 ## Gaps
 
-- No explicit evidence of the employer's exact cloud stack or extensive infrastructure-as-code ownership
+- Customer on-premise operations and some named tools are not evidenced.
 
 ## Concerns
 
-- German language and Cologne work-location expectations may affect fit
+- Cologne/on-premise customer support and German-language requirements should be confirmed.

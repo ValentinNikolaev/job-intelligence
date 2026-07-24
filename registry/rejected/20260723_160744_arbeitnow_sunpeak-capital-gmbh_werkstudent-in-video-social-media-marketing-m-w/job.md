@@ -1,6 +1,6 @@
 # Werkstudent:in Video & Social Media Marketing - (m/w/d)
 
-Posted: 2026-07-23T13:00:43Z
+Posted: 2026-07-23T21:59:03Z
 
 ## Rejection
 
@@ -47,8 +47,6 @@ Als Werkstudent:in Video & Social Media Marketing verantwortest du den gesamten 
 
 ## Qualifikation
 
-**Qualifikation**
-
 - Du bist eingeschriebene:r Student:in, idealerweise mit Bezug zu Medien, Marketing, Kommunikation oder vergleichbar
 
 - Relevante Vorerfahrung im Videoschnitt und sicherer Umgang mit Adobe Creative Cloud
@@ -66,8 +64,6 @@ Als Werkstudent:in Video & Social Media Marketing verantwortest du den gesamten 
 - Bonus, wenn du bereits Kenntnisse in den Bereichen erneuerbare Energien, Photovoltaik, Batteriespeicher, Ladeinfrastruktur oder Energiemärkte mitbringst und bereit bist auch mal selbst vor der Kamera zu stehen
 
 ## Benefits
-
-**Benefits**
 
 - **Ownership und Impact:** Du bist maßgeblich am Auf- und Ausbau unserer Video- und Social-Media-Präsenz beteiligt und hast somit prägenden Einfluss darauf, wie Sunpeak Capital am Markt wahrgenommen wird
 
@@ -87,4 +83,4 @@ Anfang 2025 gründeten sie dann Sunpeak Capital - vollständig gebootstrapped un
 
 Wir freuen uns auf deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

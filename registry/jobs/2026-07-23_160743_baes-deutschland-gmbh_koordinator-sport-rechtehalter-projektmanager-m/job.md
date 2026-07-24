@@ -42,4 +42,4 @@ Du kennst dich mit Sport-Rechtehaltern und/oder Projektmanagement aus und willst
 
 Die BAES Deutschland GmbH ist ein deutschlandweit tätiges Sportmarketing-Unternehmen und der Spezialist für lokales und regionales Sportmarketing. Wir betreuen derzeit mehr als vierzig professionelle Sport-Rechtehalter in verschiedenen Teamsportarten und sind Marktführer für Mikrosponsoring-Projekte sowie für die regionale und lokale B2B-Leadgenerierung in den Sportarten Fußball, Handball, Basketball und Eishockey. Unsere deutschlandweit rund 12.000 Mikrosponsoring-B2B-Partner vernetzen wir in einzigartigen Businessplattformen im Sport.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

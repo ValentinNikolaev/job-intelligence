@@ -1,28 +1,18 @@
-score: 67
+score: 68
 recommendation: match
-summary: Leadership, architecture, delivery, reliability, and AI-assisted engineering
-  align well, while the required Microsoft stack is a major gap.
+summary: Strong leadership and hands-on backend/reliability alignment, but the required
+  Microsoft/.NET and frontend stack is a substantial gap.
 strengths:
-- Technical leadership
-- mentoring and hiring interviews
-- architecture
-- delivery planning
-- production reliability
-- AI automation experience
+- Technical leadership; team coaching and hiring; architecture and delivery; AI-assisted
+  engineering; scalable SaaS and cloud systems.
 gaps:
-- ASP.NET Core
-- C#
-- F#
-- React
-- TypeScript
-- JavaScript
-- and Azure are not evidenced
+- ASP.NET Core, C#, F#, React, TypeScript, Azure, and Microsoft 365 APIs are not evidenced.
 concerns:
-- The core technology stack differs materially from the candidate's Go/PHP background
+- Remote-first setup is attractive; score is limited by multiple explicit stack requirements.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-23T21:10:15Z'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:cce173d44785cb5adc9494b397829302efeaa7d5c2443ef2f8694d6a4be085bf
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

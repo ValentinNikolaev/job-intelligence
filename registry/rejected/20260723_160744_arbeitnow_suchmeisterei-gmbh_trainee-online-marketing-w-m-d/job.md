@@ -87,4 +87,4 @@ Du erfüllst nicht jedes Kriterium? Kein Problem. Wenn du glaubst, die Position 
 - Faire und transparente Gehaltsstruktur
 Nach der Einarbeitung von etwa zwei Monaten kannst du größtenteils remote arbeiten, mit mindestens fünf Tagen pro Monat im Büro.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

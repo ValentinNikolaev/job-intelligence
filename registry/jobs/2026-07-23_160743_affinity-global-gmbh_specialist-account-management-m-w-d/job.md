@@ -60,4 +60,4 @@ Als **Specialist** **Account Management** bist du die Schnittstelle zwischen uns
 
 Wir freuen uns auf Bewerbungen von Menschen mit unterschiedlichen Hintergründen, Erfahrungen und Perspektiven. Vielfalt, Chancengleichheit und Inklusion sind für uns selbstverständlich.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

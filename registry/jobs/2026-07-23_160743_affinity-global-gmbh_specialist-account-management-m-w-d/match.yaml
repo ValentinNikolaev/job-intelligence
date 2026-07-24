@@ -1,20 +1,19 @@
 score: 18
 recommendation: not_match
-summary: The role is account management rather than backend engineering and does not
-  align with the documented career profile.
+summary: The position is account management and campaign coordination, outside the
+  candidate’s software-engineering profile.
 strengths:
-- Cross-functional collaboration and stakeholder communication
+- Stakeholder collaboration and analytical engineering experience may transfer.
 gaps:
-- Account management experience
-- commercial ownership
-- and customer portfolio management are not evidenced
+- Account management, advertising campaign delivery, CRM, and customer portfolio ownership
+  are not evidenced.
 concerns:
-- Fundamental role-family mismatch
+- Role domain and core responsibilities do not match backend engineering.
 hard_rejection: true
-hard_rejection_reason: Role requires account-management work outside the candidate's
-  demonstrated software-engineering track.
-analyzed_at: '2026-07-23T21:10:15Z'
+hard_rejection_reason: 'Core occupation mismatch: account management rather than software
+  engineering.'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:0f493f10c244c9c942425e65a67a0422f90e78a4bd7338a7abfbc973573f1183
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+job_version: sha256:07d757dad72e9f8b4cf2e8135537ad7bf320b76e9c5014da14d5c755135e6ab8
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

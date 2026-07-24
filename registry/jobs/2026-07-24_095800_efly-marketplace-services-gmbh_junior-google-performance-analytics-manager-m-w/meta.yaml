@@ -1,0 +1,26 @@
+schema_version: 2
+id: 3d94330c-012f-4bcb-ba7a-cd5b07052a09
+title: Junior Google Performance & Analytics Manager (m/w/d)
+company: eFLY Marketplace Services GmbH
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: junior-google-performance-analytics-manager-stuttgart-333557
+  url: https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/junior-google-performance-analytics-manager-stuttgart-333557
+  metadata:
+    tags:
+    - Marketing and Communication
+published_at: '2026-07-24T08:00:50Z'
+discovered_at: '2026-07-24T09:58:00Z'
+updated_at: '2026-07-24T09:58:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:00Z'
+fingerprint: sha256:fa20e945af6ad186dad57de378e455e6ede69cbfe1150106491946ac1b1fb3b2
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

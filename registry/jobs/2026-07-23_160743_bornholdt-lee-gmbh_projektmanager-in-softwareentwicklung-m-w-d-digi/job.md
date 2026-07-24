@@ -60,4 +60,4 @@ Als Projektmanager*in trägst du bei uns Verantwortung für Budgets, Timings und
 
 Neugierig? Dann lern uns kennen – wir freuen uns auf frischen Input und Menschen, die mit uns das Gesundheitswesen digital besser machen wollen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

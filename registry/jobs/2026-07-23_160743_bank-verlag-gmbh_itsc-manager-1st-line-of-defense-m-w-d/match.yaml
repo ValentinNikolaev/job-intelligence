@@ -1,26 +1,19 @@
-score: 32
-recommendation: weak_match
-summary: Reliability and regulated-finance exposure help, but formal IT continuity
-  management, recovery planning, and standards ownership are not evidenced.
+score: 25
+recommendation: not_match
+summary: The role is specialized IT continuity and security governance, while the
+  candidate profile is focused on backend engineering and delivery leadership.
 strengths:
-- Production reliability
-- monitoring
-- incident response
-- fintech and compliance exposure
+- Production reliability; incident-related resilience; infrastructure understanding;
+  technical leadership.
 gaps:
-- ITSCM
-- ISO 27031
-- ITIL
-- ISO 22301
-- DORA
-- business-impact analysis
-- and recovery-plan ownership are not evidenced
+- ITSCM, ISO/ITIL/BSI/DORA standards, business continuity, RTO/BIA, and German proficiency
+  are not evidenced.
 concerns:
-- Strong German requirement and Cologne presence are additional risks
+- The mandatory domain expertise is absent.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-23T21:10:15Z'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:55dcd62437d9c93297554bc44070765a1043d9c732ccbe20d3746fc6348a0b3b
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+job_version: sha256:67238b11f2bee607d302c798ecbf89e02923e54a1d81fd294e886c3d0463aee2
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

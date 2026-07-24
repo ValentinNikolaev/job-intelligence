@@ -62,4 +62,4 @@ We encourage you to apply anyway! We know great talent doesn’t always follow a
 
 At ACCURIDS, we’re committed to building a diverse and inclusive team. We especially encourage women and people from underrepresented backgrounds in tech, science, and data to apply.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

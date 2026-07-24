@@ -1,0 +1,27 @@
+schema_version: 2
+id: 509edc75-2a58-404c-a6ad-9e0f3db931e8
+title: Senior Typescript Developer (f/m/d)
+company: Sidestream
+company_url: null
+location: Cologne
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-typescript-developer-cologne-311511
+  url: https://www.arbeitnow.com/jobs/companies/sidestream/senior-typescript-developer-cologne-311511
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+published_at: '2026-07-24T07:00:47Z'
+discovered_at: '2026-07-24T09:58:06Z'
+updated_at: '2026-07-24T09:58:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:06Z'
+fingerprint: sha256:fdb3954df52589b1a14dea3ba43a3aa75bfa5693e17fd56ba046dbc5ae30348a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

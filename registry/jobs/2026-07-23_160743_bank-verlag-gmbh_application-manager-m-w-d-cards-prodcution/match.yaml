@@ -1,21 +1,18 @@
-score: 57
-recommendation: possible_match
-summary: Payments, production reliability, compliance, and backend operations are
-  relevant, but application-management and card-production specifics are incomplete.
+score: 32
+recommendation: weak_match
+summary: Some systems and payment-domain experience is relevant, but the role requires
+  application administration and card-product testing expertise not shown in the profile.
 strengths:
-- Fintech-related systems
-- payment gateways
-- GDPR and PCI DSS exposure
-- incident troubleshooting
-- monitoring
+- Fintech/payment integrations; production troubleshooting; backend systems experience.
 gaps:
-- No explicit card-production platform or formal application-manager experience
+- Card specifications, SRC/ISS test suites, application administration, and German
+  proficiency are not evidenced.
 concerns:
-- German language requirement may be material
+- The job is operational application management with specialized card-domain requirements.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-23T21:10:15Z'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:a135cdb0a03f1a1df8b08aca433cd1bc7a15ba3a253a9882c52da2b43901c14b
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

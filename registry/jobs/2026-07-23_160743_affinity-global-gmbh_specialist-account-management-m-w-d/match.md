@@ -3,22 +3,20 @@
 **Score:** 18/100  
 **Recommendation:** Not Match
 
-The role is account management rather than backend engineering and does not align with the documented career profile.
+The position is account management and campaign coordination, outside the candidate’s software-engineering profile.
 
 ## Why it matches
 
-- Cross-functional collaboration and stakeholder communication
+- Stakeholder collaboration and analytical engineering experience may transfer.
 
 ## Gaps
 
-- Account management experience
-- commercial ownership
-- and customer portfolio management are not evidenced
+- Account management, advertising campaign delivery, CRM, and customer portfolio ownership are not evidenced.
 
 ## Concerns
 
-- Fundamental role-family mismatch
+- Role domain and core responsibilities do not match backend engineering.
 
 ## Hard rejection
 
-- Role requires account-management work outside the candidate's demonstrated software-engineering track.
+- Core occupation mismatch: account management rather than software engineering.

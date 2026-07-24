@@ -1,0 +1,85 @@
+schema_version: 2
+id: 19c6c2f5-2408-49f9-8c89-36cd1f48c4b6
+title: Full-stack developer (AI-assisted development)
+company: TechBiz Global
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/techbiz-global/jobs/full-stack-developer-ai-assisted-development
+  url: https://himalayas.app/companies/techbiz-global/jobs/full-stack-developer-ai-assisted-development
+  metadata:
+    location_restrictions: []
+    excerpt: At TechBiz Global, we are providing recruitment service to our TOP clients
+      from our portfolio.
+    company_slug: techbiz-global
+    company_logo: https://cdn-images.himalayas.app/fs8dnwotdo5pm0aebf6ufosgpmne
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Fullstack-Development
+    - AI-assisted-Development
+    - TypeScript-Development
+    - Cloud-Engineer
+    - Backend-Development
+    - Frontend-Development
+    - Senior-Full-Stack-AI-Developer
+    expiry_at: '2026-09-21T18:15:43Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        sort: recent
+        q: backend engineer
+        seniority: Senior
+        worldwide: 'true'
+published_at: '2026-07-23T18:15:43Z'
+discovered_at: '2026-07-24T09:59:06Z'
+updated_at: '2026-07-24T09:59:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:59:06Z'
+fingerprint: sha256:c02518c51d051ad99775db88f8a3d670ebb61762b063942e9c4dab31aabb4f80
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

@@ -1,23 +1,19 @@
-score: 39
-recommendation: weak_match
-summary: Senior engineering experience is clear, but the required Java, React, and
-  full-stack background is not supported by the candidate evidence.
+score: 48
+recommendation: possible_match
+summary: Partial fit as an experienced backend engineer, but the role is centered
+  on Java/React full-stack delivery rather than the candidate’s evidenced Go/PHP backend
+  focus.
 strengths:
-- Senior software engineering experience
-- REST APIs
-- scalable backend systems
-- cloud-native delivery
+- 15+ years software engineering; APIs and distributed systems; cloud and CI/CD; cross-functional
+  delivery.
 gaps:
-- Java
-- React
-- TypeScript
-- and JavaScript are not evidenced; frontend ownership is not evidenced
+- Java, React, TypeScript, and frontend ownership are not evidenced.
 concerns:
-- Core stack mismatch is substantial
+- The central required stack is materially different from the candidate profile.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-23T21:10:15Z'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:d8fcfeaa283c69c5dbceaf0638d5c1933e09e3a164aee423540d3a0aedf3c6bf
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

@@ -1,0 +1,54 @@
+schema_version: 2
+id: 88185d4c-d934-4c42-a6a2-a5581e9e3065
+title: Full Stack Software Development Engineer React / Node.js
+company: Launchmetrics
+company_url: null
+location: Italy, Spain
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/launchmetrics/jobs/full-stack-software-development-engineer-react-node-js
+  url: https://himalayas.app/companies/launchmetrics/jobs/full-stack-software-development-engineer-react-node-js
+  metadata:
+    location_restrictions:
+    - name: Italy
+    - name: Spain
+    excerpt: This role welcomes full remote or hybrid work arrangements.
+    company_slug: launchmetrics
+    company_logo: https://cdn-images.himalayas.app/r8exss7j9jpmjwpomvh8iybbrwy9
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - 0
+    - 1
+    categories:
+    - Tech-and-Engineering
+    - Software-Development
+    - Fullstack-Development
+    - Frontend-Development
+    - Backend-Development
+    - Senior-Full-Stack-Engineer-(React-Node.Js)
+    - Senior-Full-Stack-Developer-(React-Node.Js)
+    - Lead-Full-Stack-Engineer-React-Node.Js
+    - Mid-Senior-Full-Stack-Developer-(React-Node.Js)
+    expiry_at: '2026-09-21T23:55:32Z'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        q: backend engineer
+        seniority: Senior
+published_at: '2026-07-23T23:55:33Z'
+discovered_at: '2026-07-24T09:58:54Z'
+updated_at: '2026-07-24T09:58:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:54Z'
+fingerprint: sha256:c8a011619b8a97efbb3840b1b820a0a0bde0db7e7d162687132d21d7698933de
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

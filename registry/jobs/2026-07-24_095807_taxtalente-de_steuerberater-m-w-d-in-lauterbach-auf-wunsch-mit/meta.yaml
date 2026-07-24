@@ -1,0 +1,28 @@
+schema_version: 2
+id: 21765f6a-1cd7-4846-81e9-e3d8036ab4ba
+title: Steuerberater (m/w/d) in Lauterbach, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Lauterbach
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-lauterbach-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-30180
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-lauterbach-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-30180
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-24T06:30:33Z'
+discovered_at: '2026-07-24T09:58:07Z'
+updated_at: '2026-07-24T09:58:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:58:07Z'
+fingerprint: sha256:1ec45dbcdd86410b42062d255eee39ca8693680003706114f6d4e9e06cb7dbc7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

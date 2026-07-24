@@ -1,0 +1,109 @@
+schema_version: 2
+id: 2cd9a1e7-64aa-40ea-bf6b-a5f2e89d6100
+title: Senior Backend Developer (PHP)
+company: WhiteTech
+company_url: null
+location: Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria,
+  Croatia, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar,
+  Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle
+  of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta,
+  Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal,
+  Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen,
+  Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/whitetech/jobs/senior-backend-developer-php
+  url: https://himalayas.app/companies/whitetech/jobs/senior-backend-developer-php
+  metadata:
+    location_restrictions:
+    - name: Albania
+    - name: Andorra
+    - name: Austria
+    - name: Belarus
+    - name: Belgium
+    - name: Bosnia and Herzegovina
+    - name: Bulgaria
+    - name: Croatia
+    - name: Czechia
+    - name: Denmark
+    - name: Estonia
+    - name: Faroe Islands
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Gibraltar
+    - name: Greece
+    - name: Guernsey
+    - name: Holy See (Vatican City State)
+    - name: Hungary
+    - name: Iceland
+    - name: Ireland
+    - name: Isle of Man
+    - name: Italy
+    - name: Jersey
+    - name: Kosovo
+    - name: Latvia
+    - name: Liechtenstein
+    - name: Lithuania
+    - name: Luxembourg
+    - name: Malta
+    - name: Moldova
+    - name: Monaco
+    - name: Montenegro
+    - name: Netherlands
+    - name: North Macedonia
+    - name: Norway
+    - name: Poland
+    - name: Portugal
+    - name: Romania
+    - name: San Marino
+    - name: Serbia
+    - name: Slovakia
+    - name: Slovenia
+    - name: Spain
+    - name: Svalbard and Jan Mayen
+    - name: Sweden
+    - name: Switzerland
+    - name: Ukraine
+    - name: United Kingdom
+    - name: Åland Islands
+    excerpt: At WhiteTech, we empower businesses in the financial ecosystem with cutting-edge
+      white-label and SAAS solutions.
+    company_slug: whitetech
+    company_logo: https://cdn-images.himalayas.app/2twhdgcpgh4ahashcwjbckb89aer
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    categories:
+    - Software-Development
+    - Backend-Development
+    - PHP-Development
+    - Software-Engineering
+    - API-Development
+    expiry_at: '2026-08-22T01:49:26Z'
+    discovered_by:
+    - query_index: 3
+      parameters:
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        q: php backend
+        seniority: Senior
+published_at: '2026-07-23T20:33:33Z'
+discovered_at: '2026-07-24T09:59:04Z'
+updated_at: '2026-07-24T09:59:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:59:04Z'
+fingerprint: sha256:a8bda01bcd4608ce08d54d5af4cd310766d36acfcdd1f44943abe131ee506c6e
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

@@ -1,0 +1,28 @@
+schema_version: 2
+id: 0a2b42b4-9664-4ce0-8b3e-cde6e9c4f27b
+title: Senior Product Manager (Fintech/Insurance)
+company: Techbiz Global
+company_url: null
+location: Berlin
+remote: false
+employment_type: manager
+sources:
+- source: arbeitnow
+  source_job_id: senior-product-manager-fintech-insurance-berlin-27597
+  url: https://www.arbeitnow.com/jobs/companies/techbiz-global/senior-product-manager-fintech-insurance-berlin-27597
+  metadata:
+    tags:
+    - Product Management
+    job_types:
+    - manager
+published_at: '2026-07-24T08:30:29Z'
+discovered_at: '2026-07-24T09:57:57Z'
+updated_at: '2026-07-24T09:57:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:57:57Z'
+fingerprint: sha256:66fa098594b064c7cb1f27e7c356901b061ec08296cc9aaff8c17dece8215164
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

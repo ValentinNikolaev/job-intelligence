@@ -1,25 +1,22 @@
 # Match Analysis
 
-**Score:** 14/100  
+**Score:** 12/100  
 **Recommendation:** Not Match
 
-Sports rights coordination and project management are not supported by the candidate evidence.
+The role focuses on sports-rights coordination, sponsorship operations, and reporting, not software engineering.
 
 ## Why it matches
 
-- General coordination with product and engineering stakeholders
+- Project coordination and technical communication may transfer marginally.
 
 ## Gaps
 
-- Sports rights
-- event coordination
-- partner management
-- and German fluency are not evidenced
+- Sports-rights management, sponsorship, CRM, and campaign controlling are not evidenced.
 
 ## Concerns
 
-- Fundamental domain and role mismatch
+- Role domain and core responsibilities do not match backend engineering.
 
 ## Hard rejection
 
-- The position is centered on sports-rights coordination rather than software engineering.
+- Core occupation mismatch: sports-rights/project coordination rather than software engineering.

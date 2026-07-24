@@ -1,25 +1,19 @@
-score: 51
-recommendation: possible_match
-summary: Technical leadership and agile delivery experience are relevant, but dedicated
-  agency project management, budgets, forecasting, and German fluency are not evidenced.
+score: 38
+recommendation: weak_match
+summary: The candidate has technical leadership and agile delivery exposure, but not
+  the required client-facing software project-management and budget-control background.
 strengths:
-- Agile planning
-- delivery coordination
-- technical stakeholder communication
-- software-development context
+- Agile planning; roadmap and release coordination; stakeholder communication; technical
+  project delivery.
 gaps:
-- Budget control
-- forecasting
-- capacity planning
-- agency-side project management
-- and fluent German are not evidenced
+- Agency/client project management, budgets, forecasting, capacity planning, and German
+  proficiency are not evidenced.
 concerns:
-- Hamburg or Germany-based workshop expectations may be difficult from the candidate's
-  location
+- The role is project management rather than hands-on backend engineering.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-23T21:10:15Z'
+analyzed_at: '2026-07-24T09:59:02Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:bf5143c5a94d690928667f3320e64cf769368b8870276cd3358b591c7b371cd7
-prompt_version: job-match-v1:sha256:c074464d5a419b6c8f2ebacd2093a06a437128ee7037894cf2bbbd6c78d1b165
+job_version: sha256:46a5cbdc48469ba5ed9d8064537b5dd2f5bf8de5750f089658f99a80680d0fa7
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
 model: codex:gpt-5.6-luna:low

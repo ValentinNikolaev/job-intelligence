@@ -1,8 +1,8 @@
 schema_version: 1
 sources:
   adzuna:
-    total_requests: 13
-    last_run_at: '2026-07-23T21:01:08Z'
+    total_requests: 18
+    last_run_at: '2026-07-24T09:57:56Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -38,9 +38,20 @@ sources:
       rejected: 0
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-24T09:57:20Z'
+      recorded_at: '2026-07-24T09:57:56Z'
+      requests: 5
+      fetched: 1
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 1
+      rejected: 0
+      errors: 0
+      limit_reached: false
   arbeitnow:
-    total_requests: 7
-    last_run_at: '2026-07-23T21:02:09Z'
+    total_requests: 9
+    last_run_at: '2026-07-24T09:58:33Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -76,9 +87,20 @@ sources:
       rejected: 34
       errors: 0
       limit_reached: true
+    - run_started_at: '2026-07-24T09:57:20Z'
+      recorded_at: '2026-07-24T09:58:33Z'
+      requests: 2
+      fetched: 100
+      created: 32
+      updated: 21
+      duplicates_merged: 0
+      unchanged: 17
+      rejected: 30
+      errors: 0
+      limit_reached: true
   ashby:
-    total_requests: 39
-    last_run_at: '2026-07-23T21:02:19Z'
+    total_requests: 52
+    last_run_at: '2026-07-24T09:58:40Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -114,9 +136,20 @@ sources:
       rejected: 27
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-24T09:57:20Z'
+      recorded_at: '2026-07-24T09:58:40Z'
+      requests: 13
+      fetched: 30
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 3
+      rejected: 27
+      errors: 0
+      limit_reached: false
   himalayas:
-    total_requests: 17
-    last_run_at: '2026-07-23T21:02:58Z'
+    total_requests: 24
+    last_run_at: '2026-07-24T09:59:13Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -150,6 +183,17 @@ sources:
       duplicates_merged: 0
       unchanged: 14
       rejected: 69
+      errors: 0
+      limit_reached: false
+    - run_started_at: '2026-07-24T09:57:20Z'
+      recorded_at: '2026-07-24T09:59:13Z'
+      requests: 7
+      fetched: 84
+      created: 4
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 13
+      rejected: 67
       errors: 0
       limit_reached: false
   jobicy:

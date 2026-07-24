@@ -1,0 +1,28 @@
+schema_version: 2
+id: 0d904ff1-3645-4f09-a144-c50f59b4a01a
+title: Pflichtpraktikum Online Marketing Manager (m/w/d)
+company: eFLY Marketplace Services GmbH
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: Internship
+sources:
+- source: arbeitnow
+  source_job_id: pflichtpraktikum-online-marketing-manager-stuttgart-205433
+  url: https://www.arbeitnow.com/jobs/companies/efly-marketplace-services-gmbh/pflichtpraktikum-online-marketing-manager-stuttgart-205433
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - Internship
+published_at: '2026-07-24T08:00:50Z'
+discovered_at: '2026-07-24T09:57:59Z'
+updated_at: '2026-07-24T09:57:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T09:57:59Z'
+fingerprint: sha256:b6032f23ea1b9fb4337b8ee82bfa94c4c11672eca062ce7609445f55db995e85
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
