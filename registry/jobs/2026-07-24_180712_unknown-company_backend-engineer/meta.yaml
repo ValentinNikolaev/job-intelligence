@@ -1,0 +1,24 @@
+schema_version: 2
+id: 75b5276b-ab91-40b4-a116-ce72a5074c64
+title: Backend Engineer
+company: Unknown company
+company_url: null
+location: San Francisco, CA
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-8778881913049256919'
+  url: https://jooble.org/desc/-8778881913049256919?ckey=remote+golang+backend+engineer&rgn=55180&pos=32&groupId=1106121903&elckey=8354937051321771985&p=1&aq=-4743532519118419598&cid=15922&jobAge=6&brelb=100&bscr=250.43277&scr=250.43277
+published_at: '2026-07-24T06:02:05.3070000'
+discovered_at: '2026-07-24T18:07:12Z'
+updated_at: '2026-07-24T18:07:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:07:12Z'
+analysis_priority: 0
+fingerprint: sha256:ec9bf7aec98ced4e754d2ffa6bebbcf1ea0a0198506454a508e627920da78db5
+data_source: jooble
+content_source: jooble
+company_content_source: null

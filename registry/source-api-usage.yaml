@@ -521,8 +521,8 @@ sources:
       errors: 0
       limit_reached: false
   jooble:
-    total_requests: 45
-    last_run_at: '2026-07-24T15:07:47Z'
+    total_requests: 51
+    last_run_at: '2026-07-24T18:07:12Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -611,5 +611,16 @@ sources:
       duplicates_merged: 0
       unchanged: 0
       rejected: 73
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-07-24T18:02:47Z'
+      recorded_at: '2026-07-24T18:07:12Z'
+      requests: 6
+      fetched: 100
+      created: 2
+      updated: 27
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 71
       errors: 0
       limit_reached: true
