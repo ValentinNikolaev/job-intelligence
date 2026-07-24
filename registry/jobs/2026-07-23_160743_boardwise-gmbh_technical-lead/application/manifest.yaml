@@ -1,0 +1,13 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:4b16070bedc57225b3e17453c7f01294be0ba462a06296013cccabc5c55096d7
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:fbe2797882eb9e5a99313c21ec9cbde7e7903b77d101d5c1ef76f3f103b25d33
+model: codex:gpt-5.5:medium
+generated_at: '2026-07-24T10:09:30Z'
+files:
+- cv.md
+- cv.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
