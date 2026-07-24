@@ -52,3 +52,24 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: b74b35c28df94fdc9d11ca8f47231b6e
+  recorded_at: '2026-07-24T10:08:54Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 7545
+  output_tokens: 5200
+  total_tokens: 12745
+  note: Estimated from priority queue input and generated four-artifact package
+- run_id: 151a63b1b33941a991c37cc6d2ae08c6
+  recorded_at: '2026-07-24T10:10:10Z'
+  workflow: prepare
+  model: codex:gpt-5.5:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 42000
+  output_tokens: 18000
+  total_tokens: 60000
+  note: normal preparation automation for 2026-07-23_160743_boardwise-gmbh_technical-lead;
+    exact Codex usage unavailable

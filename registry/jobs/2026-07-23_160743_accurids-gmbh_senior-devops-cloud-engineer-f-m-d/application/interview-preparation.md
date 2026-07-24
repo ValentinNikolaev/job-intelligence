@@ -1,149 +1,87 @@
-# Interview Preparation
-
 ## Recruiter / HR Screening
 
-Likely motivation question: "Why ACCURIDS and why this role?"  
-Suggested angle: Focus on the role's mix of production reliability, AWS/Kubernetes operations, automation, regulated data, and a product where infrastructure quality directly supports customers. Mention verified public facts: ACCURIDS builds an IDMP-native data foundation for pharma product data and aims to make fragmented regulated data audit-ready and usable.
+Prepare concise, factual answers for:
 
-Likely history question: "Your background is backend engineering. Why DevOps / Cloud Engineering?"  
-Suggested angle: Explain that several roles already involved platform-adjacent work: ECS-to-Kubernetes migration, Helm, ArgoCD, GitHub Actions, monitoring, SRE dashboards, production troubleshooting, event delivery reliability, retries, and backpressure handling. Position the move as a natural continuation of production ownership.
-
-Likely location question: "Can you work in Cologne under a hybrid model?"  
-Prepare a clear factual answer before the call. The vacancy is not listed as fully remote. Decide whether relocation, regular Cologne presence, or a specific hybrid arrangement is feasible.
-
-Likely salary question: "What salary range are you targeting?"  
-Prepare a researched range for Senior DevOps / Cloud Engineer roles in Cologne and answer with flexibility tied to scope, hybrid requirements, and benefits.
-
-Likely notice-period question: "When could you start?"  
-Prepare the current factual availability. Do not rely on stale source dates; the primary CV says Simple.life ended in March 2026 while LinkedIn says present.
-
-Likely language question: "How comfortable are you using English at work?"  
-Suggested angle: State practical working proficiency honestly. The sources support upper-intermediate/professional working proficiency, not native fluency.
-
-Likely job-change question: "Why are you interested now?"  
-Suggested angle: Emphasize a move toward cloud/platform reliability and regulated enterprise systems, without inventing dissatisfaction with previous roles.
+- Why this role: connect production reliability, Kubernetes/CI/CD, and customer-impacting systems to ACCURIDS’ data-infrastructure work; do not claim pharmaceutical expertise.
+- Current status and timeline: reconcile the Simple.life end date in the primary CV with the LinkedIn “Present” entry before speaking with a recruiter.
+- Location and working model: explain the realistic plan for a Cologne hybrid role from Rome; do not assume relocation support, remote exceptions, work authorization, notice period, or travel expectations.
+- English: describe the documented upper-intermediate level candidly and provide examples of cross-functional collaboration; do not claim German proficiency.
+- Salary and availability: prepare a range and notice-period answer based on current circumstances; neither is evidenced in the source documents.
+- Career changes: explain the move from backend/technical leadership toward platform reliability as a continuity of operational ownership, not as invented DevOps tenure.
 
 ## Culture Fit / Behavioral Interview
 
-Likely behavioral questions:
+Likely questions:
 
-- Tell me about a time you handled a production incident.
-- Describe a migration you completed under operational constraints.
-- Tell me about a time you improved observability or monitoring.
-- Describe how you work with development teams to improve delivery pipelines.
-- Tell me about a time you had to learn a new tool or platform quickly.
-- Describe a situation where you reduced operational risk.
-- Tell me about a time you balanced speed and reliability.
-- Describe how you document systems to reduce dependency on one person.
-- Tell me about a time you worked with product or support teams on an engineering problem.
-- Describe how you handle disagreement about architecture or operations.
+1. Tell us about a production incident where you improved the system afterward.
+2. How have you balanced delivery speed and reliability?
+3. Describe a time you learned a new infrastructure tool or approach quickly.
+4. How do you document and transfer operational knowledge?
+5. Tell us about a cross-functional disagreement involving operational priorities.
+6. Describe your approach to an unclear customer deployment constraint.
+7. How do you prioritize security, observability, and feature work?
+8. Tell us about leading through a high-traffic or high-pressure period.
+9. How do you use AI-assisted tools responsibly in scripting or debugging?
+10. What would you do during your first 90 days as the senior operational pillar?
 
-STAR stories to prepare from real CV evidence:
-
-- airSlate ECS-to-Kubernetes migration: situation was managed services moving to Kubernetes; tasks included preparing Helm, GitHub Actions, and ArgoCD deployment workflows; actions included migration and pipeline implementation; results included cost and performance improvements from LinkedIn evidence.
-- airSlate production troubleshooting: situation was production issues and peak database load; actions used logs, monitoring, SRE dashboards, API/query optimization; results included improved stability and lower workload.
-- Simple.life support automation reliability: situation was support operations at scale; actions included Go backend, Zendesk/Intercom integration, retries, fallback logic, and monitoring; results included up to 30% ticket automation/deflection and reduced incident disruption.
-- CRURATED event analytics infrastructure: situation was product metrics and business insights; actions included event-driven architecture, EventBridge, queues, S3 routing, backpressure, retries, observability; results included over 10x throughput and 99.9% delivery reliability.
-- PDFfiller transactional email platform: situation was high-volume messaging; actions included technical leadership, email infrastructure, and peak-load preparation; results included about 50 million emails per month and 10x BFCM traffic handling.
+STAR stories grounded in the CV: airSlate ECS-to-Kubernetes migration; Simple.life resilient message delivery with fallback/retries/monitoring; PDFfiller’s 50-million-email monthly service and BFCM traffic; Hyprr’s prototype-to-closed-beta delivery. Prepare personal contributions, context, constraints, decisions, and outcomes without extending beyond source evidence.
 
 ## Technical Interview
 
-High Priority:
+**High Priority**
 
-- AWS operations: Prepare to explain hands-on AWS exposure clearly, including what was personally owned versus used. Be ready for EKS, RDS, S3, IAM, networking, account structure, and security questions. Supported evidence is AWS-backed systems, ECS-to-Kubernetes migration, EventBridge, S3 downstreams, and production systems.
-- Kubernetes: Prepare deployment, service, ingress, config, secret, scaling, rollout, debugging, and cluster-observability examples. The strongest evidence is airSlate migration and Kubernetes deployment preparation.
-- CI/CD and GitOps: Prepare Helm, GitHub Actions, ArgoCD, release workflow, rollback, environment promotion, and deployment consistency examples. Be direct that GitLab CI and Kargo are not evidenced if asked.
-- Observability and incident response: Prepare examples using logs, monitoring, SRE dashboards, Prometheus, Elasticsearch, retries, fallback logic, and backpressure handling.
-- Reliability architecture: Prepare to discuss reducing single points of failure, documenting operational processes, handling peak load, and designing resilient delivery pipelines.
+- Kubernetes deployment and operations: explain the airSlate migration, Helm, ArgoCD, workload health, rollout safety, logs, monitoring, and troubleshooting.
+- CI/CD and GitOps: articulate the supported GitHub Actions and ArgoCD experience; be explicit that GitLab CI and Kargo are learning gaps.
+- Reliability and incident response: demonstrate a disciplined approach to alert triage, logs/metrics, retries, fallback behavior, runbooks, post-incident learning, and progressive mitigation.
+- AWS/platform fundamentals: prepare how you have used AWS in supported roles, then study AWS account boundaries, IAM least privilege, EKS, RDS, S3, networking, backups, and disaster recovery as role-specific learning topics.
+- Observability: prepare Prometheus, monitoring/logging, service symptoms, meaningful SLIs/SLOs, alert quality, and dashboard use. Do not claim Grafana ownership unless supported.
 
-Medium Priority:
+**Medium Priority**
 
-- Infrastructure as Code: Terraform is explicit in the vacancy but not supported in the source CV. Prepare adjacent concepts from Kubernetes manifests, Helm, GitOps, and deployment automation, plus a ramp-up plan for Terraform.
-- Security operations: Prepare GDPR, PCI DSS, system audits, security assessments, vulnerability scans, monitoring, and alerting examples. Avoid claiming ISO 27001 implementation ownership.
-- Databases: Prepare MySQL, PostgreSQL, Elasticsearch, query optimization, peak load, RDS concepts, backups, and monitoring.
-- Customer/on-premise deployments: The source has less direct evidence. Prepare a careful answer around production environments, restrictive operational contexts, documentation, troubleshooting, and customer-impact awareness.
-- Docker/containerization: Prepare container fundamentals, image build, runtime configuration, registry, health checks, logs, networking, and debugging. The source supports Kubernetes/container ecosystem exposure but not detailed Docker achievements.
+- Terraform: learn plan/state/module/remote-state concepts and review a small practice configuration; state clearly that production Terraform experience is not listed.
+- Security and compliance: review vulnerability-management workflow, secrets handling, IAM concepts, audit evidence, and ISO 27001 concepts; do not claim certification or implementation experience.
+- PostgreSQL and Elasticsearch: be ready to discuss the supported database/performance and Elasticsearch experience, with operational trade-offs.
+- Docker and on-premise deployment: prepare container fundamentals, images, configuration, secrets, persistent volumes, networking, and upgrades; frame customer on-premise work as a learning area.
 
-Low Priority:
+**Low Priority**
 
-- Spring Boot and Keycloak: These are vacancy nice-to-haves but not supported by candidate evidence.
-- Deep pharma/IDMP domain expertise: Prepare a high-level understanding from research, but do not claim domain experience.
-- Kargo-specific workflows: Treat as a learning area unless the candidate has unrecorded experience.
+- Keycloak and Spring Boot: understand the role they may play in the platform, but do not present prior experience.
+- Pharmaceutical data and IDMP: read the [ACCURIDS overview](https://accurids.com/) and [EMA’s PMS information](https://www.ema.europa.eu/en/human-regulatory-overview/research-development/data-medicines-iso-idmp-standards-overview/substance-product-organisation-referential-spor-master-data/substance-product-data-management-services) to ask informed questions; do not claim domain expertise.
 
 ## CV Deep-Dive Questions
 
-Defend these claims with specifics:
+Be ready to defend:
 
-- "Migrated managed services from ECS to Kubernetes." Prepare what services, migration scope, rollout strategy, risks, and personal responsibility.
-- "Prepared services for Kubernetes deployments using Helm, GitHub Actions, and ArgoCD." Prepare pipeline flow, chart structure, environment promotion, and rollback.
-- "Troubleshot production issues through logs, monitoring, and SRE dashboards." Prepare one incident example with symptoms, investigation, fix, and prevention.
-- "Reduced peak workload on the main database." Prepare what bottleneck existed, what changed, and how the outcome was measured.
-- "Built resilient message delivery pipelines with fallback logic, retries, and monitoring." Prepare failure modes, retry strategy, alerting, idempotency, and business impact.
-- "Implemented fault-tolerant pipelines with automatic retries and observability." Prepare EventBridge/queue/S3 routing details and how delivery guarantees were handled.
-- "Led a team of 5 backend engineers." Prepare leadership style, task distribution, mentoring, and operational metrics.
-- "Security assessments and vulnerability scans." Prepare exact involvement and avoid overstating ownership.
-
-Clarify before interviews:
-
-- Whether CRURATED was concurrent, contract, or separate employment during the Simple.life period.
-- Whether Simple.life ended in March 2026 or is still current.
-- Whether relocation or hybrid presence in Cologne is feasible.
-- Whether there is unrecorded Terraform, GitLab CI, EKS, RDS, IAM, Docker, Grafana, Keycloak, Spring Boot, or ISO 27001 experience that can be truthfully added later.
+- What exactly did the ECS-to-Kubernetes migration involve, and what was your scope?
+- How did Helm, GitHub Actions, and ArgoCD interact in the airSlate delivery process?
+- What metrics/logs were used to troubleshoot production problems?
+- How did fallback logic and retries improve message-delivery resilience at Simple.life?
+- What did leading five engineers at PDFfiller entail, and what decisions did you personally own?
+- How was the 50-million-monthly-email scale handled during BFCM spikes?
+- Which Elasticsearch and PostgreSQL problems have you personally solved?
+- What does “AWS experience” mean in terms of systems and responsibilities?
 
 ## Company-Specific Preparation
 
-Understand ACCURIDS:
-
-- ACCURIDS builds an IDMP-native data standardization fabric and FAIR Data Registry for pharmaceutical product data.
-- The product goal is to transform fragmented enterprise data into a unified, audit-ready product data backbone.
-- Public materials position the product around regulated data, interoperability, compliance, analytics, and AI-ready data foundations.
-- The vacancy's operations focus likely exists because reliability, security, customer deployment quality, and documentation are critical for enterprise pharma customers.
-
-Prepare to connect your experience:
-
-- airSlate document automation and SaaS operations: relevant to enterprise SaaS, deployment reliability, and operational maturity.
-- Sixt GDPR/PCI DSS work: relevant to regulated or compliance-sensitive engineering, without claiming pharma compliance.
-- Simple.life and CRURATED reliability systems: relevant to robust operations, monitoring, retries, and operational continuity.
-- PDFfiller high-volume email platform: relevant to resilient infrastructure under peak load.
-
-Avoid overclaiming:
-
-- Do not claim prior pharma, IDMP, ISO 27001, Terraform, GitLab CI, or Keycloak ownership unless the candidate has additional evidence outside the registry.
+ACCURIDS publicly describes a pharma data-standardization platform, SaaS plus containerized private-cloud/on-premise deployment options, and a culture of ownership and clear communication. Its Kubernetes guide references StatefulSets, persistent volumes, ConfigMaps, Secrets, Services, Ingress, and cluster permissions. Review these concepts, then frame your questions around safe deployments, customer environments, auditability, and operational documentation. Unknowns to clarify include the production stack, GitLab/Kargo and Terraform usage, AWS topology, on-call expectations, team size, customer-installation process, and the practical scope of ISO 27001 work.
 
 ## Preparation Plan
 
-Must-prepare before recruiter screen:
+**Must prepare:** truthful explanation of location/hybrid feasibility, employment chronology, English, notice period, salary, and the main gaps; ECS-to-Kubernetes and reliability STAR stories; AWS/Kubernetes/CI/CD/observability fundamentals.
 
-- Clear answer on Cologne hybrid availability.
-- Clear current employment and availability timeline.
-- Salary range for Cologne Senior DevOps / Cloud Engineer roles.
-- Two-minute explanation of backend-to-platform motivation.
-- Honest English proficiency statement.
+**Pre-technical:** review an EKS/IAM/RDS/S3 architecture, Kubernetes troubleshooting flows, Terraform basics, GitLab CI versus GitHub Actions, ArgoCD/GitOps, and ISO 27001/security operations concepts. Be ready to distinguish demonstrated experience from topics being learned.
 
-Before technical interview:
-
-- One detailed Kubernetes migration story.
-- One CI/CD/GitOps story using Helm, GitHub Actions, and ArgoCD.
-- One observability/incident story.
-- One AWS/event pipeline story using EventBridge, queues, S3 downstreams, retries, and backpressure.
-- A Terraform ramp-up answer.
-- A security/compliance support answer that stays within evidence.
-
-Before final/culture interview:
-
-- Examples of ownership and documentation that reduce operational dependency.
-- Examples of collaboration with product, support, and engineering leadership.
-- Questions about the platform roadmap, operational risk, on-call, customer deployment constraints, and security maturity.
+**Pre-final/culture:** study ACCURIDS’ product and deployment documentation; prepare ownership, collaboration, incident, learning, and customer-constraint examples; confirm the work-model decision before accepting an interview loop.
 
 ## Questions to Ask
 
-- What are the biggest operational risks you want this hire to reduce in the first six months?
-- How are responsibilities split today between backend engineers, platform engineers, and whoever owns customer deployments?
-- What parts of the AWS platform are most in need of improvement: EKS, networking, IAM, RDS, observability, CI/CD, or documentation?
-- How mature are your Terraform and GitOps workflows today?
-- What does incident response look like, and is there an on-call rotation?
-- How do SaaS and on-premise customer installations differ technically?
-- What security or ISO 27001 work would this role own versus support?
-- Which observability tools are currently in production?
-- What would make the first 90 days successful for this role?
-- How often would you expect presence in the Cologne office?
+1. What proportion of the role is SaaS-platform work versus customer on-premise installation and support?
+2. Which AWS services and account boundaries does the team operate directly?
+3. How are Terraform, GitLab CI, ArgoCD, and Kargo used today, and what changes are planned?
+4. What does the on-call or incident-response rotation look like?
+5. Which reliability or security outcomes would define success in the first six months?
+6. How are deployment changes documented and validated for customer environments?
+7. What ISO 27001 responsibilities belong to this role versus a dedicated security/compliance function?
+8. What are the hardest operational differences between the SaaS and on-premise offerings?
+9. How does the engineering team collaborate with customer-facing and product teams during installations or incidents?
+10. What does the Cologne hybrid arrangement mean in practice for this role?

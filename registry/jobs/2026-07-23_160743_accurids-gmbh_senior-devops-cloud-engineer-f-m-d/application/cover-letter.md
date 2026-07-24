@@ -1,14 +1,12 @@
-# Cover Letter
+Dear ACCURIDS hiring team,
 
-Dear ACCURIDS team,
+I am applying for the Senior DevOps / Cloud Engineer role. My background combines more than 15 years of backend engineering with practical experience making production systems more reliable, observable, and easier to operate. ACCURIDS’ work on dependable data infrastructure for life sciences is particularly relevant to the operational and platform challenges described in the role.
 
-I am applying for the Senior DevOps / Cloud Engineer role because it sits at the intersection of production reliability, cloud infrastructure, automation, and meaningful regulated-data products. ACCURIDS is building an IDMP-native data foundation for pharmaceutical enterprises, and the role's focus on AWS, Kubernetes, customer environments, observability, and resilient operations matches the strongest operational parts of my background.
+At airSlate, I migrated services from ECS to Kubernetes and prepared the runtime stack with Helm, GitHub Actions, and ArgoCD. I also implemented CI/CD pipelines and investigated production issues through logs, monitoring, and SRE dashboards. This experience is directly applicable to maintaining cloud infrastructure, supporting delivery workflows, and improving operational resilience.
 
-In my recent work I have built and operated production backend and automation systems where reliability mattered day to day. At airSlate, I helped migrate managed services from ECS to Kubernetes, prepared deployment workflows with Helm, GitHub Actions, and ArgoCD, implemented CI/CD pipelines, and troubleshot production issues through logs, monitoring, and SRE dashboards. At Simple.life and CRURATED, I built fault-tolerant Go and event-driven systems with retries, monitoring, backpressure handling, and operational visibility.
+More recently, at Simple.life, I owned a Go-based automation platform and built resilient message-delivery pipelines with fallback logic, retries, and monitoring. Earlier, at PDFfiller, I helped operate and scale a transactional email service to roughly 50 million emails per month, including through significant BFCM traffic peaks. These roles developed my practical approach to incident response, service reliability, and clear ownership of production systems.
 
-I can contribute most directly to ACCURIDS in platform operations, Kubernetes-based delivery, AWS-backed services, CI/CD, observability, incident response, and documentation of reliable operating patterns. I also bring useful compliance-adjacent experience from GDPR, PCI DSS, security assessment, and vulnerability-scan support, while recognizing that ISO 27001 and Terraform would be areas where I would ramp up deliberately rather than overstate prior ownership.
+I would welcome the opportunity to discuss how my AWS, Kubernetes, CI/CD, observability, and reliability experience could support ACCURIDS’ SaaS and customer deployment environments.
 
-Thank you for considering my application. I would welcome the opportunity to discuss how my backend, cloud, and reliability experience could help ACCURIDS strengthen its SaaS and customer deployment operations.
-
-Best regards,  
+Kind regards,  
 Valentin Nikolaev
