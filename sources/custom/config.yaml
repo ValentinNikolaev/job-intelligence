@@ -6,6 +6,8 @@ default_title_terms:
   - developer
   - engineering
   - engineer
+  - golang
+  - kubernetes
   - laravel
   - lead
   - magento
@@ -21,6 +23,31 @@ default_exclude_title_terms:
   - stage
   - tirocinio
 sources:
+  - name: cubbit
+    company: Cubbit S.r.l.
+    board_url: https://www.cubbit.io/careers
+    company_url: https://www.cubbit.io
+    source_type: custom/Webflow
+    remote: true
+    location: Remote Italy / Hybrid Bologna
+    notes: Full remote or hybrid for the current Senior Backend Developer GO role; distributed storage and cloud infrastructure stack.
+    title_terms:
+      - backend
+      - developer
+      - golang
+      - kubernetes
+      - site reliability
+      - software
+    exclude_title_terms:
+      - account executive
+      - cam/pam
+      - ds3 composer
+      - go-to-market
+      - marketer
+      - sales development
+    seed_jobs:
+      - title: Senior Backend Developer GO
+        url: https://www.cubbit.io/careers/senior-backend-developer-go
   - name: shippypro
     company: ShippyPro
     board_url: https://shippypro.factorialhr.com
@@ -60,11 +87,12 @@ sources:
     source_type: custom HTML
     remote: true
     location: Remote
-    notes: Career page embeds open roles directly; Senior PHP Backend Developer is a recurring vacancy.
+    notes: Remote-first distributed company; career page embeds open roles directly, with PHP, Go, Node.js, microservices, and cloud in the stack.
     title_terms:
       - backend
       - developer
       - engineer
+      - golang
       - java
       - laravel
       - magento
@@ -86,13 +114,30 @@ sources:
       - cloud
       - developer
       - drupal
-      - go
       - laravel
       - php
       - symfony
     seed_jobs:
       - title: PHP Developer
         url: https://careers.sparkfabrik.com/it/php-developer/
+  - name: billding
+    company: Billding S.r.l.
+    board_url: https://billding.it/join-us
+    company_url: https://billding.it
+    source_type: custom HTML
+    remote: true
+    location: Remote Italy
+    notes: All positions allow choosing remote work; currently monitored for spontaneous or future Go/PostgreSQL/AWS backend openings.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - golang
+      - software
+    exclude_title_terms:
+      - candidatura spontanea
+      - contattaci
+      - join billding
   - name: lithos
     company: Lithos
     board_url: https://lithos.it/work-with-us/senior-full-stack-developer
@@ -125,6 +170,37 @@ sources:
     seed_jobs:
       - title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
         url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
+  - name: bitrock
+    company: Bitrock
+    board_url: https://www.careers-page.com/bitrock-careers
+    company_url: https://bitrock.it
+    source_type: Manatal / Careers Page
+    remote: true
+    location: Remote-first / Italy
+    notes: Remote-first Italian technology company with Go, cloud-native, Kubernetes, and data engineering stack; old dated board entries are excluded.
+    title_terms:
+      - backend
+      - cloud
+      - developer
+      - devops
+      - engineer
+      - golang
+      - kubernetes
+      - platform
+      - software
+    exclude_title_terms:
+      - "2021"
+      - "2022"
+      - "2023"
+      - android
+      - business development
+      - front-end
+      - ios
+      - mobile
+      - pre-sales
+      - project manager
+      - scala
+      - ux
   - name: userbot-neuraltech
     company: Userbot / Neuraltech
     board_url: https://userbot.ai/it/jobs-opportunities
@@ -160,6 +236,59 @@ sources:
       - software
       - typescript
       - vue
+  - name: medicilio
+    company: Medicilio
+    board_url: https://medicilio.it/careers
+    company_url: https://medicilio.it
+    source_type: custom HTML / ClickUp jobs document
+    remote: true
+    location: Remote Italy
+    notes: Full-remote health-tech company with Go in the backend stack; the career page links out to a ClickUp positions document.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - golang
+      - microservices
+      - software
+  - name: empatica
+    company: Empatica
+    board_url: https://apply.workable.com/empatica/
+    company_url: https://www.empatica.com
+    ats: Workable
+    remote: true
+    location: Role-dependent remote
+    notes: Milan-founded health-tech company with Go/Python distributed backend work; verify allowed countries per role.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - golang
+      - platform
+      - software
+    exclude_title_terms:
+      - hardware
+      - marketing
+      - sales
+  - name: arduino
+    company: Arduino / Qualcomm
+    board_url: https://careers.arduino.cc/
+    company_url: https://www.arduino.cc
+    source_type: custom career page redirecting to Qualcomm Careers
+    remote: true
+    location: Role-dependent Italy remote
+    notes: Arduino is now part of Qualcomm; software/cloud roles may be remote, but each role needs strict remote-type verification.
+    title_terms:
+      - backend
+      - cloud
+      - developer
+      - engineer
+      - golang
+      - software
+    exclude_title_terms:
+      - hardware
+      - intern
+      - sales
   - name: refactory
     company: Refactory S.r.l.
     board_url: https://www.refactory-project.com/join-the-team/

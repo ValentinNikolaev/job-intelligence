@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 337
+Total vacancies: 338
 
-- Found: 337
+- Found: 338
 
 ## Monthly catalogs
 
@@ -14,6 +14,7 @@ Total vacancies: 337
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-24 | [Cubbit S.r.l.](../registry/jobs/2026-07-24_212502_cubbit-s-r-l_senior-backend-developer-go/) | [Senior Backend Developer GO](../registry/jobs/2026-07-24_212502_cubbit-s-r-l_senior-backend-developer-go/job.md) | Remote Italy / Hybrid Bologna | Custom | Found | 2026-07-24 | [Custom](https://www.cubbit.io/careers/senior-backend-developer-go) | — | — | — | — | — |
 | 2026-07-24 | [Nord Security](../registry/jobs/2026-07-24_211618_nord-security_backend-engineer-mid-senior-php-go-payments-team/) | [Backend Engineer \| Mid - Senior \| PHP + Go \| Payments Team](../registry/jobs/2026-07-24_211618_nord-security_backend-engineer-mid-senior-php-go-payments-team/job.md) | Remote Poland | Custom | Found | 2026-07-24 | [Custom](https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f) | — | — | — | — | — |
 | 2026-07-24 | [Lithos](../registry/jobs/2026-07-24_211614_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-07-24_211614_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-07-24 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
 | 2026-07-24 | [SparkFabrik S.r.l.](../registry/jobs/2026-07-24_211613_sparkfabrik-s-r-l_php-developer/) | [PHP Developer](../registry/jobs/2026-07-24_211613_sparkfabrik-s-r-l_php-developer/job.md) | Remote Italy | Custom | Found | 2026-07-24 | [Custom](https://careers.sparkfabrik.com/it/php-developer/) | — | — | — | — | — |
@@ -33,4 +34,3 @@ Total vacancies: 337
 | 2026-07-24 | [Brighter AI Technologies GmbH](../registry/jobs/2026-07-24_210231_brighter-ai-technologies-gmbh_product-manager-m-f-d/) | [Product Manager (m/f/d)](../registry/jobs/2026-07-24_210231_brighter-ai-technologies-gmbh_product-manager-m-f-d/job.md) | Berlin | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/brighter-ai-technologies-gmbh/product-manager-berlin-455143) | — | — | — | — | — |
 | 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210230_my-humancapital-gmbh_projektcontroller-m-w-d/) | [Projektcontroller (m/w/d)](../registry/jobs/2026-07-24_210230_my-humancapital-gmbh_projektcontroller-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/projektcontroller-munich-478468) | — | — | — | — | — |
 | 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210229_my-humancapital-gmbh_objektverwalter-facility-management-m-w-d/) | [Objektverwalter Facility Management (m/w/d)](../registry/jobs/2026-07-24_210229_my-humancapital-gmbh_objektverwalter-facility-management-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/objektverwalter-facility-management-munich-356398) | — | — | — | — | — |
-| 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210228_my-humancapital-gmbh_technischer-property-manager-m-w-d/) | [Technischer Property Manager (m/w/d)](../registry/jobs/2026-07-24_210228_my-humancapital-gmbh_technischer-property-manager-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/technischer-property-manager-munich-158068) | — | — | — | — | — |

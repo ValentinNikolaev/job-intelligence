@@ -14,11 +14,11 @@ sources:
     source_name: jagaad
     board_url: https://jagaad.com/careers
     source_type: custom HTML
-    remote_policy_note: Career page embeds open roles directly; Senior PHP Backend
-      Developer is a recurring vacancy.
+    remote_policy_note: Remote-first distributed company; career page embeds open
+      roles directly, with PHP, Go, Node.js, microservices, and cloud in the stack.
 published_at: null
 discovered_at: '2026-07-24T21:03:39Z'
-updated_at: '2026-07-24T21:06:13Z'
+updated_at: '2026-07-24T21:25:17Z'
 status: found
 status_history:
 - status: found
