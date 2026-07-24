@@ -23,7 +23,7 @@ def _parser() -> argparse.ArgumentParser:
     source.add_argument("--message-file", type=Path)
     parser.add_argument(
         "--initiator",
-        help="Internal automation or task name to include in the Telegram message.",
+        help="Automation ID to include in the Telegram message.",
     )
     return parser
 
@@ -41,13 +41,17 @@ def notification_config() -> tuple[str, str]:
 
 
 def message_with_initiator(message: str, initiator: str | None) -> str:
-    clean_message = message.strip()
+    lines = message.strip().splitlines()
+    while lines and (
+        lines[0].startswith("Internal initiator:")
+        or lines[0].startswith("Automation ID:")
+    ):
+        lines.pop(0)
+    clean_message = "\n".join(lines).strip()
     clean_initiator = (initiator or "").strip()
     if not clean_initiator:
         return clean_message
-    line = f"Internal initiator: {clean_initiator}"
-    if clean_message.startswith("Internal initiator:"):
-        return clean_message
+    line = f"Automation ID: {clean_initiator}"
     return f"{line}\n{clean_message}" if clean_message else line
 
 

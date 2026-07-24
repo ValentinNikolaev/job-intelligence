@@ -38,14 +38,24 @@ class TelegramNotificationTests(unittest.TestCase):
         self.assertEqual("file-token", token)
         self.assertEqual("env-chat", chat_id)
 
-    def test_message_with_initiator_adds_internal_source_once(self) -> None:
-        message = message_with_initiator("Title\nScore: 68", "Job Intelligence: normal preparation")
+    def test_message_with_initiator_adds_automation_id_once(self) -> None:
+        message = message_with_initiator("Title\nScore: 68", "job-intelligence-normal-application-preparation")
 
         self.assertEqual(
-            "Internal initiator: Job Intelligence: normal preparation\nTitle\nScore: 68",
+            "Automation ID: job-intelligence-normal-application-preparation\nTitle\nScore: 68",
             message,
         )
-        self.assertEqual(message, message_with_initiator(message, "Another initiator"))
+        self.assertEqual(
+            "Automation ID: another-automation\nTitle\nScore: 68",
+            message_with_initiator(message, "another-automation"),
+        )
+        self.assertEqual(
+            "Automation ID: another-automation\nTitle\nScore: 68",
+            message_with_initiator(
+                "Internal initiator: Job Intelligence: normal preparation\nTitle\nScore: 68",
+                "another-automation",
+            ),
+        )
 
     def test_preserves_unsent_message_with_unique_prefixed_name(self) -> None:
         with TemporaryDirectory() as temporary:

@@ -14,4 +14,4 @@ After the Codex run, record exact usage when the current Codex surface exposes i
 `python run.py usage record --workflow analyze --model <configured-label>
 --input-tokens <n> --output-tokens <n> --total-tokens <n> --credits <n>`. If exact
 credits are unavailable, record an estimate explicitly with `--measurement estimated`.
-If Telegram is unavailable or the send fails, preserve any unsent message in a collision-resistant `.codex-work/telegram-message-<unique-prefix>.txt` file; never overwrite another process's message.
+If Telegram is unavailable or the send fails, preserve any unsent message in a collision-resistant `.codex-work/telegram-message-<unique-prefix>.txt` file; never overwrite another process's message. If this task sends a Telegram message, include exactly one initiator line, `Automation ID: job-intelligence-batch-vacancy-analysis`, and do not include `Internal initiator:` or prose labels as initiator text.
