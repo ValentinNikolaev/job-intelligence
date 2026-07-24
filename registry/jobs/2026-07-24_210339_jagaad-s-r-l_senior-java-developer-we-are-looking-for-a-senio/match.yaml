@@ -1,18 +1,24 @@
 score: 20
-recommendation: weak_match
-summary: Senior Java Developer aligns with the candidate profile at a score of 20/100
-  based on documented backend experience and the role requirements.
+recommendation: not_match
+summary: Seniority, architecture, cloud, and API experience transfer, but Java is
+  the central required implementation skill and is not evidenced.
 strengths:
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- Senior backend engineering
+- system design
+- microservices
+- cloud infrastructure
+- security and compliance exposure
+- technical leadership
 gaps:
-- Java is not listed as a candidate technology
+- Java development and the role-specific Java ecosystem are not evidenced
 concerns:
-- Core language mismatch for the advertised role
-hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-07-24T21:22:14Z'
+- The vacancy is a contractor role and the supplied record does not establish contractor
+  terms or Java experience
+hard_rejection: true
+hard_rejection_reason: Java is an essential central skill for this role and is unsupported
+  by the candidate profile.
+analyzed_at: '2026-07-24T23:22:31Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:33339feaed368022b2f5f3ae1d17a09725e49c9bc57c2369b0ada8c016ba6ce0
-prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
 model: codex:gpt-5.6-luna:low

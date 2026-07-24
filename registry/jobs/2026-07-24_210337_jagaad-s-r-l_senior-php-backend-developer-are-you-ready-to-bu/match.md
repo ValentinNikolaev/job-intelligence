@@ -1,15 +1,24 @@
 # Match Analysis
 
 **Score:** 78/100  
-**Recommendation:** Strong Match
+**Recommendation:** Match
 
-Senior PHP Backend Developer aligns with the candidate profile at a score of 78/100 based on documented backend experience and the role requirements.
+Good fit for a senior PHP backend role requiring APIs, quality, testing, and ownership across a remote delivery environment.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- Extensive PHP
+- Laravel and Symfony experience
+- backend APIs
+- microservices
+- testing and code quality
+- AWS and CI/CD
+- senior ownership
 
 ## Gaps
 
-- Some role-specific domain and tooling details are not explicitly documented in the candidate evidence
+- Some client-specific frameworks and domain details are not evidenced
+
+## Concerns
+
+- Contractor arrangement and project assignment details should be clarified

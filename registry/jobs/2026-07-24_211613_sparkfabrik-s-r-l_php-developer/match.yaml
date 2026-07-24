@@ -1,18 +1,25 @@
-score: 78
-recommendation: strong_match
-summary: PHP Developer aligns with the candidate profile at a score of 78/100 based
-  on documented backend experience and the role requirements.
+score: 74
+recommendation: match
+summary: Strong PHP and framework alignment for a senior development role, with some
+  uncertainty around Drupal and frontend depth.
 strengths:
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- PHP
+- Laravel and Symfony
+- OOP and Composer-relevant backend experience
+- Unix and Git exposure
+- cloud and DevOps practices
+- enterprise-scale systems
 gaps:
-- Some role-specific domain and tooling details are not explicitly documented in the
-  candidate evidence
-concerns: []
+- Drupal 7+
+- Angular
+- Vue
+- and full-stack depth are not clearly evidenced
+concerns:
+- The posting covers multiple seniority levels and client-project contexts
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-07-24T21:22:14Z'
+hard_rejection_reason: null
+analyzed_at: '2026-07-24T23:22:31Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:19a6b9244b5b641b155bd61da833f67447010d1e0e4c81b120d3ac60abdd3470
-prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
 model: codex:gpt-5.6-luna:low

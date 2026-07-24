@@ -1,15 +1,26 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Strong Match
+**Score:** 74/100  
+**Recommendation:** Match
 
-PHP Developer aligns with the candidate profile at a score of 78/100 based on documented backend experience and the role requirements.
+Strong PHP and framework alignment for a senior development role, with some uncertainty around Drupal and frontend depth.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- PHP
+- Laravel and Symfony
+- OOP and Composer-relevant backend experience
+- Unix and Git exposure
+- cloud and DevOps practices
+- enterprise-scale systems
 
 ## Gaps
 
-- Some role-specific domain and tooling details are not explicitly documented in the candidate evidence
+- Drupal 7+
+- Angular
+- Vue
+- and full-stack depth are not clearly evidenced
+
+## Concerns
+
+- The posting covers multiple seniority levels and client-project contexts

@@ -1,15 +1,22 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Senior Software Engineer aligns with the candidate profile at a score of 78/100 based on documented backend experience and the role requirements.
+Very strong fit for ShippyPro's remote senior backend role combining PHP Laravel, distributed systems, integrations, AI automation, and scale.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- Deep PHP and Laravel experience
+- microservices and async systems
+- AWS EventBridge and RabbitMQ
+- AI and support automation
+- high-volume production reliability
 
 ## Gaps
 
-- Some role-specific domain and tooling details are not explicitly documented in the candidate evidence
+- Node.js and Python are not strongly evidenced; React and TypeScript are not evidenced
+
+## Concerns
+
+- Salary and final practical assessment should be evaluated separately

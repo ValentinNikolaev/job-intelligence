@@ -1,19 +1,27 @@
 # Match Analysis
 
 **Score:** 20/100  
-**Recommendation:** Weak Match
+**Recommendation:** Not Match
 
-Senior Java Developer aligns with the candidate profile at a score of 20/100 based on documented backend experience and the role requirements.
+Seniority, architecture, cloud, and API experience transfer, but Java is the central required implementation skill and is not evidenced.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- Senior backend engineering
+- system design
+- microservices
+- cloud infrastructure
+- security and compliance exposure
+- technical leadership
 
 ## Gaps
 
-- Java is not listed as a candidate technology
+- Java development and the role-specific Java ecosystem are not evidenced
 
 ## Concerns
 
-- Core language mismatch for the advertised role
+- The vacancy is a contractor role and the supplied record does not establish contractor terms or Java experience
+
+## Hard rejection
+
+- Java is an essential central skill for this role and is unsupported by the candidate profile.

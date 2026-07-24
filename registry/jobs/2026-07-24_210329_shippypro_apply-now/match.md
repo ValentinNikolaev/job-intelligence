@@ -1,16 +1,28 @@
 # Match Analysis
 
 **Score:** 48/100  
-**Recommendation:** Weak Match
+**Recommendation:** Possible Match
 
-GTM Engineer aligns with the candidate profile at a score of 48/100 based on documented backend experience and the role requirements.
+Engineering and automation experience is relevant, but the role is primarily GTM systems and growth operations rather than backend engineering.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- API integrations and automation
+- AI-assisted workflows
+- internal platform ownership
+- support and communication automation
+- backend engineering breadth
 
 ## Gaps
 
-- No direct evidence of GTM, marketing, sales, CRM, attribution, or funnel ownership
-- Advertised stack emphasizes Python/JavaScript and GTM tooling
+- GTM
+- marketing
+- sales funnels
+- CRM tooling
+- attribution
+- HubSpot
+- and MCP experience are not evidenced
+
+## Concerns
+
+- The role's commercial-growth focus and lower compensation differ materially from the candidate's established senior backend profile

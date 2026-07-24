@@ -1,0 +1,21 @@
+score: 86
+recommendation: strong_match
+summary: Strong fit for a remote senior backend role centered on Go, scalable systems,
+  APIs, and cloud infrastructure.
+strengths:
+- Go backend experience
+- event-driven and distributed systems
+- AWS and Kubernetes
+- production reliability and performance work
+- senior ownership
+gaps:
+- Specific cloud-storage or object-storage experience is not evidenced
+concerns:
+- The supplied excerpt does not fully establish all requested storage technologies
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-24T23:22:30Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4cd6a554d608ecc3bb764d8697e5d30392705dc139eed037d771e35f6ee6d358
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

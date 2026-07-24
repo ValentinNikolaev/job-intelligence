@@ -1,16 +1,23 @@
 # Match Analysis
 
-**Score:** 85/100  
+**Score:** 89/100  
 **Recommendation:** Strong Match
 
-Backend Engineer | Mid - Senior | PHP + Go | Payments Team aligns with the candidate profile at a score of 85/100 based on documented backend experience and the role requirements.
+Excellent match for a remote PHP and Go payments backend position, supported by microservices, API, MySQL, and payment experience.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
-- Prior payment gateway and fintech-related backend experience
+- PHP and Go
+- microservices and API design
+- MySQL and production systems
+- Stripe PayPal and Skrill integrations
+- fintech and payment-domain experience
 
 ## Gaps
 
-- Some role-specific domain and tooling details are not explicitly documented in the candidate evidence
+- Specific security-product experience is not evidenced
+
+## Concerns
+
+- The vacancy is listed for Poland
+- so employment and location eligibility should be confirmed for Italy

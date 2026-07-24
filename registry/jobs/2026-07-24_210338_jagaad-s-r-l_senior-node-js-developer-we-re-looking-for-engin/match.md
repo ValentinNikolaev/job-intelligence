@@ -1,16 +1,22 @@
 # Match Analysis
 
-**Score:** 42/100  
-**Recommendation:** Weak Match
+**Score:** 53/100  
+**Recommendation:** Possible Match
 
-Senior Node.js Developer aligns with the candidate profile at a score of 42/100 based on documented backend experience and the role requirements.
+Relevant senior backend, API, microservice, and delivery experience transfers, but Node.js is the central stack and is not evidenced.
 
 ## Why it matches
 
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
+- Senior backend delivery
+- microservices and APIs
+- CI/CD and cloud infrastructure
+- Agile collaboration
+- production reliability
 
 ## Gaps
 
-- Node.js is not listed as a primary candidate technology
-- Recent experience is centered on Go and PHP
+- Node.js and its ecosystem are not evidenced; JavaScript depth is also unclear
+
+## Concerns
+
+- Role-specific implementation experience may be insufficient despite broad backend overlap
