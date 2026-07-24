@@ -26,6 +26,7 @@ SOURCE_RANKS = {
     "direct": 20,
     "manual": 25,
     "ashby": 30,
+    "custom": 35,
 }
 
 _CANONICAL_FIELDS = (

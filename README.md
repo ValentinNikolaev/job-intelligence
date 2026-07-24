@@ -6,8 +6,8 @@ A minimal local-first collector that turns source-specific vacancies into one hu
 Source API → collector → normalized job → deduplication → registry/jobs → registry/index.md
 ```
 
-The current MVP implements Adzuna, Arbeitnow, Himalayas, Jobicy, Jooble, and
-public Ashby job-board collectors.
+The current MVP implements Adzuna, Arbeitnow, Himalayas, Jobicy, Jooble, public
+Ashby job-board collectors, and custom company-board monitoring.
 
 ## Requirements
 
@@ -108,6 +108,17 @@ kept configurable and passed through unchanged. Jobicy asks clients not to poll
 more than once per hour, and a few checks per day are recommended for personal
 search. See the [Jobicy collector guide](sources/jobicy/README.md) for details.
 
+Custom company-board monitoring lives in
+[`sources/custom/config.yaml`](sources/custom/config.yaml). It tracks selected
+remote-first or full-remote company career pages, including ShippyPro, Madisoft /
+Nuvola, Jagaad, SparkFabrik, BitBull, Spreaker, Userbot / Neuraltech, Switcho,
+and Refactory. These vacancies are assigned `analysis_priority: 100` because
+they come directly from company job boards, and their canonical content outranks
+aggregator sources. See the
+[custom collector guide](sources/custom/README.md) for configuration details and
+the caveat that JavaScript-only pages may not expose vacancies to the
+deterministic HTML parser.
+
 ## Run
 
 ```text
@@ -118,6 +129,7 @@ python run.py himalayas
 python run.py jobicy
 python run.py jooble
 python run.py ashby
+python run.py custom
 python run.py ashby discover https://jobs.ashbyhq.com/satispay/some-job-id
 python run.py add-manual --input .codex-work/manual-job/example.yaml
 python run.py all

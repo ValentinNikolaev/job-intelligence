@@ -198,7 +198,8 @@ This can false-merge two same-title openings at the same company and location. T
 Source quality ranks are:
 
 ```text
-ashby
+custom company boards
+→ ashby
 → direct
 → adzuna = arbeitnow = himalayas = jooble
 → unknown sources

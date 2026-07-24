@@ -1,0 +1,180 @@
+version: 1
+timeout_seconds: 30
+analysis_priority: 100
+default_title_terms:
+  - backend
+  - developer
+  - engineering
+  - engineer
+  - laravel
+  - lead
+  - magento
+  - php
+  - software
+  - symfony
+  - team lead
+default_exclude_title_terms:
+  - internship
+  - intern
+  - marketing
+  - sales
+  - stage
+  - tirocinio
+sources:
+  - name: shippypro
+    company: ShippyPro
+    board_url: https://shippypro.factorialhr.com
+    company_url: https://www.shippypro.com
+    ats: Factorial
+    remote: true
+    location: Remote
+    notes: Remote-first company; engineering vacancies are marked Remote and may involve occasional HQ meetings.
+    title_terms:
+      - backend
+      - engineering
+      - engineer
+      - laravel
+      - php
+      - software
+      - team lead
+  - name: madisoft-nuvola
+    company: Madisoft / Nuvola
+    board_url: https://labs.madisoft.it/entra-nel-team
+    company_url: https://labs.madisoft.it
+    source_type: custom HTML
+    remote: true
+    location: Remote Italy
+    notes: Officially 100% remote across Italy, with physical meetings roughly twice per year.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - react
+      - software
+      - symfony
+  - name: jagaad
+    company: Jagaad S.r.l.
+    board_url: https://jagaad.com/careers
+    company_url: https://jagaad.com
+    source_type: custom HTML
+    remote: true
+    location: Remote
+    notes: Career page embeds open roles directly; Senior PHP Backend Developer is a recurring vacancy.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - java
+      - laravel
+      - magento
+      - node
+      - php
+    seed_jobs:
+      - title: Senior PHP Backend Developer
+        url: https://jagaad.com/careers
+  - name: sparkfabrik
+    company: SparkFabrik S.r.l.
+    board_url: https://careers.sparkfabrik.com
+    company_url: https://www.sparkfabrik.com
+    source_type: custom careers CMS
+    remote: true
+    location: Remote Italy
+    notes: PHP Developer is published as a permanent profile with Junior, Professional, and Senior levels.
+    title_terms:
+      - backend
+      - cloud
+      - developer
+      - drupal
+      - go
+      - laravel
+      - php
+      - symfony
+    seed_jobs:
+      - title: PHP Developer
+        url: https://careers.sparkfabrik.com/it/php-developer
+  - name: bitbull
+    company: BitBull
+    board_url: https://bitbull.it/team
+    company_url: https://bitbull.it
+    source_type: custom HTML
+    remote: true
+    location: Remote Italy timezone
+    notes: Distributed remote team; candidates should be within one hour of the Italian time zone. BitBull is part of BIP Group.
+    title_terms:
+      - aws
+      - backend
+      - developer
+      - magento
+      - php
+      - shopify
+      - software
+  - name: spreaker
+    company: Spreaker
+    board_url: https://careers.spreaker.com/opportunities
+    company_url: https://careers.spreaker.com
+    source_type: WordPress/custom HTML
+    remote: true
+    location: Remote
+    notes: Fully remote since 2015; kept for recurring monitoring even when engineering roles are closed.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - kubernetes
+      - node
+      - php
+      - software
+  - name: userbot-neuraltech
+    company: Userbot / Neuraltech
+    board_url: https://userbot.ai/it/jobs-opportunities
+    company_url: https://userbot.ai
+    source_type: custom HTML
+    remote: true
+    location: Remote
+    notes: Work-from-anywhere policy, including other countries; monitored while hiring is closed.
+    title_terms:
+      - aws
+      - backend
+      - developer
+      - node
+      - php
+      - python
+      - software
+      - vue
+  - name: switcho
+    company: Switcho
+    board_url: https://switcho.it/jobs
+    company_url: https://switcho.it
+    source_type: custom/JavaScript
+    remote: true
+    location: Remote Italy
+    notes: Listed as full remote with direct hiring in Italy; the site may require JavaScript rendering.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - gcp
+      - php
+      - react native
+      - software
+      - typescript
+      - vue
+  - name: refactory
+    company: Refactory S.r.l.
+    board_url: https://refactory-project.com/join-the-team
+    company_url: https://refactory-project.com
+    source_type: custom HTML
+    remote: true
+    location: Italy
+    notes: Low-priority monitoring source with a general application form when no vacancies are open.
+    title_terms:
+      - aws
+      - backend
+      - developer
+      - engineer
+      - laravel
+      - php
+      - symfony
+      - vue
+      - yii
