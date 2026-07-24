@@ -90,4 +90,4 @@ Would you like to become part of our dynamic, curious, and international culture
 
 Clariness GmbH will treat the above information strictly confidential and will especially observe the applicable provisions of the applicable data protection laws. Further information about the use of the applicant data, you will find in the data protection declaration online at [https://www.clariness.com/privacy-policy/](https://www.clariness.com/privacy-policy/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

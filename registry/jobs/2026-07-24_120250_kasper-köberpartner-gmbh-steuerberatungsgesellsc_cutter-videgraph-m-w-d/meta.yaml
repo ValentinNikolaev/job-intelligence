@@ -1,0 +1,28 @@
+schema_version: 2
+id: e6d933b1-b6b2-423a-a92a-aadb43f2390d
+title: Cutter / Videgraph (m/w/d)
+company: KASPER & KÖBERPartner GmbH Steuerberatungsgesellschaft
+company_url: null
+location: Fürth
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: cutter-videgraph-furth-75738
+  url: https://www.arbeitnow.com/jobs/companies/kasper-koberpartner-gmbh-steuerberatungsgesellschaft/cutter-videgraph-furth-75738
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T10:00:32Z'
+discovered_at: '2026-07-24T12:02:50Z'
+updated_at: '2026-07-24T12:02:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T12:02:50Z'
+fingerprint: sha256:a2bfc833eeb31d7b052145e4c24ddbbd9866718c422328fddb6e995e2aa18671
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

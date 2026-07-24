@@ -61,4 +61,4 @@ fenstermaxx24 ist die E-Commerce-Marke der ecowindow Gruppe, eine der modernsten
 
 **Klingt gut?** Dann bewirb dich – Lebenslauf reicht, kein Anschreiben, kein Motivationsschreiben nötig. Wir melden uns innerhalb von 48 Stunden bei dir.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

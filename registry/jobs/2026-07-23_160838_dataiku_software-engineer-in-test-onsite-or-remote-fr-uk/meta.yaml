@@ -24,24 +24,24 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        count: '100'
         geo: italy
+        count: '100'
         industry: dev
     - query_index: 7
       parameters:
-        count: '100'
         geo: europe
+        count: '100'
         tag: technical lead
         industry: dev
     - query_index: 8
       parameters:
-        count: '100'
         geo: europe
+        count: '100'
         tag: platform engineer
         industry: dev
 published_at: '2026-07-18T19:40:05Z'
 discovered_at: '2026-07-23T16:08:38Z'
-updated_at: '2026-07-24T09:59:37Z'
+updated_at: '2026-07-24T12:06:06Z'
 status: found
 status_history:
 - status: found

@@ -1,0 +1,29 @@
+schema_version: 2
+id: e825d5f0-3410-4c4a-ae70-da9fdf196ffa
+title: Mitarbeiter im Finanzvertrieb
+company: Tedesco Capital
+company_url: null
+location: Hüfingen
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: mitarbeiter-im-finanzvertrieb-hufingen-48390
+  url: https://www.arbeitnow.com/jobs/companies/tedesco-capital/mitarbeiter-im-finanzvertrieb-hufingen-48390
+  metadata:
+    tags:
+    - Asset
+    - Fonds Management
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T10:30:35Z'
+discovered_at: '2026-07-24T12:02:49Z'
+updated_at: '2026-07-24T12:02:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T12:02:49Z'
+fingerprint: sha256:711dd4169e5536f4f0d0af86c9dfac954b969d8a4bfac145403db8bedaacfcf8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,28 @@
+schema_version: 2
+id: 161ffe99-6989-43b8-adaf-0d7664e62b22
+title: Director Marketing & Sales / Leiter Marketing & Vertrieb (m/w/d)
+company: XIAO Beteiligungsgesellschaft mbH
+company_url: null
+location: Cologne
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: director-marketing-sales-leiter-marketing-vertrieb-cologne-309035
+  url: https://www.arbeitnow.com/jobs/companies/xiao-beteiligungsgesellschaft-mbh/director-marketing-sales-leiter-marketing-vertrieb-cologne-309035
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T09:00:31Z'
+discovered_at: '2026-07-24T12:02:54Z'
+updated_at: '2026-07-24T12:02:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T12:02:54Z'
+fingerprint: sha256:1cbd16a4b0b95be8be1c955f38b9e4345ca3cab778727bc54de10a5da23138fc
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

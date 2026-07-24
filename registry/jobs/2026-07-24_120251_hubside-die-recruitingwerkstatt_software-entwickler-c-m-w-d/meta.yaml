@@ -1,0 +1,26 @@
+schema_version: 2
+id: b3ed037f-aa6f-4f37-8d7a-3e9bf378b42c
+title: Software Entwickler C++ (m/w/d)
+company: hubside - Die Recruitingwerkstatt
+company_url: null
+location: Gröbenzell
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: software-entwickler-c-grobenzell-176040
+  url: https://www.arbeitnow.com/jobs/companies/hubside-die-recruitingwerkstatt/software-entwickler-c-grobenzell-176040
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-24T09:30:29Z'
+discovered_at: '2026-07-24T12:02:51Z'
+updated_at: '2026-07-24T12:02:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T12:02:51Z'
+fingerprint: sha256:4fa0c435e3e6af0894a8c47b772a0b98f5fca22e6503092f6d680b65a4ec0e22
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -69,4 +69,4 @@ Dein "Home" zum "Office" machen, um noch flexibler zu werden - drei Tage vor Ort
 
 Wenn Du ein Organisationstalent mit technischem Know-how bist und gerne Verantwortung übernimmst, dann freuen wir uns auf Deine Bewerbung! 🤩
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

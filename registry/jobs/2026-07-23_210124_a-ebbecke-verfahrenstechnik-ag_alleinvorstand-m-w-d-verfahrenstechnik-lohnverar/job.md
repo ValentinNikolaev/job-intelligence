@@ -1,6 +1,6 @@
 # Alleinvorstand (m/w/d) - Verfahrenstechnik & Lohnverarbeitung - Standorte: Bruchköbel (Hauptsitz), Schöneck (Hauptwerk / Störfallbetrieb), Hirzenhain
 
-Posted: 2026-07-23T16:00:29Z
+Posted: 2026-07-24T09:29:03Z
 
 Über uns und unsere Ziele
 
@@ -34,7 +34,7 @@ Ihre Hauptaufgaben
 
 • Strategie & Marktpräsenz: Strategische Planung und Umsetzung von Wachstumsstrategien. Sie bringen die Ambition mit, Kunden aktiv selbst vor Ort zu besuchen und die AG verstärkt und sichtbar am Markt zu platzieren (die Reisetätigkeit ist aktuell gering, soll aber strategisch ausgebaut werden).
 
-• Operative Gesamtleitung: Führung des täglichen operativen Geschäfts über alle drei Werke hinweg sowie die fachliche und disziplinarische Führung der rund 80 Mitarbeitenden.
+• Operative Gesamtleitung: Führung des täglichen operativen Geschäfts über alle drei Werke hinweg sowie die fachliche und disziplinarische Führung der rund 100 Mitarbeitenden.
 
 • Finanzverantwortung & Treasury: Volle P&L-Verantwortung sowie das aktive Management der bestehenden Finanzierungsstruktur (Bankdarlehen und Leasinglinien) inklusive des Reportings an Banken und Aufsichtsrat.
 
@@ -88,4 +88,4 @@ Zusicherung absoluter Vertraulichkeit (Garantie der Diskretion)
 
 Im Rahmen unseres Rekrutierungsprozesses garantieren wir Ihnen absolute Vertraulichkeit sowie die strikte Wahrung Ihrer Anonymität gegenüber Dritten. Uns übermittelte Sperrvermerke – insbesondere im Hinblick auf ein bestehendes Beschäftigungsverhältnis – werden mit höchster Diskretion und Gewissenhaftigkeit beachtet. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt unter strikter Einhaltung der geltenden Datenschutzvorschriften (DSGVO) und ausschließlich zweckgebunden für dieses Besetzungsverfahren.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

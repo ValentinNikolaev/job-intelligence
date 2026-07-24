@@ -1,0 +1,28 @@
+schema_version: 2
+id: feb30fc9-c45e-4a4e-8542-6309efd384a3
+title: Softwaretrainer (m/w/d)
+company: INNOSYSTEC GmbH
+company_url: null
+location: Salem
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: softwaretrainer-salem-453831
+  url: https://www.arbeitnow.com/jobs/companies/innosystec-gmbh/softwaretrainer-salem-453831
+  metadata:
+    tags:
+    - IT
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T10:30:34Z'
+discovered_at: '2026-07-24T12:02:50Z'
+updated_at: '2026-07-24T12:02:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T12:02:50Z'
+fingerprint: sha256:a2e57b175937fbbcf60cff0036be1127fd645016b6129485074e871b9a8296ad
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

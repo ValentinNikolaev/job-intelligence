@@ -49,4 +49,4 @@ Wir sind ein Dienstleistungsunternehmen im Bereich Kostenoptimierung und Mandant
 
 Dann freuen wir uns auf Ihre Bewerbung mit kurzem Lebenslauf über die Plattform JOIN oder per E-Mail.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

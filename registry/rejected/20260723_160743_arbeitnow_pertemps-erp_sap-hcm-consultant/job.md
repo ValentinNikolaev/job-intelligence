@@ -49,4 +49,4 @@ Dann lass uns über die Möglichkeit bei unserem Klienten sprechen. Gehalt bis z
 
 - Gehalt bis zu 70.000€ (abhängig von Erfahrung)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

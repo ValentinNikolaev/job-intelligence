@@ -1,6 +1,6 @@
 # Application Consultant für ERP-Bausoftware (m/w/d)
 
-Posted: 2026-07-24T06:00:30Z
+Posted: 2026-07-24T10:29:02Z
 
 Wir suchen Dich. Standort: Bielefeld - Vollzeit
 
@@ -8,9 +8,7 @@ Wir suchen Dich. Standort: Bielefeld - Vollzeit
 
 Darum Husemann & Fritz als Arbeitgeber:
 
-Wir sind ein erfolgreiches mittelständisches Softwareunternehmen, das seit über 30 Jahren innovative Lösungen für unsere Kunden entwickelt. Mit über 16.000 Anwendern zählen wir zu den führenden Spitzenanbietern von baubetrieblicher Standardsoftware in Deutschland. Unser Erfolg basiert auf einem motivierten Team mit rund 50
-
-Mitarbeitenden, das gemeinsam anpackt, Verantwortung übernimmt und Freude an neuen Ideen hat. Bei uns zählt nicht nur, was Du kannst – sondern auch, wie Du bist.
+Wir sind ein erfolgreiches mittelständisches Softwareunternehmen, das seit über 30 Jahren innovative Lösungen für unsere Kunden entwickelt. Mit über 16.000 Anwendern zählen wir zu den führenden Spitzenanbietern von baubetrieblicher Standardsoftware in Deutschland. Unser Erfolg basiert auf einem motivierten Team mit rund 50 Mitarbeitenden, das gemeinsam anpackt, Verantwortung übernimmt und Freude an neuen Ideen hat. Bei uns zählt nicht nur, was Du kannst – sondern auch, wie Du bist.
 
 ## Aufgaben
 
@@ -20,9 +18,7 @@ Du möchtest die Digitalisierung der Bauwirtschaft aktiv mitgestalten? Dann bist
 
 - **Implementierung & Einführung**: Du begleitest Kunden bei der Einführung und Anpassung unserer Softwarelösung – von der Anforderungsaufnahme über die Konfiguration bis zur produktiven Nutzung, remote oder vor Ort.
 
-- **Schulung & Enablement**: Du führst Workshops und Schulungen durch (persönlich oder per Microsoft Teams), damit unsere Kunden das volle Potenzial der Software
-
-ausschöpfen und Prozesse eigenständig optimieren können.
+- **Schulung & Enablement**: Du führst Workshops und Schulungen durch (persönlich oder per Microsoft Teams), damit unsere Kunden das volle Potenzial der Software ausschöpfen und Prozesse eigenständig optimieren können.
 
 - **Prozessoptimierung**: Du identifizierst Optimierungspotenziale in Kundenprozessen, erarbeitest Lösungskonzepte und stimmst diese eng mit der Softwareentwicklung sowie dem Support-Team ab
 

@@ -46,4 +46,4 @@ Suchen Sie nach einer flexiblen und ortsunabhängigen Tätigkeit, die Ihre Leide
 
 Gestalten Sie Ihre Karriere flexibel und selbstbestimmt als Freiberufliche Teamleitung (m/w/d) im Homeoffice. Werden Sie Teil eines innovativen, gesundheitsorientierten Unternehmens!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

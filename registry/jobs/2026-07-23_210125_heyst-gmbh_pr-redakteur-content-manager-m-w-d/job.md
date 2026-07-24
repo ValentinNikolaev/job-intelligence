@@ -54,4 +54,4 @@ Du bist ein kommunikatives Schweizer Messer mit einer Leidenschaft für B2B-Them
 
 Alles weitere gibt`s im persönlichen Gespräch. Wir freuen uns auf Deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
