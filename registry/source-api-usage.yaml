@@ -197,8 +197,8 @@ sources:
       errors: 0
       limit_reached: false
   jobicy:
-    total_requests: 17
-    last_run_at: '2026-07-23T21:03:49Z'
+    total_requests: 25
+    last_run_at: '2026-07-24T09:59:50Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -234,9 +234,20 @@ sources:
       rejected: 52
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-24T09:57:20Z'
+      recorded_at: '2026-07-24T09:59:50Z'
+      requests: 8
+      fetched: 87
+      created: 2
+      updated: 1
+      duplicates_merged: 0
+      unchanged: 35
+      rejected: 49
+      errors: 0
+      limit_reached: false
   jooble:
-    total_requests: 15
-    last_run_at: '2026-07-23T21:04:45Z'
+    total_requests: 21
+    last_run_at: '2026-07-24T10:00:29Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -270,5 +281,16 @@ sources:
       duplicates_merged: 0
       unchanged: 0
       rejected: 73
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-07-24T09:57:20Z'
+      recorded_at: '2026-07-24T10:00:29Z'
+      requests: 6
+      fetched: 100
+      created: 2
+      updated: 28
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 70
       errors: 0
       limit_reached: true
