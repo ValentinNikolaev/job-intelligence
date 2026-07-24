@@ -82,4 +82,4 @@ Wellhub is committed to creating a diverse work environment and is proud to be a
 
 Our commitment to inclusion also extends to how we recognize and reward our people. We're proud to be Syndio Fair Pay Certified, reflecting our ongoing dedication to equitable and fair pay practices across our global team. [Read more about it here.](https://www.linkedin.com/posts/wellhub_fairpay-syndio-activity-7407826561531363328-wbN_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAzHQWABKsRqcpvxy4QpDCJNe_szRdC4hgY)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

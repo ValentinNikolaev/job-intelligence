@@ -157,13 +157,13 @@ Docker considers visa sponsorship on a case-by-case basis based on business need
 
 
 
-Canada Salary Range CA$191,700 – CA$309,000 • Offers Equity
+Compensation & Equity
 
-US Salary Range $136,750 – $222,750 • Offers Equity
+Canada: CA$191,700 – CA$309,000 + equity
 
-EU Salary Range €72,064 – €123,750 • Offers Equity
+United States: $136,750 – $222,750 + equity
 
-
+EU: €72,064 – €123,750 + equity
 
 
 

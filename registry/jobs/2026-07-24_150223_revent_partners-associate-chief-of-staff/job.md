@@ -70,4 +70,4 @@ We review applications on a rolling basis and are moving fast, so there is an ad
 
 From there, the process consists of: cultural fit interview with several team members, a case study, and time spent together in person to ensure mutual fit
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

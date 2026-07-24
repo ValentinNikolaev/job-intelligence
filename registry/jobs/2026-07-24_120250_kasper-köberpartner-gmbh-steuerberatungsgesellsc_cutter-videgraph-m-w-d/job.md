@@ -1,6 +1,6 @@
-# Cutter / Videgraph (m/w/d)
+# Cutter / Videograph (m/w/d)
 
-Posted: 2026-07-24T10:00:32Z
+Posted: 2026-07-24T14:29:02Z
 
 ## Deine Aufgaben
 

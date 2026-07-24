@@ -1,0 +1,29 @@
+schema_version: 2
+id: 4c2c359a-eac9-4c1a-8ac2-15eeea2ec6b5
+title: Frontend Engineer (React / TypeScript) (m/f/d)
+company: Persohap GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: frontend-engineer-react-typescript-berlin-39439
+  url: https://www.arbeitnow.com/jobs/companies/persohap-gmbh/frontend-engineer-react-typescript-berlin-39439
+  metadata:
+    tags:
+    - Web Development
+    job_types:
+    - professional / experienced
+published_at: '2026-07-24T15:00:29Z'
+discovered_at: '2026-07-24T18:03:05Z'
+updated_at: '2026-07-24T18:03:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:05Z'
+analysis_priority: 0
+fingerprint: sha256:03cb0bff3e09b286ccba16c4fff9f988dc3ba48088b1994a47cbd78ac20c6c0a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

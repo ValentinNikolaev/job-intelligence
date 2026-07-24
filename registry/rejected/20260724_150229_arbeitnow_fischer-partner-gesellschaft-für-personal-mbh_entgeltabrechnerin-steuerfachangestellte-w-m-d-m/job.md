@@ -95,4 +95,4 @@ Für Sie als Bewerber arbeiten wir **kostenfrei und mit höchster Diskretion**. 
 
 **Unser Qualitätsversprechen**: Wir beantworten jede Bewerbung sehr zuverlässig innerhalb von max. drei Tagen, i.d.R. schneller. Wenn Sie also nach drei Tagen nichts von uns gehört haben, kann es technische Gründe dafür geben. Bitte haken Sie in diesem Fall bei uns nach.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

@@ -54,4 +54,4 @@ Wir möchten an dieser Stelle ausdrücklich darauf hinweisen, dass du herzlich b
 
 Für deine Bewerbung reiche deinen Lebenslauf ein oder hinterlasse uns dein LinkedIn-Profil.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

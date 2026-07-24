@@ -56,4 +56,4 @@ Sie kennen jemanden der auf die Stellenausschreibung passt? Dann holen Sie sich 
 
 - **1000€** Werbeprämie bei erfolgreicher Empfehlung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

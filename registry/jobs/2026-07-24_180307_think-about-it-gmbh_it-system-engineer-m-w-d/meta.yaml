@@ -1,0 +1,27 @@
+schema_version: 2
+id: cce8a83d-7525-47c9-802f-c2ed812deedd
+title: IT-System Engineer (m/w/d)
+company: think about IT GmbH
+company_url: null
+location: Bochum
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: it-system-engineer-bochum-458328
+  url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/it-system-engineer-bochum-458328
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-24T14:31:08Z'
+discovered_at: '2026-07-24T18:03:07Z'
+updated_at: '2026-07-24T18:03:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:07Z'
+analysis_priority: 0
+fingerprint: sha256:9a470c1c286e09af1b87b0a2b2aac4fec42f77de5d8c1ab05323d09f187451a6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

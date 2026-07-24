@@ -16,4 +16,4 @@ Solide Grundlagen in einem Teil unseres Stacks, Eigeninitiative, und Lust, in ei
 
 Viel Gestaltungsspielraum, kurze Wege, direkter Draht zum Gründerteam, und die Chance, ein Produkt von früh an mitzuprägen. Remote-freundlich. Je nachdem was zu dir passt, als Werkstudent:in, im Praktikum oder auf Rechnung, und für eine Kernrolle mit Equity-Perspektive über VSOP. Wir sind pre-revenue und ehrlich damit, wir bieten echte Beteiligung und Verantwortung statt eines hohen Fixgehalts.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

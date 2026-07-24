@@ -1,0 +1,30 @@
+schema_version: 2
+id: 0da6eb70-a3e1-4474-93d8-e7615d7a6ce5
+title: 'Leiter Operations & Produktion (Site Director) | Region: Bodensee, Deutschland'
+company: CONCAPE
+company_url: null
+location: Kempten
+remote: false
+employment_type: geschäftsleitung
+sources:
+- source: arbeitnow
+  source_job_id: leiter-operations-produktion-site-director-region-bodensee-deutschland-kempten-139611
+  url: https://www.arbeitnow.com/jobs/companies/concape/leiter-operations-produktion-site-director-region-bodensee-deutschland-kempten-139611
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+    job_types:
+    - geschäftsleitung
+published_at: '2026-07-24T16:00:45Z'
+discovered_at: '2026-07-24T18:02:57Z'
+updated_at: '2026-07-24T18:02:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:02:57Z'
+analysis_priority: 0
+fingerprint: sha256:a8914588cb11ce3b6735ab43e67d3ad4257aa4dc4d6465b254f1dc498d056c70
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

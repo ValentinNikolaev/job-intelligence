@@ -72,4 +72,4 @@ Wir treffen Architekturentscheidungen selbst und kurz. Neue Technologien setzen 
 
 - Gegenseitige Code Reviews sind Standard; AI-unterstütztes Arbeiten ist erwünscht (Claude Code, Cursor & Co.)
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -74,4 +74,4 @@ Interesse? Ganz wunderbar! Wir freuen uns auf Ihre Bewerbung.
 
 Bei der Auswahl von Bewerberinnen und Bewerbern legen wir Wert auf Chancengleichheit. Bei gleicher Eignung werden Bewerbungen von Menschen mit Behinderungen besonders berücksichtigt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

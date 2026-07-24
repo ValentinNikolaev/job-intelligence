@@ -1,0 +1,27 @@
+schema_version: 2
+id: afa0284c-14ff-41ce-b1db-e90f1ddd9f04
+title: Team Lead Accounting (m/w/d)
+company: think about IT GmbH
+company_url: null
+location: Bochum
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: team-lead-accounting-bochum-321826
+  url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/team-lead-accounting-bochum-321826
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-24T14:31:07Z'
+discovered_at: '2026-07-24T18:03:10Z'
+updated_at: '2026-07-24T18:03:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:10Z'
+analysis_priority: 0
+fingerprint: sha256:02b4b5c50d5f091a345df42831a64ea02ece2e617bfb0dd9d77d2fa9ccdb60a4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

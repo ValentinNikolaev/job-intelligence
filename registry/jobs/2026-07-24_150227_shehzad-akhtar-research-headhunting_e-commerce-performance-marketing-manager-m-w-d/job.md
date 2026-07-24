@@ -70,4 +70,4 @@ Dann freuen wir uns auf Ihre Bewerbung oder einen ersten vertraulichen Austausch
 
 Selbstverständlich behandeln wir Ihre Bewerbung streng vertraulich.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

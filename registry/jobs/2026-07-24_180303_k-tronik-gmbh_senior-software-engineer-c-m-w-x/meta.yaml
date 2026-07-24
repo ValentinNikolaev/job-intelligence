@@ -1,0 +1,29 @@
+schema_version: 2
+id: 189b3bd1-b286-4574-b591-844420b90f1b
+title: Senior Software Engineer C++ (m/w/x)
+company: K-tronik GmbH
+company_url: null
+location: Kiel
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-software-engineer-c-kiel-106994
+  url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/senior-software-engineer-c-kiel-106994
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T15:30:43Z'
+discovered_at: '2026-07-24T18:03:03Z'
+updated_at: '2026-07-24T18:03:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:03Z'
+analysis_priority: 0
+fingerprint: sha256:5b0bea2a3e2af81ae585fde6b297f667618969484e68254f3f8ba0163ec2fe64
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

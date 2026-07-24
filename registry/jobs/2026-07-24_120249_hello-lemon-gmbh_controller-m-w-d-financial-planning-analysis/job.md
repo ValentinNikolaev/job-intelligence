@@ -1,8 +1,8 @@
 # Controller (m/w/d) Financial Planning & Analysis
 
-Posted: 2026-07-24T10:30:35Z
+Posted: 2026-07-24T14:59:04Z
 
-Sie möchten Ihre analytischen Fähigkeiten im Controlling einsetzen und aktiv an Budgetplanung, Forecasts und aussagekräftigen Finanzanalysen mitwirken? Für ein international tätiges und zukunftsorientiertes Unternehmen aus der Tiergesundheitsbranche suchen wir zum nächstmöglichen Zeitpunkt einen Financial Analyst (m/w/d) in Vollzeit am Standort Düsseldorf.
+Sie möchten Ihre analytischen Fähigkeiten im Controlling einsetzen und aktiv an Budgetplanung, Forecasts und aussagekräftigen Finanzanalysen mitwirken? Für ein international tätiges und zukunftsorientiertes Unternehmen aus der Pharmabranche suchen wir zum nächstmöglichen Zeitpunkt einen Financial Analyst (m/w/d) in Vollzeit am Standort Düsseldorf.
 
 Unser Kunde ist ein international erfolgreiches Unternehmen aus einer forschungsintensiven und nachhaltigen Zukunftsbranche. Ein modernes Arbeitsumfeld, kurze Entscheidungswege und die kontinuierliche fachliche sowie persönliche Weiterentwicklung der Mitarbeitenden stehen dabei im Mittelpunkt.
 
@@ -26,7 +26,7 @@ Unser Kunde ist ein international erfolgreiches Unternehmen aus einer forschungs
 
 ## Qualifikation
 
-- Sie verfügen über ein erfolgreich abgeschlossenes Studium der Wirtschaftswissenschaften mit Schwerpunkt Controlling, Rechnungswesen, Wirtschaftsprüfung oder über eine vergleichbare Qualifikation.
+- Sie verfügen über ein erfolgreich abgeschlossenes Studium der Wirtschaftswissenschaften mit Schwerpunkt Sales Controlling, Rechnungswesen, Wirtschaftsprüfung oder über eine vergleichbare Qualifikation.
 
 - Sie bringen mindestens ein bis zwei Jahre Berufserfahrung im Finanzbereich, Controlling oder Financial Planning & Analysis mit.
 
@@ -48,21 +48,25 @@ Unser Kunde ist ein international erfolgreiches Unternehmen aus einer forschungs
 
 - Sie sparen wertvolle Zeit, da wir die komplette Kommunikation mit den Unternehmen für Sie übernehmen.
 
-- Unbefristete Festanstellung in einem forschungsorientierten und zukunftssicheren Unternehmen
+- Sie profitieren von einer unbefristeten Festanstellung in einem forschungsorientierten und zukunftssicheren Unternehmen.
 
-- Sie erhalten ein Jahresbruttogehalt von bis zu 56.000 Euro zuzüglich attraktiver Bonusleistungen.
+- Sie erhalten ein attraktives Fixgehalt von 48.000 € bis 60.000 € brutto pro Jahr zuzüglich Bonusleistungen.
 
-- Kollegiales Arbeitsumfeld mit flachen Hierarchien und kurzen Entscheidungswegen
+Sie arbeiten 37,5 Stunden pro Woche.
 
-- Individuelle Förderung Ihrer beruflichen und persönlichen Entwicklung
+- Sie haben die Möglichkeit, an bis zu zehn Tagen pro Monat im Homeoffice zu arbeiten.
 
-- Möglichkeit zum mobilen Arbeiten
+- Sie erhalten 30 Tage Urlaub pro Jahr.
 
-- Moderner Arbeitsplatz mit guter Anbindung an den öffentlichen Nahverkehr
+- Sie arbeiten in einem kollegialen Umfeld mit flachen Hierarchien und kurzen Entscheidungswegen.
 
-- Zuschuss zur betrieblichen Altersversorgung
+- Sie erhalten individuelle Möglichkeiten zur fachlichen und persönlichen Weiterentwicklung.
 
-- Zuschuss zum ÖPNV-Ticket sowie attraktive JobRad-Angebote
+- Sie arbeiten an einem modernen Arbeitsplatz mit guter Anbindung an den öffentlichen Nahverkehr.
+
+- Sie erhalten einen Zuschuss zur betrieblichen Altersversorgung.
+
+- Sie profitieren von einem Zuschuss zum ÖPNV-Ticket sowie von attraktiven JobRad-Angeboten.
 
 Klingt das nach Ihrer nächsten Herausforderung? Dann bewerben Sie sich jetzt direkt!
 

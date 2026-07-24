@@ -91,4 +91,4 @@ A fully remote position within Germany — work from wherever you study
 
 No formal cover letter required — a short note on why this role fits your current situation is enough.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

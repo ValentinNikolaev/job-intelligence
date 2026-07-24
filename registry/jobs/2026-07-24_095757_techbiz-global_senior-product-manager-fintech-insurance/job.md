@@ -46,4 +46,4 @@ Problem Solving: You thrive in complex situations, consciously and thoughtfully 
 
 Collaboration: Proven ability to work closely with engineering, QA, design, and operations teams to deliver value incrementally and iteratively.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

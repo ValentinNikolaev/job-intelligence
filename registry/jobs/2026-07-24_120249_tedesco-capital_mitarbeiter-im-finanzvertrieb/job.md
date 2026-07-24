@@ -106,4 +106,4 @@ Wenn Sie den Anspruch haben, erstklassige Beratung mit Herz und Weitblick zu ver
 
 **Bewerbung gerne über unsere Homepage** KARRIERE | TEDESCO. CAPITAL
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

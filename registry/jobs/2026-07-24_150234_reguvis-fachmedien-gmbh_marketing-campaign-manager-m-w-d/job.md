@@ -40,4 +40,4 @@ Du willst Verantwortung übernehmen und Kampagnen steuern, die wirklich Wirkung 
 
 Wir freuen uns über Deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

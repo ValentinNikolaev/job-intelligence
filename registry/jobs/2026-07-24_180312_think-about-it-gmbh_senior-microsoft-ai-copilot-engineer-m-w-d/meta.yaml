@@ -1,0 +1,27 @@
+schema_version: 2
+id: 4acd2028-e7d1-46b5-99a6-9d2f9d700138
+title: Senior Microsoft AI & Copilot Engineer (m/w/d)
+company: think about IT GmbH
+company_url: null
+location: Nuremberg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-microsoft-ai-copilot-engineer-nuremberg-318113
+  url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/senior-microsoft-ai-copilot-engineer-nuremberg-318113
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-24T14:31:07Z'
+discovered_at: '2026-07-24T18:03:12Z'
+updated_at: '2026-07-24T18:03:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:12Z'
+analysis_priority: 0
+fingerprint: sha256:670c583599d3c745538d27ea783b9c94ba9680017e84e958d4153ad39b3503f1
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

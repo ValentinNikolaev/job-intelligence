@@ -1,6 +1,6 @@
 # Lifestyle Consultant (m/w) | Berlin-Tiergarten
 
-Posted: 2026-07-24T11:30:33Z
+Posted: 2026-07-24T15:59:02Z
 
 Die Gewichtsmedizin steht an einem Wendepunkt. Moderne GLP-1-Therapien geben vielen Menschen erstmals eine realistische Chance, ihr Gewicht langfristig zu reduzieren und dadurch Beweglichkeit, Selbstvertrauen und Lebensqualität zurückzugewinnen.
 

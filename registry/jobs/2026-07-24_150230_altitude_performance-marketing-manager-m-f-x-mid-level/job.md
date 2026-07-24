@@ -82,4 +82,4 @@ Klingt nach dir?
 
 Dann freuen wir uns auf deine Bewerbung. Zeig uns gern, welche Kanäle du besonders gut beherrschst, welche Projekte dich geprägt haben und wie du Wachstum messbar machst und schicke uns deinen CV.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

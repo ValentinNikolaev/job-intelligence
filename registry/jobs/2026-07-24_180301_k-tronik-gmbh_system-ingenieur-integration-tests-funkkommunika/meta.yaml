@@ -1,0 +1,29 @@
+schema_version: 2
+id: 8241d781-f4fe-43e7-bb75-8786bf99e1c9
+title: System Ingenieur- Integration & Tests / Funkkommunikationssysteme (m/w/x)
+company: K-tronik GmbH
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: system-ingenieur-integration-tests-funkkommunikationssysteme-stuttgart-11139
+  url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/system-ingenieur-integration-tests-funkkommunikationssysteme-stuttgart-11139
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T15:30:43Z'
+discovered_at: '2026-07-24T18:03:01Z'
+updated_at: '2026-07-24T18:03:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:01Z'
+analysis_priority: 0
+fingerprint: sha256:12924fa8cee32d026ed04ba15e24b6cf339453c49c2033a44b3db16fc8a1ac41
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 7315cbc3-2855-4597-9635-d6636e7e2ef9
+title: Systems Engineer COMINT/CESM/CECM (m/w/x)
+company: K-tronik GmbH
+company_url: null
+location: Kiel
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: systems-engineer-comint-cesm-cecm-kiel-167828
+  url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/systems-engineer-comint-cesm-cecm-kiel-167828
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - berufserfahren
+published_at: '2026-07-24T14:31:06Z'
+discovered_at: '2026-07-24T18:03:14Z'
+updated_at: '2026-07-24T18:03:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T18:03:14Z'
+analysis_priority: 0
+fingerprint: sha256:231d47119032c028fd0eacb7455e95a8a93e24ef09053d4152ebb57839e82a0a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

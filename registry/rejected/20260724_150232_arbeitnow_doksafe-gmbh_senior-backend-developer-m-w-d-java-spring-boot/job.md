@@ -73,4 +73,4 @@ Du liebst es, komplexe Systeme zu entwickeln, die nicht nur performant, sondern 
 
 Werde Teil unseres agilen Teams und revolutioniere mit uns die Arbeitswelt in Anwaltskanzleien. Gestalte Deine Zukunft bei **dokSAFE GmbH** und bewirb Dich jetzt - wir freuen uns auf Dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
