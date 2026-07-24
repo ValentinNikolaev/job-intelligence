@@ -298,6 +298,8 @@ validates those local drafts, converts the final CV and cover letter, and publis
 registry/jobs/<job-directory>/application/
 ├── cv.md
 ├── cv.docx
+├── CV_ValentinNikolaev_<company>_<RoleAndFocus>.md
+├── CV_ValentinNikolaev_<company>_<RoleAndFocus>.docx
 ├── cover-letter.md
 ├── cover-letter.docx
 ├── analysis.md
@@ -313,7 +315,9 @@ The publisher validates all four Markdown outputs before converting the final CV
 cover letter through the installed host-side `md-to-docx` Codex skill. Set
 `MD_TO_DOCX_SCRIPT` only if the skill cannot be found under
 `CODEX_HOME/skills/md-to-docx/`. Markdown remains canonical; DOCX is generated only after
-the package passes validation.
+the package passes validation. The short `cv.*` files remain stable internal artifacts,
+and each package also includes upload-friendly CV copies named like
+`CV_ValentinNikolaev_grafana_SeniorBackendEngineerDatabasesLokiIngest.docx`.
 
 `manifest.yaml` records hashes of the candidate sources, vacancy, supplied company
 content, prompt, and model. Unchanged packages are skipped unless `--force` is supplied.

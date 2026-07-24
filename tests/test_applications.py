@@ -16,6 +16,7 @@ from jobintel.applications import (
     ApplicationError,
     ApplicationGenerator,
     CodexApplicationDraftClient,
+    _cv_export_stem,
     _publish_staged_package,
     resolve_job_directories,
 )
@@ -171,6 +172,8 @@ class ApplicationTests(unittest.TestCase):
         expected = {
             "cv.md",
             "cv.docx",
+            "CV_ValentinNikolaev_example_SeniorBackendEngineer.md",
+            "CV_ValentinNikolaev_example_SeniorBackendEngineer.docx",
             "cover-letter.md",
             "cover-letter.docx",
             "analysis.md",
@@ -190,6 +193,19 @@ class ApplicationTests(unittest.TestCase):
         manifest = yaml.safe_load((application / "manifest.yaml").read_text(encoding="utf-8"))
         self.assertEqual("test-model", manifest["model"])
         self.assertEqual("2026-07-22T20:00:00Z", manifest["generated_at"])
+        self.assertEqual(
+            "CV_ValentinNikolaev_example_SeniorBackendEngineer",
+            manifest["cv_export_stem"],
+        )
+
+    def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
+        self.assertEqual(
+            "CV_ValentinNikolaev_grafana_SeniorBackendEngineerDatabasesLokiIngest",
+            _cv_export_stem(
+                company="Grafana Labs",
+                title="Senior Backend Engineer - Databases - Loki Ingest | Germany | Remote",
+            ),
+        )
 
     def test_conversion_failure_preserves_previous_complete_package(self) -> None:
         original = self._generator(FakeClient(), FakeConverter())

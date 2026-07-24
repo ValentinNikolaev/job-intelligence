@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -25,6 +26,52 @@ APPLICATION_FILES = {
 
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
+_CV_OWNER_STEM = "ValentinNikolaev"
+_ROLE_NOISE_TERMS = {
+    "hybrid",
+    "remote",
+    "tags",
+    "new",
+}
+_ROLE_LOCATION_TERMS = {
+    "argentina",
+    "australia",
+    "austria",
+    "belgium",
+    "brazil",
+    "canada",
+    "denmark",
+    "europe",
+    "france",
+    "germany",
+    "ireland",
+    "israel",
+    "italy",
+    "japan",
+    "netherlands",
+    "poland",
+    "portugal",
+    "singapore",
+    "spain",
+    "sweden",
+    "switzerland",
+    "uk",
+    "united kingdom",
+    "united states",
+    "usa",
+    "us",
+}
+_COMPANY_SUFFIX_TERMS = {
+    "ag",
+    "gmbh",
+    "inc",
+    "incorporated",
+    "labs",
+    "limited",
+    "llc",
+    "ltd",
+    "srl",
+}
 
 _REQUIRED_HEADINGS = {
     "analysis_markdown": (
@@ -202,6 +249,10 @@ class ApplicationGenerator:
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            "cv_export_stem": _cv_export_stem(
+                company=str(meta.get("company") or ""),
+                title=str(meta.get("title") or ""),
+            ),
         }
         application_dir = _application_directory(directory, meta)
         manifest_path = application_dir / "manifest.yaml"
@@ -215,6 +266,7 @@ class ApplicationGenerator:
                 vacancy=vacancy,
             )
         )
+        cv_export_files = _cv_export_files(meta)
 
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
         try:
@@ -224,12 +276,16 @@ class ApplicationGenerator:
             self.converter.convert(
                 staging / "cover-letter.md", staging / "cover-letter.docx"
             )
+            shutil.copyfile(staging / "cv.md", staging / cv_export_files["markdown"])
+            shutil.copyfile(staging / "cv.docx", staging / cv_export_files["docx"])
             manifest = {
                 **expected_versions,
                 "generated_at": _utc_iso(self._clock()),
                 "files": [
                     "cv.md",
                     "cv.docx",
+                    cv_export_files["markdown"],
+                    cv_export_files["docx"],
                     "cover-letter.md",
                     "cover-letter.docx",
                     "analysis.md",
@@ -265,6 +321,10 @@ class ApplicationGenerator:
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            "cv_export_stem": _cv_export_stem(
+                company=str(meta.get("company") or ""),
+                title=str(meta.get("title") or ""),
+            ),
         }
         application_dir = _application_directory(directory, meta)
         return _package_is_current(
@@ -414,7 +474,62 @@ def _package_is_current(
         "analysis.md",
         "interview-preparation.md",
     ]
+    files = manifest.get("files")
+    if isinstance(files, list):
+        required.extend(
+            filename
+            for filename in files
+            if isinstance(filename, str) and filename.startswith("CV_")
+        )
     return all((application_dir / filename).is_file() for filename in required)
+
+
+def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:
+    stem = _cv_export_stem(
+        company=str(meta.get("company") or ""),
+        title=str(meta.get("title") or ""),
+    )
+    return {
+        "markdown": f"{stem}.md",
+        "docx": f"{stem}.docx",
+    }
+
+
+def _cv_export_stem(*, company: str, title: str) -> str:
+    company_part = _compact_company_slug(company) or "company"
+    role_part = _pascal_role_slug(title) or "Role"
+    return f"CV_{_CV_OWNER_STEM}_{company_part}_{role_part}"
+
+
+def _compact_company_slug(value: str) -> str:
+    tokens = re.findall(r"[A-Za-z0-9]+", value.casefold())
+    filtered = [token for token in tokens if token not in _COMPANY_SUFFIX_TERMS]
+    return "".join(filtered or tokens)
+
+
+def _pascal_role_slug(value: str) -> str:
+    segments = re.split(r"\s+\|\s+", value)
+    kept: list[str] = []
+    for segment in segments:
+        if _is_role_noise_segment(segment):
+            continue
+        kept.append(segment)
+    if not kept:
+        kept = segments[:1]
+    words = re.findall(r"[A-Za-z0-9]+", " ".join(kept))
+    filtered = [word for word in words if word.casefold() not in _ROLE_NOISE_TERMS]
+    return "".join(word[:1].upper() + word[1:] for word in filtered)
+
+
+def _is_role_noise_segment(value: str) -> bool:
+    words = re.findall(r"[A-Za-z]+", value.casefold())
+    if not words:
+        return True
+    if any(word not in _ROLE_NOISE_TERMS for word in words) and not all(
+        word in _ROLE_LOCATION_TERMS or word in _ROLE_NOISE_TERMS for word in words
+    ):
+        return False
+    return True
 
 
 def _publish_staged_package(staging: Path, target: Path, files: Sequence[str]) -> None:
