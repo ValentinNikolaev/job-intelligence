@@ -1,6 +1,6 @@
 schema_version: 2
 id: 42468628-0f31-432d-9e5f-058b94554fae
-title: Apply now
+title: Graduate / Junior Software Engineer
 company: ShippyPro
 company_url: https://www.shippypro.com
 location: Remote
@@ -18,13 +18,13 @@ sources:
       and may involve occasional HQ meetings.
 published_at: null
 discovered_at: '2026-07-24T21:03:31Z'
-updated_at: '2026-07-24T21:03:31Z'
+updated_at: '2026-07-24T21:06:07Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-24T21:03:31Z'
 analysis_priority: 100
-fingerprint: sha256:c5e33d087a797bdd067fd60cb5511a589e398ea09fb1bced63c176849ac6fd58
+fingerprint: sha256:7bd9f4884fecd8b7cbe984c60c9a5fb30587f50bae8940319a76f1d3cd948ac6
 data_source: custom
 content_source: custom
 company_content_source: null

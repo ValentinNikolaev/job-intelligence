@@ -1,7 +1,6 @@
 schema_version: 2
 id: 06740816-8ba7-4ea3-913b-167b0521fd3d
-title: Senior Node.js Developer We're looking for engineers who have experience with
-  Nodejs and join our professional team. Read more and apply here! View Position
+title: Senior Node.js Developer
 company: Jagaad S.r.l.
 company_url: https://jagaad.com
 location: Remote
@@ -19,13 +18,13 @@ sources:
       Developer is a recurring vacancy.
 published_at: null
 discovered_at: '2026-07-24T21:03:38Z'
-updated_at: '2026-07-24T21:03:38Z'
+updated_at: '2026-07-24T21:06:12Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-24T21:03:38Z'
 analysis_priority: 100
-fingerprint: sha256:7cb70ef76c9dfc46c0fcaccd17e2ac6bf8a9e2c737060dc03f21160fd0e80a94
+fingerprint: sha256:5b602ec3c73b1a183f93dd2d5cdbb2a838d6f4d60330a8ce37698842b6aa572c
 data_source: custom
 content_source: custom
 company_content_source: null

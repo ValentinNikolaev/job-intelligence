@@ -657,3 +657,19 @@ sources:
       rejected: 71
       errors: 0
       limit_reached: true
+  custom:
+    total_requests: 22
+    last_run_at: '2026-07-24T21:06:40Z'
+    last_status: failed
+    runs:
+    - run_started_at: '2026-07-24T21:06:03Z'
+      recorded_at: '2026-07-24T21:06:40Z'
+      requests: 22
+      fetched: 11
+      created: 0
+      updated: 8
+      duplicates_merged: 0
+      unchanged: 1
+      rejected: 2
+      errors: 4
+      limit_reached: false

@@ -274,8 +274,9 @@ def normalize_linked_job(
     page: PageData,
     analysis_priority: int,
 ) -> NormalizedJob:
-    title = _best_title(label, page.title)
-    description = page.description or f"{title} at {source.company}."
+    description = page.description
+    title = _best_title(label, page.title, description, source, url)
+    description = description or f"{title} at {source.company}."
     return NormalizedJob(
         source="custom",
         source_job_id=_job_identity(url),
@@ -422,13 +423,59 @@ def _title_allowed(source: CustomSource, title: str) -> bool:
     return any(term.casefold() in searchable for term in source.title_terms)
 
 
-def _best_title(label: str, page_title: str | None) -> str:
+def _best_title(
+    label: str,
+    page_title: str | None,
+    description: str,
+    source: CustomSource,
+    url: str,
+) -> str:
+    body_title = _title_from_description(description, source)
+    if body_title:
+        return body_title
     label = re.sub(r"\s+", " ", label).strip(" -|")
-    if label:
+    if _usable_title(label, source):
         return label
-    if page_title:
-        return re.sub(r"\s+", " ", page_title).strip(" -|")
-    return "Open role"
+    page_title = re.sub(r"\s+", " ", page_title or "").strip(" -|")
+    if _usable_title(page_title, source):
+        return page_title
+    return _title_from_url(url) or "Open role"
+
+
+def _title_from_description(description: str, source: CustomSource) -> str | None:
+    for raw_line in description.splitlines()[:30]:
+        line = _clean_title_line(raw_line)
+        if _usable_title(line, source):
+            return line
+    return None
+
+
+def _clean_title_line(value: str) -> str:
+    line = re.sub(r"^[#>*\-\s]+", "", value)
+    line = re.sub(r"\s+", " ", line).strip(" -|")
+    line = re.sub(r"(?i)^opening for\s+", "", line).strip()
+    if "|" in line:
+        line = line.split("|", 1)[0].strip()
+    return line
+
+
+def _usable_title(value: str, source: CustomSource) -> bool:
+    if not value:
+        return False
+    generic = {"apply", "apply now", "jobs", "offices", "read more", "view position"}
+    normalized = value.casefold().strip(" .!:-")
+    if normalized in generic:
+        return False
+    if len(value) > 100 or len(value.split()) > 14:
+        return False
+    return _title_allowed(source, value)
+
+
+def _title_from_url(url: str) -> str | None:
+    slug = urlsplit(url).path.rstrip("/").split("/")[-1]
+    slug = re.sub(r"[-_]\d+$", "", slug)
+    slug = re.sub(r"[-_]+", " ", slug).strip()
+    return slug.title() if slug else None
 
 
 def _metadata(source: CustomSource) -> dict[str, Any]:

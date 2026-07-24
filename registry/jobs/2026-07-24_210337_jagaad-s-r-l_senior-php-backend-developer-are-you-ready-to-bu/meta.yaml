@@ -1,8 +1,6 @@
 schema_version: 2
 id: 8db79901-4a06-487f-923b-dfa7645b8527
-title: Senior PHP Backend Developer Are you ready to build High-quality code, respect
-  roadmaps, and sprints as well as develop APIs to be used on both front-end and mobile
-  apps? Read more and apply here! View Position
+title: Senior PHP Backend Developer
 company: Jagaad S.r.l.
 company_url: https://jagaad.com
 location: Remote
@@ -20,13 +18,13 @@ sources:
       Developer is a recurring vacancy.
 published_at: null
 discovered_at: '2026-07-24T21:03:37Z'
-updated_at: '2026-07-24T21:03:37Z'
+updated_at: '2026-07-24T21:06:12Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-24T21:03:37Z'
 analysis_priority: 100
-fingerprint: sha256:4498b931f3de96590342b9e53c9511f1a10c3956f6afb92f671c40bc56df444e
+fingerprint: sha256:8ef37b60848c6f351e1cd0c5bb213006a074f67f9fad805c32551f3df449fb1b
 data_source: custom
 content_source: custom
 company_content_source: null

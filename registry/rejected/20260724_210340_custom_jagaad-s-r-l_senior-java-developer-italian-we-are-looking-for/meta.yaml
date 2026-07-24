@@ -2,14 +2,11 @@ schema_version: 1
 source: custom
 source_job_id: url-sha256:97d159c701601daf6a476c1eebc26307ad9fac0c61630d5bc010610117fdfd35
 source_url: https://jagaad.com/careers/senior-java-developer-italian/
-title: Senior Java Developer (Italian) We are looking for a Senior Java Developer
-  to join our team and build functional applications and websites. Are you ready to
-  write clean and testable code and also join our amazing team? Read more and apply
-  here! View Position
+title: Senior Java Developer (Italian)
 company: Jagaad S.r.l.
 location: Remote
 published_at: null
 rejection_category: language_requirement
 rejection_reason: hard Italian language requirement without English green light
-updated_at: '2026-07-24T21:03:40Z'
+updated_at: '2026-07-24T21:06:14Z'
 rejected_at: '2026-07-24T21:03:40Z'

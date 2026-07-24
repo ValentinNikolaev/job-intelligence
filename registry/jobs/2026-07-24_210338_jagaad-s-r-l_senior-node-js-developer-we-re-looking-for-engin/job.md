@@ -1,4 +1,4 @@
-# Senior Node.js Developer We're looking for engineers who have experience with Nodejs and join our professional team. Read more and apply here! View Position
+# Senior Node.js Developer
 
 Opening for Senior Node.js Developer | Jagaad
 

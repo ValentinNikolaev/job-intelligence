@@ -1,6 +1,6 @@
 schema_version: 2
 id: 3db84c9b-cb72-4fc5-b850-bb297620b0a1
-title: Apply now
+title: Senior Software Engineer
 company: ShippyPro
 company_url: https://www.shippypro.com
 location: Remote
@@ -18,13 +18,13 @@ sources:
       and may involve occasional HQ meetings.
 published_at: null
 discovered_at: '2026-07-24T21:03:30Z'
-updated_at: '2026-07-24T21:03:30Z'
+updated_at: '2026-07-24T21:06:06Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-24T21:03:30Z'
 analysis_priority: 100
-fingerprint: sha256:c5e33d087a797bdd067fd60cb5511a589e398ea09fb1bced63c176849ac6fd58
+fingerprint: sha256:35f73f9f839ea5cc97613ce2a5678aaf2482d476b52f99d07109059e085ac417
 data_source: custom
 content_source: custom
 company_content_source: null

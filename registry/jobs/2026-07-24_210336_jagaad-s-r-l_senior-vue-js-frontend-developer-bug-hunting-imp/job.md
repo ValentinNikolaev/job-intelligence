@@ -1,4 +1,4 @@
-# Senior Vue.js Frontend Developer Bug hunting, implementation of new features and Testing are like bread and butter to you? Great! Read more about this opportunity and join us! View Position
+# Senior Vue.js Frontend Developer
 
 Opening for Senior Vue.js Frontend Developer | Jagaad
 

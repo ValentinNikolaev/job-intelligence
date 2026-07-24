@@ -151,6 +151,53 @@ class CustomCollectorTests(unittest.TestCase):
         self.assertTrue(all(job.analysis_priority == 100 for job in jobs))
         self.assertEqual(3, collector.api_requests)
 
+    def test_detail_page_heading_wins_over_generic_apply_link(self) -> None:
+        self._write_config()
+        pages = {
+            "https://careers.acme.test/jobs": (
+                '<a href="/jobs/software-engineering-team-lead-311256">Apply now</a>'
+            ),
+            "https://careers.acme.test/jobs/software-engineering-team-lead-311256": (
+                "<html><title>Apply now</title><main>"
+                "<h1>Software Engineering Team Lead</h1><p>Lead backend services.</p>"
+                "</main></html>"
+            ),
+        }
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            return FakeResponse(pages[request.full_url])
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
+        jobs = list(collector.fetch())
+
+        self.assertEqual(1, len(jobs))
+        self.assertEqual("Software Engineering Team Lead", jobs[0].title)
+
+    def test_detail_page_heading_wins_over_long_card_text(self) -> None:
+        self._write_config()
+        pages = {
+            "https://careers.acme.test/jobs": (
+                '<a href="/jobs/senior-php-backend-developer/">'
+                "Senior PHP Backend Developer Are you ready to build APIs for "
+                "front-end and mobile apps? Read more and apply here! View Position"
+                "</a>"
+            ),
+            "https://careers.acme.test/jobs/senior-php-backend-developer/": (
+                "<html><title>Opening for Senior PHP Backend Developer | Acme</title>"
+                "<main><h1>Opening for Senior PHP Backend Developer | Acme</h1>"
+                "<p>Build PHP services.</p></main></html>"
+            ),
+        }
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            return FakeResponse(pages[request.full_url])
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
+        jobs = list(collector.fetch())
+
+        self.assertEqual(1, len(jobs))
+        self.assertEqual("Senior PHP Backend Developer", jobs[0].title)
+
     def test_custom_source_replaces_aggregator_content_and_raises_priority(self) -> None:
         root = Path(self.temp.name) / "registry"
         now = datetime(2026, 7, 24, 12, 0, tzinfo=timezone.utc)

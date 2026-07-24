@@ -1,4 +1,4 @@
-# Senior PHP Backend Developer Are you ready to build High-quality code, respect roadmaps, and sprints as well as develop APIs to be used on both front-end and mobile apps? Read more and apply here! View Position
+# Senior PHP Backend Developer
 
 Opening for Senior PHP Backend Developer | Jagaad
 

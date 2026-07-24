@@ -1,4 +1,4 @@
-# Senior Java Developer We are looking for a Senior Java Developer to join our team and build functional applications and websites. Are you ready to write clean and testable code and also join our amazing team? Read more and apply here! View Position
+# Senior Java Developer
 
 Opening for Senior Java Developer | Jagaad
 

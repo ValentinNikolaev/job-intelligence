@@ -1,9 +1,6 @@
 schema_version: 2
 id: cb3231d2-4a44-4447-b9af-18acf371d360
-title: Senior Java Developer We are looking for a Senior Java Developer to join our
-  team and build functional applications and websites. Are you ready to write clean
-  and testable code and also join our amazing team? Read more and apply here! View
-  Position
+title: Senior Java Developer
 company: Jagaad S.r.l.
 company_url: https://jagaad.com
 location: Remote
@@ -21,13 +18,13 @@ sources:
       Developer is a recurring vacancy.
 published_at: null
 discovered_at: '2026-07-24T21:03:39Z'
-updated_at: '2026-07-24T21:03:39Z'
+updated_at: '2026-07-24T21:06:13Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-24T21:03:39Z'
 analysis_priority: 100
-fingerprint: sha256:97a2d88d5c5eabb03a6f3e59a724166b2e28e11da59d49a0b9ced896e51889ef
+fingerprint: sha256:168ff1a0fed8c5351e76e8b9d32e63ff6d855ca47b8434bae613519dc42dea14
 data_source: custom
 content_source: custom
 company_content_source: null

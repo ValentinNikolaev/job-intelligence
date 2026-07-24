@@ -1,8 +1,6 @@
 schema_version: 2
 id: 0a675702-423f-4a40-bfe6-af644975ad06
-title: Senior Vue.js Frontend Developer Bug hunting, implementation of new features
-  and Testing are like bread and butter to you? Great! Read more about this opportunity
-  and join us! View Position
+title: Senior Vue.js Frontend Developer
 company: Jagaad S.r.l.
 company_url: https://jagaad.com
 location: Remote
@@ -20,13 +18,13 @@ sources:
       Developer is a recurring vacancy.
 published_at: null
 discovered_at: '2026-07-24T21:03:36Z'
-updated_at: '2026-07-24T21:03:36Z'
+updated_at: '2026-07-24T21:06:11Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-24T21:03:36Z'
 analysis_priority: 100
-fingerprint: sha256:569496c1965fa6196841eca283c25a6e758b8c8a57d781ae80946e8d5faa7fe1
+fingerprint: sha256:e17da15f6de9e59522ef0cee63fed20e6660e24d3dfdd07c8d7587fbdf9af818
 data_source: custom
 content_source: custom
 company_content_source: null
