@@ -37,12 +37,21 @@ class QueueItem:
             "company": self.vacancy.company,
             "title": self.vacancy.title,
             "status": self.vacancy.status,
+            "analysis_priority": self.vacancy.analysis_priority,
             "score": self.vacancy.score,
             "workflow": self.workflow,
             "estimated_input_tokens": self.estimated_input_tokens,
             "budget_status": self.budget_status,
             "reasons": list(self.reasons),
         }
+
+
+def _queue_priority(item: QueueItem) -> tuple[int, str, str]:
+    return (
+        item.vacancy.analysis_priority,
+        item.vacancy.discovered_at,
+        item.vacancy.directory.name,
+    )
 
 
 def workflow_summary(
@@ -186,9 +195,8 @@ def queue_items(
                 reasons=_queue_reasons(workflow, vacancy),
             )
         )
-        if limit is not None and len(rows) >= limit:
-            break
-    return rows
+    rows.sort(key=_queue_priority, reverse=True)
+    return rows[:limit] if limit is not None else rows
 
 
 def queue_response(

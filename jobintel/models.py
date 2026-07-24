@@ -34,6 +34,7 @@ class NormalizedJob:
     published_at: str | None = None
     company_description: str | None = None
     source_metadata: Mapping[str, Any] = field(default_factory=dict)
+    analysis_priority: int = 0
 
     def validate(self) -> None:
         required = {
@@ -46,6 +47,10 @@ class NormalizedJob:
         missing = [name for name, value in required.items() if not str(value).strip()]
         if missing:
             raise ValueError(f"missing required job fields: {', '.join(missing)}")
+        if isinstance(self.analysis_priority, bool) or not isinstance(self.analysis_priority, int):
+            raise ValueError("analysis_priority must be an integer from 0 to 100")
+        if not 0 <= self.analysis_priority <= 100:
+            raise ValueError("analysis_priority must be an integer from 0 to 100")
 
 
 @dataclass(frozen=True, slots=True)

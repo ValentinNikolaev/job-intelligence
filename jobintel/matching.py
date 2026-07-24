@@ -70,6 +70,7 @@ _MATCH_META_FIELDS = (
     "remote",
     "employment_type",
     "published_at",
+    "analysis_priority",
     "data_source",
 )
 
@@ -312,7 +313,7 @@ def build_analysis_pack(
     )
     profile, profile_version = analyzer._load_profile()
     items: list[dict[str, Any]] = []
-    for directory in analyzer.resolve("all"):
+    for directory in _priority_sorted_directories(analyzer.resolve("all")):
         if triage_skip and triage_skip(directory):
             continue
         if analyzer.is_current(directory):
@@ -491,6 +492,28 @@ def _compact_vacancy(meta: Mapping[str, Any], job_text: str) -> dict[str, Any]:
     if sources:
         metadata["sources"] = sources
     return {"metadata": metadata, "job_description": job_text.strip()}
+
+
+def _priority_sorted_directories(directories: Sequence[Path]) -> list[Path]:
+    return sorted(directories, key=_analysis_queue_key, reverse=True)
+
+
+def _analysis_queue_key(directory: Path) -> tuple[int, str, str]:
+    try:
+        meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
+    except MatchError:
+        return (0, "", directory.name)
+    return (
+        _analysis_priority(meta.get("analysis_priority")),
+        str(meta.get("discovered_at") or ""),
+        directory.name,
+    )
+
+
+def _analysis_priority(value: Any) -> int:
+    if isinstance(value, bool) or not isinstance(value, int):
+        return 0
+    return value if 0 <= value <= 100 else 0
 
 
 def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:

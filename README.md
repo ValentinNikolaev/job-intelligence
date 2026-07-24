@@ -119,6 +119,7 @@ python run.py jobicy
 python run.py jooble
 python run.py ashby
 python run.py ashby discover https://jobs.ashbyhq.com/satispay/some-job-id
+python run.py add-manual --input .codex-work/manual-job/example.yaml
 python run.py all
 python run.py reindex
 python run.py status <job-directory-or-vacancy-id> <status>
@@ -196,6 +197,27 @@ Allowed values are `found`, `reviewing`, `prepared`, `applied`, `interview`,
 changes status based on generated artifacts.
 
 The registry uses exact `(source, source_job_id)` identity first. For a new source record, it uses a SHA-256 fingerprint of normalized company, title, and location as a candidate match. Two IDs from the same source never merge by fingerprint, and ambiguous fingerprint matches stay separate. See [the focused architecture proposal](docs/collection-architecture.md) for the complete model and tradeoffs.
+
+Manually sourced vacancies can be published from a Codex- or human-prepared YAML
+draft:
+
+```yaml
+source_url: "https://example.test/jobs/42"
+company: "Priority Co"
+title: "Platform Engineer"
+description: |
+  Full extracted job description.
+analysis_priority: 100
+remote: true
+```
+
+```text
+python run.py add-manual --input .codex-work/manual-job/priority-co.yaml
+```
+
+`analysis_priority` is optional and ranges from `0` to `100`. It affects only
+analysis queue order for `pending analyze`, sealed analysis packs, and queue APIs;
+it must not be treated as match evidence or added to the match score.
 
 Collected vacancy directories are not ignored, so the registry can be inspected, diffed, and committed if desired. Review source terms and the sensitivity of your search data before publishing it.
 

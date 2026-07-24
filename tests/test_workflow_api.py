@@ -128,8 +128,32 @@ class WorkflowApiTests(unittest.TestCase):
         self.assertEqual(1, summary["pending_analyze"])
         self.assertEqual(1, summary["pending_prepare"])
         self.assertEqual(self.pending.directory, analyze["items"][0]["directory"])
+        self.assertEqual(0, analyze["items"][0]["analysis_priority"])
         self.assertEqual(self.preparable.directory, prepare["items"][0]["directory"])
         self.assertEqual("ok", prepare["items"][0]["budget_status"])
+
+    def test_analyze_queue_orders_priority_items_first(self) -> None:
+        registry = Registry(
+            self.registry_root,
+            clock=lambda: datetime(2026, 7, 22, tzinfo=timezone.utc),
+            id_factory=lambda: "vacancy-priority",
+        )
+        priority = registry.upsert(
+            NormalizedJob(
+                source="manual",
+                source_job_id="priority",
+                source_url="https://example.test/priority",
+                title="Platform Engineer",
+                company="Priority Co",
+                description="Build platforms.",
+                analysis_priority=100,
+            )
+        )
+
+        analyze = queue_response("analyze", self.project, self.registry_root, [self.profile], limit=1)
+
+        self.assertEqual(priority.directory, analyze["items"][0]["directory"])
+        self.assertEqual(100, analyze["items"][0]["analysis_priority"])
 
     def test_source_usage_and_catalog_contracts(self) -> None:
         ApiUsageLog(self.registry_root / "source-api-usage.yaml").record(

@@ -73,6 +73,33 @@ class MatchingBatchTests(unittest.TestCase):
                 )
             self.assertFalse((registry_root / "jobs" / created.directory / "match.yaml").exists())
 
+    def test_analysis_pack_orders_priority_vacancies_first(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            ids = iter(("normal", "priority"))
+            now = datetime(2026, 7, 23, tzinfo=timezone.utc)
+            registry = Registry(registry_root, clock=lambda: now, id_factory=lambda: next(ids))
+            normal = registry.upsert(NormalizedJob("direct", "1", "https://e/1", "Backend", "Example", "Build APIs."))
+            priority = registry.upsert(
+                NormalizedJob(
+                    "manual",
+                    "2",
+                    "https://e/2",
+                    "Platform Engineer",
+                    "Priority Co",
+                    "Build platforms.",
+                    analysis_priority=100,
+                )
+            )
+
+            pack = build_analysis_pack(registry_root, [profile], limit=1)
+
+            self.assertEqual(priority.directory, pack.items[0]["directory"])
+            self.assertNotEqual(normal.directory, pack.items[0]["directory"])
+
 
 if __name__ == "__main__":
     unittest.main()

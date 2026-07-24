@@ -70,6 +70,38 @@ class CliTests(unittest.TestCase):
                         ),
                     )
 
+    def test_add_manual_publishes_manual_vacancy_with_priority(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            draft = root / "manual.yaml"
+            draft.write_text(
+                "\n".join(
+                    [
+                        "source_url: https://example.test/jobs/42",
+                        "company: Priority Co",
+                        "title: Platform Engineer",
+                        "description: Build internal platforms.",
+                        "analysis_priority: 100",
+                        "remote: true",
+                        "",
+                    ]
+                ),
+                encoding="utf-8",
+            )
+
+            output = StringIO()
+            with redirect_stdout(output):
+                exit_code = main(["add-manual", "--registry", str(registry_root), "--input", str(draft)])
+
+            self.assertEqual(0, exit_code)
+            self.assertIn("Manual job created", output.getvalue())
+            meta_path = next((registry_root / "jobs").glob("*/meta.yaml"))
+            meta = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+            self.assertEqual("manual", meta["data_source"])
+            self.assertEqual(100, meta["analysis_priority"])
+            self.assertEqual("manual", meta["sources"][0]["source"])
+
     def test_collector_limit_is_per_source(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

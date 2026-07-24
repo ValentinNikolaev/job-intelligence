@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -30,7 +31,7 @@ from .matching import (
     load_analysis_pack,
     publish_analysis_batch,
 )
-from .models import CollectorSummary
+from .models import CollectorSummary, NormalizedJob
 from .prefilter import RejectedRegistry, prefilter_job
 from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
@@ -48,7 +49,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -110,6 +111,20 @@ def main(argv: list[str] | None = None) -> int:
         mode = "monthly" if result.monthly else "single-file"
         changed = ", ".join(result.changed_files) or "none"
         print(f"Catalog: {result.vacancies} vacancies, {mode}, changed: {changed}")
+        return 0
+    if target in {"add-manual", "manual"}:
+        if args.arguments or args.force or args.profile or args.workflow or not args.input:
+            print("Usage: python run.py add-manual --input <manual-job.yaml>", file=sys.stderr)
+            return 2
+        try:
+            payload = _read_yaml_file(args.input, "manual job draft")
+            job = _manual_job_from_payload(payload)
+            result = Registry(registry_dir).upsert(job)
+            Registry(registry_dir).regenerate_index()
+        except Exception as exc:
+            print(f"Manual job error: {exc}", file=sys.stderr)
+            return 1
+        print(f"Manual job {result.status}: {result.directory} ({result.vacancy_id})")
         return 0
     if target == "status":
         if (
@@ -437,6 +452,76 @@ def _read_yaml_file(path: Path, label: str) -> dict[str, Any]:
     return loaded
 
 
+def _manual_job_from_payload(payload: dict[str, Any]) -> NormalizedJob:
+    source_url = _required_manual_text(payload, "source_url")
+    title = _required_manual_text(payload, "title")
+    company = _required_manual_text(payload, "company")
+    description = _required_manual_text(payload, "description")
+    source_job_id = _optional_manual_text(payload.get("source_job_id")) or _manual_source_job_id(source_url)
+    source_metadata: dict[str, Any] = {}
+    for key in ("source_name", "source_notes", "apply_url", "contact", "extraction_notes"):
+        value = _optional_manual_text(payload.get(key))
+        if value is not None:
+            source_metadata[key] = value
+    job = NormalizedJob(
+        source="manual",
+        source_job_id=source_job_id,
+        source_url=source_url,
+        title=title,
+        company=company,
+        description=description,
+        company_url=_optional_manual_text(payload.get("company_url")),
+        location=_optional_manual_text(payload.get("location")),
+        remote=_optional_manual_bool(payload.get("remote")),
+        employment_type=_optional_manual_text(payload.get("employment_type")),
+        published_at=_optional_manual_text(payload.get("published_at")),
+        company_description=_optional_manual_text(payload.get("company_description")),
+        source_metadata=source_metadata,
+        analysis_priority=_manual_priority(payload.get("analysis_priority")),
+    )
+    job.validate()
+    return job
+
+
+def _required_manual_text(payload: dict[str, Any], field: str) -> str:
+    value = _optional_manual_text(payload.get(field))
+    if value is None:
+        raise ValueError(f"manual job draft missing required field: {field}")
+    return value
+
+
+def _optional_manual_text(value: Any) -> str | None:
+    if value is None:
+        return None
+    if not isinstance(value, str):
+        raise ValueError("manual job text fields must be strings")
+    cleaned = value.strip()
+    return cleaned or None
+
+
+def _optional_manual_bool(value: Any) -> bool | None:
+    if value is None:
+        return None
+    if isinstance(value, bool):
+        return value
+    raise ValueError("manual job remote must be true, false, or omitted")
+
+
+def _manual_priority(value: Any) -> int:
+    if value is None:
+        return 0
+    if isinstance(value, bool) or not isinstance(value, int):
+        raise ValueError("manual job analysis_priority must be an integer from 0 to 100")
+    if not 0 <= value <= 100:
+        raise ValueError("manual job analysis_priority must be an integer from 0 to 100")
+    return value
+
+
+def _manual_source_job_id(source_url: str) -> str:
+    digest = hashlib.sha256(source_url.encode("utf-8")).hexdigest()[:16]
+    return f"manual-{digest}"
+
+
 def _run_api(
     args: argparse.Namespace,
     project_root: Path,
@@ -759,6 +844,8 @@ def _run_pending(
             print("--pack is valid only for pending analyze", file=sys.stderr)
             return 2
         directories = resolve_job_directories(registry_dir, selector)
+        if stage == "analyze":
+            directories = sorted(directories, key=_pending_analysis_queue_key, reverse=True)
         for directory in directories:
             if stage == "analyze":
                 if should_skip_model(directory):
@@ -847,6 +934,17 @@ def _match_score(directory: Path) -> int:
     if isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100:
         raise ValueError(f"match analysis has invalid score: {path}")
     return score
+
+
+def _pending_analysis_queue_key(directory: Path) -> tuple[int, str, str]:
+    try:
+        meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+    except ValueError:
+        return (0, "", directory.name)
+    priority = meta.get("analysis_priority")
+    if isinstance(priority, bool) or not isinstance(priority, int) or not 0 <= priority <= 100:
+        priority = 0
+    return (priority, str(meta.get("discovered_at") or ""), directory.name)
 
 
 def _ineligible_score_message(policy: WorkflowPolicy, workflow: str, score: int) -> str:

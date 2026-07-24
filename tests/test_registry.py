@@ -192,6 +192,28 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual("acme", source["metadata"]["board"])
         self.assertEqual("EUR", source["metadata"]["compensation"]["currency"])
 
+    def test_analysis_priority_is_stored_and_only_increases_on_merge(self) -> None:
+        self.registry.upsert(
+            make_job(
+                source="manual",
+                source_job_id="manual-1",
+                source_url="https://careers.acme.test/jobs/manual-1",
+                company="Acme",
+                analysis_priority=100,
+            )
+        )
+        self.registry.upsert(
+            make_job(
+                source="jooble",
+                source_job_id="jooble-1",
+                source_url="https://jooble.test/1",
+                company="Acme",
+                analysis_priority=10,
+            )
+        )
+        meta = self._meta()
+        self.assertEqual(100, meta["analysis_priority"])
+
     def test_index_is_sorted_escaped_and_not_rewritten_when_current(self) -> None:
         ids = iter(("old-id", "new-id"))
         registry = Registry(self.root, clock=lambda: self.now, id_factory=lambda: next(ids))

@@ -39,6 +39,7 @@ class CatalogVacancy:
     discovered_at: str
     updated_at: str | None
     status_changed_at: str
+    analysis_priority: int
     score: int | None
     recommendation: str | None
     sources: tuple[dict[str, Any], ...]
@@ -55,6 +56,7 @@ class CatalogVacancy:
             "discovered_at": self.discovered_at,
             "updated_at": self.updated_at,
             "status_changed_at": self.status_changed_at,
+            "analysis_priority": self.analysis_priority,
             "score": self.score,
             "recommendation": self.recommendation,
             "sources": list(self.sources),
@@ -103,6 +105,7 @@ def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
                 discovered_at=discovered_at,
                 updated_at=_optional_timestamp(meta.get("updated_at"), "updated_at", meta_path),
                 status_changed_at=status_changed_at,
+                analysis_priority=_analysis_priority(meta.get("analysis_priority")),
                 score=match["score"] if match else None,
                 recommendation=match["recommendation"] if match else None,
                 sources=_source_refs(meta["sources"], meta_path),
@@ -214,6 +217,12 @@ def _optional_timestamp(value: Any, field: str, path: Path) -> str | None:
     if value in (None, ""):
         return None
     return _timestamp(value, field, path)
+
+
+def _analysis_priority(value: Any) -> int:
+    if isinstance(value, bool) or not isinstance(value, int):
+        return 0
+    return value if 0 <= value <= 100 else 0
 
 
 def _timestamp(value: Any, field: str, path: Path) -> str:

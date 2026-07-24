@@ -24,6 +24,7 @@ SOURCE_RANKS = {
     "jobicy": 10,
     "jooble": 10,
     "direct": 20,
+    "manual": 25,
     "ashby": 30,
 }
 
@@ -231,6 +232,7 @@ class Registry:
             "updated_at": now,
             "status": "found",
             "status_history": [{"status": "found", "changed_at": now}],
+            "analysis_priority": job.analysis_priority,
             "fingerprint": fingerprint,
             "data_source": job.source.strip().lower(),
             "content_source": job.source.strip().lower() if job.description.strip() else None,
@@ -319,6 +321,8 @@ class Registry:
                 meta[field] = incoming
         if replace_data:
             meta["data_source"] = source
+        if job.analysis_priority > _analysis_priority(meta.get("analysis_priority")):
+            meta["analysis_priority"] = job.analysis_priority
 
         # An authoritative same-source record may legitimately change its identity fields.
         if not is_merge:
@@ -378,6 +382,12 @@ class Registry:
 
 def _source_rank(source: str | None) -> int:
     return SOURCE_RANKS.get(str(source or "").casefold(), 0)
+
+
+def _analysis_priority(value: Any) -> int:
+    if isinstance(value, bool) or not isinstance(value, int):
+        return 0
+    return value if 0 <= value <= 100 else 0
 
 
 def _migrate_metadata(meta_path: Path, loaded: dict[str, Any]) -> dict[str, Any]:
