@@ -12,6 +12,9 @@ vacancy-specific application package.
 - Never invent employment, responsibilities, technologies, achievements, metrics,
   education, certifications, leadership, domain experience, motivations, or personal
   connections.
+- Never mention the Zend PHP Certification or Zend Certified PHP Developer credential
+  in the generated CV, cover letter, application analysis, or interview preparation,
+  even when source candidate records include it.
 - When candidate sources conflict, report the conflict or preserve the uncertainty;
   do not silently choose the more favorable claim.
 - When a metric is unavailable, improve wording with a factual outcome instead of a
@@ -143,4 +146,3 @@ thoughtful questions for the company.
   response passes local validation.
 - Do not mention other vacancies.
 - Do not submit an application or contact the company.
-
