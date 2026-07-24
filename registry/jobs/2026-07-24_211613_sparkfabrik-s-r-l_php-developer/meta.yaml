@@ -1,0 +1,30 @@
+schema_version: 2
+id: 7fca643d-af81-436e-9dc7-c2c095622527
+title: PHP Developer
+company: SparkFabrik S.r.l.
+company_url: https://www.sparkfabrik.com
+location: Remote Italy
+remote: true
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:b37172b7ff4cfdb3362455db2326e62c928377cbdb3c301950863873581f13e3
+  url: https://careers.sparkfabrik.com/it/php-developer/
+  metadata:
+    source_name: sparkfabrik
+    board_url: https://careers.sparkfabrik.com
+    source_type: custom careers CMS
+    remote_policy_note: PHP Developer is published as a permanent profile with Junior,
+      Professional, and Senior levels.
+published_at: null
+discovered_at: '2026-07-24T21:16:13Z'
+updated_at: '2026-07-24T21:16:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-24T21:16:13Z'
+analysis_priority: 100
+fingerprint: sha256:14507678cffae8ff65bed8d0f36febc815f06c8dd35d65c1f1c8271606e927fc
+data_source: custom
+content_source: custom
+company_content_source: null

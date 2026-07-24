@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 334
+Total vacancies: 337
 
-- Found: 334
+- Found: 337
 
 ## Monthly catalogs
 
@@ -14,6 +14,9 @@ Total vacancies: 334
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-24 | [Nord Security](../registry/jobs/2026-07-24_211618_nord-security_backend-engineer-mid-senior-php-go-payments-team/) | [Backend Engineer \| Mid - Senior \| PHP + Go \| Payments Team](../registry/jobs/2026-07-24_211618_nord-security_backend-engineer-mid-senior-php-go-payments-team/job.md) | Remote Poland | Custom | Found | 2026-07-24 | [Custom](https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f) | — | — | — | — | — |
+| 2026-07-24 | [Lithos](../registry/jobs/2026-07-24_211614_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-07-24_211614_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-07-24 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
+| 2026-07-24 | [SparkFabrik S.r.l.](../registry/jobs/2026-07-24_211613_sparkfabrik-s-r-l_php-developer/) | [PHP Developer](../registry/jobs/2026-07-24_211613_sparkfabrik-s-r-l_php-developer/job.md) | Remote Italy | Custom | Found | 2026-07-24 | [Custom](https://careers.sparkfabrik.com/it/php-developer/) | — | — | — | — | — |
 | 2026-07-24 | [Jagaad S.r.l.](../registry/jobs/2026-07-24_210339_jagaad-s-r-l_senior-java-developer-we-are-looking-for-a-senio/) | [Senior Java Developer](../registry/jobs/2026-07-24_210339_jagaad-s-r-l_senior-java-developer-we-are-looking-for-a-senio/job.md) | Remote | Custom | Found | 2026-07-24 | [Custom](https://jagaad.com/careers/senior-java-developer/) | — | — | — | — | — |
 | 2026-07-24 | [Jagaad S.r.l.](../registry/jobs/2026-07-24_210338_jagaad-s-r-l_senior-node-js-developer-we-re-looking-for-engin/) | [Senior Node.js Developer](../registry/jobs/2026-07-24_210338_jagaad-s-r-l_senior-node-js-developer-we-re-looking-for-engin/job.md) | Remote | Custom | Found | 2026-07-24 | [Custom](https://jagaad.com/careers/senior-nodejs-developer/) | — | — | — | — | — |
 | 2026-07-24 | [Jagaad S.r.l.](../registry/jobs/2026-07-24_210337_jagaad-s-r-l_senior-php-backend-developer-are-you-ready-to-bu/) | [Senior PHP Backend Developer](../registry/jobs/2026-07-24_210337_jagaad-s-r-l_senior-php-backend-developer-are-you-ready-to-bu/job.md) | Remote | Custom | Found | 2026-07-24 | [Custom](https://jagaad.com/careers/senior-php-backend-developer/) | — | — | — | — | — |
@@ -31,6 +34,3 @@ Total vacancies: 334
 | 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210230_my-humancapital-gmbh_projektcontroller-m-w-d/) | [Projektcontroller (m/w/d)](../registry/jobs/2026-07-24_210230_my-humancapital-gmbh_projektcontroller-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/projektcontroller-munich-478468) | — | — | — | — | — |
 | 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210229_my-humancapital-gmbh_objektverwalter-facility-management-m-w-d/) | [Objektverwalter Facility Management (m/w/d)](../registry/jobs/2026-07-24_210229_my-humancapital-gmbh_objektverwalter-facility-management-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/objektverwalter-facility-management-munich-356398) | — | — | — | — | — |
 | 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210228_my-humancapital-gmbh_technischer-property-manager-m-w-d/) | [Technischer Property Manager (m/w/d)](../registry/jobs/2026-07-24_210228_my-humancapital-gmbh_technischer-property-manager-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/technischer-property-manager-munich-158068) | — | — | — | — | — |
-| 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210227_my-humancapital-gmbh_technischer-objektverwalter-m-w-d/) | [Technischer Objektverwalter (m/w/d)](../registry/jobs/2026-07-24_210227_my-humancapital-gmbh_technischer-objektverwalter-m-w-d/job.md) | Stuttgart | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/technischer-objektverwalter-stuttgart-163478) | — | — | — | — | — |
-| 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210226_my-humancapital-gmbh_projektmanager-vertragsmanagement-m-w-d/) | [Projektmanager Vertragsmanagement (m/w/d)](../registry/jobs/2026-07-24_210226_my-humancapital-gmbh_projektmanager-vertragsmanagement-m-w-d/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/projektmanager-vertragsmanagement-munich-297407) | — | — | — | — | — |
-| 2026-07-24 | [MY Humancapital GmbH](../registry/jobs/2026-07-24_210224_my-humancapital-gmbh_anlagenbuchhalter-m-w-d-assetmanagement/) | [Anlagenbuchhalter (m/w/d) Assetmanagement](../registry/jobs/2026-07-24_210224_my-humancapital-gmbh_anlagenbuchhalter-m-w-d-assetmanagement/job.md) | Munich | Arbeitnow | Found | 2026-07-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/anlagenbuchhalter-assetmanagement-munich-189973) | — | — | — | — | — |

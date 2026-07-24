@@ -92,39 +92,39 @@ sources:
       - symfony
     seed_jobs:
       - title: PHP Developer
-        url: https://careers.sparkfabrik.com/it/php-developer
-  - name: bitbull
-    company: BitBull
-    board_url: https://bitbull.it/team
-    company_url: https://bitbull.it
+        url: https://careers.sparkfabrik.com/it/php-developer/
+  - name: lithos
+    company: Lithos
+    board_url: https://lithos.it/work-with-us/senior-full-stack-developer
+    company_url: https://lithos.it
     source_type: custom HTML
     remote: true
-    location: Remote Italy timezone
-    notes: Distributed remote team; candidates should be within one hour of the Italian time zone. BitBull is part of BIP Group.
+    location: Oderzo / Remote
+    notes: Current direct company posting for a Senior Full Stack Developer & IT Project Leader, with PHP/Laravel and full-remote option.
     title_terms:
-      - aws
       - backend
       - developer
-      - magento
+      - full stack
+      - laravel
       - php
-      - shopify
       - software
-  - name: spreaker
-    company: Spreaker
-    board_url: https://careers.spreaker.com/opportunities
-    company_url: https://careers.spreaker.com
-    source_type: WordPress/custom HTML
+      - vue
+    seed_jobs:
+      - title: Senior Full Stack Developer & IT Project Leader
+        url: https://lithos.it/work-with-us/senior-full-stack-developer
+  - name: nordsecurity
+    company: Nord Security
+    board_url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
+    company_url: https://nordsecurity.com
+    source_type: custom HTML
     remote: true
-    location: Remote
-    notes: Fully remote since 2015; kept for recurring monitoring even when engineering roles are closed.
+    location: Remote Poland
+    notes: Current direct company posting for Backend Engineer, PHP + Go, with Docker/Kubernetes tooling.
     title_terms:
-      - backend
-      - developer
-      - engineer
-      - kubernetes
-      - node
-      - php
-      - software
+      - backend engineer | mid - senior | php + go | payments team
+    seed_jobs:
+      - title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
+        url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
   - name: userbot-neuraltech
     company: Userbot / Neuraltech
     board_url: https://userbot.ai/it/jobs-opportunities
@@ -162,19 +162,11 @@ sources:
       - vue
   - name: refactory
     company: Refactory S.r.l.
-    board_url: https://refactory-project.com/join-the-team
-    company_url: https://refactory-project.com
+    board_url: https://www.refactory-project.com/join-the-team/
+    company_url: https://www.refactory-project.com
     source_type: custom HTML
     remote: true
     location: Italy
     notes: Low-priority monitoring source with a general application form when no vacancies are open.
     title_terms:
-      - aws
-      - backend
-      - developer
-      - engineer
-      - laravel
-      - php
-      - symfony
-      - vue
-      - yii
+      - refactory-open-role-sentinel
