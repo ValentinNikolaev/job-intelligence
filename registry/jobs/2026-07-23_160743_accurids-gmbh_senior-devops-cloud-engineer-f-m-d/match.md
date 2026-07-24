@@ -1,18 +1,20 @@
 # Match Analysis
 
-**Score:** 88/100  
-**Recommendation:** Strong Match
+**Score:** 64/100  
+**Recommendation:** Possible Match
 
-Excellent match for AWS cloud operations and platform reliability, including Kubernetes, CI/CD, GitOps, observability, and incident response.
+Relevant cloud-native operations background through AWS, Kubernetes, Helm, ArgoCD, CI/CD, and observability, but a primarily DevOps role is only partially evidenced.
 
 ## Why it matches
 
-- AWS; Kubernetes/EKS-adjacent operations; GitHub Actions/ArgoCD/Helm; production reliability; backend development.
+- Kubernetes migration and deployment tooling
+- AWS and CI/CD experience
+- Production reliability and observability
 
 ## Gaps
 
-- Customer on-premise operations and some named tools are not evidenced.
+- Dedicated senior DevOps ownership and breadth of cloud platform administration are not fully evidenced
 
 ## Concerns
 
-- Cologne/on-premise customer support and German-language requirements should be confirmed.
+- German language or location requirements may affect fit if required

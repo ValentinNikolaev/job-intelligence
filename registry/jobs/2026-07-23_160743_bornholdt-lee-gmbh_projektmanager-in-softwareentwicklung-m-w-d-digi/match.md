@@ -1,18 +1,23 @@
 # Match Analysis
 
-**Score:** 38/100  
-**Recommendation:** Weak Match
+**Score:** 48/100  
+**Recommendation:** Possible Match
 
-The candidate has technical leadership and agile delivery exposure, but not the required client-facing software project-management and budget-control background.
+Software delivery leadership and agile planning are relevant, but dedicated project-management, budget control, German fluency, and Hamburg presence are not evidenced.
 
 ## Why it matches
 
-- Agile planning; roadmap and release coordination; stakeholder communication; technical project delivery.
+- Agile planning and roadmap support
+- Cross-functional technical communication
+- Delivery ownership and process improvement
 
 ## Gaps
 
-- Agency/client project management, budgets, forecasting, capacity planning, and German proficiency are not evidenced.
+- Budget
+- forecasting
+- and capacity-planning ownership are not evidenced
+- Agency or digital-product project-management background is not evidenced
 
 ## Concerns
 
-- The role is project management rather than hands-on backend engineering.
+- Verhandlungssichere Deutschkenntnisse and Hamburg availability are unconfirmed
