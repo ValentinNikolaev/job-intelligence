@@ -1,0 +1,18 @@
+score: 42
+recommendation: weak_match
+summary: Senior Node.js Developer aligns with the candidate profile at a score of
+  42/100 based on documented backend experience and the role requirements.
+strengths:
+- 15+ years of backend software engineering experience
+- Strong PHP, Go, AWS, APIs, and production reliability background
+gaps:
+- Node.js is not listed as a primary candidate technology
+- Recent experience is centered on Go and PHP
+concerns: []
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-07-24T21:22:14Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2a8a46f28451f05578599ec1f1d79807d8468cb88bd0870939093128944fea28
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low
