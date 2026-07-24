@@ -1,0 +1,21 @@
+score: 84
+recommendation: strong_match
+summary: Excellent match for a fully remote Golang engineering role, supported by
+  extensive Go, cloud, backend, and distributed-systems experience.
+strengths:
+- Go backend development and scalable API experience.
+- AWS, Kubernetes, CI/CD, event-driven architecture, and operational reliability.
+- More than 15 years of software engineering experience with senior and lead responsibilities.
+gaps:
+- The supplied vacancy text does not specify a particular product domain or detailed
+  technology stack.
+concerns:
+- Canonical may apply geographic or timezone constraints not visible in the supplied
+  text.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-24T15:23:41Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:7e65f56382a6907cae0913903e55be3181eeb2eafb182dbb06ee2d2e4cf966c2
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low

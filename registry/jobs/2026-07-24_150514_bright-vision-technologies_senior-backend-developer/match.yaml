@@ -1,0 +1,21 @@
+score: 72
+recommendation: match
+summary: Relevant senior remote backend opportunity with good alignment to cloud platforms,
+  shared services, APIs, and production engineering.
+strengths:
+- Senior backend and platform engineering experience.
+- AWS, Kubernetes, CI/CD, observability, performance optimization, and reliability.
+- Experience building foundational services used by other engineering teams.
+gaps:
+- The supplied text does not establish the full required language stack or product
+  domain.
+- Location eligibility for a remote role based in New Jersey is not specified.
+concerns:
+- Remote roles may still require U.S. employment authorization or timezone overlap.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-24T15:23:41Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2589624d5542ea6de24b91dc1b9265bd607b4027d059eebf6b37cb56b82d4884
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low

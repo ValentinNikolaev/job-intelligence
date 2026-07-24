@@ -1,0 +1,21 @@
+score: 5
+recommendation: not_match
+summary: The role requires senior direct marketing, campaign management, event marketing,
+  CRM, and German-market communications rather than backend engineering.
+strengths:
+- The candidate has analytical, automation, and cross-functional delivery experience.
+gaps:
+- No five years of direct marketing, event marketing, HubSpot, SEO/SEA, or campaign
+  ownership is documented.
+- German-language marketing capability is not established.
+concerns:
+- The fundamental role family is unrelated to the candidate's documented engineering
+  career.
+hard_rejection: true
+hard_rejection_reason: Mandatory senior direct-marketing experience is unsupported
+  and the role is fundamentally incompatible with the candidate profile.
+analyzed_at: '2026-07-24T15:23:41Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e8927f7ebc653a9080587082802ea1b103d4b0e9fd55d02fe9271898609d4366
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low

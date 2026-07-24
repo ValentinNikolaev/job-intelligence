@@ -1,0 +1,21 @@
+score: 20
+recommendation: not_match
+summary: Technical communication is adjacent to the candidate's background, but this
+  is a 10–15 hour community role requiring fluent German and local access near Dülmen.
+strengths:
+- Strong technical background and experience explaining backend and cloud systems.
+gaps:
+- No confident written German proficiency is documented.
+- The candidate's senior full-time engineering profile does not support the working-student
+  or minijob format.
+- Residence near Münster/Dülmen is not established.
+concerns:
+- Occasional local meetings and German-language community work are material requirements.
+hard_rejection: true
+hard_rejection_reason: Fluent German and local availability are essential requirements
+  not supported by the candidate profile.
+analyzed_at: '2026-07-24T15:23:41Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:227b4f47ded45d784a115ba25e9a845c8827571d092f9274a6eefcfc3ddc35e7
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low
