@@ -1,0 +1,17 @@
+score: 24
+recommendation: not_match
+summary: AWS/backend experience does not match this onsite Azure and Microsoft 365
+  role.
+strengths:
+- AWS and Kubernetes
+gaps:
+- No Azure or Microsoft 365 evidence
+concerns:
+- Onsite German location
+hard_rejection: true
+hard_rejection_reason: Essential Azure expertise is unsupported and the role is onsite.
+analyzed_at: '2026-07-24T19:25:08Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:8c62d1e6089d5435f9806c3517966dd4830ee4c3171e6a26700dcacc0b7a1a24
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low

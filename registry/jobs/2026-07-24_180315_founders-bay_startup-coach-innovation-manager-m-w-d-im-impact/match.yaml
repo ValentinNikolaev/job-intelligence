@@ -1,0 +1,17 @@
+score: 38
+recommendation: weak_match
+summary: Technical leadership transfers, but the role is primarily startup coaching
+  rather than backend engineering.
+strengths:
+- Technical leadership
+gaps:
+- No accelerator coaching evidence
+concerns:
+- Role differs from core engineering profile
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-24T19:25:08Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9b612f1f8d29ea4683f1245e261d7d3c97bf1cf0c9c5fa3ee440fa0062d8dd05
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low

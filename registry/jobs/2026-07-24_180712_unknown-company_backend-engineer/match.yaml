@@ -1,0 +1,17 @@
+score: 82
+recommendation: strong_match
+summary: Strong fit for remote Go backend work with AWS, APIs, automation, and reliability
+  experience.
+strengths:
+- Production Go backend experience
+gaps:
+- Detailed product context is limited
+concerns:
+- Cross-border employment is unspecified
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-24T19:25:08Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:de7e02cbbfd3eff93c1aee8927d99e130f78977d7e63cf8acd506bacb7d200cc
+prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+model: codex:gpt-5.6-luna:low
