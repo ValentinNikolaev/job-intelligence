@@ -7,7 +7,7 @@ Source API → collector → normalized job → deduplication → registry/jobs 
 ```
 
 The current MVP implements Adzuna, Arbeitnow, Himalayas, Jobicy, Jooble, public
-Ashby job-board collectors, and custom company-board monitoring.
+Ashby and Greenhouse job-board collectors, and custom company-board monitoring.
 
 ## Requirements
 
@@ -84,6 +84,13 @@ They use Ashby's public postings endpoint and require no account or API key. See
 the [Ashby collector guide](sources/ashby/README.md) for registry and discovery
 details.
 
+Greenhouse boards live in
+[`sources/greenhouse/config.yaml`](sources/greenhouse/config.yaml), starting with
+Grafana Labs. They use Greenhouse's public Job Board API with `content=true` and
+require no account or API key. See the
+[Greenhouse collector guide](sources/greenhouse/README.md) for board-token,
+filtering, and preserved metadata details.
+
 Arbeitnow is a public European job feed and requires no API key. Its optional
 page limit, request timeout, and documented `visa_sponsorship` filter live in
 [`sources/arbeitnow/config.yaml`](sources/arbeitnow/config.yaml). The collector
@@ -129,6 +136,7 @@ python run.py himalayas
 python run.py jobicy
 python run.py jooble
 python run.py ashby
+python run.py greenhouse
 python run.py custom
 python run.py ashby discover https://jobs.ashbyhq.com/satispay/some-job-id
 python run.py add-manual --input .codex-work/manual-job/example.yaml

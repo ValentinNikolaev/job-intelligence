@@ -1,0 +1,38 @@
+version: 1
+timeout_seconds: 30
+
+# Greenhouse boards expose all public jobs. Keep remote engineering roles whose
+# declared location covers the target market.
+filters:
+  remote_only: true
+  location_terms:
+    - Italy
+    - Germany
+    - Netherlands
+    - Europe
+    - European Union
+    - EMEA
+    - Worldwide
+    - Anywhere
+    - Global
+  title_terms:
+    - backend
+    - software engineer
+    - software developer
+    - platform engineer
+    - cloud engineer
+    - infrastructure engineer
+    - site reliability
+    - SRE
+    - technical lead
+    - tech lead
+    - engineering lead
+    - engineering manager
+    - lead engineer
+    - senior engineer
+    - staff engineer
+    - principal engineer
+
+boards:
+  - token: grafanalabs
+    company: Grafana Labs
