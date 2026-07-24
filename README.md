@@ -326,6 +326,9 @@ cover letter through the installed host-side `md-to-docx` Codex skill. Set
 the package passes validation. The short `cv.*` files remain stable internal artifacts,
 and each package also includes upload-friendly CV copies named like
 `CV_ValentinNikolaev_grafana_SeniorBackendEngineerDatabasesLokiIngest.docx`.
+During publication, the Simple.life experience end date in the generated CV is
+normalized to the previous calendar month relative to the run date, for example a
+July run writes `June 2026`.
 
 `manifest.yaml` records hashes of the candidate sources, vacancy, supplied company
 content, prompt, and model. Unchanged packages are skipped unless `--force` is supplied.

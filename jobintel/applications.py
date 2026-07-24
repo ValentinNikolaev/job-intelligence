@@ -10,7 +10,7 @@ import tempfile
 import uuid
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Protocol
 
@@ -72,6 +72,27 @@ _COMPANY_SUFFIX_TERMS = {
     "ltd",
     "srl",
 }
+_MONTH_NAMES = (
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+)
+_MONTH_PATTERN = "|".join(_MONTH_NAMES)
+_SIMPLE_LIFE_HEADING_RE = re.compile(r"^(?P<marks>#{2,4})\s+Simple(?:\.life| App| Life)\s*$")
+_HEADING_RE = re.compile(r"^(?P<marks>#{1,6})\s+")
+_MONTH_YEAR_RANGE_RE = re.compile(
+    rf"(?P<start>\b(?:{_MONTH_PATTERN})\s+\d{{4}})\s*[-–—]\s*"
+    rf"(?P<end>Present|Current|(?:{_MONTH_PATTERN})\s+\d{{4}})\b"
+)
 
 _REQUIRED_HEADINGS = {
     "analysis_markdown": (
@@ -243,12 +264,15 @@ class ApplicationGenerator:
         candidate_profile, profile_version = self._load_candidate_profile()
         prompt, prompt_version = self._load_prompt()
         vacancy, vacancy_version, company_version = _load_vacancy(directory, meta)
+        generated_at = self._clock()
+        simple_life_end_date = _simple_life_cv_end_date(generated_at)
         expected_versions = {
             "profile_version": profile_version,
             "vacancy_version": vacancy_version,
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            "simple_life_end_date": simple_life_end_date,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
@@ -266,6 +290,10 @@ class ApplicationGenerator:
                 vacancy=vacancy,
             )
         )
+        generated["cv_markdown"] = _apply_simple_life_cv_end_date(
+            generated["cv_markdown"],
+            simple_life_end_date,
+        )
         cv_export_files = _cv_export_files(meta)
 
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
@@ -280,7 +308,7 @@ class ApplicationGenerator:
             shutil.copyfile(staging / "cv.docx", staging / cv_export_files["docx"])
             manifest = {
                 **expected_versions,
-                "generated_at": _utc_iso(self._clock()),
+                "generated_at": _utc_iso(generated_at),
                 "files": [
                     "cv.md",
                     "cv.docx",
@@ -315,12 +343,14 @@ class ApplicationGenerator:
         _, profile_version = self._load_candidate_profile()
         _, prompt_version = self._load_prompt()
         _, vacancy_version, company_version = _load_vacancy(directory, meta)
+        simple_life_end_date = _simple_life_cv_end_date(self._clock())
         expected_versions = {
             "profile_version": profile_version,
             "vacancy_version": vacancy_version,
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            "simple_life_end_date": simple_life_end_date,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
@@ -482,6 +512,44 @@ def _package_is_current(
             if isinstance(filename, str) and filename.startswith("CV_")
         )
     return all((application_dir / filename).is_file() for filename in required)
+
+
+def _simple_life_cv_end_date(value: datetime) -> str:
+    previous_month = value.replace(day=1) - timedelta(days=1)
+    return f"{_MONTH_NAMES[previous_month.month - 1]} {previous_month.year}"
+
+
+def _apply_simple_life_cv_end_date(markdown: str, end_date: str) -> str:
+    lines = markdown.splitlines(keepends=True)
+    in_simple_life = False
+    simple_life_heading_level = 0
+    changed = False
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+        simple_life_heading = _SIMPLE_LIFE_HEADING_RE.match(stripped)
+        if simple_life_heading:
+            in_simple_life = True
+            simple_life_heading_level = len(simple_life_heading.group("marks"))
+            continue
+        heading = _HEADING_RE.match(stripped)
+        if (
+            in_simple_life
+            and heading
+            and len(heading.group("marks")) <= simple_life_heading_level
+        ):
+            in_simple_life = False
+        if not in_simple_life or changed:
+            continue
+
+        updated = _MONTH_YEAR_RANGE_RE.sub(
+            lambda match: f"{match.group('start')} - {end_date}",
+            line,
+            count=1,
+        )
+        if updated != line:
+            lines[index] = updated
+            changed = True
+    return "".join(lines)
 
 
 def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:

@@ -16,7 +16,9 @@ from jobintel.applications import (
     ApplicationError,
     ApplicationGenerator,
     CodexApplicationDraftClient,
+    _apply_simple_life_cv_end_date,
     _cv_export_stem,
+    _simple_life_cv_end_date,
     _publish_staged_package,
     resolve_job_directories,
 )
@@ -197,6 +199,7 @@ class ApplicationTests(unittest.TestCase):
             "CV_ValentinNikolaev_example_SeniorBackendEngineer",
             manifest["cv_export_stem"],
         )
+        self.assertEqual("June 2026", manifest["simple_life_end_date"])
 
     def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
         self.assertEqual(
@@ -206,6 +209,51 @@ class ApplicationTests(unittest.TestCase):
                 title="Senior Backend Engineer - Databases - Loki Ingest | Germany | Remote",
             ),
         )
+
+    def test_simple_life_cv_end_date_uses_previous_calendar_month(self) -> None:
+        self.assertEqual(
+            "June 2026",
+            _simple_life_cv_end_date(datetime(2026, 7, 24, tzinfo=timezone.utc)),
+        )
+        self.assertEqual(
+            "December 2025",
+            _simple_life_cv_end_date(datetime(2026, 1, 3, tzinfo=timezone.utc)),
+        )
+
+    def test_simple_life_cv_date_range_is_rewritten_before_publication(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = (
+            "# Candidate\n\n"
+            "## Experience\n\n"
+            "### Simple.life\n\n"
+            "**Software Developer**  \n"
+            "November 2023 - Present\n\n"
+            "- Built Go services.\n\n"
+            "### airSlate\n\n"
+            "**Software Developer**  \n"
+            "February 2021 - August 2023\n"
+        )
+
+        self._generator(FakeClient(payload), FakeConverter()).generate_directory(self.directory)
+
+        cv = (self.directory / "application" / "cv.md").read_text(encoding="utf-8")
+        self.assertIn("November 2023 - June 2026", cv)
+        self.assertIn("February 2021 - August 2023", cv)
+
+    def test_simple_app_heading_is_supported_for_linkedin_drafts(self) -> None:
+        markdown = (
+            "# Candidate\n\n"
+            "### Simple App\n\n"
+            "#### Software Developer\n"
+            "November 2023 - March 2026\n\n"
+            "### airSlate\n"
+            "February 2021 - August 2023\n"
+        )
+
+        updated = _apply_simple_life_cv_end_date(markdown, "June 2026")
+
+        self.assertIn("November 2023 - June 2026", updated)
+        self.assertIn("February 2021 - August 2023", updated)
 
     def test_conversion_failure_preserves_previous_complete_package(self) -> None:
         original = self._generator(FakeClient(), FakeConverter())
