@@ -67,4 +67,4 @@ Bist du bereit, Teil eines der führenden Unternehmen im Bereich ECM-Lösungen z
 
 Bei uns wird dein Berufseinstieg zum persönlichen Walk of Fame – wir bieten dir spannende Perspektiven. Wir freuen uns immer über die Bewerbung von Menschen, die zur Vielfalt unseres Unternehmens beitragen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

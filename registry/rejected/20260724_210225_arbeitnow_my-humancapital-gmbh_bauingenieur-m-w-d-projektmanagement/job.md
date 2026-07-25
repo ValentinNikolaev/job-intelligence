@@ -57,4 +57,4 @@ In dieser Rolle erstellen Sie **Berichte, Dokumentationen und Gutachten** und be
 
 Dann freuen wir uns auf Ihre Bewerbung. Senden Sie uns Ihre Unterlagen. Für Rückfragen steht Ihnen Simon Schneider gerne unter **089 954 287 111** zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
