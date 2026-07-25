@@ -1,0 +1,24 @@
+schema_version: 2
+id: 8be3c0b5-a741-4919-91d6-ee669a70e0e3
+title: Senior Backend Engineer II - Cloud-Native, Remote
+company: Confluent
+company_url: null
+location: Columbia, SC
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-8361927208478607138'
+  url: https://jooble.org/away/-8361927208478607138?p=1&pos=26&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=64&brelb=10&scr=2114.1072&bscr=2114.1072&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:35Z'
+updated_at: '2026-07-25T22:46:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:35Z'
+analysis_priority: 0
+fingerprint: sha256:28781a7e8b9543d8b331e195e3e1b4a4129f1df7dbb7a2eb7c0369ba4be80a61
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,24 @@
+schema_version: 2
+id: b56eefc5-2b69-4449-8300-f79dbf2375ce
+title: Senior Backend Engineer
+company: Neon | Ai-powered Patient Access
+company_url: null
+location: United States
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '6984131660418388412'
+  url: https://jooble.org/away/6984131660418388412?p=1&pos=27&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=94&brelb=10&scr=2110.2554&bscr=2110.2554&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-21T18:29:59.3930000'
+discovered_at: '2026-07-25T22:46:36Z'
+updated_at: '2026-07-25T22:46:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:36Z'
+analysis_priority: 0
+fingerprint: sha256:4d8c7e5d9d52ae9b1a7bd93a21b88c9ac7999d1483749fc104ffd771dab84f88
+data_source: jooble
+content_source: jooble
+company_content_source: null

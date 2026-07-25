@@ -1,0 +1,24 @@
+schema_version: 2
+id: 35a9bddf-ddab-4747-bb80-e194f20e4fc1
+title: Senior Backend Engineer
+company: ZeroDrift
+company_url: null
+location: New York, NY
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-6222338110635457908'
+  url: https://jooble.org/away/-6222338110635457908?p=1&pos=7&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2297.7798&bscr=2297.7798&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:18Z'
+updated_at: '2026-07-25T22:46:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:18Z'
+analysis_priority: 0
+fingerprint: sha256:c66924b9d348124bc530caecc70043e2f8be67767ed2e3e16c709d6e2fda133e
+data_source: jooble
+content_source: jooble
+company_content_source: null

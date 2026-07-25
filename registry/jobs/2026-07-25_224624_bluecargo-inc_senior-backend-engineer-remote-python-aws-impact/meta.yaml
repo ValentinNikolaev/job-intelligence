@@ -1,0 +1,24 @@
+schema_version: 2
+id: c2e6ffcd-a376-4ec8-b71c-d5c8217b3995
+title: Senior Backend Engineer (Remote) - Python, AWS, Impact
+company: BlueCargo Inc
+company_url: null
+location: New York, NY
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-1978643413417050796'
+  url: https://jooble.org/away/-1978643413417050796?p=1&pos=13&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=88&brelb=10&scr=2219.3345&bscr=2219.3345&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:24Z'
+updated_at: '2026-07-25T22:46:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:24Z'
+analysis_priority: 0
+fingerprint: sha256:e0ce888ec4869347205bdcf3ab6e9a9cea29dab40f067cccca2b2925b3e8aa8c
+data_source: jooble
+content_source: jooble
+company_content_source: null

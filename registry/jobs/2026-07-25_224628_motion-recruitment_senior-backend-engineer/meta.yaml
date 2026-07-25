@@ -1,0 +1,24 @@
+schema_version: 2
+id: c91be034-806e-4efe-ac94-316576b101cb
+title: Senior Backend Engineer
+company: Motion Recruitment
+company_url: null
+location: Waltham, MA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-9137986837557705438'
+  url: https://jooble.org/away/-9137986837557705438?p=1&pos=18&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=94&brelb=10&scr=2176.1606&bscr=2176.1606&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-21T18:30:01.6300000'
+discovered_at: '2026-07-25T22:46:28Z'
+updated_at: '2026-07-25T22:46:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:28Z'
+analysis_priority: 0
+fingerprint: sha256:d16fef38b9a39ca089dbe9c75018e554c768e35872255e387bc1ce9403851cd8
+data_source: jooble
+content_source: jooble
+company_content_source: null

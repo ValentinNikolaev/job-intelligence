@@ -1,0 +1,24 @@
+schema_version: 2
+id: 3055e08a-c9b9-4386-a19f-2a9eacc47e70
+title: Senior Backend Engineer
+company: Urban SDK
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-6876816063346073689'
+  url: https://jooble.org/away/-6876816063346073689?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2206.609&bscr=2206.609&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:26Z'
+updated_at: '2026-07-25T22:46:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:26Z'
+analysis_priority: 0
+fingerprint: sha256:36e5e99295096400fb5d83872b4ff775a4c35bb6b06b4c21e67e47f19739a0de
+data_source: jooble
+content_source: jooble
+company_content_source: null

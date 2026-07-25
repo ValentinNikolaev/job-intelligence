@@ -1,0 +1,24 @@
+schema_version: 2
+id: c4941fa0-8ca2-4762-bf64-74955c60ff5a
+title: Senior Backend Engineer
+company: Virtual Vocations Inc
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '1139217418112107070'
+  url: https://jooble.org/away/1139217418112107070?p=1&pos=14&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2218.545&bscr=2218.545&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:24Z'
+updated_at: '2026-07-25T22:46:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:24Z'
+analysis_priority: 0
+fingerprint: sha256:f5039ba1e2b0f928adc902a4be7cae430a246dbdb76338883fccdccf98cf057e
+data_source: jooble
+content_source: jooble
+company_content_source: null

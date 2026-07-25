@@ -1,0 +1,24 @@
+schema_version: 2
+id: 946d5016-6ffd-4654-b399-1eaf0821bd87
+title: Senior Backend Engineer
+company: Zero21
+company_url: null
+location: Philadelphia, PA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-536888432355950951'
+  url: https://jooble.org/away/-536888432355950951?p=1&pos=8&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=88&brelb=10&scr=2297.7798&bscr=2297.7798&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:19Z'
+updated_at: '2026-07-25T22:46:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:19Z'
+analysis_priority: 0
+fingerprint: sha256:e52318faaa71a91cda632f0a0f048f256b63307a78ca330473ce568129bccb77
+data_source: jooble
+content_source: jooble
+company_content_source: null

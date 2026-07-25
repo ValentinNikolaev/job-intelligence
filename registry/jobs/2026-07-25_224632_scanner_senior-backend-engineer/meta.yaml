@@ -1,0 +1,24 @@
+schema_version: 2
+id: d090d6c5-2acc-4d5c-aa53-c5cc6a1f0ccc
+title: Senior Backend Engineer
+company: Scanner
+company_url: null
+location: San Francisco, CA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '8044284284380587470'
+  url: https://jooble.org/away/8044284284380587470?p=1&pos=22&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=40&brelb=10&scr=2146.7275&bscr=2146.7275&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-24T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:32Z'
+updated_at: '2026-07-25T22:46:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:32Z'
+analysis_priority: 0
+fingerprint: sha256:f0e8a17b74ca109c6f4c6980b3c8262592e0f12312c763bd1f2f2ff8995239f2
+data_source: jooble
+content_source: jooble
+company_content_source: null

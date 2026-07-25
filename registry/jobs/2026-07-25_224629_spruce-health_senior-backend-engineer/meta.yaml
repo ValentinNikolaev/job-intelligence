@@ -1,0 +1,24 @@
+schema_version: 2
+id: 809729c8-7f3f-4947-852e-9d953dfd49aa
+title: Senior Backend Engineer
+company: Spruce Health
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-7142257897960991833'
+  url: https://jooble.org/away/-7142257897960991833?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=94&brelb=10&scr=2169.0913&bscr=2169.0913&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-21T18:29:51.6330000'
+discovered_at: '2026-07-25T22:46:29Z'
+updated_at: '2026-07-25T22:46:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:29Z'
+analysis_priority: 0
+fingerprint: sha256:9cbcb999b8603d49287378f7c0fd6729b1dcc785c1cfe8d88a985c9fd9583914
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,24 @@
+schema_version: 2
+id: e028e910-05ce-4682-afef-83cb87c374f2
+title: Senior Backend Engineer (Remote) - AI
+company: Jobot
+company_url: null
+location: Chicago, IL
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '6526484090776357571'
+  url: https://jooble.org/away/6526484090776357571?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=88&brelb=10&scr=2425.4565&bscr=2425.4565&aq=-1050967592869114543&elckey=-4718526512588805530
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-25T22:46:16Z'
+updated_at: '2026-07-25T22:46:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T22:46:16Z'
+analysis_priority: 0
+fingerprint: sha256:333c9e1dfccc70d0f69333a9b5795af616f92df3f3edccc8b6573d8264824a47
+data_source: jooble
+content_source: jooble
+company_content_source: null
