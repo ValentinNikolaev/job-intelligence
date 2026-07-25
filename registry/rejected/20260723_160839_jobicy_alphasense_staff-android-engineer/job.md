@@ -4,8 +4,8 @@ Posted: 2026-07-18T18:40:02Z
 
 ## Rejection
 
-- Category: role_mismatch
-- Reason: title is an obvious mismatch for a backend profile
+- Category: stale
+- Reason: published_at 2026-07-18T18:40:02Z is older than 7 days
 
 ## **About AlphaSense: **
 

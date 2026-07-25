@@ -78,4 +78,4 @@ Was du mitbringen sollst:
 
 Wir arbeiten in flachen Hierarchien und einem kollegialen Arbeitsumfeld und fördern den Teamgeist. Wir leben den Austausch und den respektvollen Umgang miteinander. Unsere Zusammenarbeit ist geprägt von gegenseitiger Wertschätzung, Anerkennung und Unterstützung. Wichtig ist uns ein strukturierter Einstieg mit Mentoring und individuelle Entwicklungsmöglichkeiten. Dadurch stehen allen Kolleginnen und Kollegen die Möglichkeiten zur persönlichen und beruflichen Entwicklung offen. Unser umfangreiches Weiterbildungsangebot sorgt dafür, dass deine Entwicklung bei uns nicht stillsteht. Ein ständiger Wissensaustausch ist uns dabei sehr wichtig. Wir bieten dir flexible Arbeitszeiten und die Möglichkeit zum hybriden Arbeiten. Eine attraktive Vergütung und ein eigenes Weiterbildungsbudget runden die Arbeit bei uns ab.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

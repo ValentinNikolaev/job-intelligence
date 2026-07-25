@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '146800'
+source_url: https://jobicy.com/jobs/146800-software-engineer-in-test-onsite-or-remote-fr-uk-de-nl
+title: Software Engineer in Test - Onsite or Remote (FR, UK, DE, NL)
+company: Dataiku
+location: Europe,  France,  Germany,  Netherlands,  UK
+published_at: '2026-07-18T19:40:05Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-18T19:40:05Z is older than 7 days
+updated_at: '2026-07-25T20:04:26Z'
+rejected_at: '2026-07-25T20:04:26Z'

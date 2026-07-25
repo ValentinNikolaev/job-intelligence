@@ -66,4 +66,4 @@ Was dich erwartet:
 
 Klingt das nach dir? Dann freuen wir uns auf deine Bewerbung! Für das Einsenden der Bewerbungsunterlagen werden nur Lebenslauf und Zeugnisse als jeweils ein PDF benötigt, mehr nicht.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

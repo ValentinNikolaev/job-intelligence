@@ -1,19 +1,30 @@
 score: 90
 recommendation: strong_match
-summary: Software Engineering Team Lead aligns with the candidate profile at a score
-  of 90/100 based on documented backend experience and the role requirements.
+summary: Software Engineering Team Lead is a strong match because the candidate has
+  15+ years of backend engineering experience, documented hands-on technical leadership,
+  production reliability work, PHP and Go depth, AWS/Kubernetes exposure, and AI/automation
+  workflow experience that maps well to ShippyPro's Fulfillment Pod ownership.
 strengths:
-- 15+ years of backend software engineering experience
-- Strong PHP, Go, AWS, APIs, and production reliability background
-- Documented technical leadership, mentoring, delivery ownership, and team management
+- 15+ years of backend software engineering experience with strong PHP and Go production
+  evidence.
+- Documented technical leadership, mentoring, planning, delivery ownership, technical
+  interviews, and direct team management.
+- Strong relevance to mission-critical fulfillment systems through high-volume transactional
+  messaging, resilient integrations, event-driven pipelines, API performance, AWS/Kubernetes,
+  and production reliability.
+- Recent AI and automation work is relevant to ShippyPro's stated interest in using
+  AI as part of the workflow.
 gaps:
-- Some role-specific domain and tooling details are not explicitly documented in the
-  candidate evidence
+- Direct production experience with NodeJS, Python, DynamoDB, React, TypeScript, Tailwind
+  CSS, logistics, order management, and label generation is not explicitly documented
+  in the supplied candidate evidence.
+- Recent source records contain timeline overlap between Simple.life and CRURATED
+  that should be clarified during application or screening.
 concerns: []
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-07-24T21:22:14Z'
+hard_rejection_reason: null
+analyzed_at: '2026-07-25T17:59:42Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:c81de5a3b73a3ccf7d6d92007f192eb7b56190937e12fbef1dcb32a79f287c46
-prompt_version: job-match-v1:sha256:ff4fdffcc93aa5eef4e6cea4e6478d28fe138a3a48f1947b0bd78077fb8f7936
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
 model: codex:gpt-5.6-luna:low

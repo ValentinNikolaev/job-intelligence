@@ -1,0 +1,58 @@
+schema_version: 1
+candidate:
+  full_name: Valentin Nikolaev
+  email: valeinikolaev@gmail.com
+  phone: "+39 351 370 1194"
+  location:
+    city: Rome
+    country: Italy
+    timezone: Europe/Rome
+  links:
+    linkedin: https://linkedin.com/in/valentinnikolaev
+    github: https://github.com/ValentinNikolaev
+  languages:
+    ukrainian: native
+    english: professional working / upper-intermediate
+application_defaults:
+  remote_work:
+    preferred: true
+    cet_timezone_compatible: true
+    willing_to_visit_hq_for_meetups: true
+  work_authorization:
+    italy_eu: TODO_CONFIRM
+    requires_visa_sponsorship: TODO_CONFIRM
+  availability:
+    notice_period: TODO_CONFIRM
+    earliest_start_date: TODO_CONFIRM
+  compensation:
+    expected_salary_eur_gross_annual: TODO_CONFIRM
+    note: For ShippyPro, the published range is EUR 52,000-72,000.
+  profile_summary: >-
+    Backend engineer and technical lead with 15+ years of experience in PHP and Go,
+    production reliability, AWS/Kubernetes, APIs, automation systems, and mentoring.
+reusable_answers:
+  motivation: >-
+    I am looking for a hands-on technical lead role where I can stay close to
+    backend architecture and code while helping a team ship reliable systems. I am
+    especially interested in roles with clear product ownership, operational scale,
+    and pragmatic technical leadership.
+  leadership_style: >-
+    I lead by staying close to the work: clarifying priorities, mentoring engineers,
+    raising the technical bar through reviews and architecture discussions, and
+    still contributing to the codebase when it helps the team move faster or reduce
+    risk.
+  remote_collaboration: >-
+    I am comfortable working remotely around CET hours, keeping communication
+    explicit, documenting technical decisions, and using in-person meetups for
+    alignment, deeper collaboration, and relationship building.
+  salary_answer_template: >-
+    Given the role scope and leadership expectations, I would like to discuss the
+    upper part of the published range, depending on the full package,
+    responsibilities, and growth path.
+open_questions_for_candidate:
+  - Confirm exact work authorization wording for Italy/EU and whether sponsorship is needed.
+  - Confirm notice period and earliest start date.
+  - Confirm expected gross annual salary or acceptable range.
+  - Confirm current Simple.life status and how CRURATED overlapped with it.
+  - Confirm whether any production NodeJS, Python, DynamoDB, React, TypeScript, or logistics experience can be added to source evidence.
+
