@@ -74,4 +74,4 @@ Dafür bieten wir dir:
 
 👉 Wenn du Lust hast, Marketing & Design zu verbinden und **deine Arbeit in einem innovativen MedTech-Startup sichtbar werden zu lassen**, dann freuen wir uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

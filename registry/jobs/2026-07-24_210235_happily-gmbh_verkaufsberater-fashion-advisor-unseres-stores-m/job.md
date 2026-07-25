@@ -40,4 +40,4 @@ NZA New Zealand Auckland steht für lässige Mode mit Outdoor-Spirit und sportli
 
 Bewirb dich jetzt und werde Teil der NZA-Familie in Konstanz.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

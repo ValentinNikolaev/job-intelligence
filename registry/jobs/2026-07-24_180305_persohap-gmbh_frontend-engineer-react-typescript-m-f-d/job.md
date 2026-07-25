@@ -34,4 +34,4 @@ PERSOHAP builds an AI-native people platform that helps companies hire, onboard 
 
 Sound like you? Apply in a few clicks - after applying, you'll be invited to a short AI-guided video interview you can take anytime. We review every application and reply within a week.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
