@@ -227,3 +227,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: 3e50d2724f29418bb2c5c8dbd68f67b2
+  recorded_at: '2026-07-25T13:44:09Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 14000
+  output_tokens: 6500
+  total_tokens: 20500
+  note: Estimated scheduled priority preparation for Nord Security Backend Engineer
+    Payments Team
