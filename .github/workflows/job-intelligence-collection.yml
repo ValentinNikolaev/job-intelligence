@@ -92,7 +92,20 @@ jobs:
           git add -A
           git diff --cached --stat
           git commit -m "Update collected vacancies"
-          git push
+
+          branch="${GITHUB_REF_NAME:-main}"
+          for attempt in 1 2 3; do
+            if git push origin "HEAD:${branch}"; then
+              break
+            fi
+            if [ "${attempt}" -eq 3 ]; then
+              echo "Push failed after rebasing against origin/${branch}." >> "$GITHUB_STEP_SUMMARY"
+              exit 1
+            fi
+            git fetch origin "${branch}"
+            git rebase "origin/${branch}"
+          done
+
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "Committed and pushed deterministic collection changes." >> "$GITHUB_STEP_SUMMARY"
 
