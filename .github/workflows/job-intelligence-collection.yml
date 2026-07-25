@@ -92,11 +92,11 @@ jobs:
             exit 0
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "Valentin Nikolaev"
+          git config user.email "435393+ValentinNikolaev@users.noreply.github.com"
           git add -A
           git diff --cached --stat
-          git commit -m "Update collected vacancies"
+          git commit -m "chore: update generated files"
 
           branch="${GITHUB_REF_NAME:-main}"
           for attempt in 1 2 3; do
