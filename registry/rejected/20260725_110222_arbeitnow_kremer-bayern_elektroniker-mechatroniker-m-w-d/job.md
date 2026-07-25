@@ -1,6 +1,6 @@
 # Elektroniker-Mechatroniker m/w/d
 
-Posted: 2026-07-25T07:30:31Z
+Posted: 2026-07-25T11:59:03Z
 
 ## Rejection
 

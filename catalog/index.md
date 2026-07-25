@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 377
+Total vacancies: 379
 
-- Found: 371
+- Found: 373
 - Applied: 1
 - Rejected: 5
 
@@ -16,6 +16,8 @@ Total vacancies: 377
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-25 | [Global Finanz AG](../registry/jobs/2026-07-25_140053_global-finanz-ag_etf-anlageberater-m-w-d/) | [ETF Anlageberater (m/w/d)](../registry/jobs/2026-07-25_140053_global-finanz-ag_etf-anlageberater-m-w-d/job.md) | Siegburg | Arbeitnow | Found | 2026-07-25 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/global-finanz-ag/etf-anlageberater-siegburg-87771) | — | — | — | — | — |
+| 2026-07-25 | [Mindskills](../registry/jobs/2026-07-25_140052_mindskills_praktikant-marketing-automation-mit-ki-m-w-d-in/) | [Praktikant Marketing Automation mit KI (m/w/d) in remote / Homeoffice](../registry/jobs/2026-07-25_140052_mindskills_praktikant-marketing-automation-mit-ki-m-w-d-in/job.md) | Cologne | Arbeitnow | Found | 2026-07-25 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/mindskills/praktikant-marketing-automation-mit-ki-in-remote-homeoffice-cologne-445496) | — | — | — | — | — |
 | 2026-07-25 | [Pyyne](../registry/jobs/2026-07-25_110548_pyyne_senior-ai-backend-engineer/) | [Senior AI Backend Engineer](../registry/jobs/2026-07-25_110548_pyyne_senior-ai-backend-engineer/job.md) | Remote | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/desc/-8738299644179044346?ckey=remote+senior+backend+engineer&rgn=55180&pos=45&groupId=2134052230&elckey=6114783711726159216&p=1&aq=-6982029858143676465&cid=15922&jobAge=2&brelb=100&bscr=780.0711&scr=780.0711) | — | — | — | — | — |
 | 2026-07-25 | [Taxtalente.de](../registry/jobs/2026-07-25_080153_taxtalente-de_steuerberater-m-w-d-in-wustermark-auf-wunsch-mit/) | [Steuerberater (m/w/d) in Wustermark, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€](../registry/jobs/2026-07-25_080153_taxtalente-de_steuerberater-m-w-d-in-wustermark-auf-wunsch-mit/job.md) | Wustermark | Arbeitnow | Found | 2026-07-25 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-wustermark-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-385738) | — | — | — | — | — |
 | 2026-07-25 | [Taxtalente.de](../registry/jobs/2026-07-25_080152_taxtalente-de_steuerberater-m-w-d-in-gau-bickelheim-auf-wunsch/) | [Steuerberater (m/w/d) in Gau-Bickelheim, auf Wunsch mit Partnerperspektive, gesucht - mindestens 90.000€](../registry/jobs/2026-07-25_080152_taxtalente-de_steuerberater-m-w-d-in-gau-bickelheim-auf-wunsch/job.md) | Gau-Bickelheim | Arbeitnow | Found | 2026-07-25 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-gau-bickelheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-293734) | — | — | — | — | — |
@@ -34,5 +36,3 @@ Total vacancies: 377
 | 2026-07-25 | [Grafana Labs](../registry/jobs/2026-07-25_054609_grafana-labs_staff-backend-engineer-grafana-second-horizon-sw/) | [Staff Backend Engineer - Grafana Second Horizon \| Sweden \| Remote](../registry/jobs/2026-07-25_054609_grafana-labs_staff-backend-engineer-grafana-second-horizon-sw/job.md) | Sweden (Remote) | Greenhouse | Found | 2026-07-25 | [Greenhouse](https://job-boards.greenhouse.io/grafanalabs/jobs/6123177004) | — | — | — | — | — |
 | 2026-07-25 | [Grafana Labs](../registry/jobs/2026-07-25_054608_grafana-labs_staff-backend-engineer-grafana-second-horizon-sp/) | [Staff Backend Engineer - Grafana Second Horizon \| Spain \| Remote](../registry/jobs/2026-07-25_054608_grafana-labs_staff-backend-engineer-grafana-second-horizon-sp/job.md) | Spain (Remote) | Greenhouse | Found | 2026-07-25 | [Greenhouse](https://job-boards.greenhouse.io/grafanalabs/jobs/6123175004) | — | — | — | — | — |
 | 2026-07-25 | [Grafana Labs](../registry/jobs/2026-07-25_054607_grafana-labs_staff-backend-engineer-grafana-second-horizon-ir/) | [Staff Backend Engineer - Grafana Second Horizon \| Ireland \| Remote](../registry/jobs/2026-07-25_054607_grafana-labs_staff-backend-engineer-grafana-second-horizon-ir/job.md) | Republic of Ireland (Remote) | Greenhouse | Found | 2026-07-25 | [Greenhouse](https://job-boards.greenhouse.io/grafanalabs/jobs/6123178004) | — | — | — | — | — |
-| 2026-07-25 | [Grafana Labs](../registry/jobs/2026-07-25_054606_grafana-labs_staff-backend-engineer-grafana-second-horizon-ge/) | [Staff Backend Engineer - Grafana Second Horizon \| Germany \| Remote](../registry/jobs/2026-07-25_054606_grafana-labs_staff-backend-engineer-grafana-second-horizon-ge/job.md) | Germany (Remote) | Greenhouse | Found | 2026-07-25 | [Greenhouse](https://job-boards.greenhouse.io/grafanalabs/jobs/6123179004) | — | — | — | — | — |
-| 2026-07-25 | [Grafana Labs](../registry/jobs/2026-07-25_054603_grafana-labs_senior-backend-engineer-databases-pyroscope-uk-r/) | [Senior Backend Engineer - Databases Pyroscope \| UK \| Remote](../registry/jobs/2026-07-25_054603_grafana-labs_senior-backend-engineer-databases-pyroscope-uk-r/job.md) | United Kingdom (Remote) | Greenhouse | Found | 2026-07-25 | [Greenhouse](https://job-boards.greenhouse.io/grafanalabs/jobs/6126889004) | — | — | — | — | — |
