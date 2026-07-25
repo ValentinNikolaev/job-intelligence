@@ -175,3 +175,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: d9a7f036fd3d4684b6291020cd05b8e1
+  recorded_at: '2026-07-25T05:46:42Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 8000
+  output_tokens: 6000
+  total_tokens: 14000
+  note: Priority Cubbit application preparation; estimated from selected vacancy materials,
+    research, and four package drafts.
