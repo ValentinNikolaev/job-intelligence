@@ -1,0 +1,24 @@
+schema_version: 2
+id: 7a08ae96-b34a-4da4-9f8e-7ef9de4b908b
+title: Senior Cloud / Java Backend Engineer
+company: Shree Narayani Networking Solutions Pvt Ltd
+company_url: null
+location: Durham, NC
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-3275144725255783736'
+  url: https://jooble.org/desc/-3275144725255783736?ckey=remote+senior+backend+engineer&rgn=55180&pos=49&groupId=2134052230&elckey=-3288394477033182393&p=1&aq=2438651112320454189&cid=15922&jobAge=32&brelb=100&bscr=714.6383&scr=714.6383
+published_at: '2026-07-24T00:00:00.0000000'
+discovered_at: '2026-07-25T14:04:34Z'
+updated_at: '2026-07-25T14:04:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T14:04:34Z'
+analysis_priority: 0
+fingerprint: sha256:12b181ba6c987d77f57c882f2867223896479f5f498d1ac505406c2dbd7a6532
+data_source: jooble
+content_source: jooble
+company_content_source: null
