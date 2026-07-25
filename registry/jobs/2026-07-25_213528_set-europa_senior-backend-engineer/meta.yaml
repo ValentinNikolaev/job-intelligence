@@ -1,0 +1,24 @@
+schema_version: 2
+id: 7df905ae-89c6-4303-a35b-313c36a57b8a
+title: Senior Backend Engineer
+company: SET Europa
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '522170082522056518'
+  url: https://jooble.org/away/522170082522056518?p=1&pos=7&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=87&brelb=15&scr=2603.73&bscr=2603.73&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:28Z'
+updated_at: '2026-07-25T21:35:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:28Z'
+analysis_priority: 0
+fingerprint: sha256:88efb6e7631c626ff2950b170cbe75d1a38f0cf13752c12791c7b4038af9c4ec
+data_source: jooble
+content_source: jooble
+company_content_source: null

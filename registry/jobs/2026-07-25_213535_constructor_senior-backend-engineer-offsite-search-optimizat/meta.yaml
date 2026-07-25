@@ -1,0 +1,24 @@
+schema_version: 2
+id: d47f16f3-1dd4-4e9b-9371-2a2004b5e0b3
+title: 'Senior Backend Engineer: Offsite Search Optimization'
+company: Constructor
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '3652441185608223371'
+  url: https://jooble.org/away/3652441185608223371?p=1&pos=15&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=63&brelb=15&scr=2531.8452&bscr=2531.8452&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:35Z'
+updated_at: '2026-07-25T21:35:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:35Z'
+analysis_priority: 0
+fingerprint: sha256:ea46e78edce86c02f07b1ea32765ddb22cff61652e9aa599a1c05d0cbb9c6084
+data_source: jooble
+content_source: jooble
+company_content_source: null

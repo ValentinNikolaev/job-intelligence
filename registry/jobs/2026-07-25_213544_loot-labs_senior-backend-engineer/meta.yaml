@@ -1,0 +1,24 @@
+schema_version: 2
+id: 344ba462-b9c6-481d-88c6-7a15c2c1b5fb
+title: Senior Backend Engineer
+company: Loot Labs
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '8256199845182156119'
+  url: https://jooble.org/away/8256199845182156119?p=1&pos=26&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=111&brelb=15&scr=2455.3682&bscr=2455.3682&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:44Z'
+updated_at: '2026-07-25T21:35:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:44Z'
+analysis_priority: 0
+fingerprint: sha256:e4e249f799cdb60d22f2d18f8cb8d84d3de0ddb4cac5b1cc6d62da5ad673a559
+data_source: jooble
+content_source: jooble
+company_content_source: null

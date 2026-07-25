@@ -1,0 +1,24 @@
+schema_version: 2
+id: 0b418ceb-0f5c-4663-bfa6-9ff743e53a59
+title: Solution Engineer
+company: OPSWAT
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-7345982585482115770'
+  url: https://jooble.org/away/-7345982585482115770?p=1&pos=36&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=111&brelb=10&scr=12.510355&bscr=12.510355&aq=-1246938307743365137&elckey=5265404052121246324
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:22Z'
+updated_at: '2026-07-25T21:35:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:22Z'
+analysis_priority: 0
+fingerprint: sha256:b855fcd4be283680ee9cad6dcc151324886bb2bc175f38a5f58800f7e67dfdba
+data_source: jooble
+content_source: jooble
+company_content_source: null

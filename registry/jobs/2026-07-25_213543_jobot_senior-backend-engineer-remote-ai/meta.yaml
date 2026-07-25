@@ -1,0 +1,24 @@
+schema_version: 2
+id: c36fb935-247d-40e0-a3ea-8270741549d3
+title: Senior Backend Engineer (Remote) - AI
+company: Jobot
+company_url: null
+location: Atlanta, GA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-2211080497839609454'
+  url: https://jooble.org/away/-2211080497839609454?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=87&brelb=10&scr=2460.0552&bscr=2460.0552&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:43Z'
+updated_at: '2026-07-25T21:35:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:43Z'
+analysis_priority: 0
+fingerprint: sha256:2257e4c6dfce35f7ef03c514fb48b9a264cf700df8bbcf5fb32eb66223c826c3
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,24 @@
+schema_version: 2
+id: 5c21b720-40c0-4962-91fd-1dd9f44949e2
+title: Senior Backend Engineer
+company: Volt Labs Inc.
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-7563101932159895652'
+  url: https://jooble.org/away/-7563101932159895652?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=159&brelb=15&scr=2606.1611&bscr=2606.1611&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-19T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:28Z'
+updated_at: '2026-07-25T21:35:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:28Z'
+analysis_priority: 0
+fingerprint: sha256:f4b519394d9f3977313089ed0a9fa407a737b33a27ccf72f6788ed18c6984c77
+data_source: jooble
+content_source: jooble
+company_content_source: null

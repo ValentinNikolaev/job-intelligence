@@ -1,0 +1,24 @@
+schema_version: 2
+id: c7b8a684-209f-4cc2-a153-ec6823b9f056
+title: 'Backend Engineer: Partnership Integrations Team'
+company: Constructor.io
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '2195305417768262794'
+  url: https://jooble.org/away/2195305417768262794?p=1&pos=3&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=63&brelb=10&scr=142.22089&bscr=142.22089&aq=-7753175338228114560&elckey=8617479275933829029
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-25T21:34:51Z'
+updated_at: '2026-07-25T21:34:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:34:51Z'
+analysis_priority: 0
+fingerprint: sha256:21db987bbe1da802843212f5152d30ef9469d00c22da0b86a1efa7bc9929bf51
+data_source: jooble
+content_source: jooble
+company_content_source: null

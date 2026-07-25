@@ -1,0 +1,24 @@
+schema_version: 2
+id: fe33d39b-500c-45c4-b491-ac5e6579725f
+title: Senior Backend Software Engineer
+company: Site Technologies
+company_url: null
+location: Chicago, IL
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '8999702624033263096'
+  url: https://jooble.org/desc/8999702624033263096?ckey=remote+senior+backend+engineer&rgn=55180&pos=35&groupId=2134052230&elckey=6493997329494050428&p=1&aq=4366983154893435435&cid=15922&jobAge=15&brelb=115&bscr=2431.7087&scr=2431.7087
+published_at: '2026-07-25T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:52Z'
+updated_at: '2026-07-25T21:35:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:52Z'
+analysis_priority: 0
+fingerprint: sha256:58f7ae1b84ec09182532832b2046beb23cf78b2f518b5207bb0de4eb1cdc66ba
+data_source: jooble
+content_source: jooble
+company_content_source: null

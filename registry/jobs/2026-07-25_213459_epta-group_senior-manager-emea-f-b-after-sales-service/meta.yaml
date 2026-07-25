@@ -1,0 +1,24 @@
+schema_version: 2
+id: e6572166-7416-4e3a-a206-f8b80b539a70
+title: Senior Manager, EMEA F&B After-Sales & Service
+company: EPTA GROUP
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-2216474656941274863'
+  url: https://jooble.org/away/-2216474656941274863?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=63&brelb=10&scr=44.7022&bscr=44.7022&aq=-7753175338228114560&elckey=8617479275933829029
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-25T21:34:59Z'
+updated_at: '2026-07-25T21:34:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:34:59Z'
+analysis_priority: 0
+fingerprint: sha256:1da98215e92157fadacbec44a7fa41cacb7cfc166b9cc64245d4efceafee7976
+data_source: jooble
+content_source: jooble
+company_content_source: null

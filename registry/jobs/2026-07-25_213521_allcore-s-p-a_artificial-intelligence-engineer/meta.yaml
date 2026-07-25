@@ -1,0 +1,24 @@
+schema_version: 2
+id: 78043297-c10f-4c85-abb2-7d8094477a3c
+title: Artificial Intelligence Engineer
+company: Allcore S.p.A.
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '1561211291330462140'
+  url: https://jooble.org/away/1561211291330462140?p=1&pos=31&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=63&brelb=10&scr=14.989125&bscr=14.989125&aq=-1246938307743365137&elckey=5265404052121246324
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:21Z'
+updated_at: '2026-07-25T21:35:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:21Z'
+analysis_priority: 0
+fingerprint: sha256:4846b534c21b11ac8c2d1f8089e2a6e75cbf542b85c46cb4788b03867adf68a3
+data_source: jooble
+content_source: jooble
+company_content_source: null

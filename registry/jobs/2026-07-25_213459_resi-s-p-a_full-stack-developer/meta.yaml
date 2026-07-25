@@ -1,0 +1,24 @@
+schema_version: 2
+id: 20d5c7d2-e202-4780-87ee-4123acc5fccd
+title: Full-Stack Developer
+company: RESI S.p.A.
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '3443760284099356073'
+  url: https://jooble.org/away/3443760284099356073?p=1&pos=14&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=56&brelb=10&scr=43.00502&bscr=43.00502&aq=-7753175338228114560&elckey=8617479275933829029
+published_at: '2026-07-23T06:36:36.9370000'
+discovered_at: '2026-07-25T21:34:59Z'
+updated_at: '2026-07-25T21:34:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:34:59Z'
+analysis_priority: 0
+fingerprint: sha256:890fadd9f566b35729b61ec3715b94a4b57499ae8510bddefbd50e1944ef9ad9
+data_source: jooble
+content_source: jooble
+company_content_source: null

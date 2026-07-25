@@ -1,0 +1,24 @@
+schema_version: 2
+id: 7d07889d-2fde-49e9-86d8-0773ecb24bb0
+title: Senior Backend Engineer
+company: Postscript
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-5430655781048008372'
+  url: https://jooble.org/away/-5430655781048008372?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=15&brelb=15&scr=2528.731&bscr=2528.731&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-25T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:36Z'
+updated_at: '2026-07-25T21:35:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:36Z'
+analysis_priority: 0
+fingerprint: sha256:1c90d49b1db23861616d5cd0375b1ea5ae7c7b64d23db9265492a6c0338ef219
+data_source: jooble
+content_source: jooble
+company_content_source: null

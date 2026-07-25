@@ -62,4 +62,4 @@ Technologie begeistert Sie? Uns auch! Zur Verstärkung unseres Expertenteams bei
 
 - 360° Betreuung: Feedbackgespräche, Karriereplanung, Unterstützung bei Umzug, etc.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

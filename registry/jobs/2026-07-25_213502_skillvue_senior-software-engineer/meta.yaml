@@ -1,0 +1,24 @@
+schema_version: 2
+id: f261aae1-ff9f-4ed4-8ca5-7e06b59d9bc7
+title: Senior software engineer
+company: Skillvue
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-1484739468225585069'
+  url: https://jooble.org/away/-1484739468225585069?p=1&pos=19&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=111&brelb=10&scr=32.325817&bscr=32.325817&aq=-7753175338228114560&elckey=8617479275933829029
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:02Z'
+updated_at: '2026-07-25T21:35:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:02Z'
+analysis_priority: 0
+fingerprint: sha256:da0f5eeffc7c8942ca7b0d35fc7412df47bdeecbd42e323587e406b165c31afe
+data_source: jooble
+content_source: jooble
+company_content_source: null

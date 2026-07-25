@@ -1,0 +1,24 @@
+schema_version: 2
+id: 86ebbc29-88b9-4633-ad58-e3efa518f18e
+title: Senior Backend Software Engineer
+company: Software Technology Inc
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '8913547384026347049'
+  url: https://jooble.org/away/8913547384026347049?p=1&pos=22&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=111&brelb=10&scr=2473.9072&bscr=2473.9072&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-21T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:41Z'
+updated_at: '2026-07-25T21:35:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:41Z'
+analysis_priority: 0
+fingerprint: sha256:8a937e7e91066d963374df5b0a805f27ff7d7864d77756e59d3160cebfc337ec
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,24 @@
+schema_version: 2
+id: 9a460e10-00e1-41d2-a7ba-2b63f0ffd824
+title: Senior Full Stack Developer
+company: aizoOn Technology Consulting
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-6557877017740250220'
+  url: https://jooble.org/away/-6557877017740250220?p=1&pos=4&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=63&brelb=10&scr=136.11533&bscr=136.11533&aq=-7753175338228114560&elckey=8617479275933829029
+published_at: '2026-07-23T00:00:00.0000000'
+discovered_at: '2026-07-25T21:34:51Z'
+updated_at: '2026-07-25T21:34:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:34:51Z'
+analysis_priority: 0
+fingerprint: sha256:eb77cedbbdf92ad5a896ff9fca7b656073f46fcbf345234e2989cc22a854c45e
+data_source: jooble
+content_source: jooble
+company_content_source: null

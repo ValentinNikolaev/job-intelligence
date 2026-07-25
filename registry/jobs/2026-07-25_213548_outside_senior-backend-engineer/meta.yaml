@@ -1,0 +1,24 @@
+schema_version: 2
+id: 610e7c13-3d4c-480a-8e67-23d75a022d5e
+title: Senior Backend Engineer
+company: Outside
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '897443123896665987'
+  url: https://jooble.org/away/897443123896665987?p=1&pos=30&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=87&brelb=15&scr=2447.3574&bscr=2447.3574&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:48Z'
+updated_at: '2026-07-25T21:35:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:48Z'
+analysis_priority: 0
+fingerprint: sha256:bfb9a30c6d5c82804ef982d7b24cb4cc7f61fc95d82291f25d34d3910340a2ba
+data_source: jooble
+content_source: jooble
+company_content_source: null

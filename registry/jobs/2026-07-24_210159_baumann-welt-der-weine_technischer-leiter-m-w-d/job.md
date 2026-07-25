@@ -66,4 +66,4 @@ Die **Schlosskellerei Affaltrach** ist ein in 4. Generation geführtes Familienu
 
 Dann freuen wir uns auf Ihre aussagekräftige Bewerbung mit Angabe Ihres möglichen Eintrittstermins und Ihrer Gehaltsvorstellung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

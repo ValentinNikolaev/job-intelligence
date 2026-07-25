@@ -1,0 +1,24 @@
+schema_version: 2
+id: 2981ce5c-b59a-49e0-bf59-a550cea1feb3
+title: Senior Backend Engineer, AI & Bioinformatics
+company: Sequencing
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '2260421957619052698'
+  url: https://jooble.org/away/2260421957619052698?p=1&pos=34&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=15&brelb=15&scr=2432.7578&bscr=2432.7578&aq=4366983154893435435&elckey=6493997329494050428
+published_at: '2026-07-25T00:00:00.0000000'
+discovered_at: '2026-07-25T21:35:51Z'
+updated_at: '2026-07-25T21:35:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T21:35:51Z'
+analysis_priority: 0
+fingerprint: sha256:8f7a65ca9d842a4911bcf04e822393ae416cddb101b7bb939c0afd8e1bb1a0c3
+data_source: jooble
+content_source: jooble
+company_content_source: null
