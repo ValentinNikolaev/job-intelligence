@@ -81,4 +81,4 @@ Ganz unkompliziert – ohne langes Anschreiben.
 
 Sende uns einfach deine Kontaktdaten und wir lernen uns in einem unverbindlichen Gespräch kennen. Vielleicht ist das genau der Nebenjob, der zu deinem Alltag passt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
