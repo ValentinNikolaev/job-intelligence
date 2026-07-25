@@ -31,17 +31,17 @@ sources:
       parameters:
         industry: dev
         geo: europe
-        tag: technical lead
         count: '100'
+        tag: technical lead
     - query_index: 8
       parameters:
         industry: dev
         geo: europe
-        tag: platform engineer
         count: '100'
+        tag: platform engineer
 published_at: '2026-07-18T19:40:05Z'
 discovered_at: '2026-07-23T16:08:38Z'
-updated_at: '2026-07-25T14:03:43Z'
+updated_at: '2026-07-25T17:04:14Z'
 status: found
 status_history:
 - status: found

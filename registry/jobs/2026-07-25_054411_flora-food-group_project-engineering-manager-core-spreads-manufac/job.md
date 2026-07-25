@@ -62,4 +62,4 @@ We understand your resume might not be up to date and recommend that you apply w
 
 *No personal characteristics should be a barrier to joining Flora Food Group. We prohibit discrimination and harassment based on race, color, sex, religion, sexual orientation, national origin, disability, genetic information, pregnancy, or other personal characteristics.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

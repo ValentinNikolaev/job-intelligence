@@ -1,0 +1,27 @@
+schema_version: 2
+id: 0317c0ea-228f-4ae4-b008-84885cafb028
+title: Spezialist Netzwerk & Firewall (all gender)
+company: Actana Consulting Services GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: spezialist-netzwerk-firewall-all-gender-munich-296006
+  url: https://www.arbeitnow.com/jobs/companies/actana-consulting-services-gmbh/spezialist-netzwerk-firewall-all-gender-munich-296006
+  metadata:
+    tags:
+    - IT Security
+published_at: '2026-07-25T13:30:34Z'
+discovered_at: '2026-07-25T17:01:27Z'
+updated_at: '2026-07-25T17:01:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T17:01:27Z'
+analysis_priority: 0
+fingerprint: sha256:56ddf56fe3256b1dd44a572c29cb5d9d59352b35188df4f8514ff60199b094c4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
