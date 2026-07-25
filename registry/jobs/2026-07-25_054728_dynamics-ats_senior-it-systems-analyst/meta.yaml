@@ -1,0 +1,24 @@
+schema_version: 2
+id: bf3ab8d9-6807-4a4d-acd5-88c46d2c66fb
+title: Senior IT Systems Analyst
+company: Dynamics ATS
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-8862674750925927784'
+  url: https://jooble.org/desc/-8862674750925927784?ckey=senior+backend+engineer&rgn=55179&pos=15&groupId=293749696&elckey=5622779207545115560&p=1&aq=7989528670815758397&cid=15922&jobAge=23&brelb=100&bscr=11.2520485&scr=11.2520485
+published_at: '2026-07-24T14:14:07.1870000'
+discovered_at: '2026-07-25T05:47:28Z'
+updated_at: '2026-07-25T05:47:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:47:28Z'
+analysis_priority: 0
+fingerprint: sha256:3b4c5ff683bdeed9b305a9a073db9aa86f5ff9d69a3715562e263b17d4587888
+data_source: jooble
+content_source: jooble
+company_content_source: null

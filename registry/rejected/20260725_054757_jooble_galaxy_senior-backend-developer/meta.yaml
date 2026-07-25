@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '5420865223587532949'
+source_url: https://jooble.org/desc/5420865223587532949?ckey=remote+senior+backend+engineer&rgn=55180&pos=49&groupId=2134052230&elckey=3129137361214479319&p=1&aq=868906036715972358&cid=15922&jobAge=1079&brelb=100&bscr=421.489&scr=421.489
+title: Senior Backend Developer
+company: Galaxy
+location: New York, NY
+published_at: '2026-06-10T03:11:52.9070000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-10T03:11:52.9070000 is older than 7 days
+updated_at: '2026-07-25T05:47:57Z'
+rejected_at: '2026-07-25T05:47:57Z'

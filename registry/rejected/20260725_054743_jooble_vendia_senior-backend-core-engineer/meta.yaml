@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8260198571107131305'
+source_url: https://jooble.org/desc/8260198571107131305?ckey=remote+senior+backend+engineer&rgn=55180&pos=15&groupId=2134052230&elckey=3129137361214479319&p=1&aq=868906036715972358&cid=15922&jobAge=7271&brelb=100&bscr=892.83374&scr=892.83374
+title: Senior Backend / Core Engineer
+company: Vendia
+location: Remote
+published_at: '2025-09-25T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2025-09-25T00:00:00.0000000 is older than 7 days
+updated_at: '2026-07-25T05:47:43Z'
+rejected_at: '2026-07-25T05:47:43Z'

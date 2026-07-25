@@ -1,0 +1,24 @@
+schema_version: 2
+id: fdda8502-eb0b-44fb-8944-1395eb8a75ec
+title: Founding Backend Engineer
+company: Next Ventures
+company_url: null
+location: New York, NY
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-6775047042901600942'
+  url: https://jooble.org/desc/-6775047042901600942?ckey=remote+golang+backend+engineer&rgn=55180&pos=25&groupId=1106121903&elckey=-2478373172993192761&p=1&aq=2795983886770611038&cid=15922&jobAge=17&brelb=100&bscr=211.23898&scr=211.23898
+published_at: '2026-07-24T05:55:20.0570000'
+discovered_at: '2026-07-25T05:48:05Z'
+updated_at: '2026-07-25T05:48:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:48:05Z'
+analysis_priority: 0
+fingerprint: sha256:9e29655dec4c543cacaad9fd4cf5c39063fc979d7dbd668e27f016dae479ecb3
+data_source: jooble
+content_source: jooble
+company_content_source: null

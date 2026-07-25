@@ -186,3 +186,13 @@ runs:
   total_tokens: 14000
   note: Priority Cubbit application preparation; estimated from selected vacancy materials,
     research, and four package drafts.
+- run_id: 06956a6a0b7144ee963539fa4bc029c1
+  recorded_at: '2026-07-25T05:48:15Z'
+  workflow: prepare
+  model: codex:gpt-5.5:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 62000
+  output_tokens: 23000
+  total_tokens: 85000
+  note: normal application preparation for 2026-07-24_211614_lithos_senior-full-stack-developer-it-project-leader

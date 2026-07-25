@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '147065'
+source_url: https://jobicy.com/jobs/147065-staff-design-engineer
+title: Staff Design Engineer
+company: Miro
+location: Denmark,  Europe,  UK
+published_at: '2026-07-18T01:40:03Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-18T01:40:03Z is older than 7 days
+updated_at: '2026-07-25T05:47:12Z'
+rejected_at: '2026-07-25T05:47:12Z'
