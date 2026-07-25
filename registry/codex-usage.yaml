@@ -196,3 +196,14 @@ runs:
   output_tokens: 23000
   total_tokens: 85000
   note: normal application preparation for 2026-07-24_211614_lithos_senior-full-stack-developer-it-project-leader
+- run_id: 0b4a214a67054db38d493729c73174df
+  recorded_at: '2026-07-25T05:56:51Z'
+  workflow: prepare
+  model: codex:gpt-5.5:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 70000
+  output_tokens: 26000
+  total_tokens: 96000
+  note: Estimated normal application preparation for 2026-07-24_211613_sparkfabrik-s-r-l_php-developer;
+    exact Codex usage unavailable in desktop task.
