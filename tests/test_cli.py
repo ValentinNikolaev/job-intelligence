@@ -11,7 +11,7 @@ from unittest.mock import patch
 
 import yaml
 
-from jobintel.cli import _run_collector, main
+from jobintel.cli import _run_collector, _run_doctor, main
 from jobintel.models import NormalizedJob
 from jobintel.prefilter import RejectedRegistry
 from jobintel.registry import Registry
@@ -197,6 +197,81 @@ class CliTests(unittest.TestCase):
             self.assertIn("1. 91/100 Acme", text)
             self.assertIn("2. 84/100 Example", text)
             self.assertNotIn("99/100", text)
+
+    def test_doctor_ci_skips_only_host_local_converter_checks(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / "config").mkdir()
+            (root / "config" / "codex-workflows.yaml").write_text(
+                yaml.safe_dump(
+                    {
+                        "schema_version": 1,
+                        "prepare_min_score": 65,
+                        "priority_score": 75,
+                        "workflows": {
+                            "analyze": {
+                                "model": "gpt-5.6-luna",
+                                "reasoning": "low",
+                                "model_label": "codex:gpt-5.6-luna:low",
+                            },
+                            "prepare": {
+                                "model": "gpt-5.5",
+                                "reasoning": "medium",
+                                "model_label": "codex:gpt-5.5:medium",
+                            },
+                            "prepare_priority": {
+                                "model": "gpt-5.6-terra",
+                                "reasoning": "medium",
+                                "model_label": "codex:gpt-5.6-terra:medium",
+                            },
+                        },
+                    },
+                    sort_keys=False,
+                ),
+                encoding="utf-8",
+            )
+            registry_root = root / "registry"
+            candidate = registry_root / "candidate"
+            candidate.mkdir(parents=True)
+            (candidate / "linkedin-profile.md").write_text("LinkedIn\n", encoding="utf-8")
+            (candidate / "backend-engineer-cv.md").write_text("CV\n", encoding="utf-8")
+            prompts = root / "prompts"
+            prompts.mkdir()
+            (prompts / "vacancy-match.md").write_text("Match\n", encoding="utf-8")
+            (prompts / "vacancy-application.md").write_text("Apply\n", encoding="utf-8")
+            sources = root / "sources"
+            sources.mkdir()
+            env_path = sources / ".env"
+            env_path.write_text("", encoding="utf-8")
+            args = SimpleNamespace(
+                arguments=[],
+                force=False,
+                profile=None,
+                input=None,
+                workflow=None,
+                ci=True,
+            )
+
+            with patch(
+                "jobintel.cli.HostMarkdownDocxConverter",
+                return_value=SimpleNamespace(
+                    script_path=root / "missing.ps1",
+                    options_path=root / "missing.json",
+                    powershell=None,
+                ),
+            ), redirect_stdout(StringIO()):
+                self.assertEqual(0, _run_doctor(args, root, sources, registry_root, env_path))
+
+            args.ci = False
+            with patch(
+                "jobintel.cli.HostMarkdownDocxConverter",
+                return_value=SimpleNamespace(
+                    script_path=root / "missing.ps1",
+                    options_path=root / "missing.json",
+                    powershell=None,
+                ),
+            ), redirect_stdout(StringIO()):
+                self.assertEqual(1, _run_doctor(args, root, sources, registry_root, env_path))
 
 
 def _write_match(registry_root: Path, directory: str, score: int) -> None:

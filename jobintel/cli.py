@@ -87,6 +87,11 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--note", help="optional usage note")
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
+    parser.add_argument(
+        "--ci",
+        action="store_true",
+        help="doctor only: skip host-local Codex runtime checks unavailable on CI runners",
+    )
     return parser
 
 
@@ -99,6 +104,9 @@ def main(argv: list[str] | None = None) -> int:
     env_path = (args.env or sources_dir / ".env").resolve()
 
     target = args.target.casefold()
+    if args.ci and target != "doctor":
+        print("--ci is only valid with doctor", file=sys.stderr)
+        return 2
     if target == "catalog":
         if args.arguments or args.force or args.profile or args.input or args.workflow:
             print("Usage: python run.py catalog", file=sys.stderr)
@@ -970,8 +978,9 @@ def _run_doctor(
     env_path: Path,
 ) -> int:
     if args.arguments or args.force or args.profile or args.input or args.workflow:
-        print("Usage: python run.py doctor", file=sys.stderr)
+        print("Usage: python run.py doctor [--ci]", file=sys.stderr)
         return 2
+    ci_mode = bool(getattr(args, "ci", False))
 
     failures: list[str] = []
 
@@ -999,14 +1008,17 @@ def _run_doctor(
         project_root / "prompts" / "vacancy-application.md",
     ):
         check(f"prompt {path}", lambda path=path: _require_nonempty(path))
-    converter = HostMarkdownDocxConverter(project_root)
-    check("DOCX converter script", lambda: _require_file(converter.script_path))
-    check("DOCX options", lambda: _require_file(converter.options_path))
-    if converter.powershell:
-        print(f"OK: PowerShell ({converter.powershell})")
+    if ci_mode:
+        print("SKIP: host-local DOCX converter checks (--ci)")
     else:
-        failures.append("PowerShell")
-        print("ERROR: PowerShell executable not found", file=sys.stderr)
+        converter = HostMarkdownDocxConverter(project_root)
+        check("DOCX converter script", lambda: _require_file(converter.script_path))
+        check("DOCX options", lambda: _require_file(converter.options_path))
+        if converter.powershell:
+            print(f"OK: PowerShell ({converter.powershell})")
+        else:
+            failures.append("PowerShell")
+            print("ERROR: PowerShell executable not found", file=sys.stderr)
     print("NOTE: Codex model, network, and sandbox permissions are configured outside the repository.")
     return 1 if failures else 0
 

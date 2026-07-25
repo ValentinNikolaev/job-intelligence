@@ -59,25 +59,12 @@ jobs:
             fi
           }
 
-          run_and_report_info() {
-            local label="$1"
-            shift
-            echo "## ${label}" >> "$GITHUB_STEP_SUMMARY"
-            echo '```text' >> "$GITHUB_STEP_SUMMARY"
-            echo "+ $*" >> "$GITHUB_STEP_SUMMARY"
-            "$@" 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
-            local status=${PIPESTATUS[0]}
-            echo '```' >> "$GITHUB_STEP_SUMMARY"
-            echo "Exit code: ${status} (informational)" >> "$GITHUB_STEP_SUMMARY"
-            echo >> "$GITHUB_STEP_SUMMARY"
-          }
-
           run_and_report "Collect vacancies" python run.py all
           run_and_report "Regenerate registry index" python run.py reindex
           run_and_report "Write deterministic triage" python run.py triage
           run_and_report "Regenerate vacancy catalog" python run.py catalog
           run_and_report "Run unit tests" env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
-          run_and_report_info "Run repository doctor" python run.py doctor
+          run_and_report "Run repository doctor" python run.py doctor --ci
           run_and_report "Workflow summary" python run.py api workflow-summary --json
           run_and_report "Workflow limits" python run.py api workflow-limits --json
           run_and_report "Analyze queue" python run.py api queues analyze --json --limit 10
@@ -93,6 +80,11 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          if [ "${{ steps.deterministic.outputs.failure }}" = "1" ]; then
+            echo "Deterministic checks failed; refusing to commit generated changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
           git status --short
           if [ -z "$(git status --porcelain)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -121,7 +113,3 @@ jobs:
 
           echo "changed=true" >> "$GITHUB_OUTPUT"
           echo "Committed and pushed deterministic collection changes." >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Fail on deterministic command errors
-        if: steps.deterministic.outputs.failure == '1'
-        run: exit 1
