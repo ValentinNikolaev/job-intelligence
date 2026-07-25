@@ -1,0 +1,61 @@
+schema_version: 2
+id: ece308d4-d286-44b1-87bf-0b60a569cb69
+title: Senior Backend Engineer - Databases Pyroscope | UK | Remote
+company: Grafana Labs
+company_url: https://job-boards.greenhouse.io/grafanalabs
+location: United Kingdom (Remote)
+remote: true
+employment_type: null
+sources:
+- source: greenhouse
+  source_job_id: '6126889004'
+  url: https://job-boards.greenhouse.io/grafanalabs/jobs/6126889004
+  metadata:
+    board: grafanalabs
+    internal_job_id: 5191899004
+    requisition_id: '27158'
+    updated_at: '2026-07-24T16:46:53-04:00'
+    departments:
+    - id: 4076488004
+      name: 'R&D : Databases'
+      child_ids: []
+      parent_id: 4044019004
+    offices:
+    - id: 4087971004
+      name: EMEA
+      location: null
+      child_ids:
+      - 4088600004
+      - 4088601004
+      - 4088602004
+      - 4087972004
+      - 4087973004
+      - 4087974004
+      - 4087975004
+      - 4087976004
+      - 4087977004
+      - 4087978004
+      - 4087979004
+      parent_id: null
+    data_compliance:
+    - type: gdpr
+      requires_consent: false
+      requires_processing_consent: false
+      requires_retention_consent: false
+      retention_period: null
+      demographic_data_consent_applies: true
+    ai_disclaimer: <p>We use Greenhouse's AI-powered Talent Match tool to compare
+      your application against our job requirements.</p>
+    ai_opt_out_request_url: http://app4.greenhouse.io/ai_opt_out_request/job_post/6126889004/ai_opt_out
+published_at: '2026-07-24T16:46:53-04:00'
+discovered_at: '2026-07-25T05:46:03Z'
+updated_at: '2026-07-25T05:46:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:46:03Z'
+analysis_priority: 0
+fingerprint: sha256:3991eda19314b551824ebfbfdd59b2d72300735ce30cc2cd091432fbbc8316b8
+data_source: greenhouse
+content_source: greenhouse
+company_content_source: null

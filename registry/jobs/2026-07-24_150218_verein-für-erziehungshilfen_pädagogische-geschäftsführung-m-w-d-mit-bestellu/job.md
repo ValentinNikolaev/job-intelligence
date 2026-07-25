@@ -72,4 +72,4 @@ Für Rückfragen steht Ihnen unsere Geschäftsführerin Stefanie Reuter unter 02
 
 Wir freuen uns auf Ihre Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

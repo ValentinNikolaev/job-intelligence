@@ -1,0 +1,24 @@
+schema_version: 2
+id: b94a56d1-ecd3-4573-996a-230872318801
+title: Associate Account Director
+company: RetailNext
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: associate-account-director-berlin-444845
+  url: https://www.arbeitnow.com/jobs/companies/retailnext/associate-account-director-berlin-444845
+published_at: '2026-07-24T20:45:23Z'
+discovered_at: '2026-07-25T05:44:12Z'
+updated_at: '2026-07-25T05:44:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:44:12Z'
+analysis_priority: 0
+fingerprint: sha256:5f9640239e26ee7696c7706c78d6b501816bb92501560098f09345d9f4e978c2
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

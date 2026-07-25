@@ -1,0 +1,12 @@
+schema_version: 1
+source: greenhouse
+source_job_id: '6105600004'
+source_url: https://job-boards.greenhouse.io/grafanalabs/jobs/6105600004
+title: Staff Software Engineer – Identity and Access, Identity Squads | UK | Remote
+company: Grafana Labs
+location: United Kingdom (Remote)
+published_at: '2026-07-01T08:18:01-04:00'
+rejection_category: stale
+rejection_reason: published_at 2026-07-01T08:18:01-04:00 is older than 7 days
+updated_at: '2026-07-25T05:46:12Z'
+rejected_at: '2026-07-25T05:46:12Z'

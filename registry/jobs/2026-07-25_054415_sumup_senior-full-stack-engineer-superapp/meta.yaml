@@ -1,0 +1,24 @@
+schema_version: 2
+id: cd2996f7-1bfc-4c39-acdf-bb8a08fddfec
+title: Senior Full-Stack Engineer - SuperApp
+company: SumUp
+company_url: null
+location: Berlin, Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-full-stack-engineer-superapp-berlin-452506
+  url: https://www.arbeitnow.com/jobs/companies/sumup/senior-full-stack-engineer-superapp-berlin-452506
+published_at: '2026-07-24T20:45:22Z'
+discovered_at: '2026-07-25T05:44:15Z'
+updated_at: '2026-07-25T05:44:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:44:15Z'
+analysis_priority: 0
+fingerprint: sha256:94d7e438660c9ccf8f896b0460764507915d6268d1c61e62039c6e250f84e8be
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

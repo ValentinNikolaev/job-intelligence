@@ -88,4 +88,4 @@ Human Resources
 
 We kindly ask for your understanding that, in connection with this vacancy, we are not accepting unsolicited applications or inquiries from recruitment agencies or staffing service providers.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

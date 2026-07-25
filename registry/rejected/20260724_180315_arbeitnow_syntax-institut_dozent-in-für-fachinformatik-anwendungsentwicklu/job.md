@@ -63,4 +63,4 @@ Wenn du glaubst, dass diese Rolle gut zu dir passt, auch wenn du nicht jeden Pun
 
 Wir freuen uns über deine aussagekräftige Bewerbung mit CV und optional einem **kurzen** Anschreiben.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

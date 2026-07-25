@@ -78,4 +78,4 @@ Möchtest du mit uns den Impact Finance Sektor gestalten? Dann bewirb dich jetzt
 
 - Welche **Erfahrungen / Fähigkeiten** bringst du für diese Stelle mit und wie möchtest du sie einsetzen?
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

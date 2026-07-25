@@ -1,0 +1,31 @@
+schema_version: 2
+id: 88455973-6566-42ab-92ab-697ef294d438
+title: Prozessentwickler, Prozessoptimierer - mit KI (Quereinsteiger) (m/w/d)
+company: kalkül Dresden gmbh Steuerberatungsgesellschaft
+company_url: null
+location: Dresden
+remote: false
+employment_type: Full-time permanent, student (high school)
+sources:
+- source: arbeitnow
+  source_job_id: prozessentwickler-prozessoptimierer-mit-ki-quereinsteiger-dresden-312689
+  url: https://www.arbeitnow.com/jobs/companies/kalkul-dresden-gmbh-steuerberatungsgesellschaft/prozessentwickler-prozessoptimierer-mit-ki-quereinsteiger-dresden-312689
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - student (high school)
+published_at: '2026-07-25T01:20:11Z'
+discovered_at: '2026-07-25T05:44:09Z'
+updated_at: '2026-07-25T05:44:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:44:09Z'
+analysis_priority: 0
+fingerprint: sha256:1a2985011c4faab3f21201e8ba0d0a4eee7ffbd903e6e912dc6421b26fab5626
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

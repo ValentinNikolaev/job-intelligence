@@ -68,4 +68,4 @@ Du arbeitest in einem motivierten Team, bekommst Raum für Eigenverantwortung un
 
 Möchtest du in einem familiären Umfeld an spannenden Projekten mitarbeiten? Dann bewirb dich jetzt als **Werkstudent*in Product Compliance & Quality** bei GORNATION und lass uns gemeinsam die Qualität unserer Produkte auf das nächste Level bringen! Wir freuen uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

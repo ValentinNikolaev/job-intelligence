@@ -1,0 +1,24 @@
+schema_version: 2
+id: 7229cbd0-637c-410b-bdce-fd458dee5d2e
+title: Senior Backend Engineer (Golang) - Balance Management
+company: SumUp
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-backend-engineer-golang-balance-management-berlin-365224
+  url: https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-golang-balance-management-berlin-365224
+published_at: '2026-07-24T20:45:22Z'
+discovered_at: '2026-07-25T05:44:17Z'
+updated_at: '2026-07-25T05:44:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:44:17Z'
+analysis_priority: 0
+fingerprint: sha256:183e3894d6c15ddbc6bad844af1d6b305f6ce8cdc7fabba9404416dc1bf9f10c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

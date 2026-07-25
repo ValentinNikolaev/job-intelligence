@@ -1,0 +1,24 @@
+schema_version: 2
+id: a18d7200-0a74-4007-a628-5196b1d271ed
+title: Senior Data Science/ML Engineer - Financial Crime
+company: SumUp
+company_url: null
+location: Berlin, Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-science-ml-engineer-financial-crime-berlin-119994
+  url: https://www.arbeitnow.com/jobs/companies/sumup/senior-data-science-ml-engineer-financial-crime-berlin-119994
+published_at: '2026-07-24T20:45:22Z'
+discovered_at: '2026-07-25T05:44:16Z'
+updated_at: '2026-07-25T05:44:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-25T05:44:16Z'
+analysis_priority: 0
+fingerprint: sha256:7de66799cb7f90c44e412e978987cbad86a4a68fe3cbb65090b23faaad229ada
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
