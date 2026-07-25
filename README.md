@@ -343,9 +343,11 @@ validation, failure handling, and configuration details.
 
 ### Codex tasks and model routing
 
-No schedule is registered automatically. Versioned task prompts live under `prompts/`,
-and the reusable repo skill lives under `.agents/skills/job-intelligence-workflow/`.
-Create separate tasks because a running task cannot switch its own model:
+Deterministic collection and maintenance are handled by the GitHub Actions workflow in
+`.github/workflows/job-intelligence-collection.yml`. Versioned Codex task prompts for
+model-dependent work live under `prompts/`, and the reusable repo skill lives under
+`.agents/skills/job-intelligence-workflow/`. Create separate Codex tasks because a
+running task cannot switch its own model:
 
 | Task | Model | Reasoning |
 |---|---|---|
@@ -360,17 +362,20 @@ the provenance label, but does not switch the active model. If a configured mode
 unavailable, the task must report that limitation instead of publishing under another
 workflow.
 
-For Scheduled Tasks, use CodexSandboxOnline for sandboxed command execution when
-collectors need network access, and run the versioned prompts serially: collection,
-analysis, priority preparation, then normal preparation. Each model-dependent run handles
-exactly one vacancy, so its cadence controls token use. CodexSandboxOnline or worktree
-execution requires a committed repository baseline plus explicit secret provisioning
-through the task or host environment; never commit `sources/.env`.
+For Scheduled Tasks, run the versioned prompts serially after the GitHub collection
+workflow has had a chance to publish fresh registry changes: analysis, priority
+preparation, then normal preparation. Each model-dependent run must pull the latest
+committed repository state before selecting work. Each model-dependent run handles
+exactly one vacancy or one sealed analysis batch, so its cadence controls token use.
+CodexSandboxOnline or worktree execution requires a committed repository baseline plus
+explicit secret provisioning through the task or host environment; never commit
+`sources/.env`.
 
-The collection task is suitable for a three-hour cadence with GPT-5.6 Luna and low
-reasoning. Every successful mutating task finishes by cataloging, validating, committing
-all project-file additions/updates/deletions, printing a short changelog, and pushing the
-current branch. Ignored secrets and local work files are never staged.
+The GitHub collection workflow is suitable for a three-hour cadence. It runs collection,
+indexing, deterministic triage, catalog generation, tests, doctor checks, queue/status
+JSON commands, and `python run.py top 5`; each Python command writes its output to the
+GitHub step summary. If project files changed, the workflow commits and pushes the full
+deterministic update. Ignored secrets and local work files are never staged.
 
 ### Vacancy catalog
 
