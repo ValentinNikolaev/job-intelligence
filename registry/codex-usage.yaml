@@ -250,3 +250,13 @@ runs:
   credits: 0.0
   note: Batch pack contained 10 vacancies; all 10 publication results were skipped
     unchanged.
+- run_id: 4561831fd8bd44c28c1bfa6e0e76719b
+  recorded_at: '2026-07-25T17:27:18Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
