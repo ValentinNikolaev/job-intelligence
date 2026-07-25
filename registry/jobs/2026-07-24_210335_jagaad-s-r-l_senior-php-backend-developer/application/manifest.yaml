@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:05f5197ec250959d48c5fffcd8c985265c23a49e792974128c8194e54d20599a
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:01dd63a319b2954c0ba87f80272e6c4eb1028d66f6481b5be8ffff76c61848f6
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: June 2026
+cv_export_stem: CV_ValentinNikolaev_jagaadsrl_SeniorPHPBackendDeveloper
+generated_at: '2026-07-25T21:43:21Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_jagaadsrl_SeniorPHPBackendDeveloper.md
+- CV_ValentinNikolaev_jagaadsrl_SeniorPHPBackendDeveloper.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md

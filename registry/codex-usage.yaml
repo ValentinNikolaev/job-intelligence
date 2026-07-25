@@ -292,3 +292,14 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: Batch results validated; all 10 skipped unchanged
+- run_id: 7c28a74c1ca34e76ae3039b92ad30e47
+  recorded_at: '2026-07-25T21:44:06Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 14000
+  output_tokens: 7500
+  total_tokens: 21500
+  note: Estimated Codex usage for Jagaad Senior PHP Backend Developer priority application
+    preparation
