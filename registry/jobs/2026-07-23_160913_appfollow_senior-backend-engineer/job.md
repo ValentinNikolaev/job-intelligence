@@ -1,6 +1,6 @@
 # Senior Backend Engineer
 
-Posted: 2026-07-25T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 Role Description
 This fully **remote **role is for a **Senior Backend Engineer **to help grow AppFollow globally. You'll work on features that analyze and manage app ratings and reviews, automate workflows, and track app store performance.

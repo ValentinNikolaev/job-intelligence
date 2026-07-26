@@ -1,0 +1,29 @@
+schema_version: 2
+id: c6e2dd47-cc49-46c3-812f-12821576131a
+title: Steuerberater (m/w/d) in Mülheim, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Mülheim
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-mulheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-444664
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-mulheim-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-444664
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-26T06:30:48Z'
+discovered_at: '2026-07-26T09:01:56Z'
+updated_at: '2026-07-26T09:01:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T09:01:56Z'
+analysis_priority: 0
+fingerprint: sha256:1a76e6d6a33ec88f5381b1ddce4ae6eab3d3a61979998da55b174b57b3c28012
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

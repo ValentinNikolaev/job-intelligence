@@ -1,0 +1,24 @@
+schema_version: 2
+id: e937829d-6248-4495-8501-99bf8b202b67
+title: Senior QC Inspector
+company: Dynamics ATS
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '9059811251766034856'
+  url: https://jooble.org/desc/9059811251766034856?ckey=senior+backend+engineer&rgn=55179&pos=17&groupId=293749696&elckey=672920176233927684&p=1&aq=6023194142576397265&cid=15922&jobAge=147&brelb=100&bscr=10.862402&scr=10.862402
+published_at: '2026-07-20T00:00:00.0000000'
+discovered_at: '2026-07-26T09:05:16Z'
+updated_at: '2026-07-26T09:05:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T09:05:16Z'
+analysis_priority: 0
+fingerprint: sha256:23a6878b797cebf4a10ce51c1036823a3f422308e29774c2056015a92850a149
+data_source: jooble
+content_source: jooble
+company_content_source: null

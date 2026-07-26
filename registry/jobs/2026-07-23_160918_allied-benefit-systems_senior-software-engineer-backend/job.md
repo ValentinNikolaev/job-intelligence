@@ -1,6 +1,6 @@
 # Senior Software Engineer - Backend
 
-Posted: 2026-07-18T00:00:00.0000000
+Posted: 2026-07-25T00:00:00.0000000
 
 Role Description
 The **Senior **Software **Engineer Backend **is responsible for designing and developing backend software solutions, including APIs and business... ...of sitting and computer work.

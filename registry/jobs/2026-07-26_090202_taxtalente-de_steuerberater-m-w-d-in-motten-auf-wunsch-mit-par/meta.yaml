@@ -1,0 +1,29 @@
+schema_version: 2
+id: dd7a6981-01ff-4342-8834-1b1444b209ba
+title: Steuerberater (m/w/d) in Motten, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Motten
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-motten-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-461527
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-motten-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-461527
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-26T06:30:46Z'
+discovered_at: '2026-07-26T09:02:02Z'
+updated_at: '2026-07-26T09:02:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T09:02:02Z'
+analysis_priority: 0
+fingerprint: sha256:a27c0591a0977efbcb37eac5987ee4506bc878dcec49be6c8c95245b07ed0119
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
