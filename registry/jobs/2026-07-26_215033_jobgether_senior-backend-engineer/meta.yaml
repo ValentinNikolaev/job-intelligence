@@ -1,0 +1,24 @@
+schema_version: 2
+id: c6adf139-fbed-4a43-aed1-cc672280829b
+title: Senior Backend Engineer
+company: Jobgether
+company_url: null
+location: Italia
+remote: null
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5816808559'
+  url: https://www.adzuna.it/details/5816808559?utm_medium=api&utm_source=b6674f60
+published_at: '2026-07-26T23:43:01Z'
+discovered_at: '2026-07-26T21:50:33Z'
+updated_at: '2026-07-26T21:50:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:50:33Z'
+analysis_priority: 0
+fingerprint: sha256:c5cc0603623f87e241eeceeb59f7de3fbbacca049efebb2850058f5e99d0593d
+data_source: adzuna
+content_source: adzuna
+company_content_source: null
