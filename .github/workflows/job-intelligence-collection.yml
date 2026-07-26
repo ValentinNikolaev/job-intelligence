@@ -41,10 +41,13 @@ jobs:
         shell: bash
         run: |
           set +e
-          failure=0
+          hard_failure=0
+          soft_failure=0
 
           run_and_report() {
             local label="$1"
+            local failure_mode="$2"
+            shift
             shift
             echo "## ${label}" >> "$GITHUB_STEP_SUMMARY"
             echo '```text' >> "$GITHUB_STEP_SUMMARY"
@@ -55,25 +58,31 @@ jobs:
             echo "Exit code: ${status}" >> "$GITHUB_STEP_SUMMARY"
             echo >> "$GITHUB_STEP_SUMMARY"
             if [ "$status" -ne 0 ]; then
-              failure=1
+              if [ "${failure_mode}" = "soft" ]; then
+                soft_failure=1
+                echo "::warning title=${label} failed::Continuing because collection sources can have transient network/API failures; deterministic checks still gate commits."
+              else
+                hard_failure=1
+              fi
             fi
           }
 
-          run_and_report "Collect vacancies" python run.py all
-          run_and_report "Regenerate registry index" python run.py reindex
-          run_and_report "Write deterministic triage" python run.py triage
-          run_and_report "Regenerate vacancy catalog" python run.py catalog
-          run_and_report "Run unit tests" env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
-          run_and_report "Run repository doctor" python run.py doctor --ci
-          run_and_report "Workflow summary" python run.py api workflow-summary --json
-          run_and_report "Workflow limits" python run.py api workflow-limits --json
-          run_and_report "Analyze queue" python run.py api queues analyze --json --limit 10
-          run_and_report "Priority preparation queue" python run.py api queues prepare-priority --json --limit 10
-          run_and_report "Normal preparation queue" python run.py api queues prepare --json --limit 10
-          run_and_report "Source API usage" python run.py api source-usage --json
-          run_and_report "Top vacancies" python run.py top 5
+          run_and_report "Collect vacancies" soft python run.py all
+          run_and_report "Regenerate registry index" hard python run.py reindex
+          run_and_report "Write deterministic triage" hard python run.py triage
+          run_and_report "Regenerate vacancy catalog" hard python run.py catalog
+          run_and_report "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
+          run_and_report "Run repository doctor" hard python run.py doctor --ci
+          run_and_report "Workflow summary" hard python run.py api workflow-summary --json
+          run_and_report "Workflow limits" hard python run.py api workflow-limits --json
+          run_and_report "Analyze queue" hard python run.py api queues analyze --json --limit 10
+          run_and_report "Priority preparation queue" hard python run.py api queues prepare-priority --json --limit 10
+          run_and_report "Normal preparation queue" hard python run.py api queues prepare --json --limit 10
+          run_and_report "Source API usage" hard python run.py api source-usage --json
+          run_and_report "Top vacancies" hard python run.py top 5
 
-          echo "failure=${failure}" >> "$GITHUB_OUTPUT"
+          echo "failure=${hard_failure}" >> "$GITHUB_OUTPUT"
+          echo "soft_failure=${soft_failure}" >> "$GITHUB_OUTPUT"
 
       - name: Commit deterministic changes
         id: commit
