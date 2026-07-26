@@ -18,11 +18,13 @@ sources:
       GO role; distributed storage and cloud infrastructure stack.
 published_at: null
 discovered_at: '2026-07-24T21:25:02Z'
-updated_at: '2026-07-24T21:25:02Z'
-status: found
+updated_at: '2026-07-26T23:57:31Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-07-24T21:25:02Z'
+- status: applied
+  changed_at: '2026-07-26T23:57:31Z'
 analysis_priority: 100
 fingerprint: sha256:a64682237851ae26b4bdb408dc4023c02a4f2cc03d5524cd127ef8887ec2ea58
 data_source: custom

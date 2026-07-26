@@ -21,6 +21,7 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   evaluated independently, and published only after deterministic validation.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
+- For CV preparation, do not include roles or employment experience older than 10 years in the generated CV `Experience` section. Older evidence may support skills, chronology, or interview preparation only when relevant.
 - Change vacancy status only after an explicit user request, through `python run.py status`; never infer status from artifacts or external events.
 - Before finishing code changes, run `python -m unittest discover -v` with an available Python 3.11+ runtime and search project code/configuration for prohibited API integrations.
 

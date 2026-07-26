@@ -15,6 +15,10 @@ vacancy-specific application package.
 - Never mention the Zend PHP Certification or Zend Certified PHP Developer credential
   in the generated CV, cover letter, application analysis, or interview preparation,
   even when source candidate records include it.
+- In the generated CV `Experience` section, include only roles and employment
+  experience from the most recent 10 years. Older experience may inform supported
+  skills, chronology, or interview preparation only when relevant, but must not appear
+  as dated Experience entries in the CV.
 - When candidate sources conflict, report the conflict or preserve the uncertainty;
   do not silently choose the more favorable claim.
 - When a metric is unavailable, improve wording with a factual outcome instead of a
@@ -95,7 +99,8 @@ must not be wrapped in a Markdown code fence.
 An ATS-friendly tailored CV with simple headings, no tables, columns, graphics, icons, or
 decorative elements. Preserve candidate contact details and factual chronology. Include
 at least Summary, Skills, Experience, Education, and Languages; include Certifications
-when supported. This is the final canonical tailored CV.
+when supported. The Experience section must not list roles or employment experience older
+than 10 years. This is the final canonical tailored CV.
 
 ### `cover_letter_markdown`
 
