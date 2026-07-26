@@ -334,3 +334,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: ecf51fb7abf5494d8872959fb22dd531
+  recorded_at: '2026-07-26T10:23:58Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: No newly analyzed vacancies; deterministic publish skipped unchanged results
