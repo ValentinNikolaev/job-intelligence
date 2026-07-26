@@ -1,84 +1,83 @@
 ## Vacancy Summary
 
-**Role:** Senior Software Engineer, remote, permanent full-time. The posted salary is EUR 42,000–56,000. The work centers on PHP Laravel backend services, microservices, asynchronous workflows, distributed-system reliability, performance, and collaboration with Product and Design.
+**Role:** Senior Software Engineer, remote, full-time, Engineering Department. Salary listed: EUR42,000-EUR56,000.
 
-**Explicit requirements:** 5+ years of backend development; deep PHP Laravel expertise; system design and clean architecture; microservices, async patterns, and distributed systems; fluent written and spoken English; tested production-ready code. The stated stack includes PHP/Laravel, NodeJS, Python, MySQL, DynamoDB, Redis, AWS EventBridge, RabbitMQ, AWS ECS/Lambda, Docker, GitHub Actions, PHPUnit, Jest, Cypress, and AI/LLM tooling.
+**Explicit requirements:** Five or more years of backend development; deep PHP Laravel knowledge; system design and engineering trade-offs; microservices, asynchronous patterns, and distributed systems; English fluency; SaaS or platform experience. The listed stack includes PHP/Laravel, Node.js, Python, React, TypeScript, MySQL, DynamoDB, Redis, AWS EventBridge, RabbitMQ, AWS ECS and Lambda, Docker, GitHub Actions, and AI/LLM tooling.
 
-**Reasonable inferences:** the interview will test design trade-offs, debugging and reliability thinking, ownership, and communication in a fast-moving remote product team. The job’s carrier integrations and high request volume make integration boundaries, idempotency, retries, observability, and performance especially relevant.
+**Explicit responsibilities:** Design scalable Laravel services, contribute to a microservices evolution, integrate AI into shipping workflows, own performance and reliability, work with Product and Design, and write tested production code.
 
-**Candidate fit:** strong for PHP/Laravel, APIs, event-driven systems, RabbitMQ, AWS/Kubernetes, GitHub Actions, microservice architecture, performance, operational reliability, AI-assisted automation, and technical leadership. Direct evidence is not available for NodeJS, Python, DynamoDB, Docker, PHPUnit/Jest/Cypress, logistics, or native English fluency; these must remain gaps.
+**Reasonable inferences:** The technical interview will probe Laravel architecture, message delivery, service boundaries, failure handling, and API/integration design. The practical assessment may test implementation judgment under ambiguous requirements. Recruiters will test salary alignment, remote-meeting availability, English communication, and motivation.
+
+**Candidate fit:** Strong. The candidate has supported PHP/Laravel, RabbitMQ, AWS, CI/CD, microservices, production reliability, high-volume messaging, and automation claims. Candidate evidence does not support Node.js, Python, React, TypeScript, DynamoDB, Redis, or direct shipping-domain experience.
 
 ## Company Research
 
-**Verified facts:** ShippyPro describes its product as a shipping management platform for e-commerce that centralizes labels, tracking, returns, carrier integrations, and automation. Its public site states it connects 190+ carriers and reaches 160+ countries, and presents APIs and integration capabilities for ERP, WMS, OMS, and e-commerce systems. [ShippyPro platform](https://www.shippypro.com/en/) [Developer/API overview](https://www.shippypro.com/en/)
-
-**Verified facts from the vacancy:** the company describes a remote-first engineering role with occasional HQ meetings, a PHP Laravel backend evolving toward microservices, and work on carrier integrations, async workflows, distributed systems, and AI-enabled shipping workflows. [Original vacancy](https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743)
-
-**Inference:** because the product bridges merchants, e-commerce channels, and carriers, robust integrations and careful handling of failure modes are likely central engineering concerns.
-
-**Unknown:** public sources reviewed do not establish the current size of the engineering organization, the exact team topology, or the day-to-day use of each listed technology.
+- **Fact:** [ShippyPro's product site](https://www.shippypro.com/en/) describes a shipping-management platform that centralizes labels, tracking, returns, carrier selection, and shipping automation for e-commerce. It reports 190+ connected carriers, more than 100 million shipments per year, and 2,000+ customers.
+- **Fact:** The same site describes API integrations and a library that connects ERP, WMS, OMS, and e-commerce systems. These facts make integration reliability and operational scale relevant to the role.
+- **Fact:** [The company careers page](https://www.shippypro.com/en/work-with-us) is public, but its accessible content does not establish team size, engineering process, or a detailed remote policy for this role.
+- **Inference:** The product's carrier, e-commerce, and enterprise-system integrations make resilient APIs, asynchronous workflows, monitoring, and clear service contracts central to the engineering work.
+- **Unknown:** The public sources reviewed do not confirm the exact microservice boundaries, on-call expectations, testing practices, AI implementation, or the technical assessment format.
 
 ## Initial Resume Audit
 
-**Impact — 8/10.** Strength: evidence includes high-volume email delivery, reliability work, and measurable outcomes. Weakness: the most role-relevant PHP/Laravel and integration work is not foregrounded. Rewrite: “Built Laravel backend services and improved API and database performance across production systems.”
+**Baseline score: 8/10.**
 
-**Keyword relevance — 8/10.** Strength: PHP, Laravel, AWS, RabbitMQ, microservices, CI/CD, and AI automation are supported. Weakness: the summary did not clearly connect these to distributed and asynchronous backend work. Rewrite: “PHP/Laravel backend engineer experienced in event-driven services, APIs, and production reliability.”
+| Dimension | Score | Strength | Weakness | Concrete rewrite |
+| --- | --- | --- | --- | --- |
+| Impact | 8 | Includes scale and measurable automation outcomes. | Some bullets state activity before outcome. | “Built message-delivery pipelines with fallback logic, retries, and monitoring to improve reliability during incidents and peak load.” |
+| Keyword relevance | 8 | PHP, Laravel, RabbitMQ, AWS, Kubernetes, microservices, and CI/CD match the role. | Does not foreground SaaS, integrations, or asynchronous systems. | Add “SaaS,” “REST APIs,” and “Event-Driven Systems” to Skills. |
+| Readability | 8 | Clear chronology and concise technical language. | Earlier descriptions can contain dense stacks. | Keep one outcome per bullet and retain only relevant tools. |
+| Summary effectiveness | 8 | Establishes senior backend background and PHP/Go focus. | Did not connect scale and reliability to the target role. | Mention high-volume service delivery and production reliability. |
+| ATS compatibility | 9 | Simple headings and standard terms. | Candidate evidence cannot cover parts of the listed stack. | Name only supported terms; leave unsupported terms out. |
 
-**Readability — 7/10.** Strength: source chronology is clear. Weakness: duplicate sources contain conflicting dates and uneven detail. Rewrite: consolidate the CV to selected, scannable role-relevant evidence while retaining factual chronology.
-
-**Summary effectiveness — 7/10.** Strength: it establishes seniority and backend focus. Weakness: it underplays technical ownership and PHP/Laravel. Rewrite: the tailored summary now names PHP/Laravel, architecture, operational scale, and ownership.
-
-**ATS compatibility — 8/10.** Strength: supported stack terms are available. Weakness: several vacancy terms cannot safely be claimed. Rewrite: include supported exact terms without adding unsupported NodeJS, Python, DynamoDB, Docker, or test-framework experience.
-
-**Overall baseline: 7.6/10.** The most important changes are to elevate PHP/Laravel, APIs, reliability, message-driven architecture, and performance evidence; make the candidate’s technical ownership explicit; and preserve stated gaps.
+**Most important changes:** Move PHP/Laravel, RabbitMQ, AWS, microservices, production reliability, and API work to the top; put the 50-million-email scale evidence in the experience section; exclude unsupported stack terms.
 
 ## Strict Hiring Manager Review
 
-**Strengths:**
+**Strengths**
 
-1. Credible operational-scale evidence: 50 million emails per month and peak traffic. This matters because the role owns high-volume backend services.
-2. Relevant architecture and integration evidence: APIs, RabbitMQ, microservices, Laravel/Symfony, AWS, and service migration. This maps directly to the backend evolution described.
-3. Leadership and cross-functional delivery experience. This supports the ownership and Product/Design collaboration expectations.
+- PHP, Laravel, RabbitMQ, MySQL, AWS, and GitHub Actions map to core parts of the stated backend stack.
+- The 50-million-email service and BFCM traffic experience provide credible evidence of high-volume operational work.
+- The Simple.life and airSlate work demonstrates integrations, automation, observability, and cross-system migrations.
 
-**Material weaknesses:**
+**Material weaknesses and factual treatment**
 
-1. No source-backed NodeJS, Python, DynamoDB, Docker, PHPUnit, Jest, or Cypress experience. This matters because those are listed tools. Safe rewrite: do not claim them; prepare a direct learning-plan answer.
-2. No logistics-domain evidence. This matters because carrier workflows have domain-specific edge cases. Safe rewrite: position integration and high-volume messaging experience as transferable, not equivalent.
-3. Overlap and date conflict between Simple.life and CRURATED in the source records. This matters for recruiter screening. Safe rewrite: use only the more current CV record’s Simple.life end date and explain chronology truthfully if asked.
+- The CV does not prove Node.js, Python, React, TypeScript, DynamoDB, Redis, or AWS Lambda. These omissions matter because the job lists them. Do not add them; state willingness to discuss adjacent work only when asked.
+- The source record does not describe shipping-domain experience. The application instead connects messaging, integrations, and reliability experience to carrier-workflow needs without claiming logistics expertise.
+- LinkedIn lists a CRURATED role overlapping with Simple.life, while the primary CV does not. This affects chronology confidence. Omit the unreconciled role from the tailored CV and prepare an accurate explanation if asked.
 
 ## Red Flags
 
-- **Timeline conflict:** LinkedIn says Simple App is present and contains a CRURATED overlap; the CV says Simple.life ended March 2026. Do not conceal this; prepare a concise factual explanation after confirming the candidate’s current status.
-- **Unsupported-stack risk:** Avoid claiming direct NodeJS, Python, Docker, DynamoDB, or framework-specific test experience. Explain adjacent experience and willingness to learn only if true.
-- **Senior role scope:** The CV has strong technical-lead evidence, but this vacancy is hands-on. Emphasize current hands-on backend ownership and production troubleshooting.
+- **Employment chronology:** The primary CV lists Simple.life through March 2026, while LinkedIn says Present. Use the primary CV date in this package and confirm the current employment status before submission.
+- **Overlapping LinkedIn role:** LinkedIn records CRURATED from August 2024 to January 2026 during the Simple.life period. Do not add it until the candidate confirms whether it was concurrent work.
+- **Technology gaps:** Node.js, Python, React, TypeScript, DynamoDB, Redis, and direct shipping experience lack source support. Do not use these as keywords or interview claims.
+- **Salary:** The listed range needs explicit evaluation by the candidate; it does not affect technical fit.
 
 ## ATS Keyword Analysis
 
-**Prominent vacancy terms:** PHP, Laravel, backend services, microservices, distributed systems, async patterns, system design, clean architecture, MySQL, Redis, RabbitMQ, AWS, GitHub Actions, performance, reliability.
+**Prominent vacancy terms:** PHP, Laravel, backend services, microservices, distributed systems, asynchronous workflows, AI/LLMs, performance, reliability, SaaS, AWS, RabbitMQ, MySQL, Docker, GitHub Actions.
 
-**Supported matches:** PHP, Laravel, backend APIs/services, microservices, event-driven systems, system design, MySQL, RabbitMQ, AWS, GitHub Actions, performance optimization, monitoring, and production reliability.
+**Supported matches:** PHP, Laravel, backend services, microservices, asynchronous/event-driven systems, AI/LLM automation, performance optimization, production reliability, SaaS, AWS, RabbitMQ, MySQL, Docker, and GitHub Actions.
 
-**Missing required terms:** none that can be safely added beyond the supported phrasing above; “async patterns” is supported in spirit by event-driven systems and message pipelines but is not asserted as a separate unverified specialty.
+**Underrepresented supported terms added or emphasized:** REST APIs, integrations, event-driven systems, CI/CD, monitoring, and production reliability.
 
-**Underrepresented supported terms improved:** Laravel, APIs, integration-heavy systems, retries, monitoring, performance, technical ownership, and high-volume delivery.
-
-**Must not add:** NodeJS, Python, DynamoDB, Docker, Redis, PHPUnit, Jest, Cypress, logistics experience, or native-level English, because the candidate evidence does not support direct claims.
+**Terms deliberately excluded:** Node.js, Python, React, TypeScript, DynamoDB, Redis, AWS EventBridge, AWS Lambda, n8n, LangChain, vector databases, and direct shipping logistics. Candidate records do not support them.
 
 ## Major CV Changes
 
-- **Summary:** Before → broad backend profile. After → explicit PHP/Laravel, Go, APIs, event-driven systems, AWS, reliability, and ownership.
-- **airSlate:** Before → infrastructure and performance facts were dispersed. After → concise PHP/Laravel, service migration, API/database performance, CI/CD, and operational work.
-- **Simple.life:** Before → automation work was described in product terms. After → emphasizes integrations, Go backend ownership, retries, monitoring, and reliability.
-- **Skills:** Before → technology groups. After → a role-ordered, ATS-readable list of only source-supported skills.
+- **Summary:** Before, the summary presented broad backend experience. After, it anchors that experience in PHP/Laravel, event-driven systems, reliability, and a high-volume service.
+- **Skills:** Before, relevant terms appeared across sections. After, the Skills section leads with supported PHP, Laravel, RabbitMQ, AWS, MySQL, CI/CD, observability, and architecture terms.
+- **airSlate:** Before, infrastructure work had less connection to operating services. After, the bullets pair performance work with production stability and the ECS-to-Kubernetes migration.
+- **PDFfiller:** Before, scale appeared as one detail. After, the service scale, team leadership, and peak-traffic experience form a compact proof point for reliability work.
 
 ## Final Quality Gate
 
-Factual support: **9/10** — claims are traceable to candidate sources; unsupported tools are excluded.  
-Role fit: **8/10** — strong PHP/Laravel, reliability, integration, and architecture evidence.  
-Recruiter screening potential: **8/10** — seniority and scale are clear; timeline questions need a prepared factual answer.  
-Hiring-manager appeal: **8/10** — operational ownership and high-volume systems are relevant.  
-ATS compatibility: **8/10** — core supported terms are prominent, while genuine gaps remain transparent.
+- **Factual support:** 9/10. Every included claim appears in the supplied candidate sources; unreconciled employment detail remains excluded.
+- **Role fit:** 9/10. PHP/Laravel, messaging, AWS, microservices, and operating high-volume services align closely.
+- **Recruiter screening potential:** 8/10. Strong core fit; salary, current status, and overlapping LinkedIn chronology need prepared answers.
+- **Hiring-manager appeal:** 9/10. The CV offers concrete evidence of technical ownership, integration work, and reliability under load.
+- **ATS compatibility:** 9/10. The format is simple, scannable, and uses supported vacancy terminology without keyword stuffing.
 
 ## Recommendation
 
-**Strong Apply.** The candidate has unusually relevant evidence in PHP/Laravel, high-volume services, event-driven systems, backend integrations, production reliability, and technical ownership. The main reservations are unsupported tools in the broader stack and no direct logistics evidence; neither should be obscured.
+**Strong Apply.** The candidate offers direct PHP/Laravel and backend-scale evidence for the core work, plus relevant AI automation and operational reliability experience. Confirm salary expectations and employment chronology before application submission.

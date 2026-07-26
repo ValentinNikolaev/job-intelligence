@@ -1,10 +1,12 @@
-Dear ShippyPro Hiring Team,
+Dear ShippyPro hiring team,
 
-I am applying for the Senior Software Engineer role. I bring more than 15 years of backend experience across PHP and Go, with a focus on reliable systems, APIs, event-driven architecture, and the technical decisions that keep production services maintainable as they grow.
+I am applying for the Senior Software Engineer role. I have spent more than 15 years building backend systems in PHP and Go, with deep Laravel experience and hands-on work in microservices, messaging, AWS, and production reliability.
 
-At airSlate, I worked on PHP/Laravel and Symfony backend services, addressed API and database-performance bottlenecks, and helped migrate services from ECS to Kubernetes with Helm, GitHub Actions, and ArgoCD. At Simple.life, I designed and owned a Go-based automation platform connecting external systems and internal services, including resilient message delivery with retries and monitoring. Earlier, I led development of a transactional-email system that scaled to around 50 million emails per month and operated through peak traffic periods.
+At airSlate, I worked on PHP and Laravel services, reduced database load during high-traffic periods, improved API and query performance, and moved services from ECS to Kubernetes with Helm, GitHub Actions, and ArgoCD. At PDFfiller, I led five backend engineers building a transactional email service that scaled to about 50 million messages each month. That work required sound technical decisions around queues, delivery reliability, and peak traffic.
 
-ShippyPro’s work on carrier integrations, asynchronous workflows, and scalable backend services is a strong match for my experience with integration-heavy platforms, production reliability, and pragmatic architecture. I would welcome the opportunity to discuss how I could contribute to backend systems that support the company’s shipping platform and product teams.
+My recent work at Simple.life focused on support automation: a Go platform connecting Zendesk, Intercom, and internal services. I built delivery pipelines with retries, fallback logic, and monitoring, and I integrated LLM-powered triage that automated or deflected up to 30% of inbound tickets.
+
+ShippyPro's product depends on integrations, asynchronous workflows, and systems that keep operating under load. I would bring experience with PHP, Laravel, RabbitMQ, AWS, backend architecture, and operational problem solving to that work.
 
 Kind regards,  
 Valentin Nikolaev
