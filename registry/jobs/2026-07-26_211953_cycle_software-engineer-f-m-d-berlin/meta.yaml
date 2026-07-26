@@ -1,0 +1,29 @@
+schema_version: 2
+id: a55997c9-8990-4129-9514-21fa1047fa4a
+title: Software Engineer (f/m/d) - Berlin
+company: CYCLE
+company_url: null
+location: Berlin
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: software-engineer-berlin-211111
+  url: https://www.arbeitnow.com/jobs/companies/cycle/software-engineer-berlin-211111
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:10:03Z'
+discovered_at: '2026-07-26T21:19:53Z'
+updated_at: '2026-07-26T21:19:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:53Z'
+analysis_priority: 0
+fingerprint: sha256:0de4daa963d8f9a72b4e27fd60bb07e0001fef578bc43237937a3ec24c69472e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

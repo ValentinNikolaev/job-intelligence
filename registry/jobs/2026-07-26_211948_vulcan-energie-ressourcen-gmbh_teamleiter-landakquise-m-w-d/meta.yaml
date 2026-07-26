@@ -1,0 +1,34 @@
+schema_version: 2
+id: 9c1665ee-d81b-4bed-be88-fecaf25b976a
+title: Teamleiter Landakquise (m/w/d)
+company: Vulcan Energie Ressourcen GmbH
+company_url: null
+location: Karlsruhe
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: teamleiter-landakquise-karlsruhe-465508
+  url: https://www.arbeitnow.com/jobs/companies/vulcan-energie-ressourcen-gmbh/teamleiter-landakquise-karlsruhe-465508
+  metadata:
+    tags:
+    - Landakquise
+    - Teamarbeit
+    - Lead
+    - Teamlead
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:10:17Z'
+discovered_at: '2026-07-26T21:19:48Z'
+updated_at: '2026-07-26T21:19:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:48Z'
+analysis_priority: 0
+fingerprint: sha256:7399390a64d9a19b17633f6d78c90a67b297d7551ea3636b87da5aea317031c6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

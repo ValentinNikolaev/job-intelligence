@@ -1,0 +1,31 @@
+schema_version: 2
+id: c5f7a2a6-3410-4956-91e9-0609476b74f0
+title: Computational Physicist / Scientific Software Engineer – Deep Digital Twin
+  Development (f/m/d)
+company: eleQtron GmbH
+company_url: null
+location: Hamburg, Hamburg, Germany
+remote: false
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: computational-physicist-scientific-software-engineer-deep-digital-twin-development-hamburg-231660
+  url: https://www.arbeitnow.com/jobs/companies/eleqtron-gmbh/computational-physicist-scientific-software-engineer-deep-digital-twin-development-hamburg-231660
+  metadata:
+    tags:
+    - Foundations & Concepts
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-07-26T05:31:02Z'
+discovered_at: '2026-07-26T21:19:26Z'
+updated_at: '2026-07-26T21:19:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:26Z'
+analysis_priority: 0
+fingerprint: sha256:d4130fa6fe3abd9d3a37e74a0a850a3ceecbab057bf420eb9cb4e18c166c4b57
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

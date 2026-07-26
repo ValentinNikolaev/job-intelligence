@@ -1,0 +1,30 @@
+schema_version: 2
+id: bae9f276-093c-4c8c-b93e-0eb060a9c30d
+title: Werkstudent (m/w/d)
+company: WerraEnergie GmbH
+company_url: null
+location: Bad Salzungen, Thüringen, Deutschland
+remote: false
+employment_type: Student college, parttime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-bad-salzungen-431900
+  url: https://www.arbeitnow.com/jobs/companies/werraenergie-gmbh/werkstudent-bad-salzungen-431900
+  metadata:
+    tags:
+    - Werraenergie GmbH
+    job_types:
+    - Student college
+    - parttime fixed term
+published_at: '2026-07-26T02:51:18Z'
+discovered_at: '2026-07-26T21:19:38Z'
+updated_at: '2026-07-26T21:19:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:38Z'
+analysis_priority: 0
+fingerprint: sha256:3f3d0b274209ddc4666944bfb9cf510c8bc81c48fb923ff665aae3a03a982881
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

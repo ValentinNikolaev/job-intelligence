@@ -1,0 +1,38 @@
+schema_version: 2
+id: f697bf3e-a69d-4ff4-9c61-fe0e77d3d65a
+title: Head of Talent Growth & Analytics (m/f/d)
+company: Agile Robots SE
+company_url: null
+location: Germany, Munich (HQ)
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: head-of-talent-growth-analytics-germany-munich-hq-180204
+  url: https://www.arbeitnow.com/jobs/companies/agile-robots-se/head-of-talent-growth-analytics-germany-munich-hq-180204
+  metadata:
+    tags:
+    - Head of Talent
+    - Head of HR
+    - People Analytics
+    - Workforce planning
+    - HR growth
+    - Talent Aqcuisition
+    - Total rewards
+    - global comp
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:09:41Z'
+discovered_at: '2026-07-26T21:20:02Z'
+updated_at: '2026-07-26T21:20:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:02Z'
+analysis_priority: 0
+fingerprint: sha256:5f29e900ee8b5b44f968406f727518ce8850df471973f72190850b1c9f6c092c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

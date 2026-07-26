@@ -1,0 +1,46 @@
+schema_version: 2
+id: 9b0cb9d1-693f-434c-aec7-7e70b876aa27
+title: DevOps Engineer (m/w/d)
+company: Aitastic
+company_url: null
+location: Mainz
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: devops-engineer-mainz-53734
+  url: https://www.arbeitnow.com/jobs/companies/aitastic/devops-engineer-mainz-53734
+  metadata:
+    tags:
+    - DevOps
+    - Operartions
+    - IT
+    - Data Intelligence
+    - KI
+    - AI
+    - SOA
+    - GCP
+    - Kubernetes
+    - Terraform
+    - Datenbank
+    - ElasticSearch
+    - Vektordatenbank
+    - Monitoring
+    - Microservice
+    - Docker
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-26T14:09:33Z'
+discovered_at: '2026-07-26T21:19:00Z'
+updated_at: '2026-07-26T21:19:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:00Z'
+analysis_priority: 0
+fingerprint: sha256:0b3f078385c9745f36f0727242af856ad4ad5b59c9959bd91f808a91d5d5108e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

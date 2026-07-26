@@ -1,0 +1,32 @@
+schema_version: 2
+id: 4f8b9491-290c-4f0f-873f-9cda240b1d51
+title: Data Quality Coordinator (m/f/d)
+company: Agile Robots SE
+company_url: null
+location: Germany, Munich (HQ)
+remote: false
+employment_type: Entry, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: data-quality-coordinator-germany-munich-hq-432323
+  url: https://www.arbeitnow.com/jobs/companies/agile-robots-se/data-quality-coordinator-germany-munich-hq-432323
+  metadata:
+    tags:
+    - robot data
+    - data collection
+    job_types:
+    - Entry
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:09:41Z'
+discovered_at: '2026-07-26T21:20:05Z'
+updated_at: '2026-07-26T21:20:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:05Z'
+analysis_priority: 0
+fingerprint: sha256:8870b1b34d3269dac5c4219d388be81dab0d1c9e7e5c14ba415227ed435d17ba
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

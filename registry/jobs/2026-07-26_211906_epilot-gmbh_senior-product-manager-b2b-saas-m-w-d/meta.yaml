@@ -1,0 +1,30 @@
+schema_version: 2
+id: 07e1989e-276d-43a6-9db9-16d2a9217662
+title: (Senior) Product Manager - B2B SaaS (m/w/d)
+company: epilot GmbH
+company_url: null
+location: Köln, Nordrhein-Westfalen, Germany
+remote: false
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: senior-product-manager-b2b-saas-koln-350733
+  url: https://www.arbeitnow.com/jobs/companies/epilot-gmbh/senior-product-manager-b2b-saas-koln-350733
+  metadata:
+    tags:
+    - Product
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-07-26T08:51:10Z'
+discovered_at: '2026-07-26T21:19:06Z'
+updated_at: '2026-07-26T21:19:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:06Z'
+analysis_priority: 0
+fingerprint: sha256:1b73760e3e95065043fb53675e99ef612e2405dfa232b2af46d2b15841eb562a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

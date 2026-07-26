@@ -1,0 +1,29 @@
+schema_version: 2
+id: 04f30b54-48fe-40cc-a59b-20d951139d71
+title: Working Student – International Marketing & Event Management (m/f/d)
+company: Agile Robots SE
+company_url: null
+location: Germany, Gemmingen
+remote: false
+employment_type: Entry, Working student, Part time
+sources:
+- source: arbeitnow
+  source_job_id: working-student-international-marketing-event-management-germany-gemmingen-88807
+  url: https://www.arbeitnow.com/jobs/companies/agile-robots-se/working-student-international-marketing-event-management-germany-gemmingen-88807
+  metadata:
+    job_types:
+    - Entry
+    - Working student
+    - Part time
+published_at: '2026-07-25T20:09:41Z'
+discovered_at: '2026-07-26T21:19:57Z'
+updated_at: '2026-07-26T21:19:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:57Z'
+analysis_priority: 0
+fingerprint: sha256:bd09a2813ce53d941c0997c63d98931afe32660282a8aaf99a833e9c7b041254
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

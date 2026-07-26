@@ -1,0 +1,29 @@
+schema_version: 2
+id: 7df3b2c0-fe0e-40b6-ac57-c50b5901c846
+title: (Senior) AI Engineer (m/f/d) Embodied AI & Learning from Egocentric Videos
+company: Agile Robots SE
+company_url: null
+location: Germany, Munich (HQ)
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-ai-engineer-embodied-ai-learning-from-egocentric-videos-germany-munich-hq-425385
+  url: https://www.arbeitnow.com/jobs/companies/agile-robots-se/senior-ai-engineer-embodied-ai-learning-from-egocentric-videos-germany-munich-hq-425385
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:09:41Z'
+discovered_at: '2026-07-26T21:20:07Z'
+updated_at: '2026-07-26T21:20:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:07Z'
+analysis_priority: 0
+fingerprint: sha256:a9a95d64e86edcb1cc3458a14f2ff7eb8d4fe48043922918075ae9cab331c1cb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

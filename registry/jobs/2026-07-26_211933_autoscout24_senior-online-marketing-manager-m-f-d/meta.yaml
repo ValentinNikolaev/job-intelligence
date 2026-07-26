@@ -1,0 +1,27 @@
+schema_version: 2
+id: 8c00a10d-2689-4d61-8637-1cf03be308af
+title: Senior Online Marketing Manager (m/f/d)
+company: autoscout24
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-online-marketing-manager-345286
+  url: https://www.arbeitnow.com/jobs/companies/autoscout24/senior-online-marketing-manager-345286
+  metadata:
+    tags:
+    - Marketing & Communications
+published_at: '2026-07-26T02:55:12Z'
+discovered_at: '2026-07-26T21:19:33Z'
+updated_at: '2026-07-26T21:19:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:33Z'
+analysis_priority: 0
+fingerprint: sha256:e3171b091a315f579ec737ed5b0173b06a1e9b7a0c49c68112ad0802bbf4a560
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

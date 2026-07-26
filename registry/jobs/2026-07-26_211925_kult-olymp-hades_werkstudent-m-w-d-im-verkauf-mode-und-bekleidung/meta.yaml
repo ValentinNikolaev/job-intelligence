@@ -1,0 +1,28 @@
+schema_version: 2
+id: fa92aedf-7ae7-45da-a58d-08dedfff3f06
+title: Werkstudent (m/w/d) im Verkauf Mode und Bekleidung
+company: KULT | OLYMP & HADES
+company_url: null
+location: Rostock, Mecklenburg-Vorpommern, Deutschland
+remote: false
+employment_type: Entry, parttime minijob
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-im-verkauf-mode-und-bekleidung-rostock-45808
+  url: https://www.arbeitnow.com/jobs/companies/kult-olymp-hades/werkstudent-im-verkauf-mode-und-bekleidung-rostock-45808
+  metadata:
+    job_types:
+    - Entry
+    - parttime minijob
+published_at: '2026-07-26T05:31:04Z'
+discovered_at: '2026-07-26T21:19:25Z'
+updated_at: '2026-07-26T21:19:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:25Z'
+analysis_priority: 0
+fingerprint: sha256:b14d2becd998ed1024fa9c1d72d8afeba5c2ad1f581d9cf6b510d89b1457c83a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,48 @@
+schema_version: 2
+id: 027dba9f-6ccd-4e51-8420-c5631d8c7692
+title: Werkstudent*in Machine Learning - Fokus Sustainability
+company: Pacemaker
+company_url: null
+location: Remote (Deutschland)
+remote: false
+employment_type: Student, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: remote-werkstudentin-machine-learning-fokus-sustainability-185590
+  url: https://www.arbeitnow.com/jobs/companies/pacemaker/remote-werkstudentin-machine-learning-fokus-sustainability-185590
+  metadata:
+    tags:
+    - Machine Learning
+    - Sustainability
+    - IT
+    - Working Student
+    - Werkstudium
+    - Computer Science
+    - Software Engineering
+    - Use cases
+    - SMP
+    - Sustainability Management Platform
+    - LLM
+    - AI
+    - KI
+    - Python
+    - SQL
+    - Prototyping
+    - Accounting
+    - Nachhaltigkeit
+    job_types:
+    - Student
+    - Intern
+    - Part time
+published_at: '2026-07-26T17:09:08Z'
+discovered_at: '2026-07-26T21:18:54Z'
+updated_at: '2026-07-26T21:18:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:18:54Z'
+analysis_priority: 0
+fingerprint: sha256:843ebab01062f3c85cde2b2634ec6264d812d1cc43a75bd32f78450e04b33fd9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

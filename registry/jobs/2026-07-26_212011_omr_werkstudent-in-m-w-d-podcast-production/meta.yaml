@@ -1,0 +1,43 @@
+schema_version: 2
+id: b5f8a1ea-5d26-41d3-9d50-35a75c4ba183
+title: Werkstudent*In (M/W/D) Podcast Production
+company: OMR
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Entry, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-podcast-production-hamburg-23953
+  url: https://www.arbeitnow.com/jobs/companies/omr/werkstudentin-podcast-production-hamburg-23953
+  metadata:
+    tags:
+    - PODSTARS
+    - PODCAST
+    - OMR
+    - PODCAST PRODUCTION
+    - Podcastproduktion
+    - Audioproduktion
+    - Videoproduktion
+    - Podcast Producer
+    - Hamburg
+    - Werkstudent
+    - Werkstudentin
+    - Studentenjob
+    - Video Producer
+    job_types:
+    - Entry
+    - Intern
+    - Part time
+published_at: '2026-07-25T20:09:23Z'
+discovered_at: '2026-07-26T21:20:11Z'
+updated_at: '2026-07-26T21:20:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:11Z'
+analysis_priority: 0
+fingerprint: sha256:3fad86fe49f45e7918599d1c4f7b7886c3b30b8f4376d5c137ce997db8245f64
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
