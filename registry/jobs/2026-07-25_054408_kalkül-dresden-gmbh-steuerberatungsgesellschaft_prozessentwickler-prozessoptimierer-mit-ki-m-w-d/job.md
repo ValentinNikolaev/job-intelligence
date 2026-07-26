@@ -138,4 +138,4 @@ Du denkst, du könntest es eh **besser als die KI** – und willst deswegen noch
 
 Du von uns **„KI-Schulungen“** willst, damit du leisten kannst. Ja, wir geben dir Wissen. Aber **Lernen ist auch eine Holschuld** – wenn du nicht bereit bist, dir dein Wissen selbst zu holen, bist du hier falsch.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

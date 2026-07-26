@@ -72,4 +72,4 @@ Schnell, unkompliziert und effizient Ihren Traumjob finden – ein Versprechen a
 
 - Und das Beste: Unser gesamter Service ist **unverbindlich und völlig kostenfrei** für Sie.
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

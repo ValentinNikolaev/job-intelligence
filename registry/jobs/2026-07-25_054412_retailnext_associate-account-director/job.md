@@ -86,4 +86,4 @@ This is a launchpad role for someone who wants a career in sales. You'll get bro
 
 - Work from Anywhere up to 90 days
 
-Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

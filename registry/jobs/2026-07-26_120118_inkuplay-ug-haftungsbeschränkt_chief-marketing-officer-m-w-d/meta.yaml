@@ -1,0 +1,28 @@
+schema_version: 2
+id: 4bcadabb-26e0-4795-b03a-846645f1c48f
+title: Chief Marketing Officer (m/w/d)
+company: InkuPlay UG (haftungsbeschränkt)
+company_url: null
+location: Biesenthal
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: chief-marketing-officer-biesenthal-255944
+  url: https://www.arbeitnow.com/jobs/companies/inkuplay-ug-haftungsbeschrankt/chief-marketing-officer-biesenthal-255944
+  metadata:
+    tags:
+    - Remote
+    - Strategic Marketing
+published_at: '2026-07-26T10:30:26Z'
+discovered_at: '2026-07-26T12:01:18Z'
+updated_at: '2026-07-26T12:01:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T12:01:18Z'
+analysis_priority: 0
+fingerprint: sha256:a108d808b16168a787538b4e09fd0bad9d886514d78e1e77fbf9c45a45852375
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

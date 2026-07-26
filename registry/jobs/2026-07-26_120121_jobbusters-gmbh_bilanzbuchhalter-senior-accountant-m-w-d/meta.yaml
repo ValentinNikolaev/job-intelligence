@@ -1,0 +1,27 @@
+schema_version: 2
+id: 5afdb924-54a2-430d-bcc5-4b7368696932
+title: Bilanzbuchhalter / Senior Accountant (m/w/d)
+company: Jobbusters® GmbH
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: bilanzbuchhalter-senior-accountant-stuttgart-421414
+  url: https://www.arbeitnow.com/jobs/companies/jobbusters-gmbh/bilanzbuchhalter-senior-accountant-stuttgart-421414
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-26T08:30:26Z'
+discovered_at: '2026-07-26T12:01:21Z'
+updated_at: '2026-07-26T12:01:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T12:01:21Z'
+analysis_priority: 0
+fingerprint: sha256:af2ba417f6be5b4ddf771c29b82acfd816995de22d4ee988e386d8e47f7bbf71
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

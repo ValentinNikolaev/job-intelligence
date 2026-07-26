@@ -1,0 +1,27 @@
+schema_version: 2
+id: fd4f2f9a-1cde-4347-aaa1-6bf5e7611408
+title: WEG-Buchhalter (m/w/d) Zahlengeist mit Herz gesucht!
+company: Jobbusters® GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: weg-buchhalter-zahlengeist-mit-herz-gesucht-munich-446536
+  url: https://www.arbeitnow.com/jobs/companies/jobbusters-gmbh/weg-buchhalter-zahlengeist-mit-herz-gesucht-munich-446536
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-26T08:30:26Z'
+discovered_at: '2026-07-26T12:01:22Z'
+updated_at: '2026-07-26T12:01:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T12:01:22Z'
+analysis_priority: 0
+fingerprint: sha256:2358a88108a7cc65109ed6ced0ce8b7943be9235dab7b209d50bd19ec6040ae3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

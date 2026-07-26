@@ -44,4 +44,4 @@ Im Auftrag unseres Partnerunternehmens in München suchen wir Sie zum nächstmö
 
 Sie finden das Stellenprofil interessant? Dann freuen wir uns auf Ihre Bewerbung. Für Rückfragen steht Ihnen **Anna-Maria Holz** gerne unter **089 954 287 105** zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
