@@ -1,0 +1,3 @@
+[submodule ".vendor/llm-skills"]
+	path = .vendor/llm-skills
+	url = git@github-personal:ValentinNikolaev/llm-skills.git
