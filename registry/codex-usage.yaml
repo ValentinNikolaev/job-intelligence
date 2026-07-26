@@ -313,3 +313,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: d3b0dcd4e0b44948822dfc9f05c98458
+  recorded_at: '2026-07-26T06:44:25Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 18000
+  output_tokens: 7600
+  total_tokens: 25600
+  note: Estimated priority application preparation for ShippyPro; exact task token
+    telemetry unavailable.
