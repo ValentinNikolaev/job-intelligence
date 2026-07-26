@@ -1,6 +1,6 @@
 # Front End Developer
 
-Posted: 2026-07-21T17:37:02.1470000
+Posted: 2026-07-26T00:00:00.0000000
 
 ...responsible for:
 Developing and maintaining responsive web interfaces using JavaScript, Angular, React, or Vue .
