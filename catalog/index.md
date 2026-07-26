@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 483
+Total vacancies: 485
 
-- Found: 477
+- Found: 479
 - Rejected: 6
 
 ## Monthly catalogs
@@ -15,6 +15,8 @@ Total vacancies: 483
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-26 | [Enode](../registry/jobs/2026-07-26_064504_enode_senior-software-engineer-home-energy/) | [Senior Software Engineer - (Home Energy)](../registry/jobs/2026-07-26_064504_enode_senior-software-engineer-home-energy/job.md) | Europe,  Norway | Jobicy | Found | 2026-07-26 | [Jobicy](https://jobicy.com/jobs/149734-senior-software-engineer-home-energy) | — | — | — | — | — |
+| 2026-07-26 | [Welo Global](../registry/jobs/2026-07-26_064500_welo-global_chinese-simplified-accessibility-tester/) | [Chinese Simplified Accessibility Tester](../registry/jobs/2026-07-26_064500_welo-global_chinese-simplified-accessibility-tester/job.md) | Europe | Jobicy | Found | 2026-07-26 | [Jobicy](https://jobicy.com/jobs/149748-chinese-simplified-accessibility-tester) | — | — | — | — | — |
 | 2026-07-25 | [Product Service](../registry/jobs/2026-07-25_224644_product-service_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-07-25_224644_product-service_senior-backend-engineer/job.md) | Los Angeles, CA | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/1920805569740829293?p=1&pos=35&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2081.9963&bscr=2081.9963&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
 | 2026-07-25 | [Confluent](../registry/jobs/2026-07-25_224643_confluent_senior-backend-engineer-ii-cloud-native-remote/) | [Senior Backend Engineer II - Cloud-Native, Remote](../registry/jobs/2026-07-25_224643_confluent_senior-backend-engineer-ii-cloud-native-remote/job.md) | Phoenix, AZ | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/6253610642277155551?p=1&pos=34&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2084.1243&bscr=2084.1243&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
 | 2026-07-25 | [Gong.io](../registry/jobs/2026-07-25_224642_gong-io_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-07-25_224642_gong-io_senior-backend-engineer/job.md) | New York, NY | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/9198124084186498570?p=1&pos=33&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2084.6917&bscr=2084.6917&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
@@ -33,5 +35,3 @@ Total vacancies: 483
 | 2026-07-25 | [Fin Co](../registry/jobs/2026-07-25_224630_fin-co_senior-backend-software-engineer/) | [Senior Backend Software Engineer](../registry/jobs/2026-07-25_224630_fin-co_senior-backend-software-engineer/job.md) | United States | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/-7705919780294444766?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=16&brelb=10&scr=2155.211&bscr=2155.211&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
 | 2026-07-25 | [Spruce Health](../registry/jobs/2026-07-25_224629_spruce-health_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-07-25_224629_spruce-health_senior-backend-engineer/job.md) | United States | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/-7142257897960991833?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=94&brelb=10&scr=2169.0913&bscr=2169.0913&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
 | 2026-07-25 | [Motion Recruitment](../registry/jobs/2026-07-25_224628_motion-recruitment_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-07-25_224628_motion-recruitment_senior-backend-engineer/job.md) | Waltham, MA | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/-9137986837557705438?p=1&pos=18&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=94&brelb=10&scr=2176.1606&bscr=2176.1606&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
-| 2026-07-25 | [ApplyMint](../registry/jobs/2026-07-25_224627_applymint_senior-backend-engineer-alerting-spain-remote/) | [Senior Backend Engineer - Alerting \| Spain \| Remote](../registry/jobs/2026-07-25_224627_applymint_senior-backend-engineer-alerting-spain-remote/job.md) | New York, NY | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/-4148468852799913905?p=1&pos=17&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=64&brelb=10&scr=2186.934&bscr=2186.934&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |
-| 2026-07-25 | [Urban SDK](../registry/jobs/2026-07-25_224626_urban-sdk_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-07-25_224626_urban-sdk_senior-backend-engineer/job.md) | United States | Jooble | Found | 2026-07-25 | [Jooble](https://jooble.org/away/-6876816063346073689?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=112&brelb=10&scr=2206.609&bscr=2206.609&aq=-1050967592869114543&elckey=-4718526512588805530) | — | — | — | — | — |

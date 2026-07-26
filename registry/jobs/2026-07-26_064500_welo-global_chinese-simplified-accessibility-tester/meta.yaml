@@ -1,0 +1,47 @@
+schema_version: 2
+id: 71c07f9b-0bef-4434-8b25-746011d88826
+title: Chinese Simplified Accessibility Tester
+company: Welo Global
+company_url: null
+location: Europe
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149748'
+  url: https://jobicy.com/jobs/149748-chinese-simplified-accessibility-tester
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/83c40f94-221.webp
+    industry:
+    - QA &amp; Testing
+    level: Entry-Level, Junior
+    excerpt: About Welocalize Welocalize, a Welo Global brand, serves localization
+      teams through AI-enabled multilingual content solutions that enable enterprises
+      to operate and scale globally. Welocalize combines AI, automation, and human
+      expertise to support enterprises in more than 300 languages, enabling accurate,
+      culturally aligned, and compliant multilingual content at scale.About the Role
+      Welocalize is expanding its network of accessibility…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        count: '100'
+        industry: dev
+    - query_index: 7
+      parameters:
+        tag: technical lead
+        geo: europe
+        count: '100'
+        industry: dev
+published_at: '2026-07-26T03:33:51Z'
+discovered_at: '2026-07-26T06:45:00Z'
+updated_at: '2026-07-26T06:45:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T06:45:00Z'
+analysis_priority: 0
+fingerprint: sha256:04d5d054d8c52c84c4fa326dd94859e599d89070a7867d2921bb4d88a1d6588b
+data_source: jobicy
+content_source: jobicy
+company_content_source: null
