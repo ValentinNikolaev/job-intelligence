@@ -1,6 +1,6 @@
 # Senior / Staff Backend Engineer
 
-Posted: 2026-07-18T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ...Description
 Join a lean, high-output core **engineering **team at an AI-first startup building... ...seed investors.

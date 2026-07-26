@@ -57,4 +57,4 @@ As we continue to expand across the globe, you can make a real difference in how
 
 If you're ready to grow and lead your journey, Flix is the place for you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

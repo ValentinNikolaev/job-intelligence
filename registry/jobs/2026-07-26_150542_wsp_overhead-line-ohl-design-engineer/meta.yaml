@@ -1,0 +1,42 @@
+schema_version: 2
+id: 760827b3-342f-471b-b62a-c9575501cb84
+title: Overhead Line (OHL) Design engineer
+company: WSP
+company_url: null
+location: Sweden
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '143438'
+  url: https://jobicy.com/jobs/143438-overhead-line-ohl-design-engineer
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/05/393fad80-221.png
+    industry:
+    - Software Engineering
+    level: Director
+    excerpt: Power Networks provides high quality consultancy services within distribution
+      network (cable and overhead lines) and transmission (cable). We support our
+      clients throughout every stage of the process — from early feasibility studies
+      to design, execution, and project management. Our expertise also includes market,
+      regulatory, and environmental analysis. Today, our work spans overhead lines
+      and underground…
+    discovered_by:
+    - query_index: 7
+      parameters:
+        industry: dev
+        geo: europe
+        tag: technical lead
+        count: '100'
+published_at: '2026-07-26T11:15:12Z'
+discovered_at: '2026-07-26T15:05:42Z'
+updated_at: '2026-07-26T15:05:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T15:05:42Z'
+analysis_priority: 0
+fingerprint: sha256:5b8ae289a73c7bf4d7f38d0e6f2d2bf7ac79de27e8f0b8e1e1bf8955ac68bac1
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

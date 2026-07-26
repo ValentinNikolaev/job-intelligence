@@ -1,6 +1,6 @@
 # Founding Backend Engineer
 
-Posted: 2026-07-24T05:55:20.0570000
+Posted: 2026-07-26T04:33:42.4200000
 
 ...We’re looking for a seasoned software **engineer **to help shape and execute our technical roadmap... ...: 
 

@@ -42,4 +42,4 @@ Im Auftrag unseres Partnerunternehmens suchen wir Sie zum nächstmöglichen Zeit
 
 Sie finden das Stellenprofil interessant? Dann freuen wir uns auf Ihre Bewerbung. Für Rückfragen steht Ihnen **Kaan Akdemir** gerne unter **089 954 287 109** zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
