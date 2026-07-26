@@ -78,7 +78,12 @@ decision-relevant findings in the application analysis.
 13. Create a concise, specific cover letter based on the final CV, vacancy, and verified
     company research. Highlight two or three strongest matches without repeating the CV or
     inventing enthusiasm, motives, knowledge, or achievements.
-14. Create detailed interview preparation grounded in the vacancy and final CV.
+14. Use `stop-slop` from `agent-plugins@valentin-agent-plugins`
+    (`marketplaces\valentin-agent-plugins`) to tune the cover letter. Remove formulaic AI
+    phrasing, filler, unsupported enthusiasm, business jargon, and vague claims while
+    preserving all factual support, vacancy-specific alignment, and concise recruiter-ready
+    tone.
+15. Create detailed interview preparation grounded in the vacancy and final CV.
 
 ## Required output fields
 
