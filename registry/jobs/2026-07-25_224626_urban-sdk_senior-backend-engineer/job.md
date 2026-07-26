@@ -1,6 +1,6 @@
 # Senior Backend Engineer
 
-Posted: 2026-07-21T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ...**Senior Backend Engineer **
 We are hiring a Senior Backend Engineer to design and build scalable data-intensive systems using Python and modern... ...Compensation 

@@ -1,6 +1,6 @@
 # Senior Backend Engineer
 
-Posted: 2026-07-21T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ...one of those surfaces leans on a small **backend **team, and the surface area of what we... ...behind it.
 Role Overview
