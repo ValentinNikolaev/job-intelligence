@@ -93,4 +93,4 @@ Wenn du Lust hast, Verantwortung zu übernehmen, Ideen umzusetzen und Marketing 
 
 Gemeinsam entwickeln wir Marketing, das nicht nur Reichweite erzeugt, sondern Menschen erreicht und unser Unternehmen nachhaltig wachsen lässt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com/) on Arbeitnow

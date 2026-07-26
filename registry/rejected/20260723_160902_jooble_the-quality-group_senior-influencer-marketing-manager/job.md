@@ -7,5 +7,4 @@ Posted: 2026-07-08T02:57:06.0070000
 - Category: stale
 - Reason: published_at 2026-07-08T02:57:06.0070000 is older than 7 days
 
-...viral lifestyle brands globally. Position Overview 
-We are seeking a highly analytical, relationship-obsessed, and growth-minded **Senior **Influencer Marketing Manager (gn) to join our core centralized marketing division in a full-time remote capacity open to qualified...
+...a highly analytical, relationship-obsessed, and growth-minded **Senior **Influencer Marketing Manager (gn) to join our core centralized... ...performance optimization laboratory—scouting elite Italian creators, **engineering **viral lifestyle narratives, and leading high-signal marketing...
