@@ -399,3 +399,14 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: No newly analyzed vacancies; deterministic validation skipped unchanged batch
+- run_id: f365f3dec0af4e0aabe101f98d0c2eda
+  recorded_at: '2026-07-26T22:22:38Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: No model invocation; all 10 sealed results skipped unchanged
