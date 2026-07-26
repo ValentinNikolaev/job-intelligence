@@ -28,3 +28,4 @@ fingerprint: sha256:6e16de6375f01842621353efc5171f72ff7db0b8e910bfcab87aae5f0e45
 data_source: custom
 content_source: custom
 company_content_source: null
+application_directory: application-codex

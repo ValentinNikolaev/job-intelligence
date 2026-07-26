@@ -410,3 +410,13 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: No model invocation; all 10 sealed results skipped unchanged
+- run_id: 83c5c6535f4043c389580c89ef7b5d75
+  recorded_at: '2026-07-26T22:44:37Z'
+  workflow: prepare_priority
+  model: codex:gpt-5.6-terra:medium
+  status: completed
+  measurement: estimated
+  input_tokens: 17400
+  output_tokens: 7600
+  total_tokens: 25000
+  credits: 0.0
