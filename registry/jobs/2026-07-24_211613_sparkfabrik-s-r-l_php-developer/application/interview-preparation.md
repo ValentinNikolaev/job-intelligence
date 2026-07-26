@@ -1,180 +1,157 @@
+# Interview Preparation
+
 ## Recruiter / HR Screening
 
-Likely screening topics:
+Likely questions:
 
-- Motivation for SparkFabrik: focus on PHP/backend work combined with cloud-native delivery, open-source technologies, quality, and long-term client projects.
-- Why this role now: the candidate has deep PHP experience and recent cloud/backend ownership, making the role a practical fit rather than a career pivot.
-- Location and working model: candidate is based in Rome, Italy; the vacancy states full-remote work with an office option in Milan.
-- English: source records support upper-intermediate/professional working English; be ready to discuss written and spoken technical communication.
-- Italian: not supported in the candidate records. If asked, answer factually.
-- Notice period and availability: confirm current availability directly, especially because source records have conflicting Simple.life end dates.
-- Salary expectations: prepare a range appropriate for senior/professional PHP backend roles in Italy, remote, with cloud-native and leadership responsibilities.
-- Client-facing work: emphasize collaboration with product, support operations, technical stakeholders, and leadership, without overstating formal consulting experience.
-- Role level: position for Senior or Professional-level responsibilities, especially backend ownership, team leadership, and architecture discussions.
+- Why are you interested in SparkFabrik and this PHP Developer role?
+- Are you based in Italy, and are you comfortable with a remote Italy setup?
+- What is your current availability and notice period?
+- What salary range are you targeting?
+- How comfortable are you working in English?
+- What is your current Italian level?
+- Are you open to working on Drupal-based projects?
+- Do you prefer Senior Developer or Professional/Tech Lead responsibilities?
 
-Concise positioning statement:
+Suggested positioning:
 
-"I have 15+ years in backend engineering, with a strong PHP base in Laravel and Symfony, plus recent cloud-native work with Kubernetes, AWS, CI/CD, monitoring, APIs, and production reliability. SparkFabrik appeals because the role combines PHP, quality engineering, client projects, and cloud-native practices."
+- Motivation: "This role brings together my long PHP background, Laravel/Symfony experience, and recent cloud-native delivery work. SparkFabrik's mix of custom software, Drupal, Kubernetes, DevOps, and open source fits the kind of engineering environment where I can contribute."
+- Location: "I am based near Rome and can work remotely in Italy."
+- English: "I am comfortable reading, writing, and discussing technical topics in English."
+- Italian: "My Italian is limited at the moment. I am improving it, and I would like to understand whether English is enough for the team and client context."
+- Drupal: "I have strong PHP, Laravel, Symfony, and backend architecture experience. Drupal is not my strongest area, but I am comfortable learning it and working with specialists."
+- Seniority: "I can contribute as a hands-on senior backend engineer and also support technical direction, mentoring, planning, and architecture where the team needs it."
 
 ## Culture Fit / Behavioral Interview
 
 Likely behavioral questions:
 
-1. Tell us about a time you improved quality or reliability in a production system.
-   Use airSlate database/API performance work or Simple.life resilient message pipelines.
+1. Tell us about a long-running production system you owned.
+2. Describe a time you improved system reliability under pressure.
+3. Tell us about a performance bottleneck you diagnosed and fixed.
+4. Describe your experience working with product or business stakeholders.
+5. Tell us about a time you led engineers without losing hands-on contribution.
+6. How do you approach code quality and maintainability?
+7. How do you handle unfamiliar technology in a client project?
+8. Describe a disagreement with a technical stakeholder and how you handled it.
 
-2. Describe a project where you had to balance speed and technical quality.
-   Use Hyprr prototype-to-beta delivery or airSlate release planning.
+STAR story sources from the CV:
 
-3. How do you work in distributed or remote teams?
-   Use Simple.life cross-functional collaboration and remote Italy fit; keep answer concrete.
-
-4. Tell us about a time you led or mentored engineers.
-   Use PDFfiller team of 5, Hyprr team of 10, or airSlate technical interviews and delivery planning.
-
-5. How do you handle client or stakeholder feedback that changes technical priorities?
-   Use support operations/product collaboration at Simple.life or product-management planning at airSlate.
-
-6. Describe a disagreement on architecture or delivery approach.
-   Use Hyprr technology roadmap with CTO or airSlate Kubernetes migration planning; focus on tradeoffs.
-
-7. How do you approach unfamiliar technology?
-   Use transitions across PHP, Go, Kubernetes, AWS, and automation; mention Drupal/frontend gaps honestly if relevant.
-
-8. Give an example of taking ownership of a long-running system.
-   Use PDFfiller email service scaling or Simple.life support automation ownership.
-
-9. What does engineering quality mean to you?
-   Ground the answer in testing where supported, observability, performance, readable APIs, maintainability, and delivery discipline.
-
-10. How do you support other developers' growth?
-   Use PDFfiller coaching, Hyprr leadership, airSlate interviews and planning.
-
-STAR stories to prepare:
-
-- PDFfiller email platform scaling to around 50 million emails per month.
+- airSlate database load reduction and API performance work.
 - airSlate migration from ECS to Kubernetes with Helm, GitHub Actions, and ArgoCD.
-- airSlate database/API performance improvements.
-- Hyprr prototype-to-closed-beta delivery in under 6 months.
-- Simple.life support automation and resilient message delivery pipelines.
+- PDFfiller transactional email service scaling to around 50 million emails per month.
+- Hyprr prototype-to-closed-beta delivery and coordination of 10 developers.
+- Simple.life Zendesk/Intercom support automation and reliable message delivery.
+
+Behavioral themes to emphasize:
+
+- Calm production ownership.
+- Pragmatic architecture choices.
+- Clear collaboration with product, support, and engineering stakeholders.
+- Mentoring and technical decision-making without overstating authority.
+- Learning gaps honestly, then reducing risk through collaboration and focused ramp-up.
 
 ## Technical Interview
 
 High Priority:
 
-- PHP, OOP, Laravel, Symfony: central to the role. Prepare examples of service design, package structure, dependency management, framework conventions, and maintainable backend code.
-- REST APIs and multi-tier applications: the vacancy explicitly asks for API exposure and consumption. Prepare examples from backend integrations, support automation, payment gateways, and internal services.
-- Git and branching workflows: be ready to discuss pull requests, reviews, release branches, and practical branching discipline.
-- CI/CD and cloud-native delivery: SparkFabrik emphasizes DevOps, Kubernetes, and platform engineering. Use airSlate examples with Helm, GitHub Actions, ArgoCD, ECS-to-Kubernetes migration.
-- Testing and quality: prepare a grounded answer around unit tests, increased test coverage, regression prevention, integration checks, and pragmatic testing strategy. Do not claim deep TDD ownership unless asked and supported.
-- System design and distributed systems: Professional-level requirements include distributed systems, microservices, and testing strategy. Use Hyprr, airSlate, Simple.life, and PDFfiller examples.
+- PHP backend development: OOP, Laravel, Symfony, dependency management, service boundaries, framework tradeoffs.
+- REST APIs: API design, versioning, error handling, idempotency, authentication, observability.
+- Databases: MySQL/PostgreSQL schema design, indexes, query optimization, transaction boundaries, load reduction.
+- Cloud-native delivery: Kubernetes, containers, Helm, CI/CD, deployment safety, rollbacks.
+- Production reliability: logging, monitoring, retries, queues, incident handling, performance debugging.
+- Architecture: microservices, event-driven systems, distributed systems, service ownership.
 
 Medium Priority:
 
-- Containers and Kubernetes: important because SparkFabrik is cloud-native and the Professional level mentions container-based development.
-- AWS: useful for cloud-native context and supported by candidate records.
-- Observability and production troubleshooting: relevant to reliability, client delivery, and support automation.
-- Performance optimization: strong candidate evidence; prepare database, API, and service examples.
-- Agile delivery and estimation: vacancy values processes and practices. Use airSlate planning and delivery ownership.
+- Testing: unit, functional, integration testing, pragmatic test strategy, what TDD means in real delivery.
+- Git workflows: branching models, review habits, release discipline.
+- Client/project communication: translating technical tradeoffs for technical and business stakeholders.
+- Security/compliance: GDPR/PCI DSS exposure from Sixt, secure API and infrastructure habits.
 
 Low Priority:
 
-- Drupal 7+: important to the company stack but not supported as candidate experience. Prepare an honest answer: strong PHP/Laravel/Symfony foundation, no claim of Drupal specialization, willingness to ramp up.
-- Angular/Vue: role has frontend adjacency. Candidate has older AngularJS/Bootstrap source evidence but not modern Angular/Vue. Position as backend-first and collaborative with frontend developers.
-- Serverless: source evidence supports microservice/serverless influence at Hyprr but not deep serverless specialization. Keep claims modest.
+- Drupal internals: prepare an honest answer about limited direct evidence and a learning plan.
+- Vue/Angular: discuss full-stack-adjacent collaboration rather than claiming current specialist depth.
+- Serverless: Hyprr includes serverless architecture influence, but do not center the conversation on it unless asked.
 
-Likely technical questions:
+Technical claims to defend:
 
-- How would you structure a Laravel or Symfony service for maintainability?
-- How do you design REST APIs for internal and client-facing consumers?
-- What are the tradeoffs between monoliths, modular monoliths, and microservices?
-- How do you manage dependency upgrades and Composer package risk?
-- How do you approach database performance bottlenecks?
-- How would you design CI/CD for a PHP service deployed to Kubernetes?
-- What tests would you write for a distributed API workflow?
-- How do you debug a production incident with logs, metrics, and dashboards?
-- How do you review code for quality without slowing delivery?
-- How would you ramp up on Drupal if assigned to a Drupal-based enterprise project?
+- "Laravel/Symfony-based components" at airSlate: prepare concrete examples of package/service structure, dependency injection, logging, API integration, or framework conventions.
+- "Reduced peak load on the main database": explain diagnosis, measurements, query/index/service changes, and production validation.
+- "Migrated services from ECS to Kubernetes": explain what you owned, what the team owned, deployment pipeline details, Helm, GitHub Actions, and ArgoCD.
+- "Scaled to around 50 million emails per month": explain architecture, queues, retries, deliverability, monitoring, and peak traffic handling.
+- "Led backend development and coordinated 10 developers": explain planning rhythm, delegation, code review, and decision-making.
 
 ## CV Deep-Dive Questions
 
-Be ready to defend:
+Prepare concise answers for:
 
-- PHP depth: explain concrete Laravel/Symfony work at airSlate and earlier PHP-heavy roles.
-- Recent Go focus: explain that Go is additive backend experience, while PHP remains a long-term foundation.
-- Technical leadership: distinguish hands-on development from team coordination, roadmap input, mentoring, and interviews.
-- Kubernetes migration: explain the problem, migration scope, Helm/GitHub Actions/ArgoCD pieces, and operational outcome.
-- Email platform scale: explain architecture, delivery reliability, DNS/DKIM/SPF/DMARC/FBL knowledge, and BFCM pressure.
-- Performance optimization: explain how bottlenecks were identified, measured, and fixed.
-- Simple.life dates: answer consistently with current facts; the tailored CV uses November 2023 - March 2026 from the CV registry.
-- Frontend/Drupal gaps: acknowledge clearly and pivot to supported PHP, API, and cloud-native experience.
+- Why does your recent work show more Go than PHP, and why return to a PHP-centered role?
+- Which Laravel/Symfony work can you discuss in detail?
+- How much Drupal have you used?
+- What is your experience with Composer and PHP package design?
+- How do you define a good testing strategy for a PHP service?
+- What production incident taught you the most?
+- How do you balance delivery speed with maintainability?
+- What does "technical leadership" mean in your day-to-day work?
+- Why do PDFfiller and Sixt dates overlap?
+- What is your current employment status, given source records may differ?
 
-Questions the interviewer may ask:
+Safe responses:
 
-- Why should we consider you for a PHP role when your recent work includes Go?
-- What Symfony or Laravel features have you used in production?
-- Have you worked with Drupal 7+?
-- How comfortable are you with Angular or Vue?
-- Tell us about a time you interacted directly with business stakeholders.
-- How do you keep quality high on long-term maintenance projects?
-- What branching model do you prefer and why?
-- How do you mentor less experienced developers?
+- PHP direction: "PHP has been a major part of my backend career. Recent Go work expanded my distributed-systems and reliability experience, and I see that as useful for SparkFabrik's cloud-native PHP work."
+- Drupal: "I should not present myself as a Drupal specialist. My strongest value is PHP backend, Laravel/Symfony, APIs, cloud delivery, and reliability. I can ramp up on Drupal with the team."
+- Italian: "My Italian is limited. I can work in English and I am improving Italian. I would rather be clear about this early."
 
 ## Company-Specific Preparation
 
-Study these company cues:
+Review before interviews:
 
-- SparkFabrik positions itself around custom software, cloud-native systems, Drupal, AI, DevOps, Kubernetes, open source, and agile methods.
-- The vacancy emphasizes quality, long-running enterprise client projects, distributed/localized teams, personal growth, and collaboration.
-- Professional-level responsibilities include technical discussions with the CTO, internal practice development, client communication, experimentation, and mentoring.
+- SparkFabrik's homepage: Cloud Native, AI, Drupal, custom development, agile methodology, senior team.
+- Services page: enterprise software development, cloud engineering, DevOps, consulting, Kubernetes Certified Service Provider, CNCF and OpenSSF membership.
+- Open Source page: Drupal Certified Partner Gold, CNCF, Linux Foundation Europe, OpenSSF, public Drupal contributions.
+- Tech Blog: recent topics around cloud native, DevOps, AI, Drupal, security, and Kubernetes.
+- Job posting: Laravel, Symfony, Drupal 7+, Angular/Vue adjacency, testing/TDD, client-facing collaboration, full remote Italy.
 
-Prepare examples aligned to those cues:
+Company-aligned talking points:
 
-- Quality and delivery: airSlate CI/CD and release planning.
-- Cloud-native: ECS-to-Kubernetes migration with Helm, GitHub Actions, and ArgoCD.
-- Enterprise scale: PDFfiller email service and Sixt compliance-related microservices.
-- Open-source/PHP mindset: Laravel/Symfony background and Composer ecosystem familiarity.
-- Client/stakeholder collaboration: product/support operations at Simple.life and product-management planning at airSlate.
-
-Do not overclaim:
-
-- Do not present yourself as a Drupal specialist.
-- Do not claim current Angular/Vue expertise.
-- Do not claim formal agile certification unless independently confirmed.
-- Do not mention unsupported Italian proficiency.
+- "My PHP background and Laravel/Symfony experience fit the backend part of the role."
+- "My Kubernetes, CI/CD, AWS, monitoring, and reliability work fit SparkFabrik's cloud-native and DevOps direction."
+- "I have led teams and worked with product and technical stakeholders, which fits the Professional-level expectations."
+- "I am transparent about Drupal and Italian gaps and can ramp up where the team needs me."
 
 ## Preparation Plan
 
-Must-prepare before first screening:
+Must prepare:
 
-- A 60-second summary tailored to SparkFabrik's PHP, cloud-native, quality, and remote/client-project context.
-- Clear answer on availability and current employment timeline.
-- Salary range and remote-work expectations for Italy.
-- Honest answer on Drupal and frontend framework exposure.
+- One clear story each for PHP/Laravel/Symfony, API performance, Kubernetes migration, and team leadership.
+- A direct explanation of Drupal exposure and a practical ramp-up plan.
+- A direct explanation of Italian level.
+- Current availability, salary expectations, and preferred seniority track.
 
 Before technical interview:
 
-- Refresh Laravel and Symfony architecture patterns, service containers, dependency injection, routing/controllers, validation, queues, migrations, and testing.
-- Prepare one detailed REST API design story and one production troubleshooting story.
-- Review Composer dependency management and secure package upgrade practices.
-- Prepare Kubernetes/CI/CD examples from airSlate.
-- Prepare a pragmatic testing strategy for a PHP API in a distributed system.
+- Refresh Laravel/Symfony architecture concepts, Composer, dependency injection, service containers, routing/middleware, validation, queues, events, and testing.
+- Prepare database optimization examples with indexes, query plans, load distribution, and production monitoring.
+- Prepare CI/CD and Kubernetes details: Helm charts, GitHub Actions, ArgoCD, rollout/rollback, config/secrets handling, observability.
+- Review testing strategy language: unit versus integration, contract tests, functional tests, test data, and when TDD helps.
 
-Before final or culture interview:
+Before final/culture interview:
 
-- Prepare leadership stories around mentoring, code review, technical interviews, and team delivery.
-- Prepare examples of balancing experimentation with risk control.
-- Prepare questions about team structure, client interaction, quality practices, and growth path between Senior and Professional levels.
+- Prepare examples of mentoring, stakeholder communication, and working in distributed teams.
+- Prepare questions about client context, team shape, language expectations, Drupal depth, and growth path.
+- Decide how to position Senior versus Professional track.
 
 ## Questions to Ask
 
-1. Which level are you currently hiring for in this PHP Developer profile: Senior, Professional, or both?
-2. How much of the work is Laravel/Symfony versus Drupal?
-3. What kinds of client projects would this person likely join first?
-4. How are backend developers involved in architecture and technical decisions?
-5. What testing practices are expected on PHP projects today?
-6. How do teams coordinate in the full-remote model?
-7. What CI/CD, container, and cloud platforms are most common on current projects?
-8. How often do PHP developers work directly with client technical or business stakeholders?
-9. What does growth from Senior Developer to Professional Developer look like at SparkFabrik?
-10. What internal engineering practices or tools is the team currently trying to improve?
+1. Which seniority track are you considering for this opening: Senior Developer, Professional Developer, or both?
+2. How much of the role is Laravel/Symfony backend work versus Drupal-specific work?
+3. Is Italian required for internal teamwork or client communication, or can the role work primarily in English?
+4. What does the team consider good quality delivery on long-term client projects?
+5. How are PHP developers involved in cloud-native and DevOps practices?
+6. What CI/CD, testing, and observability practices are standard across projects?
+7. How do frontend and backend developers collaborate on Angular/Vue-adjacent work?
+8. What kind of mentoring or technical leadership would you expect from someone at my level?
+9. How do you assign developers to client projects, and how stable are those assignments?
+10. What would success look like in the first three to six months?

@@ -4,8 +4,8 @@
 
 Total vacancies: 582
 
-- Found: 575
-- Applied: 1
+- Found: 574
+- Applied: 2
 - Rejected: 6
 
 ## Monthly catalogs
