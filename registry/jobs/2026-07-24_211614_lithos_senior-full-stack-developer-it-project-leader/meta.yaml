@@ -18,11 +18,13 @@ sources:
       & IT Project Leader, with PHP/Laravel and full-remote option.
 published_at: null
 discovered_at: '2026-07-24T21:16:14Z'
-updated_at: '2026-07-24T21:16:14Z'
-status: found
+updated_at: '2026-07-26T23:45:20Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T21:16:14Z'
+- status: rejected
+  changed_at: '2026-07-26T23:45:20Z'
 analysis_priority: 100
 fingerprint: sha256:f55daeb651cc73f9df910fe050de6f2e4ad7a69b4c5b37a6e34e22a2d381bf18
 data_source: custom
