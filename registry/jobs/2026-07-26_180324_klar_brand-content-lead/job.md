@@ -112,4 +112,4 @@ Simply send your CV here or send Max a message on [LinkedIn](https://www.linkedi
 
 Please include a few words (or a video) on why you think you are a great fit — and even better, one piece of content you'd make for Klar in your first month.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

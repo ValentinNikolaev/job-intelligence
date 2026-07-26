@@ -1,0 +1,30 @@
+schema_version: 2
+id: d7e04a38-9314-4183-82e9-57a90ddc10bf
+title: Product Manager (w/m/d) eCommerce
+company: Holzland Becker
+company_url: null
+location: Offenbach am Main, Hessen, Deutschland
+remote: false
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: product-manager-ecommerce-offenbach-am-main-246892
+  url: https://www.arbeitnow.com/jobs/companies/holzland-becker/product-manager-ecommerce-offenbach-am-main-246892
+  metadata:
+    tags:
+    - eCommerce OFB
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-07-25T20:30:53Z'
+discovered_at: '2026-07-26T21:19:47Z'
+updated_at: '2026-07-26T21:19:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:47Z'
+analysis_priority: 0
+fingerprint: sha256:76687e156baf30e741e73fa6653cca8e0ac36213bb83705b79ee3446ddd9772f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

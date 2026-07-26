@@ -1,0 +1,35 @@
+schema_version: 2
+id: b0644abc-0c1e-402c-8d7f-41877cc46727
+title: (Senior) Sales Manager – Mobile Robotics & Automation (m/w/d)
+company: Idealworks
+company_url: null
+location: München
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-sales-manager-mobile-robotics-automation-munchen-498160
+  url: https://www.arbeitnow.com/jobs/companies/idealworks/senior-sales-manager-mobile-robotics-automation-munchen-498160
+  metadata:
+    tags:
+    - sales
+    - Robotics
+    - Intralogistics
+    - Sales Manager
+    - idealworks
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T17:09:18Z'
+discovered_at: '2026-07-26T21:20:19Z'
+updated_at: '2026-07-26T21:20:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:19Z'
+analysis_priority: 0
+fingerprint: sha256:d17ba92d4dedcad630d0ea9dba69653dfebf6614c0c1c781d37761a8c526104c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

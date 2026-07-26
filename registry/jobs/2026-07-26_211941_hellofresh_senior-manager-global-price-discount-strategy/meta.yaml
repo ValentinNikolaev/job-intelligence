@@ -1,0 +1,27 @@
+schema_version: 2
+id: c21cc894-a708-4404-8355-cd3e0969db3e
+title: Senior Manager, Global Price & Discount Strategy
+company: hellofresh
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-manager-global-price-discount-strategy-berlin-376787
+  url: https://www.arbeitnow.com/jobs/companies/hellofresh/senior-manager-global-price-discount-strategy-berlin-376787
+  metadata:
+    tags:
+    - Marketing
+published_at: '2026-07-25T23:55:08Z'
+discovered_at: '2026-07-26T21:19:41Z'
+updated_at: '2026-07-26T21:19:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:41Z'
+analysis_priority: 0
+fingerprint: sha256:1e6b8cfc6d5f5f900fb6a3f2d1ff968898d8fa5735a799002691f03f60dd3637
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

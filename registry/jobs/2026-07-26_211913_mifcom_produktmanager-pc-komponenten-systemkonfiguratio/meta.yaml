@@ -1,0 +1,45 @@
+schema_version: 2
+id: ad8b4875-b2ea-49d1-a6af-1648b057f358
+title: Produktmanager – PC-Komponenten & Systemkonfiguration (m/w/d)
+company: Mifcom
+company_url: null
+location: München
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: produktmanager-pc-komponenten-systemkonfiguration-munchen-356521
+  url: https://www.arbeitnow.com/jobs/companies/mifcom/produktmanager-pc-komponenten-systemkonfiguration-munchen-356521
+  metadata:
+    tags:
+    - produkt
+    - produktmanagement
+    - konfiguration
+    - gehäuse
+    - systemintegration
+    - category
+    - management
+    - englisch
+    - deutsch
+    - netzteil
+    - lüfter
+    - vendor
+    - einkauf
+    - verhandlung
+    - sortiment
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-26T08:09:28Z'
+discovered_at: '2026-07-26T21:19:13Z'
+updated_at: '2026-07-26T21:19:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:13Z'
+analysis_priority: 0
+fingerprint: sha256:ad81abbd1a5e35c8bf9670aff8334556f6a9eeb05e4397fda485fee407d2240a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: f907cb83-677c-422d-af5a-e53637d5f45b
+title: Working Student AI & Innovation (m/f/d)
+company: Rehau New Ventures
+company_url: null
+location: Remote Hamburg
+remote: false
+employment_type: Entry, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: remote-working-student-ai-innovation-196029
+  url: https://www.arbeitnow.com/jobs/companies/rehau-new-ventures/remote-working-student-ai-innovation-196029
+  metadata:
+    job_types:
+    - Entry
+    - Intern
+    - Part time
+published_at: '2026-07-26T14:09:22Z'
+discovered_at: '2026-07-26T21:19:01Z'
+updated_at: '2026-07-26T21:19:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:01Z'
+analysis_priority: 0
+fingerprint: sha256:e2a33a4d54e5950cd6740a21833172db70ab5612ff25137ebe6812f737a22c80
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

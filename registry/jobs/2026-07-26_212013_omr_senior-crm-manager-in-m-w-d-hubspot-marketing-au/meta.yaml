@@ -1,0 +1,46 @@
+schema_version: 2
+id: 52f68534-234c-49b7-8e5a-a4c25843dc04
+title: Senior Crm Manager*In (M/W/D) Hubspot & Marketing Automation
+company: OMR
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-crm-managerin-hubspot-marketing-automation-hamburg-396650
+  url: https://www.arbeitnow.com/jobs/companies/omr/senior-crm-managerin-hubspot-marketing-automation-hamburg-396650
+  metadata:
+    tags:
+    - RAMP106
+    - OMR
+    - Marketing
+    - OMR Festival
+    - CRM
+    - E-Mail
+    - CRM Marketing
+    - E-Mail Marketing
+    - CRM & E-Mail Marketing
+    - Marketing Manager
+    - Marketing Managerin
+    - Senior Marketing Manager
+    - Online Marketing
+    - Vollzeit
+    - Job
+    - Hamburg
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:09:23Z'
+discovered_at: '2026-07-26T21:20:13Z'
+updated_at: '2026-07-26T21:20:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:13Z'
+analysis_priority: 0
+fingerprint: sha256:afa55d668565fc2125a03ffefc6d4565eb32e18821f1768cd3a202eb4aeb6847
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

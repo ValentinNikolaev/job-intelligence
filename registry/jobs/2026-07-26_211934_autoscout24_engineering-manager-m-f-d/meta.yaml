@@ -1,0 +1,27 @@
+schema_version: 2
+id: f4f1bf7e-5af3-4f41-9961-e6fc53bc6f80
+title: Engineering Manager (m/f/d)
+company: autoscout24
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: engineering-manager-488641
+  url: https://www.arbeitnow.com/jobs/companies/autoscout24/engineering-manager-488641
+  metadata:
+    tags:
+    - Technology
+published_at: '2026-07-26T02:55:12Z'
+discovered_at: '2026-07-26T21:19:34Z'
+updated_at: '2026-07-26T21:19:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:34Z'
+analysis_priority: 0
+fingerprint: sha256:dbcd3e39ab4d26df3e74e4e88ea9d649ad603a4042c3c280db56c386b502ccfa
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: c854aced-feef-4050-9437-ab27aebed9e2
+title: Werkstudent:in Product Configuration (m/w/d)
+company: Alteos
+company_url: null
+location: Berlin
+remote: false
+employment_type: Entry, Working student, Full or part time
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-product-configuration-berlin-388647
+  url: https://www.arbeitnow.com/jobs/companies/alteos/werkstudentin-product-configuration-berlin-388647
+  metadata:
+    job_types:
+    - Entry
+    - Working student
+    - Full or part time
+published_at: '2026-07-26T05:09:04Z'
+discovered_at: '2026-07-26T21:19:31Z'
+updated_at: '2026-07-26T21:19:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:31Z'
+analysis_priority: 0
+fingerprint: sha256:fd0fb7f04c5a06cde37d56a9de5638474df4bb48d0f2ea8d2775e78b2963b0e0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

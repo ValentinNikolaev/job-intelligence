@@ -204,4 +204,4 @@ Besonders gut passt du zu uns, wenn du
 
 - Perspektivisch zusätzliche erfolgsabhängige Vergütungsbestandteile möglich
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

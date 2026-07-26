@@ -1,0 +1,29 @@
+schema_version: 2
+id: 6fbd88e0-0ae2-4e68-9a79-599feb965be9
+title: Director of Sales - Europe
+company: Kepler
+company_url: null
+location: Germany
+remote: false
+employment_type: Full-time Regular
+sources:
+- source: arbeitnow
+  source_job_id: director-of-sales-europe-germany-348581
+  url: https://www.arbeitnow.com/jobs/companies/kepler/director-of-sales-europe-germany-348581
+  metadata:
+    tags:
+    - Global Sales
+    job_types:
+    - Full-time Regular
+published_at: '2026-07-25T17:27:04Z'
+discovered_at: '2026-07-26T21:20:18Z'
+updated_at: '2026-07-26T21:20:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:18Z'
+analysis_priority: 0
+fingerprint: sha256:71249819b74f0e34f29db33aaa2df9ce104c44a371debb4666e48fdbd04133c7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,39 @@
+schema_version: 2
+id: 6a984922-b3a0-4690-8aa1-3977240d4202
+title: Werkstudent HR-Generalist (m/w/d)
+company: Empit
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Entry, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-hr-generalist-hamburg-305268
+  url: https://www.arbeitnow.com/jobs/companies/empit/werkstudent-hr-generalist-hamburg-305268
+  metadata:
+    tags:
+    - HR-Generalist
+    - Recruiting
+    - Personalwesen
+    - EMPIT
+    - Hamburg
+    - HR
+    - Personal
+    - Schleswig-Holstein
+    - Human Resources
+    job_types:
+    - Entry
+    - Intern
+    - Part time
+published_at: '2026-07-26T14:09:15Z'
+discovered_at: '2026-07-26T21:19:03Z'
+updated_at: '2026-07-26T21:19:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:03Z'
+analysis_priority: 0
+fingerprint: sha256:50afa26623cfa36608c010278668ae0d94023f1f61667ff95c0077a2fef19826
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: a7c14bcf-0741-4806-a03d-8cc366ac73f7
+title: Electronics and Hardware Test Engineer (m/f/d)
+company: Agile Robots SE
+company_url: null
+location: Germany, Munich (HQ)
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: electronics-and-hardware-test-engineer-germany-munich-hq-417115
+  url: https://www.arbeitnow.com/jobs/companies/agile-robots-se/electronics-and-hardware-test-engineer-germany-munich-hq-417115
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-25T20:09:41Z'
+discovered_at: '2026-07-26T21:20:03Z'
+updated_at: '2026-07-26T21:20:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:03Z'
+analysis_priority: 0
+fingerprint: sha256:1d0c92d5e181eebf2529d076bca0f25ec793190d12ea07d883505585dbec75a2
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

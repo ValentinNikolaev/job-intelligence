@@ -1,0 +1,37 @@
+schema_version: 2
+id: 10400aed-1d17-4ea7-b811-6b39651ecb99
+title: Werkstudent:in Prüfung Produktqualitäten (m/w/d)
+company: Siegwerk Ventures
+company_url: null
+location: Köln
+remote: false
+employment_type: Entry, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-prufung-produktqualitaten-koln-419771
+  url: https://www.arbeitnow.com/jobs/companies/siegwerk-ventures/werkstudentin-prufung-produktqualitaten-koln-419771
+  metadata:
+    tags:
+    - Qualitätsprüfung
+    - Verpackung
+    - Verpackungstechnik
+    - Produktentwicklung
+    - Werkstudent:in
+    - Nebenjob
+    - Nachhaltigkeit
+    job_types:
+    - Entry
+    - Intern
+    - Part time
+published_at: '2026-07-25T20:10:15Z'
+discovered_at: '2026-07-26T21:19:52Z'
+updated_at: '2026-07-26T21:19:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:52Z'
+analysis_priority: 0
+fingerprint: sha256:57da0adf3ae076a09b1235197bf8a200f0251db0f6cd039335bc392a22aa24f9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

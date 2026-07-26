@@ -1,0 +1,39 @@
+schema_version: 2
+id: 607418fa-98a8-490a-8da2-b3787a2852d8
+title: Werkstudent*In (M/W/D) Social Media
+company: OMR
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Entry, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-social-media-hamburg-470079
+  url: https://www.arbeitnow.com/jobs/companies/omr/werkstudentin-social-media-hamburg-470079
+  metadata:
+    tags:
+    - OMR Education
+    - OMR
+    - Marketing
+    - Werkstudent
+    - Social Media
+    - Studentenjob
+    - Content
+    - Werkstudentin
+    - Hamburg
+    job_types:
+    - Entry
+    - Intern
+    - Part time
+published_at: '2026-07-25T20:09:23Z'
+discovered_at: '2026-07-26T21:20:10Z'
+updated_at: '2026-07-26T21:20:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:20:10Z'
+analysis_priority: 0
+fingerprint: sha256:c810259b3a8dc372793340addec94d85e24a38071ae6b41f6fec2347362476de
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

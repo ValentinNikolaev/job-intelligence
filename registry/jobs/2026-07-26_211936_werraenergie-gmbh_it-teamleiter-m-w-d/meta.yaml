@@ -1,0 +1,30 @@
+schema_version: 2
+id: 05052e80-6d7b-4735-be2b-e5c2e6fc5d29
+title: IT-Teamleiter (m/w/d)
+company: WerraEnergie GmbH
+company_url: null
+location: Bad Salzungen, Thüringen, Deutschland
+remote: false
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: it-teamleiter-bad-salzungen-201914
+  url: https://www.arbeitnow.com/jobs/companies/werraenergie-gmbh/it-teamleiter-bad-salzungen-201914
+  metadata:
+    tags:
+    - Netzmanagement
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-07-26T02:51:18Z'
+discovered_at: '2026-07-26T21:19:36Z'
+updated_at: '2026-07-26T21:19:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T21:19:36Z'
+analysis_priority: 0
+fingerprint: sha256:35019e75a69ea318aa115bc1f9d1909453487bf05b1fa99abb45f322d9564375
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
