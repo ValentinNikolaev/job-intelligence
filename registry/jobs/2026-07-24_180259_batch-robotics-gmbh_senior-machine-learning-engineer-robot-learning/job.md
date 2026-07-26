@@ -44,4 +44,4 @@ Want to shape the future of industrial robotics?
 
 We look forward to meeting you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

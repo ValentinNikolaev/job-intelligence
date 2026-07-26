@@ -1,0 +1,24 @@
+schema_version: 2
+id: d3ce7afa-1c47-499b-bb5c-fb637391a020
+title: Senior AI Backend Engineer
+company: Pyyne
+company_url: null
+location: Brazil
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-4988047878897821262'
+  url: https://jooble.org/desc/-4988047878897821262?ckey=remote+senior+backend+engineer&rgn=55180&pos=38&groupId=2134052230&elckey=-7486286168882413925&p=1&aq=4762056745472166056&cid=15922&jobAge=33&brelb=100&bscr=779.3977&scr=779.3977
+published_at: '2026-07-25T02:49:30.5700000'
+discovered_at: '2026-07-26T18:08:07Z'
+updated_at: '2026-07-26T18:08:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-26T18:08:07Z'
+analysis_priority: 0
+fingerprint: sha256:e57d146de5ccaab094591cc08201233c7736f889b5ae1ed92e7d8e2a8f5d700f
+data_source: jooble
+content_source: jooble
+company_content_source: null

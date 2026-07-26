@@ -1,11 +1,11 @@
 # Senior Android SDK Engineer
 
-Posted: 2026-06-23T03:31:44Z
+Posted: 2026-07-26T12:50:04Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-23T03:31:44Z is older than 7 days
+- Category: role_mismatch
+- Reason: title is an obvious mismatch for a backend profile
 
 RevenueCat removes the headaches of building and scaling in‑app subscriptions. Since graduating from YC’s S18 batch we’ve grown into the default monetization platform for mobile: we’re in >40% of newly shipped subscription apps, we process $10B+ in annual purchase volume, and we help everyone from a solo dev in Brazil to the OpenAI mobile team understand and grow their revenue.
 
