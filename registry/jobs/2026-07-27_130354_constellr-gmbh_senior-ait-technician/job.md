@@ -140,4 +140,4 @@ Experience in environmental test campaigns (vibration, thermal vacuum) for space
 
 **Financial Upside & Well-being:** Benefit from a Virtual Share Option Plan (VSOP) for permanent employees, giving you a true stake in the company's growth, alongside highly flexible hybrid working models.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

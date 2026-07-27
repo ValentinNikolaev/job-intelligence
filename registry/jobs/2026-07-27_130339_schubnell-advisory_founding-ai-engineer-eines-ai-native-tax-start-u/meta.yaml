@@ -1,6 +1,6 @@
 schema_version: 2
 id: c9b9f768-56f9-44fa-9002-311858344e2f
-title: Founding AI Engineer eines AI Native Tax Start-Ups (Stealth Mode)
+title: Founding AI Engineer (m/w/d) eines AI Native Tax Start-Ups (Stealth Mode)
 company: Schubnell Advisory
 company_url: null
 location: Saarbrücken
@@ -14,15 +14,15 @@ sources:
     tags:
     - Directors
     - Chief Executives
-published_at: '2026-07-27T12:00:51Z'
+published_at: '2026-07-27T16:29:03Z'
 discovered_at: '2026-07-27T13:03:39Z'
-updated_at: '2026-07-27T15:53:41Z'
+updated_at: '2026-07-27T18:04:27Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-27T13:03:39Z'
 analysis_priority: 0
-fingerprint: sha256:160474aa13b1c2ac6bd4756e42578cedaa42b870cf782dbee51d19481e2235ba
+fingerprint: sha256:a1fffb4516a22f9b8a1f320996ad0ec7b4de9fa989e2032a2f046233b22a8774
 data_source: arbeitnow
 content_source: arbeitnow
 company_content_source: null

@@ -85,4 +85,4 @@ Du suchst einen krisenfesten Job als **Inhouse ERP Consultant** (m/w/d) in Vollz
 
 - **Gezielte Weiterbildungen:** Individuelle Förderung durch gezielte Weiterbildungen, Seminare und bezahlte Qualifizierungen gehören zum Standard.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

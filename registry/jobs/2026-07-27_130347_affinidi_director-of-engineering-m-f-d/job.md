@@ -104,4 +104,4 @@ We believe in hiring different and diverse talent and providing a safe space whe
 
 By applying for this position, you confirm that you have read and understood [Affinidi’s Candidate Privacy Policy](https://www.affinidi.com/assets/Candidate_Privacy_Policy-Bh-PGpoS.pdf), and consent to the collection, use, and disclosure of your personal data for recruitment purposes, as described in the [policy](https://www.affinidi.com/assets/Candidate_Privacy_Policy-Bh-PGpoS.pdf).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

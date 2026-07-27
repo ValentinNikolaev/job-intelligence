@@ -1,0 +1,28 @@
+schema_version: 2
+id: d802f820-9c1b-4638-9c8f-37f94f0a625d
+title: Consultant ERP/CRM (m/w/d)
+company: cosoft computer consulting gmbh
+company_url: null
+location: Coesfeld
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: consultant-erp-crm-coesfeld-290470
+  url: https://www.arbeitnow.com/jobs/companies/cosoft-computer-consulting-gmbh/consultant-erp-crm-coesfeld-290470
+  metadata:
+    tags:
+    - Consulting
+    - Engineering
+published_at: '2026-07-27T15:30:46Z'
+discovered_at: '2026-07-27T18:03:15Z'
+updated_at: '2026-07-27T18:03:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:03:15Z'
+analysis_priority: 0
+fingerprint: sha256:4965f4204d2c1b012228c0f6d66dea972943bfcbdc6d398fd1f2a87eb33ac24f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

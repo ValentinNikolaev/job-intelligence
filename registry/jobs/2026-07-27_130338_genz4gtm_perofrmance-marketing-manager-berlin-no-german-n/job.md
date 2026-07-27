@@ -66,4 +66,4 @@ How it works: apply in 2 minutes ➝ quick intro call ➝ case on your best camp
 
 Include one paragraph on the best performing campaign you've ever run. With numbers.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

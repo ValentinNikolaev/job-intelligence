@@ -104,4 +104,4 @@ Erzähle uns von einem Produktionsproblem, das dir selbst aufgefallen ist, ohne 
 
 **Wir freuen uns darauf, dich kennenzulernen.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

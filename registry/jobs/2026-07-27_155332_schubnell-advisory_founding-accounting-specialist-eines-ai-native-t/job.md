@@ -1,10 +1,10 @@
-# Founding Accounting Specialist eines AI Native Tax Start-Ups (Stealth Mode)
+# Founding Accounting Specialist (m/w/d) eines AI Native Tax Start-Ups (Stealth Mode)
 
-Posted: 2026-07-27T12:30:40Z
+Posted: 2026-07-27T16:59:02Z
 
 In einem meiner Projekte suche ich als Venture Builder das Gründerteam für ein **AI-natives Tax-Start-Up** im Stealth Mode.
 
-Die Idee: Buchhaltung und Steuerservices im Bereich Real Estate neu gedacht. Statt Software zu verkaufen, liefern wir fertige Ergebnisse, produziert von einer AI-nativen Plattform und abgesichert durch fachliche Qualitätskontrolle: schneller, günstiger und spürbar angenehmer als alles, was Kunden heute kennen. Der Markt ist groß, das Fundament steht, die Finanzierung ist gesichert. Was fehlt, sind die richtigen Köpfe.
+Die Idee: Buchhaltung und Steuerservices neu gedacht. Statt Software zu verkaufen, liefern wir fertige Ergebnisse, produziert von einer AI-nativen Plattform und abgesichert durch fachliche Qualitätskontrolle: schneller, günstiger und spürbar angenehmer als alles, was Kunden heute kennen. Der Markt ist groß, das Fundament steht, die Finanzierung ist gesichert. Was fehlt, sind die richtigen Köpfe.
 
 ## Aufgaben
 
@@ -62,4 +62,4 @@ Du bist der Fachanker im Team: ein sattelfester Buchhalter mit hohem Qualitätsa
 
 Lust eine Branche zu revolutionieren? Lass uns sprechen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

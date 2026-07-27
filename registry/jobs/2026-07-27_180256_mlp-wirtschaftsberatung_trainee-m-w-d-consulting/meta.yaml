@@ -1,0 +1,27 @@
+schema_version: 2
+id: 7ae79349-126a-4b52-9a0b-c21650f99886
+title: Trainee (m/w/d) Consulting
+company: MLP Wirtschaftsberatung
+company_url: null
+location: Cologne
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: trainee-consulting-cologne-444610
+  url: https://www.arbeitnow.com/jobs/companies/mlp-wirtschaftsberatung/trainee-consulting-cologne-444610
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-27T16:30:29Z'
+discovered_at: '2026-07-27T18:02:56Z'
+updated_at: '2026-07-27T18:02:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:02:56Z'
+analysis_priority: 0
+fingerprint: sha256:4fdd734ebac4efc568010ce9b81b0d028d273c610871c1ac3b66a3a6fc1b3763
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

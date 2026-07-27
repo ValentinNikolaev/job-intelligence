@@ -31,4 +31,4 @@ Bei uns arbeitest du an Themen, die nicht nur visionär klingen, sondern die Bau
 
 Wir bringen Kompetenz, Verantwortung, Weiterentwicklung und Humor perfekt unter einen Helm bringt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

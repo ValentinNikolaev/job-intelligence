@@ -48,4 +48,4 @@ Mit mehr als 30 Jahren Erfahrung im Softwaremarkt haben wir uns als Vorreiter et
 
 - **Benefits, die den Unterschied mache**n: 30 Tage Urlaub, JobRad, Sommerfeste & Tech-Events, moderne Hardware & höhenverstellbare Tische – plus: ein stabiler Arbeitgeber mit Sinn fürs Team.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -60,4 +60,4 @@ From the preset toggles, enable: Above-average compensation, Flexible working ho
 
 If you want to break into enterprise sales the right way, learning from a senior closer while building the pipeline that wins six-figure deals, send us your CV and a short note on the best cold call or outbound sequence you have run. You will hear back within a week, and the process is fast: intro call and deep dive with your future AE partner, a practical case that includes a live cold-call exercise and a conversation with a founder.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

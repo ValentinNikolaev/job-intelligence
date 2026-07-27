@@ -46,4 +46,4 @@ Wir leben den Teamspirit: Für uns bist DU wichtig. Jeden Tag leistet unser stet
 
 Wir sehen Vielfalt als Bereicherung für unser Team. Darum freuen wir uns über alle Bewerbungen und möchten besonders Menschen mit Behinderung oder anderen Herausforderungen dazu ermutigen, sich bei uns zu bewerben.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

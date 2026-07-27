@@ -1,0 +1,29 @@
+schema_version: 2
+id: 9afa92fd-e48c-418d-b034-13b0ebc8b2d9
+title: DevOps-Engineer/Systemadministrator (m/f/x)
+company: K-tronik GmbH
+company_url: null
+location: Ottobrunn
+remote: false
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: devops-engineer-systemadministrator-ottobrunn-306603
+  url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/devops-engineer-systemadministrator-ottobrunn-306603
+  metadata:
+    tags:
+    - System and Network Administration
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-27T15:30:45Z'
+discovered_at: '2026-07-27T18:03:16Z'
+updated_at: '2026-07-27T18:03:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:03:16Z'
+analysis_priority: 0
+fingerprint: sha256:f900428c21713b4d2746073fd4def851d79f48b142ee482ac05089c42575e62e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

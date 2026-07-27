@@ -1,0 +1,29 @@
+schema_version: 2
+id: c609b3e8-efbe-4b49-ae22-9add7a1b947e
+title: Marketing Manager / Marketing Lead, Global B2B
+company: Brinkdoor Ltd., London, Zweigniederlassung Erlenbach, Schweiz
+company_url: null
+location: Munich
+remote: false
+employment_type: manager
+sources:
+- source: arbeitnow
+  source_job_id: marketing-manager-marketing-lead-global-b2b-munich-38139
+  url: https://www.arbeitnow.com/jobs/companies/brinkdoor-ltd-london-zweigniederlassung-erlenbach-schweiz/marketing-manager-marketing-lead-global-b2b-munich-38139
+  metadata:
+    tags:
+    - Strategic Marketing
+    job_types:
+    - manager
+published_at: '2026-07-27T16:00:31Z'
+discovered_at: '2026-07-27T18:03:06Z'
+updated_at: '2026-07-27T18:03:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:03:06Z'
+analysis_priority: 0
+fingerprint: sha256:abc0914299b156a002a73f59b908ea2015a2630e0b1dd21a1c144f4ef6e410c0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

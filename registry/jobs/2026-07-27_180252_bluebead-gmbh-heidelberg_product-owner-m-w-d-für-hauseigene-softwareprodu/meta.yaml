@@ -1,0 +1,29 @@
+schema_version: 2
+id: dc838439-3ef1-4f9e-930c-77e25431edff
+title: Product Owner (m/w/d) für hauseigene Softwareprodukte für München
+company: bluebead GmbH Heidelberg
+company_url: null
+location: Munich
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: product-owner-fur-hauseigene-softwareprodukte-fur-munchen-munich-125604
+  url: https://www.arbeitnow.com/jobs/companies/bluebead-gmbh-heidelberg/product-owner-fur-hauseigene-softwareprodukte-fur-munchen-munich-125604
+  metadata:
+    tags:
+    - Product Management
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T17:00:35Z'
+discovered_at: '2026-07-27T18:02:52Z'
+updated_at: '2026-07-27T18:02:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:02:52Z'
+analysis_priority: 0
+fingerprint: sha256:28b0c9763d3b1b7ea0baa2b36def60c5d529cd6309ad7fe0fa43e53e8d1d1fcf
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

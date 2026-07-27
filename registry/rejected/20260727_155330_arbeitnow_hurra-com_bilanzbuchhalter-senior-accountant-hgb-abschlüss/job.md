@@ -1,6 +1,6 @@
 # Bilanzbuchhalter / Senior Accountant - HGB-Abschlüsse & Controlling (m/w/d) - 100 % remote
 
-Posted: 2026-07-27T12:30:41Z
+Posted: 2026-07-27T16:59:02Z
 
 ## Rejection
 
@@ -29,7 +29,7 @@ Deine Aufgaben:
 
 - Aufbereitung verlässlicher Finanzdaten für Reporting, Forecasts und Management-Auswertungen
 
-- Unterstützung unseres CFO bei Accounting-, Finance- und Controlling-Fragen
+- Unterstützung bei Accounting-, Finance- und Controlling-Fragen
 
 - Mitarbeit bei Budgetierung, Liquiditätsplanung, Soll-Ist-Vergleichen und Abweichungsanalysen
 
@@ -87,34 +87,38 @@ Was du bei uns erwarten kannst:
 
 - **Zusätzliche Benefits** – betriebliche Altersvorsorge, Firmenfitness, Mitarbeiterrabatte und Business-Bike-Leasing
 
-So bewirbst du dich:
+So bewirbst du dich
 
-Diese Rolle ist international, remote und mit direktem Kundenkontakt verbunden. Deshalb sind klare Kommunikation, persönliche Präsenz und sehr gute Deutsch- und Englischkenntnisse genauso wichtig wie deine fachliche Expertise.
-
-Damit wir mehr von dir kennenlernen als nur deinen Lebenslauf, ist ein kurzes Video fester Bestandteil unseres Bewerbungsprozesses. Mehr dazu erfährst du hier:
-
-[https://youtube.com/shorts/ae5zs50CHxc?feature=share](https://youtube.com/shorts/ae5zs50CHxc?feature=share)
-
-Bitte sende uns:
+Wir verzichten auf lange Anschreiben. Bitte sende uns:
 
 - deinen aktuellen Lebenslauf
 
-- ein kurzes Video von ca. 2–3 Minuten
+- ein kurzes Video von etwa zwei bis drei Minuten
 
-Du kannst das Video ganz unkompliziert mit Loom, deinem Smartphone oder einem anderen Tool aufnehmen und den Link direkt in deiner Bewerbung teilen.
+Mehr zum Video erfährst du hier:
 
-Sprich dabei bitte kurz auf Deutsch und Englisch und erzähle uns:
+[https://youtube.com/shorts/ae5zs50CHxc?feature=share](https://youtube.com/shorts/ae5zs50CHxc?feature=share)
+
+Du kannst das Video unkompliziert mit Loom, deinem Smartphone oder einem anderen Tool aufnehmen und den Link direkt in deiner Bewerbung teilen.
+
+Erzähle uns darin bitte kurz:
 
 - Warum interessiert dich diese Rolle?
 
 - Was motiviert dich beruflich?
 
-- Was erwartest du von deiner nächsten Position?
+- Welche Monats-, Quartals- oder Jahresabschlüsse hast du bisher weitgehend eigenständig erstellt?
 
-- Welche Erfahrung macht dich zu einer besonders guten Besetzung für diese Rolle?
+- Wie operativ arbeitest du aktuell noch selbst in der Buchhaltung?
 
-Wir erwarten keine perfekte Produktion. Uns geht es um einen authentischen ersten Eindruck von deiner Kommunikation, Motivation, Persönlichkeit und deinen Sprachkenntnissen.
+- Welche Erfahrung bringst du in Reporting, Forecasts oder Controlling mit?
+
+- Wie nutzt du digitale Tools, Automatisierung oder AI bereits im Finance-Alltag?
+
+Bitte sprich überwiegend auf Deutsch und kurz auch auf Englisch.
+
+Wir erwarten keine perfekte Produktion. Uns geht es um einen authentischen Eindruck von deiner praktischen Erfahrung, deiner Arbeitsweise, deiner Motivation und deiner Kommunikation.
 
 **Für einen fairen und einheitlichen Bewerbungsprozess berücksichtigen wir ausschließlich Bewerbungen, die sowohl einen Lebenslauf als auch das kurze Video enthalten.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

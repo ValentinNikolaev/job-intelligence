@@ -1,6 +1,6 @@
-# Founding AI Engineer eines AI Native Tax Start-Ups (Stealth Mode)
+# Founding AI Engineer (m/w/d) eines AI Native Tax Start-Ups (Stealth Mode)
 
-Posted: 2026-07-27T12:00:51Z
+Posted: 2026-07-27T16:29:03Z
 
 In einem meiner Projekte suche ich als Venture Builder das Gründerteam für ein **AI-natives Tax-Start-Up** im Stealth Mode.
 

@@ -80,4 +80,4 @@ If you’re ready to bring your passion for games, especially board and card gam
 
 (*) GameDuell appreciates diverse perspectives and backgrounds, and promotes equal opportunities and an inclusive working environment in which every team member is valued. Any terms referring to people are valid for all genders whether male, female, or diverse.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 06d67f3e-f0c1-4b90-b4a0-d475fc101090
+title: Praktikum Creator Relations & Influencer Marketing (m/w/d) - Creator Network
+  Manager
+company: Golf Post
+company_url: null
+location: Cologne
+remote: false
+employment_type: Internship
+sources:
+- source: arbeitnow
+  source_job_id: praktikum-creator-relations-influencer-marketing-creator-network-manager-cologne-7451
+  url: https://www.arbeitnow.com/jobs/companies/golf-post/praktikum-creator-relations-influencer-marketing-creator-network-manager-cologne-7451
+  metadata:
+    tags:
+    - Social Media Manager
+    job_types:
+    - Internship
+published_at: '2026-07-27T15:30:47Z'
+discovered_at: '2026-07-27T18:03:09Z'
+updated_at: '2026-07-27T18:03:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:03:09Z'
+analysis_priority: 0
+fingerprint: sha256:a70247383612caebe5aab73db032586e6618f1f90e9e8053d3d460ce08ba7035
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -61,4 +61,4 @@ Unsere Beratung ist für Sie völlig kostenlos. Falls Sie Fragen haben, erreiche
 
 # Mechatroniker für Kältetechnik # Kälteanlagenbauer # Kältetechniker # Klimatechniker # Kälte Klima Techniker # Kälteanlagenmonteur # Servicetechniker Kältetechnik # Servicetechniker Klimatechnik # Kältetechnik Monteur # Klimaanlagen Monteur # Kälte Klima Monteur # Kältetechnik Jobs Düsseldorf # Mechatroniker Kältetechnik Düsseldorf # Kälteanlagenbauer Düsseldorf # Klimatechniker Düsseldorf # Klima Kälte Servicetechniker # RLT Servicetechniker # Wärmepumpen Kältetechnik # Kältetechnik Stellenangebote # Klima Kälte Job
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

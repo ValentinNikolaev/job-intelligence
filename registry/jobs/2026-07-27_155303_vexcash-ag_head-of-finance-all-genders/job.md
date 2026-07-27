@@ -56,4 +56,4 @@ Die VEXCASH AG ist Deutschlands führender Online-Anbieter von Kurzzeitkrediten.
 
 Klingt das nach Dir? Spricht Dich das an? Dann bewirb Dich am besten jetzt gleich. Wer zögert ist selber schuld!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -78,4 +78,4 @@ Unsere Antwort erfolgt per E-Mail.
 
 Sie haben keine erhalten? Dann schauen Sie doch einmal in Ihren SPAM- bzw. JUNK-Mail-Ordner.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
