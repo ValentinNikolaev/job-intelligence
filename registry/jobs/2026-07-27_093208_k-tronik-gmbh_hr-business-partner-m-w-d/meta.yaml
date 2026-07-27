@@ -1,0 +1,29 @@
+schema_version: 2
+id: 3e93f2d6-809b-4926-9109-1deee52524c5
+title: HR Business Partner (m/w/d)
+company: K-tronik GmbH
+company_url: null
+location: Fürstenfeldbruck
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: hr-business-partner-furstenfeldbruck-190556
+  url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/hr-business-partner-furstenfeldbruck-190556
+  metadata:
+    tags:
+    - Personnel Specialist
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T08:30:30Z'
+discovered_at: '2026-07-27T09:32:08Z'
+updated_at: '2026-07-27T09:32:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:08Z'
+analysis_priority: 0
+fingerprint: sha256:acb51ec29660a3bb10614848e22fa6b804c44e2812dc1117d2db104d7387a825
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

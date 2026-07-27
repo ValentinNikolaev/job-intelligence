@@ -1,0 +1,29 @@
+schema_version: 2
+id: 945f4b7f-c20c-4d54-9b37-403cc3ebfebd
+title: Steuerberater (m/w/d) in Birkenheide, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Birkenheide
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-birkenheide-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-24690
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-birkenheide-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-24690
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-27T06:30:30Z'
+discovered_at: '2026-07-27T09:32:38Z'
+updated_at: '2026-07-27T09:32:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:38Z'
+analysis_priority: 0
+fingerprint: sha256:001fd357a96c94a19c58b1f536ac9f96b941a47635cb44505505f31ffb052b8b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

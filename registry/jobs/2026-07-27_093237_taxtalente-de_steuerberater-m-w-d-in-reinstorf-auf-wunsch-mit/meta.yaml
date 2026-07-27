@@ -1,0 +1,29 @@
+schema_version: 2
+id: 3afbf1c2-0400-48a5-8d1a-a34da68df87b
+title: Steuerberater (m/w/d) in Reinstorf, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Reinstorf
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-reinstorf-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-214575
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-reinstorf-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-214575
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-27T06:30:32Z'
+discovered_at: '2026-07-27T09:32:37Z'
+updated_at: '2026-07-27T09:32:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:37Z'
+analysis_priority: 0
+fingerprint: sha256:9642fac2b4422dac9d808515654d11bba5a6b5600bad26b7b3e569bba1961bfb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

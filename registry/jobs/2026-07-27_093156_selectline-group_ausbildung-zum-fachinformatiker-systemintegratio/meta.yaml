@@ -1,0 +1,30 @@
+schema_version: 2
+id: 4b59c80d-ad75-46ef-ac76-ed9650c0738e
+title: Ausbildung zum Fachinformatiker Systemintegration (m/w/d) | Start 2026
+company: SelectLine Group
+company_url: null
+location: Ehrenkirchen
+remote: false
+employment_type: Apprenticeship, berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: ausbildung-zum-fachinformatiker-systemintegration-start-2026-ehrenkirchen-78701
+  url: https://www.arbeitnow.com/jobs/companies/selectline-group/ausbildung-zum-fachinformatiker-systemintegration-start-2026-ehrenkirchen-78701
+  metadata:
+    tags:
+    - System and Network Administration
+    job_types:
+    - Apprenticeship
+    - berufseinstieg
+published_at: '2026-07-27T09:00:41Z'
+discovered_at: '2026-07-27T09:31:56Z'
+updated_at: '2026-07-27T09:31:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:31:56Z'
+analysis_priority: 0
+fingerprint: sha256:0d21ba715dee5abf169e6ab711f679908e88265fb5e78cc5e9f6c013fc069bf6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

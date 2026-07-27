@@ -31,4 +31,4 @@ Du gestaltest die technische Architektur unserer Enterprise-Lösungen und nutzt 
 - AI-driven Development nutzt, um effizienter zu arbeiten und bessere Lösungen zu schaffen
 ein ambitionierter Engineer bist, der für sein Fachgebiet brennt
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

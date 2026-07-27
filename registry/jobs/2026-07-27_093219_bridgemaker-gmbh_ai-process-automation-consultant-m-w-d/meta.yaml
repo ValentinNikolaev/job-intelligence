@@ -1,0 +1,29 @@
+schema_version: 2
+id: 12858456-8871-4957-8d0a-72b04e32dcc4
+title: AI Process Automation Consultant (m/w/d)
+company: Bridgemaker GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: ai-process-automation-consultant-berlin-222343
+  url: https://www.arbeitnow.com/jobs/companies/bridgemaker-gmbh/ai-process-automation-consultant-berlin-222343
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T07:30:58Z'
+discovered_at: '2026-07-27T09:32:19Z'
+updated_at: '2026-07-27T09:32:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:19Z'
+analysis_priority: 0
+fingerprint: sha256:88662df7aae62848f420ca38c4899c6b4a50a3f70d38b054c5b38f732eddadfa
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,31 @@
+schema_version: 2
+id: fe42f3dd-df2a-4666-a9a5-dc2442b3dc22
+title: Senior Prototyping Engineer (f/m/d) – Thermal Systems & Cooling Integration
+company: Quantum-Systems GmbH
+company_url: null
+location: Gilching
+remote: false
+employment_type: Full-time permanent, mid
+sources:
+- source: arbeitnow
+  source_job_id: senior-prototyping-engineer-thermal-systems-cooling-integration-gilching-439086
+  url: https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/senior-prototyping-engineer-thermal-systems-cooling-integration-gilching-439086
+  metadata:
+    tags:
+    - Engineering
+    - bachelor's degree
+    job_types:
+    - Full-time permanent
+    - mid
+published_at: '2026-07-27T07:20:14Z'
+discovered_at: '2026-07-27T09:32:22Z'
+updated_at: '2026-07-27T09:32:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:22Z'
+analysis_priority: 0
+fingerprint: sha256:f17f45d6c5cf0ede5a25f3564585f241b4cee0af9a0a878479f132887a6a27d7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

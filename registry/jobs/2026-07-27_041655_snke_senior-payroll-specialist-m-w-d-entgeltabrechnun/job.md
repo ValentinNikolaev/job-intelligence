@@ -44,4 +44,4 @@ Als Payroll Specialist bei Snke sind Sie ein wesentlicher Bestandteil unseres Fi
 
 Tatjana von Freyberg
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

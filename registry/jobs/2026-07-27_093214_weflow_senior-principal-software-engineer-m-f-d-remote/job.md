@@ -1,0 +1,45 @@
+# Senior / Principal Software Engineer (m/f/d - Remote)
+
+Posted: 2026-07-27T08:00:46Z
+
+Weflow's Revenue AI Platform automates Salesforce data capture and provides full visibility into deal, pipeline, and forecast health.
+
+200+ fast-growing companies like Retool, BenchSci, IDnow use Weflow to improve team productivity, sales performance, and revenue predictability.
+
+Weflow is backed by Gradient Ventures, Cherry Ventures, and renowned angel investors and run by repeat founders Philipp Stelzer and Janis Zech.
+
+## Tasks
+
+As Senior/Principal Engineer, you’ll play a key role in shaping how Weflow's Revenue AI Platform evolves. You’ll lead the development of deep integrations, build complex AI-driven workflows, and support a rapidly expanding customer base. If you enjoy solving tough engineering problems at scale: let's talk!
+
+## Requirements
+
+- 5+ years of experience in software development.
+
+- Expert-level proficiency in React + Typescript / Next.js, Node.js, PostgreSQL.
+
+- Experience with AWS services and cloud architecture.
+
+- Experience with Agile methodologies and CI/CD practices.
+
+- Must be comfortable with using AI for development and keen on automating workflows where beneficial for speed of development without sacrificing quality.
+
+- Solid understanding of software design patterns and architectural distributed computing principles.
+
+- Experience with working in SaaS product companies.
+
+- Overlap with EU working hours (CET ±2 hours).
+
+## Benefits
+
+- Weflow offers competitive pay based on market rates in the country of the applicant.
+
+- 100% Remote - enjoy the freedom to work from anywhere within your country of residence.
+
+- Annual Paid Leave (PTO).
+
+- Annual Company Off-Site with all expenses paid.
+
+Weflow is an an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability, or protected veteran status.
+
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

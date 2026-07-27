@@ -1,0 +1,29 @@
+schema_version: 2
+id: 06c280f1-4bd0-462f-97cb-68fc60111782
+title: Application Manager (Payment) (wmd)
+company: Netcetera Software Services GmbH
+company_url: null
+location: Cologne
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: application-manager-payment-wmd-cologne-86041
+  url: https://www.arbeitnow.com/jobs/companies/netcetera-software-services-gmbh/application-manager-payment-wmd-cologne-86041
+  metadata:
+    tags:
+    - Technical Documentation
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T08:30:30Z'
+discovered_at: '2026-07-27T09:32:05Z'
+updated_at: '2026-07-27T09:32:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:05Z'
+analysis_priority: 0
+fingerprint: sha256:6ed0dd7ddef464b7706d244f172f2c8c8eed900338c8dc5c2489a824c8532481
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

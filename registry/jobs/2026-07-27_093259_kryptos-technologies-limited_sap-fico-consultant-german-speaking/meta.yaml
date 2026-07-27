@@ -1,0 +1,30 @@
+schema_version: 2
+id: d8465b6f-5794-4212-9ab3-26a1e71e594e
+title: SAP FICO Consultant ( German Speaking)
+company: Kryptos Technologies limited
+company_url: null
+location: Friedrichshafen
+remote: false
+employment_type: Contract, professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: sap-fico-consultant-german-speaking-friedrichshafen-439667
+  url: https://www.arbeitnow.com/jobs/companies/kryptos-technologies-limited/sap-fico-consultant-german-speaking-friedrichshafen-439667
+  metadata:
+    tags:
+    - IT
+    job_types:
+    - Contract
+    - professional / experienced
+published_at: '2026-07-27T03:00:32Z'
+discovered_at: '2026-07-27T09:32:59Z'
+updated_at: '2026-07-27T09:32:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:59Z'
+analysis_priority: 0
+fingerprint: sha256:6df9f11917fd72b3ad56d2eb8c78461b5cb91e6c9df8f65a01c0759da8a6ec08
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

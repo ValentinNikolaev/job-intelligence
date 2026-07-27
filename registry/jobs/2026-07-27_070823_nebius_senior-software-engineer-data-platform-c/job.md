@@ -116,4 +116,4 @@ Applicants must be authorized to work in the country in which they apply and wil
 
 If you need accommodations during the application process, please let us know.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

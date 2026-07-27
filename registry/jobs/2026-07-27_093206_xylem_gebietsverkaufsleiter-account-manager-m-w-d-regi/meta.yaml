@@ -1,0 +1,31 @@
+schema_version: 2
+id: 4c587e8e-aab2-4df5-a9e8-e4be4ca11a83
+title: Gebietsverkaufsleiter / Account Manager (m/w/d) Region Ost (Abwassertechnik
+  / Pumpen und Systeme
+company: Xylem
+company_url: null
+location: Langenhagen
+remote: false
+employment_type: teamleitung
+sources:
+- source: arbeitnow
+  source_job_id: gebietsverkaufsleiter-account-manager-region-ost-abwassertechnik-pumpen-und-systeme-langenhagen-9158
+  url: https://www.arbeitnow.com/jobs/companies/xylem/gebietsverkaufsleiter-account-manager-region-ost-abwassertechnik-pumpen-und-systeme-langenhagen-9158
+  metadata:
+    tags:
+    - Management
+    - Team Leader
+    job_types:
+    - teamleitung
+published_at: '2026-07-27T08:30:30Z'
+discovered_at: '2026-07-27T09:32:06Z'
+updated_at: '2026-07-27T09:32:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:06Z'
+analysis_priority: 0
+fingerprint: sha256:9a0fa39da88bcfb7bd2646c7ecc36bc25f9329aef06a5ba9e607393c13407cfb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

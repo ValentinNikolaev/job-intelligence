@@ -1,0 +1,29 @@
+schema_version: 2
+id: 97127e08-1823-4e44-aa9c-2accc0b4d4d7
+title: Steuerberater (m/w/d) in Untergruppenbach, auf Wunsch mit Partnerperspektive,
+  gesucht - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Untergruppenbach
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-untergruppenbach-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-88650
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-untergruppenbach-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-88650
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-27T06:30:32Z'
+discovered_at: '2026-07-27T09:32:34Z'
+updated_at: '2026-07-27T09:32:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:34Z'
+analysis_priority: 0
+fingerprint: sha256:1dc67e762d6be1ad6fbb662ae6fc4d17e2fef3db761a13de0ebbecc596db6603
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

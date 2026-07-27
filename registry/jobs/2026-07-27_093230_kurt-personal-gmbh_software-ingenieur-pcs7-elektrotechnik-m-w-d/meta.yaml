@@ -1,0 +1,27 @@
+schema_version: 2
+id: 6963fe92-3332-426d-90aa-9737ed61fb01
+title: Software-Ingenieur PCS7 Elektrotechnik (m/w/d)
+company: KURT Personal GmbH
+company_url: null
+location: Pinneberg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: software-ingenieur-pcs7-elektrotechnik-pinneberg-434572
+  url: https://www.arbeitnow.com/jobs/companies/kurt-personal-gmbh/software-ingenieur-pcs7-elektrotechnik-pinneberg-434572
+  metadata:
+    tags:
+    - IT Security
+published_at: '2026-07-27T06:30:34Z'
+discovered_at: '2026-07-27T09:32:30Z'
+updated_at: '2026-07-27T09:32:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:32:30Z'
+analysis_priority: 0
+fingerprint: sha256:4078489be7d39a81360c28b6b37fdfcc3c0a6f99812df7f31d78482ab83fe399
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

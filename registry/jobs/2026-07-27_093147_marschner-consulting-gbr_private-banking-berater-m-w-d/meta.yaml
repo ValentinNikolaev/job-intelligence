@@ -1,0 +1,27 @@
+schema_version: 2
+id: c5862b1e-dc2b-4dc7-8fa9-7b5d49e14b4a
+title: Private Banking Berater (m/w/d)
+company: marschner consulting GbR
+company_url: null
+location: Mainz
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: private-banking-berater-mainz-391537
+  url: https://www.arbeitnow.com/jobs/companies/marschner-consulting-gbr/private-banking-berater-mainz-391537
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-27T09:00:42Z'
+discovered_at: '2026-07-27T09:31:47Z'
+updated_at: '2026-07-27T09:31:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:31:47Z'
+analysis_priority: 0
+fingerprint: sha256:3cf2c35b0159be497780e6deff786e45f778c992f72e0b2d6c2d8c02105ad58f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

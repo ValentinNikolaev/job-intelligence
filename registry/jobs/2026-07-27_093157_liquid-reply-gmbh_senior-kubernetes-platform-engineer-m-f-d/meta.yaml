@@ -1,0 +1,29 @@
+schema_version: 2
+id: c8ea8d32-4513-4c3b-89c6-2a4cc40004f1
+title: Senior Kubernetes Platform Engineer (m/f/d)
+company: Liquid Reply GmbH
+company_url: null
+location: Cologne
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-kubernetes-platform-engineer-cologne-446103
+  url: https://www.arbeitnow.com/jobs/companies/liquid-reply-gmbh/senior-kubernetes-platform-engineer-cologne-446103
+  metadata:
+    tags:
+    - Business Consulting
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T09:00:40Z'
+discovered_at: '2026-07-27T09:31:57Z'
+updated_at: '2026-07-27T09:31:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:31:57Z'
+analysis_priority: 0
+fingerprint: sha256:def6126aa29da3a8ecaf9a4aac52dc11b39b45eabb7baf11dd658b987de50856
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

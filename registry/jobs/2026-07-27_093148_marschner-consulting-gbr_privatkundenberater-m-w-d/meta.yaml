@@ -1,0 +1,27 @@
+schema_version: 2
+id: c63881c0-8a29-4201-a890-d8372f39ae68
+title: Privatkundenberater (m/w/d)
+company: marschner consulting GbR
+company_url: null
+location: Güstrow
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: privatkundenberater-gustrow-11030
+  url: https://www.arbeitnow.com/jobs/companies/marschner-consulting-gbr/privatkundenberater-gustrow-11030
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-27T09:00:42Z'
+discovered_at: '2026-07-27T09:31:48Z'
+updated_at: '2026-07-27T09:31:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T09:31:48Z'
+analysis_priority: 0
+fingerprint: sha256:a36c79463c78be35c31cad141c3b015fec41b62902005e1094a0d22b9e349d3b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
