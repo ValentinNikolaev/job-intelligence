@@ -60,4 +60,4 @@ Was uns auszeichnet, ist unsere Expertise bei Cloud-agnostischen Implementierung
 
 Bist du bereit?
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

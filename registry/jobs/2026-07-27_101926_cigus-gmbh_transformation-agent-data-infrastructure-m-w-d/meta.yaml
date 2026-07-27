@@ -1,0 +1,31 @@
+schema_version: 2
+id: 717e621d-8bd2-4067-831d-050410a6dcaa
+title: Transformation Agent Data Infrastructure (m/w/d)
+company: cigus GmbH
+company_url: null
+location: Oberkochen
+remote: false
+employment_type: Full-time fixed-term, experienced
+sources:
+- source: arbeitnow
+  source_job_id: transformation-agent-data-infrastructure-oberkochen-251335
+  url: https://www.arbeitnow.com/jobs/companies/cigus-gmbh/transformation-agent-data-infrastructure-oberkochen-251335
+  metadata:
+    tags:
+    - Internet and software
+    - professional
+    job_types:
+    - Full-time fixed-term
+    - experienced
+published_at: '2026-07-27T09:20:19Z'
+discovered_at: '2026-07-27T10:19:26Z'
+updated_at: '2026-07-27T10:19:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T10:19:26Z'
+analysis_priority: 0
+fingerprint: sha256:8b54aa5c59ee7bb61a713dbcf9c3b5e754fa5b17fdf0406f498b220792da4cc2
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

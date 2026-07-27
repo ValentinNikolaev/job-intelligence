@@ -53,4 +53,4 @@ We encourage all qualified candidates to apply regardless of, for example, age, 
 
 This job description was written by humans, assisted by AI. We may leverage technology in our hiring process to help us see the person behind the resume.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

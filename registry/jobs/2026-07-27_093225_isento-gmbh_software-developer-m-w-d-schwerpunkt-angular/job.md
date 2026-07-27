@@ -54,4 +54,4 @@ Wir isentos verstehen uns als Team. Uns ist es wichtig, dass wir uns jederzeit a
 
 Klingt gut? Dann werde Teil unseres Teams.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

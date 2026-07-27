@@ -50,4 +50,4 @@ In den Weiten der Veranstaltersphären suchen wir ab sofort tatkräftige Unterst
 - Strategisches Denken kombiniert mit echter Hands-on-Mentalität**
 **
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

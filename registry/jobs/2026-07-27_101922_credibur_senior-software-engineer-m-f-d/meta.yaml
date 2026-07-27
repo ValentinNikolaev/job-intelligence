@@ -1,0 +1,31 @@
+schema_version: 2
+id: e51c7bec-7dab-44f5-ba41-2149bf826757
+title: Senior Software Engineer (m/f/d)
+company: Credibur
+company_url: null
+location: Berlin
+remote: true
+employment_type: Freelance, executive
+sources:
+- source: arbeitnow
+  source_job_id: senior-software-engineer-berlin-242205
+  url: https://www.arbeitnow.com/jobs/companies/credibur/senior-software-engineer-berlin-242205
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - Freelance
+    - executive
+published_at: '2026-07-27T09:30:43Z'
+discovered_at: '2026-07-27T10:19:22Z'
+updated_at: '2026-07-27T10:19:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T10:19:22Z'
+analysis_priority: 0
+fingerprint: sha256:5dc828df4aaeff30231f4c55e6416fdfa6e1e43fa05083876f1849c906bf71c5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

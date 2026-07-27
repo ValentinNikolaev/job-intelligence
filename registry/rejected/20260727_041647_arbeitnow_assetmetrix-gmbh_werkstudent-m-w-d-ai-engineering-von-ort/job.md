@@ -54,4 +54,4 @@ Als Werkstudent:in im Bereich AI Engineering unterstützt Du uns beim Aufbau und
 - Hybrides Arbeiten möglich (Büro und Homeoffice im Wechsel)
 - Freie Getränke und Obst sowie wie im Sommer eine immer gut gefüllte Eisbox
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

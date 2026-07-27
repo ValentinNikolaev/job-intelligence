@@ -1,0 +1,27 @@
+schema_version: 2
+id: b428474c-f2fe-4b88-89f9-1856bd078e4e
+title: Sales Director, Payments (DACH)
+company: Fireblocks
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sales-director-payments-dach-berlin-262771
+  url: https://www.arbeitnow.com/jobs/companies/fireblocks/sales-director-payments-dach-berlin-262771
+  metadata:
+    tags:
+    - Sales
+published_at: '2026-07-27T09:16:12Z'
+discovered_at: '2026-07-27T10:19:29Z'
+updated_at: '2026-07-27T10:19:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T10:19:29Z'
+analysis_priority: 0
+fingerprint: sha256:58782e1ad1d743a87ec6195fda2517d95d45affe2a39f4116e553f11e2869977
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

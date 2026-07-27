@@ -44,4 +44,4 @@ Dann ist Dataciders Deine Antwort. Komm an Bord und gestalte mit uns die Zukunft
 - Regelmäßige Team- und Firmenevents sowie aktiver Austausch innerhalb der Dataciders Group
 - Spannende Projekte mit echtem Impact im Public Sector und direktem Kundenzugang
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

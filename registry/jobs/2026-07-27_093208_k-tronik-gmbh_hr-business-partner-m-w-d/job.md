@@ -60,4 +60,4 @@ Zur Unterstützung unseres Teams bei eine rennomierten Kunden im Bereich Verteid
 
 - 360° Betreuung: Feedbackgespräche, Karriereplanung, Unterstützung bei Umzug, etc.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
