@@ -110,4 +110,4 @@ Bonus points for:
 
 - Whether city bike or e-bike - be flexible with our job bike leasing and do something good for the environment at the same time
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

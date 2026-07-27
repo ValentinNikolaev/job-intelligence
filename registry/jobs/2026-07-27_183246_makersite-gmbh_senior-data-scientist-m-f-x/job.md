@@ -1,0 +1,249 @@
+# Senior Data Scientist (m/f/x)
+
+Posted: 2026-07-27T17:51:11Z
+
+Data Scientist (m/f/x)
+
+Location: EU
+
+(Remote)
+
+#### **Who You’ll Work For:**
+
+At Makersite, we're pioneering the future of sustainable product development and digital collaboration. As a leading platform for product lifecycle management (PLM), we empower companies to make smarter, more sustainable decisions across their entire supply chain. Our cutting-edge software enables teams to design, prototype, and manufacture with transparency, efficiency, and responsibility—reducing environmental impact while optimizing performance.
+
+We're a fast-growing, innovative company that thrives on creativity, collaboration, and continuous learning. If you're passionate about technology, sustainability, and creating meaningful impact, we’d love to hear from you. Join us and be a part of shaping the future of manufacturing and product innovation.
+
+#### **Who we're looking for:**
+
+As part of our growing team, you will play a key role in shaping the future of sustainable product development. We’re looking for innovative, driven Data Scientists who are passionate about technology and sustainability to join us in building tools that enable companies to make smarter, more responsible decisions. In this role, you’ll have the opportunity to collaborate with talented professionals, contribute to cutting-edge projects, and help drive the digital transformation of industries worldwide. Ifyou're ready to make an impact and contribute to meaningful change, we want to hear from you!
+
+This role is a fixed, permanent position. All successful applicants will receive a permanent employment contract regardless of location.
+
+#### **The role: **
+
+**Develop and Deploy Production-Grade AI Systems**
+
+-
+
+Build, deploy, and maintain scalable APIs that serve AI/ML models in production environments
+
+-
+
+Own end-to-end delivery of AI solutions, from prototyping to fully productionized systems
+
+**Design Advanced AI Architectures**
+
+-
+
+Design and implement Retrieval-Augmented Generation (RAG) systems using vector databases
+
+-
+
+Build and orchestrate AI agents using frameworks such as LangGraph, CrewAI, or similar
+
+-
+
+Evaluate and select appropriate large language models (LLMs) and foundation models based on specific use cases
+
+**Optimize Performance and Scalability**
+
+-
+
+Continuously optimize model inference for latency, cost efficiency, and throughput at scale
+
+-
+
+Identify bottlenecks and implement improvements to ensure high-performing systems
+
+**Ensure Reliability and Observability**
+
+-
+
+Implement robust monitoring, logging, and alerting for deployed models and services
+
+-
+
+Ensure system reliability, uptime, and performance through best practices in production ML systems
+
+**Establish Engineering Best Practices**
+
+-
+
+Build and maintain CI/CD pipelines for seamless testing, deployment, and iteration of AI systems
+
+-
+
+Contribute to evolving engineering standards as the company transitions from rapid experimentation to more structured, scalable operations
+
+**Collaborate Cross-Functionally**
+
+-
+
+Work closely with product and engineering teams to integrate AI capabilities into core products
+
+-
+
+Translate business problems into technical solutions and clearly communicate trade-offs
+
+**Drive Structure in a Fast-Paced Environment**
+
+-
+
+Help bring stability and structure to AI development processes during a high-growth, scale-up phase
+
+-
+
+Balance speed of execution with the need for maintainable, well-documented, and scalable systems
+
+-
+
+Take ownership of ambiguous problems and drive them through to practical, production-ready outcomes
+
+***Core Experience**** *
+
+-
+
+5+ years of experience in Python, with ~10 years of overall software engineering or data experience (candidates transitioning from backend engineering are welcome)
+
+-
+
+Proven experience building and deploying production-grade APIs (preferably with FastAPI; REST/GraphQL experience is a plus)
+
+-
+
+Hands-on experience working with large language models (LLMs) and LLMOps, including prompt engineering, fine-tuning, and evaluation (e.g., GPT, Claude)
+
+-
+
+Strong experience fine-tuning open-source models (e.g., Hugging Face ecosystem)
+
+-
+
+Practical experience designing and working with vector databases (e.g., Pinecone, Weaviate, Chroma, pgvector)
+
+-
+
+Experience building AI agents using frameworks such as LangGraph, LangChain, CrewAI, or similar
+
+-
+
+Solid understanding of model deployment and serving (e.g., vLLM, TGI, or managed endpoints)
+
+-
+
+Experience with CI/CD pipelines and modern deployment practices (Docker, Kubernetes, GitHub Actions)
+
+-
+
+Strong experience working with and processing large-scale text datasets
+
+***Preferred Experience**** *
+
+-
+
+Experience with MLOps platforms such as MLflow or Weights & Biases
+
+-
+
+Familiarity with cloud AI ecosystems (e.g., AWS Bedrock, GCP Vertex AI, Azure OpenAI)
+
+-
+
+Contributions to open-source AI/ML projects
+
+-
+
+Experience in the sustainability or climate/product domain
+
+-
+
+Background in B2B SaaS environments
+
+-
+
+Prior experience in a startup or scale-up environment (approximately 100–300 employees)
+
+-
+
+Residing in and legally permitted to work in the EU.
+
+***Key Attributes**** *
+
+-
+
+**Builder mindset:** Comfortable owning systems end-to-end, from experimentation through to production
+
+-
+
+**Bias for action:** Operates effectively in a fast-paced, evolving environment with shifting priorities
+
+-
+
+**Systems thinker:** Designs solutions with scalability, reliability, and maintainability in mind
+
+-
+
+**Pragmatic decision-making:** Balances technical excellence with speed and business impact
+
+-
+
+**Ownership & accountability:** Takes responsibility for outcomes, not just outputs
+
+-
+
+**Clear communicator:** Able to articulate complex technical concepts to both technical and non-technical stakeholders
+
+#### **What We Offer:**
+
+-
+
+**Competitive Salary** – We reward your skills and experience with a compensation package that reflects your value.
+
+-
+
+**30 Days Paid Time Off** – Take the time you need to recharge and maintain a healthy work-life balance.
+
+-
+
+**Remote-First Flexibility** – Work from anywhere in the EU, with the option to collaborate in person at our offices in Stuttgart, Berlin (role dependent).
+
+-
+
+**Generous Learning & Development Budget** – We invest in your growth, providing ample resources for personal and professional development.
+
+-
+
+**Choose Your Ideal Work Equipment** – Whether you prefer Apple or Microsoft, we’ll equip you with the tools you need to excel.
+
+#### **The Experience:**
+
+-
+
+**Purpose-Driven Work** – Build something meaningful. Here, you’re not just creating another app; you’re contributing to a transformative vision that you can be proud of.
+
+-
+
+**Great Colleagues** – Join a team that’s open, transparent, and international. We value inclusivity and foster a culture of collaboration and mutual respect.
+
+-
+
+**Work-Life Balance** – As a remote-first company, we trust you to do your best work, your way. You have the flexibility to work when it suits you, ensuring a healthy balance between personal and professional life.
+
+-
+
+**Pride in Impact** – We're already making a significant difference with global, well-known customers who share our vision. Be part of something that matters.
+
+-
+
+**Stability with Ambition** – With realistic growth plans, we’re committed to changing the way things are made—without sacrificing our ambitious goals for innovation and impact.
+
+If you want to find out more about what it’s like to work at Makersite, check out our **Careers Page** **[here](https://makersitegmbh.recruitee.com/)**
+
+#### **Diversity and Inclusion**
+
+If you have a medical condition or an individual need for an adjustment to our process, and you believe this may affect your ability to be at your best – please let us know so we can talk about how we can best support you and make any adjustments that may be needed.
+
+At Makersite, we are dedicated to fostering an environment that champions diversity, equity, inclusion, and belonging. We believe that diverse teams drive innovation and success, and we are proud to be an equal opportunity employer. We welcome applicants from all backgrounds and will consider all applications regardless of age, disability, gender identity, marital status, pregnancy or maternity, race, nationality, religion, sex, sexual orientation, or any other status protected by applicable law. Rest assured, all applications will be handled with the utmost confidentiality.
+
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

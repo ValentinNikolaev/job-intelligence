@@ -56,4 +56,4 @@ Sind Sie an der Vakanz interessiert?
 
 Dann freuen wir uns auf Ihre Nachricht.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

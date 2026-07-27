@@ -194,4 +194,4 @@ Joining REPLUG means you'll have the opportunity to:
 
 - Access yearly educational budget
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

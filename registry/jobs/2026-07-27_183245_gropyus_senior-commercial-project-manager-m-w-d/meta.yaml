@@ -1,0 +1,27 @@
+schema_version: 2
+id: 72b25105-d2ea-4c98-90f6-2fc6587d95d7
+title: Senior Commercial Project Manager (m/w/d)
+company: Gropyus
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-commercial-project-manager-berlin-76468
+  url: https://www.arbeitnow.com/jobs/companies/gropyus/senior-commercial-project-manager-berlin-76468
+  metadata:
+    tags:
+    - Execution
+published_at: '2026-07-27T17:55:42Z'
+discovered_at: '2026-07-27T18:32:45Z'
+updated_at: '2026-07-27T18:32:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:32:45Z'
+analysis_priority: 0
+fingerprint: sha256:fe7f0249740d212618bf83f26fe85f77b6cac0ee1683c774fa726cfe0937c46f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

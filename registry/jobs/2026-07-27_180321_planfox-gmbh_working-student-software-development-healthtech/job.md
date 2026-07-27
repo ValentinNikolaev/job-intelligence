@@ -50,4 +50,4 @@ Bei PLANFOX gestalten wir die digitale Zukunft des Gesundheitswesens. Wir entwic
 
 **Julia Ondra**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

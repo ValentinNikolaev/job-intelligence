@@ -110,4 +110,4 @@ Vorteil:
 
 - Menschen, die ständige Anweisung brauchen, statt selbst zu treiben Menschen, die einfach nur einen Job suchen und nicht wachsen möchten
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

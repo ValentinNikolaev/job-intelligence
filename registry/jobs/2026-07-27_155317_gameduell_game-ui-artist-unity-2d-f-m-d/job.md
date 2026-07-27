@@ -1,6 +1,6 @@
 # Game UI Artist (Unity 2D) (f/m/d*)
 
-Posted: 2026-07-27T13:31:02Z
+Posted: 2026-07-27T17:59:03Z
 
 Imagine entering a modern office in the heart of Berlin, surrounded by like-minded people who all share a common passion: Games. At GameDuell, talented artists, designers, developers, and many more work hand in hand to create the best games. Here, you'll dive into a world where creativity meets gameplay, with fresh challenges and opportunities for growth waiting for you every day.
 
@@ -10,7 +10,11 @@ Explore how you connect with our games and hear the stories from our community o
 
 ## Tasks
 
-**Your tasks**
+**This is not a UI/UX design, UX research, wireframing, or interaction design position!** This is an **artistic, visual asset creation role** focused on creating and rendering 2D game assets and icons, and Unity UI implementation.
+
+**
+
+Your tasks**
 
 - Design **creative and playful user interfaces** for our new and existing mobile and social game applications
 
@@ -72,6 +76,8 @@ participate in initiatives to help protect our environment and for charity. As a
 
 **Contact us**
 
+**This is not a UI/UX design, UX research, wireframing, or interaction design position!** This is an **artistic, visual asset creation role** focused on creating and rendering 2D game assets and icons, and Unity UI implementation.
+
 Say "hello" to our recruiter Caro!
 
 We believe that great games are made by passionate people, and we’d love to get to know you beyond just your skills. **Share what drives your creativity and what excites you about UI Art in Games**!
@@ -80,4 +86,4 @@ If you’re ready to bring your passion for games, especially board and card gam
 
 (*) GameDuell appreciates diverse perspectives and backgrounds, and promotes equal opportunities and an inclusive working environment in which every team member is valued. Any terms referring to people are valid for all genders whether male, female, or diverse.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

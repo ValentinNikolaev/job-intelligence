@@ -1,0 +1,24 @@
+schema_version: 2
+id: 3f1994d3-0d8b-4894-b5e6-83721f1dfdc7
+title: Senior Backend Engineer
+company: Virtasant
+company_url: null
+location: Austin, TX
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '8595761630389036173'
+  url: https://jooble.org/away/8595761630389036173?p=1&pos=34&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=36&brelb=10&scr=2157.027&bscr=2157.027&aq=7076986146373666002&elckey=-5551558236158465953
+published_at: '2026-07-26T00:00:00.0000000'
+discovered_at: '2026-07-27T18:38:40Z'
+updated_at: '2026-07-27T18:38:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T18:38:40Z'
+analysis_priority: 0
+fingerprint: sha256:8d02ab18f6e27b338da83985e595966f8e3a187d6f0792342c0e1561b0803c75
+data_source: jooble
+content_source: jooble
+company_content_source: null

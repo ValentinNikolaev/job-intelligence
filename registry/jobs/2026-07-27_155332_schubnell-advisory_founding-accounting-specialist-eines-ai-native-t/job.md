@@ -62,4 +62,4 @@ Du bist der Fachanker im Team: ein sattelfester Buchhalter mit hohem Qualitätsa
 
 Lust eine Branche zu revolutionieren? Lass uns sprechen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

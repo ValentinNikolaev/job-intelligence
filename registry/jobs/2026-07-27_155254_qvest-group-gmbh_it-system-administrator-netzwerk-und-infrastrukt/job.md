@@ -80,4 +80,4 @@ Gemeinsam mit erfahrenen Kolleg*innen sorgst du für einen sicheren und reibungs
 
 - **Urban Sports Club**:
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

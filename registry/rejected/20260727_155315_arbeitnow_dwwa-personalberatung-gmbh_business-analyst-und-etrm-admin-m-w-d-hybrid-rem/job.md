@@ -73,4 +73,4 @@ Suchst du ein eingespieltes, harmonisches Team auf Augenhöhe, das dir echte Bes
 
 - **Starke Gesundheits- und Familienleistungen:** Kostenlose Fitness-Mitgliedschaft, jährliche Gesundheitstage, betriebliche Unfallversicherung sowie verlässliche Angebote wie Ferienbetreuung für Kinder und Wohnbaudarlehen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
