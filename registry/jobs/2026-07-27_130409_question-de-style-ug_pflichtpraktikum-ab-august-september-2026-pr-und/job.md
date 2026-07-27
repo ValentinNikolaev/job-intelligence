@@ -26,4 +26,4 @@ Wir bieten Ihnen die Möglichkeit, nach einer Einarbeitungsphase selbstständig 
 
 Sie sind interessiert ? Wir freuen uns über Ihre schriftliche Kurzbewerbung **mit Anschreiben** per mail
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

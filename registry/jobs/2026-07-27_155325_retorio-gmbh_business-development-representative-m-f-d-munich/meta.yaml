@@ -1,0 +1,27 @@
+schema_version: 2
+id: 1f8e6662-cb78-46cc-b54d-087bb350a8de
+title: Business Development Representative (m/f/d), Munich
+company: Retorio GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: business-development-representative-munich-254507
+  url: https://www.arbeitnow.com/jobs/companies/retorio-gmbh/business-development-representative-munich-254507
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-27T13:01:03Z'
+discovered_at: '2026-07-27T15:53:25Z'
+updated_at: '2026-07-27T15:53:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:25Z'
+analysis_priority: 0
+fingerprint: sha256:b21a52f945cffe8447ceaa7c833854473574bad775f7114407112af446fd51af
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -70,4 +70,4 @@ Du bist der Techie im Team: Self-Starter, Hacker-Typ und Autodidakt, der nichts 
 
 Lust eine Branche zu revolutionieren? Lass uns sprechen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

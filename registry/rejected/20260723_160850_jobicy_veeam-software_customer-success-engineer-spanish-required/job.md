@@ -4,8 +4,8 @@ Posted: 2026-07-20T14:39:55Z
 
 ## Rejection
 
-- Category: language_requirement
-- Reason: hard Spanish language requirement without English green light
+- Category: stale
+- Reason: published_at 2026-07-20T14:39:55Z is older than 7 days
 
 Veeam is the Data and AI Trust Company, specializing in helping organizations ensure their data and AI are fully understood, secured, and resilient to enable the acceleration of safe AI at scale. As the market leader in both data resilience and data security posture management, Veeam is built for the convergence of identity, data, security, and AI risk. Headquartered in Seattle with offices in more than 30 countries, Veeam protects over 550,000 customers worldwide, who trust Veeam to keep their businesses running. Join us as we go fearlessly forward together, growing, learning, and making a real impact for some of the world’s biggest brands.
 

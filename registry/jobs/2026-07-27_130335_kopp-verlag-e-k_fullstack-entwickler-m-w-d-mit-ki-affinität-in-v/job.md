@@ -98,4 +98,4 @@ Wir suchen zum nächstmöglichen Termin einen Fullstack-Entwickler (m/w/d) mit K
 
 Wir freuen uns auf Ihre aussagekräftige Bewerbung mit Anschreiben, Lebenslauf, Arbeits- und Ausbildungszeugnissen, Kündigungsfrist und Eintrittstermin, sowie Ihren Gehaltsvorstellungen - per E-Mail
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 631aedf4-d205-477c-ad92-a26f4394ecf9
+title: Senior Azure Cloud Platform Architect (m/w/d)
+company: think about IT GmbH
+company_url: null
+location: Nuremberg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-azure-cloud-platform-architect-nuremberg-391168
+  url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/senior-azure-cloud-platform-architect-nuremberg-391168
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-27T14:30:40Z'
+discovered_at: '2026-07-27T15:52:49Z'
+updated_at: '2026-07-27T15:52:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:52:49Z'
+analysis_priority: 0
+fingerprint: sha256:d70801bbd704004863a2b82e15e02c65f08f788b7ef5aa97549e06cea63e5a00
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

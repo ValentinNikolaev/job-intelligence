@@ -1,0 +1,28 @@
+schema_version: 2
+id: 252627ed-01d3-465f-ad5e-cc6ff4040193
+title: HR Specialist (m/w/d)
+company: SelectLine Group
+company_url: null
+location: Magdeburg
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: hr-specialist-magdeburg-377293
+  url: https://www.arbeitnow.com/jobs/companies/selectline-group/hr-specialist-magdeburg-377293
+  metadata:
+    tags:
+    - Remote
+    - Administration
+published_at: '2026-07-27T13:01:05Z'
+discovered_at: '2026-07-27T15:53:21Z'
+updated_at: '2026-07-27T15:53:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:21Z'
+analysis_priority: 0
+fingerprint: sha256:ac64ba6f3f91f2cbc64ee32831ee449a0c7e2e53cc8d26c5c7483ede9e8e8a99
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

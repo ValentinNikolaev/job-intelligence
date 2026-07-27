@@ -16,4 +16,4 @@ Ein gutes Verständnis von SEO in der Praxis, Eigeninitiative und Lust, ein Wach
 
 Viel Gestaltungsspielraum, kurze Wege, direkter Draht zum Gründerteam, und die Chance, den organischen Kanal von Grund auf zu prägen. Remote-freundlich. Kein Grundhonorar: Vergütet wird meilensteinbasiert, pro umgesetztem Projekt, dazu eine echte Beteiligung am Unternehmen über VSOP für eine Kernrolle. Wir bieten Beteiligung, Verantwortung und Mitverdienen statt eines sicheren Gehalts.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 32f64952-4f86-493e-9db6-be7c7a59c831
+title: Personalberatung sucht Researcher/Mitarbeiter Direktansprache (m/w/d)
+company: EGOR Managementberatung GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: personalberatung-sucht-researcher-mitarbeiter-direktansprache-hamburg-244310
+  url: https://www.arbeitnow.com/jobs/companies/egor-managementberatung-gmbh/personalberatung-sucht-researcher-mitarbeiter-direktansprache-hamburg-244310
+  metadata:
+    tags:
+    - Recruitment and Selection
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T14:30:37Z'
+discovered_at: '2026-07-27T15:53:00Z'
+updated_at: '2026-07-27T15:53:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:00Z'
+analysis_priority: 0
+fingerprint: sha256:c35eccf772832d2923f06ac9d7ffe3e7f428036a9fc728afea98d54a205508cd
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

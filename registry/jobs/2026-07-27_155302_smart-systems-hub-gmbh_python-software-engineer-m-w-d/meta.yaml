@@ -1,0 +1,29 @@
+schema_version: 2
+id: 52dff063-3e71-441c-98cc-5b3a2532eb45
+title: Python Software Engineer (m/w/d)
+company: Smart Systems Hub GmbH
+company_url: null
+location: Dresden
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: python-software-engineer-dresden-402329
+  url: https://www.arbeitnow.com/jobs/companies/smart-systems-hub-gmbh/python-software-engineer-dresden-402329
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T14:30:36Z'
+discovered_at: '2026-07-27T15:53:02Z'
+updated_at: '2026-07-27T15:53:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:02Z'
+analysis_priority: 0
+fingerprint: sha256:e22f163d83a05c29412acad3cb1cfc2de53cf94423f37d53bcfd99d06b8d027e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

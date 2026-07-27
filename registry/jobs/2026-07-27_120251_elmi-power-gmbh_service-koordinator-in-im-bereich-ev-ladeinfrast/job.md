@@ -62,4 +62,4 @@ Wir freuen uns darauf, dich kennenzulernen und vielleicht schon bald als Teil un
 
 **Bewirb dich jetzt – und bring deine Energie dorthin, wo sie wirklich etwas bewegt!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

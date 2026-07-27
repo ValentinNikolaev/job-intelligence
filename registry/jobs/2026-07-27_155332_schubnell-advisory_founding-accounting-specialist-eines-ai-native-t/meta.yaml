@@ -1,0 +1,28 @@
+schema_version: 2
+id: a1c5fd19-f200-4323-b5f7-5081078e8ffe
+title: Founding Accounting Specialist eines AI Native Tax Start-Ups (Stealth Mode)
+company: Schubnell Advisory
+company_url: null
+location: Saarbrücken
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: founding-accounting-specialist-eines-ai-native-tax-start-ups-stealth-mode-saarbrucken-126927
+  url: https://www.arbeitnow.com/jobs/companies/schubnell-advisory/founding-accounting-specialist-eines-ai-native-tax-start-ups-stealth-mode-saarbrucken-126927
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-27T12:30:40Z'
+discovered_at: '2026-07-27T15:53:32Z'
+updated_at: '2026-07-27T15:53:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:32Z'
+analysis_priority: 0
+fingerprint: sha256:843fa593897f563a1864ed2fd632e0a337fc249569bf346cf890efe9e935f5ff
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

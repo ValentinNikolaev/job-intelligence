@@ -1,0 +1,31 @@
+schema_version: 2
+id: 6c33bcc4-90cd-478d-a36a-0f3fdc90fc1e
+title: Frontend Engineer – Cloud Solutions (m/f/d)
+company: Quantum-Systems GmbH
+company_url: null
+location: Gilching
+remote: false
+employment_type: Full-time permanent, mid
+sources:
+- source: arbeitnow
+  source_job_id: frontend-engineer-cloud-solutions-gilching-240110
+  url: https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/frontend-engineer-cloud-solutions-gilching-240110
+  metadata:
+    tags:
+    - Internet and software
+    - professional
+    job_types:
+    - Full-time permanent
+    - mid
+published_at: '2026-07-27T13:20:16Z'
+discovered_at: '2026-07-27T15:53:18Z'
+updated_at: '2026-07-27T15:53:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:18Z'
+analysis_priority: 0
+fingerprint: sha256:e8ead50e29e8a23edc68271fdbb650be9744ba48b354263281614c8892977332
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

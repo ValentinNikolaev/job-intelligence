@@ -1,0 +1,27 @@
+schema_version: 2
+id: 407f1bc6-2096-4a4e-8bdf-ce3ce5ebd0e0
+title: Senior IT Administrator (m/w/d)
+company: think about IT GmbH
+company_url: null
+location: Bochum
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-it-administrator-bochum-78799
+  url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/senior-it-administrator-bochum-78799
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-27T14:30:38Z'
+discovered_at: '2026-07-27T15:52:55Z'
+updated_at: '2026-07-27T15:52:55Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:52:55Z'
+analysis_priority: 0
+fingerprint: sha256:b20e69985dfa92767c54d810266258bce692626f4fae65c6fd51884246c4ba50
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 09ec4afd-e870-4479-90bb-1315968aa56a
+title: Senior Microsoft Cloud Transformation Architect (m/w/d)
+company: think about IT GmbH
+company_url: null
+location: Nuremberg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-microsoft-cloud-transformation-architect-nuremberg-231589
+  url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/senior-microsoft-cloud-transformation-architect-nuremberg-231589
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-27T14:30:39Z'
+discovered_at: '2026-07-27T15:52:51Z'
+updated_at: '2026-07-27T15:52:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:52:51Z'
+analysis_priority: 0
+fingerprint: sha256:1905a6321b0f5a62d3d9e83e97b7345b934e050fb7e95077e966996a7cdb282e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

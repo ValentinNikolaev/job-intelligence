@@ -58,4 +58,4 @@ Zur Verstärkung unseres Teams in **Mettmann** suchen wir Sie als **Personalsach
 
 Hinter jedem erfolgreichen Unternehmen stehen engagierte Mitarbeiter – und ein starkes Personalwesen. Unterstützen Sie unser Team mit Ihrem Organisationstalent und Ihrer Erfahrung und werden Sie Teil der Wilhelm Becker GmbH & Co. KG. Wir freuen uns auf Ihre Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

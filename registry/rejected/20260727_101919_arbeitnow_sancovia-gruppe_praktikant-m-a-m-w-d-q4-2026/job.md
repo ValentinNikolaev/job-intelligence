@@ -67,4 +67,4 @@ Du möchtest uns kennenlernen?
 
 Dann bewirb dich als **Praktikant M&A (m/w/d)** mit deinen aussagekräftigen Bewerbungsunterlagen (Anschreiben, Lebenslauf und Zeugnissen).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

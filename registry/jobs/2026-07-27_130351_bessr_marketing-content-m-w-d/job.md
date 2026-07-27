@@ -16,4 +16,4 @@ Ein gutes Gespür für Community und Content, Eigeninitiative, und Lust, eine Ma
 
 Freiheit, deine Ideen umzusetzen, kurze Wege, direkter Draht zum Gründerteam. Remote-freundlich. Kein Grundhonorar: Vergütet wird meilensteinbasiert, pro umgesetztem Projekt oder Kampagne, dazu eine echte Beteiligung am Unternehmen über VSOP. Wir bieten Beteiligung, Verantwortung und Mitverdienen statt eines sicheren Gehalts.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

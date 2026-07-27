@@ -1,0 +1,29 @@
+schema_version: 2
+id: 811faa8f-28fe-4f51-9e74-025ad493d325
+title: Head of Finance (all genders)
+company: Vexcash AG
+company_url: null
+location: Berlin
+remote: false
+employment_type: teamleitung
+sources:
+- source: arbeitnow
+  source_job_id: head-of-finance-all-genders-berlin-336943
+  url: https://www.arbeitnow.com/jobs/companies/vexcash-ag/head-of-finance-all-genders-berlin-336943
+  metadata:
+    tags:
+    - Private Banking
+    job_types:
+    - teamleitung
+published_at: '2026-07-27T14:30:36Z'
+discovered_at: '2026-07-27T15:53:03Z'
+updated_at: '2026-07-27T15:53:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:03Z'
+analysis_priority: 0
+fingerprint: sha256:3947694f02373803016ee842a0ebb9deb39bf643e0802d9584466e6de34cb5c5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

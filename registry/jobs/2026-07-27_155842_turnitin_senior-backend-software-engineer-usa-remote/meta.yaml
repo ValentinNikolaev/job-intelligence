@@ -1,0 +1,24 @@
+schema_version: 2
+id: 9c473be8-0784-41fa-8090-2955740313bf
+title: Senior Backend Software Engineer (USA Remote)
+company: Turnitin
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '2884032842178905195'
+  url: https://jooble.org/away/2884032842178905195?p=1&pos=35&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=129&brelb=10&scr=2117.3223&bscr=2117.3223&aq=-5524136071100294302&elckey=5524799771324675103
+published_at: '2026-07-22T00:00:00.0000000'
+discovered_at: '2026-07-27T15:58:42Z'
+updated_at: '2026-07-27T15:58:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:58:42Z'
+analysis_priority: 0
+fingerprint: sha256:7d5627005f63ec9c74a4f071dc62d581844d0c317a8c13c188187027a16c8dad
+data_source: jooble
+content_source: jooble
+company_content_source: null

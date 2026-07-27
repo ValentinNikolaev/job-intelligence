@@ -46,4 +46,4 @@ We live team spirit: for us, YOU matter. Every day, our steadily growing, dynami
 
 We see diversity as an asset to our team. We therefore welcome all applications and especially want to encourage people with disabilities or other challenges to apply.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

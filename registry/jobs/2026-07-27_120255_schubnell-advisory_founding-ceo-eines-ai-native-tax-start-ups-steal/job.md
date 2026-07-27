@@ -1,6 +1,6 @@
-# Founding CEO eines AI Native Tax Start-Ups (Stealth Mode)
+# Founding CEO (m/w/d) eines AI Native Tax Start-Ups (Stealth Mode)
 
-Posted: 2026-07-27T10:30:32Z
+Posted: 2026-07-27T14:59:03Z
 
 In einem meiner Projekte suche ich als Venture Builder das Gründerteam für ein **AI-natives Tax-Start-Up** im Stealth Mode.
 
@@ -70,4 +70,4 @@ Du bist Unternehmer und Kundenversteher: Macher, belastbar, Teamplayer, mit ausg
 
 Lust eine Branche zu revolutionieren? Lass uns sprechen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

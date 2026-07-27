@@ -1,0 +1,27 @@
+schema_version: 2
+id: 4a96ad90-55a1-4225-bd17-9982bf28e496
+title: Mitarbeiter Buchhaltung (m/w/d) in Voll- oder Teilzeit
+company: OsnaTruck Nutzfahrzeugservice GmbH
+company_url: null
+location: Osnabrück
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: mitarbeiter-buchhaltung-in-voll-oder-teilzeit-osnabruck-435649
+  url: https://www.arbeitnow.com/jobs/companies/osnatruck-nutzfahrzeugservice-gmbh/mitarbeiter-buchhaltung-in-voll-oder-teilzeit-osnabruck-435649
+  metadata:
+    tags:
+    - Finance
+published_at: '2026-07-27T13:01:04Z'
+discovered_at: '2026-07-27T15:53:22Z'
+updated_at: '2026-07-27T15:53:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:22Z'
+analysis_priority: 0
+fingerprint: sha256:54a6e4b1f6e0c0ee28b91be804a074b52a829d1a2d1aef2c273d4b0a431013f0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

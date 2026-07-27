@@ -1,0 +1,24 @@
+schema_version: 2
+id: b15b5b72-37d3-4e47-97e5-a2137503be42
+title: Senior Product Designer - POS
+company: SumUp
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-product-designer-pos-berlin-453697
+  url: https://www.arbeitnow.com/jobs/companies/sumup/senior-product-designer-pos-berlin-453697
+published_at: '2026-07-27T13:45:21Z'
+discovered_at: '2026-07-27T15:53:16Z'
+updated_at: '2026-07-27T15:53:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:53:16Z'
+analysis_priority: 0
+fingerprint: sha256:cf1f304430c94908bec78ecb50ab115b7195920b9e2563557b61431cde4e0f76
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

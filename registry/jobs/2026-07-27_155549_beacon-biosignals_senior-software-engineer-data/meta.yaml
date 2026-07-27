@@ -1,0 +1,96 @@
+schema_version: 2
+id: 0d0045b1-bb1c-411e-a3a3-644ae9e7edec
+title: Senior Software Engineer, Data
+company: Beacon Biosignals
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/beacon-biosignals/jobs/senior-software-engineer-data
+  url: https://himalayas.app/companies/beacon-biosignals/jobs/senior-software-engineer-data
+  metadata:
+    location_restrictions: []
+    excerpt: Beacon Biosignals is on a mission to revolutionize precision medicine
+      for the brain.
+    company_slug: beacon-biosignals
+    company_logo: https://cdn-images.himalayas.app/feezx104oxenxvi17bv6oznbezpq
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Backend-Development
+    - Data-Engineering
+    - Data-Infrastructure
+    - Software-Engineering
+    - Senior-Data-Engineering
+    - Senior-Staff-Data-Engineer
+    - Senior-Data-Science-Engineer
+    - Senior-Data-Platform-Engineer
+    - Senior-Principal-Data-Engineer
+    - Senior-AI-Data-Engineer
+    - Senior-Data-Science-Engineering
+    - Platform-Engineering
+    salary:
+      period: annual
+      min: 150000
+      max: 170000
+      currency: USD
+    expiry_at: '2026-09-25T13:43:24Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        seniority: Senior
+        worldwide: 'true'
+        sort: recent
+        q: backend engineer
+published_at: '2026-07-27T13:43:24Z'
+discovered_at: '2026-07-27T15:55:49Z'
+updated_at: '2026-07-27T15:55:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T15:55:49Z'
+analysis_priority: 0
+fingerprint: sha256:acd698a15b0c02302976205b36f151169674d06fdbe88fe3ee2b0745d76dee3a
+data_source: himalayas
+content_source: himalayas
+company_content_source: null
