@@ -1,0 +1,22 @@
+score: 8
+recommendation: not_match
+summary: Backend seniority is relevant, but the vacancy is explicitly USA remote and
+  conflicts with the candidate's Italy location.
+strengths:
+- Senior backend engineering
+- APIs and production systems
+- reliability and cloud experience
+gaps:
+- US location
+- timezone
+- and work authorization are not supported
+concerns:
+- The title and location explicitly restrict the role to USA remote
+hard_rejection: true
+hard_rejection_reason: The vacancy explicitly requires USA remote work, which is a
+  decisive location conflict for an Italy-based candidate.
+analyzed_at: '2026-07-27T17:23:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:dcade565c854e5d6481bdc9fb31ec5aa84fd3a406359c07948e57291c6a756cd
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

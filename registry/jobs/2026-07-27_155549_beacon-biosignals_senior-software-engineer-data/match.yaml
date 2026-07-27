@@ -1,0 +1,22 @@
+score: 78
+recommendation: match
+summary: Good fit for senior backend data infrastructure work involving event-driven
+  pipelines, data modeling, and APIs.
+strengths:
+- Event-driven analytics infrastructure
+- scalable backend systems
+- APIs and data pipelines
+- reliability and observability
+gaps:
+- Clinical EEG domain
+- specific datastore technologies
+- and U.S. employment terms are not established
+concerns:
+- Worldwide label does not clarify Italian hiring or timezone coverage
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-27T17:23:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2e286da92399a272b1afd3ff06e67ecea48f5020bbd457ce7cd94e22ee621585
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

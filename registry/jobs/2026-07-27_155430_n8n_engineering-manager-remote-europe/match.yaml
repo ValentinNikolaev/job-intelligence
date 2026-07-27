@@ -1,0 +1,21 @@
+score: 70
+recommendation: match
+summary: Technical leadership and AI automation background fit well, while the required
+  two years of first-line management is uncertain.
+strengths:
+- Technical lead experience
+- mentoring and team leadership
+- SaaS and automation exposure
+- AI-adjacent product work
+gaps:
+- Two years as a first-line Engineering Manager and direct people-management depth
+  are not clearly established
+concerns:
+- Billing or governance domain leadership is only partially evidenced
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-27T17:23:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:ae2167a13fbacde90b862688037d08123be39e0f890130492427b7a2f5cd540d
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

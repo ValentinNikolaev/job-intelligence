@@ -1,0 +1,22 @@
+score: 5
+recommendation: not_match
+summary: The vacancy is a Cologne-based performance marketing role, while the profile
+  documents backend software engineering rather than paid media practice.
+strengths:
+- Analytical and automation-oriented engineering background
+gaps:
+- Google Ads
+- Meta Ads
+- performance marketing
+- campaign management
+- and client paid-media experience
+concerns:
+- The role is not remote and is fundamentally outside the candidate's documented career
+hard_rejection: true
+hard_rejection_reason: The role requires central paid-media expertise and Cologne-based
+  work, neither supported by the profile.
+analyzed_at: '2026-07-27T17:23:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:d4737a9777cb7d6257d5b693f9f6a58cda8db936253062b215df22279c805b27
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
