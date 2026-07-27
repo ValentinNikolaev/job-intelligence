@@ -145,4 +145,4 @@ Wir freuen uns schon sehr über deine Kontaktaufnahme!
 
 * Diese Stelle steht allen Menschen offen, unabhängig von Geschlecht, Alter und anderen Merkmalen: m/w/d +
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -93,4 +93,4 @@ Wir freuen uns, dich kennenzulernen! Bewirb dich jetzt über unser Online-Bewerb
 
 Melde dich bei weiteren Fragen direkt bei Mario (Junior Talent Acquisition Manager).
 
-E-Mail: Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+E-Mail: Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

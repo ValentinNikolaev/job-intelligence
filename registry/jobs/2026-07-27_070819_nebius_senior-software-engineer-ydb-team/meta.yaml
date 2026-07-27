@@ -1,0 +1,27 @@
+schema_version: 2
+id: abfc7760-8820-4fd9-937b-643b4ccdef92
+title: Senior Software Engineer (YDB Team)
+company: Nebius
+company_url: null
+location: Czech Republic; Remote - Europe; United Kingdom
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-software-engineer-ydb-team-48438
+  url: https://www.arbeitnow.com/jobs/companies/nebius/remote-senior-software-engineer-ydb-team-48438
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-27T03:15:50Z'
+discovered_at: '2026-07-27T07:08:19Z'
+updated_at: '2026-07-27T07:08:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:19Z'
+analysis_priority: 0
+fingerprint: sha256:606ff44a6af0b59592703ecd3eaffeb85f62286811935fc8dbfcbc44d80cf1f9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

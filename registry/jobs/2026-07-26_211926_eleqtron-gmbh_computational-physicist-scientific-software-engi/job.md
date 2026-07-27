@@ -134,4 +134,4 @@ What you can expect from eleQtron:**
 
 **Modern workplace:** We have a high-quality infrastructure with laboratory space, offices, and meeting rooms
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

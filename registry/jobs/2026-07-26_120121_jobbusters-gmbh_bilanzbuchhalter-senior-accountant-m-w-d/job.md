@@ -72,4 +72,4 @@ Dann freuen wir uns auf Ihre Bewerbung. Die Jobbuster begleiten Sie während des
 
 **Bewerben Sie sich jetzt und gestalten Sie die Zukunft eines erfolgreichen mittelständischen Unternehmens aktiv mit.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

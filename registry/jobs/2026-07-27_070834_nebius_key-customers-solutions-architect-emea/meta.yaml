@@ -1,0 +1,27 @@
+schema_version: 2
+id: 83b2b652-a383-4658-94a7-9a1e5e3d65e0
+title: Key Customers Solutions Architect EMEA
+company: Nebius
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: key-customers-solutions-architect-emea-435632
+  url: https://www.arbeitnow.com/jobs/companies/nebius/key-customers-solutions-architect-emea-435632
+  metadata:
+    tags:
+    - Solutions Architecture
+published_at: '2026-07-27T03:15:49Z'
+discovered_at: '2026-07-27T07:08:34Z'
+updated_at: '2026-07-27T07:08:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:34Z'
+analysis_priority: 0
+fingerprint: sha256:e89788763a07b33815cb2704d6c2a9d428f89a02ea63e79e009aaa46e3d8725f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

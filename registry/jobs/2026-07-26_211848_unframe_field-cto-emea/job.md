@@ -114,4 +114,4 @@ You think commercially. You understand that speed-to-value wins.
 
 - You'll have the opportunity to write and build what comes next.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

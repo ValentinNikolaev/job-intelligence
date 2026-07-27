@@ -140,4 +140,4 @@ Our team does not move tables, filing cabinets or chairs. Natuvion transports bu
 
 Our >400 consultants and developers in Germany, Austria, Slovakia, the USA and Australia have extensive know-how in (SAP)® projects and a profound understanding of processes across industry boundaries. With a lot of experience, commitment and commitment, they support our customers with advice, services and their own software technology. In this way, we enable companies to always use their data and processes on the most modern and innovative platforms.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -98,4 +98,4 @@ With over 50 nationalities represented, we’re proud to welcome people of all b
 
 **For a career where you can drive our business and shape your future, apply now.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

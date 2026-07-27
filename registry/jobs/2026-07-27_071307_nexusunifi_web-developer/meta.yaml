@@ -1,0 +1,24 @@
+schema_version: 2
+id: 8830fe3c-fb1d-44a2-9c29-278cd74f2d16
+title: Web Developer
+company: NexusUnifi
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '6848379010760251479'
+  url: https://jooble.org/away/6848379010760251479?p=1&pos=16&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=73&brelb=10&scr=37.97399&bscr=37.97399&aq=4781072517951342572&elckey=2425724934507339380
+published_at: '2026-07-24T00:00:00.0000000'
+discovered_at: '2026-07-27T07:13:07Z'
+updated_at: '2026-07-27T07:13:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:13:07Z'
+analysis_priority: 0
+fingerprint: sha256:f94ce8e81efe4fcc6ac21aa40288a8433ce079d507ca82ef44369e973bf91a1e
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -54,4 +54,4 @@ Für diese Vision suchen wir eine erfahrene Person als **Senior Community & Cust
 
 Wenn Du Lust hast, Teil dieser aufregenden Reise zu sein und die Zukunft der Sicherheit mitzugestalten, dann freuen wir uns riesig darauf, dich kennenzulernen! Zeig uns, wer Du bist, was Dich antreibt und warum Du Lust hast, gemeinsam mit uns, die Welt ein kleines Stückchen besser zu machen. Schau dir in der Zwischenzeit gerne unsere Website an, um das Team und SafeNow kennenzulernen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

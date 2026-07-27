@@ -70,4 +70,4 @@ Die Jobbusters® Vermittlungsprozesse werden mit größter Sorgfalt, Transparenz
 
 Kennen Sie jemanden, der perfekt auf diese spannende, faszinierende und vielversprechende Stellenausschreibung passt? Dann sichern Sie sich jetzt unseren großzügigen, lukrativen 1.500 EUR (!) Weiterempfehlungsbonus! Erkundigen Sie sich noch heute telefonisch bei uns – wir freuen uns auf Ihren Kontakt und Ihre Empfehlung, vielleicht sogar im Geiste der Zusammenarbeit!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

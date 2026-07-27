@@ -2,4 +2,4 @@
 
 Posted: 2026-07-26T23:09:16Z
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

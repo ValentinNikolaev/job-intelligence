@@ -52,4 +52,4 @@ Dann freuen wir uns auf Deine Bewerbung – einfach und schnell über unser Onli
 
 Deine HR-Ansprechperson ist Sebastian Stamer.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

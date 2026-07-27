@@ -1,0 +1,27 @@
+schema_version: 2
+id: 1c0628bd-e8a1-46ee-bfa2-180340081b88
+title: Senior Backend Engineer
+company: Nebius
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-backend-engineer-44929
+  url: https://www.arbeitnow.com/jobs/companies/nebius/senior-backend-engineer-44929
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-27T03:15:49Z'
+discovered_at: '2026-07-27T07:08:29Z'
+updated_at: '2026-07-27T07:08:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:29Z'
+analysis_priority: 0
+fingerprint: sha256:d14a95ce35c2f2fc7495783ff843dadb551890477a7ae43e632ee9150631e1ae
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

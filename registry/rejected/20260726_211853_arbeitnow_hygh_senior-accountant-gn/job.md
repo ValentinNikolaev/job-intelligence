@@ -58,4 +58,4 @@ Inmitten des kreativen Puls von Berlin Mitte arbeitet unser herausragendes Team 
 - Für Vitamine und Getränke im Office ist stets gesorgt
 Wenn Du eine neue Herausforderung suchst und Dich angesprochen fühlst, ist es Zeit, Dich kennen zu lernen. Wir freuen uns auf Deine Bewerbung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 1fa54823-5740-464c-8a3c-7be1584e8b7d
+title: Senior Software Engineer (Data Platform, C++)
+company: Nebius
+company_url: null
+location: Czech Republic; United Kingdom
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-software-engineer-data-platform-c-czech-republic-united-kingdom-57791
+  url: https://www.arbeitnow.com/jobs/companies/nebius/senior-software-engineer-data-platform-c-czech-republic-united-kingdom-57791
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-27T03:15:50Z'
+discovered_at: '2026-07-27T07:08:23Z'
+updated_at: '2026-07-27T07:08:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:23Z'
+analysis_priority: 0
+fingerprint: sha256:9b05caac05e6a806d9e9b9b5a00f9a80e46762ec8c4a8829dfddd29af38f10d3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

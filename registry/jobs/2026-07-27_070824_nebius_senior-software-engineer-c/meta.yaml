@@ -1,0 +1,27 @@
+schema_version: 2
+id: 5c6d5b7b-69bc-4035-baeb-e1279ba45b30
+title: Senior Software Engineer (C++)
+company: Nebius
+company_url: null
+location: Czech Republic; Remote - Europe; United Kingdom
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-software-engineer-c-339587
+  url: https://www.arbeitnow.com/jobs/companies/nebius/remote-senior-software-engineer-c-339587
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-27T03:15:50Z'
+discovered_at: '2026-07-27T07:08:24Z'
+updated_at: '2026-07-27T07:08:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:24Z'
+analysis_priority: 0
+fingerprint: sha256:83368f6357617b5ce9b7c893cc4c4779bf522fe8609b35ce7aa01a79fa59f0af
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -82,4 +82,4 @@ Solution-oriented thinking, strong communication skills, and willingness to lear
 
 Very good German and good English skills
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

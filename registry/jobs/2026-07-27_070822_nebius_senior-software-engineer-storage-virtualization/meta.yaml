@@ -1,0 +1,27 @@
+schema_version: 2
+id: ca784311-9644-45ca-9be6-d75845d95ab9
+title: Senior Software Engineer (Storage Virtualization Team)
+company: Nebius
+company_url: null
+location: Czech Republic; Remote - Europe; United Kingdom
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-software-engineer-storage-virtualization-team-281845
+  url: https://www.arbeitnow.com/jobs/companies/nebius/remote-senior-software-engineer-storage-virtualization-team-281845
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-27T03:15:50Z'
+discovered_at: '2026-07-27T07:08:22Z'
+updated_at: '2026-07-27T07:08:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:22Z'
+analysis_priority: 0
+fingerprint: sha256:580d884d9ac8d034b70bd649006a9000a0e3894fe0528f6ff776d6074d883bab
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

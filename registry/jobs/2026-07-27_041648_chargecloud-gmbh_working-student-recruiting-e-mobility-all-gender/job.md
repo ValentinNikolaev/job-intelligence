@@ -39,4 +39,4 @@ Teilzeit, 16-20 Stunden, remote oder Köln
 Wir freuen uns auf deine Bewerbung!
 Alle Menschen sind bei uns willkommen, unabhängig von Geschlecht / geschlechtlicher Identität, Behinderung / Beeinträchtigung, Nationalität, ethnischer Herkunft, Religion / Weltanschauung, Alter, sexueller Orientierung. Hauptsache, du passt zu uns.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

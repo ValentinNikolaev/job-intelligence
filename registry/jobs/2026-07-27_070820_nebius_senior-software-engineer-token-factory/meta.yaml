@@ -1,0 +1,27 @@
+schema_version: 2
+id: b14331cb-1e3c-4852-957d-d3bfe22a7268
+title: Senior Software Engineer (Token Factory)
+company: Nebius
+company_url: null
+location: Amsterdam, Czech Republic; Remote - Europe; United Kingdom
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-software-engineer-token-factory-489348
+  url: https://www.arbeitnow.com/jobs/companies/nebius/remote-senior-software-engineer-token-factory-489348
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-27T03:15:50Z'
+discovered_at: '2026-07-27T07:08:20Z'
+updated_at: '2026-07-27T07:08:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T07:08:20Z'
+analysis_priority: 0
+fingerprint: sha256:e571d79e145d46b4509d8c0023bcbaeca97eb257750af88ab111c5b2ab56ca9a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
