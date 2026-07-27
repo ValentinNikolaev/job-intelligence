@@ -1,0 +1,42 @@
+schema_version: 2
+id: 9047ade5-1066-4e91-940f-b37a37aa535c
+title: Security Architect II
+company: Akamai Technologies
+company_url: null
+location: Poland
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '143147'
+  url: https://jobicy.com/jobs/143147-security-architect-ii
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/85a7cc0e-221-1.jpeg
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: Would you enjoy working with cutting-edge web security systems?Would
+      providing consultancy to defend against security attacks excite you?Join our
+      world class Security Operations Command CenterOur Team strives to be the most
+      trusted support services partner. We keep our customers online businesses up
+      and running. We utilize tools, process and knowledge to diagnose and resolve
+      product,…
+    discovered_by:
+    - query_index: 7
+      parameters:
+        tag: technical lead
+        count: '100'
+        industry: dev
+        geo: europe
+published_at: '2026-07-27T08:52:37Z'
+discovered_at: '2026-07-27T12:08:12Z'
+updated_at: '2026-07-27T12:08:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T12:08:12Z'
+analysis_priority: 0
+fingerprint: sha256:6d5392af4e9456f80c40c7b96deb0058cf42be8b7ca7da4f84b92932701f5b09
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

@@ -41,4 +41,4 @@ Die SelectLine Group ist ein führender Anbieter und Vorreiter im Bereich ERP-So
 
 • Du kannst dich auf einen unbefristeten Arbeitsvertrag, 30 Tage Urlaub und die Sicherheit einer zukunftsstarken Unternehmensgruppe verlassen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -54,4 +54,4 @@ Bei re-green bieten wir Ihnen die einzigartige Möglichkeit, an der Spitze der E
 
 Wenn du bereit bist, die Zukunft der Gebäudetechnologie mitzugestalten und eine nachhaltige Welt zu fördern, dann bewirb dich jetzt bei re-green!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

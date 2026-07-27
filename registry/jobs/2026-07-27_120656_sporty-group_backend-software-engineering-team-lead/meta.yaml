@@ -1,0 +1,91 @@
+schema_version: 2
+id: f81da9eb-16da-461e-9684-ee44b3ea47a3
+title: Backend Software Engineering Team Lead
+company: Sporty Group
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/sporty-group/jobs/backend-software-engineering-team-lead-9873437481
+  url: https://himalayas.app/companies/sporty-group/jobs/backend-software-engineering-team-lead-9873437481
+  metadata:
+    location_restrictions: []
+    excerpt: About the roleAs the Team Lead for our software development team, you
+      will play a key role in driving the architecture, development, and delivery
+      of high-quality software solutions.
+    company_slug: sporty-group
+    company_logo: https://cdn-images.himalayas.app/bk6g5dcfb3c7d3owhwtfjznk2jnb
+    seniority:
+    - Senior
+    - Manager
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Backend-Engineering
+    - Software-Engineering-Team-Lead
+    - Software-Architecture
+    - Engineering-Leadership
+    - Technical-Team-Lead
+    - Backend-Team-Lead
+    - Backend-Engineering-Lead
+    - Tech-Lead-Backend
+    - Backend-Engineering-Manager
+    - Senior-Backend-Engineering-Manager
+    expiry_at: '2026-09-25T12:01:20Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        seniority: Senior
+        worldwide: 'true'
+        sort: recent
+        q: backend engineer
+published_at: '2026-07-27T12:01:21Z'
+discovered_at: '2026-07-27T12:06:56Z'
+updated_at: '2026-07-27T12:06:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T12:06:56Z'
+analysis_priority: 0
+fingerprint: sha256:38824b918b7570116cf7d626204e850e8f23eaa850b7a184ab68e52d4c81715e
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

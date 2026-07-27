@@ -101,4 +101,4 @@ Dann freuen wir uns auf Ihre Bewerbung.
 
 **Alpha Eyes – Innovation für besseres Sehen.** und welchen Stellenwert die Position für das Unternehmen hat.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

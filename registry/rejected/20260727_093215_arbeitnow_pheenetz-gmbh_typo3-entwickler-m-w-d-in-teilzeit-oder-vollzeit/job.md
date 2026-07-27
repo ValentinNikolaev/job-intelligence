@@ -109,4 +109,4 @@ Bei PHEENETZ steht unser Team im Mittelpunkt. Wir möchten eine Agentur sein, di
 
 Dann freuen wir uns auf deine Bewerbung mit Portfolio, Lebenslauf und einem kurzen Einblick, warum du Lust hast, anspruchsvolle digitale Produkte mit uns zu gestalten.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

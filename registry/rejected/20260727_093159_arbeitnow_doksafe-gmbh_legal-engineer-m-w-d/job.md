@@ -73,4 +73,4 @@ Deine sehr guten Deutschkenntnisse ermöglichen eine reibungslose Kommunikation 
 
 Werde Teil unseres Teams und revolutioniere mit uns die Arbeitswelt in Anwaltskanzleien. Gestalte Deine Zukunft bei **dokSAFE** **GmbH** und bewirb Dich jetzt - wir freuen uns auf Dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

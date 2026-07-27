@@ -86,4 +86,4 @@ At Credibur, we believe that **diverse teams build better products**. We welcome
 
 **All hires complete on-site onboarding in Berlin. Background checks are required as part of our standard compliance process.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -97,4 +97,4 @@ Du bist sicher im Umgang mit MS Office.
 **Wichtiger Hinweis:**
 Diese Position richtet sich bewusst an erfahrene Berater, die fachlich schnell Verantwortung übernehmen und in Kundenprojekten ohne intensive Einarbeitung produktiv arbeiten können. Wenn Du bisher nur punktuell Berührung mit SAP oder der Immobilienwirtschaft hattest oder Dich in die fachlichen Grundlagen erst umfassend einarbeiten müsstest, ist diese Rolle nicht die richtige für Dich.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

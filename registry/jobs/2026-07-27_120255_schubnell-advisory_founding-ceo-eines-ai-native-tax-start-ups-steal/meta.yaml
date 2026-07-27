@@ -1,0 +1,30 @@
+schema_version: 2
+id: 853767eb-4160-4fae-91dc-089a0de61cdb
+title: Founding CEO eines AI Native Tax Start-Ups (Stealth Mode)
+company: Schubnell Advisory
+company_url: null
+location: Saarbrücken
+remote: false
+employment_type: geschäftsleitung
+sources:
+- source: arbeitnow
+  source_job_id: founding-ceo-eines-ai-native-tax-start-ups-stealth-mode-saarbrucken-184673
+  url: https://www.arbeitnow.com/jobs/companies/schubnell-advisory/founding-ceo-eines-ai-native-tax-start-ups-stealth-mode-saarbrucken-184673
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+    job_types:
+    - geschäftsleitung
+published_at: '2026-07-27T10:30:32Z'
+discovered_at: '2026-07-27T12:02:55Z'
+updated_at: '2026-07-27T12:02:55Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T12:02:55Z'
+analysis_priority: 0
+fingerprint: sha256:104e45801fb1cf93cdf57eb0a3447f3d6a111bfe3cb1b2065e88f7628b79edd3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

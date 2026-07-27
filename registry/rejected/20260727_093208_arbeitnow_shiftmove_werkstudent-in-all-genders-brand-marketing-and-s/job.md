@@ -55,4 +55,4 @@ Bei Shiftmove arbeiten Menschen mit unterschiedlichsten Hintergründen, Perspekt
 
 Du erfüllst nicht jede einzelne Anforderung? Bewirb Dich trotzdem. Wenn Du während des Bewerbungsprozesses Unterstützung oder Anpassungen benötigst, finden wir gemeinsam eine Lösung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

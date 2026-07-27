@@ -164,4 +164,4 @@ Du musst nicht jedes Werkzeug bereits beherrschen. Wir suchen jemanden, der real
 
 Wenn du dich zwischen Beratung, Business Analysis und technischer Umsetzung bewegst und genau dort arbeiten willst, möchten wir dich kennenlernen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

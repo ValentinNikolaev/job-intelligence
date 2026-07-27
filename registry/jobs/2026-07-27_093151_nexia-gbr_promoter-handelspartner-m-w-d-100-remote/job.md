@@ -46,4 +46,4 @@ Wenn Sie ein leidenschaftlicher Kommunikator mit einem Auge fürs Detail sind, f
 
 Entdecken Sie spannende Möglichkeiten als Promoter & Handelspartner (m/w/d) bei Nexia GbR – arbeiten Sie zu 100 % remote und gestalten Sie die digitale Zukunft mit uns. Bewerben Sie sich jetzt!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
