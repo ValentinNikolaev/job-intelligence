@@ -1,7 +1,7 @@
 # Analyze a sealed batch
 
 1. Read `config/codex-workflows.yaml` and confirm the task uses the `analyze` model and reasoning level.
-2. Run `python run.py triage` and then `python run.py pending analyze all --limit 10 --pack .codex-work/analyze-pack.yaml`.
+2. Run `python run.py triage` and then `python run.py pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml`.
 3. If the pack has no items, report that analysis is current and stop.
 4. Read only the sealed pack and the selected batch prompt. Evaluate every item independently; do not compare vacancies or reuse conclusions.
 5. Add a `results` mapping keyed by every exact input `directory`. Each value must be the exact YAML match mapping required by `prompts/vacancy-match.md`. Do not add prose.

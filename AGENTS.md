@@ -17,7 +17,7 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
 
 - Keep collection, normalization, deduplication, hashing, validation, atomic publishing, DOCX conversion, and index generation deterministic and covered by tests.
 - Process preparation exactly one vacancy per Codex task. Analysis may use the sealed
-  batch contract (up to 10 vacancies) when every result is keyed to its input directory,
+  batch contract (up to 15 vacancies) when every result is keyed to its input directory,
   evaluated independently, and published only after deterministic validation.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.

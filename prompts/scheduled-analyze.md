@@ -5,12 +5,12 @@ Configure this Scheduled Task with **GPT-5.6 Luna** and **low reasoning**. Work 
 Before selecting work, pull the latest committed repository state from the configured
 remote branch, for example with `git fetch --prune origin` and `git pull --ff-only`,
 then inspect the current repo-derived queue data with
-`python run.py api queues analyze --json --limit 10`. Do not rely on stale task context
+`python run.py api queues analyze --json --limit 15`. Do not rely on stale task context
 when deciding which vacancies are pending.
 
 Read `AGENTS.md`, invoke `$job-intelligence-workflow` in analysis mode, and use a
-batch of up to 10 sealed pending vacancies when the batch contract is available:
-`python run.py pending analyze all --limit 10 --pack .codex-work/analyze-pack.yaml`.
+batch of up to 15 sealed pending vacancies when the batch contract is available:
+`python run.py pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml`.
 Evaluate every record independently and write the same pack with a strict `results`
 mapping, then publish it with `python run.py analyze-batch --input
 .codex-work/analyze-batch.yaml --workflow analyze`. If the configured model is
