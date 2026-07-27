@@ -1,0 +1,29 @@
+schema_version: 2
+id: 96f268c4-b3bf-4ed0-a5b4-4cf036383ec0
+title: (Senior) Payroll Specialist (m/w/d) – Entgeltabrechnung (Voll- oder Teilzeit)
+company: Snke
+company_url: null
+location: München
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-payroll-specialist-entgeltabrechnung-voll-oder-teilzeit-munchen-487044
+  url: https://www.arbeitnow.com/jobs/companies/snke/senior-payroll-specialist-entgeltabrechnung-voll-oder-teilzeit-munchen-487044
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-26T23:09:09Z'
+discovered_at: '2026-07-27T04:16:55Z'
+updated_at: '2026-07-27T04:16:55Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T04:16:55Z'
+analysis_priority: 0
+fingerprint: sha256:f58df65ea088d77c4dd706fb42e15365bd0e9b72994e1907ee2cc8683eb791d8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

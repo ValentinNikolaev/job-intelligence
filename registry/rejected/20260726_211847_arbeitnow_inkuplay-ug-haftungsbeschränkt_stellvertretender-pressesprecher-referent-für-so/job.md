@@ -1,6 +1,6 @@
-# Stellvertretender Pressesprecher / Referent für Social Media & Communications (m/w/d)
+# Pressesprecher / Referent für Social Media & Communications (m/w/d)
 
-Posted: 2026-07-26T19:00:26Z
+Posted: 2026-07-26T23:29:03Z
 
 ## Rejection
 

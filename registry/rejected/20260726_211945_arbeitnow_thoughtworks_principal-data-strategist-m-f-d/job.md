@@ -107,4 +107,4 @@ Thoughtworks is a dynamic and inclusive community of bright and supportive colle
 
 [See here our AI policy.](https://www.thoughtworks.com/careers/ai-policy-for-recruitment)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

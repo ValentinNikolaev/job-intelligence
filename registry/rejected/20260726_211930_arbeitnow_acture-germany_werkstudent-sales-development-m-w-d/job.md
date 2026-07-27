@@ -46,4 +46,4 @@ Bewirb dich einfach über den Button und schicke uns so deinen Lebenslauf. Alter
 
 Deine Ansprechperson für diese Stelle ist:
 **Annika Fricke [sie/ihr] **
-English Speaking Jobs in Germany on Arbeitnow
+Jobs in Germany on Arbeitnow

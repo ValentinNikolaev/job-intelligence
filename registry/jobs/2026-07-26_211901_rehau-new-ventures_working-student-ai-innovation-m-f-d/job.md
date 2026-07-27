@@ -56,4 +56,4 @@ Remote first, du arbeitest von Hamburg aus oder flexibel von wo auch immer in De
 Klingt nach deinem nächsten Kapitel?
 Dann meld dich einfach, wir freuen uns auf dich. Bei Fragen wende dich gerne direkt an Jeanine Bläsche.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -82,4 +82,4 @@ Strong communication and leadership skills; ability to explain complex concepts 
 
 Fluent German and very good English skills
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

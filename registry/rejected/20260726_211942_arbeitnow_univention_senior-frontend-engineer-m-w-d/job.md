@@ -53,4 +53,4 @@ Posted: 2026-07-25T23:09:26Z
 - Freiraum: Flexible Urlaubsregelungen und Workation im EU-Ausland.
 - Sicherheit: Unbefristete Festanstellung in einem sinnstiftenden und zukunftsorientierten Umfeld.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

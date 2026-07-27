@@ -44,4 +44,4 @@ Ab sofort suchen wir Verstärkung in Vollzeit (38h/Woche) für unser Team in Ham
 Dann freuen wir uns auf Deine Bewerbung – einfach und schnell über unser Onlineformular.
 Deine HR-Ansprechperson ist Deliah Bargmann.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

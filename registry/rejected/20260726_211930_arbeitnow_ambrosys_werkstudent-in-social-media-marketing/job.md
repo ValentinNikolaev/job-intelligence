@@ -159,4 +159,4 @@ Als Arbeitgeber, der sich für Chancengleichheit einsetzt, begrüßen und schät
 
 Wichtiger Hinweis: Wir wickeln unseren Einstellungsprozess vollständig intern ab und arbeiten nicht mit externen Personalvermittlern zusammen. Bitte sehen Sie von unaufgeforderten Bewerbungen oder Kontaktaufnahmen ab.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

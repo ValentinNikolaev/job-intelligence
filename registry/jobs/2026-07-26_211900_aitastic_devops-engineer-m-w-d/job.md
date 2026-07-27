@@ -47,4 +47,4 @@ Come and join the future with AITASTIC!
 
 Wir freuen uns auf deine Bewerbung! Solltest du Fragen haben, wende dich gerne an unsere HR Managerin Kyra Raab: -----
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

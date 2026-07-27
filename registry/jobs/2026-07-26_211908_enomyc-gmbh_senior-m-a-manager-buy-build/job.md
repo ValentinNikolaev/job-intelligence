@@ -110,4 +110,4 @@ Hervorragende fachliche und persönliche Entwicklungsmöglichkeiten​
 
 Perspektivisch die Möglichkeit, den weiteren Ausbau des M&A-Bereichsaktiv mitzugestalten und zusätzliche Verantwortung zu übernehmen​​
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

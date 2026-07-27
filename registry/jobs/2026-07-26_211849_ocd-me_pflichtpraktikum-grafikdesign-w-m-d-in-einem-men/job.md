@@ -38,4 +38,4 @@ ocd&me hat ein eigenes Design-System mit einer klaren Haltung: ruhig, klar, nich
 
 - Bitte kläre vorab mit deinem Praktikumsamt, ob ein Remote-Praktikum anerkannt wird; Tätigkeitsbeschreibung und alle Nachweise für die Anerkennung stellen wir dir
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

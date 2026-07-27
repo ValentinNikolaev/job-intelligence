@@ -1,0 +1,35 @@
+schema_version: 2
+id: 6bc2fc1d-89ee-4c74-86fc-a0ef0a6d16a9
+title: Working Student Recruiting - E-Mobility (all genders)
+company: Chargecloud Gmbh
+company_url: null
+location: Köln
+remote: false
+employment_type: Entry, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: working-student-recruiting-e-mobility-all-genders-koln-298408
+  url: https://www.arbeitnow.com/jobs/companies/chargecloud-gmbh/working-student-recruiting-e-mobility-all-genders-koln-298408
+  metadata:
+    tags:
+    - Talent Acquisition
+    - Recruiting
+    - Stellenbesetzung
+    - Talente
+    - Recruitment
+    job_types:
+    - Entry
+    - Intern
+    - Part time
+published_at: '2026-07-26T23:09:20Z'
+discovered_at: '2026-07-27T04:16:48Z'
+updated_at: '2026-07-27T04:16:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T04:16:48Z'
+analysis_priority: 0
+fingerprint: sha256:9f3b74bf6cd01d24bbe2f878aa0ca3f37187ff5012a4978de4c9a0cb289d478a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

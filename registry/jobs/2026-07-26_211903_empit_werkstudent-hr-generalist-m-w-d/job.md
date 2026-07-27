@@ -30,4 +30,4 @@ Posted: 2026-07-26T14:09:15Z
 - Gute Deutsch- und Englischkenntnisse in Wort und Schrift.
 - Nice to have: erste Erfahrung mit HR-Tools (wie z. B. Personio) oder Interesse an Employer Branding.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

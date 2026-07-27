@@ -50,4 +50,4 @@ Wir sind nicht nur ein Unternehmen, wir sind eine Mission: "Wir machen Angeln ei
 - Benefits, die sich lohnen: Profitiere von attraktiven Mitarbeiter-Benefits wie Rabatten in unseren Shops, EGYM, Teamevents und vielem mehr.
 - Arbeit mit Sinn: Bei uns leistest du einen direkten Beitrag zum Naturschutz und gestaltest aktiv eine nachhaltigere Zukunft mit.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -39,4 +39,4 @@ Für unser **R&D Team** am Standort** Karlsruhe** suchen wir dich in **Vollzeit*
 Neugierig geworden? Schicke uns einfach über das Bewerbungsformular deinen Lebenslauf und schreibe uns, warum du gerne Teil von Vulcan werden möchtest. Bei Fragen stehen wir dir über** **
 *** Bitte beachte, dass alle Bewerbungen mit dem Bewerberformular ausgefüllt werden müssen – wir akzeptieren keine Bewerbungen per E-Mail. ***
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

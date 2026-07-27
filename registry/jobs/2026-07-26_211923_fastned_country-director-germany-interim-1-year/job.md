@@ -164,4 +164,4 @@ Since part of the interview-panel will be English speaking, we kindly ask you to
 
 ***Fastned stands for equity and inclusion. We welcome applications from people of all backgrounds, gender identities, sexual orientations, religions, neurodiversity, disabilities, parental status or any other protected characteristic that makes you unique.***
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,29 @@
+schema_version: 2
+id: d3c1c82d-00ef-4448-9276-098cc782f1c5
+title: Working Student – Customer Service & Support
+company: Snke
+company_url: null
+location: München
+remote: false
+employment_type: Student, Working student, Part time
+sources:
+- source: arbeitnow
+  source_job_id: working-student-customer-service-support-munchen-334845
+  url: https://www.arbeitnow.com/jobs/companies/snke/working-student-customer-service-support-munchen-334845
+  metadata:
+    job_types:
+    - Student
+    - Working student
+    - Part time
+published_at: '2026-07-26T23:09:09Z'
+discovered_at: '2026-07-27T04:16:52Z'
+updated_at: '2026-07-27T04:16:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T04:16:52Z'
+analysis_priority: 0
+fingerprint: sha256:328cf831981c80b4bdbef9a117945a5a619d12519e3697374d67f65dc65c0e8f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

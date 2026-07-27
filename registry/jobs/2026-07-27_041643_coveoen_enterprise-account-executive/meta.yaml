@@ -1,0 +1,27 @@
+schema_version: 2
+id: e83aab10-00a0-4067-bb68-937210d32f6f
+title: Enterprise Account Executive
+company: Coveoen
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: enterprise-account-executive-49124
+  url: https://www.arbeitnow.com/jobs/companies/coveoen/enterprise-account-executive-49124
+  metadata:
+    tags:
+    - Enterprise & Commercial Sales
+published_at: '2026-07-27T02:56:12Z'
+discovered_at: '2026-07-27T04:16:43Z'
+updated_at: '2026-07-27T04:16:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T04:16:43Z'
+analysis_priority: 0
+fingerprint: sha256:691e7dee14a4c4ed04060db3d5093347f915d8ed58245993056d4d1c1c5b3d18
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
