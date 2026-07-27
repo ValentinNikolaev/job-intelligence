@@ -1,0 +1,29 @@
+schema_version: 2
+id: 91e13d48-0712-4314-88fb-bd2c942646f3
+title: AI Researcher — AI Architecture Research
+company: Jobgether
+company_url: null
+location: Germany
+remote: false
+employment_type: Full-time
+sources:
+- source: arbeitnow
+  source_job_id: ai-researcher-ai-architecture-research-germany-97400
+  url: https://www.arbeitnow.com/jobs/companies/jobgether/ai-researcher-ai-architecture-research-germany-97400
+  metadata:
+    tags:
+    - IT
+    job_types:
+    - Full-time
+published_at: '2026-07-27T11:25:49Z'
+discovered_at: '2026-07-27T13:03:55Z'
+updated_at: '2026-07-27T13:03:55Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:55Z'
+analysis_priority: 0
+fingerprint: sha256:e8fbde8963d837c66bfa40e50fa17a1cbb147c82a10d91f1c4dbac0fed22f193
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: ee1dc118-844d-4b1f-a483-2c58bb77d0f1
+title: Data Engineer (m/f/d)
+company: Jedox GmbH
+company_url: null
+location: Germany remote
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: remote-data-engineer-409534
+  url: https://www.arbeitnow.com/jobs/companies/jedox-gmbh/remote-data-engineer-409534
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-27T11:09:40Z'
+discovered_at: '2026-07-27T13:04:05Z'
+updated_at: '2026-07-27T13:04:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:04:05Z'
+analysis_priority: 0
+fingerprint: sha256:7a60b910ee288d0256ee24090b1eceac5e25b472ea00ab8ef06d9dd55205a5c7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,37 @@
+schema_version: 2
+id: 86ddb27d-0393-4df0-aa22-3b689f0c66f9
+title: AI Platform Engineer (m/f/d)
+company: Jedox GmbH
+company_url: null
+location: Germany remote
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: remote-ai-platform-engineer-340051
+  url: https://www.arbeitnow.com/jobs/companies/jedox-gmbh/remote-ai-platform-engineer-340051
+  metadata:
+    tags:
+    - AI Applications
+    - LLMs
+    - RAG
+    - AI Agents
+    - APIs
+    - Docker
+    - CI/CD
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-27T11:09:40Z'
+discovered_at: '2026-07-27T13:04:07Z'
+updated_at: '2026-07-27T13:04:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:04:07Z'
+analysis_priority: 0
+fingerprint: sha256:26ac74853707bcb821667454396e158a5c51ee98c1295b919cb32059a2bba4be
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

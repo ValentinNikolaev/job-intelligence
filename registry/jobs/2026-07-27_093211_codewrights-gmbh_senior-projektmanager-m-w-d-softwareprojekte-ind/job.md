@@ -80,4 +80,4 @@ Technischer Hintergrund in Softwareentwicklung, Embedded Systems oder industriel
 
 Erfahrung in regulierten Umfeldern oder mit Themen wie IEC 62443, Industrial Cybersecurity, GMP/GAMP oder industriellen Kommunikationsprotokollen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

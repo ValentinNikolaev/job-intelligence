@@ -1,0 +1,47 @@
+schema_version: 2
+id: 2709cec8-02ce-480b-ab2b-b72ff9337c5a
+title: Principal Engineer
+company: Masabi
+company_url: null
+location: UK
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '143481'
+  url: https://jobicy.com/jobs/143481-principal-engineer
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/f2355465-221.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: About Us_// At Masabi, we’re driving the fare payment revolution, powering
+      the journeys of millions all over the world. We build fare collection platforms
+      that allow riders to seamlessly buy and present tickets for public transport
+      either on their mobile phones, from a ticket machine, or even by tapping their
+      bank card to travel. Our Justride…
+    discovered_by:
+    - query_index: 7
+      parameters:
+        industry: dev
+        count: '100'
+        tag: technical lead
+        geo: europe
+    - query_index: 8
+      parameters:
+        industry: dev
+        count: '100'
+        tag: platform engineer
+        geo: europe
+published_at: '2026-07-27T09:08:17Z'
+discovered_at: '2026-07-27T13:08:02Z'
+updated_at: '2026-07-27T13:08:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:08:02Z'
+analysis_priority: 0
+fingerprint: sha256:a7ebc602551b2f290f28d5e34c424dc10226e3539cd47dd0b1599b0f90935528
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

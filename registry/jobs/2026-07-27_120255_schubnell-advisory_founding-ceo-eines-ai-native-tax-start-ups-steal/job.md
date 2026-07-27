@@ -70,4 +70,4 @@ Du bist Unternehmer und Kundenversteher: Macher, belastbar, Teamplayer, mit ausg
 
 Lust eine Branche zu revolutionieren? Lass uns sprechen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

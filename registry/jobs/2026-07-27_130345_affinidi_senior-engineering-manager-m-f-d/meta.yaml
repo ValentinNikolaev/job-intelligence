@@ -1,0 +1,27 @@
+schema_version: 2
+id: 2889ed36-5553-4412-ad06-3483e9b2f0d4
+title: Senior Engineering Manager (m/f/d)
+company: affinidi
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-engineering-manager-berlin-385454
+  url: https://www.arbeitnow.com/jobs/companies/affinidi/senior-engineering-manager-berlin-385454
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-27T11:55:04Z'
+discovered_at: '2026-07-27T13:03:45Z'
+updated_at: '2026-07-27T13:03:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:45Z'
+analysis_priority: 0
+fingerprint: sha256:51edf434a7eb277eddf496bdd254cf5c0aaf786be6bd0bd0c7741c4fb2e2d5ce
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

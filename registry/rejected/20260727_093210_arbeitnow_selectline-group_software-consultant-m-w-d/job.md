@@ -49,4 +49,4 @@ Zeig uns, wer du bist, denn bei uns bist du mehr als nur ein Lebenslauf!
 
 Zur bessere Lesbarkeit verwenden wir in unseren Texten teilweise die männliche Form. Selbstverständlich heißen wir bei der SelectLine Holding all Menschen willkommen, unabhängig von ihren ethischen Zugehörigkeit, ihrem Geschlecht, ihrer sexuellen Orientierung, ihrer Religion, ihrer Behinderung oder ihrem Alter.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

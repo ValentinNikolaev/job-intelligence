@@ -1,0 +1,31 @@
+schema_version: 2
+id: 331ec176-e267-4ea1-b886-678379a5ec2f
+title: Software Engineer (m/w/d)
+company: bessr.
+company_url: null
+location: Schwäbisch Hall
+remote: true
+employment_type: Contract, berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: software-engineer-schwabisch-hall-485888
+  url: https://www.arbeitnow.com/jobs/companies/bessr/software-engineer-schwabisch-hall-485888
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - Contract
+    - berufserfahren
+published_at: '2026-07-27T12:00:47Z'
+discovered_at: '2026-07-27T13:03:43Z'
+updated_at: '2026-07-27T13:03:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:43Z'
+analysis_priority: 0
+fingerprint: sha256:17ae5c1a155c4bc91d9c25d8bbbf6f9a500fa50382e0d3ae6204c104ca6c4ad0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

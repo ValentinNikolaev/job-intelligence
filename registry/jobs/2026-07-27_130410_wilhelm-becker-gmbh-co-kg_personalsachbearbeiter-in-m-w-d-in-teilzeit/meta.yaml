@@ -1,0 +1,29 @@
+schema_version: 2
+id: 0a45af30-24e0-442f-ac9e-c5b287b2b777
+title: Personalsachbearbeiter/in (m/w/d) in Teilzeit
+company: Wilhelm Becker GmbH & Co. KG
+company_url: null
+location: Mettmann
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: personalsachbearbeiter-in-in-teilzeit-mettmann-37051
+  url: https://www.arbeitnow.com/jobs/companies/wilhelm-becker-gmbh-co-kg/personalsachbearbeiter-in-in-teilzeit-mettmann-37051
+  metadata:
+    tags:
+    - Administration
+    job_types:
+    - berufserfahren
+published_at: '2026-07-27T11:00:35Z'
+discovered_at: '2026-07-27T13:04:10Z'
+updated_at: '2026-07-27T13:04:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:04:10Z'
+analysis_priority: 0
+fingerprint: sha256:b389f88834a7b0a52393d9c0c39cd6a714ca29bf9d831d01eb6c5b81a00ecc77
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

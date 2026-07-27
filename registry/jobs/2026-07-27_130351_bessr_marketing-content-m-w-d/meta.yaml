@@ -1,0 +1,30 @@
+schema_version: 2
+id: 962f1484-278a-43e4-b2f4-f3ebb79b9842
+title: Marketing & Content (m/w/d)
+company: bessr.
+company_url: null
+location: Schwäbisch Hall
+remote: true
+employment_type: Contract
+sources:
+- source: arbeitnow
+  source_job_id: marketing-content-schwabisch-hall-215547
+  url: https://www.arbeitnow.com/jobs/companies/bessr/marketing-content-schwabisch-hall-215547
+  metadata:
+    tags:
+    - Remote
+    - Marketing and Communication
+    job_types:
+    - Contract
+published_at: '2026-07-27T11:30:29Z'
+discovered_at: '2026-07-27T13:03:51Z'
+updated_at: '2026-07-27T13:03:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:51Z'
+analysis_priority: 0
+fingerprint: sha256:bd4b639379e7f770af189c09d08312614d3a6391f7e91efdd8ca67d55e3a9d8c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

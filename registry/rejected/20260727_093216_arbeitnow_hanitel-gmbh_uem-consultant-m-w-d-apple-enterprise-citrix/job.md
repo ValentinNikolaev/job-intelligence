@@ -75,4 +75,4 @@ Als **Senior Mobility / UEM Consultant (m/w/d)** übernehmen Sie die technische 
 
 - Hands-on-Mentalität sowie Erfahrung im Management komplexer Stakeholder-Strukturen
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

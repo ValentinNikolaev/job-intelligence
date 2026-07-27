@@ -50,4 +50,4 @@ Du interessierst dich nicht nur dafür, Computer zu benutzen, sondern möchtest 
 
 Du musst noch kein IT-Profi sein. Viel wichtiger ist uns, dass du neugierig bist, Fragen stellst und wirklich verstehen möchtest, wie Technik funktioniert.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 60812b40-21cd-4ebd-8462-eeb57b4aaa0b
+title: IT Projektmanager Softwareentwicklung (m/w/d)
+company: MY Humancapital GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: it-projektmanager-softwareentwicklung-munich-120576
+  url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/it-projektmanager-softwareentwicklung-munich-120576
+  metadata:
+    tags:
+    - Project Management
+published_at: '2026-07-27T11:30:30Z'
+discovered_at: '2026-07-27T13:03:49Z'
+updated_at: '2026-07-27T13:03:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:49Z'
+analysis_priority: 0
+fingerprint: sha256:acfa018f95d64cce2034db6b9456058d516496a33a0b38ef4eb6ee3daaa42508
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,35 @@
+schema_version: 2
+id: 0057431f-2d2a-404a-a152-39e05abf4468
+title: Senior Consultant Transformation (all genders)
+company: Vrame Consult Gmbh
+company_url: null
+location: Berlin
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-consultant-transformation-all-genders-berlin-119109
+  url: https://www.arbeitnow.com/jobs/companies/vrame-consult-gmbh/senior-consultant-transformation-all-genders-berlin-119109
+  metadata:
+    tags:
+    - '#transformation'
+    - '#changemanagement'
+    - '#people'
+    - '#agile'
+    - '#IT'
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-27T11:10:42Z'
+discovered_at: '2026-07-27T13:04:00Z'
+updated_at: '2026-07-27T13:04:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:04:00Z'
+analysis_priority: 0
+fingerprint: sha256:450b677f5686295ee1a2067ea5852f45677e773a0c21999b5cace8488e66fcab
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

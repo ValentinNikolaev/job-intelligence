@@ -1,0 +1,27 @@
+schema_version: 2
+id: 458e4e0c-f611-4a6b-87e2-6649ce9ed110
+title: Director of Engineering (m/f/d)
+company: affinidi
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: director-of-engineering-berlin-125556
+  url: https://www.arbeitnow.com/jobs/companies/affinidi/director-of-engineering-berlin-125556
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-27T11:55:04Z'
+discovered_at: '2026-07-27T13:03:47Z'
+updated_at: '2026-07-27T13:03:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:47Z'
+analysis_priority: 0
+fingerprint: sha256:fee3fafda79486a763c4213a03c34f890c54bad3ed9b3ca3e000d95ea4afe707
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

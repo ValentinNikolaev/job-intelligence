@@ -90,4 +90,4 @@ Thank you for your understanding!
 
 If you have any questions, please turn to Onyinye Nfiaji on LinkedIn.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

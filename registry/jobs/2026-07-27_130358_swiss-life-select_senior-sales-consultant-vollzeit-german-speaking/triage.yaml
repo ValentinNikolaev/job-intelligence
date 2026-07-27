@@ -1,0 +1,10 @@
+schema_version: 1
+triage_version: deterministic-triage-v1
+vacancy_id: c4bf2076-1a47-4328-af8c-d8b3a613d379
+skip_model: true
+reason: sales
+confidence: high
+matched_title_rules:
+- sales
+- consulting
+triaged_at: '2026-07-27T13:10:02Z'

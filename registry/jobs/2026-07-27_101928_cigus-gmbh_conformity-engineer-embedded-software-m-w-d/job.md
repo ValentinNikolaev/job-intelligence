@@ -68,4 +68,4 @@ Sicherer Umgang mit **SAP** oder vergleichbaren Qualitäts- und Compliance-Syste
 
 Gute Deutsch- und Englischkenntnisse sowie eine analytische, strukturierte und kommunikative Arbeitsweise
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

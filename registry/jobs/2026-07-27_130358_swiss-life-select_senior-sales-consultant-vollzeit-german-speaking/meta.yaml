@@ -1,0 +1,31 @@
+schema_version: 2
+id: c4bf2076-1a47-4328-af8c-d8b3a613d379
+title: Senior Sales Consultant - Vollzeit (German Speaking)
+company: Swiss Life Select
+company_url: null
+location: Bad Krozingen
+remote: false
+employment_type: Full-time fixed-term, mid
+sources:
+- source: arbeitnow
+  source_job_id: senior-sales-consultant-vollzeit-german-speaking-bad-krozingen-316539
+  url: https://www.arbeitnow.com/jobs/companies/swiss-life-select/senior-sales-consultant-vollzeit-german-speaking-bad-krozingen-316539
+  metadata:
+    tags:
+    - Finance
+    - high school or equivalent
+    job_types:
+    - Full-time fixed-term
+    - mid
+published_at: '2026-07-27T11:20:16Z'
+discovered_at: '2026-07-27T13:03:58Z'
+updated_at: '2026-07-27T13:03:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:03:58Z'
+analysis_priority: 0
+fingerprint: sha256:9e53b96bf3b93b7a7e3db0e4da57a36dfef3fcb0d93a69e00f7e9bc974cc786d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

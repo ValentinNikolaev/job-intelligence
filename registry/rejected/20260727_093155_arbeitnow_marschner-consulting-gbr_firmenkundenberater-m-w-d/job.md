@@ -57,4 +57,4 @@ Falls Sie sich in einem ungekündigten Arbeitsverhältnis befinden, sichern wir 
 
 Telefoninterviews und Vorstellungsgespräche gerne auch nach Feierabend.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

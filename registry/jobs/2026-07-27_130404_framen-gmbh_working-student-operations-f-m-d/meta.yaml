@@ -1,0 +1,38 @@
+schema_version: 2
+id: 80ea816b-711a-473b-9a7e-55be01670df9
+title: Working Student Operations (f/m/d)
+company: Framen Gmbh
+company_url: null
+location: FRAMEN GmbH - Berlin
+remote: false
+employment_type: Entry, Working student, Part time
+sources:
+- source: arbeitnow
+  source_job_id: working-student-operations-framen-gmbh-berlin-453253
+  url: https://www.arbeitnow.com/jobs/companies/framen-gmbh/working-student-operations-framen-gmbh-berlin-453253
+  metadata:
+    tags:
+    - werkstudent
+    - DOOH
+    - TVBox
+    - SSP
+    - DSP
+    - Operations
+    - Hardware
+    - SAAS
+    job_types:
+    - Entry
+    - Working student
+    - Part time
+published_at: '2026-07-27T11:09:58Z'
+discovered_at: '2026-07-27T13:04:04Z'
+updated_at: '2026-07-27T13:04:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T13:04:04Z'
+analysis_priority: 0
+fingerprint: sha256:840cd01ca468f0cdfcdeeb7a3b2f290bf6c6ecf5af2b2c328894363dc934ca9c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

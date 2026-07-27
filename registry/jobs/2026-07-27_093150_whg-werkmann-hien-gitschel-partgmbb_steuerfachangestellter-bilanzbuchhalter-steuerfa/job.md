@@ -90,4 +90,4 @@ Tel.: 0941 - 640 80 60
 
 Wenn Sie noch nicht die richtige Stelle gefunden haben, schauen Sie sich auch noch unsere anderen Stellen an!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

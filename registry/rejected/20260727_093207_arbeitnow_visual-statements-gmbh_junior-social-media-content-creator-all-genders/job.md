@@ -81,4 +81,4 @@ Dann freuen wir uns auf deine aussagekräftige Bewerbung, inklusive der Angabe d
 
 Wenn du mehr über unsere Arbeitskultur und das Arbeitsumfeld erfahren möchtest, laden wir dich ein, hier die Bewertungen unserer Mitarbeiter auf Kununu zu lesen. Dort findest du ehrliche Meinungen und Feedback von aktuellen und ehemaligen Mitarbeitern.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

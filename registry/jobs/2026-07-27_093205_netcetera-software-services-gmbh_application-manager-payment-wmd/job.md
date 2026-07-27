@@ -54,4 +54,4 @@ Unsere Teams arbeiten in Bereichen wie Banking & Payments, Cards und Trusted Sol
 
 - **Rabatte**: Mitgliedschaft bei Corporate Benefits u.v.m.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
