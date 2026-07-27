@@ -1,6 +1,6 @@
 # Senior Software Engineer, Backend (Lake Analytics Platform)
 
-Posted: 2026-07-19T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ...implement platform features that enable **engineers **across Affirm to build, deploy, and operate... ...in a managed cloud environment.
 

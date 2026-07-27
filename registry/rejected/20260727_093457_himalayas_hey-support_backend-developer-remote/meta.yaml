@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/hey-support/jobs/backend-developer-remote-1517303562
+source_url: https://himalayas.app/companies/hey-support/jobs/backend-developer-remote-1517303562
+title: Backend Developer ( Remote )
+company: Hey Support
+location: Worldwide
+published_at: '2026-07-03T09:16:55Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-03T09:16:55Z is older than 7 days
+updated_at: '2026-07-27T09:34:57Z'
+rejected_at: '2026-07-27T09:34:57Z'

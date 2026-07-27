@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/medallion/jobs/senior-software-engineer
+source_url: https://himalayas.app/companies/medallion/jobs/senior-software-engineer
+title: Senior Software Engineer
+company: Medallion
+location: Worldwide
+published_at: '2026-06-23T18:57:36Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-23T18:57:36Z is older than 7 days
+updated_at: '2026-07-27T09:35:06Z'
+rejected_at: '2026-07-27T09:35:06Z'

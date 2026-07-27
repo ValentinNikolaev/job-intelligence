@@ -1,6 +1,6 @@
 # Senior Backend Engineer
 
-Posted: 2026-07-19T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ...and traffic that doesn't wait for you to catch up. We need a **backend engineer **who thinks in systems, not just services. You'll own the architecture... ...and founders, fast
 
