@@ -1,6 +1,6 @@
 # Mitarbeiter (m/w/d) Administration, Immobilienmanagement & Akquise - TEILZEIT
 
-Posted: 2026-07-27T16:30:29Z
+Posted: 2026-07-27T20:59:02Z
 
 Du möchtest nicht einfach einen Job? Sondern etwas mit aufbauen?
 
@@ -92,4 +92,4 @@ Einen sehr abwechslungsreichen Job mit viel Eigenverantwortung
 
 Wenn Du Lust hast, von Anfang an dabei zu sein und Vielseitigkeit Dein Ding ist, freuen wir uns auf Deine Bewerbung mit Lebenslauf sowie einer kurzen Vorstellung deiner Motivation, Dein möglicher Starttermin und deiner Gehaltsvorstellung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

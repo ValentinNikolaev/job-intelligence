@@ -121,4 +121,4 @@ Wir erwarten keine perfekte Produktion. Uns geht es um einen authentischen Eindr
 
 **Für einen fairen und einheitlichen Bewerbungsprozess berücksichtigen wir ausschließlich Bewerbungen, die sowohl einen Lebenslauf als auch das kurze Video enthalten.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 4a51c3c4-d9c7-4eca-a3bd-870781b0fdab
+title: AI Director - Machine Learning
+company: Jobgether
+company_url: null
+location: Germany
+remote: false
+employment_type: Full-time
+sources:
+- source: arbeitnow
+  source_job_id: ai-director-machine-learning-germany-42237
+  url: https://www.arbeitnow.com/jobs/companies/jobgether/ai-director-machine-learning-germany-42237
+  metadata:
+    tags:
+    - IT
+    job_types:
+    - Full-time
+published_at: '2026-07-27T20:24:49Z'
+discovered_at: '2026-07-27T21:25:07Z'
+updated_at: '2026-07-27T21:25:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T21:25:07Z'
+analysis_priority: 0
+fingerprint: sha256:d58afbe14782b37dcf4a7e241099eb925480db63dc160db3b63a321c2ca22d3d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

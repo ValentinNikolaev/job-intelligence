@@ -1,0 +1,28 @@
+schema_version: 2
+id: 3db3b95d-f86a-4c9d-a9fd-fccbfc4b9b31
+title: 1154 Senior Business Analyst - ServiceNow Solution / Platform Architecture
+company: Intetics 2
+company_url: null
+location: Germany
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-1154-senior-business-analyst-servicenow-solution-platform-architecture-germany-433789
+  url: https://www.arbeitnow.com/jobs/companies/intetics-2/remote-1154-senior-business-analyst-servicenow-solution-platform-architecture-germany-433789
+  metadata:
+    tags:
+    - Information Technology and Services
+    - Remote
+published_at: '2026-07-27T20:40:37Z'
+discovered_at: '2026-07-27T21:24:51Z'
+updated_at: '2026-07-27T21:24:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T21:24:51Z'
+analysis_priority: 0
+fingerprint: sha256:d3eac04c64d1a467f05dc0d154043e596cba887db8fd1d5ec55f870f6cec4915
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

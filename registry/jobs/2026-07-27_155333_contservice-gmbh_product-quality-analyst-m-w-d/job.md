@@ -44,4 +44,4 @@ Als **Product Quality Analyst (m/w/d)** bei der Contservice GmbH übernehmen Sie
 
 Dann freuen wir uns darauf, Sie kennenzulernen! Bitte senden Sie uns Ihre aussagekräftigen Bewerbungsunterlagen unter Angabe Ihres frühestmöglichen Eintrittstermins an
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

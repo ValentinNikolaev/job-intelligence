@@ -1,6 +1,6 @@
 # Finanzbuchhalter / Accountant - Buchhaltung & Reporting - 100% remote -
 
-Posted: 2026-07-27T14:30:38Z
+Posted: 2026-07-27T18:59:03Z
 
 ## Rejection
 
@@ -97,31 +97,35 @@ Was du bei uns erwarten kannst:
 
 - **Zusätzliche Benefits** – betriebliche Altersvorsorge, Firmenfitness, Mitarbeiterrabatte und Business-Bike-Leasing
 
-So bewirbst du dich:
+So bewirbst du dich
 
-Damit wir mehr von dir kennenlernen als nur deinen Lebenslauf, ist ein kurzes Video fester Bestandteil unseres Bewerbungsprozesses. Mehr dazu erfährst du hier:
-
-[https://youtube.com/shorts/ae5zs50CHxc?feature=share](https://youtube.com/shorts/ae5zs50CHxc?feature=share)
-
-Bitte sende uns:
+Wir verzichten auf lange Anschreiben. Bitte sende uns:
 
 - deinen aktuellen Lebenslauf
 
-- ein kurzes Video von ca. 2–3 Minuten
+- ein kurzes Video von etwa zwei bis drei Minuten
 
-Du kannst das Video ganz unkompliziert mit Loom, deinem Smartphone oder einem anderen Tool aufnehmen und den Link direkt in deiner Bewerbung teilen.
+Mehr zum Video erfährst du hier:
 
-Sprich dabei bitte kurz auf Deutsch und Englisch und erzähle uns:
+[https://youtube.com/shorts/ae5zs50CHxc?feature=share](https://youtube.com/shorts/ae5zs50CHxc?feature=share)
+
+Du kannst das Video unkompliziert mit Loom, deinem Smartphone oder einem anderen Tool aufnehmen und den Link direkt in deiner Bewerbung teilen.
+
+Erzähle uns darin bitte kurz:
 
 - Warum interessiert dich diese Rolle?
 
 - Was motiviert dich beruflich?
 
-- Was erwartest du von deiner nächsten Position?
+- Welche Aufgaben hast du in der Finanzbuchhaltung bisher eigenständig übernommen?
 
-- Welche Erfahrung macht dich zu einer besonders guten Besetzung für diese Rolle?
+- Welche Erfahrung bringst du bei Kontenabstimmungen und Abschlussvorbereitungen mit?
 
-Wir erwarten keine perfekte Produktion. Uns geht es um einen authentischen ersten Eindruck von deiner Kommunikation, Motivation, Persönlichkeit und deinen Sprachkenntnissen.
+- Wie nutzt du digitale Tools, Automatisierung oder AI bereits im Finance-Alltag?
+
+Bitte sprich überwiegend auf Deutsch und kurz auch auf Englisch.
+
+Wir erwarten keine perfekte Produktion. Uns geht es um einen authentischen Eindruck von deiner praktischen Erfahrung, deiner Arbeitsweise, deiner Motivation und deiner Kommunikation.
 
 **Für einen fairen und einheitlichen Bewerbungsprozess berücksichtigen wir ausschließlich Bewerbungen, die sowohl einen Lebenslauf als auch das kurze Video enthalten.**
 

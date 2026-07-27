@@ -27,4 +27,4 @@ Deine Aufgaben sind dabei:**
 
 Teil von CargoBeamer zu sein bedeutet, Teil von etwas Großem zu sein. Es bedeutet, die Zukunft der Logistik zu gestalten, die unseres Unternehmens und gleichzeitig Deine eigene. Dich erwartet ein motivierendes Betriebsklima, in dem berufliche Herausforderungen mit unterschiedlichsten Entwicklungschancen an der Tagesordnung sind und Kommunikation auf Augenhöhe gelebt wird. Wir bieten Dir alle Vorteile eines international wachsenden und innovativen Unternehmens in einem starken Team sowie eine attraktive Vergütung für diesen zukunftsorientierten Arbeitsplatz.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

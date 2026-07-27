@@ -9,10 +9,10 @@ employment_type: null
 sources:
 - source: jooble
   source_job_id: '-5849050822750486894'
-  url: https://jooble.org/away/-5849050822750486894?p=1&pos=8&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=108&brelb=10&scr=54.20057&bscr=54.20057&aq=3991591900681541311&elckey=2826252958171160560
+  url: https://jooble.org/away/-5849050822750486894?p=1&pos=8&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=111&brelb=10&scr=53.363937&bscr=53.363937&aq=-8100723457761321937&elckey=7501055773180544655
 published_at: '2026-07-23T00:00:00.0000000'
 discovered_at: '2026-07-25T21:34:55Z'
-updated_at: '2026-07-27T18:37:18Z'
+updated_at: '2026-07-27T21:30:17Z'
 status: found
 status_history:
 - status: found

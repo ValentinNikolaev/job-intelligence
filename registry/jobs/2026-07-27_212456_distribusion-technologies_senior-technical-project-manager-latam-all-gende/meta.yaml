@@ -1,0 +1,30 @@
+schema_version: 2
+id: e897cb56-4bb7-458e-86cd-c5bb0ae9c38b
+title: Senior Technical Project Manager, LatAm (all genders)
+company: Distribusion Technologies
+company_url: null
+location: Berlin, Berlin, Germany
+remote: false
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: senior-technical-project-manager-latam-all-genders-berlin-437191
+  url: https://www.arbeitnow.com/jobs/companies/distribusion-technologies/senior-technical-project-manager-latam-all-genders-berlin-437191
+  metadata:
+    tags:
+    - Partnerships
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-07-27T20:31:54Z'
+discovered_at: '2026-07-27T21:24:56Z'
+updated_at: '2026-07-27T21:24:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T21:24:56Z'
+analysis_priority: 0
+fingerprint: sha256:14f6c26dac64083fc7502b059be5d5b1b0369cd2b2639d8f60c86bce29867890
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

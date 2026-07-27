@@ -1,0 +1,28 @@
+schema_version: 2
+id: fe284107-9a91-45cf-96fa-a3bb40a2f099
+title: 1152 Senior Business Analyst - ServiceNow ITOM / ITAM
+company: Intetics 2
+company_url: null
+location: Germany
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-1152-senior-business-analyst-servicenow-itom-itam-germany-322837
+  url: https://www.arbeitnow.com/jobs/companies/intetics-2/remote-1152-senior-business-analyst-servicenow-itom-itam-germany-322837
+  metadata:
+    tags:
+    - Information Technology and Services
+    - Remote
+published_at: '2026-07-27T20:40:37Z'
+discovered_at: '2026-07-27T21:24:53Z'
+updated_at: '2026-07-27T21:24:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T21:24:53Z'
+analysis_priority: 0
+fingerprint: sha256:e7f12aa3ea8c9a4fa84e79c578a3e5834f02e8dfe7fa2b802d8efee3ca684966
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

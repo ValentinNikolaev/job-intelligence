@@ -1,0 +1,28 @@
+schema_version: 2
+id: ac70ec58-82f8-49ba-8fd5-7a190733b5c6
+title: Senior Programmatic Manager (Display & AdTech) (m/w/d)
+company: hurra.com
+company_url: null
+location: Stuttgart
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-programmatic-manager-display-adtech-stuttgart-3764
+  url: https://www.arbeitnow.com/jobs/companies/hurracom/senior-programmatic-manager-display-adtech-stuttgart-3764
+  metadata:
+    tags:
+    - Remote
+    - Online Marketing
+published_at: '2026-07-27T20:30:25Z'
+discovered_at: '2026-07-27T21:25:01Z'
+updated_at: '2026-07-27T21:25:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T21:25:01Z'
+analysis_priority: 0
+fingerprint: sha256:1db9ee97bdfffe99c3f81b6fd671b13c89064123e06589926b0998f1e93a6361
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

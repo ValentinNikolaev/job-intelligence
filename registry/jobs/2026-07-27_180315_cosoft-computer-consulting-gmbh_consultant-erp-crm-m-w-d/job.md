@@ -46,4 +46,4 @@ Du suchst eine neue berufliche Herausforderung als Consultant ERP/CRM (m/w/d) in
 
 Schließ dich unserem Team als Consultant ERP/CRM an und gestalte innovative IT-Lösungen mit uns! Werde Teil unserer Erfolgsgeschichte im Münsterland. Bewirb dich jetzt!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

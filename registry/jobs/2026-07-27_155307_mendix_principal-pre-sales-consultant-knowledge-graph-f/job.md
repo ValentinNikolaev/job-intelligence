@@ -98,4 +98,4 @@ We value equal opportunities and welcome applications from people with disabilit
 
 **#LI-LP2**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

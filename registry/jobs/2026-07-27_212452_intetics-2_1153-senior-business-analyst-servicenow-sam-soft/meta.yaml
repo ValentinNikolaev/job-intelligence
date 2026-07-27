@@ -1,0 +1,28 @@
+schema_version: 2
+id: 1eed6f3a-e4dd-486e-96d7-fb67ef952df7
+title: 1153 Senior Business Analyst - ServiceNow SAM (Software Asset Management)
+company: Intetics 2
+company_url: null
+location: Germany
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: remote-1153-senior-business-analyst-servicenow-sam-software-asset-management-germany-393842
+  url: https://www.arbeitnow.com/jobs/companies/intetics-2/remote-1153-senior-business-analyst-servicenow-sam-software-asset-management-germany-393842
+  metadata:
+    tags:
+    - Information Technology and Services
+    - Remote
+published_at: '2026-07-27T20:40:37Z'
+discovered_at: '2026-07-27T21:24:52Z'
+updated_at: '2026-07-27T21:24:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-27T21:24:52Z'
+analysis_priority: 0
+fingerprint: sha256:1519a1ffed4c47ba07aa4e21ca92d9aa82ce2d5217a4bb50cec6f7d89bcfb26c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

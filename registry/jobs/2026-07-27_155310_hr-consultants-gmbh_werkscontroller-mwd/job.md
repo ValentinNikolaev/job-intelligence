@@ -32,4 +32,4 @@ Posted: 2026-07-27T14:00:34Z
 
 - Sicheres Englisch in Wort und Schrift
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

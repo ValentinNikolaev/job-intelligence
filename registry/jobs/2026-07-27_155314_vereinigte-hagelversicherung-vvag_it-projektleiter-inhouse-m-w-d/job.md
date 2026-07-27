@@ -64,4 +64,4 @@ Zur Verstärkung unseres Teams in **Gießen** suchen wir ab sofort einen
 
 **Möchtest auch Du Teil der VEREINIGTEN HAGEL werden?** **Dann bewirb Dich jetzt!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

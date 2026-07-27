@@ -1,6 +1,6 @@
 # Customer Success Manager (m/w/d)
 
-Posted: 2026-07-27T15:30:46Z
+Posted: 2026-07-27T19:59:02Z
 
 CrossLease ist ein FinTech und entwickelt Leasing- und Refinanzierungssoftware, cloud-basiert und Made in Germany. Unsere Kunden sind Leasinggesellschaften und Finanzdienstleister, die ihr Tagesgeschäft über unsere Software abwickeln.
 
@@ -54,18 +54,10 @@ Das brauchst du noch nicht:
 
 - MacBook und Wellpass
 
-- Sehr gute S-Bahn-Anbindung in unser moderne Office in Oberhaching
+- Sehr gute S-Bahn-Anbindung in unser modernes Office in Oberhaching
 
 Klingt das nach dir? Dann freuen wir uns über deine Bewerbung.
 
 Ein Anschreiben brauchst du dafür nicht - ein kurzer Lebenslauf reicht!
 
-Was dich nach deiner Bewerbung erwartet:
-
-- Interview (online) mit unserem Recruiting-Team (20 Min.)
-
-- Interview (online) mit den Gründern
-
-- Interviews (vor Ort) mit dem Team
-
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

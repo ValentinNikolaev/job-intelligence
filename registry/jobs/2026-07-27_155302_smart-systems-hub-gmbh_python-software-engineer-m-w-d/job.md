@@ -170,4 +170,4 @@ Du möchtest aus Daten belastbare Lösungen entwickeln und neue Technologien nic
 
 Dann freuen wir uns darauf, dich kennenzulernen. Bewirb dich beim Smart Systems Hub und zeige uns anhand deiner bisherigen Projekte, welche Software-, Daten- oder KI-Lösungen du bereits entwickelt hast.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
