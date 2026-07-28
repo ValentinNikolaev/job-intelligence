@@ -491,3 +491,13 @@ runs:
   total_tokens: 21700
   credits: 0.0
   note: Estimated Codex task usage; exact surface telemetry unavailable.
+- run_id: 45b10177e50645feaf3bd003270ae6bb
+  recorded_at: '2026-07-28T20:23:57Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
