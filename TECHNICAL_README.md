@@ -247,7 +247,9 @@ Android, or iOS are kept out of `registry/jobs/`. Hard requirements for European
 languages other than English, Russian, or Ukrainian are rejected; hard Italian is
 also rejected unless the vacancy explicitly requires English. English language
 requirements are always a green light for the language filter, and optional European
-languages are allowed because the candidate can proceed in English. Rejected records are written under
+languages are allowed because the candidate can proceed in English. The prefilter
+also rejects Spring Boot, Python + R, and Python + Julia roles, and only allows
+vacancies that mention Go/Golang or PHP. Rejected records are written under
 `registry/rejected/` with a structured `rejection_reason` in `meta.yaml` and the
 same reason at the top of `job.md`.
 

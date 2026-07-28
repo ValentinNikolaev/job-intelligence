@@ -68,6 +68,11 @@ def prefilter_job(
         )
     if _has_hard_language_requirement(full_text, "italian"):
         return Rejection("language_requirement", "hard Italian language requirement without English green light")
+    blacklisted_stack = _blacklisted_stack(full_text)
+    if blacklisted_stack is not None:
+        return Rejection("tech_stack", f"{blacklisted_stack} is not a target stack")
+    if not _has_target_stack(full_text):
+        return Rejection("tech_stack", "role does not mention Go/Golang or PHP")
     return None
 
 
@@ -215,6 +220,40 @@ def _hard_blocking_language_requirement(text: str) -> str | None:
         if _has_hard_language_requirement(text, language):
             return language.title()
     return None
+
+
+def _blacklisted_stack(text: str) -> str | None:
+    if re.search(r"\bspring boot\b", text):
+        return "Spring Boot"
+    if _has_python_stack(text) and _has_r_stack(text):
+        return "Python + R"
+    if _has_python_stack(text) and re.search(r"\bjulia\b", text):
+        return "Python + Julia"
+    return None
+
+
+def _has_target_stack(text: str) -> bool:
+    return bool(_has_go_stack(text) or _has_php_stack(text))
+
+
+def _has_go_stack(text: str) -> bool:
+    return bool(
+        re.search(r"\b(golang|go-lang|go language)\b", text)
+        or re.search(r"\bgo\b.{0,40}\b(backend|service|services|api|apis|microservice|microservices|developer|engineer|platform)\b", text)
+        or re.search(r"\b(backend|service|services|api|apis|microservice|microservices|developer|engineer|platform)\b.{0,40}\bgo\b", text)
+    )
+
+
+def _has_php_stack(text: str) -> bool:
+    return bool(re.search(r"\bphp\s*(?:5|7|8)(?:\.\d+)?\b|\bphp(?:5|7|8)(?:\.\d+)?\b|\bphp\b", text))
+
+
+def _has_python_stack(text: str) -> bool:
+    return bool(re.search(r"\bpython\b", text))
+
+
+def _has_r_stack(text: str) -> bool:
+    return bool(re.search(r"\br\b|\br language\b|\br-lang\b", text))
 
 
 def _parse_timestamp(value: str | None) -> datetime | None:

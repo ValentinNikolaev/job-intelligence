@@ -18,7 +18,7 @@ def make_job(**overrides: object) -> NormalizedJob:
         "source_url": "https://jobs.test/job-1",
         "title": "Senior Backend Engineer",
         "company": "Acme",
-        "description": "Build backend services.",
+        "description": "Build Go backend services.",
         "published_at": "2026-07-22T12:00:00Z",
     }
     values.update(overrides)
@@ -73,14 +73,46 @@ class PrefilterTests(unittest.TestCase):
 
     def test_allows_russian_ukrainian_and_optional_european_languages(self) -> None:
         for description in (
-            "Fluent Russian is required for this role.",
-            "Ukrainian C1 required for partner conversations.",
-            "Italian is nice to have for local onboarding.",
-            "Spanish is optional and only nice to have.",
-            "German would be a plus.",
+            "Fluent Russian is required for this Go role.",
+            "Ukrainian C1 required for Go partner conversations.",
+            "Italian is nice to have for local onboarding on PHP services.",
+            "Spanish is optional and only nice to have for Go services.",
+            "German would be a plus for PHP development.",
         ):
             with self.subTest(description=description):
                 self.assertIsNone(prefilter_job(make_job(description=description), now=self.now))
+
+    def test_requires_go_or_php_stack(self) -> None:
+        rejection = prefilter_job(
+            make_job(description="Build Java services with PostgreSQL."),
+            now=self.now,
+        )
+
+        self.assertIsNotNone(rejection)
+        self.assertEqual("tech_stack", rejection.category)
+        self.assertIn("Go/Golang or PHP", rejection.reason)
+
+    def test_allows_go_and_php_aliases(self) -> None:
+        for description in (
+            "Build Golang APIs.",
+            "Build Go backend services.",
+            "Maintain PHP 8.3 applications.",
+            "Maintain PHP8 applications.",
+        ):
+            with self.subTest(description=description):
+                self.assertIsNone(prefilter_job(make_job(description=description), now=self.now))
+
+    def test_rejects_blacklisted_stacks(self) -> None:
+        for description, reason in (
+            ("Build Java services with Spring Boot and PHP integrations.", "Spring Boot"),
+            ("Build Python and R data services with a small PHP API.", "Python + R"),
+            ("Build Python and Julia data services with a small Go backend.", "Python + Julia"),
+        ):
+            with self.subTest(description=description):
+                rejection = prefilter_job(make_job(description=description), now=self.now)
+                self.assertIsNotNone(rejection)
+                self.assertEqual("tech_stack", rejection.category)
+                self.assertIn(reason, rejection.reason)
 
     def test_rejected_registry_always_writes_reason(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
