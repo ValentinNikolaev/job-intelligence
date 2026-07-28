@@ -1,0 +1,27 @@
+schema_version: 2
+id: 98f6d0e3-7845-4b88-b6dc-61a6e6f626c0
+title: (Senior) Quantitative Risk Controller (f/m/d)
+company: Raisin
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-quantitative-risk-controller-berlin-159681
+  url: https://www.arbeitnow.com/jobs/companies/raisin/senior-quantitative-risk-controller-berlin-159681
+  metadata:
+    tags:
+    - RSB Risk Controlling and Credit Risk
+published_at: '2026-07-28T03:16:49Z'
+discovered_at: '2026-07-28T06:53:10Z'
+updated_at: '2026-07-28T06:53:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T06:53:10Z'
+analysis_priority: 0
+fingerprint: sha256:4045cb2608392e658c9e12d55e473c334eb4d4b560671eee51c9b9a4e1d76632
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

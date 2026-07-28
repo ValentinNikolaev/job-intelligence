@@ -46,4 +46,4 @@ Wir sind eine international tätige Personalberatung, die seit über 30 Jahren e
 
 Wir freuen uns bereits sehr auf Ihre Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

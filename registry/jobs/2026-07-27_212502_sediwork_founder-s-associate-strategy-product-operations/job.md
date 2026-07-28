@@ -138,4 +138,4 @@ Dafür entwickeln wir die technologische Grundlage.
 
 Wenn du den Aufbau eines ambitionierten HealthTech-Unternehmens aktiv mitgestalten möchtest und Lust hast, gemeinsam mit uns die Zukunft der Gesundheitsversorgung zu prägen, freuen wir uns auf deine Bewerbung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

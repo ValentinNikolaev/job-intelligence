@@ -84,4 +84,4 @@ Datadog endeavors to make our Careers Page accessible to all users. If you would
 
 Any information you submit to Datadog as part of your application will be processed in accordance with Datadog’s [Applicant and Candidate Privacy Notice](https://www.datadoghq.com/legal/applicant-candidate-privacy/). For information on our AI policy, please visit [Interviewing at Datadog AI Guidelines](https://www.datadoghq.com/legal/interviewing-at-datadog-ai-guidelines/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

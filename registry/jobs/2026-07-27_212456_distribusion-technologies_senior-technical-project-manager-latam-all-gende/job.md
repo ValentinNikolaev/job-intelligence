@@ -82,4 +82,4 @@ We offer flexible and remote working conditions, relocation opportunities and ca
 Your Talent Partner (TP) and point of contact is Masha Marynova.
 For any queries, please reach out to your Talent Partner at (
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

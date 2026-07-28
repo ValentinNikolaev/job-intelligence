@@ -127,4 +127,4 @@ Dann bewirb dich jetzt bei der 365 Heroes GmbH und gestalte mit uns die Zukunft 
 
 Wir freuen uns darauf, dich kennenzulernen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

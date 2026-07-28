@@ -96,4 +96,4 @@ Remote Germany
 
 €68.000—€91.000 EUR
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

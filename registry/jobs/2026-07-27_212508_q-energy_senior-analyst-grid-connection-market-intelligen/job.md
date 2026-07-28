@@ -50,4 +50,4 @@ Wir machen viel Wind! Vor allem auch mit unseren Mitarbeiter-Benefits:
 Ansprechpartner:
 Katarzyna Skubisz-Mozdzierska
 Talent Acquisition Manager
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
