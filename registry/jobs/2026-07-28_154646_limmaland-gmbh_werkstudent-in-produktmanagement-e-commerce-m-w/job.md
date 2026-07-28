@@ -60,4 +60,4 @@ Du unterstützt unser E-Commerce & Produktmanagement Team bei der redaktionellen
 
 Schick uns deinen Lebenslauf und erzähl uns kurz, warum du zu uns passt – und was dich an E-Commerce oder Produktmanagement interessiert.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

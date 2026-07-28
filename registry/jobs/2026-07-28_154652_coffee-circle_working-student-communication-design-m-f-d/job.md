@@ -55,4 +55,4 @@ No matter your ethnicity, skin color, descent, religion, gender, national origin
 
 Your Coffee Circle Team
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

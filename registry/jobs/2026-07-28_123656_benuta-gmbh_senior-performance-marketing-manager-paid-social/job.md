@@ -96,4 +96,4 @@ Dein Ansprechpartner ist **Michael Stanke (Head of Online Marketing)**.
 
 Seit 2008 revolutionieren wir von Bonn aus den europäischen Teppich- und Home-&-Living-E-Commerce. Mit über 100 Millionen Euro Umsatz, modernster AI-gestützter Produktinszenierung und Kunden in 17 Ländern verbinden wir die Sicherheit eines etablierten Marktführers mit dem Drive und den flachen Hierarchien eines Digital-Pioneers. Unser Ziel ist einfach: Jedes Zuhause noch schöner zu machen. Werde Teil unseres Teams und hilf uns dabei, noch mehr Menschen für unsere Produkte zu begeistern.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

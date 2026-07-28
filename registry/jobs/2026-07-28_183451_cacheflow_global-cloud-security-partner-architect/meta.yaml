@@ -1,0 +1,24 @@
+schema_version: 2
+id: 2b0bd183-85bb-4ac4-a0b7-3c2a6a170a26
+title: Global Cloud Security Partner Architect
+company: Cacheflow
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '7859824791977182353'
+  url: https://jooble.org/away/7859824791977182353?p=1&pos=33&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=108&brelb=10&scr=21.477758&bscr=21.477758&aq=2698422493289573700&elckey=-1084034017018064332
+published_at: '2026-07-24T00:00:00.0000000'
+discovered_at: '2026-07-28T18:34:51Z'
+updated_at: '2026-07-28T18:34:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:34:51Z'
+analysis_priority: 0
+fingerprint: sha256:d4763cd6d8301fd34c0ab65935fa935f1bd570aaef556610724e2c9bc55a791c
+data_source: jooble
+content_source: jooble
+company_content_source: null

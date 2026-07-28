@@ -82,4 +82,4 @@ In an ongoing effort to grow and further extend our market presence and reach ou
 
 We look forward to receiving your application!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

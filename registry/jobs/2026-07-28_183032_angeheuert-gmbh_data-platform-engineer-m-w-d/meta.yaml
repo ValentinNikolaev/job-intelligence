@@ -1,0 +1,31 @@
+schema_version: 2
+id: 0642a8a1-c0e0-4518-a061-98b915b386f1
+title: Data Platform Engineer (m/w/d)
+company: ANGEHEUERT GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: data-platform-engineer-berlin-273541
+  url: https://www.arbeitnow.com/jobs/companies/angeheuert-gmbh/data-platform-engineer-berlin-273541
+  metadata:
+    tags:
+    - Information technology
+    - vocational
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-07-28T15:20:16Z'
+discovered_at: '2026-07-28T18:30:32Z'
+updated_at: '2026-07-28T18:30:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:32Z'
+analysis_priority: 0
+fingerprint: sha256:91788687b9abafb625cad279819238e210ecceca8d03bc543245b5cf737b6033
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

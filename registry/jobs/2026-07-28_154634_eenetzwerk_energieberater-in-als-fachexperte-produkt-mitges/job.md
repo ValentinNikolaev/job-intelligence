@@ -40,4 +40,4 @@ Festanstellung in Vollzeit, Standort Stuttgart mit Remote-Anteil nach Absprache.
 
 Flache Hierarchien, Weiterbildungsbudget.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

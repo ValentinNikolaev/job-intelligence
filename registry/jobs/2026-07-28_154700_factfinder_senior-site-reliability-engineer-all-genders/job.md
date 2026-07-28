@@ -1,6 +1,6 @@
 # Senior Site Reliability Engineer (all genders)
 
-Posted: 2026-07-28T13:00:31Z
+Posted: 2026-07-28T17:29:03Z
 
 ## Introduction
 
@@ -46,17 +46,17 @@ FACT-Finder builds product discovery technology for eCommerce and is trusted by 
 
 ## THE JOY OF WORKING WITH US
 
-- **Impact from day one**: Your work directly influences the revenue of leading eCommerce brands across Europe.
+- Impact from day one: Your work directly influences the revenue of leading eCommerce brands across Europe.
 
-- **Modern tech stack:** Kubernetes, Harvester, GitOps, auto-scaling, and an exciting path toward the cloud – with room to build things right.
+- Modern tech stack: Kubernetes, Harvester, GitOps, auto-scaling, and an exciting path toward the cloud – with room to build things right.
 
-- **AI-first mindset**: We use AI as a real part of our daily work, not as a buzzword.
+- AI-first mindset: We use AI as a real part of our daily work, not as a buzzword.
 
-- **Ownership & growth:** Clear responsibility, short decision paths, and the opportunity to actively shape your role.
+- Ownership & growth: Clear responsibility, short decision paths, and the opportunity to actively shape your role.
 
-- **Flexible work:** Hybrid work model with a focus on outcomes.
+- Flexible work: Hybrid work model with a focus on outcomes.
 
-- **Strong team:** Experienced engineers, an open feedback culture, and an environment where reliability is treated as a real engineering discipline.
+- Strong team: Experienced engineers, an open feedback culture, and an environment where reliability is treated as a real engineering discipline.
 
 ## Job Location
 

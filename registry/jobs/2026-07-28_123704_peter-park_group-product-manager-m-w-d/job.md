@@ -51,4 +51,4 @@ Bei Peter Park ist "Product" nicht einfach nur ein Unternehmensbereich. Hier tri
 **✅ Bereit für den nächsten Schritt?**
 Dann werde Teil unseres Teams – und gestalte mit uns die Zukunft! Bewirb dich einfach und schnell über den Button unten "Auf diese Stelle bewerben" Wir freuen uns, von Dir zu hören!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

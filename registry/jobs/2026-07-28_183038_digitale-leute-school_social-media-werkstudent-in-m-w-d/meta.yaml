@@ -1,0 +1,29 @@
+schema_version: 2
+id: 02b068e4-5313-4c3c-8e76-b38e33f63d1f
+title: Social Media Werkstudent:in (m/w/d)
+company: Digitale Leute School
+company_url: null
+location: Cologne
+remote: false
+employment_type: Working student
+sources:
+- source: arbeitnow
+  source_job_id: social-media-werkstudentin-cologne-328837
+  url: https://www.arbeitnow.com/jobs/companies/digitale-leute-school/social-media-werkstudentin-cologne-328837
+  metadata:
+    tags:
+    - Social Media Manager
+    job_types:
+    - Working student
+published_at: '2026-07-28T15:00:32Z'
+discovered_at: '2026-07-28T18:30:38Z'
+updated_at: '2026-07-28T18:30:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:38Z'
+analysis_priority: 0
+fingerprint: sha256:07e2201454de5a12e22ee42e2c8a1bba76036357b48e3cda247b8d09584ca328
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

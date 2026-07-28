@@ -1,0 +1,27 @@
+schema_version: 2
+id: a970f244-0640-4749-8512-a044c087432a
+title: Senior Data Analyst (f/m/x)
+company: sparetech
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-analyst-45138
+  url: https://www.arbeitnow.com/jobs/companies/sparetech/senior-data-analyst-45138
+  metadata:
+    tags:
+    - R&D
+published_at: '2026-07-28T17:56:40Z'
+discovered_at: '2026-07-28T18:29:58Z'
+updated_at: '2026-07-28T18:29:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:29:58Z'
+analysis_priority: 0
+fingerprint: sha256:93cda6afa5785567905a2c0519a308ae17b858ea9e7c782d44573ffac9cd9b4c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,24 @@
+schema_version: 2
+id: a3d09690-8a6b-4b79-9e87-6680a522f99d
+title: Senior Backend Engineer
+company: Texas State Library and Archives Commision
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '8620841542647179206'
+  url: https://jooble.org/away/8620841542647179206?p=1&pos=27&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=108&brelb=10&scr=2194.2117&bscr=2194.2117&aq=-2128655017422589456&elckey=2170818960345156668
+published_at: '2026-07-24T00:00:00.0000000'
+discovered_at: '2026-07-28T18:35:28Z'
+updated_at: '2026-07-28T18:35:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:35:28Z'
+analysis_priority: 0
+fingerprint: sha256:df804b4dbdbdd80741366186cf5186f3a57034ed1b1f8c79be134b0143cfe233
+data_source: jooble
+content_source: jooble
+company_content_source: null

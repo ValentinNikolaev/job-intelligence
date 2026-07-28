@@ -64,4 +64,4 @@ Unser Angebot:
 
 Die MESKRU GmbH ist ein IT-Beratungsunternehmen, das sich auf die Atlassian-Tools spezialisiert hat. Wir unterstützen unsere Kunden bei der Implementierung, Anpassung und Optimierung ihrer Atlassian-Tools, um beispielsweise das Projektmanagement und die Teamzusammenarbeit zu verbessern.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

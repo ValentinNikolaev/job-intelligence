@@ -1,0 +1,31 @@
+schema_version: 2
+id: d3393d0b-e805-4bf6-82cd-cc09319b7a03
+title: Dozent für IT-Sicherheit (m/w/d) – Regular/Senior in Teilzeit
+company: Distart Education GmbH
+company_url: null
+location: Leipzig
+remote: false
+employment_type: Part-time fixed-term, experienced
+sources:
+- source: arbeitnow
+  source_job_id: dozent-fur-it-sicherheit-regular-senior-in-teilzeit-leipzig-375558
+  url: https://www.arbeitnow.com/jobs/companies/distart-education-gmbh/dozent-fur-it-sicherheit-regular-senior-in-teilzeit-leipzig-375558
+  metadata:
+    tags:
+    - Education and training
+    - high school coursework
+    job_types:
+    - Part-time fixed-term
+    - experienced
+published_at: '2026-07-28T15:20:16Z'
+discovered_at: '2026-07-28T18:30:27Z'
+updated_at: '2026-07-28T18:30:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:27Z'
+analysis_priority: 0
+fingerprint: sha256:38de08790a1dc1924145ed486bbaaa062da4a9aa2ddb86fddd1d6c8edba6e4cc
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -70,4 +70,4 @@ Der Spaß an unserer Arbeit und das gemeinsame Feiern unserer Erfolge sind fest 
 - **Bürohunde**:
 Unsere Bürohunde tragen zu einer entspannten Arbeitsatmosphäre bei und freuen sich immer über eine extra Portion Streicheleinheiten.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

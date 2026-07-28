@@ -1,0 +1,31 @@
+schema_version: 2
+id: 32f3828b-b314-4d4a-be25-bfc10a2a2d6d
+title: Software Release & Configuration Manager (m/f/d)
+company: Quantum-Systems GmbH
+company_url: null
+location: Gilching
+remote: false
+employment_type: Full-time permanent, mid
+sources:
+- source: arbeitnow
+  source_job_id: software-release-configuration-manager-gilching-436987
+  url: https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/software-release-configuration-manager-gilching-436987
+  metadata:
+    tags:
+    - Engineering
+    - bachelor's degree
+    job_types:
+    - Full-time permanent
+    - mid
+published_at: '2026-07-28T15:20:16Z'
+discovered_at: '2026-07-28T18:30:23Z'
+updated_at: '2026-07-28T18:30:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:23Z'
+analysis_priority: 0
+fingerprint: sha256:56bd4566c3b8e34ae4d200cb191e2beeaee4b759126a133828159abac8d7c561
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

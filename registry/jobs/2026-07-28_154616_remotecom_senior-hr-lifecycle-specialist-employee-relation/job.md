@@ -160,4 +160,4 @@ At Remote, we embrace AI as a valuable tool while prioritizing human creativity 
 
 *Please note we accept applications on an ongoing basis. *
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,6 +1,6 @@
-# (Senior) Recruiting Specialist (m/w/d)
+# INDITEX | (Senior) Recruiting Specialist (m/w/d)
 
-Posted: 2026-07-28T12:30:30Z
+Posted: 2026-07-28T16:59:03Z
 
 Wir suchen DICH als **(Senior) Recruiting Specialist (m/w/d)** für unser INDITEX Office in Hamburg
 

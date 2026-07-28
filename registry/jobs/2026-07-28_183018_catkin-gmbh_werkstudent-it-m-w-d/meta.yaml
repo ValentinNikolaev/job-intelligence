@@ -1,0 +1,30 @@
+schema_version: 2
+id: b7bec9e8-64d6-435e-8801-25c89e338772
+title: Werkstudent IT (m/w/d)
+company: catkin GmbH
+company_url: null
+location: Dortmund
+remote: true
+employment_type: Working student
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-it-dortmund-470545
+  url: https://www.arbeitnow.com/jobs/companies/catkin-gmbh/werkstudent-it-dortmund-470545
+  metadata:
+    tags:
+    - Remote
+    - Development
+    job_types:
+    - Working student
+published_at: '2026-07-28T16:00:29Z'
+discovered_at: '2026-07-28T18:30:18Z'
+updated_at: '2026-07-28T18:30:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:18Z'
+analysis_priority: 0
+fingerprint: sha256:a4c86cf984be90bd7ecad1dbdb541e58191327543ea6877bb7e94a546526934b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

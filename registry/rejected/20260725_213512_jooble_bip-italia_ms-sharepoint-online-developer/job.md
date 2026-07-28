@@ -7,7 +7,12 @@ Posted: 2026-07-08T03:09:14.7870000
 - Category: stale
 - Reason: published_at 2026-07-08T03:09:14.7870000 is older than 7 days
 
-...principali piattaforme leader di mercato. 
-
-Sarai tu ad entrare nel nostro Team? 
-Siamo alla ricerca di figure con diversa **seniority **e con competenze di sviluppo del software incentrate su Sharepoint Online e opzionalmente su altri ambiti di sviluppo tradizionali...
+This position is at Bip Italia 
+The selection process will be fully managed by Bip Italia. 
+--
+Job Description 
+Entra nel nostro mondo. 
+Trasforma insieme a noi. 
+MS Sharepoint Online Developer 
+Quale sarà la tua sfida? 
+Sarai parte attiva della crescita...

@@ -56,4 +56,4 @@ Ehrlich gesagt: Es klingt nach Traumjob, ist aber richtig viel Arbeit.
 
 Wenn du Lust hast, wirklich reinzuhauen und dabei was zu erleben – melde dich!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

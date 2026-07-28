@@ -1,0 +1,31 @@
+schema_version: 2
+id: 5c3b460b-9464-46c4-aacf-b557f6d9770d
+title: Chief Engineer Autonomous Trucking (m/f/d)
+company: Quantum-Systems GmbH
+company_url: null
+location: München
+remote: false
+employment_type: Full-time permanent, senior manager / supervisor
+sources:
+- source: arbeitnow
+  source_job_id: chief-engineer-autonomous-trucking-munchen-490674
+  url: https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/chief-engineer-autonomous-trucking-munchen-490674
+  metadata:
+    tags:
+    - Engineering
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - senior manager / supervisor
+published_at: '2026-07-28T15:20:16Z'
+discovered_at: '2026-07-28T18:30:24Z'
+updated_at: '2026-07-28T18:30:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:24Z'
+analysis_priority: 0
+fingerprint: sha256:ebf62fafd081bbc1233daae8877c3545b0c2918881833355bf1c16ba7cf1706d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

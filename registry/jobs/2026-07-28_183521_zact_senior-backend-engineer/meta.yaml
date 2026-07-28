@@ -1,0 +1,24 @@
+schema_version: 2
+id: 95972621-f7b5-4bd5-9212-166c576d9982
+title: Senior Backend Engineer
+company: Zact
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-7543578372444393270'
+  url: https://jooble.org/away/-7543578372444393270?p=1&pos=21&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=60&brelb=10&scr=2256.3362&bscr=2256.3362&aq=-2128655017422589456&elckey=2170818960345156668
+published_at: '2026-07-26T00:00:00.0000000'
+discovered_at: '2026-07-28T18:35:21Z'
+updated_at: '2026-07-28T18:35:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:35:21Z'
+analysis_priority: 0
+fingerprint: sha256:0518bc1b1b06cf66339926b9b74e01f2a6e987d139bc00251dc487dc4928af63
+data_source: jooble
+content_source: jooble
+company_content_source: null

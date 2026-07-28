@@ -62,4 +62,4 @@ FACT-Finder entwickelt Product-Discovery-Technologie für den eCommerce und ist 
 
 Berlin, München, Pforzheim oder Stockholm (Hybrid)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

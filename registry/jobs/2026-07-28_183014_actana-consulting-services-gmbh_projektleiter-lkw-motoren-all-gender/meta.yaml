@@ -1,0 +1,29 @@
+schema_version: 2
+id: d3d4068f-399f-4434-8737-de00da0c8b9a
+title: Projektleiter LKW Motoren (all gender)
+company: Actana Consulting Services GmbH
+company_url: null
+location: Nuremberg
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: projektleiter-lkw-motoren-all-gender-nuremberg-275923
+  url: https://www.arbeitnow.com/jobs/companies/actana-consulting-services-gmbh/projektleiter-lkw-motoren-all-gender-nuremberg-275923
+  metadata:
+    tags:
+    - Project Management
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T16:30:54Z'
+discovered_at: '2026-07-28T18:30:14Z'
+updated_at: '2026-07-28T18:30:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:14Z'
+analysis_priority: 0
+fingerprint: sha256:61f94a7fc3f3eb2d8ff61858b1ac03d4a82b9f0b5ebbce190823fd806f93636a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

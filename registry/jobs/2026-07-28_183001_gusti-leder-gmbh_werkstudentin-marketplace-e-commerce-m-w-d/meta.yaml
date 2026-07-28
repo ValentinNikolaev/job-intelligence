@@ -1,0 +1,30 @@
+schema_version: 2
+id: 057fc190-eca7-437e-b9cc-f86b5be747fe
+title: Werkstudentin Marketplace / E-Commerce (m/w/d)
+company: Gusti Leder GmbH
+company_url: null
+location: Rostock, Mecklenburg-Vorpommern, Deutschland
+remote: false
+employment_type: Student college, parttime permanent
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-marketplace-e-commerce-rostock-454603
+  url: https://www.arbeitnow.com/jobs/companies/gusti-leder-gmbh/werkstudentin-marketplace-e-commerce-rostock-454603
+  metadata:
+    tags:
+    - Markets (IC)
+    job_types:
+    - Student college
+    - parttime permanent
+published_at: '2026-07-28T17:50:25Z'
+discovered_at: '2026-07-28T18:30:01Z'
+updated_at: '2026-07-28T18:30:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:01Z'
+analysis_priority: 0
+fingerprint: sha256:fbd8ca1f6b3c6815afaff482077cc267f9032b7b1e9e00870c7895add6397d46
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

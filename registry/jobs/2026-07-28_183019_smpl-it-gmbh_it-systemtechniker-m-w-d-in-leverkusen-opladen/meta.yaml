@@ -1,0 +1,29 @@
+schema_version: 2
+id: b60d5e92-6fda-482c-babb-eef381bd7a88
+title: IT-Systemtechniker (m/w/d) in Leverkusen-Opladen
+company: smpl-IT GmbH
+company_url: null
+location: Leverkusen
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: it-systemtechniker-in-leverkusen-opladen-313606
+  url: https://www.arbeitnow.com/jobs/companies/smpl-it-gmbh/it-systemtechniker-in-leverkusen-opladen-313606
+  metadata:
+    tags:
+    - System and Network Administration
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T15:30:27Z'
+discovered_at: '2026-07-28T18:30:19Z'
+updated_at: '2026-07-28T18:30:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:19Z'
+analysis_priority: 0
+fingerprint: sha256:a9c4fbbaa6d6e9c5e8e7a5f210a1e25f4c1b65ee26ef8fff02137ae41e99112e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

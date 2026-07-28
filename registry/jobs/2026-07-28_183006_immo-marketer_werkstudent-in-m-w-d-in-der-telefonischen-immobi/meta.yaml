@@ -1,0 +1,32 @@
+schema_version: 2
+id: f7410a9c-3d10-4d67-a818-8b71649dd3b1
+title: Werkstudent/-in (m/w/d) in der telefonischen Immobilienberatung (20 Stunden
+  / Woche)
+company: Immo-Marketer
+company_url: null
+location: Bochum
+remote: false
+employment_type: Full-time permanent, entry
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-in-in-der-telefonischen-immobilienberatung-20-stunden-woche-bochum-381167
+  url: https://www.arbeitnow.com/jobs/companies/immo-marketer/werkstudent-in-in-der-telefonischen-immobilienberatung-20-stunden-woche-bochum-381167
+  metadata:
+    tags:
+    - Marketing and pr
+    - vocational
+    job_types:
+    - Full-time permanent
+    - entry
+published_at: '2026-07-28T17:20:19Z'
+discovered_at: '2026-07-28T18:30:06Z'
+updated_at: '2026-07-28T18:30:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T18:30:06Z'
+analysis_priority: 0
+fingerprint: sha256:9bbe08f0b50db3839e00a8afd9494a0872c3f056430696cf571b8cb14d49be11
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
