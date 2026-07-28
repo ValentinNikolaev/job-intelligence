@@ -1,0 +1,29 @@
+schema_version: 2
+id: 178539c8-9588-4ac1-98fc-50f1abc34f31
+title: Steuerberater (m/w/d) in Dudeldorf, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Dudeldorf
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-dudeldorf-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-477671
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-dudeldorf-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-477671
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-28T06:30:29Z'
+discovered_at: '2026-07-28T09:54:07Z'
+updated_at: '2026-07-28T09:54:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:54:07Z'
+analysis_priority: 0
+fingerprint: sha256:3a4fabbcdb90e0b3da017042c041b8c98ce8a1044c4ad442534580fa69407d1b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

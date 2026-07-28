@@ -1,0 +1,30 @@
+schema_version: 2
+id: 9965e594-f4fd-4e37-ac23-228846cb0033
+title: Working Student Product Management Energy Products & Tariffs (m/f/d)
+company: 1KOMMA5˚
+company_url: null
+location: Berlin
+remote: false
+employment_type: Internship, no experience required / student
+sources:
+- source: arbeitnow
+  source_job_id: working-student-product-management-energy-products-tariffs-berlin-323094
+  url: https://www.arbeitnow.com/jobs/companies/1komma50/working-student-product-management-energy-products-tariffs-berlin-323094
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - Internship
+    - no experience required / student
+published_at: '2026-07-28T07:30:32Z'
+discovered_at: '2026-07-28T09:53:47Z'
+updated_at: '2026-07-28T09:53:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:47Z'
+analysis_priority: 0
+fingerprint: sha256:fbef2ed9325a2d6983626a82a1636bd5fbd06e69763eefe30637a72afd9b532b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

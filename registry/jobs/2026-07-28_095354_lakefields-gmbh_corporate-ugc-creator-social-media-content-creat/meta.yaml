@@ -1,0 +1,30 @@
+schema_version: 2
+id: 45af8730-5e1f-4ab8-a68b-2fd786dfc255
+title: Corporate UGC Creator / Social Media Content Creator (m/w/d)
+company: Lakefields GmbH
+company_url: null
+location: Gottmadingen
+remote: true
+employment_type: berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: corporate-ugc-creator-social-media-content-creator-gottmadingen-191200
+  url: https://www.arbeitnow.com/jobs/companies/lakefields-gmbh/corporate-ugc-creator-social-media-content-creator-gottmadingen-191200
+  metadata:
+    tags:
+    - Remote
+    - Social Media Manager
+    job_types:
+    - berufseinstieg
+published_at: '2026-07-28T07:00:51Z'
+discovered_at: '2026-07-28T09:53:54Z'
+updated_at: '2026-07-28T09:53:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:54Z'
+analysis_priority: 0
+fingerprint: sha256:339a9db151ed52504603cbebb050358f97cd8ebd7bbb27c79570a43952ca9dfb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

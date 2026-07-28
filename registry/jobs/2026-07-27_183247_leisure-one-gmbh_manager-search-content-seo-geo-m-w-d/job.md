@@ -80,4 +80,4 @@ Hast du die Leidenschaft, digitale Lösungen für die Gastgeber von morgen zu en
 
 Sende uns deinen Lebenslauf und ein kurzes Anschreiben, in dem du uns von deiner Erfahrung in der Steuerung technischer Teams und deinem Gespür für die Hotel- und Gastro-Welt erzählst.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

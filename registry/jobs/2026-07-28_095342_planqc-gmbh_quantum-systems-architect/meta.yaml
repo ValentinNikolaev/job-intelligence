@@ -1,0 +1,36 @@
+schema_version: 2
+id: 390adf47-6aeb-4f77-b37a-94daeaa5cbb4
+title: Quantum Systems Architect
+company: Planqc Gmbh
+company_url: null
+location: Garching b. München (DE)
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: quantum-systems-architect-garching-b-munchen-de-254326
+  url: https://www.arbeitnow.com/jobs/companies/planqc-gmbh/quantum-systems-architect-garching-b-munchen-de-254326
+  metadata:
+    tags:
+    - Quantum Systems Architect
+    - Systems engineering
+    - Technical Lead
+    - Architecture and design
+    - System Integration
+    - Technical program management
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-28T08:09:03Z'
+discovered_at: '2026-07-28T09:53:42Z'
+updated_at: '2026-07-28T09:53:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:42Z'
+analysis_priority: 0
+fingerprint: sha256:8b9942a6b056a82c1107f261187e11f1471bb67040240dedda1d277688a3aa6b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

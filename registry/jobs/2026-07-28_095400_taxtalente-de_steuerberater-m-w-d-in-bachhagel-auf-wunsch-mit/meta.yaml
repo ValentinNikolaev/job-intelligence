@@ -1,0 +1,29 @@
+schema_version: 2
+id: eb28c03b-4b36-498c-b8b4-6238430e6214
+title: Steuerberater (m/w/d) in Bachhagel, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Bachhagel
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-bachhagel-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-366212
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-bachhagel-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-366212
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-28T06:30:30Z'
+discovered_at: '2026-07-28T09:54:00Z'
+updated_at: '2026-07-28T09:54:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:54:00Z'
+analysis_priority: 0
+fingerprint: sha256:9e423d2375f16ee7505306c75b149ba9a11f683c6080e491f39b14951f385f48
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

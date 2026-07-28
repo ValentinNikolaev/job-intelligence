@@ -68,4 +68,4 @@ In unserem kleinen, aber hochmotivierten Team kannst du viel Verantwortung über
 
 Spar dir das klassische Anschreiben – wir wollen sehen, was du baust. Schick uns deinen Lebenslauf und, wenn du magst, dein GitHub, Portfolio oder ein Projekt, auf das du stolz bist. Den Rest klären wir im Gespräch. Wir freuen uns, loszulegen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

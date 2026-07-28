@@ -1,0 +1,29 @@
+schema_version: 2
+id: 1e72a7f1-7349-4954-8bac-4ee60dc53a78
+title: Technical Recruiter (m/f/d)
+company: Planqc Gmbh
+company_url: null
+location: Garching b. München (DE)
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: technical-recruiter-garching-b-munchen-de-71831
+  url: https://www.arbeitnow.com/jobs/companies/planqc-gmbh/technical-recruiter-garching-b-munchen-de-71831
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-28T08:09:03Z'
+discovered_at: '2026-07-28T09:53:40Z'
+updated_at: '2026-07-28T09:53:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:40Z'
+analysis_priority: 0
+fingerprint: sha256:6fe3937edb92054babf5e704998ddd7e16d91b91a91e2b1ccadde293ca135a54
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

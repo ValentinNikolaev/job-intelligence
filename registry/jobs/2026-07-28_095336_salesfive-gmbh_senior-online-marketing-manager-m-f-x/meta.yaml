@@ -1,0 +1,29 @@
+schema_version: 2
+id: f75dac9c-8050-46d0-a640-9325ec66b844
+title: (Senior) Online Marketing Manager (m/f/x)
+company: Salesfive GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-online-marketing-manager-munich-325972
+  url: https://www.arbeitnow.com/jobs/companies/salesfive-gmbh/senior-online-marketing-manager-munich-325972
+  metadata:
+    tags:
+    - Online Marketing
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T08:30:47Z'
+discovered_at: '2026-07-28T09:53:36Z'
+updated_at: '2026-07-28T09:53:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:36Z'
+analysis_priority: 0
+fingerprint: sha256:40e2c6ae00ebbcc7131fb1b13c7d0f439d981f2c3ed1f175ea0c031a1b738d29
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

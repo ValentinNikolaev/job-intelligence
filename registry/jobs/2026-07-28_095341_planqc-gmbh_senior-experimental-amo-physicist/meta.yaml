@@ -1,0 +1,37 @@
+schema_version: 2
+id: 1d3f7fe9-edbb-4537-b094-94695c6f40dc
+title: Senior Experimental AMO Physicist
+company: Planqc Gmbh
+company_url: null
+location: Garching b. München (DE)
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-experimental-amo-physicist-garching-b-munchen-de-483333
+  url: https://www.arbeitnow.com/jobs/companies/planqc-gmbh/senior-experimental-amo-physicist-garching-b-munchen-de-483333
+  metadata:
+    tags:
+    - Quantum Computing
+    - Neutral Atoms
+    - AMO Physics
+    - Experimental Physics
+    - Atom Physics
+    - Quantum Hardware
+    - Senior Physicist
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-28T08:09:03Z'
+discovered_at: '2026-07-28T09:53:41Z'
+updated_at: '2026-07-28T09:53:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:41Z'
+analysis_priority: 0
+fingerprint: sha256:edbb0e528ac7d7fb755c7cae7809be8e46e1321dc80a9efa364ce4cd736f186b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

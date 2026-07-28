@@ -1,0 +1,29 @@
+schema_version: 2
+id: 24592648-dfb5-4a28-81b8-78ac59179d1c
+title: Steuerberater (m/w/d) in Rhens, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Rhens
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-rhens-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-73831
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-rhens-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-73831
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-28T06:30:27Z'
+discovered_at: '2026-07-28T09:54:08Z'
+updated_at: '2026-07-28T09:54:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:54:08Z'
+analysis_priority: 0
+fingerprint: sha256:f18a0390ecfe147a8963e21f310c55c62e1a58e7f10e27ed1a89fa9bdaa7f8c4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

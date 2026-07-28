@@ -1,0 +1,29 @@
+schema_version: 2
+id: 776c21a6-746b-4d91-abc8-2740218f6eb9
+title: Steuerberater (m/w/d) in Öhringen, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+company_url: null
+location: Öhringen
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: steuerberater-in-ohringen-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-483633
+  url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-ohringen-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-483633
+  metadata:
+    tags:
+    - Directors
+    - Chief Executives
+published_at: '2026-07-28T06:30:29Z'
+discovered_at: '2026-07-28T09:54:04Z'
+updated_at: '2026-07-28T09:54:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:54:04Z'
+analysis_priority: 0
+fingerprint: sha256:62afbd374a5314b94a83b523afaa5c058699bf98920dda8c6d37a5131c18971a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

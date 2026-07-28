@@ -1,0 +1,31 @@
+schema_version: 2
+id: d7e00c06-d36d-49a8-9a8d-3fc91c43a9d7
+title: Senior Performance Marketing Manager – Performance Marketing, MMM & AI (m/w/d)
+company: benuta GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full-time fixed-term, experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-performance-marketing-manager-performance-marketing-mmm-ai-berlin-464406
+  url: https://www.arbeitnow.com/jobs/companies/benuta-gmbh/senior-performance-marketing-manager-performance-marketing-mmm-ai-berlin-464406
+  metadata:
+    tags:
+    - Marketing and pr
+    - bachelor's degree
+    job_types:
+    - Full-time fixed-term
+    - experienced
+published_at: '2026-07-28T07:20:19Z'
+discovered_at: '2026-07-28T09:53:50Z'
+updated_at: '2026-07-28T09:53:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:50Z'
+analysis_priority: 0
+fingerprint: sha256:675a9da0a7c1730afefc2c04b786fa5960c9a51b5c8a36ebb9e34f966307fa4b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -69,4 +69,4 @@ Ist das die Herausforderung, auf die du gewartet hast? Dann zögere nicht! Schic
 
 Wir sind schon gespannt auf dich!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

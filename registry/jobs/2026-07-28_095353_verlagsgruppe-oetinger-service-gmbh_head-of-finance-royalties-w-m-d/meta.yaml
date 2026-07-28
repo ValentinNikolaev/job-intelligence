@@ -1,0 +1,29 @@
+schema_version: 2
+id: c5510252-9c9a-4f75-9798-72a619db41e4
+title: Head of Finance & Royalties (w/m/d)
+company: Verlagsgruppe Oetinger Service GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: teamleitung
+sources:
+- source: arbeitnow
+  source_job_id: head-of-finance-royalties-hamburg-201017
+  url: https://www.arbeitnow.com/jobs/companies/verlagsgruppe-oetinger-service-gmbh/head-of-finance-royalties-hamburg-201017
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - teamleitung
+published_at: '2026-07-28T07:00:52Z'
+discovered_at: '2026-07-28T09:53:53Z'
+updated_at: '2026-07-28T09:53:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:53Z'
+analysis_priority: 0
+fingerprint: sha256:7cefc87479160e274cfeb2ad1579a59207a25c980afe0b86cc2ef03ac93b98b8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

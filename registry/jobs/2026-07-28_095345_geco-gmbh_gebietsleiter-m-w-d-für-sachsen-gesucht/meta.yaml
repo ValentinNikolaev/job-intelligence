@@ -1,0 +1,28 @@
+schema_version: 2
+id: 9953f01c-762b-40d3-aa83-eee909c53061
+title: Gebietsleiter (m/w/d) für Sachsen gesucht
+company: GECO GmbH
+company_url: null
+location: Coswig
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: gebietsleiter-fur-sachsen-gesucht-coswig-71292
+  url: https://www.arbeitnow.com/jobs/companies/geco-gmbh/gebietsleiter-fur-sachsen-gesucht-coswig-71292
+  metadata:
+    tags:
+    - Management
+    - Team Leader
+published_at: '2026-07-28T08:00:36Z'
+discovered_at: '2026-07-28T09:53:45Z'
+updated_at: '2026-07-28T09:53:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:45Z'
+analysis_priority: 0
+fingerprint: sha256:6d9c227e0f868d88815cc270abcc462372bca060bce715657066bc19de1e2914
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

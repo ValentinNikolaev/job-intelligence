@@ -1,0 +1,30 @@
+schema_version: 2
+id: 36ec0418-f09b-49c0-8a51-2e21e7bca88a
+title: (Junior) Data Engineer - Data Platform (m/f/d)
+company: 1KOMMA5˚
+company_url: null
+location: Berlin
+remote: true
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: junior-data-engineer-data-platform-berlin-266979
+  url: https://www.arbeitnow.com/jobs/companies/1komma50/junior-data-engineer-data-platform-berlin-266979
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - professional / experienced
+published_at: '2026-07-28T06:30:30Z'
+discovered_at: '2026-07-28T09:53:59Z'
+updated_at: '2026-07-28T09:53:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:59Z'
+analysis_priority: 0
+fingerprint: sha256:5ade59248e81795f3dec77cce858ef3e3d112272f632c8f8cf9e0be1a81a014c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

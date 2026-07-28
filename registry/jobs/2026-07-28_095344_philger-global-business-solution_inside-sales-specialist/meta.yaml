@@ -1,0 +1,32 @@
+schema_version: 2
+id: 9a875eee-ef15-4d17-bb40-3035caf8bedd
+title: Inside Sales Specialist
+company: Philger Global Business Solution
+company_url: null
+location: Dransfeld
+remote: true
+employment_type: Side, hilfstätigkeit / student
+sources:
+- source: arbeitnow
+  source_job_id: inside-sales-specialist-dransfeld-205252
+  url: https://www.arbeitnow.com/jobs/companies/philger-global-business-solution/inside-sales-specialist-dransfeld-205252
+  metadata:
+    tags:
+    - Remote
+    - Public Relations
+    - Corporate Communication
+    job_types:
+    - Side
+    - hilfstätigkeit / student
+published_at: '2026-07-28T08:00:36Z'
+discovered_at: '2026-07-28T09:53:44Z'
+updated_at: '2026-07-28T09:53:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T09:53:44Z'
+analysis_priority: 0
+fingerprint: sha256:a8f54dd413a2e80309ca7a211847eb0b15968ec6813c4fcd84f74bb18937e424
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

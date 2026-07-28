@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149503'
+source_url: https://jobicy.com/jobs/149503-partner-solutions-architect
+title: Partner Solutions Architect
+company: Nebius
+location: Europe
+published_at: '2026-07-21T09:20:04Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-21T09:20:04Z is older than 7 days
+updated_at: '2026-07-28T09:57:43Z'
+rejected_at: '2026-07-28T09:57:43Z'
