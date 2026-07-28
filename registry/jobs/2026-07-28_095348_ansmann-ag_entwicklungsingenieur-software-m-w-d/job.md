@@ -56,4 +56,4 @@ Wir freuen uns auf deine Bewerbung - gerne auch ohne "offizielles Anschreiben"
 
 Bei Fragen wende dich einfach an Corina: +49 6294 4204 6994
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

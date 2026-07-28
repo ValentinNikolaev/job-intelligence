@@ -22,17 +22,25 @@ Many internal and external teams depend on Juju to deliver their products and se
 ### What your day will look like
 
 - Contribute to the design, delivery, and support of features in a highly concurrent, highly distributed system that drives cloud automation and software operations at scale.
+
 - Collaborate proactively with a distributed team
+
 - Debug issues and interact with upstream communities publicly
+
 - Work with helpful and talented engineers including experts in many fields
+
 - Discuss ideas and collaborate on finding good solutions
+
 - Work from home with global travel for 2 to 4 weeks per year for internal and external events
 
 ### What we are looking for in you
 
 - Experience developing software using Go.
+
 - Excellent communication skills in the English language, both verbal and written, especially in online environments
+
 - An exceptional academic track record from both high school and preferably university
+
 - Willingness to travel up to 4 times a year for internal events
 
 ### Additional skills that you might also bring
@@ -40,16 +48,27 @@ Many internal and external teams depend on Juju to deliver their products and se
 The following skills may be helpful to you in the role, but we don't expect everyone to bring all of them.
 
 - Hands-on experience developing highly concurrent distributed systems
+
 - Experience with container technologies (Docker, LXD, Kubernetes, etc.)
+
 - Solid networking background and experience
+
 - Experience with agile software development methodologies
+
 - Experience in the Linux and open-source software world
+
 - Experience with configuration management software (Ansible, Chef, Puppet, et al.)
+
 - Working knowledge of cloud computing
+
 - Experience with software packaging (Debian, snaps)
+
 - Programming with, and operating, SQL and NoSQL databases
+
 - Experience working on a distributed team on an open source project -- even if that is community open source contributions.
+
 - Demonstrated track record of Open Source contributions
+
 - Prior experience developing plugins for Terraform
 
 ### What we offer you
@@ -57,13 +76,21 @@ The following skills may be helpful to you in the role, but we don't expect ever
 We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognise outstanding performance. In addition to base pay, we offer a performance-driven annual bonus. We provide all team members with additional benefits, which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.
 
 - Distributed work environment with twice-yearly team sprints in person - we’ve been working remotely since 2004!
+
 - Personal learning and development budget of USD 2,000 per year
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Maternity and paternity leave
+
 - Employee Assistance Programme
+
 - Opportunity to travel to new locations to meet colleagues from your team and others
+
 - Priority Pass for travel and travel upgrades for long haul company events
 
 ### **About [Canonical](https://himalayas.app/companies/canonical)**
@@ -72,8 +99,9 @@ We consider geographical location, experience, and performance in shaping compen
 
 [Canonical](https://himalayas.app/companies/canonical) has been a remote-first company since its inception in 2004.​ Work at [Canonical](https://himalayas.app/companies/canonical) is a step into the future, and will challenge you to think differently, work smarter, learn new skills, and raise your game. [Canonical](https://himalayas.app/companies/canonical) provides a unique window into the world of 21st-century digital business.
 
-### [Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
+###
+[Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. [Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 Originally posted on [Himalayas](https://himalayas.app)

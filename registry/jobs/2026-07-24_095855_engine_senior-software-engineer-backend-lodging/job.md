@@ -21,9 +21,13 @@ Posted: 2026-07-23T22:41:31Z
 ### **What You'll Do**
 
 - **Contribute across all three backend systems: Search, Integrations, and Bookings**
+
 - **Build and maintain business logic for the Partner API integration layer**
+
 - **Handle cross-team requests from Pricing, FinTech, Content, and Data — clarifying scope, driving to solutions**
+
 - **Partner closely with the PM, frontend lodging team, and supplier integrations lead**
+
 - **Own projects end to end: surface blockers, keep things moving, deliver**
 
 ### ****What We're Looking For****
@@ -31,10 +35,15 @@ Posted: 2026-07-23T22:41:31Z
 ### **Required:**
 
 - **Hands-on experience with AI-assisted development (Claude, Cursor, or equivalent) — we're expanding AI use across engineering**
+
 - **Cloud experience (AWS preferred)**
+
 - **Strong SQL and relational database fundamentals**
+
 - **A self-directed working style — you don't need daily direction; you find the work and drive it forward**
+
 - **Comfort with ambiguity — cross-team requests rarely arrive neatly scoped, and you know how to ask the right questions**
+
 - **Adaptable to shifting priorities — lodging moves fast, and plans change**
 
 ### **Nice to Have:**
@@ -46,7 +55,9 @@ Posted: 2026-07-23T22:41:31Z
 ****The [Engine](https://himalayas.app/companies/engine) Edge: Perks & Compensation**We believe in rewarding great work with great benefits:**
 
 - ****Compensation:** Competitive base pay tied to role and experience, with opportunities for bonuses, commissions, and equity.**
-- ****Benefits:** Check out our full list at[](https://engine.com/culture)[engine.com/culture](http://engine.com/culture).**
+
+- ****Benefits:** Check out our full list at.**
+
 - ****Environments for Success: **Different roles have different needs in terms of the environments that drive success which is why we have a hybrid-hub model. Whether you are in one of our amazing offices or fully remote, we’ll make sure you have what you need to succeed.**
 
 ***Perks and benefits may vary based on employment type, location, and more.***

@@ -1,6 +1,6 @@
 # Data & AI Engineer (m/w/d)
 
-Posted: 2026-07-27T21:30:28Z
+Posted: 2026-07-28T10:29:04Z
 
 **Du liebst komplexe Daten, baust robuste Pipelines und willst KI auf echte Probleme loslassen – nicht auf Spielzeug-Datensätze? Dann komm zu MediPulse!**
 

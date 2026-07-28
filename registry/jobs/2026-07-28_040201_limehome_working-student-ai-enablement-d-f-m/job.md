@@ -62,4 +62,4 @@ Have** experience with Python and/or TypeScript**, including university, profess
 
 We invest heavily in growth, with a limitless learning budget and plenty of ways to learn from each other, from pairing to regular tech talks. We value impact, continuous improvement, and learning from what doesn’t work. Within we’re 30 people across 7 teams. Our infrastructure runs on AWS and is orchestrated with CDK. Our core languages are TypeScript and Python, combined with modern low-code tools and AI-powered automations so we spend our time where it counts.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

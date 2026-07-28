@@ -28,25 +28,37 @@ If you are someone who can navigate complex new technical challenges, learn quic
 ### What your day will look like
 
 - Represent [Canonical](https://himalayas.app/companies/canonical), its solutions and software to partners.
+
 - Develop a deep understanding of silicon partner strategies, technologies and roadmaps and identify overlap with [Canonical](https://himalayas.app/companies/canonical)’s current and future products.
+
 - Work cross-functionally with engineering, product, marketing and sales teams to facilitate new business, leading definition of joint products, solutions and complex programs relying heavily on your communicating and influencing skills.
+
 - Ensure that robust project plans are created, tracked, and executed.
+
 - Develop joint Go To Market strategy and campaigns with silicon partners, manage market messaging, collateral and launch plans across products.
+
 - Negotiate successful contracts.
 
 ### What we are looking for in you
 
 - B.A / B.S / B.E degree in science, technology and/or engineering.
+
 - Fundamental understanding of the semiconductor industry and ecosystem.
+
 - Experience in software and system architecture is preferred.
+
 - Customer-facing experience in business development, technology strategy or similar functions.
+
 - Excellent communication skills; ability to grasp complex material and synthesize key points.
+
 - Ability to think and work at both strategic and tactical levels
+
 - Disciplined and self motivated for a remote-first workplace environment.
 
 ### Additional skills that you might also bring
 
 - Experience with open source software and open source business models is preferred.
+
 - Team leadership or program management experience.
 
 ### What we offer you
@@ -56,13 +68,21 @@ Your base pay will depend on various factors including your geographical locatio
 In addition to a competitive base pay, we provide all team members with additional benefits, which reflect our values and ideals. Please note that additional benefits may apply depending on the work location and, for more information on these, please ask your Talent Partner.
 
 - Fully remote working environment - we’ve been working remotely since 2004!
+
 - Personal learning and development budget of 2,000USD per annum
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Parental Leave
+
 - Employee Assistance Programme
+
 - Opportunity to travel to new locations to meet colleagues at ‘sprints’
+
 - Priority Pass for travel and travel upgrades for long haul company events
 
 ### **About [Canonical](https://himalayas.app/companies/canonical)**
@@ -71,6 +91,6 @@ In addition to a competitive base pay, we provide all team members with addition
 
 ### **[Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer**
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products.[ Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 Originally posted on [Himalayas](https://himalayas.app)

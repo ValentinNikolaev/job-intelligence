@@ -21,19 +21,26 @@ As a Technical Project Manager, you will be responsible for overseeing the end-t
 
 ### **Key Responsibilities:**
 
-- **Feature Delivery Management**: Own the delivery of features and updates from planning to release, ensuring alignment with business goals and customer needs.
+-
+**Feature Delivery Management**: Own the delivery of features and updates from planning to release, ensuring alignment with business goals and customer needs.
 
-- **Project Coordination**: Work closely with developers, designers, product managers, and other stakeholders to define project objectives, deliverables, and success criteria.
+-
+**Project Coordination**: Work closely with developers, designers, product managers, and other stakeholders to define project objectives, deliverables, and success criteria.
 
-- **End-to-End Process Ownership**: Drive the execution of projects across all stages of the Software Development Life Cycle (SDLC), ensuring efficient handoffs and collaboration between teams.
+-
+**End-to-End Process Ownership**: Drive the execution of projects across all stages of the Software Development Life Cycle (SDLC), ensuring efficient handoffs and collaboration between teams.
 
-- **Risk Management**: Identify potential risks early and implement mitigation strategies to keep projects on track.
+-
+**Risk Management**: Identify potential risks early and implement mitigation strategies to keep projects on track.
 
-- **Stakeholder Communication**: Provide transparent updates on project status, risks, and progress to stakeholders and senior management through detailed reporting.
+-
+**Stakeholder Communication**: Provide transparent updates on project status, risks, and progress to stakeholders and senior management through detailed reporting.
 
-- **Third-Party and Integrations Management**: Oversee vendor relationships, manage third-party API integrations, and address compatibility or performance issues.
+-
+**Third-Party and Integrations Management**: Oversee vendor relationships, manage third-party API integrations, and address compatibility or performance issues.
 
-- **Process and Continuous Improvement**: Optimize project management processes and foster learning through post-project reviews and feedback implementation.
+-
+**Process and Continuous Improvement**: Optimize project management processes and foster learning through post-project reviews and feedback implementation.
 
 ### **About You:**
 

@@ -17,7 +17,7 @@ Posted: 2026-06-21T15:38:56Z
 
 ****We’re looking for a highly skilled and innovative **Senior Full-Stack Engineer** to architect high-performance web applications and accelerate our development velocity. You’ll play a pivotal role in bridging the gap between legacy systems and a modern, scalable future, working across the full stack to deliver seamless experiences for millions of students.****
 
-****You will own the technical implementation of our core products using [Nuxt.js](http://Nuxt.js) and [Node.js/Python.](http://Node.js/Python.) Beyond just coding, this role champions efficiency: you will leverage advanced **AI coding assistants** (like Cursor and Antigravity) and Model Context Protocols (MCPs) to set new standards for code quality and speed. If you are passionate about modernizing stacks, mentoring developers, and utilizing AI to code smarter, this is the role for you.****
+****You will own the technical implementation of our core products using and Beyond just coding, this role champions efficiency: you will leverage advanced **AI coding assistants** (like Cursor and Antigravity) and Model Context Protocols (MCPs) to set new standards for code quality and speed. If you are passionate about modernizing stacks, mentoring developers, and utilizing AI to code smarter, this is the role for you.****
 
 ### ******What You’ll Do******
 

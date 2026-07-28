@@ -1,0 +1,30 @@
+schema_version: 2
+id: 10f13218-1007-48d5-8d32-7cc8f07e6793
+title: Working Student Software Engineer (m/f/d) - Security Startup
+company: Variant Security
+company_url: null
+location: Bochum
+remote: false
+employment_type: Working student, professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: working-student-software-engineer-security-startup-bochum-132194
+  url: https://www.arbeitnow.com/jobs/companies/variant-security/working-student-software-engineer-security-startup-bochum-132194
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - Working student
+    - professional / experienced
+published_at: '2026-07-28T10:30:40Z'
+discovered_at: '2026-07-28T12:37:18Z'
+updated_at: '2026-07-28T12:37:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:18Z'
+analysis_priority: 0
+fingerprint: sha256:57db844fb29470a74927be4468303136f975656c10fc53bbc3feb7fec9215d34
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

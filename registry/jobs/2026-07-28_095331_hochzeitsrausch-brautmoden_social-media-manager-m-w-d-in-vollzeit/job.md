@@ -42,4 +42,4 @@ Höchste Zeit für einen Traumjob in der faszinierenden Welt der Brautmode – u
 
 Verwirkliche deine Kreativität als Social-Media-Manager (m/w/d) in Vollzeit bei hochzeitsrausch Brautmoden, der führenden Brautmode-Marke. Gestalte unvergessliche Momente und lass Herzen höher schlagen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

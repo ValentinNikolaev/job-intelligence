@@ -81,4 +81,4 @@ Du musst nicht alles davon mitbringen – wichtiger ist uns deine Senior-Erfahru
 - After Work mit Kaltgetränk deiner Wahl – weil starke Teams nicht nur im Daily entstehen.
 - Gut versorgt durch den Tag. :) Ein gut gefüllter Kühlschrank mit Snacks und einer großen Auswahl an Getränken steht jederzeit bereit.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

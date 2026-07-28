@@ -1,0 +1,29 @@
+schema_version: 2
+id: fe07f5c4-3fd0-41cc-b4f7-0d3de339159d
+title: Ingenieur*in (m/w/x) für Versorgungstechnik / HLKS
+company: rauschenberg ingenieure gmbh
+company_url: null
+location: Burghaun
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: ingenieurin-fur-versorgungstechnik-hlks-burghaun-277710
+  url: https://www.arbeitnow.com/jobs/companies/rauschenberg-ingenieure-gmbh/ingenieurin-fur-versorgungstechnik-hlks-burghaun-277710
+  metadata:
+    tags:
+    - Building
+    - Supply
+    - Safety Services Engineering
+published_at: '2026-07-28T10:00:49Z'
+discovered_at: '2026-07-28T12:37:22Z'
+updated_at: '2026-07-28T12:37:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:22Z'
+analysis_priority: 0
+fingerprint: sha256:8d14f2a34cb6b474d32739218ee33510016dc487df3ad8616cb2362becf96569
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

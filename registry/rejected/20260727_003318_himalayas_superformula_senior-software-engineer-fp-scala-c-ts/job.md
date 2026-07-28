@@ -20,6 +20,7 @@ If you're passionate about building great software with great people, we'd love 
 -
 
 ### 4+ years building production software
+
 -
 
 Strong experience with object-oriented or functional programming

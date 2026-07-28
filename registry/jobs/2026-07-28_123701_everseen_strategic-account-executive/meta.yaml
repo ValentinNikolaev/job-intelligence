@@ -1,0 +1,29 @@
+schema_version: 2
+id: 2ad9eb3b-d2b1-4de6-bf81-db8ffafad653
+title: Strategic Account Executive
+company: Everseen
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full Time Permanent
+sources:
+- source: arbeitnow
+  source_job_id: strategic-account-executive-berlin-490230
+  url: https://www.arbeitnow.com/jobs/companies/everseen/strategic-account-executive-berlin-490230
+  metadata:
+    tags:
+    - Revenue
+    job_types:
+    - Full Time Permanent
+published_at: '2026-07-28T11:24:51Z'
+discovered_at: '2026-07-28T12:37:01Z'
+updated_at: '2026-07-28T12:37:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:01Z'
+analysis_priority: 0
+fingerprint: sha256:f4ec7b9b77450101969adab448258870bf09beff429a1837ee519b417730c327
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

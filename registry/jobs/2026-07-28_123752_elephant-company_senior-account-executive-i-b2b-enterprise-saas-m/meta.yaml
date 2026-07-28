@@ -1,0 +1,30 @@
+schema_version: 2
+id: c56150c6-6251-42f4-90a5-ce40ff64d661
+title: Senior Account Executive I B2B Enterprise SaaS (m/w/d)
+company: Elephant Company
+company_url: null
+location: Berlin
+remote: true
+employment_type: teamleitung
+sources:
+- source: arbeitnow
+  source_job_id: senior-account-executive-i-b2b-enterprise-saas-berlin-214544
+  url: https://www.arbeitnow.com/jobs/companies/elephant-company/senior-account-executive-i-b2b-enterprise-saas-berlin-214544
+  metadata:
+    tags:
+    - Remote
+    - Finance
+    job_types:
+    - teamleitung
+published_at: '2026-07-28T09:00:37Z'
+discovered_at: '2026-07-28T12:37:52Z'
+updated_at: '2026-07-28T12:37:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:52Z'
+analysis_priority: 0
+fingerprint: sha256:d4a02e0047aa50d9ae024adaeea19ff1ce37917dd10c15721f4d3829008038f8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

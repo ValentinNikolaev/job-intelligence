@@ -12,28 +12,43 @@ Cerchiamo nuovi collaboratori (mid/senior) da inserire nel nostro team di svilup
 ### Competenze richieste:
 
 - Esperienza con Ruby on Rails
+
 - Esperienza nello sviluppo ed integrazione di API
+
 - Esperienza con framework MVC, in particolare Rails
+
 - Object-oriented programming (OOP), strutture dati ed algoritmi
+
 - Esperienza con Database SQL
+
 - Git
 
 ### Punti bonus:
 
 - Conoscenza di architetture a microservizi
+
 - 3-5 anni di esperienza in sviluppo di backend in Ruby o altri linguaggi (PHP, Java, C#, Python, Node.js)
+
 - Familiarita' con concetti e librerie frontend, in particolare React
+
 - Conoscenza di Kubernetes
+
 - Conoscenza di Docker
+
 - Conoscenza di NoSQL (Cassandra)
+
 - Esperienza con piattaforme Cloud (AWS)
 
 È necessaria una buona conoscenza della lingua inglese.
 
 - Lavoro hybrid (1-4 giorni al mese in ufficio: Via degli Scalpellini, 6, 50055 Lastra a Signa FI)
+
 - Assicurazione sanitaria
+
 - Strumentazione Apple
+
 - Orario flessibile
+
 - Ferie quando vuoi, non facciamo chiusure
 
 ### Contratto a tempo indeterminato.

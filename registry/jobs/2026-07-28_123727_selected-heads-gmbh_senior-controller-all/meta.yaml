@@ -1,0 +1,29 @@
+schema_version: 2
+id: e23e7f00-5021-4e46-b328-3852c7cd1766
+title: Senior Controller (all)
+company: selected heads GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-controller-all-berlin-383814
+  url: https://www.arbeitnow.com/jobs/companies/selected-heads-gmbh/senior-controller-all-berlin-383814
+  metadata:
+    tags:
+    - Controlling
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T10:00:48Z'
+discovered_at: '2026-07-28T12:37:27Z'
+updated_at: '2026-07-28T12:37:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:27Z'
+analysis_priority: 0
+fingerprint: sha256:a577c050ff0a52eac1262660f383ea17fc5c85483eba9af7256a983e309cd478
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

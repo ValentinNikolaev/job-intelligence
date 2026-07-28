@@ -44,6 +44,7 @@ We're seeking talented Node.js engineers with a passion for P2P, an interest in 
 -
 
 ### Kademlia DHT.
+
 -
 
 Distributed indexing and the relevant research literature: skip graphs, prefix hash trees, m-LIGHT, locality sensitive hashing.
@@ -51,6 +52,7 @@ Distributed indexing and the relevant research literature: skip graphs, prefix h
 -
 
 ### Distributed databases and CRDTs.
+
 -
 
 Networking for P2P: TCP/IP, transport-layer connection orientation and reliability models, multiplexing, NAT traversal, encryption.

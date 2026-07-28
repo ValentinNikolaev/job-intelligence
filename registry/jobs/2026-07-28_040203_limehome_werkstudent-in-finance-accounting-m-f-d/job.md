@@ -80,4 +80,4 @@ Du kannst uns idealerweise für etwa 16-20 Stunden pro Woche unterstützen (flex
 
 Limehome ist ein führender, technologiebasierter Hospitality-Betreiber, der funktional gestaltete Designunterkünfte in ganz Europa anbietet. Durch den Einsatz seiner proprietären Technologie ermöglicht Limehome einen reibungslosen und komfortablen Aufenthalt mit einem nahtlosen digitalen Gästeerlebnis für Geschäfts- und Urlaubsreisende. Gegründet im Jahr 2018, beschäftigt Limehome heute über 300 Mitarbeitende und zählt über 10.000 Limehome Apartments und Hotelzimmer in 150 Städten in 13 europäischen Ländern.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

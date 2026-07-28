@@ -13,7 +13,7 @@ The company is founder-led, profitable, and growing.
 
 We are hiring a **Staff-level Software Engineer for Identity Management** to work on authorization and access management across [Canonical](https://himalayas.app/companies/canonical)'s suite of enterprise products and web services, using Go (Golang) and Python.
 
-As a software engineer for Identity Management products of [Canonical](https://himalayas.app/companies/canonical), you will modernize and expand the capabilities of the identity management solutions we use for authentication and authorization in our products, as well as our[canonical.com](https://canonical.com) and[ubuntu.com](https://ubuntu.com) websites. Your work on Identity Management will directly impact the users of all [Canonical](https://himalayas.app/companies/canonical) products. In addition, you will help write [Juju](https://juju.is/) charms to manage operational concerns.
+As a software engineer for Identity Management products of [Canonical](https://himalayas.app/companies/canonical), you will modernize and expand the capabilities of the identity management solutions we use for authentication and authorization in our products, as well as our and websites. Your work on Identity Management will directly impact the users of all [Canonical](https://himalayas.app/companies/canonical) products. In addition, you will help write Juju charms to manage operational concerns.
 
 Technical excellence and a background in software engineering are necessary prerequisites for this role. You will be expected to own the design and delivery of the system, facilitate integrations and work with your team on strategy and execution.
 
@@ -22,31 +22,49 @@ Technical excellence and a background in software engineering are necessary prer
 ### **The role entails**
 
 - Collaborate proactively with a distributed team, leading technical efforts and discussions
+
 - Write clean web service APIs to support both CLI and web frontend clients, using Go (Golang) and Python
+
 - Design and implement new features and enhancements from spec to production and ongoing operations at scale
+
 - Review code produced by other engineers, helping set quality standards
+
 - Discuss ideas and collaborate on finding good solutions
+
 - Create and enhance management, authentication and authorization API endpoints
+
 - Craft end-user authentication flows from design to implementation
-- Write [Juju](https://juju.is/) charms (operators) to manage operational concerns
+
+- Write Juju charms (operators) to manage operational concerns
+
 - Modernize the identity stack of our websites and products by driving adoption of best-of-breed IAM technologies
+
 - Deliver great products that users love by maintaining a culture of quality and engineering excellence
+
 - Work from home with global travel 2 to 4 weeks per year for internal and external events
 
 ### **What we are looking for in you**
 
 - You are a staff-level or experienced senior software engineer, with specific experience building identity and access management products
+
 - You are familiar with the open source software, standards, protocols and concepts in the identity space (e.g. OpenID, OAuth, LDAP)
+
 - You have experience implementing authorization frameworks in distributed systems
+
 - You value secure coding and standards, and enjoy working on teams that do the same
+
 - You are comfortable with Ubuntu as a development and deployment platform
 
 ### In addition:
 
 - Exceptional academic track record from both high school and university
+
 - Undergraduate degree in a technical subject or a compelling narrative about your alternative chosen path
+
 - Professional written and spoken English with excellent presentation skills
+
 - Excellent interpersonal skills, curiosity, flexibility, and accountability
+
 - Ability to travel internationally twice a year for company events up to two weeks long
 
 ### **What we offer colleagues**
@@ -54,21 +72,30 @@ Technical excellence and a background in software engineering are necessary prer
 We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognize outstanding performance. In addition to base pay, we offer a performance-driven annual bonus or commission. We provide all team members with additional benefits which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.
 
 - Distributed work environment with twice-yearly team conferences in person
+
 - Personal learning and development budget of USD 2,000 per year
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Maternity and paternity leave
+
 - Team Member Assistance Program & Wellness Platform
+
 - Opportunity to travel to new locations to meet colleagues
+
 - Priority Pass and travel upgrades for long-haul company events
 
 ### **About [Canonical](https://himalayas.app/companies/canonical)**
 
 [Canonical](https://himalayas.app/companies/canonical) is a pioneering tech firm at the forefront of the global move to open source. As the company that publishes Ubuntu, one of the most important open-source projects and the platform for AI, IoT, and the cloud, we are changing the world of software. We recruit on a global basis and set a very high standard for people joining the company. We expect excellence; in order to succeed, we need to be the best at what we do. Most colleagues at [Canonical](https://himalayas.app/companies/canonical) have worked from home since our inception in 2004.​ Working here is a step into the future and will challenge you to think differently, work smarter, learn new skills, and raise your game.
 
-### [Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
+###
+[Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products.[ Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 Originally posted on [Himalayas](https://himalayas.app)

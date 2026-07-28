@@ -29,9 +29,13 @@ La risorsa lavorerà a stretto contatto con il team di sviluppo dei nostri clien
 ### Requisiti:
 
 - Conoscenza Node.js (Express, NestJS) oppure .NET, Java o Python
+
 - Conoscenza di React, Next.js, Angular oppure Vue.js
+
 - Conoscenza di uno dei cloud
+
 - Esperienza con metodologie di sviluppo Agile (Scrum e Kanban)
+
 - Implementazione di chatbot AI e assistenti virtuali
 
 ### Vantaggi
@@ -39,7 +43,9 @@ La risorsa lavorerà a stretto contatto con il team di sviluppo dei nostri clien
 ### Cosa offriamo?
 
 - 💸 Retribuzione: per questa opportunità siamo aperti a valutare risorse freelance in partita iva.
+
 - 🤝 Ambiente di lavoro flessibile e inclusivo.
+
 - 🚀 Opportunità di crescita in un ambiente giovane e dinamico.
 
 *La selezione è rivolta a candidati ambosessi (L. 903/77). I dati personali verranno trattati secondo il Regolamento Ue 2016/679, noto come GDPR - General Data Protection Regulation.*

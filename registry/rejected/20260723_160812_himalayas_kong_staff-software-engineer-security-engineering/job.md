@@ -55,6 +55,7 @@ Coach and mentor [Kong](https://himalayas.app/companies/kong) Runtime engineers 
 -
 
 ### Expertise in Golang or Rust.
+
 -
 
 Expertise in security at all levels of the TCP/IP stack.
@@ -81,6 +82,6 @@ Outstanding communication skills, with the ability to articulate complex securit
 
 ### About [Kong](https://himalayas.app/companies/kong):
 
-[Kong](https://himalayas.app/companies/kong) Inc., a leading developer of API and AI connectivity technologies, is building the infrastructure that powers the agentic era. Trusted by the Fortune 500 and startups alike, [Kong](https://himalayas.app/companies/kong)'s unified API and AI platform, [Kong](https://himalayas.app/companies/kong) Konnect, enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI models. For more information, visit [www.konghq.com](http://www.konghq.com).
+[Kong](https://himalayas.app/companies/kong) Inc., a leading developer of API and AI connectivity technologies, is building the infrastructure that powers the agentic era. Trusted by the Fortune 500 and startups alike, [Kong](https://himalayas.app/companies/kong)'s unified API and AI platform, [Kong](https://himalayas.app/companies/kong) Konnect, enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI models. For more information, visit .
 
 Originally posted on [Himalayas](https://himalayas.app)

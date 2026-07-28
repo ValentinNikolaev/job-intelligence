@@ -1,0 +1,29 @@
+schema_version: 2
+id: 6c681915-3414-40ad-bbb1-689810c8313b
+title: Techniker*in / Meister*in (m/w/x) für Versorgungstechnik / HLKS
+company: rauschenberg ingenieure gmbh
+company_url: null
+location: Burghaun
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: technikerin-meisterin-fur-versorgungstechnik-hlks-burghaun-135727
+  url: https://www.arbeitnow.com/jobs/companies/rauschenberg-ingenieure-gmbh/technikerin-meisterin-fur-versorgungstechnik-hlks-burghaun-135727
+  metadata:
+    tags:
+    - Building
+    - Supply
+    - Safety Services Engineering
+published_at: '2026-07-28T10:00:48Z'
+discovered_at: '2026-07-28T12:37:25Z'
+updated_at: '2026-07-28T12:37:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:25Z'
+analysis_priority: 0
+fingerprint: sha256:ad43fbee5fd903cc2c557e2b4d5e60ca2a73bac5b6c960d63e040d23db24accf
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

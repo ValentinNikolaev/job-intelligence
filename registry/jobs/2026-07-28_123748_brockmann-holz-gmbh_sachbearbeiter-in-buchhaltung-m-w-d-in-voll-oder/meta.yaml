@@ -1,0 +1,29 @@
+schema_version: 2
+id: 9f21eb6c-417e-418f-b333-386f7d268b45
+title: Sachbearbeiter:in Buchhaltung (m/w/d) in Voll- oder Teilzeit
+company: Brockmann-Holz GmbH
+company_url: null
+location: Krefeld
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: sachbearbeiterin-buchhaltung-in-voll-oder-teilzeit-krefeld-358888
+  url: https://www.arbeitnow.com/jobs/companies/brockmann-holz-gmbh/sachbearbeiterin-buchhaltung-in-voll-oder-teilzeit-krefeld-358888
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T09:00:38Z'
+discovered_at: '2026-07-28T12:37:48Z'
+updated_at: '2026-07-28T12:37:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:48Z'
+analysis_priority: 0
+fingerprint: sha256:b464f40c451dc041dd3beae8661d4a09b3aee5982ef32f15511d27a8daf52b9c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

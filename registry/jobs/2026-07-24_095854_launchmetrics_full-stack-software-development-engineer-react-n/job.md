@@ -81,6 +81,7 @@ Experience with, or strong interest in, AI-assisted development workflows (e.g. 
 -
 
 ### Strong expertise with React
+
 -
 
 Experience building a RESTful API, or even better, a GraphQL API
@@ -171,6 +172,6 @@ Team fit with the engineers and peers you'd build alongside.
 
 ### OUR COMMITMENT
 
-[Launchmetrics](https://himalayas.app/companies/launchmetrics) is proud to be an [**Equal Opportunity Employer**](https://careers.launchmetrics.com/pages/equal-employer-opportunity?utm_campaign=page_3333730_cta_25120416&utm_content=https%3A%2F%2Fcareers.launchmetrics.com&utm_medium=cta-block&utm_source=teamtailor-page) building a diverse and inclusive workforce. If there is anything extra we can do to help you feel at ease during your interview process, please let the PeopleOps team member you’ll be meeting with know.
+[Launchmetrics](https://himalayas.app/companies/launchmetrics) is proud to be an **Equal Opportunity Employer** building a diverse and inclusive workforce. If there is anything extra we can do to help you feel at ease during your interview process, please let the PeopleOps team member you’ll be meeting with know.
 
 Originally posted on [Himalayas](https://himalayas.app)

@@ -24,22 +24,34 @@ This role reports to one of our Directors of Engineering and base compensation m
 ### What you'll do:
 
 - Lead a team (or teams) of 5-10 engineers wholly responsible for a specific product vertical
+
 - Work with with PMs and Designers to develop and execute a roadmap for your team
+
 - Help your direct reports grow their careers via technical mentorship, one on ones, and reviews
+
 - Facilitate an independent, empowered, and high-performing team culture
+
 - Help grow the entire engineering org by interviewing and making hiring decisions
 
 ### Qualifications:
 
 - At least 6 years of engineering experience including 3+ years of experience in a management role
+
 - Experience in a leadership role at a start-up
+
 - Passion for building and leading diverse and inclusive engineering teams
+
 - Excellent verbal and written communication skills
+
 - Bias towards action and a proven track record of getting things done
+
 - Active interest and proven experience in developing process, culture, and morale
-- **You might also have:**
+
+-
+**You might also have:**
 
 - A project you love talking about
+
 - An interest in starting your own company
 
 *We prioritize candidate safety. Please be aware that official communication will only come from @medallion.co email addresses.*

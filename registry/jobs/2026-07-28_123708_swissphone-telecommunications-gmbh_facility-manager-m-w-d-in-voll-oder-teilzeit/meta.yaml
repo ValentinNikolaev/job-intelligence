@@ -1,0 +1,27 @@
+schema_version: 2
+id: 3e7c4ea3-32ae-489e-bf8f-19452880d670
+title: Facility Manager (m/w/d) in Voll- oder Teilzeit
+company: Swissphone Telecommunications GmbH
+company_url: null
+location: Gundelfingen
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: facility-manager-in-voll-oder-teilzeit-gundelfingen-19879
+  url: https://www.arbeitnow.com/jobs/companies/swissphone-telecommunications-gmbh/facility-manager-in-voll-oder-teilzeit-gundelfingen-19879
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-28T11:00:36Z'
+discovered_at: '2026-07-28T12:37:08Z'
+updated_at: '2026-07-28T12:37:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:08Z'
+analysis_priority: 0
+fingerprint: sha256:2f01ac7ab2205945f69cf5a2cbf903aeeb8bd7b988c081b2d161a0a115c95cc9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

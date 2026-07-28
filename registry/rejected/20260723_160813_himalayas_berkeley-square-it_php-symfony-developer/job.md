@@ -18,25 +18,33 @@ L'azienda é impegnata a creare soluzioni cutting-edge per affrontare le sfide t
 ### Competenze richieste:
 
 - Esperienza nello sviluppo di Web Service SOAP e RESTful
+
 - PHP, Symfony, Doctrine
 
 ### Conoscenza di:
 
 - sistemi di versionamento (git o svn)
+
 - Object-oriented programming OOP
+
 - Unit test, Integration test e test automatici
+
 - Docker, Docker Compose
 
 ### Nice to have:
 
 - conoscenza ed utilizzo design pattern (MVC, singleton, factory etc)
+
 - best practice in materia di security
+
 - AWS o servizi di altri cloud provider (Azure, GCP)
 
 ### È considerata un plus lesperienza in:
 
 - esperienza di sviluppo FE in Angular e/o Vue
+
 - lavoro in team Agile (SCRUM o XP);
+
 - architetture a Microservices.
 
 Si offre un contratto full-time e a tempo indeterminato. La retribuzione sarà commisurata alle effettive competenze ed esperienze.

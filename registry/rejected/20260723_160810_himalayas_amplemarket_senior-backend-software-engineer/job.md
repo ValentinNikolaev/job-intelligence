@@ -23,6 +23,7 @@ It has come to our attention that there are fraudulent activities targeting job 
 Please be informed that [Amplemarket](https://himalayas.app/companies/amplemarket) always uses our main domain (amplemarket.com) for all hiring and recruitment purposes. Any communication or offer not originating from an amplemarket.com email address should be regarded as suspicious.
 
 - We will never request personal financial information (such as bank account details) during the initial application or interview process.
+
 - Our hiring process does not involve transferring money or making payments of any kind to secure a position.
 
 [Amplemarket](https://himalayas.app/companies/amplemarket) is not responsible for any loss or damage incurred as a result of job scams or fraudulent activity by third parties misusing our company name.
@@ -54,38 +55,59 @@ As an early member of engineering team, you will build reliable backend systems 
 ### You will:
 
 - Work directly with the co-founders
+
 - Have lots of autonomy and impact
+
 - Ship new features every week
+
 - Own central, complex components of the application
+
 - Drive and deliver on our product roadmap, turning rough specs into features
+
 - Find elegant solutions to usability problems
+
 - Provide leadership and mentorship to other engineers on the team
+
 - Implement a scalable, stable, and user-friendly product that can handle our current growth
+
 - Collaborate with experienced software engineers in the design, development and maintenance stages of the product
 
 ### About you:
 
 - You have experience designing and maintaining complex/large/growing systems
+
 - When reviewing new system designs or code, you naturally think about what can go wrong: edge cases, failure modes, bottlenecks, migrations, releases, interesting metrics, etc
+
 - You love debugging and finding the root cause of production issues
+
 - You are proactive, when you see something broken you jump on it to fix it or suggest improvements
+
 - You strive to use best practices and always test the software that you deliver
 
 ### Some more about [Amplemarket](https://himalayas.app/companies/amplemarket):
 
 - We are a post-Series A start-up
+
 - Backed by YCombinator
-- Strong technical founding team from MIT and IST (also founders of [https://fermatslibrary.com/](https://fermatslibrary.com/))
+
+- Strong technical founding team from MIT and IST (also founders of )
+
 - Fast growing startup with product market fit
+
 - Great team spirit
 
 ### We offer:
 
 - Nice work environment
+
 - Competitive Salary
+
 - Health Insurance
+
 - Stock Options
+
 - Annual Company Trip in a secret location
+
 - and more
 
 [Amplemarket](https://himalayas.app/companies/amplemarket) is committed to creating an inclusive employee experience for all.

@@ -80,4 +80,4 @@ Wir freuen uns auf Ihre Bewerbung!
 
 Sie möchten gerne mehr über uns erfahren? Interessantes über uns finden Sie auf Facebook oder auf Instagram #gecofilialen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

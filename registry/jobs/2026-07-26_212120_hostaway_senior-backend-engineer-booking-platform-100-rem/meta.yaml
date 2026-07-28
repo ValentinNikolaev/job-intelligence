@@ -225,20 +225,20 @@ sources:
     - query_index: 2
       parameters:
         country: IT
-        sort: recent
-        exclude_worldwide: 'true'
-        q: golang
         seniority: Senior
+        q: golang
+        exclude_worldwide: 'true'
+        sort: recent
     - query_index: 3
       parameters:
         country: IT
-        sort: recent
-        exclude_worldwide: 'true'
-        q: php backend
         seniority: Senior
+        q: php backend
+        exclude_worldwide: 'true'
+        sort: recent
 published_at: '2026-07-26T20:33:18Z'
 discovered_at: '2026-07-26T21:21:20Z'
-updated_at: '2026-07-26T21:21:20Z'
+updated_at: '2026-07-28T12:41:13Z'
 status: found
 status_history:
 - status: found

@@ -1,0 +1,31 @@
+schema_version: 2
+id: 380ed196-886c-4605-ae34-e8b98ed63666
+title: Social-Media-Praktikantin
+company: Salevate GmbH
+company_url: null
+location: Frankfurt am Main
+remote: true
+employment_type: Internship, berufseinstieg
+sources:
+- source: arbeitnow
+  source_job_id: social-media-praktikantin-frankfurt-am-main-406620
+  url: https://www.arbeitnow.com/jobs/companies/salevate-gmbh/social-media-praktikantin-frankfurt-am-main-406620
+  metadata:
+    tags:
+    - Remote
+    - Social Media Manager
+    job_types:
+    - Internship
+    - berufseinstieg
+published_at: '2026-07-28T11:00:35Z'
+discovered_at: '2026-07-28T12:37:15Z'
+updated_at: '2026-07-28T12:37:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:15Z'
+analysis_priority: 0
+fingerprint: sha256:b21c80a1648560418f36c4f946b1fd9b87a43e2513a4ddc3909b6a57eae0aab1
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -68,4 +68,4 @@ In July 2025 Freenow was acquired by Lyft, a global mobility platform, which con
 
 [](https://www.glassdoor.de/%C3%9Cberblick/Arbeit-bei-FREE-NOW-EI_IE954578.11,19.htm) [](https://www.kununu.com/de/mytaxi-intelligent-apps) [](https://www.linkedin.com/company/free-now/life/2b1603ea-741a-49f8-9847-f1214f483a1a/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -79,6 +79,6 @@ Experience building reliable systems on unreliable networks
 
 -
 
-Experience with [Node.js](http://Node.js) native addons and bridging between JS and C
+Experience with native addons and bridging between JS and C
 
 Originally posted on [Himalayas](https://himalayas.app)

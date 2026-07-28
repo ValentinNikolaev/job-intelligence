@@ -74,13 +74,13 @@ sources:
     discovered_by:
     - query_index: 5
       parameters:
-        sort: recent
+        seniority: Senior
         q: backend engineer
         worldwide: 'true'
-        seniority: Senior
+        sort: recent
 published_at: '2026-07-25T12:25:05Z'
 discovered_at: '2026-07-25T14:03:08Z'
-updated_at: '2026-07-25T14:03:08Z'
+updated_at: '2026-07-28T12:41:25Z'
 status: found
 status_history:
 - status: found

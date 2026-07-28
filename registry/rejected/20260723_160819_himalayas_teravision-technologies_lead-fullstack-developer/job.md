@@ -16,35 +16,53 @@ Posted: 2026-07-04T23:33:44Z
 ### General Details:
 
 - Fully remote position.
+
 - Employment type: **Contractor.**
+
 - Compensation in USD.
 
 ### Qualifications:
 
 - Strong experience in at least one enterprise backend stack (Java or .NET).
+
 - Production experience with Node.js or Python.
+
 - Solid React.js experience.
+
 - Cloud experience in AWS or Azure.
+
 - Previous hands-on experience with AI implementations.
+
 - Experience leading development teams and projects is required.
+
 - Excellent English communication skills (C1/C2)** are a must**.
+
 - Bachelor’s Degree in Computer Science or equivalent work experience.
 
 ### What We’re Looking For
 
 - Mindset
+
 - You think in systems, not just features.
+
 - You are comfortable making architectural trade-offs.
+
 - You are curious about AI and emerging technologies.
 
 ### What's in it for you?
 
 - Paid time off.
+
 - Paid National Holidays of your country of residence.
+
 - Unlimited access to professional educational resources, through our growth partner Pluralsight and English Learning.
+
 - Enjoy benefits related to our AWS partnership.
+
 - Remote work laptop.
+
 - Career path development.
+
 - Challenging projects with international clients.
 
 Originally posted on [Himalayas](https://himalayas.app)

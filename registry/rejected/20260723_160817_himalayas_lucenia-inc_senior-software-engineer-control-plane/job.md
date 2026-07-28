@@ -14,27 +14,41 @@ In this role, you will be working on the team responsible for developing the Kub
 ### **What you will do**
 
 - Work with a distributed team of experienced engineers focused on delivering self-hosted, cloud-native, and/or SaaS serverless offerings
+
 - Develop container-based workflows with efficient autoscale in connected and disconnected environments.
+
 - Design and develop a collection of processes that coordinate and manage the cluster’s state and scheduling decisions across the data plane.
+
 - Implement Kubernetes operators/controllers and helm charts with deployment responsibilities in production environments
+
 - Collaborate across engineering, quality control, and leadership teams to execute on product deliverables.
+
 - Invent ideas, collaborate with others, and own solutions from inception to deployment
+
 - Mentor new team members
 
 ### **What you bring **
 
 - Knowledge of the Go programming language
+
 - Deep understanding of distributed systems and cloud native technologies such as kubernetes, docker, and OCI container registries and systems level integration for serverless autoscaling
+
 - Experience working with cloud vendors such as AWS, Microsoft Azure, Google Cloud Platform, Red Hat OpenShift and/or Oracle Cloud
+
 - Familiar with vendor and open source object storage technologies and their role in stateful and stateless system orchestration
+
 - Strong understanding of cost benefit trade offs during design and implementation phases.
+
 - Familiar with SAML, LDAP, Active Directory, Single Sign On identity management technologies (e.g., Okta Auth0) and integration with cloud native deployments.
+
 - Strong analytical, debugging, and troubleshooting skills
+
 - Ability to communicate well with individuals and groups to accomplish a common set of goals
 
 ### **Bonus **
 
 - Experience working with OpenSearch and/or Elastic Stack
+
 - Strong scripting skills (e.g., groovy, gradle, python, javascript)
 
 Originally posted on [Himalayas](https://himalayas.app)

@@ -100,12 +100,15 @@ Languages: PHP 8+, TypeScript, Javascript
 -
 
 ### Frameworks: Laravel, React, Doctrine
+
 -
 
 ### Database: Mysql 8+
+
 -
 
 ### Cloud providers: Amazon
+
 -
 
 Tools: Github, Jira, Figma, ESLint, ESBuild, Vite, webpack, npm, composer, storybook, Claude Code
@@ -113,9 +116,11 @@ Tools: Github, Jira, Figma, ESLint, ESBuild, Vite, webpack, npm, composer, story
 -
 
 ### Versioning tool: Github
+
 -
 
 ### CI/CD: Github actions, Docker, Jenkins
+
 -
 
 ### Testing: PHPUnit, Jest

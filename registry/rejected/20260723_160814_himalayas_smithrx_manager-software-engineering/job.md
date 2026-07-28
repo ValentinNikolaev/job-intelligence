@@ -13,9 +13,14 @@ Posted: 2026-07-03T10:59:20Z
 
 We pride ourselves for our mission-driven and collaborative culture that inspires our employees to do their best work. We believe that the U.S healthcare system is in need of transformation, and we come to work each day dedicated to making that change a reality. At our core, we are guided by our company values:
 
-- **Integrity:** Our purpose guides our actions and gives us confidence in the path ahead. With unwavering honesty and dependability, we embrace the pressure of challenging the old and exemplify ethical leadership to create the new.
-- **Courage:** We face continuous challenges with grit and resilience. We embrace the discomfort of the unknown by balancing autonomy with empathy, and ownership with vulnerability. We boldly challenge the status quo to keep moving forward—always.
-- **Together: **The success of [SmithRx](https://himalayas.app/companies/smithrx) reflects the strength of our partnerships and the commitment of our team. Our shared values bind us together and make us one. When one falls, we all fall; when one rises, we all rise.
+-
+**Integrity:** Our purpose guides our actions and gives us confidence in the path ahead. With unwavering honesty and dependability, we embrace the pressure of challenging the old and exemplify ethical leadership to create the new.
+
+-
+**Courage:** We face continuous challenges with grit and resilience. We embrace the discomfort of the unknown by balancing autonomy with empathy, and ownership with vulnerability. We boldly challenge the status quo to keep moving forward—always.
+
+-
+**Together: **The success of [SmithRx](https://himalayas.app/companies/smithrx) reflects the strength of our partnerships and the commitment of our team. Our shared values bind us together and make us one. When one falls, we all fall; when one rises, we all rise.
 
 ### Job Summary:
 
@@ -32,15 +37,19 @@ As the manager of this team, you will champion developer productivity and system
 ### Team Leadership
 
 - Manage, mentor, and inspire a team of engineers (up to Staff level) to deliver high-quality software solutions.
+
 - Build a collaborative and high-performing team culture focused on accountability, innovation, and excellence.
+
 - Conduct regular performance evaluations, provide actionable feedback, and foster career growth opportunities for team members.
 
 ### Strategic and Tactical Execution
 
 - Define the team’s vision and roadmap, aligning with organizational goals and priorities.
+
 - Partner with product managers and stakeholders to clarify business requirements and translate them into actionable engineering projects. Ensure the execution of major upcoming initiatives, including:
 
 - Building and maintaining a FHIR (Fast Healthcare Interoperability Resources) translation layer.
+
 - Decomposing our mono-repository, advancing data federation, and establishing domain event-streaming where necessary.
 
 - Balance short-term deliverables with long-term scalability to ensure sustainable growth.
@@ -48,44 +57,67 @@ As the manager of this team, you will champion developer productivity and system
 ### Architectural and Operational Excellence
 
 - Work with Principal Engineers to develop scalable and reliable software solutions.
+
 - Proactively identify and mitigate technical risks, addressing software architecture deficiencies and long-term risks.
+
 - Establish and maintain best practices for development, testing, and operational workflows.
 
 ### Cross-Functional Collaboration
 
 - Partner with product managers, stakeholders, and other engineering leaders to ensure alignment across teams and domains.
+
 - Influence overlapping business/technology areas to reduce inefficiencies and improve delivery speed.
+
 - Act as the primary representative of your teams to senior leadership, customers, and stakeholders.
 
 ### What you will bring to [SmithRx](https://himalayas.app/companies/smithrx):
 
 - 7+ years of experience in software development, with at least 3+ years managing teams
+
 - Deep understanding of software architecture, APIs, and scalable systems. Proven ability to make trade-offs between short-term and long-term technical needs.
+
 - Demonstrated ability to build, lead, and retain high-performing teams in a fast-paced environment.
+
 - Ability to define a team’s mission and roadmap, aligning it with company-wide OKRs.
+
 - Exceptional written and verbal communication skills, including the ability to write strategic documentation (e.g., narratives, proposals).
+
 - A track record of delivering results in ambiguous, high-pressure situations.
+
 - Experience in managing teams working on **backend systems**.
 
 ### Preferred Qualifications
 
 - Possess a background in either leading engineering teams dedicated to core services and frameworks or having served as an individual contributor within such teams.
+
 - Familiarity with domain-driven design and cross-functional software development.
+
 - Proven ability to work with US timezone distributed teams and stakeholders.
 
 ### What [SmithRx](https://himalayas.app/companies/smithrx) Offers You:
 
 - Highly competitive wellness benefits including Medical, Pharmacy, Dental, Vision, and Life Insurance and AD&D Insurance
+
 - Flexible Spending Benefits
+
 - 401(k) Retirement Savings Program
+
 - Short-term and long-term disability
+
 - Discretionary Paid Time Off
+
 - 12 Paid Holidays
+
 - Wellness Benefits
+
 - Commuter Benefits
+
 - Paid Parental Leave benefits
+
 - Employee Assistance Program (EAP)
+
 - Well-stocked kitchen in office locations
+
 - Professional development and training opportunities
 
 ### Location: US Remote

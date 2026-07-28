@@ -109,4 +109,4 @@ Vorkenntnisse in den Themen Online-Marketing, Agenturen, Beratung etc. sind von 
 
 **Du bist neugierig? Dann bewirb dich bei uns!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

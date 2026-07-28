@@ -1,0 +1,29 @@
+schema_version: 2
+id: 7953c9dd-a85e-4cd1-b45b-54ae330452a1
+title: Gebäudetechniker / Hausmeister für Gewerbeflächen und Wohnanlagen (m/w/d)
+company: Kögel Bau GmbH & Co. KG
+company_url: null
+location: Bad Oeynhausen
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: gebaudetechniker-hausmeister-fur-gewerbeflachen-und-wohnanlagen-bad-oeynhausen-281997
+  url: https://www.arbeitnow.com/jobs/companies/kogel-bau-gmbh-co-kg/gebaudetechniker-hausmeister-fur-gewerbeflachen-und-wohnanlagen-bad-oeynhausen-281997
+  metadata:
+    tags:
+    - Building
+    - Supply
+    - Safety Services Engineering
+published_at: '2026-07-28T10:00:47Z'
+discovered_at: '2026-07-28T12:37:30Z'
+updated_at: '2026-07-28T12:37:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:37:30Z'
+analysis_priority: 0
+fingerprint: sha256:93f3475d80aabc30924db6353c807c2f76db6395c6d2e0d1364f1d2368c254d5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

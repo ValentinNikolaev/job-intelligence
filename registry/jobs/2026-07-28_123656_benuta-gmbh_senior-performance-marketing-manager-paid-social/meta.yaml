@@ -1,0 +1,30 @@
+schema_version: 2
+id: 7665a8eb-0fd6-42e1-9b59-8b19c40bc09f
+title: Senior Performance Marketing Manager – Paid Social & AI (m/w/d)
+company: benuta GmbH
+company_url: null
+location: Berlin, Berlin, Deutschland
+remote: false
+employment_type: Experienced, fulltime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: senior-performance-marketing-manager-paid-social-ai-berlin-35270
+  url: https://www.arbeitnow.com/jobs/companies/benuta-gmbh/senior-performance-marketing-manager-paid-social-ai-berlin-35270
+  metadata:
+    tags:
+    - Performance Marketing
+    job_types:
+    - Experienced
+    - fulltime fixed term
+published_at: '2026-07-28T11:50:40Z'
+discovered_at: '2026-07-28T12:36:56Z'
+updated_at: '2026-07-28T12:36:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:36:56Z'
+analysis_priority: 0
+fingerprint: sha256:fceffe50e25ab6ea6d846392b79d1100345c477c2c7c8c9f449d3e14c22dfb79
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

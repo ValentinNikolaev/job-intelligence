@@ -1,0 +1,27 @@
+schema_version: 2
+id: ab92b96e-7f57-4b4f-a859-93ec383701e3
+title: Enterprise Account Executive
+company: sumologic
+company_url: null
+location: Frankfurt, Hesse
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: enterprise-account-executive-frankfurt-hesse-279723
+  url: https://www.arbeitnow.com/jobs/companies/sumologic/enterprise-account-executive-frankfurt-hesse-279723
+  metadata:
+    tags:
+    - Enterprise Sales
+published_at: '2026-07-28T11:55:38Z'
+discovered_at: '2026-07-28T12:36:53Z'
+updated_at: '2026-07-28T12:36:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:36:53Z'
+analysis_priority: 0
+fingerprint: sha256:924d8bd150b3f617839fff9822968a64c571cf70b36f795ffbcefe513923bc41
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

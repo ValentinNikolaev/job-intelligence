@@ -92,13 +92,13 @@ sources:
     - query_index: 3
       parameters:
         country: IT
-        sort: recent
-        exclude_worldwide: 'true'
-        q: php backend
         seniority: Senior
+        q: php backend
+        exclude_worldwide: 'true'
+        sort: recent
 published_at: '2026-07-23T20:33:33Z'
 discovered_at: '2026-07-24T09:59:04Z'
-updated_at: '2026-07-24T09:59:04Z'
+updated_at: '2026-07-28T12:41:17Z'
 status: found
 status_history:
 - status: found

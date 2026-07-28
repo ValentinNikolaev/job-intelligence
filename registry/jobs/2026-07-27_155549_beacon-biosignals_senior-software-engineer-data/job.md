@@ -12,26 +12,34 @@ Beacon's robust asynchronous work practices ensure a first-class remote work exp
 
 ### What success looks like
 
-[](https://github.com/beacon-biosignals/knowledge-base/blob/adc13ebfba487d2512d5cc8793398fbd8a5f8ffe/records/job-posts/datastore-senior-backend-engineer.md#what-success-looks-like)
-
 - You partner with product managers, internal stakeholders, and other development and support teams to design new integrations, services, and solutions for scaling Beacon's data platform
+
 - You implement features with attention to detail, demonstrating product awareness and high standards for data integrity, design soundness, and maintainability across the lifespan of the system
+
 - You draft RFCs to lead complex feature discovery and technical design phases, soliciting and incorporating input, and helping your team align on a set of decisions to guide development
+
 - You leverage feedback from internal stakeholders and external partners to improve operational robustness and ease of use of the Datastore and its services via new documentation, tools, and dashboards
 
 ### What you will bring
 
 - 5+ years of backend development experience, including at least 2 years focused on data engineering, data platforms, or infrastructure for data-centric applications
+
 - Strong proficiency in SQL, with production experience working with PostgreSQL
+
 - Hands-on experience with data streaming and event processing, using tools such as Kafka, RabbitMQ, Pulsar, or a cloud-based equivalent like Amazon Kinesis
+
 - Proficiency in a data-oriented programming language such as Julia, Python, or R
 
 - Experience with Julia is a strong plus, but not required - we welcome candidates eager to learn it!
 
 - Experience deploying and operating services in containerized environments, with familiarity in Kubernetes and Infrastructure as Code (IaC) tools such as Terraform and/or Helm
+
 - Experience in TypeScript/JavaScript (Node.js) is a plus, especially for API integration work
+
 - A collaborative mindset - you enjoy working across disciplines and believe people achieve more together than alone
+
 - Excellent written and verbal communication skills, especially in asynchronous and remote-friendly environments
+
 - A self-directed approach, with a track record of thriving in hybrid or fully remote teams
 
 We don't expect every candidate to check every box. If you bring strong fundamentals, care about data infrastructure for health, and are excited to learn, we’d love to hear from you!

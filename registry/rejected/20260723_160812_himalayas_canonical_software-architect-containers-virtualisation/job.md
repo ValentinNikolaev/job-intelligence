@@ -26,28 +26,47 @@ This is an opportunity for someone who wants to have a meaningful impact on mode
 ### The role entails
 
 - Leadership of the LXD and MicroCloud architecture
+
 - Mentor, develop and advise colleagues in their career progression
+
 - Develop in Golang and C
+
 - Review code produced by other engineers
+
 - Ensure the product is secure and performant
+
 - Display technical leadership in [Canonical](https://himalayas.app/companies/canonical) and our communities
+
 - Work from home with global travel twice annually for company events
 
 ### **What we are looking for in you**
 
 - An exceptional academic track record from both high school and university
+
 - Undergraduate degree in Computer Science or STEM
+
 - Drive, and a track record of going above-and-beyond expectations
+
 - Technical leadership as well as team motivation, direction and pace
+
 - Well-organized, self-starting and able to deliver to schedule
+
 - Professional manner in interacting with colleagues, partners, and community
+
 - Experience with Go and C
+
 - Experience with storage, networking and virtualization
+
 - Experience with container technologies
+
 - Experience with concurrent, distributed systems
+
 - Conscientiousness and detail orientation, with a focus on performance
+
 - Professional written and spoken English
+
 - Experience with Linux (Debian or Ubuntu preferred)
+
 - Excellent interpersonal skills, curiosity, flexibility, and accountability
 
 ### **What we offer colleagues**
@@ -55,21 +74,30 @@ This is an opportunity for someone who wants to have a meaningful impact on mode
 We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognise outstanding performance. In addition to base pay, we offer a performance-driven annual bonus or commission. We provide all team members with additional benefits, which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.
 
 - Distributed work environment with twice-yearly team sprints in person
+
 - Personal learning and development budget of USD 2,000 per year
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Maternity and paternity leave
+
 - Employee Assistance Programme
+
 - Opportunity to travel to new locations to meet colleagues
+
 - Priority Pass, and travel upgrades for long haul company events
 
 ### About [Canonical](https://himalayas.app/companies/canonical)
 
 [Canonical](https://himalayas.app/companies/canonical) is a pioneering tech firm at the forefront of the global move to open source. As the company that publishes Ubuntu, one of the most important open-source projects and the platform for AI, IoT, and the cloud, we are changing the world of software. We recruit on a global basis and set a very high standard for people joining the company. We expect excellence; in order to succeed, we need to be the best at what we do. Most colleagues at [Canonical](https://himalayas.app/companies/canonical) have worked from home since our inception in 2004.​ Working here is a step into the future and will challenge you to think differently, work smarter, learn new skills, and raise your game.
 
-### [Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
+###
+[Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products.[ Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 Originally posted on [Himalayas](https://himalayas.app)

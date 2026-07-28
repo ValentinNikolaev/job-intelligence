@@ -50,4 +50,4 @@ Entdecke auf unserer Karriereseite noch mehr spannende KÖGEL Benefits!
 
 Du willst in einem Unternehmen arbeiten, das Deine Stärken erkennt und Dich wirklich fördert? Dann bewirb Dich jetzt und werde Teil unseres Teams!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

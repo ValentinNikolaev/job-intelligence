@@ -156,7 +156,4 @@ As an employer we are committed to building a positive and collaborative work en
 
 Due to the nature of our business and external requirements, we perform background checks on all potential employees, passing which is a prerequisite to join [Keyrock](https://himalayas.app/companies/keyrock-com).
 
-[https://keyrock.com/careers/
-](https://keyrock.com/careers/)
-
 Originally posted on [Himalayas](https://himalayas.app)

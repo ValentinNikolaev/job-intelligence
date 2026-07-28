@@ -22,9 +22,13 @@ If you are energetic, curious, motivated and ambitious, be part of our world. Ap
 As a Forward Deployed Engineer (AI) at [Remote](https://himalayas.app/companies/remote), you will work directly with customers and internal stakeholders to design, build, and deploy AI-powered solutions that connect [Remote](https://himalayas.app/companies/remote)’s platform to customer systems and workflows. You will turn messy, real-world requirements into production-grade implementations — often by building integrations, automations, and agentic workflows — and you’ll translate field learnings back into reusable patterns and product roadmap inputs.
 
 - High autonomy and direct ownership of customer outcomes — from discovery through production rollout
+
 - Work at the frontier of practical AI: shipping systems that are reliable, observable, secure, and measurable
+
 - A seat at the intersection of Product, Engineering, Sales/CS, and customer teams — with clear influence on what we build next
+
 - Exposure to a wide set of domains (HR, payroll, finance ops, IT, integrations) and complex enterprise ecosystems
+
 - A remote-first environment with strong documentation culture and high trust
 
 ### **What you bring**
@@ -34,49 +38,88 @@ As a Forward Deployed Engineer (AI) at [Remote](https://himalayas.app/companies/
 ### Must have
 
 - Demonstrated experience shipping production software (backend and/or full-stack) and owning it in production (on-call mindset, debugging, instrumentation)
+
 - Strong integration and systems thinking: APIs, event-driven systems, webhooks, auth (OAuth/service accounts), data modeling, idempotency, and failure modes
+
 - Applied AI/LLM experience beyond prototypes: prompt+tool design, RAG and retrieval patterns, evaluation, latency/cost trade-offs, and reliability practices
+
 - Ability to operate in ambiguity: you can go from “problem statement” to “shipped solution” with minimal hand-holding
+
 - Clear, structured communication in writing; ability to explain trade-offs to technical and non-technical stakeholders
 
 ### Nice to have
 
 - Experience with enterprise environments (security reviews, compliance constraints, procurement, change management)
+
 - Experience building with agent frameworks and/or workflow orchestration systems
+
 - Familiarity with HRIS, payroll, identity/access management, or adjacent enterprise domains
+
 - Experience with multi-tenant SaaS, RBAC, and data privacy by design
 
 ### Key Responsibilities
 
-- **Partner with customers** to understand operational challenges, constraints, and success criteria; run structured technical discovery and define the “definition of done”
-- **Translate open-ended problems** into clear technical designs and implementation plans (architecture, data flows, integration surfaces, security considerations, rollout strategy)
-- **Build AI-enabled solutions** that integrate with customer systems and [Remote](https://himalayas.app/companies/remote)’s platform (e.g., data pipelines, workflow automations, tool integrations, agentic services) and perform real tasks end-to-end
-- **Own deployments** including reliability, performance, observability, incident response, and continuous improvement
-- **Develop evaluation and measurement** for AI behavior: success metrics, test harnesses, golden datasets, regression suites, and guardrails (quality, safety, privacy)
-- **Work with real data** to validate outputs, quantify impact, and iterate quickly based on evidence
-- **Collaborate cross-functionally** with Product and Engineering to ship high-quality solutions and to upstream reusable components
-- **Create leverage** by turning one-off solutions into repeatable playbooks, reference architectures, templates, and internal tooling
-- **Be the voice of the field**: bring back concrete customer needs, edge cases, and constraints that should shape product strategy
+-
+**Partner with customers** to understand operational challenges, constraints, and success criteria; run structured technical discovery and define the “definition of done”
+
+-
+**Translate open-ended problems** into clear technical designs and implementation plans (architecture, data flows, integration surfaces, security considerations, rollout strategy)
+
+-
+**Build AI-enabled solutions** that integrate with customer systems and [Remote](https://himalayas.app/companies/remote)’s platform (e.g., data pipelines, workflow automations, tool integrations, agentic services) and perform real tasks end-to-end
+
+-
+**Own deployments** including reliability, performance, observability, incident response, and continuous improvement
+
+-
+**Develop evaluation and measurement** for AI behavior: success metrics, test harnesses, golden datasets, regression suites, and guardrails (quality, safety, privacy)
+
+-
+**Work with real data** to validate outputs, quantify impact, and iterate quickly based on evidence
+
+-
+**Collaborate cross-functionally** with Product and Engineering to ship high-quality solutions and to upstream reusable components
+
+-
+**Create leverage** by turning one-off solutions into repeatable playbooks, reference architectures, templates, and internal tooling
+
+-
+**Be the voice of the field**: bring back concrete customer needs, edge cases, and constraints that should shape product strategy
 
 ### **Practicals**
 
-- **Team:** [Remote](https://himalayas.app/companies/remote) Build / Customer Engineering (or equivalent)
-- **Location:** [Remote](https://himalayas.app/companies/remote)
-- **Time zones:** Ability to overlap with customer working hours as needed
-- **Travel**: Whilst the majority of the work is [Remote](https://himalayas.app/companies/remote), please expect around 10% of travel for customer engagements
-- **Start date:** As soon as possible
+-
+**Team:** [Remote](https://himalayas.app/companies/remote) Build / Customer Engineering (or equivalent)
+
+-
+**Location:** [Remote](https://himalayas.app/companies/remote)
+
+-
+**Time zones:** Ability to overlap with customer working hours as needed
+
+-
+**Travel**: Whilst the majority of the work is [Remote](https://himalayas.app/companies/remote), please expect around 10% of travel for customer engagements
+
+-
+**Start date:** As soon as possible
 
 ### **Application process**
 
 - Recruiter screen
-- Hiring Manager interview
-- Technical challenge
-- Team interview
-- Bar Raiser interview
-- Executive interview
-- Offer + [Prior employment verification check](https://www.notion.so/Veremark-<a href='https://himalayas.app/companies/remote'>Remote</a>-96e108c037b8423cbd4c3f07a1f9b38b)
 
-[Remote](https://himalayas.app/companies/remote)'s [Total Rewards philosophy](https://www.notion.so/remotecom/people-Total-Rewards-1945bce8d3924ece9421ba8630f57b0c) is to ensure fair, unbiased compensation and fair equity pay along with competitive benefits in all locations in which we operate. We do not agree to or encourage cheap-labor practices and therefore we ensure to pay above in-location rates. We hope to inspire other companies to support global talent-hiring and bring local wealth to developing countries.
+- Hiring Manager interview
+
+- Technical challenge
+
+- Team interview
+
+- Bar Raiser interview
+
+- Executive interview
+
+- Offer + Prior employment verification check
+
+[Remote](https://himalayas.app/companies/remote)'s Total Rewards philosophy is to ensure fair, unbiased compensation and fair equity pay along with competitive benefits in all locations in which we operate. We do not agree to or encourage cheap-labor practices and therefore we ensure to pay above in-location rates. We hope to inspire other companies to support global talent-hiring and bring local wealth to developing countries.
 
 At first glance our salary bands seem quite wide - here is some context. At [Remote](https://himalayas.app/companies/remote) we have international operations and a globally distributed workforce. We use geo ranges to consider geographic pay differentials as part of our global compensation strategy to remain competitive in various markets while we hiring globally.
 
@@ -90,21 +133,29 @@ $53,300—$215,750 USD
 
 ### **Benefits**
 
-Our full benefits & perks are explained in our handbook at [remote.com/r/benefits](http://remote.com/r/benefits). As a global company, each country works differently, but some benefits/perks are for all [Remote](https://himalayas.app/companies/remote)rs:
+Our full benefits & perks are explained in our handbook at . As a global company, each country works differently, but some benefits/perks are for all [Remote](https://himalayas.app/companies/remote)rs:
 
 - work from anywhere
+
 - flexible paid time off
-- flexible working hours (we are [async](https://remote.com/async))
+
+- flexible working hours (we are async)
+
 - 16 weeks paid parental leave
+
 - mental health support services
+
 - stock options
+
 - learning budget
+
 - home office budget & IT equipment
+
 - budget for local in-person social events or co-working spaces
 
 ### **How you’ll plan your day (and life)**
 
-We work async at [Remote](https://himalayas.app/companies/remote) which means you can plan your schedule around your life (and not around meetings). Read more at [remote.com/async](https://remote.com/async).
+We work async at [Remote](https://himalayas.app/companies/remote) which means you can plan your schedule around your life (and not around meetings). Read more at .
 
 You will be empowered to take ownership and be proactive. When in doubt you will default to action instead of waiting. Your **life-work balance** is important and you will be encouraged to put yourself and your family first, and fit work around your needs.
 
@@ -113,7 +164,9 @@ If that sounds like something you want, apply now!
 ### **How to apply**
 
 - Please fill out the form below and upload your CV with a PDF format.
+
 - **We kindly ask you to submit your application and CV in English, as this is the standardised language we use here at [Remote](https://himalayas.app/companies/remote).**
+
 - If you don’t have an up to date CV but you are still interested in talking to us, please feel free to add a copy of your LinkedIn profile instead.
 
 We will ask you to voluntarily tell us your pronouns at interview stage, and you will have the option to answer our anonymous demographic questionnaire when you apply below. As an equal employment opportunity employer it’s important to us that our workforce reflects people of all backgrounds, identities, and experiences and this data will help us to stay accountable. We thank you for providing this data, if you chose to.

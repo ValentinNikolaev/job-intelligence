@@ -1,0 +1,35 @@
+schema_version: 2
+id: b7de75ec-b18f-4795-985f-fb88e15ab1d2
+title: Software Engineer III, Backend - Consumer Wealth Domain
+company: Satispay
+company_url: https://jobs.ashbyhq.com/satispay
+location: Milan, Italy
+remote: true
+employment_type: FullTime
+sources:
+- source: ashby
+  source_job_id: 4573eb39-e9fc-40ba-aae2-83f82b33afc0
+  url: https://jobs.ashbyhq.com/satispay/4573eb39-e9fc-40ba-aae2-83f82b33afc0
+  metadata:
+    board: satispay
+    application_url: https://jobs.ashbyhq.com/satispay/4573eb39-e9fc-40ba-aae2-83f82b33afc0/application
+    department: Tech & Product
+    team: Engineering
+    workplace_type: Hybrid
+    compensation:
+      compensationTierSummary: null
+      scrapeableCompensationSalarySummary: null
+      compensationTiers: []
+      summaryComponents: []
+published_at: '2026-07-28T12:27:10.678+00:00'
+discovered_at: '2026-07-28T12:39:33Z'
+updated_at: '2026-07-28T12:39:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T12:39:33Z'
+analysis_priority: 0
+fingerprint: sha256:0ecbd42efae9f2f7e40dfb1108bad06aca5739ec192eba4381c21c4d8558fc85
+data_source: ashby
+content_source: ashby
+company_content_source: null

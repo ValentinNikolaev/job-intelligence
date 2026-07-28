@@ -22,25 +22,41 @@ Contribute to a real transformation, work in a remote-first engineering culture,
 ### Requirements
 
 - 5+ years of professional software engineering experience
+
 - Production delivery experience
+
 - Genuine full-stack capability
+
 - Strong API development experience
+
 - Proficiency with databases across relational and document paradigms
+
 - Automated testing discipline
+
 - Cloud deployment awareness
+
 - AI-assisted development tooling experience
+
 - Clear and effective written communication in English
 
 ### Benefits
 
 - Competitive compensation
+
 - Professional development
+
 - Autonomy to shape software development
+
 - Modern tooling
+
 - AI-assisted workflows
+
 - Observability
+
 - Continuous delivery
+
 - Regular team events
+
 - Strong engineering community
 
 Originally posted on [Himalayas](https://himalayas.app)

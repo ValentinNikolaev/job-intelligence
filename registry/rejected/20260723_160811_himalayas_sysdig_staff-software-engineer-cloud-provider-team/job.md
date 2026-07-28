@@ -18,32 +18,47 @@ If you have the passion to dig deeper, the desire to challenge convention, and t
 ### What you will do:
 
 - You will report to the Director of Engineering
+
 - Lead the design and development of scalable, backend APIs and services that integrate with cloud services, with a focus on IBM Cloud
+
 - Collaborate with Product, Infrastructure, and Partner teams to understand requirements and design interfaces that are intuitive and maintainable
+
 - Guide the evolution of [Sysdig](https://himalayas.app/companies/sysdig)'s managed service capabilities in cloud environments, specifically IBM Cloud
+
 - Influence long-term architecture and technical direction for [Sysdig](https://himalayas.app/companies/sysdig)'s integrations with IBM Cloud (IAM, authn/authz, service-to-service patterns, resiliency)
+
 - Champion quality, simplicity, and clarity in system design, API design, and data modeling
+
 - Provide technical leadership through design reviews, mentorship, and raising engineering standards
 
 ### What you will bring with you:
 
 - Experience designing and building distributed backend systems and APIs (data-heavy or high-throughput systems are a plus)
+
 - Experience with cloud fundamentals (compute, networking, identity, security), with the ability to ramp quickly on IBM Cloud specifics
+
 - Experience with IAM and access patterns (OAuth/OIDC, JWT, RBAC/policy-based access); IBM Cloud IAM experience is a plus
+
 - Good grasp of SaaS operations and Kubernetes (deployments, scaling, observability and incident response mindset)
+
 - Development experience in Java, Go, or similar languages
+
 - Familiarity with SQL and NoSQL data stores (e.g., Postgres plus other database systems)
 
 ### What we look for:
 
 - Understanding of API best practices: versioning, backward compatibility, consistency, and access control
+
 - We appreciate interest in Cloud Security (CSPM/CDR/CIEM), but do not require it.
+
 - Proficiency with standard engineering tools (CI/CD pipelines, version control, containerization)
 
 ### When you join [Sysdig](https://himalayas.app/companies/sysdig), you can expect:
 
 - Extra days off to prioritize your well-being
+
 - Mental health support for you and your family through the Modern Health app
+
 - Great compensation package
 
 The annual compensation range for this full-time position is between €59,000 and €74,000. Actual offers may be higher or lower than this range based on a variety of factors, including your work location, job-related experience and education.

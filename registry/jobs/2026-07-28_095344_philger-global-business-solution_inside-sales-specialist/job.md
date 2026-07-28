@@ -18,4 +18,4 @@ Als Inside Sales Specialist sind Sie die Profisionelle Visitinekarte unserers Un
 
 Senden Sie uns einfach Ihren Lebenslauf (ohne langes Anschreiben) unter Angabe Ihres frühstmöglichen Eintrittstermin über das Portal.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -116,14 +116,14 @@ sources:
     discovered_by:
     - query_index: 2
       parameters:
-        sort: recent
         country: IT
+        seniority: Senior
         q: golang
         exclude_worldwide: 'true'
-        seniority: Senior
+        sort: recent
 published_at: '2026-07-21T20:33:21Z'
 discovered_at: '2026-07-23T16:08:13Z'
-updated_at: '2026-07-23T16:08:13Z'
+updated_at: '2026-07-28T12:41:15Z'
 status: found
 status_history:
 - status: found

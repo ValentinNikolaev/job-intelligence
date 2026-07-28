@@ -46,4 +46,4 @@ Wir unterstützen dich flexibel und individuell – so, wie es zu dir passt.
 
 Bewirb dich jetzt und zeig uns, wer du bist!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
