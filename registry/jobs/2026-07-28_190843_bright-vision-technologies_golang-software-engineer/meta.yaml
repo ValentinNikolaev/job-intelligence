@@ -1,0 +1,24 @@
+schema_version: 2
+id: 40320933-8f1c-4ee8-a1ff-c68776a01bf9
+title: Golang Software Engineer
+company: Bright Vision Technologies
+company_url: null
+location: Scottsdale, AZ
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '5142007965419355893'
+  url: https://jooble.org/desc/5142007965419355893?ckey=remote+golang+backend+engineer&rgn=55180&pos=11&groupId=1106121903&elckey=-783435039669287966&p=1&aq=4808209547100793223&cid=15922&jobAge=109&brelb=100&bscr=237.88342&scr=237.88342
+published_at: '2026-07-24T00:00:00.0000000'
+discovered_at: '2026-07-28T19:08:43Z'
+updated_at: '2026-07-28T19:08:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T19:08:43Z'
+analysis_priority: 0
+fingerprint: sha256:cde93cdacf6b8ab79fdf628d91529613b82fd1c57e321b62bffc492919df751f
+data_source: jooble
+content_source: jooble
+company_content_source: null

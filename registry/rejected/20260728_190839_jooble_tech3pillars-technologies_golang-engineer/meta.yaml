@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2321233311300042094'
+source_url: https://jooble.org/desc/-2321233311300042094?ckey=remote+golang+backend+engineer&rgn=55180&pos=3&groupId=1106121903&elckey=-783435039669287966&p=1&aq=4808209547100793223&cid=15922&jobAge=205&brelb=100&bscr=259.03204&scr=259.03204
+title: Golang Engineer
+company: Tech3pillars Technologies
+location: Arizona
+published_at: '2026-07-20T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-20T00:00:00.0000000 is older than 7 days
+updated_at: '2026-07-28T19:08:39Z'
+rejected_at: '2026-07-28T19:08:39Z'

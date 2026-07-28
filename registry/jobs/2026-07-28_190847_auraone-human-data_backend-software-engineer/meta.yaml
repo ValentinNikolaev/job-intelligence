@@ -1,0 +1,24 @@
+schema_version: 2
+id: 0d5bc936-8f2f-4154-83b3-ed058edbf31a
+title: Backend Software Engineer
+company: AuraOne Human Data
+company_url: null
+location: Remote
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-751659291236651586'
+  url: https://jooble.org/desc/-751659291236651586?ckey=remote+golang+backend+engineer&rgn=55180&pos=22&groupId=1106121903&elckey=-783435039669287966&p=1&aq=4808209547100793223&cid=15922&jobAge=11&brelb=100&bscr=216.9988&scr=216.9988
+published_at: '2026-07-28T01:17:07.8430000'
+discovered_at: '2026-07-28T19:08:47Z'
+updated_at: '2026-07-28T19:08:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T19:08:47Z'
+analysis_priority: 0
+fingerprint: sha256:8c682c6bcffed52bd6ca4a8b1c5875a59e43dc3d7b9ae763c245455e90962f3e
+data_source: jooble
+content_source: jooble
+company_content_source: null
