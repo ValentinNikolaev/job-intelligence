@@ -1,0 +1,30 @@
+schema_version: 2
+id: 8033dfa5-ca42-40eb-b283-2419cc004fb0
+title: Working Student Communication Design (m/f/d)
+company: Coffee Circle
+company_url: null
+location: Berlin
+remote: false
+employment_type: Internship, entry
+sources:
+- source: arbeitnow
+  source_job_id: working-student-communication-design-berlin-233895
+  url: https://www.arbeitnow.com/jobs/companies/coffee-circle/working-student-communication-design-berlin-233895
+  metadata:
+    tags:
+    - Graphic Arts and Communication Design
+    job_types:
+    - Internship
+    - entry
+published_at: '2026-07-28T13:30:26Z'
+discovered_at: '2026-07-28T15:46:52Z'
+updated_at: '2026-07-28T15:46:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:52Z'
+analysis_priority: 0
+fingerprint: sha256:8bdb4524c563d3d28bc4406535905f1975e6b6a55cc889a0c64049e41577d45d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

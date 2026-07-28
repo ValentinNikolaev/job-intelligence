@@ -1,0 +1,27 @@
+schema_version: 2
+id: 4bab3bee-7e43-40fd-b18c-73495b7e4546
+title: Energieeffizienz-Experte (m/w/d)
+company: EENetzwerk
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: energieeffizienz-experte-stuttgart-70354
+  url: https://www.arbeitnow.com/jobs/companies/eenetzwerk/energieeffizienz-experte-stuttgart-70354
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-28T14:00:48Z'
+discovered_at: '2026-07-28T15:46:37Z'
+updated_at: '2026-07-28T15:46:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:37Z'
+analysis_priority: 0
+fingerprint: sha256:05bdf7f0f38bb85df91b6d37e994542de8b95012722bbced01af171d1c5cb992
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

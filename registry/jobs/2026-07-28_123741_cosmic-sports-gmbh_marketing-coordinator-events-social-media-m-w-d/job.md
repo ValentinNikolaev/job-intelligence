@@ -78,4 +78,4 @@ Wenn Du gerne im Team arbeitest und den Überblick in einem dynamischen Umfeld b
 
 Schicke uns über unsere Karriereseite auf JOIN Deine Bewerbungsunterlagen inkl. Gehaltsvorstellungen und frühestmöglichem Eintrittstermin.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,6 +1,6 @@
-# Senior Consultant (m/w/d) Finance
+# Senior Consultant (m/w/d) Finance Solutions
 
-Posted: 2026-07-28T08:30:48Z
+Posted: 2026-07-28T12:59:03Z
 
 ## Rejection
 

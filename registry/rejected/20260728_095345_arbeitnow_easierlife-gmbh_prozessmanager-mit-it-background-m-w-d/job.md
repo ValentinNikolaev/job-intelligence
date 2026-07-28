@@ -65,4 +65,4 @@ Dein Know-how wird uns helfen, interne Prozesse zu optimieren, um so die Qualit√
 
 √úberzeugt?! Bewirb Dich ganz einfach online, um mit uns weiter zu wachsen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

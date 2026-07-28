@@ -72,4 +72,4 @@ Im Zuge der weiteren Entwicklung des Finanzbereichs suchen wir eine Persönlichk
 
 Dann bewirb dich jetzt exklusiv über die **PRIME HR Agentur®**, deinem Partner für Premium-Karrieren im Finanzsektor.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

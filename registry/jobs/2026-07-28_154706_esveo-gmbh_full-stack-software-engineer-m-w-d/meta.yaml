@@ -1,0 +1,27 @@
+schema_version: 2
+id: 2f644d84-e64a-490a-983d-1d542417786d
+title: Full Stack Software Engineer (m/w/d)
+company: esveo GmbH
+company_url: null
+location: Dresden
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: full-stack-software-engineer-dresden-498979
+  url: https://www.arbeitnow.com/jobs/companies/esveo-gmbh/full-stack-software-engineer-dresden-498979
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-28T12:30:29Z'
+discovered_at: '2026-07-28T15:47:06Z'
+updated_at: '2026-07-28T15:47:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:47:06Z'
+analysis_priority: 0
+fingerprint: sha256:bd07ea594d244c5fd930df279f180efff26f75af1bb8f21ac4e407cebaa49c1e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

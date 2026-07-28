@@ -1,0 +1,27 @@
+schema_version: 2
+id: 72a446ac-74b1-46a5-90fb-129b8abc7281
+title: Data Engineer (m/w/d)
+company: ANGEHEUERT GmbH Personalberatung
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: data-engineer-berlin-32772
+  url: https://www.arbeitnow.com/jobs/companies/angeheuert-gmbh-personalberatung/data-engineer-berlin-32772
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-28T13:30:29Z'
+discovered_at: '2026-07-28T15:46:45Z'
+updated_at: '2026-07-28T15:46:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:45Z'
+analysis_priority: 0
+fingerprint: sha256:52eb1d45d975d0e3e2bcb546a8173c3bb11f0d4ff624de00053f1c29f4d409f6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

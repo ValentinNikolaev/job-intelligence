@@ -52,4 +52,4 @@ Wir sind stolz auf unsere Unternehmenswerte wie Zugehörigkeit, Gemeinschaft, An
 
 Möchten Sie Teil eines renommierten Autohauses werden und Ihre Leidenschaft für Kundenservice ausleben? Bewerben Sie sich jetzt als Service Assistent (m/w/d) in Vollzeit!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

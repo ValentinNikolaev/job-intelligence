@@ -73,4 +73,4 @@ Posted: 2026-07-28T09:30:46Z
 
 Werde Ein Teil vom Bienenstock! Sende uns auch gerne eine Bewerbung über unsere Karriereseite.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

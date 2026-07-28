@@ -120,4 +120,4 @@ Die Besetzung der Position erfolgt im Rahmen einer langfristig geplanten Nachfol
 
 Haben wir Dein Interesse geweckt? Bitte sende uns Deine aussagekräftige Bewerbung zu. Wir freuen uns auf Dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

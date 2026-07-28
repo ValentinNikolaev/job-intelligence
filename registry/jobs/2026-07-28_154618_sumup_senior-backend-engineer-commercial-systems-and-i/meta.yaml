@@ -1,0 +1,27 @@
+schema_version: 2
+id: 5342854b-7e67-4e06-9776-30bfe0ec70f8
+title: Senior Backend Engineer - Commercial Systems and Intelligence
+company: sumup
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-backend-engineer-commercial-systems-and-intelligence-berlin-204665
+  url: https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-commercial-systems-and-intelligence-berlin-204665
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-28T14:55:05Z'
+discovered_at: '2026-07-28T15:46:18Z'
+updated_at: '2026-07-28T15:46:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:18Z'
+analysis_priority: 0
+fingerprint: sha256:fb521800fb7c6ffe5a0680c5b249aba8c11d87fc0f98d6e9a86dad2381d7e069
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

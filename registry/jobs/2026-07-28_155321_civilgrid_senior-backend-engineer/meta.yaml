@@ -1,0 +1,24 @@
+schema_version: 2
+id: 779265f1-2de3-4a31-bac1-611cf0f09bc2
+title: Senior Backend Engineer
+company: CivilGrid
+company_url: null
+location: Boston, MA
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '5259328194497340379'
+  url: https://jooble.org/away/5259328194497340379?p=1&pos=2&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=74&scr=2951.2393&bscr=2951.2393&aq=-8461427535161794076&elckey=-5199567105881253892
+published_at: '2026-07-25T07:03:14.3630000'
+discovered_at: '2026-07-28T15:53:21Z'
+updated_at: '2026-07-28T15:53:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:53:21Z'
+analysis_priority: 0
+fingerprint: sha256:2c0fa24ca46834b76040b1f919e9b166542eb63b6cdf6d95698c61d033a903af
+data_source: jooble
+content_source: jooble
+company_content_source: null

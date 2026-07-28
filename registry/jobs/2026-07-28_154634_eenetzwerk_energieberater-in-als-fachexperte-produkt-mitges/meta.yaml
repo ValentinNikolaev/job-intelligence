@@ -1,0 +1,29 @@
+schema_version: 2
+id: 9b57167e-b8b4-4126-8119-af43acad3c2b
+title: Energieberater:in als Fachexperte & Produkt-Mitgestalter (m/w/d)
+company: EENetzwerk
+company_url: null
+location: Stuttgart
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: energieberaterin-als-fachexperte-produkt-mitgestalter-stuttgart-317701
+  url: https://www.arbeitnow.com/jobs/companies/eenetzwerk/energieberaterin-als-fachexperte-produkt-mitgestalter-stuttgart-317701
+  metadata:
+    tags:
+    - Power Engineering and Environmental Engineering
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T14:00:48Z'
+discovered_at: '2026-07-28T15:46:34Z'
+updated_at: '2026-07-28T15:46:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:34Z'
+analysis_priority: 0
+fingerprint: sha256:f15aff51e5f882e02633846b6a63bf35412525ac8668ef1ee568ddb9b95a4443
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

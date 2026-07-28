@@ -44,4 +44,4 @@ Im Auftrag unseres Partnerunternehmens in München suchen wir Sie zum nächstmö
 
 Dann freuen wir uns auf Ihre Bewerbung. Senden Sie uns Ihre Unterlagen. Für Rückfragen steht Ihnen **Kaan Akdemir** gerne unter **089 954 287 109** zur Verfügung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 68f812a1-9fda-4994-ad6b-1e1366df0d0f
+title: (Senior) Recruiting Specialist (m/w/d)
+company: Zara
+company_url: null
+location: Hamburg
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-recruiting-specialist-hamburg-268582
+  url: https://www.arbeitnow.com/jobs/companies/zara/senior-recruiting-specialist-hamburg-268582
+  metadata:
+    tags:
+    - HR
+    job_types:
+    - berufserfahren
+published_at: '2026-07-28T12:30:30Z'
+discovered_at: '2026-07-28T15:47:03Z'
+updated_at: '2026-07-28T15:47:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:47:03Z'
+analysis_priority: 0
+fingerprint: sha256:80adfeb757bb07cd220a9069b8f4c78fa4ba8c46d3159b2778eeaefe242bca15
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

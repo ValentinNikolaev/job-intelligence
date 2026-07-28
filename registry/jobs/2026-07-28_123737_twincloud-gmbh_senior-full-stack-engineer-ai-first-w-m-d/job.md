@@ -66,4 +66,4 @@ We're looking for a senior full-stack engineer who works AI-first without sacrif
 
 Send us a short note about yourself and something you've built, a repo, a product, a war story. No cover letter needed. Start date: as soon as possible.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,24 @@
+schema_version: 2
+id: bc3d68bc-d77b-40a6-8f86-1ee3e2aee0f8
+title: Senior Business Developer - Amazon Marketplace
+company: Atolls
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-business-developer-amazon-marketplace-berlin-194836
+  url: https://www.arbeitnow.com/jobs/companies/atolls/senior-business-developer-amazon-marketplace-berlin-194836
+published_at: '2026-07-28T13:45:22Z'
+discovered_at: '2026-07-28T15:46:43Z'
+updated_at: '2026-07-28T15:46:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:43Z'
+analysis_priority: 0
+fingerprint: sha256:9bf2faa25f76a27698810a00c975db269213ea672c90c30c2a1b82acd84c6e69
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,6 +1,6 @@
 # Social Media Manager (m/w/d)
 
-Posted: 2026-07-28T09:00:37Z
+Posted: 2026-07-28T13:29:03Z
 
 Du brennst für Social Media, triffst Entscheidungen datenbasiert und liebst es, starke Ideen blitzschnell und verlässlich auf die Straße zu bringen? Dann wirst Du Dich hier wohlfühlen.
 
@@ -60,7 +60,7 @@ Du entwickelst die Content-Strategie für unsere neue Brand-Ausrichtung und brin
 
 **Du passt perfekt zu uns, wenn Du …**
 
-- **S**ocial Media eigenständig voranbringst statt „Content zu verwalten“.
+- Social Media eigenständig voranbringst statt „Content zu verwalten“.
 
 - genau weißt, wie man Reichweite, Follower und Engagement steuert.
 
@@ -98,4 +98,4 @@ Du entwickelst die Content-Strategie für unsere neue Brand-Ausrichtung und brin
 
 **Bereit, mit uns die 1 Mio. Follower zu knacken? Dann bewirb Dich jetzt!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

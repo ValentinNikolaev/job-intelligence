@@ -88,4 +88,4 @@ Everseen is committed to creating an environment where everyone can succeed. Our
 
 Everseen is committed to creating a safe environment for all employees and has a zero tolerance policy for bias and discrimination of any kind. Our work environment is one without offensive, hostile, or intimidating conduct, whether verbal, written or physical, in nature. Everseen will not tolerate prejudice or discrimination of any kind including without limitation, where based on aspects such as, race, colour, sex, gender, religion, age, family status, disability of any kind, sexual orientation.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

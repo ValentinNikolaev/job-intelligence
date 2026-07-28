@@ -1,0 +1,31 @@
+schema_version: 2
+id: 0bb512fb-428e-4ac5-b904-3ba2aa9a214e
+title: Elektronik Entwickler (all genders) Leistungselektronik
+company: TECOSIM GmbH
+company_url: null
+location: Dresden
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: elektronik-entwickler-all-genders-leistungselektronik-dresden-296850
+  url: https://www.arbeitnow.com/jobs/companies/tecosim-gmbh/elektronik-entwickler-all-genders-leistungselektronik-dresden-296850
+  metadata:
+    tags:
+    - Engineering
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-07-28T13:20:17Z'
+discovered_at: '2026-07-28T15:46:57Z'
+updated_at: '2026-07-28T15:46:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:57Z'
+analysis_priority: 0
+fingerprint: sha256:e71a88034ad93d9919cc102f42e4e1c2eec6df3a4f6d119b363a942327b19556
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 22b73257-9909-4f67-abcc-092d61950069
+title: Werkstudent (m/w/d) - Webdesign & Digital Content - remote
+company: eternus technology gmbh
+company_url: null
+location: Karlstein am Main
+remote: true
+employment_type: Working student
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-webdesign-digital-content-remote-karlstein-am-main-461794
+  url: https://www.arbeitnow.com/jobs/companies/eternus-technology-gmbh/werkstudent-webdesign-digital-content-remote-karlstein-am-main-461794
+  metadata:
+    tags:
+    - Remote
+    - Web Development
+    job_types:
+    - Working student
+published_at: '2026-07-28T14:00:47Z'
+discovered_at: '2026-07-28T15:46:40Z'
+updated_at: '2026-07-28T15:46:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:46:40Z'
+analysis_priority: 0
+fingerprint: sha256:9f197acccb18897cd55abb59bf223a66ce58c326055ec20ea40a7fdae9996f3e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

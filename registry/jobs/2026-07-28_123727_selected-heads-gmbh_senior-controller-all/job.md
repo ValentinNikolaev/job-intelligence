@@ -48,4 +48,4 @@ Klingt diese Position spannend aber Sie sind noch unentschlossen oder suchen ehe
 
 Sie kennen jmd., für den diese Position perfekt passen könnte? => Dann freuen wir uns auf Ihre Empfehlung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

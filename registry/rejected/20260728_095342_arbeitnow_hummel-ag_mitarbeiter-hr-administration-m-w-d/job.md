@@ -87,4 +87,4 @@ Lust auf ein Unternehmen, das Werte mit Fortschritt verbindet? Dann freuen wir u
 
 Dann werde Teil unseres HUMMEL-Teams am Standort . Wir freuen uns auf deine Bewerbung über unser Karriereportal unter Angabe deines Gehaltswunsches und deines frühestmöglichen Eintrittstermins. Du hast Fragen zur Stelle? Dann melde dich gern direkt bei unserer HR-Abteilung Tel. 07666/91110-811
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

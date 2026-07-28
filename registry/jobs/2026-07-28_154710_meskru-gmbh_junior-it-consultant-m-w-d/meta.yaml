@@ -1,0 +1,28 @@
+schema_version: 2
+id: 15cc5f6a-c8f3-4987-a71a-8669efd04bda
+title: Junior IT Consultant (m/w/d)
+company: MESKRU GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: junior-it-consultant-munich-377933
+  url: https://www.arbeitnow.com/jobs/companies/meskru-gmbh/junior-it-consultant-munich-377933
+  metadata:
+    tags:
+    - Consulting
+    - Engineering
+published_at: '2026-07-28T12:30:27Z'
+discovered_at: '2026-07-28T15:47:10Z'
+updated_at: '2026-07-28T15:47:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T15:47:10Z'
+analysis_priority: 0
+fingerprint: sha256:39d05bdedf3bc70aab0d647448c02e2a948736d135f77309ecffb2a308dcd9fd
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -76,4 +76,4 @@ Ein gut strukturierter Onboarding-Prozess sorgt dafür, dass du dich schnell in 
 
 Wenn du in einem starken Verbund deine Rolle zum Erfolg führen möchtest und in einem nachhaltigen Unternehmen Planungssicherheit suchst, dann zögere nicht – bewirb dich jetzt und werde Teil unseres magischen Teams!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
