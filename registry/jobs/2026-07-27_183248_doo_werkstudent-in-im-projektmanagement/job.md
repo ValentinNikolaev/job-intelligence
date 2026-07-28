@@ -35,4 +35,4 @@ Du bist auf der Suche nach einem spannenden Nebenjob, bei dem du von tollen Team
 - Hervorragende Erreichbarkeit, vor allem mit dem öffentlichen Nahverkehr
 - Mittelstand mit Startup-Feeling, schnellen Reaktionszeiten und schlanken Prozessen
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 44af8832-fb64-4899-8ead-09f12776ac05
+title: Senior Consultant Analytics & Consulting (Mensch)
+company: wppmedia
+company_url: null
+location: Dusseldorf
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-consultant-analytics-consulting-mensch-dusseldorf-469418
+  url: https://www.arbeitnow.com/jobs/companies/wppmedia/senior-consultant-analytics-consulting-mensch-dusseldorf-469418
+  metadata:
+    tags:
+    - Technology & Data
+published_at: '2026-07-27T23:56:20Z'
+discovered_at: '2026-07-28T00:29:23Z'
+updated_at: '2026-07-28T00:29:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T00:29:23Z'
+analysis_priority: 0
+fingerprint: sha256:0aeef0d3f9b79d447480f8750a033169108b3fb15c9c70a4f0af43dc60e99e16
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -47,4 +47,4 @@ Fühlen Sie sich angesprochen? Dann bewerben Sie sich jetzt!
 
 - Sie arbeiten gerne in einem kollaborativen Umfeld und schätzen die enge Zusammenarbeit mit Ihren Kolleginnen und Kollegen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

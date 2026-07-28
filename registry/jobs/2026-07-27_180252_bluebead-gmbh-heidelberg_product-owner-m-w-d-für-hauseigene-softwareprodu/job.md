@@ -1,14 +1,12 @@
 # Product Owner (m/w/d) für hauseigene Softwareprodukte für München
 
-Posted: 2026-07-27T17:00:35Z
+Posted: 2026-07-27T21:29:02Z
 
 Für unseren langjährigen Kunden, eine führende mittelständische Bank im Herzen Münchens, sind wir aktuell auf der Suche nach einem versierten Product Owner (m/w/d) für die hauseigenen Softwareprodukte in Festanstellung.
 
 Nachfolgend finden Sie die konkreten fachlichen Anforderungen.
 
 ## Aufgaben
-
-Ihre Aufgaben
 
 - Sie sind einer der Köpfe hinter der Weiterentwicklung unserer Softwareprodukte. Sie verstehen die Bedürfnisse unserer Kunden und unseres Vertriebs und entwickeln dafür maßgeschneiderte Lösungen, die auf die Kosten- und Marktfaktoren abgestimmt sind.
 
@@ -22,8 +20,6 @@ Ihre Aufgaben
 
 ## Qualifikation
 
-Ihr Profil
-
 - Ein abgeschlossenes Hochschulstudium (idealerweise in den Bereichen BWL, Immobilienwirtschaft, Wirtschaftsinformatik, o.ä.), alternativ eine abgeschlossene kaufmännische Ausbildung mit erster Erfahrung in der Wohnungswirtschaft
 
 - Erste Erfahrung im Produktmanagement
@@ -35,8 +31,6 @@ Ihr Profil
 - Freude an offenem Teamwork
 
 ## Benefits
-
-Wir bieten Ihnen
 
 - Tageweise mobiles Arbeiten
 
@@ -56,4 +50,4 @@ Sind Sie an der Vakanz interessiert?
 
 Dann freuen wir uns auf Ihre Nachricht.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

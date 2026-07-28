@@ -60,4 +60,4 @@ Klingt das nach dir? Dann freuen wir uns über deine Bewerbung.
 
 Ein Anschreiben brauchst du dafür nicht - ein kurzer Lebenslauf reicht!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

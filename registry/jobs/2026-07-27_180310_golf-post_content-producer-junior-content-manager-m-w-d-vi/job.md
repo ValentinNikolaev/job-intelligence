@@ -52,4 +52,4 @@ DIR GEFÄLLT, WAS DU LIEST?
 
 **Bewirb dich jetzt** unter jobs at golfpost .de und werde Teil unseres Teams! Dein Ansprechpartner ist Matthias.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

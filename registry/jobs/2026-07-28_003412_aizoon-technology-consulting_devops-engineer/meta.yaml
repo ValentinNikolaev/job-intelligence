@@ -1,0 +1,24 @@
+schema_version: 2
+id: 76d30d02-bf90-45a5-bb37-f53c7b0df6cf
+title: DevOps Engineer
+company: aizoOn Technology Consulting
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-7115263360123129037'
+  url: https://jooble.org/away/-7115263360123129037?p=1&pos=17&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=42&brelb=10&scr=35.95883&bscr=35.95883&aq=4529301897637218990&elckey=8823783364377346045
+published_at: '2026-07-26T00:00:00.0000000'
+discovered_at: '2026-07-28T00:34:12Z'
+updated_at: '2026-07-28T00:34:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T00:34:12Z'
+analysis_priority: 0
+fingerprint: sha256:ad7cdebe64bc6157d90eb09332b717d211aae3f989ec423893fc04ed82e97cdc
+data_source: jooble
+content_source: jooble
+company_content_source: null

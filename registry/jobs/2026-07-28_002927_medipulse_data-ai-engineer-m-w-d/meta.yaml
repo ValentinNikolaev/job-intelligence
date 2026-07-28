@@ -1,0 +1,27 @@
+schema_version: 2
+id: 74b6790d-f94b-402c-8291-c6aa74d1e31c
+title: Data & AI Engineer (m/w/d)
+company: MediPulse
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: data-ai-engineer-munich-125354
+  url: https://www.arbeitnow.com/jobs/companies/medipulse/data-ai-engineer-munich-125354
+  metadata:
+    tags:
+    - IT
+published_at: '2026-07-27T21:30:28Z'
+discovered_at: '2026-07-28T00:29:27Z'
+updated_at: '2026-07-28T00:29:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T00:29:27Z'
+analysis_priority: 0
+fingerprint: sha256:baecc003fedf105377a814bbda5e16beba29334569269b1eb34edd19f9092e65
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

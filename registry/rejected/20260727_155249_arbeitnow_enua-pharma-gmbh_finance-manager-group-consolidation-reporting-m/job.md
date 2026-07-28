@@ -71,4 +71,4 @@ Bei uns, einem etablierten Scale-up-Unternehmen auf einem disruptiven Markt, wir
 
 **Du möchtest dich unserer Mission anschließen? Dann bewirb dich bei uns, werde ein Teil unseres hoch ambitionierten Teams und revolutioniere mit uns eine gesamte Industrie!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

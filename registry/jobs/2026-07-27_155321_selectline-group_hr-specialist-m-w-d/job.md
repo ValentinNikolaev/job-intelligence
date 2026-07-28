@@ -1,12 +1,12 @@
 # HR Specialist (m/w/d)
 
-Posted: 2026-07-27T13:01:05Z
+Posted: 2026-07-27T21:59:04Z
 
 Mit mehr als 30 Jahren Erfahrung im Softwaremarkt haben wir uns als Vorreiter etabliert und setzen leidenschaftlich alles daran, Visionen in bahnbrechende Innovationen zu verwandeln. Unsere Mission ist es, Unternehmen zum Erfolg zu führen – und du kannst ein wichtiger Teil dieser Reise sein. Willkommen bei der SelectLine Group!
 
 **Du liebst Zahlen, hast aber auch den Blick für Menschen?** Dann bist du bei uns genau richtig! Wir suchen eine engagierte Persönlichkeit, die nicht nur die Entgeltabrechnung sicher im Griff hat, sondern auch Lust hat, sich in übergreifende HR-Themen einzubringen. In unserem Team HR & Culture übernimmst du Verantwortung, gestaltest aktiv mit und unterstützt unsere Mitarbeitenden und Führungskräfte in verschiedenen personalbezogenen Fragestellungen.
 
-**Bitte beachte: 2-3 Präsenztage in Mageburg sind hier notwendig**
+**Bitte beachte: 2 Präsenztage im Monat in Mageburg sind hier notwendig**
 
 ## Aufgaben
 
@@ -48,4 +48,4 @@ Mit mehr als 30 Jahren Erfahrung im Softwaremarkt haben wir uns als Vorreiter et
 
 - **Benefits, die den Unterschied mache**n: 30 Tage Urlaub, JobRad, Sommerfeste & Tech-Events, moderne Hardware & höhenverstellbare Tische – plus: ein stabiler Arbeitgeber mit Sinn fürs Team.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -98,4 +98,4 @@ You'll work closely with the client's in-house engineering team on a mix of ongo
 
 We're an equal-opportunity employer and value diversity in all its forms. We do not discriminate based on race, religion, colour, national origin, gender, sexual orientation, pregnancy or maternity, age, marital status, or disability. We offer a remote-first working environment, with flexible working and work–life balance as standard.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

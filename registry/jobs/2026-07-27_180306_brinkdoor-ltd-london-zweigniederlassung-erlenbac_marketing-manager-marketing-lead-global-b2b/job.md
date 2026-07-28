@@ -78,4 +78,4 @@ If you're an ambitious B2B marketer who enjoys building, influencing and creatin
 
 **Please contact me directly for a confidential conversation.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

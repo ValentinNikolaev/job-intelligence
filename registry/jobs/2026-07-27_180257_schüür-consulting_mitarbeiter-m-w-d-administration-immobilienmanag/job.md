@@ -92,4 +92,4 @@ Einen sehr abwechslungsreichen Job mit viel Eigenverantwortung
 
 Wenn Du Lust hast, von Anfang an dabei zu sein und Vielseitigkeit Dein Ding ist, freuen wir uns auf Deine Bewerbung mit Lebenslauf sowie einer kurzen Vorstellung deiner Motivation, Dein möglicher Starttermin und deiner Gehaltsvorstellung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
