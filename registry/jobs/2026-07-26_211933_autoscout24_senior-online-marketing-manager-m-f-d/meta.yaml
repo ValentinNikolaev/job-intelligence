@@ -15,11 +15,13 @@ sources:
     - Marketing & Communications
 published_at: '2026-07-26T02:55:12Z'
 discovered_at: '2026-07-26T21:19:33Z'
-updated_at: '2026-07-27T04:17:44Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-26T21:19:33Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:e3171b091a315f579ec737ed5b0173b06a1e9b7a0c49c68112ad0802bbf4a560
 data_source: arbeitnow

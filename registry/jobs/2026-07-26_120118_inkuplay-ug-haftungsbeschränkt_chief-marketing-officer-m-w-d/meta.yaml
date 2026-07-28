@@ -16,11 +16,13 @@ sources:
     - Strategic Marketing
 published_at: '2026-07-26T10:30:26Z'
 discovered_at: '2026-07-26T12:01:18Z'
-updated_at: '2026-07-26T21:19:05Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-26T12:01:18Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:a108d808b16168a787538b4e09fd0bad9d886514d78e1e77fbf9c45a45852375
 data_source: arbeitnow

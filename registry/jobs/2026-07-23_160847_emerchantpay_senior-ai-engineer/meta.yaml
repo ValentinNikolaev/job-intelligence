@@ -48,11 +48,13 @@ sources:
         geo: europe
 published_at: '2026-07-20T03:05:09Z'
 discovered_at: '2026-07-23T16:08:47Z'
-updated_at: '2026-07-23T16:08:47Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:08:47Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:3cabe65e83a12c0e593f3f0a3270f8b421a8187c62598ae86f4f57c2d14c1f2c
 data_source: jobicy
 content_source: jobicy

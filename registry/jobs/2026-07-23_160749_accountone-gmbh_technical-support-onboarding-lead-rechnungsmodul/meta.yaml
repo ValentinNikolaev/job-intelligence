@@ -15,11 +15,13 @@ sources:
     - Software Development
 published_at: '2026-07-23T10:30:28Z'
 discovered_at: '2026-07-23T16:07:49Z'
-updated_at: '2026-07-23T16:07:49Z'
-status: found
+updated_at: '2026-07-28T21:30:37Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:07:49Z'
+- status: rejected
+  changed_at: '2026-07-28T21:30:37Z'
 fingerprint: sha256:5da4613219b1a46308b3cf23b509ebb9ba2f2b1a1b3d16ad0c1256cf927e19ab
 data_source: arbeitnow
 content_source: arbeitnow

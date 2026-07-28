@@ -18,11 +18,13 @@ sources:
     - no experience required / student
 published_at: '2026-07-28T07:30:32Z'
 discovered_at: '2026-07-28T09:53:47Z'
-updated_at: '2026-07-28T09:53:47Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T09:53:47Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:fbef2ed9325a2d6983626a82a1636bd5fbd06e69763eefe30637a72afd9b532b
 data_source: arbeitnow

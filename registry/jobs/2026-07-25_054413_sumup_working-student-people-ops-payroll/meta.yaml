@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/sumup/working-student-people-ops-payroll-berlin-201583
 published_at: '2026-07-24T20:45:22Z'
 discovered_at: '2026-07-25T05:44:13Z'
-updated_at: '2026-07-26T18:04:05Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:44:13Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:0e72552b949cd41ea6ac38f2ab24a929ff88381b828ebb0d95a8fc838d503320
 data_source: arbeitnow

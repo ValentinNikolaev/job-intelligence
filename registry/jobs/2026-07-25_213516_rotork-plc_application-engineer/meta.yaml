@@ -12,11 +12,13 @@ sources:
   url: https://jooble.org/away/4138999310445533726?p=1&pos=21&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=60&brelb=10&scr=31.165342&bscr=31.165342&aq=2698422493289573700&elckey=-1084034017018064332
 published_at: '2026-07-26T00:00:00.0000000'
 discovered_at: '2026-07-25T21:35:16Z'
-updated_at: '2026-07-28T18:34:44Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T21:35:16Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:d5e820d412ee8a808819a962ee5e8a69bb65174d532889f1408e56c37894c55f
 data_source: jooble

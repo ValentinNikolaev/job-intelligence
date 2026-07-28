@@ -18,11 +18,13 @@ sources:
     - geschäftsleitung
 published_at: '2026-07-24T16:00:45Z'
 discovered_at: '2026-07-24T18:02:57Z'
-updated_at: '2026-07-26T18:04:51Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T18:02:57Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:a8914588cb11ce3b6735ab43e67d3ad4257aa4dc4d6465b254f1dc498d056c70
 data_source: arbeitnow

@@ -18,11 +18,13 @@ sources:
     - berufserfahren
 published_at: '2026-07-27T14:30:34Z'
 discovered_at: '2026-07-27T15:53:04Z'
-updated_at: '2026-07-28T00:30:36Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T15:53:04Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:7815dab3a5652521d5fa83e9ba717d885f28c1d38511a7f44110eca8aad2e655
 data_source: arbeitnow

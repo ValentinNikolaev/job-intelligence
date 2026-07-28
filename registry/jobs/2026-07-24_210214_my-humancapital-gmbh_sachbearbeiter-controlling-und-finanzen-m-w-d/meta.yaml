@@ -15,11 +15,13 @@ sources:
     - Controlling
 published_at: '2026-07-24T17:00:32Z'
 discovered_at: '2026-07-24T21:02:14Z'
-updated_at: '2026-07-26T15:02:53Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T21:02:14Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:5fd417ffd0a4d7ac0dc1de07ecda75451052c2c87a50a9e0230115ee7fcd7a4b
 data_source: arbeitnow

@@ -57,11 +57,13 @@ sources:
         count: '100'
 published_at: '2026-07-26T10:10:08Z'
 discovered_at: '2026-07-26T15:04:54Z'
-updated_at: '2026-07-26T15:04:54Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-26T15:04:54Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:402967cd074b9c368dd84cf7b34c5e9d7bdae7075a902bd39771ba14c65456a3
 data_source: jobicy

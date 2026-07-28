@@ -29,11 +29,13 @@ sources:
         geo: italy
 published_at: '2026-07-18T02:55:02Z'
 discovered_at: '2026-07-23T16:08:39Z'
-updated_at: '2026-07-23T16:08:39Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:08:39Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:03902314e45ef89a1132018a5700bd3f6b7e5b357252686f2dbd378040b6da89
 data_source: jobicy
 content_source: jobicy

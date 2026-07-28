@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/flora-food-group/project-engineering-manager-core-spreads-manufacturing-pratau-246770
 published_at: '2026-07-24T20:45:23Z'
 discovered_at: '2026-07-25T05:44:11Z'
-updated_at: '2026-07-26T12:01:48Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:44:11Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:e400fdf3c63f44d019a8c3bde3f120f876fb799caf6183211255ac5df5c8f675
 data_source: arbeitnow

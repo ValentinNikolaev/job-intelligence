@@ -16,11 +16,13 @@ sources:
     - Screen and Web Design
 published_at: '2026-07-24T12:31:10Z'
 discovered_at: '2026-07-24T15:02:31Z'
-updated_at: '2026-07-24T21:03:14Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T15:02:31Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:2d2c4d1bfeb3e5f0b14b0bb8c7c3870c2f72e6d08f2d5ed6b60359b90f5f60a0
 data_source: arbeitnow

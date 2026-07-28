@@ -74,11 +74,13 @@ sources:
         worldwide: 'true'
 published_at: '2026-07-23T18:15:43Z'
 discovered_at: '2026-07-24T09:59:06Z'
-updated_at: '2026-07-24T09:59:06Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T09:59:06Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:c02518c51d051ad99775db88f8a3d670ebb61762b063942e9c4dab31aabb4f80
 data_source: himalayas
 content_source: himalayas

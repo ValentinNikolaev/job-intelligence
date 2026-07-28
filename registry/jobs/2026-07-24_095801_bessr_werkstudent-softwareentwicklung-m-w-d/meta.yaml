@@ -18,11 +18,13 @@ sources:
     - Working student
 published_at: '2026-07-24T08:00:49Z'
 discovered_at: '2026-07-24T09:58:01Z'
-updated_at: '2026-07-24T18:04:03Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T09:58:01Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:180ced83fbd6bb3f06f57d5bf80436bfbfdffc3deaeaac806072b354931f17db
 data_source: arbeitnow
 content_source: arbeitnow

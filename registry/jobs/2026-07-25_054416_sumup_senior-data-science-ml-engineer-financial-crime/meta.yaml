@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/sumup/senior-data-science-ml-engineer-financial-crime-berlin-119994
 published_at: '2026-07-24T20:45:22Z'
 discovered_at: '2026-07-25T05:44:16Z'
-updated_at: '2026-07-26T18:04:08Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:44:16Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:7de66799cb7f90c44e412e978987cbad86a4a68fe3cbb65090b23faaad229ada
 data_source: arbeitnow

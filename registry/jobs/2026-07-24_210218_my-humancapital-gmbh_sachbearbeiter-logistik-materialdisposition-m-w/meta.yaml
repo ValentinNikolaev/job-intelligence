@@ -15,11 +15,13 @@ sources:
     - Consulting
 published_at: '2026-07-24T17:00:30Z'
 discovered_at: '2026-07-24T21:02:18Z'
-updated_at: '2026-07-26T15:02:57Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T21:02:18Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:1432d376a04abce00b89d16cff8f5f8631aa82eadd531377bc6805850c586a17
 data_source: arbeitnow

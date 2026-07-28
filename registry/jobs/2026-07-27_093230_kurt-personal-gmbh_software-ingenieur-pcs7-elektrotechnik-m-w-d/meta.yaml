@@ -15,11 +15,13 @@ sources:
     - IT Security
 published_at: '2026-07-27T06:30:34Z'
 discovered_at: '2026-07-27T09:32:30Z'
-updated_at: '2026-07-27T10:20:06Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T09:32:30Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:4078489be7d39a81360c28b6b37fdfcc3c0a6f99812df7f31d78482ab83fe399
 data_source: arbeitnow

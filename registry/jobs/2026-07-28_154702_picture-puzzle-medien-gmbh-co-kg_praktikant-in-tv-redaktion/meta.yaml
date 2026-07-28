@@ -17,11 +17,13 @@ sources:
     - Internship
 published_at: '2026-07-28T13:00:31Z'
 discovered_at: '2026-07-28T15:47:02Z'
-updated_at: '2026-07-28T18:31:12Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T15:47:02Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:851e87fd619d9a14119a266d282cb8de6660befa4dad24278fc5b9decf2fa183
 data_source: arbeitnow

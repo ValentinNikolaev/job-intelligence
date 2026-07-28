@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/retailnext/associate-account-director-berlin-444845
 published_at: '2026-07-24T20:45:23Z'
 discovered_at: '2026-07-25T05:44:12Z'
-updated_at: '2026-07-26T18:04:04Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:44:12Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:5f9640239e26ee7696c7706c78d6b501816bb92501560098f09345d9f4e978c2
 data_source: arbeitnow

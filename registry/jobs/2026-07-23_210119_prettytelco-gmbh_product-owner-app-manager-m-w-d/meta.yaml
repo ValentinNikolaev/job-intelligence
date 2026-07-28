@@ -15,11 +15,13 @@ sources:
     - Project Management
 published_at: '2026-07-23T16:30:29Z'
 discovered_at: '2026-07-23T21:01:19Z'
-updated_at: '2026-07-24T12:03:14Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T21:01:19Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:17fe0f1683508587cca4fb62cbccd410bcf9b3e2ee7959a9c18bd5c41bdb2229
 data_source: arbeitnow
 content_source: arbeitnow

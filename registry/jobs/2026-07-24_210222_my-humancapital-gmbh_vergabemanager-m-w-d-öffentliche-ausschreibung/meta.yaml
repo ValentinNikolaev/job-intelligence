@@ -16,11 +16,13 @@ sources:
     - Security
 published_at: '2026-07-24T17:00:29Z'
 discovered_at: '2026-07-24T21:02:22Z'
-updated_at: '2026-07-26T18:04:35Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T21:02:22Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:ddd2203653dcdccf70d7f8c2d4cff2839cc64d4814bd402e6db379a8ee1d9f1a
 data_source: arbeitnow

@@ -15,11 +15,13 @@ sources:
     - Enterprise & Commercial Sales
 published_at: '2026-07-27T02:56:12Z'
 discovered_at: '2026-07-27T04:16:43Z'
-updated_at: '2026-07-27T12:04:21Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T04:16:43Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:691e7dee14a4c4ed04060db3d5093347f915d8ed58245993056d4d1c1c5b3d18
 data_source: arbeitnow

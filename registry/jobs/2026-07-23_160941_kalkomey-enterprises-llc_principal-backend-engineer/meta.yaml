@@ -12,11 +12,13 @@ sources:
   url: https://jooble.org/away/7105679920577710958?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=51&brelb=15&scr=525.99133&bscr=525.99133&aq=3092193580830441261&elckey=-2013580307790599481
 published_at: '2026-07-25T00:00:00.0000000'
 discovered_at: '2026-07-23T16:09:41Z'
-updated_at: '2026-07-27T09:36:51Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:09:41Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:e4354b200402b779a368a48ae5e3fe907e565f6617263e8f87e9d854da5751c6
 data_source: jooble
 content_source: jooble

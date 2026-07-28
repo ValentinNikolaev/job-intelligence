@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/flix/principal-corporate-law-corporate-financing-munchen-34648
 published_at: '2026-07-25T06:45:22Z'
 discovered_at: '2026-07-25T08:01:46Z'
-updated_at: '2026-07-26T18:03:48Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T08:01:46Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:d4fc7670e29f3782f927c72e9ae84273a0a6bd77053b423affabe0e3c8fbbd1c
 data_source: arbeitnow

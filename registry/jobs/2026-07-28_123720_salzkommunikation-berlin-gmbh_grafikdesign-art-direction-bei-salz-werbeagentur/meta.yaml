@@ -15,11 +15,13 @@ sources:
     - Graphic Arts and Communication Design
 published_at: '2026-07-28T10:30:40Z'
 discovered_at: '2026-07-28T12:37:20Z'
-updated_at: '2026-07-28T12:37:20Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T12:37:20Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:42379c3669e361262710aba2e8a6a4d8b07c5f6856f95ba5fa5deaf28db7e73c
 data_source: arbeitnow

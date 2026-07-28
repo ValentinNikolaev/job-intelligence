@@ -15,11 +15,13 @@ sources:
     - Product & Design
 published_at: '2026-07-27T08:55:44Z'
 discovered_at: '2026-07-27T09:31:59Z'
-updated_at: '2026-07-27T10:19:37Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T09:31:59Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:2f2d3afda754748c62cc8f6362b1ccfbc1a0919674c1cb8bd5888ed89f4bc1dc
 data_source: arbeitnow

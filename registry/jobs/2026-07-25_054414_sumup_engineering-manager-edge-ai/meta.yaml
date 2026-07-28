@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/sumup/engineering-manager-edge-ai-berlin-258996
 published_at: '2026-07-24T20:45:22Z'
 discovered_at: '2026-07-25T05:44:14Z'
-updated_at: '2026-07-26T18:04:06Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:44:14Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:d09887134593689d61729a3858a387c7cdaaeeab2ee1c7d2bfd2941045c789ff
 data_source: arbeitnow

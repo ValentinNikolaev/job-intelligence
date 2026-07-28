@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/clariness/senior-vp-sales-berlin-154337
 published_at: '2026-07-23T20:45:23Z'
 discovered_at: '2026-07-24T09:58:12Z'
-updated_at: '2026-07-24T15:03:11Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T09:58:12Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:4ec8c4ed07df47ed29bfa60889be3244972cf082842680996e35ad0dde2f2c0f
 data_source: arbeitnow
 content_source: arbeitnow

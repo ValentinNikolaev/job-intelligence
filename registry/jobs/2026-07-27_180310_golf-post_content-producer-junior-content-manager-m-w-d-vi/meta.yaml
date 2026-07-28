@@ -17,11 +17,13 @@ sources:
     - Traineeship
 published_at: '2026-07-28T00:29:03Z'
 discovered_at: '2026-07-27T18:03:10Z'
-updated_at: '2026-07-28T06:54:29Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T18:03:10Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:f8d7ae91b2ff5baeffc5adb4f3bb3ac02e1eb2f1e077f84dcc084c35204e122f
 data_source: arbeitnow

@@ -15,11 +15,13 @@ sources:
     - Process Engineering
 published_at: '2026-07-27T16:30:28Z'
 discovered_at: '2026-07-27T18:03:00Z'
-updated_at: '2026-07-27T18:33:01Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T18:03:00Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:60e45e645bfc26a07b089a26bb6fc832244802df1abced215da3b1adf66af8f3
 data_source: arbeitnow

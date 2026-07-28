@@ -16,11 +16,13 @@ sources:
     - Industrial Design
 published_at: '2026-07-23T12:00:59Z'
 discovered_at: '2026-07-23T16:07:45Z'
-updated_at: '2026-07-23T16:07:45Z'
-status: found
+updated_at: '2026-07-28T21:30:10Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:07:45Z'
+- status: rejected
+  changed_at: '2026-07-28T21:30:10Z'
 fingerprint: sha256:0eaef2c513b8b45b1a3a751060347d6f84880d0b736ec923e4fc98f60f11c666
 data_source: arbeitnow
 content_source: arbeitnow

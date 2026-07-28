@@ -15,11 +15,13 @@ sources:
     - Creative Production
 published_at: '2026-07-28T14:57:48Z'
 discovered_at: '2026-07-28T15:46:14Z'
-updated_at: '2026-07-28T15:46:14Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T15:46:14Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:531fca73989bd2fe40394a888e636fa73adee660308e70eb491fb0a55f3db193
 data_source: arbeitnow

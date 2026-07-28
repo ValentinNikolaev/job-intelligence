@@ -15,11 +15,13 @@ sources:
     - Autonomous Driving & Vehicle Systems
 published_at: '2026-07-28T05:56:18Z'
 discovered_at: '2026-07-28T06:53:05Z'
-updated_at: '2026-07-28T09:54:10Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T06:53:05Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:285f3ce163f61d2f1a25a2707688505e5488324a7ed6069057542c115f87d8cf
 data_source: arbeitnow

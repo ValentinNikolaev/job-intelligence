@@ -162,11 +162,13 @@ sources:
       summaryComponents: []
 published_at: '2026-07-27T13:58:01.090+00:00'
 discovered_at: '2026-07-27T15:54:30Z'
-updated_at: '2026-07-27T15:54:30Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T15:54:30Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:ca8e92b4d6c981d747d08e7b4cdd4efb21b57421ec7da239925666badcd6feb7
 data_source: ashby

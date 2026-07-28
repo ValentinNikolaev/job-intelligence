@@ -18,11 +18,13 @@ sources:
     - parttime fixed term
 published_at: '2026-07-26T05:31:35Z'
 discovered_at: '2026-07-26T21:19:24Z'
-updated_at: '2026-07-26T21:19:24Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-26T21:19:24Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:4283d1d5e5f19f3bfff229a38ed4db5d735ad72a4f6fb61dfefff01d6373f59a
 data_source: arbeitnow

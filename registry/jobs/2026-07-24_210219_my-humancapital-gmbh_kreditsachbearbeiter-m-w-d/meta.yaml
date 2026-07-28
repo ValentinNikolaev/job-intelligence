@@ -15,11 +15,13 @@ sources:
     - Credit Analysis
 published_at: '2026-07-24T17:00:30Z'
 discovered_at: '2026-07-24T21:02:19Z'
-updated_at: '2026-07-26T18:04:32Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T21:02:19Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:10bfa0ebb3fd6342b22dee6f7a1ea32608c98fafb0cae20bf8a1d0ed0b4a7d5a
 data_source: arbeitnow

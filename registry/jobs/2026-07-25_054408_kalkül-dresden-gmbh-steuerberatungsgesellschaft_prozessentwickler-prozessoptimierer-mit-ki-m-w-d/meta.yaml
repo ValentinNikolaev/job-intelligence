@@ -19,11 +19,13 @@ sources:
     - student (high school)
 published_at: '2026-07-25T01:20:11Z'
 discovered_at: '2026-07-25T05:44:08Z'
-updated_at: '2026-07-26T15:02:28Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:44:08Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:67513d83a06ff760deb139844f38f905fac8b857aceaba4373c2522ebb9f3f36
 data_source: arbeitnow

@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/atolls/senior-business-developer-amazon-marketplace-berlin-194836
 published_at: '2026-07-28T13:45:22Z'
 discovered_at: '2026-07-28T15:46:43Z'
-updated_at: '2026-07-28T18:30:59Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T15:46:43Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:9bf2faa25f76a27698810a00c975db269213ea672c90c30c2a1b82acd84c6e69
 data_source: arbeitnow

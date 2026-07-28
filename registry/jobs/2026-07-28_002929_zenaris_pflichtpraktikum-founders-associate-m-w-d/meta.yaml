@@ -18,11 +18,13 @@ sources:
     - hilfstätigkeit / student
 published_at: '2026-07-27T21:00:30Z'
 discovered_at: '2026-07-28T00:29:29Z'
-updated_at: '2026-07-28T09:54:38Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T00:29:29Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:ca3a54da3b99c09064f1d6a52d29281059035dda0e1f5ad2e4c73e7bd269a1d8
 data_source: arbeitnow

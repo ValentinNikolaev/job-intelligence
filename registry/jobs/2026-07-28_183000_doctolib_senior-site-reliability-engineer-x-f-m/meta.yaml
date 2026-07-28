@@ -15,11 +15,13 @@ sources:
     - Engineering
 published_at: '2026-07-28T17:56:25Z'
 discovered_at: '2026-07-28T18:30:00Z'
-updated_at: '2026-07-28T18:30:00Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T18:30:00Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:b8f8aea9f085db209f54fd88d89b092bbd5f826c31e7039794fd1b5d88c4df1e
 data_source: arbeitnow

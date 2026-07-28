@@ -17,11 +17,13 @@ sources:
     - professional / experienced
 published_at: '2026-07-23T11:30:40Z'
 discovered_at: '2026-07-23T16:07:47Z'
-updated_at: '2026-07-23T16:07:47Z'
-status: found
+updated_at: '2026-07-28T21:30:17Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:07:47Z'
+- status: rejected
+  changed_at: '2026-07-28T21:30:17Z'
 fingerprint: sha256:de557ba57e02545b53f651b945c86e70d5cf8e6c40463739dd932644dc57812a
 data_source: arbeitnow
 content_source: arbeitnow

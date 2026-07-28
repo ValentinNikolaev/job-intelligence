@@ -233,11 +233,13 @@ sources:
         sort: recent
 published_at: '2026-07-27T10:37:19Z'
 discovered_at: '2026-07-27T12:06:54Z'
-updated_at: '2026-07-28T12:41:19Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T12:06:54Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:f07d466e6acae9780e63ba8f93b9d5cfea08b7c07cd4559cc283ba9b03a5727c
 data_source: himalayas

@@ -16,11 +16,13 @@ sources:
     - Remote
 published_at: '2026-07-27T20:40:37Z'
 discovered_at: '2026-07-27T21:24:52Z'
-updated_at: '2026-07-28T06:53:43Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T21:24:52Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:1519a1ffed4c47ba07aa4e21ca92d9aa82ce2d5217a4bb50cec6f7d89bcfb26c
 data_source: arbeitnow

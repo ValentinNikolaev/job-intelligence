@@ -17,11 +17,13 @@ sources:
     - teamleitung
 published_at: '2026-07-24T12:31:11Z'
 discovered_at: '2026-07-24T15:02:30Z'
-updated_at: '2026-07-24T21:03:12Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T15:02:30Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:482ebea1afd11d9253f8a2f9d41979ac14c69f069bbe8d32889e75e457ffec1e
 data_source: arbeitnow

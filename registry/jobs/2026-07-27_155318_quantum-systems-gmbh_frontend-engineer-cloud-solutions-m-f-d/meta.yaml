@@ -19,11 +19,13 @@ sources:
     - mid
 published_at: '2026-07-27T13:20:16Z'
 discovered_at: '2026-07-27T15:53:18Z'
-updated_at: '2026-07-27T18:04:01Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T15:53:18Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:e8ead50e29e8a23edc68271fdbb650be9744ba48b354263281614c8892977332
 data_source: arbeitnow

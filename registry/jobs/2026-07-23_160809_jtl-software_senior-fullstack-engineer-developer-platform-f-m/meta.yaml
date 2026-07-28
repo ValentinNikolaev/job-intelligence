@@ -185,11 +185,13 @@ sources:
         seniority: Senior
 published_at: '2026-07-19T12:14:29Z'
 discovered_at: '2026-07-23T16:08:09Z'
-updated_at: '2026-07-23T16:08:09Z'
-status: found
+updated_at: '2026-07-28T21:31:29Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:08:09Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:29Z'
 fingerprint: sha256:73e54bdb855616e605ecb26125238103fbddce155bbbfadb8d23d54634205398
 data_source: himalayas
 content_source: himalayas

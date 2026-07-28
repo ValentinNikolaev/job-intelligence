@@ -15,11 +15,13 @@ sources:
     - Customer Service
 published_at: '2026-07-24T17:00:32Z'
 discovered_at: '2026-07-24T21:02:12Z'
-updated_at: '2026-07-26T15:02:51Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T21:02:12Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:b1863d45878e4840eff4e56ff7a0d1e2c0487f116fde4b79f531861ff94709fe
 data_source: arbeitnow

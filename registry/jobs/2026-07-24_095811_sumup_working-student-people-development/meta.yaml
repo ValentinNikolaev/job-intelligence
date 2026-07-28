@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/sumup/working-student-people-development-berlin-62220
 published_at: '2026-07-23T20:45:25Z'
 discovered_at: '2026-07-24T09:58:11Z'
-updated_at: '2026-07-24T09:58:11Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-24T09:58:11Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:fa7952e2647b4c9413b9ff129ce62bbfedf67a2624ed8a275aced8f161218f95
 data_source: arbeitnow
 content_source: arbeitnow

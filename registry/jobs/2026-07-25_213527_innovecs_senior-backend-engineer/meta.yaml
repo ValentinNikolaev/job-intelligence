@@ -12,11 +12,13 @@ sources:
   url: https://jooble.org/away/853293091640163096?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=124&brelb=15&scr=2635.5347&bscr=2635.5347&aq=-5181029894241290638&elckey=8537668609327034151
 published_at: '2026-07-22T00:00:00.0000000'
 discovered_at: '2026-07-25T21:35:27Z'
-updated_at: '2026-07-27T10:23:53Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T21:35:27Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:085c2d271b43a4c102ae8965fa08a085facb2843b1abf2fe4099ffcc9745e76d
 data_source: jooble

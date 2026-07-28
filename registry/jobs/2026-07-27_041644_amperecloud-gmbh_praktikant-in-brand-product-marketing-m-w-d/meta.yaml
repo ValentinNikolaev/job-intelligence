@@ -18,11 +18,13 @@ sources:
     - fulltime fixed term
 published_at: '2026-07-26T23:30:49Z'
 discovered_at: '2026-07-27T04:16:44Z'
-updated_at: '2026-07-27T12:04:23Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T04:16:44Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:99719e0ec9ae1fa2a4e4ee243421f1951cc466e6e790a43b91648034271291ff
 data_source: arbeitnow

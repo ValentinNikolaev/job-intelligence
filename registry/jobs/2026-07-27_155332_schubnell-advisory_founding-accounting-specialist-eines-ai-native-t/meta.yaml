@@ -17,11 +17,13 @@ sources:
     - Chief Executives
 published_at: '2026-07-27T16:59:02Z'
 discovered_at: '2026-07-27T15:53:32Z'
-updated_at: '2026-07-27T21:26:51Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T15:53:32Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:cbbab34f7de1d0b760681019c7ae2e72d1b84cd99232a13141f22a80011734e4
 data_source: arbeitnow

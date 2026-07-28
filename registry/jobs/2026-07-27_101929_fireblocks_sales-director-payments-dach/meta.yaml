@@ -15,11 +15,13 @@ sources:
     - Sales
 published_at: '2026-07-27T09:16:12Z'
 discovered_at: '2026-07-27T10:19:29Z'
-updated_at: '2026-07-27T10:19:29Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T10:19:29Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:58782e1ad1d743a87ec6195fda2517d95d45affe2a39f4116e553f11e2869977
 data_source: arbeitnow

@@ -18,11 +18,13 @@ sources:
     - Contract
 published_at: '2026-07-27T11:30:28Z'
 discovered_at: '2026-07-27T13:03:52Z'
-updated_at: '2026-07-27T18:34:32Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T13:03:52Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:65bfb9d38db8a20223278d0514c4294f0630020763d4a54764b84146c00eb5b3
 data_source: arbeitnow

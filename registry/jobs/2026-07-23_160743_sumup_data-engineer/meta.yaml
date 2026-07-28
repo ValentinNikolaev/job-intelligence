@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/sumup/data-engineer-berlin-193215
 published_at: '2026-07-23T13:45:21Z'
 discovered_at: '2026-07-23T16:07:43Z'
-updated_at: '2026-07-23T16:07:43Z'
-status: found
+updated_at: '2026-07-28T21:29:36Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:07:43Z'
+- status: rejected
+  changed_at: '2026-07-28T21:29:36Z'
 fingerprint: sha256:a9b7310a9a850176d467cc9c624772c90b21a0cb8b2dd7b1e7d279f0fd9659db
 data_source: arbeitnow
 content_source: arbeitnow

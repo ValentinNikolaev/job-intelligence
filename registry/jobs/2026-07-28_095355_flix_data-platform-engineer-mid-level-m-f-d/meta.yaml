@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/flix/data-platform-engineer-mid-level-berlin-231606
 published_at: '2026-07-28T06:45:24Z'
 discovered_at: '2026-07-28T09:53:55Z'
-updated_at: '2026-07-28T09:53:55Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T09:53:55Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:22dcc4c3e9464207ff13cd5b07efbfbcb54f8ca0f8b7a5d770e855d3f85b5132
 data_source: arbeitnow

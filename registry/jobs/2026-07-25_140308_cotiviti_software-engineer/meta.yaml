@@ -80,11 +80,13 @@ sources:
         sort: recent
 published_at: '2026-07-25T12:25:05Z'
 discovered_at: '2026-07-25T14:03:08Z'
-updated_at: '2026-07-28T12:41:25Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T14:03:08Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:100290b7d8dbc9e425ca1ba9fb929155a18ae082978ecf9d90aaaffbfe658431
 data_source: himalayas

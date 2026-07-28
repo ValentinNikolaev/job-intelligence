@@ -15,11 +15,13 @@ sources:
     - Marketing
 published_at: '2026-07-25T23:55:08Z'
 discovered_at: '2026-07-26T21:19:41Z'
-updated_at: '2026-07-26T21:19:41Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-26T21:19:41Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:1e6b8cfc6d5f5f900fb6a3f2d1ff968898d8fa5735a799002691f03f60dd3637
 data_source: arbeitnow

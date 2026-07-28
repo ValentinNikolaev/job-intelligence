@@ -15,11 +15,13 @@ sources:
     - Sales Engineer
 published_at: '2026-07-27T16:30:28Z'
 discovered_at: '2026-07-27T18:03:02Z'
-updated_at: '2026-07-27T21:25:34Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T18:03:02Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:a5fcde41793336267b66164622a761f1df4f51d048c7b32b087bf500d1f8ac9d
 data_source: arbeitnow

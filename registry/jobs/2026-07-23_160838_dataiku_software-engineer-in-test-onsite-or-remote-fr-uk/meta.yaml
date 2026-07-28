@@ -41,11 +41,13 @@ sources:
         tag: platform engineer
 published_at: '2026-07-18T19:40:05Z'
 discovered_at: '2026-07-23T16:08:38Z'
-updated_at: '2026-07-25T17:04:14Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-23T16:08:38Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 fingerprint: sha256:b5288f12a3310a696674ab81e05edd98fdf549074b627d06298810f30dc1f12d
 data_source: jobicy
 content_source: jobicy

@@ -17,11 +17,13 @@ sources:
     - berufseinstieg
 published_at: '2026-07-28T09:30:45Z'
 discovered_at: '2026-07-28T12:37:43Z'
-updated_at: '2026-07-28T12:37:43Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T12:37:43Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:91a249d8768a9855c013d3b06aae0d3fffc684632b45c2c79d729cf182b211a2
 data_source: arbeitnow

@@ -19,11 +19,13 @@ sources:
     - student (college)
 published_at: '2026-07-28T15:20:16Z'
 discovered_at: '2026-07-28T18:30:28Z'
-updated_at: '2026-07-28T18:30:28Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T18:30:28Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:1ab04ca2889ed8c277aee03527d3f4465f774763128d79fae0072510873015b3
 data_source: arbeitnow

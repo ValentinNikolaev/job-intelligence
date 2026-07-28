@@ -17,11 +17,13 @@ sources:
     - Safety Services Engineering
 published_at: '2026-07-28T10:00:47Z'
 discovered_at: '2026-07-28T12:37:34Z'
-updated_at: '2026-07-28T12:37:34Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-28T12:37:34Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:cafed0ec11467cedcfc63f24ca8ab017b11a0694cc173009648299407b46df6b
 data_source: arbeitnow

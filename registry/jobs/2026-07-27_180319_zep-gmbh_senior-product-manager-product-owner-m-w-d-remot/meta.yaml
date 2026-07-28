@@ -16,11 +16,13 @@ sources:
     - Product Management
 published_at: '2026-07-27T15:00:33Z'
 discovered_at: '2026-07-27T18:03:19Z'
-updated_at: '2026-07-28T00:30:18Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T18:03:19Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:2088236658c758725912afa10ac4318fc1990f6686a2824e2335fce48e7e3b00
 data_source: arbeitnow

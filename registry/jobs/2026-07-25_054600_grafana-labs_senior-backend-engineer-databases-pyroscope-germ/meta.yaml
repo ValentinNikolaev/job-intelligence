@@ -49,11 +49,13 @@ sources:
     ai_opt_out_request_url: http://app4.greenhouse.io/ai_opt_out_request/job_post/6126930004/ai_opt_out
 published_at: '2026-07-24T16:46:49-04:00'
 discovered_at: '2026-07-25T05:46:00Z'
-updated_at: '2026-07-25T05:46:00Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-25T05:46:00Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:debf2f46c0cb1f741325806949cf9207ca01df79ef2abb11def2fa9b9de18055
 data_source: greenhouse

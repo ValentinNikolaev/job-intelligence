@@ -15,11 +15,13 @@ sources:
     - Finance
 published_at: '2026-07-27T13:01:04Z'
 discovered_at: '2026-07-27T15:53:22Z'
-updated_at: '2026-07-27T21:26:40Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-27T15:53:22Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:54a6e4b1f6e0c0ee28b91be804a074b52a829d1a2d1aef2c273d4b0a431013f0
 data_source: arbeitnow

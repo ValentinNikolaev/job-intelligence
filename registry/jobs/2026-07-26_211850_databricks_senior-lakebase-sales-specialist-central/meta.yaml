@@ -15,11 +15,13 @@ sources:
     - HQ Management
 published_at: '2026-07-26T17:55:36Z'
 discovered_at: '2026-07-26T21:18:50Z'
-updated_at: '2026-07-27T07:09:00Z'
-status: found
+updated_at: '2026-07-28T21:31:57Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-26T21:18:50Z'
+- status: rejected
+  changed_at: '2026-07-28T21:31:57Z'
 analysis_priority: 0
 fingerprint: sha256:408c36b79d30ac349cdb7fdf8fec59eb729edfa41dcad9b02f18dff623eaad70
 data_source: arbeitnow
