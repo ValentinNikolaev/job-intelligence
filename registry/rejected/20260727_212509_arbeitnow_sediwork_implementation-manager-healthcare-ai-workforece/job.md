@@ -133,4 +133,4 @@ Mit SEDIWORK schaffen wir die technologische Grundlage für kompetenzbasierte We
 
 Wenn du Verantwortung übernehmen, komplexe Projekte erfolgreich umsetzen und gemeinsam mit uns das Gesundheitswesen nachhaltig verändern möchtest, freuen wir uns auf deine Bewerbung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

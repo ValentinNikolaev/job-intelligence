@@ -25,4 +25,4 @@ a { text-decoration: none; color: #464feb; } tr th, tr td { border: 1px solid #e
 - Fluent German (C1) and English.
 - EU-based location.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

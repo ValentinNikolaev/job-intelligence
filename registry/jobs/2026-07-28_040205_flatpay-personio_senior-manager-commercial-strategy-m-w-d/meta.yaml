@@ -1,0 +1,37 @@
+schema_version: 2
+id: b270d658-fcc5-4622-a6fe-7e46037aba54
+title: Senior Manager - Commercial Strategy (m/w/d)
+company: Flatpay - Personio
+company_url: null
+location: Berlin
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-manager-commercial-strategy-berlin-175359
+  url: https://www.arbeitnow.com/jobs/companies/flatpay-personio/senior-manager-commercial-strategy-berlin-175359
+  metadata:
+    tags:
+    - Sales
+    - Commercial
+    - Strategy
+    - Commercial Excellence
+    - Business Development
+    - Consulting
+    - Sales Operations
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-28T02:09:06Z'
+discovered_at: '2026-07-28T04:02:05Z'
+updated_at: '2026-07-28T04:02:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T04:02:05Z'
+analysis_priority: 0
+fingerprint: sha256:1d55f575c8a5659a5a69a482c3dfb413008e68badcd7979cd06183aaadaac41f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

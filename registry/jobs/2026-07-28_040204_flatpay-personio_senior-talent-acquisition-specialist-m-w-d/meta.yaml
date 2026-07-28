@@ -1,0 +1,35 @@
+schema_version: 2
+id: 0bc9a195-c348-40d4-be77-b22bddd72bc1
+title: Senior Talent Acquisition Specialist (m/w/d)
+company: Flatpay - Personio
+company_url: null
+location: Berlin
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-talent-acquisition-specialist-berlin-398604
+  url: https://www.arbeitnow.com/jobs/companies/flatpay-personio/senior-talent-acquisition-specialist-berlin-398604
+  metadata:
+    tags:
+    - Recruitment
+    - Talent
+    - Talent Acquisition
+    - Hiring
+    - Personalbeschaffung
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-28T02:09:06Z'
+discovered_at: '2026-07-28T04:02:04Z'
+updated_at: '2026-07-28T04:02:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T04:02:04Z'
+analysis_priority: 0
+fingerprint: sha256:7b42370f26620387fca50cd6250fef63459be698fda667b800c142c8c10fee58
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,6 +1,6 @@
 # Content Producer / Junior Content Manager (m/w/d) - Video, Interviews & Golf-Storys
 
-Posted: 2026-07-27T15:30:47Z
+Posted: 2026-07-28T00:29:03Z
 
 Hi, wir sind Golf Post, das digitale Zuhause für Golfer. Von Köln aus erreichen wir jeden Monat hunderttausende Golfbegeisterte in sieben Sprachen — und wir arbeiten mit dem wohl modernsten KI-Setup im Sportjournalismus: Bei uns schreibt die KI die Artikel. Du entscheidest, welche Geschichten erzählt werden.
 

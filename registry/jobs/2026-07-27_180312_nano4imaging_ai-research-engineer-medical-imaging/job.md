@@ -48,4 +48,4 @@ As part of our AI team, you will contribute to our next-generation AI-powered na
 
 Excited to apply AI to solve real-world challenges in medical imaging? We look forward to receiving your application.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

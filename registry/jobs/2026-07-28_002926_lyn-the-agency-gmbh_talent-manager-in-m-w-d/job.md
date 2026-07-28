@@ -1,6 +1,6 @@
 # Talent Manager*in (m/w/d)
 
-Posted: 2026-07-27T22:30:27Z
+Posted: 2026-07-28T02:59:03Z
 
 Lyn the Agency ist eine etablierte Social Media Agentur mit Fokus auf Talent Management, Influencer Marketing und Brand Experiences.
 

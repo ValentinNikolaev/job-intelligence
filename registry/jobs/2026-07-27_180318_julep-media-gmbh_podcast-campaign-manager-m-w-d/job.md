@@ -64,4 +64,4 @@ Ein Arbeitsumfeld, in dem Ideen gehört und Weiterentwicklungen gefördert werde
 
 Du hast Bock? Melde dich bei uns 💌
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

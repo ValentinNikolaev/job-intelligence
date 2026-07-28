@@ -92,4 +92,4 @@ Ein Video ist fester Bestandteil Deiner Bewerbung und hilft uns, neben Deiner Er
 
 Wir freuen uns darauf, mehr über Dich zu erfahren!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

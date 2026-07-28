@@ -1,19 +1,17 @@
 # Finance Manager (m/w/d)
 
-Posted: 2026-07-27T22:00:30Z
+Posted: 2026-07-28T02:29:02Z
 
 ## Rejection
 
 - Category: language_requirement
 - Reason: hard German language requirement without English green light
 
-**Lyn the Agency** ist eine der führenden Social-Media- und Creator-Agenturen Deutschlands mit Fokus auf Talent Management, Influencer Marketing und Brand Experiences.
+Lyn the Agency ist eine etablierte Social Media Agentur mit Fokus auf Talent Management, Influencer Marketing und Brand Experiences.
 
-Wir begleiten ausgewählte Creator strategisch, kreativ und operativ und entwickeln gemeinsam nachhaltige Karrieren sowie authentische Markenpartnerschaften.
+Wir arbeiten eng mit ausgewählten Creatorn zusammen und begleiten sie ganzheitlich – strategisch, kreativ und operativ.
 
-Was uns auszeichnet? Ein junges, ambitioniertes Team, flache Hierarchien, viel Eigenverantwortung und kurze Entscheidungswege.
-
-Bei uns hast du die Möglichkeit, Prozesse aktiv mitzugestalten, Verantwortung zu übernehmen und in einem modernen Arbeitsumfeld mit spannenden Projekten und namhaften Marken zu arbeiten.
+Unser Anspruch ist es, nachhaltige Karrieren aufzubauen und authentische Markenpartnerschaften zu realisieren, die langfristig echten Mehrwert schaffen.
 
 ## Aufgaben
 

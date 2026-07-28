@@ -51,4 +51,4 @@ Unsere Beratung ist für Dich völlig kostenlos. Falls Du Fragen hast, erreichst
 
 # kfzmechatroniker # nutzfahrzeuge # lkw # trailer # reparatur # wartung # mechanik # transport # teamarbeit # karrierechancen # weiterbildung # betrieblichevorsorge
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

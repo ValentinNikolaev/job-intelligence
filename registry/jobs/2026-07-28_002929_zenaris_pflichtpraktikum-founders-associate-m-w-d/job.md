@@ -50,4 +50,4 @@ Wir schauen gemeinsam, wo deine Stärken liegen, und geben dir dort mehr Verantw
 
 Kurzer Lebenslauf und drei Sätze, warum du Lust auf Zenaris hast. Anschreiben brauchen wir nicht.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 7151e365-f842-4af1-9a8a-d7b14c63ffbe
+title: Wirtschaftsinformatiker/in (m/w/d)
+company: MONE Consulting GmbH (Pflegekraft.de)
+company_url: null
+location: Bielefeld, Nordrhein-Westfalen, Deutschland
+remote: false
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: wirtschaftsinformatiker-in-bielefeld-315764
+  url: https://www.arbeitnow.com/jobs/companies/mone-consulting-gmbh-pflegekraftde/wirtschaftsinformatiker-in-bielefeld-315764
+  metadata:
+    tags:
+    - Business Development
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-07-28T02:50:55Z'
+discovered_at: '2026-07-28T04:01:59Z'
+updated_at: '2026-07-28T04:01:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T04:01:59Z'
+analysis_priority: 0
+fingerprint: sha256:1337c0b31dda4f8969aae2a031b7f0ff7735c809faa41548e064b188cb09945e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

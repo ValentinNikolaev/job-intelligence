@@ -1,0 +1,30 @@
+schema_version: 2
+id: 83da54c3-125e-438d-bf57-9ca34ebccec4
+title: Werkstudent:in Finance & Accounting (m/f/d)
+company: limehome
+company_url: null
+location: München, Bayern, Germany
+remote: false
+employment_type: Student college, internship
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-finance-accounting-munchen-218038
+  url: https://www.arbeitnow.com/jobs/companies/limehome/werkstudentin-finance-accounting-munchen-218038
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - Student college
+    - internship
+published_at: '2026-07-28T02:31:05Z'
+discovered_at: '2026-07-28T04:02:03Z'
+updated_at: '2026-07-28T04:02:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-28T04:02:03Z'
+analysis_priority: 0
+fingerprint: sha256:345e39ea2dd664cf998e28d95e915f2b538bff372988ff9e76166f5ddb06c23c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

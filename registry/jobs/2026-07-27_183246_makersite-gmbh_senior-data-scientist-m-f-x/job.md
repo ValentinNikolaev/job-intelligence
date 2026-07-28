@@ -246,4 +246,4 @@ If you have a medical condition or an individual need for an adjustment to our p
 
 At Makersite, we are dedicated to fostering an environment that champions diversity, equity, inclusion, and belonging. We believe that diverse teams drive innovation and success, and we are proud to be an equal opportunity employer. We welcome applicants from all backgrounds and will consider all applications regardless of age, disability, gender identity, marital status, pregnancy or maternity, race, nationality, religion, sex, sexual orientation, or any other status protected by applicable law. Rest assured, all applications will be handled with the utmost confidentiality.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
