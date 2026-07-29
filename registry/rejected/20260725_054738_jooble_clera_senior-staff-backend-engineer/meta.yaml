@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '9172018522069540012'
-source_url: https://jooble.org/away/9172018522069540012?p=1&pos=3&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=74&brelb=15&scr=2616.1348&bscr=2616.1348&aq=-3900115264633697401&elckey=3726333275301213428
+source_url: https://jooble.org/desc/9172018522069540012?ckey=remote+senior+backend+engineer&rgn=55180&pos=6&groupId=2134052230&elckey=3245197079907993671&p=1&aq=5958324729551187368&cid=15922&jobAge=76&brelb=10&bscr=912.78357&scr=912.78357
 title: Senior / Staff Backend Engineer
 company: Clera
 location: Remote
 published_at: '2026-07-26T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-29T08:34:37Z'
+updated_at: '2026-07-29T10:06:39Z'
 rejected_at: '2026-07-25T05:47:38Z'

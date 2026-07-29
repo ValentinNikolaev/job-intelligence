@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4988047878897821262'
+source_url: https://jooble.org/desc/-4988047878897821262?ckey=remote+senior+backend+engineer&rgn=55180&pos=41&groupId=2134052230&elckey=3245197079907993671&p=1&aq=5958324729551187368&cid=15922&jobAge=97&brelb=100&bscr=759.79016&scr=759.79016
+title: Senior AI Backend Engineer
+company: Pyyne
+location: Brazil
+published_at: '2026-07-25T02:49:30.5700000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T10:06:52Z'
+rejected_at: '2026-07-29T10:06:52Z'

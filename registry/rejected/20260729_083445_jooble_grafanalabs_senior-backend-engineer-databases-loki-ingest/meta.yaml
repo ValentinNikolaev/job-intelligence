@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-1482065892867418385'
-source_url: https://jooble.org/desc/-1482065892867418385?ckey=remote+senior+backend+engineer&rgn=55180&pos=23&groupId=2134052230&elckey=3726333275301213428&p=1&aq=-3900115264633697401&cid=15922&jobAge=117&brelb=100&bscr=896.30396&scr=896.30396
+source_url: https://jooble.org/desc/-1482065892867418385?ckey=remote+senior+backend+engineer&rgn=55180&pos=11&groupId=2134052230&elckey=3245197079907993671&p=1&aq=5958324729551187368&cid=15922&jobAge=119&brelb=100&bscr=885.7462&scr=885.7462
 title: Senior Backend Engineer - Databases - Loki Ingest
 company: Grafanalabs
 location: Remote
 published_at: '2026-07-24T04:54:24.6314736+00:00'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-29T08:34:45Z'
+updated_at: '2026-07-29T10:06:40Z'
 rejected_at: '2026-07-29T08:34:45Z'
