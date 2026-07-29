@@ -1,11 +1,11 @@
 # Senior Python Backend Developer
 
-Posted: 2026-07-17T00:00:00.0000000
+Posted: 2026-07-25T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-17T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Role Description
 As a **Senior **Python **Backend **Developer at Ascend, you'll lead development of our Python... ...infrastructure.

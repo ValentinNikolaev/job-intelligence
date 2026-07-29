@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-support-specialist-im-berliner-saas-startup-449521
+source_url: https://www.arbeitnow.com/jobs/companies/yoffix/customer-support-specialist-im-berliner-saas-startup-449521
+title: Customer Support Specialist im Berliner SaaS Startup
+company: Yoffix
+location: Berlin
+published_at: '2026-07-29T06:30:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T08:30:40Z'
+rejected_at: '2026-07-29T08:30:40Z'

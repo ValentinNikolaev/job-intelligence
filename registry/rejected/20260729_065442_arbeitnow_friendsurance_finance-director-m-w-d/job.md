@@ -129,4 +129,4 @@ Regelmäßige Team-Events (Frühstücke, Lunches, Friday Beers, Sommer- & Weihna
 
 Vor Allem gewinnst du mit uns ein einzigartiges und diverses Team, eine spannende Aufgabe und hervorragende Weiterentwicklungsmöglichkeiten - wenn das für dich spannend klingt, freuen wir uns schon auf deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

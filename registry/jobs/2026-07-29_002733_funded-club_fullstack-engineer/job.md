@@ -79,4 +79,4 @@ Posted: 2026-07-28T23:45:27Z
 
 *Funded.club uses AI-assisted tools as part of our candidate sourcing and screening process. **All applications are reviewed by a human recruiter**, who makes all decisions about which candidates to progress. If your application seems like a good fit for the position, a real member of our team will contact you soon!*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

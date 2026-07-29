@@ -29,4 +29,4 @@ Arbeitszeit 8 bis 17 Uhr, kein Notdienst, keine Rufbereitschaft, nur ein Hotline
 
 Klingt gut? Dann bewirb dich, wir melden uns persönlich für ein erstes, ehrliches Gespräch zum Kennenlernen. Im ersten Schritt ohne Bewerbungsunterlagen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

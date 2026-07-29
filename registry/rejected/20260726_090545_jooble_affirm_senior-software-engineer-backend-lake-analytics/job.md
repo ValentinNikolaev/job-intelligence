@@ -1,11 +1,11 @@
 # Senior Software Engineer, Backend (Lake Analytics Platform)
 
-Posted: 2026-07-19T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-19T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ...implement platform features that enable **engineers **across Affirm to build, deploy, and operate... ...in a managed cloud environment.
 

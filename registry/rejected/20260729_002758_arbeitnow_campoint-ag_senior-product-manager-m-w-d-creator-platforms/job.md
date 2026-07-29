@@ -83,4 +83,4 @@ Das ist kein Stepping-Stone in die Produktstrategie. Das ist eine Rolle für jem
 
 Dann freuen wir uns auf Deine Bewerbung! Uns interessiert vor allem, was Dich antreibt, warum die Rolle zu Dir passt und wann Du bei uns starten könntest.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

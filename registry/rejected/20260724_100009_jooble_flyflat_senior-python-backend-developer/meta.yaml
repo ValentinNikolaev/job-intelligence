@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '5484655826362911081'
-source_url: https://jooble.org/away/5484655826362911081?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=197&brelb=15&scr=1098.122&bscr=1098.122&aq=-6982029858143676465&elckey=6114783711726159216
+source_url: https://jooble.org/away/5484655826362911081?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=98&brelb=15&scr=1109.2699&bscr=1109.2699&aq=-3900115264633697401&elckey=3726333275301213428
 title: Senior Python Backend Developer
 company: FlyFlat
 location: Remote
-published_at: '2026-07-17T00:00:00.0000000'
-rejection_category: stale
-rejection_reason: published_at 2026-07-17T00:00:00.0000000 is older than 7 days
-updated_at: '2026-07-25T11:05:36Z'
+published_at: '2026-07-25T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T08:34:42Z'
 rejected_at: '2026-07-24T10:00:09Z'

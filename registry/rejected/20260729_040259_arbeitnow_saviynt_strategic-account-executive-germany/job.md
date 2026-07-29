@@ -87,4 +87,4 @@ Saviynt is an amazing place to work. We are a high-growth, Platform as a Service
 
 ***Saviynt is an equal opportunity employer and we welcome everyone to our team. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.***
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

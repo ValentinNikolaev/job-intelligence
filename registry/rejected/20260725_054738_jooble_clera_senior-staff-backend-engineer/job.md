@@ -1,11 +1,11 @@
 # Senior / Staff Backend Engineer
 
-Posted: 2026-07-18T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-18T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ...Description
 Join a lean, high-output core **engineering **team at an AI-first startup building... ...seed investors.

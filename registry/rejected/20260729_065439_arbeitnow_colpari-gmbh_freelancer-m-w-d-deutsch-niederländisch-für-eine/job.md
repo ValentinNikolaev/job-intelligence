@@ -57,4 +57,4 @@ Die colpari GmbH sucht engagierte Freelancer (m/w/d) für den First-Level-Suppor
 
 Wir freuen uns darauf, dich kennenzulernen! 🚀😊
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

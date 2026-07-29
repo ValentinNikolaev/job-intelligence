@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-support-im-berliner-saas-startup-werkstudent-333176
+source_url: https://www.arbeitnow.com/jobs/companies/yoffix/customer-support-im-berliner-saas-startup-werkstudent-333176
+title: Customer Support im Berliner SaaS Startup - Werkstudent
+company: Yoffix
+location: Berlin
+published_at: '2026-07-29T07:00:44Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T08:30:33Z'
+rejected_at: '2026-07-29T08:30:33Z'

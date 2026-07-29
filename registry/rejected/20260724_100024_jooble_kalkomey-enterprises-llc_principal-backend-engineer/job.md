@@ -1,11 +1,11 @@
 # Principal Backend Engineer
 
-Posted: 2026-07-17T00:00:00.0000000
+Posted: 2026-07-25T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-17T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Role Description
 The Principal **Backend Engineer **is the most senior individual contributor on our backend engineering team — the person others... ...engineers and non-engineers alike.

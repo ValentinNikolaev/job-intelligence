@@ -158,4 +158,4 @@ Fast decision-making, minimal bureaucracy, and a pragmatic, execution-focused cu
 
 A modern on-site workplace in the heart of Berlin
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

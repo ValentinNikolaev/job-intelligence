@@ -111,4 +111,4 @@ Event-driven architectures (SNS/SQS, Kinesis)
 
 ***We work as a team: **We collaborate closely and value team success over individual achievement.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

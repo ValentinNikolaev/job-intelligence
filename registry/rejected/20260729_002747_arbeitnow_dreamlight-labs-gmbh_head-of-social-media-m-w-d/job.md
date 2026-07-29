@@ -73,4 +73,4 @@ Konzeption neuer Content-Formate, Kampagnen und kreativer Ideen
 
 Sende uns bitte deinen Lebenslauf oder dein LinkedIn-Profil, Links zu Social-Media-Kanälen, die du betreut hast, sowie Beispiele deiner Content-Projekte. Uns interessiert besonders, welchen konkreten Beitrag du zu diesen Erfolgen geleistet hast. Teile uns außerdem deinen frühestmöglichen Starttermin und deine Gehaltsvorstellung mit.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

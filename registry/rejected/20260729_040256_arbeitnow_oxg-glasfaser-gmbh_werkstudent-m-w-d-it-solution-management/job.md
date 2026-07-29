@@ -59,4 +59,4 @@ Dann bewirb Dich jetzt!**
 - **Abschicken ****und ****fertig**!
 Falls es mal nicht klappen sollte, lass Dich nicht entmutigen und versuche es gerne noch einmal mit einer anderen Stelle.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
