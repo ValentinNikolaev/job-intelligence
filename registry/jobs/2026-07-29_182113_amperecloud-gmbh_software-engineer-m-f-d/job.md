@@ -121,4 +121,4 @@ You'll own one clearly scoped area of the platform and ship features across the 
 
 *We evaluate based on ability and potential, independent of age, gender identity, origin, sexual orientation, disability, or religion.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

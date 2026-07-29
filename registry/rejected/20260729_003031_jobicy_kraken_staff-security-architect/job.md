@@ -4,8 +4,8 @@ Posted: 2026-07-22T18:40:10Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-22T18:40:10Z is older than 7 days
 
 ## **Building the Future of Crypto **
 

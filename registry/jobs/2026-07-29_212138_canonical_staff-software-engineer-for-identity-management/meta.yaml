@@ -1,0 +1,132 @@
+schema_version: 2
+id: 18d093cb-5c99-44cc-bf68-80ddef3de318
+title: Staff Software Engineer for Identity Management (Go/Golang)
+company: Canonical
+company_url: null
+location: Algeria, Angola, Austria, Bahrain, Belgium, Brazil, Bulgaria, Canada, Czechia,
+  Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece, Hungary, Ireland,
+  Israel, Italy, Kenya, Kuwait, Mexico, Morocco, Netherlands, Nigeria, Norway, Oman,
+  Poland, Portugal, Qatar, Romania, Russian Federation, Saudi Arabia, Senegal, South
+  Africa, Spain, Sweden, Switzerland, Turkey, Ukraine, United Arab Emirates, United
+  Kingdom, United States
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/canonical/jobs/staff-software-engineer-for-identity-management-go-golang
+  url: https://himalayas.app/companies/canonical/jobs/staff-software-engineer-for-identity-management-go-golang
+  metadata:
+    location_restrictions:
+    - name: Algeria
+    - name: Angola
+    - name: Austria
+    - name: Bahrain
+    - name: Belgium
+    - name: Brazil
+    - name: Bulgaria
+    - name: Canada
+    - name: Czechia
+    - name: Denmark
+    - name: Egypt
+    - name: Ethiopia
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Ghana
+    - name: Greece
+    - name: Hungary
+    - name: Ireland
+    - name: Israel
+    - name: Italy
+    - name: Kenya
+    - name: Kuwait
+    - name: Mexico
+    - name: Morocco
+    - name: Netherlands
+    - name: Nigeria
+    - name: Norway
+    - name: Oman
+    - name: Poland
+    - name: Portugal
+    - name: Qatar
+    - name: Romania
+    - name: Russian Federation
+    - name: Saudi Arabia
+    - name: Senegal
+    - name: South Africa
+    - name: Spain
+    - name: Sweden
+    - name: Switzerland
+    - name: Turkey
+    - name: Ukraine
+    - name: United Arab Emirates
+    - name: United Kingdom
+    - name: United States
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets.
+    company_slug: canonical
+    company_logo: https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -10
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 14
+    categories:
+    - Software-Engineer
+    - Software-Engineering
+    - Staff-Engineer
+    - Identity-Management
+    - Backend-Development
+    - Security-Engineering
+    - Staff-Backend-Identity-Engineer
+    - Staff-Identity-Engineer
+    - Staff-Identity-And-Access-Management-Engineer
+    - Senior-Identity-And-Access-Management-Engineer
+    - Senior-Identity-Engineering-Specialist
+    - Senior-Golang-Developer
+    expiry_at: '2026-08-27T04:32:07Z'
+    discovered_by:
+    - query_index: 2
+      parameters:
+        exclude_worldwide: 'true'
+        country: IT
+        seniority: Senior
+        q: golang
+        sort: recent
+published_at: '2026-07-29T20:32:00Z'
+discovered_at: '2026-07-29T21:21:38Z'
+updated_at: '2026-07-29T21:21:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T21:21:38Z'
+analysis_priority: 0
+fingerprint: sha256:14bd64db2f116db99b4a4d9c421a4281108f25975400bdb4e2f6a64903e768aa
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

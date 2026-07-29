@@ -67,4 +67,4 @@ Bitte sende uns Deine vollständigen Bewerbungsunterlagen mit Lebenslauf und ein
 
 Wir freuen uns darauf, Dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

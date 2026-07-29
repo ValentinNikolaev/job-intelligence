@@ -107,4 +107,4 @@ We are an ambitious and dynamic company with a talented team. We require our eng
 
 - Reporting directly to the CTO
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

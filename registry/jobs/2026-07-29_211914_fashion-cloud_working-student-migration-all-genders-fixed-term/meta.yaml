@@ -1,0 +1,31 @@
+schema_version: 2
+id: 226feb3f-4e93-4522-8a97-ab16f850a2f0
+title: Working Student - Migration (all genders) - Fixed-term 2 months
+company: Fashion Cloud
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Part-time fixed-term, student (college)
+sources:
+- source: arbeitnow
+  source_job_id: working-student-migration-all-genders-fixed-term-2-months-hamburg-33293
+  url: https://www.arbeitnow.com/jobs/companies/fashion-cloud/working-student-migration-all-genders-fixed-term-2-months-hamburg-33293
+  metadata:
+    tags:
+    - Other
+    - college coursework completed
+    job_types:
+    - Part-time fixed-term
+    - student (college)
+published_at: '2026-07-29T19:20:15Z'
+discovered_at: '2026-07-29T21:19:14Z'
+updated_at: '2026-07-29T21:19:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T21:19:14Z'
+analysis_priority: 0
+fingerprint: sha256:5080ebe4f923c5249dcd34323b52bdd1e59e8f45e437b4420ff5420a9bd37278
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

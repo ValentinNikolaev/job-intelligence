@@ -63,4 +63,4 @@ Zur Unterstützung unseres Teams der **IT** suchen wir zum nächstmöglichen Zei
 
 Haben wir Ihr Interesse geweckt? Wir freuen uns auf Ihre Bewerbung! Senden Sie uns gerne Ihre Unterlagen – auch eine Kurzbewerbung mit Lebenslauf ist willkommen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

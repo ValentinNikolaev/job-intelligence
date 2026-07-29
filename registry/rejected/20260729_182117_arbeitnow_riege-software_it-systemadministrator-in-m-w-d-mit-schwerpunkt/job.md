@@ -1,6 +1,6 @@
 # IT-Systemadministrator:in (m/w/d) mit Schwerpunkt Netzwerk
 
-Posted: 2026-07-29T16:30:31Z
+Posted: 2026-07-29T20:59:02Z
 
 ## Rejection
 
@@ -41,16 +41,18 @@ Unser agiles Operations Team ist für den reibungslosen Betrieb unserer Produkte
 
 ## Benefits
 
-- Einen schönen Arbeitsplatz in unserem Headquarter in Meerbusch mit Remoteanteil.
+- Einen schönen Arbeitsplatz in unserem Headquarter in Meerbusch mit Remoteanteil
 
-- Eine sehr kollegiale und familiäre Atmosphäre. Wir arbeiten in gegenseitigem Vertrauen und Respekt über Aufgabenbereiche, Funktionen und Ländergrenzen hinweg zusammen.
+- Ein Team, das dich offen aufnimmt und sowohl in der Einarbeitungsphase als auch bei der Ausübung deiner Rolle aktiv unterstützt.
+
+- Ein umfassendes Onboarding inklusive Patenprogramm.
 
 - Mit flexiblen Arbeitszeit- und Arbeitsraummodellen bieten wir dir zusätzlich Freiraum für die private Lebensgestaltung mit Familie und Freunden.
 
-- Jährliches Budget für Weiterbildungen.
+- Vielfältige Möglichkeiten der Fort- und Weiterbildung.
 
-- Jobrad-Leasing, betriebliche Altersvorsorge, Mobilitätsbudget, vermögenswirksame Leistungen.
+- Attraktive Zusatzleistungen: Altersvorsorge, vermögenswirksame Leistungen, Mobilitätsbudget, JobRad & Workation.Einen schönen Arbeitsplatz in unserem Headquarter in Meerbusch mit Remoteanteil.
 
 Wir freuen uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

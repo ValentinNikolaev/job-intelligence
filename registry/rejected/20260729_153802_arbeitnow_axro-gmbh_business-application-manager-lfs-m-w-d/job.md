@@ -91,4 +91,4 @@ Du erreichst mich hier:
 
 **E-Mail:** **Telefon:** +49 40-54711-266
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

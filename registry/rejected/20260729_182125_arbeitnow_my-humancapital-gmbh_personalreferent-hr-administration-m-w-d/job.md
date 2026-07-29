@@ -49,4 +49,4 @@ Im Auftrag unseres Partnerunternehmens in Kassel suchen wir Sie zum nächstmögl
 
 Dann freuen wir uns auf Ihre Bewerbung. Senden Sie uns Ihre Unterlagen. Für Rückfragen steht Ihnen **Kaan Akdemir** gerne unter **089 954 287 109** zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -95,4 +95,4 @@ We proudly welcome applicants of every race, color, religion, gender identity, s
 
 For more information on our diversity, equity, inclusion, and belonging practices,[ visit this page](https://commercetools.com/careers/dei-esg).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

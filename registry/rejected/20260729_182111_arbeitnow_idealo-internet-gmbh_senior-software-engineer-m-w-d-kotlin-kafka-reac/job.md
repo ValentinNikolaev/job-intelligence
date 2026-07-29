@@ -91,4 +91,4 @@ The confidence to speak up and challenge ideas constructively, paired with openn
 
 #LI-MW1
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -73,4 +73,4 @@ Die Projektron GmbH bietet zukunftsweisende, an Chancengleichheit orientierte Pe
 
 Wir setzen uns für Chancengleichheit im Beruf ein und ermuntern Frauen, sich zu bewerben.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

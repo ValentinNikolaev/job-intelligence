@@ -140,4 +140,4 @@ Optional: in three sentences, tell us what you have built with AI and what it di
 
 *MultiBase GmbH is an equal-opportunity employer. All applicants are evaluated regardless of age, gender, ethnicity, religion, sexual orientation, or disability.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
