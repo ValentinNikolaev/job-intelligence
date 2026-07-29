@@ -1,0 +1,18 @@
+score: 82
+recommendation: strong_match
+summary: Strong fit for backend ownership in a growth-oriented payments product, especially
+  Go, integrations, and scalable event-driven systems.
+strengths:
+- Go backend; fintech/payment context; APIs; event pipelines; measurable performance
+  and reliability.
+gaps:
+- Activation experimentation and growth analytics are not directly evidenced.
+concerns:
+- Confirm expected product-growth ownership and location arrangement.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-29T09:21:47Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:cfd1879902260a5fd8972245b469d37c24f72a8cd71ac985a626fdfd16c998fe
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

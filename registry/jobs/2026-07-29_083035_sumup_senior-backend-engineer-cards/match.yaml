@@ -1,0 +1,17 @@
+score: 83
+recommendation: strong_match
+summary: Strong fit for card-platform backend work through fintech, payment integrations,
+  Go/PHP, and production reliability experience.
+strengths:
+- Payments; PCI DSS exposure; Go/PHP; APIs and microservices; scale and incident resilience.
+gaps:
+- Card issuing/processing specifics and exact cloud stack are not evidenced.
+concerns:
+- Confirm compliance depth and team delivery model.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-29T09:21:47Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:acb42832a991588ebb51a4b3a419fd68509a9837b8f8ec032fa1cc7b62a64179
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
