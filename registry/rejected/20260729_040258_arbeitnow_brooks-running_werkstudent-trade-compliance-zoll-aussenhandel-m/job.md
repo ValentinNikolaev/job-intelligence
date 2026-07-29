@@ -75,4 +75,4 @@ Sie sammeln praktische Erfahrungen im Bereich Trade Compliance und arbeiten eng 
 
 · Run Happy Spirit
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

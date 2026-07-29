@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '8620841542647179206'
-source_url: https://jooble.org/away/8620841542647179206?p=1&pos=21&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=120&brelb=10&scr=2215.5527&bscr=2215.5527&aq=3476890631425174113&elckey=-6161143490518709676
+source_url: https://jooble.org/away/8620841542647179206?p=1&pos=21&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=123&brelb=10&scr=2190.2698&bscr=2190.2698&aq=7371542964995343769&elckey=2882422394431500331
 title: Senior Backend Engineer
 company: Texas State Library and Archives Commision
 location: United States
 published_at: '2026-07-24T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-29T06:59:44Z'
+updated_at: '2026-07-29T09:58:39Z'
 rejected_at: '2026-07-29T00:31:25Z'

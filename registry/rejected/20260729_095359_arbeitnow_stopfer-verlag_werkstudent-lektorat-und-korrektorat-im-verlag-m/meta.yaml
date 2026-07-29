@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-lektorat-und-korrektorat-im-verlag-leipzig-378326
+source_url: https://www.arbeitnow.com/jobs/companies/stopfer-verlag/werkstudent-lektorat-und-korrektorat-im-verlag-leipzig-378326
+title: Werkstudent Lektorat und Korrektorat im Verlag (m/w/d)
+company: Stopfer Verlag
+location: Leipzig
+published_at: '2026-07-29T09:00:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T09:53:59Z'
+rejected_at: '2026-07-29T09:53:59Z'

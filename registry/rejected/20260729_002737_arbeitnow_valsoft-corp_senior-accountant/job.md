@@ -64,4 +64,4 @@ This is an excellent opportunity for someone who enjoys working in a fast-paced 
 
 #Seekda
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

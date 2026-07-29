@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: praktikant-operations-management-cologne-315015
+source_url: https://www.arbeitnow.com/jobs/companies/gokixx-gmbh/praktikant-operations-management-cologne-315015
+title: Praktikant Operations Management (m/w/d)
+company: GOKIXX GmbH
+location: Cologne
+published_at: '2026-07-29T09:00:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T09:54:05Z'
+rejected_at: '2026-07-29T09:54:05Z'

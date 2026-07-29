@@ -71,4 +71,4 @@ Als E-Commerce & TikTok Shop Marketer bist du das kreative Herzstück unseres La
 
 Ich freu mich über deine Bewerbung :)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

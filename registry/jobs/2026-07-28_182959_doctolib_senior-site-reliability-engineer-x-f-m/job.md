@@ -132,4 +132,4 @@ Join us in building the healthcare we all dream of!
 
 *All information provided is processed by Doctolib for application management. For data processing details, click here:*[* **Germany*](https://doctolib.legal/B2C-Privacy-Policy-Career-DE)* |*[* **France*](https://doctolib.legal/B2C-Privacy-Policy-Career-FR)* |*[* **Italy*](https://doctolib.legal/B2C-Privacy-Policy-Career-IT)* |*[* **Netherlands*](https://doctolib.legal/B2C-Privacy-Policy-Career-COM)*. Please contact hr.dataprivacy(at)doctolib.com for inquiries or to exercise your rights.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

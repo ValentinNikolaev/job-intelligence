@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: growth-manager-frankfurt-am-main-163306
+source_url: https://www.arbeitnow.com/jobs/companies/spark-europe-gmbh-co-kg/growth-manager-frankfurt-am-main-163306
+title: Growth Manager (m/w/d)
+company: SPARK Europe GmbH & Co. KG
+location: Frankfurt am Main
+published_at: '2026-07-29T08:30:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T09:54:17Z'
+rejected_at: '2026-07-29T09:54:17Z'

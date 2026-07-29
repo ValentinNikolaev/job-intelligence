@@ -1,0 +1,27 @@
+schema_version: 2
+id: 541ef20e-69fe-44a2-a0bc-b9d0646ebfb4
+title: (Senior) International Standards Manager (all genders) (Product Compliance)
+company: moia
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-international-standards-manager-all-genders-product-compliance-berlin-358038
+  url: https://www.arbeitnow.com/jobs/companies/moia/senior-international-standards-manager-all-genders-product-compliance-berlin-358038
+  metadata:
+    tags:
+    - Autonomous Driving & Vehicle Systems
+published_at: '2026-07-29T08:55:23Z'
+discovered_at: '2026-07-29T09:54:07Z'
+updated_at: '2026-07-29T09:54:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T09:54:07Z'
+analysis_priority: 0
+fingerprint: sha256:d4c0b22211024bfbabc0455aadc8859a28ae58b03f79d132ceef8dc842961c51
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

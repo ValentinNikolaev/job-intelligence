@@ -106,4 +106,4 @@ You'll have a conversation with our VP of Product, Mark, and our VP of Engineeri
 
 Last but not least, you will meet with our CEO, Ijad, and our VP of Finance & People team, Jess.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

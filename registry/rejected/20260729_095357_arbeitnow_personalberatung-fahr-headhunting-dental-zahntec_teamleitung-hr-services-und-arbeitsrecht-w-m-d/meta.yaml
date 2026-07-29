@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teamleitung-hr-services-und-arbeitsrecht-singen-224861
+source_url: https://www.arbeitnow.com/jobs/companies/personalberatung-fahr-headhunting-dental-zahntechnik-medizintechnik-lifesciences/teamleitung-hr-services-und-arbeitsrecht-singen-224861
+title: Teamleitung HR-Services und Arbeitsrecht (w/m/d)
+company: Personalberatung Fahr - Headhunting Dental - Zahntechnik - Medizintechnik
+  - Lifesciences
+location: Singen
+published_at: '2026-07-29T09:00:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T09:53:57Z'
+rejected_at: '2026-07-29T09:53:57Z'

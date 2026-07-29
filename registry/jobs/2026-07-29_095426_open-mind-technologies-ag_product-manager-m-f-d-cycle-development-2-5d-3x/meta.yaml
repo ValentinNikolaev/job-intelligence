@@ -1,0 +1,29 @@
+schema_version: 2
+id: 857394ef-42f8-473b-9af9-ac8c8790ecdc
+title: Product Manager (m/f/d) Cycle Development 2.5D / 3X / 5X
+company: OPEN MIND Technologies AG
+company_url: null
+location: Weßling
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: product-manager-cycle-development-25d-3x-5x-wessling-1302
+  url: https://www.arbeitnow.com/jobs/companies/open-mind-technologies-ag/product-manager-cycle-development-25d-3x-5x-wessling-1302
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - professional / experienced
+published_at: '2026-07-29T08:00:50Z'
+discovered_at: '2026-07-29T09:54:26Z'
+updated_at: '2026-07-29T09:54:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T09:54:26Z'
+analysis_priority: 0
+fingerprint: sha256:355d3835952584f6b8ca8ec5f7a49973e556668c66e30068cbb662edc109e254
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

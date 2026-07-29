@@ -1,0 +1,31 @@
+schema_version: 2
+id: 23a82738-7b85-44d8-a3f5-9ab0ffb96a0e
+title: Senior/Staff Product Engineer (Full Stack) (m/f/d)
+company: epilot GmbH
+company_url: null
+location: Remote job
+remote: true
+employment_type: Experienced, fulltime
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-staff-product-engineer-full-stack-koln-89000
+  url: https://www.arbeitnow.com/jobs/companies/epilot-gmbh/remote-senior-staff-product-engineer-full-stack-koln-89000
+  metadata:
+    tags:
+    - Tech
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime
+published_at: '2026-07-29T08:50:17Z'
+discovered_at: '2026-07-29T09:54:13Z'
+updated_at: '2026-07-29T09:54:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T09:54:13Z'
+analysis_priority: 0
+fingerprint: sha256:a92a68b29f80aa366c4abc2ec6f7b6650a478abdcb04ab9c8b28559e544da388
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

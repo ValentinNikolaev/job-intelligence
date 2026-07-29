@@ -1,0 +1,30 @@
+schema_version: 2
+id: f487908f-9ff8-4b47-a56c-abdbaa91ba4e
+title: Salesforce Technical Architect (all genders)
+company: InfoTip Service GmbH
+company_url: null
+location: Georgensgmünd
+remote: true
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: salesforce-technical-architect-all-genders-georgensgmund-343960
+  url: https://www.arbeitnow.com/jobs/companies/infotip-service-gmbh/salesforce-technical-architect-all-genders-georgensgmund-343960
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - berufserfahren
+published_at: '2026-07-29T09:00:28Z'
+discovered_at: '2026-07-29T09:54:01Z'
+updated_at: '2026-07-29T09:54:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T09:54:01Z'
+analysis_priority: 0
+fingerprint: sha256:0e22cd543758b9dee0038b4ac3c9ca2e7f531681f2a301744116b4992ea71019
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
