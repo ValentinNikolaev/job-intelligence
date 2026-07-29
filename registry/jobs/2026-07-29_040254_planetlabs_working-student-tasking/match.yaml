@@ -1,0 +1,18 @@
+score: 20
+recommendation: not_match
+summary: The working-student level is materially below the candidate's senior engineering
+  and technical-lead profile.
+strengths:
+- Backend APIs; cloud; Agile collaboration.
+gaps:
+- Student status and junior scope conflict with extensive senior experience.
+concerns:
+- Overqualification and likely eligibility/compensation mismatch.
+hard_rejection: true
+hard_rejection_reason: Working-student role requires a student profile inconsistent
+  with the candidate evidence.
+analyzed_at: '2026-07-29T07:43:56Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:89330e46a89744522d0e23b170e4fb1282a65af6293f6d1a4cac6e980d9f1112
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

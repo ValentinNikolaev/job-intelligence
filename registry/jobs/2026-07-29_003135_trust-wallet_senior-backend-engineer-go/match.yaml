@@ -1,0 +1,18 @@
+score: 83
+recommendation: strong_match
+summary: Strong Go backend, distributed systems, cloud, and reliability alignment
+  for a senior remote role.
+strengths:
+- Go; backend architecture; APIs; event-driven systems; AWS/Kubernetes; production
+  reliability; crypto domain exposure.
+gaps:
+- Exact blockchain/product requirements are not fully evidenced.
+concerns:
+- Global role requires confirmation of work-authorization and timezone constraints.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-07-29T07:43:56Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:f406356d8f96dfd4339d42837a9e7514ad8342a5a1898d0faf0fe1974f307d5a
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
