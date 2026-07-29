@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-senior-accountant-germany-197575
+source_url: https://www.arbeitnow.com/jobs/companies/valsoft-corp/remote-senior-accountant-germany-197575
+title: Senior Accountant
+company: Valsoft Corp
+location: Germany
+published_at: '2026-07-28T23:21:10Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:27:37Z'
+rejected_at: '2026-07-29T00:27:37Z'

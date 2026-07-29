@@ -1,0 +1,27 @@
+schema_version: 2
+id: c63d8dc3-8f8e-4128-8870-fe6873016855
+title: Content Specialist
+company: WePush
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: content-specialist-berlin-364315
+  url: https://www.arbeitnow.com/jobs/companies/wepush/content-specialist-berlin-364315
+  metadata:
+    tags:
+    - Social Media Manager
+published_at: '2026-07-28T20:30:24Z'
+discovered_at: '2026-07-29T00:27:46Z'
+updated_at: '2026-07-29T00:27:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T00:27:46Z'
+analysis_priority: 0
+fingerprint: sha256:7c12c74285afe1b91947d5b86ca3ddcdb4f72d5323db9fe68f72fa8559f12d33
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

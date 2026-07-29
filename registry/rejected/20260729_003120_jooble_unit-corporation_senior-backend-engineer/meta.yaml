@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3220498136220143338'
+source_url: https://jooble.org/away/3220498136220143338?p=1&pos=10&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=66&brelb=10&scr=2381.8586&bscr=2381.8586&aq=1029652588024022382&elckey=1811206656536025066
+title: Senior Backend Engineer
+company: Unit Corporation
+location: United States
+published_at: '2026-07-26T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:31:20Z'
+rejected_at: '2026-07-29T00:31:20Z'

@@ -1,11 +1,11 @@
 # Staff Software Engineer, Product Engineering, EU
 
-Posted: 2026-06-25T17:16:43Z
+Posted: 2026-07-26T10:10:08Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-25T17:16:43Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Hi I’m [Abhik](https://www.linkedin.com/in/abhikpramanik), Ashby's Co-Founder and VP of Engineering. We’re looking for an ambitious full-stack engineer who is laser-focused on solving customer problems and making the right long-term investments to solve them not only today but in our future features and products.
 

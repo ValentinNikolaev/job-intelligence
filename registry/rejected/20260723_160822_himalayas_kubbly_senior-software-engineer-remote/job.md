@@ -21,7 +21,7 @@ We are looking for someone who can help us scale our platform for businesses to 
 
 -
 
-**We're backed by Bek Ventures** (formerly Earlybird Digital East)**.**[HEC-Dow Jones ranked their fund #1 in WSJ by overall performance.](https://www.wsj.com/articles/revealed-the-top-performing-venture-capital-firms-302dee97) They backed UiPath and Payhawk before they were cool.
+**We're backed by Bek Ventures** (formerly Earlybird Digital East)**.**HEC-Dow Jones ranked their fund #1 in WSJ by overall performance. They backed UiPath and Payhawk before they were cool.
 
 -
 
@@ -41,7 +41,8 @@ At [Kubbly](https://himalayas.app/companies/kubbly), we believe the way business
 
 **Our philosophy: *We operate on high conviction, low ego.*** We value passionate, data-driven ideas. We debate vigorously to find the best solution, but then align as a team to execute.
 
-### **✅** What You’ll Do
+###
+**✅** What You’ll Do
 
 -
 
@@ -172,6 +173,7 @@ A great opportunity to shape the future of [Kubbly](https://himalayas.app/compan
 -
 
 ### Competitive salary and generous equity 🚀
+
 -
 
 14 paid company holidays (most companies recognize 11-12) **📆**
@@ -179,6 +181,7 @@ A great opportunity to shape the future of [Kubbly](https://himalayas.app/compan
 -
 
 ### Unlimited paid time off 🏖
+
 -
 
 Significant coverage of medical, dental, and vision insurance 🏥

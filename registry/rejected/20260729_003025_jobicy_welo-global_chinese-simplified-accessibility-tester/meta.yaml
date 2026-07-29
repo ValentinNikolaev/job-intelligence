@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149748'
+source_url: https://jobicy.com/jobs/149748-chinese-simplified-accessibility-tester
+title: Chinese Simplified Accessibility Tester
+company: Welo Global
+location: Europe
+published_at: '2026-07-26T03:33:51Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:30:25Z'
+rejected_at: '2026-07-29T00:30:25Z'

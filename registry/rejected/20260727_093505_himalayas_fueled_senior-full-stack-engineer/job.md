@@ -22,23 +22,33 @@ Intentionally remote and globally distributed across six continents, our team th
 ### What you will do:
 
 - Own the end-to-end delivery of key product features, from concept to deployment and beyond. You won't just code tickets; you'll be a crucial voice in shaping the technical approach, making critical architectural decisions, and ensuring what we ship is robust, scalable, and maintainable.
+
 - Architect and build dynamic web experiences that hold up under the demands of real users and real editorial teams, working across the stack to make the right call at every layer.
+
 - Elevate the team's velocity and craft by introducing and socializing tools and practices that raise the technical bar. We expect you to proactively identify bottlenecks, whether in build processes, state management, content modeling, or anywhere else, and implement solutions that make the entire team more effective.
+
 - Bridge the gap between ambitious creative vision and technical reality, proving that high-quality user experience and developer experience are not mutually exclusive. You'll collaborate directly with designers and strategists to challenge assumptions, explore what's possible, and build solutions that are as elegant under the hood as they are for the end-user.
 
 ### What you will achieve:
 
 - From Day 1, you're shipping a tangible feature for a live client project, building immediate momentum.
+
 - Within 6 months, you'll own and deliver a key feature end-to-end and improve a core performance metric by at least 10%.
+
 - You will enhance team efficiency by creating a reusable component or process that is adopted by your peers.
+
 - By 12 months, you'll have spearheaded a significant project phase from concept to launch, on time and to a high standard.
+
 - Your expertise becomes a multiplier, evidenced by positive client or team feedback on your ability to solve complex challenges.
 
 ### About you:
 
 - You think in systems and components, not just pages. You get genuine satisfaction from designing a React architecture or a data schema that is as intuitive for the people using it as it is performant for the end-user.
+
 - You're a proactive problem-solver who doesn't wait for perfect requirements. You thrive on digging into ambiguity, asking "why," and prototyping solutions to complex challenges, whether they involve headless architecture, microservices, or data flow.
+
 - You see the "full stack" as a single, interconnected challenge. You're comfortable crafting a polished, dynamic front-end with Next.js and then diving into the back-end logic, API routes, caching strategies, or CMS configuration that makes it all possible.
+
 - You are a natural collaborator and translator, able to explain technical constraints to designers and strategic goals to engineers, ensuring the entire multidisciplinary team is building momentum together.
 
 ### Contractor Fee
@@ -53,8 +63,8 @@ If you are passionate about [Fueled](https://himalayas.app/companies/fueled)'s m
 
 Upon meeting the necessary criteria, you'll join the [Fueled](https://himalayas.app/companies/fueled) contractor network, granting you access to project invitations tailored to your expertise and availability when they arise.
 
-Any data provided will be processed in accordance with applicable law and our [privacy policy](https://fueled.com/privacy-policy/). Curious about what to expect during our talent process? Check it out [here](https://www.notion.so/What-to-Expect-from-the-Interview-Process-at-<a href='https://himalayas.app/companies/fueled'>Fueled</a>-1d84dccd9d8b80f8a0b0d40b244f4caf?pvs=21).
+Any data provided will be processed in accordance with applicable law and our privacy policy. Curious about what to expect during our talent process? Check it out here.
 
-We don't want you to miss any communication from us! To ensure you receive updates on your application, please add [jobs@fueled.com](mailto:jobs@fueled.com) to your contacts list!
+We don't want you to miss any communication from us! To ensure you receive updates on your application, please add to your contacts list!
 
 Originally posted on [Himalayas](https://himalayas.app)

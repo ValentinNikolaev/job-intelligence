@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1201391755795461974'
+source_url: https://jooble.org/away/-1201391755795461974?p=1&pos=3&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=114&brelb=10&scr=55.069977&bscr=55.069977&aq=8519933460975737252&elckey=-6829097236896265053
+title: Junior Full Stack Developer
+company: K-Tech s.r.l
+location: Italian Republic
+published_at: '2026-07-24T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:30:57Z'
+rejected_at: '2026-07-29T00:30:57Z'

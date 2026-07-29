@@ -61,4 +61,4 @@ Du möchtest die Nutzererfahrung einer anspruchsvollen medizinischen Software mi
 
 Bitte sende neben Deinem Lebenslauf auch ein aussagekräftiges Portfolio oder einen entsprechenden Link.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

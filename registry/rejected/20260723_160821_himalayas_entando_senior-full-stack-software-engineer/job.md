@@ -21,35 +21,53 @@ Your contributions will directly shape how enterprises build and scale composabl
 ### Your Impact
 
 - Design and implement **core features** with state-of-the-art technologies such as **React, Bun, Elixir, and TypeScript**
+
 - Engineer **event-driven, distributed services**, abstracting logic with **state machines** to automate complex business flows
+
 - Build engaging **visual composers** and reusable **components** to empower composition at every layer
+
 - Extend and optimize our **distributed, isomorphic frameworks and SDKs**
+
 - Deliver **lightspeed development workflows** that scale across enterprises
+
 - Mentor peers and influence architectural direction across the platform
 
 ### What We’re Looking For
 
 - 5+ years of professional experience, with strong full stack expertise
+
 - Mastery of **React, Bun, Elixir, Phoenix, TypeScript, Tailwind**
+
 - Deep knowledge of **event-driven architectures**, **Actor Systems**, **State Machines**, **Event Sourcing**, and other distributed patterns
+
 - Proven experience with **distributed systems** and **Web Standards**
+
 - Familiarity with **cloud-native practices, APIs, CI/CD, containers, and Kubernetes**
+
 - Experience working with both **structured and unstructured databases**
+
 - Knowledge of advanced distributed algorithms such as **CRDTs, Raft, MapReduce, VRRs, and Bloom filters**
+
 - Notions of **AI technologies, architectures, and techniques** such as **transformers, embeddings, RAG pipelines, knowledge graphs, recommendation systems, and explainability frameworks**
+
 - Passion for **modern, composable, distributed, and holistic architectures**
 
 ### Nice to Have
 
 - Background in **micro frontends, microservices, or message brokers** (Kafka, NATS, RabbitMQ)
+
 - Experience with **polyglot runtimes** and **language-agnostic platforms**
+
 - Open-source contributions or community engagement
+
 - Experience designing ergonomic developer tools for modern workflows
 
 ### What We Offer
 
 - A chance to build **[Entando](https://himalayas.app/companies/entando)’s next-generation product** at the very core
+
 - Work in a collaborative, distributed, open-source environment
+
 - Competitive compensation and a flexible, remote-first setup
 
 Originally posted on [Himalayas](https://himalayas.app)

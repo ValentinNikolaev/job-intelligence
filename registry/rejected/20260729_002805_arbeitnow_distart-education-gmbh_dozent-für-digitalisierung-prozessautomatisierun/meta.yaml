@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: dozent-fur-digitalisierung-prozessautomatisierung-regular-senior-in-teilzeit-leipzig-140762
+source_url: https://www.arbeitnow.com/jobs/companies/distart-education-gmbh/dozent-fur-digitalisierung-prozessautomatisierung-regular-senior-in-teilzeit-leipzig-140762
+title: Dozent für Digitalisierung & Prozessautomatisierung (m/w/d) – Regular/Senior
+  in Teilzeit
+company: Distart Education GmbH
+location: Leipzig
+published_at: '2026-07-28T15:20:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:28:05Z'
+rejected_at: '2026-07-29T00:28:05Z'

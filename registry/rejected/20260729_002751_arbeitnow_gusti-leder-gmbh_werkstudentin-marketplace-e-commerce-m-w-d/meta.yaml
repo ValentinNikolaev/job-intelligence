@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-marketplace-e-commerce-rostock-454603
+source_url: https://www.arbeitnow.com/jobs/companies/gusti-leder-gmbh/werkstudentin-marketplace-e-commerce-rostock-454603
+title: Werkstudentin Marketplace / E-Commerce (m/w/d)
+company: Gusti Leder GmbH
+location: Rostock, Mecklenburg-Vorpommern, Deutschland
+published_at: '2026-07-28T17:50:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:27:51Z'
+rejected_at: '2026-07-29T00:27:51Z'

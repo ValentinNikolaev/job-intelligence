@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5496586933559565270'
+source_url: https://jooble.org/away/-5496586933559565270?p=1&pos=36&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=114&brelb=10&scr=2172.0168&bscr=2172.0168&aq=1029652588024022382&elckey=1811206656536025066
+title: Senior Backend Engineer - Product
+company: Mercury
+location: San Francisco, CA
+published_at: '2026-07-24T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:31:35Z'
+rejected_at: '2026-07-29T00:31:35Z'

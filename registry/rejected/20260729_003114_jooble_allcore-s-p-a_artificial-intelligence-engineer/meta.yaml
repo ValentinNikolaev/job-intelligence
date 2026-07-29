@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1561211291330462140'
+source_url: https://jooble.org/away/1561211291330462140?p=1&pos=23&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=18&brelb=10&scr=15.51914&bscr=15.51914&aq=-4867435804093738944&elckey=8265571613000703858
+title: Artificial Intelligence Engineer
+company: Allcore S.p.A.
+location: Italian Republic
+published_at: '2026-07-28T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:31:14Z'
+rejected_at: '2026-07-29T00:31:14Z'

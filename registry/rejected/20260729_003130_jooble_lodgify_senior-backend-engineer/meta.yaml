@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1773973823516629192'
+source_url: https://jooble.org/away/-1773973823516629192?p=1&pos=30&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=4&brelb=10&scr=2203.0847&bscr=2203.0847&aq=1029652588024022382&elckey=1811206656536025066
+title: Senior Backend Engineer
+company: Lodgify
+location: United States
+published_at: '2026-07-28T14:13:36.3630000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:31:30Z'
+rejected_at: '2026-07-29T00:31:30Z'

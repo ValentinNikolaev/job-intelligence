@@ -22,24 +22,35 @@ This role reports to one of our Engineering Managers and base compensation for t
 ### What you'll do
 
 - Work on meaningful projects with business impact from your very first day.
+
 - Scope and lead large projects, addressing ambiguity, creating plans, and ensuring technical excellence
+
 - Help develop the team roadmap, balancing key technical and product tradeoffs
+
 - Teach and mentor members of the engineering team, constantly modeling how great software should be developed
+
 - Work within our tech stack, which includes Python and Django on the backend, and React, JavaScript, and TypeScript on the frontend
+
 - Write a lot of code :)
 
 ### Qualifications
 
 - Have 4+ years of experience as a software engineer
+
 - Have worked in multiple functional areas – frontend, backend, platform, services, data, or cloud infrastructure.
+
 - Have a strong technical foundation
+
 - Care deeply about both technical success and product success
+
 - Are an excellent communicator
+
 - Get things done
 
 ### You might also have an interest in:
 
 - Are an excellent communicator
+
 - Get things done
 
 *We prioritize candidate safety. Please be aware that official communication will only come from @medallion.co email addresses.*

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 6d1ac5ed-d76d-41a4-9022-c35ae47c9480
+title: Senior Frontend Engineer - React
+company: Researchgate
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full-time
+sources:
+- source: arbeitnow
+  source_job_id: senior-frontend-engineer-react-berlin-331519
+  url: https://www.arbeitnow.com/jobs/companies/researchgate/senior-frontend-engineer-react-berlin-331519
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full-time
+published_at: '2026-07-28T23:26:12Z'
+discovered_at: '2026-07-29T00:27:37Z'
+updated_at: '2026-07-29T00:27:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T00:27:37Z'
+analysis_priority: 0
+fingerprint: sha256:5b922bb172156f55d6d85a5093c5c521fef12f2f727acc74e19486b484a82b5b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

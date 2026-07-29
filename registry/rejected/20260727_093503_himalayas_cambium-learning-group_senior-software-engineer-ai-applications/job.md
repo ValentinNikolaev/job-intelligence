@@ -17,33 +17,69 @@ We are seeking a Lead/Senior Software Engineer (AI Applications) to own the arch
 
 ### Job Responsibilities:
 
-- **Agent Architecture & Implementation:** Design, build, and deploy robust Generative AI agents featuring advanced capabilities like persistent memory, shared state management, and complex multi-step reasoning workflows specifically tailored for real-world educational applications.
-- **Product Innovation:** Drive the development of cutting-edge, AI-enabled web based educational software systems that redefine user interaction and learning outcomes.
-- **Generative AI Integration:** Seamlessly incorporate Generative AI features into existing platforms, focusing on optimizing performance, ensuring a seamless UX, and maintaining strict safety compliance.
-- **Intelligent System Leverage:** Expertly leverage Large Language Models (LLMs) and multimodal models to deliver highly intelligent, context-aware user experiences.
-- **Agent Quality & Evaluation:** Establish and maintain frameworks for comprehensive agent evaluation, including rigorous testing, critical safety assessments, and detailed performance monitoring.
-- **Cross-Functional Leadership:** Partner closely with other teams to translate complex user needs and learning workflows into scalable, production-ready agentic capabilities.
-- **Technical Mentorship:** Act as a subject matter expert, guiding engineers on advanced agent design patterns, optimal LLM integration strategies, and best practices for building secure, autonomous systems.
-- **Mission Alignment:** Contribute to a mission-driven environment focused on innovation, measurable impact, and the ethical, responsible development and deployment of AI enabled products.
+-
+**Agent Architecture & Implementation:** Design, build, and deploy robust Generative AI agents featuring advanced capabilities like persistent memory, shared state management, and complex multi-step reasoning workflows specifically tailored for real-world educational applications.
+
+-
+**Product Innovation:** Drive the development of cutting-edge, AI-enabled web based educational software systems that redefine user interaction and learning outcomes.
+
+-
+**Generative AI Integration:** Seamlessly incorporate Generative AI features into existing platforms, focusing on optimizing performance, ensuring a seamless UX, and maintaining strict safety compliance.
+
+-
+**Intelligent System Leverage:** Expertly leverage Large Language Models (LLMs) and multimodal models to deliver highly intelligent, context-aware user experiences.
+
+-
+**Agent Quality & Evaluation:** Establish and maintain frameworks for comprehensive agent evaluation, including rigorous testing, critical safety assessments, and detailed performance monitoring.
+
+-
+**Cross-Functional Leadership:** Partner closely with other teams to translate complex user needs and learning workflows into scalable, production-ready agentic capabilities.
+
+-
+**Technical Mentorship:** Act as a subject matter expert, guiding engineers on advanced agent design patterns, optimal LLM integration strategies, and best practices for building secure, autonomous systems.
+
+-
+**Mission Alignment:** Contribute to a mission-driven environment focused on innovation, measurable impact, and the ethical, responsible development and deployment of AI enabled products.
 
 ### Job Requirements:
 
-- **Experience**: 5+ years in software engineering, including 2+ years in a Senior/Staff-level capacity leading significant technical initiatives.
-- **Agentic Systems Mastery**: Proven, hands-on experience building complex agentic systems, including proficiency with tool calling, advanced prompt optimization, and comprehensive context engineering.
-- **LLM Integration & Backend**: Deep, practical experience integrating with LLMs, coupled with strong skills in prompt engineering and Retrieval-Augmented Generation (RAG) pipelines.
-- **Programming Proficiency**: Strong expertise in at least two of the following programming languages: Python, JavaScript/TypeScript, or C#.
-- **Cloud Platform Experience**: Experience deploying and managing systems on at least one of the major cloud platforms (AWS, GCP, or Azure), utilizing containerization and implementing robust observability tooling.
-- **Web Application and API Development**: Proven experience building and deploying robust, high-throughput full stack solutions including backend services/APIs that integrate with AI models and orchestrate complex workflows.
-- **Vector Databases:** Familiarity with vector databases and embedding models.
-- **Security Focus:** Demonstrated experience designing secure systems capable of safely handling untrusted code execution or complex user-generated content.
-- **Soft Skills:** Excellent communication, collaboration skills, and the ability to autonomously drive technical initiatives from initial prototype through to high-scale production.
+-
+**Experience**: 5+ years in software engineering, including 2+ years in a Senior/Staff-level capacity leading significant technical initiatives.
+
+-
+**Agentic Systems Mastery**: Proven, hands-on experience building complex agentic systems, including proficiency with tool calling, advanced prompt optimization, and comprehensive context engineering.
+
+-
+**LLM Integration & Backend**: Deep, practical experience integrating with LLMs, coupled with strong skills in prompt engineering and Retrieval-Augmented Generation (RAG) pipelines.
+
+-
+**Programming Proficiency**: Strong expertise in at least two of the following programming languages: Python, JavaScript/TypeScript, or C#.
+
+-
+**Cloud Platform Experience**: Experience deploying and managing systems on at least one of the major cloud platforms (AWS, GCP, or Azure), utilizing containerization and implementing robust observability tooling.
+
+-
+**Web Application and API Development**: Proven experience building and deploying robust, high-throughput full stack solutions including backend services/APIs that integrate with AI models and orchestrate complex workflows.
+
+-
+**Vector Databases:** Familiarity with vector databases and embedding models.
+
+-
+**Security Focus:** Demonstrated experience designing secure systems capable of safely handling untrusted code execution or complex user-generated content.
+
+-
+**Soft Skills:** Excellent communication, collaboration skills, and the ability to autonomously drive technical initiatives from initial prototype through to high-scale production.
 
 ### Nice to Have:
 
 - Experience with AI Agent evaluation frameworks.
+
 - Familiarity with scalable inference pipelines.
+
 - Familiarity with open tool protocols (e.g., MCP, A2A), browser automation etc.
+
 - Prior work in EdTech.
+
 - Familiarity with AWS Bedrock and Strands Agents
 
 ### Why Work With Us?
@@ -66,9 +102,9 @@ Our machine scoring methods are driven by artificial intelligence allowing compu
 
 Our processes use intensive algorithmic computing allowing a customized experience for each student as the exam adapts real-time based upon answers given.
 
-In the 2024 school year, we delivered more than 126 million online tests, and successfully supported peak testing volumes exceeding 1.5 million simultaneous test takers. We have the most advanced features of any online testing system, and we continue to push boundaries to improve student performance measurement and enabling educators with actionable insights to drive better overall educational outcomes for our students. To learn more about our organization and the exciting work we do, visit [www.cambiumassessment.com](http://www.cambiumassessment.com).
+In the 2024 school year, we delivered more than 126 million online tests, and successfully supported peak testing volumes exceeding 1.5 million simultaneous test takers. We have the most advanced features of any online testing system, and we continue to push boundaries to improve student performance measurement and enabling educators with actionable insights to drive better overall educational outcomes for our students. To learn more about our organization and the exciting work we do, visit .
 
-[**Remote First Work Environment**](https://www.cambiumlearning.com/careers/remote-first)
+**Remote First Work Environment**
 
 Our Remote First approach gives employees the flexibility and trust they need to effectively balance work with life. It creates a culture in which all employees are valued and where success is measured in results. It allows us to work collaboratively, inclusively and for greater positive impact, regardless of our individual locations.
 

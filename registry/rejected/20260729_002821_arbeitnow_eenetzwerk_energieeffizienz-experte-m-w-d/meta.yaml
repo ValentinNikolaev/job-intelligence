@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: energieeffizienz-experte-stuttgart-70354
+source_url: https://www.arbeitnow.com/jobs/companies/eenetzwerk/energieeffizienz-experte-stuttgart-70354
+title: Energieeffizienz-Experte (m/w/d)
+company: EENetzwerk
+location: Stuttgart
+published_at: '2026-07-28T14:00:48Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:28:21Z'
+rejected_at: '2026-07-29T00:28:21Z'

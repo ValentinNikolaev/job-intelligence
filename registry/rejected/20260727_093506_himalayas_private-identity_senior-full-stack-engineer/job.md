@@ -18,14 +18,23 @@ We are seeking **C++ Engineers **with **at least 10 years of experience **who ca
 ### Qualifications
 
 - C++: Demonstrated experience in C++ programming with a strong understanding of language features and best practices.
+
 - Multithreading and Synchronization in C++: Demonstrated experience on multi-threading and synchronization techniques in C++.
+
 - CMake Proficiency: Experience with CMake for configuring and building C++ projects.
+
 - Conan Package Management: Experience with Conan for managing dependencies in C++ projects.
+
 - Linux Administration: Knowledge in Linux system administration, including terminal operations, SSH, and basic server management.
+
 - Version Control with GitHub: Proficient in using GitHub for version control, branching, pull requests, and collaboration workflows.
+
 - CI/CD with GitHub Actions: Experience setting up and maintaining CI/CD pipelines using GitHub Actions
+
 - Unit Testing: Skilled in writing comprehensive unit tests to ensure code stability and quality.
+
 - Image Processing: Background in image processing with C++ and OpenCV
+
 - Python: Experience in Python for application development and scripting
 
 ### Bonus Qualifications
@@ -35,6 +44,7 @@ We are seeking **C++ Engineers **with **at least 10 years of experience **who ca
 ### Benefits
 
 - Competitive compensation and equity
+
 - A remote-first, collaborative culture
 
 ### Important:

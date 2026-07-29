@@ -1,0 +1,30 @@
+schema_version: 2
+id: f3e3f2e7-5a11-4c7e-a9fe-645c7f9800c5
+title: Fullstack Engineer- AWS, Typescript, Java, Spring Boot, React, Next.js (m/f/d)
+company: Trusted Shops SE (DE)
+company_url: null
+location: Cologne, Nordrhein-Westfalen, Germany
+remote: false
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: fullstack-engineer-aws-typescript-java-spring-boot-react-nextjs-cologne-496519
+  url: https://www.arbeitnow.com/jobs/companies/trusted-shops-se-de/fullstack-engineer-aws-typescript-java-spring-boot-react-nextjs-cologne-496519
+  metadata:
+    tags:
+    - Tech
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-07-28T23:50:53Z'
+discovered_at: '2026-07-29T00:27:31Z'
+updated_at: '2026-07-29T00:27:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T00:27:31Z'
+analysis_priority: 0
+fingerprint: sha256:e92d01816b3a36c352973c3d6fbf86f679541a3b2af7cc35112e9e5e16f947a1
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

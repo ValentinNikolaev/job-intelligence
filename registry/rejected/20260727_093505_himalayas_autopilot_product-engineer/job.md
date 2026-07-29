@@ -34,6 +34,7 @@ Develop responsive UIs with React Router v7
 -
 
 ### Collaborate on API design
+
 -
 
 Write clean, well-tested code across the stack
@@ -73,12 +74,15 @@ Comfortable with React + TypeScript for cross-functional work
 -
 
 ### Payments or fintech experience
+
 -
 
 ### Exposure to Clickhouse/Tinybird
+
 -
 
 ### Exposure to AI/ML systems
+
 -
 
 Built high-performance, low-latency systems
@@ -95,7 +99,7 @@ We focus on real-world skills - not whiteboard tricks. Here's what to expect:
 
 ### Apply with LinkedIn Profile And Resume
 
-We'll filter candidates based on the requirements listed above which you will receive an email to schedule a 60-minute live coding session with us once you get super productive with our [interview](https://github.com/autopilot-team/interview) repository.
+We'll filter candidates based on the requirements listed above which you will receive an email to schedule a 60-minute live coding session with us once you get super productive with our interview repository.
 
 -
 
@@ -112,6 +116,7 @@ How you think through product requirements
 -
 
 ### How you model data and structure code
+
 -
 
 Your testing, naming, and documentation habits
@@ -125,9 +130,11 @@ The session mirrors our actual development workflow:
 -
 
 ### accessible
+
 -
 
 ### pragmatic
+
 -
 
 ### collaborative

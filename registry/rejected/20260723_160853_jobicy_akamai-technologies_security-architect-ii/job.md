@@ -1,11 +1,11 @@
 # Security Architect II
 
-Posted: 2026-06-25T10:01:45Z
+Posted: 2026-07-27T08:52:37Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-25T10:01:45Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 **Would you enjoy working with cutting-edge web security systems?**
 

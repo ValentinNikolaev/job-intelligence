@@ -96,4 +96,4 @@ We know great candidates don't always meet every qualification. If you're excite
 
 IXOPAY is committed to building an inclusive workplace where everyone can thrive. We welcome applications from all qualified candidates regardless of race, ethnicity, religion, gender, gender identity or expression, sexual orientation, age, disability, or any other characteristic protected by applicable law.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

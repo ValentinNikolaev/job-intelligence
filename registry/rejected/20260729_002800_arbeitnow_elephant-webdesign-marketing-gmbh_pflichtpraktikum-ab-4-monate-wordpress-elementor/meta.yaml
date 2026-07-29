@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: pflichtpraktikum-ab-4-monate-wordpress-elementor-deutschsprachig-ingolstadt-485751
+source_url: https://www.arbeitnow.com/jobs/companies/elephant-webdesign-marketing-gmbh/pflichtpraktikum-ab-4-monate-wordpress-elementor-deutschsprachig-ingolstadt-485751
+title: Pflichtpraktikum ab 4 Monate (Wordpress / Elementor / deutschsprachig)
+company: Elephant Webdesign & Marketing GmbH
+location: Ingolstadt
+published_at: '2026-07-28T15:30:27Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:28:00Z'
+rejected_at: '2026-07-29T00:28:00Z'

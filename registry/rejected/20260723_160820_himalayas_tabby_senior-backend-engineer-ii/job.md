@@ -23,32 +23,51 @@ You’ll work on high-impact projects in a high-growth environment, alongside a 
 ### Key Responsibilities
 
 - 5+ years of backend engineering experience, with at least 2 years working with Golang and 2 years working with Python
+
 - Plus will be an experience with AI agent frameworks: Langchain, Langgraph, ADK
+
 - Plus will be an experience in building or integrating LLM-based features and agent-centric architectures.
+
 - Big plus will be an ML experience: learning and evaluation of models, implementation of them in production
+
 - Experience building scalable, distributed systems and working with high-load architectures
+
 - Solid understanding of backend tools and technologies — we use PostgreSQL, Redis, Kubernetes, Google Cloud Platform, GitLab, and a microservices architecture
+
 - Experience developing internal instruments, automations, CRM and so on
+
 - A passion for writing clean, testable, and maintainable code
+
 - A proactive mindset and the ability to work independently
+
 - Strong communication skills in English (B2 level or higher)
 
 ### Skills, Knowledge & Expertise
 
 - Development of backend for AI agent platform and microservices around it
+
 - Participate in the architecture setup, in choosing technologies
+
 - Stay up to date with updates and frameworks around AI agent technologies, study and experiment.
+
 - Improve and optimize parts of the platform related to agent creation, quality evaluation, and performance under load.
+
 - Work closely with platform clients, take feedback into account, and help build a user-friendly product.
 
 ### Job Benefits
 
 - Full-time B2B contract
+
 - Fully remote setup, work from anywhere in Europe
+
 - Up to 20% tax allowance
+
 - 22 paid leave days annually
+
 - Stock options (ESOP) in a fast-scaling, pre-IPO company
+
 - Flexi benefits you can use for wellness, travel, or learning
+
 - Work alongside a high-performing, international engineering team in a global fintech unicorn
 
 Originally posted on [Himalayas](https://himalayas.app)

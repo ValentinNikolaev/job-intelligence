@@ -22,24 +22,35 @@ The **Integrations** team is responsible for the automation of SAAS user managem
 ### **The role entails**
 
 - Develop engineering solutions leveraging Python
+
 - Collaborate with colleagues on technical designs and code reviews
+
 - Deploy and operate services developed by the team
+
 - Depending on your seniority, coach, mentor, and offer career development feedback
+
 - Develop and evangelize great engineering and organizational practices
 
 ### **What we are looking for in you**
 
 - Exceptional academic track record from both high school and university
+
 - Undergraduate degree in a technical subject or a compelling narrative about your alternative chosen path
+
 - Track record of going above-and-beyond expectations to achieve outstanding results
+
 - Experience with software development in Python
+
 - Professional written and spoken English with excellent presentation skills
+
 - Result-oriented, with a personal drive to meet commitments
+
 - Ability to travel internationally twice a year, for company events up to two weeks long
 
 ### **Nice-to-have skills**
 
 - Performance engineering and security experience
+
 - Experience with Airbyte, Ranger, Temporal, or Trino
 
 ### **What we offer colleagues**
@@ -47,21 +58,30 @@ The **Integrations** team is responsible for the automation of SAAS user managem
 We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognize outstanding performance. In addition to base pay, we offer a performance-driven annual bonus or commission. We provide all team members with additional benefits, which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.
 
 - Distributed work environment with twice-yearly team sprints in person
+
 - Personal learning and development budget of USD 2,000 per year
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Maternity and paternity leave
+
 - Employee Assistance Program
+
 - Opportunity to travel to new locations to meet colleagues
+
 - Priority Pass, and travel upgrades for long haul company events
 
 ### **About [Canonical](https://himalayas.app/companies/canonical)**
 
 [Canonical](https://himalayas.app/companies/canonical) is a pioneering tech firm at the forefront of the global move to open source. As the company that publishes Ubuntu, one of the most important open source projects and the platform for AI, IoT and the cloud, we are changing the world of software. We recruit on a global basis and set a very high standard for people joining the company. We expect excellence - in order to succeed, we need to be the best at what we do. Most colleagues at [Canonical](https://himalayas.app/companies/canonical) have worked from home since its inception in 2004.​ Working here is a step into the future, and will challenge you to think differently, work smarter, learn new skills, and raise your game.
 
-### [Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
+###
+[Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products.[ Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 Originally posted on [Himalayas](https://himalayas.app)

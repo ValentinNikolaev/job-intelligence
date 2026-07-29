@@ -24,22 +24,35 @@ In this role, you’ll empower developers across the world by ensuring that Laun
 ### **The role entails**
 
 - Influencing and driving design, architecture, and feature decisions across distributed teams, to ensure high-impact solutions.
+
 - Crafting exceptional, API-first Python code with unit tests, that delivering robust, well-structured systems that scale.
+
 - Diagnosing and resolving complex technical challenges, implementing high-quality fixes that enhance performance and reliability.
+
 - Mentoring and uplifting fellow engineers, leading code reviews that reinforce best practices and elevate team excellence.
+
 - Enjoying the freedom of remote work while staying globally engaged. Travelling internationally 2 to 4 times a year to collaborate in key internal discussions and industry-leading external events—expanding your network, sharing expertise, and shaping innovation on a global stage.
 
 ### **What we are looking for in you**
 
 - You love technology, working with brilliant people, and solving interesting problems
+
 - You are a strategic thinker who thrives on solving complex challenges and driving innovation
+
 - You are curious, adaptable, and articulate with strong leadership and collaboration skills
+
 - You have proven technical excellence in Python development and delivering high-quality, production-ready code
+
 - You have expertise in maintaining and improving large-scale web applications and database management (PostgreSQL a plus)
+
 - You have a deep understanding of integration, infrastructure, and operations in distributed environments
+
 - You have a security-focused mindset, ensuring robust implementation at every stage of development
+
 - You have a familiarity with Ubuntu as a development and deployment platform
+
 - You have a solid grasp of software packaging systems, including Debian/Ubuntu packages
+
 - You have a Bachelor’s or equivalent in Computer Science, STEM or similar degree
 
 ### **What we offer colleagues**
@@ -47,21 +60,30 @@ In this role, you’ll empower developers across the world by ensuring that Laun
 We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognize outstanding performance. In addition to base pay, we offer a performance-driven annual bonus or commission. We provide all team members with additional benefits which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.
 
 - Distributed work environment with twice-yearly team sprints in person
+
 - Personal learning and development budget of USD 2,000 per year
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Maternity and paternity leave
+
 - Team Member Assistance Program & Wellness Platform
+
 - Opportunity to travel to new locations to meet colleagues
+
 - Priority Pass and travel upgrades for long-haul company events
 
 ### **About [Canonical](https://himalayas.app/companies/canonical)**
 
 [Canonical](https://himalayas.app/companies/canonical) is a pioneering tech firm at the forefront of the global move to open source. As the company that publishes Ubuntu, one of the most important open-source projects and the platform for AI, IoT, and the cloud, we are changing the world of software. We recruit on a global basis and set a very high standard for people joining the company. We expect excellence; in order to succeed, we need to be the best at what we do. Most colleagues at [Canonical](https://himalayas.app/companies/canonical) have worked from home since our inception in 2004.​ Working here is a step into the future and will challenge you to think differently, work smarter, learn new skills, and raise your game.
 
-### [Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
+###
+[Canonical](https://himalayas.app/companies/canonical) is an equal opportunity employer
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products.[ Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 Originally posted on [Himalayas](https://himalayas.app)

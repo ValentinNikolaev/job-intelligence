@@ -28,30 +28,51 @@ We are committed to building an inclusive work environment and invest in our emp
 ### **Responsibilities**
 
 - Working within our agile software development teams, lead design and development of product features for highly available payment processing, subscription billing, and reporting platforms
+
 - Lead integrations with external platforms such as payment processors, card networks, and alternative payment methods (APMs)
+
 - Ensure a robust software delivery process through clear procedures as well as automated build, test, and deployment capabilities
+
 - Debug and troubleshoot complex issues, optimize system performance, and ensure reliability across money-movement flows
+
 - Reduce time to market by decomposing large feature requirements into small development tasks suitable for incremental releases
+
 - Participate in design and code review with other team members
+
 - Mentor junior members of the development team
+
 - Manage software issues through tickets according to product development priorities
+
 - Lead the adoption of best practices for coding standards, testing, and deployment
+
 - Work with other [FastSpring](https://himalayas.app/companies/fastspring) team members — Product, Risk, Finance, and Compliance — to understand and incorporate business and regulatory requirements (PCI-DSS, PSD2/SCA, 3DS2) into product solutions
+
 - Flexible hours to work with local and remote team members on feedback and requirements
+
 - Respond to production issues and apply continuous improvement techniques to fully resolve them
 
 ### **Qualifications**
 
 - 10+ years of software development experience delivering commercial SaaS solutions using **Java**
+
 - Experience in the Payments industry and/or integrating with a third-party payment API is a plus
+
 - Passionate problem solver with a proven track record of delivering high-quality software solutions
+
 - 4+ years of experience with **SQL (PostgreSQL)** and NoSQL storage
+
 - 3+ years of experience implementing RESTful service-oriented architectures with public APIs
+
 - HTML / CSS / **JavaScript** / **Angular** experience; **Vue** a plus
+
 - Unit testing, mocking, and automation experience
+
 - 3+ years experience with **Amazon Web Services**, including EC2, S3, RDS, DynamoDB; experience with Lambda is a plus
+
 - Experience with Linux; experience with containers & Docker is a plus
+
 - Comfortable using AI-assisted development tooling — our engineers use **Claude Code** day-to-day to accelerate design, implementation, and review
+
 - Bachelor's or Master's degree in Computer Science or equivalent experience
 
 Consistent with [FastSpring](https://himalayas.app/companies/fastspring)'s values and applicable law, we provide the following information to promote pay transparency and equity. The base pay range below represents a good faith estimate of the low and high end base pay range for the listed position. This role may be eligible for the corporate bonus plan (or, if a sales role, a commission plan as defined in the sales incentive plan document). In addition, [FastSpring](https://himalayas.app/companies/fastspring) provides a variety of benefits to employees.

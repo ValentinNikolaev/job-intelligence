@@ -1,0 +1,12 @@
+schema_version: 1
+source: ashby
+source_job_id: 2ac306a9-1d24-4b19-8261-32902b7dd423
+source_url: https://jobs.ashbyhq.com/n8n/2ac306a9-1d24-4b19-8261-32902b7dd423
+title: Engineering Manager | Remote | Europe
+company: n8n
+location: Berlin Office
+published_at: '2026-07-27T13:58:01.090+00:00'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:28:40Z'
+rejected_at: '2026-07-29T00:28:40Z'

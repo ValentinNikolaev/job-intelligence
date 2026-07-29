@@ -1,11 +1,11 @@
 # Overhead Line (OHL) Design engineer
 
-Posted: 2026-06-25T08:56:45Z
+Posted: 2026-07-26T11:15:12Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-25T08:56:45Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Power Networks provides high quality consultancy services within distribution network (cable and overhead lines) and transmission (cable). We support our clients throughout every stage of the process — from early feasibility studies to design, execution, and project management. Our expertise also includes market, regulatory, and environmental analysis. Today, our work spans overhead lines and underground cables.
 

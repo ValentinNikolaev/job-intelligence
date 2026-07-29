@@ -142,4 +142,4 @@ Erfahrung mit IBM Planning Analytics TM1
 Du möchtest Unternehmen nicht nur beraten, sondern aktiv dabei unterstützen, moderne Finanz- und BI-Lösungen aufzubauen und weiterzuentwickeln?
 Dann bewirb dich jetzt als **Senior Consultant BI & Konsolidierung**!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

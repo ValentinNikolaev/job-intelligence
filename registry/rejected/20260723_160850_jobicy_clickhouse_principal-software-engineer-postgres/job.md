@@ -1,11 +1,11 @@
 # Principal Software Engineer - Postgres
 
-Posted: 2026-06-23T07:31:42Z
+Posted: 2026-07-25T10:40:03Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-23T07:31:42Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ## About ClickHouse
 

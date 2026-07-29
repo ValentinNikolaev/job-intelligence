@@ -24,33 +24,53 @@ This might be a good opportunity if you’re passionate about reliability, autom
 ****Key Responsabilities ****
 
 - Continuously improve [Latitude.sh](https://himalayas.app/companies/latitude-sh)’s platform reliability and performance
+
 - Design, build, and maintain tools to automate operational tasks and incident response
+
 - Implement and improve observability solutions, including monitoring, alerting, and tracing
+
 - Collaborate with engineering and platform teams to design scalable and resilient systems
+
 - Participate in on-call rotations and lead post-incident reviews with a focus on learning
+
 - Develop and document processes and runbooks that ensure operational excellence
+
 - Contribute to SLOs/SLIs definition and reliability metrics adoption across teams
 
 ****Skills and Qualifications****
 
 - Strong verbal and written English communication skills
+
 - Advanced knowledge of Linux/Unix systems in production environments
+
 - Experience with Kubernetes and container orchestration
+
 - Proficiency with infrastructure automation tools (e.g., Terraform, Ansible)
+
 - Experience with observability stacks (e.g., Prometheus, Grafana, Loki, ELK)
+
 - Familiarity with scripting and programming languages such as Bash, Python, Go, or Ruby
+
 - Working knowledge of Git and CI/CD pipelines
+
 - Solid understanding of incident management and root cause analysis processes
+
 - Knowledge of cloud-native reliability and security best practices
 
 ****What do we offer?****
 
 - Contractor (PJ)
+
 - Paid Time Off
+
 - Competitive Compensation
+
 - Wellhub (former Gympass)
+
 - Annual Bonus based on company and team performance
+
 - Flexible work hours
+
 - Opportunities for professional growth and development
 
 ****Why [Latitude.sh](https://himalayas.app/companies/latitude-sh)?****

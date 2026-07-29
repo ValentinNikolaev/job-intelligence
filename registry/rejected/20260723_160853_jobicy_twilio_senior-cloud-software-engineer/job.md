@@ -1,11 +1,11 @@
 # Senior Cloud Software Engineer
 
-Posted: 2026-06-25T17:01:41Z
+Posted: 2026-07-28T13:15:06Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-25T17:01:41Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 **Who we are **
 

@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/techbiz-global/jobs/full-stack-developer-ai-assisted-development
+source_url: https://himalayas.app/companies/techbiz-global/jobs/full-stack-developer-ai-assisted-development
+title: Full-stack developer (AI-assisted development)
+company: TechBiz Global
+location: Worldwide
+published_at: '2026-07-23T18:15:43Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:30:08Z'
+rejected_at: '2026-07-29T00:30:08Z'

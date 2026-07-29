@@ -1,0 +1,29 @@
+schema_version: 2
+id: f800f26b-7deb-42bf-ab6d-b89672b05349
+title: Senior System Administrator – Internal IT (m/w/d)
+company: Researchgate
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full-time
+sources:
+- source: arbeitnow
+  source_job_id: senior-system-administrator-internal-it-berlin-294301
+  url: https://www.arbeitnow.com/jobs/companies/researchgate/senior-system-administrator-internal-it-berlin-294301
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full-time
+published_at: '2026-07-28T23:26:12Z'
+discovered_at: '2026-07-29T00:27:35Z'
+updated_at: '2026-07-29T00:27:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T00:27:35Z'
+analysis_priority: 0
+fingerprint: sha256:7ef469a69ec24ad10e8f2181ae8079187fe24138cf2a0569abc1cf191a6dd77f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

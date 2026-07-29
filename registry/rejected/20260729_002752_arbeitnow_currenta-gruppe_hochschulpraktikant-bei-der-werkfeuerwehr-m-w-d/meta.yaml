@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: hochschulpraktikant-bei-der-werkfeuerwehr-leverkusen-275338
+source_url: https://www.arbeitnow.com/jobs/companies/currenta-gruppe/hochschulpraktikant-bei-der-werkfeuerwehr-leverkusen-275338
+title: Hochschulpraktikant bei der Werkfeuerwehr (m/w/d)
+company: CURRENTA GRUPPE
+location: Leverkusen, Nordrhein-Westfalen, Deutschland
+published_at: '2026-07-28T17:50:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T00:27:52Z'
+rejected_at: '2026-07-29T00:27:52Z'

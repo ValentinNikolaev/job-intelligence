@@ -70,4 +70,4 @@ The e:: Platform will follow these aspects:
 
 Evident Europe GmbH is an equal opportunities employer and we look forward to receiving your application.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

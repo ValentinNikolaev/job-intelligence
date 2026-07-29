@@ -1,11 +1,11 @@
 # Principal Software Architect
 
-Posted: 2026-06-25T03:27:06Z
+Posted: 2026-07-28T14:35:03Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-25T03:27:06Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ## **Principal Software Architect**
 

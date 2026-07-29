@@ -20,37 +20,61 @@ As a Senior Software Engineer at [Canonical](https://himalayas.app/companies/can
 ### The role entails
 
 - Identifying what matters for the team and driving initiatives to improve them
+
 - Design and implement well-tested and documented software
+
 - Debug and fix issues encountered by your users
+
 - Leading in our engineering process through code and architectural reviews
+
 - Contribute to technical documentation to make it the best of its kind
+
 - Seek improvements to engineering and operations practices
+
 - Deploy and operate services developed by the team
+
 - Contribute to the success of your product through technical advocacy
 
 ### What we are looking for in you
 
 - Curate technical quality standards by designing the architectural approach to support business objectives
+
 - You value soft skills and are passionate, enterprising, thoughtful, and self-motivated
+
 - An exceptional academic track record from both high school and university
+
 - Undergraduate degree in Computer Science or STEM, or a compelling narrative about your alternative path
+
 - Drive and a track record of going above and beyond expectations
+
 - Well-organised, self-starting and able to deliver to schedule
+
 - Displays competency in researching new technology or approaches, and is able to tastefully and sustainably integrate changes and more modern approaches to technical projects.
+
 - Provides comprehensive and insightful code review on items of any size within the project
+
 - An eye for accessibility and performance
+
 - Professional written and spoken English
+
 - Experience with Linux (Debian or Ubuntu preferred)
+
 - Excellent interpersonal skills, curiosity, flexibility, and accountability
+
 - Excellent communication and presentation skills
+
 - Result-oriented, with a personal drive to meet commitments
+
 - Ability to travel twice a year, for company events for up to two weeks each
 
 ### Nice-to-have skills
 
 - Experience with container tech such as LXD, Docker and Kubernetes
+
 - Experience fostering and maintaining a talented team by defining excellence
+
 - REST API design, development and governance
+
 - Drive to deliver performance engineering and security experience
 
 ### What we offer colleagues
@@ -58,21 +82,30 @@ As a Senior Software Engineer at [Canonical](https://himalayas.app/companies/can
 We consider geographical location, experience, and performance in shaping compensation worldwide. We revisit compensation annually (and more often for graduates and associates) to ensure we recognise outstanding performance. In addition to base pay, we offer a performance-driven annual bonus or commission. We provide all team members with additional benefits, which reflect our values and ideals. We balance our programs to meet local needs and ensure fairness globally.
 
 - Distributed work environment with twice-yearly team sprints in person
+
 - Personal learning and development budget of USD 2,000 per year
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Maternity and paternity leave
+
 - Employee Assistance Programme
+
 - Opportunity to travel to new locations to meet colleagues
+
 - Priority Pass, and travel upgrades for long-haul company events
 
 ### About [Canonical](https://himalayas.app/companies/canonical)
 
 [Canonical](https://himalayas.app/companies/canonical) is a pioneering tech firm at the forefront of the global move to open source. As the company that publishes Ubuntu, one of the most important open source projects and the platform for AI, IoT and the cloud, we are changing the world of software. We recruit on a global basis and set a very high standard for people joining the company. We expect excellence - in order to succeed, we need to be the best at what we do. Most colleagues at [Canonical](https://himalayas.app/companies/canonical) have worked from home since its inception in 2004.​ Working here is a step into the future, and will challenge you to think differently, work smarter, learn new skills, and raise your game.
 
-### [Canonical](https://himalayas.app/companies/canonical) is an equal-opportunity employer
+###
+[Canonical](https://himalayas.app/companies/canonical) is an equal-opportunity employer
 
-*We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background creates a better work environment and better products.*[*Whatever your identity we will give your application fair consideration*](https://canonical.com/careers/diversity/identity)*.*
+*We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background creates a better work environment and better products.**Whatever your identity we will give your application fair consideration**.*
 
 Originally posted on [Himalayas](https://himalayas.app)

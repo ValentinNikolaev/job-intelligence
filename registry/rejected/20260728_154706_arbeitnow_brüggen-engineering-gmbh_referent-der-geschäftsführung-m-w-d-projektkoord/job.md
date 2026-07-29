@@ -57,4 +57,4 @@ Ihr Ansprechpartner für Ihre Bewerbung ist:
 
 Herr Dipl.-Ing. Thomas Keller
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

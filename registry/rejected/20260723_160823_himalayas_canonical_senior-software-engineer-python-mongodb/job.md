@@ -14,9 +14,13 @@ We're enabling high-performing, rock-solid MongoDB deployments on any cloud or p
 ### Who you are
 
 - You love technology and working with brilliant people.
+
 - You are an accomplished senior Python programmer that enjoys challenging projects in mission-critical environments.
+
 - You have experience operating and managing MongoDB clusters.
+
 - You are experienced with modern infrastructure deployment automations or with traditional Linux systems administration, operations, and package management.
+
 - You are passionate about quality and automatic testing.
 
 Work with one of the industry's pioneers in open source with intelligent engineers at every level from engineer to CTO and CEO level. At [Canonical](https://himalayas.app/companies/canonical) we've honed our remote-first culture since 2004, established in the company from the very beginning. Enjoy a competitive salary, the flexibility to work and live where you wish, and the chance to work exclusively on impactful open source projects.

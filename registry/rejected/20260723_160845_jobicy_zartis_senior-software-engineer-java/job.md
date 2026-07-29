@@ -1,11 +1,11 @@
 # Senior Software Engineer (Java)
 
-Posted: 2026-06-25T11:13:26Z
+Posted: 2026-07-26T10:40:04Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-25T11:13:26Z is older than 7 days
+- Category: tech_stack
+- Reason: Spring Boot is not a target stack
 
 ## The company and our mission:
 

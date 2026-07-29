@@ -20,10 +20,15 @@ Location: This role can be filled in European, Middle East and African time zone
 The data platform team is responsible for the automation of data platform operations, with the mission of managing and integrating Big Data platforms at scale. This includes ensuring fault-tolerant replication, TLS, installation, backups and much more; but also provides domain-specific expertise on the actual data system to other teams within [Canonical](https://himalayas.app/companies/canonical). This role is focused on the creation and automation of infrastructure features of data platforms, not analysing and/or processing the data in them.
 
 - Collaborate proactively with a distributed team
+
 - Write high-quality, idiomatic Python code to create new features
+
 - Debug issues and interact with upstream communities publicly
+
 - Work with helpful and talented engineers including experts in many fields
+
 - Discuss ideas and collaborate on finding good solutions
+
 - Work from home with global travel for 2 to 4 weeks per year for internal and external events
 
 ### What we are looking for in you
@@ -33,6 +38,7 @@ The data platform team is responsible for the automation of data platform operat
 - Proven hands-on experience in distributed systems, such as Kafka and Spark
 
 - Have a Bachelor’s or equivalent in Computer Science, STEM, or a similar degree
+
 - Willingness to travel up to 4 times a year for internal events
 
 ### Additional skills that you might also bring
@@ -40,8 +46,11 @@ The data platform team is responsible for the automation of data platform operat
 You might also bring a subset of experience from the followings that can help Data Platform to achieve its challenging goals and determine the level we will consider you for:
 
 - Experience operating and managing other data platform technologies, SQL (MySQL, PostgreSQL, Oracle, etc) and/or NoSQL (MongoDB, Redis, ElasticSearch, etc), similar to DBA level expertise
+
 - Experience with Linux systems administration, package management, and infrastructure operations
+
 - Experience with the public cloud or a private cloud solution like OpenStack
+
 - Experience with operating Kubernetes clusters and a belief that it can be used for serious persistent data services
 
 ### What we offer you
@@ -51,13 +60,21 @@ Your base pay will depend on various factors including your geographical locatio
 In addition to a competitive base pay, we provide all team members with additional benefits, which reflect our values and ideals. Please note that additional benefits may apply depending on the work location and, for more information on these, please ask your Talent Partner.
 
 - Fully remote working environment - we’ve been working remotely since 2004!
+
 - Personal learning and development budget of 2,000USD per annum
+
 - Annual compensation review
+
 - Recognition rewards
+
 - Annual holiday leave
+
 - Parental Leave
+
 - Employee Assistance Programme
+
 - Opportunity to travel to new locations to meet colleagues twice a year
+
 - Priority Pass for travel and travel upgrades for long haul company events
 
 ### About [Canonical](https://himalayas.app/companies/canonical)
@@ -68,7 +85,7 @@ In addition to a competitive base pay, we provide all team members with addition
 
 [Canonical](https://himalayas.app/companies/canonical) is an equal-opportunity employer
 
-We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. [Whatever your identity, we will give your application fair consideration.](https://canonical.com/careers/diversity/identity)
+We are proud to foster a workplace free from discrimination. Diversity of experience, perspectives, and background create a better work environment and better products. Whatever your identity, we will give your application fair consideration.
 
 *#li-remote*
 

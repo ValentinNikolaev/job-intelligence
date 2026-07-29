@@ -1,0 +1,28 @@
+schema_version: 2
+id: 1a47c5b4-3945-4c6e-9420-4b951af2d22f
+title: Senior Consultant, Advisory and Risk Consulting (Manager m/w/d)
+company: Control Risks 6
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: Full time, mid-senior
+sources:
+- source: arbeitnow
+  source_job_id: senior-consultant-advisory-and-risk-consulting-manager-berlin-184880
+  url: https://www.arbeitnow.com/jobs/companies/control-risks-6/senior-consultant-advisory-and-risk-consulting-manager-berlin-184880
+  metadata:
+    job_types:
+    - Full time
+    - mid-senior
+published_at: '2026-07-28T23:20:51Z'
+discovered_at: '2026-07-29T00:27:41Z'
+updated_at: '2026-07-29T00:27:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T00:27:41Z'
+analysis_priority: 0
+fingerprint: sha256:41e0583e4e4c5710b80c22239e83dfbaccbdbdff2dcc38bc6bbb81865d738b50
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
