@@ -75,4 +75,4 @@ Beantwortung von Fachfragen & Curriculum: Du bist die fachliche Instanz für Kan
 
 ✅ Sicherer Umgang mit gängigen Tools und Fähigkeit, Trends selbstständig einzuordnen und ins Curriculum zu übersetzen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

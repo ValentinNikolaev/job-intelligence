@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: director-people-business-partners-emea-berlin-netherlands-london-united-kingdom-280690
+source_url: https://www.arbeitnow.com/jobs/companies/planetlabs/director-people-business-partners-emea-berlin-netherlands-london-united-kingdom-280690
+title: Director, People Business Partners EMEA
+company: planetlabs
+location: Berlin, Netherlands; London, United Kingdom
+published_at: '2026-07-29T02:56:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T04:02:55Z'
+rejected_at: '2026-07-29T04:02:55Z'

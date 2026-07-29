@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4307267528060606128'
+source_url: https://jooble.org/desc/4307267528060606128?ckey=senior+backend+engineer&rgn=55179&pos=32&groupId=293749696&elckey=-1431798207880269389&p=1&aq=1679765120620121941&cid=15922&jobAge=46&brelb=100&bscr=11.051062&scr=11.051062
+title: Senior Project Engineer - Solar (Owner’s Rep)
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-07-27T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T04:06:45Z'
+rejected_at: '2026-07-29T04:06:45Z'

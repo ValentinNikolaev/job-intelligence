@@ -55,4 +55,4 @@ Haben Sie Lust auf ein solch spannendes Arbeitsumfeld? Dann melden Sie sich zeit
 
 Für Rückfragen zu dieser Position steht Ihnen Frau Julia Derks gern jederzeit als Ansprechpartner zur Verfügung: 01579 2468643.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

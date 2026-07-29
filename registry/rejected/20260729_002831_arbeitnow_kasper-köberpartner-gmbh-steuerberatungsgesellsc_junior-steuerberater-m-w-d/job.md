@@ -75,4 +75,4 @@ Posted: 2026-07-28T13:30:26Z
 
 - Übernahme der Kosten für eine zusätzliche Krankenversicherung
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

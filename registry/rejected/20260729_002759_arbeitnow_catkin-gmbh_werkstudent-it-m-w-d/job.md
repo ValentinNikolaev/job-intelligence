@@ -61,4 +61,4 @@ Die catkin GmbH ist ein Software-Unternehmen mit Sitz am Phoenix-See in Dortmund
 
 - Jobrad, sehr gute Erreichbarkeit mit öffentlichen Verkehrsmitteln und ein inspirierendes Arbeitsumfeld am Dortmunder Phoenixsee
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

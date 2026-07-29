@@ -133,4 +133,4 @@ Und wir fangen gerade erst an: allein in Deutschland gibt es mehr als 100.000 re
 
 Trage auch du deinen Teil dazu bei und bewirb dich jetzt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

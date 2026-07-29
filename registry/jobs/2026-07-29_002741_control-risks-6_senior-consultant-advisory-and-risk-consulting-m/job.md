@@ -57,4 +57,4 @@ We are now seeking a highly motivated, detail-oriented and business-minded profe
 - Control Risks supports hybrid working arrangements, wherever possible, that emphasise the value of in-person time together - in the office and with our clients - while continuing to support flexible and remote working.
 - As an equal opportunities employer, we encourage suitably qualified applicants from a wide range of backgrounds to apply and join us and are fully committed to equal treatment, free from discrimination, of all candidates throughout our recruitment process.[](https://apply.workable.com/control-risks-6/j/B3FF75F3C2/apply/)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

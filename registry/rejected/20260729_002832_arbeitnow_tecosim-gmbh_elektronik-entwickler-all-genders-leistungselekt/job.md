@@ -85,4 +85,4 @@ attraktive Zusatzleistungen wie Kita- und Kiga-Zuschuss, betriebliche Altersvors
 
 Mitarbeiterangebote wie Firmenfitness, JobRad, PC-Leasing, Einkaufsrabatte und Team-Events
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -147,4 +147,4 @@ Erfahrung mit **Openbridge**.
 
 Die Rolle als Data Engineer klingt genau nach dir? Dann schick uns deinen Lebenslauf und wir geben dir in einem kurzen Telefonat alle weiteren Infos zu Stelle und Unternehmen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

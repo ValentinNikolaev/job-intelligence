@@ -125,4 +125,4 @@ Not sure if you're what we're looking for here? Apply!
 
 At Trusted Shops, we are interested in you as a person - whether you fit in with us is independent of gender, nationality, ethnic and social origin, religion/belief, disability, age, and sexual orientation and identity. Trusted Shops is clearly committed to diversity and against discrimination.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

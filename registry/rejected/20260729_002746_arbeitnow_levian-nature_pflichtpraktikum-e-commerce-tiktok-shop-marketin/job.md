@@ -1,6 +1,6 @@
 # Pflichtpraktikum E-Commerce & TikTok Shop Marketing + Shopify - (100% Remote / Homeoffice) mit Umsatzbeteiligung (m/w/d)
 
-Posted: 2026-07-28T20:00:32Z
+Posted: 2026-07-29T00:29:02Z
 
 ## Rejection
 
@@ -71,4 +71,4 @@ Als E-Commerce & TikTok Shop Marketer bist du das kreative Herzstück unseres La
 
 Ich freu mich über deine Bewerbung :)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
