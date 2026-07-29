@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:35c51d45bf9b5924b9c0af7195b4c1390218f357b9219ce46d640663d8e61a6b
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:9bf5d3343b1bb9decb2ab1a42e52cb16c3b064be057d59c9b1975a873e2b697f
+model: codex:gpt-5.5:medium
+simple_life_end_date: June 2026
+cv_export_stem: CV_ValentinNikolaev_southgeeks_SeniorBackendEngineerPHPToRustMigration
+generated_at: '2026-07-29T10:35:30Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_southgeeks_SeniorBackendEngineerPHPToRustMigration.md
+- CV_ValentinNikolaev_southgeeks_SeniorBackendEngineerPHPToRustMigration.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
