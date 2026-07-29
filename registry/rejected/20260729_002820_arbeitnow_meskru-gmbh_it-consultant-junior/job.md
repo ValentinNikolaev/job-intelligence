@@ -85,4 +85,4 @@ Die MESKRU GmbH ist ein IT-Beratungsunternehmen, das sich auf die Atlassian-Tool
 
 #AtlassianPower #MESKRUexcellence
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

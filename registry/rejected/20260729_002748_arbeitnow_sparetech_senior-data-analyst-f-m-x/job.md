@@ -65,4 +65,4 @@ To achieve this, we have built, and continue to build, an AI-powered MRO softwar
 
 Backed by [Insight Partners](https://www.thesaasnews.com/news/sparetech-raises-10-million-in-series-a), SPARETECH is accelerating its growth with a strong focus on product innovation and team excellence. We take pride in our inclusive and collaborative culture, as well as our energetic and committed team.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teamleiter-logistik-hannover-lower-saxony-129532
+source_url: https://www.arbeitnow.com/jobs/companies/teampicnic/teamleiter-logistik-hannover-lower-saxony-129532
+title: Teamleiter Logistik (m/w/d)
+company: Teampicnic
+location: Hannover, Lower Saxony
+published_at: '2026-07-29T05:56:36Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T06:54:37Z'
+rejected_at: '2026-07-29T06:54:37Z'

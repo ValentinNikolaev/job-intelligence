@@ -78,4 +78,4 @@ This role isn't for someone waiting on a finished content calendar. We're still 
 
 Regardless of who you are, where you come from, how you look, or what music is playing in your headphones, you are welcome. We encourage applications from individuals of all gender identities, sexual orientations, personal expressions, ethnicities, religious beliefs, and disability statuses.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

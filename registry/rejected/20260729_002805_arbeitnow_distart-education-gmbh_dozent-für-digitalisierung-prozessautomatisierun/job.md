@@ -75,4 +75,4 @@ Beantwortung von Fachfragen & Curriculum: Du bist die fachliche Instanz für Too
 
 ✅ Fähigkeit, neue Automatisierungstrends einzuordnen und ins Curriculum zu übersetzen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

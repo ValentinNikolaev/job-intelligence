@@ -61,4 +61,4 @@ Für diese Stelle ist der Wohnort flexibel und liegt idealerweise in oder der Um
 
 Schließe dich unserem dynamischen und engagierten Team als Brandschutztechniker/-in an und gestalte aktiv die spannende Zukunft der Sicherheit mit uns. Deine vielversprechende Karriere bei Universal Brandschutz Service GmbH wartet auf dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

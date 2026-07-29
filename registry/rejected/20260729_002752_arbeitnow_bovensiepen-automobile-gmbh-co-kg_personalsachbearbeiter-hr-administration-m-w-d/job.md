@@ -81,4 +81,4 @@ Bereit?
 
 Wenn Sie beim Lesen gedacht haben: genau diese Mischung aus Sorgfalt, Mitdenken und Perspektive suche ich – dann bewerben Sie sich! Wir freuen uns auf Ihre Unterlagen unter Angabe Ihrer Gehaltsvorstellung und Ihres frühestmöglichen Eintrittstermins. Bei Fragen können Sie sich gerne an Janet Weiss (Leitung Personal) wenden: +49 8241 5005-439.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

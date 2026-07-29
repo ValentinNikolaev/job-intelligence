@@ -1,0 +1,65 @@
+schema_version: 2
+id: 049a16ff-5170-4070-8822-0efab33cd902
+title: Sr. Software Engineer - Go/MongoDB
+company: Percona
+company_url: null
+location: Croatia, Italy, Poland, Spain
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/percona/jobs/sr-software-engineer-go-mongodb
+  url: https://himalayas.app/companies/percona/jobs/sr-software-engineer-go-mongodb
+  metadata:
+    location_restrictions:
+    - name: Croatia
+    - name: Italy
+    - name: Poland
+    - name: Spain
+    excerpt: 'MongoDB Tools TeamTeam: MongoDB Tools (Product and Engineering) Location:
+      Remote Projects: percona/percona-clustersync-mongodb and percona/percona-backup-mongodb
+      About the teamThe MongoDB Tools Team builds Percona''s open source operational
+      tooling for MongoDB.'
+    company_slug: percona
+    company_logo: https://cdn-images.himalayas.app/m5ml5b82jfky4y2q9l4r31559vm1
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - 0
+    - 1
+    categories:
+    - Senior-Golang-Software-Engineer
+    - Senior-Mongo-Db-Engineer
+    - Senior-Golang-Developer
+    - Senior-Go-Developer
+    - Senior-Golang-Tech-Lead
+    - Senior-Golang-Architect
+    - GoLang-Backend-Engineer
+    expiry_at: '2026-09-27T05:07:32Z'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        q: backend engineer
+        exclude_worldwide: 'true'
+        country: IT
+        sort: recent
+        seniority: Senior
+    - query_index: 2
+      parameters:
+        q: golang
+        exclude_worldwide: 'true'
+        country: IT
+        sort: recent
+        seniority: Senior
+published_at: '2026-07-29T05:07:32Z'
+discovered_at: '2026-07-29T06:57:55Z'
+updated_at: '2026-07-29T06:57:55Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T06:57:55Z'
+analysis_priority: 0
+fingerprint: sha256:7dcfabea930f0fcbf810d2e01f47dbaf3f51315f60992dce06d9a27eb94a3dda
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

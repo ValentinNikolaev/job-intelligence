@@ -103,4 +103,4 @@ We’re past the demo stage. Patterno is live with large customers in one of Eur
 
 We envision a world where every relevant tender reaches the right company at the right time, where procurement intelligence is no longer locked behind manual research and outdated portals.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

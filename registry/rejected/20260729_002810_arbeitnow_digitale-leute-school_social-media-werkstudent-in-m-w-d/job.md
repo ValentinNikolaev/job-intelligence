@@ -69,4 +69,4 @@ Lust dabei zu sein? Schick uns deine Bewerbung – gerne inkl. 1–3 Arbeitsprob
 
 *Start: ab sofort*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
