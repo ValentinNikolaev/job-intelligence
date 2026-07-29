@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: mission-planning-software-engineer-munich-193813
+source_url: https://www.arbeitnow.com/jobs/companies/constellr-gmbh/mission-planning-software-engineer-munich-193813
+title: Mission Planning Software Engineer
+company: constellr GmbH
+location: Munich
+published_at: '2026-07-29T17:20:15Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T18:21:15Z'
+rejected_at: '2026-07-29T18:21:15Z'

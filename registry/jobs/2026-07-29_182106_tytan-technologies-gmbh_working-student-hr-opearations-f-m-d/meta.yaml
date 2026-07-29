@@ -1,0 +1,30 @@
+schema_version: 2
+id: a6f6ec72-17b2-4254-9bbb-5489143e84d0
+title: Working Student - HR Opearations (f/m/d)
+company: TYTAN Technologies GmbH
+company_url: null
+location: Munich, Bayern, Germany
+remote: false
+employment_type: Student college, parttime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: working-student-hr-opearations-munich-483399
+  url: https://www.arbeitnow.com/jobs/companies/tytan-technologies-gmbh/working-student-hr-opearations-munich-483399
+  metadata:
+    tags:
+    - People and Culture
+    job_types:
+    - Student college
+    - parttime fixed term
+published_at: '2026-07-29T17:51:01Z'
+discovered_at: '2026-07-29T18:21:06Z'
+updated_at: '2026-07-29T18:21:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T18:21:06Z'
+analysis_priority: 0
+fingerprint: sha256:e909b57232646115bbbfdf5726dc40262cb89446c2177ce43e971babcc0ecc2f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

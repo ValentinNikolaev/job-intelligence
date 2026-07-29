@@ -49,4 +49,4 @@ Bist du bereit, deine Karriere auf das nächste Level zu heben? Bei Estateanfrag
 
 Gestalte die Zukunft mit Estateanfrage! Werde Teil unseres dynamischen Teams als Junior Recruiter | HR Consultant (m/w/d) und treib unser Wachstum voran. Bewirb dich jetzt!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

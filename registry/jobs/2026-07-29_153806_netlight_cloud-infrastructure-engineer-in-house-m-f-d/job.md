@@ -108,4 +108,4 @@ The role is a full-time position starting asap. Please read the required qualifi
 
 The role is a full-time position starting asap. Please read the required qualifications carefully and note that fluency in the German and English language is a necessary requirement. Send in your up-to-date CV. If we find that your profile matches with what we are looking for, you will hear from us within two weeks of applying. We are looking forward to your application!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

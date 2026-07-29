@@ -1,6 +1,6 @@
 # E-Commerce Manager (m/w/d) Shopify
 
-Posted: 2026-07-29T12:30:33Z
+Posted: 2026-07-29T16:59:03Z
 
 ## Rejection
 
@@ -29,7 +29,7 @@ Arbeitsmodell: ab 30 Stunden/Woche, vor Ort in Münster - weil enge Abstimmung s
 
 ## Qualifikation
 
-- **Sprachliche Präzision:** Sehr gutes Deutsch und Englisch, Französisch oder Italienisch sind von Vorteil
+- **Sprachliche Präzision:** Sehr gutes Deutsch und Englisch - Französisch oder Italienisch von Vorteil, jedoch kein Muss
 
 - **Shopify Erfahrung oder schnelle Auffassungsgabe:** Du kennst dich mit Produkten, Collections, Varianten und Metaobjekten aus oder lernst dich schnell dort ein
 
@@ -79,4 +79,4 @@ Arbeitsmodell: ab 30 Stunden/Woche, vor Ort in Münster - weil enge Abstimmung s
 
 Möchtest du in einem familiären Umfeld an spannenden Projekten mitarbeiten? Dann bewirb dich jetzt als **E-Commerce Manager (m/w/d)** bei GORNATION und lass uns gemeinsam die Qualität unserer Produkte auf das nächste Level bringen! Wir freuen uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

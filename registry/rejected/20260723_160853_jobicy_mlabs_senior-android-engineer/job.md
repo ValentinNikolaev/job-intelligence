@@ -1,11 +1,11 @@
 # Senior Android Engineer
 
-Posted: 2026-06-28T19:01:43Z
+Posted: 2026-07-29T13:50:06Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-28T19:01:43Z is older than 7 days
+- Category: role_mismatch
+- Reason: title is an obvious mismatch for a backend profile
 
 **Location: Remote - EU remote**
 

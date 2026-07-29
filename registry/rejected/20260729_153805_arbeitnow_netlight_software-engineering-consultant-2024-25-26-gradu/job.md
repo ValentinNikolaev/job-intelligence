@@ -53,4 +53,4 @@ We are always looking for new Netlighters, so feel free to apply if you meet the
 
 We're excited to get to know you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

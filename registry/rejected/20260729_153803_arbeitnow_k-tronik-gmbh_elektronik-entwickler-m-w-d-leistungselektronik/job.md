@@ -55,4 +55,4 @@ Zur Unterstützung unseres Teams bei eine rennomierten Kunden im Bereich Luft- u
 
 - 360° Betreuung: Feedbackgespräche, Karriereplanung, Unterstützung bei Umzug, etc.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

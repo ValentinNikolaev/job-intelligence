@@ -67,4 +67,4 @@ Interesse?
 
 Dann sende uns deine Bewerbung mit Lebenslauf und einem kurzen Anschreiben. Darin kannst du uns gern erklären, weshalb du dich für die Verlagsarbeit interessierst und was dich für die Position besonders geeignet macht.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

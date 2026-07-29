@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: working-student-office-facility-assistant-munich-482256
+source_url: https://www.arbeitnow.com/jobs/companies/tytan-technologies-gmbh/working-student-office-facility-assistant-munich-482256
+title: Working Student – Office & Facility Assistant (m/f/d)
+company: TYTAN Technologies GmbH
+location: Munich, Bayern, Germany
+published_at: '2026-07-29T17:51:01Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T18:21:04Z'
+rejected_at: '2026-07-29T18:21:04Z'

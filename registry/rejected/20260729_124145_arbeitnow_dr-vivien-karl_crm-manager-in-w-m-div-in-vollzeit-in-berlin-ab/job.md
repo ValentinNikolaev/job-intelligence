@@ -69,4 +69,4 @@ Posted: 2026-07-29T09:30:36Z
 
 **Alle Bewerbungen werden unter Wahrung der Vertraulichkeit und in Übereinstimmung mit den Bestimmungen zum Schutz personenbezogener Daten behandelt.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

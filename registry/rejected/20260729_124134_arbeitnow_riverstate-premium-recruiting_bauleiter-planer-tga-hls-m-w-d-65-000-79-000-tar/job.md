@@ -65,4 +65,4 @@ Unsere Beratung ist für Sie völlig kostenlos. Falls Sie Fragen haben, erreiche
 
 Bauleiter HLS # Planer HLS # HLS Bauleitung # TGA HLS # Heizungsbau Bauleitung # Sanitärtechnik Bauleitung # Lüftungstechnik Bauleitung # Techniker HLS # Projektleiter HLS # HLS Wohnungsbau # Gebäudetechnik HLS # TGA Planung HLS # HOAI HLS # VOB HLS # Versorgungstechnik Bauleitung # Technische Gebäudeausrüstung
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

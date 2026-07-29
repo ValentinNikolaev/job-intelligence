@@ -7,4 +7,4 @@ Posted: 2026-07-29T14:09:17Z
 - Category: tech_stack
 - Reason: role does not mention Go/Golang or PHP
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

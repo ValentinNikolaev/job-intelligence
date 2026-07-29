@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '4362708656180828898'
-source_url: https://jooble.org/desc/4362708656180828898?ckey=remote+senior+backend+engineer&rgn=55180&pos=6&groupId=2134052230&elckey=-7845802870590774132&p=1&aq=6192440138791866637&cid=15922&jobAge=9&brelb=115&bscr=2534.5728&scr=2534.5728
+source_url: https://jooble.org/away/4362708656180828898?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=12&brelb=115&scr=2518.2737&bscr=2518.2737&aq=-4083558775105830518&elckey=-475416804364363572
 title: Senior Backend Software Engineer
 company: Semgrep, Inc.
 location: San Francisco, CA
 published_at: '2026-07-29T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-29T15:41:46Z'
+updated_at: '2026-07-29T18:25:37Z'
 rejected_at: '2026-07-29T15:41:46Z'

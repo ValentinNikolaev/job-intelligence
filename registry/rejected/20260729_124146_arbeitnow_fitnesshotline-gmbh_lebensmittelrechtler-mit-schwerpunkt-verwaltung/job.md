@@ -45,4 +45,4 @@ Unser Angebot umfasst einen modern ausgestatteten Arbeitsplatz, eine leistungsge
 
 **Nehmen Sie Ihren Erfolg aktiv in die Hand und bewerben Sie sich!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

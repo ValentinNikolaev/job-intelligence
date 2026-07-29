@@ -75,4 +75,4 @@ Dein North Star: Neukundenumsatz bei Ziel-ROAS. Du arbeitest Hand in Hand mit un
 
 Das klingt nach Dir? Dann bewirb Dich mit Deinem Lebenslauf. Ein Anschreiben ist kein Muss – aber wenn Du uns kurz erzählst, welche Ad Du zuletzt gebaut hast und worauf Du stolz warst, lesen wir das sehr gerne. Wir freuen uns auf Dich.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
