@@ -59,4 +59,4 @@ Ganz gleich, ob Sie aktuell aktiv auf Jobsuche sind oder sich einfach über attr
 
 Selbstverständlich behandle ich jede Anfrage und Bewerbung absolut vertraulich.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

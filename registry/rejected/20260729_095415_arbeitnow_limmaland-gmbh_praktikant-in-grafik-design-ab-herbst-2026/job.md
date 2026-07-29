@@ -67,4 +67,4 @@ Bitte bewirb dich mit der Info, ab wann genau und in welchem Zeitrahmen du für 
 
 Maren freut sich auf deine **Bewerbung mit** **Lebenslauf, frühestem Starttermin und gewünschter Praktikumsdauer.** Starte gerne direkt mit einem "Du".
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -91,4 +91,4 @@ Culture & Environment
 
 - We support working families with parent-friendly policies, an in-office kids corner, and an on-site babysitter.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

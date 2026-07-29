@@ -74,4 +74,4 @@ In dieser Rolle übernimmst Du die Verantwortung für die Architektur anspruchsv
 
 **Bewirb Dich bei uns, gestalte die Architektur moderner Salesforce-Lösungen, bringe Deine technische Handschrift in spannende Projekte ein und feiere gemeinsam mit uns die Erfolge, die aus exzellenter Beratung, starker Technologie und echter Zusammenarbeit entstehen.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

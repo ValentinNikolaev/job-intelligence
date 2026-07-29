@@ -1,11 +1,11 @@
 # IT - Systemadministrator:in
 
-Posted: 2026-07-29T10:00:48Z
+Posted: 2026-07-29T14:29:02Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: language_requirement
+- Reason: hard German language requirement without English green light
 
 Mehr als Labor
 
@@ -25,6 +25,8 @@ Zur Unterstützung unseres Teams der **IT** suchen wir zum nächstmöglichen Zei
 
 - Sie sind für die Sicherstellung des reibungslosen Betriebs der IT-Infrastruktur verantwortlich
 
+- In enger Zusammenarbeit mit unserer Informationssicherheit unterstützen Sie bei der Umsetzung der KRITIS- und NIS-2-Sicherheitsstandards und helfen dabei, unsere Labor-IT sicher aufzustellen
+
 - Sorgfältig planen, installieren und konfigurieren Sie Computersysteme
 
 - Sie betreuen unsere Applikationen im Client- und Serverumfeld
@@ -42,6 +44,8 @@ Zur Unterstützung unseres Teams der **IT** suchen wir zum nächstmöglichen Zei
 (Client-/Server-Netzwerke, Windows- und Linux-Betriebssysteme)
 
 - Sie verfügen über ein hohes Maß an Zuverlässigkeit, Einsatzbereitschaft und Diskretion ergänzt durch eine strukturierte und gewissenhafte Arbeitsweise
+
+- Sehr gute Deutschkenntnisse in Wort und Schrift (fachlich sicher, dokumentations- und kommunikationsstark) sind Voraussetzung
 
 - Gelegentliche Rufbereitschaften sind für Sie kein Problem
 

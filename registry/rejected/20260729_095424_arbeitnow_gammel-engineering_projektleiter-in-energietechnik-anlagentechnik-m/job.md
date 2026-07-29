@@ -81,4 +81,4 @@ Darauf kannst Du Dich freuen:
 
 Wenn Du nicht irgendeinen Job suchst, sondern an den Projekten arbeiten willst, die die Energiezukunft wirklich verändern, dann sollten wir uns kennenlernen. Bei Gammel Engineering hast Du die Chance, Verantwortung zu übernehmen, an innovativen Großprojekten mitzuwirken und gemeinsam mit uns als Innovationstreiber die Energiewende voranzubringen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

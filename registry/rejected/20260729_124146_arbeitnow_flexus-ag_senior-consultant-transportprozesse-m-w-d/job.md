@@ -1,6 +1,6 @@
 # (Senior) Consultant Transportprozesse (m/w/d)
 
-Posted: 2026-07-29T09:30:35Z
+Posted: 2026-07-29T13:59:03Z
 
 ## Rejection
 
@@ -26,8 +26,6 @@ Posted: 2026-07-29T09:30:35Z
 - **Souveräner Partner auf Augenhöhe:** Du kommunizierst verhandlungssicher auf Deutsch sowie Englisch und überzeugst Entscheider mit deiner Expertise.
 
 ## Das erwartet dich
-
-- **32,5 Stunden Woche / 4-Tage Woche**
 
 - Unbefristeter Arbeitsvertrag
 
@@ -66,17 +64,5 @@ Posted: 2026-07-29T09:30:35Z
 - Sicherer Arbeitsplatz in DER dynamischen Zukunftsbranche
 
 - Regelmäßiges Feedback, das Dich wirklich weiterbringt
-
-## Warum wir?
-
-****4-Tage Woche**
-
-## Wir sind die mit der 32 Stunden Woche
-
-**DU** stehst bei uns im Mittelpunkt! Arbeit, Familie und Hobbys unter einen Hut zu bringen fällt nicht immer leicht – deshalb haben wir als deutschlandweit erstes Unternehmen im SAP Logistics Umfeld die **32,5 Stunden Woche** in Vollzeit eingeführt, um die **Work-Life-Balance** unserer Mitarbeiter*innen zu fördern! Du möchtest lieber an **4 anstatt an 5 Tagen arbeiten** – bei uns kein Problem! Wir finden für Dich und Deine Pläne die passende Lösung!
-
-Wir fühlen uns den Werten des verpflichtet – deshalb wird die **Vereinbarkeit von Beruf und Familie bei uns GROßGESCHRIEBEN**!
-
-**Bewirb Dich noch heute – wir freuen uns auf Dich!**
 
 Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

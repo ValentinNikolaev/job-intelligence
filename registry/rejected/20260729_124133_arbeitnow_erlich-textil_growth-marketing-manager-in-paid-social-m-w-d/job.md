@@ -63,4 +63,4 @@ Wir suchen ab sofort eine:n Growth Marketing Manager:in – Paid Social, die/der
 
 Klingt nach dir? Dann melde dich bei uns. Wir freuen uns auf dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

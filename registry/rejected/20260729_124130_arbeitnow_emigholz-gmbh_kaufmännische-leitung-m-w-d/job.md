@@ -101,4 +101,4 @@ Das macht deine Rolle besonders:**
 
 Wenn du eine Rolle suchst, in der du ein solides Unternehmen aktiv weiterentwickeln kannst, und dir eine langfristige Perspektive in einem Familienunternehmen vorstellen kannst, dann freuen wir uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

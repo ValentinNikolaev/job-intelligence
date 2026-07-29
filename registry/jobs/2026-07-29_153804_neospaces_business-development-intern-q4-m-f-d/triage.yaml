@@ -1,0 +1,10 @@
+schema_version: 1
+triage_version: deterministic-triage-v1
+vacancy_id: 8a46f673-d06d-4e53-99a4-d4e0b35caa56
+skip_model: true
+reason: sales
+confidence: high
+matched_title_rules:
+- sales
+- junior
+triaged_at: '2026-07-29T15:42:06Z'

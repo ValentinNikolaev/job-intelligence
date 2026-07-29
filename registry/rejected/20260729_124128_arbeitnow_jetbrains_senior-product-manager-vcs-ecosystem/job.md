@@ -101,4 +101,4 @@ We know great ideas can come from anyone, anywhere. That’s why we do our best 
 
 *We process the data provided in your job application in accordance with the [Recruitment Privacy Policy.](https://www.jetbrains.com/legal/docs/privacy/privacy-recruitment/)*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

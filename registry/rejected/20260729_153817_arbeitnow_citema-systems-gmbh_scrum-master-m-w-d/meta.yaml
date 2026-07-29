@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: scrum-master-stuttgart-349871
+source_url: https://www.arbeitnow.com/jobs/companies/citema-systems-gmbh/scrum-master-stuttgart-349871
+title: Scrum Master (m/w/d)
+company: citema systems GmbH
+location: Stuttgart
+published_at: '2026-07-29T12:30:34Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T15:38:17Z'
+rejected_at: '2026-07-29T15:38:17Z'

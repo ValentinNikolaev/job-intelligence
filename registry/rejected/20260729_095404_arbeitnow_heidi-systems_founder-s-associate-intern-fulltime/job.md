@@ -105,4 +105,4 @@ Je nach Erfahrung ist ein Einstieg als Founder’s Associate in Form eines **Pra
 
 Wir halten den Prozess bewusst unkompliziert: **CV + LinkedIn, kein Anschreiben nötig.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

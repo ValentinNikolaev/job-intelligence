@@ -1,0 +1,27 @@
+schema_version: 2
+id: 7b7afa81-bc81-4c06-84ab-8e12500c1c70
+title: Account Executive - DACH (Mid Market)
+company: Openup
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: account-executive-dach-mid-market-192279
+  url: https://www.arbeitnow.com/jobs/companies/openup/account-executive-dach-mid-market-192279
+  metadata:
+    tags:
+    - DACH Sales
+published_at: '2026-07-29T14:55:25Z'
+discovered_at: '2026-07-29T15:38:02Z'
+updated_at: '2026-07-29T15:38:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-29T15:38:02Z'
+analysis_priority: 0
+fingerprint: sha256:a2f3494b2126e03dc53c7efa2f1c9212e04e898c0f09a9e347c972e5f78abac6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
