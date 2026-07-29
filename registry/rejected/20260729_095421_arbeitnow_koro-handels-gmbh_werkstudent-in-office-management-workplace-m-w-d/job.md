@@ -52,4 +52,4 @@ Bei uns geht es nicht nur um das Was, sondern vor allem um das Wie. Du passt per
 
 Dann bewirb Dich mit Deinen aussagekräftigen Bewerbungsunterlagen (**Lebenslauf und Motivationsschreiben**) über unsere Website. Wir suchen Teammitglieder:innen und keine bloßen Arbeitskräfte. Lass uns gern wissen, wer Du bist und was Dich bewegt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

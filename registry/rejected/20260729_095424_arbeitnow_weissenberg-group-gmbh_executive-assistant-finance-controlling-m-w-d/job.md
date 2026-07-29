@@ -121,4 +121,4 @@ Da Du eng mit unserer Geschäftsführung und den internen Teams zusammenarbeites
 
 - **MeinMPP** - aktuellste Hardware günstig im Leasing
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

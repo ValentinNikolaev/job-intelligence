@@ -83,4 +83,4 @@ Darauf kannst Du Dich freuen:
 
 Wenn Du nicht einfach nur konstruieren, sondern an Lösungen mitarbeiten willst, die die Energiezukunft aktiv mitgestalten, dann sollten wir uns kennenlernen. Bei Gammel Engineering hast Du die Chance, moderne Planungsmethoden einzusetzen, an innovativen Projekten mitzuwirken und gemeinsam mit uns als Innovationstreiber die Energiewende voranzubringen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

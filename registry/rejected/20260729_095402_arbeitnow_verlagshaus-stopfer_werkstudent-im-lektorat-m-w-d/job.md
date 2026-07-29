@@ -65,4 +65,4 @@ Neugierig geworden?
 
 Dann freuen wir uns auf deine Bewerbung mit Lebenslauf und einem kurzen Anschreiben. Schreib uns gern auch, warum du glaubst, dass du fachlich und persönlich gut zu unserem Verlag passt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

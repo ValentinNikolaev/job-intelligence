@@ -1,6 +1,6 @@
 schema_version: 2
 id: 5e10067e-db63-4ab7-9ffb-cee0c99054db
-title: Senior Backend Engineer - Databases - Loki Ingest | Spain | Remote
+title: Senior Backend Engineer - Databases - Loki Query | Spain | Remote
 company: Grafana Labs
 company_url: https://job-boards.greenhouse.io/grafanalabs
 location: Spain (Remote)
@@ -14,7 +14,7 @@ sources:
     board: grafanalabs
     internal_job_id: 5190897004
     requisition_id: '27157'
-    updated_at: '2026-07-23T12:08:19-04:00'
+    updated_at: '2026-07-29T08:04:12-04:00'
     departments:
     - id: 4076488004
       name: 'R&D : Databases'
@@ -49,13 +49,13 @@ sources:
     ai_opt_out_request_url: http://app4.greenhouse.io/ai_opt_out_request/job_post/6123197004/ai_opt_out
 published_at: '2026-07-23T12:08:19-04:00'
 discovered_at: '2026-07-25T05:45:57Z'
-updated_at: '2026-07-25T05:45:57Z'
+updated_at: '2026-07-29T12:43:45Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-25T05:45:57Z'
 analysis_priority: 0
-fingerprint: sha256:aa6e8d555f3b13faff68b4b357889e82c4bc85f853448d300bd1d5bba636ca53
+fingerprint: sha256:846919e5b38898387feb8630583cbf287f1d66088315fa12ba9d44e3365a75d3
 data_source: greenhouse
 content_source: greenhouse
 company_content_source: null

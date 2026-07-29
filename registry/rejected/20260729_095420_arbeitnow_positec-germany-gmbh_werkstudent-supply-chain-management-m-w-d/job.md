@@ -42,4 +42,4 @@ Verstärke unser Team zum nächstmöglichen Zeitpunkt als **Werkstudent Supply C
 - Über unseren Personalkauf gibt es das passende Werkzeug auch für Deine privaten Projekte - On top bekommst Du weitere Rabattmöglichkeiten dank unseres Corporate Benefits Programms 
 - **Strukturiertes Onboarding**** **- eine Einarbeitung, damit Du deine Aufgaben und Positec mit den Marken WORX & KRESS schnell kennenlernst 
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

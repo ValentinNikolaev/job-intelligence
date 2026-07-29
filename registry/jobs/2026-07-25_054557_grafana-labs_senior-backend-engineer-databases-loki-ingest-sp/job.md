@@ -1,4 +1,4 @@
-# Senior Backend Engineer - Databases - Loki Ingest | Spain | Remote
+# Senior Backend Engineer - Databases - Loki Query | Spain | Remote
 
 Posted: 2026-07-23T12:08:19-04:00
 
@@ -10,7 +10,7 @@ You may not meet every requirement, and that’s okay. If this role excites you,
 
 **This is a remote opportunity and we would be interested in applicants based in Spain, Ireland, Germany, the UK or Sweden at this time.**
 
-### **Senior Backend Engineer - Databases - Loki Ingest | EMEA | Remote**
+### **Senior Backend Engineer - Databases - Loki Query | EMEA | Remote**
 
 **The Opportunity:**
 

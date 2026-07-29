@@ -33,4 +33,4 @@ Du unterstützt uns bei der Organisation und Optimierung grundlegender Prozesse.
 
 - Ein großes Netzwerk bei Bundesligaklubs, Ausrüstern und anderen Marken im Profifußball
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

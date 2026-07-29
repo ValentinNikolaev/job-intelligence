@@ -85,4 +85,4 @@ Werktags 9:00 – 18:00 Uhr
 
 #headjob #führung #karriere #HR #HRservices #arbeitsrecht #bodensee #konstanz
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

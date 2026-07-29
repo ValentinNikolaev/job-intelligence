@@ -178,4 +178,4 @@ Check out our promise to you: [promise.epilot.cloud](http://www.promise.epilot.c
 
 P.S.: If you want to learn more about the application process, please read Eka's blog article: [How to get hired at epilot](https://dev.to/epilot/how-to-get-hired-at-epilot-step-by-step-guide-4ei1)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

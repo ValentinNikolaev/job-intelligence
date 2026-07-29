@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-systemadministratorin-dessau-rosslau-40931
+source_url: https://www.arbeitnow.com/jobs/companies/mvz-medizinische-labore-dessau-kassel-gmbh/it-systemadministratorin-dessau-rosslau-40931
+title: IT - Systemadministrator:in
+company: MVZ Medizinische Labore Dessau Kassel GmbH
+location: Dessau-Roßlau
+published_at: '2026-07-29T10:00:48Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-29T12:41:43Z'
+rejected_at: '2026-07-29T12:41:43Z'

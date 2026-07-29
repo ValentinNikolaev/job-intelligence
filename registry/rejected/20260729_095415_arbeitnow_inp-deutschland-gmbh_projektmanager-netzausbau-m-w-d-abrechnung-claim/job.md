@@ -71,4 +71,4 @@ Die Stelle ist ab sofort und unbefristet.
 
 Möchten Sie mit Ihrem Können zum Erfolg unseres Projekts beitragen? Dann freuen wir uns auf Ihre Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

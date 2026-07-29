@@ -65,4 +65,4 @@ Zum 01.08.2027 bieten wir in Kooperation mit der Dualen Hochschule Schleswig-Hol
 
 - Gesundheitsmanagement
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

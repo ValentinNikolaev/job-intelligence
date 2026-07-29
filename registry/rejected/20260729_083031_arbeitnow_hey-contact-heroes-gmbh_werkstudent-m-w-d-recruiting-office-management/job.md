@@ -73,4 +73,4 @@ Die hey contact heroes GmbH ist ein wachsender Customer-Service-Dienstleister mi
 
 Du möchtest nicht nur zuschauen, sondern aktiv mitgestalten? Dann freuen wir uns darauf, Dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

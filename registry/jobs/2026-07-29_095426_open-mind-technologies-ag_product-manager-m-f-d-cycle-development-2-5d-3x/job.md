@@ -94,4 +94,4 @@ Comprehensive professional development offerings, including in-house training, v
 
 Various company events throughout the year, such as team-building events, a summer party, a Christmas party, and our biennial Sales & Tech Symposium
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -97,4 +97,4 @@ Du arbeitest in einem engen Trio mit unserem Founding Growth Manager und unserem
 
 Werde Teil von Skalar — und gestalte mit uns das modernste Mandantenerlebnis Deutschlands.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

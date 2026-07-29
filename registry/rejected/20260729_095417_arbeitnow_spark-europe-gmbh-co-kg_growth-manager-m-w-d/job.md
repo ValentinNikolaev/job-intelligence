@@ -65,4 +65,4 @@ Zur Unterstützung unseres jungen Teams suchen wir nun eine engagierte Growth Ma
 
 Werden Sie Teil von SPARK und bringen Sie Ihre Leidenschaft für Vertrieb und Kundenbeziehungen in einem spannenden Umfeld zum Einsatz. Wir freuen uns auf Ihre Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

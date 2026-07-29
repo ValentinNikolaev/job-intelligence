@@ -57,4 +57,4 @@ Bei Picnic suchen wir nicht nur jemanden, der Prozesse steuert, sondern eine Fü
 
 - **Absicherung für morgen:** Wir unterstützen dich mit einem überdurchschnittlichen Zuschuss zur Betrieblichen Altersvorsorge, damit du auch an später denkst.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

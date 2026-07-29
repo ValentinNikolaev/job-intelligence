@@ -73,4 +73,4 @@ In enger Zusammenarbeit mit Produktion und Einkauf identifizieren Sie Optimierun
 
 Wollen Sie mehr erfahren oder sich direkt bewerben? Dann zögern Sie bitte nicht uns anzurufen!Oder senden Sie gleich Ihre Bewerbung mit Lebenslauf, Zeugnissen, Verfügbarkeit und Gehaltsvorstellungen zu.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

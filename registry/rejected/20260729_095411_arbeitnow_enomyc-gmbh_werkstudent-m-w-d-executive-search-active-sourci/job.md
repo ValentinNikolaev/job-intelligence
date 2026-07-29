@@ -105,4 +105,4 @@ Flexible Arbeitszeiten (10–15 Stunden/Woche)
 
 Die Möglichkeit, langfristig in eine Recruiter- oder Executive-Search-Rolle hineinzuwachsen
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
