@@ -1,0 +1,27 @@
+schema_version: 2
+id: 883cedb0-598a-4973-b501-5889d5a46735
+title: Senior Internal Communications Manager
+company: freenow
+company_url: null
+location: Hamburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-internal-communications-manager-hamburg-76623
+  url: https://www.arbeitnow.com/jobs/companies/freenow/senior-internal-communications-manager-hamburg-76623
+  metadata:
+    tags:
+    - People
+published_at: '2026-07-30T18:15:18Z'
+discovered_at: '2026-07-30T21:25:21Z'
+updated_at: '2026-07-30T21:25:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T21:25:21Z'
+analysis_priority: 0
+fingerprint: sha256:c7b78b7a51b9dbd3fa563fde22f3c375dd46b2eff3835a8f9856bbb4ebbf7b6a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

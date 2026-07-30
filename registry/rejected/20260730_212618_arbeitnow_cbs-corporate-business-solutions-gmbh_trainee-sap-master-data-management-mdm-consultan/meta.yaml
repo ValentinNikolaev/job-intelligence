@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: trainee-sap-master-data-management-mdm-consultant-heidelberg-21285
+source_url: https://www.arbeitnow.com/jobs/companies/cbs-corporate-business-solutions-gmbh/trainee-sap-master-data-management-mdm-consultant-heidelberg-21285
+title: Trainee SAP Master Data Management (MDM) Consultant (m/w/d)
+company: cbs Corporate Business Solutions GmbH
+location: Heidelberg, Baden-Württemberg, Deutschland
+published_at: '2026-07-30T17:30:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T21:26:18Z'
+rejected_at: '2026-07-30T21:26:18Z'

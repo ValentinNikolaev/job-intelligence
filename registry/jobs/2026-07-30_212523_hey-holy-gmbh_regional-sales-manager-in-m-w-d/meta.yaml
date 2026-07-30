@@ -1,0 +1,30 @@
+schema_version: 2
+id: 9ab90b9d-be92-4890-8ed6-46e8c812cdc4
+title: Regional Sales Manager*in (m/w/d)
+company: HEY HOLY GmbH
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: manager
+sources:
+- source: arbeitnow
+  source_job_id: regional-sales-managerin-frankfurt-am-main-198777
+  url: https://www.arbeitnow.com/jobs/companies/hey-holy-gmbh/regional-sales-managerin-frankfurt-am-main-198777
+  metadata:
+    tags:
+    - Management
+    - Team Leader
+    job_types:
+    - manager
+published_at: '2026-07-30T18:00:30Z'
+discovered_at: '2026-07-30T21:25:23Z'
+updated_at: '2026-07-30T21:25:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T21:25:23Z'
+analysis_priority: 0
+fingerprint: sha256:4316093c9862d71dc3b3f5975daf405c220c2e1d66664ed1bdd409b1dafc563d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

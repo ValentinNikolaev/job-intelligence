@@ -4,8 +4,8 @@ Posted: 2026-06-29T09:24:07-04:00
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-29T09:24:07-04:00 is older than 7 days
+- Category: company_retry_block
+- Reason: Grafana is blocked until 2027-02-01: CV rejected; retry allowed from February 2027.
 
 Grafana Labs, the company behind the open observability cloud, is founded on the principles of open source, open standards, open ecosystems, and open culture. Grafana Cloud, our fully managed observability platform, is flexible and built for scale. With Grafana Cloud's actually useful AI, organizations can see, understand, and act on all their disparate data to move at the speed of their ambitions. Today, more than 35 million users and 7,000+ customers – including Anthropic, Bloomberg, NVIDIA, Microsoft, and Salesforce – trust Grafana Labs to ensure reliability of their applications and systems, resolve incidents quickly, and optimize their telemetry to reduce noise and cost. We are a 100% remote company with 1,600+ team members across 40+ countries, and we’re backed by leading investors including Lightspeed Venture Partners, Sequoia Capital, GIC, Coatue, J.P. Morgan, CapitalG, and Lead Edge Capital. Learn more at [grafana.com](http://grafana.com) and follow us on [LinkedIn](https://www.linkedin.com/company/grafana-labs/) and [X](https://twitter.com/grafana).
 

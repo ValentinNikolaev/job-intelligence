@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-senior-consultant-sap-sd-s-4hana-sales-heidelberg-197037
+source_url: https://www.arbeitnow.com/jobs/companies/cbs-corporate-business-solutions-gmbh/remote-senior-consultant-sap-sd-s-4hana-sales-heidelberg-197037
+title: Senior Consultant SAP SD (m/w/d) S/4HANA Sales
+company: cbs Corporate Business Solutions GmbH
+location: Homeoffice
+published_at: '2026-07-30T17:30:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T21:25:34Z'
+rejected_at: '2026-07-30T21:25:34Z'

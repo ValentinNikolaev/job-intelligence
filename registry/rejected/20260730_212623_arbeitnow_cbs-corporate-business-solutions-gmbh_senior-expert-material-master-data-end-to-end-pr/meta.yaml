@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-expert-material-master-data-end-to-end-product-data-heidelberg-100982
+source_url: https://www.arbeitnow.com/jobs/companies/cbs-corporate-business-solutions-gmbh/senior-expert-material-master-data-end-to-end-product-data-heidelberg-100982
+title: (Senior) Expert Material Master Data & End-to-End Product Data (m/w/d)
+company: cbs Corporate Business Solutions GmbH
+location: Heidelberg, Baden-Württemberg, Deutschland
+published_at: '2026-07-30T17:30:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T21:26:23Z'
+rejected_at: '2026-07-30T21:26:23Z'
