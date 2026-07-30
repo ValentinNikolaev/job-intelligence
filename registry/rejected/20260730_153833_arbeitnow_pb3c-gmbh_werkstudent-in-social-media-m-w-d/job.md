@@ -73,4 +73,4 @@ Du möchtest Teil unseres Teams werden? Wir freuen uns auf Deine Bewerbung mit A
 
 Für weitere Informationen steht Dir Johanna Hoffmann, HR Managerin, gerne unter +49 30 72 62 76 176 zur Verfügung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

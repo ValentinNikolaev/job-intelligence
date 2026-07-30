@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '4138999310445533726'
-source_url: https://jooble.org/away/4138999310445533726?p=1&pos=10&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=105&brelb=10&scr=29.37519&bscr=29.37519&aq=-4346288288111235069&elckey=-9006131026425789276
+source_url: https://jooble.org/away/4138999310445533726?p=1&pos=11&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=108&brelb=10&scr=29.135792&bscr=29.135792&aq=3131140646189914708&elckey=5688003836899698249
 title: Application Engineer
 company: Rotork plc
 location: Italian Republic
 published_at: '2026-07-26T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-30T15:42:48Z'
+updated_at: '2026-07-30T18:35:49Z'
 rejected_at: '2026-07-29T12:45:50Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-content-brand-berlin-215783
+source_url: https://www.arbeitnow.com/jobs/companies/arvana/werkstudent-content-brand-berlin-215783
+title: Werkstudent Content & Brand (m/w/d)
+company: Arvana
+location: Berlin
+published_at: '2026-07-30T16:00:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T18:30:38Z'
+rejected_at: '2026-07-30T18:30:38Z'

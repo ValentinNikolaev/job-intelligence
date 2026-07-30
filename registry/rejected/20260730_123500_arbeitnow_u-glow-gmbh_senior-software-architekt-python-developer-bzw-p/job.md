@@ -55,4 +55,4 @@ Bei U-Glow bzw. prelytics® entwickeln wir benutzerfreundliche Softwarelösungen
 
 Werde Teil unseres Teams und gestalte die Zukunft der KI mit uns! Sende uns Deine Bewerbung (CV, Zeugnisse und **Link auf Dein GIT** oder eigene Softwareprojekte reichen). Ohne Referenzen (GIT oÄ) können wir Deine Bewerbung leider nicht berücksichtigen. Wir freuen uns auf Dich!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

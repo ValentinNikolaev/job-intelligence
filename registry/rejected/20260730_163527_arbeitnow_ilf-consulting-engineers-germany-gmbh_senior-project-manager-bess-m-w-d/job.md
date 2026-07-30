@@ -101,4 +101,4 @@ Worüber wir uns freuen: Wenn Sie für Ihren Job brennen, egal welcher ethnische
 
 **Ihr Ansprechpartner: **Frau Delband Tamjidi ( +4920189096469/
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

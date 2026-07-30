@@ -1,6 +1,6 @@
 # Kundenbetreuer (m/w/d) mit Bürotätigkeiten in Voll- oder Teilzeit gesucht!
 
-Posted: 2026-07-30T12:00:38Z
+Posted: 2026-07-30T16:29:02Z
 
 ## Rejection
 
@@ -25,19 +25,19 @@ Für unseren Standort in Hamburg Bramfeld suchen wir ab sofort:
 
 - **Backoffice & Office-Aufgaben**: Datenpflege, Dokumente, Ablage, allgemeine Unterstützung im Tagesgeschäft
 
-- Schnittstelle zwischen Kund:innen, Disposition/Team und internen Abläufen
+- **Schnittstelle** zwischen Kund:innen, Disposition/Team und internen Abläufen
 
 ## Qualifikation
 
 Das bringst du mit
 
-- Sicherer Umgang mit Microsoft Office (Outlook, Word, Excel – die Basics müssen sitzen)
+- **Sicherer Umgang mit Microsoft Office** (Outlook, Word, Excel – die Basics müssen sitzen)
 
-- Freundliche, klare Kommunikation am Telefon und per E-Mail
+- **Freundliche**, **klare Kommunikation** am Telefon und per E-Mail
 
-- Zuverlässigkeit, Diskretion und ein guter Blick für Prioritäten
+- **Zuverlässigkeit**, **Diskretion** und ein guter Blick für Prioritäten
 
-- Strukturierte Arbeitsweise – auch wenn es mal etwas mehr wird
+- **Strukturierte Arbeitsweise** – auch wenn es mal etwas mehr wird
 
 ## Benefits
 
@@ -71,4 +71,4 @@ Wir freuen uns auf dich!
 
 Dein Team der Hamburger Küche
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

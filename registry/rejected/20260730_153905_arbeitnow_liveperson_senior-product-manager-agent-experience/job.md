@@ -105,4 +105,4 @@ The talent acquisition team at LivePerson has recently been notified of a phishi
 
 Please note that any communication from our hiring teams at LivePerson regarding a job opportunity will only be made by a LivePerson employee with an ----- email address. LivePerson does not ask for personal or financial information as part of our interview process, including but not limited to your social security number, online account passwords, credit card numbers, passport information, and other related banking information. If you have any questions and or concerns, please feel free to contact -----
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

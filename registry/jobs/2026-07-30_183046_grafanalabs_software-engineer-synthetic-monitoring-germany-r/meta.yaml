@@ -1,0 +1,27 @@
+schema_version: 2
+id: f01acac3-b144-4983-8431-aa76c9a783af
+title: Software Engineer - Synthetic Monitoring | Germany | Remote
+company: Grafanalabs
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: software-engineer-synthetic-monitoring-germany-remote-424221
+  url: https://www.arbeitnow.com/jobs/companies/grafanalabs/software-engineer-synthetic-monitoring-germany-remote-424221
+  metadata:
+    tags:
+    - 'R&D : Databases'
+published_at: '2026-07-30T15:16:06Z'
+discovered_at: '2026-07-30T18:30:46Z'
+updated_at: '2026-07-30T18:30:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T18:30:46Z'
+analysis_priority: 0
+fingerprint: sha256:468996861ede2b7c835f909163687ae501cc1735b9ef130071c204ee744c2bc4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

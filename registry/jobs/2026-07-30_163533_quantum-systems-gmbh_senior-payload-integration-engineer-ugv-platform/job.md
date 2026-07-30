@@ -147,4 +147,4 @@ High ownership, pragmatic, and thriving in a fast-paced environment.
 
 **Health & Wellness:** We support your physical well-being with a company-subsidized eGym Wellpass membership, giving you access to thousands of gyms and sports facilities.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

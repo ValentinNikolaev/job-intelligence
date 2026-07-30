@@ -4,8 +4,8 @@ Posted: 2026-07-23T18:15:43Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-23T18:15:43Z is older than 7 days
 
 At [TechBiz Global](https://himalayas.app/companies/techbiz-global), we are providing recruitment service to our TOP clients from our portfolio. We are currently seeking a **Full-stack developer** to join one of our **clients**' team. If you're looking for an exciting opportunity to grow in a innovative environment, this could be the perfect fit for you.
 **

@@ -73,4 +73,4 @@ Auch Verfahrens-, Projekt- oder Anwendungsingenieure, die sich stärker in Richt
 
 Sie möchten Ihre verfahrenstechnische Erfahrung mit einer kundenorientierten und vertrieblichen Aufgabe verbinden? Dann freuen wir uns auf Ihre Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

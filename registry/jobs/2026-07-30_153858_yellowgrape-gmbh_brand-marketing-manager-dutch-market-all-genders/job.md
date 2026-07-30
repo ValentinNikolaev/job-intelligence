@@ -66,4 +66,4 @@ You are a source of ideas, a strategic advisor, and a hands-on executor all in o
 
 We look forward to your application.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

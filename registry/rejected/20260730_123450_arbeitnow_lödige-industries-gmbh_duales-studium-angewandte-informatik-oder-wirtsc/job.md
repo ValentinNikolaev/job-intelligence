@@ -55,4 +55,4 @@ Dann freuen wir uns auf Deine **aussagefähige Bewerbung**, die Du uns gerne zuk
 
 Für weitere Informationen steht Dir **Andreas Vieth** unter der Telefon-Nr. **05251 / 2980-726** gerne zur Verfügung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

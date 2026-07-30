@@ -63,4 +63,4 @@ Dafür suchen wir die Person, die das ownt und dabei mehr baut als nur Kunden-Ac
 
 Kein Motivationsschreiben-Roman. Zeig uns an einem echten Beispiel, was du schon betreut oder gebaut hast, und schreib uns in ein paar Sätzen, warum KI plus E-Commerce dein Ding ist.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

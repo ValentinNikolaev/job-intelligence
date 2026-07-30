@@ -109,4 +109,4 @@ We have a radically open and accepting culture at Fin. We avoid spending time on
 
 Fin values diversity and is committed to a policy of Equal Employment Opportunity. Fin will not discriminate against an applicant or employee on the basis of race, color, religion, creed, national origin, ancestry, sex, gender, age, physical or mental disability, veteran or military status, genetic information, sexual orientation, gender identity, gender expression, marital status, or any other legally recognized protected basis under federal, state, or local law.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

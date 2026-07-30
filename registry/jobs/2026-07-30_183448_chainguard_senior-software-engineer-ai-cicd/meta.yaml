@@ -1,0 +1,64 @@
+schema_version: 2
+id: da808091-6fe9-49a3-984b-6334804f0b50
+title: Senior Software Engineer (AI CICD)
+company: Chainguard
+company_url: null
+location: Europe,  UK,  USA
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149855'
+  url: https://jobicy.com/jobs/149855-senior-software-engineer-ai-cicd
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/e4b6aacf-221.jpeg
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: Chainguard is the trusted source for open source. By delivering hardened,
+      secure, and production-ready builds of all the open source software engineers
+      and AI agents rely on, Chainguard helps organizations build faster, stay compliant,
+      and eliminate risk. Our customers include Fortune 500 enterprises and global
+      industry leaders, including Anduril, Canva, Fortinet, Hewlett Packard Enterprise,
+      OpenAI, Snap…
+    salary:
+      min: 157000
+      max: 184000
+      currency: USD
+      period: yearly
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        industry: dev
+        count: '100'
+    - query_index: 3
+      parameters:
+        geo: emea
+        industry: dev
+        count: '100'
+        tag: golang
+    - query_index: 4
+      parameters:
+        geo: europe
+        industry: dev
+        count: '100'
+        tag: golang
+    - query_index: 7
+      parameters:
+        geo: europe
+        industry: dev
+        count: '100'
+        tag: technical lead
+published_at: '2026-07-30T14:39:53Z'
+discovered_at: '2026-07-30T18:34:48Z'
+updated_at: '2026-07-30T18:34:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T18:34:48Z'
+analysis_priority: 0
+fingerprint: sha256:a94ac406024dfa375f3ac7a72de4eb0d0ed16841c4d4ebc09e9e5b3ef8a33c51
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

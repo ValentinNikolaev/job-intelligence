@@ -81,4 +81,4 @@ We are an equal opportunity employer and value diversity at our company. We do n
 
 For details on how we protect your information when you apply, please see our [Personnel Privacy Notice.](https://cloud.app.box.com/s/dalfrm4h1m5wkjiq6171hbko9uwroulg)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

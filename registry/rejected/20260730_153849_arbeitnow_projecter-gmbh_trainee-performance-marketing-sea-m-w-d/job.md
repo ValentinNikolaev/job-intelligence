@@ -109,4 +109,4 @@ Deine Bewerbung sollte außerdem folgende Angaben beinhalten:
 
 Weitere Informationen über Projecter findest Du auf unserer Website, in unserem Blog, bei Instagram ([https://www.instagram.com/projecter_de/](https://www.instagram.com/projecter_de/)) oder bei Facebook.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
