@@ -59,4 +59,4 @@ Eine etablierte Genossenschaftsbank im Raum Neustadt wächst weiter – und du k
 
 Wenn du Lust hast, in einem sympathischen Team mit echtem Zusammenhalt zu arbeiten und deine Stärken in der Kundenberatung voll einzubringen, dann bewirb dich jetzt – wir freuen uns darauf, dich kennenzulernen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

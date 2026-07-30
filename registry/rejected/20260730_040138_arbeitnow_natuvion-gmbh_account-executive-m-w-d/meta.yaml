@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-account-executive-berlin-467089
+source_url: https://www.arbeitnow.com/jobs/companies/natuvion-gmbh/remote-account-executive-berlin-467089
+title: Account Executive (m/w/d)
+company: Natuvion GmbH
+location: Remote job
+published_at: '2026-07-30T02:50:09Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T04:01:38Z'
+rejected_at: '2026-07-30T04:01:38Z'

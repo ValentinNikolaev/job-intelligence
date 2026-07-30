@@ -91,4 +91,4 @@ Wir sind ein ambitioniertes Team, das gewinnen will. Du auch? Dann bewirb Dich j
 
 *Bei Fragen oder wenn Du Deine Rechte wahrnehmen möchtest, wende Dich bitte an hr.dataprivacy(at)doctolib.com.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

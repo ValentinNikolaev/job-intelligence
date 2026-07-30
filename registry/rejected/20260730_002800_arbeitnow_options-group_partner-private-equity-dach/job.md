@@ -45,4 +45,4 @@ Posted: 2026-07-29T22:00:37Z
 
 Ihre vertrauliche Bewerbung erreicht uns über die **Options Group**. Bitte senden Sie Ihren CV, ein kurzes Anschreiben und gerne erste Investitionsideen an unsere Ansprechperson.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -117,4 +117,4 @@ TYTAN is an equal-opportunity employer committed to fairness and inclusivity. We
 
 **Please note that we currently do not offer visa sponsorship, so we’re only able to consider candidates who already have a valid work permit. All qualified applicants are hereby encouraged to apply.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

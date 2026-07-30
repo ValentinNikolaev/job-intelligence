@@ -175,4 +175,4 @@ Hands-on experience with container orchestration using Kubernetes.
 
 **Financial Upside & Well-being:** Benefit from a Virtual Share Option Plan (VSOP) for permanent employees, giving you a true stake in the company's growth, alongside highly flexible hybrid working models.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

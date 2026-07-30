@@ -53,4 +53,4 @@ RocketAds ist eine Performance-Marketing-Agentur aus Deutschland. Wir schalten M
 
 Deine Schnitte entscheiden bei uns über Gewinn oder Verlust und genau deshalb bekommst du Verantwortung, Daten und ehrliches Feedback statt Agentur-Politik.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: enterprise-account-executive-dach-7459
+source_url: https://www.arbeitnow.com/jobs/companies/qualtrics/enterprise-account-executive-dach-7459
+title: Enterprise Account Executive - DACH
+company: qualtrics
+location: null
+published_at: '2026-07-29T23:55:54Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T04:01:52Z'
+rejected_at: '2026-07-30T04:01:52Z'

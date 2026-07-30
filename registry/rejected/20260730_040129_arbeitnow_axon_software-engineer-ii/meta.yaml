@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: software-engineer-ii-kassel-hesse-187270
+source_url: https://www.arbeitnow.com/jobs/companies/axon/software-engineer-ii-kassel-hesse-187270
+title: Software Engineer II
+company: Axon
+location: Kassel, Hesse
+published_at: '2026-07-30T02:55:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T04:01:29Z'
+rejected_at: '2026-07-30T04:01:29Z'

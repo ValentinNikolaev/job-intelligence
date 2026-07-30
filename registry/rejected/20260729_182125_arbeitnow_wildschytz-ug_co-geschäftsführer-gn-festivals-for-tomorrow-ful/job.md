@@ -57,4 +57,4 @@ Du steigst in ein laufendes Unternehmen mit mittleren sechstelligen Umsätzen ei
 
 Wir freuen uns über eine aussagekräftige Bewerbung, die deinen Fit für die Rolle zeigt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: software-engineer-in-test-berlin-385536
+source_url: https://www.arbeitnow.com/jobs/companies/cresta/software-engineer-in-test-berlin-385536
+title: Software Engineer in Test (Berlin)
+company: cresta
+location: Berlin
+published_at: '2026-07-30T02:56:10Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T04:01:20Z'
+rejected_at: '2026-07-30T04:01:20Z'

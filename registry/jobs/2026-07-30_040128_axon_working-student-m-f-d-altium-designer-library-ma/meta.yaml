@@ -1,0 +1,27 @@
+schema_version: 2
+id: 3d17ee6c-1645-44e8-aefd-f4064218344d
+title: Working Student (m/f/d) – Altium Designer Library Management
+company: Axon
+company_url: null
+location: Kassel, Hesse
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: working-student-altium-designer-library-management-kassel-hesse-383149
+  url: https://www.arbeitnow.com/jobs/companies/axon/working-student-altium-designer-library-management-kassel-hesse-383149
+  metadata:
+    tags:
+    - 2024 Dedrone R&D
+published_at: '2026-07-30T02:55:19Z'
+discovered_at: '2026-07-30T04:01:28Z'
+updated_at: '2026-07-30T04:01:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T04:01:28Z'
+analysis_priority: 0
+fingerprint: sha256:fbc73956b1e2cb2462032650b46562949971bed4631ebe684235c9c8a896e612
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
