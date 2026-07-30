@@ -1,0 +1,27 @@
+schema_version: 2
+id: 832bfac1-3e37-43a7-a819-e147d69eaa38
+title: Senior Backend Engineer - Cards
+company: sumup
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-backend-engineer-cards-berlin-425621
+  url: https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-cards-berlin-425621
+  metadata:
+    tags:
+    - Backend
+published_at: '2026-07-30T05:56:38Z'
+discovered_at: '2026-07-30T06:53:31Z'
+updated_at: '2026-07-30T06:53:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T06:53:31Z'
+analysis_priority: 0
+fingerprint: sha256:b9fe6b3c333474a695fe7d3ad5bbec57acc8237c541a4b4d9eb821d6dfc64521
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

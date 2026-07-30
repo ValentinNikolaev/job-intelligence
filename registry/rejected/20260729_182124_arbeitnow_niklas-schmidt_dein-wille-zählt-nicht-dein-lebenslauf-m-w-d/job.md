@@ -111,4 +111,4 @@ Der richtige Zeitpunkt für Veränderung ist nicht irgendwann, sondern dann, wen
 
 Wenn du Teil eines Umfelds werden möchtest, das Leistung fördert, Entwicklung ermöglicht und Menschen langfristig begleitet, dann bewirb dich jetzt. Ich freue mich darauf, dich persönlich kennenzulernen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

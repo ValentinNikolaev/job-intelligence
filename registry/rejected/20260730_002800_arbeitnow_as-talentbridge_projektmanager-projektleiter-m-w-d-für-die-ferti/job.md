@@ -51,4 +51,4 @@ Wir sind überzeugt, dass Stillstand ein Rückschritt ist und setzen uns dafür 
 
 • Sehr gute Zukunftsperspektiven in einem stark expandierenden Unternehmen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -135,4 +135,4 @@ Unsere >400 BeraterInnen und EntwicklerInnen in Deutschland, Österreich, Slowak
 
 Du bist interessiert? Wir freuen uns auf deine Bewerbung und darauf, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 3a0396a3-5c31-4863-938b-a9a7878ac666
+title: Full Stack Engineer - Billings & Subscriptions
+company: sumup
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: full-stack-engineer-billings-subscriptions-berlin-141531
+  url: https://www.arbeitnow.com/jobs/companies/sumup/full-stack-engineer-billings-subscriptions-berlin-141531
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-07-30T05:56:38Z'
+discovered_at: '2026-07-30T06:53:32Z'
+updated_at: '2026-07-30T06:53:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T06:53:32Z'
+analysis_priority: 0
+fingerprint: sha256:5f1edf5c823571ea37bff66eab612da62d710a39fc0e4eb4432d4719be30e741
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

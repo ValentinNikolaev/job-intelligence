@@ -44,4 +44,4 @@ To all candidates- Lalamove respects your privacy and is committed to protecting
 
 This Notice will inform you how we will use your personal data, explain your privacy rights and the protection you have by the law when you apply to join us. Please take time to read and understand this Notice. Candidate Privacy Notice: [https://www.lalamove.eu/en-de/candidate-privacy-notice](https://www.lalamove.eu/en-de/candidate-privacy-notice)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

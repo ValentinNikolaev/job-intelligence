@@ -72,4 +72,4 @@ We value diversity and the unique experiences each individual brings. If you’r
 
 We are an equal opportunity employer and are committed to creating an inclusive environment for everyone, regardless of race, colour, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, or gender identity.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

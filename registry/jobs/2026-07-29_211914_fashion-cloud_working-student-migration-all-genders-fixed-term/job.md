@@ -115,4 +115,4 @@ And if you still have questions, have a look at our[ FAQs for applicants](https:
 
 By the way, your application will be processed under our[ Applicant Privacy Policy](https://www.fashion.cloud/privacy-policy/applicants).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

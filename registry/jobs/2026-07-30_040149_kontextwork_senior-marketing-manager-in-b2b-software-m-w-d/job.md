@@ -62,4 +62,4 @@ Zur Verstärkung unseres Teams suchen wir eine erfahrene Marketingpersönlichkei
 
 Wir haben Dein Interesse geweckt? Dann würden wir uns freuen, Dich kennen zu lernen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

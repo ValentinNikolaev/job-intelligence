@@ -1,0 +1,27 @@
+schema_version: 2
+id: aa739afe-b6b4-4b13-bd4d-7dce5d5aed53
+title: Account Executive, Enterprise DACH
+company: onetrust
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: account-executive-enterprise-dach-munich-298280
+  url: https://www.arbeitnow.com/jobs/companies/onetrust/account-executive-enterprise-dach-munich-298280
+  metadata:
+    tags:
+    - Sales
+published_at: '2026-07-30T05:56:20Z'
+discovered_at: '2026-07-30T06:53:34Z'
+updated_at: '2026-07-30T06:53:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T06:53:34Z'
+analysis_priority: 0
+fingerprint: sha256:29a360a26399bc72f37c22bd57b8995ceb8d2acdea38d66a1929534d1d753c1a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

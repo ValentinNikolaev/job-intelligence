@@ -141,4 +141,4 @@ Senior Recruiting Specialist
 
 [](https://virtual7.de/story/tobias-weigel/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

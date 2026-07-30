@@ -39,4 +39,4 @@ Strukturiertes Denken unter Unschärfe, Storytelling mit Daten, Executive-Kommun
 - **Dein Beitrag:** Eine Position in einem profitablen Unternehmen, in dem du die Freiheit und das Vertrauen hast, mitzugestalten und mit uns an der „Future of Work" zu arbeiten.
 - **Unsere Werte:** Eine offene, authentische Kultur und ein leistungsstarkes, humorvolles Team, das sich darauf freut, gemeinsam mit dir mutige Entscheidungen zu treffen und neue Wege zu gehen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

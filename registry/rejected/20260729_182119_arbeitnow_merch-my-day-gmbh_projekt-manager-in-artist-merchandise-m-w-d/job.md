@@ -47,4 +47,4 @@ Merch my Day ist mehr als nur Merchandise – wir erschaffen Marken. Als junges,
 
 Wir freuen uns auf deine Bewerbung – ganz unkompliziert ohne langes Anschreiben. Zeig uns einfach in deinen Unterlagen, was du mitbringst und für welche Projekte du brennst.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

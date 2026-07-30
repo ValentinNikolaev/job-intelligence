@@ -135,4 +135,4 @@ If you would like to find out more about tech life at Doctolib, feel free to rea
 
 *All information provided is processed by Doctolib for application management. For data processing details, click [here](https://doctolib.legal/B2C-Privacy-Policy-Career-DE)**. Please contact hr.dataprivacy(at)doctolib.com for inquiries or to exercise your rights.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

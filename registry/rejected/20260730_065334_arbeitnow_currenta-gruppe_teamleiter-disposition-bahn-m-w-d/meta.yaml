@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teamleiter-disposition-bahn-dormagen-75774
+source_url: https://www.arbeitnow.com/jobs/companies/currenta-gruppe/teamleiter-disposition-bahn-dormagen-75774
+title: Teamleiter Disposition Bahn (m/w/d)
+company: CURRENTA GRUPPE
+location: Dormagen, Nordrhein-Westfalen, Deutschland
+published_at: '2026-07-30T05:30:27Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T06:53:34Z'
+rejected_at: '2026-07-30T06:53:34Z'

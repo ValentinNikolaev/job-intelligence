@@ -90,4 +90,4 @@ Please submit your resume, cover letter, and a link to your GitHub, portfolio, o
 
 Atari is an equal opportunity employer and we are committed to providing a workplace free from harassment and discrimination. We are committed to equal employment regardless of race, religion or lack thereof, color, national origin, gender, sexual orientation, gender identity or expression, age, marital status, medical condition, veteran status, ancestry, disability status, pregnancy, parental status, genetic information, political affiliation, or any other status protected by the laws or regulations in the locations where we operate.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

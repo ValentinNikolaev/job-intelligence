@@ -89,4 +89,4 @@ Compensation for this position includes a base salary, equity, and a variety of 
 
 We have noticed a rise in recruiting impersonations across the industry, where scammers attempt to access candidates' personal and financial information through fake interviews and offers. All Cresta recruiting email communications will always come from the ----- domain. Any outreach claiming to be from Cresta via other sources should be ignored. If you are uncertain whether you have been contacted by an official Cresta employee, reach out to
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
