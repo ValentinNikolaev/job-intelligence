@@ -74,4 +74,4 @@ Schick deinen CV direkt an Gabi, unsere HR & Executive Management Assistant , pe
 
 Wir können es kaum erwarten, dich bei uns willkommen zu heißen! 🚀
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

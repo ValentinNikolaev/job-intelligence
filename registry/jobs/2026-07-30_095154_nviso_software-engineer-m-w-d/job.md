@@ -94,4 +94,4 @@ We reserve the right to exclude applications from the selection and interview pr
 
 The purpose of this policy is to ensure a fair and transparent recruitment process and to obtain an authentic impression of our applicants.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

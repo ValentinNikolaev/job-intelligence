@@ -127,4 +127,4 @@ Perfect! If you’re up for an exciting new challenge and want to shape the futu
 
 We welcome all applicants – regardless of gender, background, or LGBT+ identity – because diversity and inclusion are core values for us. We are convinced that a diverse and inclusive workplace fosters creativity, innovation, and success.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

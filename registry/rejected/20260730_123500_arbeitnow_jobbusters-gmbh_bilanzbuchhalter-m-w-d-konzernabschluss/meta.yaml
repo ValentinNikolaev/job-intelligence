@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: bilanzbuchhalter-konzernabschluss-cologne-217805
+source_url: https://www.arbeitnow.com/jobs/companies/jobbusters-gmbh/bilanzbuchhalter-konzernabschluss-cologne-217805
+title: Bilanzbuchhalter (m/w/d) Konzernabschluss
+company: Jobbusters® GmbH
+location: Cologne
+published_at: '2026-07-30T09:30:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T12:35:00Z'
+rejected_at: '2026-07-30T12:35:00Z'

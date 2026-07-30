@@ -65,4 +65,4 @@ als kompetente Verstärkung für unsere Gruppe Elektrokonstruktion in der Abteil
 
 - Mitgestaltung von Zukunftstechnologien für Spezialtiefbaumaschinen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

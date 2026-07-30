@@ -75,4 +75,4 @@ Sie arbeiten im Münchner Osten, in einem Betrieb mit viel Tageslicht, einem fre
 
 **Sie haben Interesse?** Dann freuen wir uns darauf, Sie kennenzulernen! Ihre Bewerbung behandeln wir selbstverständlich vertraulich.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

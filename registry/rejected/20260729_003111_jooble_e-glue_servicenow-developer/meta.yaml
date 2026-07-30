@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-6482166504984602740'
-source_url: https://jooble.org/away/-6482166504984602740?p=1&pos=11&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=27&brelb=10&scr=32.03802&bscr=32.03802&aq=6899194160145958901&elckey=-630355554315213109
+source_url: https://jooble.org/away/-6482166504984602740?p=1&pos=12&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=30&brelb=10&scr=29.966543&bscr=29.966543&aq=-784704845008399865&elckey=5487173203854585504
 title: ServiceNow Developer
 company: e-Glue
 location: Italian Republic
 published_at: '2026-07-29T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-30T09:57:09Z'
+updated_at: '2026-07-30T12:38:49Z'
 rejected_at: '2026-07-29T00:31:11Z'

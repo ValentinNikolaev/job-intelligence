@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: bilanzbuchhalter-munich-326935
+source_url: https://www.arbeitnow.com/jobs/companies/jobbusters-gmbh/bilanzbuchhalter-munich-326935
+title: Bilanzbuchhalter (m/w/d)
+company: Jobbusters® GmbH
+location: Munich
+published_at: '2026-07-30T09:30:37Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T12:35:04Z'
+rejected_at: '2026-07-30T12:35:04Z'

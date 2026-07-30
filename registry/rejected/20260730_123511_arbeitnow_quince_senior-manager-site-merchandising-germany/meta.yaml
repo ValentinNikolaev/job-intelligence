@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-manager-site-merchandising-germany-123637
+source_url: https://www.arbeitnow.com/jobs/companies/quince/senior-manager-site-merchandising-germany-123637
+title: Senior Manager, Site Merchandising Germany
+company: Quince
+location: null
+published_at: '2026-07-30T09:16:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T12:35:11Z'
+rejected_at: '2026-07-30T12:35:11Z'

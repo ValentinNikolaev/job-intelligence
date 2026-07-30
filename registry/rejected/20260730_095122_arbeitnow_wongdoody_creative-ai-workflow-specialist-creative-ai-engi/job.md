@@ -86,4 +86,4 @@ Beachte bitte: Dies ist eine Stellenanzeige der WongDoody GmbH mit Sitz in Deuts
 
 Wenn Du Fragen zum Bewerbungsprozess hast, wende Dich gerne direkt an unser People & Culture-Team -----
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

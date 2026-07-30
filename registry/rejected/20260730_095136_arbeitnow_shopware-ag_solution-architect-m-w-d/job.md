@@ -192,4 +192,4 @@ Einen detaillierten Einblick bekommst du auf unserer [Karriereseite](https://car
 
 Der Schutz deiner persönlichen Daten hat für uns oberste Priorität. Unsere Bewerberinformationen findest du [hier](https://www.shopware.com/de/datenschutz/bewerbende/).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

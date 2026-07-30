@@ -1,0 +1,30 @@
+schema_version: 2
+id: 89aef1e7-9138-4c50-aab4-ef5f63bf1c08
+title: Freelance Sports Production Manager (f/m/x) – 360° Immersive
+company: L1VE GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Freelance, professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: freelance-sports-production-manager-360-immersive-berlin-150287
+  url: https://www.arbeitnow.com/jobs/companies/l1ve-gmbh/freelance-sports-production-manager-360-immersive-berlin-150287
+  metadata:
+    tags:
+    - Project Management
+    job_types:
+    - Freelance
+    - professional / experienced
+published_at: '2026-07-30T10:30:59Z'
+discovered_at: '2026-07-30T12:34:52Z'
+updated_at: '2026-07-30T12:34:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T12:34:52Z'
+analysis_priority: 0
+fingerprint: sha256:8cce11ccc0ee438bf9a1377f1d0ab653d4073a281e9243a6c31051048cbde8a3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

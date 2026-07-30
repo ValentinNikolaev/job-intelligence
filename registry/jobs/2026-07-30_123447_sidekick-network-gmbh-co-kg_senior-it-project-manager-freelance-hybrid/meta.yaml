@@ -1,0 +1,30 @@
+schema_version: 2
+id: 60f623e7-7541-4890-85e0-e9e651f00f11
+title: Senior IT Project Manager (Freelance, Hybrid)
+company: Sidekick Network GmbH & Co. KG
+company_url: null
+location: Bonn
+remote: false
+employment_type: Freelance, manager
+sources:
+- source: arbeitnow
+  source_job_id: senior-it-project-manager-freelance-hybrid-bonn-285122
+  url: https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-it-project-manager-freelance-hybrid-bonn-285122
+  metadata:
+    tags:
+    - Project Management
+    job_types:
+    - Freelance
+    - manager
+published_at: '2026-07-30T10:31:01Z'
+discovered_at: '2026-07-30T12:34:47Z'
+updated_at: '2026-07-30T12:34:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T12:34:47Z'
+analysis_priority: 0
+fingerprint: sha256:9a504fe6e1692868d1f32a525a6b5ce1a2f4771800e85d20c5c57482468972f2
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

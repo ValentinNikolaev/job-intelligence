@@ -71,4 +71,4 @@ Für uns zählt allein Deine Persönlichkeit und Deine beruflichen Fähigkeiten.
 
 Beachte bitte: Dies ist eine Stellenanzeige der WongDoody GmbH mit Sitz in Deutschland. Über unsere Website oder andere Quellen kannst Du zu Stellenanzeigen gelangen, die von einer unserer WongDoody-Schwesterfirmen veröffentlicht wurden, mit denen wir weltweit gemeinsam unter der Marke "WongDoody" auftreten. Für jedes Stellenangebot ist ausschließlich das Unternehmen verantwortlich, das die jeweilige Anzeige veröffentlicht hat. Ansprechpartner:innen, erforderliche Angaben und geltende Bedingungen können jeweils abweichen. [Hier ](https://www.wongdoody.com/wongdoody-germany-privacy)kannst Du Dich darüber informieren, wie die WongDoody GmbH Deine im Bewerbungsprozess angegebenen personenbezogenen Daten verarbeitet). Wenn Du Fragen zum Bewerbungsprozess hast, wende Dich gerne direkt an unser People & Culture-Team -----
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
