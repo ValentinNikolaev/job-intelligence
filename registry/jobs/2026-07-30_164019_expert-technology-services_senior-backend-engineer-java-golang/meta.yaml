@@ -1,0 +1,24 @@
+schema_version: 2
+id: 4f40f27d-203a-42da-a757-e20c1633aefc
+title: Senior Backend Engineer - Java/Golang
+company: Expert Technology Services
+company_url: null
+location: Palo Alto, CA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-6996928440235836483'
+  url: https://jooble.org/desc/-6996928440235836483?ckey=remote+senior+backend+engineer&rgn=55180&pos=44&groupId=2134052230&elckey=3464681942587803775&p=1&aq=-7912210960416447454&cid=15922&jobAge=82&brelb=100&bscr=721.12134&scr=721.12134
+published_at: '2026-07-27T00:00:00.0000000'
+discovered_at: '2026-07-30T16:40:19Z'
+updated_at: '2026-07-30T16:40:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T16:40:19Z'
+analysis_priority: 0
+fingerprint: sha256:4154722061370dc2b7bef865cfe1794f83b9af0b74db5d4ceae081e43a1c1470
+data_source: jooble
+content_source: jooble
+company_content_source: null

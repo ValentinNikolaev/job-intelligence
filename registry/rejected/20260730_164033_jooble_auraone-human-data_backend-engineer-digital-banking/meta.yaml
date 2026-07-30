@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2534197831057968667'
+source_url: https://jooble.org/desc/-2534197831057968667?ckey=remote+golang+backend+engineer&rgn=55180&pos=29&groupId=1106121903&elckey=8225784369593274556&p=1&aq=-1149478194712731626&cid=15922&jobAge=57&brelb=100&bscr=213.01105&scr=213.01105
+title: Backend Engineer - Digital Banking
+company: AuraOne Human Data
+location: Remote
+published_at: '2026-07-28T01:17:08.6470000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T16:40:33Z'
+rejected_at: '2026-07-30T16:40:33Z'
