@@ -79,4 +79,4 @@ Wir bieten Dir flexible Arbeitszeiten (Gleitzeitmodell) sowie Full-Remote.
 
 Uns sind Abschlüsse & Qualifikationen nicht wichtig. Uns ist wichtig, dass du mit der richtigen Einstellung zu uns kommst und erste praktische Erfahrung mitbringst.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

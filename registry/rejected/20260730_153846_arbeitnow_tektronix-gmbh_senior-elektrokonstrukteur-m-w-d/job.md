@@ -69,4 +69,4 @@ Tektronix, a wholly owned subsidiary of Ralliant Corporation, is a place where p
 
 We Are an Equal Opportunity Employer. Ralliant Corporation and all Ralliant Companies are proud to be equal opportunity employers. We value and encourage diversity and solicit applications from all qualified applicants without regard to race, color, national origin, religion, sex, age, marital status, disability, veteran status, sexual orientation, gender identity or expression, or other characteristics protected by law. Ralliant and all Ralliant Companies are also committed to providing reasonable accommodations for applicants with disabilities.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -71,4 +71,4 @@ Bei uns sitzt Marketing nicht am Ende der Kette. Du bist von Anfang an dabei: we
 
 - Coole Team- und Office-Events
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -88,4 +88,4 @@ The role requires strong experience in complex enterprise environments involving
 
 - Fluent German and English
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

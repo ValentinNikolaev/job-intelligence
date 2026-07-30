@@ -71,4 +71,4 @@ Als **AI Consultant (m/w/d)** begleitest du unsere Kunden auf ihrem Weg in die W
 
 - Inanspruchnahme von Rabatten über unseren Partner Corporate Benefit
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

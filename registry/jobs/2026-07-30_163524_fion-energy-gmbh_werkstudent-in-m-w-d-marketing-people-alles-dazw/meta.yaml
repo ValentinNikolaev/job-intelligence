@@ -1,0 +1,30 @@
+schema_version: 2
+id: ababd273-ee26-490f-a2f9-10aa54152cad
+title: Werkstudent:in (m/w/d) - Marketing, People & alles dazwischen
+company: FION Energy GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Working student, hilfstätigkeit / student
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-marketing-people-alles-dazwischen-berlin-329473
+  url: https://www.arbeitnow.com/jobs/companies/fion-energy-gmbh/werkstudentin-marketing-people-alles-dazwischen-berlin-329473
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - Working student
+    - hilfstätigkeit / student
+published_at: '2026-07-30T15:00:30Z'
+discovered_at: '2026-07-30T16:35:24Z'
+updated_at: '2026-07-30T16:35:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T16:35:24Z'
+analysis_priority: 0
+fingerprint: sha256:effbd3058774194d34b7c0283c2e534a8773aff736c618ff9cea8d5bba3a0a15
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
