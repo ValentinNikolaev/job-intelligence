@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-elektrokonstrukteur-viersen-494825
+source_url: https://www.arbeitnow.com/jobs/companies/tektronix-gmbh/senior-elektrokonstrukteur-viersen-494825
+title: Senior Elektrokonstrukteur (m/w/d)
+company: Tektronix GmbH
+location: Viersen
+published_at: '2026-07-30T13:30:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:38:46Z'
+rejected_at: '2026-07-30T15:38:46Z'

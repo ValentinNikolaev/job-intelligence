@@ -72,4 +72,4 @@ Please note: This is a job ad by WongDoody GmbH, based in Germany. Through our w
 
 If you have any questions about the application process, please feel free to contact our People & Culture Team directly at -----
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

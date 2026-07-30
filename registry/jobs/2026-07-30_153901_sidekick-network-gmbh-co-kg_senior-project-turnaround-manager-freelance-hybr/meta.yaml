@@ -1,0 +1,30 @@
+schema_version: 2
+id: 9a9a3cbf-944b-4e3a-8e91-0218a51794d2
+title: Senior Project Turnaround Manager (Freelance, Hybrid)
+company: Sidekick Network GmbH & Co. KG
+company_url: null
+location: Bonn
+remote: false
+employment_type: Freelance, manager
+sources:
+- source: arbeitnow
+  source_job_id: senior-project-turnaround-manager-freelance-hybrid-bonn-432075
+  url: https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-project-turnaround-manager-freelance-hybrid-bonn-432075
+  metadata:
+    tags:
+    - Process Management
+    job_types:
+    - Freelance
+    - manager
+published_at: '2026-07-30T12:30:52Z'
+discovered_at: '2026-07-30T15:39:01Z'
+updated_at: '2026-07-30T15:39:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T15:39:01Z'
+analysis_priority: 0
+fingerprint: sha256:8677ddf6bb89e24110eb5eafc03a6c9c6d5071d4fa04600732cf882379f9bb0d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

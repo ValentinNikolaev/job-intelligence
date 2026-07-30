@@ -67,4 +67,4 @@ In unseren neuen Räumlichkeiten legen wir viel Wert darauf, uns alle kennenzule
 
 *Wir bitten Personalvermittlungen und Agenturen, keine Kandidatenprofile ohne unsere vorherige ausdrückliche Aufforderung einzureichen. Alle ohne vorherige schriftliche und von beiden Parteien unterzeichnete Vermittlungsvereinbarung eingereichten Kandidatenprofile gelten als unaufgefordert übermittelt. Für deren Nutzung oder für eine spätere Einstellung des Kandidaten entsteht kein Anspruch auf Vermittlungs- oder sonstige Gebühren.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

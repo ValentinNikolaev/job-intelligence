@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: bauleiter-windparkbau-frankfurt-am-main-450865
+source_url: https://www.arbeitnow.com/jobs/companies/deutscher-bauservice-gmbh/bauleiter-windparkbau-frankfurt-am-main-450865
+title: Bauleiter (m/w/d) - Windparkbau
+company: Deutscher Bauservice GmbH
+location: Frankfurt am Main
+published_at: '2026-07-30T14:00:48Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:38:35Z'
+rejected_at: '2026-07-30T15:38:35Z'

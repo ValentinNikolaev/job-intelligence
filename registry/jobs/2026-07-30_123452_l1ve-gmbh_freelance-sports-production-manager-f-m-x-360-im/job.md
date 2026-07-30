@@ -90,4 +90,4 @@ As a freelancer, you typically support one or several productions in parallel, d
 
 Annette Hansen - Recruiting Manager
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

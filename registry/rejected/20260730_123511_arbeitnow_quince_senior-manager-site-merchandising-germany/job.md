@@ -121,4 +121,4 @@ Employment is contingent upon successful completion of a background check. Quinc
 
 At Quince, we're dedicated to recruiting top talent who share our drive for innovation. To safeguard candidates, Quince emphasizes legitimate recruitment practices. Initial communication is primarily via official Quince email addresses and LinkedIn; beware of deviations. Personal data and sensitive information will not be solicited during the application phase. Interviews are conducted via phone, in person, or through the approved platforms Google Meets or Zoom—never via messaging apps or other calling services. Offers are merit-based, communicated verbally, and followed up in writing. If personal information is requested to initiate the hiring process, rest assured it will be through secure and protected means.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

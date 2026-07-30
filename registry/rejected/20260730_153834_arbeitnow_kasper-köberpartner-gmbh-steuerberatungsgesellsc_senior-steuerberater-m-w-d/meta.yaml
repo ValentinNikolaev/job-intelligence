@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-steuerberater-furth-116803
+source_url: https://www.arbeitnow.com/jobs/companies/kasper-koberpartner-gmbh-steuerberatungsgesellschaft/senior-steuerberater-furth-116803
+title: (Senior) Steuerberater (m/w/d)
+company: KASPER & KÖBERPartner GmbH Steuerberatungsgesellschaft
+location: Fürth
+published_at: '2026-07-30T14:00:49Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:38:34Z'
+rejected_at: '2026-07-30T15:38:34Z'

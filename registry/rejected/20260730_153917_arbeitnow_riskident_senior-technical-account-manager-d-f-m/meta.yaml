@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-technical-account-manager-hamburg-68607
+source_url: https://www.arbeitnow.com/jobs/companies/riskident/senior-technical-account-manager-hamburg-68607
+title: Senior Technical Account Manager (d/f/m)
+company: Riskident
+location: Hamburg
+published_at: '2026-07-30T11:09:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:39:17Z'
+rejected_at: '2026-07-30T15:39:17Z'

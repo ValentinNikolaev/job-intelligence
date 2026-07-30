@@ -55,4 +55,4 @@ Du liebst es, Kund:innen zu helfen, und findest für jedes Problem eine Lösung.
 
 *Wir schätzen Vielfalt, daher zählt bei uns nur Deine Leistung und Persönlichkeit, unabhängig von Alter, Herkunft, Geschlecht, Religion, sexueller Orientierung oder Behinderung.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

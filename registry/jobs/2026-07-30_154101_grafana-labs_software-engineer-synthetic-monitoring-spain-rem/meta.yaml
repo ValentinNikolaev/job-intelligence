@@ -1,0 +1,70 @@
+schema_version: 2
+id: 545311be-4dd7-416f-ba9c-72615f330ee0
+title: Software Engineer - Synthetic Monitoring | Spain | Remote
+company: Grafana Labs
+company_url: https://job-boards.greenhouse.io/grafanalabs
+location: Spain (Remote)
+remote: true
+employment_type: null
+sources:
+- source: greenhouse
+  source_job_id: '6130618004'
+  url: https://job-boards.greenhouse.io/grafanalabs/jobs/6130618004
+  metadata:
+    board: grafanalabs
+    internal_job_id: 5193652004
+    requisition_id: '27166'
+    updated_at: '2026-07-30T10:24:51-04:00'
+    departments:
+    - id: 4076488004
+      name: 'R&D : Databases'
+      child_ids: []
+      parent_id: 4044019004
+    offices:
+    - id: 4087973004
+      name: Germany (Remote)
+      location: null
+      child_ids: []
+      parent_id: 4087971004
+    - id: 4087979004
+      name: Ireland (Remote)
+      location: null
+      child_ids: []
+      parent_id: 4087971004
+    - id: 4087978004
+      name: Spain (Remote)
+      location: null
+      child_ids: []
+      parent_id: 4087971004
+    - id: 4087975004
+      name: Sweden (Remote)
+      location: null
+      child_ids: []
+      parent_id: 4087971004
+    - id: 4087972004
+      name: UK (Remote)
+      location: null
+      child_ids: []
+      parent_id: 4087971004
+    data_compliance:
+    - type: gdpr
+      requires_consent: false
+      requires_processing_consent: false
+      requires_retention_consent: false
+      retention_period: null
+      demographic_data_consent_applies: true
+    ai_disclaimer: <p>We use Greenhouse's AI-powered Talent Match tool to compare
+      your application against our job requirements.</p>
+    ai_opt_out_request_url: http://app4.greenhouse.io/ai_opt_out_request/job_post/6130618004/ai_opt_out
+published_at: '2026-07-30T10:24:51-04:00'
+discovered_at: '2026-07-30T15:41:01Z'
+updated_at: '2026-07-30T15:41:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T15:41:01Z'
+analysis_priority: 0
+fingerprint: sha256:f0abbdb81ab55a1d34ab6fa777faf6181ba8168723193b772dc6e0d6a53cb591
+data_source: greenhouse
+content_source: greenhouse
+company_content_source: null

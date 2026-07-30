@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '7859824791977182353'
-source_url: https://jooble.org/away/7859824791977182353?p=1&pos=20&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=30&brelb=10&scr=21.123003&bscr=21.123003&aq=-784704845008399865&elckey=5487173203854585504
+source_url: https://jooble.org/away/7859824791977182353?p=1&pos=20&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=33&brelb=10&scr=20.710352&bscr=20.710352&aq=-4346288288111235069&elckey=-9006131026425789276
 title: Global Cloud Security Partner Architect
 company: Cacheflow
 location: Italian Republic
 published_at: '2026-07-29T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-30T12:38:51Z'
+updated_at: '2026-07-30T15:42:51Z'
 rejected_at: '2026-07-29T00:31:13Z'

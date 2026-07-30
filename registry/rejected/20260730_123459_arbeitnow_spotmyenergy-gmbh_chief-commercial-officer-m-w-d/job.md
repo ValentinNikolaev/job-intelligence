@@ -115,4 +115,4 @@ Spotmyenergy verbindet Technologie, Energiewirtschaft und neue Geschäftsmodelle
 
 Du arbeitest eng mit dem CEO und dem restlichen Leadership-Team zusammen und gestaltest aktiv die strategische Weiterentwicklung des Unternehmens.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

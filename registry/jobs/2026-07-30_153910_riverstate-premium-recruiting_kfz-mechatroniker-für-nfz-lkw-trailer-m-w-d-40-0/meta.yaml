@@ -1,0 +1,30 @@
+schema_version: 2
+id: 8cb6ff11-8166-4bb3-ad38-33b60af50b3b
+title: KFZ-Mechatroniker für NFZ, LKW & Trailer (m/w/d) | 40.000 - 50.000 € Gehalt
+  + 5.000 € Wechselprämie
+company: Riverstate Premium Recruiting
+company_url: null
+location: Hamburg
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: kfz-mechatroniker-fur-nfz-lkw-trailer-40000-50000-eur-gehalt-5000-eur-wechselpramie-hamburg-9042
+  url: https://www.arbeitnow.com/jobs/companies/riverstate-premium-recruiting/kfz-mechatroniker-fur-nfz-lkw-trailer-40000-50000-eur-gehalt-5000-eur-wechselpramie-hamburg-9042
+  metadata:
+    tags:
+    - Automotive Engineering
+    job_types:
+    - professional / experienced
+published_at: '2026-07-30T11:30:28Z'
+discovered_at: '2026-07-30T15:39:10Z'
+updated_at: '2026-07-30T15:39:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T15:39:10Z'
+analysis_priority: 0
+fingerprint: sha256:cfdf693532dd10b7f0991c8ade384fd16483e8ef912b1f1cbad2ecbf3b6f4317
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

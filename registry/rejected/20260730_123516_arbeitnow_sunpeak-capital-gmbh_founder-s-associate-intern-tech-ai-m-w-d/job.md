@@ -1,6 +1,6 @@
 # Founder’s Associate Intern - Tech & AI (m/w/d)
 
-Posted: 2026-07-30T09:00:41Z
+Posted: 2026-07-30T13:29:03Z
 
 ## Rejection
 
@@ -52,8 +52,6 @@ Wir skalieren unser Modell konsequent innerhalb Deutschlands - dort, wo die Ener
 - Du bist verfügbar für ein 6-monatiges Vollzeitpraktikum sowie die Bereitschaft, an 5 Tagen pro Woche in unserem Berliner Büro zu arbeiten
 
 ## Benefits
-
-**Benefits**
 
 - **Kompetitive Vergütung:** Leistung wird bei uns belohnt - mit einem monatlichen Gehalt von 2.500 € sowie einer Urban Sports Club Mitgliedschaft
 

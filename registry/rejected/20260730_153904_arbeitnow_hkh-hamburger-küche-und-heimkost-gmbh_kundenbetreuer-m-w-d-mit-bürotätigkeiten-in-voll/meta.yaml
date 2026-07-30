@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: kundenbetreuer-mit-burotatigkeiten-in-voll-oder-teilzeit-gesucht-hamburg-179912
+source_url: https://www.arbeitnow.com/jobs/companies/hkh-hamburger-kuche-und-heimkost-gmbh/kundenbetreuer-mit-burotatigkeiten-in-voll-oder-teilzeit-gesucht-hamburg-179912
+title: Kundenbetreuer (m/w/d) mit Bürotätigkeiten in Voll- oder Teilzeit gesucht!
+company: HKH Hamburger Küche und Heimkost GmbH
+location: Hamburg
+published_at: '2026-07-30T12:00:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:39:04Z'
+rejected_at: '2026-07-30T15:39:04Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: enterprise-solution-architect-wetzlar-356867
+source_url: https://www.arbeitnow.com/jobs/companies/janitza-electronics-gmbh/enterprise-solution-architect-wetzlar-356867
+title: Enterprise Solution Architect (m/w/d)
+company: Janitza electronics GmbH
+location: Wetzlar
+published_at: '2026-07-30T13:20:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:38:51Z'
+rejected_at: '2026-07-30T15:38:51Z'

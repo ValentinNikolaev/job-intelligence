@@ -55,4 +55,4 @@ Als Working Student (d/w/m) im Bereich Disposition übernimmst du eine zentrale 
 
 *Wir schätzen Vielfalt, daher zählt bei uns nur Deine Leistung und Persönlichkeit, unabhängig von Alter, Herkunft, Geschlecht, Religion, sexueller Orientierung oder Behinderung. Lade deine Bewerbung gerne ohne Foto hoch.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: windparkplaner-molbergen-4793
+source_url: https://www.arbeitnow.com/jobs/companies/deutscher-bauservice-gmbh/windparkplaner-molbergen-4793
+title: Windparkplaner (m/w/d)
+company: Deutscher Bauservice GmbH
+location: Molbergen
+published_at: '2026-07-30T14:00:50Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:38:30Z'
+rejected_at: '2026-07-30T15:38:30Z'

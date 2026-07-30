@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: bauleiter-windparkbau-aschersleben-396116
+source_url: https://www.arbeitnow.com/jobs/companies/deutscher-bauservice-gmbh/bauleiter-windparkbau-aschersleben-396116
+title: Bauleiter (m/w/d) - Windparkbau
+company: Deutscher Bauservice GmbH
+location: Aschersleben
+published_at: '2026-07-30T14:00:48Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:38:37Z'
+rejected_at: '2026-07-30T15:38:37Z'

@@ -1,0 +1,27 @@
+schema_version: 2
+id: e6706fe9-e4e1-4008-824b-74216e90b7a2
+title: Brand Marketing Manager - Dutch Market (all genders) // Medior
+company: Yellowgrape GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: brand-marketing-manager-dutch-market-all-genders-medior-berlin-216211
+  url: https://www.arbeitnow.com/jobs/companies/yellowgrape-gmbh/brand-marketing-manager-dutch-market-all-genders-medior-berlin-216211
+  metadata:
+    tags:
+    - Marketing and Communication
+published_at: '2026-07-30T13:01:02Z'
+discovered_at: '2026-07-30T15:38:58Z'
+updated_at: '2026-07-30T15:38:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T15:38:58Z'
+analysis_priority: 0
+fingerprint: sha256:6bbc6a377d83b4f11dc60db8d075f9cd74d965246454b3b2941ce5e5daeca55e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

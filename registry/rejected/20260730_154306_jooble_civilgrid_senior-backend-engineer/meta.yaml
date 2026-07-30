@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '5874275966039483450'
+source_url: https://jooble.org/away/5874275966039483450?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=100&brelb=10&scr=1944.8364&bscr=1944.8364&aq=-3687543592480915387&elckey=-2096358470315092436
+title: Senior Backend Engineer
+company: Civilgrid
+location: Boston, MA
+published_at: '2026-07-26T05:35:23.0430000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:43:06Z'
+rejected_at: '2026-07-30T15:43:06Z'

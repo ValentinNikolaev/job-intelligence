@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-praktikantin-produktmanagement-im-kolner-startup-cologne-83123
+source_url: https://www.arbeitnow.com/jobs/companies/greenpocket-gmbh/werkstudentin-praktikantin-produktmanagement-im-kolner-startup-cologne-83123
+title: Werkstudent:in/Praktikant:in (m/w/d) Produktmanagement im Kölner Startup
+company: GreenPocket GmbH
+location: Cologne
+published_at: '2026-07-30T12:00:41Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:39:02Z'
+rejected_at: '2026-07-30T15:39:02Z'

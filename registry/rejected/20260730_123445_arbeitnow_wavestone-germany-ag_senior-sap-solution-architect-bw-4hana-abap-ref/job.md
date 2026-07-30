@@ -83,4 +83,4 @@ Emira Bucan
 
 Telefon: -
 
-E-Mail: Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+E-Mail: Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

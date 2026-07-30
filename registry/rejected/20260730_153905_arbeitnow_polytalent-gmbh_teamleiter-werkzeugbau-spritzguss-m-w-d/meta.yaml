@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teamleiter-werkzeugbau-spritzguss-barnstorf-113787
+source_url: https://www.arbeitnow.com/jobs/companies/polytalent-gmbh/teamleiter-werkzeugbau-spritzguss-barnstorf-113787
+title: Teamleiter Werkzeugbau Spritzguss (m/w/d)
+company: PolyTALENT GmbH
+location: Barnstorf, Niedersachsen, Deutschland
+published_at: '2026-07-30T11:30:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T15:39:05Z'
+rejected_at: '2026-07-30T15:39:05Z'

@@ -61,4 +61,4 @@ Wir freuen uns darauf Ihnen die besonderen Vorteile unseres Top-Partners in eine
 
 Senden Sie uns dazu gerne Ihre Bewerbungsunterlagen, einer unserer professionellen Jobjäger setzt sich gerne mit Ihnen in Verbindung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

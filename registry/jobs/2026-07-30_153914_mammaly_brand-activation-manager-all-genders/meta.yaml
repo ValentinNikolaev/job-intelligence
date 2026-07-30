@@ -1,0 +1,29 @@
+schema_version: 2
+id: d6b07c92-1ff1-4fb1-a6f6-50f8d3d1d1c9
+title: Brand Activation Manager (all genders)
+company: mammaly
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: brand-activation-manager-all-genders-berlin-146291
+  url: https://www.arbeitnow.com/jobs/companies/mammaly/brand-activation-manager-all-genders-berlin-146291
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - berufserfahren
+published_at: '2026-07-30T11:30:25Z'
+discovered_at: '2026-07-30T15:39:14Z'
+updated_at: '2026-07-30T15:39:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T15:39:14Z'
+analysis_priority: 0
+fingerprint: sha256:97ffb0f73a4d7e4d6dc13abcfff6ba8d605fcabaa25e09b6228aebe045dc659b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
