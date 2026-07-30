@@ -1,6 +1,6 @@
 # Customer Service Specialist (w/m/d)
 
-Posted: 2026-07-30T10:00:29Z
+Posted: 2026-07-30T14:29:03Z
 
 ## Rejection
 
@@ -49,10 +49,9 @@ Du liebst es, Kund:innen zu helfen, und findest für jedes Problem eine Lösung.
 
 - **Spot Spirit:** Ein motiviertes, wertschätzendes Team mit kurzen Wegen, offener Kommunikation und regelmäßigen Events.
 
-- Flexibilität: Moderne, hybrid-friendly Arbeitsumgebung mit viel Gestaltungsspielraum und Eigenverantwortung.
-
+- **Flexibilität:** Moderne, hybrid-friendly Arbeitsumgebung mit viel Gestaltungsspielraum und Eigenverantwortung.
 **Wir ermutigen vor allem Personen aus unterrepräsentierten Gruppen, sich zu bewerben!**
 
 *Wir schätzen Vielfalt, daher zählt bei uns nur Deine Leistung und Persönlichkeit, unabhängig von Alter, Herkunft, Geschlecht, Religion, sexueller Orientierung oder Behinderung.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

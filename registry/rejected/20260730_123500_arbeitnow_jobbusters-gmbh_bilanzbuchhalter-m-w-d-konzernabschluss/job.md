@@ -61,4 +61,4 @@ Sprechen Sie uns gerne an, wir stellen Ihnen auf Anfrage gerne weitere Details z
 
 - Attraktive Unternehmensevents
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

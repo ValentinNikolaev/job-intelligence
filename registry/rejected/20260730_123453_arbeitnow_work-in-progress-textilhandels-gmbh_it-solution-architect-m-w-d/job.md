@@ -65,4 +65,4 @@ Weil am Rhein / Deutschland
 
 Für telefonische Vorabinformationen steht Dir Jan Stiefvater unter der Telefonnummer +49 7621 966 486 zur Verfügung. Bewirb Dich gerne mit Angabe Deiner Gehaltsvorstellung und des frühestmöglichen Eintrittstermins.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

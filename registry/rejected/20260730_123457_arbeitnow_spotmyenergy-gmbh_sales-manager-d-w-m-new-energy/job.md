@@ -49,4 +49,4 @@ Du sprichst täglich mit Interessenten, machst ein komplexes Produkt verständli
 
 - Ambitioniertes Umfeld: Wir iterieren schnell, arbeiten mit hoher Eigenverantwortung und klaren, ambitionierten Zielen. Dazu gehört eine starke In-Office Kultur in unserem Berliner Büro in der Münzstraße.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -89,4 +89,4 @@ Für unseren **Standort Berlin** suchen wir eine erfahrene Verstärkung für uns
 
 · Hohe Affinität zu digitalen Arbeitsmethoden und modernen Projektmanagement-Tools
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

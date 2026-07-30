@@ -45,4 +45,4 @@ Samba is an equal opportunity employer. We celebrate diversity and are committed
 
 Samba may collect personal information directly from you, as a job applicant, Samba may also receive personal information from third parties, for example, in connection with a background, employment or reference check, in accordance with the applicable law. For further details, please see Samba's [Applicant Privacy Policy](https://www.samba.tv/applicant-privacy-notice). For residents of the EU , Samba Inc. is the data controller.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

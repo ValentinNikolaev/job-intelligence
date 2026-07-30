@@ -1,6 +1,6 @@
 # Senior IT Project Manager (Freelance, Hybrid)
 
-Posted: 2026-07-30T10:31:01Z
+Posted: 2026-07-30T14:59:03Z
 
 For a complex and business-critical transformation project, we are looking for an experienced **Senior IT Project Manager** on a freelance basis.
 
@@ -22,9 +22,13 @@ Key Facts / Framework Conditions
 
 - **Working model:** Hybrid
 
+- **Location**: Germany, Bonn
+
 - **Onsite presence:** Regular onsite presence will be required, particularly during the initial stabilisation phase
 
 - **Languages:** Fluent German and English are mandatory
+
+- **Location requirement**: Only candidates based in the EU can be considered for this assignment.
 
 ## Tasks
 
@@ -76,4 +80,4 @@ Key Facts / Framework Conditions
 
 - Fluent German and English
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -55,4 +55,4 @@ Als **Senior Technical Account Manager (d/m/w)** bist Du ein Teil unserer Produk
 - … und vieles mehr!
 Wenn du dich bewerben möchtest, benutze bitte den untenstehenden Bewerber-Button. Deine Bewerbungsunterlagen sollten auch deine Gehaltsvorstellungen und dein frühestmögliches Eintrittsdatum beinhalten. Deine Ansprechpartnerin ist Jana Gilb (Director People & Culture). Wir freuen uns auf deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

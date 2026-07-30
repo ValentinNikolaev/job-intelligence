@@ -1,6 +1,6 @@
 # Working Student – Process Automation (w/m/d)
 
-Posted: 2026-07-30T10:00:27Z
+Posted: 2026-07-30T14:29:03Z
 
 ## Rejection
 
@@ -34,7 +34,6 @@ Als Working Student im Bereich Process Automation baust du mit uns die interne S
 - Du bringst Tech-Verständnis mit: Git, APIs, Webhooks, Datenmodelle, Software Architektur und du hast Programmiererfahrung
 
 - Du arbeitest strukturiert und sorgfältig, besonders bei Datenqualität und Dokumentation
-
 Pluspunkte:
 
 - Du hast praktische Erfahrung mit einem CRM oder Low-/No-Code-Automatisierungstools (z. B. n8n)
@@ -51,8 +50,7 @@ Pluspunkte:
 
 - **Spot Spirit:** Ein motiviertes, wertschätzendes Team mit kurzen Wegen, offener Kommunikation und regelmäßigen Events.
 
-- Flexibilität: Moderne, hybrid-friendly Arbeitsumgebung mit viel Gestaltungsspielraum und Eigenverantwortung.
-
+- **Flexibilität:** Moderne, hybrid-friendly Arbeitsumgebung mit viel Gestaltungsspielraum und Eigenverantwortung.
 **Wir ermutigen vor allem Personen aus unterrepräsentierten Gruppen, sich zu bewerben!**
 
 *Wir schätzen Vielfalt, daher zählt bei uns nur Deine Leistung und Persönlichkeit, unabhängig von Alter, Herkunft, Geschlecht, Religion, sexueller Orientierung oder Behinderung. Lade deine Bewerbung gerne ohne Foto hoch.*

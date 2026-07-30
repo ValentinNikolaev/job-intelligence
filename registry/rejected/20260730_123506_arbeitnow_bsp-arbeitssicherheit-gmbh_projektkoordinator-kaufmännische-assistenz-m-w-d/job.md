@@ -85,4 +85,4 @@ Wir bieten dir u.a.:
 
 Werde Teil unseres agilen und motivierten Teams und bewirb Dich bei uns!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

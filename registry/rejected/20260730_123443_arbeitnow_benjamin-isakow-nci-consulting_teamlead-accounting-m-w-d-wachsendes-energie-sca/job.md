@@ -57,4 +57,4 @@ Für ein wirtschaftlich sehr erfolgreiches und stark wachsendes Scale-up aus der
 
 Klingt das nach Ihrer nächsten Karrierestation? Dann freuen wir uns auf Ihre Bewerbungsunterlagen. Gerne besprechen wir vorab auch unverbindlich und diskret die Details zu Unternehmen und Position.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

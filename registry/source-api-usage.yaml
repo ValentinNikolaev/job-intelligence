@@ -754,8 +754,8 @@ sources:
       errors: 0
       limit_reached: false
   arbeitnow:
-    total_requests: 97
-    last_run_at: '2026-07-30T15:40:01Z'
+    total_requests: 98
+    last_run_at: '2026-07-30T16:37:06Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -1492,6 +1492,17 @@ sources:
       updated: 3
       duplicates_merged: 0
       unchanged: 1
+      rejected: 85
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-07-30T16:33:35Z'
+      recorded_at: '2026-07-30T16:37:06Z'
+      requests: 1
+      fetched: 100
+      created: 2
+      updated: 5
+      duplicates_merged: 0
+      unchanged: 8
       rejected: 85
       errors: 0
       limit_reached: true

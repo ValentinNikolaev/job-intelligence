@@ -119,4 +119,4 @@ sehr gute Deutsch- und gute Englischkenntnisse mitbringst.
 
 Mit uns erhältst du nicht nur einen Job, sondern eine Erfahrung, die dich weiterbringt – beruflich und persönlich! 🚀
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
