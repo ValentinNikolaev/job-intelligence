@@ -71,4 +71,4 @@ Bei Rückfragen wende Dich gerne an Selin Sencan -----
 
 *Um mehr über die Datenschutzrichtlinie von Simtra zu erfahren, lese bitte die globale Datenschutzrichtlinie der Simtra Recruitment Platform: *[» Recruiting Privacy Notice (DE)](https://simtra.com/de/recruitment-platform-datenschutzhinweis/)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

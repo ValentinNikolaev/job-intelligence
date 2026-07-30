@@ -116,4 +116,4 @@ We are One Team and foster a transparent and inclusive environment, where everyo
 
 **Your personal data will be processed by Tide for recruitment purposes and in accordance with **[Tide's Recruitment Privacy Notice](https://assets.ctfassets.net/3h69mkdgxn20/30JAUcDJMlaCwUKt4zoW0j/dd541981a67b6838d6e54537704bc8aa/Tide_Recruitment_Privacy_Notice_Job_Post_Version.pdf)**.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

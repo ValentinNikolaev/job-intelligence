@@ -51,4 +51,4 @@ Mit unseren zahlreichen Beratungsmandaten in der Mittelklasse- bis Luxushoteller
 
 Wir freuen uns über engagierte Menschen, die eigenständig arbeiten möchten und Lust haben, die gesamte Wertschöpfungskette von Hotelimmobilien aktiv mitzugestalten. Sende uns einfach deinen Lebenslauf, dein Anschreiben und deine Zeugnisse – wir freuen uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

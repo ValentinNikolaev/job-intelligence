@@ -71,4 +71,4 @@ Muxon ist eine kleine, international tätige Personalvermittlungsagentur und fü
 
 Wenn Sie eine moderne Backend-Engineering-Rolle suchen, in der Sie mit den neuesten Technologien arbeiten und gleichzeitig volle Remote-Flexibilität genießen können, freuen wir uns auf Ihre Bewerbung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/abstra-co/jobs/senior-c-backend-engineer
+source_url: https://himalayas.app/companies/abstra-co/jobs/senior-c-backend-engineer
+title: Senior C# Backend Engineer
+company: Abstra
+location: Worldwide
+published_at: '2026-07-29T22:44:51Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T00:31:36Z'
+rejected_at: '2026-07-30T00:31:36Z'

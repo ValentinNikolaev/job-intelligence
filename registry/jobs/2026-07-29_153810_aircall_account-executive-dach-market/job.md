@@ -70,4 +70,4 @@ We will constantly challenge ourselves to make sure that we live up to our ambit
 
 Want to know more about candidate privacy? Find our [Candidate Privacy Notice here.](https://aircall.io/candidate-privacy-notice/)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

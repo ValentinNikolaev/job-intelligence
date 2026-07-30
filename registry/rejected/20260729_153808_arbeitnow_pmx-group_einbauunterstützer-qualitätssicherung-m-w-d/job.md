@@ -31,4 +31,4 @@ Posted: 2026-07-29T14:09:06Z
 - Attraktives Gehalt, verschiedene Sonderzahlungen & Zuschüsse
 - Besondere Vergünstigungen & Mitarbeiterrabatte
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -89,4 +89,4 @@ At OpenUp, everyone is welcome to apply regardless of age, gender, background, n
 
 *We may use artificial intelligence (AI) tools to streamline parts of our recruitment process. These tools assist our recruitment team but do not replace human judgement. All hiring decisions are made by humans. If you would like more information about how we use AI in the process, please contact us.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

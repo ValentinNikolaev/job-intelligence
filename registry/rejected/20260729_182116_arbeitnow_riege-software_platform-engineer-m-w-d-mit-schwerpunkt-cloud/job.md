@@ -85,4 +85,4 @@ Als Platform Engineer (m/w/d) gestaltest du den Aufbau unserer Infrastruktur und
 
 Wir freuen uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -80,4 +80,4 @@ We are looking for an experienced .NET/C# Developer to join our team and contrib
 
 If you are motivated and want to be part of our success story, we encourage you to apply right away. If you hesitate, it’s your own fault!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

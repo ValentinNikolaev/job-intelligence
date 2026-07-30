@@ -55,4 +55,4 @@ Feel free to reach out to us on LinkedIn if you have any questions or anything e
 
 We look forward to hearing from you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

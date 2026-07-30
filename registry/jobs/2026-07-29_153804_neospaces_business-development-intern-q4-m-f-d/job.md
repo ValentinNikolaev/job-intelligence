@@ -56,4 +56,4 @@ If you're ambitious, organized, and want real responsibility (not coffee runs), 
 
 Ready to learn business development where it actually happens? Let's talk.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

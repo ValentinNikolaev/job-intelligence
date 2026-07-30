@@ -75,4 +75,4 @@ Zu spät für eine Ausbildung? Nicht bei uns! Wenn du erst jetzt auf uns aufmerk
 
 Auch Studienabbrecher*innen sind bei uns herzlich willkommen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
