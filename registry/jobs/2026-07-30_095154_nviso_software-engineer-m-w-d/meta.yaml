@@ -1,0 +1,29 @@
+schema_version: 2
+id: bfdd5d5c-c5c6-4b3a-b4c8-775d4035d2e5
+title: Software Engineer (m/w/d)
+company: NVISO
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: software-engineer-frankfurt-am-main-283631
+  url: https://www.arbeitnow.com/jobs/companies/nviso/software-engineer-frankfurt-am-main-283631
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - professional / experienced
+published_at: '2026-07-30T07:30:41Z'
+discovered_at: '2026-07-30T09:51:54Z'
+updated_at: '2026-07-30T09:51:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T09:51:54Z'
+analysis_priority: 0
+fingerprint: sha256:68acb79edea0d628ceab43114af61c7fcac77653efefd2cd73b00a6316416729
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -125,4 +125,4 @@ Tel. +49173 370 649 5
 
 Wir begrüßen Bewerbungen aller Menschen ungeachtet von ethnischer Herkunft, nationaler Herkunft, Geschlecht, Alter, körperlichen Merkmalen, sozialer Herkunft, körperlichen Einschränkungen, Religion, Familienstand, Schwangerschaft, sexueller Orientierung, Geschlechtsidentität oder einem anderen sachfremden Kriterium nach geltendem Recht. Wir bekennen uns zu dem Grundsatz, alle Bewerber*innen fair zu behandeln und Benachteiligungen zu vermeiden. Wir sind Mitglied der Charta der Vielfalt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

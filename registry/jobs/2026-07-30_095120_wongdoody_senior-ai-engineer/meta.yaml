@@ -1,0 +1,27 @@
+schema_version: 2
+id: 235bdd6d-cb6b-47cf-b6bb-9c6e5b5ca419
+title: Senior AI Engineer
+company: wongdoody
+company_url: null
+location: Berlin, DE
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-ai-engineer-berlin-de-176798
+  url: https://www.arbeitnow.com/jobs/companies/wongdoody/senior-ai-engineer-berlin-de-176798
+  metadata:
+    tags:
+    - Development
+published_at: '2026-07-30T08:55:55Z'
+discovered_at: '2026-07-30T09:51:20Z'
+updated_at: '2026-07-30T09:51:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T09:51:20Z'
+analysis_priority: 0
+fingerprint: sha256:ce07567f8c4983ce28ad3e53a311fc16928506d5b5c1234620eb711cda50b449
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

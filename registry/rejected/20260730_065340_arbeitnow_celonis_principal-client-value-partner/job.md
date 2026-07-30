@@ -86,4 +86,4 @@ By submitting this application, you confirm that you agree to the storing and pr
 
 Please be aware of common job offer scams, impersonators and frauds. Learn more [here](https://www.celonis.com/careers/fraud-alert/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

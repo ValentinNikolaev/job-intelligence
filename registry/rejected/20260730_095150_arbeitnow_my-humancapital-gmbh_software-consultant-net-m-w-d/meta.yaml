@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: software-consultant-net-munich-478456
+source_url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/software-consultant-net-munich-478456
+title: Software Consultant .NET (m/w/d)
+company: MY Humancapital GmbH
+location: Munich
+published_at: '2026-07-30T07:30:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-30T09:51:50Z'
+rejected_at: '2026-07-30T09:51:50Z'

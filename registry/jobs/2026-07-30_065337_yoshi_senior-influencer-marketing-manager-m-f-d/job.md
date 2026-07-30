@@ -112,4 +112,4 @@ Inviting office spaces with access to plenty of organic teas.
 
 We, the Yoshi Group, like to celebrate each other! Regular tea & office parties, Christmas and summer feasts and various influencer events such
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

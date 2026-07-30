@@ -174,4 +174,4 @@ Die Mediengruppe Pressedruck ist ein Familienunternehmen und zählt zu den führ
 
 Zu unserer [Datenschutzerklärung](https://www.suedkurier-medienhaus.de/datenschutz/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

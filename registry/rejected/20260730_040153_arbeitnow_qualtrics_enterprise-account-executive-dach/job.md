@@ -117,4 +117,4 @@ Qualtrics is on the lookout for a proactive, collaborative seller that can help 
 
 *Not finding a role that’s the right fit for now? Qualtrics Insiders is the one-stop shop for all things Qualtrics Life. Sign up for exclusive access to content created with you in mind and get the scoop on what we have going on at Qualtrics - upcoming events, behind the scenes stories from the team, interview tips, hot jobs, and more. No spam - we promise! You'll hear from us two times a month max with fresh, totally tailored info - so be sure to stay connected as you explore your best role and company fit.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

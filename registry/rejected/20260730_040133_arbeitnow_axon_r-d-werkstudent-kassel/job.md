@@ -60,4 +60,4 @@ Studies have shown that women and people of color are less likely to apply to jo
 
 Phishing alert: Axon will never ask you to pay for any part of the hiring process, including training, equipment, or background checks. We do not make job offers via text message, WhatsApp, or instant messaging platforms without a formal interview process. All legitimate job openings are listed on our official careers page at [https://www.axon.com/careers](https://www.axon.com/careers). If you receive a suspicious offer or outreach from an email address that is not ----- or if you are asked for sensitive personal information (bank details, Social Security Number) prematurely, please ignore the message and report it to
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

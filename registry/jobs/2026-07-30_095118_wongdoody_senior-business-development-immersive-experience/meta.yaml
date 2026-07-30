@@ -1,0 +1,27 @@
+schema_version: 2
+id: 696ce66b-9801-4996-9c8b-1f7828cebd16
+title: Senior Business Development Immersive Experiences EMEA
+company: wongdoody
+company_url: null
+location: Berlin, DE
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-business-development-immersive-experiences-emea-berlin-de-146424
+  url: https://www.arbeitnow.com/jobs/companies/wongdoody/senior-business-development-immersive-experiences-emea-berlin-de-146424
+  metadata:
+    tags:
+    - Client Partnerships
+published_at: '2026-07-30T08:55:55Z'
+discovered_at: '2026-07-30T09:51:18Z'
+updated_at: '2026-07-30T09:51:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-30T09:51:18Z'
+analysis_priority: 0
+fingerprint: sha256:2d5b1caa8fd564f7cad84fbae64a8252fe30eda1f08fa5afb8f49615332f2b29
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
