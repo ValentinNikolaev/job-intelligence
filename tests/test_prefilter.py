@@ -8,7 +8,12 @@ from pathlib import Path
 import yaml
 
 from jobintel.models import NormalizedJob
-from jobintel.prefilter import RejectedRegistry, prefilter_job
+from jobintel.prefilter import (
+    CompanyRetryRule,
+    RejectedRegistry,
+    load_company_retry_rules,
+    prefilter_job,
+)
 
 
 def make_job(**overrides: object) -> NormalizedJob:
@@ -132,6 +137,73 @@ class PrefilterTests(unittest.TestCase):
             self.assertIn("Posted: 2026-07-22T12:00:00Z", markdown)
             self.assertIn("## Rejection", markdown)
             self.assertIn("Reason:", markdown)
+
+    def test_rejects_company_before_cv_retry_date(self) -> None:
+        rejection = prefilter_job(
+            make_job(company="Grafana Labs", description="Build Go backend services."),
+            now=datetime(2026, 7, 23, 12, tzinfo=timezone.utc),
+            company_retry_rules=(
+                CompanyRetryRule(
+                    company="Grafana",
+                    aliases=("Grafana Labs",),
+                    allow_after=datetime(2027, 2, 1, tzinfo=timezone.utc).date(),
+                    reason="CV rejected; retry allowed from February 2027.",
+                ),
+            ),
+        )
+
+        self.assertIsNotNone(rejection)
+        self.assertEqual("company_retry_block", rejection.category)
+        self.assertIn("2027-02-01", rejection.reason)
+
+    def test_allows_company_on_retry_date(self) -> None:
+        rejection = prefilter_job(
+            make_job(
+                company="Grafana Labs",
+                description="Build Go backend services.",
+                published_at="2027-02-01T09:00:00Z",
+            ),
+            now=datetime(2027, 2, 1, 12, tzinfo=timezone.utc),
+            company_retry_rules=(
+                CompanyRetryRule(
+                    company="Grafana",
+                    aliases=("Grafana Labs",),
+                    allow_after=datetime(2027, 2, 1, tzinfo=timezone.utc).date(),
+                    reason="CV rejected; retry allowed from February 2027.",
+                ),
+            ),
+        )
+
+        self.assertIsNone(rejection)
+
+    def test_loads_company_retry_rules_from_profile(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            profile = Path(temporary) / "profile.yaml"
+            profile.write_text(
+                yaml.safe_dump(
+                    {
+                        "company_retry_after": [
+                            {
+                                "company": "Grafana",
+                                "aliases": ["Grafana Labs"],
+                                "allow_after": "2027-02-01",
+                                "reason": "Retry later.",
+                            }
+                        ]
+                    },
+                    sort_keys=False,
+                ),
+                encoding="utf-8",
+            )
+
+            rules = load_company_retry_rules(profile)
+
+            self.assertEqual(1, len(rules))
+            self.assertTrue(rules[0].matches("Grafana Labs"))
+            self.assertEqual(
+                datetime(2027, 2, 1, tzinfo=timezone.utc).date(),
+                rules[0].allow_after,
+            )
 
 
 if __name__ == "__main__":

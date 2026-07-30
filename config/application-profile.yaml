@@ -30,6 +30,13 @@ application_defaults:
   profile_summary: >-
     Backend engineer and technical lead with 15+ years of experience in PHP and Go,
     production reliability, AWS/Kubernetes, APIs, automation systems, and mentoring.
+company_retry_after:
+  - company: Grafana
+    aliases:
+      - Grafana Labs
+      - GrafanaLabs
+    allow_after: 2027-02-01
+    reason: CV rejected; retry allowed from February 2027.
 reusable_answers:
   motivation: >-
     I am looking for a hands-on technical lead role where I can stay close to
@@ -55,4 +62,3 @@ open_questions_for_candidate:
   - Confirm expected gross annual salary or acceptable range.
   - Confirm current Simple.life status and how CRURATED overlapped with it.
   - Confirm whether any production NodeJS, Python, DynamoDB, React, TypeScript, or logistics experience can be added to source evidence.
-

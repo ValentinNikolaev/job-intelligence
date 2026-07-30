@@ -32,7 +32,7 @@ from .matching import (
     publish_analysis_batch,
 )
 from .models import CollectorSummary, NormalizedJob
-from .prefilter import RejectedRegistry, prefilter_job
+from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
 from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
 from .triage import should_skip_model, write_triage
@@ -280,6 +280,13 @@ def main(argv: list[str] | None = None) -> int:
 
     registry = Registry(registry_dir)
     rejected_registry = RejectedRegistry(registry_dir)
+    try:
+        company_retry_rules = load_company_retry_rules(
+            project_root / "config" / "application-profile.yaml"
+        )
+    except ValueError as exc:
+        print(f"Profile policy error: {exc}", file=sys.stderr)
+        return 2
     api_usage = ApiUsageLog(registry_dir / "source-api-usage.yaml")
     run_started_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
@@ -300,6 +307,7 @@ def main(argv: list[str] | None = None) -> int:
             registry,
             rejected_registry,
             limit=collection_limit,
+            company_retry_rules=company_retry_rules,
         )
         _print_summary(summary)
         try:
@@ -324,6 +332,7 @@ def _run_collector(
     rejected_registry: RejectedRegistry,
     *,
     limit: int | None,
+    company_retry_rules=(),
 ) -> CollectorSummary:
     summary = CollectorSummary(source=name)
     try:
@@ -333,7 +342,7 @@ def _run_collector(
                 break
             summary.fetched += 1
             try:
-                rejection = prefilter_job(job)
+                rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
                 if rejection is not None:
                     rejected_registry.upsert(job, rejection)
                     summary.record("rejected")

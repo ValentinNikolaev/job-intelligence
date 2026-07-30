@@ -4,14 +4,14 @@ import re
 import os
 import uuid
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
 import yaml
 
 from .models import NormalizedJob
-from .normalization import slug
+from .normalization import normalize_company, slug
 from .registry import _dump_yaml, _render_job_markdown, _utc_iso
 
 
@@ -24,16 +24,34 @@ class Rejection:
     reason: str
 
 
+@dataclass(frozen=True, slots=True)
+class CompanyRetryRule:
+    company: str
+    allow_after: date
+    reason: str
+    aliases: tuple[str, ...] = ()
+
+    def matches(self, company: str) -> bool:
+        candidates = (self.company, *self.aliases)
+        normalized = normalize_company(company)
+        return any(normalize_company(candidate) == normalized for candidate in candidates)
+
+
 def prefilter_job(
     job: NormalizedJob,
     *,
     now: datetime | None = None,
     max_age_days: int = MAX_JOB_AGE_DAYS,
+    company_retry_rules: tuple[CompanyRetryRule, ...] = (),
 ) -> Rejection | None:
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         now = now.replace(tzinfo=timezone.utc)
     now = now.astimezone(timezone.utc)
+
+    retry_rejection = _company_retry_rejection(job.company, company_retry_rules, now.date())
+    if retry_rejection is not None:
+        return retry_rejection
 
     published_at = _parse_timestamp(job.published_at)
     if published_at is not None and published_at < now - timedelta(days=max_age_days):
@@ -73,6 +91,66 @@ def prefilter_job(
         return Rejection("tech_stack", f"{blacklisted_stack} is not a target stack")
     if not _has_target_stack(full_text):
         return Rejection("tech_stack", "role does not mention Go/Golang or PHP")
+    return None
+
+
+def load_company_retry_rules(profile_path: Path) -> tuple[CompanyRetryRule, ...]:
+    if not profile_path.exists():
+        return ()
+    try:
+        loaded = yaml.safe_load(profile_path.read_text(encoding="utf-8"))
+    except (OSError, yaml.YAMLError) as exc:
+        raise ValueError(f"cannot read company retry policy {profile_path}: {exc}") from exc
+    if not isinstance(loaded, dict):
+        return ()
+    raw_rules = loaded.get("company_retry_after", [])
+    if raw_rules is None:
+        return ()
+    if not isinstance(raw_rules, list):
+        raise ValueError("company_retry_after must be a list")
+    rules: list[CompanyRetryRule] = []
+    for index, raw in enumerate(raw_rules, start=1):
+        if not isinstance(raw, dict):
+            raise ValueError(f"company_retry_after[{index}] must be a mapping")
+        company = str(raw.get("company") or "").strip()
+        raw_date = raw.get("allow_after")
+        if not company or raw_date in (None, ""):
+            raise ValueError(f"company_retry_after[{index}] needs company and allow_after")
+        if isinstance(raw_date, date):
+            allow_after = raw_date
+        else:
+            try:
+                allow_after = date.fromisoformat(str(raw_date).strip())
+            except ValueError as exc:
+                raise ValueError(
+                    f"company_retry_after[{index}].allow_after must be YYYY-MM-DD"
+                ) from exc
+        raw_aliases = raw.get("aliases") or ()
+        if not isinstance(raw_aliases, list):
+            raise ValueError(f"company_retry_after[{index}].aliases must be a list")
+        reason = str(raw.get("reason") or "CV rejected; retry is temporarily blocked.").strip()
+        rules.append(
+            CompanyRetryRule(
+                company=company,
+                allow_after=allow_after,
+                reason=reason,
+                aliases=tuple(str(alias).strip() for alias in raw_aliases if str(alias).strip()),
+            )
+        )
+    return tuple(rules)
+
+
+def _company_retry_rejection(
+    company: str,
+    rules: tuple[CompanyRetryRule, ...],
+    today: date,
+) -> Rejection | None:
+    for rule in rules:
+        if rule.matches(company) and today < rule.allow_after:
+            return Rejection(
+                "company_retry_block",
+                f"{rule.company} is blocked until {rule.allow_after.isoformat()}: {rule.reason}",
+            )
     return None
 
 

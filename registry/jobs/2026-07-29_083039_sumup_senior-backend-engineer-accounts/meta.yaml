@@ -12,11 +12,13 @@ sources:
   url: https://www.arbeitnow.com/jobs/companies/sumup/senior-backend-engineer-accounts-berlin-181232
 published_at: '2026-07-29T06:45:22Z'
 discovered_at: '2026-07-29T08:30:39Z'
-updated_at: '2026-07-29T09:54:34Z'
-status: found
+updated_at: '2026-07-30T18:45:38Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-07-29T08:30:39Z'
+- status: rejected
+  changed_at: '2026-07-30T18:45:38Z'
 analysis_priority: 0
 fingerprint: sha256:2fcdad9208a39ae61e2aeda7ddd922b0de0157b6419ec576cd5ffca6ee97fc75
 data_source: arbeitnow
