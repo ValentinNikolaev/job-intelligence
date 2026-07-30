@@ -30,4 +30,4 @@ Als Brand Activation Manager bringst du unsere Marke dorthin, wo die Hundeeltern
 
 - Hunde-Affinität und Lust auf eine Marke mit Haltung
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

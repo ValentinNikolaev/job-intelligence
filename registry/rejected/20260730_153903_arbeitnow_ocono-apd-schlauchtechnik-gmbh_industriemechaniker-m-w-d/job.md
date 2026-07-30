@@ -65,4 +65,4 @@ Kurze Kommunikationswege, flache Hierarchien, hilfsbereite Kolleg/innen
 
 Teamevents, Weihnachtsfeier, Sommerfest, vergünstigte Angebote (z. B. Reisen, E-Commerce, Bekleidung, Verträge)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

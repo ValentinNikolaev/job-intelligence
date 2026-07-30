@@ -59,4 +59,4 @@ Unser Kunde ist ein Traditionsunternehmen aus Nordbayern, das krisensicher und e
 
 **Interesse geweckt?** - Dann melde dich gerne bei mir via E-Mail oder über das Bewerberformular. Wir freuen uns über deine Kontaktaufnahme.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
