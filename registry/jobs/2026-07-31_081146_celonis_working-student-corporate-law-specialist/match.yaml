@@ -1,0 +1,21 @@
+score: 8
+recommendation: not_match
+summary: This is a working-student corporate-law position requiring legal studies
+  and legal research, which do not match the software-engineering profile.
+strengths:
+- Process automation and technology-company experience
+gaps:
+- Law studies
+- corporate legal research
+- contract review
+- and working-student status are not established
+concerns:
+- The role is fundamentally outside software engineering
+hard_rejection: true
+hard_rejection_reason: The essential legal-study and corporate-law requirements are
+  unsupported and fundamentally incompatible with the profile.
+analyzed_at: '2026-07-31T08:23:21Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:3f941cedf0bd302b5bd2253f8f13edb172bffe1918afb193b8aa22bf422eb85c
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
