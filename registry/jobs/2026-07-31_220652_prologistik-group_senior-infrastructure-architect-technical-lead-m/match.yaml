@@ -1,0 +1,18 @@
+score: 78
+recommendation: match
+summary: Cloud infrastructure leadership and Kubernetes experience align well, with
+  architecture scope uncertainty.
+strengths:
+- AWS
+- Kubernetes
+gaps:
+- Infrastructure architecture breadth
+concerns:
+- Infrastructure-first scope
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-31T22:35:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e94fb1e9f4b7ca125c5e0c280a85b9ddd44a76dbc63640c703affeeafa7f6b31
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
