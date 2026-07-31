@@ -1,8 +1,9 @@
 schema_version: 1
 triage_version: deterministic-triage-v1
 vacancy_id: 597e61c8-269d-4ad6-9d15-9ab719e7d412
-skip_model: false
-reason: mobile
-confidence: medium
-matched_title_rules: []
-triaged_at: '2026-07-28T18:35:37Z'
+skip_model: true
+reason: sre
+confidence: high
+matched_title_rules:
+- sre
+triaged_at: '2026-07-31T19:42:10Z'

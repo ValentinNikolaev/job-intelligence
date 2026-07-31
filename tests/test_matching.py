@@ -154,6 +154,7 @@ class MatchingTests(unittest.TestCase):
 
         self.assertIn("decrease the score for roles that are not remote", prompt)
         self.assertIn("decrease the score when Spring Boot is a central requirement", prompt)
+        self.assertIn("decrease the score for Site Reliability Engineer or SRE roles", prompt)
         self.assertIn("increase the score when the role offers a relocation package", prompt)
         self.assertIn("increase the score when PHP is a meaningful part of the role", prompt)
         self.assertIn("increase the score when Go or Golang is a meaningful part of the role", prompt)

@@ -2,7 +2,7 @@ schema_version: 1
 triage_version: deterministic-triage-v1
 vacancy_id: 892a1d56-e598-43df-a508-39ad53cf8ab7
 skip_model: false
-reason: consulting
+reason: sre
 confidence: medium
 matched_title_rules: []
-triaged_at: '2026-07-29T15:42:06Z'
+triaged_at: '2026-07-31T19:42:11Z'

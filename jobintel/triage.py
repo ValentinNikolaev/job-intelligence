@@ -14,6 +14,7 @@ _HIGH_CONFIDENCE_RULES: tuple[tuple[str, str], ...] = (
     ("qa", r"\b(qa|quality assurance|test automation|manual tester|software tester)\b"),
     ("mobile", r"\b(ios|android|mobile developer|react native|flutter)\b"),
     ("junior", r"\b(junior|jr\.?|intern|internship|graduate|entry[- ]level|trainee)\b"),
+    ("sre", r"\b(site reliability engineer|sre)\b"),
     ("consulting", r"\b(consultant|consulting)\b"),
     ("non_backend", r"\b(frontend|front[- ]end|ux|ui designer|data scientist|machine learning engineer)\b"),
 )

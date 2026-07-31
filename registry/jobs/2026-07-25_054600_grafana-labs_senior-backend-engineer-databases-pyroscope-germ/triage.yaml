@@ -2,7 +2,7 @@ schema_version: 1
 triage_version: deterministic-triage-v1
 vacancy_id: ec29ba4d-f719-443a-b320-a3c5c6c967ad
 skip_model: false
-reason: non_backend
+reason: sre
 confidence: medium
 matched_title_rules: []
-triaged_at: '2026-07-25T05:48:15Z'
+triaged_at: '2026-07-31T19:42:08Z'
