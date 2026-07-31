@@ -13,6 +13,7 @@ import yaml
 
 from .api_usage import ApiUsageLog
 from .catalog import generate_catalog
+from .manual_status_log import ManualStatusEvent, append_manual_status_event
 from .applications import (
     ApplicationGenerator,
     CodexApplicationDraftClient,
@@ -85,6 +86,10 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--credits", type=float, help="reported credit cost")
     parser.add_argument("--measurement", choices=("reported", "estimated"), default="reported")
     parser.add_argument("--note", help="optional usage note")
+    parser.add_argument("--reason", help="status only: user/LLM reason for a manual status change")
+    parser.add_argument("--actor", default="codex", help="status only: actor recording the manual decision")
+    parser.add_argument("--interaction-id", help="status only: optional user/LLM interaction identifier")
+    parser.add_argument("--status-note", help="status only: optional note for the manual status audit log")
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     parser.add_argument(
@@ -142,10 +147,37 @@ def main(argv: list[str] | None = None) -> int:
             or args.input
             or args.workflow
         ):
-            print("Usage: python run.py status <job-directory|vacancy-id> <status>", file=sys.stderr)
+            print(
+                "Usage: python run.py status <job-directory|vacancy-id> <status> "
+                "[--reason <reason>] [--actor <actor>] [--interaction-id <id>] [--status-note <note>]",
+                file=sys.stderr,
+            )
             return 2
         try:
+            directories = resolve_job_directories(registry_dir, args.arguments[0])
+            if len(directories) != 1:
+                raise ValueError("status updates exactly one vacancy")
+            directory = directories[0]
+            before = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
             changed = Registry(registry_dir).update_status(args.arguments[0], args.arguments[1])
+            if changed:
+                after = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+                append_manual_status_event(
+                    registry_dir / "manual-status-log.yaml",
+                    ManualStatusEvent(
+                        changed_at=str(after["updated_at"]),
+                        vacancy_id=str(after["id"]),
+                        directory=directory.name,
+                        company=str(after.get("company") or ""),
+                        title=str(after.get("title") or ""),
+                        from_status=str(before.get("status") or ""),
+                        to_status=str(after.get("status") or ""),
+                        reason=(args.reason or "unspecified").strip() or "unspecified",
+                        actor=(args.actor or "codex").strip() or "codex",
+                        interaction_id=(args.interaction_id or "").strip() or None,
+                        note=(args.status_note or "").strip() or None,
+                    ),
+                )
         except Exception as exc:
             print(f"Status error: {exc}", file=sys.stderr)
             return 1

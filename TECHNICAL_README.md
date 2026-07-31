@@ -207,13 +207,23 @@ New vacancies start with `status: found` and a matching first `status_history` e
 Statuses are changed only by an explicit user request:
 
 ```text
-python run.py status <job-directory-or-vacancy-id> reviewing
+python run.py status <job-directory-or-vacancy-id> reviewing --reason "needs human review"
 ```
 
 Allowed values are `found`, `reviewing`, `prepared`, `applied`, `interview`,
 `technical_interview`, `final_interview`, `offer`, `rejected`, `withdrawn`, and
 `closed`. The command preserves history and records an exact UTC timestamp. It never
 changes status based on generated artifacts.
+
+Manual status decisions made through the user/LLM workflow are also appended to
+`registry/manual-status-log.yaml`. That file stores the selected vacancy, old and new
+status, reason text, normalized reason key, actor, optional interaction id, and
+aggregated counts by status and reason. Use `--reason`, `--actor`, `--interaction-id`,
+and `--status-note` when Codex records a user decision, for example:
+
+```text
+python run.py status <job-directory-or-vacancy-id> rejected --reason "requires hybrid work" --interaction-id "<task-or-thread-id>"
+```
 
 The registry uses exact `(source, source_job_id)` identity first. For a new source record, it uses a SHA-256 fingerprint of normalized company, title, and location as a candidate match. Two IDs from the same source never merge by fingerprint, and ambiguous fingerprint matches stay separate. See [the focused architecture proposal](docs/collection-architecture.md) for the complete model and tradeoffs.
 

@@ -162,8 +162,11 @@ python run.py custom
 Change a vacancy status after an explicit decision:
 
 ```text
-python run.py status <job-directory-or-vacancy-id> reviewing
+python run.py status <job-directory-or-vacancy-id> reviewing --reason "needs human review"
 ```
+
+Manual status changes made through the user/Codex loop are audited in
+`registry/manual-status-log.yaml`, including counts by target status and reason.
 
 Publish Codex-produced work:
 

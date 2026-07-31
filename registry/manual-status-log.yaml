@@ -1,0 +1,28 @@
+schema_version: 1
+description: Append-only audit log for manual vacancy status decisions made through
+  user/LLM interaction. Automated collection and prefilter rejections are tracked
+  elsewhere.
+summary:
+  total_events: 1
+  by_status:
+    rejected:
+      count: 1
+      last_changed_at: '2026-07-31T20:02:31Z'
+  by_reason:
+    requires-hybrid-type-of-work:
+      count: 1
+      reason: requires hybrid type of work
+      last_changed_at: '2026-07-31T20:02:31Z'
+events:
+- changed_at: '2026-07-31T20:02:31Z'
+  vacancy_id: 0e2632ce-88f0-470f-8792-4adfc5586e46
+  directory: 2026-07-31_154304_hellofresh_staff-software-engineer-supply-chain-management
+  company: hellofresh
+  title: Staff Software Engineer, Supply Chain Management Technology (all genders)
+  from_status: found
+  to_status: rejected
+  reason: requires hybrid type of work
+  reason_key: requires-hybrid-type-of-work
+  actor: codex
+  interaction:
+    source: llm_assisted_manual

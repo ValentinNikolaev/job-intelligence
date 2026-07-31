@@ -70,6 +70,69 @@ class CliTests(unittest.TestCase):
                         ),
                     )
 
+    def test_status_command_records_manual_status_log_with_reason(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            registry = Registry(
+                registry_root,
+                clock=lambda: datetime(2026, 7, 23, 10, 0, tzinfo=timezone.utc),
+                id_factory=lambda: "vacancy-1",
+            )
+            created = registry.upsert(
+                NormalizedJob(
+                    source="direct",
+                    source_job_id="job-1",
+                    source_url="https://example.test/jobs/1",
+                    title="Backend Engineer",
+                    company="Example",
+                    description="Build services.",
+                )
+            )
+
+            with redirect_stdout(StringIO()):
+                self.assertEqual(
+                    0,
+                    main(
+                        [
+                            "status",
+                            created.directory,
+                            "rejected",
+                            "--registry",
+                            str(registry_root),
+                            "--reason",
+                            "requires hybrid work",
+                            "--interaction-id",
+                            "thread-123",
+                        ]
+                    ),
+                )
+                self.assertEqual(
+                    0,
+                    main(
+                        [
+                            "status",
+                            created.directory,
+                            "rejected",
+                            "--registry",
+                            str(registry_root),
+                            "--reason",
+                            "requires hybrid work",
+                        ]
+                    ),
+                )
+
+            log = yaml.safe_load((registry_root / "manual-status-log.yaml").read_text(encoding="utf-8"))
+            self.assertEqual(1, log["summary"]["total_events"])
+            self.assertEqual(1, log["summary"]["by_status"]["rejected"]["count"])
+            self.assertEqual(1, log["summary"]["by_reason"]["requires-hybrid-work"]["count"])
+            event = log["events"][0]
+            self.assertEqual(created.directory, event["directory"])
+            self.assertEqual("found", event["from_status"])
+            self.assertEqual("rejected", event["to_status"])
+            self.assertEqual("requires hybrid work", event["reason"])
+            self.assertEqual("thread-123", event["interaction"]["id"])
+
     def test_add_manual_publishes_manual_vacancy_with_priority(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
