@@ -4,7 +4,7 @@ Posted: 2026-06-20T04:14:29.7870000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-20T04:14:29.7870000 is older than 7 days
+- Category: company_retry_block
+- Reason: Grafana is blocked until 2027-02-01: CV rejected; retry allowed from February 2027.
 
 ...noise and cost. We are a 100% **remote **company with 1,600+ team... ...observability. Our dedicated **backend **development team works closely... ...programming languages including **Golang,** Dotnet, Java, Ruby, eBPF, Python... ...-first approach and our **engineering **team is primarily remote, it...
