@@ -146,8 +146,9 @@ def queue_items(
 ) -> list[QueueItem]:
     policy = policy or _policy(project_root)
     workflow = workflow.replace("-", "_")
-    if workflow not in {"analyze", "prepare"}:
+    if workflow not in {"analyze", "prepare", "prepare_priority"}:
         raise WorkflowApiError(f"unsupported workflow queue: {workflow}")
+    policy_workflow = "prepare" if workflow == "prepare_priority" else workflow
     vacancies = load_catalog_vacancies(registry_root)
     rows = []
     for vacancy in vacancies:
@@ -169,7 +170,9 @@ def queue_items(
                 continue
             if not _analysis_is_current(directory, registry_root, profile_paths, policy, project_root):
                 continue
-            if not policy.prepare_score_is_eligible(workflow, vacancy.score):
+            if not policy.prepare_score_is_eligible(policy_workflow, vacancy.score):
+                continue
+            if workflow == "prepare_priority" and not policy.is_priority_score(vacancy.score):
                 continue
             generator = ApplicationGenerator(
                 registry_root,
@@ -177,7 +180,7 @@ def queue_items(
                 project_root / "prompts" / "vacancy-application.md",
                 CodexApplicationDraftClient(
                     project_root / ".codex-work" / "unused-application",
-                    model=policy.workflow(workflow).model_label,
+                    model=policy.workflow(policy_workflow).model_label,
                 ),
                 HostMarkdownDocxConverter(project_root),
             )

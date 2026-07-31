@@ -200,6 +200,13 @@ class WorkflowApiTests(unittest.TestCase):
         directories = [item["directory"] for item in prepare["items"]]
         self.assertEqual([priority.directory], directories)
 
+        priority_only = queue_response(
+            "prepare-priority", self.project, self.registry_root, [self.profile]
+        )
+
+        self.assertEqual("prepare_priority", priority_only["workflow"])
+        self.assertEqual([priority.directory], [item["directory"] for item in priority_only["items"]])
+
     def test_source_usage_and_catalog_contracts(self) -> None:
         ApiUsageLog(self.registry_root / "source-api-usage.yaml").record(
             CollectorSummary(source="adzuna", fetched=3, created=2, rejected=1, api_requests=4),

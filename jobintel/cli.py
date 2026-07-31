@@ -624,7 +624,7 @@ def _run_api(
             payload = catalog_vacancies(registry_dir)
         elif command == "queues":
             if len(args.arguments) != 2:
-                raise ValueError("api queues requires one workflow: analyze or prepare")
+                raise ValueError("api queues requires one workflow: analyze, prepare, or prepare-priority")
             workflow = args.arguments[1].replace("_", "-")
             payload = queue_response(
                 workflow,

@@ -153,6 +153,7 @@ python run.py usage summary
 python run.py api catalog-vacancies --json
 python run.py api queues analyze --json --limit 10
 python run.py api queues prepare --json
+python run.py api queues prepare-priority --json --limit 10
 python run.py pending analyze all --workflow analyze
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
 python run.py pending prepare all --workflow prepare
