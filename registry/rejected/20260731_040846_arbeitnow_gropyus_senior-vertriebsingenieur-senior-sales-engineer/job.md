@@ -76,4 +76,4 @@ Klingt das spannend für dich? Dann bewirb dich jetzt und lerne innerhalb unsere
 We can't wait to get to know you.
 For more information, visit our [website](https://gropyus.com/), and if you have any questions, please reach out to us via email.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

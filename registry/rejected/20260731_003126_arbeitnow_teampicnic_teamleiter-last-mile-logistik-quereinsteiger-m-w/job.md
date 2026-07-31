@@ -68,4 +68,4 @@ Dann bist du bei Picnic genau richtig! Denn wir suchen nach einer (Junior) Teaml
 
 ## **Bereit für die Herausforderung? Dann bewirb dich, werde Teil des Picnic Teams und hilf uns dabei, zum besten Milchmann in Deutschland zu werden!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,32 @@
+schema_version: 2
+id: b6f7c1d1-df7c-4dfc-b67b-79eaa291e8c6
+title: Krankenpfleger als Teamleiter für Haushaltshilfen (m/w/d) – Alternative zur
+  Pflege
+company: Agentur für Haushaltshilfe GmbH
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Entry, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-krankenpfleger-als-teamleiter-fur-haushaltshilfen-alternative-zur-pflege-eisenach-405766
+  url: https://www.arbeitnow.com/jobs/companies/agentur-fur-haushaltshilfe-gmbh/remote-krankenpfleger-als-teamleiter-fur-haushaltshilfen-alternative-zur-pflege-eisenach-405766
+  metadata:
+    tags:
+    - Teamleiter
+    - Remote
+    job_types:
+    - Entry
+    - fulltime permanent
+published_at: '2026-07-31T05:30:35Z'
+discovered_at: '2026-07-31T07:00:21Z'
+updated_at: '2026-07-31T07:00:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T07:00:21Z'
+analysis_priority: 0
+fingerprint: sha256:d5c67494fd2b43a9504ca06cf6eb04815c90518de7195ebd89776853d07dd12b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

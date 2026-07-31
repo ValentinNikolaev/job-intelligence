@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: schulerpraktikant-detmold-239319
+source_url: https://www.arbeitnow.com/jobs/companies/wortmann-kg-internationale-schuhproduktionen/schulerpraktikant-detmold-239319
+title: Schülerpraktikant (m/w/d)
+company: Wortmann KG Internationale Schuhproduktionen
+location: Detmold, Nordrhein-Westfalen, Deutschland
+published_at: '2026-07-31T05:30:51Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T07:00:06Z'
+rejected_at: '2026-07-31T07:00:06Z'

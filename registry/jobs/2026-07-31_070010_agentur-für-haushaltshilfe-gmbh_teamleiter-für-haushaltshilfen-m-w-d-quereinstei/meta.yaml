@@ -1,0 +1,31 @@
+schema_version: 2
+id: c5d505ed-d86a-470e-afcf-3ae0f1584373
+title: Teamleiter für Haushaltshilfen (m/w/d) – Quereinsteiger willkommen!
+company: Agentur für Haushaltshilfe GmbH
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Entry, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-teamleiter-fur-haushaltshilfen-quereinsteiger-willkommen-bayern-119600
+  url: https://www.arbeitnow.com/jobs/companies/agentur-fur-haushaltshilfe-gmbh/remote-teamleiter-fur-haushaltshilfen-quereinsteiger-willkommen-bayern-119600
+  metadata:
+    tags:
+    - Teamleiter
+    - Remote
+    job_types:
+    - Entry
+    - fulltime permanent
+published_at: '2026-07-31T05:30:35Z'
+discovered_at: '2026-07-31T07:00:10Z'
+updated_at: '2026-07-31T07:00:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T07:00:10Z'
+analysis_priority: 0
+fingerprint: sha256:119dabece3528138e704df23209422ddf581c8543498f39b80f9e81fc710ad18
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

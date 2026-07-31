@@ -1,0 +1,30 @@
+schema_version: 2
+id: 59dae52d-f2c6-4453-ab68-1eb63ae6af28
+title: Machine Learning Consultant (m/w/d)
+company: Machine Learning Reply
+company_url: null
+location: Munich, Bayern, Germany
+remote: false
+employment_type: Entry, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: machine-learning-consultant-munich-285689
+  url: https://www.arbeitnow.com/jobs/companies/machine-learning-reply/machine-learning-consultant-munich-285689
+  metadata:
+    tags:
+    - Data Frameworks
+    job_types:
+    - Entry
+    - fulltime permanent
+published_at: '2026-07-31T05:50:55Z'
+discovered_at: '2026-07-31T07:00:01Z'
+updated_at: '2026-07-31T07:00:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T07:00:01Z'
+analysis_priority: 0
+fingerprint: sha256:476780969b3b71ff7a1ca42984552db3849a50e67e62ab7cd818e3105c4d676f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

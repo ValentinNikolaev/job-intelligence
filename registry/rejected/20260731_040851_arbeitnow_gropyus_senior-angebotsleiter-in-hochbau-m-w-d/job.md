@@ -70,4 +70,4 @@ Als Senior Angebotsleiter*in Hochbau (m/w/d) bist du das **Bindeglied zwischen K
 We can't wait to get to know you.
 For more information, visit our [website](https://gropyus.com/), and if you have any questions, please reach out to us via email.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

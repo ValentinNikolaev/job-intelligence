@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: initiativbewerbung-qualitatsmanagement-qualitatssicherung-raum-hamburg-411809
+source_url: https://www.arbeitnow.com/jobs/companies/polytalent-gmbh/initiativbewerbung-qualitatsmanagement-qualitatssicherung-raum-hamburg-411809
+title: Initiativbewerbung Qualitätsmanagement & Qualitätssicherung (m/w/d) | Raum
+  Hamburg
+company: PolyTALENT GmbH
+location: Hamburg, Hamburg, Deutschland
+published_at: '2026-07-31T05:51:47Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T06:59:43Z'
+rejected_at: '2026-07-31T06:59:43Z'

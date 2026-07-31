@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: initiativbewerbung-qualitatsmanagement-qualitatssicherung-raum-bremen-26390
+source_url: https://www.arbeitnow.com/jobs/companies/polytalent-gmbh/initiativbewerbung-qualitatsmanagement-qualitatssicherung-raum-bremen-26390
+title: Initiativbewerbung Qualitätsmanagement & Qualitätssicherung (m/w/d) | Raum
+  Bremen
+company: PolyTALENT GmbH
+location: Bremen, Bremen, Deutschland
+published_at: '2026-07-31T05:51:47Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T06:59:56Z'
+rejected_at: '2026-07-31T06:59:56Z'

@@ -49,4 +49,4 @@ OMR setzt sich für Chancengleichheit, Vielfalt und Integration am Arbeitsplatz 
 
 **Come and be as you are.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

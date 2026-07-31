@@ -84,4 +84,4 @@ Our commitment to inclusion also extends to how we recognize and reward our peop
 
 ** #LI-HYBRID**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

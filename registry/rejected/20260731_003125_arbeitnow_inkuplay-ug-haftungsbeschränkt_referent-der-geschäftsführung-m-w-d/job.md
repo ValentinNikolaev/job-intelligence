@@ -81,4 +81,4 @@ Unterstützung der Geschäftsführung im operativen und strategischen Tagesgesch
 
 - Perspektive auf eine langfristige Führungs- oder Managementrolle
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: initiativbewerbung-qualitatsmanagement-qualitatssicherung-raum-nurnberg-83561
+source_url: https://www.arbeitnow.com/jobs/companies/polytalent-gmbh/initiativbewerbung-qualitatsmanagement-qualitatssicherung-raum-nurnberg-83561
+title: Initiativbewerbung Qualitätsmanagement & Qualitätssicherung (m/w/d) | Raum
+  Nürnberg
+company: PolyTALENT GmbH
+location: Nürnberg, Bayern, Deutschland
+published_at: '2026-07-31T05:51:47Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T06:59:42Z'
+rejected_at: '2026-07-31T06:59:42Z'

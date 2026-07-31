@@ -1,0 +1,32 @@
+schema_version: 2
+id: 5859fe49-36fe-4d66-a7b4-d3e73c7cd692
+title: Pflegefachkraft als Teamleiter für Haushaltshilfen (m/w/d) – Alternative zur
+  Pflege
+company: Agentur für Haushaltshilfe GmbH
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Entry, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-pflegefachkraft-als-teamleiter-fur-haushaltshilfen-alternative-zur-pflege-bremen-182872
+  url: https://www.arbeitnow.com/jobs/companies/agentur-fur-haushaltshilfe-gmbh/remote-pflegefachkraft-als-teamleiter-fur-haushaltshilfen-alternative-zur-pflege-bremen-182872
+  metadata:
+    tags:
+    - Teamleiter
+    - Remote
+    job_types:
+    - Entry
+    - fulltime permanent
+published_at: '2026-07-31T05:30:35Z'
+discovered_at: '2026-07-31T07:00:16Z'
+updated_at: '2026-07-31T07:00:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T07:00:16Z'
+analysis_priority: 0
+fingerprint: sha256:6b4d82058ccaf2386466ed9f87a26e76b08cd88e0f53adeab0dded2634e81d17
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

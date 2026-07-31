@@ -87,4 +87,4 @@ Above all, we are looking for individuals who will **make HelloFresh better.** W
 
 Are you the missing ingredient? If this sounds like a tasty opportunity, we’d be excited to hear from you. We aim to review your profile and respond within 5 business days.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

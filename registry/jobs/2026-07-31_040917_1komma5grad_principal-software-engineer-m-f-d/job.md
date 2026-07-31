@@ -71,4 +71,4 @@ We are an ambitious and dynamic company with a talented team. We require our eng
 - Individualised opportunities for professional development
 - Reporting directly to the CTO
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
