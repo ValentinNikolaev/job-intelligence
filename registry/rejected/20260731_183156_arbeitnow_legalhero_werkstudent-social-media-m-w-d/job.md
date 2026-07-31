@@ -69,4 +69,4 @@ Du studierst, kennst Social Media aus der Praxis und willst mehr machen als Post
 Du hast noch Fragen?
 Unsere HR Managerin Nadine ist unter oder telefonisch unter 030 22957522 erreichbar.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

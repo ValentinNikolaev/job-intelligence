@@ -1,0 +1,30 @@
+schema_version: 2
+id: aa0e2b18-e225-4d47-a10d-d9c72a9b1b99
+title: Senior Accountant, Germany (m/f/d)
+company: Chaos
+company_url: null
+location: Karlsruhe, Baden-Württemberg, Germany
+remote: false
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: senior-accountant-germany-karlsruhe-178273
+  url: https://www.arbeitnow.com/jobs/companies/chaos/senior-accountant-germany-karlsruhe-178273
+  metadata:
+    tags:
+    - Finance and Operations
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-07-31T20:30:24Z'
+discovered_at: '2026-07-31T22:03:50Z'
+updated_at: '2026-07-31T22:03:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T22:03:50Z'
+analysis_priority: 0
+fingerprint: sha256:7a2570946440895041c8eb2b5d0ba3f8de5878005ab32638904a0fb5d9df00f0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

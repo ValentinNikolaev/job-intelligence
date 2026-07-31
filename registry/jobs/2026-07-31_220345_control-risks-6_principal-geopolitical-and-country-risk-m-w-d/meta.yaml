@@ -1,0 +1,29 @@
+schema_version: 2
+id: 613a54f5-9135-4845-8796-f892e8be00f7
+title: Principal, Geopolitical and Country Risk (m/w/d)
+company: Control Risks 6
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: Full time
+sources:
+- source: arbeitnow
+  source_job_id: principal-geopolitical-and-country-risk-berlin-420343
+  url: https://www.arbeitnow.com/jobs/companies/control-risks-6/principal-geopolitical-and-country-risk-berlin-420343
+  metadata:
+    tags:
+    - Intelligence & Analysis
+    job_types:
+    - Full time
+published_at: '2026-07-31T20:40:05Z'
+discovered_at: '2026-07-31T22:03:45Z'
+updated_at: '2026-07-31T22:03:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T22:03:45Z'
+analysis_priority: 0
+fingerprint: sha256:f6ff2360a1f209ae13a57739905a638d63b79fc31d76c7a9014bf6b5d98e5b17
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

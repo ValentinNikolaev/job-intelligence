@@ -53,4 +53,4 @@ Wir sind offen, was das Arbeitszeitmodell angeht. Ob Werkstudium, Teilzeit oder 
 
 Du erfüllst nicht alle Anforderungen, bist aber überzeugt, dass du gut zu uns passt? Dann bewirb dich trotzdem gerne.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,17 @@
+score: 4
+recommendation: not_match
+summary: 'SAP Technical Architect, SCM (EWM, MM, Distribution & TM) (m/f/d) at Amer
+  Sports: fit assessed from the supplied candidate profile and vacancy evidence.'
+strengths:
+- Relevant backend, architecture, delivery, or leadership evidence where applicable.
+gaps:
+- Several role-specific requirements are not evidenced in the candidate profile.
+concerns:
+- Exact scope, stack, or location compatibility should be verified.
+hard_rejection: true
+hard_rejection_reason: Mandatory role, domain, or technology conflict is decisive.
+analyzed_at: '2026-07-31T22:05:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9a113e01c816ef9bb63de6064b4f6e13cf88fb2d9497b84a1adc067a382fe4ff
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

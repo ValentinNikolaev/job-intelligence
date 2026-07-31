@@ -77,4 +77,4 @@ Dann freuen wir uns auf Ihre Bewerbung oder eine erste vertrauliche Kontaktaufna
 
 **Selbstverständlich behandeln wir Ihre Bewerbung und sämtliche Gespräche im Rahmen dieses exklusiven Suchmandats absolut vertraulich. Weitere Informationen zu unserem Mandanten erhalten Sie im persönlichen Austausch.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

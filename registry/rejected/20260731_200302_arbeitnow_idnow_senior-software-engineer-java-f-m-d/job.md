@@ -77,4 +77,4 @@ As a **Senior Software Engineer – Java**, you will play a key role in designin
 
 *IDnow applies the principles of non-discrimination and equality: We strive to establish, maintain, and promote an open and inclusive recruitment process and working environment by respecting the principles of equal opportunities. Including but not limited to: sex, race or ethnic origin, religion or convictions, gender identity, citizenship, marital status, disability, age, or sexual orientation.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

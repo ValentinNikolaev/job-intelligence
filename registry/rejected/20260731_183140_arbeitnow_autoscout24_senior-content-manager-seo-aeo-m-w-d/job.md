@@ -51,4 +51,4 @@ AutoScout24 bietet Benefits, die selbstständiges und effektives Arbeiten unters
 
 Mit mehr als 50 Nationalitäten fördern wir ein vielfältiges und inklusives Arbeitsumfeld, in dem sich alle willkommen und wertgeschätzt fühlen. Dabei unterstützen wir dich mit den passenden Tools, Trainings und Entwicklungsmöglichkeiten.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

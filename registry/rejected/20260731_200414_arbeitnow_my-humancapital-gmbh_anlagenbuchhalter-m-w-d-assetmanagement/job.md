@@ -47,4 +47,4 @@ Im Auftrag unseres Partnerunternehmens in Münchner suchen wir Sie zum nächstm�
 
 Wir freuen uns auf Ihre Bewerbung - Senden Sie uns einfach Ihre Unterlagen zu – auf ein Anschreiben können Sie gerne verzichten. Für Rückfragen steht Ihnen **Simon Schneider** gerne unter **089 954 287 111** zur Verfügung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

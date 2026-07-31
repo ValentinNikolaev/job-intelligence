@@ -1,0 +1,29 @@
+schema_version: 2
+id: 988bca18-dc2d-4015-b783-8335acf22a26
+title: Senior Infrastructure Architect / Technical Lead (m/w/d)
+company: proLogistik Group
+company_url: null
+location: Dortmund
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-infrastructure-architect-technical-lead-dortmund-19404
+  url: https://www.arbeitnow.com/jobs/companies/prologistik-group/senior-infrastructure-architect-technical-lead-dortmund-19404
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-31T14:09:29Z'
+discovered_at: '2026-07-31T22:06:52Z'
+updated_at: '2026-07-31T22:06:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T22:06:52Z'
+analysis_priority: 0
+fingerprint: sha256:8d190c0a9585b0a3346c1a0b4fa9a0111a66140f9ca8415244171be17cf3acbf
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

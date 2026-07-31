@@ -83,4 +83,4 @@ Jens Hofer (Bereichsleiter Gesamtbanksteuerung), 0491 9272 2300
 
 Lynn Frühling (Recruiting), 0491 9272 1915
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

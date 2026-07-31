@@ -1,22 +1,17 @@
-score: 81
-recommendation: strong_match
-summary: Strong staff-level engineering alignment through architecture, technical
-  leadership, mentoring, and operational excellence; full-stack and agentic requirements
-  are partial.
+score: 48
+recommendation: possible_match
+summary: 'Staff Software Engineer, Supply Chain Management Technology (all genders)
+  at hellofresh: fit assessed from the supplied candidate profile and vacancy evidence.'
 strengths:
-- 15+ years engineering experience
-- Technical leadership and mentoring
-- Go, architecture, CI/CD, reliability
+- Relevant backend, architecture, delivery, or leadership evidence where applicable.
 gaps:
-- Full-stack breadth
-- Named coding-agent production experience
-- Data modeling depth
+- Several role-specific requirements are not evidenced in the candidate profile.
 concerns:
-- Saarbrücken hybrid location and stack breadth
+- Exact scope, stack, or location compatibility should be verified.
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-07-31T17:24:30Z'
+hard_rejection_reason: null
+analyzed_at: '2026-07-31T22:05:24Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:c738eb3ea8eab324a15827f9cccc95e36300baae7817e80745806bcb166b2db5
-prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+job_version: sha256:b6716a5c186a023a1c3d3cea2a60124b7c0257820e74fcb5cd1f268c1730aec8
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

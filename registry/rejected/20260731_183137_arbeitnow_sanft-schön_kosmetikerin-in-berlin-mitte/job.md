@@ -51,4 +51,4 @@ Bist du bereit für eine Veränderung und suchst nach einem modernen, entspannte
 
 Komm als Kosmetikerin zu Sanft & Schön in Berlin Mitte! Genieße ein modernes Arbeitsumfeld, arbeite mit einem tollen Team und modernen Techniken. Bewirb dich jetzt und werde Teil unseres Teams!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
