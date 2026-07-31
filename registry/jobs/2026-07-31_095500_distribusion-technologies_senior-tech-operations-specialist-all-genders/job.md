@@ -110,4 +110,4 @@ Project management: Jira**
 Your Talent Partner (TP) and point of contact is **Anh Do,** and the Hiring Manager (HM) is **Ygor Alvarez**.
 For any queries, please reach out to your Talent Partner at (
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,6 +1,6 @@
 # Senior It-Administrator / Senior System Engineer (W/M/D) | Köln
 
-Posted: 2026-07-31T08:00:48Z
+Posted: 2026-07-31T12:29:02Z
 
 ## Rejection
 
@@ -11,9 +11,7 @@ Posted: 2026-07-31T08:00:48Z
 
 Schwerpunkt Linux, Proxmox, Netzwerk & hybride Infrastruktur
 
-Vollzeit | Köln | Hybrid | Unbefristet
-
-Flexible Arbeitszeiten, moderne Infrastruktur, hybrides Arbeiten und ein Team, das Verantwortung wirklich lebt – wir suchen keine Ticket-Maschine, sondern eine Persönlichkeit.
+Flexible Arbeitszeiten, moderne Infrastruktur, hybrides Arbeiten und ein Team, das Verantwortung wirklich lebt – wir suchen eine Persönlichkeit, die die fachliche Verantwortung für unsere IT-Administration übernimmt, unsere Infrastruktur aktiv weiterentwickelt und die technologische Zukunft von IRIS mitgestaltet. Dabei arbeitest Du nicht nur im laufenden Betrieb, sondern treibst zentrale Zukunftsprojekte wie den Aufbau einer dezentralen Infrastruktur und einer hochverfügbaren Systemlandschaft maßgeblich voran.
 
 Köln
 
@@ -23,105 +21,135 @@ Hybrides Arbeiten
 
 Unbefristete Festanstellung
 
-**IT-Infrastruktur ist genau Dein Spielfeld?**
+## **Dein Tech Stack**
 
-Du denkst in Systemen, verstehst technische Zusammenhänge und willst nicht nur betreiben, sondern aktiv gestalten? Dann bist Du bei uns genau richtig.
+**Linux I Proxmox I pfSense I Bash I Python I Ansible I Hybrid Infrastructure I Monitoring**
 
-Wir sind IRIS, eines der international führenden Unternehmen für Medien-, Markt- und Sponsoringforschung im Sport. Mit unseren Analysen unterstützen wir internationale Sportverbände, Vereine, Ligen, Sponsoren und Unternehmen dabei, den Erfolg ihrer Medien- und Sponsoringaktivitäten messbar zu machen.
+## **IT-Infrastruktur ist genau Dein Spielfeld?**
 
-Unsere IT ist das Rückgrat unseres Geschäfts: hybrid, vernetzt und kontinuierlich in Bewegung. Damit im Hintergrund alles stabil, sicher und skalierbar läuft, suchen wir zum nächstmöglichen Zeitpunkt eine erfahrene Persönlichkeit für unsere IT-Infrastruktur.
+Du möchtest nicht nur Systeme administrieren, sondern die technische Zukunft eines Unternehmens aktiv mitgestalten?
 
-**Das erwartet Dich**
+Dann bist Du bei IRIS genau richtig.
+
+Wir sind eines der international führenden Unternehmen für Medien-, Markt- und Sponsoringforschung im Sport. Unsere Analysen unterstützen internationale Sportverbände, Vereine, Ligen, Sponsoren und Unternehmen dabei, den Erfolg ihrer Medien- und Sponsoringaktivitäten messbar zu machen.
+
+Damit unsere Systeme auch künftig stabil, sicher und hochverfügbar arbeiten, suchen wir einen erfahrenen Senior IT-Administrator / System Engineer, der die fachliche Verantwortung für unsere IT-Administration übernimmt und unsere Infrastruktur aktiv weiterentwickelt.
+
+Bei uns erwarten Dich kurze Entscheidungswege, viel Gestaltungsspielraum und die Möglichkeit, technische Ideen schnell in die Praxis umzusetzen.
+
+## **Deine Aufgaben**
 
 Als Teil unseres IT-Teams übernimmst Du eine zentrale Rolle im Betrieb und in der Weiterentwicklung unserer Infrastruktur. Du denkst nicht in Tickets, sondern in Lösungen, übernimmst Verantwortung und treibst Themen eigenständig voran.
 
+Etwa 60% Deiner Zeit arbeitest Du an Projekten und Modernisierungen, 40% entfallen auf Betrieb und Optimierung unserer bestehenden Systeme.
+
 **Zu Deinen Aufgaben gehören insbesondere:**
 
-- Betreuung, Optimierung und Weiterentwicklung unserer Linux-basierten Serverlandschaft
+- Fachliche Verantwortung für unsere IT-Administration
 
-- Betrieb und Ausbau unserer Virtualisierungsumgebung auf Basis von Proxmox
+- Betreuung, Optimierung und Weiterentwicklung unserer Linux-Infrastruktur
 
-- Administration und Weiterentwicklung hybrider Infrastrukturen (On-Premise und Cloud)
+- Betrieb und Ausbau unserer Virtualisierungsplattform auf Basis von Proxmox
 
-- Konfiguration und Betrieb unserer Firewall-Infrastruktur, insbesondere pfSense
+- Administration unserer Netzwerk- und Firewall-Infrastruktur (pfSense)
 
-- Aufbau und Pflege von VPN-Verbindungen zwischen Standorten, Rechenzentren und Cloud-Systemen
+- Planung und Weiterentwicklung hybrider Infrastrukturen (On-Premise & Cloud)
 
-- Monitoring von Servern, Netzwerken und Services sowie proaktive Fehleranalyse
+- Aufbau und Pflege sicherer Standort- und Cloud-VPNs
 
-- Analyse und Behebung von Störungen im laufenden Betrieb
+- Monitoring unserer Infrastruktur sowie proaktive Fehleranalyse
 
-- Weiterentwicklung von Automatisierungs-, Standardisierungs- und Dokumentationsprozessen
+- Analyse und Behebung technischer Störungen
+
+- Weiterentwicklung von Automatisierungs- und Standardisierungsprozessen
 
 - Technische Bewertung neuer Anforderungen und Ableitung nachhaltiger Infrastrukturentscheidungen
 
-**Das bringst Du mit**
+- Dokumentation und kontinuierliche Verbesserung unserer Systemlandschaft
+
+## **Darauf kannst Du Dich freuen**
+
+In den kommenden Monaten gestaltest Du unter anderem folgende Projekte aktiv mit:
+
+- Aufbau einer dezentralen IT-Infrastruktur
+
+- Einführung einer hochverfügbaren Infrastruktur (HA-Cluster)
+
+- Weiterentwicklung unserer Linux- und Proxmox-Plattform
+
+- Ausbau der Netzwerk- und Sicherheitsarchitektur
+
+- Weitere Automatisierung unserer Infrastruktur
+
+Du arbeitest dabei nicht nur an einzelnen Komponenten, sondern prägst die technische Ausrichtung unseres Unternehmens langfristig mit.
+
+## **Deine Qualifikation**
+
+Das solltest Du mitbringen
 
 - Mehrjährige Berufserfahrung als IT-Administrator, System Engineer oder in einer vergleichbaren Rolle
 
-- Sehr gute Kenntnisse in der Linux-Administration
-
-- Sehr gute Deutsch- und Englischkenntnisse, mindestens auf C1-Niveau; idealerweise Deutsch als Muttersprache
+- Mehrjährige Berufserfahrung in der Linux-Administration
 
 - Erfahrung mit Virtualisierung, idealerweise Proxmox
 
 - Fundiertes Verständnis von Netzwerken (Routing, VLANs, DNS, DHCP, VPN, Firewalling)
 
-- Erfahrung mit pfSense oder vergleichbaren Firewall-Lösungen
+- Grundkenntnisse in Bash, Python oder Ansible
 
-- Praxis im Betrieb hybrider Infrastrukturen (On-Premise und Cloud)
+- Erfahrung mit Monitoring-Lösungen (z. B. Prometheus, Grafana, Checkmk oder Zabbix)
 
-- Erfahrung mit Monitoring-Tools wie Prometheus, Grafana, Zabbix, Checkmk oder Icinga
-
-- Grundkenntnisse in Automatisierung und Scripting (z. B. Bash, Python, Ansible)
-
-- Eine strukturierte, eigenverantwortliche und lösungsorientierte Arbeitsweise
+- Sehr gute Deutsch- und Englischkenntnisse, mindestens auf C1-Niveau; idealerweise Deutsch als Muttersprache
 
 - Sicheres Auftreten und die Fähigkeit, technische Entscheidungen verständlich zu vertreten
 
-**Von Vorteil:**
+Darüber freuen wir uns zusätzlich
 
-- Erfahrung mit Backup- und Disaster-Recovery-Konzepten
+- Erfahrung mit pfSense oder vergleichbaren Firewall-Lösungen
 
-- Kenntnisse in Hochverfügbarkeit, Storage oder Cluster-Umgebungen
+- Erfahrung mit hybriden Infrastrukturen
 
-- Erfahrung mit Container-Technologien wie LXC oder Docker
+- Docker oder LXC
+
+- Backup-, Storage- oder Hochverfügbarkeitslösungen
 
 - Erfahrung mit Cloud-Plattformen (z. B. AWS, Azure, Hetzner)
 
-- Kenntnisse in IT-Security, Hardening und Zugriffskonzepten
+- Kenntnisse im Bereich IT-Security und Hardening
 
 - Erfahrung mit Dokumentation und strukturiertem Change-Management
 
-**Darauf kannst Du Dich freuen**
+## **Das bieten wir Dir**
 
-Wir möchten, dass Du nicht nur Systeme stabil hältst, sondern Dich auch selbst weiterentwickeln kannst.
+- Fachliche Verantwortung für unsere IT-Administration
 
-Deshalb bieten wir Dir:
+- Hoher Gestaltungsspielraum bei technischen Entscheidungen
 
-- Flexible Arbeitszeiten und hybrides Arbeiten
+- Direkter Einfluss auf unsere Infrastrukturstrategie
 
-- Eine moderne, vielseitige IT-Infrastruktur mit Gestaltungsspielraum
+- Rund 60% Projektarbeit statt ausschließlich Betrieb
 
-- Eigenverantwortliches Arbeiten und echte technische Ownership
+- Kurze Entscheidungswege ohne Konzernstrukturen
 
-- Flache Hierarchien und schnelle Entscheidungswege
+- Flexible Arbeitszeiten
 
-- Ein Team, das pragmatisch arbeitet und sich gegenseitig unterstützt
+- Hybrides Arbeiten
 
-- Direkten Einfluss auf Architektur- und Infrastrukturentscheidungen
+- Moderne Linux-basierte Infrastruktur
 
 - Individuelle Weiterbildungs- und Entwicklungsmöglichkeiten
 
-- Regelmäßigen fachlichen Austausch und Raum für neue Ideen
+- Flache Hierarchien und ein kollegiales Team
+
+- Unbefristete Festanstellung
 
 **Deine Einarbeitung**
 
 Natürlich lassen wir Dich nicht allein.
 
-Du bekommst einen strukturierten Einstieg in unsere Systeme, Prozesse und Infrastruktur. Dein Team steht Dir eng zur Seite, sodass Du schnell Verantwortung übernehmen und Dich sicher in unserer Umgebung bewegen kannst.
+Du erhältst einen strukturierten Einstieg in unsere Systeme und Prozesse. Gemeinsam mit dem Team lernst Du unsere Infrastruktur kennen und übernimmst Schritt für Schritt Verantwortung für Deinen Bereich.
 
-**Warum IRIS?**
+## **Warum IRIS?**
 
 Wir glauben, dass gute IT dort entsteht, wo Menschen Verantwortung übernehmen und gemeinsam Lösungen entwickeln.
 
@@ -151,4 +179,4 @@ Wir freuen uns auf Deine Bewerbung in unserem Jobportal:
 
 Deine Ansprechpartnerin: **Isabella Gimber**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

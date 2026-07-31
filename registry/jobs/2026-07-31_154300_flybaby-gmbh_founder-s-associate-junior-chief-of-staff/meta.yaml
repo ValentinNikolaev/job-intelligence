@@ -1,0 +1,28 @@
+schema_version: 2
+id: 8ea8daa5-2473-4990-a481-d0495b65bbe8
+title: “Founder’s Associate / Junior Chief of Staff”
+company: Flybaby GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: founders-associate-junior-chief-of-staff-berlin-465519
+  url: https://www.arbeitnow.com/jobs/companies/flybaby-gmbh/founders-associate-junior-chief-of-staff-berlin-465519
+  metadata:
+    tags:
+    - Management
+    - Team Leader
+published_at: '2026-07-31T12:30:27Z'
+discovered_at: '2026-07-31T15:43:00Z'
+updated_at: '2026-07-31T15:43:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T15:43:00Z'
+analysis_priority: 0
+fingerprint: sha256:46d68733e6753c29076162968a511106d0e67380d4614022cb52dde9158e7662
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

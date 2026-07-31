@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-working-student-software-engineering-munchen-84616
+source_url: https://www.arbeitnow.com/jobs/companies/limehome/remote-working-student-software-engineering-munchen-84616
+title: Working Student Software Engineering (d/f/m)
+company: limehome
+location: Remote job
+published_at: '2026-07-31T11:30:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T15:43:36Z'
+rejected_at: '2026-07-31T15:43:36Z'

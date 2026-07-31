@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: consultant-mit-schwerpunkt-finance-40000-eur-60000-eur-jahresgehalt-zwickau-96428
+source_url: https://www.arbeitnow.com/jobs/companies/ines-scholz-steuerberatungsgesellschaft/consultant-mit-schwerpunkt-finance-40000-eur-60000-eur-jahresgehalt-zwickau-96428
+title: Consultant mit Schwerpunkt Finance (m/w/d) | 40.000 € - 60.000 € Jahresgehalt
+company: Ines Scholz Steuerberatungsgesellschaft
+location: Zwickau
+published_at: '2026-07-31T11:30:31Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T15:43:28Z'
+rejected_at: '2026-07-31T15:43:28Z'

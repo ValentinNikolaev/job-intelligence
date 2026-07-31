@@ -115,4 +115,4 @@ E-Mail: Akquise im Zusammenhang mit dieser Stellenausschreibung ist nicht erwün
 
 Bei Plukon beschäftigt zu sein, bedeutet, an der verantwortungsvollen Ernährung von 265 Mio. Verbraucherinnen und Verbrauchern in Europa mitzuarbeiten. Unser Sortiment reicht von Mahlzeitkomponenten bis hin zu Fertiggerichten und Salaten. Die Zutaten hierfür sind Geflügelfleischprodukte (unsere Basis), aber immer öfter auch Gemüse und alternative Proteine. So haben wir Angebote für Geflügelfans, genauso wie für Flexitarierinnen und Flexitarier sowie für Vegetarierinnen und Vegetarier. Unsere Produkte findet Ihr in ganz Deutschland im Kühlregal von Supermärkten und Schnellrestaurants.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,28 @@
+schema_version: 2
+id: 2e4cc5bb-d329-4512-bbb9-36f83a6b170e
+title: Senior Data Modeler (Data Vault)
+company: Visium
+company_url: null
+location: Munich, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-modeler-data-vault-munich-187539
+  url: https://www.arbeitnow.com/jobs/companies/visium/senior-data-modeler-data-vault-munich-187539
+  metadata:
+    tags:
+    - Engineering
+    - Information Technology and Services
+published_at: '2026-07-31T11:40:09Z'
+discovered_at: '2026-07-31T15:43:22Z'
+updated_at: '2026-07-31T15:43:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T15:43:22Z'
+analysis_priority: 0
+fingerprint: sha256:477f4cb28f51d71de3238cb699461ab93d406e948fdad1c05ede9a121d6cb0f8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

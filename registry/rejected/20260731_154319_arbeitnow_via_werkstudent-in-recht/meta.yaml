@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-recht-berlin-263452
+source_url: https://www.arbeitnow.com/jobs/companies/via/werkstudentin-recht-berlin-263452
+title: Werkstudent:in, Recht
+company: Via
+location: Berlin
+published_at: '2026-07-31T11:56:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T15:43:19Z'
+rejected_at: '2026-07-31T15:43:19Z'

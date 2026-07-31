@@ -4,7 +4,7 @@ Posted: 2026-07-31T10:57:03.584+00:00
 
 Are you ready to unlock intelligence?
 
-If you don’t think you meet all of the criteria below but are still interested in the job, please apply. Nobody checks every box - we’re looking for candidates that are particularly strong in a few areas, and have some interest and capabilities in others.
+If you don’t think you meet all of the criteria below but are still interested in the job, please apply.  Nobody checks every box - we’re looking for candidates that are particularly strong in a few areas, and have some interest and capabilities in others.
 
 
 
@@ -49,6 +49,6 @@ WHAT YOU’LL BRING
 
 
 
-About Kong:
+About Kong: 
 
 Kong Inc., a leading developer of API and AI connectivity technologies, is building the infrastructure that powers the agentic era. Trusted by the Fortune 500 and startups alike, Kong's unified API and AI platform, Kong Konnect, enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI models. For more information, visit www.konghq.com http://www.konghq.com.

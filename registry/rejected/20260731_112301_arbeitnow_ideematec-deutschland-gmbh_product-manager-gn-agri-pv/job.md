@@ -87,4 +87,4 @@ Was wir im ersten Schritt von Ihnen benötigen:
 
 - Angaben zu Ihrer Gehaltsvorstellung
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

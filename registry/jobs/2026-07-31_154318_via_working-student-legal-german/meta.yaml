@@ -1,0 +1,27 @@
+schema_version: 2
+id: fa4feb3d-5360-4ff6-a082-189252f89da2
+title: Working Student, Legal (German)
+company: Via
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: working-student-legal-german-berlin-10884
+  url: https://www.arbeitnow.com/jobs/companies/via/working-student-legal-german-berlin-10884
+  metadata:
+    tags:
+    - Legal
+published_at: '2026-07-31T11:56:20Z'
+discovered_at: '2026-07-31T15:43:18Z'
+updated_at: '2026-07-31T15:43:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T15:43:18Z'
+analysis_priority: 0
+fingerprint: sha256:6b5d034385b722275e632783e4c87ca54971e2debb8dbf908b70e6e27897e451
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

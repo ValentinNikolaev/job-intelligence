@@ -9,7 +9,7 @@ Posted: 2026-06-18T12:03:02.162+00:00
 
 Are you ready to unlock intelligence?
 
-If you don’t think you meet all of the criteria below but are still interested in the job, please apply. Nobody checks every box - we’re looking for candidates that are particularly strong in a few areas, and have some interest and capabilities in others.
+If you don’t think you meet all of the criteria below but are still interested in the job, please apply.  Nobody checks every box - we’re looking for candidates that are particularly strong in a few areas, and have some interest and capabilities in others.
 
 
 
@@ -57,7 +57,7 @@ What You’ll Bring:
    
    
 
-Bonus Points:
+ Bonus Points:
 
  - Contributions to open-source projects, particularly in the cloud-native ecosystem (e.g., Kubernetes, Envoy).
 
@@ -73,6 +73,6 @@ Bonus Points:
 
 
 
-About Kong:
+About Kong: 
 
 Kong Inc., a leading developer of API and AI connectivity technologies, is building the infrastructure that powers the agentic era. Trusted by the Fortune 500 and startups alike, Kong's unified API and AI platform, Kong Konnect, enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI models. For more information, visit www.konghq.com http://www.konghq.com.

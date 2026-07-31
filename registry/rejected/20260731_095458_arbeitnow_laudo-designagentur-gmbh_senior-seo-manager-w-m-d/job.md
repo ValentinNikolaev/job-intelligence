@@ -65,4 +65,4 @@ Als SEO Manager:in bei LAUDO bist du für die Reichweitenstrategie unserer Agent
 
 Wir möchten insbesondere BIPoC, LGBTQ+, non-binäre Menschen und Eltern motivieren, sich zu bewerben. Everyone is welcome!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,28 @@
+schema_version: 2
+id: c295493c-f1ba-41c2-9e8b-b1dc3eef9d76
+title: SAP EWM Inhouse Berater (m/w/d)
+company: SAPPLIER GmbH
+company_url: null
+location: Plattling
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sap-ewm-inhouse-berater-plattling-258772
+  url: https://www.arbeitnow.com/jobs/companies/sapplier-gmbh/sap-ewm-inhouse-berater-plattling-258772
+  metadata:
+    tags:
+    - SAP/ERP Consulting
+    - Development
+published_at: '2026-07-31T12:00:41Z'
+discovered_at: '2026-07-31T15:43:11Z'
+updated_at: '2026-07-31T15:43:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T15:43:11Z'
+analysis_priority: 0
+fingerprint: sha256:d2c3d7caa0d83b0918e13b09b0358626044009929ba2028c886d2bb381b30943
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -4,8 +4,8 @@ Posted: 2026-07-24T14:14:07.1870000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-24T14:14:07.1870000 is older than 7 days
 
 ...**Senior **IT Systems Analyst 
 

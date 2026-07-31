@@ -1,0 +1,30 @@
+schema_version: 2
+id: db084c10-4423-4036-8ff5-f9e27c767da3
+title: SEO, Website & Conversion Manager (all genders)
+company: fino data services GmbH
+company_url: null
+location: Kassel
+remote: true
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: seo-website-conversion-manager-all-genders-kassel-178628
+  url: https://www.arbeitnow.com/jobs/companies/fino-data-services-gmbh/seo-website-conversion-manager-all-genders-kassel-178628
+  metadata:
+    tags:
+    - Remote
+    - Online Marketing
+    job_types:
+    - professional / experienced
+published_at: '2026-07-31T11:30:31Z'
+discovered_at: '2026-07-31T15:43:30Z'
+updated_at: '2026-07-31T15:43:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T15:43:30Z'
+analysis_priority: 0
+fingerprint: sha256:10c8d26e88591bf8e820ed1ceff861dd0728a78acd5b8fa8304bc5dd213be6c6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

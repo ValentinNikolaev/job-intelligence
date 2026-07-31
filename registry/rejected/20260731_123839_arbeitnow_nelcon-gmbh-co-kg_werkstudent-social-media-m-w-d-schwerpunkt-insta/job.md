@@ -73,4 +73,4 @@ Dein Ansprechpartner ist Fabian.
 
 Bei Fragen kannst du Fabian gerne telefonisch unter 0173 / 5418405 kontaktieren.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
