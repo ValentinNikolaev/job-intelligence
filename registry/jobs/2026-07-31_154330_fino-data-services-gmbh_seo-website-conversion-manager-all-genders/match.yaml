@@ -1,0 +1,20 @@
+score: 12
+recommendation: not_match
+summary: The role is centered on SEO, website conversion, and lead generation rather
+  than backend engineering.
+strengths:
+- Analytics and automation may transfer partially
+gaps:
+- SEO ownership
+- Conversion optimization
+- GTM/lead-generation experience
+concerns:
+- Role function mismatch
+hard_rejection: true
+hard_rejection_reason: The vacancy is a marketing and conversion role outside the
+  candidate’s evidenced engineering profile.
+analyzed_at: '2026-07-31T17:24:30Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e86a060eb7b15a625c6e5d487cc12f4254a350a798415255eb00f62adf48c554
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

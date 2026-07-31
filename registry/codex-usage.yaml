@@ -594,3 +594,13 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: Codex batch analysis run; publisher skipped all 15 unchanged records
+- run_id: 4c8244f03f53480c9f4fc9eeb4a510d2
+  recorded_at: '2026-07-31T17:25:21Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0

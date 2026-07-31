@@ -1,0 +1,20 @@
+score: 4
+recommendation: not_match
+summary: The working-student legal role does not match the candidate’s software-engineering
+  profile.
+strengths:
+- Technology-sector familiarity
+gaps:
+- Legal qualification
+- German legal training
+- Working-student eligibility
+concerns:
+- Fundamental role mismatch
+hard_rejection: true
+hard_rejection_reason: The vacancy requires legal training and a legal-student track
+  absent from the candidate evidence.
+analyzed_at: '2026-07-31T17:24:30Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c9fe4847f2f1e721d4ac62f93f0be166a62b6e58e2163893a351815300b59cd4
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

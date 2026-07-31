@@ -1,0 +1,20 @@
+score: 8
+recommendation: not_match
+summary: The role is SAP EWM consulting for logistics processes, while the candidate
+  profile is software engineering focused.
+strengths:
+- General systems integration
+gaps:
+- SAP EWM/MM
+- Logistics process consulting
+- German B2 evidence
+concerns:
+- On-site German location
+hard_rejection: true
+hard_rejection_reason: The core SAP EWM consulting requirements are not supported
+  by the candidate evidence.
+analyzed_at: '2026-07-31T17:24:30Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:ac5bcd2847c8234fa982670761bfccb043d57fbb8b987e0bbcb32d486ea274be
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
