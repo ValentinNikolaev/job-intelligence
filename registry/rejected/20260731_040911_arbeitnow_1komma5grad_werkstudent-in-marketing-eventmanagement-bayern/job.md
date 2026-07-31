@@ -76,4 +76,4 @@ Echter Teamspirit: Wir feiern Erfolge gemeinsam! Freu dich auf regelmäßige Tea
 
 Wachstum: Bei uns bewegst du dich in flachen Hierarchien mit viel Entwicklungspotenzial und bekommst echte Einblicke in ein dynamisch wachsendes Unternehmen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -112,4 +112,4 @@ Create a healthy balance alongside your work and enjoy all the benefits of the E
 
 Benefits and discounts are yours with Futurebens
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

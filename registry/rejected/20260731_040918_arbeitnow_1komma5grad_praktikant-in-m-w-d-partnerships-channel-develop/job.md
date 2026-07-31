@@ -50,4 +50,4 @@ Du arbeitest direkt mit unserem Head of Partnerships zusammen und gestaltest den
 - Moderne Arbeitsausstattung
 - EGYM Wellpass mit Zugang zu über 10.000 Sport- und Wellnesseinrichtungen sowie weiteren Gesundheitsangeboten
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

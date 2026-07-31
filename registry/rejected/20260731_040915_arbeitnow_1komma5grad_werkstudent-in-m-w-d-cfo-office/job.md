@@ -42,4 +42,4 @@ Wir bringen regionales Handwerk und skalierbare Software zusammen: Solar, Speich
 - Sei aktiv und nutze das Angebot von über 7.600 Sportpartnern mit dem **EGYM-Wellpass**
 - Profitiere von **Benefits & Rabatten** durch Futurebens
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
