@@ -81,4 +81,4 @@ We want you to grow and evolve, bring your true self to work.
 
 We are Freenow, the European taxi app with the broadest multi-mobility offering, available in 9 markets and over 180 cities. Our app gives millions of passengers the freedom to move with a wide choice of services including taxis, private hire vehicles, carsharing, car rental, e-scooters, e-bikes, e-mopeds and public transport.Headquartered in Hamburg and led by our CEO Thomas Zimmermann, we are on a mission to make urban mobility more efficient, sustainable and inclusive.Since July 2025 we have been part of Lyft, a global mobility platform connecting riders and drivers for billions of rides across North America and Europe. Together we are building a more caring and connected world, creating new opportunities for innovation, growth and impact.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

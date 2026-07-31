@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7142257897960991833'
+source_url: https://jooble.org/away/-7142257897960991833?p=1&pos=15&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=114&brelb=10&scr=2111.3855&bscr=2111.3855&aq=-5645100123543728163&elckey=-3163715820394222233
+title: Senior Backend Engineer
+company: Spruce Health
+location: United States
+published_at: '2026-07-26T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T00:36:44Z'
+rejected_at: '2026-07-31T00:36:44Z'

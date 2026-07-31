@@ -59,4 +59,4 @@ Starkes Interesse für neue Technologien im Analytics Umfeld
 
 Sehr gute Deutsch- und Englischkenntnisse
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

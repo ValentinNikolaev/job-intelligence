@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/vannevar-labs/jobs/senior-software-engineer-full-stack-security-platform
+source_url: https://himalayas.app/companies/vannevar-labs/jobs/senior-software-engineer-full-stack-security-platform
+title: Senior Software Engineer, Full-Stack - Security Platform
+company: Vannevar Labs
+location: Worldwide
+published_at: '2026-07-30T21:40:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T00:34:49Z'
+rejected_at: '2026-07-31T00:34:49Z'

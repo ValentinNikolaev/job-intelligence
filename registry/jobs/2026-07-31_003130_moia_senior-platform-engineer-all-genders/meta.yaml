@@ -1,0 +1,27 @@
+schema_version: 2
+id: 3285b18a-955f-460e-ad25-e2c6590ca7b7
+title: (Senior) Platform Engineer (all genders)
+company: moia
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-platform-engineer-all-genders-berlin-147780
+  url: https://www.arbeitnow.com/jobs/companies/moia/senior-platform-engineer-all-genders-berlin-147780
+  metadata:
+    tags:
+    - Cloud & Platform Engineering
+published_at: '2026-07-30T20:56:47Z'
+discovered_at: '2026-07-31T00:31:30Z'
+updated_at: '2026-07-31T00:31:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T00:31:30Z'
+analysis_priority: 0
+fingerprint: sha256:3e0024962d20ba11fa1bf6c9c957a267898998ca499393e1fbe80f2ae8c4b377
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

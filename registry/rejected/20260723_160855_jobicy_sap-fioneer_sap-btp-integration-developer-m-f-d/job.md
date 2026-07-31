@@ -1,11 +1,11 @@
 # SAP BTP Integration Developer (m/f/d)
 
-Posted: 2026-06-29T13:11:41Z
+Posted: 2026-07-30T19:10:06Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-29T13:11:41Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Innovation is and will always be the core of SAP Fioneer, and it is the promise of why we were spun out of SAP: agility, innovation, and delivery.
 SAP Fioneer builds on a heritage of outstanding technology and a deep understanding of corporate and consumer demands. At the heart of it all it is simple: We bring financial services to the next level with innovative software solutions and platforms. We are helping companies in the financial services industry to achieve speed, scalability, and cost-efficiency through digital business innovation, cloud technology, and solutions that cover banking and insurance processes end-to-end.

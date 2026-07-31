@@ -1,0 +1,27 @@
+schema_version: 2
+id: e55be133-69e2-4d50-a82e-390dac4f290d
+title: Senior Full-Stack PHP Developer - Alpha Online (m/w/d)
+company: caronsale
+company_url: null
+location: Hamburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-full-stack-php-developer-alpha-online-hamburg-161812
+  url: https://www.arbeitnow.com/jobs/companies/caronsale/senior-full-stack-php-developer-alpha-online-hamburg-161812
+  metadata:
+    tags:
+    - Alpha Online
+published_at: '2026-07-30T20:56:53Z'
+discovered_at: '2026-07-31T00:31:28Z'
+updated_at: '2026-07-31T00:31:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T00:31:28Z'
+analysis_priority: 0
+fingerprint: sha256:6aeb50ca68112fe275c791192a6053254ab1ba56f1e8cb78c141e42bf9ed34d9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -73,4 +73,4 @@ Bitte lies unsere [Datenschutzerklärung](https://www.wppmedia.com/pages/privacy
 
 Please read our [Privacy Notice](https://www.wppmedia.com/pages/privacy-policy#:~:text=WPP%20Media%20Privacy%20Notice%20for%20Recruitment) for more information on how we process the information you provide.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

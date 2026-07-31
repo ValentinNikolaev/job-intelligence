@@ -101,4 +101,4 @@ Firmenwagen inkl. Tankkarte/ Mobilitätspauschale, Bahncard, Jobrad
 
 Zuschüsse für Kindergarten/Kita und außerordentliche Zuwendungen je Lebenssituation und Betriebszugehörigkeit
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

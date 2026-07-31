@@ -4,8 +4,8 @@ Posted: 2026-07-23T23:55:33Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-23T23:55:33Z is older than 7 days
 
 *This role welcomes full remote or hybrid work arrangements. However,****applicants must be based in Spain or Italy and have a work permit to be considered****.*
 

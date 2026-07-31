@@ -69,4 +69,4 @@ Statt wochenlang an einer Sache zu sitzen, wechseln Deine Aufgaben im Tagestakt,
 
 - Nächste Schritte: Kennenlern-Gespräch, Probeaufgabe, Video-Call.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

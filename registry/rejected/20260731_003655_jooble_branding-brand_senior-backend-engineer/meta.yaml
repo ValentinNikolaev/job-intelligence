@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3241547437564291748'
+source_url: https://jooble.org/away/-3241547437564291748?p=1&pos=25&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&brelb=10&scr=2000.9973&bscr=2000.9973&aq=-5645100123543728163&elckey=-3163715820394222233
+title: Senior Backend Engineer
+company: Branding Brand
+location: United States
+published_at: '2026-07-30T17:46:55.1630000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T00:36:55Z'
+rejected_at: '2026-07-31T00:36:55Z'

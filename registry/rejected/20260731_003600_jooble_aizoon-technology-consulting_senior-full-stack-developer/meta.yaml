@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6557877017740250220'
+source_url: https://jooble.org/away/-6557877017740250220?p=1&pos=1&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=66&brelb=10&scr=134.2086&bscr=134.2086&aq=-3869760139125522746&elckey=-57059382978502472
+title: Senior Full Stack Developer
+company: aizoOn Technology Consulting
+location: Italian Republic
+published_at: '2026-07-28T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T00:36:00Z'
+rejected_at: '2026-07-31T00:36:00Z'

@@ -107,4 +107,4 @@ Talent Acquisition Specialist
 
 [+49 151 65577137](tel:+49 151 65577137)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
