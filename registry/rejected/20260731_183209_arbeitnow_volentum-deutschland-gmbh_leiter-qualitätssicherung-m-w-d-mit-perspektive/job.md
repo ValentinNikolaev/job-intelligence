@@ -77,4 +77,4 @@ Haben Sie Lust auf ein solch spannendes Arbeitsumfeld? Und haben wir mit Ihnen a
 
 Für Rückfragen zu dieser Vakanz steht Ihnen Herr Marius Hebig gern jederzeit als Ansprechpartner zur Verfügung: 0151 703 44 016.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

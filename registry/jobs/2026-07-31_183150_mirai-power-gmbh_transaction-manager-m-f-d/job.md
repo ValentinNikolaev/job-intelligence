@@ -49,4 +49,4 @@ As a **Transaction Manager (m/f/d)**, you will play a key role in supporting MIR
 *Diversity*
 *Diversity drives innovation. We welcome applications from people of all backgrounds, regardless of gender, nationality, ethnic origin, religion, age, disability, or identity. Applicants with severe disabilities will be given preferential consideration if equally qualified. Mutual respect, inclusion, and appreciation form the foundation of everything we do.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

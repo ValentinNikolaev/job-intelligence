@@ -60,4 +60,4 @@ We're growing fast and looking for a Growth Intern to join our small, hands-on t
 
 Join Quid as a Growth Intern! Dive into an exciting 6-month journey to boost your skills and make an impact. Perfect for those eager to learn and grow!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

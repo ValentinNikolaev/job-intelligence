@@ -65,4 +65,4 @@ Wir suchen jemanden, der verstanden hat: Auf TikTok ist Content das Produkt. Wen
 
 GENUINE ist einer der führenden TikTok-Shop-Partner in Deutschland mit Büros in Köln, Berlin, Shanghai und Hongkong. Unser Team bringt über neun Jahre Erfahrung aus dem Social-Commerce-Markt in China und Südostasien mit. Gegründet 2017 von Damian Maib in Shanghai, haben wir deutschen Marken geholfen, im chinesischen Markt Fuß zu fassen und Millionen von Konsumenten zu erreichen. Seit 2025 sind wir auch in Europa aktiv und unterstützen Unternehmen beim Aufbau ihrer TikTok Shops.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -71,4 +71,4 @@ At Flix, we empower our teams to push boundaries and shape the future of mobilit
 
 If you're looking for a place where you can drive change and redefine how millions of people travel, Flix is the place where you can lead your journey!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

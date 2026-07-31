@@ -85,4 +85,4 @@ Du berichtest an die COO und arbeitest eng mit Planning & Construction, Central 
 
 - **Sport & Wellbeing**: Bei uns bekommst du regelmäßige Padel Matches auf unseren Courts - für deinen körperlichen Ausgleich und dein Wohlbefinden neben dem Arbeitsalltag.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

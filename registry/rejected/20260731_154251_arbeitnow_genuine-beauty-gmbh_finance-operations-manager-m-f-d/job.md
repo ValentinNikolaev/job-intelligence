@@ -67,4 +67,4 @@ We are the largest TikTok Shop partner in Europe, and we are looking for someone
 
 GENUINE is one of Germany's leading TikTok Shop partners with offices in Shanghai, Cologne, Hong Kong, and Berlin. Our team brings more than nine years of experience from the social commerce market in China and Southeast Asia. GENUINE was founded in 2017 by Damian Maib in Shanghai. There, we helped German brands gain a successful foothold in China and position their products in front of millions of consumers. Since 2025, we have also been active in Europe, assisting leading companies in setting up their TikTok Shops.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

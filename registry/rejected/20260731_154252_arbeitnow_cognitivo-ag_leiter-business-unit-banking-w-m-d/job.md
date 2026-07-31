@@ -93,4 +93,4 @@ Als Unternehmensberatung für Software und Analytics unterstützt die **cognitiv
 
 Wir bieten Dir eine verantwortungsvolle und unternehmerisch geprägte Position in einem innovativen Arbeitsumfeld, in dem Du aktiv die Zukunft unserer Business Unit Banking mitgestalten kannst. Du erhältst die Möglichkeit, Deine Führungsstärke, Deine strategischen Fähigkeiten und Deine vertrieblichen Kompetenzen gezielt weiterzuentwickeln und maßgeblich zum Wachstum und Erfolg unserer Unit beizutragen. Wenn Du Freude daran hast, Verantwortung zu übernehmen, Kundenbeziehungen nachhaltig auszubauen, neue Geschäftsmöglichkeiten zu entwickeln und gemeinsam mit einem engagierten Team innovative IT-Lösungen für den Banking-Markt voranzutreiben, freuen wir uns auf Deine aussagekräftige Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
