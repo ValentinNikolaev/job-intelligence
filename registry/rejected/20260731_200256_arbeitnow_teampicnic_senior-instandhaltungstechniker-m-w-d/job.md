@@ -61,4 +61,4 @@ Mit deinem technischen Know-how und deiner Hands-on-Mentalität stellst du siche
 
 - **Wohlbefinden & Gleichgewicht: **Wir bieten dir professionelle Unterstützung für deine mentale Gesundheit mit OpenUp.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

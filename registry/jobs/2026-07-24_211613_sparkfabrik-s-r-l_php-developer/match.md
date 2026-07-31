@@ -1,26 +1,17 @@
 # Match Analysis
 
-**Score:** 74/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Strong PHP and framework alignment for a senior development role, with some uncertainty around Drupal and frontend depth.
+Very strong PHP/Laravel/Symfony fit with cloud, DevOps, APIs, and enterprise delivery experience; Italian remote setup is favorable.
 
 ## Why it matches
 
-- PHP
-- Laravel and Symfony
-- OOP and Composer-relevant backend experience
-- Unix and Git exposure
-- cloud and DevOps practices
-- enterprise-scale systems
+- PHP/Laravel/Symfony
+- AWS/Kubernetes and CI/CD
+- Enterprise backend delivery
 
 ## Gaps
 
-- Drupal 7+
-- Angular
-- Vue
-- and full-stack depth are not clearly evidenced
-
-## Concerns
-
-- The posting covers multiple seniority levels and client-project contexts
+- Drupal and frontend framework depth is not central in the profile
+- Italian-language expectations, if any, are unclear

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 1159
+Total vacancies: 1161
 
-- Found: 229
+- Found: 231
 - Applied: 5
 - Rejected: 923
 - Closed: 2
@@ -17,6 +17,8 @@ Total vacancies: 1159
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-31 | [Unit8](../registry/jobs/2026-07-31_210252_unit8_managing-director-data-ai-pharma/) | [Managing Director, Data & AI - Pharma](../registry/jobs/2026-07-31_210252_unit8_managing-director-data-ai-pharma/job.md) | Frankfurt am Main, Germany | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/unit8/managing-director-data-ai-pharma-frankfurt-am-main-44883) | — | — | — | — | — |
+| 2026-07-31 | [Unit8](../registry/jobs/2026-07-31_210249_unit8_managing-director-data-ai-pharma/) | [Managing Director, Data & AI - Pharma](../registry/jobs/2026-07-31_210249_unit8_managing-director-data-ai-pharma/job.md) | Munich, Germany | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/unit8/managing-director-data-ai-pharma-munich-193076) | — | — | — | — | — |
 | 2026-07-31 | [Gympass](../registry/jobs/2026-07-31_202750_gympass_senior-backend-software-engineer/) | [Senior Backend Software Engineer](../registry/jobs/2026-07-31_202750_gympass_senior-backend-software-engineer/job.md) | Remote | Jooble | Found | 2026-07-31 | [Jooble](https://jooble.org/desc/-1650508491521085887?ckey=remote+golang+backend+engineer&rgn=55180&pos=11&groupId=1106121903&elckey=1120108799034374259&p=1&aq=6323011460083210504&cid=15922&jobAge=3&brelb=100&bscr=243.78387&scr=243.78387) | — | — | — | — | — |
 | 2026-07-31 | [Expert Technology Services](../registry/jobs/2026-07-31_201057_expert-technology-services_senior-backend-engineer-java-golang/) | [Senior Backend Engineer - Java/Golang](../registry/jobs/2026-07-31_201057_expert-technology-services_senior-backend-engineer-java-golang/job.md) | Palo Alto, CA | Jooble | Found | 2026-07-31 | [Jooble](https://jooble.org/desc/-8945876887711243683?ckey=remote+senior+backend+engineer&rgn=55180&pos=44&groupId=2134052230&elckey=6727619333242046339&p=1&aq=4021700776409405999&cid=15922&jobAge=110&brelb=100&bscr=752.60486&scr=752.60486) | — | — | — | — | — |
 | 2026-07-31 | [TechBiz Global GmbH](../registry/jobs/2026-07-31_200312_techbiz-global-gmbh_senior-enterprise-architect-insurance-industry/) | [Senior Enterprise Architect (Insurance Industry)](../registry/jobs/2026-07-31_200312_techbiz-global-gmbh_senior-enterprise-architect-insurance-industry/job.md) | Remote job | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-enterprise-architect-insurance-industry-aachen-443177) | — | — | — | — | — |
@@ -35,5 +37,3 @@ Total vacancies: 1159
 | 2026-07-31 | [Aerogreet GmbH & CO KG](../registry/jobs/2026-07-31_183133_aerogreet-gmbh-co-kg_online-marketing-manager-performance-paid-media/) | [Online Marketing Manager (Performance/Paid Media Specialist)](../registry/jobs/2026-07-31_183133_aerogreet-gmbh-co-kg_online-marketing-manager-performance-paid-media/job.md) | Frankfurt am Main | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/aerogreet-gmbh-co-kg/online-marketing-manager-performance-paid-media-specialist-frankfurt-am-main-491643) | — | — | — | — | — |
 | 2026-07-31 | [Parto Group GmbH](../registry/jobs/2026-07-31_183130_parto-group-gmbh_product-manager-f-m-d-fintech-for-social-care/) | [Product Manager (f/m/d) - FinTech for Social Care](../registry/jobs/2026-07-31_183130_parto-group-gmbh_product-manager-f-m-d-fintech-for-social-care/job.md) | Hamburg | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/parto-group-gmbh/product-manager-fintech-for-social-care-hamburg-127332) | — | — | — | — | — |
 | 2026-07-31 | [Mirai Power GmbH](../registry/jobs/2026-07-31_183128_mirai-power-gmbh_tax-corporate-structuring-manager-m-f-d/) | [Tax & Corporate Structuring Manager (m/f/d)](../registry/jobs/2026-07-31_183128_mirai-power-gmbh_tax-corporate-structuring-manager-m-f-d/job.md) | Munich | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/mirai-power-gmbh/tax-corporate-structuring-manager-munich-479846) | — | — | — | — | — |
-| 2026-07-31 | [SAPPLIER GmbH](../registry/jobs/2026-07-31_154333_sapplier-gmbh_sap-ewm-inhouse-berater-m-w-d/) | [SAP EWM Inhouse Berater (m/w/d)](../registry/jobs/2026-07-31_154333_sapplier-gmbh_sap-ewm-inhouse-berater-m-w-d/job.md) | Bitburg | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/sapplier-gmbh/sap-ewm-inhouse-berater-bitburg-276277) | — | — | — | — | — |
-| 2026-07-31 | [fino data services GmbH](../registry/jobs/2026-07-31_154330_fino-data-services-gmbh_seo-website-conversion-manager-all-genders/) | [SEO, Website & Conversion Manager (all genders)](../registry/jobs/2026-07-31_154330_fino-data-services-gmbh_seo-website-conversion-manager-all-genders/job.md) | Kassel | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/fino-data-services-gmbh/seo-website-conversion-manager-all-genders-kassel-178628) | — | — | — | — | — |

@@ -1,25 +1,20 @@
-score: 67
+score: 72
 recommendation: match
-summary: Good leadership and PHP backend alignment, with a material gap against the
-  stated full-stack, JavaScript, and project-management breadth.
+summary: Good PHP/Laravel and technical-lead alignment, with project coordination
+  and mentoring experience, but the role adds substantial React/Vue and formal project-management
+  expectations.
 strengths:
-- PHP and Laravel
-- PostgreSQL and Linux
-- technical leadership and mentoring
-- Agile planning and delivery ownership
-- API integrations
+- PHP/Laravel backend
+- Technical leadership and mentoring
+- API and delivery experience
 gaps:
-- React or Vue
-- Java
-- Livewire and FilamentPHP are not evidenced; formal budgeting and project-management
-  ownership is unclear
-concerns:
-- The role is substantially full-stack and coordination-oriented rather than primarily
-  backend
+- React/Vue depth is limited in the profile
+- Budgeting and end-to-end project-management ownership are not evidenced
+concerns: []
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-24T23:22:31Z'
+analyzed_at: '2026-07-31T21:04:47Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:729bd191d6191cd1fde43476eee917024cb54d92a8fc98c273835f379a727031
-prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

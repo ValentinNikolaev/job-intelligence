@@ -1,23 +1,17 @@
 # Match Analysis
 
-**Score:** 89/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent match for a remote PHP and Go payments backend position, supported by microservices, API, MySQL, and payment experience.
+Excellent PHP/Go and payments fit with production APIs, payment gateways, high-scale services, and operational reliability experience.
 
 ## Why it matches
 
 - PHP and Go
-- microservices and API design
-- MySQL and production systems
-- Stripe PayPal and Skrill integrations
-- fintech and payment-domain experience
+- Payments and integrations
+- Scalable backend systems
 
 ## Gaps
 
-- Specific security-product experience is not evidenced
-
-## Concerns
-
-- The vacancy is listed for Poland
-- so employment and location eligibility should be confirmed for Italy
+- Poland work eligibility/location may be restrictive
+- Security-product experience is not explicit

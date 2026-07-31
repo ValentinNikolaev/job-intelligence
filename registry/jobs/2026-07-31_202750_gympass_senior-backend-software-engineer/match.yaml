@@ -1,0 +1,20 @@
+score: 61
+recommendation: possible_match
+summary: Backend and Go/microservices experience is relevant, but the role is Brazil-only
+  remote and the profile does not establish Brazil location or authorization.
+strengths:
+- Go and backend systems
+- Microservices
+- AI/automation exposure
+gaps:
+- Brazil-only location constraint
+- Kotlin/Java and domain-specific experience are not clear
+concerns:
+- Remote eligibility is a material uncertainty
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-07-31T21:04:47Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9a93c794960990ae3ee372d9c575e4932ab9c619a4bb2107d9fd916359aee86d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

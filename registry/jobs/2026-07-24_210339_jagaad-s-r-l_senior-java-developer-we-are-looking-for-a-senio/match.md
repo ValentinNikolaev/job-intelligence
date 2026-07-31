@@ -3,25 +3,18 @@
 **Score:** 20/100  
 **Recommendation:** Not Match
 
-Seniority, architecture, cloud, and API experience transfer, but Java is the central required implementation skill and is not evidenced.
+The candidate has strong backend and cloud experience, but Java is not part of the documented technology profile and the role is specifically senior Java.
 
 ## Why it matches
 
-- Senior backend engineering
-- system design
-- microservices
-- cloud infrastructure
-- security and compliance exposure
-- technical leadership
+- Backend architecture
+- Cloud and microservices
 
 ## Gaps
 
-- Java development and the role-specific Java ecosystem are not evidenced
-
-## Concerns
-
-- The vacancy is a contractor role and the supplied record does not establish contractor terms or Java experience
+- No documented professional Java experience
+- Role-specific language mismatch
 
 ## Hard rejection
 
-- Java is an essential central skill for this role and is unsupported by the candidate profile.
+- Primary stack is senior Java, which is not evidenced in the candidate profile.

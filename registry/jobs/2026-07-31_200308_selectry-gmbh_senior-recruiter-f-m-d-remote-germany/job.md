@@ -152,4 +152,4 @@ selectry GmbH is committed to equal opportunity. We hire for skill and potential
 
 Your application data is processed exclusively for the purpose of this recruitment process in accordance with the GDPR. If you would like your data corrected or deleted, contact .
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

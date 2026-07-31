@@ -1,23 +1,16 @@
 # Match Analysis
 
-**Score:** 58/100  
-**Recommendation:** Possible Match
+**Score:** 35/100  
+**Recommendation:** Weak Match
 
-Backend experience is relevant, but the US-remote location and unspecified stack reduce fit confidence.
+Backend/API experience transfers, but the role is US-only and specifically requires strong TypeScript/NestJS, neither of which is documented.
 
 ## Why it matches
 
-- Senior backend engineering
-- Go and PHP
-- APIs
-- distributed systems
-- cloud infrastructure
-- production operations
+- Backend systems and APIs
+- Production reliability
 
 ## Gaps
 
-- Full requirements and technology stack are not sufficiently evidenced in the supplied record
-
-## Concerns
-
-- US-only remote location may create work authorization or time-zone constraints
+- US-only location constraint
+- No documented TypeScript/NestJS experience

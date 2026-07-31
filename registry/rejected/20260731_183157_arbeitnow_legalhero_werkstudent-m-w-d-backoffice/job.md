@@ -63,4 +63,4 @@ Du bringst Struktur in den Alltag und behältst auch bei Routineaufgaben locker 
 Du hast noch Fragen?
 Unsere HR Managerin Nadine ist unter oder telefonisch unter 030 22957522 erreichbar.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,22 +1,17 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 90/100  
 **Recommendation:** Strong Match
 
-Strong fit for a remote senior backend role centered on Go, scalable systems, APIs, and cloud infrastructure.
+Strong fit for senior Go backend work on distributed cloud storage, with relevant AWS, Kubernetes, event-driven, reliability, and performance experience.
 
 ## Why it matches
 
-- Go backend experience
-- event-driven and distributed systems
-- AWS and Kubernetes
-- production reliability and performance work
-- senior ownership
+- Go backend development
+- Cloud and distributed systems
+- Kubernetes/AWS and reliability
 
 ## Gaps
 
-- Specific cloud-storage or object-storage experience is not evidenced
-
-## Concerns
-
-- The supplied excerpt does not fully establish all requested storage technologies
+- Specific storage-system depth is not clearly evidenced
+- Compensation and Bologna/Italy arrangement should be confirmed

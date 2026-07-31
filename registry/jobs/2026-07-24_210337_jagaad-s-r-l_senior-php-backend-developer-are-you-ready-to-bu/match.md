@@ -1,24 +1,17 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-Good fit for a senior PHP backend role requiring APIs, quality, testing, and ownership across a remote delivery environment.
+Strong match for remote senior PHP backend work, supported by extensive PHP, Laravel/Symfony, APIs, cloud, and scalable services experience.
 
 ## Why it matches
 
-- Extensive PHP
-- Laravel and Symfony experience
-- backend APIs
-- microservices
-- testing and code quality
-- AWS and CI/CD
-- senior ownership
+- PHP backend development
+- Laravel/Symfony and APIs
+- Cloud and microservices
 
 ## Gaps
 
-- Some client-specific frameworks and domain details are not evidenced
-
-## Concerns
-
-- Contractor arrangement and project assignment details should be clarified
+- Client/project domain may require adaptation
+- Exact contractor terms should be confirmed

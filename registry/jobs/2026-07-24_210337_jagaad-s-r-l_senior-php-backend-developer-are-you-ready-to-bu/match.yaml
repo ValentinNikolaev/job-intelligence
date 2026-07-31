@@ -1,23 +1,19 @@
-score: 78
-recommendation: match
-summary: Good fit for a senior PHP backend role requiring APIs, quality, testing,
-  and ownership across a remote delivery environment.
+score: 82
+recommendation: strong_match
+summary: Strong match for remote senior PHP backend work, supported by extensive PHP,
+  Laravel/Symfony, APIs, cloud, and scalable services experience.
 strengths:
-- Extensive PHP
-- Laravel and Symfony experience
-- backend APIs
-- microservices
-- testing and code quality
-- AWS and CI/CD
-- senior ownership
+- PHP backend development
+- Laravel/Symfony and APIs
+- Cloud and microservices
 gaps:
-- Some client-specific frameworks and domain details are not evidenced
-concerns:
-- Contractor arrangement and project assignment details should be clarified
+- Client/project domain may require adaptation
+- Exact contractor terms should be confirmed
+concerns: []
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-24T23:22:31Z'
+analyzed_at: '2026-07-31T21:04:47Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:03da104b08458ec26213c966a705f854c38d3f26febba3bd2e848bf2e2119608
-prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

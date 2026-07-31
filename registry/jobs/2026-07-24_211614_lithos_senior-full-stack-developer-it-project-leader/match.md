@@ -1,24 +1,17 @@
 # Match Analysis
 
-**Score:** 67/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Good leadership and PHP backend alignment, with a material gap against the stated full-stack, JavaScript, and project-management breadth.
+Good PHP/Laravel and technical-lead alignment, with project coordination and mentoring experience, but the role adds substantial React/Vue and formal project-management expectations.
 
 ## Why it matches
 
-- PHP and Laravel
-- PostgreSQL and Linux
-- technical leadership and mentoring
-- Agile planning and delivery ownership
-- API integrations
+- PHP/Laravel backend
+- Technical leadership and mentoring
+- API and delivery experience
 
 ## Gaps
 
-- React or Vue
-- Java
-- Livewire and FilamentPHP are not evidenced; formal budgeting and project-management ownership is unclear
-
-## Concerns
-
-- The role is substantially full-stack and coordination-oriented rather than primarily backend
+- React/Vue depth is limited in the profile
+- Budgeting and end-to-end project-management ownership are not evidenced

@@ -1,22 +1,19 @@
 score: 53
 recommendation: possible_match
-summary: Relevant senior backend, API, microservice, and delivery experience transfers,
-  but Node.js is the central stack and is not evidenced.
+summary: General backend, APIs, microservices, and remote collaboration fit, but Node.js
+  is not a documented core technology.
 strengths:
-- Senior backend delivery
-- microservices and APIs
-- CI/CD and cloud infrastructure
-- Agile collaboration
-- production reliability
+- Backend and API design
+- Microservices and cloud
+- Remote collaboration
 gaps:
-- Node.js and its ecosystem are not evidenced; JavaScript depth is also unclear
-concerns:
-- Role-specific implementation experience may be insufficient despite broad backend
-  overlap
+- No documented Node.js experience
+- Role-specific TypeScript/Node depth may be required
+concerns: []
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-24T23:22:31Z'
+analyzed_at: '2026-07-31T21:04:47Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:2a8a46f28451f05578599ec1f1d79807d8468cb88bd0870939093128944fea28
-prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

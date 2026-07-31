@@ -3,22 +3,19 @@
 **Score:** 12/100  
 **Recommendation:** Not Match
 
-The role is a current-student working-student position requiring German and GTM focus, unlike the candidate profile.
+Automation and AI exposure is relevant, but this is a working-student role requiring ongoing study, strong German, and GTM specialization not supported by the profile.
 
 ## Why it matches
 
-- Automation and AI tooling experience
+- Automation and AI systems
+- Tool integration
 
 ## Gaps
 
-- Current student status
-- German C1+
-- and GTM experience are not evidenced
-
-## Concerns
-
-- Seniority and employment type are fundamentally misaligned
+- No evidence of current studies
+- C1+ German requirement is not met/evidenced
+- Role seniority and track are mismatched
 
 ## Hard rejection
 
-- Current student status and advanced German are explicit requirements not evidenced.
+- The role requires a current student and C1+ German for a working-student GTM position.

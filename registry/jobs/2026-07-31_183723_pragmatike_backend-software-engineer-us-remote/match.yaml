@@ -1,23 +1,18 @@
-score: 58
-recommendation: possible_match
-summary: Backend experience is relevant, but the US-remote location and unspecified
-  stack reduce fit confidence.
+score: 35
+recommendation: weak_match
+summary: Backend/API experience transfers, but the role is US-only and specifically
+  requires strong TypeScript/NestJS, neither of which is documented.
 strengths:
-- Senior backend engineering
-- Go and PHP
-- APIs
-- distributed systems
-- cloud infrastructure
-- production operations
+- Backend systems and APIs
+- Production reliability
 gaps:
-- Full requirements and technology stack are not sufficiently evidenced in the supplied
-  record
-concerns:
-- US-only remote location may create work authorization or time-zone constraints
+- US-only location constraint
+- No documented TypeScript/NestJS experience
+concerns: []
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-31T19:23:28Z'
+analyzed_at: '2026-07-31T21:04:47Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:2b0503f756765063d90dc234ded282330449d59679a4e687550ee6828787379e
-prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

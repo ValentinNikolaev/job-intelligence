@@ -135,4 +135,4 @@ You can expect **4** interviews on Google Meet to follow the order below. Should
 
 At Upsun, we celebrate diversity in all its forms and are committed to fostering an inclusive, equitable, and supportive workplace where everyone can thrive. We embrace and value different perspectives, backgrounds, and experiences, because they make us stronger as a team. Whoever you are, wherever you're from, and whatever path you've taken, you are welcome here. We encourage you to bring your whole self to work, connect with others, and share your passion. If you need accommodations at any stage of our hiring process, please let us know. We're here to ensure an accessible and comfortable experience for you.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

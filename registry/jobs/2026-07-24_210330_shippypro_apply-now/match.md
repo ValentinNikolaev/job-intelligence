@@ -1,22 +1,17 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Very strong fit for ShippyPro's remote senior backend role combining PHP Laravel, distributed systems, integrations, AI automation, and scale.
+Excellent fit for senior distributed backend engineering: high-volume integrations, asynchronous workflows, architecture, and production scale closely match the profile.
 
 ## Why it matches
 
-- Deep PHP and Laravel experience
-- microservices and async systems
-- AWS EventBridge and RabbitMQ
-- AI and support automation
-- high-volume production reliability
+- Distributed systems and integrations
+- High-scale email/event systems
+- Architecture and reliability
 
 ## Gaps
 
-- Node.js and Python are not strongly evidenced; React and TypeScript are not evidenced
-
-## Concerns
-
-- Salary and final practical assessment should be evaluated separately
+- Their current stack may emphasize Python/TypeScript more than Go/PHP
+- Shipping-domain experience is not documented

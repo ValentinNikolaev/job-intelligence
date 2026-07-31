@@ -58,4 +58,4 @@ Industriestraße 13
 
 Von einem 1960er "Start-up" hat sich Leonhard Fischer mit viel unternehmerischem Mut und Geschick zu einem modernen Unternehmen entwickelt, in dem wir heute Sondermaschinen, Werkzeuge und automatisierte Produktionslösungen mit hohen Qualitätsstandards für LINDAL Group und unsere internationalen Kunden bauen. Daran arbeiten rund 70 Mitarbeitende und 10 Auszubildende, um die wir uns für einen erfolgreichen Berufseinstieg in der Technik intensiv kümmern.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

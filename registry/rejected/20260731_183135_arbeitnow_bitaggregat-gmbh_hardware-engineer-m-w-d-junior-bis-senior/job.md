@@ -1,6 +1,6 @@
 # Hardware Engineer (m/w/d) - Junior bis Senior
 
-Posted: 2026-07-31T15:00:32Z
+Posted: 2026-07-31T19:29:02Z
 
 ## Rejection
 
@@ -79,7 +79,7 @@ Uns ist wichtig, Deine Karriere aktiv voranzubringen und Deine berufliche Entwic
 
 - ein Entwicklungsteam bestehend aus Hardware-, FPGA- und Embedded-Spezialisten
 
-- **hybrides Arbeiten** mit Büro in Leipzig
+- **hybrides Arbeiten** mit Büro im Zentrum von Leipzig
 
 - **Vollzeit oder Teilzeit**, soweit die jeweiligen Aufgaben dies zulassen
 
@@ -95,4 +95,4 @@ Wenn Du Lust hast, anspruchsvolle Hardware zu entwickeln und die nächste Genera
 
 Gestalte mit uns Deine Zukunft. Wir freuen uns auf Deine Nachricht!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

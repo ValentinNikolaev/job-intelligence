@@ -93,4 +93,4 @@ At Vestiaire Collective, we believe that talent comes in many forms, and we're c
 
 Vestiaire Collective only contacts candidates via official emails ending ----- or **
 
-If you receive a suspicious message, please report it to Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+If you receive a suspicious message, please report it to Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

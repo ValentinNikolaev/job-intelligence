@@ -49,4 +49,4 @@ Im Auftrag unseres Partnerunternehmens aus dem Öffentlichen Dienst suchen wir S
 
 **Sie finden das Stellenprofil interessant?** Dann senden Sie uns einfach Ihre Unterlagen (Lebenslauf und Zeugnisse) zu. Für Rückfragen steht Ihnen **Simon Schneider** gerne unter **089 954 287 111** zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

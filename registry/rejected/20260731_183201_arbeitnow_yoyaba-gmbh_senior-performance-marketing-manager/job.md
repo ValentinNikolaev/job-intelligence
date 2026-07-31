@@ -88,4 +88,4 @@ Und du willst strategisch und persönlich wachsen.
 - Workations möglich und von unseren YOYABEEs geliebt
 - Bis zu 60 % Zuschuss zu deiner betrieblichen Altersvorsorge
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

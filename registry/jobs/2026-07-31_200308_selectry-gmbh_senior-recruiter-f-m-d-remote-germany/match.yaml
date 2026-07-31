@@ -1,0 +1,18 @@
+score: 5
+recommendation: not_match
+summary: The role is end-to-end senior recruiting and sourcing, while the candidate
+  profile is software engineering focused.
+strengths:
+- Technical interviewing experience
+gaps:
+- No recruiting career or sourcing ownership
+- Role is not software engineering
+concerns: []
+hard_rejection: true
+hard_rejection_reason: The vacancy is a senior recruiter position, not a software
+  engineering role.
+analyzed_at: '2026-07-31T21:04:47Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1479535ad2f662a4fcd2b0839d553b35f21e9afe9ca1671c01e0b7b7a13a9ac8
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

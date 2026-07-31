@@ -39,4 +39,4 @@ We offer creative freedom, competitive compensation, and a fast-paced, collabora
 
 If you’re ready to make an impact, we invite you to apply by submitting your cover letter, resume, and transcript through our online application form.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

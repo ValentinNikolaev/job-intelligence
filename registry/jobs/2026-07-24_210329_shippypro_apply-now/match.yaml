@@ -1,28 +1,19 @@
 score: 48
 recommendation: possible_match
-summary: Engineering and automation experience is relevant, but the role is primarily
-  GTM systems and growth operations rather than backend engineering.
+summary: Automation and integration experience is relevant, but the role centers on
+  GTM, marketing, sales funnels, and growth ownership beyond the documented engineering
+  profile.
 strengths:
-- API integrations and automation
-- AI-assisted workflows
-- internal platform ownership
-- support and communication automation
-- backend engineering breadth
+- Automation and integrations
+- Cross-functional engineering
 gaps:
-- GTM
-- marketing
-- sales funnels
-- CRM tooling
-- attribution
-- HubSpot
-- and MCP experience are not evidenced
-concerns:
-- The role's commercial-growth focus and lower compensation differ materially from
-  the candidate's established senior backend profile
+- No documented GTM, marketing, or sales ownership
+- Role requires growth-domain orientation and likely Python/TypeScript
+concerns: []
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-07-24T23:22:31Z'
+analyzed_at: '2026-07-31T21:04:47Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
 job_version: sha256:02a85d1f74ac6a7894aa410a792f8c2a75daf57bf539f3c0dfaf2067fecb7db9
-prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

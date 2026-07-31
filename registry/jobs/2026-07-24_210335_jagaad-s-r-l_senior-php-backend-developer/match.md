@@ -1,23 +1,17 @@
 # Match Analysis
 
-**Score:** 75/100  
-**Recommendation:** Match
+**Score:** 80/100  
+**Recommendation:** Strong Match
 
-Solid alignment with a senior PHP backend opening through extensive PHP, API, cloud, and production engineering experience.
+Strong alignment with the documented PHP backend, Laravel, Symfony, API, and remote delivery background.
 
 ## Why it matches
 
-- PHP backend development
-- Laravel and Symfony
-- REST APIs
-- scalable services
-- AWS and Kubernetes
-- performance and reliability
+- PHP and backend systems
+- Framework and API experience
+- Remote delivery
 
 ## Gaps
 
-- The sparse vacancy record does not establish all project-specific requirements
-
-## Concerns
-
-- Role scope and contractor conditions are less specific than the candidate evidence
+- Specific vacancy requirements are sparse
+- Client and contract details need clarification

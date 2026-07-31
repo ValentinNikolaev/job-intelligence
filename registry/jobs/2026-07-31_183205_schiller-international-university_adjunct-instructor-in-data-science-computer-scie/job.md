@@ -45,4 +45,4 @@ Either native English speaker or proficiency level of English competency. Abilit
 - Proficiency in Microsoft Office (Word, Excel, PowerPoint, Outlook).
 - Experience with Blackboard (Collaborate Ultra) or equivalent LMS preferred.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
