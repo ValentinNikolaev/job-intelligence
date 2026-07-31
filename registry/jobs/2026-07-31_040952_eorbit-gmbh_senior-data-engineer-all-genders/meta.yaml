@@ -1,0 +1,29 @@
+schema_version: 2
+id: 1d26a26d-7ec6-4a2f-ba2b-74a1c671c142
+title: Senior Data Engineer (all genders)
+company: Eorbit Gmbh
+company_url: null
+location: Leipzig
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-engineer-all-genders-leipzig-31268
+  url: https://www.arbeitnow.com/jobs/companies/eorbit-gmbh/senior-data-engineer-all-genders-leipzig-31268
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-30T23:09:13Z'
+discovered_at: '2026-07-31T04:09:52Z'
+updated_at: '2026-07-31T04:09:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T04:09:52Z'
+analysis_priority: 0
+fingerprint: sha256:0e5788aa8dc291e39061049652fd1127eae1bd5cfbc8d70c97df6284722cf44f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

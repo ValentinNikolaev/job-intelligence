@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: vorarbeiterin-teamleiterin-gebaudereinigung-haan-473251
+source_url: https://www.arbeitnow.com/jobs/companies/vebego-facility-services-germany/vorarbeiterin-teamleiterin-gebaudereinigung-haan-473251
+title: Vorarbeiter*in / Teamleiter*in Gebäudereinigung (m/w/d)
+company: Vebego Facility Services Germany
+location: Haan, Nordrhein-Westfalen, Deutschland
+published_at: '2026-07-31T02:30:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T04:09:07Z'
+rejected_at: '2026-07-31T04:09:07Z'

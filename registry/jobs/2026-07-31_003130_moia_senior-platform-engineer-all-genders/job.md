@@ -92,4 +92,4 @@ We value authenticity and personal insights in your application responses. While
 
 To reinforce an unbiased screening process, we kindly ask you not to include your picture, age, address, or any other details unrelated to your qualifications and suitability for the role. Additionally, we anonymize applications during the initial review phase by removing personally identifiable information. This ensures that our evaluation focuses solely on your skills, experience, and potential – supporting a fair and inclusive hiring experience for all candidates.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

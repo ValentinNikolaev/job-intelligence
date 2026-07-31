@@ -1,0 +1,29 @@
+schema_version: 2
+id: f9e4ef8c-f7c1-4f2e-8ceb-c8c1ad348674
+title: ML Engineer — AI & Operations Research (all genders)
+company: Eorbit Gmbh
+company_url: null
+location: Leipzig
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: ml-engineer-ai-operations-research-all-genders-leipzig-336957
+  url: https://www.arbeitnow.com/jobs/companies/eorbit-gmbh/ml-engineer-ai-operations-research-all-genders-leipzig-336957
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-07-30T23:09:13Z'
+discovered_at: '2026-07-31T04:09:56Z'
+updated_at: '2026-07-31T04:09:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T04:09:56Z'
+analysis_priority: 0
+fingerprint: sha256:650b6d481bf10d4f29c91919a5d6b24cec29ee72b41a9a6d91b265628b07654a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

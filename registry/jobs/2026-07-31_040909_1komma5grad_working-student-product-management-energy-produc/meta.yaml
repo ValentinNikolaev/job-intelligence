@@ -1,0 +1,31 @@
+schema_version: 2
+id: f42a639e-8d96-4537-bdb5-1d53791afbaa
+title: Working Student Product Management Energy Products & Tariffs (m/f/d)
+company: 1Komma5Grad
+company_url: null
+location: Berlin
+remote: false
+employment_type: Student, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: working-student-product-management-energy-products-tariffs-berlin-82457
+  url: https://www.arbeitnow.com/jobs/companies/1komma5grad/working-student-product-management-energy-products-tariffs-berlin-82457
+  metadata:
+    tags:
+    - join
+    job_types:
+    - Student
+    - Intern
+    - Part time
+published_at: '2026-07-31T02:09:43Z'
+discovered_at: '2026-07-31T04:09:09Z'
+updated_at: '2026-07-31T04:09:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T04:09:09Z'
+analysis_priority: 0
+fingerprint: sha256:39c61ad5543342cda672a81e37b884b66647dee2f54b7c50fa45f51f8d5c9f5d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

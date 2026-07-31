@@ -77,4 +77,4 @@ Für den Ausbau unseres Softwareteams suchen wir Unterstützung am Standort Aach
 
 Wir haben Dein Interesse geweckt? Sende uns Deine vollständige (Anschreiben + Lebenslauf) und aussagekräftige Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

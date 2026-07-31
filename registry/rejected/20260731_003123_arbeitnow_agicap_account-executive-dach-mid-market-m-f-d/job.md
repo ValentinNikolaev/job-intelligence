@@ -115,4 +115,4 @@ As a Mid Market Account Executive at Agicap, you will be responsible for driving
 
 AGICAP is committed to providing equal opportunities for everyone, and we foster an inclusive work environment that values diversity!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

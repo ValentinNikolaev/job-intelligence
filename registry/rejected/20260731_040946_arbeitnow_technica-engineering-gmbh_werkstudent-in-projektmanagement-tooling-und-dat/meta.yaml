@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-projektmanagement-tooling-und-datenanalyse-munchen-190492
+source_url: https://www.arbeitnow.com/jobs/companies/technica-engineering-gmbh/werkstudentin-projektmanagement-tooling-und-datenanalyse-munchen-190492
+title: Werkstudent:in Projektmanagement Tooling und Datenanalyse (m/w/d)
+company: Technica Engineering GmbH
+location: München, Bayern, Germany
+published_at: '2026-07-30T23:31:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T04:09:46Z'
+rejected_at: '2026-07-31T04:09:46Z'

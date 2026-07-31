@@ -97,4 +97,4 @@ Du hast Spaß daran, dich in neue Themengebiete einzuarbeiten
 
 Du bist kommunikativ, bist ein Teamplayer und hast Lust zu reisen
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

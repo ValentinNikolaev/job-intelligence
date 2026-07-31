@@ -1,0 +1,27 @@
+schema_version: 2
+id: ba6b9942-dde9-4b10-bb0a-96aa655eb722
+title: Product Manager – US B2C Experience (m/f/d)
+company: Raisin
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: product-manager-us-b2c-experience-berlin-478857
+  url: https://www.arbeitnow.com/jobs/companies/raisin/product-manager-us-b2c-experience-berlin-478857
+  metadata:
+    tags:
+    - Product
+published_at: '2026-07-30T23:56:06Z'
+discovered_at: '2026-07-31T04:09:38Z'
+updated_at: '2026-07-31T04:09:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T04:09:38Z'
+analysis_priority: 0
+fingerprint: sha256:72225da95a20a98649a3287f2d4060ef33379c97fed66cc36c32cd13d79282b3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

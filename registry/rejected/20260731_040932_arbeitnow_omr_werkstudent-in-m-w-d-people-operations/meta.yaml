@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-people-operations-hamburg-430036
+source_url: https://www.arbeitnow.com/jobs/companies/omr/werkstudentin-people-operations-hamburg-430036
+title: Werkstudent*In (M/W/D) People Operations
+company: OMR
+location: Hamburg
+published_at: '2026-07-31T02:09:12Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T04:09:32Z'
+rejected_at: '2026-07-31T04:09:32Z'

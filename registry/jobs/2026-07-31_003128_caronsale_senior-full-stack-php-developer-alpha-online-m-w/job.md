@@ -78,4 +78,4 @@ Mehr über uns: [Alpha Online GmbH](https://www.alphaonline.de/)
 
 **Bewirb dich jetzt – dein Lebenslauf reicht.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

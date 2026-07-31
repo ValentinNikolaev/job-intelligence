@@ -1,0 +1,27 @@
+schema_version: 2
+id: 96f31d06-0c41-4ffe-bbd3-82e0db7c2aa9
+title: Employee Relations Senior Specialist – Works Council / Betriebsrat (m/f/d)
+company: gympass
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: employee-relations-senior-specialist-works-council-betriebsrat-11638
+  url: https://www.arbeitnow.com/jobs/companies/gympass/employee-relations-senior-specialist-works-council-betriebsrat-11638
+  metadata:
+    tags:
+    - People
+published_at: '2026-07-31T02:56:00Z'
+discovered_at: '2026-07-31T04:08:59Z'
+updated_at: '2026-07-31T04:08:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T04:08:59Z'
+analysis_priority: 0
+fingerprint: sha256:6095e986606f8bace3bf1466a45a72192af671faf5a991d933afa381f1160303
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,142 @@
+schema_version: 2
+id: 36b5be2f-be08-4898-8d52-9f6883318fa3
+title: Forward Deployed Engineer (Perm, Ireland, Remote + Travel)
+company: NearForm
+company_url: null
+location: Algeria, Australia, Austria, Belgium, Brazil, Bulgaria, Cameroon, Canada,
+  China, Czechia, Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece,
+  Hungary, India, Indonesia, Ireland, Israel, Italy, Japan, Kenya, Malaysia, Mexico,
+  Morocco, Netherlands, New Zealand, Nigeria, Norway, Philippines, Poland, Portugal,
+  Qatar, Romania, Russian Federation, Saudi Arabia, Singapore, South Africa, Spain,
+  Sweden, Switzerland, Tanzania, Thailand, Turkey, Ukraine, United Arab Emirates,
+  United Kingdom, United States, Vietnam
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/nearform/jobs/forward-deployed-engineer-perm-ireland-remote-travel
+  url: https://himalayas.app/companies/nearform/jobs/forward-deployed-engineer-perm-ireland-remote-travel
+  metadata:
+    location_restrictions:
+    - name: Algeria
+    - name: Australia
+    - name: Austria
+    - name: Belgium
+    - name: Brazil
+    - name: Bulgaria
+    - name: Cameroon
+    - name: Canada
+    - name: China
+    - name: Czechia
+    - name: Denmark
+    - name: Egypt
+    - name: Ethiopia
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Ghana
+    - name: Greece
+    - name: Hungary
+    - name: India
+    - name: Indonesia
+    - name: Ireland
+    - name: Israel
+    - name: Italy
+    - name: Japan
+    - name: Kenya
+    - name: Malaysia
+    - name: Mexico
+    - name: Morocco
+    - name: Netherlands
+    - name: New Zealand
+    - name: Nigeria
+    - name: Norway
+    - name: Philippines
+    - name: Poland
+    - name: Portugal
+    - name: Qatar
+    - name: Romania
+    - name: Russian Federation
+    - name: Saudi Arabia
+    - name: Singapore
+    - name: South Africa
+    - name: Spain
+    - name: Sweden
+    - name: Switzerland
+    - name: Tanzania
+    - name: Thailand
+    - name: Turkey
+    - name: Ukraine
+    - name: United Arab Emirates
+    - name: United Kingdom
+    - name: United States
+    - name: Vietnam
+    excerpt: Forward Deployed Engineer (Perm, Ireland, Remote + Travel) This is a
+      full-time, permanent opportunity for candidates based in Ireland.
+    company_slug: nearform
+    company_logo: https://cdn-images.himalayas.app/wkrp3m45u7mg3iu8r35w4lxdawmq
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -10
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 5.5
+    - 6
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 14
+    categories:
+    - Software-Development
+    - AI-Engineering
+    - Machine-Learning-Engineering
+    - LLM-Engineering
+    - Solutions-Engineering
+    - Forward-Deployed-Engineer
+    - AI-Platform-Engineering
+    - Senior-Forward-Deployed-Engineer
+    - Senior-Forward-Deployed-Engineering-Lead
+    - Mid-Level-Forward-Deployed-Engineer
+    expiry_at: '2026-08-28T03:31:33Z'
+    discovered_by:
+    - query_index: 2
+      parameters:
+        seniority: Senior
+        country: IT
+        q: golang
+        exclude_worldwide: 'true'
+        sort: recent
+published_at: '2026-07-30T20:33:45Z'
+discovered_at: '2026-07-31T04:12:35Z'
+updated_at: '2026-07-31T04:12:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T04:12:35Z'
+analysis_priority: 0
+fingerprint: sha256:b4dcca883398bcdfd63b445de601284feca431c71918aaf67e88ba042ae73254
+data_source: himalayas
+content_source: himalayas
+company_content_source: null
