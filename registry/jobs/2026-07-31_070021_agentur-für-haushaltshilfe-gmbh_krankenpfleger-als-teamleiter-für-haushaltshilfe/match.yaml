@@ -1,0 +1,22 @@
+score: 5
+recommendation: not_match
+summary: The role requires a healthcare or social-care professional with C1 German
+  to lead household-help operations, unlike the supplied senior software profile.
+strengths:
+- team leadership
+- communication
+- independent work
+gaps:
+- No healthcare/social-care qualification
+- C1 German not evidenced
+- No regional care-team or sales experience
+concerns:
+- Fundamental profession and language mismatch
+hard_rejection: true
+hard_rejection_reason: Healthcare/social-care qualification and strong German are
+  explicit requirements absent from the candidate evidence.
+analyzed_at: '2026-07-31T08:12:43Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:ae413c1c7ca85cee4ca4e1d7417b78cca90b5741fad623e213b7617f53a4e894
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

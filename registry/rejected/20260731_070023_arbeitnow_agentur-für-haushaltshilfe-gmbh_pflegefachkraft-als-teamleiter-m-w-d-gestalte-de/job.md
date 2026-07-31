@@ -155,4 +155,4 @@ Du willst **mehr Verantwortung, Führung und Gestaltungsspielraum** – ohne den
 
 Bei uns leitest du **dein Team, baust Netzwerke auf, klärst Kunden auf** und arbeitest **selbstbestimmt, flexibel und familienfreundlich**.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

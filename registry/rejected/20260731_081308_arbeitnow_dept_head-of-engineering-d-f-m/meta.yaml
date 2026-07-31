@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: head-of-engineering-hamburg-16822
+source_url: https://www.arbeitnow.com/jobs/companies/dept/head-of-engineering-hamburg-16822
+title: Head of Engineering (d/f/m)
+company: dept
+location: Hamburg
+published_at: '2026-07-31T02:55:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T08:13:08Z'
+rejected_at: '2026-07-31T08:13:08Z'

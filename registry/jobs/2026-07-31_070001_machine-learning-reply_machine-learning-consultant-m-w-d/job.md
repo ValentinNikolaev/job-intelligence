@@ -126,4 +126,4 @@ Interest in **(agile) **project management.
 
 Join our team at  **Machine Learning Reply** as a Consultant in **Munich or Berlin**!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
