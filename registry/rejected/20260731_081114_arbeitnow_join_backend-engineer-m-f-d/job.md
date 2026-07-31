@@ -141,4 +141,4 @@ Don’t meet every requirement? No problem! We’re always open to exceptional c
 
 📩 Apply now – We’d love to connect with you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

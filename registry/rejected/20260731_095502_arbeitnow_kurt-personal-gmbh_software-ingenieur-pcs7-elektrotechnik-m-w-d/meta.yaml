@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: software-ingenieur-pcs7-elektrotechnik-pinneberg-279954
+source_url: https://www.arbeitnow.com/jobs/companies/kurt-personal-gmbh/software-ingenieur-pcs7-elektrotechnik-pinneberg-279954
+title: Software-Ingenieur PCS7 Elektrotechnik (m/w/d)
+company: KURT Personal GmbH
+location: Pinneberg
+published_at: '2026-07-31T08:00:50Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T09:55:02Z'
+rejected_at: '2026-07-31T09:55:02Z'

@@ -1,8 +1,8 @@
 schema_version: 1
 sources:
   adzuna:
-    total_requests: 382
-    last_run_at: '2026-07-31T08:10:59Z'
+    total_requests: 387
+    last_run_at: '2026-07-31T09:54:47Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -819,9 +819,20 @@ sources:
       rejected: 5
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:54:47Z'
+      requests: 5
+      fetched: 5
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 5
+      errors: 0
+      limit_reached: false
   arbeitnow:
-    total_requests: 104
-    last_run_at: '2026-07-31T08:13:42Z'
+    total_requests: 105
+    last_run_at: '2026-07-31T09:56:46Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -1638,9 +1649,20 @@ sources:
       rejected: 80
       errors: 0
       limit_reached: true
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:56:46Z'
+      requests: 1
+      fetched: 100
+      created: 9
+      updated: 6
+      duplicates_merged: 0
+      unchanged: 5
+      rejected: 80
+      errors: 0
+      limit_reached: true
   ashby:
-    total_requests: 962
-    last_run_at: '2026-07-31T08:13:52Z'
+    total_requests: 975
+    last_run_at: '2026-07-31T09:56:53Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -2457,10 +2479,21 @@ sources:
       rejected: 29
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:56:53Z'
+      requests: 13
+      fetched: 30
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 1
+      rejected: 29
+      errors: 0
+      limit_reached: false
   himalayas:
-    total_requests: 536
-    last_run_at: '2026-07-31T07:04:02Z'
-    last_status: completed
+    total_requests: 539
+    last_run_at: '2026-07-31T09:57:57Z'
+    last_status: failed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
       recorded_at: '2026-07-23T16:08:24Z'
@@ -3254,9 +3287,20 @@ sources:
       rejected: 92
       errors: 0
       limit_reached: true
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:57:57Z'
+      requests: 3
+      fetched: 0
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 0
+      errors: 1
+      limit_reached: false
   jobicy:
-    total_requests: 569
-    last_run_at: '2026-07-31T07:04:55Z'
+    total_requests: 577
+    last_run_at: '2026-07-31T09:58:43Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -4051,9 +4095,20 @@ sources:
       rejected: 89
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:58:43Z'
+      requests: 8
+      fetched: 96
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 7
+      rejected: 89
+      errors: 0
+      limit_reached: false
   jooble:
-    total_requests: 383
-    last_run_at: '2026-07-31T07:06:12Z'
+    total_requests: 389
+    last_run_at: '2026-07-31T09:59:48Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -4837,9 +4892,20 @@ sources:
       rejected: 98
       errors: 0
       limit_reached: true
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:59:48Z'
+      requests: 6
+      fetched: 100
+      created: 0
+      updated: 2
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 98
+      errors: 0
+      limit_reached: true
   custom:
-    total_requests: 2112
-    last_run_at: '2026-07-31T08:14:34Z'
+    total_requests: 2142
+    last_run_at: '2026-07-31T09:57:33Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-24T21:06:03Z'
@@ -5623,9 +5689,20 @@ sources:
       rejected: 5
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:57:33Z'
+      requests: 30
+      fetched: 15
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 10
+      rejected: 5
+      errors: 0
+      limit_reached: false
   greenhouse:
-    total_requests: 64
-    last_run_at: '2026-07-31T08:14:58Z'
+    total_requests: 65
+    last_run_at: '2026-07-31T09:57:53Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-25T05:43:58Z'
@@ -6323,6 +6400,17 @@ sources:
       limit_reached: false
     - run_started_at: '2026-07-31T08:10:43Z'
       recorded_at: '2026-07-31T08:14:58Z'
+      requests: 1
+      fetched: 37
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 37
+      errors: 0
+      limit_reached: false
+    - run_started_at: '2026-07-31T09:54:42Z'
+      recorded_at: '2026-07-31T09:57:53Z'
       requests: 1
       fetched: 37
       created: 0

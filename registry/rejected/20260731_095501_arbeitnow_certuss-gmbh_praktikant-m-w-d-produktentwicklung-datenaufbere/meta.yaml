@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: praktikant-produktentwicklung-datenaufbereitung-krefeld-301519
+source_url: https://www.arbeitnow.com/jobs/companies/certuss-gmbh/praktikant-produktentwicklung-datenaufbereitung-krefeld-301519
+title: Praktikant (m/w/d) – Produktentwicklung & Datenaufbereitung
+company: CERTUSS GmbH
+location: Krefeld, Nordrhein-Westfalen, Deutschland
+published_at: '2026-07-31T08:30:07Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T09:55:01Z'
+rejected_at: '2026-07-31T09:55:01Z'

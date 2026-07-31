@@ -15,10 +15,7 @@ Anticipated Start Date
 July 27, 2026
 
 Location 
-Katy, TX 
+Katy, TX... ...standards in the field and provide feedback to the communications **engineering **team. 
+Provide 24x7 on-call support. 
 
-Type of Employment 
-Contract Hire 
-
-Employer Info 
-Our client is an American natural gas and crude oil pipeline company with...
+Skills Required...

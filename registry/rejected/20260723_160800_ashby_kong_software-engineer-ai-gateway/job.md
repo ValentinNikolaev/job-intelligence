@@ -13,7 +13,7 @@ If you don’t think you meet all of the criteria below but are still interested
 
 
 
-About the role:
+About the Role:
 
 You will join the engineering team that builds the Kong AI gateway, empowering companies and developers around the world to govern every step of their AI & LLM based innovation.
 
@@ -21,7 +21,7 @@ As a Software Engineer in the AI Gateway Team, you will be working on core featu
 
  
 
-What you'll be doing:
+What You'll Do:
 
  - Responsible for building and maintaining API management software for AI and LLMs and its underlying stack.
 
@@ -35,7 +35,7 @@ What you'll be doing:
 
  
 
-What you'll bring:
+What You'll Bring:
 
  - 3+ years of programming in server-side applications and components.
 

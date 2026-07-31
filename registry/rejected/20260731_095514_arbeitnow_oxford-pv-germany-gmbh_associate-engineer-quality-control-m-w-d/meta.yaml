@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: associate-engineer-quality-control-brandenburg-480491
+source_url: https://www.arbeitnow.com/jobs/companies/oxford-pv-germany-gmbh/associate-engineer-quality-control-brandenburg-480491
+title: Associate Engineer Quality Control (m/w/d)
+company: Oxford PV Germany GmbH
+location: Brandenburg
+published_at: '2026-07-31T07:30:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T09:55:14Z'
+rejected_at: '2026-07-31T09:55:14Z'

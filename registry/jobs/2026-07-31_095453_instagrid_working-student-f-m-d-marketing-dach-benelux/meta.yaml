@@ -1,0 +1,30 @@
+schema_version: 2
+id: ef39f3a8-f80a-457e-af51-463e2725d512
+title: Working Student (f/m/d) - Marketing DACH & Benelux
+company: Instagrid
+company_url: null
+location: Remote job
+remote: true
+employment_type: Student college, internship
+sources:
+- source: arbeitnow
+  source_job_id: remote-working-student-marketing-dach-benelux-ludwigsburg-634
+  url: https://www.arbeitnow.com/jobs/companies/instagrid/remote-working-student-marketing-dach-benelux-ludwigsburg-634
+  metadata:
+    tags:
+    - Remote
+    job_types:
+    - Student college
+    - internship
+published_at: '2026-07-31T08:50:37Z'
+discovered_at: '2026-07-31T09:54:53Z'
+updated_at: '2026-07-31T09:54:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T09:54:53Z'
+analysis_priority: 0
+fingerprint: sha256:d82ee4c42711c48ecf7cc71c12dea2f4d88a19c26d20add516f72524ceeccca5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
