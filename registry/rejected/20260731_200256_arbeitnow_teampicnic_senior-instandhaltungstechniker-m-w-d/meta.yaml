@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-instandhaltungstechniker-potsdam-brandenburg-78042
+source_url: https://www.arbeitnow.com/jobs/companies/teampicnic/senior-instandhaltungstechniker-potsdam-brandenburg-78042
+title: Senior Instandhaltungstechniker (m/w/d)
+company: Teampicnic
+location: Potsdam, Brandenburg
+published_at: '2026-07-31T17:56:51Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T20:02:56Z'
+rejected_at: '2026-07-31T20:02:56Z'

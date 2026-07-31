@@ -12,8 +12,7 @@ Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code.
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
 - For analysis, follow `references/analyze.md` and process a sealed batch of up to 15
   pending vacancies. Preparation remains exactly one vacancy per task.
-- For a normal application package, follow `references/prepare.md` with workflow `prepare` and process exactly one vacancy whose match score is at least `prepare_min_score` and below `priority_score`.
-- For a priority application package, follow `references/prepare.md` with workflow `prepare_priority` and process exactly one vacancy whose match score is at least `priority_score`.
+- For an application package, follow `references/prepare.md` with workflow `prepare` and process exactly one fresh vacancy. Priority-score vacancies are processed first; normal-score vacancies are processed only when no priority-score vacancy is pending.
 - For a user-requested status change, run `python run.py status <vacancy-id-or-directory> <status>`. Never change status without an explicit user request. Preserve the complete history through the command.
 
 Read `config/codex-workflows.yaml` before model-dependent work. The selected Scheduled Task or chat must use the corresponding model and reasoning level. Pass the workflow name to the deterministic publisher; it derives the only allowed model label from policy. If the requested model is unavailable in the current Codex surface, tell the user and do not publish under that workflow.

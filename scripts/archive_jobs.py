@@ -18,7 +18,7 @@ def read_yaml(path: Path) -> dict:
     return loaded if isinstance(loaded, dict) else {}
 
 
-def eligible(directory: Path, category: str, low_score: int) -> bool:
+def eligible(directory: Path, category: str, low_score: int, max_age_days: int) -> bool:
     meta_path = directory / "meta.yaml"
     if not meta_path.is_file():
         return False
@@ -29,18 +29,37 @@ def eligible(directory: Path, category: str, low_score: int) -> bool:
             return False
         score = read_yaml(match_path).get("score")
         return isinstance(score, int) and score < low_score
-    triage_path = directory / "triage.yaml"
-    return triage_path.is_file() and read_yaml(triage_path).get("skip_model") is True
+    if category == "skipped":
+        triage_path = directory / "triage.yaml"
+        return triage_path.is_file() and read_yaml(triage_path).get("skip_model") is True
+    discovered = parse_datetime(meta.get("discovered_at"))
+    if discovered is None:
+        return False
+    return discovered.date() < dt.date.today() - dt.timedelta(days=max_age_days)
 
 
-def archive(project_root: Path, category: str, low_score: int) -> int:
+def parse_datetime(value: object) -> dt.datetime | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.timezone.utc)
+    return parsed.astimezone(dt.timezone.utc)
+
+
+def archive(project_root: Path, category: str, low_score: int, max_age_days: int = 7) -> int:
     jobs_root = project_root / "registry" / "jobs"
     archive_root = project_root / "archives" / category
     archive_root.mkdir(parents=True, exist_ok=True)
     today = dt.date.today().isoformat()
     destination = archive_root / f"{today}.zip"
     candidates = sorted(
-        path for path in jobs_root.iterdir() if path.is_dir() and eligible(path, category, low_score)
+        path
+        for path in jobs_root.iterdir()
+        if path.is_dir() and eligible(path, category, low_score, max_age_days)
     )
     print(f"{category}: eligible={len(candidates)} threshold={THRESHOLD}")
     if len(candidates) <= THRESHOLD:
@@ -80,11 +99,12 @@ def archive(project_root: Path, category: str, low_score: int) -> int:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("category", choices=("low-score", "skipped"))
+    parser.add_argument("category", choices=("low-score", "skipped", "stale"))
     parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--low-score", type=int, default=65)
+    parser.add_argument("--max-age-days", type=int, default=7)
     args = parser.parse_args()
-    return 0 if archive(args.project_root.resolve(), args.category, args.low_score) >= 0 else 1
+    return 0 if archive(args.project_root.resolve(), args.category, args.low_score, args.max_age_days) >= 0 else 1
 
 
 if __name__ == "__main__":

@@ -14,14 +14,14 @@ class UsageTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             path = Path(temporary) / "registry" / "codex-usage.yaml"
             run = CodexUsageLog(path).record(
-                workflow="prepare-priority",
+                workflow="prepare",
                 model="codex:test",
                 run_id="run-1",
                 input_tokens=100,
                 output_tokens=25,
                 credits=0.5,
             )
-            self.assertEqual("prepare_priority", run["workflow"])
+            self.assertEqual("prepare", run["workflow"])
             self.assertEqual(125, run["total_tokens"])
             stored = yaml.safe_load(path.read_text(encoding="utf-8"))
             self.assertEqual("run-1", stored["runs"][0]["run_id"])

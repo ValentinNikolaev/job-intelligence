@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -15,7 +16,6 @@ from .workflows import WorkflowPolicy, load_workflow_policy
 
 DEFAULT_ANALYZE_MAX_ESTIMATED_INPUT_TOKENS = 9000
 DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS = 18000
-DEFAULT_PREPARE_PRIORITY_MAX_ESTIMATED_INPUT_TOKENS = 22000
 
 
 class WorkflowApiError(RuntimeError):
@@ -73,9 +73,6 @@ def workflow_summary(
         "analyzed_total": sum(1 for vacancy in vacancies if vacancy.score is not None),
         "pending_analyze": len(queue_items("analyze", project_root, registry_root, profile_paths, policy)),
         "pending_prepare": len(queue_items("prepare", project_root, registry_root, profile_paths, policy)),
-        "pending_prepare_priority": len(
-            queue_items("prepare_priority", project_root, registry_root, profile_paths, policy)
-        ),
         "prepared_total": len(prepared),
     }
 
@@ -87,9 +84,9 @@ def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[st
         "analyze_batch_size": 10,
         "analyze_max_estimated_input_tokens": DEFAULT_ANALYZE_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_max_estimated_input_tokens": DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS,
-        "prepare_priority_max_estimated_input_tokens": DEFAULT_PREPARE_PRIORITY_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_min_score": policy.prepare_min_score,
         "priority_score": policy.priority_score,
+        "prepare_max_age_days": policy.prepare_max_age_days,
     }
 
 
@@ -149,7 +146,7 @@ def queue_items(
 ) -> list[QueueItem]:
     policy = policy or _policy(project_root)
     workflow = workflow.replace("-", "_")
-    if workflow not in {"analyze", "prepare", "prepare_priority"}:
+    if workflow not in {"analyze", "prepare"}:
         raise WorkflowApiError(f"unsupported workflow queue: {workflow}")
     vacancies = load_catalog_vacancies(registry_root)
     rows = []
@@ -167,6 +164,8 @@ def queue_items(
                 continue
         else:
             if vacancy.score is None:
+                continue
+            if not _vacancy_is_fresh(vacancy.discovered_at, policy.prepare_max_age_days):
                 continue
             if not _analysis_is_current(directory, registry_root, profile_paths, policy, project_root):
                 continue
@@ -195,6 +194,15 @@ def queue_items(
                 reasons=_queue_reasons(workflow, vacancy),
             )
         )
+    if workflow == "prepare" and any(
+        item.vacancy.score is not None and policy.is_priority_score(item.vacancy.score)
+        for item in rows
+    ):
+        rows = [
+            item
+            for item in rows
+            if item.vacancy.score is not None and policy.is_priority_score(item.vacancy.score)
+        ]
     rows.sort(key=_queue_priority, reverse=True)
     return rows[:limit] if limit is not None else rows
 
@@ -245,9 +253,27 @@ def _queue_reasons(workflow: str, vacancy: CatalogVacancy) -> tuple[str, ...]:
 def _budget_for(workflow: str) -> int:
     if workflow == "analyze":
         return DEFAULT_ANALYZE_MAX_ESTIMATED_INPUT_TOKENS
-    if workflow == "prepare":
-        return DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS
-    return DEFAULT_PREPARE_PRIORITY_MAX_ESTIMATED_INPUT_TOKENS
+    return DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS
+
+
+def _vacancy_is_fresh(discovered_at: str, max_age_days: int) -> bool:
+    discovered = _parse_datetime(discovered_at)
+    if discovered is None:
+        return False
+    now = datetime.now(timezone.utc)
+    return discovered >= now - timedelta(days=max_age_days)
+
+
+def _parse_datetime(value: str) -> datetime | None:
+    if not value:
+        return None
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
 
 
 def _budget_status(estimate: int, budget: int) -> str:

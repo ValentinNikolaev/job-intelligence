@@ -27,12 +27,11 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    - Run the normal triage and sealed analyze-pack commands.
    - If the sealed pack includes other vacancies, publish results only when the pack contract can be honored for every included directory. Otherwise stop and tell the user to create a dedicated analysis task or rerun when the queue can be safely processed.
    - Do not read unrelated vacancy directories while producing the match result.
-5. Decide preparation route from the published match score:
+5. Decide preparation from the published match score:
    - If score is below `prepare_min_score`, stop after catalog/check/finalization and report that no CV or cover letter should be prepared under repository policy.
-   - If score is from `prepare_min_score` through `priority_score - 1`, use workflow `prepare`.
-   - If score is at least `priority_score`, use workflow `prepare_priority` and CLI spelling `prepare-priority`.
+   - If score is at least `prepare_min_score`, use workflow `prepare`. Priority-score vacancies are handled first by the queue, but the publisher uses the same workflow for all prepared applications.
 6. Prepare exactly this vacancy with `$job-intelligence-workflow` preparation rules. Read only its `meta.yaml`, `job.md`, optional `company.md`, configured candidate source files, and `prompts/vacancy-application.md`. Write drafts under `.codex-work/application/<vacancy-directory>/`.
-7. Publish with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow <prepare|prepare-priority>`. If validation or DOCX conversion fails, fix the draft or deterministic converter issue and retry.
+7. Publish with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow prepare`. If validation or DOCX conversion fails, fix the draft or deterministic converter issue and retry.
 8. Confirm the application directory contains the published Markdown artifacts, DOCX artifacts, and `manifest.yaml`.
 9. Regenerate the vacancy catalog through `$generate-vacancy-catalog`, run required tests and the prohibited-API scan, inspect the full diff, stage, commit, and push when repository files changed.
 

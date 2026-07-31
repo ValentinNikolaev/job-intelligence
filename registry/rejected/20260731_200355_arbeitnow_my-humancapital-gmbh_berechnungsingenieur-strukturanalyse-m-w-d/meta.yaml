@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: berechnungsingenieur-strukturanalyse-munich-379863
+source_url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/berechnungsingenieur-strukturanalyse-munich-379863
+title: Berechnungsingenieur Strukturanalyse (m/w/d)
+company: MY Humancapital GmbH
+location: Munich
+published_at: '2026-07-31T17:00:36Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T20:03:55Z'
+rejected_at: '2026-07-31T20:03:55Z'

@@ -76,8 +76,7 @@ jobs:
           run_and_report "Workflow summary" hard python run.py api workflow-summary --json
           run_and_report "Workflow limits" hard python run.py api workflow-limits --json
           run_and_report "Analyze queue" hard python run.py api queues analyze --json --limit 10
-          run_and_report "Priority preparation queue" hard python run.py api queues prepare-priority --json --limit 10
-          run_and_report "Normal preparation queue" hard python run.py api queues prepare --json --limit 10
+          run_and_report "Preparation queue" hard python run.py api queues prepare --json --limit 10
           run_and_report "Source API usage" hard python run.py api source-usage --json
           run_and_report "Top vacancies" hard python run.py top 5
 

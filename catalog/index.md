@@ -2,11 +2,11 @@
 
 # Vacancy Catalog
 
-Total vacancies: 1153
+Total vacancies: 1157
 
-- Found: 224
+- Found: 227
 - Applied: 5
-- Rejected: 922
+- Rejected: 923
 - Closed: 2
 
 ## Monthly catalogs
@@ -17,6 +17,10 @@ Total vacancies: 1153
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-07-31 | [TechBiz Global GmbH](../registry/jobs/2026-07-31_200312_techbiz-global-gmbh_senior-enterprise-architect-insurance-industry/) | [Senior Enterprise Architect (Insurance Industry)](../registry/jobs/2026-07-31_200312_techbiz-global-gmbh_senior-enterprise-architect-insurance-industry/job.md) | Remote job | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-enterprise-architect-insurance-industry-aachen-443177) | — | — | — | — | — |
+| 2026-07-31 | [selectry GmbH](../registry/jobs/2026-07-31_200308_selectry-gmbh_senior-recruiter-f-m-d-remote-germany/) | [Senior Recruiter (f/m/d) Remote Germany](../registry/jobs/2026-07-31_200308_selectry-gmbh_senior-recruiter-f-m-d-remote-germany/job.md) | Homeoffice | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/selectry-gmbh/senior-recruiter-remote-germany-berlin-461757) | — | — | — | — | — |
+| 2026-07-31 | [selectry GmbH](../registry/jobs/2026-07-31_200305_selectry-gmbh_working-student-sales-and-operations-m-f-d/) | [Working Student Sales and Operations (m/f/d)](../registry/jobs/2026-07-31_200305_selectry-gmbh_working-student-sales-and-operations-m-f-d/job.md) | Homeoffice | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/selectry-gmbh/remote-working-student-sales-and-operations-berlin-307260) | — | — | — | — | — |
+| 2026-07-31 | [wolt](../registry/jobs/2026-07-31_200259_wolt_courier-hr-senior-specialist/) | [Courier HR Senior Specialist](../registry/jobs/2026-07-31_200259_wolt_courier-hr-senior-specialist/job.md) | Zagreb, Croatia | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/wolt/courier-hr-senior-specialist-zagreb-croatia-51641) | — | — | — | — | — |
 | 2026-07-31 | [Pragmatike](../registry/jobs/2026-07-31_183723_pragmatike_backend-software-engineer-us-remote/) | [Backend Software Engineer - US Remote](../registry/jobs/2026-07-31_183723_pragmatike_backend-software-engineer-us-remote/job.md) | Los Angeles, CA | Jooble | Found | 2026-07-31 | [Jooble](https://jooble.org/away/-8809554455443407416?p=1&pos=8&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=12&brelb=115&scr=582.62726&bscr=582.62726&aq=-340276221690624331&elckey=-689236854289140090) | — | — | — | — | — |
 | 2026-07-31 | [Soley GmbH](../registry/jobs/2026-07-31_183211_soley-gmbh_werkstudent-in-gtm-engineering-ai-automation-m-w/) | [Werkstudent:in GTM Engineering & AI Automation (m/w/d)](../registry/jobs/2026-07-31_183211_soley-gmbh_werkstudent-in-gtm-engineering-ai-automation-m-w/job.md) | Munich | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/soley-gmbh/werkstudentin-gtm-engineering-ai-automation-munich-267859) | — | — | — | — | — |
 | 2026-07-31 | [Quid](../registry/jobs/2026-07-31_183208_quid_growth-intern-f-m-d-mandatory-6-months-unpaid-in/) | [Growth Intern (f/m/d) - Mandatory 6 Months Unpaid Internship](../registry/jobs/2026-07-31_183208_quid_growth-intern-f-m-d-mandatory-6-months-unpaid-in/job.md) | Berlin | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/quid/growth-intern-mandatory-6-months-unpaid-internship-berlin-227219) | — | — | — | — | — |
@@ -33,7 +37,3 @@ Total vacancies: 1153
 | 2026-07-31 | [fino data services GmbH](../registry/jobs/2026-07-31_154330_fino-data-services-gmbh_seo-website-conversion-manager-all-genders/) | [SEO, Website & Conversion Manager (all genders)](../registry/jobs/2026-07-31_154330_fino-data-services-gmbh_seo-website-conversion-manager-all-genders/job.md) | Kassel | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/fino-data-services-gmbh/seo-website-conversion-manager-all-genders-kassel-178628) | — | — | — | — | — |
 | 2026-07-31 | [Visium](../registry/jobs/2026-07-31_154322_visium_senior-data-modeler-data-vault/) | [Senior Data Modeler (Data Vault)](../registry/jobs/2026-07-31_154322_visium_senior-data-modeler-data-vault/job.md) | Munich, Germany | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/visium/senior-data-modeler-data-vault-munich-187539) | — | — | — | — | — |
 | 2026-07-31 | [Visium](../registry/jobs/2026-07-31_154320_visium_senior-data-modeler-data-vault/) | [Senior Data Modeler (Data Vault)](../registry/jobs/2026-07-31_154320_visium_senior-data-modeler-data-vault/job.md) | Berlin, Germany | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/visium/senior-data-modeler-data-vault-berlin-131375) | — | — | — | — | — |
-| 2026-07-31 | [Via](../registry/jobs/2026-07-31_154318_via_working-student-legal-german/) | [Working Student, Legal (German)](../registry/jobs/2026-07-31_154318_via_working-student-legal-german/job.md) | Berlin | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/via/working-student-legal-german-berlin-10884) | — | — | — | — | — |
-| 2026-07-31 | [Quaker Houghton](../registry/jobs/2026-07-31_154316_quaker-houghton_customer-service-representative-with-german-temp/) | [Customer Service Representative with German (TEMP/FTC)](../registry/jobs/2026-07-31_154316_quaker-houghton_customer-service-representative-with-german-temp/job.md) | Dortmund | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/quaker-houghton/customer-service-representative-with-german-temp-ftc-dortmund-306914) | — | — | — | — | — |
-| 2026-07-31 | [SAPPLIER GmbH](../registry/jobs/2026-07-31_154313_sapplier-gmbh_sap-ewm-inhouse-berater-m-w-d/) | [SAP EWM Inhouse Berater (m/w/d)](../registry/jobs/2026-07-31_154313_sapplier-gmbh_sap-ewm-inhouse-berater-m-w-d/job.md) | Erfurt | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/sapplier-gmbh/sap-ewm-inhouse-berater-erfurt-44063) | — | — | — | — | — |
-| 2026-07-31 | [SAPPLIER GmbH](../registry/jobs/2026-07-31_154311_sapplier-gmbh_sap-ewm-inhouse-berater-m-w-d/) | [SAP EWM Inhouse Berater (m/w/d)](../registry/jobs/2026-07-31_154311_sapplier-gmbh_sap-ewm-inhouse-berater-m-w-d/job.md) | Plattling | Arbeitnow | Found | 2026-07-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/sapplier-gmbh/sap-ewm-inhouse-berater-plattling-258772) | — | — | — | — | — |

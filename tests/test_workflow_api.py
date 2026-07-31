@@ -4,7 +4,7 @@ import json
 import tempfile
 import unittest
 from contextlib import redirect_stdout
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from io import StringIO
 from pathlib import Path
 from typing import Any, Mapping
@@ -52,6 +52,7 @@ class WorkflowApiTests(unittest.TestCase):
                     "schema_version": 1,
                     "prepare_min_score": 65,
                     "priority_score": 75,
+                    "prepare_max_age_days": 7,
                     "workflows": {
                         "analyze": {
                             "model": "gpt-5.6-luna",
@@ -59,11 +60,6 @@ class WorkflowApiTests(unittest.TestCase):
                             "model_label": "codex:gpt-5.6-luna:low",
                         },
                         "prepare": {
-                            "model": "gpt-5.5",
-                            "reasoning": "medium",
-                            "model_label": "codex:gpt-5.5:medium",
-                        },
-                        "prepare_priority": {
                             "model": "gpt-5.6-terra",
                             "reasoning": "medium",
                             "model_label": "codex:gpt-5.6-terra:medium",
@@ -81,7 +77,7 @@ class WorkflowApiTests(unittest.TestCase):
         self.profile.write_text("# Candidate\n\nBackend engineer using Go.\n", encoding="utf-8")
         registry = Registry(
             self.registry_root,
-            clock=lambda: datetime(2026, 7, 23, tzinfo=timezone.utc),
+            clock=lambda: datetime.now(timezone.utc) - timedelta(days=1),
             id_factory=lambda: "vacancy-analyze",
         )
         self.pending = registry.upsert(
@@ -96,7 +92,7 @@ class WorkflowApiTests(unittest.TestCase):
         )
         registry = Registry(
             self.registry_root,
-            clock=lambda: datetime(2026, 7, 24, tzinfo=timezone.utc),
+            clock=lambda: datetime.now(timezone.utc) - timedelta(days=1),
             id_factory=lambda: "vacancy-prepare",
         )
         self.preparable = registry.upsert(
@@ -113,7 +109,7 @@ class WorkflowApiTests(unittest.TestCase):
             self.registry_root,
             [self.profile],
             FakeMatchClient(72),
-            clock=lambda: datetime(2026, 7, 24, tzinfo=timezone.utc),
+            clock=lambda: datetime.now(timezone.utc) - timedelta(days=1),
         ).analyze_directory(self.registry_root / "jobs" / self.preparable.directory)
 
     def tearDown(self) -> None:
@@ -135,7 +131,7 @@ class WorkflowApiTests(unittest.TestCase):
     def test_analyze_queue_orders_priority_items_first(self) -> None:
         registry = Registry(
             self.registry_root,
-            clock=lambda: datetime(2026, 7, 22, tzinfo=timezone.utc),
+            clock=lambda: datetime.now(timezone.utc),
             id_factory=lambda: "vacancy-priority",
         )
         priority = registry.upsert(
@@ -154,6 +150,55 @@ class WorkflowApiTests(unittest.TestCase):
 
         self.assertEqual(priority.directory, analyze["items"][0]["directory"])
         self.assertEqual(100, analyze["items"][0]["analysis_priority"])
+
+    def test_prepare_queue_returns_priority_before_normal_and_excludes_stale(self) -> None:
+        fresh_priority_registry = Registry(
+            self.registry_root,
+            clock=lambda: datetime.now(timezone.utc),
+            id_factory=lambda: "vacancy-priority-prepare",
+        )
+        priority = fresh_priority_registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="priority-prepare",
+                source_url="https://example.test/priority-prepare",
+                title="Staff Backend Engineer",
+                company="Priority",
+                description="Build APIs.",
+            )
+        )
+        MatchAnalyzer(
+            self.registry_root,
+            [self.profile],
+            FakeMatchClient(80),
+            clock=lambda: datetime.now(timezone.utc),
+        ).analyze_directory(self.registry_root / "jobs" / priority.directory)
+        stale_registry = Registry(
+            self.registry_root,
+            clock=lambda: datetime.now(timezone.utc) - timedelta(days=8),
+            id_factory=lambda: "vacancy-stale-prepare",
+        )
+        stale = stale_registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="stale-prepare",
+                source_url="https://example.test/stale-prepare",
+                title="Backend Engineer",
+                company="Stale",
+                description="Build APIs.",
+            )
+        )
+        MatchAnalyzer(
+            self.registry_root,
+            [self.profile],
+            FakeMatchClient(90),
+            clock=lambda: datetime.now(timezone.utc),
+        ).analyze_directory(self.registry_root / "jobs" / stale.directory)
+
+        prepare = queue_response("prepare", self.project, self.registry_root, [self.profile])
+
+        directories = [item["directory"] for item in prepare["items"]]
+        self.assertEqual([priority.directory], directories)
 
     def test_source_usage_and_catalog_contracts(self) -> None:
         ApiUsageLog(self.registry_root / "source-api-usage.yaml").record(

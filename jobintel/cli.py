@@ -5,7 +5,7 @@ import hashlib
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -68,7 +68,7 @@ def _parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--workflow",
-        help="configured Codex workflow: analyze, prepare, or prepare-priority",
+        help="configured Codex workflow: analyze or prepare",
     )
     parser.add_argument(
         "--collection-limit",
@@ -592,14 +592,10 @@ def _run_api(
             payload = catalog_vacancies(registry_dir)
         elif command == "queues":
             if len(args.arguments) != 2:
-                raise ValueError("api queues requires one workflow: analyze, prepare, or prepare-priority")
+                raise ValueError("api queues requires one workflow: analyze or prepare")
             workflow = args.arguments[1].replace("_", "-")
-            if workflow == "prepare-priority":
-                workflow_name = "prepare_priority"
-            else:
-                workflow_name = workflow
             payload = queue_response(
-                workflow_name,
+                workflow,
                 project_root,
                 registry_dir,
                 profile_paths,
@@ -766,7 +762,7 @@ def _run_preparation(
     if len(args.arguments) != 1:
         print(
             "Usage: python run.py prepare <job-directory|vacancy-id> --input <draft-directory> "
-            "--workflow <prepare|prepare-priority> [--force]",
+            "--workflow prepare [--force]",
             file=sys.stderr,
         )
         return 2
@@ -776,13 +772,18 @@ def _run_preparation(
 
     try:
         policy, model_label = _selected_workflow(
-            args.workflow, project_root, {"prepare", "prepare_priority"}
+            args.workflow, project_root, {"prepare"}
         )
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         directories = resolve_job_directories(registry_dir, args.arguments[0])
         if len(directories) != 1:
             raise ValueError("prepare publishes exactly one Codex draft at a time")
+        if not _vacancy_is_fresh(directories[0], policy.prepare_max_age_days):
+            raise ValueError(
+                f"vacancy is older than prepare_max_age_days {policy.prepare_max_age_days}; "
+                "do not prepare stale vacancies"
+            )
         if not _analysis_is_current(directories[0], registry_dir, profile_paths, policy, project_root):
             raise ValueError("match analysis is missing or stale; run workflow analyze first")
         score = _match_score(directories[0])
@@ -829,7 +830,7 @@ def _run_pending(
     if len(args.arguments) not in (1, 2) or args.arguments[0] not in {"analyze", "prepare"}:
         print(
             "Usage: python run.py pending <analyze|prepare> [all|job-directory|vacancy-id] "
-            "--workflow <analyze|prepare|prepare-priority>",
+            "--workflow <analyze|prepare>",
             file=sys.stderr,
         )
         return 2
@@ -843,7 +844,7 @@ def _run_pending(
     stage = args.arguments[0]
     selector = args.arguments[1] if len(args.arguments) == 2 else "all"
     try:
-        allowed = {"analyze"} if stage == "analyze" else {"prepare", "prepare_priority"}
+        allowed = {"analyze"} if stage == "analyze" else {"prepare"}
         policy, model_label = _selected_workflow(args.workflow, project_root, allowed)
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
@@ -863,6 +864,7 @@ def _run_pending(
         directories = resolve_job_directories(registry_dir, selector)
         if stage == "analyze":
             directories = sorted(directories, key=_pending_analysis_queue_key, reverse=True)
+        pending_prepare: list[Path] = []
         for directory in directories:
             if stage == "analyze":
                 if should_skip_model(directory):
@@ -876,6 +878,8 @@ def _run_pending(
                     ),
                 )
             else:
+                if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
+                    continue
                 if not _analysis_is_current(
                     directory, registry_dir, profile_paths, policy, project_root
                 ):
@@ -894,6 +898,23 @@ def _run_pending(
                     HostMarkdownDocxConverter(project_root),
                 )
             if not checker.is_current(directory):
+                if stage == "analyze":
+                    print(directory)
+                else:
+                    pending_prepare.append(directory)
+        if stage == "prepare":
+            if any(
+                (score := _optional_match_score(directory)) is not None
+                and policy.is_priority_score(score)
+                for directory in pending_prepare
+            ):
+                pending_prepare = [
+                    directory
+                    for directory in pending_prepare
+                    if (score := _optional_match_score(directory)) is not None
+                    and policy.is_priority_score(score)
+                ]
+            for directory in sorted(pending_prepare, key=_pending_prepare_queue_key, reverse=True):
                 print(directory)
     except Exception as exc:
         print(f"Pending check failed: {exc}", file=sys.stderr)
@@ -964,19 +985,38 @@ def _pending_analysis_queue_key(directory: Path) -> tuple[int, str, str]:
     return (priority, str(meta.get("discovered_at") or ""), directory.name)
 
 
+def _pending_prepare_queue_key(directory: Path) -> tuple[int, str, str]:
+    score = _optional_match_score(directory) or 0
+    try:
+        meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+    except ValueError:
+        return (score, "", directory.name)
+    return (score, str(meta.get("discovered_at") or ""), directory.name)
+
+
 def _ineligible_score_message(policy: WorkflowPolicy, workflow: str, score: int) -> str:
-    canonical = workflow.replace("-", "_")
+    del workflow
     if score < policy.prepare_min_score:
         return (
             f"vacancy score {score} is below prepare_min_score {policy.prepare_min_score}; "
             "no application package should be prepared"
         )
-    if canonical == "prepare":
-        return f"vacancy score {score} belongs to prepare-priority (minimum {policy.priority_score})"
-    return (
-        f"vacancy score {score} belongs to prepare "
-        f"({policy.prepare_min_score}-{policy.priority_score - 1})"
-    )
+    return f"vacancy score {score} is eligible for prepare"
+
+
+def _vacancy_is_fresh(directory: Path, max_age_days: int) -> bool:
+    try:
+        meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+    except ValueError:
+        return False
+    discovered_at = str(meta.get("discovered_at") or "")
+    try:
+        discovered = datetime.fromisoformat(discovered_at.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    if discovered.tzinfo is None:
+        discovered = discovered.replace(tzinfo=timezone.utc)
+    return discovered.astimezone(timezone.utc) >= datetime.now(timezone.utc) - timedelta(days=max_age_days)
 
 
 def _run_doctor(

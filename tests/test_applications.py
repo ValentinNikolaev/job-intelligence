@@ -125,7 +125,7 @@ class ApplicationTests(unittest.TestCase):
         self.profile.write_text("# Candidate\n\nBackend engineer using Go.\n", encoding="utf-8")
         self.prompt = self.project / "prompt.md"
         self.prompt.write_text("Prepare exactly one application package.\n", encoding="utf-8")
-        self.now = datetime(2026, 7, 22, 20, 0, tzinfo=timezone.utc)
+        self.now = datetime.now(timezone.utc).replace(microsecond=0)
         registry = Registry(
             self.registry_root,
             clock=lambda: self.now,
@@ -194,7 +194,7 @@ class ApplicationTests(unittest.TestCase):
         )
         manifest = yaml.safe_load((application / "manifest.yaml").read_text(encoding="utf-8"))
         self.assertEqual("test-model", manifest["model"])
-        self.assertEqual("2026-07-22T20:00:00Z", manifest["generated_at"])
+        self.assertEqual(self.now.isoformat().replace("+00:00", "Z"), manifest["generated_at"])
         self.assertEqual(
             "CV_ValentinNikolaev_example_SeniorBackendEngineer",
             manifest["cv_export_stem"],
@@ -400,7 +400,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(0, exit_code)
         self.assertTrue((self.directory / "application" / "manifest.yaml").is_file())
 
-    def test_pending_prepare_queues_are_disjoint_and_exclude_low_scores(self) -> None:
+    def test_pending_prepare_prioritizes_high_scores_then_falls_back_to_normal(self) -> None:
         directories: dict[int, str] = {}
         for score in (64, 65, 74, 75):
             registry = Registry(
@@ -427,9 +427,9 @@ class ApplicationTests(unittest.TestCase):
             ).analyze_directory(directory)
             directories[score] = directory.name
 
-        normal = StringIO()
-        with redirect_stdout(normal):
-            normal_exit = main(
+        output = StringIO()
+        with redirect_stdout(output):
+            exit_code = main(
                 [
                     "pending",
                     "prepare",
@@ -440,32 +440,50 @@ class ApplicationTests(unittest.TestCase):
                     str(self.profile),
                     "--workflow",
                     "prepare",
-                ]
-            )
-        priority = StringIO()
-        with redirect_stdout(priority):
-            priority_exit = main(
-                [
-                    "pending",
-                    "prepare",
-                    "all",
-                    "--registry",
-                    str(self.registry_root),
-                    "--profile",
-                    str(self.profile),
-                    "--workflow",
-                    "prepare-priority",
                 ]
             )
 
-        self.assertEqual(0, normal_exit)
-        self.assertEqual(0, priority_exit)
-        self.assertNotIn(directories[64], normal.getvalue())
-        self.assertIn(directories[65], normal.getvalue())
-        self.assertIn(directories[74], normal.getvalue())
-        self.assertNotIn(directories[75], normal.getvalue())
-        self.assertNotIn(directories[65], priority.getvalue())
-        self.assertIn(directories[75], priority.getvalue())
+        self.assertEqual(0, exit_code)
+        self.assertNotIn(directories[64], output.getvalue())
+        self.assertNotIn(directories[65], output.getvalue())
+        self.assertNotIn(directories[74], output.getvalue())
+        self.assertIn(directories[75], output.getvalue())
+
+        (self.registry_root / "jobs" / directories[75] / "application").mkdir()
+        (self.registry_root / "jobs" / directories[75] / "application" / "manifest.yaml").write_text(
+            yaml.safe_dump(
+                {
+                    "model": "codex:gpt-5.6-terra:medium",
+                    "candidate_version": "different",
+                    "vacancy_version": "different",
+                    "prompt_version": "different",
+                    "files": [],
+                }
+            ),
+            encoding="utf-8",
+        )
+        with patch("jobintel.cli.ApplicationGenerator.is_current", side_effect=lambda directory: directory.name == directories[75]):
+            fallback = StringIO()
+            with redirect_stdout(fallback):
+                fallback_exit = main(
+                    [
+                        "pending",
+                        "prepare",
+                        "all",
+                        "--registry",
+                        str(self.registry_root),
+                        "--profile",
+                        str(self.profile),
+                        "--workflow",
+                        "prepare",
+                    ]
+                )
+
+        self.assertEqual(0, fallback_exit)
+        self.assertNotIn(directories[64], fallback.getvalue())
+        self.assertIn(directories[65], fallback.getvalue())
+        self.assertIn(directories[74], fallback.getvalue())
+        self.assertNotIn(directories[75], fallback.getvalue())
 
 
 if __name__ == "__main__":

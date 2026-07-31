@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-support-specialist-2nd-level-munich-322523
+source_url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/it-support-specialist-2nd-level-munich-322523
+title: IT Support Specialist 2nd Level (m/w/d)
+company: MY Humancapital GmbH
+location: Munich
+published_at: '2026-07-31T17:00:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T20:03:36Z'
+rejected_at: '2026-07-31T20:03:36Z'

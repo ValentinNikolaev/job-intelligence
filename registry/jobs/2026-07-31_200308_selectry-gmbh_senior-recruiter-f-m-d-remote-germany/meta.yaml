@@ -1,0 +1,31 @@
+schema_version: 2
+id: 591294ea-c8dc-4e6d-a902-a1f6cd1d175b
+title: Senior Recruiter (f/m/d) Remote Germany
+company: selectry GmbH
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: senior-recruiter-remote-germany-berlin-461757
+  url: https://www.arbeitnow.com/jobs/companies/selectry-gmbh/senior-recruiter-remote-germany-berlin-461757
+  metadata:
+    tags:
+    - Project & People Ops / Delivery
+    - Remote
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-07-31T17:50:24Z'
+discovered_at: '2026-07-31T20:03:08Z'
+updated_at: '2026-07-31T20:03:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T20:03:08Z'
+analysis_priority: 0
+fingerprint: sha256:a6639f75ca73a2de05ad7f8c3403110825a389d1c898c67cd1c9d0ecaf67a28f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

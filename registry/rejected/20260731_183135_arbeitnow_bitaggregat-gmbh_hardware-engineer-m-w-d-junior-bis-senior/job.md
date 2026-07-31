@@ -95,4 +95,4 @@ Wenn Du Lust hast, anspruchsvolle Hardware zu entwickeln und die nächste Genera
 
 Gestalte mit uns Deine Zukunft. Wir freuen uns auf Deine Nachricht!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

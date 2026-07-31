@@ -36,8 +36,8 @@ values locally without invoking a model.
 
 ## Model routing
 
-Normal packages use GPT-5.5 with medium reasoning for scores from 65 through 74.
-Vacancies scoring at least 75 use GPT-5.6 Terra with medium reasoning; scores below 65
-are not prepared. These are separate Codex tasks because a running task
-cannot switch its own model. If the configured model is unavailable, report the problem
-instead of publishing under an inaccurate label.
+The single `prepare` route uses the model configured in `config/codex-workflows.yaml`.
+Scores below `prepare_min_score` are not prepared. Fresh vacancies scoring at least
+`priority_score` are prepared first; normal-score vacancies are prepared only when no
+priority-score vacancy is pending. Vacancies older than `prepare_max_age_days` from
+`discovered_at` are excluded from preparation.

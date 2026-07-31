@@ -23,6 +23,7 @@ class Workflow:
 class WorkflowPolicy:
     prepare_min_score: int
     priority_score: int
+    prepare_max_age_days: int
     workflows: dict[str, Workflow]
 
     def workflow(self, name: str) -> Workflow:
@@ -36,10 +37,11 @@ class WorkflowPolicy:
     def prepare_score_is_eligible(self, workflow: str, score: int) -> bool:
         canonical = workflow.strip().casefold().replace("-", "_")
         if canonical == "prepare":
-            return self.prepare_min_score <= score < self.priority_score
-        if canonical == "prepare_priority":
-            return self.priority_score <= score <= 100
+            return self.prepare_min_score <= score <= 100
         raise WorkflowError(f"workflow {workflow!r} is not a preparation workflow")
+
+    def is_priority_score(self, score: int) -> bool:
+        return self.priority_score <= score <= 100
 
 
 def load_workflow_policy(path: Path) -> WorkflowPolicy:
@@ -58,12 +60,13 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
     priority = _score(loaded.get("priority_score"), "priority_score")
     if prepare_min >= priority:
         raise WorkflowError("prepare_min_score must be lower than priority_score")
+    prepare_max_age_days = _positive_int(loaded.get("prepare_max_age_days", 7), "prepare_max_age_days")
 
     raw_workflows = loaded.get("workflows")
     if not isinstance(raw_workflows, dict):
         raise WorkflowError("workflows must be a YAML mapping")
     workflows: dict[str, Workflow] = {}
-    for name in ("analyze", "prepare", "prepare_priority"):
+    for name in ("analyze", "prepare"):
         raw = raw_workflows.get(name)
         if not isinstance(raw, dict):
             raise WorkflowError(f"workflow {name!r} must be a YAML mapping")
@@ -74,10 +77,16 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
                 raise WorkflowError(f"workflow {name!r} has invalid {field}")
             values[field] = value.strip()
         workflows[name] = Workflow(name, values["model"], values["reasoning"], values["model_label"])
-    return WorkflowPolicy(prepare_min, priority, workflows)
+    return WorkflowPolicy(prepare_min, priority, prepare_max_age_days, workflows)
 
 
 def _score(value: Any, field: str) -> int:
     if isinstance(value, bool) or not isinstance(value, int) or not 0 <= value <= 100:
         raise WorkflowError(f"{field} must be an integer from 0 to 100")
+    return value
+
+
+def _positive_int(value: Any, field: str) -> int:
+    if isinstance(value, bool) or not isinstance(value, int) or value <= 0:
+        raise WorkflowError(f"{field} must be a positive integer")
     return value

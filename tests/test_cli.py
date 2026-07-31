@@ -208,6 +208,7 @@ class CliTests(unittest.TestCase):
                         "schema_version": 1,
                         "prepare_min_score": 65,
                         "priority_score": 75,
+                        "prepare_max_age_days": 7,
                         "workflows": {
                             "analyze": {
                                 "model": "gpt-5.6-luna",
@@ -215,11 +216,6 @@ class CliTests(unittest.TestCase):
                                 "model_label": "codex:gpt-5.6-luna:low",
                             },
                             "prepare": {
-                                "model": "gpt-5.5",
-                                "reasoning": "medium",
-                                "model_label": "codex:gpt-5.5:medium",
-                            },
-                            "prepare_priority": {
                                 "model": "gpt-5.6-terra",
                                 "reasoning": "medium",
                                 "model_label": "codex:gpt-5.6-terra:medium",

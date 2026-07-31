@@ -5,6 +5,7 @@ note: >-
   provenance label from the explicitly selected workflow.
 priority_score: 75
 prepare_min_score: 65
+prepare_max_age_days: 7
 workflows:
   analyze:
     model: gpt-5.6-luna
@@ -12,12 +13,9 @@ workflows:
     model_label: codex:gpt-5.6-luna:low
     purpose: High-volume vacancy scoring and initial selection.
   prepare:
-    model: gpt-5.5
-    reasoning: medium
-    model_label: codex:gpt-5.5:medium
-    purpose: Normal application packages for vacancies scoring from 65 up to 74.
-  prepare_priority:
     model: gpt-5.6-terra
     reasoning: medium
     model_label: codex:gpt-5.6-terra:medium
-    purpose: Application packages for vacancies with a match score of at least 75.
+    purpose: >
+      Single application package workflow. Prioritize vacancies scoring at least
+      75 while any are pending, then process eligible normal-score vacancies.

@@ -156,7 +156,6 @@ python run.py api queues prepare --json
 python run.py pending analyze all --workflow analyze
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
 python run.py pending prepare all --workflow prepare
-python run.py pending prepare all --workflow prepare-priority
 python run.py prepare <job-directory-or-vacancy-id> --input <draft-directory> --workflow prepare
 ```
 
@@ -348,14 +347,15 @@ validation, failure handling, and configuration details.
 Deterministic collection and maintenance are handled by the GitHub Actions workflow in
 `.github/workflows/job-intelligence-collection.yml`. Versioned Codex task prompts for
 model-dependent work live under `prompts/`, and the reusable repo skill lives under
-`.agents/skills/job-intelligence-workflow/`. Create separate Codex tasks because a
-running task cannot switch its own model:
+`.agents/skills/job-intelligence-workflow/`.
 
 | Task | Model | Reasoning |
 |---|---|---|
 | Analyze | GPT-5.6 Luna | low |
-| Normal prepare (score 65-74) | GPT-5.5 | medium |
-| Priority prepare (score at least 75) | GPT-5.6 Terra | medium |
+| Prepare | GPT-5.6 Terra | medium |
+
+The prepare queue processes fresh priority-score vacancies first, then falls back to
+normal-score vacancies only when no priority vacancy is pending.
 
 The authoritative routing policy is
 [`config/codex-workflows.yaml`](config/codex-workflows.yaml). The configured model must be

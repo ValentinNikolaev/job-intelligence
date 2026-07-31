@@ -15,12 +15,12 @@ class WorkflowPolicyTests(unittest.TestCase):
         self.assertFalse(policy.prepare_score_is_eligible("prepare", 64))
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 65))
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 74))
-        self.assertFalse(policy.prepare_score_is_eligible("prepare", 75))
-        self.assertFalse(policy.prepare_score_is_eligible("prepare-priority", 74))
-        self.assertTrue(policy.prepare_score_is_eligible("prepare-priority", 75))
+        self.assertTrue(policy.prepare_score_is_eligible("prepare", 75))
+        self.assertTrue(policy.is_priority_score(75))
+        self.assertEqual(7, policy.prepare_max_age_days)
         self.assertEqual(
             "codex:gpt-5.6-terra:medium",
-            policy.workflow("prepare-priority").model_label,
+            policy.workflow("prepare").model_label,
         )
 
     def test_invalid_threshold_order_is_rejected(self) -> None:
