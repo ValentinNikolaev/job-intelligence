@@ -1,0 +1,27 @@
+schema_version: 2
+id: 38476d2c-ef63-4ba4-9098-bed32322cc82
+title: Director of Business Development (MCM)
+company: moloco
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: director-of-business-development-mcm-berlin-472254
+  url: https://www.arbeitnow.com/jobs/companies/moloco/director-of-business-development-mcm-berlin-472254
+  metadata:
+    tags:
+    - MCM Business Development
+published_at: '2026-07-31T14:55:48Z'
+discovered_at: '2026-07-31T18:31:42Z'
+updated_at: '2026-07-31T18:31:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T18:31:42Z'
+analysis_priority: 0
+fingerprint: sha256:7d108bc08d1af8ea5b8514269ea1f063fb77a868325b7cba5d94e5502bbb1e63
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

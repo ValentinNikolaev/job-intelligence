@@ -1,6 +1,6 @@
 schema_version: 2
 id: 8ea8daa5-2473-4990-a481-d0495b65bbe8
-title: “Founder’s Associate / Junior Chief of Staff”
+title: “Founder’s Associate / Chief of Staff”
 company: Flybaby GmbH
 company_url: null
 location: Berlin
@@ -14,15 +14,15 @@ sources:
     tags:
     - Management
     - Team Leader
-published_at: '2026-07-31T12:30:27Z'
+published_at: '2026-07-31T16:59:04Z'
 discovered_at: '2026-07-31T15:43:00Z'
-updated_at: '2026-07-31T15:43:00Z'
+updated_at: '2026-07-31T18:32:31Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-07-31T15:43:00Z'
 analysis_priority: 0
-fingerprint: sha256:46d68733e6753c29076162968a511106d0e67380d4614022cb52dde9158e7662
+fingerprint: sha256:9cec93b3261fa629097150affb96f45d4e5d9a5e46e6f7ebbb53eeb2f83e8b28
 data_source: arbeitnow
 content_source: arbeitnow
 company_content_source: null

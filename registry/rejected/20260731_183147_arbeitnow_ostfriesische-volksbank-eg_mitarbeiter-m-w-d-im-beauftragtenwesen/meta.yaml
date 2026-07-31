@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: mitarbeiter-im-beauftragtenwesen-leer-131428
+source_url: https://www.arbeitnow.com/jobs/companies/ostfriesische-volksbank-eg/mitarbeiter-im-beauftragtenwesen-leer-131428
+title: Mitarbeiter (m/w/d) im Beauftragtenwesen
+company: Ostfriesische Volksbank eG
+location: Leer
+published_at: '2026-07-31T14:30:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T18:31:47Z'
+rejected_at: '2026-07-31T18:31:47Z'

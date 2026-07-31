@@ -149,4 +149,4 @@ This role offers the opportunity to contribute to the growth and success of our 
 
 limehome is a leading tech-enabled operator in the hospitality industry offering functional, design accommodations across Europe. Using proprietary technology, limehome delivers comfortable and convenient stays with a seamless digital guest experience for business and leisure travellers. Our vision is to be the first choice in travel for everyone, everywhere. By now, our portfolio consists of more than 10,000 apartments and hotel rooms under contract across 150 cities in 13 European countries.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

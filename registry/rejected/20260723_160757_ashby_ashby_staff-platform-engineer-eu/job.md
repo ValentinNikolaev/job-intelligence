@@ -11,7 +11,7 @@ We’re looking for a curious, rigorous, problem-hungry platform engineer (who c
 
 We have notable customers like Notion, Linear, Shopify, and Snowflake. Our growth and retention metrics are best-in-class among our peers: we have tens of millions in ARR, growing >100% year over year, over 2500 customers, very low churn, and many years of runway. We’ll share more details once we meet, but you now probably have a good idea as to why we're hiring for this role 😅.
 
-We’ve listed this role twice: as a Platform Engineer and Site Reliability Engineer – our team does both, and we are open to candidates who lean towards one or the other.
+We’ve listed this role twice: as a Platform Engineer and Site Reliability Engineer – our team does both, and we are open to candidates who lean towards one or the other. 
 
 
 

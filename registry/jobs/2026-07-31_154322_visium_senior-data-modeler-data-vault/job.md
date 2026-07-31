@@ -61,4 +61,4 @@ What we offer
 
 Check our[ LinkedIn](https://www.linkedin.com/company/visium-sa/mycompany/) and [website](https://www.visium.ch/) to learn more about us & don’t hesitate to contact us if you have any questions.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

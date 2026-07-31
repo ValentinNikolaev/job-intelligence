@@ -1,6 +1,6 @@
-# Junior Artwork Assistant (m/w/d)
+# Junior Artwork Assistant (m/w/d) - 12 months
 
-Posted: 2026-07-31T12:00:43Z
+Posted: 2026-07-31T16:29:03Z
 
 ## Rejection
 
@@ -71,4 +71,4 @@ Apply today and secure your spot at #TeamAmapharm.
 
 We look forward meeting you!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

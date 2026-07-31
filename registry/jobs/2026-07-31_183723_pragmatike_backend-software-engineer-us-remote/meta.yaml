@@ -1,0 +1,24 @@
+schema_version: 2
+id: e0669845-f72a-4869-9f42-8b6fa5fe4af1
+title: Backend Software Engineer - US Remote
+company: Pragmatike
+company_url: null
+location: Los Angeles, CA
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-8809554455443407416'
+  url: https://jooble.org/away/-8809554455443407416?p=1&pos=8&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=12&brelb=115&scr=582.62726&bscr=582.62726&aq=-340276221690624331&elckey=-689236854289140090
+published_at: '2026-07-31T00:00:00.0000000'
+discovered_at: '2026-07-31T18:37:23Z'
+updated_at: '2026-07-31T18:37:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T18:37:23Z'
+analysis_priority: 0
+fingerprint: sha256:40dfc057d3fd860908701e375b00c34a5f5bf7fe53139dba1273567c698bf203
+data_source: jooble
+content_source: jooble
+company_content_source: null

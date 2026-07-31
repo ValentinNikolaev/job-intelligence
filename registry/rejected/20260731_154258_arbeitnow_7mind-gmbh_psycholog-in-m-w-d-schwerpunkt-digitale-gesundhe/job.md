@@ -103,4 +103,4 @@ Du erfüllst nicht alle Kriterien? Kein Problem. Wenn du Lust hast, mit uns die 
 
 Du brauchst einen barrierearmen Bewerbungsprozess oder hast Fragen zum Ablauf? Schreib uns und wir finden einen Weg.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

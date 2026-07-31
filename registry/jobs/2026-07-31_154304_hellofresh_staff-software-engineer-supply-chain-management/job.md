@@ -52,4 +52,4 @@ Interacting with front-end developers, designers, product managers and our teams
 
 **Are you the missing ingredient? **If this sounds like a tasty opportunity, we’d be excited to hear from you. We aim to review your profile and respond within 5 business days.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

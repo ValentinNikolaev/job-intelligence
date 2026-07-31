@@ -117,4 +117,4 @@ Wir helfen Leben retten, helfen Sie mit!
 
 **Werden Sie Teil unseres Teams - wir freuen uns auf Ihre Bewerbung.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

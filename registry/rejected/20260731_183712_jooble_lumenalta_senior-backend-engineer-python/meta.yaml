@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6255007736315849787'
+source_url: https://jooble.org/away/6255007736315849787?p=1&pos=47&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=60&brelb=100&scr=1490.1292&bscr=1490.1292&aq=8975678453095803255&elckey=4918273679918531990
+title: Senior Backend Engineer - Python
+company: Lumenalta
+location: Tulsa, OK
+published_at: '2026-07-29T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T18:37:12Z'
+rejected_at: '2026-07-31T18:37:12Z'

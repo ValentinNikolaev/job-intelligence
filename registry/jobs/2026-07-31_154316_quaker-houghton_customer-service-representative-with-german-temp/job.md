@@ -96,4 +96,4 @@ Our core values embody who we are as a company, guide our decisions and inspire 
 
 *EEO: Quaker Houghton is committed to equal employment opportunities and a workplace free of discrimination. Applications are welcome from all qualified candidates regardless of gender, gender identity, age, disability, ethnic origin, religion, or sexual orientation. In line with the EU Pay Transparency Directive, the salary range for this role is disclosed before the interview to support transparency and consistency in our hiring process. Candidates will not be asked about their salary history. Our company uses a structured job level and salary band framework to support objective and consistent compensation decisions.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

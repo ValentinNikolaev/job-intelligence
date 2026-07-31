@@ -91,4 +91,4 @@ If you meet the above requirements and are excited about this opportunity, we en
 
 Feel free to reach out if you have any questions or need further clarification.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

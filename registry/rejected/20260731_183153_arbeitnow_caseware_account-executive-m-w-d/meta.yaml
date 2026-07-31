@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: account-executive-dusseldorf-germany-57576
+source_url: https://www.arbeitnow.com/jobs/companies/caseware/account-executive-dusseldorf-germany-57576
+title: Account Executive (m/w/d)
+company: Caseware
+location: Düsseldorf, Germany
+published_at: '2026-07-31T14:24:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T18:31:53Z'
+rejected_at: '2026-07-31T18:31:53Z'

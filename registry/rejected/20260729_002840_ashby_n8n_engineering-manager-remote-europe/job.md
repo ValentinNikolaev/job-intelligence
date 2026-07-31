@@ -141,12 +141,12 @@ You care about diversity and inclusion? We do too! Check out our Diversity, Incl
 
 
 
-Location disclaimer: If you see multiple job postings for the same role, it is most likely because we're hiring remotely for this role and posting in different locations to make sure every potential candidate can see the role. Please apply to the location you're the most likely to work from in the future.
+Location disclaimer: If you see multiple job postings for the same role, it is most likely because we're hiring remotely for this role and posting in different locations to make sure every potential candidate can see the role. Please apply to the location you're the most likely to work from in the future. 
 
 
 
 
-BENEFITS
+BENEFITS 
 
  - Competitive compensation 💸 – We offer fair and attractive pay.
 

@@ -83,4 +83,4 @@ Du berichtest an die COO und arbeitest eng mit Brand, Product, Field Operations,
 
 - **Sport & Wellbeing**: Bei uns bekommst du regelmäßige Padel Matches auf unseren Courts - für deinen körperlichen Ausgleich und dein Wohlbefinden neben dem Arbeitsalltag.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

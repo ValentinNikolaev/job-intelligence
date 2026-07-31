@@ -57,4 +57,4 @@ Wenn Sie jemanden kennen, der zu dieser Position passen könnte, erhalten Sie di
 
 POT7783
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

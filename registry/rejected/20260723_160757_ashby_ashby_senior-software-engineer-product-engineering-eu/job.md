@@ -26,7 +26,7 @@ I started my career building software for artists in the Visual Effects industry
 
 I studied computer science to solve problems, not tickets, and this felt exactly like that. I not only felt creative and fulfilled but the agency and ownership we were given as engineers powered an incredible amount of innovation.
 
-Innovation came differently (or not at all) at technology startups beyond the seed stage, often through an engineer’s force of will and ability to push back against culture (rather than any encouragement from it). Engineering was narrowed to implementation and delivery, partly due to the influence of other departments and partly due to the influx of "Agile" processes like sprint planning. In those companies, I felt like a JIRA jockey.
+Innovation came differently (or not at all) at technology startups beyond the seed stage, often through an engineer’s force of will and ability to push back against culture (rather than any encouragement from it). Engineering was narrowed to implementation and delivery, partly due to the influence of other departments and partly due to the influx of "Agile" processes like sprint planning. In those companies, I felt like a JIRA jockey. 
 
 At Ashby, we’re building an environment that is optimistic about what engineers can own and achieve. An environment that embraces innovative engineers, and, frankly, often stays out of their way. As a Product Engineer, you’ll take ownership over a large portion of one of our products and own projects end-to-end (wearing hats traditionally worn by product and design). You’ll research competitors, write product specs, make wireframes, and more. To ground it with examples, product engineers at Ashby have:
 
@@ -52,7 +52,7 @@ As hiring managers, we know TA is a critical function, and as engineers, we know
 
 WHY YOU SHOULD OR SHOULDN’T APPLY
 
-Software engineers come in many flavors, not all of which fit our model. Here are some things to help you decide if this fits you and what you’re looking for:
+Software engineers come in many flavors, not all of which fit our model. Here are some things  to help you decide if this fits you and what you’re looking for:
 
  - You’re not afraid to tackle any part of a technology stack. You do what’s necessary to successfully deliver a feature, whether writing frontend or choosing new infrastructure. We’ll provide a supportive environment to do it successfully (e.g., design system, SRE team).
 
@@ -64,7 +64,7 @@ Software engineers come in many flavors, not all of which fit our model. Here ar
 
  - You’re an excellent collaborator and communicator. Ownership and freedom don’t mean you work in a vacuum. You’ll need to vet your decisions with the appropriate stakeholders, keep them up to date when necessary, and work with other engineers to get your projects across the finish line. Clear and concise communication helps a lot here!
 
- - You seek to create leverage in your work. The nature of software is that you can often automate or abstract what would be tedious, time-consuming work. Your impatience usually leads to new abstractions, tools to allow Support to debug before Engineering, new lint rules to prevent common bugs, etc.
+ - You seek to create leverage in your work. The nature of software is that you can often automate or abstract what would be tedious, time-consuming work. Your impatience usually leads to new abstractions, tools to allow Support to debug before Engineering, new lint rules to prevent common bugs, etc. 
 
 Put another way, you shouldn’t apply if:
 

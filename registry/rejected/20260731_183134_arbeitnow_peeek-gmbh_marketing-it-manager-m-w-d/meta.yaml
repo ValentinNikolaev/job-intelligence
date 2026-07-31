@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: marketing-it-manager-ahrensburg-155550
+source_url: https://www.arbeitnow.com/jobs/companies/peeek-gmbh/marketing-it-manager-ahrensburg-155550
+title: Marketing & IT Manager (m/w/d)
+company: Peeek GmbH
+location: Ahrensburg
+published_at: '2026-07-31T15:00:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T18:31:34Z'
+rejected_at: '2026-07-31T18:31:34Z'

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 3fcf1487-0b6f-40f4-9514-f9cefd7051e0
+title: Product Manager (f/m/d) - FinTech for Social Care
+company: Parto Group GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: product-manager-fintech-for-social-care-hamburg-127332
+  url: https://www.arbeitnow.com/jobs/companies/parto-group-gmbh/product-manager-fintech-for-social-care-hamburg-127332
+  metadata:
+    tags:
+    - Product Management
+    job_types:
+    - professional / experienced
+published_at: '2026-07-31T16:00:36Z'
+discovered_at: '2026-07-31T18:31:30Z'
+updated_at: '2026-07-31T18:31:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T18:31:30Z'
+analysis_priority: 0
+fingerprint: sha256:c737a37a47dea42906b51f8f94f6f89f09773b41e5cee3f29788ac60904e0219
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

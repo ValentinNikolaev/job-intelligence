@@ -73,4 +73,4 @@ Für unseren Mandanten, einem renommierten Bankhaus aus der Jade-Weser-Region, s
 
 **JPIMC**® – Boutique Provider für Interim Management & Personalvermittlung im Finance, Banking & HR
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

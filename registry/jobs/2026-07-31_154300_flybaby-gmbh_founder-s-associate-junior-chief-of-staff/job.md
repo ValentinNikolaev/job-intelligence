@@ -1,6 +1,6 @@
-# “Founder’s Associate / Junior Chief of Staff”
+# “Founder’s Associate / Chief of Staff”
 
-Posted: 2026-07-31T12:30:27Z
+Posted: 2026-07-31T16:59:04Z
 
 **As our Chief of Staff / Founder's Associate, you'll work directly with the founders on the company's most important strategic and operational initiatives.**
 
@@ -76,4 +76,4 @@ Posted: 2026-07-31T12:30:27Z
 
 *** ﻿﻿Clear opportunities to grow into a leadership role as the company scales.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

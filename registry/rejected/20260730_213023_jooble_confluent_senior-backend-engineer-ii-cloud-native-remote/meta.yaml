@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '4564337146182026357'
-source_url: https://jooble.org/away/4564337146182026357?p=1&pos=50&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=81&brelb=100&scr=1732.5206&bscr=1732.5206&aq=2499560201269781923&elckey=5626018726188530185
+source_url: https://jooble.org/away/4564337146182026357?p=1&pos=30&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=84&brelb=100&scr=1703.8604&bscr=1703.8604&aq=8975678453095803255&elckey=4918273679918531990
 title: Senior Backend Engineer II - Cloud-Native, Remote
 company: Confluent
 location: Madison, WI
 published_at: '2026-07-28T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-31T15:48:02Z'
+updated_at: '2026-07-31T18:36:54Z'
 rejected_at: '2026-07-30T21:30:23Z'

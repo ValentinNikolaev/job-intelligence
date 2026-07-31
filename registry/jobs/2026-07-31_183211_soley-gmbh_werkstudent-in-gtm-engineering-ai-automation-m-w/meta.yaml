@@ -1,0 +1,29 @@
+schema_version: 2
+id: 7ac2eb4e-dda5-4e36-b88f-62ef5be8695b
+title: Werkstudent:in GTM Engineering & AI Automation (m/w/d)
+company: Soley GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: Working student
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-gtm-engineering-ai-automation-munich-267859
+  url: https://www.arbeitnow.com/jobs/companies/soley-gmbh/werkstudentin-gtm-engineering-ai-automation-munich-267859
+  metadata:
+    tags:
+    - IT
+    job_types:
+    - Working student
+published_at: '2026-07-31T14:00:42Z'
+discovered_at: '2026-07-31T18:32:11Z'
+updated_at: '2026-07-31T18:32:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T18:32:11Z'
+analysis_priority: 0
+fingerprint: sha256:7f89e72156ba8c12deab52fa3f4b3b172dced0d70879f1af93090b40da5e1eb6
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

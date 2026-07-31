@@ -79,4 +79,4 @@ Uns ist wichtiger, dass du neugierig bist und dich weiterentwickeln möchtest, a
 
 Wenn wir Dein Interesse geweckt haben und Du Teil unserer Erfolgsgeschichte sein möchtest, steht Dir unsere HR Business Partnerin Leonie Neumann für eine erste Kontaktaufnahme und weiterführende Informationen gerne zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

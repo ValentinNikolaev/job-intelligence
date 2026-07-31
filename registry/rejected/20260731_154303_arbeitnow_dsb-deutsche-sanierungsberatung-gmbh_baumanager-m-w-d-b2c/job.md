@@ -1,6 +1,6 @@
 # Baumanager (m/w/d) B2C
 
-Posted: 2026-07-31T12:30:24Z
+Posted: 2026-07-31T16:59:04Z
 
 ## Rejection
 
@@ -25,7 +25,7 @@ Du bist die zentrale Ansprechperson für unsere Kund:innen, sobald ein Projekt i
 
 - Bearbeitung technischer Fragestellungen
 
-- Sicherstellen, dass Projekte termingerecht und kundenorientiert umgesetzt werden
+- Sicherstellen, dass Projekte termingerecht, kundenorientiert und fachgerecht umgesetzt werden
 
 ## Qualifikation
 
@@ -63,4 +63,4 @@ Wir freuen uns darauf, dich kennenzulernen.
 
 Im Einklang mit den Grundsätzen des European Research Council (ERC) fördern wir Chancengleichheit, Vielfalt und Inklusion. Wir begrüßen Bewerbungen aller qualifizierten Personen unabhängig von Geschlecht, geschlechtlicher Identität, sexueller Orientierung, Alter, ethnischer oder sozialer Herkunft, Nationalität, Religion oder Weltanschauung, Behinderung oder anderen gesetzlich geschützten Merkmalen. Auswahlentscheidungen erfolgen ausschließlich auf Grundlage der Qualifikation und Eignung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -55,7 +55,7 @@ Engineering leadership comes in many flavors, not all of which fit our model. I 
 
  - You hold your team to a high standard and don’t shy away from getting into the details and giving feedback, even to the best folks on your team.
 
- - You are an excellent and empathetic communicator. Facilitating change at both an individual and organization level requires understanding how to navigate the beliefs, opinions, and past experiences of engineers and figuring out how to both convince them of a new way of doing things while also leaving yourself open to feedback.
+ - You are an excellent and empathetic communicator. Facilitating change at both an individual and organization level requires understanding how to navigate the beliefs, opinions, and past experiences of engineers and figuring out how to both convince them of a new way of doing things while also leaving yourself open to feedback. 
 
  - You know what exceptional engineers look like. You’ve thought deeply about what makes them tick, how to recruit them, and how to grow folks into them. I want to see depth here, the industry often regurgitates a vanilla description, but the reality is more nuanced.
 
@@ -142,7 +142,7 @@ We, as engineers, find clever ways to solve problems, which amplifies when we de
 
 
 
-PUT EFFORT INTO DIVERSITY
+PUT EFFORT INTO DIVERSITY 
 
 Diverse teams drive innovation and better outcomes https://hbr.org/2016/11/why-diverse-teams-are-smarter. As the father of two young girls, I want to see them grow up in a world where all industries are open and welcoming to everyone, regardless of race, gender, or preferences. Helping to build a more diverse team at Ashby is my way of contributing to this change.
 
@@ -153,7 +153,7 @@ Today, 26% of engineers at Ashby are from underrepresented groups. It’s not gr
 
 INTERVIEW PROCESS
 
-At Ashby, our team and interview process want to help you show your best self. We’ll dive into past projects and simulate working together. Our interview process is six interviews in the following order:
+At Ashby, our team and interview process want to help you show your best self. We’ll dive into past projects and simulate working together. Our interview process is six interviews in the following order: 
 
  1. Intro Call (30m) - Discuss your application questions, align on the responsibilities of the role, and answer questions about Ashby.
 
