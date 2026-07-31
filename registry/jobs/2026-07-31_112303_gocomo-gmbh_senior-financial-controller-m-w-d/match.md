@@ -1,24 +1,24 @@
 # Match Analysis
 
-**Score:** 6/100  
+**Score:** 2/100  
 **Recommendation:** Not Match
 
-Financial controller responsibilities require accounting, forecasting and controlling experience absent from the software-engineering profile.
+Limited alignment with (Senior) Financial Controller (m/w/d) at gocomo GmbH; the role’s primary domain or technology requirements are not supported by the candidate evidence.
 
 ## Why it matches
 
-- Analytical and systems experience
+- Senior software engineering and production-system experience
+- Backend architecture, APIs, and reliability
+- Technical ownership and collaboration
 
 ## Gaps
 
-- Accounting
-- forecasting
-- cash flow and financial reporting
+- Role-specific domain or tool experience is not fully evidenced
 
 ## Concerns
 
-- Role is fundamentally outside software engineering
+- Core role requirements do not match the documented candidate profile
 
 ## Hard rejection
 
-- Essential financial-controlling experience is unsupported.
+- Required domain, qualification, or language evidence is absent from the candidate profile.

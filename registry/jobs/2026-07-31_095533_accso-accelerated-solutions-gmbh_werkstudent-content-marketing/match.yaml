@@ -1,20 +1,21 @@
-score: 10
+score: 4
 recommendation: not_match
-summary: Working-student content-marketing duties require marketing content and student
-  status not evidenced in the profile.
+summary: Limited alignment with Werkstudent* Content Marketing at Accso – Accelerated
+  Solutions GmbH; the role’s primary domain or technology requirements are not supported
+  by the candidate evidence.
 strengths:
-- Technology-company collaboration and communication
+- Senior software engineering and production-system experience
+- Backend architecture, APIs, and reliability
+- Technical ownership and collaboration
 gaps:
-- Content marketing
-- social media
-- campaigns and student status
+- Role-specific domain or tool experience is not fully evidenced
 concerns:
-- Role is outside software engineering
+- Core role requirements do not match the documented candidate profile
 hard_rejection: true
-hard_rejection_reason: Essential content-marketing and working-student requirements
-  are unsupported.
-analyzed_at: '2026-07-31T11:27:58Z'
+hard_rejection_reason: Required domain, qualification, or language evidence is absent
+  from the candidate profile.
+analyzed_at: '2026-07-31T13:24:17Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:3746b8bd9babd8284b76ea425f0169cca614c9519d01bec652b33fb0813e4d5f
+job_version: sha256:518e06b0ac2a65ea442749b4c04e79ff03cce58a417dd14258369db0085c0b95
 prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
 model: codex:gpt-5.6-luna:low
