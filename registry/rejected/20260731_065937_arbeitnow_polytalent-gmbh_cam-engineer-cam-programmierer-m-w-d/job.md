@@ -160,4 +160,4 @@ PolyTALENT GmbH
 Alessandro Quintiero
 +49 15888 6309 54
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

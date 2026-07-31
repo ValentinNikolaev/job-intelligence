@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-6581768820718303119'
-source_url: https://jooble.org/desc/-6581768820718303119?ckey=senior+backend+engineer&rgn=55179&pos=37&groupId=293749696&elckey=8802702257252024846&p=1&aq=-277155463140480062&cid=15922&jobAge=1081&brelb=100&bscr=6.151643&scr=6.151643
+source_url: https://jooble.org/desc/-6581768820718303119?ckey=senior+backend+engineer&rgn=55179&pos=37&groupId=293749696&elckey=7559673704710318763&p=1&aq=-9027467026484741905&cid=15922&jobAge=30&brelb=100&bscr=6.2425327&scr=6.2425327
 title: Sr. Embedded Firmware Engineer
 company: Dynamics ATS
 location: Italian Republic
-published_at: '2026-06-16T00:00:00.0000000'
-rejection_category: stale
-rejection_reason: published_at 2026-06-16T00:00:00.0000000 is older than 7 days
-updated_at: '2026-07-31T07:05:13Z'
+published_at: '2026-07-30T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T12:43:22Z'
 rejected_at: '2026-07-23T16:09:03Z'

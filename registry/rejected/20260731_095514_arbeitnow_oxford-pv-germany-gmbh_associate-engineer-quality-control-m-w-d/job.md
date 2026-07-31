@@ -67,4 +67,4 @@ Oxford PV fördert Chancengleichheit und ermutigt qualifizierte Bewerber aller G
 
 **Wir haben dein Interesse geweckt? Werde Teil unseres Teams – wir freuen uns auf deine Bewerbung!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -60,4 +60,4 @@ Als **Senior Financial Controller (m/w/d)** übernimmst du eine Schlüsselrolle 
 
 - **Hundefreundliches Büro in Berlin** - dein Vierbeiner ist bei uns willkommen und findet neue Büro-Buddies
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

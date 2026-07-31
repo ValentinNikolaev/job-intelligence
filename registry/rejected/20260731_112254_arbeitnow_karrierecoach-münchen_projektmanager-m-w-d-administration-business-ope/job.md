@@ -155,4 +155,4 @@ Viktoriastraße 1
 
 Telefon: 089 / 2020817-18
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

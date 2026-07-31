@@ -48,4 +48,4 @@ In this internship, you will work closely with the management team on strategic 
 
 This position is a mandatory internship. A corresponding confirmation from your academic institution, stating the requirement to complete an internship, must be provided prior to the start of the internship.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

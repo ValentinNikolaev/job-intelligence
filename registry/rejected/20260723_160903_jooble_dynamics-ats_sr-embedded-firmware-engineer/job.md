@@ -1,18 +1,18 @@
 # Sr. Embedded Firmware Engineer
 
-Posted: 2026-06-16T00:00:00.0000000
+Posted: 2026-07-30T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-16T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ...Sr. Embedded Firmware **Engineer **
 
 JOB-10046852
 
 Anticipated Start Date 
-June 24, 2026
+Aug. 12, 2026
 
 Location 
 Houston, TX 

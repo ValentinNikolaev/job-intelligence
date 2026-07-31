@@ -105,4 +105,4 @@ Saubere und fehlerfreie schriftliche Ausdrucksform in Deutsch
 
 Vorkenntnisse in den Bereichen Online-Marketing, Industrie und Fertigung sind von Vorteil, aber nicht notwendig.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

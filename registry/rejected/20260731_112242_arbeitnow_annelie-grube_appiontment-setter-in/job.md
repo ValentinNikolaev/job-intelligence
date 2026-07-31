@@ -43,4 +43,4 @@ Quereinsteiger sind herzlich willkommen, da eine umfassende Einarbeitung stattfi
 
 - Preisnachlässe auf Produkte/Dienstleistungen des Unternehmens
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

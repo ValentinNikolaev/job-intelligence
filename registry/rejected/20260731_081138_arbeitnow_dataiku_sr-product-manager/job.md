@@ -71,4 +71,4 @@ At Dataiku, you'll be part of a journey to shape the ever-evolving world of AI. 
 
 *Dataiku will never ask you for payment of any type during the interview or hiring process. Other than our video-conference application, Zoom, we will also never ask you to make purchases or download third-party applications during the process. If you experience something out of the ordinary or suspect fraudulent activity, please review our page on identifying and reporting fraudulent activity [here.](https://www.dataiku.com/legal/dataiku-recruitment-scams/)*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

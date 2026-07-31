@@ -49,4 +49,4 @@ Wir schätzen dich für deine Fähigkeiten und dein Engagement. Als Werkstudent:
 
 - Attraktive Vergütung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

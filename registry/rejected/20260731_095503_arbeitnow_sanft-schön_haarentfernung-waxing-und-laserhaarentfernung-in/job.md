@@ -45,4 +45,4 @@ Bist du bereit, Teil eines dynamischen und herzlichen Teams zu werden? Bei Sanft
 
 Verwandle Leidenschaft in Beruf – werde Teil unseres freundlichen Teams als Haarentfernungsexperte in Berlin Mitte und erlebe modernste Techniken und ein tolles Arbeitsumfeld! Bewirb dich jetzt!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

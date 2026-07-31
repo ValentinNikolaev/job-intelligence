@@ -115,4 +115,4 @@ Wir suchen niemanden, der nur mitläuft, sondern jemanden, der mitdenkt, Verantw
 
 Wenn du Bock auf Tech, Events, ein kleines Team und viel Gestaltungsspielraum hast, freuen wir uns auf deine Bewerbung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
