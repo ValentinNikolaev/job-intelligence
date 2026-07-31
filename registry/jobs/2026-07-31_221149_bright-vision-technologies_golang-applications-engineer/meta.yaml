@@ -1,0 +1,24 @@
+schema_version: 2
+id: 005a15f1-3302-42af-aaec-18190a5a7594
+title: Golang Applications Engineer
+company: Bright Vision Technologies
+company_url: null
+location: Richardson, TX
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '5038702512642586874'
+  url: https://jooble.org/desc/5038702512642586874?ckey=remote+golang+backend+engineer&rgn=55180&pos=27&groupId=1106121903&elckey=2929454452357888608&p=1&aq=-5689640372339984841&cid=15922&jobAge=112&brelb=100&bscr=220.51633&scr=220.51633
+published_at: '2026-07-27T00:00:00.0000000'
+discovered_at: '2026-07-31T22:11:49Z'
+updated_at: '2026-07-31T22:11:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T22:11:49Z'
+analysis_priority: 0
+fingerprint: sha256:7de6f2346fcf08c92f4c8b9953b5f43c98d14566d668ab786e990dec6ed1e08b
+data_source: jooble
+content_source: jooble
+company_content_source: null
