@@ -34,5 +34,13 @@ jobs:
           git config user.name "Valentin Nikolaev"
           git config user.email "435393+ValentinNikolaev@users.noreply.github.com"
           git add -A archives registry/jobs
-          git commit -m "chore: archive low-score vacancies"
+          changed_files="$(git diff --cached --name-only | wc -l | tr -d ' ')"
+          archived_vacancies="$(git diff --cached --name-status -- archives | awk '$1 == "A" && $2 ~ /\/meta\.yaml$/ { count++ } END { print count + 0 }')"
+          removed_active_files="$(git diff --cached --name-status -- registry/jobs | awk '$1 == "D" { count++ } END { print count + 0 }')"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          git commit \
+            -m "chore(archive): move ${archived_vacancies} low-score vacancies" \
+            -m "Archived vacancies below the configured match-score threshold." \
+            -m "Changed files: ${changed_files} total; removed active files: ${removed_active_files}." \
+            -m "Run: ${run_url}"
           git push origin "HEAD:${GITHUB_REF_NAME:-main}"
