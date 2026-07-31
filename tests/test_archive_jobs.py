@@ -38,12 +38,12 @@ class ArchiveJobsTests(unittest.TestCase):
         if skipped:
             (directory / "triage.yaml").write_text(yaml.safe_dump({"skip_model": True}), encoding="utf-8")
 
-    def test_does_not_archive_at_threshold(self) -> None:
+    def test_does_not_archive_below_minimum(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for number in range(100):
                 self.make_job(root, number, score=10)
-            self.assertEqual(0, archive_jobs.archive(root, "low-score", 65))
+            self.assertEqual(0, archive_jobs.archive(root, "low-score", 65, min_items=101))
             self.assertFalse(any((root / "archives" / "low-score").glob("*.zip")))
 
     def test_archives_and_removes_low_scores_after_validation(self) -> None:

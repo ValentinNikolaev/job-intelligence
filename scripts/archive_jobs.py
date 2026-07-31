@@ -10,9 +10,6 @@ from pathlib import Path
 import yaml
 
 
-THRESHOLD = 100
-
-
 def read_yaml(path: Path) -> dict:
     loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
     return loaded if isinstance(loaded, dict) else {}
@@ -50,7 +47,13 @@ def parse_datetime(value: object) -> dt.datetime | None:
     return parsed.astimezone(dt.timezone.utc)
 
 
-def archive(project_root: Path, category: str, low_score: int, max_age_days: int = 7) -> int:
+def archive(
+    project_root: Path,
+    category: str,
+    low_score: int,
+    max_age_days: int = 7,
+    min_items: int = 1,
+) -> int:
     jobs_root = project_root / "registry" / "jobs"
     archive_root = project_root / "archives" / category
     archive_root.mkdir(parents=True, exist_ok=True)
@@ -61,8 +64,8 @@ def archive(project_root: Path, category: str, low_score: int, max_age_days: int
         for path in jobs_root.iterdir()
         if path.is_dir() and eligible(path, category, low_score, max_age_days)
     )
-    print(f"{category}: eligible={len(candidates)} threshold={THRESHOLD}")
-    if len(candidates) <= THRESHOLD:
+    print(f"{category}: eligible={len(candidates)} minimum={min_items}")
+    if len(candidates) < min_items:
         print("No archive created; threshold not exceeded.")
         return 0
     if destination.exists():
@@ -103,8 +106,22 @@ def main() -> int:
     parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--low-score", type=int, default=65)
     parser.add_argument("--max-age-days", type=int, default=7)
+    parser.add_argument("--min-items", type=int, default=1)
     args = parser.parse_args()
-    return 0 if archive(args.project_root.resolve(), args.category, args.low_score, args.max_age_days) >= 0 else 1
+    if args.min_items < 1:
+        parser.error("--min-items must be at least 1")
+    return (
+        0
+        if archive(
+            args.project_root.resolve(),
+            args.category,
+            args.low_score,
+            args.max_age_days,
+            args.min_items,
+        )
+        >= 0
+        else 1
+    )
 
 
 if __name__ == "__main__":
