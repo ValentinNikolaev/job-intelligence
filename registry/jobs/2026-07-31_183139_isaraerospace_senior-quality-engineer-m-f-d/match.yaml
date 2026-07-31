@@ -1,0 +1,27 @@
+score: 6
+recommendation: not_match
+summary: Software quality and reliability experience does not match the required regulated
+  aerospace manufacturing quality background.
+strengths:
+- Production reliability
+- troubleshooting
+- monitoring
+- process discipline and technical documentation
+gaps:
+- Aerospace or automotive manufacturing
+- quality control
+- CFRP
+- APQP
+- AS9100
+- ISO 9001 and internal auditing are absent
+concerns:
+- The role is physical-product quality engineering
+- not software quality engineering
+hard_rejection: true
+hard_rejection_reason: Ten years in regulated production and specific aerospace quality
+  qualifications are required but not evidenced.
+analyzed_at: '2026-07-31T19:23:28Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:3abed2c8d57b849f3e29edd2ea0a9c618b2f1349de0d2585e3efafe9259af4bf
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,23 @@
+score: 5
+recommendation: not_match
+summary: The position is a renewable-energy M&A and corporate-finance role with no
+  meaningful overlap with the candidate record.
+strengths:
+- Analytical problem solving and stakeholder collaboration
+gaps:
+- Investment banking
+- valuation
+- financial modeling
+- M&A
+- project finance
+- and renewable-energy experience are absent
+concerns:
+- Career function and domain are unrelated to software engineering
+hard_rejection: true
+hard_rejection_reason: Five or more years of transaction or corporate-finance experience
+  is required but not evidenced.
+analyzed_at: '2026-07-31T19:23:28Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:3cfd3ca1e74d978ff4f7959593c35908321902dd06d7cb793273a251f78776fa
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

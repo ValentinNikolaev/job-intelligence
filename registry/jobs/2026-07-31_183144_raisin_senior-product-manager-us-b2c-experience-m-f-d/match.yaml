@@ -1,0 +1,23 @@
+score: 24
+recommendation: not_match
+summary: Fintech and product collaboration are adjacent, but the role requires senior
+  B2C product-management ownership.
+strengths:
+- Fintech-related systems
+- stakeholder collaboration
+- product delivery
+- analytics infrastructure
+gaps:
+- Product-management track record
+- user research
+- customer journey ownership
+- and US B2C growth experience are not evidenced
+concerns:
+- The candidate profile is engineering-led rather than product-management-led
+hard_rejection: true
+hard_rejection_reason: Senior product-management experience is central and not evidenced.
+analyzed_at: '2026-07-31T19:23:28Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1c90de31ec8dbfeb96755b97541a0b49d81ddb6f62bc8b0b698a2cc1d551a0a5
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

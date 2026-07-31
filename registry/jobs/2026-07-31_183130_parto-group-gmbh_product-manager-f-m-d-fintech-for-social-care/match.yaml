@@ -1,0 +1,26 @@
+score: 24
+recommendation: not_match
+summary: Fintech domain familiarity and technical collaboration are relevant, but
+  the role requires end-to-end product-management ownership.
+strengths:
+- Fintech-related backend systems
+- payments
+- automation
+- stakeholder collaboration
+- technical product delivery
+gaps:
+- Product discovery
+- customer research
+- prioritization
+- launch ownership and formal product-management experience are not evidenced
+concerns:
+- Small-team PM role expects a dedicated product-management background rather than
+  an engineering transition
+hard_rejection: true
+hard_rejection_reason: End-to-end product-management experience is central and not
+  evidenced.
+analyzed_at: '2026-07-31T19:23:28Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:bb5bf411693f4157733dddf871185880e11a1cd9fd7c90b2f0e93f1ee9446c23
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
