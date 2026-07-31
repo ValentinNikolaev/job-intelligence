@@ -81,4 +81,4 @@ Unser Ziel ist es, die Welt ein bisschen grüner zu machen.
 
 **Social Media:** [https://www.instagram.com/pauli_gruppe?igsh=aXR3dGJsZHowYWQ5](https://www.instagram.com/pauli_gruppe?igsh=aXR3dGJsZHowYWQ5)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

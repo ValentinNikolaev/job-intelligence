@@ -51,4 +51,4 @@ Du hast Lust, Verantwortung zu übernehmen, Prozesse aktiv mitzugestalten und ge
 
 **Come fly with us – bei der eFLY.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,29 @@
+schema_version: 2
+id: d5377914-0ee0-401b-9242-1de100f1c755
+title: (Senior) Financial Controller (m/w/d)
+company: gocomo GmbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-financial-controller-berlin-349486
+  url: https://www.arbeitnow.com/jobs/companies/gocomo-gmbh/senior-financial-controller-berlin-349486
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - berufserfahren
+published_at: '2026-07-31T09:00:53Z'
+discovered_at: '2026-07-31T11:23:03Z'
+updated_at: '2026-07-31T11:23:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T11:23:03Z'
+analysis_priority: 0
+fingerprint: sha256:f1d7e416c1debd2410ee6e6ee9c99adc3e7173e8995528f7fec6e10b89d97d19
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

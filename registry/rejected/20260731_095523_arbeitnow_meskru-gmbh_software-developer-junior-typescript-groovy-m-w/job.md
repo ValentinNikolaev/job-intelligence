@@ -67,4 +67,4 @@ Solide Programmiergrundlagen, idealerweise in mehreren Sprachen (z.B. TypeScript
 
 - Team Events in Essen und München
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

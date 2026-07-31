@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: fachinformatiker-fur-anwedungsentwicklung-vollzeit-berlin-lichtenberg-2466
+source_url: https://www.arbeitnow.com/jobs/companies/schulze-marketing/fachinformatiker-fur-anwedungsentwicklung-vollzeit-berlin-lichtenberg-2466
+title: Fachinformatiker für Anwedungsentwicklung - Vollzeit - (m/w/d)
+company: Schulze Marketing
+location: Berlin-Lichtenberg
+published_at: '2026-07-31T09:20:14Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T11:22:47Z'
+rejected_at: '2026-07-31T11:22:47Z'

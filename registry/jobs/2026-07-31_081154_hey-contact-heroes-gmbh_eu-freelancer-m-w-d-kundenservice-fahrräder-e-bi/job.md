@@ -48,4 +48,4 @@ Dann melde dich bei uns! Sende uns eine kurze Beschreibung deiner Erfahrungen im
 
 **Let’s make customer service a shared success – gemeinsam mit den hey contact heroes!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

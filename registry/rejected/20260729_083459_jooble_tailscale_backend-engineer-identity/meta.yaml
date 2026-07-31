@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '3557764992646490182'
-source_url: https://jooble.org/away/3557764992646490182?p=1&pos=9&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=170&brelb=15&scr=582.9663&bscr=582.9663&aq=-6592572903295206070&elckey=-1881177258906458652
+source_url: https://jooble.org/desc/3557764992646490182?ckey=remote+golang+backend+engineer&rgn=55180&pos=32&groupId=1106121903&elckey=-8181146812099638805&p=1&aq=-5199257655030270594&cid=15922&jobAge=29&brelb=10&bscr=207.00354&scr=207.00354
 title: Backend Engineer, Identity
 company: Tailscale
 location: Remote
-published_at: '2026-07-22T00:00:00.0000000'
-rejection_category: stale
-rejection_reason: published_at 2026-07-22T00:00:00.0000000 is older than 7 days
-updated_at: '2026-07-29T08:34:59Z'
+published_at: '2026-07-30T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T11:29:09Z'
 rejected_at: '2026-07-29T08:34:59Z'

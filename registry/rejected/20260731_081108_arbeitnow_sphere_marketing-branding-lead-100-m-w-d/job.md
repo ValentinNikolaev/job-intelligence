@@ -59,4 +59,4 @@ We are looking for an experienced Marketing & Branding person to join our growin
 
 If you are excited to shape the future of engineering and push the AI tools driving real change with leading industry players, please send us your resume and cover letter!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

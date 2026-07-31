@@ -125,4 +125,4 @@ Unser Wachstum entsteht durch Menschen, die gerne hier arbeiten. Mit deiner Art 
 
 Wenn du Freude daran hast, Verantwortung zu übernehmen, Strukturen zu schaffen und mit Weitblick zu handeln, trägst du in dieser Rolle maßgeblich zum Erfolg unserer Mission – eine enkeltaugliche Welt hinterlassen – bei.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

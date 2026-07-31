@@ -1,0 +1,20 @@
+score: 10
+recommendation: not_match
+summary: Working-student content-marketing duties require marketing content and student
+  status not evidenced in the profile.
+strengths:
+- Technology-company collaboration and communication
+gaps:
+- Content marketing
+- social media
+- campaigns and student status
+concerns:
+- Role is outside software engineering
+hard_rejection: true
+hard_rejection_reason: Essential content-marketing and working-student requirements
+  are unsupported.
+analyzed_at: '2026-07-31T11:27:58Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:3746b8bd9babd8284b76ea425f0169cca614c9519d01bec652b33fb0813e4d5f
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

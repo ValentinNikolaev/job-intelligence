@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-senior-account-executive-enterprise-389083
+source_url: https://www.arbeitnow.com/jobs/companies/veeamsoftware/remote-senior-account-executive-enterprise-389083
+title: Senior Account Executive, Enterprise
+company: Veeamsoftware
+location: Remote
+published_at: '2026-07-31T09:16:01Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T11:22:51Z'
+rejected_at: '2026-07-31T11:22:51Z'

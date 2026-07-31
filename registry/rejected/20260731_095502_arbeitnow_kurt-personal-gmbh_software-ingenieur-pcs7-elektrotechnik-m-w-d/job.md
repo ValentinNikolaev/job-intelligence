@@ -55,4 +55,4 @@ Für unseren Kunden aus Hamburg/Kreis Pinneberg suchen wir im Rahmen der Arbeitn
 
 Wir freuen uns auf Ihre Bewerbung !
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

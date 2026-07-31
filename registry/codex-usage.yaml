@@ -563,3 +563,13 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: 61957367258e4c8e99ebc55b6c6d70bc
+  recorded_at: '2026-07-31T11:28:45Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0

@@ -1,0 +1,18 @@
+score: 8
+recommendation: not_match
+summary: The role requires educator qualification and household-care team leadership,
+  neither supported by the software-engineering profile.
+strengths:
+- Team leadership and process ownership
+gaps:
+- Educator qualification
+- care experience and German service context
+concerns:
+- Role is outside software engineering
+hard_rejection: true
+hard_rejection_reason: Essential educator and care-sector requirements are unsupported.
+analyzed_at: '2026-07-31T11:27:58Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b00f8c7fb79a01fc50c6d0079e3b8c14ce1414628fe2be69e63915a0a97762cf
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low

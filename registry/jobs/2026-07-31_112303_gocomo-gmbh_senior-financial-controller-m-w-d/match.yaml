@@ -1,0 +1,19 @@
+score: 6
+recommendation: not_match
+summary: Financial controller responsibilities require accounting, forecasting and
+  controlling experience absent from the software-engineering profile.
+strengths:
+- Analytical and systems experience
+gaps:
+- Accounting
+- forecasting
+- cash flow and financial reporting
+concerns:
+- Role is fundamentally outside software engineering
+hard_rejection: true
+hard_rejection_reason: Essential financial-controlling experience is unsupported.
+analyzed_at: '2026-07-31T11:27:58Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:0f6eeb0d2113f72a12763d2b9cae9ddb376277e8c137de1ded7ac7162babc987
+prompt_version: job-match-v1:sha256:c2c70a137981950270d7095f3fdfc85d1086fa40525d4c6d339eabfbd4fbb3c7
+model: codex:gpt-5.6-luna:low
