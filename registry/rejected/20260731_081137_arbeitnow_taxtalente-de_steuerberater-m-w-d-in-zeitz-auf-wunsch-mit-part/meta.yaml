@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: steuerberater-in-zeitz-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-49890
+source_url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-zeitz-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-49890
+title: Steuerberater (m/w/d) in Zeitz, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+location: Zeitz
+published_at: '2026-07-31T06:30:31Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T08:11:37Z'
+rejected_at: '2026-07-31T08:11:37Z'

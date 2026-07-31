@@ -1,0 +1,30 @@
+schema_version: 2
+id: fbc9d781-0fa4-48f8-8d61-f748ca03b602
+title: EU Freelancer (m/w/d) - Kundenservice Fahrräder & E-Bikes - HomeOffice
+company: hey contact heroes GmbH
+company_url: null
+location: Hamburg
+remote: true
+employment_type: Freelance
+sources:
+- source: arbeitnow
+  source_job_id: eu-freelancer-kundenservice-fahrrader-e-bikes-homeoffice-hamburg-377634
+  url: https://www.arbeitnow.com/jobs/companies/hey-contact-heroes-gmbh/eu-freelancer-kundenservice-fahrrader-e-bikes-homeoffice-hamburg-377634
+  metadata:
+    tags:
+    - Remote
+    - Customer Service
+    job_types:
+    - Freelance
+published_at: '2026-07-31T06:00:30Z'
+discovered_at: '2026-07-31T08:11:54Z'
+updated_at: '2026-07-31T08:11:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-07-31T08:11:54Z'
+analysis_priority: 0
+fingerprint: sha256:d441f66afba767f845c0207e6fe34dcaeb20ee69cac80d840338397341c3c772
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

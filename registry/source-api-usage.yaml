@@ -1,8 +1,8 @@
 schema_version: 1
 sources:
   adzuna:
-    total_requests: 377
-    last_run_at: '2026-07-31T06:59:35Z'
+    total_requests: 382
+    last_run_at: '2026-07-31T08:10:59Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -799,6 +799,17 @@ sources:
       limit_reached: false
     - run_started_at: '2026-07-31T06:59:29Z'
       recorded_at: '2026-07-31T06:59:35Z'
+      requests: 5
+      fetched: 5
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 5
+      errors: 0
+      limit_reached: false
+    - run_started_at: '2026-07-31T08:10:43Z'
+      recorded_at: '2026-07-31T08:10:59Z'
       requests: 5
       fetched: 5
       created: 0

@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: steuerberater-in-giessen-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-479154
+source_url: https://www.arbeitnow.com/jobs/companies/taxtalentede/steuerberater-in-giessen-auf-wunsch-mit-partnerperspektive-gesucht-mindestens-90000eur-479154
+title: Steuerberater (m/w/d) in Giessen, auf Wunsch mit Partnerperspektive, gesucht
+  - mindestens 90.000€
+company: Taxtalente.de
+location: Giessen
+published_at: '2026-07-31T06:30:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-07-31T08:11:29Z'
+rejected_at: '2026-07-31T08:11:29Z'
