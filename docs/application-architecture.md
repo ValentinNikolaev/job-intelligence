@@ -31,13 +31,13 @@ selection.
 ## Cache
 
 `manifest.yaml` records candidate, vacancy, company, prompt, and actual Codex model-label
-versions. All six output artifacts must exist. The `pending prepare` route compares those
-values locally without invoking a model.
+versions. All six output artifacts must exist. Manual `pending prepare <vacancy>` checks
+compare those values locally without invoking a model.
 
 ## Model routing
 
 The single `prepare` route uses the model configured in `config/codex-workflows.yaml`.
-Scores below `prepare_min_score` are not prepared. Fresh vacancies scoring at least
-`priority_score` are prepared first; normal-score vacancies are prepared only when no
-priority-score vacancy is pending. Vacancies older than `prepare_max_age_days` from
-`discovered_at` are excluded from preparation.
+Scores below `prepare_min_score` are not prepared. Vacancies older than
+`prepare_max_age_days` from `discovered_at` are excluded from preparation. There is no
+automatic preparation queue: the user chooses a vacancy from analyzed matches and
+requests preparation by vacancy ID or registry directory.

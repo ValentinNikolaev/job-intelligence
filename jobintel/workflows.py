@@ -22,7 +22,6 @@ class Workflow:
 @dataclass(frozen=True, slots=True)
 class WorkflowPolicy:
     prepare_min_score: int
-    priority_score: int
     prepare_max_age_days: int
     workflows: dict[str, Workflow]
 
@@ -40,9 +39,6 @@ class WorkflowPolicy:
             return self.prepare_min_score <= score <= 100
         raise WorkflowError(f"workflow {workflow!r} is not a preparation workflow")
 
-    def is_priority_score(self, score: int) -> bool:
-        return self.priority_score <= score <= 100
-
 
 def load_workflow_policy(path: Path) -> WorkflowPolicy:
     try:
@@ -57,9 +53,6 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
         raise WorkflowError(f"unsupported workflow policy schema: {loaded.get('schema_version')!r}")
 
     prepare_min = _score(loaded.get("prepare_min_score"), "prepare_min_score")
-    priority = _score(loaded.get("priority_score"), "priority_score")
-    if prepare_min >= priority:
-        raise WorkflowError("prepare_min_score must be lower than priority_score")
     prepare_max_age_days = _positive_int(loaded.get("prepare_max_age_days", 7), "prepare_max_age_days")
 
     raw_workflows = loaded.get("workflows")
@@ -77,7 +70,7 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
                 raise WorkflowError(f"workflow {name!r} has invalid {field}")
             values[field] = value.strip()
         workflows[name] = Workflow(name, values["model"], values["reasoning"], values["model_label"])
-    return WorkflowPolicy(prepare_min, priority, prepare_max_age_days, workflows)
+    return WorkflowPolicy(prepare_min, prepare_max_age_days, workflows)
 
 
 def _score(value: Any, field: str) -> int:

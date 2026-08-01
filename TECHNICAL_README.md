@@ -152,11 +152,9 @@ python run.py usage record --workflow analyze --model codex:gpt-5.6-luna:low --i
 python run.py usage summary
 python run.py api catalog-vacancies --json
 python run.py api queues analyze --json --limit 10
-python run.py api queues prepare --json
-python run.py api queues prepare-priority --json --limit 10
 python run.py pending analyze all --workflow analyze
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
-python run.py pending prepare all --workflow prepare
+python run.py pending prepare <job-directory-or-vacancy-id> --workflow prepare
 python run.py prepare <job-directory-or-vacancy-id> --input <draft-directory> --workflow prepare
 ```
 
@@ -346,9 +344,10 @@ July run writes `June 2026`.
 content, prompt, and model. Unchanged packages are skipped unless `--force` is supplied.
 The source CV and LinkedIn registry are never modified.
 
-Preparation is score-gated before any draft is read or published. Normal preparation
-accepts scores from 65 through 74, priority preparation accepts scores from 75 through
-100, and scores below 65 are intentionally excluded.
+Preparation is manual and score-gated before any draft is read or published. The user
+chooses a vacancy from analyzed matches and names its vacancy ID or registry directory
+in chat. Scores from 65 through 100 are eligible, and scores below 65 are intentionally
+excluded.
 
 See [the application workflow design](docs/application-architecture.md) for isolation,
 validation, failure handling, and configuration details.
@@ -365,8 +364,9 @@ model-dependent work live under `prompts/`, and the reusable repo skill lives un
 | Analyze | GPT-5.6 Luna | low |
 | Prepare | GPT-5.6 Terra | medium |
 
-The prepare queue processes fresh priority-score vacancies first, then falls back to
-normal-score vacancies only when no priority vacancy is pending.
+Application preparation is not queued automatically. After analysis notifications or
+catalog review, the user explicitly chooses one vacancy ID or registry directory for
+each preparation task.
 
 The authoritative routing policy is
 [`config/codex-workflows.yaml`](config/codex-workflows.yaml). The configured model must be
@@ -375,11 +375,12 @@ the provenance label, but does not switch the active model. If a configured mode
 unavailable, the task must report that limitation instead of publishing under another
 workflow.
 
-For Scheduled Tasks, run the versioned prompts serially after the GitHub collection
-workflow has had a chance to publish fresh registry changes: analysis, priority
-preparation, then normal preparation. Each model-dependent run must pull the latest
-committed repository state before selecting work. Each model-dependent run handles
-exactly one vacancy or one sealed analysis batch, so its cadence controls token use.
+For Scheduled Tasks, run the versioned analysis prompt after the GitHub collection
+workflow has had a chance to publish fresh registry changes. Application preparation
+starts only from an interactive user request naming a vacancy ID or registry directory.
+Each model-dependent run must pull the latest committed repository state before
+selecting work. Each model-dependent run handles exactly one vacancy or one sealed
+analysis batch, so its cadence controls token use.
 CodexSandboxOnline or worktree execution requires a committed repository baseline plus
 explicit secret provisioning through the task or host environment; never commit
 `sources/.env`.
@@ -402,8 +403,9 @@ Catalog and workflow state also have a JSON contract intended for scheduled task
 Docker wrappers, and future HTTP endpoints. `python run.py api catalog-vacancies --json`
 returns normalized vacancy rows with source links, match scores, status timestamps, and
 available application artifact paths. `python run.py api workflow-summary --json`,
-`source-usage --json`, and `queues <workflow> --json` expose backlog, source request
-usage, queue selection, and estimated input-token budget status without invoking a model.
+`source-usage --json`, and `queues analyze --json` expose backlog, source request usage,
+analysis queue selection, and estimated input-token budget status without invoking a
+model.
 
 For up to 100 vacancies the catalog stays in one file. Larger registries receive monthly
 files plus a summary index. Entries are sorted by `discovered_at`, newest first; all

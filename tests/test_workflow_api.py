@@ -51,7 +51,6 @@ class WorkflowApiTests(unittest.TestCase):
                 {
                     "schema_version": 1,
                     "prepare_min_score": 65,
-                    "priority_score": 75,
                     "prepare_max_age_days": 7,
                     "workflows": {
                         "analyze": {
@@ -122,11 +121,10 @@ class WorkflowApiTests(unittest.TestCase):
 
         self.assertEqual(2, summary["vacancies_total"])
         self.assertEqual(1, summary["pending_analyze"])
-        self.assertEqual(1, summary["pending_prepare"])
+        self.assertEqual(0, summary["pending_prepare"])
         self.assertEqual(self.pending.directory, analyze["items"][0]["directory"])
         self.assertEqual(0, analyze["items"][0]["analysis_priority"])
-        self.assertEqual(self.preparable.directory, prepare["items"][0]["directory"])
-        self.assertEqual("ok", prepare["items"][0]["budget_status"])
+        self.assertEqual([], prepare["items"])
 
     def test_analyze_queue_orders_priority_items_first(self) -> None:
         registry = Registry(
@@ -151,7 +149,7 @@ class WorkflowApiTests(unittest.TestCase):
         self.assertEqual(priority.directory, analyze["items"][0]["directory"])
         self.assertEqual(100, analyze["items"][0]["analysis_priority"])
 
-    def test_prepare_queue_returns_priority_before_normal_and_excludes_stale(self) -> None:
+    def test_prepare_queue_is_disabled_for_manual_selection(self) -> None:
         fresh_priority_registry = Registry(
             self.registry_root,
             clock=lambda: datetime.now(timezone.utc),
@@ -197,15 +195,8 @@ class WorkflowApiTests(unittest.TestCase):
 
         prepare = queue_response("prepare", self.project, self.registry_root, [self.profile])
 
-        directories = [item["directory"] for item in prepare["items"]]
-        self.assertEqual([priority.directory], directories)
-
-        priority_only = queue_response(
-            "prepare-priority", self.project, self.registry_root, [self.profile]
-        )
-
-        self.assertEqual("prepare_priority", priority_only["workflow"])
-        self.assertEqual([priority.directory], [item["directory"] for item in priority_only["items"]])
+        self.assertEqual("prepare", prepare["workflow"])
+        self.assertEqual([], prepare["items"])
 
     def test_source_usage_and_catalog_contracts(self) -> None:
         ApiUsageLog(self.registry_root / "source-api-usage.yaml").record(
@@ -247,7 +238,7 @@ class WorkflowApiTests(unittest.TestCase):
         self.assertEqual(0, exit_code)
         payload = json.loads(output.getvalue())
         self.assertEqual("prepare", payload["workflow"])
-        self.assertEqual(1, len(payload["items"]))
+        self.assertEqual([], payload["items"])
 
 
 if __name__ == "__main__":

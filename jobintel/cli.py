@@ -624,7 +624,7 @@ def _run_api(
             payload = catalog_vacancies(registry_dir)
         elif command == "queues":
             if len(args.arguments) != 2:
-                raise ValueError("api queues requires one workflow: analyze, prepare, or prepare-priority")
+                raise ValueError("api queues requires one workflow: analyze or prepare")
             workflow = args.arguments[1].replace("_", "-")
             payload = queue_response(
                 workflow,
@@ -897,6 +897,12 @@ def _run_pending(
         if stage == "analyze":
             directories = sorted(directories, key=_pending_analysis_queue_key, reverse=True)
         pending_prepare: list[Path] = []
+        if stage == "prepare" and selector == "all":
+            print(
+                "Automatic preparation queue is disabled. "
+                "Run prepare only for an explicit job directory or vacancy ID."
+            )
+            return 0
         for directory in directories:
             if stage == "analyze":
                 if should_skip_model(directory):
@@ -935,17 +941,6 @@ def _run_pending(
                 else:
                     pending_prepare.append(directory)
         if stage == "prepare":
-            if any(
-                (score := _optional_match_score(directory)) is not None
-                and policy.is_priority_score(score)
-                for directory in pending_prepare
-            ):
-                pending_prepare = [
-                    directory
-                    for directory in pending_prepare
-                    if (score := _optional_match_score(directory)) is not None
-                    and policy.is_priority_score(score)
-                ]
             for directory in sorted(pending_prepare, key=_pending_prepare_queue_key, reverse=True):
                 print(directory)
     except Exception as exc:

@@ -72,7 +72,7 @@ def workflow_summary(
         "rejected_total": _rejected_count(registry_root),
         "analyzed_total": sum(1 for vacancy in vacancies if vacancy.score is not None),
         "pending_analyze": len(queue_items("analyze", project_root, registry_root, profile_paths, policy)),
-        "pending_prepare": len(queue_items("prepare", project_root, registry_root, profile_paths, policy)),
+        "pending_prepare": 0,
         "prepared_total": len(prepared),
     }
 
@@ -85,7 +85,6 @@ def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[st
         "analyze_max_estimated_input_tokens": DEFAULT_ANALYZE_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_max_estimated_input_tokens": DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_min_score": policy.prepare_min_score,
-        "priority_score": policy.priority_score,
         "prepare_max_age_days": policy.prepare_max_age_days,
     }
 
@@ -146,9 +145,10 @@ def queue_items(
 ) -> list[QueueItem]:
     policy = policy or _policy(project_root)
     workflow = workflow.replace("-", "_")
-    if workflow not in {"analyze", "prepare", "prepare_priority"}:
+    if workflow not in {"analyze", "prepare"}:
         raise WorkflowApiError(f"unsupported workflow queue: {workflow}")
-    policy_workflow = "prepare" if workflow == "prepare_priority" else workflow
+    if workflow == "prepare":
+        return []
     vacancies = load_catalog_vacancies(registry_root)
     rows = []
     for vacancy in vacancies:
@@ -170,9 +170,7 @@ def queue_items(
                 continue
             if not _analysis_is_current(directory, registry_root, profile_paths, policy, project_root):
                 continue
-            if not policy.prepare_score_is_eligible(policy_workflow, vacancy.score):
-                continue
-            if workflow == "prepare_priority" and not policy.is_priority_score(vacancy.score):
+            if not policy.prepare_score_is_eligible(workflow, vacancy.score):
                 continue
             generator = ApplicationGenerator(
                 registry_root,
@@ -180,7 +178,7 @@ def queue_items(
                 project_root / "prompts" / "vacancy-application.md",
                 CodexApplicationDraftClient(
                     project_root / ".codex-work" / "unused-application",
-                    model=policy.workflow(policy_workflow).model_label,
+                    model=policy.workflow(workflow).model_label,
                 ),
                 HostMarkdownDocxConverter(project_root),
             )
@@ -197,15 +195,6 @@ def queue_items(
                 reasons=_queue_reasons(workflow, vacancy),
             )
         )
-    if workflow == "prepare" and any(
-        item.vacancy.score is not None and policy.is_priority_score(item.vacancy.score)
-        for item in rows
-    ):
-        rows = [
-            item
-            for item in rows
-            if item.vacancy.score is not None and policy.is_priority_score(item.vacancy.score)
-        ]
     rows.sort(key=_queue_priority, reverse=True)
     return rows[:limit] if limit is not None else rows
 

@@ -270,7 +270,6 @@ class CliTests(unittest.TestCase):
                     {
                         "schema_version": 1,
                         "prepare_min_score": 65,
-                        "priority_score": 75,
                         "prepare_max_age_days": 7,
                         "workflows": {
                             "analyze": {

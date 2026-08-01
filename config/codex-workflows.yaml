@@ -3,7 +3,6 @@ note: >-
   These settings document which model to select when creating each Codex task.
   Project code cannot switch the active Codex model. The publisher derives its
   provenance label from the explicitly selected workflow.
-priority_score: 75
 prepare_min_score: 65
 prepare_max_age_days: 7
 workflows:
@@ -17,5 +16,5 @@ workflows:
     reasoning: medium
     model_label: codex:gpt-5.6-terra:medium
     purpose: >
-      Single application package workflow. Prioritize vacancies scoring at least
-      75 while any are pending, then process eligible normal-score vacancies.
+      Single application package workflow. Prepare only vacancies explicitly
+      selected by the user through a vacancy ID or registry directory.

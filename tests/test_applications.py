@@ -400,7 +400,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(0, exit_code)
         self.assertTrue((self.directory / "application" / "manifest.yaml").is_file())
 
-    def test_pending_prepare_prioritizes_high_scores_then_falls_back_to_normal(self) -> None:
+    def test_pending_prepare_all_is_disabled_for_manual_selection(self) -> None:
         directories: dict[int, str] = {}
         for score in (64, 65, 74, 75):
             registry = Registry(
@@ -444,46 +444,54 @@ class ApplicationTests(unittest.TestCase):
             )
 
         self.assertEqual(0, exit_code)
+        self.assertIn("Automatic preparation queue is disabled", output.getvalue())
         self.assertNotIn(directories[64], output.getvalue())
         self.assertNotIn(directories[65], output.getvalue())
         self.assertNotIn(directories[74], output.getvalue())
-        self.assertIn(directories[75], output.getvalue())
+        self.assertNotIn(directories[75], output.getvalue())
 
-        (self.registry_root / "jobs" / directories[75] / "application").mkdir()
-        (self.registry_root / "jobs" / directories[75] / "application" / "manifest.yaml").write_text(
-            yaml.safe_dump(
-                {
-                    "model": "codex:gpt-5.6-terra:medium",
-                    "candidate_version": "different",
-                    "vacancy_version": "different",
-                    "prompt_version": "different",
-                    "files": [],
-                }
-            ),
-            encoding="utf-8",
+    def test_pending_prepare_explicit_vacancy_still_checks_eligibility(self) -> None:
+        registry = Registry(
+            self.registry_root,
+            clock=lambda: self.now,
+            id_factory=lambda: "vacancy-eligible",
         )
-        with patch("jobintel.cli.ApplicationGenerator.is_current", side_effect=lambda directory: directory.name == directories[75]):
-            fallback = StringIO()
-            with redirect_stdout(fallback):
-                fallback_exit = main(
-                    [
-                        "pending",
-                        "prepare",
-                        "all",
-                        "--registry",
-                        str(self.registry_root),
-                        "--profile",
-                        str(self.profile),
-                        "--workflow",
-                        "prepare",
-                    ]
-                )
+        created = registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="job-eligible",
+                source_url="https://example.test/jobs/eligible",
+                title="Backend Engineer Eligible",
+                company="Example",
+                description="Build Go services.",
+            )
+        )
+        directory = self.registry_root / "jobs" / created.directory
+        MatchAnalyzer(
+            self.registry_root,
+            [self.profile],
+            FakeMatchClient(72),
+            clock=lambda: self.now,
+        ).analyze_directory(directory)
 
-        self.assertEqual(0, fallback_exit)
-        self.assertNotIn(directories[64], fallback.getvalue())
-        self.assertIn(directories[65], fallback.getvalue())
-        self.assertIn(directories[74], fallback.getvalue())
-        self.assertNotIn(directories[75], fallback.getvalue())
+        output = StringIO()
+        with redirect_stdout(output):
+            exit_code = main(
+                [
+                    "pending",
+                    "prepare",
+                    created.vacancy_id,
+                    "--registry",
+                    str(self.registry_root),
+                    "--profile",
+                    str(self.profile),
+                    "--workflow",
+                    "prepare",
+                ]
+            )
+
+        self.assertEqual(0, exit_code)
+        self.assertIn(created.directory, output.getvalue())
 
 
 if __name__ == "__main__":
