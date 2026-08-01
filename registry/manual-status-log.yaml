@@ -3,16 +3,25 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 1
+  total_events: 3
   by_status:
     rejected:
-      count: 1
-      last_changed_at: '2026-07-31T20:02:31Z'
+      count: 3
+      last_changed_at: '2026-08-01T16:20:42Z'
   by_reason:
+    remote-role-includes-americas-region-avoid-ameri:
+      count: 1
+      reason: remote role includes Americas region; avoid American continent work-time
+        requirements
+      last_changed_at: '2026-08-01T16:20:42Z'
     requires-hybrid-type-of-work:
       count: 1
       reason: requires hybrid type of work
       last_changed_at: '2026-07-31T20:02:31Z'
+    sparkfabrik-requires-strong-italian-language-lev:
+      count: 1
+      reason: SparkFabrik requires strong Italian language level for informal communication
+      last_changed_at: '2026-08-01T16:20:42Z'
 events:
 - changed_at: '2026-07-31T20:02:31Z'
   vacancy_id: 0e2632ce-88f0-470f-8792-4adfc5586e46
@@ -26,3 +35,32 @@ events:
   actor: codex
   interaction:
     source: llm_assisted_manual
+- changed_at: '2026-08-01T16:20:42Z'
+  vacancy_id: ffe3989c-579a-4f28-8c46-9c30718c4665
+  directory: 2026-08-01_160014_canonical-ltd_software-architect-containers-virtualisation
+  company: Canonical Ltd.
+  title: Software Architect - Containers / Virtualisation
+  from_status: found
+  to_status: rejected
+  reason: remote role includes Americas region; avoid American continent work-time
+    requirements
+  reason_key: remote-role-includes-americas-region-avoid-ameri
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User rejected Jobicy 149981 and asked future vacancies requiring American
+    continent work time to be ignored.
+- changed_at: '2026-08-01T16:20:42Z'
+  vacancy_id: 4677d4cc-9b27-4a31-a5ce-f2d895d2a6f4
+  directory: 2026-08-01_155811_sparkfabrik-s-r-l_php-developer
+  company: SparkFabrik S.r.l.
+  title: PHP Developer
+  from_status: found
+  to_status: rejected
+  reason: SparkFabrik requires strong Italian language level for informal communication
+  reason_key: sparkfabrik-requires-strong-italian-language-lev
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User asked to reject all SparkFabrik jobs for half a year and return them
+    to the pool after 2027-02-01.

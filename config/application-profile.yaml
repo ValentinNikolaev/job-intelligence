@@ -37,6 +37,12 @@ company_retry_after:
       - GrafanaLabs
     allow_after: 2027-02-01
     reason: CV rejected; retry allowed from February 2027.
+  - company: SparkFabrik
+    aliases:
+      - SparkFabrik S.r.l.
+      - Sparkfabrik
+    allow_after: 2027-02-01
+    reason: Strong Italian language level required for informal communication; retry after six months.
 reusable_answers:
   motivation: >-
     I am looking for a hands-on technical lead role where I can stay close to

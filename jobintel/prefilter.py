@@ -76,6 +76,9 @@ def prefilter_job(
             if part
         )
     )
+    american_work_time_rejection = _american_work_time_rejection(full_text)
+    if american_work_time_rejection is not None:
+        return american_work_time_rejection
     if _has_english_requirement(full_text):
         return None
     blocking_language = _hard_blocking_language_requirement(full_text)
@@ -297,6 +300,20 @@ def _hard_blocking_language_requirement(text: str) -> str | None:
     for language in languages:
         if _has_hard_language_requirement(text, language):
             return language.title()
+    return None
+
+
+def _american_work_time_rejection(text: str) -> Rejection | None:
+    if re.search(r"\b(?:north|south|latin)?\s*american\s+time\s*zones?\b", text):
+        return Rejection("timezone_requirement", "requires American continent work time")
+    if re.search(r"\b(?:us|u\.s\.|usa|united states)\s+time\s*zones?\b", text):
+        return Rejection("timezone_requirement", "requires American continent work time")
+    if re.search(r"\b(?:work|working|operate|available|availability|overlap).{0,80}\b(?:us|u\.s\.|usa|united states|north america|south america|latin america|latam|americas?)\s+time\s*zones?\b", text):
+        return Rejection("timezone_requirement", "requires American continent work time")
+    if re.search(r"\b(?:based|located|resident|reside).{0,80}\b(?:north america|south america|latin america|latam|americas?)\b", text):
+        return Rejection("location_requirement", "requires American continent location")
+    if re.search(r"\b(?:north america|south america|latin america|latam|americas?)\b.{0,80}\b(?:only|based|residents?|candidates?|applicants?)\b", text):
+        return Rejection("location_requirement", "requires American continent location")
     return None
 
 

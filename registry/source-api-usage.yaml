@@ -2821,8 +2821,8 @@ sources:
       errors: 0
       limit_reached: false
   himalayas:
-    total_requests: 607
-    last_run_at: '2026-08-01T15:59:52Z'
+    total_requests: 615
+    last_run_at: '2026-08-01T16:05:20Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -3727,9 +3727,20 @@ sources:
       rejected: 92
       errors: 0
       limit_reached: true
+    - run_started_at: '2026-08-01T16:02:31Z'
+      recorded_at: '2026-08-01T16:05:20Z'
+      requests: 8
+      fetched: 100
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 8
+      rejected: 92
+      errors: 0
+      limit_reached: true
   jobicy:
-    total_requests: 649
-    last_run_at: '2026-08-01T16:01:33Z'
+    total_requests: 657
+    last_run_at: '2026-08-01T16:06:52Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -4634,9 +4645,20 @@ sources:
       rejected: 85
       errors: 0
       limit_reached: true
+    - run_started_at: '2026-08-01T16:02:31Z'
+      recorded_at: '2026-08-01T16:06:52Z'
+      requests: 8
+      fetched: 100
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 15
+      rejected: 85
+      errors: 0
+      limit_reached: true
   jooble:
-    total_requests: 443
-    last_run_at: '2026-08-01T16:02:36Z'
+    total_requests: 449
+    last_run_at: '2026-08-01T16:07:47Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -5525,6 +5547,17 @@ sources:
       fetched: 100
       created: 1
       updated: 2
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 97
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-08-01T16:02:31Z'
+      recorded_at: '2026-08-01T16:07:47Z'
+      requests: 6
+      fetched: 100
+      created: 0
+      updated: 3
       duplicates_merged: 0
       unchanged: 0
       rejected: 97
@@ -6438,8 +6471,8 @@ sources:
       errors: 0
       limit_reached: false
   greenhouse:
-    total_requests: 74
-    last_run_at: '2026-08-01T15:58:56Z'
+    total_requests: 75
+    last_run_at: '2026-08-01T16:04:27Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-25T05:43:58Z'
@@ -7247,6 +7280,17 @@ sources:
       limit_reached: false
     - run_started_at: '2026-08-01T15:56:56Z'
       recorded_at: '2026-08-01T15:58:56Z'
+      requests: 1
+      fetched: 37
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 37
+      errors: 0
+      limit_reached: false
+    - run_started_at: '2026-08-01T16:02:31Z'
+      recorded_at: '2026-08-01T16:04:27Z'
       requests: 1
       fetched: 37
       created: 0

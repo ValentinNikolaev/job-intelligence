@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '9222582080146728461'
-source_url: https://jooble.org/away/9222582080146728461?p=1&pos=12&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=34&brelb=15&scr=2353.9705&bscr=2353.9705&aq=330985453840049172&elckey=-2062398823985315717
+source_url: https://jooble.org/away/9222582080146728461?p=1&pos=12&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=34&brelb=15&scr=2353.9705&bscr=2353.9705&aq=3703429448903662240&elckey=-2062398823985315717
 title: Senior Backend Engineer - Activations
 company: LiveRamp
 location: Remote
 published_at: '2026-07-31T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-01T16:01:53Z'
+updated_at: '2026-08-01T16:07:10Z'
 rejected_at: '2026-07-23T16:09:14Z'

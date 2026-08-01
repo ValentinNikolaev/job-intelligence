@@ -87,6 +87,25 @@ class PrefilterTests(unittest.TestCase):
             with self.subTest(description=description):
                 self.assertIsNone(prefilter_job(make_job(description=description), now=self.now))
 
+    def test_rejects_american_continent_time_requirements(self) -> None:
+        for description in (
+            "Build Go services while working US time zones.",
+            "Candidates must be based in North America for this PHP backend role.",
+            "Availability required for LATAM time zones on Go platform calls.",
+        ):
+            with self.subTest(description=description):
+                rejection = prefilter_job(make_job(description=description), now=self.now)
+                self.assertIsNotNone(rejection)
+                self.assertIn(rejection.category, {"timezone_requirement", "location_requirement"})
+
+    def test_allows_roles_available_in_emea_and_americas_without_us_time_requirement(self) -> None:
+        rejection = prefilter_job(
+            make_job(description="Build Go services. Location: available in EMEA and the Americas."),
+            now=self.now,
+        )
+
+        self.assertIsNone(rejection)
+
     def test_requires_go_or_php_stack(self) -> None:
         rejection = prefilter_job(
             make_job(description="Build Java services with PostgreSQL."),
@@ -188,6 +207,12 @@ class PrefilterTests(unittest.TestCase):
                                 "aliases": ["Grafana Labs"],
                                 "allow_after": "2027-02-01",
                                 "reason": "Retry later.",
+                            },
+                            {
+                                "company": "SparkFabrik",
+                                "aliases": ["SparkFabrik S.r.l."],
+                                "allow_after": "2027-02-01",
+                                "reason": "Strong Italian language level required.",
                             }
                         ]
                     },
@@ -198,8 +223,9 @@ class PrefilterTests(unittest.TestCase):
 
             rules = load_company_retry_rules(profile)
 
-            self.assertEqual(1, len(rules))
+            self.assertEqual(2, len(rules))
             self.assertTrue(rules[0].matches("Grafana Labs"))
+            self.assertTrue(rules[1].matches("SparkFabrik S.r.l."))
             self.assertEqual(
                 datetime(2027, 2, 1, tzinfo=timezone.utc).date(),
                 rules[0].allow_after,

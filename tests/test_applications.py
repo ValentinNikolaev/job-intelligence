@@ -199,7 +199,7 @@ class ApplicationTests(unittest.TestCase):
             "CV_ValentinNikolaev_example_SeniorBackendEngineer",
             manifest["cv_export_stem"],
         )
-        self.assertEqual("June 2026", manifest["simple_life_end_date"])
+        self.assertEqual(_simple_life_cv_end_date(self.now), manifest["simple_life_end_date"])
 
     def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
         self.assertEqual(
@@ -237,7 +237,7 @@ class ApplicationTests(unittest.TestCase):
         self._generator(FakeClient(payload), FakeConverter()).generate_directory(self.directory)
 
         cv = (self.directory / "application" / "cv.md").read_text(encoding="utf-8")
-        self.assertIn("November 2023 - June 2026", cv)
+        self.assertIn(f"November 2023 - {_simple_life_cv_end_date(self.now)}", cv)
         self.assertIn("February 2021 - August 2023", cv)
 
     def test_simple_app_heading_is_supported_for_linkedin_drafts(self) -> None:

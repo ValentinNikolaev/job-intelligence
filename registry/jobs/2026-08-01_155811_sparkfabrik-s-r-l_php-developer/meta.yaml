@@ -18,11 +18,13 @@ sources:
       Professional, and Senior levels.
 published_at: null
 discovered_at: '2026-08-01T15:58:11Z'
-updated_at: '2026-08-01T15:58:11Z'
-status: found
+updated_at: '2026-08-01T16:20:42Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-08-01T15:58:11Z'
+- status: rejected
+  changed_at: '2026-08-01T16:20:42Z'
 analysis_priority: 100
 fingerprint: sha256:14507678cffae8ff65bed8d0f36febc815f06c8dd35d65c1f1c8271606e927fc
 data_source: custom
