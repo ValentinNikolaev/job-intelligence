@@ -3,19 +3,24 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 7
+  total_events: 8
   by_status:
     applied:
       count: 3
       last_changed_at: '2026-08-01T19:51:51Z'
     rejected:
-      count: 4
-      last_changed_at: '2026-08-01T17:09:10Z'
+      count: 5
+      last_changed_at: '2026-08-01T19:54:58Z'
   by_reason:
     applied-one-day-previously-skip-duplicate-proces:
       count: 1
       reason: applied one day previously; skip duplicate processing
       last_changed_at: '2026-08-01T16:58:51Z'
+    india-focused-remote-role-public-postings-show-i:
+      count: 1
+      reason: India-focused remote role; public postings show India location and INR
+        compensation.
+      last_changed_at: '2026-08-01T19:54:58Z'
     remote-role-includes-americas-region-avoid-ameri:
       count: 1
       reason: remote role includes Americas region; avoid American continent work-time
@@ -143,3 +148,17 @@ events:
     source: llm_assisted_manual
   note: 'Actual application date reported by user: 2026-07-25. Status recorded after
     vacancy entered registry to preserve chronological status history.'
+- changed_at: '2026-08-01T19:54:58Z'
+  vacancy_id: c56dbfa1-a9b4-4d42-a008-b15d12618ddc
+  directory: 2026-08-01_182447_signoz_staff-backend-engineer
+  company: SigNoz
+  title: Staff Backend Engineer
+  from_status: found
+  to_status: rejected
+  reason: India-focused remote role; public postings show India location and INR compensation.
+  reason_key: india-focused-remote-role-public-postings-show-i
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: 'Verified against SigNoz/Ashby, LinkedIn, and remote job aggregators: role
+    appears India-oriented rather than EU-compatible remote.'
