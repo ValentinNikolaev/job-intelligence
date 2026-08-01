@@ -3,14 +3,14 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 4
+  total_events: 5
   by_status:
     applied:
       count: 1
       last_changed_at: '2026-08-01T16:58:51Z'
     rejected:
-      count: 3
-      last_changed_at: '2026-08-01T16:20:42Z'
+      count: 4
+      last_changed_at: '2026-08-01T17:09:10Z'
   by_reason:
     applied-one-day-previously-skip-duplicate-proces:
       count: 1
@@ -21,6 +21,10 @@ summary:
       reason: remote role includes Americas region; avoid American continent work-time
         requirements
       last_changed_at: '2026-08-01T16:20:42Z'
+    requires-america-timezone:
+      count: 1
+      reason: requires America timezone
+      last_changed_at: '2026-08-01T17:09:10Z'
     requires-hybrid-type-of-work:
       count: 1
       reason: requires hybrid type of work
@@ -85,3 +89,17 @@ events:
     source: llm_assisted_manual
   note: User said to skip this Nord Security vacancy because it was applied one day
     previously.
+- changed_at: '2026-08-01T17:09:10Z'
+  vacancy_id: 005a15f1-3302-42af-aaec-18190a5a7594
+  directory: 2026-07-31_221149_bright-vision-technologies_golang-applications-engineer
+  company: Bright Vision Technologies
+  title: Golang Applications Engineer
+  from_status: found
+  to_status: rejected
+  reason: requires America timezone
+  reason_key: requires-america-timezone
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User rejected Bright Vision Technologies Golang Applications Engineer because
+    it is in America timezone.
