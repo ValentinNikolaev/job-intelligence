@@ -2,8 +2,8 @@
 
 ## Rejection
 
-- Category: language_requirement
-- Reason: hard Italian language requirement without English green light
+- Category: location_requirement
+- Reason: remote role is limited to the United States
 
 Opening for Senior Java Developer (Italian) | Jagaad
 

@@ -2,8 +2,8 @@
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: location_requirement
+- Reason: remote role is limited to the United States
 
 Opening for Senior Java Developer | Jagaad
 

@@ -1,11 +1,11 @@
 # Senior Backend Engineer
 
-Posted: 2026-07-19T00:00:00.0000000
+Posted: 2026-07-26T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-19T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Role Description
 We are hiring a **Senior **Back End **Engineer **to help architect and scale the core infrastructure powering Volt's messaging platform... ...platforms or automation systems

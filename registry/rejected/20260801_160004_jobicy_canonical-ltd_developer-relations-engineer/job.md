@@ -4,8 +4,8 @@ Posted: 2026-08-01T03:04:23Z
 
 ## Rejection
 
-- Category: timezone_requirement
-- Reason: requires American continent work time
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 As the publisher of Ubuntu we serve millions of developers, building for the cloud, IoT and data science. We aim to make open source easier and more reliable for innovators and enterprises.
 

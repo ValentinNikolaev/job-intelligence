@@ -4,8 +4,8 @@ Posted: 2026-07-29T21:31:49Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: location_requirement
+- Reason: remote role is limited to the United States
 
 Nocrunch.Nocore hours. Work the way that suitsyou.
 

@@ -4,8 +4,8 @@ Posted: 2026-08-01T03:03:54Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: location_requirement
+- Reason: requires United States location
 
 We're enabling high-performing, rock-solid MongoDB deployments on any cloud or platform our customers choose. We want to create the world's best open source analog to MongoDB Altas or Amazon DocumentDB, which can be owned, controlled and operated by end-users on their own multi-cloud or on-premise environments.
 

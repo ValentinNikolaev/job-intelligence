@@ -2,8 +2,8 @@
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: Python + R is not a target stack
+- Category: location_requirement
+- Reason: remote role is limited to the United States
 
 Opening for Senior PHP Backend Developer | Jagaad
 
