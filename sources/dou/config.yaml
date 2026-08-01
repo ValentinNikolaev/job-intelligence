@@ -1,0 +1,11 @@
+version: 1
+timeout_seconds: 30
+analysis_priority: 100
+queries:
+  - name: php-remote
+    url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+    category: PHP
+
+  - name: golang-remote
+    url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+    category: Golang

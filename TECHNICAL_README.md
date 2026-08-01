@@ -6,8 +6,9 @@ A minimal local-first collector that turns source-specific vacancies into one hu
 Source API → collector → normalized job → deduplication → registry/jobs → registry/index.md
 ```
 
-The current MVP implements Adzuna, Arbeitnow, Himalayas, Jobicy, Jooble, public
-Ashby and Greenhouse job-board collectors, and custom company-board monitoring.
+The current MVP implements Adzuna, Arbeitnow, DOU, Himalayas, Jobicy, Jooble,
+public Ashby and Greenhouse job-board collectors, and custom company-board
+monitoring.
 
 ## Requirements
 
@@ -98,6 +99,13 @@ follows the API's `links.next` pagination URL and leaves keyword/location
 filtering to downstream processing. See the
 [Arbeitnow collector guide](sources/arbeitnow/README.md) for details.
 
+DOU remote category pages live in
+[`sources/dou/config.yaml`](sources/dou/config.yaml). The collector monitors the
+PHP and Golang remote vacancy pages, follows each vacancy link for full
+description text when available, and assigns `analysis_priority: 100` to those
+configured high-priority leads. See the
+[DOU collector guide](sources/dou/README.md) for configuration details.
+
 Himalayas provides a free public remote-job search API with no API key. Search
 profiles and per-query page limits live in
 [`sources/himalayas/config.yaml`](sources/himalayas/config.yaml). The collector
@@ -132,6 +140,7 @@ deterministic HTML parser.
 python run.py list
 python run.py adzuna
 python run.py arbeitnow
+python run.py dou
 python run.py himalayas
 python run.py jobicy
 python run.py jooble
