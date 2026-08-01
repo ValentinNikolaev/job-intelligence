@@ -3,12 +3,19 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 3
+  total_events: 4
   by_status:
+    applied:
+      count: 1
+      last_changed_at: '2026-08-01T16:58:51Z'
     rejected:
       count: 3
       last_changed_at: '2026-08-01T16:20:42Z'
   by_reason:
+    applied-one-day-previously-skip-duplicate-proces:
+      count: 1
+      reason: applied one day previously; skip duplicate processing
+      last_changed_at: '2026-08-01T16:58:51Z'
     remote-role-includes-americas-region-avoid-ameri:
       count: 1
       reason: remote role includes Americas region; avoid American continent work-time
@@ -64,3 +71,17 @@ events:
     source: llm_assisted_manual
   note: User asked to reject all SparkFabrik jobs for half a year and return them
     to the pool after 2027-02-01.
+- changed_at: '2026-08-01T16:58:51Z'
+  vacancy_id: 2410847b-c39f-48e3-b917-c2223aafec05
+  directory: 2026-08-01_155816_nord-security_backend-engineer-mid-senior-php-go-payments-team
+  company: Nord Security
+  title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
+  from_status: found
+  to_status: applied
+  reason: applied one day previously; skip duplicate processing
+  reason_key: applied-one-day-previously-skip-duplicate-proces
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User said to skip this Nord Security vacancy because it was applied one day
+    previously.
