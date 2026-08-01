@@ -5,7 +5,7 @@ Configure this Scheduled Task with **GPT-5.6 Luna** and **low reasoning**. Work 
 Before selecting work, pull the latest committed repository state from the configured
 remote branch, for example with `git fetch --prune origin` and `git pull --ff-only`,
 then inspect the current repo-derived queue data with
-`python run.py api queues analyze --json --limit 15`. Do not rely on stale task context
+`python run.py api queues analyze --json --limit 30`. Do not rely on stale task context
 when deciding which vacancies are pending.
 
 Read `AGENTS.md`, invoke `$job-intelligence-workflow` in analysis mode, and use a

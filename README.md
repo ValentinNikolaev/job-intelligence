@@ -143,7 +143,7 @@ python run.py all
 python run.py reindex
 python run.py catalog
 python run.py doctor
-python run.py top 5
+python run.py top 10
 ```
 
 Run one source:

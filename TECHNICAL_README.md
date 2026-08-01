@@ -160,7 +160,7 @@ python run.py api source-usage --json
 python run.py usage record --workflow analyze --model codex:gpt-5.6-luna:low --input-tokens 1234 --output-tokens 456 --credits 0.12
 python run.py usage summary
 python run.py api catalog-vacancies --json
-python run.py api queues analyze --json --limit 10
+python run.py api queues analyze --json --limit 30
 python run.py pending analyze all --workflow analyze
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
 python run.py pending prepare <job-directory-or-vacancy-id> --workflow prepare
@@ -398,7 +398,7 @@ explicit secret provisioning through the task or host environment; never commit
 
 The GitHub collection workflow is suitable for a three-hour cadence. It runs collection,
 indexing, deterministic triage, catalog generation, tests, doctor checks, queue/status
-JSON commands, and `python run.py top 5`; each Python command writes its output to the
+JSON commands, and `python run.py top 10`; each Python command writes its output to the
 GitHub step summary. If project files changed, the workflow commits and pushes the full
 deterministic update. Ignored secrets and local work files are never staged.
 

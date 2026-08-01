@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-5381038620054317334'
-source_url: https://jooble.org/desc/-5381038620054317334?ckey=remote+golang+backend+engineer&rgn=55180&pos=20&groupId=1106121903&elckey=2929454452357888608&p=1&aq=-5689640372339984841&cid=15922&jobAge=496&brelb=10&bscr=223.93488&scr=223.93488
+source_url: https://jooble.org/away/-5381038620054317334?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=520&brelb=15&scr=600.0293&bscr=600.0293&aq=1168428270960734102&elckey=-8029521662002119399
 title: Backend Engineer
 company: Reddit
 location: Remote
 published_at: '2026-07-11T00:00:00.0000000'
 rejection_category: stale
 rejection_reason: published_at 2026-07-11T00:00:00.0000000 is older than 7 days
-updated_at: '2026-07-31T22:11:45Z'
+updated_at: '2026-08-01T22:08:04Z'
 rejected_at: '2026-07-24T18:07:03Z'
