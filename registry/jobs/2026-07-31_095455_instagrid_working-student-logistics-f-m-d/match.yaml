@@ -1,0 +1,22 @@
+score: 2
+recommendation: not_match
+summary: The working-student logistics position is unrelated to the candidate's senior
+  software-engineering career.
+strengths:
+- Digital tools and process discipline
+gaps:
+- Current student enrollment
+- logistics operations
+- warehouse work
+- NetSuite
+- and fluent German
+concerns:
+- Fixed on-site role and explicit student requirement
+hard_rejection: true
+hard_rejection_reason: Explicit student and logistics requirements are incompatible
+  with the candidate profile.
+analyzed_at: '2026-08-01T15:59:10Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:d36eae38614640194e9303805d8a1f20218896c2309b0283bbf50cab6ed13fbc
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

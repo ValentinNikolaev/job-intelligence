@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149974'
+source_url: https://jobicy.com/jobs/149974-senior-software-engineer-python-mongodb
+title: Senior Software Engineer - Python/MongoDB
+company: Canonical Ltd.
+location: EMEA
+published_at: '2026-08-01T03:03:54Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-01T16:00:24Z'
+rejected_at: '2026-08-01T16:00:24Z'

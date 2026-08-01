@@ -1,0 +1,20 @@
+score: 5
+recommendation: not_match
+summary: Courier HR operations do not align with the candidate's backend engineering
+  and technical leadership profile.
+strengths: []
+gaps:
+- HR operations
+- workforce management
+- courier support
+- and employment-law processes
+concerns:
+- On-site Croatia role and unrelated occupation
+hard_rejection: true
+hard_rejection_reason: Role is fundamentally incompatible with the candidate's software-engineering
+  background.
+analyzed_at: '2026-08-01T15:59:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2df224c8095e2e5ca83314a502efef8ecc4b909840686fe9988189334503000a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

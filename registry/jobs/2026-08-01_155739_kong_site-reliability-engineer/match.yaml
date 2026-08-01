@@ -1,0 +1,25 @@
+score: 76
+recommendation: match
+summary: Strong backend and AWS/Kubernetes reliability experience matches Kong's SRE
+  role, though the candidate's profile is more software-engineering than dedicated
+  SRE.
+strengths:
+- Go
+- AWS
+- Kubernetes
+- CI/CD
+- observability
+- production reliability
+- Milan/remote compatibility
+gaps:
+- Dedicated SRE/DevOps ownership and Kong-specific platform experience are not established
+concerns:
+- SRE work may be less aligned with the candidate's preferred backend development
+  focus
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-01T15:59:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9383d11cd586bd786289d521642658720c9b86c5106efc619d473753b03b79b7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
