@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-3142958944115205692'
-source_url: https://jooble.org/desc/-3142958944115205692?ckey=remote+senior+backend+engineer&rgn=55180&pos=14&groupId=2134052230&elckey=8536964986565560688&p=1&aq=5479073515049901554&cid=15922&jobAge=160&brelb=10&bscr=903.9458&scr=903.9458
+source_url: https://jooble.org/away/-3142958944115205692?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=178&brelb=15&scr=2498.2153&bscr=2498.2153&aq=330985453840049172&elckey=-2062398823985315717
 title: Senior Backend Software Engineer
 company: Turnitin, LLC
 location: Remote
 published_at: '2026-07-25T00:00:00.0000000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-31T22:11:06Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-25T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-01T16:01:48Z'
 rejected_at: '2026-07-24T10:00:04Z'

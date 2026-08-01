@@ -1,0 +1,59 @@
+schema_version: 2
+id: ed02d111-5074-4f96-8698-e100080dc2af
+title: Senior Software Engineer (Golang)
+company: Zartis
+company_url: null
+location: Europe
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149948'
+  url: https://jobicy.com/jobs/149948-senior-software-engineer-golang
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/9bd0869f-221.webp
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: 'The company and our mission: Zartis is a digital solutions provider
+      working across technology strategy, software engineering, and product development.
+      We partner with firms across financial services, MedTech, media, logistics technology,
+      renewable energy, EdTech, e-commerce, and more. Our engineering hubs in EMEA
+      and LATAM are full of talented professionals delivering business success and
+      digital improvement…'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        count: '100'
+        industry: dev
+    - query_index: 3
+      parameters:
+        geo: emea
+        count: '100'
+        tag: golang
+        industry: dev
+    - query_index: 4
+      parameters:
+        geo: europe
+        count: '100'
+        tag: golang
+        industry: dev
+    - query_index: 8
+      parameters:
+        geo: europe
+        count: '100'
+        tag: platform engineer
+        industry: dev
+published_at: '2026-08-01T03:00:45Z'
+discovered_at: '2026-08-01T16:00:40Z'
+updated_at: '2026-08-01T16:00:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-01T16:00:40Z'
+analysis_priority: 0
+fingerprint: sha256:25bf38aab9c8cf16ad56c8682e9caa92c82a2e3c7971feec52f59ee8286ad079
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

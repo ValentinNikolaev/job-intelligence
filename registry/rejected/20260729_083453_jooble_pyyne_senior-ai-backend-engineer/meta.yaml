@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-8738299644179044346'
-source_url: https://jooble.org/desc/-8738299644179044346?ckey=remote+senior+backend+engineer&rgn=55180&pos=41&groupId=2134052230&elckey=8536964986565560688&p=1&aq=5479073515049901554&cid=15922&jobAge=157&brelb=100&bscr=788.80664&scr=788.80664
+source_url: https://jooble.org/desc/-8738299644179044346?ckey=remote+senior+backend+engineer&rgn=55180&pos=42&groupId=2134052230&elckey=-2062398823985315717&p=1&aq=330985453840049172&cid=15922&jobAge=175&brelb=100&bscr=809.7687&scr=809.7687
 title: Senior AI Backend Engineer
 company: Pyyne
 location: Remote
 published_at: '2026-07-25T02:49:30.5700000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-31T22:11:27Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-25T02:49:30.5700000 is older than 7 days
+updated_at: '2026-08-01T16:02:13Z'
 rejected_at: '2026-07-29T08:34:53Z'

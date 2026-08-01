@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '1212912825228934052'
-source_url: https://jooble.org/desc/1212912825228934052?ckey=remote+senior+backend+engineer&rgn=55180&pos=26&groupId=2134052230&elckey=8536964986565560688&p=1&aq=5479073515049901554&cid=15922&jobAge=736&brelb=110&bscr=871.3072&scr=871.3072
+source_url: https://jooble.org/desc/1212912825228934052?ckey=remote+senior+backend+engineer&rgn=55180&pos=31&groupId=2134052230&elckey=-2062398823985315717&p=1&aq=330985453840049172&cid=15922&jobAge=10&brelb=110&bscr=886.0537&scr=886.0537
 title: Senior Backend Engineer (Remote Opportunity)
 company: VetsEZ
 location: Remote
-published_at: '2026-07-01T00:00:00.0000000'
-rejection_category: stale
-rejection_reason: published_at 2026-07-01T00:00:00.0000000 is older than 7 days
-updated_at: '2026-07-31T22:11:16Z'
+published_at: '2026-08-01T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-01T16:02:06Z'
 rejected_at: '2026-07-25T20:05:32Z'

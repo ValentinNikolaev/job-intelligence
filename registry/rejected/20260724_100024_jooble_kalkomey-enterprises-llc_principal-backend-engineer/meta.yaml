@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '7105679920577710958'
-source_url: https://jooble.org/away/7105679920577710958?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=98&brelb=15&scr=537.2306&bscr=537.2306&aq=-6592572903295206070&elckey=-1881177258906458652
+source_url: https://jooble.org/away/7105679920577710958?p=1&pos=18&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=178&brelb=15&scr=542.2213&bscr=542.2213&aq=-2094971927201904900&elckey=-7669909358192987797
 title: Principal Backend Engineer
 company: Kalkomey Enterprises, LLC
 location: Remote
 published_at: '2026-07-25T00:00:00.0000000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-29T08:34:59Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-25T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-01T16:02:24Z'
 rejected_at: '2026-07-24T10:00:24Z'

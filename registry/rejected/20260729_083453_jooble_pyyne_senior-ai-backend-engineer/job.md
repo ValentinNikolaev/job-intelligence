@@ -4,8 +4,8 @@ Posted: 2026-07-25T02:49:30.5700000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-25T02:49:30.5700000 is older than 7 days
 
 ...Pyyne is a modern technology consultancy **engineering **the next generation of digital... ...solutions. 
 The Role 
