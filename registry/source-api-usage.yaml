@@ -4822,8 +4822,8 @@ sources:
       errors: 0
       limit_reached: true
   jooble:
-    total_requests: 461
-    last_run_at: '2026-08-01T18:24:58Z'
+    total_requests: 467
+    last_run_at: '2026-08-01T19:16:56Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -5748,6 +5748,17 @@ sources:
       duplicates_merged: 0
       unchanged: 0
       rejected: 94
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-08-01T19:11:38Z'
+      recorded_at: '2026-08-01T19:16:56Z'
+      requests: 6
+      fetched: 100
+      created: 0
+      updated: 3
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 97
       errors: 0
       limit_reached: true
   custom:

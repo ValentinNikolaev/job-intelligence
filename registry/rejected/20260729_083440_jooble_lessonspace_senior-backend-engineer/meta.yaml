@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-391296890878693766'
-source_url: https://jooble.org/away/-391296890878693766?p=1&pos=9&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=59&brelb=15&scr=2392.4124&bscr=2392.4124&aq=-8248919960526201104&elckey=-5196791553571762920
+source_url: https://jooble.org/away/-391296890878693766?p=1&pos=11&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=61&brelb=15&scr=2327.4932&bscr=2327.4932&aq=6553387618424502625&elckey=-1096964051531514465
 title: Senior Backend Engineer
 company: Lessonspace
 location: Remote
 published_at: '2026-07-30T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-01T17:06:34Z'
+updated_at: '2026-08-01T19:16:15Z'
 rejected_at: '2026-07-29T08:34:40Z'
