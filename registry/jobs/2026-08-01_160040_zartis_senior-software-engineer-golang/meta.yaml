@@ -47,11 +47,13 @@ sources:
         industry: dev
 published_at: '2026-08-01T03:00:45Z'
 discovered_at: '2026-08-01T16:00:40Z'
-updated_at: '2026-08-01T16:00:40Z'
-status: found
+updated_at: '2026-08-01T20:27:52Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-01T16:00:40Z'
+- status: applied
+  changed_at: '2026-08-01T20:27:52Z'
 analysis_priority: 0
 fingerprint: sha256:25bf38aab9c8cf16ad56c8682e9caa92c82a2e3c7971feec52f59ee8286ad079
 data_source: jobicy

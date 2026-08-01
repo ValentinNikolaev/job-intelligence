@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 8
+  total_events: 9
   by_status:
     applied:
-      count: 3
-      last_changed_at: '2026-08-01T19:51:51Z'
+      count: 4
+      last_changed_at: '2026-08-01T20:27:52Z'
     rejected:
       count: 5
       last_changed_at: '2026-08-01T19:54:58Z'
@@ -38,6 +38,10 @@ summary:
       count: 1
       reason: SparkFabrik requires strong Italian language level for informal communication
       last_changed_at: '2026-08-01T16:20:42Z'
+    user-confirmed-application-submitted-to-zartis:
+      count: 1
+      reason: User confirmed application submitted to Zartis
+      last_changed_at: '2026-08-01T20:27:52Z'
     user-reported-applying-to-cubbit-s-r-l-senior-ba:
       count: 1
       reason: User reported applying to Cubbit S.r.l. Senior Backend Developer GO
@@ -162,3 +166,15 @@ events:
     source: llm_assisted_manual
   note: 'Verified against SigNoz/Ashby, LinkedIn, and remote job aggregators: role
     appears India-oriented rather than EU-compatible remote.'
+- changed_at: '2026-08-01T20:27:52Z'
+  vacancy_id: ed02d111-5074-4f96-8698-e100080dc2af
+  directory: 2026-08-01_160040_zartis_senior-software-engineer-golang
+  company: Zartis
+  title: Senior Software Engineer (Golang)
+  from_status: found
+  to_status: applied
+  reason: User confirmed application submitted to Zartis
+  reason_key: user-confirmed-application-submitted-to-zartis
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
