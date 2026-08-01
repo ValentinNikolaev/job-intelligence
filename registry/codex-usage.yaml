@@ -736,3 +736,13 @@ runs:
   credits: 0.0
   note: Codex surface did not expose exact usage; estimated zero recorded for batch
     run.
+- run_id: 62f64f1a7c204fa089078e2c50872a18
+  recorded_at: '2026-08-01T21:40:25Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
