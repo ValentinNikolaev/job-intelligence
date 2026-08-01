@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 5
+  total_events: 6
   by_status:
     applied:
-      count: 1
-      last_changed_at: '2026-08-01T16:58:51Z'
+      count: 2
+      last_changed_at: '2026-08-01T19:27:25Z'
     rejected:
       count: 4
       last_changed_at: '2026-08-01T17:09:10Z'
@@ -33,6 +33,11 @@ summary:
       count: 1
       reason: SparkFabrik requires strong Italian language level for informal communication
       last_changed_at: '2026-08-01T16:20:42Z'
+    user-requested-marking-jagaad-senior-php-backend:
+      count: 1
+      reason: User requested marking Jagaad Senior PHP Backend Developer as applied
+        after preparing CV and cover letter.
+      last_changed_at: '2026-08-01T19:27:25Z'
 events:
 - changed_at: '2026-07-31T20:02:31Z'
   vacancy_id: 0e2632ce-88f0-470f-8792-4adfc5586e46
@@ -103,3 +108,18 @@ events:
     source: llm_assisted_manual
   note: User rejected Bright Vision Technologies Golang Applications Engineer because
     it is in America timezone.
+- changed_at: '2026-08-01T19:27:25Z'
+  vacancy_id: e599eee7-c95c-4c7b-8119-d26441091128
+  directory: 2026-08-01_155803_jagaad-s-r-l_senior-php-backend-developer
+  company: Jagaad S.r.l.
+  title: Senior PHP Backend Developer
+  from_status: found
+  to_status: applied
+  reason: User requested marking Jagaad Senior PHP Backend Developer as applied after
+    preparing CV and cover letter.
+  reason_key: user-requested-marking-jagaad-senior-php-backend
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Application package prepared in repository; status marked applied per user
+    request.

@@ -18,11 +18,13 @@ sources:
       roles directly, with PHP, Go, Node.js, microservices, and cloud in the stack.
 published_at: null
 discovered_at: '2026-08-01T15:58:03Z'
-updated_at: '2026-08-01T15:58:03Z'
-status: found
+updated_at: '2026-08-01T19:27:25Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-01T15:58:03Z'
+- status: applied
+  changed_at: '2026-08-01T19:27:25Z'
 analysis_priority: 100
 fingerprint: sha256:8ef37b60848c6f351e1cd0c5bb213006a074f67f9fad805c32551f3df449fb1b
 data_source: custom
