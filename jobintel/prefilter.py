@@ -304,6 +304,17 @@ def _hard_blocking_language_requirement(text: str) -> str | None:
 
 
 def _american_work_time_rejection(text: str) -> Rejection | None:
+    if _has_european_work_availability(text):
+        return None
+    us_marker = r"(?:\bus\b|u\.s\.|\busa\b|\bunited states\b)"
+    if re.search(rf"\bremote\s*\(?\s*{us_marker}\s*\)?", text):
+        return Rejection("location_requirement", "remote role is limited to the United States")
+    if re.search(rf"{us_marker}\s*\(?\s*remote\s*\)?\b", text):
+        return Rejection("location_requirement", "remote role is limited to the United States")
+    if re.search(rf"\b(?:remote|work from home|work-from-home)\b.{{0,80}}\b(?:only|limited to|restricted to)\b.{{0,80}}{us_marker}", text):
+        return Rejection("location_requirement", "remote role is limited to the United States")
+    if re.search(rf"{us_marker}.{{0,80}}\b(?:only|residents?|candidates?|applicants?|based|located)\b", text):
+        return Rejection("location_requirement", "requires United States location")
     if re.search(r"\b(?:north|south|latin)?\s*american\s+time\s*zones?\b", text):
         return Rejection("timezone_requirement", "requires American continent work time")
     if re.search(r"\b(?:us|u\.s\.|usa|united states)\s+time\s*zones?\b", text):
@@ -315,6 +326,25 @@ def _american_work_time_rejection(text: str) -> Rejection | None:
     if re.search(r"\b(?:north america|south america|latin america|latam|americas?)\b.{0,80}\b(?:only|based|residents?|candidates?|applicants?)\b", text):
         return Rejection("location_requirement", "requires American continent location")
     return None
+
+
+def _has_european_work_availability(text: str) -> bool:
+    european_markers = (
+        r"eu",
+        r"europe",
+        r"european",
+        r"emea",
+        r"cet",
+        r"cest",
+        r"utc\s*\+?\s*[012]",
+        r"gmt\s*\+?\s*[012]",
+    )
+    marker = r"|".join(european_markers)
+    return bool(
+        re.search(rf"\b(?:available|availability|eligible|open|work|working|overlap).{{0,100}}\b(?:{marker})\b", text)
+        or re.search(rf"\b(?:{marker})\b.{{0,100}}\b(?:available|availability|eligible|open|work|working|overlap|hours?|time\s*zones?)\b", text)
+        or re.search(r"\b(?:europe|emea|cet|cest)\s+(?:time\s+zones?|hours?|working\s+hours?)\b", text)
+    )
 
 
 def _blacklisted_stack(text: str) -> str | None:

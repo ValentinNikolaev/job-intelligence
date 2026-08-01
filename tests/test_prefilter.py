@@ -92,6 +92,9 @@ class PrefilterTests(unittest.TestCase):
             "Build Go services while working US time zones.",
             "Candidates must be based in North America for this PHP backend role.",
             "Availability required for LATAM time zones on Go platform calls.",
+            "Build Go services. Location: Remote (U.S.).",
+            "Build Go services. Location: United States (Remote).",
+            "Remote work from home, limited to United States candidates for this PHP role.",
         ):
             with self.subTest(description=description):
                 rejection = prefilter_job(make_job(description=description), now=self.now)
@@ -105,6 +108,15 @@ class PrefilterTests(unittest.TestCase):
         )
 
         self.assertIsNone(rejection)
+
+    def test_allows_remote_us_when_eu_work_availability_is_explicit(self) -> None:
+        for description in (
+            "Build Go services. Location: Remote (U.S.), but EMEA working hours are available.",
+            "Remote United States role for Go engineers working CET hours.",
+            "US remote PHP role with explicit Europe timezone overlap.",
+        ):
+            with self.subTest(description=description):
+                self.assertIsNone(prefilter_job(make_job(description=description), now=self.now))
 
     def test_requires_go_or_php_stack(self) -> None:
         rejection = prefilter_job(
