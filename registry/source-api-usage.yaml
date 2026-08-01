@@ -3871,8 +3871,8 @@ sources:
       errors: 0
       limit_reached: true
   jobicy:
-    total_requests: 673
-    last_run_at: '2026-08-01T18:23:37Z'
+    total_requests: 681
+    last_run_at: '2026-08-01T19:15:54Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -4801,6 +4801,17 @@ sources:
       limit_reached: true
     - run_started_at: '2026-08-01T18:20:24Z'
       recorded_at: '2026-08-01T18:23:37Z'
+      requests: 8
+      fetched: 100
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 13
+      rejected: 87
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-08-01T19:11:38Z'
+      recorded_at: '2026-08-01T19:15:54Z'
       requests: 8
       fetched: 100
       created: 0
