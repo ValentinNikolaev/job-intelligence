@@ -1,0 +1,3 @@
+# Digis
+
+Digis is a European company of 200 employees. The company was founded 9 years ago and has managed to grow from a startup into a reliable partner for our clients. We took the best from the product and outsourcing company. You collaborate directly with the client's team, make business trips....

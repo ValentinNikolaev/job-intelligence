@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '877079130294808573'
-source_url: https://jooble.org/away/877079130294808573?p=1&pos=34&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=159&brelb=15&scr=2455.48&bscr=2455.48&aq=3889700687980476845&elckey=3002863450508733990
+source_url: https://jooble.org/away/877079130294808573?p=1&pos=33&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=162&brelb=15&scr=2530.5303&bscr=2530.5303&aq=495982683416719686&elckey=3968298222962535242
 title: Senior Backend Engineer
 company: Sporty Group
 location: Remote
 published_at: '2026-07-26T00:00:00.0000000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-01T21:21:51Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-26T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-02T00:36:26Z'
 rejected_at: '2026-07-26T12:27:04Z'

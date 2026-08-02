@@ -1,0 +1,34 @@
+schema_version: 2
+id: 1d65ff08-8e48-41bd-8431-36048bc49027
+title: Senior Laravel Developer (EU based)
+company: Digis
+company_url: https://jobs.dou.ua/companies/digis/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367587'
+  url: https://jobs.dou.ua/companies/digis/vacancies/367587/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 28 липня
+    listing_summary: About the Project The project is a cloud-based property operations
+      platform designed for the housing sector. It connects housing providers, property
+      managers, residents, contractors and service providers within a single ecosystem.
+published_at: '2026-07-28'
+discovered_at: '2026-08-02T00:33:13Z'
+updated_at: '2026-08-02T00:33:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:13Z'
+analysis_priority: 100
+fingerprint: sha256:51c4f3536a2849a00eb8651a1975bb8d520df52ba4cda8476b94ef128c4e3418
+data_source: dou
+content_source: dou
+company_content_source: dou

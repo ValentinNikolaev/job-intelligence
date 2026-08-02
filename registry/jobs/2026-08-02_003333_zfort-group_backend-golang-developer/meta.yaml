@@ -1,0 +1,37 @@
+schema_version: 2
+id: ea0a32ea-8b49-4992-830c-3113b6f7b1e4
+title: Backend/Golang Developer
+company: ZFORT Group
+company_url: https://jobs.dou.ua/companies/zfort/vacancies/
+location: Харків, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367227'
+  url: https://jobs.dou.ua/companies/zfort/vacancies/367227/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 27 липня
+    listing_summary: 'We are looking for Backend/Golang Developers to join our team.
+
+
+      You will be responsible for building and evolving a high-performance backend
+      platform that powers real-time, user-facing applications in a scalable and reliable
+      microservices environment.'
+published_at: '2026-07-27'
+discovered_at: '2026-08-02T00:33:33Z'
+updated_at: '2026-08-02T00:33:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:33Z'
+analysis_priority: 100
+fingerprint: sha256:bb186051013640c26c181da2fd57b5104fe8d5cf0a0ca773504f4f41e7bc3f63
+data_source: dou
+content_source: dou
+company_content_source: dou

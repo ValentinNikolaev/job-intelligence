@@ -1,0 +1,41 @@
+schema_version: 2
+id: 6958877c-2fe7-4fa7-bc07-71ba6003b733
+title: Senior Backend (PHP/Golang) Software Engineer
+company: Blackbird Lab
+company_url: https://jobs.dou.ua/companies/blackbird-lab/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367463'
+  url: https://jobs.dou.ua/companies/blackbird-lab/vacancies/367463/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 28 липня
+    listing_summary: 'Who we are
+
+
+      Blackbird Lab is a software development company. While we are practicing an
+      international working culture, we are proud representatives of Ukrainian values
+      and traditions.'
+published_at: '2026-07-28'
+discovered_at: '2026-08-02T00:33:15Z'
+updated_at: '2026-08-02T00:33:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:15Z'
+analysis_priority: 100
+fingerprint: sha256:ca9cb6d0d901b99edbd19a5bb9f4b59e8e431f15790a9785476c3c92bd17e925
+data_source: dou
+content_source: dou
+company_content_source: dou

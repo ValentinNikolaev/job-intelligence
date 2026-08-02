@@ -1,0 +1,36 @@
+schema_version: 2
+id: 31450a1d-3aea-40ca-a5a5-d17a6a11c9ad
+title: Team Lead PHP Engineer
+company: airSlate
+company_url: https://jobs.dou.ua/companies/airslate/vacancies/
+location: Вроцлав (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367780'
+  url: https://jobs.dou.ua/companies/airslate/vacancies/367780/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 29 липня
+    listing_summary: 'About airSlate
+
+
+      airSlate is a global SaaS technology company that develops no-code workflow
+      automation, electronic signature, and document management solutions.'
+published_at: '2026-07-29'
+discovered_at: '2026-08-02T00:33:09Z'
+updated_at: '2026-08-02T00:33:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:09Z'
+analysis_priority: 100
+fingerprint: sha256:1ce79985dc181af0585e30e1574821b157518624edfab2b05efcc42a861283c5
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,49 @@
+schema_version: 2
+id: 7fbaea50-af5a-43c7-ae58-79e0ba6364a7
+title: Middle PHP Developer
+company: ConveyThis
+company_url: https://jobs.dou.ua/companies/conveythis/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367722'
+  url: https://jobs.dou.ua/companies/conveythis/vacancies/367722/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 29 липня
+    salary_label: $2000–3000
+    listing_summary: 'Technologies: PHP, Laravel, JavaScript, SQL/NoSQL, GIT, and
+      Bootstrap
+
+
+      Minimum Requirements & Job Information:
+
+
+      Experience: 3+ years
+
+
+      Work Mode: 100% Remote (Work from anywhere)
+
+
+      Location: Open to candidates worldwide
+
+
+      Countries Considered: No restrictions on location...'
+published_at: '2026-07-29'
+discovered_at: '2026-08-02T00:33:10Z'
+updated_at: '2026-08-02T00:33:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:10Z'
+analysis_priority: 100
+fingerprint: sha256:5e0aeee682d01eee011efe479005844440ab5de3925c77d77e108db866979962
+data_source: dou
+content_source: dou
+company_content_source: dou

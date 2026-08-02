@@ -1,0 +1,34 @@
+schema_version: 2
+id: 92e710a6-f8e1-47f1-9049-a1e3604ebfa8
+title: Senior Golang Developer
+company: Strimco
+company_url: https://jobs.dou.ua/companies/strimco/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '362260'
+  url: https://jobs.dou.ua/companies/strimco/vacancies/362260/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 27 липня
+    listing_summary: Ми — Strimco, українська GovTech-компанія і стратегічний партнер
+      цифрової трансформації держави. Наша команда створює цифрові продукти, які змінюють
+      взаємодію громадян, бізнесу та держави — роблять її простішою, швидшою та прозорішою.
+published_at: '2026-07-27'
+discovered_at: '2026-08-02T00:33:32Z'
+updated_at: '2026-08-02T00:33:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:32Z'
+analysis_priority: 100
+fingerprint: sha256:f959d3bbfee5ec57865b64d9c010130cdced7697a3964fc5b228f66f2c68def9
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,37 @@
+schema_version: 2
+id: bf00a478-b083-4c1c-b2b9-805ef098ae01
+title: Lead Golang Engineer (Taxes)
+company: Solidgate
+company_url: https://jobs.dou.ua/companies/solidgate/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '360591'
+  url: https://jobs.dou.ua/companies/solidgate/vacancies/360591/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 28 липня
+    listing_summary: 'Our Mission and Vision
+
+
+      At Solidgate, our mission is clear: to empower outstanding entrepreneurs to
+      build exceptional internet companies. We exist to fuel the builders — the ones
+      shaping the digital economy — with the financial infrastructure they deserve.'
+published_at: '2026-07-28'
+discovered_at: '2026-08-02T00:33:29Z'
+updated_at: '2026-08-02T00:33:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:29Z'
+analysis_priority: 100
+fingerprint: sha256:ce8801fe81a3a7b2332e64f86d901257572688a0b7c79ba1a40385713b04a672
+data_source: dou
+content_source: dou
+company_content_source: dou

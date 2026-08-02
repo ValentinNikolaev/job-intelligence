@@ -1,0 +1,34 @@
+schema_version: 2
+id: 3fe3a336-919b-487b-9c16-e00027af6dc4
+title: PHP Developer
+company: Software Service and Innovation
+company_url: https://jobs.dou.ua/companies/software-service-and-innovation/vacancies/
+location: Львів, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '232686'
+  url: https://jobs.dou.ua/companies/software-service-and-innovation/vacancies/232686/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 29 липня
+    listing_summary: We’re looking for a Senior PHP/Laravel Developer to join our
+      API Platform Team. Our client is an international SaaS company building digital
+      solutions for the hospitality industry.
+published_at: '2026-07-29'
+discovered_at: '2026-08-02T00:33:11Z'
+updated_at: '2026-08-02T00:33:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:11Z'
+analysis_priority: 100
+fingerprint: sha256:8a4dffc2e94a7eab007cb7e2dca9aa190f44403ecdbbd7f37132e5476378d910
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,38 @@
+schema_version: 2
+id: 01e663e6-ae21-4c58-a600-3390b2058dee
+title: Senior PHP Developer
+company: iPOST
+company_url: https://jobs.dou.ua/companies/ipost/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '186031'
+  url: https://jobs.dou.ua/companies/ipost/vacancies/186031/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 30 липня
+    listing_summary: 'ВИМОГИ:
+
+
+      — Досвід роботи від 5-и років з глибоким знанням PHP 8.2+, MySQL; — Впевнене
+      знання Yii 2 (не менше 4 років), Mysql (розуміння індексів, транзакцій, функцій);
+      — Знання верстки на HTML, Bootstrap, CSS, jQuery, JavaScript, Ajax, NodeJs,
+      JSON, REST API; — Обов`яково розуміння...'
+published_at: '2026-07-30'
+discovered_at: '2026-08-02T00:33:06Z'
+updated_at: '2026-08-02T00:33:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T00:33:06Z'
+analysis_priority: 100
+fingerprint: sha256:ee09bee00cf3ddf0c238ce923149a8e161dc754160d0e04f39e750ebdbcb2352
+data_source: dou
+content_source: dou
+company_content_source: dou

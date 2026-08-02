@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '366780'
+source_url: https://jobs.dou.ua/companies/readeat/vacancies/366780/
+title: Middle Backend Developer
+company: Readeat
+location: віддалено
+published_at: '2026-07-22'
+rejection_category: stale
+rejection_reason: published_at 2026-07-22 is older than 7 days
+updated_at: '2026-08-02T00:33:23Z'
+rejected_at: '2026-08-02T00:33:23Z'
