@@ -4,8 +4,8 @@ Posted: 2026-07-26T03:33:43Z
 
 ## Rejection
 
-- Category: role_mismatch
-- Reason: title is an obvious mismatch for a backend profile
+- Category: stale
+- Reason: published_at 2026-07-26T03:33:43Z is older than 7 days
 
 Skylum allows millions of photographers to make incredible images. Our award-winning software automates photo editing with the power of AI yet leaves all the creative control in the hands of the artist.
 

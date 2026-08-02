@@ -1,0 +1,52 @@
+schema_version: 2
+id: ff591d70-ec50-4132-8bbf-d77db076d6ca
+title: Engineering Manager for IAM (Identity and Access Management)
+company: Canonical Ltd.
+company_url: null
+location: EMEA,  LATAM,  Canada,  USA
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149980'
+  url: https://jobicy.com/jobs/149980-engineering-manager-for-iam-identity-and-access-management
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png
+    industry:
+    - Software Engineering
+    level: Midweight
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets. Our platform, Ubuntu,
+      is very widely used in breakthrough enterprise initiatives such as public cloud,
+      data science, AI, engineering innovation, and IoT. Our customers include the
+      world's leading public cloud and silicon providers, and industry leaders…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        count: '100'
+        geo: italy
+        industry: dev
+    - query_index: 7
+      parameters:
+        count: '100'
+        tag: technical lead
+        geo: europe
+        industry: dev
+    - query_index: 8
+      parameters:
+        count: '100'
+        tag: platform engineer
+        geo: europe
+        industry: dev
+published_at: '2026-08-01T03:04:03Z'
+discovered_at: '2026-08-02T06:56:44Z'
+updated_at: '2026-08-02T06:56:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T06:56:44Z'
+analysis_priority: 0
+fingerprint: sha256:a18a73219a42e66fd45b68e98cbc6102621ec0174586848f99d29561e153ee66
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

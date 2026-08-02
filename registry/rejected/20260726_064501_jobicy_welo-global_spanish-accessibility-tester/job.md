@@ -4,8 +4,8 @@ Posted: 2026-07-26T03:33:41Z
 
 ## Rejection
 
-- Category: language_requirement
-- Reason: hard Spanish language requirement without English green light
+- Category: stale
+- Reason: published_at 2026-07-26T03:33:41Z is older than 7 days
 
 **About Welocalize**
 
