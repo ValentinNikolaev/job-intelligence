@@ -1,14 +1,22 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Very strong senior Go backend match with API distributed systems AWS and operations experience.
+Excellent Go backend fit through recent Go ownership, event-driven systems, AWS, reliability, and APIs.
 
 ## Why it matches
 
-- Go architecture AWS microservices
+- Recent Go
+- AWS
+- microservices
+- event-driven systems
+- reliability
 
 ## Gaps
 
-- Domain
+- Exact company stack and domain
+
+## Concerns
+
+- Role level and compensation

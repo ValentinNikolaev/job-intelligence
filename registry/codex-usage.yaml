@@ -757,3 +757,13 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: 'Estimated: Codex surface did not expose token or credit usage.'
+- run_id: 20260802-batch-1335
+  recorded_at: '2026-08-02T13:34:46Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
