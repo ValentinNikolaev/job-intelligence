@@ -155,4 +155,4 @@ The candidate should preferably be based in Germany.
 
 #LI-Remote
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

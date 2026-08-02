@@ -113,4 +113,4 @@ You will work at the frontier of **AI-accelerated biology**, helping to build sy
 
 **Visa Sponsorship:** Not available — candidates must have existing eligibility to work in Germany
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -98,4 +98,4 @@ Opportunity to shape how AI is applied in GTM at a leading DACH agency.
 
 This is a **hybrid** role based in **Berlin, Germany**. Candidates must be based in or willing to relocate to Berlin. Please note that **visa sponsorship is not available** for this position.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

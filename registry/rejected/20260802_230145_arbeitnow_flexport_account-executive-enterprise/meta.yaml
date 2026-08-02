@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: account-executive-enterprise-132806
+source_url: https://www.arbeitnow.com/jobs/companies/flexport/account-executive-enterprise-132806
+title: Account Executive, Enterprise
+company: Flexport
+location: null
+published_at: '2026-08-02T21:15:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T23:01:45Z'
+rejected_at: '2026-08-02T23:01:45Z'

@@ -104,4 +104,4 @@ Work with a small, expert team at the intersection of biotechnology, nutrition s
 
 Visa sponsorship is **not available** for this role.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

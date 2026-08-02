@@ -109,4 +109,4 @@ True founding-team scope and impact from day one
 
 **Munich, Germany — on-site.** The team works together in person. Candidates must be based in Munich or willing to relocate. Start date: as soon as possible.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

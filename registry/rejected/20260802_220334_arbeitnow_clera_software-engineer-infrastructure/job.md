@@ -113,4 +113,4 @@ This is a **full-time, on-site role based in Berlin, Germany**. Candidates must 
 
 Compensation details were not specified in this posting. You can expect a competitive package in line with early-stage deeptech startups at the seed stage, including equity participation.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

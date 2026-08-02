@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 781
+Total vacancies: 784
 
-- Found: 346
+- Found: 349
 - Applied: 9
 - Rejected: 424
 - Closed: 2
@@ -18,6 +18,9 @@ Total vacancies: 781
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-02 | [Gympass](../registry/jobs/2026-08-02_231029_gympass_senior-backend-software-engineer/) | [Senior Backend Software Engineer](../registry/jobs/2026-08-02_231029_gympass_senior-backend-software-engineer/job.md) | Brazil | Jooble | Found | 2026-08-02 | [Jooble](https://jooble.org/desc/2099743273760137197?ckey=remote+golang+backend+engineer&rgn=55180&pos=32&groupId=1106121903&elckey=6927075766128198880&p=1&aq=4496660670815542835&cid=15922&jobAge=51&brelb=100&bscr=256.27124&scr=256.27124) | — | — | — | — | — |
+| 2026-08-02 | [Flexport](../registry/jobs/2026-08-02_230143_flexport_account-executive-enterprise/) | [Account Executive, Enterprise](../registry/jobs/2026-08-02_230143_flexport_account-executive-enterprise/job.md) | Frankfurt; Hamburg | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/flexport/account-executive-enterprise-frankfurt-hamburg-9038) | — | — | — | — | — |
+| 2026-08-02 | [databricks](../registry/jobs/2026-08-02_230132_databricks_strategic-core-account-executive-insurance-m-f-d/) | [Strategic Core Account Executive - Insurance, m/f/d](../registry/jobs/2026-08-02_230132_databricks_strategic-core-account-executive-insurance-m-f-d/job.md) | Munich | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/databricks/strategic-core-account-executive-insurance-munich-469304) | — | — | — | — | — |
 | 2026-08-02 | [Clera](../registry/jobs/2026-08-02_220445_clera_partnership-manager/) | [Partnership Manager](../registry/jobs/2026-08-02_220445_clera_partnership-manager/job.md) | Berlin | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/clera/partnership-manager-berlin-119315) | — | — | — | — | — |
 | 2026-08-02 | [Clera](../registry/jobs/2026-08-02_220441_clera_sales-development-representative-english-speakin/) | [Sales Development Representative (English-Speaking)](../registry/jobs/2026-08-02_220441_clera_sales-development-representative-english-speakin/job.md) | remote | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/clera/remote-sales-development-representative-english-speaking-348657) | — | — | — | — | — |
 | 2026-08-02 | [Clera](../registry/jobs/2026-08-02_220439_clera_technical-co-founder/) | [Technical Co-Founder](../registry/jobs/2026-08-02_220439_clera_technical-co-founder/job.md) | Berlin | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/clera/technical-co-founder-berlin-242290) | — | — | — | — | — |
@@ -35,6 +38,3 @@ Total vacancies: 781
 | 2026-08-02 | [Clera](../registry/jobs/2026-08-02_220335_clera_head-of-marketing/) | [Head of Marketing](../registry/jobs/2026-08-02_220335_clera_head-of-marketing/job.md) | Berlin | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/clera/head-of-marketing-berlin-227430) | — | — | — | — | — |
 | 2026-08-02 | [Hv](../registry/jobs/2026-08-02_220330_hv_marketing-manager-m-f-d/) | [Marketing Manager (m/f/d)](../registry/jobs/2026-08-02_220330_hv_marketing-manager-m-f-d/job.md) | Berlin | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/hv/marketing-manager-berlin-28522) | — | — | — | — | — |
 | 2026-08-02 | [Elevenlabs](../registry/jobs/2026-08-02_220327_elevenlabs_strategic-account-executive-germany/) | [Strategic Account Executive - Germany](../registry/jobs/2026-08-02_220327_elevenlabs_strategic-account-executive-germany/job.md) | Germany | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/strategic-account-executive-germany-456949) | — | — | — | — | — |
-| 2026-08-02 | [Elevenlabs](../registry/jobs/2026-08-02_220320_elevenlabs_sales-development-dach/) | [Sales Development - DACH](../registry/jobs/2026-08-02_220320_elevenlabs_sales-development-dach/job.md) | Germany | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/sales-development-dach-germany-426202) | — | — | — | — | — |
-| 2026-08-02 | [Elevenlabs](../registry/jobs/2026-08-02_220317_elevenlabs_b2b-marketing-lead-dach/) | [B2B Marketing Lead - DACH](../registry/jobs/2026-08-02_220317_elevenlabs_b2b-marketing-lead-dach/job.md) | Germany | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/b2b-marketing-lead-dach-germany-411447) | — | — | — | — | — |
-| 2026-08-02 | [Elevenlabs](../registry/jobs/2026-08-02_220315_elevenlabs_account-executive-elevencreative-germany/) | [Account Executive - ElevenCreative - Germany](../registry/jobs/2026-08-02_220315_elevenlabs_account-executive-elevencreative-germany/job.md) | Germany | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/account-executive-elevencreative-germany-429663) | — | — | — | — | — |

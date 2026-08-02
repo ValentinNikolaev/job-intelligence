@@ -170,4 +170,4 @@ This role is remote-friendly within Germany (Berlin, Hamburg, Munich is preferre
 
 #LI-Remote
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

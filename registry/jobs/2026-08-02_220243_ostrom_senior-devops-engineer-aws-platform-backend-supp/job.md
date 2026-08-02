@@ -235,4 +235,4 @@ Bei Ostrom arbeitest du in einem offenen, dynamischen Umfeld, in dem du du selbs
 
 🚀 **Wachse mit uns:** Persönliche Entwicklung ist bei Ostrom keine Floskel. Wir unterstützen dich mit Lernbudgets und Raum zum Ausprobieren – damit du dich fachlich und persönlich kontinuierlich weiterentwickeln kannst.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

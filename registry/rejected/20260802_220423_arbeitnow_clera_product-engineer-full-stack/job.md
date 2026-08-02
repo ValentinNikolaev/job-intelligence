@@ -89,4 +89,4 @@ Visa sponsorship is available.
 
 **On-site, Berlin, Germany.** This is a full-time, in-person role — remote work is not available for this position.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

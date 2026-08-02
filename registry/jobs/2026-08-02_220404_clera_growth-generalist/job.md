@@ -114,4 +114,4 @@ Premium hardware setup
 
 This role is based in **Berlin, Germany** (hybrid). Candidates must be available to work on-site regularly. Visa sponsorship is **not available**.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

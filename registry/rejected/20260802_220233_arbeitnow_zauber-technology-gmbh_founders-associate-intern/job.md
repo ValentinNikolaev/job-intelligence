@@ -89,4 +89,4 @@ What drives us personally is the belief that Europe’s long-term prosperity and
 
 Our mission is to build one of the biggest automation companies in the world - from Europe. While our HQ will be in Europe, we will relentlessly benchmark ourselves with the best globally and sell internationally from the beginning.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

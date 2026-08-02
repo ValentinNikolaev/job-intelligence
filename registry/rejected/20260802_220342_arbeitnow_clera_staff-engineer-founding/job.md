@@ -111,4 +111,4 @@ This role is **on-site in Munich, Germany**. Candidates must be willing and able
 
 Compensation details are not specified for this role. You'll be joining as a founding team member at a well-funded, seed-stage startup with significant scope, ownership, and career upside.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

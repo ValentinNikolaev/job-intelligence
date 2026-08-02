@@ -55,4 +55,4 @@ Compensation details will be shared during the interview process. We are committ
 
 This is an on-site role with the primary location in **San Francisco, CA**. Candidates based in or willing to relocate to San Francisco, Los Angeles, or New York City are encouraged to apply.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

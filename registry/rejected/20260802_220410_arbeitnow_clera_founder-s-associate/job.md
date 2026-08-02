@@ -117,4 +117,4 @@ A bachelor's degree or equivalent practical experience (helpful, not required).
 
 **Visa sponsorship:** Not available — candidates must already be eligible to work in Germany
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

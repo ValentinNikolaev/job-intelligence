@@ -107,4 +107,4 @@ Hybrides Arbeitsmodell mit anteiligem Homeoffice nach der Einarbeitung
 
 Individuelle Benefits, abgestimmt auf deine Bedürfnisse, z. B. Sportmitgliedschaften, ÖPNV-Ticket oder Learning Budget
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

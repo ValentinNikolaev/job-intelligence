@@ -79,4 +79,4 @@ Experience at a consulting firm, fintech, or professional-services technology co
 
 This role is **on-site in Berlin, Germany**. Candidates must be available to work from the Berlin office on a regular basis. **Visa sponsorship is not available** — candidates must have the right to work in Germany.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

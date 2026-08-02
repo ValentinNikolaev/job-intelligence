@@ -142,4 +142,4 @@ Strong prioritization and time management skills, with the ability to handle a h
 
 Excellent written and verbal communication skills in both German and English
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

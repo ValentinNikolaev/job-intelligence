@@ -123,4 +123,4 @@ Early-team equity commensurate with a founding engineer role
 
 This is a **hybrid role** based in **New York City, NY**. You'll be expected in the office 3 days per week. Remote-only candidates will not be considered for this position.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

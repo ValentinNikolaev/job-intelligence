@@ -131,4 +131,4 @@ Work directly with founders and enterprise customers in a fast-growing market
 
 Munich, Bavaria, Germany. The role is primarily **on-site** the majority of the week, with occasional flexibility for remote work. Candidates must be willing and able to work on-site in Munich regularly.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

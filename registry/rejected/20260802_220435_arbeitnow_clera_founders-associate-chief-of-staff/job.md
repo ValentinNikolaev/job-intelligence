@@ -137,4 +137,4 @@ Direct exposure to founders and meaningful impact on company direction from day 
 
 High degree of autonomy and ownership across commercial and strategic workstreams
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
