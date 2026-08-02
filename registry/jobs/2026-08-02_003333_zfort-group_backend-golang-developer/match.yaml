@@ -1,24 +1,25 @@
 score: 88
 recommendation: strong_match
-summary: Very strong match across Go, resilient microservices, technical leadership,
-  and backend operations.
+summary: Very strong fit for a senior backend Go role focused on resilient microservices,
+  real-time user-facing systems, API ownership, testing, technical leadership, and
+  production reliability.
 strengths:
-- Go
-- microservices
-- resilience
-- REST
-- testing
-- technical leadership
-- English
+- Recent Go backend ownership in production systems
+- Microservices, REST APIs, event-driven architecture, queues, and resilient delivery
+  pipelines
+- Technical Lead background, code review, mentoring, planning, and delivery ownership
+- Kubernetes, AWS, CI/CD, Prometheus, monitoring, and production troubleshooting
+- Professional working English and remote collaboration fit
 gaps:
-- gRPC is not explicitly evidenced
-- domain-specific cross-selling is new
+- gRPC is not explicitly evidenced in the candidate source records
+- Cross-selling platform domain is new
 concerns:
-- Confirm depth of gRPC and availability expectations.
+- Clarify hands-on depth with gRPC during screening
+- Confirm availability, work authorization, and exact remote expectations
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-02T14:33:14Z'
+analyzed_at: '2026-08-02T15:35:16Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:c4657856be863d9e97e24afc97ed6615c6a8e39f18594cdd54ac30989e5e0446
+job_version: sha256:95b3cc325d9b0b754c3e1add20735970063dd10654f84b064870cddcb629cc51
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

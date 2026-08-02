@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 11
+  total_events: 12
   by_status:
     applied:
-      count: 6
-      last_changed_at: '2026-08-02T14:33:33Z'
+      count: 7
+      last_changed_at: '2026-08-02T15:35:06Z'
     rejected:
       count: 5
       last_changed_at: '2026-08-01T19:54:58Z'
@@ -47,6 +47,11 @@ summary:
       reason: User reported applying to Cubbit S.r.l. Senior Backend Developer GO
         one week ago.
       last_changed_at: '2026-08-01T19:51:51Z'
+    user-requested-job-intelligence-workflow-applica:
+      count: 1
+      reason: user requested Job Intelligence Workflow application status; external
+        application form not submitted
+      last_changed_at: '2026-08-02T15:35:06Z'
     user-requested-marking-jagaad-senior-php-backend:
       count: 1
       reason: User requested marking Jagaad Senior PHP Backend Developer as applied
@@ -216,3 +221,18 @@ events:
   interaction:
     source: llm_assisted_manual
   note: Application artifacts generated and vacancy marked applied by Codex task.
+- changed_at: '2026-08-02T15:35:06Z'
+  vacancy_id: 6958877c-2fe7-4fa7-bc07-71ba6003b733
+  directory: 2026-08-02_003315_blackbird-lab_senior-backend-php-golang-software-engineer
+  company: Blackbird Lab
+  title: Senior Backend (PHP/Golang) Software Engineer
+  from_status: found
+  to_status: applied
+  reason: user requested Job Intelligence Workflow application status; external application
+    form not submitted
+  reason_key: user-requested-job-intelligence-workflow-applica
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Prepared package and recorded applied status in registry only; Teamtailor
+    application was not submitted.
