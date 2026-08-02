@@ -1,0 +1,28 @@
+schema_version: 2
+id: 0b47c8a9-ab66-43da-9b4c-c57fde198f7f
+title: Working Student - Data Migration (all genders) - Fixed-term 2 months
+company: Fashion Cloud
+company_url: null
+location: Hamburg, Hamburg, Germany
+remote: false
+employment_type: Student college, parttime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: working-student-data-migration-all-genders-fixed-term-2-months-hamburg-107554
+  url: https://www.arbeitnow.com/jobs/companies/fashion-cloud/working-student-data-migration-all-genders-fixed-term-2-months-hamburg-107554
+  metadata:
+    job_types:
+    - Student college
+    - parttime fixed term
+published_at: '2026-08-02T02:30:52Z'
+discovered_at: '2026-08-02T12:23:35Z'
+updated_at: '2026-08-02T12:23:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:35Z'
+analysis_priority: 0
+fingerprint: sha256:8407b625618a3e6f329c14bdc4481d558f82a41d9547d7b7183308aec8c0a624
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

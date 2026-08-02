@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '8199051345040203942'
-source_url: https://jooble.org/away/8199051345040203942?p=1&pos=6&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=113&brelb=10&scr=35.55104&bscr=35.55104&aq=-4570690935603577758&elckey=-8418844134953822121
+source_url: https://jooble.org/away/8199051345040203942?p=1&pos=6&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=115&brelb=10&scr=35.594822&bscr=35.594822&aq=-2756981250432694189&elckey=-2301315376784023508
 title: Senior Technical Recruiter
 company: K2 Partnering Solutions
 location: Italian Republic
 published_at: '2026-07-28T10:37:11.0830000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-02T09:44:46Z'
+updated_at: '2026-08-02T12:27:03Z'
 rejected_at: '2026-07-29T00:31:01Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: student-teacher-intro-to-software-engineering-and-web-berlin-295592
+source_url: https://www.arbeitnow.com/jobs/companies/code/student-teacher-intro-to-software-engineering-and-web-berlin-295592
+title: Student Teacher - Intro to Software Engineering and Web (f/m/x)
+company: Code
+location: Berlin
+published_at: '2026-08-01T20:09:12Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T12:23:43Z'
+rejected_at: '2026-08-02T12:23:43Z'

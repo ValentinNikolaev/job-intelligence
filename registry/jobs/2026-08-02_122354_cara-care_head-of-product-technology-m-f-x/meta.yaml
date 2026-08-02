@@ -1,0 +1,34 @@
+schema_version: 2
+id: 0ec6a468-6ece-4d71-aa93-e47b294863e3
+title: Head of Product & Technology (m/f/x)
+company: Cara Care
+company_url: null
+location: Germany
+remote: true
+employment_type: Full time, director
+sources:
+- source: arbeitnow
+  source_job_id: remote-head-of-product-technology-germany-236010
+  url: https://www.arbeitnow.com/jobs/companies/cara-care/remote-head-of-product-technology-germany-236010
+  metadata:
+    tags:
+    - Product Management
+    - Health
+    - Wellness and Fitness
+    - Product & Engineering
+    - Remote
+    job_types:
+    - Full time
+    - director
+published_at: '2026-08-01T14:20:47Z'
+discovered_at: '2026-08-02T12:23:54Z'
+updated_at: '2026-08-02T12:23:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:54Z'
+analysis_priority: 0
+fingerprint: sha256:6e88dd70452ddcaa12e9d13d0053d56a30ebd7154b8a899ef86fb11102e90314
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

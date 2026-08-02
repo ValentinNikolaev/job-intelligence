@@ -1,0 +1,29 @@
+schema_version: 2
+id: cbd7890e-78bd-4cdc-b989-25980187ed70
+title: Product Manager / Director – GPU & AI Services
+company: Impossible Cloud
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Full-time
+sources:
+- source: arbeitnow
+  source_job_id: product-manager-director-gpu-ai-services-hamburg-410467
+  url: https://www.arbeitnow.com/jobs/companies/impossible-cloud/product-manager-director-gpu-ai-services-hamburg-410467
+  metadata:
+    tags:
+    - Product
+    job_types:
+    - Full-time
+published_at: '2026-08-01T17:26:41Z'
+discovered_at: '2026-08-02T12:23:47Z'
+updated_at: '2026-08-02T12:23:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:47Z'
+analysis_priority: 0
+fingerprint: sha256:fc9b1fef945f75ca412f4f9e8261759e4d3bf47d03a1cdd1bc6cf7e52604dc87
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

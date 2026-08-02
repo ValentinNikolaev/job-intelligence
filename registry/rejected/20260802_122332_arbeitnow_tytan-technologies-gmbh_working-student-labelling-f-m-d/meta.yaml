@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: working-student-labelling-munich-487816
+source_url: https://www.arbeitnow.com/jobs/companies/tytan-technologies-gmbh/working-student-labelling-munich-487816
+title: Working Student - Labelling (f/m/d)
+company: TYTAN Technologies GmbH
+location: Munich, Bayern, Germany
+published_at: '2026-08-02T02:51:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T12:23:32Z'
+rejected_at: '2026-08-02T12:23:32Z'

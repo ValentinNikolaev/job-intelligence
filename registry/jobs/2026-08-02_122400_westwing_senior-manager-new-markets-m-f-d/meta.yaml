@@ -1,0 +1,33 @@
+schema_version: 2
+id: bd360bbf-6410-4c0e-b071-9d8ad6a70f52
+title: Senior Manager New Markets (m/f/d)
+company: Westwing
+company_url: null
+location: Munich Office
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-manager-new-markets-munich-office-135784
+  url: https://www.arbeitnow.com/jobs/companies/westwing/senior-manager-new-markets-munich-office-135784
+  metadata:
+    tags:
+    - new market
+    - expansion
+    - business development
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-08-01T11:09:06Z'
+discovered_at: '2026-08-02T12:24:00Z'
+updated_at: '2026-08-02T12:24:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:24:00Z'
+analysis_priority: 0
+fingerprint: sha256:3cda3ece9c69eb6e9717ed9299b571af09b298fc754b9f723b68dbbb383f5754
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,27 @@
+schema_version: 2
+id: b9ee793b-7c87-4a5c-87fa-79b950bf5c14
+title: Account Executive - Munich
+company: opentable
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: account-executive-munich-302363
+  url: https://www.arbeitnow.com/jobs/companies/opentable/account-executive-munich-302363
+  metadata:
+    tags:
+    - International RSS
+published_at: '2026-08-01T11:55:12Z'
+discovered_at: '2026-08-02T12:23:57Z'
+updated_at: '2026-08-02T12:23:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:57Z'
+analysis_priority: 0
+fingerprint: sha256:a38278a1b87230924ef530d5b8f01231b74db5b97cf607986d3bcd9400b7128e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,35 @@
+schema_version: 2
+id: 81d5e5a1-cb0b-46c7-a65d-bc07d11c3697
+title: Working Student Accounting (m/f/d)
+company: Westwing
+company_url: null
+location: Munich Office
+remote: false
+employment_type: Student, Intern, Part time
+sources:
+- source: arbeitnow
+  source_job_id: working-student-accounting-munich-office-259858
+  url: https://www.arbeitnow.com/jobs/companies/westwing/working-student-accounting-munich-office-259858
+  metadata:
+    tags:
+    - accounting
+    - tax accounting
+    - working student
+    - finance
+    - part-time
+    job_types:
+    - Student
+    - Intern
+    - Part time
+published_at: '2026-08-01T11:09:06Z'
+discovered_at: '2026-08-02T12:23:58Z'
+updated_at: '2026-08-02T12:23:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:58Z'
+analysis_priority: 0
+fingerprint: sha256:f4526a3c83a65e47f2173799377426e58a8aa5bf2839bfefd0aba89d8e40ab80
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

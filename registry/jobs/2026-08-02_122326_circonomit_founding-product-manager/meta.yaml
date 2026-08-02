@@ -1,0 +1,32 @@
+schema_version: 2
+id: 9022c8bd-6245-4947-8a98-d7f7a955cad9
+title: Founding Product Manager
+company: Circonomit
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: Full time, mid-senior
+sources:
+- source: arbeitnow
+  source_job_id: founding-product-manager-berlin-140965
+  url: https://www.arbeitnow.com/jobs/companies/circonomit/founding-product-manager-berlin-140965
+  metadata:
+    tags:
+    - Product Management
+    - Computer Software
+    - Tech
+    job_types:
+    - Full time
+    - mid-senior
+published_at: '2026-08-02T05:41:09Z'
+discovered_at: '2026-08-02T12:23:26Z'
+updated_at: '2026-08-02T12:23:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:26Z'
+analysis_priority: 0
+fingerprint: sha256:77b27788315fda321843d309cdd847c3de2881bf82e18e828b6dcb6b194a97bd
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

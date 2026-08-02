@@ -1,0 +1,30 @@
+schema_version: 2
+id: 2468e8af-b925-483d-995e-c7496cebac3f
+title: Working Student Software Engineering (m/f/d)
+company: Ginmon GmbH
+company_url: null
+location: Frankfurt am Main, Hessen, Deutschland
+remote: false
+employment_type: Student college, parttime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: working-student-software-engineering-frankfurt-am-main-304380
+  url: https://www.arbeitnow.com/jobs/companies/ginmon-gmbh/working-student-software-engineering-frankfurt-am-main-304380
+  metadata:
+    tags:
+    - IT
+    job_types:
+    - Student college
+    - parttime fixed term
+published_at: '2026-08-02T08:30:27Z'
+discovered_at: '2026-08-02T12:23:11Z'
+updated_at: '2026-08-02T12:23:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:11Z'
+analysis_priority: 0
+fingerprint: sha256:11e64e176399de9761e396081c7b35b9b4fa73f2ec1702c8f8ced1fb1937df1e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 147ce4a6-c7c6-4fd4-bbad-05e6530a97d3
+title: Working Student - People and Culture (f/m/d)
+company: TYTAN Technologies GmbH
+company_url: null
+location: Munich, Bayern, Germany
+remote: false
+employment_type: Student college, parttime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: working-student-people-and-culture-munich-482477
+  url: https://www.arbeitnow.com/jobs/companies/tytan-technologies-gmbh/working-student-people-and-culture-munich-482477
+  metadata:
+    tags:
+    - People and Culture
+    job_types:
+    - Student college
+    - parttime fixed term
+published_at: '2026-08-02T02:51:11Z'
+discovered_at: '2026-08-02T12:23:33Z'
+updated_at: '2026-08-02T12:23:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:33Z'
+analysis_priority: 0
+fingerprint: sha256:44b7d9fd4926740fcd4bbafe0f0db1755b6ec0a99e2062878d43de6a14a8d92d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

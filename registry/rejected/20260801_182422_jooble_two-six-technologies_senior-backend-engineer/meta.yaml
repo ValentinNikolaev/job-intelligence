@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '2222888419665434398'
-source_url: https://jooble.org/away/2222888419665434398?p=1&pos=34&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=75&brelb=15&scr=2638.5706&bscr=2638.5706&aq=4359079932615751058&elckey=-5329099000355132354
+source_url: https://jooble.org/away/2222888419665434398?p=1&pos=31&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=78&brelb=15&scr=2623.639&bscr=2623.639&aq=3142261637977951899&elckey=1423985035878343547
 title: Senior Backend Engineer
 company: Two Six Technologies
 location: Remote
 published_at: '2026-07-30T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-02T09:45:29Z'
+updated_at: '2026-08-02T12:27:26Z'
 rejected_at: '2026-08-01T18:24:22Z'

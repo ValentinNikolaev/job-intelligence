@@ -1,0 +1,31 @@
+schema_version: 2
+id: 377f7633-ffe6-4e6c-9d42-c5ff6dd19949
+title: Founding Sales
+company: Circonomit
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: Full time, mid-senior
+sources:
+- source: arbeitnow
+  source_job_id: founding-sales-berlin-353531
+  url: https://www.arbeitnow.com/jobs/companies/circonomit/founding-sales-berlin-353531
+  metadata:
+    tags:
+    - Sales
+    - Computer Software
+    job_types:
+    - Full time
+    - mid-senior
+published_at: '2026-08-02T05:41:09Z'
+discovered_at: '2026-08-02T12:23:24Z'
+updated_at: '2026-08-02T12:23:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T12:23:24Z'
+analysis_priority: 0
+fingerprint: sha256:9ee8afd5d820a0db2f2bf5ddfccf762ebd1afc443b446f9c085e00854bc47926
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
