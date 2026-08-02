@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: system-validation-engineer-stuttgart-415289
+source_url: https://www.arbeitnow.com/jobs/companies/applied/system-validation-engineer-stuttgart-415289
+title: System Validation Engineer - Stuttgart
+company: Applied
+location: Stuttgart
+published_at: '2026-08-02T20:41:57Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T22:01:57Z'
+rejected_at: '2026-08-02T22:01:57Z'

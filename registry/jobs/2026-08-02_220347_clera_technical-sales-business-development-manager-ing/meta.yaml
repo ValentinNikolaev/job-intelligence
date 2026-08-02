@@ -1,0 +1,29 @@
+schema_version: 2
+id: a0a16ad7-82b1-4784-81db-d6e300007f3e
+title: Technical Sales / Business Development Manager – Ingredients
+company: Clera
+company_url: null
+location: remote
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: remote-technical-sales-business-development-manager-ingredients-168192
+  url: https://www.arbeitnow.com/jobs/companies/clera/remote-technical-sales-business-development-manager-ingredients-168192
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full Time
+published_at: '2026-08-02T20:40:54Z'
+discovered_at: '2026-08-02T22:03:47Z'
+updated_at: '2026-08-02T22:03:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T22:03:47Z'
+analysis_priority: 0
+fingerprint: sha256:d0e32c755e700b2ea8c367c370eb4576ab60b9b509845d1eab3e1b7b83c7bb8e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

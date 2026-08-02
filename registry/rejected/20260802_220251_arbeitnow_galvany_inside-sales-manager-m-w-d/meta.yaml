@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: inside-sales-manager-berlin-334414
+source_url: https://www.arbeitnow.com/jobs/companies/galvany/inside-sales-manager-berlin-334414
+title: Inside Sales Manager (m/w/d)
+company: GALVANY
+location: Berlin
+published_at: '2026-08-02T20:41:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T22:02:51Z'
+rejected_at: '2026-08-02T22:02:51Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: ai-engineer-model-training-deployment-munich-224273
+source_url: https://www.arbeitnow.com/jobs/companies/clera/ai-engineer-model-training-deployment-munich-224273
+title: AI Engineer – Model Training & Deployment
+company: Clera
+location: Munich
+published_at: '2026-08-02T20:40:54Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T22:04:00Z'
+rejected_at: '2026-08-02T22:04:00Z'

@@ -1,0 +1,29 @@
+schema_version: 2
+id: 75bdb292-1ef7-4bff-b98a-68ad142fcf31
+title: Head of Marketing
+company: Clera
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: head-of-marketing-berlin-227430
+  url: https://www.arbeitnow.com/jobs/companies/clera/head-of-marketing-berlin-227430
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full Time
+published_at: '2026-08-02T20:40:54Z'
+discovered_at: '2026-08-02T22:03:35Z'
+updated_at: '2026-08-02T22:03:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T22:03:35Z'
+analysis_priority: 0
+fingerprint: sha256:365b95d93cb71f84a71fcc9106ef86a7b1a3bc826dc1bb763013a6e70751b096
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

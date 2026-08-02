@@ -1,0 +1,29 @@
+schema_version: 2
+id: 952f9640-1d75-4de7-81dc-a498a50fbbc7
+title: Marketing Manager (m/f/d)
+company: Hv
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: marketing-manager-berlin-28522
+  url: https://www.arbeitnow.com/jobs/companies/hv/marketing-manager-berlin-28522
+  metadata:
+    tags:
+    - Operations
+    job_types:
+    - Full Time
+published_at: '2026-08-02T20:41:11Z'
+discovered_at: '2026-08-02T22:03:30Z'
+updated_at: '2026-08-02T22:03:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T22:03:30Z'
+analysis_priority: 0
+fingerprint: sha256:99fa92e2eb6defa0c8a6edffaa1437aa2922b286cb8c8840834382c6ec5f3eef
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

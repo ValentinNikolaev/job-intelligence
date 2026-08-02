@@ -1,0 +1,29 @@
+schema_version: 2
+id: c4269028-4485-4327-ac58-cce25820bb09
+title: (Senior) Data Engineer (m/w/d)
+company: GALVANY
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-engineer-berlin-262882
+  url: https://www.arbeitnow.com/jobs/companies/galvany/senior-data-engineer-berlin-262882
+  metadata:
+    tags:
+    - Tech & Product
+    job_types:
+    - Full Time
+published_at: '2026-08-02T20:41:23Z'
+discovered_at: '2026-08-02T22:03:03Z'
+updated_at: '2026-08-02T22:03:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T22:03:03Z'
+analysis_priority: 0
+fingerprint: sha256:231bf8ad6d37f002667b4dd62502f409056e9e3f84f13d49f051e3bac9432d93
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
