@@ -80,4 +80,4 @@ Federal law requires employers to provide reasonable accommodation to qualified 
 
 [NOTIFICATION OF EMPLOYEE RIGHTS UNDER FEDERAL LABOR LAWS](https://www.dol.gov/sites/dolgov/files/olms/regs/compliance/eo_posters/employeerightsposter2page_19final.pdf)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: founders-associate-berlin-284945
+source_url: https://www.arbeitnow.com/jobs/companies/lemon-markets/founders-associate-berlin-284945
+title: Founder's Associate (f/m/d)
+company: Lemon Markets
+location: Berlin Office
+published_at: '2026-08-02T14:41:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T16:01:27Z'
+rejected_at: '2026-08-02T16:01:27Z'

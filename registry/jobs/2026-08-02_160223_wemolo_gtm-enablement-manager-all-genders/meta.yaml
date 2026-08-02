@@ -1,0 +1,29 @@
+schema_version: 2
+id: 5fc52669-4035-47a1-9605-f0f7a4ff272d
+title: GTM Enablement Manager (all genders)
+company: Wemolo
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: gtm-enablement-manager-all-genders-munchen-315691
+  url: https://www.arbeitnow.com/jobs/companies/wemolo/gtm-enablement-manager-all-genders-munchen-315691
+  metadata:
+    tags:
+    - Commercial
+    job_types:
+    - Full Time
+published_at: '2026-08-02T14:40:32Z'
+discovered_at: '2026-08-02T16:02:23Z'
+updated_at: '2026-08-02T16:02:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T16:02:23Z'
+analysis_priority: 0
+fingerprint: sha256:4babcdf5fde09a0790871aae5b9e1230d1c82a96b7c9722f36a5871793e11bfa
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

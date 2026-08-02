@@ -1,0 +1,29 @@
+schema_version: 2
+id: 5359c91f-bdef-4533-9b81-e2779f3b9064
+title: KYC Operations Expert (f/m/d)
+company: Lemon Markets
+company_url: null
+location: Berlin (Hybrid)
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: kyc-operations-expert-berlin-228260
+  url: https://www.arbeitnow.com/jobs/companies/lemon-markets/kyc-operations-expert-berlin-228260
+  metadata:
+    tags:
+    - Brokerage Operations
+    job_types:
+    - Full Time
+published_at: '2026-08-02T14:41:02Z'
+discovered_at: '2026-08-02T16:01:32Z'
+updated_at: '2026-08-02T16:01:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T16:01:32Z'
+analysis_priority: 0
+fingerprint: sha256:671ecfea231441ea4ed76a68f6a1e55becea9549537ed0e77af62ac5a5dd8e55
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

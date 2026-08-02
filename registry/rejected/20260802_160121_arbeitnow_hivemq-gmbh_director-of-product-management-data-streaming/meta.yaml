@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: director-of-product-management-data-streaming-berlin-408145
+source_url: https://www.arbeitnow.com/jobs/companies/hivemq-gmbh/director-of-product-management-data-streaming-berlin-408145
+title: Director of Product Management - Data Streaming
+company: HiveMQ GmbH
+location: Germany
+published_at: '2026-08-02T14:41:14Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T16:01:21Z'
+rejected_at: '2026-08-02T16:01:21Z'

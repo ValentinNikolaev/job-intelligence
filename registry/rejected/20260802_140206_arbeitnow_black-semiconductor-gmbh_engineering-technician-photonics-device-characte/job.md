@@ -109,4 +109,4 @@ Understanding of cleanroom protocols,contamination control, ESD guidelines, and 
 
 *If your application results in an employment relationship, your Applicant Data will be transferred to our personnel records and processed in accordance with applicable legal requirements; otherwise, your Applicant Data will be retained for up to six (6) months after completion of the recruitment process. *[*Read more about our privacy policy here. *](https://www.blacksemi.com/privacy-policy)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

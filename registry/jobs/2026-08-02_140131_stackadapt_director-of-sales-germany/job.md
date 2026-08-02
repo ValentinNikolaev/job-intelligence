@@ -130,4 +130,4 @@ To learn more about our privacy practices, please see our [Privacy Policy](https
 
 #LI-REMOTE
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

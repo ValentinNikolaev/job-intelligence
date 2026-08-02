@@ -116,4 +116,4 @@ Knowledge of semiconductor industry trends and disruptive technologies, includin
 
 *If your application results in an employment relationship, your Applicant Data will be transferred to our personnel records and processed in accordance with applicable legal requirements; otherwise, your Applicant Data will be retained for up to six (6) months after completion of the recruitment process. *[*Read more about our privacy policy here. *](https://www.blacksemi.com/privacy-policy)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

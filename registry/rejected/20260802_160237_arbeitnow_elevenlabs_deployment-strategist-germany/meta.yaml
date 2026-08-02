@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: deployment-strategist-germany-274051
+source_url: https://www.arbeitnow.com/jobs/companies/elevenlabs/deployment-strategist-germany-274051
+title: Deployment Strategist - Germany
+company: ElevenLabs
+location: Germany
+published_at: '2026-08-02T14:40:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T16:02:37Z'
+rejected_at: '2026-08-02T16:02:37Z'

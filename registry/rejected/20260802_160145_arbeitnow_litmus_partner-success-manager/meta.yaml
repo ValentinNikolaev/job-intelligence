@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: partner-success-manager-munchen-44018
+source_url: https://www.arbeitnow.com/jobs/companies/litmus/partner-success-manager-munchen-44018
+title: Partner Success Manager
+company: Litmus
+location: Germany
+published_at: '2026-08-02T14:40:46Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T16:01:45Z'
+rejected_at: '2026-08-02T16:01:45Z'

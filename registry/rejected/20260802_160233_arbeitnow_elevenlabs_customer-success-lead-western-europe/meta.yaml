@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-success-lead-western-europe-germany-445555
+source_url: https://www.arbeitnow.com/jobs/companies/elevenlabs/customer-success-lead-western-europe-germany-445555
+title: Customer Success Lead - Western Europe
+company: ElevenLabs
+location: Germany
+published_at: '2026-08-02T14:40:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T16:02:33Z'
+rejected_at: '2026-08-02T16:02:33Z'
