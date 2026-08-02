@@ -3,22 +3,19 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Very strong fit for a senior backend Go role focused on resilient microservices, real-time user-facing systems, API ownership, testing, technical leadership, and production reliability.
+Excellent backend Golang fit with recent Go ownership event-driven services AWS Kubernetes APIs and leadership.
 
 ## Why it matches
 
-- Recent Go backend ownership in production systems
-- Microservices, REST APIs, event-driven architecture, queues, and resilient delivery pipelines
-- Technical Lead background, code review, mentoring, planning, and delivery ownership
-- Kubernetes, AWS, CI/CD, Prometheus, monitoring, and production troubleshooting
-- Professional working English and remote collaboration fit
+- Recent Go
+- AWS and Kubernetes
+- event-driven systems
+- remote fit
 
 ## Gaps
 
-- gRPC is not explicitly evidenced in the candidate source records
-- Cross-selling platform domain is new
+- Product domain and framework requirements unknown
 
 ## Concerns
 
-- Clarify hands-on depth with gRPC during screening
-- Confirm availability, work authorization, and exact remote expectations
+- On-call expectations unspecified

@@ -818,3 +818,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: c4e0a84e8e304ac2962178789172d02e
+  recorded_at: '2026-08-02T16:33:44Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Batch analysis usage unavailable on current Codex surface
