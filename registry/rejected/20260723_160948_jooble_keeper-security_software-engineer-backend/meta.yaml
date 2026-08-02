@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-8065007214650565430'
-source_url: https://jooble.org/away/-8065007214650565430?p=1&pos=31&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=445&brelb=15&scr=256.7386&bscr=256.7386&aq=-1659639652370557560&elckey=1017902610764436076
+source_url: https://jooble.org/away/-8065007214650565430?p=1&pos=35&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=446&brelb=15&scr=255.0922&bscr=255.0922&aq=8500275337462717193&elckey=-2116490118822011127
 title: Software Engineer, Backend
 company: Keeper Security
 location: Remote
 published_at: '2026-07-15T00:00:00.0000000'
 rejection_category: stale
 rejection_reason: published_at 2026-07-15T00:00:00.0000000 is older than 7 days
-updated_at: '2026-08-02T19:10:49Z'
+updated_at: '2026-08-02T20:10:14Z'
 rejected_at: '2026-07-23T16:09:48Z'

@@ -108,4 +108,4 @@ We look forward to receiving your application! If you have any questions, feel f
 
 We are more than Europe's largest campervan rental company. In 2021 we launched our platform roadsurfer spots in addition to our other products rent, abo and sales – a platform where you can discover and book unique camping spots. But that’s only the beginning. We are growing fast, so hop on board and join us on our journey. The roadsurfer philosophy is simple: rent an RV, start your adventure, be happy. Come ride the wave with us!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

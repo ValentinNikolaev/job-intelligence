@@ -73,4 +73,4 @@ reimbursement of the "Deutschlandticket"
 
 We look forward to your application and can't wait to meet you - no matter who you are or what background you have!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -137,4 +137,4 @@ We're replacing fragmented tools (CRM, design, proposals, project management, in
 
 We're a well-funded VC-backed startup reshaping how the world uses energy. We work hard, move fast, and believe exceptional people build exceptional companies.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -100,4 +100,4 @@ Even if you don’t meet every requirement, we encourage you to apply! Imposter 
 
 At Reonic, we’re on a mission to simplify renewable technology with our AI operating system for renewable installers. Backed by top-tier investors and trusted by 3000+ business customers, we’re growing fast - and we need YOU to help us accommodate our new and existing customers.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
