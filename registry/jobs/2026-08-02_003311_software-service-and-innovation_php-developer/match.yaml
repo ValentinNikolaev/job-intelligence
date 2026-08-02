@@ -1,0 +1,22 @@
+score: 91
+recommendation: strong_match
+summary: Excellent PHP/Laravel API platform fit across synchronization, SQL, architecture,
+  reliability, and AI tooling.
+strengths:
+- PHP/Laravel
+- webhooks/retries/idempotency
+- SQL
+- CI/CD/AWS
+gaps:
+- TypeScript/React
+- Keycloak
+- hospitality domain
+concerns:
+- OAuth/OIDC details
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-02T20:57:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4a49a54b8efe6b098948b70ea1bb37dc8a73f9f49b780f60d1229b401e56baf1
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
