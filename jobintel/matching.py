@@ -93,6 +93,8 @@ _RELEVANT_SOURCE_METADATA = {
     "workplace_type",
 }
 
+_ANALYSIS_SKIP_STATUSES = {"applied"}
+
 _CLOUDFLARE_EMAIL_PROTECTION_RE = re.compile(
     r"(/cdn-cgi/l/email-protection#)[0-9A-Fa-f]+"
 )
@@ -184,6 +186,9 @@ class MatchAnalyzer:
     def analyze_directory(self, directory: Path, *, force: bool = False) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
 
+        if _analysis_should_skip_status(meta):
+            return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
+
         match_path = directory / "match.yaml"
         if not force and match_path.exists():
             existing = _read_yaml_mapping(match_path, "match analysis")
@@ -221,6 +226,8 @@ class MatchAnalyzer:
     ) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
         del profile_text, vacancy
+        if _analysis_should_skip_status(meta):
+            return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
         if expected_profile_version and expected_profile_version != profile_version:
             raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")
         if expected_job_version and expected_job_version != job_version:
@@ -320,6 +327,9 @@ def build_analysis_pack(
     items: list[dict[str, Any]] = []
     for directory in _priority_sorted_directories(analyzer.resolve("all")):
         if triage_skip and triage_skip(directory):
+            continue
+        meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
+        if _analysis_should_skip_status(meta):
             continue
         if analyzer.is_current(directory):
             continue
@@ -524,6 +534,10 @@ def _analysis_priority(value: Any) -> int:
     if isinstance(value, bool) or not isinstance(value, int):
         return 0
     return value if 0 <= value <= 100 else 0
+
+
+def _analysis_should_skip_status(meta: Mapping[str, Any]) -> bool:
+    return str(meta.get("status", "")).strip().casefold() in _ANALYSIS_SKIP_STATUSES
 
 
 def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:

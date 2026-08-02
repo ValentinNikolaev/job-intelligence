@@ -997,6 +997,8 @@ def _run_pending(
             return 0
         for directory in directories:
             if stage == "analyze":
+                if _vacancy_status_skips_analysis(directory):
+                    continue
                 if should_skip_model(directory):
                     continue
                 checker = MatchAnalyzer(
@@ -1057,6 +1059,14 @@ def _optional_match_score(directory: Path) -> int | None:
     if not path.is_file():
         return None
     return _match_score(directory)
+
+
+def _vacancy_status_skips_analysis(directory: Path) -> bool:
+    try:
+        meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+    except ValueError:
+        return False
+    return str(meta.get("status", "")).strip().casefold() == "applied"
 
 
 def _analysis_is_current(

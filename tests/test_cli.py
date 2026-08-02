@@ -261,6 +261,51 @@ class CliTests(unittest.TestCase):
             self.assertIn("2. 84/100 Example", text)
             self.assertNotIn("99/100", text)
 
+    def test_pending_analyze_does_not_list_applied_vacancies(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            _write_workflow_config(root)
+            candidate = registry_root / "candidate"
+            candidate.mkdir(parents=True)
+            (candidate / "match-profile.md").write_text("Backend engineer.", encoding="utf-8")
+            sources = root / "sources"
+            sources.mkdir()
+            env_path = sources / ".env"
+            env_path.write_text("", encoding="utf-8")
+            ids = iter(("applied", "fresh"))
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            applied = registry.upsert(
+                NormalizedJob("direct", "1", "https://e/1", "Backend One", "Example", "Build APIs.")
+            )
+            fresh = registry.upsert(
+                NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs.")
+            )
+            registry.update_status(applied.vacancy_id, "applied")
+
+            output = StringIO()
+            with redirect_stdout(output), patch("jobintel.cli.load_env", return_value={}):
+                self.assertEqual(
+                    0,
+                    main(
+                        [
+                            "pending",
+                            "analyze",
+                            "all",
+                            "--workflow",
+                            "analyze",
+                            "--registry",
+                            str(registry_root),
+                            "--env",
+                            str(env_path),
+                        ]
+                    ),
+                )
+
+            text = output.getvalue()
+            self.assertIn(fresh.directory, text)
+            self.assertNotIn(applied.directory, text)
+
     def test_doctor_ci_skips_only_host_local_converter_checks(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -346,6 +391,33 @@ def _write_match(registry_root: Path, directory: str, score: int) -> None:
                 "hard_rejection_reason": None,
             },
             allow_unicode=True,
+            sort_keys=False,
+        ),
+        encoding="utf-8",
+    )
+
+
+def _write_workflow_config(root: Path) -> None:
+    (root / "config").mkdir()
+    (root / "config" / "codex-workflows.yaml").write_text(
+        yaml.safe_dump(
+            {
+                "schema_version": 1,
+                "prepare_min_score": 65,
+                "prepare_max_age_days": 7,
+                "workflows": {
+                    "analyze": {
+                        "model": "gpt-5.6-luna",
+                        "reasoning": "low",
+                        "model_label": "codex:gpt-5.6-luna:low",
+                    },
+                    "prepare": {
+                        "model": "gpt-5.6-terra",
+                        "reasoning": "medium",
+                        "model_label": "codex:gpt-5.6-terra:medium",
+                    },
+                },
+            },
             sort_keys=False,
         ),
         encoding="utf-8",

@@ -100,6 +100,44 @@ class MatchingBatchTests(unittest.TestCase):
             self.assertEqual(priority.directory, pack.items[0]["directory"])
             self.assertNotEqual(normal.directory, pack.items[0]["directory"])
 
+    def test_analysis_pack_skips_applied_vacancies(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            ids = iter(("applied", "fresh"))
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            applied = registry.upsert(NormalizedJob("direct", "1", "https://e/1", "Backend One", "Example", "Build APIs."))
+            fresh = registry.upsert(NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs."))
+            registry.update_status(applied.vacancy_id, "applied")
+
+            pack = build_analysis_pack(registry_root, [profile])
+
+            self.assertEqual([fresh.directory], [item["directory"] for item in pack.items])
+
+    def test_batch_publish_skips_vacancy_applied_after_pack_creation(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            registry = Registry(registry_root, id_factory=lambda: "one")
+            created = registry.upsert(NormalizedJob("direct", "1", "https://e/1", "Backend", "Example", "Build APIs."))
+            pack = build_analysis_pack(registry_root, [profile])
+            registry.update_status(created.vacancy_id, "applied")
+
+            summary = publish_analysis_batch(
+                {"items": list(pack.items)},
+                {created.directory: payload(82)},
+                MatchAnalyzer(registry_root, [profile], type("Client", (), {"model": "codex:test"})()),
+            )
+
+            self.assertEqual(1, summary.selected)
+            self.assertEqual(0, summary.analyzed)
+            self.assertEqual(1, summary.skipped)
+            self.assertFalse((registry_root / "jobs" / created.directory / "match.yaml").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
