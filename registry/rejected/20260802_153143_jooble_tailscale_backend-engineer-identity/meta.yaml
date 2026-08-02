@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4112718481248840122'
+source_url: https://jooble.org/desc/4112718481248840122?ckey=remote+golang+backend+engineer&rgn=55180&pos=6&groupId=1106121903&elckey=-3218090725875527281&p=1&aq=2879348923398304301&cid=15922&jobAge=33&brelb=100&bscr=876.3377&scr=876.3377
+title: Backend Engineer, Identity
+company: Tailscale
+location: United States
+published_at: '2026-08-01T09:41:19.6700000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T15:31:43Z'
+rejected_at: '2026-08-02T15:31:43Z'

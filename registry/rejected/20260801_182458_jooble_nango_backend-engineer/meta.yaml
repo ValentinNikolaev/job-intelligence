@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '2548693878343023534'
-source_url: https://jooble.org/away/2548693878343023534?p=1&pos=22&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=174&brelb=15&scr=652.26294&bscr=652.26294&aq=-4089775042447418317&elckey=-4183525498329328533
+source_url: https://jooble.org/away/2548693878343023534?p=1&pos=22&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=177&brelb=15&scr=681.58057&bscr=681.58057&aq=2879348923398304301&elckey=-3218090725875527281
 title: Backend Engineer
 company: Nango
 location: Remote
 published_at: '2026-07-26T00:00:00.0000000'
 rejection_category: stale
 rejection_reason: published_at 2026-07-26T00:00:00.0000000 is older than 7 days
-updated_at: '2026-08-02T12:27:46Z'
+updated_at: '2026-08-02T15:31:53Z'
 rejected_at: '2026-08-01T18:24:58Z'

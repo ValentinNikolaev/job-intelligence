@@ -1,11 +1,11 @@
 # Senior Backend Software Engineer
 
-Posted: 2026-07-31T00:00:00.0000000
+Posted: 2026-08-01T00:00:00.0000000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: location_requirement
+- Reason: requires United States location
 
 ...Figma. Learn more at semgrep.dev . 
 
