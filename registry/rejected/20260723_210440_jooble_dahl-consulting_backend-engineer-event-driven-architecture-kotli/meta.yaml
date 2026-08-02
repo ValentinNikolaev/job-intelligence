@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '9116350852011071695'
-source_url: https://jooble.org/desc/9116350852011071695?ckey=remote+golang+backend+engineer&rgn=55180&pos=41&groupId=1106121903&elckey=-6704474585739186545&p=1&aq=-2129525704017637188&cid=15922&jobAge=637&brelb=100&bscr=228.99292&scr=228.99292
+source_url: https://jooble.org/desc/9116350852011071695?ckey=remote+golang+backend+engineer&rgn=55180&pos=43&groupId=1106121903&elckey=52467838310634824&p=1&aq=4680557188635909874&cid=15922&jobAge=658&brelb=100&bscr=241.13136&scr=241.13136
 title: Backend Engineer - Event-Driven Architecture (Kotlin/Kafka)
 company: Dahl Consulting
 location: Remote
 published_at: '2026-07-06T00:00:00.0000000'
 rejection_category: stale
 rejection_reason: published_at 2026-07-06T00:00:00.0000000 is older than 7 days
-updated_at: '2026-08-01T19:16:56Z'
+updated_at: '2026-08-02T16:08:32Z'
 rejected_at: '2026-07-23T21:04:40Z'
