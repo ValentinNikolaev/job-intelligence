@@ -3,20 +3,23 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent Go backend fit through recent Go ownership, event-driven systems, AWS, reliability, and APIs.
+Very strong match across Go, resilient microservices, technical leadership, and backend operations.
 
 ## Why it matches
 
-- Recent Go
-- AWS
+- Go
 - microservices
-- event-driven systems
-- reliability
+- resilience
+- REST
+- testing
+- technical leadership
+- English
 
 ## Gaps
 
-- Exact company stack and domain
+- gRPC is not explicitly evidenced
+- domain-specific cross-selling is new
 
 ## Concerns
 
-- Role level and compensation
+- Confirm depth of gRPC and availability expectations.

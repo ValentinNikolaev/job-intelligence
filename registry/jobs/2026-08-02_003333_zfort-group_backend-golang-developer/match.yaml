@@ -1,21 +1,24 @@
 score: 88
 recommendation: strong_match
-summary: Excellent Go backend fit through recent Go ownership, event-driven systems,
-  AWS, reliability, and APIs.
+summary: Very strong match across Go, resilient microservices, technical leadership,
+  and backend operations.
 strengths:
-- Recent Go
-- AWS
+- Go
 - microservices
-- event-driven systems
-- reliability
+- resilience
+- REST
+- testing
+- technical leadership
+- English
 gaps:
-- Exact company stack and domain
+- gRPC is not explicitly evidenced
+- domain-specific cross-selling is new
 concerns:
-- Role level and compensation
+- Confirm depth of gRPC and availability expectations.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-02T13:33:56Z'
+analyzed_at: '2026-08-02T14:33:14Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:e651cf40db861d60b3141132876d3d72de5f056558123836aebf87fd85968c3a
+job_version: sha256:c4657856be863d9e97e24afc97ed6615c6a8e39f18594cdd54ac30989e5e0446
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

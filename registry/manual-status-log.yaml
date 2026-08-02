@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 10
+  total_events: 11
   by_status:
     applied:
-      count: 5
-      last_changed_at: '2026-08-02T14:22:03Z'
+      count: 6
+      last_changed_at: '2026-08-02T14:33:33Z'
     rejected:
       count: 5
       last_changed_at: '2026-08-01T19:54:58Z'
@@ -52,6 +52,11 @@ summary:
       reason: User requested marking Jagaad Senior PHP Backend Developer as applied
         after preparing CV and cover letter.
       last_changed_at: '2026-08-01T19:27:25Z'
+    user-requested-marking-the-deda-next-backend-php:
+      count: 1
+      reason: User requested marking the Deda.Next Backend PHP Developer vacancy as
+        applied after generating the application package.
+      last_changed_at: '2026-08-02T14:33:33Z'
     user-requested-marking-the-n-ix-php-senior-vacan:
       count: 1
       reason: User requested marking the N-iX PHP Senior vacancy as applied after
@@ -193,6 +198,20 @@ events:
   reason: User requested marking the N-iX PHP Senior vacancy as applied after generating
     the application package.
   reason_key: user-requested-marking-the-n-ix-php-senior-vacan
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Application artifacts generated and vacancy marked applied by Codex task.
+- changed_at: '2026-08-02T14:33:33Z'
+  vacancy_id: e5073567-23da-4cf6-9ac0-dc211c8b22f9
+  directory: 2026-08-02_143030_deda-next_backend-php-developer
+  company: Deda.Next
+  title: Backend PHP Developer
+  from_status: found
+  to_status: applied
+  reason: User requested marking the Deda.Next Backend PHP Developer vacancy as applied
+    after generating the application package.
+  reason_key: user-requested-marking-the-deda-next-backend-php
   actor: codex
   interaction:
     source: llm_assisted_manual

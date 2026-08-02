@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:dd7b34b1d0fc34fa179b70889cceeac34fe0e13891cf69bfaf935de60af5cef8
+company_version: sha256:f6f3f3e9a983273540d693fe1e6d1556974354a749dbdf4c8e1484c4b8f5a49e
+prompt_version: sha256:9bf5d3343b1bb9decb2ab1a42e52cb16c3b064be057d59c9b1975a873e2b697f
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_dedanext_BackendPHPDeveloper
+generated_at: '2026-08-02T14:33:16Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_dedanext_BackendPHPDeveloper.md
+- CV_ValentinNikolaev_dedanext_BackendPHPDeveloper.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
