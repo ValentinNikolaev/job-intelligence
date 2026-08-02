@@ -1,23 +1,22 @@
 score: 88
 recommendation: strong_match
-summary: Excellent match for a backend Go role given recent Go ownership, AWS-oriented
-  systems, integrations, queues, and production reliability.
+summary: Excellent fit for a Go backend role centered on scalable microservices, APIs,
+  reliability, and real-time systems.
 strengths:
 - Go
-- backend systems
+- microservices
 - REST APIs
-- event-driven architecture
-- queues
-- AWS
-- monitoring
-- production support
+- event-driven systems
+- production operations
+- testing and architecture
 gaps:
-- role-specific product details
-concerns: []
+- gRPC is not explicitly listed in the profile.
+concerns:
+- Remote and the senior backend scope align well with demonstrated experience.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-02T17:34:50Z'
+analyzed_at: '2026-08-02T18:33:56Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:a4cbbfcd6d63c7698ecb840fb6d76381043dc05c18b078a883544aa2447c4fe0
+job_version: sha256:5ec8396d42b1f5a0dad84adabd840fb06de2ea5d6bc56c10b8146c13b0e4e533
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

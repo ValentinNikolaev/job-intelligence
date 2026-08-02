@@ -3,19 +3,21 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent match for a backend Go role given recent Go ownership, AWS-oriented systems, integrations, queues, and production reliability.
+Excellent fit for a Go backend role centered on scalable microservices, APIs, reliability, and real-time systems.
 
 ## Why it matches
 
 - Go
-- backend systems
+- microservices
 - REST APIs
-- event-driven architecture
-- queues
-- AWS
-- monitoring
-- production support
+- event-driven systems
+- production operations
+- testing and architecture
 
 ## Gaps
 
-- role-specific product details
+- gRPC is not explicitly listed in the profile.
+
+## Concerns
+
+- Remote and the senior backend scope align well with demonstrated experience.
