@@ -267,4 +267,4 @@ Contribute to node enhancements and adjacent engineering tasks that make n8n eas
 
 ** Country-specific details are provided in your contract.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

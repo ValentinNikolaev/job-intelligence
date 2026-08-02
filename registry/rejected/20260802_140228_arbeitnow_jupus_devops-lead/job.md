@@ -149,4 +149,4 @@ You must be located within the CET -2/+2 timezone for this role
 
 **If you’re excited about owning infrastructure strategy, scaling modern cloud platforms, and building high-performing DevOps practices in a fast-growing AI environment, we’d love to hear from you.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

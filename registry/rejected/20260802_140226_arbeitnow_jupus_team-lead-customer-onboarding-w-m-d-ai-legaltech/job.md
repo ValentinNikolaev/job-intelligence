@@ -117,4 +117,4 @@ Du entwickelst dein Team kontinuierlich weiter – durch regelmäßige Feedbackg
 
 Du willst die Zukunft der Rechtsberatung aktiv mitgestalten und Customer Onboarding aufs nächste Level heben? Dann bewirb dich jetzt – wir freuen uns darauf, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

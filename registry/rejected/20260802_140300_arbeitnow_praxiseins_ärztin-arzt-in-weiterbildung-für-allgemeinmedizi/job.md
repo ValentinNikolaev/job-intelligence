@@ -85,4 +85,4 @@ Versorgung sichern - Qualitätsmedizin gewährleisten. Als PraxisEins wollen wir
 *
 PraxisEins ist ein Arbeitgeber, der Chancengleichheit fördert und Vielfalt schätzt. Wir freuen uns über alle Bewerbungen und bearbeiten diese völlig unabhängig von Geschlecht, Religionszugehörigkeit, Hautfarbe, Herkunft, sexueller Orientierung, Alter, Familienstand oder Behindertenstatus. Zur besseren Lesbarkeit wird in dieser Stellenanzeige das generische Maskulinum verwendet.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

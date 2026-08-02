@@ -298,4 +298,4 @@ Help define what excellent SI partnerships look like as n8n continues to scale.
 
 ** Country-specific details are provided in your contract.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

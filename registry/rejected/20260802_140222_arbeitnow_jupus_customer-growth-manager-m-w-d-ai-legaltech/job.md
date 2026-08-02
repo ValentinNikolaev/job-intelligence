@@ -107,4 +107,4 @@ Du bist Sparringspartner für neue Prozesse: Hinterfrage, optimiere, entwickle �
 
 Du willst die Zukunft der Rechtsberatung aktiv mitgestalten? Dann bewirb dich jetzt – wir freuen uns darauf, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

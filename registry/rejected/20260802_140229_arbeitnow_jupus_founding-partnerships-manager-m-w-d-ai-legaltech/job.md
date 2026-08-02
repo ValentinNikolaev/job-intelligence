@@ -175,4 +175,4 @@ Dabei sprechen wir über deinen bisherigen Werdegang, relevante Netzwerke und ko
 
 Klingt spannend? Dann sende uns einfach deinen Lebenslauf und ein paar authentische Zeilen zu deiner Motivation. Wir freuen uns darauf, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
