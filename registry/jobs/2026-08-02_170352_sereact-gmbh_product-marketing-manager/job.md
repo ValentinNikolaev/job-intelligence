@@ -184,4 +184,4 @@ Competitive compensation and excellent career development opportunities
 
 **Note to applicants:** We are currently experiencing a high volume of interest in this role. Due to this, our review process is taking a bit longer than usual. We appreciate your patience.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

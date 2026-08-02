@@ -137,4 +137,4 @@ Work from home set up.
 
 A huge opportunity for career growth as you’ll help shape a market-defining product.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

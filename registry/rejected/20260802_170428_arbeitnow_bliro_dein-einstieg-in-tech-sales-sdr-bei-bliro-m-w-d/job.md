@@ -139,4 +139,4 @@ Du hast Lust, den Vertrieb eines KI-Startups von Grund auf mitzuerleben und mitz
 
 **Let’s build the future of Sales – together.** 💥
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

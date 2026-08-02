@@ -150,4 +150,4 @@ A motivated team and an open corporate culture
 
 Competitive compensation and excellent career development opportunities
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -139,4 +139,4 @@ Sowie eine **ehrliche** Work-Life Balance
 
 *Vielfalt und Inklusion sind fest in unserer Unternehmenskultur verankert. Wir freuen uns über jede Bewerbung und treffen unsere Entscheidungen fair, transparent und ausschließlich auf Basis von Fähigkeiten, Erfahrung und Potenzial.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

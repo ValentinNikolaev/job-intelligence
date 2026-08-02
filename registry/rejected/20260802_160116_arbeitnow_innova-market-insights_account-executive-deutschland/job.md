@@ -95,4 +95,4 @@ Möchten Sie Teil eines dynamischen, internationalen Unternehmens sein und mitge
 
 Senden Sie uns Ihre Motivationsschreiben und Lebenslauf.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

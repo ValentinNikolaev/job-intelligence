@@ -91,4 +91,4 @@ Compensation: €65K – €90K • €0 – €30K Equity
 
 - • Estimated Salary Range €65K – €90K • €0 – €30K Equity
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

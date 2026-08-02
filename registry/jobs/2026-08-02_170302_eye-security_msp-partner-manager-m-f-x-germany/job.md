@@ -106,4 +106,4 @@ Strong support for your personal and professional development.
 
 Regular company-wide get-togethers, giving you the opportunity to collaborate in person and build strong team connections.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

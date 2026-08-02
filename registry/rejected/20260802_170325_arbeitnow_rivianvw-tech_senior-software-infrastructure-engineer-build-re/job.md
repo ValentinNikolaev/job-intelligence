@@ -121,4 +121,4 @@ Please see our [**Candidate Data Privacy Notice (English)**](https://assets.ctfa
 
 *Please note this job posting represents an open, active vacancy. Additionally, we are not currently accepting applications from third party application services.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

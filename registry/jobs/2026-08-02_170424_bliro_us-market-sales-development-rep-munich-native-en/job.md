@@ -111,4 +111,4 @@ Do you want to experience and help shape the sales side of an AI startup from th
 
 **Let's build the future of Sales - together. 💥**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

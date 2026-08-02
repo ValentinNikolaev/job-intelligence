@@ -1,0 +1,29 @@
+schema_version: 2
+id: 6849a60c-250d-4b16-8843-4571412d845c
+title: Robotics Application Engineer (m/f/d)
+company: Sereact GmbH
+company_url: null
+location: Stuttgart Schockenriedstr. 17
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: robotics-application-engineer-stuttgart-235604
+  url: https://www.arbeitnow.com/jobs/companies/sereact-gmbh/robotics-application-engineer-stuttgart-235604
+  metadata:
+    tags:
+    - Software
+    job_types:
+    - Full Time
+published_at: '2026-08-02T15:00:39Z'
+discovered_at: '2026-08-02T18:03:36Z'
+updated_at: '2026-08-02T18:03:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T18:03:36Z'
+analysis_priority: 0
+fingerprint: sha256:a11575bbb925771454f6a0a81113941a65e53b5581f186966d421f5c64afe7dc
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

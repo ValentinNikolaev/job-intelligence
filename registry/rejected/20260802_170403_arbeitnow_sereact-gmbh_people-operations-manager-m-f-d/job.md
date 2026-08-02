@@ -251,4 +251,4 @@ Employment may be contingent upon a background check consistent with applicable 
 
 We are an Equal Opportunity Employer. We do not discriminate based on race, color, religion, sex (including pregnancy, sexual orientation, and gender identity), national origin, age, disability, genetic information, or any other status protected by law.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

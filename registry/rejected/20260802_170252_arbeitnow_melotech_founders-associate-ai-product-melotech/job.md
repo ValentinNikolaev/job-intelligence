@@ -101,4 +101,4 @@ Founder interview: 90-minute interview with our CEO - going deep on all topics
 
 Offer, contract signing and onboarding
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

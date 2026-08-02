@@ -94,4 +94,4 @@ Ready to jump in and build the future of Voice AI? 🚀
 
 Founded in Berlin in 2023 by serial entrepreneurs Albert Astabatsyan, Hakob Astabatsyan, and Sassun Mirzakhan-Saky, Synthflow AI democratizes access to advanced voice AI with a no-code platform that lets **enterprises easily create, deploy and scale** natural-sounding, cost-effective voice agents tailored to their business needs.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

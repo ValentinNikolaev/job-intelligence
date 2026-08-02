@@ -91,4 +91,4 @@ We’re hiring a Sales Engineer to play a central role in the Litmus sales cycle
 
 • BS/MS in Electrical, Industrial, or Computer Engineering (or equivalent experience)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

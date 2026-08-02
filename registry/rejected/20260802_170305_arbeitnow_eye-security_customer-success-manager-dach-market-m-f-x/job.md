@@ -94,4 +94,4 @@ A generous time-off policy, including wellbeing and volunteering days.
 **Ready to take ownership, bring ideas to life, and inspire others?**
 We’d love to hear from you. Apply now and become part of our mission at Eye Security.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -146,4 +146,4 @@ Attractive remuneration: A competitive salary plus attractive bonus options.
 
 Career opportunities: Be part of a dynamic scale-up with clear development prospects in a growing industry.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

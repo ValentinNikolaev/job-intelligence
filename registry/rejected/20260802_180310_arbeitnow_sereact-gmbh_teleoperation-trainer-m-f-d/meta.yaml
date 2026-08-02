@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teleoperation-trainer-stuttgart-418210
+source_url: https://www.arbeitnow.com/jobs/companies/sereact-gmbh/teleoperation-trainer-stuttgart-418210
+title: Teleoperation Trainer (m/f/d)
+company: Sereact GmbH
+location: Stuttgart Schockenriedstr. 17
+published_at: '2026-08-02T15:00:39Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T18:03:10Z'
+rejected_at: '2026-08-02T18:03:10Z'
