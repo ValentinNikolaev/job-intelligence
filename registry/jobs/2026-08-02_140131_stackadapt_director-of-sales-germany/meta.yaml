@@ -1,0 +1,27 @@
+schema_version: 2
+id: 4aa7a8ca-152b-4cf7-b78e-ed3b40cb24b4
+title: Director of Sales, Germany
+company: Stackadapt
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: director-of-sales-germany-431599
+  url: https://www.arbeitnow.com/jobs/companies/stackadapt/director-of-sales-germany-431599
+  metadata:
+    tags:
+    - Sales Leadership
+published_at: '2026-08-02T12:15:57Z'
+discovered_at: '2026-08-02T14:01:31Z'
+updated_at: '2026-08-02T14:01:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T14:01:31Z'
+analysis_priority: 0
+fingerprint: sha256:099b90d7db30433602d2485512d688c9990679adf735017384de15aa0f4c87c8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: billing-specialist-berlin-300763
+source_url: https://www.arbeitnow.com/jobs/companies/n8n/billing-specialist-berlin-300763
+title: Billing Specialist
+company: n8n
+location: Berlin Office
+published_at: '2026-08-02T12:01:15Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:03:43Z'
+rejected_at: '2026-08-02T14:03:43Z'

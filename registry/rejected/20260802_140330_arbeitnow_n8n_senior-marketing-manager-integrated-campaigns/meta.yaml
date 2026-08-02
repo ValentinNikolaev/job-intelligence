@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-marketing-manager-integrated-campaigns-germany-485772
+source_url: https://www.arbeitnow.com/jobs/companies/n8n/senior-marketing-manager-integrated-campaigns-germany-485772
+title: Senior Marketing Manager, Integrated Campaigns
+company: n8n
+location: Germany
+published_at: '2026-08-02T12:01:15Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:03:30Z'
+rejected_at: '2026-08-02T14:03:30Z'

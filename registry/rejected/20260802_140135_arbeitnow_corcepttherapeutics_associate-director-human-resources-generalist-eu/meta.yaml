@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: associate-director-human-resources-generalist-europe-contract-berlin-120262
+source_url: https://www.arbeitnow.com/jobs/companies/corcepttherapeutics/associate-director-human-resources-generalist-europe-contract-berlin-120262
+title: Associate Director, Human Resources Generalist - Europe (Contract)
+company: Corcepttherapeutics
+location: Berlin
+published_at: '2026-08-02T12:15:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:01:35Z'
+rejected_at: '2026-08-02T14:01:35Z'

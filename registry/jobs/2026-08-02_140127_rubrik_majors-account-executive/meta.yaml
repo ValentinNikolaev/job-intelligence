@@ -1,0 +1,27 @@
+schema_version: 2
+id: f679e42f-6213-4f44-bd16-a7c8aaa289b8
+title: Majors Account Executive
+company: Rubrik
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: majors-account-executive-441800
+  url: https://www.arbeitnow.com/jobs/companies/rubrik/majors-account-executive-441800
+  metadata:
+    tags:
+    - Sales
+published_at: '2026-08-02T12:16:14Z'
+discovered_at: '2026-08-02T14:01:27Z'
+updated_at: '2026-08-02T14:01:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T14:01:27Z'
+analysis_priority: 0
+fingerprint: sha256:fb3067588501a195f87aaa24f2c1ad398ac2c1fb2f9e875be504a6b10418c902
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

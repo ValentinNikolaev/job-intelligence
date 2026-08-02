@@ -1,0 +1,29 @@
+schema_version: 2
+id: 767c537f-09dc-44cd-9595-9a434522d174
+title: Senior People Development Partner (f/m/d)
+company: Black Semiconductor GmbH
+company_url: null
+location: Aachen, Germany
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: senior-people-development-partner-aachen-498365
+  url: https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/senior-people-development-partner-aachen-498365
+  metadata:
+    tags:
+    - People & Culture Department
+    job_types:
+    - Full Time
+published_at: '2026-08-02T12:01:37Z'
+discovered_at: '2026-08-02T14:01:57Z'
+updated_at: '2026-08-02T14:01:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T14:01:57Z'
+analysis_priority: 0
+fingerprint: sha256:f73237d117daa5bf1f16e842b7cb8843f27cb187c67bea1c8981f2885a6d00c9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

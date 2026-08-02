@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: facharztin-facharzt-fur-laboratoriumsmedizin-standortubergreifend-258734
+source_url: https://www.arbeitnow.com/jobs/companies/praxiseins/facharztin-facharzt-fur-laboratoriumsmedizin-standortubergreifend-258734
+title: Fachärztin / Facharzt für Laboratoriumsmedizin (m/w/d)
+company: PraxisEins
+location: Standortübergreifend
+published_at: '2026-08-02T12:01:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:03:02Z'
+rejected_at: '2026-08-02T14:03:02Z'

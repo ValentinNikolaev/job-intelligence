@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: etch-equipment-engineer-aachen-295784
+source_url: https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/etch-equipment-engineer-aachen-295784
+title: Etch Equipment Engineer (f/m/d)
+company: Black Semiconductor GmbH
+location: Aachen, Germany
+published_at: '2026-08-02T12:01:37Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:02:03Z'
+rejected_at: '2026-08-02T14:02:03Z'

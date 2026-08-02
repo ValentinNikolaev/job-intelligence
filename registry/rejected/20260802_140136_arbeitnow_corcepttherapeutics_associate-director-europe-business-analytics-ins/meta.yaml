@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: associate-director-europe-business-analytics-insights-munich-bavaria-1930
+source_url: https://www.arbeitnow.com/jobs/companies/corcepttherapeutics/associate-director-europe-business-analytics-insights-munich-bavaria-1930
+title: Associate Director, Europe Business Analytics & Insights
+company: Corcepttherapeutics
+location: Munich, Bavaria
+published_at: '2026-08-02T12:15:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:01:36Z'
+rejected_at: '2026-08-02T14:01:36Z'

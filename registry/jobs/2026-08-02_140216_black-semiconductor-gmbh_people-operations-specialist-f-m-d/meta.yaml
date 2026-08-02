@@ -1,0 +1,29 @@
+schema_version: 2
+id: 13311dff-4238-4578-9056-62a7d380c854
+title: People Operations Specialist (f/m/d)
+company: Black Semiconductor GmbH
+company_url: null
+location: Aachen, Germany
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: people-operations-specialist-aachen-419736
+  url: https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/people-operations-specialist-aachen-419736
+  metadata:
+    tags:
+    - People & Culture Department
+    job_types:
+    - Full Time
+published_at: '2026-08-02T12:01:37Z'
+discovered_at: '2026-08-02T14:02:16Z'
+updated_at: '2026-08-02T14:02:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T14:02:16Z'
+analysis_priority: 0
+fingerprint: sha256:4bfd20d9301bcacdf4fe8b9b9521b2597f302c8154041dfc29281b505384a110
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

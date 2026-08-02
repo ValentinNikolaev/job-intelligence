@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-account-executive-466178
+source_url: https://www.arbeitnow.com/jobs/companies/rubrik/remote-account-executive-466178
+title: Account Executive
+company: Rubrik
+location: Remote
+published_at: '2026-08-02T12:16:14Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T14:01:29Z'
+rejected_at: '2026-08-02T14:01:29Z'
