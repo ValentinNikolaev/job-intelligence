@@ -1,0 +1,15 @@
+score: 91
+recommendation: strong_match
+summary: Excellent direct PHP Go AWS Kubernetes event-driven and leadership match.
+strengths:
+- PHP Go AWS Kubernetes leadership
+gaps:
+- On-call
+concerns: []
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-02T13:26:51Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b833f3a09d3d978501a26b630f51fe0d546a9721b92b134fd1f7be55f322b97b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

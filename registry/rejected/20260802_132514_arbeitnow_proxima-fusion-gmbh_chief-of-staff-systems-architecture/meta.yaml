@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: chief-of-staff-systems-architecture-munich-370046
+source_url: https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/chief-of-staff-systems-architecture-munich-370046
+title: Chief of Staff, Systems Architecture
+company: Proxima Fusion GmbH
+location: Munich
+published_at: '2026-08-02T11:41:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T13:25:14Z'
+rejected_at: '2026-08-02T13:25:14Z'

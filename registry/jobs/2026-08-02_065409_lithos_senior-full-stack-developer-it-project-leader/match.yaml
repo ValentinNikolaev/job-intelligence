@@ -1,0 +1,17 @@
+score: 78
+recommendation: strong_match
+summary: Strong senior backend and technical leadership fit; frontend depth is the
+  main uncertainty.
+strengths:
+- Go PHP AWS leadership
+gaps:
+- Frontend
+concerns:
+- Frontend ownership
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-02T13:26:51Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c5b296b1c3e632a8f0365b3c9b20784ff6bb7973cd52a3c3ca2aa10e08277414
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

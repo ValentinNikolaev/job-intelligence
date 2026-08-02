@@ -10,5 +10,5 @@ Posted: 2026-05-13T00:00:00.0000000
 ...The Impact U will make: 
 Reporting to the **Engineering **Manager 
 Design and implement scalable, reliable **backend **systems - from architecture through production deployment... ..., Benefits, & Perks 
-- Work from home with a **remote-**first community 
-- Unlimited PTO (and the...
+Work from home with a **remote-**first community 
+Unlimited PTO (and the...

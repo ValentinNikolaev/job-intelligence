@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: talent-acquisition-manager-berlin-212029
+source_url: https://www.arbeitnow.com/jobs/companies/buena/talent-acquisition-manager-berlin-212029
+title: Talent Acquisition Manager (m/w/d)
+company: Buena
+location: Berlin
+published_at: '2026-08-02T11:41:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T13:23:59Z'
+rejected_at: '2026-08-02T13:23:59Z'

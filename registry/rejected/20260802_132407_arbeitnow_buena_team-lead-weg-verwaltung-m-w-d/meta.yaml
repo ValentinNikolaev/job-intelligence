@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: team-lead-weg-verwaltung-berlin-193811
+source_url: https://www.arbeitnow.com/jobs/companies/buena/team-lead-weg-verwaltung-berlin-193811
+title: Team Lead WEG-Verwaltung (m/w/d)
+company: Buena
+location: Berlin
+published_at: '2026-08-02T11:41:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T13:24:07Z'
+rejected_at: '2026-08-02T13:24:07Z'

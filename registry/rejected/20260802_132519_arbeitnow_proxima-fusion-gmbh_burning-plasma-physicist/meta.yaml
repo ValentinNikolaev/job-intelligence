@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: burning-plasma-physicist-munich-57992
+source_url: https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/burning-plasma-physicist-munich-57992
+title: Burning Plasma Physicist
+company: Proxima Fusion GmbH
+location: Munich
+published_at: '2026-08-02T11:41:02Z'
+rejection_category: tech_stack
+rejection_reason: Python + Julia is not a target stack
+updated_at: '2026-08-02T13:25:19Z'
+rejected_at: '2026-08-02T13:25:19Z'

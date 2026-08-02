@@ -1,0 +1,27 @@
+schema_version: 2
+id: 97e9ce7e-77d1-41af-86e1-d8e2b4b06595
+title: Technical Sales Consultant - Italian Speaking (October 2026 Start Date)
+company: Formlabs
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: technical-sales-consultant-italian-speaking-october-2026-start-date-berlin-124781
+  url: https://www.arbeitnow.com/jobs/companies/formlabs/technical-sales-consultant-italian-speaking-october-2026-start-date-berlin-124781
+  metadata:
+    tags:
+    - Global Sales
+published_at: '2026-08-02T11:56:07Z'
+discovered_at: '2026-08-02T13:23:45Z'
+updated_at: '2026-08-02T13:23:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T13:23:45Z'
+analysis_priority: 0
+fingerprint: sha256:392bebb7faf1b9f5f01a9be20e47cbbe996bf2e3246c05e0b8e3d0447c5a9be2
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

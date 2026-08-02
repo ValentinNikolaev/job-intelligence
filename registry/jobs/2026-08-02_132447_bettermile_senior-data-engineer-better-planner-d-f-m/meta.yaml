@@ -1,0 +1,29 @@
+schema_version: 2
+id: 28ffa69a-14b3-4e3a-9c68-600841c2b058
+title: Senior Data Engineer - Better Planner (d/f/m)
+company: Bettermile
+company_url: null
+location: Better Place, Oranienstraße 183, Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-engineer-better-planner-berlin-205725
+  url: https://www.arbeitnow.com/jobs/companies/bettermile/senior-data-engineer-better-planner-berlin-205725
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full Time
+published_at: '2026-08-02T11:41:06Z'
+discovered_at: '2026-08-02T13:24:47Z'
+updated_at: '2026-08-02T13:24:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T13:24:47Z'
+analysis_priority: 0
+fingerprint: sha256:91079c0c5bdfb76c9fe21a806b7057c4e313a6ff917ebb0ca24bf0bcdbee68d9
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

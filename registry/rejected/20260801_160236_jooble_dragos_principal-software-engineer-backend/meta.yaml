@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-2217543272903819305'
-source_url: https://jooble.org/away/-2217543272903819305?p=1&pos=42&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=130&brelb=15&scr=230.50336&bscr=230.50336&aq=-3190000323527073967&elckey=-7669909358192987797
+source_url: https://jooble.org/away/-2217543272903819305?p=1&pos=39&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=151&brelb=15&scr=247.48123&bscr=247.48123&aq=-4695728404962482260&elckey=3050694733297367125
 title: Principal Software Engineer - Backend
 company: Dragos
 location: Remote
 published_at: '2026-07-27T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-01T16:07:46Z'
+updated_at: '2026-08-02T13:30:42Z'
 rejected_at: '2026-08-01T16:02:36Z'

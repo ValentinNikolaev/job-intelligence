@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: procurement-manager-advanced-manufacturing-munich-415416
+source_url: https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/procurement-manager-advanced-manufacturing-munich-415416
+title: Procurement Manager-Advanced Manufacturing
+company: Proxima Fusion GmbH
+location: Munich
+published_at: '2026-08-02T11:41:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T13:24:56Z'
+rejected_at: '2026-08-02T13:24:56Z'

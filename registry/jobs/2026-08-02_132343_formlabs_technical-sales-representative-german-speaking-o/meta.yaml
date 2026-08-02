@@ -1,0 +1,27 @@
+schema_version: 2
+id: 2fc3126c-d397-46c9-8718-aec3df12f924
+title: Technical Sales Representative - German Speaking (October 2026 Start Date)
+company: Formlabs
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: technical-sales-representative-german-speaking-october-2026-start-date-berlin-80624
+  url: https://www.arbeitnow.com/jobs/companies/formlabs/technical-sales-representative-german-speaking-october-2026-start-date-berlin-80624
+  metadata:
+    tags:
+    - Global Sales
+published_at: '2026-08-02T11:56:07Z'
+discovered_at: '2026-08-02T13:23:43Z'
+updated_at: '2026-08-02T13:23:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T13:23:43Z'
+analysis_priority: 0
+fingerprint: sha256:24530a55655acde5d3244253efddf48d596696b2a56653466649bd66399e0dbf
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

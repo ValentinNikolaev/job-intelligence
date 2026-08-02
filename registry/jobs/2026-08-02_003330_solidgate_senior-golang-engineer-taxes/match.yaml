@@ -1,0 +1,16 @@
+score: 82
+recommendation: strong_match
+summary: Strong senior Go match with fintech payments event-driven and scalable backend
+  experience.
+strengths:
+- Go fintech payments AWS
+gaps:
+- Tax domain
+concerns: []
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-02T13:26:51Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:6d75bc5613efde0776aa4fce088fa2083d54a2a52f48e98f57eb325f70aeb31f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,29 @@
+schema_version: 2
+id: fa9a21b4-21b3-4f68-a541-d1111e0641b4
+title: Project Manager - Site & Infrastructure Development
+company: Proxima Fusion GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: project-manager-site-infrastructure-development-munich-40963
+  url: https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/project-manager-site-infrastructure-development-munich-40963
+  metadata:
+    tags:
+    - Technical Operations / Manufacturing
+    job_types:
+    - Full Time
+published_at: '2026-08-02T11:41:02Z'
+discovered_at: '2026-08-02T13:25:10Z'
+updated_at: '2026-08-02T13:25:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T13:25:10Z'
+analysis_priority: 0
+fingerprint: sha256:5d1e1272936b812183af407f8b0d96b01a8a6cbd1d988af45351e925012c2bda
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

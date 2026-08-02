@@ -1,0 +1,16 @@
+score: 80
+recommendation: strong_match
+summary: Good team-lead match through Go backend and architecture; C++ is unverified.
+strengths:
+- Go leadership design
+gaps:
+- C++
+concerns:
+- C++ requirement
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-02T13:26:51Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:998333b35fd1ecffdedbb11406e149015664c9250abf826547bd609155c3f308
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

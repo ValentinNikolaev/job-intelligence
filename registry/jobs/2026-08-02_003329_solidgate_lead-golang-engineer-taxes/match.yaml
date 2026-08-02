@@ -1,0 +1,16 @@
+score: 86
+recommendation: strong_match
+summary: Excellent lead Go fit combining backend delivery leadership payments and
+  reliability.
+strengths:
+- Go leadership fintech
+gaps:
+- Tax knowledge
+concerns: []
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-02T13:26:51Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:99a6e10814aa36eebe079ac3fe1fe284a8fc4198e95dfb86e0faf117a27b0888
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

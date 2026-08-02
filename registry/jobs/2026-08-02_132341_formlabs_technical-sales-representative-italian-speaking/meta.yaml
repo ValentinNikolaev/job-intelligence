@@ -1,0 +1,27 @@
+schema_version: 2
+id: 1d8ed4b7-3c6e-4399-ab46-ffb54c937cc0
+title: Technical Sales Representative - Italian Speaking (October 2026 Start Date)
+company: Formlabs
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: technical-sales-representative-italian-speaking-october-2026-start-date-berlin-84824
+  url: https://www.arbeitnow.com/jobs/companies/formlabs/technical-sales-representative-italian-speaking-october-2026-start-date-berlin-84824
+  metadata:
+    tags:
+    - Global Sales
+published_at: '2026-08-02T11:56:07Z'
+discovered_at: '2026-08-02T13:23:41Z'
+updated_at: '2026-08-02T13:23:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T13:23:41Z'
+analysis_priority: 0
+fingerprint: sha256:258846390a5868e0279a4f00ce7a648b12a608f7ebdf71f0bf1f6950a7be2cae
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

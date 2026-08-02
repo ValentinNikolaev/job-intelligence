@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-ai-forward-deployed-engineer-emea-120218
+source_url: https://www.arbeitnow.com/jobs/companies/camunda/remote-ai-forward-deployed-engineer-emea-120218
+title: AI Forward Deployed Engineer, EMEA
+company: Camunda
+location: Remote
+published_at: '2026-08-02T11:41:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T13:24:19Z'
+rejected_at: '2026-08-02T13:24:19Z'

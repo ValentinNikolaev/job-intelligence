@@ -1,0 +1,29 @@
+schema_version: 2
+id: ce275774-3c94-4a37-be2d-0d838d636228
+title: Building Regulations & Permitting Specialist
+company: Proxima Fusion GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: building-regulations-permitting-specialist-munich-391019
+  url: https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/building-regulations-permitting-specialist-munich-391019
+  metadata:
+    tags:
+    - Technical Operations / Manufacturing
+    job_types:
+    - Full Time
+published_at: '2026-08-02T11:41:02Z'
+discovered_at: '2026-08-02T13:25:04Z'
+updated_at: '2026-08-02T13:25:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T13:25:04Z'
+analysis_priority: 0
+fingerprint: sha256:f9fd3eb91416e9d4616cab943fedd8616fea91178f0a5f8e59d20e8c3bea16dd
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: plasma-spectroscopy-diagnostician-munich-8650
+source_url: https://www.arbeitnow.com/jobs/companies/proxima-fusion-gmbh/plasma-spectroscopy-diagnostician-munich-8650
+title: Plasma Spectroscopy Diagnostician
+company: Proxima Fusion GmbH
+location: Munich
+published_at: '2026-08-02T11:41:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T13:25:06Z'
+rejected_at: '2026-08-02T13:25:06Z'
