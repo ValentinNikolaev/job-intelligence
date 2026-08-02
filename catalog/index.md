@@ -4,8 +4,8 @@
 
 Total vacancies: 706
 
-- Found: 273
-- Applied: 7
+- Found: 271
+- Applied: 9
 - Rejected: 424
 - Closed: 2
 

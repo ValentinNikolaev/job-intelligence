@@ -25,11 +25,13 @@ sources:
       microservices environment.'
 published_at: '2026-07-27'
 discovered_at: '2026-08-02T00:33:33Z'
-updated_at: '2026-08-02T15:28:00Z'
-status: found
+updated_at: '2026-08-02T16:06:18Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-02T00:33:33Z'
+- status: applied
+  changed_at: '2026-08-02T16:06:18Z'
 analysis_priority: 100
 fingerprint: sha256:bb186051013640c26c181da2fd57b5104fe8d5cf0a0ca773504f4f41e7bc3f63
 data_source: dou

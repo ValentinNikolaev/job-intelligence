@@ -25,11 +25,13 @@ sources:
       shaping the digital economy — with the financial infrastructure they deserve.'
 published_at: '2026-07-28'
 discovered_at: '2026-08-02T00:33:30Z'
-updated_at: '2026-08-02T00:33:30Z'
-status: found
+updated_at: '2026-08-02T16:06:18Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-02T00:33:30Z'
+- status: applied
+  changed_at: '2026-08-02T16:06:18Z'
 analysis_priority: 100
 fingerprint: sha256:4ecc46947a3510a5204440d8519948cb5d0612ba862241fb63df90c4fb33e8e6
 data_source: dou

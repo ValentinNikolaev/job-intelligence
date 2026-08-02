@@ -3283,8 +3283,8 @@ sources:
       errors: 0
       limit_reached: false
   himalayas:
-    total_requests: 727
-    last_run_at: '2026-08-02T15:29:16Z'
+    total_requests: 735
+    last_run_at: '2026-08-02T16:06:32Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -4345,6 +4345,17 @@ sources:
       limit_reached: true
     - run_started_at: '2026-08-02T15:23:52Z'
       recorded_at: '2026-08-02T15:29:16Z'
+      requests: 8
+      fetched: 100
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 8
+      rejected: 92
+      errors: 0
+      limit_reached: true
+    - run_started_at: '2026-08-02T16:00:58Z'
+      recorded_at: '2026-08-02T16:06:32Z'
       requests: 8
       fetched: 100
       created: 0
@@ -7571,8 +7582,8 @@ sources:
       errors: 0
       limit_reached: false
   greenhouse:
-    total_requests: 88
-    last_run_at: '2026-08-02T15:28:38Z'
+    total_requests: 89
+    last_run_at: '2026-08-02T16:05:46Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-25T05:43:58Z'
@@ -8543,9 +8554,20 @@ sources:
       rejected: 37
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-08-02T16:00:58Z'
+      recorded_at: '2026-08-02T16:05:46Z'
+      requests: 1
+      fetched: 37
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 37
+      errors: 0
+      limit_reached: false
   dou:
-    total_requests: 336
-    last_run_at: '2026-08-02T15:28:15Z'
+    total_requests: 378
+    last_run_at: '2026-08-02T16:05:22Z'
     last_status: completed
     runs:
     - run_started_at: '2026-08-02T00:31:41Z'
@@ -8627,6 +8649,17 @@ sources:
       limit_reached: false
     - run_started_at: '2026-08-02T15:23:52Z'
       recorded_at: '2026-08-02T15:28:15Z'
+      requests: 42
+      fetched: 39
+      created: 0
+      updated: 1
+      duplicates_merged: 0
+      unchanged: 23
+      rejected: 15
+      errors: 0
+      limit_reached: false
+    - run_started_at: '2026-08-02T16:00:58Z'
+      recorded_at: '2026-08-02T16:05:22Z'
       requests: 42
       fetched: 39
       created: 0

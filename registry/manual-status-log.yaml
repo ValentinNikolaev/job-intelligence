@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 12
+  total_events: 14
   by_status:
     applied:
-      count: 7
-      last_changed_at: '2026-08-02T15:35:06Z'
+      count: 9
+      last_changed_at: '2026-08-02T16:06:18Z'
     rejected:
       count: 5
       last_changed_at: '2026-08-01T19:54:58Z'
@@ -38,6 +38,16 @@ summary:
       count: 1
       reason: SparkFabrik requires strong Italian language level for informal communication
       last_changed_at: '2026-08-01T16:20:42Z'
+    user-confirmed-all-jobs-were-applied-after-compl:
+      count: 1
+      reason: User confirmed all jobs were applied after completing the Solidgate
+        application form.
+      last_changed_at: '2026-08-02T16:06:18Z'
+    user-confirmed-all-jobs-were-applied-after-sendi:
+      count: 1
+      reason: User confirmed all jobs were applied after sending the Zfort application
+        message.
+      last_changed_at: '2026-08-02T16:06:18Z'
     user-confirmed-application-submitted-to-zartis:
       count: 1
       reason: User confirmed application submitted to Zartis
@@ -236,3 +246,31 @@ events:
     source: llm_assisted_manual
   note: Prepared package and recorded applied status in registry only; Teamtailor
     application was not submitted.
+- changed_at: '2026-08-02T16:06:18Z'
+  vacancy_id: 5e6e50a7-4297-42d4-80bd-dccc46b23451
+  directory: 2026-08-02_003330_solidgate_senior-golang-engineer-taxes
+  company: Solidgate
+  title: Senior Golang Engineer (Taxes)
+  from_status: found
+  to_status: applied
+  reason: User confirmed all jobs were applied after completing the Solidgate application
+    form.
+  reason_key: user-confirmed-all-jobs-were-applied-after-compl
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User stated all jobs applied; marking Solidgate applied.
+- changed_at: '2026-08-02T16:06:18Z'
+  vacancy_id: ea0a32ea-8b49-4992-830c-3113b6f7b1e4
+  directory: 2026-08-02_003333_zfort-group_backend-golang-developer
+  company: ZFORT Group
+  title: Backend/Golang Developer
+  from_status: found
+  to_status: applied
+  reason: User confirmed all jobs were applied after sending the Zfort application
+    message.
+  reason_key: user-confirmed-all-jobs-were-applied-after-sendi
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User stated all jobs applied; marking Zfort applied.
