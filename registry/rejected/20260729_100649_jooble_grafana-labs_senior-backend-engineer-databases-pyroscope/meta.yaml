@@ -1,7 +1,7 @@
 schema_version: 1
 source: jooble
 source_job_id: '8702141661930224957'
-source_url: https://jooble.org/desc/8702141661930224957?ckey=remote+golang+backend+engineer&rgn=55180&pos=38&groupId=1106121903&elckey=-3081924891275812379&p=1&aq=-1907186588551113231&cid=15922&jobAge=275&brelb=100&bscr=240.85336&scr=240.85336
+source_url: https://jooble.org/desc/8702141661930224957?ckey=remote+senior+backend+engineer&rgn=55180&pos=38&groupId=2134052230&elckey=-608807086654587502&p=1&aq=-4253601010900993793&cid=15922&jobAge=276&brelb=100&bscr=868.45807&scr=868.45807
 title: Senior Backend Engineer - Databases Pyroscope
 company: Grafana Labs
 location: Remote
@@ -9,5 +9,5 @@ published_at: '2026-07-22T14:49:50.1730000'
 rejection_category: company_retry_block
 rejection_reason: 'Grafana is blocked until 2027-02-01: CV rejected; retry allowed
   from February 2027.'
-updated_at: '2026-08-02T17:09:54Z'
+updated_at: '2026-08-02T18:08:05Z'
 rejected_at: '2026-07-29T10:06:49Z'
