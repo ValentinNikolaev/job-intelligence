@@ -2,10 +2,10 @@
 
 # Vacancy Catalog
 
-Total vacancies: 668
+Total vacancies: 669
 
 - Found: 238
-- Applied: 4
+- Applied: 5
 - Rejected: 424
 - Closed: 2
 
@@ -18,6 +18,7 @@ Total vacancies: 668
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-02 | [N-iX](../registry/jobs/2026-08-02_141848_n-ix_php-senior/) | [PHP Senior](../registry/jobs/2026-08-02_141848_n-ix_php-senior/job.md) | Malta | Manual | Applied | 2026-08-02 | [Manual](https://careers.n-ix.com/jobs/4507224101-php-senior/) | [Open](../registry/jobs/2026-08-02_141848_n-ix_php-senior/company.md) | [MD](../registry/jobs/2026-08-02_141848_n-ix_php-senior/application/cv.md) / [DOCX](../registry/jobs/2026-08-02_141848_n-ix_php-senior/application/cv.docx) | [MD](../registry/jobs/2026-08-02_141848_n-ix_php-senior/application/cover-letter.md) / [DOCX](../registry/jobs/2026-08-02_141848_n-ix_php-senior/application/cover-letter.docx) | [Open](../registry/jobs/2026-08-02_141848_n-ix_php-senior/application/analysis.md) | [Open](../registry/jobs/2026-08-02_141848_n-ix_php-senior/application/interview-preparation.md) |
 | 2026-08-02 | [n8n](../registry/jobs/2026-08-02_140349_n8n_senior-partnerships-manager-si-dach/) | [Senior Partnerships Manager SI, DACH](../registry/jobs/2026-08-02_140349_n8n_senior-partnerships-manager-si-dach/job.md) | Berlin Office | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/n8n/senior-partnerships-manager-si-dach-berlin-437526) | — | — | — | — | — |
 | 2026-08-02 | [n8n](../registry/jobs/2026-08-02_140340_n8n_senior-partnerships-manager-si-southern-europe/) | [Senior Partnerships Manager SI, Southern Europe](../registry/jobs/2026-08-02_140340_n8n_senior-partnerships-manager-si-southern-europe/job.md) | Berlin Office | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/n8n/senior-partnerships-manager-si-southern-europe-berlin-333370) | — | — | — | — | — |
 | 2026-08-02 | [Jupus](../registry/jobs/2026-08-02_140234_jupus_ai-lead/) | [AI Lead](../registry/jobs/2026-08-02_140234_jupus_ai-lead/job.md) | Germany | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/jupus/ai-lead-germany-283574) | — | — | — | — | — |
@@ -37,4 +38,3 @@ Total vacancies: 668
 | 2026-08-02 | [Applike Group](../registry/jobs/2026-08-02_132602_applike-group_senior-tech-ta-manager-f-m-d/) | [Senior Tech TA Manager (f/m/d)](../registry/jobs/2026-08-02_132602_applike-group_senior-tech-ta-manager-f-m-d/job.md) | Hamburg | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/applike-group/senior-tech-ta-manager-hamburg-361534) | — | — | — | — | — |
 | 2026-08-02 | [Applike Group](../registry/jobs/2026-08-02_132559_applike-group_finance-operations-specialist-f-m-d/) | [Finance Operations Specialist (f/m/d)](../registry/jobs/2026-08-02_132559_applike-group_finance-operations-specialist-f-m-d/job.md) | Hamburg | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/applike-group/finance-operations-specialist-hamburg-367946) | — | — | — | — | — |
 | 2026-08-02 | [Applike Group](../registry/jobs/2026-08-02_132558_applike-group_intern-talent-acquisition-operations-f-m-d/) | [Intern - Talent Acquisition Operations (f/m/d)](../registry/jobs/2026-08-02_132558_applike-group_intern-talent-acquisition-operations-f-m-d/job.md) | Hamburg | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/applike-group/intern-talent-acquisition-operations-hamburg-302100) | — | — | — | — | — |
-| 2026-08-02 | [Applike Group](../registry/jobs/2026-08-02_132557_applike-group_intern-talent-intelligence-f-m-d/) | [Intern - Talent Intelligence (f/m/d)](../registry/jobs/2026-08-02_132557_applike-group_intern-talent-intelligence-f-m-d/job.md) | Hamburg | Arbeitnow | Found | 2026-08-02 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/applike-group/intern-talent-intelligence-hamburg-456075) | — | — | — | — | — |

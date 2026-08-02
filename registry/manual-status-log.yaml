@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 9
+  total_events: 10
   by_status:
     applied:
-      count: 4
-      last_changed_at: '2026-08-01T20:27:52Z'
+      count: 5
+      last_changed_at: '2026-08-02T14:22:03Z'
     rejected:
       count: 5
       last_changed_at: '2026-08-01T19:54:58Z'
@@ -52,6 +52,11 @@ summary:
       reason: User requested marking Jagaad Senior PHP Backend Developer as applied
         after preparing CV and cover letter.
       last_changed_at: '2026-08-01T19:27:25Z'
+    user-requested-marking-the-n-ix-php-senior-vacan:
+      count: 1
+      reason: User requested marking the N-iX PHP Senior vacancy as applied after
+        generating the application package.
+      last_changed_at: '2026-08-02T14:22:03Z'
 events:
 - changed_at: '2026-07-31T20:02:31Z'
   vacancy_id: 0e2632ce-88f0-470f-8792-4adfc5586e46
@@ -178,3 +183,17 @@ events:
   actor: codex
   interaction:
     source: llm_assisted_manual
+- changed_at: '2026-08-02T14:22:03Z'
+  vacancy_id: 989507fe-2633-4fe0-b131-f7ed85f3d5ab
+  directory: 2026-08-02_141848_n-ix_php-senior
+  company: N-iX
+  title: PHP Senior
+  from_status: found
+  to_status: applied
+  reason: User requested marking the N-iX PHP Senior vacancy as applied after generating
+    the application package.
+  reason_key: user-requested-marking-the-n-ix-php-senior-vacan
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Application artifacts generated and vacancy marked applied by Codex task.
