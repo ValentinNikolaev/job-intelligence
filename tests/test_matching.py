@@ -124,6 +124,32 @@ class MatchingTests(unittest.TestCase):
 
         self.assertEqual(3, len(client.calls))
 
+    def test_cloudflare_email_hash_and_updated_at_do_not_stale_analysis(self) -> None:
+        (self.directory / "job.md").write_text(
+            "Build Go services.\n\n"
+            "Apply at [[email protected](/cdn-cgi/l/email-protection#abc123)]\n",
+            encoding="utf-8",
+        )
+        client = FakeClient()
+        analyzer = MatchAnalyzer(self.registry_root, [self.profile], client, clock=lambda: self.now)
+        analyzer.analyze_directory(self.directory)
+
+        meta_path = self.directory / "meta.yaml"
+        meta = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+        meta["updated_at"] = "2026-07-22T21:00:00Z"
+        meta_path.write_text(yaml.safe_dump(meta, allow_unicode=True, sort_keys=False), encoding="utf-8")
+        (self.directory / "job.md").write_text(
+            "Build Go services.\n\n"
+            "Apply at [[email protected](/cdn-cgi/l/email-protection#def456)]\n",
+            encoding="utf-8",
+        )
+
+        second = analyzer.analyze_directory(self.directory)
+
+        self.assertEqual("skipped", second.status)
+        self.assertEqual(1, len(client.calls))
+        self.assertTrue(analyzer.is_current(self.directory))
+
     def test_invalid_model_result_is_not_saved(self) -> None:
         invalid = match_payload()
         invalid["score"] = 101

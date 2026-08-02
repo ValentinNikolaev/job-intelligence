@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 import uuid
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
@@ -91,6 +92,10 @@ _RELEVANT_SOURCE_METADATA = {
     "timezone_restrictions",
     "workplace_type",
 }
+
+_CLOUDFLARE_EMAIL_PROTECTION_RE = re.compile(
+    r"(/cdn-cgi/l/email-protection#)[0-9A-Fa-f]+"
+)
 
 
 class MatchError(RuntimeError):
@@ -491,7 +496,12 @@ def _compact_vacancy(meta: Mapping[str, Any], job_text: str) -> dict[str, Any]:
         sources.append(compact)
     if sources:
         metadata["sources"] = sources
-    return {"metadata": metadata, "job_description": job_text.strip()}
+    return {"metadata": metadata, "job_description": _stable_job_text(job_text)}
+
+
+def _stable_job_text(job_text: str) -> str:
+    text = _CLOUDFLARE_EMAIL_PROTECTION_RE.sub(r"\1<protected>", job_text)
+    return text.strip()
 
 
 def _priority_sorted_directories(directories: Sequence[Path]) -> list[Path]:
