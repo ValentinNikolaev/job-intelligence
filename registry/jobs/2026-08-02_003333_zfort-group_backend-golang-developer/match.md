@@ -3,19 +3,19 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent backend Golang fit with recent Go ownership event-driven services AWS Kubernetes APIs and leadership.
+Excellent match for a backend Go role given recent Go ownership, AWS-oriented systems, integrations, queues, and production reliability.
 
 ## Why it matches
 
-- Recent Go
-- AWS and Kubernetes
-- event-driven systems
-- remote fit
+- Go
+- backend systems
+- REST APIs
+- event-driven architecture
+- queues
+- AWS
+- monitoring
+- production support
 
 ## Gaps
 
-- Product domain and framework requirements unknown
-
-## Concerns
-
-- On-call expectations unspecified
+- role-specific product details
