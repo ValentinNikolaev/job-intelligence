@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: bremen-dein-teilzeitjob-im-tourismus-155976
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/bremen-dein-teilzeitjob-im-tourismus-155976
+title: BREMEN - Dein Teilzeitjob im Tourismus (m/w/d)
+company: Roadsurfer
+location: Bremen
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:04:39Z'
+rejected_at: '2026-08-02T19:04:39Z'

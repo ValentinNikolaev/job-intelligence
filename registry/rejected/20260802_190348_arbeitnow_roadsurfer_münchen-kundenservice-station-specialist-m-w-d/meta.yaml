@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: munchen-kundenservice-station-specialist-munich-274197
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/munchen-kundenservice-station-specialist-munich-274197
+title: München - Kundenservice / Station Specialist (m/w/d)
+company: Roadsurfer
+location: Munich
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:03:48Z'
+rejected_at: '2026-08-02T19:03:48Z'

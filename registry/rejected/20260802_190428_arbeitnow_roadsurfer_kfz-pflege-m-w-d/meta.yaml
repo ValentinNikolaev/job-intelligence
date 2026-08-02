@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: kfz-pflege-dormagen-466678
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/kfz-pflege-dormagen-466678
+title: KFZ Pflege (m/w/d)
+company: Roadsurfer
+location: Köln-Düsseldorf
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:04:28Z'
+rejected_at: '2026-08-02T19:04:28Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-pflege-digitalisierung-berlin-166523
+source_url: https://www.arbeitnow.com/jobs/companies/voize/werkstudentin-pflege-digitalisierung-berlin-166523
+title: Werkstudent:in – Pflege & Digitalisierung (m/w/d)
+company: Voize
+location: Berlin
+published_at: '2026-08-02T18:01:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:03:00Z'
+rejected_at: '2026-08-02T19:03:00Z'

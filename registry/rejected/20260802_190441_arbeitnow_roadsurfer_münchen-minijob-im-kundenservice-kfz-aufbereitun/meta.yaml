@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: munchen-minijob-im-kundenservice-kfz-aufbereitung-munich-87992
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/munchen-minijob-im-kundenservice-kfz-aufbereitung-munich-87992
+title: MÜNCHEN - Minijob im Kundenservice & KFZ-Aufbereitung
+company: Roadsurfer
+location: Munich
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:04:41Z'
+rejected_at: '2026-08-02T19:04:41Z'

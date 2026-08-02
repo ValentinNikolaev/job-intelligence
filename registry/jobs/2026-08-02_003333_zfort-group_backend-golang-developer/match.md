@@ -3,21 +3,16 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent fit for a Go backend role centered on scalable microservices, APIs, reliability, and real-time systems.
+Strong match based on the candidate's documented backend and platform experience, with role-specific gaps noted.
 
 ## Why it matches
 
-- Go
-- microservices
-- REST APIs
-- event-driven systems
-- production operations
-- testing and architecture
+- Go backend, microservices, AWS, event-driven systems, APIs, reliability, and senior ownership.
 
 ## Gaps
 
-- gRPC is not explicitly listed in the profile.
+- Specific gRPC or cross-selling-domain experience is not directly evidenced.
 
 ## Concerns
 
-- Remote and the senior backend scope align well with demonstrated experience.
+- Confirm exact on-call and product-domain expectations.

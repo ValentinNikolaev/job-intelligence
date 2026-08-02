@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: aushilfe-campervermietung-dormagen-183154
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/aushilfe-campervermietung-dormagen-183154
+title: Aushilfe Campervermietung (m/w/d)
+company: Roadsurfer
+location: Köln-Düsseldorf
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:04:18Z'
+rejected_at: '2026-08-02T19:04:18Z'

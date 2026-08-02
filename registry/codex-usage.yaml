@@ -870,3 +870,14 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: Scheduled batch analysis; exact Codex usage unavailable
+- run_id: b5a96074e7b14727a60db0d3a961d06b
+  recorded_at: '2026-08-02T19:45:07Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Batch analysis; exact Codex usage unavailable in current surface

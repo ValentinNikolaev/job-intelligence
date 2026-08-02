@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: hannover-dein-teilzeitjob-in-der-campervermietung-313120
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/hannover-dein-teilzeitjob-in-der-campervermietung-313120
+title: HANNOVER - Dein Teilzeitjob in der Campervermietung (m/w/d)
+company: Roadsurfer
+location: Hannover
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:05:23Z'
+rejected_at: '2026-08-02T19:05:23Z'

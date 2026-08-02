@@ -38,6 +38,14 @@ from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
 from .triage import should_skip_model, write_triage
 from .usage import CodexUsageLog
+from .workflow_lock import (
+    LOCK_ENV_TOKEN,
+    WorkflowLockError,
+    acquire_workflow_lock,
+    release_workflow_lock,
+    workflow_lock,
+    workflow_lock_status,
+)
 
 
 def _configure_stdio() -> None:
@@ -50,7 +58,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'workflow-lock', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -93,6 +101,17 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     parser.add_argument(
+        "--lock-timeout-seconds",
+        type=float,
+        default=0,
+        help="seconds to wait for the collection/analysis workflow lock; default: fail fast",
+    )
+    parser.add_argument(
+        "--lock-token-file",
+        type=Path,
+        help="workflow-lock only: file used to persist or read a lock token",
+    )
+    parser.add_argument(
         "--ci",
         action="store_true",
         help="doctor only: skip host-local Codex runtime checks unavailable on CI runners",
@@ -109,6 +128,8 @@ def main(argv: list[str] | None = None) -> int:
     env_path = (args.env or sources_dir / ".env").resolve()
 
     target = args.target.casefold()
+    if target == "workflow-lock":
+        return _run_workflow_lock(args, project_root)
     if args.ci and target != "doctor":
         print("--ci is only valid with doctor", file=sys.stderr)
         return 2
@@ -190,15 +211,16 @@ def main(argv: list[str] | None = None) -> int:
             print("Usage: python run.py triage", file=sys.stderr)
             return 2
         try:
-            directories = resolve_job_directories(registry_dir, "all")
-            counts = {"high": 0, "medium": 0, "low": 0, "skip_model": 0}
-            for directory in directories:
-                result = write_triage(directory)
-                counts[str(result["confidence"])] += 1
-                counts["skip_model"] += int(bool(result["skip_model"]))
+            with workflow_lock(project_root, "triage", timeout_seconds=args.lock_timeout_seconds):
+                directories = resolve_job_directories(registry_dir, "all")
+                counts = {"high": 0, "medium": 0, "low": 0, "skip_model": 0}
+                for directory in directories:
+                    result = write_triage(directory)
+                    counts[str(result["confidence"])] += 1
+                    counts["skip_model"] += int(bool(result["skip_model"]))
             print(json.dumps({"triaged": len(directories), **counts}, indent=2, sort_keys=True))
             return 0
-        except Exception as exc:
+        except (Exception, WorkflowLockError) as exc:
             print(f"Triage error: {exc}", file=sys.stderr)
             return 1
 
@@ -331,28 +353,28 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Unknown collector '{args.target}'. Available: {available}", file=sys.stderr)
         return 2
 
-    failed = False
-    for name, collector in selected:
-        summary = _run_collector(
-            name,
-            collector,
-            registry,
-            rejected_registry,
-            limit=collection_limit,
-            company_retry_rules=company_retry_rules,
-        )
-        _print_summary(summary)
-        try:
-            api_usage.record(summary, run_started_at=run_started_at)
-        except Exception as exc:
-            failed = True
-            print(f"API usage log error: {exc}", file=sys.stderr)
-        failed = failed or summary.errors > 0
-
     try:
+        with workflow_lock(project_root, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
+            failed = False
+            for name, collector in selected:
+                summary = _run_collector(
+                    name,
+                    collector,
+                    registry,
+                    rejected_registry,
+                    limit=collection_limit,
+                    company_retry_rules=company_retry_rules,
+                )
+                _print_summary(summary)
+                try:
+                    api_usage.record(summary, run_started_at=run_started_at)
+                except Exception as exc:
+                    failed = True
+                    print(f"API usage log error: {exc}", file=sys.stderr)
+                failed = failed or summary.errors > 0
         registry.regenerate_index()
-    except Exception as exc:
-        print(f"Index error: {exc}", file=sys.stderr)
+    except (Exception, WorkflowLockError) as exc:
+        print(f"Collection error: {exc}", file=sys.stderr)
         return 1
     return 1 if failed else 0
 
@@ -710,19 +732,20 @@ def _run_analysis_batch(
         print("Usage: python run.py analyze-batch --input <batch.yaml> --workflow analyze", file=sys.stderr)
         return 2
     try:
-        _, model_label = _selected_workflow(args.workflow, project_root, {"analyze"})
-        pack = load_analysis_pack(args.input)
-        results = pack.get("results")
-        if not isinstance(results, dict):
-            raise ValueError("batch input must contain a results mapping keyed by directory")
-        profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
-        analyzer = MatchAnalyzer(
-            registry_dir,
-            profile_paths,
-            CodexMatchDraftClient(project_root / ".codex-work" / "unused-match.yaml", model=model_label),
-        )
-        summary = publish_analysis_batch(pack, results, analyzer)
-        Registry(registry_dir).regenerate_index()
+        with workflow_lock(project_root, "analysis:batch-publish", timeout_seconds=args.lock_timeout_seconds):
+            _, model_label = _selected_workflow(args.workflow, project_root, {"analyze"})
+            pack = load_analysis_pack(args.input)
+            results = pack.get("results")
+            if not isinstance(results, dict):
+                raise ValueError("batch input must contain a results mapping keyed by directory")
+            profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+            analyzer = MatchAnalyzer(
+                registry_dir,
+                profile_paths,
+                CodexMatchDraftClient(project_root / ".codex-work" / "unused-match.yaml", model=model_label),
+            )
+            summary = publish_analysis_batch(pack, results, analyzer)
+            Registry(registry_dir).regenerate_index()
     except Exception as exc:
         print(f"Batch analysis failed: {exc}", file=sys.stderr)
         return 1
@@ -881,13 +904,14 @@ def _run_pending(
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         if stage == "analyze" and args.pack:
-            pack = build_analysis_pack(
-                registry_dir,
-                profile_paths,
-                limit=args.limit,
-                triage_skip=should_skip_model,
-            )
-            dump_analysis_pack(pack, args.pack.resolve())
+            with workflow_lock(project_root, "analysis:pack", timeout_seconds=args.lock_timeout_seconds):
+                pack = build_analysis_pack(
+                    registry_dir,
+                    profile_paths,
+                    limit=args.limit,
+                    triage_skip=should_skip_model,
+                )
+                dump_analysis_pack(pack, args.pack.resolve())
             print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
             return 0
         if args.pack:

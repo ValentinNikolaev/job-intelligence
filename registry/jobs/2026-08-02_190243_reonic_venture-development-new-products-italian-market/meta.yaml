@@ -1,0 +1,29 @@
+schema_version: 2
+id: 0392b085-5a98-4fb2-84aa-5eb740c86843
+title: Venture Development - New Products - Italian Market (Greentech) (m/f/d)
+company: Reonic
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: venture-development-new-products-italian-market-greentech-berlin-111948
+  url: https://www.arbeitnow.com/jobs/companies/reonic/venture-development-new-products-italian-market-greentech-berlin-111948
+  metadata:
+    tags:
+    - Operations
+    job_types:
+    - Full Time
+published_at: '2026-08-02T18:01:15Z'
+discovered_at: '2026-08-02T19:02:43Z'
+updated_at: '2026-08-02T19:02:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T19:02:43Z'
+analysis_priority: 0
+fingerprint: sha256:77eba82a7a6f5d80dec941929ca84bd1435a52481ce1394e7006245a6ecc81ad
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

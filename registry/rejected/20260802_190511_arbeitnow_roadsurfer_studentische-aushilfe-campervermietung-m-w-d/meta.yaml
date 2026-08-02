@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: studentische-aushilfe-campervermietung-erftstadt-285160
+source_url: https://www.arbeitnow.com/jobs/companies/roadsurfer/studentische-aushilfe-campervermietung-erftstadt-285160
+title: Studentische Aushilfe - Campervermietung (m/w/d)
+company: Roadsurfer
+location: Köln-Bonn
+published_at: '2026-08-02T18:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T19:05:11Z'
+rejected_at: '2026-08-02T19:05:11Z'
