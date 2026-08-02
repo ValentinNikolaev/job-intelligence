@@ -111,4 +111,4 @@ The Application Engineer will also partner closely with Sales Engineers, Account
 
 ### **Reports To: Director of Technical Delivery**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

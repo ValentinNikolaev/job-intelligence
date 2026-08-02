@@ -132,4 +132,4 @@ Does this job sound like you? If yes, we'd love for you to be part of our team! 
 
 When you apply, please tell us the pronouns you use and any adjustments you may need during the interview process. We encourage people from underrepresented groups to apply.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

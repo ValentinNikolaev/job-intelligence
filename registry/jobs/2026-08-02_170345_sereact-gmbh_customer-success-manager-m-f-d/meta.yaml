@@ -1,0 +1,29 @@
+schema_version: 2
+id: 9c2c1a5b-8dca-4b81-8af4-df09ea0d7ec0
+title: Customer Success Manager (m/f/d)
+company: Sereact GmbH
+company_url: null
+location: Stuttgart Schockenriedstr. 17
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: customer-success-manager-stuttgart-458016
+  url: https://www.arbeitnow.com/jobs/companies/sereact-gmbh/customer-success-manager-stuttgart-458016
+  metadata:
+    tags:
+    - G2M
+    job_types:
+    - Full Time
+published_at: '2026-08-02T15:00:39Z'
+discovered_at: '2026-08-02T17:03:45Z'
+updated_at: '2026-08-02T17:03:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T17:03:45Z'
+analysis_priority: 0
+fingerprint: sha256:f4eccd9d1a5c3414129dabd63c057a5bd8b846f2b11e8451b8e6f6e2d1c81e52
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-account-executive-commercial-401301
+source_url: https://www.arbeitnow.com/jobs/companies/illumio/remote-account-executive-commercial-401301
+title: Account Executive, Commercial
+company: Illumio
+location: Germany
+published_at: '2026-08-02T15:00:36Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T17:04:18Z'
+rejected_at: '2026-08-02T17:04:18Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: hr-manager-berlin-11246
+source_url: https://www.arbeitnow.com/jobs/companies/buena/hr-manager-berlin-11246
+title: HR Manager (m/w/d)
+company: Buena
+location: Berlin
+published_at: '2026-08-02T15:00:57Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T17:03:18Z'
+rejected_at: '2026-08-02T17:03:18Z'

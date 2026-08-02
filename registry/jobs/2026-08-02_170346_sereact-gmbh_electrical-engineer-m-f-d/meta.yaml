@@ -1,0 +1,29 @@
+schema_version: 2
+id: c49d11ae-c408-4857-9fff-9873745e16c9
+title: Electrical Engineer (m/f/d)
+company: Sereact GmbH
+company_url: null
+location: Stuttgart Schockenriedstr. 17
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: electrical-engineer-stuttgart-295884
+  url: https://www.arbeitnow.com/jobs/companies/sereact-gmbh/electrical-engineer-stuttgart-295884
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full Time
+published_at: '2026-08-02T15:00:39Z'
+discovered_at: '2026-08-02T17:03:46Z'
+updated_at: '2026-08-02T17:03:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T17:03:46Z'
+analysis_priority: 0
+fingerprint: sha256:e8ca09fb7798f493eeb296b09f24dfe24ca3c354b838b67aea4408c21a108e0b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

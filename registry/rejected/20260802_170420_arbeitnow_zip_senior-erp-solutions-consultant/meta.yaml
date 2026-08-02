@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-erp-solutions-consultant-munich-341942
+source_url: https://www.arbeitnow.com/jobs/companies/zip/senior-erp-solutions-consultant-munich-341942
+title: Senior ERP Solutions Consultant
+company: Zip
+location: Germany
+published_at: '2026-08-02T15:00:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T17:04:20Z'
+rejected_at: '2026-08-02T17:04:20Z'

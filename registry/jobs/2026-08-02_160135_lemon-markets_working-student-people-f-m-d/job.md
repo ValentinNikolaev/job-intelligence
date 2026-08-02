@@ -78,4 +78,4 @@ As an equal opportunity employer, lemon.markets is committed to building an incl
 
 If you feel this role could be a great match for you even if you don’t tick every box, we’d still love to hear from you, please apply.
 
-You have any questions? Feel free to contact us via Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+You have any questions? Feel free to contact us via Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

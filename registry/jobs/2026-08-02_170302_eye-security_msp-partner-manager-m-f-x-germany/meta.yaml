@@ -1,0 +1,29 @@
+schema_version: 2
+id: fa116a02-ea43-45ac-9f73-c3782edee8b4
+title: MSP Partner Manager (m/f/x) - Germany
+company: Eye Security
+company_url: null
+location: Germany
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: msp-partner-manager-germany-berlin-81141
+  url: https://www.arbeitnow.com/jobs/companies/eye-security/msp-partner-manager-germany-berlin-81141
+  metadata:
+    tags:
+    - Business
+    job_types:
+    - Full Time
+published_at: '2026-08-02T15:01:05Z'
+discovered_at: '2026-08-02T17:03:02Z'
+updated_at: '2026-08-02T17:03:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T17:03:02Z'
+analysis_priority: 0
+fingerprint: sha256:8380ad291bf81c98ccd8fa7363d2ab21006534ca5c449a9123b921ae5e7750f7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

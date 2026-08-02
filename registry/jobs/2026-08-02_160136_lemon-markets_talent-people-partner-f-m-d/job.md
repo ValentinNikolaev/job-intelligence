@@ -113,4 +113,4 @@ We’re looking for someone who will be hands-on in the day-to-day while also im
 As an equal opportunity employer, lemon.markets is committed to building an inclusive workplace. The company welcomes people from all different backgrounds, including age, citizenship, ethnic and racial origins, gender identities, individuals with disabilities, marital status, religions and ideologies, and sexual orientations to apply.
 If you feel this role could be a great match for you even if you don’t tick every box, we’d still love to hear from you, please apply.
 
-You have any questions? Feel free to contact us via Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+You have any questions? Feel free to contact us via Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

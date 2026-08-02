@@ -1,0 +1,24 @@
+schema_version: 2
+id: 18550877-8162-4a6a-bfdb-775d84d2dc17
+title: Senior Backend Software Engineer
+company: Gympass
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-1650508491521085887'
+  url: https://jooble.org/desc/-1650508491521085887?ckey=remote+golang+backend+engineer&rgn=55180&pos=36&groupId=1106121903&elckey=-3081924891275812379&p=1&aq=-1907186588551113231&cid=15922&jobAge=48&brelb=100&bscr=250.46768&scr=250.46768
+published_at: '2026-07-31T10:54:40.6772012+00:00'
+discovered_at: '2026-08-02T17:09:53Z'
+updated_at: '2026-08-02T17:09:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T17:09:53Z'
+analysis_priority: 0
+fingerprint: sha256:44f621f1962f7e0a8089e7ae2eaaff31560e1278478bb2062b0d2059cb48e10a
+data_source: jooble
+content_source: jooble
+company_content_source: null

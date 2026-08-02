@@ -1,0 +1,29 @@
+schema_version: 2
+id: 75a4c265-fd4f-4d5c-b302-612d7de6806f
+title: Director Marketing (m/f/d)
+company: Sereact GmbH
+company_url: null
+location: Stuttgart Schockenriedstr. 17
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: director-marketing-stuttgart-32163
+  url: https://www.arbeitnow.com/jobs/companies/sereact-gmbh/director-marketing-stuttgart-32163
+  metadata:
+    tags:
+    - G2M
+    job_types:
+    - Full Time
+published_at: '2026-08-02T15:00:39Z'
+discovered_at: '2026-08-02T17:04:13Z'
+updated_at: '2026-08-02T17:04:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-02T17:04:13Z'
+analysis_priority: 0
+fingerprint: sha256:7394aeb36d47761d1937bb8894a4104ab2baa48d561102784496f298d86c8c54
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

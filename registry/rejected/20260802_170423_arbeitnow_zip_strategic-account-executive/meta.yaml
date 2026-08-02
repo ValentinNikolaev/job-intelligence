@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: strategic-account-executive-munich-328244
+source_url: https://www.arbeitnow.com/jobs/companies/zip/strategic-account-executive-munich-328244
+title: Strategic Account Executive
+company: Zip
+location: Germany
+published_at: '2026-08-02T15:00:15Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T17:04:23Z'
+rejected_at: '2026-08-02T17:04:23Z'
