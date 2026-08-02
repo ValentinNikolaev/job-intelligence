@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: job-intelligence-collection
+  group: job-intelligence-registry-mutation
   cancel-in-progress: false
 
 jobs:
@@ -67,9 +67,9 @@ jobs:
             fi
           }
 
-          run_and_report "Collect vacancies" soft python run.py all
+          run_and_report "Collect vacancies" soft python run.py all --lock-timeout-seconds 3600
           run_and_report "Regenerate registry index" hard python run.py reindex
-          run_and_report "Write deterministic triage" hard python run.py triage
+          run_and_report "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 3600
           run_and_report "Regenerate vacancy catalog" hard python run.py catalog
           run_and_report "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
           run_and_report "Run repository doctor" hard python run.py doctor --ci

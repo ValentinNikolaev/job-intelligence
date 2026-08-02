@@ -9,7 +9,14 @@ then inspect the current repo-derived queue data with
 when deciding which vacancies are pending.
 
 Read `AGENTS.md`, invoke `$job-intelligence-workflow` in analysis mode, and use a
-batch of up to 15 sealed pending vacancies when the batch contract is available:
+batch of up to 15 sealed pending vacancies when the batch contract is available.
+Acquire the shared collection/analysis lock before creating the pack, keep it for the
+whole batch run, and release it after publication or failure:
+`python run.py workflow-lock acquire analysis --lock-token-file .codex-work/workflow-lock-token.txt --lock-timeout-seconds 3600`.
+Set `JOBINTEL_WORKFLOW_LOCK_TOKEN` from that token file for every guarded command in
+the run, then release with
+`python run.py workflow-lock release --lock-token-file .codex-work/workflow-lock-token.txt`.
+While holding that token, create the pack with:
 `python run.py pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml`.
 Evaluate every record independently and write the same pack with a strict `results`
 mapping, then publish it with `python run.py analyze-batch --input

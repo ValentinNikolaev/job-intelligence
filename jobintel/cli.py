@@ -787,6 +787,74 @@ def _run_usage(args: argparse.Namespace, registry_dir: Path) -> int:
     return 0
 
 
+def _run_workflow_lock(args: argparse.Namespace, project_root: Path) -> int:
+    if not args.arguments or args.arguments[0] not in {"acquire", "release", "status"}:
+        print(
+            "Usage: python run.py workflow-lock <acquire owner|release|status> "
+            "[--lock-token-file <path>] [--lock-timeout-seconds <seconds>]",
+            file=sys.stderr,
+        )
+        return 2
+    command = args.arguments[0]
+    if command == "status":
+        if len(args.arguments) != 1:
+            print("Usage: python run.py workflow-lock status", file=sys.stderr)
+            return 2
+        print(json.dumps(workflow_lock_status(project_root), indent=2, sort_keys=True))
+        return 0
+    if command == "acquire":
+        if len(args.arguments) != 2:
+            print("Usage: python run.py workflow-lock acquire <owner>", file=sys.stderr)
+            return 2
+        try:
+            lease = acquire_workflow_lock(
+                project_root,
+                args.arguments[1],
+                timeout_seconds=args.lock_timeout_seconds,
+            )
+        except WorkflowLockError as exc:
+            print(f"Workflow lock error: {exc}", file=sys.stderr)
+            return 1
+        if args.lock_token_file:
+            args.lock_token_file.parent.mkdir(parents=True, exist_ok=True)
+            args.lock_token_file.write_text(lease.token + "\n", encoding="utf-8")
+        print(
+            json.dumps(
+                {
+                    "locked": True,
+                    "owner": lease.owner,
+                    "path": str(lease.path),
+                    "token_env": LOCK_ENV_TOKEN,
+                    "token_file": str(args.lock_token_file) if args.lock_token_file else None,
+                },
+                indent=2,
+                sort_keys=True,
+            )
+        )
+        return 0
+    if len(args.arguments) != 1:
+        print("Usage: python run.py workflow-lock release", file=sys.stderr)
+        return 2
+    token = os.environ.get(LOCK_ENV_TOKEN, "").strip()
+    if args.lock_token_file and args.lock_token_file.is_file():
+        token = args.lock_token_file.read_text(encoding="utf-8").strip()
+    if not token:
+        print(
+            f"Workflow lock error: missing lock token; set {LOCK_ENV_TOKEN} or pass --lock-token-file",
+            file=sys.stderr,
+        )
+        return 2
+    try:
+        release_workflow_lock(project_root, token)
+    except WorkflowLockError as exc:
+        print(f"Workflow lock error: {exc}", file=sys.stderr)
+        return 1
+    if args.lock_token_file and args.lock_token_file.exists():
+        args.lock_token_file.unlink()
+    print(json.dumps({"locked": False}, indent=2, sort_keys=True))
+    return 0
+
+
 def _profile_paths(
     cli_paths: list[Path] | None,
     config: dict[str, str],
