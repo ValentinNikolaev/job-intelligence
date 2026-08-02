@@ -59,4 +59,4 @@ For candidates who want broad ownership, strategic impact, and visibility across
 
 Verifone is committed to creating a diverse environment and is proud to be an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status. Verifone is also committed to compliance with all fair employment practices regarding citizenship and immigration status.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

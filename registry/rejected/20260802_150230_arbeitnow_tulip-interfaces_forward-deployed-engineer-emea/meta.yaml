@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: forward-deployed-engineer-emea-munich-443927
+source_url: https://www.arbeitnow.com/jobs/companies/tulip-interfaces/forward-deployed-engineer-emea-munich-443927
+title: Forward Deployed Engineer - EMEA
+company: Tulip Interfaces
+location: Munich, Bavaria, Germany
+published_at: '2026-08-02T13:45:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-02T15:02:30Z'
+rejected_at: '2026-08-02T15:02:30Z'
