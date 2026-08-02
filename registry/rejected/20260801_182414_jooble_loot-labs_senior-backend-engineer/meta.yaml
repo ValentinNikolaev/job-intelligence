@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '8256199845182156119'
-source_url: https://jooble.org/away/8256199845182156119?p=1&pos=28&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=129&brelb=15&scr=2769.925&bscr=2769.925&aq=-389544183049114606&elckey=2389419808332144799
+source_url: https://jooble.org/away/8256199845182156119?p=1&pos=31&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=132&brelb=15&scr=2601.7888&bscr=2601.7888&aq=-1737232113749287848&elckey=1681674762062146604
 title: Senior Backend Engineer
 company: Loot Labs
 location: Remote
 published_at: '2026-07-28T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-02T15:31:12Z'
+updated_at: '2026-08-02T18:28:07Z'
 rejected_at: '2026-08-01T18:24:14Z'
