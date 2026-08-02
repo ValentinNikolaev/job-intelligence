@@ -47,4 +47,4 @@ If you read this and think this is for you, please apply no matter who you are o
 
 [Marius](https://www.linkedin.com/in/salutitismarius/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

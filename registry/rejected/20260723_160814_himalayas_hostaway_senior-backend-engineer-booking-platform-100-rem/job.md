@@ -1,17 +1,17 @@
 # Senior Backend Engineer, Booking Platform - 100% Remote - EMEA
 
-Posted: 2026-05-27T10:39:44Z
+Posted: 2026-07-26T20:33:18Z
 
 ## Rejection
 
 - Category: stale
-- Reason: published_at 2026-05-27T10:39:44Z is older than 7 days
+- Reason: published_at 2026-07-26T20:33:18Z is older than 7 days
 
 **NOTE: This is a FULLY remote role, but the candidate must be within EMEA to collaborate with their team, peers, and internal customers. You do not have to be in the specific country or city shown in this listing, but please only apply if you are physically based within EMEA.**
 
 Trusted by 20,000+ property managers worldwide, [Hostaway](https://himalayas.app/companies/hostaway) is an industry leading, AI-powered vacation rental management platform designed for professional short-term rental operators. [Hostaway](https://himalayas.app/companies/hostaway) brings everything together for greater efficiency and faster growth.
 
-Profitable, high-growth, and the first short-term rental property management software unicorn 🦄. Join us at our most exciting stage yet! Learn more about our recent valuation and story [here](https://www.hostaway.com/blog/short-term-rental-software-unicorn/?placement=&keyword=hostaway&utm_campaign=gg_emea_dg_search_brand_exact&utm_source=google&utm_medium=paid_search&utm_content=brand_exact&utm_term=hostaway&hsa_acc=1558130764&hsa_cam=20285764070&hsa_grp=149795465945&hsa_ad=703390329010&hsa_src=g&hsa_tgt=kwd-323175560058&hsa_kw=hostaway&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAiA9bq6BhAKEiwAH6bqoFzIiBxWyYjgj1eHkWBbx21yE_0H832dTtEPhfNCYj-TMlL-GnknahoCGzkQAvD_BwE).
+Profitable, high-growth, and the first short-term rental property management software unicorn 🦄. Join us at our most exciting stage yet! Learn more about our recent valuation and story here.
 
 ### **About the role**
 
@@ -23,7 +23,7 @@ You'll work on services that need to be fast, reliable, and scalable. A big part
 
 -
 
-Design, build, and operate backend services in **PHP and Go** that power the guest portal and [direct sales site builder](https://www.hostaway.com/features/direct-booking/).
+Design, build, and operate backend services in **PHP and Go** that power the guest portal and direct sales site builder.
 
 -
 

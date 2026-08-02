@@ -75,4 +75,4 @@ Parloa is an e-verify employer in the USA. [Please click here to learn more](htt
 
 *** ****We provide equal opportunities to all qualified applicants regardless race, gender, sexual orientation, age, religion, national origin, disability status, socioeconomic background and other characteristics.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

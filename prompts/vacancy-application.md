@@ -12,9 +12,10 @@ vacancy-specific application package.
 - Never invent employment, responsibilities, technologies, achievements, metrics,
   education, certifications, leadership, domain experience, motivations, or personal
   connections.
-- Never mention the Zend PHP Certification or Zend Certified PHP Developer credential
-  in the generated CV, cover letter, application analysis, or interview preparation,
-  even when source candidate records include it.
+- Never mention the Zend PHP Certification, the Zend Certified PHP Developer
+  credential, or the exact phrase "Zend Certified PHP Developer" anywhere in the
+  generated CV, cover letter, application analysis, or interview preparation, even
+  when source candidate records include it.
 - In the generated CV `Experience` section, include only roles and employment
   experience from the most recent 10 years. Older experience may inform supported
   skills, chronology, or interview preparation only when relevant, but must not appear

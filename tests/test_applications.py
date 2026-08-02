@@ -21,6 +21,7 @@ from jobintel.applications import (
     _simple_life_cv_end_date,
     _publish_staged_package,
     resolve_job_directories,
+    validate_application_package,
 )
 from jobintel.cli import main
 from jobintel.matching import MatchAnalyzer
@@ -326,6 +327,13 @@ class ApplicationTests(unittest.TestCase):
             generator.generate_directory(self.directory)
 
         self.assertFalse((self.directory / "application").exists())
+
+    def test_forbidden_zend_certification_phrase_is_rejected(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] += "\n## Certifications\n\n- Zend Certified PHP Developer\n"
+
+        with self.assertRaisesRegex(ApplicationError, "forbidden phrase"):
+            validate_application_package(payload)
 
     def test_codex_draft_client_reads_markdown_without_network(self) -> None:
         draft = self.project / "application-draft"

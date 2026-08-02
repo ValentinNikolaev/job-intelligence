@@ -102,4 +102,4 @@ Free Germany Ticket and Urban Sports Club membership.
 
 30 days of vacation – plus your birthday off.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

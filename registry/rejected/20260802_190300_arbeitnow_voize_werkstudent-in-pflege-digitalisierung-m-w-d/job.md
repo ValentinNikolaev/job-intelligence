@@ -97,4 +97,4 @@ Compensation: €20 – €30 per hour • je nach Level, Erfahrung und Einsatz
 
 - • €20 – €30 per hour • je nach Level, Erfahrung und Einsatz
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,11 +1,11 @@
 # Senior Backend Software Engineer
 
-Posted: 2026-07-25T00:00:00.0000000
+Posted: 2026-08-02T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-25T00:00:00.0000000 is older than 7 days
+- Category: location_requirement
+- Reason: requires United States location
 
 ...SITE Technologies is seeking a thoughtful and versatile **Senior Backend **Software **Engineer **to help build and evolve SITE's platform and related customer... ..., and production reliability
 

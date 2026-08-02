@@ -116,6 +116,10 @@ _REQUIRED_HEADINGS = {
         "Questions to Ask",
     ),
 }
+_FORBIDDEN_APPLICATION_PHRASES = (
+    "Zend Certified PHP Developer",
+    "Zend PHP Certification",
+)
 
 
 class ApplicationError(RuntimeError):
@@ -433,6 +437,11 @@ def validate_application_package(value: Mapping[str, Any]) -> dict[str, str]:
             raise ApplicationError(
                 f"{field} is missing required headings: {', '.join(missing)}"
             )
+    for field, content in result.items():
+        folded = content.casefold()
+        for phrase in _FORBIDDEN_APPLICATION_PHRASES:
+            if phrase.casefold() in folded:
+                raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
     return result
 
 
