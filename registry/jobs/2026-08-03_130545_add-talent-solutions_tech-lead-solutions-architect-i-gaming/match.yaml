@@ -1,0 +1,24 @@
+score: 84
+recommendation: match
+summary: Strong architecture and technical leadership fit for distributed, high-volume
+  systems, with PHP, AWS, Kubernetes, queues, observability, and team leadership;
+  several platform-specific technologies are unverified.
+strengths:
+- Microservices, event-driven architecture, HA, fault tolerance, and scaling
+- PHP/Laravel, PostgreSQL/MySQL, Redis, RabbitMQ, Docker/Kubernetes, CI/CD, observability
+- Technical leadership, risk analysis, mentoring, and fintech/e-commerce-adjacent
+  systems
+gaps:
+- Camunda/Temporal, Kafka, MongoDB, VMware, Node/React/Next, and Spark/Hadoop are
+  not evidenced
+- Direct iGaming/regulatory experience is not shown
+concerns:
+- Breadth of required stack may imply a more platform-specific architect than the
+  profile supports
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-03T18:32:52Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:188eac7a3b306384c63af9a872136f625dbc2499aa9ee8fc99285e8597f61054
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

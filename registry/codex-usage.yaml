@@ -923,3 +923,13 @@ runs:
   credits: 0.0
   note: 'Estimated measurement: exact Codex usage unavailable; batch publication skipped
     all 15 unchanged vacancies.'
+- run_id: 1014c1c07c70432e89e4a4fcfc30dd7c
+  recorded_at: '2026-08-03T18:33:32Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0

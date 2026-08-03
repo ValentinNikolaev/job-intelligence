@@ -1,0 +1,21 @@
+score: 69
+recommendation: match
+summary: Relevant PHP, SQL, Linux, legacy, and performance background, but the role
+  specifically requires deep Oracle, ExtJS, Vue, and Windows Server experience not
+  shown.
+strengths:
+- PHP/OOP and maintainable backend architecture
+- SQL optimization, high-volume production systems, Linux, and legacy modernization
+- Some Vue.js exposure and strong general systems experience
+gaps:
+- Oracle Database and Oracle Linux are not evidenced; profile emphasizes MySQL/PostgreSQL
+- ExtJS 3.x, Windows Server, and PHP 8.4 specifics are not evidenced
+concerns:
+- Oracle and ExtJS appear core to the project and could be decisive gaps
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-03T18:32:52Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:67c793407c2ecb5f54319f18628e0f99a95f30974b09556dc475f3a817c104f1
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
