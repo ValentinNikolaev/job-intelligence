@@ -69,4 +69,4 @@ Im Rahmen deiner Werkstudententätigkeit erhältst du die Möglichkeit, Praxiser
 
 Die Projektron GmbH bietet zukunftsweisende, an Chancengleichheit orientierte Personalpolitik, die mit dem ***BestPersZertifikat***, dem ***BestPersAward,*** dem ***TOTAL-E-QUALITY-Prädikat*** dem Preis Unternehmen für Familie sowie von ***Great Place to Work*** ausgezeichnet ist. Wir setzen uns für Chancengleichheit im Beruf ein und ermuntern Frauen, sich zu bewerben.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

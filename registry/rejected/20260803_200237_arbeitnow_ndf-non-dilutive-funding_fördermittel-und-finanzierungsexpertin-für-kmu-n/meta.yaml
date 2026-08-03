@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: fordermittel-und-finanzierungsexpertin-fur-kmu-nachfolge-i-vollzeit-i-ab-01092026-berlin-436214
+source_url: https://www.arbeitnow.com/jobs/companies/ndf-non-dilutive-funding/fordermittel-und-finanzierungsexpertin-fur-kmu-nachfolge-i-vollzeit-i-ab-01092026-berlin-436214
+title: Fördermittel- und FinanzierungsexpertIn für KMU-Nachfolge I Vollzeit I ab 01.09.2026
+company: NDF - Non-Dilutive Funding
+location: Berlin
+published_at: '2026-08-03T18:30:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T21:41:26Z'
+rejected_at: '2026-08-03T20:02:37Z'

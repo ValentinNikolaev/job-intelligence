@@ -1,0 +1,27 @@
+schema_version: 2
+id: da163fe9-ea60-4a13-846d-876f600c98d2
+title: Senior IT Service Engineer
+company: celonis
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-it-service-engineer-munich-271484
+  url: https://www.arbeitnow.com/jobs/companies/celonis/senior-it-service-engineer-munich-271484
+  metadata:
+    tags:
+    - Corporate
+published_at: '2026-08-03T18:16:07Z'
+discovered_at: '2026-08-03T20:02:43Z'
+updated_at: '2026-08-03T21:41:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T20:02:43Z'
+analysis_priority: 0
+fingerprint: sha256:9795f9c8868f90988e7238d656b4c55d5a4dbe5cd1b60e45487d7b2acde1f0d8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

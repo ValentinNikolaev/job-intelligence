@@ -107,4 +107,4 @@ Warum wir?
 
 **Benefits**: Unsere Benefits zahlen auf dein Wohlergehen ein, was uns ein wichtiges Anliegen ist. Den Rahmen dafür bildet unsere Unternehmenskultur, die dich als Mensch in den Vordergrund stellt. Bei uns sollen Leistung, Gesundheit und Spaß an der Arbeit im Einklang sein.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

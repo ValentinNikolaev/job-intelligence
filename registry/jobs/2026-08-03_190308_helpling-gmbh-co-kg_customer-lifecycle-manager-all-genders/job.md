@@ -62,4 +62,4 @@ We would like to encourage you to apply even if you do not yet meet 100% of our 
 
 We welcome applicants from all backgrounds, regardless of gender identity, sexual orientation, religion, ethnicity, national origin, migration history, marital status, age, or disability.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

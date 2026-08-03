@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-administration-automation-manager-all-genders-munich-317300
+source_url: https://www.arbeitnow.com/jobs/companies/lio/it-administration-automation-manager-all-genders-munich-317300
+title: IT Administration & Automation Manager (all genders)
+company: Lio
+location: Munich Office
+published_at: '2026-08-03T18:00:34Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T21:42:39Z'
+rejected_at: '2026-08-03T20:04:17Z'

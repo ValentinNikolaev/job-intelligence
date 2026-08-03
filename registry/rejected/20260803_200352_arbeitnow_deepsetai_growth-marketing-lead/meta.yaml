@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: growth-marketing-lead-berlin-109318
+source_url: https://www.arbeitnow.com/jobs/companies/deepsetai/growth-marketing-lead-berlin-109318
+title: Growth Marketing Lead
+company: Deepsetai
+location: Berlin
+published_at: '2026-08-03T18:00:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T21:42:20Z'
+rejected_at: '2026-08-03T20:03:52Z'

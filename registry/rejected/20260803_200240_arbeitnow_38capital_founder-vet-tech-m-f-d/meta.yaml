@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: founder-vet-tech-munich-213355
+source_url: https://www.arbeitnow.com/jobs/companies/38capital/founder-vet-tech-munich-213355
+title: Founder - Vet Tech (m/f/d)
+company: 38Capital
+location: Munich
+published_at: '2026-08-03T18:30:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T21:41:28Z'
+rejected_at: '2026-08-03T20:02:40Z'

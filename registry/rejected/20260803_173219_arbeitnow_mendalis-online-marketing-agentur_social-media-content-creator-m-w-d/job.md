@@ -1,6 +1,6 @@
 # Social Media Content Creator (m/w/d)
 
-Posted: 2026-08-03T15:00:39Z
+Posted: 2026-08-03T19:29:03Z
 
 ## Rejection
 
@@ -39,7 +39,7 @@ Wir sind eine dynamische Online-Marketing-Agentur und helfen namhaften Marken da
 
 ## Benefits
 
-Wir bieten Dir eine herausfordernde und dynamische Arbeitsumgebung, in der Du Deine Fähigkeiten und Erfahrungen im Bereich Paid Media weiterentwickeln kannst.
+Wir bieten dir eine herausfordernde und dynamische Arbeitsumgebung, in der du deine Fähigkeiten und Erfahrungen im Bereich Social Media weiterentwickeln kannst.
 
 - Getränke, Obst & Gemüse für deine Gesundheit 😋
 

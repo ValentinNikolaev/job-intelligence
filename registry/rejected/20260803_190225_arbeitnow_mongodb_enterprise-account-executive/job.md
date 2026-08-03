@@ -83,4 +83,4 @@ MongoDB is an equal opportunities employer.
 
 *Req ID: 426297*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

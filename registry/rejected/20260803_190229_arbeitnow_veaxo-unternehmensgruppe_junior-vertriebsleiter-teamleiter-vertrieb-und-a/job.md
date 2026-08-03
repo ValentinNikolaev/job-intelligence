@@ -211,4 +211,4 @@ Telefon +49 351 320 305 43 | E-Mail:
 
 **Wir freuen uns auf Deine Bewerbung mit frühestmöglichem Eintrittstermin und Deiner Gehaltsvorstellung.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

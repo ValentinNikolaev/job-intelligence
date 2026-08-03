@@ -81,4 +81,4 @@ Arbeitsmodell: ab 30 Stunden/Woche, vor Ort in Münster - weil enge Abstimmung s
 
 Möchtest du in einem familiären Umfeld an spannenden Projekten mitarbeiten? Dann bewirb dich jetzt als **E-Commerce Manager (m/w/d)** bei GORNATION und lass uns gemeinsam die Qualität unserer Produkte auf das nächste Level bringen! Wir freuen uns auf deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

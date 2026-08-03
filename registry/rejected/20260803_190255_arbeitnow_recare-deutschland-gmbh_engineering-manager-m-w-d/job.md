@@ -105,4 +105,4 @@ You **communicate confidently in English** and are comfortable operating in an i
 
 **If this sounds like your kind of challenge, we’d love to hear from you.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

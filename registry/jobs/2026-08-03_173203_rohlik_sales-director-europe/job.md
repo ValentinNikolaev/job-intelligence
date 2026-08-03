@@ -160,4 +160,4 @@ You’ll join a lean team, work close to the founders and leadership, and help d
 
 If that excites you more than it scares you, we should talk.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

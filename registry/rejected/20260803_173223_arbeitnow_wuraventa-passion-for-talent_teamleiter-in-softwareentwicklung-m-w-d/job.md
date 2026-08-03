@@ -87,4 +87,4 @@ Equal Opportunity
 
 WURAVENTA – PASSION FOR TALENT steht für Chancengleichheit. Alle qualifizierten Bewerbungen werden unabhängig von Herkunft, Geschlecht, Identität, Alter, Behinderung oder anderen gesetzlich geschützten Merkmalen berücksichtigt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

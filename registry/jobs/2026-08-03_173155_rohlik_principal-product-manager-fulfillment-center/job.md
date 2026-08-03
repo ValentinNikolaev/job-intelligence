@@ -193,4 +193,4 @@ What’s in it for you**
 
 #Knuspr #LI-ML1
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

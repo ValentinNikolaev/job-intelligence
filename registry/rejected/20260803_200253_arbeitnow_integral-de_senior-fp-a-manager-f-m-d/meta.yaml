@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-fpa-manager-berlin-91433
+source_url: https://www.arbeitnow.com/jobs/companies/integral-de/senior-fpa-manager-berlin-91433
+title: Senior FP&A Manager (f/m/d)
+company: Integral De
+location: Berlin
+published_at: '2026-08-03T18:01:01Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T21:41:40Z'
+rejected_at: '2026-08-03T20:02:53Z'
