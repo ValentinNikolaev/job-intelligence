@@ -99,4 +99,4 @@ Clear communication, including explaining a technical decision to a non-technica
 
 Luma's mission is to build unified general intelligence that can generate, understand, and operate in the physical world. We believe multimodality is critical for intelligence — the next step beyond language models comes from vision. Luma is an equal opportunity employer.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

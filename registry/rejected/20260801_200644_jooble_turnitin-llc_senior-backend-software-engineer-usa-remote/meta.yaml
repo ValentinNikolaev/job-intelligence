@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-6204662193483691036'
-source_url: https://jooble.org/desc/-6204662193483691036?ckey=remote+senior+backend+engineer&rgn=55180&pos=29&groupId=2134052230&elckey=2165973339122728099&p=1&aq=-4789258998236869483&cid=15922&jobAge=161&brelb=100&bscr=934.75793&scr=934.75793
+source_url: https://jooble.org/desc/-6204662193483691036?ckey=remote+senior+backend+engineer&rgn=55180&pos=29&groupId=2134052230&elckey=-964561002647373636&p=1&aq=-6913122369280320421&cid=15922&jobAge=180&brelb=100&bscr=947.7573&scr=947.7573
 title: Senior Backend Software Engineer (USA Remote)
 company: Turnitin, LLC
 location: Washington DC
 published_at: '2026-07-27T10:39:29.9470000'
-rejection_category: location_requirement
-rejection_reason: remote role is limited to the United States
-updated_at: '2026-08-02T23:10:10Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27T10:39:29.9470000 is older than 7 days
+updated_at: '2026-08-03T18:11:38Z'
 rejected_at: '2026-08-01T20:06:44Z'

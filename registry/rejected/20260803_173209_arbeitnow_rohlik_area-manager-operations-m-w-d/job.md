@@ -91,4 +91,4 @@ Bereitschaft flexibel zwischen 06 und 22 Uhr von Montag bis Samstag zu arbeiten 
 
 #LI-FK1 #Knuspr
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

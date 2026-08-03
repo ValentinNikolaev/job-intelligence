@@ -75,4 +75,4 @@ Ownership: Shape how European AI companies access GPU compute
 
 European mission: Build sovereign, GDPR-compliant AI infrastructure for the next generation of deep-tech
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

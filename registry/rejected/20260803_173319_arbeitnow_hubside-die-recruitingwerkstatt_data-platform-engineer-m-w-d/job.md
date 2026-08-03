@@ -45,4 +45,4 @@ Sie kennen jemanden, der perfekt zu dieser Position passt? Dann sichern Sie sich
 
 - **1.000 € Weiterempfehlungsbonus!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

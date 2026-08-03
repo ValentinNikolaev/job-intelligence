@@ -58,4 +58,4 @@ Ausführliche Infos zu unseren Benefits findest du auch hier: [https://www.js-so
 
 Du möchtest unser Team verstärken? Dann bewirb dich direkt hier über unsere Karriereseite mit deinem Lebenslauf. Wir freuen uns, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

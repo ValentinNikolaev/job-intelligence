@@ -77,4 +77,4 @@ Du musst nicht seit zehn Jahren in der Videoproduktion arbeiten oder jedes techn
 
 Schick uns gerne ein paar Arbeitsproben oder ein Portfolio und erzähl uns kurz, welche Erfahrungen du bisher bei Drehs und im Videoschnitt gesammelt hast. Wir freuen uns darauf, dich kennenzulernen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

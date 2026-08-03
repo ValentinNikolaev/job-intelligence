@@ -79,4 +79,4 @@ Wir freuen uns auf Ihre Bewerbung unter Angabe der **Kennziffer 2107J** an bewer
 
 co-ship consult GmbH, www(DOT)co-ship(DOT)de
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

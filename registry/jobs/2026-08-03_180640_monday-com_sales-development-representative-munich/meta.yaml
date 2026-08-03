@@ -1,0 +1,29 @@
+schema_version: 2
+id: 1204caec-20ad-48c1-85e8-415ec72739de
+title: Sales Development Representative - Munich
+company: Monday.com
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: sales-development-representative-munich-115695
+  url: https://www.arbeitnow.com/jobs/companies/mondaycom/sales-development-representative-munich-115695
+  metadata:
+    tags:
+    - Consulting
+    job_types:
+    - Full Time
+published_at: '2026-08-03T12:01:08Z'
+discovered_at: '2026-08-03T18:06:40Z'
+updated_at: '2026-08-03T18:06:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T18:06:40Z'
+analysis_priority: 0
+fingerprint: sha256:5679720fc026557c8ab9c4c38fb6df6a206ef76650634649196dea6faf05623e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

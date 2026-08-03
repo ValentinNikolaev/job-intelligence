@@ -229,4 +229,4 @@ Your salary expectations and the earliest possible starting date
 
 **Note:** Direct applicants only. We do not work with recruiting agencies for this position.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

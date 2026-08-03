@@ -107,4 +107,4 @@ The annual gross salary range for this position is:
 
 €61.200—€100.100 EUR
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -85,4 +85,4 @@ Bereitschaft zur Schichtarbeit im Wechselschichtmodell (drei-Schicht-System) von
 
 Du sprichst flüssiges Englisch oder Deutsch
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

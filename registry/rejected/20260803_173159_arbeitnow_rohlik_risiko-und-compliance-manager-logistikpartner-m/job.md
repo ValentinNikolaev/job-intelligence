@@ -87,4 +87,4 @@ In dieser Schlüsselposition bist du das operative Schutzschild für unsere Last
 
 #LI-FK1 #Knuspr
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

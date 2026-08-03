@@ -89,4 +89,4 @@ Sie wollen bei uns Karriere machen? Dann kontaktieren Sie uns.
 
 **Wir freuen uns auf Ihre Bewerbung. Zögern Sie nicht, steigen Sie jetzt ein!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -142,4 +142,4 @@ Willingness to work shifts in a rotating shift model (three-shift system) from M
 
 You speak fluent english or german
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

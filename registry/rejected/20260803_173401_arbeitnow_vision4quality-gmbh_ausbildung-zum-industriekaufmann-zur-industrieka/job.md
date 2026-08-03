@@ -77,4 +77,4 @@ Dann schick uns gerne deine Bewerbung über Join.
 
 Wir freuen uns darauf, von dir zu hören!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

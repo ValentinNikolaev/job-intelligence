@@ -71,4 +71,4 @@ Dann möchten wir dich kennenlernen. Wenn du Freude daran hast, Menschen, Aufgab
 
 *In unserer Bewerberansprache setzen wir auf das 'Du'. Solltest Du eine andere Ansprache bevorzugen, lass es uns einfach wissen und wir passen uns Deinen Präferenzen an.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -41,4 +41,4 @@ Wir sind eine dynamische Online-Marketing-Agentur, die Marken hilft, auf Plattfo
 
 Bereit für den Einstieg in die Agenturwelt? Dann schick uns deine Bewerbung inklusive aussagekräftiger Arbeitsproben (z. B. eigene TikToks/Reels oder Kreativ-Projekte)!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

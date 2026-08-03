@@ -101,4 +101,4 @@ Kommunikationsstärke und Bereitschaft zur interdisziplinären Zusammenarbeit
 
 Sie schätzen die Arbeit im Inhouse-Umfeld
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

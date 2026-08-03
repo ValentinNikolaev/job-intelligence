@@ -91,4 +91,4 @@ Um es einfach zu halten, verzichten wir gerne auf ein Anschreiben. Schick uns ei
 
 New Monday fördert aktiv die Gleichstellung aller Beschäftigten. Wir begrüßen daher alle Bewerber:innen, unabhängig von Geschlecht, ethnischer, kultureller und sozialer Herkunft, Alter, Religion, Weltanschauung, Behinderung sowie sexueller Identität der Person. Menschen mit Schwerbehinderung werden bei gleicher Eignung unter Berücksichtigung aller Umstände des Einzelfalls bevorzugt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

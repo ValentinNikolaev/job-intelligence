@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 714
+Total vacancies: 716
 
-- Found: 366
+- Found: 368
 - Applied: 9
 - Rejected: 337
 - Closed: 2
@@ -18,6 +18,8 @@ Total vacancies: 714
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-03 | [Monday.com](../registry/jobs/2026-08-03_180640_monday-com_sales-development-representative-munich/) | [Sales Development Representative - Munich](../registry/jobs/2026-08-03_180640_monday-com_sales-development-representative-munich/job.md) | Munich | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/mondaycom/sales-development-representative-munich-115695) | — | — | — | — | — |
+| 2026-08-03 | [Stackgini GmbH](../registry/jobs/2026-08-03_180355_stackgini-gmbh_deployment-strategist-f-m-d/) | [Deployment Strategist (f/m/d)](../registry/jobs/2026-08-03_180355_stackgini-gmbh_deployment-strategist-f-m-d/job.md) | Berlin | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/stackgini-gmbh/deployment-strategist-berlin-3698) | — | — | — | — | — |
 | 2026-08-03 | [Canonical Ltd.](../registry/jobs/2026-08-03_173816_canonical-ltd_senior-web-engineer/) | [Senior Web Engineer](../registry/jobs/2026-08-03_173816_canonical-ltd_senior-web-engineer/job.md) | EMEA | Jobicy | Found | 2026-08-03 | [Jobicy](https://jobicy.com/jobs/150123-senior-web-engineer) | — | — | — | — | — |
 | 2026-08-03 | [Canonical Ltd.](../registry/jobs/2026-08-03_173812_canonical-ltd_senior-software-engineer-maas/) | [Senior Software Engineer - MAAS](../registry/jobs/2026-08-03_173812_canonical-ltd_senior-software-engineer-maas/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-08-03 | [Jobicy](https://jobicy.com/jobs/150127-senior-software-engineer-maas) | — | — | — | — | — |
 | 2026-08-03 | [Canonical Ltd.](../registry/jobs/2026-08-03_173810_canonical-ltd_c-golang-software-engineer-working-on-dqlite-a-r/) | [C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/2026-08-03_173810_canonical-ltd_c-golang-software-engineer-working-on-dqlite-a-r/job.md) | EMEA | Jobicy | Found | 2026-08-03 | [Jobicy](https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite) | — | — | — | — | — |
@@ -36,5 +38,3 @@ Total vacancies: 714
 | 2026-08-03 | [Vinteden](../registry/jobs/2026-08-03_173412_vinteden_staff-engineer-ai-engineering-experience/) | [Staff Engineer, AI, Engineering Experience](../registry/jobs/2026-08-03_173412_vinteden_staff-engineer-ai-engineering-experience/job.md) | Berlin | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/vinteden/staff-engineer-ai-engineering-experience-berlin-77450) | — | — | — | — | — |
 | 2026-08-03 | [Accso – Accelerated Solutions GmbH](../registry/jobs/2026-08-03_173355_accso-accelerated-solutions-gmbh_werkstudent-content-marketing/) | [Werkstudent* Content Marketing](../registry/jobs/2026-08-03_173355_accso-accelerated-solutions-gmbh_werkstudent-content-marketing/job.md) | Darmstadt | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/werkstudent-content-marketing-darmstadt-492925) | — | — | — | — | — |
 | 2026-08-03 | [Accso – Accelerated Solutions GmbH](../registry/jobs/2026-08-03_173353_accso-accelerated-solutions-gmbh_senior-solution-architect-facharchitekt/) | [Senior Solution Architect / Facharchitekt*](../registry/jobs/2026-08-03_173353_accso-accelerated-solutions-gmbh_senior-solution-architect-facharchitekt/job.md) | München | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-solution-architect-facharchitekt-munchen-78631) | — | — | — | — | — |
-| 2026-08-03 | [Accso – Accelerated Solutions GmbH](../registry/jobs/2026-08-03_173352_accso-accelerated-solutions-gmbh_senior-java-engineer/) | [Senior Java Engineer*](../registry/jobs/2026-08-03_173352_accso-accelerated-solutions-gmbh_senior-java-engineer/job.md) | Darmstadt | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-java-engineer-darmstadt-211530) | — | — | — | — | — |
-| 2026-08-03 | [Accso – Accelerated Solutions GmbH](../registry/jobs/2026-08-03_173351_accso-accelerated-solutions-gmbh_software-security-engineer/) | [Software Security Engineer*](../registry/jobs/2026-08-03_173351_accso-accelerated-solutions-gmbh_software-security-engineer/job.md) | Frankfurt am Main | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/software-security-engineer-frankfurt-am-main-166582) | — | — | — | — | — |

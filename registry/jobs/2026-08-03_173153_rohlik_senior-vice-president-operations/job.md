@@ -194,4 +194,4 @@ The chance to build scalable operations with a tangible impact on millions of cu
 
 A high-accountability environment where decisions move quickly and results are visible
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
