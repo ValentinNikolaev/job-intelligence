@@ -1,0 +1,29 @@
+schema_version: 2
+id: b3b17505-b44e-490a-a281-796741d1c521
+title: General Counsel
+company: SoSafe
+company_url: null
+location: Cologne
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: general-counsel-cologne-303764
+  url: https://www.arbeitnow.com/jobs/companies/sosafe/general-counsel-cologne-303764
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - Full Time
+published_at: '2026-08-03T21:01:11Z'
+discovered_at: '2026-08-03T22:02:23Z'
+updated_at: '2026-08-03T22:02:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T22:02:23Z'
+analysis_priority: 0
+fingerprint: sha256:739a023883b893d018215f2d1563454e12dcb4ce039667470a5b43c914da3c68
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

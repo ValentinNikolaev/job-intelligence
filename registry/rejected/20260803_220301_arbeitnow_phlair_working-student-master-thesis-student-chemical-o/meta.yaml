@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: working-student-master-thesis-student-chemical-operations-munchen-314293
+source_url: https://www.arbeitnow.com/jobs/companies/phlair/working-student-master-thesis-student-chemical-operations-munchen-314293
+title: Working Student / Master Thesis Student – Chemical Operations (f/m/d)
+company: Phlair
+location: München
+published_at: '2026-08-03T21:00:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:03:01Z'
+rejected_at: '2026-08-03T22:03:01Z'

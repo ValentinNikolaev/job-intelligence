@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-manager-product-marketing-178746
+source_url: https://www.arbeitnow.com/jobs/companies/sosafe/remote-manager-product-marketing-178746
+title: Manager, Product Marketing
+company: SoSafe
+location: Remote
+published_at: '2026-08-03T21:01:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:02:16Z'
+rejected_at: '2026-08-03T22:02:16Z'

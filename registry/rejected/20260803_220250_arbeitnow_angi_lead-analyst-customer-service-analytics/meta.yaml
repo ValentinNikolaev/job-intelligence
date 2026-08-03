@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: lead-analyst-customer-service-analytics-berlin-30011
+source_url: https://www.arbeitnow.com/jobs/companies/angi/lead-analyst-customer-service-analytics-berlin-30011
+title: Lead Analyst, Customer Service Analytics
+company: Angi
+location: Hybrid - Germany - Berlin
+published_at: '2026-08-03T21:00:32Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:02:50Z'
+rejected_at: '2026-08-03T22:02:50Z'

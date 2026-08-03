@@ -1,0 +1,29 @@
+schema_version: 2
+id: de1b0816-a1a9-4254-8bf1-2a583607fa2b
+title: Senior Analyst, Commercial & Analytics
+company: Angi
+company_url: null
+location: Hybrid - Germany - Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: senior-analyst-commercial-analytics-berlin-297623
+  url: https://www.arbeitnow.com/jobs/companies/angi/senior-analyst-commercial-analytics-berlin-297623
+  metadata:
+    tags:
+    - Marketing
+    job_types:
+    - Full Time
+published_at: '2026-08-03T21:00:32Z'
+discovered_at: '2026-08-03T22:02:48Z'
+updated_at: '2026-08-03T22:02:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T22:02:48Z'
+analysis_priority: 0
+fingerprint: sha256:bbdccd749415c3bd40e3a4654482164934215010b68b21dccaff30193fee7f72
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

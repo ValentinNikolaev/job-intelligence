@@ -1,0 +1,29 @@
+schema_version: 2
+id: 6e7f5fed-ae02-4ee9-aa15-66132ef3f5a0
+title: Key Account Manager - Nordics / BeNeLux (m/f/d)
+company: Statista
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: key-account-manager-nordics-benelux-hamburg-110114
+  url: https://www.arbeitnow.com/jobs/companies/statista/key-account-manager-nordics-benelux-hamburg-110114
+  metadata:
+    tags:
+    - Revenue
+    job_types:
+    - Full Time
+published_at: '2026-08-03T20:40:29Z'
+discovered_at: '2026-08-03T22:04:07Z'
+updated_at: '2026-08-03T22:04:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T22:04:07Z'
+analysis_priority: 0
+fingerprint: sha256:10e8953890351a254b531d0bad44fecb6536b8b5d7ddcce8e6a0aefb0ca18869
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

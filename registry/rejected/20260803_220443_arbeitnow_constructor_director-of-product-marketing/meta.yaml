@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: director-of-product-marketing-munich-308028
+source_url: https://www.arbeitnow.com/jobs/companies/constructor/director-of-product-marketing-munich-308028
+title: Director of Product Marketing
+company: Constructor
+location: Remote
+published_at: '2026-08-03T20:40:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:04:43Z'
+rejected_at: '2026-08-03T22:04:43Z'

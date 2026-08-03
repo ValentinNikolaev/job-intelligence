@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sales-development-representative-dach-hamburg-77339
+source_url: https://www.arbeitnow.com/jobs/companies/statista/sales-development-representative-dach-hamburg-77339
+title: Sales Development Representative DACH (m/f/d)
+company: Statista
+location: Hamburg
+published_at: '2026-08-03T20:40:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:04:33Z'
+rejected_at: '2026-08-03T22:04:33Z'

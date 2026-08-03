@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-principal-software-engineer-data-lakes-398416
+source_url: https://www.arbeitnow.com/jobs/companies/fivetran/remote-principal-software-engineer-data-lakes-398416
+title: Principal Software Engineer - Data Lakes
+company: Fivetran
+location: Remote
+published_at: '2026-08-03T21:15:55Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:02:12Z'
+rejected_at: '2026-08-03T22:02:12Z'

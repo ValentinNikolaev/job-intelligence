@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: engineering-manager-data-content-delivery-hamburg-or-berlin-31477
+source_url: https://www.arbeitnow.com/jobs/companies/statista/engineering-manager-data-content-delivery-hamburg-or-berlin-31477
+title: Engineering Manager - Data & Content Delivery (m/f/d)
+company: Statista
+location: Hamburg or Berlin
+published_at: '2026-08-03T20:40:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:04:21Z'
+rejected_at: '2026-08-03T22:04:21Z'

@@ -1,0 +1,27 @@
+schema_version: 2
+id: d3caf6a9-19c4-4adb-b13b-aaf9a63d321b
+title: Consulting Manager (m/f/d) Data & AI Strategy
+company: Artefact
+company_url: null
+location: Berlin, Berlin; München, Bavaria
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: consulting-manager-data-ai-strategy-berlin-berlin-munchen-bavaria-26684
+  url: https://www.arbeitnow.com/jobs/companies/artefact/consulting-manager-data-ai-strategy-berlin-berlin-munchen-bavaria-26684
+  metadata:
+    tags:
+    - Consulting & Data
+published_at: '2026-08-03T20:56:02Z'
+discovered_at: '2026-08-03T22:03:24Z'
+updated_at: '2026-08-03T22:03:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T22:03:24Z'
+analysis_priority: 0
+fingerprint: sha256:ff51045551b7b4ac6c74fb2162d1b228ed8d3e17aa2bd0c5327041d874207f1f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

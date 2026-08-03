@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: junior-financial-reporting-manager-hamburg-111612
+source_url: https://www.arbeitnow.com/jobs/companies/statista/junior-financial-reporting-manager-hamburg-111612
+title: Junior Financial Reporting Manager (m/f/d)
+company: Statista
+location: Hamburg
+published_at: '2026-08-03T20:40:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T22:03:55Z'
+rejected_at: '2026-08-03T22:03:55Z'
