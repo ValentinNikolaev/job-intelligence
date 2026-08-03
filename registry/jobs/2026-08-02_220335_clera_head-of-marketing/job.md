@@ -126,4 +126,4 @@ Collaborative, high-ownership culture with direct impact on company growth
 
 This role is **on-site in Berlin, Germany**. Candidates must be willing and able to work from the Berlin office. **Visa sponsorship is not available** — applicants must have the right to work in Germany.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

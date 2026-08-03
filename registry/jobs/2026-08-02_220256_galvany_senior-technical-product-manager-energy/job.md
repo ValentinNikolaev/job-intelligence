@@ -110,4 +110,4 @@ Support go-to-market for new energy products and pricing tiers in collaboration 
 
 **No Corporate Theater.** Skip endless alignment meetings, politics and waiting for permission. You talk to the people who matter and ship.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

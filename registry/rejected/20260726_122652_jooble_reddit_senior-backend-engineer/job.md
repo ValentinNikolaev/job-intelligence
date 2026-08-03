@@ -4,8 +4,8 @@ Posted: 2026-07-27T00:00:00.0000000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-27T00:00:00.0000000 is older than 7 days
 
 ...the internet. This is a fully **remote **role. Reddit has a flexible... ...millions of daily users and **backend **services.
 

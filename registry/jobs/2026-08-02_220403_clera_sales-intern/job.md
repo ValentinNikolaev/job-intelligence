@@ -126,4 +126,4 @@ Exposure to a fast-growing sector at the intersection of AI and digital marketin
 
 This is an **on-site role based in Munich, Bavaria, Germany**. Candidates must be available to work from the Munich office. Visa sponsorship is not provided.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

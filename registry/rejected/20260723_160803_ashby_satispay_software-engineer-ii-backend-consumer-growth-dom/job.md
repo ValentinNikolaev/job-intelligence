@@ -7,13 +7,13 @@ Posted: 2026-07-13T09:13:03.407+00:00
 - Category: stale
 - Reason: published_at 2026-07-13T09:13:03.407+00:00 is older than 7 days
 
-About us
+About us 
 
 Satispay began by rethinking the simple act of a payment to remove the friction from our daily routines. But we didn’t stop there. Today, we are building a complete financial platform designed to empower people and concretely improve their lives. By giving our 6 million users a clear, open path to pay, save, and invest, we are evolving into the definitive destination for every financial need.
 
 
 
-What you'll be doing
+What you'll be doing 
 
 As our Backend Software Engineer II - Consumer Growth Domain, you’ll be the person who plays a key role in shaping the future of digital payments by designing and building scalable features that drive user growth, reduce friction for new users, and create sustainable value for our community. Here's what your day-to-day will look like:
 
@@ -35,7 +35,7 @@ As our Backend Software Engineer II - Consumer Growth Domain, you’ll be the pe
 
 
 
-Who we're looking for
+Who we're looking for 
 
 We are looking for a dynamic problem-solver who is excited about scaling a user base and building seamless digital experiences. Does this sound like you?
 
@@ -55,7 +55,7 @@ Don't worry if you don't tick every box. We believe in the power of different vi
 
 
 
-CareAbout: how we support your impact
+CareAbout: how we support your impact 
 
 We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. That’s why we created CareAbout:
 
@@ -76,13 +76,13 @@ This range is set using objective, gender-neutral criteria for the role's core r
 
 
 
-Equal Opportunity Employer
+Equal Opportunity Employer 
 
 At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin. Join us in a workplace where everyone belongs!
 
 
 
-Learn more about us
+Learn more about us 
 
 Our values and pillars aren’t just fancy words on a page - they really shape everything we do. Explore them here https://www.satispay.com/en-it/company/values/.
 

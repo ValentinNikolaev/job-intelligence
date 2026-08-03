@@ -53,7 +53,7 @@ We need a problem solver who is eager to learn, owns their work, and is ready to
 
  - Passion and Language Skills: You are passionate about FinTech or startup environments and fluent in English.
 
- - conduct technical analysis for large-scope projects affecting multiple systems.
+ -  conduct technical analysis for large-scope projects affecting multiple systems.
 
  - Structured Communication: You are able to communicate in a structured and convincing manner, adapting your style to build trust positively and professionally with various stakeholders, including coordinating implementation with other teams.
 

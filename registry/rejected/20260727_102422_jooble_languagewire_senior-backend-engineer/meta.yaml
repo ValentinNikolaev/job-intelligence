@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '2024024085078168234'
-source_url: https://jooble.org/away/2024024085078168234?p=1&pos=27&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=156&brelb=15&scr=2612.1497&bscr=2612.1497&aq=-1737232113749287848&elckey=1681674762062146604
+source_url: https://jooble.org/away/2024024085078168234?p=1&pos=28&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=162&brelb=15&scr=2643.407&bscr=2643.407&aq=-5539252450429661045&elckey=-6756068654243393753
 title: Senior Backend Engineer
 company: LanguageWire
 location: Remote
 published_at: '2026-07-27T00:00:00.0000000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-02T18:28:04Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-03T00:35:42Z'
 rejected_at: '2026-07-27T10:24:22Z'

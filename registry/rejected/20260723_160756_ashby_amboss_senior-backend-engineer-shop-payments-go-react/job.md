@@ -11,7 +11,7 @@ Hi! We are AMBOSS and we are looking for a Senior Backend Engineer who is passio
 
 About AMBOSS
 
-AMBOSS is a dynamic learning and clinical decision support tool committed to empowering medical professionals globally to deliver optimal care. Since our inception in 2012, we've harnessed cutting-edge technology to transform the way physicians acquire and apply scientific knowledge. Each AMBOSSian is passionate about being the champion of clinicians today - this motivates and unites us each day towards success. And what does success look like? When a clinician or med student tells us, “AMBOSS makes practicing medicine easier and enjoyable. I love what I do, and a big part is because of AMBOSS.”
+AMBOSS is a dynamic learning and clinical decision support tool committed to empowering medical professionals  globally to deliver optimal care. Since our inception in 2012, we've harnessed cutting-edge technology to transform the way physicians acquire and apply scientific knowledge. Each AMBOSSian is passionate about being the champion of clinicians today - this motivates and unites us each day towards success. And what does success look like? When a clinician or med student tells us, “AMBOSS makes practicing medicine easier and enjoyable. I love what I do, and a big part is because of AMBOSS.”
 
 
 
@@ -80,6 +80,6 @@ Check out the full list of benefits below:
 
 https://go.amboss.com/the-amboss-prescription-de
 
-We believe that diversity is a powerful driver of innovation and progress. That’s why we are committed to fostering an inclusive, respectful, and supportive environment where everyone—regardless of gender, age, ethnic or cultural background, religion, disability, sexual orientation, gender identity—is valued and given equal opportunity to thrive. We warmly welcome people of all backgrounds to help us fulfil our mission: empowering all medical professionals to provide the best possible care 🩺
+We believe that diversity is a powerful driver of innovation and progress. That’s why we are committed to fostering an inclusive, respectful, and supportive environment where everyone—regardless of gender, age, ethnic or cultural background, religion, disability, sexual orientation, gender identity—is valued and given equal opportunity to thrive. We warmly welcome people of all backgrounds to help us fulfil our mission: empowering all medical professionals  to provide the best possible care  🩺
 
 Even if you don’t meet every single point in the job description, we still encourage you to apply. We’d love to hear from you!

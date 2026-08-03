@@ -107,4 +107,4 @@ This is a **full-time, on-site** position based in **Berlin, Germany**. You'll b
 
 Compensation details will be discussed during the interview process. You'll be joining a well-funded seed-stage company backed by established European and international investors, with meaningful opportunities for growth as the team scales.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

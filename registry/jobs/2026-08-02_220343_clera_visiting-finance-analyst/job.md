@@ -108,4 +108,4 @@ Opportunity to work at a high-growth startup operating across 30+ countries.
 
 This is a **fully on-site role** based in **Berlin, Germany**. Candidates must be available to work in Berlin. No remote or hybrid arrangement is offered for this position.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

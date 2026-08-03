@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '1740187027788638947'
-source_url: https://jooble.org/away/1740187027788638947?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=156&brelb=15&scr=654.20825&bscr=654.20825&aq=1378695848532373618&elckey=-3925835772145525476
+source_url: https://jooble.org/away/1740187027788638947?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=162&brelb=15&scr=654.7895&bscr=654.7895&aq=-4763265895875086099&elckey=6083164885258485783
 title: Senior / Staff Backend Engineer
 company: Aescape
 location: Remote
 published_at: '2026-07-27T00:00:00.0000000'
-rejection_category: location_requirement
-rejection_reason: requires United States location
-updated_at: '2026-08-02T18:28:45Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-03T00:36:17Z'
 rejected_at: '2026-08-01T21:22:21Z'

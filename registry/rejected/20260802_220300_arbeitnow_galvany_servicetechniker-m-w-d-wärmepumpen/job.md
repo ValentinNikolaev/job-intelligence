@@ -95,4 +95,4 @@ Arbeiten an der Spitze der Energiewende: Smarte Technologien und nachhaltige Lö
 
 Wenn Du Leidenschaft für Technik und den Wunsch hast, die Zukunft der Energie aktiv mitzugestalten, freuen wir uns auf Deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

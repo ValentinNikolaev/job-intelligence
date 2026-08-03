@@ -114,4 +114,4 @@ High ownership in a small, fast-moving team shaping how enterprises adopt AI
 
 This role is **fully on-site in Berlin, Germany**. Candidates must be available to work from the Berlin office five days a week. Remote or hybrid arrangements are not offered for this position.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

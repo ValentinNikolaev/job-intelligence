@@ -145,4 +145,4 @@ Partner with Europe GTM & cross functional leadership to align organizational ob
 
 This role is remote-first, so it can be executed from anywhere within Europe. If you prefer, you can work from our offices in London, Dublin or Paris.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

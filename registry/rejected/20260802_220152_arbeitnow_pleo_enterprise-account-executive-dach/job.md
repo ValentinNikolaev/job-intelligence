@@ -155,4 +155,4 @@ Paid parental leave - we want to make sure that we're supportive of families and
 
 **Reapplying.** If you’re applying for the same role again, please wait six months from your last decision before hitting submit.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

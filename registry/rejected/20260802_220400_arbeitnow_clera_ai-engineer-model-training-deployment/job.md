@@ -107,4 +107,4 @@ Opportunity to shape the technical direction of a growing robotics platform.
 
 This position is **on-site in Munich, Bavaria, Germany**. Candidates must be eligible to work in Germany; visa sponsorship is not provided.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

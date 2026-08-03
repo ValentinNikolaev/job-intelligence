@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '7601225126603346386'
-source_url: https://jooble.org/away/7601225126603346386?p=1&pos=11&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=156&brelb=15&scr=2768.3884&bscr=2768.3884&aq=-1737232113749287848&elckey=1681674762062146604
+source_url: https://jooble.org/away/7601225126603346386?p=1&pos=11&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=162&brelb=15&scr=2799.8176&bscr=2799.8176&aq=-5539252450429661045&elckey=-6756068654243393753
 title: Senior Backend Engineer
 company: Reddit
 location: Remote
 published_at: '2026-07-27T00:00:00.0000000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-02T18:27:48Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-03T00:35:27Z'
 rejected_at: '2026-07-26T12:26:52Z'

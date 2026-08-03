@@ -110,4 +110,4 @@ As a (Senior) Product Designer - Mobile at GALVANY, you'll focus on the mobile e
 
 **No Corporate Theater.** Skip endless alignment meetings, politics and waiting for permission. You talk to the people who matter and ship.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

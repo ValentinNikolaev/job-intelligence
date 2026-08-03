@@ -84,4 +84,4 @@ Background at a consulting firm, growth-stage startup, or tech company in a clie
 
 This is an **on-site role** based in **Munich or Hamburg, Germany**. The team is split across both cities and you are welcome to join from either location.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -117,4 +117,4 @@ Compensation: €60K – €100K • Offers Equity
 
 - • €60K – €100K • Offers Equity
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

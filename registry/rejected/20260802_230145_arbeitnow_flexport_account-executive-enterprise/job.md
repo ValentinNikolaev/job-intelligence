@@ -114,4 +114,4 @@ At Flexport, our ability to fulfill our mission of making global commerce easy a
 
 Depending on your location, the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) may regulate the way we manage the data of job applicants. By submitting your application, you are agreeing to our use and processing of your data as required. Please see our Privacy Notice available at [www.flexport.com/privacy](http://www.flexport.com/privacy) for additional information.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

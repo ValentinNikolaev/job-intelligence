@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '3502948094545411543'
-source_url: https://jooble.org/away/3502948094545411543?p=1&pos=15&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=156&brelb=15&scr=2738.4092&bscr=2738.4092&aq=-1737232113749287848&elckey=1681674762062146604
+source_url: https://jooble.org/away/3502948094545411543?p=1&pos=13&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=162&brelb=15&scr=2781.2253&bscr=2781.2253&aq=-5539252450429661045&elckey=-6756068654243393753
 title: Senior Backend Engineer
 company: Real
 location: Remote
 published_at: '2026-07-27T00:00:00.0000000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-02T18:27:52Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-03T00:35:29Z'
 rejected_at: '2026-07-26T12:26:53Z'

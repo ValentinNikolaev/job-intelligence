@@ -98,4 +98,4 @@ Analytical and strategic thinking, with a knack for identifying business growth 
 
 Kong Inc., a leading developer of API and AI connectivity technologies, is building the infrastructure that powers the agentic era. Trusted by the Fortune 500 and startups alike, Kong's unified API and AI platform, Kong Konnect, enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI models. For more information, visit [www.konghq.com](http://www.konghq.com).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

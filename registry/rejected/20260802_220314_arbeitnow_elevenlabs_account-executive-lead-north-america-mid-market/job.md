@@ -139,4 +139,4 @@ This role is remote across the US, with the option to work from our San Francisc
 
 #LI-remote
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

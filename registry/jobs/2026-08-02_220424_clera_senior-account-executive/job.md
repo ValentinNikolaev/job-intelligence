@@ -98,4 +98,4 @@ This role is based **on-site in Berlin, Germany**. Visa sponsorship is available
 
 Compensation details will be discussed during the interview process. As an early-stage company, we offer meaningful equity participation alongside a competitive base and commission structure.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
