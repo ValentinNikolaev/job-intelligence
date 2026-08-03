@@ -1,0 +1,28 @@
+schema_version: 2
+id: 47cb9e0b-3736-4fd2-a85f-bc03402d002b
+title: Senior PHP Developer - Remote (Ireland)
+company: Archer Recruitment
+company_url: https://www.archer.ie/
+location: Remote, Ireland
+remote: true
+employment_type: full-time
+sources:
+- source: manual
+  source_job_id: linkedin-4442748688
+  url: https://www.linkedin.com/jobs/view/4442748688/
+  metadata:
+    source_name: LinkedIn
+    source_notes: Manual vacancy supplied by user from LinkedIn on 2026-08-03.
+    contact: Olga Torres, +353 1 649 8519, olga.torres@archer.ie
+published_at: '2026-08-03'
+discovered_at: '2026-08-03T19:05:59Z'
+updated_at: '2026-08-03T19:05:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T19:05:59Z'
+analysis_priority: 100
+fingerprint: sha256:3b4f94de77240668940a92d157cd4b32942e538d130e2580267a3baa12423a99
+data_source: manual
+content_source: manual
+company_content_source: null

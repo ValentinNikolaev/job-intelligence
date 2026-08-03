@@ -156,4 +156,4 @@ A fast-moving environment where ownership is expected and results are visible
 
 A unique platform for future growth into broader strategic, operational or leadership roles
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

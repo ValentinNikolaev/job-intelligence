@@ -49,4 +49,4 @@ Absolute Zuverlässigkeit und Verschwiegenheit setzen wir voraus.
 
 Klingt nach dir? Dann lass uns reden. Kein Anschreiben nötig – schick uns deinen Lebenslauf und zwei, drei Sätze, warum der Job dich reizt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

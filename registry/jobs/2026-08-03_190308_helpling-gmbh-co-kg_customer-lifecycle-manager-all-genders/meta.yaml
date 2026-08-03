@@ -1,0 +1,29 @@
+schema_version: 2
+id: e7fc877e-fe9d-4d28-ace8-77e6367ec5a3
+title: Customer Lifecycle Manager (all genders)
+company: Helpling GmbH & Co. KG
+company_url: null
+location: Berlin
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: customer-lifecycle-manager-all-genders-berlin-11557
+  url: https://www.arbeitnow.com/jobs/companies/helpling-gmbh-co-kg/customer-lifecycle-manager-all-genders-berlin-11557
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - professional / experienced
+published_at: '2026-08-03T17:00:26Z'
+discovered_at: '2026-08-03T19:03:08Z'
+updated_at: '2026-08-03T19:03:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T19:03:08Z'
+analysis_priority: 0
+fingerprint: sha256:f908e9929a7b3311690269b34c103bab420c7fb28df00ae86781f77796343eb5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -107,4 +107,4 @@ You are fluent in English (spoken and written); an additional European language,
 **Our hiring process for this role:**
 For any queries, please reach out to your Talent Partner, **Rebeca Mejia,** at [How we hire](https://careers.distribusion.com/what-and-how#gallery-1d6535ac)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

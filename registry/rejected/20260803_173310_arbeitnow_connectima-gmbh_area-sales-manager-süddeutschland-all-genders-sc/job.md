@@ -47,4 +47,4 @@ Für ein etabliertes, familiengeführtes Unternehmen aus der industriellen Schla
 
 Connectima ist eine spezialisierte Personalberatung, Headhunter und Executive-Search-Partner für Verfahrenstechnik und Filtration. Wir begleiten Fach- und Führungskräfte auf ihrem nächsten Karriereschritt, im DACH-Raum und international, entlang der gesamten Bandbreite dieser Branchen: von Membranfiltration, Prozessfiltration und Wasseraufbereitung über mechanische, chemische und thermische Verfahrenstechnik bis hin zu verfahrenstechnischen Komponenten wie Pumpen, Armaturen, Ventilen und Wärmetauschern. Unser Netzwerk umfasst mehr als 40.000 Fach- und Führungskräfte aus Chemie, Pharma, Maschinenbau und Umwelttechnik. Als reine Branchenspezialisten kennen wir die Unternehmen, Technologien und Entscheidungswege im Detail und beraten Sie persönlich, vertraulich und mit echtem technischem Verständnis.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

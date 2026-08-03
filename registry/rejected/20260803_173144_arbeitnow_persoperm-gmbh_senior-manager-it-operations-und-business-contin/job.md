@@ -161,4 +161,4 @@ persoperm begleitet Sie persönlich und diskret durch den gesamten Bewerbungspro
 
 Sie wollen nicht nur bestehende Systeme überwachen, sondern einen belastbaren Verantwortungsbereich aufbauen und sichtbar weiterentwickeln? Dann bewerben Sie sich jetzt als **Senior Manager IT Operations und Business Continuity (m/w/d)** in Weimar.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

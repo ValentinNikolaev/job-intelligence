@@ -55,4 +55,4 @@ Wir bieten Dir eine herausfordernde und dynamische Arbeitsumgebung, in der Du De
 
 Bei uns hast du einen abwechslungsreichen Agenturalltag, spannende Marken, Raum für eigene kreative Entfaltung sowie gezielte Weiterbildungsmöglichkeiten. Wenn du Lust hast, mit uns zu wachsen und Verantwortung zu übernehmen, freuen wir uns auf deine Bewerbung inklusive Portfolio. 🤩
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

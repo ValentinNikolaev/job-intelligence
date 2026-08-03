@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: recruiter-tech-business-berlin-126760
+source_url: https://www.arbeitnow.com/jobs/companies/buena/recruiter-tech-business-berlin-126760
+title: Recruiter, Tech & Business (m/w/d)
+company: Buena
+location: Berlin
+published_at: '2026-08-03T17:30:31Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T19:03:02Z'
+rejected_at: '2026-08-03T19:03:02Z'

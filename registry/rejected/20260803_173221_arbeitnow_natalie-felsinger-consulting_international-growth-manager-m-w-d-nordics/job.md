@@ -65,4 +65,4 @@ You will have the opportunity to build new markets from the ground up and direct
 
 It is particularly suited to someone who enjoys combining strategic thinking with hands-on delivery, thrives in dynamic environments, and is motivated by turning complex market requirements into scalable growth models.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -86,4 +86,4 @@ For US candidates only, please visit [E-Verify Notice](https://drive.google.com/
 
 DISCLAIMER: We will not ask about marriage or pregnancy, care responsibilities or disabilities in any of our job adverts or interviews. However, we do look to capture information about care responsibilities, and disabilities among other diversity information as part of an optional DEI Monitoring form to help us identify areas of improvement in our hiring process and ensure that the process is inclusive and non-discriminatory.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
