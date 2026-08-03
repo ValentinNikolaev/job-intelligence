@@ -1,0 +1,95 @@
+schema_version: 2
+id: 6a16e7fb-c21e-4bb7-8ef0-17eba63f13cc
+title: Experienced .NET Developer
+company: SKM Group
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Contractor
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/skm-group/jobs/experienced-net-developer
+  url: https://himalayas.app/companies/skm-group/jobs/experienced-net-developer
+  metadata:
+    location_restrictions: []
+    excerpt: We are a software house with a 18-year history, a rich portfolio, projects
+      all over the world and an appetite for more.
+    company_slug: skm-group
+    company_logo: https://cdn-images.himalayas.app/3kayhzfg43m2w3gh34pz06rxj1fl
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - .NET-Development
+    - Software-Engineering
+    - Backend-Development
+    - Web-Development
+    - Software-Development
+    - Senior-.NET-Developer
+    - C#-.NET-Developer
+    - .NET-Software-Developer
+    - Lead-.NET-Developer
+    - Senior-.NET-Consultant
+    - Senior-DotNet-Developer
+    salary:
+      period: monthly
+      min: 4300
+      max: 10000
+      currency: EUR
+    expiry_at: '2026-10-02T08:44:37Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        worldwide: 'true'
+        sort: recent
+        seniority: Senior
+        q: backend engineer
+published_at: '2026-08-03T08:44:38Z'
+discovered_at: '2026-08-03T13:07:39Z'
+updated_at: '2026-08-03T13:07:39Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T13:07:39Z'
+analysis_priority: 0
+fingerprint: sha256:51cd3782cc03fd4564da93c47f285d4fec9bd93366dcbd04b1739006b6f6b47b
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

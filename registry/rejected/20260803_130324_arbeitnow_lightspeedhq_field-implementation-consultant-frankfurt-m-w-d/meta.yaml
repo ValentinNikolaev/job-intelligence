@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: field-implementation-consultant-frankfurt-308364
+source_url: https://www.arbeitnow.com/jobs/companies/lightspeedhq/field-implementation-consultant-frankfurt-308364
+title: Field Implementation Consultant - Frankfurt (m/w/d)
+company: Lightspeedhq
+location: Frankfurt
+published_at: '2026-08-03T09:00:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T13:03:24Z'
+rejected_at: '2026-08-03T13:03:24Z'

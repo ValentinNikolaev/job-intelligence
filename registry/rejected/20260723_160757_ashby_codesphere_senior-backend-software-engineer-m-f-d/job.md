@@ -42,7 +42,7 @@ YOUR PROFILE
 
  - Strong proficiency in TypeScript and/or Go
 
- - Solid understanding of SQL databases, distributed systems, and the design of APIs and microservices architectures, containerization e.g. Docker, Kubernetes
+ - Solid understanding of SQL databases, distributed systems, and the design of APIs and microservices architectures, containerization e.g. Docker, Kubernetes 
 
  - Degree in a relevant field or comparable qualification
 

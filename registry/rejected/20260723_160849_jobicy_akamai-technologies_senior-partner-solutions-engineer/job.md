@@ -1,11 +1,11 @@
 # Senior Partner Solutions Engineer
 
-Posted: 2026-06-26T22:26:45Z
+Posted: 2026-07-27T07:40:05Z
 
 ## Rejection
 
 - Category: stale
-- Reason: published_at 2026-06-26T22:26:45Z is older than 7 days
+- Reason: published_at 2026-07-27T07:40:05Z is older than 7 days
 
 **Do you relish the opportunity to work with global brands?**
 

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 24129d7f-d53f-4076-ae50-a2b34bacb84b
+title: Subledger Accountant (m/f/x) – Parental Leave Cover
+company: ubitricity - Gesellschaft für verteilte Energiesysteme mbH
+company_url: null
+location: Berlin
+remote: false
+employment_type: Contract, professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: subledger-accountant-parental-leave-cover-berlin-352245
+  url: https://www.arbeitnow.com/jobs/companies/ubitricity-gesellschaft-fur-verteilte-energiesysteme-mbh/subledger-accountant-parental-leave-cover-berlin-352245
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - Contract
+    - professional / experienced
+published_at: '2026-08-03T10:30:33Z'
+discovered_at: '2026-08-03T13:03:01Z'
+updated_at: '2026-08-03T13:03:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T13:03:01Z'
+analysis_priority: 0
+fingerprint: sha256:dd60ab23e06c0166f4666b0a3c726d351955681197efe6841d62afa8ec8ae9e4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-5902444716059953392'
-source_url: https://jooble.org/desc/-5902444716059953392?ckey=senior+backend+engineer&rgn=55179&pos=27&groupId=293749696&elckey=6527757914699650168&p=1&aq=-4383935178415337442&cid=15922&jobAge=615&brelb=10&bscr=8.524756&scr=8.524756
+source_url: https://jooble.org/desc/-5902444716059953392?ckey=senior+backend+engineer&rgn=55179&pos=26&groupId=293749696&elckey=6290381111239394060&p=1&aq=2365893687874353270&cid=15922&jobAge=3&brelb=100&bscr=8.795329&scr=8.795329
 title: Sviluppatore funzionale FSM/WOS - Backend piattaforme OverIT
 company: Bip Italia
 location: Italian Republic
-published_at: '2026-07-08T03:09:14.5800000'
-rejection_category: stale
-rejection_reason: published_at 2026-07-08T03:09:14.5800000 is older than 7 days
-updated_at: '2026-08-03T00:35:15Z'
+published_at: '2026-08-03T03:53:48.2330000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T13:09:21Z'
 rejected_at: '2026-07-25T21:35:11Z'

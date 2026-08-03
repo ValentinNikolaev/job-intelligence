@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: product-manager-berlin-77697
+source_url: https://www.arbeitnow.com/jobs/companies/rootglobal/product-manager-berlin-77697
+title: Product Manager - Berlin
+company: Rootglobal
+location: Berlin
+published_at: '2026-08-03T08:41:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T13:04:34Z'
+rejected_at: '2026-08-03T13:04:34Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: finanzierungsspezialist-deggendorf-176377
+source_url: https://www.arbeitnow.com/jobs/companies/baufinanz-matthias-lallinger/finanzierungsspezialist-deggendorf-176377
+title: Finanzierungsspezialist (m/w/d)
+company: BAUFINANZ Matthias Lallinger
+location: Deggendorf
+published_at: '2026-08-03T09:00:46Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T13:03:57Z'
+rejected_at: '2026-08-03T13:03:57Z'

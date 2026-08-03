@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: account-executive-berlin-239583
+source_url: https://www.arbeitnow.com/jobs/companies/tebi/account-executive-berlin-239583
+title: Account Executive - Berlin
+company: Tebi
+location: Berlin
+published_at: '2026-08-03T09:00:12Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T13:04:29Z'
+rejected_at: '2026-08-03T13:04:29Z'

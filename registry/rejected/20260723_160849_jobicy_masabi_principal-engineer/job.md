@@ -4,8 +4,8 @@ Posted: 2026-07-27T09:08:17Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-27T09:08:17Z is older than 7 days
 
 **About Us_**
 // At Masabi, we’re driving the fare payment revolution, powering the journeys of millions all over the world. We build fare collection platforms that allow riders to seamlessly buy and present tickets for public transport either on their mobile phones, from a ticket machine, or even by tapping their bank card to travel.

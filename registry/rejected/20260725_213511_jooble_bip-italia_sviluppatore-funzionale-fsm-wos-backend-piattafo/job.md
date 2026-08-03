@@ -1,11 +1,11 @@
 # Sviluppatore funzionale FSM/WOS - Backend piattaforme OverIT
 
-Posted: 2026-07-08T03:09:14.5800000
+Posted: 2026-08-03T03:53:48.2330000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-08T03:09:14.5800000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 This position is at Bip Italia 
 The selection process will be fully managed by Bip Italia. 

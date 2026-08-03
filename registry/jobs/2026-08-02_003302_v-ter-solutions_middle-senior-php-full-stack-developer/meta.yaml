@@ -1,6 +1,6 @@
 schema_version: 2
 id: 82fbfe1c-4e23-49da-bdb4-3ba2ba40366c
-title: Middle/Senior PHP Full-Stack Developer
+title: Middle/Senior PHP developer
 company: V-TER Solutions
 company_url: https://jobs.dou.ua/companies/v-ter-solutions/vacancies/
 location: віддалено
@@ -17,16 +17,16 @@ sources:
       url: https://jobs.dou.ua/vacancies/?remote&category=PHP
       category: PHP
     listing_date_label: 31 липня
-    listing_summary: Компанія V-TER Solutions шукає middle/senior PHP Full-Stack Developer.
+    listing_summary: Компанія V-TER Solutions шукає middle/senior PHP developer.
 published_at: '2026-07-31'
 discovered_at: '2026-08-02T00:33:02Z'
-updated_at: '2026-08-02T00:33:02Z'
+updated_at: '2026-08-03T13:05:49Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-08-02T00:33:02Z'
 analysis_priority: 100
-fingerprint: sha256:966b1f8396f17efc2a1ffa3d2234f378bf71b254a768efc3e6d3f9fd99b401a8
+fingerprint: sha256:6eb5b4e2522feb788efac3b01fd8ce664b92e48effb7131671911679e8aa4e9e
 data_source: dou
 content_source: dou
 company_content_source: dou

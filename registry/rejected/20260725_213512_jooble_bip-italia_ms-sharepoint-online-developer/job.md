@@ -1,11 +1,11 @@
 # MS Sharepoint Online Developer
 
-Posted: 2026-07-08T03:09:14.7870000
+Posted: 2026-08-03T03:53:48.7270000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-08T03:09:14.7870000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ...principali piattaforme leader di mercato. 
 
