@@ -7,13 +7,13 @@ Posted: 2026-06-26T10:58:02.375+00:00
 - Category: stale
 - Reason: published_at 2026-06-26T10:58:02.375+00:00 is older than 7 days
 
-About us 
+About us
 
 Satispay began by rethinking the simple act of a payment to remove the friction from our daily routines. But we didn’t stop there. Today, we are building a complete financial platform designed to empower people and concretely improve their lives. By giving our 6 million users a clear, open path to pay, save, and invest, we are evolving into the definitive destination for every financial need.
 
 
 
-What you'll be doing 
+What you'll be doing
 
 As our Staff Software Engineer, you’ll be the person who defines the long-term technical vision for one of our domains, architecting complex subsystems that power our features and leading efficient initiatives that directly empower millions of users to reach their financial goals. Here's what your day-to-day will look like:
 
@@ -31,7 +31,7 @@ Our tech stack includes (but it’s not limited to) PostgreSQL, Java, Spring Boo
 
 
 
-Who we're looking for 
+Who we're looking for
 
 We need a visionary problem-solver, who excels in cross-team collaboration with deep expertise. Does this sound like you?
 
@@ -47,7 +47,7 @@ We need a visionary problem-solver, who excels in cross-team collaboration with 
 
 Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special. If you're passionate and can make a difference, we truly encourage you to apply.
 
-CareAbout: how we support your impact 
+CareAbout: how we support your impact
 
 We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. That’s why we created CareAbout:
 
@@ -70,13 +70,13 @@ This range is set using objective, gender-neutral criteria for the role's core r
 
 
 
-Equal Opportunity Employer 
+Equal Opportunity Employer
 
 At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin. Join us in a workplace where everyone belongs!
 
 
 
-Learn more about us 
+Learn more about us
 
 Our values and pillars aren’t just fancy words on a page - they really shape everything we do. Explore them here https://www.satispay.com/en-it/company/values/.
 

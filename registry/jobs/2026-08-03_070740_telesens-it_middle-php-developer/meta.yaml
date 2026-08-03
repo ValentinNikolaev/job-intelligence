@@ -1,0 +1,38 @@
+schema_version: 2
+id: b99aadc0-7d5e-45ea-aafe-91e9f100d750
+title: Middle PHP Developer
+company: Telesens IT
+company_url: https://jobs.dou.ua/companies/telesens/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367542'
+  url: https://jobs.dou.ua/companies/telesens/vacancies/367542/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 28 липня
+    listing_summary: 'Build the Core System Behind a Large-Scale Telecommunications
+      Network
+
+
+      We are looking for an experienced Middle Full Stack PHP Developer to join our
+      engineering team and contribute to the development of a mission-critical telecommunications
+      platform.'
+published_at: '2026-07-28'
+discovered_at: '2026-08-03T07:07:40Z'
+updated_at: '2026-08-03T07:07:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T07:07:40Z'
+analysis_priority: 100
+fingerprint: sha256:6b788247917255a7559cf7768a8a2c145926aeaba33ff0d8adbd5f147c6a2040
+data_source: dou
+content_source: dou
+company_content_source: dou

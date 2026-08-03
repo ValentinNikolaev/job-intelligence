@@ -1,0 +1,24 @@
+schema_version: 2
+id: 9c81af87-7895-4d55-a5f6-216a0ffa7a0b
+title: Senior Golang Software Engineer
+company: Milestone
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '878065042778768604'
+  url: https://jooble.org/away/878065042778768604?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=54&brelb=15&scr=648.9557&bscr=648.9557&aq=-5071972688879104149&elckey=8842202384893387242
+published_at: '2026-07-31T18:51:11.9900000'
+discovered_at: '2026-08-03T07:12:09Z'
+updated_at: '2026-08-03T07:12:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T07:12:09Z'
+analysis_priority: 0
+fingerprint: sha256:9ed8806caf3a267b7051bb25416ccd98965816678a7525e8861efc5968dab686
+data_source: jooble
+content_source: jooble
+company_content_source: null

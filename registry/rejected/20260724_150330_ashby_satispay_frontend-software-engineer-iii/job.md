@@ -88,13 +88,13 @@ This range is set using objective, gender-neutral criteria for the role's core r
 
 
 Equal opportunity employer
-At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin. 
+At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin.
 Join us in a workplace where everyone belongs!
 
 
 
 Learn more about us
-Our values and pillars aren’t just fancy words on a page - they really shape everything we do. 
+Our values and pillars aren’t just fancy words on a page - they really shape everything we do.
 Explore them here https://www.satispay.com/en-it/company/values/.
 
 
