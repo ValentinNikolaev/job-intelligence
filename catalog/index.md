@@ -4,8 +4,8 @@
 
 Total vacancies: 722
 
-- Found: 374
-- Applied: 9
+- Found: 373
+- Applied: 10
 - Rejected: 337
 - Closed: 2
 
@@ -18,7 +18,7 @@ Total vacancies: 722
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-03 | [Archer Recruitment](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/) | [Senior PHP Developer - Remote (Ireland)](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/job.md) | Remote, Ireland | Manual | Found | 2026-08-03 | [Manual](https://www.linkedin.com/jobs/view/4442748688/) | — | [MD](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cv.md) / [DOCX](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cv.docx) | [MD](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cover-letter.md) / [DOCX](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cover-letter.docx) | [Open](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/analysis.md) | [Open](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/interview-preparation.md) |
+| 2026-08-03 | [Archer Recruitment](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/) | [Senior PHP Developer - Remote (Ireland)](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/job.md) | Remote, Ireland | Manual | Applied | 2026-08-03 | [Manual](https://www.linkedin.com/jobs/view/4442748688/) | — | [MD](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cv.md) / [DOCX](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cv.docx) | [MD](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cover-letter.md) / [DOCX](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/cover-letter.docx) | [Open](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/analysis.md) | [Open](../registry/jobs/2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland/application/interview-preparation.md) |
 | 2026-08-03 | [Helpling GmbH & Co. KG](../registry/jobs/2026-08-03_190308_helpling-gmbh-co-kg_customer-lifecycle-manager-all-genders/) | [Customer Lifecycle Manager (all genders)](../registry/jobs/2026-08-03_190308_helpling-gmbh-co-kg_customer-lifecycle-manager-all-genders/job.md) | Berlin | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/helpling-gmbh-co-kg/customer-lifecycle-manager-all-genders-berlin-11557) | — | — | — | — | — |
 | 2026-08-03 | [Aircall](../registry/jobs/2026-08-03_190306_aircall_account-executive-dach-market/) | [Account Executive , DACH market](../registry/jobs/2026-08-03_190306_aircall_account-executive-dach-market/job.md) | Berlin Office | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/aircall/account-executive-dach-market-berlin-office-258421) | — | — | — | — | — |
 | 2026-08-03 | [Perk](../registry/jobs/2026-08-03_190251_perk_senior-sales-executive-swiss-markets-berlin/) | [Senior Sales Executive Swiss Markets - Berlin](../registry/jobs/2026-08-03_190251_perk_senior-sales-executive-swiss-markets-berlin/job.md) | Berlin | Arbeitnow | Found | 2026-08-03 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/perk/senior-sales-executive-swiss-markets-berlin-357220) | — | — | — | — | — |

@@ -3,15 +3,19 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 14
+  total_events: 15
   by_status:
     applied:
-      count: 9
-      last_changed_at: '2026-08-02T16:06:18Z'
+      count: 10
+      last_changed_at: '2026-08-03T19:18:35Z'
     rejected:
       count: 5
       last_changed_at: '2026-08-01T19:54:58Z'
   by_reason:
+    application-submitted:
+      count: 1
+      reason: application submitted
+      last_changed_at: '2026-08-03T19:18:35Z'
     applied-one-day-previously-skip-duplicate-proces:
       count: 1
       reason: applied one day previously; skip duplicate processing
@@ -274,3 +278,16 @@ events:
   interaction:
     source: llm_assisted_manual
   note: User stated all jobs applied; marking Zfort applied.
+- changed_at: '2026-08-03T19:18:35Z'
+  vacancy_id: 47cb9e0b-3736-4fd2-a85f-bc03402d002b
+  directory: 2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland
+  company: Archer Recruitment
+  title: Senior PHP Developer - Remote (Ireland)
+  from_status: found
+  to_status: applied
+  reason: application submitted
+  reason_key: application-submitted
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User reported the application as submitted.

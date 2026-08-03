@@ -16,11 +16,13 @@ sources:
     contact: Olga Torres, +353 1 649 8519, olga.torres@archer.ie
 published_at: '2026-08-03'
 discovered_at: '2026-08-03T19:05:59Z'
-updated_at: '2026-08-03T19:05:59Z'
-status: found
+updated_at: '2026-08-03T19:18:35Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-03T19:05:59Z'
+- status: applied
+  changed_at: '2026-08-03T19:18:35Z'
 analysis_priority: 100
 fingerprint: sha256:3b4f94de77240668940a92d157cd4b32942e538d130e2580267a3baa12423a99
 data_source: manual
