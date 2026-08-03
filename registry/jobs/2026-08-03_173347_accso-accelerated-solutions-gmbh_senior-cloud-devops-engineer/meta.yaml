@@ -1,0 +1,31 @@
+schema_version: 2
+id: 518252d6-a86c-4e99-8b24-d5f3613669fb
+title: Senior Cloud & DevOps Engineer*
+company: Accso – Accelerated Solutions GmbH
+company_url: null
+location: Darmstadt
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-cloud-devops-engineer-darmstadt-294558
+  url: https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-cloud-devops-engineer-darmstadt-294558
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-08-03T13:20:10Z'
+discovered_at: '2026-08-03T17:33:47Z'
+updated_at: '2026-08-03T17:33:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:47Z'
+analysis_priority: 0
+fingerprint: sha256:055a078f4e93e53921c05dbe54269c02056690a9a3eb15fb37fc3d6dc3436baa
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

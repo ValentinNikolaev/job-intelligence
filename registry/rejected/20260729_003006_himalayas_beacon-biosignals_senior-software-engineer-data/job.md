@@ -4,8 +4,8 @@ Posted: 2026-07-27T13:43:24Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: Python + R is not a target stack
+- Category: stale
+- Reason: published_at 2026-07-27T13:43:24Z is older than 7 days
 
 [Beacon Biosignals](https://himalayas.app/companies/beacon-biosignals) is on a mission to revolutionize precision medicine for the brain. We are the leading at-home EEG platform supporting clinical development of novel therapeutics for neurological, psychiatric, and sleep disorders. Our FDA 510(k)-cleared Waveband EEG headband and AI algorithms enable quantitative biomarker discovery and implementation. Beacon’s Clinico-EEG database contains EEG data from nearly 100,000 patients, and our cloud-native analytics platform powers large-scale RWD/RWE retrospective and predictive studies. [Beacon Biosignals](https://himalayas.app/companies/beacon-biosignals) is changing the way that patients are treated for any disorder that affects brain physiology.
 

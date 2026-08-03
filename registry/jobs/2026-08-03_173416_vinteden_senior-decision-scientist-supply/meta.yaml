@@ -1,0 +1,27 @@
+schema_version: 2
+id: 6c277a3f-6d97-4327-9bd8-24def947cf52
+title: Senior Decision Scientist, Supply
+company: Vinteden
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-decision-scientist-supply-berlin-20609
+  url: https://www.arbeitnow.com/jobs/companies/vinteden/senior-decision-scientist-supply-berlin-20609
+  metadata:
+    tags:
+    - Data Science & Analytics
+published_at: '2026-08-03T12:16:38Z'
+discovered_at: '2026-08-03T17:34:16Z'
+updated_at: '2026-08-03T17:34:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:34:16Z'
+analysis_priority: 0
+fingerprint: sha256:8a609f14cbe8ab62cf80bdf43b7df96ba751844a791102f8ee91d10da164c432
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

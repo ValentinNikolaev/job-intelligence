@@ -1,0 +1,31 @@
+schema_version: 2
+id: a8354b03-f43d-45b8-bfea-7b0b9d92b30e
+title: (Senior) Digital Designer Agentic AI*
+company: Accso – Accelerated Solutions GmbH
+company_url: null
+location: Darmstadt
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-digital-designer-agentic-ai-darmstadt-76815
+  url: https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-digital-designer-agentic-ai-darmstadt-76815
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-08-03T13:20:10Z'
+discovered_at: '2026-08-03T17:33:41Z'
+updated_at: '2026-08-03T17:33:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:41Z'
+analysis_priority: 0
+fingerprint: sha256:5d6d55cbc7006a6b33259e0b739aa1fc6f25991764d1a519d09fffecd900c5ec
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

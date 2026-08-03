@@ -1,11 +1,11 @@
 # Senior Backend Engineer
 
-Posted: 2026-07-26T00:00:00.0000000
+Posted: 2026-08-03T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-26T00:00:00.0000000 is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 ...and traffic that doesn't wait for you to catch up. We need a **backend engineer **who thinks in systems, not just services. You'll own the architecture... ...and founders, fast
 

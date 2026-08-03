@@ -1,0 +1,31 @@
+schema_version: 2
+id: e5d399ed-cfc7-4195-91f8-17b197af9b0b
+title: Senior Software Security Engineer*
+company: Accso – Accelerated Solutions GmbH
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: Full-time permanent, manager
+sources:
+- source: arbeitnow
+  source_job_id: senior-software-security-engineer-frankfurt-am-main-421149
+  url: https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-software-security-engineer-frankfurt-am-main-421149
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - manager
+published_at: '2026-08-03T13:20:10Z'
+discovered_at: '2026-08-03T17:33:49Z'
+updated_at: '2026-08-03T17:33:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:49Z'
+analysis_priority: 0
+fingerprint: sha256:a95e24628ae15fa04d32cdcec251f1a58b255edb6b751f5d92a4bac25c7ee1ab
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -4,8 +4,8 @@ Posted: 2026-07-27T13:58:01.090+00:00
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-27T13:58:01.090+00:00 is older than 7 days
 
 The AI orchestration of your wildest imagination.
 

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 13a3b374-8f20-49be-b174-281b902f3500
+title: Senior Analytics Engineer, Marketing DSA
+company: Vinteden
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-analytics-engineer-marketing-dsa-berlin-325386
+  url: https://www.arbeitnow.com/jobs/companies/vinteden/senior-analytics-engineer-marketing-dsa-berlin-325386
+  metadata:
+    tags:
+    - Data Science & Analytics
+published_at: '2026-08-03T12:16:37Z'
+discovered_at: '2026-08-03T17:34:19Z'
+updated_at: '2026-08-03T17:34:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:34:19Z'
+analysis_priority: 0
+fingerprint: sha256:2fdf235a7033fb15d9f3123bf4641fb442439ba671a1663b97ca3f1b994df1e3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: area-manager-operations-bischofsheim-200188
+source_url: https://www.arbeitnow.com/jobs/companies/rohlik/area-manager-operations-bischofsheim-200188
+title: Area Manager Operations (m/w/d)
+company: Rohlik
+location: Bischofsheim bei Frankfurt, Germany
+published_at: '2026-08-03T15:01:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:32:09Z'
+rejected_at: '2026-08-03T17:32:09Z'

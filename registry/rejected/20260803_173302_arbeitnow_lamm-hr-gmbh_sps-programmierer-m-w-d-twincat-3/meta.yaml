@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sps-programmierer-twincat-3-mannheim-417554
+source_url: https://www.arbeitnow.com/jobs/companies/lamm-hr-gmbh/sps-programmierer-twincat-3-mannheim-417554
+title: SPS-Programmierer (m/w/d) Twincat-3
+company: Lamm HR GmbH
+location: Mannheim, Rheinland-Pfalz, Deutschland
+published_at: '2026-08-03T14:30:24Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:33:02Z'
+rejected_at: '2026-08-03T17:33:02Z'

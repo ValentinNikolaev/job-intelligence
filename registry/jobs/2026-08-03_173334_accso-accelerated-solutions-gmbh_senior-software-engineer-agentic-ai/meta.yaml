@@ -1,0 +1,31 @@
+schema_version: 2
+id: 0b200e4a-de4e-4a06-a7b1-75d082a01d71
+title: Senior Software Engineer* Agentic AI
+company: Accso – Accelerated Solutions GmbH
+company_url: null
+location: Darmstadt
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-software-engineer-agentic-ai-darmstadt-123659
+  url: https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-software-engineer-agentic-ai-darmstadt-123659
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-08-03T13:20:10Z'
+discovered_at: '2026-08-03T17:33:34Z'
+updated_at: '2026-08-03T17:33:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:34Z'
+analysis_priority: 0
+fingerprint: sha256:6e5d787aae12822088e708514f48b40a4bf87d0285caad4a908d27a7d839468d
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

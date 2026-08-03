@@ -1,0 +1,33 @@
+schema_version: 2
+id: d05c94ed-44ac-4318-bcd8-dbd9e027e192
+title: Senior Backend Engineer (AI Product)
+company: Gismart
+company_url: https://jobs.dou.ua/companies/gismart_com/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368265'
+  url: https://jobs.dou.ua/companies/gismart_com/vacancies/368265/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 3 серпня
+    listing_summary: 'About us: Gismart is a value-driven mobile app developer with
+      a strong presence in the Health & Wellness, Utilities, and Music app markets.'
+published_at: '2026-08-03'
+discovered_at: '2026-08-03T17:36:00Z'
+updated_at: '2026-08-03T17:36:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:36:00Z'
+analysis_priority: 100
+fingerprint: sha256:8b35dc231e72e85967dbf64dc4ea806e7e2151c1a7f6b4030b901e3008061f37
+data_source: dou
+content_source: dou
+company_content_source: dou

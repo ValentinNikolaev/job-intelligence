@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: ausbildung-zum-industriekaufmann-zur-industriekauffrau-wurzburg-249792
+source_url: https://www.arbeitnow.com/jobs/companies/vision4quality-gmbh/ausbildung-zum-industriekaufmann-zur-industriekauffrau-wurzburg-249792
+title: Ausbildung zum Industriekaufmann / zur Industriekauffrau (m/w/d)
+company: Vision4Quality GmbH
+location: Würzburg
+published_at: '2026-08-03T13:00:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:34:01Z'
+rejected_at: '2026-08-03T17:34:01Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: regionaler-verkaufsleiter-fur-baden-karlsruhe-491136
+source_url: https://www.arbeitnow.com/jobs/companies/timac-agro-deutschland-gmbh/regionaler-verkaufsleiter-fur-baden-karlsruhe-491136
+title: Regionaler Verkaufsleiter (m/w/d) für Baden
+company: Timac Agro Deutschland GmbH
+location: Karlsruhe
+published_at: '2026-08-03T12:01:06Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:34:31Z'
+rejected_at: '2026-08-03T17:34:31Z'

@@ -2,11 +2,11 @@ schema_version: 1
 source: dou
 source_job_id: '366064'
 source_url: https://jobs.dou.ua/companies/sombra/vacancies/366064/
-title: Middle/Senior Backend (TypeScript+Golang) Engineer
+title: Middle Backend (TypeScript+Golang) Engineer
 company: Sombra
 location: віддалено
 published_at: '2026-07-16'
 rejection_category: stale
 rejection_reason: published_at 2026-07-16 is older than 7 days
-updated_at: '2026-08-03T13:06:32Z'
+updated_at: '2026-08-03T17:36:26Z'
 rejected_at: '2026-08-02T00:33:41Z'

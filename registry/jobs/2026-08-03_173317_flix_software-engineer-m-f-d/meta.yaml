@@ -1,0 +1,24 @@
+schema_version: 2
+id: eb97486e-8f11-4686-8dde-93bdf551f303
+title: Software Engineer (m/f/d)
+company: Flix
+company_url: null
+location: Berlin, Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: software-engineer-berlin-310552
+  url: https://www.arbeitnow.com/jobs/companies/flix/software-engineer-berlin-310552
+published_at: '2026-08-03T13:45:56Z'
+discovered_at: '2026-08-03T17:33:17Z'
+updated_at: '2026-08-03T17:33:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:17Z'
+analysis_priority: 0
+fingerprint: sha256:e7c5b1b6a938c0e36a39c0787845988c44e821533c327c1c2bc4d3e3159bfc3b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,4 +1,4 @@
-# Middle/Senior Backend (TypeScript+Golang) Engineer
+# Middle Backend (TypeScript+Golang) Engineer
 
 Posted: 2026-07-16
 

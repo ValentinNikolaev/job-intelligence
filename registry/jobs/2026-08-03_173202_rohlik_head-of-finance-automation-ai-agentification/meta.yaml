@@ -1,0 +1,29 @@
+schema_version: 2
+id: 97ae3296-aef9-40b0-abd7-b78e32786cb9
+title: Head of Finance Automation/ AI Agentification
+company: Rohlik
+company_url: null
+location: München, Germany
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: head-of-finance-automation-ai-agentification-munich-230177
+  url: https://www.arbeitnow.com/jobs/companies/rohlik/head-of-finance-automation-ai-agentification-munich-230177
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - Full Time
+published_at: '2026-08-03T15:01:03Z'
+discovered_at: '2026-08-03T17:32:02Z'
+updated_at: '2026-08-03T17:32:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:32:02Z'
+analysis_priority: 0
+fingerprint: sha256:92a151ec475e341e3d34be39a0b78aea89cbf9a7b49efe0f73c50bfaa12ad1ba
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: software-tester-erlangen-376204
+source_url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/software-tester-erlangen-376204
+title: Software-Tester (m/w/x)
+company: K-tronik GmbH
+location: Erlangen
+published_at: '2026-08-03T14:30:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:32:56Z'
+rejected_at: '2026-08-03T17:32:56Z'

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 7f3b0974-bded-4614-9d35-4b883581aec4
+title: Senior Data Scientist, Buyer
+company: Vinteden
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-data-scientist-buyer-berlin-421572
+  url: https://www.arbeitnow.com/jobs/companies/vinteden/senior-data-scientist-buyer-berlin-421572
+  metadata:
+    tags:
+    - Data Science & Analytics
+published_at: '2026-08-03T12:16:38Z'
+discovered_at: '2026-08-03T17:34:18Z'
+updated_at: '2026-08-03T17:34:18Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:34:18Z'
+analysis_priority: 0
+fingerprint: sha256:60c42b43f8faae372d7127787940f0a807017ef2e23aee1a9a1827a804aeaf92
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

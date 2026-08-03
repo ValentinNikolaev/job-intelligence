@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: leiter-finance-osnabruck-53259
+source_url: https://www.arbeitnow.com/jobs/companies/co-ship-consult-gmbh/leiter-finance-osnabruck-53259
+title: Leiter Finance (m/w/d), Osnabrück
+company: Co-ship consult GmbH
+location: Osnabrück
+published_at: '2026-08-03T12:30:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:34:07Z'
+rejected_at: '2026-08-03T17:34:07Z'

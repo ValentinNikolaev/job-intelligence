@@ -1,0 +1,30 @@
+schema_version: 2
+id: d94e80ed-b243-4efc-aa92-063bd991db53
+title: Local Office Manager - Part-time
+company: AGICAP Deutschland
+company_url: null
+location: Berlin
+remote: false
+employment_type: manager
+sources:
+- source: arbeitnow
+  source_job_id: local-office-manager-part-time-berlin-488310
+  url: https://www.arbeitnow.com/jobs/companies/agicap-deutschland/local-office-manager-part-time-berlin-488310
+  metadata:
+    tags:
+    - Management
+    - Team Leader
+    job_types:
+    - manager
+published_at: '2026-08-03T15:00:38Z'
+discovered_at: '2026-08-03T17:32:26Z'
+updated_at: '2026-08-03T17:32:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:32:26Z'
+analysis_priority: 0
+fingerprint: sha256:cbbfa4a686c69f38cefde08b3b85518fbfc0e03804ba0e0b1e86aa5a9f40e794
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

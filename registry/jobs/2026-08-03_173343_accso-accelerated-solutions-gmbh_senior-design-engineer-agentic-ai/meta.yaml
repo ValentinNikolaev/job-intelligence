@@ -1,0 +1,31 @@
+schema_version: 2
+id: e628c4dc-e7cd-4ed5-82f6-b5e3264406df
+title: (Senior) Design Engineer Agentic AI*
+company: Accso – Accelerated Solutions GmbH
+company_url: null
+location: Darmstadt
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-design-engineer-agentic-ai-darmstadt-802
+  url: https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-design-engineer-agentic-ai-darmstadt-802
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-08-03T13:20:10Z'
+discovered_at: '2026-08-03T17:33:43Z'
+updated_at: '2026-08-03T17:33:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:43Z'
+analysis_priority: 0
+fingerprint: sha256:af1e17e2384a9cc55f7b1a71d9d8d9aa11efccc602a71947c268ac2bd22789bb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: softwaretest-manager-erlangen-14540
+source_url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/softwaretest-manager-erlangen-14540
+title: Softwaretest-Manager (m/w/x)
+company: K-tronik GmbH
+location: Erlangen
+published_at: '2026-08-03T14:30:46Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-03T17:32:52Z'
+rejected_at: '2026-08-03T17:32:52Z'

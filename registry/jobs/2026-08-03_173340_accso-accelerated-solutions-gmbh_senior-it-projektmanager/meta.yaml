@@ -1,0 +1,31 @@
+schema_version: 2
+id: af696841-94d2-4745-bca6-191232fa8cbf
+title: Senior IT-Projektmanager*
+company: Accso – Accelerated Solutions GmbH
+company_url: null
+location: München
+remote: false
+employment_type: Full-time permanent, experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-it-projektmanager-munchen-372669
+  url: https://www.arbeitnow.com/jobs/companies/accso-accelerated-solutions-gmbh/senior-it-projektmanager-munchen-372669
+  metadata:
+    tags:
+    - Internet and software
+    - high school coursework
+    job_types:
+    - Full-time permanent
+    - experienced
+published_at: '2026-08-03T13:20:10Z'
+discovered_at: '2026-08-03T17:33:40Z'
+updated_at: '2026-08-03T17:33:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:33:40Z'
+analysis_priority: 0
+fingerprint: sha256:2a1b02dd1f0305d933d6669005a28c41ea8b674960e196ac73d59ede4b3d0de0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

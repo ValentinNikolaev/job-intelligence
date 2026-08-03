@@ -1,0 +1,27 @@
+schema_version: 2
+id: 6c35f7df-83fb-451f-85cb-af92c5521a00
+title: Lead Data Scientist, Revenue - Ads, Revenue
+company: Vinteden
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: lead-data-scientist-revenue-ads-revenue-berlin-285714
+  url: https://www.arbeitnow.com/jobs/companies/vinteden/lead-data-scientist-revenue-ads-revenue-berlin-285714
+  metadata:
+    tags:
+    - Data Science & Analytics
+published_at: '2026-08-03T12:16:37Z'
+discovered_at: '2026-08-03T17:34:22Z'
+updated_at: '2026-08-03T17:34:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-03T17:34:22Z'
+analysis_priority: 0
+fingerprint: sha256:5fe12e935f59388b3fd97c37730071f306e8a17f37b5fd9d627e204690e2f28a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
