@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:28027ad16e7bc0bf6a94bf13816525b4d26af592a8deb52f9460bc259778c27f
+company_version: sha256:702b614abfb12a0b0b060f53f89bb33852b6a24fac432b38b6939030cf4a91e4
+prompt_version: sha256:740f7a9f62769e5d7a4bbf1f57e9a95cad65436ea53081a6a55f197a77f9a385
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_sfox_BackendDeveloperPHPForAGlobalIGamingCompany
+generated_at: '2026-08-04T18:07:12Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_sfox_BackendDeveloperPHPForAGlobalIGamingCompany.md
+- CV_ValentinNikolaev_sfox_BackendDeveloperPHPForAGlobalIGamingCompany.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
