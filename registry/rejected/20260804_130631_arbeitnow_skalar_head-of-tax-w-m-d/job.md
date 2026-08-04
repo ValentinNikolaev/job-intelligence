@@ -97,4 +97,4 @@ Wir sind ein erfahrenes Gründerteam aus Steuerberatern, Digital-Unternehmern un
 
 Werde Teil von Skalar — und gestalte mit uns das modernste Mandantenerlebnis Deutschlands.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

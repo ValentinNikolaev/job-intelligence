@@ -83,4 +83,4 @@ Nicht zögern! Auch wenn nicht alle genannten Kompetenzen vollständig erfüllt 
 
 Hinweis: Innerhalb unserer Unternehmensgruppe verwenden wir aus Gründen der Lesbarkeit das geschlechtsneutral zu verstehende generische Maskulinum als Formulierungsvariante.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

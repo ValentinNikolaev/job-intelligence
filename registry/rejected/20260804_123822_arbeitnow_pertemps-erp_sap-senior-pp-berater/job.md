@@ -57,4 +57,4 @@ Sie sind erfahren im SAP PP-Umfeld und möchten anspruchsvolle Transformationspr
 
 - Ein erfahrenes SAP-Team mit kurzen Entscheidungswegen und ausgezeichneten Entwicklungsperspektiven
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

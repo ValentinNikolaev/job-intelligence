@@ -52,4 +52,4 @@ With colleagues from over 50 nationalities, we offer an inclusive environment wh
 
 **Ready to shape the future of Technical SEO? Apply now and join AutoScout24 Group.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

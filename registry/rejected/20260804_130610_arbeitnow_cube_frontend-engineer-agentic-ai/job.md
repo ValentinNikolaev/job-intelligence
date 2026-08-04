@@ -129,4 +129,4 @@ If you are passionate about leveraging technology to transform regulatory compli
 
 CUBE is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

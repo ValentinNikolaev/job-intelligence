@@ -105,4 +105,4 @@ Du hast großen Spaß an der Arbeit im Team
 
 Abhängig von deinen Fähigkeiten und Erfahrungen finden wir die passende Stelle für dich in unserem Team.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

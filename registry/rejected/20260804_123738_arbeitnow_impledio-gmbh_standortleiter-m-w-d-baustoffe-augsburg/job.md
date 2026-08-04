@@ -49,4 +49,4 @@ Für unseren Mandanten, ein erfolgreiches und etabliertes Unternehmen im Baustof
 
 - Langfristige Perspektive mit attraktiven Entwicklungsmöglichkeiten innerhalb einer erfolgreichen Unternehmensgruppe
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

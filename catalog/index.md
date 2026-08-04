@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 629
+Total vacancies: 631
 
-- Found: 455
+- Found: 457
 - Applied: 10
 - Rejected: 162
 - Closed: 2
@@ -18,6 +18,8 @@ Total vacancies: 629
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-04 | [Omegga](../registry/jobs/2026-08-04_140528_omegga_working-student-hr-people-operations/) | [Working Student HR & People Operations](../registry/jobs/2026-08-04_140528_omegga_working-student-hr-people-operations/job.md) | Munich | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/omegga/working-student-hr-people-operations-munich-57311) | — | — | — | — | — |
+| 2026-08-04 | [Statista](../registry/jobs/2026-08-04_140527_statista_head-of-data-collection-m-f-d/) | [Head of Data Collection (m/f/d)](../registry/jobs/2026-08-04_140527_statista_head-of-data-collection-m-f-d/job.md) | Hamburg or Berlin | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/statista/head-of-data-collection-hamburg-or-berlin-258408) | — | — | — | — | — |
 | 2026-08-04 | [1KOMMA5˚](../registry/jobs/2026-08-04_130727_1komma5_staff-engineer-heartbeat-ai-m-f-d/) | [Staff Engineer - Heartbeat AI (m/f/d)](../registry/jobs/2026-08-04_130727_1komma5_staff-engineer-heartbeat-ai-m-f-d/job.md) | Berlin | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/1komma50/staff-engineer-heartbeat-ai-berlin-388590) | — | — | — | — | — |
 | 2026-08-04 | [Knuddels GmbH & Co. KG](../registry/jobs/2026-08-04_130647_knuddels-gmbh-co-kg_werkstudent-in-automation-ki-prozessmanagement-m/) | [Werkstudent:in Automation, KI & Prozessmanagement (m/w/d) - remote oder Karlsruhe](../registry/jobs/2026-08-04_130647_knuddels-gmbh-co-kg_werkstudent-in-automation-ki-prozessmanagement-m/job.md) | Homeoffice | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/knuddels-gmbh-co-kg/werkstudentin-automation-ki-prozessmanagement-remote-oder-karlsruhe-452537) | — | — | — | — | — |
 | 2026-08-04 | [Zeit Ai](../registry/jobs/2026-08-04_130639_zeit-ai_wild-card/) | [Wild Card](../registry/jobs/2026-08-04_130639_zeit-ai_wild-card/job.md) | Munich | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/zeit-ai/wild-card-munich-343005) | — | — | — | — | — |
@@ -36,5 +38,3 @@ Total vacancies: 629
 | 2026-08-04 | [autoscout24](../registry/jobs/2026-08-04_130539_autoscout24_junior-content-marketing-seo-manager-m-w-d-itali/) | [Junior Content Marketing & SEO Manager (m/w/d) - Italian Market - parental leave cover](../registry/jobs/2026-08-04_130539_autoscout24_junior-content-marketing-seo-manager-m-w-d-itali/job.md) | — | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/autoscout24/junior-content-marketing-seo-manager-italian-market-parental-leave-cover-240803) | — | — | — | — | — |
 | 2026-08-04 | [autoscout24](../registry/jobs/2026-08-04_130527_autoscout24_technical-seo-lead-f-m-d/) | [Technical SEO Lead (f/m/d)](../registry/jobs/2026-08-04_130527_autoscout24_technical-seo-lead-f-m-d/job.md) | — | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/autoscout24/technical-seo-lead-486594) | — | — | — | — | — |
 | 2026-08-04 | [ApricusIT](../registry/jobs/2026-08-04_124047_apricusit_typo3-certified-developer/) | [TYPO3 Certified Developer](../registry/jobs/2026-08-04_124047_apricusit_typo3-certified-developer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-04 | [Dou](https://jobs.dou.ua/companies/apricusit/vacancies/368398/) | [Open](../registry/jobs/2026-08-04_124047_apricusit_typo3-certified-developer/company.md) | — | — | — | — |
-| 2026-08-04 | [Ralabs](../registry/jobs/2026-08-04_124046_ralabs_senior-full-stack-php-developer/) | [Senior Full Stack PHP Developer](../registry/jobs/2026-08-04_124046_ralabs_senior-full-stack-php-developer/job.md) | віддалено | Dou | Found | 2026-08-04 | [Dou](https://jobs.dou.ua/companies/ralabs/vacancies/368411/) | [Open](../registry/jobs/2026-08-04_124046_ralabs_senior-full-stack-php-developer/company.md) | — | — | — | — |
-| 2026-08-04 | [Faria](../registry/jobs/2026-08-04_124045_faria_senior-php-laravel-engineer/) | [Senior PHP/Laravel Engineer](../registry/jobs/2026-08-04_124045_faria_senior-php-laravel-engineer/job.md) | Краків (Польща), віддалено | Dou | Found | 2026-08-04 | [Dou](https://jobs.dou.ua/companies/faria-education-group/vacancies/368440/) | [Open](../registry/jobs/2026-08-04_124045_faria_senior-php-laravel-engineer/company.md) | — | — | — | — |

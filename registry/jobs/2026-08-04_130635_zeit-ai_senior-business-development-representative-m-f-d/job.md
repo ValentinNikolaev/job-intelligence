@@ -130,4 +130,4 @@ Compensation: €70K – €100K • Offers Equity • €5k referral bonus
 
 - • Target comp (uncapped upside) €70K – €100K • Offers Equity • €5k referral bonus
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

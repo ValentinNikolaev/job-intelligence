@@ -46,4 +46,4 @@ AutoScout24 offers benefits that support independent and effective working, incl
 
 With colleagues representing more than 50 nationalities, we foster a diverse and inclusive workplace where everyone feels welcome and valued. We support your growth with the right tools, training, and development opportunities.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -124,4 +124,4 @@ Wir freuen uns über Bewerbungen von Menschen aller Herkunft, unabhängig von Ge
 
 P.S.: Wenn du mehr über den Bewerbungsprozess erfahren möchtest, lies gerne Ekas Blogartikel: [https://dev.to/epilot/how-to-get-hired-at-epilot-step-by-step-guide-4ei1](https://dev.to/epilot/how-to-get-hired-at-epilot-step-by-step-guide-4ei1)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

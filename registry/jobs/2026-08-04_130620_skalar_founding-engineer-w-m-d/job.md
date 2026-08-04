@@ -125,4 +125,4 @@ Get to know a fellow engineer, virtually or in person (up to you)
 
 Meet our whole founding team during a final interview (in-person, ~3h, incl. live coding)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

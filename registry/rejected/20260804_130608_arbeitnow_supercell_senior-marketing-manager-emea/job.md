@@ -150,4 +150,4 @@ Many candidates with great skills and experience second-guess themselves. The ba
 Wishing you all the best,
 The Supercell Recruitment team
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

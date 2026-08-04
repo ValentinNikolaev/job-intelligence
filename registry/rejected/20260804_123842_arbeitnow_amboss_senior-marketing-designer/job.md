@@ -135,4 +135,4 @@ We believe that diversity is a powerful driver of innovation and progress. That�
 
 Even if you don’t meet every single point in the job description, we still encourage you to apply. We’d love to hear from you!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

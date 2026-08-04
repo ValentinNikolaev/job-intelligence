@@ -94,4 +94,4 @@ Scope and access: a seat at the table with product, sales leadership, and the ex
 
 A company at an inflection point: strong European base, fresh US market entry, and a proven platform to build the story on.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

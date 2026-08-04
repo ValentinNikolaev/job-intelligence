@@ -89,4 +89,4 @@ This in-person role is based in Jena, Germany. Candidates are expected to be loc
 
 - Receive highly competitive stock options
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

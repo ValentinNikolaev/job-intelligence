@@ -156,4 +156,4 @@ Betriebliche Altersvorsorge – 50 € monatlicher Zuschuss zu deiner betrieblic
 
 Außerdem sind unsere Offices dog-friendly. Snacks, Obst und Drinks stehen allen Mates jederzeit kostenlos zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

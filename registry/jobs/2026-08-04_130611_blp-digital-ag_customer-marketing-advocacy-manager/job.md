@@ -88,4 +88,4 @@ A company at an inflection point: strong European base, fresh US market entry, a
 
 Direct exposure to executive customers and to BLP's leadership team.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -69,4 +69,4 @@ Wir sind ein familiengeführtes Unternehmen, das Wert auf kurze Entscheidungsweg
 
 Nach Eingang deiner Bewerbung bekommst du innerhalb einer Woche eine Antwort von Alina oder Betül. Das erste Kennenlerngespräch findet in der Regel online über MS-Teams statt. Im zweiten Schritt laden wir dich meist persönlich zu uns vor Ort ein. Ganz unkompliziert. Dein Interesse ist geweckt? Dann freuen wir uns darauf, dich kennenzulernen! Bewirb dich jetzt und werde Teil unseres dynamischen Teams. Bei uns erwartet dich ein motiviertes Team, spannende Herausforderungen und die Möglichkeit, dich beruflich weiterzuentwickeln. Du hast Fragen? Schreib uns direkt – wir melden uns.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
