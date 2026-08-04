@@ -289,9 +289,10 @@ Every milestone leaves a runnable or directly testable increment.
 
 ## 15. Open Questions
 
-None block the MVP. Adzuna queries, Jooble query profiles, and Ashby boards live in
-their source-specific YAML configurations. Credentials for authenticated sources belong
-in `sources/.env` for local runs and in task or host environment secrets when scheduled
+None block the MVP. Adzuna queries, CleanJobData searches, Jooble query profiles,
+and Ashby boards live in their source-specific YAML configurations. Credentials
+for authenticated sources belong in `sources/.env` for local runs and in task or
+host environment secrets when scheduled
 tasks use CodexSandboxOnline for sandboxed command execution.
 
 The reviewed design maintains the invariants: multiple source records merge into one canonical directory, unchanged reruns do not rewrite files, and a new collector requires only a new source module. It contains no database, web UI, application workflow, LLM, queue, or speculative service abstraction.

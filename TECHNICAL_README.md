@@ -6,9 +6,9 @@ A minimal local-first collector that turns source-specific vacancies into one hu
 Source API → collector → normalized job → deduplication → registry/jobs → registry/index.md
 ```
 
-The current MVP implements Adzuna, Arbeitnow, DOU, Himalayas, Jobicy, Jooble,
-public Ashby and Greenhouse job-board collectors, and custom company-board
-monitoring.
+The current MVP implements Adzuna, Arbeitnow, CleanJobData, DOU, Himalayas,
+Jobicy, Jooble, public Ashby and Greenhouse job-board collectors, and custom
+company-board monitoring.
 
 ## Requirements
 
@@ -39,6 +39,7 @@ Edit `sources/.env` for local interactive runs:
 ADZUNA_APP_ID=your-app-id
 ADZUNA_APP_KEY=your-app-key
 JOOBLE_API_KEY=your-api-key
+CLEANJOBDATA_API_KEY=your-api-key
 TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 TELEGRAM_CHAT_ID=your-telegram-chat-id
 ```
@@ -49,6 +50,7 @@ TELEGRAM_CHAT_ID=your-telegram-chat-id
 ADZUNA_APP_ID
 ADZUNA_APP_KEY
 JOOBLE_API_KEY
+CLEANJOBDATA_API_KEY
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHAT_ID
 ```
@@ -79,6 +81,14 @@ and support multiple named query profiles. See the
 [Jooble collector guide](sources/jooble/README.md) for all fields, fair
 round-robin pagination, and the caveat around Jooble's unspecified 500-request
 quota period.
+
+CleanJobData searches live in
+[`sources/cleanjobdata/config.yaml`](sources/cleanjobdata/config.yaml). The
+collector uses the `/jobs` list endpoint with `extra_fields=description`, cursor
+pagination, bearer authentication via `CLEANJOBDATA_API_KEY`, and an internal
+1 req/sec throttle for the free trial rate limit. See the
+[CleanJobData collector guide](sources/cleanjobdata/README.md) for supported
+filters, quotas, and local caching notes.
 
 Ashby boards live in [`sources/ashby/config.yaml`](sources/ashby/config.yaml).
 They use Ashby's public postings endpoint and require no account or API key. See
@@ -140,6 +150,7 @@ deterministic HTML parser.
 python run.py list
 python run.py adzuna
 python run.py arbeitnow
+python run.py cleanjobdata
 python run.py dou
 python run.py himalayas
 python run.py jobicy
