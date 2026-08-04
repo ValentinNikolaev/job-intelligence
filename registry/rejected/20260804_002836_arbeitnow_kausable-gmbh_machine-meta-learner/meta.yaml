@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: machine-meta-learner-heidelberg-235959
+source_url: https://www.arbeitnow.com/jobs/companies/kausable-gmbh/machine-meta-learner-heidelberg-235959
+title: Machine (Meta) Learner
+company: kausable GmbH
+location: Heidelberg
+published_at: '2026-08-03T21:30:34Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T00:28:36Z'
+rejected_at: '2026-08-04T00:28:36Z'

@@ -103,4 +103,4 @@ Availability to collaborate across U.S. and European time zones as needed to sup
 
 At [Constructor.io](http://Constructor.io) we are committed to cultivating a work environment that is diverse, equitable, and inclusive. As an equal opportunity employer, we welcome individuals of all backgrounds and provide equal opportunities to all applicants regardless of their education, diversity of opinion, race, color, religion, gender, gender expression, sexual orientation, national origin, genetics, disability, age, veteran status or affiliation in any other protected group.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

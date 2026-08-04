@@ -102,4 +102,4 @@ High-autonomy, high-impact role at a company with strong early commercial tracti
 
 Based in **Munich or Hamburg, Germany**. On-site presence is required. The team is split across both cities, and both are active hiring locations.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -112,4 +112,4 @@ You've improved our internal AI tooling to significantly accelerate engineering 
 
 Your design decisions have held up under real load and you can explain the tradeoffs you made and what you'd do differently
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

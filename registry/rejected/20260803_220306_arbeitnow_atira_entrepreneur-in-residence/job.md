@@ -107,4 +107,4 @@ Three steps: a first call with one of us to get to know each other, a short case
 
 If this sounds like you, apply. If you're not sure you fit but can't stop thinking about it, apply anyway and tell us why.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

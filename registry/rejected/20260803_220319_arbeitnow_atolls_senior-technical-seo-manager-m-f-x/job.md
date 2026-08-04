@@ -99,4 +99,4 @@ We review every application with equal care and will reach out if your profile a
 
 At Atolls, we want to ensure that all employees can thrive in an inclusive environment. Our employment opportunities are open to every gender, race, religion, age, sexual orientation, ability, place of origin, or socioeconomic status. We remain committed to a culture of diversity, equity and belonging, where all employees are welcomed, respected, connected, and engaged.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

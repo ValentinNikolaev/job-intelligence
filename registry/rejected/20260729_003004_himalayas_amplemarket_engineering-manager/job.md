@@ -4,8 +4,8 @@ Posted: 2026-07-27T22:28:46Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-27T22:28:46Z is older than 7 days
 
 ### What is [Amplemarket](https://himalayas.app/companies/amplemarket) all about?
 

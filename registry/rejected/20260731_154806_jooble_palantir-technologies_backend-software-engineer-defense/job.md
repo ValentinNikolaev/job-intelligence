@@ -1,6 +1,6 @@
 # Backend Software Engineer - Defense
 
-Posted: 2026-08-02T00:00:00.0000000
+Posted: 2026-08-03T00:00:00.0000000
 
 ## Rejection
 

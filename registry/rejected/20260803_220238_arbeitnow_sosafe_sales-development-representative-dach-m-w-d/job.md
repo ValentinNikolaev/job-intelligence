@@ -104,4 +104,4 @@ Mit der Unterstützung führender VCs wie Highland Europe und Global Founders Ca
 
 Wenn du in einem lebendigen, zielorientierten Umfeld aufblühst, das Innovation, Vielfalt und Zusammenarbeit großschreibt – dann bist du bei uns genau richtig!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

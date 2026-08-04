@@ -113,4 +113,4 @@ This role is based **on-site in Munich, Germany**. Candidates must be willing to
 
 Compensation details were not specified for this role. You will be joining as a founding team member at a well-funded seed-stage company (Series A/B pipeline), with the opportunity to grow into a senior People leadership position as the company scales.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

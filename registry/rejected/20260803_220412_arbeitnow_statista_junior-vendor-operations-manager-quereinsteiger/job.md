@@ -77,4 +77,4 @@ Wellpass
 
 *Einige der hier aufgeführten Benefits gelten nur für die deutsche Gesellschaft und für Positionen ab Junior-Level.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

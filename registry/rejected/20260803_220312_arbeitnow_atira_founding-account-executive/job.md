@@ -157,4 +157,4 @@ The first version of the AE playbook is documented and the next AE could pick it
 
 Pricing, packaging, and ICP signal flows back to founders and engineering
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

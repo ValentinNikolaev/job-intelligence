@@ -102,4 +102,4 @@ We also encourage you to reach out to us and discuss any reasonable adjustments 
 
 Want to know more about our dedication to diversity, equity, and inclusion? Check out our efforts [here](https://www.deptagency.com/the-good-company/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

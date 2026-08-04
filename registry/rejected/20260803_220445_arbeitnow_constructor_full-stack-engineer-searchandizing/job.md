@@ -93,4 +93,4 @@ Remote work experience is a plus. Pajamas are optional.
 
 At [Constructor.io](http://Constructor.io) we are committed to cultivating a work environment that is diverse, equitable, and inclusive. As an equal opportunity employer, we welcome individuals of all backgrounds and provide equal opportunities to all applicants regardless of their education, diversity of opinion, race, color, religion, gender, gender expression, sexual orientation, national origin, genetics, disability, age, veteran status or affiliation in any other protected group. Studies have shown that women and people of color may be less likely to apply for jobs unless they meet every one of the qualifications listed. Our primary interest is in finding the best candidate for the job. We encourage you to apply even if you don’t meet all of our listed qualifications.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

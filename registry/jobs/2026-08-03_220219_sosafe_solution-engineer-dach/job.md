@@ -126,4 +126,4 @@ Backed by leading VCs like Highland Europe and Global Founders Capital, we’re 
 
 If you thrive in a vibrant, purpose-driven environment that values innovation, diversity, and collaboration, then this is the place for you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

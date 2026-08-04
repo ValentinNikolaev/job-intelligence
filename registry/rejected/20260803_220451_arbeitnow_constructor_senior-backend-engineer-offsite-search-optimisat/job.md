@@ -107,4 +107,4 @@ Understanding of ETL/ELT workflows on PySpark
 
 ### *Studies have shown that women and people of color may be less likely to apply for jobs unless they meet every one of the qualifications listed. Our primary interest is in finding the best candidate for the job. We encourage you to apply even if you don’t meet all of our listed qualifications.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

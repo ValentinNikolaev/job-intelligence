@@ -62,4 +62,4 @@ At our heart, we define ourselves by a culture of ownership, intellectual curios
 
 *If you have any questions, feel free to send us a message at -----
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

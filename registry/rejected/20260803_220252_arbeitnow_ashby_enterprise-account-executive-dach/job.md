@@ -229,4 +229,4 @@ Compensation: €175.5K – €261K • Offers Equity • Offers Commission • 
 - UK Tier 1 - Remote • OTE £229.5K – £261K • Offers Equity • Offers Commission
 - UK Tier 2 - Remote • OTE £202.5K – £230K • Offers Equity • Offers Commission
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

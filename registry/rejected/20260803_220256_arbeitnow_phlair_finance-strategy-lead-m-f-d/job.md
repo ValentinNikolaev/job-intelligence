@@ -147,4 +147,4 @@ Goals matter: We do everything to achieve our goals. **If your workstream is the
 
 **Don't tick every box?** We value potential and spikes over perfect resumes. If you believe you can contribute to our mission at this intensity level, tell us why.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

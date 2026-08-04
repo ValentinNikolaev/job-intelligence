@@ -77,4 +77,4 @@ This role sits at the intersection of Engineering, Product, and the wider busine
 
 **We understand the important role that diversity plays in our success. Different backgrounds, experiences and ideas push us further and raise the bar. We’re committed to developing an inclusive and safe culture where everyone — regardless of colour, race, religion, sex, origin, sexuality, disability, marital status, citizenship or gender identity — knows that they are an integral part of the team and can bring their full potential to their work.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -85,4 +85,4 @@ Ideally: you have built something of your own, took a leading role in a student 
 
 **Most importantly:** Collaborate & thrive in a high-performing but caring culture. We will own the industrial sales function but will do so with modesty and integrity.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

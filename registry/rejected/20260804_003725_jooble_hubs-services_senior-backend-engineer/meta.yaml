@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8010014002478359164'
+source_url: https://jooble.org/away/-8010014002478359164?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=18&brelb=10&scr=1960.7311&bscr=1960.7311&aq=5592213192413812759&elckey=966308542260228868
+title: Senior Backend Engineer
+company: Hubs Services
+location: United States
+published_at: '2026-08-03T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T00:37:25Z'
+rejected_at: '2026-08-04T00:37:25Z'
