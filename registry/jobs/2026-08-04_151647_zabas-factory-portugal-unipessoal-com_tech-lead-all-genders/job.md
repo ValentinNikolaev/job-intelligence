@@ -134,4 +134,4 @@ Du begegnest Kolleginnen und Kollegen mit Respekt – nicht nur als Selbstverst�
 
 In unserer offenen und einladenden Kultur stehen Deine Stärken im Mittelpunkt. Wir glauben daran, dass die besten Jobs diejenigen sind, an denen Du persönlich wachsen kannst, die auf Deinen einzigartigen Fähigkeiten basieren und Dir tagtäglich Freude bereiten. Bei uns genießt Du die Freiheiten und die dynamische Atmosphäre eines Start-up-Unternehmens, während Du gleichzeitig von unserem tiefgehenden Fachwissen und einem seit 2002 stetig wachsenden, treuen Kundenstamm profitierst. Deine kreative Freiheit ist uns wichtig, denn wir sind fest überzeugt, dass sie der Schlüssel zu herausragenden Ergebnissen ist
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

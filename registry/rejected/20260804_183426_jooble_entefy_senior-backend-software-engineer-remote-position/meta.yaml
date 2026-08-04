@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8576565716246332361'
+source_url: https://jooble.org/desc/-8576565716246332361?ckey=remote+senior+backend+engineer&rgn=55180&pos=3&groupId=2134052230&elckey=9048298042572983091&p=1&aq=4596236325443817839&cid=15922&jobAge=12&brelb=115&bscr=2893.8906&scr=2893.8906
+title: Senior Backend Software Engineer (Remote Position)
+company: Entefy
+location: Remote
+published_at: '2026-08-04T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T18:34:26Z'
+rejected_at: '2026-08-04T18:34:26Z'

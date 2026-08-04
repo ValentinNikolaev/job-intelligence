@@ -81,4 +81,4 @@ Compensation: €112,500 – €170,336 • Multiple Ranges
 - Netherlands Compensation Range • On-target Earning €136,269 – €170,336
 - UK Compensation Range • On-target Earning £127,656 – £159,570
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

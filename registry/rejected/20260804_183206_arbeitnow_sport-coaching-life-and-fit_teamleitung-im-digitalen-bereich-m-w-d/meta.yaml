@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teamleitung-im-digitalen-bereich-bischofsheim-in-der-rhon-123213
+source_url: https://www.arbeitnow.com/jobs/companies/sport-coaching-life-and-fit/teamleitung-im-digitalen-bereich-bischofsheim-in-der-rhon-123213
+title: Teamleitung im digitalen Bereich (m/w/d)
+company: Sport Coaching Life and Fit
+location: Bischofsheim in der Rhön
+published_at: '2026-08-04T16:31:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T18:32:06Z'
+rejected_at: '2026-08-04T18:32:06Z'

@@ -178,4 +178,4 @@ Posted: 2026-08-04T15:15:51Z
 
 ##### Join us in building the healthcare we all dream of!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
