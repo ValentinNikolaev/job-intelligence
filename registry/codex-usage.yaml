@@ -1005,3 +1005,13 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: 'Estimated measurement: current Codex surface did not expose exact usage.'
+- run_id: d50f99019bf245c38546aa80b9bc0389
+  recorded_at: '2026-08-04T16:23:03Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
