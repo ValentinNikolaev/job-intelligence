@@ -57,13 +57,19 @@ def rejected_sort_key(directory: Path) -> tuple[dt.datetime, str]:
     return timestamp, directory.name
 
 
-def archive_destination(archive_root: Path, category: str, today: str) -> Path:
+def archive_destination(archive_root: Path, today: str) -> Path:
     destination = archive_root / f"{today}.zip"
-    if category != "rejected" or not destination.exists():
+    if not destination.exists():
         return destination
+
+    timestamp = dt.datetime.now(dt.timezone.utc).strftime("%H%M%S")
+    candidate = archive_root / f"{today}-{timestamp}.zip"
+    if not candidate.exists():
+        return candidate
+
     counter = 2
     while True:
-        candidate = archive_root / f"{today}-{counter}.zip"
+        candidate = archive_root / f"{today}-{timestamp}-{counter}.zip"
         if not candidate.exists():
             return candidate
         counter += 1
@@ -106,14 +112,12 @@ def archive(
     archive_root = project_root / "archives" / category
     archive_root.mkdir(parents=True, exist_ok=True)
     today = dt.date.today().isoformat()
-    destination = archive_destination(archive_root, category, today)
+    destination = archive_destination(archive_root, today)
     source_root, candidates = candidates_for(project_root, category, low_score, max_age_days, keep_items)
     print(f"{category}: eligible={len(candidates)} minimum={min_items}")
     if len(candidates) < min_items:
         print("No archive created; threshold not exceeded.")
         return 0
-    if destination.exists():
-        raise RuntimeError(f"archive already exists for {today}: {destination}")
 
     with tempfile.NamedTemporaryFile(prefix=f"{category}-{today}-", suffix=".zip", dir=archive_root, delete=False) as handle:
         temporary = Path(handle.name)

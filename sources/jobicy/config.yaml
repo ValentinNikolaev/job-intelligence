@@ -22,8 +22,3 @@ queries:
     industry: dev
     tag: php
     count: 50
-
-  - geo: europe
-    industry: dev
-    tag: "technical lead"
-    count: 50

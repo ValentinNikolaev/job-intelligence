@@ -78,6 +78,22 @@ class ArchiveJobsTests(unittest.TestCase):
             self.assertFalse((root / "registry" / "jobs" / "job-000").exists())
             self.assertTrue((root / "registry" / "jobs" / "job-999").exists())
 
+    def test_skipped_archive_uses_timestamp_suffix_when_run_twice_in_one_day(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            for number in range(2):
+                self.make_job(root, number, skipped=True)
+            self.assertEqual(2, archive_jobs.archive(root, "skipped", 65))
+            for number in range(2):
+                self.make_job(root, number, skipped=True)
+            self.assertEqual(2, archive_jobs.archive(root, "skipped", 65))
+            archives = sorted((root / "archives" / "skipped").glob("*.zip"))
+            today = date.today().isoformat()
+            names = {archive.name for archive in archives}
+            self.assertEqual(2, len(archives))
+            self.assertIn(f"{today}.zip", names)
+            self.assertTrue(any(name.startswith(f"{today}-") for name in names))
+
     def test_archives_stale_vacancies_only(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
