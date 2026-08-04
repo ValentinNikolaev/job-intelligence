@@ -1,21 +1,18 @@
 # Match Analysis
 
 **Score:** 79/100  
-**Recommendation:** Match
+**Recommendation:** Strong Match
 
-Strong PHP/Laravel backend foundation and seniority, but the role requires substantial recent Vue/Nuxt, TypeScript, and frontend delivery not evidenced in the supplied profile.
+Senior Laravel/PHP and backend ownership are strong; profile supports integrations and scalable systems.
 
 ## Why it matches
 
-- 15+ years PHP and Laravel experience
-- SOLID, design patterns, REST APIs, MySQL, and technical education
-- Backend architecture and production-scale systems experience
+- PHP
+- Laravel
+- APIs
+- databases
+- delivery leadership
 
 ## Gaps
 
-- 5+ years Vue.js/Nuxt.js and practical TypeScript are not evidenced
-- Automated testing and current full-stack HTML/CSS/SASS delivery are not clearly documented
-
-## Concerns
-
-- Frontend requirements are central rather than incidental
+- Vue.js and recent hands-on frontend depth are not evidenced.
