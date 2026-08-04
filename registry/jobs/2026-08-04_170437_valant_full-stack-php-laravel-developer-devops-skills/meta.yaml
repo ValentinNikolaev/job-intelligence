@@ -25,11 +25,13 @@ sources:
       large volumes of legacy data billings and transactions High emphasis on...'
 published_at: '2026-08-04'
 discovered_at: '2026-08-04T17:04:37Z'
-updated_at: '2026-08-04T17:04:37Z'
-status: found
+updated_at: '2026-08-04T19:27:35Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-04T17:04:37Z'
+- status: applied
+  changed_at: '2026-08-04T19:27:35Z'
 analysis_priority: 100
 fingerprint: sha256:bfb7047d8f7702d003f8cf78455688e80a57afc0a77330f72a9141697f2e90da
 data_source: dou

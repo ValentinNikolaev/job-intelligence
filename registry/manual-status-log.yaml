@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 19
+  total_events: 20
   by_status:
     applied:
-      count: 11
-      last_changed_at: '2026-08-04T18:16:05Z'
+      count: 12
+      last_changed_at: '2026-08-04T19:27:35Z'
     interview:
       count: 1
       last_changed_at: '2026-08-04T15:38:38Z'
@@ -16,9 +16,9 @@ summary:
       last_changed_at: '2026-08-04T18:51:00Z'
   by_reason:
     application-submitted:
-      count: 1
-      reason: application submitted
-      last_changed_at: '2026-08-03T19:18:35Z'
+      count: 2
+      reason: Application submitted
+      last_changed_at: '2026-08-04T19:27:35Z'
     applied-one-day-previously-skip-duplicate-proces:
       count: 1
       reason: applied one day previously; skip duplicate processing
@@ -360,6 +360,18 @@ events:
   to_status: rejected
   reason: Submission form resets after validation errors
   reason_key: submission-form-resets-after-validation-errors
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-04T19:27:35Z'
+  vacancy_id: b839f4d9-4525-4270-b3fc-fb21352c0b12
+  directory: 2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills
+  company: Valant
+  title: Full Stack PHP Laravel Developer/ DevOps Skills
+  from_status: found
+  to_status: applied
+  reason: Application submitted
+  reason_key: application-submitted
   actor: codex
   interaction:
     source: llm_assisted_manual
