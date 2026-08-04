@@ -108,4 +108,4 @@ Bist du dir unsicher, ob der Job zu dir oder du zu uns passt? Oder hast du noch 
 Diese Stelle passt nicht? Dann schau gerne auf [https://www.lrz.de/karriere](https://www.lrz.de/karriere) oder schick uns eine Initiativbewerbung!
 [Hier](https://www.lrz.de/datenschutz/datenschutzhinweise-fuer-bewerber) erhältst du Informationen über die Erhebung personenbezogener Daten im Rahmen des Bewerbungsverfahrens.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

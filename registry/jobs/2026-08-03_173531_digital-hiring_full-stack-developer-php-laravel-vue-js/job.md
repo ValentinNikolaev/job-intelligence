@@ -1,4 +1,4 @@
-# Full-Stack Developer PHP (Laravel + Vue.js)
+# Senior Full-Stack Developer PHP (Laravel + Vue.js)
 
 Posted: 2026-08-03
 
@@ -13,7 +13,7 @@ Posted: 2026-08-03
 **Технічний стек:**
 
 - 10+ років комерційного досвіду з PHP.
-- 6+ роки роботи з Laravel.
+- 5+ роки роботи з Laravel.
 - 5+ роки роботи з Vue.js / Nuxt.js.
 - Глибокі знання ООП, патернів проєктування та принципів SOLID.
 - Розуміння DDD та досвід роботи з REST API.

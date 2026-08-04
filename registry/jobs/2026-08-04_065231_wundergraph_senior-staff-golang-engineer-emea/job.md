@@ -230,4 +230,4 @@ Compensation: €90K – €130K
 
 - Senior Engineer Europe • Estimated benchmark for Europe, (locally adjusted where needed): €90K – €130K
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

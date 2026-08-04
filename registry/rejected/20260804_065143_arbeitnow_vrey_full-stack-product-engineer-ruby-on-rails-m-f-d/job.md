@@ -163,4 +163,4 @@ At VREY, we believe that **diversity strengthens both our company and society**.
 
 Even if you don't meet every requirement, don't hesitate to apply. If you're excited about our mission and believe you can contribute, we want to hear from you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -146,4 +146,4 @@ Auch wenn du nicht alle Anforderungen erfüllst, zögere nicht, dich trotzdem zu
 Der beste Weg ist eine warme Intro: Kennst du jemand, der auf diese Rolle passt? Empfiehl die Person und erhalte **5.000€ **bei erfolgreicher Einstellung.
 *Voraussetzung: Die Person ist uns noch nicht bei uns im Prozess und wird offiziell vorgeschlagen. Auszahlung nach bestandener Probezeit. Bei mehrfacher Nennung zählt die erste eingegangene Empfehlung.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

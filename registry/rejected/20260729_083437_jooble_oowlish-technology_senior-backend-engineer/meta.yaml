@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '4506066226265167449'
-source_url: https://jooble.org/away/4506066226265167449?p=1&pos=12&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&brelb=15&scr=2600.6262&bscr=2600.6262&aq=-2243721799948008421&elckey=-7006041604794505874
+source_url: https://jooble.org/away/4506066226265167449?p=1&pos=2&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=3&brelb=15&scr=2582.934&bscr=2582.934&aq=-6189559606143281046&elckey=-8331088681057438728
 title: Senior Backend Engineer
 company: Oowlish Technology
 location: Remote
 published_at: '2026-08-04T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-04T06:56:30Z'
+updated_at: '2026-08-04T09:42:13Z'
 rejected_at: '2026-07-29T08:34:37Z'

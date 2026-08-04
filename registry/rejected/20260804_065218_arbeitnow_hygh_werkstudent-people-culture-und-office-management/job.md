@@ -56,4 +56,4 @@ Du möchtest praktische Erfahrungen im Personalwesen und Office Management samme
 - Für Vitamine und Getränke im Office ist stets gesorgt
 Wenn du eine neue Herausforderung suchst und dich angesprochen fühlst, ist es Zeit, dich kennen zu lernen. Wir freuen uns auf deine Bewerbung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

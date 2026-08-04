@@ -179,4 +179,4 @@ If this role and our mission resonate with you, but you're hesitant because you 
 
 You are welcome at DeepL for who you are - we appreciate authenticity here. Our product is for everyone, and so is our workplace. The more voices we have represented and amplified in our business, the more we will all succeed, contribute, and think forward! So bring us your personal experience, your perspectives, and your background. It’s in our diversity that we will find the power to break down language barriers in the world.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

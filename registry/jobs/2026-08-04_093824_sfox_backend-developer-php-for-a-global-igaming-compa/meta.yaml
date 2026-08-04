@@ -1,0 +1,43 @@
+schema_version: 2
+id: 4d5ebad9-f71a-4390-a579-4fff482d6875
+title: Backend Developer (PHP) for a Global iGaming Company
+company: SFox
+company_url: https://jobs.dou.ua/companies/sfox/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '326665'
+  url: https://jobs.dou.ua/companies/sfox/vacancies/326665/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 серпня
+    listing_summary: 'VIDEOSLOTS LTD
+
+
+      Building efficient teams by connecting Ukrainian IT talents with progressive
+      Nordic companies
+
+
+      Come and push your journey to the next level!
+
+
+      At Immense Group, we are guided by our core values of passion, boldness, and
+      integrity.'
+published_at: '2026-08-04'
+discovered_at: '2026-08-04T09:38:24Z'
+updated_at: '2026-08-04T09:38:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T09:38:24Z'
+analysis_priority: 100
+fingerprint: sha256:f321e13e52eff8941843b008eaa76b5bd7ffb6b350881d9ef52191ad555b9ad2
+data_source: dou
+content_source: dou
+company_content_source: dou

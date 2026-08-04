@@ -96,4 +96,4 @@ Ein motiviertes Team und eine offene Unternehmenskultur
 
 Attraktive Vergütung und hervorragende Karrieremöglichkeiten
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: product-manager-germany-48000
+source_url: https://www.arbeitnow.com/jobs/companies/sereact/product-manager-germany-48000
+title: Product Manager (m/f/d)
+company: Sereact
+location: Germany
+published_at: '2026-08-04T03:00:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T09:37:29Z'
+rejected_at: '2026-08-04T09:37:29Z'

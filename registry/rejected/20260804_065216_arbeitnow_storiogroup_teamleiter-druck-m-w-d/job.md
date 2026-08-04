@@ -67,4 +67,4 @@ Storio Group ist ein Arbeitgeber, der Chancengleichheit bietet, Vielfalt feiert 
 
 Bewerber müssen zudem das gesetzliche Recht haben, im Land der Position zu arbeiten, ohne ein Sponsoring zu benötigen
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

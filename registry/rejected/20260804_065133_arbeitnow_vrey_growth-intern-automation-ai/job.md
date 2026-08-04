@@ -154,4 +154,4 @@ Compensation: €2.4K – €2.5K per month
 
 - • €2.4K – €2.5K per month
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

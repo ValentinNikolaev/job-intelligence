@@ -123,4 +123,4 @@ Unser Bewerbungsprozess besteht aus vier Gesprächsrunden:
 
 Wir bemühen uns, den gesamten Prozess innerhalb von 3 Wochen abzuschließen und melden uns schnellstmöglich bei dir.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

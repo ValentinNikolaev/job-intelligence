@@ -180,4 +180,4 @@ CEO call (30 min)
 
 *At Proxima Fusion, our mission is bold: making limitless clean energy a reality. To get there, we need a high-performing, diverse team that brings different perspectives, challenges assumptions, and builds together with purpose. We know that diversity of thought and experience leads to better ideas, stronger execution, and a more resilient team. We don’t look at how you identify, what you look like, who you choose to worship or what ethnicity you are. We care about what you can bring to the table.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

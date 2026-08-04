@@ -89,4 +89,4 @@ In addition, 0G Labs is committed to the health and well being of all of our tea
 
 *Body*: Fitness, gym and exercise memberships/classes
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

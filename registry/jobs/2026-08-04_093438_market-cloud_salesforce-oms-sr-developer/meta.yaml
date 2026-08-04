@@ -1,0 +1,30 @@
+schema_version: 2
+id: a98a1701-71b1-4aff-9c34-bae1a6b74508
+title: Salesforce OMS Sr. Developer
+company: Market Cloud
+company_url: null
+location: Eschborn
+remote: true
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: salesforce-oms-sr-developer-eschborn-262349
+  url: https://www.arbeitnow.com/jobs/companies/market-cloud/salesforce-oms-sr-developer-eschborn-262349
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - professional / experienced
+published_at: '2026-08-04T07:31:03Z'
+discovered_at: '2026-08-04T09:34:38Z'
+updated_at: '2026-08-04T09:34:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T09:34:38Z'
+analysis_priority: 0
+fingerprint: sha256:0ec32f7542e00a07317c1f25cc4f5f1c6950430d47a0fb7f7ea057c02c6c0ce5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

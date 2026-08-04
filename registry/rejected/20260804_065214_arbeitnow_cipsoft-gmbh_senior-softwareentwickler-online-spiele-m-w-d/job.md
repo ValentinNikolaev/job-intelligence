@@ -77,4 +77,4 @@ einen **zukunftssicheren Arbeitsplatz** in einem unabhängigen, profitablen Spie
 
 viele weitere Vorteile, die das Arbeiten bei CipSoft besonders machen und unter **[karriere.cipsoft.com/vorteile](http://karriere.cipsoft.com/vorteile)** auf Dich warten
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

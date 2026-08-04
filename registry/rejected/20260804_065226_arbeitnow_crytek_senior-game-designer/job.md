@@ -112,4 +112,4 @@ Join us on our exciting company events, including new starter breakfasts, summer
 
 At our Frankfurt office you can enjoy 24 days of vacation per year, and every 2 years you get 1 more (up to a maximum of 28 days). You will also have on average 10 public holidays on top of the days you take off.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

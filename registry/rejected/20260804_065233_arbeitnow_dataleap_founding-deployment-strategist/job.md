@@ -114,4 +114,4 @@ I will personally make sure this is the fastest growth opportunity of your caree
 
 If you ever want to start your own company, I'll back you.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

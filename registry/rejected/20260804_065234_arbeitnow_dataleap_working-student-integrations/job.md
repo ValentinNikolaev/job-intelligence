@@ -87,4 +87,4 @@ The opportunity to transition to a full-time role after graduation.
 
 Be part of a high-growth YC startup shaping the future of enterprise AI.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

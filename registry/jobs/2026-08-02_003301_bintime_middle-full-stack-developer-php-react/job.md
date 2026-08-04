@@ -12,6 +12,7 @@ No prior AI experience? No problem, you will start with standard full-stack task
 - Good understanding of JavaScript (React.js), Blade templates, HTML/CSS.
 - Hands-on experience with Docker and Git.
 - Experience with or readiness to adopt AI-assisted development tools (Claude Code, Cursor, Copilot).****
+- English — B2.
 
 **Responsibilities:**
 

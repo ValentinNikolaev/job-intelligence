@@ -91,4 +91,4 @@ Wir bieten unseren Kundinnen und Kunden umfassende Anlagelösungen – von erstk
 
 *LIQID ist ein Arbeitgeber, der für Chancengleichheit steht. Alle qualifizierten Bewerbungen werden ohne Rücksicht auf Hautfarbe, Alter, Religion, Geschlecht, ethnische und nationale Herkunft, Behinderung oder aufgrund von anderen durch Gleichbehandlungsgesetze geschützte Eigenschaften berücksichtigt.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
