@@ -1,0 +1,22 @@
+score: 89
+recommendation: strong_match
+summary: Strong PHP/Laravel backend and DevOps fit for a remote role; profile supports
+  AWS, queues, CI/CD, Linux, Docker and production reliability.
+strengths:
+- PHP and Laravel
+- AWS/Kubernetes/CI/CD
+- RabbitMQ and databases
+- system design and reliability
+- remote backend experience.
+gaps:
+- Oracle, Vue/ExtJS and explicit Ansible/Terraform/DDD depth are not established.
+concerns:
+- Full-stack and DevOps breadth is broader than the documented recent backend focus;
+  PHP 8.4 is not explicitly confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-04T17:23:41Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4d2fe7b1b2e47e9dacf0fb8027fe9c1e5c2e23584bfb207c2785f6bd2dc0f5bd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
