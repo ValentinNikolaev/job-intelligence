@@ -23,18 +23,12 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
+        count: '50'
+        industry: dev
         geo: italy
-        industry: dev
-        count: '50'
-    - query_index: 5
-      parameters:
-        tag: technical lead
-        geo: europe
-        industry: dev
-        count: '50'
 published_at: '2026-08-03T10:21:34Z'
 discovered_at: '2026-08-03T17:38:12Z'
-updated_at: '2026-08-04T14:36:04Z'
+updated_at: '2026-08-04T15:18:27Z'
 status: found
 status_history:
 - status: found

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7777979984199010089'
+source_url: https://jooble.org/desc/-7777979984199010089?ckey=remote+golang+backend+engineer&rgn=55180&pos=21&groupId=1106121903&elckey=-8510562255294567761&p=1&aq=-5032823982189870489&cid=15922&jobAge=33&brelb=115&bscr=620.3457&scr=620.3457
+title: Backend Software Engineer - AI Neobank App (US)
+company: Bjak
+location: United States
+published_at: '2026-08-03T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T15:19:25Z'
+rejected_at: '2026-08-04T15:19:25Z'

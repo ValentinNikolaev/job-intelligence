@@ -1,0 +1,29 @@
+schema_version: 2
+id: 45b5e82f-f431-43af-b91e-df57d143e399
+title: Growth Manager TikTok Shop - France (m/f/d)
+company: GENUINE Beauty GmbH
+company_url: null
+location: Köln
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: growth-manager-tiktok-shop-france-koln-364313
+  url: https://www.arbeitnow.com/jobs/companies/genuine-beauty-gmbh/growth-manager-tiktok-shop-france-koln-364313
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - professional / experienced
+published_at: '2026-08-04T13:35:31Z'
+discovered_at: '2026-08-04T15:16:51Z'
+updated_at: '2026-08-04T15:16:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T15:16:51Z'
+analysis_priority: 0
+fingerprint: sha256:f1248c56b399a6304dca06b90faba8078b4917adb656429ff76d528ace7785ed
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

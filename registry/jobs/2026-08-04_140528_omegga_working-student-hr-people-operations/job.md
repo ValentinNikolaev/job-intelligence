@@ -76,4 +76,4 @@ Real Ownership: You won't be doing research tasks on the side. You run processes
 
 Work Environment: Located in Munich's Werksviertel, we combine a focused, high-performance culture with flexibility. Most of our work happens in the office, remote work is possible depending on the task.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

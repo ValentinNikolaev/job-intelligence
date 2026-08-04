@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '853293091640163096'
+source_url: https://jooble.org/away/853293091640163096?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=129&brelb=15&scr=2716.7236&bscr=2716.7236&aq=6027877382412748495&elckey=-2903051721086895681
+title: Senior Backend Engineer
+company: Innovecs
+location: Remote
+published_at: '2026-07-30T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T15:19:05Z'
+rejected_at: '2026-08-04T15:19:05Z'

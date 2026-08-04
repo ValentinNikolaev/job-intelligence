@@ -24,24 +24,18 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        geo: italy
-        industry: dev
         count: '50'
+        industry: dev
+        geo: italy
     - query_index: 3
       parameters:
         tag: golang
-        geo: europe
-        industry: dev
         count: '50'
-    - query_index: 5
-      parameters:
-        tag: technical lead
-        geo: europe
         industry: dev
-        count: '50'
+        geo: europe
 published_at: '2026-08-01T03:04:16Z'
 discovered_at: '2026-08-01T16:00:06Z'
-updated_at: '2026-08-04T14:36:12Z'
+updated_at: '2026-08-04T15:18:32Z'
 status: found
 status_history:
 - status: found

@@ -1,0 +1,24 @@
+schema_version: 2
+id: e2836a8f-d90d-4e43-bf2f-a7b9022cacbe
+title: Senior Product Marketing Manager (f/m/d)
+company: Apaleo
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-product-marketing-manager-berlin-321403
+  url: https://www.arbeitnow.com/jobs/companies/apaleo/senior-product-marketing-manager-berlin-321403
+published_at: '2026-08-04T13:45:28Z'
+discovered_at: '2026-08-04T15:16:44Z'
+updated_at: '2026-08-04T15:16:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T15:16:44Z'
+analysis_priority: 0
+fingerprint: sha256:bde738617adb9e33c52748b857a60298610c03117f8cc9b884ede2074596cb15
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

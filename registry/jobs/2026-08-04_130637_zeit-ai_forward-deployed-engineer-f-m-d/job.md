@@ -114,4 +114,4 @@ Compensation: €70K – €230K • Offers Equity • €5k referral bonus
 
 - • Total compensation €70K – €230K • Offers Equity • €5k referral bonus
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '7800080753207285764'
+source_url: https://jooble.org/away/7800080753207285764?p=1&pos=48&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=170&brelb=15&scr=2463.1821&bscr=2463.1821&aq=6027877382412748495&elckey=-2903051721086895681
+title: Senior Backend Engineer
+company: G2i Inc.
+location: Remote
+published_at: '2026-07-28T06:51:19.4730000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-28T06:51:19.4730000 is older than 7 days
+updated_at: '2026-08-04T15:19:18Z'
+rejected_at: '2026-08-04T15:19:18Z'
