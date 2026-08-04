@@ -38,10 +38,50 @@ jobs:
       - name: Install project
         run: python -m pip install -e .
 
-      - name: Collect vacancies
-        id: collect_vacancies
+      - name: Collect Adzuna vacancies
+        id: collect_adzuna
         shell: bash
-        run: bash .github/scripts/run-and-report.sh "Collect vacancies" soft python run.py all --lock-timeout-seconds 3600
+        run: bash .github/scripts/run-and-report.sh "Collect Adzuna vacancies" soft python run.py adzuna --lock-timeout-seconds 3600
+
+      - name: Collect Arbeitnow vacancies
+        id: collect_arbeitnow
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Arbeitnow vacancies" soft python run.py arbeitnow --lock-timeout-seconds 3600
+
+      - name: Collect Ashby vacancies
+        id: collect_ashby
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Ashby vacancies" soft python run.py ashby --lock-timeout-seconds 3600
+
+      - name: Collect Custom vacancies
+        id: collect_custom
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Custom vacancies" soft python run.py custom --lock-timeout-seconds 3600
+
+      - name: Collect DOU vacancies
+        id: collect_dou
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect DOU vacancies" soft python run.py dou --lock-timeout-seconds 3600
+
+      - name: Collect Greenhouse vacancies
+        id: collect_greenhouse
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Greenhouse vacancies" soft python run.py greenhouse --lock-timeout-seconds 3600
+
+      - name: Collect Himalayas vacancies
+        id: collect_himalayas
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Himalayas vacancies" soft python run.py himalayas --lock-timeout-seconds 3600
+
+      - name: Collect Jobicy vacancies
+        id: collect_jobicy
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Jobicy vacancies" soft python run.py jobicy --lock-timeout-seconds 3600
+
+      - name: Collect Jooble vacancies
+        id: collect_jooble
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect Jooble vacancies" soft python run.py jooble --lock-timeout-seconds 3600
 
       - name: Write deterministic triage
         id: triage
