@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: standortleiter-baustoffe-augsburg-389403
+source_url: https://www.arbeitnow.com/jobs/companies/impledio-gmbh/standortleiter-baustoffe-augsburg-389403
+title: Standortleiter (m/w/d) Baustoffe | Augsburg
+company: Impledio GmbH
+location: Augsburg
+published_at: '2026-08-04T10:31:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:37:38Z'
+rejected_at: '2026-08-04T12:37:38Z'

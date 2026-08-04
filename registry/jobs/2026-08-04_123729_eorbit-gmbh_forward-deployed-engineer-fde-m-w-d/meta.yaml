@@ -1,0 +1,29 @@
+schema_version: 2
+id: dadaa74a-5f14-44eb-8078-2e28de7dd393
+title: Forward-Deployed Engineer (FDE) (m/w/d)
+company: Eorbit Gmbh
+company_url: null
+location: Leipzig
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: forward-deployed-engineer-fde-leipzig-48670
+  url: https://www.arbeitnow.com/jobs/companies/eorbit-gmbh/forward-deployed-engineer-fde-leipzig-48670
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-08-04T11:09:08Z'
+discovered_at: '2026-08-04T12:37:29Z'
+updated_at: '2026-08-04T12:37:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:37:29Z'
+analysis_priority: 0
+fingerprint: sha256:eda2a99d3fb1e4f899832e1d358239dfcd19b3a5bff67468469249eb6078e083
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

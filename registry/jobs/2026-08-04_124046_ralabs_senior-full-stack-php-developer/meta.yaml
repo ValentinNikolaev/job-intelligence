@@ -1,0 +1,37 @@
+schema_version: 2
+id: 4795f0a0-3341-4e44-b77f-b4ec41c195dd
+title: Senior Full Stack PHP Developer
+company: Ralabs
+company_url: https://jobs.dou.ua/companies/ralabs/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368411'
+  url: https://jobs.dou.ua/companies/ralabs/vacancies/368411/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 серпня
+    listing_summary: 'We are looking for a talented Senior Full Stack PHP Developer
+      to join our client’s team.
+
+
+      What is this project about? A booking platform for the tours and activities
+      market.'
+published_at: '2026-08-04'
+discovered_at: '2026-08-04T12:40:46Z'
+updated_at: '2026-08-04T12:40:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:40:46Z'
+analysis_priority: 100
+fingerprint: sha256:f09bfe40cc5d4058d56561e5d406b3f9ce89a378ddf0ae1b359e24c60c8eb383
+data_source: dou
+content_source: dou
+company_content_source: dou

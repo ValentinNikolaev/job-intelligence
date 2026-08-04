@@ -1,0 +1,35 @@
+schema_version: 2
+id: 2f2f4832-4ca8-4689-903b-3983a85285dc
+title: Senior PHP/Laravel Engineer
+company: Faria
+company_url: https://jobs.dou.ua/companies/faria-education-group/vacancies/
+location: Краків (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368440'
+  url: https://jobs.dou.ua/companies/faria-education-group/vacancies/368440/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 серпня
+    listing_summary: As part of the Faria Education Group, Atlas is the leading curriculum
+      planning platform trusted by over 6,000 schools worldwide, providing seamless
+      collaboration for teachers, administrators, and curriculum writers throughout
+      their curriculum development journey.
+published_at: '2026-08-04'
+discovered_at: '2026-08-04T12:40:45Z'
+updated_at: '2026-08-04T12:40:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:40:45Z'
+analysis_priority: 100
+fingerprint: sha256:7775a0119ffd8069dc354b231e39e9b013b676be650b6be37ac54f9ffd74399a
+data_source: dou
+content_source: dou
+company_content_source: dou

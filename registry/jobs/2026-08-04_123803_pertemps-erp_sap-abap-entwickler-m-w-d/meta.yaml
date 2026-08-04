@@ -1,0 +1,27 @@
+schema_version: 2
+id: 5fef35bb-1b0a-4af2-b02b-bafd6af9f1c3
+title: SAP ABAP Entwickler (m/w/d)
+company: Pertemps ERP
+company_url: null
+location: Dresden
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: sap-abap-entwickler-dresden-314811
+  url: https://www.arbeitnow.com/jobs/companies/pertemps-erp/sap-abap-entwickler-dresden-314811
+  metadata:
+    tags:
+    - IT
+published_at: '2026-08-04T09:30:37Z'
+discovered_at: '2026-08-04T12:38:03Z'
+updated_at: '2026-08-04T12:38:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:38:03Z'
+analysis_priority: 0
+fingerprint: sha256:fef0a3469e969546fe4e44a80dd6bd8b0b9c97909ccd64f7c4c7148607b43b37
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

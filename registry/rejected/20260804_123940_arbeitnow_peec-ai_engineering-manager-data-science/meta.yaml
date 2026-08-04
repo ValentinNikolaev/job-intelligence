@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: engineering-manager-data-science-berlin-195852
+source_url: https://www.arbeitnow.com/jobs/companies/peec-ai/engineering-manager-data-science-berlin-195852
+title: Engineering Manager (Data Science)
+company: Peec AI
+location: Berlin
+published_at: '2026-08-04T08:41:00Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:39:40Z'
+rejected_at: '2026-08-04T12:39:40Z'

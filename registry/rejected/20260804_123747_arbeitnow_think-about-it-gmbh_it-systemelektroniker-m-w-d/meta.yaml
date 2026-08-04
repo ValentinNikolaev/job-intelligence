@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-systemelektroniker-bochum-153253
+source_url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/it-systemelektroniker-bochum-153253
+title: IT-Systemelektroniker (m/w/d)
+company: think about IT GmbH
+location: Bochum
+published_at: '2026-08-04T10:07:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:37:47Z'
+rejected_at: '2026-08-04T12:37:47Z'

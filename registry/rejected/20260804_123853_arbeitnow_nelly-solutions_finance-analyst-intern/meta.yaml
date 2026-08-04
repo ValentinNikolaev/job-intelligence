@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: finance-analyst-intern-berlin-417381
+source_url: https://www.arbeitnow.com/jobs/companies/nelly-solutions/finance-analyst-intern-berlin-417381
+title: Finance Analyst Intern
+company: Nelly Solutions
+location: Berlin
+published_at: '2026-08-04T09:01:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:38:53Z'
+rejected_at: '2026-08-04T12:38:53Z'

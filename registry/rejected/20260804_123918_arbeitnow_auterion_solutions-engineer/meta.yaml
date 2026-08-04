@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: solutions-engineer-munich-403146
+source_url: https://www.arbeitnow.com/jobs/companies/auterion/solutions-engineer-munich-403146
+title: Solutions Engineer
+company: Auterion
+location: Munich
+published_at: '2026-08-04T08:55:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:39:18Z'
+rejected_at: '2026-08-04T12:39:18Z'

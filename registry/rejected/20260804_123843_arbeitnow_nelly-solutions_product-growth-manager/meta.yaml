@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: product-growth-manager-berlin-149625
+source_url: https://www.arbeitnow.com/jobs/companies/nelly-solutions/product-growth-manager-berlin-149625
+title: Product Growth Manager
+company: Nelly Solutions
+location: Berlin
+published_at: '2026-08-04T09:01:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:38:43Z'
+rejected_at: '2026-08-04T12:38:43Z'

@@ -1,0 +1,29 @@
+schema_version: 2
+id: cdf4d384-56a9-4379-8a2d-2cf4a40a0eb3
+title: Data Engineer (all genders)
+company: Eorbit Gmbh
+company_url: null
+location: Leipzig
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: data-engineer-all-genders-leipzig-79488
+  url: https://www.arbeitnow.com/jobs/companies/eorbit-gmbh/data-engineer-all-genders-leipzig-79488
+  metadata:
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-08-04T11:09:08Z'
+discovered_at: '2026-08-04T12:37:30Z'
+updated_at: '2026-08-04T12:37:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:37:30Z'
+analysis_priority: 0
+fingerprint: sha256:b3abb5aca72a14c56844cb24d32dbdc0936df00b4d7675aab4beef799eec444c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

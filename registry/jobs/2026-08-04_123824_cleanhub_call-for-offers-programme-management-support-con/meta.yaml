@@ -1,0 +1,30 @@
+schema_version: 2
+id: 53af1667-5126-4206-ac2c-2b661fae31ff
+title: 'Call for Offers: Programme Management Support (Consultant)'
+company: CleanHub
+company_url: null
+location: Berlin
+remote: false
+employment_type: Freelance, professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: call-for-offers-programme-management-support-consultant-berlin-255229
+  url: https://www.arbeitnow.com/jobs/companies/cleanhub/call-for-offers-programme-management-support-consultant-berlin-255229
+  metadata:
+    tags:
+    - Consulting
+    job_types:
+    - Freelance
+    - professional / experienced
+published_at: '2026-08-04T09:30:31Z'
+discovered_at: '2026-08-04T12:38:24Z'
+updated_at: '2026-08-04T12:38:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:38:24Z'
+analysis_priority: 0
+fingerprint: sha256:c2c5661fa1ae580b0cadd0dd86cb1401f9ff9fb85fd466420d51e0d2d0304c42
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

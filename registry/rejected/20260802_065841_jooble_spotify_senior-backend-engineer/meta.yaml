@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '-5611147235659471270'
-source_url: https://jooble.org/away/-5611147235659471270?p=1&pos=40&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=72&brelb=10&scr=2409.593&bscr=2409.593&aq=-2243721799948008421&elckey=-7006041604794505874
+source_url: https://jooble.org/away/-5611147235659471270?p=1&pos=41&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=78&brelb=10&scr=2486.6453&bscr=2486.6453&aq=2090705568324212565&elckey=712477203892771279
 title: Senior Backend Engineer
 company: Spotify
 location: United States
 published_at: '2026-08-01T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-04T06:56:47Z'
+updated_at: '2026-08-04T12:44:49Z'
 rejected_at: '2026-08-02T06:58:41Z'

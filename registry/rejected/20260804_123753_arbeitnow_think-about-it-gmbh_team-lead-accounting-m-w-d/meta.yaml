@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: team-lead-accounting-bochum-421368
+source_url: https://www.arbeitnow.com/jobs/companies/think-about-it-gmbh/team-lead-accounting-bochum-421368
+title: Team Lead Accounting (m/w/d)
+company: think about IT GmbH
+location: Bochum
+published_at: '2026-08-04T10:07:17Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:37:53Z'
+rejected_at: '2026-08-04T12:37:53Z'

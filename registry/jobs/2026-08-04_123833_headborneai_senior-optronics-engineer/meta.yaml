@@ -1,0 +1,27 @@
+schema_version: 2
+id: d6f4e12f-9a41-48e6-8fa8-17c67093994e
+title: Senior Optronics Engineer
+company: Headborneai
+company_url: null
+location: Jena
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-optronics-engineer-jena-254696
+  url: https://www.arbeitnow.com/jobs/companies/headborneai/senior-optronics-engineer-jena-254696
+  metadata:
+    tags:
+    - Hiring
+published_at: '2026-08-04T09:15:19Z'
+discovered_at: '2026-08-04T12:38:33Z'
+updated_at: '2026-08-04T12:38:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:38:33Z'
+analysis_priority: 0
+fingerprint: sha256:c57c566eb9a595589dd7cc4c8622dac12eadafaa9bb1e138354328c4076c0da4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

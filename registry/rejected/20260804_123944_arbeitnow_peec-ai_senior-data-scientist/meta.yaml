@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-data-scientist-berlin-469233
+source_url: https://www.arbeitnow.com/jobs/companies/peec-ai/senior-data-scientist-berlin-469233
+title: Senior Data Scientist
+company: Peec AI
+location: Berlin
+published_at: '2026-08-04T08:41:00Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:39:44Z'
+rejected_at: '2026-08-04T12:39:44Z'

@@ -1,0 +1,31 @@
+schema_version: 2
+id: bbd81c8f-cb6f-46af-97a4-fdf85bdcb616
+title: Working Student – IT Support & Operations (m/f/d)
+company: Quantum-Systems GmbH
+company_url: null
+location: Gilching
+remote: false
+employment_type: Internship, entry
+sources:
+- source: arbeitnow
+  source_job_id: working-student-it-support-operations-gilching-442984
+  url: https://www.arbeitnow.com/jobs/companies/quantum-systems-gmbh/working-student-it-support-operations-gilching-442984
+  metadata:
+    tags:
+    - Technical
+    - vocational
+    job_types:
+    - Internship
+    - entry
+published_at: '2026-08-04T11:20:38Z'
+discovered_at: '2026-08-04T12:37:16Z'
+updated_at: '2026-08-04T12:37:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T12:37:16Z'
+analysis_priority: 0
+fingerprint: sha256:4f2a60d2a049112821efcce026dc5bc6cd2c16a3849d388a79a14c45166e3dba
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

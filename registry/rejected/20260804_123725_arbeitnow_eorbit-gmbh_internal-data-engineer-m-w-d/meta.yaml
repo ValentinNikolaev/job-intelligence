@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: internal-data-engineer-leipzig-239368
+source_url: https://www.arbeitnow.com/jobs/companies/eorbit-gmbh/internal-data-engineer-leipzig-239368
+title: Internal Data Engineer (m/w/d)
+company: Eorbit Gmbh
+location: Leipzig
+published_at: '2026-08-04T11:09:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T12:37:25Z'
+rejected_at: '2026-08-04T12:37:25Z'
