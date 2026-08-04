@@ -1,44 +1,29 @@
 version: 1
-timeout_seconds: 30
+timeout_seconds: 12
 
 # Jobicy allows up to 100 results per query. geo, industry, and tag values are
 # passed through unchanged; use current Jobicy taxonomy slugs in your profiles.
 queries:
   - geo: italy
     industry: dev
-    count: 100
+    count: 50
 
   - geo: europe
     industry: dev
     tag: backend
-    count: 100
-
-  - geo: emea
-    industry: dev
-    tag: golang
-    count: 100
+    count: 50
 
   - geo: europe
     industry: dev
     tag: golang
-    count: 100
-
-  - geo: emea
-    industry: dev
-    tag: backend
-    count: 100
+    count: 50
 
   - geo: europe
     industry: dev
     tag: php
-    count: 100
+    count: 50
 
   - geo: europe
     industry: dev
     tag: "technical lead"
-    count: 100
-
-  - geo: europe
-    industry: dev
-    tag: "platform engineer"
-    count: 100
+    count: 50

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import tempfile
+import threading
 import unittest
 from contextlib import redirect_stdout
 from datetime import datetime, timezone
@@ -196,6 +197,60 @@ class CliTests(unittest.TestCase):
             self.assertTrue(first.limit_reached)
             self.assertEqual(2, second.fetched)
             self.assertTrue(second.limit_reached)
+
+    def test_all_collectors_fetch_in_parallel_before_storing(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            sources = root / "sources"
+            sources.mkdir()
+            env_path = sources / ".env"
+            env_path.write_text("", encoding="utf-8")
+            barrier = threading.Barrier(2)
+
+            class BlockingCollector:
+                def __init__(self, name: str) -> None:
+                    self.name = name
+                    self.api_requests = 1
+
+                def fetch(self):
+                    barrier.wait(timeout=1)
+                    yield NormalizedJob(
+                        source="direct",
+                        source_job_id=self.name,
+                        source_url=f"https://example.test/jobs/{self.name}",
+                        title=f"Backend Engineer {self.name}",
+                        company=f"Example {self.name}",
+                        description="Build Go services.",
+                    )
+
+            collectors = {
+                "first": BlockingCollector("first"),
+                "second": BlockingCollector("second"),
+            }
+            output = StringIO()
+            with patch("jobintel.cli.load_env", return_value={}), patch(
+                "jobintel.cli.discover_collectors", return_value=collectors
+            ), redirect_stdout(output):
+                self.assertEqual(
+                    0,
+                    main(
+                        [
+                            "all",
+                            "--registry",
+                            str(registry_root),
+                            "--sources",
+                            str(sources),
+                            "--env",
+                            str(env_path),
+                        ]
+                    ),
+                )
+
+            text = output.getvalue()
+            self.assertIn("Source: first", text)
+            self.assertIn("Source: second", text)
+            self.assertEqual(2, len(list((registry_root / "jobs").glob("*/meta.yaml"))))
 
     def test_top_lists_analyzed_active_vacancies_without_source_env(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

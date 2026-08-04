@@ -5,9 +5,10 @@ import hashlib
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any, Iterable, Sequence
 
 import yaml
 
@@ -356,13 +357,14 @@ def main(argv: list[str] | None = None) -> int:
     try:
         with workflow_lock(project_root, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
             failed = False
-            for name, collector in selected:
-                summary = _run_collector(
+            collected = _collect_selected_jobs(selected, limit=collection_limit)
+            for name, summary, jobs in collected:
+                summary = _store_collected_jobs(
                     name,
-                    collector,
+                    summary,
+                    jobs,
                     registry,
                     rejected_registry,
-                    limit=collection_limit,
                     company_retry_rules=company_retry_rules,
                 )
                 _print_summary(summary)
@@ -388,27 +390,56 @@ def _run_collector(
     limit: int | None,
     company_retry_rules=(),
 ) -> CollectorSummary:
+    summary, jobs = _fetch_collector_jobs(name, collector, limit=limit)
+    return _store_collected_jobs(
+        name,
+        summary,
+        jobs,
+        registry,
+        rejected_registry,
+        company_retry_rules=company_retry_rules,
+    )
+
+
+def _collect_selected_jobs(
+    selected: Iterable[tuple[str, Collector]],
+    *,
+    limit: int | None,
+) -> list[tuple[str, CollectorSummary, list[NormalizedJob]]]:
+    collector_items = list(selected)
+    if len(collector_items) <= 1:
+        return [
+            (name, *(_fetch_collector_jobs(name, collector, limit=limit)))
+            for name, collector in collector_items
+        ]
+
+    results: dict[str, tuple[CollectorSummary, list[NormalizedJob]]] = {}
+    with ThreadPoolExecutor(max_workers=len(collector_items)) as executor:
+        futures = {
+            executor.submit(_fetch_collector_jobs, name, collector, limit=limit): name
+            for name, collector in collector_items
+        }
+        for future in as_completed(futures):
+            name = futures[future]
+            results[name] = future.result()
+    return [(name, *results[name]) for name, _ in collector_items]
+
+
+def _fetch_collector_jobs(
+    name: str,
+    collector: Collector,
+    *,
+    limit: int | None,
+) -> tuple[CollectorSummary, list[NormalizedJob]]:
     summary = CollectorSummary(source=name)
+    jobs: list[NormalizedJob] = []
     try:
         for job in collector.fetch():
             if limit is not None and summary.fetched >= limit:
                 summary.limit_reached = True
                 break
             summary.fetched += 1
-            try:
-                rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
-                if rejection is not None:
-                    rejected_registry.upsert(job, rejection)
-                    summary.record("rejected")
-                    continue
-                result = registry.upsert(job)
-                summary.record(result.status)
-            except Exception as exc:
-                summary.errors += 1
-                print(
-                    f"{name}: failed to store {job.source_job_id}: {exc}",
-                    file=sys.stderr,
-                )
+            jobs.append(job)
     except Exception as exc:
         summary.errors += 1
         print(f"{name}: collection failed: {exc}", file=sys.stderr)
@@ -418,6 +449,33 @@ def _run_collector(
     requests = getattr(collector, "api_requests", 0)
     if isinstance(requests, int) and requests > 0:
         summary.api_requests = requests
+    return summary, jobs
+
+
+def _store_collected_jobs(
+    name: str,
+    summary: CollectorSummary,
+    jobs: Sequence[NormalizedJob],
+    registry: Registry,
+    rejected_registry: RejectedRegistry,
+    *,
+    company_retry_rules=(),
+) -> CollectorSummary:
+    for job in jobs:
+        try:
+            rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
+            if rejection is not None:
+                rejected_registry.upsert(job, rejection)
+                summary.record("rejected")
+                continue
+            result = registry.upsert(job)
+            summary.record(result.status)
+        except Exception as exc:
+            summary.errors += 1
+            print(
+                f"{name}: failed to store {job.source_job_id}: {exc}",
+                file=sys.stderr,
+            )
     return summary
 
 

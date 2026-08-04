@@ -1,5 +1,5 @@
 version: 1
-timeout_seconds: 30
+timeout_seconds: 12
 analysis_priority: 100
 queries:
   - name: php-remote

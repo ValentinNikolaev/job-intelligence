@@ -1,5 +1,5 @@
 version: 1
-timeout_seconds: 30
+timeout_seconds: 8
 analysis_priority: 100
 default_title_terms:
   - backend
@@ -217,24 +217,6 @@ sources:
       - php
       - python
       - software
-      - vue
-  - name: switcho
-    company: Switcho
-    board_url: https://switcho.it/jobs
-    company_url: https://switcho.it
-    source_type: custom/JavaScript
-    remote: true
-    location: Remote Italy
-    notes: Listed as full remote with direct hiring in Italy; the site may require JavaScript rendering.
-    title_terms:
-      - backend
-      - developer
-      - engineer
-      - gcp
-      - php
-      - react native
-      - software
-      - typescript
       - vue
   - name: medicilio
     company: Medicilio

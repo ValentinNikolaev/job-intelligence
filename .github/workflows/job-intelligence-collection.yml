@@ -26,15 +26,17 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "pyproject.toml"
 
       - name: Install project
-        run: python -m pip install --upgrade pip && python -m pip install -e .
+        run: python -m pip install -e .
 
       - name: Collect vacancies
         id: collect_vacancies
