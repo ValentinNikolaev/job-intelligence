@@ -36,59 +36,112 @@ jobs:
       - name: Install project
         run: python -m pip install --upgrade pip && python -m pip install -e .
 
-      - name: Run deterministic collection workflow
+      - name: Collect vacancies
+        id: collect_vacancies
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Collect vacancies" soft python run.py all --lock-timeout-seconds 3600
+
+      - name: Regenerate registry index
+        id: reindex
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Regenerate registry index" hard python run.py reindex
+
+      - name: Write deterministic triage
+        id: triage
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 3600
+
+      - name: Regenerate vacancy catalog
+        id: catalog
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Regenerate vacancy catalog" hard python run.py catalog
+
+      - name: Run unit tests
+        id: unit_tests
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
+
+      - name: Run repository doctor
+        id: doctor
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Run repository doctor" hard python run.py doctor --ci
+
+      - name: Workflow summary
+        id: workflow_summary
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Workflow summary" hard python run.py api workflow-summary --json
+
+      - name: Workflow limits
+        id: workflow_limits
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Workflow limits" hard python run.py api workflow-limits --json
+
+      - name: Analyze queue
+        id: analyze_queue
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Analyze queue" hard python run.py api queues analyze --json --limit 60
+
+      - name: Preparation queue
+        id: preparation_queue
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Preparation queue" hard python run.py api queues prepare --json --limit 20
+
+      - name: Source API usage
+        id: source_api_usage
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Source API usage" hard python run.py api source-usage --json
+
+      - name: Top vacancies
+        id: top_vacancies
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Top vacancies" hard python run.py top 20
+
+      - name: Gate deterministic workflow
         id: deterministic
+        if: always()
         shell: bash
         run: |
-          set +e
+          set -euo pipefail
           hard_failure=0
-          soft_failure=0
 
-          run_and_report() {
+          check_step() {
             local label="$1"
-            local failure_mode="$2"
-            shift
-            shift
-            local started_ms
-            local finished_ms
-            local elapsed_ms
-            started_ms="$(date +%s%3N)"
-            echo "## ${label}" >> "$GITHUB_STEP_SUMMARY"
-            echo '```text' >> "$GITHUB_STEP_SUMMARY"
-            echo "+ $*" >> "$GITHUB_STEP_SUMMARY"
-            "$@" 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
-            local status=${PIPESTATUS[0]}
-            finished_ms="$(date +%s%3N)"
-            elapsed_ms=$((finished_ms - started_ms))
-            echo '```' >> "$GITHUB_STEP_SUMMARY"
-            echo "Exit code: ${status}" >> "$GITHUB_STEP_SUMMARY"
-            printf 'Estimated time: %d ms (%.3f s)\n' "$elapsed_ms" "$(awk "BEGIN { printf \"%.3f\", ${elapsed_ms}/1000 }")" >> "$GITHUB_STEP_SUMMARY"
-            echo >> "$GITHUB_STEP_SUMMARY"
-            if [ "$status" -ne 0 ]; then
-              if [ "${failure_mode}" = "soft" ]; then
-                soft_failure=1
-                echo "::warning title=${label} failed::Continuing because collection sources can have transient network/API failures; deterministic checks still gate commits."
-              else
-                hard_failure=1
-              fi
+            local outcome="$2"
+            if [ "$outcome" != "success" ]; then
+              hard_failure=1
+              echo "::error title=${label} failed::Deterministic workflow step outcome was ${outcome}."
+              echo "- ${label}: ${outcome}" >> "$GITHUB_STEP_SUMMARY"
             fi
           }
 
-          run_and_report "Collect vacancies" soft python run.py all --lock-timeout-seconds 3600
-          run_and_report "Regenerate registry index" hard python run.py reindex
-          run_and_report "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 3600
-          run_and_report "Regenerate vacancy catalog" hard python run.py catalog
-          run_and_report "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
-          run_and_report "Run repository doctor" hard python run.py doctor --ci
-          run_and_report "Workflow summary" hard python run.py api workflow-summary --json
-          run_and_report "Workflow limits" hard python run.py api workflow-limits --json
-          run_and_report "Analyze queue" hard python run.py api queues analyze --json --limit 60
-          run_and_report "Preparation queue" hard python run.py api queues prepare --json --limit 20
-          run_and_report "Source API usage" hard python run.py api source-usage --json
-          run_and_report "Top vacancies" hard python run.py top 20
+          check_step "Regenerate registry index" "${{ steps.reindex.outcome }}"
+          check_step "Write deterministic triage" "${{ steps.triage.outcome }}"
+          check_step "Regenerate vacancy catalog" "${{ steps.catalog.outcome }}"
+          check_step "Run unit tests" "${{ steps.unit_tests.outcome }}"
+          check_step "Run repository doctor" "${{ steps.doctor.outcome }}"
+          check_step "Workflow summary" "${{ steps.workflow_summary.outcome }}"
+          check_step "Workflow limits" "${{ steps.workflow_limits.outcome }}"
+          check_step "Analyze queue" "${{ steps.analyze_queue.outcome }}"
+          check_step "Preparation queue" "${{ steps.preparation_queue.outcome }}"
+          check_step "Source API usage" "${{ steps.source_api_usage.outcome }}"
+          check_step "Top vacancies" "${{ steps.top_vacancies.outcome }}"
 
           echo "failure=${hard_failure}" >> "$GITHUB_OUTPUT"
-          echo "soft_failure=${soft_failure}" >> "$GITHUB_OUTPUT"
+          if [ "$hard_failure" -ne 0 ]; then
+            echo "Deterministic checks failed; refusing to commit generated changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
 
       - name: Commit deterministic changes
         id: commit
