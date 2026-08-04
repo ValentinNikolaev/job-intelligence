@@ -4,8 +4,8 @@ Posted: 2026-07-25T10:40:03Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-25T10:40:03Z is older than 7 days
 
 ## About ClickHouse
 

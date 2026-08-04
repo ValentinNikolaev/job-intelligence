@@ -26,22 +26,16 @@ sources:
       parameters:
         geo: italy
         industry: dev
-        count: '100'
-    - query_index: 7
+        count: '50'
+    - query_index: 5
       parameters:
-        geo: europe
-        industry: dev
-        count: '100'
         tag: technical lead
-    - query_index: 8
-      parameters:
         geo: europe
         industry: dev
-        count: '100'
-        tag: platform engineer
+        count: '50'
 published_at: '2026-07-30T14:39:56Z'
 discovered_at: '2026-07-30T18:34:46Z'
-updated_at: '2026-07-30T18:34:46Z'
+updated_at: '2026-08-04T14:36:38Z'
 status: found
 status_history:
 - status: found

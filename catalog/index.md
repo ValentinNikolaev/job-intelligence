@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 631
+Total vacancies: 632
 
-- Found: 457
+- Found: 458
 - Applied: 10
 - Rejected: 162
 - Closed: 2
@@ -18,6 +18,7 @@ Total vacancies: 631
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-04 | [GE Vernova](../registry/jobs/2026-08-04_143658_ge-vernova_project-engineer-m-f-d-service-sales/) | [Project Engineer (m/f/d) - Service Sales](../registry/jobs/2026-08-04_143658_ge-vernova_project-engineer-m-f-d-service-sales/job.md) | Germany | Jobicy | Found | 2026-08-04 | [Jobicy](https://jobicy.com/jobs/150013-project-engineer-m-f-d-service-sales) | — | — | — | — | — |
 | 2026-08-04 | [Omegga](../registry/jobs/2026-08-04_140528_omegga_working-student-hr-people-operations/) | [Working Student HR & People Operations](../registry/jobs/2026-08-04_140528_omegga_working-student-hr-people-operations/job.md) | Munich | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/omegga/working-student-hr-people-operations-munich-57311) | — | — | — | — | — |
 | 2026-08-04 | [Statista](../registry/jobs/2026-08-04_140527_statista_head-of-data-collection-m-f-d/) | [Head of Data Collection (m/f/d)](../registry/jobs/2026-08-04_140527_statista_head-of-data-collection-m-f-d/job.md) | Hamburg or Berlin | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/statista/head-of-data-collection-hamburg-or-berlin-258408) | — | — | — | — | — |
 | 2026-08-04 | [1KOMMA5˚](../registry/jobs/2026-08-04_130727_1komma5_staff-engineer-heartbeat-ai-m-f-d/) | [Staff Engineer - Heartbeat AI (m/f/d)](../registry/jobs/2026-08-04_130727_1komma5_staff-engineer-heartbeat-ai-m-f-d/job.md) | Berlin | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/1komma50/staff-engineer-heartbeat-ai-berlin-388590) | — | — | — | — | — |
@@ -37,4 +38,3 @@ Total vacancies: 631
 | 2026-08-04 | [Amperecloud GmbH](../registry/jobs/2026-08-04_130606_amperecloud-gmbh_software-engineer-m-f-d/) | [Software Engineer (m/f/d)](../registry/jobs/2026-08-04_130606_amperecloud-gmbh_software-engineer-m-f-d/job.md) | Berlin , Berlin, Germany | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/amperecloud-gmbh/software-engineer-berlin-127790) | — | — | — | — | — |
 | 2026-08-04 | [autoscout24](../registry/jobs/2026-08-04_130539_autoscout24_junior-content-marketing-seo-manager-m-w-d-itali/) | [Junior Content Marketing & SEO Manager (m/w/d) - Italian Market - parental leave cover](../registry/jobs/2026-08-04_130539_autoscout24_junior-content-marketing-seo-manager-m-w-d-itali/job.md) | — | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/autoscout24/junior-content-marketing-seo-manager-italian-market-parental-leave-cover-240803) | — | — | — | — | — |
 | 2026-08-04 | [autoscout24](../registry/jobs/2026-08-04_130527_autoscout24_technical-seo-lead-f-m-d/) | [Technical SEO Lead (f/m/d)](../registry/jobs/2026-08-04_130527_autoscout24_technical-seo-lead-f-m-d/job.md) | — | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/autoscout24/technical-seo-lead-486594) | — | — | — | — | — |
-| 2026-08-04 | [ApricusIT](../registry/jobs/2026-08-04_124047_apricusit_typo3-certified-developer/) | [TYPO3 Certified Developer](../registry/jobs/2026-08-04_124047_apricusit_typo3-certified-developer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-04 | [Dou](https://jobs.dou.ua/companies/apricusit/vacancies/368398/) | [Open](../registry/jobs/2026-08-04_124047_apricusit_typo3-certified-developer/company.md) | — | — | — | — |

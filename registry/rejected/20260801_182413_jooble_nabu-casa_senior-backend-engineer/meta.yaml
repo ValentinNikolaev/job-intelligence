@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '2074965720419780232'
-source_url: https://jooble.org/away/2074965720419780232?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=80&brelb=15&scr=2575.0322&bscr=2575.0322&aq=-4572520829813963038&elckey=231341008499551522
+source_url: https://jooble.org/away/2074965720419780232?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=80&brelb=15&scr=2555.743&bscr=2555.743&aq=5805250453481057396&elckey=2521822857216285628
 title: Senior Backend Engineer
 company: Nabu Casa
 location: Remote
 published_at: '2026-08-01T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-04T14:12:43Z'
+updated_at: '2026-08-04T14:37:30Z'
 rejected_at: '2026-08-01T18:24:13Z'

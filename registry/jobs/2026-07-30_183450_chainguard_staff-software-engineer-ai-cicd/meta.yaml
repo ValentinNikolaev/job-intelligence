@@ -31,28 +31,22 @@ sources:
       parameters:
         geo: italy
         industry: dev
-        count: '100'
+        count: '50'
     - query_index: 3
       parameters:
-        geo: emea
-        industry: dev
-        count: '100'
         tag: golang
-    - query_index: 4
-      parameters:
         geo: europe
         industry: dev
-        count: '100'
-        tag: golang
-    - query_index: 7
+        count: '50'
+    - query_index: 5
       parameters:
-        geo: europe
-        industry: dev
-        count: '100'
         tag: technical lead
+        geo: europe
+        industry: dev
+        count: '50'
 published_at: '2026-07-30T14:39:51Z'
 discovered_at: '2026-07-30T18:34:50Z'
-updated_at: '2026-07-30T18:34:50Z'
+updated_at: '2026-08-04T14:36:40Z'
 status: found
 status_history:
 - status: found

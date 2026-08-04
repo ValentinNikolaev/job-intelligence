@@ -23,30 +23,18 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        industry: dev
         geo: italy
-        count: '100'
+        industry: dev
+        count: '50'
     - query_index: 3
       parameters:
-        industry: dev
-        geo: emea
-        count: '100'
         tag: golang
-    - query_index: 4
-      parameters:
-        industry: dev
         geo: europe
-        count: '100'
-        tag: golang
-    - query_index: 8
-      parameters:
         industry: dev
-        geo: europe
-        count: '100'
-        tag: platform engineer
+        count: '50'
 published_at: '2026-08-03T10:21:36Z'
 discovered_at: '2026-08-03T17:38:10Z'
-updated_at: '2026-08-03T17:38:10Z'
+updated_at: '2026-08-04T14:36:03Z'
 status: found
 status_history:
 - status: found

@@ -1,11 +1,11 @@
 # Quality Engineer
 
-Posted: 2026-06-25T08:56:44Z
+Posted: 2026-07-26T11:15:07Z
 
 ## Rejection
 
 - Category: stale
-- Reason: published_at 2026-06-25T08:56:44Z is older than 7 days
+- Reason: published_at 2026-07-26T11:15:07Z is older than 7 days
 
 ## Unternehmensbeschreibung
 

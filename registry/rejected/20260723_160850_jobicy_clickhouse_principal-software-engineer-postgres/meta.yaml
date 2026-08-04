@@ -6,7 +6,7 @@ title: Principal Software Engineer - Postgres
 company: Clickhouse
 location: Netherlands
 published_at: '2026-07-25T10:40:03Z'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-07-31T22:10:38Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-25T10:40:03Z is older than 7 days
+updated_at: '2026-08-04T14:36:55Z'
 rejected_at: '2026-07-23T16:08:50Z'

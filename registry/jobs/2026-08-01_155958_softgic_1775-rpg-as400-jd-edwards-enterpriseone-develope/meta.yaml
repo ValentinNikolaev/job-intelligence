@@ -24,11 +24,11 @@ sources:
     - query_index: 1
       parameters:
         geo: italy
-        count: '100'
         industry: dev
+        count: '50'
 published_at: '2026-08-01T03:25:01Z'
 discovered_at: '2026-08-01T15:59:58Z'
-updated_at: '2026-08-01T15:59:58Z'
+updated_at: '2026-08-04T14:36:07Z'
 status: found
 status_history:
 - status: found

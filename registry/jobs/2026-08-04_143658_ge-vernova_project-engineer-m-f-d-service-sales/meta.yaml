@@ -1,0 +1,42 @@
+schema_version: 2
+id: 7413adb8-a44b-400a-b87d-26e4d66fcd0b
+title: Project Engineer (m/f/d) - Service Sales
+company: GE Vernova
+company_url: null
+location: Germany
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '150013'
+  url: https://jobicy.com/jobs/150013-project-engineer-m-f-d-service-sales
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/63e77722-221-1.png
+    industry:
+    - Software Engineering
+    level: Any
+    excerpt: Job Description SummaryAs the world shifts toward more sustainable energy
+      sources, GE Vernova’s Grid Systems Integration (GSI) focuses on integrating
+      complex power technologies to create grids that are more resilient, efficient,
+      and reliable. The service organization within the GSI business line delivers
+      comprehensive asset management, field operations, and technical support. It
+      covers key segments like…
+    discovered_by:
+    - query_index: 5
+      parameters:
+        tag: technical lead
+        geo: europe
+        industry: dev
+        count: '50'
+published_at: '2026-08-01T03:12:19Z'
+discovered_at: '2026-08-04T14:36:58Z'
+updated_at: '2026-08-04T14:36:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T14:36:58Z'
+analysis_priority: 0
+fingerprint: sha256:7e5591ff985643a5962f7aa4eedc521d735c57ed59c378ac6a6cb1f41d7f716a
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

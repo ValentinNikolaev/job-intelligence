@@ -1,11 +1,11 @@
 # SOTIF Expert (all genders)
 
-Posted: 2026-06-25T10:01:44Z
+Posted: 2026-07-28T13:45:03Z
 
 ## Rejection
 
 - Category: stale
-- Reason: published_at 2026-06-25T10:01:44Z is older than 7 days
+- Reason: published_at 2026-07-28T13:45:03Z is older than 7 days
 
 ## **Join us as a **SOTIF Expert** ****(all genders) in our **SOTIF** team and help shape the future of autonomous mobility!**
 
