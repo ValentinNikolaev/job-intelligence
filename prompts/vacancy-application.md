@@ -101,7 +101,10 @@ An ATS-friendly tailored CV with simple headings, no tables, columns, graphics, 
 decorative elements. Preserve candidate contact details and factual chronology. Include
 at least Summary, Skills, Experience, Education, and Languages; include Certifications
 when supported. The Experience section must not list roles or employment experience older
-than 10 years. This is the final canonical tailored CV.
+than 10 years. The line immediately after the candidate name must be a
+vacancy-aligned professional headline derived from `vacancy.metadata.title`, while
+remaining factually supported by the candidate source documents. This is the final
+canonical tailored CV.
 
 ### `cover_letter_markdown`
 

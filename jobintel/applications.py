@@ -120,6 +120,30 @@ _FORBIDDEN_APPLICATION_PHRASES = (
     "Zend Certified PHP Developer",
     "Zend PHP Certification",
 )
+_HEADLINE_GENERIC_TERMS = {
+    "and",
+    "architect",
+    "consultant",
+    "developer",
+    "engineer",
+    "engineering",
+    "expert",
+    "for",
+    "full",
+    "fullstack",
+    "lead",
+    "manager",
+    "mid",
+    "of",
+    "principal",
+    "remote",
+    "senior",
+    "software",
+    "specialist",
+    "stack",
+    "staff",
+    "the",
+}
 
 
 class ApplicationError(RuntimeError):
@@ -292,7 +316,8 @@ class ApplicationGenerator:
                 prompt=prompt,
                 candidate_profile=candidate_profile,
                 vacancy=vacancy,
-            )
+            ),
+            vacancy=vacancy,
         )
         generated["cv_markdown"] = _apply_simple_life_cv_end_date(
             generated["cv_markdown"],
@@ -409,7 +434,11 @@ def resolve_job_directories(registry_root: Path, selector: str) -> list[Path]:
     return matches
 
 
-def validate_application_package(value: Mapping[str, Any]) -> dict[str, str]:
+def validate_application_package(
+    value: Mapping[str, Any],
+    *,
+    vacancy: Mapping[str, Any] | None = None,
+) -> dict[str, str]:
     expected = set(APPLICATION_FILES)
     if set(value) != expected:
         missing = sorted(expected - set(value))
@@ -442,7 +471,67 @@ def validate_application_package(value: Mapping[str, Any]) -> dict[str, str]:
         for phrase in _FORBIDDEN_APPLICATION_PHRASES:
             if phrase.casefold() in folded:
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
+    if vacancy is not None:
+        _validate_cv_headline(result["cv_markdown"], vacancy)
     return result
+
+
+def _validate_cv_headline(markdown: str, vacancy: Mapping[str, Any]) -> None:
+    title = _vacancy_title(vacancy)
+    if not title:
+        return
+    lines = markdown.splitlines()
+    if not lines:
+        raise ApplicationError("cv_markdown must start with the candidate name")
+    name_match = re.match(r"^#\s+(.+?)\s*$", lines[0])
+    if not name_match:
+        raise ApplicationError("cv_markdown must start with an H1 candidate name")
+    if len(lines) < 2 or not lines[1].strip():
+        raise ApplicationError(
+            "cv_markdown must place a vacancy-aligned professional headline "
+            "immediately after the candidate name"
+        )
+    headline = lines[1].strip()
+    if headline.startswith("#"):
+        raise ApplicationError(
+            "cv_markdown headline must be plain text immediately after the candidate name"
+        )
+
+    title_terms = _headline_terms(title)
+    headline_terms = _headline_terms(headline)
+    if not title_terms:
+        return
+    distinctive_terms = [
+        term for term in title_terms if term not in _HEADLINE_GENERIC_TERMS
+    ]
+    required_terms = distinctive_terms or title_terms
+    matches = sorted(set(required_terms) & set(headline_terms))
+    minimum_matches = 1 if distinctive_terms else min(2, len(required_terms))
+    if len(matches) < minimum_matches:
+        expected = ", ".join(required_terms[:5])
+        raise ApplicationError(
+            "cv_markdown headline is not aligned with vacancy.metadata.title "
+            f"'{title}'; expected headline terms such as: {expected}"
+        )
+
+
+def _vacancy_title(vacancy: Mapping[str, Any]) -> str:
+    metadata = vacancy.get("metadata")
+    if not isinstance(metadata, Mapping):
+        return ""
+    return str(metadata.get("title") or "").strip()
+
+
+def _headline_terms(value: str) -> list[str]:
+    terms: list[str] = []
+    seen: set[str] = set()
+    for token in re.findall(r"[A-Za-z0-9]+", value.casefold()):
+        if len(token) < 3 or token in _ROLE_LOCATION_TERMS or token in _ROLE_NOISE_TERMS:
+            continue
+        if token not in seen:
+            terms.append(token)
+            seen.add(token)
+    return terms
 
 
 def _load_vacancy(

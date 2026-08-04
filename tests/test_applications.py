@@ -51,7 +51,7 @@ def application_payload() -> dict[str, str]:
         "Questions to Ask",
     )
     return {
-        "cv_markdown": "# Candidate\n\n## Summary\n\nBackend engineer.\n",
+        "cv_markdown": "# Candidate\nBackend Engineer\n\n## Summary\n\nBackend engineer.\n",
         "cover_letter_markdown": "# Cover Letter\n\nDear Hiring Team,\n\nRelevant experience.\n",
         "analysis_markdown": "# Application Analysis\n\n"
         + "\n\n".join(f"## {heading}\n\nEvidence." for heading in analysis_headings)
@@ -224,7 +224,8 @@ class ApplicationTests(unittest.TestCase):
     def test_simple_life_cv_date_range_is_rewritten_before_publication(self) -> None:
         payload = application_payload()
         payload["cv_markdown"] = (
-            "# Candidate\n\n"
+            "# Candidate\n"
+            "Backend Engineer\n\n"
             "## Experience\n\n"
             "### Simple.life\n\n"
             "**Software Developer**  \n"
@@ -334,6 +335,37 @@ class ApplicationTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ApplicationError, "forbidden phrase"):
             validate_application_package(payload)
+
+    def test_cv_headline_must_immediately_follow_candidate_name(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = "# Candidate\n\nBackend Engineer\n\n## Summary\n\nBackend engineer.\n"
+
+        with self.assertRaisesRegex(ApplicationError, "immediately after the candidate name"):
+            validate_application_package(
+                payload,
+                vacancy={"metadata": {"title": "Senior Backend Engineer"}},
+            )
+
+    def test_cv_headline_must_align_with_vacancy_title_terms(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = "# Candidate\nSoftware Engineer\n\n## Summary\n\nBackend engineer.\n"
+
+        with self.assertRaisesRegex(ApplicationError, "headline is not aligned"):
+            validate_application_package(
+                payload,
+                vacancy={"metadata": {"title": "Senior Backend Engineer"}},
+            )
+
+    def test_cv_headline_accepts_vacancy_specific_supported_term(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = "# Candidate\nBackend Engineer\n\n## Summary\n\nBackend engineer.\n"
+
+        result = validate_application_package(
+            payload,
+            vacancy={"metadata": {"title": "Senior Backend Engineer"}},
+        )
+
+        self.assertIn("Backend Engineer", result["cv_markdown"])
 
     def test_codex_draft_client_reads_markdown_without_network(self) -> None:
         draft = self.project / "application-draft"
