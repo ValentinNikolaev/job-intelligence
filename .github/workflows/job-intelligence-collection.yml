@@ -43,17 +43,41 @@ jobs:
         shell: bash
         run: bash .github/scripts/run-and-report.sh "Collect vacancies" soft python run.py all --lock-timeout-seconds 3600
 
-      - name: Regenerate registry index
-        id: reindex
-        continue-on-error: true
-        shell: bash
-        run: bash .github/scripts/run-and-report.sh "Regenerate registry index" hard python run.py reindex
-
       - name: Write deterministic triage
         id: triage
         continue-on-error: true
         shell: bash
         run: bash .github/scripts/run-and-report.sh "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 3600
+
+      - name: Archive low-score vacancies
+        id: archive_low_score
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive low-score vacancies" hard python scripts/archive_jobs.py low-score
+
+      - name: Archive skipped vacancies
+        id: archive_skipped
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive skipped vacancies" hard python scripts/archive_jobs.py skipped
+
+      - name: Archive stale vacancies
+        id: archive_stale
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive stale vacancies" hard python scripts/archive_jobs.py stale --max-age-days 7
+
+      - name: Archive rejected vacancies
+        id: archive_rejected
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive rejected vacancies" hard python scripts/archive_jobs.py rejected --keep-items 50
+
+      - name: Regenerate registry index
+        id: reindex
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Regenerate registry index" hard python run.py reindex
 
       - name: Regenerate vacancy catalog
         id: catalog
@@ -127,8 +151,12 @@ jobs:
             fi
           }
 
-          check_step "Regenerate registry index" "${{ steps.reindex.outcome }}"
           check_step "Write deterministic triage" "${{ steps.triage.outcome }}"
+          check_step "Archive low-score vacancies" "${{ steps.archive_low_score.outcome }}"
+          check_step "Archive skipped vacancies" "${{ steps.archive_skipped.outcome }}"
+          check_step "Archive stale vacancies" "${{ steps.archive_stale.outcome }}"
+          check_step "Archive rejected vacancies" "${{ steps.archive_rejected.outcome }}"
+          check_step "Regenerate registry index" "${{ steps.reindex.outcome }}"
           check_step "Regenerate vacancy catalog" "${{ steps.catalog.outcome }}"
           check_step "Run unit tests" "${{ steps.unit_tests.outcome }}"
           check_step "Run repository doctor" "${{ steps.doctor.outcome }}"

@@ -38,6 +38,16 @@ class ArchiveJobsTests(unittest.TestCase):
         if skipped:
             (directory / "triage.yaml").write_text(yaml.safe_dump({"skip_model": True}), encoding="utf-8")
 
+    def make_rejected(self, root: Path, number: int) -> None:
+        directory = root / "registry" / "rejected" / f"rejected-{number:03d}"
+        directory.mkdir(parents=True)
+        rejected_at = datetime(2026, 1, 1, 12, number, tzinfo=timezone.utc).isoformat().replace("+00:00", "Z")
+        (directory / "meta.yaml").write_text(
+            yaml.safe_dump({"id": str(number), "rejected_at": rejected_at}),
+            encoding="utf-8",
+        )
+        (directory / "job.md").write_text(f"rejected {number}", encoding="utf-8")
+
     def test_does_not_archive_below_minimum(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
@@ -81,6 +91,32 @@ class ArchiveJobsTests(unittest.TestCase):
             self.assertEqual(101, archive_jobs.archive(root, "stale", 65, max_age_days=7))
             self.assertFalse((root / "registry" / "jobs" / "job-000").exists())
             self.assertTrue((root / "registry" / "jobs" / "job-999").exists())
+
+    def test_archives_oldest_rejected_over_keep_limit(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            for number in range(55):
+                self.make_rejected(root, number)
+            self.assertEqual(5, archive_jobs.archive(root, "rejected", 65, keep_items=50))
+            archive = next((root / "archives" / "rejected").glob("*.zip"))
+            self.assertTrue(archive.is_file())
+            self.assertFalse((root / "registry" / "rejected" / "rejected-000").exists())
+            self.assertFalse((root / "registry" / "rejected" / "rejected-004").exists())
+            self.assertTrue((root / "registry" / "rejected" / "rejected-005").exists())
+            self.assertTrue((root / "registry" / "rejected" / "rejected-054").exists())
+
+    def test_rejected_archive_uses_unique_name_when_run_twice_in_one_day(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            for number in range(53):
+                self.make_rejected(root, number)
+            self.assertEqual(3, archive_jobs.archive(root, "rejected", 65, keep_items=50))
+            for number in range(53, 56):
+                self.make_rejected(root, number)
+            self.assertEqual(3, archive_jobs.archive(root, "rejected", 65, keep_items=50))
+            archives = sorted((root / "archives" / "rejected").glob("*.zip"))
+            self.assertEqual(2, len(archives))
+            self.assertNotEqual(archives[0].name, archives[1].name)
 
 
 if __name__ == "__main__":

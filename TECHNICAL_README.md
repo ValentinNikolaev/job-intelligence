@@ -397,10 +397,13 @@ explicit secret provisioning through the task or host environment; never commit
 `sources/.env`.
 
 The GitHub collection workflow is suitable for a three-hour cadence. It runs collection,
-indexing, deterministic triage, catalog generation, tests, doctor checks, queue/status
-JSON commands, and `python run.py top 10`; each Python command writes its output to the
-GitHub step summary. If project files changed, the workflow commits and pushes the full
-deterministic update. Ignored secrets and local work files are never staged.
+deterministic triage, the four archive actions (`low-score`, `skipped`, `stale`, and
+`rejected`), indexing, catalog generation, tests, doctor checks, queue/status JSON
+commands, and `python run.py top 20`; each Python command writes its output to the
+GitHub step summary. Rejected vacancy archiving keeps the newest 50 directories in
+`registry/rejected/` and moves older entries to `archives/rejected/`. If project files
+changed, the workflow commits and pushes the full deterministic update. Ignored secrets
+and local work files are never staged.
 
 ### Vacancy catalog
 

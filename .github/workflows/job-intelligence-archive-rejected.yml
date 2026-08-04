@@ -1,0 +1,46 @@
+name: Job Intelligence Archive Rejected
+
+on:
+  schedule:
+    - cron: "15 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: job-intelligence-archive-rejected
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install --upgrade pip && python -m pip install -e .
+      - name: Archive rejected vacancies
+        run: python scripts/archive_jobs.py rejected --keep-items 50
+      - name: Commit archive
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No rejected archive required."
+            exit 0
+          fi
+          git config user.name "Valentin Nikolaev"
+          git config user.email "435393+ValentinNikolaev@users.noreply.github.com"
+          git add -A archives registry/rejected
+          changed_files="$(git diff --cached --name-only | wc -l | tr -d ' ')"
+          archived_files="$(git diff --cached --name-status -- archives | awk '$1 == "A" { count++ } END { print count + 0 }')"
+          removed_rejected_files="$(git diff --cached --name-status -- registry/rejected | awk '$1 == "D" { count++ } END { print count + 0 }')"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          git commit \
+            -m "chore(archive): trim rejected vacancies" \
+            -m "Archived rejected vacancies above the 50-item retention limit." \
+            -m "Changed files: ${changed_files} total; archive files: ${archived_files}; removed rejected files: ${removed_rejected_files}." \
+            -m "Run: ${run_url}"
+          git push origin "HEAD:${GITHUB_REF_NAME:-main}"

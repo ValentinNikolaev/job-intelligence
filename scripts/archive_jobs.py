@@ -29,6 +29,8 @@ def eligible(directory: Path, category: str, low_score: int, max_age_days: int) 
     if category == "skipped":
         triage_path = directory / "triage.yaml"
         return triage_path.is_file() and read_yaml(triage_path).get("skip_model") is True
+    if category == "rejected":
+        return True
     discovered = parse_datetime(meta.get("discovered_at"))
     if discovered is None:
         return False
@@ -47,23 +49,65 @@ def parse_datetime(value: object) -> dt.datetime | None:
     return parsed.astimezone(dt.timezone.utc)
 
 
+def rejected_sort_key(directory: Path) -> tuple[dt.datetime, str]:
+    meta = read_yaml(directory / "meta.yaml")
+    timestamp = parse_datetime(meta.get("rejected_at")) or parse_datetime(meta.get("discovered_at"))
+    if timestamp is None:
+        timestamp = dt.datetime.min.replace(tzinfo=dt.timezone.utc)
+    return timestamp, directory.name
+
+
+def archive_destination(archive_root: Path, category: str, today: str) -> Path:
+    destination = archive_root / f"{today}.zip"
+    if category != "rejected" or not destination.exists():
+        return destination
+    counter = 2
+    while True:
+        candidate = archive_root / f"{today}-{counter}.zip"
+        if not candidate.exists():
+            return candidate
+        counter += 1
+
+
+def candidates_for(
+    project_root: Path,
+    category: str,
+    low_score: int,
+    max_age_days: int,
+    keep_items: int,
+) -> tuple[Path, list[Path]]:
+    if category == "rejected":
+        rejected_root = project_root / "registry" / "rejected"
+        if not rejected_root.is_dir():
+            return rejected_root, []
+        directories = sorted(
+            (path for path in rejected_root.iterdir() if path.is_dir() and eligible(path, category, low_score, max_age_days)),
+            key=rejected_sort_key,
+        )
+        overflow = max(0, len(directories) - keep_items)
+        return rejected_root, directories[:overflow]
+
+    jobs_root = project_root / "registry" / "jobs"
+    return jobs_root, sorted(
+        path
+        for path in jobs_root.iterdir()
+        if path.is_dir() and eligible(path, category, low_score, max_age_days)
+    )
+
+
 def archive(
     project_root: Path,
     category: str,
     low_score: int,
     max_age_days: int = 7,
     min_items: int = 1,
+    keep_items: int = 50,
 ) -> int:
-    jobs_root = project_root / "registry" / "jobs"
     archive_root = project_root / "archives" / category
     archive_root.mkdir(parents=True, exist_ok=True)
     today = dt.date.today().isoformat()
-    destination = archive_root / f"{today}.zip"
-    candidates = sorted(
-        path
-        for path in jobs_root.iterdir()
-        if path.is_dir() and eligible(path, category, low_score, max_age_days)
-    )
+    destination = archive_destination(archive_root, category, today)
+    source_root, candidates = candidates_for(project_root, category, low_score, max_age_days, keep_items)
     print(f"{category}: eligible={len(candidates)} minimum={min_items}")
     if len(candidates) < min_items:
         print("No archive created; threshold not exceeded.")
@@ -78,11 +122,11 @@ def archive(
             for directory in candidates:
                 for path in sorted(directory.rglob("*")):
                     if path.is_file():
-                        archive_file.write(path, path.relative_to(jobs_root).as_posix())
+                        archive_file.write(path, path.relative_to(source_root).as_posix())
         with zipfile.ZipFile(temporary) as archive_file:
             names = set(archive_file.namelist())
         expected = {
-            path.relative_to(jobs_root).as_posix()
+            path.relative_to(source_root).as_posix()
             for directory in candidates
             for path in directory.rglob("*")
             if path.is_file()
@@ -102,14 +146,17 @@ def archive(
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("category", choices=("low-score", "skipped", "stale"))
+    parser.add_argument("category", choices=("low-score", "skipped", "stale", "rejected"))
     parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--low-score", type=int, default=65)
     parser.add_argument("--max-age-days", type=int, default=7)
     parser.add_argument("--min-items", type=int, default=1)
+    parser.add_argument("--keep-items", type=int, default=50)
     args = parser.parse_args()
     if args.min_items < 1:
         parser.error("--min-items must be at least 1")
+    if args.keep_items < 0:
+        parser.error("--keep-items must be at least 0")
     return (
         0
         if archive(
@@ -118,6 +165,7 @@ def main() -> int:
             args.low_score,
             args.max_age_days,
             args.min_items,
+            args.keep_items,
         )
         >= 0
         else 1

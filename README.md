@@ -140,6 +140,7 @@ Run collection and maintenance:
 
 ```text
 python run.py all
+python scripts/archive_jobs.py rejected --keep-items 50
 python run.py reindex
 python run.py catalog
 python run.py doctor
