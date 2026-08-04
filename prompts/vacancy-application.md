@@ -111,7 +111,10 @@ canonical tailored CV.
 A concise tailored cover letter. Explain why the role is relevant, why the candidate is a
 credible match, and the two or three strongest supported experiences. Demonstrate only
 verified understanding of the product or mission. Do not add address placeholders or
-facts that were not supplied.
+facts that were not supplied. Do not mention the exact vacancy title or the company
+name in the cover letter; the application context already identifies both. Keep the
+letter specific through supported skills, product/domain cues, and relevant evidence
+instead of repeating the addressee or role name.
 
 ### `analysis_markdown`
 

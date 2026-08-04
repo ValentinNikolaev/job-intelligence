@@ -473,6 +473,7 @@ def validate_application_package(
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
     if vacancy is not None:
         _validate_cv_headline(result["cv_markdown"], vacancy)
+        _validate_cover_letter_context(result["cover_letter_markdown"], vacancy)
     return result
 
 
@@ -520,6 +521,35 @@ def _vacancy_title(vacancy: Mapping[str, Any]) -> str:
     if not isinstance(metadata, Mapping):
         return ""
     return str(metadata.get("title") or "").strip()
+
+
+def _vacancy_company(vacancy: Mapping[str, Any]) -> str:
+    metadata = vacancy.get("metadata")
+    if not isinstance(metadata, Mapping):
+        return ""
+    return str(metadata.get("company") or "").strip()
+
+
+def _validate_cover_letter_context(markdown: str, vacancy: Mapping[str, Any]) -> None:
+    title = _vacancy_title(vacancy)
+    if title and title.casefold() in markdown.casefold():
+        raise ApplicationError(
+            "cover_letter_markdown must not mention the exact vacancy title; "
+            "the application context already identifies the role"
+        )
+
+    company = _vacancy_company(vacancy)
+    if not company:
+        return
+    company_pattern = re.compile(
+        rf"(?<![A-Za-z0-9]){re.escape(company)}(?![A-Za-z0-9])",
+        re.IGNORECASE,
+    )
+    if company_pattern.search(markdown):
+        raise ApplicationError(
+            "cover_letter_markdown must not mention the company name; "
+            "the application context already identifies the addressee"
+        )
 
 
 def _headline_terms(value: str) -> list[str]:

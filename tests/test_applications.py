@@ -367,6 +367,42 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertIn("Backend Engineer", result["cv_markdown"])
 
+    def test_cover_letter_must_not_repeat_vacancy_title(self) -> None:
+        payload = application_payload()
+        payload["cover_letter_markdown"] = (
+            "# Cover Letter\n\nDear Hiring Team,\n\n"
+            "I am interested in the Senior Backend Engineer role.\n"
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "exact vacancy title"):
+            validate_application_package(
+                payload,
+                vacancy={
+                    "metadata": {
+                        "title": "Senior Backend Engineer",
+                        "company": "Example",
+                    }
+                },
+            )
+
+    def test_cover_letter_must_not_repeat_company_name(self) -> None:
+        payload = application_payload()
+        payload["cover_letter_markdown"] = (
+            "# Cover Letter\n\nDear Hiring Team,\n\n"
+            "Example seems to value reliable backend delivery.\n"
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "company name"):
+            validate_application_package(
+                payload,
+                vacancy={
+                    "metadata": {
+                        "title": "Senior Backend Engineer",
+                        "company": "Example",
+                    }
+                },
+            )
+
     def test_codex_draft_client_reads_markdown_without_network(self) -> None:
         draft = self.project / "application-draft"
         draft.mkdir()

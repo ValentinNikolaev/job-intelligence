@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:3ebf31408478c1258e891aeef903536f963890f66fda46912e4f09610076000b
+company_version: sha256:1152151ba99810943045be85a57ee42126832b327f8693e6c04caa6bc5b300de
+prompt_version: sha256:f03272d48053e8753b4532c43afe505f6326c914045a95135e5f688ef0b6080d
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_valant_FullStackPHPLaravelDeveloperDevOpsSkills
+generated_at: '2026-08-04T19:11:34Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_valant_FullStackPHPLaravelDeveloperDevOpsSkills.md
+- CV_ValentinNikolaev_valant_FullStackPHPLaravelDeveloperDevOpsSkills.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
