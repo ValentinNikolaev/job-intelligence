@@ -151,16 +151,22 @@ def queue_items(
         return []
     vacancies = load_catalog_vacancies(registry_root)
     rows = []
+    checker = None
+    if workflow == "analyze":
+        checker = MatchAnalyzer(
+            registry_root,
+            profile_paths,
+            CodexMatchDraftClient(
+                project_root / ".codex-work" / "unused-match.yaml",
+                model=policy.workflow("analyze").model_label,
+            ),
+        )
     for vacancy in vacancies:
         directory = vacancy.directory
         if workflow == "analyze":
             if should_skip_model(directory):
                 continue
-            checker = MatchAnalyzer(
-                registry_root,
-                profile_paths,
-                CodexMatchDraftClient(project_root / ".codex-work" / "unused-match.yaml", model=policy.workflow("analyze").model_label),
-            )
+            assert checker is not None
             if checker.is_current(directory):
                 continue
         else:

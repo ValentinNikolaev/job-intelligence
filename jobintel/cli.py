@@ -452,7 +452,7 @@ def _top_limit(arguments: list[str]) -> int:
     if len(arguments) > 1:
         raise ValueError("usage: python run.py top [limit]")
     if not arguments:
-        return 5
+        return 20
     try:
         limit = int(arguments[0])
     except ValueError as exc:
