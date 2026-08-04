@@ -1,0 +1,29 @@
+schema_version: 2
+id: e2f320d3-45ce-4c7f-8365-b41d729b4f0f
+title: Consultant - Innovation & Venture Building (m/f/d)
+company: Trinsik GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: entry
+sources:
+- source: arbeitnow
+  source_job_id: consultant-innovation-venture-building-munich-141875
+  url: https://www.arbeitnow.com/jobs/companies/trinsik-gmbh/consultant-innovation-venture-building-munich-141875
+  metadata:
+    tags:
+    - Consulting
+    job_types:
+    - entry
+published_at: '2026-08-04T13:35:35Z'
+discovered_at: '2026-08-04T17:04:10Z'
+updated_at: '2026-08-04T17:04:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T17:04:10Z'
+analysis_priority: 0
+fingerprint: sha256:ef620fe65b561119c8da8fc05fd72ba8cfc5c0a19127cfaefca4fbbf22cd3330
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

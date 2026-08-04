@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sales-consultant-recruiting-neukundengewinnung-bielefeld-302623
+source_url: https://www.arbeitnow.com/jobs/companies/jetztjob/sales-consultant-recruiting-neukundengewinnung-bielefeld-302623
+title: Sales Consultant – Recruiting & Neukundengewinnung (m/w/d)
+company: JetztJob
+location: Bielefeld
+published_at: '2026-08-04T15:30:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:03:42Z'
+rejected_at: '2026-08-04T17:03:42Z'

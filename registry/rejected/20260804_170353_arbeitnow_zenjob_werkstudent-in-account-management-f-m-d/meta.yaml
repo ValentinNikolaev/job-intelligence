@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-account-management-berlin-212096
+source_url: https://www.arbeitnow.com/jobs/companies/zenjob/werkstudentin-account-management-berlin-212096
+title: Werkstudent*in Account Management (f/m/d)
+company: Zenjob
+location: Berlin
+published_at: '2026-08-04T15:00:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:03:53Z'
+rejected_at: '2026-08-04T17:03:53Z'

@@ -1,0 +1,29 @@
+schema_version: 2
+id: d6ac0d37-b6df-4d7c-88a4-7e50f5a6f54b
+title: Administrative Assistant
+company: The Exploration Company
+company_url: null
+location: Munich, Germany
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: administrative-assistant-munich-439437
+  url: https://www.arbeitnow.com/jobs/companies/the-exploration-company/administrative-assistant-munich-439437
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full Time
+published_at: '2026-08-04T15:00:41Z'
+discovered_at: '2026-08-04T17:03:49Z'
+updated_at: '2026-08-04T17:03:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T17:03:49Z'
+analysis_priority: 0
+fingerprint: sha256:7b0a20913c4c20bc040fab766f45031ee6020289d9e4087a2b5d6487ee914237
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

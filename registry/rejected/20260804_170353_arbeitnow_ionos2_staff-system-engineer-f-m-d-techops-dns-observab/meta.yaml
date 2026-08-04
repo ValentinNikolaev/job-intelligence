@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: staff-system-engineer-techops-dns-observability-hinterm-hauptbahnhof-3-5-76137-karlsruhe-133480
+source_url: https://www.arbeitnow.com/jobs/companies/ionos2/staff-system-engineer-techops-dns-observability-hinterm-hauptbahnhof-3-5-76137-karlsruhe-133480
+title: Staff System Engineer (f/m/d) - TechOps DNS & Observability
+company: Ionos2
+location: Hinterm Hauptbahnhof 3-5, 76137 Karlsruhe
+published_at: '2026-08-04T14:56:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:03:53Z'
+rejected_at: '2026-08-04T17:03:53Z'

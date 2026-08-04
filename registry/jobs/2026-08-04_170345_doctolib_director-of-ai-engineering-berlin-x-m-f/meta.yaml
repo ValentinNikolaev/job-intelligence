@@ -1,0 +1,27 @@
+schema_version: 2
+id: 5524d39d-2453-4c0e-b42f-d845f977635f
+title: Director of AI Engineering - Berlin (x/m/f)
+company: Doctolib
+company_url: null
+location: Berlin, Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: director-of-ai-engineering-berlin-berlin-berlin-31007
+  url: https://www.arbeitnow.com/jobs/companies/doctolib/director-of-ai-engineering-berlin-berlin-berlin-31007
+  metadata:
+    tags:
+    - Executive
+published_at: '2026-08-04T15:15:51Z'
+discovered_at: '2026-08-04T17:03:45Z'
+updated_at: '2026-08-04T17:03:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T17:03:45Z'
+analysis_priority: 0
+fingerprint: sha256:217d8800f9a454a1e4822ff9ff61141d95a64ad28462490843f543cda1ec68c8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

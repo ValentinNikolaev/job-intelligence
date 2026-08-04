@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149876'
+source_url: https://jobicy.com/jobs/149876-software-engineer-connect-platform-2
+title: Software Engineer - (Connect Platform)
+company: Enode
+location: Europe,  Norway
+published_at: '2026-07-30T14:40:27Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:06:12Z'
+rejected_at: '2026-08-04T17:06:12Z'

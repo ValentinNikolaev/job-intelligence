@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/mozilla/jobs/senior-software-engineer
+source_url: https://himalayas.app/companies/mozilla/jobs/senior-software-engineer
+title: Senior Software Engineer
+company: Mozilla
+location: Worldwide
+published_at: '2026-07-30T21:39:24Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:05:43Z'
+rejected_at: '2026-08-04T17:05:43Z'

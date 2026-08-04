@@ -1,0 +1,29 @@
+schema_version: 2
+id: d69a724e-6edc-48ff-9c6c-f586bdf45f55
+title: Platform Hardware Engineer – Data Center Accelerator Platforms
+company: Openchip And Software Technologies SL
+company_url: null
+location: Karlsruhe
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: platform-hardware-engineer-data-center-accelerator-platforms-karlsruhe-267152
+  url: https://www.arbeitnow.com/jobs/companies/openchip-and-software-technologies-sl/platform-hardware-engineer-data-center-accelerator-platforms-karlsruhe-267152
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - professional / experienced
+published_at: '2026-08-04T13:35:34Z'
+discovered_at: '2026-08-04T17:04:13Z'
+updated_at: '2026-08-04T17:04:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T17:04:13Z'
+analysis_priority: 0
+fingerprint: sha256:63c5feb046f0daad20db80ce47b1b2e158b31cd385b7409521b9bfc4e2f9bd24
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

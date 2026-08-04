@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: cloud-engineer-munich-138962
+source_url: https://www.arbeitnow.com/jobs/companies/omnisent/cloud-engineer-munich-138962
+title: CLOUD ENGINEER (f/m/d)
+company: Omnisent
+location: Munich
+published_at: '2026-08-04T13:35:39Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:04:06Z'
+rejected_at: '2026-08-04T17:04:06Z'

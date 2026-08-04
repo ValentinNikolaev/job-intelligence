@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-account-executive-329924
+source_url: https://www.arbeitnow.com/jobs/companies/singular/remote-account-executive-329924
+title: Account Executive
+company: Singular
+location: EMEA Remote
+published_at: '2026-08-04T15:01:27Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:03:45Z'
+rejected_at: '2026-08-04T17:03:45Z'

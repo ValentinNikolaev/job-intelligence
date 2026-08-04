@@ -1,0 +1,29 @@
+schema_version: 2
+id: c24b931a-808e-4187-81e4-17b5319cc42d
+title: Growth Marketing – Intern / Working Student (d/f/m)
+company: Luminovo GmbH
+company_url: null
+location: 🇩🇪 Munich (hybrid)
+remote: false
+employment_type: Intern
+sources:
+- source: arbeitnow
+  source_job_id: growth-marketing-intern-working-student-munich-322877
+  url: https://www.arbeitnow.com/jobs/companies/luminovo-gmbh/growth-marketing-intern-working-student-munich-322877
+  metadata:
+    tags:
+    - Revenue
+    job_types:
+    - Intern
+published_at: '2026-08-04T15:00:47Z'
+discovered_at: '2026-08-04T17:03:46Z'
+updated_at: '2026-08-04T17:03:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T17:03:46Z'
+analysis_priority: 0
+fingerprint: sha256:d04ca24b2c913887b86cf81885e1d1cfb043a3d6d7618951d6843340043309ed
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

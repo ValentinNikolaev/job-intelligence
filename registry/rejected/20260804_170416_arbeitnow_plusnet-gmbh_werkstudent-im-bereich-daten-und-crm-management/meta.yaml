@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-im-bereich-daten-und-crm-management-koln-91535
+source_url: https://www.arbeitnow.com/jobs/companies/plusnet-gmbh/werkstudent-im-bereich-daten-und-crm-management-koln-91535
+title: Werkstudent im Bereich Daten- und CRM-Management (m/w/d)
+company: Plusnet GmbH
+location: Köln
+published_at: '2026-08-04T13:20:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:04:16Z'
+rejected_at: '2026-08-04T17:04:16Z'

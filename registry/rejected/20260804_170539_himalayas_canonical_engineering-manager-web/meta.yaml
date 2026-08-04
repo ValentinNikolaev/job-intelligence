@@ -1,0 +1,18 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/engineering-manager-web
+source_url: https://himalayas.app/companies/canonical/jobs/engineering-manager-web
+title: Engineering Manager - Web
+company: Canonical
+location: Algeria, Angola, Austria, Bahrain, Belgium, Botswana, Bulgaria, Cameroon,
+  Croatia, Czechia, Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece,
+  Hungary, Ireland, Israel, Italy, Kenya, Kuwait, Libya, Madagascar, Morocco, Mozambique,
+  Namibia, Netherlands, Nigeria, Norway, Oman, Poland, Portugal, Qatar, Romania, Russian
+  Federation, Rwanda, Saudi Arabia, Senegal, Slovakia, South Africa, Spain, Sudan,
+  Sweden, Switzerland, Tanzania, Tunisia, Turkey, Uganda, Ukraine, United Arab Emirates,
+  United Kingdom, Zambia, Zimbabwe
+published_at: '2026-06-21T14:46:56Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-21T14:46:56Z is older than 7 days
+updated_at: '2026-08-04T17:05:39Z'
+rejected_at: '2026-08-04T17:05:39Z'

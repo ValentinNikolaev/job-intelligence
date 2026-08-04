@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: post-und-posterfassung-graben-neudorf-159789
+source_url: https://www.arbeitnow.com/jobs/companies/prestel-messtechnik-gmbh/post-und-posterfassung-graben-neudorf-159789
+title: Post- und Posterfassung
+company: Prestel Messtechnik GmbH
+location: Graben-Neudorf
+published_at: '2026-08-04T14:01:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:04:03Z'
+rejected_at: '2026-08-04T17:04:03Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-success-manager-dach-berlin-90146
+source_url: https://www.arbeitnow.com/jobs/companies/heidi/customer-success-manager-dach-berlin-90146
+title: Customer Success Manager, DACH
+company: Heidi
+location: Berlin, Germany
+published_at: '2026-08-04T15:00:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:03:53Z'
+rejected_at: '2026-08-04T17:03:53Z'

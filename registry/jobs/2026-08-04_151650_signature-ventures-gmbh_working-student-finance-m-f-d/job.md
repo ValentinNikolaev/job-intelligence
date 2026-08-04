@@ -64,4 +64,4 @@ We are looking forward to receiving your application via [Join.com](http://Join.
 
 For any questions, please reach out to us: your main contact is our Director of Operations, Anja.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,37 @@
+schema_version: 2
+id: b839f4d9-4525-4270-b3fc-fb21352c0b12
+title: Full Stack PHP Laravel Developer/ DevOps Skills
+company: Valant
+company_url: https://jobs.dou.ua/companies/valant/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '360382'
+  url: https://jobs.dou.ua/companies/valant/vacancies/360382/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 серпня
+    listing_summary: 'Full Stack PHP Developer ExperienceBank
+
+
+      About the project TrekkSoft Channel Manager for ski resorts and tourist attractions
+      Small team with a developer centric atmosphere and friendly culture Handling
+      large volumes of legacy data billings and transactions High emphasis on...'
+published_at: '2026-08-04'
+discovered_at: '2026-08-04T17:04:37Z'
+updated_at: '2026-08-04T17:04:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T17:04:37Z'
+analysis_priority: 100
+fingerprint: sha256:bfb7047d8f7702d003f8cf78455688e80a57afc0a77330f72a9141697f2e90da
+data_source: dou
+content_source: dou
+company_content_source: dou

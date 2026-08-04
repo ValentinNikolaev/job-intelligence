@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '4035743324091401119'
-source_url: https://jooble.org/away/4035743324091401119?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=489&brelb=15&scr=622.9909&bscr=622.9909&aq=-5032823982189870489&elckey=-8510562255294567761
+source_url: https://jooble.org/away/4035743324091401119?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=491&brelb=15&scr=607.6729&bscr=607.6729&aq=2401803699414473352&elckey=-6083914571978118753
 title: Backend Engineer, Moderation Enforcement
 company: Reddit
 location: Remote
 published_at: '2026-07-15T00:00:00.0000000'
 rejection_category: stale
 rejection_reason: published_at 2026-07-15T00:00:00.0000000 is older than 7 days
-updated_at: '2026-08-04T15:19:25Z'
+updated_at: '2026-08-04T17:06:58Z'
 rejected_at: '2026-08-04T15:19:25Z'

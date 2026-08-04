@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sachbearbeitung-qualitatssicherung-passiv-mit-entwicklungsperspektive-ginsheim-gustavsburg-424080
+source_url: https://www.arbeitnow.com/jobs/companies/volksbank-mainspitze-eg/sachbearbeitung-qualitatssicherung-passiv-mit-entwicklungsperspektive-ginsheim-gustavsburg-424080
+title: Sachbearbeitung Qualitätssicherung Passiv (m/w/d) mit Entwicklungsperspektive
+company: Volksbank Mainspitze eG
+location: Ginsheim-Gustavsburg
+published_at: '2026-08-04T16:00:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T17:03:41Z'
+rejected_at: '2026-08-04T17:03:41Z'
