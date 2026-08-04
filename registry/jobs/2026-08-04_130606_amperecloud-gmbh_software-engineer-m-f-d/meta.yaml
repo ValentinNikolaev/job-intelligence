@@ -1,0 +1,30 @@
+schema_version: 2
+id: 34dc9071-4a36-4556-8baf-649115146b46
+title: Software Engineer (m/f/d)
+company: Amperecloud GmbH
+company_url: null
+location: Berlin , Berlin, Germany
+remote: false
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: software-engineer-berlin-127790
+  url: https://www.arbeitnow.com/jobs/companies/amperecloud-gmbh/software-engineer-berlin-127790
+  metadata:
+    tags:
+    - Software Engineering
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-08-04T11:50:28Z'
+discovered_at: '2026-08-04T13:06:06Z'
+updated_at: '2026-08-04T13:06:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T13:06:06Z'
+analysis_priority: 0
+fingerprint: sha256:da576a9d1182e105fb9ddb0ff2fdcedb1b9134817e410921726a668c68dc408b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

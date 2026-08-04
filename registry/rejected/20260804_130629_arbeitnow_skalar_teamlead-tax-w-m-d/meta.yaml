@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: teamlead-tax-munich-48867
+source_url: https://www.arbeitnow.com/jobs/companies/skalar/teamlead-tax-munich-48867
+title: Teamlead Tax (w/m/d)
+company: Skalar
+location: München
+published_at: '2026-08-04T11:40:50Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:06:29Z'
+rejected_at: '2026-08-04T13:06:29Z'

@@ -45,4 +45,4 @@ Je nach deinen Interessen und Stärken unterstützt du unser Team in den Bereich
 
 - Ein starkes Onboarding, regelmäßige Weiterbildungen & Konferenzen
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

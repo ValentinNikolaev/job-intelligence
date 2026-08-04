@@ -91,4 +91,4 @@ Schick uns keinen Lebenslauf-Roman. Geh auf unsere Social-Media-Kanäle und unse
 
 *Bitte gib in deiner Bewerbung auch direkt an, ob du dich für das 3-monatige freiwillige Praktikum oder ein Pflichtpraktikum (inkl. Dauer) bewirbst. Dazu ein Link zu deinem LinkedIn-Profil (oder ein kurzer CV) und ab dafür.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

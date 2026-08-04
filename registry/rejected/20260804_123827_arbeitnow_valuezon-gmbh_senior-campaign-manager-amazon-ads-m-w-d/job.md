@@ -87,4 +87,4 @@ Kommunikation in deutscher (verhandlungssicher) und englischer Sprache sind für
 
 Du bist bereit, Verantwortung zu übernehmen und in einem dynamischen, wachstumsstarken Umfeld echte Wirkung zu erzielen? Dann freuen wir uns auf deine Bewerbung! 📩
 
-❓ Du hast noch Fragen? Dann melde dich gerne bei unserer HR Managerin Franzi unter Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+❓ Du hast noch Fragen? Dann melde dich gerne bei unserer HR Managerin Franzi unter Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

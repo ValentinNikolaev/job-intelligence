@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: director-financial-accounting-mensch-dusseldorf-314047
+source_url: https://www.arbeitnow.com/jobs/companies/wppmedia/director-financial-accounting-mensch-dusseldorf-314047
+title: Director Financial Accounting (Mensch)
+company: wppmedia
+location: Dusseldorf
+published_at: '2026-08-04T11:55:32Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:05:48Z'
+rejected_at: '2026-08-04T13:05:48Z'

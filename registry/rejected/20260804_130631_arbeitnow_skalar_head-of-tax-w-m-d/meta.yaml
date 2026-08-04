@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: head-of-tax-munich-392807
+source_url: https://www.arbeitnow.com/jobs/companies/skalar/head-of-tax-munich-392807
+title: Head of Tax (w/m/d)
+company: Skalar
+location: München
+published_at: '2026-08-04T11:40:50Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:06:31Z'
+rejected_at: '2026-08-04T13:06:31Z'

@@ -1,0 +1,31 @@
+schema_version: 2
+id: a5f51dfa-7113-4e81-a112-4e06ead3260e
+title: Werkstudent:in Automation, KI & Prozessmanagement (m/w/d) - remote oder Karlsruhe
+company: Knuddels GmbH & Co. KG
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Mid, parttime permanent
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-automation-ki-prozessmanagement-remote-oder-karlsruhe-452537
+  url: https://www.arbeitnow.com/jobs/companies/knuddels-gmbh-co-kg/werkstudentin-automation-ki-prozessmanagement-remote-oder-karlsruhe-452537
+  metadata:
+    tags:
+    - Operations
+    - Remote
+    job_types:
+    - Mid
+    - parttime permanent
+published_at: '2026-08-04T11:30:10Z'
+discovered_at: '2026-08-04T13:06:47Z'
+updated_at: '2026-08-04T13:06:47Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T13:06:47Z'
+analysis_priority: 0
+fingerprint: sha256:4998a7bc712ce5a26d980995e2281672865cb067ba2395e40de6d32b7d786e25
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

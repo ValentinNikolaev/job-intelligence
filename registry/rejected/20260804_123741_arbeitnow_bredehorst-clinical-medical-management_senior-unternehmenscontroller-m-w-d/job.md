@@ -83,4 +83,4 @@ Deine Tätigkeiten bei uns:
 
 - **und noch vieles mehr! Überzeug dich selbst und bewirb dich bei uns.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

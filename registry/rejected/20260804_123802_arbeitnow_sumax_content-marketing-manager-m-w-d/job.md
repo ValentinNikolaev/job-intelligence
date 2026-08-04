@@ -63,4 +63,4 @@ Wir sind eine Dortmunder Full Service Agentur mit mehr als 15 Jahren Erfahrung i
 
 Mehr online, weniger Papier: Bitte schick uns Deine vollständigen und aussagekräftigen Bewerbungsunterlagen (inkl. Anschreiben, Lebenslauf und Zeugnissen in max. 3 Dateien, Deinem frühstmöglichen Antrittstermin und Deine Gehaltsvorstellungen).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

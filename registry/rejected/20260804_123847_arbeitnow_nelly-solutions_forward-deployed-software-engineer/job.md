@@ -107,4 +107,4 @@ A dog-friendly office with great vibes and a team that's fun to work with
 
 Snacks and a fridge full of cold drinks
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

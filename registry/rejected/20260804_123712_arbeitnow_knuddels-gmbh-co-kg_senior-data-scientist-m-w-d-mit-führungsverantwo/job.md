@@ -124,4 +124,4 @@ Einen an den Haaren herbeigezogenen dritten Bullet Point, wenn uns nur zwei einf
 
 Die angegebene Gehaltsspanne bezieht sich auf eine Vollzeitstelle. Die genaue Stundenzahl ist bei uns flexibel - was für dich passt, klären wir im Gespräch. Das Gehalt richtet sich dann entsprechend danach.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

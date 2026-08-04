@@ -1,0 +1,30 @@
+schema_version: 2
+id: 93afd351-f30e-4855-9446-5df2daf24033
+title: Staff Engineer - Heartbeat AI (m/f/d)
+company: 1KOMMA5˚
+company_url: null
+location: Berlin
+remote: true
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: staff-engineer-heartbeat-ai-berlin-388590
+  url: https://www.arbeitnow.com/jobs/companies/1komma50/staff-engineer-heartbeat-ai-berlin-388590
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - professional / experienced
+published_at: '2026-08-04T10:07:18Z'
+discovered_at: '2026-08-04T13:07:27Z'
+updated_at: '2026-08-04T13:07:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T13:07:27Z'
+analysis_priority: 0
+fingerprint: sha256:56f4559c1ca71d48dabe6fe8fe95901230cf8362ad7bed178da0fc765ac8d90c
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

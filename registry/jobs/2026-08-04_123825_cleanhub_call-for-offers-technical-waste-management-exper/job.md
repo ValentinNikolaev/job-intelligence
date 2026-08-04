@@ -90,4 +90,4 @@ Interested consultants are invited to submit an offer to ***
 
 - Confirmation of language skills and any relevant certifications.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

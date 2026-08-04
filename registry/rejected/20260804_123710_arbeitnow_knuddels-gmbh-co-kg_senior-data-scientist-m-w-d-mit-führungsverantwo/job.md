@@ -114,4 +114,4 @@ Einen an den Haaren herbeigezogenen dritten Bullet Point, wenn uns nur zwei einf
 
 **Nice-to-have:** Kenntnisse in Java und Mixpanel.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

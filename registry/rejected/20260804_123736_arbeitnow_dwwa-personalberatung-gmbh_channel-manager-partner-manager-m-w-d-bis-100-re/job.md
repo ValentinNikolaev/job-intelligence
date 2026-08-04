@@ -81,4 +81,4 @@ Du suchst einen sicheren Job als Channel Manager (m/w/d) mit bis zu 100% Remote-
 
 - **Alternative Jobangebote:** Wenn dieser Job nicht zu dir passen sollte, machen wir uns für dich auf die Suche. Kostenlos!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

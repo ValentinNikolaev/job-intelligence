@@ -51,4 +51,4 @@ Gutes Marketing braucht Struktur – auch im Hintergrund. Die Diermann Marketing
 
 Sie arbeiten gerne strukturiert, behalten den Überblick und möchten ein digitales Marketing-Team vom Homeoffice aus zuverlässig unterstützen? Dann schreiben Sie uns kurz, warum Sie zu uns passen. Wir freuen uns auf Ihre Bewerbung und melden uns zeitnah, um den nächsten Schritt gemeinsam einzuordnen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

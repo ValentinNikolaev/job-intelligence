@@ -102,4 +102,4 @@ Interested consultants are invited to submit an offer to ***
 
 - Name and contact info for two professional references
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

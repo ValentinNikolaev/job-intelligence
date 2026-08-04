@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '8778383892977239593'
-source_url: https://jooble.org/away/8778383892977239593?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=27&brelb=15&scr=2418.4402&bscr=2418.4402&aq=-6189559606143281046&elckey=-8331088681057438728
+source_url: https://jooble.org/away/8778383892977239593?p=1&pos=7&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=31&brelb=15&scr=2508.4146&bscr=2508.4146&aq=-1977952171824431679&elckey=3365733738085998725
 title: Senior Backend Engineer
 company: TaxGPT
 location: Remote
 published_at: '2026-08-03T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-04T09:42:15Z'
+updated_at: '2026-08-04T13:13:43Z'
 rejected_at: '2026-07-29T08:34:39Z'

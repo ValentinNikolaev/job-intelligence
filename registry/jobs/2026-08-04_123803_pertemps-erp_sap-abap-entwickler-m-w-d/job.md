@@ -38,4 +38,4 @@ Für ein international aufgestelltes Industrieunternehmen im Raum Dresden suche 
 
 Falls die Position interessant klingt oder du einfach unverbindlich mehr erfahren möchtest, schick mir gerne eine Nachricht oder deinen aktuellen Lebenslauf. Ich freue mich auf den Austausch!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

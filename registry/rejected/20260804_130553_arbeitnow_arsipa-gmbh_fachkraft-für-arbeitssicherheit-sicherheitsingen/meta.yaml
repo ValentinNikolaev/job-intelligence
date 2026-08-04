@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-fachkraft-fur-arbeitssicherheit-sicherheitsingenieur-konstanz-309477
+source_url: https://www.arbeitnow.com/jobs/companies/arsipa-gmbh/remote-fachkraft-fur-arbeitssicherheit-sicherheitsingenieur-konstanz-309477
+title: Fachkraft für Arbeitssicherheit / Sicherheitsingenieur (w/m/d)
+company: Arsipa GmbH
+location: Homeoffice
+published_at: '2026-08-04T11:51:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:05:53Z'
+rejected_at: '2026-08-04T13:05:53Z'

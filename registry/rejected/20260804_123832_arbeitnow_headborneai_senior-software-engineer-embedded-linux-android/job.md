@@ -129,4 +129,4 @@ HEADBORNE.AI is an equal-opportunity employer, and we encourage candidates from 
 
 - Receive highly competitive stock options
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

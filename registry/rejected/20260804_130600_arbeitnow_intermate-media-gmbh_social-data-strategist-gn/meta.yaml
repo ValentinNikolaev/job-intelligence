@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: social-data-strategist-gn-berlin-157586
+source_url: https://www.arbeitnow.com/jobs/companies/intermate-media-gmbh/social-data-strategist-gn-berlin-157586
+title: Social Data Strategist (gn)
+company: Intermate Media GmbH
+location: Berlin, Berlin, Deutschland
+published_at: '2026-08-04T11:51:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:06:00Z'
+rejected_at: '2026-08-04T13:06:00Z'

@@ -125,4 +125,4 @@ A fridge full of cold drinks and snacks waiting to be claimed
 
 *We celebrate diversity and welcome individuals of all genders (m/f/d) to apply — and because we know confidence gaps and impostor syndrome can get in the way, please don’t hesitate even if you don’t meet every single criterion; if you’re exceptional, tell us why, and we’d genuinely love to hear from you.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

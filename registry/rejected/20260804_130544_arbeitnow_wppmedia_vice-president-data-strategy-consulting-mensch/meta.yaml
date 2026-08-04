@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: vice-president-data-strategy-consulting-mensch-dusseldorf-frankfurt-hamburg-munich-169886
+source_url: https://www.arbeitnow.com/jobs/companies/wppmedia/vice-president-data-strategy-consulting-mensch-dusseldorf-frankfurt-hamburg-munich-169886
+title: Vice President Data Strategy Consulting (Mensch)
+company: wppmedia
+location: Dusseldorf; Frankfurt; Hamburg; Munich
+published_at: '2026-08-04T11:55:34Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:05:44Z'
+rejected_at: '2026-08-04T13:05:44Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: praktikantin-operations-munich-93486
+source_url: https://www.arbeitnow.com/jobs/companies/skalar/praktikantin-operations-munich-93486
+title: Praktikant:in (w/m/d) Operations
+company: Skalar
+location: München
+published_at: '2026-08-04T11:40:50Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T13:06:19Z'
+rejected_at: '2026-08-04T13:06:19Z'

@@ -63,4 +63,4 @@ So läuft unser Bewerbungsprozess
 - **Interview mit deiner künftigen Führungskraft** und, je nach Position, mit unseren Gründern.
 Vom ersten Gespräch bis zur Entscheidung vergehen bei uns maximal vier Wochen. Und du hörst in jedem Fall von uns — auch dann, wenn es diesmal nicht passt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
