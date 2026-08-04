@@ -3,7 +3,7 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 18
+  total_events: 19
   by_status:
     applied:
       count: 11
@@ -12,8 +12,8 @@ summary:
       count: 1
       last_changed_at: '2026-08-04T15:38:38Z'
     rejected:
-      count: 6
-      last_changed_at: '2026-08-04T15:54:19Z'
+      count: 7
+      last_changed_at: '2026-08-04T18:51:00Z'
   by_reason:
     application-submitted:
       count: 1
@@ -45,6 +45,10 @@ summary:
       count: 1
       reason: SparkFabrik requires strong Italian language level for informal communication
       last_changed_at: '2026-08-01T16:20:42Z'
+    submission-form-resets-after-validation-errors:
+      count: 1
+      reason: Submission form resets after validation errors
+      last_changed_at: '2026-08-04T18:51:00Z'
     user-confirmed-all-jobs-were-applied-after-compl:
       count: 1
       reason: User confirmed all jobs were applied after completing the Solidgate
@@ -344,6 +348,18 @@ events:
   to_status: applied
   reason: User confirmed application submitted
   reason_key: user-confirmed-application-submitted
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-04T18:51:00Z'
+  vacancy_id: 2f2f4832-4ca8-4689-903b-3983a85285dc
+  directory: 2026-08-04_124045_faria_senior-php-laravel-engineer
+  company: Faria
+  title: Senior PHP/Laravel Engineer
+  from_status: found
+  to_status: rejected
+  reason: Submission form resets after validation errors
+  reason_key: submission-form-resets-after-validation-errors
   actor: codex
   interaction:
     source: llm_assisted_manual

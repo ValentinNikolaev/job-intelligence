@@ -23,11 +23,13 @@ sources:
       their curriculum development journey.
 published_at: '2026-08-04'
 discovered_at: '2026-08-04T12:40:45Z'
-updated_at: '2026-08-04T12:40:45Z'
-status: found
+updated_at: '2026-08-04T18:51:00Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-08-04T12:40:45Z'
+- status: rejected
+  changed_at: '2026-08-04T18:51:00Z'
 analysis_priority: 100
 fingerprint: sha256:7775a0119ffd8069dc354b231e39e9b013b676be650b6be37ac54f9ffd74399a
 data_source: dou

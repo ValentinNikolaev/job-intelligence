@@ -4,10 +4,10 @@
 
 Total vacancies: 632
 
-- Found: 457
+- Found: 456
 - Applied: 9
 - Interview: 1
-- Rejected: 163
+- Rejected: 164
 - Closed: 2
 
 ## Monthly catalogs
