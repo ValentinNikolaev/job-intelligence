@@ -1,0 +1,29 @@
+schema_version: 2
+id: 19664ad3-774c-46a6-8f62-4a6029af8ba5
+title: Senior/Staff Golang Engineer (EMEA)
+company: Wundergraph
+company_url: null
+location: EMEA
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: senior-staff-golang-engineer-emea-frankfurt-237205
+  url: https://www.arbeitnow.com/jobs/companies/wundergraph/senior-staff-golang-engineer-emea-frankfurt-237205
+  metadata:
+    tags:
+    - Engineering
+    job_types:
+    - Full Time
+published_at: '2026-08-04T03:02:01Z'
+discovered_at: '2026-08-04T06:52:31Z'
+updated_at: '2026-08-04T06:52:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T06:52:31Z'
+analysis_priority: 0
+fingerprint: sha256:3c107ca6b46d0762fbbf87c2c432d5b14edfeacd2bb0af9f11105b1aed81f768
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

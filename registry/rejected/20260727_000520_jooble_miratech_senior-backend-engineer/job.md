@@ -4,8 +4,8 @@ Posted: 2026-07-28T00:00:00.0000000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: Spring Boot is not a target stack
+- Category: stale
+- Reason: published_at 2026-07-28T00:00:00.0000000 is older than 7 days
 
 Role Description
 We are seeking an experienced **Backend Engineer **to build and enhance a Java & Spring Boot based enterprise application that... ...work culture: make the most of the flexibility that comes with **remote **work.

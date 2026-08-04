@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: manager-data-platform-berlin-135667
+source_url: https://www.arbeitnow.com/jobs/companies/kayak/manager-data-platform-berlin-135667
+title: Manager, Data Platform
+company: Kayak
+location: Berlin Office
+published_at: '2026-08-04T02:40:44Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T06:53:15Z'
+rejected_at: '2026-08-04T06:53:15Z'

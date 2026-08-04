@@ -1,11 +1,11 @@
 # Senior QC Inspector
 
-Posted: 2026-06-24T00:00:00.0000000
+Posted: 2026-07-20T00:00:00.0000000
 
 ## Rejection
 
 - Category: stale
-- Reason: published_at 2026-06-24T00:00:00.0000000 is older than 7 days
+- Reason: published_at 2026-07-20T00:00:00.0000000 is older than 7 days
 
 ...**Senior **QC Inspector 
 

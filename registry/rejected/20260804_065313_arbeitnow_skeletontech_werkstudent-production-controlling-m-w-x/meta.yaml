@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-production-controlling-markranstadt-213209
+source_url: https://www.arbeitnow.com/jobs/companies/skeletontech/werkstudent-production-controlling-markranstadt-213209
+title: Werkstudent Production Controlling (m/w/x)
+company: Skeletontech
+location: Markranstädt, Germany
+published_at: '2026-08-04T02:40:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T06:53:13Z'
+rejected_at: '2026-08-04T06:53:13Z'

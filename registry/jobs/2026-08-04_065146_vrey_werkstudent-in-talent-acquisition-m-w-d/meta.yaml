@@ -1,0 +1,29 @@
+schema_version: 2
+id: d78c11fa-2c81-436f-9906-7532ba7ac8d3
+title: Werkstudent:in Talent Acquisition (m/w/d)
+company: Vrey
+company_url: null
+location: Berlin HQ
+remote: false
+employment_type: Part Time
+sources:
+- source: arbeitnow
+  source_job_id: werkstudentin-talent-acquisition-berlin-460497
+  url: https://www.arbeitnow.com/jobs/companies/vrey/werkstudentin-talent-acquisition-berlin-460497
+  metadata:
+    tags:
+    - Founders Office
+    job_types:
+    - Part Time
+published_at: '2026-08-04T06:01:06Z'
+discovered_at: '2026-08-04T06:51:46Z'
+updated_at: '2026-08-04T06:51:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T06:51:46Z'
+analysis_priority: 0
+fingerprint: sha256:2a3b062f25b1f45ad3a790320f47e4e216a4e9a34f21cf62a61f8ba76aa0af86
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,27 @@
+schema_version: 2
+id: cf85ffe0-1d83-41c4-97ed-bdd7ccbd46b7
+title: Senior Product Designer - Strategic Discovery (x,f,m)
+company: dkbcodefactory
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-product-designer-strategic-discovery-xfm-berlin-154693
+  url: https://www.arbeitnow.com/jobs/companies/dkbcodefactory/senior-product-designer-strategic-discovery-xfm-berlin-154693
+  metadata:
+    tags:
+    - Product & Design
+published_at: '2026-08-04T05:56:23Z'
+discovered_at: '2026-08-04T06:51:56Z'
+updated_at: '2026-08-04T06:51:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T06:51:56Z'
+analysis_priority: 0
+fingerprint: sha256:7709112675fcbef215b32be6d7d3d47ca859dfcb447254803a10b15f525fe677
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

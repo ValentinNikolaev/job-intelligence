@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: mechanical-design-engineer-stuttgart-49964
+source_url: https://www.arbeitnow.com/jobs/companies/sereact/mechanical-design-engineer-stuttgart-49964
+title: Mechanical Design Engineer
+company: Sereact
+location: Stuttgart Schockenriedstr. 17
+published_at: '2026-08-04T03:00:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-04T06:52:41Z'
+rejected_at: '2026-08-04T06:52:41Z'

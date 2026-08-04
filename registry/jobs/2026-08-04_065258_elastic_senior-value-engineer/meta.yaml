@@ -1,0 +1,27 @@
+schema_version: 2
+id: a9c6a03c-332c-47e3-9f9b-a4b1e8cf7e29
+title: Senior Value Engineer
+company: Elastic
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-value-engineer-19192
+  url: https://www.arbeitnow.com/jobs/companies/elastic/senior-value-engineer-19192
+  metadata:
+    tags:
+    - Sales Enablement
+published_at: '2026-08-04T02:56:02Z'
+discovered_at: '2026-08-04T06:52:58Z'
+updated_at: '2026-08-04T06:52:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-04T06:52:58Z'
+analysis_priority: 0
+fingerprint: sha256:fd792c8878549865d8d7c064e0a33ea168c80799a217cfabc60e0b8d22dc5585
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

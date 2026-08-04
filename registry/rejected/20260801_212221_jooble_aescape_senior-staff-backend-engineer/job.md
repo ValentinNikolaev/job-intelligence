@@ -1,11 +1,11 @@
 # Senior / Staff Backend Engineer
 
-Posted: 2026-07-27T00:00:00.0000000
+Posted: 2026-08-03T00:00:00.0000000
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-27T00:00:00.0000000 is older than 7 days
+- Category: location_requirement
+- Reason: requires United States location
 
 ...Aescape is looking for a Senior or Staff level **Backend Engineer **that will work directly with a stellar... ...to hear from you! This is a US-based **remote **role.
 
