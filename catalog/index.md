@@ -4,8 +4,8 @@
 
 Total vacancies: 639
 
-- Found: 465
-- Applied: 8
+- Found: 464
+- Applied: 9
 - Interview: 1
 - Rejected: 163
 - Closed: 2

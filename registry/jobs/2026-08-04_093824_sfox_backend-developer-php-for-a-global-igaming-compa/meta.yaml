@@ -31,11 +31,13 @@ sources:
       integrity.'
 published_at: '2026-08-04'
 discovered_at: '2026-08-04T09:38:24Z'
-updated_at: '2026-08-04T09:38:24Z'
-status: found
+updated_at: '2026-08-04T18:16:05Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-04T09:38:24Z'
+- status: applied
+  changed_at: '2026-08-04T18:16:05Z'
 analysis_priority: 100
 fingerprint: sha256:f321e13e52eff8941843b008eaa76b5bd7ffb6b350881d9ef52191ad555b9ad2
 data_source: dou
