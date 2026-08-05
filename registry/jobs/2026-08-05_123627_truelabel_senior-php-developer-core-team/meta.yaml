@@ -1,0 +1,38 @@
+schema_version: 2
+id: f96662d8-186e-4e3c-9009-d43b72dcfd44
+title: Senior PHP developer — Core Team
+company: TrueLabel
+company_url: https://jobs.dou.ua/companies/truelabel/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368599'
+  url: https://jobs.dou.ua/companies/truelabel/vacancies/368599/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 5 серпня
+    listing_summary: 'Our Criteria
+
+
+      — Design, develop, and maintain backend services and APIs of varying complexity
+      using Laravel (PHP).— Develop and support event-driven integrations based on
+      Kafka and RabbitMQ (producers/consumers, queues, message processing).— Design
+      and optimize data handling:...'
+published_at: '2026-08-05'
+discovered_at: '2026-08-05T12:36:27Z'
+updated_at: '2026-08-05T12:36:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T12:36:27Z'
+analysis_priority: 100
+fingerprint: sha256:da66a5996304fd28da8ae8a870595df03de1f649d44793f110c1e48f52540c2f
+data_source: dou
+content_source: dou
+company_content_source: dou

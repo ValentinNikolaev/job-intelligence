@@ -200,4 +200,4 @@ Excited? So are we. Learn more about [Team Taxfix](https://medium.com/taxfix) on
 
 Not sure if you meet all the requirements for this role? Please apply anyway. You might bring something special to the team that we hadn't considered previously.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
