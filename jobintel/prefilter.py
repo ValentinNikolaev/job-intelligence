@@ -89,6 +89,9 @@ def prefilter_job(
         )
     if _has_hard_language_requirement(full_text, "italian"):
         return Rejection("language_requirement", "hard Italian language requirement without English green light")
+    cms_stack = _cms_stack(full_text)
+    if cms_stack is not None:
+        return Rejection("tech_stack", f"{cms_stack} vacancies are ignored")
     blacklisted_stack = _blacklisted_stack(full_text)
     if blacklisted_stack is not None:
         return Rejection("tech_stack", f"{blacklisted_stack} is not a target stack")
@@ -354,6 +357,16 @@ def _blacklisted_stack(text: str) -> str | None:
         return "Python + R"
     if _has_python_stack(text) and re.search(r"\bjulia\b", text):
         return "Python + Julia"
+    return None
+
+
+def _cms_stack(text: str) -> str | None:
+    if re.search(r"\btypo3\b", text):
+        return "TYPO3"
+    if re.search(r"\bword\s*press\b|\bwordpress\b", text):
+        return "WordPress"
+    if re.search(r"\bdrupal\b", text):
+        return "Drupal"
     return None
 
 

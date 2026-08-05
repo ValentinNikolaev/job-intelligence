@@ -150,6 +150,23 @@ class PrefilterTests(unittest.TestCase):
                 self.assertEqual("tech_stack", rejection.category)
                 self.assertIn(reason, rejection.reason)
 
+    def test_rejects_cms_vacancies(self) -> None:
+        cases = (
+            ("TYPO3 Certified Developer", "Build PHP extensions.", "TYPO3"),
+            ("Senior Backend Engineer", "Maintain WordPress plugins in PHP.", "WordPress"),
+            ("Senior Backend Engineer", "Build Word Press themes and PHP APIs.", "WordPress"),
+            ("Senior PHP Developer", "Own Drupal modules for customer sites.", "Drupal"),
+        )
+        for title, description, reason in cases:
+            with self.subTest(title=title, description=description):
+                rejection = prefilter_job(
+                    make_job(title=title, description=description),
+                    now=self.now,
+                )
+                self.assertIsNotNone(rejection)
+                self.assertEqual("tech_stack", rejection.category)
+                self.assertIn(reason, rejection.reason)
+
     def test_rejected_registry_always_writes_reason(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary) / "registry"
