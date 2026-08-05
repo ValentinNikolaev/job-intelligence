@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: user-acquisition-manager-berlin-299143
+source_url: https://www.arbeitnow.com/jobs/companies/neowire-gmbh/user-acquisition-manager-berlin-299143
+title: User Acquisition Manager
+company: neowire GmbH
+location: Berlin
+published_at: '2026-08-05T14:00:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T15:02:19Z'
+rejected_at: '2026-08-05T15:02:19Z'

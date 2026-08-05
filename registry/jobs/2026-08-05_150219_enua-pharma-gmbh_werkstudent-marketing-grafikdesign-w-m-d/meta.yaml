@@ -1,0 +1,29 @@
+schema_version: 2
+id: f82c9604-c7f2-49ee-9cab-e9a623860c9e
+title: Werkstudent Marketing & Grafikdesign (w/m/d)
+company: enua Pharma GmbH
+company_url: null
+location: Cologne
+remote: false
+employment_type: Working student
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-marketing-grafikdesign-cologne-401507
+  url: https://www.arbeitnow.com/jobs/companies/enua-pharma-gmbh/werkstudent-marketing-grafikdesign-cologne-401507
+  metadata:
+    tags:
+    - Marketing and Communication
+    job_types:
+    - Working student
+published_at: '2026-08-05T14:00:29Z'
+discovered_at: '2026-08-05T15:02:19Z'
+updated_at: '2026-08-05T15:02:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T15:02:19Z'
+analysis_priority: 0
+fingerprint: sha256:23a68d30e73970b2f24b6b7bf78b5a5cb50fe3239283fc67c0fafc8f59a43ae7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3499267995904986058'
+source_url: https://jooble.org/desc/3499267995904986058?ckey=remote+senior+backend+engineer&rgn=55180&pos=33&groupId=2134052230&elckey=-5549287485796415921&p=1&aq=-7871999627519851919&cid=15922&jobAge=825&brelb=100&bscr=860.7812&scr=860.7812
+title: Senior Backend Engineer - Client integrations
+company: Kalepa
+location: Remote
+published_at: '2026-07-02T14:49:53.9070000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-02T14:49:53.9070000 is older than 7 days
+updated_at: '2026-08-05T15:04:54Z'
+rejected_at: '2026-08-05T15:04:54Z'

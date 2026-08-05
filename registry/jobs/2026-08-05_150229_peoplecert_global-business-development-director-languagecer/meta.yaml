@@ -1,0 +1,33 @@
+schema_version: 2
+id: 73dd847b-ce8b-4dc0-b6b5-696ad9db01fd
+title: Global Business Development Director - Languagecert Test Of English (Lte)
+company: Peoplecert
+company_url: null
+location: Germany
+remote: true
+employment_type: Full time, director
+sources:
+- source: arbeitnow
+  source_job_id: remote-global-business-development-director-languagecert-test-of-english-lte-germany-132456
+  url: https://www.arbeitnow.com/jobs/companies/peoplecert/remote-global-business-development-director-languagecert-test-of-english-lte-germany-132456
+  metadata:
+    tags:
+    - Business Development
+    - Education Management
+    - Growth
+    - Remote
+    job_types:
+    - Full time
+    - director
+published_at: '2026-08-05T11:40:43Z'
+discovered_at: '2026-08-05T15:02:29Z'
+updated_at: '2026-08-05T15:02:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T15:02:29Z'
+analysis_priority: 0
+fingerprint: sha256:c0d685703bf73e756eef62d1e7a4780047ae3011f50f8ea809b83a238abc73a7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

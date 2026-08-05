@@ -80,4 +80,4 @@ Bewirb Dich noch heute! Bitte lade uns in einer Datei Deinen Lebenslauf, aktuell
 
 **Wir freuen uns auf Deine Bewerbung und ein erstes Kennenlernen!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

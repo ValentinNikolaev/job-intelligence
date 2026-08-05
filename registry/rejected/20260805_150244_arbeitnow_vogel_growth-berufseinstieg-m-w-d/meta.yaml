@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: growth-berufseinstieg-munchen-42250
+source_url: https://www.arbeitnow.com/jobs/companies/vogel/growth-berufseinstieg-munchen-42250
+title: Growth Berufseinstieg (m/w/d)
+company: Vogel
+location: München
+published_at: '2026-08-05T08:40:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T15:02:44Z'
+rejected_at: '2026-08-05T15:02:44Z'

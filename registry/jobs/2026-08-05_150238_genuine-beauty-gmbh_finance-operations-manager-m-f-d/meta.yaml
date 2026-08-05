@@ -1,0 +1,29 @@
+schema_version: 2
+id: 1c41d740-310c-4d37-b01b-32b4367a6502
+title: Finance & Operations Manager (m/f/d)
+company: GENUINE Beauty GmbH
+company_url: null
+location: Cologne
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: finance-operations-manager-cologne-392552
+  url: https://www.arbeitnow.com/jobs/companies/genuine-beauty-gmbh/finance-operations-manager-cologne-392552
+  metadata:
+    tags:
+    - Finance
+    job_types:
+    - professional / experienced
+published_at: '2026-08-05T11:30:31Z'
+discovered_at: '2026-08-05T15:02:38Z'
+updated_at: '2026-08-05T15:02:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T15:02:38Z'
+analysis_priority: 0
+fingerprint: sha256:5b70f4b23880d9e6798a32a2322e7592c0c8c1486aeae1e105afbaa64dd7d322
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -111,4 +111,4 @@ Hier ist ein Video – um einen Überblick über unser Unternehmen, unsere Werte
 
 [https://www.youtube.com/watch?v=v7aJiy80jmo](https://www.youtube.com/watch?v=v7aJiy80jmo)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

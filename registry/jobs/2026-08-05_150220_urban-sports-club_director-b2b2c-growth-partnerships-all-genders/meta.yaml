@@ -1,0 +1,24 @@
+schema_version: 2
+id: 6154be3e-6332-40f2-b60c-b3a0ba4c08c6
+title: Director B2B2C Growth Partnerships (all genders)
+company: Urban Sports Club
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: director-b2b2c-growth-partnerships-all-genders-berlin-433621
+  url: https://www.arbeitnow.com/jobs/companies/urban-sports-club/director-b2b2c-growth-partnerships-all-genders-berlin-433621
+published_at: '2026-08-05T13:45:26Z'
+discovered_at: '2026-08-05T15:02:20Z'
+updated_at: '2026-08-05T15:02:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T15:02:20Z'
+analysis_priority: 0
+fingerprint: sha256:ea4853167b4914562e6aa5b5651918a70f3ae2474cb546aa4040aeee6398b61b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

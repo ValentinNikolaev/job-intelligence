@@ -1,0 +1,27 @@
+schema_version: 2
+id: e1134dda-4488-4425-8052-c2279e5159e3
+title: Senior Account Executive, Commercial Sales - DACH
+company: pendo
+company_url: null
+location: Munich
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-account-executive-commercial-sales-dach-munich-25671
+  url: https://www.arbeitnow.com/jobs/companies/pendo/senior-account-executive-commercial-sales-dach-munich-25671
+  metadata:
+    tags:
+    - Enterprise
+published_at: '2026-08-05T11:55:23Z'
+discovered_at: '2026-08-05T15:02:27Z'
+updated_at: '2026-08-05T15:02:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T15:02:27Z'
+analysis_priority: 0
+fingerprint: sha256:b6502e76f3047ebd5881463bef1467857326f6d3cb504cc8f05af0c0b4b99808
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

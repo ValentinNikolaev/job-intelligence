@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-success-manager-gesucht-100-remote-hamburg-398926
+source_url: https://www.arbeitnow.com/jobs/companies/provipanda-gmbh/customer-success-manager-gesucht-100-remote-hamburg-398926
+title: Customer Success Manager (m/w/d) gesucht - 100% Remote
+company: ProviPanda GmbH
+location: Hamburg
+published_at: '2026-08-05T13:59:04Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T15:02:40Z'
+rejected_at: '2026-08-05T15:02:40Z'

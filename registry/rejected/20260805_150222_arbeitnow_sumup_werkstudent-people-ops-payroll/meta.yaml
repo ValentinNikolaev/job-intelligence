@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-people-ops-payroll-berlin-36171
+source_url: https://www.arbeitnow.com/jobs/companies/sumup/werkstudent-people-ops-payroll-berlin-36171
+title: Werkstudent People Ops & Payroll
+company: SumUp
+location: Berlin, Germany
+published_at: '2026-08-05T13:45:24Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T15:02:22Z'
+rejected_at: '2026-08-05T15:02:22Z'
