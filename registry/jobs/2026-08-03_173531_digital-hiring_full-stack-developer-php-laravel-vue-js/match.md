@@ -1,18 +1,21 @@
 # Match Analysis
 
 **Score:** 79/100  
-**Recommendation:** Strong Match
+**Recommendation:** Match
 
-Senior Laravel/PHP and backend ownership are strong; profile supports integrations and scalable systems.
+Strong PHP/Laravel and architecture fit, with meaningful but less current evidence for the required Vue/full-stack side.
 
 ## Why it matches
 
-- PHP
-- Laravel
-- APIs
-- databases
-- delivery leadership
+- Extensive PHP and Laravel experience
+- REST APIs, SOLID, databases, testing, and technical ownership
+- E-commerce and product-platform background
 
 ## Gaps
 
-- Vue.js and recent hands-on frontend depth are not evidenced.
+- Five years of Vue/Nuxt and TypeScript are not explicitly supported
+- Recent work is predominantly backend
+
+## Concerns
+
+- Frontend depth should be tested in screening.

@@ -1,0 +1,20 @@
+score: 86
+recommendation: strong_match
+summary: Excellent fit for a hands-on backend lead role combining architecture, coding,
+  mentoring, and transactional systems.
+strengths:
+- PHP/Go backend engineering and system design
+- Technical leadership, mentoring, and production troubleshooting
+- High-load, payments, queues, and reliability experience
+gaps:
+- Specific gaming-provider domain experience is not established
+- Some listed platform technologies may require ramp-up
+concerns:
+- Exact team and product context should be confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-05T20:23:37Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:57086ebb3d953fff21bd8d03cd69c8aa9f1bc0432385ff76432f4998ca12ceca
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

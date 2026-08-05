@@ -1,20 +1,20 @@
 score: 79
-recommendation: strong_match
-summary: Senior Laravel/PHP and backend ownership are strong; profile supports integrations
-  and scalable systems.
+recommendation: match
+summary: Strong PHP/Laravel and architecture fit, with meaningful but less current
+  evidence for the required Vue/full-stack side.
 strengths:
-- PHP
-- Laravel
-- APIs
-- databases
-- delivery leadership
+- Extensive PHP and Laravel experience
+- REST APIs, SOLID, databases, testing, and technical ownership
+- E-commerce and product-platform background
 gaps:
-- Vue.js and recent hands-on frontend depth are not evidenced.
-concerns: []
+- Five years of Vue/Nuxt and TypeScript are not explicitly supported
+- Recent work is predominantly backend
+concerns:
+- Frontend depth should be tested in screening.
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-08-04T10:23:50Z'
+hard_rejection_reason: null
+analyzed_at: '2026-08-05T20:23:37Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:108f9610b146d0801a89304c96a5a87411935155f142e81a8b24f6b5b96289c1
+job_version: sha256:6839bba900702fa0fc0b027fdc8cc69c5b778ebbc5439089698d080d4e82d6fc
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
