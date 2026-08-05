@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sales-development-representative-b2c-berlin-134698
+source_url: https://www.arbeitnow.com/jobs/companies/stackfuel/sales-development-representative-b2c-berlin-134698
+title: Sales Development Representative - B2C (m/w/d)
+company: Stackfuel
+location: Berlin
+published_at: '2026-08-05T14:40:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T19:01:41Z'
+rejected_at: '2026-08-05T19:01:41Z'

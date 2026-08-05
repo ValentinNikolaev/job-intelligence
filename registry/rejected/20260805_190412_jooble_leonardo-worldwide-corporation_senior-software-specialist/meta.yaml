@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6511489581901271870'
+source_url: https://jooble.org/desc/6511489581901271870?ckey=senior+backend+engineer&rgn=55179&pos=8&groupId=293749696&elckey=5374788241531222431&p=1&aq=5045850688953112600&cid=15922&jobAge=8605&brelb=100&bscr=14.015549&scr=14.015549
+title: Senior Software Specialist
+company: Leonardo Worldwide Corporation
+location: Italian Republic
+published_at: '2025-08-12T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2025-08-12T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-05T19:04:12Z'
+rejected_at: '2026-08-05T19:04:12Z'

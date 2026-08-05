@@ -1,0 +1,29 @@
+schema_version: 2
+id: f85e0a08-5526-4387-8b8c-b9bc9cf25639
+title: Enterprise Account Executive (m/w/d) - Germany
+company: Stackfuel
+company_url: null
+location: Berlin
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: enterprise-account-executive-germany-berlin-116713
+  url: https://www.arbeitnow.com/jobs/companies/stackfuel/enterprise-account-executive-germany-berlin-116713
+  metadata:
+    tags:
+    - B2B Sales
+    job_types:
+    - Full Time
+published_at: '2026-08-05T14:40:30Z'
+discovered_at: '2026-08-05T19:01:41Z'
+updated_at: '2026-08-05T19:01:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T19:01:41Z'
+analysis_priority: 0
+fingerprint: sha256:12ff5bf2a91af0fcdea1772d7f321ceb3fac44700f230f636f4c8395cf2bf993
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2766631631712663521'
+source_url: https://jooble.org/desc/-2766631631712663521?ckey=remote+senior+backend+engineer&rgn=55180&pos=49&groupId=2134052230&elckey=977187699560281542&p=1&aq=-847019645425495673&cid=15922&jobAge=685&brelb=100&bscr=767.43195&scr=767.43195
+title: Senior Staff Backend Engineer
+company: Mesh
+location: India
+published_at: '2026-07-08T03:06:03.8500000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-08T03:06:03.8500000 is older than 7 days
+updated_at: '2026-08-05T19:04:38Z'
+rejected_at: '2026-08-05T19:04:38Z'

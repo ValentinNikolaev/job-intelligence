@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: information-security-engineer-munich-440298
+source_url: https://www.arbeitnow.com/jobs/companies/rivada-space-networks-gmbh/information-security-engineer-munich-440298
+title: Information Security Engineer
+company: Rivada Space Networks Gmbh
+location: Munich
+published_at: '2026-08-05T17:09:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T19:01:21Z'
+rejected_at: '2026-08-05T19:01:21Z'

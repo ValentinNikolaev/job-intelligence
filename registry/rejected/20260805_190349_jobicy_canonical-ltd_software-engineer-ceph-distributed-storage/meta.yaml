@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149972'
+source_url: https://jobicy.com/jobs/149972-software-engineer-ceph-distributed-storage
+title: Software Engineer, Ceph & Distributed Storage
+company: Canonical Ltd.
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-08-01T03:03:51Z'
+rejection_category: location_requirement
+rejection_reason: requires American continent location
+updated_at: '2026-08-05T19:03:49Z'
+rejected_at: '2026-08-05T19:03:49Z'

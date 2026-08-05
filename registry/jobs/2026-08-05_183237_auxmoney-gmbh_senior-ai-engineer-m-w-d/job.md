@@ -48,4 +48,4 @@ Du gestaltest, wie wir KI bei auxmoney produktiv, zuverlässig und verantwortung
 
 Für uns als Arbeitgeber sind Chancengleichheit und Diversität besonders wichtig. Daher freuen wir uns auf Bewerbungen von Müttern, Vätern, Menschen mit Behinderungen und Menschen aus der LGBTQIA+ Community. Bitte teile uns gerne mit, wenn wir z.B. ein geschlechtsneutrales Pronomen verwenden sollen, Du einen barrierefreien Zugang zu unserem Büro benötigst oder wir mehr Zeit für den Bewerbungsprozess einplanen sollen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

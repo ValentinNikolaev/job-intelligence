@@ -42,4 +42,4 @@ We believe in flexibility and balance. Take advantage of 30 days of paid vacatio
 - Subsidized fitness memberships with Urban Sports Club.
 - Regular team events, from barbecues to after-work gatherings, to keep our culture vibrant.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

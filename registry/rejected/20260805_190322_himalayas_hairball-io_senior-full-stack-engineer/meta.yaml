@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/hairball-io/jobs/senior-full-stack-engineer
+source_url: https://himalayas.app/companies/hairball-io/jobs/senior-full-stack-engineer
+title: Senior Full-Stack Engineer
+company: Hairball.IO
+location: Worldwide
+published_at: '2026-07-29T23:11:32Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T19:03:22Z'
+rejected_at: '2026-08-05T19:03:22Z'

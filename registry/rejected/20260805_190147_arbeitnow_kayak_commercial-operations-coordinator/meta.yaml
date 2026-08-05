@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: commercial-operations-coordinator-berlin-186522
+source_url: https://www.arbeitnow.com/jobs/companies/kayak/commercial-operations-coordinator-berlin-186522
+title: Commercial Operations Coordinator
+company: KAYAK
+location: Berlin Office
+published_at: '2026-08-05T14:40:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T19:01:47Z'
+rejected_at: '2026-08-05T19:01:47Z'

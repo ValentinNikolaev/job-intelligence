@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/zup-innovation/jobs/pessoa-backend-java-tech-lead
+source_url: https://himalayas.app/companies/zup-innovation/jobs/pessoa-backend-java-tech-lead
+title: Pessoa Backend Java Tech Lead
+company: Zup Innovation
+location: Worldwide
+published_at: '2026-08-03T14:42:05Z'
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-08-05T19:03:19Z'
+rejected_at: '2026-08-05T19:03:19Z'

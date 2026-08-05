@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-b2b-marketing-koln-413776
+source_url: https://www.arbeitnow.com/jobs/companies/spotmyenergy/werkstudentin-b2b-marketing-koln-413776
+title: Werkstudent:in B2B Marketing
+company: Spotmyenergy
+location: Köln
+published_at: '2026-08-05T14:09:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T19:01:53Z'
+rejected_at: '2026-08-05T19:01:53Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: recruiter-bielefeld-111840
+source_url: https://www.arbeitnow.com/jobs/companies/jetztjob/recruiter-bielefeld-111840
+title: Recruiter (m/w/d)
+company: JetztJob
+location: Bielefeld
+published_at: '2026-08-05T15:30:31Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T19:01:24Z'
+rejected_at: '2026-08-05T19:01:24Z'

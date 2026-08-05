@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/sporty-group/jobs/backend-software-engineering-team-lead-9873437481
+source_url: https://himalayas.app/companies/sporty-group/jobs/backend-software-engineering-team-lead-9873437481
+title: Backend Software Engineering Team Lead
+company: Sporty Group
+location: Worldwide
+published_at: '2026-07-27T12:01:21Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27T12:01:21Z is older than 7 days
+updated_at: '2026-08-05T19:03:23Z'
+rejected_at: '2026-08-05T19:03:23Z'

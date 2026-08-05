@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8778881913049256919'
+source_url: https://jooble.org/desc/-8778881913049256919?ckey=remote+golang+backend+engineer&rgn=55180&pos=24&groupId=1106121903&elckey=-4630322834647390538&p=1&aq=5702932025937129218&cid=15922&jobAge=294&brelb=100&bscr=261.00488&scr=261.00488
+title: Backend Engineer
+company: Unknown company
+location: San Francisco, CA
+published_at: '2026-07-24T06:02:05.3070000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-24T06:02:05.3070000 is older than 7 days
+updated_at: '2026-08-05T19:04:43Z'
+rejected_at: '2026-08-05T19:04:43Z'
