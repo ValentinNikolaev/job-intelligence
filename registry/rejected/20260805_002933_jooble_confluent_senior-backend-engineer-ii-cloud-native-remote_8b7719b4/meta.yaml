@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '5861663211725472137'
+source_url: https://jooble.org/away/5861663211725472137?p=1&pos=43&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=90&brelb=100&scr=1700.677&bscr=1700.677&aq=7173744315078675636&elckey=-1679927222449291372
+title: Senior Backend Engineer II - Cloud-Native, Remote
+company: Confluent
+location: Jefferson City, MO
+published_at: '2026-08-01T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T00:29:33Z'
+rejected_at: '2026-08-05T00:29:33Z'

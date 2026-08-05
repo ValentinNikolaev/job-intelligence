@@ -1,0 +1,24 @@
+schema_version: 2
+id: e493c7ee-80d3-4fb7-9c42-e0eb6bd56ec6
+title: Senior PHP Backend Engineer - Remote, SaaS scale
+company: SherlockTalent
+company_url: null
+location: Florida, NY
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '4486748637188144385'
+  url: https://jooble.org/away/4486748637188144385?p=1&pos=25&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=6&brelb=100&scr=1879.2468&bscr=1879.2468&aq=7173744315078675636&elckey=-1679927222449291372
+published_at: '2026-08-04T11:34:37.6400000'
+discovered_at: '2026-08-05T00:29:29Z'
+updated_at: '2026-08-05T00:29:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T00:29:29Z'
+analysis_priority: 0
+fingerprint: sha256:46b5ee82e19c33549015d25f9b069052d51fe3a01ae6e8e343eb4db72db0c08d
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6250490949680092324'
+source_url: https://jooble.org/desc/6250490949680092324?ckey=remote+golang+backend+engineer&rgn=55180&pos=21&groupId=1106121903&elckey=-7287437756656963452&p=1&aq=-5571676360388840973&cid=15922&jobAge=18&brelb=115&bscr=575.7106&scr=575.7106
+title: Backend Software Engineer
+company: Hired Recruiters
+location: San Francisco, CA
+published_at: '2026-08-04T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T00:29:39Z'
+rejected_at: '2026-08-05T00:29:39Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8368216496782043244'
+source_url: https://jooble.org/away/8368216496782043244?p=1&pos=27&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=618&brelb=110&scr=1816.9546&bscr=1816.9546&aq=7173744315078675636&elckey=-1679927222449291372
+title: Senior Backend Engineer
+company: ICONSTAFF
+location: Boston, MA
+published_at: '2026-07-10T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-10T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-05T00:29:30Z'
+rejected_at: '2026-08-05T00:29:30Z'

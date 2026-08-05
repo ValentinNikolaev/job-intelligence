@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4847133052413398796'
+source_url: https://jooble.org/desc/4847133052413398796?ckey=remote+senior+backend+engineer&rgn=55180&pos=24&groupId=2134052230&elckey=-1679927222449291372&p=1&aq=7173744315078675636&cid=15922&jobAge=18&brelb=115&bscr=1888.6143&scr=1888.6143
+title: Senior Backend Software Engineer - Server Access
+company: Teleport
+location: United States
+published_at: '2026-08-04T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T00:29:28Z'
+rejected_at: '2026-08-05T00:29:28Z'

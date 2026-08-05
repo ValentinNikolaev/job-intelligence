@@ -2,12 +2,12 @@
 
 # Vacancy Catalog
 
-Total vacancies: 632
+Total vacancies: 477
 
-- Found: 455
+- Found: 451
 - Applied: 10
 - Interview: 1
-- Rejected: 164
+- Rejected: 13
 - Closed: 2
 
 ## Monthly catalogs
@@ -19,6 +19,8 @@ Total vacancies: 632
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-05 | [Jobright.ai](../registry/jobs/2026-08-05_002940_jobright-ai_backend-software-engineer-remote/) | [Backend Software Engineer (Remote)](../registry/jobs/2026-08-05_002940_jobright-ai_backend-software-engineer-remote/job.md) | Washington DC | Jooble | Found | 2026-08-05 | [Jooble](https://jooble.org/away/-6993291572641838542?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=114&brelb=100&scr=547.6402&bscr=547.6402&aq=-5571676360388840973&elckey=-7287437756656963452) | — | — | — | — | — |
+| 2026-08-05 | [SherlockTalent](../registry/jobs/2026-08-05_002929_sherlocktalent_senior-php-backend-engineer-remote-saas-scale/) | [Senior PHP Backend Engineer - Remote, SaaS scale](../registry/jobs/2026-08-05_002929_sherlocktalent_senior-php-backend-engineer-remote-saas-scale/job.md) | Florida, NY | Jooble | Found | 2026-08-05 | [Jooble](https://jooble.org/away/4486748637188144385?p=1&pos=25&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=6&brelb=100&scr=1879.2468&bscr=1879.2468&aq=7173744315078675636&elckey=-1679927222449291372) | — | — | — | — | — |
 | 2026-08-04 | [Bright Vision Technologies](../registry/jobs/2026-08-04_170705_bright-vision-technologies_golang-software-engineer/) | [Golang Software Engineer](../registry/jobs/2026-08-04_170705_bright-vision-technologies_golang-software-engineer/job.md) | Phoenix, AZ | Jooble | Found | 2026-08-04 | [Jooble](https://jooble.org/desc/-5742580397823720182?ckey=remote+golang+backend+engineer&rgn=55180&pos=36&groupId=1106121903&elckey=-6083914571978118753&p=1&aq=2401803699414473352&cid=15922&jobAge=35&brelb=100&bscr=238.9972&scr=238.9972) | — | — | — | — | — |
 | 2026-08-04 | [Valant](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/) | [Full Stack PHP Laravel Developer/ DevOps Skills](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/job.md) | віддалено | Dou | Applied | 2026-08-04 | [Dou](https://jobs.dou.ua/companies/valant/vacancies/360382/) | [Open](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/company.md) | [MD](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/application/cv.md) / [DOCX](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/application/cv.docx) | [MD](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/application/cover-letter.md) / [DOCX](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/application/cover-letter.docx) | [Open](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/application/analysis.md) | [Open](../registry/jobs/2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills/application/interview-preparation.md) |
 | 2026-08-04 | [Openchip And Software Technologies SL](../registry/jobs/2026-08-04_170413_openchip-and-software-technologies-sl_platform-hardware-engineer-data-center-accelerat/) | [Platform Hardware Engineer – Data Center Accelerator Platforms](../registry/jobs/2026-08-04_170413_openchip-and-software-technologies-sl_platform-hardware-engineer-data-center-accelerat/job.md) | Karlsruhe | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/openchip-and-software-technologies-sl/platform-hardware-engineer-data-center-accelerator-platforms-karlsruhe-267152) | — | — | — | — | — |
@@ -37,5 +39,3 @@ Total vacancies: 632
 | 2026-08-04 | [Zabas Factory Portugal Unipessoal.com](../registry/jobs/2026-08-04_151647_zabas-factory-portugal-unipessoal-com_tech-lead-all-genders/) | [Tech Lead (all Genders)](../registry/jobs/2026-08-04_151647_zabas-factory-portugal-unipessoal-com_tech-lead-all-genders/job.md) | Munich | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/zabas-factory-portugal-unipessoalcom/tech-lead-all-genders-munich-232850) | — | — | — | — | — |
 | 2026-08-04 | [Apaleo](../registry/jobs/2026-08-04_151645_apaleo_senior-product-marketing-manager-f-m-d/) | [Senior Product Marketing Manager (f/m/d)](../registry/jobs/2026-08-04_151645_apaleo_senior-product-marketing-manager-f-m-d/job.md) | Munich, Bavaria, Germany | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/apaleo/senior-product-marketing-manager-munich-259954) | — | — | — | — | — |
 | 2026-08-04 | [Apaleo](../registry/jobs/2026-08-04_151644_apaleo_senior-product-marketing-manager-f-m-d/) | [Senior Product Marketing Manager (f/m/d)](../registry/jobs/2026-08-04_151644_apaleo_senior-product-marketing-manager-f-m-d/job.md) | Berlin, Germany | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/apaleo/senior-product-marketing-manager-berlin-321403) | — | — | — | — | — |
-| 2026-08-04 | [Omegga](../registry/jobs/2026-08-04_140528_omegga_working-student-hr-people-operations/) | [Working Student HR & People Operations](../registry/jobs/2026-08-04_140528_omegga_working-student-hr-people-operations/job.md) | Munich | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/omegga/working-student-hr-people-operations-munich-57311) | — | — | — | — | — |
-| 2026-08-04 | [Statista](../registry/jobs/2026-08-04_140527_statista_head-of-data-collection-m-f-d/) | [Head of Data Collection (m/f/d)](../registry/jobs/2026-08-04_140527_statista_head-of-data-collection-m-f-d/job.md) | Hamburg or Berlin | Arbeitnow | Found | 2026-08-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/statista/head-of-data-collection-hamburg-or-berlin-258408) | — | — | — | — | — |
