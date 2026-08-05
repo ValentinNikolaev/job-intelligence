@@ -1167,3 +1167,47 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: 77c27c0461024236b6259bb0645bb12a
+  recorded_at: '2026-08-05T22:22:19Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Batch analysis estimated; exact Codex usage unavailable
+- run_id: 3c38433eb8bc41efa48eea4b5ed357ba
+  recorded_at: '2026-08-05T22:22:36Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Batch analysis estimated; exact Codex usage unavailable
+- run_id: c49f2cd8a6f34e7d9e6513a5708b0fc6
+  recorded_at: '2026-08-05T22:23:00Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Batch analysis estimated; exact Codex usage unavailable
+- run_id: 024bb896cb16409a8c9395122b443690
+  recorded_at: '2026-08-05T22:23:30Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Batch analysis estimated; exact Codex usage unavailable
