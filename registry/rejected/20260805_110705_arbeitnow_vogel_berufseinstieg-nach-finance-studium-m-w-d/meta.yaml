@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: berufseinstieg-nach-finance-studium-aalen-434029
+source_url: https://www.arbeitnow.com/jobs/companies/vogel/berufseinstieg-nach-finance-studium-aalen-434029
+title: Berufseinstieg nach Finance-Studium (m/w/d)
+company: Vogel
+location: Aalen
+published_at: '2026-08-05T08:40:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T11:07:05Z'
+rejected_at: '2026-08-05T11:07:05Z'

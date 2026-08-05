@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150125'
+source_url: https://jobicy.com/jobs/150125-senior-software-engineer-backend
+title: Senior Software Engineer (Backend)
+company: Canonical Ltd.
+location: EMEA
+published_at: '2026-08-03T10:21:31Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T11:08:37Z'
+rejected_at: '2026-08-05T11:08:37Z'

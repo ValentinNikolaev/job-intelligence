@@ -1,0 +1,27 @@
+schema_version: 2
+id: 50d8f1b7-5c57-45fb-ab4f-85a22c3b2c2f
+title: Marketing Manager - Brand, Paid Social & Partnerships (m/f/x) in Köln
+company: konfetti GmbH
+company_url: null
+location: Cologne
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: marketing-manager-brand-paid-social-partnerships-in-koln-cologne-56740
+  url: https://www.arbeitnow.com/jobs/companies/konfetti-gmbh/marketing-manager-brand-paid-social-partnerships-in-koln-cologne-56740
+  metadata:
+    tags:
+    - Marketing Manager
+published_at: '2026-08-05T09:00:42Z'
+discovered_at: '2026-08-05T11:07:02Z'
+updated_at: '2026-08-05T11:07:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T11:07:02Z'
+analysis_priority: 0
+fingerprint: sha256:e20e0ab6a60b78c3b12fc09cf2757f7f29705109b5a0300bb6c047455c137712
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

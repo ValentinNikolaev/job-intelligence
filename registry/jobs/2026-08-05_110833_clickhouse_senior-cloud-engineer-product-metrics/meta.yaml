@@ -1,0 +1,46 @@
+schema_version: 2
+id: 68331580-784d-49c3-9fa7-27e05b5cdc5f
+title: Senior Cloud Engineer - Product Metrics
+company: Clickhouse
+company_url: null
+location: Europe
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '148664'
+  url: https://jobicy.com/jobs/148664-senior-cloud-engineer-product-metrics
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/6394b9a0-221.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: About ClickHouse Recognized on the 2025 Forbes Cloud 100 list, ClickHouse
+      is one of the most innovative and fast-growing private cloud companies. With
+      more than 3,000 customers and ARR that has grown over 250 percent year over
+      year, ClickHouse leads the market in real-time analytics, data warehousing,
+      observability, and AI workloads. The company’s sustained, accelerating…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        industry: dev
+        count: '50'
+    - query_index: 3
+      parameters:
+        geo: europe
+        tag: golang
+        industry: dev
+        count: '50'
+published_at: '2026-08-05T04:35:03Z'
+discovered_at: '2026-08-05T11:08:33Z'
+updated_at: '2026-08-05T11:08:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T11:08:33Z'
+analysis_priority: 0
+fingerprint: sha256:374ca7d8fdc5ae2b0815999778a4e730efd543ffee947dbe488b0f34303cc3b3
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

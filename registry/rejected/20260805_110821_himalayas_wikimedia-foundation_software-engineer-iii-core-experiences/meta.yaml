@@ -1,0 +1,14 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/wikimedia-foundation/jobs/software-engineer-iii-core-experiences
+source_url: https://himalayas.app/companies/wikimedia-foundation/jobs/software-engineer-iii-core-experiences
+title: Software Engineer III, Core Experiences
+company: Wikimedia Foundation
+location: Brazil, Canada, Colombia, Germany, Ghana, India, Indonesia, Italy, Kenya,
+  Mexico, Morocco, Netherlands, Poland, Singapore, South Africa, Spain, Switzerland,
+  United Kingdom
+published_at: '2026-07-15T20:34:12Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-15T20:34:12Z is older than 7 days
+updated_at: '2026-08-05T11:08:21Z'
+rejected_at: '2026-08-05T11:08:21Z'

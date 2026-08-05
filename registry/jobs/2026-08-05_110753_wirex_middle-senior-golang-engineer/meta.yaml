@@ -1,0 +1,40 @@
+schema_version: 2
+id: c74ad3a0-6a7b-4b5c-aaf1-5e813281d633
+title: Middle/Senior Golang Engineer
+company: Wirex
+company_url: https://jobs.dou.ua/companies/wirex-ltd/vacancies/
+location: Вроцлав (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '285920'
+  url: https://jobs.dou.ua/companies/wirex-ltd/vacancies/285920/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 5 серпня
+    listing_summary: 'We are looking for a Golang Developer to build our leading-edge
+      fintech products. Don’t miss this opportunity to transform the payment landscape
+      with a team of professionals. Then join our Wirex team!
+
+
+      Who we are:
+
+
+      At Wirex, we’re redefining how the world uses digital money.'
+published_at: '2026-08-05'
+discovered_at: '2026-08-05T11:07:53Z'
+updated_at: '2026-08-05T11:07:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T11:07:53Z'
+analysis_priority: 100
+fingerprint: sha256:b3e6bff2f581a42e8b0d40eeb93c437630784821cadd6117ca2d2c18c9ace213
+data_source: dou
+content_source: dou
+company_content_source: dou

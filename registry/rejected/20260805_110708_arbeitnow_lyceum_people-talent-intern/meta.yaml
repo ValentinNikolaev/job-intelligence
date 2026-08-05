@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: people-talent-intern-berlin-302320
+source_url: https://www.arbeitnow.com/jobs/companies/lyceum/people-talent-intern-berlin-302320
+title: People & Talent (Intern)
+company: Lyceum
+location: Berlin
+published_at: '2026-08-05T08:40:44Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T11:07:08Z'
+rejected_at: '2026-08-05T11:07:08Z'

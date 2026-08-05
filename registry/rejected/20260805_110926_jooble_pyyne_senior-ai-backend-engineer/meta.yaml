@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8738299644179044346'
+source_url: https://jooble.org/desc/-8738299644179044346?ckey=remote+senior+backend+engineer&rgn=55180&pos=44&groupId=2134052230&elckey=6988283432549372891&p=1&aq=-2797625699745916691&cid=15922&jobAge=266&brelb=100&bscr=792.82367&scr=792.82367
+title: Senior AI Backend Engineer
+company: Pyyne
+location: Remote
+published_at: '2026-07-25T02:49:30.5700000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-25T02:49:30.5700000 is older than 7 days
+updated_at: '2026-08-05T11:09:26Z'
+rejected_at: '2026-08-05T11:09:26Z'

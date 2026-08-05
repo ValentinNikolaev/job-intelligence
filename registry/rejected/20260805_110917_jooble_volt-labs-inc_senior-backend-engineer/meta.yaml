@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8556755886526180444'
+source_url: https://jooble.org/desc/-8556755886526180444?ckey=remote+senior+backend+engineer&rgn=55180&pos=17&groupId=2134052230&elckey=6988283432549372891&p=1&aq=-2797625699745916691&cid=15922&jobAge=101&brelb=110&bscr=975.745&scr=975.745
+title: Senior Backend Engineer
+company: Volt Labs Inc.
+location: Remote
+published_at: '2026-08-01T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T11:09:17Z'
+rejected_at: '2026-08-05T11:09:17Z'

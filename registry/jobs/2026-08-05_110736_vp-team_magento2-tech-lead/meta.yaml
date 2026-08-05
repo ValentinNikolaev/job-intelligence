@@ -1,0 +1,45 @@
+schema_version: 2
+id: 533fac4e-c727-4298-bb0a-e0f6ed6bc703
+title: Magento2 Tech Lead
+company: VP Team
+company_url: https://jobs.dou.ua/companies/vpteam/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368555'
+  url: https://jobs.dou.ua/companies/vpteam/vacancies/368555/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 5 серпня
+    listing_summary: 'Magento2 Tech Lead
+
+
+      Remote — Europe
+
+
+      Job description
+
+
+      Who we are?
+
+
+      We’re a fast-growing telehealth product launched in 2025, backed by an established
+      e-commerce company with roots going back to 2012.'
+published_at: '2026-08-05'
+discovered_at: '2026-08-05T11:07:36Z'
+updated_at: '2026-08-05T11:07:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T11:07:36Z'
+analysis_priority: 100
+fingerprint: sha256:316fc8b178b3784744b332c3db359115e6bcca17832b9c108bc07be675121d3d
+data_source: dou
+content_source: dou
+company_content_source: dou

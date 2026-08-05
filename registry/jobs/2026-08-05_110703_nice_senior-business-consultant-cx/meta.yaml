@@ -1,0 +1,27 @@
+schema_version: 2
+id: c1d85e0a-d663-4782-860e-55aa8c86e2ec
+title: Senior Business Consultant, CX
+company: nice
+company_url: null
+location: null
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-business-consultant-cx-145610
+  url: https://www.arbeitnow.com/jobs/companies/nice/senior-business-consultant-cx-145610
+  metadata:
+    tags:
+    - GCO - Customer Success & Services
+published_at: '2026-08-05T08:55:59Z'
+discovered_at: '2026-08-05T11:07:03Z'
+updated_at: '2026-08-05T11:07:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T11:07:03Z'
+analysis_priority: 0
+fingerprint: sha256:79672e06091134b79f6306cd0503648361a6c3cf01213082abded5c565272c38
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

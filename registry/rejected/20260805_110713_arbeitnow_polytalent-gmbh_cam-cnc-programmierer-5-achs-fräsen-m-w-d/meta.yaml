@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: cam-cnc-programmierer-5-achs-frasen-hamburg-62659
+source_url: https://www.arbeitnow.com/jobs/companies/polytalent-gmbh/cam-cnc-programmierer-5-achs-frasen-hamburg-62659
+title: CAM-/CNC-Programmierer 5-Achs Fräsen (m/w/d)
+company: PolyTALENT GmbH
+location: Hamburg, Hamburg, Deutschland
+published_at: '2026-08-05T08:30:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T11:07:13Z'
+rejected_at: '2026-08-05T11:07:13Z'

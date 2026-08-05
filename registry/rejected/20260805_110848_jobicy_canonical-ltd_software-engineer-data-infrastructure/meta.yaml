@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149971'
+source_url: https://jobicy.com/jobs/149971-software-engineer-data-infrastructure
+title: Software Engineer - Data Infrastructure
+company: Canonical Ltd.
+location: EMEA
+published_at: '2026-08-01T03:03:49Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T11:08:48Z'
+rejected_at: '2026-08-05T11:08:48Z'

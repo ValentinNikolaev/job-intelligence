@@ -1,0 +1,42 @@
+schema_version: 2
+id: 6d5f7574-90ce-4a19-9e4c-64ff537143ed
+title: Software Engineer (.NET) (f/m/d)
+company: Apaleo
+company_url: null
+location: Germany
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '145054'
+  url: https://jobicy.com/jobs/145054-software-engineer-net-f-m-d
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/6d684c9f-221.png
+    industry:
+    - Software Engineering
+    level: Any
+    excerpt: Join Apaleo and Shape the Future of Hospitality Tech!Apaleo is the world’s
+      most open, API-first property management platform powering the next generation
+      of hospitality operations. Its modular, AI-powered infrastructure enables hoteliers
+      to customise their tech stack, automate routine work, and deliver seamless,
+      personalised guest experiences, powered by best-in-class apps and autonomous
+      AI agents that adapt…
+    discovered_by:
+    - query_index: 2
+      parameters:
+        geo: europe
+        tag: backend
+        industry: dev
+        count: '50'
+published_at: '2026-08-05T06:40:09Z'
+discovered_at: '2026-08-05T11:08:58Z'
+updated_at: '2026-08-05T11:08:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T11:08:58Z'
+analysis_priority: 0
+fingerprint: sha256:51427cd34515e4e2a4b0e6c58daeaae312dd89904cb8f031920b79ae71dac4cb
+data_source: jobicy
+content_source: jobicy
+company_content_source: null
