@@ -134,4 +134,4 @@ Final Challenge Interview (Panel)
 
 *We are committed to building a diverse, inclusive team and encourage applications from all backgrounds, identities and experiences.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

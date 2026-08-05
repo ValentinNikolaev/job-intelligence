@@ -4,8 +4,8 @@ Posted: 2026-07-29T21:31:49Z
 
 ## Rejection
 
-- Category: location_requirement
-- Reason: remote role is limited to the United States
+- Category: stale
+- Reason: published_at 2026-07-29T21:31:49Z is older than 7 days
 
 Nocrunch.Nocore hours. Work the way that suitsyou.
 

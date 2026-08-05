@@ -1,0 +1,24 @@
+schema_version: 2
+id: e7bd47ca-e6fb-429e-8762-fe27c18c4578
+title: Working Student (f/m/d) - Data Compliance Team
+company: Flix
+company_url: null
+location: Berlin, Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: working-student-data-compliance-team-berlin-43589
+  url: https://www.arbeitnow.com/jobs/companies/flix/working-student-data-compliance-team-berlin-43589
+published_at: '2026-08-05T20:45:27Z'
+discovered_at: '2026-08-05T23:02:20Z'
+updated_at: '2026-08-05T23:02:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T23:02:20Z'
+analysis_priority: 0
+fingerprint: sha256:f8880bc455e862564cf5b215e997110ecf71b112b3d12c15a9639f44e48d47e4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

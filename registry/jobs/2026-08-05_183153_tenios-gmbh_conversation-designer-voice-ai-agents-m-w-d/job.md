@@ -102,4 +102,4 @@ Tenios ist seit über 25 Jahren lizensierter Telekommunikationsanbietermit Haupt
 
 - Zwei kundenseitige Sprachen bedeuten echtes Umschalten: ein deutscher Discovery-Call am Vormittag, ein englischer nach dem Mittagessen ist norma
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

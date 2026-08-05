@@ -4,8 +4,8 @@ Posted: 2026-07-29T22:44:51Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-29T22:44:51Z is older than 7 days
 
 We are looking for a highly skilled Back-End Software Engineer to join our team. In this role, you will design, develop, and maintain robust back-end applications and services, contribute to architecture decisions, and ensure software quality through automated testing and best practices. The ideal candidate has a strong foundation in design patterns, SOLID principles, and Clean Code, with proven experience in C#/.NET, MSSQL, and microservices. Familiarity with CI/CD pipelines, Azure DevOps, and Git is essential. You should bring excellent communication skills, critical thinking, and a collaborative mindset, along with a commitment to our unique company culture and values. Bonus points for experience with JavaScript frameworks, Node.js, cloud services, and advanced front-end technologies. If you thrive in a fast-paced, innovative environment and have 4+ years of back-end development experience, we’d love to hear from you.
 

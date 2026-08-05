@@ -1,0 +1,24 @@
+schema_version: 2
+id: f1d748aa-e043-4540-a4ef-08f66a6f3529
+title: Director Brand Marketing & Community (all genders)
+company: Urban Sports Club
+company_url: null
+location: Berlin, Germany
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: director-brand-marketing-community-all-genders-berlin-327358
+  url: https://www.arbeitnow.com/jobs/companies/urban-sports-club/director-brand-marketing-community-all-genders-berlin-327358
+published_at: '2026-08-05T20:45:29Z'
+discovered_at: '2026-08-05T23:02:19Z'
+updated_at: '2026-08-05T23:02:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T23:02:19Z'
+analysis_priority: 0
+fingerprint: sha256:d05ab86e3e0e749dd583463e944dc90b84c2038859bf97b74a7ac33317ca00a1
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

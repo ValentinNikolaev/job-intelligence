@@ -91,4 +91,4 @@ Zuschuss zum Deutschlandticket, zentrale Lage der Offices, gute Anbindung an den
 
 **Natalie** Engelhorn, Principal HR Manager
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

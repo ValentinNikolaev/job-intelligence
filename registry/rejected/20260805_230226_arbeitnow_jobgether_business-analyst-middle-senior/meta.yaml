@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: business-analyst-middle-senior-germany-425632
+source_url: https://www.arbeitnow.com/jobs/companies/jobgether/business-analyst-middle-senior-germany-425632
+title: Business Analyst (middle/senior)
+company: Jobgether
+location: Germany
+published_at: '2026-08-05T20:24:34Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T23:02:26Z'
+rejected_at: '2026-08-05T23:02:26Z'

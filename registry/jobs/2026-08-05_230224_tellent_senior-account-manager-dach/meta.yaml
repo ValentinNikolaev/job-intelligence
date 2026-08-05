@@ -1,0 +1,31 @@
+schema_version: 2
+id: 056722ab-ee1b-42d2-b4c7-fd349f692aa4
+title: Senior Account Manager - DACH
+company: Tellent
+company_url: null
+location: Remote job
+remote: true
+employment_type: Mid, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-account-manager-dach-cologne-456488
+  url: https://www.arbeitnow.com/jobs/companies/tellent/remote-senior-account-manager-dach-cologne-456488
+  metadata:
+    tags:
+    - 1. GTM
+    - Remote
+    job_types:
+    - Mid
+    - fulltime permanent
+published_at: '2026-08-05T20:30:20Z'
+discovered_at: '2026-08-05T23:02:24Z'
+updated_at: '2026-08-05T23:02:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T23:02:24Z'
+analysis_priority: 0
+fingerprint: sha256:b49a13a101ee94d26492ed897358f6385ec49b72d5db5cb18f0b2b65da526c72
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

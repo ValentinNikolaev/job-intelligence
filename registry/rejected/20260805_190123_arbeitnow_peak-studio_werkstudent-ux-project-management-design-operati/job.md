@@ -1,17 +1,19 @@
 # Werkstudent UX Project Management & Design Operations (m/w/d)
 
-Posted: 2026-08-05T17:00:41Z
+Posted: 2026-08-05T21:29:03Z
 
 ## Rejection
 
 - Category: language_requirement
 - Reason: hard German language requirement without English green light
 
+**Ab wann:** Zum nächstmöglichen Zeitpunkt
+
 Du liebst die Welt des UX-Designs, hast jedoch mehr Spaß an Organisation und Kommunikation als am reinen Design-Prozess? Du möchtest dafür sorgen, dass kreative Umsetzung und das Management von Kundenwünschen perfekt Hand in Hand gehen? Du hast Lust, deine Stärken in einem Startup-Team einzubringen, das über reine Designdienstleistung hinaus soziale und ökologische Verantwortung übernimmt?
 
 Dann bist du bei uns genau richtig!
 
-Peak Studio ist ein wachsendes Design-Startup mit Fokus auf Klarheit, Konsistenz und nachhaltige Wirkung. Wir glauben, dass Design Verantwortung trägt – gegenüber unseren Kunden ebenso wie gegenüber der Welt, in der wir leben. Deshalb entwickeln wir anstatt kurzlebiger Kampagnen ganzheitliche, zusammenhängende Markensysteme und skalierbare Strukturen, die Bestand haben. Unseren Kunden bieten wir Design auf Subscription-Basis über 3 maßgeschneiderte Abo Modelle an – passgenau für alles, was ihr Unternehmen braucht. Über einen zentralen, agilen Workflow liefern wir Ergebnisse schnell, konsistent und ohne das häufige Projektchaos.
+Peak Studio ist ein wachsendes Design-Startup mit Fokus auf Klarheit, Konsistenz und nachhaltige Wirkung. Wir glauben, dass Design Verantwortung trägt: gegenüber unseren Kunden ebenso wie gegenüber der Welt, in der wir leben. Deshalb entwickeln wir anstatt kurzlebiger Kampagnen ganzheitliche, zusammenhängende Markensysteme und skalierbare Strukturen, die Bestand haben. Unseren Kunden bieten wir Design auf Subscription-Basis über 3 maßgeschneiderte Abo Modelle an. Über einen zentralen, agilen Workflow liefern wir Ergebnisse schnell, konsistent und ohne das häufige Projektchaos.
 
 ## Aufgaben
 
@@ -53,4 +55,4 @@ Wir suchen einen Werkstudenten (m/w/d), der unser Design-Team strukturiert, unse
 
 Die Rolle und unsere Philosophie sprechen dich an, du bist dir jedoch nicht sicher, ob du alle Punkte erfüllst? **Bewirb dich trotzdem – möglicherweise bringst du genau das mit, von dem wir noch gar nicht wissen, dass wir es brauchen.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

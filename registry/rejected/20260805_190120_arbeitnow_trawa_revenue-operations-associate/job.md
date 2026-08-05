@@ -141,4 +141,4 @@ Erfahrung in der Energiewirtschaft ist ein Plus, aber kein Muss.
 
 Bei trawa bauen wir einen vielfältigen, inklusiven und authentischen Arbeitsplatz auf. Wenn dich die Position begeistert, dein bisheriger Weg aber nicht in allen Punkten dem Anforderungsprofil entspricht, freuen wir uns trotzdem über deine Bewerbung. Vielleicht bist du genau die richtige Person für diese oder eine andere Position bei uns.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

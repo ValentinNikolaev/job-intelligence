@@ -96,4 +96,4 @@ Regelmäßiger Austausch im Team, saisonale Feiern und eine immer gut gefüllte 
 **Weiterentwicklung**
 Absolviere unsere Online-Trainings, um Deine fachlichen Fähigkeiten auszubauen und Dich zur Expert:in für Daten und KI zu entwickeln.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

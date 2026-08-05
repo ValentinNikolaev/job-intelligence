@@ -1,0 +1,13 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5076270174750800381'
+source_url: https://jooble.org/desc/-5076270174750800381?ckey=remote+golang+backend+engineer&rgn=55180&pos=24&groupId=1106121903&elckey=1278850320716372266&p=1&aq=3436369964504300720&cid=15922&jobAge=569&brelb=100&bscr=219.26868&scr=219.26868
+title: Staff Backend Engineer
+company: Grafana Labs
+location: Remote
+published_at: '2026-07-13T03:42:36.0230000'
+rejection_category: company_retry_block
+rejection_reason: 'Grafana is blocked until 2027-02-01: CV rejected; retry allowed
+  from February 2027.'
+updated_at: '2026-08-05T23:05:24Z'
+rejected_at: '2026-08-05T23:05:24Z'

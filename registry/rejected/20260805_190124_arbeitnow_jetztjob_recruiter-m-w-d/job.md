@@ -81,4 +81,4 @@ Wir sind eine wachsende Recruiting-Beratung mitten in Bielefeld und helfen Unter
 
 Job ID #102348223
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

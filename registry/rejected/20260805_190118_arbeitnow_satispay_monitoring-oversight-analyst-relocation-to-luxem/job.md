@@ -119,4 +119,4 @@ Our values and pillars aren't just fancy words on a page - they really shape eve
 
 *By submitting this application, I acknowledge that I have read and understood the content of the *[*Privacy Policy*](https://www.satispay.com/en-it/legal-hub/privacy-policy/candidates/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

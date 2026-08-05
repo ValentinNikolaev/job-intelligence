@@ -142,4 +142,4 @@ Background in EdTech or student-facing products.
 
 **Ready to move the needle?** Apply now and show us how you’d build the future of student growth.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -75,4 +75,4 @@ Du kannst mit Coding Agents schnell gute Software bauen und gleichzeitig beurtei
 
 In einem ersten unverbindlichen Gespräch sprechen wir über deinen technischen Hintergrund, deine bisherigen Projekte und darüber, wie du heute Software entwickelst.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

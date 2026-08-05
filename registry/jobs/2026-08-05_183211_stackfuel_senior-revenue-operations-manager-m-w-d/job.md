@@ -80,4 +80,4 @@ Sehr gute Sprachkenntnisse: Deutsch auf C2-Niveau, Englisch auf C1-Niveau
 
 *Wir freuen uns über Bewerbungen unabhängig von Geschlecht, geschlechtlicher Identität, sexueller Orientierung, Herkunft, Alter oder Behinderung*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

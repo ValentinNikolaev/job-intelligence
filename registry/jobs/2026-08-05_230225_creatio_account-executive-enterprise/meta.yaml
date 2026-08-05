@@ -1,0 +1,29 @@
+schema_version: 2
+id: fbd6e221-b685-49a6-8f49-8981fca40d27
+title: Account Executive, Enterprise
+company: Creatio
+company_url: null
+location: Munich
+remote: false
+employment_type: Hybrid
+sources:
+- source: arbeitnow
+  source_job_id: account-executive-enterprise-munich-47302
+  url: https://www.arbeitnow.com/jobs/companies/creatio/account-executive-enterprise-munich-47302
+  metadata:
+    tags:
+    - 'Europe: DACH Team'
+    job_types:
+    - Hybrid
+published_at: '2026-08-05T20:25:48Z'
+discovered_at: '2026-08-05T23:02:25Z'
+updated_at: '2026-08-05T23:02:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T23:02:25Z'
+analysis_priority: 0
+fingerprint: sha256:0ebd0ef88b25456c82e8363c2101f3583cfb57dd027aa4af379f4cbf5854e0c3
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

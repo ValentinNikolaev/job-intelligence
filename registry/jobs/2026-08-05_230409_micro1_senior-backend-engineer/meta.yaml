@@ -1,0 +1,93 @@
+schema_version: 2
+id: 9a8a4a10-af21-4cdb-8542-5c31233e74d0
+title: Senior Backend Engineer
+company: micro1
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Contractor
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/micro1/jobs/senior-backend-engineer
+  url: https://himalayas.app/companies/micro1/jobs/senior-backend-engineer
+  metadata:
+    location_restrictions: []
+    excerpt: 'Role Title: Senior Backend Engineer Role Type: Contractor (20 hrs perweek)
+      Location: Remote micro1 is engaging Senior Backend Engineers to participate
+      in an advanced project for a customer, focused on creating sophisticated Reinforcement
+      Learning Environments for AI model training and evaluation.'
+    company_slug: micro1
+    company_logo: https://cdn-images.himalayas.app/91oa56akgt3qjqc1nh3uoruub40c
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Senior-Backend-Engineering
+    - Senior-Backend-Development
+    - Senior-Backend-Engineering-Manager
+    - Senior-Java-Backend-Engineer
+    - Remote-Senior-Backend-Engineer
+    - Senior-Backend-Engineer-(Java-Kotlin)
+    - Senior-Ruby-Backend-Engineer
+    salary:
+      period: hourly
+      min: 50
+      max: 100
+      currency: USD
+    expiry_at: '2026-10-04T22:04:03Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        q: backend engineer
+        worldwide: 'true'
+        sort: recent
+        seniority: Senior
+published_at: '2026-08-05T22:04:03Z'
+discovered_at: '2026-08-05T23:04:09Z'
+updated_at: '2026-08-05T23:04:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T23:04:09Z'
+analysis_priority: 0
+fingerprint: sha256:f354a24dc3ec73fa27fd9670f4b90afa02e979ae40506e97f6b6b40f36fa635b
+data_source: himalayas
+content_source: himalayas
+company_content_source: null
