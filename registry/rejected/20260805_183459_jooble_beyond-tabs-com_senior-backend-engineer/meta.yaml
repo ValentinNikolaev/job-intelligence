@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8576167170189390597'
+source_url: https://jooble.org/away/-8576167170189390597?p=1&pos=11&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=13&brelb=10&scr=2578.2578&bscr=2578.2578&aq=-4963546578286530291&elckey=-1676068834632945904
+title: Senior Backend Engineer
+company: beyond-tabs.com
+location: Palo Alto, CA
+published_at: '2026-08-04T23:20:06.6170000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T18:34:59Z'
+rejected_at: '2026-08-05T18:34:59Z'

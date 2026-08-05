@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4486807825252611891'
+source_url: https://jooble.org/away/-4486807825252611891?p=1&pos=21&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=13&brelb=10&scr=2509.0637&bscr=2509.0637&aq=-4963546578286530291&elckey=-1676068834632945904
+title: Senior Backend Engineer
+company: Bastion LLC
+location: New York, NY
+published_at: '2026-08-04T23:02:07.6270000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T18:35:02Z'
+rejected_at: '2026-08-05T18:35:02Z'

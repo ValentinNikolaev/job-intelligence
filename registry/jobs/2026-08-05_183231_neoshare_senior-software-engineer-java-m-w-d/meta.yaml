@@ -1,0 +1,33 @@
+schema_version: 2
+id: 4a931bc0-34a4-4391-872f-43014645efeb
+title: Senior Software Engineer - Java (m/w/d)
+company: neoshare
+company_url: null
+location: Frankfurt am Main
+remote: false
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-software-engineer-java-frankfurt-am-main-490025
+  url: https://www.arbeitnow.com/jobs/companies/neoshare/senior-software-engineer-java-frankfurt-am-main-490025
+  metadata:
+    tags:
+    - java
+    - spring
+    - backend
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-08-05T14:09:48Z'
+discovered_at: '2026-08-05T18:32:31Z'
+updated_at: '2026-08-05T18:32:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T18:32:31Z'
+analysis_priority: 0
+fingerprint: sha256:49b62c6e109445d74981b6fc172701411a697c93a742b3684e3850a5b13ea624
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

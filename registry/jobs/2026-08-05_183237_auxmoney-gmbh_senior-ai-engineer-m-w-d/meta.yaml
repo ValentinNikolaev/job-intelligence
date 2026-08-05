@@ -1,0 +1,43 @@
+schema_version: 2
+id: 76de2632-55d9-46d9-9e66-b944453ef142
+title: Senior AI Engineer (m/w/d)
+company: Auxmoney Gmbh
+company_url: null
+location: Remote / Düsseldorf
+remote: true
+employment_type: Experienced, Permanent, Full time
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-ai-engineer-89873
+  url: https://www.arbeitnow.com/jobs/companies/auxmoney-gmbh/remote-senior-ai-engineer-89873
+  metadata:
+    tags:
+    - AI
+    - KI
+    - Künstliche Intelligenz
+    - Artificial Intelligence
+    - Engineer
+    - Entwickler
+    - ML
+    - Maschine Learning
+    - Jobs
+    - Stellen
+    - Deutschland
+    - Remote
+    - Homeoffice
+    job_types:
+    - Experienced
+    - Permanent
+    - Full time
+published_at: '2026-08-05T14:09:42Z'
+discovered_at: '2026-08-05T18:32:37Z'
+updated_at: '2026-08-05T18:32:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T18:32:37Z'
+analysis_priority: 0
+fingerprint: sha256:cdad5f850409aeacf2c5352fc8108f100bbde740f41f60eb8190431e51203064
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

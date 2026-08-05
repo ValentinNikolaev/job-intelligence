@@ -1,0 +1,8 @@
+schema_version: 1
+triage_version: deterministic-triage-v1
+vacancy_id: 48299df8-629b-493d-a7a3-41e1ca0a90e9
+skip_model: false
+reason: consulting
+confidence: medium
+matched_title_rules: []
+triaged_at: '2026-08-05T18:35:18Z'
