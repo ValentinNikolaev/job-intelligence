@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8166517850877136336'
+source_url: https://jooble.org/away/-8166517850877136336?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=168&brelb=15&scr=2509.6538&bscr=2509.6538&aq=-6216729310744985532&elckey=716335591709116747
+title: Senior Backend Software Engineer with AI
+company: Dental21.de
+location: Remote
+published_at: '2026-07-29T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-29T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-05T06:55:53Z'
+rejected_at: '2026-08-05T06:55:53Z'

@@ -1,0 +1,27 @@
+schema_version: 2
+id: 27204665-e6a1-4f3b-8546-d8f630bb9a33
+title: Product Manager – Web Platform (all genders)
+company: moia
+company_url: null
+location: Berlin; Hamburg; Hannover; Munich; Wolfsburg
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: product-manager-web-platform-all-genders-berlin-hamburg-hannover-munich-wolfsburg-2632
+  url: https://www.arbeitnow.com/jobs/companies/moia/product-manager-web-platform-all-genders-berlin-hamburg-hannover-munich-wolfsburg-2632
+  metadata:
+    tags:
+    - Product & Product Strategy
+published_at: '2026-08-04T23:56:41Z'
+discovered_at: '2026-08-05T06:53:43Z'
+updated_at: '2026-08-05T06:53:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:43Z'
+analysis_priority: 0
+fingerprint: sha256:221441b6d12e2dd7bec9eef6df0b9bc5dc62ead9ed2c1cebc0221d670ce0c5b0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

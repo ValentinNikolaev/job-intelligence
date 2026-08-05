@@ -1,0 +1,24 @@
+schema_version: 2
+id: 7b83a06d-8030-403b-a09a-f9daa24d5c43
+title: Software Engineer
+company: The WOW Adventure Ltd
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '3245506387273608468'
+  url: https://jooble.org/away/3245506387273608468?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+php+backend+developer&jobAge=1&brelb=10&scr=23.941935&bscr=23.941935&aq=-6042367463337578559&elckey=5473710850048638102
+published_at: '2026-08-04T22:56:35.0100000'
+discovered_at: '2026-08-05T06:55:41Z'
+updated_at: '2026-08-05T06:55:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:55:41Z'
+analysis_priority: 0
+fingerprint: sha256:549b7f0bf09929e2ba9aa24d4e5fda2e4a446cffbba666b6bf7d567f74885bc0
+data_source: jooble
+content_source: jooble
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: a324ea55-f64d-436e-b50d-cafb8b20b8db
+title: Python Developer - Remote in Germany
+company: Anyone Ai
+company_url: null
+location: Germany
+remote: false
+employment_type: Contract
+sources:
+- source: arbeitnow
+  source_job_id: python-developer-remote-in-germany-berlin-319060
+  url: https://www.arbeitnow.com/jobs/companies/anyone-ai/python-developer-remote-in-germany-berlin-319060
+  metadata:
+    tags:
+    - Software Engineering
+    job_types:
+    - Contract
+published_at: '2026-08-05T00:00:59Z'
+discovered_at: '2026-08-05T06:53:31Z'
+updated_at: '2026-08-05T06:53:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:31Z'
+analysis_priority: 0
+fingerprint: sha256:11969f351057765ca5e88a80032119cf305f8e07f69b2e5470c8dc2b9b2d0df8
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8055730676898467886'
+source_url: https://jooble.org/desc/-8055730676898467886?ckey=remote+senior+backend+engineer&rgn=55180&pos=1&groupId=2134052230&elckey=716335591709116747&p=1&aq=-6216729310744985532&cid=15922&jobAge=48&brelb=100&bscr=3509.057&scr=3509.057
+title: Senior Backend Engineer
+company: Clera
+location: San Francisco, CA
+published_at: '2026-08-03T08:16:10.4570000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T06:55:45Z'
+rejected_at: '2026-08-05T06:55:45Z'

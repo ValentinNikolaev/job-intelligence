@@ -1,0 +1,29 @@
+schema_version: 2
+id: 6d169ef0-e6ee-4682-a666-a781173a3e51
+title: Backend Developer - AI Trainer (Germany)
+company: Anyone Ai
+company_url: null
+location: Germany
+remote: false
+employment_type: Part Time
+sources:
+- source: arbeitnow
+  source_job_id: backend-developer-ai-trainer-germany-berlin-112597
+  url: https://www.arbeitnow.com/jobs/companies/anyone-ai/backend-developer-ai-trainer-germany-berlin-112597
+  metadata:
+    tags:
+    - Software Engineering
+    job_types:
+    - Part Time
+published_at: '2026-08-05T00:00:59Z'
+discovered_at: '2026-08-05T06:53:35Z'
+updated_at: '2026-08-05T06:53:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:35Z'
+analysis_priority: 0
+fingerprint: sha256:57b18e9763f074a5e5ea099ed8151ecf0b09b30f75c4cd01681ba447fa020e25
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

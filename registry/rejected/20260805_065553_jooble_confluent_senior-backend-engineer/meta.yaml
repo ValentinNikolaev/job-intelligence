@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3736436242336128883'
+source_url: https://jooble.org/away/3736436242336128883?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=72&brelb=10&scr=2510.89&bscr=2510.89&aq=-6216729310744985532&elckey=716335591709116747
+title: Senior Backend Engineer
+company: Confluent
+location: Tallahassee, FL
+published_at: '2026-08-02T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-05T06:55:53Z'
+rejected_at: '2026-08-05T06:55:53Z'

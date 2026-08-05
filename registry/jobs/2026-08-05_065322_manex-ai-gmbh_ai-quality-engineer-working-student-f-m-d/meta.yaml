@@ -1,0 +1,29 @@
+schema_version: 2
+id: fd2b28ac-5045-4a9c-a267-f0d6efffd6e5
+title: AI Quality Engineer - Working Student (f/m/d)
+company: Manex AI GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: ai-quality-engineer-working-student-munich-54039
+  url: https://www.arbeitnow.com/jobs/companies/manex-ai-gmbh/ai-quality-engineer-working-student-munich-54039
+  metadata:
+    tags:
+    - Operations
+    job_types:
+    - Full Time
+published_at: '2026-08-05T02:40:35Z'
+discovered_at: '2026-08-05T06:53:22Z'
+updated_at: '2026-08-05T06:53:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:22Z'
+analysis_priority: 0
+fingerprint: sha256:b81a4e449969d2563bd272dc01d31c17f6c2720714722e68a367d939615a3c2f
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,29 @@
+schema_version: 2
+id: ccba74f8-fd04-4520-a991-27d664a9bb19
+title: VP Customer Success (f/m/d)
+company: Manex AI GmbH
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: vp-customer-success-munich-301627
+  url: https://www.arbeitnow.com/jobs/companies/manex-ai-gmbh/vp-customer-success-munich-301627
+  metadata:
+    tags:
+    - Revenue
+    job_types:
+    - Full Time
+published_at: '2026-08-05T02:40:35Z'
+discovered_at: '2026-08-05T06:53:25Z'
+updated_at: '2026-08-05T06:53:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:25Z'
+analysis_priority: 0
+fingerprint: sha256:d8444b26854345c16d47860c64c1f311ac422e1253fcf75bdae422ffd97efe18
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,35 @@
+schema_version: 2
+id: 7124c37a-c185-4ed0-af03-9656c771697f
+title: Senior WordPress Developer
+company: INFUSE
+company_url: https://jobs.dou.ua/companies/infuse/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368445'
+  url: https://jobs.dou.ua/companies/infuse/vacancies/368445/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 серпня
+    listing_summary: Innovation is a core value of INFUSE. We are bringing together
+      people, who can look into the future to better understand how technology will
+      shape businesses, people, who create and navigate projects with great potential
+      impact.
+published_at: '2026-08-04'
+discovered_at: '2026-08-05T06:54:05Z'
+updated_at: '2026-08-05T06:54:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:54:05Z'
+analysis_priority: 100
+fingerprint: sha256:a468dfac37bcd3e32508b003c8fdeffda718a4c210cff6c4aaa7adfd0607feb8
+data_source: dou
+content_source: dou
+company_content_source: dou

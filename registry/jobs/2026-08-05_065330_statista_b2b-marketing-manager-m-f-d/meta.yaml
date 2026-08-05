@@ -1,0 +1,29 @@
+schema_version: 2
+id: 7ac8f74f-9ac9-4ebb-bdab-5b1de5308f51
+title: B2B Marketing Manager (m/f/d)
+company: Statista
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: b2b-marketing-manager-hamburg-457732
+  url: https://www.arbeitnow.com/jobs/companies/statista/b2b-marketing-manager-hamburg-457732
+  metadata:
+    tags:
+    - Revenue
+    job_types:
+    - Full Time
+published_at: '2026-08-05T00:01:30Z'
+discovered_at: '2026-08-05T06:53:30Z'
+updated_at: '2026-08-05T06:53:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:30Z'
+analysis_priority: 0
+fingerprint: sha256:4c734ae47c13f0b0bd33861d809840c32128c1bf62559b067eceec8b92b1ee4e
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

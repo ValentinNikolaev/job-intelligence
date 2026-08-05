@@ -1,0 +1,29 @@
+schema_version: 2
+id: 8ebca29f-b1df-4115-b6a5-94e7d7087c8a
+title: Senior Finance Coordinator & PMO Manager - UE Berlin
+company: Gus Germany
+company_url: null
+location: Berlin
+remote: false
+employment_type: Experienced, Fixed term, Full time
+sources:
+- source: arbeitnow
+  source_job_id: senior-finance-coordinator-pmo-manager-ue-berlin-141755
+  url: https://www.arbeitnow.com/jobs/companies/gus-germany/senior-finance-coordinator-pmo-manager-ue-berlin-141755
+  metadata:
+    job_types:
+    - Experienced
+    - Fixed term
+    - Full time
+published_at: '2026-08-05T02:09:15Z'
+discovered_at: '2026-08-05T06:53:28Z'
+updated_at: '2026-08-05T06:53:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-05T06:53:28Z'
+analysis_priority: 0
+fingerprint: sha256:7d5e46bbc2f715f5c285593409559d34649fe7101c48b558a86750c9345db141
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
