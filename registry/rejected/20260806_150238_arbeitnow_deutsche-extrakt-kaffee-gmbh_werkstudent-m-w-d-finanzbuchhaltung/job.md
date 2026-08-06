@@ -75,4 +75,4 @@ Wir freuen uns über geeignete Bewerbungen unabhängig von Geschlecht, kulturell
 
 **Deutsche Extrakt Kaffee GmbH **- Cafeastraße 1 - 21107 Hamburg
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

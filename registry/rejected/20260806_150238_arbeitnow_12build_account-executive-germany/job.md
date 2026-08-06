@@ -103,4 +103,4 @@ Team events and **personal development opportunities**
 
 Still have questions or feeling a bit unsure? No problem! Feel free to send an email to Leonie from HR ( or take a sneak peek behind the scenes on our Dutch 🫢 **[Instagram](https://www.instagram.com/lifeat12build/)** or **[TikTok](https://www.tiktok.com/@lifeat12build)**.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

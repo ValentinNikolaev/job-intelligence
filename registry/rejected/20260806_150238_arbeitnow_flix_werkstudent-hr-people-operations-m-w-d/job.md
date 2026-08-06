@@ -70,4 +70,4 @@ Raum, etwas zu bewegen. Wir wachsen und entwickeln uns täglich weiter und suche
 mitzugestalten. Wenn du einen Job suchst, in dem du wachsen und etwas bewirken kannst, dann bist du bei FlixTrain genau richtig. Hier kannst du Teil eines Teams werden, in dem dein Beitrag zählt und
 du deine Reise selbst gestalten kannst!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

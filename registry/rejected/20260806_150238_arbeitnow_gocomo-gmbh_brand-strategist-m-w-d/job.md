@@ -59,4 +59,4 @@ Dabei denkst du nicht im stillen Kämmerlein: Du bist die primäre Ansprechperso
 
 - **Hundefreundliches Büro im Herzen Berlins** – Dein Vierbeiner ist bei uns herzlich willkommen und freut sich auf neue Büro-Buddies
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

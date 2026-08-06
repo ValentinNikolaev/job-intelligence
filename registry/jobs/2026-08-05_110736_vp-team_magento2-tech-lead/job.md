@@ -84,7 +84,8 @@ This is a strong fit for a senior engineer who’s ready to step beyond pure exe
 - Product or service company background rather than pure outsourcing — you should have actually seen your code run in production and lived with the consequences
 - Regular hands-on use of AI-assisted development tools (Claude Code, GitHub Copilot, Cursor, or similar) as part of your daily workflow
 - Strong ownership mindset — you understand business context, make pragmatic technical calls, and ship reliable solutions
-- English level: Upper-Intermediate (B2) or higher, comfortable with written communication and technical discussions
+- English level: Upper-Intermediate (B2) or higher, comfortable with written communication and technical discussions.
+- Ukrainian language is a must, as most of the tech team comes from Ukraine
 
 **Bonus points**
 

@@ -57,4 +57,4 @@ Die Hagedorn Unternehmensgruppe mit Sitz in G√ºtersloh ist einer der weltweit f√
 
 - **Vorteile:** Attraktive Mitarbeiterrabatte bei zahlreichen Partnern.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: working-student-hr-personaladministration-hinterm-hauptbahnhof-3-5-76137-karlsruhe-434740
+source_url: https://www.arbeitnow.com/jobs/companies/ionos2/working-student-hr-personaladministration-hinterm-hauptbahnhof-3-5-76137-karlsruhe-434740
+title: Working Student (f/m/d) HR / Personaladministration
+company: Ionos2
+location: Hinterm Hauptbahnhof 3-5, 76137 Karlsruhe
+published_at: '2026-08-06T17:55:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T19:02:07Z'
+rejected_at: '2026-08-06T19:02:07Z'

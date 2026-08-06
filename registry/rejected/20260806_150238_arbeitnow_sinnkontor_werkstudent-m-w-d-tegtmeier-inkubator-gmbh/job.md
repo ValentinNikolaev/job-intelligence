@@ -61,4 +61,4 @@ Klingt futuristisch? – Ist es auch! Wir bieten dir eine Möglichkeit, die Zuku
 
 Du möchtest mehr erfahren? Schick uns einfach eine Mail und füge gerne schon mal einen aktuellen Lebenslauf sowie ggf. weitere nützliche Links (XING, LinkedIn, GitHub, Stackoverflow, Medium etc.) hinzu.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5876782323389450402'
+source_url: https://jooble.org/away/-5876782323389450402?p=1&pos=26&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=37&brelb=15&scr=484.1633&bscr=484.1633&aq=-8670423316251162564&elckey=3092054361856232083
+title: Senior Software Engineer, Backend (Product Engineering)
+company: Brex
+location: Seattle, WA
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T19:02:26Z'
+rejected_at: '2026-08-06T19:02:26Z'

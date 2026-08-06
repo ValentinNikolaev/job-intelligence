@@ -4,8 +4,8 @@ Posted: 2026-07-30T18:23:05Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-07-30T18:23:05Z is older than 7 days
 
 ### About [Nebius](https://himalayas.app/companies/nebius):
 

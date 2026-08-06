@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: freelance-sales-manager-flexible-talent-solutions-remote-berlin-386098
+source_url: https://www.arbeitnow.com/jobs/companies/10xteam/freelance-sales-manager-flexible-talent-solutions-remote-berlin-386098
+title: Freelance Sales Manager - Flexible Talent Solutions - Remote
+company: 10Xteam
+location: Germany
+published_at: '2026-08-06T17:40:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T19:02:08Z'
+rejected_at: '2026-08-06T19:02:08Z'

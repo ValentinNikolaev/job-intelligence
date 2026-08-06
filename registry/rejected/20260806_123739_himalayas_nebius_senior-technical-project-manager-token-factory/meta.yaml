@@ -9,7 +9,7 @@ location: Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finlan
   Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden,
   Switzerland, United Kingdom
 published_at: '2026-07-30T18:23:05Z'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-06T15:02:46Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-30T18:23:05Z is older than 7 days
+updated_at: '2026-08-06T19:02:21Z'
 rejected_at: '2026-08-06T12:37:39Z'

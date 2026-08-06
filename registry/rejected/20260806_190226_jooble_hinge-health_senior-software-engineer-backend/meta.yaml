@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6765835456139695120'
+source_url: https://jooble.org/away/6765835456139695120?p=1&pos=36&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=37&brelb=15&scr=990.9879&bscr=990.9879&aq=-9222851629682181417&elckey=8699564896063904163
+title: Senior Software Engineer - Backend
+company: Hinge Health
+location: San Francisco, CA
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T19:02:26Z'
+rejected_at: '2026-08-06T19:02:26Z'

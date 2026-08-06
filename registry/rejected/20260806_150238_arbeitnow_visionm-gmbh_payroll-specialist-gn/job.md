@@ -55,4 +55,4 @@ Feuer gefangen? Dann freuen wir uns auf Ihre Bewerbung.
 
 Bei Fragen steht Ihnen Sandra Heinrich gern telefonisch unter +49 179 3224223 zur Verfügung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

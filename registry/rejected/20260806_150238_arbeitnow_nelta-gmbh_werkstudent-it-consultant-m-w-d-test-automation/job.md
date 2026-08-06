@@ -97,4 +97,4 @@ Offenheit von Anfang an
 
 Wir bei NELTA pflegen eine offene Du-Kultur und legen besonderen Wert darauf, dass Persönlichkeit und Mindset zu uns passen. Unser Bewerbungsprozess ist transparent und wird von uns als Team gestaltet, du bist jederzeit einbezogen. Wir setzen auf kurze Wege und schnelle Entscheidungen, damit du zeitnah Klarheit hast.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: chief-of-staff-munich-de-384163
+source_url: https://www.arbeitnow.com/jobs/companies/octopus-energy-group/chief-of-staff-munich-de-384163
+title: Chief of Staff (m/w/d)
+company: Octopus Energy Group
+location: Munich (DE)
+published_at: '2026-08-06T14:04:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T19:02:08Z'
+rejected_at: '2026-08-06T19:02:08Z'

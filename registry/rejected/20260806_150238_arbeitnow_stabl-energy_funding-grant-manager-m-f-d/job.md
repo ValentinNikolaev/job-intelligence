@@ -107,4 +107,4 @@ What you’ll love about working with us:
 
 - Company EGYM Wellpass membership to train with no limits at numerous fitness clubs across Germany
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -75,4 +75,4 @@ Du kommst aus der Top-Beratung und willst nicht mehr für die Marke eines andere
 
 Wenn du lieber baust als verwaltest und lieber mit einem kleinen Team etwas Großes aufziehst, als in einem großen Team ein kleines Rädchen zu sein – dann bist du hier richtig.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
