@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: account-executive-germany-koln-142585
+source_url: https://www.arbeitnow.com/jobs/companies/12build/account-executive-germany-koln-142585
+title: Account Executive Germany
+company: 12Build
+location: Köln
+published_at: '2026-08-06T13:20:15Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T15:02:38Z'
+rejected_at: '2026-08-06T15:02:38Z'

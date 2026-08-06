@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: engineering-manager-consumer-alliance-berlin-berlin-346856
+source_url: https://www.arbeitnow.com/jobs/companies/hellofresh/engineering-manager-consumer-alliance-berlin-berlin-346856
+title: Engineering Manager, Consumer Alliance (m/f/x)
+company: hellofresh
+location: Berlin, Berlin
+published_at: '2026-08-06T08:55:27Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T15:02:38Z'
+rejected_at: '2026-08-06T15:02:38Z'

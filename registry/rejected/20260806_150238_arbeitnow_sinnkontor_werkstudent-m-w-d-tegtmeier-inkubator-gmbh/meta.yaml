@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-tegtmeier-inkubator-gmbh-hamburg-465944
+source_url: https://www.arbeitnow.com/jobs/companies/sinnkontor/werkstudent-tegtmeier-inkubator-gmbh-hamburg-465944
+title: Werkstudent (m/w/d) - Tegtmeier Inkubator GmbH
+company: SinnKontor
+location: Hamburg
+published_at: '2026-08-06T14:00:41Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T15:02:38Z'
+rejected_at: '2026-08-06T15:02:38Z'

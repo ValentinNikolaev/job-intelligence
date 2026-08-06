@@ -59,4 +59,4 @@ Damit unsere Marke über alle Kanäle hinweg sichtbar wird, suchen wir Unterstü
 
 Wir freuen uns darauf, deine kreativen Arbeiten kennenzulernen! Schick uns neben deinem Lebenslauf gerne auch ein Portfolio oder Arbeitsproben.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

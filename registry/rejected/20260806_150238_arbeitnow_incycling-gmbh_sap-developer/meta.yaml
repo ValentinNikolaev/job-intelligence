@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sap-developer-erfurt-227550
+source_url: https://www.arbeitnow.com/jobs/companies/incycling-gmbh/sap-developer-erfurt-227550
+title: SAP Developer
+company: InCycling GmbH
+location: Erfurt
+published_at: '2026-08-06T12:01:17Z'
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-08-06T15:02:38Z'
+rejected_at: '2026-08-06T15:02:38Z'

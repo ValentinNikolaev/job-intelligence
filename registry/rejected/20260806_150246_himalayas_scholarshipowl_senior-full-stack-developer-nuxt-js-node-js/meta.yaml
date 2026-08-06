@@ -1,0 +1,13 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/scholarshipowl/jobs/senior-full-stack-developer-nuxt-js-node-js
+source_url: https://himalayas.app/companies/scholarshipowl/jobs/senior-full-stack-developer-nuxt-js-node-js
+title: Senior Full Stack Developer (Nuxt.js + Node.js)
+company: ScholarshipOwl
+location: Canada, Denmark, France, Germany, Italy, Netherlands, Spain, Sweden, United
+  Kingdom, United States
+published_at: '2026-06-21T15:38:56Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-21T15:38:56Z is older than 7 days
+updated_at: '2026-08-06T15:02:46Z'
+rejected_at: '2026-08-06T15:02:46Z'

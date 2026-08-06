@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '148747'
+source_url: https://jobicy.com/jobs/148747-engineering-manager-geo-for-self-managed-customers
+title: Engineering Manager, Geo for Self-Managed Customers
+company: GitLab
+location: UK
+published_at: '2026-08-06T06:44:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T15:02:48Z'
+rejected_at: '2026-08-06T15:02:48Z'

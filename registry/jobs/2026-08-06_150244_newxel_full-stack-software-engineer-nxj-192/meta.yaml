@@ -1,0 +1,37 @@
+schema_version: 2
+id: 4ed671a2-2375-48d9-872a-8cccc3d3fca1
+title: Full-stack Software Engineer (NXJ-192)
+company: Newxel
+company_url: https://jobs.dou.ua/companies/newxel/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368785'
+  url: https://jobs.dou.ua/companies/newxel/vacancies/368785/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 6 серпня
+    listing_summary: 'The Role
+
+
+      You will own end-to-end features for the Global Card platform—from customer-facing
+      interfaces to core banking services handling card issuance, balances, and multi-geography
+      money movement.'
+published_at: '2026-08-06'
+discovered_at: '2026-08-06T15:02:44Z'
+updated_at: '2026-08-06T15:02:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T15:02:44Z'
+analysis_priority: 100
+fingerprint: sha256:931c4a8b0788290b455daa70a9cf7d58c636406cbd03d4faf8e4b46240aa424e
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4285202883061405588'
+source_url: https://jooble.org/desc/4285202883061405588?ckey=remote+senior+backend+engineer&rgn=55180&pos=24&groupId=2134052230&elckey=2173089710707206700&p=1&aq=-2470887323544755655&cid=15922&jobAge=753&brelb=100&bscr=889.0068&scr=889.0068
+title: Senior Backend Engineer (Kotlin, Kafka)
+company: Dahl Consulting
+location: Minnesota
+published_at: '2026-07-06T16:50:48.3570000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-06T16:50:48.3570000 is older than 7 days
+updated_at: '2026-08-06T15:02:49Z'
+rejected_at: '2026-08-06T15:02:49Z'

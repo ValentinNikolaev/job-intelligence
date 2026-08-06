@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '367930'
+source_url: https://jobs.dou.ua/companies/pulsepaw/vacancies/367930/
+title: Junior Strong/Middle PHP developer
+company: PulsePaw
+location: віддалено
+published_at: '2026-07-30'
+rejection_category: stale
+rejection_reason: published_at 2026-07-30 is older than 7 days
+updated_at: '2026-08-06T15:02:44Z'
+rejected_at: '2026-08-06T15:02:44Z'

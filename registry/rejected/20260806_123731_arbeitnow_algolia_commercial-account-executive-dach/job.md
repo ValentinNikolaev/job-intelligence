@@ -107,4 +107,4 @@ We’ve recently seen an increase in recruitment scams targeting job seekers. To
 
 If you share our values and our enthusiasm for building the world’s best search & discovery technology, we’d love to review your application!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

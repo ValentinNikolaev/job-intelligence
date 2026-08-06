@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149953'
+source_url: https://jobicy.com/jobs/149953-solution-architect-2
+title: Solution Architect
+company: Zuora
+location: EMEA
+published_at: '2026-08-01T03:03:22Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T15:02:48Z'
+rejected_at: '2026-08-06T15:02:48Z'

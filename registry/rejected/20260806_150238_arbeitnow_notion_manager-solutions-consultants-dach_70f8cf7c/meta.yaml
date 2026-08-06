@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: manager-solutions-consultants-dach-munich-118672
+source_url: https://www.arbeitnow.com/jobs/companies/notion/manager-solutions-consultants-dach-munich-118672
+title: Manager, Solutions Consultants, DACH
+company: Notion
+location: Munich, Germany
+published_at: '2026-08-06T11:40:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T15:02:38Z'
+rejected_at: '2026-08-06T15:02:38Z'

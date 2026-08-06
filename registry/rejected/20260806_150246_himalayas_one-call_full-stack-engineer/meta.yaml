@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/one-call/jobs/full-stack-engineer
+source_url: https://himalayas.app/companies/one-call/jobs/full-stack-engineer
+title: Full Stack Engineer
+company: One Call
+location: Worldwide
+published_at: '2026-07-30T00:21:15Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-30T00:21:15Z is older than 7 days
+updated_at: '2026-08-06T15:02:46Z'
+rejected_at: '2026-08-06T15:02:46Z'
