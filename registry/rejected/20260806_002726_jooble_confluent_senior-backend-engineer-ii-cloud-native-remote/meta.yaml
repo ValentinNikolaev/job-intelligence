@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4458248560861356734'
+source_url: https://jooble.org/away/4458248560861356734?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=90&brelb=10&scr=2139.442&bscr=2139.442&aq=2459012435551317288&elckey=6042449974054331249
+title: Senior Backend Engineer II - Cloud-Native, Remote
+company: Confluent
+location: Richmond, VA
+published_at: '2026-08-02T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T00:27:26Z'
+rejected_at: '2026-08-06T00:27:26Z'

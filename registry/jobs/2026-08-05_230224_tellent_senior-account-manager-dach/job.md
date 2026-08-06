@@ -142,4 +142,4 @@ We use our internally developed AI tools to help streamline our recruitment proc
 
 *If you require accommodations or support during the recruitment process, please let us know — we’re happy to help.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

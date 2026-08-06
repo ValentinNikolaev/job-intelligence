@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-568478888642274179'
+source_url: https://jooble.org/away/-568478888642274179?p=1&pos=17&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=19&brelb=10&scr=30.570599&bscr=30.570599&aq=2476151083244392097&elckey=5574485632149930866
+title: Python Developer
+company: MLabs
+location: Italian Republic
+published_at: '2026-08-04T23:15:59.1030000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T00:27:09Z'
+rejected_at: '2026-08-06T00:27:09Z'

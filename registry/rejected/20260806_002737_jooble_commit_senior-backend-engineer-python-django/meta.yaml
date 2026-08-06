@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6026870691748549062'
+source_url: https://jooble.org/away/6026870691748549062?p=1&pos=44&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=134&brelb=10&scr=2037.9637&bscr=2037.9637&aq=2459012435551317288&elckey=6042449974054331249
+title: Senior Backend Engineer (Python + Django)
+company: Commit
+location: San Francisco, CA
+published_at: '2026-07-31T03:33:08.6630000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T00:27:37Z'
+rejected_at: '2026-08-06T00:27:37Z'

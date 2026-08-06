@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1493571546480376572'
+source_url: https://jooble.org/away/1493571546480376572?p=1&pos=27&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=90&brelb=10&scr=2126.2085&bscr=2126.2085&aq=2459012435551317288&elckey=6042449974054331249
+title: Senior Backend Software Engineer
+company: Addison Group
+location: Washington DC
+published_at: '2026-08-02T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T00:27:28Z'
+rejected_at: '2026-08-06T00:27:28Z'

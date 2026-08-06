@@ -64,4 +64,4 @@ Quick learner who is comfortable adopting new tools and technologies in a fast-m
 
 Versatile multitasker who can manage workflows, information, and processes across different project types
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
