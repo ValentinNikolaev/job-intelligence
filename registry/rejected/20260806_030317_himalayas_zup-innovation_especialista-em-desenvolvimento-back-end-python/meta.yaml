@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/zup-innovation/jobs/especialista-em-desenvolvimento-back-end-python
+source_url: https://himalayas.app/companies/zup-innovation/jobs/especialista-em-desenvolvimento-back-end-python
+title: Especialista em Desenvolvimento (Back-end - Python)
+company: Zup Innovation
+location: Worldwide
+published_at: '2026-08-03T09:00:14Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T03:03:17Z'
+rejected_at: '2026-08-06T03:03:17Z'

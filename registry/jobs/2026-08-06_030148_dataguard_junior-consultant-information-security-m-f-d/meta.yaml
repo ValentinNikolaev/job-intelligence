@@ -1,0 +1,29 @@
+schema_version: 2
+id: 0e82f8f0-ab6b-4f26-916f-c4ea2bafccad
+title: (Junior) Consultant Information Security (m/f/d)
+company: Dataguard
+company_url: null
+location: Munich
+remote: false
+employment_type: Full Time
+sources:
+- source: arbeitnow
+  source_job_id: junior-consultant-information-security-munich-309342
+  url: https://www.arbeitnow.com/jobs/companies/dataguard/junior-consultant-information-security-munich-309342
+  metadata:
+    tags:
+    - Professional Services
+    job_types:
+    - Full Time
+published_at: '2026-08-05T23:40:28Z'
+discovered_at: '2026-08-06T03:01:48Z'
+updated_at: '2026-08-06T03:01:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T03:01:48Z'
+analysis_priority: 0
+fingerprint: sha256:92d6eea4797d3a80d9463fd4855739d86686417ad89d3ea116a9b0cf3ad3f13a
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 80800d67-6627-4802-8ab5-e50dc07126c1
+title: Working Student - Category Management (m/f/x)
+company: rebuy
+company_url: null
+location: Berlin, Berlin, Germany
+remote: false
+employment_type: Mid, parttime fixed term
+sources:
+- source: arbeitnow
+  source_job_id: working-student-category-management-berlin-946
+  url: https://www.arbeitnow.com/jobs/companies/rebuy/working-student-category-management-berlin-946
+  metadata:
+    tags:
+    - Commercial
+    job_types:
+    - Mid
+    - parttime fixed term
+published_at: '2026-08-05T23:30:23Z'
+discovered_at: '2026-08-06T03:01:50Z'
+updated_at: '2026-08-06T03:01:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T03:01:50Z'
+analysis_priority: 0
+fingerprint: sha256:e8cd33b136c8b94ce12a379e4ec706f3694121666713c7d7ae11e6034f360bed
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

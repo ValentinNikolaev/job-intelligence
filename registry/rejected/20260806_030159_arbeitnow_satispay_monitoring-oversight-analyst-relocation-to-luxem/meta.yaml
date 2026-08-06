@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: monitoring-oversight-analyst-relocation-to-luxembourg-berlin-413677
+source_url: https://www.arbeitnow.com/jobs/companies/satispay/monitoring-oversight-analyst-relocation-to-luxembourg-berlin-413677
+title: Monitoring & Oversight Analyst (Relocation to Luxembourg)
+company: Satispay
+location: Germany, Berlin
+published_at: '2026-08-05T17:40:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T03:01:59Z'
+rejected_at: '2026-08-06T03:01:59Z'

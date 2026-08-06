@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8964445682742303984'
+source_url: https://jooble.org/desc/-8964445682742303984?ckey=remote+senior+backend+engineer&rgn=55180&pos=31&groupId=2134052230&elckey=-5033908033428809807&p=1&aq=3159958549687747032&cid=15922&jobAge=45&brelb=100&bscr=865.3346&scr=865.3346
+title: Senior Backend Engineer, IAM
+company: Reddit
+location: Remote
+published_at: '2026-08-04T11:49:51.1319497+00:00'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T03:04:12Z'
+rejected_at: '2026-08-06T03:04:12Z'

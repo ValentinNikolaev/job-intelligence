@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: legal-engineer-law-firms-munich-377743
+source_url: https://www.arbeitnow.com/jobs/companies/legora/legal-engineer-law-firms-munich-377743
+title: Legal Engineer, Law Firms
+company: Legora
+location: Munich
+published_at: '2026-08-05T17:40:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T03:02:00Z'
+rejected_at: '2026-08-06T03:02:00Z'

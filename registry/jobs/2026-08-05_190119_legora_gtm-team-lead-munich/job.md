@@ -98,4 +98,4 @@ Communicate confidently in both English and German, with English serving as the 
 
 At Legora, we believe great teams are built on diversity of thought and experience. We’re proud to be an equal opportunity employer and committed to creating an inclusive, high-performance culture where everyone can do their best work. We welcome people of all backgrounds and don’t discriminate based on race, color, religion, national origin, gender, gender identity or expression, sexual orientation, age, disability, veteran status, or any other characteristic protected by law.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -65,4 +65,4 @@ A core focus of this role will be emphasizing the "Club" in Urban Sports Club. W
 
 ***Urban Sports Club is committed to providing a friendly, safe, and welcoming environment for everyone who applies for a position or already works with us, regardless of their sports preferences, gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion (or lack thereof).***
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

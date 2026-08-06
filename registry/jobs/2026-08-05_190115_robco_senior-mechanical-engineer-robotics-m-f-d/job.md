@@ -120,4 +120,4 @@ We solve our customers' most pressing pain points - labor shortage, cost pressur
 
 *At RobCo, applicants are selected regardless of ethnic origin, religion, gender, age, disability, or sexual orientation. All decisions throughout the recruitment process are based solely on applicants’ qualifications, skills, knowledge, and experience, as well as relevant business requirements.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
