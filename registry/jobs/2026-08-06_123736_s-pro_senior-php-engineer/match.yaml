@@ -1,0 +1,18 @@
+score: 88
+recommendation: strong_match
+summary: Strong PHP/Laravel backend fit for modernization of a large fintech marketplace.
+strengths:
+- PHP, Laravel, MySQL, Docker, Redis, refactoring, performance and observability experience.
+gaps:
+- No explicit evidence of the specific marketplace domain or all requested modern
+  PHP versions.
+concerns:
+- Fintech and AI-assisted coding workflow are relevant but exact product context is
+  not established.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-06T13:00:31Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4a69d52016deb2ad724c9f9f4c1fb4c3c6eb77ce12ef4d171e1080ef00112df5
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
