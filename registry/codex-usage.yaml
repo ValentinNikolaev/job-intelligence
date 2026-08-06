@@ -1312,3 +1312,14 @@ runs:
   output_tokens: 0
   total_tokens: 0
   credits: 0.0
+- run_id: a8f9f108b90145dd9b44111396e23cc4
+  recorded_at: '2026-08-06T09:23:55Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0
+  note: Exact Codex usage unavailable; estimated zero counters for scheduled batch.
