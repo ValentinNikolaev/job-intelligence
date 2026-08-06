@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6581768820718303119'
+source_url: https://jooble.org/desc/-6581768820718303119?ckey=senior+backend+engineer&rgn=55179&pos=19&groupId=293749696&elckey=-4733859772909300691&p=1&aq=7950336079278375510&cid=15922&jobAge=169&brelb=100&bscr=6.3967686&scr=6.3967686
+title: Sr. Embedded Firmware Engineer
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-07-30T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-30T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-06T07:03:53Z'
+rejected_at: '2026-08-06T07:03:53Z'

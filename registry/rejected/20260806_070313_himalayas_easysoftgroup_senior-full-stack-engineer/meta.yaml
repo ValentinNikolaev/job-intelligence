@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/easysoftgroup/jobs/senior-full-stack-engineer
+source_url: https://himalayas.app/companies/easysoftgroup/jobs/senior-full-stack-engineer
+title: Senior Full-Stack Engineer
+company: EasySoftGroup
+location: Worldwide
+published_at: '2026-08-06T03:12:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T07:03:13Z'
+rejected_at: '2026-08-06T07:03:13Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1456285065098265616'
+source_url: https://jooble.org/desc/-1456285065098265616?ckey=remote+senior+backend+engineer&rgn=55180&pos=39&groupId=2134052230&elckey=8801487473689232708&p=1&aq=4788847983692347261&cid=15922&jobAge=1273&brelb=100&bscr=851.85754&scr=851.85754
+title: Senior Backend Engineer
+company: TFECTA - Digital Innovations
+location: Remote
+published_at: '2026-06-14T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-14T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-06T07:04:04Z'
+rejected_at: '2026-08-06T07:04:04Z'

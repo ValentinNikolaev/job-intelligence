@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8337040713633404803'
+source_url: https://jooble.org/away/8337040713633404803?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=601&brelb=15&scr=289.77295&bscr=289.77295&aq=-6123694714248098599&elckey=3193976939481560628
+title: Junior Back-End Web Developer
+company: Boomering Inc
+location: Remote
+published_at: '2026-07-12T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-12T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-06T07:04:09Z'
+rejected_at: '2026-08-06T07:04:09Z'
