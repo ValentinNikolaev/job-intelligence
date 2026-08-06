@@ -1,23 +1,21 @@
-score: 82
+score: 76
 recommendation: match
-summary: Strong technical leadership and PHP architecture background; Magento 2 and
-  telehealth compliance are not directly evidenced.
+summary: Good technical-lead and PHP fit with e-commerce and architecture experience;
+  Magento 2 specialization is unproven.
 strengths:
 - PHP
+- e-commerce
 - leadership
 - architecture
-- legacy modernization
-- e-commerce
+- performance
 gaps:
-- Magento 2
-- HIPAA
-- telehealth
+- Magento 2 hands-on experience
 concerns:
 - Magento expertise may be required
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-05T11:13:12Z'
+analyzed_at: '2026-08-06T19:22:16Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:e589979267354fca8ced502659594c07d289da1153365e8616b0e37152424b3d
+job_version: sha256:d3d1b1ee26fae518f3b9cb145c4c1a0011da21e9dc0bc4d78ebe16a908249ec6
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

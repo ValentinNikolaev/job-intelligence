@@ -1,23 +1,21 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-Strong technical leadership and PHP architecture background; Magento 2 and telehealth compliance are not directly evidenced.
+Good technical-lead and PHP fit with e-commerce and architecture experience; Magento 2 specialization is unproven.
 
 ## Why it matches
 
 - PHP
+- e-commerce
 - leadership
 - architecture
-- legacy modernization
-- e-commerce
+- performance
 
 ## Gaps
 
-- Magento 2
-- HIPAA
-- telehealth
+- Magento 2 hands-on experience
 
 ## Concerns
 
