@@ -28,6 +28,7 @@ from .matching import (
     AnalysisSummary,
     CodexMatchDraftClient,
     MatchAnalyzer,
+    analysis_should_skip_status,
     build_analysis_pack,
     dump_analysis_pack,
     load_analysis_pack,
@@ -154,8 +155,10 @@ def main(argv: list[str] | None = None) -> int:
         try:
             payload = _read_yaml_file(args.input, "manual job draft")
             job = _manual_job_from_payload(payload)
-            result = Registry(registry_dir).upsert(job)
-            Registry(registry_dir).regenerate_index()
+            with workflow_lock(project_root, "manual:add", timeout_seconds=args.lock_timeout_seconds):
+                registry = Registry(registry_dir, cache_entries=True)
+                result = registry.upsert(job)
+                registry.regenerate_index()
         except Exception as exc:
             print(f"Manual job error: {exc}", file=sys.stderr)
             return 1
@@ -176,29 +179,33 @@ def main(argv: list[str] | None = None) -> int:
             )
             return 2
         try:
-            directories = resolve_job_directories(registry_dir, args.arguments[0])
-            if len(directories) != 1:
-                raise ValueError("status updates exactly one vacancy")
-            directory = directories[0]
-            before = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
-            changed = Registry(registry_dir).update_status(args.arguments[0], args.arguments[1])
-            if changed:
-                after = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
-                append_manual_status_event(
-                    registry_dir / "manual-status-log.yaml",
-                    ManualStatusEvent(
-                        changed_at=str(after["updated_at"]),
-                        vacancy_id=str(after["id"]),
-                        directory=directory.name,
-                        company=str(after.get("company") or ""),
-                        title=str(after.get("title") or ""),
-                        from_status=str(before.get("status") or ""),
-                        to_status=str(after.get("status") or ""),
-                        reason=(args.reason or "unspecified").strip() or "unspecified",
-                        actor=(args.actor or "codex").strip() or "codex",
-                        interaction_id=(args.interaction_id or "").strip() or None,
-                        note=(args.status_note or "").strip() or None,
-                    ),
+            with workflow_lock(project_root, "status", timeout_seconds=args.lock_timeout_seconds):
+                directories = resolve_job_directories(registry_dir, args.arguments[0])
+                if len(directories) != 1:
+                    raise ValueError("status updates exactly one vacancy")
+
+                def audit_status_change(
+                    before: dict[str, Any], after: dict[str, Any], directory: Path
+                ) -> None:
+                    append_manual_status_event(
+                        registry_dir / "manual-status-log.yaml",
+                        ManualStatusEvent(
+                            changed_at=str(after["updated_at"]),
+                            vacancy_id=str(after["id"]),
+                            directory=directory.name,
+                            company=str(after.get("company") or ""),
+                            title=str(after.get("title") or ""),
+                            from_status=str(before.get("status") or ""),
+                            to_status=str(after.get("status") or ""),
+                            reason=(args.reason or "unspecified").strip() or "unspecified",
+                            actor=(args.actor or "codex").strip() or "codex",
+                            interaction_id=(args.interaction_id or "").strip() or None,
+                            note=(args.status_note or "").strip() or None,
+                        ),
+                    )
+
+                changed = Registry(registry_dir).update_status(
+                    args.arguments[0], args.arguments[1], on_updated=audit_status_change
                 )
         except Exception as exc:
             print(f"Status error: {exc}", file=sys.stderr)
@@ -226,14 +233,15 @@ def main(argv: list[str] | None = None) -> int:
             return 1
 
     if target == "usage":
-        return _run_usage(args, registry_dir)
+        return _run_usage(args, project_root, registry_dir)
 
     if target == "reindex":
         if args.arguments or args.force or args.profile or args.input or args.workflow:
             print("Usage: python run.py reindex", file=sys.stderr)
             return 2
         try:
-            changed = Registry(registry_dir).regenerate_index()
+            with workflow_lock(project_root, "registry:reindex", timeout_seconds=args.lock_timeout_seconds):
+                changed = Registry(registry_dir).regenerate_index()
         except Exception as exc:
             print(f"Index error: {exc}", file=sys.stderr)
             return 1
@@ -333,8 +341,8 @@ def main(argv: list[str] | None = None) -> int:
             print("No collectors found.")
         return 0
 
-    registry = Registry(registry_dir)
-    rejected_registry = RejectedRegistry(registry_dir)
+    registry = Registry(registry_dir, cache_entries=True)
+    rejected_registry = RejectedRegistry(registry_dir, cache_entries=True)
     try:
         company_retry_rules = load_company_retry_rules(
             project_root / "config" / "application-profile.yaml"
@@ -374,7 +382,7 @@ def main(argv: list[str] | None = None) -> int:
                     failed = True
                     print(f"API usage log error: {exc}", file=sys.stderr)
                 failed = failed or summary.errors > 0
-        registry.regenerate_index()
+            registry.regenerate_index()
     except (Exception, WorkflowLockError) as exc:
         print(f"Collection error: {exc}", file=sys.stderr)
         return 1
@@ -729,6 +737,20 @@ def _run_analysis(
     project_root: Path,
     registry_dir: Path,
 ) -> int:
+    try:
+        with workflow_lock(project_root, "analysis:single", timeout_seconds=args.lock_timeout_seconds):
+            return _run_analysis_locked(args, config, project_root, registry_dir)
+    except WorkflowLockError as exc:
+        print(f"Analysis failed: {exc}", file=sys.stderr)
+        return 1
+
+
+def _run_analysis_locked(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> int:
     if len(args.arguments) != 1:
         print(
             "Usage: python run.py analyze <job-directory|vacancy-id> --input <draft.yaml> "
@@ -814,7 +836,7 @@ def _run_analysis_batch(
     return 0
 
 
-def _run_usage(args: argparse.Namespace, registry_dir: Path) -> int:
+def _run_usage(args: argparse.Namespace, project_root: Path, registry_dir: Path) -> int:
     if len(args.arguments) != 1 or args.arguments[0] not in {"record", "summary"}:
         print("Usage: python run.py usage record --workflow <name> --model <label> [usage fields]", file=sys.stderr)
         return 2
@@ -827,17 +849,18 @@ def _run_usage(args: argparse.Namespace, registry_dir: Path) -> int:
         print("usage record requires --workflow and --model", file=sys.stderr)
         return 2
     try:
-        run = CodexUsageLog(registry_dir / "codex-usage.yaml").record(
-            workflow=args.workflow,
-            model=args.model,
-            run_id=args.run_id,
-            input_tokens=args.input_tokens,
-            output_tokens=args.output_tokens,
-            total_tokens=args.total_tokens,
-            credits=args.credits,
-            measurement=args.measurement,
-            note=args.note,
-        )
+        with workflow_lock(project_root, "usage:record", timeout_seconds=args.lock_timeout_seconds):
+            run = CodexUsageLog(registry_dir / "codex-usage.yaml").record(
+                workflow=args.workflow,
+                model=args.model,
+                run_id=args.run_id,
+                input_tokens=args.input_tokens,
+                output_tokens=args.output_tokens,
+                total_tokens=args.total_tokens,
+                credits=args.credits,
+                measurement=args.measurement,
+                note=args.note,
+            )
     except Exception as exc:
         print(f"Usage record error: {exc}", file=sys.stderr)
         return 1
@@ -940,6 +963,20 @@ def _run_preparation(
     project_root: Path,
     registry_dir: Path,
 ) -> int:
+    try:
+        with workflow_lock(project_root, "preparation:single", timeout_seconds=args.lock_timeout_seconds):
+            return _run_preparation_locked(args, config, project_root, registry_dir)
+    except WorkflowLockError as exc:
+        print(f"Preparation failed: {exc}", file=sys.stderr)
+        return 1
+
+
+def _run_preparation_locked(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> int:
     if len(args.arguments) != 1:
         print(
             "Usage: python run.py prepare <job-directory|vacancy-id> --input <draft-directory> "
@@ -1008,6 +1045,20 @@ def _run_pending(
     project_root: Path,
     registry_dir: Path,
 ) -> int:
+    try:
+        with workflow_lock(project_root, "pending", timeout_seconds=args.lock_timeout_seconds):
+            return _run_pending_locked(args, config, project_root, registry_dir)
+    except WorkflowLockError as exc:
+        print(f"Pending check failed: {exc}", file=sys.stderr)
+        return 1
+
+
+def _run_pending_locked(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> int:
     if len(args.arguments) not in (1, 2) or args.arguments[0] not in {"analyze", "prepare"}:
         print(
             "Usage: python run.py pending <analyze|prepare> [all|job-directory|vacancy-id] "
@@ -1030,14 +1081,13 @@ def _run_pending(
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         if stage == "analyze" and args.pack:
-            with workflow_lock(project_root, "analysis:pack", timeout_seconds=args.lock_timeout_seconds):
-                pack = build_analysis_pack(
-                    registry_dir,
-                    profile_paths,
-                    limit=args.limit,
-                    triage_skip=should_skip_model,
-                )
-                dump_analysis_pack(pack, args.pack.resolve())
+            pack = build_analysis_pack(
+                registry_dir,
+                profile_paths,
+                limit=args.limit,
+                triage_skip=should_skip_model,
+            )
+            dump_analysis_pack(pack, args.pack.resolve())
             print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
             return 0
         if args.pack:
@@ -1124,7 +1174,7 @@ def _vacancy_status_skips_analysis(directory: Path) -> bool:
         meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
     except ValueError:
         return False
-    return str(meta.get("status", "")).strip().casefold() == "applied"
+    return analysis_should_skip_status(meta)
 
 
 def _analysis_is_current(

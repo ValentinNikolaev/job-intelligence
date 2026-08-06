@@ -79,16 +79,15 @@ def prefilter_job(
     american_work_time_rejection = _american_work_time_rejection(full_text)
     if american_work_time_rejection is not None:
         return american_work_time_rejection
-    if _has_english_requirement(full_text):
-        return None
-    blocking_language = _hard_blocking_language_requirement(full_text)
-    if blocking_language is not None:
-        return Rejection(
-            "language_requirement",
-            f"hard {blocking_language} language requirement without English green light",
-        )
-    if _has_hard_language_requirement(full_text, "italian"):
-        return Rejection("language_requirement", "hard Italian language requirement without English green light")
+    if not _has_english_requirement(full_text):
+        blocking_language = _hard_blocking_language_requirement(full_text)
+        if blocking_language is not None:
+            return Rejection(
+                "language_requirement",
+                f"hard {blocking_language} language requirement without English green light",
+            )
+        if _has_hard_language_requirement(full_text, "italian"):
+            return Rejection("language_requirement", "hard Italian language requirement without English green light")
     cms_stack = _cms_stack(full_text)
     if cms_stack is not None:
         return Rejection("tech_stack", f"{cms_stack} vacancies are ignored")
@@ -161,8 +160,10 @@ def _company_retry_rejection(
 
 
 class RejectedRegistry:
-    def __init__(self, registry_root: Path) -> None:
+    def __init__(self, registry_root: Path, *, cache_entries: bool = False) -> None:
         self.root = registry_root / "rejected"
+        self._cache_entries = cache_entries
+        self._entry_cache: dict[tuple[str, str], tuple[Path, dict[str, Any]]] | None = None
         self.root.mkdir(parents=True, exist_ok=True)
 
     def upsert(self, job: NormalizedJob, rejection: Rejection) -> None:
@@ -195,8 +196,12 @@ class RejectedRegistry:
         directory.mkdir(parents=True, exist_ok=True)
         _write_text_if_changed(directory / "meta.yaml", _dump_yaml(meta))
         _write_text_if_changed(directory / "job.md", _render_rejected_markdown(job, rejection))
+        if self._cache_entries:
+            self._load_cache()[(source, source_job_id)] = (directory, meta)
 
     def _find(self, source: str, source_job_id: str) -> tuple[Path, dict[str, Any]] | None:
+        if self._cache_entries:
+            return self._load_cache().get((source, source_job_id))
         for meta_path in sorted(self.root.glob("*/meta.yaml")):
             try:
                 loaded = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
@@ -207,6 +212,22 @@ class RejectedRegistry:
             if loaded.get("source") == source and str(loaded.get("source_job_id")) == source_job_id:
                 return meta_path.parent, loaded
         return None
+
+    def _load_cache(self) -> dict[tuple[str, str], tuple[Path, dict[str, Any]]]:
+        if self._entry_cache is not None:
+            return self._entry_cache
+        cache: dict[tuple[str, str], tuple[Path, dict[str, Any]]] = {}
+        for meta_path in sorted(self.root.glob("*/meta.yaml")):
+            try:
+                loaded = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+            except (OSError, yaml.YAMLError):
+                continue
+            if not isinstance(loaded, dict):
+                continue
+            key = (str(loaded.get("source") or ""), str(loaded.get("source_job_id") or ""))
+            cache[key] = (meta_path.parent, loaded)
+        self._entry_cache = cache
+        return cache
 
 
 def _is_obvious_role_mismatch(title_text: str) -> bool:

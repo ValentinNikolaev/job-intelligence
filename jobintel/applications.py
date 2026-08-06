@@ -10,7 +10,7 @@ import tempfile
 import uuid
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Protocol
 
@@ -92,6 +92,11 @@ _HEADING_RE = re.compile(r"^(?P<marks>#{1,6})\s+")
 _MONTH_YEAR_RANGE_RE = re.compile(
     rf"(?P<start>\b(?:{_MONTH_PATTERN})\s+\d{{4}})\s*[-–—]\s*"
     rf"(?P<end>Present|Current|(?:{_MONTH_PATTERN})\s+\d{{4}})\b"
+)
+_EXPERIENCE_DATE_RANGE_RE = re.compile(
+    rf"(?P<start>\b(?:(?:{_MONTH_PATTERN})\s+)?\d{{4}})\s*[-–—]\s*"
+    rf"(?P<end>Present|Current|(?:(?:{_MONTH_PATTERN})\s+)?\d{{4}})\b",
+    re.IGNORECASE,
 )
 
 _REQUIRED_HEADINGS = {
@@ -318,6 +323,7 @@ class ApplicationGenerator:
                 vacancy=vacancy,
             ),
             vacancy=vacancy,
+            reference_date=generated_at,
         )
         generated["cv_markdown"] = _apply_simple_life_cv_end_date(
             generated["cv_markdown"],
@@ -438,6 +444,7 @@ def validate_application_package(
     value: Mapping[str, Any],
     *,
     vacancy: Mapping[str, Any] | None = None,
+    reference_date: date | datetime | None = None,
 ) -> dict[str, str]:
     expected = set(APPLICATION_FILES)
     if set(value) != expected:
@@ -471,10 +478,60 @@ def validate_application_package(
         for phrase in _FORBIDDEN_APPLICATION_PHRASES:
             if phrase.casefold() in folded:
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
+    _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
     if vacancy is not None:
         _validate_cv_headline(result["cv_markdown"], vacancy)
         _validate_cover_letter_context(result["cover_letter_markdown"], vacancy)
     return result
+
+
+def _validate_cv_experience_age(
+    markdown: str, *, reference_date: date | datetime | None
+) -> None:
+    if isinstance(reference_date, datetime):
+        today = reference_date.date()
+    elif isinstance(reference_date, date):
+        today = reference_date
+    else:
+        today = datetime.now(timezone.utc).date()
+    cutoff = (today.year - 10, today.month)
+
+    lines = markdown.splitlines()
+    experience_lines: list[str] = []
+    in_experience = False
+    for line in lines:
+        heading = re.match(r"^(#{1,6})\s+(.+?)\s*$", line.strip())
+        if heading:
+            level = len(heading.group(1))
+            title = heading.group(2).strip().casefold()
+            if level == 2:
+                if in_experience:
+                    break
+                in_experience = title == "experience"
+                continue
+        if in_experience:
+            experience_lines.append(line)
+
+    for match in _EXPERIENCE_DATE_RANGE_RE.finditer("\n".join(experience_lines)):
+        end = match.group("end")
+        if end.casefold() in {"present", "current"}:
+            continue
+        end_parts = end.split()
+        if len(end_parts) == 1:
+            end_month = 12
+            end_year = int(end_parts[0])
+        else:
+            end_month = next(
+                index
+                for index, month in enumerate(_MONTH_NAMES, start=1)
+                if month.casefold() == end_parts[0].casefold()
+            )
+            end_year = int(end_parts[1])
+        if (end_year, end_month) < cutoff:
+            raise ApplicationError(
+                "cv_markdown Experience includes employment that ended more than "
+                f"10 years ago: {match.group(0)}"
+            )
 
 
 def _validate_cv_headline(markdown: str, vacancy: Mapping[str, Any]) -> None:

@@ -52,12 +52,17 @@ class Registry:
         *,
         clock: Callable[[], datetime] | None = None,
         id_factory: Callable[[], str] | None = None,
+        cache_entries: bool = False,
     ) -> None:
         self.root = root
         self.jobs_dir = root / "jobs"
         self.index_path = root / "index.md"
         self._clock = clock or (lambda: datetime.now(timezone.utc))
         self._id_factory = id_factory or (lambda: str(uuid.uuid4()))
+        self._cache_entries = cache_entries
+        self._entries_cache: list[dict[str, Any]] | None = None
+        self._source_index: dict[tuple[str, str], list[dict[str, Any]]] | None = None
+        self._fingerprint_index: dict[str, list[dict[str, Any]]] | None = None
         self.jobs_dir.mkdir(parents=True, exist_ok=True)
 
     def upsert(self, job: NormalizedJob) -> UpsertResult:
@@ -65,12 +70,20 @@ class Registry:
         source = job.source.strip().lower()
         fingerprint = vacancy_fingerprint(job.company, job.title, job.location)
         entries = self._scan()
-        exact = self._find_source(entries, source, job.source_job_id)
+        exact = (
+            self._find_source_indexed(source, job.source_job_id)
+            if self._cache_entries
+            else self._find_source(entries, source, job.source_job_id)
+        )
 
         if exact is not None:
             return self._update_existing(exact, job, fingerprint, is_merge=False)
 
-        candidate = self._find_fingerprint_candidate(entries, fingerprint, source)
+        candidate = (
+            self._find_fingerprint_candidate_indexed(fingerprint, source)
+            if self._cache_entries
+            else self._find_fingerprint_candidate(entries, fingerprint, source)
+        )
         if candidate is not None:
             return self._update_existing(candidate, job, fingerprint, is_merge=True)
 
@@ -126,7 +139,13 @@ class Registry:
         """Apply supported one-time metadata migrations without changing vacancy status."""
         self._scan()
 
-    def update_status(self, selector: str, status: str) -> bool:
+    def update_status(
+        self,
+        selector: str,
+        status: str,
+        *,
+        on_updated: Callable[[dict[str, Any], dict[str, Any], Path], None] | None = None,
+    ) -> bool:
         status = status.strip().casefold()
         if status not in VACANCY_STATUSES:
             raise RegistryError(
@@ -144,7 +163,8 @@ class Registry:
             raise RegistryError(f"vacancy selector is ambiguous: {selector}")
 
         entry = matches[0]
-        meta = dict(entry["meta"])
+        original = entry["meta"]
+        meta = dict(original)
         current = str(meta.get("status", ""))
         if current == status:
             return False
@@ -156,9 +176,28 @@ class Registry:
         meta["status"] = status
         meta["status_history"].append({"status": status, "changed_at": now})
         meta["updated_at"] = now
-        return _write_atomic_if_changed(entry["path"] / "meta.yaml", _dump_yaml(meta))
+        meta_path = entry["path"] / "meta.yaml"
+        changed = _write_atomic_if_changed(meta_path, _dump_yaml(meta))
+        if not changed:
+            return False
+        try:
+            if on_updated is not None:
+                on_updated(dict(original), dict(meta), entry["path"])
+        except Exception as exc:
+            try:
+                _write_atomic_if_changed(meta_path, _dump_yaml(original))
+            except Exception as rollback_exc:
+                raise RegistryError(
+                    f"status audit failed and metadata rollback failed for {entry['path']}: "
+                    f"{rollback_exc}"
+                ) from exc
+            raise
+        entry["meta"] = meta
+        return True
 
     def _scan(self) -> list[dict[str, Any]]:
+        if self._cache_entries and self._entries_cache is not None:
+            return self._entries_cache
         entries: list[dict[str, Any]] = []
         if not self.jobs_dir.exists():
             return entries
@@ -189,7 +228,61 @@ class Registry:
             if not isinstance(loaded["sources"], list):
                 raise RegistryError(f"registry sources must be a list: {meta_path}")
             entries.append({"meta": loaded, "path": meta_path.parent})
+        if self._cache_entries:
+            self._entries_cache = entries
+            self._rebuild_lookup_indexes()
         return entries
+
+    def _rebuild_lookup_indexes(self) -> None:
+        self._source_index = defaultdict(list)
+        self._fingerprint_index = defaultdict(list)
+        for entry in self._entries_cache or []:
+            self._index_entry(entry)
+
+    def _index_entry(self, entry: dict[str, Any]) -> None:
+        assert self._source_index is not None
+        assert self._fingerprint_index is not None
+        for ref in entry["meta"]["sources"]:
+            key = (str(ref.get("source")), str(ref.get("source_job_id")))
+            self._source_index[key].append(entry)
+        fingerprint = str(entry["meta"].get("fingerprint") or "")
+        self._fingerprint_index[fingerprint].append(entry)
+
+    def _find_source_indexed(self, source: str, source_job_id: str) -> dict[str, Any] | None:
+        assert self._source_index is not None
+        matches = self._source_index.get((source, source_job_id), [])
+        if len(matches) > 1:
+            raise RegistryError(f"source identity appears in multiple vacancies: {source}:{source_job_id}")
+        return matches[0] if matches else None
+
+    def _find_fingerprint_candidate_indexed(
+        self, fingerprint: str, incoming_source: str
+    ) -> dict[str, Any] | None:
+        assert self._fingerprint_index is not None
+        candidates = [
+            entry
+            for entry in self._fingerprint_index.get(fingerprint, [])
+            if incoming_source
+            not in {str(ref.get("source")) for ref in entry["meta"]["sources"]}
+        ]
+        return candidates[0] if len(candidates) == 1 else None
+
+    def _cache_add_entry(self, entry: dict[str, Any]) -> None:
+        if not self._cache_entries or self._entries_cache is None:
+            return
+        self._entries_cache.append(entry)
+        self._index_entry(entry)
+
+    def _cache_replace_entry(self, entry: dict[str, Any], meta: dict[str, Any]) -> None:
+        if not self._cache_entries:
+            entry["meta"] = meta
+            return
+        assert self._source_index is not None
+        assert self._fingerprint_index is not None
+        for rows in (*self._source_index.values(), *self._fingerprint_index.values()):
+            rows[:] = [candidate for candidate in rows if candidate is not entry]
+        entry["meta"] = meta
+        self._index_entry(entry)
 
     @staticmethod
     def _find_source(entries: list[dict[str, Any]], source: str, source_job_id: str) -> dict[str, Any] | None:
@@ -267,6 +360,7 @@ class Registry:
             if temp_dir.exists():
                 shutil.rmtree(temp_dir)
             raise
+        self._cache_add_entry({"meta": meta, "path": final_dir})
         return UpsertResult("created", vacancy_id, final_dir.name)
 
     def _update_existing(
@@ -378,6 +472,7 @@ class Registry:
         if new_company_markdown is not None:
             _write_atomic_if_changed(company_path, new_company_markdown)
         _write_atomic_if_changed(directory / "meta.yaml", _dump_yaml(meta))
+        self._cache_replace_entry(entry, meta)
         status = "merged" if is_merge else "updated"
         return UpsertResult(status, str(meta["id"]), directory.name)
 

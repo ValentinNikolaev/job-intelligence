@@ -134,6 +134,47 @@ class CliTests(unittest.TestCase):
             self.assertEqual("requires hybrid work", event["reason"])
             self.assertEqual("thread-123", event["interaction"]["id"])
 
+    def test_status_audit_failure_rolls_back_metadata(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            registry_root = Path(temporary) / "registry"
+            registry = Registry(registry_root, id_factory=lambda: "vacancy-1")
+            created = registry.upsert(
+                NormalizedJob(
+                    source="direct",
+                    source_job_id="job-1",
+                    source_url="https://example.test/jobs/1",
+                    title="Backend Engineer",
+                    company="Example",
+                    description="Build services.",
+                )
+            )
+
+            with patch(
+                "jobintel.cli.append_manual_status_event",
+                side_effect=OSError("simulated audit failure"),
+            ), redirect_stdout(StringIO()):
+                self.assertEqual(
+                    1,
+                    main(
+                        [
+                            "status",
+                            created.directory,
+                            "applied",
+                            "--registry",
+                            str(registry_root),
+                        ]
+                    ),
+                )
+
+            meta = yaml.safe_load(
+                (registry_root / "jobs" / created.directory / "meta.yaml").read_text(
+                    encoding="utf-8"
+                )
+            )
+            self.assertEqual("found", meta["status"])
+            self.assertEqual(1, len(meta["status_history"]))
+            self.assertFalse((registry_root / "manual-status-log.yaml").exists())
+
     def test_add_manual_publishes_manual_vacancy_with_priority(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

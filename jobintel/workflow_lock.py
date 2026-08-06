@@ -16,6 +16,8 @@ LOCK_ENV_TOKEN = "JOBINTEL_WORKFLOW_LOCK_TOKEN"
 LOCK_DIR = Path(".codex-work") / "workflow.lock"
 METADATA_FILE = "owner.json"
 DEFAULT_STALE_SECONDS = 6 * 60 * 60
+STALE_CLAIM_FILE = ".stale-claim"
+STALE_CLAIM_SECONDS = 30
 
 
 class WorkflowLockError(RuntimeError):
@@ -86,7 +88,7 @@ def acquire_workflow_lock(
             )
             return WorkflowLockLease(lock_dir, owner, token)
         except FileExistsError:
-            if _is_stale(lock_dir, stale_seconds):
+            if _is_stale(lock_dir, stale_seconds) and _claim_stale_lock(lock_dir, stale_seconds):
                 _remove_lock_dir(lock_dir)
                 continue
             if time.monotonic() >= deadline:
@@ -133,10 +135,42 @@ def _read_metadata(lock_dir: Path) -> dict[str, object]:
 
 def _is_stale(lock_dir: Path, stale_seconds: float) -> bool:
     try:
-        age = time.time() - lock_dir.stat().st_mtime
+        metadata_path = lock_dir / METADATA_FILE
+        age = time.time() - (metadata_path if metadata_path.exists() else lock_dir).stat().st_mtime
     except OSError:
         return False
     return age > stale_seconds
+
+
+def _claim_stale_lock(lock_dir: Path, stale_seconds: float) -> bool:
+    """Claim stale-lock recovery so only one contender may remove the directory."""
+    claim_path = lock_dir / STALE_CLAIM_FILE
+    try:
+        with claim_path.open("x", encoding="utf-8") as handle:
+            handle.write(f"{os.getpid()}:{uuid.uuid4().hex}\n")
+    except FileExistsError:
+        try:
+            claim_age = time.time() - claim_path.stat().st_mtime
+        except OSError:
+            return False
+        if claim_age > STALE_CLAIM_SECONDS:
+            try:
+                claim_path.unlink()
+            except OSError:
+                pass
+        return False
+    except OSError:
+        return False
+
+    # A contender may have observed the old directory and then created its claim
+    # in a newly acquired lock. Revalidate after the exclusive claim is created.
+    if _is_stale(lock_dir, stale_seconds):
+        return True
+    try:
+        claim_path.unlink()
+    except OSError:
+        pass
+    return False
 
 
 def _remove_lock_dir(lock_dir: Path) -> None:

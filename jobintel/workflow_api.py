@@ -9,7 +9,12 @@ import yaml
 
 from .applications import ApplicationGenerator, CodexApplicationDraftClient, HostMarkdownDocxConverter
 from .catalog_data import CatalogVacancy, load_catalog_vacancies
-from .matching import CodexMatchDraftClient, MatchAnalyzer
+from .matching import (
+    MAX_ANALYSIS_BATCH_SIZE,
+    CodexMatchDraftClient,
+    MatchAnalyzer,
+    analysis_should_skip_status,
+)
 from .triage import should_skip_model
 from .workflows import WorkflowPolicy, load_workflow_policy
 
@@ -81,7 +86,7 @@ def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[st
     policy = _policy(project_root)
     return {
         "collection_limit_per_source": collection_limit,
-        "analyze_batch_size": 10,
+        "analyze_batch_size": MAX_ANALYSIS_BATCH_SIZE,
         "analyze_max_estimated_input_tokens": DEFAULT_ANALYZE_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_max_estimated_input_tokens": DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_min_score": policy.prepare_min_score,
@@ -147,6 +152,8 @@ def queue_items(
     workflow = workflow.replace("-", "_")
     if workflow not in {"analyze", "prepare"}:
         raise WorkflowApiError(f"unsupported workflow queue: {workflow}")
+    if limit is not None and (isinstance(limit, bool) or not isinstance(limit, int) or limit < 1):
+        raise WorkflowApiError("queue limit must be a positive integer")
     if workflow == "prepare":
         return []
     vacancies = load_catalog_vacancies(registry_root)
@@ -164,6 +171,8 @@ def queue_items(
     for vacancy in vacancies:
         directory = vacancy.directory
         if workflow == "analyze":
+            if analysis_should_skip_status({"status": vacancy.status}):
+                continue
             if should_skip_model(directory):
                 continue
             assert checker is not None

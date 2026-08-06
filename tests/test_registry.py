@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
+from unittest.mock import patch
 
 import yaml
 
@@ -60,6 +61,38 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual("unchanged", second.status)
         self.assertEqual(before, after)
         self.assertEqual(1, len(self._directories()))
+
+    def test_collection_cache_parses_registry_only_once(self) -> None:
+        ids = iter(("first", "second"))
+        seed = Registry(self.root, clock=lambda: self.now, id_factory=lambda: next(ids))
+        seed.upsert(make_job())
+        seed.upsert(
+            make_job(
+                source_job_id="a-2",
+                source_url="https://jobs.test/a-2",
+                title="Platform Engineer",
+            )
+        )
+        cached = Registry(
+            self.root,
+            clock=lambda: self.now,
+            id_factory=lambda: "third",
+            cache_entries=True,
+        )
+
+        with patch("jobintel.registry.yaml.safe_load", wraps=yaml.safe_load) as safe_load:
+            cached.upsert(make_job(description="Updated description."))
+            parsed_after_first_upsert = safe_load.call_count
+            cached.upsert(
+                make_job(
+                    source_job_id="a-3",
+                    source_url="https://jobs.test/a-3",
+                    title="Data Engineer",
+                )
+            )
+
+        self.assertEqual(2, parsed_after_first_upsert)
+        self.assertEqual(parsed_after_first_upsert, safe_load.call_count)
 
     def test_job_markdown_includes_posting_date_when_available(self) -> None:
         self.registry.upsert(make_job(published_at="2026-07-20T10:00:00Z"))

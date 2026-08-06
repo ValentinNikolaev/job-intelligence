@@ -367,6 +367,36 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertIn("Backend Engineer", result["cv_markdown"])
 
+    def test_cv_experience_rejects_employment_older_than_ten_years(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = (
+            "# Candidate\nBackend Engineer\n\n"
+            "## Experience\n\n### Legacy Co\n2008 - 2015\n\n"
+            "## Education\n\nUniversity, 2004 - 2008\n"
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "more than 10 years ago"):
+            validate_application_package(
+                payload,
+                reference_date=datetime(2026, 8, 6, tzinfo=timezone.utc),
+            )
+
+    def test_cv_age_rule_is_scoped_to_experience_and_allows_recent_roles(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = (
+            "# Candidate\nBackend Engineer\n\n"
+            "## Experience\n\n### Current Co\nJuly 2015 - August 2016\n\n"
+            "### New Co\nSeptember 2016 - Present\n\n"
+            "## Education\n\nUniversity, 2004 - 2008\n"
+        )
+
+        result = validate_application_package(
+            payload,
+            reference_date=datetime(2026, 8, 6, tzinfo=timezone.utc),
+        )
+
+        self.assertIn("University, 2004 - 2008", result["cv_markdown"])
+
     def test_cover_letter_must_not_repeat_vacancy_title(self) -> None:
         payload = application_payload()
         payload["cover_letter_markdown"] = (

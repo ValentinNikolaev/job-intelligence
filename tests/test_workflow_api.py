@@ -16,7 +16,13 @@ from jobintel.matching import MatchAnalyzer
 from jobintel.models import CollectorSummary, NormalizedJob
 from jobintel.api_usage import ApiUsageLog
 from jobintel.registry import Registry
-from jobintel.workflow_api import catalog_vacancies, queue_response, source_usage, workflow_summary
+from jobintel.workflow_api import (
+    WorkflowApiError,
+    catalog_vacancies,
+    queue_response,
+    source_usage,
+    workflow_summary,
+)
 
 
 class FakeMatchClient:
@@ -148,6 +154,20 @@ class WorkflowApiTests(unittest.TestCase):
 
         self.assertEqual(priority.directory, analyze["items"][0]["directory"])
         self.assertEqual(100, analyze["items"][0]["analysis_priority"])
+
+    def test_queue_rejects_non_positive_limit(self) -> None:
+        for limit in (0, -1):
+            with self.subTest(limit=limit), self.assertRaises(WorkflowApiError):
+                queue_response(
+                    "analyze", self.project, self.registry_root, [self.profile], limit=limit
+                )
+
+    def test_analyze_queue_excludes_post_analysis_statuses(self) -> None:
+        Registry(self.registry_root).update_status(self.pending.vacancy_id, "interview")
+
+        analyze = queue_response("analyze", self.project, self.registry_root, [self.profile])
+
+        self.assertEqual([], analyze["items"])
 
     def test_prepare_queue_is_disabled_for_manual_selection(self) -> None:
         fresh_priority_registry = Registry(

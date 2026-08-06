@@ -3,8 +3,10 @@ from __future__ import annotations
 import importlib.util
 import tempfile
 import unittest
+import zipfile
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
+from unittest.mock import patch
 
 import yaml
 
@@ -25,10 +27,11 @@ class ArchiveJobsTests(unittest.TestCase):
         score: int | None = None,
         skipped: bool = False,
         discovered_at: str | None = None,
+        status: str = "found",
     ) -> None:
         directory = root / "registry" / "jobs" / f"job-{number:03d}"
         directory.mkdir(parents=True)
-        meta = {"id": str(number)}
+        meta = {"id": str(number), "status": status}
         if discovered_at is not None:
             meta["discovered_at"] = discovered_at
         (directory / "meta.yaml").write_text(yaml.safe_dump(meta), encoding="utf-8")
@@ -107,6 +110,49 @@ class ArchiveJobsTests(unittest.TestCase):
             self.assertEqual(101, archive_jobs.archive(root, "stale", 65, max_age_days=7))
             self.assertFalse((root / "registry" / "jobs" / "job-000").exists())
             self.assertTrue((root / "registry" / "jobs" / "job-999").exists())
+
+    def test_archive_excludes_active_lifecycle_statuses(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            stale = (datetime.now(timezone.utc) - timedelta(days=30)).isoformat()
+            for number, status in enumerate(
+                ("reviewing", "prepared", "applied", "interview", "technical_interview", "final_interview", "offer")
+            ):
+                self.make_job(root, number, discovered_at=stale, status=status)
+            self.make_job(root, 99, discovered_at=stale, status="found")
+
+            self.assertEqual(1, archive_jobs.archive(root, "stale", 65, max_age_days=7))
+
+            for number in range(7):
+                self.assertTrue((root / "registry" / "jobs" / f"job-{number:03d}").is_dir())
+            self.assertFalse((root / "registry" / "jobs" / "job-099").exists())
+
+    def test_cleanup_failure_preserves_validated_archive(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            self.make_job(root, 1, score=1)
+            self.make_job(root, 2, score=1)
+            real_rmtree = archive_jobs.shutil.rmtree
+            calls = 0
+
+            def fail_second(directory: Path) -> None:
+                nonlocal calls
+                calls += 1
+                if calls == 2:
+                    raise OSError("simulated cleanup failure")
+                real_rmtree(directory)
+
+            with patch.object(archive_jobs.shutil, "rmtree", side_effect=fail_second):
+                with self.assertRaisesRegex(OSError, "simulated cleanup failure"):
+                    archive_jobs.archive(root, "low-score", 65)
+
+            archives = list((root / "archives" / "low-score").glob("*.zip"))
+            self.assertEqual(1, len(archives))
+            with zipfile.ZipFile(archives[0]) as archive_file:
+                self.assertIn("job-001/meta.yaml", archive_file.namelist())
+                self.assertIn("job-002/meta.yaml", archive_file.namelist())
+            self.assertFalse((root / "registry" / "jobs" / "job-001").exists())
+            self.assertTrue((root / "registry" / "jobs" / "job-002").exists())
 
     def test_archives_oldest_rejected_over_keep_limit(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

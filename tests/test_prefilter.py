@@ -55,7 +55,8 @@ class PrefilterTests(unittest.TestCase):
             make_job(
                 description=(
                     "Fluent German is required for local stakeholders. "
-                    "Professional English required across the engineering team."
+                    "Professional English required across the engineering team. "
+                    "Build Go backend services."
                 )
             ),
             now=self.now,
@@ -108,6 +109,18 @@ class PrefilterTests(unittest.TestCase):
         )
 
         self.assertIsNone(rejection)
+
+    def test_english_requirement_does_not_bypass_stack_rejections(self) -> None:
+        for description, expected in (
+            ("Professional English required. Build Java services.", "Go/Golang or PHP"),
+            ("Professional English required. Maintain WordPress plugins in PHP.", "WordPress"),
+            ("Professional English required. Build Spring Boot services with PHP integrations.", "Spring Boot"),
+        ):
+            with self.subTest(description=description):
+                rejection = prefilter_job(make_job(description=description), now=self.now)
+                self.assertIsNotNone(rejection)
+                self.assertEqual("tech_stack", rejection.category)
+                self.assertIn(expected, rejection.reason)
 
     def test_allows_remote_us_when_eu_work_availability_is_explicit(self) -> None:
         for description in (

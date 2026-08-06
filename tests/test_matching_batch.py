@@ -9,6 +9,8 @@ from typing import Any
 import yaml
 
 from jobintel.matching import (
+    MAX_ANALYSIS_BATCH_SIZE,
+    MatchError,
     MatchAnalyzer,
     build_analysis_pack,
     dump_analysis_pack,
@@ -137,6 +139,68 @@ class MatchingBatchTests(unittest.TestCase):
             self.assertEqual(0, summary.analyzed)
             self.assertEqual(1, summary.skipped)
             self.assertFalse((registry_root / "jobs" / created.directory / "match.yaml").exists())
+
+    def test_analysis_pack_caps_default_batch_and_rejects_invalid_limits(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            ids = iter(f"job-{index}" for index in range(MAX_ANALYSIS_BATCH_SIZE + 1))
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            for index in range(MAX_ANALYSIS_BATCH_SIZE + 1):
+                registry.upsert(
+                    NormalizedJob(
+                        "direct",
+                        str(index),
+                        f"https://e/{index}",
+                        f"Backend {index}",
+                        "Example",
+                        "Build APIs.",
+                    )
+                )
+
+            self.assertEqual(
+                MAX_ANALYSIS_BATCH_SIZE,
+                len(build_analysis_pack(registry_root, [profile]).items),
+            )
+            for limit in (0, -1, MAX_ANALYSIS_BATCH_SIZE + 1):
+                with self.subTest(limit=limit), self.assertRaises(MatchError):
+                    build_analysis_pack(registry_root, [profile], limit=limit)
+
+    def test_analysis_pack_skips_all_post_analysis_statuses(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            statuses = (
+                "prepared",
+                "applied",
+                "interview",
+                "technical_interview",
+                "final_interview",
+                "offer",
+                "rejected",
+                "withdrawn",
+                "closed",
+            )
+            ids = iter(statuses)
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            for index, status in enumerate(statuses):
+                created = registry.upsert(
+                    NormalizedJob(
+                        "direct",
+                        str(index),
+                        f"https://e/{index}",
+                        f"Backend {index}",
+                        "Example",
+                        "Build APIs.",
+                    )
+                )
+                registry.update_status(created.vacancy_id, status)
+
+            self.assertEqual((), build_analysis_pack(registry_root, [profile]).items)
 
 
 if __name__ == "__main__":

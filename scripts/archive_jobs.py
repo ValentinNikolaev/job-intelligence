@@ -9,6 +9,11 @@ from pathlib import Path
 
 import yaml
 
+from jobintel.workflow_lock import workflow_lock
+
+
+ARCHIVABLE_JOB_STATUSES = frozenset({"found", "rejected", "withdrawn", "closed"})
+
 
 def read_yaml(path: Path) -> dict:
     loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
@@ -20,6 +25,11 @@ def eligible(directory: Path, category: str, low_score: int, max_age_days: int) 
     if not meta_path.is_file():
         return False
     meta = read_yaml(meta_path)
+    if category == "rejected":
+        return True
+    status = str(meta.get("status") or "").strip().casefold()
+    if status not in ARCHIVABLE_JOB_STATUSES:
+        return False
     if category == "low-score":
         match_path = directory / "match.yaml"
         if not match_path.is_file():
@@ -29,8 +39,6 @@ def eligible(directory: Path, category: str, low_score: int, max_age_days: int) 
     if category == "skipped":
         triage_path = directory / "triage.yaml"
         return triage_path.is_file() and read_yaml(triage_path).get("skip_model") is True
-    if category == "rejected":
-        return True
     discovered = parse_datetime(meta.get("discovered_at"))
     if discovered is None:
         return False
@@ -121,6 +129,7 @@ def archive(
 
     with tempfile.NamedTemporaryFile(prefix=f"{category}-{today}-", suffix=".zip", dir=archive_root, delete=False) as handle:
         temporary = Path(handle.name)
+    archive_published = False
     try:
         with zipfile.ZipFile(temporary, "w", compression=zipfile.ZIP_DEFLATED) as archive_file:
             for directory in candidates:
@@ -138,11 +147,15 @@ def archive(
         if names != expected:
             raise RuntimeError("archive validation failed: ZIP contents differ from source files")
         temporary.replace(destination)
+        archive_published = True
         for directory in candidates:
             shutil.rmtree(directory)
     except Exception:
         temporary.unlink(missing_ok=True)
-        destination.unlink(missing_ok=True)
+        # Once source cleanup starts, the validated archive is the only complete
+        # recovery copy and must survive a partial deletion failure.
+        if not archive_published:
+            destination.unlink(missing_ok=True)
         raise
     print(f"Created {destination} and removed {len(candidates)} vacancy directories.")
     return len(candidates)
@@ -161,19 +174,17 @@ def main() -> int:
         parser.error("--min-items must be at least 1")
     if args.keep_items < 0:
         parser.error("--keep-items must be at least 0")
-    return (
-        0
-        if archive(
-            args.project_root.resolve(),
+    project_root = args.project_root.resolve()
+    with workflow_lock(project_root, f"archive:{args.category}"):
+        archived = archive(
+            project_root,
             args.category,
             args.low_score,
             args.max_age_days,
             args.min_items,
             args.keep_items,
         )
-        >= 0
-        else 1
-    )
+    return 0 if archived >= 0 else 1
 
 
 if __name__ == "__main__":

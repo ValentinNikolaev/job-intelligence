@@ -88,7 +88,7 @@ tasks that need language judgment. The repository keeps the handoff visible.
 
 4. **Analyze the match**
 
-   A Codex task compares one vacancy, or a sealed batch of up to ten vacancies,
+   A Codex task compares one vacancy, or a sealed batch of up to fifteen vacancies,
    against the candidate evidence. Project code validates the produced draft before
    publishing `match.yaml` and `match.md`.
 

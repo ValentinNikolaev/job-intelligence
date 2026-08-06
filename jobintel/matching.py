@@ -93,7 +93,20 @@ _RELEVANT_SOURCE_METADATA = {
     "workplace_type",
 }
 
-_ANALYSIS_SKIP_STATUSES = {"applied"}
+MAX_ANALYSIS_BATCH_SIZE = 15
+_ANALYSIS_SKIP_STATUSES = frozenset(
+    {
+        "prepared",
+        "applied",
+        "interview",
+        "technical_interview",
+        "final_interview",
+        "offer",
+        "rejected",
+        "withdrawn",
+        "closed",
+    }
+)
 
 _CLOUDFLARE_EMAIL_PROTECTION_RE = re.compile(
     r"(/cdn-cgi/l/email-protection#)[0-9A-Fa-f]+"
@@ -186,7 +199,7 @@ class MatchAnalyzer:
     def analyze_directory(self, directory: Path, *, force: bool = False) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
 
-        if _analysis_should_skip_status(meta):
+        if analysis_should_skip_status(meta):
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
 
         match_path = directory / "match.yaml"
@@ -226,7 +239,7 @@ class MatchAnalyzer:
     ) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
         del profile_text, vacancy
-        if _analysis_should_skip_status(meta):
+        if analysis_should_skip_status(meta):
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
         if expected_profile_version and expected_profile_version != profile_version:
             raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")
@@ -318,6 +331,10 @@ def build_analysis_pack(
     triage_skip: Callable[[Path], bool] | None = None,
 ) -> AnalysisPack:
     """Create a sealed, deterministic input pack for one batched Codex run."""
+    if limit is None:
+        limit = MAX_ANALYSIS_BATCH_SIZE
+    if isinstance(limit, bool) or not isinstance(limit, int) or not 1 <= limit <= MAX_ANALYSIS_BATCH_SIZE:
+        raise MatchError(f"analysis pack limit must be between 1 and {MAX_ANALYSIS_BATCH_SIZE}")
     analyzer = MatchAnalyzer(
         registry_root,
         profile_paths,
@@ -329,7 +346,7 @@ def build_analysis_pack(
         if triage_skip and triage_skip(directory):
             continue
         meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
-        if _analysis_should_skip_status(meta):
+        if analysis_should_skip_status(meta):
             continue
         if analyzer.is_current(directory):
             continue
@@ -343,7 +360,7 @@ def build_analysis_pack(
                 "vacancy": vacancy,
             }
         )
-        if limit is not None and len(items) >= limit:
+        if len(items) >= limit:
             break
     return AnalysisPack(1, "analyze", PROMPT_VERSION, profile, profile_version, tuple(items))
 
@@ -365,6 +382,8 @@ def load_analysis_pack(path: Path) -> dict[str, Any]:
         raise MatchError("analysis pack must use schema_version 1 and workflow analyze")
     if not isinstance(loaded.get("profile"), dict) or not isinstance(loaded.get("items"), list):
         raise MatchError("analysis pack requires profile and items")
+    if len(loaded["items"]) > MAX_ANALYSIS_BATCH_SIZE:
+        raise MatchError(f"analysis pack exceeds the maximum of {MAX_ANALYSIS_BATCH_SIZE} items")
     if not isinstance(loaded["profile"].get("text"), str) or not isinstance(loaded["profile"].get("version"), str):
         raise MatchError("analysis pack profile requires text and version")
     if loaded.get("prompt_version") != PROMPT_VERSION:
@@ -381,6 +400,8 @@ def publish_analysis_batch(
     items = pack.get("items")
     if not isinstance(items, list) or not items:
         raise MatchError("analysis pack has no items")
+    if len(items) > MAX_ANALYSIS_BATCH_SIZE:
+        raise MatchError(f"analysis pack exceeds the maximum of {MAX_ANALYSIS_BATCH_SIZE} items")
     if set(results) != {str(item.get("directory", "")) for item in items if isinstance(item, dict)}:
         raise MatchError("batch results must contain exactly one result for every pack directory")
     validated: dict[str, dict[str, Any]] = {}
@@ -536,7 +557,7 @@ def _analysis_priority(value: Any) -> int:
     return value if 0 <= value <= 100 else 0
 
 
-def _analysis_should_skip_status(meta: Mapping[str, Any]) -> bool:
+def analysis_should_skip_status(meta: Mapping[str, Any]) -> bool:
     return str(meta.get("status", "")).strip().casefold() in _ANALYSIS_SKIP_STATUSES
 
 
