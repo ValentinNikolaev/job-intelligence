@@ -1,0 +1,29 @@
+schema_version: 2
+id: 525ede8d-5d57-4e4b-b64c-d37925e574b3
+title: Werkstudent Consulting & KI-Implementierung (m/w/d)
+company: Lucid Labs
+company_url: null
+location: Berlin
+remote: false
+employment_type: Working student
+sources:
+- source: arbeitnow
+  source_job_id: werkstudent-consulting-ki-implementierung-berlin-314542
+  url: https://www.arbeitnow.com/jobs/companies/lucid-labs/werkstudent-consulting-ki-implementierung-berlin-314542
+  metadata:
+    tags:
+    - Consulting
+    job_types:
+    - Working student
+published_at: '2026-08-06T07:30:43Z'
+discovered_at: '2026-08-06T11:01:46Z'
+updated_at: '2026-08-06T11:01:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T11:01:46Z'
+analysis_priority: 0
+fingerprint: sha256:6e9a84a90405f10ab1d0f94d1c3937deaf5dbf8f332eccd9b5192ccd29241eac
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

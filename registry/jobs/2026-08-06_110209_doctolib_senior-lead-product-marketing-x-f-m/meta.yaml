@@ -1,0 +1,27 @@
+schema_version: 2
+id: 1208517e-19ad-475e-9d66-9e883a39f794
+title: Senior Lead Product Marketing (x/f/m)
+company: Doctolib
+company_url: null
+location: Berlin, Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: senior-lead-product-marketing-berlin-berlin-236375
+  url: https://www.arbeitnow.com/jobs/companies/doctolib/senior-lead-product-marketing-berlin-berlin-236375
+  metadata:
+    tags:
+    - Strategy
+published_at: '2026-08-06T02:55:51Z'
+discovered_at: '2026-08-06T11:02:09Z'
+updated_at: '2026-08-06T11:02:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T11:02:09Z'
+analysis_priority: 0
+fingerprint: sha256:b46bb26c88a0437c40eb7f51618a9eacb4b0209f8c0aa30301220a91a8a1e8eb
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

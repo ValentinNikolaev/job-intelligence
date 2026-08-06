@@ -67,7 +67,7 @@ We move fast, and evolution never stops. It’s a fun ride, but it can be challe
 
  
 
-Salary: €38,000 - €46,000 gross per annum
+Salary: €45,000 - €53,000 gross per annum
 This range is set using objective, gender-neutral criteria for the role's core requirements. However, we do not believe in putting a ceiling on talent. The final compensation package is tailored according to your unique experience and expertise. If your skills go beyond the standard profile, apply anyway so we can discuss a package that reflects your true value.
 
 

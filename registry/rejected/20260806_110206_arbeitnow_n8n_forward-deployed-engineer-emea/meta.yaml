@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: forward-deployed-engineer-emea-germany-139597
+source_url: https://www.arbeitnow.com/jobs/companies/n8n/forward-deployed-engineer-emea-germany-139597
+title: Forward Deployed Engineer - EMEA
+company: n8n
+location: Germany
+published_at: '2026-08-06T03:00:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T11:02:06Z'
+rejected_at: '2026-08-06T11:02:06Z'

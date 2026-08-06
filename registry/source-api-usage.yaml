@@ -1,8 +1,8 @@
 schema_version: 1
 sources:
   adzuna:
-    total_requests: 717
-    last_run_at: '2026-08-06T07:02:23Z'
+    total_requests: 722
+    last_run_at: '2026-08-06T11:01:31Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -1534,10 +1534,21 @@ sources:
       rejected: 1
       errors: 0
       limit_reached: false
+    - run_started_at: '2026-08-06T11:01:19Z'
+      recorded_at: '2026-08-06T11:01:31Z'
+      requests: 5
+      fetched: 1
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 1
+      errors: 0
+      limit_reached: false
   arbeitnow:
-    total_requests: 169
-    last_run_at: '2026-08-06T07:02:24Z'
-    last_status: failed
+    total_requests: 170
+    last_run_at: '2026-08-06T11:02:10Z'
+    last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
       recorded_at: '2026-07-23T16:07:55Z'
@@ -3068,9 +3079,20 @@ sources:
       rejected: 0
       errors: 1
       limit_reached: false
+    - run_started_at: '2026-08-06T11:01:19Z'
+      recorded_at: '2026-08-06T11:02:10Z'
+      requests: 1
+      fetched: 100
+      created: 7
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 93
+      errors: 0
+      limit_reached: true
   ashby:
-    total_requests: 1848
-    last_run_at: '2026-08-06T07:02:27Z'
+    total_requests: 1862
+    last_run_at: '2026-08-06T11:02:14Z'
     last_status: completed
     runs:
     - run_started_at: '2026-07-23T16:07:08Z'
@@ -4599,6 +4621,17 @@ sources:
       updated: 0
       duplicates_merged: 0
       unchanged: 0
+      rejected: 29
+      errors: 0
+      limit_reached: false
+    - run_started_at: '2026-08-06T11:01:19Z'
+      recorded_at: '2026-08-06T11:02:14Z'
+      requests: 14
+      fetched: 30
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 1
       rejected: 29
       errors: 0
       limit_reached: false
@@ -12652,8 +12685,8 @@ sources:
       errors: 0
       limit_reached: false
   cleanjobdata:
-    total_requests: 21
-    last_run_at: '2026-08-06T07:02:28Z'
+    total_requests: 24
+    last_run_at: '2026-08-06T11:02:15Z'
     last_status: failed
     runs:
     - run_started_at: '2026-08-04T17:02:29Z'
@@ -12724,6 +12757,17 @@ sources:
       limit_reached: false
     - run_started_at: '2026-08-06T07:01:36Z'
       recorded_at: '2026-08-06T07:02:28Z'
+      requests: 3
+      fetched: 0
+      created: 0
+      updated: 0
+      duplicates_merged: 0
+      unchanged: 0
+      rejected: 0
+      errors: 1
+      limit_reached: false
+    - run_started_at: '2026-08-06T11:01:19Z'
+      recorded_at: '2026-08-06T11:02:15Z'
       requests: 3
       fetched: 0
       created: 0
