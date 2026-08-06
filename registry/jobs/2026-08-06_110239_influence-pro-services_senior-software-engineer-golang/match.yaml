@@ -1,0 +1,19 @@
+score: 90
+recommendation: strong_match
+summary: Excellent Go/backend fit with production automation, APIs, reliability, AWS/Kubernetes,
+  and technical ownership.
+strengths:
+- Go backend; event-driven systems; AWS/Kubernetes; APIs; reliability and observability;
+  technical leadership.
+gaps:
+- Role-specific depth in marketing systems and any stated language/framework details
+  are not evidenced.
+concerns:
+- No material hard mismatch identified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-06T11:23:58Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:17459f4ee7bf5ec897b73eaae77176396d9446839c2d1b4df6cebac4adfec55a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
