@@ -1,0 +1,23 @@
+score: 54
+recommendation: possible_match
+summary: Strong PHP, SQL, Git, CI/CD, and backend experience, but the role centers
+  on WordPress, Elementor, frontend implementation, and design tooling not evidenced
+  in the profile.
+strengths:
+- PHP backend experience
+- SQL/MySQL and Git
+- CI/CD and production reliability
+gaps:
+- WordPress and Elementor experience
+- advanced JavaScript and frontend design implementation
+- Figma
+concerns:
+- The required WordPress portfolio and four years of WordPress experience are not
+  documented
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-06T03:59:38Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1e28a8e208422f9bdb2648ecc08b0ff1a4d74af3e7843e8034dd0c62c4367e21
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
