@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6442302112828863200'
+source_url: https://jooble.org/away/6442302112828863200?p=1&pos=7&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=576&brelb=15&scr=680.14197&bscr=680.14197&aq=923206786070364264&elckey=2831202254005067288
+title: Backend Engineer
+company: Fingerprint
+location: Remote
+published_at: '2026-07-13T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-13T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-06T06:55:39Z'
+rejected_at: '2026-08-06T06:55:39Z'

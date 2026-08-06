@@ -1,0 +1,91 @@
+schema_version: 2
+id: 22560f1d-7836-47ed-a0e1-5e4e7ccc175e
+title: Backend Engineer - Wallets (100% Remote)
+company: Tether Operations Limited
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/tether-operations-limited/jobs/backend-engineer-wallets-100-remote
+  url: https://himalayas.app/companies/tether-operations-limited/jobs/backend-engineer-wallets-100-remote
+  metadata:
+    location_restrictions: []
+    excerpt: Join Tether and Shape the Future of Digital Finance At Tether, we’re
+      not just building products, we’re pioneering a global financial revolution.
+    company_slug: tether-operations-limited
+    company_logo: https://cdn-images.himalayas.app/zel05qtfpctrwz9bbjs7cx799p6j
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Backend-Development
+    - Software-Engineering
+    - Blockchain-Engineering
+    - Fintech
+    - Cryptocurrency
+    - Backend-Engineer
+    - Wallet-Engineering
+    - Remote-Senior-Backend-Engineer
+    - Remote-Backend-Developer
+    - Payments-Backend-Engineer
+    - Cryptocurrency-Wallet-Engineering-Lead
+    - Senior-Backend-Engineer-(Fintech)
+    expiry_at: '2026-10-05T05:59:35Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        q: backend engineer
+        worldwide: 'true'
+        sort: recent
+        seniority: Senior
+published_at: '2026-08-06T05:59:36Z'
+discovered_at: '2026-08-06T06:54:27Z'
+updated_at: '2026-08-06T06:54:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T06:54:27Z'
+analysis_priority: 0
+fingerprint: sha256:878ac4f06730b31937ba3906751cd0b5c538f549062e9bdc0b9f243eb12dcfde
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

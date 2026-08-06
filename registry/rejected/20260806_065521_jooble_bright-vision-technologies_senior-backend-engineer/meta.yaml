@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2110965027281137499'
+source_url: https://jooble.org/desc/2110965027281137499?ckey=remote+senior+backend+engineer&rgn=55180&pos=2&groupId=2134052230&elckey=8438712788212739368&p=1&aq=-4562991125873405029&cid=15922&jobAge=48&brelb=100&bscr=3437.274&scr=3437.274
+title: Senior Backend Engineer
+company: Bright Vision Technologies
+location: United States
+published_at: '2026-08-04T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T06:55:21Z'
+rejected_at: '2026-08-06T06:55:21Z'

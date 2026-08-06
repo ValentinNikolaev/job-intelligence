@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 541
+Total vacancies: 542
 
-- Found: 519
+- Found: 520
 - Applied: 10
 - Interview: 1
 - Rejected: 11
@@ -18,8 +18,9 @@ Total vacancies: 541
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-06 | [DualEntry](../registry/jobs/2026-08-06_065428_dualentry_senior-bank-integrations-engineer/) | [Senior Bank & Integrations Engineer](../registry/jobs/2026-08-06_065428_dualentry_senior-bank-integrations-engineer/job.md) | Worldwide | Himalayas | Found | 2026-08-06 | [Himalayas](https://himalayas.app/companies/dualentry/jobs/senior-bank-integrations-engineer-6012327599) | — | — | — | — | — |
+| 2026-08-06 | [Tether Operations Limited](../registry/jobs/2026-08-06_065427_tether-operations-limited_backend-engineer-wallets-100-remote/) | [Backend Engineer - Wallets (100% Remote)](../registry/jobs/2026-08-06_065427_tether-operations-limited_backend-engineer-wallets-100-remote/job.md) | Worldwide | Himalayas | Found | 2026-08-06 | [Himalayas](https://himalayas.app/companies/tether-operations-limited/jobs/backend-engineer-wallets-100-remote) | — | — | — | — | — |
 | 2026-08-06 | [Canonical Ltd.](../registry/jobs/2026-08-06_030425_canonical-ltd_remote-c-golang-software-engineer-working-on-dql/) | [Remote C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/2026-08-06_030425_canonical-ltd_remote-c-golang-software-engineer-working-on-dql/job.md) | Remote | Jooble | Found | 2026-08-06 | [Jooble](https://jooble.org/desc/-5749226080252492815?ckey=remote+golang+backend+engineer&rgn=55180&pos=32&groupId=1106121903&elckey=7805325506073069729&p=1&aq=1301508157433522419&cid=15922&jobAge=69&brelb=100&bscr=216.1753&scr=216.1753) | — | — | — | — | — |
-| 2026-08-06 | [INFUSE](../registry/jobs/2026-08-06_030237_infuse_senior-wordpress-developer/) | [Senior WordPress Developer](../registry/jobs/2026-08-06_030237_infuse_senior-wordpress-developer/job.md) | віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/infuse/vacancies/368445/) | [Open](../registry/jobs/2026-08-06_030237_infuse_senior-wordpress-developer/company.md) | — | — | — | — |
 | 2026-08-06 | [rebuy](../registry/jobs/2026-08-06_030150_rebuy_working-student-category-management-m-f-x/) | [Working Student - Category Management (m/f/x)](../registry/jobs/2026-08-06_030150_rebuy_working-student-category-management-m-f-x/job.md) | Berlin, Berlin, Germany | Arbeitnow | Found | 2026-08-06 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/rebuy/working-student-category-management-berlin-946) | — | — | — | — | — |
 | 2026-08-06 | [Vinteden](../registry/jobs/2026-08-06_030147_vinteden_senior-decision-scientist-marketing/) | [Senior Decision Scientist, Marketing](../registry/jobs/2026-08-06_030147_vinteden_senior-decision-scientist-marketing/job.md) | Berlin | Arbeitnow | Found | 2026-08-06 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/vinteden/senior-decision-scientist-marketing-berlin-13067) | — | — | — | — | — |
 | 2026-08-05 | [micro1](../registry/jobs/2026-08-05_230409_micro1_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-05_230409_micro1_senior-backend-engineer/job.md) | Worldwide | Himalayas | Found | 2026-08-05 | [Himalayas](https://himalayas.app/companies/micro1/jobs/senior-backend-engineer) | — | — | — | — | — |
@@ -37,4 +38,3 @@ Total vacancies: 541
 | 2026-08-05 | [1Komma5Grad](../registry/jobs/2026-08-05_183238_1komma5grad_working-student-product-management-energy-produc/) | [Working Student Product Management Energy Products & Tariffs (m/f/d)](../registry/jobs/2026-08-05_183238_1komma5grad_working-student-product-management-energy-produc/job.md) | Berlin | Arbeitnow | Found | 2026-08-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/1komma5grad/working-student-product-management-energy-products-tariffs-berlin-42471) | — | — | — | — | — |
 | 2026-08-05 | [Auxmoney Gmbh](../registry/jobs/2026-08-05_183237_auxmoney-gmbh_senior-ai-engineer-m-w-d/) | [Senior AI Engineer (m/w/d)](../registry/jobs/2026-08-05_183237_auxmoney-gmbh_senior-ai-engineer-m-w-d/job.md) | Remote / Düsseldorf | Arbeitnow | Found | 2026-08-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/auxmoney-gmbh/remote-senior-ai-engineer-89873) | — | — | — | — | — |
 | 2026-08-05 | [neoshare](../registry/jobs/2026-08-05_183232_neoshare_senior-software-engineer-java-m-w-d/) | [Senior Software Engineer - Java (m/w/d)](../registry/jobs/2026-08-05_183232_neoshare_senior-software-engineer-java-m-w-d/job.md) | München | Arbeitnow | Found | 2026-08-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/neoshare/senior-software-engineer-java-munchen-328281) | — | — | — | — | — |
-| 2026-08-05 | [neoshare](../registry/jobs/2026-08-05_183231_neoshare_senior-software-engineer-java-m-w-d/) | [Senior Software Engineer - Java (m/w/d)](../registry/jobs/2026-08-05_183231_neoshare_senior-software-engineer-java-m-w-d/job.md) | Frankfurt am Main | Arbeitnow | Found | 2026-08-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/neoshare/senior-software-engineer-java-frankfurt-am-main-490025) | — | — | — | — | — |

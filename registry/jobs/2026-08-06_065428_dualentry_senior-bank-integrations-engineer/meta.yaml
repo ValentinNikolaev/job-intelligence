@@ -1,0 +1,96 @@
+schema_version: 2
+id: 71826414-84cc-4088-a272-7ee2c55b7d36
+title: Senior Bank & Integrations Engineer
+company: DualEntry
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Contractor
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/dualentry/jobs/senior-bank-integrations-engineer-6012327599
+  url: https://himalayas.app/companies/dualentry/jobs/senior-bank-integrations-engineer-6012327599
+  metadata:
+    location_restrictions: []
+    excerpt: About DualEntryFounded in 2024, DualEntry is one of the world’s fastest-growing
+      AI startups.
+    company_slug: dualentry
+    company_logo: https://cdn-images.himalayas.app/6ng2bsufmv4l45p1gskwzblj9hhz
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Backend-Engineering
+    - Payments-Engineering
+    - Fintech
+    - Integration-Engineering
+    - DevOps
+    - Bank-Integrations-Engineering
+    - Senior-Integrations-Engineer
+    - Senior-Integration-Engineer
+    - Senior-Integration-Engineering
+    - Senior-Integration-Software-Engineer
+    - Senior-Integration-Engineering-Manager
+    - Bank-Integration-Engineering
+    salary:
+      period: annual
+      min: 120000
+      max: 175000
+      currency: USD
+    expiry_at: '2026-10-05T03:40:55Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        q: backend engineer
+        worldwide: 'true'
+        sort: recent
+        seniority: Senior
+published_at: '2026-08-06T03:40:56Z'
+discovered_at: '2026-08-06T06:54:28Z'
+updated_at: '2026-08-06T06:54:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T06:54:28Z'
+analysis_priority: 0
+fingerprint: sha256:5c79e4e5b0eb1466574be86bbb6310cfe2fbdf50a3a5628eaec529cf324573f2
+data_source: himalayas
+content_source: himalayas
+company_content_source: null
