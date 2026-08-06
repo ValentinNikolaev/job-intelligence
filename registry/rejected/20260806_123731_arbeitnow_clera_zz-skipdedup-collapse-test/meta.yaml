@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: zz-skipdedup-collapse-test-berlin-434359
+source_url: https://www.arbeitnow.com/jobs/companies/clera/zz-skipdedup-collapse-test-berlin-434359
+title: Zz SkipDedup Collapse Test
+company: Clera
+location: Berlin
+published_at: '2026-08-06T05:40:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T12:37:31Z'
+rejected_at: '2026-08-06T12:37:31Z'

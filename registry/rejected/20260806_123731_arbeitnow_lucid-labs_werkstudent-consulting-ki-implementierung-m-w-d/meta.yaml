@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-consulting-ki-implementierung-berlin-314542
+source_url: https://www.arbeitnow.com/jobs/companies/lucid-labs/werkstudent-consulting-ki-implementierung-berlin-314542
+title: Werkstudent Consulting & KI-Implementierung (m/w/d)
+company: Lucid Labs
+location: Berlin
+published_at: '2026-08-06T07:30:43Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T12:37:31Z'
+rejected_at: '2026-08-06T12:37:31Z'

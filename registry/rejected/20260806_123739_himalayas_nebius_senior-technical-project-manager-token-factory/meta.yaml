@@ -1,0 +1,15 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/nebius/jobs/senior-technical-project-manager-token-factory
+source_url: https://himalayas.app/companies/nebius/jobs/senior-technical-project-manager-token-factory
+title: Senior Technical Project Manager - Token Factory
+company: Nebius
+location: Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland,
+  France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Lithuania, Luxembourg,
+  Netherlands, Norway, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden,
+  Switzerland, United Kingdom
+published_at: '2026-07-30T18:23:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-06T12:37:39Z'
+rejected_at: '2026-08-06T12:37:39Z'
