@@ -17,7 +17,6 @@ sources:
       url: https://jobs.dou.ua/vacancies/?remote&category=PHP
       category: PHP
     listing_date_label: 3 серпня
-    salary_label: $3400–3500
     listing_summary: 'Шукаємо Senior Full-Stack PHP Developer (Laravel + Vue.js) для
       нашого клієнта.
 
@@ -27,7 +26,7 @@ sources:
       й активно розвиває власні онлайн-продукти.'
 published_at: '2026-08-03'
 discovered_at: '2026-08-03T17:35:31Z'
-updated_at: '2026-08-05T18:33:14Z'
+updated_at: '2026-08-06T11:02:31Z'
 status: found
 status_history:
 - status: found

@@ -1,0 +1,35 @@
+schema_version: 2
+id: a5a9f080-fca9-4f91-bc0b-a3b8e55376a3
+title: Senior Software Engineer Golang
+company: Influence Pro Services
+company_url: https://jobs.dou.ua/companies/influence-pro-services/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '360067'
+  url: https://jobs.dou.ua/companies/influence-pro-services/vacancies/360067/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 6 серпня
+    listing_summary: InfluenceProServices builds services, tools, and infrastructure
+      that drive marketing business growth and help teams scale efficiently. Every
+      day, we tackle complex technical and operational challenges, enabling our customers
+      to push boundaries and achieve greater success.
+published_at: '2026-08-06'
+discovered_at: '2026-08-06T11:02:39Z'
+updated_at: '2026-08-06T11:02:39Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T11:02:39Z'
+analysis_priority: 100
+fingerprint: sha256:61a8b2e8ded1e44afa017e6248d89a212abd59a1379a465a8cb43695d5d48694
+data_source: dou
+content_source: dou
+company_content_source: dou

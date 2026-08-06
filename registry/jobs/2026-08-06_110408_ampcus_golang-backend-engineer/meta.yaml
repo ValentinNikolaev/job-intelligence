@@ -1,0 +1,24 @@
+schema_version: 2
+id: ec71350f-0ffa-4ae7-b689-596183239235
+title: Golang Backend Engineer
+company: Ampcus
+company_url: null
+location: McLean, VA
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-8659807634482100021'
+  url: https://jooble.org/desc/-8659807634482100021?ckey=remote+golang+backend+engineer&rgn=55180&pos=21&groupId=1106121903&elckey=9103150094845323432&p=1&aq=3989119210966005374&cid=15922&jobAge=53&brelb=100&bscr=307.5447&scr=307.5447
+published_at: '2026-08-04T00:00:00.0000000'
+discovered_at: '2026-08-06T11:04:08Z'
+updated_at: '2026-08-06T11:04:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-06T11:04:08Z'
+analysis_priority: 0
+fingerprint: sha256:a1517f83d4fa2c0bf3aa11e26cf308ffc1fccb7ed3aa8f8dc513a6d363cc55e0
+data_source: jooble
+content_source: jooble
+company_content_source: null
