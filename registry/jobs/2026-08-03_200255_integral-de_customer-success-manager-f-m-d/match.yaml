@@ -1,0 +1,17 @@
+score: 43
+recommendation: weak_match
+summary: The role is primarily customer success, lifecycle marketing, or deployment-focused
+  and does not match the candidate’s core engineering profile.
+strengths:
+- Cross-functional communication and customer-facing technical collaboration
+gaps:
+- Required CRM, lifecycle marketing, enterprise deployment, or German-language experience
+  is not evidenced
+concerns: []
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:39:51Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b59dce6cbabbbba237ffd3239b96c56f7ac6e900bad48cf595b53a055f336809
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
