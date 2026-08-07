@@ -1,0 +1,21 @@
+score: 31
+recommendation: weak_match
+summary: A senior web analytics role is materially different from the candidate's
+  demonstrated backend software engineering path and is on-site in Leipzig.
+strengths:
+- Data-oriented systems experience
+- analytics infrastructure
+- performance analysis
+gaps:
+- No demonstrated ownership of web analytics
+- marketing measurement
+- or analyst tooling
+concerns:
+- On-site location and role-family mismatch
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:30:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:82df43721d6ccb18c68b6b7d4260d673f84a27e266721ce95d4a7d3435dfe056
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

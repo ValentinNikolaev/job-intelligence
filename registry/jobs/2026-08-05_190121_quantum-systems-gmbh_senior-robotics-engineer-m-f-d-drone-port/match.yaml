@@ -1,0 +1,25 @@
+score: 35
+recommendation: weak_match
+summary: The candidate has strong software and reliability foundations, but this on-site
+  robotics role requires demonstrated robotics, embedded, perception, control, and
+  sensor-integration experience.
+strengths:
+- Backend software
+- reliability
+- event-driven architecture
+- technical leadership
+gaps:
+- Robotics
+- embedded software
+- perception
+- controls
+- and sensor integration are not evidenced
+concerns:
+- On-site Gilching and highly specialized robotics requirements
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:30:10Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:06649603cad1b4c074a78b546762e8346fd66c7ab6fbb40bb5ddc5cd57992646
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

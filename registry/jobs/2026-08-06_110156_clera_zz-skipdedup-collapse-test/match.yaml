@@ -1,0 +1,20 @@
+score: 43
+recommendation: weak_match
+summary: The posting is too generic to establish meaningful role alignment, and it
+  is an on-site Berlin role despite the candidate being based in Italy.
+strengths:
+- Extensive software engineering experience
+- collaboration
+- process improvement
+gaps:
+- No concrete technical responsibilities or required stack are provided
+concerns:
+- On-site Berlin location
+- unusually sparse/test-like vacancy description
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:30:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:3a69aa719b5bae8485f23329068836c65a2ac3457f929d6d3b9bb63ba5e679c6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

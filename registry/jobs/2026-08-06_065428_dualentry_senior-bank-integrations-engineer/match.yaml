@@ -1,0 +1,20 @@
+score: 86
+recommendation: strong_match
+summary: Remote fintech integrations role aligns with the candidate's backend systems,
+  payment and banking integrations, event-driven architecture, and reliability experience.
+strengths:
+- Bank and payment integrations
+- Go and PHP backend work
+- event-driven systems
+- production reliability
+gaps:
+- Specific ERP and accounting-domain experience is not evidenced
+concerns:
+- Worldwide employment and timezone arrangements are not detailed
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:30:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:8f60c00bbf242f9101e825d598ad0624ba381a0cb48614311841fbe5de635fb9
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

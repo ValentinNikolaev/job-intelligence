@@ -1476,3 +1476,13 @@ runs:
   total_tokens: 0
   credits: 0.0
   note: Exact Codex usage unavailable; explicit estimate for batched vacancy analysis.
+- run_id: 02b8283d0c73408d88dc3b64726d5a2d
+  recorded_at: '2026-08-07T16:31:14Z'
+  workflow: analyze
+  model: codex:gpt-5.6-luna:low
+  status: completed
+  measurement: estimated
+  input_tokens: 0
+  output_tokens: 0
+  total_tokens: 0
+  credits: 0.0

@@ -1,0 +1,22 @@
+score: 88
+recommendation: strong_match
+summary: Senior backend engineering role with strong alignment to the candidate's
+  Go, PHP, AWS, scalable services, and automation experience; remote CET-compatible
+  work is a major fit.
+strengths:
+- Go and PHP backend development
+- scalable distributed services
+- AWS and production reliability
+- cross-functional technical ownership
+gaps:
+- Frontend contribution is not evidenced as a recent focus
+concerns:
+- Exact technology mix and seniority expectations beyond the summary are not fully
+  specified
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:30:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:bb76b1cfeae9e8b722eedcd78ab302c270f31ee4816c953410d208839c9d6282
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
