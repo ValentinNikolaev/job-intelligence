@@ -1,0 +1,18 @@
+score: 34
+recommendation: weak_match
+summary: Backend event analytics experience is relevant, but the role emphasizes senior
+  marketing analytics and Berlin on-site work beyond the profile's demonstrated focus.
+strengths:
+- Event-driven analytics infrastructure
+- Backend systems, APIs and reliability
+gaps:
+- Marketing data modeling, warehouse/BI stack and Berlin presence are not established
+concerns:
+- Remote availability is unclear and the location is a material concern
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:51:46Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4d63bb7bca3318a772e5df73ec69d35ed41fdb0c392198643b6c297e76f9a1e0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

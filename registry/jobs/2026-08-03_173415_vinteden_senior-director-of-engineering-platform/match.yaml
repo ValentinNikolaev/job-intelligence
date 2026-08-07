@@ -1,0 +1,20 @@
+score: 43
+recommendation: weak_match
+summary: The candidate has technical-lead experience, but a senior director platform
+  role and Berlin on-site setting exceed the leadership scope and location evidence
+  in the profile.
+strengths:
+- Technical leadership and roadmap ownership
+- Platform reliability, infrastructure and team mentoring
+gaps:
+- Director-level organizational leadership and platform strategy at this scale are
+  not evidenced
+concerns:
+- On-site Berlin requirement and seniority are material uncertainties
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:51:46Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:339b20b4bcde7c1a1dfd651a398e62e98e882d8ba601665a7c3eb5aa787eb517
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
