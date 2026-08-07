@@ -1,0 +1,24 @@
+score: 87
+recommendation: strong_match
+summary: Excellent PHP, AWS, SQL, asynchronous event-driven architecture, queues,
+  APIs, performance, and reliability alignment; TypeScript/Node and Vue/Nuxt are the
+  main gaps.
+strengths:
+- PHP/Laravel/Symfony
+- AWS
+- SQL optimization
+- queues and retries
+- event-driven systems
+- APIs
+- observability
+gaps:
+- TypeScript/Node and Vue/Nuxt frontend depth not demonstrated
+concerns:
+- Hamburg/Berlin hybrid attendance and some cross-stack work
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:21:00Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:098ef55c074b7f820fea2b884dba69bd25cc3ce781281cd520592eb01c501387
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

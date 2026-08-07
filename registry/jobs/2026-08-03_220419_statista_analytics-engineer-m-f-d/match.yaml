@@ -1,0 +1,26 @@
+score: 45
+recommendation: possible_match
+summary: Backend, SQL/database optimization, event analytics infrastructure, AWS,
+  and reliability transfer well, but dbt, warehouse, dimensional modeling, and modern
+  analytics stack experience are not evidenced.
+strengths:
+- Event analytics infrastructure
+- SQL/database optimization
+- AWS
+- CI/CD
+- data reliability
+gaps:
+- dbt
+- Snowflake/BigQuery/Redshift
+- dimensional modeling
+- semantic layers
+- analytics engineering
+concerns:
+- Hamburg/Berlin hybrid role and analytics-specific tooling requirements
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:21:00Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1e3c7f08ebdab700de08f7ca3496d727975fd5582698e67918c23b01783a8f67
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

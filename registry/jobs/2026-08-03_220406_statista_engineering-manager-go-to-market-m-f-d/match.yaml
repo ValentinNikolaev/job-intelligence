@@ -1,0 +1,26 @@
+score: 82
+recommendation: strong_match
+summary: Strong engineering leadership, architecture modernization, PHP legacy experience,
+  AWS, GitHub Actions, AI automation, and stakeholder fit; React/TypeScript and Datadog
+  are gaps.
+strengths:
+- 10+ years engineering
+- team leadership
+- PHP legacy systems
+- AWS/Kubernetes
+- CI/CD
+- architecture
+- AI automation
+gaps:
+- React/TypeScript
+- Datadog
+- Unleash not evidenced
+concerns:
+- Hamburg/Berlin hybrid attendance and hands-on frontend expectations
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:21:00Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9550b2bce4277229346da1a489fed8daa4571913e181039ef11bcfa7038934b7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
