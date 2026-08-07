@@ -35,6 +35,22 @@ def payload(score: int) -> dict[str, Any]:
 
 
 class MatchingBatchTests(unittest.TestCase):
+    def test_pack_excludes_current_analysis_for_selected_model(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer with Python experience.", encoding="utf-8")
+            registry = Registry(registry_root, id_factory=iter(("one", "two")).__next__)
+            first = registry.upsert(NormalizedJob("direct", "1", "https://e/1", "Backend One", "Example", "Build APIs."))
+            second = registry.upsert(NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs."))
+            pack = build_analysis_pack(registry_root, [profile], limit=1, model="codex:test")
+            analyzer = MatchAnalyzer(registry_root, [profile], type("Client", (), {"model": "codex:test"})())
+            publish_analysis_batch({"items": list(pack.items)}, {pack.items[0]["directory"]: payload(80)}, analyzer)
+            next_pack = build_analysis_pack(registry_root, [profile], limit=1, model="codex:test")
+            self.assertNotEqual(pack.items[0]["directory"], next_pack.items[0]["directory"])
+            self.assertIn(next_pack.items[0]["directory"], {first.directory, second.directory})
+
     def test_pack_round_trip_and_strict_publish(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

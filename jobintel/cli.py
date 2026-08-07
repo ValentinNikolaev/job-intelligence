@@ -1086,6 +1086,7 @@ def _run_pending_locked(
                 profile_paths,
                 limit=args.limit,
                 triage_skip=should_skip_model,
+                model=model_label,
             )
             dump_analysis_pack(pack, args.pack.resolve())
             print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")

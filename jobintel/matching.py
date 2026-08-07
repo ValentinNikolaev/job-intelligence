@@ -329,6 +329,7 @@ def build_analysis_pack(
     *,
     limit: int | None = None,
     triage_skip: Callable[[Path], bool] | None = None,
+    model: str = "pack-builder",
 ) -> AnalysisPack:
     """Create a sealed, deterministic input pack for one batched Codex run."""
     if limit is None:
@@ -338,7 +339,7 @@ def build_analysis_pack(
     analyzer = MatchAnalyzer(
         registry_root,
         profile_paths,
-        CodexMatchDraftClient(Path("unused-match.yaml"), model="pack-builder"),
+        CodexMatchDraftClient(Path("unused-match.yaml"), model=model),
     )
     profile, profile_version = analyzer._load_profile()
     items: list[dict[str, Any]] = []
