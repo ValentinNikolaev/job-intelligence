@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2260421957619052698'
+source_url: https://jooble.org/away/2260421957619052698?p=1&pos=37&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=19&brelb=15&scr=2398.1729&bscr=2398.1729&aq=-2948371725937757496&elckey=261821479758363806
+title: Senior Backend Engineer, AI & Bioinformatics
+company: Sequencing
+location: Remote
+published_at: '2026-08-06T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T01:11:26Z'
+rejected_at: '2026-08-07T01:11:26Z'

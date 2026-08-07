@@ -1,8 +1,0 @@
-schema_version: 1
-triage_version: deterministic-triage-v1
-vacancy_id: 38a86241-8faf-4de0-8a92-7847765ec953
-skip_model: false
-reason: sales
-confidence: medium
-matched_title_rules: []
-triaged_at: '2026-07-30T06:58:05Z'

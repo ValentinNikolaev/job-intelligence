@@ -1,0 +1,29 @@
+schema_version: 2
+id: 1774b918-7e9b-4194-96a6-49306dc9e898
+title: Senior Cloud Engineer (m/f/d)
+company: ITA Consulting GmbH
+company_url: null
+location: Hamburg
+remote: false
+employment_type: professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-cloud-engineer-hamburg-59107
+  url: https://www.arbeitnow.com/jobs/companies/ita-consulting-gmbh/senior-cloud-engineer-hamburg-59107
+  metadata:
+    tags:
+    - Software Development
+    job_types:
+    - professional / experienced
+published_at: '2026-08-06T20:00:37Z'
+discovered_at: '2026-08-07T01:11:17Z'
+updated_at: '2026-08-07T01:11:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-07T01:11:17Z'
+analysis_priority: 0
+fingerprint: sha256:667ed0acd92c8c2c0ed53cac10d360b89df5798191584164704d0459c9bc8982
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

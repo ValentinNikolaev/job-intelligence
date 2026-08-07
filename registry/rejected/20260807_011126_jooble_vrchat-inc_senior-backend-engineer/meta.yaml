@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '7058864274615361187'
+source_url: https://jooble.org/away/7058864274615361187?p=1&pos=27&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=44&brelb=10&scr=2433.5847&bscr=2433.5847&aq=-2948371725937757496&elckey=261821479758363806
+title: Senior Backend Engineer
+company: VRChat Inc
+location: New York, NY
+published_at: '2026-08-04T22:48:48.8900000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T01:11:26Z'
+rejected_at: '2026-08-07T01:11:26Z'
