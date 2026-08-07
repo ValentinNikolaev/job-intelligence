@@ -1,0 +1,18 @@
+score: 28
+recommendation: weak_match
+summary: Engineering leadership and cross-functional product work are relevant, but
+  the role is primarily generalist strategy/operations rather than software engineering.
+strengths:
+- Technical leadership and product planning
+- Startup and stakeholder experience
+gaps:
+- Founder operations, business analysis, and generalist execution
+concerns:
+- Role family and likely day-to-day responsibilities are a weak fit.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:30:59Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:15200e566a539274989c55402f3eb05fe0c4f6674231396d4e499ee5768ee574
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 70
+recommendation: match
+summary: Strong backend and senior engineering fit with PHP, Go, APIs, AWS, Kubernetes,
+  and production systems; frontend depth is less evident.
+strengths:
+- Go and PHP backend experience
+- Kubernetes, AWS, CI/CD, microservices
+- Technical leadership and customer-facing platform work
+gaps:
+- Full-stack/frontend implementation depth is not clearly demonstrated
+concerns:
+- Remote/location compatibility and exact frontend expectations are uncertain.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:30:59Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:efcfbd7166db919619dbb91da01ec409dc9aae03cd161673903def550ed92c50
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
