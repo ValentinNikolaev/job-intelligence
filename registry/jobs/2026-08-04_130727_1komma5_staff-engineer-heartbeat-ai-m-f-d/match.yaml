@@ -1,0 +1,19 @@
+score: 76
+recommendation: match
+summary: Senior backend, automation, cloud, and reliability experience is a good match
+  for a staff engineering role in an AI product area.
+strengths:
+- Go and PHP backend engineering.
+- Automation platform and AI-assisted workflow experience.
+- Kubernetes, AWS, CI/CD, and production reliability.
+gaps:
+- Specific energy-domain and staff-level cross-team scope are not fully evidenced.
+concerns:
+- Exact AI/ML engineering expectations need clarification.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:40:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:31720bf6f1880fca9f337c0735c4292d841028ebc2072b2f6994b76079b51c51
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

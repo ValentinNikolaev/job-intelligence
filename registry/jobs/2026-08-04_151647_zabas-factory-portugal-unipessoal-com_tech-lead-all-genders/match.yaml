@@ -1,0 +1,19 @@
+score: 78
+recommendation: match
+summary: Technical leadership and backend architecture experience are relevant, with
+  stack and product specifics requiring confirmation.
+strengths:
+- Technical lead experience managing delivery and architecture.
+- PHP, Go, microservices, AWS, and CI/CD background.
+gaps:
+- Exact responsibilities, team size, and required stack are not fully clear from the
+  posting.
+concerns:
+- Portugal location and employment arrangement need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:40:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:de2a98a51744804d32b79a2acfa2b7290623ca99011aceec782c03ba019a2485
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

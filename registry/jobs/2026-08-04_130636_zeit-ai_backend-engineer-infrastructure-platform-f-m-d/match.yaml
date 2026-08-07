@@ -1,0 +1,20 @@
+score: 71
+recommendation: possible_match
+summary: Platform, reliability, cloud, and event-driven backend experience align,
+  but the posting requires strong TypeScript and data-platform depth.
+strengths:
+- Scalable backend and event-driven architecture.
+- AWS, Kubernetes, CI/CD, observability, and reliability experience.
+- AI-assisted automation context.
+gaps:
+- TypeScript is not evidenced; profile centers on Go and PHP.
+- OLAP/OLTP and large-scale data-platform ownership are only partially evidenced.
+concerns:
+- Munich on-site requirement and TypeScript-first stack.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:40:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:0ed74683dc4bb8881a5cb7ae1fd1c9c44b6d2adfb5e054ed8bc98c67f6990e48
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
