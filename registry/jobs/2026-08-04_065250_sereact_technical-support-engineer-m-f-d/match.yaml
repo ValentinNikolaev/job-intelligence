@@ -1,0 +1,20 @@
+score: 55
+recommendation: possible_match
+summary: Backend troubleshooting, integrations, monitoring, and production incident
+  work are relevant, though dedicated technical support and customer-facing experience
+  are limited.
+strengths:
+- Troubleshooting and incident resolution
+- APIs, integrations, monitoring, and documentation
+gaps:
+- Customer support workflows and ticket ownership
+- Evidence of German fluency if required
+concerns:
+- Customer-facing expectations need confirmation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:10:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:aad308dcbc65abcb5694453149e921fceaffc38163265cb5fb2193e761761446
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

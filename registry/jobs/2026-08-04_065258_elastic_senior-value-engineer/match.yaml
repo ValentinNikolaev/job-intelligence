@@ -1,0 +1,19 @@
+score: 38
+recommendation: weak_match
+summary: The candidate has strong engineering depth but no demonstrated customer-facing
+  value engineering or presales track record.
+strengths:
+- Technical communication
+- Distributed systems and reliability
+gaps:
+- Value engineering and enterprise presales
+- Elastic product expertise and customer discovery
+concerns:
+- Commercial role transition risk
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T18:10:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:be541055593391f5f5cb1a91e1a4fe1dad02d89b29e375d52b2fa04d5b26daea
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 5
+recommendation: not_match
+summary: The profile is for a senior software engineer and does not support executive-assistant
+  responsibilities or German fluency.
+strengths:
+- Organization and cross-functional collaboration
+gaps:
+- Executive assistance, calendar/travel/inbox management
+- Professional German and English proficiency
+concerns:
+- Fundamental discipline and language mismatch
+hard_rejection: true
+hard_rejection_reason: The role requires executive-assistant experience and professional
+  German, neither of which is evidenced.
+analyzed_at: '2026-08-07T18:10:24Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:51bcd4e8c8503c2d8ffa06619ee3fb16ab9fc665a9fc997529df8b67f9ed86dd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
