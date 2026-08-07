@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: account-executive-b2b-saas-berlin-462903
+source_url: https://www.arbeitnow.com/jobs/companies/climatiq/account-executive-b2b-saas-berlin-462903
+title: Account Executive - B2B SaaS
+company: Climatiq
+location: Berlin
+published_at: '2026-08-06T23:40:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:30Z'
+rejected_at: '2026-08-07T07:24:30Z'

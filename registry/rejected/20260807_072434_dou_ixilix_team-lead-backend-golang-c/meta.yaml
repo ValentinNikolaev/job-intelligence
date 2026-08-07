@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '367996'
+source_url: https://jobs.dou.ua/companies/ixilix/vacancies/367996/
+title: Team Lead Backend (Golang/C++)
+company: Ixilix
+location: за кордоном, віддалено
+published_at: '2026-07-31'
+rejection_category: stale
+rejection_reason: published_at 2026-07-31 is older than 7 days
+updated_at: '2026-08-07T07:24:34Z'
+rejected_at: '2026-08-07T07:24:34Z'

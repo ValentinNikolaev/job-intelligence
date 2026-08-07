@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/cross-river/jobs/senior-software-engineer
+source_url: https://himalayas.app/companies/cross-river/jobs/senior-software-engineer
+title: Senior Software Engineer
+company: Cross River
+location: Worldwide
+published_at: '2026-08-03T18:14:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:37Z'
+rejected_at: '2026-08-07T07:24:37Z'

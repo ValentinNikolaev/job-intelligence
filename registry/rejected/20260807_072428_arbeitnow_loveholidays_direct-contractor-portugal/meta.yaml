@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-direct-contractor-portugal-249082
+source_url: https://www.arbeitnow.com/jobs/companies/loveholidays/remote-direct-contractor-portugal-249082
+title: Direct Contractor Portugal
+company: loveholidays
+location: Remote
+published_at: '2026-08-07T05:40:09Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:28Z'
+rejected_at: '2026-08-07T07:24:28Z'

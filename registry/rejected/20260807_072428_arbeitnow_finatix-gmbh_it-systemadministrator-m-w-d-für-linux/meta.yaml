@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-systemadministrator-fur-linux-leipzig-161795
+source_url: https://www.arbeitnow.com/jobs/companies/finatix-gmbh/it-systemadministrator-fur-linux-leipzig-161795
+title: IT Systemadministrator (m/w/d) für Linux
+company: Finatix Gmbh
+location: Leipzig
+published_at: '2026-08-07T05:09:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:28Z'
+rejected_at: '2026-08-07T07:24:28Z'

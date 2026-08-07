@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: director-sales-dach-munich-bavaria-384405
+source_url: https://www.arbeitnow.com/jobs/companies/corcepttherapeutics/director-sales-dach-munich-bavaria-384405
+title: Director, Sales DACH
+company: Corcepttherapeutics
+location: Munich, Bavaria
+published_at: '2026-08-06T23:55:06Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:29Z'
+rejected_at: '2026-08-07T07:24:29Z'

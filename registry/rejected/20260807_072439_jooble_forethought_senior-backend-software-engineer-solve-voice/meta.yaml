@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1966983315011079796'
+source_url: https://jooble.org/away/1966983315011079796?p=1&pos=21&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=49&brelb=15&scr=1282.0581&bscr=1282.0581&aq=171822792024068919&elckey=367602445200037819
+title: Senior Backend Software Engineer, Solve Voice
+company: Forethought
+location: Austin, TX
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:39Z'
+rejected_at: '2026-08-07T07:24:39Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/empat/jobs/senior-data-engineer-scala
+source_url: https://himalayas.app/companies/empat/jobs/senior-data-engineer-scala
+title: Senior Data Engineer (Scala)
+company: Empat
+location: Worldwide
+published_at: '2026-08-07T05:10:50Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T07:24:37Z'
+rejected_at: '2026-08-07T07:24:37Z'

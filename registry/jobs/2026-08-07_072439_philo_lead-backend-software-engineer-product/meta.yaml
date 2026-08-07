@@ -1,0 +1,24 @@
+schema_version: 2
+id: 0258c2d9-95e2-4ccc-902f-a25ec382bacf
+title: Lead Backend Software Engineer (Product)
+company: Philo
+company_url: null
+location: Brooklyn, NY
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-8636047433171919074'
+  url: https://jooble.org/away/-8636047433171919074?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=73&brelb=15&scr=521.1033&bscr=521.1033&aq=-5788615718775626010&elckey=-5239908089007634261
+published_at: '2026-08-04T00:00:00.0000000'
+discovered_at: '2026-08-07T07:24:39Z'
+updated_at: '2026-08-07T07:24:39Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-07T07:24:39Z'
+analysis_priority: 0
+fingerprint: sha256:465b38a120155adc023e276c123e2b4614cb058341c3f66d201f6d455ab9d47e
+data_source: jooble
+content_source: jooble
+company_content_source: null
