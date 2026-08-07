@@ -1,0 +1,26 @@
+score: 91
+recommendation: strong_match
+summary: The role closely matches the candidate's Go backend, event-driven, cloud,
+  reliability, and end-to-end ownership experience; security-domain depth is the main
+  gap.
+strengths:
+- Go
+- backend architecture
+- AWS
+- Kubernetes
+- event-driven systems
+- observability
+- production ownership
+gaps:
+- Cloud-security product domain
+- policy engines
+- SQL-based compliance enforcement
+concerns:
+- Early-stage role may require stronger security expertise than the profile proves.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:11:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:a90b231418ed642310d87ae2c27803e0c3f85751bf7a45002c1215051a781625
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

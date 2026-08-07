@@ -1,0 +1,27 @@
+score: 76
+recommendation: match
+summary: Strong Go backend, startup ownership, distributed systems, and AI-adjacent
+  experience fit the product, while React/TypeScript and German work authorization
+  are not evidenced.
+strengths:
+- Go
+- backend architecture
+- microservices
+- AWS
+- Kubernetes
+- startup ownership
+- AI automation
+gaps:
+- React
+- TypeScript
+- frontend production depth
+- Germany work authorization
+concerns:
+- Location eligibility is an explicit requirement.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:11:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b47a6bfdfc55b64684044a7f921f712b0c11ecb98e1837591611e7d5d8361aec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

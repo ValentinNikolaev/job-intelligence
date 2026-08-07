@@ -1,0 +1,25 @@
+score: 70
+recommendation: match
+summary: PHP and Laravel backend experience aligns well with the software role, with
+  additional automation and AI-adjacent experience; Python and frontend depth are
+  less established.
+strengths:
+- PHP
+- Laravel
+- backend systems
+- APIs
+- automation
+- production reliability
+gaps:
+- Python depth
+- HTML/CSS/JavaScript depth
+- direct SaaS AI implementation evidence
+concerns:
+- The listing is sparse and emphasizes Python heavily.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:11:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:7dd2ef062cc0874bd1709a785a79e97a1ba2b628df88f4b9530993d9cee03db0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,26 @@
+score: 43
+recommendation: possible_match
+summary: Platform engineering, AWS, Kubernetes, and cross-functional leadership are
+  relevant, but product-management ownership and web-platform product strategy are
+  not evidenced.
+strengths:
+- platform infrastructure
+- AWS
+- Kubernetes
+- authentication-related systems
+- technical leadership
+gaps:
+- product strategy
+- roadmap ownership
+- user research
+- product analytics
+- PM role history
+concerns:
+- The job expects a dedicated product manager profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:11:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:89053861fce7fe1679dfcb2beee24832941b035501ad68e5ad198a03c059961a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
