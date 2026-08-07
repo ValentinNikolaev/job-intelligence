@@ -117,4 +117,4 @@ Remote work is not available for this position
 
 **Visa sponsorship is not available** — applicants must have the existing right to work in Germany
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

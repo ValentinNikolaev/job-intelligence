@@ -33,4 +33,4 @@ The ideal candidate studies a computer science-related field, enjoys working wit
 
 *At SoundCloud you can find your community or elevate your allyship by joining a Diversity Resource Group. Diversity Resource Groups are employee-organized groups focused on supporting and promoting the interests of a particular underrepresented community in order to build a more inclusive culture at SoundCloud. Anyone can join, whether you share the identity or strive to be an ally.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

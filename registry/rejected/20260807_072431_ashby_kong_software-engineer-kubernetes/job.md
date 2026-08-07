@@ -21,7 +21,7 @@ At Kong, we are revolutionizing API connectivity with open-source and enterprise
 
 
 
-What You’ll Be Doing:
+What You’ll Do:
 
  - Contributing to the development and maintenance of Kong’s Gateway Operator and Ingress Controller to ensure reliability and performance.
 

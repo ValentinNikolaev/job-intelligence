@@ -126,4 +126,4 @@ Cycle to work scheme, season ticket loan and eye care vouchers.
 
 *At loveholidays, we focus on developing an inclusive culture and environment that encourages personal growth and collective success. Each individual offers unique perspectives and ideas that increase the diversity and effectiveness of our teams. And we value the insight and potential you could bring on our continued journey.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: manager-kooperationen-social-impact-vollzeit-oder-teilzeit-bremen-365089
+source_url: https://www.arbeitnow.com/jobs/companies/bremer-gewurzhandel-gmbh/manager-kooperationen-social-impact-vollzeit-oder-teilzeit-bremen-365089
+title: 'Manager Kooperationen & Social Impact: Vollzeit oder Teilzeit · Bremen'
+company: Bremer Gewürzhandel GmbH
+location: Bremen
+published_at: '2026-08-07T10:00:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T11:22:42Z'
+rejected_at: '2026-08-07T11:22:42Z'

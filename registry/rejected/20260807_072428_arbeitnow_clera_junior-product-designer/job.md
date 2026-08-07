@@ -103,4 +103,4 @@ This role is fully **on-site in Munich, Germany**. You must be available to work
 
 We are an equal opportunity employer committed to fair employment regardless of race, religion, sexual orientation, age, marital status, disability, or gender identity.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

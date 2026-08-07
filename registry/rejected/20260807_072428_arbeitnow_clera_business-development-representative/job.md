@@ -95,4 +95,4 @@ This role is **on-site in Berlin, Germany**. Candidates must already be fully el
 
 Compensation details will be discussed during the interview process. As an early-stage hire, you can expect meaningful equity participation alongside a competitive base, and significant scope to grow with the company as it scales.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

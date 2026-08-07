@@ -117,4 +117,4 @@ Opportunity to shape the commercial function from the ground up
 
 This is a **fully on-site role based in Berlin, Germany**, five days per week. Candidates must be based in Berlin or willing to relocate. No remote or hybrid arrangements are available.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

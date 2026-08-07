@@ -37,4 +37,4 @@ Posted: 2026-08-07T05:09:25Z
 
 Die agilen Werte Fokus, Mut, Vertrauen, Respekt, Offenheit und Commitment prägen sowohl unsere Projektarbeit als auch unsere Firmenkultur [(mehr zu unseren Werten)](https://www.finatix.de/unternehmen/werte-und-kultur#anker-werte). Eine offene und ehrliche Kommunikation auf Augenhöhe ist uns wichtig – egal ob Praktikant oder Senior. Du erhältst die Möglichkeit zum mobilen Arbeiten und eine flexible Arbeitszeitgestaltung durch individuelle Anpassung der Arbeitszeiten an den eigenen Alltag. Außerdem bieten wir Dir neben umfassenden Lern- und Weiterbildungsmöglichkeiten und verschiedensten Zuschüssen, eine Vielzahl von Benefits, die Deine persönliche und berufliche Entwicklung unterstützen und Dir dabei helfen, Dich bei uns rundum wohlzufühlen. Gestalte die Zukunft mit uns und werde Teil einer Unternehmenskultur, die Ideen schätzt, Mut fördert und auf intensivem Feedback aufbaut!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

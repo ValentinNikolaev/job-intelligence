@@ -87,4 +87,4 @@ Weydingerstraße 14-16, 10178 Berlin
 
 Tel: +49 30 5 490 650-0 | Ust-Id: DE285186723 | Geschäftsführung: Rami Jabr | Amtsgericht Charlottenburg - HRB: 141523 B
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

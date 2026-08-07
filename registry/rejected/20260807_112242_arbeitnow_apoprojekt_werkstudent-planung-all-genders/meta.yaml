@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-planung-all-genders-stuttgart-124766
+source_url: https://www.arbeitnow.com/jobs/companies/apoprojekt/werkstudent-planung-all-genders-stuttgart-124766
+title: Werkstudent Planung (all genders)
+company: Apoprojekt
+location: Stuttgart
+published_at: '2026-08-07T08:09:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T11:22:42Z'
+rejected_at: '2026-08-07T11:22:42Z'

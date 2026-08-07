@@ -67,4 +67,4 @@ As an Enterprise Account Executive you will drive Stripe’s enterprise growth e
 
 - Ability to think and operate strategically (e.g. building multi-year account plans, portfolio strategies) and connect this thinking back into concrete operational execution across internal teams and customer stakeholders.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

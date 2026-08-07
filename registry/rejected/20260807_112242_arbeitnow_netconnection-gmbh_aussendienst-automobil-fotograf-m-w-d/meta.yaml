@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: aussendienst-automobil-fotograf-hamburg-484554
+source_url: https://www.arbeitnow.com/jobs/companies/netconnection-gmbh/aussendienst-automobil-fotograf-hamburg-484554
+title: Außendienst Automobil-Fotograf (m/w/d)
+company: netconnection GmbH
+location: Hamburg
+published_at: '2026-08-07T08:00:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T11:22:42Z'
+rejected_at: '2026-08-07T11:22:42Z'
