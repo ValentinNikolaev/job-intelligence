@@ -416,6 +416,11 @@ def publish_analysis_batch(
             raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")
         if str(item.get("job_version", "")) != job_version:
             raise MatchError(f"vacancy changed after the analysis pack was created: {directory}")
+        if analyzer.is_current(directory):
+            raise MatchError(
+                f"analysis pack is stale because analysis is already current: {directory}; "
+                "refresh the repository and rebuild the pack"
+            )
         result = results[directory_name]
         if not isinstance(result, Mapping):
             raise MatchError(f"batch result must be a mapping: {directory_name}")

@@ -322,9 +322,11 @@ python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow an
 ```
 
 `triage.yaml` is deterministic and high-confidence skips never enter the model queue.
-Batch publication fails if any result is missing, extra, invalid, or based on stale
-candidate/vacancy hashes. The batch is an analysis optimization only; preparation
-remains one vacancy per task.
+Batch publication fails if any result is missing, extra, invalid, based on stale
+candidate/vacancy hashes, or already current because another run published it after
+the pack was built. Rebuild a stale pack from the latest repository state instead of
+publishing or reporting it as skipped. The batch is an analysis optimization only;
+preparation remains one vacancy per task.
 
 See [the matching design](docs/matching-architecture.md) for the schema, rubric,
 hard-rejection rules, and cache behavior.

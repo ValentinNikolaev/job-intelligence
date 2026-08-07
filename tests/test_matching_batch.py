@@ -91,6 +91,28 @@ class MatchingBatchTests(unittest.TestCase):
                 )
             self.assertFalse((registry_root / "jobs" / created.directory / "match.yaml").exists())
 
+    def test_batch_rejects_pack_that_became_current_before_publish(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            registry = Registry(registry_root, id_factory=lambda: "one")
+            created = registry.upsert(
+                NormalizedJob("direct", "1", "https://e/1", "Backend", "Example", "Build APIs.")
+            )
+            pack = build_analysis_pack(registry_root, [profile], model="codex:test")
+            results = {created.directory: payload(82)}
+            analyzer = MatchAnalyzer(
+                registry_root,
+                [profile],
+                type("Client", (), {"model": "codex:test"})(),
+            )
+            publish_analysis_batch({"items": list(pack.items)}, results, analyzer)
+
+            with self.assertRaisesRegex(MatchError, "analysis pack is stale"):
+                publish_analysis_batch({"items": list(pack.items)}, results, analyzer)
+
     def test_analysis_pack_orders_priority_vacancies_first(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
