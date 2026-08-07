@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '145054'
+source_url: https://jobicy.com/jobs/145054-software-engineer-net-f-m-d
+title: Software Engineer (.NET) (f/m/d)
+company: Apaleo
+location: Germany
+published_at: '2026-08-05T06:40:09Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:32Z'
+rejected_at: '2026-08-07T12:24:32Z'

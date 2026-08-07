@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: serviceberater-fur-bmw-und-mini-schwabisch-gmund-429598
+source_url: https://www.arbeitnow.com/jobs/companies/autohaus-walter-mulfinger-gmbh/serviceberater-fur-bmw-und-mini-schwabisch-gmund-429598
+title: Serviceberater (m/w/d) für BMW und MINI
+company: Autohaus Walter Mulfinger GmbH
+location: Schwäbisch Gmünd
+published_at: '2026-08-07T09:00:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:20Z'
+rejected_at: '2026-08-07T12:24:20Z'

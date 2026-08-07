@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: account-executive-germany-berlin-116081
+source_url: https://www.arbeitnow.com/jobs/companies/lexroom/account-executive-germany-berlin-116081
+title: Account Executive Germany
+company: Lexroom
+location: Berlin
+published_at: '2026-08-07T08:40:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:20Z'
+rejected_at: '2026-08-07T12:24:20Z'

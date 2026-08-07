@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '5212483700952534009'
+source_url: https://jooble.org/away/5212483700952534009?p=1&pos=30&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=54&brelb=15&scr=428.60587&bscr=428.60587&aq=5338578546000424463&elckey=-2465127663230318660
+title: Backend .NET Engineer
+company: Comcast
+location: Philadelphia, PA
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:34Z'
+rejected_at: '2026-08-07T12:24:34Z'

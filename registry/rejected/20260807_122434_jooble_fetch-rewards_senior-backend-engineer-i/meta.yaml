@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8274832637233801382'
+source_url: https://jooble.org/away/8274832637233801382?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=78&brelb=15&scr=1368.2517&bscr=1368.2517&aq=-5743031369698636000&elckey=3142382870977353420
+title: Senior Backend Engineer I
+company: Fetch Rewards
+location: Madison, WI
+published_at: '2026-08-04T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:34Z'
+rejected_at: '2026-08-07T12:24:34Z'

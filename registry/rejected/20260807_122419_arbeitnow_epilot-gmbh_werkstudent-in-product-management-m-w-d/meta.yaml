@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-product-management-koln-175524
+source_url: https://www.arbeitnow.com/jobs/companies/epilot-gmbh/werkstudentin-product-management-koln-175524
+title: Werkstudent:in Product Management (m/w/d)
+company: epilot GmbH
+location: Köln, Nordrhein-Westfalen, Germany
+published_at: '2026-08-07T11:30:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:19Z'
+rejected_at: '2026-08-07T12:24:19Z'

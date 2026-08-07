@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: entwickler-elektronischer-systeme-lindenberg-434178
+source_url: https://www.arbeitnow.com/jobs/companies/k-tronik-gmbh/entwickler-elektronischer-systeme-lindenberg-434178
+title: Entwickler Elektronischer Systeme (m/w/d)
+company: K-tronik GmbH
+location: Lindenberg
+published_at: '2026-08-07T10:30:37Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:19Z'
+rejected_at: '2026-08-07T12:24:19Z'

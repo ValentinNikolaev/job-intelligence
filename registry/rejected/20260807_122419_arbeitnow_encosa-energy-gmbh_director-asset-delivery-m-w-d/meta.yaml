@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: director-asset-delivery-munich-386760
+source_url: https://www.arbeitnow.com/jobs/companies/encosa-energy-gmbh/director-asset-delivery-munich-386760
+title: Director Asset Delivery (m/w/d)
+company: encosa energy GmbH
+location: Munich
+published_at: '2026-08-07T10:30:37Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:19Z'
+rejected_at: '2026-08-07T12:24:19Z'

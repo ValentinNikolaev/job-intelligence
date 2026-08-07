@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-sales-business-analytics-berlin-388176
+source_url: https://www.arbeitnow.com/jobs/companies/enpal/werkstudent-sales-business-analytics-berlin-388176
+title: Werkstudent - Sales Business Analytics (w/m/d)
+company: Enpal
+location: DE Berlin - Enpal Campus
+published_at: '2026-08-07T11:40:21Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:24:19Z'
+rejected_at: '2026-08-07T12:24:19Z'
