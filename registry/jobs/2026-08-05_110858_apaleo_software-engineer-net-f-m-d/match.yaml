@@ -1,0 +1,19 @@
+score: 58
+recommendation: possible_match
+summary: The candidate has strong backend and distributed-systems experience, but
+  the role’s .NET focus is not evidenced.
+strengths:
+- Backend architecture and APIs
+- Cloud infrastructure and Kubernetes
+- Performance and reliability engineering
+gaps:
+- No demonstrated C# or .NET experience.
+concerns:
+- Primary language mismatch could be a hard practical barrier.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:0476b707dd504028cd739516665046c3bb1cefa012d23dba490e2d61837b6f49
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

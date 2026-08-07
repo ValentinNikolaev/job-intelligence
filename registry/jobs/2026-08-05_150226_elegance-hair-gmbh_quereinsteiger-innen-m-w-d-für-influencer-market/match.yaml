@@ -1,0 +1,16 @@
+score: 18
+recommendation: not_match
+summary: Marketing/influencer role is outside the candidate’s backend engineering
+  profile.
+strengths: []
+gaps:
+- No demonstrated influencer marketing or beauty-sector growth experience.
+concerns:
+- Role is a non-technical marketing position.
+hard_rejection: true
+hard_rejection_reason: Core function is unrelated to backend software engineering.
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:5af3026203cb251c9e8f744ce6e13d8f057afe97d9f9b918df8c841e3adbf456
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

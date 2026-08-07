@@ -1,0 +1,20 @@
+score: 68
+recommendation: match
+summary: Cloud infrastructure, event analytics, observability, and performance work
+  align with several core requirements.
+strengths:
+- AWS and Kubernetes operations
+- Event-driven analytics infrastructure
+- Monitoring and reliability
+- Performance optimization
+gaps:
+- ClickHouse-specific experience is not evidenced.
+concerns:
+- Role may require deep database internals and cloud-platform specialization.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:47b5e5ff6c27d929e19b90f22a62620c5cb64d2e7da19418bf2f7c44165f7157
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

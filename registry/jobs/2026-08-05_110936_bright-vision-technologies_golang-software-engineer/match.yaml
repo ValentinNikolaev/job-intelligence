@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: The Go software-engineering focus aligns with substantial recent Go backend
+  and production-platform experience.
+strengths:
+- Recent Go backend ownership
+- API orchestration and integrations
+- Production reliability and observability
+- Microservices and cloud infrastructure
+gaps:
+- Specific customer domain and required seniority are not fully evidenced.
+concerns:
+- Consultancy context may require rapid adaptation across client stacks.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:7be95840f6eb0e2d3d004917b7d9d613ba53c0d415821186e355edfcbee8341a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

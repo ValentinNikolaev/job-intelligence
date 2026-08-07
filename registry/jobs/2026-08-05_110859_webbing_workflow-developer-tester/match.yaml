@@ -1,0 +1,19 @@
+score: 65
+recommendation: match
+summary: Backend integrations, automation, testing, and operational troubleshooting
+  provide a reasonable foundation for workflow development and testing.
+strengths:
+- Automation and integration platforms
+- Backend APIs and production troubleshooting
+- Reliability, monitoring, and CI/CD
+gaps:
+- Dedicated workflow-platform and formal test-automation depth is not explicit.
+concerns:
+- Role may emphasize testing tools or domain workflows not listed in the profile.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:61835c0ac861d5e00f57ff7143ef4dabbb28777e18fff9e241de14202a9bf602
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

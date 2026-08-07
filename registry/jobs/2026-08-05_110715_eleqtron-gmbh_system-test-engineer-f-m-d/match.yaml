@@ -1,0 +1,19 @@
+score: 48
+recommendation: possible_match
+summary: Backend reliability, troubleshooting, and testing experience partially transfer,
+  but dedicated systems-test expertise is unclear.
+strengths:
+- Production troubleshooting and monitoring
+- CI/CD and quality focus
+- Automation and integration work
+gaps:
+- No clear hardware, quantum, or system-test specialization.
+concerns:
+- Role may require laboratory or hardware testing background.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b1e11313f3057c7cf4748e0408981e33a4003f7acdd1376a49b279d3c9dce70e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

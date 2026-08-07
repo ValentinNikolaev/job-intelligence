@@ -1,0 +1,20 @@
+score: 76
+recommendation: match
+summary: Platform engineering experience across Kubernetes, CI/CD, AWS, observability,
+  and service reliability is strong.
+strengths:
+- Kubernetes, Helm, ArgoCD, GitHub Actions
+- AWS and microservices
+- Production incident response
+- Technical leadership
+gaps:
+- Exact platform stack and internal developer-platform scope are not specified.
+concerns:
+- Consulting delivery may require broader tooling than documented.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:d9d12602954430137173a41232ee9b3aede1e6e669590c145d919f848680c4d4
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

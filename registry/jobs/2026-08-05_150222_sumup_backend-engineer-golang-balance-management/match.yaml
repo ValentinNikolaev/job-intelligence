@@ -1,0 +1,20 @@
+score: 88
+recommendation: strong_match
+summary: Senior backend experience in Go, event-driven systems, AWS, reliability,
+  and payments-related domains aligns well.
+strengths:
+- Go backend development
+- Event-driven architecture and queues
+- AWS and production reliability
+- Fintech and payment integrations
+gaps:
+- Direct balance-management or ledger-domain experience is not explicit.
+concerns:
+- May require deeper domain knowledge in financial balance systems.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:00:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1822ea279e03005314340a987fadd41c115697206a9ba52d9ee0d02767843bab
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
