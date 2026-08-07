@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 525
+Total vacancies: 526
 
-- Found: 508
+- Found: 509
 - Applied: 10
 - Interview: 1
 - Rejected: 6
@@ -18,6 +18,7 @@ Total vacancies: 525
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-07 | [Digis, a Fiverr company (NYSE: FVRR)](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/) | [Senior Laravel Developer](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/job.md) | European Union | Manual | Found | 2026-08-07 | [Manual](https://www.linkedin.com/company/digiscorp/life/) | — | [MD](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/application/cv.md) / [DOCX](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/application/cv.docx) | [MD](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/application/cover-letter.md) / [DOCX](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/application/cover-letter.docx) | [Open](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/application/analysis.md) | [Open](../registry/jobs/2026-08-07_140606_digis-a-fiverr-company-nyse-fvrr_senior-laravel-developer/application/interview-preparation.md) |
 | 2026-08-07 | [ShippyPro](../registry/jobs/2026-08-07_122424_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-07_122424_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-07 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-07 | [Empat](../registry/jobs/2026-08-07_121619_empat_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-07_121619_empat_senior-ai-engineer/job.md) | Worldwide | Himalayas | Found | 2026-08-07 | [Himalayas](https://himalayas.app/companies/empat/jobs/senior-ai-engineer) | — | — | — | — | — |
 | 2026-08-07 | [Аrctic7](../registry/jobs/2026-08-07_112252_%D0%B0rctic7_senior-linux-system-engineer/) | [Senior Linux System Engineer](../registry/jobs/2026-08-07_112252_%D0%B0rctic7_senior-linux-system-engineer/job.md) | Worldwide | Himalayas | Found | 2026-08-07 | [Himalayas](https://himalayas.app/companies/rctic7/jobs/senior-linux-system-engineer) | — | — | — | — | — |
@@ -37,4 +38,3 @@ Total vacancies: 525
 | 2026-08-06 | [airSlate](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/job.md) | Київ, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/368837/) | [Open](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/company.md) | — | — | — | — |
 | 2026-08-06 | [KForce](../registry/jobs/2026-08-06_150249_kforce_remote-senior-golang-engineer/) | [Remote Senior Golang Engineer](../registry/jobs/2026-08-06_150249_kforce_remote-senior-golang-engineer/job.md) | Carlsbad, CA | Jooble | Found | 2026-08-06 | [Jooble](https://jooble.org/away/-6596953312129116646?p=1&pos=4&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=102&brelb=15&scr=752.7983&bscr=752.7983&aq=4355818808340108502&elckey=5613003449266090095) | — | — | — | — | — |
 | 2026-08-06 | [CyberCoders](../registry/jobs/2026-08-06_150249_cybercoders_remote-golang-engineer-b2b-saas-startup/) | [Remote Golang Engineer - B2B SaaS Startup](../registry/jobs/2026-08-06_150249_cybercoders_remote-golang-engineer-b2b-saas-startup/job.md) | Tulsa, OK | Jooble | Found | 2026-08-06 | [Jooble](https://jooble.org/away/2815529272966521383?p=1&pos=3&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=78&brelb=15&scr=762.32477&bscr=762.32477&aq=4355818808340108502&elckey=5613003449266090095) | — | — | — | — | — |
-| 2026-08-06 | [Newxel](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/) | [Full-stack Software Engineer (NXJ-192)](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/job.md) | Київ, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/newxel/vacancies/368785/) | [Open](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/company.md) | — | — | — | — |

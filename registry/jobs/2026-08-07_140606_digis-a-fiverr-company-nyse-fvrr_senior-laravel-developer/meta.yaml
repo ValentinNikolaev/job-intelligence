@@ -1,0 +1,24 @@
+schema_version: 2
+id: cee77c87-c212-47a8-95bf-5c9231394fff
+title: Senior Laravel Developer
+company: 'Digis, a Fiverr company (NYSE: FVRR)'
+company_url: https://digiscorp.com/
+location: European Union
+remote: true
+employment_type: Full-time
+sources:
+- source: manual
+  source_job_id: manual-ad2b35e27d3083f0
+  url: https://www.linkedin.com/company/digiscorp/life/
+published_at: null
+discovered_at: '2026-08-07T14:06:06Z'
+updated_at: '2026-08-07T14:06:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-07T14:06:06Z'
+analysis_priority: 0
+fingerprint: sha256:ba455b4cb44c975e61c3c5fbb2fe3ee26ff241e52bd931ba1689c74f5d70f806
+data_source: manual
+content_source: manual
+company_content_source: null
