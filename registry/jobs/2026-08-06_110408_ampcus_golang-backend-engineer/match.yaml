@@ -1,0 +1,18 @@
+score: 59
+recommendation: possible_match
+summary: Go backend fit is strong, but McLean location and work authorization are
+  significant barriers.
+strengths:
+- Go APIs distributed services AWS and scalability
+- Reliability CI/CD observability leadership
+gaps:
+- No U.S. authorization or relocation evidence
+concerns:
+- Remote eligibility is not established
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:25:57Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:bf17d09ac195589cb1c12be4da0fa5f1a4f266c14667780d96001228c47df893
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

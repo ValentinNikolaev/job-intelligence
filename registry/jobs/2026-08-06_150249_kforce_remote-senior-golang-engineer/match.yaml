@@ -1,0 +1,18 @@
+score: 60
+recommendation: possible_match
+summary: Strong Go backend capability matches the technical core, but the U.S. remote
+  constraint is likely blocking.
+strengths:
+- Go REST microservices AWS and scalability
+- Senior production ownership
+gaps:
+- Client domain and U.S. eligibility are not evidenced
+concerns:
+- Role is tied to a U.S. location
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:25:57Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1310abf917ed49a6717c520c4f72a7010b5b072c9b1938d63b595c1253536f78
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
