@@ -1,0 +1,24 @@
+score: 74
+recommendation: match
+summary: 'Good fit for a player-coach engineering manager role: the candidate has
+  led engineers, owned architecture and delivery, mentored, interviewed, and operated
+  production systems. The main gap is the advertised TypeScript/full-stack marketplace
+  stack and formal people-management depth.'
+strengths:
+- Technical leadership and team coordination
+- Architecture, delivery, and reliability
+- Mentoring and technical interviewing
+- Product/stakeholder collaboration
+gaps:
+- TypeScript/full-stack experience
+- Marketplace/B2C domain
+- Explicit performance-management and hiring ownership
+concerns:
+- Berlin hybrid office requirement needs confirmation.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:48b80bb4345d0236539d11cc29a35b0928a5619e591ae3375f53667df3a2ed54
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

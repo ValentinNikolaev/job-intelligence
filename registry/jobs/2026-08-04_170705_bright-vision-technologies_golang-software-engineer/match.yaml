@@ -1,0 +1,22 @@
+score: 86
+recommendation: strong_match
+summary: Strong technical match for a Golang backend/infrastructure engineering role.
+  Recent Go ownership, distributed services, CI/CD, Kubernetes, AWS, monitoring, and
+  performance optimization align closely.
+strengths:
+- Go and backend services
+- AWS/Kubernetes/CI-CD
+- Production performance and reliability
+- Cross-team engineering collaboration
+gaps:
+- Exact infrastructure tooling and AI specialization are not evidenced
+- Clarify role scope and client context
+concerns:
+- Posting appears aggregated and may have uncertain role details.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:7555c11d7a039f42a4d32064ba9c583804ba18a81ce153d639bf06f57547814a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

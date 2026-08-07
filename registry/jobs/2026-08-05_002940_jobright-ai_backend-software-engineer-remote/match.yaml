@@ -1,0 +1,22 @@
+score: 88
+recommendation: strong_match
+summary: Excellent match for a remote backend role centered on production Go services.
+  The profile directly demonstrates Go, APIs, scalable systems, integrations, observability,
+  and operational ownership.
+strengths:
+- Recent Go backend ownership
+- Scalable production services and APIs
+- Reliability, retries, monitoring
+- Remote-capable cross-functional delivery
+gaps:
+- Exact Jobright stack and domain details are sparse
+- Confirm timezone and employment eligibility
+concerns:
+- Limited vacancy detail makes some stack-specific fit uncertain.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:654fd2318167dccc637531d33fc80e63f20f7144b7a31f3d1fb6d1c8976ed6bb
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

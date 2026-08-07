@@ -1,0 +1,21 @@
+score: 10
+recommendation: not_match
+summary: This is a regulated financial-crime and compliance leadership role requiring
+  AML/AFC, ZAG-MaRisk, and card-fraud expertise. The profile is engineering-focused.
+strengths:
+- Fintech-related product exposure
+- Security and compliance awareness
+gaps:
+- AML/AFC and regulatory compliance
+- MLRO/deputy MLRO responsibilities
+- Card-fraud controls
+concerns:
+- Specialist regulated-compliance background is absent.
+hard_rejection: true
+hard_rejection_reason: The vacancy requires regulated compliance expertise not present
+  in the candidate evidence.
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b4aa37138d148c4bed4f76958f8045369d94ccc0f501810cc0fb2cf6d79ea696
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

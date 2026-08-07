@@ -1,0 +1,22 @@
+score: 15
+recommendation: not_match
+summary: The vacancy is a finance business-partner role requiring budgeting, forecasting,
+  performance analysis, and German-market finance partnering. The candidate profile
+  is software engineering.
+strengths:
+- Business-domain collaboration
+- Analytical and systems mindset
+gaps:
+- Finance business partnering
+- Budgeting, forecasting, and accounting
+- German finance operations
+concerns:
+- Core functional mismatch.
+hard_rejection: true
+hard_rejection_reason: The role is a finance position with requirements unsupported
+  by the candidate record.
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:f162df19266cff136cdd9424581aa324d2355ae4cafed0f0c0685c437906f01f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

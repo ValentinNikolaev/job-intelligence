@@ -1,0 +1,22 @@
+score: 18
+recommendation: not_match
+summary: This is a platform hardware engineering role requiring board design, schematics,
+  bring-up, validation, thermal/power, and manufacturing coordination. The candidate
+  evidence is software/backend only.
+strengths:
+- Cross-functional technical collaboration
+- Systems reliability perspective
+gaps:
+- Hardware architecture and schematics
+- Board bring-up and validation
+- Manufacturing, thermal, and power engineering
+concerns:
+- Fundamental discipline mismatch.
+hard_rejection: true
+hard_rejection_reason: The vacancy requires hardware engineering experience absent
+  from the candidate evidence.
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:552a3794c4d5747ab09621b0c50026a825b9ce9dfd1cef5d6808a19a5c5d1d85
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,22 @@
+score: 90
+recommendation: strong_match
+summary: Excellent alignment with a senior backend role in payments and global expansion.
+  The candidate has Go, event-driven systems, fintech/payment integrations, reliability
+  patterns, and AI/automation experience.
+strengths:
+- Go and distributed backend systems
+- Payment/fintech integrations
+- Retries, idempotent-style reliability, reconciliation-adjacent work
+- AI-assisted automation and developer tooling
+gaps:
+- Kotlin is not evidenced
+- Office-first Berlin location may require relocation/commuting confirmation
+concerns:
+- Confirm depth of production payment acquiring and Kotlin experience.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:30:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:a43320dd3d8e13f1d96208fcdcea043a66a3e5a9faabf8b3d9b8ed43bda7b1a3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
