@@ -1,0 +1,19 @@
+score: 78
+recommendation: match
+summary: Good match for a hands-on product engineering role through extensive backend,
+  Go/PHP, APIs, cloud, and production ownership.
+strengths:
+- Go and PHP backend delivery
+- AWS, Kubernetes, CI/CD
+- system design and reliability
+gaps:
+- specific frontend or product-stack requirements may be missing
+concerns:
+- Product-engineering scope and location expectations need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:50:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c5f66ce78229fa517334a6f8900a20d1a903c19b453afd7974f2f66cca65f7d6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

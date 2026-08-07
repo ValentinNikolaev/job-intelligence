@@ -1,0 +1,19 @@
+score: 82
+recommendation: strong_match
+summary: Strong fit for an early engineering team requiring broad backend ownership,
+  architecture, and rapid product delivery.
+strengths:
+- founding-stage ownership
+- Go/PHP and distributed systems
+- technical leadership and product collaboration
+gaps:
+- any required frontend or domain-specific technologies
+concerns:
+- No direct evidence for every possible founding-engineer breadth requirement.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:50:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:a7a3549e7d2e8fa766a78c628f39472ba1b1f1941acf987c96e0ac1ae4452fb0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

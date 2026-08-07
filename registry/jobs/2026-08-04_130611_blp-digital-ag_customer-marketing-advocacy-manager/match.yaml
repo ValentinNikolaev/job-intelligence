@@ -1,0 +1,19 @@
+score: 15
+recommendation: not_match
+summary: The profile does not show customer marketing, advocacy, or communications
+  ownership.
+strengths:
+- technical stakeholder communication
+gaps:
+- customer advocacy
+- case studies and community programs
+- marketing operations
+concerns:
+- Role is materially outside the candidate evidence.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T17:50:17Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:d7696847a9bb3b8c7a16c59c54192f6e75f461f1fb2f9d11ddd9b485fc225636
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
