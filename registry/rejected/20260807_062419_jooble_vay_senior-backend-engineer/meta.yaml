@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '32751993933275363'
+source_url: https://jooble.org/away/32751993933275363?p=1&pos=29&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=120&brelb=15&scr=2398.5369&bscr=2398.5369&aq=-1385699049969157127&elckey=3501995174786485022
+title: Senior Backend Engineer
+company: Vay
+location: Las Vegas, NV
+published_at: '2026-08-02T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T06:24:19Z'
+rejected_at: '2026-08-07T06:24:19Z'
