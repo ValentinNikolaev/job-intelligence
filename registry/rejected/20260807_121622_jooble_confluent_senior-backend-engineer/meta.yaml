@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8382552170672884544'
+source_url: https://jooble.org/away/-8382552170672884544?p=1&pos=11&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=55&brelb=10&scr=2541.884&bscr=2541.884&aq=6665311208178676581&elckey=-7226230090235789441
+title: Senior Backend Engineer
+company: Confluent
+location: Maryland
+published_at: '2026-08-04T22:56:22.5270000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:16:22Z'
+rejected_at: '2026-08-07T12:16:22Z'

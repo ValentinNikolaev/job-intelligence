@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8999702624033263096'
+source_url: https://jooble.org/desc/8999702624033263096?ckey=remote+senior+backend+engineer&rgn=55180&pos=34&groupId=2134052230&elckey=-7226230090235789441&p=1&aq=6665311208178676581&cid=15922&jobAge=30&brelb=115&bscr=2404.6287&scr=2404.6287
+title: Senior Backend Software Engineer
+company: Site Technologies
+location: Chicago, IL
+published_at: '2026-08-06T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:16:22Z'
+rejected_at: '2026-08-07T12:16:22Z'

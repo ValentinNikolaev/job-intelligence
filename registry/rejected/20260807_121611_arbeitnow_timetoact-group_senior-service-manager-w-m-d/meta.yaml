@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-service-manager-koln-46165
+source_url: https://www.arbeitnow.com/jobs/companies/timetoact-group/senior-service-manager-koln-46165
+title: Senior Service Manager (w/m/d)
+company: Timetoact Group
+location: Köln
+published_at: '2026-08-07T11:09:43Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T12:16:11Z'
+rejected_at: '2026-08-07T12:16:11Z'
