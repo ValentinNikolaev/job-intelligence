@@ -130,4 +130,4 @@ Any offer of employment at Redis is contingent upon the successful completion of
 
 Redis reserves the right to retain data longer than stated in the [privacy policy](https://redis.com/legal/privacy-policy/) in order to evaluate candidates.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

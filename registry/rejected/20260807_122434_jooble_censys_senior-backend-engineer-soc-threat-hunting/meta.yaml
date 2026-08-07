@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '1764295471669321817'
-source_url: https://jooble.org/away/1764295471669321817?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=78&brelb=15&scr=2523.4888&bscr=2523.4888&aq=-5743031369698636000&elckey=3142382870977353420
+source_url: https://jooble.org/away/1764295471669321817?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=81&brelb=15&scr=2486.3398&bscr=2486.3398&aq=413369155640757427&elckey=-8551277166498722295
 title: Senior Backend Engineer, SOC & Threat Hunting
 company: Censys
 location: Ann Arbor, MI
 published_at: '2026-08-04T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-07T12:24:34Z'
+updated_at: '2026-08-07T15:02:38Z'
 rejected_at: '2026-08-07T12:24:34Z'

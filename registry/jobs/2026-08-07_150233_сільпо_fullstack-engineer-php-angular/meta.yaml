@@ -1,0 +1,40 @@
+schema_version: 2
+id: 0cbb9507-6129-4234-95e3-b6cdc4fc4886
+title: Fullstack Engineer (PHP+Angular)
+company: Сільпо
+company_url: https://jobs.dou.ua/companies/silpo/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368959'
+  url: https://jobs.dou.ua/companies/silpo/vacancies/368959/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 7 серпня
+    listing_summary: 'Привіт!
+
+
+      Ми — E-Com — команда закоханих у FoodTech та український продукт.
+
+
+      І ми шукаємо Spec-driven Fullstack Engineer — Symfony + Angular, який або яка
+      разом з нами створюватиме прогресивні продукти, якими користуються тисячі українців.
+      Не виключаємо, що і твоя сім’я.'
+published_at: '2026-08-07'
+discovered_at: '2026-08-07T15:02:33Z'
+updated_at: '2026-08-07T15:02:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-07T15:02:33Z'
+analysis_priority: 100
+fingerprint: sha256:ee29ab793617a79d028b5e228514af18851c38cdc8893ecdce9485adc63c8427
+data_source: dou
+content_source: dou
+company_content_source: dou

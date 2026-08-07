@@ -131,4 +131,4 @@ Are you interested even if you don't meet all the requirements? Apply anyway! We
 
 *At Enpal, we are proud of the diversity of our team. No decisions are made on the basis of skin colour, religion or religious belief, ethnic or national origin, nationality, gender identity, sexual orientation, disability or age, either during recruitment or employment. Enpal stands for a safe workplace and takes action against discrimination and harassment of any kind.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

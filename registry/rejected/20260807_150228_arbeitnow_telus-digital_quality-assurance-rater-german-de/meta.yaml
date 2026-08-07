@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: quality-assurance-rater-german-de-berlin-137274
+source_url: https://www.arbeitnow.com/jobs/companies/telus-digital/quality-assurance-rater-german-de-berlin-137274
+title: Quality Assurance Rater - German (DE)
+company: TELUS Digital
+location: Berlin
+published_at: '2026-08-07T12:00:58Z'
+rejection_category: role_mismatch
+rejection_reason: title is an obvious mismatch for a backend profile
+updated_at: '2026-08-07T15:02:28Z'
+rejected_at: '2026-08-07T15:02:28Z'

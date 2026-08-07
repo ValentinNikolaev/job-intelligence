@@ -90,4 +90,4 @@ Du bist interessiert, auch wenn du nicht alle Anforderungen erfüllst? Bewirb di
 
 *Wir bei Enpal sind stolz auf die Vielfältigkeit unseres Teams. Weder bei der Einstellung noch während des Beschäftigungsverhältnisses werden Entscheidungen auf Basis von Hautfarbe, Religion oder religiösen Glaubens, ethnischer oder nationaler Herkunft, Nationalität, Geschlechteridentität, sexuelle Orientierung, Behinderung oder Alter getroffen. Enpal steht für einen sicheren Arbeitsplatz und geht gegen Diskriminierung und Belästigung jeglicher Art vor.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

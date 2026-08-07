@@ -1,0 +1,27 @@
+schema_version: 2
+id: 789c106a-81b0-4242-a445-424f187224d6
+title: Backend Engineer - Transfers Gateway
+company: sumup
+company_url: null
+location: Berlin
+remote: false
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: backend-engineer-transfers-gateway-berlin-91926
+  url: https://www.arbeitnow.com/jobs/companies/sumup/backend-engineer-transfers-gateway-berlin-91926
+  metadata:
+    tags:
+    - Engineering
+published_at: '2026-08-07T11:55:29Z'
+discovered_at: '2026-08-07T15:02:29Z'
+updated_at: '2026-08-07T15:02:29Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-07T15:02:29Z'
+analysis_priority: 0
+fingerprint: sha256:f41742be23340c844098ddc30319607470a729bdda289f93775bae6896328d8b
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

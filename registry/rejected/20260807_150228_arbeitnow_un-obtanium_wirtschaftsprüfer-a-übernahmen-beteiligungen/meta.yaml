@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: wirtschaftsprufer-a-ubernahmen-beteiligungen-munich-201941
+source_url: https://www.arbeitnow.com/jobs/companies/un-obtanium/wirtschaftsprufer-a-ubernahmen-beteiligungen-munich-201941
+title: Wirtschaftsprüfer (a) Übernahmen & Beteiligungen
+company: Un-Obtanium
+location: Munich
+published_at: '2026-08-07T12:00:55Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T15:02:28Z'
+rejected_at: '2026-08-07T15:02:28Z'

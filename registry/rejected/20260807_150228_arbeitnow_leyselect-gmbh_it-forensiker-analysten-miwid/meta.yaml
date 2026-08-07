@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-forensiker-analysten-miwid-frankfurt-am-main-490055
+source_url: https://www.arbeitnow.com/jobs/companies/leyselect-gmbh/it-forensiker-analysten-miwid-frankfurt-am-main-490055
+title: IT-Forensiker / Analysten (mIwId)
+company: LeySelect GmbH
+location: Frankfurt am Main
+published_at: '2026-08-07T12:00:59Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T15:02:28Z'
+rejected_at: '2026-08-07T15:02:28Z'
