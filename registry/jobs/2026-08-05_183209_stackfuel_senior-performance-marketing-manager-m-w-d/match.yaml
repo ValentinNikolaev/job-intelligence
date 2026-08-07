@@ -1,0 +1,19 @@
+score: 17
+recommendation: not_match
+summary: The candidate profile does not support performance marketing ownership or
+  paid acquisition expertise.
+strengths:
+- Analytical and automation mindset
+gaps:
+- Paid media
+- Performance marketing
+- Marketing KPIs
+concerns:
+- The role is not software engineering; language requirements are also uncertain.
+hard_rejection: true
+hard_rejection_reason: The essential performance-marketing experience is unsupported.
+analyzed_at: '2026-08-07T16:50:12Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2bb4e90795c7c0d34fcbfa13f37d03d5473a4745227ea28ea2a793817b0492d2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

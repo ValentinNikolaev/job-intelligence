@@ -1,0 +1,20 @@
+score: 18
+recommendation: not_match
+summary: The profile is a senior backend engineering record and does not evidence
+  influencer, referral, or growth marketing ownership.
+strengths:
+- Cross-functional seniority and automation experience
+gaps:
+- Influencer marketing
+- Referral growth
+- Marketing analytics
+concerns:
+- Role is fundamentally marketing-focused; German requirements are not evidenced.
+hard_rejection: true
+hard_rejection_reason: The core marketing experience required by the role is unsupported
+  by the profile.
+analyzed_at: '2026-08-07T16:50:12Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:8c59c17a0a9c2ddb9df73524132aea56d841e063ffe6f48e364eac587be08bb7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

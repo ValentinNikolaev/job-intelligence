@@ -1,0 +1,20 @@
+score: 22
+recommendation: not_match
+summary: The candidate has strong systems and automation experience but no evidence
+  of revenue operations ownership.
+strengths:
+- Automation platforms
+- Data and integration systems
+gaps:
+- Revenue operations
+- CRM and pipeline ownership
+- Commercial forecasting
+concerns:
+- Role requires business operations leadership rather than software delivery.
+hard_rejection: true
+hard_rejection_reason: The essential revenue-operations background is unsupported.
+analyzed_at: '2026-08-07T16:50:12Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2b19dbf52275cce6beb90ef3e0ee1c57bb4ea1c26ca407bd514d07e1bb42d58b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

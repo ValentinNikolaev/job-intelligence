@@ -1,0 +1,21 @@
+score: 42
+recommendation: weak_match
+summary: The candidate’s AI automation and technical leadership provide partial product
+  overlap, but product ownership and greentech experience are not established.
+strengths:
+- AI automation
+- Technical roadmap collaboration
+- Metrics and systems thinking
+gaps:
+- Growth product management
+- Greentech domain
+- Commercial experimentation
+concerns:
+- Italy location is favorable, but formal product-management ownership is not evidenced.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:50:12Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:997c97cb81ae1af946813f4eeb1c5f8e6684218cae61ebfe43efe7b2f9422cc8
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
