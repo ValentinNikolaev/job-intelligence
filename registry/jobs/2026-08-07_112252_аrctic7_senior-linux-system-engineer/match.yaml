@@ -1,0 +1,22 @@
+score: 67
+recommendation: match
+summary: Go, production reliability, Kubernetes, observability and systems ownership
+  provide a meaningful base.
+strengths:
+- Golang
+- Linux-adjacent operations
+- networking exposure
+- automation
+- reliability
+gaps:
+- Linux kernel internals
+- low-level systems programming and deep networking are not evidenced.
+concerns:
+- This is closer to a systems/platform role than conventional backend work.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T14:24:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:aee8b15c2ecdfda6376d8323557e4cb54a465cabda7aca07cf7a01596e7db66d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

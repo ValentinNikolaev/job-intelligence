@@ -1,0 +1,21 @@
+score: 64
+recommendation: possible_match
+summary: Leadership and Go backend experience are relevant, but product-stack and
+  US-only location requirements reduce fit.
+strengths:
+- Go
+- backend architecture
+- technical leadership
+- product collaboration
+gaps:
+- US location/work authorization and the listed Node/Ruby/Python product stack are
+  not established.
+concerns:
+- Remote eligibility is restricted to the United States.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T14:24:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:7ef36a567166e8cbc7db5239681d904ab6ee115efa26483d979ad82fff5c8336
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

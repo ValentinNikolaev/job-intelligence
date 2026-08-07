@@ -1,0 +1,21 @@
+score: 84
+recommendation: strong_match
+summary: Very strong PHP, high-load, product, database and distributed-systems fit,
+  with leadership experience above the stated level.
+strengths:
+- PHP
+- MySQL
+- high-load systems
+- product engineering
+- mentoring
+gaps:
+- Specific framework and iGaming experience may need confirmation.
+concerns:
+- The role is labelled middle despite the candidate’s seniority.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T14:24:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:5fcf89a6608bc3569ee7f5eff24a80e8e5429316307486f2875852355e01b8d0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
