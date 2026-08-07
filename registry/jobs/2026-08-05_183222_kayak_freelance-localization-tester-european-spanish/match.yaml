@@ -1,0 +1,18 @@
+score: 5
+recommendation: not_match
+summary: Localization testing requires native European Spanish and testing/linguistics
+  evidence absent from the profile.
+strengths:
+- General software quality and debugging mindset.
+gaps:
+- Native European Spanish
+- Localization QA and freelance testing experience
+concerns:
+- Mandatory language requirement is unsupported.
+hard_rejection: true
+hard_rejection_reason: Native European Spanish is mandatory and unsupported.
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:ee931859b6f944878e097ddec0f92483bb45ebab143994464b53a96b71c76f46
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

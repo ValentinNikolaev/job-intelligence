@@ -1,0 +1,18 @@
+score: 8
+recommendation: not_match
+summary: Electrical robotics hardware role with no demonstrated PCB, schematic, harness,
+  or embedded electrical experience in the profile.
+strengths:
+- Cross-functional software and systems background.
+gaps:
+- Analog/digital/power circuit design
+- PCB layout, Altium, EMC, and robotics hardware
+concerns:
+- Hardware ownership is central to the role.
+hard_rejection: true
+hard_rejection_reason: Essential electrical engineering and PCB experience is unsupported.
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:546b94485e8fc5077cd1de1c11820f3e12a2a54deea7508e947548eb362bd7a8
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

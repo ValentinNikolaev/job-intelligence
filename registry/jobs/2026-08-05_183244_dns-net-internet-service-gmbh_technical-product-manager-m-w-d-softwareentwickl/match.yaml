@@ -1,0 +1,19 @@
+score: 58
+recommendation: possible_match
+summary: Strong backend development and technical coordination align with the software-facing
+  product role, but fluent German and formal requirements ownership are not evidenced.
+strengths:
+- 15+ years backend development
+- Technical leadership, planning, and cross-functional delivery
+gaps:
+- Fluent C1 German
+- Direct technical product management and bilingual specification writing
+concerns:
+- German is mandatory for business-facing requirements work.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:cdeff7d44f37c843e222a53bdbb8e131d46f552edb19183608bbca371592de4f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 27
+recommendation: weak_match
+summary: The profile has support automation and troubleshooting experience, but this
+  is hands-on onsite desktop/endpoint support rather than backend engineering.
+strengths:
+- Support automation, incident troubleshooting, and monitoring
+- Cross-team technical communication
+gaps:
+- Windows/macOS endpoint administration
+- M365, AV/meeting rooms, inventory, and onsite support
+concerns:
+- Required onsite operating model is a poor fit for the software profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:6aa2dcba0506cb4f2dfac3b8bc19836eebbdb01a06709f6c4999965776830367
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 70
+recommendation: match
+summary: Strong senior backend, AWS, automation, and production reliability background;
+  Python/ML depth and German requirements are material gaps.
+strengths:
+- Senior software engineering and scalable services
+- AI-assisted support automation and cloud delivery
+gaps:
+- Very strong Python and production ML/LLM engineering evidence
+- German language and Germany-based work eligibility
+concerns:
+- AI product experience is present but not a primary demonstrated specialty.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:183313a4db0fce0a5c185195e5e1c3193194b02ef7a74d604c5beba8c0a4bc13
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,18 @@
+score: 35
+recommendation: weak_match
+summary: Senior backend fundamentals transfer, but the vacancy requires professional
+  Java backend experience and the profile centers on Go and PHP.
+strengths:
+- Backend architecture, APIs, microservices, CI/CD, and production reliability
+gaps:
+- At least 3 years Java backend experience
+- Specific Java ecosystem evidence
+concerns:
+- Java is a central requirement and not documented.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2f76dbab92d7cd1f02bd343579873021e1a7357efa7b200f0161a7421c315f07
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

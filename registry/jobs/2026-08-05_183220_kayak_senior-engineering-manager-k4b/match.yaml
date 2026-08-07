@@ -1,0 +1,19 @@
+score: 67
+recommendation: match
+summary: Engineering leadership, mentoring, delivery ownership, and technical roadmap
+  experience align, but Berlin presence and recent people-management scope are uncertain.
+strengths:
+- Technical lead experience and management of 10 developers
+- Architecture, delivery, CI/CD, reliability, and coaching
+gaps:
+- Recent full employee lifecycle ownership
+- Required Berlin office presence three days weekly
+concerns:
+- Location is not clearly remote.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e6c4224bf25522b85a82175a0ec4a2a0d43bdbeb10be2c5f836ace9928d40bec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

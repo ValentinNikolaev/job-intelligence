@@ -1,0 +1,19 @@
+score: 18
+recommendation: not_match
+summary: The profile is a senior software engineer, while this is an enrolled working-student
+  product role requiring current university enrollment and energy-market focus.
+strengths:
+- Product collaboration and analytical engineering background.
+gaps:
+- Current student enrollment
+- Energy tariffs, regulation, and market communication
+concerns:
+- Fundamentally mismatched seniority and employment model.
+hard_rejection: true
+hard_rejection_reason: The role requires current student status, which is unsupported
+  and incompatible with the candidate profile.
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:870d20ab76b2b64e9d197833acebc36d18eb936950198fd5e1a297188357a998
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 76
+recommendation: match
+summary: Backend integrations, automation, cloud, and AI-assisted support workflows
+  align well; German and Python are not clearly established.
+strengths:
+- Go backend integrations and API design
+- AI automation workflows, Docker/Kubernetes, and reliability
+gaps:
+- Strong Python evidence
+- Very good German and willingness to travel
+concerns:
+- LLM/agent production depth is present but partly indirect.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:34:16Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c896490ab0ce60e8d3688177581ae9e6f309c99cea84ec3db04d5e00c521e919
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
