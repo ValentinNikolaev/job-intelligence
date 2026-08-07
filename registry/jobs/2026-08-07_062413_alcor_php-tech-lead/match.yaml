@@ -1,0 +1,25 @@
+score: 91
+recommendation: strong_match
+summary: Excellent PHP/Laravel technical-lead and architecture fit, with demonstrated
+  AWS, CI/CD, reliability, mentoring, and AI-assisted automation experience.
+strengths:
+- PHP and Laravel depth
+- technical leadership
+- system design and delivery ownership
+- AWS/Kubernetes and CI/CD
+- production reliability and security
+- AI automation.
+gaps:
+- The profile does not explicitly document CQRS, event sourcing, Terraform/CloudFormation,
+  or browser E2E testing.
+concerns:
+- The role expects unusually deep event-sourced domain modeling and 4+ years of lead-level
+  ownership
+- exact duration is not fully established in the profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T08:25:37Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:69208d6ae124a1904f76f2c52ab4e834b494a933685c7b60c2d4fe92db54e8fa
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
