@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3497301283615876642'
+source_url: https://jooble.org/desc/3497301283615876642?ckey=remote+golang+backend+engineer&rgn=55180&pos=3&groupId=1106121903&elckey=5870693175449893152&p=1&aq=-1170307584400781361&cid=15922&jobAge=12&bscr=780.7432&scr=780.7432
+title: Backend Engineer
+company: Sphinx Defense
+location: Colorado Springs, CO
+published_at: '2026-08-07T10:21:25.5570000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T18:16:14Z'
+rejected_at: '2026-08-07T18:16:14Z'

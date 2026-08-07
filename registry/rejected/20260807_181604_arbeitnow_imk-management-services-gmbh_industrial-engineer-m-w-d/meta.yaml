@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: industrial-engineer-chemnitz-460608
+source_url: https://www.arbeitnow.com/jobs/companies/imk-management-services-gmbh/industrial-engineer-chemnitz-460608
+title: Industrial Engineer (m/w/d)
+company: imk Management Services GmbH
+location: Chemnitz
+published_at: '2026-08-07T14:30:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T18:16:04Z'
+rejected_at: '2026-08-07T18:16:04Z'

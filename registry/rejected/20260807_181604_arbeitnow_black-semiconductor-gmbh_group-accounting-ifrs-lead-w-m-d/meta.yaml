@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: group-accounting-ifrs-lead-aachen-152469
+source_url: https://www.arbeitnow.com/jobs/companies/black-semiconductor-gmbh/group-accounting-ifrs-lead-aachen-152469
+title: Group Accounting & IFRS Lead (w/m/d)
+company: Black Semiconductor GmbH
+location: Aachen, Germany
+published_at: '2026-08-07T14:40:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T18:16:04Z'
+rejected_at: '2026-08-07T18:16:04Z'

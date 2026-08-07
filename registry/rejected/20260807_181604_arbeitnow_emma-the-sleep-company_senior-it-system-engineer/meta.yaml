@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-it-system-engineer-frankfurt-9142
+source_url: https://www.arbeitnow.com/jobs/companies/emma-the-sleep-company/senior-it-system-engineer-frankfurt-9142
+title: Senior IT System Engineer
+company: Emma – The Sleep Company
+location: Frankfurt
+published_at: '2026-08-07T14:04:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T18:16:04Z'
+rejected_at: '2026-08-07T18:16:04Z'

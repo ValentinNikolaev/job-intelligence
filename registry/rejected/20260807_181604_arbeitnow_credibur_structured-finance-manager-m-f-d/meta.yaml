@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: structured-finance-manager-berlin-129243
+source_url: https://www.arbeitnow.com/jobs/companies/credibur/structured-finance-manager-berlin-129243
+title: Structured Finance Manager (m/f/d)
+company: Credibur
+location: Berlin
+published_at: '2026-08-07T14:00:27Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-07T18:16:04Z'
+rejected_at: '2026-08-07T18:16:04Z'
