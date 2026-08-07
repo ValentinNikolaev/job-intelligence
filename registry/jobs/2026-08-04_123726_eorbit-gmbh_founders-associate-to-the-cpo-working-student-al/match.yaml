@@ -1,0 +1,19 @@
+score: 12
+recommendation: not_match
+summary: A senior engineering profile is not aligned with a CPO working-student role.
+strengths:
+- Technical product understanding
+gaps:
+- Student status
+- product operations
+- German
+concerns:
+- Material level mismatch
+hard_rejection: true
+hard_rejection_reason: Working-student requirement conflicts with senior professional
+  profile.
+analyzed_at: '2026-08-07T18:03:33Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:7412499e6bb10abe6ab2a8523a5717bcaa66102f5e22414026614a5b4fee3ba3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

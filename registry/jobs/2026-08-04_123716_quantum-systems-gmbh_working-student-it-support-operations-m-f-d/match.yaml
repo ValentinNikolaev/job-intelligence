@@ -1,0 +1,20 @@
+score: 10
+recommendation: not_match
+summary: Senior backend leadership is not aligned with a working-student IT support
+  role.
+strengths:
+- Infrastructure
+- troubleshooting
+gaps:
+- Student status
+- IT support
+- hardware
+concerns:
+- Severe seniority mismatch
+hard_rejection: true
+hard_rejection_reason: Working-student requirement conflicts with candidate profile.
+analyzed_at: '2026-08-07T18:03:33Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:39f317b74c2cce677918d6087086621fe9c6e4a3aac015813c3ca6766bf74002
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
