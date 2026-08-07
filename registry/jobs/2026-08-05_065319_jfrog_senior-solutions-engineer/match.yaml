@@ -1,0 +1,20 @@
+score: 55
+recommendation: possible_match
+summary: Strong backend, cloud, architecture, and stakeholder collaboration skills
+  fit, but customer-facing solutions engineering and presales ownership are not evidenced.
+strengths:
+- AWS and backend architecture
+- Technical stakeholder collaboration
+- System design
+gaps:
+- Presales/customer solution ownership
+- Jfrog ecosystem expertise
+concerns:
+- Role may emphasize external customer engagement
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:21:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9c8668f65d215a374faec66fe53031d6c5648da7be986c92e0680defddd21998
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

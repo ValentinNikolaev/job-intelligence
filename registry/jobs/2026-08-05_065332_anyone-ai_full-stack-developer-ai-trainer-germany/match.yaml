@@ -1,0 +1,20 @@
+score: 58
+recommendation: possible_match
+summary: Backend, Go, testing, and AI automation experience are relevant, but the
+  role centers on Python and JavaScript/TypeScript plus German proficiency.
+strengths:
+- Backend engineering
+- Go and testing
+- AI automation
+gaps:
+- German proficiency
+- Strong Python and JavaScript/TypeScript
+concerns:
+- Part-time project-based engagement
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:21:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:90322b71b33f3d26c0aa96d9d6b36e648e829a2c2c00b2269b301af44a6da106
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

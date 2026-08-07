@@ -1,0 +1,19 @@
+score: 38
+recommendation: weak_match
+summary: Technical leadership and delivery planning are relevant, but principal program
+  management in fintech is not directly evidenced.
+strengths:
+- Technical leadership
+- Planning and cross-functional delivery
+gaps:
+- Principal program management depth
+- Fintech program ownership
+concerns:
+- Role may require a dedicated program-management track record
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:21:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c624b667960a315bd512eb051aa819af15036810f13622cd864760dd30f3ddbf
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

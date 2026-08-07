@@ -1,0 +1,18 @@
+score: 25
+recommendation: weak_match
+summary: The role appears oriented to working-student finance/data integration work
+  and does not match the candidate senior engineering profile.
+strengths:
+- Data integration exposure
+gaps:
+- Working-student eligibility
+- Real-estate finance domain
+concerns:
+- Seniority and role type mismatch
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-07T17:21:01Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1d146718cb4e14d876be5cde6c091cb9a2dd3e54e7dcf2fe079cfd2c13934eff
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
