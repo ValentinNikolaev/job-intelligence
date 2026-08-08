@@ -65,6 +65,10 @@ class MatchingBatchTests(unittest.TestCase):
             first = registry.upsert(NormalizedJob("direct", "1", "https://e/1", "Backend One", "Example", "Build APIs."))
             second = registry.upsert(NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs."))
             pack = build_analysis_pack(registry_root, [profile], limit=2)
+            self.assertEqual(
+                {"https://e/1", "https://e/2"},
+                {item["source_url"] for item in pack.items},
+            )
             pack_path = root / "pack.yaml"
             dump_analysis_pack(pack, pack_path)
             loaded = load_analysis_pack(pack_path)

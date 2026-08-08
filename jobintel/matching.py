@@ -356,6 +356,7 @@ def build_analysis_pack(
             {
                 "vacancy_id": str(meta.get("id", "")),
                 "directory": directory.name,
+                "source_url": _primary_source_url(meta),
                 "profile_version": profile_version,
                 "job_version": job_version,
                 "vacancy": vacancy,
@@ -534,6 +535,19 @@ def _compact_vacancy(meta: Mapping[str, Any], job_text: str) -> dict[str, Any]:
     if sources:
         metadata["sources"] = sources
     return {"metadata": metadata, "job_description": _stable_job_text(job_text)}
+
+
+def _primary_source_url(meta: Mapping[str, Any]) -> str:
+    sources = meta.get("sources")
+    if not isinstance(sources, list):
+        return ""
+    for source in sources:
+        if not isinstance(source, dict):
+            continue
+        url = str(source.get("url") or "").strip()
+        if url:
+            return url
+    return ""
 
 
 def _stable_job_text(job_text: str) -> str:

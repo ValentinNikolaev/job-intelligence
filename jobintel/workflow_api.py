@@ -36,9 +36,18 @@ class QueueItem:
     reasons: tuple[str, ...]
 
     def to_api_dict(self, *, base: Path | None = None) -> dict[str, Any]:
+        source_url = next(
+            (
+                str(source.get("url") or "").strip()
+                for source in self.vacancy.sources
+                if isinstance(source, dict) and str(source.get("url") or "").strip()
+            ),
+            "",
+        )
         return {
             "vacancy_id": self.vacancy.vacancy_id,
             "directory": self.vacancy.directory.name if base is None else self.vacancy.to_api_dict(base=base)["directory"],
+            "source_url": source_url,
             "company": self.vacancy.company,
             "title": self.vacancy.title,
             "status": self.vacancy.status,

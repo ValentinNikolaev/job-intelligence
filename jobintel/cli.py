@@ -365,7 +365,11 @@ def main(argv: list[str] | None = None) -> int:
     try:
         with workflow_lock(project_root, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
             failed = False
-            collected = _collect_selected_jobs(selected, limit=collection_limit)
+            collected = _collect_selected_jobs(
+                selected,
+                limit=collection_limit,
+                error_log_dir=registry_dir,
+            )
             for name, summary, jobs in collected:
                 summary = _store_collected_jobs(
                     name,
@@ -413,18 +417,19 @@ def _collect_selected_jobs(
     selected: Iterable[tuple[str, Collector]],
     *,
     limit: int | None,
+    error_log_dir: Path | None = None,
 ) -> list[tuple[str, CollectorSummary, list[NormalizedJob]]]:
     collector_items = list(selected)
     if len(collector_items) <= 1:
         return [
-            (name, *(_fetch_collector_jobs(name, collector, limit=limit)))
+            (name, *(_fetch_collector_jobs(name, collector, limit=limit, error_log_dir=error_log_dir)))
             for name, collector in collector_items
         ]
 
     results: dict[str, tuple[CollectorSummary, list[NormalizedJob]]] = {}
     with ThreadPoolExecutor(max_workers=len(collector_items)) as executor:
         futures = {
-            executor.submit(_fetch_collector_jobs, name, collector, limit=limit): name
+            executor.submit(_fetch_collector_jobs, name, collector, limit=limit, error_log_dir=error_log_dir): name
             for name, collector in collector_items
         }
         for future in as_completed(futures):
@@ -438,6 +443,7 @@ def _fetch_collector_jobs(
     collector: Collector,
     *,
     limit: int | None,
+    error_log_dir: Path | None = None,
 ) -> tuple[CollectorSummary, list[NormalizedJob]]:
     summary = CollectorSummary(source=name)
     jobs: list[NormalizedJob] = []
@@ -451,6 +457,11 @@ def _fetch_collector_jobs(
     except Exception as exc:
         summary.errors += 1
         print(f"{name}: collection failed: {exc}", file=sys.stderr)
+        if name == "cleanjobdata" and error_log_dir is not None:
+            error_log_dir.mkdir(parents=True, exist_ok=True)
+            (error_log_dir / "cleanjobdata-latest-error.txt").write_text(
+                f"{type(exc).__name__}: {exc}\n", encoding="utf-8"
+            )
     collector_errors = getattr(collector, "errors", 0)
     if isinstance(collector_errors, int) and collector_errors > 0:
         summary.errors += collector_errors

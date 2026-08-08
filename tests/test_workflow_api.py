@@ -129,6 +129,7 @@ class WorkflowApiTests(unittest.TestCase):
         self.assertEqual(1, summary["pending_analyze"])
         self.assertEqual(0, summary["pending_prepare"])
         self.assertEqual(self.pending.directory, analyze["items"][0]["directory"])
+        self.assertEqual("https://example.test/pending", analyze["items"][0]["source_url"])
         self.assertEqual(0, analyze["items"][0]["analysis_priority"])
         self.assertEqual([], prepare["items"])
 

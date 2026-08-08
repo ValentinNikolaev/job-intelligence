@@ -6,7 +6,14 @@ from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import AsyncMock, patch
 
-from scripts.notify_telegram import message_with_initiator, notification_config, preserve_unsent_message, send_message
+from scripts.notify_telegram import (
+    enrich_vacancy_urls,
+    format_message_html,
+    message_with_initiator,
+    notification_config,
+    preserve_unsent_message,
+    send_message,
+)
 
 
 class TelegramNotificationTests(unittest.TestCase):
@@ -20,8 +27,58 @@ class TelegramNotificationTests(unittest.TestCase):
             asyncio.run(send_message("A title\nScore: 80", token="secret", chat_id="123"))
         command = create_process.call_args.args
         self.assertIn("chat_id=123", command)
-        self.assertIn("text=A title\nScore: 80", command)
+        self.assertIn("text=<b>A title</b>\n<b>Score:</b> <i>80</i>", command)
+        self.assertIn("parse_mode=HTML", command)
+        self.assertIn("disable_web_page_preview=true", command)
         self.assertIn("https://api.telegram.org/botsecret/sendMessage", command)
+
+    def test_formats_vacancies_with_safe_labels_and_blank_separator(self) -> None:
+        message = "\n".join(
+            (
+                "Automation ID: batch-analysis",
+                "SumUp — Backend Engineer (score 88)",
+                "Vacancy ID: one",
+                "Directory: sumup",
+                "URL: https://example.test/job?a=1&b=2",
+                "Acme — Senior PHP Engineer (score 84)",
+                "Vacancy ID: two",
+                "Directory: acme",
+                "URL: https://example.test/other",
+            )
+        )
+
+        formatted = format_message_html(message)
+
+        self.assertIn("<b>Automation ID:</b> <i>batch-analysis</i>", formatted)
+        self.assertIn("<b>SumUp — Backend Engineer</b> <i>(score 88)</i>", formatted)
+        self.assertIn("<b>Vacancy ID:</b> one", formatted)
+        self.assertIn("https://example.test/job?a=1&amp;b=2", formatted)
+        self.assertIn("</b> https://example.test/job?a=1&amp;b=2\n\n<b>Acme", formatted)
+
+    def test_enriches_unavailable_url_from_registry(self) -> None:
+        with TemporaryDirectory() as temporary:
+            registry_root = Path(temporary) / "registry"
+            vacancy = registry_root / "jobs" / "sumup"
+            vacancy.mkdir(parents=True)
+            (vacancy / "meta.yaml").write_text(
+                "\n".join(
+                    (
+                        "id: vacancy-one",
+                        "sources:",
+                        "- source: arbeitnow",
+                        "  url: https://example.test/sumup",
+                    )
+                ),
+                encoding="utf-8",
+            )
+
+            enriched = enrich_vacancy_urls(
+                "SumUp — Backend Engineer\nVacancy ID: vacancy-one\nURL: unavailable",
+                registry_root,
+            )
+
+        self.assertIn("URL: https://example.test/sumup", enriched)
+        self.assertNotIn("URL: unavailable", enriched)
 
     def test_loads_credentials_from_sources_env_with_environment_override(self) -> None:
         with TemporaryDirectory() as temporary:

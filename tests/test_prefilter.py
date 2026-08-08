@@ -50,6 +50,20 @@ class PrefilterTests(unittest.TestCase):
                 self.assertIsNotNone(rejection)
                 self.assertEqual("role_mismatch", rejection.category)
 
+    def test_rejects_explicitly_non_remote_vacancies(self) -> None:
+        rejection = prefilter_job(
+            make_job(
+                description="Build Go services in our Berlin office.",
+                remote=False,
+                employment_type="Permanent, Full time",
+            ),
+            now=self.now,
+        )
+
+        self.assertIsNotNone(rejection)
+        self.assertEqual("location_requirement", rejection.category)
+        self.assertIn("non-remote", rejection.reason)
+
     def test_english_requirement_is_green_light_for_local_language_text(self) -> None:
         rejection = prefilter_job(
             make_job(
@@ -140,6 +154,24 @@ class PrefilterTests(unittest.TestCase):
         self.assertIsNotNone(rejection)
         self.assertEqual("tech_stack", rejection.category)
         self.assertIn("Go/Golang or PHP", rejection.reason)
+
+    def test_rejects_reported_non_target_stack_regressions(self) -> None:
+        cases = (
+            (
+                "Strong hands-on experience with Java, Spring Boot, React, and AWS.",
+                "Spring Boot",
+            ),
+            (
+                "Very proficient in Node.js and JavaScript programming for backend services.",
+                "Go/Golang or PHP",
+            ),
+        )
+        for description, expected_reason in cases:
+            with self.subTest(description=description):
+                rejection = prefilter_job(make_job(description=description), now=self.now)
+                self.assertIsNotNone(rejection)
+                self.assertEqual("tech_stack", rejection.category)
+                self.assertIn(expected_reason, rejection.reason)
 
     def test_allows_go_and_php_aliases(self) -> None:
         for description in (

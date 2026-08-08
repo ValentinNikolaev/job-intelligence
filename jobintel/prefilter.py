@@ -63,6 +63,8 @@ def prefilter_job(
     title_text = _normalize_text(job.title)
     if _is_obvious_role_mismatch(title_text):
         return Rejection("role_mismatch", "title is an obvious mismatch for a backend profile")
+    if job.remote is False:
+        return Rejection("location_requirement", "vacancy is explicitly non-remote")
 
     full_text = _normalize_text(
         "\n".join(
