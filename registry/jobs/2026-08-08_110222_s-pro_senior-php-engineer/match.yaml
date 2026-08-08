@@ -1,0 +1,20 @@
+score: 91
+recommendation: strong_match
+summary: Excellent match for senior PHP modernization work with Laravel, MySQL, AWS,
+  performance, observability, and legacy systems.
+strengths:
+- Extensive PHP and Laravel experience
+- MySQL, AWS, Docker-adjacent infrastructure, and production troubleshooting
+- Refactoring, performance optimization, logging, and modernization leadership
+gaps:
+- Docker and Redis are not explicitly evidenced as hands-on technologies
+- MongoDB and manual testing are not evidenced
+concerns:
+- Employer and fintech context are described at a high level
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T11:09:50Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:1ce8f23ba44ad9c4d2317b4f98e5bf51c9621220d8ce5e52da2805a11979994b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

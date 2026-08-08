@@ -1,21 +1,21 @@
 # Match Analysis
 
 **Score:** 48/100  
-**Recommendation:** Weak Match
+**Recommendation:** Possible Match
 
-Automation and integration experience is relevant, but this is primarily a RevOps/CRM ownership role rather than backend engineering.
+Backend automation and data fundamentals transfer well, but the role is primarily GTM and RevOps tooling ownership.
 
 ## Why it matches
 
-- automation platforms
-- APIs and integrations
-- systems ownership
+- Automation platforms, APIs, integrations, SQL-adjacent data systems, and AI workflows
+- End-to-end ownership of complex production systems
+- Cloud and operational reliability background
 
 ## Gaps
 
-- HubSpot/Clay/Superset/n8n
-- RevOps and sales processes
+- No evidence of HubSpot, Clay, n8n, CRM operations, or B2B sales workflows
+- No evidence of GTM, RevOps, or revenue engineering experience
 
 ## Concerns
 
-- EU work permit explicitly required
+- On-site Hamburg requirement and EU work permit requirement
