@@ -18,13 +18,15 @@ sources:
       Go, with Docker/Kubernetes tooling.
 published_at: null
 discovered_at: '2026-08-01T15:58:16Z'
-updated_at: '2026-08-01T16:58:51Z'
-status: applied
+updated_at: '2026-08-08T08:55:34Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-08-01T15:58:16Z'
 - status: applied
   changed_at: '2026-08-01T16:58:51Z'
+- status: rejected
+  changed_at: '2026-08-08T08:55:34Z'
 analysis_priority: 100
 fingerprint: sha256:89612ad0d5a110031b18bdf94576705295785137e391365a32a11b386df07506
 data_source: custom
