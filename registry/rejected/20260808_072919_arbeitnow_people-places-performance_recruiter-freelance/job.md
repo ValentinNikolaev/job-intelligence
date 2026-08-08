@@ -49,4 +49,4 @@ People · Places · Performance è la società di consulenza di selezione di San
 
 Non serve la lettera di presentazione. Mandami il CV e due righe sui profili con cui hai lavorato più di recente. Ti rispondo entro 48 ore.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

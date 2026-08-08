@@ -93,4 +93,4 @@ We value freedom with responsibility, transparency, and a growth mindset. We avo
 - **Rapidly changing priorities**: our roadmap can pivot quickly. It's a fast-paced environment with a LOT of work to be done.
 - **Flexibility required**: you will have to learn new things all the time.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

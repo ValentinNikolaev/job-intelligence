@@ -183,4 +183,4 @@ Compensation: €55K – €85K • Offers Equity • Offers Bonus
 
 - • Base salary €55K – €85K • Offers Equity • Offers Bonus
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

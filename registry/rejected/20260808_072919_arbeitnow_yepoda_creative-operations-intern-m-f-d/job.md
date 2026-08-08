@@ -133,4 +133,4 @@ Make sure to apply by clicking on the “Apply for this job” button below. Ple
 
 *At Yepoda we are dedicated to providing equal employment opportunities to all individuals, regardless of race, color, ethnicity, ancestry, religion, national origin, citizenship, gender, gender identity or expression, sexual orientation, age, marital status, parental status, disability, or any other status protected by applicable law.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

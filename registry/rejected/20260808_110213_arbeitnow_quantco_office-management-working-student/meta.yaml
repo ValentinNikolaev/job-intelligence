@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: office-management-working-student-munich-or-karlsruhe-76537
+source_url: https://www.arbeitnow.com/jobs/companies/quantco/office-management-working-student-munich-or-karlsruhe-76537
+title: Office Management Working Student
+company: Quantco
+location: Munich or Karlsruhe
+published_at: '2026-08-08T08:24:45Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T11:02:13Z'
+rejected_at: '2026-08-08T11:02:13Z'

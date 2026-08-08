@@ -116,4 +116,4 @@ At Lio, you’ll help build the next category-defining AI company from the groun
 
 You’ll have plenty of room to experiment with new tools and ideas, develop your skills, and make a visible impact on how Lio shows up online.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

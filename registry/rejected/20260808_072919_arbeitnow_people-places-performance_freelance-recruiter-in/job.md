@@ -51,4 +51,4 @@ Posted: 2026-08-07T20:30:25Z
 
 **Fähigkeiten: Active Sourcing · Telefoninterview · Blue Collar Recruiting · Italienisch · Deutsch · Somministrazione**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

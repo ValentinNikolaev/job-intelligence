@@ -65,4 +65,4 @@ Wenn du bereit bist, dich neuen Herausforderungen zu stellen und Innovationen vo
 
 Bewirb dich jetzt und sei ein Teil unserer spannenden Reise. Wir freuen uns darauf, dich in unserem Team willkommen zu heißen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

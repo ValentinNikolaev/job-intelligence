@@ -104,4 +104,4 @@ We are committed to success. We embrace individuals from all backgrounds who sha
 
 **Offer**: If it's a mutual fit, you'll receive a personal offer and feedback call, followed by a written offer document.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

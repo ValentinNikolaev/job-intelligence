@@ -79,4 +79,4 @@ Passion for automation, infrastructure, and solving complex scaling challenges
 
 Work directly with our CTO on company-defining infrastructure decisions. Build the foundation for one of Europe's fastest-growing enterprise AI companies. Solve challenging problems around global scaling, reliability, and agentic AI infrastructure. Competitive compensation, meaningful equity, and exceptional teammates. 100% on-site in our Munich office, where we build together every day
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

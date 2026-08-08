@@ -63,4 +63,4 @@ English required; German is a plus
 
 Build infrastructure powering enterprise procurement at scale. Solve engineering challenges across APIs, web integrations, and automation. Own production-critical systems used by leading global enterprises. Competitive compensation, meaningful equity, and exceptional teammates. 100% on-site in our Munich office, where we build together every day.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

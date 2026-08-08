@@ -80,4 +80,4 @@ Du studierst noch und willst Marketing wirklich lernen – nicht nur Folien baue
 - Idealerweise kannst du uns längerfristig begleiten (mindestens 12 Monate oder länger), damit du dich gut einarbeiten und eigene Themen übernehmen kannst.
 Du bist unsicher, ob du alle Kriterien erfüllst? Bewirb dich trotzdem – Motivation und Lernbereitschaft sind uns wichtiger als ein zu 100 % perfektes Profil.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

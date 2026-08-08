@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '5271272905534773303'
+source_url: https://jooble.org/desc/5271272905534773303?ckey=remote+senior+backend+engineer&rgn=55180&pos=47&groupId=2134052230&elckey=-6738073125358862478&p=1&aq=-7175008169723177800&cid=15922&jobAge=7613&brelb=100&bscr=883.1049&scr=883.1049
+title: Senior Backend / Core Engineer
+company: Vendia
+location: Bay County, FL
+published_at: '2025-09-25T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2025-09-25T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-08T11:02:25Z'
+rejected_at: '2026-08-08T11:02:25Z'

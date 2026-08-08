@@ -174,4 +174,4 @@ We have a fantastic team with people from all over the world. We encourage frequ
 
 Please send your resumé in English and PDF.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

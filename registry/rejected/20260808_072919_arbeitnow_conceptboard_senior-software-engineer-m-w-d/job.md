@@ -49,4 +49,4 @@ Du bist hands-on im Platform- oder App-Team, du shippst – und du machst das Te
 - **Wettbewerbsfähige** **Vergütung** – Du erhältst ein attraktives Gehaltspaket und 30 Tage Urlaub pro Jahr.
 - **Mitarbeitervorteile** – Nutze eine Vielzahl von Vergünstigungen über unseren externen Corporate Benefits Partner.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

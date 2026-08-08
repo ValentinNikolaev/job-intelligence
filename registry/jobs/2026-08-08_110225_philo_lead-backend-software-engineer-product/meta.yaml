@@ -1,0 +1,24 @@
+schema_version: 2
+id: 258db8e4-7ee2-46bf-8884-e0287556fd9e
+title: Lead Backend Software Engineer (Product)
+company: Philo
+company_url: null
+location: Cambridge, MA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-5746970215638802906'
+  url: https://jooble.org/away/-5746970215638802906?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=101&brelb=15&scr=516.68463&bscr=516.68463&aq=-5311605535738554921&elckey=6101160414143017058
+published_at: '2026-08-04T00:00:00.0000000'
+discovered_at: '2026-08-08T11:02:25Z'
+updated_at: '2026-08-08T11:02:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-08T11:02:25Z'
+analysis_priority: 0
+fingerprint: sha256:016d16ddd339d0a9747cda739c9550be6e0732857f384c7d3635264516efab2f
+data_source: jooble
+content_source: jooble
+company_content_source: null

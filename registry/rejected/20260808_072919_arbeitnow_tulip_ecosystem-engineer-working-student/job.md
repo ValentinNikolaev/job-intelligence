@@ -89,4 +89,4 @@ It is unlawful in Massachusetts to require or administer a lie detector test as 
 
 Please note that we may use AI-based tools to support parts of our hiring process. All data processing is carried out in compliance with local data protection laws, ensuring all personal candidate information is handled securely and ethically.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
