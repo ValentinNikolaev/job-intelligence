@@ -2,22 +2,24 @@
 
 # Vacancy Catalog
 
-Total vacancies: 396
+Total vacancies: 318
 
-- Found: 379
+- Found: 302
 - Applied: 10
 - Interview: 1
-- Rejected: 6
+- Rejected: 5
 
 ## Monthly catalogs
 
 - [2026-08](2026-08.md)
-- [2026-07](2026-07.md)
 
 ## Recent vacancies
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-08 | [Ampcus](../registry/jobs/2026-08-08_001345_ampcus_golang-backend-engineer/) | [Golang Backend Engineer](../registry/jobs/2026-08-08_001345_ampcus_golang-backend-engineer/job.md) | McLean, VA | Jooble | Found | 2026-08-08 | [Jooble](https://jooble.org/away/-8659807634482100021?p=1&pos=1&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=90&brelb=15&scr=944.3848&bscr=944.3848&aq=-2486968916157025743&elckey=5511080871640761550) | — | — | — | — | — |
+| 2026-08-08 | [Scrambly](../registry/jobs/2026-08-08_001342_scrambly_senior-backend-engineer-node-js/) | [Senior Backend Engineer (Node.js)](../registry/jobs/2026-08-08_001342_scrambly_senior-backend-engineer-node-js/job.md) | Worldwide | Himalayas | Found | 2026-08-08 | [Himalayas](https://himalayas.app/companies/scrambly/jobs/senior-backend-engineer-node-js) | — | — | — | — | — |
+| 2026-08-08 | [Empat](../registry/jobs/2026-08-08_001342_empat_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-08_001342_empat_senior-ai-engineer/job.md) | Worldwide | Himalayas | Found | 2026-08-08 | [Himalayas](https://himalayas.app/companies/empat/jobs/senior-ai-engineer) | — | — | — | — | — |
 | 2026-08-07 | [Sonyinteractiveentertainmentglobal](../registry/jobs/2026-08-07_181604_sonyinteractiveentertainmentglobal_software-engineer-i/) | [Software Engineer I](../registry/jobs/2026-08-07_181604_sonyinteractiveentertainmentglobal_software-engineer-i/job.md) | Berlin | Arbeitnow | Found | 2026-08-07 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/sonyinteractiveentertainmentglobal/software-engineer-i-berlin-393990) | — | — | — | — | — |
 | 2026-08-07 | [Сільпо](../registry/jobs/2026-08-07_150233_%D1%81%D1%96%D0%BB%D1%8C%D0%BF%D0%BE_fullstack-engineer-php-angular/) | [Fullstack Engineer (PHP+Angular)](../registry/jobs/2026-08-07_150233_%D1%81%D1%96%D0%BB%D1%8C%D0%BF%D0%BE_fullstack-engineer-php-angular/job.md) | віддалено | Dou | Found | 2026-08-07 | [Dou](https://jobs.dou.ua/companies/silpo/vacancies/368959/) | [Open](../registry/jobs/2026-08-07_150233_%D1%81%D1%96%D0%BB%D1%8C%D0%BF%D0%BE_fullstack-engineer-php-angular/company.md) | — | — | — | — |
 | 2026-08-07 | [sumup](../registry/jobs/2026-08-07_150229_sumup_senior-full-stack-engineer-sidekick/) | [Senior Full Stack Engineer - Sidekick](../registry/jobs/2026-08-07_150229_sumup_senior-full-stack-engineer-sidekick/job.md) | Berlin | Arbeitnow | Found | 2026-08-07 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/sumup/senior-full-stack-engineer-sidekick-berlin-418196) | — | — | — | — | — |
@@ -35,6 +37,3 @@ Total vacancies: 396
 | 2026-08-06 | [airSlate](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/job.md) | Київ, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/368837/) | [Open](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/company.md) | — | — | — | — |
 | 2026-08-06 | [Newxel](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/) | [Full-stack Software Engineer (NXJ-192)](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/job.md) | Київ, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/newxel/vacancies/368785/) | [Open](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/company.md) | — | — | — | — |
 | 2026-08-06 | [S-PRO](../registry/jobs/2026-08-06_123736_s-pro_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-08-06_123736_s-pro_senior-php-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/s-pro/vacancies/368773/) | [Open](../registry/jobs/2026-08-06_123736_s-pro_senior-php-engineer/company.md) | — | — | — | — |
-| 2026-08-06 | [Point2Web](../registry/jobs/2026-08-06_123736_point2web_senior-full-stack-engineer/) | [Senior Full-Stack Engineer](../registry/jobs/2026-08-06_123736_point2web_senior-full-stack-engineer/job.md) | віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/point2web/vacancies/368793/) | [Open](../registry/jobs/2026-08-06_123736_point2web_senior-full-stack-engineer/company.md) | — | — | — | — |
-| 2026-08-06 | [Influence Pro Services](../registry/jobs/2026-08-06_110239_influence-pro-services_senior-software-engineer-golang/) | [Senior Software Engineer Golang](../registry/jobs/2026-08-06_110239_influence-pro-services_senior-software-engineer-golang/job.md) | віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/influence-pro-services/vacancies/360067/) | [Open](../registry/jobs/2026-08-06_110239_influence-pro-services_senior-software-engineer-golang/company.md) | — | — | — | — |
-| 2026-08-06 | [Workmotion](../registry/jobs/2026-08-06_110200_workmotion_senior-software-engineer/) | [Senior Software Engineer](../registry/jobs/2026-08-06_110200_workmotion_senior-software-engineer/job.md) | Germany | Arbeitnow | Found | 2026-08-06 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/workmotion/remote-senior-software-engineer-germany-225652) | — | — | — | — | — |
