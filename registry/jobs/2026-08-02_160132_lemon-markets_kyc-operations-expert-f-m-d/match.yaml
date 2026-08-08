@@ -1,0 +1,20 @@
+score: 12
+recommendation: not_match
+summary: KYC operations is a compliance and customer-operations specialization not
+  evidenced in the backend engineering profile.
+strengths:
+- Fintech domain exposure
+- Automation and systems thinking
+gaps:
+- No KYC/AML operations experience
+- No German or compliance qualification evidence
+concerns:
+- Berlin hybrid location and domain-specific operational requirements
+hard_rejection: true
+hard_rejection_reason: The role requires KYC/AML operations experience not supported
+  by the profile.
+analyzed_at: '2026-08-08T08:49:57Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c5241682131fd24720aebceaf6b4f371c5ba7ba2914a3e370e61eec8a5431928
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

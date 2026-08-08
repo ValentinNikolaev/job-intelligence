@@ -1,0 +1,18 @@
+score: 22
+recommendation: not_match
+summary: The candidate understands backend automation platforms but lacks the required
+  senior partnerships and systems-integrator commercial experience.
+strengths:
+- Technical stakeholder collaboration
+- Automation domain familiarity
+gaps:
+- No channel partnerships or commercial account ownership
+concerns:
+- Berlin office location
+hard_rejection: true
+hard_rejection_reason: The essential partnerships experience is unsupported.
+analyzed_at: '2026-08-08T08:49:57Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:44f67bda871a67576d4f83388af644ad7e761911459f313733fd7f6599e6c4af
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

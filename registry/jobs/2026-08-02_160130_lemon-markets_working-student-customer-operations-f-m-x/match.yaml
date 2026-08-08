@@ -1,0 +1,20 @@
+score: 18
+recommendation: not_match
+summary: The candidate is a senior backend engineer and the working-student customer-operations
+  scope is fundamentally mismatched.
+strengths:
+- Support automation experience
+- Customer-operations systems exposure
+gaps:
+- No student status evidence
+- No customer-operations background as the primary function
+concerns:
+- Seniority mismatch and Berlin hybrid location
+hard_rejection: true
+hard_rejection_reason: The working-student requirement and fundamentally different
+  role level conflict with the profile.
+analyzed_at: '2026-08-08T08:49:57Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:5f5eef4700d8e6325defe5d23f17ced47f043ec4516e622fde52e072742ac5ee
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
