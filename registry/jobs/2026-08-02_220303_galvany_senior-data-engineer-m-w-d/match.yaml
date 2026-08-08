@@ -1,0 +1,21 @@
+score: 58
+recommendation: possible_match
+summary: Relevant event-driven and analytics-infrastructure experience supports a
+  possible fit, but the role centers on Python, SQL, and dedicated data-engineering
+  tooling not established in the profile.
+strengths:
+- Event analytics infrastructure and EventBridge
+- Queues, schemas, routing, reliability, and monitoring
+- Go backend and AWS systems experience
+gaps:
+- Python and SQL depth.
+concerns:
+- The position is Berlin-based with partial remote work; relocation willingness is
+  unknown.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:00:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:0aa01f398ed3b8c62a8adc004bc423fb2a5169d801e849ab854483e988e2df3f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

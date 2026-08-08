@@ -1,0 +1,18 @@
+score: 28
+recommendation: weak_match
+summary: The candidate offers strong engineering depth but no demonstrated go-to-market,
+  sales engineering, or growth ownership.
+strengths:
+- Technical integrations and stakeholder collaboration
+gaps:
+- GTM strategy, pipeline generation, and commercial execution.
+concerns:
+- The title may combine technical and commercial work, but the commercial component
+  is not evidenced.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:00:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e57d9cb8608ef08a7a672dfac8dec9f83e2a6ba44a62048f9b999000f02a4114
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

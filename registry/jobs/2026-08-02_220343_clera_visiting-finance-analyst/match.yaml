@@ -1,0 +1,17 @@
+score: 8
+recommendation: not_match
+summary: The profile does not evidence finance analysis, accounting, or financial
+  modeling experience.
+strengths:
+- Technical data and automation skills are adjacent but insufficient.
+gaps:
+- Finance analysis, accounting, and financial modeling.
+concerns:
+- The role is outside the candidateвЂ™s demonstrated professional domain.
+hard_rejection: true
+hard_rejection_reason: Fundamentally incompatible primary role experience.
+analyzed_at: '2026-08-08T08:00:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:52721585a79e234977d53c14d0a524a379e2c97996826713e73c447d1f7d15f2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

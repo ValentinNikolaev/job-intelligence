@@ -1,0 +1,17 @@
+score: 22
+recommendation: not_match
+summary: Backend engineering and technical leadership do not establish business-operations
+  management experience.
+strengths:
+- Process improvement and cross-functional coordination.
+gaps:
+- Business operations, planning, and operational metrics ownership.
+concerns:
+- No direct business-operations track record is documented.
+hard_rejection: true
+hard_rejection_reason: Essential business-operations experience is unsupported.
+analyzed_at: '2026-08-08T08:00:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c9321a429d12fb647f3df67b05c82f42c5b0952d4ea6d484332d2f402c326e4d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

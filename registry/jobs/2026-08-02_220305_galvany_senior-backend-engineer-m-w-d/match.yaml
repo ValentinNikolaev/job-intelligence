@@ -1,0 +1,22 @@
+score: 90
+recommendation: strong_match
+summary: 'Excellent fit for the Go backend role: event-driven systems, APIs, integrations,
+  automation, observability, and end-to-end production ownership are all strongly
+  evidenced.'
+strengths:
+- Go and backend engineering
+- Event-driven architecture and data pipelines
+- AWS/Kubernetes, reliability, CI/CD, and observability
+- Automation and AI-assisted systems
+gaps:
+- Kafka, Azure, and Python/PyTorch are not directly evidenced.
+concerns:
+- Berlin office presence is expected with only partial remote work; relocation willingness
+  is unknown.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:00:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c2496f754c8d6561b2bef523dfd6f42378f2d955953b3b64c914df55c94ab82b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
