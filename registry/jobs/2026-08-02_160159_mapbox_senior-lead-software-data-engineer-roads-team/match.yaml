@@ -1,0 +1,22 @@
+score: 72
+recommendation: match
+summary: Strong backend, Go, AWS, event-driven architecture, data pipelines, and technical
+  leadership align well; geospatial/roads expertise and some data-engineering specifics
+  need validation.
+strengths:
+- Go and backend systems
+- AWS, queues, EventBridge, data lake pipelines
+- Technical leadership and reliability
+gaps:
+- Geospatial/roads domain
+- Mapbox stack and geospatial data
+- Explicit large-scale data engineering tooling
+concerns:
+- Role may require specialized geospatial knowledge
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:40:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b0abe6e3e6affd052fd04cc260e90765bd9b36736f0aacfc3691af84b4ff346d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,20 @@
+score: 34
+recommendation: weak_match
+summary: The candidate can contribute technical domain knowledge, but the documented
+  career is engineering rather than product management or IoT platform ownership.
+strengths:
+- Event-driven systems and APIs
+- Technical stakeholder communication
+gaps:
+- Product management lifecycle ownership
+- IoT platform/product discovery
+- Product metrics and prioritization
+concerns:
+- No direct IoT product-management evidence
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:40:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b4825cccdc7608a2f3eed8df3998fe0837dd7494224abc449fb7f7a5fc2e15da
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

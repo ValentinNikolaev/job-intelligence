@@ -1,0 +1,21 @@
+score: 15
+recommendation: not_match
+summary: This is a recruiting and People Operations role with no corresponding candidate
+  experience in the source record.
+strengths:
+- Process optimization
+- Analytical and cross-functional collaboration
+gaps:
+- Technical/business recruiting
+- HR operations and analytics
+- Talent sourcing and candidate management
+concerns:
+- Career track is software engineering
+hard_rejection: true
+hard_rejection_reason: The candidate has no demonstrated Talent or People function
+  experience.
+analyzed_at: '2026-08-08T08:40:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e04212cea9f12b83cd8ea36c68fe98a87f2aef4ce872846d5d8ba6a0b5f3d03b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

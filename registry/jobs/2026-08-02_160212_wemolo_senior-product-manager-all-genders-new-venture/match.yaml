@@ -1,0 +1,21 @@
+score: 35
+recommendation: weak_match
+summary: Technical leadership and startup product collaboration are relevant, but
+  the evidence does not show senior product-management ownership for a new venture.
+strengths:
+- Startup technical leadership
+- Roadmap and stakeholder collaboration
+- Architecture/product trade-off judgment
+gaps:
+- Product discovery and strategy ownership
+- Product metrics and customer validation
+- Formal product-management experience
+concerns:
+- Role is product-led rather than engineering-led
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:40:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:3ad7fa90f56bd3f35090ba211ec8c6d33bf62e6bded281bce0454ba3f93792e0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
