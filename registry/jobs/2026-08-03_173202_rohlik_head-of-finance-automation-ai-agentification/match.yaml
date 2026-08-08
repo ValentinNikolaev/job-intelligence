@@ -1,0 +1,17 @@
+score: 50
+recommendation: weak_match
+summary: Rohlik role is assessed independently against the supplied backend/software
+  profile; fit is weak match.
+strengths:
+- Candidate evidence aligns with role needs around go, api, software, ai, automation.
+gaps:
+- Fluent German is not evidenced in the supplied candidate profile.
+concerns:
+- Confirm location, timezone, and any domain-specific requirements before applying.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T07:40:02Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:18285b8462461665f4f90cea5104c71c11502fc698331fc9ecd6851c1bfc434b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

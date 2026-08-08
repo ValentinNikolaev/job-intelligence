@@ -1,0 +1,17 @@
+score: 17
+recommendation: not_match
+summary: Rohlik role is assessed independently against the supplied backend/software
+  profile; fit is reject.
+strengths:
+- Candidate evidence aligns with role needs around ai, lead.
+gaps:
+- Fluent German is not evidenced in the supplied candidate profile.
+concerns:
+- The central requirements are materially outside the supplied candidate evidence.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T07:40:02Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:81529d6ac02962f33d205251cad7ae5764d34a2607dd9d9feded122cd0520fd2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
