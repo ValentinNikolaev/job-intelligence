@@ -1,0 +1,20 @@
+score: 88
+recommendation: strong_match
+summary: Strong fit for a Golang backend role building production systems from an
+  early stage, with relevant Kubernetes and architecture experience.
+strengths:
+- More than four years of documented Go/backend experience, including a current Go
+  automation platform.
+- Strong ownership of scalable, reliable systems and production delivery.
+- Direct Kubernetes, AWS, event-driven, CI/CD, and technical leadership experience.
+gaps:
+- GCP and GraphQL are not documented in the candidate profile.
+- The role's Ukrainian-language team context and exact product domain are not evidenced.
+concerns: []
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T20:12:46Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:784ad9433cd43f501159484e035137b8e4d2a86f851165056ad09d4b56f982c6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

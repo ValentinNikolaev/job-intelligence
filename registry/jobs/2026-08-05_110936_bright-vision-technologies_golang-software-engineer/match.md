@@ -3,19 +3,19 @@
 **Score:** 82/100  
 **Recommendation:** Strong Match
 
-The Go software-engineering focus aligns with substantial recent Go backend and production-platform experience.
+Strong technical alignment with the advertised Golang backend and infrastructure work, though the supplied posting is too abbreviated to assess the full role.
 
 ## Why it matches
 
-- Recent Go backend ownership
-- API orchestration and integrations
-- Production reliability and observability
-- Microservices and cloud infrastructure
+- Extensive backend engineering experience in Go, APIs, microservices, and production systems.
+- Relevant infrastructure, reliability, observability, Kubernetes, AWS, and CI/CD background.
+- Experience collaborating on shared codebases and high-throughput services.
 
 ## Gaps
 
-- Specific customer domain and required seniority are not fully evidenced.
+- The available description does not specify the required seniority, exact stack, or domain constraints.
+- Phoenix location and remote-work eligibility details are not fully explained in the supplied record.
 
 ## Concerns
 
-- Consultancy context may require rapid adaptation across client stacks.
+- The source text is truncated, so key requirements may be missing.

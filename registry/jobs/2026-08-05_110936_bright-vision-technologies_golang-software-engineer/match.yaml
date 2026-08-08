@@ -1,20 +1,24 @@
 score: 82
 recommendation: strong_match
-summary: The Go software-engineering focus aligns with substantial recent Go backend
-  and production-platform experience.
+summary: Strong technical alignment with the advertised Golang backend and infrastructure
+  work, though the supplied posting is too abbreviated to assess the full role.
 strengths:
-- Recent Go backend ownership
-- API orchestration and integrations
-- Production reliability and observability
-- Microservices and cloud infrastructure
+- Extensive backend engineering experience in Go, APIs, microservices, and production
+  systems.
+- Relevant infrastructure, reliability, observability, Kubernetes, AWS, and CI/CD
+  background.
+- Experience collaborating on shared codebases and high-throughput services.
 gaps:
-- Specific customer domain and required seniority are not fully evidenced.
+- The available description does not specify the required seniority, exact stack,
+  or domain constraints.
+- Phoenix location and remote-work eligibility details are not fully explained in
+  the supplied record.
 concerns:
-- Consultancy context may require rapid adaptation across client stacks.
+- The source text is truncated, so key requirements may be missing.
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-08-07T17:00:17Z'
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T20:12:46Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:7be95840f6eb0e2d3d004917b7d9d613ba53c0d415821186e355edfcbee8341a
+job_version: sha256:4a7db7a49d88c94ab45da35cc5010bbe0837b5778c7fcc5a15bdd4a12b3e3ab1
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
