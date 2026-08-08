@@ -1,0 +1,17 @@
+score: 8
+recommendation: not_match
+summary: Role is assessed against documented backend engineering experience.
+strengths:
+- Technical communication and cross-functional collaboration experience
+gaps:
+- Core role domain is not evidenced in the profile
+concerns:
+- Role is materially different from backend software engineering
+hard_rejection: true
+hard_rejection_reason: Role scope is outside the evidenced backend software engineering
+  profile.
+analyzed_at: '2026-08-08T09:00:35Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:150d569ee0de89c8b592305d8d8c6441353d99f9c8a28fd40164efb0bc283703
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
