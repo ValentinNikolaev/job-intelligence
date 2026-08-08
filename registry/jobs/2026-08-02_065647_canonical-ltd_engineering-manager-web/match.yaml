@@ -1,0 +1,23 @@
+score: 61
+recommendation: possible_match
+summary: The candidate has technical leadership and engineering-management-adjacent
+  experience, but the role specifically requires strong modern web leadership in TypeScript,
+  React, or Flutter.
+strengths:
+- Technical Lead experience, mentoring, delivery planning, interviews, and team leadership
+  are documented.
+- Distributed collaboration, Linux, APIs, and production operations are relevant.
+gaps:
+- TypeScript, React/Flutter, web UI delivery, accessibility, and frontend performance
+  are not evidenced.
+- Formal engineering-manager scope is less explicit than technical leadership.
+concerns:
+- The web-specialist requirement is a substantial gap despite relevant leadership
+  experience.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:30:07Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:ddfb34d77ce2cc1099af049b18949e46c73faf12324b5c66343f5a56dbde314a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

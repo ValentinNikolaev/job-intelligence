@@ -1,23 +1,21 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 86/100  
+**Recommendation:** Strong Match
 
-Good match for a remote Go server-backend position, with strong Go, backend, automation, reliability, and infrastructure evidence; Python is less prominent.
+The candidate closely matches the Go/Python backend, remote production-systems, cloud, and reliability profile, with AI engineering alignment also present.
 
 ## Why it matches
 
-- Recent Go backend work
-- automation platforms
-- distributed services
-- Kubernetes and AWS
-- production reliability
+- Recent Go backend automation platform ownership is directly relevant.
+- Python, AWS, Kubernetes, APIs, observability, and resilient delivery pipelines are documented.
+- Experience with AI/LLM automation is supported by the candidate record.
 
 ## Gaps
 
-- Python experience is not clearly established
-- security-product domain is not documented
+- Security-product and Linux server internals experience are not deeply documented.
+- Exact AI engineering depth and role-specific tooling should be validated.
 
 ## Concerns
 
-- Role may require deeper Linux or security engineering specialization
+- The role may expect more low-level server/security specialization than the general backend record shows.

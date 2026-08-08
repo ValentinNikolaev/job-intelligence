@@ -1,0 +1,23 @@
+score: 88
+recommendation: strong_match
+summary: The candidate is a strong fit for hands-on Python/Golang engineering management
+  around cloud infrastructure, Kubernetes, CI/CD, and operational reliability.
+strengths:
+- Go/Python, AWS, Kubernetes, infrastructure migration, CI/CD, monitoring, and production
+  troubleshooting are documented.
+- Technical leadership, team management, coaching, planning, and stakeholder collaboration
+  are supported.
+gaps:
+- Ubuntu image building and direct public-cloud partner engagement are not specifically
+  evidenced.
+- Formal people-management tenure should be clarified.
+concerns:
+- Canonical’s exceptional academic-track-record criterion and travel requirements
+  may need validation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:30:07Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:a485ab2285200184216e30e9bb4e0e2637b159019f2f5c0e27152a4724b11d2e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
