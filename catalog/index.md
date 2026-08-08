@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 318
+Total vacancies: 320
 
-- Found: 302
+- Found: 304
 - Applied: 10
 - Interview: 1
 - Rejected: 5
@@ -17,6 +17,8 @@ Total vacancies: 318
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-08 | [Global Technologies](../registry/jobs/2026-08-08_061453_global-technologies_full-remote-php-developer-laravel-api-expert/) | [Full-Remote PHP Developer \| Laravel & API Expert](../registry/jobs/2026-08-08_061453_global-technologies_full-remote-php-developer-laravel-api-expert/job.md) | Italian Republic | Jooble | Found | 2026-08-08 | [Jooble](https://jooble.org/away/-6847266060912482358?p=1&pos=15&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=120&brelb=10&scr=26.434029&bscr=26.434029&aq=-4971036891791846383&elckey=4167915530227114055) | — | — | — | — | — |
+| 2026-08-08 | [WhiteTech](../registry/jobs/2026-08-08_061450_whitetech_senior-backend-developer-php/) | [Senior Backend Developer (PHP)](../registry/jobs/2026-08-08_061450_whitetech_senior-backend-developer-php/job.md) | Worldwide | Himalayas | Found | 2026-08-08 | [Himalayas](https://himalayas.app/companies/whitetech/jobs/senior-backend-developer-php-5760461047) | — | — | — | — | — |
 | 2026-08-08 | [Ampcus](../registry/jobs/2026-08-08_001345_ampcus_golang-backend-engineer/) | [Golang Backend Engineer](../registry/jobs/2026-08-08_001345_ampcus_golang-backend-engineer/job.md) | McLean, VA | Jooble | Found | 2026-08-08 | [Jooble](https://jooble.org/away/-8659807634482100021?p=1&pos=1&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=90&brelb=15&scr=944.3848&bscr=944.3848&aq=-2486968916157025743&elckey=5511080871640761550) | — | — | — | — | — |
 | 2026-08-08 | [Scrambly](../registry/jobs/2026-08-08_001342_scrambly_senior-backend-engineer-node-js/) | [Senior Backend Engineer (Node.js)](../registry/jobs/2026-08-08_001342_scrambly_senior-backend-engineer-node-js/job.md) | Worldwide | Himalayas | Found | 2026-08-08 | [Himalayas](https://himalayas.app/companies/scrambly/jobs/senior-backend-engineer-node-js) | — | — | — | — | — |
 | 2026-08-08 | [Empat](../registry/jobs/2026-08-08_001342_empat_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-08_001342_empat_senior-ai-engineer/job.md) | Worldwide | Himalayas | Found | 2026-08-08 | [Himalayas](https://himalayas.app/companies/empat/jobs/senior-ai-engineer) | — | — | — | — | — |
@@ -35,5 +37,3 @@ Total vacancies: 318
 | 2026-08-07 | [ITA Consulting GmbH](../registry/jobs/2026-08-07_011117_ita-consulting-gmbh_senior-cloud-engineer-m-f-d/) | [Senior Cloud Engineer (m/f/d)](../registry/jobs/2026-08-07_011117_ita-consulting-gmbh_senior-cloud-engineer-m-f-d/job.md) | Hamburg | Arbeitnow | Found | 2026-08-07 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/ita-consulting-gmbh/senior-cloud-engineer-hamburg-59107) | — | — | — | — | — |
 | 2026-08-07 | [Doctolib](../registry/jobs/2026-08-07_011116_doctolib_engineering-manager-site-reliability-observabili/) | [Engineering Manager - Site Reliability & Observability (x/f/m)](../registry/jobs/2026-08-07_011116_doctolib_engineering-manager-site-reliability-observabili/job.md) | Berlin, Berlin | Arbeitnow | Found | 2026-08-07 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/doctolib/engineering-manager-site-reliability-observability-berlin-berlin-155363) | — | — | — | — | — |
 | 2026-08-06 | [airSlate](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/job.md) | Київ, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/368837/) | [Open](../registry/jobs/2026-08-06_190217_airslate_senior-php-engineer/company.md) | — | — | — | — |
-| 2026-08-06 | [Newxel](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/) | [Full-stack Software Engineer (NXJ-192)](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/job.md) | Київ, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/newxel/vacancies/368785/) | [Open](../registry/jobs/2026-08-06_150244_newxel_full-stack-software-engineer-nxj-192/company.md) | — | — | — | — |
-| 2026-08-06 | [S-PRO](../registry/jobs/2026-08-06_123736_s-pro_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-08-06_123736_s-pro_senior-php-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-06 | [Dou](https://jobs.dou.ua/companies/s-pro/vacancies/368773/) | [Open](../registry/jobs/2026-08-06_123736_s-pro_senior-php-engineer/company.md) | — | — | — | — |

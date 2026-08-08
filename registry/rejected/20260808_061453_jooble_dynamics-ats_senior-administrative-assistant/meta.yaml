@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-48258495130544090'
+source_url: https://jooble.org/desc/-48258495130544090?ckey=senior+backend+engineer&rgn=55179&pos=22&groupId=293749696&elckey=4167915530227114055&p=1&aq=-4971036891791846383&cid=15922&jobAge=936&brelb=100&bscr=14.0745125&scr=14.0745125
+title: Senior Administrative Assistant
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-06-30T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-30T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-08T06:14:53Z'
+rejected_at: '2026-08-08T06:14:53Z'

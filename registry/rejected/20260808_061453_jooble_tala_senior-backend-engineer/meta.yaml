@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8990729009815331000'
+source_url: https://jooble.org/away/-8990729009815331000?p=1&pos=45&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=24&brelb=15&scr=2364.3584&bscr=2364.3584&aq=6835161226077939807&elckey=855759410076964782
+title: Senior Backend Engineer
+company: Tala
+location: Remote
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T06:14:53Z'
+rejected_at: '2026-08-08T06:14:53Z'
