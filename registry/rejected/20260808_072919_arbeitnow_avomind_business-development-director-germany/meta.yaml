@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: business-development-director-germany-berlin-152474
+source_url: https://www.arbeitnow.com/jobs/companies/avomind/business-development-director-germany-berlin-152474
+title: Business Development Director - Germany
+company: Avomind
+location: Berlin, Germany
+published_at: '2026-08-07T17:20:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:19Z'
+rejected_at: '2026-08-08T07:29:19Z'

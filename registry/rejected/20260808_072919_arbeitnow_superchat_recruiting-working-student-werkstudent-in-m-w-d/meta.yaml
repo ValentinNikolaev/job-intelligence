@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: recruiting-working-student-werkstudentin-berlin-berlin-124274
+source_url: https://www.arbeitnow.com/jobs/companies/superchat/recruiting-working-student-werkstudentin-berlin-berlin-124274
+title: Recruiting Working Student | Werkstudent*in (m/w/d)
+company: Superchat
+location: Berlin, Berlin
+published_at: '2026-08-07T17:55:14Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:19Z'
+rejected_at: '2026-08-08T07:29:19Z'

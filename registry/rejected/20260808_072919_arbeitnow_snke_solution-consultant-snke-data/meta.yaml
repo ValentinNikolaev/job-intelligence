@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: solution-consultant-snke-data-munchen-273597
+source_url: https://www.arbeitnow.com/jobs/companies/snke/solution-consultant-snke-data-munchen-273597
+title: Solution Consultant – Snke Data
+company: Snke
+location: München
+published_at: '2026-08-07T20:09:32Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:19Z'
+rejected_at: '2026-08-08T07:29:19Z'

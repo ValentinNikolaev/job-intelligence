@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-e-commerce-marketplace-koln-412237
+source_url: https://www.arbeitnow.com/jobs/companies/everbrent-gmbh/werkstudent-e-commerce-marketplace-koln-412237
+title: Werkstudent e-Commerce & Marketplace (m/w/d)
+company: Everbrent GmbH
+location: Köln
+published_at: '2026-08-08T02:09:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:19Z'
+rejected_at: '2026-08-08T07:29:19Z'

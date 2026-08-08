@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-copywriter-freelance-berlin-346044
+source_url: https://www.arbeitnow.com/jobs/companies/dept/senior-copywriter-freelance-berlin-346044
+title: Senior Copywriter (Freelance)
+company: dept
+location: Berlin
+published_at: '2026-08-08T05:55:16Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:18Z'
+rejected_at: '2026-08-08T07:29:18Z'

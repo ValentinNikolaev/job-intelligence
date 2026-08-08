@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: controller-gilching-51641
+source_url: https://www.arbeitnow.com/jobs/companies/my-humancapital-gmbh/controller-gilching-51641
+title: Controller (m/w/d)
+company: MY Humancapital GmbH
+location: Gilching
+published_at: '2026-08-07T17:00:43Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:19Z'
+rejected_at: '2026-08-08T07:29:19Z'

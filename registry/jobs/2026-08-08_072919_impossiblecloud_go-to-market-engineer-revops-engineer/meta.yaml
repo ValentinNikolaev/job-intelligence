@@ -1,0 +1,29 @@
+schema_version: 2
+id: 049278f5-41f5-4d78-b7e8-c218325c8bd6
+title: Go to Market Engineer / RevOps Engineer
+company: Impossiblecloud
+company_url: null
+location: Hamburg
+remote: false
+employment_type: Full-time
+sources:
+- source: arbeitnow
+  source_job_id: go-to-market-engineer-revops-engineer-hamburg-419698
+  url: https://www.arbeitnow.com/jobs/companies/impossiblecloud/go-to-market-engineer-revops-engineer-hamburg-419698
+  metadata:
+    tags:
+    - other
+    job_types:
+    - Full-time
+published_at: '2026-08-08T05:26:04Z'
+discovered_at: '2026-08-08T07:29:19Z'
+updated_at: '2026-08-08T07:29:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-08T07:29:19Z'
+analysis_priority: 0
+fingerprint: sha256:96f4d5e549ef792d1c24150f44b8dd6e7152925ec0573d545356f4d7e0b70b79
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

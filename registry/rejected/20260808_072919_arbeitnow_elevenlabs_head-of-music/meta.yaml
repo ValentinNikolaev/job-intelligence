@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-head-of-music-83455
+source_url: https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-head-of-music-83455
+title: Head of Music
+company: Elevenlabs
+location: Remote
+published_at: '2026-08-07T20:40:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T07:29:19Z'
+rejected_at: '2026-08-08T07:29:19Z'

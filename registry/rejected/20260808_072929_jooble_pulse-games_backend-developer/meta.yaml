@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2927407762581411196'
+source_url: https://jooble.org/away/-2927407762581411196?p=1&pos=40&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=717&brelb=15&scr=291.63422&bscr=291.63422&aq=-1461163123781043313&elckey=2482469107495988360
+title: Backend Developer
+company: Pulse Games
+location: Remote
+published_at: '2026-07-09T03:53:52.4142597+00:00'
+rejection_category: stale
+rejection_reason: published_at 2026-07-09T03:53:52.4142597+00:00 is older than 7 days
+updated_at: '2026-08-08T07:29:29Z'
+rejected_at: '2026-08-08T07:29:29Z'
