@@ -1,0 +1,17 @@
+score: 10
+recommendation: not_match
+summary: Marketing and community ownership are not evidenced.
+strengths:
+- 15+ years backend engineering
+- Go/PHP, AWS, Kubernetes, CI/CD, and production reliability where relevant
+gaps:
+- Role-specific domain, commercial, or language requirements are not fully evidenced
+concerns:
+- Do not infer unsupported domain, language, or management claims
+hard_rejection: true
+hard_rejection_reason: Marketing and community ownership are not evidenced.
+analyzed_at: '2026-08-08T08:20:52Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c3f8090404be8e22204d927e1cda8c8b6abe6397ad7f9b23e03a01b270a868e2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
