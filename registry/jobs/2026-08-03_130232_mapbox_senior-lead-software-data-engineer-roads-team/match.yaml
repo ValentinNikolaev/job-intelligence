@@ -1,0 +1,25 @@
+score: 72
+recommendation: match
+summary: Senior backend, event-driven infrastructure, AWS, Kubernetes, observability,
+  and data-pipeline experience are relevant to a senior/lead software data engineering
+  role.
+strengths:
+- Go/PHP
+- distributed systems
+- AWS
+- Kubernetes
+- queues/EventBridge
+- analytics infrastructure
+- technical leadership.
+gaps:
+- No direct geospatial/roads, map data, or stated large-scale geospatial processing
+  experience.
+concerns:
+- Domain-specific geospatial expertise may be important.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T07:50:23Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:9bd22a9c6298817abddc92d3e90e9549c14f7b37a3388200313c34066cd51cfd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

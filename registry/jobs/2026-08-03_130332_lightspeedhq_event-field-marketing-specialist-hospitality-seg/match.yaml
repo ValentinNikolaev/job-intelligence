@@ -1,0 +1,20 @@
+score: 15
+recommendation: not_match
+summary: The vacancy is event and field marketing for hospitality; the candidate profile
+  is deeply technical and contains no marketing campaign or event-management track
+  record.
+strengths:
+- Cross-functional collaboration
+- technical ability to work with marketing systems.
+gaps:
+- No event marketing, campaign execution, hospitality marketing, or communications
+  background.
+concerns:
+- Fundamental function mismatch.
+hard_rejection: true
+hard_rejection_reason: Required field-marketing experience is not evidenced.
+analyzed_at: '2026-08-08T07:50:22Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:388ab3ab0e181218aa2e50e0b202111ce458616a74457a2f78b8e182a0f21645
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

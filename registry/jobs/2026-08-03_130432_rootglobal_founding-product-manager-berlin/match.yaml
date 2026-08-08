@@ -1,0 +1,22 @@
+score: 42
+recommendation: weak_match
+summary: Technical leadership and product collaboration could transfer to a founding
+  product role, but the evidence is primarily engineering delivery rather than product
+  discovery, roadmap ownership, or market validation.
+strengths:
+- Technical roadmap work
+- stakeholder collaboration
+- system design
+- startup/scale-up experience.
+gaps:
+- Limited evidence of product management ownership, customer discovery, prioritization,
+  and go-to-market execution.
+concerns:
+- Founding PM scope likely requires substantial non-engineering product leadership.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T07:50:22Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e04bc30c0977a2916c79bbd4d18cb58da44aeb4ef1e381da78662191a44dbc90
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

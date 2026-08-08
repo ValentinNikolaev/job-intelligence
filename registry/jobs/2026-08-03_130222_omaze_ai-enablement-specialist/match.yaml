@@ -1,0 +1,24 @@
+score: 68
+recommendation: match
+summary: The candidate has direct experience building support automation and LLM-assisted
+  workflows, plus strong technical prototyping and stakeholder collaboration skills.
+strengths:
+- AI automation
+- workflow integrations
+- APIs
+- Go
+- system design
+- translating technical concepts.
+gaps:
+- No explicit n8n/Zapier/Make experience, formal change-management training, or business-transformation
+  consulting record.
+concerns:
+- Adoption and workshop responsibilities may require stronger non-technical enablement
+  evidence.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T07:50:23Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:579f3fd674138af0cb2a4cb572a0280810131e41879f0e8e2b627c54c0e5c9ca
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,20 @@
+score: 35
+recommendation: weak_match
+summary: Strong backend engineering, Go, integrations, and automation experience,
+  but this is a DACH partner/channel management role requiring partner ecosystem ownership
+  and German-market commercial relationship expertise.
+strengths:
+- Go and PHP backend engineering
+- stakeholder collaboration
+- automation and AI-platform familiarity.
+gaps:
+- No partner-management, channel-sales, DACH ecosystem, or German-language evidence.
+concerns:
+- Core function is commercial partner management rather than software engineering.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T07:50:22Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:51070d0ffd1ba00f5fa55451271f3fd9af9731ac4e60db2c0aa299cf2c6bd6dd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
