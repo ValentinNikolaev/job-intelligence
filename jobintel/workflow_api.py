@@ -100,6 +100,7 @@ def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[st
         "prepare_max_estimated_input_tokens": DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS,
         "prepare_min_score": policy.prepare_min_score,
         "prepare_max_age_days": policy.prepare_max_age_days,
+        "prepare_batch_size": policy.prepare_batch_size,
     }
 
 

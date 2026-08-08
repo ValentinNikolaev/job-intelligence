@@ -5,6 +5,7 @@ note: >-
   provenance label from the explicitly selected workflow.
 prepare_min_score: 65
 prepare_max_age_days: 7
+prepare_batch_size: 10
 workflows:
   analyze:
     model: gpt-5.6-luna
@@ -16,5 +17,6 @@ workflows:
     reasoning: medium
     model_label: codex:gpt-5.6-terra:medium
     purpose: >
-      Single application package workflow. Prepare only vacancies explicitly
-      selected by the user through a vacancy ID or registry directory.
+      Application package workflow for one to ten vacancies explicitly selected
+      by the user through vacancy IDs or registry directories. Keep every package
+      isolated and publish it from its own vacancy-keyed draft directory.

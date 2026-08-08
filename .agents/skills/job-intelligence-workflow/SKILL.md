@@ -11,17 +11,21 @@ Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code.
 
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
 - For analysis, follow `references/analyze.md` and process a sealed batch of up to 15
-  pending vacancies. Preparation remains exactly one vacancy per task.
-- For an application package, follow `references/prepare.md` with workflow `prepare` and process exactly one fresh vacancy explicitly selected by the user through a vacancy ID or registry directory.
+  pending vacancies.
+- For application packages, follow `references/prepare.md` with workflow `prepare` and
+  process one to 10 fresh vacancies explicitly selected by the user through vacancy IDs
+  or registry directories. Never expand the selection to `all`.
 - For a user-requested status change, run `python run.py status <vacancy-id-or-directory> <status>`. Never change status without an explicit user request. Preserve the complete history through the command.
 
 Read `config/codex-workflows.yaml` before model-dependent work. The selected Scheduled Task or chat must use the corresponding model and reasoning level. Pass the workflow name to the deterministic publisher; it derives the only allowed model label from policy. If the requested model is unavailable in the current Codex surface, tell the user and do not publish under that workflow.
 
 ## Common rules
 
-1. For preparation, read only the selected vacancy, the configured candidate source
-   files, and the relevant prompt. For analysis, read only the sealed input pack and
-   the batch prompt; do not compare vacancies or read another vacancy's artifacts.
+1. For preparation, read only the explicitly selected batch, the configured candidate
+   source files, and the relevant prompt. Handle one selected vacancy at a time and do
+   not compare vacancies or reuse vacancy-specific research, keywords, or draft content.
+   For analysis, read only the sealed input pack and the batch prompt; do not compare
+   vacancies or read another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
 3. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
 4. If publication fails validation, fix the draft and retry. Do not edit generated cache metadata by hand.

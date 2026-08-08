@@ -17,6 +17,7 @@ class WorkflowPolicyTests(unittest.TestCase):
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 74))
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 75))
         self.assertEqual(7, policy.prepare_max_age_days)
+        self.assertEqual(10, policy.prepare_batch_size)
         self.assertEqual(
             "codex:gpt-5.6-terra:medium",
             policy.workflow("prepare").model_label,
@@ -30,6 +31,19 @@ class WorkflowPolicyTests(unittest.TestCase):
                 encoding="utf-8",
             )
             with self.assertRaises(WorkflowError):
+                load_workflow_policy(path)
+
+    def test_prepare_batch_size_cannot_exceed_hard_limit(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        source = (root / "config" / "codex-workflows.yaml").read_text(encoding="utf-8")
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "workflows.yaml"
+            path.write_text(
+                source.replace("prepare_batch_size: 10", "prepare_batch_size: 11"),
+                encoding="utf-8",
+            )
+
+            with self.assertRaisesRegex(WorkflowError, "must not exceed 10"):
                 load_workflow_policy(path)
 
 

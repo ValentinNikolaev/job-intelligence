@@ -21,6 +21,7 @@ from jobintel.workflow_api import (
     catalog_vacancies,
     queue_response,
     source_usage,
+    workflow_limits,
     workflow_summary,
 )
 
@@ -58,6 +59,7 @@ class WorkflowApiTests(unittest.TestCase):
                     "schema_version": 1,
                     "prepare_min_score": 65,
                     "prepare_max_age_days": 7,
+                    "prepare_batch_size": 10,
                     "workflows": {
                         "analyze": {
                             "model": "gpt-5.6-luna",
@@ -132,6 +134,11 @@ class WorkflowApiTests(unittest.TestCase):
         self.assertEqual("https://example.test/pending", analyze["items"][0]["source_url"])
         self.assertEqual(0, analyze["items"][0]["analysis_priority"])
         self.assertEqual([], prepare["items"])
+
+    def test_workflow_limits_expose_prepare_batch_size(self) -> None:
+        limits = workflow_limits(self.project, collection_limit=100)
+
+        self.assertEqual(10, limits["prepare_batch_size"])
 
     def test_analyze_queue_orders_priority_items_first(self) -> None:
         registry = Registry(

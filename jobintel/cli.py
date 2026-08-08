@@ -975,7 +975,7 @@ def _run_preparation(
     registry_dir: Path,
 ) -> int:
     try:
-        with workflow_lock(project_root, "preparation:single", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(project_root, "preparation:batch", timeout_seconds=args.lock_timeout_seconds):
             return _run_preparation_locked(args, config, project_root, registry_dir)
     except WorkflowLockError as exc:
         print(f"Preparation failed: {exc}", file=sys.stderr)
@@ -988,10 +988,11 @@ def _run_preparation_locked(
     project_root: Path,
     registry_dir: Path,
 ) -> int:
-    if len(args.arguments) != 1:
+    if not args.arguments:
         print(
-            "Usage: python run.py prepare <job-directory|vacancy-id> --input <draft-directory> "
-            "--workflow prepare [--force]",
+            "Usage: python run.py prepare <job-directory|vacancy-id> "
+            "[<job-directory|vacancy-id> ...] --input <draft-root> "
+            "--workflow prepare [--force] (maximum 10 vacancies)",
             file=sys.stderr,
         )
         return 2
@@ -1005,19 +1006,30 @@ def _run_preparation_locked(
         )
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
-        directories = resolve_job_directories(registry_dir, args.arguments[0])
-        if len(directories) != 1:
-            raise ValueError("prepare publishes exactly one Codex draft at a time")
-        if not _vacancy_is_fresh(directories[0], policy.prepare_max_age_days):
-            raise ValueError(
-                f"vacancy is older than prepare_max_age_days {policy.prepare_max_age_days}; "
-                "do not prepare stale vacancies"
-            )
-        if not _analysis_is_current(directories[0], registry_dir, profile_paths, policy, project_root):
-            raise ValueError("match analysis is missing or stale; run workflow analyze first")
-        score = _match_score(directories[0])
-        if not policy.prepare_score_is_eligible(args.workflow, score):
-            raise ValueError(_ineligible_score_message(policy, args.workflow, score))
+        directories = _resolve_explicit_preparation_directories(
+            registry_dir,
+            args.arguments,
+            limit=policy.prepare_batch_size,
+        )
+        for directory in directories:
+            if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
+                raise ValueError(
+                    f"{directory.name}: vacancy is older than prepare_max_age_days "
+                    f"{policy.prepare_max_age_days}; do not prepare stale vacancies"
+                )
+            if not _analysis_is_current(
+                directory, registry_dir, profile_paths, policy, project_root
+            ):
+                raise ValueError(
+                    f"{directory.name}: match analysis is missing or stale; "
+                    "run workflow analyze first"
+                )
+            score = _match_score(directory)
+            if not policy.prepare_score_is_eligible(args.workflow, score):
+                raise ValueError(
+                    f"{directory.name}: "
+                    + _ineligible_score_message(policy, args.workflow, score)
+                )
     except Exception as exc:
         print(f"Preparation configuration error: {exc}", file=sys.stderr)
         return 2
@@ -1025,11 +1037,16 @@ def _run_preparation_locked(
     summary = PreparationSummary(selected=len(directories))
     for directory in directories:
         try:
+            draft_directory = _preparation_draft_directory(
+                args.input,
+                directory,
+                selection_size=len(directories),
+            )
             generator = ApplicationGenerator(
                 registry_dir,
                 profile_paths,
                 project_root / "prompts" / "vacancy-application.md",
-                CodexApplicationDraftClient(args.input, model=model_label),
+                CodexApplicationDraftClient(draft_directory, model=model_label),
                 HostMarkdownDocxConverter(project_root),
             )
             result = generator.generate_directory(directory, force=args.force)
@@ -1048,6 +1065,54 @@ def _run_preparation_locked(
     print(f"Skipped unchanged: {summary.skipped}")
     print(f"Errors: {summary.errors}")
     return 1 if summary.errors else 0
+
+
+def _resolve_explicit_preparation_directories(
+    registry_dir: Path,
+    selectors: Sequence[str],
+    *,
+    limit: int,
+) -> list[Path]:
+    if not selectors:
+        raise ValueError("preparation requires at least one explicit vacancy selector")
+    if len(selectors) > limit:
+        raise ValueError(
+            f"preparation accepts at most {limit} vacancies per Codex task; "
+            f"received {len(selectors)}"
+        )
+
+    directories: list[Path] = []
+    selected_by_path: dict[Path, str] = {}
+    for selector in selectors:
+        if selector.casefold() == "all":
+            raise ValueError(
+                "automatic preparation selection is disabled; use explicit vacancy IDs "
+                "or registry directories"
+            )
+        matches = resolve_job_directories(registry_dir, selector)
+        if len(matches) != 1:
+            raise ValueError(f"preparation selector must resolve to one vacancy: {selector}")
+        directory = matches[0].resolve()
+        previous = selected_by_path.get(directory)
+        if previous is not None:
+            raise ValueError(
+                f"duplicate vacancy selection {selector!r}; already selected as {previous!r}"
+            )
+        selected_by_path[directory] = selector
+        directories.append(directory)
+    return directories
+
+
+def _preparation_draft_directory(
+    input_root: Path,
+    directory: Path,
+    *,
+    selection_size: int,
+) -> Path:
+    root = input_root.resolve()
+    if selection_size == 1 and (root / "cv.md").is_file():
+        return root
+    return root / directory.name
 
 
 def _run_pending(
@@ -1070,10 +1135,12 @@ def _run_pending_locked(
     project_root: Path,
     registry_dir: Path,
 ) -> int:
-    if len(args.arguments) not in (1, 2) or args.arguments[0] not in {"analyze", "prepare"}:
+    if not args.arguments or args.arguments[0] not in {"analyze", "prepare"}:
         print(
-            "Usage: python run.py pending <analyze|prepare> [all|job-directory|vacancy-id] "
-            "--workflow <analyze|prepare>",
+            "Usage: python run.py pending analyze [all|job-directory|vacancy-id] "
+            "--workflow analyze; or python run.py pending prepare "
+            "<job-directory|vacancy-id> [<job-directory|vacancy-id> ...] "
+            "--workflow prepare (maximum 10 vacancies)",
             file=sys.stderr,
         )
         return 2
@@ -1085,7 +1152,10 @@ def _run_pending_locked(
         return 2
 
     stage = args.arguments[0]
-    selector = args.arguments[1] if len(args.arguments) == 2 else "all"
+    selectors = args.arguments[1:]
+    if stage == "analyze" and len(selectors) > 1:
+        print("pending analyze accepts at most one selector", file=sys.stderr)
+        return 2
     try:
         allowed = {"analyze"} if stage == "analyze" else {"prepare"}
         policy, model_label = _selected_workflow(args.workflow, project_root, allowed)
@@ -1105,16 +1175,24 @@ def _run_pending_locked(
         if args.pack:
             print("--pack is valid only for pending analyze", file=sys.stderr)
             return 2
-        directories = resolve_job_directories(registry_dir, selector)
+        if stage == "prepare" and (not selectors or selectors == ["all"]):
+            print(
+                "Automatic preparation queue is disabled. "
+                "Run prepare only for one to ten explicit job directories or vacancy IDs."
+            )
+            return 0
+        if stage == "prepare":
+            directories = _resolve_explicit_preparation_directories(
+                registry_dir,
+                selectors,
+                limit=policy.prepare_batch_size,
+            )
+        else:
+            selector = selectors[0] if selectors else "all"
+            directories = resolve_job_directories(registry_dir, selector)
         if stage == "analyze":
             directories = sorted(directories, key=_pending_analysis_queue_key, reverse=True)
         pending_prepare: list[Path] = []
-        if stage == "prepare" and selector == "all":
-            print(
-                "Automatic preparation queue is disabled. "
-                "Run prepare only for an explicit job directory or vacancy ID."
-            )
-            return 0
         for directory in directories:
             if stage == "analyze":
                 if _vacancy_status_skips_analysis(directory):

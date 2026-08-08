@@ -11,6 +11,9 @@ class WorkflowError(RuntimeError):
     pass
 
 
+MAX_PREPARATION_BATCH_SIZE = 10
+
+
 @dataclass(frozen=True, slots=True)
 class Workflow:
     name: str
@@ -24,6 +27,7 @@ class WorkflowPolicy:
     prepare_min_score: int
     prepare_max_age_days: int
     workflows: dict[str, Workflow]
+    prepare_batch_size: int = 1
 
     def workflow(self, name: str) -> Workflow:
         canonical = name.strip().casefold().replace("-", "_")
@@ -54,6 +58,14 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
 
     prepare_min = _score(loaded.get("prepare_min_score"), "prepare_min_score")
     prepare_max_age_days = _positive_int(loaded.get("prepare_max_age_days", 7), "prepare_max_age_days")
+    prepare_batch_size = _positive_int(
+        loaded.get("prepare_batch_size", 1), "prepare_batch_size"
+    )
+    if prepare_batch_size > MAX_PREPARATION_BATCH_SIZE:
+        raise WorkflowError(
+            "prepare_batch_size must not exceed "
+            f"{MAX_PREPARATION_BATCH_SIZE} vacancies per Codex task"
+        )
 
     raw_workflows = loaded.get("workflows")
     if not isinstance(raw_workflows, dict):
@@ -70,7 +82,12 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
                 raise WorkflowError(f"workflow {name!r} has invalid {field}")
             values[field] = value.strip()
         workflows[name] = Workflow(name, values["model"], values["reasoning"], values["model_label"])
-    return WorkflowPolicy(prepare_min, prepare_max_age_days, workflows)
+    return WorkflowPolicy(
+        prepare_min,
+        prepare_max_age_days,
+        workflows,
+        prepare_batch_size,
+    )
 
 
 def _score(value: Any, field: str) -> int:

@@ -174,8 +174,8 @@ python run.py api catalog-vacancies --json
 python run.py api queues analyze --json --limit 30
 python run.py pending analyze all --workflow analyze
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
-python run.py pending prepare <job-directory-or-vacancy-id> --workflow prepare
-python run.py prepare <job-directory-or-vacancy-id> --input <draft-directory> --workflow prepare
+python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare
+python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare
 ```
 
 Installed editable environments can also use `job-intel adzuna`.
@@ -325,16 +325,19 @@ python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow an
 Batch publication fails if any result is missing, extra, invalid, based on stale
 candidate/vacancy hashes, or already current because another run published it after
 the pack was built. Rebuild a stale pack from the latest repository state instead of
-publishing or reporting it as skipped. The batch is an analysis optimization only;
-preparation remains one vacancy per task.
+publishing or reporting it as skipped. Preparation has its own independently validated
+batch contract for one to 10 explicitly selected vacancies; automatic preparation
+selection remains disabled.
 
 See [the matching design](docs/matching-architecture.md) for the schema, rubric,
 hard-rejection rules, and cache behavior.
 
 ### Vacancy-specific application packages
 
-The Codex skill writes four Markdown drafts for exactly one vacancy. `prepare`
-validates those local drafts, converts the final CV and cover letter, and publishes:
+The Codex skill writes four Markdown drafts for each vacancy in an explicitly selected
+batch of one to 10. `prepare` resolves the entire selection, reads each draft set from
+`.codex-work/application/<vacancy-directory>/`, validates it independently, converts the
+final CV and cover letter, and publishes:
 
 ```text
 registry/jobs/<job-directory>/application/
@@ -349,10 +352,11 @@ registry/jobs/<job-directory>/application/
 └── manifest.yaml
 ```
 
-The scheduled or interactive Codex task reads only the selected vacancy, the configured
-candidate source documents, and the versioned
-[single-vacancy prompt](prompts/vacancy-application.md). Codex may use its own web-search
-capability for current company research. Project code does not call a model or search API.
+The interactive Codex task reads only the selected vacancies, handles one vacancy at a
+time with the configured candidate source documents, and applies the versioned
+[single-package prompt](prompts/vacancy-application.md) independently. Codex may use its
+own web-search capability for current company research. Project code does not call a
+model or search API.
 The publisher validates all four Markdown outputs before converting the final CV and
 cover letter through the installed host-side `md-to-docx` Codex skill. Set
 `MD_TO_DOCX_SCRIPT` only if the skill cannot be found under
@@ -369,9 +373,9 @@ content, prompt, and model. Unchanged packages are skipped unless `--force` is s
 The source CV and LinkedIn registry are never modified.
 
 Preparation is manual and score-gated before any draft is read or published. The user
-chooses a vacancy from analyzed matches and names its vacancy ID or registry directory
-in chat. Scores from 65 through 100 are eligible, and scores below 65 are intentionally
-excluded.
+chooses one to 10 vacancies from analyzed matches and names every vacancy ID or registry
+directory in chat. Scores from 65 through 100 are eligible, and scores below 65 are
+intentionally excluded.
 
 See [the application workflow design](docs/application-architecture.md) for isolation,
 validation, failure handling, and configuration details.
@@ -389,8 +393,8 @@ model-dependent work live under `prompts/`, and the reusable repo skill lives un
 | Prepare | GPT-5.6 Terra | medium |
 
 Application preparation is not queued automatically. After analysis notifications or
-catalog review, the user explicitly chooses one vacancy ID or registry directory for
-each preparation task.
+catalog review, the user explicitly chooses one to 10 vacancy IDs or registry
+directories for each preparation task.
 
 The authoritative routing policy is
 [`config/codex-workflows.yaml`](config/codex-workflows.yaml). The configured model must be
@@ -401,10 +405,10 @@ workflow.
 
 For Scheduled Tasks, run the versioned analysis prompt after the GitHub collection
 workflow has had a chance to publish fresh registry changes. Application preparation
-starts only from an interactive user request naming a vacancy ID or registry directory.
-Each model-dependent run must pull the latest committed repository state before
-selecting work. Each model-dependent run handles exactly one vacancy or one sealed
-analysis batch, so its cadence controls token use.
+starts only from an interactive user request naming one to 10 vacancy IDs or registry
+directories. Each model-dependent run must pull the latest committed repository state
+before selecting work. Each model-dependent run handles one sealed analysis batch or one
+explicit preparation batch of at most 10 vacancies, so its cadence controls token use.
 CodexSandboxOnline or worktree execution requires a committed repository baseline plus
 explicit secret provisioning through the task or host environment; never commit
 `sources/.env`.

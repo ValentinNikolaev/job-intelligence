@@ -3,7 +3,7 @@ from __future__ import annotations
 import tempfile
 import unittest
 import os
-from contextlib import redirect_stdout
+from contextlib import redirect_stderr, redirect_stdout
 from datetime import datetime, timezone
 from io import StringIO
 from pathlib import Path
@@ -506,6 +506,120 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(0, exit_code)
         self.assertTrue((self.directory / "application" / "manifest.yaml").is_file())
 
+    def test_prepare_cli_publishes_isolated_batch_drafts(self) -> None:
+        sources = self.project / "sources"
+        sources.mkdir()
+        registry = Registry(
+            self.registry_root,
+            clock=lambda: self.now,
+            id_factory=lambda: "vacancy-2",
+        )
+        created = registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="job-2",
+                source_url="https://example.test/jobs/2",
+                title="Senior Backend Engineer",
+                company="Second Example",
+                description="Build Go services.",
+                location="Remote Europe",
+                remote=True,
+            )
+        )
+        second = self.registry_root / "jobs" / created.directory
+        for directory in (self.directory, second):
+            MatchAnalyzer(
+                self.registry_root,
+                [self.profile],
+                FakeMatchClient(72),
+                clock=lambda: self.now,
+            ).analyze_directory(directory)
+
+        draft_root = self.project / "draft-batch"
+        markers: dict[str, str] = {}
+        for index, directory in enumerate((self.directory, second), start=1):
+            draft = draft_root / directory.name
+            draft.mkdir(parents=True)
+            payload = application_payload()
+            marker = f"Isolated batch draft {index}."
+            markers[directory.name] = marker
+            payload["analysis_markdown"] += f"\n{marker}\n"
+            for field, filename in {
+                "cv_markdown": "cv.md",
+                "cover_letter_markdown": "cover-letter.md",
+                "analysis_markdown": "analysis.md",
+                "interview_preparation_markdown": "interview-preparation.md",
+            }.items():
+                (draft / filename).write_text(payload[field], encoding="utf-8")
+
+        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()):
+            exit_code = main(
+                [
+                    "prepare",
+                    self.directory.name,
+                    created.vacancy_id,
+                    "--registry",
+                    str(self.registry_root),
+                    "--sources",
+                    str(sources),
+                    "--profile",
+                    str(self.profile),
+                    "--input",
+                    str(draft_root),
+                    "--workflow",
+                    "prepare",
+                ]
+            )
+
+        self.assertEqual(0, exit_code)
+        for directory in (self.directory, second):
+            analysis = (directory / "application" / "analysis.md").read_text(encoding="utf-8")
+            self.assertIn(markers[directory.name], analysis)
+            other_markers = set(markers.values()) - {markers[directory.name]}
+            self.assertTrue(all(marker not in analysis for marker in other_markers))
+
+    def test_prepare_cli_rejects_more_than_ten_vacancies(self) -> None:
+        errors = StringIO()
+        with redirect_stderr(errors):
+            exit_code = main(
+                [
+                    "prepare",
+                    *(f"vacancy-{index}" for index in range(11)),
+                    "--registry",
+                    str(self.registry_root),
+                    "--profile",
+                    str(self.profile),
+                    "--input",
+                    str(self.project / "draft-batch"),
+                    "--workflow",
+                    "prepare",
+                ]
+            )
+
+        self.assertEqual(2, exit_code)
+        self.assertIn("at most 10 vacancies", errors.getvalue())
+
+    def test_prepare_cli_rejects_automatic_all_selection(self) -> None:
+        errors = StringIO()
+        with redirect_stderr(errors):
+            exit_code = main(
+                [
+                    "prepare",
+                    "all",
+                    "--registry",
+                    str(self.registry_root),
+                    "--profile",
+                    str(self.profile),
+                    "--input",
+                    str(self.project / "draft-batch"),
+                    "--workflow",
+                    "prepare",
+                ]
+            )
+
+        self.assertEqual(2, exit_code)
+        self.assertIn("automatic preparation selection is disabled", errors.getvalue())
+
     def test_pending_prepare_all_is_disabled_for_manual_selection(self) -> None:
         directories: dict[int, str] = {}
         for score in (64, 65, 74, 75):
@@ -598,6 +712,52 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertEqual(0, exit_code)
         self.assertIn(created.directory, output.getvalue())
+
+    def test_pending_prepare_accepts_explicit_batch(self) -> None:
+        registry = Registry(
+            self.registry_root,
+            clock=lambda: self.now,
+            id_factory=lambda: "vacancy-batch-2",
+        )
+        created = registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="job-batch-2",
+                source_url="https://example.test/jobs/batch-2",
+                title="Senior Backend Engineer",
+                company="Batch Example",
+                description="Build Go services.",
+            )
+        )
+        second = self.registry_root / "jobs" / created.directory
+        for directory in (self.directory, second):
+            MatchAnalyzer(
+                self.registry_root,
+                [self.profile],
+                FakeMatchClient(72),
+                clock=lambda: self.now,
+            ).analyze_directory(directory)
+
+        output = StringIO()
+        with redirect_stdout(output):
+            exit_code = main(
+                [
+                    "pending",
+                    "prepare",
+                    "vacancy-1",
+                    created.vacancy_id,
+                    "--registry",
+                    str(self.registry_root),
+                    "--profile",
+                    str(self.profile),
+                    "--workflow",
+                    "prepare",
+                ]
+            )
+
+        self.assertEqual(0, exit_code)
+        self.assertIn(self.directory.name, output.getvalue())
+        self.assertIn(second.name, output.getvalue())
 
 
 if __name__ == "__main__":

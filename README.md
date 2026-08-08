@@ -94,9 +94,10 @@ tasks that need language judgment. The repository keeps the handoff visible.
 
 5. **Prepare the application**
 
-   A separate Codex task handles one vacancy per task. It drafts the CV, cover
-   letter, application analysis, and interview preparation. The publisher validates
-   the files and converts the final CV and cover letter to DOCX.
+   A separate Codex task handles an explicitly selected batch of one to ten vacancies.
+   It drafts an isolated CV, cover letter, application analysis, and interview
+   preparation for each vacancy. The publisher validates each package and converts the
+   final CV and cover letter to DOCX.
 
 6. **Regenerate the catalog**
 
@@ -175,7 +176,7 @@ Publish Codex-produced work:
 
 ```text
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
-python run.py prepare <job-directory-or-vacancy-id> --input <draft-directory> --workflow prepare
+python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare
 ```
 
 Run tests:
