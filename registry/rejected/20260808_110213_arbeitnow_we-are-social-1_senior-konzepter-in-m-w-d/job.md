@@ -53,4 +53,4 @@ Wir verstehen Online-Communities, Kulturen und Subkulturen über die gesamte Soc
 
 **Mehr Benefits für dich:** Weil wir wissen, wie wichtig Well-being ist und wir Benefits einfach lieben, bieten wir dir mehr als nur den Standard. Genieße 2 zusätzliche Health Days, Menstrual Leave, einen freien Tag an deinem Geburtstag, eine Kooperation mit Wellpass, das Deutschlandticket, eine Mitgliedschaft bei OpenUp und vieles mehr.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: mitgrunderin-vertrieb-business-vollzeit-hamburg-oder-remote-in-der-eu-exist-finanzierung-geplant-370516
+source_url: https://www.arbeitnow.com/jobs/companies/aimea/mitgrunderin-vertrieb-business-vollzeit-hamburg-oder-remote-in-der-eu-exist-finanzierung-geplant-370516
+title: Mitgründer:in Vertrieb & Business (m/w/d), Vollzeit, Hamburg oder remote in
+  der EU, EXIST-Finanzierung geplant
+company: aimea
+location: Hamburg
+published_at: '2026-08-08T11:00:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T12:08:02Z'
+rejected_at: '2026-08-08T12:08:02Z'
