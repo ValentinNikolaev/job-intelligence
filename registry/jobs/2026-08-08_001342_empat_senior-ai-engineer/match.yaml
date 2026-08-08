@@ -1,0 +1,20 @@
+score: 61
+recommendation: match
+summary: Automation, Go, distributed systems, and LLM-adjacent work provide a foundation,
+  but Python/Beam/knowledge-graph depth is not evidenced.
+strengths:
+- automation and LLM systems
+- distributed backend pipelines
+- production ownership
+gaps:
+- Python/Apache Beam
+- Dgraph/graph knowledge bases
+- air-gapped AI deployments
+concerns: []
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-08T07:31:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:dab33fa4166e13cc0a62c73641db639098afb82b8916046469f968c1bbe0863d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

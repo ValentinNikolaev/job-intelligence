@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: Strong backend leadership and Go experience align well with product services;
+  U.S.-only location is the main constraint.
+strengths:
+- Go backend
+- technical leadership
+- scalable services
+gaps:
+- Node/Ruby/Python breadth not evidenced
+- U.S. work location
+concerns:
+- Remote eligibility is restricted to the U.S.
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-08T07:31:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:6c776d33d44bba2652c99974b48c013e45a4691b2e1b302c167028d52c1058b6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 68
+recommendation: match
+summary: Senior backend and high-scale product experience transfer well, but the core
+  Node.js/NestJS stack is not evidenced.
+strengths:
+- backend systems
+- scaling and reliability
+- product collaboration
+gaps:
+- Node.js/NestJS
+- adtech/mobile domain
+concerns: []
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-08T07:31:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:5144ea0ba9548c9ab13fdc8a94a2cfa9fdd0ab4aa31f8bbaf2bbcda47736548a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

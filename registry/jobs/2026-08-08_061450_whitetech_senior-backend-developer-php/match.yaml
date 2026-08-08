@@ -1,0 +1,18 @@
+score: 88
+recommendation: strong_match
+summary: Excellent PHP backend and fintech/integration alignment with strong production,
+  API, and reliability experience.
+strengths:
+- PHP backend
+- fintech/payment exposure
+- API and reliability work
+gaps:
+- Exact framework/version details
+concerns: []
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-08T07:31:39Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:aca54ccc2788bf567aaa9b8c26d68ef4ea76b17ac4b732c3cb8bb889696c9c15
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
