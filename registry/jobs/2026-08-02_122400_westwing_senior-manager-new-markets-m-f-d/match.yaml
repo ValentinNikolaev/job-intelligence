@@ -1,0 +1,20 @@
+score: 15
+recommendation: not_match
+summary: New-market strategy leadership is outside the documented software engineering
+  profile.
+strengths:
+- International engineering experience
+- Stakeholder collaboration
+gaps:
+- Market expansion
+- Commercial strategy
+- business development leadership
+concerns:
+- Role is non-technical
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:19:42Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b2c87a1696f9ad02fe528f5826295b92fb381b57d2ecace0720e7a9708867f97
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

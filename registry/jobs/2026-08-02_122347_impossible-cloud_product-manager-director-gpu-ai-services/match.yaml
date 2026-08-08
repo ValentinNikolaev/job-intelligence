@@ -1,0 +1,21 @@
+score: 63
+recommendation: possible_match
+summary: The candidate fits technical product work around cloud and AI infrastructure,
+  but direct product management evidence is limited.
+strengths:
+- AWS and backend architecture
+- AI automation exposure
+- systems design
+gaps:
+- Product manager track record
+- GPU/AI services product ownership
+- commercial product strategy
+concerns:
+- Potentially a stretch from engineering into director-level product
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:19:42Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:a6c91538a3c6d1a0d5d376865e73181b755038a47a963dde5ddb7e4df130fa4d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

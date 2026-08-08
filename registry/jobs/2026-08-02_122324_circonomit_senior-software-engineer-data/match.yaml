@@ -1,0 +1,21 @@
+score: 86
+recommendation: strong_match
+summary: Senior data engineering is a strong match for the candidate’s event-driven
+  architecture, queues, AWS, observability, and backend experience.
+strengths:
+- Event-driven analytics infrastructure
+- AWS and queues
+- Go/PHP backend and reliability
+- performance and production operations
+gaps:
+- Dedicated data-platform title
+- possible warehouse-specific tooling not stated
+concerns:
+- Verify exact stack and data ownership expectations
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:19:42Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:971cdad70b5d32d4e1b90f6c61c7e855bc6e24ed652e834af196f74362695821
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
