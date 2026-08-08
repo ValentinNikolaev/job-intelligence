@@ -1,0 +1,36 @@
+schema_version: 2
+id: 69fa49ba-9175-47d2-93dc-4e86ea69f7a0
+title: Software Engineer (Golang)
+company: RiseGuide
+company_url: https://jobs.dou.ua/companies/riseguide/vacancies/
+location: Варшава (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '360423'
+  url: https://jobs.dou.ua/companies/riseguide/vacancies/360423/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 8 серпня
+    listing_summary: 'RiseGuide — це expert-powered self-improvement застосунок для
+      тих, хто хоче стати найкращою версією себе.
+
+
+      Ми будуємо microlearning продукт на інсайтах і принципах видатних рольових моделей.'
+published_at: '2026-08-08'
+discovered_at: '2026-08-08T20:02:54Z'
+updated_at: '2026-08-08T20:02:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-08T20:02:54Z'
+analysis_priority: 100
+fingerprint: sha256:e199177d1b51b8f702e2af54d9e3f59f877c2749d78a232648507a1f8ab0eafb
+data_source: dou
+content_source: dou
+company_content_source: dou

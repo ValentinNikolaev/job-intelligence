@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/dualentry/jobs/backend-software-engineer-senior-staff
+source_url: https://himalayas.app/companies/dualentry/jobs/backend-software-engineer-senior-staff
+title: Backend Software Engineer (Senior/Staff)
+company: DualEntry
+location: Worldwide
+published_at: '2026-08-08T12:44:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T20:02:57Z'
+rejected_at: '2026-08-08T20:02:57Z'

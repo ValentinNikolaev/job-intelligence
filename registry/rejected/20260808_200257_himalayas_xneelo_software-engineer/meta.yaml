@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/xneelo-co/jobs/software-engineer-5771658756
+source_url: https://himalayas.app/companies/xneelo-co/jobs/software-engineer-5771658756
+title: Software Engineer
+company: xneelo
+location: Worldwide
+published_at: '2026-08-06T18:43:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T20:02:57Z'
+rejected_at: '2026-08-08T20:02:57Z'

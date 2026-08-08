@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149996'
+source_url: https://jobicy.com/jobs/149996-ubuntu-core-software-engineer
+title: Ubuntu Core Software Engineer
+company: Canonical Ltd.
+location: EMEA
+published_at: '2026-08-01T03:04:27Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-01T03:04:27Z is older than 7 days
+updated_at: '2026-08-08T20:02:59Z'
+rejected_at: '2026-08-08T20:02:59Z'

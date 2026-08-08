@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/joyful-craftsmen-ag/jobs/full-stack-engineer-rust-focused-4863953756
+source_url: https://himalayas.app/companies/joyful-craftsmen-ag/jobs/full-stack-engineer-rust-focused-4863953756
+title: Full Stack Engineer (Rust-Focused)
+company: Joyful Craftsmen AG
+location: Worldwide
+published_at: '2026-08-08T09:40:01Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T20:02:57Z'
+rejected_at: '2026-08-08T20:02:57Z'

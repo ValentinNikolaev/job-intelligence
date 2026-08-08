@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/introduct-tech/jobs/senior-java-developer
+source_url: https://himalayas.app/companies/introduct-tech/jobs/senior-java-developer
+title: Senior Java Developer
+company: Introduct Tech
+location: Worldwide
+published_at: '2026-08-06T15:28:25Z'
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-08-08T20:02:57Z'
+rejected_at: '2026-08-08T20:02:57Z'
