@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2736070569520745278'
+source_url: https://jooble.org/desc/2736070569520745278?ckey=backend+technical+lead&rgn=55179&pos=29&groupId=698760247&elckey=-7359104532650932072&p=1&aq=-405535128976725313&cid=15922&jobAge=36&brelb=100&bscr=4.4884677&scr=4.4884677
+title: Enterprise Solutions Engineer - Italy
+company: Valor Capital Group
+location: Italian Republic
+published_at: '2026-08-07T14:16:34.3870000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T18:07:46Z'
+rejected_at: '2026-08-08T18:07:46Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6900493468470952780'
+source_url: https://jooble.org/away/6900493468470952780?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=36&brelb=10&scr=2433.5574&bscr=2433.5574&aq=-5489036116233226229&elckey=8831967944948044992
+title: Senior Backend Engineer for AI Model Training
+company: SaidGig
+location: Remote
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T18:07:46Z'
+rejected_at: '2026-08-08T18:07:46Z'

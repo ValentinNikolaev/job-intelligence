@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2332207236998969112'
+source_url: https://jooble.org/away/-2332207236998969112?p=1&pos=26&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=84&brelb=15&scr=2418.347&bscr=2418.347&aq=-5489036116233226229&elckey=8831967944948044992
+title: Senior Backend Software Engineer
+company: Makai Labs
+location: Remote
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-08T18:07:46Z'
+rejected_at: '2026-08-08T18:07:46Z'
