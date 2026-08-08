@@ -1,0 +1,20 @@
+score: 58
+recommendation: possible_match
+summary: Partial match for Senior Fullstack Engineer (m/f/d); transferable engineering
+  experience is present but several central requirements are not evidenced in the
+  candidate profile.
+strengths:
+- Senior software engineering experience
+- System design and production operations
+- Cross-functional technical leadership
+gaps:
+- Role-specific domain and tooling evidence is incomplete
+concerns:
+- Potential mismatch with the primary specialization
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:09:48Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:2315a95f9c19c0a6ab0c74bd95538cee6f51ee226c02aa0a6cc9bc51b87cf690
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
