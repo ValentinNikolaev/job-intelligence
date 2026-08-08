@@ -1,0 +1,25 @@
+score: 78
+recommendation: match
+summary: Very strong match for the Go/backend, event-driven, scalable systems, incident
+  response, and technical leadership requirements; fintech and brokerage-domain depth
+  is the main uncertainty.
+strengths:
+- Go and backend system design experience
+- Event-driven systems, microservices, queues, and high-reliability production work
+- Technical leadership, mentoring, incident troubleshooting, and global collaboration
+- Relevant fintech-related experience and payment integrations
+gaps:
+- No direct evidence of brokerage, trading lifecycle, settlement, or market-data systems
+- No explicit React or gRPC experience in the supplied evidence
+- Regional recruitment responsibilities are not demonstrated
+concerns:
+- The role includes regional on-call and incident commander responsibilities
+- Financial-services domain requirements may be more substantial than the posting’s
+  must-haves
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T18:13:11Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:18dbc8d3eeb791feffb4392bfcc94a08a1b7a29eb23418a2eaad285926391e58
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

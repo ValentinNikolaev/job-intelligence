@@ -1,0 +1,24 @@
+score: 2
+recommendation: not_match
+summary: The vacancy is a Munich-based, on-site Account Executive sales leadership
+  role requiring B2B SaaS selling, quota ownership, MEDDIC, German fluency, and sales
+  leadership; the supplied profile is for a backend software engineer.
+strengths:
+- Technical familiarity with AI and software products may help with product conversations
+gaps:
+- No Account Executive, quota-carrying sales, MEDDIC, or GTM experience
+- No German language evidence
+- No manufacturing procurement domain experience
+concerns:
+- The role is explicitly on-site in Munich and the candidate profile is based in Italy
+- The occupation and required evidence are fundamentally outside the candidate’s software
+  engineering background
+hard_rejection: true
+hard_rejection_reason: 'Fundamental occupation mismatch: sales leadership role with
+  mandatory AE, quota, MEDDIC, German, procurement-domain, and Munich on-site requirements
+  not supported by the candidate evidence.'
+analyzed_at: '2026-08-08T18:13:11Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:042a8ded2bd028d01656199b5926fdcf9b027ce8064cc31a1b9d766a5de4982c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

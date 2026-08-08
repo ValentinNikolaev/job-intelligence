@@ -1,0 +1,25 @@
+score: 44
+recommendation: weak_match
+summary: Strong backend and Go production experience, but the role requires expert
+  Python, distributed data/ML pipelines, graph databases, and deeper applied AI infrastructure
+  experience not evidenced in the supplied profile.
+strengths:
+- Production Go backend and API architecture
+- LLM-assisted automation experience in a support platform
+- Distributed systems, observability, reliability, and Docker-adjacent infrastructure
+  experience
+gaps:
+- No evidence of expert Python or Apache Beam/Spark/Flink
+- No evidence of graph database or entity-resolution systems
+- No evidence of air-gapped deployment, local LLM inference, or ML infrastructure
+  ownership
+concerns:
+- The role is primarily AI/data engineering rather than general backend engineering
+- Four-month contract and US-hours overlap may require schedule confirmation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T18:13:11Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:e88205b94ae46c36b2c7b49119c90ff40475accb28396f97437a724f70222000
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
