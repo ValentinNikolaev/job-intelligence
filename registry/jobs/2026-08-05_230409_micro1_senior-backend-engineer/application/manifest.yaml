@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:8a93abb942e9ddd44163de43eeb1f13cc2076a86dd9fe2c6950c7a34654a74ee
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:0a689ecbbb1a47fd34e3c5814827e582e76a33c00bfcbde5adfb6a2ef1dc77a0
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_micro1_SeniorBackendEngineer
+generated_at: '2026-08-08T19:50:48Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_micro1_SeniorBackendEngineer.md
+- CV_ValentinNikolaev_micro1_SeniorBackendEngineer.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
