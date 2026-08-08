@@ -1,0 +1,18 @@
+score: 2
+recommendation: not_match
+summary: The candidate is an experienced software engineer, not an enrolled law student,
+  and does not meet the study-status requirement.
+strengths:
+- Organization and technical document handling.
+gaps:
+- Enrollment in law studies, German fluency, legal research and contract support.
+concerns:
+- Mandatory enrollment and language requirements are not met.
+hard_rejection: true
+hard_rejection_reason: The vacancy requires an enrolled law student with German and
+  legal background.
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:abfac1a45056cdef5a81b077db7b146235390ea29095c15337ef941623ac1eb0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

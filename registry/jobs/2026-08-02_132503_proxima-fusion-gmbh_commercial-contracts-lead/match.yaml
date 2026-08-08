@@ -1,0 +1,18 @@
+score: 20
+recommendation: not_match
+summary: The candidate has technical leadership and vendor/integration exposure, but
+  no commercial contracting or legal negotiation track record.
+strengths:
+- Cross-functional leadership, systems thinking, stakeholder communication.
+gaps:
+- Commercial contracts, negotiation, procurement/legal practice, energy or fusion
+  domain.
+concerns:
+- Core responsibilities are commercial/legal rather than technical.
+hard_rejection: true
+hard_rejection_reason: No evidence of leading commercial contract work.
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:5a50857b566b3c2bd67c692ecf0af058955bd8c602e0c629c8ceea5d1967bc77
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

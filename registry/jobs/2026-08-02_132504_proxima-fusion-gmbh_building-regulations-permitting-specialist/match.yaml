@@ -1,0 +1,17 @@
+score: 10
+recommendation: not_match
+summary: No evidence of building regulations, permitting, planning law, or construction
+  compliance work.
+strengths:
+- Structured problem solving and technical communication.
+gaps:
+- Building codes, permitting processes, regulatory submissions, German legal context.
+concerns:
+- The position is a specialist regulatory role outside software engineering.
+hard_rejection: true
+hard_rejection_reason: Required building-regulation and permitting expertise is absent.
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:01aa7f57de0f1cc42eb3c90d3cc2f1ad0772f58d5a794126c9a3c495fbbda8b9
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,16 @@
+score: 5
+recommendation: not_match
+summary: The candidate has no accounting, general-ledger, or financial-close experience.
+strengths:
+- Some fintech-related software exposure.
+gaps:
+- GL accounting, reconciliations, reporting, accounting standards, ERP systems.
+concerns:
+- The position is unrelated to software engineering.
+hard_rejection: true
+hard_rejection_reason: Required accounting experience is absent.
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:f68dc27e4172a41d46ae8548e206e136f45727b9210b3babce1be60985bec758
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,20 @@
+score: 55
+recommendation: possible_match
+summary: Strong event-driven backend, AWS, queues, data-pipeline, and performance
+  experience; direct analytics/data-engineering tooling and production Python/SQL
+  depth are not clearly evidenced.
+strengths:
+- Go backend, EventBridge/queues, data pipelines, schemas, reliability, AWS.
+gaps:
+- Explicit data-engineering stack, warehouse/lake tooling, advanced SQL/Python, product
+  domain.
+concerns:
+- Could fit a backend-heavy data platform role, but title-level data engineering requirements
+  need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b20472330f38b2f7f74e66f74632ca2e0905623dcd9672cad8b49bc73f713c7c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,20 @@
+score: 78
+recommendation: match
+summary: Excellent backend, Go, AWS, event-driven systems, automation, APIs, and product
+  ownership alignment. The profile shows LLM integration but not explicit agent evaluation/profiling,
+  frontend depth, or logistics experience.
+strengths:
+- Go, backend architecture, AI automation, integrations, reliability, zero-to-one
+  and lead experience.
+gaps:
+- LLM tracing/evaluation, frontend ownership, Postgres/Redis specifics, freight domain.
+concerns:
+- Strong fit if the company accepts backend-led founding scope and the candidate can
+  demonstrate hands-on AI evaluation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:d639b004977651f5ff9d1989abeb479e4e45ce004e360feb1c61ee9de731a673
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 8
+recommendation: not_match
+summary: The candidate is a senior software engineer and does not have laboratory,
+  experimental, or hands-on technical-lab experience.
+strengths:
+- Analytical problem solving and technical learning ability.
+gaps:
+- Laboratory methods, equipment operation, experimental procedures, relevant science
+  background.
+concerns:
+- The day-to-day work is unrelated to the candidate’s professional track.
+hard_rejection: true
+hard_rejection_reason: The role requires laboratory experience absent from the candidate
+  evidence.
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:a9b8eed1935373428dad4ac6f7026f17b6b82f398f416ee0248165a2e298a660
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

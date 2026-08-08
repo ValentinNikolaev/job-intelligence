@@ -1,0 +1,17 @@
+score: 18
+recommendation: not_match
+summary: Strong senior engineering background, but no evidence of German policy, regulatory,
+  or public-affairs experience.
+strengths:
+- Backend engineering, stakeholder collaboration, regulated-domain exposure.
+gaps:
+- Policy expertise, German-language proficiency, Bavaria regulatory network.
+concerns:
+- The role is centered on policy rather than software engineering.
+hard_rejection: true
+hard_rejection_reason: No evidence of the required policy and German-language background.
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:abc446e96f8a2b8db71b9ccd05af8f80286c829ab177ede5ee8a58183a7b5aa7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

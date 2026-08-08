@@ -1,0 +1,18 @@
+score: 28
+recommendation: weak_match
+summary: Transferable planning and cross-functional delivery experience exists, but
+  the profile does not show program scheduling ownership in a technical construction
+  or fusion environment.
+strengths:
+- Technical planning, delivery coordination, risk awareness.
+gaps:
+- Program scheduling tools, complex engineering program controls, industry domain.
+concerns:
+- Likely requires substantial program-management experience beyond engineering leadership.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T09:09:55Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4400dd139d04bd4aa1dbaf576978b2ad40c3aeeb9e4ad20ce234c02d3f40ce04
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
