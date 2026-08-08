@@ -1,0 +1,23 @@
+score: 24
+recommendation: not_match
+summary: Cybersecurity and partner-sales ownership are not demonstrated, despite relevant
+  technical communication and security-adjacent production experience.
+strengths:
+- Technical communication
+- security-conscious engineering
+- partner-facing collaboration potential
+gaps:
+- MSP ecosystem
+- channel sales
+- partner onboarding
+- German market selling
+- cyber insurance
+concerns:
+- Commercial quota and German-language expectations
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:30:40Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:305e0f110e7647c40ccd13f2a07eeddc4dc5399585db8271983769b7d97b098b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

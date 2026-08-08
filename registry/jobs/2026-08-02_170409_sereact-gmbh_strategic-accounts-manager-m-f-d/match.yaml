@@ -1,0 +1,23 @@
+score: 25
+recommendation: weak_match
+summary: Technical customer collaboration is relevant, but strategic account ownership,
+  renewals, expansion, and commercial customer success are not evidenced.
+strengths:
+- Technical stakeholder communication
+- product understanding
+- cross-functional work
+gaps:
+- Account management
+- customer success
+- renewals
+- expansion selling
+- robotics domain
+concerns:
+- Up to 50% travel and commercial ownership
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:30:40Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:0ca9b77c1f719f3db2cc45881a18c755f0cde382381a96d7b36dc476813ffd5b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

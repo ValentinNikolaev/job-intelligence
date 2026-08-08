@@ -1,0 +1,22 @@
+score: 35
+recommendation: weak_match
+summary: CTO-office technology exposure and communication skills transfer, but executive
+  support, founder branding, and network management are not evidenced.
+strengths:
+- Technical strategy
+- CTO collaboration
+- writing technical material
+- startup execution
+gaps:
+- Executive calendar and inbox management
+- keynote and PR work
+- founder network operations
+concerns:
+- Role is operations and communications-heavy rather than engineering
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-08T08:30:40Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:36aaaa3f7709bbaf6923292bd88e5b6e951afa9cb69f550793966b091a6712ab
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
