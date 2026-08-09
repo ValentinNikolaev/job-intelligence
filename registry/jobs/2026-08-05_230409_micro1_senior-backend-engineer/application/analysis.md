@@ -8,10 +8,10 @@ The candidate directly supports Go, AWS, Kubernetes, CI/CD, queues, event-driven
 
 ## Company Research
 
-- **Verified fact:** The [official micro1 site](https://www.micro1.ai/) describes a data-research business building infrastructure for AI through expert human data, real-world training environments, and contextual evaluations.
-- **Verified fact:** The official site presents “Realm” as real-world reinforcement-learning environments and “Cortex” as a contextual AI-agent evaluation platform.
-- **Verified fact:** The [official careers page](https://www.micro1.ai/careers) describes the company's work as connecting human expertise with teams training frontier models.
-- **Verified fact:** The supplied [vacancy source](https://himalayas.app/companies/micro1/jobs/senior-backend-engineer) states that prior AI experience is not required and that production-domain knowledge is the intended contribution.
+- **Verified fact:** The [official micro1 site](https://www.micro1.ai/) describes a data-research business building infrastructure for AI through expert human data, real-world training environments, and contextual evaluations. (Accessed 9 August 2026.)
+- **Verified fact:** The official site presents “Realm” as real-world reinforcement-learning environments and “Cortex” as a contextual AI-agent evaluation platform. (Accessed 9 August 2026.)
+- **Verified fact:** The [official careers page](https://www.micro1.ai/careers) describes micro1 as a research lab building data infrastructure for frontier AI and emphasizes the quality of data, environments, and evaluation systems. (Accessed 9 August 2026.)
+- **Verified fact:** The supplied [vacancy source](https://himalayas.app/companies/micro1/jobs/senior-backend-engineer) states that prior AI experience is not required and that production-domain knowledge is the intended contribution. (Accessed 9 August 2026.)
 - **Inference:** Deliverables will likely be judged more like benchmark artifacts or reviewed tasks than conventional long-lived product features.
 - **Unknown:** Public material does not establish the customer, exact cloud provider, submission quotas, expected time per accepted task, rejection/rework policy, or the long-term duration of the engagement.
 
@@ -81,7 +81,7 @@ The second ATS pass retained only supported infrastructure and reliability langu
 - ATS compatibility: **8.5/10**
 - Credibility: **9/10**
 
-The final package is specific about production systems and explicit about the missing RL-authoring experience. Metrics, dates, and technical claims come from the candidate sources.
+The final package is specific about production systems and explicit about the missing RL-authoring experience. Metrics, dates, and technical claims come from the candidate sources. The cover letter follows the current `write-cover-letter` workflow: it names micro1 and the role, uses complementary CRURATED and airSlate stories, ties company motivation to current official Realm/careers material, and keeps the RL-authoring gap visible. Before sending, confirm the output-based acceptance and rework rules, minimum weekly submissions, availability, the latest Simple.life date, and the nature of the overlapping CRURATED engagement.
 
 ## Recommendation
 

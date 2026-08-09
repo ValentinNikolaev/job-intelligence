@@ -8,8 +8,8 @@ The candidate strongly supports Go backend development, product ownership, start
 
 ## Company Research
 
-- **Verified fact:** The [official BoWatt site](https://www.bowatt.com/) presents an AI-powered requirements and systems-engineering platform for manufacturing.
-- **Company claim:** The official site describes modules for requirement analysis and cites manufacturing customer stories, including Bosch Manufacturing Solutions, BBS Automation, and Fill Machine Engineering. These are company-published claims.
+- **Verified fact (accessed 9 August 2026):** The [official BoWatt site](https://www.bowatt.com/) presents an AI-powered requirements and systems-engineering platform for manufacturing and describes BoReq as a requirements-analysis product for technical sales.
+- **Company claim (accessed 9 August 2026):** The official site emphasizes ease of use, data security, GDPR compliance, flexible hosting, and customer references including Bosch Manufacturing Solutions, BBS Automation, and Fill Machine Engineering. These are company-published claims.
 - **Verified fact:** The supplied [vacancy source](https://www.arbeitnow.com/jobs/companies/bowatt/full-stack-engineer-germany-based-179624) describes a small startup team, Go backend, React/TypeScript frontend, end-to-end ownership, German work eligibility, salary, and equity.
 - **Inference:** Engineers likely work close to founders and customers, with a high ratio of product decisions and integration work to specialized platform ownership.
 - **Unknown:** Public sources reviewed do not establish the current engineering headcount, deployment stack, test strategy, frontend/backend workload ratio, runway, or whether the advertised hiring terms are still open.
@@ -20,7 +20,7 @@ The candidate strongly supports Go backend development, product ownership, start
 
 **Keyword relevance — 7/10.** Strength: Go, statically typed development, product delivery, APIs, AI automation, AWS, Kubernetes, and startup ownership match. Weakness: React, TypeScript, and recent frontend ownership are absent. No unsupported terms were added.
 
-**Readability — 8.5/10.** Strength: concise chronology and evidence-led bullets. Weakness: a standard backend headline would understate the limited but relevant web breadth. The tailored headline says “Full-Stack Backend Engineer,” keeping the backend center of gravity visible.
+**Readability — 8.5/10.** Strength: concise chronology and evidence-led bullets. Weakness: a standard backend headline would understate the limited but relevant web breadth. The tailored headline says “Full-Stack Engineer | Based in Italy,” while the summary keeps the backend center of gravity and location constraint visible.
 
 **Summary effectiveness — 8/10.** Strength: it links product ownership, Go, AI-assisted work, and stakeholder collaboration. Weakness: location eligibility must be handled outside the summary rather than hidden.
 
@@ -64,7 +64,7 @@ The final ATS pass prioritizes credible backend and product terms rather than ma
 ## Major CV Changes
 
 - **Before:** a general backend headline.  
-  **After:** “Full-Stack Backend Engineer” signals relevant web breadth while preserving the true specialization.
+  **After:** “Full-Stack Engineer | Based in Italy” signals relevant web breadth while making the hard location constraint immediately visible.
 - **Before:** Simple.life emphasized support operations.  
   **After:** it emphasizes Go ownership, multi-service APIs, AI-assisted workflows, and stakeholder delivery.
 - **Before:** Hyprr leadership was separated from hands-on work.  
@@ -80,7 +80,9 @@ The final ATS pass prioritizes credible backend and product terms rather than ma
 - ATS compatibility: **7/10**
 - Credibility: **9.5/10**
 
-The application is credible and technically relevant on the backend, but two explicit screens remain unresolved. The CV does not conceal them with unsupported claims.
+The application is credible and technically relevant on the backend, but two explicit screens remain unresolved. The CV does not conceal them with unsupported claims. The cover letter was rebuilt under the current `write-cover-letter` workflow with two distinct evidence stories and explicit treatment of both gaps.
+
+Before submission, confirm German employment eligibility, the expected frontend/backend split, the importance of recent React/TypeScript production experience, and the overlapping Simple.life/CRURATED chronology.
 
 ## Recommendation
 

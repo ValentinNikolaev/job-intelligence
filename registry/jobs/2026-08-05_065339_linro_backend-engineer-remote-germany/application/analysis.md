@@ -8,8 +8,8 @@ The candidate strongly supports Go, SQL databases, AWS operations, Kubernetes, e
 
 ## Company Research
 
-- **Verified fact:** The [official Linro site](https://linro.io/) describes a cloud-security platform that evaluates every cloud control-plane action against deterministic policy as it happens.
-- **Verified fact:** The official site says policies can block a live change, auto-revert drift, or simulate a proposed change, and that humans, CI pipelines, and AI agents are treated as principals.
+- **Verified fact (accessed 9 August 2026):** The [official Linro site](https://linro.io/) describes a cloud-security platform that evaluates every cloud control-plane action against deterministic policy as it happens.
+- **Verified fact (accessed 9 August 2026):** The official site says policies can block a live change, auto-revert drift, or simulate a proposed change, and that humans, CI pipelines, and AI agents are treated as principals.
 - **Verified fact:** The supplied [vacancy source](https://www.arbeitnow.com/jobs/companies/linro/backend-engineer-remote-germany-235719) describes a company founded in Berlin in 2026, a fully remote European team, a Go backend, SQL-based compliance evaluation, and an early-engineer ownership model.
 - **Inference:** Correctness, traceability, low-latency decisions, and resistance to bypass will matter as much as feature throughput.
 - **Unknown:** Public sources reviewed do not establish funding, customer names, team size, exact data stores, supported clouds, on-call expectations, or how much of the product is already in production.
@@ -20,7 +20,7 @@ The candidate strongly supports Go, SQL databases, AWS operations, Kubernetes, e
 
 **Keyword relevance — 8.5/10.** Strength: Go, SQL, AWS, Kubernetes, event-driven systems, queues, observability, reliability, and ownership match strongly. Weakness: Terraform/Pulumi, policy engines, columnar modeling, and AI coding tools remain unsupported.
 
-**Readability — 8/10.** Strength: concise reverse chronology. Weakness: six relevant roles create density. The final version limits each role to evidence directly connected to cloud operations, event streams, ownership, or security.
+**Readability — 9/10.** Strength: concise reverse chronology with a clean two-page layout. Six relevant roles remain, but related evidence is combined so each entry stays focused on cloud operations, event streams, ownership, or security.
 
 **Summary effectiveness — 9/10.** Strength: it leads with Go, event-driven architecture, cloud delivery, reliability, SQL, and regulated systems. Weakness: it cannot state direct cloud-security platform experience.
 
@@ -72,6 +72,8 @@ The second ATS review kept the CV strong on system design and operations without
   **After:** the supported GDPR/PCI and assessment evidence is restored because it is within the 10-year window and relevant.
 - **Before:** cloud tools appeared as a list.  
   **After:** airSlate connects AWS/Kubernetes/CI/CD to production migration, monitoring, and operational improvement.
+- **Before:** closely related reliability and operational bullets pushed a small amount of content onto a third page.
+  **After:** related evidence is combined without removing core Go, SQL, cloud, event-stream, or regulated-system claims, producing a readable two-page CV.
 
 ## Final Quality Gate
 
@@ -81,7 +83,9 @@ The second ATS review kept the CV strong on system design and operations without
 - ATS compatibility: **8.5/10**
 - Credibility: **9.5/10**
 
-The application presents a strong adjacent match without hiding the infrastructure-as-code and policy-engine gaps. All metrics and technical claims are supported by the candidate records.
+The application presents a strong adjacent match without hiding the infrastructure-as-code and policy-engine gaps. All metrics and technical claims are supported by the candidate records. The cover letter was rebuilt under the current `write-cover-letter` workflow with separate CRURATED and airSlate/Sixt evidence stories.
+
+Before submission, confirm Italy eligibility, exact Terraform/Pulumi exposure, the candidate's current AI coding-tool workflow, and the overlapping Simple.life/CRURATED chronology.
 
 ## Recommendation
 
