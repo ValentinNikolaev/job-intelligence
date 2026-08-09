@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6817673511990166664'
+source_url: https://jooble.org/away/6817673511990166664?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=96&brelb=10&scr=29.998247&bscr=29.998247&aq=-4028031520129069275&elckey=3609703778850471868
+title: Senior Network Engineer
+company: ObjectWay
+location: Italian Republic
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T06:15:27Z'
+rejected_at: '2026-08-09T06:15:27Z'
