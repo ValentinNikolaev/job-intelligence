@@ -13,6 +13,8 @@ from scripts.notify_telegram import (
     notification_config,
     preserve_unsent_message,
     send_message,
+    send_message_once,
+    validate_vacancy_urls,
 )
 
 
@@ -79,6 +81,96 @@ class TelegramNotificationTests(unittest.TestCase):
 
         self.assertIn("URL: https://example.test/sumup", enriched)
         self.assertNotIn("URL: unavailable", enriched)
+
+    def test_enriches_blank_urls_when_url_precedes_vacancy_id(self) -> None:
+        with TemporaryDirectory() as temporary:
+            registry_root = Path(temporary) / "registry"
+            for name, vacancy_id, url in (
+                ("sumup", "vacancy-one", "https://example.test/sumup"),
+                ("acme", "vacancy-two", "https://example.test/acme"),
+            ):
+                vacancy = registry_root / "jobs" / name
+                vacancy.mkdir(parents=True)
+                (vacancy / "meta.yaml").write_text(
+                    f"id: {vacancy_id}\nsources:\n- source: direct\n  url: {url}\n",
+                    encoding="utf-8",
+                )
+            message = "\n".join(
+                (
+                    "SumUp — Backend Engineer — score 88",
+                    "URL: ",
+                    "Vacancy ID: vacancy-one",
+                    "Directory: sumup",
+                    "",
+                    "Acme — Senior PHP Engineer — score 84",
+                    "URL: unavailable",
+                    "Vacancy ID: vacancy-two",
+                    "Directory: acme",
+                )
+            )
+
+            enriched = enrich_vacancy_urls(message, registry_root)
+
+        self.assertIn("URL: https://example.test/sumup", enriched)
+        self.assertIn("URL: https://example.test/acme", enriched)
+        validate_vacancy_urls(enriched)
+
+    def test_rejects_vacancy_notification_with_missing_url(self) -> None:
+        with self.assertRaisesRegex(ValueError, "vacancy-one"):
+            validate_vacancy_urls("Title\nURL: \nVacancy ID: vacancy-one\nDirectory: sumup")
+
+    def test_sends_identical_notification_only_once(self) -> None:
+        response = {"ok": True, "result": {"message_id": 42}}
+        with TemporaryDirectory() as temporary, patch(
+            "scripts.notify_telegram.send_message", new=AsyncMock(return_value=response)
+        ) as sender:
+            first = asyncio.run(
+                send_message_once(
+                    "Title\nScore: 80",
+                    token="secret",
+                    chat_id="123",
+                    receipt_dir=Path(temporary),
+                )
+            )
+            second = asyncio.run(
+                send_message_once(
+                    "Title\nScore: 80",
+                    token="secret",
+                    chat_id="123",
+                    receipt_dir=Path(temporary),
+                )
+            )
+
+        self.assertEqual((response, True), first)
+        self.assertEqual((None, False), second)
+        sender.assert_awaited_once()
+
+    def test_failed_delivery_can_be_retried(self) -> None:
+        response = {"ok": True, "result": {"message_id": 43}}
+        with TemporaryDirectory() as temporary, patch(
+            "scripts.notify_telegram.send_message",
+            new=AsyncMock(side_effect=(RuntimeError("network failed"), response)),
+        ) as sender:
+            with self.assertRaisesRegex(RuntimeError, "network failed"):
+                asyncio.run(
+                    send_message_once(
+                        "Title\nScore: 81",
+                        token="secret",
+                        chat_id="123",
+                        receipt_dir=Path(temporary),
+                    )
+                )
+            retried = asyncio.run(
+                send_message_once(
+                    "Title\nScore: 81",
+                    token="secret",
+                    chat_id="123",
+                    receipt_dir=Path(temporary),
+                )
+            )
+
+        self.assertEqual((response, True), retried)
+        self.assertEqual(2, sender.await_count)
 
     def test_loads_credentials_from_sources_env_with_environment_override(self) -> None:
         with TemporaryDirectory() as temporary:

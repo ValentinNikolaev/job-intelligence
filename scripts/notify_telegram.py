@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 from datetime import datetime, timezone
+import hashlib
 from html import escape
 import json
 import os
@@ -19,6 +20,8 @@ from jobintel.config import load_env
 TELEGRAM_API = "https://api.telegram.org/bot{token}/sendMessage"
 _LABEL_RE = re.compile(r"^(Automation ID|Score|Vacancy ID|Directory|URL):\s*(.*)$", re.IGNORECASE)
 _MISSING_URLS = {"", "-", "—", "n/a", "none", "unknown", "unavailable"}
+_VACANCY_ID_RE = re.compile(r"^\s*Vacancy ID:\s*(\S+)\s*$", re.IGNORECASE)
+_URL_RE = re.compile(r"^\s*URL:\s*(.*)$", re.IGNORECASE)
 
 
 def _parser() -> argparse.ArgumentParser:
@@ -64,19 +67,33 @@ def enrich_vacancy_urls(message: str, registry_root: Path) -> str:
     if not re.search(r"^URL:\s*(?:unavailable|unknown|n/a|none|-|—)?\s*$", message, re.IGNORECASE | re.MULTILINE):
         return message
     urls = _registry_urls(registry_root)
-    current_vacancy_id = ""
-    enriched: list[str] = []
-    for line in message.splitlines():
-        vacancy_match = re.match(r"^Vacancy ID:\s*(\S+)\s*$", line, re.IGNORECASE)
-        if vacancy_match:
-            current_vacancy_id = vacancy_match.group(1)
-        url_match = re.match(r"^URL:\s*(.*)$", line, re.IGNORECASE)
+    lines = message.splitlines()
+    vacancy_ids = [match.group(1) for line in lines if (match := _VACANCY_ID_RE.match(line))]
+    url_indexes = [index for index, line in enumerate(lines) if _URL_RE.match(line)]
+    for ordinal, line_index in enumerate(url_indexes):
+        url_match = _URL_RE.match(lines[line_index])
+        assert url_match is not None
         if url_match and url_match.group(1).strip().casefold() in _MISSING_URLS:
-            source_url = urls.get(current_vacancy_id, "")
+            vacancy_id = vacancy_ids[ordinal] if ordinal < len(vacancy_ids) else ""
+            source_url = urls.get(vacancy_id, "")
             if source_url:
-                line = f"URL: {source_url}"
-        enriched.append(line)
-    return "\n".join(enriched)
+                lines[line_index] = f"URL: {source_url}"
+    return "\n".join(lines)
+
+
+def validate_vacancy_urls(message: str) -> None:
+    vacancy_ids = [match.group(1) for line in message.splitlines() if (match := _VACANCY_ID_RE.match(line))]
+    if not vacancy_ids:
+        return
+    url_values = [match.group(1).strip() for line in message.splitlines() if (match := _URL_RE.match(line))]
+    if len(url_values) != len(vacancy_ids):
+        raise ValueError(
+            "Vacancy notification requires exactly one URL for every Vacancy ID "
+            f"({len(vacancy_ids)} IDs, {len(url_values)} URL fields)"
+        )
+    missing = [vacancy_ids[index] for index, value in enumerate(url_values) if value.casefold() in _MISSING_URLS]
+    if missing:
+        raise ValueError(f"Vacancy notification contains missing URLs for: {', '.join(missing)}")
 
 
 def format_message_html(message: str) -> str:
@@ -204,6 +221,50 @@ async def send_message(message: str, *, token: str, chat_id: str) -> dict[str, o
     return response
 
 
+def delivery_fingerprint(message: str, chat_id: str) -> str:
+    payload = f"{chat_id}\0{format_message_html(message)}"
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
+async def send_message_once(
+    message: str,
+    *,
+    token: str,
+    chat_id: str,
+    receipt_dir: Path,
+) -> tuple[dict[str, object] | None, bool]:
+    receipt_dir.mkdir(parents=True, exist_ok=True)
+    fingerprint = delivery_fingerprint(message, chat_id)
+    receipt_path = receipt_dir / f"{fingerprint}.json"
+    if receipt_path.is_file():
+        return None, False
+
+    claim_path = receipt_dir / f"{fingerprint}.sending"
+    try:
+        descriptor = os.open(claim_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError as exc:
+        if receipt_path.is_file():
+            return None, False
+        raise RuntimeError(f"Telegram notification delivery is already in progress: {fingerprint}") from exc
+    try:
+        with os.fdopen(descriptor, "w", encoding="utf-8") as claim:
+            claim.write(datetime.now(timezone.utc).isoformat() + "\n")
+        response = await send_message(message, token=token, chat_id=chat_id)
+        result = response.get("result")
+        message_id = result.get("message_id") if isinstance(result, dict) else None
+        receipt = {
+            "fingerprint": fingerprint,
+            "sent_at": datetime.now(timezone.utc).isoformat(),
+            "telegram_message_id": message_id,
+        }
+        temporary = receipt_dir / f".{fingerprint}.{os.getpid()}.tmp"
+        temporary.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+        os.replace(temporary, receipt_path)
+        return response, True
+    finally:
+        claim_path.unlink(missing_ok=True)
+
+
 async def _main() -> int:
     args = _parser().parse_args()
     message = args.message
@@ -214,6 +275,17 @@ async def _main() -> int:
         message,
         Path(__file__).resolve().parents[1] / "registry",
     )
+    try:
+        validate_vacancy_urls(message)
+    except ValueError as exc:
+        print(f"Telegram notification validation error: {exc}", file=sys.stderr)
+        preserved = preserve_unsent_message(
+            message,
+            source_file=args.message_file,
+            prefix=args.initiator or "invalid-message",
+        )
+        print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
+        return 1
     token, chat_id = notification_config()
     if not token or not chat_id:
         print("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID are required", file=sys.stderr)
@@ -225,7 +297,12 @@ async def _main() -> int:
         print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 2
     try:
-        await send_message(message, token=token, chat_id=chat_id)
+        _, sent = await send_message_once(
+            message,
+            token=token,
+            chat_id=chat_id,
+            receipt_dir=Path(__file__).resolve().parents[1] / ".codex-work" / "telegram-deliveries",
+        )
     except Exception as exc:
         print(f"Telegram notification error: {exc}", file=sys.stderr)
         preserved = preserve_unsent_message(
@@ -235,7 +312,10 @@ async def _main() -> int:
         )
         print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 1
-    print("Telegram notification sent.")
+    if sent:
+        print("Telegram notification sent.")
+    else:
+        print("Telegram notification already sent; duplicate skipped.")
     return 0
 
 
