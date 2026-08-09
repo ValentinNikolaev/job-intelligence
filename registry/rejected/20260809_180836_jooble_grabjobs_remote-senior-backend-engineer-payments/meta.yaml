@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '61164050261973502'
+source_url: https://jooble.org/away/61164050261973502?p=1&pos=44&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=60&brelb=10&scr=2364.1174&bscr=2364.1174&aq=-1158206384160603159&elckey=-1892398932257884003
+title: Remote Senior Backend Engineer - Payments
+company: GrabJobs
+location: Chandler, AZ
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T18:08:36Z'
+rejected_at: '2026-08-09T18:08:36Z'

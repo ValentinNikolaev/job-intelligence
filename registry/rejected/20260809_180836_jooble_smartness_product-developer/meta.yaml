@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2631488268828330213'
+source_url: https://jooble.org/away/2631488268828330213?p=1&pos=21&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=53&brelb=10&scr=16.963139&bscr=16.963139&aq=3843903016241999117&elckey=-4565241060214991554
+title: Product Developer
+company: Smartness
+location: Italian Republic
+published_at: '2026-08-07T06:40:11.4400000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T18:08:36Z'
+rejected_at: '2026-08-09T18:08:36Z'
