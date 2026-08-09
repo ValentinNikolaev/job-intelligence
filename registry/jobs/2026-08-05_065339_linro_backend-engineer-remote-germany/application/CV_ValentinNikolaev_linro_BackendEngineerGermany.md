@@ -7,20 +7,23 @@ valeinikolaev@gmail.com | +39 351 370 1194
 
 ## Summary
 
-Backend engineer with 15+ years of experience designing and operating production systems, with recent focus on Go, event-driven architecture, cloud delivery, and reliability. Built queue-backed pipelines, APIs, observability, retries, and safeguards across AWS and Kubernetes. Brings early-stage ownership, strong SQL experience, and prior work in GDPR- and PCI-regulated systems.
+Backend engineer with 15+ years of experience designing and operating production systems, with recent focus on Go, event-driven architecture, cloud delivery, and reliability. Built queue-backed pipelines, APIs, observability, retries, and operational safeguards across AWS and Kubernetes environments. Brings early-stage product ownership, strong SQL and data-system experience, and prior work in GDPR- and PCI-regulated systems, while remaining hands-on from design through production diagnosis.
 
 ## Skills
 
 - Go
+- Backend system design
 - SQL
 - MySQL and PostgreSQL
 - Event-driven architecture
 - AWS
 - Kubernetes
-- Queues and messaging
+- RabbitMQ and queues
 - REST APIs
 - Prometheus and observability
 - CI/CD with GitHub Actions, Helm, and ArgoCD
+- Production reliability
+- High-availability systems
 - GDPR and PCI DSS engineering
 - End-to-end product ownership
 
@@ -32,7 +35,8 @@ Backend engineer with 15+ years of experience designing and operating production
 November 2023 - July 2026
 
 - Designed and owned a Go backend connecting Zendesk, Intercom, and internal services through an API orchestration layer.
-- Built resilient delivery paths with retries, fallback behavior, and monitoring, and integrated AI-assisted triage into maintained backend services.
+- Built resilient message-delivery paths with retries, fallback behavior, monitoring, and operational safeguards.
+- Integrated AI-assisted triage while keeping workflow, routing, and lifecycle behavior in maintained backend services.
 - Worked with product and operations stakeholders to improve production workflows under real load.
 
 ### CRURATED
@@ -51,7 +55,8 @@ August 2024 - January 2026
 February 2021 - August 2023
 
 - Migrated production services from ECS to Kubernetes and built delivery workflows with Helm, GitHub Actions, and ArgoCD on AWS.
-- Improved database, API, and query performance and delivered operational fixes using logs, Prometheus, monitoring, and SRE dashboards.
+- Reduced peak database workload and improved API and query performance across backend services.
+- Investigated incidents through logs, Prometheus, monitoring, and SRE dashboards and delivered operational fixes.
 - Planned delivery with product management, coordinated team work, and conducted more than 20 technical interviews.
 
 ### Hyprr
@@ -60,7 +65,8 @@ February 2021 - August 2023
 November 2019 - January 2021
 
 - Helped take an early-stage web platform from prototype to closed beta in under six months.
-- Defined architecture and reliability decisions with the CTO while contributing directly to Go and PHP development on AWS and Kubernetes.
+- Defined microservice, serverless, CI/CD, and reliability decisions with the CTO.
+- Contributed directly to Go and PHP backend development on AWS and Kubernetes.
 
 ### Sixt
 
@@ -68,7 +74,8 @@ November 2019 - January 2021
 December 2018 - November 2019
 
 - Developed microservices supporting EU GDPR requirements.
-- Delivered code under PCI DSS constraints and participated in technical, security, and vulnerability assessments.
+- Delivered code under PCI DSS constraints and participated in technical viability, security, and vulnerability assessments.
+- Evaluated solutions against functional, performance, and operational criteria.
 
 ### PDFfiller
 
@@ -76,7 +83,8 @@ December 2018 - November 2019
 October 2016 - December 2018
 
 - Led five backend engineers building a transactional email service operating at around 50 million messages per month.
-- Designed queue-backed infrastructure for traffic growth above 10x during BFCM and made technical decisions across PHP, MySQL, RabbitMQ, AWS, monitoring, and email-security controls.
+- Designed and operated queue-backed delivery infrastructure and handled traffic growth above 10x during BFCM periods.
+- Made technical decisions across PHP, MySQL, Elasticsearch, RabbitMQ, AWS, monitoring, and email-security controls.
 
 ## Education
 
