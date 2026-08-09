@@ -1,18 +1,20 @@
 score: 91
 recommendation: strong_match
-summary: Direct match for PHP, Laravel, APIs, databases, and senior backend experience
-  in a remote role.
+summary: Excellent direct match for the stated PHP/Laravel/API role, supported by
+  extensive production PHP, Laravel, relational databases, integrations, and performance
+  work.
 strengths:
-- PHP/Laravel
-- REST APIs
-- backend seniority
+- Deep PHP and Laravel experience
+- REST APIs, relational databases, integrations, and performance optimization
+- Senior production ownership and reliability experience
 gaps:
-- Exact project domain
-concerns: []
+- The abbreviated source description leaves project scope and team expectations unclear
+concerns:
+- Jooble aggregation provides limited detail for assessing company and project context
 hard_rejection: false
 hard_rejection_reason: ''
-analyzed_at: '2026-08-08T07:31:39Z'
+analyzed_at: '2026-08-09T16:47:41Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:dac25583b67f74f39268d78f47ece7ed1b30d484f4bd28feb5f5c1027349c8de
+job_version: sha256:21a346c284115d77c16261ceb2b7ff3adf14c97d06185454d879399492bcbf43
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
