@@ -1,0 +1,20 @@
+score: 86
+recommendation: strong_match
+summary: Strong backend match with current Go production experience, distributed integrations,
+  AWS, and technical leadership; verify the role's exact seniority and product domain.
+strengths:
+- Current Go backend ownership and scalable service design
+- Distributed systems, queues, APIs, observability, and AWS experience
+- Technical leadership, mentoring, and delivery ownership
+gaps:
+- Specific requirements for the company's product stack are not fully detailed
+- Recent role chronology should be clarified where dates overlap
+concerns:
+- The posting is brief and may expect a narrower Go stack or domain background
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-09T20:05:33Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:ae923cb39f22772b851b7668ea747edc1433defa3ff75767a78eb3041b788180
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,18 +1,21 @@
 # Match Analysis
 
 **Score:** 78/100  
-**Recommendation:** Strong Match
+**Recommendation:** Match
 
-Strong senior backend and technical leadership fit; frontend depth is the main uncertainty.
+Good senior fit for backend/full-stack delivery and project leadership, with strong PHP, APIs, cloud, CI/CD, and team coordination evidence; frontend depth and Italian communication need validation.
 
 ## Why it matches
 
-- Go PHP AWS leadership
+- Senior PHP/backend and API development across recent roles
+- Project planning, technical leadership, mentoring, and stakeholder collaboration
+- Kubernetes, AWS, CI/CD, performance, and reliability experience
 
 ## Gaps
 
-- Frontend
+- The vacancy emphasizes full-stack work and frontend evidence is limited
+- Italian-language and local communication expectations are not confirmed
 
 ## Concerns
 
-- Frontend ownership
+- Project-management scope and day-to-day client-facing responsibilities should be clarified

@@ -1,0 +1,23 @@
+score: 63
+recommendation: possible_match
+summary: Relevant production backend, event-driven systems, document automation, and
+  AI integration experience, but the role requires deeper Python, Apache Beam, graph
+  databases, and applied ML infrastructure evidence.
+strengths:
+- Production AI-assisted automation and document-related systems
+- Go backend APIs, distributed pipelines, queues, observability, and Docker/Kubernetes
+- Experience with provider integrations and reliability-focused production systems
+gaps:
+- Expert Python and Apache Beam are not established
+- Graph database and entity-resolution experience is not evidenced
+- Large-scale LLM infrastructure, local inference, and ML engineering depth are unclear
+concerns:
+- The 5–8+ years AI/data/ML infrastructure requirement may be a material mismatch
+- US-hours overlap and four-month contract terms require confirmation
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-09T20:05:33Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:c714023fe7aad3c70138fb3e1a92629f80b56fdb1d33db6f13bad7f6cd92a5c4
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
