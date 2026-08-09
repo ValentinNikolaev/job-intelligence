@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5974984793788858604'
+source_url: https://jooble.org/desc/-5974984793788858604?ckey=remote+senior+backend+engineer&rgn=55180&pos=33&groupId=2134052230&elckey=-8161184391430778409&p=1&aq=8728790113624290830&cid=15922&jobAge=158&brelb=100&bscr=860.08966&scr=860.08966
+title: Senior Backend Engineer - Client integrations
+company: Kalepa
+location: Remote
+published_at: '2026-08-03T20:49:54.4630000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T20:02:06Z'
+rejected_at: '2026-08-09T20:02:06Z'

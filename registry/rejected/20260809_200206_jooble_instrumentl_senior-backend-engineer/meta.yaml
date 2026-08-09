@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6880920638591658424'
+source_url: https://jooble.org/desc/-6880920638591658424?ckey=remote+senior+backend+engineer&rgn=55180&pos=43&groupId=2134052230&elckey=-8161184391430778409&p=1&aq=8728790113624290830&cid=15922&jobAge=798&brelb=100&bscr=815.20984&scr=815.20984
+title: Senior Backend Engineer
+company: Instrumentl
+location: Canada
+published_at: '2026-07-07T07:54:42.2800000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-07T07:54:42.2800000 is older than 7 days
+updated_at: '2026-08-09T20:02:06Z'
+rejected_at: '2026-08-09T20:02:06Z'

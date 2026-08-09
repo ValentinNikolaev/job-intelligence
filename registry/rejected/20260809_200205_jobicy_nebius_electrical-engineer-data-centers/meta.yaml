@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149947'
+source_url: https://jobicy.com/jobs/149947-electrical-engineer-data-centers
+title: Electrical Engineer- Data Centers
+company: Nebius
+location: Europe
+published_at: '2026-08-01T03:00:43Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-01T03:00:43Z is older than 7 days
+updated_at: '2026-08-09T20:02:05Z'
+rejected_at: '2026-08-09T20:02:05Z'

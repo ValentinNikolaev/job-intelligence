@@ -1,1 +1,1 @@
-ValueError: CLEANJOBDATA_API_KEY must be set in the environment or sources/.env
+RuntimeError: CleanJobData profile 'backend-italy' page 1 request failed: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1082)

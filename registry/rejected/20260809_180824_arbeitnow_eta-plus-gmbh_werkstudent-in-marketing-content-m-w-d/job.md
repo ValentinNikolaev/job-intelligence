@@ -49,4 +49,4 @@ Wir sind im Verhalten immer noch ein Start-Up mit flachen Hierarchien, leckeren 
 
 Wir freuen uns über Bewerbungen unabhängig von Herkunft, Geschlecht, Alter, Religion, Behinderung oder sexueller Identität.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
