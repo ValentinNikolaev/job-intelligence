@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-architect-430981
+source_url: https://www.arbeitnow.com/jobs/companies/elastic/customer-architect-430981
+title: Customer Architect
+company: Elastic
+location: null
+published_at: '2026-08-09T20:55:12Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-09T22:01:12Z'
+rejected_at: '2026-08-09T22:01:12Z'

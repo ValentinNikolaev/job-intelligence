@@ -2,21 +2,21 @@
 
 Senior Full Stack Developer & IT Project Leader | Lithos | Lithos
 
-navbar.what_we_do
+Cosa facciamo
 
-navbar.projects
+Progetti
 
-navbar.about_us
+Chi siamo
 
-navbar.blog
+Blog
 
 it
 
-index.contact_cta.cta_button
+Contattaci
 
-common.home
+Home
 /
-footer.links.work_with_us
+Lavora con noi
 /
 Senior Full Stack Developer & IT Project Leader
 
@@ -50,42 +50,43 @@ Cosa offriamo
 • Flessibilità: Possibilità di lavoro in sede, smart working o modalità full remote.
 • Sede di lavoro: Oderzo / Remote
 
-careers.job_detail.form_intro
+Mandaci il tuo portfolio e raccontaci il progetto di cui vai più fiero.
+Anche se è una cosa piccola.
 
-careers.job_detail.form.name
+Nome e cognome
 
-careers.job_detail.form.email
+Email
 
-careers.job_detail.form.role
+Ruolo o area di interesse
 
-careers.job_detail.form.attachment
+Allegato CV (facoltativo)
 
-careers.job_detail.form.attachment_btn
+Carica file
 
-careers.job_detail.form.message
+Messaggio libero
 
-careers.job_detail.form.submit
+Mandaci la tua candidatura
 
-footer.address.street
+Via Serravalle, 29
 
-footer.address.city
+31046 Oderzo, TV, Italy
 
-footer.address.phone
++39 0422 749494
 
-footer.address.email
+[email protected]
 
-footer.address.vat
+P.IVA: 04778900268
 
-footer.links.what_we_do
-footer.links.who_we_are
-footer.links.projects
-footer.links.contacts
-footer.links.work_with_us
+Cosa facciamo
+Chi siamo
+Progetti
+Contatti
+Lavora con noi
 
-footer.social.instagram
-footer.social.linkedin
-footer.social.facebook
+Instagram
+Linkedin
+Facebook
 
-footer.newsletter.title
+Newsletter
 
-footer.newsletter.button
+Iscriviti
