@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 22
+  total_events: 25
   by_status:
     applied:
-      count: 12
-      last_changed_at: '2026-08-04T19:27:35Z'
+      count: 15
+      last_changed_at: '2026-08-09T19:21:11Z'
     interview:
       count: 1
       last_changed_at: '2026-08-04T15:38:38Z'
@@ -57,6 +57,10 @@ summary:
       count: 1
       reason: team decision
       last_changed_at: '2026-08-08T08:55:36Z'
+    unspecified:
+      count: 3
+      reason: unspecified
+      last_changed_at: '2026-08-09T19:21:11Z'
     user-confirmed-all-jobs-were-applied-after-compl:
       count: 1
       reason: User confirmed all jobs were applied after completing the Solidgate
@@ -411,3 +415,39 @@ events:
     source: llm_assisted_manual
   note: Employer declined to proceed after team discussion, citing current circumstances
     and team priorities.
+- changed_at: '2026-08-09T19:21:07Z'
+  vacancy_id: b026db32-002c-47a4-a277-c2a73772d396
+  directory: 2026-08-07_112249_gameinspire_middle-senior-golang-developer
+  company: Gameinspire
+  title: Middle/Senior Golang Developer
+  from_status: found
+  to_status: applied
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-09T19:21:09Z'
+  vacancy_id: 9a8a4a10-af21-4cdb-8542-5c31233e74d0
+  directory: 2026-08-05_230409_micro1_senior-backend-engineer
+  company: micro1
+  title: Senior Backend Engineer
+  from_status: found
+  to_status: applied
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-09T19:21:11Z'
+  vacancy_id: efe56330-8bb8-4a90-b89a-551ed91ffa8d
+  directory: 2026-08-05_065339_linro_backend-engineer-remote-germany
+  company: Linro
+  title: Backend Engineer - Remote Germany
+  from_status: found
+  to_status: applied
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual

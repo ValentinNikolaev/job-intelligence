@@ -17,11 +17,13 @@ sources:
     - Full Time
 published_at: '2026-08-05T00:00:52Z'
 discovered_at: '2026-08-05T06:53:39Z'
-updated_at: '2026-08-05T06:53:39Z'
-status: found
+updated_at: '2026-08-09T19:21:11Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-05T06:53:39Z'
+- status: applied
+  changed_at: '2026-08-09T19:21:11Z'
 analysis_priority: 0
 fingerprint: sha256:7e4d33ead78b354585233438dd89311cba80df44455673c124dc5aedebcb6040
 data_source: arbeitnow
