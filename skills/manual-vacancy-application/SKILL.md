@@ -13,7 +13,9 @@ Turn one raw/manual vacancy into a prepared application package:
 
 - Publish the vacancy through `$manual-job-intake`.
 - Analyze only the newly published vacancy when no acceptable match already exists.
-- Prepare the existing application artifacts through `$job-intelligence-workflow`: `cv.md`, `cover-letter.md`, `analysis.md`, and `interview-preparation.md`, then publish the deterministic DOCX-backed application package.
+- Prepare the application artifacts through `$job-intelligence-workflow`, using
+  `$write-cover-letter` for `cover-letter.md`, then publish the deterministic
+  DOCX-backed package.
 
 Do not bypass deterministic project commands. Do not hand-edit published registry artifacts or cache metadata.
 
@@ -30,7 +32,7 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
 5. Decide preparation from the published match score:
    - If score is below `prepare_min_score`, stop after catalog/check/finalization and report that no CV or cover letter should be prepared under repository policy.
    - If score is at least `prepare_min_score`, use workflow `prepare`. Preparation starts only from the vacancy ID or registry directory explicitly provided by the user.
-6. Prepare exactly this vacancy with `$job-intelligence-workflow` preparation rules. Read only its `meta.yaml`, `job.md`, optional `company.md`, configured candidate source files, and `prompts/vacancy-application.md`. Write drafts under `.codex-work/application/<vacancy-directory>/`.
+6. Prepare exactly this vacancy with `$job-intelligence-workflow` preparation rules. Read only its `meta.yaml`, `job.md`, optional `company.md`, configured candidate source files, and `prompts/vacancy-application.md`. Invoke `$write-cover-letter` for the final letter and stop if that skill is unavailable; do not substitute the retired inline drafting logic. Write drafts under `.codex-work/application/<vacancy-directory>/`.
 7. Publish with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow prepare`. If validation or DOCX conversion fails, fix the draft or deterministic converter issue and retry.
 8. Confirm the application directory contains the published Markdown artifacts, DOCX artifacts, and `manifest.yaml`.
 9. Regenerate the vacancy catalog through `$generate-vacancy-catalog`, run required tests and the prohibited-API scan, inspect the full diff, stage, commit, and push when repository files changed.

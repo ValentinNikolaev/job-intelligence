@@ -19,15 +19,26 @@
    and vacancy. Put direct source links and fact/inference/unknown labels in that
    vacancy's analysis. The repository must not call a model or web-search API on
    Codex's behalf.
-6. For every vacancy, write exactly `cv.md`, `cover-letter.md`, `analysis.md`, and
+6. After finalizing the vacancy-specific CV and company research, invoke
+   `$write-cover-letter` in Draft mode. Supply only this vacancy, the configured
+   candidate evidence, the final CV, and verified research for this company. Keep its
+   requirement-to-evidence workbench internal, use two complementary supported examples,
+   and run its final claim-grounding check. Put only the finished letter in
+   `cover-letter.md`; put research sources and unresolved confirmation items in
+   `analysis.md`. Do not invoke `stop-slop` as a routine cover-letter pass.
+7. If `$write-cover-letter` is unavailable, stop and report that
+   `agent-plugins@valentin-agent-plugins` version
+   `9.0.0+codex.20260809175723` is required. Never substitute the old inline drafting
+   rules or a generic letter.
+8. For every vacancy, write exactly `cv.md`, `cover-letter.md`, `analysis.md`, and
    `interview-preparation.md` under
    `.codex-work/application/<vacancy-directory>/`. Never use one shared set of drafts.
-7. Publish the verified batch with
+9. Publish the verified batch with
    `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare`.
    The deterministic publisher resolves every selector before publication and reads
    each package only from its matching vacancy-keyed draft directory. A legacy
    single-vacancy call may still pass that vacancy's draft directory directly.
-8. If validation or DOCX conversion fails, correct only the failing vacancy's draft or
+10. If validation or DOCX conversion fails, correct only the failing vacancy's draft or
    the deterministic converter issue and retry the explicit selection. Current packages
    are skipped. Confirm each prepared vacancy has all six application artifacts, the
    upload-friendly CV copies, and `manifest.yaml`.

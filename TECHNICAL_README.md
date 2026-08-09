@@ -357,6 +357,19 @@ time with the configured candidate source documents, and applies the versioned
 [single-package prompt](prompts/vacancy-application.md) independently. Codex may use its
 own web-search capability for current company research. Project code does not call a
 model or search API.
+After the CV and company research are final, the prompt invokes `$write-cover-letter`
+from `agent-plugins@valentin-agent-plugins` version
+`9.0.0+codex.20260809175723` (upstream commit `5c5b33b`). The skill maps priority
+requirements to verified evidence, selects two complementary examples, grounds company
+motivation in current sources, and runs a final claim ledger. Only the finished letter
+goes to `cover-letter.md`; research sources and unresolved confirmation items stay in
+`analysis.md`. There is no generic or legacy inline fallback.
+
+Install or refresh the configured personal plugin with
+`codex plugin add agent-plugins@valentin-agent-plugins`, then start a new Codex task so
+the bundled skill is loaded. Preparation must stop clearly if `$write-cover-letter` is
+not available in that task.
+
 The publisher validates all four Markdown outputs before converting the final CV and
 cover letter through the installed host-side `md-to-docx` Codex skill. Set
 `MD_TO_DOCX_SCRIPT` only if the skill cannot be found under
@@ -370,7 +383,9 @@ July run writes `June 2026`.
 
 `manifest.yaml` records hashes of the candidate sources, vacancy, supplied company
 content, prompt, and model. Unchanged packages are skipped unless `--force` is supplied.
-The source CV and LinkedIn registry are never modified.
+The prompt contains the required cover-letter plugin version, so a deliberate version
+bump also changes `prompt_version` and invalidates older packages. The source CV and
+LinkedIn registry are never modified.
 
 Preparation is manual and score-gated before any draft is read or published. The user
 chooses one to 10 vacancies from analyzed matches and names every vacancy ID or registry

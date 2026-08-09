@@ -14,7 +14,8 @@ Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code.
   pending vacancies.
 - For application packages, follow `references/prepare.md` with workflow `prepare` and
   process one to 10 fresh vacancies explicitly selected by the user through vacancy IDs
-  or registry directories. Never expand the selection to `all`.
+  or registry directories. Use `$write-cover-letter` for every letter and never expand
+  the selection to `all`.
 - For a user-requested status change, run `python run.py status <vacancy-id-or-directory> <status>`. Never change status without an explicit user request. Preserve the complete history through the command.
 
 Read `config/codex-workflows.yaml` before model-dependent work. The selected Scheduled Task or chat must use the corresponding model and reasoning level. Pass the workflow name to the deterministic publisher; it derives the only allowed model label from policy. If the requested model is unavailable in the current Codex surface, tell the user and do not publish under that workflow.
@@ -27,9 +28,12 @@ Read `config/codex-workflows.yaml` before model-dependent work. The selected Sch
    For analysis, read only the sealed input pack and the batch prompt; do not compare
    vacancies or read another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
-3. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
-4. If publication fails validation, fix the draft and retry. Do not edit generated cache metadata by hand.
-5. Never submit applications or contact employers.
+3. Require `$write-cover-letter` from `agent-plugins@valentin-agent-plugins` version
+   `9.0.0+codex.20260809175723` during preparation. Stop if the active task cannot load
+   it; do not recreate the retired inline drafting flow.
+4. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
+5. If publication fails validation, fix the draft and retry. Do not edit generated cache metadata by hand.
+6. Never submit applications or contact employers.
 
 ## Mandatory final catalog step
 

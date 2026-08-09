@@ -397,41 +397,80 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertIn("University, 2004 - 2008", result["cv_markdown"])
 
-    def test_cover_letter_must_not_repeat_vacancy_title(self) -> None:
+    def test_cover_letter_accepts_target_role_and_company_context(self) -> None:
         payload = application_payload()
         payload["cover_letter_markdown"] = (
             "# Cover Letter\n\nDear Hiring Team,\n\n"
-            "I am interested in the Senior Backend Engineer role.\n"
+            "I am applying for the Senior Backend Engineer role at Example.\n"
         )
 
-        with self.assertRaisesRegex(ApplicationError, "exact vacancy title"):
-            validate_application_package(
-                payload,
-                vacancy={
-                    "metadata": {
-                        "title": "Senior Backend Engineer",
-                        "company": "Example",
-                    }
-                },
-            )
-
-    def test_cover_letter_must_not_repeat_company_name(self) -> None:
-        payload = application_payload()
-        payload["cover_letter_markdown"] = (
-            "# Cover Letter\n\nDear Hiring Team,\n\n"
-            "Example seems to value reliable backend delivery.\n"
+        result = validate_application_package(
+            payload,
+            vacancy={
+                "metadata": {
+                    "title": "Senior Backend Engineer",
+                    "company": "Example",
+                }
+            },
         )
 
-        with self.assertRaisesRegex(ApplicationError, "company name"):
-            validate_application_package(
-                payload,
-                vacancy={
-                    "metadata": {
-                        "title": "Senior Backend Engineer",
-                        "company": "Example",
-                    }
-                },
-            )
+        self.assertIn("Senior Backend Engineer role at Example", result["cover_letter_markdown"])
+
+    def test_prompt_change_invalidates_and_republishes_application(self) -> None:
+        generator = self._generator(FakeClient(), FakeConverter())
+        first = generator.generate_directory(self.directory)
+        application = self.directory / "application"
+        manifest_before = yaml.safe_load(
+            (application / "manifest.yaml").read_text(encoding="utf-8")
+        )
+
+        self.prompt.write_text(
+            "Prepare exactly one package with $write-cover-letter.\n",
+            encoding="utf-8",
+        )
+
+        self.assertFalse(generator.is_current(self.directory))
+        second = generator.generate_directory(self.directory)
+        manifest_after = yaml.safe_load(
+            (application / "manifest.yaml").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual("prepared", first.status)
+        self.assertEqual("prepared", second.status)
+        self.assertNotEqual(
+            manifest_before["prompt_version"], manifest_after["prompt_version"]
+        )
+
+    def test_repository_prepare_contract_delegates_to_write_cover_letter(self) -> None:
+        project_root = Path(__file__).resolve().parents[1]
+        prompt = (project_root / "prompts" / "vacancy-application.md").read_text(
+            encoding="utf-8"
+        )
+        prepare = (
+            project_root
+            / ".agents"
+            / "skills"
+            / "job-intelligence-workflow"
+            / "references"
+            / "prepare.md"
+        ).read_text(encoding="utf-8")
+        manual_agent = (
+            project_root
+            / ".agents"
+            / "skills"
+            / "manual-vacancy-application"
+            / "SKILL.md"
+        ).read_text(encoding="utf-8")
+        manual_source = (
+            project_root / "skills" / "manual-vacancy-application" / "SKILL.md"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("$write-cover-letter", prompt)
+        self.assertIn("$write-cover-letter", prepare)
+        self.assertNotIn("Do not mention the exact vacancy title", prompt)
+        self.assertNotIn("Use `stop-slop`", prompt)
+        self.assertTrue(manual_agent.startswith("---\n"))
+        self.assertEqual(manual_source, manual_agent)
 
     def test_codex_draft_client_reads_markdown_without_network(self) -> None:
         draft = self.project / "application-draft"

@@ -95,9 +95,10 @@ tasks that need language judgment. The repository keeps the handoff visible.
 5. **Prepare the application**
 
    A separate Codex task handles an explicitly selected batch of one to ten vacancies.
-   It drafts an isolated CV, cover letter, application analysis, and interview
-   preparation for each vacancy. The publisher validates each package and converts the
-   final CV and cover letter to DOCX.
+   It drafts an isolated CV, application analysis, and interview preparation for each
+   vacancy, and delegates the evidence-backed letter to the dedicated
+   `$write-cover-letter` plugin skill. The publisher validates each package and converts
+   the final CV and cover letter to DOCX.
 
 6. **Regenerate the catalog**
 

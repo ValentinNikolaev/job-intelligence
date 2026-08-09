@@ -82,15 +82,19 @@ decision-relevant findings in the application analysis.
     experience, ATS readability, internal consistency, and authentic customization. Score
     role fit, recruiter screening potential, hiring-manager appeal, ATS compatibility, and
     credibility from 1–10. Fix only critical remaining issues; do not start a new large loop.
-13. Create a concise, specific cover letter based on the final CV, vacancy, and verified
-    company research. Highlight two or three strongest matches without repeating the CV or
-    inventing enthusiasm, motives, knowledge, or achievements.
-14. Use `stop-slop` from `agent-plugins@valentin-agent-plugins`
-    (`marketplaces\valentin-agent-plugins`) to tune the cover letter. Remove formulaic AI
-    phrasing, filler, unsupported enthusiasm, business jargon, and vague claims while
-    preserving all factual support, vacancy-specific alignment, and concise recruiter-ready
-    tone.
-15. Create detailed interview preparation grounded in the vacancy and final CV.
+13. Invoke `$write-cover-letter` from `agent-plugins@valentin-agent-plugins` version
+    `9.0.0+codex.20260809175723` in Draft mode. Treat the full vacancy as the job
+    description; treat the configured candidate records as the claim source of truth and
+    the final CV as the selected positioning for this application. Follow the skill's
+    requirement-to-evidence mapping, two complementary evidence stories, company-motivation
+    research, and final claim ledger. Default to the posting language, 300–450 words, four
+    to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
+    ATS-friendly formatting. Use the role and company naturally when they improve targeting.
+    Put only the finished letter in `cover_letter_markdown`; place research sources and any
+    unresolved confirmation items in `analysis_markdown`. If the skill is unavailable, stop
+    rather than recreating the retired inline cover-letter logic. Do not invoke `stop-slop`
+    as a routine post-processing step.
+14. Create detailed interview preparation grounded in the vacancy and final CV.
 
 ## Required output fields
 
@@ -110,13 +114,13 @@ canonical tailored CV.
 
 ### `cover_letter_markdown`
 
-A concise tailored cover letter. Explain why the role is relevant, why the candidate is a
-credible match, and the two or three strongest supported experiences. Demonstrate only
-verified understanding of the product or mission. Do not add address placeholders or
-facts that were not supplied. Do not mention the exact vacancy title or the company
-name in the cover letter; the application context already identifies both. Keep the
-letter specific through supported skills, product/domain cues, and relevant evidence
-instead of repeating the addressee or role name.
+A tailored letter produced through `$write-cover-letter`. State the target role and use
+the company name or a verified company detail when that makes the opening and motivation
+specific. Build the body around two complementary, evidence-backed examples tied to the
+highest-priority responsibilities rather than replaying the CV chronologically. Demonstrate
+only verified understanding of the product, mission, values, or current initiatives. Do not
+add address placeholders, unsupported enthusiasm, product use, personal connections, facts,
+or metrics. End with a concise statement of fit and interest and the candidate's name.
 
 ### `analysis_markdown`
 
