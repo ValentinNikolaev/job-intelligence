@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6848379010760251479'
+source_url: https://jooble.org/away/6848379010760251479?p=1&pos=5&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=12&brelb=10&scr=37.771557&bscr=37.771557&aq=1067865404146202703&elckey=-4766071693260104299
+title: Web Developer
+company: NexusUnifi
+location: Italian Republic
+published_at: '2026-08-08T17:39:10.7570000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T12:09:06Z'
+rejected_at: '2026-08-09T12:09:06Z'
