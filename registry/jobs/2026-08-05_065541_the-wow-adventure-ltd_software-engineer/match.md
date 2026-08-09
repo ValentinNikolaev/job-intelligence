@@ -1,25 +1,24 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-PHP and Laravel backend experience aligns well with the software role, with additional automation and AI-adjacent experience; Python and frontend depth are less established.
+Good match for the desired PHP/Laravel and backend SaaS work, with strong production engineering and automation experience, but the supplied vacancy text is incomplete and emphasizes Python and AI solutions that are not core demonstrated strengths.
 
 ## Why it matches
 
-- PHP
-- Laravel
-- backend systems
-- APIs
-- automation
-- production reliability
+- Strong PHP backend and Laravel experience.
+- Proven SaaS backend, API, automation, monitoring, and reliability experience.
+- Relevant JavaScript, HTML, CSS, and integration experience is partly supported.
+- Senior ownership of production systems and cross-functional delivery is well evidenced.
 
 ## Gaps
 
-- Python depth
-- HTML/CSS/JavaScript depth
-- direct SaaS AI implementation evidence
+- Python is not explicitly listed as a candidate skill or work experience.
+- The exact AI solution, platform, and seniority expectations cannot be confirmed from the truncated vacancy text.
+- Specific frontend depth and any required framework details are not established.
 
 ## Concerns
 
-- The listing is sparse and emphasizes Python heavily.
+- The Jooble text is truncated, so location, working arrangement, compensation, and mandatory requirements remain uncertain.
+- The role may prioritize Python more heavily than the available excerpt indicates.

@@ -1,25 +1,27 @@
-score: 70
+score: 72
 recommendation: match
-summary: PHP and Laravel backend experience aligns well with the software role, with
-  additional automation and AI-adjacent experience; Python and frontend depth are
-  less established.
+summary: Good match for the desired PHP/Laravel and backend SaaS work, with strong
+  production engineering and automation experience, but the supplied vacancy text
+  is incomplete and emphasizes Python and AI solutions that are not core demonstrated
+  strengths.
 strengths:
-- PHP
-- Laravel
-- backend systems
-- APIs
-- automation
-- production reliability
+- Strong PHP backend and Laravel experience.
+- Proven SaaS backend, API, automation, monitoring, and reliability experience.
+- Relevant JavaScript, HTML, CSS, and integration experience is partly supported.
+- Senior ownership of production systems and cross-functional delivery is well evidenced.
 gaps:
-- Python depth
-- HTML/CSS/JavaScript depth
-- direct SaaS AI implementation evidence
+- Python is not explicitly listed as a candidate skill or work experience.
+- The exact AI solution, platform, and seniority expectations cannot be confirmed
+  from the truncated vacancy text.
+- Specific frontend depth and any required framework details are not established.
 concerns:
-- The listing is sparse and emphasizes Python heavily.
+- The Jooble text is truncated, so location, working arrangement, compensation, and
+  mandatory requirements remain uncertain.
+- The role may prioritize Python more heavily than the available excerpt indicates.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-07T17:11:09Z'
+analyzed_at: '2026-08-09T22:05:08Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:7dd2ef062cc0874bd1709a785a79e97a1ba2b628df88f4b9530993d9cee03db0
+job_version: sha256:eb75c9a9418ae5810e1dcf6b33a02e66c39bfc2061b849c08ba816f28635a49e
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

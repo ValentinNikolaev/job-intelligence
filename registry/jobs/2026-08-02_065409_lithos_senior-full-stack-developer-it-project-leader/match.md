@@ -1,21 +1,24 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-Good senior fit for backend/full-stack delivery and project leadership, with strong PHP, APIs, cloud, CI/CD, and team coordination evidence; frontend depth and Italian communication need validation.
+Strong fit for the PHP/Laravel backend, leadership, API integration, Agile, and remote aspects of the role, with meaningful gaps in the explicitly required JavaScript frontend stack and Java.
 
 ## Why it matches
 
-- Senior PHP/backend and API development across recent roles
-- Project planning, technical leadership, mentoring, and stakeholder collaboration
-- Kubernetes, AWS, CI/CD, performance, and reliability experience
+- Extensive recent PHP and Laravel backend experience.
+- Technical leadership, mentoring, planning, and delivery ownership are well evidenced.
+- Strong REST API, MySQL/PostgreSQL, Linux-adjacent infrastructure, and production reliability experience.
+- English proficiency and remote work compatibility are supported by the profile and vacancy.
 
 ## Gaps
 
-- The vacancy emphasizes full-stack work and frontend evidence is limited
-- Italian-language and local communication expectations are not confirmed
+- ReactJS, Vue.js, Livewire, and FilamentPHP are not explicitly evidenced.
+- Java experience is not explicitly evidenced.
+- HubSpot CRM integration is not explicitly evidenced.
 
 ## Concerns
 
-- Project-management scope and day-to-day client-facing responsibilities should be clarified
+- The role combines substantial frontend and project-management responsibilities, while the candidate evidence is strongest in backend engineering.
+- The stated compensation range may be below the candidate's seniority, but salary expectations are unknown.
