@@ -1,0 +1,96 @@
+schema_version: 2
+id: 04fc9181-fc6c-4ade-827e-25819f1fe92c
+title: Product Engineer (Data Indexing)
+company: Chainstack
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/chainstack/jobs/product-engineer-data-indexing
+  url: https://himalayas.app/companies/chainstack/jobs/product-engineer-data-indexing
+  metadata:
+    location_restrictions: []
+    excerpt: Are you a strong backend engineer who enjoys building high-performance
+      systems and owning products end to end?
+    company_slug: chainstack
+    company_logo: https://cdn-images.himalayas.app/bd2jyeri0wkwrw3k6d9r96ffv7m5
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - Backend-Engineering
+    - Data-Engineering
+    - Product-Engineering
+    - Distributed-Systems
+    - Blockchain-Engineering
+    - Product-Engineer
+    - Senior-Product-Engineer
+    - Staff-Product-Engineer
+    - Lead-Product-Engineer
+    expiry_at: '2026-10-08T12:14:21Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        q: backend engineer
+        seniority: Senior
+        sort: recent
+        worldwide: 'true'
+    - query_index: 6
+      parameters:
+        q: golang
+        seniority: Senior
+        sort: recent
+        worldwide: 'true'
+published_at: '2026-08-09T12:14:22Z'
+discovered_at: '2026-08-09T16:44:51Z'
+updated_at: '2026-08-09T16:44:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-09T16:44:51Z'
+analysis_priority: 0
+fingerprint: sha256:fed7bf78a52120eda5b31412a60e94eb7a3cdfd018014cf2f0b0720d2dc675bc
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '362260'
+source_url: https://jobs.dou.ua/companies/strimco/vacancies/362260/
+title: Senior Golang Developer
+company: Strimco
+location: Київ, віддалено
+published_at: '2026-07-27'
+rejection_category: stale
+rejection_reason: published_at 2026-07-27 is older than 7 days
+updated_at: '2026-08-09T16:44:48Z'
+rejected_at: '2026-08-09T16:44:48Z'

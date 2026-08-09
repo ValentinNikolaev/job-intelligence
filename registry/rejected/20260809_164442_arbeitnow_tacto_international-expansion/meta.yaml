@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: international-expansion-munich-7801
+source_url: https://www.arbeitnow.com/jobs/companies/tacto/international-expansion-munich-7801
+title: International Expansion
+company: Tacto
+location: Munich
+published_at: '2026-08-09T08:40:14Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-09T16:44:42Z'
+rejected_at: '2026-08-09T16:44:42Z'

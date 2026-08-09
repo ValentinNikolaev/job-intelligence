@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3158758254709228857'
+source_url: https://jooble.org/desc/3158758254709228857?ckey=remote+golang+backend+engineer&rgn=55180&pos=25&groupId=1106121903&elckey=3349839690140806535&p=1&aq=3932279298167461152&cid=15922&jobAge=775&brelb=100&bscr=244.03996&scr=244.03996
+title: Senior Backend Engineer (Go)
+company: CloudFactory
+location: Romania
+published_at: '2026-07-08T02:57:10.2930000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-08T02:57:10.2930000 is older than 7 days
+updated_at: '2026-08-09T16:44:55Z'
+rejected_at: '2026-08-09T16:44:55Z'

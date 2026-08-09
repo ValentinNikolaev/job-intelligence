@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2326234776970633730'
+source_url: https://jooble.org/desc/-2326234776970633730?ckey=senior+backend+engineer&rgn=55179&pos=16&groupId=293749696&elckey=-4418313465305559448&p=1&aq=-8896336332735630490&cid=15922&jobAge=82&brelb=100&bscr=10.359875&scr=10.359875
+title: Senior QC Inspector
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-08-06T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T16:44:54Z'
+rejected_at: '2026-08-09T16:44:54Z'

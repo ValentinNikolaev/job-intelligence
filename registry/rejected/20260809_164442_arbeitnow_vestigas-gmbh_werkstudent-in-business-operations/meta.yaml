@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-werkstudentin-business-operations-munchen-hybrid-62851
+source_url: https://www.arbeitnow.com/jobs/companies/vestigas-gmbh/remote-werkstudentin-business-operations-munchen-hybrid-62851
+title: Werkstudent:in Business Operations
+company: VESTIGAS GmbH
+location: München (Hybrid)
+published_at: '2026-08-09T14:09:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-09T16:44:42Z'
+rejected_at: '2026-08-09T16:44:42Z'
