@@ -1,0 +1,37 @@
+schema_version: 2
+id: d044b39a-1917-40d6-9db6-69f3e03397ae
+title: Junior Go Engineer
+company: Solidgate
+company_url: https://jobs.dou.ua/companies/solidgate/vacancies/
+location: Київ, Львів, Варшава (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '364821'
+  url: https://jobs.dou.ua/companies/solidgate/vacancies/364821/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 10 серпня
+    listing_summary: 'Our Mission and Vision
+
+
+      At Solidgate, our mission is clear: to empower outstanding entrepreneurs to
+      build exceptional internet companies. We exist to fuel the builders — the ones
+      shaping the digital economy — with the financial infrastructure they deserve.'
+published_at: '2026-08-10'
+discovered_at: '2026-08-10T23:04:25Z'
+updated_at: '2026-08-10T23:04:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-10T23:04:25Z'
+analysis_priority: 100
+fingerprint: sha256:aad4dbf522a68d75e638afc09ffbcdf85c4bc1956915784c8f41cffe735877bc
+data_source: dou
+content_source: dou
+company_content_source: dou

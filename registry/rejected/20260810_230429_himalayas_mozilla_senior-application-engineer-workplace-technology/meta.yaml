@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/mozilla/jobs/senior-application-engineer-workplace-technology-7340364282
+source_url: https://himalayas.app/companies/mozilla/jobs/senior-application-engineer-workplace-technology-7340364282
+title: Senior Application Engineer, Workplace Technology
+company: Mozilla
+location: Worldwide
+published_at: '2026-08-10T08:51:22Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-10T23:04:29Z'
+rejected_at: '2026-08-10T23:04:29Z'

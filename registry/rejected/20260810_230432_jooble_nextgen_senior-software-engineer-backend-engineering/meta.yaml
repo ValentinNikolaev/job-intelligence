@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2664323037508050364'
+source_url: https://jooble.org/desc/-2664323037508050364?ckey=remote+senior+backend+engineer&rgn=55180&pos=49&groupId=2134052230&elckey=6631825893795113294&p=1&aq=8129541874941035391&cid=15922&jobAge=65&brelb=100&bscr=687.87054&scr=687.87054
+title: Senior Software Engineer, Backend Engineering
+company: NextGen
+location: New York, NY
+published_at: '2026-08-08T03:54:10.7200000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-10T23:04:32Z'
+rejected_at: '2026-08-10T23:04:32Z'
