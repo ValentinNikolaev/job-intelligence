@@ -1,0 +1,27 @@
+score: 78
+recommendation: match
+summary: Strong fit for a senior PHP backend role through extensive PHP, Laravel,
+  SaaS/backend, scalability, and production-reliability experience; the U.S. location
+  and unclear European time-zone compatibility remain material concerns.
+strengths:
+- Extensive PHP backend experience with Laravel and Symfony, including senior and
+  technical-lead responsibilities.
+- Direct experience scaling SaaS and communication platforms, optimizing APIs and
+  databases, and operating resilient production systems.
+- Meets the stated seniority threshold with more than 15 years of software engineering
+  experience.
+gaps:
+- The supplied vacancy excerpt does not specify the exact framework, database, cloud
+  stack, or legacy technologies required beyond general backend work.
+concerns:
+- The role is listed in Florida, NY; although remote, the vacancy does not confirm
+  work eligibility or European time-zone compatibility.
+- The available job description is truncated, so some mandatory requirements cannot
+  be assessed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-10T12:18:09Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:27432d0b7c58009c992cf81e02ca84198f4e8caf16559084aa94826a22770a08
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
