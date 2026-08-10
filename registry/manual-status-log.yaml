@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 25
+  total_events: 26
   by_status:
     applied:
-      count: 15
-      last_changed_at: '2026-08-09T19:21:11Z'
+      count: 16
+      last_changed_at: '2026-08-10T20:51:15Z'
     interview:
       count: 1
       last_changed_at: '2026-08-04T15:38:38Z'
@@ -72,9 +72,9 @@ summary:
         message.
       last_changed_at: '2026-08-02T16:06:18Z'
     user-confirmed-application-submitted:
-      count: 1
+      count: 2
       reason: User confirmed application submitted
-      last_changed_at: '2026-08-04T18:16:05Z'
+      last_changed_at: '2026-08-10T20:51:15Z'
     user-confirmed-application-submitted-to-zartis:
       count: 1
       reason: User confirmed application submitted to Zartis
@@ -451,3 +451,16 @@ events:
   actor: codex
   interaction:
     source: llm_assisted_manual
+- changed_at: '2026-08-10T20:51:15Z'
+  vacancy_id: bb67dbbd-ff90-4447-971f-e7e2a7e2b7d2
+  directory: 2026-08-10_194528_whitetech_php-developer-with-ddd
+  company: WhiteTech
+  title: PHP Developer with DDD
+  from_status: found
+  to_status: applied
+  reason: User confirmed application submitted
+  reason_key: user-confirmed-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+  note: Applied via WhiteTech Greenhouse posting
