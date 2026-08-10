@@ -18,6 +18,8 @@ sources:
     company_logo: https://cdn-images.himalayas.app/2twhdgcpgh4ahashcwjbckb89aer
     seniority:
     - Senior
+    parent_categories:
+    - Developer
     timezone_restrictions:
     - -11
     - -10
@@ -60,24 +62,24 @@ sources:
     - Software-Development
     - Backend-Development
     - PHP-Development
-    - Software-Engineering
     - API-Development
     - Backend-PHP-Developer
     - Senior-PHP-Developer
     - Senior-Backend-Development
     - Senior-PHP-Engineer
     - Senior-PHP-Development
+    - Software-Engineer
     expiry_at: '2026-10-07T04:16:21Z'
     discovered_by:
     - query_index: 5
       parameters:
         q: backend engineer
-        sort: recent
-        seniority: Senior
         worldwide: 'true'
+        seniority: Senior
+        sort: recent
 published_at: '2026-08-08T04:16:22Z'
 discovered_at: '2026-08-08T06:14:50Z'
-updated_at: '2026-08-08T06:14:50Z'
+updated_at: '2026-08-10T15:03:17Z'
 status: found
 status_history:
 - status: found

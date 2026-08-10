@@ -1,0 +1,33 @@
+schema_version: 2
+id: 2e3e06f0-5626-45c8-9575-b83917cacece
+title: Software engineer (Go)
+company: Wizer
+company_url: https://jobs.dou.ua/companies/wizer-free-security-awareness-training-company/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '357580'
+  url: https://jobs.dou.ua/companies/wizer-free-security-awareness-training-company/vacancies/357580/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 10 серпня
+    listing_summary: Wizer Inc. is looking for a passionate and skilled software engineer
+      to join our team of professionals.
+published_at: '2026-08-10'
+discovered_at: '2026-08-10T15:03:14Z'
+updated_at: '2026-08-10T15:03:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-10T15:03:14Z'
+analysis_priority: 100
+fingerprint: sha256:daa13f452a82a7dad76da1d427ed584f1bf0e95cd6ef191a909e6794c4511414
+data_source: dou
+content_source: dou
+company_content_source: dou

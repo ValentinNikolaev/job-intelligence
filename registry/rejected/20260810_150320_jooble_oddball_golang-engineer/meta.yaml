@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8750286002320161619'
+source_url: https://jooble.org/desc/8750286002320161619?ckey=remote+golang+backend+engineer&rgn=55180&pos=31&groupId=1106121903&elckey=7035411092576532563&p=1&aq=5684067989273573736&cid=15922&jobAge=1041&brelb=100&bscr=230.01912&scr=230.01912
+title: Golang Engineer
+company: Oddball
+location: Remote
+published_at: '2026-06-28T08:49:52.6470000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-28T08:49:52.6470000 is older than 7 days
+updated_at: '2026-08-10T15:03:20Z'
+rejected_at: '2026-08-10T15:03:20Z'

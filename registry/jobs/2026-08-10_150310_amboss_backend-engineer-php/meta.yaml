@@ -1,0 +1,42 @@
+schema_version: 2
+id: db4263d0-a970-4d55-9339-89686ec09037
+title: Backend Engineer (PHP)
+company: AMBOSS
+company_url: https://jobs.ashbyhq.com/amboss
+location: Berlin
+remote: true
+employment_type: FullTime
+sources:
+- source: ashby
+  source_job_id: f4703dee-3e96-4979-b1e6-b8925e1bd7a3
+  url: https://jobs.ashbyhq.com/amboss/f4703dee-3e96-4979-b1e6-b8925e1bd7a3
+  metadata:
+    board: amboss
+    application_url: https://jobs.ashbyhq.com/amboss/f4703dee-3e96-4979-b1e6-b8925e1bd7a3/application
+    department: Research & Development
+    team: Educator Experience
+    workplace_type: Hybrid
+    secondary_locations:
+    - location: Remote - Germany
+      address:
+        postalAddress:
+          addressRegion: Remote
+          addressCountry: Germany
+          addressLocality: Remote
+    compensation:
+      compensationTierSummary: null
+      scrapeableCompensationSalarySummary: null
+      compensationTiers: []
+      summaryComponents: []
+published_at: '2026-08-10T12:43:41.587+00:00'
+discovered_at: '2026-08-10T15:03:10Z'
+updated_at: '2026-08-10T15:03:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-10T15:03:10Z'
+analysis_priority: 0
+fingerprint: sha256:1d4d4f4e1b3188681fc3802e1cbbb4a8a8829fe7e808124df7533da2096dc0f8
+data_source: ashby
+content_source: ashby
+company_content_source: null

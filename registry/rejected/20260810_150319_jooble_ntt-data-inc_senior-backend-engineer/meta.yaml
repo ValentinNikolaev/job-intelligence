@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3034505440216662869'
+source_url: https://jooble.org/desc/-3034505440216662869?ckey=remote+senior+backend+engineer&rgn=55180&pos=39&groupId=2134052230&elckey=-5803822446925346973&p=1&aq=-140378382496783970&cid=15922&jobAge=105&brelb=100&bscr=825.28546&scr=825.28546
+title: Senior Backend Engineer
+company: NTT DATA, Inc.
+location: Mexico
+published_at: '2026-08-06T13:23:28.8200000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-10T15:03:19Z'
+rejected_at: '2026-08-10T15:03:19Z'
