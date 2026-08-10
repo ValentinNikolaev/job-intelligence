@@ -1,0 +1,28 @@
+score: 82
+recommendation: strong_match
+summary: Strong PHP backend and fintech-adjacent fit with Symfony, REST APIs, PostgreSQL,
+  Kubernetes, microservices, production troubleshooting, testing, and payment integrations;
+  advanced DDD/CQRS/Event Sourcing depth is not fully evidenced.
+strengths:
+- PHP backend experience with Symfony and Laravel, including REST API work
+- PostgreSQL, MySQL, query optimization, schema work, and relational systems experience
+- Kubernetes, AWS, Helm, CI/CD, monitoring, logging, and production reliability experience
+- Microservices, event-driven systems, RabbitMQ, and backend architecture experience
+- Fintech-related systems and payment gateway integration experience
+- Remote European/CET-compatible location fit and Ukrainian fluency
+gaps:
+- Advanced DDD concepts, CQRS, Event Sourcing, and Bounded Contexts are not directly
+  evidenced
+- Doctrine ORM, Jenkins, Docker/Swarm, Codeception/Behat, and explicit integration-test
+  environment ownership are not directly evidenced
+concerns:
+- The posting combines senior implementation, architecture, and platform responsibilities;
+  depth in the named advanced patterns should be validated in interview
+- Compensation is unspecified and the application asks for a gross monthly EUR expectation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-10T20:38:34Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:40c2bf81b1e0f3b008d57b32ced2b2d5f02b7ad88e4a4b10d683024d5ec897d0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

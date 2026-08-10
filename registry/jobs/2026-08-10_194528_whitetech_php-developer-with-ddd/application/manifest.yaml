@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:02b998a5726bf076ab648dd709a72e046184fd3402422ee1b1b618f3119587fa
+company_version: sha256:878395978d8114bd6a9e125c3b1a327c18df60546e15838187d11cdc7c696e62
+prompt_version: sha256:0c986f354d5e1eb37a34bcf546fd0345a071f27021a8f20cd68a818db779f556
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD
+generated_at: '2026-08-10T20:38:42Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD.md
+- CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md
