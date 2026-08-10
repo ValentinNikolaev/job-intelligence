@@ -24,6 +24,12 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   evaluated independently, and published only after deterministic validation.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
+- Treat user approval as the mandatory preparation gateway: research, adapted CV,
+  cover letter, interview preparation, and any later application-process artifacts
+  may be generated only after the user explicitly asks to prepare a named vacancy
+  (by vacancy ID, registry directory, or equivalent clear identifier). A manually
+  supplied vacancy URL or pasted vacancy text authorizes intake and analysis only;
+  it does not by itself authorize preparation.
 - For every prepared cover letter, invoke `$write-cover-letter` from the highest
   installed version of `agent-plugins@valentin-agent-plugins` available in the active
   Codex task. If that skill is unavailable, stop before drafting; never fall back to

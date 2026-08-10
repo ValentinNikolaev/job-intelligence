@@ -27,7 +27,8 @@ check, not a second preflight.
 ### `manual-application`
 
 Use when the user supplies a vacancy URL, raw job post, recruiter message, or company
-careers text and asks to prepare it.
+careers text. Intake and analysis may proceed for that vacancy, but preparation is a
+separate user-gated action.
 
 1. Read `AGENTS.md`, `config/codex-workflows.yaml`, this file, and the
    `manual-vacancy-application` skill.
@@ -40,8 +41,12 @@ careers text and asks to prepare it.
    `python run.py analyze <directory> --input <draft.yaml> --workflow analyze
    [--model-profile <profile>]`. Do not run triage, `pending analyze all`,
    `analyze-batch`, or another queue command in this mode.
-5. Prepare only when the published score meets `prepare_min_score`. Write the four
-   vacancy-keyed Markdown drafts under `.codex-work/application/<directory>/`.
+5. Do not prepare merely because the score meets `prepare_min_score`. Prepare only
+   when the user has explicitly asked to prepare this vacancy or has clearly approved
+   preparation after intake/analysis. The approval must identify the vacancy by ID,
+   registry directory, or an unambiguous reference to the manually supplied vacancy.
+   Follow the two-wave preparation contract below and keep every handoff and final
+   draft keyed to this vacancy under `.codex-work/application/<directory>/`.
 6. Invoke `$write-cover-letter` for `cover-letter.md`; never replace it with inline
    letter logic. Never submit the application or contact the employer.
 7. Use the posting plus at most two primary company sources in one research pass. Stop
@@ -54,6 +59,42 @@ careers text and asks to prepare it.
    `python run.py prepare <directory> --input .codex-work/application/<directory>
    --workflow prepare [--model-profile <profile>]`. After a validation failure,
    correct only its cause, rerun the validator, and do not publish until it passes.
+
+### Two-wave preparation
+
+Apply this protocol independently to every explicitly selected vacancy:
+
+1. In Wave 1, run independent research, CV/evidence, and requirements/risks roles in
+   parallel when subagent slots are available. Research receives only this vacancy's
+   meta/job/company files plus minimal candidate motivation hooks, not the full CV, and
+   writes `parts/research.md`. CV/evidence receives this vacancy and configured
+   candidate sources, performs no web research, and writes `parts/evidence-map.md` with
+   both the evidence mapping and a complete proposed CV draft. Requirements/risks
+   receives this vacancy and candidate evidence and writes
+   `parts/requirements-risks.md`. A Wave 1 role must not publish or write a final
+   artifact.
+2. The main agent reconciles the three handoffs, checks every proposed claim against the
+   candidate evidence, and writes the final `cv.md`. Wave 2 cannot start before this CV
+   is fixed.
+3. In Wave 2, run cover-letter, interview-preparation, and application-analysis roles in
+   parallel when slots are available. They exclusively own `cover-letter.md`,
+   `interview-preparation.md`, and `analysis.md`, respectively. Cover letter receives
+   the vacancy, final CV, verified research, and only required candidate evidence and
+   must invoke `$write-cover-letter`; interview receives the vacancy, final CV,
+   requirements/risks handoff, and verified research without browsing again; analysis
+   receives the vacancy, final CV, and all Wave 1 handoffs.
+4. The main agent performs one cross-file consistency and claim check, then runs
+   `validate-application` once and `prepare` once. Subagents never run those commands or
+   edit another role's file.
+5. If subagents or enough slots are unavailable, execute the same roles sequentially,
+   preserving the two waves, handoff files, and exclusive ownership. Do not claim a
+   model switch that the current Codex task did not perform.
+
+For batches, parallel work may be distributed across vacancies, but each agent and
+artifact must remain scoped to exactly one vacancy. Never combine or reuse candidate
+evidence, company research, requirements, wording, or handoffs across vacancy
+directories. No role may reread unneeded sources, the full registry, or another
+vacancy's files.
 
 ### `scheduled-analysis`
 
