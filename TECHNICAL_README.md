@@ -173,8 +173,10 @@ python run.py usage summary
 python run.py api catalog-vacancies --json
 python run.py api queues analyze --json --limit 30
 python run.py pending analyze all --workflow analyze --model-profile <selected-profile>
+python run.py pending analyze <job-directory-or-vacancy-id> --workflow analyze --pack <pack.yaml>
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze --model-profile <selected-profile>
 python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile>
+python run.py validate-application <job-directory-or-vacancy-id> --input <draft-directory>
 python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile>
 ```
 
@@ -263,6 +265,11 @@ remote: true
 python run.py add-manual --input .codex-work/manual-job/priority-co.yaml
 ```
 
+For a user-supplied URL or pasted vacancy, capture the directory printed by
+`add-manual` and analyze that exact directory with the direct `python run.py analyze
+<directory> --input <draft.yaml> --workflow analyze` command. Manual application intake
+does not run triage or join the scheduled sealed analysis queue.
+
 `analysis_priority` is optional and ranges from `0` to `100`. It affects only
 analysis queue order for `pending analyze`, sealed analysis packs, and queue APIs;
 it must not be treated as match evidence or added to the match score.
@@ -316,12 +323,15 @@ For high-throughput scheduled analysis, create and publish a sealed batch:
 
 ```text
 python run.py triage
+python run.py triage <job-directory-or-vacancy-id>
 python run.py pending analyze all --limit 10 --pack .codex-work/analyze-pack.yaml
 # Codex adds a strict `results` mapping to the pack.
 python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow analyze --model-profile <selected-profile>
 ```
 
 `triage.yaml` is deterministic and high-confidence skips never enter the model queue.
+When a vacancy selector is supplied, triage and `pending analyze --pack` remain scoped
+to that exact vacancy instead of expanding to the scheduled queue.
 Batch publication fails if any result is missing, extra, invalid, based on stale
 candidate/vacancy hashes, or already current because another run published it after
 the pack was built. Rebuild a stale pack from the latest repository state instead of

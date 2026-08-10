@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 import yaml
 
-from jobintel.cli import _run_collector, _run_doctor, main
+from jobintel.cli import _profile_paths, _run_collector, _run_doctor, main
 from jobintel.models import NormalizedJob
 from jobintel.prefilter import RejectedRegistry
 from jobintel.registry import Registry
@@ -401,6 +401,96 @@ class CliTests(unittest.TestCase):
             text = output.getvalue()
             self.assertIn(fresh.directory, text)
             self.assertNotIn(applied.directory, text)
+
+    def test_pending_analyze_pack_honors_explicit_selector(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            _write_workflow_config(root)
+            candidate = registry_root / "candidate"
+            candidate.mkdir(parents=True)
+            (candidate / "match-profile.md").write_text("Backend engineer.", encoding="utf-8")
+            ids = iter(("first", "selected"))
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            registry.upsert(
+                NormalizedJob(
+                    "manual",
+                    "1",
+                    "https://e/1",
+                    "Priority Backend",
+                    "Example",
+                    "Build APIs.",
+                    analysis_priority=100,
+                )
+            )
+            selected = registry.upsert(
+                NormalizedJob(
+                    "direct",
+                    "2",
+                    "https://e/2",
+                    "Selected Backend",
+                    "Example",
+                    "Build APIs.",
+                )
+            )
+            pack_path = root / "selected-pack.yaml"
+
+            with patch("jobintel.cli.load_env", return_value={}), redirect_stdout(StringIO()):
+                result = main(
+                    [
+                        "pending",
+                        "analyze",
+                        selected.directory,
+                        "--workflow",
+                        "analyze",
+                        "--registry",
+                        str(registry_root),
+                        "--pack",
+                        str(pack_path),
+                    ]
+                )
+
+            self.assertEqual(0, result)
+            pack = yaml.safe_load(pack_path.read_text(encoding="utf-8"))
+            self.assertEqual([selected.directory], [item["directory"] for item in pack["items"]])
+
+    def test_triage_accepts_one_explicit_selector(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            registry_root = Path(temporary) / "registry"
+            ids = iter(("first", "selected"))
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            first = registry.upsert(
+                NormalizedJob("direct", "1", "https://e/1", "Backend One", "Example", "Build APIs.")
+            )
+            selected = registry.upsert(
+                NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs.")
+            )
+
+            with redirect_stdout(StringIO()):
+                result = main(["triage", selected.directory, "--registry", str(registry_root)])
+
+            self.assertEqual(0, result)
+            self.assertFalse((registry_root / "jobs" / first.directory / "triage.yaml").exists())
+            self.assertTrue((registry_root / "jobs" / selected.directory / "triage.yaml").is_file())
+
+    def test_default_profiles_include_optional_user_confirmed_clarifications(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            candidate = registry_root / "candidate"
+            candidate.mkdir(parents=True)
+            linkedin = candidate / "linkedin-profile.md"
+            cv = candidate / "backend-engineer-cv.md"
+            clarification = candidate / "user-confirmed-career-clarifications.md"
+            for path in (linkedin, cv, clarification):
+                path.write_text(path.stem, encoding="utf-8")
+
+            paths = _profile_paths(None, {}, root, registry_root)
+
+            self.assertEqual(
+                [linkedin.resolve(), cv.resolve(), clarification.resolve()],
+                paths,
+            )
 
     def test_doctor_ci_skips_only_host_local_converter_checks(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

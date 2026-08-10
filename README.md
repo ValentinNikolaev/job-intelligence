@@ -177,11 +177,17 @@ Publish Codex-produced work:
 
 ```text
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
+python run.py triage <job-directory-or-vacancy-id>
+python run.py pending analyze <job-directory-or-vacancy-id> --workflow analyze --pack <pack.yaml>
+python run.py validate-application <job-directory-or-vacancy-id> --input <draft-directory>
 python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare
 # Select an allowed model profile when the active Codex task uses a non-default model.
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze --model-profile terra_medium
 python run.py prepare <selector-1> --input .codex-work/application --workflow prepare --model-profile luna_low
 ```
+
+An explicit selector limits both deterministic triage and an analysis pack to that
+single vacancy; use `all` only when intentionally processing the scheduled queue.
 
 The shared interactive and scheduled workflow contract lives in
 [`prompts/job-intelligence-workflow.md`](prompts/job-intelligence-workflow.md).

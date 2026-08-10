@@ -1,4 +1,4 @@
-# Analyze a sealed batch
+# Analyze the scheduled sealed batch
 
 1. Read `prompts/job-intelligence-workflow.md` and `config/codex-workflows.yaml`.
    Confirm the task uses the selected `analyze` model profile and reasoning level.

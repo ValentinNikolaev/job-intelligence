@@ -27,7 +27,9 @@ Go | REST APIs | AWS | Kubernetes | MySQL | PostgreSQL | RabbitMQ | Microservice
 
 ### CRURATED
 
-**Software Developer** | August 2024 - January 2026 | Rome, Italy
+**PHP Software Developer — Part-time Subcontract / Consulting Engagement** | August 2024 - January 2026 | Rome, Italy
+
+Concurrent engagement alongside the Simple.life role.
 
 - Architected an event-driven analytics platform using queues and EventBridge, increasing throughput to the data lake by more than 10x.
 - Defined a versioned event schema that improved consistency across teams and reduced the implementation time for new analytics streams from several days to under four hours.

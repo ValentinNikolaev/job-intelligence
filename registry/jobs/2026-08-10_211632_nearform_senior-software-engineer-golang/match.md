@@ -20,5 +20,4 @@ Strong fit for an Italy-based remote senior backend role: the candidate brings e
 
 ## Concerns
 
-- Candidate records conflict on recent employment end dates and should be reconciled before submission.
 - English is recorded as upper-intermediate in one source and professional/full professional in another, creating uncertainty against the professional-proficiency requirement.

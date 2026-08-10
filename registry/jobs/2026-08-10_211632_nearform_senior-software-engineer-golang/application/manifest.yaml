@@ -1,11 +1,10 @@
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 vacancy_version: sha256:4b0c46e2b0fa6cdc8579fdf5b91787817d7ca070ecca1354f98776295d97d098
 company_version: sha256:454347f960ff5a3cf161bdfd99ab95e1a1bf522b32212a7cc6ae36b9317480c6
-prompt_version: sha256:0c986f354d5e1eb37a34bcf546fd0345a071f27021a8f20cd68a818db779f556
+prompt_version: sha256:17b509ed1a9103eb251ab8799cd8d6f3083d69752ff9b2ab62ec7b2c980c8ea8
 model: codex:gpt-5.6-terra:medium
-simple_life_end_date: July 2026
 cv_export_stem: CV_ValentinNikolaev_nearform_SeniorSoftwareEngineerGolang
-generated_at: '2026-08-10T21:26:38Z'
+generated_at: '2026-08-10T21:58:44Z'
 files:
 - cv.md
 - cv.docx

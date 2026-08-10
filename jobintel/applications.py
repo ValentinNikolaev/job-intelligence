@@ -10,7 +10,7 @@ import tempfile
 import uuid
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Protocol
 
@@ -87,12 +87,6 @@ _MONTH_NAMES = (
     "December",
 )
 _MONTH_PATTERN = "|".join(_MONTH_NAMES)
-_SIMPLE_LIFE_HEADING_RE = re.compile(r"^(?P<marks>#{2,4})\s+Simple(?:\.life| App| Life)\s*$")
-_HEADING_RE = re.compile(r"^(?P<marks>#{1,6})\s+")
-_MONTH_YEAR_RANGE_RE = re.compile(
-    rf"(?P<start>\b(?:{_MONTH_PATTERN})\s+\d{{4}})\s*[-–—]\s*"
-    rf"(?P<end>Present|Current|(?:{_MONTH_PATTERN})\s+\d{{4}})\b"
-)
 _EXPERIENCE_DATE_RANGE_RE = re.compile(
     rf"(?P<start>\b(?:(?:{_MONTH_PATTERN})\s+)?\d{{4}})\s*[-–—]\s*"
     rf"(?P<end>Present|Current|(?:(?:{_MONTH_PATTERN})\s+)?\d{{4}})\b",
@@ -125,6 +119,12 @@ _FORBIDDEN_APPLICATION_PHRASES = (
     "Zend Certified PHP Developer",
     "Zend PHP Certification",
 )
+_MAX_APPLICATION_WORD_COUNTS = {
+    "cv_markdown": 800,
+    "cover_letter_markdown": 450,
+    "analysis_markdown": 1000,
+    "interview_preparation_markdown": 1100,
+}
 _HEADLINE_GENERIC_TERMS = {
     "and",
     "architect",
@@ -213,6 +213,27 @@ class CodexApplicationDraftClient:
         return result
 
 
+def validate_application_draft(
+    vacancy_directory: Path,
+    draft_directory: Path,
+    *,
+    reference_date: date | datetime | None = None,
+) -> dict[str, str]:
+    """Validate a local Codex draft without publishing or converting it."""
+    vacancy_directory = vacancy_directory.resolve()
+    meta = _read_yaml_mapping(vacancy_directory / "meta.yaml", "vacancy metadata")
+    vacancy, _, _ = _load_vacancy(vacancy_directory, meta)
+    draft = CodexApplicationDraftClient(
+        draft_directory,
+        model="deterministic-draft-validator",
+    ).generate(prompt="", candidate_profile="", vacancy=vacancy)
+    return validate_application_package(
+        draft,
+        vacancy=vacancy,
+        reference_date=reference_date,
+    )
+
+
 class HostMarkdownDocxConverter:
     """Run the installed md-to-docx Codex skill as a host-side converter."""
 
@@ -298,14 +319,12 @@ class ApplicationGenerator:
         prompt, prompt_version = self._load_prompt()
         vacancy, vacancy_version, company_version = _load_vacancy(directory, meta)
         generated_at = self._clock()
-        simple_life_end_date = _simple_life_cv_end_date(generated_at)
         expected_versions = {
             "profile_version": profile_version,
             "vacancy_version": vacancy_version,
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
-            "simple_life_end_date": simple_life_end_date,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
@@ -324,10 +343,6 @@ class ApplicationGenerator:
             ),
             vacancy=vacancy,
             reference_date=generated_at,
-        )
-        generated["cv_markdown"] = _apply_simple_life_cv_end_date(
-            generated["cv_markdown"],
-            simple_life_end_date,
         )
         cv_export_files = _cv_export_files(meta)
 
@@ -378,14 +393,12 @@ class ApplicationGenerator:
         _, profile_version = self._load_candidate_profile()
         _, prompt_version = self._load_prompt()
         _, vacancy_version, company_version = _load_vacancy(directory, meta)
-        simple_life_end_date = _simple_life_cv_end_date(self._clock())
         expected_versions = {
             "profile_version": profile_version,
             "vacancy_version": vacancy_version,
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
-            "simple_life_end_date": simple_life_end_date,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
@@ -478,6 +491,12 @@ def validate_application_package(
         for phrase in _FORBIDDEN_APPLICATION_PHRASES:
             if phrase.casefold() in folded:
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
+        word_count = len(re.findall(r"\b[\w'-]+\b", content, flags=re.UNICODE))
+        word_limit = _MAX_APPLICATION_WORD_COUNTS[field]
+        if word_count > word_limit:
+            raise ApplicationError(
+                f"{field} exceeds {word_limit}-word limit ({word_count} words)"
+            )
     _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
     if vacancy is not None:
         _validate_cv_headline(result["cv_markdown"], vacancy)
@@ -667,44 +686,6 @@ def _package_is_current(
             if isinstance(filename, str) and filename.startswith("CV_")
         )
     return all((application_dir / filename).is_file() for filename in required)
-
-
-def _simple_life_cv_end_date(value: datetime) -> str:
-    previous_month = value.replace(day=1) - timedelta(days=1)
-    return f"{_MONTH_NAMES[previous_month.month - 1]} {previous_month.year}"
-
-
-def _apply_simple_life_cv_end_date(markdown: str, end_date: str) -> str:
-    lines = markdown.splitlines(keepends=True)
-    in_simple_life = False
-    simple_life_heading_level = 0
-    changed = False
-    for index, line in enumerate(lines):
-        stripped = line.strip()
-        simple_life_heading = _SIMPLE_LIFE_HEADING_RE.match(stripped)
-        if simple_life_heading:
-            in_simple_life = True
-            simple_life_heading_level = len(simple_life_heading.group("marks"))
-            continue
-        heading = _HEADING_RE.match(stripped)
-        if (
-            in_simple_life
-            and heading
-            and len(heading.group("marks")) <= simple_life_heading_level
-        ):
-            in_simple_life = False
-        if not in_simple_life or changed:
-            continue
-
-        updated = _MONTH_YEAR_RANGE_RE.sub(
-            lambda match: f"{match.group('start')} - {end_date}",
-            line,
-            count=1,
-        )
-        if updated != line:
-            lines[index] = updated
-            changed = True
-    return "".join(lines)
 
 
 def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:

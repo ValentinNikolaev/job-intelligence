@@ -21,6 +21,7 @@ from .applications import (
     HostMarkdownDocxConverter,
     PreparationSummary,
     resolve_job_directories,
+    validate_application_draft,
 )
 from .collector import Collector, discover_collectors
 from .config import load_env
@@ -60,7 +61,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'workflow-lock', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -220,12 +221,13 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if target == "triage":
-        if args.arguments or args.input or args.workflow or args.model_profile or args.force or args.json or args.pack:
-            print("Usage: python run.py triage", file=sys.stderr)
+        if len(args.arguments) > 1 or args.input or args.workflow or args.model_profile or args.force or args.json or args.pack:
+            print("Usage: python run.py triage [all|job-directory|vacancy-id]", file=sys.stderr)
             return 2
         try:
             with workflow_lock(project_root, "triage", timeout_seconds=args.lock_timeout_seconds):
-                directories = resolve_job_directories(registry_dir, "all")
+                selector = args.arguments[0] if args.arguments else "all"
+                directories = resolve_job_directories(registry_dir, selector)
                 counts = {"high": 0, "medium": 0, "low": 0, "skip_model": 0}
                 for directory in directories:
                     result = write_triage(directory)
@@ -236,6 +238,40 @@ def main(argv: list[str] | None = None) -> int:
         except (Exception, WorkflowLockError) as exc:
             print(f"Triage error: {exc}", file=sys.stderr)
             return 1
+
+    if target == "validate-application":
+        if (
+            len(args.arguments) != 1
+            or not args.input
+            or args.profile
+            or args.workflow
+            or args.model_profile
+            or args.force
+            or args.json
+            or args.pack
+        ):
+            print(
+                "Usage: python run.py validate-application "
+                "<job-directory|vacancy-id> --input <draft-directory>",
+                file=sys.stderr,
+            )
+            return 2
+        try:
+            directories = resolve_job_directories(registry_dir, args.arguments[0])
+            if len(directories) != 1:
+                raise ValueError("validate-application requires exactly one vacancy")
+            directory = directories[0]
+            draft_directory = _preparation_draft_directory(
+                args.input,
+                directory,
+                selection_size=1,
+            )
+            validate_application_draft(directory, draft_directory)
+        except Exception as exc:
+            print(f"Application draft validation failed: {exc}", file=sys.stderr)
+            return 1
+        print(f"Application draft valid: {directory.name}")
+        return 0
 
     if target == "usage":
         return _run_usage(args, project_root, registry_dir)
@@ -971,13 +1007,19 @@ def _profile_paths(
     if configured:
         paths = [Path(value.strip()) for value in configured.split(os.pathsep) if value.strip()]
         return [(path if path.is_absolute() else project_root / path).resolve() for path in paths]
-    compact = registry_dir / "candidate" / "match-profile.md"
+    candidate_dir = registry_dir / "candidate"
+    clarification = candidate_dir / "user-confirmed-career-clarifications.md"
+    compact = candidate_dir / "match-profile.md"
     if compact.is_file():
-        return [compact.resolve()]
-    return [
-        (registry_dir / "candidate" / "linkedin-profile.md").resolve(),
-        (registry_dir / "candidate" / "backend-engineer-cv.md").resolve(),
-    ]
+        paths = [compact.resolve()]
+    else:
+        paths = [
+            (candidate_dir / "linkedin-profile.md").resolve(),
+            (candidate_dir / "backend-engineer-cv.md").resolve(),
+        ]
+    if clarification.is_file():
+        paths.append(clarification.resolve())
+    return paths
 
 
 def _run_preparation(
@@ -1175,18 +1217,7 @@ def _run_pending_locked(
         )
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
-        if stage == "analyze" and args.pack:
-            pack = build_analysis_pack(
-                registry_dir,
-                profile_paths,
-                limit=args.limit,
-                triage_skip=should_skip_model,
-                model=model_label,
-            )
-            dump_analysis_pack(pack, args.pack.resolve())
-            print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
-            return 0
-        if args.pack:
+        if args.pack and stage != "analyze":
             print("--pack is valid only for pending analyze", file=sys.stderr)
             return 2
         if stage == "prepare" and (not selectors or selectors == ["all"]):
@@ -1206,6 +1237,18 @@ def _run_pending_locked(
             directories = resolve_job_directories(registry_dir, selector)
         if stage == "analyze":
             directories = sorted(directories, key=_pending_analysis_queue_key, reverse=True)
+        if stage == "analyze" and args.pack:
+            pack = build_analysis_pack(
+                registry_dir,
+                profile_paths,
+                directories=directories,
+                limit=args.limit,
+                triage_skip=should_skip_model,
+                model=model_label,
+            )
+            dump_analysis_pack(pack, args.pack.resolve())
+            print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
+            return 0
         pending_prepare: list[Path] = []
         for directory in directories:
             if stage == "analyze":

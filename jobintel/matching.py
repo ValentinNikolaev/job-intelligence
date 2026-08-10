@@ -327,6 +327,7 @@ def build_analysis_pack(
     registry_root: Path,
     profile_paths: Sequence[Path],
     *,
+    directories: Sequence[Path] | None = None,
     limit: int | None = None,
     triage_skip: Callable[[Path], bool] | None = None,
     model: str = "pack-builder",
@@ -343,7 +344,8 @@ def build_analysis_pack(
     )
     profile, profile_version = analyzer._load_profile()
     items: list[dict[str, Any]] = []
-    for directory in _priority_sorted_directories(analyzer.resolve("all")):
+    selected_directories = analyzer.resolve("all") if directories is None else list(directories)
+    for directory in _priority_sorted_directories(selected_directories):
         if triage_skip and triage_skip(directory):
             continue
         meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")

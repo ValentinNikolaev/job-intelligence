@@ -16,9 +16,7 @@ from jobintel.applications import (
     ApplicationError,
     ApplicationGenerator,
     CodexApplicationDraftClient,
-    _apply_simple_life_cv_end_date,
     _cv_export_stem,
-    _simple_life_cv_end_date,
     _publish_staged_package,
     resolve_job_directories,
     validate_application_package,
@@ -200,7 +198,7 @@ class ApplicationTests(unittest.TestCase):
             "CV_ValentinNikolaev_example_SeniorBackendEngineer",
             manifest["cv_export_stem"],
         )
-        self.assertEqual(_simple_life_cv_end_date(self.now), manifest["simple_life_end_date"])
+        self.assertNotIn("simple_life_end_date", manifest)
 
     def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
         self.assertEqual(
@@ -211,17 +209,7 @@ class ApplicationTests(unittest.TestCase):
             ),
         )
 
-    def test_simple_life_cv_end_date_uses_previous_calendar_month(self) -> None:
-        self.assertEqual(
-            "June 2026",
-            _simple_life_cv_end_date(datetime(2026, 7, 24, tzinfo=timezone.utc)),
-        )
-        self.assertEqual(
-            "December 2025",
-            _simple_life_cv_end_date(datetime(2026, 1, 3, tzinfo=timezone.utc)),
-        )
-
-    def test_simple_life_cv_date_range_is_rewritten_before_publication(self) -> None:
+    def test_simple_life_cv_date_range_is_preserved_from_draft(self) -> None:
         payload = application_payload()
         payload["cv_markdown"] = (
             "# Candidate\n"
@@ -229,7 +217,7 @@ class ApplicationTests(unittest.TestCase):
             "## Experience\n\n"
             "### Simple.life\n\n"
             "**Software Developer**  \n"
-            "November 2023 - Present\n\n"
+            "November 2023 - July 2026\n\n"
             "- Built Go services.\n\n"
             "### airSlate\n\n"
             "**Software Developer**  \n"
@@ -239,23 +227,19 @@ class ApplicationTests(unittest.TestCase):
         self._generator(FakeClient(payload), FakeConverter()).generate_directory(self.directory)
 
         cv = (self.directory / "application" / "cv.md").read_text(encoding="utf-8")
-        self.assertIn(f"November 2023 - {_simple_life_cv_end_date(self.now)}", cv)
+        self.assertIn("November 2023 - July 2026", cv)
         self.assertIn("February 2021 - August 2023", cv)
 
-    def test_simple_app_heading_is_supported_for_linkedin_drafts(self) -> None:
-        markdown = (
-            "# Candidate\n\n"
-            "### Simple App\n\n"
-            "#### Software Developer\n"
-            "November 2023 - March 2026\n\n"
-            "### airSlate\n"
-            "February 2021 - August 2023\n"
-        )
+    def test_package_does_not_expire_when_calendar_month_changes(self) -> None:
+        client = FakeClient()
+        generator = self._generator(client, FakeConverter())
+        first = generator.generate_directory(self.directory)
+        self.now = datetime(2026, 9, 1, tzinfo=timezone.utc)
+        second = generator.generate_directory(self.directory)
 
-        updated = _apply_simple_life_cv_end_date(markdown, "June 2026")
-
-        self.assertIn("November 2023 - June 2026", updated)
-        self.assertIn("February 2021 - August 2023", updated)
+        self.assertEqual("prepared", first.status)
+        self.assertEqual("skipped", second.status)
+        self.assertEqual(1, len(client.calls))
 
     def test_conversion_failure_preserves_previous_complete_package(self) -> None:
         original = self._generator(FakeClient(), FakeConverter())
@@ -335,6 +319,23 @@ class ApplicationTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ApplicationError, "forbidden phrase"):
             validate_application_package(payload)
+
+    def test_application_markdown_hard_word_limits_are_enforced(self) -> None:
+        limits = {
+            "cv_markdown": 800,
+            "cover_letter_markdown": 450,
+            "analysis_markdown": 1000,
+            "interview_preparation_markdown": 1100,
+        }
+        for field, limit in limits.items():
+            with self.subTest(field=field):
+                payload = application_payload()
+                payload[field] += "\n" + "word " * (limit + 1)
+                with self.assertRaisesRegex(
+                    ApplicationError,
+                    rf"{field} exceeds {limit}-word limit",
+                ):
+                    validate_application_package(payload)
 
     def test_cv_headline_must_immediately_follow_candidate_name(self) -> None:
         payload = application_payload()
@@ -506,6 +507,53 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertIn("cv_markdown", result)
         self.assertEqual("codex:gpt-5.5:medium", client.model)
+
+    def test_validate_application_cli_checks_draft_without_publishing(self) -> None:
+        draft = self.project / "application-draft"
+        draft.mkdir()
+        filenames = {
+            "cv_markdown": "cv.md",
+            "cover_letter_markdown": "cover-letter.md",
+            "analysis_markdown": "analysis.md",
+            "interview_preparation_markdown": "interview-preparation.md",
+        }
+        payload = application_payload()
+        for field, filename in filenames.items():
+            (draft / filename).write_text(payload[field], encoding="utf-8")
+
+        output = StringIO()
+        with redirect_stdout(output):
+            result = main(
+                [
+                    "validate-application",
+                    self.directory.name,
+                    "--registry",
+                    str(self.registry_root),
+                    "--input",
+                    str(draft),
+                ]
+            )
+
+        self.assertEqual(0, result)
+        self.assertIn(f"Application draft valid: {self.directory.name}", output.getvalue())
+        self.assertFalse((self.directory / "application").exists())
+
+        (draft / "cover-letter.md").write_text("word " * 451, encoding="utf-8")
+        errors = StringIO()
+        with redirect_stderr(errors):
+            result = main(
+                [
+                    "validate-application",
+                    self.directory.name,
+                    "--registry",
+                    str(self.registry_root),
+                    "--input",
+                    str(draft),
+                ]
+            )
+        self.assertEqual(1, result)
+        self.assertIn("exceeds 450-word limit", errors.getvalue())
+        self.assertFalse((self.directory / "application").exists())
 
     def test_resolves_directory_name_id_and_all(self) -> None:
         by_name = resolve_job_directories(self.registry_root, self.directory.name)

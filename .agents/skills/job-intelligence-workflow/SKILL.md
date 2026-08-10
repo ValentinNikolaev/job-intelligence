@@ -13,9 +13,17 @@ Before choosing a mode, read `prompts/job-intelligence-workflow.md`. It is the s
 execution contract for interactive and scheduled launchers; this skill supplies the
 tool sequencing and safety boundaries around that contract.
 
+Before reading vacancy or candidate evidence, researching, or drafting, perform the
+one-time Git preflight from the shared contract. Resolve a behind or diverged branch
+and any unexpected tracked changes in workflow output paths before model-dependent
+work. Preserve unrelated user changes. Do not repeat the fetch during the same run.
+
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
 - For analysis, follow `references/analyze.md` and process a sealed batch of up to 15
   pending vacancies.
+- For a manually supplied vacancy, use `$manual-vacancy-application`. Analyze its newly
+  published registry directory directly; do not route that one-vacancy run through
+  triage, `pending analyze all`, or the scheduled sealed queue.
 - For application packages, follow `references/prepare.md` with workflow `prepare` and
   process one to 10 fresh vacancies explicitly selected by the user through vacancy IDs
   or registry directories. Use `$write-cover-letter` for every letter and never expand
@@ -34,15 +42,21 @@ current Codex surface, tell the user and do not publish under that profile.
 1. For preparation, read only the explicitly selected batch, the configured candidate
    source files, and the relevant prompt. Handle one selected vacancy at a time and do
    not compare vacancies or reuse vacancy-specific research, keywords, or draft content.
-   For analysis, read only the sealed input pack and the batch prompt; do not compare
-   vacancies or read another vacancy's artifacts.
+   For scheduled analysis, read only the sealed input pack and the batch prompt. For a
+   manual vacancy, read only that selected directory, its configured candidate evidence,
+   and `prompts/vacancy-match.md`. In either mode, do not compare vacancies or read
+   another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
 3. Require `$write-cover-letter` from the highest installed version of
    `agent-plugins@valentin-agent-plugins` available in the active task during
    preparation. Stop if the active task cannot load it; do not recreate the retired
    inline drafting flow.
 4. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
-5. If publication fails validation, fix the draft and retry. Do not edit generated cache metadata by hand.
+5. After all four application drafts for a vacancy are complete, run
+   `python run.py validate-application <job-directory-or-vacancy-id> --input
+   <draft-directory>` once as the combined prepublication check. Publish only after it
+   succeeds. If validation fails, fix only its cause and rerun the validator. Do not
+   edit generated cache metadata by hand.
 6. Never submit applications or contact employers.
 
 ## Mandatory final catalog step
@@ -51,4 +65,11 @@ After every successful collection, analysis, preparation, or manual status chang
 
 ## Mandatory Git finalization
 
-After the catalog process, run the relevant tests and API-prohibition scan. Inspect the full diff, stage all added, changed, and deleted project files with `git add -A`, commit once, and push the current branch to `origin`. Never stage ignored secrets or local work files. If the tree is unchanged, skip the commit and push. End the report with a changelog derived from the commit plus the commit hash and push result. Do not open a pull request unless explicitly requested.
+After the catalog process, run the relevant tests and API-prohibition scan exactly once,
+then inspect the full diff, stage all added, changed, and deleted project files with
+`git add -A`, commit once, and push the current branch to `origin`. Repeat only the
+specific failed check after correcting its cause; do not rerun the entire workflow or
+full check suite without a failure. Never stage ignored secrets or local work files. If
+the tree is unchanged, skip the commit and push. End the report with a changelog derived
+from the commit plus the commit hash and push result. Do not open a pull request unless
+explicitly requested.

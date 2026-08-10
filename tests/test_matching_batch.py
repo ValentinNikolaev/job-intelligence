@@ -144,6 +144,30 @@ class MatchingBatchTests(unittest.TestCase):
             self.assertEqual(priority.directory, pack.items[0]["directory"])
             self.assertNotEqual(normal.directory, pack.items[0]["directory"])
 
+    def test_analysis_pack_can_be_scoped_to_selected_directories(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            registry_root = root / "registry"
+            profile = root / "profile.md"
+            profile.write_text("Backend engineer.", encoding="utf-8")
+            ids = iter(("first", "selected"))
+            registry = Registry(registry_root, id_factory=lambda: next(ids))
+            registry.upsert(
+                NormalizedJob("direct", "1", "https://e/1", "Backend One", "Example", "Build APIs.")
+            )
+            selected = registry.upsert(
+                NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs.")
+            )
+            selected_directory = registry_root / "jobs" / selected.directory
+
+            pack = build_analysis_pack(
+                registry_root,
+                [profile],
+                directories=[selected_directory],
+            )
+
+            self.assertEqual([selected.directory], [item["directory"] for item in pack.items])
+
     def test_analysis_pack_skips_applied_vacancies(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
