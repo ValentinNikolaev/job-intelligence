@@ -1,21 +1,16 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 83/100  
 **Recommendation:** Strong Match
 
-Strong backend and platform fit for a regulated card and wallet product, with relevant Go/PHP, APIs, AWS, reliability, and fintech experience; frontend depth is less evidenced.
+Strong senior backend and systems fit with credible full-stack adaptability, though frontend evidence is lighter.
 
 ## Why it matches
 
-- Go and PHP backend development
-- AWS, Kubernetes, CI/CD, APIs, event-driven systems
-- Payments and financial-domain experience
-- Production reliability and performance work
+- Go/PHP backend
+- API and distributed systems
+- cloud, CI/CD, reliability
 
 ## Gaps
 
-- The profile does not clearly evidence the required frontend framework depth.
-
-## Concerns
-
-- Full-stack scope may require more recent UI ownership than the profile demonstrates.
+- Required frontend framework and breadth of hands-on UI work are not clearly evidenced.

@@ -1,25 +1,16 @@
 # Match Analysis
 
-**Score:** 94/100  
+**Score:** 96/100  
 **Recommendation:** Strong Match
 
-Excellent direct fit for senior PHP/Laravel backend work in airSlate’s document-automation domain, with matching platform and leadership experience.
+Near-perfect match grounded in direct airSlate experience, PHP, Kubernetes, APIs, and production optimization.
 
 ## Why it matches
 
-- PHP
-- Laravel
-- AWS
-- Kubernetes
-- performance
-- document automation
-- technical leadership
+- direct airSlate tenure
+- PHP/Laravel and APIs
+- Kubernetes, CI/CD, performance
 
 ## Gaps
 
-- Exact current Laravel version
-- US Legal Forms domain specifics
-
-## Concerns
-
-- Role may be titled developer despite senior and leadership background
+- Role-specific current stack details should still be confirmed.

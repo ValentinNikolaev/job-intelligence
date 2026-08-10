@@ -1,20 +1,18 @@
-score: 78
-recommendation: match
-summary: Strong Go, backend, AWS, distributed-systems, and production reliability
-  fit; header-bidding experience is not evidenced.
+score: 89
+recommendation: strong_match
+summary: Strong direct Go backend alignment with architecture, reliability, and infrastructure
+  experience.
 strengths:
-- Go backend development
-- performance and reliability work
-- AWS and microservices
-- observability and production ownership
+- Go services
+- distributed/event-driven systems
+- Kubernetes and observability
 gaps:
-- No explicit header-bidding or Prebid experience
-concerns:
-- High-throughput ad-tech domain experience is uncertain
+- Posting-specific cloud or persistence technologies may require confirmation.
+concerns: []
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-07T11:25:12Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-10T22:08:35Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:9393106b8a120748410b13c9c73649f498b281d98eee152aa957f49cd81845c2
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

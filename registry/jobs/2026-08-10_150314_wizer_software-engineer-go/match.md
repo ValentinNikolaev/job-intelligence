@@ -1,23 +1,16 @@
 # Match Analysis
 
-**Score:** 90/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent Go backend and technical leadership fit, with direct distributed, event-driven, cloud, testing, and architecture experience.
+Strong Go backend and production reliability fit with likely API and platform overlap.
 
 ## Why it matches
 
 - Go backend ownership
-- Technical leadership and mentoring
-- Event-driven and distributed systems
-- AWS, Kubernetes, CI/CD, observability
-- Performance and reliability engineering
+- automation and integrations
+- observability and scalable services
 
 ## Gaps
 
-- No explicit NATS JetStream or Kafka evidence in the profile
-- No direct GCP evidence
-
-## Concerns
-
-- Role expects strong DDD/CQRS and messaging-platform depth that should be verified in interview
+- Specific product stack and some named cloud technologies are not confirmed.

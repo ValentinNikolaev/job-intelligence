@@ -3,20 +3,14 @@
 **Score:** 91/100  
 **Recommendation:** Strong Match
 
-Very strong PHP API support fit with extensive PHP, REST integrations, MySQL, logs, reliability, Redis/RabbitMQ-adjacent production experience.
+Very strong PHP/API match with relevant databases, integrations, and operational experience.
 
 ## Why it matches
 
-- 15+ years PHP/backend experience
-- API integrations and troubleshooting
-- MySQL and REST APIs
-- Production debugging, logging, and reliability
-- Redis/RabbitMQ and legacy systems exposure
+- PHP, Laravel, Symfony
+- REST APIs and integrations
+- performance and production support
 
 ## Gaps
 
-- Role is maintenance/support oriented and may underuse senior architecture experience
-
-## Concerns
-
-- Confirm compensation and growth scope for a senior candidate
+- Exact framework and domain details beyond the posting are limited.

@@ -1,21 +1,18 @@
-score: 76
-recommendation: match
-summary: Strong senior backend and systems profile with Go/PHP, distributed systems,
-  reliability, and technical leadership; full-stack and local stack details are less
-  evidenced.
+score: 82
+recommendation: strong_match
+summary: Broad senior backend fit with relevant PHP/Go, infrastructure, and ownership
+  experience.
 strengths:
-- Go and PHP backend experience
-- Microservices, APIs, queues, observability, and reliability
-- Technical leadership and end-to-end ownership
+- senior backend ownership
+- PHP/Go and APIs
+- Kubernetes and CI/CD
 gaps:
-- Specific frontend/full-stack depth is limited
-- Some requested technologies and domain details are not evidenced
-concerns:
-- Job description is partially noisy/translated, so exact requirements are uncertain
+- Frontend depth and any product-specific framework requirements need confirmation.
+concerns: []
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-08-09T16:47:41Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+hard_rejection_reason: null
+analyzed_at: '2026-08-10T22:08:35Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:69a160abfddf2de66c1cf551e65435853c7c2cd39de6b0bf955fa686ce19c70c
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

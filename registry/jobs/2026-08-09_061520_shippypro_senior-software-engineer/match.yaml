@@ -1,21 +1,18 @@
 score: 91
 recommendation: strong_match
-summary: Very strong alignment with the PHP/Laravel backend role and its scale, async
-  workflows, integrations, microservices, and production ownership requirements.
+summary: Excellent senior backend fit across PHP/Go, APIs, distributed systems, and
+  production operations.
 strengths:
-- PHP/Laravel, APIs, microservices, and system design
-- AWS, Kubernetes, queues, CI/CD, monitoring
-- Performance optimization and large-scale messaging/integration systems
+- PHP/Go backend
+- scalable integrations and messaging
+- Kubernetes, CI/CD, observability
 gaps:
-- No direct shipping-carrier platform experience is evidenced
-- Node.js/Python are secondary rather than core skills
-concerns:
-- AI workflow exposure is present but should be framed carefully from the supplied
-  profile
+- Specific stack details and domain experience may need validation in interview.
+concerns: []
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-08-09T16:47:41Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+hard_rejection_reason: null
+analyzed_at: '2026-08-10T22:08:35Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:8d39e0edaac2605aa7b12caa6d97cfbcde7a685e1607a1d0b37b8ae70c58b356
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

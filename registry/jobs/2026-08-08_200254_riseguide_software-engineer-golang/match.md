@@ -1,17 +1,16 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 89/100  
 **Recommendation:** Strong Match
 
-Strong fit for a Golang backend role building production systems from an early stage, with relevant Kubernetes and architecture experience.
+Strong Go engineering match with demonstrated ownership of resilient automation and event-driven systems.
 
 ## Why it matches
 
-- More than four years of documented Go/backend experience, including a current Go automation platform.
-- Strong ownership of scalable, reliable systems and production delivery.
-- Direct Kubernetes, AWS, event-driven, CI/CD, and technical leadership experience.
+- Go and backend architecture
+- reliability, retries, monitoring
+- API and cloud operations
 
 ## Gaps
 
-- GCP and GraphQL are not documented in the candidate profile.
-- The role's Ukrainian-language team context and exact product domain are not evidenced.
+- Exact seniority expectations and any niche framework requirements are unclear.

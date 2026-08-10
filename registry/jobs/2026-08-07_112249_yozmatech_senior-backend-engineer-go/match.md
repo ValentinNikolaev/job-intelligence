@@ -1,21 +1,16 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 89/100  
+**Recommendation:** Strong Match
 
-Strong Go, backend, AWS, distributed-systems, and production reliability fit; header-bidding experience is not evidenced.
+Strong direct Go backend alignment with architecture, reliability, and infrastructure experience.
 
 ## Why it matches
 
-- Go backend development
-- performance and reliability work
-- AWS and microservices
-- observability and production ownership
+- Go services
+- distributed/event-driven systems
+- Kubernetes and observability
 
 ## Gaps
 
-- No explicit header-bidding or Prebid experience
-
-## Concerns
-
-- High-throughput ad-tech domain experience is uncertain
+- Posting-specific cloud or persistence technologies may require confirmation.

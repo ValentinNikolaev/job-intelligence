@@ -1,21 +1,16 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent fit for a hands-on fulfillment pod lead: PHP/Laravel backend, scalable integrations, distributed systems, AWS/Kubernetes, and proven team leadership.
+Strong team-lead and backend/platform match with logistics-adjacent integration experience.
 
 ## Why it matches
 
-- PHP/Laravel and backend architecture
-- High-volume transactional and event-driven systems
-- Led engineers, mentored, planned delivery, and handled production reliability
+- technical leadership and mentoring
+- backend architecture
+- reliability and delivery practices
 
 ## Gaps
 
-- Python/TypeScript modernization is not a primary candidate focus
-- Shipping/fulfillment domain experience is not shown
-
-## Concerns
-
-- Role expects continued coding alongside people leadership
+- Exact leadership scope and required frontend or domain technologies are not fully evidenced.

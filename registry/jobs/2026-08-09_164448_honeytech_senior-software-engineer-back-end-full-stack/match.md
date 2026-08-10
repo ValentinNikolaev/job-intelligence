@@ -1,21 +1,16 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-Strong senior backend and systems profile with Go/PHP, distributed systems, reliability, and technical leadership; full-stack and local stack details are less evidenced.
+Broad senior backend fit with relevant PHP/Go, infrastructure, and ownership experience.
 
 ## Why it matches
 
-- Go and PHP backend experience
-- Microservices, APIs, queues, observability, and reliability
-- Technical leadership and end-to-end ownership
+- senior backend ownership
+- PHP/Go and APIs
+- Kubernetes and CI/CD
 
 ## Gaps
 
-- Specific frontend/full-stack depth is limited
-- Some requested technologies and domain details are not evidenced
-
-## Concerns
-
-- Job description is partially noisy/translated, so exact requirements are uncertain
+- Frontend depth and any product-specific framework requirements need confirmation.
