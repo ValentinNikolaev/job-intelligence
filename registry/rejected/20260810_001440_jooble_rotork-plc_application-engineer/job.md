@@ -1,0 +1,10 @@
+# Application Engineer
+
+Posted: 2026-08-05T00:00:00.0000000
+
+## Rejection
+
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
+
+...team that’s shaping the future of customised solutions? This is an exciting opportunity to join a growing function where your ideas, **technical **expertise, and problem‑solving mindset will directly influence how we deliver engineered products to customers across multiple...
