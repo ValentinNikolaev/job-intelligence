@@ -3,18 +3,14 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Strong PHP backend fit with relevant Angular experience and broad production ownership.
+Strong PHP/backend and production engineering fit; Angular evidence is less prominent.
 
 ## Why it matches
 
-- PHP Laravel/Symfony APIs and production reliability
-- AngularJS and prior full-stack delivery
-- AWS Kubernetes CI/CD and leadership
+- PHP backend
+- APIs and databases
+- performance and CI/CD
 
 ## Gaps
 
-- Recent Angular depth is not evidenced
-
-## Concerns
-
-- Confirm Ukrainian-language communication expectations
+- Angular/frontend depth is not strongly evidenced in the candidate record.
