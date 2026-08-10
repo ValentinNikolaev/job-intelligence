@@ -1,0 +1,30 @@
+score: 48
+recommendation: possible_match
+summary: Partial fit through Go backend systems, production automation, LLM-assisted
+  support work, distributed-system design, Docker-adjacent infrastructure, and AWS;
+  the central Python/data/ML platform requirements are not evidenced.
+strengths:
+- Go backend and API/service-layer experience
+- Production automation and LLM-assisted support workflows are documented
+- Distributed systems, event-driven architecture, reliability, observability, and
+  performance work
+- AWS, Kubernetes, CI/CD, and operational troubleshooting experience
+- Document automation and backend integration background
+gaps:
+- Expert Python, Apache Beam/Spark/Flink, graph databases, entity resolution, and
+  large-scale ML/data pipelines are not evidenced
+- Provider abstraction across Claude/Gemini/local models, air-gapped deployment, and
+  LLM cost/latency optimization are not evidenced
+- GCP, Docker packaging details, and required US-hours overlap are not clearly established
+concerns:
+- Required overlap with US business hours may conflict with the candidate’s European
+  location unless flexible overlap is confirmed
+- The role is centered on AI/data engineering rather than the candidate’s primary
+  PHP/Go backend profile
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-10T11:20:58Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:b0393df2d61fa9e81551dac8c8e873f43d37c88815f80affb6d612a93b5c9b7a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

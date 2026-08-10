@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3747008721377359433'
+source_url: https://jooble.org/desc/3747008721377359433?ckey=remote+senior+backend+engineer&rgn=55180&pos=13&groupId=2134052230&elckey=-1344382641075966916&p=1&aq=-929112745155742536&cid=15922&jobAge=117&brelb=100&bscr=1042.1741&scr=1042.1741
+title: Senior Backend Software Engineer
+company: Gympass
+location: Brazil
+published_at: '2026-08-05T07:54:31.2730000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-10T11:19:29Z'
+rejected_at: '2026-08-10T11:19:29Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '9104425205187628827'
+source_url: https://jooble.org/away/9104425205187628827?p=1&pos=17&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=712&brelb=15&scr=373.44196&bscr=373.44196&aq=-4017192350962805392&elckey=-6951893175283638996
+title: Backend Engineering Consultant
+company: 24-MAG
+location: Remote
+published_at: '2026-07-11T12:51:40.0400000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-11T12:51:40.0400000 is older than 7 days
+updated_at: '2026-08-10T11:19:29Z'
+rejected_at: '2026-08-10T11:19:29Z'

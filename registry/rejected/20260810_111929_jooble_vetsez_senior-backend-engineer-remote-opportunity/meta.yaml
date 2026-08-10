@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1212912825228934052'
+source_url: https://jooble.org/desc/1212912825228934052?ckey=remote+senior+backend+engineer&rgn=55180&pos=34&groupId=2134052230&elckey=-1344382641075966916&p=1&aq=-929112745155742536&cid=15922&jobAge=221&brelb=110&bscr=835.33014&scr=835.33014
+title: Senior Backend Engineer (Remote Opportunity)
+company: VetsEZ
+location: Remote
+published_at: '2026-08-01T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-01T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-10T11:19:29Z'
+rejected_at: '2026-08-10T11:19:29Z'

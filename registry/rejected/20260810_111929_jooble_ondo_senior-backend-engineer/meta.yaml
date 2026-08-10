@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8276249095551679371'
+source_url: https://jooble.org/desc/8276249095551679371?ckey=remote+senior+backend+engineer&rgn=55180&pos=38&groupId=2134052230&elckey=-1344382641075966916&p=1&aq=-929112745155742536&cid=15922&jobAge=77&brelb=100&bscr=819.04926&scr=819.04926
+title: Senior Backend Engineer
+company: Ondo
+location: United States
+published_at: '2026-08-07T11:16:50.5836085+00:00'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-10T11:19:29Z'
+rejected_at: '2026-08-10T11:19:29Z'

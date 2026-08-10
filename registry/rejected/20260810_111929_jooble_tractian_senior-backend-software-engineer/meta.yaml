@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3192166303551063213'
+source_url: https://jooble.org/desc/-3192166303551063213?ckey=remote+senior+backend+engineer&rgn=55180&pos=31&groupId=2134052230&elckey=-1344382641075966916&p=1&aq=-929112745155742536&cid=15922&jobAge=7493&brelb=100&bscr=840.20984&scr=840.20984
+title: Senior Backend Software Engineer
+company: Tractian
+location: Remote
+published_at: '2025-10-02T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2025-10-02T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-10T11:19:29Z'
+rejected_at: '2026-08-10T11:19:29Z'
