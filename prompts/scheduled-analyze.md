@@ -1,4 +1,13 @@
-# Scheduled vacancy analysis
+# Scheduled vacancy analysis — canonical Codex task prompt
+
+This file is the source of truth for the scheduled Codex task. The automation
+definition must instruct Codex to read and execute this file in full; it must not
+duplicate or silently override these steps. The repository workflow policy and
+installed skills may be composed together: use the selected `analyze` profile from
+`config/codex-workflows.yaml`, invoke `$job-intelligence-workflow` in analysis mode,
+and use any specialized skills it explicitly routes to. The automation's configured
+model must match the selected profile; the repository cannot change the active model
+during a run.
 
 Configure this Scheduled Task with the model and reasoning from the selected `analyze`
 profile in `config/codex-workflows.yaml` (default: `luna_low`). Work only inside the
@@ -19,7 +28,7 @@ details with `python run.py api queues analyze --json --limit 30`. Do not rely o
 task context when deciding which vacancies are pending. Release the lock with
 `python run.py workflow-lock release --lock-token-file .codex-work/workflow-lock-token.txt`.
 While holding that token, create the pack with:
-`python run.py pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml`.
+`python run.py --workflow analyze pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml`.
 Treat that newly written pack as the only batch source for the current run. Evaluate
 every record independently and write the same metadata and items with a strict
 `results` mapping. Before publication, verify that the batch item directories and
