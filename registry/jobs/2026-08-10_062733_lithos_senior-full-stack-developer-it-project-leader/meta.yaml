@@ -1,0 +1,30 @@
+schema_version: 2
+id: 01687c20-8f1c-43e5-a958-415d9ed7930d
+title: Senior Full Stack Developer & IT Project Leader
+company: Lithos
+company_url: https://lithos.it
+location: Oderzo / Remote
+remote: true
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:79974a3f7cf079c7a2e9a45ea06162f980ad8ad1a417d0e8e0e297347a2683ac
+  url: https://lithos.it/work-with-us/senior-full-stack-developer
+  metadata:
+    source_name: lithos
+    board_url: https://lithos.it/work-with-us/senior-full-stack-developer
+    source_type: custom HTML
+    remote_policy_note: Current direct company posting for a Senior Full Stack Developer
+      & IT Project Leader, with PHP/Laravel and full-remote option.
+published_at: null
+discovered_at: '2026-08-10T06:27:33Z'
+updated_at: '2026-08-10T06:27:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-10T06:27:33Z'
+analysis_priority: 100
+fingerprint: sha256:f55daeb651cc73f9df910fe050de6f2e4ad7a69b4c5b37a6e34e22a2d381bf18
+data_source: custom
+content_source: custom
+company_content_source: null

@@ -1,0 +1,86 @@
+schema_version: 2
+id: 704c6dc4-d973-4c3f-be28-14b765e01012
+title: PHP Developer with DDD
+company: WhiteTech
+company_url: null
+location: Worldwide
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/whitetech/jobs/php-developer-with-ddd
+  url: https://himalayas.app/companies/whitetech/jobs/php-developer-with-ddd
+  metadata:
+    location_restrictions: []
+    excerpt: At WhiteTech, we empower businesses in the financial ecosystem with cutting-edge
+      white-label and SAAS solutions.
+    company_slug: whitetech
+    company_logo: https://cdn-images.himalayas.app/2twhdgcpgh4ahashcwjbckb89aer
+    seniority:
+    - Senior
+    timezone_restrictions:
+    - -11
+    - -10
+    - -9.5
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 3.5
+    - 4
+    - 4.5
+    - 5
+    - 5.5
+    - 5.75
+    - 6
+    - 6.5
+    - 7
+    - 8
+    - 8.75
+    - 9
+    - 9.5
+    - 10
+    - 10.5
+    - 11
+    - 12
+    - 12.75
+    - 13
+    - 14
+    categories:
+    - PHP-Development
+    - Backend-Development
+    - Software-Development
+    - Domain-Driven-Design
+    - Fintech-Development
+    - Senior-PHP-Developer
+    - Staff-PHP-Developer
+    expiry_at: '2026-10-09T04:12:25Z'
+    discovered_by:
+    - query_index: 5
+      parameters:
+        sort: recent
+        q: backend engineer
+        worldwide: 'true'
+        seniority: Senior
+published_at: '2026-08-10T04:12:26Z'
+discovered_at: '2026-08-10T06:27:37Z'
+updated_at: '2026-08-10T06:27:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-10T06:27:37Z'
+analysis_priority: 0
+fingerprint: sha256:91cbad61a25d78b0b4704db63ff775e1310e37820f95e8794e25e90d13381b14
+data_source: himalayas
+content_source: himalayas
+company_content_source: null
