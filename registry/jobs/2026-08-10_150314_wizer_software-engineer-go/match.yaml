@@ -1,0 +1,23 @@
+score: 90
+recommendation: strong_match
+summary: Excellent Go backend and technical leadership fit, with direct distributed,
+  event-driven, cloud, testing, and architecture experience.
+strengths:
+- Go backend ownership
+- Technical leadership and mentoring
+- Event-driven and distributed systems
+- AWS, Kubernetes, CI/CD, observability
+- Performance and reliability engineering
+gaps:
+- No explicit NATS JetStream or Kafka evidence in the profile
+- No direct GCP evidence
+concerns:
+- Role expects strong DDD/CQRS and messaging-platform depth that should be verified
+  in interview
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-10T15:08:30Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:387f6e6b8ca4de2a3eabc23fb723784320d5ed84001e3359813c633c9ff77a43
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

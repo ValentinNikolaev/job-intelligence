@@ -1,23 +1,23 @@
-score: 78
-recommendation: match
-summary: Strong senior PHP backend, distributed-systems, Kubernetes, CI/CD, mentoring,
-  and technical-lead evidence matches the platform role, with meaningful uncertainty
-  around modern frontend depth.
+score: 63
+recommendation: possible_match
+summary: Strong backend, architecture, leadership, and platform fit, but the role
+  requires substantial modern frontend TypeScript/React/Vue/Angular delivery not documented.
 strengths:
-- Senior PHP backend and microservice experience with production ownership.
-- Kubernetes, AWS, CI/CD, observability, and reliability experience.
-- Technical leadership, mentoring, architecture, and code-review experience.
-- Remote work and worldwide location are compatible with the stated arrangement.
+- Backend architecture and distributed systems
+- Technical leadership and mentoring
+- PHP and API development
+- Cloud, containers, CI/CD, and reliability
+- Autonomous product delivery
 gaps:
-- No clear evidence of hands-on TypeScript or modern React, Vue, or Angular delivery.
-- No documented iGaming or online gaming platform experience.
+- No strong recent JavaScript/TypeScript or frontend-framework evidence
+- No documented iGaming platform experience
+- No C#/.NET evidence
 concerns:
-- The vacancy requires substantial fullstack frontend capability, which is not established
-  by the profile.
+- Frontend proficiency is a stated core requirement and likely decisive
 hard_rejection: false
-hard_rejection_reason: null
-analyzed_at: '2026-08-10T11:28:04Z'
+hard_rejection_reason: ''
+analyzed_at: '2026-08-10T15:08:30Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:d61348860646fc6c080d11f2d7a035495679fe776b43461fecad6d7adb5f36cd
+job_version: sha256:00cff21e1285c58eab2d86fff3a8749cb9ab2eda7258febb86eaf7db83c08c6e
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

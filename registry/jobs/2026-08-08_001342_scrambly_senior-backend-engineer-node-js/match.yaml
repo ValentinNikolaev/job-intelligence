@@ -1,19 +1,25 @@
 score: 68
-recommendation: match
-summary: Senior backend and high-scale product experience transfer well, but the core
-  Node.js/NestJS stack is not evidenced.
+recommendation: possible_match
+summary: Strong senior backend, distributed systems, cloud, Kubernetes, RabbitMQ,
+  and Go fit, but Node.js/NestJS and React are central requirements without direct
+  evidence.
 strengths:
-- backend systems
-- scaling and reliability
-- product collaboration
+- Senior backend and system design experience
+- AWS, Kubernetes, Helm, and CI/CD
+- PostgreSQL, RabbitMQ, and distributed systems
+- Go experience as a useful plus
+- Mentoring and cross-functional delivery
 gaps:
-- Node.js/NestJS
-- adtech/mobile domain
-concerns: []
+- No documented Node.js or NestJS production experience
+- No React implementation evidence
+- No GCP, Terraform, or Redis evidence
+concerns:
+- Primary language mismatch creates substantial ramp-up risk despite transferable
+  backend skills
 hard_rejection: false
 hard_rejection_reason: ''
-analyzed_at: '2026-08-08T07:31:39Z'
+analyzed_at: '2026-08-10T15:08:30Z'
 profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
-job_version: sha256:5144ea0ba9548c9ab13fdc8a94a2cfa9fdd0ab4aa31f8bbaf2bbcda47736548a
+job_version: sha256:aac67260350150d4b28cfb1e03b18e12659f546ed20f057b71e769f9be1b83eb
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

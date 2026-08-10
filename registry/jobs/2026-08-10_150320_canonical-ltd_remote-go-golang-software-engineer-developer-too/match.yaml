@@ -1,0 +1,23 @@
+score: 84
+recommendation: strong_match
+summary: Strong Go and cloud-native backend fit with relevant Kubernetes, AWS, CI/CD,
+  systems, and developer-tooling-adjacent experience.
+strengths:
+- Go backend experience
+- AWS and Kubernetes
+- CI/CD and operational reliability
+- Distributed and event-driven architecture
+- Remote international collaboration
+gaps:
+- No explicit Ubuntu/Snap or developer-tooling product experience
+- Some Canonical-specific technologies require ramp-up
+concerns:
+- Role may require deeper Linux ecosystem and open-source development background than
+  documented
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-10T15:08:30Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:4c3c5f3c5935dbe3a01ee07dfadb9c5f548c7b908c1f5ce342a1da9e7bfb9fff
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
