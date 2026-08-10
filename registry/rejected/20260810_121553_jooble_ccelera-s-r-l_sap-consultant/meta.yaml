@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '475107646019579754'
+source_url: https://jooble.org/away/475107646019579754?p=1&pos=13&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=30&brelb=10&scr=31.438768&bscr=31.438768&aq=-8239332520132342509&elckey=-1509260283358489495
+title: SAP Consultant
+company: ccelera s.r.l.
+location: Italian Republic
+published_at: '2026-08-09T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-10T12:15:53Z'
+rejected_at: '2026-08-10T12:15:53Z'
