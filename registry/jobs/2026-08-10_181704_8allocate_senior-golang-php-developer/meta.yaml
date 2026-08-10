@@ -1,0 +1,39 @@
+schema_version: 2
+id: 7db0c2de-9fe3-489e-a8a7-7ab043510e97
+title: Senior Golang/PHP Developer
+company: 8allocate
+company_url: https://jobs.dou.ua/companies/8allocate/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369182'
+  url: https://jobs.dou.ua/companies/8allocate/vacancies/369182/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 10 серпня
+    listing_summary: 'Client/Project: The client provides software for fitness and
+      wellness businesses, such as gyms, yoga and Pilates studios, martial arts centers,
+      and personal trainers. Their SaaS platform helps businesses manage operations
+      and enables customers to book services.'
+published_at: '2026-08-10'
+discovered_at: '2026-08-10T18:17:04Z'
+updated_at: '2026-08-10T18:17:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-10T18:17:04Z'
+analysis_priority: 100
+fingerprint: sha256:61a80cacdd16061692b11465b2ef3c0c89f227204fd07dbf1d8d0862e723856c
+data_source: dou
+content_source: dou
+company_content_source: dou
