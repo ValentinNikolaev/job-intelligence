@@ -454,6 +454,14 @@ class ApplicationTests(unittest.TestCase):
             / "references"
             / "prepare.md"
         ).read_text(encoding="utf-8")
+        workflow = (
+            project_root
+            / ".agents"
+            / "skills"
+            / "job-intelligence-workflow"
+            / "SKILL.md"
+        ).read_text(encoding="utf-8")
+        agents = (project_root / "AGENTS.md").read_text(encoding="utf-8")
         manual_agent = (
             project_root
             / ".agents"
@@ -467,6 +475,9 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertIn("$write-cover-letter", prompt)
         self.assertIn("$write-cover-letter", prepare)
+        for contract in (agents, workflow, prepare, prompt):
+            self.assertRegex(contract, r"highest\s+installed\s+version")
+            self.assertNotRegex(contract, r"version\s+`\d+\.\d+\.\d+")
         self.assertNotIn("Do not mention the exact vacancy title", prompt)
         self.assertNotIn("Use `stop-slop`", prompt)
         self.assertTrue(manual_agent.startswith("---\n"))

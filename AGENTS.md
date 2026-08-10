@@ -24,10 +24,10 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   evaluated independently, and published only after deterministic validation.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
-- For every prepared cover letter, invoke `$write-cover-letter` from
-  `agent-plugins@valentin-agent-plugins` version
-  `9.0.0+codex.20260809175723`. If that skill is unavailable in the active Codex
-  task, stop before drafting; never fall back to the retired inline cover-letter logic.
+- For every prepared cover letter, invoke `$write-cover-letter` from the highest
+  installed version of `agent-plugins@valentin-agent-plugins` available in the active
+  Codex task. If that skill is unavailable, stop before drafting; never fall back to
+  the retired inline cover-letter logic.
 - For CV preparation, do not include roles or employment experience older than 10 years in the generated CV `Experience` section. Older evidence may support skills, chronology, or interview preparation only when relevant.
 - Change vacancy status only after an explicit user request, through `python run.py status`; never infer status from artifacts or external events.
 - Before finishing code changes, run `python -m unittest discover -v` with an available Python 3.11+ runtime and search project code/configuration for prohibited API integrations.

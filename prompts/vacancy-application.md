@@ -82,10 +82,11 @@ decision-relevant findings in the application analysis.
     experience, ATS readability, internal consistency, and authentic customization. Score
     role fit, recruiter screening potential, hiring-manager appeal, ATS compatibility, and
     credibility from 1–10. Fix only critical remaining issues; do not start a new large loop.
-13. Invoke `$write-cover-letter` from `agent-plugins@valentin-agent-plugins` version
-    `9.0.0+codex.20260809175723` in Draft mode. Treat the full vacancy as the job
-    description; treat the configured candidate records as the claim source of truth and
-    the final CV as the selected positioning for this application. Follow the skill's
+13. Invoke `$write-cover-letter` from the highest installed version of
+    `agent-plugins@valentin-agent-plugins` available in the active task, in Draft mode.
+    Treat the full vacancy as the job description; treat the configured candidate records
+    as the claim source of truth and the final CV as the selected positioning for this
+    application. Follow the skill's
     requirement-to-evidence mapping, two complementary evidence stories, company-motivation
     research, and final claim ledger. Default to the posting language, 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain

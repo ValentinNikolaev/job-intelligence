@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:204eec93405f074ca41843dbe4a88c151e83b5751bd82887e3b2cb7669902155
+company_version: sha256:85aed2ca30df0e593e177777ffbe82ac4ec52087276d6c5ee2a8d8dae6433854
+prompt_version: sha256:0c986f354d5e1eb37a34bcf546fd0345a071f27021a8f20cd68a818db779f556
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_8allocate_SeniorGolangPHPDeveloper
+generated_at: '2026-08-10T17:22:39Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_8allocate_SeniorGolangPHPDeveloper.md
+- CV_ValentinNikolaev_8allocate_SeniorGolangPHPDeveloper.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md

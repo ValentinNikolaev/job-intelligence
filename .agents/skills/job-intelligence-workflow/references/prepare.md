@@ -27,10 +27,9 @@
    and run its final claim-grounding check. Put only the finished letter in
    `cover-letter.md`; put research sources and unresolved confirmation items in
    `analysis.md`. Do not invoke `stop-slop` as a routine cover-letter pass.
-7. If `$write-cover-letter` is unavailable, stop and report that
-   `agent-plugins@valentin-agent-plugins` version
-   `9.0.0+codex.20260809175723` is required. Never substitute the old inline drafting
-   rules or a generic letter.
+7. If `$write-cover-letter` is unavailable, stop and report that the highest installed
+   version of `agent-plugins@valentin-agent-plugins` must be made available to the
+   active task. Never substitute the old inline drafting rules or a generic letter.
 8. For every vacancy, write exactly `cv.md`, `cover-letter.md`, `analysis.md`, and
    `interview-preparation.md` under
    `.codex-work/application/<vacancy-directory>/`. Never use one shared set of drafts.

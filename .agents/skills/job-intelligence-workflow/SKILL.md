@@ -28,9 +28,10 @@ Read `config/codex-workflows.yaml` before model-dependent work. The selected Sch
    For analysis, read only the sealed input pack and the batch prompt; do not compare
    vacancies or read another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
-3. Require `$write-cover-letter` from `agent-plugins@valentin-agent-plugins` version
-   `9.0.0+codex.20260809175723` during preparation. Stop if the active task cannot load
-   it; do not recreate the retired inline drafting flow.
+3. Require `$write-cover-letter` from the highest installed version of
+   `agent-plugins@valentin-agent-plugins` available in the active task during
+   preparation. Stop if the active task cannot load it; do not recreate the retired
+   inline drafting flow.
 4. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
 5. If publication fails validation, fix the draft and retry. Do not edit generated cache metadata by hand.
 6. Never submit applications or contact employers.
