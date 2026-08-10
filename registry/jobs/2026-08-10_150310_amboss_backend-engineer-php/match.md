@@ -1,23 +1,22 @@
 # Match Analysis
 
-**Score:** 79/100  
-**Recommendation:** Match
+**Score:** 92/100  
+**Recommendation:** Strong Match
 
-Good PHP backend and SaaS/platform fit with strong production engineering, APIs, databases, Kubernetes, and reliability experience.
+Excellent PHP backend fit with relevant SaaS, API, database, performance, and reliability experience.
 
 ## Why it matches
 
-- PHP backend and Laravel experience
-- SaaS and business-process automation background
-- API and database performance work
-- Kubernetes, CI/CD, and observability
-- Cross-functional technical collaboration
+- PHP
+- Laravel and Symfony
+- SaaS backend systems
+- APIs
+- SQL and performance optimization
 
 ## Gaps
 
-- Symfony is not the strongest recent framework signal
-- No explicit Berlin relocation or work authorization detail
+- AMBOSS domain and exact framework version are not established
 
 ## Concerns
 
-- Berlin location and healthcare-domain context require confirmation
+- Remote eligibility and compensation are not stated in the available vacancy record

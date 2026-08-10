@@ -1,21 +1,22 @@
 # Match Analysis
 
-**Score:** 84/100  
-**Recommendation:** Match
+**Score:** 86/100  
+**Recommendation:** Strong Match
 
-Strong architecture and technical leadership fit for distributed, high-volume systems, with PHP, AWS, Kubernetes, queues, observability, and team leadership; several platform-specific technologies are unverified.
+Strong technical-lead fit through backend architecture, product delivery, team leadership, and relevant digital-product and adult-entertainment experience.
 
 ## Why it matches
 
-- Microservices, event-driven architecture, HA, fault tolerance, and scaling
-- PHP/Laravel, PostgreSQL/MySQL, Redis, RabbitMQ, Docker/Kubernetes, CI/CD, observability
-- Technical leadership, risk analysis, mentoring, and fintech/e-commerce-adjacent systems
+- Technical leadership
+- PHP and Go
+- microservices and serverless architecture
+- stakeholder collaboration
+- digital-product domain experience
 
 ## Gaps
 
-- Camunda/Temporal, Kafka, MongoDB, VMware, Node/React/Next, and Spark/Hadoop are not evidenced
-- Direct iGaming/regulatory experience is not shown
+- Specific solutions-architect presales or i-gaming platform scope is not established
 
 ## Concerns
 
-- Breadth of required stack may imply a more platform-specific architect than the profile supports
+- Exact location and travel expectations are unclear

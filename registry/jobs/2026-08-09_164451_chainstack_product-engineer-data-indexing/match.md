@@ -1,21 +1,22 @@
 # Match Analysis
 
-**Score:** 84/100  
-**Recommendation:** Strong Match
+**Score:** 79/100  
+**Recommendation:** Match
 
-Strong backend and product-ownership fit for data indexing, with Go, event-driven systems, SQL, performance, observability, cloud infrastructure, and blockchain-adjacent experience.
+Strong Go backend and distributed-systems foundation aligns with indexing infrastructure, though blockchain data and Rust experience are not established.
 
 ## Why it matches
 
-- Go backend and distributed/event-driven architecture
-- Performance, reliability, queues, storage, and observability
-- Blockchain/digital-asset background and technical leadership
+- Go
+- distributed systems
+- event-driven pipelines
+- queues and storage
+- observability and performance
 
 ## Gaps
 
-- Direct blockchain indexing and archive-data experience is not clearly evidenced
-- Rust and some specialized data tooling are absent
+- Blockchain indexing/RPC infrastructure and Rust are not established
 
 ## Concerns
 
-- Role may require deeper blockchain data infrastructure specialization than the profile demonstrates
+- Product ownership and AI-first workflow requirements may need evidence beyond the profile

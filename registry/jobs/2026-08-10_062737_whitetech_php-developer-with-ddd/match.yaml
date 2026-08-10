@@ -1,28 +1,21 @@
-score: 84
+score: 90
 recommendation: strong_match
-summary: Very strong PHP backend and fintech-adjacent systems fit, including Symfony,
-  PostgreSQL, REST APIs, Kubernetes, microservices, testing, and production troubleshooting;
-  advanced DDD architecture topics remain partly unverified.
+summary: Excellent match for a remote PHP/DDD role through extensive PHP backend,
+  framework, event-driven, and system-design experience.
 strengths:
-- PHP and deep Symfony experience with REST API development
-- PostgreSQL, query/performance optimization, schema design, and relational systems
-  experience
-- Kubernetes, AWS, microservices, observability, CI/CD, and production support experience
-- Fintech-related payment systems and integrations are documented
-- Remote European/CET-compatible hiring language fits the candidate location
+- PHP
+- Laravel and Symfony
+- system design
+- event-driven architecture
+- APIs and databases
 gaps:
-- Advanced DDD bounded contexts, CQRS, Event Sourcing, and explicit Doctrine ORM expertise
-  are not directly evidenced
-- Jenkins, Docker Engine/Swarm, Codeception/Behat, and event-sourcing deployment experience
-  are not directly evidenced
+- Formal DDD practice and exact employer expectations are not fully evidenced
 concerns:
-- The posting describes a very broad senior architecture requirement set, so depth
-  in the advanced patterns should be validated
-- Compensation is unspecified
+- The duplicated posting may have different details from the other WhiteTech record
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-10T11:20:58Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-10T23:42:59Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:fed734662da4e5b91b9d44fb42d3ccce897ac7c941633dfc95f4d960c44f1218
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

@@ -1,23 +1,21 @@
-score: 74
-recommendation: match
-summary: Solid infrastructure and backend engineering fit through Kubernetes, CI/CD,
-  Linux-oriented operations, AWS, Go, and production reliability; Python and container-image
-  build depth are less explicit.
+score: 58
+recommendation: possible_match
+summary: Strong platform and container operations experience transfers well, but Python
+  is not a demonstrated primary language in the candidate profile.
 strengths:
-- Kubernetes, Helm, GitHub Actions, ArgoCD, and production operations
-- Go/backend systems, scalable event pipelines, observability, and reliability
-- Technical leadership, documentation, mentoring, and distributed collaboration
+- Kubernetes and containers
+- AWS
+- CI/CD
+- production reliability
+- backend systems
 gaps:
-- Expert Python experience is not demonstrated as clearly as Go/PHP
-- Direct ownership of container image tooling and Linux package management is not
-  explicit
-- Open-source community contribution is not evidenced
+- Professional Python development and container-image specialization are not established
 concerns:
-- Canonical may calibrate strongly toward Python and open-source/container specialization
+- Python may be a central mandatory skill; remote timezone and level details are unclear
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-08-09T20:05:33Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+hard_rejection_reason: null
+analyzed_at: '2026-08-10T23:42:59Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:6b9ebd331585a44ed328465f661a4e44dd554e402352f720b76e64462dda3ff9
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

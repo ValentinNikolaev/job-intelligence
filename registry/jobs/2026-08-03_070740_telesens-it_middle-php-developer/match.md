@@ -1,21 +1,22 @@
 # Match Analysis
 
-**Score:** 69/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Relevant PHP, SQL, Linux, legacy, and performance background, but the role specifically requires deep Oracle, ExtJS, Vue, and Windows Server experience not shown.
+Good PHP backend match with strong framework, database, API, testing, and production support evidence, though the middle-level scope is less senior.
 
 ## Why it matches
 
-- PHP/OOP and maintainable backend architecture
-- SQL optimization, high-volume production systems, Linux, and legacy modernization
-- Some Vue.js exposure and strong general systems experience
+- PHP
+- Laravel and Symfony
+- REST APIs
+- database optimization
+- production support
 
 ## Gaps
 
-- Oracle Database and Oracle Linux are not evidenced; profile emphasizes MySQL/PostgreSQL
-- ExtJS 3.x, Windows Server, and PHP 8.4 specifics are not evidenced
+- Specific Telesens stack and domain are not established
 
 ## Concerns
 
-- Oracle and ExtJS appear core to the project and could be decisive gaps
+- Seniority may be below the candidate's recent level; remote terms are not fully clear

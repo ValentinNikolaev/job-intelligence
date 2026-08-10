@@ -1,21 +1,22 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong PHP/Symfony product-backend fit with microservices, REST/RPC, MySQL, Redis, RabbitMQ, legacy modernization, architecture, and testing experience.
+PHP, Laravel/Symfony, API, database, and operational experience materially exceed the core needs of a middle PHP developer role.
 
 ## Why it matches
 
-- PHP and Symfony backend experience with product development
-- Microservices, REST, RPC, MySQL, Redis, RabbitMQ, and unit testing
-- Legacy modernization, architecture decisions, and code review
+- PHP
+- Laravel and Symfony
+- backend APIs
+- SQL databases
+- performance troubleshooting
 
 ## Gaps
 
-- MongoDB and ClickHouse are only optional and not evidenced
-- The requested middle-level scope may be below the candidate’s seniority
+- Role-specific product and framework details are limited
 
 ## Concerns
 
-- Role level and compensation expectations should be checked
+- The middle-level title may underuse the candidate's seniority

@@ -1,20 +1,21 @@
-score: 94
+score: 91
 recommendation: strong_match
-summary: Excellent Symfony/PHP match for high-load domain-oriented systems, with direct
-  evidence across DDD-style architecture, PostgreSQL, queues, CI/CD, testing, performance,
-  and mentoring.
+summary: Strong fit for a remote senior PHP backend role, supported by extensive PHP,
+  Laravel, Symfony, API, database, and production-reliability experience.
 strengths:
-- Deep PHP and Symfony experience with architecture and bounded-context work
-- PostgreSQL, RabbitMQ, Docker, CI/CD, Linux, REST, and production optimization
-- Unit/integration testing, code review, mentoring, and high-load experience
+- PHP backend development
+- Laravel and Symfony
+- APIs and databases
+- production performance and reliability
+- senior ownership
 gaps:
-- PHPStan/Psalm/Deptrac and GitLab CI specifics are not all explicitly evidenced
-- JWT/OAuth2 and WebSocket/push experience are not central in the profile
-concerns: []
+- Specific Nova Digital domain experience is not established
+concerns:
+- Source details do not establish compensation or exact timezone expectations
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-03T18:32:52Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-10T23:42:59Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:b06826522ec4509fcc3a70a6666647c46d4d6118df4a42e5dfcb324f8d163df1
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
