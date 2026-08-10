@@ -1,8 +1,11 @@
 # Scheduled vacancy analysis
 
-Configure this Scheduled Task with **GPT-5.6 Luna** and **low reasoning**. Work only inside the configured repository.
+Configure this Scheduled Task with the model and reasoning from the selected `analyze`
+profile in `config/codex-workflows.yaml` (default: `luna_low`). Work only inside the
+configured repository.
 
-Read `AGENTS.md`, invoke `$job-intelligence-workflow` in analysis mode, and use a
+Read `AGENTS.md` and `prompts/job-intelligence-workflow.md`, invoke
+`$job-intelligence-workflow` in analysis mode, and use a
 batch of up to 15 sealed pending vacancies when the batch contract is available.
 Acquire the shared collection/analysis lock before fetching, pulling, inspecting the
 queue, running triage, or creating the pack. Keep it through publication, catalog
@@ -22,7 +25,8 @@ every record independently and write the same metadata and items with a strict
 `results` mapping. Before publication, verify that the batch item directories and
 result keys exactly match the current pack; never reuse items or results from an
 earlier run. Publish with `python run.py analyze-batch --input
-.codex-work/analyze-batch.yaml --workflow analyze`. If the configured model is
+.codex-work/analyze-batch.yaml --workflow analyze --model-profile <selected-profile>`.
+If the configured model is
 unavailable or does not match, report the mismatch and do not publish. Never call the
 OpenAI Platform API from project code. The workflow skill owns its final catalog step.
 Before starting triage or analysis, inspect `.codex-work/telegram-message-*.txt` for

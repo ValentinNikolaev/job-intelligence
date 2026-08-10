@@ -6,16 +6,23 @@ note: >-
 prepare_min_score: 65
 prepare_max_age_days: 7
 prepare_batch_size: 10
-workflows:
-  analyze:
+model_profiles:
+  luna_low:
     model: gpt-5.6-luna
     reasoning: low
     model_label: codex:gpt-5.6-luna:low
-    purpose: High-volume vacancy scoring and initial selection.
-  prepare:
+  terra_medium:
     model: gpt-5.6-terra
     reasoning: medium
     model_label: codex:gpt-5.6-terra:medium
+workflows:
+  analyze:
+    default_profile: luna_low
+    allowed_profiles: [luna_low, terra_medium]
+    purpose: High-volume vacancy scoring and initial selection.
+  prepare:
+    default_profile: terra_medium
+    allowed_profiles: [terra_medium, luna_low]
     purpose: >
       Application package workflow for one to ten vacancies explicitly selected
       by the user through vacancy IDs or registry directories. Keep every package

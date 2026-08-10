@@ -1,7 +1,7 @@
 # Scheduled source productivity benchmark
 
-Configure this Scheduled Task with **GPT-5.6 Luna** and **low reasoning**. Work only
-inside the configured repository.
+Configure this Scheduled Task with the model and reasoning from the selected workflow
+profile in `config/codex-workflows.yaml`. Work only inside the configured repository.
 
 This is a reporting-only benchmark task. Do not collect vacancies, run
 model-dependent vacancy analysis, prepare applications, change vacancy statuses, or

@@ -82,6 +82,10 @@ def _parser() -> argparse.ArgumentParser:
         help="configured Codex workflow: analyze or prepare",
     )
     parser.add_argument(
+        "--model-profile",
+        help="model profile from config/codex-workflows.yaml; defaults to the workflow profile",
+    )
+    parser.add_argument(
         "--collection-limit",
         type=int,
         help="maximum fetched vacancies to process per collector; default: 100; use 0 for unlimited",
@@ -136,7 +140,7 @@ def main(argv: list[str] | None = None) -> int:
         print("--ci is only valid with doctor", file=sys.stderr)
         return 2
     if target == "catalog":
-        if args.arguments or args.force or args.profile or args.input or args.workflow:
+        if args.arguments or args.force or args.profile or args.input or args.workflow or args.model_profile:
             print("Usage: python run.py catalog", file=sys.stderr)
             return 2
         try:
@@ -149,7 +153,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Catalog: {result.vacancies} vacancies, {mode}, changed: {changed}")
         return 0
     if target in {"add-manual", "manual"}:
-        if args.arguments or args.force or args.profile or args.workflow or not args.input:
+        if args.arguments or args.force or args.profile or args.workflow or args.model_profile or not args.input:
             print("Usage: python run.py add-manual --input <manual-job.yaml>", file=sys.stderr)
             return 2
         try:
@@ -171,6 +175,7 @@ def main(argv: list[str] | None = None) -> int:
             or args.profile
             or args.input
             or args.workflow
+            or args.model_profile
         ):
             print(
                 "Usage: python run.py status <job-directory|vacancy-id> <status> "
@@ -215,7 +220,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if target == "triage":
-        if args.arguments or args.input or args.workflow or args.force or args.json or args.pack:
+        if args.arguments or args.input or args.workflow or args.model_profile or args.force or args.json or args.pack:
             print("Usage: python run.py triage", file=sys.stderr)
             return 2
         try:
@@ -236,7 +241,7 @@ def main(argv: list[str] | None = None) -> int:
         return _run_usage(args, project_root, registry_dir)
 
     if target == "reindex":
-        if args.arguments or args.force or args.profile or args.input or args.workflow:
+        if args.arguments or args.force or args.profile or args.input or args.workflow or args.model_profile:
             print("Usage: python run.py reindex", file=sys.stderr)
             return 2
         try:
@@ -249,7 +254,7 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if target == "top":
-        if args.force or args.profile or args.input or args.workflow:
+        if args.force or args.profile or args.input or args.workflow or args.model_profile:
             print("Usage: python run.py top [limit]", file=sys.stderr)
             return 2
         try:
@@ -293,9 +298,9 @@ def main(argv: list[str] | None = None) -> int:
     if target == "pending":
         return _run_pending(args, config, project_root, registry_dir)
 
-    if args.force or args.profile or args.input or args.workflow or args.limit or args.json:
+    if args.force or args.profile or args.input or args.workflow or args.model_profile or args.limit or args.json:
         print(
-            "--force, --profile, --input, --workflow, --limit, and --json are only valid "
+            "--force, --profile, --input, --workflow, --model-profile, --limit, and --json are only valid "
             "with supported targets.",
             file=sys.stderr,
         )
@@ -677,8 +682,8 @@ def _run_api(
     registry_dir: Path,
     env_path: Path,
 ) -> int:
-    if args.force or args.input:
-        print("--force and --input are not valid with api", file=sys.stderr)
+    if args.force or args.input or args.model_profile:
+        print("--force, --input, and --model-profile are not valid with api", file=sys.stderr)
         return 2
     if not args.json:
         print("api commands require --json", file=sys.stderr)
@@ -774,7 +779,9 @@ def _run_analysis_locked(
         return 2
 
     try:
-        _, model_label = _selected_workflow(args.workflow, project_root, {"analyze"})
+        _, model_label = _selected_workflow(
+            args.workflow, project_root, {"analyze"}, args.model_profile
+        )
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         directories = resolve_job_directories(registry_dir, args.arguments[0])
@@ -824,7 +831,9 @@ def _run_analysis_batch(
         return 2
     try:
         with workflow_lock(project_root, "analysis:batch-publish", timeout_seconds=args.lock_timeout_seconds):
-            _, model_label = _selected_workflow(args.workflow, project_root, {"analyze"})
+            _, model_label = _selected_workflow(
+                args.workflow, project_root, {"analyze"}, args.model_profile
+            )
             pack = load_analysis_pack(args.input)
             results = pack.get("results")
             if not isinstance(results, dict):
@@ -856,6 +865,9 @@ def _run_usage(args: argparse.Namespace, project_root: Path, registry_dir: Path)
 
         print(json.dumps(codex_usage(registry_dir), ensure_ascii=False, indent=2, sort_keys=True))
         return 0
+    if args.model_profile:
+        print("usage record accepts --model directly; --model-profile is not valid here", file=sys.stderr)
+        return 2
     if not args.workflow or not args.model:
         print("usage record requires --workflow and --model", file=sys.stderr)
         return 2
@@ -1002,7 +1014,7 @@ def _run_preparation_locked(
 
     try:
         policy, model_label = _selected_workflow(
-            args.workflow, project_root, {"prepare"}
+            args.workflow, project_root, {"prepare"}, args.model_profile
         )
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
@@ -1158,7 +1170,9 @@ def _run_pending_locked(
         return 2
     try:
         allowed = {"analyze"} if stage == "analyze" else {"prepare"}
-        policy, model_label = _selected_workflow(args.workflow, project_root, allowed)
+        policy, model_label = _selected_workflow(
+            args.workflow, project_root, allowed, args.model_profile
+        )
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         if stage == "analyze" and args.pack:
@@ -1242,14 +1256,17 @@ def _run_pending_locked(
 
 
 def _selected_workflow(
-    requested: str, project_root: Path, allowed: set[str]
+    requested: str,
+    project_root: Path,
+    allowed: set[str],
+    model_profile: str | None = None,
 ) -> tuple[WorkflowPolicy, str]:
     policy = load_workflow_policy(project_root / "config" / "codex-workflows.yaml")
     workflow = policy.workflow(requested)
     if workflow.name not in allowed:
         choices = ", ".join(sorted(name.replace("_", "-") for name in allowed))
         raise ValueError(f"workflow {requested!r} is invalid here; expected: {choices}")
-    return policy, workflow.model_label
+    return policy, policy.resolve_model_profile(workflow.name, model_profile).model_label
 
 
 def _optional_match_score(directory: Path) -> int | None:
@@ -1353,7 +1370,7 @@ def _run_doctor(
     registry_dir: Path,
     env_path: Path,
 ) -> int:
-    if args.arguments or args.force or args.profile or args.input or args.workflow:
+    if args.arguments or args.force or args.profile or args.input or args.workflow or getattr(args, "model_profile", None):
         print("Usage: python run.py doctor [--ci]", file=sys.stderr)
         return 2
     ci_mode = bool(getattr(args, "ci", False))

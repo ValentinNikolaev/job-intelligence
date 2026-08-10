@@ -172,10 +172,10 @@ python run.py usage record --workflow analyze --model codex:gpt-5.6-luna:low --i
 python run.py usage summary
 python run.py api catalog-vacancies --json
 python run.py api queues analyze --json --limit 30
-python run.py pending analyze all --workflow analyze
-python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze
-python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare
-python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare
+python run.py pending analyze all --workflow analyze --model-profile <selected-profile>
+python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze --model-profile <selected-profile>
+python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile>
+python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile>
 ```
 
 Installed editable environments can also use `job-intel adzuna`.
@@ -304,7 +304,7 @@ The compact profile is for analysis only; preparation still uses the full source
 For example:
 
 ```text
-python run.py analyze <vacancy> --profile profile/profile.md --input draft.yaml --workflow analyze
+python run.py analyze <vacancy> --profile profile/profile.md --input draft.yaml --workflow analyze --model-profile terra_medium
 ```
 
 `profile_version`, `job_version`, `prompt_version`, and the policy-derived model
@@ -318,7 +318,7 @@ For high-throughput scheduled analysis, create and publish a sealed batch:
 python run.py triage
 python run.py pending analyze all --limit 10 --pack .codex-work/analyze-pack.yaml
 # Codex adds a strict `results` mapping to the pack.
-python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow analyze
+python run.py analyze-batch --input .codex-work/analyze-batch.yaml --workflow analyze --model-profile <selected-profile>
 ```
 
 `triage.yaml` is deterministic and high-confidence skips never enter the model queue.
@@ -404,17 +404,17 @@ model-dependent work live under `prompts/`, and the reusable repo skill lives un
 
 | Task | Model | Reasoning |
 |---|---|---|
-| Analyze | GPT-5.6 Luna | low |
-| Prepare | GPT-5.6 Terra | medium |
+| Analyze | `luna_low` by default | configured |
+| Prepare | `terra_medium` by default | configured |
 
 Application preparation is not queued automatically. After analysis notifications or
 catalog review, the user explicitly chooses one to 10 vacancy IDs or registry
 directories for each preparation task.
 
-The authoritative routing policy is
+The authoritative routing policy and allowed model profiles are in
 [`config/codex-workflows.yaml`](config/codex-workflows.yaml). The configured model must be
-selected in the Codex or Scheduled Task UI; `--workflow` validates the route and derives
-the provenance label, but does not switch the active model. If a configured model is
+selected in the Codex or Scheduled Task UI; `--workflow` plus optional `--model-profile`
+validates the route and derives the provenance label, but does not switch the active model. If a configured model is
 unavailable, the task must report that limitation instead of publishing under another
 workflow.
 

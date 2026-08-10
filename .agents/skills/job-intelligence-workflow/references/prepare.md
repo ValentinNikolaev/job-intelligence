@@ -1,12 +1,13 @@
 # Prepare one to 10 application packages
 
-1. Read `config/codex-workflows.yaml`. Confirm the task uses workflow `prepare` and that
-   the explicit selection does not exceed `prepare_batch_size` (hard maximum: 10).
+1. Read `prompts/job-intelligence-workflow.md` and `config/codex-workflows.yaml`.
+   Confirm the task uses workflow `prepare`, the selected model profile, and that the
+   explicit selection does not exceed `prepare_batch_size` (hard maximum: 10).
 2. Require one to 10 vacancy IDs or registry directories explicitly named in the chat
    request. Preserve that sealed selection. Do not run `pending prepare all`, query an
    automatic preparation queue, or add another vacancy based on score or similarity.
 3. Verify the complete selection with
-   `python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare`.
+   `python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile>`.
    The command prints only vacancies that are analyzed, fresh, score-eligible, and not
    already current. Do not draft a selected vacancy whose path is absent; report it as
    having no pending preparation work.
@@ -34,7 +35,7 @@
    `interview-preparation.md` under
    `.codex-work/application/<vacancy-directory>/`. Never use one shared set of drafts.
 9. Publish the verified batch with
-   `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare`.
+   `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile>`.
    The deterministic publisher resolves every selector before publication and reads
    each package only from its matching vacancy-keyed draft directory. A legacy
    single-vacancy call may still pass that vacancy's draft directory directly.

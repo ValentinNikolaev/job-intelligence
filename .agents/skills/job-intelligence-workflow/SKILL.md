@@ -9,6 +9,10 @@ Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code.
 
 ## Choose one mode
 
+Before choosing a mode, read `prompts/job-intelligence-workflow.md`. It is the shared
+execution contract for interactive and scheduled launchers; this skill supplies the
+tool sequencing and safety boundaries around that contract.
+
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
 - For analysis, follow `references/analyze.md` and process a sealed batch of up to 15
   pending vacancies.
@@ -18,7 +22,12 @@ Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code.
   the selection to `all`.
 - For a user-requested status change, run `python run.py status <vacancy-id-or-directory> <status>`. Never change status without an explicit user request. Preserve the complete history through the command.
 
-Read `config/codex-workflows.yaml` before model-dependent work. The selected Scheduled Task or chat must use the corresponding model and reasoning level. Pass the workflow name to the deterministic publisher; it derives the only allowed model label from policy. If the requested model is unavailable in the current Codex surface, tell the user and do not publish under that workflow.
+Read `config/codex-workflows.yaml` before model-dependent work. Select the workflow's
+default model profile unless the launcher explicitly supplies `--model-profile`; the
+selected Scheduled Task or chat must use the corresponding model and reasoning level.
+Pass the workflow and optional model profile to the deterministic publisher; it derives
+the only allowed model label from policy. If the requested model is unavailable in the
+current Codex surface, tell the user and do not publish under that profile.
 
 ## Common rules
 

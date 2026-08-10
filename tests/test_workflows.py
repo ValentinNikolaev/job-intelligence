@@ -22,6 +22,18 @@ class WorkflowPolicyTests(unittest.TestCase):
             "codex:gpt-5.6-terra:medium",
             policy.workflow("prepare").model_label,
         )
+        self.assertEqual("luna_low", policy.workflow("analyze").default_profile)
+        self.assertEqual(
+            "codex:gpt-5.6-terra:medium",
+            policy.resolve_model_profile("analyze", "terra-medium").model_label,
+        )
+
+    def test_model_profile_must_be_allowed_by_workflow(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        policy = load_workflow_policy(root / "config" / "codex-workflows.yaml")
+
+        with self.assertRaisesRegex(WorkflowError, "not allowed"):
+            policy.resolve_model_profile("analyze", "unknown")
 
     def test_invalid_prepare_min_score_is_rejected(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

@@ -9,6 +9,10 @@ Obey `AGENTS.md` first. Never add or restore OpenAI Platform API calls, SDK usag
 
 ## Goal
 
+Read `prompts/job-intelligence-workflow.md` before starting. That file is the shared
+repository contract used by this interactive URL flow and by Scheduled Tasks; this
+skill owns the manual intake orchestration and vacancy isolation.
+
 Turn one raw/manual vacancy into a prepared application package:
 
 - Publish the vacancy through `$manual-job-intake`.
@@ -21,7 +25,11 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
 
 ## Workflow
 
-1. Read `config/codex-workflows.yaml` and identify the configured models, reasoning levels, and `prepare_min_score`. You cannot switch the current task model from inside the repo; if the active task is not using the needed workflow model, tell the user before publishing model-dependent results.
+1. Read `config/codex-workflows.yaml` and identify the configured model profiles,
+   reasoning levels, and `prepare_min_score`. Use the workflow default or an explicitly
+   selected `--model-profile`. You cannot switch the current task model from inside
+   the repo; if the active task is not using the selected profile, tell the user before
+   publishing model-dependent results.
 2. Use `$manual-job-intake` on the supplied vacancy text or link. Extract fields, ask only for missing or ambiguous required evidence, write the manual draft under `.codex-work/manual-job/`, and publish it with `python run.py add-manual --input <draft.yaml>`.
 3. Capture the newly published vacancy directory from the command output or `git diff`. From this point, keep the workflow scoped to that single vacancy except for sealed queue commands.
 4. If the vacancy has no `match.yaml`, analyze it with `$job-intelligence-workflow` in analysis mode:
@@ -33,7 +41,7 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    - If score is below `prepare_min_score`, stop after catalog/check/finalization and report that no CV or cover letter should be prepared under repository policy.
    - If score is at least `prepare_min_score`, use workflow `prepare`. Preparation starts only from the vacancy ID or registry directory explicitly provided by the user.
 6. Prepare exactly this vacancy with `$job-intelligence-workflow` preparation rules. Read only its `meta.yaml`, `job.md`, optional `company.md`, configured candidate source files, and `prompts/vacancy-application.md`. Invoke `$write-cover-letter` for the final letter and stop if that skill is unavailable; do not substitute the retired inline drafting logic. Write drafts under `.codex-work/application/<vacancy-directory>/`.
-7. Publish with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow prepare`. If validation or DOCX conversion fails, fix the draft or deterministic converter issue and retry.
+7. Publish with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow prepare --model-profile <selected-profile>`. If validation or DOCX conversion fails, fix the draft or deterministic converter issue and retry.
 8. Confirm the application directory contains the published Markdown artifacts, DOCX artifacts, and `manifest.yaml`.
 9. Regenerate the vacancy catalog through `$generate-vacancy-catalog`, run required tests and the prohibited-API scan, inspect the full diff, stage, commit, and push when repository files changed.
 

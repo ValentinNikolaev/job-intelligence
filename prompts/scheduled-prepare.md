@@ -2,6 +2,11 @@
 
 Automatic scheduled application preparation is disabled.
 
+Read `prompts/job-intelligence-workflow.md` for the shared manual-application
+contract. A user-provided vacancy URL must enter through the interactive
+`manual-application` mode and `$manual-vacancy-application`; this Scheduled Task must
+not invent a selection or silently prepare a queue.
+
 Do not select vacancies automatically, do not run `python run.py api queues prepare`,
 and do not publish application packages from a schedule. Application preparation now
 starts only from an explicit user chat request naming a vacancy ID or registry
@@ -15,4 +20,4 @@ selection is required. The manual chat workflow is:
 3. A Codex task reads `AGENTS.md`, invokes `$job-intelligence-workflow` in preparation
    mode, writes one isolated draft set per vacancy under
    `.codex-work/application/<vacancy-directory>/`, and publishes with
-   `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare`.
+   `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile>`.
