@@ -95,10 +95,18 @@ tasks that need language judgment. The repository keeps the handoff visible.
 5. **Prepare the application**
 
    A separate Codex task handles an explicitly selected batch of one to ten vacancies.
-   It drafts an isolated CV, application analysis, and interview preparation for each
-   vacancy, and delegates the evidence-backed letter to the dedicated
-   `$write-cover-letter` plugin skill. The publisher validates each package and converts
-   the final CV and cover letter to DOCX.
+   For each vacancy, the task can use two coordination waves: company research,
+   CV/evidence mapping, and requirement/risk review run in parallel first; after the
+   coordinating agent fixes the shared `cv.md`, cover-letter, interview, and analysis
+   work can run in parallel. Subagents exchange intermediate work only through that
+   vacancy's `.codex-work/application/<vacancy>/parts/` directory and have exclusive
+   ownership of their output files. Inputs stay minimal: research does not receive the
+   full candidate CV, CV drafting does not browse the web, and second-wave workers see
+   only the finalized CV and handoffs they need. The letter still goes through the
+   dedicated `$write-cover-letter` plugin skill. The coordinator performs one
+   cross-file check, validates the complete package once, and publishes it once. The
+   same ownership and vacancy-isolation rules apply when concurrency is unavailable
+   and the waves run sequentially.
 
 6. **Regenerate the catalog**
 

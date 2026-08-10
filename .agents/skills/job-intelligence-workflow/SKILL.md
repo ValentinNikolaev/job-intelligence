@@ -52,12 +52,17 @@ current Codex surface, tell the user and do not publish under that profile.
    preparation. Stop if the active task cannot load it; do not recreate the retired
    inline drafting flow.
 4. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
-5. After all four application drafts for a vacancy are complete, run
+5. For preparation, use the two-wave orchestration and exclusive file ownership in
+   `references/prepare.md`. Parallelize independent roles only when subagent slots are
+   available; otherwise preserve the same handoffs and run them sequentially. The main
+   agent alone finalizes the CV, performs the cross-file claim check, validates, and
+   publishes.
+6. After all four application drafts for a vacancy are complete, run
    `python run.py validate-application <job-directory-or-vacancy-id> --input
    <draft-directory>` once as the combined prepublication check. Publish only after it
    succeeds. If validation fails, fix only its cause and rerun the validator. Do not
    edit generated cache metadata by hand.
-6. Never submit applications or contact employers.
+7. Never submit applications or contact employers.
 
 ## Mandatory final catalog step
 

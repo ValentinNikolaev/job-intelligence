@@ -45,11 +45,59 @@ at a time and store each result under that vacancy's directory.
 
 ## Required workflow
 
-Complete the following workflow internally before returning the four final artifacts.
-Do not expose hidden reasoning or a step-by-step chain of thought; record only concise,
-decision-relevant findings in the application analysis. Use one combined audit/edit pass
-and one final quality gate. Do not repeat separate hiring-manager, red-flag, bullet,
-section, or ATS review loops.
+The main agent owns final synthesis and deterministic publication. Use the two waves
+below when subagent slots are available; otherwise perform the same roles sequentially.
+An agent assigned a named role must execute only that role and write only its assigned
+file. The four-field JSON contract applies to the final assembled package, not to an
+individual role handoff. Do not expose hidden reasoning or a step-by-step chain of
+thought; record only concise, decision-relevant findings.
+
+### Wave 1: parallel handoffs
+
+Create `.codex-work/application/<vacancy-directory>/parts/` and assign exclusive
+ownership:
+
+- Research reads only this vacancy's meta/job/company files and minimal candidate
+  motivation hooks, not the full source CV. It writes only `research.md`: verified
+  company facts, role context, one defensible motivation point, direct links, and
+  fact/inference/unknown labels.
+- CV/evidence reads this vacancy and configured candidate sources, performs no web
+  research, and writes only `evidence-map.md`: requirement-to-evidence mapping plus a
+  complete proposed CV draft with supported headline, summary, skills, and Experience
+  wording. It must not write the final `cv.md`.
+- Requirements/risks reads this vacancy and configured candidate evidence and writes
+  only `requirements-risks.md`: explicit versus inferred requirements, gaps, ATS
+  terminology, recruiter risks, and interview probes.
+
+Each role receives only the inputs listed for that role. Wave 1 roles must not write
+final artifacts, publish, validate, or run project commands. After all handoffs finish,
+the main agent reconciles disagreements, rejects unsupported claims, and writes the
+final `cv.md`.
+
+### Wave 2: parallel final artifacts
+
+Start only after the main agent fixes the final CV. Assign exclusive ownership:
+
+- Cover letter receives this vacancy, final CV, verified research, and only the
+  candidate evidence needed to ground its selected stories. It invokes
+  `$write-cover-letter` and writes only `cover-letter.md`.
+- Interview preparation receives this vacancy, final CV, requirements/risks handoff,
+  and verified research, then writes only `interview-preparation.md` without browsing
+  again.
+- Application analysis receives this vacancy, final CV, and all Wave 1 handoffs, then
+  writes only `analysis.md`.
+
+No role may edit another role's file. After Wave 2, the main agent runs one cross-file
+consistency and claim-grounding pass, then `validate-application` once and `prepare`
+once. Preserve the same waves and ownership when running sequentially. For a batch,
+scope every role and file to one vacancy; never mix evidence or handoffs across vacancy
+directories. Do not let a role reread unneeded candidate sources, other handoffs, the
+full registry, or another vacancy directory. Do not promise or claim a model switch
+inside the active task.
+
+Complete the following content workflow across the assigned roles before returning the
+four final artifacts. Use one combined audit/edit pass and one final quality gate. Do
+not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loops.
 
 1. Analyze the vacancy. Separate explicit requirements from reasonable inferences and
    identify title, seniority, responsibilities, mandatory and preferred requirements,

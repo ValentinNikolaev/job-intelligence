@@ -367,6 +367,39 @@ time with the configured candidate source documents, and applies the versioned
 [single-package prompt](prompts/vacancy-application.md) independently. Codex may use its
 own web-search capability for current company research. Project code does not call a
 model or search API.
+
+#### Two-wave Codex orchestration
+
+Preparation can reduce elapsed model time without weakening package isolation. For
+each selected vacancy, the coordinating agent creates only this vacancy's handoff area:
+
+```text
+.codex-work/application/<vacancy-directory>/parts/
+```
+
+Wave 1 runs three independent passes in parallel: bounded company research, CV plus
+evidence mapping, and requirements plus risk analysis. These workers write only their
+assigned intermediate files under `parts/`; they do not publish application artifacts
+or write another worker's files. Input routing is deliberately narrow: the research
+worker receives vacancy and company material but not the full candidate CV, while the
+CV/evidence worker receives the vacancy and candidate evidence but does not browse the
+web. Its `evidence-map.md` handoff includes a complete proposed CV draft. The
+coordinating agent reviews the handoffs and is the only writer of the canonical
+`cv.md`. That finalized file is the barrier between the waves.
+
+Wave 2 can then run the cover letter, interview preparation, and application analysis
+in parallel. Each worker owns exactly one final output, and the cover-letter worker
+must invoke `$write-cover-letter`. Each receives only the finalized CV and the specific
+handoffs required for its output, rather than every first-wave context. Once all
+outputs are present, the coordinator runs one cross-file consistency check, one
+`validate-application` command, and one `prepare` command. A failed check is repaired
+at its source and only the necessary check is repeated.
+
+If subagent capacity is unavailable, the same passes run sequentially with unchanged
+inputs, file ownership, barrier, and validation rules. Every handoff path is keyed to
+one vacancy directory; research, evidence mappings, risks, or prose from one vacancy
+must never be reused for another.
+
 After the CV and company research are final, the prompt invokes `$write-cover-letter`
 from `agent-plugins@valentin-agent-plugins` version
 `9.0.0+codex.20260809175723` (upstream commit `5c5b33b`). The skill maps priority
