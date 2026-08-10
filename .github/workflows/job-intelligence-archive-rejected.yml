@@ -35,11 +35,13 @@ jobs:
           git config user.email "435393+ValentinNikolaev@users.noreply.github.com"
           git add -A archives registry/rejected
           changed_files="$(git diff --cached --name-only | wc -l | tr -d ' ')"
+          archived_vacancies="$(git diff --cached --name-status -- archives | awk '$1 == "A" && $2 ~ /\/meta\.yaml$/ { count++ } END { print count + 0 }')"
           archived_files="$(git diff --cached --name-status -- archives | awk '$1 == "A" { count++ } END { print count + 0 }')"
           removed_rejected_files="$(git diff --cached --name-status -- registry/rejected | awk '$1 == "D" { count++ } END { print count + 0 }')"
+          commit_subject="$(python -m jobintel.commit_messages archive --run-number "${GITHUB_RUN_NUMBER}" --count "${archived_vacancies}" --reason "rejected")"
           run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
           git commit \
-            -m "chore(archive): trim rejected vacancies" \
+            -m "${commit_subject}" \
             -m "Archived rejected vacancies above the 50-item retention limit." \
             -m "Changed files: ${changed_files} total; archive files: ${archived_files}; removed rejected files: ${removed_rejected_files}." \
             -m "Run: ${run_url}"

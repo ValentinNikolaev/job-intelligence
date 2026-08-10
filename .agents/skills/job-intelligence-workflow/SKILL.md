@@ -74,7 +74,11 @@ After the catalog process, run the relevant tests and API-prohibition scan exact
 then inspect the full diff, stage all added, changed, and deleted project files with
 `git add -A`, commit once, and push the current branch to `origin`. Repeat only the
 specific failed check after correcting its cause; do not rerun the entire workflow or
-full check suite without a failure. Never stage ignored secrets or local work files. If
-the tree is unchanged, skip the commit and push. End the report with a changelog derived
-from the commit plus the commit hash and push result. Do not open a pull request unless
-explicitly requested.
+full check suite without a failure. For a Codex-authored commit, inspect the staged diff
+and write a natural, human-written subject that names the run's actual result, using a
+useful count or vacancy context when relevant. Do not reuse or randomly select from the
+GitHub Actions templates, and do not use a generic `update data`, `update files`, `workflow
+changes`, or `automated update` subject. Never stage ignored secrets or local work
+files. If the tree is unchanged, skip the commit and push. End the report with a
+changelog derived from the commit plus the commit hash and push result. Do not open a
+pull request unless explicitly requested.

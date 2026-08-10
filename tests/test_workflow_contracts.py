@@ -85,6 +85,19 @@ class WorkflowContractTests(unittest.TestCase):
             self.assertIn("exactly once", text)
         self.assertRegex(contract, r"Repeat only a\s+specific failed check")
 
+    def test_codex_commits_use_human_written_diff_specific_subjects(self) -> None:
+        contract = self._read("prompts/job-intelligence-workflow.md")
+        scheduled = self._read("prompts/scheduled-analyze.md")
+        workflow_skill = self._read(
+            ".agents/skills/job-intelligence-workflow/SKILL.md"
+        )
+
+        for text in (contract, scheduled, workflow_skill):
+            self.assertIn("human-written", text)
+            self.assertIn("staged diff", text)
+            self.assertIn("GitHub Actions templates", text)
+            self.assertIn("generic `update data`", text)
+
     def test_two_wave_preparation_has_parallel_parts_handoff_and_cv_barrier(self) -> None:
         prepare = self._flat(
             self._read(

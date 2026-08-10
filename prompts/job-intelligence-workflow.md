@@ -135,4 +135,8 @@ After deterministic publication, regenerate the catalog in its required separate
 process. Run the required tests and prohibited-API scan exactly once after the final
 catalog state, then inspect the complete diff and perform the Git handoff. Repeat only a
 specific failed check after correcting its cause; do not duplicate the full suite or
-rerun the model workflow.
+rerun the model workflow. For the Codex-authored commit, derive a natural, human-written
+subject from the staged diff and name the concrete outcome, including a useful count or
+vacancy context when relevant. Do not choose from the GitHub Actions templates or use a
+generic `update data`, `update files`, `workflow changes`, or `automated update` subject.
+Keep run identifiers and mechanical file counts in the commit body.

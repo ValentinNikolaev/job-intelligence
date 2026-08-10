@@ -37,9 +37,10 @@ jobs:
           changed_files="$(git diff --cached --name-only | wc -l | tr -d ' ')"
           archived_vacancies="$(git diff --cached --name-status -- archives | awk '$1 == "A" && $2 ~ /\/meta\.yaml$/ { count++ } END { print count + 0 }')"
           removed_active_files="$(git diff --cached --name-status -- registry/jobs | awk '$1 == "D" { count++ } END { print count + 0 }')"
+          commit_subject="$(python -m jobintel.commit_messages archive --run-number "${GITHUB_RUN_NUMBER}" --count "${archived_vacancies}" --reason "skipped")"
           run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
           git commit \
-            -m "chore(archive): move ${archived_vacancies} skipped vacancies" \
+            -m "${commit_subject}" \
             -m "Archived vacancies marked with the skipped status." \
             -m "Changed files: ${changed_files} total; removed active files: ${removed_active_files}." \
             -m "Run: ${run_url}"

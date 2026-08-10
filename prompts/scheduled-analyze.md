@@ -55,3 +55,10 @@ After publication and catalog generation, run `python run.py api workflow-summar
 --json` again. Report `pending_analyze` before, after, and as a delta. Keep the catalog
 total separate and never report "catalog vacancies not processed this run": that
 subtraction measures only the current run, not the pending-analysis backlog.
+
+When repository files changed, inspect the staged diff before committing and write a
+natural, human-written subject that states what this run actually accomplished. Use the
+number of analyzed vacancies or another concrete result when it makes the subject more
+informative. Do not select from the GitHub Actions templates and do not fall back to a
+generic `update data`, `update files`, `workflow changes`, or `automated update`
+subject. Put the workflow/run identifier and mechanical file counts in the commit body.

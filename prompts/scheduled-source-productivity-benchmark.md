@@ -47,4 +47,7 @@ be measured next.
 Do not write project files unless explicitly necessary. If no project files change,
 do not commit or push. If any real project file changes unexpectedly, inspect the full
 diff, stage only real project changes, commit once, push to `origin`, and report the
-commit hash and push result.
+commit hash and push result. Derive a natural, human-written commit subject from the
+staged diff and name its concrete outcome. Do not select from the GitHub Actions
+templates or use a generic `update data`, `update files`, `workflow changes`, or
+`automated update` subject; keep execution metadata in the commit body.
