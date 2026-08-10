@@ -1,20 +1,21 @@
 score: 91
 recommendation: strong_match
-summary: Very strong PHP backend fit with Symfony, PostgreSQL, Redis, service architecture,
-  APIs, messaging, Docker/Kubernetes, and relevant crypto-platform exposure.
+summary: Very strong backend fit across PHP, Symfony, PostgreSQL, Redis, Elasticsearch,
+  service architecture, APIs, Docker, Kubernetes, and Go.
 strengths:
-- 15+ years PHP with Symfony and backend architecture
-- PostgreSQL, Redis, Elasticsearch, RabbitMQ, REST, gRPC, and Kubernetes
-- Crypto and blockchain-adjacent experience plus English-speaking stakeholder work
+- PHP and Symfony
+- PostgreSQL and Redis
+- Elasticsearch
+- service-oriented and event-driven systems
+- blockchain exposure
 gaps:
-- Node.js, GraphQL/JSON-RPC, and explicit AI proficiency are not deeply evidenced
-- Specific CQRS/DDD use is stated in skills but depth is not fully demonstrated
+- Node.js and Python depth are not explicitly evidenced
 concerns:
-- Blockchain basics may require confirming the expected depth
+- English proficiency is documented with conflicting source labels and should be confirmed
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-03T18:32:52Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-10T22:43:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:e72c93602e9815c50f05b14c85713959ccf3b27bf753d1d395de92d9473bbfe2
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

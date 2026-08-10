@@ -3,19 +3,20 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Excellent fit for a hands-on backend lead role combining architecture, coding, mentoring, and transactional systems.
+Strong lead-level backend profile with technical leadership, architecture, scalable services, PHP and Go, and production reliability experience.
 
 ## Why it matches
 
-- PHP/Go backend engineering and system design
-- Technical leadership, mentoring, and production troubleshooting
-- High-load, payments, queues, and reliability experience
+- Technical leadership
+- backend architecture
+- PHP and Go
+- microservices and event-driven systems
+- mentoring and delivery ownership
 
 ## Gaps
 
-- Specific gaming-provider domain experience is not established
-- Some listed platform technologies may require ramp-up
+- The vacancy's exact domain and preferred technologies are not fully evidenced
 
 ## Concerns
 
-- Exact team and product context should be confirmed.
+- Lead responsibilities and compensation expectations require confirmation

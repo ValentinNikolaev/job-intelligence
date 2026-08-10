@@ -1,20 +1,22 @@
 # Match Analysis
 
 **Score:** 84/100  
-**Recommendation:** Match
+**Recommendation:** Strong Match
 
-ApricusIT seeks a TYPO3 Certified Developer; the role aligns well with the candidate's backend experience and relevant PHP/Go background.
+Strong PHP and backend fit with broad framework, API, database, cloud, and delivery experience; TYPO3 certification or depth is not confirmed.
 
 ## Why it matches
 
-- 15+ years of backend engineering across PHP and Go.
-- Experience with APIs, microservices, databases, cloud infrastructure, CI/CD, and production reliability.
-- Strong PHP background including Laravel/Symfony and backend platform ownership.
+- PHP backend
+- certified PHP background
+- APIs and databases
+- AWS and CI/CD
+- production reliability
 
 ## Gaps
 
-- TYPO3-specific production experience is not evidenced.
+- TYPO3-specific experience is not explicitly evidenced
 
 ## Concerns
 
-- Confirm exact stack, seniority expectations, and domain-specific requirements during screening.
+- Certification and CMS-specific implementation requirements need confirmation

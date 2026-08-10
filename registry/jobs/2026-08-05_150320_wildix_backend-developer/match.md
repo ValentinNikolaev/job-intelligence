@@ -3,19 +3,20 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Strong PHP backend fit with Laravel, REST, MySQL, testing, and substantial commercial experience; Vue/Nuxt and TypeScript depth is not established.
+Good backend fit across PHP, Go, APIs, databases, cloud infrastructure, messaging, and production support.
 
 ## Why it matches
 
-- PHP and Laravel experience
-- REST APIs and MySQL
-- long commercial background
-- technical education
+- PHP and Go
+- REST backend systems
+- AWS and Kubernetes
+- RabbitMQ and databases
+- monitoring and troubleshooting
 
 ## Gaps
 
-- Vue.js/Nuxt.js and TypeScript are not evidenced
+- Role-specific framework and product requirements are not fully evidenced
 
 ## Concerns
 
-- The vacancy text is Ukrainian; working-language compatibility is not explicit
+- Seniority expectations and any required frontend or language skills need confirmation

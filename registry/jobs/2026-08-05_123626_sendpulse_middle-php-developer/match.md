@@ -3,23 +3,20 @@
 **Score:** 94/100  
 **Recommendation:** Strong Match
 
-Excellent match for PHP 8/Laravel, relational databases, RabbitMQ, Redis, AWS, Docker, and production backend work.
+Exceptional fit for a PHP backend role, combining deep PHP experience with Laravel, messaging, email infrastructure, and high-volume systems.
 
 ## Why it matches
 
-- PHP/Laravel
-- MySQL/PostgreSQL
-- RabbitMQ
-- Redis
-- Docker
-- AWS
-- CI/CD
-- Agile.
+- 15+ years backend development
+- PHP and Laravel
+- transactional email at scale
+- RabbitMQ and AWS
+- performance and reliability
 
 ## Gaps
 
-- Specific Xdebug and education-platform experience are not evidenced.
+- Specific role tooling and team processes are not fully evidenced
 
 ## Concerns
 
-- None material.
+- The advertised middle-level scope may be below the candidate's recent seniority

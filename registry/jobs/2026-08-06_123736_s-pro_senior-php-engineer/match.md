@@ -3,16 +3,20 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Strong PHP/Laravel backend fit for modernization of a large fintech marketplace.
+Strong PHP backend fit with senior experience in Laravel, Symfony, AWS, Kubernetes, messaging, observability, and production reliability.
 
 ## Why it matches
 
-- PHP, Laravel, MySQL, Docker, Redis, refactoring, performance and observability experience.
+- PHP backend development
+- Laravel and Symfony
+- AWS and Kubernetes
+- RabbitMQ and event-driven systems
+- production troubleshooting
 
 ## Gaps
 
-- No explicit evidence of the specific marketplace domain or all requested modern PHP versions.
+- Role-specific details beyond the supplied posting are unknown
 
 ## Concerns
 
-- Fintech and AI-assisted coding workflow are relevant but exact product context is not established.
+- Exact English level and any unlisted role-specific tools are not fully evidenced

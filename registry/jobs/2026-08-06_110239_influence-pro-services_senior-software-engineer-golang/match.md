@@ -3,16 +3,20 @@
 **Score:** 90/100  
 **Recommendation:** Strong Match
 
-Excellent Go/backend fit with production automation, APIs, reliability, AWS/Kubernetes, and technical ownership.
+Excellent match for senior Go backend work through recent Go automation, resilient integrations, APIs, messaging, and operational ownership.
 
 ## Why it matches
 
-- Go backend; event-driven systems; AWS/Kubernetes; APIs; reliability and observability; technical leadership.
+- Go backend development
+- support automation
+- resilient message delivery
+- API integrations
+- monitoring and reliability
 
 ## Gaps
 
-- Role-specific depth in marketing systems and any stated language/framework details are not evidenced.
+- Specific product-domain requirements are not evidenced
 
 ## Concerns
 
-- No material hard mismatch identified.
+- Exact expectations for team leadership and cloud services are unclear

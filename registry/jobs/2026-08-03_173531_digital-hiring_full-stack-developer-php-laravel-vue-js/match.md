@@ -3,19 +3,23 @@
 **Score:** 79/100  
 **Recommendation:** Match
 
-Strong PHP/Laravel and architecture fit, with meaningful but less current evidence for the required Vue/full-stack side.
+Strong PHP and Laravel backend fit with relevant APIs, testing, architecture, and e-commerce experience, but Vue and frontend depth are less certain.
 
 ## Why it matches
 
-- Extensive PHP and Laravel experience
-- REST APIs, SOLID, databases, testing, and technical ownership
-- E-commerce and product-platform background
+- PHP and Laravel
+- REST APIs
+- OOP and system design
+- automated delivery
+- e-commerce and backend systems
 
 ## Gaps
 
-- Five years of Vue/Nuxt and TypeScript are not explicitly supported
-- Recent work is predominantly backend
+- Five years of Vue/Nuxt
+- TypeScript
+- HTML/CSS/SASS
+- and exact MySQL depth are not fully evidenced
 
 ## Concerns
 
-- Frontend depth should be tested in screening.
+- The senior full-stack requirement may depend heavily on frontend experience

@@ -3,21 +3,20 @@
 **Score:** 91/100  
 **Recommendation:** Strong Match
 
-Excellent PHP/Laravel backend and SaaS fit with matching databases, product ownership, and enterprise experience.
+Excellent PHP developer fit supported by extensive production PHP, Laravel, Symfony, databases, APIs, messaging, and reliability experience.
 
 ## Why it matches
 
-- PHP
-- Laravel
-- MySQL
-- SaaS
-- backend ownership
-- JavaScript
+- PHP and Laravel
+- Symfony
+- REST APIs
+- MySQL and PostgreSQL
+- RabbitMQ and production troubleshooting
 
 ## Gaps
 
-- Magento 2 depth
+- Vacancy-specific framework versions and domain details are not evidenced
 
 ## Concerns
 
-- some frontend/shop work
+- The role's level and remote or timezone policy need confirmation

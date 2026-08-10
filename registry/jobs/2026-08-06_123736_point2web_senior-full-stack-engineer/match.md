@@ -3,16 +3,20 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Excellent backend and PHP fit for a real-money advertising platform, with relevant integrations and delivery ownership.
+Strong senior backend and PHP fit with relevant full-stack, API, cloud, database, and delivery experience.
 
 ## Why it matches
 
-- PHP/Laravel, MySQL, Redis, RabbitMQ, Docker, AWS, APIs, payments and event-driven systems.
+- 15+ years software development
+- PHP and Laravel
+- REST APIs and system design
+- AWS and Kubernetes
+- CI/CD and performance optimization
 
 ## Gaps
 
-- Frontend depth, ClickHouse/BigQuery, and the full advertising-platform stack are not demonstrated.
+- The posting's exact frontend stack and depth are not fully evidenced
 
 ## Concerns
 
-- Role requires meaningful full-stack contribution and financial-domain operational precision.
+- Full-stack scope and specific language requirements need confirmation

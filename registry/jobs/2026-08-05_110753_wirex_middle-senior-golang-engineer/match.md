@@ -3,22 +3,20 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Strong Go backend and production reliability fit for fintech services, with gaps in explicitly evidenced blockchain and smart-contract work.
+Strong Go and backend match with recent Go ownership, event-driven systems, APIs, cloud infrastructure, and payments-related experience.
 
 ## Why it matches
 
-- Go
-- backend APIs
-- event-driven systems
-- AWS
-- reliability
+- Go backend work
+- event-driven architecture
+- AWS and Kubernetes
+- API and messaging systems
+- fintech and payment integrations
 
 ## Gaps
 
-- smart contracts
-- EVM integrations
-- cross-chain workflows
+- Specific Go framework and blockchain requirements are not fully evidenced
 
 ## Concerns
 
-- specialized blockchain/payment scope
+- Middle/senior leveling and domain-specific compliance expectations need confirmation

@@ -3,15 +3,20 @@
 **Score:** 94/100  
 **Recommendation:** Strong Match
 
-Excellent match for first backend hire building a Go AI orchestration platform, with proven Go ownership, resilient integrations, async pipelines, AWS, and production reliability.
+Excellent fit for a senior Go AI-platform backend role through recent automation, resilient integrations, APIs, queues, AWS, and reliability work.
 
 ## Why it matches
 
-- Go backend ownership and scalable API design
-- Retries, idempotency, messaging, observability, and production debugging
-- AWS, Docker, CI/CD, event-driven systems, billing-adjacent automation
+- Go
+- AI and automation systems
+- retries and graceful recovery
+- AWS and Kubernetes
+- observability and production ownership
 
 ## Gaps
 
-- Generative media pipelines and paid-acquisition unit economics are not evidenced
-- gRPC and specific VictoriaMetrics/Grafana/Sentry experience are not confirmed
+- Generative-media pipelines and exact billing implementation depth are not explicitly evidenced
+
+## Concerns
+
+- The role's early-stage product and long-running media pipeline scope require confirmation

@@ -3,20 +3,20 @@
 **Score:** 76/100  
 **Recommendation:** Match
 
-Good technical-lead and PHP fit with e-commerce and architecture experience; Magento 2 specialization is unproven.
+Good technical-lead and PHP fit with strong architecture, backend, delivery, and team leadership evidence; Magento-specific depth is uncertain.
 
 ## Why it matches
 
-- PHP
-- e-commerce
-- leadership
-- architecture
-- performance
+- Technical leadership
+- PHP backend
+- system design
+- AWS and Kubernetes
+- team mentoring and delivery ownership
 
 ## Gaps
 
-- Magento 2 hands-on experience
+- Magento2 experience is not explicitly evidenced
 
 ## Concerns
 
-- Magento expertise may be required
+- Frontend and Magento domain requirements may be material

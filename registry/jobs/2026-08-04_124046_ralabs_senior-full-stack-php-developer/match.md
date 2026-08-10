@@ -1,20 +1,26 @@
 # Match Analysis
 
 **Score:** 84/100  
-**Recommendation:** Match
+**Recommendation:** Strong Match
 
-Ralabs seeks a Senior Full Stack PHP Developer; the role aligns well with the candidate's backend experience and relevant PHP/Go background.
+Strong senior PHP backend fit with Laravel, Symfony, AWS, RabbitMQ, Elasticsearch, CI/CD, and scalable systems experience.
 
 ## Why it matches
 
-- 15+ years of backend engineering across PHP and Go.
-- Experience with APIs, microservices, databases, cloud infrastructure, CI/CD, and production reliability.
-- Strong PHP background including Laravel/Symfony and backend platform ownership.
+- PHP 8+ backend experience
+- Laravel and Symfony
+- RabbitMQ and Elasticsearch
+- AWS and Kubernetes
+- high-availability systems
 
 ## Gaps
 
-- Vue.js is not explicitly evidenced in the candidate profile.
+- Vue.js
+- MongoDB
+- Redis
+- PHPUnit/TDD
+- and Terraform are not fully evidenced
 
 ## Concerns
 
-- Confirm exact stack, seniority expectations, and domain-specific requirements during screening.
+- The posting requires strong frontend and MongoDB experience; English level is recorded inconsistently

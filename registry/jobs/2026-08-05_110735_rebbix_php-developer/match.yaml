@@ -1,22 +1,21 @@
 score: 91
 recommendation: strong_match
-summary: Excellent PHP/Laravel backend and SaaS fit with matching databases, product
-  ownership, and enterprise experience.
+summary: Excellent PHP developer fit supported by extensive production PHP, Laravel,
+  Symfony, databases, APIs, messaging, and reliability experience.
 strengths:
-- PHP
-- Laravel
-- MySQL
-- SaaS
-- backend ownership
-- JavaScript
+- PHP and Laravel
+- Symfony
+- REST APIs
+- MySQL and PostgreSQL
+- RabbitMQ and production troubleshooting
 gaps:
-- Magento 2 depth
+- Vacancy-specific framework versions and domain details are not evidenced
 concerns:
-- some frontend/shop work
+- The role's level and remote or timezone policy need confirmation
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-05T11:13:12Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-10T22:43:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:4c455e1eb4cb15a6e8b3cc1c73b36fc2669ee55d125f679ab160a2269b4fffdf
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

@@ -3,21 +3,20 @@
 **Score:** 91/100  
 **Recommendation:** Strong Match
 
-Strong Laravel/PHP backend fit with RabbitMQ, Redis, distributed systems, observability, architecture, and code review experience.
+Excellent senior PHP fit with extensive Laravel and Symfony experience, scalable services, testing-oriented delivery, and technical leadership.
 
 ## Why it matches
 
-- Laravel/PHP
-- RabbitMQ
-- Redis
-- event-driven systems
-- AWS/Kubernetes
-- reliability and leadership.
+- Senior PHP experience
+- Laravel and Symfony
+- system design
+- performance optimization
+- CI/CD and production reliability
 
 ## Gaps
 
-- Kafka depth and exact product domain are not evidenced.
+- Core-team-specific domain knowledge is not evidenced
 
 ## Concerns
 
-- None material.
+- Exact framework version and onsite or timezone expectations require confirmation
