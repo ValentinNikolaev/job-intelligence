@@ -1,0 +1,35 @@
+schema_version: 2
+id: 55b9cd7d-9a29-4e8a-bb76-f9f2237ed2ed
+title: Full Stack Developer | Traffic7
+company: Boosta
+company_url: https://jobs.dou.ua/companies/boosta/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367644'
+  url: https://jobs.dou.ua/companies/boosta/vacancies/367644/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 11 серпня
+    listing_summary: Привіт! Ми, Boosta — холдингова ІТ-компанія, яка створює, розвиває
+      та інвестує в digital-бізнеси з глобальним потенціалом. Сьогодні з нами співпрацюють
+      понад 700 фахівців з різних куточків світу, а нашими продуктами та сервісами
+      користуються мільйони юзерів.
+published_at: '2026-08-11'
+discovered_at: '2026-08-11T12:16:08Z'
+updated_at: '2026-08-11T12:16:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-11T12:16:08Z'
+analysis_priority: 100
+fingerprint: sha256:f10a3e3cd51393a2224f2a3c1621e3d8d3af7dcd23663c01a0be90dbd817479e
+data_source: dou
+content_source: dou
+company_content_source: dou
