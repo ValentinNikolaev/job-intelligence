@@ -1,0 +1,14 @@
+# Senior Backend Engineer
+
+Posted: 2026-08-10T00:00:00.0000000
+
+## Rejection
+
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
+
+...and traffic that doesn't wait for you to catch up. We need a **backend engineer **who thinks in systems, not just services. You'll own the architecture... ...and founders, fast
+
+~Genuinely hard technical problems at the intersection of AI and scale
+
+~Fully **remote,** full-time...

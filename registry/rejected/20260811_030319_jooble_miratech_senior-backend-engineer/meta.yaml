@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7316856373007614474'
+source_url: https://jooble.org/away/-7316856373007614474?p=1&pos=8&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=165&brelb=15&scr=1973.6233&bscr=1973.6233&aq=-7047798353134943606&elckey=-5288442994557740859
+title: Senior Backend Engineer
+company: Miratech
+location: Remote
+published_at: '2026-08-04T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-04T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-11T03:03:19Z'
+rejected_at: '2026-08-11T03:03:19Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6885235130890706891'
+source_url: https://jooble.org/jdp/6885235130890706891?ckey=remote+golang+backend+engineer&rgn=55180&pos=37&groupId=1106121903&elckey=7550790544944138677&p=1&aq=-6188523972295647998&cid=15922&jobAge=921&brelb=100&bscr=222.89442&scr=222.89442
+title: Sr. Backend Engineer
+company: Putnam Recruiting
+location: Remote
+published_at: '2026-07-03T11:24:40.1024337+00:00'
+rejection_category: stale
+rejection_reason: published_at 2026-07-03T11:24:40.1024337+00:00 is older than 7 days
+updated_at: '2026-08-11T03:03:20Z'
+rejected_at: '2026-08-11T03:03:20Z'

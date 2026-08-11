@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3438289518250209653'
+source_url: https://jooble.org/desc/-3438289518250209653?ckey=remote+golang+backend+engineer&rgn=55180&pos=40&groupId=1106121903&elckey=7550790544944138677&p=1&aq=-6188523972295647998&cid=15922&jobAge=655&brelb=100&bscr=221.29175&scr=221.29175
+title: Backend Integration Engineer
+company: Unknown company
+location: San Francisco, CA
+published_at: '2026-07-14T13:48:02.7570000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-14T13:48:02.7570000 is older than 7 days
+updated_at: '2026-08-11T03:03:20Z'
+rejected_at: '2026-08-11T03:03:20Z'
