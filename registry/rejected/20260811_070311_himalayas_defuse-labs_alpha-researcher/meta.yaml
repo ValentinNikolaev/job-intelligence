@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/defuse-labs/jobs/alpha-researcher
+source_url: https://himalayas.app/companies/defuse-labs/jobs/alpha-researcher
+title: Alpha Researcher
+company: Defuse Labs
+location: Worldwide
+published_at: '2026-08-03T13:24:37Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-03T13:24:37Z is older than 7 days
+updated_at: '2026-08-11T07:03:11Z'
+rejected_at: '2026-08-11T07:03:11Z'
