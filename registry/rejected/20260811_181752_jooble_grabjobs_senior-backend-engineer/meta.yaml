@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7089765703201893962'
+source_url: https://jooble.org/away/-7089765703201893962?p=1&pos=46&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=108&brelb=10&scr=2141.1475&bscr=2141.1475&aq=-9121362381062683965&elckey=3501291552025011559
+title: Senior Backend Engineer
+company: GrabJobs
+location: United States
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-11T18:17:52Z'
+rejected_at: '2026-08-11T18:17:52Z'
