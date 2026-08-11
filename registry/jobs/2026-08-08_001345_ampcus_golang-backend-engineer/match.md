@@ -1,21 +1,23 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 20/100  
+**Recommendation:** Not Match
 
-Go backend, scalability, and systems engineering are well aligned; McLean, Virginia location may be a practical blocker.
+US location conflict
 
 ## Why it matches
 
-- Go
-- backend architecture
-- scalability
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- U.S. location/work authorization
-- employer-specific tooling
+- Location compatibility
 
 ## Concerns
 
-- Location is listed in the U.S.
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- US location conflict

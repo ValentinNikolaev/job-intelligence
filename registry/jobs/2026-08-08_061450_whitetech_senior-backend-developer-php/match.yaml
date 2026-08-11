@@ -1,22 +1,18 @@
-score: 88
+score: 90
 recommendation: strong_match
-summary: Excellent PHP backend and fintech-adjacent fit with Symfony, APIs, PostgreSQL,
-  microservices, Kubernetes, testing, and high-scale reliability experience.
+summary: PHP backend expertise, Laravel and Symfony experience, and senior production
+  ownership are a close fit.
 strengths:
-- PHP and Symfony/Laravel background
-- Fintech and payment-system experience
-- PostgreSQL and query optimization
-- Microservices, Kubernetes, Docker, monitoring
-- Testing, reliability, and architecture leadership
+- PHP and backend development
+- Laravel/Symfony and system design
 gaps:
-- No explicit Jenkins or Event Sourcing delivery evidence
-- CQRS/DDD depth is not fully detailed in the profile
+- Exact product and team context is not documented
 concerns:
-- Very broad senior requirements should be narrowed during interview
+- Remote and location conditions need confirmation
 hard_rejection: false
-hard_rejection_reason: ''
-analyzed_at: '2026-08-10T15:08:30Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+hard_rejection_reason: null
+analyzed_at: '2026-08-11T04:49:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:4f0dec8a2b50c9bb317f66a47298a857855b196de2115046688b4014fa5b19c1
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

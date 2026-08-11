@@ -207,6 +207,36 @@ class CliTests(unittest.TestCase):
             self.assertEqual(100, meta["analysis_priority"])
             self.assertEqual("manual", meta["sources"][0]["source"])
 
+    def test_add_url_publishes_loaded_vacancy(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            registry_root = Path(temporary) / "registry"
+            job = NormalizedJob(
+                source="manual",
+                source_job_id="lever-42",
+                source_url="https://jobs.eu.lever.co/example/lever-42",
+                title="Backend Engineer",
+                company="Example",
+                description="Build APIs.",
+                analysis_priority=100,
+            )
+            output = StringIO()
+            with patch("jobintel.cli.load_job_url", return_value=job) as loader, redirect_stdout(output):
+                exit_code = main(
+                    [
+                        "add-url",
+                        "https://jobs.eu.lever.co/example/lever-42",
+                        "--registry",
+                        str(registry_root),
+                    ]
+                )
+
+            self.assertEqual(0, exit_code)
+            loader.assert_called_once_with("https://jobs.eu.lever.co/example/lever-42")
+            self.assertIn("URL job created", output.getvalue())
+            meta_path = next((registry_root / "jobs").glob("*/meta.yaml"))
+            meta = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+            self.assertEqual(100, meta["analysis_priority"])
+
     def test_collector_limit_is_per_source(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

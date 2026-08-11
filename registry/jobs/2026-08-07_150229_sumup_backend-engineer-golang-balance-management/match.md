@@ -1,20 +1,23 @@
 # Match Analysis
 
-**Score:** 88/100  
-**Recommendation:** Strong Match
+**Score:** 22/100  
+**Recommendation:** Not Match
 
-Very strong Go backend match with fintech-adjacent payment, eventing, and reliability experience.
+Non-remote Berlin conflict
 
 ## Why it matches
 
-- Recent production Go ownership
-- Fintech payment and event-driven background
-- Performance observability and fault tolerance
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- Balance-management domain is not evidenced
+- Location compatibility
 
 ## Concerns
 
-- Confirm Berlin expectations
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- Non-remote Berlin conflict

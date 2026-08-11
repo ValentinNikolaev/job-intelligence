@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 73/100  
 **Recommendation:** Match
 
-Platform engineering experience across Kubernetes, CI/CD, AWS, observability, and service reliability is strong.
+Kubernetes, AWS, CI/CD and operational troubleshooting align with platform engineering responsibilities.
 
 ## Why it matches
 
-- Kubernetes, Helm, ArgoCD, GitHub Actions
-- AWS and microservices
-- Production incident response
-- Technical leadership
+- Kubernetes and AWS
+- CI/CD and production reliability
 
 ## Gaps
 
-- Exact platform stack and internal developer-platform scope are not specified.
+- Dedicated platform-engineering tenure and tooling depth are unclear
 
 ## Concerns
 
-- Consulting delivery may require broader tooling than documented.
+- SRE/DevOps-heavy scope may reduce fit versus software engineering

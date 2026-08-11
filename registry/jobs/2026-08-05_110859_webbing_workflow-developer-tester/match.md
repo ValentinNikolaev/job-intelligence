@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 65/100  
-**Recommendation:** Match
+**Score:** 62/100  
+**Recommendation:** Possible Match
 
-Backend integrations, automation, testing, and operational troubleshooting provide a reasonable foundation for workflow development and testing.
+Automation, integrations and testing experience are relevant, but the workflow-testing specialization is only partly evidenced.
 
 ## Why it matches
 
-- Automation and integration platforms
-- Backend APIs and production troubleshooting
-- Reliability, monitoring, and CI/CD
+- Automation and integration work
+- testing and reliability practices
 
 ## Gaps
 
-- Dedicated workflow-platform and formal test-automation depth is not explicit.
+- Dedicated workflow developer/tester tooling is not documented
 
 ## Concerns
 
-- Role may emphasize testing tools or domain workflows not listed in the profile.
+- Role may emphasize platform-specific testing more than backend engineering

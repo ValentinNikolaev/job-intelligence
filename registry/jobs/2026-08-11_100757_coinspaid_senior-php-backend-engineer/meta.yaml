@@ -1,0 +1,28 @@
+schema_version: 2
+id: c8dc7f2e-c9cc-4db1-9be6-e247a444cf60
+title: Senior PHP Backend Engineer
+company: Coinspaid
+company_url: https://coinspaid.com/
+location: Remote - European Region
+remote: true
+employment_type: Full-time
+sources:
+- source: manual
+  source_job_id: e888f3b2-9c0c-45af-85a1-45d02a98344f
+  url: https://jobs.eu.lever.co/coinspaid/e888f3b2-9c0c-45af-85a1-45d02a98344f
+  metadata:
+    source_name: Coinspaid Lever careers
+    apply_url: https://jobs.eu.lever.co/coinspaid/e888f3b2-9c0c-45af-85a1-45d02a98344f/apply
+    extraction_notes: Extracted from the official Coinspaid Lever posting on 2026-08-11.
+published_at: null
+discovered_at: '2026-08-11T10:07:57Z'
+updated_at: '2026-08-11T10:07:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-11T10:07:57Z'
+analysis_priority: 100
+fingerprint: sha256:ae6677521cdc423d86d4634eaafd832110500e75bb445d68c9e30a63e4f0e85f
+data_source: manual
+content_source: manual
+company_content_source: manual

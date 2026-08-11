@@ -1,21 +1,23 @@
 # Match Analysis
 
-**Score:** 82/100  
-**Recommendation:** Strong Match
+**Score:** 20/100  
+**Recommendation:** Not Match
 
-Strong backend leadership and Go experience align well with product services; U.S.-only location is the main constraint.
+US location conflict
 
 ## Why it matches
 
-- Go backend
-- technical leadership
-- scalable services
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- Node/Ruby/Python breadth not evidenced
-- U.S. work location
+- Location compatibility
 
 ## Concerns
 
-- Remote eligibility is restricted to the U.S.
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- US location conflict

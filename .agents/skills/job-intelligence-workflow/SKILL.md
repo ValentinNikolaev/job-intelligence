@@ -14,9 +14,11 @@ execution contract for interactive and scheduled launchers; this skill supplies 
 tool sequencing and safety boundaries around that contract.
 
 Before reading vacancy or candidate evidence, researching, or drafting, perform the
-one-time Git preflight from the shared contract. Resolve a behind or diverged branch
-and any unexpected tracked changes in workflow output paths before model-dependent
-work. Preserve unrelated user changes. Do not repeat the fetch during the same run.
+one-time Git preflight from the shared contract. Unless the launcher already supplied
+a clean short `codex/*` worktree, create one with `python run.py worktree <task-name>`
+and continue there. Preserve unrelated user changes in the original checkout. GitHub
+Actions is the only writer to `main`; do not repeat the fetch or push Codex output to
+`main` during the same run.
 
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
 - For analysis, follow `references/analyze.md` and process a sealed batch of up to 15
@@ -46,6 +48,9 @@ current Codex surface, tell the user and do not publish under that profile.
    manual vacancy, read only that selected directory, its configured candidate evidence,
    and `prompts/vacancy-match.md`. In either mode, do not compare vacancies or read
    another vacancy's artifacts.
+   Use `registry/candidate/evidence-index.md` to route evidence reads, then open only
+   the cited primary sections needed to verify selected claims. Do not substitute the
+   index for the configured files used by deterministic hashes.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
 3. Require `$write-cover-letter` from the highest installed version of
    `agent-plugins@valentin-agent-plugins` available in the active task during

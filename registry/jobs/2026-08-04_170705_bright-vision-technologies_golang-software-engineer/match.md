@@ -1,22 +1,20 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong technical match for a Golang backend/infrastructure engineering role. Recent Go ownership, distributed services, CI/CD, Kubernetes, AWS, monitoring, and performance optimization align closely.
+Go backend, distributed systems and reliability fit senior Golang engineering.
 
 ## Why it matches
 
-- Go and backend services
-- AWS/Kubernetes/CI-CD
-- Production performance and reliability
-- Cross-team engineering collaboration
+- Go systems
+- APIs
+- AWS/Kubernetes
 
 ## Gaps
 
-- Exact infrastructure tooling and AI specialization are not evidenced
-- Clarify role scope and client context
+- Generative-AI tooling depth unclear
 
 ## Concerns
 
-- Posting appears aggregated and may have uncertain role details.
+- US timezone needs confirmation

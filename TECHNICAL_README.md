@@ -159,7 +159,9 @@ python run.py ashby
 python run.py greenhouse
 python run.py custom
 python run.py ashby discover https://jobs.ashbyhq.com/satispay/some-job-id
+python run.py add-url https://jobs.eu.lever.co/company/posting-id
 python run.py add-manual --input .codex-work/manual-job/example.yaml
+python run.py worktree "prepare vacancy"
 python run.py all
 python run.py reindex
 python run.py status <job-directory-or-vacancy-id> <status>
@@ -264,6 +266,17 @@ remote: true
 ```text
 python run.py add-manual --input .codex-work/manual-job/priority-co.yaml
 ```
+
+Public Lever postings have a direct deterministic intake path:
+
+```text
+python run.py add-url https://jobs.eu.lever.co/company/posting-id
+```
+
+`add-url` accepts only HTTPS links on `jobs.lever.co` and `jobs.eu.lever.co`, maps them
+to Lever's matching public Postings API host, validates the returned posting ID, and
+stores the vacancy as a priority manual intake. Other providers continue through the
+explicit `add-manual` draft contract.
 
 For a user-supplied URL or pasted vacancy, capture the directory printed by
 `add-manual` and analyze that exact directory with the direct `python run.py analyze
@@ -445,6 +458,18 @@ Deterministic collection and maintenance are handled by the GitHub Actions workf
 model-dependent work live under `prompts/`, and the reusable repo skill lives under
 `.agents/skills/job-intelligence-workflow/`.
 
+GitHub Actions is the only writer to `main`. Interactive and scheduled Codex work uses
+short ignored worktrees on `codex/*` branches:
+
+```text
+python run.py worktree "prepare coinspaid"
+```
+
+The command follows `config/git-workflow.yaml`, enables Windows long-path support,
+fetches `origin/main` once, and prints the clean worktree path and branch. Continue the
+task from that path and push the `codex/*` branch; do not push Codex-authored changes
+directly to `main`.
+
 | Task | Model | Reasoning |
 |---|---|---|
 | Analyze | `luna_low` by default | configured |
@@ -502,12 +527,19 @@ artifact links are repository-relative and missing files are shown as unavailabl
 
 ### Candidate source of truth
 
-The candidate profile is stored in two primary records:
+Candidate reads start from the compact
+[evidence index](registry/candidate/evidence-index.md), which points to the exact
+primary records needed for claim verification:
 
 - [LinkedIn profile registry](registry/candidate/linkedin-profile.md) - detailed career timeline and extended experience.
 - [Backend Engineer CV registry](registry/candidate/backend-engineer-cv.md) - curated positioning, skills, and selected experience.
+- [Career clarifications](registry/candidate/user-confirmed-career-clarifications.md) - direct candidate corrections that override conflicting imported dates or engagement types.
 
-Future CV and cover-letter variants must start from these two records. Treat facts and metrics as evidence-backed only when one of the records supports them; do not invent or silently combine claims. When the records conflict, preserve the conflict for review or ask the candidate instead of guessing. A newer source explicitly supplied by the candidate may amend or supersede these records.
+The index is a routing aid, not a replacement for those sources and not an input to
+the publication hash. Future CV and cover-letter variants must verify selected claims
+against the cited record. Treat facts and metrics as evidence-backed only when a source
+supports them; do not invent or silently combine claims. When records conflict,
+preserve the conflict for review or ask the candidate instead of guessing.
 
 ## Add a collector
 

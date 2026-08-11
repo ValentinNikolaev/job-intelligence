@@ -1,18 +1,17 @@
-score: 82
-recommendation: strong_match
-summary: Strong backend and platform fit for a Berlin full-stack role.
+score: 22
+recommendation: not_match
+summary: Non-remote Berlin conflict
 strengths:
-- PHP and Go microservices APIs and AWS
-- AngularJS and product delivery
-- Reliability observability CI/CD leadership
+- Backend engineering
+- Production systems
 gaps:
-- Recent frontend stack depth is not established
+- Location compatibility
 concerns:
-- Confirm Berlin attendance or relocation expectations
-hard_rejection: false
-hard_rejection_reason: null
-analyzed_at: '2026-08-07T16:25:57Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+- Exact requirements need confirmation
+hard_rejection: true
+hard_rejection_reason: Non-remote Berlin conflict
+analyzed_at: '2026-08-11T01:45:54Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:82221cc9155b2e7bba6b5883118efc52675ad076a3ae045a7e6e65075faab2f8
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

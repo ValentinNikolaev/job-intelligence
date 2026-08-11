@@ -1,21 +1,20 @@
 # Match Analysis
 
-**Score:** 72/100  
+**Score:** 70/100  
 **Recommendation:** Match
 
-Engineering leadership, AWS/Kubernetes operations, CI/CD, reliability, and backend architecture align well with infrastructure engineering management.
+Technical leadership, cloud infrastructure and reliability experience fit, but multidisciplinary management scope is broader.
 
 ## Why it matches
 
 - Technical leadership
-- AWS/Kubernetes and CI/CD
-- Production reliability
-- Backend architecture
+- AWS/Kubernetes and operational improvement
 
 ## Gaps
 
-- Direct infrastructure-domain management scale
+- Formal management of platform
+- IT and security teams is not established
 
 ## Concerns
 
-- People-management scope and domain depth should be verified
+- Berlin hybrid location and strategic vendor/security responsibilities

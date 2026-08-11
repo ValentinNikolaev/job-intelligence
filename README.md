@@ -115,12 +115,16 @@ tasks that need language judgment. The repository keeps the handoff visible.
 
 ## Candidate Evidence
 
-The workflow relies on two candidate records:
+The workflow routes claim checks through a compact index and verifies them against the
+primary records:
 
+- `registry/candidate/evidence-index.md`
 - `registry/candidate/linkedin-profile.md`
 - `registry/candidate/backend-engineer-cv.md`
+- `registry/candidate/user-confirmed-career-clarifications.md`
 
-Those files are the evidence base. Application drafts and match analysis must not
+The index reduces repeated full-profile reads but does not replace the primary files or
+change deterministic publication hashes. Application drafts and match analysis must not
 add experience, metrics, tools, companies, or responsibilities unless the candidate
 records support them. If two records conflict, the workflow preserves the conflict
 for review instead of guessing.
@@ -149,6 +153,8 @@ Copy-Item sources/.env.example sources/.env
 Run collection and maintenance:
 
 ```text
+python run.py worktree "prepare vacancy"
+python run.py add-url https://jobs.eu.lever.co/company/posting-id
 python run.py all
 python scripts/archive_jobs.py rejected --keep-items 50
 python run.py reindex

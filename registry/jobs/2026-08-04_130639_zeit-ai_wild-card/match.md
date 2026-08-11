@@ -1,19 +1,20 @@
 # Match Analysis
 
-**Score:** 66/100  
-**Recommendation:** Possible Match
+**Score:** 67/100  
+**Recommendation:** Match
 
-The candidate has a credible backend and automation spike, but the undefined role and Munich on-site requirement make fit uncertain.
+Broad backend, platform and AI automation experience is relevant to this open-ended role.
 
 ## Why it matches
 
-- Distinctive support automation and event-driven systems experience.
-- Technical ownership and product collaboration.
+- Backend
+- AI automation
+- product delivery
 
 ## Gaps
 
-- No specific role scope or target skill is defined.
+- Concrete scope unspecified
 
 ## Concerns
 
-- Requires in-person Munich presence and unusually strong self-directed positioning.
+- Munich and unspecified profile

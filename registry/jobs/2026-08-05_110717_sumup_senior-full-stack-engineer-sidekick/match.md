@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 72/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-The candidate is strongest in backend systems and can support full-stack product work, though frontend depth is limited.
+Senior backend, automation and product delivery experience fit strongly, with less evidence for frontend depth.
 
 ## Why it matches
 
-- Go/PHP backend and APIs
-- Product ownership and integrations
-- Event-driven systems and reliability
+- Go/PHP backend systems
+- support automation and delivery ownership
 
 ## Gaps
 
-- Limited recent frontend evidence; no explicit Sidekick stack experience.
+- Recent full-stack and frontend depth is not documented
 
 ## Concerns
 
-- Full-stack expectations may require substantial UI delivery.
+- Role's frontend expectations and Berlin setup need confirmation

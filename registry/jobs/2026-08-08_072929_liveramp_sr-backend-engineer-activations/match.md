@@ -1,21 +1,23 @@
 # Match Analysis
 
-**Score:** 74/100  
-**Recommendation:** Match
+**Score:** 20/100  
+**Recommendation:** Not Match
 
-Backend and Go experience fit the engineering scope, but the role emphasizes Java/Scala and U.S. location.
+US location conflict
 
 ## Why it matches
 
-- backend systems
-- Go
-- production reliability
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- Java/Scala
-- activation-platform domain
+- Location compatibility
 
 ## Concerns
 
-- Remote/location eligibility may exclude Italy
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- US location conflict

@@ -16,7 +16,8 @@ skill owns the manual intake orchestration and vacancy isolation.
 Turn one raw/manual vacancy into an analyzed registry entry, and into a prepared
 application package only after an explicit user gateway decision:
 
-- Publish the extracted vacancy with the deterministic `add-manual` command.
+- Publish supported Lever links with deterministic `add-url`; use `add-manual` for
+  pasted text and unsupported URL providers.
 - Analyze only the newly published vacancy when no acceptable match already exists.
 - If and only if the user explicitly asks to prepare the vacancy, prepare the
   application artifacts through `$job-intelligence-workflow`, using
@@ -35,10 +36,13 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    selected `--model-profile`. You cannot switch the current task model from inside
    the repo; if the active task is not using the selected profile, tell the user before
    publishing model-dependent results.
-2. Extract fields from the supplied vacancy text or link, ask only for missing or
-   ambiguous required evidence, write one manual draft under `.codex-work/manual-job/`,
-   and publish it with `python run.py add-manual --input <draft.yaml>`.
-3. Capture the newly published vacancy directory from the `add-manual` command output.
+2. For an HTTPS `jobs.lever.co` or `jobs.eu.lever.co` posting, run
+   `python run.py add-url <URL>`; it reads only the public Lever Postings API and assigns
+   manual intake priority deterministically. For pasted text or another provider,
+   extract fields, ask only for missing or ambiguous required evidence, write one draft
+   under `.codex-work/manual-job/`, and publish it with
+   `python run.py add-manual --input <draft.yaml>`.
+3. Capture the newly published vacancy directory from the `add-url` or `add-manual` output.
    Do not rediscover it through a queue or broad registry scan. From this point, keep
    the workflow scoped to that single vacancy.
 4. If the vacancy has no current `match.yaml`, analyze only this directory. Read its

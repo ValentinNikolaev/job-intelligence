@@ -8,14 +8,18 @@ workflow: it must read this contract and then apply the mode that matches its in
 ## One-time Git preflight
 
 Before reading candidate or vacancy evidence, browsing, or producing model-dependent
-drafts, inspect the repository once:
+drafts, establish one isolated writer:
 
-1. Run `git status --short` and identify any existing tracked changes.
-2. Run `git fetch origin`, identify the current branch and its upstream, and compare
-   `HEAD` with that upstream using `git rev-list --left-right --count`.
-3. If the branch is behind or diverged, integrate the upstream safely before generating
-   artifacts. If tracked changes overlap workflow output paths, resolve ownership first.
-   Preserve unrelated user work.
+1. If the launcher did not already provide a clean short `codex/*` worktree, run
+   `python run.py worktree <task-name>` and continue from the printed path. The command
+   performs the run's only `git fetch origin main`, enables `core.longpaths`, and bases
+   the new branch on `origin/main` according to `config/git-workflow.yaml`.
+2. In that worktree, run `git status --short` and confirm that only this task owns its
+   changes. Preserve unrelated user work in the original checkout; never copy it
+   wholesale or write Codex output directly to `main`.
+3. If the launcher already supplied an isolated worktree, inspect its branch, upstream,
+   status, and `git rev-list --left-right --count` once. Resolve any divergence before
+   generating artifacts.
 
 If sandbox or ACL restrictions make readable tracked directories appear deleted, rerun
 the read-only Git checks with repository access before treating those paths as changes.
@@ -32,8 +36,9 @@ separate user-gated action.
 
 1. Read `AGENTS.md`, `config/codex-workflows.yaml`, this file, and the
    `manual-vacancy-application` skill.
-2. Extract the vacancy into an ignored draft under `.codex-work/manual-job/` and
-   publish it only with `python run.py add-manual --input <draft.yaml>`.
+2. For a supported Lever URL, publish directly with `python run.py add-url <URL>`.
+   Otherwise extract the vacancy into an ignored draft under `.codex-work/manual-job/`
+   and publish it with `python run.py add-manual --input <draft.yaml>`.
 3. Keep the run scoped to the newly published vacancy. Do not select `all` and do not
    compare it with another vacancy.
 4. If no current match exists, evaluate this vacancy independently, write one result
@@ -123,6 +128,9 @@ before model-dependent publication and report the configuration mismatch.
 ## Evidence and isolation
 
 - Treat `registry/candidate/*.md` as immutable evidence; never invent claims.
+- Start evidence routing from `registry/candidate/evidence-index.md`, then read only the
+  cited primary source sections needed for exact claims. Keep the configured primary
+  files unchanged so deterministic publication hashes remain stable.
 - Read only the selected vacancy, configured candidate sources, and the relevant
   specialized prompt (`vacancy-match.md` or `vacancy-application.md`).
 - Keep all model-produced drafts in `.codex-work/` until deterministic publication.

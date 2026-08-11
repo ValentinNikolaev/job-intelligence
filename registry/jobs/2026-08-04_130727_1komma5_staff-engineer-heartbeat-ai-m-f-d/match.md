@@ -1,20 +1,21 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Senior backend, automation, cloud, and reliability experience is a good match for a staff engineering role in an AI product area.
+Senior backend, platform and AI-adjacent experience transfer while energy and staff scope are uncertain.
 
 ## Why it matches
 
-- Go and PHP backend engineering.
-- Automation platform and AI-assisted workflow experience.
-- Kubernetes, AWS, CI/CD, and production reliability.
+- Go/PHP
+- cloud infrastructure
+- AI automation
 
 ## Gaps
 
-- Specific energy-domain and staff-level cross-team scope are not fully evidenced.
+- Energy domain
+- staff influence
 
 ## Concerns
 
-- Exact AI/ML engineering expectations need clarification.
+- Berlin and frontend/AI requirements

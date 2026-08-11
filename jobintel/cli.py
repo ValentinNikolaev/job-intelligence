@@ -38,6 +38,8 @@ from .matching import (
 from .models import CollectorSummary, NormalizedJob
 from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
 from .registry import Registry
+from .url_intake import load_job_url
+from .worktree import create_codex_worktree
 from .workflows import WorkflowPolicy, load_workflow_policy
 from .triage import should_skip_model, write_triage
 from .usage import CodexUsageLog
@@ -61,7 +63,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'add-url', 'worktree', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', or 'prepare'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -137,6 +139,27 @@ def main(argv: list[str] | None = None) -> int:
     target = args.target.casefold()
     if target == "workflow-lock":
         return _run_workflow_lock(args, project_root)
+    if target == "worktree":
+        if (
+            not args.arguments
+            or args.force
+            or args.profile
+            or args.input
+            or args.workflow
+            or args.model_profile
+            or args.json
+        ):
+            print("Usage: python run.py worktree <task-name>", file=sys.stderr)
+            return 2
+        try:
+            result = create_codex_worktree(project_root, " ".join(args.arguments))
+        except Exception as exc:
+            print(f"Worktree error: {exc}", file=sys.stderr)
+            return 1
+        print(f"Worktree: {result.path}")
+        print(f"Branch: {result.branch}")
+        print(f"Base: {result.base}")
+        return 0
     if args.ci and target != "doctor":
         print("--ci is only valid with doctor", file=sys.stderr)
         return 2
@@ -168,6 +191,29 @@ def main(argv: list[str] | None = None) -> int:
             print(f"Manual job error: {exc}", file=sys.stderr)
             return 1
         print(f"Manual job {result.status}: {result.directory} ({result.vacancy_id})")
+        return 0
+    if target == "add-url":
+        if (
+            len(args.arguments) != 1
+            or args.force
+            or args.profile
+            or args.input
+            or args.workflow
+            or args.model_profile
+            or args.json
+        ):
+            print("Usage: python run.py add-url <lever-vacancy-url>", file=sys.stderr)
+            return 2
+        try:
+            job = load_job_url(args.arguments[0])
+            with workflow_lock(project_root, "manual:add-url", timeout_seconds=args.lock_timeout_seconds):
+                registry = Registry(registry_dir, cache_entries=True)
+                result = registry.upsert(job)
+                registry.regenerate_index()
+        except Exception as exc:
+            print(f"URL intake error: {exc}", file=sys.stderr)
+            return 1
+        print(f"URL job {result.status}: {result.directory} ({result.vacancy_id})")
         return 0
     if target == "status":
         if (
@@ -1072,7 +1118,12 @@ def _run_preparation_locked(
                     f"{policy.prepare_max_age_days}; do not prepare stale vacancies"
                 )
             if not _analysis_is_current(
-                directory, registry_dir, profile_paths, policy, project_root
+                directory,
+                registry_dir,
+                profile_paths,
+                policy,
+                project_root,
+                model_profile=args.model_profile,
             ):
                 raise ValueError(
                     f"{directory.name}: match analysis is missing or stale; "
@@ -1268,7 +1319,12 @@ def _run_pending_locked(
                 if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
                     continue
                 if not _analysis_is_current(
-                    directory, registry_dir, profile_paths, policy, project_root
+                    directory,
+                    registry_dir,
+                    profile_paths,
+                    policy,
+                    project_root,
+                    model_profile=args.model_profile,
                 ):
                     continue
                 score = _optional_match_score(directory)
@@ -1333,13 +1389,15 @@ def _analysis_is_current(
     profile_paths: list[Path],
     policy: WorkflowPolicy,
     project_root: Path,
+    *,
+    model_profile: str | None = None,
 ) -> bool:
     checker = MatchAnalyzer(
         registry_dir,
         profile_paths,
         CodexMatchDraftClient(
             project_root / ".codex-work" / "unused-match.yaml",
-            model=policy.workflow("analyze").model_label,
+            model=policy.resolve_model_profile("analyze", model_profile).model_label,
         ),
     )
     return checker.is_current(directory)

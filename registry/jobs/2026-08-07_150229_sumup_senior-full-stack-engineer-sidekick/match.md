@@ -1,20 +1,23 @@
 # Match Analysis
 
-**Score:** 82/100  
-**Recommendation:** Strong Match
+**Score:** 22/100  
+**Recommendation:** Not Match
 
-Strong backend and platform fit for a Berlin full-stack role.
+Non-remote Berlin conflict
 
 ## Why it matches
 
-- PHP and Go microservices APIs and AWS
-- AngularJS and product delivery
-- Reliability observability CI/CD leadership
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- Recent frontend stack depth is not established
+- Location compatibility
 
 ## Concerns
 
-- Confirm Berlin attendance or relocation expectations
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- Non-remote Berlin conflict

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 114
+Total vacancies: 115
 
-- Found: 101
+- Found: 102
 - Applied: 12
 - Rejected: 1
 
@@ -16,6 +16,7 @@ Total vacancies: 114
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-11 | [Coinspaid](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/) | [Senior PHP Backend Engineer](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/job.md) | Remote - European Region | Manual | Found | 2026-08-11 | [Manual](https://jobs.eu.lever.co/coinspaid/e888f3b2-9c0c-45af-85a1-45d02a98344f) | [Open](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/company.md) | [MD](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/application/cv.md) / [DOCX](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/application/cv.docx) | [MD](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/application/cover-letter.md) / [DOCX](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/application/cover-letter.docx) | [Open](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/application/analysis.md) | [Open](../registry/jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/application/interview-preparation.md) |
 | 2026-08-11 | [GrabJobs](../registry/jobs/2026-08-11_061906_grabjobs_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-11_061906_grabjobs_senior-backend-engineer/job.md) | Toledo, OH | Jooble | Found | 2026-08-11 | [Jooble](https://jooble.org/away/-238769875210230688?p=1&pos=37&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=120&brelb=10&scr=2139.7559&bscr=2139.7559&aq=-8649161770617581138&elckey=3603214129650340104) | — | — | — | — | — |
 | 2026-08-11 | [Kforce Technology Staffing](../registry/jobs/2026-08-11_030320_kforce-technology-staffing_remote-senior-golang-engineer/) | [Remote Senior Golang Engineer](../registry/jobs/2026-08-11_030320_kforce-technology-staffing_remote-senior-golang-engineer/job.md) | Carlsbad, CA | Jooble | Found | 2026-08-11 | [Jooble](https://jooble.org/desc/4836847485717080886?ckey=remote+golang+backend+engineer&rgn=55180&pos=27&groupId=1106121903&elckey=7550790544944138677&p=1&aq=-6188523972295647998&cid=15922&brelb=100&bscr=237.0588&scr=237.0588) | — | — | — | — | — |
 | 2026-08-11 | [Canonical Ltd.](../registry/jobs/2026-08-11_030318_canonical-ltd_software-engineer-python-container-images/) | [Software Engineer - Python - Container Images](../registry/jobs/2026-08-11_030318_canonical-ltd_software-engineer-python-container-images/job.md) | APAC,  EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-08-11 | [Jobicy](https://jobicy.com/jobs/150364-software-engineer-python-container-images) | — | — | — | — | — |
@@ -35,4 +36,3 @@ Total vacancies: 114
 | 2026-08-10 | [Lithos](../registry/jobs/2026-08-10_062733_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-08-10_062733_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-08-10 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
 | 2026-08-09 | [Infingame](../registry/jobs/2026-08-09_200158_infingame_golang-developer/) | [Golang Developer](../registry/jobs/2026-08-09_200158_infingame_golang-developer/job.md) | віддалено | Dou | Found | 2026-08-09 | [Dou](https://jobs.dou.ua/companies/infingame/vacancies/364985/) | [Open](../registry/jobs/2026-08-09_200158_infingame_golang-developer/company.md) | — | — | — | — |
 | 2026-08-09 | [Chainstack](../registry/jobs/2026-08-09_164451_chainstack_product-engineer-data-indexing/) | [Product Engineer (Data Indexing)](../registry/jobs/2026-08-09_164451_chainstack_product-engineer-data-indexing/job.md) | Worldwide | Himalayas | Found | 2026-08-09 | [Himalayas](https://himalayas.app/companies/chainstack/jobs/product-engineer-data-indexing) | — | — | — | — | — |
-| 2026-08-09 | [Honeytech](../registry/jobs/2026-08-09_164448_honeytech_senior-software-engineer-back-end-full-stack/) | [Senior Software Engineer (Back End / Full Stack)](../registry/jobs/2026-08-09_164448_honeytech_senior-software-engineer-back-end-full-stack/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-08-09 | [Dou](https://jobs.dou.ua/companies/honeytech/vacancies/355101/) | [Open](../registry/jobs/2026-08-09_164448_honeytech_senior-software-engineer-back-end-full-stack/company.md) | — | — | — | — |

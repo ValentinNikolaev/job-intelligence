@@ -5,13 +5,24 @@
 - Never add or restore calls from project code to the OpenAI Platform API or an OpenAI-compatible model endpoint.
 - Never add the OpenAI SDK, `OPENAI_API_KEY`, requests to `api.openai.com`, Responses API payloads, Chat Completions payloads, or a proxy whose purpose is to call an OpenAI model for this project.
 - Run model-dependent work inside an interactive or scheduled Codex task. Passing a Codex-produced local draft to deterministic project code for validation and publication is allowed.
-- External vacancy-source APIs such as Adzuna, Jooble, Ashby, Arbeitnow, Himalayas, and Jobicy remain allowed.
+- External vacancy-source APIs such as Adzuna, Jooble, Ashby, Arbeitnow, Himalayas,
+  Jobicy, and the public Lever Postings API remain allowed.
 - If requested functionality cannot be implemented without project code calling the OpenAI Platform API, stop before implementing it and tell the user exactly why Codex execution, deterministic local code, or an allowed external source cannot satisfy the requirement.
 - Do not silently weaken this rule for tests, prototypes, fallbacks, optional integrations, or environment-specific code.
 
 ## Codex workflow models
 
 Treat `config/codex-workflows.yaml` as the project model-routing policy. The file is advisory because a repository cannot switch the model of its current Codex task. Select the configured model and reasoning level when creating each Codex task or Scheduled Task, and pass the matching `--workflow` when publishing; project code derives the only allowed model label from policy.
+
+## Git writer isolation
+
+- GitHub Actions is the only writer to `main`. Codex work must use a clean
+  `codex/*` branch in a short ignored worktree and push that branch, never `main`.
+- Unless the launcher already supplied such a worktree, start with
+  `python run.py worktree <task-name>` and continue from the printed path. This
+  performs the run's single fetch and enables Windows long-path support.
+- Treat `config/git-workflow.yaml` as the deterministic ownership and worktree policy.
+  Do not run another fetch later in the same task.
 
 ## Workflow boundaries
 
@@ -23,6 +34,9 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   batch contract (up to 15 vacancies) when every result is keyed to its input directory,
   evaluated independently, and published only after deterministic validation.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
+- Use `registry/candidate/evidence-index.md` as the routing index, then open only the
+  cited primary candidate sections needed to verify claims. The index does not replace
+  the configured source files used for publication hashes.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
 - Treat user approval as the mandatory preparation gateway: research, adapted CV,
   cover letter, interview preparation, and any later application-process artifacts
@@ -42,7 +56,7 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
 
 - At the end of every successful task that changes repository files, regenerate the vacancy catalog when the workflow requires it, run the relevant checks, and inspect the complete Git diff.
 - Stage every added, modified, renamed, and deleted project file with `git add -A`. Never stage ignored secrets, `.codex-work/`, IDE files, caches, or virtual environments.
-- Every Job Intelligence task must finish by inspecting `git status` and the complete diff, staging every real project change with `git add -A`, committing once, and pushing the current branch to `origin` when the tree has changes. Never leave real project changes unstaged or uncommitted. Preserve only ignored secrets, `.codex-work/`, IDE files, caches, and virtual environments.
+- Every Job Intelligence task must finish by inspecting `git status` and the complete diff, staging every real project change with `git add -A`, committing once, and pushing the current `codex/*` branch to `origin` when the tree has changes. Never push Codex-authored work directly to `main`. Never leave real project changes unstaged or uncommitted. Preserve only ignored secrets, `.codex-work/`, IDE files, caches, and virtual environments.
 - Commit the complete task as the final repository mutation with a concise message, then push the current branch to `origin`.
 - For Codex-authored commits, derive the subject from the final staged diff and write a
   natural, specific imperative sentence that names the actual outcome. Include useful

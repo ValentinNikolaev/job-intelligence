@@ -1,22 +1,19 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Strong Match
+**Score:** 74/100  
+**Recommendation:** Match
 
-Strong fit for an engineering manager role in a messaging and automation SaaS company. The candidate has recent Go automation ownership, prior technical leadership, mentoring, delivery planning, and production reliability experience.
+Technical leadership, team management and backend delivery align, with uncertainty around recent formal people-management scope.
 
 ## Why it matches
 
-- Go/backend and distributed systems
-- Messaging/support automation domain
-- Technical leadership, planning, mentoring
-- Observability and reliability
+- Managed 10 developers
+- technical leadership and hiring interviews
 
 ## Gaps
 
-- Formal people-management scope is less explicit than technical leadership
-- Likely need to confirm exact squad stack and German requirements
+- Recent 3–5+ years of formal engineering management is not documented
 
 ## Concerns
 
-- Role may expect sustained people management and product-company management experience.
+- Berlin hybrid presence is an explicit requirement

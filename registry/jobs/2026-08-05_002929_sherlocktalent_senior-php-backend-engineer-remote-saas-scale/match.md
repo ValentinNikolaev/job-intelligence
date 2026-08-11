@@ -1,21 +1,20 @@
 # Match Analysis
 
-**Score:** 92/100  
+**Score:** 86/100  
 **Recommendation:** Strong Match
 
-Direct fit: the candidate has 15+ years of backend experience, deep PHP/Laravel/Symfony expertise, SaaS-scale systems, migrations, performance work, and production reliability.
+Senior PHP backend and SaaS experience align strongly with scalable backend work.
 
 ## Why it matches
 
-- PHP/Laravel/Symfony depth
-- SaaS and scalable backend systems
-- Database and performance optimization
-- Remote delivery and senior ownership
+- PHP backend
+- SaaS APIs
+- production reliability
 
 ## Gaps
 
-- Specific legacy-to-modern migration tools may need confirmation
+- Migration stack unclear
 
 ## Concerns
 
-- The client/company is anonymized, so product and process fit require validation.
+- US timezone needs confirmation

@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 80/100  
-**Recommendation:** Strong Match
+**Score:** 74/100  
+**Recommendation:** Match
 
-Strong match for leading backend/product engineering with automation, distributed systems, and hands-on technical leadership.
+Go backend, leadership and AI automation align, while client-facing pod coordination is less evidenced.
 
 ## Why it matches
 
+- Go
 - technical leadership
-- Go/PHP and event-driven systems
-- product delivery and mentoring
+- AI automation
 
 ## Gaps
 
-- specific AI product stack or people-management expectations
+- Claude Code and client coordination unclear
 
 ## Concerns
 
-- The role may require deeper ML experience than the profile proves.
+- Mandatory Claude Code and client-facing scope

@@ -3,20 +3,17 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent match for a remote backend role centered on production Go services. The profile directly demonstrates Go, APIs, scalable systems, integrations, observability, and operational ownership.
+Remote Go backend work, scalable services and broad production experience closely fit the role.
 
 ## Why it matches
 
-- Recent Go backend ownership
-- Scalable production services and APIs
-- Reliability, retries, monitoring
-- Remote-capable cross-functional delivery
+- Go backend development
+- scalable services and APIs
 
 ## Gaps
 
-- Exact Jobright stack and domain details are sparse
-- Confirm timezone and employment eligibility
+- Company-specific AI product context is not documented
 
 ## Concerns
 
-- Limited vacancy detail makes some stack-specific fit uncertain.
+- US location and timezone expectations need confirmation

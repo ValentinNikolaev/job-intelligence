@@ -1,21 +1,21 @@
 # Match Analysis
 
-**Score:** 73/100  
+**Score:** 79/100  
 **Recommendation:** Match
 
-Good engineering fit through Go, backend systems, automation, APIs, and production reliability, with adjacent AI exposure.
+Go backend, AI automation and production ownership are a strong product-engineer base.
 
 ## Why it matches
 
-- Go backend engineering
-- automation and integrations
-- cloud reliability and delivery
+- Go systems
+- AI automation
+- product ownership
 
 ## Gaps
 
-- hands-on ML model development
-- exact AI product technologies
+- Claude Code and full-stack breadth unclear
 
 ## Concerns
 
-- AI depth may be more application-integration than model engineering.
+- Mandatory Claude Code
+- on-call and availability
