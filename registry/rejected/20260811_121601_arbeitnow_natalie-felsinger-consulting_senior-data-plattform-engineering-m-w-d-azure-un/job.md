@@ -57,4 +57,4 @@ Du wirkst aktiv an der Weiterentwicklung interner Best Practices, Standards und 
 
 - Hybrid Work und Teamevents
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -57,4 +57,4 @@ Kein Anschreiben nötig! Schick uns gerne einfach Sachen, die du gemacht hast, u
 
 Wir freuen uns darauf, mit dir unsere Kanäle von null aufzubauen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

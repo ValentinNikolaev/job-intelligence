@@ -1,0 +1,13 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/block-labs/jobs/technical-project-manager-igaming
+source_url: https://himalayas.app/companies/block-labs/jobs/technical-project-manager-igaming
+title: Technical Project Manager - iGaming
+company: Block Labs
+location: Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Greece, Ireland, Italy,
+  Malta, Montenegro, Portugal, Romania, Serbia, Spain
+published_at: '2026-06-21T05:23:13Z'
+rejection_category: stale
+rejection_reason: published_at 2026-06-21T05:23:13Z is older than 7 days
+updated_at: '2026-08-11T15:02:24Z'
+rejected_at: '2026-08-11T15:02:24Z'

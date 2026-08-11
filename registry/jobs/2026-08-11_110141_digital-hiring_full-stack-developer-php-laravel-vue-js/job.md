@@ -1,4 +1,4 @@
-# Full-Stack Developer PHP (Laravel + Vue.js)
+# Senior Full-Stack Developer PHP (Laravel + Vue.js)
 
 Posted: 2026-08-11
 

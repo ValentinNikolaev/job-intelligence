@@ -1,6 +1,6 @@
 schema_version: 2
 id: 730bf3f8-cd90-491a-9785-bc983d8c3bc4
-title: Full-Stack Developer PHP (Laravel + Vue.js)
+title: Senior Full-Stack Developer PHP (Laravel + Vue.js)
 company: Digital Hiring
 company_url: https://jobs.dou.ua/companies/digital-hiring/vacancies/
 location: віддалено
@@ -26,13 +26,13 @@ sources:
       брендів.'
 published_at: '2026-08-11'
 discovered_at: '2026-08-11T11:01:41Z'
-updated_at: '2026-08-11T11:01:41Z'
+updated_at: '2026-08-11T15:02:19Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-08-11T11:01:41Z'
 analysis_priority: 100
-fingerprint: sha256:f53aa90e3de6162dc520b71d9c0cd4254bb5bf686080c6c27033725744fefa5d
+fingerprint: sha256:359bc570934e10351e15a874b076d42378557d4d0d5133ef8bebde2a1034c955
 data_source: dou
 content_source: dou
 company_content_source: dou

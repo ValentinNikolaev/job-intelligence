@@ -24,7 +24,7 @@ The platform uses **Vue.js on the frontend and Laravel on the backend**.
 - **5+ years of commercial experience with PHP**
 - **5+ years of commercial experience with Laravel**
 - **1+ year of recent commercial experience with Vue.js**
-- English **B2+**
+- English **B2+ (speak fluently and write clearly)**
 - Hands-on experience with **AI-assisted development tools in daily work**
 - Strong problem-solving and debugging skills
 - Ability to work independently and take ownership of tasks
