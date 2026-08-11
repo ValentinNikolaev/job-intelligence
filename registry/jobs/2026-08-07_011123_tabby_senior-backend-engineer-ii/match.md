@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 79/100  
-**Recommendation:** Match
+**Score:** 61/100  
+**Recommendation:** Possible Match
 
-Strong Go backend and distributed-systems fit for a remote fintech platform, with AI-agent and Python requirements as gaps.
+Strong backend platform and automation background, but the role's required Python depth and AI-agent platform focus are only partially supported.
 
 ## Why it matches
 
-- Go backend and scalable services
-- fintech/payment and high-load context
-- Kubernetes, GCP, Redis, and microservices
+- Recent Go support automation and documented LLM-assisted automation work are relevant to internal AI tooling.
+- Strong evidence of scalable distributed systems, Kubernetes, PostgreSQL, queues, APIs, and reliability.
+- Senior architecture, ownership, and cross-functional collaboration experience align well.
 
 ## Gaps
 
-- Two years of Python and AI-agent framework experience are not evidenced.
+- Two years of Python, AI-agent frameworks, production ML, Redis, and GCP are not established.
 
 ## Concerns
 
-- Confirm contractor arrangement and European work eligibility.
+- The vacancy makes Python and AI-agent platform experience central, so the transition would require validation.

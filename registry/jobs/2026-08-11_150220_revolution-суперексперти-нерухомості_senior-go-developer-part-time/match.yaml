@@ -1,0 +1,20 @@
+score: 86
+recommendation: strong_match
+summary: Strong fit for a part-time Go backend role through recent Go support automation,
+  resilient integrations, and production ownership.
+strengths:
+- Recent hands-on Go backend ownership for support automation and internal services.
+- Strong evidence of APIs, integrations, reliability, retries, monitoring, and scalable
+  event-driven systems.
+- Seniority and technical-lead experience align with an experienced independent contributor.
+gaps:
+- Part-time availability and the vacancy's detailed domain requirements are not documented.
+concerns:
+- Compensation and working-time expectations are not stated.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-11T15:54:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a8bf1df56d8c33f1fbbbfe39b79c784c9990ba7519aa7644fe9ce57da35fab79
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

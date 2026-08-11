@@ -1,16 +1,20 @@
 # Match Analysis
 
-**Score:** 88/100  
-**Recommendation:** Strong Match
+**Score:** 72/100  
+**Recommendation:** Match
 
-Strong PHP/Laravel backend match with relevant APIs, databases, and production engineering; Vue is the main gap.
+Strong PHP/Laravel backend alignment, with meaningful uncertainty around the mandatory Vue.js, Nuxt.js, TypeScript, and frontend depth.
 
 ## Why it matches
 
-- PHP/Laravel and REST APIs
-- MySQL and performance work
-- cloud, CI/CD, and reliable services
+- Extensive documented PHP and Laravel experience with REST APIs, MySQL, testing, and eCommerce-adjacent work.
+- Technical education and experience with OOP, architecture, CI/CD, and production systems.
+- Remote work and senior backend responsibilities are compatible.
 
 ## Gaps
 
-- Recent Vue.js depth is not established.
+- Five years of Vue.js/Nuxt.js, practical TypeScript, and the requested HTML/CSS/SASS depth are not established.
+
+## Concerns
+
+- The role is explicitly full-stack, so frontend capability may be a material selection factor.

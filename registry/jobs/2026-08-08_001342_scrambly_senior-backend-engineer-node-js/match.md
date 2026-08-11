@@ -1,19 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
-**Recommendation:** Match
+**Score:** 58/100  
+**Recommendation:** Possible Match
 
-Senior backend fit; Node.js gap
+Backend architecture, scalability, cloud, Kubernetes, mentoring, and Go strengths transfer, but Node.js/NestJS and React are not documented.
 
 ## Why it matches
 
-- Backend engineering
-- Production systems
+- Senior backend and technical-lead experience with APIs, distributed systems, performance, reliability, and mentoring.
+- Documented AWS, Kubernetes, Helm, RabbitMQ, PostgreSQL, CI/CD, and production operations experience.
+- Go is explicitly documented as a current backend language and the role is remote.
 
 ## Gaps
 
-- Role-specific experience not fully documented
+- Node.js, NestJS, TypeScript, React, and the requested GCP/Terraform stack are not established in the profile.
 
 ## Concerns
 
-- Exact requirements need confirmation
+- The role's central implementation language is Node.js, creating a significant transition risk.
