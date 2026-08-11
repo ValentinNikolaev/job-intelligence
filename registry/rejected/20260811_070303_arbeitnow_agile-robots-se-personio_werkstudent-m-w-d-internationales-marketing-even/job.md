@@ -47,4 +47,4 @@ Zur Verstärkung unseres Marketingteams suchen wir **studentische Unterstützung
 - Ein kollegiales Arbeitsumfeld mit flachen Hierarchien und kurzen Entscheidungswegen
 - Die Möglichkeit, Verantwortung zu übernehmen und eigene Ideen einzubringen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

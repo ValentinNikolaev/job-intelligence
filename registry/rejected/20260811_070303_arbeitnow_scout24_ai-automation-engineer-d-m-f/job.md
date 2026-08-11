@@ -96,4 +96,4 @@ In this role, you will take end-to-end ownership of AI-enabled employee services
 
 We aim to further enhance the diversity of our company and support the professional development of people with disabilities. We have a disability representative who will assist you throughout the application process. If you require this support, please let us know in advance.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

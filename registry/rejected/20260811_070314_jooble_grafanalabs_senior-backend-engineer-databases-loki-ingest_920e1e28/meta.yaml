@@ -1,7 +1,7 @@
 schema_version: 1
 source: jooble
 source_job_id: '5560661140843638491'
-source_url: https://jooble.org/desc/5560661140843638491?ckey=remote+senior+backend+engineer&rgn=55180&pos=36&groupId=2134052230&elckey=8546952512560301656&p=1&aq=-715761876754647843&cid=15922&jobAge=140&brelb=100&bscr=843.52563&scr=843.52563
+source_url: https://jooble.org/desc/5560661140843638491?ckey=remote+senior+backend+engineer&rgn=55180&pos=36&groupId=2134052230&elckey=-3990618405785487156&p=1&aq=-5335490997792615602&cid=15922&jobAge=144&brelb=100&bscr=814.20215&scr=814.20215
 title: Senior Backend Engineer - Databases - Loki Ingest
 company: Grafanalabs
 location: Remote
@@ -9,5 +9,5 @@ published_at: '2026-08-05T07:54:34.7370000'
 rejection_category: company_retry_block
 rejection_reason: 'Grafana is blocked until 2027-02-01: CV rejected; retry allowed
   from February 2027.'
-updated_at: '2026-08-11T07:03:14Z'
+updated_at: '2026-08-11T11:01:50Z'
 rejected_at: '2026-08-11T07:03:14Z'

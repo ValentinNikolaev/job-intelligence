@@ -1,11 +1,11 @@
 # Associate Engineering Manager - Savings & Investments
 
-Posted: 2026-07-16T13:05:42.823+00:00
+Posted: 2026-08-11T08:57:27.926+00:00
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-07-16T13:05:42.823+00:00 is older than 7 days
+- Category: tech_stack
+- Reason: Spring Boot is not a target stack
 
 Associate Engineering Manager - Savings & Investments
 

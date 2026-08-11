@@ -147,4 +147,4 @@ Skip writing cover letters. Tell us about your most passionate personal project,
 
 We welcome applications from people who will contribute to the diversity of our company.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

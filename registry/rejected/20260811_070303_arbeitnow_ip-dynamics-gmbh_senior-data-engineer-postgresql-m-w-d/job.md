@@ -41,4 +41,4 @@ sofort
 - Neben einem VWL-Zuschuss bieten wir dir eine betriebliche Altersvorsorge und eine Kita-Förderung
 - Ob Surfen, Wandern, Mountainbiken oder Golfen – bei unseren vielseitigen Mitarbeiter-Events ist für jeden etwas dabei!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
