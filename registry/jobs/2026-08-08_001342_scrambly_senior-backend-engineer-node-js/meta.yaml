@@ -19,8 +19,6 @@ sources:
     company_logo: https://cdn-images.himalayas.app/hifptoq5r0sd9i02wyee3v9u0j1h
     seniority:
     - Senior
-    parent_categories:
-    - Developer
     timezone_restrictions:
     - -11
     - -10
@@ -64,24 +62,24 @@ sources:
     - Backend-Development
     - Node.Js-Development
     - API-Engineering
+    - Software-Engineering
     - Senior-Node.Js-Engineer
     - Senior-Backend-Engineering
     - Senior-Backend-Development
     - Senior-Node.Js-Developer
     - Senior-TypeScript-Backend-Developer
     - Remote-Senior-Backend-Engineer
-    - Software-Engineer
     expiry_at: '2026-10-06T00:39:34Z'
     discovered_by:
     - query_index: 5
       parameters:
+        sort: recent
         q: backend engineer
         worldwide: 'true'
         seniority: Senior
-        sort: recent
 published_at: '2026-08-07T00:39:35Z'
 discovered_at: '2026-08-08T00:13:42Z'
-updated_at: '2026-08-10T15:03:17Z'
+updated_at: '2026-08-11T00:14:11Z'
 status: found
 status_history:
 - status: found
