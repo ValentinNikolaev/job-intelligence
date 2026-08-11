@@ -108,6 +108,12 @@ tasks that need language judgment. The repository keeps the handoff visible.
    same ownership and vacancy-isolation rules apply when concurrency is unavailable
    and the waves run sequentially.
 
+   The full package is the default. If the user explicitly asks for one document, add
+   `--document cv`, `--document cover-letter`, `--document analysis`, or
+   `--document interview-preparation`; only that draft is required and only its
+   published outputs are replaced. Every generated CV Experience role includes its own
+   evidence-backed `Technologies:` line.
+
 6. **Regenerate the catalog**
 
    The catalog gives a readable overview of vacancies, scores, statuses, links, and
@@ -189,6 +195,9 @@ python run.py triage <job-directory-or-vacancy-id>
 python run.py pending analyze <job-directory-or-vacancy-id> --workflow analyze --pack <pack.yaml>
 python run.py validate-application <job-directory-or-vacancy-id> --input <draft-directory>
 python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare
+# Explicit single-document preparation (the default remains the full package).
+python run.py validate-application <job-directory-or-vacancy-id> --input <draft-directory> --document cv
+python run.py prepare <selector-1> --input .codex-work/application --workflow prepare --document cv
 # Select an allowed model profile when the active Codex task uses a non-default model.
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze --model-profile terra_medium
 python run.py prepare <selector-1> --input .codex-work/application --workflow prepare --model-profile luna_low

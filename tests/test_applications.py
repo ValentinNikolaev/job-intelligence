@@ -150,13 +150,20 @@ class ApplicationTests(unittest.TestCase):
     def tearDown(self) -> None:
         self.temp.cleanup()
 
-    def _generator(self, client: FakeClient, converter: FakeConverter) -> ApplicationGenerator:
+    def _generator(
+        self,
+        client: FakeClient,
+        converter: FakeConverter,
+        *,
+        document: str | None = None,
+    ) -> ApplicationGenerator:
         return ApplicationGenerator(
             self.registry_root,
             [self.profile],
             self.prompt,
             client,
             converter,
+            document=document,
             clock=lambda: self.now,
         )
 
@@ -219,9 +226,11 @@ class ApplicationTests(unittest.TestCase):
             "**Software Developer**  \n"
             "November 2023 - July 2026\n\n"
             "- Built Go services.\n\n"
+            "Technologies: Go | REST APIs\n\n"
             "### airSlate\n\n"
             "**Software Developer**  \n"
-            "February 2021 - August 2023\n"
+            "February 2021 - August 2023\n\n"
+            "Technologies: PHP | Laravel\n"
         )
 
         self._generator(FakeClient(payload), FakeConverter()).generate_directory(self.directory)
@@ -387,7 +396,8 @@ class ApplicationTests(unittest.TestCase):
         payload["cv_markdown"] = (
             "# Candidate\nBackend Engineer\n\n"
             "## Experience\n\n### Current Co\nJuly 2015 - August 2016\n\n"
-            "### New Co\nSeptember 2016 - Present\n\n"
+            "Technologies: Go\n\n"
+            "### New Co\nSeptember 2016 - Present\n\nTechnologies: PHP\n\n"
             "## Education\n\nUniversity, 2004 - 2008\n"
         )
 
@@ -397,6 +407,26 @@ class ApplicationTests(unittest.TestCase):
         )
 
         self.assertIn("University, 2004 - 2008", result["cv_markdown"])
+
+    def test_cv_requires_evidence_backed_technologies_for_each_experience_role(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = (
+            "# Candidate\nBackend Engineer\n\n"
+            "## Experience\n\n"
+            "### Complete Co\n\nTechnologies: PHP | Laravel\n\n"
+            "### Missing Co\n\n- Built services.\n\n"
+            "## Education\n\nUniversity\n"
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "Missing Co"):
+            validate_application_package(payload)
+
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "- Built services.\n\n## Education",
+            "- Built services.\n\n**Technologies**: Go | PostgreSQL\n\n## Education",
+        )
+        result = validate_application_package(payload)
+        self.assertIn("**Technologies**: Go | PostgreSQL", result["cv_markdown"])
 
     def test_cover_letter_accepts_target_role_and_company_context(self) -> None:
         payload = application_payload()
@@ -508,6 +538,24 @@ class ApplicationTests(unittest.TestCase):
         self.assertIn("cv_markdown", result)
         self.assertEqual("codex:gpt-5.5:medium", client.model)
 
+    def test_codex_draft_client_reads_only_explicit_document(self) -> None:
+        draft = self.project / "cv-only-draft"
+        draft.mkdir()
+        (draft / "cv.md").write_text(
+            application_payload()["cv_markdown"], encoding="utf-8"
+        )
+
+        client = CodexApplicationDraftClient(
+            draft,
+            model="codex:gpt-5.6-terra:medium",
+            document="cv",
+        )
+
+        self.assertEqual(
+            {"cv_markdown"},
+            set(client.generate(prompt="", candidate_profile="", vacancy={})),
+        )
+
     def test_validate_application_cli_checks_draft_without_publishing(self) -> None:
         draft = self.project / "application-draft"
         draft.mkdir()
@@ -554,6 +602,93 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(1, result)
         self.assertIn("exceeds 450-word limit", errors.getvalue())
         self.assertFalse((self.directory / "application").exists())
+
+    def test_validate_application_cli_accepts_explicit_cv_only_draft(self) -> None:
+        draft = self.project / "cv-only-draft"
+        draft.mkdir()
+        (draft / "cv.md").write_text(
+            application_payload()["cv_markdown"], encoding="utf-8"
+        )
+
+        result = main(
+            [
+                "validate-application",
+                self.directory.name,
+                "--registry",
+                str(self.registry_root),
+                "--input",
+                str(draft),
+                "--document",
+                "cv",
+            ]
+        )
+
+        self.assertEqual(0, result)
+        self.assertFalse((self.directory / "application").exists())
+
+    def test_partial_cv_publish_preserves_other_documents_and_cache_scope(self) -> None:
+        full_converter = FakeConverter()
+        full = self._generator(FakeClient(), full_converter)
+        full.generate_directory(self.directory)
+        application = self.directory / "application"
+        preserved_names = (
+            "cover-letter.md",
+            "cover-letter.docx",
+            "analysis.md",
+            "interview-preparation.md",
+        )
+        preserved = {name: (application / name).read_bytes() for name in preserved_names}
+
+        payload = {
+            "cv_markdown": (
+                "# Candidate\nBackend Engineer\n\n## Summary\n\n"
+                "Updated backend engineer.\n"
+            )
+        }
+        partial_converter = FakeConverter()
+        partial = self._generator(
+            FakeClient(payload),
+            partial_converter,
+            document="cv",
+        )
+        first = partial.generate_directory(self.directory, force=True)
+        second = partial.generate_directory(self.directory)
+
+        self.assertEqual("prepared", first.status)
+        self.assertEqual("skipped", second.status)
+        self.assertEqual(1, len(partial_converter.calls))
+        self.assertIn("Updated backend engineer", (application / "cv.md").read_text())
+        self.assertEqual(
+            preserved,
+            {name: (application / name).read_bytes() for name in preserved_names},
+        )
+        manifest = yaml.safe_load((application / "manifest.yaml").read_text(encoding="utf-8"))
+        self.assertEqual(
+            {"cv", "cover-letter", "analysis", "interview-preparation"},
+            set(manifest["documents"]),
+        )
+
+    def test_partial_cv_publish_creates_only_cv_outputs_when_no_package_exists(self) -> None:
+        payload = {"cv_markdown": application_payload()["cv_markdown"]}
+        generator = self._generator(
+            FakeClient(payload),
+            FakeConverter(),
+            document="cv",
+        )
+
+        generator.generate_directory(self.directory)
+
+        names = {path.name for path in (self.directory / "application").iterdir()}
+        self.assertEqual(
+            {
+                "cv.md",
+                "cv.docx",
+                "CV_ValentinNikolaev_example_SeniorBackendEngineer.md",
+                "CV_ValentinNikolaev_example_SeniorBackendEngineer.docx",
+                "manifest.yaml",
+            },
+            names,
+        )
 
     def test_resolves_directory_name_id_and_all(self) -> None:
         by_name = resolve_job_directories(self.registry_root, self.directory.name)
@@ -603,6 +738,46 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertEqual(0, exit_code)
         self.assertTrue((self.directory / "application" / "manifest.yaml").is_file())
+
+    def test_prepare_cli_publishes_explicit_cv_only_draft(self) -> None:
+        sources = self.project / "sources"
+        sources.mkdir()
+        draft = self.project / "cv-only-draft"
+        draft.mkdir()
+        (draft / "cv.md").write_text(
+            application_payload()["cv_markdown"], encoding="utf-8"
+        )
+        MatchAnalyzer(
+            self.registry_root,
+            [self.profile],
+            FakeMatchClient(72),
+            clock=lambda: self.now,
+        ).analyze_directory(self.directory)
+
+        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()):
+            exit_code = main(
+                [
+                    "prepare",
+                    self.directory.name,
+                    "--registry",
+                    str(self.registry_root),
+                    "--sources",
+                    str(sources),
+                    "--profile",
+                    str(self.profile),
+                    "--input",
+                    str(draft),
+                    "--workflow",
+                    "prepare",
+                    "--document",
+                    "cv",
+                ]
+            )
+
+        self.assertEqual(0, exit_code)
+        application = self.directory / "application"
+        self.assertTrue((application / "cv.md").is_file())
+        self.assertFalse((application / "cover-letter.md").exists())
 
     def test_prepare_cli_publishes_isolated_batch_drafts(self) -> None:
         sources = self.project / "sources"

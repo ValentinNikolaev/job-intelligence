@@ -1,5 +1,12 @@
 # Prepare one to 10 application packages
 
+The default scope is the complete four-document package. If the user explicitly asks
+for exactly one document, set `<document>` to `cv`, `cover-letter`, `analysis`, or
+`interview-preparation`, run only the required evidence/drafting roles, and pass
+`--document <document>` to pending, validation, and publication. Preserve existing
+unselected artifacts. Never infer partial scope from casual emphasis; without an
+explicit single-document request, use the full-package flow below.
+
 1. Read `prompts/job-intelligence-workflow.md` and `config/codex-workflows.yaml`.
    Confirm the task uses workflow `prepare`, the selected model profile, and that the
    explicit selection does not exceed `prepare_batch_size` (hard maximum: 10).
@@ -7,7 +14,7 @@
    request. Preserve that sealed selection. Do not run `pending prepare all`, query an
    automatic preparation queue, or add another vacancy based on score or similarity.
 3. Verify the complete selection with
-   `python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile>`.
+   `python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile> [--document <document>]`.
    The command prints only vacancies that are analyzed, fresh, score-eligible, and not
    already current. Do not draft a selected vacancy whose path is absent; report it as
    having no pending preparation work.
@@ -16,7 +23,7 @@
    `prompts/vacancy-application.md`. Do not read non-selected vacancies, compare selected
    vacancies, or carry company research, requirements, keywords, or wording from one
    package into another.
-5. Create `.codex-work/application/<vacancy-directory>/parts/`, then run Wave 1 with
+5. For a full package, create `.codex-work/application/<vacancy-directory>/parts/`, then run Wave 1 with
    three independent roles in parallel when subagent slots are available. Route only
    the minimum inputs below and assign exactly one handoff file:
    - research: read this vacancy's `meta.yaml`, `job.md`, optional `company.md`, and only
@@ -32,6 +39,9 @@
      interview probes, then write only `parts/requirements-risks.md`.
    Wave 1 roles must not publish, run deterministic project commands, or write `cv.md`,
    `cover-letter.md`, `analysis.md`, or `interview-preparation.md`.
+   For `--document cv`, run only CV/evidence plus the main CV synthesis. For another
+   single document, run only its necessary evidence/research handoffs and its owning
+   final role; reuse an existing current CV only when that document depends on it.
 6. The research role must use the vacancy posting plus at most two primary company
    sources in one pass. Exceed that budget only for a critical unresolved eligibility
    or company-identity fact and record the reason in its handoff. After all three Wave 1
@@ -62,19 +72,22 @@
    registry, or another vacancy directory. For a batch, each role still owns exactly
    one vacancy-keyed file. Agents may be
    distributed across vacancies, but no agent may combine evidence, research, handoffs,
-   or final artifacts from different vacancies. Complete all four final drafts for each
-   vacancy under its own `.codex-work/application/<vacancy-directory>/`.
+   or final artifacts from different vacancies. Complete all four final drafts for the
+   default scope, or only the explicitly selected draft, under its own
+   `.codex-work/application/<vacancy-directory>/`.
 10. After the main consistency pass, run the vacancy's single combined deterministic
    draft check:
-   `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory>`.
+   `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
    Do this once per selected vacancy after drafting is complete, not after each wave or
    file.
    If it fails, correct only that vacancy and rerun its validator.
 11. After every selected draft passes, publish the verified batch once with
-    `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile>`.
+    `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile> [--document <document>]`.
     The deterministic publisher resolves every selector before publication and reads
     each package only from its matching vacancy-keyed draft directory. A legacy
     single-vacancy call may still pass that vacancy's draft directory directly. If DOCX
     conversion fails, correct only that deterministic issue and rerun publication.
-    Current packages are skipped. Confirm each prepared vacancy has all six application
-    artifacts, the upload-friendly CV copies, and `manifest.yaml`.
+    Current selected documents are skipped. For full scope, confirm all six application
+    artifacts, upload-friendly CV copies, and `manifest.yaml`; for single-document
+    scope, confirm only that document's canonical and derived outputs plus the manifest,
+    and verify other existing artifacts were unchanged.

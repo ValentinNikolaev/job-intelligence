@@ -6,6 +6,13 @@ a complete, vacancy-specific application package. A Codex task may prepare a sea
 batch of up to 10 vacancies, but it must apply this prompt independently to one vacancy
 at a time and store each result under that vacancy's directory.
 
+By default, produce the complete four-document package. If the user explicitly asks
+for exactly one document (`cv`, `cover-letter`, `analysis`, or
+`interview-preparation`), produce only that document, perform only its necessary
+upstream evidence work, and do not regenerate the other three documents. In that mode,
+the selected field is the complete output contract and publication uses the matching
+`--document` value.
+
 ## Isolation and source-of-truth rules
 
 - This package contains exactly one vacancy. Never use knowledge, conclusions,
@@ -45,8 +52,10 @@ at a time and store each result under that vacancy's directory.
 
 ## Required workflow
 
-The main agent owns final synthesis and deterministic publication. Use the two waves
-below when subagent slots are available; otherwise perform the same roles sequentially.
+The main agent owns final synthesis and deterministic publication. For the default full
+package, use the two waves below when subagent slots are available; otherwise perform
+the same roles sequentially. For an explicit single-document request, run only the
+roles and handoffs necessary for that document.
 An agent assigned a named role must execute only that role and write only its assigned
 file. The four-field JSON contract applies to the final assembled package, not to an
 individual role handoff. Do not expose hidden reasoning or a step-by-step chain of
@@ -123,7 +132,10 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
    outcome. Keep bullets concise, credible, results-oriented, and scannable. Build a
    vacancy-specific Skills section with approximately 12–15 supported hard
    skills, ordered by relevance. Use exact vacancy terminology only when the candidate
-   evidence supports it. Do not keyword-stuff.
+   evidence supports it. Under every role in Experience, add a concise
+   `Technologies: ...` line containing only technologies supported for that specific
+   employer or engagement. Never infer a technology across employers, copy the global
+   Skills list into each role, or omit these lines as repetition. Do not keyword-stuff.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support
@@ -172,7 +184,8 @@ when supported. The Experience section must not list roles or employment experie
 than 10 years. The line immediately after the candidate name must be a
 vacancy-aligned professional headline derived from `vacancy.metadata.title`, while
 remaining factually supported by the candidate source documents. This is the final
-canonical tailored CV.
+canonical tailored CV. Every Experience role must include a non-empty,
+evidence-backed `Technologies: ...` line specific to that role.
 
 ### `cover_letter_markdown`
 
@@ -226,10 +239,13 @@ thoughtful questions for the company.
 
 ## Final checks
 
-- All four Markdown fields are required and non-empty.
+- All four Markdown fields are required and non-empty by default. For an explicit
+  single-document request, only the selected field is required and the other fields
+  must not be regenerated.
 - The editable Markdown files are canonical; DOCX conversion happens only after this
   response passes local validation.
 - The deterministic `validate-application` check enforces the contract and word
-  ceilings once all four drafts are complete; do not validate partial drafts.
+  ceilings. Validate the default full package without `--document`; validate an
+  explicitly selected single document with the same `--document` value.
 - Do not mention other vacancies.
 - Do not submit an application or contact the company.

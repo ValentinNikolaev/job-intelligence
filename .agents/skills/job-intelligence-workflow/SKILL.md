@@ -26,8 +26,10 @@ work. Preserve unrelated user changes. Do not repeat the fetch during the same r
   triage, `pending analyze all`, or the scheduled sealed queue.
 - For application packages, follow `references/prepare.md` with workflow `prepare` and
   process one to 10 fresh vacancies explicitly selected by the user through vacancy IDs
-  or registry directories. Use `$write-cover-letter` for every letter and never expand
-  the selection to `all`.
+  or registry directories. Generate the full package by default; when the user
+  explicitly names exactly one document, use the matching `--document` mode. Use
+  `$write-cover-letter` for every selected letter and never expand the selection to
+  `all`.
 - For a user-requested status change, run `python run.py status <vacancy-id-or-directory> <status>`. Never change status without an explicit user request. Preserve the complete history through the command.
 
 Read `config/codex-workflows.yaml` before model-dependent work. Select the workflow's
@@ -47,21 +49,22 @@ current Codex surface, tell the user and do not publish under that profile.
    and `prompts/vacancy-match.md`. In either mode, do not compare vacancies or read
    another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
-3. Require `$write-cover-letter` from the highest installed version of
+3. When a cover letter is selected, require `$write-cover-letter` from the highest installed version of
    `agent-plugins@valentin-agent-plugins` available in the active task during
    preparation. Stop if the active task cannot load it; do not recreate the retired
    inline drafting flow.
 4. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
-5. For preparation, use the two-wave orchestration and exclusive file ownership in
-   `references/prepare.md`. Parallelize independent roles only when subagent slots are
-   available; otherwise preserve the same handoffs and run them sequentially. The main
-   agent alone finalizes the CV, performs the cross-file claim check, validates, and
+5. For default full-package preparation, use the two-wave orchestration and exclusive
+   file ownership in `references/prepare.md`. For an explicit single-document request,
+   run only the roles and handoffs required by that document. The main agent alone
+   finalizes selected drafts, performs the applicable claim check, validates, and
    publishes.
-6. After all four application drafts for a vacancy are complete, run
+6. After the selected drafts for a vacancy are complete, run
    `python run.py validate-application <job-directory-or-vacancy-id> --input
-   <draft-directory>` once as the combined prepublication check. Publish only after it
-   succeeds. If validation fails, fix only its cause and rerun the validator. Do not
-   edit generated cache metadata by hand.
+   <draft-directory> [--document <document>]` once as the prepublication check. Omit
+   `--document` for the default full package. Publish only after it succeeds. If
+   validation fails, fix only its cause and rerun the validator. Do not edit generated
+   cache metadata by hand.
 7. Never submit applications or contact employers.
 
 ## Mandatory final catalog step

@@ -72,6 +72,22 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("at most two primary", prepare)
         self.assertIn("python run.py validate-application <vacancy-directory>", prepare)
 
+    def test_preparation_defaults_to_full_package_and_allows_one_explicit_document(self) -> None:
+        paths = (
+            "AGENTS.md",
+            ".agents/skills/job-intelligence-workflow/SKILL.md",
+            ".agents/skills/job-intelligence-workflow/references/prepare.md",
+            "prompts/vacancy-application.md",
+        )
+        combined = self._flat("\n".join(self._read(path) for path in paths))
+
+        self.assertRegex(combined, r"(?i)(?:full|four-document).{0,80}default")
+        self.assertIn("--document", combined)
+        for document in ("cv", "cover-letter", "analysis", "interview-preparation"):
+            self.assertIn(document, combined)
+        self.assertRegex(combined, r"(?i)preserve.{0,100}(?:other|unselected)")
+        self.assertRegex(combined, r"(?i)every.{0,80}Experience role.{0,120}Technologies")
+
     def test_final_repository_checks_run_once(self) -> None:
         contract = self._read("prompts/job-intelligence-workflow.md")
         workflow_skill = self._read(

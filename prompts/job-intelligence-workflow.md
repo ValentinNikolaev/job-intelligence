@@ -47,22 +47,30 @@ separate user-gated action.
    registry directory, or an unambiguous reference to the manually supplied vacancy.
    Follow the two-wave preparation contract below and keep every handoff and final
    draft keyed to this vacancy under `.codex-work/application/<directory>/`.
-6. Invoke `$write-cover-letter` for `cover-letter.md`; never replace it with inline
+   The default is the full four-document package. If the user explicitly requests
+   exactly one document, generate only it and use the matching `--document` value for
+   pending, validation, and publication.
+6. When a cover letter is selected, invoke `$write-cover-letter` for `cover-letter.md`; never replace it with inline
    letter logic. Never submit the application or contact the employer.
 7. Use the posting plus at most two primary company sources in one research pass. Stop
    when company identity, role context, and one defensible motivation point are
    verified. Exceed the budget only for a critical unresolved eligibility or company-
    identity fact, and record the reason.
-8. Complete all four drafts, then run the single combined deterministic draft check:
+8. Complete all four drafts by default, or only the explicitly selected draft, then run the deterministic draft check:
    `python run.py validate-application <directory> --input
-   .codex-work/application/<directory>`. After it succeeds, publish once with
+   .codex-work/application/<directory> [--document <document>]`. After it succeeds, publish once with
    `python run.py prepare <directory> --input .codex-work/application/<directory>
-   --workflow prepare [--model-profile <profile>]`. After a validation failure,
+   --workflow prepare [--model-profile <profile>] [--document <document>]`. After a validation failure,
    correct only its cause, rerun the validator, and do not publish until it passes.
 
 ### Two-wave preparation
 
 Apply this protocol independently to every explicitly selected vacancy:
+
+Use the full two-wave protocol by default. For an explicit single-document request,
+run only the roles and handoffs necessary for that document; preserve any existing
+unselected artifacts. The cover-letter skill is required only when the selected scope
+includes `cover-letter`.
 
 1. In Wave 1, run independent research, CV/evidence, and requirements/risks roles in
    parallel when subagent slots are available. Research receives only this vacancy's

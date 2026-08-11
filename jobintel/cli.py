@@ -83,6 +83,11 @@ def _parser() -> argparse.ArgumentParser:
         help="configured Codex workflow: analyze or prepare",
     )
     parser.add_argument(
+        "--document",
+        choices=("cv", "cover-letter", "analysis", "interview-preparation"),
+        help="prepare or validate exactly one application document; default: full package",
+    )
+    parser.add_argument(
         "--model-profile",
         help="model profile from config/codex-workflows.yaml; defaults to the workflow profile",
     )
@@ -135,6 +140,12 @@ def main(argv: list[str] | None = None) -> int:
     env_path = (args.env or sources_dir / ".env").resolve()
 
     target = args.target.casefold()
+    if args.document and target not in {"prepare", "pending", "validate-application"}:
+        print(
+            "--document is valid only with prepare, pending prepare, or validate-application",
+            file=sys.stderr,
+        )
+        return 2
     if target == "workflow-lock":
         return _run_workflow_lock(args, project_root)
     if args.ci and target != "doctor":
@@ -252,7 +263,8 @@ def main(argv: list[str] | None = None) -> int:
         ):
             print(
                 "Usage: python run.py validate-application "
-                "<job-directory|vacancy-id> --input <draft-directory>",
+                "<job-directory|vacancy-id> --input <draft-directory> "
+                "[--document cv|cover-letter|analysis|interview-preparation]",
                 file=sys.stderr,
             )
             return 2
@@ -265,8 +277,13 @@ def main(argv: list[str] | None = None) -> int:
                 args.input,
                 directory,
                 selection_size=1,
+                document=args.document,
             )
-            validate_application_draft(directory, draft_directory)
+            validate_application_draft(
+                directory,
+                draft_directory,
+                document=args.document,
+            )
         except Exception as exc:
             print(f"Application draft validation failed: {exc}", file=sys.stderr)
             return 1
@@ -1046,7 +1063,8 @@ def _run_preparation_locked(
         print(
             "Usage: python run.py prepare <job-directory|vacancy-id> "
             "[<job-directory|vacancy-id> ...] --input <draft-root> "
-            "--workflow prepare [--force] (maximum 10 vacancies)",
+            "--workflow prepare [--document cv|cover-letter|analysis|interview-preparation] "
+            "[--force] (maximum 10 vacancies)",
             file=sys.stderr,
         )
         return 2
@@ -1095,13 +1113,19 @@ def _run_preparation_locked(
                 args.input,
                 directory,
                 selection_size=len(directories),
+                document=args.document,
             )
             generator = ApplicationGenerator(
                 registry_dir,
                 profile_paths,
                 project_root / "prompts" / "vacancy-application.md",
-                CodexApplicationDraftClient(draft_directory, model=model_label),
+                CodexApplicationDraftClient(
+                    draft_directory,
+                    model=model_label,
+                    document=args.document,
+                ),
                 HostMarkdownDocxConverter(project_root),
+                document=args.document,
             )
             result = generator.generate_directory(directory, force=args.force)
         except Exception as exc:
@@ -1162,9 +1186,16 @@ def _preparation_draft_directory(
     directory: Path,
     *,
     selection_size: int,
+    document: str | None = None,
 ) -> Path:
     root = input_root.resolve()
-    if selection_size == 1 and (root / "cv.md").is_file():
+    filename = {
+        "cv": "cv.md",
+        "cover-letter": "cover-letter.md",
+        "analysis": "analysis.md",
+        "interview-preparation": "interview-preparation.md",
+    }.get(document, "cv.md")
+    if selection_size == 1 and (root / filename).is_file():
         return root
     return root / directory.name
 
@@ -1206,6 +1237,9 @@ def _run_pending_locked(
         return 2
 
     stage = args.arguments[0]
+    if args.document and stage != "prepare":
+        print("--document is valid only with pending prepare", file=sys.stderr)
+        return 2
     selectors = args.arguments[1:]
     if stage == "analyze" and len(selectors) > 1:
         print("pending analyze accepts at most one selector", file=sys.stderr)
@@ -1281,8 +1315,10 @@ def _run_pending_locked(
                     CodexApplicationDraftClient(
                         project_root / ".codex-work" / "unused-application",
                         model=model_label,
+                        document=args.document,
                     ),
                     HostMarkdownDocxConverter(project_root),
+                    document=args.document,
                 )
             if not checker.is_current(directory):
                 if stage == "analyze":

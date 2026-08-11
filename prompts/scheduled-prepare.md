@@ -21,9 +21,11 @@ selection is required. The manual chat workflow is:
 
 1. Use analyzed vacancy matches from Telegram or the catalog.
 2. The user explicitly provides one to 10 vacancy IDs or registry directories.
+   The full four-document package is the default; the user may instead explicitly name
+   exactly one document.
 3. A Codex task reads `AGENTS.md`, invokes `$job-intelligence-workflow` in preparation
    mode, writes one isolated draft set per vacancy under
    `.codex-work/application/<vacancy-directory>/`, validates each completed draft set
    once with `python run.py validate-application <vacancy-directory> --input
-   .codex-work/application/<vacancy-directory>`, and publishes the verified batch with
-   `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile>`.
+   .codex-work/application/<vacancy-directory> [--document <document>]`, and publishes the verified batch with
+   `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile> [--document <document>]`.

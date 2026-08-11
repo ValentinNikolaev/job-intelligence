@@ -344,8 +344,9 @@ hard-rejection rules, and cache behavior.
 
 ### Vacancy-specific application packages
 
-The Codex skill writes four Markdown drafts for each vacancy in an explicitly selected
-batch of one to 10. `prepare` resolves the entire selection, reads each draft set from
+By default, the Codex skill writes four Markdown drafts for each vacancy in an explicitly selected
+batch of one to 10. An explicit `--document` request writes and publishes only `cv`,
+`cover-letter`, `analysis`, or `interview-preparation`. `prepare` resolves the entire selection, reads each draft set from
 `.codex-work/application/<vacancy-directory>/`, validates it independently, converts the
 final CV and cover letter, and publishes:
 
@@ -385,7 +386,8 @@ worker receives vacancy and company material but not the full candidate CV, whil
 CV/evidence worker receives the vacancy and candidate evidence but does not browse the
 web. Its `evidence-map.md` handoff includes a complete proposed CV draft. The
 coordinating agent reviews the handoffs and is the only writer of the canonical
-`cv.md`. That finalized file is the barrier between the waves.
+`cv.md`. Every Experience role in that CV has an evidence-backed `Technologies:` line.
+That finalized file is the barrier between the waves.
 
 Wave 2 can then run the cover letter, interview preparation, and application analysis
 in parallel. Each worker owns exactly one final output, and the cover-letter worker
@@ -401,8 +403,7 @@ one vacancy directory; research, evidence mappings, risks, or prose from one vac
 must never be reused for another.
 
 After the CV and company research are final, the prompt invokes `$write-cover-letter`
-from `agent-plugins@valentin-agent-plugins` version
-`9.0.0+codex.20260809175723` (upstream commit `5c5b33b`). The skill maps priority
+from the highest installed version of `agent-plugins@valentin-agent-plugins`. The skill maps priority
 requirements to verified evidence, selects two complementary examples, grounds company
 motivation in current sources, and runs a final claim ledger. Only the finished letter
 goes to `cover-letter.md`; research sources and unresolved confirmation items stay in
@@ -413,21 +414,20 @@ Install or refresh the configured personal plugin with
 the bundled skill is loaded. Preparation must stop clearly if `$write-cover-letter` is
 not available in that task.
 
-The publisher validates all four Markdown outputs before converting the final CV and
-cover letter through the installed host-side `md-to-docx` Codex skill. Set
+The publisher validates all four Markdown outputs by default, or only the explicitly
+selected document, before converting a selected CV or cover letter through the
+installed host-side `md-to-docx` Codex skill. Set
 `MD_TO_DOCX_SCRIPT` only if the skill cannot be found under
 `CODEX_HOME/skills/md-to-docx/`. Markdown remains canonical; DOCX is generated only after
 the package passes validation. The short `cv.*` files remain stable internal artifacts,
 and each package also includes upload-friendly CV copies named like
 `CV_ValentinNikolaev_grafana_SeniorBackendEngineerDatabasesLokiIngest.docx`.
-During publication, the Simple.life experience end date in the generated CV is
-normalized to the previous calendar month relative to the run date, for example a
-July run writes `June 2026`.
+Publication preserves the evidence-backed chronology in the validated draft.
 
-`manifest.yaml` records hashes of the candidate sources, vacancy, supplied company
-content, prompt, and model. Unchanged packages are skipped unless `--force` is supplied.
-The prompt contains the required cover-letter plugin version, so a deliberate version
-bump also changes `prompt_version` and invalidates older packages. The source CV and
+`manifest.yaml` records per-document hashes of the candidate sources, vacancy, supplied
+company content, prompt, and model. Unchanged selected documents are skipped unless
+`--force` is supplied. A prompt change updates `prompt_version` and invalidates affected
+documents. The source CV and
 LinkedIn registry are never modified.
 
 Preparation is manual and score-gated before any draft is read or published. The user

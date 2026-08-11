@@ -23,6 +23,12 @@ APPLICATION_FILES = {
     "analysis_markdown": "analysis.md",
     "interview_preparation_markdown": "interview-preparation.md",
 }
+APPLICATION_DOCUMENTS = {
+    "cv": "cv_markdown",
+    "cover-letter": "cover_letter_markdown",
+    "analysis": "analysis_markdown",
+    "interview-preparation": "interview_preparation_markdown",
+}
 
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
@@ -189,11 +195,12 @@ class PreparationSummary:
 class CodexApplicationDraftClient:
     """Load Markdown drafts produced by the active Codex task."""
 
-    def __init__(self, directory: Path, *, model: str) -> None:
+    def __init__(self, directory: Path, *, model: str, document: str | None = None) -> None:
         if not model.strip():
             raise ValueError("a Codex model label is required")
         self.directory = directory.resolve()
         self.model = model.strip()
+        self.document = _normalize_document(document)
 
     def generate(
         self,
@@ -204,7 +211,8 @@ class CodexApplicationDraftClient:
     ) -> Mapping[str, Any]:
         del prompt, candidate_profile, vacancy
         result: dict[str, str] = {}
-        for field, filename in APPLICATION_FILES.items():
+        for field in _selected_fields(self.document):
+            filename = APPLICATION_FILES[field]
             path = self.directory / filename
             try:
                 result[field] = path.read_text(encoding="utf-8")
@@ -217,6 +225,7 @@ def validate_application_draft(
     vacancy_directory: Path,
     draft_directory: Path,
     *,
+    document: str | None = None,
     reference_date: date | datetime | None = None,
 ) -> dict[str, str]:
     """Validate a local Codex draft without publishing or converting it."""
@@ -226,10 +235,12 @@ def validate_application_draft(
     draft = CodexApplicationDraftClient(
         draft_directory,
         model="deterministic-draft-validator",
+        document=document,
     ).generate(prompt="", candidate_profile="", vacancy=vacancy)
     return validate_application_package(
         draft,
         vacancy=vacancy,
+        document=document,
         reference_date=reference_date,
     )
 
@@ -298,6 +309,7 @@ class ApplicationGenerator:
         client: ApplicationClient,
         converter: DocxConverter,
         *,
+        document: str | None = None,
         clock: Callable[[], datetime] | None = None,
     ) -> None:
         self.registry_root = registry_root.resolve()
@@ -306,6 +318,7 @@ class ApplicationGenerator:
         self.client = client
         self.converter = converter
         self.model = str(getattr(client, "model", client.__class__.__name__))
+        self.document = _normalize_document(document)
         self._clock = clock or (lambda: datetime.now(timezone.utc))
 
     def generate_directory(self, directory: Path, *, force: bool = False) -> PreparationResult:
@@ -332,7 +345,12 @@ class ApplicationGenerator:
         }
         application_dir = _application_directory(directory, meta)
         manifest_path = application_dir / "manifest.yaml"
-        if not force and _package_is_current(application_dir, manifest_path, expected_versions):
+        if not force and _package_is_current(
+            application_dir,
+            manifest_path,
+            expected_versions,
+            document=self.document,
+        ):
             return PreparationResult("skipped", vacancy_id, directory.name)
 
         generated = validate_application_package(
@@ -342,45 +360,55 @@ class ApplicationGenerator:
                 vacancy=vacancy,
             ),
             vacancy=vacancy,
+            document=self.document,
             reference_date=generated_at,
         )
         cv_export_files = _cv_export_files(meta)
 
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
         try:
-            for field, filename in APPLICATION_FILES.items():
+            previous_manifest = _read_existing_manifest(manifest_path)
+            if self.document is not None:
+                _copy_existing_application_files(application_dir, staging)
+                _remove_selected_outputs(staging, self.document)
+            for field in _selected_fields(self.document):
+                filename = APPLICATION_FILES[field]
                 _write_text(staging / filename, generated[field])
-            self.converter.convert(staging / "cv.md", staging / "cv.docx")
-            self.converter.convert(
-                staging / "cover-letter.md", staging / "cover-letter.docx"
-            )
-            shutil.copyfile(staging / "cv.md", staging / cv_export_files["markdown"])
-            shutil.copyfile(staging / "cv.docx", staging / cv_export_files["docx"])
+            if self.document in {None, "cv"}:
+                self.converter.convert(staging / "cv.md", staging / "cv.docx")
+                shutil.copyfile(staging / "cv.md", staging / cv_export_files["markdown"])
+                shutil.copyfile(staging / "cv.docx", staging / cv_export_files["docx"])
+            if self.document in {None, "cover-letter"}:
+                self.converter.convert(
+                    staging / "cover-letter.md", staging / "cover-letter.docx"
+                )
+            document_versions = _document_versions_from_manifest(
+                previous_manifest,
+                application_dir,
+            ) if self.document is not None else {}
+            for selected_document in _selected_documents(self.document):
+                document_versions[selected_document] = {
+                    **expected_versions,
+                    "generated_at": _utc_iso(generated_at),
+                }
+            published_files = _staged_application_files(staging)
             manifest = {
                 **expected_versions,
                 "generated_at": _utc_iso(generated_at),
-                "files": [
-                    "cv.md",
-                    "cv.docx",
-                    cv_export_files["markdown"],
-                    cv_export_files["docx"],
-                    "cover-letter.md",
-                    "cover-letter.docx",
-                    "analysis.md",
-                    "interview-preparation.md",
-                ],
+                "documents": document_versions,
+                "files": published_files,
             }
             _write_text(
                 staging / "manifest.yaml",
                 yaml.safe_dump(manifest, allow_unicode=True, sort_keys=False),
             )
             try:
-                _publish_staged_package(staging, application_dir, manifest["files"])
+                _publish_staged_package(staging, application_dir, published_files)
             except PermissionError:
                 if application_dir.name != _DEFAULT_APPLICATION_DIRECTORY:
                     raise
                 application_dir = directory / _FALLBACK_APPLICATION_DIRECTORY
-                _publish_staged_package(staging, application_dir, manifest["files"])
+                _publish_staged_package(staging, application_dir, published_files)
                 _record_application_directory(directory / "meta.yaml", meta, application_dir.name)
         finally:
             shutil.rmtree(staging, ignore_errors=True)
@@ -406,7 +434,10 @@ class ApplicationGenerator:
         }
         application_dir = _application_directory(directory, meta)
         return _package_is_current(
-            application_dir, application_dir / "manifest.yaml", expected_versions
+            application_dir,
+            application_dir / "manifest.yaml",
+            expected_versions,
+            document=self.document,
         )
 
     def _load_candidate_profile(self) -> tuple[str, str]:
@@ -457,9 +488,11 @@ def validate_application_package(
     value: Mapping[str, Any],
     *,
     vacancy: Mapping[str, Any] | None = None,
+    document: str | None = None,
     reference_date: date | datetime | None = None,
 ) -> dict[str, str]:
-    expected = set(APPLICATION_FILES)
+    document = _normalize_document(document)
+    expected = set(_selected_fields(document))
     if set(value) != expected:
         missing = sorted(expected - set(value))
         extra = sorted(set(value) - expected)
@@ -471,7 +504,7 @@ def validate_application_package(
         raise ApplicationError("invalid application fields: " + "; ".join(details))
 
     result = {}
-    for field in APPLICATION_FILES:
+    for field in _selected_fields(document):
         content = value[field]
         if not isinstance(content, str) or not content.strip():
             raise ApplicationError(f"{field} must be non-empty Markdown")
@@ -481,6 +514,8 @@ def validate_application_package(
         result[field] = clean
 
     for field, headings in _REQUIRED_HEADINGS.items():
+        if field not in result:
+            continue
         missing = [heading for heading in headings if f"## {heading}" not in result[field]]
         if missing:
             raise ApplicationError(
@@ -497,10 +532,78 @@ def validate_application_package(
             raise ApplicationError(
                 f"{field} exceeds {word_limit}-word limit ({word_count} words)"
             )
-    _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
-    if vacancy is not None:
-        _validate_cv_headline(result["cv_markdown"], vacancy)
+    if "cv_markdown" in result:
+        _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
+        _validate_cv_role_technologies(result["cv_markdown"])
+        if vacancy is not None:
+            _validate_cv_headline(result["cv_markdown"], vacancy)
     return result
+
+
+def _normalize_document(document: str | None) -> str | None:
+    if document is None:
+        return None
+    normalized = document.strip().casefold()
+    if normalized not in APPLICATION_DOCUMENTS:
+        choices = ", ".join(APPLICATION_DOCUMENTS)
+        raise ValueError(f"unknown application document {document!r}; expected: {choices}")
+    return normalized
+
+
+def _selected_documents(document: str | None) -> tuple[str, ...]:
+    if document is None:
+        return tuple(APPLICATION_DOCUMENTS)
+    return (document,)
+
+
+def _selected_fields(document: str | None) -> tuple[str, ...]:
+    return tuple(APPLICATION_DOCUMENTS[name] for name in _selected_documents(document))
+
+
+def _validate_cv_role_technologies(markdown: str) -> None:
+    roles: list[tuple[str, list[str]]] = []
+    current_title: str | None = None
+    current_lines: list[str] = []
+    in_experience = False
+    for line in markdown.splitlines():
+        heading = re.match(r"^(#{1,6})\s+(.+?)\s*$", line.strip())
+        if heading:
+            level = len(heading.group(1))
+            title = heading.group(2).strip()
+            if level == 2:
+                if in_experience and current_title is not None:
+                    roles.append((current_title, current_lines))
+                if in_experience:
+                    break
+                in_experience = title.casefold() == "experience"
+                current_title = None
+                current_lines = []
+                continue
+            if in_experience and level == 3:
+                if current_title is not None:
+                    roles.append((current_title, current_lines))
+                current_title = title
+                current_lines = []
+                continue
+        if in_experience and current_title is not None:
+            current_lines.append(line)
+    else:
+        if in_experience and current_title is not None:
+            roles.append((current_title, current_lines))
+
+    missing = [
+        title
+        for title, lines in roles
+        if not any(
+            re.match(r"^\s*(?:\*\*)?Technologies(?:\*\*)?\s*:\s*\S", line, re.IGNORECASE)
+            for line in lines
+        )
+    ]
+    if missing:
+        raise ApplicationError(
+            "cv_markdown Experience roles are missing evidence-backed Technologies lines: "
+            + ", ".join(missing)
+        )
 
 
 def _validate_cv_experience_age(
@@ -661,6 +764,8 @@ def _package_is_current(
     application_dir: Path,
     manifest_path: Path,
     expected_versions: Mapping[str, str],
+    *,
+    document: str | None = None,
 ) -> bool:
     if not manifest_path.is_file():
         return False
@@ -668,24 +773,124 @@ def _package_is_current(
         manifest = _read_yaml_mapping(manifest_path, "application manifest")
     except ApplicationError:
         return False
+    document = _normalize_document(document)
+    document_versions = manifest.get("documents")
+    if isinstance(document_versions, dict):
+        for selected_document in _selected_documents(document):
+            versions = document_versions.get(selected_document)
+            if not isinstance(versions, dict) or any(
+                versions.get(key) != value for key, value in expected_versions.items()
+            ):
+                return False
+            if not all(
+                (application_dir / filename).is_file()
+                for filename in _required_document_files(selected_document, expected_versions)
+            ):
+                return False
+        return True
+
     if any(manifest.get(key) != value for key, value in expected_versions.items()):
         return False
-    required = [
-        "cv.md",
-        "cv.docx",
-        "cover-letter.md",
-        "cover-letter.docx",
-        "analysis.md",
-        "interview-preparation.md",
-    ]
-    files = manifest.get("files")
-    if isinstance(files, list):
-        required.extend(
-            filename
-            for filename in files
-            if isinstance(filename, str) and filename.startswith("CV_")
+    return all(
+        (application_dir / filename).is_file()
+        for selected_document in _selected_documents(document)
+        for filename in _required_document_files(selected_document, expected_versions)
+    )
+
+
+def _required_document_files(
+    document: str,
+    versions: Mapping[str, Any],
+) -> tuple[str, ...]:
+    if document == "cv":
+        stem = str(versions.get("cv_export_stem") or "")
+        return ("cv.md", "cv.docx", f"{stem}.md", f"{stem}.docx")
+    if document == "cover-letter":
+        return ("cover-letter.md", "cover-letter.docx")
+    return (APPLICATION_FILES[APPLICATION_DOCUMENTS[document]],)
+
+
+def _read_existing_manifest(path: Path) -> dict[str, Any]:
+    if not path.is_file():
+        return {}
+    try:
+        return _read_yaml_mapping(path, "application manifest")
+    except ApplicationError:
+        return {}
+
+
+def _document_versions_from_manifest(
+    manifest: Mapping[str, Any],
+    application_dir: Path,
+) -> dict[str, dict[str, Any]]:
+    documents = manifest.get("documents")
+    if isinstance(documents, dict):
+        return {
+            str(name): dict(versions)
+            for name, versions in documents.items()
+            if name in APPLICATION_DOCUMENTS and isinstance(versions, dict)
+        }
+    legacy_versions = {
+        key: manifest.get(key)
+        for key in (
+            "profile_version",
+            "vacancy_version",
+            "company_version",
+            "prompt_version",
+            "model",
+            "cv_export_stem",
         )
-    return all((application_dir / filename).is_file() for filename in required)
+    }
+    if any(value is None for value in legacy_versions.values()):
+        return {}
+    generated_at = manifest.get("generated_at")
+    if generated_at is not None:
+        legacy_versions["generated_at"] = generated_at
+    return {
+        document: dict(legacy_versions)
+        for document in APPLICATION_DOCUMENTS
+        if all(
+            (application_dir / filename).is_file()
+            for filename in _required_document_files(document, legacy_versions)
+        )
+    }
+
+
+def _copy_existing_application_files(source: Path, staging: Path) -> None:
+    if not source.is_dir():
+        return
+    allowed = set(APPLICATION_FILES.values()) | {"cv.docx", "cover-letter.docx"}
+    for path in source.iterdir():
+        if not path.is_file():
+            continue
+        if path.name in allowed or (
+            path.name.startswith("CV_") and path.suffix.casefold() in {".md", ".docx"}
+        ):
+            shutil.copy2(path, staging / path.name)
+
+
+def _remove_selected_outputs(staging: Path, document: str) -> None:
+    field = APPLICATION_DOCUMENTS[document]
+    filenames = {APPLICATION_FILES[field]}
+    if document == "cv":
+        filenames.add("cv.docx")
+        filenames.update(
+            path.name
+            for path in staging.iterdir()
+            if path.is_file()
+            and path.name.startswith("CV_")
+            and path.suffix.casefold() in {".md", ".docx"}
+        )
+    elif document == "cover-letter":
+        filenames.add("cover-letter.docx")
+    for filename in filenames:
+        path = staging / filename
+        if path.is_file():
+            path.unlink()
+
+
+def _staged_application_files(staging: Path) -> list[str]:
+    return sorted(path.name for path in staging.iterdir() if path.is_file())
 
 
 def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:

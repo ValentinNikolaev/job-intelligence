@@ -30,6 +30,9 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   (by vacancy ID, registry directory, or equivalent clear identifier). A manually
   supplied vacancy URL or pasted vacancy text authorizes intake and analysis only;
   it does not by itself authorize preparation.
+- Prepare the full four-document application package by default. When the user
+  explicitly requests exactly one document, generate, validate, and publish only that
+  document with `--document`; preserve any other existing application artifacts.
 - For every prepared cover letter, invoke `$write-cover-letter` from the highest
   installed version of `agent-plugins@valentin-agent-plugins` available in the active
   Codex task. If that skill is unavailable, stop before drafting; never fall back to
