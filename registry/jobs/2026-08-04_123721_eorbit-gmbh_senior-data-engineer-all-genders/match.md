@@ -1,23 +1,20 @@
 # Match Analysis
 
-**Score:** 74/100  
+**Score:** 56/100  
 **Recommendation:** Possible Match
 
-Strong event infrastructure and cloud background with a credible data-engineering transfer.
+Strong systems and reliability background offers some overlap, but the role appears centered on data engineering beyond the profile.
 
 ## Why it matches
 
-- Event-driven architecture
-- AWS
-- pipelines
-- observability
+- event-driven architecture and queues
+- cloud infrastructure and observability
+- performance optimization
 
 ## Gaps
 
-- Data warehouse stack
-- Spark
-- analytics domain
+- Dedicated data-platform, warehouse, and ETL experience is not established.
 
 ## Concerns
 
-- Exact tooling not evidenced
+- Location and role specialization require confirmation.

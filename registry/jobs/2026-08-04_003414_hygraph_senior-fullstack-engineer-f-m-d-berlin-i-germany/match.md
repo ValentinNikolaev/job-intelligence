@@ -3,23 +3,18 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Strong senior backend fit through Go, PHP, APIs, distributed systems, reliability, AWS, Kubernetes, and AI-assisted automation; frontend and GraphQL depth are less evidenced.
+Strong Go/PHP backend and cloud fit for a remote EMEA product team, with frontend and Berlin expectations as uncertainties.
 
 ## Why it matches
 
-- Senior backend engineering
-- Go/PHP
-- event-driven systems
-- AWS/Kubernetes
-- APIs
-- observability
-- AI automation
+- Go/PHP backend and APIs
+- microservices, AWS, Kubernetes, and CI/CD
+- technical ownership and product delivery
 
 ## Gaps
 
-- Limited demonstrated React/Vue frontend and GraphQL-specific experience
+- Frontend framework depth and exact full-stack balance are not evidenced.
 
 ## Concerns
 
-- Some frontend/full-stack breadth is expected
-- though the role is remote across Europe
+- Confirm EMEA remote eligibility versus Berlin-based requirements.

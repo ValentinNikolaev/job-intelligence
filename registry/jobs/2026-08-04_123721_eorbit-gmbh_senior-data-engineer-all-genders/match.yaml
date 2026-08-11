@@ -1,22 +1,19 @@
-score: 74
+score: 56
 recommendation: possible_match
-summary: Strong event infrastructure and cloud background with a credible data-engineering
-  transfer.
+summary: Strong systems and reliability background offers some overlap, but the role
+  appears centered on data engineering beyond the profile.
 strengths:
-- Event-driven architecture
-- AWS
-- pipelines
-- observability
+- event-driven architecture and queues
+- cloud infrastructure and observability
+- performance optimization
 gaps:
-- Data warehouse stack
-- Spark
-- analytics domain
+- Dedicated data-platform, warehouse, and ETL experience is not established.
 concerns:
-- Exact tooling not evidenced
+- Location and role specialization require confirmation.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-07T18:03:33Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-11T12:55:19Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:b182be522fb6f0fee759d72894da90429fec2c982ec88e60f3743b5c0d00910b
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

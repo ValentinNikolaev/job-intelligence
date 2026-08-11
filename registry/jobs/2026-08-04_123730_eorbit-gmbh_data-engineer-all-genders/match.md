@@ -1,23 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 58/100  
 **Recommendation:** Possible Match
 
-Event-driven pipelines and AWS experience transfer well to data engineering.
+Event-driven backend, queues, analytics, and cloud experience transfer well, but dedicated data-engineering evidence is limited.
 
 ## Why it matches
 
-- Event systems
-- AWS
-- data pipelines
-- reliability
+- event-driven systems and data pipelines
+- AWS, queues, APIs, and observability
+- performance and reliability engineering
 
 ## Gaps
 
-- Modern data stack
-- analytics engineering
-- German
+- Dedicated data modeling, Spark, and warehouse tooling are not evidenced.
 
 ## Concerns
 
-- Exact platform requirements unclear
+- Leipzig/location expectations need confirmation.

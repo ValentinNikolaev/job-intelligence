@@ -1,17 +1,19 @@
 score: 79
 recommendation: match
-summary: Remote backend automation fit; agent-framework gaps
+summary: Strong Go backend and distributed-systems fit for a remote fintech platform,
+  with AI-agent and Python requirements as gaps.
 strengths:
-- Backend engineering
-- Production systems
+- Go backend and scalable services
+- fintech/payment and high-load context
+- Kubernetes, GCP, Redis, and microservices
 gaps:
-- Role-specific experience not fully documented
+- Two years of Python and AI-agent framework experience are not evidenced.
 concerns:
-- Exact requirements need confirmation
+- Confirm contractor arrangement and European work eligibility.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-11T01:45:54Z'
+analyzed_at: '2026-08-11T12:55:19Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:5bce1975eede306f9dd39b9d2ae9454d084a149a97b9894b6abc222d110f5a88
+job_version: sha256:83f731ef40b8898403f30e84a18edf6dda63967b3ab862870e02cbd70d70eccd
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

@@ -1,0 +1,18 @@
+score: 91
+recommendation: strong_match
+summary: Excellent PHP/Laravel and high-load backend fit with strong API, database,
+  and architecture alignment.
+strengths:
+- PHP/Laravel and MySQL
+- high-load microservices and performance optimization
+- APIs, payments, and production operations
+gaps:
+- Node.js/Socket.io and Vue depth are not directly evidenced.
+concerns: []
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-11T12:55:19Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8709780763f92c28b1d719b502dfab6c96d28397867ccf23e92057d5140efa31
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

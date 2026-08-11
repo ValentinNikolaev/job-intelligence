@@ -1,0 +1,19 @@
+score: 63
+recommendation: possible_match
+summary: Backend fundamentals and Go/PHP experience are relevant, but the posting
+  provides limited detail and the source may imply a location constraint.
+strengths:
+- senior backend ownership
+- Go/PHP APIs and distributed systems
+- AWS, Kubernetes, and reliability
+gaps:
+- Exact stack, domain, and seniority requirements are unclear.
+concerns:
+- Jooble aggregation may not reliably state international remote eligibility.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-11T12:55:19Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0895bf51050e782ffd4bae388e4ce443100f7e8e2c693b62d8fb2bed8f33c0ed
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

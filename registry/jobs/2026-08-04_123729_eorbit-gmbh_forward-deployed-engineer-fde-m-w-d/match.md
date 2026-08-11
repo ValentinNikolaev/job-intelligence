@@ -1,23 +1,20 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Possible Match
+**Score:** 65/100  
+**Recommendation:** Match
 
-Strong systems and customer-facing problem-solving potential for a technical FDE role.
+Backend architecture, integrations, automation, and stakeholder collaboration provide a credible FDE foundation.
 
 ## Why it matches
 
-- Architecture
-- APIs
-- production debugging
-- stakeholder work
+- APIs, integrations, and automation
+- system design and production troubleshooting
+- cross-functional technical leadership
 
 ## Gaps
 
-- Consulting
-- client delivery
-- German
+- Customer-facing FDE delivery and required data/AI tooling are not evidenced.
 
 ## Concerns
 
-- Travel and broad full-stack expectations
+- Leipzig or travel expectations are unclear.
