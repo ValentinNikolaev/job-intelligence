@@ -3,14 +3,14 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 25
+  total_events: 26
   by_status:
     applied:
       count: 15
       last_changed_at: '2026-08-09T19:21:11Z'
     interview:
-      count: 1
-      last_changed_at: '2026-08-04T15:38:38Z'
+      count: 2
+      last_changed_at: '2026-08-11T13:58:12Z'
     rejected:
       count: 9
       last_changed_at: '2026-08-08T08:55:36Z'
@@ -89,6 +89,10 @@ summary:
       reason: User reported HR interview invitation and ongoing email correspondence
         with Solidgate.
       last_changed_at: '2026-08-04T15:38:38Z'
+    user-reported-interview-scheduling-request:
+      count: 1
+      reason: user reported interview scheduling request
+      last_changed_at: '2026-08-11T13:58:12Z'
     user-requested-job-intelligence-workflow-applica:
       count: 1
       reason: user requested Job Intelligence Workflow application status; external
@@ -451,3 +455,16 @@ events:
   actor: codex
   interaction:
     source: llm_assisted_manual
+- changed_at: '2026-08-11T13:58:12Z'
+  vacancy_id: bb67dbbd-ff90-4447-971f-e7e2a7e2b7d2
+  directory: 2026-08-10_194528_whitetech_php-developer-with-ddd
+  company: WhiteTech
+  title: PHP Developer with DDD
+  from_status: found
+  to_status: interview
+  reason: user reported interview scheduling request
+  reason_key: user-reported-interview-scheduling-request
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+  note: Schedule your interview with WhiteTech
