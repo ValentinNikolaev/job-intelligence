@@ -1,20 +1,23 @@
 # Match Analysis
 
-**Score:** 89/100  
-**Recommendation:** Strong Match
+**Score:** 22/100  
+**Recommendation:** Not Match
 
-Excellent backend payments match through PHP/Go, fintech integrations, APIs, and reliability.
+Non-remote Berlin conflict
 
 ## Why it matches
 
-- Stripe PayPal and Skrill integrations
-- Go/PHP APIs queues AWS and databases
-- High-volume transactional reliability
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- SumUp transfer-domain details are not evidenced
+- Location compatibility
 
 ## Concerns
 
-- Verify Berlin work arrangement
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- Non-remote Berlin conflict

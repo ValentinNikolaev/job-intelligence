@@ -3,24 +3,17 @@
 **Score:** 84/100  
 **Recommendation:** Strong Match
 
-Go backend, APIs, event-driven architecture, multi-tenant reliability, and production ownership align closely with Cello's developer-facing infrastructure.
+Go/PHP backend, distributed systems and reliable production delivery provide strong general software-engineering fit.
 
 ## Why it matches
 
-- Go
-- APIs
-- event-driven systems
-- AWS
-- reliability
-- observability
-- microservices
-- technical ownership
+- Go and PHP
+- event-driven systems and cloud infrastructure
 
 ## Gaps
 
-- Specific widget and referral-domain experience
-- possibly deeper frontend exposure
+- Exact product domain and required secondary technologies are unclear
 
 ## Concerns
 
-- Customer-facing product development and Europe time-zone fit should be confirmed.
+- Germany location or language expectations need confirmation

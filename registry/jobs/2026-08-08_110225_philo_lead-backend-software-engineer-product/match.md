@@ -1,21 +1,23 @@
 # Match Analysis
 
-**Score:** 68/100  
-**Recommendation:** Match
+**Score:** 20/100  
+**Recommendation:** Not Match
 
-Strong backend and Go experience with scalable services, but the role requires U.S. work authorization or location.
+US location conflict
 
 ## Why it matches
 
-- Go backend development and event-driven systems
-- Production reliability, APIs, and performance optimization
-- Technical leadership and cross-functional delivery
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- No evidence of U.S. work authorization or residence
-- Limited evidence of Node.js, Ruby, Python, or media-product experience
+- Location compatibility
 
 ## Concerns
 
-- Remote eligibility is restricted to the U.S.
+- Exact requirements need confirmation
+
+## Hard rejection
+
+- US location conflict

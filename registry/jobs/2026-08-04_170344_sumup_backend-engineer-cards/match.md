@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Strong backend, payments, reliability, and financial-systems background fits a card platform engineering role.
+Backend, payments and reliability experience align with card-platform engineering.
 
 ## Why it matches
 
-- PHP and Go backend experience.
-- Payment gateways and fintech systems experience.
-- Production reliability, databases, and distributed systems.
+- Backend services
+- fintech
+- reliability
 
 ## Gaps
 
-- Specific card issuing stack and domain details are not evidenced.
+- Card issuing experience unclear
 
 ## Concerns
 
-- Role-specific language or cloud requirements may need confirmation.
+- Berlin office requirement

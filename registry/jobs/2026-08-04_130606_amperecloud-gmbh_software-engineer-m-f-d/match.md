@@ -1,20 +1,21 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 61/100  
+**Recommendation:** Possible Match
 
-Relevant senior backend engineering experience with Go/PHP, APIs, cloud infrastructure, and reliable production systems.
+Backend APIs, Kubernetes and observability transfer, but Node.js and React are central gaps.
 
 ## Why it matches
 
-- backend software development
-- AWS/Kubernetes and CI/CD
-- performance and observability
+- APIs/microservices
+- Kubernetes
+- Prometheus
 
 ## Gaps
 
-- exact domain stack and language requirements
+- Node.js/React depth
+- energy domain
 
 ## Concerns
 
-- Role level and onsite expectations should be checked.
+- Berlin office and frontend mismatch

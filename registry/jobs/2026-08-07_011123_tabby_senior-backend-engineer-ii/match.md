@@ -1,23 +1,19 @@
 # Match Analysis
 
-**Score:** 74/100  
+**Score:** 79/100  
 **Recommendation:** Match
 
-Strong backend, fintech-adjacent, scale, AWS and reliability background matches a senior platform role.
+Remote backend automation fit; agent-framework gaps
 
 ## Why it matches
 
-- Go/PHP backend
-- distributed systems
-- AWS
-- databases
-- high-scale production
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- Exact language stack
-- payments/BNPL domain and regional eligibility require confirmation.
+- Role-specific experience not fully documented
 
 ## Concerns
 
-- The fit depends on whether Tabby accepts Go/PHP alongside its primary stack.
+- Exact requirements need confirmation

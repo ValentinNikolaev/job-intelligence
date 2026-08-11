@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 68/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Cloud infrastructure, event analytics, observability, and performance work align with several core requirements.
+Cloud infrastructure, event analytics and production reliability provide a solid base for the role.
 
 ## Why it matches
 
-- AWS and Kubernetes operations
-- Event-driven analytics infrastructure
-- Monitoring and reliability
-- Performance optimization
+- AWS/Kubernetes
+- event-driven analytics and observability
 
 ## Gaps
 
-- ClickHouse-specific experience is not evidenced.
+- ClickHouse and product-metrics-specific experience is not documented
 
 ## Concerns
 
-- Role may require deep database internals and cloud-platform specialization.
+- Cloud/SRE emphasis may be farther from primary backend development

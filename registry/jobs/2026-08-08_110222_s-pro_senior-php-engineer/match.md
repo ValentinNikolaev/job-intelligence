@@ -3,19 +3,17 @@
 **Score:** 91/100  
 **Recommendation:** Strong Match
 
-Excellent match for senior PHP modernization work with Laravel, MySQL, AWS, performance, observability, and legacy systems.
+Direct PHP backend alignment
 
 ## Why it matches
 
-- Extensive PHP and Laravel experience
-- MySQL, AWS, Docker-adjacent infrastructure, and production troubleshooting
-- Refactoring, performance optimization, logging, and modernization leadership
+- Backend engineering
+- Production systems
 
 ## Gaps
 
-- Docker and Redis are not explicitly evidenced as hands-on technologies
-- MongoDB and manual testing are not evidenced
+- Role-specific experience not fully documented
 
 ## Concerns
 
-- Employer and fintech context are described at a high level
+- Exact requirements need confirmation

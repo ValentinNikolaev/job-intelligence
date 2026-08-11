@@ -1,19 +1,20 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Technical leadership and backend architecture experience are relevant, with stack and product specifics requiring confirmation.
+Technical leadership and backend delivery support a tech-lead role with stack and location uncertainty.
 
 ## Why it matches
 
-- Technical lead experience managing delivery and architecture.
-- PHP, Go, microservices, AWS, and CI/CD background.
+- Technical leadership
+- system design
+- Go/PHP
 
 ## Gaps
 
-- Exact responsibilities, team size, and required stack are not fully clear from the posting.
+- Role stack unclear
 
 ## Concerns
 
-- Portugal location and employment arrangement need confirmation.
+- Munich onsite expectations

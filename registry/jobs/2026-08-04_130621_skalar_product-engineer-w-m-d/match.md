@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 73/100  
 **Recommendation:** Match
 
-Good match for a hands-on product engineering role through extensive backend, Go/PHP, APIs, cloud, and production ownership.
+Product-minded backend engineering and end-to-end delivery provide a solid product-engineering fit.
 
 ## Why it matches
 
-- Go and PHP backend delivery
-- AWS, Kubernetes, CI/CD
-- system design and reliability
+- Backend APIs
+- product delivery
+- reliability
 
 ## Gaps
 
-- specific frontend or product-stack requirements may be missing
+- Domain and frontend depth unclear
 
 ## Concerns
 
-- Product-engineering scope and location expectations need confirmation.
+- Munich and full-stack expectations

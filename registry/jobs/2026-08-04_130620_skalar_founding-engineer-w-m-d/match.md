@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 82/100  
-**Recommendation:** Strong Match
+**Score:** 76/100  
+**Recommendation:** Match
 
-Strong fit for an early engineering team requiring broad backend ownership, architecture, and rapid product delivery.
+Broad senior engineering, architecture and ownership fit a founding-engineer environment.
 
 ## Why it matches
 
-- founding-stage ownership
-- Go/PHP and distributed systems
-- technical leadership and product collaboration
+- Backend ownership
+- system design
+- startup leadership
 
 ## Gaps
 
-- any required frontend or domain-specific technologies
+- Founding-stage commercial scope unclear
 
 ## Concerns
 
-- No direct evidence for every possible founding-engineer breadth requirement.
+- Munich and broad full-stack expectations

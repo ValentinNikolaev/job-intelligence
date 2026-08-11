@@ -1,27 +1,19 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Strong Go backend, startup ownership, distributed systems, and AI-adjacent experience fit the product, while React/TypeScript and German work authorization are not evidenced.
+Backend and some historical frontend experience are relevant, but Germany-based full-stack requirements add uncertainty.
 
 ## Why it matches
 
-- Go
-- backend architecture
-- microservices
-- AWS
-- Kubernetes
-- startup ownership
-- AI automation
+- Backend engineering
+- APIs and earlier frontend exposure
 
 ## Gaps
 
-- React
-- TypeScript
-- frontend production depth
-- Germany work authorization
+- Current full-stack breadth and Germany work eligibility are not documented
 
 ## Concerns
 
-- Location eligibility is an explicit requirement.
+- On-site or local-language requirements may affect compatibility

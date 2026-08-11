@@ -1,20 +1,22 @@
 # Match Analysis
 
-**Score:** 65/100  
+**Score:** 48/100  
 **Recommendation:** Possible Match
 
-Leadership and automation experience align, but director-level AI leadership and Berlin context are not fully evidenced.
+AI automation and technical leadership are relevant, but director-level AI leadership is not established.
 
 ## Why it matches
 
-- Technical leadership and interviewing experience.
-- Recent automation and AI-assisted workflow delivery.
+- AI automation
+- technical leadership
+- backend platforms
 
 ## Gaps
 
-- No demonstrated director-level organizational leadership.
-- Limited evidence of owning AI engineering teams at scale.
+- ML leadership
+- director scope
+- healthcare
 
 ## Concerns
 
-- Berlin location and senior scope may require relocation and broader management evidence.
+- Berlin office and senior leadership expectations
