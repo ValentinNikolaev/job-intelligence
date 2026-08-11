@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 86/100  
+**Recommendation:** Strong Match
 
-Backend integrations, automation, cloud, and AI-assisted support workflows align well; German and Python are not clearly established.
+Support automation, integrations, APIs, and reliability closely match the candidate's recent work.
 
 ## Why it matches
 
-- Go backend integrations and API design
-- AI automation workflows, Docker/Kubernetes, and reliability
+- Support automation platform ownership
+- Go integrations, messaging, monitoring, and AI-assisted workflows
 
 ## Gaps
 
-- Strong Python evidence
-- Very good German and willingness to travel
+- Specific AI integration tooling is not documented
 
 ## Concerns
 
-- LLM/agent production depth is present but partly indirect.
+- German language or location expectations need confirmation

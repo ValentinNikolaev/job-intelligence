@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 90/100  
+**Score:** 92/100  
 **Recommendation:** Strong Match
 
-Go backend, payment integrations, resilient messaging, and high-scale production systems are a close match.
+Payment integrations, Go/PHP backend systems, and reliable high-volume services are an excellent fit.
 
 ## Why it matches
 
-- Go and API backend engineering
-- Payment gateway experience
-- Retries, observability, and reliability
-- Event-driven systems
+- Payment gateway and fintech-related experience
+- Go, APIs, event-driven systems, and operational reliability
 
 ## Gaps
 
-- Specific SumUp stack and transfer-domain details are not evidenced.
+- SumUp-specific stack and deeper ledger experience are not documented
 
 ## Concerns
 
-- Role may require specialized payments compliance knowledge.
+- Germany location or timezone expectations need confirmation

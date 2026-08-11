@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 72/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Strong alignment with the candidate’s Go backend, support automation, integrations, and AI-assisted workflow experience.
+Workflow automation and AI-assisted support-platform experience align closely with the specialist scope.
 
 ## Why it matches
 
-- Go backend development
-- Support automation
-- API integrations
-- Reliable message pipelines
+- Automation platform design and integration
+- Go, APIs, monitoring, and LLM-assisted workflows
 
 ## Gaps
 
-- Specific low-code automation tools may be unfamiliar
+- Exact workflow-automation tools are not documented
 
 ## Concerns
 
-- The vacancy’s language and location details should be confirmed.
+- German language or Berlin requirements are unclear

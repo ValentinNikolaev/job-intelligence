@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Strong SRE and technical leadership fit with possible formal-management and German-language gaps.
+Strong technical leadership and observability background, with a material SRE-specialization gap.
 
 ## Why it matches
 
-- Kubernetes AWS CI/CD observability and incidents
-- Led engineers and coordinated delivery
-- Distributed systems and operations
+- Technical leadership and team mentoring
+- Monitoring, reliability, Kubernetes, and AWS
 
 ## Gaps
 
-- Formal people-management tenure is partial
-- German fluency is not evidenced
+- Dedicated site-reliability management experience is not established
 
 ## Concerns
 
-- Hybrid Berlin and language expectations
+- Role is SRE-focused rather than primarily software development

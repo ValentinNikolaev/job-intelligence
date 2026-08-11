@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Senior backend engineering role with strong alignment to the candidate's Go, PHP, AWS, scalable services, and automation experience; remote CET-compatible work is a major fit.
+Broad senior backend experience aligns well with production software engineering and distributed systems work.
 
 ## Why it matches
 
 - Go and PHP backend development
-- scalable distributed services
-- AWS and production reliability
-- cross-functional technical ownership
+- Distributed systems, APIs, AWS, and Kubernetes
 
 ## Gaps
 
-- Frontend contribution is not evidenced as a recent focus
+- Exact product-domain experience is not documented
 
 ## Concerns
 
-- Exact technology mix and seniority expectations beyond the summary are not fully specified
+- Germany location or timezone expectations need confirmation

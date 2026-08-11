@@ -1,19 +1,18 @@
-score: 67
+score: 74
 recommendation: match
-summary: Engineering leadership, mentoring, delivery ownership, and technical roadmap
-  experience align, but Berlin presence and recent people-management scope are uncertain.
+summary: Leadership and backend-platform experience fit, though the product and management
+  scope need validation.
 strengths:
-- Technical lead experience and management of 10 developers
-- Architecture, delivery, CI/CD, reliability, and coaching
+- Technical leadership and hiring/interview experience
+- Backend architecture and delivery ownership
 gaps:
-- Recent full employee lifecycle ownership
-- Required Berlin office presence three days weekly
+- Direct senior engineering-management tenure is not fully documented
 concerns:
-- Location is not clearly remote.
+- K4B product-domain requirements are unclear
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-07T16:34:16Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-11T02:48:11Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:e6c4224bf25522b85a82175a0ec4a2a0d43bdbeb10be2c5f836ace9928d40bec
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

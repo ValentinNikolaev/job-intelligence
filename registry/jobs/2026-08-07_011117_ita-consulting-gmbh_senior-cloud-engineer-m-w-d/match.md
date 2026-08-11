@@ -1,26 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
-**Recommendation:** Match
+**Score:** 64/100  
+**Recommendation:** Possible Match
 
-AWS, Kubernetes, CI/CD, monitoring and PHP operations align well with the infrastructure remit.
+Cloud and backend foundations fit, but the SRE-heavy scope and German-context uncertainty reduce fit.
 
 ## Why it matches
 
-- AWS
-- Kubernetes
-- Helm
-- ArgoCD
-- Prometheus
-- PHP operations
+- AWS and Kubernetes experience
+- Production reliability and CI/CD
 
 ## Gaps
 
-- Linux administration
-- networking
-- Terraform/Ansible
-- Java operations and fluent German are not established.
+- Senior cloud-engineering depth is not fully documented
 
 ## Concerns
 
-- On-site Hamburg location and German proficiency may be hard constraints.
+- Role appears closer to SRE than backend development
+- German language or location expectations are unclear

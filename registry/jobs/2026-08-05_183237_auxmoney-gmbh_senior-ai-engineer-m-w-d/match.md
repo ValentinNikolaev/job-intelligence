@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 69/100  
 **Recommendation:** Match
 
-Strong senior backend, AWS, automation, and production reliability background; Python/ML depth and German requirements are material gaps.
+Automation and backend experience support the role, but core ML engineering evidence is limited.
 
 ## Why it matches
 
-- Senior software engineering and scalable services
-- AI-assisted support automation and cloud delivery
+- AI-assisted automation integrations
+- Go, APIs, and production platform engineering
 
 ## Gaps
 
-- Very strong Python and production ML/LLM engineering evidence
-- German language and Germany-based work eligibility
+- Model development, evaluation, and dedicated ML engineering
 
 ## Concerns
 
-- AI product experience is present but not a primary demonstrated specialty.
+- Senior AI scope may require deeper formal ML experience
+- German expectations are unclear

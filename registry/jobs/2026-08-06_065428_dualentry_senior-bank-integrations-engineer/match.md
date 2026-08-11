@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 84/100  
 **Recommendation:** Strong Match
 
-Remote fintech integrations role aligns with the candidate's backend systems, payment and banking integrations, event-driven architecture, and reliability experience.
+Payments and integration engineering are a strong fit for the candidate's backend and fintech-related background.
 
 ## Why it matches
 
-- Bank and payment integrations
-- Go and PHP backend work
-- event-driven systems
-- production reliability
+- Payment gateway and financial-system integration experience
+- Go, PHP, APIs, and reliable production pipelines
 
 ## Gaps
 
-- Specific ERP and accounting-domain experience is not evidenced
+- Specific banking-integration stack is not fully documented
 
 ## Concerns
 
-- Worldwide employment and timezone arrangements are not detailed
+- Exact location and domain requirements need confirmation

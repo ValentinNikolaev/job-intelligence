@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 67/100  
+**Score:** 74/100  
 **Recommendation:** Match
 
-Engineering leadership, mentoring, delivery ownership, and technical roadmap experience align, but Berlin presence and recent people-management scope are uncertain.
+Leadership and backend-platform experience fit, though the product and management scope need validation.
 
 ## Why it matches
 
-- Technical lead experience and management of 10 developers
-- Architecture, delivery, CI/CD, reliability, and coaching
+- Technical leadership and hiring/interview experience
+- Backend architecture and delivery ownership
 
 ## Gaps
 
-- Recent full employee lifecycle ownership
-- Required Berlin office presence three days weekly
+- Direct senior engineering-management tenure is not fully documented
 
 ## Concerns
 
-- Location is not clearly remote.
+- K4B product-domain requirements are unclear

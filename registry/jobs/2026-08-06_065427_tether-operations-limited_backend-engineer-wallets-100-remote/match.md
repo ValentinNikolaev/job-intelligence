@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 83/100  
 **Recommendation:** Strong Match
 
-Fully remote wallet backend work fits the candidate's backend, fintech, payments, event-driven, and blockchain-related experience.
+Remote backend role fits Go, PHP, distributed systems, and cryptocurrency-adjacent experience.
 
 ## Why it matches
 
-- Backend architecture
-- payment and financial systems
-- blockchain-related product experience
-- reliability and integrations
+- Go and production backend systems
+- Cryptocurrency and payment-related domain exposure
 
 ## Gaps
 
-- Specific blockchain languages and wallet infrastructure are not established
+- Wallet-specific implementation experience is not documented
 
 ## Concerns
 
-- Worldwide team timezone and exact stack are unclear
+- Exact blockchain and custody requirements are unclear

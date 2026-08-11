@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 91/100  
 **Recommendation:** Strong Match
 
-Senior backend experience in Go, event-driven systems, AWS, reliability, and payments-related domains aligns well.
+Go, high-volume backend, event-driven systems, AWS, and financial-domain exposure strongly align.
 
 ## Why it matches
 
-- Go backend development
-- Event-driven architecture and queues
-- AWS and production reliability
-- Fintech and payment integrations
+- Go production backend engineering
+- Fintech-related systems, reliability, and distributed architecture
 
 ## Gaps
 
-- Direct balance-management or ledger-domain experience is not explicit.
+- Ledger-specific and Kafka experience is not documented
 
 ## Concerns
 
-- May require deeper domain knowledge in financial balance systems.
+- Germany location or timezone expectations need confirmation

@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 65/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Technical leadership and team direction are relevant, though formal engineering-manager scope, hiring, and Berlin office attendance are uncertain.
+Leadership, planning, and backend delivery experience support the role, with management-scope uncertainty.
 
 ## Why it matches
 
-- Technical lead experience and mentoring
-- Cross-functional planning and engineering quality practices
+- Technical lead experience and team coordination
+- Production backend and delivery ownership
 
 ## Gaps
 
-- Formal hiring/performance-management evidence
-- Required Berlin office presence three days weekly
+- Formal engineering-manager experience is not established
 
 ## Concerns
 
-- Location is not clearly remote.
+- K4B product-domain requirements are unclear

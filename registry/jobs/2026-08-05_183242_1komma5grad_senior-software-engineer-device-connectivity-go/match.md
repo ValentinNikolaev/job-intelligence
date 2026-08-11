@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 82/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Excellent match for Go backend and resilient integrations; the main uncertainty is hands-on device protocols and Berlin lab work.
+Go backend and event-driven architecture fit well, with device-connectivity and IoT domain gaps.
 
 ## Why it matches
 
-- Go backend and API integration
-- Event-driven systems, reliability, monitoring, and CI/CD
+- Go and event-driven systems
+- AWS, reliability, and production integrations
 
 ## Gaps
 
-- Modbus/OCPP/EEbus and IoT gateway experience
-- Berlin lab and hardware-device integration
+- Device connectivity and embedded/IoT experience
 
 ## Concerns
 
-- Role may require regular Berlin presence.
+- German location or language expectations are unclear

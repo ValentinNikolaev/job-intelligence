@@ -1,20 +1,18 @@
-score: 78
+score: 68
 recommendation: match
-summary: Strong SRE and technical leadership fit with possible formal-management and
-  German-language gaps.
+summary: Strong technical leadership and observability background, with a material
+  SRE-specialization gap.
 strengths:
-- Kubernetes AWS CI/CD observability and incidents
-- Led engineers and coordinated delivery
-- Distributed systems and operations
+- Technical leadership and team mentoring
+- Monitoring, reliability, Kubernetes, and AWS
 gaps:
-- Formal people-management tenure is partial
-- German fluency is not evidenced
+- Dedicated site-reliability management experience is not established
 concerns:
-- Hybrid Berlin and language expectations
+- Role is SRE-focused rather than primarily software development
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-07T16:25:57Z'
-profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+analyzed_at: '2026-08-11T02:48:11Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:7e2e56f0f2c404e447ae25f712b14ed9b93f3b2d4c75bc6a4daf219f9e47cbc8
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
