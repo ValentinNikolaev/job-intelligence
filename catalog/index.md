@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 90
+Total vacancies: 92
 
-- Found: 77
+- Found: 79
 - Applied: 12
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 90
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-12 | [Jobskey Consultancy](../registry/jobs/2026-08-12_062901_jobskey-consultancy_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-12_062901_jobskey-consultancy_senior-backend-engineer/job.md) | United States | Jooble | Found | 2026-08-12 | [Jooble](https://jooble.org/away/-2286503836487994556?p=1&pos=6&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=120&brelb=10&scr=2549.2312&bscr=2549.2312&aq=7821151044365806617&elckey=3247460213657553970) | — | — | — | — | — |
+| 2026-08-12 | [GrabJobs](../registry/jobs/2026-08-12_062901_grabjobs_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-12_062901_grabjobs_senior-backend-engineer/job.md) | Philadelphia, PA | Jooble | Found | 2026-08-12 | [Jooble](https://jooble.org/away/-2930638732126614210?p=1&pos=36&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=96&brelb=10&scr=2143.5952&bscr=2143.5952&aq=7821151044365806617&elckey=3247460213657553970) | — | — | — | — | — |
 | 2026-08-12 | [Tabby](../registry/jobs/2026-08-12_001836_tabby_senior-backend-engineer-ii/) | [Senior Backend Engineer II](../registry/jobs/2026-08-12_001836_tabby_senior-backend-engineer-ii/job.md) | Worldwide | Himalayas | Found | 2026-08-12 | [Himalayas](https://himalayas.app/companies/tabby/jobs/senior-backend-engineer-ii-3596154257) | — | — | — | — | — |
 | 2026-08-11 | [GrabJobs](../registry/jobs/2026-08-11_181752_grabjobs_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-11_181752_grabjobs_senior-backend-engineer/job.md) | Houston, TX | Jooble | Found | 2026-08-11 | [Jooble](https://jooble.org/away/3713592655929251595?p=1&pos=44&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=66&brelb=10&scr=2097.7595&bscr=2097.7595&aq=-6858883250806351650&elckey=3141679248215879957) | — | — | — | — | — |
 | 2026-08-11 | [bip.net.ua](../registry/jobs/2026-08-11_181746_bip-net-ua_php-fullstack-developer-vue-js/) | [PHP Fullstack Developer (Vue.js)](../registry/jobs/2026-08-11_181746_bip-net-ua_php-fullstack-developer-vue-js/job.md) | віддалено | Dou | Found | 2026-08-11 | [Dou](https://jobs.dou.ua/companies/bip-buhgalter-idealnogo-pidpriyemtsya/vacancies/369394/) | [Open](../registry/jobs/2026-08-11_181746_bip-net-ua_php-fullstack-developer-vue-js/company.md) | — | — | — | — |
