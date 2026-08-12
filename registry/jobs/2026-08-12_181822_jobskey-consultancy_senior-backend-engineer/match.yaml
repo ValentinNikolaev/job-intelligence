@@ -1,0 +1,27 @@
+score: 68
+recommendation: match
+summary: Candidate evidence matches the Go-oriented senior backend scope through 15+
+  years of backend work, recent Go automation, PHP, APIs, microservices, cloud infrastructure,
+  and production reliability, with material location and requirement uncertainty.
+strengths:
+- Recent experience includes a Go backend platform integrating external services and
+  internal systems.
+- Profile supports API design, microservices, AWS, Kubernetes, CI/CD, database performance,
+  monitoring, and incident troubleshooting.
+- Senior and technical-lead experience is well documented across production systems.
+gaps:
+- The abbreviated posting indicates Go and Python, but Python experience is not evidenced
+  in the candidate profile.
+- The posting does not provide enough detail to verify all client-specific stack and
+  responsibility requirements.
+concerns:
+- Registry metadata says United States while the job text says Cairo, Egypt; remote
+  and timezone compatibility are unresolved.
+- Salary, language, and exact employment arrangement are not stated.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-12T18:37:07Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:2dce6b7e53c55a97d34a94094c2f327e7c1edfd16b8982e0623e6ef129cff27f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

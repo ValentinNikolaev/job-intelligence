@@ -1,20 +1,22 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Strong fit for a part-time Go backend role through recent Go support automation, resilient integrations, and production ownership.
+Candidate evidence strongly matches the remote part-time Go backend role through production Go services, APIs, event-driven systems, PostgreSQL, Kubernetes, CI/CD, observability, architecture, and technical leadership.
 
 ## Why it matches
 
-- Recent hands-on Go backend ownership for support automation and internal services.
-- Strong evidence of APIs, integrations, reliability, retries, monitoring, and scalable event-driven systems.
-- Seniority and technical-lead experience align with an experienced independent contributor.
+- Recent work includes owning a production Go support-automation platform and resilient message-delivery pipelines.
+- Profile documents microservices, event-driven architecture, PostgreSQL, API integration, Kubernetes, GitHub Actions, monitoring, and performance optimization.
+- Technical-lead experience supports architecture decisions, code review, mentoring, and autonomous stakeholder collaboration.
 
 ## Gaps
 
-- Part-time availability and the vacancy's detailed domain requirements are not documented.
+- GraphQL, gRPC, Redis, and Elasticsearch are not explicitly evidenced as hands-on experience in the authoritative profile.
+- The profile does not establish React and TypeScript experience.
 
 ## Concerns
 
-- Compensation and working-time expectations are not stated.
+- The vacancy is part-time, but the candidate's preference or availability for part-time work is unknown.
+- The employer's English-language and timezone expectations are not stated in the posting.
