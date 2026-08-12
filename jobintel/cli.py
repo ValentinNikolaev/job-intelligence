@@ -1090,7 +1090,12 @@ def _run_preparation_locked(
                     f"{policy.prepare_max_age_days}; do not prepare stale vacancies"
                 )
             if not _analysis_is_current(
-                directory, registry_dir, profile_paths, policy, project_root
+                directory,
+                registry_dir,
+                profile_paths,
+                policy,
+                project_root,
+                model_profile=args.model_profile,
             ):
                 raise ValueError(
                     f"{directory.name}: match analysis is missing or stale; "
@@ -1302,7 +1307,12 @@ def _run_pending_locked(
                 if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
                     continue
                 if not _analysis_is_current(
-                    directory, registry_dir, profile_paths, policy, project_root
+                    directory,
+                    registry_dir,
+                    profile_paths,
+                    policy,
+                    project_root,
+                    model_profile=args.model_profile,
                 ):
                     continue
                 score = _optional_match_score(directory)
@@ -1369,13 +1379,15 @@ def _analysis_is_current(
     profile_paths: list[Path],
     policy: WorkflowPolicy,
     project_root: Path,
+    *,
+    model_profile: str | None = None,
 ) -> bool:
     checker = MatchAnalyzer(
         registry_dir,
         profile_paths,
         CodexMatchDraftClient(
             project_root / ".codex-work" / "unused-match.yaml",
-            model=policy.workflow("analyze").model_label,
+            model=policy.resolve_model_profile("analyze", model_profile).model_label,
         ),
     )
     return checker.is_current(directory)

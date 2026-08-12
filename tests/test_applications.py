@@ -99,8 +99,10 @@ class FakeConverter:
 class FakeMatchClient:
     model = "codex:gpt-5.6-luna:low"
 
-    def __init__(self, score: int) -> None:
+    def __init__(self, score: int, *, model: str | None = None) -> None:
         self.score = score
+        if model is not None:
+            self.model = model
 
     def analyze(self, **_: object) -> Mapping[str, Any]:
         return {
@@ -980,6 +982,51 @@ class ApplicationTests(unittest.TestCase):
                     str(self.profile),
                     "--workflow",
                     "prepare",
+                ]
+            )
+
+        self.assertEqual(0, exit_code)
+        self.assertIn(created.directory, output.getvalue())
+
+    def test_pending_prepare_uses_selected_model_profile_for_match_freshness(self) -> None:
+        registry = Registry(
+            self.registry_root,
+            clock=lambda: self.now,
+            id_factory=lambda: "vacancy-terra",
+        )
+        created = registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="job-terra",
+                source_url="https://example.test/jobs/terra",
+                title="Senior Backend Engineer Terra",
+                company="Example",
+                description="Build Go services.",
+            )
+        )
+        directory = self.registry_root / "jobs" / created.directory
+        MatchAnalyzer(
+            self.registry_root,
+            [self.profile],
+            FakeMatchClient(72, model="codex:gpt-5.6-terra:medium"),
+            clock=lambda: self.now,
+        ).analyze_directory(directory)
+
+        output = StringIO()
+        with redirect_stdout(output):
+            exit_code = main(
+                [
+                    "pending",
+                    "prepare",
+                    created.vacancy_id,
+                    "--registry",
+                    str(self.registry_root),
+                    "--profile",
+                    str(self.profile),
+                    "--workflow",
+                    "prepare",
+                    "--model-profile",
+                    "terra_medium",
                 ]
             )
 
