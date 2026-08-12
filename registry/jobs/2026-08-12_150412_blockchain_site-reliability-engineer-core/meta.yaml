@@ -1,0 +1,24 @@
+schema_version: 2
+id: 1f624c82-8603-4982-be0d-7daedae64cb5
+title: Site Reliability Engineer - Core
+company: Blockchain
+company_url: null
+location: Italian Republic
+remote: null
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '417450715862732024'
+  url: https://jooble.org/desc/417450715862732024?ckey=golang+backend+engineer&rgn=55179&pos=4&groupId=-734180631&elckey=-8724841639075751634&p=1&aq=-4662186037033442217&cid=15922&jobAge=33&brelb=100&bscr=8.347094&scr=8.347094
+published_at: '2026-08-11T00:00:00.0000000'
+discovered_at: '2026-08-12T15:04:12Z'
+updated_at: '2026-08-12T15:04:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-12T15:04:12Z'
+analysis_priority: 0
+fingerprint: sha256:2ea5aaa9de5abcd19455e4f0519ac49be2634046f21f313efb4b168c4370aa34
+data_source: jooble
+content_source: jooble
+company_content_source: null

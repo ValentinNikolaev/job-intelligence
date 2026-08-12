@@ -91,4 +91,4 @@ Wireless, Sensorik & Fseroptik (m/w/d)
 
 Wenn du einen wichtigen Beitrag zu unserem weiteren Erfolg leisten möchtest, bewirb dich jetzt. Bitte sende deine Bewerbung über unser Bewerbertool.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

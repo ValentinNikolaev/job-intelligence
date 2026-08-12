@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '368109'
+source_url: https://jobs.dou.ua/companies/solidgate/vacancies/368109/
+title: Senior Go Engineer (Connectivity)
+company: Solidgate
+location: Київ, віддалено
+published_at: '2026-07-31'
+rejection_category: stale
+rejection_reason: published_at 2026-07-31 is older than 7 days
+updated_at: '2026-08-12T15:04:05Z'
+rejected_at: '2026-08-12T15:04:05Z'

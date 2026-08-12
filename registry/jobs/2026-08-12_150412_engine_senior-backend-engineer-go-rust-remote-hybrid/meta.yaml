@@ -1,0 +1,24 @@
+schema_version: 2
+id: 070d69ae-e12c-4c80-8842-13e9862dccc9
+title: Senior Backend Engineer (Go/Rust) — Remote & Hybrid
+company: Engine
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-3029957482736388959'
+  url: https://jooble.org/desc/-3029957482736388959?ckey=remote+senior+backend+engineer&rgn=55180&pos=42&groupId=2134052230&elckey=-8805812127627653347&p=1&aq=-927499601658416147&cid=15922&jobAge=33&brelb=10&bscr=1005.5726&scr=1005.5726
+published_at: '2026-08-11T00:00:00.0000000'
+discovered_at: '2026-08-12T15:04:12Z'
+updated_at: '2026-08-12T15:04:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-12T15:04:12Z'
+analysis_priority: 0
+fingerprint: sha256:838057d2de5a9ee93cf3c47bdb113a65e597ba1d9319fda6699c9ab87cb6f658
+data_source: jooble
+content_source: jooble
+company_content_source: null

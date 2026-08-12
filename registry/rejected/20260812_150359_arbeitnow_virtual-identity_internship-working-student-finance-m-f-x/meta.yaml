@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-internship-working-student-finance-freiburg-174597
+source_url: https://www.arbeitnow.com/jobs/companies/virtual-identity/remote-internship-working-student-finance-freiburg-174597
+title: Internship / Working Student Finance (m/f/x)
+company: Virtual Identity
+location: Remote job
+published_at: '2026-08-12T11:30:23Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-12T15:03:59Z'
+rejected_at: '2026-08-12T15:03:59Z'

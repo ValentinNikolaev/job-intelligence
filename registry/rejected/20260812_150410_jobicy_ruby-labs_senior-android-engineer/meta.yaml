@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149053'
+source_url: https://jobicy.com/jobs/149053-senior-android-engineer
+title: Senior Android Engineer
+company: Ruby Labs
+location: Europe
+published_at: '2026-08-10T04:25:05Z'
+rejection_category: role_mismatch
+rejection_reason: title is an obvious mismatch for a backend profile
+updated_at: '2026-08-12T15:04:10Z'
+rejected_at: '2026-08-12T15:04:10Z'

@@ -75,4 +75,4 @@ Die Aufgaben unten beschreiben den Rahmen der Rolle. Je nach Jahresphase liegt d
 
 Wir beraten DMEXCO und verantworten u.a. seit 8 Jahren den Geschäftsbereich Agenturen. Hierüber sehen wir viele spannende weitere Potenziale für eine Stelle wie diese und freuen uns daher auf deine Bewerbung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

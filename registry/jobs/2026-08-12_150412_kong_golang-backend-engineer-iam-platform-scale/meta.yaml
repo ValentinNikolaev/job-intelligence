@@ -1,0 +1,24 @@
+schema_version: 2
+id: 7d6449bb-8dc5-49b1-a6b8-726de2225c53
+title: Golang Backend Engineer - IAM & Platform Scale
+company: Kong
+company_url: null
+location: United States
+remote: null
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-6068889153974119388'
+  url: https://jooble.org/desc/-6068889153974119388?ckey=remote+golang+backend+engineer&rgn=55180&pos=19&groupId=1106121903&elckey=4033421411874226189&p=1&aq=6387618318591092426&cid=15922&jobAge=33&brelb=10&bscr=279.3407&scr=279.3407
+published_at: '2026-08-11T00:00:00.0000000'
+discovered_at: '2026-08-12T15:04:12Z'
+updated_at: '2026-08-12T15:04:12Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-12T15:04:12Z'
+analysis_priority: 0
+fingerprint: sha256:8f71b9c894742efec08fe92517d920eacdb9391e100a128597c93fda088292ba
+data_source: jooble
+content_source: jooble
+company_content_source: null
