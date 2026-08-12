@@ -1,0 +1,22 @@
+score: 18
+recommendation: not_match
+summary: The candidate has relevant Go backend experience, but the posting explicitly
+  describes a fully remote team across the U.S., creating a decisive location and
+  working-hours conflict for a candidate based in Italy.
+strengths:
+- Strong demonstrated Go backend engineering, scalability, APIs, and production reliability
+  experience.
+gaps:
+- The truncated posting does not provide enough detail to confirm the full technical
+  requirements.
+concerns:
+- The role is explicitly fully remote with team members across the U.S.; European
+  location and timezone compatibility are not offered in the supplied vacancy.
+hard_rejection: true
+hard_rejection_reason: Explicit U.S.-based remote arrangement conflicts with the candidate's
+  Italy location absent any stated European or EMEA working option.
+analyzed_at: '2026-08-12T19:39:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d370363eb4eea212a7bf212af3e813e6b90bf2380de05f690fa86c466d2c3e91
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

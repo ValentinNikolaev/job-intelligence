@@ -1,0 +1,25 @@
+score: 74
+recommendation: match
+summary: Strong Go backend, scalable-service, reliability, API, and cross-functional
+  engineering fit for a remote marketplace role, with product-domain specifics and
+  U.S. location compatibility not fully established.
+strengths:
+- Recent hands-on Go backend ownership in a production support automation platform.
+- Proven scalable, event-driven, integration, observability, and reliability engineering
+  experience.
+- Experience collaborating with product and business stakeholders on customer-facing
+  systems.
+gaps:
+- Marketplace-specific experience and the exact cloud, framework, and data requirements
+  are not included in the abbreviated posting.
+concerns:
+- The vacancy is listed in the United States, so timezone and employer eligibility
+  for working from Italy require verification.
+- The source excerpt does not establish whether remote-first applies internationally.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-12T19:39:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a59b60edf6d41b566f371ff095017f9f0a1fc361f02c3cbcba0d7f9051d19ccf
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
