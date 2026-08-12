@@ -1,41 +1,29 @@
-score: 83
+score: 82
 recommendation: strong_match
-summary: Senior PHP backend role with strong evidence of PHP, Laravel, MySQL/PostgreSQL,
-  production reliability, database performance work, event-driven systems, and remote
-  CET-compatible work. The candidate also has relevant blockchain and fintech-related
-  background; the main uncertainties are direct Kafka and daily Docker Compose experience,
-  plus confirming the current Russian-language wording.
+summary: Strong senior PHP backend fit with Laravel, relational database optimization,
+  production operations, security, messaging, monitoring, Docker-adjacent infrastructure,
+  and relevant crypto-domain experience.
 strengths:
-- More than 15 years of backend experience across PHP and Go, exceeding the seniority
-  requirement.
-- Demonstrated PHP and Laravel experience, including recent airSlate work and PHP-oriented
-  CRURATED consulting.
-- Demonstrated MySQL and PostgreSQL experience with database and API performance optimization,
-  including reducing main-database peak load and optimizing query bottlenecks.
-- Demonstrated message-driven and event-driven systems experience with RabbitMQ, queues,
-  EventBridge, resilient delivery pipelines, retries, and observability.
-- Demonstrated Prometheus, monitoring, production troubleshooting, reliability, security/compliance,
-  architecture, code-review, and leadership experience.
-- Candidate is based in Italy, is CET-compatible, and prefers remote work; the vacancy
-  is explicitly remote in the European region with relocation support.
-- Go is an explicit nice-to-have and is supported by the candidate profile; blockchain
-  and cryptocurrency experience are also supported.
+- Extensive object-oriented PHP, Laravel, Symfony, MySQL/PostgreSQL, query optimization,
+  and backend architecture experience.
+- Demonstrated message-driven and event-driven systems, RabbitMQ, monitoring with
+  Prometheus, and high-availability production troubleshooting.
+- Strong security and compliance evidence from PCI DSS, GDPR, audits, and vulnerability
+  assessments.
+- Candidate has direct cryptocurrency and payment-system experience, plus Go experience.
 gaps:
-- No direct Apache Kafka experience is stated; RabbitMQ and other message-driven/event-driven
-  experience support the alternative message-broker requirement.
-- Daily Docker and Docker Compose experience is not explicitly documented.
-- Direct experience analyzing database deadlocks and transaction management is not
-  explicitly documented, although database performance and query optimization are.
+- Kafka specifically and daily Docker Compose usage are not explicitly documented;
+  RabbitMQ is the supported message-broker evidence.
+- Grafana, deadlock analysis, and unit-test depth are not clearly stated.
 concerns:
-- LinkedIn evidence lists Russian as native or bilingual, but the current application
-  profile and backend CV list only Ukrainian and English; confirm the current Russian-language
-  wording before applying.
-- On-call experience is not explicitly stated, although the profile documents production
-  incident troubleshooting and reliability work.
+- Russian proficiency is conflicting across candidate sources, while the role explicitly
+  requires Russian; English is also recorded with differing proficiency descriptions.
+- The posting says remote European region but labels the employment arrangement hybrid,
+  so the exact remote terms need confirmation.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-11T10:09:31Z'
+analyzed_at: '2026-08-12T14:34:40Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:9513485806be347a6ea1e26d7d82c8244830df0cc19b4e779a0c9e86d22b290c
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low

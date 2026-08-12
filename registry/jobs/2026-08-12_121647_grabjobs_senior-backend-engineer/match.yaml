@@ -1,0 +1,28 @@
+score: 72
+recommendation: match
+summary: Good fit for the described remote senior PHP backend engagement, supported
+  by substantial PHP backend, Laravel, databases, APIs, microservices, and production
+  reliability experience.
+strengths:
+- Senior backend profile with extensive PHP, Laravel, MySQL/PostgreSQL, API, microservice,
+  and performance-optimization experience.
+- Demonstrated ownership of production systems, monitoring, troubleshooting, CI/CD,
+  and scalable services.
+- Remote work is explicitly offered, and the role is backend-focused rather than frontend-heavy.
+gaps:
+- The syndicated posting is incomplete, so important requirements, employer identity,
+  timezone expectations, and compensation are unknown.
+- The profile does not establish every possible framework or infrastructure requirement
+  that may be present in the full posting.
+concerns:
+- The listing names Seattle, WA and describes LATAM talent, which may create a location,
+  timezone, or eligibility issue for an Italy-based candidate despite the remote label.
+- Source content appears truncated and syndicated through Jooble, reducing confidence
+  in the role details.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-12T14:34:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b78486b758c5f9017518d22e884eb5d34724e721e6fa40d4c9ee4a890d20feb7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
