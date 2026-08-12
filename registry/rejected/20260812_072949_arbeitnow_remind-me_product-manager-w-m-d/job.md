@@ -37,4 +37,4 @@ Posted: 2026-08-12T05:09:17Z
 - kostenlose Getränke, frisches Obst und regelmäßige Teamevents
 - Bezuschussung des Jobtickets für den ÖPNV in Berlin und vieles mehr.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

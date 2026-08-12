@@ -93,4 +93,4 @@ Deshalb suchen wir bevorzugt eine Person aus München oder Umgebung.
 
 Ja? Dann schicke uns deine Bewerbungsunterlagen gerne zu. Wir freuen us auf dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

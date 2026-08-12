@@ -113,4 +113,4 @@ Wir bei emetriq sind ein Team aus Experten, die gemeinsam wachsen und das Untern
 
 **Klingt das nach deinem nächsten Schritt?** Dann freuen wir uns auf deine Bewerbung und darauf, gemeinsam die Zukunft des datengetriebenen Marketings zu gestalten!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

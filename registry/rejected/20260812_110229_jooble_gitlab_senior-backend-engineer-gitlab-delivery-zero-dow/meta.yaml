@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1493445620809336474'
+source_url: https://jooble.org/desc/-1493445620809336474?ckey=remote+golang+backend+engineer&rgn=55180&pos=28&groupId=1106121903&elckey=-1875751743489536615&p=1&aq=2039919119898493872&cid=15922&jobAge=861&brelb=100&bscr=233.24124&scr=233.24124
+title: 'Senior Backend Engineer, GitLab Delivery: Zero Downtime Upgrades'
+company: GitLab
+location: India
+published_at: '2026-07-07T07:54:28.6530000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-07T07:54:28.6530000 is older than 7 days
+updated_at: '2026-08-12T11:02:29Z'
+rejected_at: '2026-08-12T11:02:29Z'

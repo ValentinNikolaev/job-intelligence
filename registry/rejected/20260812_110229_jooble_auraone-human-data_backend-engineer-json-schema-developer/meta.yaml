@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2128489362388890144'
+source_url: https://jooble.org/desc/2128489362388890144?ckey=remote+golang+backend+engineer&rgn=55180&pos=48&groupId=1106121903&elckey=-1875751743489536615&p=1&aq=2039919119898493872&cid=15922&jobAge=362&brelb=100&bscr=213.0001&scr=213.0001
+title: Backend Engineer (JSON Schema Developer)
+company: AuraOne Human Data
+location: Remote
+published_at: '2026-07-28T02:29:24.5500000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-28T02:29:24.5500000 is older than 7 days
+updated_at: '2026-08-12T11:02:29Z'
+rejected_at: '2026-08-12T11:02:29Z'

@@ -79,4 +79,4 @@ Regular feedback session with your mentor to help you get the most out of the pr
 
 And of course top notch hardware, wellpass subscriptions and yearly offsites (the last ones were in Mallorca and Italy).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

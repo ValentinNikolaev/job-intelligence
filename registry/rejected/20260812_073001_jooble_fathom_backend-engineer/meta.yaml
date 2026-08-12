@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '5216407076870250124'
-source_url: https://jooble.org/away/5216407076870250124?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=49&brelb=15&scr=487.56082&bscr=487.56082&aq=-4629999626466745609&elckey=-5494443050136565313
+source_url: https://jooble.org/away/5216407076870250124?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=53&brelb=15&scr=558.1971&bscr=558.1971&aq=2039919119898493872&elckey=-1875751743489536615
 title: Backend Engineer
 company: Fathom
 location: Remote
 published_at: '2026-08-10T00:00:00.0000000'
 rejection_category: tech_stack
 rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-12T07:30:01Z'
+updated_at: '2026-08-12T11:02:29Z'
 rejected_at: '2026-08-12T07:30:01Z'

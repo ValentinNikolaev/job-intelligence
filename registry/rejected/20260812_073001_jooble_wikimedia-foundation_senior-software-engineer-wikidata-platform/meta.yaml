@@ -1,12 +1,12 @@
 schema_version: 1
 source: jooble
 source_job_id: '7465714321086322452'
-source_url: https://jooble.org/desc/7465714321086322452?ckey=senior+backend+engineer&rgn=55179&pos=1&groupId=293749696&elckey=-1637394867658521376&p=1&aq=6635071655397645118&cid=15922&jobAge=161&brelb=100&bscr=34.597713&scr=34.597713
+source_url: https://jooble.org/desc/7465714321086322452?ckey=senior+backend+engineer&rgn=55179&pos=1&groupId=293749696&elckey=-6259427886958629142&p=1&aq=5798604609475373802&cid=15922&jobAge=165&brelb=100&bscr=34.447212&scr=34.447212
 title: Senior Software Engineer - Wikidata Platform
 company: Wikimedia Foundation
 location: Italian Republic
 published_at: '2026-08-05T07:54:36.1670000'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-12T07:30:01Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-05T07:54:36.1670000 is older than 7 days
+updated_at: '2026-08-12T11:02:29Z'
 rejected_at: '2026-08-12T07:30:01Z'

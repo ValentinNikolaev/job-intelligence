@@ -105,4 +105,4 @@ Wir arbeiten mit Eigent체mern, Gesch채ftsf체hrern und Investoren zusammen, um F�
 
 Unser Ansatz verbindet strukturierte Diagnostik, strategisches Verst채ndnis und tiefgehende Auseinandersetzung mit F체hrung und Entscheidungsreife.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

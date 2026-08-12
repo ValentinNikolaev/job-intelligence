@@ -87,4 +87,4 @@ sehr gute Deutsch- sowie gute Englischkenntnisse mitbringst.
 
 **Modernes Büro im Herzen Frankfurts: **Unser zentral gelegenes Büro mit moderner Ausstattung bietet dir Raum für kreative Ideen, konzentriertes Arbeiten und entspanntes Abschalten.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
