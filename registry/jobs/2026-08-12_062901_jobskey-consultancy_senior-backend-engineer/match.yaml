@@ -1,0 +1,32 @@
+score: 49
+recommendation: possible_match
+summary: Partial backend fit from demonstrated Go, APIs, distributed systems, and
+  reliability work, but the posting provides limited detail and appears centered on
+  Go and Python.
+strengths:
+- Strong senior backend experience with Go
+- microservices
+- APIs
+- event-driven systems
+- and production reliability.
+- Demonstrated performance optimization
+- monitoring
+- troubleshooting
+- and scalable service ownership.
+gaps:
+- Python experience is not established in the candidate profile.
+- The posting's fuller requirements
+- employment terms
+- and team context are incomplete in the collected description.
+concerns:
+- The collected metadata says United States while the description references Cairo
+- Egypt; location and working eligibility are unresolved.
+- Candidate timezone compatibility cannot be confirmed from the available posting
+  text.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-12T08:32:33Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9c94999b64c703d7c394c9102cc16ac0473ee8d07386dc6490b7cf67ec93fee0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

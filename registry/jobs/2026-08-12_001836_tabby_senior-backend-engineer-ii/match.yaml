@@ -1,0 +1,37 @@
+score: 68
+recommendation: match
+summary: Good but incomplete fit for a remote AI-platform backend role through Go,
+  automation, LLM integration, distributed systems, and fintech experience; Python
+  remains a material gap.
+strengths:
+- Demonstrated Go backend engineering
+- support automation
+- LLM-assisted workflows
+- and internal-service integrations.
+- Strong distributed-systems
+- microservices
+- Kubernetes
+- AWS
+- PostgreSQL
+- observability
+- and reliability background.
+- Prior fintech-related experience and remote European eligibility align with the
+  company and setup.
+gaps:
+- At least two years of Python experience is mandatory in the posting but not supported
+  by the candidate profile.
+- LangChain
+- LangGraph
+- ADK
+- ML model evaluation
+- and Google Cloud Platform experience are not established.
+concerns:
+- The contractor/B2B arrangement and exact European time-zone expectations should
+  be confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-12T08:32:33Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7b5817db55d166fece352b5304ee990d1c558fd384ef7495c4d9910d8e81d88e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
