@@ -79,4 +79,4 @@ Sie möchten nicht nur verwalten, sondern ein technisches Team sichtbar weiteren
 
 Dann senden Sie uns Ihren Lebenslauf oder melden Sie sich zunächst unverbindlich. In einem kurzen Gespräch klären wir gemeinsam, ob Aufgabe, Rahmenbedingungen und nächster Karriereschritt zusammenpassen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
