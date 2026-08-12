@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3250808196191047079'
+source_url: https://jooble.org/desc/-3250808196191047079?ckey=remote+senior+backend+engineer&rgn=55180&pos=47&groupId=2134052230&elckey=113067484071106767&p=1&aq=-4258752296412751646&cid=15922&jobAge=145&brelb=100&bscr=786.4401&scr=786.4401
+title: Senior / Backend Full Stack Engineer
+company: DTEX Systems
+location: Fremont, CA
+published_at: '2026-08-06T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-12T07:30:01Z'
+rejected_at: '2026-08-12T07:30:01Z'

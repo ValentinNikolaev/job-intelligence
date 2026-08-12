@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '146614'
+source_url: https://jobicy.com/jobs/146614-database-engineer
+title: Database Engineer
+company: Ruby Labs
+location: Europe
+published_at: '2026-07-16T20:30:05Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-16T20:30:05Z is older than 7 days
+updated_at: '2026-08-12T07:30:00Z'
+rejected_at: '2026-08-12T07:30:00Z'

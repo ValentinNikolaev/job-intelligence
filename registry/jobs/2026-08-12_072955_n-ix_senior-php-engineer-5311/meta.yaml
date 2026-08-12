@@ -1,0 +1,34 @@
+schema_version: 2
+id: e023d322-21e9-4b56-81ae-b476068c037f
+title: Senior PHP Engineer (#5311)
+company: N-iX
+company_url: https://jobs.dou.ua/companies/n-ix/vacancies/
+location: Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '258401'
+  url: https://jobs.dou.ua/companies/n-ix/vacancies/258401/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 12 серпня
+    listing_summary: Our Client is a global leader in corporate brand protection and
+      domain management, serving Fortune 500 and large enterprises with domain registration,
+      online brand monitoring, and anti-counterfeiting services.
+published_at: '2026-08-12'
+discovered_at: '2026-08-12T07:29:55Z'
+updated_at: '2026-08-12T07:29:55Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-12T07:29:55Z'
+analysis_priority: 100
+fingerprint: sha256:73a5023cad79db66c7ecf4d599d189ab135cccf25683ffb8838335cdc52d650f
+data_source: dou
+content_source: dou
+company_content_source: dou

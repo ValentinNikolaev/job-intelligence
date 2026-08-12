@@ -1,0 +1,10 @@
+# Senior Strategic Buyer – Mechanical Components (m/f/d)
+
+Posted: 2026-08-11T23:09:38Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: vacancy is explicitly non-remote
+
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

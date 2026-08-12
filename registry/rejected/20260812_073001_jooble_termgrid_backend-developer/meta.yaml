@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4244943506721849605'
+source_url: https://jooble.org/away/-4244943506721849605?p=1&pos=15&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=673&brelb=15&scr=261.44943&bscr=261.44943&aq=-4629999626466745609&elckey=-5494443050136565313
+title: Backend Developer
+company: Termgrid
+location: Remote
+published_at: '2026-07-15T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-15T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-12T07:30:01Z'
+rejected_at: '2026-08-12T07:30:01Z'
