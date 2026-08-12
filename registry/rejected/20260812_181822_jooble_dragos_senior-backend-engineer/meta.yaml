@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1557253793566124920'
+source_url: https://jooble.org/away/-1557253793566124920?p=1&pos=45&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=12&brelb=15&scr=2124.9111&bscr=2124.9111&aq=3127655872757772556&elckey=-7223075325180917436
+title: Senior Backend Engineer
+company: Dragos
+location: Remote
+published_at: '2026-08-12T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-12T18:18:22Z'
+rejected_at: '2026-08-12T18:18:22Z'

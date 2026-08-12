@@ -1,0 +1,46 @@
+schema_version: 2
+id: 10c99927-08d1-4fef-ba26-7be6603a91de
+title: Head of Engineering
+company: saas.group
+company_url: null
+location: Europe
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '150588'
+  url: https://jobicy.com/jobs/150588-head-of-engineering
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/f6d362c3-221-1.png
+    industry:
+    - Software Engineering
+    level: Director
+    excerpt: This role is part of our Seobility team, one of our growing brands at
+      saas.group.Seobility joined saas.group in 2022. The Seobility all-in-one SEO
+      suite empowers businesses and marketers around the world to boost their website
+      visibility with professional SEO tools. Starting in 2013 with a commitment to
+      usability and actionable advice to make professional-grade SEO…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        count: '50'
+        industry: dev
+    - query_index: 4
+      parameters:
+        geo: europe
+        tag: php
+        count: '50'
+        industry: dev
+published_at: '2026-08-12T14:19:46Z'
+discovered_at: '2026-08-12T18:18:21Z'
+updated_at: '2026-08-12T18:18:21Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-12T18:18:21Z'
+analysis_priority: 0
+fingerprint: sha256:8306cd0536cca0e94927644b038308e2e86b02d381bd972db5e91e7bfeb1a8c2
+data_source: jobicy
+content_source: jobicy
+company_content_source: null
