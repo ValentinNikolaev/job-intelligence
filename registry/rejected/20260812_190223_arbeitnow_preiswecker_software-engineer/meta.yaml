@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: software-engineer-price-comparison-portal-berlin-233707
+source_url: https://www.preiswecker.com/
+title: Software Engineer
+company: Preiswecker
+location: Berlin
+published_at: '2026-08-12T06:40:00Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-12T19:02:23Z'
+rejected_at: '2026-08-12T19:02:23Z'

@@ -1,0 +1,24 @@
+schema_version: 2
+id: 03821ab2-cde0-4d2f-b72a-970f662cdd3e
+title: Senior Backend Engineer
+company: Ondo
+company_url: null
+location: United States
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-5312181990550397337'
+  url: https://jooble.org/desc/-5312181990550397337?ckey=remote+golang+backend+engineer&rgn=55180&pos=47&groupId=1106121903&elckey=-7886847476478627964&p=1&aq=5561068002467724232&cid=15922&jobAge=133&brelb=10&bscr=231.52219&scr=231.52219
+published_at: '2026-08-07T00:00:00.0000000'
+discovered_at: '2026-08-12T19:02:36Z'
+updated_at: '2026-08-12T19:02:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-12T19:02:36Z'
+analysis_priority: 0
+fingerprint: sha256:38e1c8f616833371b0e984d69da1aadd3d7b60ba9de67372e771e954608c472c
+data_source: jooble
+content_source: jooble
+company_content_source: null

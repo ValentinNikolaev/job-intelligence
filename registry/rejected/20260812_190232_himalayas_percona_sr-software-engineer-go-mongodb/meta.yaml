@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/percona/jobs/sr-software-engineer-go-mongodb
+source_url: https://himalayas.app/companies/percona/jobs/sr-software-engineer-go-mongodb
+title: Sr. Software Engineer - Go/MongoDB
+company: Percona
+location: Croatia, Italy, Poland, Spain
+published_at: '2026-07-29T05:07:32Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-29T05:07:32Z is older than 7 days
+updated_at: '2026-08-12T19:02:32Z'
+rejected_at: '2026-08-12T19:02:32Z'

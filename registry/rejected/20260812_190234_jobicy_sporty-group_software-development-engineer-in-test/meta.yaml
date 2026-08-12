@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '145584'
+source_url: https://jobicy.com/jobs/145584-software-development-engineer-in-test
+title: Software Development Engineer in Test
+company: Sporty Group
+location: EMEA
+published_at: '2026-08-07T04:35:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-12T19:02:34Z'
+rejected_at: '2026-08-12T19:02:34Z'
