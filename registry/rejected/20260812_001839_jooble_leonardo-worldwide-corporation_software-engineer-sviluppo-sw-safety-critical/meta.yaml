@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3000705902176827817'
+source_url: https://jooble.org/desc/-3000705902176827817?ckey=backend+technical+lead&rgn=55179&pos=25&groupId=698760247&elckey=7482964228328749253&p=1&aq=-547155850631517397&cid=15922&jobAge=8754&brelb=100&bscr=12.330566&scr=12.330566
+title: Software Engineer - Sviluppo SW Safety Critical
+company: Leonardo Worldwide Corporation
+location: Italian Republic
+published_at: '2025-08-12T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2025-08-12T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-12T00:18:39Z'
+rejected_at: '2026-08-12T00:18:39Z'
