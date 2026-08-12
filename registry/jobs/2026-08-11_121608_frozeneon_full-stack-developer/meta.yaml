@@ -1,6 +1,6 @@
 schema_version: 2
 id: 96102431-7d3b-4f4f-87db-b658560ca2b6
-title: Full-Stack Developer
+title: Full-Stack Developer (AI Oriented)
 company: Frozeneon
 company_url: https://jobs.dou.ua/companies/frozeneon/vacancies/
 location: віддалено
@@ -21,22 +21,31 @@ sources:
     listing_summary: 'Обов’язки:
 
 
-      Розробляти нові проєкти з нуля, а також підтримувати та вдосконалювати існуючі
-      рішення, включаючи мікросервісну архітектуру та високонавантажені платформи
-      з мільйонною аудиторією
+      Розробка та підтримка високонавантажених проєктів і мікросервісів
 
 
-      Оптимізувати поточний функціонал, підвищуючи продуктивність і масштабованість
-      системи.'
+      Оптимізація продуктивності, рефакторинг коду та баз даних
+
+
+      Проєктування масштабованої архітектури
+
+
+      Участь у прийнятті технічних рішень та обмін досвідом усередині команди
+
+
+      Вимоги:
+
+
+      Практичний...'
 published_at: '2026-08-11'
 discovered_at: '2026-08-11T12:16:08Z'
-updated_at: '2026-08-11T12:16:08Z'
+updated_at: '2026-08-12T12:16:41Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-08-11T12:16:08Z'
 analysis_priority: 100
-fingerprint: sha256:40469b0272581040c888be0d8ce30490917d47a1e0cc87ae9260bdeea2fb4266
+fingerprint: sha256:63562d4caf04638367de1b3c0bd76c2d3ace6aa0e63f58e1703dbc5180464049
 data_source: dou
 content_source: dou
 company_content_source: dou
