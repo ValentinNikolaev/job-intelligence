@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-860205563532945536'
+source_url: https://jooble.org/away/-860205563532945536?p=1&pos=41&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=120&brelb=10&scr=2139.9324&bscr=2139.9324&aq=5805798658613119811&elckey=-7476906663548375025
+title: Senior Backend Engineer
+company: Tesouro
+location: United States
+published_at: '2026-08-08T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T06:29:54Z'
+rejected_at: '2026-08-13T06:29:54Z'

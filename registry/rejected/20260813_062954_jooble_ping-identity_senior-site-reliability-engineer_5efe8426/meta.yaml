@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4279863331381652199'
+source_url: https://jooble.org/desc/-4279863331381652199?ckey=backend+technical+lead&rgn=55179&pos=22&groupId=698760247&elckey=5191879934622160111&p=1&aq=5895386912158403910&cid=15922&jobAge=144&brelb=10&bscr=10.124208&scr=10.124208
+title: Senior Site Reliability Engineer
+company: Ping Identity
+location: Italian Republic
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T06:29:54Z'
+rejected_at: '2026-08-13T06:29:54Z'

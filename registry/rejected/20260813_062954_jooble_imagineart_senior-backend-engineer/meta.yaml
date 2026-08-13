@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8983775265421147429'
+source_url: https://jooble.org/away/8983775265421147429?p=1&pos=14&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=72&brelb=15&scr=2350.5266&bscr=2350.5266&aq=5805798658613119811&elckey=-7476906663548375025
+title: Senior Backend Engineer
+company: ImagineArt
+location: Remote
+published_at: '2026-08-10T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T06:29:54Z'
+rejected_at: '2026-08-13T06:29:54Z'
