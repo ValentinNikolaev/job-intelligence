@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6566944522855047684'
+source_url: https://jooble.org/away/-6566944522855047684?p=1&pos=18&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=516&brelb=15&scr=1756.3599&bscr=1756.3599&aq=-7420554347117734093&elckey=8577432983819113940
+title: Remote Senior Backend Software Engineer (Observability)
+company: Nebius
+location: Remote
+published_at: '2026-07-23T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-23T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-13T18:05:58Z'
+rejected_at: '2026-08-13T18:05:58Z'

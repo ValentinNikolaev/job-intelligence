@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150581'
+source_url: https://jobicy.com/jobs/150581-senior-software-engineer-node-react-headless-api
+title: Senior Software Engineer (Node & React, Headless API)
+company: saas.group
+location: Europe
+published_at: '2026-08-12T14:19:35Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T18:05:56Z'
+rejected_at: '2026-08-13T18:05:56Z'

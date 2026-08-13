@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150271'
+source_url: https://jobicy.com/jobs/150271-non-linguistic-qc-china-us-time-zone
+title: Non-Linguistic QC (China / US Time Zone)
+company: Welo Global
+location: Anywhere
+published_at: '2026-08-06T14:10:04Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-06T14:10:04Z is older than 7 days
+updated_at: '2026-08-13T18:05:56Z'
+rejected_at: '2026-08-13T18:05:56Z'

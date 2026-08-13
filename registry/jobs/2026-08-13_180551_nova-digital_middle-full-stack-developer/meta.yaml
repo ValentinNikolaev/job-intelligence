@@ -1,0 +1,36 @@
+schema_version: 2
+id: 46b2eeda-f421-494a-86d7-a1a013f7731d
+title: Middle Full-stack Developer
+company: Nova Digital
+company_url: https://jobs.dou.ua/companies/nova-digital/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369679'
+  url: https://jobs.dou.ua/companies/nova-digital/vacancies/369679/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 13 серпня
+    listing_summary: 'Не просто код, а твій вплив на мільйони українців
+
+
+      Nova Digital — це технологічне серце екосистеми NOVA, де твій код стає частиною
+      щоденного життя цілої країни.'
+published_at: '2026-08-13'
+discovered_at: '2026-08-13T18:05:51Z'
+updated_at: '2026-08-13T18:05:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:05:51Z'
+analysis_priority: 100
+fingerprint: sha256:4479bd8bd9d782c0448a26c40848a0ccadd9dd38d7a2a9b56a19c4d8dea302c2
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,37 @@
+schema_version: 2
+id: 4c2bd774-7617-4059-9eb2-86242e31708e
+title: Senior PHP Developer
+company: FAVBET
+company_url: https://jobs.dou.ua/companies/favbet/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369737'
+  url: https://jobs.dou.ua/companies/favbet/vacancies/369737/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 13 серпня
+    listing_summary: 'FAVBET is an Entertainment Tech company that has been creating
+      innovative solutions in betting and gaming for over 25 years.
+
+
+      We don’t just develop products — we shape the culture of responsible gaming
+      and support sports development.'
+published_at: '2026-08-13'
+discovered_at: '2026-08-13T18:05:51Z'
+updated_at: '2026-08-13T18:05:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:05:51Z'
+analysis_priority: 100
+fingerprint: sha256:aab3b45cb775e70e3116297115afc5868f9ce1d455ed82bb11d05ef4e82ef971
+data_source: dou
+content_source: dou
+company_content_source: dou

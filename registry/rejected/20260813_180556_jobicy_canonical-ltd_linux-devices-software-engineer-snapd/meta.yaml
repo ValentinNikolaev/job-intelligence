@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149969'
+source_url: https://jobicy.com/jobs/149969-linux-devices-software-engineer-snapd
+title: Linux devices software engineer - snapd
+company: Canonical Ltd.
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-08-01T03:03:46Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-01T03:03:46Z is older than 7 days
+updated_at: '2026-08-13T18:05:56Z'
+rejected_at: '2026-08-13T18:05:56Z'

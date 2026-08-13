@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-data-analyst-german-10864
+source_url: https://www.arbeitnow.com/jobs/companies/economicmodeling/remote-data-analyst-german-10864
+title: Data Analyst (German)
+company: Economicmodeling
+location: Remote - Germany
+published_at: '2026-08-13T11:04:53Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-13T18:05:45Z'
+rejected_at: '2026-08-13T18:05:45Z'

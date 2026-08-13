@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudentin-sales-operations-berlin-330622
+source_url: https://www.arbeitnow.com/jobs/companies/trustspace/werkstudentin-sales-operations-berlin-330622
+title: Werkstudent:in Sales Operations
+company: TrustSpace
+location: Berlin
+published_at: '2026-08-13T14:00:30Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-13T18:05:45Z'
+rejected_at: '2026-08-13T18:05:45Z'

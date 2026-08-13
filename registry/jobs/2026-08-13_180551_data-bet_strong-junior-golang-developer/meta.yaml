@@ -1,0 +1,34 @@
+schema_version: 2
+id: 492a6727-202d-4a02-b923-498b876c8faa
+title: Strong Junior Golang Developer
+company: DATA.BET
+company_url: https://jobs.dou.ua/companies/databet/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '360895'
+  url: https://jobs.dou.ua/companies/databet/vacancies/360895/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 10 серпня
+    listing_summary: We’re looking for a Golang Engineer ready for the next step in
+      their backend career to join our team and contribute to building scalable, high-performance
+      systems.
+published_at: '2026-08-10'
+discovered_at: '2026-08-13T18:05:51Z'
+updated_at: '2026-08-13T18:05:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:05:51Z'
+analysis_priority: 100
+fingerprint: sha256:8e13b6f811ad072c43f80c7be8858562f52a485bb2ad458d680240180909ff56
+data_source: dou
+content_source: dou
+company_content_source: dou

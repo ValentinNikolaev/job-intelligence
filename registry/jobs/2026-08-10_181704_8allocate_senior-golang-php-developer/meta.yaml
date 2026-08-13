@@ -12,10 +12,6 @@ sources:
   url: https://jobs.dou.ua/companies/8allocate/vacancies/369182/
   metadata:
     discovered_by:
-    - query_index: 1
-      name: php-remote
-      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
-      category: PHP
     - query_index: 2
       name: golang-remote
       url: https://jobs.dou.ua/vacancies/?remote&category=Golang
@@ -27,7 +23,7 @@ sources:
       and enables customers to book services.'
 published_at: '2026-08-10'
 discovered_at: '2026-08-10T18:17:04Z'
-updated_at: '2026-08-10T18:17:04Z'
+updated_at: '2026-08-13T18:05:51Z'
 status: found
 status_history:
 - status: found

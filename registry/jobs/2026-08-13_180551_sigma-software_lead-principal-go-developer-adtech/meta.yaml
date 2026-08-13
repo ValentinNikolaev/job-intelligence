@@ -1,0 +1,36 @@
+schema_version: 2
+id: 4de01b86-38f8-4cac-9564-5fcec511783b
+title: Lead/Principal Go Developer (AdTech)
+company: Sigma Software
+company_url: https://jobs.dou.ua/companies/sigma-software/vacancies/
+location: Київ, Харків, Львів, Дніпро, Одеса, Вінниця, Івано-Франківськ, Луцьк, Моршин,
+  Полтава, Суми, Тернопіль, Черкаси, Чернівці, Будапешт (Угорщина), Бургас (Болгарія),
+  Варшава (Польща), Краків (Польща), Лісабон (Португалія), Познань (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '364422'
+  url: https://jobs.dou.ua/companies/sigma-software/vacancies/364422/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 13 серпня
+    listing_summary: Are you ready to take on a high-impact role in building cutting-edge
+      advertising technology? We are looking for a Lead/Principal Go Developer to
+      join our team and design a high-load, low-latency real-time bidding platform.
+published_at: '2026-08-13'
+discovered_at: '2026-08-13T18:05:51Z'
+updated_at: '2026-08-13T18:05:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:05:51Z'
+analysis_priority: 100
+fingerprint: sha256:4c6d3505d9ce5c7298046ec3bcb5f65eaa07165f0890e6a96e985a4be2d00de3
+data_source: dou
+content_source: dou
+company_content_source: dou

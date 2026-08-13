@@ -1,0 +1,24 @@
+schema_version: 2
+id: bafc12fa-7960-44ba-b6a8-040765bab39a
+title: Svilupparore Backend Golang
+company: mondogaming srl
+company_url: null
+location: Cerignola, Provincia di Foggia
+remote: null
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5840402108'
+  url: https://www.adzuna.it/details/5840402108?utm_medium=api&utm_source=b6674f60
+published_at: '2026-08-13T17:31:41Z'
+discovered_at: '2026-08-13T18:05:44Z'
+updated_at: '2026-08-13T18:05:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:05:44Z'
+analysis_priority: 0
+fingerprint: sha256:7c53667008460a0c7fdc16f58bec43cdaabf718b599aa848b7f302ec54374fb8
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

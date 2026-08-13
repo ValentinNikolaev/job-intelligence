@@ -1,0 +1,32 @@
+schema_version: 2
+id: 3572bf89-1033-417b-87af-8cf3db7ec0f8
+title: Senior Go / Kubernetes Developer - Cloud & Edge Infrastructure (Freelance,
+  Remote)
+company: Sidekick Network GmbH & Co. KG
+company_url: null
+location: Bonn
+remote: true
+employment_type: Freelance, professional / experienced
+sources:
+- source: arbeitnow
+  source_job_id: senior-go-kubernetes-developer-cloud-edge-infrastructure-freelance-remote-bonn-235710
+  url: https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/senior-go-kubernetes-developer-cloud-edge-infrastructure-freelance-remote-bonn-235710
+  metadata:
+    tags:
+    - Remote
+    - IT
+    job_types:
+    - Freelance
+    - professional / experienced
+published_at: '2026-08-13T16:00:33Z'
+discovered_at: '2026-08-13T18:05:45Z'
+updated_at: '2026-08-13T18:05:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:05:45Z'
+analysis_priority: 0
+fingerprint: sha256:edd4aace0e4d9886e994d9b9ff7b7b261072d08cec0b80f887e1efdc589a8842
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
