@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2018593372224646696'
+source_url: https://jooble.org/away/2018593372224646696?p=1&pos=24&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=114&brelb=10&scr=2650.1646&bscr=2650.1646&aq=1600093411134025488&elckey=-7582687628990049038
+title: Senior Backend Engineer
+company: Uniswap Labs
+location: New York, NY
+published_at: '2026-08-08T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T00:19:15Z'
+rejected_at: '2026-08-13T00:19:15Z'

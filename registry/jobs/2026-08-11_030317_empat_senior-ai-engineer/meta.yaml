@@ -74,21 +74,15 @@ sources:
     - Senior-AI-Data-Engineer
     expiry_at: '2026-10-06T12:09:39Z'
     discovered_by:
-    - query_index: 5
-      parameters:
-        seniority: Senior
-        q: backend engineer
-        worldwide: 'true'
-        sort: recent
     - query_index: 6
       parameters:
         seniority: Senior
-        q: golang
         worldwide: 'true'
+        q: golang
         sort: recent
 published_at: '2026-08-07T12:09:40Z'
 discovered_at: '2026-08-11T03:03:17Z'
-updated_at: '2026-08-11T03:03:17Z'
+updated_at: '2026-08-13T00:19:13Z'
 status: found
 status_history:
 - status: found
