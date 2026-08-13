@@ -1,0 +1,24 @@
+schema_version: 2
+id: 54b34463-a87b-42d8-a7ab-5e2293645f44
+title: Backend Software Engineer - Spacetime
+company: Aalyria
+company_url: null
+location: Remote
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '7134220760648959068'
+  url: https://jooble.org/desc/7134220760648959068?ckey=remote+golang+backend+engineer&rgn=55180&pos=3&groupId=1106121903&elckey=-5108208662884966895&p=1&aq=-422044819983792269&cid=15922&jobAge=12&brelb=115&bscr=814.83014&scr=814.83014
+published_at: '2026-08-13T00:00:00.0000000'
+discovered_at: '2026-08-13T18:18:28Z'
+updated_at: '2026-08-13T18:18:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-13T18:18:28Z'
+analysis_priority: 0
+fingerprint: sha256:1a1b0dab6cf99951d56b3228620d72ca468619508b3da3680086f642f9552f51
+data_source: jooble
+content_source: jooble
+company_content_source: null
