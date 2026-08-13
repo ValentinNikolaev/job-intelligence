@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5023967909915573854'
+source_url: https://jooble.org/away/-5023967909915573854?p=1&pos=7&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=102&brelb=100&scr=2650.0754&bscr=2650.0754&aq=-495386200802538647&elckey=241612145138902128
+title: Senior MTS Backend Engineer (eBay Live)
+company: eBay
+location: San Jose, CA
+published_at: '2026-08-09T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T12:17:15Z'
+rejected_at: '2026-08-13T12:17:15Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7530942205265199818'
+source_url: https://jooble.org/away/-7530942205265199818?p=1&pos=15&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=78&brelb=10&scr=2427.5923&bscr=2427.5923&aq=-495386200802538647&elckey=241612145138902128
+title: Senior Backend Engineer
+company: Summit Human Capital
+location: United States
+published_at: '2026-08-10T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-13T12:17:15Z'
+rejected_at: '2026-08-13T12:17:15Z'
