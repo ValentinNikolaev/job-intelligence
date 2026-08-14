@@ -1,0 +1,20 @@
+score: 52
+recommendation: possible_match
+summary: Relevant PHP, e-commerce, REST API, enterprise integration, troubleshooting,
+  and production-stability experience are present, but central BigCommerce specialization
+  is not evidenced.
+strengths:
+- Strong PHP and Laravel background with e-commerce and integration experience.
+- Relevant REST APIs, data flows, troubleshooting, and reliability work.
+gaps:
+- No explicit BigCommerce, Stencil, webhooks, or BigCommerce production experience.
+- No explicit Dynamics 365 Business Central or listed commerce tooling.
+concerns:
+- BigCommerce expertise is a core requirement rather than a peripheral technology.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T16:27:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:abeaddd2d312df734ce19cd2c35958ebd0eb5ced54406aa670e050fca79a6964
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 84
+recommendation: strong_match
+summary: Strong backend fit for a PHP-oriented full-stack role with substantial PHP,
+  Laravel, APIs, databases, microservices, CI/CD, and production support experience.
+strengths:
+- Extensive PHP backend and Laravel experience.
+- Strong AWS, Kubernetes, SQL, REST, microservices, and CI/CD background.
+- Evidence of ownership, optimization, and production troubleshooting.
+gaps:
+- Frontend depth is not established in the candidate profile.
+concerns:
+- The full-stack scope and exact frontend expectations are unclear.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T16:27:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:ae70b5b79c57a4057c3a4ff84b04d1ee5d16417428002dda24126800548ff54c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
