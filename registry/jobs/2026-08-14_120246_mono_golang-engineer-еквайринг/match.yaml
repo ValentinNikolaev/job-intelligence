@@ -1,0 +1,23 @@
+score: 92
+recommendation: strong_match
+summary: Strong fit for a remote Golang fintech backend role requiring microservices,
+  PostgreSQL, Elasticsearch, reliability, and high-load production experience.
+strengths:
+- More than four years of commercial backend experience and recent production Go ownership.
+- Demonstrated microservices, event-driven systems, PostgreSQL, Elasticsearch, testing,
+  observability, and reliability work.
+- Relevant fintech and payment-system experience from CoinsBank/bit-x, including Stripe,
+  PayPal, and Skrill integrations.
+gaps:
+- Kafka, gRPC, and direct payment-processing architecture experience are not clearly
+  evidenced.
+concerns:
+- The role is Ukraine-oriented and the candidate is based in Italy; remote cross-border
+  employment details are unspecified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T12:24:00Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b0439cfd03b3a286552bc1e30c6ac8af2a367da3ae8e5c06aab0c0129353aaec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

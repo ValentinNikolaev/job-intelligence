@@ -1,19 +1,20 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Strong Go, PostgreSQL, AWS, SQS/S3, integrations, and SaaS-backend alignment, with timezone and seniority details to confirm.
+Strong fit for a remote Golang backend role involving integration systems, PostgreSQL, AWS, and scalable SaaS engineering.
 
 ## Why it matches
 
-- Go backend, AWS, PostgreSQL, messaging, integrations, and automation experience are directly supported.
-- Proven scalable service design, monitoring, retries, and production reliability work.
+- Recent Go backend work building integrations and resilient automation services.
+- Direct evidence for PostgreSQL, AWS, production reliability, APIs, and distributed backend architecture.
+- Senior experience scaling systems and collaborating across product and engineering concerns.
 
 ## Gaps
 
-- The posting emphasizes Node.js, TypeScript, and React, which are not documented as candidate experience.
+- The excerpt does not establish experience with React, TypeScript, Node.js, SQS, or S3 specifically.
 
 ## Concerns
 
-- Tulsa-based client and remote arrangement may impose U.S. hours; this is not specified.
+- The posting is a recruiter-mediated summary with limited detail about seniority, team scope, and employment geography.
