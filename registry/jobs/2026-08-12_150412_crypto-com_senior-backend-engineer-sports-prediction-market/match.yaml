@@ -1,23 +1,23 @@
 score: 84
 recommendation: strong_match
-summary: Senior Backend Engineer (Sports & Prediction Markets) - Golang at Crypto.com
-  has relevant backend evidence, with role-specific requirements assessed from the
-  sealed posting.
+summary: Strong match for senior Go backend work in a high-throughput prediction-market
+  environment, supported by relevant backend and cryptocurrency experience.
 strengths:
-- Documented senior backend experience across Go and PHP, APIs, scalable services,
-  and production reliability.
-- Relevant architecture, database, cloud, monitoring, and troubleshooting experience
-  is supported by the candidate profile.
+- Recent Go backend ownership, scalable services, resilient messaging, and production
+  monitoring.
+- Cryptocurrency/fintech-related domain background and event-driven high-throughput
+  architecture experience.
+- Remote setup is explicitly indicated and senior backend scope is directly relevant.
 gaps:
-- Some role-specific technologies, domain requirements, or infrastructure details
-  are not explicitly evidenced in the candidate profile.
+- Sports prediction-market domain and all details of the 24/7 operational model are
+  not explicitly evidenced.
 concerns:
-- The syndicated or abbreviated posting leaves some employer, timezone, eligibility,
-  or complete-requirement details uncertain.
+- The posting excerpt does not establish working-hour expectations or full eligibility
+  details.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-12T15:35:22Z'
+analyzed_at: '2026-08-14T09:21:21Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:e9e9f62a1fae10adbc04f8ca9f0675214be3009293f8660bb16c90163dec2792
+job_version: sha256:27c951e4fc0d0e3f079221a1719d5b2456ccef67641529d9e7fdd8e7bb611d52
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

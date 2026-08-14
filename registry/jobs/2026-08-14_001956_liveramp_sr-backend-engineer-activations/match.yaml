@@ -1,0 +1,19 @@
+score: 63
+recommendation: possible_match
+summary: Backend engineering experience and some Go alignment fit, but the role appears
+  centered on Java or Scala activation systems.
+strengths:
+- Demonstrated backend service, API, event-driven, and production-reliability experience.
+- Recent Go work and experience collaborating across product and engineering teams.
+gaps:
+- Java or Scala is presented as the primary language, with Go only where appropriate.
+concerns:
+- U.S. location and the abbreviated posting leave European remote eligibility and
+  working hours uncertain.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T09:21:21Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f3989c2ce93eef69f41beefc161cfc09bd459c693b6a35e563b854682064c87d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

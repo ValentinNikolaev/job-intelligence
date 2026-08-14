@@ -1,0 +1,20 @@
+score: 76
+recommendation: match
+summary: Go backend and production reliability experience fit the role, with a meaningful
+  location advantage from the Poland-compatible remote setup.
+strengths:
+- Go backend services, APIs, retries, monitoring, and business-critical reliability
+  work are supported.
+- Experience with regulated or operationally sensitive systems, AWS, queues, and event-driven
+  architecture.
+gaps:
+- MongoDB and IBM MQ are not documented in the candidate profile.
+concerns:
+- Temporary B2B terms and exact Poland work-eligibility requirements need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T09:21:21Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:1550c2607cb9b242ec8a49dde51fe69b5bf813ef6d51b7a6ac7bf804ea594a9e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
