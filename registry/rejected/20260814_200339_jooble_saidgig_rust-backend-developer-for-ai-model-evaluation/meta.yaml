@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4514852735414350884'
+source_url: https://jooble.org/away/4514852735414350884?p=1&pos=50&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=1406&brelb=15&scr=244.34966&bscr=244.34966&aq=991699016544968844&elckey=4423514186942170075
+title: Rust Backend Developer for AI Model Evaluation
+company: SaidGig
+location: United States
+published_at: '2026-06-17T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-06-17T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T20:03:39Z'
+rejected_at: '2026-08-14T20:03:39Z'

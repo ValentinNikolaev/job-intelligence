@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '148658'
+source_url: https://jobicy.com/jobs/148658-customer-solutions-engineer
+title: Customer Solutions Engineer
+company: Enode
+location: Europe,  Norway
+published_at: '2026-08-05T04:40:05Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-05T04:40:05Z is older than 7 days
+updated_at: '2026-08-14T20:03:37Z'
+rejected_at: '2026-08-14T20:03:37Z'

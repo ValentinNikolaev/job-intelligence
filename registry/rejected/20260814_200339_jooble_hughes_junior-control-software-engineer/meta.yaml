@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6638920186701265964'
+source_url: https://jooble.org/desc/6638920186701265964?ckey=backend+technical+lead&rgn=55179&pos=7&groupId=698760247&elckey=-5852293165469999381&p=1&aq=7900879087423201704&cid=15922&jobAge=7886&brelb=100&bscr=10.706208&scr=10.706208
+title: Junior Control Software Engineer
+company: Hughes
+location: Italian Republic
+published_at: '2025-09-20T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2025-09-20T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T20:03:39Z'
+rejected_at: '2026-08-14T20:03:39Z'
