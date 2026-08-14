@@ -1,0 +1,18 @@
+score: 78
+recommendation: match
+summary: Go backend, technical leadership, distributed systems, and production reliability
+  align well, with AdTech-specific experience not established.
+strengths:
+- Recent Go backend ownership and event-driven architecture.
+- Technical leadership, mentoring, architecture, CI/CD, and observability experience.
+gaps:
+- AdTech domain and any specialized Go requirements are not documented.
+concerns:
+- Principal-level scope and stakeholder expectations need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T08:20:53Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:4345bc35031a942906afc8ec484d178440f06de115066854f893821120c10108
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

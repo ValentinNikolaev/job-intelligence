@@ -1,0 +1,19 @@
+score: 88
+recommendation: strong_match
+summary: Excellent alignment across senior PHP, Laravel/Symfony, PostgreSQL, distributed
+  systems, Kubernetes, RabbitMQ, APIs, mentoring, and agent-assisted engineering.
+strengths:
+- Extensive senior PHP experience with Laravel/Symfony and PostgreSQL.
+- Kubernetes, RabbitMQ, REST APIs, architecture, reviews, and mentoring are documented.
+- Current Codex and AI-assisted backend workflow is directly relevant.
+gaps:
+- Redis Streams and some listed protocol/design specifics are not explicitly evidenced.
+concerns:
+- Ukraine-related location context should be confirmed despite remote wording.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T08:20:53Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b7326dd879d54d0af17ded534d60e49b00d8cd577471a763364b6d502dac770a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

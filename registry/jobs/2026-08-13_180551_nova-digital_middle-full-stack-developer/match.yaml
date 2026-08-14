@@ -1,0 +1,18 @@
+score: 58
+recommendation: possible_match
+summary: Backend fundamentals are strong, but the middle-level full-stack scope likely
+  requires frontend experience that the profile does not establish.
+strengths:
+- Strong PHP/Go backend, REST, SQL, microservices, and infrastructure experience.
+gaps:
+- Frontend technologies and recent full-stack delivery are not documented.
+- Middle-level role may not fit the candidate's seniority.
+concerns:
+- The role's full-stack emphasis is a material uncertainty.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-14T08:20:53Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:00bc13d9d61f0c53a7c18d7642f63c676c97aa9ebf80b8186711ac16fff0eccd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
