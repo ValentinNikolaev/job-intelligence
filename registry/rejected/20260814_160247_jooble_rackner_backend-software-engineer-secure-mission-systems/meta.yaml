@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8959292228201202064'
+source_url: https://jooble.org/away/-8959292228201202064?p=1&pos=36&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=538&brelb=15&scr=533.12&bscr=533.12&aq=-3038824512324912945&elckey=-1485658968421592729
+title: Backend Software Engineer — Secure Mission Systems
+company: Rackner
+location: Remote
+published_at: '2026-07-23T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-23T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T16:02:47Z'
+rejected_at: '2026-08-14T16:02:47Z'

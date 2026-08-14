@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '9113981522340240023'
+source_url: https://jooble.org/away/9113981522340240023?p=1&pos=32&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=514&brelb=15&scr=1152.8905&bscr=1152.8905&aq=3940894850629574146&elckey=4121851565786079351
+title: Senior Software Engineer, Backend
+company: Camunda
+location: Remote
+published_at: '2026-07-24T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-24T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T16:02:47Z'
+rejected_at: '2026-08-14T16:02:47Z'

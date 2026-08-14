@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1954966255773931810'
+source_url: https://jooble.org/away/1954966255773931810?p=1&pos=20&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=706&brelb=15&scr=613.14307&bscr=613.14307&aq=-3038824512324912945&elckey=-1485658968421592729
+title: Backend Engineer with strong applied ML experience
+company: Dwelly
+location: Remote
+published_at: '2026-07-16T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-16T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T16:02:47Z'
+rejected_at: '2026-08-14T16:02:47Z'

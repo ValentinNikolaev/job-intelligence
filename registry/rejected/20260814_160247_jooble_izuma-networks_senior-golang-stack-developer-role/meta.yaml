@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '9136119951618830285'
+source_url: https://jooble.org/away/9136119951618830285?p=1&pos=44&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=1882&brelb=15&scr=376.4946&bscr=376.4946&aq=-3038824512324912945&elckey=-1485658968421592729
+title: Senior Golang Stack Developer Role
+company: Izuma Networks
+location: Austin, TX
+published_at: '2026-05-28T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-05-28T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T16:02:47Z'
+rejected_at: '2026-08-14T16:02:47Z'

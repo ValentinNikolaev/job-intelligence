@@ -1,0 +1,34 @@
+schema_version: 2
+id: d2d7d820-7122-4cd1-b96f-1fc94f4f2fa6
+title: PHP Developer (Billing)
+company: Brainstack
+company_url: https://jobs.dou.ua/companies/brainstack/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369880'
+  url: https://jobs.dou.ua/companies/brainstack/vacancies/369880/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 14 серпня
+    listing_summary: Привіт, ми — Brainstack, українська мультипродуктова IT-компанія.
+      Якщо ти шукаєш простір можливостей для постійного масштабування і любиш задачі
+      із зірочкою — тоді тобі до нас.
+published_at: '2026-08-14'
+discovered_at: '2026-08-14T16:02:40Z'
+updated_at: '2026-08-14T16:02:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T16:02:40Z'
+analysis_priority: 100
+fingerprint: sha256:4f7b31f4148b2321ebcb3f97ef780be63a5866c0619ccb913ad5df2d6f80ce99
+data_source: dou
+content_source: dou
+company_content_source: dou
