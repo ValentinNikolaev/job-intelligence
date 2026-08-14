@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-765233753767678090'
+source_url: https://jooble.org/away/-765233753767678090?p=1&pos=48&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=54&brelb=10&scr=2213.8257&bscr=2213.8257&aq=-4921620124262240011&elckey=7963989341642524749
+title: Senior Backend Engineer
+company: micro1
+location: United States
+published_at: '2026-08-12T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-14T12:16:20Z'
+rejected_at: '2026-08-14T12:16:20Z'

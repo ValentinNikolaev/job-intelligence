@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3719000563035419624'
+source_url: https://jooble.org/away/-3719000563035419624?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=3702&brelb=15&scr=2426.7197&bscr=2426.7197&aq=-4921620124262240011&elckey=7963989341642524749
+title: Senior Backend Solana Rust Engineer -
+company: Inner Circle Agency Inc.
+location: New York, NY
+published_at: '2026-03-13T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-03-13T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T12:16:20Z'
+rejected_at: '2026-08-14T12:16:20Z'

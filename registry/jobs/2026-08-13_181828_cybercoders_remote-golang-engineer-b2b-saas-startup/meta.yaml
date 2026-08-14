@@ -9,10 +9,10 @@ employment_type: null
 sources:
 - source: jooble
   source_job_id: '4451767382559098026'
-  url: https://jooble.org/away/4451767382559098026?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=114&brelb=100&scr=1003.6544&bscr=1003.6544&aq=-8753136142868401055&elckey=-5467820966694098497
-published_at: '2026-08-09T00:00:00.0000000'
+  url: https://jooble.org/away/4451767382559098026?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=6&brelb=100&scr=793.0737&bscr=793.0737&aq=4045980679278708075&elckey=2356478807434852669
+published_at: '2026-08-14T00:00:00.0000000'
 discovered_at: '2026-08-13T18:18:28Z'
-updated_at: '2026-08-14T00:19:56Z'
+updated_at: '2026-08-14T12:16:20Z'
 status: found
 status_history:
 - status: found

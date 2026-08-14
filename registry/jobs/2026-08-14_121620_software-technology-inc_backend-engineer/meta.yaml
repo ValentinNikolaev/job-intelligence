@@ -1,0 +1,24 @@
+schema_version: 2
+id: 9b703b48-2ec3-4ee2-9ff6-1b99723920d5
+title: Backend Engineer
+company: Software Technology Inc
+company_url: null
+location: Reston, VA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '7160066973574418659'
+  url: https://jooble.org/away/7160066973574418659?p=1&pos=9&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=102&brelb=10&scr=726.65265&bscr=726.65265&aq=4045980679278708075&elckey=2356478807434852669
+published_at: '2026-08-10T00:00:00.0000000'
+discovered_at: '2026-08-14T12:16:20Z'
+updated_at: '2026-08-14T12:16:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T12:16:20Z'
+analysis_priority: 0
+fingerprint: sha256:b6bd6ef1f2dc3eda3fb5af4f8a96c74644db10e631ae5b2f9b9e6f7ebd759b0c
+data_source: jooble
+content_source: jooble
+company_content_source: null
