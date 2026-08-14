@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8906203272086015199'
+source_url: https://jooble.org/away/-8906203272086015199?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=36&brelb=15&scr=30.201935&bscr=30.201935&aq=-6724709559362895633&elckey=-189201432007362793
+title: Senior Talent Acquisition Partner (AI SaaS)
+company: DualEntry
+location: Italian Republic
+published_at: '2026-08-13T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-14T18:18:04Z'
+rejected_at: '2026-08-14T18:18:04Z'

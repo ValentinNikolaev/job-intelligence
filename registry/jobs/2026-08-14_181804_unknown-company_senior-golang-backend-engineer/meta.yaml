@@ -1,0 +1,24 @@
+schema_version: 2
+id: 79f895ba-c22f-429c-8f0d-7c14d8991a09
+title: Senior Golang Backend Engineer
+company: Unknown company
+company_url: null
+location: Atlanta, GA
+remote: true
+employment_type: Temporary
+sources:
+- source: jooble
+  source_job_id: '-2698685905385620035'
+  url: https://jooble.org/away/-2698685905385620035?p=1&pos=1&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=36&brelb=15&scr=3009.9998&bscr=3009.9998&aq=2711692809154178726&elckey=2614168533618655726
+published_at: '2026-08-13T00:00:00.0000000'
+discovered_at: '2026-08-14T18:18:04Z'
+updated_at: '2026-08-14T18:18:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T18:18:04Z'
+analysis_priority: 0
+fingerprint: sha256:ce6df8b82e8cceff2a019c2ca2ef697ce07816b2111e4370509f003eb84e7d70
+data_source: jooble
+content_source: jooble
+company_content_source: null

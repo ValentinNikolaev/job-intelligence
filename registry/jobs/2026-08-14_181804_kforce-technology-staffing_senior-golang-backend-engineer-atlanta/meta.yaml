@@ -1,0 +1,24 @@
+schema_version: 2
+id: a958ac65-38d5-436a-9c83-4473227e90b0
+title: Senior Golang Backend Engineer - Atlanta
+company: Kforce Technology Staffing
+company_url: null
+location: Atlanta, GA
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '6010855384246272300'
+  url: https://jooble.org/away/6010855384246272300?p=1&pos=2&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=36&brelb=15&scr=2978.7043&bscr=2978.7043&aq=2711692809154178726&elckey=2614168533618655726
+published_at: '2026-08-13T00:00:00.0000000'
+discovered_at: '2026-08-14T18:18:04Z'
+updated_at: '2026-08-14T18:18:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T18:18:04Z'
+analysis_priority: 0
+fingerprint: sha256:16b2df25ac145279fd37a01b0fce696958e1c718ea9445f98502b02d12914711
+data_source: jooble
+content_source: jooble
+company_content_source: null
