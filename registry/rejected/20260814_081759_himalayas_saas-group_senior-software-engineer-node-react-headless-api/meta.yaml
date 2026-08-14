@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/saas-group/jobs/senior-software-engineer-node-react-headless-api
+source_url: https://himalayas.app/companies/saas-group/jobs/senior-software-engineer-node-react-headless-api
+title: Senior Software Engineer (Node & React, Headless API)
+company: saas.group
+location: Worldwide
+published_at: '2026-08-12T23:34:46Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-14T08:17:59Z'
+rejected_at: '2026-08-14T08:17:59Z'

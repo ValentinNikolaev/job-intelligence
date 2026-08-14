@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3257084653640982548'
+source_url: https://jooble.org/away/-3257084653640982548?p=1&pos=31&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=914&brelb=15&scr=994.4025&bscr=994.4025&aq=1362143285122668514&elckey=2054816186278761945
+title: Senior Back End Engineer
+company: Oddball
+location: Remote
+published_at: '2026-07-07T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-07T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T08:18:03Z'
+rejected_at: '2026-08-14T08:18:03Z'

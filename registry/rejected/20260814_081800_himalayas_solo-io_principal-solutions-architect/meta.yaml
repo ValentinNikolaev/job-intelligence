@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/solo-io/jobs/principal-solutions-architect-6846731079
+source_url: https://himalayas.app/companies/solo-io/jobs/principal-solutions-architect-6846731079
+title: Principal Solutions Architect
+company: solo.io
+location: Worldwide
+published_at: '2026-08-04T04:58:07Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-04T04:58:07Z is older than 7 days
+updated_at: '2026-08-14T08:18:00Z'
+rejected_at: '2026-08-14T08:18:00Z'
