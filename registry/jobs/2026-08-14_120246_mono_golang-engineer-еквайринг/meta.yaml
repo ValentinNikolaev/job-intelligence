@@ -1,0 +1,34 @@
+schema_version: 2
+id: 01dfa372-6820-4957-9922-0910fc8ac6f3
+title: Golang Engineer (Еквайринг)
+company: mono
+company_url: https://jobs.dou.ua/companies/mono/vacancies/
+location: Київ, Дніпро, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '361524'
+  url: https://jobs.dou.ua/companies/mono/vacancies/361524/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 14 серпня
+    listing_summary: 'mono — мультипродуктова IT компанія з України. Із 2017 року
+      мільйони людей муркочуть від наших продуктів: monobank, monoбізнес, Experienza,
+      Base, а тепер і monomarket. Прагнемо створити ще більше для нашої екосистеми.'
+published_at: '2026-08-14'
+discovered_at: '2026-08-14T12:02:46Z'
+updated_at: '2026-08-14T12:02:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T12:02:46Z'
+analysis_priority: 100
+fingerprint: sha256:e4276d4e399a6c7b0ebd5e0ac54235d0d79739da6550dd3f3df131e8bf414802
+data_source: dou
+content_source: dou
+company_content_source: dou

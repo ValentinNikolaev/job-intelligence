@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2012534621132829852'
+source_url: https://jooble.org/desc/2012534621132829852?ckey=remote+senior+backend+engineer&rgn=55180&pos=35&groupId=2134052230&elckey=-2404623619570618112&p=1&aq=1841285044748154818&cid=15922&jobAge=4&brelb=100&bscr=964.29767&scr=964.29767
+title: Senior Backend Engineer
+company: AuraOne Human Data
+location: Remote
+published_at: '2026-08-14T01:39:49.9467456+00:00'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-14T12:02:53Z'
+rejected_at: '2026-08-14T12:02:53Z'

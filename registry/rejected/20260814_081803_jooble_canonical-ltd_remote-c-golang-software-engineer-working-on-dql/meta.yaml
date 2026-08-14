@@ -1,7 +1,7 @@
 schema_version: 1
 source: jooble
 source_job_id: '5591504416829525778'
-source_url: https://jooble.org/away/5591504416829525778?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=266&brelb=15&scr=531.3693&bscr=531.3693&aq=4558672679177919169&elckey=-3552694347928910135
+source_url: https://jooble.org/away/5591504416829525778?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=270&brelb=15&scr=538.3208&bscr=538.3208&aq=1621015587741420394&elckey=-8012134153778290192
 title: Remote C, Golang Software Engineer working on dqlite, a Raft extension for
   SQLite
 company: Canonical Ltd.
@@ -9,5 +9,5 @@ location: Remote
 published_at: '2026-08-03T00:00:00.0000000'
 rejection_category: stale
 rejection_reason: published_at 2026-08-03T00:00:00.0000000 is older than 7 days
-updated_at: '2026-08-14T08:18:03Z'
+updated_at: '2026-08-14T12:02:53Z'
 rejected_at: '2026-08-14T08:18:03Z'
