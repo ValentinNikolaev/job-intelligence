@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1277959107853817844'
+source_url: https://jooble.org/desc/1277959107853817844?ckey=remote+senior+backend+engineer&rgn=55180&pos=5&groupId=2134052230&elckey=245470532955247596&p=1&aq=9012464914434154002&cid=15922&jobAge=24&brelb=115&bscr=2766.8145&scr=2766.8145
+title: Senior Backend Software Engineer IV
+company: Vida Health
+location: Remote
+published_at: '2026-08-13T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-14T06:29:08Z'
+rejected_at: '2026-08-14T06:29:08Z'

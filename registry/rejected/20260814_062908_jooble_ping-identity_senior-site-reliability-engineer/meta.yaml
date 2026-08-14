@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4279863331381652199'
+source_url: https://jooble.org/away/-4279863331381652199?p=1&pos=18&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=168&brelb=15&scr=24.233585&bscr=24.233585&aq=4157593521231760377&elckey=7985743407058100629
+title: Senior Site Reliability Engineer
+company: Ping Identity
+location: Italian Republic
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-07T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-14T06:29:08Z'
+rejected_at: '2026-08-14T06:29:08Z'
