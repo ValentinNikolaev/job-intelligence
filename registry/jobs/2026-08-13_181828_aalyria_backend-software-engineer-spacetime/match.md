@@ -3,17 +3,20 @@
 **Score:** 70/100  
 **Recommendation:** Match
 
-Backend engineering, Go, distributed systems, and technical leadership align, while aerospace-domain and alternate-language requirements are unclear.
+Go backend, distributed systems, reliability, and technical leadership align, while aerospace or Spacetime domain and alternate-language requirements are not evidenced.
 
 ## Why it matches
 
-- Go backend, microservices, event-driven architecture, reliability, and system design experience.
-- Technical leadership, roadmap definition, and cross-functional delivery are documented.
+- Go backend and microservices
+- event-driven architecture and reliability
+- technical leadership and cross-functional delivery
 
 ## Gaps
 
-- C/C++ or Rust and aerospace/Spacetime domain experience are not documented.
+- Aerospace or Spacetime domain
+- C/C++ or Rust
+- and any additional language requirements
 
 ## Concerns
 
-- The remote/hybrid wording and any eligibility restrictions are not fully specified.
+- Remote or hybrid arrangement and any eligibility restrictions require confirmation

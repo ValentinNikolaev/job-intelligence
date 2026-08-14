@@ -1,0 +1,22 @@
+score: 8
+recommendation: not_match
+summary: PHP microservices experience is relevant, but the vacancy legally requires
+  residence in Ukraine and FOP registration while the candidate is based in Italy.
+strengths:
+- PHP backend and microservices
+- SQL and Kubernetes exposure
+- international English-speaking collaboration
+gaps:
+- Ukraine residence
+- Ukrainian FOP registration
+- exact PHP 8+ and Docker evidence
+concerns:
+- The location restriction is explicit and prevents practical eligibility from Italy
+hard_rejection: true
+hard_rejection_reason: Vacancy explicitly limits hiring to candidates living in Ukraine;
+  candidate evidence places him in Italy.
+analyzed_at: '2026-08-14T20:30:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:718476671cea10df8bcb011c3b791ecf902d6c36d6ef1a31f4f417917f63aafd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
