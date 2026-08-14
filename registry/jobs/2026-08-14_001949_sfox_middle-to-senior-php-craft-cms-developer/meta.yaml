@@ -1,0 +1,41 @@
+schema_version: 2
+id: 1549c76b-a26b-425c-ab94-75ed789c3d9f
+title: Middle + to Senior PHP / Craft CMS Developer
+company: SFox
+company_url: https://jobs.dou.ua/companies/sfox/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369748'
+  url: https://jobs.dou.ua/companies/sfox/vacancies/369748/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 13 серпня
+    salary_label: $2300–4000
+    listing_summary: 'About the Client
+
+
+      Our client is a Norwegian digital agency working with high-end customers, including
+      clients in the Norwegian public sector.
+
+
+      The company positions itself as a high-quality technology partner, and its customers
+      expect a high standard of technical delivery.'
+published_at: '2026-08-13'
+discovered_at: '2026-08-14T00:19:49Z'
+updated_at: '2026-08-14T00:19:49Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T00:19:49Z'
+analysis_priority: 100
+fingerprint: sha256:1b95c58f571ccee6ae0c71df36e9574d53d0db502e2a17360b9b6ab0f729dc77
+data_source: dou
+content_source: dou
+company_content_source: dou

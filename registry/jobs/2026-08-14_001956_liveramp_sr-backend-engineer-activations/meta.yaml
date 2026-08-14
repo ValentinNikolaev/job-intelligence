@@ -1,0 +1,24 @@
+schema_version: 2
+id: 02d176d7-9b8e-4f30-a88e-f84d26b8745f
+title: Sr. Backend Engineer - Activations
+company: LiveRamp
+company_url: null
+location: Seattle, WA
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '5895425206576781251'
+  url: https://jooble.org/away/5895425206576781251?p=1&pos=9&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=18&brelb=100&scr=922.3099&bscr=922.3099&aq=-8753136142868401055&elckey=-5467820966694098497
+published_at: '2026-08-13T00:00:00.0000000'
+discovered_at: '2026-08-14T00:19:56Z'
+updated_at: '2026-08-14T00:19:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-14T00:19:56Z'
+analysis_priority: 0
+fingerprint: sha256:0fb2db9833af41c93b51a5b612b50abec5df5536fa5e03c5afad3d444f5d9c12
+data_source: jooble
+content_source: jooble
+company_content_source: null

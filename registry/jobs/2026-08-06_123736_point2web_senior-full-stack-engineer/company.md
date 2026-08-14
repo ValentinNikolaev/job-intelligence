@@ -1,3 +1,0 @@
-# Point2Web
-
-Point2Web is an innovative company that specializes in developing and implementing tech-enhanced marketing solutions for advertisers, publishers, agencies, and other market players. We don’t mess around when it comes to creating custom and out-of-the-box solutions that match our clients’ needs, whether it’s generating leads, acquiring new customers, or driving other...

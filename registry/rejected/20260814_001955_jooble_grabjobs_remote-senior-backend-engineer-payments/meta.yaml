@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3560674724168534259'
+source_url: https://jooble.org/away/-3560674724168534259?p=1&pos=13&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=42&brelb=10&scr=3220.218&bscr=3220.218&aq=4756830599883931969&elckey=139689567513573583
+title: Remote Senior Backend Engineer - Payments
+company: GrabJobs
+location: Philadelphia, PA
+published_at: '2026-08-12T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-14T00:19:55Z'
+rejected_at: '2026-08-14T00:19:55Z'
