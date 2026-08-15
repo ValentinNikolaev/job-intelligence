@@ -73,21 +73,15 @@ sources:
     - Senior-Software-Engineer-C++
     expiry_at: '2026-10-07T16:12:32Z'
     discovered_by:
-    - query_index: 5
-      parameters:
-        seniority: Senior
-        worldwide: 'true'
-        q: backend engineer
-        sort: recent
     - query_index: 6
       parameters:
-        seniority: Senior
-        worldwide: 'true'
         q: golang
+        worldwide: 'true'
+        seniority: Senior
         sort: recent
 published_at: '2026-08-08T16:12:32Z'
 discovered_at: '2026-08-08T18:07:43Z'
-updated_at: '2026-08-08T18:07:43Z'
+updated_at: '2026-08-15T09:57:58Z'
 status: found
 status_history:
 - status: found

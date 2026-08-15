@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '2791203860752410079'
+source_url: https://jooble.org/away/2791203860752410079?p=1&pos=41&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=195&brelb=15&scr=861.99054&bscr=861.99054&aq=-4277413550252814125&elckey=-7222979723080146041
+title: Senior Software Engineer, Backend
+company: jobgether
+location: United States
+published_at: '2026-08-07T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-07T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-15T09:58:01Z'
+rejected_at: '2026-08-15T09:58:01Z'

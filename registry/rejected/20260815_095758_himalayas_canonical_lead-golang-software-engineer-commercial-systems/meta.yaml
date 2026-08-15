@@ -1,0 +1,19 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/lead-golang-software-engineer-commercial-systems
+source_url: https://himalayas.app/companies/canonical/jobs/lead-golang-software-engineer-commercial-systems
+title: Lead Golang Software Engineer, Commercial Systems
+company: Canonical
+location: Algeria, Angola, Austria, Belgium, Botswana, Bulgaria, Burkina Faso, Burundi,
+  Cameroon, Congo, The Democratic Republic of the, Croatia, Cyprus, Czechia, Côte
+  d'Ivoire, Denmark, Egypt, Estonia, Ethiopia, Finland, France, Gabon, Germany, Ghana,
+  Greece, Hungary, Ireland, Israel, Italy, Kenya, Latvia, Libya, Lithuania, Luxembourg,
+  Madagascar, Malawi, Mali, Malta, Mauritius, Morocco, Mozambique, Namibia, Netherlands,
+  Nigeria, Norway, Poland, Portugal, Romania, Russian Federation, Rwanda, Senegal,
+  Slovakia, South Africa, South Sudan, Spain, Sudan, Sweden, Switzerland, Tanzania,
+  Tunisia, Turkey, Uganda, Ukraine, United Kingdom, Western Sahara, Zambia, Zimbabwe
+published_at: '2026-07-21T20:33:21Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-21T20:33:21Z is older than 7 days
+updated_at: '2026-08-15T09:57:58Z'
+rejected_at: '2026-08-15T09:57:58Z'

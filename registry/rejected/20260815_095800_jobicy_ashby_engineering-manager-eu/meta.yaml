@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150687'
+source_url: https://jobicy.com/jobs/150687-engineering-manager-eu
+title: Engineering Manager - EU
+company: Ashby
+location: Europe
+published_at: '2026-08-15T05:54:40Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-15T09:58:00Z'
+rejected_at: '2026-08-15T09:58:00Z'

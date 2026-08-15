@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/castor/jobs/senior-platform-engineer
+source_url: https://himalayas.app/companies/castor/jobs/senior-platform-engineer
+title: Senior Platform Engineer
+company: Castor
+location: Worldwide
+published_at: '2026-08-14T21:38:49Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-15T09:57:58Z'
+rejected_at: '2026-08-15T09:57:58Z'

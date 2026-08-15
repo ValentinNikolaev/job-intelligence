@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8851161018194705758'
+source_url: https://jooble.org/desc/-8851161018194705758?ckey=remote+senior+backend+engineer&rgn=55180&pos=48&groupId=2134052230&elckey=-7222979723080146041&p=1&aq=-4277413550252814125&cid=15922&jobAge=27&brelb=100&bscr=845.36035&scr=845.36035
+title: Senior Backend Engineer - MapMyFitness
+company: Outside
+location: Colorado
+published_at: '2026-08-14T22:44:59.9764800+00:00'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-15T09:58:01Z'
+rejected_at: '2026-08-15T09:58:01Z'

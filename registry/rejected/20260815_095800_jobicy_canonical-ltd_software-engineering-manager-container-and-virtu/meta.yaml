@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149973'
+source_url: https://jobicy.com/jobs/149973-software-engineering-manager-container-and-virtualisation-infrastructure
+title: Software Engineering Manager - Container and Virtualisation Infrastructure
+company: Canonical Ltd.
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-08-01T03:03:53Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-01T03:03:53Z is older than 7 days
+updated_at: '2026-08-15T09:58:00Z'
+rejected_at: '2026-08-15T09:58:00Z'
