@@ -55,4 +55,4 @@ Das Praktikum ist ab sofort für 6 Monate zu besetzen. Wenn du etwas bewegen mö
 Bewirb dich jetzt! Wir freuen uns über Deine formlose Bewerbung, alles weitere besprechen wir gemeinsam.
 Egal, welchen Hintergrund, welche Herkunft oder welche Geschlechtsidentität du mitbringst – bei uns zählt, wer du als Person bist. Wir fördern eine Kultur des Respekts und Miteinanders, in der jede Stimme gehört wird, persönliche Weiterentwicklung möglich ist und Wertschätzung an erster Stelle steht.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

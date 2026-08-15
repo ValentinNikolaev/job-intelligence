@@ -4,8 +4,8 @@ Posted: 2026-08-08T13:29:22Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-08T13:29:22Z is older than 7 days
 
 This is not a ticket execution role. You get the problem and the context, you propose the solution, you build it, you ship it, and you defend the technical decisions directly in front of the client. The mandate is to take a production-grade LLM agent from read-only insight toward supervised action — hardening it for scale and staging it up a capability ladder (Explains → Recommends → Orchestrates → Acts). AI-assisted engineering (Claude Code, Cursor, Copilot, or equivalent) is the baseline here, not a differentiator — but you sign the code, and "the AI wrote it" is never an answer when something breaks in production.
 

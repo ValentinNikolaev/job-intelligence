@@ -135,4 +135,4 @@ Join us in building the healthcare we all dream of!
 
 *Please contact hr.dataprivacy(at)doctolib.com for inquiries or to exercise your rights.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -73,4 +73,4 @@ You’ll work remotely and closely with the IT Administrator team to ensure new 
 
 - Recognition in internal reports and operational leadership briefings
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

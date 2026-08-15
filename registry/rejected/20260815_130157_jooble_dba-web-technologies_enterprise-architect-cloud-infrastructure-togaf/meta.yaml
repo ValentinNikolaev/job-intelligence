@@ -1,7 +1,7 @@
 schema_version: 1
 source: jooble
 source_job_id: '646178804332296022'
-source_url: https://jooble.org/jdp/646178804332296022?ckey=backend+technical+lead&rgn=55179&pos=9&groupId=698760247&elckey=4128226227578152066&p=1&aq=-5864023039936009509&cid=15922&jobAge=4754&brelb=100&bscr=8.956066&scr=8.956066
+source_url: https://jooble.org/jdp/646178804332296022?ckey=backend+technical+lead&rgn=55179&pos=8&groupId=698760247&elckey=7361436341853525953&p=1&aq=916318957002476309&cid=15922&jobAge=4758&brelb=100&bscr=8.786039&scr=8.786039
 title: Enterprise Architect (Cloud & Infrastructure, TOGAF, Azure, AWS, SaaS, IaaS,
   PaaS, Active Directory, SSO, IT Strategies, Cloud Computing) in Eagle, Idaho
 company: DBA Web Technologies
@@ -9,5 +9,5 @@ location: Italian Republic
 published_at: '2026-01-29T04:16:41.6870000'
 rejection_category: stale
 rejection_reason: published_at 2026-01-29T04:16:41.6870000 is older than 7 days
-updated_at: '2026-08-15T13:01:57Z'
+updated_at: '2026-08-15T17:02:04Z'
 rejected_at: '2026-08-15T13:01:57Z'

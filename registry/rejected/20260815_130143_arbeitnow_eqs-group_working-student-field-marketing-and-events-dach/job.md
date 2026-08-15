@@ -127,4 +127,4 @@ Du arbeitest gerne mit internationalen Kolleg:innen zusammen, kommunizierst souv
 
 Du identifizierst dich mit der Mission der EQS Group, Unternehmen dabei zu unterstützen, Vertrauen durch Compliance aufzubauen, und möchtest aktiv dazu beitragen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

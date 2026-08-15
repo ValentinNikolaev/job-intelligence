@@ -50,4 +50,4 @@ If you match most of this, apply. We would rather read your application than hav
 - Contributing to a leading teleophthalmology platform that sustainably improves access to eye care
 - Established B2B2C model with over 800 partner optician locations and more than 500,000 screenings performed
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

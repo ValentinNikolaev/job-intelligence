@@ -109,4 +109,4 @@ Auf unserer Homepage www.skf-berlin.de findest Du weitere Informationen zu unser
 
 Unsere Datenschutzhinweise findest Du unter [www.skf-berlin.de/datenschutzerklaerung.](http://www.skf-berlin.de/datenschutzerklaerung.)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

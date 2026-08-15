@@ -120,4 +120,4 @@ At Picnic you get 30 holidays, we cover your travel expenses and offer a pension
 
 Career paths here are as varied as the people on them. Some grow vertically, building deep expertise and a team around them as their project expands. Others move laterally - from Commercial to Fulfilment, Distribution to Customer, or wherever their strengths and ambitions take them. What they share is real ownership, real impact, and a career they shaped themselves.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

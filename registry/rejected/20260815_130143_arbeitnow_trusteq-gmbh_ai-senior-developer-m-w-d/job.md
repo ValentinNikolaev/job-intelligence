@@ -86,4 +86,4 @@ Posted: 2026-08-15T11:09:30Z
 - **Mitarbeiterbenefits: **Flexible Arbeitsmodelle, BahnCard, JobRad, Spendit-Card, Wellpass und betriebliche Altersvorsorge sorgen für dein Wohlbefinden. Außerdem gibt es bei uns im Office den Besten Kaffee aus unserer neuen Siebträgermaschine und einen immer gefüllten Soft-Getränkekühlschrank.
 - **Attraktive Urlaubsregelung: **Du genießt 30 Tage Urlaub im Jahr und kannst flexibel von daheim arbeiten.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

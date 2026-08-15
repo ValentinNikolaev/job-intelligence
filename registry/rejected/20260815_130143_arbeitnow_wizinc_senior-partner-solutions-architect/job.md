@@ -93,4 +93,4 @@ Wiz is an equal opportunity employer. We do not discriminate based upon race, re
 
 By submitting your application, you acknowledge that Wiz will process your personal data in accordance with [Wiz's Privacy Policy.](https://www.wiz.io/legal/privacy)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

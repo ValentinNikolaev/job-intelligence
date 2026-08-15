@@ -47,4 +47,4 @@ Du arbeitest eng mit unserer Finance Managerin sowie unserem Steuerbüro zusamme
 - Wellpass oder BahnCard, Corporate Benefits, Team-Events, jährliche Offsites.
 - Faire, wettbewerbsfähige Vergütung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
