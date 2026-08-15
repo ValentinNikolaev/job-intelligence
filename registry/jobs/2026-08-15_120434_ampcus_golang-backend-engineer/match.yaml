@@ -1,0 +1,20 @@
+score: 78
+recommendation: match
+summary: Strong Go backend and production reliability experience align with the role,
+  while the sparse posting leaves the exact responsibilities and US location expectations
+  uncertain.
+strengths:
+- Go backend engineering and APIs.
+- Production reliability, monitoring, retries, and scalable service experience.
+- AWS, Kubernetes, CI/CD, and distributed or event-driven systems.
+gaps:
+- The posting excerpt does not specify the required cloud stack or domain details.
+concerns:
+- McLean, Virginia location and remote or timezone eligibility are not confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-15T12:59:53Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:048644a53bf8cf53cb86c9f85ac5bcc18ac467abcf33e6ccd66153091beec513
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
