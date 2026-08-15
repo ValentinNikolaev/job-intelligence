@@ -1,0 +1,26 @@
+score: 18
+recommendation: not_match
+summary: The role has some backend and PHP overlap, but its mandatory Chicago arrangement
+  and Spryker Cloud Commerce OS focus conflict with the candidate's Rome-based remote
+  preference and evidence profile.
+strengths:
+- Extensive PHP backend experience, REST API design, integrations, SQL, and production
+  troubleshooting.
+- Senior backend experience includes e-commerce-related systems and high-volume services.
+gaps:
+- No evidence of Spryker Cloud Commerce OS or GraphQL as a demonstrated core skill.
+- The candidate profile does not establish authorization or willingness to work onsite
+  in Chicago.
+concerns:
+- The posting requires onsite work four days per week in Chicago with only one remote
+  day.
+- The six-month W2 engagement and U.S.-specific location introduce material eligibility
+  and logistics uncertainty.
+hard_rejection: true
+hard_rejection_reason: Mandatory Chicago onsite attendance is incompatible with the
+  Rome-based remote profile, and the role's central Spryker requirement is unsupported.
+analyzed_at: '2026-08-15T18:02:56Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:df4913125a97fdba594fbf02c137e336309e26f60efee085cd7fd986a7aa7d33
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
