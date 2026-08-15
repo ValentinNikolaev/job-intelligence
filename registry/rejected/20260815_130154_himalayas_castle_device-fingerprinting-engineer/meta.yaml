@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/castle/jobs/device-fingerprinting-engineer
+source_url: https://himalayas.app/companies/castle/jobs/device-fingerprinting-engineer
+title: Device Fingerprinting Engineer
+company: Castle
+location: Worldwide
+published_at: '2026-08-08T20:29:39Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-15T13:01:54Z'
+rejected_at: '2026-08-15T13:01:54Z'

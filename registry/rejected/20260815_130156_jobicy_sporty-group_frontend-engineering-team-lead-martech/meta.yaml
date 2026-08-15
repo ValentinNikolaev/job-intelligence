@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149869'
+source_url: https://jobicy.com/jobs/149869-frontend-engineering-team-lead-martech
+title: Frontend Engineering Team Lead - MarTech
+company: Sporty Group
+location: Europe
+published_at: '2026-07-30T14:40:15Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-30T14:40:15Z is older than 7 days
+updated_at: '2026-08-15T13:01:56Z'
+rejected_at: '2026-08-15T13:01:56Z'

@@ -50,4 +50,4 @@ Das solltest du dafür mitbringen:
 - **Mitarbeiterbenefits: **Flexible Arbeitsmodelle, BahnCard, JobRad, Spendit-Card, Wellpass und betriebliche Altersvorsorge sorgen für dein Wohlbefinden. Außerdem gibt es bei uns im Office immer einen gefüllten Soft-Getränkekühlschrank.
 - **Attraktive Urlaubsregelung: **Du genießt 30 Tage Urlaub im Jahr und kannst flexibel von daheim arbeiten.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

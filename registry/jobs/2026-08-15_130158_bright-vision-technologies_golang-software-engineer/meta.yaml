@@ -1,0 +1,24 @@
+schema_version: 2
+id: 0ad79ade-7a35-41f1-88b5-ca532328ea27
+title: Golang Software Engineer
+company: Bright Vision Technologies
+company_url: null
+location: Bellevue, WA
+remote: true
+employment_type: Full-time
+sources:
+- source: jooble
+  source_job_id: '-4646725878236462893'
+  url: https://jooble.org/desc/-4646725878236462893?ckey=remote+golang+backend+engineer&rgn=55180&pos=42&groupId=1106121903&elckey=-3424149686861114774&p=1&aq=-4191053484508455472&cid=15922&jobAge=55&brelb=100&bscr=236.6353&scr=236.6353
+published_at: '2026-08-13T00:00:00.0000000'
+discovered_at: '2026-08-15T13:01:58Z'
+updated_at: '2026-08-15T13:01:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-15T13:01:58Z'
+analysis_priority: 0
+fingerprint: sha256:1cbfbaf158b8fa1dcee95af5bfd9ad972bf294a5eb6b82c8188067cf70e82818
+data_source: jooble
+content_source: jooble
+company_content_source: null
