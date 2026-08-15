@@ -1,6 +1,6 @@
 # Werkstudent Performance Marketing & E-Commerce Operations (m/w/d)
 
-Posted: 2026-08-15T12:00:58Z
+Posted: 2026-08-15T16:17:20Z
 
 ## Rejection
 
@@ -123,4 +123,4 @@ Wenn du dich gut entwickelst und Verantwortung übernehmen möchtest, kannst du 
 
 Dann schick uns gerne ein paar kurze Infos zu dir, deinem Studium, bisherigen Erfahrungen und warum du Lust auf E-Commerce & Performance Marketing hast.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -4,8 +4,8 @@ Posted: 2026-08-08T17:48:27Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-08T17:48:27Z is older than 7 days
 
 ### Senior Python Engineer
 

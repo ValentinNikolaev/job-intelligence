@@ -87,4 +87,4 @@ Wir freuen uns auf Ihre Bewerbung, bitte senden Sie folgende Unterlagen per E-Ma
 
 - Verfügbarkeit
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

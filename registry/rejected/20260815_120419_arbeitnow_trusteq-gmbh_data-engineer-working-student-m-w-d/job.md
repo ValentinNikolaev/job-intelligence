@@ -35,4 +35,4 @@ Posted: 2026-08-15T11:09:31Z
 - **Kreativer Arbeitsplatz: **Wir geben dir die Freiheit und Zeit, kreative Lösungen zu entwickeln und bieten dir dafür die beste und modernste Hardware an (Apple oder Windows).
 - **Attraktive Urlaubsregelung: **Arbeite remote und passe deine Arbeitszeiten flexibel an dein Studium an.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

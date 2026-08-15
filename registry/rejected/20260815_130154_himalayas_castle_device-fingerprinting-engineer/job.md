@@ -4,8 +4,8 @@ Posted: 2026-08-08T20:29:39Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-08T20:29:39Z is older than 7 days
 
 Device fingerprinting is often misunderstood.
 

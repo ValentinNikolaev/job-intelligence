@@ -60,4 +60,4 @@ Du unterstützt das Team mit strukturierten Research-Ergebnissen (z. B. Markt-Sn
 - Großes **Werkstudierendennetzwerk**
 - Regelmäßige **Firmen- und Teamevents**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
