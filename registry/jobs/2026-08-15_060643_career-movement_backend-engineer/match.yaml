@@ -1,0 +1,17 @@
+score: 68
+recommendation: match
+summary: Go, APIs, data pipelines, and distributed architecture align well with the
+  candidate background.
+strengths:
+- Go backend, event-driven systems, integrations, and system design.
+gaps:
+- Python is not documented as a primary skill.
+concerns:
+- US listing and European remote eligibility require confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-15T11:01:13Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7bec0486387b8bcdc1f0d962036ae34b093701508e3b68cd7cec09432c2a3646
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

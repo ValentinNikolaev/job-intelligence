@@ -1,0 +1,17 @@
+score: 70
+recommendation: match
+summary: Senior Go backend focus aligns with distributed systems, automation, reliability,
+  and leadership experience.
+strengths:
+- Go backend, event-driven systems, support automation, and reliability.
+gaps:
+- Exact cloud stack and domain requirements are unclear from the excerpt.
+concerns:
+- US listing and timezone policy require confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-15T11:01:13Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9e3dc19754ea3a2e09c572a808961343ff452e647b95ccb83037d6f87937ac0b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

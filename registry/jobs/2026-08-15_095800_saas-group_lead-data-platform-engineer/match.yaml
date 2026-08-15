@@ -1,0 +1,17 @@
+score: 15
+recommendation: not_match
+summary: Go and event-driven leadership align partially, but fluent German and deep
+  GCP data-platform experience are unsupported.
+strengths:
+- Go, event-driven analytics, observability, and technical leadership.
+gaps:
+- No fluent German or documented GCP Cloud Run, Pub/Sub, BigQuery, Dataflow, or Terraform.
+concerns:
+- Specialized GCP and German-language role.
+hard_rejection: true
+hard_rejection_reason: Fluent German is a mandatory unsupported requirement.
+analyzed_at: '2026-08-15T11:01:13Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8ff94f2b36c1fbd7e250e9a9217d51b75f2afdf6c4d5dc5a185025e9e13fa5ea
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
