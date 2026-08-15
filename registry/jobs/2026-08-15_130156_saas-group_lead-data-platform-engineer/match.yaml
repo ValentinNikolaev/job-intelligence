@@ -1,0 +1,26 @@
+score: 20
+recommendation: not_match
+summary: Go, event-driven systems, observability, and technical leadership align,
+  but fluent German and deep GCP data-platform experience are not documented.
+strengths:
+- Documented Go
+- event-driven architecture
+- queues
+- observability
+- platform ownership
+- and technical leadership.
+gaps:
+- GCP data-platform services
+- Terraform
+- Protobuf
+- and data-platform operations are not documented; fluent German is absent.
+concerns:
+- Fluent German is mandatory for this Germany-focused role.
+hard_rejection: true
+hard_rejection_reason: Fluent German is an explicit mandatory requirement and is unsupported
+  by the candidate evidence.
+analyzed_at: '2026-08-15T15:01:20Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:29f28538eb53490071dce4d01fce06ef2f9ed7c9f207bf8237bbb7d92550344a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
