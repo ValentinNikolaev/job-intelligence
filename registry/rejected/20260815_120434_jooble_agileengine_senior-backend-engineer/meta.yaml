@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '335204981061159644'
+source_url: https://jooble.org/away/335204981061159644?p=1&pos=36&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=78&brelb=10&scr=2337.0908&bscr=2337.0908&aq=4761989154251909949&elckey=5317753576933004509
+title: Senior Backend Engineer
+company: AgileEngine
+location: United States
+published_at: '2026-08-12T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-15T12:04:34Z'
+rejected_at: '2026-08-15T12:04:34Z'

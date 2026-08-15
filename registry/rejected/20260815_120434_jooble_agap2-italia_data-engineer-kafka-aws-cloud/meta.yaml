@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1388984195041252113'
+source_url: https://jooble.org/away/1388984195041252113?p=1&pos=16&rgn=55179&cid=15922&ckey=backend+technical+lead&jobAge=54&brelb=15&scr=21.5321&bscr=21.5321&aq=1462145771636967575&elckey=-3578956068661493171
+title: Data Engineer - Kafka & AWS Cloud
+company: agap2 Italia
+location: Italian Republic
+published_at: '2026-08-13T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-15T12:04:34Z'
+rejected_at: '2026-08-15T12:04:34Z'
