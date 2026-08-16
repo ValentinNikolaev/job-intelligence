@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8913547384026347049'
+source_url: https://jooble.org/away/8913547384026347049?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=4&brelb=10&scr=2555.793&bscr=2555.793&aq=-1994028048499636864&elckey=5215830999307675964
+title: Senior Backend Software Engineer
+company: Software Technology Inc
+location: United States
+published_at: '2026-08-15T13:20:49.5470000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T00:09:18Z'
+rejected_at: '2026-08-16T00:09:18Z'

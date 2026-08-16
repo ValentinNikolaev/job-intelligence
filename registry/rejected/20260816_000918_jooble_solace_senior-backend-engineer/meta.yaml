@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '7176603716052820052'
+source_url: https://jooble.org/away/7176603716052820052?p=1&pos=34&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=114&brelb=10&scr=2368.4077&bscr=2368.4077&aq=-1994028048499636864&elckey=5215830999307675964
+title: Senior Backend Engineer
+company: Solace
+location: United States
+published_at: '2026-08-11T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T00:09:18Z'
+rejected_at: '2026-08-16T00:09:18Z'
