@@ -65,4 +65,4 @@ At adjoe, you’re not here to just close JIRA tickets, you’re helping build t
 
 We welcome applications from people who will contribute to the diversity of our company.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

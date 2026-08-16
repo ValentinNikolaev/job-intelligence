@@ -54,4 +54,4 @@ Was Du unter anderem von uns erwarten kannst:
 - Kostenfreies Frühstücks- und Mittagsbuffet in Bio-Qualität
 Ganz besonders wichtig ist uns, dass unsere Mitarbeiter:innen unser Verständnis von Arbeit und Zusammenarbeit teilen. Denn Arbeit ist für uns mehr als nur ein Job, Zusammenarbeit mehr als nur ein Nebeneinander. Wir legen Wert auf einen respektvollen, wertschätzenden Umgang, Fairness und einen offenen Dialog.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

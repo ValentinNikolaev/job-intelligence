@@ -93,4 +93,4 @@ Flexible working hours to support the balance between studies and work
 
 An open, interdisciplinary, and scientifically driven work environment
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

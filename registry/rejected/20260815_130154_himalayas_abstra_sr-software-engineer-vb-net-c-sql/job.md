@@ -4,8 +4,8 @@ Posted: 2026-08-08T18:51:02Z
 
 ## Rejection
 
-- Category: location_requirement
-- Reason: requires American continent location
+- Category: stale
+- Reason: published_at 2026-08-08T18:51:02Z is older than 7 days
 
 ### Job Description
 

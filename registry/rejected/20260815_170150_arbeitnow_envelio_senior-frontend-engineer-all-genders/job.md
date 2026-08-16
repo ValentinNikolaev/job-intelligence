@@ -52,4 +52,4 @@ Python, incl. additional packages/frameworks e.g. FastAPI, Pytest and Celery, Po
 - Regelmäßige **T****ech und Growth Talks** zum internen Wissensaustausch
 - Regelmäßige **Company** und **Team Events**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

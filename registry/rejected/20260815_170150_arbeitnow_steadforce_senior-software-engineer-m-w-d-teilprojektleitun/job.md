@@ -84,4 +84,4 @@ Workation - arbeite aus dem EU Ausland. Sonne genießen und trotzdem mit dem Tea
 
 Vielfältige Zusatzleistungen on top, wie Deutschland Ticket, e-gym Wellpass Mitgliedschaft, Edenred Wertkarte, Corporate Benefits, Job Rad, Gaming Room und vieles mehr.....
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

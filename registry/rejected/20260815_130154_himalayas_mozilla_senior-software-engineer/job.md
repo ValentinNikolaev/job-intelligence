@@ -4,8 +4,8 @@ Posted: 2026-08-08T23:08:53Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-08T23:08:53Z is older than 7 days
 
 To learn the Hiring Ranges for this position, please select your location from the **Apply Now** dropdown menu.
 

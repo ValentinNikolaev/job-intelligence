@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3150634893134331037'
+source_url: https://jooble.org/desc/3150634893134331037?ckey=remote+golang+backend+engineer&rgn=55180&pos=50&groupId=1106121903&elckey=679536202995479149&p=1&aq=1854733670010054440&cid=15922&jobAge=171&brelb=100&bscr=219.37274&scr=219.37274
+title: Remote Go (Golang) Software Engineer, Developer Tooling and Containers
+company: Canonical Ltd.
+location: Remote
+published_at: '2026-08-09T00:01:21.5970000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-09T00:01:21.5970000 is older than 7 days
+updated_at: '2026-08-16T09:24:21Z'
+rejected_at: '2026-08-16T09:24:21Z'

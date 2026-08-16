@@ -4,8 +4,8 @@ Posted: 2026-08-08T19:37:29Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-08T19:37:29Z is older than 7 days
 
 Novakid is an online English platform for kids — 100,000+ students, 2,500+ teachers, 15+ countries. Live classes run around the clock across time zones, which sets the technical bar: low latency, high availability, and a backend that holds up at real scale.
 

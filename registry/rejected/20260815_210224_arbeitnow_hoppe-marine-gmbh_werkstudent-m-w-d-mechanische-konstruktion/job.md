@@ -36,4 +36,4 @@ Kieler Straße 318
 22525 Hamburg
 
 +49 (0)40 561 949 – 284
-English Speaking Jobs in Germany on Arbeitnow
+Jobs in Germany on Arbeitnow

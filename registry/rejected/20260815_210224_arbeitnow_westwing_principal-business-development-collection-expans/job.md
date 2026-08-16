@@ -64,4 +64,4 @@ Diversity is deeply rooted in our culture. Our mission doesn’t stop to inspire
 
 Business Development & Program Management
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

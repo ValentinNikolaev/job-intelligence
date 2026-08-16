@@ -123,4 +123,4 @@ Wenn du dich gut entwickelst und Verantwortung übernehmen möchtest, kannst du 
 
 Dann schick uns gerne ein paar kurze Infos zu dir, deinem Studium, bisherigen Erfahrungen und warum du Lust auf E-Commerce & Performance Marketing hast.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
