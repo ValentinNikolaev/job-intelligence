@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1736701546729230707'
+source_url: https://jooble.org/away/1736701546729230707?p=1&pos=10&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=60&brelb=10&scr=30.5042&bscr=30.5042&aq=-6621917043380300843&elckey=-584261963180439908
+title: Senior SAP Consultant
+company: ccelera s.r.l.
+location: Italian Republic
+published_at: '2026-08-14T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T18:04:15Z'
+rejected_at: '2026-08-16T18:04:15Z'

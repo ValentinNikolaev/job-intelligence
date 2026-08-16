@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6794568428291716917'
+source_url: https://jooble.org/away/-6794568428291716917?p=1&pos=6&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=84&brelb=10&scr=44.528336&bscr=44.528336&aq=-6621917043380300843&elckey=-584261963180439908
+title: Full Stack Developer
+company: AliveShoes
+location: Italian Republic
+published_at: '2026-08-13T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T18:04:15Z'
+rejected_at: '2026-08-16T18:04:15Z'
