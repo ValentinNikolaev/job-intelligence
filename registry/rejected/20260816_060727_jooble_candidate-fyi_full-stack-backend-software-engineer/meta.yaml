@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6120809264800057766'
+source_url: https://jooble.org/desc/-6120809264800057766?ckey=remote+golang+backend+engineer&rgn=55180&pos=12&groupId=1106121903&elckey=7792232543038086652&p=1&aq=-8394515272169371827&cid=15922&jobAge=24&brelb=115&bscr=662.55365&scr=662.55365
+title: Full Stack / Backend Software Engineer
+company: Candidate.fyi
+location: United States
+published_at: '2026-08-15T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T06:07:27Z'
+rejected_at: '2026-08-16T06:07:27Z'

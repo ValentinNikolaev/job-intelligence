@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6749968942808218203'
+source_url: https://jooble.org/desc/6749968942808218203?ckey=backend+technical+lead&rgn=55179&pos=15&groupId=698760247&elckey=4959970623652648068&p=1&aq=-55165067432410120&cid=15922&jobAge=58&brelb=100&bscr=10.625174&scr=10.625174
+title: AI Infrastructure Engineer
+company: Pragmatike
+location: Italian Republic
+published_at: '2026-08-13T14:03:41.6130000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T06:07:27Z'
+rejected_at: '2026-08-16T06:07:27Z'

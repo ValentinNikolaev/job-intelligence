@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1412306274002303868'
+source_url: https://jooble.org/desc/1412306274002303868?ckey=senior+backend+engineer&rgn=55179&pos=9&groupId=293749696&elckey=8312045847465230773&p=1&aq=-8149493624512094328&cid=15922&jobAge=885&brelb=100&bscr=31.82954&scr=31.82954
+title: Senior Supply Chain Security Engineer
+company: Docker
+location: Italian Republic
+published_at: '2026-07-10T03:02:46.1170000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-10T03:02:46.1170000 is older than 7 days
+updated_at: '2026-08-16T06:07:27Z'
+rejected_at: '2026-08-16T06:07:27Z'
