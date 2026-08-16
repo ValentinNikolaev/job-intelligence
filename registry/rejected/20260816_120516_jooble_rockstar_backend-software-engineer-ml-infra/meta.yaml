@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4348914912014284234'
+source_url: https://jooble.org/desc/-4348914912014284234?ckey=remote+golang+backend+engineer&rgn=55180&pos=13&groupId=1106121903&elckey=7432620239228955050&p=1&aq=3262529021967794462&cid=15922&jobAge=30&brelb=115&bscr=705.94073&scr=705.94073
+title: Backend Software Engineer (ML Infra)
+company: Rockstar
+location: San Francisco, CA
+published_at: '2026-08-15T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T12:05:16Z'
+rejected_at: '2026-08-16T12:05:16Z'
