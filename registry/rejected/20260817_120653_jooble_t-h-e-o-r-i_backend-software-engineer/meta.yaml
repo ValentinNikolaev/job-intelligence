@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-8380996836942579315'
+source_url: https://jooble.org/away/-8380996836942579315?p=1&pos=13&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=30&brelb=115&scr=793.43384&bscr=793.43384&aq=1339265072012179036&elckey=-3291746637976973945
+title: Backend Software Engineer
+company: T H E O R I
+location: United States
+published_at: '2026-08-16T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-17T12:06:53Z'
+rejected_at: '2026-08-17T12:06:53Z'

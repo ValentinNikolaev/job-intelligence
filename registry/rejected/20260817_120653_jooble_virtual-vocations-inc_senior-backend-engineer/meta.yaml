@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3576459469880519845'
+source_url: https://jooble.org/away/-3576459469880519845?p=1&pos=11&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=42&brelb=10&scr=2946.8784&bscr=2946.8784&aq=4874835332856354997&elckey=2315763896230698135
+title: Senior Backend Engineer
+company: Virtual Vocations Inc
+location: United States
+published_at: '2026-08-15T11:51:54.8800000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-17T12:06:53Z'
+rejected_at: '2026-08-17T12:06:53Z'

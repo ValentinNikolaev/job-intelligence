@@ -52,4 +52,4 @@ We are looking for an experienced **Senior PHP Developer** who will influence pr
 - Flexible work schedule — full-time commitment without micromanagement or tracking working hours.
 - A talented, creative, and motivated team.
 
-Let’s grow and achieve great things togethe!
+Let’s grow and achieve great things together!
