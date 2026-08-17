@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5360203980334535371'
+source_url: https://jooble.org/away/-5360203980334535371?p=1&pos=32&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=3672&brelb=15&scr=2252.7356&bscr=2252.7356&aq=8694748800603253469&elckey=2675376200039829737
+title: Senior Backend Software Engineer - Rust & Serverless (Remote)
+company: Surt AI
+location: Boston, MA
+published_at: '2026-03-17T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-03-17T00:00:00.0000000 is older than 7 days
+updated_at: '2026-08-17T06:10:36Z'
+rejected_at: '2026-08-17T06:10:36Z'
