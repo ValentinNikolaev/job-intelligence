@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5144341200460971087'
+source_url: https://jooble.org/desc/-5144341200460971087?ckey=remote+golang+backend+engineer&rgn=55180&pos=11&groupId=1106121903&elckey=-3034056911793170888&p=1&aq=7718011331483948895&cid=15922&jobAge=12&brelb=115&bscr=667.6391&scr=667.6391
+title: Backend Software Engineer - Defense
+company: Palantir Technologies
+location: Palo Alto, CA
+published_at: '2026-08-17T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-17T18:08:49Z'
+rejected_at: '2026-08-17T18:08:49Z'
