@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7293725765497422892'
+source_url: https://jooble.org/away/-7293725765497422892?p=1&pos=22&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=42&brelb=10&scr=2610.1204&bscr=2610.1204&aq=-265986307708268485&elckey=-5508535877898253031
+title: Senior Backend Engineer
+company: Tristero Incorporated
+location: United States
+published_at: '2026-08-15T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-17T00:09:02Z'
+rejected_at: '2026-08-17T00:09:02Z'

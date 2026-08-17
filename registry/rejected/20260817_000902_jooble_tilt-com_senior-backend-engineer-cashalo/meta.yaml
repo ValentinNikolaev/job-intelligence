@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2177418408787063098'
+source_url: https://jooble.org/away/-2177418408787063098?p=1&pos=47&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=42&brelb=10&scr=2450.0505&bscr=2450.0505&aq=-265986307708268485&elckey=-5508535877898253031
+title: Senior Backend Engineer, Cashalo
+company: Tilt.com
+location: United States
+published_at: '2026-08-15T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-17T00:09:02Z'
+rejected_at: '2026-08-17T00:09:02Z'

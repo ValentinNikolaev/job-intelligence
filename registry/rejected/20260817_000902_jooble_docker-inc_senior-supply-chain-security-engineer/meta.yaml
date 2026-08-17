@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7900791623583495154'
+source_url: https://jooble.org/away/-7900791623583495154?p=1&pos=2&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=42&brelb=15&scr=68.022865&bscr=68.022865&aq=-4376715140105112146&elckey=8765343666838328282
+title: Senior Supply Chain Security Engineer
+company: Docker, Inc
+location: Italian Republic
+published_at: '2026-08-15T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-17T00:09:02Z'
+rejected_at: '2026-08-17T00:09:02Z'
