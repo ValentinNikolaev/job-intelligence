@@ -33,15 +33,3 @@ queries:
     seniority: "Manager"
     sort: "recent"
     max_pages: 1
-
-  - q: "backend engineer"
-    worldwide: true
-    seniority: "Senior"
-    sort: "recent"
-    max_pages: 1
-
-  - q: "golang"
-    worldwide: true
-    seniority: "Senior"
-    sort: "recent"
-    max_pages: 1

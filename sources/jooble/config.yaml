@@ -4,7 +4,7 @@ version: 1
 # Jooble stated a default quota of 500 requests for this key, but its public
 # documentation does not state a reset period. This is a per-run safety budget,
 # not a claim about a daily or monthly allowance.
-request_budget: 6
+request_budget: 3
 results_per_page: 50
 max_pages_per_profile: 2
 timeout_seconds: 12
@@ -33,11 +33,13 @@ query_profiles:
     max_pages: 1
 
   - name: backend-remote-europe
+    enabled: false
     keywords: "remote senior backend engineer"
     location: "Europe"
     max_pages: 1
 
   - name: golang-remote-europe
+    enabled: false
     keywords: "remote golang backend engineer"
     location: "Europe"
     max_pages: 1
