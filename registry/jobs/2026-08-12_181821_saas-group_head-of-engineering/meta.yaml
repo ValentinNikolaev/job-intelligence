@@ -23,18 +23,18 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        geo: italy
-        count: '50'
         industry: dev
+        geo: italy
+        count: '25'
     - query_index: 4
       parameters:
-        geo: europe
-        tag: php
-        count: '50'
         industry: dev
+        geo: europe
+        count: '25'
+        tag: php
 published_at: '2026-08-12T14:19:46Z'
 discovered_at: '2026-08-12T18:18:21Z'
-updated_at: '2026-08-12T18:18:21Z'
+updated_at: '2026-08-18T18:07:25Z'
 status: found
 status_history:
 - status: found

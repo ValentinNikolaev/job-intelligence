@@ -23,24 +23,24 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        geo: italy
-        count: '50'
         industry: dev
+        geo: italy
+        count: '25'
     - query_index: 2
       parameters:
-        tag: backend
-        geo: europe
-        count: '50'
         industry: dev
+        geo: europe
+        count: '25'
+        tag: backend
     - query_index: 3
       parameters:
-        tag: golang
-        geo: europe
-        count: '50'
         industry: dev
+        geo: europe
+        count: '25'
+        tag: golang
 published_at: '2026-08-15T04:25:04Z'
 discovered_at: '2026-08-16T06:07:25Z'
-updated_at: '2026-08-16T06:07:25Z'
+updated_at: '2026-08-18T18:07:25Z'
 status: found
 status_history:
 - status: found
