@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-210935274041760295'
+source_url: https://jooble.org/away/-210935274041760295?p=1&pos=17&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=30&brelb=15&scr=2909.9797&bscr=2909.9797&aq=2986193968633464025&elckey=-8408602980975230860
+title: Senior Backend Engineer, Geospatial Analytics (Remote)
+company: SynMax
+location: Houston, TX
+published_at: '2026-08-17T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-18T12:08:14Z'
+rejected_at: '2026-08-18T12:08:14Z'
