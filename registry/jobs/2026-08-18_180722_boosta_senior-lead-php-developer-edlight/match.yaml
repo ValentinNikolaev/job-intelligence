@@ -1,0 +1,19 @@
+score: 90
+recommendation: strong_match
+summary: Strong senior PHP/Laravel backend fit with matching microservices, async
+  systems, AWS, and technical leadership experience.
+strengths:
+- Extensive PHP and Laravel/Symfony backend experience.
+- Technical leadership, mentoring, architecture, and production reliability experience.
+- Relevant AWS, Kubernetes, RabbitMQ, Redis, event-driven, and automation background.
+gaps:
+- Exact Edlight domain experience is not established.
+concerns:
+- The profile does not explicitly confirm every listed frontend or AI framework.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-18T22:15:38Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:119188a463dacebe968b3848c33f147ad1426ead40a1b36e71d0779b4a474ef4
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

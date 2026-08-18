@@ -1,0 +1,19 @@
+score: 80
+recommendation: strong_match
+summary: Strong senior PHP backend and full-stack-adjacent match, with frontend depth
+  as the main uncertainty.
+strengths:
+- More than ten years of PHP backend and framework experience.
+- Strong APIs, databases, microservices, cloud, testing, and operational ownership.
+- Experience leading technical work and mentoring engineers.
+gaps:
+- Frontend implementation experience is less detailed than backend evidence.
+concerns:
+- Exact stack, location, and compensation are not fully confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-18T22:15:38Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7a67c0e94ad01be88aec5eceb29f02281f9f92d9b7375dc504ed07b987c8fd81
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

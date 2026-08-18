@@ -1,19 +1,22 @@
-score: 88
+score: 92
 recommendation: strong_match
-summary: Excellent alignment across senior PHP, Laravel/Symfony, PostgreSQL, distributed
-  systems, Kubernetes, RabbitMQ, APIs, mentoring, and agent-assisted engineering.
+summary: Exceptional fit for senior PHP work combining Laravel/Symfony, PostgreSQL,
+  Redis, Kubernetes, RabbitMQ, APIs, and mentoring.
 strengths:
-- Extensive senior PHP experience with Laravel/Symfony and PostgreSQL.
-- Kubernetes, RabbitMQ, REST APIs, architecture, reviews, and mentoring are documented.
-- Current Codex and AI-assisted backend workflow is directly relevant.
+- Direct match to the core PHP, Laravel/Symfony, PostgreSQL, Redis, Docker/Kubernetes,
+  and RabbitMQ requirements.
+- Strong REST/RPC, system design, performance, testing, and production reliability
+  evidence.
+- Technical leadership, code review, mentoring, and coding-agent experience are well
+  aligned.
 gaps:
-- Redis Streams and some listed protocol/design specifics are not explicitly evidenced.
+- Exact OpenAPI/AsyncAPI and HATEOAS exposure is not separately documented.
 concerns:
-- Ukraine-related location context should be confirmed despite remote wording.
+- The role's office/remote policy and industry preferences should be confirmed.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-14T08:20:53Z'
+analyzed_at: '2026-08-18T22:15:38Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:b7326dd879d54d0af17ded534d60e49b00d8cd577471a763364b6d502dac770a
+job_version: sha256:92a9b05040d9a1a2a88d336fb2b6003669611897682c334fb400586030f55142
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

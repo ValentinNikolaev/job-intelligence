@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 92/100  
 **Recommendation:** Strong Match
 
-Excellent alignment across senior PHP, Laravel/Symfony, PostgreSQL, distributed systems, Kubernetes, RabbitMQ, APIs, mentoring, and agent-assisted engineering.
+Exceptional fit for senior PHP work combining Laravel/Symfony, PostgreSQL, Redis, Kubernetes, RabbitMQ, APIs, and mentoring.
 
 ## Why it matches
 
-- Extensive senior PHP experience with Laravel/Symfony and PostgreSQL.
-- Kubernetes, RabbitMQ, REST APIs, architecture, reviews, and mentoring are documented.
-- Current Codex and AI-assisted backend workflow is directly relevant.
+- Direct match to the core PHP, Laravel/Symfony, PostgreSQL, Redis, Docker/Kubernetes, and RabbitMQ requirements.
+- Strong REST/RPC, system design, performance, testing, and production reliability evidence.
+- Technical leadership, code review, mentoring, and coding-agent experience are well aligned.
 
 ## Gaps
 
-- Redis Streams and some listed protocol/design specifics are not explicitly evidenced.
+- Exact OpenAPI/AsyncAPI and HATEOAS exposure is not separately documented.
 
 ## Concerns
 
-- Ukraine-related location context should be confirmed despite remote wording.
+- The role's office/remote policy and industry preferences should be confirmed.
