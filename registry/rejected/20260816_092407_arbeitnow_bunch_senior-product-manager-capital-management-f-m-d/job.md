@@ -179,4 +179,4 @@ At bunch, we're committed to an inclusive environment where diversity is valued 
 
 We process personal data in line with applicable laws (including GDPR). See our[ Privacy Policy](https://www.bunch.capital/privacy-policy) for details on your rights and how to reach us.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

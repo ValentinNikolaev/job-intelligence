@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-5283051820059614987'
+source_url: https://jooble.org/desc/-5283051820059614987?ckey=remote+senior+backend+engineer&rgn=55180&pos=34&groupId=2134052230&elckey=-2014530844502674226&p=1&aq=8869678418199929855&cid=15922&jobAge=107&brelb=100&bscr=844.251&scr=844.251
+title: Senior Backend Engineer
+company: Brick
+location: San Francisco, CA
+published_at: '2026-08-12T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T17:02:58Z'
+rejected_at: '2026-08-16T17:02:58Z'

@@ -49,4 +49,4 @@ Du musst nicht jedes Tool kennen. Uns ist wichtiger, dass du Digital Analytics w
 - Freude daran, Verantwortung zu übernehmen und technische Themen nicht nur zu analysieren, sondern selbst umzusetzen
 Wir freuen uns darauf dich kennen zu lernen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

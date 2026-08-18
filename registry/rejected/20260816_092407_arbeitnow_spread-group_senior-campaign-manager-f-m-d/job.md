@@ -151,4 +151,4 @@ Send us your CV and a brief note on a campaign you're particularly proud of - wh
 
 ##
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

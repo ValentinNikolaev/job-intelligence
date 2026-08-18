@@ -91,4 +91,4 @@ Kein Anschreiben, kein Lebenslauf-Bullshit-Bingo. Schick uns einfach deinen CV o
 
 Klingt nach dir? Dann warte nicht auf die perfekte Gelegenheit – das hier ist sie gerade.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

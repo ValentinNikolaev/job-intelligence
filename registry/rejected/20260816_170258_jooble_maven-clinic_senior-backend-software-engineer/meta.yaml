@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2508025161661984047'
+source_url: https://jooble.org/desc/-2508025161661984047?ckey=remote+senior+backend+engineer&rgn=55180&pos=33&groupId=2134052230&elckey=-2014530844502674226&p=1&aq=8869678418199929855&cid=15922&jobAge=35&brelb=100&bscr=846.8927&scr=846.8927
+title: Senior Backend Software Engineer
+company: Maven Clinic
+location: New York, NY
+published_at: '2026-08-15T08:07:23.3800000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T17:02:58Z'
+rejected_at: '2026-08-16T17:02:58Z'

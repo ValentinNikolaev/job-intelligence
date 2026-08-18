@@ -44,4 +44,4 @@ Platform Reliability, Security & Cost Efficiency
 - **Deine Benefits: **Neben 30 Tagen Urlaub bieten wir dir außerdem einen "Joblunch"-Zuschuss (69 € im Monat), eine "Givve"-Card (wird monatlich mit 50 € aufgeladen) oder alternativ eine bezuschusste "Wellpass" Mitgliedschaft, Rabatte via "Corporate Benefits", die Möglichkeit eines "JobRad"-Leasings, Zuschüsse zur Altersvorsorge (bAV & VL) sowie grandiose Team- und Companyevents.
 - **Dein Arbeitsplatz: **Bei uns arbeitest du im flexiblen, hybriden Modell aus einem unserer hundefreundlichen und modernen Offices und hast zudem die Möglichkeit auf 2 Wochen im Jahr Workation innerhalb der EU (*gilt nur für Mitarbeiter:innen mit EU-Pass).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

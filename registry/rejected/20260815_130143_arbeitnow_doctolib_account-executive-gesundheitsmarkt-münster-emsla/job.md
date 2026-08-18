@@ -95,4 +95,4 @@ Bei Doctolib verkaufst Du nicht einfach ein Produkt – Du veränderst, wie Gesu
 
 *Alle bereitgestellten Informationen werden von Doctolib für das Bewerbungsmanagement verarbeitet. Für Details zur Datenverarbeitung klicke bitte [hier](https://doctolib.legal/B2C-Privacy-Policy-Career-DE). Bei Fragen oder wenn Du Deine Rechte wahrnehmen möchtest, wende Dich bitte an hr.dataprivacy(at)doctolib.com.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

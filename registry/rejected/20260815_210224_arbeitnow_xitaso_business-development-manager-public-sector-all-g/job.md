@@ -39,4 +39,4 @@ Innerhalb unseres einheitlichen und transparenten Gehaltsframeworks ordnet sich 
 **Daniela**
 +49 821 -----
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

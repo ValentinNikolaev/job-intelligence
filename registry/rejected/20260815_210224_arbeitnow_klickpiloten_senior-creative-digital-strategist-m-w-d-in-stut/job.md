@@ -115,4 +115,4 @@ Wenn du Performance und Kreativität verbinden, AI-gestützte Produktionsprozess
 **Kontakt**
 Bitte bewerbe Dich per E-Mail an
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

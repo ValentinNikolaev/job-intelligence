@@ -99,4 +99,4 @@ Du bringst analytisches Verständnis mit und verfügst über gute Excel Kenntnis
 
 Spread Group steht für Vielfalt. Wir sind stolz auf die stetig wachsende Diversität unseres Unternehmens und fördern sie aktiv. Dabei liegt unser Fokus auf Deinen Fähigkeiten, Talenten und Erfahrungen – unabhängig von Alter, ethnischer Zugehörigkeit, Religion, nationaler Herkunft, Geschlecht, sexueller Orientierung, Familienstand oder Behinderung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

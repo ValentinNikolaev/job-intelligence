@@ -95,4 +95,4 @@ Wenn du Lust hast dich mit uns über unsere Vision und dein potentielles Mitwirk
 
 Wir schätzen Vielfalt und stellen Menschen aufgrund ihrer Fähigkeit ein, eine Aufgabe zu erfüllen. Menschen jeder Herkunft, jeden Geschlechts, jeder geschlechtlichen Identität, sexuellen Orientierung, Religion, jeden Alters, mit Behinderung, jeder politischen Überzeugung oder jedem Familienstand sind bei cleverlohn und der Integral Gruppe willkommen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

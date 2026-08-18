@@ -71,4 +71,4 @@ Bei vivenu glauben wir, dass unsere Mitarbeitenden unseren Erfolg ausmachen – 
 
 Schau dir auch [hier](https://vivenu.com/career#mission) unser Mission Statement und unsere Corporate Values an.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

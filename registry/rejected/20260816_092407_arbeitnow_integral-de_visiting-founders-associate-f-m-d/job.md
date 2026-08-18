@@ -149,4 +149,4 @@ Ein Team von 50+ (und wachsend!) ambitionierten, diversen Menschen, 20%+ Ex-Grü
 
 Wir schätzen Vielfalt und stellen Menschen aufgrund ihrer Fähigkeit ein, eine Aufgabe zu erfüllen. Menschen jeder Herkunft, jeden Geschlechts, jeder geschlechtlichen Identität, sexuellen Orientierung, Religion, jeden Alters, mit Behinderung, jeder politischen Überzeugung oder jedem Familienstand sind bei Integral willkommen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/resourceful-talent-group/jobs/senior-full-stack-engineer
+source_url: https://himalayas.app/companies/resourceful-talent-group/jobs/senior-full-stack-engineer
+title: Senior Full-Stack Engineer
+company: Resourceful Talent Group
+location: Worldwide
+published_at: '2026-08-15T21:19:06Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T17:02:54Z'
+rejected_at: '2026-08-16T17:02:54Z'

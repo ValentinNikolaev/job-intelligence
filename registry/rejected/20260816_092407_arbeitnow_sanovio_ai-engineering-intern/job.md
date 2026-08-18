@@ -105,4 +105,4 @@ Meet another co-founder to get a feel for our culture and working style.
 
 If we see a great fit, you will get an offer, including a competitive compensation package.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/nansen/jobs/senior-data-engineer
+source_url: https://himalayas.app/companies/nansen/jobs/senior-data-engineer
+title: Senior Data Engineer
+company: Nansen
+location: Worldwide
+published_at: '2026-08-16T05:05:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-16T17:02:54Z'
+rejected_at: '2026-08-16T17:02:54Z'

@@ -105,4 +105,4 @@ Experience planning and executing company events or culture programs
 **FOR US-BASED ROLES: ***Applied Intuition is committed to providing an accessible and inclusive application and interview experience to applicants who are disabled veterans and other applicants with disabilities or medical conditions. Reasonable accommodations are available, requesting an accommodation will not affect your candidacy in any way, and you are not required to disclose the nature of your disability or medical condition in order to make a request.*
 *If you require an accommodation please contact *
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

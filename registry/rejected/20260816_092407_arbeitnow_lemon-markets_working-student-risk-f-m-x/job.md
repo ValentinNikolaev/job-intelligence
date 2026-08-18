@@ -131,4 +131,4 @@ You are based in Berlin
 
 As an equal opportunity employer, [lemon.markets](http://lemon.markets) is committed to building an inclusive workplace. The company welcomes people from all different backgrounds, including age, citizenship, ethnic and racial origins, gender identities, individuals with disabilities, marital status, religions and ideologies, and sexual orientations to apply.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
