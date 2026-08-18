@@ -1,0 +1,24 @@
+schema_version: 2
+id: ccde2657-3ec9-4739-9c69-8a276348b3ec
+title: Backend Rust Engineer
+company: Lawrence Harvey
+company_url: null
+location: United States
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-961753044887211363'
+  url: https://jooble.org/away/-961753044887211363?p=1&pos=17&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=54&brelb=10&scr=773.9137&bscr=773.9137&aq=6339679821693404516&elckey=4430630558526648676
+published_at: '2026-08-16T00:00:00.0000000'
+discovered_at: '2026-08-16T00:09:18Z'
+updated_at: '2026-08-18T12:08:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-16T00:09:18Z'
+analysis_priority: 0
+fingerprint: sha256:cbea04d86a07a8bdb82a1067be4d6bf68eec9f25a9142d824a6d25eb2d816225
+data_source: jooble
+content_source: jooble
+company_content_source: null

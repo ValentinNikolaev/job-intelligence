@@ -1,0 +1,31 @@
+schema_version: 2
+id: 9905325e-27ed-4bac-9b9b-0362bbb064a7
+title: Platform Boosters - Backend Engineer (m/w/d)
+company: shopware AG
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-platform-boosters-backend-engineer-berlin-67421
+  url: https://www.arbeitnow.com/jobs/companies/shopware-ag/remote-platform-boosters-backend-engineer-berlin-67421
+  metadata:
+    tags:
+    - Product
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-08-18T02:30:28Z'
+discovered_at: '2026-08-18T06:07:53Z'
+updated_at: '2026-08-18T06:07:53Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-18T06:07:53Z'
+analysis_priority: 0
+fingerprint: sha256:eb338f90ead8a67c5c6eb45ab64efa682cdc48cdd83a277163f22ff27cde9af5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

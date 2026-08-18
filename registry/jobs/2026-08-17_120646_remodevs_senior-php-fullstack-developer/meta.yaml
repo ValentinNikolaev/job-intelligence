@@ -1,0 +1,36 @@
+schema_version: 2
+id: 85b2dae4-6903-4cb6-a423-2fb32025264b
+title: Senior PHP Fullstack Developer
+company: RemoDevs
+company_url: https://jobs.dou.ua/companies/remodevs/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369996'
+  url: https://jobs.dou.ua/companies/remodevs/vacancies/369996/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 17 серпня
+    salary_label: $5500–5900
+    listing_summary: We are now a payment software company. We changed our focus from
+      subscription billing in October 2019. Our product has many features that help
+      our clients move customers from the order page to the final payment page, and
+      also help them pay renewals on time.
+published_at: '2026-08-17'
+discovered_at: '2026-08-17T12:06:46Z'
+updated_at: '2026-08-17T12:06:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-17T12:06:46Z'
+analysis_priority: 100
+fingerprint: sha256:a38f18f1642e97ef9ef8d107ef2d08ab48609d6cbd7c3a944a1d2edee7f0305c
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,24 @@
+schema_version: 2
+id: 3b3afeb6-f4d1-4be1-ae26-07c406abe353
+title: Founding Senior Go Backend Engineer — Remote + Equity
+company: Chainloop, Inc.
+company_url: null
+location: Mission, KS
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '72313582599380715'
+  url: https://jooble.org/away/72313582599380715?p=1&pos=9&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=54&brelb=15&scr=3016.949&bscr=3016.949&aq=2986193968633464025&elckey=-8408602980975230860
+published_at: '2026-08-16T00:00:00.0000000'
+discovered_at: '2026-08-17T18:08:49Z'
+updated_at: '2026-08-18T12:08:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-17T18:08:49Z'
+analysis_priority: 0
+fingerprint: sha256:bd6b8e671228916f5f104ee72a07de97cc9906d2b6f520be04183621ae2ee86e
+data_source: jooble
+content_source: jooble
+company_content_source: null

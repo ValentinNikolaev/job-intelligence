@@ -1,0 +1,24 @@
+schema_version: 2
+id: 860a98ec-b9a6-4b56-a2e0-48363ee45598
+title: Sr. Backend Engineer - Charlotte AI (Hybrid, EST)
+company: CrowdStrike
+company_url: null
+location: Austin, TX
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-8375599432623301573'
+  url: https://jooble.org/away/-8375599432623301573?p=1&pos=19&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=43&brelb=100&scr=725.4731&bscr=725.4731&aq=484829378382855536&elckey=4790242862335780278
+published_at: '2026-08-16T04:14:13.5870000'
+discovered_at: '2026-08-16T18:04:15Z'
+updated_at: '2026-08-18T06:08:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-16T18:04:15Z'
+analysis_priority: 0
+fingerprint: sha256:3dfcfe929552bec3ffceb7eb1193bd8855e9bb9d47b26a8baf74a7bb38a57878
+data_source: jooble
+content_source: jooble
+company_content_source: null

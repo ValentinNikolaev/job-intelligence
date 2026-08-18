@@ -1,0 +1,36 @@
+schema_version: 2
+id: a0d8ebfb-299b-4478-bfd3-e5cbf1bffa38
+title: Senior Backend Engineer, Integrations - 100% Remote - EMEA
+company: Hostaway
+company_url: https://careers.hostaway.com
+location: Remote job
+remote: true
+employment_type: FULL_TIME
+sources:
+- source: cleanjobdata
+  source_job_id: '77636147'
+  url: https://careers.hostaway.com/o/senior-backend-engineer-integrations-100-remote-emea-4
+  metadata:
+    profile: backend-italy
+    employer_id: '950124201'
+    remote_type: remote_region
+    is_active: true
+    language: en
+    experience_level: MI
+    experience_levels:
+    - MI
+    company_industry: Software Development
+    company_employee_count: 387
+    company_linkedin_url: https://www.linkedin.com/company/hostaway
+published_at: '2026-08-14T08:16:21.000Z'
+discovered_at: '2026-08-16T00:09:06Z'
+updated_at: '2026-08-16T00:09:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-16T00:09:06Z'
+analysis_priority: 0
+fingerprint: sha256:639090bec4b2ab1efd7df593d2cd5b7ef2ad0073bbb9967f4c7a8c177190af19
+data_source: cleanjobdata
+content_source: cleanjobdata
+company_content_source: cleanjobdata

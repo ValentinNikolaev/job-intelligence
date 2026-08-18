@@ -1,0 +1,35 @@
+schema_version: 2
+id: 26f1ca48-0ef0-4959-9b15-92a1c1e312c2
+title: Senior/Lead PHP Developer | Edlight
+company: Boosta
+company_url: https://jobs.dou.ua/companies/boosta/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '364684'
+  url: https://jobs.dou.ua/companies/boosta/vacancies/364684/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 18 серпня
+    listing_summary: Привіт! Ми, Boosta — холдингова ІТ-компанія, яка створює, розвиває
+      та інвестує в digital-бізнеси з глобальним потенціалом. Сьогодні з нами співпрацюють
+      понад 700 фахівців з різних куточків світу, а нашими продуктами та сервісами
+      користуються мільйони юзерів.
+published_at: '2026-08-18'
+discovered_at: '2026-08-18T18:07:22Z'
+updated_at: '2026-08-18T18:07:22Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-18T18:07:22Z'
+analysis_priority: 100
+fingerprint: sha256:63812a1d52d082b09d15cb57b9ac7158cc975204c911a4047d894d4076cf1d14
+data_source: dou
+content_source: dou
+company_content_source: dou
