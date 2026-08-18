@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3154996124929130837'
+source_url: https://jooble.org/away/3154996124929130837?p=1&pos=23&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=70&brelb=10&scr=2598.8445&bscr=2598.8445&aq=1186324538564607048&elckey=2213841318605369590
+title: Senior Backend Engineer
+company: Uncapped
+location: United States
+published_at: '2026-08-14T19:55:47.8030000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-18T00:09:18Z'
+rejected_at: '2026-08-18T00:09:18Z'

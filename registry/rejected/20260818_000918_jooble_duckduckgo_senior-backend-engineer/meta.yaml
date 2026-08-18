@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4634734777040426317'
+source_url: https://jooble.org/away/4634734777040426317?p=1&pos=31&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=70&brelb=10&scr=2508.0159&bscr=2508.0159&aq=1186324538564607048&elckey=2213841318605369590
+title: Senior Backend Engineer
+company: DuckDuckGo
+location: United States
+published_at: '2026-08-14T19:59:56.1670000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-18T00:09:18Z'
+rejected_at: '2026-08-18T00:09:18Z'

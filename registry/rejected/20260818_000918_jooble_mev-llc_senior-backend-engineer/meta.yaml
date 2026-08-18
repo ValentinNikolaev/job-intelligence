@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-3142220847757833210'
+source_url: https://jooble.org/away/-3142220847757833210?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=138&brelb=10&scr=2947.5618&bscr=2947.5618&aq=1186324538564607048&elckey=2213841318605369590
+title: Senior Backend Engineer
+company: MEV, LLC
+location: United States
+published_at: '2026-08-12T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-18T00:09:18Z'
+rejected_at: '2026-08-18T00:09:18Z'
