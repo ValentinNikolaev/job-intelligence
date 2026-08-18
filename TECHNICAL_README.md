@@ -7,8 +7,8 @@ Source API → collector → normalized job → deduplication → registry/jobs 
 ```
 
 The current MVP implements Adzuna, Arbeitnow, CleanJobData, DOU, Himalayas,
-Jobicy, Jooble, public Ashby and Greenhouse job-board collectors, and custom
-company-board monitoring.
+Jobicy, Jobspresso, Jooble, We Work Remotely, public Ashby and Greenhouse
+job-board collectors, and custom company-board monitoring.
 
 ## Requirements
 
@@ -133,6 +133,23 @@ kept configurable and passed through unchanged. Jobicy asks clients not to poll
 more than once per hour, and a few checks per day are recommended for personal
 search. See the [Jobicy collector guide](sources/jobicy/README.md) for details.
 
+Jobspresso exposes a first-party jobs RSS feed with full descriptions and stable
+WordPress post IDs. The collector polls only the advertised clean feed URL (no
+query-string pagination) and keeps Jobspresso links as source attribution. See
+the [Jobspresso collector guide](sources/jobspresso/README.md) for details.
+
+We Work Remotely explicitly permits use of its public RSS feeds with attribution.
+Configured category feeds live in
+[`sources/weworkremotely/config.yaml`](sources/weworkremotely/config.yaml) and
+are deduplicated by stable job identity. See the
+[We Work Remotely collector guide](sources/weworkremotely/README.md) for details.
+
+Wellfound, Built In, and Remote 100K were evaluated as requested but are not
+automated collectors. Their current public terms do not authorize the required
+automated extraction, and no supported public job feed was found. Their source
+guides under `sources/` record the verification and the authorization needed to
+enable a future adapter without pretending that an unsupported scraper works.
+
 Custom company-board monitoring lives in
 [`sources/custom/config.yaml`](sources/custom/config.yaml). It tracks selected
 remote-first or full-remote company career pages, including ShippyPro, Madisoft /
@@ -154,7 +171,9 @@ python run.py cleanjobdata
 python run.py dou
 python run.py himalayas
 python run.py jobicy
+python run.py jobspresso
 python run.py jooble
+python run.py weworkremotely
 python run.py ashby
 python run.py greenhouse
 python run.py custom

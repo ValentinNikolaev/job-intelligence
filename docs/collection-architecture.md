@@ -201,7 +201,7 @@ Source quality ranks are:
 custom company boards
 → ashby
 → direct
-→ adzuna = arbeitnow = himalayas = jooble
+→ adzuna = arbeitnow = dou = himalayas = jobicy = jobspresso = jooble = weworkremotely
 → unknown sources
 ```
 

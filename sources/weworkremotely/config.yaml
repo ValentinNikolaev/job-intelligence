@@ -1,0 +1,7 @@
+version: 1
+timeout_seconds: 12
+feeds:
+  - name: programming
+    url: https://weworkremotely.com/categories/remote-programming-jobs.rss
+  - name: devops-and-sysadmin
+    url: https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss
