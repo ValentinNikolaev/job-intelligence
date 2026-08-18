@@ -64,6 +64,6 @@ Team Building Events: At eduki, we foster a strong sense of community. Whether v
 Judit
 Talent Acquisition Manager
 
-[[email protected](/cdn-cgi/l/email-protection#2e44414c5d6e4b4a5b4547004d4143)]
+[[email protected](/cdn-cgi/l/email-protection#73191c110033161706181a5d101c1e)]
 
 At eduki, we value diversity and the unique contributions each person brings to our team. We foster an inclusive culture where respect and appreciation are essential. Don’t worry if you don’t tick every box, we’re not looking for a perfect match on paper. We’re excited about the unique qualities you bring to the table. Talents are considered regardless of age, gender, sexual identity, ethnicity, nationality, religion, or disability.
