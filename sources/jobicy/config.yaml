@@ -6,19 +6,19 @@ timeout_seconds: 12
 queries:
   - geo: italy
     industry: dev
-    count: 50
+    count: 25
 
   - geo: europe
     industry: dev
     tag: backend
-    count: 50
+    count: 25
 
   - geo: europe
     industry: dev
     tag: golang
-    count: 50
+    count: 25
 
   - geo: europe
     industry: dev
     tag: php
-    count: 50
+    count: 25
