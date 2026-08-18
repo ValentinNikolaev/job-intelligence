@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1601614334579831375'
+source_url: https://jooble.org/away/1601614334579831375?p=1&pos=26&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=48&brelb=15&scr=2531.1865&bscr=2531.1865&aq=-1219180674637012278&elckey=-8048990677166099258
+title: 'Remote Senior Backend Engineer: Low-Latency, Scalable Systems'
+company: WorksHub
+location: New York, NY
+published_at: '2026-08-16T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-18T06:08:10Z'
+rejected_at: '2026-08-18T06:08:10Z'

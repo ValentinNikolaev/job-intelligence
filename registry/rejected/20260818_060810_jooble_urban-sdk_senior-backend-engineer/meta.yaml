@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6876816063346073689'
+source_url: https://jooble.org/away/-6876816063346073689?p=1&pos=38&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=58&brelb=10&scr=2402.7734&bscr=2402.7734&aq=-1219180674637012278&elckey=-8048990677166099258
+title: Senior Backend Engineer
+company: Urban SDK
+location: United States
+published_at: '2026-08-15T13:30:56.5730000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-18T06:08:10Z'
+rejected_at: '2026-08-18T06:08:10Z'
