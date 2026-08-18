@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '142468'
+source_url: https://jobicy.com/jobs/142468-senior-software-engineer-product-engineering-eu
+title: Senior Software Engineer, Product Engineering, EU
+company: Ashby
+location: Europe
+published_at: '2026-07-26T10:10:07Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-26T10:10:07Z is older than 7 days
+updated_at: '2026-08-18T22:07:22Z'
+rejected_at: '2026-08-18T22:07:22Z'
