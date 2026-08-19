@@ -1,19 +1,26 @@
-score: 76
+score: 72
 recommendation: match
-summary: Strong Laravel backend fit for a short contract, with frontend depth and
-  contract availability remaining uncertain.
+summary: Good PHP/Laravel fit for the backend portion of the short-term affiliate
+  project, with relevant PostgreSQL, Redis-adjacent, and existing-codebase experience
+  but notable frontend and affiliate-domain gaps.
 strengths:
-- Extensive Laravel/PHP, REST, databases, and production backend experience.
-- Strong system design, performance, testing, and delivery background.
-- Relevant experience in digital products and e-commerce.
+- PHP and Laravel backend delivery
+- PostgreSQL
+- production API and integration work
+- ability to work with existing systems and deliver scoped functionality
 gaps:
-- Current JavaScript/frontend depth is not clearly documented.
+- Affiliate or CPA tracking domain
+- Blade
+- jQuery
+- Docker
+- and hands-on landing-page implementation are not directly evidenced
 concerns:
-- Two-to-three-month contract availability is unknown.
+- The 2–3 month full-time contract and Ukrainian or Russian internal communication
+  requirement need confirmation
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-18T22:15:38Z'
+analyzed_at: '2026-08-19T12:26:34Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:5283532e5ff93b1cbdd6ef8e82cc764844216018ae67d988125ca8126a37542d
+job_version: sha256:7af6f02857b68e0efc821f56a0167fdd7d34683e30d458d337445fbd5394ea3c
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

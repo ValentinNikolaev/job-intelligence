@@ -1,0 +1,22 @@
+score: 84
+recommendation: strong_match
+summary: Strong PHP backend alignment for a high-load product, with Symfony, PostgreSQL,
+  RabbitMQ, REST, microservices, and database optimization experience.
+strengths:
+- PHP and Symfony experience
+- PostgreSQL and query optimization
+- RabbitMQ and microservices
+- high-load reliability and production operations
+gaps:
+- Direct iGaming or casino-platform experience is not evidenced
+- Yii and DDD depth are not clearly documented
+concerns:
+- The Kyiv office or remote arrangement and the role's Ukrainian-language expectations
+  should be confirmed
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-19T12:26:34Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:94f9c06075a8f7bb9e79c93ae46124afc0b08e4a3adf1832c8f0edfd737da35c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
