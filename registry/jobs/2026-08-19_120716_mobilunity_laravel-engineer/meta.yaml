@@ -1,0 +1,38 @@
+schema_version: 2
+id: 35b54f3c-cfee-4804-b11c-6dff753b082d
+title: Laravel Engineer
+company: Mobilunity
+company_url: https://jobs.dou.ua/companies/mobilunity/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '365018'
+  url: https://jobs.dou.ua/companies/mobilunity/vacancies/365018/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 19 серпня
+    listing_summary: 'On behalf of our Client from France, Mobilunity is looking for
+      a Laravel Engineer.
+
+
+      Our client is a table management software and CRM that enables restaurant owners
+      to welcome their customers easily. The app is useful to manage booking requests
+      and register new bookings.'
+published_at: '2026-08-19'
+discovered_at: '2026-08-19T12:07:16Z'
+updated_at: '2026-08-19T12:07:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-19T12:07:16Z'
+analysis_priority: 100
+fingerprint: sha256:d7f11138d1ff483202a18fdba0ac4b8da46d0f0570e97ff220f45551a6b95a62
+data_source: dou
+content_source: dou
+company_content_source: dou

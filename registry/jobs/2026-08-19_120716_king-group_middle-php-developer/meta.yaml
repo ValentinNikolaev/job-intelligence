@@ -1,0 +1,35 @@
+schema_version: 2
+id: 138d7222-287d-44bd-8986-4027bf7de9f3
+title: Middle PHP developer
+company: King Group
+company_url: https://jobs.dou.ua/companies/king-group/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370356'
+  url: https://jobs.dou.ua/companies/king-group/vacancies/370356/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 19 серпня
+    listing_summary: Ми ростемо! King Group за останній рік запустила 5 нових брендів
+      у сфері iGaming і вже готується до запуску ще кількох. Саме тому ми шукаємо
+      PHP Developer, який допоможе нам розвивати продукти та підсилить нашу core або
+      payment команди.
+published_at: '2026-08-19'
+discovered_at: '2026-08-19T12:07:16Z'
+updated_at: '2026-08-19T12:07:16Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-19T12:07:16Z'
+analysis_priority: 100
+fingerprint: sha256:39d2c5bc99ce322ba1e7e008cbe62cfd3ae27f48318f588a23f0d2caa40ca6b3
+data_source: dou
+content_source: dou
+company_content_source: dou

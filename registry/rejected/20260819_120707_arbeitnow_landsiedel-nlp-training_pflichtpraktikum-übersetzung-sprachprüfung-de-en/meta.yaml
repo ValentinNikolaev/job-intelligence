@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: pflichtpraktikum-ubersetzung-sprachprufung-de-eng-eng-de-kitzingen-94755
+source_url: https://www.arbeitnow.com/jobs/companies/landsiedel-nlp-training/pflichtpraktikum-ubersetzung-sprachprufung-de-eng-eng-de-kitzingen-94755
+title: Pflichtpraktikum Übersetzung & Sprachprüfung (DE-ENG, ENG-DE)
+company: Landsiedel NLP Training
+location: Kitzingen
+published_at: '2026-08-19T09:00:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T12:07:07Z'
+rejected_at: '2026-08-19T12:07:07Z'

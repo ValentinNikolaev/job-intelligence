@@ -23,7 +23,7 @@ We are looking for an additional developer to speed up the delivery and completi
 This is a full-time contract position for approximately 2–3 months. The collaboration is project-based and is expected to end after the agreed scope of work is completed.
 
 Location: Remote
-Working schedule: Full-time, with availability to work within European or US business hours
+Working schedule: Full-time, with availability to work within European business hours.
 Contract duration: Approximately 2–3 months
 Current team: Product Owner, Tech Lead Developer, QA Engineer
 
