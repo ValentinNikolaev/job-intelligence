@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 87
+Total vacancies: 85
 
-- Found: 74
+- Found: 72
 - Applied: 12
 - Interview: 1
 
@@ -14,9 +14,7 @@ Total vacancies: 87
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-08-19 | [saas.group](../registry/jobs/2026-08-19_060204_saas-group_lead-data-platform-engineer/) | [Lead Data Platform Engineer](../registry/jobs/2026-08-19_060204_saas-group_lead-data-platform-engineer/job.md) | Europe | Jobicy | Found | 2026-08-19 | [Jobicy](https://jobicy.com/jobs/146232-lead-data-platform-engineer) | — | — | — | — | — |
 | 2026-08-19 | [IT Service Ukraine](../registry/jobs/2026-08-19_060158_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/) | [Middle+/Senior Shopware Developer (Part-Time Contract, US Project)](../registry/jobs/2026-08-19_060158_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/speroteck/vacancies/347146/) | [Open](../registry/jobs/2026-08-19_060158_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/company.md) | — | — | — | — |
-| 2026-08-19 | [Хорошоп](../registry/jobs/2026-08-19_060158_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/) | [Strong Junior PHP developer](../registry/jobs/2026-08-19_060158_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/horoshop/vacancies/311905/) | [Open](../registry/jobs/2026-08-19_060158_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/company.md) | — | — | — | — |
 | 2026-08-19 | [eduki](../registry/jobs/2026-08-19_060158_eduki_intermediate-back-end-developer/) | [Intermediate Back-End Developer](../registry/jobs/2026-08-19_060158_eduki_intermediate-back-end-developer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/369724/) | [Open](../registry/jobs/2026-08-19_060158_eduki_intermediate-back-end-developer/company.md) | — | — | — | — |
-| 2026-08-19 | [ShippyPro](../registry/jobs/2026-08-19_060156_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-19_060156_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-19 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-19 | [Jimdo](../registry/jobs/2026-08-19_060152_jimdo_senior-infrastructure-engineer/) | [Senior Infrastructure Engineer](../registry/jobs/2026-08-19_060152_jimdo_senior-infrastructure-engineer/job.md) | Germany | Ashby | Found | 2026-08-19 | [Ashby](https://jobs.ashbyhq.com/jimdo.com/e862ea55-49ec-4485-bfce-237c2f86c1c9) | — | — | — | — | — |
 | 2026-08-18 | [Canonical Ltd.](../registry/jobs/2026-08-18_180725_canonical-ltd_distributed-systems-testing-software-engineer-py/) | [Distributed Systems Testing Software Engineer, Python / Go](../registry/jobs/2026-08-18_180725_canonical-ltd_distributed-systems-testing-software-engineer-py/job.md) | Anywhere | Jobicy | Found | 2026-08-18 | [Jobicy](https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go) | — | — | — | — | — |
 | 2026-08-18 | [Boosta](../registry/jobs/2026-08-18_180722_boosta_senior-lead-php-developer-edlight/) | [Senior/Lead PHP Developer \| Edlight](../registry/jobs/2026-08-18_180722_boosta_senior-lead-php-developer-edlight/job.md) | віддалено | Dou | Found | 2026-08-18 | [Dou](https://jobs.dou.ua/companies/boosta/vacancies/364684/) | [Open](../registry/jobs/2026-08-18_180722_boosta_senior-lead-php-developer-edlight/company.md) | — | — | — | — |
