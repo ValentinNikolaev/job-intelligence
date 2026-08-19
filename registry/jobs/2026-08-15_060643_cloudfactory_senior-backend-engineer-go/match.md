@@ -1,18 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Senior Go backend focus aligns with distributed systems, automation, reliability, and leadership experience.
+Go backend and AI/data-platform relevance are promising, but the sparse listing leaves the location, domain, and full requirements uncertain.
 
 ## Why it matches
 
-- Go backend, event-driven systems, support automation, and reliability.
+- Go backend, APIs, distributed systems, automation, and production reliability are supported.
+- AI-adjacent support automation experience is relevant to CloudFactory's mission.
 
 ## Gaps
 
-- Exact cloud stack and domain requirements are unclear from the excerpt.
+- The available description does not establish the complete stack, responsibilities, or candidate-location policy.
+- Direct data-labeling, data-processing, or CloudFactory-specific experience is not evidenced.
 
 ## Concerns
 
-- US listing and timezone policy require confirmation.
+- The Jooble excerpt is incomplete and may conceal a US-only or timezone-specific constraint.

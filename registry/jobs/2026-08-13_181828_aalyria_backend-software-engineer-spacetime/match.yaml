@@ -1,22 +1,21 @@
-score: 70
+score: 73
 recommendation: match
-summary: Go backend, distributed systems, reliability, and technical leadership align,
-  while aerospace or Spacetime domain and alternate-language requirements are not
-  evidenced.
+summary: Go, distributed systems, backend development, and technical leadership align
+  well, with uncertainty around the aerospace domain and hybrid location terms.
 strengths:
-- Go backend and microservices
-- event-driven architecture and reliability
-- technical leadership and cross-functional delivery
+- Go backend, microservices, distributed systems, APIs, and leadership experience
+  are supported.
+- Experience with reliability, performance, and complex technical products is relevant.
 gaps:
-- Aerospace or Spacetime domain
-- C/C++ or Rust
-- and any additional language requirements
+- C/C++, Rust, Java, aerospace/space systems, and the exact Spacetime stack are not
+  documented.
 concerns:
-- Remote or hybrid arrangement and any eligibility restrictions require confirmation
+- The description mentions hybrid remote/in-office arrangements without clarifying
+  whether Italy-based work is allowed.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-14T20:30:40Z'
+analyzed_at: '2026-08-19T00:17:02Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:e291dbaf0f9d06f3ae759324aae57b3b71905e918cbd7f82095de67f9d75ca41
+job_version: sha256:88bdf559eb3c4f6a202be7ddd7a853b775808f7d9e62fa499d0306b7ee2ca527
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

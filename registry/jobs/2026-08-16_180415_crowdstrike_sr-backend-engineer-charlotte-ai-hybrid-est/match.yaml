@@ -1,0 +1,21 @@
+score: 18
+recommendation: not_match
+summary: Go and AI-adjacent backend experience fit technically, but the listing indicates
+  a US-based hybrid/EST role that conflicts with the candidate's Italy location.
+strengths:
+- Go backend, microservices, AWS, production reliability, and AI-assisted automation
+  are supported.
+gaps:
+- US location and EST/hybrid availability are not supported by the candidate profile.
+- CrowdStrike security-domain and large-language-model production experience are not
+  established.
+concerns:
+- The location and working arrangement are decisive conflicts.
+hard_rejection: true
+hard_rejection_reason: Required US-based/hybrid EST arrangement conflicts with the
+  candidate being based in Italy.
+analyzed_at: '2026-08-19T00:17:02Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fee7415796773c303b3e6241bf0b196bc53ce5f022b5e614d187391886f44312
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

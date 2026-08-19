@@ -1,17 +1,22 @@
-score: 68
+score: 70
 recommendation: match
-summary: Go, APIs, data pipelines, and distributed architecture align well with the
-  candidate background.
+summary: Go backend, distributed architecture, APIs, and data-pipeline overlap is
+  strong, though Python and the incomplete employer details create uncertainty.
 strengths:
-- Go backend, event-driven systems, integrations, and system design.
+- Go, backend systems, APIs, event-driven architecture, and production operations
+  are supported.
+- Seniority and ownership fit a large-scale data-infrastructure environment.
+- Remote work is plausible but not fully specified in the excerpt.
 gaps:
-- Python is not documented as a primary skill.
+- Python, the detailed data stack, and employer-specific domain experience are not
+  established.
 concerns:
-- US listing and European remote eligibility require confirmation.
+- The listing is an incomplete aggregator excerpt with unclear location and working-hours
+  requirements.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-15T11:01:13Z'
+analyzed_at: '2026-08-19T00:17:02Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:7bec0486387b8bcdc1f0d962036ae34b093701508e3b68cd7cec09432c2a3646
+job_version: sha256:db498422b163530844add9c4ae02502c904c78806a19ed6284f376047281b075
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
