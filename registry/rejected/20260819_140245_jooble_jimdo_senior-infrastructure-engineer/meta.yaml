@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1101443348626299928'
+source_url: https://jooble.org/desc/1101443348626299928?ckey=senior+backend+engineer&rgn=55179&pos=5&groupId=293749696&elckey=-5492107331585740356&p=1&aq=1613962019943750388&cid=15922&jobAge=23&brelb=100&bscr=12.072418&scr=12.072418
+title: Senior Infrastructure Engineer
+company: Jimdo
+location: Italian Republic
+published_at: '2026-08-18T08:05:18.6500000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T14:02:45Z'
+rejected_at: '2026-08-19T14:02:45Z'

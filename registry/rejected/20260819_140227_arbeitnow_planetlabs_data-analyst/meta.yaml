@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: data-analyst-berlin-21502
+source_url: https://www.arbeitnow.com/jobs/companies/planetlabs/data-analyst-berlin-21502
+title: Data Analyst
+company: Planetlabs
+location: Berlin
+published_at: '2026-08-19T11:55:56Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-19T14:02:27Z'
+rejected_at: '2026-08-19T14:02:27Z'

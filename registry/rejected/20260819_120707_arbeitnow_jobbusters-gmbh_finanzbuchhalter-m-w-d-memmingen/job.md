@@ -65,4 +65,4 @@ Dabei legen wir Wert auf eine persönliche und transparente Betreuung und möcht
 
 Dann freuen wir uns auf Ihre Bewerbung. Wir begleiten Sie auf dem Weg zu Ihrem nächsten Karriereschritt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

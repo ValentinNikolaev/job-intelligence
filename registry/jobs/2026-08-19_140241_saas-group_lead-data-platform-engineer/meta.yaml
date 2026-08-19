@@ -1,0 +1,52 @@
+schema_version: 2
+id: 350791c9-93d3-4762-b7a0-a0ba32c01de9
+title: Lead Data Platform Engineer
+company: saas.group
+company_url: null
+location: Europe
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '146232'
+  url: https://jobicy.com/jobs/146232-lead-data-platform-engineer
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/f6d362c3-221-1.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: This role is part of our INFOnline team, one of our exciting brands at
+      saas.group.INFOnline powers digital audience measurement for the German and
+      Austrian media industry. Our systems process billions of events and deliver
+      the trusted reach and engagement metrics used by publishers, advertisers, agencies,
+      IVW and OEWA.As part of saas.group, we have been modernizing…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        industry: dev
+        count: '25'
+    - query_index: 2
+      parameters:
+        geo: europe
+        tag: backend
+        industry: dev
+        count: '25'
+    - query_index: 3
+      parameters:
+        geo: europe
+        tag: golang
+        industry: dev
+        count: '25'
+published_at: '2026-08-15T04:25:04Z'
+discovered_at: '2026-08-19T14:02:41Z'
+updated_at: '2026-08-19T14:02:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-19T14:02:41Z'
+analysis_priority: 0
+fingerprint: sha256:15ffd411050479f01bce131961c152362ceab925ec7e917c02de46635120aa60
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

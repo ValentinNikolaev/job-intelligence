@@ -25,4 +25,4 @@ Sie verfügen idealerweise über eine kaufmännische, organisatorische oder info
 
 Wir bieten eine spannende Tätigkeit mit hoher Eigenverantwortung und großem Gestaltungsspielraum in unserem seit 1993 erfolgreichen Unternehmen. Sie arbeiten direkt mit der Geschäftsleitung, unseren Fachbereichen und externen Spezialisten zusammen und gestalten die digitale Weiterentwicklung unseres Unternehmens aktiv mit. Kurze Entscheidungswege, eine intensive Einarbeitung sowie langfristige Entwicklungsperspektiven runden das Angebot ab.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

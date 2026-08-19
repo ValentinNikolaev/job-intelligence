@@ -103,4 +103,4 @@ Immerse yourself in our exclusive Work & Swim Program. Spend one month in a comf
 
 At Finom, we're an equal opportunity employer and value diversity at our company. We embrace diversity and invite applications from all walks of life. We do not discriminate based on race, religion, color, national origin, gender, sexual orientation, age, marital status, disability status, or other applicable legally protected characteristics.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -101,4 +101,4 @@ Dann bist du bei uns richtig.Wir suchen keine Mitläufer – sondern Menschen mi
 
 Bei SC Ventures agierst du wie ein Unternehmer im Unternehmen: mit klaren Zielen, viel Eigenverantwortung und direkter Wirkung auf die Ergebnisse unserer Kunden.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

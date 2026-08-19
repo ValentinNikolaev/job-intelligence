@@ -91,4 +91,4 @@ Wir suchen jemanden, der schnell versteht, was getan werden muss, Verantwortung 
 
 Wenn du lieber etwas aufbaust, als bestehende Strukturen zu verwalten, hohe Ansprüche an dich und dein Team hast und sehr früh Verantwortung in einem der spannendsten Technologiemärkte der kommenden Jahre übernehmen möchtest, möchten wir dich kennenlernen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

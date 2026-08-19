@@ -19,4 +19,4 @@ Bei uns startest du nicht ins kalte Wasser, sondern wirst intensiv begleitet. Du
 
 Wenn du einen Berufseinstieg suchst, bei dem Eigenverantwortung, Leistung und persönliche Entwicklung im Mittelpunkt stehen, dann freuen wir uns auf deine Bewerbung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

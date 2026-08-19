@@ -67,4 +67,4 @@ Für unsere Sneaker-Brand **Flowers for Society** suchen wir ab sofort einen **S
 
 Wenn Social Media, Sneaker, Fashion und Community genau dein Ding sind und du Lust hast, **Flowers for Society** aktiv mitzugestalten, freuen wir uns auf deine Bewerbung. Gerne empfängt Lynn deine Bewerbung per "du".
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
