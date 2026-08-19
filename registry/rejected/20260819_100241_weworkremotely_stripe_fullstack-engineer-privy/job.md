@@ -1,0 +1,72 @@
+# Fullstack Engineer, Privy
+
+Posted: 2026-07-22T07:02:37Z
+
+## Rejection
+
+- Category: stale
+- Reason: published_at 2026-07-22T07:02:37Z is older than 7 days
+
+**Headquarters:** NYC-Privy, US-Remote
+
+## **Who we are**
+
+### **About Privy**
+
+Our mission is to make privacy and user ownership the default online. To do so, we build simple, flexible APIs and tools for developers that make it easy to build new products on crypto rails.
+
+Privy owns the abstractions and infrastructure layer above wallets, integrating across chains, third-party providers, and Stripe products like Treasury and Link. We get to solve hard technical problems while leveraging Stripe's distribution to reach customers like Ramp, Klarna, Deel, Kraken, Hyperliquid, and Fomo — powering experiences for both mainstream users and crypto natives.
+
+Learn more about Privy: [Privy and Stripe: Bringing crypto to everyone](https://privy.io/blog/announcing-our-acquisition-by-stripe)
+
+### **About the team**
+
+Engineering at Privy is distinguished by
+
+- High urgency—Shipping very small iterations, very fast, to learn very quickly
+
+- Product taste—Our customers *are* developers, and to build effective products for them requires technical knowledge—you will often be "the PM."
+
+- Security mindset—A great portion of our product is trust. While we have a dedicated security team, every engineer brings security to their designs from the start.
+
+In practice, we use [boring technology](https://mcfunley.com/choose-boring-technology) like Node, React, and AWS so we can focus our engineering energy entirely on pushing the boundaries of Privy's core product, e.g. through hardware enclaves, multi-region low latency APIs, and blockchain abstractions that are accessible to mainstream developers.
+
+## **What you’ll do**
+
+As a Fullstack Engineer at Privy, you will take on large areas of ownership in Privy’s product, architecture, and infrastructure. Because we build a developer tool, engineering and product are inextricably connected. We value intuitive interfaces, simplicity, and rapid iteration. Above all, we are building a company together to ship products that users love.
+
+- Design intuitive interfaces to break down complex systems and turn them into delightful developer tooling
+
+- Build and integrate systems end-to-end across client-side and server-side APIs to enable a seamless developer experience
+
+- Design and implement end-to-end product features driven by user needs
+
+- Advocate for usability and interface coherence across our teams and products
+
+- Enforce web development best practices across our entire product, collaborating with other core stakeholders
+
+### **Minimum requirements**
+
+- 8+ years of experience
+
+- Deep knowledge of React, TypeScript, Next.js
+
+- Experience building and maintaining a production system at scale
+
+- Prior experience working closely with a designer to iterate on a product
+
+- An understanding of modern web development best practices
+
+- Experience writing delightful developer documentation
+
+### **Preferred qualifications**
+
+- Strong preference for experience in an API-based business and in payments, fintech, or crypto
+
+- Written open-source developer tooling
+
+- Published about your work (code, presentations, papers, blog posts, etc.)
+
+- Past experience working closely with Design teams in authentication, security, or web3
+
+**To apply:** [https://weworkremotely.com/remote-jobs/stripe-fullstack-engineer-privy](https://weworkremotely.com/remote-jobs/stripe-fullstack-engineer-privy)

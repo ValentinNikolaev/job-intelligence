@@ -1,0 +1,12 @@
+schema_version: 1
+source: custom
+source_job_id: url-sha256:661fb62407eecc5847ddce2610f124941f4b49df559cd287a5992a0b213ac735
+source_url: https://jagaad.com/careers/senior-vuejs-frontend-developer/
+title: Senior Vue.js Frontend Developer
+company: Jagaad S.r.l.
+location: Remote
+published_at: null
+rejection_category: location_requirement
+rejection_reason: remote role is limited to the United States
+updated_at: '2026-08-19T10:02:26Z'
+rejected_at: '2026-08-19T10:02:26Z'

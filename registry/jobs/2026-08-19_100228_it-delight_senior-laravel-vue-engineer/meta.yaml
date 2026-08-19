@@ -1,0 +1,33 @@
+schema_version: 2
+id: 7790d1f4-f36f-42ac-80bf-ae8d35023b67
+title: Senior Laravel + Vue Engineer
+company: IT Delight
+company_url: https://jobs.dou.ua/companies/it-delight/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370295'
+  url: https://jobs.dou.ua/companies/it-delight/vacancies/370295/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 19 серпня
+    listing_summary: We are looking for a Senior Laravel + Vue Engineer to join our
+      team for a 6-month full-time project.
+published_at: '2026-08-19'
+discovered_at: '2026-08-19T10:02:28Z'
+updated_at: '2026-08-19T10:02:28Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-19T10:02:28Z'
+analysis_priority: 100
+fingerprint: sha256:98128a765c2ccfc8525e00579c256af5528821ba29e80f4a0b1b2ccdd228fc4f
+data_source: dou
+content_source: dou
+company_content_source: dou

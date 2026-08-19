@@ -1,0 +1,30 @@
+schema_version: 2
+id: 2fb33d35-9457-4a4d-990e-8dba058576a9
+title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
+company: Nord Security
+company_url: https://nordsecurity.com
+location: Remote Poland
+remote: true
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:fd1cfc9a8b88cb415e64fe88c22f34c3279cd137b67c377a1eaeb53752809cd2
+  url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
+  metadata:
+    source_name: nordsecurity
+    board_url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
+    source_type: custom HTML
+    remote_policy_note: Current direct company posting for Backend Engineer, PHP +
+      Go, with Docker/Kubernetes tooling.
+published_at: null
+discovered_at: '2026-08-19T10:02:26Z'
+updated_at: '2026-08-19T10:02:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-19T10:02:26Z'
+analysis_priority: 100
+fingerprint: sha256:89612ad0d5a110031b18bdf94576705295785137e391365a32a11b386df07506
+data_source: custom
+content_source: custom
+company_content_source: null

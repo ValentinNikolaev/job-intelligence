@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-teamleiter-jahresabschluss-steuerberater-dresden-170716
+source_url: https://www.arbeitnow.com/jobs/companies/hypertrics-gmbh/remote-teamleiter-jahresabschluss-steuerberater-dresden-170716
+title: Teamleiter Jahresabschluss / Steuerberater (m/w/d)
+company: Hypertrics GmbH
+location: Homeoffice
+published_at: '2026-08-19T08:30:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T10:02:20Z'
+rejected_at: '2026-08-19T10:02:20Z'

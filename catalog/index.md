@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 85
+Total vacancies: 89
 
-- Found: 72
+- Found: 76
 - Applied: 12
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 85
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-19 | [Хорошоп](../registry/jobs/2026-08-19_100228_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/) | [Strong Junior PHP developer](../registry/jobs/2026-08-19_100228_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/horoshop/vacancies/311905/) | [Open](../registry/jobs/2026-08-19_100228_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/company.md) | — | — | — | — |
+| 2026-08-19 | [IT Delight](../registry/jobs/2026-08-19_100228_it-delight_senior-laravel-vue-engineer/) | [Senior Laravel + Vue Engineer](../registry/jobs/2026-08-19_100228_it-delight_senior-laravel-vue-engineer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/it-delight/vacancies/370295/) | [Open](../registry/jobs/2026-08-19_100228_it-delight_senior-laravel-vue-engineer/company.md) | — | — | — | — |
+| 2026-08-19 | [Nord Security](../registry/jobs/2026-08-19_100226_nord-security_backend-engineer-mid-senior-php-go-payments-team/) | [Backend Engineer \| Mid - Senior \| PHP + Go \| Payments Team](../registry/jobs/2026-08-19_100226_nord-security_backend-engineer-mid-senior-php-go-payments-team/job.md) | Remote Poland | Custom | Found | 2026-08-19 | [Custom](https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f) | — | — | — | — | — |
+| 2026-08-19 | [ShippyPro](../registry/jobs/2026-08-19_100226_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-19_100226_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-19 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-19 | [saas.group](../registry/jobs/2026-08-19_060204_saas-group_lead-data-platform-engineer/) | [Lead Data Platform Engineer](../registry/jobs/2026-08-19_060204_saas-group_lead-data-platform-engineer/job.md) | Europe | Jobicy | Found | 2026-08-19 | [Jobicy](https://jobicy.com/jobs/146232-lead-data-platform-engineer) | — | — | — | — | — |
 | 2026-08-19 | [IT Service Ukraine](../registry/jobs/2026-08-19_060158_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/) | [Middle+/Senior Shopware Developer (Part-Time Contract, US Project)](../registry/jobs/2026-08-19_060158_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/speroteck/vacancies/347146/) | [Open](../registry/jobs/2026-08-19_060158_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/company.md) | — | — | — | — |
 | 2026-08-19 | [eduki](../registry/jobs/2026-08-19_060158_eduki_intermediate-back-end-developer/) | [Intermediate Back-End Developer](../registry/jobs/2026-08-19_060158_eduki_intermediate-back-end-developer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/369724/) | [Open](../registry/jobs/2026-08-19_060158_eduki_intermediate-back-end-developer/company.md) | — | — | — | — |
