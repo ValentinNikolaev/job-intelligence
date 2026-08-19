@@ -44,19 +44,28 @@ TELEGRAM_BOT_TOKEN=your-telegram-bot-token
 TELEGRAM_CHAT_ID=your-telegram-chat-id
 ```
 
-`sources/.env` is ignored by Git. Real credentials must never be added to `.env.example` or source files. Scheduled tasks that use CodexSandboxOnline for sandboxed command execution should provide the same names as task or host environment secrets instead:
+`sources/.env` is ignored by Git. Real credentials must never be added to `.env.example`
+or source files. Scheduled tasks that use CodexSandboxOnline for sandboxed source
+collection should provide source credentials as task or host environment secrets.
+Telegram credentials belong in GitHub repository secrets because GitHub Actions owns
+notification delivery:
 
 ```text
 ADZUNA_APP_ID
 ADZUNA_APP_KEY
 JOOBLE_API_KEY
 CLEANJOBDATA_API_KEY
+```
+
+Configure these GitHub repository secrets for delivery:
+
+```text
 TELEGRAM_BOT_TOKEN
 TELEGRAM_CHAT_ID
 ```
 
 The process environment wins over `sources/.env`, so the same code works in both
-local and CodexSandboxOnline execution. If an Online secret is missing, only the affected
+local and scheduled source collection. If a source secret is missing, only the affected
 source should fail; `python run.py all` continues collecting from the remaining
 configured sources and reports the failure separately.
 
@@ -487,8 +496,14 @@ directories. Each model-dependent run must pull the latest committed repository 
 before selecting work. Each model-dependent run handles one sealed analysis batch or one
 explicit preparation batch of at most 10 vacancies, so its cadence controls token use.
 CodexSandboxOnline or worktree execution requires a committed repository baseline plus
-explicit secret provisioning through the task or host environment; never commit
-`sources/.env`.
+explicit source-secret provisioning through the task or host environment; never commit
+`sources/.env`. Successful `analyze-batch` publication also writes a tracked Telegram
+manifest for newly analyzed non-rejected vacancies scoring at least
+`prepare_min_score`. The Scheduled Task commits that manifest but performs no external
+notification call. `.github/workflows/job-intelligence-telegram.yml` sends queued
+manifests with the `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` repository secrets,
+then commits the sent manifest and fingerprint receipt. See
+[`notifications/telegram/README.md`](notifications/telegram/README.md).
 
 The GitHub collection workflow is suitable for a three-hour cadence. It runs collection,
 deterministic triage, the four archive actions (`low-score`, `skipped`, `stale`, and

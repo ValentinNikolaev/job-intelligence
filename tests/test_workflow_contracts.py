@@ -114,6 +114,17 @@ class WorkflowContractTests(unittest.TestCase):
             self.assertIn("GitHub Actions templates", text)
             self.assertIn("generic `update data`", text)
 
+    def test_scheduled_analysis_uses_tracked_telegram_outbox(self) -> None:
+        scheduled = self._read("prompts/scheduled-analyze.md")
+        workflow = self._read(".github/workflows/job-intelligence-telegram.yml")
+
+        self.assertIn("notifications/telegram/outbox/", scheduled)
+        self.assertIn("prepare_min_score", scheduled)
+        self.assertIn("Do not invoke `scripts/notify_telegram.py`", scheduled)
+        self.assertIn('"notifications/telegram/outbox/**"', workflow)
+        self.assertIn("TELEGRAM_BOT_TOKEN", workflow)
+        self.assertIn("deliver_telegram_outbox.py", workflow)
+
     def test_two_wave_preparation_has_parallel_parts_handoff_and_cv_barrier(self) -> None:
         prepare = self._flat(
             self._read(

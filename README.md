@@ -141,6 +141,11 @@ Codex runs model-dependent work in separate interactive or scheduled tasks. The
 repository then validates and publishes Codex-produced local drafts. This keeps the
 model boundary explicit and auditable.
 
+Scheduled analysis also publishes eligible Telegram notifications as tracked JSON
+manifests under `notifications/telegram/outbox/`. GitHub Actions sends those manifests
+and commits delivery acknowledgements; the Codex task itself performs no Telegram
+network call.
+
 ## Common Commands
 
 Set up the project:

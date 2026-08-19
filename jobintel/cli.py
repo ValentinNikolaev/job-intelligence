@@ -40,6 +40,7 @@ from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
 from .registry import Registry
 from .workflows import WorkflowPolicy, load_workflow_policy
 from .triage import should_skip_model, write_triage
+from .telegram_outbox import build_analysis_notification, enqueue_notification
 from .usage import CodexUsageLog
 from .workflow_lock import (
     LOCK_ENV_TOKEN,
@@ -884,13 +885,18 @@ def _run_analysis_batch(
         return 2
     try:
         with workflow_lock(project_root, "analysis:batch-publish", timeout_seconds=args.lock_timeout_seconds):
-            _, model_label = _selected_workflow(
+            policy, model_label = _selected_workflow(
                 args.workflow, project_root, {"analyze"}, args.model_profile
             )
             pack = load_analysis_pack(args.input)
             results = pack.get("results")
             if not isinstance(results, dict):
                 raise ValueError("batch input must contain a results mapping keyed by directory")
+            notification = build_analysis_notification(
+                pack,
+                results,
+                minimum_score=policy.prepare_min_score,
+            )
             profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
             analyzer = MatchAnalyzer(
                 registry_dir,
@@ -899,12 +905,18 @@ def _run_analysis_batch(
             )
             summary = publish_analysis_batch(pack, results, analyzer)
             Registry(registry_dir).regenerate_index()
+            outbox_path = (
+                enqueue_notification(project_root, notification)
+                if notification is not None
+                else None
+            )
     except Exception as exc:
         print(f"Batch analysis failed: {exc}", file=sys.stderr)
         return 1
     print(f"Selected: {summary.selected}")
     print(f"Analyzed: {summary.analyzed}")
     print(f"Skipped unchanged: {summary.skipped}")
+    print(f"Telegram outbox: {outbox_path if outbox_path is not None else 'no eligible vacancies'}")
     print("Errors: 0")
     return 0
 
