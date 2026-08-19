@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150975'
+source_url: https://jobicy.com/jobs/150975-backend-software-engineer-2
+title: Backend Software Engineer
+company: Northflank
+location: Europe
+published_at: '2026-08-18T10:55:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T02:03:39Z'
+rejected_at: '2026-08-19T02:03:39Z'

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 85
+Total vacancies: 89
 
-- Found: 72
+- Found: 76
 - Applied: 12
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 85
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-19 | [eduki](../registry/jobs/2026-08-19_020333_eduki_intermediate-back-end-developer/) | [Intermediate Back-End Developer](../registry/jobs/2026-08-19_020333_eduki_intermediate-back-end-developer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/369724/) | [Open](../registry/jobs/2026-08-19_020333_eduki_intermediate-back-end-developer/company.md) | — | — | — | — |
+| 2026-08-19 | [IT Service Ukraine](../registry/jobs/2026-08-19_020333_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/) | [Middle+/Senior Shopware Developer (Part-Time Contract, US Project)](../registry/jobs/2026-08-19_020333_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/speroteck/vacancies/347146/) | [Open](../registry/jobs/2026-08-19_020333_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/company.md) | — | — | — | — |
+| 2026-08-19 | [Хорошоп](../registry/jobs/2026-08-19_020333_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/) | [Strong Junior PHP developer](../registry/jobs/2026-08-19_020333_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/horoshop/vacancies/311905/) | [Open](../registry/jobs/2026-08-19_020333_%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%BE%D0%BF_strong-junior-php-developer/company.md) | — | — | — | — |
+| 2026-08-19 | [ShippyPro](../registry/jobs/2026-08-19_020331_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-19_020331_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-19 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-18 | [Canonical Ltd.](../registry/jobs/2026-08-18_180725_canonical-ltd_distributed-systems-testing-software-engineer-py/) | [Distributed Systems Testing Software Engineer, Python / Go](../registry/jobs/2026-08-18_180725_canonical-ltd_distributed-systems-testing-software-engineer-py/job.md) | Anywhere | Jobicy | Found | 2026-08-18 | [Jobicy](https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go) | — | — | — | — | — |
 | 2026-08-18 | [Boosta](../registry/jobs/2026-08-18_180722_boosta_senior-lead-php-developer-edlight/) | [Senior/Lead PHP Developer \| Edlight](../registry/jobs/2026-08-18_180722_boosta_senior-lead-php-developer-edlight/job.md) | віддалено | Dou | Found | 2026-08-18 | [Dou](https://jobs.dou.ua/companies/boosta/vacancies/364684/) | [Open](../registry/jobs/2026-08-18_180722_boosta_senior-lead-php-developer-edlight/company.md) | — | — | — | — |
 | 2026-08-18 | [Akvelon](../registry/jobs/2026-08-18_120805_akvelon_middle-senior-software-golang-kubernetes-enginee/) | [Middle + / Senior Software Golang Kubernetes Engineer (Location: Portugal, Bulgaria, Croatia, Bosnia, Serbia, or Poland)](../registry/jobs/2026-08-18_120805_akvelon_middle-senior-software-golang-kubernetes-enginee/job.md) | Гдиня (Польща), віддалено | Dou | Found | 2026-08-18 | [Dou](https://jobs.dou.ua/companies/akvelon-ukraine/vacancies/370140/) | [Open](../registry/jobs/2026-08-18_120805_akvelon_middle-senior-software-golang-kubernetes-enginee/company.md) | — | — | — | — |

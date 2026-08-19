@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: amazon-marketplace-manager-hamburg-169304
+source_url: https://www.arbeitnow.com/jobs/companies/start-to-finish-consulting-gmbh/amazon-marketplace-manager-hamburg-169304
+title: Amazon Marketplace Manager (m/w/d)
+company: Start To Finish Consulting GmbH
+location: Hamburg
+published_at: '2026-08-18T15:00:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T02:03:25Z'
+rejected_at: '2026-08-19T02:03:25Z'

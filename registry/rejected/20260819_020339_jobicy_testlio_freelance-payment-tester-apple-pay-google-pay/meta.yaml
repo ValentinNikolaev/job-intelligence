@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150985'
+source_url: https://jobicy.com/jobs/150985-freelance-payment-tester-apple-pay-google-pay
+title: Freelance Payment Tester – Apple Pay & Google Pay
+company: Testlio
+location: EMEA
+published_at: '2026-08-18T11:00:35Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T02:03:39Z'
+rejected_at: '2026-08-19T02:03:39Z'

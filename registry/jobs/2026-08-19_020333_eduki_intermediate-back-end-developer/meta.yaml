@@ -1,0 +1,38 @@
+schema_version: 2
+id: 8a71e0a8-663e-47e3-89a0-b9de22c03453
+title: Intermediate Back-End Developer
+company: eduki
+company_url: https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '369724'
+  url: https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/369724/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 13 серпня
+    listing_summary: 'About Us
+
+
+      At eduki, we believe that supporting teachers leads to the best possible lessons,
+      the best possible schools, and the best possible education. That’s why we built
+      a platform where teachers can find and share high quality, ready-to-use teaching
+      materials.'
+published_at: '2026-08-13'
+discovered_at: '2026-08-19T02:03:33Z'
+updated_at: '2026-08-19T02:03:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-19T02:03:33Z'
+analysis_priority: 100
+fingerprint: sha256:6b23e2a625b553279ee08a4aa4cbc71e9117a58691382c78409a160deb1f4e3b
+data_source: dou
+content_source: dou
+company_content_source: dou
