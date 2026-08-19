@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-19T06:00:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Crypto.com",
+      "directory": "2026-08-12_150412_crypto-com_senior-backend-engineer-sports-prediction-market",
+      "score": 84,
+      "title": "Senior Backend Engineer (Sports & Prediction Markets) - Golang",
+      "url": "https://jooble.org/away/7310110760482153994?p=1&pos=16&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=156&brelb=15&scr=1828.8711&bscr=1828.8711&aq=-7420554347117734093&elckey=8577432983819113940",
+      "vacancy_id": "3f0bd170-efae-4975-a2ea-311afecabd89"
+    },
+    {
+      "company": "Optios",
+      "directory": "2026-08-12_110226_optios_senior-php-backend-developer",
+      "score": 89,
+      "title": "Senior PHP Backend Developer",
+      "url": "https://himalayas.app/companies/optios/jobs/senior-php-backend-developer-3753909888",
+      "vacancy_id": "c696214a-8abd-4867-97c4-19780a897157"
+    },
+    {
+      "company": "N-iX",
+      "directory": "2026-08-12_072955_n-ix_senior-php-engineer-5311",
+      "score": 88,
+      "title": "Senior PHP Engineer (#5311)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/258401/",
+      "vacancy_id": "e023d322-21e9-4b56-81ae-b476068c037f"
+    },
+    {
+      "company": "N-iX",
+      "directory": "2026-08-12_072955_n-ix_senior-lead-php-engineer-with-ai-skills-5504",
+      "score": 86,
+      "title": "Senior/ Lead PHP Engineer (with AI Skills) (#5504)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/258406/",
+      "vacancy_id": "a73cf3ed-09c2-4241-9087-81c7d15ca000"
+    },
+    {
+      "company": "N-iX",
+      "directory": "2026-08-12_072955_n-ix_middle-php-engineer-5298",
+      "score": 84,
+      "title": "Middle PHP Engineer (#5298)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/298240/",
+      "vacancy_id": "a2b39745-1614-4d1f-bbcc-1e54850c13b6"
+    }
+  ],
+  "minimum_score": 80,
+  "notification_id": "f0b0136a57052fd96291f95e73c2182c05e9bc49018e602951b6e654d56d2543",
+  "schema_version": 1
+}

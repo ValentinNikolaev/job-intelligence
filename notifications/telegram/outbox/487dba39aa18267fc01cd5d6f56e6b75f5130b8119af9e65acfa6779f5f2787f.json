@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-19T06:00:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "CyberCoders",
+      "directory": "2026-08-13_181828_cybercoders_remote-golang-engineer-b2b-saas-startup",
+      "score": 84,
+      "title": "Remote Golang Engineer - B2B SaaS Startup",
+      "url": "https://jooble.org/away/4451767382559098026?p=1&pos=5&rgn=55180&cid=15922&ckey=remote+golang+backend+engineer&jobAge=102&brelb=100&scr=868.75323&bscr=868.75323&aq=6339679821693404516&elckey=4430630558526648676",
+      "vacancy_id": "c9f394ba-fc7d-4bc6-8192-9b17ca4f4589"
+    },
+    {
+      "company": "Ciklum",
+      "directory": "2026-08-13_180551_ciklum_senior-php-engineer-4216",
+      "score": 80,
+      "title": "Senior PHP Engineer (4216)",
+      "url": "https://jobs.dou.ua/companies/ciklum/vacancies/369728/",
+      "vacancy_id": "bcca0c8e-fcea-4d86-9ef6-163dc01a2754"
+    },
+    {
+      "company": "FAVBET",
+      "directory": "2026-08-13_180551_favbet_senior-php-developer",
+      "score": 92,
+      "title": "Senior PHP Developer",
+      "url": "https://jobs.dou.ua/companies/favbet/vacancies/369737/",
+      "vacancy_id": "4c2bd774-7617-4059-9eb2-86242e31708e"
+    },
+    {
+      "company": "Distribusion Technologies",
+      "directory": "2026-08-13_062939_distribusion-technologies_staff-senior-software-engineer-all-genders",
+      "score": 86,
+      "title": "Staff / Senior Software Engineer (all genders)",
+      "url": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/remote-staff-senior-software-engineer-all-genders-berlin-329891",
+      "vacancy_id": "5bd937a6-634f-4e7b-829b-d3cd01e53915"
+    },
+    {
+      "company": "Itlearn360",
+      "directory": "2026-08-12_150412_itlearn360_senior-backend-engineer-remote-go-aws",
+      "score": 82,
+      "title": "Senior Backend Engineer - Remote (Go/AWS)",
+      "url": "https://jooble.org/desc/-6412346070490597878?ckey=remote+senior+backend+engineer&rgn=55180&pos=16&groupId=2134052230&elckey=-2279336942270955884&p=1&aq=4116617231929992329&cid=15922&jobAge=37&brelb=10&bscr=1070.8955&scr=1070.8955",
+      "vacancy_id": "5d0a7490-7c06-4ff5-a676-eeda93b2d10b"
+    }
+  ],
+  "minimum_score": 80,
+  "notification_id": "487dba39aa18267fc01cd5d6f56e6b75f5130b8119af9e65acfa6779f5f2787f",
+  "schema_version": 1
+}

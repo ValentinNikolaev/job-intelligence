@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-19T06:00:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Chainloop, Inc.",
+      "directory": "2026-08-17_180849_chainloop-inc_founding-senior-go-backend-engineer-remote-equit",
+      "score": 82,
+      "title": "Founding Senior Go Backend Engineer — Remote + Equity",
+      "url": "https://jooble.org/away/72313582599380715?p=1&pos=9&rgn=55180&cid=15922&ckey=remote+senior+backend+engineer&jobAge=54&brelb=15&scr=3016.949&bscr=3016.949&aq=2986193968633464025&elckey=-8408602980975230860",
+      "vacancy_id": "3b3afeb6-f4d1-4be1-ae26-07c406abe353"
+    },
+    {
+      "company": "iPay",
+      "directory": "2026-08-17_120646_ipay_senior-php-developer-backend-focused-react-js",
+      "score": 86,
+      "title": "Senior PHP Developer (Backend-focused, React.js)",
+      "url": "https://jobs.dou.ua/companies/ipay/vacancies/351948/",
+      "vacancy_id": "9437a4eb-1e56-4dd0-bbcf-7360806bd7c0"
+    },
+    {
+      "company": "RemoDevs",
+      "directory": "2026-08-17_120646_remodevs_senior-php-fullstack-developer",
+      "score": 80,
+      "title": "Senior PHP Fullstack Developer",
+      "url": "https://jobs.dou.ua/companies/remodevs/vacancies/369996/",
+      "vacancy_id": "85b2dae4-6903-4cb6-a423-2fb32025264b"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-08-17_061026_shippypro_software-engineering-team-lead",
+      "score": 89,
+      "title": "Software Engineering Team Lead",
+      "url": "https://shippypro.factorialhr.com/job_posting/software-engineering-team-lead-311256",
+      "vacancy_id": "6552b7e2-2012-46cf-9cba-45a0e56f8775"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-08-17_061026_shippypro_senior-software-engineer",
+      "score": 88,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "6521187c-674e-4629-948f-8bed3556979b"
+    }
+  ],
+  "minimum_score": 80,
+  "notification_id": "4fd2133c17d2bab4e6aee7e5b891d7c54d540b8124835c14d8e38d784ff4f67d",
+  "schema_version": 1
+}

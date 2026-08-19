@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-19T06:00:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "WhiteTech",
+      "directory": "2026-08-10_194528_whitetech_php-developer-with-ddd",
+      "score": 89,
+      "title": "PHP Developer with DDD",
+      "url": "https://job-boards.eu.greenhouse.io/whitetech/jobs/4862144101",
+      "vacancy_id": "bb67dbbd-ff90-4447-971f-e7e2a7e2b7d2"
+    },
+    {
+      "company": "Gameinspire",
+      "directory": "2026-08-07_112249_gameinspire_middle-senior-golang-developer",
+      "score": 86,
+      "title": "Middle/Senior Golang Developer",
+      "url": "https://jobs.dou.ua/companies/gameinspire/vacancies/311681/",
+      "vacancy_id": "b026db32-002c-47a4-a277-c2a73772d396"
+    },
+    {
+      "company": "Linro",
+      "directory": "2026-08-05_065339_linro_backend-engineer-remote-germany",
+      "score": 91,
+      "title": "Backend Engineer - Remote Germany",
+      "url": "https://www.arbeitnow.com/jobs/companies/linro/backend-engineer-remote-germany-235719",
+      "vacancy_id": "efe56330-8bb8-4a90-b89a-551ed91ffa8d"
+    },
+    {
+      "company": "Valant",
+      "directory": "2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills",
+      "score": 89,
+      "title": "Full Stack PHP Laravel Developer/ DevOps Skills",
+      "url": "https://jobs.dou.ua/companies/valant/vacancies/360382/",
+      "vacancy_id": "b839f4d9-4525-4270-b3fc-fb21352c0b12"
+    },
+    {
+      "company": "SFox",
+      "directory": "2026-08-04_093824_sfox_backend-developer-php-for-a-global-igaming-compa",
+      "score": 86,
+      "title": "Backend Developer (PHP) for a Global iGaming Company",
+      "url": "https://jobs.dou.ua/companies/sfox/vacancies/326665/",
+      "vacancy_id": "4d5ebad9-f71a-4390-a579-4fff482d6875"
+    }
+  ],
+  "minimum_score": 80,
+  "notification_id": "80a93d09428bc71e8abae10af601f72c8cb2edb7b6cfef844eae9618b81e0556",
+  "schema_version": 1
+}

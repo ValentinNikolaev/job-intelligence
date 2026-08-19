@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-19T06:00:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Cikumas GmbH",
+      "directory": "2026-08-15_170157_cikumas-gmbh_php-full-stack-developer",
+      "score": 84,
+      "title": "PHP Full-Stack Developer",
+      "url": "https://jobs.dou.ua/companies/cikumas-gmbh/vacancies/366568/",
+      "vacancy_id": "acca7767-3bac-4ccc-85d9-084b61231af4"
+    },
+    {
+      "company": "Brainstack",
+      "directory": "2026-08-14_160240_brainstack_php-developer-billing",
+      "score": 91,
+      "title": "PHP Developer (Billing)",
+      "url": "https://jobs.dou.ua/companies/brainstack/vacancies/369880/",
+      "vacancy_id": "d2d7d820-7122-4cd1-b96f-1fc94f4f2fa6"
+    },
+    {
+      "company": "Nova Digital",
+      "directory": "2026-08-14_160240_nova-digital_middle-full-stack-developer",
+      "score": 84,
+      "title": "Middle Full-stack Developer",
+      "url": "https://jobs.dou.ua/companies/nova-digital/vacancies/369679/",
+      "vacancy_id": "99dc3729-682f-4183-9b64-b82f99570e15"
+    },
+    {
+      "company": "ПриватБанк",
+      "directory": "2026-08-14_160240_приватбанк_middle-strong-senior-php-developer-laravel",
+      "score": 92,
+      "title": "Middle Strong/Senior PHP Developer (Laravel)",
+      "url": "https://jobs.dou.ua/companies/privatbank/vacancies/369853/",
+      "vacancy_id": "458cf8c1-86ac-47af-9851-42f50a650b0f"
+    },
+    {
+      "company": "mono",
+      "directory": "2026-08-14_120246_mono_golang-engineer-еквайринг",
+      "score": 92,
+      "title": "Golang Engineer (Еквайринг)",
+      "url": "https://jobs.dou.ua/companies/mono/vacancies/361524/",
+      "vacancy_id": "01dfa372-6820-4957-9922-0910fc8ac6f3"
+    }
+  ],
+  "minimum_score": 80,
+  "notification_id": "9b9b4dc6883d8b50bacabb7912e7ffe6c7d93557a2826522503dabeadf2b1251",
+  "schema_version": 1
+}
