@@ -1,0 +1,49 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:6a7679d5fcbb50bc02bdaa581fcb4acc0d63ff2b2e7a012c45b1cfdf5746cce8
+company_version: sha256:7c110a9959e0f01f008c082624fe8722b97f1ce2f3cff2fdbdb357a953c4ed7e
+prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+model: codex:gpt-5.6-terra:medium
+cv_export_stem: CV_ValentinNikolaev_favbet_SeniorPHPDeveloper
+generated_at: '2026-08-19T20:35:49Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6a7679d5fcbb50bc02bdaa581fcb4acc0d63ff2b2e7a012c45b1cfdf5746cce8
+    company_version: sha256:7c110a9959e0f01f008c082624fe8722b97f1ce2f3cff2fdbdb357a953c4ed7e
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_favbet_SeniorPHPDeveloper
+    generated_at: '2026-08-19T20:35:49Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6a7679d5fcbb50bc02bdaa581fcb4acc0d63ff2b2e7a012c45b1cfdf5746cce8
+    company_version: sha256:7c110a9959e0f01f008c082624fe8722b97f1ce2f3cff2fdbdb357a953c4ed7e
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_favbet_SeniorPHPDeveloper
+    generated_at: '2026-08-19T20:35:49Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6a7679d5fcbb50bc02bdaa581fcb4acc0d63ff2b2e7a012c45b1cfdf5746cce8
+    company_version: sha256:7c110a9959e0f01f008c082624fe8722b97f1ce2f3cff2fdbdb357a953c4ed7e
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_favbet_SeniorPHPDeveloper
+    generated_at: '2026-08-19T20:35:49Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6a7679d5fcbb50bc02bdaa581fcb4acc0d63ff2b2e7a012c45b1cfdf5746cce8
+    company_version: sha256:7c110a9959e0f01f008c082624fe8722b97f1ce2f3cff2fdbdb357a953c4ed7e
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_favbet_SeniorPHPDeveloper
+    generated_at: '2026-08-19T20:35:49Z'
+files:
+- CV_ValentinNikolaev_favbet_SeniorPHPDeveloper.docx
+- CV_ValentinNikolaev_favbet_SeniorPHPDeveloper.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md
