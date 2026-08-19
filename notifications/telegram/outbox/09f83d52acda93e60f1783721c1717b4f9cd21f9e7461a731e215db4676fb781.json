@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-19T10:26:14Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "IT Delight",
+      "directory": "2026-08-19_100228_it-delight_senior-laravel-vue-engineer",
+      "score": 82,
+      "title": "Senior Laravel + Vue Engineer",
+      "url": "https://jobs.dou.ua/companies/it-delight/vacancies/370295/",
+      "vacancy_id": "7790d1f4-f36f-42ac-80bf-ae8d35023b67"
+    },
+    {
+      "company": "Jimdo",
+      "directory": "2026-08-19_060152_jimdo_senior-infrastructure-engineer",
+      "score": 76,
+      "title": "Senior Infrastructure Engineer",
+      "url": "https://jobs.ashbyhq.com/jimdo.com/e862ea55-49ec-4485-bfce-237c2f86c1c9",
+      "vacancy_id": "4be04490-9d7a-468f-ad9e-40c0cd6eee26"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "09f83d52acda93e60f1783721c1717b4f9cd21f9e7461a731e215db4676fb781",
+  "schema_version": 1
+}
