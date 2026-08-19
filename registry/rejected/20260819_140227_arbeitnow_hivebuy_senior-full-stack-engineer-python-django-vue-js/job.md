@@ -125,4 +125,4 @@ We also know our existing codebase isn’t perfect. We don’t expect you to bli
 
 If that’s how you like to work, we’d like to hear from you.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

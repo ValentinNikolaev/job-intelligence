@@ -79,4 +79,4 @@ Arbeitsumfang, Vergütung und Voraussetzungen unterscheiden sich je nach Projekt
 
 Du möchtest flexibel an spannenden KI-Projekten mitarbeiten? Dann bewirb dich unverbindlich und erfahre anschließend, welche aktuellen Möglichkeiten zu deinem Profil passen.Eine spannende Tätigkeit für alle, die Sprache, Analyse und moderne KI-Technologien miteinander verbinden möchten.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

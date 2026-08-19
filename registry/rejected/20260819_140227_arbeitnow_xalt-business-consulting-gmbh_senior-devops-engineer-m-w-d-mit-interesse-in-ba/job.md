@@ -69,4 +69,4 @@ Das erwartet dich:
 
 - Kein stures abarbeiten von Tasks am Fließband - wir setzen immer auf neue Impulse und Ideen, sowohl bei unseren KundInnen als auch bei internen Projekten!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

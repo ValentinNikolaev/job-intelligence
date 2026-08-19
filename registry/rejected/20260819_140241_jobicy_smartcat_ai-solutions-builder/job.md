@@ -4,8 +4,8 @@ Posted: 2026-08-12T14:19:54Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-12T14:19:54Z is older than 7 days
 
 ## **About Smartcat**
 

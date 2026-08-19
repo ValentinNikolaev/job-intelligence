@@ -93,4 +93,4 @@ Wir sind meritokratisch: Wer liefert, bekommt Verantwortung. Unser CEO war vor 3
 
 Wir bauen Buena langfristig auf: Die Wohneigentumsquote in Deutschland liegt weit unter dem europäischen Durchschnitt. Wir ändern das.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -69,4 +69,4 @@ Deine Erfahrungen & Skills 💪
 
 Dann freuen wir uns Dich kennenzulernen! Bitte sende uns dafür Deinen CV oder Dein Linkedin Profil inkl. Eintrittsdatum und Gehaltsvorstellung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

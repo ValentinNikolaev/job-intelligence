@@ -69,4 +69,4 @@ Als Argus Search vermitteln wir regelmäßig attraktive Positionen im HR- und Fi
 
 Haben Sie jemanden im Kopf, der perfekt zu dieser Position passt? Dann freuen wir uns, wenn Sie uns den Kontakt empfehlen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

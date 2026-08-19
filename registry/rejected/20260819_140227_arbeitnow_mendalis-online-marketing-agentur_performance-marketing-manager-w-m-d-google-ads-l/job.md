@@ -73,4 +73,4 @@ Wenn Du ein leidenschaftlicher und ergebnisorientierter Marketer bist, der/die g
 
 **Liste bitte deine Erfahrungen im Marketing in deinem Lebenslauf :)**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

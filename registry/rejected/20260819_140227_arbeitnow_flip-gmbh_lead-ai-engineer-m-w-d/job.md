@@ -137,4 +137,4 @@ Deutschkenntnisse auf beliebigem Niveau. In Teilen des Unternehmens hilfreich, f
 
 Damit unsere Stellenanzeigen leichter lesbar sind, verwenden wird im Textverlauf die männliche Form der Anrede. Bei Flip sind alle willkommen ganz egal, welches Geschlecht du hast oder wie alt du bist. Sexuelle Identität, Herkunft, Religion, Weltanschauung und Behinderungen spielen keine Rolle. Das Wichtigste ist, dass DU zu uns passt!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

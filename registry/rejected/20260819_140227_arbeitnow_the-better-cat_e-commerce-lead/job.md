@@ -63,4 +63,4 @@ Unser Shop ist der Ort, an dem sich unser gesamtes Wachstum entscheidet. Jeder P
 
 Dann melde dich bei uns! 📩 Sende deinen Lebenslauf und ein kurzes Anschreiben. Sag uns, warum du die perfekte Verstärkung für unser Team bist – wir freuen uns auf dich!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -89,4 +89,4 @@ Deine Ansprechperson: Silas Baur
 
 E-Mail: ----- style="min-height:1.5em">
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

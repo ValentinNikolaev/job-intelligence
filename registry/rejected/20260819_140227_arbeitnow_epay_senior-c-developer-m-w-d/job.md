@@ -46,4 +46,4 @@ We are epay, and as an independent full-service payment provider, we offer our g
 
 ### We deliver highly advanced, secure and sustainable payment & incentive products and solutions that drive contribution to our partners and exceptional value to their customers.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

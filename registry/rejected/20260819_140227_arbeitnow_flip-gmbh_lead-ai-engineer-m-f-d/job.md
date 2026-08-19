@@ -137,4 +137,4 @@ German at any level. Useful in parts of the company, never required for this rol
 
 At Flip, everyone is welcome - no matter what gender you identify as or how old you are. Sexual *identity*, origin, religion, world view and disabilities do not influence your potential job at Flip. The most important thing is that **YOU** fit in!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -81,4 +81,4 @@ Unsere Mission ist klar: Wir wollen wachsen, um so vielen Hunden wie möglich ei
 
 Lies unser vollständiges JEDI-Commitment-Statement auf unserer Website.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
