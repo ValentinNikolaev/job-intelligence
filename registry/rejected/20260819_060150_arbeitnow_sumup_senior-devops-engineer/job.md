@@ -1,0 +1,106 @@
+# Senior DevOps Engineer
+
+Posted: 2026-08-18T20:45:24Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: vacancy is explicitly non-remote
+
+**Location:** Berlin, Germany (office first)
+
+## Team description
+
+Our Platform Tribe builds Fleet, the infrastructure foundation that every engineering team at SumUp relies on to ship safely and quickly. Fleet gives teams a stable, self-service platform, built on AWS, Kubernetes and Terraform, so they can focus on their products instead of infrastructure bottlenecks. As part of the Cloud Infrastructure team, you'll take ownership of critical platform services, help modernise how we run Kubernetes at scale, and support engineers across the business as they build on top of what you maintain. If you enjoy solving complex infrastructure problems that quietly power everything else, this is where that work happens.
+
+## What you'll do
+
+-
+
+Design and maintain Terraform modules and infrastructure patterns that other engineering teams build on
+
+-
+
+Manage production Kubernetes (EKS) clusters, including performance tuning and service mesh implementation
+
+-
+
+Lead security and compliance work across frameworks such as PCI DSS and SOC2, partnering with the Security team
+
+-
+
+Define and monitor service reliability metrics, take part in on-call rotation, and drive improvements after incidents
+
+-
+
+Improve developer experience through automation, better CI/CD pipelines, and clearer documentation
+
+-
+
+Mentor other engineers on the team and contribute to technical design discussions
+
+## You'll be great for this role if…
+
+-
+
+At least 8 years of experience in DevOps, platform, or infrastructure engineering
+
+- Proven hands-on experience in software development (Go preferred, but anyone would be good)
+
+-
+
+Experience designing and maintaining infrastructure as code, ideally with Terraform
+
+-
+
+Strong knowledge of Kubernetes in production, including cluster operations and troubleshooting
+
+-
+
+Hands-on experience with core AWS services such as EC2, VPC, IAM, and load balancing
+
+-
+
+Comfort working within security and compliance requirements without slowing teams down
+
+-
+
+Ability to mentor other engineers and explain technical decisions clearly to different audiences
+
+## Why you should join SumUp 🎉
+
+🌎 Opportunity to work with SumUppers globally on large-scale fintech products used by millions of businesses worldwide, from our Berlin office. This involves an office-first setup
+
+🌈 Commitment to Diversity and Inclusion: be part of a workplace that values and promotes diversity, fostering an inclusive environment where everyone's perspectives are respected and embraced
+
+🚀 Enrolment onto our Virtual Stock Option programme: you will own a stake in SumUp's future success
+
+📚 A dedicated annual L&D budget of €2000 for your individual development, which can be used to attend conferences and/or advance your career through further education
+
+💶 A corporate pension scheme where we match up to 20% of your contributions
+
+🏖 Generous time off: enjoy 28 days of paid leave plus public holidays and special leave days
+
+🩺 Numerous other benefits such as Urban Sports Club subsidy, Kita placement assistance, subsidised office lunches
+
+🌴 Break4me: 1-month sabbatical after 3 years of service
+
+🔗 Referral Bonus: earn additional rewards by referring talented individuals to join the SumUp team
+
+## About SumUp
+
+Be empowered to do more that matters.
+
+At SumUp, we're on a mission to empower small businesses across the globe by providing simple and affordable tools that allow them to thrive. Today, over 4 million businesses in 37 markets rely on SumUp as their financial partner to manage payments, finance, and customer relationships.
+
+Our commitment to small businesses is reflected in [our diverse team](https://youtu.be/9DG64C3moeQ?si=YpcWuBNBTOQPzeLI) of over 3,000 SumUppers from over 90 nationalities, united by global collaboration and an innovative mindset. [Our core values](https://www.sumup.com/careers/culture/) lay the foundation for who we are and what we stand for, shaping our work culture and driving our success. We foster inclusivity and a continuous learning culture, providing a safe space for personal and professional growth. Our differences make us unique and strong as we strive to create an environment where everyone belongs and feels supported, no matter how they identify.
+
+SumUp is proud to be an Equal Employment Opportunity employer, actively seeking and embracing diversity in our workforce. We don't make hiring or employment decisions based on race, colour, religion or religious belief, ethnic or national origin, nationality, sex, gender, gender identity, sexual orientation, disability, age or any other basis protected by applicable laws or prohibited by company policy. Our commitment extends beyond recruitment to creating a safe and respectful workplace where harassment of any form is strictly prohibited. Discover more about our culture and opportunities on our [careers website](https://www.sumup.com/careers/), and follow our journey on [LinkedIn](https://www.linkedin.com/company/sumup/), [Instagram](https://www.instagram.com/insidesumup/), and [TikTok](https://www.tiktok.com/@insidesumup).
+
+📽️ Want to bring this role to life on social or add a video to the posting? Check out the [Global Employer Brand video library](https://www.notion.so/sumup/Global-Employer-Brand-video-library-Empowering-Talent-Acquisition-partners-and-hiring-managers-194d3d97eb3c4eaca7ee2edff1a9d3fd) for ready-to-use assets.
+
+**Job Application Tip**
+
+We recognise that candidates feel they need to meet 100% of the job criteria in order to apply for a job. Please note that this is only a guide. If you don't tick every box, it's ok too because it means you have room to learn and develop your career at SumUp.
+
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

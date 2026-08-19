@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150593'
+source_url: https://jobicy.com/jobs/150593-ai-solutions-builder
+title: AI Solutions Builder
+company: Smartcat
+location: Europe
+published_at: '2026-08-12T14:19:54Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-19T06:02:04Z'
+rejected_at: '2026-08-19T06:02:04Z'
