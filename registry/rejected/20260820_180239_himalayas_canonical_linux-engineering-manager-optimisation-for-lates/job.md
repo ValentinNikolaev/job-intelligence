@@ -1,11 +1,11 @@
 # Linux Engineering Manager - Optimisation for Latest Hardware
 
-Posted: 2026-06-21T06:49:24Z
+Posted: 2026-08-20T20:32:56Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-21T06:49:24Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 Lead an engineering team that partners with the Linux engineers of a major silicon company, and works across the full Linux stack from kernel to GUI, to optimise Ubuntu, the world’s most widely used Linux desktop and server, for the latest silicon.
 

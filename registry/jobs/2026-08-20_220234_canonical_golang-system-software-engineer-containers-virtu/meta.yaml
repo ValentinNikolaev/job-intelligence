@@ -1,0 +1,132 @@
+schema_version: 2
+id: 0e865353-4ce8-49e1-b987-f18d03e2ebbf
+title: Golang System Software Engineer - Containers / Virtualisation
+company: Canonical
+company_url: null
+location: Algeria, Austria, Bahrain, Belgium, Bulgaria, Canada, Czechia, Denmark,
+  Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece, Hungary, Ireland, Israel,
+  Italy, Kenya, Kuwait, Libya, Mexico, Morocco, Netherlands, Nigeria, Norway, Oman,
+  Poland, Portugal, Qatar, Romania, Russian Federation, Saudi Arabia, Senegal, South
+  Africa, Spain, Sweden, Switzerland, Tanzania, Tunisia, Turkey, Uganda, Ukraine,
+  United Arab Emirates, United Kingdom, United States
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/canonical/jobs/golang-system-software-engineer-containers-virtualisation
+  url: https://himalayas.app/companies/canonical/jobs/golang-system-software-engineer-containers-virtualisation
+  metadata:
+    location_restrictions:
+    - name: Algeria
+    - name: Austria
+    - name: Bahrain
+    - name: Belgium
+    - name: Bulgaria
+    - name: Canada
+    - name: Czechia
+    - name: Denmark
+    - name: Egypt
+    - name: Ethiopia
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Ghana
+    - name: Greece
+    - name: Hungary
+    - name: Ireland
+    - name: Israel
+    - name: Italy
+    - name: Kenya
+    - name: Kuwait
+    - name: Libya
+    - name: Mexico
+    - name: Morocco
+    - name: Netherlands
+    - name: Nigeria
+    - name: Norway
+    - name: Oman
+    - name: Poland
+    - name: Portugal
+    - name: Qatar
+    - name: Romania
+    - name: Russian Federation
+    - name: Saudi Arabia
+    - name: Senegal
+    - name: South Africa
+    - name: Spain
+    - name: Sweden
+    - name: Switzerland
+    - name: Tanzania
+    - name: Tunisia
+    - name: Turkey
+    - name: Uganda
+    - name: Ukraine
+    - name: United Arab Emirates
+    - name: United Kingdom
+    - name: United States
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets.
+    company_slug: canonical
+    company_logo: https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -10
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 14
+    categories:
+    - Software-Engineer
+    - Infrastructure-Engineering
+    - Backend-Engineering
+    - Systems-Programming
+    - Golang-Development
+    - Senior-Golang-Developer
+    - GoLang-Backend-Engineer
+    - Senior-Golang-GPU-Developer
+    - Senior-Golang-Tech-Lead
+    - Systems-Software-Engineer
+    - Container-Orchestration-Engineer
+    - Lead-Golang-Developer
+    expiry_at: '2026-09-19T02:06:03Z'
+    discovered_by:
+    - query_index: 2
+      parameters:
+        q: golang
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        seniority: Senior
+published_at: '2026-08-20T20:33:38Z'
+discovered_at: '2026-08-20T22:02:34Z'
+updated_at: '2026-08-20T22:02:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-20T22:02:34Z'
+analysis_priority: 0
+fingerprint: sha256:168867177512562c03ab3743a30275e465eaf577fed30a13f86360c934394770
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

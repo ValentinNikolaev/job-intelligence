@@ -1,0 +1,125 @@
+schema_version: 2
+id: ab0c45ad-d1f7-46f2-a286-41618cfde06f
+title: Software Engineer - Python/Golang - Kubernetes
+company: Canonical
+company_url: null
+location: Algeria, Argentina, Austria, Bahrain, Belgium, Brazil, Canada, Czechia,
+  Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece, Hungary, Ireland,
+  Israel, Italy, Kenya, Kuwait, Mexico, Morocco, Netherlands, Nigeria, Norway, Oman,
+  Poland, Portugal, Qatar, Romania, Saudi Arabia, Senegal, South Africa, Spain, Sweden,
+  Switzerland, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/canonical/jobs/software-engineer-python-golang-kubernetes
+  url: https://himalayas.app/companies/canonical/jobs/software-engineer-python-golang-kubernetes
+  metadata:
+    location_restrictions:
+    - name: Algeria
+    - name: Argentina
+    - name: Austria
+    - name: Bahrain
+    - name: Belgium
+    - name: Brazil
+    - name: Canada
+    - name: Czechia
+    - name: Denmark
+    - name: Egypt
+    - name: Ethiopia
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Ghana
+    - name: Greece
+    - name: Hungary
+    - name: Ireland
+    - name: Israel
+    - name: Italy
+    - name: Kenya
+    - name: Kuwait
+    - name: Mexico
+    - name: Morocco
+    - name: Netherlands
+    - name: Nigeria
+    - name: Norway
+    - name: Oman
+    - name: Poland
+    - name: Portugal
+    - name: Qatar
+    - name: Romania
+    - name: Saudi Arabia
+    - name: Senegal
+    - name: South Africa
+    - name: Spain
+    - name: Sweden
+    - name: Switzerland
+    - name: Turkey
+    - name: Ukraine
+    - name: United Arab Emirates
+    - name: United Kingdom
+    - name: United States
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets.
+    company_slug: canonical
+    company_logo: https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -10
+    - -9
+    - -8
+    - -7
+    - -6
+    - -5
+    - -4
+    - -3.5
+    - -3
+    - -2
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 14
+    categories:
+    - Backend-Development
+    - DevOps
+    - Cloud-Engineer
+    - Kubernetes-Engineering
+    - Senior-Python-Software-Engineer
+    - Staff-Kubernetes-Engineer
+    - Python-Backend-Engineer
+    - Software-Engineer
+    - Lead-Software-Engineer---Python
+    expiry_at: '2026-09-19T02:19:41Z'
+    discovered_by:
+    - query_index: 2
+      parameters:
+        q: golang
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        seniority: Senior
+    - query_index: 3
+      parameters:
+        q: php backend
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        seniority: Senior
+published_at: '2026-08-20T20:34:23Z'
+discovered_at: '2026-08-20T22:02:34Z'
+updated_at: '2026-08-20T22:02:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-20T22:02:34Z'
+analysis_priority: 0
+fingerprint: sha256:bc141a7d2c6734ed70ac0c9d0db1cc7f9d43cdcf0c777f9d8f963bfb6ce4579f
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

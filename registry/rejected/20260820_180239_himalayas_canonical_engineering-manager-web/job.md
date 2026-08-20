@@ -1,11 +1,11 @@
 # Engineering Manager - Web
 
-Posted: 2026-06-21T14:46:56Z
+Posted: 2026-08-20T20:33:43Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-21T14:46:56Z is older than 7 days
+- Category: tech_stack
+- Reason: role does not mention Go/Golang or PHP
 
 [Canonical](https://himalayas.app/companies/canonical) is a leading provider of open-source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of globally distributed collaboration, with 1100+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution.
 

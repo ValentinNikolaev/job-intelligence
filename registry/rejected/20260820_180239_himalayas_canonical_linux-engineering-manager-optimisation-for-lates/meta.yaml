@@ -11,8 +11,8 @@ location: Argentina, Australia, Austria, Bahrain, Belgium, Brazil, Canada, China
   Saudi Arabia, Singapore, South Africa, South Korea, Spain, Sweden, Switzerland,
   Taiwan, Thailand, Turkey, Ukraine, United Arab Emirates, United Kingdom, United
   States, Vietnam
-published_at: '2026-06-21T06:49:24Z'
-rejection_category: stale
-rejection_reason: published_at 2026-06-21T06:49:24Z is older than 7 days
-updated_at: '2026-08-20T18:02:39Z'
+published_at: '2026-08-20T20:32:56Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-20T22:02:34Z'
 rejected_at: '2026-08-20T18:02:39Z'

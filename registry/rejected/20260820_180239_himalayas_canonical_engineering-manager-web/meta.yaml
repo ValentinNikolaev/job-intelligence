@@ -11,8 +11,8 @@ location: Algeria, Angola, Austria, Bahrain, Belgium, Botswana, Bulgaria, Camero
   Federation, Rwanda, Saudi Arabia, Senegal, Slovakia, South Africa, Spain, Sudan,
   Sweden, Switzerland, Tanzania, Tunisia, Turkey, Uganda, Ukraine, United Arab Emirates,
   United Kingdom, Zambia, Zimbabwe
-published_at: '2026-06-21T14:46:56Z'
-rejection_category: stale
-rejection_reason: published_at 2026-06-21T14:46:56Z is older than 7 days
-updated_at: '2026-08-20T18:02:39Z'
+published_at: '2026-08-20T20:33:43Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-20T22:02:34Z'
 rejected_at: '2026-08-20T18:02:39Z'

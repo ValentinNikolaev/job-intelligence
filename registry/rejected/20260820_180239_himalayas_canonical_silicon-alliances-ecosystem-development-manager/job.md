@@ -1,11 +1,11 @@
 # Silicon Alliances Ecosystem Development Manager
 
-Posted: 2026-06-21T12:58:49Z
+Posted: 2026-08-20T20:33:14Z
 
 ## Rejection
 
-- Category: stale
-- Reason: published_at 2026-06-21T12:58:49Z is older than 7 days
+- Category: location_requirement
+- Reason: requires American continent location
 
 [Canonical](https://himalayas.app/companies/canonical) is a leading provider of open source software and operating systems to the global enterprise and technology markets. Our platform, Ubuntu, is very widely used in breakthrough enterprise initiatives such as public cloud, data science, AI, engineering innovation, and IoT. Our customers include the world's leading public cloud and silicon providers, and industry leaders in many sectors. The company is a pioneer of global distributed collaboration, with 1200+ colleagues in 75+ countries and very few office-based roles. Teams meet two to four times yearly in person, in interesting locations around the world, to align on strategy and execution.
 

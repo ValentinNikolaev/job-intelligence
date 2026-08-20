@@ -1,0 +1,114 @@
+schema_version: 2
+id: 7eb09f01-001c-4957-beee-57ec81951e6a
+title: Senior Juju Software Engineer (Go)
+company: Canonical
+company_url: null
+location: Algeria, Austria, Bahrain, Belarus, Belgium, Bulgaria, Croatia, Czechia,
+  Denmark, Egypt, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Israel,
+  Italy, Kuwait, Latvia, Lithuania, Morocco, Netherlands, Norway, Oman, Poland, Portugal,
+  Qatar, Romania, Saudi Arabia, Slovakia, Slovenia, South Africa, Spain, Sweden, Switzerland,
+  Tunisia, Turkey, Ukraine, United Arab Emirates, United Kingdom
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/canonical/jobs/senior-juju-software-engineer-go
+  url: https://himalayas.app/companies/canonical/jobs/senior-juju-software-engineer-go
+  metadata:
+    location_restrictions:
+    - name: Algeria
+    - name: Austria
+    - name: Bahrain
+    - name: Belarus
+    - name: Belgium
+    - name: Bulgaria
+    - name: Croatia
+    - name: Czechia
+    - name: Denmark
+    - name: Egypt
+    - name: Estonia
+    - name: Finland
+    - name: France
+    - name: Germany
+    - name: Greece
+    - name: Hungary
+    - name: Ireland
+    - name: Israel
+    - name: Italy
+    - name: Kuwait
+    - name: Latvia
+    - name: Lithuania
+    - name: Morocco
+    - name: Netherlands
+    - name: Norway
+    - name: Oman
+    - name: Poland
+    - name: Portugal
+    - name: Qatar
+    - name: Romania
+    - name: Saudi Arabia
+    - name: Slovakia
+    - name: Slovenia
+    - name: South Africa
+    - name: Spain
+    - name: Sweden
+    - name: Switzerland
+    - name: Tunisia
+    - name: Turkey
+    - name: Ukraine
+    - name: United Arab Emirates
+    - name: United Kingdom
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets.
+    company_slug: canonical
+    company_logo: https://cdn-images.himalayas.app/re8q1jo71m4lmph4ozuxybpu8nei
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -1
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    categories:
+    - DevOps
+    - Backend-Development
+    - Charm-Engineering
+    - Senior-Go-Developer
+    - Senior-Golang-Developer
+    - Senior-Golang-Tech-Lead
+    - Senior-Infrastructure-Software-Engineer
+    - Go
+    - DevOps-Engineer
+    - Software-Engineer
+    expiry_at: '2026-09-19T02:10:42Z'
+    discovered_by:
+    - query_index: 2
+      parameters:
+        q: golang
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        seniority: Senior
+    - query_index: 3
+      parameters:
+        q: php backend
+        country: IT
+        sort: recent
+        exclude_worldwide: 'true'
+        seniority: Senior
+published_at: '2026-08-20T20:34:01Z'
+discovered_at: '2026-08-20T22:02:34Z'
+updated_at: '2026-08-20T22:02:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-20T22:02:34Z'
+analysis_priority: 0
+fingerprint: sha256:ca12f4c6da5d7f7625cbe4bb6d10cc9a175fb63f6fd5aaba8556eb5a7194ca0c
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

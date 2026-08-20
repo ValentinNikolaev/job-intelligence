@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '146984'
+source_url: https://jobicy.com/jobs/146984-sales-engineer-upstream-bioprocessing
+title: Sales Engineer - Upstream Bioprocessing
+company: Spirax Group
+location: EMEA
+published_at: '2026-08-19T02:09:51Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-20T22:02:36Z'
+rejected_at: '2026-08-20T22:02:36Z'

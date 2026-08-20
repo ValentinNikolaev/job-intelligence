@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150897'
+source_url: https://jobicy.com/jobs/150897-senior-product-engineer-typescirpt
+title: Senior Product Engineer (Typescirpt)
+company: Playbook
+location: Europe
+published_at: '2026-08-17T13:03:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-20T22:02:36Z'
+rejected_at: '2026-08-20T22:02:36Z'
