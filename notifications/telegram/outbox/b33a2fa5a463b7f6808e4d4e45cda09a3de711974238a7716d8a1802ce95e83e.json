@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-20T14:59:22Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "IT Service Ukraine",
+      "directory": "2026-08-20_140328_it-service-ukraine_middle-senior-shopware-developer-part-time-contr",
+      "score": 72,
+      "title": "Middle+/Senior Shopware Developer (Part-Time Contract, US Project)",
+      "url": "https://jobs.dou.ua/companies/speroteck/vacancies/347146/",
+      "vacancy_id": "ef07d2b0-0bdb-4c99-ac4e-7d6b1228d63c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b33a2fa5a463b7f6808e4d4e45cda09a3de711974238a7716d8a1802ce95e83e",
+  "schema_version": 1
+}

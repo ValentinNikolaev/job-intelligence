@@ -1,0 +1,27 @@
+score: 18
+recommendation: not_match
+summary: The candidate has meaningful Go, event-driven systems, observability, cloud,
+  and technical leadership experience, but the role requires fluent German and deep
+  hands-on GCP data-platform technologies that are not established in the profile.
+strengths:
+- Strong demonstrated Go backend and event-driven platform experience.
+- Relevant technical leadership, architecture, reliability, monitoring, and production-operations
+  background.
+- Experience with AWS, Kubernetes, CI/CD, queues, schemas, and analytics infrastructure.
+gaps:
+- No demonstrated fluent German at the required C1 level.
+- GCP Cloud Run, Pub/Sub, BigQuery, Dataflow, Cloud Storage, Cloud SQL, Terraform,
+  and SQLMesh or dbt-style orchestration are not established.
+- Digital audience measurement domain experience is not established.
+concerns:
+- The explicit German C1 requirement is a decisive language conflict because the profile
+  lists English, Ukrainian, and Russian but no German.
+- Data engineering and analytical data modeling depth is not clearly documented.
+hard_rejection: true
+hard_rejection_reason: Fluent German (C1) is an explicit mandatory requirement and
+  is not supported by the candidate profile.
+analyzed_at: '2026-08-20T14:59:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:04c9c3ae229de53973e014dc16b6add8c6dd906ab5c490cc8ff21c0bc70aa38d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
