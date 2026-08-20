@@ -1,0 +1,22 @@
+score: 81
+recommendation: strong_match
+summary: Good Go software-engineering match supported by backend, Kubernetes, AWS,
+  and reliability experience.
+strengths:
+- Go backend
+- technical leadership
+- Kubernetes
+- AWS
+- CI/CD
+- microservices
+gaps:
+- Juju and Ubuntu-specific experience not documented
+concerns:
+- Open-source contribution expectations are unknown
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-20T23:04:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:c03e7c9cef7ddb493ebc835042f0459f4879523f37951fe27a48a3f55aa6c47a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

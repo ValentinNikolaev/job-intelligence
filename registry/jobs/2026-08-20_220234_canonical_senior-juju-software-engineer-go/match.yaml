@@ -1,0 +1,23 @@
+score: 83
+recommendation: strong_match
+summary: Strong senior Go fit with distributed systems, cloud, reliability, and technical
+  ownership.
+strengths:
+- Senior backend engineering
+- Go
+- microservices
+- AWS
+- Kubernetes
+- CI/CD
+- reliability
+gaps:
+- Juju and Ubuntu experience not documented
+concerns:
+- Open-source-specific expectations are uncertain
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-20T23:04:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:adb6a30263c4a2307c6c49a96ba6f0b120090b6619f617e42a649e6fa6dfdaff
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
