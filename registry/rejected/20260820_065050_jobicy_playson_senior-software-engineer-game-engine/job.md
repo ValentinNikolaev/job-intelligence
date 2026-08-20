@@ -4,8 +4,8 @@ Posted: 2026-08-13T09:26:48Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-13T09:26:48Z is older than 7 days
 
 **About the Role**
 
