@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 63
+Total vacancies: 64
 
-- Found: 50
+- Found: 51
 - Applied: 12
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 63
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-20 | [ShippyPro](../registry/jobs/2026-08-20_065042_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-20_065042_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-20 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-20 | [saas.group](../registry/jobs/2026-08-20_001016_saas-group_lead-data-platform-engineer/) | [Lead Data Platform Engineer](../registry/jobs/2026-08-20_001016_saas-group_lead-data-platform-engineer/job.md) | Europe | Jobicy | Found | 2026-08-20 | [Jobicy](https://jobicy.com/jobs/146232-lead-data-platform-engineer) | — | — | — | — | — |
 | 2026-08-20 | [IT Service Ukraine](../registry/jobs/2026-08-20_001010_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/) | [Middle+/Senior Shopware Developer (Part-Time Contract, US Project)](../registry/jobs/2026-08-20_001010_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/job.md) | віддалено | Dou | Found | 2026-08-20 | [Dou](https://jobs.dou.ua/companies/speroteck/vacancies/347146/) | [Open](../registry/jobs/2026-08-20_001010_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/company.md) | — | — | — | — |
 | 2026-08-19 | [Mobilunity](../registry/jobs/2026-08-19_120716_mobilunity_laravel-engineer/) | [Laravel Engineer](../registry/jobs/2026-08-19_120716_mobilunity_laravel-engineer/job.md) | віддалено | Dou | Found | 2026-08-19 | [Dou](https://jobs.dou.ua/companies/mobilunity/vacancies/365018/) | [Open](../registry/jobs/2026-08-19_120716_mobilunity_laravel-engineer/company.md) | — | — | — | — |

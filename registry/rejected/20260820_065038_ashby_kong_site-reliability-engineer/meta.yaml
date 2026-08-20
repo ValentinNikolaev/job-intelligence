@@ -1,0 +1,12 @@
+schema_version: 1
+source: ashby
+source_job_id: a1123b02-9099-443a-94e5-249b49e55acb
+source_url: https://jobs.ashbyhq.com/kong/a1123b02-9099-443a-94e5-249b49e55acb
+title: Site Reliability Engineer
+company: Kong
+location: Milan, Italy
+published_at: '2026-07-31T10:57:03.584+00:00'
+rejection_category: stale
+rejection_reason: published_at 2026-07-31T10:57:03.584+00:00 is older than 7 days
+updated_at: '2026-08-20T06:50:38Z'
+rejected_at: '2026-08-20T06:50:38Z'
