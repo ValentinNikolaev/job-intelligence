@@ -23,11 +23,13 @@ sources:
       користуються мільйони юзерів.
 published_at: '2026-08-18'
 discovered_at: '2026-08-18T18:07:22Z'
-updated_at: '2026-08-18T18:07:22Z'
-status: found
+updated_at: '2026-08-20T17:50:58Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-18T18:07:22Z'
+- status: applied
+  changed_at: '2026-08-20T17:50:58Z'
 analysis_priority: 100
 fingerprint: sha256:63812a1d52d082b09d15cb57b9ac7158cc975204c911a4047d894d4076cf1d14
 data_source: dou

@@ -22,11 +22,13 @@ sources:
       із зірочкою — тоді тобі до нас.
 published_at: '2026-08-14'
 discovered_at: '2026-08-14T16:02:40Z'
-updated_at: '2026-08-14T16:02:40Z'
-status: found
+updated_at: '2026-08-20T17:51:00Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-14T16:02:40Z'
+- status: applied
+  changed_at: '2026-08-20T17:51:00Z'
 analysis_priority: 100
 fingerprint: sha256:4f7b31f4148b2321ebcb3f97ef780be63a5866c0619ccb913ad5df2d6f80ce99
 data_source: dou

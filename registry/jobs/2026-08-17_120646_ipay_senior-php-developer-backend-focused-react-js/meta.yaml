@@ -22,11 +22,13 @@ sources:
       using payment cards.We are one of the leaders in the online payments industry.
 published_at: '2026-08-17'
 discovered_at: '2026-08-17T12:06:46Z'
-updated_at: '2026-08-17T12:06:46Z'
-status: found
+updated_at: '2026-08-20T17:50:57Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-17T12:06:46Z'
+- status: applied
+  changed_at: '2026-08-20T17:50:57Z'
 analysis_priority: 100
 fingerprint: sha256:9e2a7fc64b948dfd0a439e9e83b104dbd1a398ddc57c82b930512cb210d55e2b
 data_source: dou

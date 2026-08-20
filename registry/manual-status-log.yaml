@@ -3,11 +3,11 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 26
+  total_events: 30
   by_status:
     applied:
-      count: 15
-      last_changed_at: '2026-08-09T19:21:11Z'
+      count: 19
+      last_changed_at: '2026-08-20T17:51:00Z'
     interview:
       count: 2
       last_changed_at: '2026-08-11T13:58:12Z'
@@ -79,6 +79,10 @@ summary:
       count: 1
       reason: User confirmed application submitted to Zartis
       last_changed_at: '2026-08-01T20:27:52Z'
+    user-reported-application-submitted:
+      count: 4
+      reason: User reported application submitted
+      last_changed_at: '2026-08-20T17:51:00Z'
     user-reported-applying-to-cubbit-s-r-l-senior-ba:
       count: 1
       reason: User reported applying to Cubbit S.r.l. Senior Backend Developer GO
@@ -468,3 +472,51 @@ events:
   interaction:
     source: llm_assisted_manual
   note: Schedule your interview with WhiteTech
+- changed_at: '2026-08-20T17:50:56Z'
+  vacancy_id: 4c2bd774-7617-4059-9eb2-86242e31708e
+  directory: 2026-08-13_180551_favbet_senior-php-developer
+  company: FAVBET
+  title: Senior PHP Developer
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-20T17:50:57Z'
+  vacancy_id: 9437a4eb-1e56-4dd0-bbcf-7360806bd7c0
+  directory: 2026-08-17_120646_ipay_senior-php-developer-backend-focused-react-js
+  company: iPay
+  title: Senior PHP Developer (Backend-focused, React.js)
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-20T17:50:58Z'
+  vacancy_id: 26f1ca48-0ef0-4959-9b15-92a1c1e312c2
+  directory: 2026-08-18_180722_boosta_senior-lead-php-developer-edlight
+  company: Boosta
+  title: Senior/Lead PHP Developer | Edlight
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-20T17:51:00Z'
+  vacancy_id: d2d7d820-7122-4cd1-b96f-1fc94f4f2fa6
+  directory: 2026-08-14_160240_brainstack_php-developer-billing
+  company: Brainstack
+  title: PHP Developer (Billing)
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual

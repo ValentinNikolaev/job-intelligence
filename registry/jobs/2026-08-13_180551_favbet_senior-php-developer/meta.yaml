@@ -25,11 +25,13 @@ sources:
       and support sports development.'
 published_at: '2026-08-13'
 discovered_at: '2026-08-13T18:05:51Z'
-updated_at: '2026-08-17T12:06:46Z'
-status: found
+updated_at: '2026-08-20T17:50:56Z'
+status: applied
 status_history:
 - status: found
   changed_at: '2026-08-13T18:05:51Z'
+- status: applied
+  changed_at: '2026-08-20T17:50:56Z'
 analysis_priority: 100
 fingerprint: sha256:aab3b45cb775e70e3116297115afc5868f9ce1d455ed82bb11d05ef4e82ef971
 data_source: dou
