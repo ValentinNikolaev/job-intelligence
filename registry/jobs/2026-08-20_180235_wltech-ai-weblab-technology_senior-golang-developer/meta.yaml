@@ -1,0 +1,37 @@
+schema_version: 2
+id: 1399789c-e5d4-493a-9d52-f304ed79963e
+title: Senior Golang Developer
+company: WLTech.AI (WebLab Technology)
+company_url: https://jobs.dou.ua/companies/weblab-technology/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '256297'
+  url: https://jobs.dou.ua/companies/weblab-technology/vacancies/256297/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 20 серпня
+    salary_label: до $5000
+    listing_summary: 'Stack: Golang, AWS, MySQL, Docker, Microservices.
+
+
+      We are seeking an experienced Golang Developer to join our team of talented
+      developers for a stable yet dynamic project.'
+published_at: '2026-08-20'
+discovered_at: '2026-08-20T18:02:35Z'
+updated_at: '2026-08-20T18:02:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-20T18:02:35Z'
+analysis_priority: 100
+fingerprint: sha256:8707837985c4082cf0a78a3bd4ec8cd2a63138827d42e06ffef895d47ce6075d
+data_source: dou
+content_source: dou
+company_content_source: dou

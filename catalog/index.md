@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 64
+Total vacancies: 65
 
-- Found: 47
+- Found: 48
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 64
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-20 | [WLTech.AI (WebLab Technology)](../registry/jobs/2026-08-20_180235_wltech-ai-weblab-technology_senior-golang-developer/) | [Senior Golang Developer](../registry/jobs/2026-08-20_180235_wltech-ai-weblab-technology_senior-golang-developer/job.md) | віддалено | Dou | Found | 2026-08-20 | [Dou](https://jobs.dou.ua/companies/weblab-technology/vacancies/256297/) | [Open](../registry/jobs/2026-08-20_180235_wltech-ai-weblab-technology_senior-golang-developer/company.md) | — | — | — | — |
 | 2026-08-20 | [saas.group](../registry/jobs/2026-08-20_140335_saas-group_lead-data-platform-engineer/) | [Lead Data Platform Engineer](../registry/jobs/2026-08-20_140335_saas-group_lead-data-platform-engineer/job.md) | Europe | Jobicy | Found | 2026-08-20 | [Jobicy](https://jobicy.com/jobs/146232-lead-data-platform-engineer) | — | — | — | — | — |
 | 2026-08-20 | [IT Service Ukraine](../registry/jobs/2026-08-20_140328_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/) | [Middle+/Senior Shopware Developer (Part-Time Contract, US Project)](../registry/jobs/2026-08-20_140328_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/job.md) | віддалено | Dou | Found | 2026-08-20 | [Dou](https://jobs.dou.ua/companies/speroteck/vacancies/347146/) | [Open](../registry/jobs/2026-08-20_140328_it-service-ukraine_middle-senior-shopware-developer-part-time-contr/company.md) | — | — | — | — |
 | 2026-08-20 | [ShippyPro](../registry/jobs/2026-08-20_140325_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-20_140325_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-20 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
