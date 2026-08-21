@@ -1,0 +1,34 @@
+schema_version: 2
+id: b86e4478-d816-4053-a466-1b7d25642a8c
+title: Head of Backend Engineering (PHP / FinTech / Payments)
+company: Artkai
+company_url: https://jobs.dou.ua/companies/artkai/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370704'
+  url: https://jobs.dou.ua/companies/artkai/vacancies/370704/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 серпня
+    listing_summary: At Artkai, we help mid-market and enterprise businesses modernize
+      software, automate business processes, and build AI-driven solutions grounded
+      in robust security and corporate governance.
+published_at: '2026-08-21'
+discovered_at: '2026-08-21T18:01:58Z'
+updated_at: '2026-08-21T18:01:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-21T18:01:58Z'
+analysis_priority: 100
+fingerprint: sha256:94f060f43238f9942690a75de1858edd96adfdae0aa4056e6f74e6afe74ea541
+data_source: dou
+content_source: dou
+company_content_source: dou

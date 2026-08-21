@@ -1,0 +1,35 @@
+schema_version: 2
+id: 41855739-5100-4d57-8874-4ec4e0fce7f4
+title: Strong Technical Lead (PHP), UA/EU, remote
+company: Dedicatted
+company_url: https://jobs.dou.ua/companies/dedicatted/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370729'
+  url: https://jobs.dou.ua/companies/dedicatted/vacancies/370729/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 серпня
+    listing_summary: 'We are looking for a Technical Lead for our core development
+      team, to own the technical direction of the platform and its application layer:
+      making the architectural decisions, setting engineering standards, and holding
+      the coherence of the system as it evolves.'
+published_at: '2026-08-21'
+discovered_at: '2026-08-21T18:01:58Z'
+updated_at: '2026-08-21T18:01:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-21T18:01:58Z'
+analysis_priority: 100
+fingerprint: sha256:2ac7fd429a26d829edd5f031e8dac87bee37939a8d849c9793daa65163e2f3de
+data_source: dou
+content_source: dou
+company_content_source: dou

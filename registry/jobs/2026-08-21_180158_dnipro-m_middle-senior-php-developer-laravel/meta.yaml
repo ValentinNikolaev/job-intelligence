@@ -1,0 +1,37 @@
+schema_version: 2
+id: 1ae23600-ff7c-441f-a9c7-841dc1ac80a1
+title: Middle/Senior PHP Developer (Laravel)
+company: DNIPRO-M
+company_url: https://jobs.dou.ua/companies/dnipro-m/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370711'
+  url: https://jobs.dou.ua/companies/dnipro-m/vacancies/370711/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 серпня
+    listing_summary: 'Привіт, наш майбутній колего
+
+
+      Ми віримо, що сильні результати створюють люди, які добре знають свою справу
+      і ставляться до неї відповідально. У Dnipro-M ми будуємо команду майстрів своєї
+      справи — людей, які хочуть не просто працювати, а впливати й бачити результат.'
+published_at: '2026-08-21'
+discovered_at: '2026-08-21T18:01:58Z'
+updated_at: '2026-08-21T18:01:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-21T18:01:58Z'
+analysis_priority: 100
+fingerprint: sha256:63c379ff0bd555417919b99307965c0590cf55b75ccd7c9be02ca7ae233aec8a
+data_source: dou
+content_source: dou
+company_content_source: dou

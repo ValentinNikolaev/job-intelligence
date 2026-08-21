@@ -1,4 +1,4 @@
-# Middle/Senior PHP Developer
+# Middle/Senior PHP Developer (Symfony)
 
 Posted: 2026-08-21
 

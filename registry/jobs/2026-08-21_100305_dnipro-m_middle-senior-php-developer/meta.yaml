@@ -1,6 +1,6 @@
 schema_version: 2
 id: 311faa47-6058-4779-915d-a7ec727c85ff
-title: Middle/Senior PHP Developer
+title: Middle/Senior PHP Developer (Symfony)
 company: DNIPRO-M
 company_url: https://jobs.dou.ua/companies/dnipro-m/vacancies/
 location: Київ, віддалено
@@ -25,13 +25,13 @@ sources:
       справи — людей, які хочуть не просто працювати, а впливати й бачити результат.'
 published_at: '2026-08-21'
 discovered_at: '2026-08-21T10:03:05Z'
-updated_at: '2026-08-21T10:03:05Z'
+updated_at: '2026-08-21T18:01:58Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-08-21T10:03:05Z'
 analysis_priority: 100
-fingerprint: sha256:335c97ab3c741c6bf349f627c0d3a6980007ad5f79787b2fc165937b556efcc5
+fingerprint: sha256:701dd7cb5b57369be708bec1dc6629e4077c41d455b183bae112f8004fe198a9
 data_source: dou
 content_source: dou
 company_content_source: dou
