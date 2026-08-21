@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-21T10:13:07Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "DNIPRO-M",
+      "directory": "2026-08-21_100305_dnipro-m_middle-senior-php-developer",
+      "score": 82,
+      "title": "Middle/Senior PHP Developer",
+      "url": "https://jobs.dou.ua/companies/dnipro-m/vacancies/370601/",
+      "vacancy_id": "311faa47-6058-4779-915d-a7ec727c85ff"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a4a0eaff0d2d54594f5fc3da69ab7f4fbe8df1b034bdf696e307411f6773679e",
+  "schema_version": 1
+}
