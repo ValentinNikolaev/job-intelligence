@@ -1,0 +1,25 @@
+score: 18
+recommendation: not_match
+summary: Mandatory fluent German at C1 is not supported by the candidate profile,
+  and the profile does not demonstrate the required GCP data-platform stack or data
+  engineering background.
+strengths:
+- Strong Go backend experience.
+- Experience with event-driven systems, observability, CI/CD, and technical leadership.
+- Experience with AI-assisted automation systems.
+gaps:
+- Fluent German (C1) is a mandatory requirement and is absent from the candidate evidence.
+- No demonstrated hands-on GCP Cloud Run, Pub/Sub, BigQuery, Dataflow, Cloud Storage,
+  or Cloud SQL experience.
+- No demonstrated data modeling, Terraform, or Protobuf experience.
+concerns:
+- The role is centered on ownership of a GCP-native data platform and analytics delivery,
+  which is materially different from the candidate's documented backend focus.
+hard_rejection: true
+hard_rejection_reason: Fluent German (C1) is explicitly mandatory and unsupported
+  by the candidate profile.
+analyzed_at: '2026-08-21T14:14:59Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:2f6021659ab85be730b5dd6d67c4b0b36e99ac6d6209b67595e8725a42605291
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
