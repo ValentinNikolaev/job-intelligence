@@ -7,7 +7,7 @@ Posted: 2026-07-22T07:03:46Z
 - Category: stale
 - Reason: published_at 2026-07-22T07:03:46Z is older than 7 days
 
-**Headquarters:** Remote - Ireland
+**Headquarters:** Remote - Spain
 
 **Who we are **
 
@@ -69,7 +69,7 @@ Twilio values diverse experiences from all kinds of industries, and we encourage
 
 **Location**
 
-- This role will be remote from Ireland.
+- This role will be remote from Spain.
 
 **Travel **
 

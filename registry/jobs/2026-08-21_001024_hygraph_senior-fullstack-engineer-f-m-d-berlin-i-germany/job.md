@@ -158,4 +158,4 @@ As AI reshapes how digital experiences are created and operated, Hygraph is help
 
 **Note:** We are fortunate to receive a large number of applications for our roles. To manage this effectively and give each application the attention it deserves, we use AI-assisted tools to help assess certain screening questions and handle application elements. This helps us ensure a consistent and timely review process. All final hiring decisions are made exclusively by our human recruitment team.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
