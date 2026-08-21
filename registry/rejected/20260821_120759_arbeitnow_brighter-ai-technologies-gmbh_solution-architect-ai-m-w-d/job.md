@@ -63,4 +63,4 @@ We are looking for an artificial intelligence solution prototyping and sales sup
 
 We are a diverse, ambitious team with a great passion for data privacy, generative AI and startups. Our office is in the heart of Berlin, one of the coolest, most vibrant cities worldwide. We enjoy teamwork and celebrating successes together. If you are looking for a new challenge with real impact from day one, check out our job openings and apply today!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

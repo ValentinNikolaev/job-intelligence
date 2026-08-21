@@ -49,4 +49,4 @@ Wichtig: Diese Position erfordert einen Wohnsitz oder Zweitwohnsitz in Deutschla
 
 Haben wir dein Interesse geweckt? Dann freuen wir uns auf deine Bewerbung. Wir leiten diese an J.Poppe & Partner weiter, die sich zeitnah direkt mit dir in Verbindung setzen werden.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -18,7 +18,7 @@ sources:
       GO role; distributed storage and cloud infrastructure stack.
 published_at: null
 discovered_at: '2026-08-01T15:57:50Z'
-updated_at: '2026-08-01T19:51:51Z'
+updated_at: '2026-08-21T14:02:41Z'
 status: applied
 status_history:
 - status: found

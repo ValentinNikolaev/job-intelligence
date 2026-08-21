@@ -209,7 +209,7 @@ Blog
 Support
 Status
 Resources Library
-Bug Bounty Program
+Vulnerability Disclosure Program
 Log in to DS3 (NGC)
 Log in to DS3 (trial)
 

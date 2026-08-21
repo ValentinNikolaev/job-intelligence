@@ -77,4 +77,4 @@ Diese Position bietet dir nicht nur die Möglichkeit, Verantwortung für unsere 
 
 Wer unternehmerisch denkt, Verantwortung übernimmt und mit seiner Leistung überzeugt, bekommt bei uns die Chance, sich Schritt für Schritt für eine **Position in der Geschäftsleitung** zu qualifizieren.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

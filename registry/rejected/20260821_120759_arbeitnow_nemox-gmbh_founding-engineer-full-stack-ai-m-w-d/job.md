@@ -53,4 +53,4 @@ If you are passionate about AI, excited by backend heavy tasks, and eager to mak
 
 Join nemox as a Founding Engineer to revolutionize global trade with innovative AI solutions. Shape the future in a dynamic startup environment and unleash your full-stack/AI expertise.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
