@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-21T06:05:41Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Hygraph",
+      "directory": "2026-08-21_001024_hygraph_senior-fullstack-engineer-f-m-d-berlin-i-germany",
+      "score": 72,
+      "title": "Senior Fullstack Engineer (f/m/d) - Berlin I Germany | EU I Remote",
+      "url": "https://www.arbeitnow.com/jobs/companies/hygraph/senior-fullstack-engineer-berlin-i-germany-eu-i-remote-324597",
+      "vacancy_id": "255446c5-20a4-47c1-8439-e68fda6841b8"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "c41e05a77b80a03895ddc24dfc3910fecdbfaa407cce7227c357fdc554c9585c",
+  "schema_version": 1
+}
