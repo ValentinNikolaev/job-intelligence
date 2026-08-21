@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 67
+Total vacancies: 65
 
-- Found: 50
+- Found: 48
 - Applied: 16
 - Interview: 1
 
@@ -15,8 +15,6 @@ Total vacancies: 67
 | 2026-08-21 | [Artkai](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/) | [Head of Backend Engineering (PHP / FinTech / Payments)](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/artkai/vacancies/370704/) | [Open](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/company.md) | — | — | — | — |
 | 2026-08-21 | [Dedicatted](../registry/jobs/2026-08-21_180158_dedicatted_strong-technical-lead-php-ua-eu-remote/) | [Strong Technical Lead (PHP), UA/EU, remote](../registry/jobs/2026-08-21_180158_dedicatted_strong-technical-lead-php-ua-eu-remote/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/dedicatted/vacancies/370729/) | [Open](../registry/jobs/2026-08-21_180158_dedicatted_strong-technical-lead-php-ua-eu-remote/company.md) | — | — | — | — |
 | 2026-08-21 | [DNIPRO-M](../registry/jobs/2026-08-21_180158_dnipro-m_middle-senior-php-developer-laravel/) | [Middle/Senior PHP Developer (Laravel)](../registry/jobs/2026-08-21_180158_dnipro-m_middle-senior-php-developer-laravel/job.md) | Київ, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/dnipro-m/vacancies/370711/) | [Open](../registry/jobs/2026-08-21_180158_dnipro-m_middle-senior-php-developer-laravel/company.md) | — | — | — | — |
-| 2026-08-21 | [saas.group](../registry/jobs/2026-08-21_140250_saas-group_lead-data-platform-engineer/) | [Lead Data Platform Engineer](../registry/jobs/2026-08-21_140250_saas-group_lead-data-platform-engineer/job.md) | Europe | Jobicy | Found | 2026-08-21 | [Jobicy](https://jobicy.com/jobs/146232-lead-data-platform-engineer) | — | — | — | — | — |
-| 2026-08-21 | [ShippyPro](../registry/jobs/2026-08-21_140241_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-21_140241_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-21 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-21 | [Global Technologies](../registry/jobs/2026-08-21_120821_global-technologies_full-remote-php-developer-laravel-api-expert/) | [Full-Remote PHP Developer \| Laravel & API Expert](../registry/jobs/2026-08-21_120821_global-technologies_full-remote-php-developer-laravel-api-expert/job.md) | Italian Republic | Jooble | Found | 2026-08-21 | [Jooble](https://jooble.org/away/-6847266060912482358?p=1&pos=14&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=78&brelb=10&scr=30.254784&bscr=30.254784&aq=2244793588560153625&elckey=4312310003562283367) | — | — | — | — | — |
 | 2026-08-21 | [DNIPRO-M](../registry/jobs/2026-08-21_100305_dnipro-m_middle-senior-php-developer/) | [Middle/Senior PHP Developer (Symfony)](../registry/jobs/2026-08-21_100305_dnipro-m_middle-senior-php-developer/job.md) | Київ, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/dnipro-m/vacancies/370601/) | [Open](../registry/jobs/2026-08-21_100305_dnipro-m_middle-senior-php-developer/company.md) | — | — | — | — |
 | 2026-08-21 | [Lead Capital Group](../registry/jobs/2026-08-21_001030_lead-capital-group_jun-strong-web-developer-golang-remote/) | [Jun strong Web developer (Golang) — REMOTE](../registry/jobs/2026-08-21_001030_lead-capital-group_jun-strong-web-developer-golang-remote/job.md) | віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/lead-capital-group/vacancies/59481/) | [Open](../registry/jobs/2026-08-21_001030_lead-capital-group_jun-strong-web-developer-golang-remote/company.md) | — | — | — | — |
