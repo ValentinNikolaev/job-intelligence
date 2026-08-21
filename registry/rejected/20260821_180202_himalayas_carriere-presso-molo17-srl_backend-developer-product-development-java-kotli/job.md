@@ -4,8 +4,8 @@ Posted: 2026-08-14T20:31:11Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-14T20:31:11Z is older than 7 days
 
 Il nostro prodotto di punta è GlueSync il nostro database replicator per NoSQL famoso in tutto il mondo, ed è qui che la tua figura verrà impiegata: GlueSync è al 100% scritto in Kotlin ma se conosci Java non è un problema!
 

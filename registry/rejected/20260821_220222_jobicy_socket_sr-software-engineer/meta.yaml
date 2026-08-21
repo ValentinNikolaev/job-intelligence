@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151128'
+source_url: https://jobicy.com/jobs/151128-sr-software-engineer
+title: Sr. Software Engineer
+company: Socket
+location: Anywhere
+published_at: '2026-08-19T14:48:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-21T22:02:22Z'
+rejected_at: '2026-08-21T22:02:22Z'
