@@ -1,21 +1,20 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 84/100  
 **Recommendation:** Strong Match
 
-Strong PHP and Symfony backend fit with relevant microservices, PostgreSQL, RabbitMQ, Kubernetes, and production engineering experience.
+Strong PHP/Symfony backend fit with relevant microservices, APIs, databases, messaging, Docker-adjacent infrastructure, and remote compatibility.
 
 ## Why it matches
 
-- PHP and Symfony backend experience
-- Microservices, APIs, PostgreSQL, RabbitMQ, and Kubernetes evidence
-- Production reliability, performance optimization, and CI/CD experience
+- PHP and Symfony production experience
+- Microservices, APIs, PostgreSQL, query optimization, and RabbitMQ
+- Kubernetes, CI/CD, reliability, and technical leadership
 
 ## Gaps
 
-- PHP 8.2+ and Symfony 6/7 versions are not explicitly evidenced
-- Redis, Docker, API Gateway/Saga, and PHPUnit are not clearly documented
+- PHP 8.2, Symfony 6/7 components, Redis, Docker, PHPUnit, and Saga patterns are not all directly evidenced.
 
 ## Concerns
 
-- The vacancy is Ukrainian-language and remote eligibility from Italy should be confirmed
+- The role is advertised in Ukrainian and local employment details should be confirmed.
