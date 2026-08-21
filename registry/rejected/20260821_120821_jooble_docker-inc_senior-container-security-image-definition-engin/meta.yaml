@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-4241537370835980552'
+source_url: https://jooble.org/desc/-4241537370835980552?ckey=senior+backend+engineer&rgn=55179&pos=3&groupId=293749696&elckey=4312310003562283367&p=1&aq=2244793588560153625&cid=15922&jobAge=102&brelb=15&bscr=106.11974&scr=106.11974
+title: Senior Container Security & Image Definition Engineer
+company: Docker, Inc
+location: Italian Republic
+published_at: '2026-08-17T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-21T12:08:21Z'
+rejected_at: '2026-08-21T12:08:21Z'

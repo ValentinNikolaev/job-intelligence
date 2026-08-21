@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 63
+Total vacancies: 62
 
-- Found: 46
+- Found: 45
 - Applied: 16
 - Interview: 1
 
@@ -12,9 +12,8 @@ Total vacancies: 63
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-21 | [saas.group](../registry/jobs/2026-08-21_100313_saas-group_lead-data-platform-engineer/) | [Lead Data Platform Engineer](../registry/jobs/2026-08-21_100313_saas-group_lead-data-platform-engineer/job.md) | Europe | Jobicy | Found | 2026-08-21 | [Jobicy](https://jobicy.com/jobs/146232-lead-data-platform-engineer) | — | — | — | — | — |
+| 2026-08-21 | [Global Technologies](../registry/jobs/2026-08-21_120821_global-technologies_full-remote-php-developer-laravel-api-expert/) | [Full-Remote PHP Developer \| Laravel & API Expert](../registry/jobs/2026-08-21_120821_global-technologies_full-remote-php-developer-laravel-api-expert/job.md) | Italian Republic | Jooble | Found | 2026-08-21 | [Jooble](https://jooble.org/away/-6847266060912482358?p=1&pos=14&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=78&brelb=10&scr=30.254784&bscr=30.254784&aq=2244793588560153625&elckey=4312310003562283367) | — | — | — | — | — |
 | 2026-08-21 | [DNIPRO-M](../registry/jobs/2026-08-21_100305_dnipro-m_middle-senior-php-developer/) | [Middle/Senior PHP Developer](../registry/jobs/2026-08-21_100305_dnipro-m_middle-senior-php-developer/job.md) | Київ, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/dnipro-m/vacancies/370601/) | [Open](../registry/jobs/2026-08-21_100305_dnipro-m_middle-senior-php-developer/company.md) | — | — | — | — |
-| 2026-08-21 | [ShippyPro](../registry/jobs/2026-08-21_100303_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-21_100303_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-21 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-21 | [Lead Capital Group](../registry/jobs/2026-08-21_001030_lead-capital-group_jun-strong-web-developer-golang-remote/) | [Jun strong Web developer (Golang) — REMOTE](../registry/jobs/2026-08-21_001030_lead-capital-group_jun-strong-web-developer-golang-remote/job.md) | віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/lead-capital-group/vacancies/59481/) | [Open](../registry/jobs/2026-08-21_001030_lead-capital-group_jun-strong-web-developer-golang-remote/company.md) | — | — | — | — |
 | 2026-08-21 | [Hygraph](../registry/jobs/2026-08-21_001024_hygraph_senior-fullstack-engineer-f-m-d-berlin-i-germany/) | [Senior Fullstack Engineer (f/m/d) - Berlin I Germany \| EU I Remote](../registry/jobs/2026-08-21_001024_hygraph_senior-fullstack-engineer-f-m-d-berlin-i-germany/job.md) | Remote job | Arbeitnow | Found | 2026-08-21 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/hygraph/senior-fullstack-engineer-berlin-i-germany-eu-i-remote-324597) | — | — | — | — | — |
 | 2026-08-20 | [Canonical](../registry/jobs/2026-08-20_220234_canonical_software-engineer-python-golang-kubernetes/) | [Software Engineer - Python/Golang - Kubernetes](../registry/jobs/2026-08-20_220234_canonical_software-engineer-python-golang-kubernetes/job.md) | Algeria, Argentina, Austria, Bahrain, Belgium, Brazil, Canada, Czechia, Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece, Hungary, Ireland, Israel, Italy, Kenya, Kuwait, Mexico, Morocco, Netherlands, Nigeria, Norway, Oman, Poland, Portugal, Qatar, Romania, Saudi Arabia, Senegal, South Africa, Spain, Sweden, Switzerland, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States | Himalayas | Found | 2026-08-20 | [Himalayas](https://himalayas.app/companies/canonical/jobs/software-engineer-python-golang-kubernetes) | — | — | — | — | — |
