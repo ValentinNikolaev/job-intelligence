@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sap-lead-consultant-sap-transformation-digital-supply-chain-dusseldorf-302290
+source_url: https://www.arbeitnow.com/jobs/companies/slenderiser-gmbh/sap-lead-consultant-sap-transformation-digital-supply-chain-dusseldorf-302290
+title: SAP Lead Consultant (m/w/d) SAP Transformation & Digital Supply Chain
+company: Slenderiser GmbH
+location: Düsseldorf
+published_at: '2026-08-20T15:00:36Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-21T00:10:24Z'
+rejected_at: '2026-08-21T00:10:24Z'

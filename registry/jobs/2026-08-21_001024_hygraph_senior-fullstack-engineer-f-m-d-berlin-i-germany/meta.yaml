@@ -1,0 +1,31 @@
+schema_version: 2
+id: 255446c5-20a4-47c1-8439-e68fda6841b8
+title: Senior Fullstack Engineer (f/m/d) - Berlin I Germany | EU I Remote
+company: Hygraph
+company_url: null
+location: Remote job
+remote: true
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: senior-fullstack-engineer-berlin-i-germany-eu-i-remote-324597
+  url: https://www.arbeitnow.com/jobs/companies/hygraph/senior-fullstack-engineer-berlin-i-germany-eu-i-remote-324597
+  metadata:
+    tags:
+    - Engineering
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-08-20T17:30:35Z'
+discovered_at: '2026-08-21T00:10:24Z'
+updated_at: '2026-08-21T00:10:24Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-21T00:10:24Z'
+analysis_priority: 0
+fingerprint: sha256:a61831d57f9ce0a2a47d87db3d93cd7e12320c8b703ba8ee0d33a355cf5be1d7
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
