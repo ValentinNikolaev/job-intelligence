@@ -1,0 +1,12 @@
+schema_version: 1
+source: custom
+source_job_id: url-sha256:b0956838c7a23c0ca9c8830f94f3659b9aa1fe378c54a2f40cf20403e35b5229
+source_url: https://shippypro.factorialhr.com/job_posting/gtm-engineer-311000
+title: GTM Engineer
+company: ShippyPro
+location: Remote
+published_at: null
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-21T10:03:03Z'
+rejected_at: '2026-08-21T10:03:03Z'

@@ -1,0 +1,16 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb
+source_url: https://himalayas.app/companies/canonical/jobs/senior-software-engineer-python-mongodb
+title: Senior Software Engineer - Python/MongoDB
+company: Canonical
+location: Algeria, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark,
+  Egypt, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Israel,
+  Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Morocco, Netherlands,
+  Norway, Poland, Portugal, Romania, Russian Federation, Slovakia, Slovenia, South
+  Africa, Spain, Sweden, Switzerland, Tunisia, Turkey, Ukraine, United Kingdom
+published_at: '2026-08-20T20:33:53Z'
+rejection_category: location_requirement
+rejection_reason: requires United States location
+updated_at: '2026-08-21T10:03:10Z'
+rejected_at: '2026-08-21T10:03:10Z'

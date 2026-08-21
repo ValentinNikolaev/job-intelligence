@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: robot-pilot-munich-germany-265785
+source_url: https://www.arbeitnow.com/jobs/companies/rhoda-ai/robot-pilot-munich-germany-265785
+title: Robot Pilot
+company: Rhoda Ai
+location: Munich, Germany
+published_at: '2026-08-21T05:40:18Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-21T10:02:56Z'
+rejected_at: '2026-08-21T10:02:56Z'

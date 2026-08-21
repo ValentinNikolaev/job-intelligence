@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149535'
+source_url: https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot
+title: Embedded Linux Field Engineer for Devices/IoT
+company: Canonical Ltd.
+location: Anywhere
+published_at: '2026-07-21T16:19:44Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-21T16:19:44Z is older than 7 days
+updated_at: '2026-08-21T10:03:13Z'
+rejected_at: '2026-08-21T10:03:13Z'

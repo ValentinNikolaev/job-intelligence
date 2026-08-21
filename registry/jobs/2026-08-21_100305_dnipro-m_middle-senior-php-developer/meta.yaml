@@ -1,0 +1,37 @@
+schema_version: 2
+id: 311faa47-6058-4779-915d-a7ec727c85ff
+title: Middle/Senior PHP Developer
+company: DNIPRO-M
+company_url: https://jobs.dou.ua/companies/dnipro-m/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370601'
+  url: https://jobs.dou.ua/companies/dnipro-m/vacancies/370601/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 серпня
+    listing_summary: 'Привіт, наш майбутній колего
+
+
+      Ми віримо, що сильні результати створюють люди, які добре знають свою справу
+      і ставляться до неї відповідально. У Dnipro-M ми будуємо команду майстрів своєї
+      справи — людей, які хочуть не просто працювати, а впливати й бачити результат.'
+published_at: '2026-08-21'
+discovered_at: '2026-08-21T10:03:05Z'
+updated_at: '2026-08-21T10:03:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-21T10:03:05Z'
+analysis_priority: 100
+fingerprint: sha256:335c97ab3c741c6bf349f627c0d3a6980007ad5f79787b2fc165937b556efcc5
+data_source: dou
+content_source: dou
+company_content_source: dou

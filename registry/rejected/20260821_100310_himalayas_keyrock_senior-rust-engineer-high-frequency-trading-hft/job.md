@@ -1,0 +1,152 @@
+# Senior Rust Engineer - High Frequency Trading (HFT)
+
+Posted: 2026-08-11T04:03:51Z
+
+## Rejection
+
+- Category: stale
+- Reason: published_at 2026-08-11T04:03:51Z is older than 7 days
+
+### Senior Rust Engineer - High Frequency Trading (HFT)
+
+### About [Keyrock](https://himalayas.app/companies/keyrock-com)
+
+Since our beginnings in 2017, we've grown to be a leading change-maker in the digital asset space, renowned for our partnerships and innovation.
+
+Today, we rock with over 200 team members around the world. Our diverse team hails from 42 nationalities, with backgrounds ranging from DeFi natives to PhDs. Predominantly remote, we have hubs in London, Brussels, Singapore and Paris, and host regular online and offline hangouts to keep the crew tight.
+
+We are trading on more than 80 exchanges, and working with a wide array of asset issuers. As a well-established market maker, our distinctive expertise led us to expand rapidly. Today, our services span market making, options trading, high-frequency trading, OTC, and DeFi trading desks.
+
+But we’re more than a service provider. We’re an initiator. We're pioneers in adopting the Rust Development language for our algorithmic trading, and champions of its use in the industry. We support the growth of Web3 startups through our Accelerator Program. We upgrade ecosystems by injecting liquidity into promising DeFi, RWA, and NFT protocols. And we push the industry's progress with our research and governance initiatives.
+
+At [Keyrock](https://himalayas.app/companies/keyrock-com), we're not just envisioning the future of digital assets. We're actively building it.
+
+### Mission statement
+
+We are seeking a **Senior Rust Engineer** with deep **trading systems experience** and strong **AWS knowledge** to join our core **Capital Markets** division. Candidates with a passion for the **Rust** ecosystem and a proven track record designing, building, and operating **mission-critical trading systems** will be at a significant advantage.
+
+As part of the engineering team in Capital Markets, you will take ownership of high-impact trading infrastructure, set technical direction in your domain, and drive **continuous improvement** in system performance, reliability, and operability. You will join a highly-profitable, fast-paced division within [Keyrock](https://himalayas.app/companies/keyrock-com), where you will be expected to make a senior individual-contributor impact while collaborating with a global, fully-remote team. This role is open to candidates located in **European time zones**.
+
+### Job description
+
+-
+
+Design, develop, and optimise low-latency, mission-critical trading systems
+
+-
+
+Own key trading stack components end-to-end — from architecture through to production operation
+
+-
+
+Collaborate closely with quants, traders, and engineers to deliver solutions that improve trading performance and resilience
+
+-
+
+Maintain and evolve trading infrastructure with a focus on performance, stability, observability, and operational excellence
+
+-
+
+Troubleshoot complex production issues across exchange connectivity, execution, and market data handling
+
+-
+
+Drive engineering standards through technical leadership, code reviews, and mentoring
+
+-
+
+Embrace agentic engineering principles: leverage AI-assisted workflows, drive automation of operational tasks, and help evolve the team's agentic tooling
+
+-
+
+Contribute to functional, component, and production-readiness testing for critical trading components
+
+### Background and experience
+
+### Technical Skills
+
+-
+
+Production-grade **Rust** experience building high-performance, concurrent systems; proficiency with **Tokio** is a strong advantage
+
+-
+
+Hands-on experience in a systematic trading environment (**HFT**, **Market Making**, **Quantitative Trading**, or similar), with solid understanding of execution, market data, and operational risk
+
+-
+
+Strong **AWS** and **Linux** expertise, including cloud infrastructure trade-offs for latency-sensitive workloads, shell scripting, debugging, and production troubleshooting
+
+-
+
+Proficiency in **Python** or other scripting languages for strategy development, automation, and operational tooling
+
+-
+
+Deep familiarity with trading system protocols (**FIX**, **REST**, **WebSocket**), exchange connectivity, and market data feeds
+
+-
+
+Solid grasp of low-latency networking: **TCP**/**UDP**, packet and latency path analysis, dedicated network infrastructure, and kernel bypass techniques (**DPDK**)
+
+-
+
+Familiarity with **agentic engineering** tools and concepts: **LLMs**, **MCP APIs,****AI-First IDEs** (e.g. Cursor, Claude Code), **harness engineering**, and **workflow automation**
+
+-
+
+Ability to make sound architectural decisions, articulate trade-offs clearly, and guide implementation across complex systems
+
+### Seniority & Competencies
+
+-
+
+**Ownership & Reliability** – Take full responsibility for your work. Deliver high-quality service, meet deadlines, and follow through on commitments. Anticipate and proactively address potential issues before they arise.
+
+-
+
+**Initiative & Problem-Solving** – Approach challenges with a problem-solving entrepreneurial mindset. Make sound, independent judgments and take the initiative to drive solutions rather than waiting for instructions.
+
+-
+
+**Operational Diligence** – Respond strategically to technical and operational challenges, ensuring robust and reliable trading infrastructure while instilling confidence in the team’s processes.
+
+-
+
+**Technical Leadership** – Influence system design, raise engineering standards, mentor other engineers, and help the team make pragmatic, high-quality technical decisions.
+
+-
+
+**Curiosity & Growth Mindset** – Continuously seek to improve your technical skills and knowledge. Stay ahead of industry trends and take the initiative to practice and explore new technologies that excite you.
+
+-
+
+**Agentic Engineering** – Embrace AI-assisted workflows and autonomous agents, pushing the boundaries of what engineering teams can achieve through intelligent automation.
+
+-
+
+**Excellent Communication Skills** with a team player mindset, collaborating within a fully remote global team.
+
+### **Our recruitment philosophy**
+
+We value self-awareness and powerful communication skills in our recruitment process. We seek fiercely passionate people who understand themselves and their career goals. We're after those with the right skills and a conscious choice to join our field. The perfect fit? A senior engineer and crypto enthusiast who’s driven, collaborative, acts with ownership, raises the bar for others, and delivers solid, scalable outcomes.
+
+### **Our offer**
+
+-
+
+### A competitive salary package
+
+-
+
+Autonomy in your time management thanks to flexible working hours and the opportunity to work remotely
+
+-
+
+The freedom to create your own entrepreneurial experience by being part of a team of people in search of excellence
+
+As an employer we are committed to building a positive and collaborative work environment. We welcome employees of all backgrounds, and hire, reward and promote entirely based on merit and performance.
+
+Due to the nature of our business and external requirements, we perform background checks on all potential employees, passing which is a prerequisite to join [Keyrock](https://himalayas.app/companies/keyrock-com).
+
+Originally posted on [Himalayas](https://himalayas.app)
