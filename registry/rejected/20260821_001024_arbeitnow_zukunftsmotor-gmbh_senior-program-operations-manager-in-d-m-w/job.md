@@ -71,4 +71,4 @@ Besonders punkten kannst du mit deiner Bewerbung, wenn du dir Zeit für unsere B
 - **Fallstudie:** In einer konkreten Fallstudie mit einer aktuellen Herausforderung bei Zukunftsmotor stellst du deine fachliche Expertise unter Beweis vor unserer Gründerin sowie einem weiteren Stakeholder aus der Organisation (vor Ort)
 - Wir melden uns innerhalb einer Woche spätestens bei dir zurück mit unserer Entscheidung
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

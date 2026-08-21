@@ -151,4 +151,4 @@ Subsidized EGYM WELLPASS membership, with a contribution of only €25 per month
 
 Monthly company events, team activities, and informal gatherings, including our popular company-wide lunches provided four days a week.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

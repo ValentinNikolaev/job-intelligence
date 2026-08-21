@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-sales-koln-168146
+source_url: https://www.arbeitnow.com/jobs/companies/ergotopia/werkstudent-sales-koln-168146
+title: Werkstudent Sales (m/w/d)
+company: Ergotopia
+location: Köln
+published_at: '2026-08-20T15:20:51Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-21T02:03:10Z'
+rejected_at: '2026-08-21T02:03:10Z'

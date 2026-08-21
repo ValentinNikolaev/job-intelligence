@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149552'
+source_url: https://jobicy.com/jobs/149552-software-engineer-app-stores
+title: Software Engineer - App Stores
+company: Canonical Ltd.
+location: Anywhere
+published_at: '2026-07-21T16:20:15Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-21T16:20:15Z is older than 7 days
+updated_at: '2026-08-21T02:03:23Z'
+rejected_at: '2026-08-21T02:03:23Z'

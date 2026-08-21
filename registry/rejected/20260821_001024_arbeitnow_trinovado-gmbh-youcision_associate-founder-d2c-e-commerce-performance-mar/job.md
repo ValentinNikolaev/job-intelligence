@@ -53,4 +53,4 @@ Du willst nicht verwalten, sondern eine echte Produktkategorie prägen und als C
 
 Schreib mir direkt ein paar Zeilen zu dir und deiner Marketing-Philosophie.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

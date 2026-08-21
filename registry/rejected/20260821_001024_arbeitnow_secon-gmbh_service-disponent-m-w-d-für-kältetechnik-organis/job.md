@@ -77,4 +77,4 @@ SECON ist ein wachsendes Greentech-Unternehmen aus Gondelsheim. Wir entwickeln e
 
 **Sie möchten Ihr Know-how bei SECON einbringen und den nächsten Schritt in Richtung Kundenbetreuung und Serviceorganisation machen?** Dann freuen wir uns auf Ihre Bewerbung und darauf, Sie kennenzulernen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

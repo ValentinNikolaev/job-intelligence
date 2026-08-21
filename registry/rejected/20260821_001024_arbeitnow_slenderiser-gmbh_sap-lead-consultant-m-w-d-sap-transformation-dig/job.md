@@ -75,4 +75,4 @@ Noch mehr Vorteile gefällig? Auf unserer Karriereseite findest Du noch mehr spa
 
 Wenn Du Lust hast, Teil unseres Teams zu werden und Deine berufliche Zukunft in einem dynamischen und modernen Unternehmen zu starten, freuen wir uns auf Deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

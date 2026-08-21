@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150933'
+source_url: https://jobicy.com/jobs/150933-senior-software-engineer-elixir
+title: Senior Software Engineer (Elixir)
+company: Sona
+location: Europe,  UK
+published_at: '2026-08-17T14:17:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-21T02:03:23Z'
+rejected_at: '2026-08-21T02:03:23Z'
