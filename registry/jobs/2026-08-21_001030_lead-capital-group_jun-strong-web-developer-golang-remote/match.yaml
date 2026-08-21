@@ -1,0 +1,21 @@
+score: 76
+recommendation: match
+summary: Strong recent Go backend experience and clear remote alignment, but the posting
+  provides almost no usable requirements beyond the title.
+strengths:
+- Go backend development
+- Production API and automation experience
+- Remote role alignment
+gaps:
+- Exact seniority and technical requirements are not available
+- Domain and delivery expectations are unclear
+concerns:
+- The source description is effectively incomplete and links to an unrelated external
+  site
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-21T01:04:27Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:77ee0689ac3c082d6d022c672561300dee57dd2b86bfc98b321b43672be8a70c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
