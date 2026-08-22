@@ -53,4 +53,4 @@ Für unser Development Team in Deutschland suchen wir zum nächstmöglichen Term
 
 *Wir sind ein Arbeitgeber, der auf Chancengleichheit achtet, und wir begrüßen Bewerbungen von allen entsprechend qualifizierten Bewerbern, unabhängig von ethnischer Herkunft, Geschlecht, Behinderung, Religion/Weltanschauung, sexueller Orientierung oder Alter.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

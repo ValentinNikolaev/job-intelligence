@@ -1,0 +1,40 @@
+schema_version: 2
+id: c880399b-05b1-4f57-8655-2339691f069c
+title: Microservices Engineer
+company: Canonical Ltd.
+company_url: null
+location: Anywhere
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149558'
+  url: https://jobicy.com/jobs/149558-microservices-engineer
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png
+    industry:
+    - Software Engineering
+    level: Any
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets. Our platform, Ubuntu,
+      is very widely used in breakthrough enterprise initiatives such as public cloud,
+      data science, AI, engineering innovation, and IoT. Our customers include the
+      world's leading public cloud and silicon providers, and industry leaders…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        count: '25'
+        industry: dev
+published_at: '2026-08-22T17:05:08Z'
+discovered_at: '2026-08-22T22:01:35Z'
+updated_at: '2026-08-22T22:01:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-22T22:01:35Z'
+analysis_priority: 0
+fingerprint: sha256:510112ba72fb005eec8933631f88880ddb7d81b6a773c7cef64f4085a2744420
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

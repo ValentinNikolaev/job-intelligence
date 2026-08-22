@@ -45,4 +45,4 @@ We are looking for a motivated IT Working Student to support our internal IT ope
 **We Offer:**
 Join us in shaping the future of IT at Hypatos! If you're passionate about technology and enjoy helping others, we want to hear from you. Hypatos is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

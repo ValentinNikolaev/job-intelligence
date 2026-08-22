@@ -113,4 +113,4 @@ Remote work but occasional travel may be required for business engagements or ev
 
 Ready to shape what’s next? Join us and help build the future with us.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

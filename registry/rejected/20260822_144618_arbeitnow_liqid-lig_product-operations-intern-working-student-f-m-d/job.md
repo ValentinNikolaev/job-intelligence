@@ -93,4 +93,4 @@ We offer our clients financial peace of mind through exceptional, curated invest
 
 *LIQID is an equal opportunity employer. All qualified applications are considered without regard to race, age, religion, gender, ethnic or national origin, disability, or any other characteristic protected by applicable equal opportunity laws.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -53,4 +53,4 @@ Als **(Junior) Finance Manager (m/w/d)** arbeitest du in einem schlagkräftigen,
 
 **Sprache:** Du sprichst fließend Deutsch und Englisch (mindestens C1) und fühlst dich in einem internationalen Arbeitskontext wohl.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

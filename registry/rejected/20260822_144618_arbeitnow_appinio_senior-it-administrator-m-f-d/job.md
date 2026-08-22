@@ -144,4 +144,4 @@ We make an effort to stay connected - regular game nights, knowledge-sharing ses
 
 [ appinio.com ](https://appinio.com/)[ LinkedIn ](https://de.linkedin.com/company/appinio-gmbh)[ Xing ](https://www.xing.com/companies/appiniogmbh)[ Kununu ](https://www.kununu.com/de/appinio)[ Instagram](https://www.instagram.com/appinio)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

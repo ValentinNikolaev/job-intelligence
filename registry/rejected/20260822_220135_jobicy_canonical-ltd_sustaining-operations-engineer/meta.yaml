@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149532'
+source_url: https://jobicy.com/jobs/149532-sustaining-operations-engineer
+title: Sustaining Operations Engineer
+company: Canonical Ltd.
+location: Anywhere
+published_at: '2026-08-22T16:30:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-22T22:01:35Z'
+rejected_at: '2026-08-22T22:01:35Z'

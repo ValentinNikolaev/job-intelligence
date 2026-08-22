@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 57
+Total vacancies: 65
 
-- Found: 40
+- Found: 48
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,14 @@ Total vacancies: 57
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_microservices-engineer/) | [Microservices Engineer](../registry/jobs/2026-08-22_220135_canonical-ltd_microservices-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149558-microservices-engineer) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_performance-engineer-open-source/) | [Performance Engineer - Open Source](../registry/jobs/2026-08-22_220135_canonical-ltd_performance-engineer-open-source/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149551-performance-engineer-open-source) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-22_220135_canonical-ltd_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-22_220135_canonical-ltd_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_graduate-software-engineer-open-source-and-linux/) | [Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu](../registry/jobs/2026-08-22_220135_canonical-ltd_graduate-software-engineer-open-source-and-linux/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149581-graduate-software-engineer-open-source-and-linux-canonical-ubuntu) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_senior-staff-principal-engineer/) | [Senior/Staff/Principal Engineer](../registry/jobs/2026-08-22_220135_canonical-ltd_senior-staff-principal-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149522-senior-staff-principal-engineer) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-22_220135_canonical-ltd_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-22_220135_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
 | 2026-08-22 | [ShippyPro](../registry/jobs/2026-08-22_144624_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-22_144624_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-22 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-22 | [Canonical](../registry/jobs/2026-08-22_060649_canonical_software-architect-containers-virtualisation/) | [Software Architect - Containers / Virtualisation](../registry/jobs/2026-08-22_060649_canonical_software-architect-containers-virtualisation/job.md) | Algeria, Argentina, Austria, Bahrain, Belgium, Brazil, Bulgaria, Canada, Czechia, Denmark, Egypt, Finland, France, Germany, Greece, Hungary, Ireland, Israel, Italy, Kuwait, Mexico, Morocco, Netherlands, Norway, Oman, Poland, Portugal, Qatar, Romania, Russian Federation, Saudi Arabia, South Africa, Spain, Sweden, Switzerland, Tunisia, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States | Himalayas | Found | 2026-08-22 | [Himalayas](https://himalayas.app/companies/canonical/jobs/software-architect-containers-virtualisation) | — | — | — | — | — |
 | 2026-08-21 | [Artkai](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/) | [Head of Backend Engineering (PHP / FinTech / Payments)](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/artkai/vacancies/370704/) | [Open](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/company.md) | — | — | — | — |

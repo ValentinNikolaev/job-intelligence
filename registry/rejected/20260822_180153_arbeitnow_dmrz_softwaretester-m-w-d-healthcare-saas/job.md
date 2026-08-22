@@ -44,4 +44,4 @@ Posted: 2026-08-22T14:09:34Z
 Dr. Martin Kistenich
 People & Culture
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
