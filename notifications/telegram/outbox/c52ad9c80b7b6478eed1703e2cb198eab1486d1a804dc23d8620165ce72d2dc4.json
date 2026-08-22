@@ -1,0 +1,34 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-22T22:52:23Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Canonical Ltd.",
+      "directory": "2026-08-22_220135_canonical-ltd_senior-staff-principal-engineer",
+      "score": 82,
+      "title": "Senior/Staff/Principal Engineer",
+      "url": "https://jobicy.com/jobs/149522-senior-staff-principal-engineer",
+      "vacancy_id": "48684a72-4524-4300-abce-86a10d3f60f4"
+    },
+    {
+      "company": "Canonical Ltd.",
+      "directory": "2026-08-22_220135_canonical-ltd_performance-engineer-open-source",
+      "score": 68,
+      "title": "Performance Engineer - Open Source",
+      "url": "https://jobicy.com/jobs/149551-performance-engineer-open-source",
+      "vacancy_id": "b2acdf69-24f9-43d1-9176-3f66cae58029"
+    },
+    {
+      "company": "Canonical Ltd.",
+      "directory": "2026-08-22_220135_canonical-ltd_microservices-engineer",
+      "score": 91,
+      "title": "Microservices Engineer",
+      "url": "https://jobicy.com/jobs/149558-microservices-engineer",
+      "vacancy_id": "c880399b-05b1-4f57-8655-2339691f069c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "c52ad9c80b7b6478eed1703e2cb198eab1486d1a804dc23d8620165ce72d2dc4",
+  "schema_version": 1
+}

@@ -1,0 +1,24 @@
+score: 91
+recommendation: strong_match
+summary: 'Excellent alignment with Go backend microservices: the profile documents
+  API orchestration, event-driven systems, databases, Kubernetes, CI/CD, resilience,
+  observability, and production-scale ownership.'
+strengths:
+- Go-based backend and API orchestration experience is direct and recent.
+- Event-driven architecture, queues, retries, backpressure, distributed services,
+  and reliability are strongly evidenced.
+- Kubernetes, AWS, CI/CD, databases, monitoring, performance work, and technical leadership
+  match the role.
+gaps:
+- Canonical-specific Ubuntu/open-source community work and advanced security analysis
+  are not evidenced.
+concerns:
+- The role’s academic-performance and open-source expectations may require additional
+  evidence during screening.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-22T22:52:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:282326bf1764c18e9197fd37ff96e777282f9c1820e73d49f9859c5b4c1df089
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

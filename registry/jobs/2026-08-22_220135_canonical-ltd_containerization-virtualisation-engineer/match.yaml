@@ -1,0 +1,25 @@
+score: 22
+recommendation: not_match
+summary: The candidate has Kubernetes, cloud, microservices, and Go experience, but
+  this role requires prior open-source virtualization or container technology and
+  kernel or very-low-level systems work that are not evidenced.
+strengths:
+- Go, Kubernetes, AWS, microservices, CI/CD, and production reliability experience
+  are supported.
+- Computer Science degree, technical leadership, and remote collaboration fit general
+  expectations.
+gaps:
+- Open-source virtualization or container technology ownership is not evidenced.
+- Kernel or very-low-level systems experience, security analysis, and upstream community
+  work are not established.
+concerns:
+- The role’s central system-level requirements are materially different from the candidate’s
+  documented application/backend focus.
+hard_rejection: true
+hard_rejection_reason: Essential prior virtualization/container technology and kernel
+  or very-low-level systems experience are not supported by the candidate profile.
+analyzed_at: '2026-08-22T22:52:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:3ae2c6814444a759b98d699035320bde32ed7a75551ebdd04d65c6ffb3256d6b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,22 @@
+score: 52
+recommendation: possible_match
+summary: The candidate has strong backend, systems, cloud, and Go experience, but
+  the general track explicitly requires modern professional Python and the profile
+  does not establish that experience.
+strengths:
+- Long-term backend engineering and production reliability experience.
+- Go, APIs, databases, Kubernetes, AWS, CI/CD, and scalable services are supported.
+- Computer Science degree and professional English are supported.
+gaps:
+- Modern professional Python is a central requirement and is not evidenced.
+- Ubuntu/open-source development and Python testing depth are not established.
+concerns:
+- Fit depends heavily on whether Canonical can place the candidate in a Go-adjacent
+  Python team.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-22T22:52:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7e20b0b6415d076ea5d4c275ece1fcf896f8fcd6bb502187fe79143557b5dcaf
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

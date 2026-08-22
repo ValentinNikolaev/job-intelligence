@@ -1,0 +1,24 @@
+score: 82
+recommendation: strong_match
+summary: Senior backend engineer and technical lead with demonstrated Go, distributed
+  systems, Kubernetes, architecture, mentoring, and delivery leadership, aligned with
+  Canonical senior-plus expectations.
+strengths:
+- Go backend ownership and event-driven distributed-systems architecture are directly
+  evidenced.
+- Technical leadership, mentoring, planning, interviews, and team direction are supported.
+- Computer Science master’s degree, professional English, and remote collaboration
+  fit the stated context.
+gaps:
+- Open-source community contributions and low-level systems depth are not clearly
+  evidenced.
+- Exceptional academic performance beyond the degree is unknown.
+concerns:
+- This is a broad track whose eventual team and language focus are unspecified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-22T22:52:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:ede0bae64f26f00e74379e80908b8d4899a2b810a8ee92d27dd0c891ae1e5af7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
