@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 55
+Total vacancies: 56
 
-- Found: 38
+- Found: 39
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 55
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-22 | [Canonical](../registry/jobs/2026-08-22_060649_canonical_software-architect-containers-virtualisation/) | [Software Architect - Containers / Virtualisation](../registry/jobs/2026-08-22_060649_canonical_software-architect-containers-virtualisation/job.md) | Algeria, Argentina, Austria, Bahrain, Belgium, Brazil, Bulgaria, Canada, Czechia, Denmark, Egypt, Finland, France, Germany, Greece, Hungary, Ireland, Israel, Italy, Kuwait, Mexico, Morocco, Netherlands, Norway, Oman, Poland, Portugal, Qatar, Romania, Russian Federation, Saudi Arabia, South Africa, Spain, Sweden, Switzerland, Tunisia, Turkey, Ukraine, United Arab Emirates, United Kingdom, United States | Himalayas | Found | 2026-08-22 | [Himalayas](https://himalayas.app/companies/canonical/jobs/software-architect-containers-virtualisation) | — | — | — | — | — |
 | 2026-08-21 | [Artkai](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/) | [Head of Backend Engineering (PHP / FinTech / Payments)](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/artkai/vacancies/370704/) | [Open](../registry/jobs/2026-08-21_180158_artkai_head-of-backend-engineering-php-fintech-payments/company.md) | — | — | — | — |
 | 2026-08-21 | [Dedicatted](../registry/jobs/2026-08-21_180158_dedicatted_strong-technical-lead-php-ua-eu-remote/) | [Strong Technical Lead (PHP), UA/EU, remote](../registry/jobs/2026-08-21_180158_dedicatted_strong-technical-lead-php-ua-eu-remote/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/dedicatted/vacancies/370729/) | [Open](../registry/jobs/2026-08-21_180158_dedicatted_strong-technical-lead-php-ua-eu-remote/company.md) | — | — | — | — |
 | 2026-08-21 | [DNIPRO-M](../registry/jobs/2026-08-21_180158_dnipro-m_middle-senior-php-developer-laravel/) | [Middle/Senior PHP Developer (Laravel)](../registry/jobs/2026-08-21_180158_dnipro-m_middle-senior-php-developer-laravel/job.md) | Київ, віддалено | Dou | Found | 2026-08-21 | [Dou](https://jobs.dou.ua/companies/dnipro-m/vacancies/370711/) | [Open](../registry/jobs/2026-08-21_180158_dnipro-m_middle-senior-php-developer-laravel/company.md) | — | — | — | — |
