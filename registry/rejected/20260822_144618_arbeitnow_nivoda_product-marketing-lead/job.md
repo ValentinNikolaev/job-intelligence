@@ -153,4 +153,4 @@ Nivoda is an equal opportunity employer. We celebrate diversity and are committe
 
 If this role isn't for you but you're excited about Nivoda, join our Talent Pool and we'll reach out when something's a better fit: [nivoda.com/talent-pool](http://nivoda.com/talent-pool)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

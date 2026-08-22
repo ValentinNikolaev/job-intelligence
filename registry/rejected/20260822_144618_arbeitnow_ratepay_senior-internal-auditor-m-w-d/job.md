@@ -37,4 +37,4 @@ Als **Internal Auditor** **(m/w/d)** berichtest du direkt an unseren Geschäftsf
 
 Wir schätzen unsere Vielfalt und heißen jeden in unserem Team willkommen. Unabhängig von ethnischer und sozialer Herkunft, Religion, Weltanschauung, Geschlecht, sexueller Orientierung, körperlichen und geistigen Einschränkungen, Alter, Familienstand, Bildungshintergrund und Nationalität. Mit über 200 Mitarbeitenden und 40 verschiedenen Nationalitäten nehmen wir unsere Werte ernst. Dazu gehören Ownership, Growth, Integrity, Collaboration, Customer Centricity und Inclusion.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

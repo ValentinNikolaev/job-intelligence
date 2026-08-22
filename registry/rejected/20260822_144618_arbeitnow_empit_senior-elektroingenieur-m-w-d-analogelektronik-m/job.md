@@ -44,4 +44,4 @@ In deiner Rolle entwickelst und optimierst du die Elektronik hinter diesen Syste
 - **Hands-on-Mentalität** und Freude daran, eigene Lösungen selbst aufzubauen, zu testen, zu messen und zu optimieren
 - Sehr gute **Deutsch- und Englischkenntnisse** in Wort und Schrift
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

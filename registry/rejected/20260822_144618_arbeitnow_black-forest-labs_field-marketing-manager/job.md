@@ -154,4 +154,4 @@ If this sounds like work you’d enjoy, we’d love to hear from you.
 **US **$160,000- $200,000 + equity
 **EU** €105,000- €130,000 + equity
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

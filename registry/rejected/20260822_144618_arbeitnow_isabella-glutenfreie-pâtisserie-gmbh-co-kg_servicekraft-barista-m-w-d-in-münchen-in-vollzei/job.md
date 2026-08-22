@@ -94,4 +94,4 @@ Du arbeitest strukturiert, mit Liebe zum Detail, gerne auch an Wochenenden
 
 Mit deiner Ausstrahlung und deiner natürlichen Art bist du eine gewinnende Persönlichkeit für unsere Isabella Cafés
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -40,4 +40,4 @@ Das **Digital Career Institute** (DCI) ist einer der führenden Anbieter für di
 - Powere Dich aus mit dem Angebot von Urban Sports Club
 - Arbeiten unter Palmen? Klar. Workation bis zu 2 x 4 Wochen im Jahr im EU Ausland
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

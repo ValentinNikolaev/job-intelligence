@@ -169,4 +169,4 @@ If you have any questions about the advertised position, please contact **Antoni
 
 By submitting your application, you agree to our [Privacy Policy](https://share.eu/policies/privacy-policy). | Mit der Einreichung deiner Bewerbung erklärst du dich mit unserer [Datenschutzrichtlinie](https://share.eu/policies/privacy-policy) einverstanden.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

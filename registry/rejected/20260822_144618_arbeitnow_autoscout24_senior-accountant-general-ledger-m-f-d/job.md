@@ -61,4 +61,4 @@ With over 50 nationalities represented, we’re proud to welcome people of all b
 
 Ready to drive your career in Finance? Apply now and put your ideas in the driving seat at AutoScout24 Group.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

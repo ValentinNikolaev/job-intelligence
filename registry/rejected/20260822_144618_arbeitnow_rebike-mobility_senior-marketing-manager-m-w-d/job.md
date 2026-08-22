@@ -78,4 +78,4 @@ Was uns ausmacht: Teamgeist über Standorte hinweg, echte Wertschätzung für je
 
 Dann freuen wir uns auf Deine Bewerbung! Schick uns über das online Bewerbungsprotal deine Unterlagen inkl. Gehaltsvorstellung und möglichem Eintrittstermin.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
