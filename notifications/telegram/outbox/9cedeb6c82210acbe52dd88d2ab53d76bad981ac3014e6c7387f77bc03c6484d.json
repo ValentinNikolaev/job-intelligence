@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-22T14:50:17Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Canonical",
+      "directory": "2026-08-22_060649_canonical_software-architect-containers-virtualisation",
+      "score": 72,
+      "title": "Software Architect - Containers / Virtualisation",
+      "url": "https://himalayas.app/companies/canonical/jobs/software-architect-containers-virtualisation",
+      "vacancy_id": "e248c5d3-e5ee-4409-9e76-557206a1edc4"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "9cedeb6c82210acbe52dd88d2ab53d76bad981ac3014e6c7387f77bc03c6484d",
+  "schema_version": 1
+}
