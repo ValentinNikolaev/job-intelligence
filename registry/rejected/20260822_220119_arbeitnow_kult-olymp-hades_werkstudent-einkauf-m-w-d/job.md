@@ -102,4 +102,4 @@ Nutze attraktive Vergünstigungen, unter anderem über den Urban Sports Club und
 **Perspektive**
 Wenn es für beide Seiten passt, möchten wir Dich gerne auch über Deine Werkstudententätigkeit hinaus begleiten.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

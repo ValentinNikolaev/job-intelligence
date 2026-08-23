@@ -116,4 +116,4 @@ In den Alltag integrierte digitale Gesundheitslösungen sind ein unverzichtbarer
 
 Weitere Informationen über das Unternehmen findest du unter [www.roxhealth.com](http://www.roxhealth.com).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

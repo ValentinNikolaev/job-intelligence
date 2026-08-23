@@ -97,4 +97,4 @@ If you're excited about building AI systems that run in production at global ent
 
 Any questions about the role? Feel free to reach out to [**Cansel**](https://www.linkedin.com/in/cansel-bayram-6a422420b/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

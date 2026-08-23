@@ -95,4 +95,4 @@ Reisebereitschaft in **NRW, Niedersachsen, Bremen und Brandenburg **(ca. 20–30
 
 **Berlin - Bonn** - **Dresden - Hamburg**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

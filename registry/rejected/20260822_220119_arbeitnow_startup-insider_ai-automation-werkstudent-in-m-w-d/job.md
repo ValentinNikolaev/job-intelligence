@@ -136,4 +136,4 @@ Interesse an Datenanalyse & Visualisierung
 Schick uns dein **LinkedIn-Profil** oder einen **kurzen CV** – kein Anschreiben nötig!
 Werde Teil des Automation-Teams und hilf uns, die Zukunft der Startup-Szene noch smarter zu gestalten
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

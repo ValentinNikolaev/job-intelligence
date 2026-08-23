@@ -101,4 +101,4 @@ Kenntnisse im Umfeld von Land Management oder verwandten Fachdomänen
 
 **Die Stelle ist an unserem Standort in Bonn zu besetzen.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -237,4 +237,4 @@ Compensation: €162K – €202.5K • Fix: €120k – €150k · Bonus: €42
 
 - • OTE €162K – €202.5K • Fix: €120k – €150k · Bonus: €42k – €52,5k · EV: €144k – €180k
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

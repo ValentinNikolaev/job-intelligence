@@ -44,4 +44,4 @@ iocto GmbH
 Lorsbacher Straße 31
 65719 Hofheim am Taunus
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -111,4 +111,4 @@ Mental health support with OpenUp
 
 *Some of the benefits listed here apply only to the German entity and to Junior-level roles or above.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -50,4 +50,4 @@ Zur Unterstützung unserer Fachbereiche Einkauf, Logistik und Vertrieb suchen wi
 
 Die Personalabteilung freut sich auf Ihre Bewerbung
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
