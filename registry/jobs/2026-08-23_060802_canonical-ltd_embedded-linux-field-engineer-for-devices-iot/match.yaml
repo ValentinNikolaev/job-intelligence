@@ -1,0 +1,21 @@
+score: 18
+recommendation: not_match
+summary: The candidate has Go and infrastructure experience, but the role requires
+  extensive embedded Linux, boot and firmware, distribution packaging, and Yocto or
+  Buildroot expertise absent from the profile.
+strengths:
+- Go, software design, Linux-adjacent infrastructure, and a Computer Science degree
+- Technical leadership and cross-functional communication
+gaps:
+- Embedded Linux, Yocto/Buildroot, BIOS/EFI/Secure Boot, firmware, and Debian/RPM
+  packaging are not evidenced.
+- Field engineering, presales, and customer delivery experience are not established.
+concerns:
+- Up to 30% travel and local-language expectations add practical uncertainty.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-23T10:55:04Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f835ea6f47cca6f59b4eab3920364bf138659438703024429f5e477e7a6b327e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
