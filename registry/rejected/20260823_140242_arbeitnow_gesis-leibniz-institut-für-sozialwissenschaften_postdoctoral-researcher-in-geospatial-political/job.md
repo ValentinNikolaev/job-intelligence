@@ -53,4 +53,4 @@ For further information concerning the tasks please contact Stefan Jünger via E
 Please apply via our online-application portal until** August 24, 2026**.
 Our reference number is: **SDC-32**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

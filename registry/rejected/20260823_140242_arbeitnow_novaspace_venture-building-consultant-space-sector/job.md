@@ -71,4 +71,4 @@ Novaspace is the global leading consulting firm in the space sector. With a robu
 
 Only Applications containing a Motivation Letter and a CV in English will be considered.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

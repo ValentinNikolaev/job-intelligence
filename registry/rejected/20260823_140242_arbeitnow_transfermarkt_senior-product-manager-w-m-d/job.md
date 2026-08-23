@@ -119,4 +119,4 @@ Dann freuen wir uns auf deine Bewerbung über das Bewerbungsformular!
 
 Dann melde dich gerne per Mail an ----- bei Leah Seidel-Whitelaw.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

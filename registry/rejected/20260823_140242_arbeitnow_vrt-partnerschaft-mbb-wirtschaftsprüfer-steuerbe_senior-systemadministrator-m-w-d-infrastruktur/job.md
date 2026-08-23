@@ -77,4 +77,4 @@ Mit rund 290 Mitarbeiterinnen und Mitarbeitern und 20 Partnern an unseren neun S
 Schicke deine Bewerbung innerhalb von nur ca. 3 Minuten über unser Online-Formular zu dieser Stelle auf [vrt.de/karriere.](http://vrt.de/karriere.)
 Bei Fragen vorab kannst du Felix Wiermann unter 0228 26792-298 anrufen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

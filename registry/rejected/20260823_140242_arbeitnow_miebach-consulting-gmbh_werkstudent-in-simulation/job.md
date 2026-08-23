@@ -83,4 +83,4 @@ Als globaler, integrierter Supply-Chain-Partner verbinden wir Strategie, Enginee
 
 **Werde Teil von Miebach und gestalte gemeinsam mit uns die Supply Chains von morgen!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

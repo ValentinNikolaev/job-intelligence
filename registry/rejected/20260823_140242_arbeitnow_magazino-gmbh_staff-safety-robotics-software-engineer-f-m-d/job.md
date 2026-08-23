@@ -41,4 +41,4 @@ Posted: 2026-08-23T11:09:39Z
 
 At Jungheinrich Robotics, fostering inclusivity is very important to us. We are dedicated to create an inclusive environment for all candidates and provide equal opportunities to all qualified applicants regardless of gender, ethnicity, age, national origin, sexual orientation, culture, or education. If you need any reasonable adjustments to make the application process accessible for you, we’ll do our best to accommodate you. Feel free to approach us for that!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

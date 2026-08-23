@@ -29,4 +29,4 @@ Posted: 2026-08-23T11:29:44Z
 - Strukturiertes Onboarding mit Ansprechpartnern und Feedbackgesprächen.
 - Attraktive Innenstadtlage und moderne Ausstattung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

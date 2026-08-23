@@ -67,4 +67,4 @@ Nice to have:
 
 Wir freuen uns auf deine Bewerbung. Bitte ohne Anschreiben voller Floskeln. Zeig uns Zahlen, Daten, Fakten zu deiner Arbeit.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

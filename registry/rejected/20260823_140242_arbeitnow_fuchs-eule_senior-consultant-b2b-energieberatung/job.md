@@ -73,4 +73,4 @@ Wir sind **ein echtes Team** und stehen füreinander ein, sagen was wir denken, 
 
 Uns ist es wichtig, dass wir uns regelmäßig persönlich begegnen, deswegen haben wir unser Büro mit viel Liebe ausgewählt und gestaltet. Wir legen **großen Wert auf Team Events und gleichzeitig auch auf Flexibilität.** Deswegen sind zwei Tage Home Office pro Woche bei uns der Standard.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

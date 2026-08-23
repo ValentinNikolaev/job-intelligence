@@ -51,4 +51,4 @@ Das Erfolgsgeheimnis der über 170+ Social Natives liegt in ihrem tiefgreifenden
 Wir freuen uns auf deine Bewerbung!
 Bei Fragen kannst du dich gerne bei uns unter ----- melden
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

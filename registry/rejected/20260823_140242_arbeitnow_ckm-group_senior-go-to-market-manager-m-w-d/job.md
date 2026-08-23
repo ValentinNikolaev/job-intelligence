@@ -80,4 +80,4 @@ Du liebst es, neue Produkte erfolgreich an den Markt zu bringen und komplexe Mar
 
 Unser People & Culture Team begleitet dich während des gesamten Recruiting-Prozesses und steht dir jederzeit zur Seite. Wenn du Fragen hast oder etwas unklar ist, melde dich einfach bei unserem Recruiting-Team unter ----- – wir freuen uns, von dir zu hören!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

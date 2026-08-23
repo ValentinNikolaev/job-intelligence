@@ -129,4 +129,4 @@ Wettbewerbsfähiges Package: 50k–65k€ Fixgehalt
 
 High-output, low-ego Culture: Wir sind ambitioniert, fokussiert und fördern Performance
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

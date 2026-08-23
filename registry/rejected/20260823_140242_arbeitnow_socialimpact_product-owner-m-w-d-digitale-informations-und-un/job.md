@@ -50,4 +50,4 @@ Du möchtest deine Erfahrung in der digitalen Produktentwicklung einsetzen und e
 Dann freuen wir uns auf deine Bewerbung mit Lebenslauf, Motivationsschreiben und relevanten Zeugnissen. Bitte gib dabei auch deine Gehaltsvorstellung und deinen frühestmöglichen Starttermin an.
 Die Auswahlgespräche finden fortlaufend statt – bewirb dich gerne frühzeitig.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

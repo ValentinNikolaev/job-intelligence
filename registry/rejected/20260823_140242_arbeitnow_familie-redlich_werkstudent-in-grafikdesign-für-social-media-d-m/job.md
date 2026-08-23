@@ -41,4 +41,4 @@ Bei uns findest du spannende Themen, kluge Köpfe, nette Menschen – und eine M
 
 **Klingt alles richtig gut für dich?** Dann los! Bewirb dich mit allem, was du hast: mit aussagekräftigen Unterlagen, deiner Gehaltsvorstellung, der Angabe, wie viele Wochenstunden du arbeiten möchtest, und einer Information zum frühestmöglichen Starttermin. **Wir freuen uns auf dich!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

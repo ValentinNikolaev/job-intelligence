@@ -45,4 +45,4 @@ Posted: 2026-08-23T05:30:21Z
 
 **Hast du Bock, mit uns durchzustarten? **Dann freuen wir uns auf deine Bewerbung! Schick uns deinen Lebenslauf, Zeugnisse und ein kurzes Motivationsschreiben an ----- oder über unser Bewerbungsportal.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
