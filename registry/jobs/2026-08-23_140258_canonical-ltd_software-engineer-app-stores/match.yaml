@@ -1,0 +1,23 @@
+score: 56
+recommendation: possible_match
+summary: Backend Go experience, distributed systems, and production reliability transfer
+  well, but the role's app-store and desktop/platform focus is not demonstrated in
+  the candidate profile.
+strengths:
+- Strong recent Go backend and API orchestration experience.
+- Demonstrated event-driven systems, messaging reliability, and production operations.
+- Kubernetes, CI/CD, and cross-functional technical ownership are evidenced.
+gaps:
+- No demonstrated app-store, desktop application, or platform-specific engineering
+  experience.
+- No evidence of the role's likely client-side or store-integration responsibilities.
+concerns:
+- The posting provides limited concrete requirements, so the exact fit depends on
+  the team's implementation scope.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-23T14:59:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:2cfa49922d7e88f69c8ab8a2e7f04c12048beec97e73b8216540f0318f84b702
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

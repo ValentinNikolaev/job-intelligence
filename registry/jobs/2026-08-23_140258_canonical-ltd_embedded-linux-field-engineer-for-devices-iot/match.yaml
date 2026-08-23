@@ -1,0 +1,22 @@
+score: 18
+recommendation: not_match
+summary: The role requires extensive embedded Linux, distribution or packaging, and
+  Yocto or Buildroot experience plus customer-facing field work; those mandatory capabilities
+  are not evidenced.
+strengths:
+- Strong Go and Linux-adjacent backend, Kubernetes, and production engineering background.
+- Demonstrated technical communication, mentoring, and cross-functional collaboration.
+gaps:
+- No demonstrated embedded Linux, Yocto, Buildroot, Debian packaging, or device engineering
+  experience.
+- No evidenced presales, field-engineering, or customer solution-delivery background.
+concerns:
+- Up to 30% travel and local-language requirements may add compatibility constraints.
+hard_rejection: true
+hard_rejection_reason: Essential embedded Linux and distribution/packaging requirements
+  are unsupported by the candidate profile.
+analyzed_at: '2026-08-23T14:59:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:19b614c7d9c2fd17939a093e1e5c5aa4a894dc1ca8cca2c026d0e264a109a9e6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
