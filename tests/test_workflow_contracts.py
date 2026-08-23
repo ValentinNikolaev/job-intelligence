@@ -125,6 +125,17 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("TELEGRAM_BOT_TOKEN", workflow)
         self.assertIn("deliver_telegram_outbox.py", workflow)
 
+    def test_collection_push_race_queues_one_clean_rerun(self) -> None:
+        workflow = self._read(".github/workflows/job-intelligence-collection.yml")
+
+        self.assertIn("actions: write", workflow)
+        self.assertIn("push_retry_count", workflow)
+        self.assertIn("PUSH_RETRY_COUNT", workflow)
+        self.assertIn("gh workflow run job-intelligence-collection.yml", workflow)
+        self.assertIn("-f push_retry_count=1", workflow)
+        self.assertIn("refusing to queue another run", workflow)
+        self.assertNotIn("git rebase", workflow)
+
     def test_two_wave_preparation_has_parallel_parts_handoff_and_cv_barrier(self) -> None:
         prepare = self._flat(
             self._read(

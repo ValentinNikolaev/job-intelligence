@@ -4,8 +4,15 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+    inputs:
+      push_retry_count:
+        description: Number of clean reruns already queued after a push race
+        required: false
+        default: 0
+        type: number
 
 permissions:
+  actions: write
   contents: write
 
 concurrency:
@@ -177,6 +184,9 @@ jobs:
       - name: Commit deterministic changes
         id: commit
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUSH_RETRY_COUNT: ${{ inputs.push_retry_count || 0 }}
         run: |
           set -euo pipefail
           if [ "${{ steps.deterministic.outputs.failure }}" = "1" ]; then
@@ -215,17 +225,35 @@ jobs:
             -m "Run: ${run_url}"
 
           branch="${GITHUB_REF_NAME:-main}"
-          for attempt in 1 2 3; do
-            if git push origin "HEAD:${branch}"; then
-              break
-            fi
-            if [ "${attempt}" -eq 3 ]; then
-              echo "Push failed after rebasing against origin/${branch}." >> "$GITHUB_STEP_SUMMARY"
-              exit 1
-            fi
-            git fetch origin "${branch}"
-            git rebase "origin/${branch}"
-          done
+          local_commit="$(git rev-parse HEAD)"
+          local_base="$(git rev-parse HEAD^)"
+          if git push origin "HEAD:${branch}"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Committed and pushed deterministic collection changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
 
-          echo "changed=true" >> "$GITHUB_OUTPUT"
-          echo "Committed and pushed deterministic collection changes." >> "$GITHUB_STEP_SUMMARY"
+          git fetch origin "${branch}"
+          remote_head="$(git rev-parse "origin/${branch}")"
+          if [ "${remote_head}" = "${local_commit}" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "The collection commit was already present on origin/${branch}." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ "${remote_head}" = "${local_base}" ]; then
+            echo "Push failed even though origin/${branch} did not advance; refusing to retry." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          if [ "${PUSH_RETRY_COUNT}" -ge 1 ]; then
+            echo "origin/${branch} advanced again during the clean retry; refusing to queue another run." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          gh workflow run job-intelligence-collection.yml \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref "${branch}" \
+            -f push_retry_count=1
+
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "retry_queued=true" >> "$GITHUB_OUTPUT"
+          echo "origin/${branch} advanced from ${local_base} to ${remote_head}; queued one clean collection run from the latest branch head." >> "$GITHUB_STEP_SUMMARY"
