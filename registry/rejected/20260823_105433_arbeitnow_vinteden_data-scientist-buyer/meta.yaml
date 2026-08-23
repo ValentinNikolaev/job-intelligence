@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: data-scientist-buyer-berlin-440456
+source_url: https://www.arbeitnow.com/jobs/companies/vinteden/data-scientist-buyer-berlin-440456
+title: Data Scientist, Buyer
+company: Vinteden
+location: Berlin
+published_at: '2026-08-22T23:55:17Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-23T10:54:33Z'
+rejected_at: '2026-08-23T10:54:33Z'

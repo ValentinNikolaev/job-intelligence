@@ -1,0 +1,17 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/canonical/jobs/staff-software-engineer-for-identity-management-go-golang
+source_url: https://himalayas.app/companies/canonical/jobs/staff-software-engineer-for-identity-management-go-golang
+title: Staff Software Engineer for Identity Management (Go/Golang)
+company: Canonical
+location: Algeria, Angola, Austria, Bahrain, Belgium, Brazil, Bulgaria, Canada, Czechia,
+  Denmark, Egypt, Ethiopia, Finland, France, Germany, Ghana, Greece, Hungary, Ireland,
+  Israel, Italy, Kenya, Kuwait, Mexico, Morocco, Netherlands, Nigeria, Norway, Oman,
+  Poland, Portugal, Qatar, Romania, Russian Federation, Saudi Arabia, Senegal, South
+  Africa, Spain, Sweden, Switzerland, Turkey, Ukraine, United Arab Emirates, United
+  Kingdom, United States
+published_at: '2026-07-29T20:32:00Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-29T20:32:00Z is older than 7 days
+updated_at: '2026-08-23T10:54:47Z'
+rejected_at: '2026-08-23T10:54:47Z'
