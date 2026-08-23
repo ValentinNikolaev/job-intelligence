@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/kong/jobs/senior-security-engineer
+source_url: https://himalayas.app/companies/kong/jobs/senior-security-engineer
+title: Senior Security Engineer
+company: Kong
+location: Italy
+published_at: '2026-07-31T04:21:09Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-31T04:21:09Z is older than 7 days
+updated_at: '2026-08-23T14:02:56Z'
+rejected_at: '2026-08-23T14:02:56Z'

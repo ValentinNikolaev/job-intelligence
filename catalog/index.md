@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 55
+Total vacancies: 62
 
-- Found: 38
+- Found: 45
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,13 @@ Total vacancies: 55
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-23 | [Canonical Ltd.](../registry/jobs/2026-08-23_140258_canonical-ltd_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-23_140258_canonical-ltd_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-23 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-23 | [Canonical Ltd.](../registry/jobs/2026-08-23_140258_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-23_140258_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-23 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-23 | [Canonical Ltd.](../registry/jobs/2026-08-23_140258_canonical-ltd_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-23_140258_canonical-ltd_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-23 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-23 | [Canonical Ltd.](../registry/jobs/2026-08-23_140258_canonical-ltd_graduate-software-engineer-open-source-and-linux/) | [Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu](../registry/jobs/2026-08-23_140258_canonical-ltd_graduate-software-engineer-open-source-and-linux/job.md) | Anywhere | Jobicy | Found | 2026-08-23 | [Jobicy](https://jobicy.com/jobs/149581-graduate-software-engineer-open-source-and-linux-canonical-ubuntu) | — | — | — | — | — |
+| 2026-08-23 | [Canonical Ltd.](../registry/jobs/2026-08-23_140258_canonical-ltd_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-23_140258_canonical-ltd_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-23 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
+| 2026-08-23 | [ShippyPro](../registry/jobs/2026-08-23_140249_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-23_140249_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-23 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-08-23 | [Contabo](../registry/jobs/2026-08-23_140242_contabo_solution-architect-all-genders/) | [Solution Architect (all genders)](../registry/jobs/2026-08-23_140242_contabo_solution-architect-all-genders/job.md) | Remote (Germany) | Arbeitnow | Found | 2026-08-23 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/contabo/remote-solution-architect-all-genders-166281) | — | — | — | — | — |
 | 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_microservices-engineer/) | [Microservices Engineer](../registry/jobs/2026-08-22_220135_canonical-ltd_microservices-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149558-microservices-engineer) | — | — | — | — | — |
 | 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_performance-engineer-open-source/) | [Performance Engineer - Open Source](../registry/jobs/2026-08-22_220135_canonical-ltd_performance-engineer-open-source/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149551-performance-engineer-open-source) | — | — | — | — | — |
 | 2026-08-22 | [Canonical Ltd.](../registry/jobs/2026-08-22_220135_canonical-ltd_senior-staff-principal-engineer/) | [Senior/Staff/Principal Engineer](../registry/jobs/2026-08-22_220135_canonical-ltd_senior-staff-principal-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-22 | [Jobicy](https://jobicy.com/jobs/149522-senior-staff-principal-engineer) | — | — | — | — | — |
