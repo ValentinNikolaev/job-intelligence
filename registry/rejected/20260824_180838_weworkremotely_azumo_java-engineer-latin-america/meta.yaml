@@ -1,0 +1,12 @@
+schema_version: 1
+source: weworkremotely
+source_job_id: https://weworkremotely.com/remote-jobs/azumo-java-engineer-latin-america
+source_url: https://weworkremotely.com/remote-jobs/azumo-java-engineer-latin-america
+title: Java Engineer - Latin America
+company: Azumo
+location: Anywhere in the World
+published_at: '2026-08-04T22:12:17Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-04T22:12:17Z is older than 7 days
+updated_at: '2026-08-24T18:08:38Z'
+rejected_at: '2026-08-24T18:08:38Z'
