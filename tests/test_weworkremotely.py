@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util, sys, tempfile, unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError
@@ -21,12 +22,12 @@ class Response:
     def read(self): return self.value
 
 
-def feed(title="Acme: Senior Platform Engineer", guid="wwr-9988"):
+def feed(title="Acme: Senior Platform Engineer", guid="wwr-9988", link="https://weworkremotely.com/remote-jobs/acme-role?source=rss", published="Tue, 18 Aug 2026 09:15:00 +0000", description="<h2>Role</h2><p>Own the platform.</p><ul><li>Build Go services</li></ul>"):
     return f'''<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:w="https://weworkremotely.com/rss/"><channel><item>
-<title>{title}</title><link>https://weworkremotely.com/remote-jobs/acme-role?source=rss</link><guid>{guid}</guid>
-<pubDate>Tue, 18 Aug 2026 09:15:00 +0000</pubDate><w:expires_at>Thu, 17 Sep 2026 09:15:00 +0000</w:expires_at><w:region>Europe</w:region><w:country>Italy</w:country><w:state>Italy</w:state>
+<title>{title}</title><link>{link}</link><guid>{guid}</guid>
+<pubDate>{published}</pubDate><w:expires_at>Thu, 17 Sep 2026 09:15:00 +0000</w:expires_at><w:region>Europe</w:region><w:country>Italy</w:country><w:state>Italy</w:state>
 <w:skills>Go, Kubernetes; PostgreSQL</w:skills><w:category>Programming</w:category><w:type>Full-Time</w:type>
-<description><![CDATA[Short.]]></description><content:encoded><![CDATA[<h2>Role</h2><p>Own the platform.</p><ul><li>Build Go services</li></ul>]]></content:encoded>
+<description><![CDATA[Short.]]></description><content:encoded><![CDATA[{description}]]></content:encoded>
 </item></channel></rss>'''
 
 
@@ -49,7 +50,7 @@ class Tests(unittest.TestCase):
     def test_dedupes_feeds_and_records_provenance(self):
         requested = []
         def opener(request: Any, timeout: float): requested.append(request.full_url); self.assertEqual(8.0, timeout); return Response(feed())
-        collector = Collector(self.config(), opener=opener); jobs = list(collector.fetch())
+        collector = Collector(self.config(), opener=opener, now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc)); jobs = list(collector.fetch())
         self.assertEqual([PROGRAMMING, DEVOPS], requested); self.assertEqual((2, 1), (collector.api_requests, len(jobs)))
         self.assertEqual(["programming", "devops"], [x["feed"] for x in jobs[0].source_metadata["discovered_by"]])
 
@@ -62,7 +63,7 @@ class Tests(unittest.TestCase):
             attempts += 1
             if attempts == 1: raise HTTPError(request.full_url, 429, "rate", None, None)
             return Response(feed())
-        collector = Collector(self.config(), opener=opener, sleep=sleeps.append); self.assertEqual(1, len(list(collector.fetch())))
+        collector = Collector(self.config(), opener=opener, sleep=sleeps.append, now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc)); self.assertEqual(1, len(list(collector.fetch())))
         self.assertEqual((2, [1]), (collector.api_requests, sleeps))
 
     def test_strict_config_and_invalid_xml_title(self):
@@ -72,6 +73,29 @@ class Tests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "unsupported"): Collector(self.config())
         with self.assertRaisesRegex(RuntimeError, "invalid XML"): parse_feed("<rss>")
         with self.assertRaisesRegex(ValueError, "Company: Role"): parse_feed(feed(title="Engineer"))
+
+    def test_filters_stale_and_non_target_jobs(self):
+        payload = feed(published="Sat, 01 Aug 2026 09:15:00 +0000")
+        payload = payload.replace("</channel>", feed(title="Acme: Data Scientist", guid="new", link="https://weworkremotely.com/remote-jobs/data", published="Sun, 23 Aug 2026 09:15:00 +0000", description="Python machine learning").split("<channel>", 1)[1].split("</channel>", 1)[0] + "</channel>")
+        collector = Collector(self.config(), opener=lambda *args, **kwargs: Response(payload), now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc))
+        self.assertEqual([], list(collector.fetch()))
+
+    def test_configurable_age_and_url_dedupe_with_different_guids(self):
+        self.path.write_text(f"version: 1\nmax_age_days: 30\nfeeds:\n  - name: p\n    url: {PROGRAMMING}\n", encoding="utf-8")
+        first = feed(guid="one", published="Sat, 01 Aug 2026 09:15:00 +0000")
+        second_item = feed(guid="two", link="https://weworkremotely.com/remote-jobs/acme-role/", published="Sat, 01 Aug 2026 09:15:00 +0000").split("<channel>", 1)[1].split("</channel>", 1)[0]
+        payload = first.replace("</channel>", second_item + "</channel>")
+        jobs = list(Collector(self.config(), opener=lambda *args, **kwargs: Response(payload), now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc)).fetch())
+        self.assertEqual(1, len(jobs))
+
+    def test_default_config_disables_devops_feed(self):
+        collector = Collector({})
+        self.assertEqual(["programming"], [item.name for item in collector.feeds])
+
+    def test_rejects_invalid_max_age(self):
+        self.path.write_text(f"version: 1\nmax_age_days: 0\nfeeds:\n  - name: p\n    url: {PROGRAMMING}\n", encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "max_age_days must be greater than zero"):
+            Collector(self.config())
 
 
 if __name__ == "__main__": unittest.main()

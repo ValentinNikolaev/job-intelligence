@@ -4,7 +4,7 @@ import hashlib
 import re
 import time
 import xml.etree.ElementTree as ET
-from datetime import timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
 from pathlib import Path
@@ -28,12 +28,16 @@ class JobspressoCollector:
     name = "jobspresso"
 
     def __init__(self, config: Mapping[str, str], *, opener: Callable[..., Any] = urlopen,
-                 sleep: Callable[[float], None] = time.sleep) -> None:
+                 sleep: Callable[[float], None] = time.sleep,
+                 now: Callable[[], datetime] | None = None) -> None:
         config_path = Path(config.get("JOBSPRESSO_CONFIG", "") or DEFAULT_CONFIG_PATH)
         settings = _load_settings(config_path)
         self.timeout = _positive_float(settings.get("timeout_seconds", 30), "timeout_seconds")
+        self.max_age_days = _positive_float(settings.get("max_age_days", 7), "max_age_days")
+        self.cheap_mode = _boolean(settings.get("cheap_mode", True), "cheap_mode")
         self._opener = opener
         self._sleep = sleep
+        self._now = now or (lambda: datetime.now(timezone.utc))
         self._request_count = 0
 
     @property
@@ -46,7 +50,11 @@ class JobspressoCollector:
             "Accept": "application/rss+xml, application/xml;q=0.9",
             "User-Agent": USER_AGENT,
         })
-        yield from parse_feed(self._get_bytes(request, "Jobspresso jobs feed"))
+        jobs = parse_feed(self._get_bytes(request, "Jobspresso jobs feed"))
+        if self.cheap_mode:
+            cutoff = self._now().astimezone(timezone.utc) - timedelta(days=self.max_age_days)
+            jobs = [job for job in jobs if _is_recent(job.published_at, cutoff) and _is_relevant(job)]
+        yield from jobs
 
     def _get_bytes(self, request: Request, context: str) -> bytes:
         for attempt in range(3):
@@ -75,14 +83,19 @@ def parse_feed(payload: bytes | str) -> list[NormalizedJob]:
     except (ET.ParseError, ValueError) as exc:
         raise RuntimeError("Jobspresso feed returned invalid XML") from exc
     jobs: list[NormalizedJob] = []
-    seen_ids: set[str] = set()
+    seen_keys: set[str] = set()
     for index, item in enumerate(_descendants(root, "item"), 1):
         try:
             job = normalize_item(item)
         except ValueError as exc:
             raise ValueError(f"Jobspresso item {index}: {exc}") from exc
-        if job.source_job_id not in seen_ids:
-            seen_ids.add(job.source_job_id)
+        keys = {
+            f"id:{job.source_job_id}",
+            f"url:{_canonical_url(job.source_url)}",
+            f"posting:{_identity_text(job.company)}:{_identity_text(job.title)}",
+        }
+        if not (keys & seen_keys):
+            seen_keys.update(keys)
             jobs.append(job)
     return jobs
 
@@ -119,7 +132,7 @@ def _load_settings(path: Path) -> dict[str, Any]:
         return {}
     if not isinstance(loaded, dict):
         raise ValueError(f"Jobspresso config must be a YAML mapping: {path}")
-    unknown = sorted(set(loaded) - {"version", "timeout_seconds"})
+    unknown = sorted(set(loaded) - {"version", "timeout_seconds", "max_age_days", "cheap_mode"})
     if unknown:
         raise ValueError(f"unknown Jobspresso config fields: {', '.join(unknown)}")
     if loaded.get("version", 1) != 1:
@@ -201,6 +214,42 @@ def _canonical_url(value: str) -> str:
 def _clean_string(value: str | None) -> str | None:
     result = re.sub(r"\s+", " ", value or "").strip()
     return result or None
+
+
+def _is_recent(published_at: str | None, cutoff: datetime) -> bool:
+    if not published_at:
+        return False
+    try:
+        published = datetime.fromisoformat(published_at.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return published >= cutoff
+
+
+def _is_relevant(job: NormalizedJob) -> bool:
+    title = job.title.casefold()
+    original_body = f"{job.title}\n{job.description}"
+    body = original_body.casefold()
+    noise = (
+        "marketing", "sales", "account manager", "customer success", "recruiter",
+        "designer", "copywriter", "content writer", "finance", "human resources",
+    )
+    if any(term in title for term in noise):
+        return False
+    stack = re.search(r"(?<![a-z0-9])(?:php|laravel|symfony|golang)(?![a-z0-9])", body)
+    if not stack and not re.search(r"(?<![A-Za-z0-9])Go(?![A-Za-z0-9])", original_body):
+        return False
+    return bool(re.search(r"\b(?:back[ -]?end|software|platform|api|engineer|developer|lead|manager)\b", body))
+
+
+def _identity_text(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", value.casefold()).strip()
+
+
+def _boolean(value: Any, name: str) -> bool:
+    if not isinstance(value, bool):
+        raise ValueError(f"{name} must be a boolean")
+    return value
 
 
 def _positive_float(value: Any, name: str) -> float:

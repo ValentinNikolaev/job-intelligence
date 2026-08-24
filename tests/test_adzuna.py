@@ -167,6 +167,60 @@ queries:
         with self.assertRaisesRegex(ValueError, "unsupported"):
             AdzunaCollector(self._config())
 
+    def test_configurable_title_filter_skips_irrelevant_results(self) -> None:
+        self._write_config(
+            """request_budget: 1
+title_include_terms: [backend, software engineer]
+title_exclude_terms: [frontend, wordpress]
+queries:
+  - country: de
+    title_only: backend
+    what_or: php golang
+    what_exclude: python java
+"""
+        )
+
+        def opener(request: Any, timeout: float) -> FakeResponse:
+            parameters = parse_qs(urlparse(request.full_url).query)
+            self.assertEqual(["backend"], parameters["title_only"])
+            self.assertEqual(["php golang"], parameters["what_or"])
+            self.assertEqual(["python java"], parameters["what_exclude"])
+            return FakeResponse(
+                {
+                    "count": 3,
+                    "results": [
+                        {
+                            "id": "keep",
+                            "title": "Senior Backend Engineer",
+                            "description": "Golang services",
+                            "redirect_url": "https://jobs.test/keep",
+                        },
+                        {
+                            "id": "excluded",
+                            "title": "Backend / Frontend Engineer",
+                            "description": "PHP services",
+                            "redirect_url": "https://jobs.test/excluded",
+                        },
+                        {
+                            "id": "missing",
+                            "title": "Product Manager",
+                            "description": "Backend PHP product",
+                            "redirect_url": "https://jobs.test/missing",
+                        },
+                    ],
+                }
+            )
+
+        jobs = list(AdzunaCollector(self._config(), opener=opener, sleep=lambda _: None).fetch())
+        self.assertEqual(["keep"], [job.source_job_id for job in jobs])
+
+    def test_rejects_invalid_title_filter_config(self) -> None:
+        self._write_config(
+            "title_include_terms: backend\nqueries:\n  - country: it\n    what: php\n"
+        )
+        with self.assertRaisesRegex(ValueError, "title_include_terms must be a YAML list"):
+            AdzunaCollector(self._config())
+
     def test_zero_budget_performs_no_requests(self) -> None:
         self._write_config("request_budget: 0\nqueries:\n  - country: it\n    what: python\n")
         collector = AdzunaCollector(self._config(), opener=lambda *args, **kwargs: self.fail("request made"))

@@ -3,42 +3,122 @@ version: 1
 
 # The default Adzuna quotas are 250/day, 1000/week, and 2500/month.
 # Eleven requests per hourly run leaves roughly a 10% monthly reserve when
-# running nine times per workday over a 22-workday month.
+# running nine times per workday over a 22-workday month. Each profile receives
+# one page before pagination, so the configured countries share the quota fairly.
 request_budget: 11
 results_per_page: 50
 max_pages_per_query: 11
 timeout_seconds: 30
 
+# Apply a cheap source-local title guard before normalization and the shared
+# prefilter. Search profiles below already require a target stack; this removes
+# obvious false positives caused by those terms appearing incidentally in copy.
+title_include_terms:
+  - backend
+  - back-end
+  - software engineer
+  - software developer
+  - platform engineer
+  - technical lead
+  - tech lead
+  - engineering manager
+  - php
+  - golang
+title_exclude_terms:
+  - frontend
+  - front-end
+  - full stack
+  - full-stack
+  - wordpress
+  - drupal
+  - magento
+  - data engineer
+  - data scientist
+  - machine learning
+  - devops
+  - site reliability
+  - security engineer
+  - marketing
+  - sales
+
 # Add one or more searches. Pages are fetched round-robin across queries.
 queries:
   - country: it
-    what: "senior backend engineer"
-    max_days_old: 7
-    sort_by: date
-    max_pages: 3
-
-  - country: it
-    what: "golang backend engineer"
-    max_days_old: 7
-    sort_by: date
-    max_pages: 3
-
-  - country: it
-    what: "senior php backend developer"
+    title_only: "backend"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
     max_days_old: 7
     sort_by: date
     max_pages: 2
 
   - country: it
-    what: "backend technical lead"
+    title_only: "technical lead"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
     max_days_old: 7
     sort_by: date
     max_pages: 1
 
   - country: it
-    what: "backend engineer"
-    where: "Roma"
-    distance: 80
+    title_only: "engineering manager"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
     max_days_old: 7
     sort_by: date
-    max_pages: 2
+    max_pages: 1
+
+  # Remote-Europe expansion. Requiring a backend title plus the target stack is
+  # substantially cheaper than broad country-level "remote engineer" searches.
+  - country: de
+    title_only: "backend"
+    what_and: "remote"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
+    max_days_old: 7
+    sort_by: date
+    max_pages: 1
+
+  - country: nl
+    title_only: "backend"
+    what_and: "remote"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
+    max_days_old: 7
+    sort_by: date
+    max_pages: 1
+
+  - country: gb
+    title_only: "backend"
+    what_and: "remote"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
+    max_days_old: 7
+    sort_by: date
+    max_pages: 1
+
+  - country: fr
+    title_only: "backend"
+    what_and: "remote"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
+    max_days_old: 7
+    sort_by: date
+    max_pages: 1
+
+  - country: es
+    title_only: "backend"
+    what_and: "remote"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
+    max_days_old: 7
+    sort_by: date
+    max_pages: 1
+
+  - country: pl
+    title_only: "backend"
+    what_and: "remote"
+    what_or: "php golang laravel symfony"
+    what_exclude: "wordpress drupal magento python java .net"
+    max_days_old: 7
+    sort_by: date
+    max_pages: 1

@@ -65,6 +65,12 @@ class AdzunaCollector:
             settings.get("request_budget", 11), "request_budget", minimum=0
         )
         self.timeout = _positive_float(settings.get("timeout_seconds", 30), "timeout_seconds")
+        self.title_include_terms = _string_terms(
+            settings.get("title_include_terms"), "title_include_terms"
+        )
+        self.title_exclude_terms = _string_terms(
+            settings.get("title_exclude_terms"), "title_exclude_terms"
+        )
         default_max_pages = _bounded_int(
             settings.get("max_pages_per_query", self.request_budget or 1),
             "max_pages_per_query",
@@ -110,6 +116,8 @@ class AdzunaCollector:
                 for item in results:
                     if not isinstance(item, dict):
                         continue
+                    if not self._title_is_relevant(item.get("title")):
+                        continue
                     job = self._normalize(item)
                     if job.source_job_id in seen_job_ids:
                         continue
@@ -122,6 +130,12 @@ class AdzunaCollector:
                     completed.add(index)
             if len(completed) == len(self.queries):
                 return
+
+    def _title_is_relevant(self, value: Any) -> bool:
+        title = html_to_markdown(_as_string(value)).casefold()
+        if self.title_include_terms and not any(term in title for term in self.title_include_terms):
+            return False
+        return not any(term in title for term in self.title_exclude_terms)
 
     def _search(self, query: SearchQuery, page: int) -> dict[str, Any]:
         parameters = {
@@ -216,7 +230,7 @@ def _load_settings(path: Path) -> dict[str, Any]:
         raise ValueError(f"Adzuna config must be a YAML mapping: {path}")
     allowed = {
         "version", "request_budget", "results_per_page", "max_pages_per_query",
-        "timeout_seconds", "queries",
+        "timeout_seconds", "title_include_terms", "title_exclude_terms", "queries",
     }
     unknown = sorted(set(loaded) - allowed)
     if unknown:
@@ -300,6 +314,21 @@ def _positive_float(value: Any, name: str) -> float:
     if result <= 0:
         raise ValueError(f"{name} must be greater than zero")
     return result
+
+
+def _string_terms(value: Any, name: str) -> tuple[str, ...]:
+    if value is None:
+        return ()
+    if not isinstance(value, list):
+        raise ValueError(f"{name} must be a YAML list")
+    terms: list[str] = []
+    for index, item in enumerate(value, 1):
+        if not isinstance(item, str) or not item.strip():
+            raise ValueError(f"{name}[{index}] must be a non-empty string")
+        term = item.strip().casefold()
+        if term not in terms:
+            terms.append(term)
+    return tuple(terms)
 
 
 def _as_string(value: Any) -> str | None:

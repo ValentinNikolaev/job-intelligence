@@ -5,7 +5,7 @@ import re
 import time
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, replace
-from datetime import timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Callable, Iterable, Mapping
@@ -34,13 +34,16 @@ class WeWorkRemotelyCollector:
     name = "weworkremotely"
 
     def __init__(self, config: Mapping[str, str], *, opener: Callable[..., Any] = urlopen,
-                 sleep: Callable[[float], None] = time.sleep) -> None:
+                 sleep: Callable[[float], None] = time.sleep,
+                 now: Callable[[], datetime] = lambda: datetime.now(timezone.utc)) -> None:
         config_path = Path(config.get("WEWORKREMOTELY_CONFIG", "") or DEFAULT_CONFIG_PATH)
         settings = _load_settings(config_path)
         self.timeout = _positive_float(settings.get("timeout_seconds", 30), "timeout_seconds")
+        self.max_age_days = _positive_float(settings.get("max_age_days", 7), "max_age_days")
         self.feeds = _parse_feeds(settings.get("feeds"))
         self._opener = opener
         self._sleep = sleep
+        self._now = now
         self._request_count = 0
 
     @property
@@ -51,7 +54,8 @@ class WeWorkRemotelyCollector:
         self._request_count = 0
         if not self.feeds:
             raise ValueError("We Work Remotely feeds are empty; edit sources/weworkremotely/config.yaml")
-        jobs_by_id: dict[str, NormalizedJob] = {}
+        jobs_by_url: dict[str, NormalizedJob] = {}
+        cutoff = self._now().astimezone(timezone.utc) - timedelta(days=self.max_age_days)
         for feed in self.feeds:
             request = Request(feed.url, headers={
                 "Accept": "application/rss+xml, application/xml;q=0.9", "User-Agent": USER_AGENT,
@@ -59,19 +63,22 @@ class WeWorkRemotelyCollector:
             payload = self._get_bytes(request, f"We Work Remotely feed {feed.name!r}")
             discovery = {"feed_index": feed.index, "feed": feed.name, "url": feed.url}
             for job in parse_feed(payload):
-                existing = jobs_by_id.get(job.source_job_id)
+                if not _is_recent(job, cutoff) or not _is_target_job(job):
+                    continue
+                dedupe_key = _canonical_url(job.source_url)
+                existing = jobs_by_url.get(dedupe_key)
                 if existing is None:
                     metadata = dict(job.source_metadata)
                     metadata["discovered_by"] = [discovery]
-                    jobs_by_id[job.source_job_id] = replace(job, source_metadata=metadata)
+                    jobs_by_url[dedupe_key] = replace(job, source_metadata=metadata)
                 else:
                     discoveries = list(existing.source_metadata.get("discovered_by", []))
                     if discovery not in discoveries:
                         discoveries.append(discovery)
                         metadata = dict(existing.source_metadata)
                         metadata["discovered_by"] = discoveries
-                        jobs_by_id[job.source_job_id] = replace(existing, source_metadata=metadata)
-        yield from jobs_by_id.values()
+                        jobs_by_url[dedupe_key] = replace(existing, source_metadata=metadata)
+        yield from jobs_by_url.values()
 
     def _get_bytes(self, request: Request, context: str) -> bytes:
         for attempt in range(3):
@@ -102,8 +109,9 @@ def parse_feed(payload: bytes | str) -> list[NormalizedJob]:
     for index, item in enumerate(_descendants(root, "item"), 1):
         try: job = normalize_item(item)
         except ValueError as exc: raise ValueError(f"We Work Remotely item {index}: {exc}") from exc
-        if job.source_job_id not in seen:
-            seen.add(job.source_job_id)
+        dedupe_key = _canonical_url(job.source_url)
+        if dedupe_key not in seen:
+            seen.add(dedupe_key)
             jobs.append(job)
     return jobs
 
@@ -147,7 +155,7 @@ def _load_settings(path: Path) -> dict[str, Any]:
     except yaml.YAMLError as exc: raise ValueError(f"invalid We Work Remotely YAML config {path}: {exc}") from exc
     if loaded is None: return {}
     if not isinstance(loaded, dict): raise ValueError(f"We Work Remotely config must be a YAML mapping: {path}")
-    unknown = sorted(set(loaded) - {"version", "timeout_seconds", "feeds"})
+    unknown = sorted(set(loaded) - {"version", "timeout_seconds", "max_age_days", "feeds"})
     if unknown: raise ValueError(f"unknown We Work Remotely config fields: {', '.join(unknown)}")
     if loaded.get("version", 1) != 1: raise ValueError("unsupported We Work Remotely config version")
     return loaded
@@ -197,6 +205,32 @@ def _rss_timestamp(value: str | None) -> str | None:
     except (TypeError, ValueError, OverflowError): return None
     if parsed.tzinfo is None: parsed = parsed.replace(tzinfo=timezone.utc)
     return parsed.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def _is_recent(job: NormalizedJob, cutoff: datetime) -> bool:
+    if not job.published_at:
+        return False
+    try:
+        published = datetime.fromisoformat(job.published_at.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return published.astimezone(timezone.utc) >= cutoff
+
+
+def _is_target_job(job: NormalizedJob) -> bool:
+    metadata = job.source_metadata
+    haystack = " ".join([
+        job.title, job.description,
+        " ".join(str(value) for value in metadata.get("skills", [])),
+        " ".join(str(value) for value in metadata.get("categories", [])),
+    ]).casefold()
+    has_stack = bool(re.search(r"(?<![a-z0-9])(?:go|golang|php|laravel|symfony)(?![a-z0-9])", haystack))
+    has_role = bool(re.search(
+        r"\b(?:back[ -]?end|software|platform|api|services?|engineering (?:lead|manager)|"
+        r"tech(?:nical)? lead|lead (?:engineer|developer)|staff engineer|principal engineer)\b",
+        haystack,
+    ))
+    return has_stack and has_role
 
 
 def _descendants(root: ET.Element, name: str) -> Iterable[ET.Element]:

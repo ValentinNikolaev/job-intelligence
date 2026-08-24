@@ -1,2 +1,6 @@
 version: 1
 timeout_seconds: 12
+# Jobspresso's general RSS feed is noisy. Cheap mode keeps only recent target-stack
+# engineering vacancies after the single feed request; run this source once daily.
+cheap_mode: true
+max_age_days: 7

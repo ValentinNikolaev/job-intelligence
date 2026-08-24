@@ -4,6 +4,7 @@ import importlib.util
 import sys
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError
@@ -46,7 +47,10 @@ class JobspressoTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.config_path = Path(self.temp.name) / "jobspresso.yaml"
-        self.config_path.write_text("version: 1\ntimeout_seconds: 7\n", encoding="utf-8")
+        self.config_path.write_text(
+            "version: 1\ntimeout_seconds: 7\ncheap_mode: true\nmax_age_days: 7\n",
+            encoding="utf-8",
+        )
     def tearDown(self) -> None: self.temp.cleanup()
     def _config(self) -> dict[str, str]: return {"JOBSPRESSO_CONFIG": str(self.config_path)}
 
@@ -56,7 +60,10 @@ class JobspressoTests(unittest.TestCase):
             self.assertNotIn("?", request.full_url)
             self.assertEqual(7.0, timeout)
             return FakeResponse(feed())
-        collector = JobspressoCollector(self._config(), opener=opener)
+        collector = JobspressoCollector(
+            self._config(), opener=opener,
+            now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc),
+        )
         self.assertEqual(1, len(list(collector.fetch())))
         self.assertEqual(1, collector.api_requests)
 
@@ -84,7 +91,10 @@ class JobspressoTests(unittest.TestCase):
             attempts += 1
             if attempts < 3: raise HTTPError(request.full_url, 503, "Unavailable", None, None)
             return FakeResponse(feed())
-        collector = JobspressoCollector(self._config(), opener=opener, sleep=sleeps.append)
+        collector = JobspressoCollector(
+            self._config(), opener=opener, sleep=sleeps.append,
+            now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc),
+        )
         self.assertEqual(1, len(list(collector.fetch())))
         self.assertEqual((3, [1, 2]), (collector.api_requests, sleeps))
 
@@ -94,6 +104,49 @@ class JobspressoTests(unittest.TestCase):
             JobspressoCollector(self._config())
         with self.assertRaisesRegex(RuntimeError, "invalid XML"):
             parse_feed(b"<rss><item>")
+
+    def test_cheap_mode_filters_old_and_non_engineering_items(self) -> None:
+        payload = feed().replace(
+            "</channel>",
+            feed(post_id="old", title="Senior PHP Developer").split("<channel>", 1)[1].split("</channel>", 1)[0]
+            .replace("Tue, 18 Aug 2026", "Sat, 01 Aug 2026")
+            + feed(post_id="noise", title="Performance Marketing Specialist").split("<channel>", 1)[1].split("</channel>", 1)[0]
+            + "</channel>",
+        )
+        collector = JobspressoCollector(
+            self._config(), opener=lambda *_args, **_kwargs: FakeResponse(payload),
+            now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc),
+        )
+        jobs = list(collector.fetch())
+        self.assertEqual(["8421"], [job.source_job_id for job in jobs])
+
+    def test_deduplicates_different_ids_for_same_posting(self) -> None:
+        duplicate = feed(post_id="9999", link="https://jobspresso.co/remote-work/backend-engineer/?ref=rss")
+        payload = feed().replace(
+            "</channel>", duplicate.split("<channel>", 1)[1].split("</channel>", 1)[0] + "</channel>",
+        )
+        self.assertEqual(1, len(parse_feed(payload)))
+
+    def test_cheap_mode_can_be_disabled(self) -> None:
+        self.config_path.write_text(
+            "version: 1\ntimeout_seconds: 7\ncheap_mode: false\nmax_age_days: 7\n",
+            encoding="utf-8",
+        )
+        collector = JobspressoCollector(
+            self._config(), opener=lambda *_args, **_kwargs: FakeResponse(feed(title="Marketing Manager")),
+            now=lambda: datetime(2026, 9, 24, tzinfo=timezone.utc),
+        )
+        self.assertEqual(1, len(list(collector.fetch())))
+
+    def test_plain_english_lowercase_go_is_not_treated_as_golang(self) -> None:
+        payload = feed(title="Senior Backend Engineer").replace(
+            "<li>Go</li><li>PostgreSQL</li>", "<li>Help APIs go to production</li>",
+        )
+        collector = JobspressoCollector(
+            self._config(), opener=lambda *_args, **_kwargs: FakeResponse(payload),
+            now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc),
+        )
+        self.assertEqual([], list(collector.fetch()))
 
 
 if __name__ == "__main__": unittest.main()
