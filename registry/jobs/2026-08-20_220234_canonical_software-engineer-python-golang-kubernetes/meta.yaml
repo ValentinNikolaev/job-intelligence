@@ -94,26 +94,26 @@ sources:
     - Staff-Kubernetes-Engineer
     - Python-Backend-Engineer
     - Software-Engineer
-    - Lead-Software-Engineer---Python
+    - Lead-Software-Engineer-Python
     expiry_at: '2026-09-19T02:19:41Z'
     discovered_by:
     - query_index: 2
       parameters:
-        q: golang
-        country: IT
-        sort: recent
         exclude_worldwide: 'true'
+        sort: recent
+        q: golang
         seniority: Senior
+        country: IT
     - query_index: 3
       parameters:
-        q: php backend
-        country: IT
-        sort: recent
         exclude_worldwide: 'true'
+        sort: recent
+        q: php backend
         seniority: Senior
+        country: IT
 published_at: '2026-08-20T20:34:23Z'
 discovered_at: '2026-08-20T22:02:34Z'
-updated_at: '2026-08-20T22:02:34Z'
+updated_at: '2026-08-24T06:12:54Z'
 status: found
 status_history:
 - status: found

@@ -104,9 +104,9 @@ sources:
     - 12.75
     - 14
     categories:
+    - Technology-Leadership
     - Engineering-Management
     - DevOps
-    - Technical-Leadership
     - Cloud-Engineering-Manager
     - Cloud-Infrastructure-Engineering-Manager
     - Golang-Engineering-Manager
@@ -118,14 +118,14 @@ sources:
     discovered_by:
     - query_index: 4
       parameters:
-        q: technical lead
-        country: IT
-        sort: recent
         exclude_worldwide: 'true'
+        sort: recent
+        q: technical lead
         seniority: Manager
+        country: IT
 published_at: '2026-08-20T20:33:06Z'
 discovered_at: '2026-08-20T22:02:34Z'
-updated_at: '2026-08-20T22:02:34Z'
+updated_at: '2026-08-24T06:12:54Z'
 status: found
 status_history:
 - status: found
