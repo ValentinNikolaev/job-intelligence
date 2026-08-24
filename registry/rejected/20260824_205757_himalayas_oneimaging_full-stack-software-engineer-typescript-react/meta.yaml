@@ -1,0 +1,16 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/oneimaging/jobs/full-stack-software-engineer-typescript-react
+source_url: https://himalayas.app/companies/oneimaging/jobs/full-stack-software-engineer-typescript-react
+title: Full Stack Software Engineer (TypeScript/React)
+company: OneImaging
+location: Argentina, Australia, Brazil, Canada, Chile, Colombia, Denmark, Egypt, Finland,
+  France, Germany, India, Indonesia, Israel, Italy, Malaysia, Mexico, Netherlands,
+  New Zealand, Norway, Peru, Philippines, Poland, Romania, Saudi Arabia, Singapore,
+  South Africa, Spain, Sweden, Thailand, Turkey, Ukraine, United Arab Emirates, United
+  Kingdom, United States, Vietnam
+published_at: '2026-08-23T20:33:10Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-24T20:57:57Z'
+rejected_at: '2026-08-24T20:57:57Z'

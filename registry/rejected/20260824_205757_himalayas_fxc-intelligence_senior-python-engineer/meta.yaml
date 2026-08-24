@@ -1,0 +1,17 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/fxcintel/jobs/senior-python-engineer-2575642025
+source_url: https://himalayas.app/companies/fxcintel/jobs/senior-python-engineer-2575642025
+title: Senior Python Engineer
+company: FXC Intelligence
+location: Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina,
+  Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Georgia,
+  Greece, Hungary, Ireland, Italy, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania,
+  Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland,
+  Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland,
+  Ukraine
+published_at: '2026-08-08T17:48:27Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-08T17:48:27Z is older than 7 days
+updated_at: '2026-08-24T20:57:57Z'
+rejected_at: '2026-08-24T20:57:57Z'

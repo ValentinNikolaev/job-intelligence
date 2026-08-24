@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 66
+Total vacancies: 69
 
-- Found: 49
+- Found: 52
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 66
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_205800_canonical-ltd_graduate-software-engineer-open-source-and-linux/) | [Graduate Software Engineer, Open Source and Linux, Canonical Ubuntu](../registry/jobs/2026-08-24_205800_canonical-ltd_graduate-software-engineer-open-source-and-linux/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149581-graduate-software-engineer-open-source-and-linux-canonical-ubuntu) | — | — | — | — | — |
+| 2026-08-24 | [Zade Space](../registry/jobs/2026-08-24_205752_zade-space_full-stack-software-engineer/) | [Full-Stack Software Engineer](../registry/jobs/2026-08-24_205752_zade-space_full-stack-software-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-24 | [Dou](https://jobs.dou.ua/companies/zade-agency/vacancies/370361/) | [Open](../registry/jobs/2026-08-24_205752_zade-space_full-stack-software-engineer/company.md) | — | — | — | — |
+| 2026-08-24 | [ShippyPro](../registry/jobs/2026-08-24_205750_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-24_205750_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-24 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_203532_canonical-ltd_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-24_203532_canonical-ltd_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
 | 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_203532_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-24_203532_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
 | 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_203532_canonical-ltd_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-24_203532_canonical-ltd_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |

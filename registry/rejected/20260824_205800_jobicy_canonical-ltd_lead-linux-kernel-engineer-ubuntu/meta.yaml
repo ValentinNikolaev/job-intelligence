@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149562'
+source_url: https://jobicy.com/jobs/149562-lead-linux-kernel-engineer-ubuntu
+title: Lead Linux Kernel Engineer - Ubuntu
+company: Canonical Ltd.
+location: Anywhere
+published_at: '2026-08-22T17:05:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-24T20:58:00Z'
+rejected_at: '2026-08-24T20:58:00Z'

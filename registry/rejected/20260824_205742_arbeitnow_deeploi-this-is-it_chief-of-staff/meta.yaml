@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: chief-of-staff-berlin-308512
+source_url: https://www.arbeitnow.com/jobs/companies/deeploi-this-is-it/chief-of-staff-berlin-308512
+title: Chief of Staff
+company: deeploi - This is IT
+location: Berlin
+published_at: '2026-08-24T17:10:25Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-24T20:57:42Z'
+rejected_at: '2026-08-24T20:57:42Z'
