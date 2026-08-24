@@ -1,0 +1,22 @@
+score: 24
+recommendation: not_match
+summary: Kubernetes and cloud infrastructure experience provides some overlap, but
+  the role's core virtualization, container-runtime, and systems engineering requirements
+  are not sufficiently evidenced.
+strengths:
+- Kubernetes migrations, Helm, ArgoCD, CI/CD, and cloud operations
+- Distributed systems and production troubleshooting
+gaps:
+- Virtualization internals, container runtimes, Linux systems engineering, and C/C++
+  are not evidenced
+concerns:
+- The essential low-level platform scope is materially different from the candidate's
+  documented backend focus
+hard_rejection: true
+hard_rejection_reason: Essential virtualization and low-level container-platform experience
+  is unsupported by the candidate profile.
+analyzed_at: '2026-08-24T17:04:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:09f58a9a8b9b38f0350470286e6d69e4b35670a46b28de247fcffa2513b83f46
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

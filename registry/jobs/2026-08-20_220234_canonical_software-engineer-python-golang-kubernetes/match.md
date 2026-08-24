@@ -1,24 +1,20 @@
 # Match Analysis
 
-**Score:** 84/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Strong remote fit for Golang, Kubernetes, cloud infrastructure, and production reliability.
+Good remote fit through Go, Kubernetes migration, AWS, CI/CD, distributed backend systems, and production operations, with Python depth as the main uncertainty.
 
 ## Why it matches
 
-- Go backend ownership
-- Kubernetes
-- Helm
-- GitHub Actions
-- ArgoCD
-- AWS
-- reliability
+- Go backend development and distributed service architecture
+- Kubernetes, Helm, ArgoCD, AWS, and deployment automation
+- Reliability, performance optimization, APIs, and incident troubleshooting
 
 ## Gaps
 
-- Python experience not established
+- Python production experience is not clearly established
 
 ## Concerns
 
-- Exact team scope and Python depth are unclear
+- Canonical open-source contribution expectations and travel requirements need confirmation

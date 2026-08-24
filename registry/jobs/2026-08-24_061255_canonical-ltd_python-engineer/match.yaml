@@ -1,0 +1,20 @@
+score: 52
+recommendation: possible_match
+summary: General backend and cloud experience transfers, but Python is not established
+  as a primary professional language and the Canonical role context is insufficiently
+  supported.
+strengths:
+- Distributed backend systems, APIs, queues, and production reliability
+- AWS, Kubernetes, CI/CD, and technical leadership
+- Remote collaboration and open-source-adjacent infrastructure experience
+gaps:
+- Professional Python depth and role-specific Python production evidence
+concerns:
+- Exact team domain, seniority expectations, and mandatory Python criteria need confirmation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-24T17:04:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:3b45da3c34af8d37654bd6e5b57d9d39d65b01c7e6280a9d95ad53da7abcebea
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

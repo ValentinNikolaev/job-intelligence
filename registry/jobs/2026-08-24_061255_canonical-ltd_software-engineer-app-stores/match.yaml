@@ -1,0 +1,20 @@
+score: 58
+recommendation: possible_match
+summary: Some backend and distributed-systems alignment exists, but the role's likely
+  Go/Python, Ubuntu packaging, and app-store domain requirements are only partially
+  supported.
+strengths:
+- Backend engineering, APIs, event-driven systems, and reliability
+- Go experience and remote distributed-team collaboration
+- Kubernetes, CI/CD, and production troubleshooting
+gaps:
+- Ubuntu app stores, packaging, Debian, and Python depth are not evidenced
+concerns:
+- Canonical-specific open-source workflows and travel expectations are unknown
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-24T17:04:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:05590facc68f84f30a9b85047e76d8447ec01d7ecdd83b245045f6e34cbe3742
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

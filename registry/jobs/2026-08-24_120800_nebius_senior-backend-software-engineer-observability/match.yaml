@@ -1,0 +1,20 @@
+score: 84
+recommendation: strong_match
+summary: Strong match for senior backend observability work, supported by Go services,
+  monitoring, distributed pipelines, reliability engineering, performance optimization,
+  and cloud infrastructure.
+strengths:
+- Go backend and event-driven pipeline development
+- Monitoring, tracing, incident troubleshooting, and reliability improvements
+- Kubernetes, AWS, CI/CD, queues, retries, and high-throughput systems
+gaps:
+- Dedicated observability-product experience and the Nebius stack are not explicit
+concerns:
+- Exact on-call and timezone expectations are unknown
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-24T17:04:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:282b05426fdac17a07ee717ec5db83ecc3c8ffde50042e3e60ec7df1227f5499
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

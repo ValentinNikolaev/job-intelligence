@@ -1,0 +1,58 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-24T17:04:55Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Lithos",
+      "directory": "2026-08-18_060759_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 78,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "b84b870f-9845-4ea9-85e5-7370d83fc9d5"
+    },
+    {
+      "company": "Nebius",
+      "directory": "2026-08-24_120800_nebius_staff-backend-engineer-tech-lead-manager",
+      "score": 86,
+      "title": "Staff Backend Engineer / Tech Lead Manager",
+      "url": "https://jobicy.com/jobs/147410-staff-backend-engineer-tech-lead-manager",
+      "vacancy_id": "93b67e54-cc80-4efd-8495-0b102484743b"
+    },
+    {
+      "company": "Nebius",
+      "directory": "2026-08-24_120800_nebius_senior-backend-software-engineer-observability",
+      "score": 84,
+      "title": "Senior Backend Software Engineer (Observability)",
+      "url": "https://jobicy.com/jobs/147408-senior-backend-software-engineer-observability",
+      "vacancy_id": "888b2f96-4ee0-439e-9425-3b95df2ee4dc"
+    },
+    {
+      "company": "TechBiz Global GmbH",
+      "directory": "2026-08-24_120742_techbiz-global-gmbh_senior-leading-software-engineer-fintech",
+      "score": 82,
+      "title": "Senior/Leading Software Engineer (fintech)",
+      "url": "https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-137042",
+      "vacancy_id": "68eab03d-7815-4356-a918-7dc528a38f6f"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-08-20_220234_canonical_software-engineer-python-golang-kubernetes",
+      "score": 78,
+      "title": "Software Engineer - Python/Golang - Kubernetes",
+      "url": "https://himalayas.app/companies/canonical/jobs/software-engineer-python-golang-kubernetes",
+      "vacancy_id": "ab0c45ad-d1f7-46f2-a286-41618cfde06f"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-08-20_220234_canonical_engineering-manager-public-cloud-python-golang",
+      "score": 75,
+      "title": "Engineering Manager - Public Cloud",
+      "url": "https://himalayas.app/companies/canonical/jobs/engineering-manager-public-cloud-python-golang",
+      "vacancy_id": "07e751f7-ea43-4d5b-afc0-504bdeb97a40"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "aa0772f8b18c4839deefe0b124ef6d2488356f1bb2c6f229d98c78b8e64856d5",
+  "schema_version": 1
+}

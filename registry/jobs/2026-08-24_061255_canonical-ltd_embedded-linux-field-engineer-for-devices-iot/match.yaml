@@ -1,0 +1,19 @@
+score: 18
+recommendation: not_match
+summary: Backend and cloud experience does not establish the embedded Linux, device,
+  hardware troubleshooting, or field-engineering background central to this role.
+strengths:
+- General Linux-hosted backend and production troubleshooting experience
+gaps:
+- Embedded Linux, hardware, IoT devices, drivers, and field support are not evidenced
+concerns:
+- The role's essential device and field responsibilities are fundamentally outside
+  the documented profile
+hard_rejection: true
+hard_rejection_reason: Essential embedded Linux, device/IoT, and field-engineering
+  experience is unsupported by the candidate profile.
+analyzed_at: '2026-08-24T17:04:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fdf08cac4817fd7a0a2728e69f6fdeaae50ad2a41806cebf3f2cd261e6e5ac42
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

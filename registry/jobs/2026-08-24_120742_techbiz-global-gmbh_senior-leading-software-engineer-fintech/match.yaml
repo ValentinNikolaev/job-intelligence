@@ -1,0 +1,19 @@
+score: 82
+recommendation: strong_match
+summary: Strong fintech fit with payment integrations, exchange-core work, PHP, Go-adjacent
+  backend leadership, event systems, and demonstrated delivery ownership.
+strengths:
+- Direct payment-gateway and financial-domain experience
+- Senior backend development, architecture, and technical leadership
+- Performance, reliability, PostgreSQL, APIs, and distributed systems
+gaps:
+- Required language, framework, and precise fintech product scope are not fully clear
+concerns:
+- Berlin or remote eligibility and any German-language requirement need verification
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-24T17:04:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7d2e1c1f2b2e3daffda6551922388bace79e133fb84a168f1a5090672572f010
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

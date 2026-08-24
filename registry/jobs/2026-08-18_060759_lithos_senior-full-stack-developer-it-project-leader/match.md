@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 72/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Strong backend and technical leadership fit, but full-stack breadth and formal project-lead expectations are only partly evidenced.
+Strong backend and technical-lead fit for a remote full-stack role, with Go, PHP, APIs, architecture, delivery ownership, and stakeholder collaboration evidenced.
 
 ## Why it matches
 
-- Senior PHP/Go backend, system design, integrations, and production ownership.
-- Technical lead experience including roadmap, planning, mentoring, and stakeholder work.
-- Relevant cloud, CI/CD, Kubernetes, and observability background.
+- Go backend and API orchestration experience
+- Technical leadership, planning, mentoring, and interviewing
+- PHP frameworks, databases, integrations, and performance work
 
 ## Gaps
 
-- Full-stack frontend depth is not clearly established.
+- Frontend depth and the specific Lithos stack are not clearly evidenced
 
 ## Concerns
 
-- The project's location, language, and exact leadership mandate need confirmation.
+- Project-lead scope and exact location expectations need confirmation

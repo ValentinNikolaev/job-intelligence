@@ -1,23 +1,20 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 75/100  
 **Recommendation:** Match
 
-Solid engineering-manager fit combining technical leadership, Go, cloud, and reliability.
+Solid engineering-management and cloud-platform alignment through technical leadership, mentoring, Go, AWS, Kubernetes, delivery ownership, and team development.
 
 ## Why it matches
 
-- Technical Lead delivery ownership
-- mentoring
-- Go
-- AWS
-- Kubernetes
-- architecture
+- Led teams, mentored engineers, planned delivery, and conducted interviews
+- Go, AWS, Kubernetes, CI/CD, and scalable backend systems
+- Reliability, performance, architecture, and cross-functional collaboration
 
 ## Gaps
 
-- Python and long-term formal people-management depth not documented
+- Python fluency and direct public-cloud image or Ubuntu-platform experience are not evidenced
 
 ## Concerns
 
-- Sustained engineering-manager scope may exceed recent evidence
+- Partner-facing management scope and required travel need confirmation
