@@ -67,7 +67,7 @@ Messaggio libero
 
 Mandaci la tua candidatura
 
-Via Serravalle, 29
+Via Giuseppe Mazzini, 27
 
 31046 Oderzo, TV, Italy
 

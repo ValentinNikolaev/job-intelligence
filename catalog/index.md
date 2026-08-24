@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 57
+Total vacancies: 60
 
-- Found: 40
+- Found: 43
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 57
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-24 | [Nebius](../registry/jobs/2026-08-24_120800_nebius_staff-backend-engineer-tech-lead-manager/) | [Staff Backend Engineer / Tech Lead Manager](../registry/jobs/2026-08-24_120800_nebius_staff-backend-engineer-tech-lead-manager/job.md) | Europe,  Germany,  Netherlands,  UK | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/147410-staff-backend-engineer-tech-lead-manager) | — | — | — | — | — |
+| 2026-08-24 | [Nebius](../registry/jobs/2026-08-24_120800_nebius_senior-backend-software-engineer-observability/) | [Senior Backend Software Engineer (Observability)](../registry/jobs/2026-08-24_120800_nebius_senior-backend-software-engineer-observability/job.md) | Netherlands | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/147408-senior-backend-software-engineer-observability) | — | — | — | — | — |
+| 2026-08-24 | [TechBiz Global GmbH](../registry/jobs/2026-08-24_120742_techbiz-global-gmbh_senior-leading-software-engineer-fintech/) | [Senior/Leading Software Engineer (fintech)](../registry/jobs/2026-08-24_120742_techbiz-global-gmbh_senior-leading-software-engineer-fintech/job.md) | Remote job | Arbeitnow | Found | 2026-08-24 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-137042) | — | — | — | — | — |
 | 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_061255_canonical-ltd_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-24_061255_canonical-ltd_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
 | 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_061255_canonical-ltd_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-24_061255_canonical-ltd_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
 | 2026-08-24 | [Canonical Ltd.](../registry/jobs/2026-08-24_061255_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-24_061255_canonical-ltd_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-24 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |

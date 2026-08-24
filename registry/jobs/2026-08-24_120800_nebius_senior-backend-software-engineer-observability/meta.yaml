@@ -1,0 +1,47 @@
+schema_version: 2
+id: 888b2f96-4ee0-439e-9425-3b95df2ee4dc
+title: Senior Backend Software Engineer (Observability)
+company: Nebius
+company_url: null
+location: Netherlands
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '147408'
+  url: https://jobicy.com/jobs/147408-senior-backend-software-engineer-observability
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2026/06/d90c0566-221.webp
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: 'About Nebius: Nebius is leading a new era in cloud infrastructure for
+      the global AI economy. We are building a full-stack AI cloud platform that supports
+      developers and enterprises from data and model training through to production
+      deployment, without the cost and complexity of building large in-house AI/ML
+      infrastructure. Built by engineers, for engineers. From…'
+    discovered_by:
+    - query_index: 2
+      parameters:
+        industry: dev
+        tag: backend
+        count: '25'
+        geo: europe
+    - query_index: 3
+      parameters:
+        industry: dev
+        tag: golang
+        count: '25'
+        geo: europe
+published_at: '2026-08-24T04:50:12Z'
+discovered_at: '2026-08-24T12:08:00Z'
+updated_at: '2026-08-24T12:08:00Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-24T12:08:00Z'
+analysis_priority: 0
+fingerprint: sha256:b7060dd3e94d05716082ac64054ed185b5192714ac46f2091063f4d7eed65579
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

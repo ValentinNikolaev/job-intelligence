@@ -1,0 +1,31 @@
+schema_version: 2
+id: 68eab03d-7815-4356-a918-7dc528a38f6f
+title: Senior/Leading Software Engineer (fintech)
+company: TechBiz Global GmbH
+company_url: null
+location: Remote job
+remote: true
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-leading-software-engineer-fintech-berlin-137042
+  url: https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-137042
+  metadata:
+    tags:
+    - Engineering
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-08-24T05:30:25Z'
+discovered_at: '2026-08-24T12:07:42Z'
+updated_at: '2026-08-24T12:07:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-24T12:07:42Z'
+analysis_priority: 0
+fingerprint: sha256:7b4c7ef7df4de6fe68168c8fed203895ff7f8bf9bcdabcb7017e46170cbff5ca
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

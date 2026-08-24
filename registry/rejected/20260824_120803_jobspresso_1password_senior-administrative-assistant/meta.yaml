@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobspresso
+source_job_id: '163336'
+source_url: https://jobspresso.co/job/senior-administrative-assistant/
+title: Senior Administrative Assistant
+company: 1Password
+location: United States, Canada
+published_at: '2026-07-01T01:57:16Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-01T01:57:16Z is older than 7 days
+updated_at: '2026-08-24T12:08:03Z'
+rejected_at: '2026-08-24T12:08:03Z'
