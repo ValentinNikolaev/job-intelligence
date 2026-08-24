@@ -1,0 +1,23 @@
+score: 18
+recommendation: not_match
+summary: Backend and Kubernetes experience do not cover the deep embedded Linux plumbing,
+  packaging, device debugging, and systems work required.
+strengths:
+- Software design
+- production troubleshooting
+- infrastructure
+gaps:
+- Embedded Linux
+- kernel systems
+- packaging
+- device/IoT
+concerns:
+- Essential low-level Linux requirements are unsupported.
+hard_rejection: true
+hard_rejection_reason: Essential embedded Linux and low-level systems experience is
+  not evidenced.
+analyzed_at: '2026-08-24T21:09:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0c6960e3f2ebb784e604ed946bed74b3c93e3ee160a3188091dc3ec65ae215cb
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
