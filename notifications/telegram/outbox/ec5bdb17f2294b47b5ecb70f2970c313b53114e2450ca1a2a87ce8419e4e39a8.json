@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-24T19:05:48Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ZFORT Group",
+      "directory": "2026-08-24_180822_zfort-group_backend-golang-developer",
+      "score": 86,
+      "title": "Backend/Golang Developer",
+      "url": "https://jobs.dou.ua/companies/zfort/vacancies/370785/",
+      "vacancy_id": "6ea63d1d-e346-4fde-8d52-ed23987b1b52"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ec5bdb17f2294b47b5ecb70f2970c313b53114e2450ca1a2a87ce8419e4e39a8",
+  "schema_version": 1
+}
