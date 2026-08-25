@@ -1,22 +1,28 @@
-score: 82
+score: 86
 recommendation: strong_match
-summary: Strong Go and cloud-native backend fit with relevant APIs, PostgreSQL, queues,
-  observability, and architecture ownership; gRPC depth is uncertain.
+summary: Strong backend Go and cloud-native fit with relevant event-driven, PostgreSQL,
+  RabbitMQ, AWS, Kubernetes, observability, CI/CD, performance, and production-ownership
+  experience; direct gRPC, protobuf-versioning, pprof, and deep Go runtime expertise
+  are not evidenced.
 strengths:
-- Recent production Go ownership and event-driven backend architecture.
-- PostgreSQL, RabbitMQ, AWS, Kubernetes, monitoring, retries, and performance experience
-  are evidenced.
-- Remote work from European countries is explicitly supported.
+- Production Go backend ownership for support automation and resilient message-delivery
+  systems.
+- Demonstrated event-driven architecture, queues, PostgreSQL, AWS, Kubernetes, observability,
+  and CI/CD experience.
+- Strong evidence of performance optimization, reliability, API design, and technical
+  leadership.
+- Remote work is explicit and European-country flexibility fits the candidate location.
 gaps:
-- Production gRPC, Protobuf versioning, streaming, pprof, and Go runtime internals
-  are not explicitly documented.
+- The profile does not explicitly document gRPC, Protocol Buffers versioning or streaming,
+  Google AIPs, pprof, escape analysis, or Go garbage-collector tuning.
+- Five or more years of production Go is not clearly established by the supplied chronology.
 concerns:
-- The role's highly specialized gRPC and deep Go-runtime requirements may require
-  technical verification.
+- The role requires unusually deep Go runtime and API-compatibility knowledge, so
+  technical depth should be verified.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-25T17:38:10Z'
+analyzed_at: '2026-08-25T18:39:02Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:b157f34afa9b215d6575f441fde89c3d4719ebccab087de555d2acf55209ec17
+job_version: sha256:ca5b6b655964738b18e988b41e20b2c1f67a2970db49b9c2109abe8bb5b54319
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

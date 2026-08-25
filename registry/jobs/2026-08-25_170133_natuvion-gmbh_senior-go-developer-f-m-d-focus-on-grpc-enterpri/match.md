@@ -1,20 +1,22 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 86/100  
 **Recommendation:** Strong Match
 
-Strong Go and cloud-native backend fit with relevant APIs, PostgreSQL, queues, observability, and architecture ownership; gRPC depth is uncertain.
+Strong backend Go and cloud-native fit with relevant event-driven, PostgreSQL, RabbitMQ, AWS, Kubernetes, observability, CI/CD, performance, and production-ownership experience; direct gRPC, protobuf-versioning, pprof, and deep Go runtime expertise are not evidenced.
 
 ## Why it matches
 
-- Recent production Go ownership and event-driven backend architecture.
-- PostgreSQL, RabbitMQ, AWS, Kubernetes, monitoring, retries, and performance experience are evidenced.
-- Remote work from European countries is explicitly supported.
+- Production Go backend ownership for support automation and resilient message-delivery systems.
+- Demonstrated event-driven architecture, queues, PostgreSQL, AWS, Kubernetes, observability, and CI/CD experience.
+- Strong evidence of performance optimization, reliability, API design, and technical leadership.
+- Remote work is explicit and European-country flexibility fits the candidate location.
 
 ## Gaps
 
-- Production gRPC, Protobuf versioning, streaming, pprof, and Go runtime internals are not explicitly documented.
+- The profile does not explicitly document gRPC, Protocol Buffers versioning or streaming, Google AIPs, pprof, escape analysis, or Go garbage-collector tuning.
+- Five or more years of production Go is not clearly established by the supplied chronology.
 
 ## Concerns
 
-- The role's highly specialized gRPC and deep Go-runtime requirements may require technical verification.
+- The role requires unusually deep Go runtime and API-compatibility knowledge, so technical depth should be verified.

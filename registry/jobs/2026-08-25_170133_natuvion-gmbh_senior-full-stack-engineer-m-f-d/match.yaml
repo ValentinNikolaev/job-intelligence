@@ -1,23 +1,27 @@
-score: 72
+score: 68
 recommendation: match
-summary: Good backend and Go alignment with remote European work and AI-automation
-  relevance, but the role requires stronger frontend TypeScript/React evidence than
-  provided.
+summary: Good backend and Go foundation with API, automation, AI-adjacent systems,
+  and production reliability experience, but the role's central frontend ownership
+  and TypeScript/React/NextJS requirements are not supported by the candidate evidence.
 strengths:
-- Go backend, API integration, system design, production quality, and AI-assisted
-  automation are relevant.
-- Experience with customer-facing platforms and end-to-end technical ownership.
-- Remote work from European countries is explicitly supported.
+- Strong backend experience in Go, PHP, REST APIs, microservices, and event-driven
+  systems.
+- Relevant experience with automation platforms, AI-assisted workflows, integrations,
+  and production operations.
+- Demonstrated system design, performance optimization, testing, CI/CD, Kubernetes,
+  and cloud experience.
+- Explicit remote work and European-country flexibility fit the candidate location.
 gaps:
-- Modern TypeScript, React/NextJS, and frontend UI development are not established
-  in the candidate profile.
-- MCP, semantic search, and embeddings are not demonstrated.
+- TypeScript, React, NextJS, modern frontend development, UI component work, data
+  visualization, and UX are not evidenced.
+- Protobuf and gRPC are not explicitly evidenced.
 concerns:
-- Full-stack expectations may make frontend capability a decisive interview topic.
+- The position expects comfortable ownership of both frontend and backend, making
+  the frontend gap material despite strong backend alignment.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-25T17:38:10Z'
+analyzed_at: '2026-08-25T18:39:02Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:4e7838a319f8276f27dd29cdedfec64f79493c8e2dac40b62bce3d925f85b55c
+job_version: sha256:89d2493d51beb76ef3b56d22f3ddf2391a221ba106a8bdf59f33aab68f34cda8
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

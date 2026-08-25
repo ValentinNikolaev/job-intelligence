@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-25T18:39:02Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Natuvion GmbH",
+      "directory": "2026-08-25_170133_natuvion-gmbh_senior-go-developer-f-m-d-focus-on-grpc-enterpri",
+      "score": 86,
+      "title": "Senior Go Developer (f/m/d) – Focus on gRPC & Enterprise Applications",
+      "url": "https://www.arbeitnow.com/jobs/companies/natuvion-gmbh/remote-senior-go-developer-focus-on-grpc-enterprise-applications-berlin-362940",
+      "vacancy_id": "e439258c-c71c-468b-9fec-3332632206c2"
+    },
+    {
+      "company": "Natuvion GmbH",
+      "directory": "2026-08-25_170133_natuvion-gmbh_senior-full-stack-engineer-m-f-d",
+      "score": 68,
+      "title": "(Senior) Full Stack Engineer (m/f/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/natuvion-gmbh/remote-senior-full-stack-engineer-berlin-12301",
+      "vacancy_id": "f2a99e91-f9fd-4b29-96c2-c3974918c22d"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "872c4b08342374d46bccb510f3d30b62d165c17dfdd3099daeccf04b2c2f6f29",
+  "schema_version": 1
+}
