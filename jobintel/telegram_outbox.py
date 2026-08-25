@@ -58,11 +58,14 @@ def build_analysis_notification(
         vacancy = item.get("vacancy")
         if not isinstance(vacancy, Mapping):
             raise TelegramOutboxError(f"analysis pack vacancy must be a mapping: {directory}")
+        metadata = vacancy.get("metadata", vacancy)
+        if not isinstance(metadata, Mapping):
+            raise TelegramOutboxError(f"analysis pack vacancy metadata must be a mapping: {directory}")
         source_url = _required_http_url(item.get("source_url"), f"source URL for {directory}")
         eligible.append(
             {
-                "company": _required_text(vacancy.get("company"), f"company for {directory}"),
-                "title": _required_text(vacancy.get("title"), f"title for {directory}"),
+                "company": _required_text(metadata.get("company"), f"company for {directory}"),
+                "title": _required_text(metadata.get("title"), f"title for {directory}"),
                 "score": score,
                 "vacancy_id": _required_text(
                     item.get("vacancy_id"), f"vacancy ID for {directory}"
