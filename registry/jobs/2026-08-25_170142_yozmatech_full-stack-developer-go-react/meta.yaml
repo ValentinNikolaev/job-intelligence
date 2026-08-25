@@ -1,0 +1,34 @@
+schema_version: 2
+id: 3d394ba1-01bb-4dc7-bcb3-62df01f0e480
+title: Full-Stack Developer (Go + React)
+company: YozmaTech
+company_url: https://jobs.dou.ua/companies/yozma-tech/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '370935'
+  url: https://jobs.dou.ua/companies/yozma-tech/vacancies/370935/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 25 серпня
+    listing_summary: Meet the YozmaTech YozmaTech isn’t just another tech company
+      — we’re a global team of go-getters, innovators, and A-players helping startups
+      and product companies scale smarter and faster.
+published_at: '2026-08-25'
+discovered_at: '2026-08-25T17:01:42Z'
+updated_at: '2026-08-25T17:01:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-25T17:01:42Z'
+analysis_priority: 100
+fingerprint: sha256:94ba7f19abf8f03054949b61978d7c352bde4faa4cc42e5dfcdac3a0b657dea7
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 68
+Total vacancies: 75
 
-- Found: 51
+- Found: 58
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,13 @@ Total vacancies: 68
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-25 | [SIXT](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/job.md) | Київ, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/sixt/vacancies/350228/) | [Open](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/company.md) | — | — | — | — |
+| 2026-08-25 | [YozmaTech](../registry/jobs/2026-08-25_170142_yozmatech_full-stack-developer-go-react/) | [Full-Stack Developer (Go + React)](../registry/jobs/2026-08-25_170142_yozmatech_full-stack-developer-go-react/job.md) | віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/yozma-tech/vacancies/370935/) | [Open](../registry/jobs/2026-08-25_170142_yozmatech_full-stack-developer-go-react/company.md) | — | — | — | — |
+| 2026-08-25 | [Kultprosvet](../registry/jobs/2026-08-25_170142_kultprosvet_senior-backend-engineer-php-laravel/) | [Senior Backend Engineer (PHP/Laravel)](../registry/jobs/2026-08-25_170142_kultprosvet_senior-backend-engineer-php-laravel/job.md) | Дніпро, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/kultprosvet/vacancies/370921/) | [Open](../registry/jobs/2026-08-25_170142_kultprosvet_senior-backend-engineer-php-laravel/company.md) | — | — | — | — |
+| 2026-08-25 | [Natuvion GmbH](../registry/jobs/2026-08-25_170133_natuvion-gmbh_senior-full-stack-engineer-m-f-d/) | [(Senior) Full Stack Engineer (m/f/d)](../registry/jobs/2026-08-25_170133_natuvion-gmbh_senior-full-stack-engineer-m-f-d/job.md) | Remote job | Arbeitnow | Found | 2026-08-25 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/natuvion-gmbh/remote-senior-full-stack-engineer-berlin-12301) | — | — | — | — | — |
+| 2026-08-25 | [Natuvion GmbH](../registry/jobs/2026-08-25_170133_natuvion-gmbh_senior-go-developer-f-m-d-focus-on-grpc-enterpri/) | [Senior Go Developer (f/m/d) – Focus on gRPC & Enterprise Applications](../registry/jobs/2026-08-25_170133_natuvion-gmbh_senior-go-developer-f-m-d-focus-on-grpc-enterpri/job.md) | Remote job | Arbeitnow | Found | 2026-08-25 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/natuvion-gmbh/remote-senior-go-developer-focus-on-grpc-enterprise-applications-berlin-362940) | — | — | — | — | — |
+| 2026-08-25 | [ITDS](../registry/jobs/2026-08-25_170130_itds_senior-backend-developer-nodejs-go/) | [Senior Backend Developer – Nodejs & Go](../registry/jobs/2026-08-25_170130_itds_senior-backend-developer-nodejs-go/job.md) | Kraków, małopolskie | Adzuna | Found | 2026-08-25 | [Adzuna](https://www.adzuna.pl/details/5850948672?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-08-25 | [S-KON eKontor 24](../registry/jobs/2026-08-25_170130_s-kon-ekontor-24_backend-entwickler-m-w-d/) | [Backend-Entwickler (m/w/d)](../registry/jobs/2026-08-25_170130_s-kon-ekontor-24_backend-entwickler-m-w-d/job.md) | Bahrenfeld, Hamburg | Adzuna | Found | 2026-08-25 | [Adzuna](https://www.adzuna.de/details/5855587346?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130227_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-25_130227_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
 | 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130227_canonical_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-25_130227_canonical_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
 | 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130226_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-25_130226_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |

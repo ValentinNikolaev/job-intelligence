@@ -4,8 +4,8 @@ Posted: 2026-08-18T16:14:46.2030000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-18T16:14:46.2030000 is older than 7 days
 
 ...Sr. Embedded Firmware **Engineer **
 
