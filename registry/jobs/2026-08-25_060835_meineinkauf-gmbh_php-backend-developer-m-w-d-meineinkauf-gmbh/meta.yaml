@@ -9,10 +9,10 @@ employment_type: null
 sources:
 - source: adzuna
   source_job_id: '5854106438'
-  url: https://www.adzuna.de/land/ad/5854106438?se=dluylGeg8RGC76jUlS_tcA&utm_medium=api&utm_source=b6674f60&v=E03E84B6A6C320BF2F6D6B2C7FB50A1EFF22EA28
+  url: https://www.adzuna.de/details/5854106438?utm_medium=api&utm_source=b6674f60
 published_at: '2026-08-24T04:44:26Z'
 discovered_at: '2026-08-25T06:08:35Z'
-updated_at: '2026-08-25T09:30:23Z'
+updated_at: '2026-08-25T12:08:37Z'
 status: found
 status_history:
 - status: found

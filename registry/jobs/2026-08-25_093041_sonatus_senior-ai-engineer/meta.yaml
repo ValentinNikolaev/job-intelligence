@@ -26,11 +26,11 @@ sources:
       parameters:
         tag: golang
         geo: europe
-        count: '25'
         industry: dev
+        count: '25'
 published_at: '2026-08-25T04:15:29Z'
 discovered_at: '2026-08-25T09:30:41Z'
-updated_at: '2026-08-25T09:30:41Z'
+updated_at: '2026-08-25T12:09:00Z'
 status: found
 status_history:
 - status: found
