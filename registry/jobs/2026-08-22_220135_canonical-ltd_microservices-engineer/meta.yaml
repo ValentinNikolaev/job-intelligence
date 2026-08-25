@@ -1,7 +1,7 @@
 schema_version: 2
 id: c880399b-05b1-4f57-8655-2339691f069c
 title: Microservices Engineer
-company: Canonical Ltd.
+company: Canonical
 company_url: null
 location: Anywhere
 remote: true
@@ -23,12 +23,12 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        geo: italy
         count: '25'
         industry: dev
+        geo: italy
 published_at: '2026-08-22T17:05:08Z'
 discovered_at: '2026-08-22T22:01:35Z'
-updated_at: '2026-08-22T22:01:35Z'
+updated_at: '2026-08-25T06:08:53Z'
 status: found
 status_history:
 - status: found

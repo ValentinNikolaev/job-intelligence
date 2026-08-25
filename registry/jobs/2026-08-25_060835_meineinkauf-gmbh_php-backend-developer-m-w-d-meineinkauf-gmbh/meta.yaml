@@ -1,0 +1,24 @@
+schema_version: 2
+id: 1921016e-8a84-4ecd-9630-d6529f10cf28
+title: PHP Backend Developer (m/w/d) - MeinEinkauf GmbH
+company: MeinEinkauf GmbH
+company_url: null
+location: Deutschland
+remote: null
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5854106438'
+  url: https://www.adzuna.de/land/ad/5854106438?se=ePVOX0ug8RGLZZiuaUCfOw&utm_medium=api&utm_source=b6674f60&v=E03E84B6A6C320BF2F6D6B2C7FB50A1EFF22EA28
+published_at: '2026-08-24T04:44:26Z'
+discovered_at: '2026-08-25T06:08:35Z'
+updated_at: '2026-08-25T06:08:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-25T06:08:35Z'
+analysis_priority: 0
+fingerprint: sha256:0707e816616aeaf42d4008c0fdbc4ccdafce4da1341f29ebf7a1ae179b74ab4b
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

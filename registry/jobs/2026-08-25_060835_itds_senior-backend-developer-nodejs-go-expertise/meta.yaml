@@ -1,0 +1,24 @@
+schema_version: 2
+id: 6fffc77e-7bbf-4a52-8cdd-3723c31def21
+title: Senior Backend Developer – Nodejs & Go Expertise
+company: ITDS
+company_url: null
+location: Kraków, małopolskie
+remote: true
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5850948671'
+  url: https://www.adzuna.pl/details/5850948671?utm_medium=api&utm_source=b6674f60
+published_at: '2026-08-21T13:00:54Z'
+discovered_at: '2026-08-25T06:08:35Z'
+updated_at: '2026-08-25T06:08:35Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-25T06:08:35Z'
+analysis_priority: 0
+fingerprint: sha256:34849d4c0cd4aa41b2aee5e6d7c0c2b035852c2ef13f89b4a629aef3f6db973f
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

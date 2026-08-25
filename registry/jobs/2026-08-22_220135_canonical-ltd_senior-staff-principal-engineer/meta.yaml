@@ -1,7 +1,7 @@
 schema_version: 2
 id: 48684a72-4524-4300-abce-86a10d3f60f4
 title: Senior/Staff/Principal Engineer
-company: Canonical Ltd.
+company: Canonical
 company_url: null
 location: Anywhere
 remote: true
@@ -23,18 +23,18 @@ sources:
     discovered_by:
     - query_index: 1
       parameters:
-        geo: italy
         count: '25'
         industry: dev
+        geo: italy
     - query_index: 3
       parameters:
-        geo: europe
-        count: '25'
         tag: golang
+        count: '25'
         industry: dev
+        geo: europe
 published_at: '2026-08-22T16:40:07Z'
 discovered_at: '2026-08-22T22:01:35Z'
-updated_at: '2026-08-22T22:01:35Z'
+updated_at: '2026-08-25T06:08:53Z'
 status: found
 status_history:
 - status: found

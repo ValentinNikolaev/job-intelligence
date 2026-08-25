@@ -1,7 +1,7 @@
 schema_version: 2
 id: b2acdf69-24f9-43d1-9176-3f66cae58029
 title: Performance Engineer - Open Source
-company: Canonical Ltd.
+company: Canonical
 company_url: null
 location: Anywhere
 remote: true
@@ -29,7 +29,7 @@ sources:
         geo: europe
 published_at: '2026-08-22T16:10:06Z'
 discovered_at: '2026-08-22T22:01:35Z'
-updated_at: '2026-08-24T18:08:30Z'
+updated_at: '2026-08-25T06:08:54Z'
 status: found
 status_history:
 - status: found
