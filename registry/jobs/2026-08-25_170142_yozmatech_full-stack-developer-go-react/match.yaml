@@ -1,0 +1,21 @@
+score: 76
+recommendation: match
+summary: Strong Go backend, product ownership, scalable systems, and remote experience;
+  React and full-stack depth are not demonstrated in the profile.
+strengths:
+- Extensive recent Go backend and API automation experience.
+- Demonstrated ownership of production systems, reliability, and architecture.
+- Product and startup-style experience with customer-facing platforms.
+gaps:
+- Strong hands-on React experience is not established.
+- The profile does not explicitly document 7+ years of Go commercial experience.
+concerns:
+- English is recorded with conflicting proficiency descriptions.
+- Client and employment details are not specified beyond the recruiting description.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T17:38:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f91db3baed754a11bdf7ff1028167af5d054e510c2d83cb1b14bd949f5461514
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

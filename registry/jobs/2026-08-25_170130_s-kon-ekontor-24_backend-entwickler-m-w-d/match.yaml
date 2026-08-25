@@ -1,0 +1,22 @@
+score: 63
+recommendation: possible_match
+summary: Go and Symfony align well with the advertised stack, but the brief posting
+  leaves seniority, language, location, and remote compatibility uncertain.
+strengths:
+- Candidate has strong Go backend experience.
+- Symfony and e-commerce/platform integration experience are evidenced.
+- React collaboration context is adjacent to the candidate's backend background.
+gaps:
+- The posting does not provide enough detail to verify seniority, responsibilities,
+  or required technologies.
+- German language and Hamburg-based work expectations are not established as compatible.
+concerns:
+- The role appears location-specific and remote availability is not stated.
+- The vacancy description is truncated, materially limiting assessment.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T17:38:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b71936f63c94d19121d7e5d54c4ff2c68dfb91571107def6442e14a6f46b5d62
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
