@@ -1,0 +1,20 @@
+score: 44
+recommendation: weak_match
+summary: Backend, AWS, Docker, CI/CD, PHP, and production ownership align, but the
+  role makes strong TypeScript, React, and Next.js proficiency mandatory and these
+  are not evidenced in the candidate profile.
+strengths:
+- AWS, Docker, Linux-oriented operations, GitHub Actions, PHP, backend/API design,
+  and production troubleshooting are supported.
+gaps:
+- Strong TypeScript across Node.js and browser/React environments is not evidenced.
+- Next.js and the broader frontend/mobile stack are not evidenced.
+concerns:
+- The posting does not clearly state remote eligibility or location flexibility.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T21:42:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:e2425d40763e6a7caf6bd73dddbdada545bdb411d2d4d55b0439ff8997ec2a46
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

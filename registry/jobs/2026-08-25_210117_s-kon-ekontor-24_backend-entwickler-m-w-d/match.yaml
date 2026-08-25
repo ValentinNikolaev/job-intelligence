@@ -1,0 +1,23 @@
+score: 74
+recommendation: match
+summary: The advertised Go and Symfony backend stack, e-commerce/integration context,
+  APIs, and production engineering align strongly with the candidate's Go/PHP/Symfony
+  background, while German proficiency and remote eligibility are unclear.
+strengths:
+- Go, PHP/Symfony, backend services, APIs, e-commerce/fintech-adjacent systems, databases,
+  performance, and production reliability are supported.
+- The candidate has relevant experience integrating services and working across backend
+  and infrastructure concerns.
+gaps:
+- German language proficiency is not evidenced.
+- The posting appears tied to Hamburg and does not clearly state remote work.
+concerns:
+- Location, relocation/remote policy, and any German-language requirement should be
+  verified before pursuing.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T21:42:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0bcec6ab4652a2de224434c76d124f95bbc18c1ea62b06d03878d6595c9b2547
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
