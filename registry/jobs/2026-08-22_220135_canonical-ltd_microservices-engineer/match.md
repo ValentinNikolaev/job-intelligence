@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 91/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Excellent alignment with Go backend microservices: the profile documents API orchestration, event-driven systems, databases, Kubernetes, CI/CD, resilience, observability, and production-scale ownership.
+Strong match for a remote senior microservices role centered on Go, distributed systems, Kubernetes, and technical leadership.
 
 ## Why it matches
 
-- Go-based backend and API orchestration experience is direct and recent.
-- Event-driven architecture, queues, retries, backpressure, distributed services, and reliability are strongly evidenced.
-- Kubernetes, AWS, CI/CD, databases, monitoring, performance work, and technical leadership match the role.
+- Extensive Go, microservices, event-driven, API, and production-reliability experience.
+- Kubernetes, AWS, CI/CD, observability, and performance work directly support the role.
+- Technical-lead experience and a computer-science master's degree are evidenced.
 
 ## Gaps
 
-- Canonical-specific Ubuntu/open-source community work and advanced security analysis are not evidenced.
+- Canonical-specific open-source and Ubuntu/Debian packaging experience is not evidenced.
 
 ## Concerns
 
-- The role’s academic-performance and open-source expectations may require additional evidence during screening.
+- Canonical's high bar for open-source contribution and international travel should be validated during screening.

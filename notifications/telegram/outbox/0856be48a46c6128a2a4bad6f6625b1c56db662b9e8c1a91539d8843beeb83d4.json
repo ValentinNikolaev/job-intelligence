@@ -1,0 +1,34 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-25T12:33:26Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Twist Robotics",
+      "directory": "2026-08-25_093034_twist-robotics_backend-engineer-go-kubernetes",
+      "score": 86,
+      "title": "Backend Engineer (Go, Kubernetes)",
+      "url": "https://jobs.dou.ua/companies/twist-robotics/vacancies/366629/",
+      "vacancy_id": "2829938d-10df-47c3-8d39-89b049a3694c"
+    },
+    {
+      "company": "Blue-Bird.Tech",
+      "directory": "2026-08-25_093034_blue-bird-tech_opencart-php-developer",
+      "score": 82,
+      "title": "OpenCart/PHP Developer",
+      "url": "https://jobs.dou.ua/companies/blue-bird-tech/vacancies/370822/",
+      "vacancy_id": "cfd968d1-6acb-4a34-8a11-20630bfddd69"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-08-22_220135_canonical-ltd_microservices-engineer",
+      "score": 88,
+      "title": "Microservices Engineer",
+      "url": "https://jobicy.com/jobs/149558-microservices-engineer",
+      "vacancy_id": "c880399b-05b1-4f57-8655-2339691f069c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "0856be48a46c6128a2a4bad6f6625b1c56db662b9e8c1a91539d8843beeb83d4",
+  "schema_version": 1
+}

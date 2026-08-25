@@ -1,0 +1,20 @@
+score: 61
+recommendation: possible_match
+summary: Backend and automation experience transfers well, but the senior AI-engineering
+  requirements are only partially evidenced.
+strengths:
+- Strong Go and backend systems experience with production automation platforms.
+- Candidate profile includes LLM-assisted automation and API integration work.
+- Distributed systems, reliability, and technical leadership are well supported.
+gaps:
+- Dedicated AI-engineering, model-development, and applied-ML experience is not clearly
+  established.
+concerns:
+- The role's essential AI requirements and working-location expectations need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T12:33:26Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:24079c62c181b14e76c1529e6e1c7da0ac220febdd19c3c25d1e6b1f5bb96044
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
