@@ -81,4 +81,4 @@ We believe in the everyday hero. Those who have the courage to follow their pass
 
 We recognise that candidates feel they need to meet 100% of the job criteria in order to apply for a job. Please note that this is only a guide. If you don’t tick every box, it’s ok too because it means you have room to learn and develop your career at SumUp.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

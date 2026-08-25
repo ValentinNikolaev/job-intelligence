@@ -177,4 +177,4 @@ been part of NTT DATA Business Solutions since 2022.
 Natuvion holds SAP Gold Partner status. Customers include BMW, Volkswagen, [E.ON](http://E.ON), Vattenfall, Carlsberg, Lufthansa, BASF,
 and Lidl.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

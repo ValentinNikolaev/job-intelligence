@@ -109,4 +109,4 @@ Our >400 consultants and developers in Germany, Austria, Slovakia, the USA and A
 Are you interested? We look forward to receiving your application and getting to know you!
 Feel free to send us your CV, we do not need a cover letter.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

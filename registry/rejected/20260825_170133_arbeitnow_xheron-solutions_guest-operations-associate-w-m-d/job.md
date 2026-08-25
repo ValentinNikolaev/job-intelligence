@@ -47,4 +47,4 @@ Pluspunkt: Erfahrung in Hospitality (e.g. Limehome, Numa, Stayery, Bob W.)
 
 Wenn du in einem schnell wachsenden Early-Stage Start-up eine neue Kategorie im europäischen Hospitality-Markt mitprägen willst, freuen wir uns darauf, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

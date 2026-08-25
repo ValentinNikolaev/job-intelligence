@@ -98,4 +98,4 @@ Joining us means more than just a job – it’s an opportunity to be part of an
 
 Let’s shape the future of productivity together. We can’t wait to see what you’ll bring to our team. 
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -99,4 +99,4 @@ Visit [Smartly](http://smartly.io/) to learn more.
 
 The processing of your information is described in our [Candidate Privacy Notice](https://cdn.prod.website-files.com/67ed4ab7f914accf87aa070c/698a11cb716926c1d76c1641_Smartly.io%20Group%20-%20Privacy%20Notice%20for%20Candidates%20-%201_2026.pdf).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

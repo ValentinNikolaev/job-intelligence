@@ -36,4 +36,4 @@ We value communication, flat hierarchies, open corporate culture, and a harmonio
 
 If you have any questions, please feel free to contact us by e-mail .
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

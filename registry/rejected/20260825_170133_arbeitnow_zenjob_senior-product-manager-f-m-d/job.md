@@ -133,4 +133,4 @@ This role suits a Product Manager who is energised by an open-ended problem, and
 
 *We are proud to be an equal opportunity employer. We are committed to judging every qualified individual on their ability, regardless of age, gender identity, ethnicity, sexual orientation, disability status, or religion. There is no need to add your photo and age to the application.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -66,4 +66,4 @@ Tenable is committed to protecting the privacy and security of your personal dat
 [California Applicant Privacy Notice](https://static.tenable.com/marketing/hr/Tenable_CCPA_Notice_Applicants_FINAL_4-29-2026_branded.pdf)
 [EU/EEA/UK Applicant Privacy Notice](https://static.tenable.com/marketing/hr/Tenable_EEA_UK_Applicant_Privacy_Notice_FINAL_6-4-2026_branded.pdf)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

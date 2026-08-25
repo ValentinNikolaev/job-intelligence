@@ -135,4 +135,4 @@ Compensation: €95K – €135K
 
 - • €95K – €135K
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
