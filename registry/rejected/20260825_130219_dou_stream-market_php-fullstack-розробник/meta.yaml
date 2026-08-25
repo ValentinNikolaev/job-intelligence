@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '358896'
+source_url: https://jobs.dou.ua/companies/stream-market/vacancies/358896/
+title: PHP Fullstack розробник
+company: Stream-market
+location: віддалено
+published_at: '2026-08-17'
+rejection_category: stale
+rejection_reason: published_at 2026-08-17 is older than 7 days
+updated_at: '2026-08-25T13:02:19Z'
+rejected_at: '2026-08-25T13:02:19Z'

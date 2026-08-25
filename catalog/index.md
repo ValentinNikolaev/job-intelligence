@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 61
+Total vacancies: 68
 
-- Found: 44
+- Found: 51
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,13 @@ Total vacancies: 61
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130227_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-25_130227_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130227_canonical_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-25_130227_canonical_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130226_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-25_130226_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_130226_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-25_130226_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-25 | [Firetics](../registry/jobs/2026-08-25_130219_firetics_backend-developer-payments/) | [Backend Developer (Payments)](../registry/jobs/2026-08-25_130219_firetics_backend-developer-payments/job.md) | віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/firetics/vacancies/361314/) | [Open](../registry/jobs/2026-08-25_130219_firetics_backend-developer-payments/company.md) | — | — | — | — |
+| 2026-08-25 | [Zade Space](../registry/jobs/2026-08-25_130219_zade-space_full-stack-software-engineer/) | [Full-Stack Software Engineer](../registry/jobs/2026-08-25_130219_zade-space_full-stack-software-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/zade-agency/vacancies/370361/) | [Open](../registry/jobs/2026-08-25_130219_zade-space_full-stack-software-engineer/company.md) | — | — | — | — |
+| 2026-08-25 | [ShippyPro](../registry/jobs/2026-08-25_130216_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-25_130216_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-25 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-25 | [Sonatus](../registry/jobs/2026-08-25_093041_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-25_093041_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
 | 2026-08-25 | [Blue-Bird.Tech](../registry/jobs/2026-08-25_093034_blue-bird-tech_opencart-php-developer/) | [OpenCart/PHP Developer](../registry/jobs/2026-08-25_093034_blue-bird-tech_opencart-php-developer/job.md) | Одеса, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/blue-bird-tech/vacancies/370822/) | [Open](../registry/jobs/2026-08-25_093034_blue-bird-tech_opencart-php-developer/company.md) | — | — | — | — |
 | 2026-08-25 | [Twist Robotics](../registry/jobs/2026-08-25_093034_twist-robotics_backend-engineer-go-kubernetes/) | [Backend Engineer (Go, Kubernetes)](../registry/jobs/2026-08-25_093034_twist-robotics_backend-engineer-go-kubernetes/job.md) | Київ, Львів, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/twist-robotics/vacancies/366629/) | [Open](../registry/jobs/2026-08-25_093034_twist-robotics_backend-engineer-go-kubernetes/company.md) | — | — | — | — |
