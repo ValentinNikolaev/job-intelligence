@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 67
+Total vacancies: 75
 
-- Found: 50
+- Found: 58
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,14 @@ Total vacancies: 67
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_210136_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-25_210136_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_210136_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-25_210136_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_210136_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-25_210136_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-25 | [Sonatus](../registry/jobs/2026-08-25_210136_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-25_210136_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_210136_canonical_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-25_210136_canonical_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
+| 2026-08-25 | [Zade Space](../registry/jobs/2026-08-25_210129_zade-space_full-stack-software-engineer/) | [Full-Stack Software Engineer](../registry/jobs/2026-08-25_210129_zade-space_full-stack-software-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/zade-agency/vacancies/370361/) | [Open](../registry/jobs/2026-08-25_210129_zade-space_full-stack-software-engineer/company.md) | — | — | — | — |
+| 2026-08-25 | [ShippyPro](../registry/jobs/2026-08-25_210126_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-25_210126_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-25 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-08-25 | [S-KON eKontor 24](../registry/jobs/2026-08-25_210117_s-kon-ekontor-24_backend-entwickler-m-w-d/) | [Backend-Entwickler (m/w/d)](../registry/jobs/2026-08-25_210117_s-kon-ekontor-24_backend-entwickler-m-w-d/job.md) | Bahrenfeld, Hamburg | Adzuna | Found | 2026-08-25 | [Adzuna](https://www.adzuna.de/details/5855587346?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-08-25 | [SIXT](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/job.md) | Київ, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/sixt/vacancies/350228/) | [Open](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/company.md) | — | — | — | — |
 | 2026-08-25 | [YozmaTech](../registry/jobs/2026-08-25_170142_yozmatech_full-stack-developer-go-react/) | [Full-Stack Developer (Go + React)](../registry/jobs/2026-08-25_170142_yozmatech_full-stack-developer-go-react/job.md) | віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/yozma-tech/vacancies/370935/) | [Open](../registry/jobs/2026-08-25_170142_yozmatech_full-stack-developer-go-react/company.md) | — | — | — | — |
 | 2026-08-25 | [Kultprosvet](../registry/jobs/2026-08-25_170142_kultprosvet_senior-backend-engineer-php-laravel/) | [Senior Backend Engineer (PHP/Laravel)](../registry/jobs/2026-08-25_170142_kultprosvet_senior-backend-engineer-php-laravel/job.md) | Дніпро, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/kultprosvet/vacancies/370921/) | [Open](../registry/jobs/2026-08-25_170142_kultprosvet_senior-backend-engineer-php-laravel/company.md) | — | — | — | — |

@@ -113,4 +113,4 @@ Creating an environment where people genuinely enjoy spending time together is i
 
 **We look forward to receiving your application! 🙂**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

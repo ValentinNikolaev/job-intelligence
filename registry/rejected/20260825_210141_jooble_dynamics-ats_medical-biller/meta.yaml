@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '6385445463454530781'
+source_url: https://jooble.org/desc/6385445463454530781?ckey=senior+backend+engineer&rgn=55179&pos=9&groupId=293749696&elckey=6955096446110211459&p=1&aq=-4213217032522562223&cid=15922&jobAge=159&brelb=100&bscr=7.6400394&scr=7.6400394
+title: Medical Biller
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-08-19T20:13:40.2000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-25T21:01:41Z'
+rejected_at: '2026-08-25T21:01:41Z'

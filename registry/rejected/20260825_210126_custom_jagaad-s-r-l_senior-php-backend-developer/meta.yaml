@@ -1,0 +1,12 @@
+schema_version: 1
+source: custom
+source_job_id: url-sha256:e4a7c60aec88ac8687cffa838daeadcb49b9d7d07241ffee2fc7c4e143bf16ac
+source_url: https://jagaad.com/careers
+title: Senior PHP Backend Developer
+company: Jagaad S.r.l.
+location: Remote
+published_at: null
+rejection_category: location_requirement
+rejection_reason: remote role is limited to the United States
+updated_at: '2026-08-25T21:01:26Z'
+rejected_at: '2026-08-25T21:01:26Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: recruiter-100-remote-german-speaking-munich-180363
+source_url: https://www.arbeitnow.com/jobs/companies/eleva-search/recruiter-100-remote-german-speaking-munich-180363
+title: Recruiter m/w/d (100% remote) - German speaking
+company: Eleva Search
+location: Munich
+published_at: '2026-08-25T13:30:35Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-25T21:01:19Z'
+rejected_at: '2026-08-25T21:01:19Z'

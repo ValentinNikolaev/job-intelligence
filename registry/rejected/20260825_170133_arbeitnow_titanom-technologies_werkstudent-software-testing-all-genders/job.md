@@ -55,4 +55,4 @@ Absolut! In Prüfungsphasen kannst du deine Arbeitszeit flexibel anpassen. Zusä
 
 Von Anfang an übernimmst du Verantwortung für deine Aufgaben und Projekte. Dabei wirst du von erfahrenen Kolleg:innen unterstützt, die dir jederzeit mit Rat und Tat zur Seite stehen. Dein Beitrag hat echten Einfluss!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

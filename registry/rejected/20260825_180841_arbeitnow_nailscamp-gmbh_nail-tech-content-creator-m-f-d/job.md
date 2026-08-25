@@ -147,4 +147,4 @@ What we offer
 
 - A growing European beauty brand and an engaged nail community
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

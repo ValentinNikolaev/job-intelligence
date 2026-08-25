@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: controller-40-std-hamburg-220766
+source_url: https://www.arbeitnow.com/jobs/companies/plantacorp-gmbh/controller-40-std-hamburg-220766
+title: Controller (w/m/d) 40 Std
+company: PlantaCorp GmbH
+location: Hamburg
+published_at: '2026-08-25T13:00:31Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-25T21:01:19Z'
+rejected_at: '2026-08-25T21:01:19Z'

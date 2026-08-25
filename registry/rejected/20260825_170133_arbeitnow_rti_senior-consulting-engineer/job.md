@@ -107,4 +107,4 @@ For more information about how we collect and use your data, please see our [Pri
 
 [](https://twitter.com/rti_software) [](https://www.facebook.com/RTISoftware/) [](https://www.linkedin.com/company/23618/admin/) [](https://www.instagram.com/rti_software/)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
