@@ -1,0 +1,23 @@
+score: 58
+recommendation: possible_match
+summary: Remote backend and infrastructure experience plus Go, APIs, databases, Kubernetes,
+  and Linux-adjacent operations provide a partial fit, but professional Python is
+  mandatory and not evidenced.
+strengths:
+- Go backend and API development
+- AWS/Kubernetes and production operations
+- database and performance work
+gaps:
+- Demonstrated professional Python
+- Ubuntu/open-source community work
+- public marketplace services
+concerns:
+- Canonical requires exceptional academic and open-source evidence not established
+  in the profile
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T09:32:21Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:56ff8ebb3c8285af62989ec19caeef88ce2d167d3e3d9a598862ccac9537414e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

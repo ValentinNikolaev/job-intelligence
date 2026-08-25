@@ -1,24 +1,24 @@
 score: 68
 recommendation: match
-summary: Relevant performance optimization, database tuning, observability, resilient
-  systems, and Go experience support a match, while low-level CPU, kernel, compiler,
-  and dedicated benchmarking evidence is limited.
+summary: Performance optimization, distributed systems, observability, Go, and technical
+  leadership provide relevant foundations, but low-level profiling and open-source
+  performance tooling are not evidenced.
 strengths:
-- Documented API, database, and service performance improvements.
-- Go, distributed systems, tracing/monitoring, reliability, and production troubleshooting
-  are supported.
-- Technical leadership and remote collaboration fit the role’s leadership dimension.
+- Measured API and database performance improvements
+- Go and distributed systems
+- mentoring and reliability leadership
 gaps:
-- Kernel, CPU, compiler, eBPF, assembly, and dedicated performance-harness experience
-  are not evidenced.
-- Open-source performance engineering work is not established.
+- Kernel/CPU/compiler profiling
+- eBPF or flamegraphs
+- benchmark harnesses
+- open-source contributions
 concerns:
-- The broad career path may target deeper systems-level performance expertise than
-  the profile demonstrates.
+- The role expects a specialized performance-engineering track and exceptional academic/personal
+  initiative evidence
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-22T22:52:23Z'
+analyzed_at: '2026-08-25T09:32:21Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:a2cd69b7185c0fe7a7129cc7cc25af7faf3d2b98f185c118d6fa50985ac76be1
+job_version: sha256:8a4dbaa192795a83bacb732d9f366142278182614ca66662c677acc2bbd2bdf1
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

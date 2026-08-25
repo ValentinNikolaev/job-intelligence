@@ -3,19 +3,21 @@
 **Score:** 68/100  
 **Recommendation:** Match
 
-Relevant performance optimization, database tuning, observability, resilient systems, and Go experience support a match, while low-level CPU, kernel, compiler, and dedicated benchmarking evidence is limited.
+Performance optimization, distributed systems, observability, Go, and technical leadership provide relevant foundations, but low-level profiling and open-source performance tooling are not evidenced.
 
 ## Why it matches
 
-- Documented API, database, and service performance improvements.
-- Go, distributed systems, tracing/monitoring, reliability, and production troubleshooting are supported.
-- Technical leadership and remote collaboration fit the role’s leadership dimension.
+- Measured API and database performance improvements
+- Go and distributed systems
+- mentoring and reliability leadership
 
 ## Gaps
 
-- Kernel, CPU, compiler, eBPF, assembly, and dedicated performance-harness experience are not evidenced.
-- Open-source performance engineering work is not established.
+- Kernel/CPU/compiler profiling
+- eBPF or flamegraphs
+- benchmark harnesses
+- open-source contributions
 
 ## Concerns
 
-- The broad career path may target deeper systems-level performance expertise than the profile demonstrates.
+- The role expects a specialized performance-engineering track and exceptional academic/personal initiative evidence

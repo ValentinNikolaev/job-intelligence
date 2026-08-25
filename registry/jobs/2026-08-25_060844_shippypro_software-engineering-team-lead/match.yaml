@@ -1,0 +1,21 @@
+score: 91
+recommendation: strong_match
+summary: Excellent match for a remote hands-on fulfillment team lead role combining
+  PHP backend systems, architecture, mentoring, reliability, and automation.
+strengths:
+- PHP and Laravel backend experience
+- technical leadership and mentoring
+- scalable distributed systems and AWS
+gaps:
+- Python and TypeScript are not established as primary skills
+- direct shipping-domain experience is not evidenced
+concerns:
+- Role includes hiring and pod ownership responsibilities beyond the explicitly documented
+  team leadership scope
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T09:32:20Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:4059a054ca5945f22513dbcc6f639d373a2d4755732ee547c60f9b149f8277a5
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

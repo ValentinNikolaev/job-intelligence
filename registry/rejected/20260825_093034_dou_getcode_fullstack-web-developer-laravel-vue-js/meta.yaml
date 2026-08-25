@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '370696'
+source_url: https://jobs.dou.ua/companies/getcode/vacancies/370696/
+title: FullStack Web developer (Laravel/Vue.JS)
+company: GetCode
+location: віддалено
+published_at: '2026-08-21'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-25T09:30:34Z'
+rejected_at: '2026-08-25T09:30:34Z'

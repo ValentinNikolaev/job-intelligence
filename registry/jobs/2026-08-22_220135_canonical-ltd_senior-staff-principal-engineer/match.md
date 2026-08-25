@@ -1,21 +1,22 @@
 # Match Analysis
 
-**Score:** 82/100  
-**Recommendation:** Strong Match
+**Score:** 68/100  
+**Recommendation:** Match
 
-Senior backend engineer and technical lead with demonstrated Go, distributed systems, Kubernetes, architecture, mentoring, and delivery leadership, aligned with Canonical senior-plus expectations.
+Remote senior-plus engineering and technical leadership experience align with Canonical's architecture and mentoring expectations, while open-source and broad systems depth remain uncertain.
 
 ## Why it matches
 
-- Go backend ownership and event-driven distributed-systems architecture are directly evidenced.
-- Technical leadership, mentoring, planning, interviews, and team direction are supported.
-- Computer Science master’s degree, professional English, and remote collaboration fit the stated context.
+- Technical leadership and mentoring
+- Go/backend architecture
+- Kubernetes/cloud and performance work
 
 ## Gaps
 
-- Open-source community contributions and low-level systems depth are not clearly evidenced.
-- Exceptional academic performance beyond the degree is unknown.
+- Open-source community track record
+- breadth across Canonical's systems stack
+- exceptional academic evidence beyond the degree
 
 ## Concerns
 
-- This is a broad track whose eventual team and language focus are unspecified.
+- Canonical's senior-plus bar and team placement are intentionally broad and highly selective

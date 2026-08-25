@@ -1,0 +1,42 @@
+schema_version: 2
+id: c7b63009-d37d-435d-a99d-ce4063e5e0e8
+title: Senior AI Engineer
+company: Sonatus
+company_url: null
+location: Poland
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '151536'
+  url: https://jobicy.com/jobs/151536-senior-ai-engineer-7
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/d31f17d1-221.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: At Sonatus, we’re driving the transformation to AI-enabled software-defined
+      vehicles. Traditional automotive software methods can’t keep pace with consumer
+      expectations shaped by the mobile industry—where features evolve rapidly, update
+      seamlessly, and improve continuously. That’s why leading OEMs trust Sonatus
+      to accelerate this shift. Our technology is already in production across more
+      than 8 million vehicles…
+    discovered_by:
+    - query_index: 3
+      parameters:
+        tag: golang
+        geo: europe
+        count: '25'
+        industry: dev
+published_at: '2026-08-25T04:15:29Z'
+discovered_at: '2026-08-25T09:30:41Z'
+updated_at: '2026-08-25T09:30:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-25T09:30:41Z'
+analysis_priority: 0
+fingerprint: sha256:16e2ef88929517d32a53630cc2a6050e0370d00d43e7884cd9a3a052aa535c5b
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

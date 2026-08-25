@@ -1,0 +1,74 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-25T09:32:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ShippyPro",
+      "directory": "2026-08-25_060844_shippypro_software-engineering-team-lead",
+      "score": 91,
+      "title": "Software Engineering Team Lead",
+      "url": "https://shippypro.factorialhr.com/job_posting/software-engineering-team-lead-311256",
+      "vacancy_id": "7d18176c-5e99-4d71-b0b8-b878fb9db190"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-08-25_060844_shippypro_senior-software-engineer",
+      "score": 94,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "296606bf-51cd-4ef0-905b-322362baf958"
+    },
+    {
+      "company": "MeinEinkauf GmbH",
+      "directory": "2026-08-25_060835_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh_726978d2",
+      "score": 82,
+      "title": "PHP Backend Developer (m/w/d) - MeinEinkauf GmbH",
+      "url": "https://www.adzuna.de/details/5852714176?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "726978d2-3504-4c24-a9b6-ffb5246d70f3"
+    },
+    {
+      "company": "MeinEinkauf GmbH",
+      "directory": "2026-08-25_060835_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh",
+      "score": 82,
+      "title": "PHP Backend Developer (m/w/d) - MeinEinkauf GmbH",
+      "url": "https://www.adzuna.de/land/ad/5854106438?se=ePVOX0ug8RGLZZiuaUCfOw&utm_medium=api&utm_source=b6674f60&v=E03E84B6A6C320BF2F6D6B2C7FB50A1EFF22EA28",
+      "vacancy_id": "1921016e-8a84-4ecd-9630-d6529f10cf28"
+    },
+    {
+      "company": "Airalo",
+      "directory": "2026-08-25_060835_airalo_backend-php-engineer_331435b1",
+      "score": 86,
+      "title": "Backend/PHP Engineer",
+      "url": "https://www.adzuna.es/details/5852212316?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "331435b1-21b0-49f5-93ca-5aa670ad081f"
+    },
+    {
+      "company": "Airalo",
+      "directory": "2026-08-25_060835_airalo_backend-php-engineer",
+      "score": 86,
+      "title": "Backend/PHP Engineer",
+      "url": "https://www.adzuna.co.uk/jobs/details/5852574976?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "a747c25b-3492-486a-9e3f-f007066c08dc"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-08-22_220135_canonical-ltd_senior-staff-principal-engineer",
+      "score": 68,
+      "title": "Senior/Staff/Principal Engineer",
+      "url": "https://jobicy.com/jobs/149522-senior-staff-principal-engineer",
+      "vacancy_id": "48684a72-4524-4300-abce-86a10d3f60f4"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-08-22_220135_canonical-ltd_performance-engineer-open-source",
+      "score": 68,
+      "title": "Performance Engineer - Open Source",
+      "url": "https://jobicy.com/jobs/149551-performance-engineer-open-source",
+      "vacancy_id": "b2acdf69-24f9-43d1-9176-3f66cae58029"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ed8904b22d3fc1392d81f4c4c8386c844a2158e96f428c9114b0c3e4d3c65a3b",
+  "schema_version": 1
+}

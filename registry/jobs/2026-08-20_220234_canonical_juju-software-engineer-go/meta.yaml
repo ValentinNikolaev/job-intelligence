@@ -43,21 +43,14 @@ sources:
     discovered_by:
     - query_index: 2
       parameters:
+        exclude_worldwide: 'true'
+        seniority: Senior
+        country: IT
+        sort: recent
         q: golang
-        country: IT
-        sort: recent
-        exclude_worldwide: 'true'
-        seniority: Senior
-    - query_index: 3
-      parameters:
-        q: php backend
-        country: IT
-        sort: recent
-        exclude_worldwide: 'true'
-        seniority: Senior
 published_at: '2026-08-20T20:33:56Z'
 discovered_at: '2026-08-20T22:02:34Z'
-updated_at: '2026-08-20T22:02:34Z'
+updated_at: '2026-08-25T09:30:39Z'
 status: found
 status_history:
 - status: found

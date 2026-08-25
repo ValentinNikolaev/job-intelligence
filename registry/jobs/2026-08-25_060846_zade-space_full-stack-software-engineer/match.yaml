@@ -1,0 +1,21 @@
+score: 48
+recommendation: possible_match
+summary: Strong backend, AWS, Docker, CI/CD, PHP, and production ownership fit, but
+  the mandatory TypeScript, Next.js, and React full-stack focus is not evidenced.
+strengths:
+- AWS and cloud infrastructure
+- GitHub Actions and production reliability
+- PHP backend experience
+gaps:
+- TypeScript and Next.js
+- React and mobile stack
+- AWS CDK and listed frontend tooling
+concerns:
+- Small-team role requires broad frontend ownership not demonstrated in the profile
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-25T09:32:20Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:dd6eabfe8ba661dd3d4681080b0ab7e013cf6241c9edf91bba73e6f6f65a2d16
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
