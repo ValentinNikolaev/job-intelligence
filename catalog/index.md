@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 61
+Total vacancies: 66
 
-- Found: 44
+- Found: 49
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,11 @@ Total vacancies: 61
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-26 | [Sonatus](../registry/jobs/2026-08-26_061030_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-26_061030_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-26 | [Canonical](../registry/jobs/2026-08-26_061030_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-26_061030_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-26 | [Canonical](../registry/jobs/2026-08-26_061030_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-26_061030_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-26 | [Canonical](../registry/jobs/2026-08-26_061030_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-26_061030_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-26 | [Lithos](../registry/jobs/2026-08-26_061018_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-08-26_061018_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-08-26 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
 | 2026-08-25 | [Canonical](../registry/jobs/2026-08-25_210136_canonical_software-engineer-app-stores/) | [Software Engineer - App Stores](../registry/jobs/2026-08-25_210136_canonical_software-engineer-app-stores/job.md) | Anywhere | Jobicy | Found | 2026-08-25 | [Jobicy](https://jobicy.com/jobs/149552-software-engineer-app-stores) | — | — | — | — | — |
 | 2026-08-25 | [S-KON eKontor 24](../registry/jobs/2026-08-25_210117_s-kon-ekontor-24_backend-entwickler-m-w-d/) | [Backend-Entwickler (m/w/d)](../registry/jobs/2026-08-25_210117_s-kon-ekontor-24_backend-entwickler-m-w-d/job.md) | Bahrenfeld, Hamburg | Adzuna | Found | 2026-08-25 | [Adzuna](https://www.adzuna.de/details/5855587346?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-08-25 | [SIXT](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/) | [Senior Backend Engineer](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/job.md) | Київ, віддалено | Dou | Found | 2026-08-25 | [Dou](https://jobs.dou.ua/companies/sixt/vacancies/350228/) | [Open](../registry/jobs/2026-08-25_170142_sixt_senior-backend-engineer/company.md) | — | — | — | — |

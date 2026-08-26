@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '146614'
+source_url: https://jobicy.com/jobs/146614-database-engineer
+title: Database Engineer
+company: Ruby Labs
+location: Europe,  Türkiye
+published_at: '2026-08-20T03:35:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T06:10:30Z'
+rejected_at: '2026-08-26T06:10:30Z'
