@@ -7,21 +7,19 @@ Posted: 2026-07-17T14:27:47.872+00:00
 - Category: stale
 - Reason: published_at 2026-07-17T14:27:47.872+00:00 is older than 7 days
 
-Frontend Software Engineer III
-
-
-
 About us
 
-Satispay began by rethinking the simple act of a payment to remove the friction from our daily routines. But we didn’t stop there. Today, we are building a complete financial platform designed to empower people and concretely improve their lives.
+Traditional banking has never really given you control over your financial life. Satispay exists to change that: to empower people through finance. 
 
-By giving our 6 million users a clear, open path to pay, save, and invest, we are evolving into the definitive destination for every financial need.
+That means making financial services easy and accessible for over 6.5M users. We started with payments, then benefits, investing, cards... and we’re not done. Not even close. We follow the same logic every time: find a real problem, solve it properly, then look for the next one. The destination? To build the most loved financial platform in the world. If you own outcomes rather than tasks, stay close to what users need, and refuse to wait for someone else to fix what's broken — you'll find people here who work exactly in the same way. And together, you'll build something worth being proud of.
 
 
 
-What you’ll be doing
+What you'll be doing
 
-As a Frontend Software Engineer, you’ll play a key role in contributing to the development of a next-generation, highly scalable, and performant core frontend platform. Here’s what your day-to-day will look like:
+As our Frontend Software Engineer, you'll contribute to the development of a next-generation, highly scalable, and performant core frontend platform. 
+
+Here's what that looks like in practice:
 
  - Collaborate on feature development – Working closely with the team to implement new features, participating in code reviews, and contributing to knowledge-sharing sessions.
 
@@ -45,7 +43,7 @@ Expect challenges, collaboration, and the freedom to bring your ideas to life. T
 
 Who we’re looking for
 
-We need a problem-solver who loves teamwork and gets things done. If you're curious and ready for real ownership, you'll fit in! Does this sound like you?
+This role needs a problem-solver who loves teamwork, gets things done, and brings genuine curiosity and ownership to front-end development.
 
  - Relevant experience – 3-5 years in front-end development, with a track record of delivering high-quality web applications.
 
@@ -57,7 +55,7 @@ We need a problem-solver who loves teamwork and gets things done. If you're curi
 
  - Strong ownership of features – Experience maintaining Node.js applications in production, including using observability/logging tools (e.g., Grafana, Cloudwatch, Logstash) and maintaining unit, integration, and E2E tests.
 
- - Performance Optimization – Implementing techniques like lazy loading, code splitting, and caching to ensure optimal application performance.
+ - Performance Optimisation – Implementing techniques like lazy loading, code splitting, and caching to ensure optimal application performance.
 
 Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special. If you're passionate and can make a difference, we truly encourage you to apply.
 
@@ -65,17 +63,19 @@ Don't worry if you don't tick every box. We believe in the power of different vi
 
 CareAbout: how we support your impact
 
-We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. That’s why we created CareAbout:
+We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. 
 
- - ❤️ Health (Private insurance for you and your family, psychological support with Serenis, mental health workshops)
+That’s why we created CareAbout:
 
- - 💰 Financial resources (Stock Option Plan, Meal vouchers, Relocation support if you’re moving countries)
+ - ❤️ Health: private insurance for you and your family, psychological support with Serenis, mental health workshops.
 
- - ⚙️ Growth and development (Professional development programs, Internal mobility, Language courses with Preply)
+ - 💰 Financial resources: Stock Option Plan, meal vouchers, relocation support if you’re moving countries.
 
- - 🌱 Flexibility (Unlimited PTO, Hybrid working policy*, Flexible working hours)
+ - ⚙️ Growth and development: professional development programs, internal mobility, language courses with Preply.
 
- - 👨‍👩‍👧 Family (Enhanced parental leave, Additional leave for child sickness)
+ - 🌱 Flexibility: unlimited PTO, hybrid working policy*, flexible working hours.
+
+ - 👨‍👩‍👧 Family: enhanced parental leave, additional leave for child sickness.
 
 *We embrace three days per week in-office (Tuesday and Thursday + 1 of your choice), with the option to request extra remote time.
 
@@ -88,14 +88,18 @@ This range is set using objective, gender-neutral criteria for the role's core r
 
 
 Equal opportunity employer
+
 At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin. 
+
 Join us in a workplace where everyone belongs!
 
 
 
 Learn more about us
-Our values and pillars aren’t just fancy words on a page - they really shape everything we do. 
-Explore them here https://www.https/satispay.com/it-it/lavorare-in-satispay/.
+
+Curious what it's actually like here? Our values and pillars shape how we work every day: explore them here https://www.satispay.com/en-it/work-at-satispay/.
+
+
 
 
 

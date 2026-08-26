@@ -27,6 +27,15 @@ We’re developing a powerful gifting SaaS platform that helps companies and ind
 - Strong communication and collaboration skills;
 - English: Upper-Intermediate (B2) or higher.
 
+**Nice to Have:**
+
+- Hands-on experience with Node.js or experience working in a polyglot backend environment;
+- Willingness and ability to work with Node.js-based services as the platform evolves;
+- Experience with queues/workers, asynchronous processing, event-driven systems, and job orchestration;
+- Experience modernizing mature codebases, including refactoring, dependency upgrades, architecture improvements, and increasing test coverage;
+- Familiarity with Vue.js or other modern JavaScript frameworks;
+- Experience with high-availability SaaS products and production incident management.
+
 **What You’ll Do:**
 
 - Build and maintain backend features, services, and APIs using PHP / Laravel;

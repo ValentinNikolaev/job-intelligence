@@ -7,33 +7,31 @@ Posted: 2026-07-15T07:19:01.686+00:00
 - Category: stale
 - Reason: published_at 2026-07-15T07:19:01.686+00:00 is older than 7 days
 
-Lead Backend Engineer - Consumer Growth
-
-
-
 About us
 
-Satispay began by rethinking the simple act of a payment to remove the friction from our daily routines. But we didn’t stop there. Today, we are building a complete financial platform designed to empower people and concretely improve their lives.
+Traditional banking has never really given you control over your financial life. Satispay exists to change that: to empower people through finance. 
 
-By giving our 6 million users a clear, open path to pay, save, and invest, we are evolving into the definitive destination for every financial need.
+That means making financial services easy and accessible for over 6.5M users. We started with payments, then benefits, investing, cards... and we’re not done. Not even close. 
 
-You'll be joining the Consumer Growth team. We own the systems that power the end-to-end consumer experience on Satispay - from the moment someone signs up to the day they leave. Our mandate is growth: maximising the number of consumers joining the platform and driving engagement through marketing campaigns and Satispay Points
+We follow the same logic every time: find a real problem, solve it properly, then look for the next one. The destination? To build the most loved financial platform in the world. 
+
+If you own outcomes rather than tasks, stay close to what users need, and refuse to wait for someone else to fix what's broken — you'll find people here who work exactly in the same way. And together, you'll build something worth being proud of.
 
 
 
 What you’ll be doing
 
-As a Lead Backend Engineer in the Consumer Growth Team, you'll play a critical role in shaping the technical direction of the team. This is an individual contributor (IC) role - you'll lead through technical excellence and influence, not through direct reports or people management. You will be responsible for the technical quality and delivery of complex systems, collaborating closely with other teams.
+As our Lead Backend Engineer - Consumer Growth, you'll play a critical role in shaping the technical direction of the Consumer Growth team, taking ownership of the technical quality and delivery of complex systems. 
 
-Here’s what your day-to-day will look like:
+Here's what that looks like in practice:
 
- - Build and ship. You will design, implement, and operate services that power the Satispay consumer experience - from payment flows and identity verification to loyalty and engagement features. You'll work across the full lifecycle: from API design and data modelling to production rollouts and on-call ownership.
+ - Build and ship - Design, implement, and operate services that power the Satispay consumer experience - from payment flows and identity verification to loyalty and engagement features, working across the full lifecycle from API design to production rollouts.
 
- - Cross-team technical leadership. You will drive technical analysis for projects that cut across multiple teams, lead design discussions, and produce documentation that gives stakeholders and other teams a clear, reviewable picture of every design before build begins.
+ - Cross-team technical leadership - Drive technical analysis for projects that cut across multiple teams, lead design discussions, and produce clear documentation for stakeholders and engineering teams.
 
- - Foster engineering excellence. You will raise the quality bar across mobile and backend development: rigorous testing strategies, safe progressive rollouts, and proactive elimination of technical debt in a codebase that ships 2M+ daily payments. You'll champion simplicity and maintainability in services that other pods depend on.
+ - Foster engineering excellence - Raise the quality bar across mobile and backend development through rigorous testing strategies, safe progressive rollouts, and proactive elimination of technical debt in a codebase shipping 2M+ daily payments.
 
- - Mentor and develop. You will provide technical guidance to junior and mid-level engineers in the Consumer Growth teams, helping them navigate cross-service dependencies, adopt sound event-driven patterns, and build a shared instinct for operational excellence.
+ - Mentor and develop - Provide technical guidance to junior and mid-level engineers in the Consumer Growth teams, helping them navigate cross-service dependencies, adopt sound event-driven patterns, and build operational excellence.
 
 Expect challenges, collaboration, and the freedom to bring your ideas to life. Our tech stack includes (but it’s not limited to) PostgreSQL, Java, Spring Boot. We rely on AWS for our infrastructure, with microservices deployed on EC2/ECS, S3 for storage, AWS Lambda for serverless functions, and Kinesis and ElasticSearch for log streaming. You'll take ownership of your work from start to finish.
 
@@ -41,19 +39,19 @@ Expect challenges, collaboration, and the freedom to bring your ideas to life. O
 
 Who we’re looking for
 
-We need a proven problem-solver who takes initiative, excels in cross-team collaboration, and is a technical quality champion. Does it sound like you?
+This role needs someone who is a proven problem-solver, takes initiative, excels in cross-team collaboration, and is a technical quality champion.
 
- - Extensive experience: You have at least 5 years of related experience in back-end software engineering. You have a proven track record of working with microservices and cloud environments (AWS is a plus) in high-paced, mission-critical contexts.
+ - Extensive experience - At least 5 years of related experience in back-end software engineering, with a proven track record in microservices and cloud environments (AWS is a plus) in high-paced, mission-critical contexts.
 
- - Technical depth: You possess deep experience with Java and Spring Boot. You have a strong understanding of distributed systems and how to manage external dependencies (like banking protocols) effectively.
+ - Technical depth - Deep experience with Java and Spring Boot, alongside a strong understanding of distributed systems and managing external dependencies effectively.
 
- - Structured communication: You are able to communicate complex technical concepts clearly and convincingly. You excel at coordinating implementations with other teams and building trust with various stakeholders.
+ - Structured communication - Ability to communicate complex technical concepts clearly and convincingly, coordinate implementations across teams, and build trust with stakeholders.
 
- - Impact mindset: You are focused on delivering software that meets evolving user needs. You are adaptable, avoid analysis paralysis, and "go the extra mile" to optimize systems beyond the initial requirements.
+ - Impact mindset - Focused on delivering software that meets evolving user needs, adaptable, avoids analysis paralysis, and goes the extra mile to optimize systems.
 
- - Passion and language skills: You are passionate about FinTech and fluent in English.
+ - Passion and language skills - Passionate about FinTech and fluent in English.
 
-Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special. If you're passionate and can make a difference, we truly encourage you to apply.
+Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special: if you're passionate and can make a difference, we truly encourage you to apply.
 
 
 
@@ -61,35 +59,37 @@ CareAbout: how we support your impact
 
 We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. That’s why we created CareAbout:
 
- - ❤️ Health (Private insurance for you and your family, psychological support with Serenis, mental health workshops)
+ - ❤️ Health: private insurance for you and your family, psychological support with Serenis, mental health workshops.
 
- - 💰 Financial resources (Stock Option Plan, Meal vouchers, Relocation support if you’re moving countries)
+ - 💰 Financial resources: Stock Option Plan, meal vouchers, relocation support if you’re moving countries.
 
- - ⚙️ Growth and development (Professional development programs, Internal mobility, Language courses with Preply)
+ - ⚙️ Growth and development: professional development programs, internal mobility, language courses with Preply.
 
- - 🌱 Flexibility (Unlimited PTO, Hybrid working policy*, Flexible working hours)
+ - 🌱 Flexibility: unlimited PTO, hybrid working policy*, flexible working hours.
 
- - 👨‍👩‍👧 Family (Enhanced parental leave, Additional leave for child sickness)
+ - 👨‍👩‍👧 Family: enhanced parental leave, additional leave for child sickness.
 
 *We embrace three days per week in-office (Tuesday and Thursday + 1 of your choice), with the option to request extra remote time.
 
 
 
 Salary: €51,000 - €66,500 gross per annum
-
 This range is set using objective, gender-neutral criteria for the role's core requirements. However, we do not believe in putting a ceiling on talent. The final compensation package is tailored according to your unique experience and expertise. If your skills go beyond the standard profile, apply anyway so we can discuss a package that reflects your true value.
 
 
 
 Equal opportunity employer
-At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin. 
+
+At Satispay, we're proud to be an equal opportunity employer. We celebrate diversity and inclusion, welcoming individuals of all backgrounds. This opportunity is open to everyone, regardless - for instance - of race, colour, religion, sex, gender identity, sexual orientation, and national origin.
 Join us in a workplace where everyone belongs!
 
 
 
 Learn more about us
-Our values and pillars aren’t just fancy words on a page - they really shape everything we do. 
-Explore them here https://www.satispay.com/en-it/work-at-satispay/.
+
+Curious what it's actually like here? Our values and pillars shape how we work every day: explore them here https://www.satispay.com/en-it/work-at-satispay/.
+
+
 
 
 

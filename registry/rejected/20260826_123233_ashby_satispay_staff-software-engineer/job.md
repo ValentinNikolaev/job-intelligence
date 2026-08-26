@@ -7,17 +7,25 @@ Posted: 2026-06-26T10:58:02.375+00:00
 - Category: stale
 - Reason: published_at 2026-06-26T10:58:02.375+00:00 is older than 7 days
 
-About us 
+About us
 
-Satispay began by rethinking the simple act of a payment to remove the friction from our daily routines. But we didn’t stop there. Today, we are building a complete financial platform designed to empower people and concretely improve their lives. By giving our 6 million users a clear, open path to pay, save, and invest, we are evolving into the definitive destination for every financial need.
+Traditional banking has never really given you control over your financial life. Satispay exists to change that: to empower people through finance. 
+
+That means making financial services easy and accessible for over 6.5M users. We started with payments, then benefits, investing, cards... and we’re not done. Not even close. 
+
+We follow the same logic every time: find a real problem, solve it properly, then look for the next one. The destination? To build the most loved financial platform in the world. 
+
+If you own outcomes rather than tasks, stay close to what users need, and refuse to wait for someone else to fix what's broken — you'll find people here who work exactly in the same way. And together, you'll build something worth being proud of.
 
 
 
 What you'll be doing 
 
-As our Staff Software Engineer, you’ll be the person who defines the long-term technical vision for one of our domains, architecting complex subsystems that power our features and leading efficient initiatives that directly empower millions of users to reach their financial goals. Here's what your day-to-day will look like:
+As our Staff Software Engineer, you'll define the long-term technical vision for one of our domains, architecting complex subsystems that power our features and leading efficient initiatives that directly empower millions of users to reach their financial goals. 
 
- - Define Technical Strategy - You will architect complex subsystems that power our features, with cross-product considerations, leading efficient initiatives impacting multiple groups.
+Here's what that looks like in practice:
+
+ - Define Technical Strategy - Architect complex subsystems that power our features, with cross-product considerations, leading efficient initiatives impacting multiple groups.
 
  - Advance the Architecture - Design and build scalable, high-quality systems that solve complex financial engineering problems, including managing and simplifying the most complex back-end systems.
 
@@ -33,33 +41,35 @@ Our tech stack includes (but it’s not limited to) PostgreSQL, Java, Spring Boo
 
 Who we're looking for 
 
-We need a visionary problem-solver, who excels in cross-team collaboration with deep expertise. Does this sound like you?
+This role needs someone who is a visionary problem-solver, who excels in cross-team collaboration with deep expertise.
 
- - Extensive Experience - You have at least 7 years of related experience in back-end software engineering. You have a proven track record of architecting and maintaining microservices in a high-paced environment, building high-throughput systems capable of serving millions of users with high availability.
+ - Extensive Experience - At least 7 years of related experience in back-end software engineering, with a proven track record of architecting and maintaining microservices in a high-paced environment, building high-throughput systems capable of serving millions of users with high availability.
 
- - Tech Expertise - You possess a deep experience working with Java and a strong understanding of cloud platforms (AWS is a plus), capable of handling the most complex technical challenges.
+ - Tech Expertise - Deep experience working with Java and a strong understanding of cloud platforms (AWS is a plus), capable of handling the most complex technical challenges.
 
- - Strategic Communication - You are able to communicate in a structured and convincing manner, adapting your style to build trust positively and professionally with various stakeholders, capable of building cross-organizational relationships for technical alignment.
+ - Strategic Communication - Ability to communicate in a structured and convincing manner, adapting your style to build trust positively and professionally with various stakeholders, capable of building cross-organizational relationships for technical alignment.
 
- - Thought Leadership - You have a proven ability to generate intellectual property and thought leadership. You identify and capitalize on emerging technology trends, and act as a technical reference point for the team, providing guidance and expertise when needed.
+ - Thought Leadership - Proven ability to generate intellectual property and thought leadership, identifying and capitalizing on emerging technology trends, and acting as a technical reference point for the team.
 
- - Passion and Language Skills - You are passionate about FinTech or startup environments and fluent in English.
+ - Passion and Language Skills - Passionate about FinTech or startup environments and fluent in English.
 
-Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special. If you're passionate and can make a difference, we truly encourage you to apply.
+Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special: if you're passionate and can make a difference, we truly encourage you to apply.
+
+
 
 CareAbout: how we support your impact 
 
 We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. That’s why we created CareAbout:
 
- - ❤️ Health (Private insurance and health coverage for you and your family, psychological support with Serenis, mental health workshops)
+ - ❤️ Health: private insurance for you and your family, psychological support with Serenis, mental health workshops.
 
- - 💰 Financial resources (Stock Option Plan, Meal vouchers, Relocation support if you’re moving countries)
+ - 💰 Financial resources: Stock Option Plan, meal vouchers, relocation support if you’re moving countries.
 
- - ⚙️ Growth and development (Professional development programs, Internal mobility, Language courses with Preply)
+ - ⚙️ Growth and development: professional development programs, internal mobility, language courses with Preply.
 
- - 🌱 Flexibility (Unlimited PTO, Hybrid working policy*, Flexible working hours)
+ - 🌱 Flexibility: unlimited PTO, hybrid working policy*, flexible working hours.
 
- - 👨‍👩‍👧 Family (Enhanced parental leave, Additional leave for child sickness)
+ - 👨‍👩‍👧 Family: enhanced parental leave, additional leave for child sickness.
 
 *We embrace three days per week in-office (Tuesday and Thursday + 1 of your choice), with the option to request extra remote time.
 
@@ -78,7 +88,13 @@ At Satispay, we're proud to be an equal opportunity employer. We celebrate diver
 
 Learn more about us 
 
-Our values and pillars aren’t just fancy words on a page - they really shape everything we do. Explore them here https://www.satispay.com/en-it/work-at-satispay/.
+Curious what it's actually like here? Our values and pillars shape how we work every day: explore them here https://www.satispay.com/en-it/work-at-satispay/.
+
+
+
+
+
+
 
 
 

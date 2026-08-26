@@ -21,43 +21,49 @@ Still willing to apply for the role? This specific application form is dedicated
 
 About us
 
-Satispay began by rethinking the simple act of a payment to remove the friction from our daily routines. But we didn't stop there. Today, we are building a complete financial platform designed to empower people and concretely improve their lives. By giving our 6+ million users a clear, open path to pay, save, and invest, we are evolving into the definitive destination for every financial need.
+Traditional banking has never really given you control over your financial life. Satispay exists to change that: to empower people through finance. 
+
+That means making financial services easy and accessible for over 6.5M users. We started with payments, then benefits, investing, cards... and we’re not done. Not even close. 
+
+We follow the same logic every time: find a real problem, solve it properly, then look for the next one. The destination? To build the most loved financial platform in the world. 
+
+If you own outcomes rather than tasks, stay close to what users need, and refuse to wait for someone else to fix what's broken — you'll find people here who work exactly in the same way. And together, you'll build something worth being proud of.
 
 
 
 What you'll be doing
 
-As a Software Engineer III, Backend Developer, you’ll play a key role in shaping the future of digital payments by designing and building scalable, high-quality systems. You’ll be delivering features, gaining deep system context, and growing your technical expertise. Here’s what your day-to-day will look like:
+As our Software Engineer III, Backend Developer, you'll play a key role in shaping the future of digital payments by designing and building scalable, high-quality systems, delivering features, gaining deep system context, and growing your technical expertise. 
 
- - Own the Story Lifecycle: Complete the entire story lifecycle from intake to production release. You’ll be responsible for standing up product stories and ensuring all requirements are met.
+Here's what that looks like in practice:
 
- - Contribute to Technical Excellence: Conduct technical analysis for standard scope stories and implement robust, scalable back-end solutions
+ - Own the Story Lifecycle - Complete the entire story lifecycle from intake to production release, standing up product stories and ensuring all requirements are met.
 
- - Grow Technical Leadership: Begin to provide guidance and mentorship for peers and juniors, especially in technical implementation, while ensuring service/component-level technical vision is aligned with the roadmap.
+ - Contribute to Technical Excellence - Conduct technical analysis for standard scope stories and implement robust, scalable back-end solutions.
 
- - Ensure Quality and Stability: Accurately estimate effort and resolve blockers promptly. You will participate in resolving incident resolution including root cause analysis and prevention, ensuring technical transparency across your scope.
+ - Grow Technical Leadership - Begin to provide guidance and mentorship for peers and juniors, especially in technical implementation, while ensuring service/component-level technical vision aligns with the roadmap.
 
- - Document and Communicate: Create comprehensive technical documentation for the features you build and collaborate with stakeholders
+ - Ensure Quality and Stability - Accurately estimate effort and resolve blockers promptly, participating in incident resolution, root cause analysis, and prevention to ensure technical transparency.
+
+ - Document and Communicate - Create comprehensive technical documentation for the features you build and collaborate effectively with stakeholders.
 
 
 
 Who we’re looking for
 
-We need a problem solver who is eager to learn, owns their work, and is ready to collaborate and to take real ownership. Does it sound like you?
+This role needs someone who is a problem solver, eager to learn, owns their work, and is ready to collaborate and take real ownership.
 
- - Experience & Technical Foundations: You have at least 3 years of industry experience working with Java and a foundational understanding of cloud platforms (AWS is a plus).
+ - Experience & Technical Foundations - At least 3 years of industry experience working with Java and a foundational understanding of cloud platforms (AWS is a plus).
 
- - Teamwork and Communication: You are able to communicate clearly and professionally, contributing to team-level knowledge sharing and building trust with peers.
+ - Technical Leadership - Proven ability to conduct technical analysis for large-scope projects affecting multiple systems.
 
- - User Focus: Possesses an inherent desire to understand and address user needs, ensuring the back-end system supports a great user experience.
+ - Structured Communication - Ability to communicate in a structured and convincing manner, adapting your style to build trust positively and professionally with various stakeholders, including coordinating implementation with other teams.
 
- - Passion and Language Skills: You are passionate about FinTech or startup environments and fluent in English.
+ - User Focus - Inherent desire to understand and address user needs, ensuring the back-end system supports a great user experience.
 
- -  conduct technical analysis for large-scope projects affecting multiple systems.
+ - Passion and Language Skills - Passionate about FinTech or startup environments and fluent in English.
 
- - Structured Communication: You are able to communicate in a structured and convincing manner, adapting your style to build trust positively and professionally with various stakeholders, including coordinating implementation with other teams.
-
- - Passion and Language Skills: You are passionate about FinTech or startup environments and fluent in English.
+Don't worry if you don't tick every box. We believe in the power of different viewpoints and strengths. Your unique perspective is important as we build something special: if you're passionate and can make a difference, we truly encourage you to apply.
 
 
 
@@ -65,17 +71,15 @@ CareAbout: how we support your impact
 
 We move fast, and evolution never stops. It’s a fun ride, but it can be challenging. To make sure our people truly thrive, we’re committed to making their lives easier, both in the office and out in the world. That’s why we created CareAbout:
 
- - ❤️ Health (Private insurance for you and your family, psychological support with Serenis, mental health workshops)
+ - ❤️ Health: private insurance for you and your family, psychological support with Serenis, mental health workshops.
 
- - 💰 Financial resources (Stock Option Plan, Meal vouchers, Relocation support if you’re moving countries)
+ - 💰 Financial resources: Stock Option Plan, meal vouchers, relocation support if you’re moving countries.
 
- - ⚙️ Growth and development (Professional development programs, Internal mobility, Language courses with Preply)
+ - ⚙️ Growth and development: professional development programs, internal mobility, language courses with Preply.
 
- - 🌱 Flexibility (Unlimited PTO, Hybrid working policy*, Flexible working hours)
+ - 🌱 Flexibility: unlimited PTO, hybrid working policy*, flexible working hours.
 
- - 👨‍👩‍👧 Family (Enhanced parental leave, Additional leave for child sickness)
-
-
+ - 👨‍👩‍👧 Family: enhanced parental leave, additional leave for child sickness.
 
 *We embrace three days per week in-office (Tuesday and Thursday + 1 of your choice), with the option to request extra remote time.
 
@@ -93,7 +97,7 @@ At Satispay, we're proud to be an equal opportunity employer. We celebrate diver
 
 
 Learn more about us
-Our values and pillars aren’t just fancy words on a page - they really shape everything we do. Explore them here https://www.satispay.com/en-it/work-at-satispay/.
+Curious what it's actually like here? Our values and pillars shape how we work every day: explore them here https://www.satispay.com/en-it/work-at-satispay/.
 
 
 

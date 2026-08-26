@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: initiativbewerbung-hq-berlin-416077
+source_url: https://www.arbeitnow.com/jobs/companies/buena/initiativbewerbung-hq-berlin-416077
+title: Initiativbewerbung HQ Berlin (m/f/d)
+company: Buena
+location: Berlin
+published_at: '2026-08-26T14:40:19Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-26T16:02:10Z'
+rejected_at: '2026-08-26T16:02:10Z'
