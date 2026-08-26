@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: product-manager-search-berlin-478261
+source_url: https://www.arbeitnow.com/jobs/companies/wolt/product-manager-search-berlin-478261
+title: Product Manager, Search
+company: wolt
+location: Berlin
+published_at: '2026-08-26T09:15:11Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-26T12:32:31Z'
+rejected_at: '2026-08-26T12:32:31Z'

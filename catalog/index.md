@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 66
+Total vacancies: 69
 
-- Found: 49
+- Found: 52
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 66
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-26 | [Frozeneon](../registry/jobs/2026-08-26_123241_frozeneon_middle-php-backend-developer-ai-oriented/) | [Middle PHP Backend Developer (AI Oriented)](../registry/jobs/2026-08-26_123241_frozeneon_middle-php-backend-developer-ai-oriented/job.md) | віддалено | Dou | Found | 2026-08-26 | [Dou](https://jobs.dou.ua/companies/frozeneon/vacancies/371043/) | [Open](../registry/jobs/2026-08-26_123241_frozeneon_middle-php-backend-developer-ai-oriented/company.md) | — | — | — | — |
+| 2026-08-26 | [ShippyPro](../registry/jobs/2026-08-26_123238_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-26_123238_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-26 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-08-26 | [Nord Security](../registry/jobs/2026-08-26_123238_nord-security_backend-engineer-mid-senior-php-go-payments-team/) | [Backend Engineer \| Mid - Senior \| PHP + Go \| Payments Team](../registry/jobs/2026-08-26_123238_nord-security_backend-engineer-mid-senior-php-go-payments-team/job.md) | Remote Poland | Custom | Found | 2026-08-26 | [Custom](https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f) | — | — | — | — | — |
 | 2026-08-26 | [Sonatus](../registry/jobs/2026-08-26_061030_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-26_061030_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
 | 2026-08-26 | [Canonical](../registry/jobs/2026-08-26_061030_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-26_061030_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
 | 2026-08-26 | [Canonical](../registry/jobs/2026-08-26_061030_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-26_061030_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-26 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |

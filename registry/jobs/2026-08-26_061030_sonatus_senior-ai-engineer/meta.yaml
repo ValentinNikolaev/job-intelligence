@@ -25,12 +25,12 @@ sources:
     - query_index: 3
       parameters:
         geo: europe
-        industry: dev
         count: '25'
         tag: golang
+        industry: dev
 published_at: '2026-08-25T04:15:29Z'
 discovered_at: '2026-08-26T06:10:30Z'
-updated_at: '2026-08-26T12:09:00Z'
+updated_at: '2026-08-26T12:32:49Z'
 status: found
 status_history:
 - status: found

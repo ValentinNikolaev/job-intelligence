@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sap-basis-senior-consultant-gescher-107678
+source_url: https://www.arbeitnow.com/jobs/companies/windhoff-group/sap-basis-senior-consultant-gescher-107678
+title: SAP Basis (Senior) Consultant (m/w/d)
+company: Windhoff Group
+location: Gescher
+published_at: '2026-08-26T08:01:33Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T12:32:31Z'
+rejected_at: '2026-08-26T12:32:31Z'

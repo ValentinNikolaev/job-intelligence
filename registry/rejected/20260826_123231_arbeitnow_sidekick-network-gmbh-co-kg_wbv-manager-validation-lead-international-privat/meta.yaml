@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: wbv-manager-validation-lead-international-private-connect-freelance-remote-eu-bonn-177630
+source_url: https://www.arbeitnow.com/jobs/companies/sidekick-network-gmbh-co-kg/wbv-manager-validation-lead-international-private-connect-freelance-remote-eu-bonn-177630
+title: WBV Manager / Validation Lead - International Private Connect (Freelance, Remote
+  EU)
+company: Sidekick Network GmbH & Co. KG
+location: Bonn
+published_at: '2026-08-26T11:00:46Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T12:32:31Z'
+rejected_at: '2026-08-26T12:32:31Z'

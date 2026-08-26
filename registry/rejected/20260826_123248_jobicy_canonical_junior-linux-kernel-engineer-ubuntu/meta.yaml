@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149520'
+source_url: https://jobicy.com/jobs/149520-junior-linux-kernel-engineer-ubuntu
+title: Junior Linux Kernel Engineer - Ubuntu
+company: Canonical
+location: Anywhere
+published_at: '2026-08-22T16:40:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T12:32:48Z'
+rejected_at: '2026-08-26T12:32:48Z'

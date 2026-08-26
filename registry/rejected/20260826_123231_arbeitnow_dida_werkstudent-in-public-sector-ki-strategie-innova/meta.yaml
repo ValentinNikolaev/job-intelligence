@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-werkstudentin-public-sector-ki-strategie-innovation-berlin-31406
+source_url: https://www.arbeitnow.com/jobs/companies/dida/remote-werkstudentin-public-sector-ki-strategie-innovation-berlin-31406
+title: Werkstudent*in Public Sector - KI Strategie & Innovation
+company: Dida
+location: Berlin
+published_at: '2026-08-26T08:30:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T12:32:31Z'
+rejected_at: '2026-08-26T12:32:31Z'

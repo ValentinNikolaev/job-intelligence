@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '369996'
+source_url: https://jobs.dou.ua/companies/remodevs/vacancies/369996/
+title: Senior PHP Fullstack Developer
+company: RemoDevs
+location: віддалено
+published_at: '2026-08-17'
+rejection_category: stale
+rejection_reason: published_at 2026-08-17 is older than 7 days
+updated_at: '2026-08-26T12:32:41Z'
+rejected_at: '2026-08-26T12:32:41Z'
