@@ -1,24 +1,33 @@
-score: 88
+score: 91
 recommendation: strong_match
-summary: Very strong PHP/Symfony, payment-gateway, API, database, reconciliation,
-  and reliability alignment, with directly relevant fintech and high-volume transactional-system
-  experience.
+summary: 'Strong fit for a remote PHP payments backend role: the candidate has 15+
+  years of backend experience, demonstrated Laravel, MySQL, API and high-load production
+  work, and direct payment-provider integration experience.'
 strengths:
-- Built integrations with Stripe, PayPal, and Skrill in a fintech exchange system.
-- Strong PHP, Symfony/Laravel, MySQL, REST API, RabbitMQ, and production troubleshooting
-  background.
-- Experience with transactions, payment-related flows, reconciliation scripts, event
-  notifications, and performance optimization.
+- PHP, Laravel, MySQL, REST APIs, GitHub Actions, and production reliability are explicitly
+  supported by recent backend experience.
+- Direct experience integrating Stripe, PayPal, and Skrill payment gateways, plus
+  PCI DSS-compliant backend work, closely aligns with payment-provider integration
+  and financial-process requirements.
+- Demonstrated high-load database optimization, resilient retry-based delivery pipelines,
+  event-driven systems, and RabbitMQ support the role's reliability and asynchronous-processing
+  needs.
+- The explicitly remote and flexible work format is compatible with the candidate's
+  Rome location and CET availability preference.
 gaps:
-- Redis-specific locking, rate limiting, and PubSub experience is not explicitly evidenced.
-- Chargeback and anti-fraud implementation details are not directly documented.
+- Redis-specific production experience is not established in the candidate evidence.
+- The profile does not explicitly confirm experience with payment webhooks, chargeback
+  or rollback logic, reconciliation, or payment state machines.
+- PHP 8.x version-specific experience is not explicitly stated.
 concerns:
-- The vacancy is in iGaming, so domain and product-risk expectations should be confirmed
-  during screening.
+- The payment integration evidence is from an earlier role, so its recency should
+  be discussed during the hiring process.
+- No salary range is published, and the candidate's compensation expectation remains
+  to be confirmed.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-25T13:34:04Z'
+analyzed_at: '2026-08-26T20:57:18Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:b1dc812ec74048376c2d8d9a311abe627274678b356032b6b501f5c924f36402
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-luna:low
+model: codex:gpt-5.6-terra:medium

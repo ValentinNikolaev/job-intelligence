@@ -3,21 +3,21 @@
 **Score:** 94/100  
 **Recommendation:** Strong Match
 
-Strong fit for a senior remote PHP/Laravel backend role, supported by extensive PHP and Laravel experience, production API and database work, AWS and Kubernetes operations, reliability improvements, and technical leadership.
+Strong senior PHP/Laravel backend fit with directly evidenced MySQL, REST API, AWS, production-reliability, CI/CD, observability, queueing, and technical-leadership experience. The remote role is compatible with the candidate's Rome/CET preference.
 
 ## Why it matches
 
-- Strong PHP and Laravel background with more than five years of senior backend experience.
-- Demonstrated production API, relational database, performance optimization, testing, and mature-codebase experience.
-- Relevant reliability, monitoring, incident troubleshooting, safe deployment, AWS, Kubernetes, CI/CD, queues, and event-driven systems experience.
-- Technical leadership, mentoring, code review, and end-to-end ownership are directly supported by the profile.
-- Remote work is explicitly offered, and English at upper-intermediate or higher is supported by the candidate profile.
+- 15+ years of backend experience across PHP and Go, including Laravel and senior technical-lead responsibilities.
+- Direct production experience with PHP, Laravel, MySQL, REST APIs, AWS, monitoring, logging, CI/CD, and performance and reliability work.
+- Proven work with asynchronous and event-driven systems through RabbitMQ, EventBridge, retries, fallback logic, and observable delivery pipelines.
+- Evidence of ownership from design through rollout and operations, plus mentoring, code reviews, and team leadership.
+- Remote work from Rome in CET-compatible hours and English at upper-intermediate or professional-working level align with the stated setup and B2 requirement.
 
 ## Gaps
 
-- Direct hands-on Node.js, Vue.js, or frontend implementation experience is not clearly established in the profile.
+- No direct candidate evidence of production Node.js services, Vue.js, GraphQL, or frontend architecture; these are optional or collaboration-oriented requirements.
+- No explicit evidence that AI-assisted development tools are used in the engineering workflow, although the profile documents AI and LLM automation work.
 
 ## Concerns
 
-- The posting does not specify compensation, so salary fit is unknown.
-- The remote arrangement is stated as remote or Dnipro office; exact timezone expectations are not specified.
+- Italy/EU work authorization, sponsorship needs, availability, and compensation are marked for candidate confirmation.
