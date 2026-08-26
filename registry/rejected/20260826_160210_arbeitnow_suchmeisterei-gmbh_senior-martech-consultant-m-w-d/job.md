@@ -97,4 +97,4 @@ Du musst nicht alles können. Das Feld ist breit, die Tiefe in einzelnen Diszipl
 
 Nach der Einarbeitung von etwa zwei Monaten kannst du größtenteils remote arbeiten, mit mindestens fünf Tagen pro Monat im Büro.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

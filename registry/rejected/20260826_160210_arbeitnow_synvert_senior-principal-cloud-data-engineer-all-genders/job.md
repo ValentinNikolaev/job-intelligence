@@ -68,4 +68,4 @@ Additional Benefits
 - Canteen and complimentary breakfast cereal bar.
 - Company breakfast every Friday to kick off the weekend together.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,6 +1,6 @@
 # Leiter:in IT / Kommunikationstechnik, Berlin, 100.000 - 130.000
 
-Posted: 2026-08-26T12:02:26Z
+Posted: 2026-08-26T16:17:31Z
 
 ## Rejection
 
@@ -145,4 +145,4 @@ das Geschlecht, das Alter, die sexuelle Identität oder Behinderungen
 
 weder mittelbar noch unmittelbar eine Rolle.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

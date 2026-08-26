@@ -95,4 +95,4 @@ das Geschlecht, das Alter, die sexuelle Identität oder Behinderungen
 
 weder mittelbar noch unmittelbar eine Rolle.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

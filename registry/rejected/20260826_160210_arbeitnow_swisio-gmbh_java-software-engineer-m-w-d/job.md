@@ -61,4 +61,4 @@ Mittelfristig werden wir unsere bewährten Lösungen auch in andere Branchen bri
 
 - Verhandlungssichere **Deutschkenntnisse, sehr gute Englischkenntnisse**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
