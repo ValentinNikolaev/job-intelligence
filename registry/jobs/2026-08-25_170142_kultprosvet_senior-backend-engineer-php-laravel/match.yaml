@@ -1,22 +1,29 @@
 score: 94
 recommendation: strong_match
-summary: Very strong remote PHP/Laravel fit supported by senior backend ownership,
-  production reliability, APIs, databases, AWS, and mentoring.
+summary: Strong fit for a senior remote PHP/Laravel backend role, supported by extensive
+  PHP and Laravel experience, production API and database work, AWS and Kubernetes
+  operations, reliability improvements, and technical leadership.
 strengths:
-- Deep PHP and Laravel experience with senior backend delivery.
-- Strong evidence for APIs, relational databases, migrations, performance, monitoring,
-  and incident response.
-- Direct experience with asynchronous processing, retries, integrations, and technical
-  leadership.
+- Strong PHP and Laravel background with more than five years of senior backend experience.
+- Demonstrated production API, relational database, performance optimization, testing,
+  and mature-codebase experience.
+- Relevant reliability, monitoring, incident troubleshooting, safe deployment, AWS,
+  Kubernetes, CI/CD, queues, and event-driven systems experience.
+- Technical leadership, mentoring, code review, and end-to-end ownership are directly
+  supported by the profile.
+- Remote work is explicitly offered, and English at upper-intermediate or higher is
+  supported by the candidate profile.
 gaps:
-- MySQL is listed in the candidate evidence but detailed schema and migration examples
-  are limited.
+- Direct hands-on Node.js, Vue.js, or frontend implementation experience is not clearly
+  established in the profile.
 concerns:
-- Compensation and the exact remote employment arrangement are unspecified.
+- The posting does not specify compensation, so salary fit is unknown.
+- The remote arrangement is stated as remote or Dnipro office; exact timezone expectations
+  are not specified.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-25T17:38:10Z'
+analyzed_at: '2026-08-26T16:34:19Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:f189de84aabb83541c2862b6f97d6f11d7a29df7937a64b178435e9db04a1558
+job_version: sha256:25ab7bf5ff8fc2ae32c785b83e16ee438b1dfc3a64e12dbc48a2d5c9e6ecf86e
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

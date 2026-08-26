@@ -3,18 +3,21 @@
 **Score:** 94/100  
 **Recommendation:** Strong Match
 
-Very strong remote PHP/Laravel fit supported by senior backend ownership, production reliability, APIs, databases, AWS, and mentoring.
+Strong fit for a senior remote PHP/Laravel backend role, supported by extensive PHP and Laravel experience, production API and database work, AWS and Kubernetes operations, reliability improvements, and technical leadership.
 
 ## Why it matches
 
-- Deep PHP and Laravel experience with senior backend delivery.
-- Strong evidence for APIs, relational databases, migrations, performance, monitoring, and incident response.
-- Direct experience with asynchronous processing, retries, integrations, and technical leadership.
+- Strong PHP and Laravel background with more than five years of senior backend experience.
+- Demonstrated production API, relational database, performance optimization, testing, and mature-codebase experience.
+- Relevant reliability, monitoring, incident troubleshooting, safe deployment, AWS, Kubernetes, CI/CD, queues, and event-driven systems experience.
+- Technical leadership, mentoring, code review, and end-to-end ownership are directly supported by the profile.
+- Remote work is explicitly offered, and English at upper-intermediate or higher is supported by the candidate profile.
 
 ## Gaps
 
-- MySQL is listed in the candidate evidence but detailed schema and migration examples are limited.
+- Direct hands-on Node.js, Vue.js, or frontend implementation experience is not clearly established in the profile.
 
 ## Concerns
 
-- Compensation and the exact remote employment arrangement are unspecified.
+- The posting does not specify compensation, so salary fit is unknown.
+- The remote arrangement is stated as remote or Dnipro office; exact timezone expectations are not specified.
