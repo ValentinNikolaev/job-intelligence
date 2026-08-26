@@ -1,0 +1,22 @@
+score: 18
+recommendation: not_match
+summary: The candidate has relevant Go, cloud, automation, and production-system experience,
+  but the role centers on deep AI/ML engineering and specialized automotive or embedded
+  work not evidenced in the profile.
+strengths:
+- Go, AWS, Kubernetes, backend systems, automation, and production reliability are
+  supported.
+gaps:
+- Deep machine-learning engineering, model development, RAG or multi-agent systems,
+  and the role-specific AI stack are not evidenced.
+- Automotive, embedded, and edge-device experience is not evidenced.
+concerns:
+- The vacancy’s core AI specialization appears substantially beyond the documented
+  backend and automation profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-26T13:32:36Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a09a4e81217f85402b5857110b214e8ee604863846722161a9cb2ff1679d5b7a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

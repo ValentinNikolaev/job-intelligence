@@ -1,0 +1,21 @@
+score: 90
+recommendation: strong_match
+summary: PHP and Go backend experience, payment integrations, event-driven services,
+  databases, cloud infrastructure, and production reliability closely match a mid-senior
+  payments engineering role.
+strengths:
+- Go and PHP backend systems, payment gateways, APIs, event-driven architecture, queues,
+  and databases are directly supported.
+- Fintech-related systems, reliability, performance optimization, Kubernetes, AWS,
+  and cross-functional delivery are supported.
+gaps:
+- Nord Security-specific product, security, and compliance experience is not evidenced.
+concerns:
+- The exact location and on-call expectations are not established in the sealed posting.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-26T13:32:36Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:1b1c232c15c53c0008888cb4ffafc480081504f7adcee0f14b9bca65dadf43df
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,22 @@
+score: 78
+recommendation: match
+summary: The PHP backend role aligns strongly with the candidate’s long PHP experience,
+  Laravel/Symfony background, APIs, databases, and production reliability work, while
+  the AI-oriented scope is only partly evidenced.
+strengths:
+- PHP backend development, Laravel/Symfony, APIs, databases, integrations, and production
+  troubleshooting are supported.
+- Remote backend ownership, automation, and collaboration across product and engineering
+  are supported.
+gaps:
+- The profile does not establish the specific AI/LLM frameworks or depth of AI-oriented
+  backend work expected by the posting.
+concerns:
+- Exact remote/location terms and the role’s proportion of AI work should be verified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-26T13:32:36Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:118f9371b9b0ca44312d51338508671e07f2e0408d8a3dbf3663f7404717b67d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

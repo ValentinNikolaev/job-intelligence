@@ -1,0 +1,22 @@
+score: 48
+recommendation: possible_match
+summary: Go, Kubernetes, cloud infrastructure, microservices, performance, and reliability
+  work align partially, but open-source virtualization or container technology and
+  kernel-level systems experience are not evidenced.
+strengths:
+- Go, Kubernetes, AWS, microservices, performance optimization, reliability, and a
+  relevant degree are supported.
+- Remote distributed engineering experience is compatible.
+gaps:
+- Kernel or very-low-level systems work, VMMs, namespaces, and upstream open-source
+  virtualization or container contributions are not evidenced.
+concerns:
+- The role may target system-level engineering substantially deeper than the candidate’s
+  documented application/backend focus.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-26T13:32:36Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:4c328ed7148fcbb211183eb03856d3f2a66840de8595199030a652c471b4c7c5
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
