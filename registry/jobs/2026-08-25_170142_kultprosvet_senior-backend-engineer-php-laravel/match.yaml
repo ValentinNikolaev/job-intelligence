@@ -1,31 +1,22 @@
 score: 94
 recommendation: strong_match
-summary: Strong senior PHP/Laravel backend fit with directly evidenced MySQL, REST
-  API, AWS, production-reliability, CI/CD, observability, queueing, and technical-leadership
-  experience. The remote role is compatible with the candidate's Rome/CET preference.
+summary: Strong match for a senior PHP/Laravel backend role, supported by extensive
+  PHP, Laravel, backend architecture, databases, cloud infrastructure, and technical
+  leadership experience.
 strengths:
-- 15+ years of backend experience across PHP and Go, including Laravel and senior
-  technical-lead responsibilities.
-- Direct production experience with PHP, Laravel, MySQL, REST APIs, AWS, monitoring,
-  logging, CI/CD, and performance and reliability work.
-- Proven work with asynchronous and event-driven systems through RabbitMQ, EventBridge,
-  retries, fallback logic, and observable delivery pipelines.
-- Evidence of ownership from design through rollout and operations, plus mentoring,
-  code reviews, and team leadership.
-- Remote work from Rome in CET-compatible hours and English at upper-intermediate
-  or professional-working level align with the stated setup and B2 requirement.
+- Extensive PHP and Laravel backend experience with senior and technical-lead responsibilities.
+- Strong evidence in APIs, microservices, databases, AWS, Kubernetes, CI/CD, performance,
+  and production reliability.
 gaps:
-- No direct candidate evidence of production Node.js services, Vue.js, GraphQL, or
-  frontend architecture; these are optional or collaboration-oriented requirements.
-- No explicit evidence that AI-assisted development tools are used in the engineering
-  workflow, although the profile documents AI and LLM automation work.
+- The posting-specific domain and exact team practices are not fully established in
+  the candidate profile.
 concerns:
-- Italy/EU work authorization, sponsorship needs, availability, and compensation are
-  marked for candidate confirmation.
+- Role scope, compensation, and precise location expectations are not stated in the
+  available evidence.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-26T20:56:50Z'
+analyzed_at: '2026-08-26T21:44:48Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:25ab7bf5ff8fc2ae32c785b83e16ee438b1dfc3a64e12dbc48a2d5c9e6ecf86e
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low
