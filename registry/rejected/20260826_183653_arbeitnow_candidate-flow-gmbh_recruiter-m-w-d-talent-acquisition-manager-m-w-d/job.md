@@ -179,4 +179,4 @@ Du beherrschst die deutsche Sprache sicher in Wort und Schrift (C2-Niveau)
 
 Du bist digital affin und findest dich schnell in neuen Tools zurecht
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

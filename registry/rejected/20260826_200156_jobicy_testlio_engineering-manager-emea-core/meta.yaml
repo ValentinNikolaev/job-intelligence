@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151450'
+source_url: https://jobicy.com/jobs/151450-engineering-manager-emea-core
+title: Engineering Manager, EMEA (Core)
+company: Testlio
+location: EMEA
+published_at: '2026-08-24T12:09:14Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T20:01:56Z'
+rejected_at: '2026-08-26T20:01:56Z'

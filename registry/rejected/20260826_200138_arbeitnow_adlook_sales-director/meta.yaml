@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: sales-director-hamburg-germany-228427
+source_url: https://www.arbeitnow.com/jobs/companies/adlook/sales-director-hamburg-germany-228427
+title: Sales Director
+company: Adlook
+location: Hamburg, Germany
+published_at: '2026-08-26T17:24:59Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-26T20:01:38Z'
+rejected_at: '2026-08-26T20:01:38Z'

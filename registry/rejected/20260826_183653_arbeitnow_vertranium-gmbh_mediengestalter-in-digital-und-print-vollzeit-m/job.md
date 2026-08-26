@@ -87,4 +87,4 @@ Keywords: Mediengestalter (m/w/d) im Raum Stuttgart
 
 **Bewirb dich jetzt und werde Teil des Vertranium-Teams!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

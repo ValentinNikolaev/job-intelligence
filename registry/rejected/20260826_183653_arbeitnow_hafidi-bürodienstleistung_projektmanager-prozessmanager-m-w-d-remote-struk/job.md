@@ -57,4 +57,4 @@ Das Unternehmen berät Unternehmer mit dem Ziel, Einnahmen und Ausgaben strategi
 
 Wenn du Verantwortung übernehmen willst und strukturiert arbeitest, freuen wir uns auf deine Bewerbung. Die Unterlagen werden an J. Poppe & Partner weitergeleitet. Eine direkte Kontaktaufnahme erfolgt zeitnah.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

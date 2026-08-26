@@ -34,4 +34,4 @@ Posted: 2026-08-26T14:10:10Z
 - Kurze Wege und direktes Feedbackin einem kleinen, schnellen Team.
 - Entwicklungsperspektive:Bei guter Zusammenarbeit ist ein Ausbau der Rolle bis hin zum Einstieg nach dem Studium möglich.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

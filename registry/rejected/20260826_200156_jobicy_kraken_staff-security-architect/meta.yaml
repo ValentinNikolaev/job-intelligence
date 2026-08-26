@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '144336'
+source_url: https://jobicy.com/jobs/144336-staff-security-architect
+title: Staff Security Architect
+company: Kraken
+location: EMEA,  LATAM,  Canada,  Europe
+published_at: '2026-08-23T05:10:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-26T20:01:56Z'
+rejected_at: '2026-08-26T20:01:56Z'

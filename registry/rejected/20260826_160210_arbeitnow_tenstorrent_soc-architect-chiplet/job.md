@@ -49,4 +49,4 @@ The Architecture team at Tenstorrent is designing the central compute chiplet th
 
 *This offer of employment is contingent upon the applicant being eligible to access U.S. export-controlled technology. Due to U.S. export laws, including those codified in the U.S. Export Administration Regulations (EAR), the Company is required to ensure compliance with these laws when transferring technology to nationals of certain countries (such as EAR Country Groups D:1, E1, and E2). These requirements apply to persons located in the U.S. and all countries outside the U.S. As the position offered will have direct and/or indirect access to information, systems, or technologies subject to these laws, the offer may be contingent upon your citizenship/permanent residency status or ability to obtain prior license approval from the U.S. Commerce Department or applicable federal agency. If employment is not possible due to U.S. export laws, any offer of employment will be rescinded.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
