@@ -1,0 +1,22 @@
+score: 22
+recommendation: not_match
+summary: The role requires deep embedded Linux plumbing, distribution packaging, boot
+  and firmware, and customer-facing field engineering; the candidate profile shows
+  backend and cloud systems expertise but not those essential embedded competencies.
+strengths:
+- Strong Go/backend engineering and production troubleshooting background.
+- Experience with Kubernetes, CI/CD, observability, and system reliability.
+gaps:
+- No demonstrated embedded Linux, Yocto, Buildroot, firmware, BIOS/EFI, Secure Boot,
+  or distribution-packaging experience.
+- No evidence of the required customer presales and field-engagement responsibilities.
+concerns:
+- Up to 30% travel and local-language requirements may also require confirmation.
+hard_rejection: true
+hard_rejection_reason: Essential embedded Linux and low-level firmware/distribution
+  experience is not supported by the candidate profile.
+analyzed_at: '2026-08-26T20:38:50Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:5c8aef4583c2de05b91b75d3758e726598d79c74f3ffe094d20fb8c6793e2943
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

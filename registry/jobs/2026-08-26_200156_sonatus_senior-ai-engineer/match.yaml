@@ -1,0 +1,23 @@
+score: 12
+recommendation: not_match
+summary: The role is centered on AI engineering and model-focused production work,
+  while the candidate profile primarily demonstrates backend systems, automation,
+  Go, PHP, and infrastructure experience rather than core AI engineering.
+strengths:
+- Strong backend engineering and production reliability background.
+- Relevant Go, automation, observability, and distributed-systems experience.
+gaps:
+- No explicit evidence of machine-learning model development, training, evaluation,
+  or AI research.
+- No clear evidence of the role’s likely AI/ML-specific stack.
+concerns:
+- The posting’s central AI-engineering focus is materially broader than the demonstrated
+  backend automation experience.
+hard_rejection: true
+hard_rejection_reason: Essential AI-engineering experience is central to the role
+  and is not supported by the candidate profile.
+analyzed_at: '2026-08-26T20:38:50Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:5f05c9a0e208139b38a994400f8386d542f382d277d093acbb41a1fcbe983375
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
