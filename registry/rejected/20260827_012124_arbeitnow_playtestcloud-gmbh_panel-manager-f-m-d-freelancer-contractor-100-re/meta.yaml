@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: panel-manager-freelancer-contractor-100-remote-possible-berlin-427505
+source_url: https://www.arbeitnow.com/jobs/companies/playtestcloud-gmbh/panel-manager-freelancer-contractor-100-remote-possible-berlin-427505
+title: Panel Manager (f/m/d) - Freelancer / Contractor; 100% remote possible
+company: PlaytestCloud GmbH
+location: Remote job
+published_at: '2026-08-26T20:30:22Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-27T01:21:24Z'
+rejected_at: '2026-08-27T01:21:24Z'
