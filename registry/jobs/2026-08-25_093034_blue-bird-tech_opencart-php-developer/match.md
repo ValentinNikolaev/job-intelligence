@@ -3,18 +3,17 @@
 **Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong PHP backend match with relevant e-commerce and API experience, subject to confirming the OpenCart-specific depth.
+OpenCart/PHP backend work is highly aligned with the candidate’s extensive PHP, e-commerce, API, database, and production engineering background.
 
 ## Why it matches
 
-- Extensive PHP backend experience with Laravel, Symfony, databases, and REST APIs.
-- E-commerce experience is explicitly represented in the candidate background.
-- Senior production ownership and performance-optimization experience are relevant.
+- Strong PHP and e-commerce-related backend evidence.
+- Documented API, database, performance, integrations, and production support experience.
 
 ## Gaps
 
-- OpenCart experience is not explicitly evidenced.
+- OpenCart-specific experience is not explicitly documented.
 
 ## Concerns
 
-- The vacancy's remote and location terms are not established by the sealed record.
+- Confirm the role’s seniority and remote/location terms.

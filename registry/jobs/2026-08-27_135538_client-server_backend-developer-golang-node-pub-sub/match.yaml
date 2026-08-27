@@ -1,0 +1,18 @@
+score: 72
+recommendation: match
+summary: Go backend, event-driven systems, queues, APIs, and reliability work align
+  well with the role; Node.js is the main evidence gap.
+strengths:
+- Go backend and event-driven message delivery experience.
+- Queues, retries, observability, and scalable APIs are documented.
+gaps:
+- Node.js experience is not established in the candidate evidence.
+concerns:
+- The sealed listing provides limited detail on location and employment conditions.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-27T13:57:13Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d72b675c64e0b002497684a02c304dc2730de7dca7806a6d4b3022257a644ded
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

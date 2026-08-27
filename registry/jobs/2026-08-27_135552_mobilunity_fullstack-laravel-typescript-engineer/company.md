@@ -1,0 +1,3 @@
+# Mobilunity
+
+Mobilunity is a provider of dedicated development teams aiming to bring European corporate culture to the Ukrainian IT-labor market. By our own example, we are proving that the dedicated team model works the best in all directions including employee’s interests as people have always been our main asset. Joining Mobilunity...

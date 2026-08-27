@@ -1,0 +1,20 @@
+score: 48
+recommendation: possible_match
+summary: Go, Kubernetes, AWS, microservices, CI/CD, and reliability experience align
+  with cloud infrastructure, but low-level open-source container or virtualization
+  engineering is not shown.
+strengths:
+- Documented Go development and Kubernetes migration work.
+- Microservices, cloud infrastructure, CI/CD, and performance optimization experience.
+gaps:
+- No demonstrated kernel, VMM, OCI/container-runtime, or open-source virtualization
+  work.
+concerns:
+- The posting specifically seeks exceptional low-level systems expertise.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-27T13:57:13Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:790de9f63e8013bd9c3766b11dbb433f0efe98f960dc0cbee7c487b5b29faeff
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

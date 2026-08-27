@@ -1,0 +1,14 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/keyrock-com/jobs/senior-rust-engineer-high-frequency-trading-hft
+source_url: https://himalayas.app/companies/keyrock-com/jobs/senior-rust-engineer-high-frequency-trading-hft
+title: Senior Rust Engineer - High Frequency Trading (HFT)
+company: Keyrock
+location: Austria, Bahrain, Bulgaria, Croatia, Czechia, Denmark, Estonia, France,
+  Germany, Greece, Hungary, Ireland, Italy, Luxembourg, Netherlands, Poland, Portugal,
+  Spain, Switzerland, Turkey, United Kingdom
+published_at: '2026-08-11T04:03:51Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-11T04:03:51Z is older than 7 days
+updated_at: '2026-08-27T13:55:58Z'
+rejected_at: '2026-08-27T13:55:58Z'

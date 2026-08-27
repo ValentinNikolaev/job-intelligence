@@ -1,0 +1,18 @@
+score: 20
+recommendation: not_match
+summary: The candidate is a 15+ year senior backend engineer and technical lead, while
+  this vacancy is explicitly graduate/junior level.
+strengths:
+- Backend engineering and cloud experience are relevant in isolation.
+gaps:
+- The required junior level is incompatible with the candidate profile.
+concerns:
+- The role may not use the candidate’s senior PHP/Go depth.
+hard_rejection: true
+hard_rejection_reason: 'Fundamentally incompatible seniority: the role is explicitly
+  graduate/junior.'
+analyzed_at: '2026-08-27T13:57:13Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:ebc7a37b964aa4f0726c2890d0d54fdc2314c7064104aa2bb5bd5330ca4ab493
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

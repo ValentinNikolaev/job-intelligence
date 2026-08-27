@@ -1,0 +1,34 @@
+schema_version: 2
+id: f5d02b96-b748-4311-a69a-9ac10155d8ed
+title: Senior PHP Backend Engineer
+company: Jamworks
+company_url: https://jobs.dou.ua/companies/jamworks/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371158'
+  url: https://jobs.dou.ua/companies/jamworks/vacancies/371158/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 27 серпня
+    listing_summary: About the Role We are looking for an experienced Senior PHP Backend
+      Engineer to join our backend team and help us build and evolve reliable, scalable,
+      and maintainable systems.
+published_at: '2026-08-27'
+discovered_at: '2026-08-27T13:55:52Z'
+updated_at: '2026-08-27T13:55:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-27T13:55:52Z'
+analysis_priority: 100
+fingerprint: sha256:21a7c449f0ca689370ffd7369e39539c30a8bc9c32135dafbda49cfb44106c0a
+data_source: dou
+content_source: dou
+company_content_source: dou

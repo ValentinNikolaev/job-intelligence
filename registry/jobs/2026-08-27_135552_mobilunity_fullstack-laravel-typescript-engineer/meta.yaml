@@ -1,0 +1,38 @@
+schema_version: 2
+id: b73361d2-8428-46e0-b4bd-077663c039d2
+title: Fullstack Laravel/TypeScript Engineer
+company: Mobilunity
+company_url: https://jobs.dou.ua/companies/mobilunity/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371170'
+  url: https://jobs.dou.ua/companies/mobilunity/vacancies/371170/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 27 серпня
+    listing_summary: 'On behalf of our Client from France, Mobilunity is looking for
+      a Fullstack Engineer.
+
+
+      Our client is a table management software and CRM that enables restaurant owners
+      to welcome their customers easily. The app is useful to manage booking requests
+      and register new bookings.'
+published_at: '2026-08-27'
+discovered_at: '2026-08-27T13:55:52Z'
+updated_at: '2026-08-27T13:55:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-27T13:55:52Z'
+analysis_priority: 100
+fingerprint: sha256:1460f3ab74d9ae85bd633e53b681c8aa60a26070bc485a45b7bd1868f0b85481
+data_source: dou
+content_source: dou
+company_content_source: dou

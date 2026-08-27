@@ -3,7 +3,7 @@ id: cfd968d1-6acb-4a34-8a11-20630bfddd69
 title: OpenCart/PHP Developer
 company: Blue-Bird.Tech
 company_url: https://jobs.dou.ua/companies/blue-bird-tech/vacancies/
-location: Одеса, віддалено
+location: віддалено
 remote: true
 employment_type: null
 sources:
@@ -23,13 +23,13 @@ sources:
       штучного інтелекту та систем безпеки.
 published_at: '2026-08-25'
 discovered_at: '2026-08-25T09:30:34Z'
-updated_at: '2026-08-25T09:30:34Z'
+updated_at: '2026-08-27T13:55:52Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-08-25T09:30:34Z'
 analysis_priority: 100
-fingerprint: sha256:877421ea93e350af39ce9af736d42ba65667049d64cea6b9cc8759f66eceb79c
+fingerprint: sha256:2ae1e72c45657f2065686f2360b32da9e57a94e41b790def206b269327ed9057
 data_source: dou
 content_source: dou
 company_content_source: dou
