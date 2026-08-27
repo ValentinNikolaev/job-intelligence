@@ -1,0 +1,22 @@
+score: 48
+recommendation: possible_match
+summary: The role matches the candidate’s Go, Kubernetes, cloud, CI/CD, and reliability
+  background, but requires open-source container or virtualization and low-level kernel
+  experience not evidenced.
+strengths:
+- Go backend development
+- Kubernetes migration, Helm, ArgoCD, AWS, and CI/CD
+- Microservices, performance optimization, and production reliability
+gaps:
+- No demonstrated open-source virtualization/container project work
+- No explicit kernel, VMM, namespaces, confinement, or low-level networking/storage
+  experience
+concerns:
+- Canonical expects upstream community engagement and exceptional systems-level depth
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-27T17:56:11Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f889f86792363aa3cc5cc24f7e01c944093a33ee6ba4725509a7f6372168ed71
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

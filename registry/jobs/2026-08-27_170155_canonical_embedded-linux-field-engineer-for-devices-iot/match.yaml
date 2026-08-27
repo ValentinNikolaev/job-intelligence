@@ -1,0 +1,22 @@
+score: 22
+recommendation: not_match
+summary: The remote and Go-compatible aspects fit, but the role is centered on embedded
+  Linux plumbing, boot and firmware, packaging, and customer field work absent from
+  the profile.
+strengths:
+- Go experience
+- Kubernetes, CI/CD, monitoring, and production troubleshooting
+- Communication and technical leadership experience
+gaps:
+- No demonstrated embedded Linux, Yocto/Buildroot, boot/BIOS/EFI, Secure Boot, firmware,
+  or distribution packaging experience
+concerns:
+- Up to 30% customer and conference travel is required
+hard_rejection: true
+hard_rejection_reason: Embedded Linux and low-level device expertise are essential
+  requirements and are not supported by the candidate profile.
+analyzed_at: '2026-08-27T17:56:11Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:412d2820e75e2e5a85e04ff14612ed71271fdfba3c638eeea23fb595f3bd96a0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
