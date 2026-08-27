@@ -69,4 +69,4 @@ Wir bieten dir die Chance, schon während deines Studiums Verantwortung zu über
 
 - Profitiere von **Benefits & Rabatten** durch Futurebens
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -107,4 +107,4 @@ Sicherer Umgang mit MS Office, insbesondere Excel, sowie Erfahrung im Umgang mit
 
 **NAHBARKEIT UND PERSÖNLICHER KONTAKT: **Wir sind ein freundliches und offenes Team mit einer gemeinsamen Leidenschaft für Events. Durch AfterWork-Partys, Mitarbeiter-Events und Networking-Veranstaltungen zwischen den Teams schaffen wir Möglich­­­­­­­­­­­­­keiten für den abteilungsübergreifenden Austausch.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -61,4 +61,4 @@ Unsere Werte sind neben der Verbindung von wirkungsstarken und gesunden Inhaltss
 
 Wenn DU sagst: Ja, das ist mein Ding, hier will ich etwas dazu beisteuern - schick uns deine Unterlagen und lass uns zusammen den Sportnahrungsmarkt aufmischen. Erzähle uns auch gerne, warum du in unser Team passt und wieso wir auf gar keinen Fall auf dich und dein Know- How verzichten sollten. Schick uns auch dein Datum, zu dem du starten kannst.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

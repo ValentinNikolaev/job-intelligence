@@ -99,4 +99,4 @@ Send your CV along with a brief note on why this role interests you and what you
 
 We are looking forward to your application!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

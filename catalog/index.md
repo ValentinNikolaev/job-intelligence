@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 65
+Total vacancies: 71
 
-- Found: 48
+- Found: 54
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,12 @@ Total vacancies: 65
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-27 | [Sonatus](../registry/jobs/2026-08-27_170155_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-27_170155_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_170155_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-27_170155_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_170155_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-27_170155_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_170155_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-27_170155_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-27 | [ShippyPro](../registry/jobs/2026-08-27_170144_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-27_170144_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-27 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-08-27 | [Contabo](../registry/jobs/2026-08-27_170136_contabo_solution-architect-all-genders/) | [Solution Architect (all genders)](../registry/jobs/2026-08-27_170136_contabo_solution-architect-all-genders/job.md) | Remote (Germany) | Arbeitnow | Found | 2026-08-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/contabo/remote-solution-architect-all-genders-135955) | — | — | — | — | — |
 | 2026-08-27 | [Nova Digital](../registry/jobs/2026-08-27_154011_nova-digital_php-developer-mobile-app-nova-post/) | [PHP Developer (Mobile App Nova Post)](../registry/jobs/2026-08-27_154011_nova-digital_php-developer-mobile-app-nova-post/job.md) | віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/nova-digital/vacancies/371133/) | [Open](../registry/jobs/2026-08-27_154011_nova-digital_php-developer-mobile-app-nova-post/company.md) | — | — | — | — |
 | 2026-08-27 | [Jamworks](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/) | [Senior PHP Backend Engineer](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/job.md) | віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/jamworks/vacancies/371158/) | [Open](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/company.md) | — | — | — | — |
 | 2026-08-27 | [Mobilunity](../registry/jobs/2026-08-27_135552_mobilunity_fullstack-laravel-typescript-engineer/) | [Fullstack Laravel/TypeScript Engineer](../registry/jobs/2026-08-27_135552_mobilunity_fullstack-laravel-typescript-engineer/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/mobilunity/vacancies/371170/) | [Open](../registry/jobs/2026-08-27_135552_mobilunity_fullstack-laravel-typescript-engineer/company.md) | — | — | — | — |

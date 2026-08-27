@@ -111,4 +111,4 @@ Fähigkeit, bestehende Workflows zu verstehen, weiterzuentwickeln und sauber zu 
 
 Sicherer schriftlicher Ausdruck und verständliche Kommunikation
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

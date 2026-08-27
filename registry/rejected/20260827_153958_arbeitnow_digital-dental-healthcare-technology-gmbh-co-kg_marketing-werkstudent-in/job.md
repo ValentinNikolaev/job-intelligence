@@ -65,4 +65,4 @@ Als Werkstudent*in unterstützt du unser eigenes wie auch das Marketing unserer 
 
 Dann freuen wir uns auf deine Bewerbung! Unterstütze uns dabei, echten Impact bei Patienten zu haben!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151649'
+source_url: https://jobicy.com/jobs/151649-senior-applied-research-engineer-video
+title: Senior Applied Research Engineer - Video
+company: Synthesia
+location: Europe,  UK
+published_at: '2026-08-26T04:37:04Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-27T17:01:55Z'
+rejected_at: '2026-08-27T17:01:55Z'
