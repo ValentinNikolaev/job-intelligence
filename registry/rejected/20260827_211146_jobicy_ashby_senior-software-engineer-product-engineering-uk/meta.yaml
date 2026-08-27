@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151860'
+source_url: https://jobicy.com/jobs/151860-senior-software-engineer-product-engineering-uk
+title: Senior Software Engineer, Product Engineering - UK
+company: Ashby
+location: UK
+published_at: '2026-08-27T16:01:07Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-27T21:11:46Z'
+rejected_at: '2026-08-27T21:11:46Z'

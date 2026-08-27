@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: kaufmannische-geschaftsfuhrung-coo-all-genders-80-berlin-454490
+source_url: https://www.arbeitnow.com/jobs/companies/reflecta-ggmbh/kaufmannische-geschaftsfuhrung-coo-all-genders-80-berlin-454490
+title: Kaufmännische Geschäftsführung / COO (all genders), 80%
+company: Reflecta gGmbH
+location: Berlin
+published_at: '2026-08-27T17:30:39Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-27T21:11:25Z'
+rejected_at: '2026-08-27T21:11:25Z'

@@ -2,24 +2,18 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 65
 
-- Found: 51
+- Found: 46
 - Applied: 16
 - Interview: 1
-- Rejected: 3
+- Rejected: 2
 
 ## Vacancies
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-08-27 | [Sonatus](../registry/jobs/2026-08-27_170155_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-27_170155_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
-| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_170155_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-27_170155_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
-| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_170155_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-27_170155_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
-| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_170155_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-27_170155_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
-| 2026-08-27 | [ShippyPro](../registry/jobs/2026-08-27_170144_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-27_170144_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Rejected | 2026-08-27 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
-| 2026-08-27 | [Contabo](../registry/jobs/2026-08-27_170136_contabo_solution-architect-all-genders/) | [Solution Architect (all genders)](../registry/jobs/2026-08-27_170136_contabo_solution-architect-all-genders/job.md) | Remote (Germany) | Arbeitnow | Found | 2026-08-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/contabo/remote-solution-architect-all-genders-135955) | — | — | — | — | — |
-| 2026-08-27 | [Nova Digital](../registry/jobs/2026-08-27_154011_nova-digital_php-developer-mobile-app-nova-post/) | [PHP Developer (Mobile App Nova Post)](../registry/jobs/2026-08-27_154011_nova-digital_php-developer-mobile-app-nova-post/job.md) | віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/nova-digital/vacancies/371133/) | [Open](../registry/jobs/2026-08-27_154011_nova-digital_php-developer-mobile-app-nova-post/company.md) | — | — | — | — |
+| 2026-08-27 | [virtual7 GmbH](../registry/jobs/2026-08-27_211125_virtual7-gmbh_lead-entwickler-java-backend-m-w-d/) | [Lead-Entwickler Java Backend (m/w/d)](../registry/jobs/2026-08-27_211125_virtual7-gmbh_lead-entwickler-java-backend-m-w-d/job.md) | Homeoffice | Arbeitnow | Found | 2026-08-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-lead-entwickler-java-backend-nurnberg-414025) | — | — | — | — | — |
 | 2026-08-27 | [Jamworks](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/) | [Senior PHP Backend Engineer](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/job.md) | віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/jamworks/vacancies/371158/) | [Open](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/company.md) | — | — | — | — |
 | 2026-08-27 | [Mobilunity](../registry/jobs/2026-08-27_135552_mobilunity_fullstack-laravel-typescript-engineer/) | [Fullstack Laravel/TypeScript Engineer](../registry/jobs/2026-08-27_135552_mobilunity_fullstack-laravel-typescript-engineer/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/mobilunity/vacancies/371170/) | [Open](../registry/jobs/2026-08-27_135552_mobilunity_fullstack-laravel-typescript-engineer/company.md) | — | — | — | — |
 | 2026-08-27 | [Client Server](../registry/jobs/2026-08-27_135538_client-server_backend-developer-golang-node-pub-sub/) | [Backend Developer Golang Node Pub / Sub](../registry/jobs/2026-08-27_135538_client-server_backend-developer-golang-node-pub-sub/job.md) | The City, Central London | Adzuna | Found | 2026-08-27 | [Adzuna](https://www.adzuna.co.uk/jobs/details/5858255806?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |

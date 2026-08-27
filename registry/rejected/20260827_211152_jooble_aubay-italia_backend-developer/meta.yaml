@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1969217950766802796'
+source_url: https://jooble.org/away/-1969217950766802796?p=1&pos=2&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=135&brelb=10&scr=86.73898&bscr=86.73898&aq=-3412031394220916682&elckey=5117309971776719826
+title: Backend Developer
+company: Aubay Italia
+location: Italian Republic
+published_at: '2026-08-22T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-27T21:11:52Z'
+rejected_at: '2026-08-27T21:11:52Z'
