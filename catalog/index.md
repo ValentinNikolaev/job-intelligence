@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 60
+Total vacancies: 65
 
-- Found: 43
+- Found: 48
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,11 @@ Total vacancies: 60
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_090324_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-27_090324_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_090324_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-27_090324_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-27 | [Canonical](../registry/jobs/2026-08-27_090324_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-27_090324_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-27 | [Sonatus](../registry/jobs/2026-08-27_090324_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-27_090324_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-27 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-27 | [ITDS Polska Sp. z o.o.](../registry/jobs/2026-08-27_090300_itds-polska-sp-z-o-o_senior-backend-developer-node-js-go/) | [Senior Backend Developer – Node.js & Go](../registry/jobs/2026-08-27_090300_itds-polska-sp-z-o-o_senior-backend-developer-node-js-go/job.md) | Kraków, małopolskie | Adzuna | Found | 2026-08-27 | [Adzuna](https://www.adzuna.pl/details/5858013861?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-08-26 | [Frozeneon](../registry/jobs/2026-08-26_123241_frozeneon_middle-php-backend-developer-ai-oriented/) | [Middle PHP Backend Developer (AI Oriented)](../registry/jobs/2026-08-26_123241_frozeneon_middle-php-backend-developer-ai-oriented/job.md) | віддалено | Dou | Found | 2026-08-26 | [Dou](https://jobs.dou.ua/companies/frozeneon/vacancies/371043/) | [Open](../registry/jobs/2026-08-26_123241_frozeneon_middle-php-backend-developer-ai-oriented/company.md) | — | — | — | — |
 | 2026-08-26 | [Nord Security](../registry/jobs/2026-08-26_123238_nord-security_backend-engineer-mid-senior-php-go-payments-team/) | [Backend Engineer \| Mid - Senior \| PHP + Go \| Payments Team](../registry/jobs/2026-08-26_123238_nord-security_backend-engineer-mid-senior-php-go-payments-team/job.md) | Remote Poland | Custom | Found | 2026-08-26 | [Custom](https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f) | — | — | — | — | — |
 | 2026-08-26 | [Lithos](../registry/jobs/2026-08-26_061018_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-08-26_061018_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-08-26 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
