@@ -18,11 +18,13 @@ sources:
       and may involve occasional HQ meetings.
 published_at: null
 discovered_at: '2026-08-27T17:01:44Z'
-updated_at: '2026-08-27T17:01:44Z'
-status: found
+updated_at: '2026-08-27T19:05:34Z'
+status: rejected
 status_history:
 - status: found
   changed_at: '2026-08-27T17:01:44Z'
+- status: rejected
+  changed_at: '2026-08-27T19:05:34Z'
 analysis_priority: 100
 fingerprint: sha256:7bd9f4884fecd8b7cbe984c60c9a5fb30587f50bae8940319a76f1d3cd948ac6
 data_source: custom
