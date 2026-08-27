@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1484739468225585069'
+source_url: https://jooble.org/away/-1484739468225585069?p=1&pos=12&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=57&brelb=10&scr=28.587502&bscr=28.587502&aq=-3080293142106053777&elckey=3473753395571192563
+title: Senior software engineer
+company: Skillvue
+location: Italian Republic
+published_at: '2026-08-25T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-27T15:40:27Z'
+rejected_at: '2026-08-27T15:40:27Z'
