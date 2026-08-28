@@ -1,0 +1,33 @@
+score: 22
+recommendation: not_match
+summary: The candidate has backend Go and cloud experience, but the role requires
+  embedded Linux, distribution packaging, firmware, and low-level device expertise
+  that are not demonstrated.
+strengths:
+- Demonstrated Go programming and backend systems experience.
+- Kubernetes
+- AWS
+- CI/CD
+- monitoring
+- and operational troubleshooting experience.
+gaps:
+- No demonstrated embedded Linux
+- Yocto
+- Buildroot
+- firmware
+- or distribution-packaging experience.
+- No evidence of low-level boot
+- BIOS
+- EFI
+- or Secure Boot work.
+concerns:
+- Customer-facing field engineering and up-to-30% travel requirements are not addressed
+  in the profile.
+hard_rejection: true
+hard_rejection_reason: Essential embedded Linux and low-level device engineering experience
+  is not demonstrated.
+analyzed_at: '2026-08-28T20:01:03Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d52b6904676e5bfc0774846df14cd5ea1d233f2547c55f871f5277d3d5685a26
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

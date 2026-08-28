@@ -1,0 +1,25 @@
+score: 56
+recommendation: possible_match
+summary: Python, Linux, cloud, APIs, and backend engineering overlap with the role,
+  but the profile does not establish extensive Python as a primary professional language.
+strengths:
+- Strong backend engineering background with APIs
+- cloud infrastructure
+- and production systems.
+- Computer Science master's degree and demonstrated performance
+- testing
+- and reliability work.
+gaps:
+- Extensive professional Python experience is not demonstrated.
+- Linux-specific and open-source contribution depth is uncertain.
+concerns:
+- Canonical's high bar for Python ownership
+- communication
+- and distributed collaboration may require evidence beyond the profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-28T20:01:03Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:557f1fe74f16c88129bf62f781efa46c78ab2b4a601990a286047ec9614f6dde
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

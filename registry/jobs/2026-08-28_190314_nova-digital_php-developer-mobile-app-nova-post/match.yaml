@@ -1,0 +1,23 @@
+score: 63
+recommendation: possible_match
+summary: The PHP backend focus fits the candidate's Laravel and Symfony background,
+  while the mobile-product context and exact role requirements are not fully evidenced.
+strengths:
+- Extensive PHP backend experience with Laravel and Symfony.
+- Demonstrated API
+- database
+- integration
+- and production-reliability work.
+gaps:
+- No demonstrated mobile application development experience.
+- Exact seniority and product responsibilities are not fully established from the
+  posting.
+concerns:
+- Candidate employment dates contain source conflicts that may require reconciliation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-28T20:01:03Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0e8df4a804fd188e7d1b03e9f98d2aff31c33ebdb14c67330e44a85c203b8388
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
