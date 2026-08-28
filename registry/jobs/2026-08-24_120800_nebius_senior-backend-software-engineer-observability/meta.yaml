@@ -23,19 +23,19 @@ sources:
     discovered_by:
     - query_index: 2
       parameters:
-        tag: backend
         geo: europe
+        tag: backend
         count: '25'
         industry: dev
     - query_index: 3
       parameters:
-        tag: golang
         geo: europe
+        tag: golang
         count: '25'
         industry: dev
 published_at: '2026-08-24T04:50:12Z'
 discovered_at: '2026-08-24T12:08:00Z'
-updated_at: '2026-08-28T02:44:01Z'
+updated_at: '2026-08-28T07:52:12Z'
 status: found
 status_history:
 - status: found

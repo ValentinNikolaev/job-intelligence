@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 64
+Total vacancies: 65
 
-- Found: 45
+- Found: 46
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,7 @@ Total vacancies: 64
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-28 | [ShippyPro](../registry/jobs/2026-08-28_075200_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-28_075200_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-28 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-28 | [Sonatus](../registry/jobs/2026-08-28_024401_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-28_024401_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
 | 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_024401_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-28_024401_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
 | 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_024401_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-28_024401_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
