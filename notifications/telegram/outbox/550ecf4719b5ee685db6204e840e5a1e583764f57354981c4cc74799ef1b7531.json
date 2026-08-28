@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-28T08:52:00Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ShopFully",
+      "directory": "2026-08-28_024359_shopfully_senior-backend-software-engineer",
+      "score": 82,
+      "title": "Senior Backend Software Engineer",
+      "url": "https://himalayas.app/companies/shopfully/jobs/senior-backend-software-engineer",
+      "vacancy_id": "81317dfc-f49a-42c9-8524-1180da39d86f"
+    },
+    {
+      "company": "Berkeley Square IT",
+      "directory": "2026-08-28_024359_berkeley-square-it_php-symfony-developer",
+      "score": 88,
+      "title": "PHP/Symfony Developer",
+      "url": "https://himalayas.app/companies/berkeley-square-it/jobs/php-symfony-developer",
+      "vacancy_id": "a8590588-d16e-4050-b657-01ebf028ced4"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "550ecf4719b5ee685db6204e840e5a1e583764f57354981c4cc74799ef1b7531",
+  "schema_version": 1
+}
