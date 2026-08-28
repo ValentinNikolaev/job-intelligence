@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-28T11:55:50Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "SendPulse",
+      "directory": "2026-08-28_110246_sendpulse_middle-php-developer-with-devops",
+      "score": 78,
+      "title": "Middle+ PHP Developer (with DevOps)",
+      "url": "https://jobs.dou.ua/companies/sendpulse/vacancies/371315/",
+      "vacancy_id": "cc992361-e231-4b62-9b4a-d5a28485fa9e"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "2c60fe527ee8ca9d345d6a9741550acb0463cb2f51dc4bd82f23905f62bbce0c",
+  "schema_version": 1
+}
