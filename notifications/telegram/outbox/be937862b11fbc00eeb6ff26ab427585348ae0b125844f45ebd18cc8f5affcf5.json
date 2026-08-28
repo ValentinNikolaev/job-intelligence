@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-28T15:56:54Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Dinarys",
+      "directory": "2026-08-28_150143_dinarys_back-end-developer-laravel-shopify",
+      "score": 86,
+      "title": "Back-End Developer (Laravel+Shopify)",
+      "url": "https://jobs.dou.ua/companies/dinarys/vacancies/364746/",
+      "vacancy_id": "e8515599-9c31-4fe2-bd6f-ef8bb319761b"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "be937862b11fbc00eeb6ff26ab427585348ae0b125844f45ebd18cc8f5affcf5",
+  "schema_version": 1
+}

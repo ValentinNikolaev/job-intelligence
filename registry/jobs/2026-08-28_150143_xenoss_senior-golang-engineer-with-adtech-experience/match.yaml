@@ -1,0 +1,30 @@
+score: 42
+recommendation: weak_match
+summary: Strong Go backend and event-driven pipeline experience aligns with idempotency,
+  retries, reconciliation, and append-only modelling, but the role requires substantial
+  adtech impression accounting, auction, and billing domain knowledge not evidenced
+  in the profile.
+strengths:
+- Production Go services and resilient message delivery pipelines with retries, fallback
+  logic, and monitoring.
+- Event-driven analytics infrastructure with versioned schemas, downstream routing,
+  backpressure, and high delivery reliability.
+- Experience with external integrations, APIs, operational reliability, and audit-oriented
+  payment systems.
+gaps:
+- No evidenced adtech, programmatic auction, impression accounting, or media measurement
+  experience.
+- No evidenced columnar or large-scale analytics store expertise.
+- No evidenced C++ experience.
+concerns:
+- Several mandatory qualifications are specialized domain requirements rather than
+  technologies that can be inferred from general backend work.
+- The client data-centre deployment model is not explicitly matched by the candidate
+  profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-28T15:56:54Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:29b2d5dfa33de3e98a45f2f07cd9be43da2be6e2e5221dba44ec78c83554de32
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
