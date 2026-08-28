@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '142467'
+source_url: https://jobicy.com/jobs/142467-staff-software-engineer-product-engineering-eu
+title: Staff Software Engineer, Product Engineering, EU
+company: Ashby
+location: Europe
+published_at: '2026-08-27T04:20:10Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T07:52:12Z'
+rejected_at: '2026-08-28T07:52:12Z'
