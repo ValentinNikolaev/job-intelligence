@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151629'
+source_url: https://jobicy.com/jobs/151629-engineering-manager-rc-capital
+title: Engineering Manager, RC Capital
+company: RevenueCat
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-08-25T14:59:34Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T02:44:01Z'
+rejected_at: '2026-08-28T02:44:01Z'

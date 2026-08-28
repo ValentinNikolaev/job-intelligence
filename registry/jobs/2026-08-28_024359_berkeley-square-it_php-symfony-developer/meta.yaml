@@ -1,0 +1,56 @@
+schema_version: 2
+id: a8590588-d16e-4050-b657-01ebf028ced4
+title: PHP/Symfony Developer
+company: Berkeley Square IT
+company_url: null
+location: Italy
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/berkeley-square-it/jobs/php-symfony-developer
+  url: https://himalayas.app/companies/berkeley-square-it/jobs/php-symfony-developer
+  metadata:
+    location_restrictions:
+    - name: Italy
+    excerpt: 100% remoto dall'ItaliaSiamo alla ricerca di 1 PHP Developer con conoscenza
+      Symfony.
+    company_slug: berkeley-square-it
+    company_logo: https://cdn-images.himalayas.app/27e3zdo0bxf0dqwqfi76kqx1bi3f
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - 1
+    categories:
+    - PHP-Developer
+    - Symfony-Developer
+    - Web-Developer
+    - PHP-Symfony-Developer
+    - Senior-Symfony-Architect
+    - Senior-PHP-Developer
+    - Symfony-Architect
+    - Senior-Full-Stack-PHP-Developer
+    - Backend-Engineer
+    expiry_at: '2026-09-26T04:31:31Z'
+    discovered_by:
+    - query_index: 3
+      parameters:
+        seniority: Senior
+        sort: recent
+        exclude_worldwide: 'true'
+        country: IT
+        q: php backend
+published_at: '2026-08-27T20:34:33Z'
+discovered_at: '2026-08-28T02:43:59Z'
+updated_at: '2026-08-28T02:43:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-28T02:43:59Z'
+analysis_priority: 0
+fingerprint: sha256:c00de4607e1502199427530af04936ca9ff3eb0a31ddbb943c130bfddac14f01
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

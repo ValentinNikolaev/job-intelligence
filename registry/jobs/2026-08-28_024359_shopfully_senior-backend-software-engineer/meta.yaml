@@ -1,0 +1,60 @@
+schema_version: 2
+id: 81317dfc-f49a-42c9-8524-1180da39d86f
+title: Senior Backend Software Engineer
+company: ShopFully
+company_url: null
+location: Italy, Spain
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/shopfully/jobs/senior-backend-software-engineer
+  url: https://himalayas.app/companies/shopfully/jobs/senior-backend-software-engineer
+  metadata:
+    location_restrictions:
+    - name: Italy
+    - name: Spain
+    excerpt: We are the platform turning browsing into shopping.
+    company_slug: shopfully
+    company_logo: https://cdn-images.himalayas.app/emgrw841pryaypact8s59e7o2137
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - 0
+    - 1
+    categories:
+    - Backend-Engineer
+    - Backend-Engineering
+    - Backend-Development
+    - Platform-Engineering
+    - Senior-Backend-Engineering
+    - Software-Engineer
+    - Senior-Java-Backend-Engineer
+    salary:
+      period: annual
+      min: 50000
+      max: 65000
+      currency: EUR
+    expiry_at: '2026-09-26T05:19:51Z'
+    discovered_by:
+    - query_index: 3
+      parameters:
+        seniority: Senior
+        sort: recent
+        exclude_worldwide: 'true'
+        country: IT
+        q: php backend
+published_at: '2026-08-27T20:35:32Z'
+discovered_at: '2026-08-28T02:43:59Z'
+updated_at: '2026-08-28T02:43:59Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-28T02:43:59Z'
+analysis_priority: 0
+fingerprint: sha256:e55fab581c6ab8cfb14a7fd625c72ef91d564c33594a39d9992a57715d7d6885
+data_source: himalayas
+content_source: himalayas
+company_content_source: null
