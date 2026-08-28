@@ -32,4 +32,4 @@ Posted: 2026-08-28T14:10:27Z
 - Sehr gute Deutsch- und sehr gute Englischkenntnisse in Wort und Schrift
 - Nice to have: erste Erfahrung in internationalem Rechtssystemen (z. B. EU, USA, Australien, Afrika)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150845'
+source_url: https://jobicy.com/jobs/150845-full-stack-developer-java-react-f-m-d
+title: Full Stack Developer - Java & React (f/m/d)
+company: ecosio
+location: Austria,  Croatia,  Germany,  Hungary,  Italy,  Portugal,  Spain,  UK
+published_at: '2026-08-27T05:35:03Z'
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-08-28T19:03:23Z'
+rejected_at: '2026-08-28T19:03:23Z'

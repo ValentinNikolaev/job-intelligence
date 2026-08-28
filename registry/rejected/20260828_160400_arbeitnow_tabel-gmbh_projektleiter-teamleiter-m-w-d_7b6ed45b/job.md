@@ -167,4 +167,4 @@ Mit rund 3.000 Mitarbeitenden an über 30 Standorten unterstützen wir unsere Ku
 
 Job Ref. Code: MD-TG-WC
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

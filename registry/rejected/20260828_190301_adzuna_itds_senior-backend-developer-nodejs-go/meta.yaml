@@ -1,0 +1,12 @@
+schema_version: 1
+source: adzuna
+source_job_id: '5850948672'
+source_url: https://www.adzuna.pl/details/5850948672?utm_medium=api&utm_source=b6674f60
+title: Senior Backend Developer – Nodejs & Go
+company: ITDS
+location: Kraków, małopolskie
+published_at: '2026-08-21T13:00:54Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-21T13:00:54Z is older than 7 days
+updated_at: '2026-08-28T19:03:01Z'
+rejected_at: '2026-08-28T19:03:01Z'

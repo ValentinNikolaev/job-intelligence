@@ -100,4 +100,4 @@ Enjoy flexible and remote-friendly working options, relocation opportunities, an
 **Our hiring process for this role:**
 For any queries, please contact your Talent Partner at (Come join us!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

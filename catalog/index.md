@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 61
+Total vacancies: 68
 
-- Found: 42
+- Found: 49
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,13 @@ Total vacancies: 61
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_190323_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-28_190323_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-28 | [Sonatus](../registry/jobs/2026-08-28_190323_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-28_190323_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_190323_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-28_190323_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_190323_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-28_190323_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-28 | [Nova Digital](../registry/jobs/2026-08-28_190314_nova-digital_php-developer-mobile-app-nova-post/) | [PHP Developer (Mobile App Nova Post)](../registry/jobs/2026-08-28_190314_nova-digital_php-developer-mobile-app-nova-post/job.md) | віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/nova-digital/vacancies/371133/) | [Open](../registry/jobs/2026-08-28_190314_nova-digital_php-developer-mobile-app-nova-post/company.md) | — | — | — | — |
+| 2026-08-28 | [Xenoss](../registry/jobs/2026-08-28_190314_xenoss_senior-golang-engineer-with-adtech-experience/) | [Senior Golang Engineer with AdTech experience](../registry/jobs/2026-08-28_190314_xenoss_senior-golang-engineer-with-adtech-experience/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/xenoss/vacancies/371341/) | [Open](../registry/jobs/2026-08-28_190314_xenoss_senior-golang-engineer-with-adtech-experience/company.md) | — | — | — | — |
+| 2026-08-28 | [ShippyPro](../registry/jobs/2026-08-28_190312_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-28_190312_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-28 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-28 | [Dinarys](../registry/jobs/2026-08-28_150143_dinarys_back-end-developer-laravel-shopify/) | [Back-End Developer (Laravel+Shopify)](../registry/jobs/2026-08-28_150143_dinarys_back-end-developer-laravel-shopify/job.md) | віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/dinarys/vacancies/364746/) | [Open](../registry/jobs/2026-08-28_150143_dinarys_back-end-developer-laravel-shopify/company.md) | — | — | — | — |
 | 2026-08-28 | [RiseGuide](../registry/jobs/2026-08-28_144743_riseguide_software-engineer-golang/) | [Software Engineer (Golang)](../registry/jobs/2026-08-28_144743_riseguide_software-engineer-golang/job.md) | Варшава (Польща), віддалено | Manual | Found | 2026-08-28 | [Manual](https://jobs.dou.ua/companies/riseguide/vacancies/360423/) | — | — | — | — | — |
 | 2026-08-28 | [SendPulse](../registry/jobs/2026-08-28_110246_sendpulse_middle-php-developer-with-devops/) | [Middle+ PHP Developer (with DevOps)](../registry/jobs/2026-08-28_110246_sendpulse_middle-php-developer-with-devops/job.md) | Чернігів, віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/sendpulse/vacancies/371315/) | [Open](../registry/jobs/2026-08-28_110246_sendpulse_middle-php-developer-with-devops/company.md) | — | — | — | — |
