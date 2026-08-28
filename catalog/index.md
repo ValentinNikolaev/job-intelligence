@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 65
+Total vacancies: 66
 
-- Found: 46
+- Found: 47
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,7 @@ Total vacancies: 65
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-28 | [RiseGuide](../registry/jobs/2026-08-28_144743_riseguide_software-engineer-golang/) | [Software Engineer (Golang)](../registry/jobs/2026-08-28_144743_riseguide_software-engineer-golang/job.md) | Варшава (Польща), віддалено | Manual | Found | 2026-08-28 | [Manual](https://jobs.dou.ua/companies/riseguide/vacancies/360423/) | — | — | — | — | — |
 | 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-28_110254_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
 | 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-28_110254_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
 | 2026-08-28 | [Sonatus](../registry/jobs/2026-08-28_110254_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-28_110254_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |

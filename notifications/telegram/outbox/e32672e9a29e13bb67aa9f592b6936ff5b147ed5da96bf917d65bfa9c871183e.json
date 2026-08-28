@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-28T14:56:49Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "RiseGuide",
+      "directory": "2026-08-28_144743_riseguide_software-engineer-golang",
+      "score": 84,
+      "title": "Software Engineer (Golang)",
+      "url": "https://jobs.dou.ua/companies/riseguide/vacancies/360423/",
+      "vacancy_id": "b26fc2c1-0dea-43e1-a455-3e60aed981d9"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "e32672e9a29e13bb67aa9f592b6936ff5b147ed5da96bf917d65bfa9c871183e",
+  "schema_version": 1
+}
