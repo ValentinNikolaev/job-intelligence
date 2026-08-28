@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: reinzeichner-all-genders-stuttgart-314072
+source_url: https://www.arbeitnow.com/jobs/companies/liganova-gmbh/reinzeichner-all-genders-stuttgart-314072
+title: Reinzeichner (all genders)
+company: LIGANOVA GmbH
+location: Stuttgart
+published_at: '2026-08-28T10:30:43Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-28T15:01:33Z'
+rejected_at: '2026-08-28T15:01:33Z'

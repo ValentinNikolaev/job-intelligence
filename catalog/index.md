@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 66
+Total vacancies: 68
 
-- Found: 47
+- Found: 49
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,8 @@ Total vacancies: 66
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-28 | [Xenoss](../registry/jobs/2026-08-28_150143_xenoss_senior-golang-engineer-with-adtech-experience/) | [Senior Golang Engineer with AdTech experience](../registry/jobs/2026-08-28_150143_xenoss_senior-golang-engineer-with-adtech-experience/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/xenoss/vacancies/371341/) | [Open](../registry/jobs/2026-08-28_150143_xenoss_senior-golang-engineer-with-adtech-experience/company.md) | — | — | — | — |
+| 2026-08-28 | [Dinarys](../registry/jobs/2026-08-28_150143_dinarys_back-end-developer-laravel-shopify/) | [Back-End Developer (Laravel+Shopify)](../registry/jobs/2026-08-28_150143_dinarys_back-end-developer-laravel-shopify/job.md) | віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/dinarys/vacancies/364746/) | [Open](../registry/jobs/2026-08-28_150143_dinarys_back-end-developer-laravel-shopify/company.md) | — | — | — | — |
 | 2026-08-28 | [RiseGuide](../registry/jobs/2026-08-28_144743_riseguide_software-engineer-golang/) | [Software Engineer (Golang)](../registry/jobs/2026-08-28_144743_riseguide_software-engineer-golang/job.md) | Варшава (Польща), віддалено | Manual | Found | 2026-08-28 | [Manual](https://jobs.dou.ua/companies/riseguide/vacancies/360423/) | — | — | — | — | — |
 | 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-28_110254_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
 | 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-28_110254_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |

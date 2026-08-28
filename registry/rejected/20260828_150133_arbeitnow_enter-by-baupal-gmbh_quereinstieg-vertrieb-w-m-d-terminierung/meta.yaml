@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: quereinstieg-vertrieb-terminierung-berlin-312104
+source_url: https://www.arbeitnow.com/jobs/companies/enter-by-baupal-gmbh/quereinstieg-vertrieb-terminierung-berlin-312104
+title: Quereinstieg Vertrieb (w/m/d) – Terminierung
+company: Enter by baupal GmbH
+location: Berlin
+published_at: '2026-08-28T12:30:42Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-28T15:01:33Z'
+rejected_at: '2026-08-28T15:01:33Z'

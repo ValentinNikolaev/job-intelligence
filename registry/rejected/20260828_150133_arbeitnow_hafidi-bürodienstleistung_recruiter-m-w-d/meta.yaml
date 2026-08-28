@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: recruiter-konz-60512
+source_url: https://www.arbeitnow.com/jobs/companies/hafidi-burodienstleistung/recruiter-konz-60512
+title: Recruiter (m/w/d)
+company: Hafidi-Bürodienstleistung
+location: Konz
+published_at: '2026-08-28T11:31:12Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T15:01:33Z'
+rejected_at: '2026-08-28T15:01:33Z'
