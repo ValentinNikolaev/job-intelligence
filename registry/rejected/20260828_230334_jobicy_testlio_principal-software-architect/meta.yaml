@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '147700'
+source_url: https://jobicy.com/jobs/147700-principal-software-architect
+title: Principal Software Architect
+company: Testlio
+location: EMEA
+published_at: '2026-08-28T06:25:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T23:03:34Z'
+rejected_at: '2026-08-28T23:03:34Z'

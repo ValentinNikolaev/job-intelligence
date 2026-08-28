@@ -90,4 +90,4 @@ Du findest die Stelle super spannend, bist dir aber unsicher, ob du alle geforde
 
 P.S.: Octopusse gibt es in allen Farben, Formen und Größen. Wir freuen uns auf Mitarbeiter*innen jeden Geschlechts, Alters, jeder sexuellen Identität, Herkunft, Religion, Weltanschauung, mit und ohne Behinderungen. Für uns zählt nur eins: du passt zu uns und brennst darauf, etwas zu verändern.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

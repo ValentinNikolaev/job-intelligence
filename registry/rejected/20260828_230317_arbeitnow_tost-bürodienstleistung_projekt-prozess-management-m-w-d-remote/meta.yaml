@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: projekt-prozess-management-remote-luneburg-143732
+source_url: https://www.arbeitnow.com/jobs/companies/tost-burodienstleistung/projekt-prozess-management-remote-luneburg-143732
+title: Projekt- / Prozess- Management (m/w/d) - Remote
+company: Tost-Bürodienstleistung
+location: Lüneburg
+published_at: '2026-08-28T16:00:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T23:03:17Z'
+rejected_at: '2026-08-28T23:03:17Z'

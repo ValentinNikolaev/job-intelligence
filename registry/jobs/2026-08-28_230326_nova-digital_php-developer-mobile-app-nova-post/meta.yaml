@@ -1,0 +1,33 @@
+schema_version: 2
+id: 41807090-74ad-4363-b279-560deec64f6d
+title: PHP Developer (Mobile App Nova Post)
+company: Nova Digital
+company_url: https://jobs.dou.ua/companies/nova-digital/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371133'
+  url: https://jobs.dou.ua/companies/nova-digital/vacancies/371133/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 27 серпня
+    listing_summary: Nova Digital — це технологічне серце екосистеми NOVA, де твій
+      код стає частиною щоденного життя цілої країни.
+published_at: '2026-08-27'
+discovered_at: '2026-08-28T23:03:26Z'
+updated_at: '2026-08-28T23:03:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-28T23:03:26Z'
+analysis_priority: 100
+fingerprint: sha256:182b2e9d2ad28785d23cd42a0d7e39c0a43a3a73b16196bb60590302dfd27656
+data_source: dou
+content_source: dou
+company_content_source: dou

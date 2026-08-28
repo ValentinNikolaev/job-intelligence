@@ -1,0 +1,12 @@
+schema_version: 1
+source: adzuna
+source_job_id: '5853440832'
+source_url: https://www.adzuna.es/details/5853440832?utm_medium=api&utm_source=b6674f60
+title: Backend Developer
+company: Terra
+location: Bilbao, Vizcaya
+published_at: '2026-08-23T09:59:37Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T23:03:14Z'
+rejected_at: '2026-08-28T23:03:14Z'
