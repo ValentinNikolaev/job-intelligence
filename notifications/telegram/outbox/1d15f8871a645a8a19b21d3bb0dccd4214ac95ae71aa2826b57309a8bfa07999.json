@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-28T09:54:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Global Technologies",
+      "directory": "2026-08-21_120821_global-technologies_full-remote-php-developer-laravel-api-expert",
+      "score": 86,
+      "title": "Full-Remote PHP Developer | Laravel & API Expert",
+      "url": "https://jooble.org/away/-6847266060912482358?p=1&pos=17&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=123&brelb=10&scr=25.358923&bscr=25.358923&aq=4889620072338155009&elckey=-4269975071083596037",
+      "vacancy_id": "77ad2576-ec11-4fc4-91f9-1ca9c588b9e7"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "1d15f8871a645a8a19b21d3bb0dccd4214ac95ae71aa2826b57309a8bfa07999",
+  "schema_version": 1
+}
