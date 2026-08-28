@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 58
+Total vacancies: 65
 
-- Found: 39
+- Found: 46
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,13 @@ Total vacancies: 58
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-28_110254_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-28_110254_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-28 | [Sonatus](../registry/jobs/2026-08-28_110254_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-28_110254_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-28 | [Canonical](../registry/jobs/2026-08-28_110254_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-28_110254_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-28 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-28 | [SendPulse](../registry/jobs/2026-08-28_110246_sendpulse_middle-php-developer-with-devops/) | [Middle+ PHP Developer (with DevOps)](../registry/jobs/2026-08-28_110246_sendpulse_middle-php-developer-with-devops/job.md) | Чернігів, віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/sendpulse/vacancies/371315/) | [Open](../registry/jobs/2026-08-28_110246_sendpulse_middle-php-developer-with-devops/company.md) | — | — | — | — |
+| 2026-08-28 | [Nova Digital](../registry/jobs/2026-08-28_110246_nova-digital_php-developer-mobile-app-nova-post/) | [PHP Developer (Mobile App Nova Post)](../registry/jobs/2026-08-28_110246_nova-digital_php-developer-mobile-app-nova-post/job.md) | віддалено | Dou | Found | 2026-08-28 | [Dou](https://jobs.dou.ua/companies/nova-digital/vacancies/371133/) | [Open](../registry/jobs/2026-08-28_110246_nova-digital_php-developer-mobile-app-nova-post/company.md) | — | — | — | — |
+| 2026-08-28 | [ShippyPro](../registry/jobs/2026-08-28_110243_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-28_110243_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-28 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-28 | [Berkeley Square IT](../registry/jobs/2026-08-28_024359_berkeley-square-it_php-symfony-developer/) | [PHP/Symfony Developer](../registry/jobs/2026-08-28_024359_berkeley-square-it_php-symfony-developer/job.md) | Italy | Himalayas | Found | 2026-08-28 | [Himalayas](https://himalayas.app/companies/berkeley-square-it/jobs/php-symfony-developer) | — | — | — | — | — |
 | 2026-08-28 | [ShopFully](../registry/jobs/2026-08-28_024359_shopfully_senior-backend-software-engineer/) | [Senior Backend Software Engineer](../registry/jobs/2026-08-28_024359_shopfully_senior-backend-software-engineer/job.md) | Italy, Spain | Himalayas | Found | 2026-08-28 | [Himalayas](https://himalayas.app/companies/shopfully/jobs/senior-backend-software-engineer) | — | — | — | — | — |
 | 2026-08-27 | [Jamworks](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/) | [Senior PHP Backend Engineer](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/job.md) | віддалено | Dou | Found | 2026-08-27 | [Dou](https://jobs.dou.ua/companies/jamworks/vacancies/371158/) | [Open](../registry/jobs/2026-08-27_135552_jamworks_senior-php-backend-engineer/company.md) | — | — | — | — |
