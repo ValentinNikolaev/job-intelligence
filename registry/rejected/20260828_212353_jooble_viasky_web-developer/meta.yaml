@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8394773209050377397'
+source_url: https://jooble.org/away/8394773209050377397?p=1&pos=15&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=26&brelb=10&scr=21.2387&bscr=21.2387&aq=3835753660011968866&elckey=3837735248819870380
+title: WEB DEVELOPER
+company: Viasky
+location: Italian Republic
+published_at: '2026-08-27T12:29:17.6030000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-28T21:23:53Z'
+rejected_at: '2026-08-28T21:23:53Z'
