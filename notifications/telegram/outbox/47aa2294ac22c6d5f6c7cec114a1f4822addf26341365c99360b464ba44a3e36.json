@@ -1,0 +1,82 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-29T17:21:11Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "GKT Group",
+      "directory": "2026-08-29_144044_gkt-group_php-developer",
+      "score": 78,
+      "title": "PHP Developer",
+      "url": "https://gktgroup.it/career/",
+      "vacancy_id": "77a681b7-5330-48f9-a37d-6dfbc83d143e"
+    },
+    {
+      "company": "Queryo Advance Srl",
+      "directory": "2026-08-29_144042_queryo-advance-srl_php-developer-fullstack",
+      "score": 74,
+      "title": "PHP Developer Fullstack",
+      "url": "https://www.queryo.com/lavora-con-noi.html",
+      "vacancy_id": "c7668f62-baa3-427f-b941-a174d9e506b3"
+    },
+    {
+      "company": "Web To Emotions Digital Agency (Wow Lab SB srl)",
+      "directory": "2026-08-29_144041_web-to-emotions-digital-agency-wow-lab-sb-srl_php-developer-senior",
+      "score": 80,
+      "title": "PHP Developer Senior",
+      "url": "https://www.web2emotions.com/agenzia/lavora-con-noi/",
+      "vacancy_id": "fd992234-587c-4a4b-96d5-a21d2405305d"
+    },
+    {
+      "company": "Brownie Suite (nss srl)",
+      "directory": "2026-08-29_144039_brownie-suite-nss-srl_backend-developer",
+      "score": 71,
+      "title": "Backend Developer",
+      "url": "https://www.browniesuite.com/en/careers",
+      "vacancy_id": "5057579d-cdff-462b-beb0-b2d16064641f"
+    },
+    {
+      "company": "BSDsoftware",
+      "directory": "2026-08-29_144015_bsdsoftware_programmatore-php-php-developer",
+      "score": 79,
+      "title": "Programmatore PHP / PHP Developer",
+      "url": "https://www.bsdsoftware.it/LavoraConNoi/PhpDeveloper",
+      "vacancy_id": "dcd7db09-439d-4cea-a94f-4121b7bcc38e"
+    },
+    {
+      "company": "Intesys S.r.l.",
+      "directory": "2026-08-29_144013_intesys-s-r-l_senior-php-developer",
+      "score": 76,
+      "title": "Senior PHP Developer",
+      "url": "https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/senior-php-developer/",
+      "vacancy_id": "428975bd-0c73-435b-a88d-67dde0b8bbec"
+    },
+    {
+      "company": "Brain Computing S.p.A.",
+      "directory": "2026-08-29_144012_brain-computing-s-p-a_full-stack-developer-php-laravel",
+      "score": 83,
+      "title": "Full Stack Developer (PHP/Laravel)",
+      "url": "https://recruiting.braincomputing.com/job/VFNSTmxmN2xkeEJWbGNnQlNFa3AwQT09",
+      "vacancy_id": "da0a8530-f9f9-41a8-84a6-05a8d3fd9bf5"
+    },
+    {
+      "company": "Cuborio / Business Click S.r.l.",
+      "directory": "2026-08-29_144011_cuborio-business-click-s-r-l_sviluppatore-senior-php-laravel-ai-augmented",
+      "score": 86,
+      "title": "Sviluppatore Senior PHP/Laravel (AI-Augmented)",
+      "url": "https://cuborio.com/azienda/lavora-con-noi",
+      "vacancy_id": "7eb697dc-2bf7-4682-abf9-e7460b15d699"
+    },
+    {
+      "company": "Labs Madisoft",
+      "directory": "2026-08-29_144117_labs-madisoft_symfony-developer",
+      "score": 94,
+      "title": "Symfony developer",
+      "url": "https://labs.madisoft.it/symfony-developer/",
+      "vacancy_id": "435bc919-2fad-4e28-a440-3668ad25ab4d"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "47aa2294ac22c6d5f6c7cec114a1f4822addf26341365c99360b464ba44a3e36",
+  "schema_version": 1
+}

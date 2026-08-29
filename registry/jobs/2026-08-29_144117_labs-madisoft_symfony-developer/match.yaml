@@ -1,42 +1,19 @@
 score: 94
 recommendation: strong_match
-summary: Labs Madisoft's remote Symfony developer role closely matches the candidate's
-  verified PHP, Symfony/Laravel, API, performance, messaging, CI/CD, Kubernetes, and
-  service-evolution experience. airSlate provides direct Laravel/Symfony and measurable
-  performance evidence; CRURATED and PDFfiller provide event-driven and high-volume
-  messaging evidence. Desired DDD, BDD/TDD, Italian-language, and education-domain
-  experience are not confirmed and should be discussed openly.
+summary: Remote Symfony role is an exceptionally close fit through modern PHP, Symfony,
+  OOP, DDD, testing, messaging, APIs, and microservice migration experience.
 strengths:
-- Direct PHP and Symfony/Laravel delivery at airSlate, including an interservice logger
-  package.
-- 'Verified performance work: 30% average API response-time reduction and database-load
-  reduction at airSlate.'
-- Messaging and event-driven evidence through RabbitMQ, queues, AWS EventBridge, retries,
-  and observability.
-- 'Migration-adjacent experience: ECS-to-Kubernetes delivery, microservice/serverless
-  planning, and CI/CD tooling.'
-- Fully remote role aligns with the candidate's Rome location and does not create
-  a stated relocation conflict.
-- Technical-lead, planning, code-review-adjacent, and cross-functional delivery evidence
-  supports the collaborative role.
+- Symfony and modern PHP
+- DDD and microservices
+- remote compatibility
 gaps:
-- Candidate records do not explicitly establish DDD, BDD, TDD, or a named automated-testing
-  framework.
-- No candidate evidence confirms Italian fluency.
-- No candidate evidence confirms prior education-sector or school-SaaS experience.
-- Evidence supports ECS-to-Kubernetes migration and microservice planning, not a documented
-  monolith decomposition.
+- Specific BDD or TDD depth is not detailed
 concerns:
-- Clarify whether DDD and BDD/TDD are mandatory day-one requirements or desired practices.
-- Confirm Italian-language expectations for a platform serving Italian schools.
-- Confirm permanent-employment versus VAT-contractor terms and early salary alignment
-  with the published range.
-- Present CRURATED accurately as a concurrent part-time PHP consulting engagement
-  to avoid chronology ambiguity.
+- Compensation range and contractor terms require confirmation
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T16:48:10Z'
+analyzed_at: '2026-08-29T17:21:11Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:cd54f212a4658e4948c4f015dd31874c2ff379f71025bdd143e17800c1548433
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low

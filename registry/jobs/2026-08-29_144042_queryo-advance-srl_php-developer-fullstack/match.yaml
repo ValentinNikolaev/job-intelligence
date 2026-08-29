@@ -1,39 +1,19 @@
-score: 71
+score: 74
 recommendation: match
-summary: Queryo's public listing confirms a PHP Developer Fullstack opening in Rome
-  and a digital-transformation context, but publishes no responsibilities or stack.
-  The candidate has substantial PHP, Laravel, Symfony, API, integration, performance,
-  and production-reliability evidence, with a Rome location advantage. The fullstack
-  fit is conditional because frontend ownership and technologies are not disclosed,
-  and the candidate records do not establish Node.js, React, TypeScript, JavaScript,
-  HTML, CSS, or a named frontend framework.
+summary: Full-stack PHP role is a good backend-led fit through strong PHP and API
+  experience, though frontend depth is less evidenced.
 strengths:
-- More than 15 years of PHP and backend engineering, including Laravel and Symfony.
-- Direct evidence of API performance, SQL/database work, integrations, CI/CD, and
-  production reliability.
-- PHP event-driven consulting work at CRURATED, including queues, EventBridge, retries,
-  and observability.
-- Rome-based candidate aligns with one of the listed office locations.
-- Senior technical leadership and cross-functional delivery evidence supports an underspecified
-  digital-transformation role.
+- PHP backend experience
+- Laravel and Symfony
+- REST APIs and databases
 gaps:
-- No configured candidate source explicitly establishes frontend development or a
-  fullstack client-side technology.
-- No evidence for Node.js, React, TypeScript, JavaScript, HTML, CSS, or any named
-  frontend framework.
-- The published vacancy does not state whether frontend work is a core requirement
-  or what proportion of the role it represents.
+- Full-stack frontend requirements are not verified
 concerns:
-- Responsibilities, seniority, framework versions, work model, contract, compensation,
-  and language expectations are absent from the official page.
-- A recruiter may read the title as requiring immediate frontend capability; this
-  must be clarified before presenting the candidate as a fullstack developer.
-- The candidate's strongest recent role is Go-focused, so PHP/Symfony evidence should
-  lead the discussion.
+- Location and working model are unclear
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T16:46:59Z'
+analyzed_at: '2026-08-29T17:21:11Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:627d66bc133954610de42f3916423bb8d87ec93279f9642d49dce0716bb6d660
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low

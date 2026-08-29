@@ -1,18 +1,22 @@
 # Match Analysis
 
-**Score:** 50/100  
+**Score:** 57/100  
 **Recommendation:** Possible Match
 
-The verified title indicates a potentially relevant senior software engineering role, but the official posting content was unavailable. Core skills, location, working model and eligibility cannot be assessed reliably.
+Senior software engineering title fits the candidate's experience, but the unavailable posting prevents assessment of stack and responsibilities.
 
 ## Why it matches
 
-- Candidate evidence supports senior backend engineering in PHP and Go.
+- Senior backend engineering
+- PHP and Go
+- technical leadership
 
 ## Gaps
 
-- No verifiable job requirements were available to map against candidate evidence.
+- Required technologies and role scope are unknown
 
 ## Concerns
 
-- Location, remote eligibility, technologies and responsibilities are unknown because the supplied official posting was inaccessible.
+- Location
+- remote model
+- and eligibility are unverified

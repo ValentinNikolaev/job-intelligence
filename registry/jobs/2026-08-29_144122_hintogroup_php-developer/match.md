@@ -1,18 +1,24 @@
 # Match Analysis
 
-**Score:** 52/100  
+**Score:** 62/100  
 **Recommendation:** Possible Match
 
-The candidate has strong verified PHP backend experience, but the official detail posting was unavailable and only the title and employer could be verified; core requirements and location are unknown.
+PHP developer title fits the candidate's core background, but the unavailable detail page leaves requirements and compatibility uncertain.
 
 ## Why it matches
 
-- Candidate evidence documents extensive PHP backend work with Laravel and Symfony.
+- Extensive PHP development
+- backend systems
+- Laravel and Symfony
 
 ## Gaps
 
-- No verified role requirements were available for detailed mapping.
+- Role responsibilities
+- seniority
+- and required technologies are unknown
 
 ## Concerns
 
-- Working model, location, seniority and required technology stack are unavailable from the supplied detail page.
+- Location
+- remote policy
+- and eligibility are unverified

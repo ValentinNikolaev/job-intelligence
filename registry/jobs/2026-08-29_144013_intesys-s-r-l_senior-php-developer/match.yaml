@@ -1,27 +1,19 @@
-score: 61
-recommendation: possible_match
-summary: The technical PHP/Laravel, SQL, database, Git, API, Kubernetes, DNS, and
-  DevOps overlap is excellent, but the Verona hybrid requirement is a material logistics
-  concern for a Rome-based candidate.
+score: 76
+recommendation: match
+summary: Senior PHP position matches substantial PHP backend and technical-lead experience,
+  but the extracted posting is limited.
 strengths:
-- Direct supported PHP, Laravel, MySQL, PostgreSQL, Git, REST API, Kubernetes, AWS,
-  CI/CD, microservices, and DNS/email-infrastructure experience.
-- Senior and technical-lead experience exceeds the stated 4–5 years and includes team
-  collaboration and autonomy.
-- The preferred Docker/Kubernetes, DevOps, API/microservices, Linux-adjacent operations,
-  and DNS skills strongly overlap with documented experience.
+- Senior PHP background
+- technical leadership
+- production systems
 gaps:
-- HTML, CSS, JavaScript, AJAX, and frontend-framework skills are not explicitly established.
-- Direct Apache, PHP-FPM, and LAMP configuration experience is not explicitly recorded.
+- Role requirements and working model are not verified
 concerns:
-- The position requires attendance in Verona with only three smart-working days weekly;
-  the candidate is based in Rome and relocation or regular travel is not documented.
-- The role focuses on communication-project web sites, landing pages, and management
-  systems, whereas the strongest recent evidence is backend platforms and automation.
+- Insufficient detail to assess responsibilities precisely
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T14:41:08Z'
+analyzed_at: '2026-08-29T17:21:11Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:11a04b60692543d054be3c0c4c0294ec01a07f38e4b76e6b92b2efb3cb86cd3a
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low

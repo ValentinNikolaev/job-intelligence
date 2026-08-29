@@ -1,28 +1,19 @@
-score: 82
+score: 86
 recommendation: strong_match
-summary: Strong senior PHP/Laravel and production-reliability fit for an AI-assisted
-  e-commerce code-review role; Partita IVA availability and direct checkout-domain
-  experience need confirmation.
+summary: Senior PHP/Laravel role is highly aligned with the candidate's leadership,
+  Laravel delivery, backend architecture, and AI-automation exposure.
 strengths:
-- 15+ years of PHP and Go backend experience, with Laravel on production systems.
-- Technical-lead and code-quality experience, plus system design, incident troubleshooting,
-  CI/CD, Git, and production reliability.
-- Documented use of AI-assisted support automation and OpenAI-powered auto-triage,
-  relevant to the AI-pilot workflow.
-- Financial-system integrations and high-volume transactional-email work provide transferable
-  context for payment and order-adjacent e-commerce flows.
+- Senior PHP and Laravel
+- technical leadership
+- automation and AI exposure
 gaps:
-- No direct Cuborio CMS experience, though the posting explicitly says it is not required.
-- Cart, checkout, and order-management experience is not explicitly documented.
+- Specific AI-augmented workflow requirements are not fully verified
 concerns:
-- Candidate's Partita IVA availability is not recorded and must be confirmed for the
-  freelance arrangement.
-- The role requires occasional Florence/Rome meetings; Rome residence supports part
-  of this, but frequency is unspecified.
+- Italian-language and working-model expectations are unclear
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T14:41:05Z'
+analyzed_at: '2026-08-29T17:21:11Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:2998016fe8bafad863911254d1acb0887f3316418c89635293dfc869ce971ac6
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low
