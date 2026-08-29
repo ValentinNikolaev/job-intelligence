@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151472'
+source_url: https://jobicy.com/jobs/151472-software-engineer-8
+title: Software Engineer
+company: FanDuel
+location: UK
+published_at: '2026-08-24T17:11:51Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-29T07:03:20Z'
+rejected_at: '2026-08-29T07:03:20Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: forward-deployed-engineer-berlin-249380
+source_url: https://www.arbeitnow.com/jobs/companies/lumaai/forward-deployed-engineer-berlin-249380
+title: Forward Deployed Engineer
+company: Lumaai
+location: Berlin, GER
+published_at: '2026-08-29T05:40:05Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-29T07:03:02Z'
+rejected_at: '2026-08-29T07:03:02Z'

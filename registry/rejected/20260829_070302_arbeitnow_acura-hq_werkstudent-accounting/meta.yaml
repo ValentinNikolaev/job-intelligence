@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-accounting-frankfurt-a-main-224764
+source_url: https://www.arbeitnow.com/jobs/companies/acura-hq/werkstudent-accounting-frankfurt-a-main-224764
+title: Werkstudent Accounting
+company: Acura Hq
+location: Frankfurt a. Main
+published_at: '2026-08-29T05:29:05Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-29T07:03:02Z'
+rejected_at: '2026-08-29T07:03:02Z'

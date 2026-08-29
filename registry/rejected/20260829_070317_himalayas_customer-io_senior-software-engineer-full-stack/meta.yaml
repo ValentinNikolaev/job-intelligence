@@ -1,0 +1,16 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/customer-io/jobs/senior-software-engineer-full-stack
+source_url: https://himalayas.app/companies/customer-io/jobs/senior-software-engineer-full-stack
+title: Senior Software Engineer, Full Stack
+company: Customer.io
+location: Algeria, Austria, Bahrain, Belgium, Czechia, Denmark, Egypt, Finland, France,
+  Germany, Greece, Hungary, Iran, Iraq, Ireland, Israel, Italy, Jordan, Kuwait, Lebanon,
+  Libya, Morocco, Netherlands, Norway, Oman, Poland, Portugal, Qatar, Romania, Russian
+  Federation, Saudi Arabia, South Africa, Spain, Sweden, Switzerland, Syrian Arab
+  Republic, Tunisia, Turkey, Ukraine, United Arab Emirates, United Kingdom
+published_at: '2026-07-05T00:11:34Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-05T00:11:34Z is older than 7 days
+updated_at: '2026-08-29T07:03:17Z'
+rejected_at: '2026-08-29T07:03:17Z'

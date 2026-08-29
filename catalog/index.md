@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 57
+Total vacancies: 64
 
-- Found: 38
+- Found: 45
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,13 @@ Total vacancies: 57
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-29 | [Canonical](../registry/jobs/2026-08-29_070320_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-29_070320_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
+| 2026-08-29 | [Sonatus](../registry/jobs/2026-08-29_070320_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-29_070320_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-29 | [Canonical](../registry/jobs/2026-08-29_070320_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-29_070320_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |
+| 2026-08-29 | [Canonical](../registry/jobs/2026-08-29_070320_canonical_containerization-virtualisation-engineer/) | [Containerization & Virtualisation Engineer](../registry/jobs/2026-08-29_070320_canonical_containerization-virtualisation-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/149576-containerization-virtualisation-engineer) | — | — | — | — | — |
+| 2026-08-29 | [Xenoss](../registry/jobs/2026-08-29_070312_xenoss_senior-golang-engineer-with-adtech-experience/) | [Senior Golang Engineer with AdTech experience](../registry/jobs/2026-08-29_070312_xenoss_senior-golang-engineer-with-adtech-experience/job.md) | за кордоном, віддалено | Dou | Found | 2026-08-29 | [Dou](https://jobs.dou.ua/companies/xenoss/vacancies/371341/) | [Open](../registry/jobs/2026-08-29_070312_xenoss_senior-golang-engineer-with-adtech-experience/company.md) | — | — | — | — |
+| 2026-08-29 | [Nova Digital](../registry/jobs/2026-08-29_070312_nova-digital_php-developer-mobile-app-nova-post/) | [PHP Developer (Mobile App Nova Post)](../registry/jobs/2026-08-29_070312_nova-digital_php-developer-mobile-app-nova-post/job.md) | віддалено | Dou | Found | 2026-08-29 | [Dou](https://jobs.dou.ua/companies/nova-digital/vacancies/371133/) | [Open](../registry/jobs/2026-08-29_070312_nova-digital_php-developer-mobile-app-nova-post/company.md) | — | — | — | — |
+| 2026-08-29 | [ShippyPro](../registry/jobs/2026-08-29_070310_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-29_070310_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-29 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-29 | [Global Technologies](../registry/jobs/2026-08-29_061003_global-technologies_full-remote-php-developer-laravel-api-expert/) | [Full-Remote PHP Developer \| Laravel & API Expert](../registry/jobs/2026-08-29_061003_global-technologies_full-remote-php-developer-laravel-api-expert/job.md) | Italian Republic | Jooble | Found | 2026-08-29 | [Jooble](https://jooble.org/away/-6847266060912482358?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=24&brelb=10&scr=25.66498&bscr=25.66498&aq=-3306269231200370969&elckey=8943754436239929297) | — | — | — | — | — |
 | 2026-08-29 | [Airalo](../registry/jobs/2026-08-29_060940_airalo_backend-php-engineer/) | [Backend/PHP Engineer](../registry/jobs/2026-08-29_060940_airalo_backend-php-engineer/job.md) | España | Adzuna | Found | 2026-08-29 | [Adzuna](https://www.adzuna.es/details/5859534225?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-08-29 | [Client Server](../registry/jobs/2026-08-29_060940_client-server_backend-developer-golang-node-pub-sub/) | [Backend Developer Golang Node Pub / Sub](../registry/jobs/2026-08-29_060940_client-server_backend-developer-golang-node-pub-sub/job.md) | Broadgate, Central London | Adzuna | Found | 2026-08-29 | [Adzuna](https://www.adzuna.co.uk/jobs/details/5860750467?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
