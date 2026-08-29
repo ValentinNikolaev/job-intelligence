@@ -42,4 +42,4 @@ As Engineering Manager (m/f/d), you will act as the central technical interface 
 - Fitness studio cooperation
 - Attractive health offers on the pulse of time
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

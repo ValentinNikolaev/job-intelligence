@@ -127,4 +127,4 @@ Wie schnell höre ich etwas? In der Regel innerhalb von 48 Stunden
 
 Wie läuft der Bewerbungsprozess ab? Eingangsbestätigung deiner Bewerbung, erstes Online-Vorstellungsgespräch, Kennenlernen bei uns vor Ort in Gütersloh, Einstellungsgespräch.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

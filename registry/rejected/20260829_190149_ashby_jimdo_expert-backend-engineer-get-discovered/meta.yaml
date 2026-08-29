@@ -1,0 +1,12 @@
+schema_version: 1
+source: ashby
+source_job_id: 5c30cec1-4019-4f5e-86e3-1fb6ae0882f0
+source_url: https://jobs.ashbyhq.com/jimdo.com/5c30cec1-4019-4f5e-86e3-1fb6ae0882f0
+title: Expert Backend Engineer (Get Discovered)
+company: Jimdo
+location: Germany
+published_at: '2026-07-17T14:35:39.113+00:00'
+rejection_category: stale
+rejection_reason: published_at 2026-07-17T14:35:39.113+00:00 is older than 7 days
+updated_at: '2026-08-29T19:01:49Z'
+rejected_at: '2026-08-29T19:01:49Z'

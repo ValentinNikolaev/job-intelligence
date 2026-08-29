@@ -1,0 +1,12 @@
+schema_version: 1
+source: ashby
+source_job_id: f4703dee-3e96-4979-b1e6-b8925e1bd7a3
+source_url: https://jobs.ashbyhq.com/amboss/f4703dee-3e96-4979-b1e6-b8925e1bd7a3
+title: Backend Engineer (PHP)
+company: AMBOSS
+location: Berlin
+published_at: '2026-08-10T12:43:41.587+00:00'
+rejection_category: stale
+rejection_reason: published_at 2026-08-10T12:43:41.587+00:00 is older than 7 days
+updated_at: '2026-08-29T19:01:49Z'
+rejected_at: '2026-08-29T19:01:49Z'

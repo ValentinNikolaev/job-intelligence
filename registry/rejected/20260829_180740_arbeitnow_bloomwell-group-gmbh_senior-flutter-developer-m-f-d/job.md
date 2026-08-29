@@ -49,4 +49,4 @@ This is what you can expect:
 - Regular team events and a vibrant company culture
 *We use the gender neutral abbreviation (m/w/d) to indicate that this position is open to all genders.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

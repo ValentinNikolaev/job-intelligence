@@ -106,4 +106,4 @@ Alle unsere Positionen stehen selbstverständlich auch Menschen mit Behinderung 
 
 Der Schutz deiner persönlichen Daten hat für uns oberste Priorität. Unsere Bewerberinformationen findest du [hier](https://www.shopware.com/de/datenschutz/bewerbende/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

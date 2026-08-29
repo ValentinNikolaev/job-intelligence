@@ -42,4 +42,4 @@ Du gestaltest von Tag eins an aktiv mit, in einem wachsenden Markt, mit flachen 
 - Regelmäßige Team-Events und eine lebendige Unternehmenskultur
 *Aus Gründen der besseren Lesbarkeit verwenden wir in dieser Stellenanzeige die männliche Form. Gemeint und ausdrücklich angesprochen sind selbstverständlich alle Geschlechter (m/w/d).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
