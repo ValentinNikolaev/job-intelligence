@@ -1,0 +1,26 @@
+score: 63
+recommendation: possible_match
+summary: Strong API, microservices, PHP, cloud, and delivery experience fits the general
+  developer remit, but Spring Boot, Java, enterprise frontend, and Liferay requirements
+  are not sufficiently evidenced.
+strengths:
+- Extensive backend development with PHP, Laravel, Symfony, Go, APIs, and microservices.
+- Demonstrated AWS, Kubernetes, CI/CD, event-driven architecture, and production operations.
+- Experience with Agile collaboration, technical leadership, and complex business
+  systems.
+gaps:
+- No demonstrated Java or Spring Boot experience, which is central to the described
+  technology stack.
+- No clear evidence of Angular, React, JHipster, or Liferay delivery.
+- The profile does not establish frontend development as a recent primary responsibility.
+concerns:
+- The role spans multiple stacks and the vacancy does not clarify which specialization
+  is being hired.
+- Work location and remote arrangement are not specified in the vacancy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T19:23:07Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:eb1ba28cbc5a6dca74651dd4a8110a6ed7f5f45fb6e7625e5b3962856458ac98
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

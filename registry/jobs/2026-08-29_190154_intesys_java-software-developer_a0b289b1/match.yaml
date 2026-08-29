@@ -1,0 +1,26 @@
+score: 48
+recommendation: possible_match
+summary: Backend and API experience, but the vacancy is primarily frontend-focused
+  and the profile provides limited evidence of HTML, CSS, JavaScript, or browser and
+  mobile UI development.
+strengths:
+- Strong backend software development and API design experience.
+- Demonstrated microservices, cloud, CI/CD, and cross-functional delivery experience.
+- Computer science master's degree and substantial senior engineering background.
+gaps:
+- No demonstrated professional frontend experience with HTML, CSS, or JavaScript.
+- No clear evidence of browser, responsive web, UX implementation, or landing-page
+  development.
+- The role's frontend and mobile-device requirements are not central to the candidate
+  profile.
+concerns:
+- The posting describes a frontend role while the candidate evidence is predominantly
+  backend.
+- Work location and remote arrangement are not specified in the vacancy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T19:23:07Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d7c094f00dc0904a4cd10b90a6999f5c1876956be5c6ab0de8fa6a27332ad672
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

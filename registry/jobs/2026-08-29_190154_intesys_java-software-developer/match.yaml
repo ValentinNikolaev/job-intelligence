@@ -1,0 +1,24 @@
+score: 35
+recommendation: weak_match
+summary: Senior backend and API experience is relevant to integration work, but the
+  mobile role requires demonstrated Java, Kotlin, Swift, mobile platforms, UX patterns,
+  and app testing that are not evidenced.
+strengths:
+- Strong software architecture, APIs, microservices, and production reliability experience.
+- Experience collaborating across product and engineering teams.
+- Computer science master's degree and senior-level delivery background.
+gaps:
+- No demonstrated Java, Kotlin, or Swift experience in the candidate profile.
+- No demonstrated Android or iOS application development, mobile UX, or beta-testing
+  experience.
+- No evidence of delivering mobile applications for smartphone or tablet platforms.
+concerns:
+- The role is specifically mobile-focused and the candidate profile is primarily backend-focused.
+- Work location and remote arrangement are not specified in the vacancy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T19:23:07Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:6d7d976fb2583a55307eb22722309e05be0f8b171c49bae8d897791345f85e03
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
