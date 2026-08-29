@@ -1,36 +1,27 @@
-score: 82
+score: 93
 recommendation: strong_match
-summary: Strong match for the role's direct PHP, Laravel/Symfony, SQL/MySQL, AWS,
-  Git-style delivery, maintainable-code, documentation, and cloud-reliability needs.
-  The Rome/Remote posting improves location compatibility. JavaScript, Node.js, MongoDB,
-  and AWS Lambda are named in the post but are not supported by the candidate evidence,
-  so their actual importance must be clarified.
+summary: Excellent Rome/remote fit for PHP backend work requiring cloud, APIs, databases,
+  frameworks, and maintainable production engineering.
 strengths:
-- Direct PHP, Laravel, Symfony, and MySQL evidence across airSlate, Hyprr, PDFfiller,
-  and the recent PHP-oriented CRURATED consulting engagement.
-- Direct AWS and cloud-delivery evidence, including Kubernetes migration, Helm, GitHub
-  Actions, ArgoCD, monitoring, and AWS EventBridge-based event infrastructure.
-- Strong SQL/API-performance and production-troubleshooting evidence from airSlate,
-  plus reliable message-delivery, retries, monitoring, and operational ownership.
-- Documented event-driven and serverless-architecture exposure at CRURATED and Hyprr,
-  relevant to Watuppa's cloud/serverless product context without claiming AWS Lambda.
-- Rome / Remote is explicitly listed, and the candidate is based in Rome.
+- Deep PHP with Laravel/Symfony plus MySQL
+- PostgreSQL
+- and APIs.
+- AWS
+- Kubernetes
+- event-driven and serverless-related experience.
+- Payment integrations
+- performance
+- legacy systems
+- and collaboration are supported.
+- Rome/remote compatibility is explicit.
 gaps:
-- No explicit candidate evidence for JavaScript, Node.js, MongoDB, or AWS Lambda;
-  these should not be represented as existing skills.
-- No direct evidence confirms Watuppa's particular ecommerce, dashboard, or business-process
-  domain, although the candidate has related digital-product and automation experience.
+- MongoDB and Node.js are not explicitly demonstrated.
 concerns:
-- The posting spans junior, mid-junior, and senior levels, so the intended seniority,
-  responsibility scope, and compensation need clarification.
-- Rome / Remote is stated, but the exact remote policy, contract type, required office
-  presence, current framework, and AWS-service mix are not published.
-- Clarify whether the unsupported JavaScript, Node.js, MongoDB, and Lambda terms are
-  mandatory day-one requirements or secondary skills.
+- Role leveling is unspecified for this highly experienced candidate.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T16:48:06Z'
+analyzed_at: '2026-08-29T18:23:17Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:29f5429854f37f5d4af1c9892360e03f769d26bbaeaf736a9eeba42ab05cfd4f
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low

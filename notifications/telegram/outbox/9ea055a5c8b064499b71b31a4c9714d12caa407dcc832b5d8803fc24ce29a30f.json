@@ -1,0 +1,42 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-29T18:23:17Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Cuborio",
+      "directory": "2026-08-29_180750_cuborio_sviluppatore-senior-php-laravel-ai-augmented",
+      "score": 91,
+      "title": "Sviluppatore Senior PHP/Laravel (AI-Augmented)",
+      "url": "https://cuborio.com/azienda/lavora-con-noi",
+      "vacancy_id": "622a25c6-2003-4a22-b84b-1d978d40ef24"
+    },
+    {
+      "company": "Brownie Suite",
+      "directory": "2026-08-29_180750_brownie-suite_backend-developer",
+      "score": 76,
+      "title": "Backend Developer",
+      "url": "https://www.browniesuite.com/en/careers",
+      "vacancy_id": "9022641a-0070-4fd2-9db3-9d4a0f820d66"
+    },
+    {
+      "company": "Watuppa",
+      "directory": "2026-08-29_144109_watuppa_back-end-php-developer",
+      "score": 93,
+      "title": "Back-end PHP Developer",
+      "url": "https://www.watuppa.it/en/careers/202101-back-end",
+      "vacancy_id": "457e3796-065f-4d9f-a143-5064c3deb160"
+    },
+    {
+      "company": "PappaChat",
+      "directory": "2026-08-29_143932_pappachat_backend-engineer-php-modern-php-framework",
+      "score": 96,
+      "title": "Backend Engineer (PHP / modern PHP framework)",
+      "url": "https://pappachat.com/lavora-con-noi/backend-engineer",
+      "vacancy_id": "2a2d8bc2-5496-421a-8b7b-8e7b99e8abc2"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "9ea055a5c8b064499b71b31a4c9714d12caa407dcc832b5d8803fc24ce29a30f",
+  "schema_version": 1
+}

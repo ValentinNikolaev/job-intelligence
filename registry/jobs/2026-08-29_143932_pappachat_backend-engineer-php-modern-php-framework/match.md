@@ -1,20 +1,33 @@
 # Match Analysis
 
-**Score:** 93/100  
+**Score:** 96/100  
 **Recommendation:** Strong Match
 
-Strong direct fit: the candidate has recent production PHP/Laravel backend work, relational-database performance work, RabbitMQ, resilient message delivery, third-party integrations, monitoring and a rare communications-platform background. The Italy-remote location and English requirement are compatible.
+Exceptional Italy-remote fit for PHP backend work centered on messaging, queues, integrations, billing, multi-tenant data, and reliability.
 
 ## Why it matches
 
-- Recent airSlate work provides PHP, Laravel, MySQL, RabbitMQ, REST API, CI/CD and production troubleshooting evidence.
-- Simple.life evidence directly supports message delivery pipelines with retries, fallback logic and monitoring, plus support-system integrations.
-- PDFfiller experience supports high-volume transactional email, messaging infrastructure and reliability under peak load.
+- More than three years of modern PHP production experience.
+- Strong queues
+- retries
+- APIs
+- payments
+- databases
+- and performance evidence.
+- Direct support automation
+- communications
+- email
+- and AI-assisted platform experience.
+- Italy-remote compatibility and English proficiency are supported.
 
 ## Gaps
 
-- Direct production evidence for this company's specific multi-tenant authorization model and payment-provider webhooks is not stated.
+- Semantic/vector search
+- WebSockets
+- OAuth 2.1
+- and explicit tenant isolation are not directly documented.
 
 ## Concerns
 
-- The posting is open to contractor or employment arrangements, so terms should be confirmed during screening.
+- Fluent Italian is not established
+- though professional English is documented and accepted.

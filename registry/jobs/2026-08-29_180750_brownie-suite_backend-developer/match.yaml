@@ -1,0 +1,30 @@
+score: 76
+recommendation: match
+summary: Good PHP/MySQL backend fit, with substantial senior experience but uncertainty
+  around frontend and proprietary-framework expectations.
+strengths:
+- Strong PHP
+- MySQL
+- MVC/framework
+- backend
+- and API background.
+- Relevant e-commerce and digital-product experience.
+- Proven scalable-systems and reliability ownership.
+- English and collaboration are supported.
+gaps:
+- Recent core HTML
+- CSS
+- JavaScript/jQuery
+- Adobe
+- and CSS-preprocessor experience is not established.
+- Brownie's proprietary framework or CMS is not documented.
+concerns:
+- Remote availability is unclear and the page lists Milan
+- creating location uncertainty.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T18:23:17Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b90ca204f96f6e4f1b37aa0dc9eb5c5ce88e9303e2c690466b51f2ba92147bc2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
