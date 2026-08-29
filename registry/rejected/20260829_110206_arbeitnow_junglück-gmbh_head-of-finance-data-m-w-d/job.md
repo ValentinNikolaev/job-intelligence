@@ -56,4 +56,4 @@ Dich erwarten folgende Schritte:
 - Bearbeitung einer Case Study zu Hause und anschließende Vorstellung der Ergebnisse (Präsentation ca. 45-60 min)
 - Ein Angebot und Dein Vertrag warten auf Dich. Wir freuen uns auf Dein Onboarding!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

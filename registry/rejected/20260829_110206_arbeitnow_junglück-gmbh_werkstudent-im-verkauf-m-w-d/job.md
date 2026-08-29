@@ -75,4 +75,4 @@ Das ist genau deine Stelle?
 
 Dann freuen wir uns auf deine Bewerbungsunterlagen, inkl. Lebenslauf sowie Angaben zu deiner Gehaltserwartung und Verfügbarkeit. Du darfst deine Bewerbung gerne um Referenzen, Zeugnisse und ein Anschreiben ergänzen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

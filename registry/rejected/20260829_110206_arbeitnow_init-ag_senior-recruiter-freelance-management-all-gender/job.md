@@ -57,4 +57,4 @@ Da uns und unseren Kund:innen Sicherheit wichtig ist, kann je nach Position nach
 
 Hannah Caliebe
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

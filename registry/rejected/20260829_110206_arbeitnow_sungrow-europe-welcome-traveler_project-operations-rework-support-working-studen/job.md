@@ -31,4 +31,4 @@ Posted: 2026-08-29T08:10:13Z
 
 Join Sungrow and gain hands-on experience in the renewable energy industry while collaborating with an international Service and Rework team. You will build practical experience in project coordination, service operations, supplier management, and technical documentation—while contributing directly to real rework projects across Europe.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

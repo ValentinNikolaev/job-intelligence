@@ -35,4 +35,4 @@ Posted: 2026-08-29T08:29:43Z
 - Mentor and grow creative talent within the agency.
 - Drive innovation and identify relevant cultural and technological developments.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

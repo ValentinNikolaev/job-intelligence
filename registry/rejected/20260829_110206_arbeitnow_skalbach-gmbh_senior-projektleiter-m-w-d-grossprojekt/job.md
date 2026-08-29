@@ -41,4 +41,4 @@ Unser Mandant ist ein erfolgreiches und wirtschaftlich stark aufgestelltes Bauun
 
 Sie möchten Großprojekte verantworten und Ihre Erfahrung in einem erfolgreichen Unternehmen einbringen? Dann freuen wir uns auf Ihre aussagekräftige Bewerbung unter Angabe Ihres frühestmöglichen Eintrittstermins. Nach Eingang Ihrer Unterlagen setzen wir uns zeitnah mit Ihnen in Verbindung und informieren Sie transparent über die nächsten Schritte im Bewerbungsprozess.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

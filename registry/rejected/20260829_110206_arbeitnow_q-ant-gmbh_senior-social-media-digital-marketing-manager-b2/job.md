@@ -88,4 +88,4 @@ Solution orientation, ownership, communication, collaboration, commitment and se
 
 **You will have access** to the founders of the company.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

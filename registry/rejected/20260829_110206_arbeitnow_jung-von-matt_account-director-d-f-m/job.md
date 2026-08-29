@@ -43,4 +43,4 @@ What we offer:
 - Exclusive discounts: Enjoy corporate benefits with employee discounts on various services and products
 - Engaging events: Participate in unique activities like Cinema Tuesdays and our annual ski trip, the Brettertour
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -38,4 +38,4 @@ Als Werkstudent (m/w/d) gestaltest du genau das mit: Du entwickelst gemeinsam mi
 - Eine ausgewogene Work-Life-Balance, ein attraktives Einkommen während des Studiums, flexible Arbeitszeiten durch Gleitzeit und die Option, nach der Einarbeitung anteilig im Homeoffice zu arbeiten
 - Weitere Benefits wie Firmen-Fitnessangebot, Team- und Firmenevents u. v. m. runden unser Angebot ab
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -63,4 +63,4 @@ In dieser Rolle hast du viel Gestaltungsspielraum: Wenn du die nächsten Jahre l
 - Gleitzeit, 30 Tage Urlaub (bei Vollzeit), Homeoffice-Anteil, unbefristete Festanstellung
 - Attraktives Einkommen sowie Benefits wie Team- und Firmenevents, Firmen-Fitnessangebot und Dienstrad-Leasing
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -100,4 +100,4 @@ Gespür für Merchandising, Pricing-Schnittstellen und Margenlogik bei Sets/Bund
 - Office: Ein wunderschönes helles Office direkt im Herzen von Berlin-Mitte am Hackeschen Markt mit vielen Meeting Räumen, Küche, Snacks, Getränken, Lounge-Area und umgeben von vielen Restaurants und Cafés
 - Visa-Support: Wir unterstützen Kandidat:innen im kompletten Visa-Prozess
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
