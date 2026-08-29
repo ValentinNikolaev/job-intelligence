@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-6911654235823677774'
+source_url: https://jooble.org/away/-6911654235823677774?p=1&pos=12&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=72&brelb=10&scr=29.604149&bscr=29.604149&aq=-3306269231200370969&elckey=8943754436239929297
+title: Senior Accountant
+company: MUFG Bank, Ltd
+location: Italian Republic
+published_at: '2026-08-26T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-29T06:10:03Z'
+rejected_at: '2026-08-29T06:10:03Z'

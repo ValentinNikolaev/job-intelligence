@@ -1,0 +1,24 @@
+schema_version: 2
+id: ea87b57b-7e0b-415b-99cc-724cc83bfacb
+title: Full-Remote PHP Developer | Laravel & API Expert
+company: Global Technologies
+company_url: null
+location: Italian Republic
+remote: true
+employment_type: null
+sources:
+- source: jooble
+  source_job_id: '-6847266060912482358'
+  url: https://jooble.org/away/-6847266060912482358?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=24&brelb=10&scr=25.66498&bscr=25.66498&aq=-3306269231200370969&elckey=8943754436239929297
+published_at: '2026-08-28T00:00:00.0000000'
+discovered_at: '2026-08-29T06:10:03Z'
+updated_at: '2026-08-29T06:10:03Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T06:10:03Z'
+analysis_priority: 0
+fingerprint: sha256:383058048d76805d477e0d17517a3aab95d4f36dadccfce3a44796d21b97c7fc
+data_source: jooble
+content_source: jooble
+company_content_source: null

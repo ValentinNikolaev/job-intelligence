@@ -1,0 +1,24 @@
+schema_version: 2
+id: 003f5d75-5e6c-4f1b-ace5-0badece4a7d7
+title: Backend Developer Golang Node Pub / Sub
+company: Client Server
+company_url: null
+location: Broadgate, Central London
+remote: true
+employment_type: permanent
+sources:
+- source: adzuna
+  source_job_id: '5860750467'
+  url: https://www.adzuna.co.uk/jobs/details/5860750467?utm_medium=api&utm_source=b6674f60
+published_at: '2026-08-29T05:48:11Z'
+discovered_at: '2026-08-29T06:09:40Z'
+updated_at: '2026-08-29T06:09:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T06:09:40Z'
+analysis_priority: 0
+fingerprint: sha256:8d27d959a23c69bcdf06d9e07a4d3f49f7c55398dee70ce492329a928d51477b
+data_source: adzuna
+content_source: adzuna
+company_content_source: null
