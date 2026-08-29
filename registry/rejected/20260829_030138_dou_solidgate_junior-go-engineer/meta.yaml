@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '364821'
+source_url: https://jobs.dou.ua/companies/solidgate/vacancies/364821/
+title: Junior Go Engineer
+company: Solidgate
+location: Київ, Львів, Варшава (Польща), віддалено
+published_at: '2026-08-10'
+rejection_category: stale
+rejection_reason: published_at 2026-08-10 is older than 7 days
+updated_at: '2026-08-29T03:01:38Z'
+rejected_at: '2026-08-29T03:01:38Z'

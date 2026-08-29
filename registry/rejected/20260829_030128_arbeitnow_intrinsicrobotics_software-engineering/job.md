@@ -1,0 +1,36 @@
+# Software Engineering
+
+Posted: 2026-08-28T23:55:07Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: vacancy is explicitly non-remote
+
+Intrinsic is an AI robotics group at Google aiming to reimagine the potential of industrial robotics. Our team believes that advances in AI, perception and simulation will redefine what’s possible for industrial robotics in the near future – with software and data at the core.
+
+Our mission is to make industrial robotics intelligent, accessible, and usable for millions more businesses, entrepreneurs, and developers. We are a dynamic team of engineers, roboticists, designers, and technologists who are passionate about unlocking the creative and economic potential of industrial robotics.
+
+We encourage you to apply to this post if you’re interested in software engineering roles but don’t see the right fit in our actively posted roles. When we post new roles, our recruiting team will review applicants and will reach out in case of a potential fit.
+
+You should not expect to hear back from us if you apply to this job post.
+
+We *especially* want to hear from you if:
+
+- You think robotics should be made more widely accessible and available for manufacturing
+
+- You are interested and proficient in modern software development and have shipped a significant amount of high-quality software
+
+- You enjoy solving hard problems in rich interactive full-stack software, artificial intelligence, and robotics
+
+- You have developed (or are interested in developing) tools and intuitive interfaces for robot functionalities.
+
+- Robot functionalities include but are not limited to (in no particular order): APIs for authoring, editing, and simulating robot workcells, building scalable compute infrastructure for microservices, perception and vision algorithms, multi-step task planning, motion and grasp planning, machine learning for contact-rich tasks, knowledge and scene representation, Industry 4.0 representations, robot safety, data security and privacy.
+
+#LI-DNI
+
+At Intrinsic, we are proud to be an equal opportunity workplace. Employment at Intrinsic is based solely on a person's merit and qualifications directly related to professional competence. Intrinsic does not discriminate against any employee or applicant because of race, creed, color, religion, gender, sexual orientation, gender identity/expression, national origin, disability, age, genetic information, veteran status, marital status, pregnancy or related condition (including breastfeeding), or any other basis protected by law. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. It is Intrinsic’s policy to comply with all applicable national, state and local laws pertaining to nondiscrimination and equal opportunity.
+
+If you have a disability or special need that requires accommodation, please contact us at: -----
+
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

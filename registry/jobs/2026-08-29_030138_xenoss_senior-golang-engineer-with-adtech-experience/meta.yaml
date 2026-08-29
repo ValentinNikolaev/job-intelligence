@@ -1,0 +1,36 @@
+schema_version: 2
+id: 7da6ae57-4dcd-4553-b8a3-81587daa7cb0
+title: Senior Golang Engineer with AdTech experience
+company: Xenoss
+company_url: https://jobs.dou.ua/companies/xenoss/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371341'
+  url: https://jobs.dou.ua/companies/xenoss/vacancies/371341/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 28 серпня
+    listing_summary: 'Role Description
+
+
+      The engineer who owns everything that happens after the real-time operations.
+      Notifications arrive from the broadcaster’s exchange in three stages.'
+published_at: '2026-08-28'
+discovered_at: '2026-08-29T03:01:38Z'
+updated_at: '2026-08-29T03:01:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T03:01:38Z'
+analysis_priority: 100
+fingerprint: sha256:f835b6100ed9dd2f586f4ff596621333caed68ca079c8b019877c4c8b4a15658
+data_source: dou
+content_source: dou
+company_content_source: dou
