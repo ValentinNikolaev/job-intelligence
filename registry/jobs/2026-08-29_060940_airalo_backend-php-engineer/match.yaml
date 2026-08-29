@@ -1,0 +1,22 @@
+score: 73
+recommendation: match
+summary: Good PHP backend fit for a global remote product, supported by Laravel/Symfony,
+  APIs, payments, integrations, and production-scale systems; travel-domain experience
+  is not evidenced.
+strengths:
+- Strong PHP backend, Laravel/Symfony, API, database, and integration background.
+- Payment gateways and high-scale transactional systems are directly supported.
+- International remote collaboration and senior ownership are evidenced.
+gaps:
+- Travel, eSIM, telecom, or mobile connectivity domain experience is not evidenced.
+- Exact remote eligibility from Italy and role seniority are not fully clear from
+  the abbreviated listing.
+concerns:
+- The listed location is Spain, so cross-border employment arrangements need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T07:11:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:395049fe560ea17b82b01facf622a8be378ec0889e6afd87a9e64c769cf9c255
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

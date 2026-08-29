@@ -1,0 +1,25 @@
+score: 76
+recommendation: match
+summary: Strong Go and distributed messaging fit with relevant event-driven, resilient
+  pipeline, and scalability experience; Node.js and UK work eligibility or location
+  details are uncertain.
+strengths:
+- Recent Go backend work and event-driven message delivery pipelines are strongly
+  evidenced.
+- Reliability, retries, observability, throughput, and API orchestration align with
+  the role.
+- Senior backend ownership and technical leadership are supported.
+gaps:
+- Node.js experience is not clearly evidenced.
+- Pub/Sub product experience is not explicitly named, although closely related messaging
+  work is documented.
+concerns:
+- The role's remote/hybrid geography and any UK eligibility requirements are unclear
+  for a candidate in Italy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T07:11:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:c753957a4583f7de2de2133b739e4ee0a00f59881f26587208461a328f7d5c04
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

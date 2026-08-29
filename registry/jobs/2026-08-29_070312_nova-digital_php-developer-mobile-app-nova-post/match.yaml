@@ -1,0 +1,22 @@
+score: 84
+recommendation: strong_match
+summary: Very strong PHP backend fit with REST APIs, databases, integrations, and
+  senior delivery experience; the posting text is partially corrupted and exact product
+  expectations remain uncertain.
+strengths:
+- Extensive PHP backend experience including Laravel and Symfony systems.
+- Supported REST API, database, integration, testing, and production troubleshooting
+  experience.
+- Seniority and backend ownership align well with the role.
+gaps:
+- Some vacancy requirements cannot be reliably read because the source text is corrupted.
+concerns:
+- The posting appears Ukraine-focused, while the candidate is based in Italy; remote
+  or relocation terms are not clear.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T07:11:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:4843aede89d5d9cdab37d096890659fc60b951635104f85ac749d62de49bc1c1
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

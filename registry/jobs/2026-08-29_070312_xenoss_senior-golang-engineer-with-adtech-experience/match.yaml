@@ -1,0 +1,21 @@
+score: 79
+recommendation: match
+summary: Strong Go backend and event-driven systems fit, with relevant payments and
+  analytics experience; AdTech domain and some C++ collaboration are not evidenced.
+strengths:
+- Extensive recent Go backend ownership and production reliability work.
+- Event-driven pipelines, queues, routing, retries, and analytics infrastructure are
+  directly supported.
+- Senior technical leadership and cross-functional delivery experience.
+gaps:
+- AdTech, real-time bidding, and broadcaster exchange experience is not evidenced.
+- C++ experience is not evidenced.
+concerns:
+- Client interface details and exact production environment are unspecified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T07:11:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:58c4b1ceeb033ee784e42104da21f1e55edec6569ffeb1df0e8b14b713c0bcb9
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

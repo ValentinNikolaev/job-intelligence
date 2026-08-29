@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-29T07:11:46Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Xenoss",
+      "directory": "2026-08-29_070312_xenoss_senior-golang-engineer-with-adtech-experience",
+      "score": 79,
+      "title": "Senior Golang Engineer with AdTech experience",
+      "url": "https://jobs.dou.ua/companies/xenoss/vacancies/371341/",
+      "vacancy_id": "58bc9c4f-5801-4db6-9fb4-fab09ca8b33f"
+    },
+    {
+      "company": "Nova Digital",
+      "directory": "2026-08-29_070312_nova-digital_php-developer-mobile-app-nova-post",
+      "score": 84,
+      "title": "PHP Developer (Mobile App Nova Post)",
+      "url": "https://jobs.dou.ua/companies/nova-digital/vacancies/371133/",
+      "vacancy_id": "055d245c-5344-4760-8c8b-7606b88db876"
+    },
+    {
+      "company": "Global Technologies",
+      "directory": "2026-08-29_061003_global-technologies_full-remote-php-developer-laravel-api-expert",
+      "score": 78,
+      "title": "Full-Remote PHP Developer | Laravel & API Expert",
+      "url": "https://jooble.org/away/-6847266060912482358?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=24&brelb=10&scr=25.66498&bscr=25.66498&aq=-3306269231200370969&elckey=8943754436239929297",
+      "vacancy_id": "ea87b57b-7e0b-415b-99cc-724cc83bfacb"
+    },
+    {
+      "company": "Client Server",
+      "directory": "2026-08-29_060940_client-server_backend-developer-golang-node-pub-sub",
+      "score": 76,
+      "title": "Backend Developer Golang Node Pub / Sub",
+      "url": "https://www.adzuna.co.uk/jobs/details/5860750467?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "003f5d75-5e6c-4f1b-ace5-0badece4a7d7"
+    },
+    {
+      "company": "Airalo",
+      "directory": "2026-08-29_060940_airalo_backend-php-engineer",
+      "score": 73,
+      "title": "Backend/PHP Engineer",
+      "url": "https://www.adzuna.es/details/5859534225?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "767d5843-5710-4d1d-adf0-ca8f4b9a7598"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "42db2db3c8832f3da2f10805d0056709ea82bafe95eec1c1236adb175738c325",
+  "schema_version": 1
+}

@@ -1,0 +1,22 @@
+score: 78
+recommendation: match
+summary: Strong remote PHP/Laravel and API alignment with extensive backend, database,
+  integration, and performance experience; the abbreviated source leaves seniority
+  and exact project constraints uncertain.
+strengths:
+- PHP and Laravel are meaningful, well-supported core strengths.
+- REST APIs, relational databases, integrations, profiling, and production support
+  are evidenced.
+- The explicit full-remote arrangement is compatible with the candidate's Italy location.
+gaps:
+- The source description is truncated, so all detailed requirements cannot be assessed.
+concerns:
+- Employer identity and project context are minimally described, limiting confidence
+  in company-specific fit.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T07:11:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:56165fd3b279ed6f352c67f9466ecbfdacc6f1d7836bb9ae0fb5014f3c7e7b51
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
