@@ -1,29 +1,19 @@
-score: 88
+score: 89
 recommendation: strong_match
-summary: The candidate has extensive PHP/Laravel, MySQL, PostgreSQL, REST API, production
-  reliability, performance, and security-adjacent evidence that fits the senior PHP
-  role. Rome context and the posting's hybrid/remote option are favorable; frontend
-  breadth and open-source participation remain unverified.
+summary: Senior PHP role closely matches the candidate's PHP frameworks, SQL, APIs,
+  production deployment, security, performance, and full-stack collaboration experience.
 strengths:
-- More than 15 years of PHP/backend work, with Laravel, Symfony, MySQL, PostgreSQL,
-  REST APIs, performance optimization, and production troubleshooting.
-- Proven database and API performance work at airSlate, plus delivery, CI/CD, and
-  operational ownership.
-- Security-related work including GDPR and PCI DSS requirements, and location compatibility
-  with Rome.
+- Direct PHP, Laravel/Symfony, relational database, API, and web experience.
+- Strong production reliability, optimization, and secure engineering background.
+- Rome/hybrid and flexible remote options improve compatibility.
 gaps:
-- HTML, CSS, JavaScript, jQuery, and named frontend frameworks are not established
-  by the supplied candidate evidence.
-- Web-server administration, WordPress, and open-source community contributions are
-  not established.
+- Open-source community participation and some frontend frameworks are not evidenced.
 concerns:
-- The posting requests broad full-stack capability; the candidate record is predominantly
-  backend-focused.
-- The exact hybrid/remote arrangement and employment terms should be confirmed.
+- Contract and exact onsite expectations require confirmation.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T14:41:43Z'
+analyzed_at: '2026-08-29T15:21:28Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:fe2e8d74bae2f910dd90730ba92a61abee7146ca84a3b5127cd4c29d71710b5b
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-terra:medium
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,20 @@
+score: 84
+recommendation: strong_match
+summary: Full-stack PHP/Laravel role strongly fits the candidate's PHP/Laravel backend,
+  APIs, SQL, performance, Git, and autonomous delivery experience, with partial frontend
+  evidence.
+strengths:
+- Direct PHP/Laravel, SQL, API, and web application experience.
+- Strong clean-code, performance, Linux, Git, and production background.
+- Full-remote working is explicitly offered.
+gaps:
+- Frontend depth in Vue or React is less extensively documented than backend work.
+concerns:
+- Fixed-term contract details and exact frontend expectations need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T15:21:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:bf26792441a2da5f0b784e7a1a0bdaa804707fbddb2acca94ad73cb2aeece142
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

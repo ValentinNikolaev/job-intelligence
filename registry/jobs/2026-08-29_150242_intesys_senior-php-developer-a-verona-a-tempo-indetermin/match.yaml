@@ -1,0 +1,19 @@
+score: 77
+recommendation: match
+summary: Senior PHP role matches the candidate's core PHP, Laravel/Symfony, API, database,
+  and leadership experience, but Verona location and remote availability are unclear.
+strengths:
+- Strong senior PHP and framework experience.
+- Demonstrated system design, optimization, CI/CD, and production support.
+- Indefinite employment is explicitly stated.
+gaps:
+- Relocation or remote arrangement is not established.
+concerns:
+- Verona location may require commuting or relocation from Rome.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T15:21:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:11a33df7b2c9a36e881f3411b3bc891640622b36530e88b95e3981a26f3acd23
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

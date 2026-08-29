@@ -1,0 +1,21 @@
+score: 82
+recommendation: strong_match
+summary: PHP backend position fits the candidate's PHP framework, API, database, messaging,
+  and reliability experience, with senior-level background exceeding the apparent
+  requirements.
+strengths:
+- Strong PHP, Laravel, Symfony, SQL, and backend systems evidence.
+- Experience building resilient integrations and high-volume services.
+- Proven autonomous delivery and team collaboration.
+gaps:
+- Posting gives little detail on seniority, scope, and working arrangement.
+concerns:
+- English-language version does not establish location, language, or compensation
+  details.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T15:21:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:905f4baf2c5c0adb389b692dd3d7d99cb71e51d6b8f009bf1e29428c300953c1
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

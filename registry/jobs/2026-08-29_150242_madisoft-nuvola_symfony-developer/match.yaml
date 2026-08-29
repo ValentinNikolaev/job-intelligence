@@ -1,0 +1,20 @@
+score: 91
+recommendation: strong_match
+summary: Symfony Developer is an exceptionally close match to the candidate's direct
+  Symfony/PHP background, backend architecture, APIs, databases, and production operations
+  experience.
+strengths:
+- Direct Symfony and PHP experience across substantial backend roles.
+- Strong REST API, SQL, event-driven, and reliability evidence.
+- Senior delivery, mentoring, and technical leadership experience.
+gaps:
+- Specific team, location, and employment details are not fully available.
+concerns:
+- Exact language and remote-work expectations require confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T15:21:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:711468cbb83e2709b2ced1ee35dc0c266e84a3a122c39749b5a66110cee4f9cf
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

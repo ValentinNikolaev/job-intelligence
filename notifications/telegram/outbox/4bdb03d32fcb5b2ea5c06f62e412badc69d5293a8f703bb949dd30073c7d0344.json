@@ -1,0 +1,106 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-29T15:21:28Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Watuppa",
+      "directory": "2026-08-29_150242_watuppa_sviluppatore-back-end-php",
+      "score": 82,
+      "title": "Sviluppatore back-end PHP",
+      "url": "https://www.watuppa.it/it/careers/202101-back-end",
+      "vacancy_id": "f15814fc-7a57-43b0-8be9-aa890e93b33a"
+    },
+    {
+      "company": "Watuppa",
+      "directory": "2026-08-29_150242_watuppa_back-end-php-developer",
+      "score": 82,
+      "title": "Back-end PHP Developer",
+      "url": "https://www.watuppa.it/en/careers/202101-back-end",
+      "vacancy_id": "1fea3ff7-0fc9-4aed-99ec-975bb3466d57"
+    },
+    {
+      "company": "Queryo",
+      "directory": "2026-08-29_150242_queryo_dev-php-developer-full-stack-developer",
+      "score": 72,
+      "title": "DEV: PHP Developer - Full Stack Developer",
+      "url": "https://www.queryo.com/lavora-con-noi.html",
+      "vacancy_id": "496ef19b-5d89-41ef-a750-15b08d220484"
+    },
+    {
+      "company": "Madisoft / Nuvola",
+      "directory": "2026-08-29_150242_madisoft-nuvola_symfony-developer",
+      "score": 91,
+      "title": "Symfony Developer",
+      "url": "https://labs.madisoft.it/symfony-developer/",
+      "vacancy_id": "aef63c2e-20bc-4c75-8ead-e4c51236ad20"
+    },
+    {
+      "company": "Intesys",
+      "directory": "2026-08-29_150242_intesys_senior-php-developer-a-verona-a-tempo-indetermin",
+      "score": 77,
+      "title": "Senior PHP Developer a Verona a tempo indeterminato",
+      "url": "https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/senior-php-developer/",
+      "vacancy_id": "a4f2dabc-7544-494b-80bb-58f86d5a6358"
+    },
+    {
+      "company": "Hinto Group",
+      "directory": "2026-08-29_150242_hinto-group_php-developer",
+      "score": 80,
+      "title": "PHP Developer",
+      "url": "https://www.hintogroup.eu/it/posizioni-aperte/php-developer",
+      "vacancy_id": "dd09aed6-c54f-48fa-ad4f-be0980e5b764"
+    },
+    {
+      "company": "GKT Group",
+      "directory": "2026-08-29_150242_gkt-group_php-developer",
+      "score": 80,
+      "title": "PHP Developer",
+      "url": "https://gktgroup.it/career/",
+      "vacancy_id": "7ef62e99-cb42-428f-8a59-b065c9469972"
+    },
+    {
+      "company": "Brain Computing",
+      "directory": "2026-08-29_150242_brain-computing_full-stack-developer-php-laravel",
+      "score": 84,
+      "title": "Full Stack Developer (PHP/Laravel)",
+      "url": "https://recruiting.braincomputing.com/job/VFNSTmxmN2xkeEJWbGNnQlNFa3AwQT09",
+      "vacancy_id": "c2fe3dd1-9c62-4ae8-a057-8324597354b9"
+    },
+    {
+      "company": "Brain Computing",
+      "directory": "2026-08-29_150242_brain-computing_full-stack-developer-laravel-full-remote",
+      "score": 88,
+      "title": "Full Stack Developer – Laravel (Full Remote)",
+      "url": "https://recruiting.braincomputing.com/job/detail/RGZObGtkZTNSOHJUNXd2dWNRUVRHQT09",
+      "vacancy_id": "f32da05d-095b-4911-a7fb-c9df05092ec5"
+    },
+    {
+      "company": "GKT Group",
+      "directory": "2026-08-29_144044_gkt-group_php-developer",
+      "score": 80,
+      "title": "PHP Developer",
+      "url": "https://gktgroup.it/career/",
+      "vacancy_id": "77a681b7-5330-48f9-a37d-6dfbc83d143e"
+    },
+    {
+      "company": "Queryo Advance Srl",
+      "directory": "2026-08-29_144042_queryo-advance-srl_php-developer-fullstack",
+      "score": 70,
+      "title": "PHP Developer Fullstack",
+      "url": "https://www.queryo.com/lavora-con-noi.html",
+      "vacancy_id": "c7668f62-baa3-427f-b941-a174d9e506b3"
+    },
+    {
+      "company": "Web To Emotions Digital Agency (Wow Lab SB srl)",
+      "directory": "2026-08-29_144041_web-to-emotions-digital-agency-wow-lab-sb-srl_php-developer-senior",
+      "score": 89,
+      "title": "PHP Developer Senior",
+      "url": "https://www.web2emotions.com/agenzia/lavora-con-noi/",
+      "vacancy_id": "fd992234-587c-4a4b-96d5-a21d2405305d"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4bdb03d32fcb5b2ea5c06f62e412badc69d5293a8f703bb949dd30073c7d0344",
+  "schema_version": 1
+}

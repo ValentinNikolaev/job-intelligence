@@ -1,0 +1,19 @@
+score: 80
+recommendation: strong_match
+summary: PHP Developer posting explicitly seeks Laravel or Symfony and MySQL, matching
+  the candidate's documented framework, database, and backend experience.
+strengths:
+- Direct Laravel/Symfony and MySQL-aligned experience.
+- Proven autonomous problem solving and production engineering.
+- Relevant senior and technical leadership background.
+gaps:
+- Role scope, employment terms, language, and remote status are not stated.
+concerns:
+- Alba location may require commuting or relocation from Rome.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T15:21:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9b78bc0f1ead20c58872fb7fed3dff8ae991a087edef0e10679453a25bcae986
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
