@@ -59,13 +59,21 @@ current Codex surface, tell the user and do not publish under that profile.
    run only the roles and handoffs required by that document. The main agent alone
    finalizes selected drafts, performs the applicable claim check, validates, and
    publishes.
-6. After the selected drafts for a vacancy are complete, run
+6. A full-package draft must include `.codex-work/application/<vacancy-directory>/quality.yaml`
+   with `schema_version: 1`: `workflow: two-wave`; invoked cover-letter skill name and
+   version; `workbench_complete: true`; two evidence stories with `candidate_source`;
+   company-motivation fact with `source_url`; and final-review values
+   `claim_grounding: true` and `cross_file_consistency: true`.
+7. After the selected drafts for a vacancy are complete, run
    `python run.py validate-application <job-directory-or-vacancy-id> --input
    <draft-directory> [--document <document>]` once as the prepublication check. Omit
    `--document` for the default full package. Publish only after it succeeds. If
    validation fails, fix only its cause and rerun the validator. Do not edit generated
    cache metadata by hand.
-7. Never submit applications or contact employers.
+   `validate-application` must check that quality contract, required handoffs, document
+   minima, provenance, word counts, and hashes before publication. The final manifest
+   must retain the quality contract, provenance, word counts, and hashes.
+8. Never submit applications or contact employers.
 
 ## Mandatory final catalog step
 

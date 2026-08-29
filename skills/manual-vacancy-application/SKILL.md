@@ -88,14 +88,21 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    No role may read the full registry, another vacancy, or inputs it does not need. Do
    not claim a model switch inside the active task.
 8. The main agent performs one cross-file consistency and claim-grounding pass after
-   Wave 2. Then run the single combined deterministic draft check:
+   Wave 2. Before validation, write the required versioned `quality.yaml` receipt with
+   `workflow: two-wave`, the invoked `$write-cover-letter` skill version and completed
+   workbench, exactly two evidence stories pointing to `registry/candidate/` sources,
+   one sourced company-motivation fact, and both final-review confirmations. Ensure the
+   three Wave 1 handoffs meet the minimum depth and required labeled sections from
+   `$job-intelligence-workflow`. Then run the single combined deterministic draft check:
    `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
    After it succeeds, publish once with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow prepare --model-profile <selected-profile> [--document <document>]`.
    If validation fails, fix only its cause and rerun the validator. If DOCX conversion
    fails after validation, fix only that deterministic issue and retry publication.
 9. Confirm the application directory contains the selected Markdown artifacts, their
    derived DOCX artifacts where applicable, and `manifest.yaml`; verify unselected
-   existing artifacts remain unchanged.
+   existing artifacts remain unchanged. Confirm the manifest retains the quality
+   contract version, document and handoff word counts and hashes, declaration hash,
+   and cover-letter method provenance.
 10. Regenerate the vacancy catalog through `$generate-vacancy-catalog`, then run the
    required tests and prohibited-API scan exactly once. Inspect the full diff, stage,
    commit, and push when repository files changed. Repeat only a specific failed check

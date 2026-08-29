@@ -38,10 +38,10 @@ the selected field is the complete output contract and publication uses the matc
 
 ## Output and research budgets
 
-- Target 500–700 words for `cv_markdown`, 300–450 for `cover_letter_markdown`,
-  700–900 for `analysis_markdown`, and 800–1000 for
-  `interview_preparation_markdown`. Do not pad complete evidence merely to reach a
-  target.
+- Required minimums are 500 words for `cv_markdown`, 300 for `cover_letter_markdown`,
+  700 for `analysis_markdown`, and 800 for `interview_preparation_markdown`; targets are
+  500–700, 300–450, 700–900, and 800–1000 respectively. Do not pad with unsupported or
+  repetitive content merely to reach a minimum.
 - Hard ceilings are 800 words for the CV, 450 for the cover letter, 1000 for the
   analysis, and 1100 for interview preparation. Treat a ceiling breach as a validation
   failure and shorten before publication.
@@ -69,14 +69,18 @@ ownership:
 - Research reads only this vacancy's meta/job/company files and minimal candidate
   motivation hooks, not the full source CV. It writes only `research.md`: verified
   company facts, role context, one defensible motivation point, direct links, and
-  fact/inference/unknown labels.
+  fact/inference/unknown labels. It must be at least 100 words and include Fact,
+  Inference, Unknown, and at least one direct URL.
 - CV/evidence reads this vacancy and configured candidate sources, performs no web
   research, and writes only `evidence-map.md`: requirement-to-evidence mapping plus a
-  complete proposed CV draft with supported headline, summary, skills, and Experience
-  wording. It must not write the final `cv.md`.
+  complete proposed CV draft with supported headline, Summary, Skills, Experience,
+  Education, Languages, and evidence-backed wording. It must be at least 450 words and
+  include a requirement-to-evidence matrix; it must not write the final `cv.md`.
 - Requirements/risks reads this vacancy and configured candidate evidence and writes
   only `requirements-risks.md`: explicit versus inferred requirements, gaps, ATS
-  terminology, recruiter risks, and interview probes.
+  terminology, recruiter risks, and interview probes. It must be at least 250 words and
+  separately cover explicit requirements, inferred requirements, gaps, ATS terms,
+  recruiter risks, and interview probes.
 
 Each role receives only the inputs listed for that role. Wave 1 roles must not write
 final artifacts, publish, validate, or run project commands. After all handoffs finish,
@@ -89,14 +93,18 @@ Start only after the main agent fixes the final CV. Assign exclusive ownership:
 
 - Cover letter receives this vacancy, final CV, verified research, and only the
   candidate evidence needed to ground its selected stories. It invokes
-  `$write-cover-letter` and writes only `cover-letter.md`.
+  `$write-cover-letter` and writes only `cover-letter.md`. It needs four to six body
+  paragraphs, two distinct evidence stories, and a company-specific research hook.
 - Interview preparation receives this vacancy, final CV, requirements/risks handoff,
   and verified research, then writes only `interview-preparation.md` without browsing
   again.
 - Application analysis receives this vacancy, final CV, and all Wave 1 handoffs, then
   writes only `analysis.md`.
 
-No role may edit another role's file. After Wave 2, the main agent runs one cross-file
+No role may edit another role's file. The final CV must include Summary, Skills,
+Experience, Education, and Languages; 12–18 evidence-backed hard skills; real LinkedIn
+and GitHub URLs; and at least 10 evidence-backed Experience bullets. After Wave 2, the
+main agent runs one cross-file
 consistency and claim-grounding pass, then `validate-application` once and `prepare`
 once. Preserve the same waves and ownership when running sequentially. For a batch,
 scope every role and file to one vacancy; never mix evidence or handoffs across vacancy
@@ -130,7 +138,7 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
 5. Draft the tailored CV once. Strengthen relevant Experience bullets with the Google
    XYZ principle where evidence permits it; without a numeric Y, use a supported factual
    outcome. Keep bullets concise, credible, results-oriented, and scannable. Build a
-   vacancy-specific Skills section with approximately 12–15 supported hard
+   vacancy-specific Skills section with 12–18 supported hard
    skills, ordered by relevance. Use exact vacancy terminology only when the candidate
    evidence supports it. Under every role in Experience, add a concise
    `Technologies: ...` line containing only technologies supported for that specific
@@ -239,13 +247,20 @@ thoughtful questions for the company.
 
 ## Final checks
 
+- Before validating a full package, write `quality.yaml` under its vacancy draft with
+  `schema_version: 1`, `workflow: two-wave`, invoked cover-letter skill name/version,
+  `workbench_complete: true`, two evidence stories with `candidate_source`, a
+  company-motivation fact and `source_url`, and final `claim_grounding: true` plus
+  `cross_file_consistency: true`.
+
 - All four Markdown fields are required and non-empty by default. For an explicit
   single-document request, only the selected field is required and the other fields
   must not be regenerated.
 - The editable Markdown files are canonical; DOCX conversion happens only after this
   response passes local validation.
-- The deterministic `validate-application` check enforces the contract and word
-  ceilings. Validate the default full package without `--document`; validate an
+- The deterministic `validate-application` check enforces the quality contract,
+  handoffs, provenance, word-count minimums and ceilings, and hashes before publication;
+  the final manifest retains those values. Validate the default full package without `--document`; validate an
   explicitly selected single document with the same `--document` value.
 - Do not mention other vacancies.
 - Do not submit an application or contact the company.

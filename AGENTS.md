@@ -22,6 +22,10 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   content. Automatic `all` selection remains prohibited. Analysis may use the sealed
   batch contract (up to 15 vacancies) when every result is keyed to its input directory,
   evaluated independently, and published only after deterministic validation.
+- Preparation eligibility requires a fresh match from the same selected model profile.
+  If the stored match uses another profile, run a genuine vacancy-specific analysis in
+  the selected-profile Codex task and publish that draft with `--force`; never relabel
+  an older judgment.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
 - Treat user approval as the mandatory preparation gateway: research, adapted CV,
@@ -37,6 +41,11 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   installed version of `agent-plugins@valentin-agent-plugins` available in the active
   Codex task. If that skill is unavailable, stop before drafting; never fall back to
   the retired inline cover-letter logic.
+- Before publication, every Codex draft must satisfy the versioned application-quality
+  contract: required document minima and structure, substantive two-wave handoffs, a
+  `quality.yaml` receipt recording cover-letter skill provenance and final grounding
+  review, and deterministic `validate-application` checks. Preserve the resulting
+  word counts, hashes, handoff provenance, and method receipt in `manifest.yaml`.
 - For CV preparation, do not include roles or employment experience older than 10 years in the generated CV `Experience` section. Older evidence may support skills, chronology, or interview preparation only when relevant.
 - Change vacancy status only after an explicit user request, through `python run.py status`; never infer status from artifacts or external events.
 - Before finishing code changes, run `python -m unittest discover -v` with an available Python 3.11+ runtime and search project code/configuration for prohibited API integrations.

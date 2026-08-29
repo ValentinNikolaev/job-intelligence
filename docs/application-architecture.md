@@ -15,7 +15,9 @@ final CV + verified research → $write-cover-letter
         ↓
 .codex-work/application/<vacancy>/ isolated Markdown drafts
         ↓
-Python resolves the selection and validates each package
+quality.yaml + substantive two-wave handoffs
+        ↓
+Python resolves the selection and validates content, structure, provenance, and hashes
         ↓
 per-vacancy DOCX conversion + atomic application/ publication + manifest
 ```
@@ -32,6 +34,15 @@ previous package. The default selection is all four documents. An explicit
 `--document` selection updates only `cv`, `cover-letter`, `analysis`, or
 `interview-preparation` while carrying forward other recognized artifacts unchanged.
 
+The quality contract rejects skeletal drafts before conversion. Full packages require
+at least 500 CV words, 300 cover-letter words, 700 analysis words, and 800 interview
+preparation words while retaining the existing hard ceilings. It also checks required
+CV sections, real profile URLs, a bounded skills inventory, evidence-backed Experience
+bullets, cover-letter paragraph structure, and minimum handoff depth. `quality.yaml`
+records the two-wave workflow, the installed `$write-cover-letter` version and completed
+workbench, two sourced evidence stories, a sourced company motivation fact, and the
+coordinator's claim-grounding and cross-file review.
+
 ## Inputs and isolation
 
 The Codex task reads the configured candidate source-of-truth files and, one selected
@@ -46,8 +57,10 @@ never a valid preparation selector.
 
 ## Cache
 
-`manifest.yaml` records candidate, vacancy, company, prompt, and actual Codex model-label
-versions per document. A full-package cache hit requires all six standard output
+`manifest.yaml` records candidate, vacancy, company, prompt, actual Codex model label,
+and quality-contract versions per document. Its `quality` section stores document word
+counts and hashes, validated handoff word counts and hashes, declaration hash, and
+method provenance. A full-package cache hit requires all six standard output
 artifacts; a single-document cache hit requires only that document's canonical and
 derived outputs. Manual
 `pending prepare <selector-1> [<selector-2> ...]` checks compare those values locally
@@ -58,6 +71,11 @@ makes affected documents stale for regeneration.
 
 The `prepare` route uses the model configured in `config/codex-workflows.yaml` and the
 hard-capped `prepare_batch_size` policy.
+Its eligibility check requires the current match analysis to use the same selected
+model profile. If an explicitly selected vacancy was last analyzed under another
+profile, the active preparation-profile Codex task must evaluate it again and publish a
+new isolated match draft with `analyze --model-profile <profile> --force`; changing only
+the stored model label is prohibited.
 Scores below `prepare_min_score` are not prepared. Vacancies older than
 `prepare_max_age_days` from `discovered_at` are excluded from preparation. There is no
 automatic preparation queue: the user chooses one to 10 vacancies from analyzed matches

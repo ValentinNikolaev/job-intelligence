@@ -108,6 +108,13 @@ tasks that need language judgment. The repository keeps the handoff visible.
    same ownership and vacancy-isolation rules apply when concurrency is unavailable
    and the waves run sequentially.
 
+   Validation is a content gate, not just a file-existence check. The draft must meet
+   the document word ranges and required sections, include substantive Wave 1
+   handoffs, and provide `quality.yaml` with the exact cover-letter skill version, two
+   grounded evidence stories, a sourced company hook, and the final consistency
+   review. Published `manifest.yaml` records the contract version, document and
+   handoff hashes, word counts, and method provenance.
+
    The full package is the default. If the user explicitly asks for one document, add
    `--document cv`, `--document cover-letter`, `--document analysis`, or
    `--document interview-preparation`; only that draft is required and only its
@@ -207,8 +214,12 @@ python run.py validate-application <job-directory-or-vacancy-id> --input <draft-
 python run.py prepare <selector-1> --input .codex-work/application --workflow prepare --document cv
 # Select an allowed model profile when the active Codex task uses a non-default model.
 python run.py analyze <job-directory-or-vacancy-id> --input <draft.yaml> --workflow analyze --model-profile terra_medium
-python run.py prepare <selector-1> --input .codex-work/application --workflow prepare --model-profile luna_low
+python run.py prepare <selector-1> --input .codex-work/application --workflow prepare --model-profile terra_medium
 ```
+
+Preparation checks match freshness against its selected model profile. When the
+existing match used another profile, run a real vacancy-specific analysis with the
+preparation profile and `--force`; never edit or relabel the old provenance.
 
 An explicit selector limits both deterministic triage and an analysis pack to that
 single vacancy; use `all` only when intentionally processing the scheduled queue.

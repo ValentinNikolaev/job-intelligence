@@ -1,15 +1,13 @@
-# Cover Letter
-
 Dear Hiring Team,
 
-I am applying for the Symfony Developer role at Labs Madisoft. I bring more than fifteen years of backend experience across PHP and Go, including Symfony and Laravel services, asynchronous integrations, production operations and the engineering discipline needed to keep systems maintainable as they grow.
+I am applying for the Symfony developer role at Labs Madisoft. I bring more than 15 years of backend engineering experience in PHP and Go, including direct Laravel/Symfony development, APIs, messaging, performance work, and production operations. The opportunity to support Nuvola—a SaaS platform used daily by millions of teachers, school staff, students, and parents—calls for careful, maintainable engineering rather than generic framework familiarity.
 
-At airSlate, I worked on PHP backend services with Laravel, Symfony, MySQL and RabbitMQ. I investigated API and database-query bottlenecks, contributed to a product-wide logging package, and helped move services from ECS to Kubernetes with Helm, GitHub Actions and ArgoCD. This work combined code quality with the practical responsibilities of delivery, observability and reliable operation.
+At airSlate, I developed a Laravel/Symfony product-wide logger package for interservice communication and investigated API and query bottlenecks that reduced average response times by 30%. I also helped migrate managed services from ECS to Kubernetes with Helm, GitHub Actions, and ArgoCD, contributing to 30% lower costs and over 20% better performance. That combination of PHP application work, observability, and safe operational change is directly relevant to improving an established platform while delivering new features and bug fixes.
 
-My recent work has also centered on event-driven and communication-heavy systems. At CRURATED, I built internal analytics infrastructure with versioned schemas, webhook and S3 routing, retries and observability. At Simple.life, I owned a support automation platform and built message-delivery pipelines with fallback logic and monitoring. These experiences have strengthened my interest in clear interfaces, testable components and thoughtful evolution of distributed systems.
+In a concurrent part-time PHP consulting engagement at CRURATED, I architected event analytics infrastructure using queues and AWS EventBridge. Versioned schemas reduced delivery of new analytics streams from several days to under four hours, while retries, backpressure handling, and observability supported delivery reliability above 99.9%. This is a complementary example of making asynchronous integration patterns understandable and resilient as a system evolves.
 
-Labs Madisoft's focus on modern Symfony, collaborative engineering and a product with daily impact for Italian schools is particularly compelling. I would welcome the opportunity to contribute my PHP and reliability background while continuing to deepen practices such as domain-driven and test-driven design alongside your team.
+I am interested in Labs Madisoft because the published role combines modern PHP/Symfony development with pairing, code review, product decisions, performance, and an evolution toward microservices. I would bring Symfony/PHP delivery and adjacent migration and event-driven work, while approaching your DDD and testing practices with candour and active learning. I value collaborative, reviewable engineering and would bring that approach to a remote team serving a widely used product.
 
-Sincerely,
+I would welcome the opportunity to discuss how my Symfony, PHP, integration, and reliability experience could contribute to Nuvola's next stage. Thank you for considering my application.
 
 Valentin Nikolaev

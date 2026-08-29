@@ -1,19 +1,38 @@
-score: 80
-recommendation: strong_match
-summary: PHP Developer role matches the candidate's PHP, Laravel/Symfony, MySQL, backend,
-  and autonomous problem-solving evidence.
+score: 76
+recommendation: match
+summary: Strong direct match for PHP, Laravel/Symfony, MySQL, API performance, production
+  troubleshooting, and autonomous backend ownership. The role is based in Alba and
+  does not state remote availability, so the working arrangement is a material uncertainty
+  for a Rome-based candidate; the sparse posting also leaves scope and requirements
+  unclear.
 strengths:
-- Framework and relational database requirements are directly supported.
-- Strong senior engineering and delivery history.
-- Relevant architecture, performance, and reliability experience.
+- Direct PHP, Laravel, Symfony, and MySQL evidence from airSlate, Hyprr, PDFfiller,
+  and the recent PHP-oriented CRURATED consulting engagement.
+- Demonstrated backend problem solving through API and query bottleneck work, production
+  troubleshooting, monitoring, and database-load improvements at airSlate.
+- 'Relevant ownership and reliability experience: event-driven routing, retries, observability,
+  CI/CD, AWS, Kubernetes, and high-volume transactional email systems.'
+- Documented technical leadership and collaboration experience, including leading
+  backend engineers at PDFfiller and technology planning at Hyprr.
 gaps:
-- Remote status, employment terms, and detailed duties are unspecified.
+- No explicit candidate evidence for GKT's particular ERP/CRM, mobile-application,
+  or bespoke-web-project domains; these are company capabilities rather than stated
+  role requirements.
+- The posting does not specify framework version, testing practice, deployment model,
+  or the expected balance of PHP work and adjacent responsibilities.
 concerns:
-- Alba location may require commuting or relocation.
+- Alba is the listed location and the vacancy does not confirm remote or hybrid work;
+  the candidate is based in Rome, so commute, relocation, or remote eligibility must
+  be clarified before treating location as compatible.
+- Employment type, compensation, seniority calibration, language requirements, and
+  day-to-day responsibilities are absent from the sparse posting.
+- The candidate's most recent primary role is Go-oriented; the application should
+  make the current part-time PHP consulting engagement and earlier PHP framework work
+  easy for a recruiter to see.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T15:21:28Z'
+analyzed_at: '2026-08-29T16:47:05Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:1ffd652d01afbc01288cfb0b03b4cb629614850e3ecc5cabd040de538b9a3c3b
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-luna:low
+model: codex:gpt-5.6-terra:medium

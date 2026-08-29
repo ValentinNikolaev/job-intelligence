@@ -13,12 +13,15 @@ from unittest.mock import patch
 import yaml
 
 from jobintel.applications import (
+    APPLICATION_FILES,
     ApplicationError,
     ApplicationGenerator,
     CodexApplicationDraftClient,
+    QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
     _publish_staged_package,
     resolve_job_directories,
+    validate_application_draft,
     validate_application_package,
 )
 from jobintel.cli import main
@@ -48,16 +51,51 @@ def application_payload() -> dict[str, str]:
         "Preparation Plan",
         "Questions to Ask",
     )
+    skills = ", ".join(
+        ("PHP", "Laravel", "Symfony", "Go", "MySQL", "PostgreSQL", "SQL", "REST APIs", "Git", "AWS", "Kubernetes", "RabbitMQ")
+    )
+    bullets = "\n".join(f"- Delivered backend outcome {number} through careful design, testing, and collaboration." for number in range(1, 11))
+    cv_filler = " ".join(["Experienced backend engineer delivering reliable PHP and Go services for product teams."] * 42)
+    letter_paragraph = " ".join(["I connect verified backend delivery experience to the role's PHP, Laravel, API, and reliability priorities."] * 6)
+    analysis_body = " ".join(["Evidence is grounded in the candidate record and the vacancy, with gaps framed as confirmation items rather than claims."] * 5)
+    interview_body = " ".join(["Prepare a concise, truthful example, identify the candidate's individual contribution, and connect it to the stated role requirement."] * 7)
     return {
-        "cv_markdown": "# Candidate\nBackend Engineer\n\n## Summary\n\nBackend engineer.\n",
-        "cover_letter_markdown": "# Cover Letter\n\nDear Hiring Team,\n\nRelevant experience.\n",
+        "cv_markdown": "# Candidate\nBackend Engineer\n\nhttps://linkedin.com/in/candidate | https://github.com/candidate\n\n## Summary\n\n" + cv_filler + "\n\n## Skills\n\n" + skills + "\n\n## Experience\n\n### Example — Backend Engineer | January 2020 - Present\n" + bullets + "\nTechnologies: PHP, Laravel, MySQL\n\n## Education\n\nMSc in Computer Science\n\n## Languages\n\nEnglish\n",
+        "cover_letter_markdown": "Dear Hiring Team,\n\n" + "\n\n".join([letter_paragraph] * 4) + "\n\nCandidate\n",
         "analysis_markdown": "# Application Analysis\n\n"
-        + "\n\n".join(f"## {heading}\n\nEvidence." for heading in analysis_headings)
+        + "\n\n".join(f"## {heading}\n\n{analysis_body}" for heading in analysis_headings)
         + "\n",
         "interview_preparation_markdown": "# Interview Preparation\n\n"
-        + "\n\n".join(f"## {heading}\n\nPrepare evidence." for heading in interview_headings)
+        + "\n\n".join(f"## {heading}\n\n{interview_body}" for heading in interview_headings)
         + "\n",
     }
+
+
+def write_quality_contract(draft: Path, *, include_cover_letter: bool = True) -> None:
+    """Create the required two-wave handoffs and deterministic quality receipt."""
+    parts = draft / "parts"
+    parts.mkdir(parents=True, exist_ok=True)
+    (parts / "research.md").write_text(
+        "# Research\n\n## Fact\n" + "fact " * 35 + "\nhttps://example.test/company\n\n## Inference\n" + "inference " * 35 + "\n\n## Unknown\n" + "unknown " * 35,
+        encoding="utf-8",
+    )
+    (parts / "evidence-map.md").write_text(
+        "# Evidence map\n\n| Priority Requirement | Employer Wording | Candidate Evidence and Source | Match | Verified Metric | Story Theme or Gap |\n| --- | --- | --- | --- | --- | --- |\n| PHP | PHP | registry/candidate/candidate.md | Direct | none | delivery |\n\n## Proposed CV\n\n" + "evidence " * 440,
+        encoding="utf-8",
+    )
+    (parts / "requirements-risks.md").write_text(
+        "## Explicit Requirements\n" + "requirement " * 65 + "\n\n## Inferred Requirements\n" + "inference " * 65 + "\n\n## Gaps and Risks\n" + "risk " * 65 + "\n\n## ATS Terms\nPHP, Laravel, APIs\n\n## Interview Probes\n" + "probe " * 65,
+        encoding="utf-8",
+    )
+    quality: dict[str, Any] = {
+        "schema_version": QUALITY_CONTRACT_VERSION,
+        "workflow": "two-wave",
+        "handoffs": {"research": "parts/research.md", "evidence_map": "parts/evidence-map.md", "requirements_risks": "parts/requirements-risks.md"},
+        "final_review": {"claim_grounding": True, "cross_file_consistency": True, "quality_gate": True},
+    }
+    if include_cover_letter:
+        quality["cover_letter"] = {"skill": "write-cover-letter", "version": "test", "workbench_complete": True, "evidence_stories": [{"requirement": "PHP", "candidate_source": "registry/candidate/candidate.md"}, {"requirement": "APIs", "candidate_source": "registry/candidate/candidate.md"}], "company_motivation": {"fact": "Product company", "source_url": "https://example.test/company"}}
+    (draft / "quality.yaml").write_text(yaml.safe_dump(quality, sort_keys=False), encoding="utf-8")
 
 
 class FakeClient:
@@ -208,6 +246,8 @@ class ApplicationTests(unittest.TestCase):
             manifest["cv_export_stem"],
         )
         self.assertNotIn("simple_life_end_date", manifest)
+        self.assertEqual(QUALITY_CONTRACT_VERSION, manifest["quality_contract_version"])
+        self.assertIn("documents", manifest["quality"])
 
     def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
         self.assertEqual(
@@ -241,19 +281,14 @@ class ApplicationTests(unittest.TestCase):
 
     def test_simple_life_cv_date_range_is_preserved_from_draft(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = (
-            "# Candidate\n"
-            "Backend Engineer\n\n"
-            "## Experience\n\n"
-            "### Simple.life\n\n"
-            "**Software Developer**  \n"
-            "November 2023 - July 2026\n\n"
-            "- Built Go services.\n\n"
-            "Technologies: Go | REST APIs\n\n"
-            "### airSlate\n\n"
-            "**Software Developer**  \n"
-            "February 2021 - August 2023\n\n"
-            "Technologies: PHP | Laravel\n"
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "### Example — Backend Engineer | January 2020 - Present",
+            "### Simple.life — Software Developer | November 2023 - July 2026",
+        ).replace(
+            "## Education",
+            "### airSlate — Software Developer | February 2021 - August 2023\n"
+            "- Improved a supported backend workflow with measured engineering discipline.\n"
+            "Technologies: PHP, Symfony, PostgreSQL\n\n## Education",
         )
 
         self._generator(FakeClient(payload), FakeConverter()).generate_directory(self.directory)
@@ -371,7 +406,9 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cv_headline_must_immediately_follow_candidate_name(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = "# Candidate\n\nBackend Engineer\n\n## Summary\n\nBackend engineer.\n"
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "# Candidate\nBackend Engineer", "# Candidate\n\nBackend Engineer", 1
+        )
 
         with self.assertRaisesRegex(ApplicationError, "immediately after the candidate name"):
             validate_application_package(
@@ -381,7 +418,9 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cv_headline_must_align_with_vacancy_title_terms(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = "# Candidate\nSoftware Engineer\n\n## Summary\n\nBackend engineer.\n"
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "# Candidate\nBackend Engineer", "# Candidate\nSoftware Engineer", 1
+        )
 
         with self.assertRaisesRegex(ApplicationError, "headline is not aligned"):
             validate_application_package(
@@ -391,7 +430,6 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cv_headline_accepts_vacancy_specific_supported_term(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = "# Candidate\nBackend Engineer\n\n## Summary\n\nBackend engineer.\n"
 
         result = validate_application_package(
             payload,
@@ -402,10 +440,10 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cv_experience_rejects_employment_older_than_ten_years(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = (
-            "# Candidate\nBackend Engineer\n\n"
-            "## Experience\n\n### Legacy Co\n2008 - 2015\n\n"
-            "## Education\n\nUniversity, 2004 - 2008\n"
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "Technologies: PHP, Laravel, MySQL\n\n## Education",
+            "Technologies: PHP, Laravel, MySQL\n\n### Legacy Co | 2008 - 2015\n"
+            "- Maintained services.\nTechnologies: PHP\n\n## Education",
         )
 
         with self.assertRaisesRegex(ApplicationError, "more than 10 years ago"):
@@ -416,12 +454,10 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cv_age_rule_is_scoped_to_experience_and_allows_recent_roles(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = (
-            "# Candidate\nBackend Engineer\n\n"
-            "## Experience\n\n### Current Co\nJuly 2015 - August 2016\n\n"
-            "Technologies: Go\n\n"
-            "### New Co\nSeptember 2016 - Present\n\nTechnologies: PHP\n\n"
-            "## Education\n\nUniversity, 2004 - 2008\n"
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "### Example — Backend Engineer | January 2020 - Present",
+            "### Current Co | July 2015 - August 2016\nTechnologies: Go\n\n"
+            "### New Co | September 2016 - Present",
         )
 
         result = validate_application_package(
@@ -429,16 +465,13 @@ class ApplicationTests(unittest.TestCase):
             reference_date=datetime(2026, 8, 6, tzinfo=timezone.utc),
         )
 
-        self.assertIn("University, 2004 - 2008", result["cv_markdown"])
+        self.assertIn("MSc in Computer Science", result["cv_markdown"])
 
     def test_cv_requires_evidence_backed_technologies_for_each_experience_role(self) -> None:
         payload = application_payload()
-        payload["cv_markdown"] = (
-            "# Candidate\nBackend Engineer\n\n"
-            "## Experience\n\n"
-            "### Complete Co\n\nTechnologies: PHP | Laravel\n\n"
-            "### Missing Co\n\n- Built services.\n\n"
-            "## Education\n\nUniversity\n"
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "Technologies: PHP, Laravel, MySQL\n\n## Education",
+            "Technologies: PHP, Laravel, MySQL\n\n### Missing Co\n- Built services.\n\n## Education",
         )
 
         with self.assertRaisesRegex(ApplicationError, "Missing Co"):
@@ -453,9 +486,10 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cover_letter_accepts_target_role_and_company_context(self) -> None:
         payload = application_payload()
-        payload["cover_letter_markdown"] = (
-            "# Cover Letter\n\nDear Hiring Team,\n\n"
-            "I am applying for the Senior Backend Engineer role at Example.\n"
+        payload["cover_letter_markdown"] = payload["cover_letter_markdown"].replace(
+            "I connect verified backend delivery experience",
+            "I am applying for the Senior Backend Engineer role at Example and connect verified backend delivery experience",
+            1,
         )
 
         result = validate_application_package(
@@ -549,6 +583,7 @@ class ApplicationTests(unittest.TestCase):
         }
         for field, filename in filenames.items():
             (draft / filename).write_text(payload[field], encoding="utf-8")
+        write_quality_contract(draft)
         client = CodexApplicationDraftClient(
             draft, model="codex:gpt-5.5:medium"
         )
@@ -567,6 +602,7 @@ class ApplicationTests(unittest.TestCase):
         (draft / "cv.md").write_text(
             application_payload()["cv_markdown"], encoding="utf-8"
         )
+        write_quality_contract(draft, include_cover_letter=False)
 
         client = CodexApplicationDraftClient(
             draft,
@@ -578,6 +614,24 @@ class ApplicationTests(unittest.TestCase):
             {"cv_markdown"},
             set(client.generate(prompt="", candidate_profile="", vacancy={})),
         )
+
+    def test_validate_application_draft_rejects_missing_quality_contract(self) -> None:
+        draft = self.project / "missing-quality"
+        draft.mkdir()
+        (draft / "cv.md").write_text(application_payload()["cv_markdown"], encoding="utf-8")
+        with self.assertRaisesRegex(ApplicationError, "quality.yaml"):
+            validate_application_draft(self.directory, draft, document="cv")
+
+    def test_validate_application_draft_rejects_incomplete_handoff(self) -> None:
+        draft = self.project / "incomplete-handoff"
+        draft.mkdir()
+        payload = application_payload()
+        for field, filename in APPLICATION_FILES.items():
+            (draft / filename).write_text(payload[field], encoding="utf-8")
+        write_quality_contract(draft)
+        (draft / "parts" / "research.md").write_text("## Fact\nshort", encoding="utf-8")
+        with self.assertRaisesRegex(ApplicationError, "research"):
+            validate_application_draft(self.directory, draft)
 
     def test_validate_application_cli_checks_draft_without_publishing(self) -> None:
         draft = self.project / "application-draft"
@@ -591,6 +645,7 @@ class ApplicationTests(unittest.TestCase):
         payload = application_payload()
         for field, filename in filenames.items():
             (draft / filename).write_text(payload[field], encoding="utf-8")
+        write_quality_contract(draft)
 
         output = StringIO()
         with redirect_stdout(output):
@@ -632,6 +687,7 @@ class ApplicationTests(unittest.TestCase):
         (draft / "cv.md").write_text(
             application_payload()["cv_markdown"], encoding="utf-8"
         )
+        write_quality_contract(draft, include_cover_letter=False)
 
         result = main(
             [
@@ -663,9 +719,8 @@ class ApplicationTests(unittest.TestCase):
         preserved = {name: (application / name).read_bytes() for name in preserved_names}
 
         payload = {
-            "cv_markdown": (
-                "# Candidate\nBackend Engineer\n\n## Summary\n\n"
-                "Updated backend engineer.\n"
+            "cv_markdown": application_payload()["cv_markdown"].replace(
+                "Experienced backend engineer", "Updated backend engineer", 1
             )
         }
         partial_converter = FakeConverter()
@@ -734,6 +789,7 @@ class ApplicationTests(unittest.TestCase):
             "interview_preparation_markdown": "interview-preparation.md",
         }.items():
             (draft / filename).write_text(application_payload()[field], encoding="utf-8")
+        write_quality_contract(draft)
         MatchAnalyzer(
             self.registry_root,
             [self.profile],
@@ -760,7 +816,16 @@ class ApplicationTests(unittest.TestCase):
             )
 
         self.assertEqual(0, exit_code)
-        self.assertTrue((self.directory / "application" / "manifest.yaml").is_file())
+        manifest_path = self.directory / "application" / "manifest.yaml"
+        self.assertTrue(manifest_path.is_file())
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        self.assertEqual(QUALITY_CONTRACT_VERSION, manifest["quality_contract_version"])
+        self.assertEqual("two-wave", manifest["quality"]["method"]["workflow"])
+        self.assertEqual(3, len(manifest["quality"]["handoffs"]))
+        self.assertEqual(
+            "write-cover-letter",
+            manifest["quality"]["method"]["cover_letter"]["skill"],
+        )
 
     def test_prepare_cli_publishes_explicit_cv_only_draft(self) -> None:
         sources = self.project / "sources"
@@ -770,6 +835,7 @@ class ApplicationTests(unittest.TestCase):
         (draft / "cv.md").write_text(
             application_payload()["cv_markdown"], encoding="utf-8"
         )
+        write_quality_contract(draft, include_cover_letter=False)
         MatchAnalyzer(
             self.registry_root,
             [self.profile],
@@ -847,6 +913,7 @@ class ApplicationTests(unittest.TestCase):
                 "interview_preparation_markdown": "interview-preparation.md",
             }.items():
                 (draft / filename).write_text(payload[field], encoding="utf-8")
+            write_quality_contract(draft)
 
         with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()):
             exit_code = main(

@@ -62,15 +62,46 @@ class WorkflowContractTests(unittest.TestCase):
             ".agents/skills/job-intelligence-workflow/references/prepare.md"
         )
 
-        self.assertIn("Target 500–700 words for `cv_markdown`", prompt)
-        self.assertIn("300–450 for `cover_letter_markdown`", prompt)
-        self.assertIn("700–900 for `analysis_markdown`", prompt)
-        self.assertIn("800–1000 for", prompt)
+        self.assertIn("Required minimums are 500 words for `cv_markdown`", prompt)
+        self.assertIn("300 for `cover_letter_markdown`", prompt)
+        self.assertIn("700 for `analysis_markdown`", prompt)
+        self.assertIn("800 for `interview_preparation_markdown`", prompt)
+        self.assertIn("targets are", prompt)
+        self.assertIn("500–700, 300–450, 700–900, and 800–1000", prompt)
         self.assertIn("Hard ceilings are 800 words for the CV", prompt)
         self.assertIn("at most two primary", prompt)
         self.assertIn("one research pass", prompt)
         self.assertIn("at most two primary", prepare)
         self.assertIn("python run.py validate-application <vacancy-directory>", prepare)
+
+    def test_quality_contract_requires_two_wave_receipt_and_grounded_cover_letter(self) -> None:
+        source = self._read("jobintel/applications.py")
+        for token in (
+            "QUALITY_CONTRACT_VERSION = 1",
+            "quality.yaml",
+            "research.md",
+            "evidence-map.md",
+            "requirements-risks.md",
+            "write-cover-letter",
+            "workbench_complete",
+            "evidence_stories",
+            "company_motivation",
+            "quality_contract_version",
+        ):
+            self.assertIn(token, source)
+        for minimum in ("500", "300", "700", "800"):
+            self.assertIn(minimum, source)
+
+    def test_prepare_requires_same_profile_match_without_relabeling(self) -> None:
+        prepare = self._read(
+            ".agents/skills/job-intelligence-workflow/references/prepare.md"
+        )
+        shared = self._read("prompts/job-intelligence-workflow.md")
+        combined = self._flat(f"{prepare} {shared}")
+
+        self.assertIn("same selected model profile", combined)
+        self.assertIn("--model-profile <selected-profile> --force", combined)
+        self.assertRegex(combined, r"(?i)(?:do not|never).{0,100}(?:relabel|model label)")
 
     def test_preparation_defaults_to_full_package_and_allows_one_explicit_document(self) -> None:
         paths = (
@@ -187,30 +218,15 @@ class WorkflowContractTests(unittest.TestCase):
         application_prompt = self._flat(self._read("prompts/vacancy-application.md"))
         combined = f"{prepare} {application_prompt}"
 
-        self.assertRegex(
-            combined,
-            r"(?i)research.{0,240}(?:does not|must not|without).{0,100}"
-            r"(?:full candidate|candidate (?:cv|profile|evidence))",
-        )
-        self.assertRegex(
-            combined,
-            r"(?i)(?:cv|evidence).{0,180}(?:does not|must not|without|"
-            r"performs? no|no).{0,80}(?:web|brows)",
-        )
+        self.assertIn("not the full source CV", combined)
+        self.assertIn("performs no web research", combined)
         self.assertRegex(
             combined,
             r"(?i)evidence-map\.md.{0,220}(?:complete|full).{0,80}"
             r"(?:proposed |draft )?cv",
         )
-        self.assertRegex(
-            combined,
-            r"(?i)wave 2.{0,800}(?:only|minimal).{0,120}(?:needed|required|specific)",
-        )
-        self.assertRegex(
-            combined,
-            r"(?i)(?:do not|must not|never).{0,100}(?:unneeded.{0,80}"
-            r"(?:inputs|candidate sources)|other handoffs)",
-        )
+        self.assertIn("only the candidate evidence needed", combined)
+        self.assertIn("Do not let a role reread unneeded candidate sources", combined)
 
     def test_two_wave_preparation_finalizes_once_with_safe_fallback(self) -> None:
         paths = (

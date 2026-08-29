@@ -1,23 +1,35 @@
-score: 88
+score: 82
 recommendation: strong_match
-summary: 'Strong fit for a Rome or remote PHP role: the candidate has extensive PHP
-  backend experience, Laravel and Symfony, MySQL and PostgreSQL, AWS, Git-based CI/CD,
-  serverless and microservice architecture, plus production reliability work.'
+summary: Strong match for the role's direct PHP, Laravel/Symfony, SQL/MySQL, AWS,
+  Git-style delivery, maintainable-code, documentation, and cloud-reliability needs.
+  The Rome/Remote posting improves location compatibility. JavaScript, Node.js, MongoDB,
+  and AWS Lambda are named in the post but are not supported by the candidate evidence,
+  so their actual importance must be clarified.
 strengths:
-- PHP, Laravel, Symfony, AWS, MySQL, PostgreSQL, GitHub Actions and serverless architecture
-  are documented in candidate evidence.
-- The candidate is based in the Rome area and the position explicitly permits remote
-  work.
-- Production modernization, documentation, collaboration and legacy-code maintenance
-  are supported by recent roles.
+- Direct PHP, Laravel, Symfony, and MySQL evidence across airSlate, Hyprr, PDFfiller,
+  and the recent PHP-oriented CRURATED consulting engagement.
+- Direct AWS and cloud-delivery evidence, including Kubernetes migration, Helm, GitHub
+  Actions, ArgoCD, monitoring, and AWS EventBridge-based event infrastructure.
+- Strong SQL/API-performance and production-troubleshooting evidence from airSlate,
+  plus reliable message-delivery, retries, monitoring, and operational ownership.
+- Documented event-driven and serverless-architecture exposure at CRURATED and Hyprr,
+  relevant to Watuppa's cloud/serverless product context without claiming AWS Lambda.
+- Rome / Remote is explicitly listed, and the candidate is based in Rome.
 gaps:
-- Direct MongoDB and Node.js production experience is not stated.
+- No explicit candidate evidence for JavaScript, Node.js, MongoDB, or AWS Lambda;
+  these should not be represented as existing skills.
+- No direct evidence confirms Watuppa's particular ecommerce, dashboard, or business-process
+  domain, although the candidate has related digital-product and automation experience.
 concerns:
-- The posting lists broad levels; the appropriate seniority and compensation should
-  be confirmed.
+- The posting spans junior, mid-junior, and senior levels, so the intended seniority,
+  responsibility scope, and compensation need clarification.
+- Rome / Remote is stated, but the exact remote policy, contract type, required office
+  presence, current framework, and AWS-service mix are not published.
+- Clarify whether the unsupported JavaScript, Node.js, MongoDB, and Lambda terms are
+  mandatory day-one requirements or secondary skills.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-29T14:42:02Z'
+analyzed_at: '2026-08-29T16:48:06Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:29f5429854f37f5d4af1c9892360e03f769d26bbaeaf736a9eeba42ab05cfd4f
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3

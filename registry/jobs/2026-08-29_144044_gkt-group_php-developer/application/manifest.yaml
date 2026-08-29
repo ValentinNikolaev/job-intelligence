@@ -1,43 +1,85 @@
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 vacancy_version: sha256:b15feee3b059bacb3fa71fe88a78593559bf999448eb79a0b1d8681c2dbccaf5
 company_version: sha256:bc26ccbecf24f22e1f7fec9ac6f9027b716188ab9399477f2498a16567d4f17b
-prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
 model: codex:gpt-5.6-terra:medium
+quality_contract_version: 1
 cv_export_stem: CV_ValentinNikolaev_gktgroup_PHPDeveloper
-generated_at: '2026-08-29T14:51:53Z'
+generated_at: '2026-08-29T16:48:28Z'
 documents:
   cv:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:b15feee3b059bacb3fa71fe88a78593559bf999448eb79a0b1d8681c2dbccaf5
     company_version: sha256:bc26ccbecf24f22e1f7fec9ac6f9027b716188ab9399477f2498a16567d4f17b
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_gktgroup_PHPDeveloper
-    generated_at: '2026-08-29T14:51:53Z'
+    generated_at: '2026-08-29T16:48:28Z'
   cover-letter:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:b15feee3b059bacb3fa71fe88a78593559bf999448eb79a0b1d8681c2dbccaf5
     company_version: sha256:bc26ccbecf24f22e1f7fec9ac6f9027b716188ab9399477f2498a16567d4f17b
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_gktgroup_PHPDeveloper
-    generated_at: '2026-08-29T14:51:53Z'
+    generated_at: '2026-08-29T16:48:28Z'
   analysis:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:b15feee3b059bacb3fa71fe88a78593559bf999448eb79a0b1d8681c2dbccaf5
     company_version: sha256:bc26ccbecf24f22e1f7fec9ac6f9027b716188ab9399477f2498a16567d4f17b
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_gktgroup_PHPDeveloper
-    generated_at: '2026-08-29T14:51:53Z'
+    generated_at: '2026-08-29T16:48:28Z'
   interview-preparation:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:b15feee3b059bacb3fa71fe88a78593559bf999448eb79a0b1d8681c2dbccaf5
     company_version: sha256:bc26ccbecf24f22e1f7fec9ac6f9027b716188ab9399477f2498a16567d4f17b
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_gktgroup_PHPDeveloper
-    generated_at: '2026-08-29T14:51:53Z'
+    generated_at: '2026-08-29T16:48:28Z'
+quality:
+  contract_version: 1
+  documents:
+    cv:
+      word_count: 503
+      sha256: sha256:0ff72fc7b6079ab89939474bc979e837a034c55679531439fb317842f9da04a2
+    cover-letter:
+      word_count: 317
+      sha256: sha256:92b3232f77546d651a04cbc72730898c55600019f338a15f115d1a67dbad614b
+    analysis:
+      word_count: 947
+      sha256: sha256:278741e1abfe2005c5be1765396244e140eb2c829a8d456f7e99365e33db428b
+    interview-preparation:
+      word_count: 1067
+      sha256: sha256:aaa46b88ccdf8d1c48a1f15b5d4aad1b6f8fab2e9bd4bf92812b784f29a5ac31
+  declaration_sha256: sha256:a8a4e0126545a954891d75219960d03378097ef23738a5337ea2a1cf6ac896a7
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 12.1.0+codex.20260819194947
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://gktgroup.it/
+  handoffs:
+    research.md:
+      word_count: 245
+      sha256: sha256:ce6e620cc33ce23288e246b4cb4be49f6390a9dbbaf767276ab00c1523e2c0ff
+    evidence-map.md:
+      word_count: 643
+      sha256: sha256:564a63adfece3e3a9d6973524d7ce02560ea78d67daa32e7d5555f1673d26eb5
+    requirements-risks.md:
+      word_count: 333
+      sha256: sha256:1e4683ed3d4c4114ecbcaed0306813532c92c4a61c045e22bd4eddbfe44c1f7f
 files:
 - CV_ValentinNikolaev_gktgroup_PHPDeveloper.docx
 - CV_ValentinNikolaev_gktgroup_PHPDeveloper.md

@@ -41,6 +41,10 @@ separate user-gated action.
    `python run.py analyze <directory> --input <draft.yaml> --workflow analyze
    [--model-profile <profile>]`. Do not run triage, `pending analyze all`,
    `analyze-batch`, or another queue command in this mode.
+   A match produced by a different model profile is not current for preparation under
+   the selected profile. Run a real analysis in the selected-profile Codex task and
+   publish it with `--model-profile <profile> --force`; never change only the stored
+   model label or reuse another profile's judgment as if it were new.
 5. Do not prepare merely because the score meets `prepare_min_score`. Prepare only
    when the user has explicitly asked to prepare this vacancy or has clearly approved
    preparation after intake/analysis. The approval must identify the vacancy by ID,
@@ -72,6 +76,11 @@ run only the roles and handoffs necessary for that document; preserve any existi
 unselected artifacts. The cover-letter skill is required only when the selected scope
 includes `cover-letter`.
 
+Before Wave 1, confirm each selected vacancy has a fresh match produced by the same
+model profile selected for preparation. If not, create and publish a new isolated match
+draft from that selected-profile task before drafting application artifacts. Model
+provenance is content provenance, not a label that may be rewritten.
+
 1. In Wave 1, run independent research, CV/evidence, and requirements/risks roles in
    parallel when subagent slots are available. Research receives only this vacancy's
    meta/job/company files plus minimal candidate motivation hooks, not the full CV, and
@@ -91,10 +100,16 @@ includes `cover-letter`.
    must invoke `$write-cover-letter`; interview receives the vacancy, final CV,
    requirements/risks handoff, and verified research without browsing again; analysis
    receives the vacancy, final CV, and all Wave 1 handoffs.
-4. The main agent performs one cross-file consistency and claim check, then runs
+4. Before validation, write `.codex-work/application/<directory>/quality.yaml`, schema
+   version 1, with `workflow: two-wave`; cover-letter skill name/version;
+   `workbench_complete: true`; two evidence stories with `candidate_source`; a
+   company-motivation fact and `source_url`; and final `claim_grounding: true` and
+   `cross_file_consistency: true`.
+5. The main agent performs one cross-file consistency and claim check, then runs
    `validate-application` once and `prepare` once. Subagents never run those commands or
-   edit another role's file.
-5. If subagents or enough slots are unavailable, execute the same roles sequentially,
+   edit another role's file. The validator checks the quality contract, required
+   handoffs, provenance, word counts, and hashes; the manifest retains them.
+6. If subagents or enough slots are unavailable, execute the same roles sequentially,
    preserving the two waves, handoff files, and exclusive ownership. Do not claim a
    model switch that the current Codex task did not perform.
 

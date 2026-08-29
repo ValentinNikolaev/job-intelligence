@@ -29,6 +29,7 @@ APPLICATION_DOCUMENTS = {
     "analysis": "analysis_markdown",
     "interview-preparation": "interview_preparation_markdown",
 }
+QUALITY_CONTRACT_VERSION = 1
 
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
@@ -101,6 +102,13 @@ _EXPERIENCE_DATE_RANGE_RE = re.compile(
 )
 
 _REQUIRED_HEADINGS = {
+    "cv_markdown": (
+        "Summary",
+        "Skills",
+        "Experience",
+        "Education",
+        "Languages",
+    ),
     "analysis_markdown": (
         "Vacancy Summary",
         "Company Research",
@@ -131,6 +139,34 @@ _MAX_APPLICATION_WORD_COUNTS = {
     "cover_letter_markdown": 450,
     "analysis_markdown": 1000,
     "interview_preparation_markdown": 1100,
+}
+_MIN_APPLICATION_WORD_COUNTS = {
+    "cv_markdown": 500,
+    "cover_letter_markdown": 300,
+    "analysis_markdown": 700,
+    "interview_preparation_markdown": 800,
+}
+_HANDOFF_REQUIREMENTS = {
+    "research.md": (100, ("Fact", "Inference", "Unknown")),
+    "evidence-map.md": (
+        450,
+        (
+            "Priority requirement",
+            "Candidate evidence and source",
+            "Match",
+            "## Proposed CV",
+        ),
+    ),
+    "requirements-risks.md": (
+        250,
+        (
+            "## Explicit Requirements",
+            "## Inferred Requirements",
+            "## Gaps and Risks",
+            "## ATS Terms",
+            "## Interview Probes",
+        ),
+    ),
 }
 _HEADLINE_GENERIC_TERMS = {
     "and",
@@ -238,12 +274,14 @@ def validate_application_draft(
         model="deterministic-draft-validator",
         document=document,
     ).generate(prompt="", candidate_profile="", vacancy=vacancy)
-    return validate_application_package(
+    validated = validate_application_package(
         draft,
         vacancy=vacancy,
         document=document,
         reference_date=reference_date,
     )
+    _validate_draft_quality(draft_directory.resolve(), validated, document=document)
+    return validated
 
 
 class HostMarkdownDocxConverter:
@@ -339,6 +377,7 @@ class ApplicationGenerator:
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            "quality_contract_version": QUALITY_CONTRACT_VERSION,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
@@ -364,6 +403,15 @@ class ApplicationGenerator:
             document=self.document,
             reference_date=generated_at,
         )
+        quality = _document_quality_report(generated)
+        if isinstance(self.client, CodexApplicationDraftClient):
+            quality.update(
+                _validate_draft_quality(
+                    self.client.directory,
+                    generated,
+                    document=self.document,
+                )
+            )
         cv_export_files = _cv_export_files(meta)
 
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
@@ -397,6 +445,11 @@ class ApplicationGenerator:
                 **expected_versions,
                 "generated_at": _utc_iso(generated_at),
                 "documents": document_versions,
+                "quality": _merge_quality_reports(
+                    previous_manifest.get("quality"),
+                    quality,
+                    document=self.document,
+                ),
                 "files": published_files,
             }
             _write_text(
@@ -428,6 +481,7 @@ class ApplicationGenerator:
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            "quality_contract_version": QUALITY_CONTRACT_VERSION,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
@@ -527,18 +581,275 @@ def validate_application_package(
         for phrase in _FORBIDDEN_APPLICATION_PHRASES:
             if phrase.casefold() in folded:
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
-        word_count = len(re.findall(r"\b[\w'-]+\b", content, flags=re.UNICODE))
+        word_count = _word_count(content)
+        word_minimum = _MIN_APPLICATION_WORD_COUNTS[field]
+        if word_count < word_minimum:
+            raise ApplicationError(
+                f"{field} is below {word_minimum}-word minimum ({word_count} words)"
+            )
         word_limit = _MAX_APPLICATION_WORD_COUNTS[field]
         if word_count > word_limit:
             raise ApplicationError(
                 f"{field} exceeds {word_limit}-word limit ({word_count} words)"
             )
     if "cv_markdown" in result:
+        _validate_cv_links(result["cv_markdown"])
+        _validate_cv_skills(result["cv_markdown"])
+        _validate_cv_experience_bullets(result["cv_markdown"])
         _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
         _validate_cv_role_technologies(result["cv_markdown"])
         if vacancy is not None:
             _validate_cv_headline(result["cv_markdown"], vacancy)
+    if "cover_letter_markdown" in result:
+        _validate_cover_letter_paragraphs(result["cover_letter_markdown"])
     return result
+
+
+def _word_count(markdown: str) -> int:
+    return len(re.findall(r"\b[\w'-]+\b", markdown, flags=re.UNICODE))
+
+
+def _markdown_section(markdown: str, heading: str) -> str:
+    lines = markdown.splitlines()
+    selected: list[str] = []
+    in_section = False
+    for line in lines:
+        match = re.match(r"^(#{1,6})\s+(.+?)\s*$", line.strip())
+        if match and len(match.group(1)) == 2:
+            if in_section:
+                break
+            in_section = match.group(2).strip().casefold() == heading.casefold()
+            continue
+        if in_section:
+            selected.append(line)
+    return "\n".join(selected)
+
+
+def _validate_cv_links(markdown: str) -> None:
+    folded = markdown.casefold()
+    missing = []
+    if not re.search(r"https?://(?:www\.)?linkedin\.com/", folded):
+        missing.append("LinkedIn")
+    if not re.search(r"https?://(?:www\.)?github\.com/", folded):
+        missing.append("GitHub")
+    if missing:
+        raise ApplicationError(
+            "cv_markdown must include working profile URLs for: " + ", ".join(missing)
+        )
+
+
+def _validate_cv_skills(markdown: str) -> None:
+    section = _markdown_section(markdown, "Skills")
+    items = [
+        match.group(1).strip()
+        for line in section.splitlines()
+        if (match := re.match(r"^\s*[-*]\s+(.+?)\s*$", line))
+    ]
+    if not items:
+        items = [item.strip() for item in re.split(r"[,;|]", section) if item.strip()]
+    if not 12 <= len(items) <= 18:
+        raise ApplicationError(
+            "cv_markdown Skills must contain 12 to 18 vacancy-relevant items "
+            f"({len(items)} found)"
+        )
+
+
+def _validate_cv_experience_bullets(markdown: str) -> None:
+    section = _markdown_section(markdown, "Experience")
+    bullets = [
+        line
+        for line in section.splitlines()
+        if re.match(r"^\s*[-*]\s+\S", line)
+        and not re.match(r"^\s*[-*]\s+(?:\*\*)?Technologies", line, re.IGNORECASE)
+    ]
+    if len(bullets) < 10:
+        raise ApplicationError(
+            "cv_markdown Experience must contain at least 10 evidence-backed bullets "
+            f"({len(bullets)} found)"
+        )
+
+
+def _validate_cover_letter_paragraphs(markdown: str) -> None:
+    body: list[str] = []
+    for block in re.split(r"\n\s*\n", markdown.strip()):
+        text = " ".join(
+            line.strip() for line in block.splitlines() if not line.lstrip().startswith("#")
+        ).strip()
+        folded = text.casefold()
+        if not text or folded.startswith(("dear ", "hello ", "hi ")):
+            continue
+        if folded.startswith(("sincerely", "best regards", "kind regards", "cordiali")):
+            continue
+        if _word_count(text) >= 20:
+            body.append(text)
+    if not 4 <= len(body) <= 6:
+        raise ApplicationError(
+            "cover_letter_markdown must contain 4 to 6 substantive body paragraphs "
+            f"({len(body)} found)"
+        )
+
+
+def _document_quality_report(package: Mapping[str, str]) -> dict[str, Any]:
+    documents = {}
+    for field, content in package.items():
+        document = next(
+            name for name, mapped_field in APPLICATION_DOCUMENTS.items() if mapped_field == field
+        )
+        documents[document] = {
+            "word_count": _word_count(content),
+            "sha256": _content_version(content),
+        }
+    return {
+        "contract_version": QUALITY_CONTRACT_VERSION,
+        "documents": documents,
+    }
+
+
+def _validate_draft_quality(
+    draft_directory: Path,
+    package: Mapping[str, str],
+    *,
+    document: str | None,
+) -> dict[str, Any]:
+    quality_path = draft_directory / "quality.yaml"
+    quality = _read_yaml_mapping(quality_path, "application quality declaration")
+    if quality.get("schema_version") != QUALITY_CONTRACT_VERSION:
+        raise ApplicationError(
+            "application quality declaration schema_version must be "
+            f"{QUALITY_CONTRACT_VERSION}: {quality_path}"
+        )
+    if quality.get("workflow") != "two-wave":
+        raise ApplicationError("application quality declaration workflow must be two-wave")
+
+    final_review = quality.get("final_review")
+    if not isinstance(final_review, Mapping) or any(
+        final_review.get(key) is not True
+        for key in ("claim_grounding", "cross_file_consistency")
+    ):
+        raise ApplicationError(
+            "application quality declaration final_review must confirm "
+            "claim_grounding and cross_file_consistency"
+        )
+
+    selected = set(_selected_documents(_normalize_document(document)))
+    method: dict[str, Any] = {
+        "workflow": "two-wave",
+        "final_review": {
+            "claim_grounding": True,
+            "cross_file_consistency": True,
+        },
+    }
+    if "cover-letter" in selected:
+        cover_letter = quality.get("cover_letter")
+        if not isinstance(cover_letter, Mapping):
+            raise ApplicationError("application quality declaration is missing cover_letter")
+        skill = str(cover_letter.get("skill") or "").strip()
+        skill_version = str(cover_letter.get("version") or "").strip()
+        if skill != "write-cover-letter" or not skill_version:
+            raise ApplicationError(
+                "cover_letter must record write-cover-letter and its installed version"
+            )
+        if cover_letter.get("workbench_complete") is not True:
+            raise ApplicationError("cover_letter workbench_complete must be true")
+        stories = cover_letter.get("evidence_stories")
+        if not isinstance(stories, list) or len(stories) != 2:
+            raise ApplicationError("cover_letter must record exactly two evidence_stories")
+        for index, story in enumerate(stories, start=1):
+            if not isinstance(story, Mapping):
+                raise ApplicationError(f"cover_letter evidence story {index} must be a mapping")
+            requirement = str(story.get("requirement") or "").strip()
+            source = str(story.get("candidate_source") or "").strip().replace("\\", "/")
+            if not requirement or not source.startswith("registry/candidate/"):
+                raise ApplicationError(
+                    f"cover_letter evidence story {index} must include a requirement and "
+                    "a registry/candidate source"
+                )
+        motivation = cover_letter.get("company_motivation")
+        if not isinstance(motivation, Mapping):
+            raise ApplicationError("cover_letter must record company_motivation")
+        fact = str(motivation.get("fact") or "").strip()
+        source_url = str(motivation.get("source_url") or "").strip()
+        if not fact or not re.match(r"^https?://", source_url, re.IGNORECASE):
+            raise ApplicationError(
+                "cover_letter company_motivation must include a fact and HTTP(S) source_url"
+            )
+        method["cover_letter"] = {
+            "skill": skill,
+            "version": skill_version,
+            "workbench_complete": True,
+            "evidence_story_count": len(stories),
+            "company_source_url": source_url,
+        }
+
+    required_handoffs = _required_handoffs(selected)
+    handoff_report: dict[str, Any] = {}
+    for filename in required_handoffs:
+        path = draft_directory / "parts" / filename
+        try:
+            content = path.read_text(encoding="utf-8").strip()
+        except OSError as exc:
+            raise ApplicationError(f"cannot read required application handoff {path}: {exc}") from exc
+        minimum, markers = _HANDOFF_REQUIREMENTS[filename]
+        count = _word_count(content)
+        if count < minimum:
+            raise ApplicationError(
+                f"application handoff {filename} is below {minimum}-word minimum "
+                f"({count} words)"
+            )
+        missing = [marker for marker in markers if marker.casefold() not in content.casefold()]
+        if missing:
+            raise ApplicationError(
+                f"application handoff {filename} is missing required content: "
+                + ", ".join(missing)
+            )
+        if filename == "research.md" and not re.search(r"https?://", content):
+            raise ApplicationError("application handoff research.md must cite an HTTP(S) URL")
+        handoff_report[filename] = {
+            "word_count": count,
+            "sha256": _content_version(content),
+        }
+
+    report = _document_quality_report(package)
+    report.update(
+        {
+            "declaration_sha256": _content_version(
+                quality_path.read_text(encoding="utf-8")
+            ),
+            "method": method,
+            "handoffs": handoff_report,
+        }
+    )
+    return report
+
+
+def _required_handoffs(selected_documents: set[str]) -> tuple[str, ...]:
+    required: set[str] = set()
+    if "cv" in selected_documents:
+        required.add("evidence-map.md")
+    if "cover-letter" in selected_documents:
+        required.update(("research.md", "evidence-map.md"))
+    if selected_documents & {"analysis", "interview-preparation"}:
+        required.update(_HANDOFF_REQUIREMENTS)
+    return tuple(filename for filename in _HANDOFF_REQUIREMENTS if filename in required)
+
+
+def _merge_quality_reports(
+    previous: Any,
+    current: Mapping[str, Any],
+    *,
+    document: str | None,
+) -> dict[str, Any]:
+    if document is None or not isinstance(previous, Mapping):
+        return dict(current)
+    merged = dict(previous)
+    previous_documents = previous.get("documents")
+    current_documents = current.get("documents")
+    documents = dict(previous_documents) if isinstance(previous_documents, Mapping) else {}
+    if isinstance(current_documents, Mapping):
+        documents.update(current_documents)
+    merged.update(current)
+    merged["documents"] = documents
+    return merged
 
 
 def _normalize_document(document: str | None) -> str | None:

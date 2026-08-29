@@ -1,43 +1,85 @@
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 vacancy_version: sha256:fb696333f93b8781e44985bd4c528b430a946d43d1098739b4e22304ba2801b9
 company_version: sha256:cb2ab4993d84311e2182bd7f8a93d5041f7e86263fdbc6d70ce616dc86914e76
-prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
 model: codex:gpt-5.6-terra:medium
+quality_contract_version: 1
 cv_export_stem: CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a
-generated_at: '2026-08-29T14:51:47Z'
+generated_at: '2026-08-29T16:48:22Z'
 documents:
   cv:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:fb696333f93b8781e44985bd4c528b430a946d43d1098739b4e22304ba2801b9
     company_version: sha256:cb2ab4993d84311e2182bd7f8a93d5041f7e86263fdbc6d70ce616dc86914e76
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a
-    generated_at: '2026-08-29T14:51:47Z'
+    generated_at: '2026-08-29T16:48:22Z'
   cover-letter:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:fb696333f93b8781e44985bd4c528b430a946d43d1098739b4e22304ba2801b9
     company_version: sha256:cb2ab4993d84311e2182bd7f8a93d5041f7e86263fdbc6d70ce616dc86914e76
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a
-    generated_at: '2026-08-29T14:51:47Z'
+    generated_at: '2026-08-29T16:48:22Z'
   analysis:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:fb696333f93b8781e44985bd4c528b430a946d43d1098739b4e22304ba2801b9
     company_version: sha256:cb2ab4993d84311e2182bd7f8a93d5041f7e86263fdbc6d70ce616dc86914e76
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a
-    generated_at: '2026-08-29T14:51:47Z'
+    generated_at: '2026-08-29T16:48:22Z'
   interview-preparation:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:fb696333f93b8781e44985bd4c528b430a946d43d1098739b4e22304ba2801b9
     company_version: sha256:cb2ab4993d84311e2182bd7f8a93d5041f7e86263fdbc6d70ce616dc86914e76
-    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    prompt_version: sha256:b1bf799bd40389ad265a6680582babadcfd284ac3ef7296bf571e25f5127b0c3
     model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
     cv_export_stem: CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a
-    generated_at: '2026-08-29T14:51:47Z'
+    generated_at: '2026-08-29T16:48:22Z'
+quality:
+  contract_version: 1
+  documents:
+    cv:
+      word_count: 587
+      sha256: sha256:9585b79ec532d37324f44b8cfb55767e6bd7e4f13332b8694c3440f842b330dd
+    cover-letter:
+      word_count: 325
+      sha256: sha256:8d43488b031054d524ce90e43a59ed017962a847fd9d453ddf8ac13d06682446
+    analysis:
+      word_count: 807
+      sha256: sha256:c7a43498ac77fb075c98c20424c81121e36adf8a08630fd6467f55f20e1ce061
+    interview-preparation:
+      word_count: 999
+      sha256: sha256:1fd3a1cce8256fc971a7497756fbd7117aa872d9bc73bb50911a9dde55770f33
+  declaration_sha256: sha256:0077d1b78db452428a3ff7c676edaba7851591b457ea4b1f11a476d23d097bbd
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 12.1.0+codex.20260819194947
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://www.web2emotions.com/agenzia/lavora-con-noi/
+  handoffs:
+    research.md:
+      word_count: 135
+      sha256: sha256:c4aeea02a8b536f485b0cd383881b49d30ecbd02442921cda2c71c8b2761dc68
+    evidence-map.md:
+      word_count: 457
+      sha256: sha256:369acfa0321eac56a3821f220bb504a568705ee1fb81ff217f558c2df1ccc068
+    requirements-risks.md:
+      word_count: 320
+      sha256: sha256:17f564861223175c3cafcd148e0b1d26f874ac911ff9cfcc9c3c2e6990391ace
 files:
 - CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a.docx
 - CV_ValentinNikolaev_webtoemotionsdigitalagencywowlabsb_PHPDevel_700e3b0a.md
