@@ -7,5 +7,4 @@ Posted: 2026-08-28T12:42:28.2944483+00:00
 - Category: tech_stack
 - Reason: role does not mention Go/Golang or PHP
 
-...methodology. You understand that great products require great culture - you design and implement with respect and kindness across multiple **engineering **teams. 
-We embrace an empathetic, supportive, and communicative environment pulling from one another's strengths and...
+...the creator of InfluxDB, the leading time series platform used to collect, store, and analyze all time series data at any scale. **Developers **can query and analyze their time-stamped data in real-time to discover, interpret, and share new insights to gain a competitive edge...

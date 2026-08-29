@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4692397099486160943'
+source_url: https://jooble.org/away/4692397099486160943?p=1&pos=3&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=18&brelb=10&scr=47.072815&bscr=47.072815&aq=-8967402338522532764&elckey=-9212843038300089882
+title: Senior Human Resources Recruiter
+company: Eckstein s.r.l.
+location: Italian Republic
+published_at: '2026-08-28T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-29T00:15:50Z'
+rejected_at: '2026-08-29T00:15:50Z'
