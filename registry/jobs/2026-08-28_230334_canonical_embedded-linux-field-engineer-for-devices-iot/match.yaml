@@ -1,0 +1,22 @@
+score: 22
+recommendation: not_match
+summary: The candidate has backend Go and infrastructure experience, but the role
+  requires extensive low-level embedded Linux, firmware, boot, packaging, and customer-field
+  expertise not shown in the profile.
+strengths:
+- Go, Linux-adjacent infrastructure, Kubernetes, CI/CD, and production troubleshooting
+  experience.
+gaps:
+- No demonstrated embedded Linux, Yocto or Buildroot, firmware, BIOS/EFI, Secure Boot,
+  or distribution-packaging experience.
+- No demonstrated presales or embedded customer-engagement experience.
+concerns:
+- Travel up to 30% and local-language expectations require confirmation.
+hard_rejection: true
+hard_rejection_reason: Essential low-level embedded Linux and firmware requirements
+  are unsupported by the candidate profile.
+analyzed_at: '2026-08-29T00:02:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:3a8ddc80234f28a125737ae9b459494ad03cbe178157b119d8ec8f84a2600290
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
