@@ -1,0 +1,30 @@
+score: 48
+recommendation: possible_match
+summary: Strong Go, Kubernetes, AWS, microservices, and infrastructure experience
+  offers partial alignment, but low-level kernel, virtualization, and open-source
+  container expertise is not demonstrated.
+strengths:
+- Production Go backend experience with Kubernetes
+- AWS
+- microservices
+- CI/CD
+- and reliability engineering.
+- Computer Science master's degree and experience designing scalable distributed systems.
+gaps:
+- No explicit kernel
+- VMM
+- LXD
+- OCI
+- or open-source virtualization/container project experience.
+- Low-level systems programming and security-critical infrastructure work are not
+  evidenced.
+concerns:
+- Canonical's exceptional academic and low-level systems expectations may outweigh
+  the transferable infrastructure experience.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T03:05:48Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7484032e88fbff411968726bbf74b0459241c07be75574659bec4d2c1b793f03
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

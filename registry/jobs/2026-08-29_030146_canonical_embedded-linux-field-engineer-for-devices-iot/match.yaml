@@ -1,0 +1,27 @@
+score: 22
+recommendation: not_match
+summary: Backend and cloud engineering strengths do not cover the vacancy's essential
+  embedded Linux, distribution packaging, firmware, and low-level device requirements.
+strengths:
+- Demonstrated Go development
+- Linux-adjacent infrastructure
+- Kubernetes
+- and production troubleshooting.
+gaps:
+- No documented embedded Linux
+- Yocto
+- Buildroot
+- firmware
+- BIOS/EFI
+- or distribution-packaging experience.
+- No demonstrated presales or customer field-engineering background.
+concerns:
+- Up to 30% customer travel and the low-level device focus may be material requirements.
+hard_rejection: true
+hard_rejection_reason: Essential embedded Linux and low-level device engineering experience
+  is unsupported.
+analyzed_at: '2026-08-29T03:05:48Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7e3c4fe1e1cfbd9345ace1b5e36859b0d0792a7d7e217a142f5c9c3e290d85de
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
