@@ -43,4 +43,4 @@ Bei Capmo verbindest du dieses Wissen mit modernem B2B-Vertrieb: Du wirst Teil u
 - Erste Erfahrung mit AI-Tools wie Claude, Perplexity oder ChatGPT
 - Sehr gute Deutsch- und Englischkenntnisse
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

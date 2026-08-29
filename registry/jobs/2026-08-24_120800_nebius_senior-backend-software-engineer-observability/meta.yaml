@@ -24,18 +24,18 @@ sources:
     - query_index: 2
       parameters:
         industry: dev
+        count: '25'
         tag: backend
         geo: europe
-        count: '25'
     - query_index: 3
       parameters:
         industry: dev
+        count: '25'
         tag: golang
         geo: europe
-        count: '25'
 published_at: '2026-08-24T04:50:12Z'
 discovered_at: '2026-08-24T12:08:00Z'
-updated_at: '2026-08-29T07:03:20Z'
+updated_at: '2026-08-29T11:02:26Z'
 status: found
 status_history:
 - status: found

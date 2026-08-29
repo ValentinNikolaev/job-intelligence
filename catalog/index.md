@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 64
+Total vacancies: 65
 
-- Found: 45
+- Found: 46
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,7 @@ Total vacancies: 64
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-29 | [ScholarshipOwl](../registry/jobs/2026-08-29_110206_scholarshipowl_senior-full-stack-developer-b2b-platform-laravel/) | [Senior Full Stack Developer - B2B platform (Laravel + Nuxt/Vue)](../registry/jobs/2026-08-29_110206_scholarshipowl_senior-full-stack-developer-b2b-platform-laravel/job.md) | Remote job | Arbeitnow | Found | 2026-08-29 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/scholarshipowl/remote-senior-full-stack-developer-b2b-platform-laravel-nuxt-vue-berlin-109213) | — | — | — | — | — |
 | 2026-08-29 | [Canonical](../registry/jobs/2026-08-29_070320_canonical_python-engineer/) | [Python Engineer](../registry/jobs/2026-08-29_070320_canonical_python-engineer/job.md) | Anywhere | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/149543-python-engineer) | — | — | — | — | — |
 | 2026-08-29 | [Sonatus](../registry/jobs/2026-08-29_070320_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-29_070320_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
 | 2026-08-29 | [Canonical](../registry/jobs/2026-08-29_070320_canonical_embedded-linux-field-engineer-for-devices-iot/) | [Embedded Linux Field Engineer for Devices/IoT](../registry/jobs/2026-08-29_070320_canonical_embedded-linux-field-engineer-for-devices-iot/job.md) | Anywhere | Jobicy | Found | 2026-08-29 | [Jobicy](https://jobicy.com/jobs/149535-embedded-linux-field-engineer-for-devices-iot) | — | — | — | — | — |

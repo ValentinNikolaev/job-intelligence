@@ -60,4 +60,4 @@ Als WerkstudentIn bist du das operative Rückgrat unseres Teams. Mit **logischem
 - **Attraktive Vergütung:** Als WerkstudentIn verdienst du 14,75 €/Std. (Bachelor) bzw. 15,50 €/Std. (Master) und sammelst spannende Praxiserfahrung.
 Schick uns deine Bewerbung gern auf Englisch, wenn du schon eine englische Version parat hast.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

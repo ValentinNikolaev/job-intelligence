@@ -1,0 +1,31 @@
+schema_version: 2
+id: 8e6e8579-8077-48d2-8751-88d5eb85b2ee
+title: Senior Full Stack Developer - B2B platform (Laravel + Nuxt/Vue)
+company: ScholarshipOwl
+company_url: null
+location: Remote job
+remote: true
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-full-stack-developer-b2b-platform-laravel-nuxt-vue-berlin-109213
+  url: https://www.arbeitnow.com/jobs/companies/scholarshipowl/remote-senior-full-stack-developer-b2b-platform-laravel-nuxt-vue-berlin-109213
+  metadata:
+    tags:
+    - Development
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-08-29T08:30:16Z'
+discovered_at: '2026-08-29T11:02:06Z'
+updated_at: '2026-08-29T11:02:06Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T11:02:06Z'
+analysis_priority: 0
+fingerprint: sha256:34ee3606f5dfb101021ec192be1f426d841fdfce3aa82dc1d0b56493048e23e4
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

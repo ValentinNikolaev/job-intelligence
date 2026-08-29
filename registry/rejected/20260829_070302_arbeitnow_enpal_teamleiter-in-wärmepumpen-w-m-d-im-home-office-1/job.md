@@ -89,4 +89,4 @@ Du hast Interesse? [Dann bewirb dich jetzt! ](https://partner-training.enpal.de/
 
 *Wir bei Enpal sind stolz auf die Vielfältigkeit unseres Teams. Weder bei der Einstellung noch während des Beschäftigungsverhältnisses werden Entscheidungen auf Basis von Hautfarbe, Religion oder religiösen Glaubens, ethnischer oder nationaler Herkunft, Nationalität, Geschlechteridentität, sexuelle Orientierung, Behinderung oder Alter getroffen. Enpal steht für einen sicheren Arbeitsplatz und geht gegen Diskriminierung und Belästigung jeglicher Art vor.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
