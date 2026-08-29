@@ -43,4 +43,4 @@ We are the oldest JvM agency.** Founded 1991 in Hamburg with an ambitious goal t
 
 **We are in the B2B business. **That's why we know a lot about agriculture and data security and how to make people understand & love things like polymer electrolyte membrane fuel cells.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

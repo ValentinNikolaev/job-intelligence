@@ -1,0 +1,28 @@
+schema_version: 2
+id: 7ef62e99-cb42-428f-8a59-b065c9469972
+title: PHP Developer
+company: GKT Group
+company_url: https://gktgroup.it
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:b56ae7db5133ad4a2a5298df93d821d068e1a6823ccfd15da6b3302826dfd6de
+  url: https://gktgroup.it/career/
+  metadata:
+    source_name: gkt-group
+    board_url: https://gktgroup.it/career/
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:3301b14949a80676bdd07ccf25378f7f0372298cbd850fc2178dc3ae2fc43936
+data_source: custom
+content_source: custom
+company_content_source: null

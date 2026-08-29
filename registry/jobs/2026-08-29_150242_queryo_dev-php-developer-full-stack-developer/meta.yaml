@@ -1,0 +1,28 @@
+schema_version: 2
+id: 496ef19b-5d89-41ef-a750-15b08d220484
+title: 'DEV: PHP Developer - Full Stack Developer'
+company: Queryo
+company_url: https://www.queryo.com
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:6d4f1425bd9e6cf84ec89c704eaaa5d540684683d6fdd4084f9734072648e9a9
+  url: https://www.queryo.com/lavora-con-noi.html
+  metadata:
+    source_name: queryo
+    board_url: https://www.queryo.com/lavora-con-noi.html
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:0de4cba3154c708fef28355bacef169263f84d1e981a217d248d7647d065f201
+data_source: custom
+content_source: custom
+company_content_source: null

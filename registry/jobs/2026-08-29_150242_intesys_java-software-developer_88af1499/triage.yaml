@@ -1,0 +1,8 @@
+schema_version: 1
+triage_version: deterministic-triage-v1
+vacancy_id: 88af1499-923b-4ee5-9adc-ce912ccb4972
+skip_model: false
+reason: non_backend
+confidence: medium
+matched_title_rules: []
+triaged_at: '2026-08-29T15:03:26Z'

@@ -21,26 +21,21 @@ sources:
       deployment, without the cost and complexity of building large in-house AI/ML
       infrastructure. Built by engineers, for engineers. From…'
     discovered_by:
-    - query_index: 1
-      parameters:
-        industry: dev
-        count: '25'
-        geo: italy
     - query_index: 2
       parameters:
-        industry: dev
         tag: backend
-        count: '25'
         geo: europe
+        count: '25'
+        industry: dev
     - query_index: 3
       parameters:
-        industry: dev
         tag: golang
-        count: '25'
         geo: europe
+        count: '25'
+        industry: dev
 published_at: '2026-08-24T04:50:17Z'
 discovered_at: '2026-08-24T12:08:00Z'
-updated_at: '2026-08-24T12:08:00Z'
+updated_at: '2026-08-29T15:02:55Z'
 status: found
 status_history:
 - status: found

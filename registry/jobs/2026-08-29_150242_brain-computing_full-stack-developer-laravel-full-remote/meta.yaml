@@ -1,0 +1,28 @@
+schema_version: 2
+id: f32da05d-095b-4911-a7fb-c9df05092ec5
+title: Full Stack Developer – Laravel (Full Remote)
+company: Brain Computing
+company_url: https://www.braincomputing.com
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:b4486af65e52b40db78a7508d7501277cda2b77ea3dad94865dae0c8fdc4312d
+  url: https://recruiting.braincomputing.com/job/detail/RGZObGtkZTNSOHJUNXd2dWNRUVRHQT09
+  metadata:
+    source_name: brain-computing
+    board_url: https://recruiting.braincomputing.com
+    source_type: custom recruiting portal
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:42d0647f0e27a45c97347b794e3502be6e43bb71ca37e9f4191a36aee5e19402
+data_source: custom
+content_source: custom
+company_content_source: null

@@ -109,4 +109,4 @@ Verve provides equal employment opportunities to all employees and applicants fo
 If you are a California resident subject to the California Consumer Privacy Act, [click here](https://verve.com/california-applicant-privacy-notice/) to understand how Verve processes your personal information and how you can exercise your rights.
 If you are located in the EU or UK visit our [privacy policy](https://verve.com/applicant-privacy-policy/) to understand how Verve processes your personal information and how you can exercise your rights.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

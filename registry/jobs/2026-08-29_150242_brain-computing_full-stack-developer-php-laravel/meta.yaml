@@ -1,0 +1,28 @@
+schema_version: 2
+id: c2fe3dd1-9c62-4ae8-a057-8324597354b9
+title: Full Stack Developer (PHP/Laravel)
+company: Brain Computing
+company_url: https://www.braincomputing.com
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:d7588490ec976c2fff01f6a291a236b1dc486a43274b931b162a22751bdc1e2e
+  url: https://recruiting.braincomputing.com/job/VFNSTmxmN2xkeEJWbGNnQlNFa3AwQT09
+  metadata:
+    source_name: brain-computing
+    board_url: https://recruiting.braincomputing.com
+    source_type: custom recruiting portal
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:d2640f5de7df4c7ce7b4c80ca7fd7e7965b7db51919d928802a3d5a9fc8a1816
+data_source: custom
+content_source: custom
+company_content_source: null

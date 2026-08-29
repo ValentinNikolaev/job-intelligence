@@ -1,0 +1,28 @@
+schema_version: 2
+id: a4f2dabc-7544-494b-80bb-58f86d5a6358
+title: Senior PHP Developer a Verona a tempo indeterminato
+company: Intesys
+company_url: https://www.intesys.it
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:0f7cc8c67738be1d0f64381fe7836e2d708f2ff987489c70c45cca0eb5fcb85f
+  url: https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/senior-php-developer/
+  metadata:
+    source_name: intesys
+    board_url: https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:f615cd5a150d3c2f1979e7c61d8db12f62c757c170a34ac664ae216d2e217cbe
+data_source: custom
+content_source: custom
+company_content_source: null

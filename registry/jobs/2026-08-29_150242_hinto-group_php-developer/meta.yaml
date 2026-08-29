@@ -1,0 +1,28 @@
+schema_version: 2
+id: dd09aed6-c54f-48fa-ad4f-be0980e5b764
+title: PHP Developer
+company: Hinto Group
+company_url: https://www.hintogroup.eu
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:d882bb9530a7006bbd5abcea928a115faefc8809dd693d5afdbde0c3afac5a86
+  url: https://www.hintogroup.eu/it/posizioni-aperte/php-developer
+  metadata:
+    source_name: hinto-group
+    board_url: https://www.hintogroup.eu/it/posizioni-aperte/php-developer
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:b0ade87229250fe3af1f24458ccfe444f28215e8239a5b5d5daf366a9733e36a
+data_source: custom
+content_source: custom
+company_content_source: null

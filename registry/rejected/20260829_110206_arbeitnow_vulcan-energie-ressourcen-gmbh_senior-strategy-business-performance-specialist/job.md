@@ -48,4 +48,4 @@ Neugierig geworden? Schicke uns einfach über das Bewerbungsformular deinen Lebe
 
 *** Bitte beachte, dass alle Bewerbungen mit dem Bewerberformular ausgefüllt werden müssen – wir akzeptieren keine Bewerbungen per E-Mail. ***
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

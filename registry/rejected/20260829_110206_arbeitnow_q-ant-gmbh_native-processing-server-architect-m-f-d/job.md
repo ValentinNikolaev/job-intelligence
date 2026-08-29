@@ -45,4 +45,4 @@ Your Impact & Responsibilities **
 - **Collab****o****rative ****cul****ture:** Innovative work environment that values technical excellence, open communication, and pragmatic problem-solving
 - **Be part of history:** Join at the inflection point where photonic computing transitions from research to mainstream - your contributions will shape this transformation
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

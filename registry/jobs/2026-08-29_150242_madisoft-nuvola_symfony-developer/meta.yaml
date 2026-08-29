@@ -1,0 +1,30 @@
+schema_version: 2
+id: aef63c2e-20bc-4c75-8ead-e4c51236ad20
+title: Symfony Developer
+company: Madisoft / Nuvola
+company_url: https://labs.madisoft.it
+location: Remote Italy
+remote: true
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:8c70a6e039f1dafaf2689484969033a6fe7350dafae36749719b5810f87f8971
+  url: https://labs.madisoft.it/symfony-developer/
+  metadata:
+    source_name: madisoft-nuvola
+    board_url: https://labs.madisoft.it/entra-nel-team
+    source_type: custom HTML
+    remote_policy_note: Officially 100% remote across Italy, with physical meetings
+      roughly twice per year.
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:4412b907bff79c02cece014049d2b6f845db03ce3c4930af23671d3d3a22d70c
+data_source: custom
+content_source: custom
+company_content_source: null

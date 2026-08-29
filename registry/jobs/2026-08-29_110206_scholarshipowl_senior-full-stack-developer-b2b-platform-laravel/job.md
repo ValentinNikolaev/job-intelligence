@@ -174,4 +174,4 @@ You will own the technical implementation of core products across our entire sta
 
 *Apply now and help us shape the future of AI-powered education.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

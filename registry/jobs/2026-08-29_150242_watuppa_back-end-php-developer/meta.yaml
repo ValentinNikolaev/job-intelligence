@@ -1,0 +1,28 @@
+schema_version: 2
+id: 1fea3ff7-0fc9-4aed-99ec-975bb3466d57
+title: Back-end PHP Developer
+company: Watuppa
+company_url: https://www.watuppa.it
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:8e48dac0461e3b313017259f96f0ea39ae5a0d80ca44488dae6d0ca7e161e4ff
+  url: https://www.watuppa.it/en/careers/202101-back-end
+  metadata:
+    source_name: watuppa
+    board_url: https://www.watuppa.it/en/careers/202101-back-end
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T15:02:42Z'
+updated_at: '2026-08-29T15:02:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T15:02:42Z'
+analysis_priority: 100
+fingerprint: sha256:0b49e48cb72e16f1d3bf1ee234665383bb0aa99b468a6753b141de3c12aba4f7
+data_source: custom
+content_source: custom
+company_content_source: null
