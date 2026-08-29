@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-29T11:16:26Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ScholarshipOwl",
+      "directory": "2026-08-29_110206_scholarshipowl_senior-full-stack-developer-b2b-platform-laravel",
+      "score": 68,
+      "title": "Senior Full Stack Developer - B2B platform (Laravel + Nuxt/Vue)",
+      "url": "https://www.arbeitnow.com/jobs/companies/scholarshipowl/remote-senior-full-stack-developer-b2b-platform-laravel-nuxt-vue-berlin-109213",
+      "vacancy_id": "8e6e8579-8077-48d2-8751-88d5eb85b2ee"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a0d664108fc644f7b72f708450555f25085ffc1b7944d4c577a1620e485edf4b",
+  "schema_version": 1
+}
