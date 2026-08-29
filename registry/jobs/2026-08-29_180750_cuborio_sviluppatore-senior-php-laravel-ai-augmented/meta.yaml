@@ -1,0 +1,28 @@
+schema_version: 2
+id: 622a25c6-2003-4a22-b84b-1d978d40ef24
+title: Sviluppatore Senior PHP/Laravel (AI-Augmented)
+company: Cuborio
+company_url: https://cuborio.com
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:e6dd2235ddb23e36d5b6685820d7d7f25e3488b65850179163742d1a196f81a5
+  url: https://cuborio.com/azienda/lavora-con-noi
+  metadata:
+    source_name: cuborio
+    board_url: https://cuborio.com/azienda/lavora-con-noi
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T18:07:50Z'
+updated_at: '2026-08-29T18:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T18:07:50Z'
+analysis_priority: 100
+fingerprint: sha256:9ded91280c60dcea10dee579c83da01acb44f6b239a943210563854ca7710372
+data_source: custom
+content_source: custom
+company_content_source: null

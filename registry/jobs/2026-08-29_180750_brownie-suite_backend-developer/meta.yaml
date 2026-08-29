@@ -1,0 +1,28 @@
+schema_version: 2
+id: 9022641a-0070-4fd2-9db3-9d4a0f820d66
+title: Backend Developer
+company: Brownie Suite
+company_url: https://www.browniesuite.com
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:fbb0f262aceb1973c5df65c4060b5a7e4e9abd390ba94a587572483c76da35e2
+  url: https://www.browniesuite.com/en/careers
+  metadata:
+    source_name: brownie-suite
+    board_url: https://www.browniesuite.com/en/careers
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-29T18:07:50Z'
+updated_at: '2026-08-29T18:07:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T18:07:50Z'
+analysis_priority: 100
+fingerprint: sha256:289738ecf216cdbf6b122fe46b37effc0082e17718fb988aeba02930fd2fb6c6
+data_source: custom
+content_source: custom
+company_content_source: null
