@@ -69,4 +69,4 @@ Deine Ansprechpartnerin für diese Stelle ist [Jasmin Baldrich.](https://www.lin
 
 Mehr über PAIR Finance und unsere Arbeitswelt findest du auf unserer [Website](https://pairfinance.com/unternehmen/) und auf unserer [Karriereseite](https://www.pairfinance.com/karriere/).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -103,4 +103,4 @@ Elasticsearch develops and distributes technology and information that is subjec
 
 Please see [here](https://www.elastic.co/legal/applicant-privacy-statement) for our Privacy Statement.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

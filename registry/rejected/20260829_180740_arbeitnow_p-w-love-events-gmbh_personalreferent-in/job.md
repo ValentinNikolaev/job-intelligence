@@ -85,4 +85,4 @@ Wenn du gerne anpackst, zuverlässig bist und einen Job suchst, bei dem du am En
 
 Wir freuen uns auf deine Bewerbung!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

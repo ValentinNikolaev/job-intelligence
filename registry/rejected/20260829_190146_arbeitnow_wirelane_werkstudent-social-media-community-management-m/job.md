@@ -60,4 +60,4 @@ Unsere Kultur ist geprägt von starken Werten. Diese leiten uns in unserem Hande
  
 Jede:r neue Mitarbeiter:in bietet uns die Möglichkeit, eine andere Perspektive einzubringen. Unser Ziel ist es, ein vielfältiges Team aufzubauen in der Alle, auch über das operative Geschäft hinaus, ihren Beitrag leisten und sich entwicklen können.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

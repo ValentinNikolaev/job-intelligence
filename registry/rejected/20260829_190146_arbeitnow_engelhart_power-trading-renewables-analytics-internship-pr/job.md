@@ -100,4 +100,4 @@ The following would be advantageous:
 
 *We believe in inclusivity and are therefore dedicated to ensuring all employees – across gender identity, race, ethnicity, sexual orientation, religion, life experience, background and more – feel welcome and included in the company. We promote diversity because we believe it is essential to our ability to think holistically.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

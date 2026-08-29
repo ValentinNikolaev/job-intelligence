@@ -1,0 +1,94 @@
+# AI Augmented Software Engineer [gn] Data Intelligence Platform
+
+Posted: 2026-08-29T16:33:18Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: requires United States location
+
+Actian is the company behind the Data Intelligence Platform — an enterprise solution that helps organisations discover, govern, and trust their data at scale. Our platform connects metadata, data lineage, data quality, and business context into a single knowledge graph, enabling enterprises to turn raw data into reliable decisions. We operate globally, move fast, and build for the long term.
+
+Software engineering is being redefined. The engineers who will shape the next decade of product development are not the ones who write the most code — they are the ones who know how to think clearly, ship confidently, and use every tool available to them, including AI, to multiply their impact.
+
+We are looking for an AI-First Software Engineer who is a builder by instinct. You are comfortable picking up a feature end-to-end, making architectural decisions, writing production-grade code, and shipping without waiting to be told what to do next. You treat AI coding assistants not as a novelty but as a core part of your workflow, using them to accelerate development, reduce boilerplate, explore solutions faster, and stay focused on what actually requires your judgment.
+
+You will join one of our feature teams working on the Actian Data Intelligence Platform.
+
+## What You Will Do
+
+-
+
+Design and implement new features across the full stack of the Actian Data Intelligence Platform, from backend services to frontend interfaces, with a focus on correctness, performance, and maintainability.
+
+-
+
+Use AI tools actively and deliberately, not as a replacement for engineering judgment, but as a force multiplier that lets you move faster, focus on high performance solutions, write better tests, and spend more time on the problems that matter.
+
+-
+
+Contribute to technical design sessions and code reviews, bringing a security-first mindset and a bias toward clean, testable architecture.
+
+-
+
+Participate in incident response and production troubleshooting, treating stability as a shared responsibility.
+
+-
+
+Share knowledge across the team through technical sessions, documentation, building internal and contribute with AI assisted development best practices.
+
+-
+
+Strong product mindset, you team with product managers to understand requirements early and translate them into well-scoped technical solutions.
+
+## What You Bring
+
+-
+
+A proven track record of using AI coding assistants — tools like Claude Code or Cursor — and the discipline to know when they help and when they mislead.
+
+-
+
+Experience developing features for data governance, data catalogs or metadata management platforms in production is a big plus.
+
+-
+
+Proven experience as a fullstack engineer building and shipping features in production SaaS environments. You have end-to-end ownership in your track record, not just task execution.
+
+-
+
+Strong practical knowledge of our core stack is a big plus: Scala or Java on the backend, TypeScript and Angular on the frontend. You do not need to be expert in all of them, but you need to be honest about where you are strong and genuinely willing to grow in the others.
+
+-
+
+Solid understanding of SaaS architecture and cloud fundamentals, particularly on AWS. Comfortable with Docker, Kubernetes, GitHub workflows, and CI/CD pipelines.
+
+-
+
+A genuine agile mindset — not a process checkbox, but an actual preference for short feedback loops, iterative delivery, and collaborative problem-solving.
+
+-
+
+Full professional proficiency in English.
+
+## What We Value
+
+We value autonomy over process, outcomes over activity, and builders over theorists. If you need to be assigned every task, this is the wrong environment. If you thrive when given a problem, a team, and the space to figure it out — you will fit right in.
+
+## What We Offer:
+
+- The chance to be part of an innovative, fast-growing company making a significant impact in the data management space.
+
+- Collaboration with a passionate and diverse team.
+
+- Competitive salary and benefits package.
+
+- Flexible work arrangements (remote or hybrid).
+
+- Opportunities for professional growth and development.
+
+**Why Join Us? **At Actian, we are passionate about innovation and teamwork. This role is perfect for someone who thrives in a dynamic environment, loves creating an efficient and welcoming workspace, and enjoys working closely with a talented team.
+
+**Interested? **We’d love to hear from you! Let’s discuss how you can contribute to our success while growing your career with us.
+
+We value diversity at our company. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, or any other applicable legally protected characteristics in the location in which the candidate is applying.

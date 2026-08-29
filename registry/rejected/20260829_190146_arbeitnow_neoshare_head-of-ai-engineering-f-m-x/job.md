@@ -86,4 +86,4 @@ Own and evolve our AI engineering function — transforming a 15–20 person ML 
 
 Candidates must have the right to work in the EU; visa sponsorship is not provided for this role.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

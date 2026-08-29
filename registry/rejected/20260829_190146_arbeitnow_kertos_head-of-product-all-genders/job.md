@@ -69,4 +69,4 @@ Your responsibilities
 Perfect, let's have a chat! Just send in your CV. We are excited to meet you soon.
 In case you have any questions, feel free to reach out to our People & Culture team. We're happy to answer all your questions.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

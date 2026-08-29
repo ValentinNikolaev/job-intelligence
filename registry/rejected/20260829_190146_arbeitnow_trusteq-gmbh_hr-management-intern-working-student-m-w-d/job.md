@@ -34,4 +34,4 @@ Posted: 2026-08-29T11:10:25Z
 - **Creative Work Environment:** We give you the freedom and time to develop creative solutions and provide the best, most modern hardware to support you (Apple or Windows).
 - **Attractive Vacation Policy:** Work remotely and flexibly adjust your work hours to fit your studies.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

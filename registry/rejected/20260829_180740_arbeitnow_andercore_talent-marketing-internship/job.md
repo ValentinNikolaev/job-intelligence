@@ -79,4 +79,4 @@ Campus ambassador programs and outreach activities **enhance the company's prese
 
 We are an equal-opportunity employer and welcome applicants from all backgrounds, regardless of race, ethnicity, gender identity or expression, sexual orientation, religion, age, disability, or any other characteristic. We believe that diversity drives innovation, creativity, and collective strength.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

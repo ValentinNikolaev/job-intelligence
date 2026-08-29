@@ -95,4 +95,4 @@ Additional benefits include: 20 days “work from abroad”, 600EUR/GBP Learning
 
 ***By applying for the above position, you will confirm that you have reviewed and agreed to our ***[***Data Privacy Policy***](https://www.getmoss.com/privacy-policy)***.***
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

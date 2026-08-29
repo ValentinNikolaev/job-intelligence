@@ -55,4 +55,4 @@ Fühlen Sie sich angesprochen und möchten Ihr Fachwissen sowie Ihre Führungsst
 
 Mein Unternehmen vermittelt seit 25 Jahren Fach- und Führungskräfte speziell aus dem Bereich der Oberflächentechnologie (Galvanik, Lack-, Pulver-, KTL Beschichtungen, Feuerverzinkung). Wir sind im D-A-CH Gebiet tätig.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -47,4 +47,4 @@ You will take ownership of specific projects that influence our roadmap and stra
 **Interested? Then contact us now!**
 You can get insights about working@checkmk at: **www.kununu/checkmk.com**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -86,4 +86,4 @@ Posted: 2026-08-29T11:10:25Z
 - **Employee Benefits:** Flexible working models, a BahnCard, JobRad, Spendit card, Wellpass, and a company pension scheme contribute to your well-being. In addition, you’ll enjoy the best coffee from our new espresso machine and a fully stocked soft drinks fridge in the office.
 - **Attractive Vacation Policy:** You benefit from 30 days of paid vacation per year and the flexibility to work from home.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

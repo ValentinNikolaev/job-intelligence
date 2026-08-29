@@ -121,4 +121,4 @@ Culture Fit – Lerne unsere Talent Acquisition Managerin kennen. Hier erfährst
 
 Fachinterview – Hier tauchst du gemeinsam mit Lisa (Head of Consumer Solutions) aus dem Fachbereich tiefer in die Rolle und die konkreten Aufgaben ein.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

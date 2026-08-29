@@ -87,4 +87,4 @@ Softwareentwicklung (z. B. Embedded Systems, Mikrocontroller, hardwarenahe Progr
 
 Haben Sie Lust auf die nächste Herausforderung, in die Sie sich voll einbringen können?Dann sollten wir uns unbedingt kennenlernen. Wir freuen uns auf Ihre Bewerbungsunterlagen mit Ihren Gehaltsvorstellungen und dem frühestmöglichen Eintrittstermin.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

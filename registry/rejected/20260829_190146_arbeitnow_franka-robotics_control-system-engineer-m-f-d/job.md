@@ -33,4 +33,4 @@ You’ll push existing products further and bring new prototypes to life with bo
 - Comfort with professional tooling (git, GitLab, Confluence, JIRA, etc.)
 - Experience with robotic systems is a strong plus
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

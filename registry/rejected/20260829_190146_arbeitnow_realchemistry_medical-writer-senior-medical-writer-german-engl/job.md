@@ -59,4 +59,4 @@ Real Chemistry is an Equal Opportunity employer. We continually strive to build 
 
 *Notice: Real Chemistry and its affiliates' names are being misused by scammers through messaging services, fake websites, and apps. Do not share personal or financial information or make payments to any unverified sources claiming to be connected to Real Chemistry. We are working to stop these unauthorized activities and protect our community. Read more [here](https://nam11.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.realchemistry.com%2Fscam-alert&data=05%7C02%7Cclehmar%40realchemistry.com%7C1f18aaed4326491b3efc08ddd690f025%7C6fa5bfc4f95843f8bb395d382689654b%7C0%7C0%7C638902640185967986%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=vBa1KYjD6TUHgTF3FdPRQZvM8E8WUgHZqu9yHevh1%2BI%3D&reserved=0).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

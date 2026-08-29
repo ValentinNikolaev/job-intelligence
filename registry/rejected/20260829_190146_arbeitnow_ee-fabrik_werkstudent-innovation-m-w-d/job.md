@@ -100,4 +100,4 @@ Dabei denkst du analytisch, verbindest unterschiedliche Perspektiven miteinander
 **Deine Kontaktperson**
 
 **People & Culture Team**
-Jobs in Germany on Arbeitnow
+English Speaking Jobs in Germany on Arbeitnow

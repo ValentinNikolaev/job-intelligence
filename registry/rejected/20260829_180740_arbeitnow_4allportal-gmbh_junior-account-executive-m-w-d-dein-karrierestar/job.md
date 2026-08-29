@@ -109,4 +109,4 @@ Bewerbungsunterlagen? Kein Anschreiben nötig. Schick uns deinen Lebenslauf, dei
 
 Wie läuft der Bewerbungsprozess ab? Eingangsbestätigung deiner Bewerbung, erstes Online-Vorstellungsgespräch, Kennenlernen bei uns vor Ort in Gütersloh, Einstellungsgespräch.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
