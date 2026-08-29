@@ -1,0 +1,3 @@
+# Back-end PHP Developer
+
+Watuppa, a Rome-based software factory, develops advanced cloud/serverless solutions including high-traffic mobile and web applications, ecommerce, business-intelligence dashboards and business-process systems. It seeks a Back-end PHP Developer at junior, mid-junior or senior level. Key skills are PHP, JavaScript, SQL/MySQL, NoSQL/MongoDB, cloud environments such as AWS and Git. Additional skills include AWS Lambda/serverless, Laravel or Symfony, and Node.js. The candidate should write clear maintainable code, collaborate and share knowledge, write technical documentation, and work with legacy code. A degree, good English and Agile familiarity are nice to have.

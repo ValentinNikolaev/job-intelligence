@@ -1,0 +1,29 @@
+schema_version: 2
+id: fd992234-587c-4a4b-96d5-a21d2405305d
+title: PHP Developer Senior
+company: Web To Emotions Digital Agency (Wow Lab SB srl)
+company_url: https://www.web2emotions.com/
+location: Rome, Italy / hybrid
+remote: true
+employment_type: null
+sources:
+- source: manual
+  source_job_id: web-to-emotions-php-developer-senior-careers
+  url: https://www.web2emotions.com/agenzia/lavora-con-noi/
+  metadata:
+    apply_url: https://www.web2emotions.com/agenzia/lavora-con-noi/
+    extraction_notes: Official careers posting accessed 2026-08-29. The company legal
+      information names Rome; the page offers flexible hours and remote-work possibility,
+      while the exact working arrangement and employment type are unspecified.
+published_at: null
+discovered_at: '2026-08-29T14:40:41Z'
+updated_at: '2026-08-29T14:40:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:41Z'
+analysis_priority: 100
+fingerprint: sha256:2a79db52c368ef991df89c48692a6e3d490f0c9728c42c71ef970e2718f82bdd
+data_source: manual
+content_source: manual
+company_content_source: manual

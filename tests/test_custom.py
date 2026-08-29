@@ -25,6 +25,8 @@ SPEC.loader.exec_module(custom_module)
 CustomCollector = custom_module.CustomCollector
 CustomSource = custom_module.CustomSource
 PageData = custom_module.PageData
+DEFAULT_CONFIG_PATH = custom_module.DEFAULT_CONFIG_PATH
+load_settings = custom_module._load_settings
 parse_source_page = custom_module.parse_source_page
 
 
@@ -204,9 +206,9 @@ class CustomCollectorTests(unittest.TestCase):
         registry = Registry(root, clock=lambda: now, id_factory=lambda: "custom-priority")
         registry.upsert(
             NormalizedJob(
-                source="adzuna",
-                source_job_id="a-1",
-                source_url="https://adzuna.test/1",
+                source="jooble",
+                source_job_id="j-1",
+                source_url="https://jooble.test/1",
                 title="Senior Backend Engineer",
                 company="Acme",
                 description="Aggregator snippet.",
@@ -231,6 +233,30 @@ class CustomCollectorTests(unittest.TestCase):
         self.assertEqual("custom", meta["data_source"])
         self.assertEqual(100, meta["analysis_priority"])
         self.assertIn("Direct company-board description.", (directory / "job.md").read_text(encoding="utf-8"))
+
+    def test_default_config_monitors_requested_italian_company_boards(self) -> None:
+        settings = load_settings(DEFAULT_CONFIG_PATH)
+        sources = {source.name: source for source in settings.sources}
+        expected = {
+            "papa-chat": "https://pappachat.com/lavora-con-noi/backend-engineer",
+            "watuppa": "https://www.watuppa.it/en/careers/202101-back-end",
+            "motork": "https://apply.workable.com/motork/j/1BD16CD77B",
+            "madisoft-nuvola": "https://labs.madisoft.it/symfony-developer/",
+            "hinto-group": "https://www.hintogroup.eu/it/posizioni-aperte/php-developer",
+            "cuborio": "https://cuborio.com/azienda/lavora-con-noi",
+            "brain-computing": "https://recruiting.braincomputing.com/job/VFNSTmxmN2xkeEJWbGNnQlNFa3AwQT09",
+            "intesys": "https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18",
+            "bsd-software": "https://www.bsdsoftware.it/LavoraConNoi/PhpDeveloper",
+            "brownie-suite": "https://www.browniesuite.com/en/careers",
+            "web2emotions": "https://www.web2emotions.com/agenzia/lavora-con-noi/",
+            "queryo": "https://www.queryo.com/lavora-con-noi.html",
+            "gkt-group": "https://gktgroup.it/career/",
+        }
+
+        self.assertEqual(100, settings.analysis_priority)
+        for name, url in expected.items():
+            self.assertIn(name, sources)
+            self.assertIn(url, {seed.url for seed in sources[name].seed_jobs})
 
 
 if __name__ == "__main__":

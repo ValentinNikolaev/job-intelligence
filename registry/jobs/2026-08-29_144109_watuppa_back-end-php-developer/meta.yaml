@@ -1,0 +1,28 @@
+schema_version: 2
+id: 457e3796-065f-4d9f-a143-5064c3deb160
+title: Back-end PHP Developer
+company: Watuppa
+company_url: https://www.watuppa.it
+location: Rome, Italy / Remote
+remote: true
+employment_type: null
+sources:
+- source: manual
+  source_job_id: manual-8e48dac0461e3b31
+  url: https://www.watuppa.it/en/careers/202101-back-end
+  metadata:
+    source_name: Watuppa careers
+    apply_url: https://www.watuppa.it/en/careers/202101-back-end
+    extraction_notes: Official posting accessed 2026-08-29.
+published_at: null
+discovered_at: '2026-08-29T14:41:09Z'
+updated_at: '2026-08-29T14:41:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:41:09Z'
+analysis_priority: 0
+fingerprint: sha256:f877c455f328d35a089e62f7737a73c8b9eb1ad6deff40e1e681fc76391f2e61
+data_source: manual
+content_source: manual
+company_content_source: manual

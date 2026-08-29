@@ -1,0 +1,29 @@
+schema_version: 2
+id: c7668f62-baa3-427f-b941-a174d9e506b3
+title: PHP Developer Fullstack
+company: Queryo Advance Srl
+company_url: https://www.queryo.com/
+location: Italy (Rome, Turin, Milan, or Quartu Sant'Elena)
+remote: null
+employment_type: null
+sources:
+- source: manual
+  source_job_id: queryo-php-developer-fullstack-careers
+  url: https://www.queryo.com/lavora-con-noi.html
+  metadata:
+    apply_url: https://www.queryo.com/lavora-con-noi.html
+    extraction_notes: Official careers posting accessed 2026-08-29. Role title and
+      company context are confirmed, but role details are not published on the page;
+      no requirements were inferred from the company service list.
+published_at: null
+discovered_at: '2026-08-29T14:40:42Z'
+updated_at: '2026-08-29T14:40:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:42Z'
+analysis_priority: 100
+fingerprint: sha256:6fe0039a9cf134c38a1bb444461606ad3818bcf0d19a0a272cbd029d705a1641
+data_source: manual
+content_source: manual
+company_content_source: manual

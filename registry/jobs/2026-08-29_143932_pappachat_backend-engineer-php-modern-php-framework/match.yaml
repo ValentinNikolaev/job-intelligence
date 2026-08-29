@@ -1,0 +1,26 @@
+score: 93
+recommendation: strong_match
+summary: 'Strong direct fit: the candidate has recent production PHP/Laravel backend
+  work, relational-database performance work, RabbitMQ, resilient message delivery,
+  third-party integrations, monitoring and a rare communications-platform background.
+  The Italy-remote location and English requirement are compatible.'
+strengths:
+- Recent airSlate work provides PHP, Laravel, MySQL, RabbitMQ, REST API, CI/CD and
+  production troubleshooting evidence.
+- Simple.life evidence directly supports message delivery pipelines with retries,
+  fallback logic and monitoring, plus support-system integrations.
+- PDFfiller experience supports high-volume transactional email, messaging infrastructure
+  and reliability under peak load.
+gaps:
+- Direct production evidence for this company's specific multi-tenant authorization
+  model and payment-provider webhooks is not stated.
+concerns:
+- The posting is open to contractor or employment arrangements, so terms should be
+  confirmed during screening.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:40:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:975583906473baf188764fec653a6d641b5079c587b92e84493df4880e857283
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

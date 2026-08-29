@@ -1,0 +1,27 @@
+score: 76
+recommendation: match
+summary: Strong PHP, Laravel, Symfony, scalability, performance, clean-code, and remote-work
+  fit for a general PHP web/custom-software role, with CMS-specific experience not
+  confirmed.
+strengths:
+- 15+ years of PHP/backend engineering, including Laravel and Symfony on production
+  systems.
+- Documented performance optimization, relational databases, APIs, CI/CD, monitoring,
+  system design, and technical-lead experience.
+- Experience spans document automation, e-commerce, fintech-related systems, and communications
+  infrastructure, relevant to custom web/software delivery.
+- Smart-working availability aligns with the Rome-based candidate.
+gaps:
+- WordPress, CodeIgniter, Moodle, and direct CMS experience are not explicitly supported.
+- The posting does not state a seniority level, specific stack allocation, contract,
+  or location for onsite work.
+concerns:
+- This broad posting may target a more generalist or lower-seniority profile; clarify
+  scope and compensation before investing heavily.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:41:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f507c855a8ed18d897d8a380c722ee2f6f498e085d47edc46f6cf5fb110ebddd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

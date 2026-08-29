@@ -1,0 +1,29 @@
+schema_version: 2
+id: dcd7db09-439d-4cea-a94f-4121b7bcc38e
+title: Programmatore PHP / PHP Developer
+company: BSDsoftware
+company_url: https://www.bsdsoftware.it
+location: Italy, smart working or onsite
+remote: true
+employment_type: null
+sources:
+- source: manual
+  source_job_id: bsdsoftware-php-developer-20260829
+  url: https://www.bsdsoftware.it/LavoraConNoi/PhpDeveloper
+  metadata:
+    source_name: BSDsoftware careers
+    apply_url: https://www.bsdsoftware.it/LavoraConNoi/PhpDeveloper
+    extraction_notes: Official careers page inspected by Codex on 2026-08-29; application
+      form not submitted.
+published_at: '2026-08-29'
+discovered_at: '2026-08-29T14:40:15Z'
+updated_at: '2026-08-29T14:40:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:15Z'
+analysis_priority: 100
+fingerprint: sha256:0b49087972439fa9d6ff8873c53f4327654d296c1b273b2b926f14253e5c8d53
+data_source: manual
+content_source: manual
+company_content_source: manual

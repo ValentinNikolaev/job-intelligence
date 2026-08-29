@@ -1,0 +1,28 @@
+score: 68
+recommendation: match
+summary: Strong PHP, Laravel, MySQL, API, e-commerce, and production-systems evidence
+  aligns with the LAMP-oriented backend/full-stack role. The principal concern is
+  that the vacancy is described in Milan without remote-work availability, while the
+  candidate is in Rome.
+strengths:
+- More than 15 years of PHP and backend experience, including Laravel and MySQL in
+  production systems.
+- Relevant e-commerce and digital-product background, plus API, CI/CD, reliability,
+  and version-control experience.
+- English is supported by the candidate record.
+gaps:
+- HTML, CSS, JavaScript, jQuery, Adobe Creative Suite, and CSS pre-processors are
+  not established by the candidate evidence.
+- Familiarity with the employer's proprietary framework and CMS is not established.
+concerns:
+- The posting is Milan-based and does not offer or confirm remote work; commute or
+  relocation compatibility is unknown.
+- The role accepts junior candidates and may have a lower seniority or compensation
+  scope than the candidate's background.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:41:41Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fec66b006d53d34eba6b870d59275ced63c5a6505bb5a5622cbd79a0f8ddc93d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

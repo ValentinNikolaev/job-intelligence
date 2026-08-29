@@ -33,6 +33,7 @@ APPLICATION_DOCUMENTS = {
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
 _CV_OWNER_STEM = "ValentinNikolaev"
+_MAX_CV_EXPORT_STEM_LENGTH = 72
 _ROLE_NOISE_TERMS = {
     "hybrid",
     "remote",
@@ -907,7 +908,12 @@ def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:
 def _cv_export_stem(*, company: str, title: str) -> str:
     company_part = _compact_company_slug(company) or "company"
     role_part = _pascal_role_slug(title) or "Role"
-    return f"CV_{_CV_OWNER_STEM}_{company_part}_{role_part}"
+    stem = f"CV_{_CV_OWNER_STEM}_{company_part}_{role_part}"
+    if len(stem) <= _MAX_CV_EXPORT_STEM_LENGTH:
+        return stem
+    digest = hashlib.sha256(stem.encode("utf-8")).hexdigest()[:8]
+    prefix_length = _MAX_CV_EXPORT_STEM_LENGTH - len(digest) - 1
+    return f"{stem[:prefix_length]}_{digest}"
 
 
 def _compact_company_slug(value: str) -> str:

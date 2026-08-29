@@ -1,0 +1,27 @@
+score: 71
+recommendation: match
+summary: The confirmed PHP full-stack title and Italian office locations have a generally
+  relevant match with the candidate's PHP, Laravel, Symfony, MySQL, APIs, and web-product
+  experience. The official posting omits responsibilities, technologies, seniority,
+  and working model, so fit cannot be assessed precisely.
+strengths:
+- More than 15 years of PHP and backend development, including Laravel, Symfony, MySQL,
+  REST APIs, and production systems.
+- Digital-product, e-commerce, analytics, and automation background is relevant to
+  a digital-transformation agency.
+- Rome is one of the listed company locations.
+gaps:
+- Full-stack frontend requirements, if any, are unknown and no frontend stack is confirmed
+  in the candidate evidence.
+- Specific role requirements and seniority are not published.
+concerns:
+- Remote or hybrid availability is not stated.
+- The CV should not imply experience with any Queryo-specific technology or responsibility
+  absent a detailed posting.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:41:45Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:627d66bc133954610de42f3916423bb8d87ec93279f9642d49dce0716bb6d660
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

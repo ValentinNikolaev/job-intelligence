@@ -1,0 +1,49 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:6e46ec71b22faf6eb09a17b4cb189adc6283735354b686937c0ea5cf58235d54
+company_version: sha256:fd71607b560ebe8afde39360c6cb44fb1f08d436ff542f64c417643d09110fd7
+prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+model: codex:gpt-5.6-terra:medium
+cv_export_stem: CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d
+generated_at: '2026-08-29T14:48:14Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6e46ec71b22faf6eb09a17b4cb189adc6283735354b686937c0ea5cf58235d54
+    company_version: sha256:fd71607b560ebe8afde39360c6cb44fb1f08d436ff542f64c417643d09110fd7
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d
+    generated_at: '2026-08-29T14:48:14Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6e46ec71b22faf6eb09a17b4cb189adc6283735354b686937c0ea5cf58235d54
+    company_version: sha256:fd71607b560ebe8afde39360c6cb44fb1f08d436ff542f64c417643d09110fd7
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d
+    generated_at: '2026-08-29T14:48:14Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6e46ec71b22faf6eb09a17b4cb189adc6283735354b686937c0ea5cf58235d54
+    company_version: sha256:fd71607b560ebe8afde39360c6cb44fb1f08d436ff542f64c417643d09110fd7
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d
+    generated_at: '2026-08-29T14:48:14Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:6e46ec71b22faf6eb09a17b4cb189adc6283735354b686937c0ea5cf58235d54
+    company_version: sha256:fd71607b560ebe8afde39360c6cb44fb1f08d436ff542f64c417643d09110fd7
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d
+    generated_at: '2026-08-29T14:48:14Z'
+files:
+- CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d.docx
+- CV_ValentinNikolaev_cuboriobusinessclicksrl_SviluppatoreSeniorP_d9dbba3d.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md

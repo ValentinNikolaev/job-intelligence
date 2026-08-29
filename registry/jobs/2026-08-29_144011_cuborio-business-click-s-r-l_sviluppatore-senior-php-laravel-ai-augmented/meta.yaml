@@ -1,0 +1,29 @@
+schema_version: 2
+id: 7eb697dc-2bf7-4682-abf9-e7460b15d699
+title: Sviluppatore Senior PHP/Laravel (AI-Augmented)
+company: Cuborio / Business Click S.r.l.
+company_url: https://cuborio.com
+location: Remote, Italy (meetings in Florence and Rome)
+remote: true
+employment_type: Freelance / Partita IVA
+sources:
+- source: manual
+  source_job_id: cuborio-senior-php-laravel-ai-augmented-20260829
+  url: https://cuborio.com/azienda/lavora-con-noi
+  metadata:
+    source_name: Cuborio careers
+    apply_url: https://cuborio.com/azienda/lavora-con-noi
+    extraction_notes: Official careers page inspected by Codex on 2026-08-29; application
+      form not submitted.
+published_at: '2026-08-29'
+discovered_at: '2026-08-29T14:40:11Z'
+updated_at: '2026-08-29T14:40:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:11Z'
+analysis_priority: 100
+fingerprint: sha256:097e0351a7b5c8d60833165ac1e550a221986ac9f04cee75f03826edf46e1f74
+data_source: manual
+content_source: manual
+company_content_source: manual

@@ -1,0 +1,30 @@
+schema_version: 2
+id: 77a681b7-5330-48f9-a37d-6dfbc83d143e
+title: PHP Developer
+company: GKT Group
+company_url: https://gktgroup.it/
+location: Alba, Italy
+remote: null
+employment_type: null
+sources:
+- source: manual
+  source_job_id: gkt-group-php-developer-career
+  url: https://gktgroup.it/career/
+  metadata:
+    apply_url: https://gktgroup.it/career/
+    extraction_notes: Official career page was not directly retrievable in the browser,
+      but the current official GKT Group home page exposes the same PHP developer
+      vacancy and its requirements; accessed 2026-08-29. The legal office is in Alba,
+      with operating offices also listed in Alba, London, Modena, and Rome.
+published_at: null
+discovered_at: '2026-08-29T14:40:44Z'
+updated_at: '2026-08-29T14:40:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:44Z'
+analysis_priority: 100
+fingerprint: sha256:f9671e3da9c4ac5ce967a727930aa955135810c5dc9d894dee81eace02335419
+data_source: manual
+content_source: manual
+company_content_source: manual

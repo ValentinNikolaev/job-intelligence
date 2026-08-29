@@ -1,0 +1,28 @@
+schema_version: 2
+id: 2a2d8bc2-5496-421a-8b7b-8e7b99e8abc2
+title: Backend Engineer (PHP / modern PHP framework)
+company: PappaChat
+company_url: https://pappachat.com
+location: Trieste, Italy / Remote in Italy
+remote: true
+employment_type: Full-time or contractor
+sources:
+- source: manual
+  source_job_id: manual-50db0269cab3ddbc
+  url: https://pappachat.com/lavora-con-noi/backend-engineer
+  metadata:
+    source_name: PappaChat careers
+    apply_url: https://pappachat.com/lavora-con-noi/backend-engineer
+    extraction_notes: Official posting accessed 2026-08-29.
+published_at: null
+discovered_at: '2026-08-29T14:39:32Z'
+updated_at: '2026-08-29T14:39:32Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:39:32Z'
+analysis_priority: 0
+fingerprint: sha256:3b8b49aad585b9e7b50b2627e25a39749f5edeb2e3bcf24f69afe19f0c52b063
+data_source: manual
+content_source: manual
+company_content_source: manual

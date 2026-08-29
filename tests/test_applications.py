@@ -218,6 +218,27 @@ class ApplicationTests(unittest.TestCase):
             ),
         )
 
+    def test_cv_export_stem_shortens_long_windows_filename_deterministically(self) -> None:
+        stem = _cv_export_stem(
+            company="Cuborio Business Click S.r.l.",
+            title="Sviluppatore Senior PHP Laravel AI Augmented",
+        )
+        changed_title = _cv_export_stem(
+            company="Cuborio Business Click S.r.l.",
+            title="Sviluppatore Senior PHP Laravel AI Platform",
+        )
+
+        self.assertLessEqual(len(stem), 72)
+        self.assertTrue(stem.startswith("CV_ValentinNikolaev_cuboriobusinessclicksrl_"))
+        self.assertEqual(
+            stem,
+            _cv_export_stem(
+                company="Cuborio Business Click S.r.l.",
+                title="Sviluppatore Senior PHP Laravel AI Augmented",
+            ),
+        )
+        self.assertNotEqual(stem, changed_title)
+
     def test_simple_life_cv_date_range_is_preserved_from_draft(self) -> None:
         payload = application_payload()
         payload["cv_markdown"] = (

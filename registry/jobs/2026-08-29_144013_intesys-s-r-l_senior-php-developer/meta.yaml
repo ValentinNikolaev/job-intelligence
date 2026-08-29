@@ -1,0 +1,29 @@
+schema_version: 2
+id: 428975bd-0c73-435b-a88d-67dde0b8bbec
+title: Senior PHP Developer
+company: Intesys S.r.l.
+company_url: https://www.intesys.it
+location: Verona, Italy
+remote: false
+employment_type: Permanent, full time; hybrid (3 smart-working days per week)
+sources:
+- source: manual
+  source_job_id: intesys-senior-php-developer-20260829
+  url: https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/senior-php-developer/
+  metadata:
+    source_name: Intesys Y-Careers
+    apply_url: https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18
+    extraction_notes: The supplied application URL was inspected and linked to the
+      official Senior PHP Developer posting on 2026-08-29; application not submitted.
+published_at: '2026-08-29'
+discovered_at: '2026-08-29T14:40:13Z'
+updated_at: '2026-08-29T14:40:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:13Z'
+analysis_priority: 100
+fingerprint: sha256:fe1da9d950e13f6b460ff1638dc36d09d20d04dadd224af8ebbfe907443c2363
+data_source: manual
+content_source: manual
+company_content_source: manual

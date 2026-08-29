@@ -1,0 +1,49 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:dc1a4a9be7e47c2b02229323227be6dba810a1fa86731b6aa8d4f537cca571e4
+company_version: sha256:af292926b2f00010ff0011965a1dab73f1a8df071e3a629abe60e76c15021879
+prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+model: codex:gpt-5.6-terra:medium
+cv_export_stem: CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper
+generated_at: '2026-08-29T14:45:31Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:dc1a4a9be7e47c2b02229323227be6dba810a1fa86731b6aa8d4f537cca571e4
+    company_version: sha256:af292926b2f00010ff0011965a1dab73f1a8df071e3a629abe60e76c15021879
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper
+    generated_at: '2026-08-29T14:45:31Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:dc1a4a9be7e47c2b02229323227be6dba810a1fa86731b6aa8d4f537cca571e4
+    company_version: sha256:af292926b2f00010ff0011965a1dab73f1a8df071e3a629abe60e76c15021879
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper
+    generated_at: '2026-08-29T14:45:31Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:dc1a4a9be7e47c2b02229323227be6dba810a1fa86731b6aa8d4f537cca571e4
+    company_version: sha256:af292926b2f00010ff0011965a1dab73f1a8df071e3a629abe60e76c15021879
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper
+    generated_at: '2026-08-29T14:45:31Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:dc1a4a9be7e47c2b02229323227be6dba810a1fa86731b6aa8d4f537cca571e4
+    company_version: sha256:af292926b2f00010ff0011965a1dab73f1a8df071e3a629abe60e76c15021879
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper
+    generated_at: '2026-08-29T14:45:31Z'
+files:
+- CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper.docx
+- CV_ValentinNikolaev_watuppa_BackEndPHPDeveloper.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md

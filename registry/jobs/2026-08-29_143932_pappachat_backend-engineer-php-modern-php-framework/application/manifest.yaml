@@ -1,0 +1,49 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:c89b5f1887a29f5f5849a64a4b0af2b10f22beb2526eba3e0f584f20e7e4ba63
+company_version: sha256:efda0a9f0cf618addc4bc0f8ae8a8f802018ef8802f5095a975cb5a30cdd80d6
+prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+model: codex:gpt-5.6-terra:medium
+cv_export_stem: CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework
+generated_at: '2026-08-29T14:44:27Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c89b5f1887a29f5f5849a64a4b0af2b10f22beb2526eba3e0f584f20e7e4ba63
+    company_version: sha256:efda0a9f0cf618addc4bc0f8ae8a8f802018ef8802f5095a975cb5a30cdd80d6
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework
+    generated_at: '2026-08-29T14:44:27Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c89b5f1887a29f5f5849a64a4b0af2b10f22beb2526eba3e0f584f20e7e4ba63
+    company_version: sha256:efda0a9f0cf618addc4bc0f8ae8a8f802018ef8802f5095a975cb5a30cdd80d6
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework
+    generated_at: '2026-08-29T14:44:27Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c89b5f1887a29f5f5849a64a4b0af2b10f22beb2526eba3e0f584f20e7e4ba63
+    company_version: sha256:efda0a9f0cf618addc4bc0f8ae8a8f802018ef8802f5095a975cb5a30cdd80d6
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework
+    generated_at: '2026-08-29T14:44:27Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c89b5f1887a29f5f5849a64a4b0af2b10f22beb2526eba3e0f584f20e7e4ba63
+    company_version: sha256:efda0a9f0cf618addc4bc0f8ae8a8f802018ef8802f5095a975cb5a30cdd80d6
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework
+    generated_at: '2026-08-29T14:44:27Z'
+files:
+- CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework.docx
+- CV_ValentinNikolaev_pappachat_BackendEngineerPHPModernPHPFramework.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md

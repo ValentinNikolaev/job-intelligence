@@ -1,0 +1,29 @@
+schema_version: 2
+id: 5057579d-cdff-462b-beb0-b2d16064641f
+title: Backend Developer
+company: Brownie Suite (nss srl)
+company_url: https://www.browniesuite.com/
+location: Milan, Italy
+remote: false
+employment_type: null
+sources:
+- source: manual
+  source_job_id: brownie-suite-backend-developer-careers
+  url: https://www.browniesuite.com/en/careers
+  metadata:
+    apply_url: https://www.browniesuite.com/en/careers
+    extraction_notes: Official careers posting accessed 2026-08-29. The page lists
+      the role under backend and names the company address in Milan; it does not state
+      remote work, salary, seniority, or employment type.
+published_at: null
+discovered_at: '2026-08-29T14:40:39Z'
+updated_at: '2026-08-29T14:40:39Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:40:39Z'
+analysis_priority: 100
+fingerprint: sha256:df1c752cd53a48cbf452ae4791a70afaf7c7749970ab732e2b9ccc7e2dfce3e6
+data_source: manual
+content_source: manual
+company_content_source: manual

@@ -1,0 +1,28 @@
+schema_version: 2
+id: 435bc919-2fad-4e28-a440-3668ad25ab4d
+title: Symfony developer
+company: Labs Madisoft
+company_url: https://labs.madisoft.it
+location: Italy / 100% remote
+remote: true
+employment_type: Full-time permanent or VAT contractor
+sources:
+- source: manual
+  source_job_id: manual-799f138ab703d8ae
+  url: https://labs.madisoft.it/symfony-developer/
+  metadata:
+    source_name: Labs Madisoft careers
+    apply_url: https://labs.madisoft.it/candidati
+    extraction_notes: Official posting accessed 2026-08-29.
+published_at: null
+discovered_at: '2026-08-29T14:41:17Z'
+updated_at: '2026-08-29T14:41:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-29T14:41:17Z'
+analysis_priority: 0
+fingerprint: sha256:83cac83eddcc8c5a939f114ac091adbee3fa1062ab6a59c4db8b27c56be6c1db
+data_source: manual
+content_source: manual
+company_content_source: manual

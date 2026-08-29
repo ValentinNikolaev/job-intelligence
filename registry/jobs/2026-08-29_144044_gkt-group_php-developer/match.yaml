@@ -1,0 +1,29 @@
+score: 76
+recommendation: match
+summary: The candidate's PHP, Laravel, Symfony, MySQL, production troubleshooting,
+  and autonomous technical-lead experience fit the published role requirements well.
+  Remote-work availability and the practical location arrangement are unspecified.
+strengths:
+- More than 15 years of PHP/backend experience and direct Laravel, Symfony, and MySQL
+  evidence.
+- Demonstrated performance optimization, production troubleshooting, architecture,
+  and independent ownership.
+- Experience across custom digital products and web-related platforms is relevant
+  to GKT Group's tailored web and software services.
+gaps:
+- No additional technical requirements are published, so no further skills can be
+  confirmed or targeted.
+- Italian-language proficiency is not established and the posting does not state a
+  language requirement.
+concerns:
+- The vacancy lists Alba and does not specify remote, hybrid, compensation, or employment
+  terms.
+- The role describes an experienced PHP developer but does not state seniority expectations
+  or application process.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:41:46Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:1ffd652d01afbc01288cfb0b03b4cb629614850e3ecc5cabd040de538b9a3c3b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

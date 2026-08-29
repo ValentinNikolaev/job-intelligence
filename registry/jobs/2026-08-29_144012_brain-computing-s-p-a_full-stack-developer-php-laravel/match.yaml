@@ -1,0 +1,27 @@
+score: 81
+recommendation: strong_match
+summary: Strong PHP/Laravel backend, SQL, API, Git, Linux-adjacent operations, and
+  remote-work fit; the main gap is explicit modern frontend-framework evidence.
+strengths:
+- Extensive PHP and Laravel experience across SaaS, e-commerce, document automation,
+  fintech-related systems, and communications platforms.
+- Supported MySQL, PostgreSQL, REST API, GitHub Actions, Kubernetes, observability,
+  production troubleshooting, and performance-optimization experience.
+- Has a relevant computer-science master's degree and technical-lead collaboration
+  experience.
+- The full-remote Italian role aligns with the candidate's location in Rome.
+gaps:
+- React or Vue.js experience is not explicitly supported by the candidate evidence.
+- HTML, CSS, JavaScript, Postman, and web-server administration are not explicitly
+  documented at the requested level.
+concerns:
+- The posting is full-stack and includes designer collaboration; clarify the actual
+  frontend contribution expected.
+- Contract finalization details and salary are unspecified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:41:07Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f1bcfb9ca8d094b060624b1239ea0335f417a44925cfaf94e20f2292e7090888
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

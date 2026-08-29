@@ -1,0 +1,24 @@
+score: 88
+recommendation: strong_match
+summary: 'Strong fit for a Rome or remote PHP role: the candidate has extensive PHP
+  backend experience, Laravel and Symfony, MySQL and PostgreSQL, AWS, Git-based CI/CD,
+  serverless and microservice architecture, plus production reliability work.'
+strengths:
+- PHP, Laravel, Symfony, AWS, MySQL, PostgreSQL, GitHub Actions and serverless architecture
+  are documented in candidate evidence.
+- The candidate is based in the Rome area and the position explicitly permits remote
+  work.
+- Production modernization, documentation, collaboration and legacy-code maintenance
+  are supported by recent roles.
+gaps:
+- Direct MongoDB and Node.js production experience is not stated.
+concerns:
+- The posting lists broad levels; the appropriate seniority and compensation should
+  be confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-29T14:42:02Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:29f5429854f37f5d4af1c9892360e03f769d26bbaeaf736a9eeba42ab05cfd4f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-terra:medium

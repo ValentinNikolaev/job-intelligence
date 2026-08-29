@@ -1,0 +1,49 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:c130d2f33d676643b7b856a721ac45309f7e57094bcfac07cb87f2569cf0efe4
+company_version: sha256:d077074e0049ee96280e14d9efc3b3000f4e68a8ac2f55cf56b0003009f08a7f
+prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+model: codex:gpt-5.6-terra:medium
+cv_export_stem: CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack
+generated_at: '2026-08-29T14:51:50Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c130d2f33d676643b7b856a721ac45309f7e57094bcfac07cb87f2569cf0efe4
+    company_version: sha256:d077074e0049ee96280e14d9efc3b3000f4e68a8ac2f55cf56b0003009f08a7f
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack
+    generated_at: '2026-08-29T14:51:50Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c130d2f33d676643b7b856a721ac45309f7e57094bcfac07cb87f2569cf0efe4
+    company_version: sha256:d077074e0049ee96280e14d9efc3b3000f4e68a8ac2f55cf56b0003009f08a7f
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack
+    generated_at: '2026-08-29T14:51:50Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c130d2f33d676643b7b856a721ac45309f7e57094bcfac07cb87f2569cf0efe4
+    company_version: sha256:d077074e0049ee96280e14d9efc3b3000f4e68a8ac2f55cf56b0003009f08a7f
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack
+    generated_at: '2026-08-29T14:51:50Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:c130d2f33d676643b7b856a721ac45309f7e57094bcfac07cb87f2569cf0efe4
+    company_version: sha256:d077074e0049ee96280e14d9efc3b3000f4e68a8ac2f55cf56b0003009f08a7f
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack
+    generated_at: '2026-08-29T14:51:50Z'
+files:
+- CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack.docx
+- CV_ValentinNikolaev_queryoadvance_PHPDeveloperFullstack.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md
