@@ -1,0 +1,22 @@
+score: 35
+recommendation: weak_match
+summary: The posting is mislabeled as Java but describes a frontend role centered
+  on HTML, CSS, JavaScript, React, and Angular, while the candidate profile is primarily
+  backend Go/PHP.
+strengths:
+- Strong general software-development foundation and API collaboration experience.
+- Relevant cross-functional delivery and backend understanding.
+gaps:
+- No authoritative evidence of professional frontend HTML/CSS/JavaScript, React, or
+  Angular experience.
+- The role focuses on frontend implementation, usability, browsers, and mobile web
+  rather than the candidate's core backend specialization.
+concerns:
+- Remote and location arrangements are not stated.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-30T15:37:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:e1b5c080ce2a05ca2ad4544ac71d9c2c7a65c43717779f0804dfba1281d8ceee
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

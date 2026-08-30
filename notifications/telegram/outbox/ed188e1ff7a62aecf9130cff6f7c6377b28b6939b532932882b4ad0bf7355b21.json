@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-30T15:37:10Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Solidgate",
+      "directory": "2026-08-30_150254_solidgate_lead-backend-engineer-taxes-module",
+      "score": 88,
+      "title": "Lead Backend Engineer (Taxes Module)",
+      "url": "https://jobs.dou.ua/companies/solidgate/vacancies/360591/",
+      "vacancy_id": "5cb49e9c-99e7-4a2c-a872-b510c22a25a3"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ed188e1ff7a62aecf9130cff6f7c6377b28b6939b532932882b4ad0bf7355b21",
+  "schema_version": 1
+}

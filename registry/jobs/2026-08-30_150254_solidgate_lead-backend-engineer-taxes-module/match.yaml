@@ -1,0 +1,24 @@
+score: 88
+recommendation: strong_match
+summary: 'Strong fit for a lead backend ownership role: proven Go and PHP delivery,
+  distributed event-driven systems, PostgreSQL, queues, AWS, testing, reliability,
+  fintech-related payments, and mentoring.'
+strengths:
+- 15+ years of backend engineering with substantial Go and PHP experience.
+- Led and architected high-throughput distributed systems using queues, EventBridge,
+  AWS, PostgreSQL, and resilient delivery patterns.
+- Relevant fintech and payments experience plus technical leadership, mentoring, CI/CD,
+  observability, and production reliability.
+gaps:
+- Direct tax calculation, VAT/GST/sales-tax expertise is not established.
+- Kafka and explicit end-to-end testing examples are not clearly documented.
+concerns:
+- The posting does not clearly state remote or location terms; candidate location
+  compatibility is therefore uncertain.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-30T15:37:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9c199df2ff6d6a5d5d8bba0d4c6aa2df21f0a936e1737d29b408b102ae771f7b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
