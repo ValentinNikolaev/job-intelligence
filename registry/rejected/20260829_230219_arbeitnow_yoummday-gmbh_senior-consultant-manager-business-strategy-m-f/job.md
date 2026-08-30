@@ -65,4 +65,4 @@ M&A, integration & ad-hoc topics: As needed, you'll support due diligence, finan
 - **The ****values****:** We score highly with an **open, ****authentic**** ****culture**** **and a** ****high-****performing**** **and **humorous**** ****team** that is already looking forward to making **bold**** ****decisions** with you and** ****breaking**** ****new**** ****ground** that will lead us to **sustainable**** ****success****.**
 - **Your**** ****opportunity****:** From day one, you will have the opportunity to take on** ****responsibility**, **drive**** ****innovation**** **and** ****develop**** ****the**** ****company** and** ****yourself** together with a** ****team**** ****of**** ****experts.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

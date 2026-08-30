@@ -99,4 +99,4 @@ Wir wissen, dass man nicht immer alle Kriterien erfüllen kann. Trotzdem würden
 
 Wir haben es uns zum Ziel gesetzt, Barrieren und Diskriminierung zu beseitigen und Chancengleichheit durch unser transparentes Einstellungsverfahren zu gewährleisten. Wir sind offen für alle Personengruppen ohne Rücksicht auf Alter, Hautfarbe, nationale Herkunft, Rasse, Religion, Geschlecht, sexuelle Orientierung, Geschlechtsidentität und/oder -ausdruck, Familienstand oder andere Merkmale.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

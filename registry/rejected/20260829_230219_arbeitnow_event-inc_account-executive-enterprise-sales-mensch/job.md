@@ -59,4 +59,4 @@ Wir suchen keine perfekte Sales-Vita – sondern die richtigen Skills und das ri
 
 Hellen, unsere Talent Acquisition Managerin
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

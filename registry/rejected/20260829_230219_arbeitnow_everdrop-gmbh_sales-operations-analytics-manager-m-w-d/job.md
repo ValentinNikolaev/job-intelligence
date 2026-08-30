@@ -175,4 +175,4 @@ Auch in unserem Hiring-Prozess versuchen wir, so achtsam wie möglich zu sein.
 
 Wir sind ganz bestimmt nicht perfekt – aber wir wollen jeden Tag besser werden und mit jedem Schritt etwas Neues dazulernen. Genau darum geht es ja bei jeder Reise. Kommst du mit?
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

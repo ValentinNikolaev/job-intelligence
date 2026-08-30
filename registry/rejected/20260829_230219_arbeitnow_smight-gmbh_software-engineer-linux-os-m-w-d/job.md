@@ -41,4 +41,4 @@ Als Software Engineer Linux OS bist Du verantwortlich für das Betriebssystem un
 - Faires Gehalt plus einer Erfolgsbeteiligung, sowie 30 Tage Urlaub 
 - Zuschüsse für deine Altersvorsorge und vermögenswirksame Leistungen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

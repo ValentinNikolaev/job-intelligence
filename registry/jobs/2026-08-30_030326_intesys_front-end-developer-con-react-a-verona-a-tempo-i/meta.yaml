@@ -1,0 +1,28 @@
+schema_version: 2
+id: 82d29977-254a-40d8-96ee-fe681d6ab045
+title: Front-end Developer con React a Verona a tempo indeterminato
+company: Intesys
+company_url: https://www.intesys.it
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:49bbec6c890fde1f4ebd48f30eb53c03fe4f43b6ae736da8f444512636212fa5
+  url: https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/
+  metadata:
+    source_name: intesys
+    board_url: https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-08-30T03:03:26Z'
+updated_at: '2026-08-30T03:03:26Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-30T03:03:26Z'
+analysis_priority: 100
+fingerprint: sha256:e0cd0fe50b5252baa5f5a158a7e0976df0c09c9c7d782a7b0bb2ea8235a6f882
+data_source: custom
+content_source: custom
+company_content_source: null

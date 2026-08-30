@@ -115,4 +115,4 @@ Successfully pilot and integrate AI tools to enhance sourcing and hiring efficie
 
 **International & Inclusive Culture:** A collaborative, multi-cultural team environment with a strong commitment to diversity and inclusion.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
