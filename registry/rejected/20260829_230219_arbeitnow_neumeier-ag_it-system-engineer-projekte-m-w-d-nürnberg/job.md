@@ -52,4 +52,4 @@ Dann bewirb Dich über unser [Online-Bewerbungsformular](https://neumeier-ag.job
 Anita Wally
 Tel. ----- beachte unsere [Datenschutzerklärung](https://www.neumeier-edv.de/nag-datenschutz#bwr) für Bewerbende.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

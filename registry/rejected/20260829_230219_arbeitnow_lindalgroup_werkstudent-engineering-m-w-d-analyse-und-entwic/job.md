@@ -56,4 +56,4 @@ Technology-Straße 2
 
 Die Lindal Dispenser GmbH mit Sitz in Schönberg ist ein führender Hersteller von Aerosolventilen, Sprühköpfen und Dispenser-Lösungen für verschiedene Branchen wie Kosmetik, Pharma, Lebensmittel und technische Anwendungen. Seit 2006 am Standort aktiv, entwickelt und produziert das Unternehmen hochwertige Komponenten der Kunststoff- und Verpackungsindustrie und ist Teil der international erfolgreichen LINDAL Gruppe, die weltweit an 12 Standorten vertreten ist.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
