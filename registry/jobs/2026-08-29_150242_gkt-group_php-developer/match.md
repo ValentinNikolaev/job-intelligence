@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 80/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-PHP Developer posting explicitly seeks Laravel or Symfony and MySQL, matching the candidate's documented framework, database, and backend experience.
+Strong evidenced PHP backend experience and senior delivery background fit the role title, with Rome-area context supporting location compatibility; the posting is inaccessible behind a verification page, so detailed requirements remain unknown.
 
 ## Why it matches
 
-- Direct Laravel/Symfony and MySQL-aligned experience.
-- Proven autonomous problem solving and production engineering.
-- Relevant senior and technical leadership background.
+- Extensive demonstrated PHP backend experience with Laravel and Symfony.
+- Senior software development and technical leadership experience across production systems.
+- Rome/Italy location context aligns with the candidate's stated base.
 
 ## Gaps
 
-- Role scope, employment terms, language, and remote status are not stated.
+- The accessible posting does not expose required frameworks, responsibilities, seniority, work arrangement, or language requirements.
 
 ## Concerns
 
-- Alba location may require commuting or relocation from Rome.
+- The source page is a Cloudflare verification screen rather than the vacancy details, leaving role-specific fit and remote expectations unverified.

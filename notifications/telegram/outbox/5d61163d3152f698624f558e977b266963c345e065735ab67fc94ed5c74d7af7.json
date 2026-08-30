@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-30T00:25:34Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "GKT Group",
+      "directory": "2026-08-29_150242_gkt-group_php-developer",
+      "score": 78,
+      "title": "PHP Developer",
+      "url": "https://gktgroup.it/career/",
+      "vacancy_id": "7ef62e99-cb42-428f-8a59-b065c9469972"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "5d61163d3152f698624f558e977b266963c345e065735ab67fc94ed5c74d7af7",
+  "schema_version": 1
+}
