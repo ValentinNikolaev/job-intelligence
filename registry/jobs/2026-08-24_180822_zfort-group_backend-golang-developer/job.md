@@ -30,4 +30,4 @@ You will be responsible for building and evolving a high-performance backend pla
 - Professional literature;
 - English courses.
 
-If you are interested, please let us know [[email protected](/cdn-cgi/l/email-protection#2d47424f6d574b425f59034e4240)]
+If you are interested, please let us know [[email protected](/cdn-cgi/l/email-protection#86ece9e4c6fce0e9f4f2a8e5e9eb)]
