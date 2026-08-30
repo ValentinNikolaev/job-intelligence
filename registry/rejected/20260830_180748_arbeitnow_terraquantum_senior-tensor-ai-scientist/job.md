@@ -99,4 +99,4 @@ Terra Quantum is a future-focused quantum services and technology company workin
 
 Terra Quantum is an equal opportunities employer, committed to diversity, inclusion and employee well-being.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

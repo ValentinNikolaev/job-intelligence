@@ -117,4 +117,4 @@ Neugierig geworden? Dann schicke uns noch heute deine Bewerbung – wir freuen u
 
 *Wir verpflichten uns, jede qualifizierte Person nach ihren Fähigkeiten zu beurteilen, unabhängig von Alter, Geschlechtsidentität, ethnischer Zugehörigkeit, sexueller Orientierung, Behinderungsstatus oder Religion.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,18 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/swissborg/jobs/software-engineer-propr-xyz
+source_url: https://himalayas.app/companies/swissborg/jobs/software-engineer-propr-xyz
+title: Software Engineer | Propr.xyz
+company: SwissBorg
+location: Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria,
+  Croatia, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar,
+  Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle
+  of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta,
+  Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal,
+  Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen,
+  Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands
+published_at: '2026-08-03T10:13:59Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-03T10:13:59Z is older than 7 days
+updated_at: '2026-08-30T19:03:01Z'
+rejected_at: '2026-08-30T19:03:01Z'

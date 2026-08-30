@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: data-engineer-berlin-412094
+source_url: https://www.arbeitnow.com/jobs/companies/1global/data-engineer-berlin-412094
+title: Data Engineer
+company: 1Global
+location: Berlin, Germany
+published_at: '2026-08-30T17:20:06Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-30T19:02:43Z'
+rejected_at: '2026-08-30T19:02:43Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-bad-salzungen-22492
+source_url: https://www.arbeitnow.com/jobs/companies/werraenergie-gmbh/werkstudent-bad-salzungen-22492
+title: Werkstudent (m/w/d)
+company: WerraEnergie GmbH
+location: Bad Salzungen, Thüringen, Deutschland
+published_at: '2026-08-30T17:30:03Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-30T19:02:43Z'
+rejected_at: '2026-08-30T19:02:43Z'

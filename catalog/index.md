@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 79
+Total vacancies: 85
 
-- Found: 60
+- Found: 66
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,12 @@ Total vacancies: 79
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-30 | [Sonatus](../registry/jobs/2026-08-30_190304_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-30_190304_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-30 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
+| 2026-08-30 | [Intesys](../registry/jobs/2026-08-30_190252_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-08-30_190252_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-08-30 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-08-30 | [Intesys](../registry/jobs/2026-08-30_190252_intesys_java-software-developer_21de939a/) | [Java Software Developer](../registry/jobs/2026-08-30_190252_intesys_java-software-developer_21de939a/job.md) | — | Custom | Found | 2026-08-30 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-08-30 | [Intesys](../registry/jobs/2026-08-30_190252_intesys_developer/) | [Developer](../registry/jobs/2026-08-30_190252_intesys_developer/job.md) | — | Custom | Found | 2026-08-30 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
+| 2026-08-30 | [ShippyPro](../registry/jobs/2026-08-30_190252_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-30_190252_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-30 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-08-30 | [Intesys](../registry/jobs/2026-08-30_190252_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-08-30_190252_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-08-30 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-08-30 | [Solidgate](../registry/jobs/2026-08-30_150254_solidgate_lead-backend-engineer-taxes-module/) | [Lead Backend Engineer (Taxes Module)](../registry/jobs/2026-08-30_150254_solidgate_lead-backend-engineer-taxes-module/job.md) | віддалено | Dou | Found | 2026-08-30 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/360591/) | [Open](../registry/jobs/2026-08-30_150254_solidgate_lead-backend-engineer-taxes-module/company.md) | — | — | — | — |
 | 2026-08-29 | [Brownie Suite](../registry/jobs/2026-08-29_180750_brownie-suite_backend-developer/) | [Backend Developer](../registry/jobs/2026-08-29_180750_brownie-suite_backend-developer/job.md) | — | Custom | Found | 2026-08-29 | [Custom](https://www.browniesuite.com/en/careers) | — | — | — | — | — |
 | 2026-08-29 | [Cuborio](../registry/jobs/2026-08-29_180750_cuborio_sviluppatore-senior-php-laravel-ai-augmented/) | [Sviluppatore Senior PHP/Laravel (AI-Augmented)](../registry/jobs/2026-08-29_180750_cuborio_sviluppatore-senior-php-laravel-ai-augmented/job.md) | — | Custom | Found | 2026-08-29 | [Custom](https://cuborio.com/azienda/lavora-con-noi) | — | — | — | — | — |
