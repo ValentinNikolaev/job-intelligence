@@ -65,4 +65,4 @@ Unser Unternehmen ist im Bereich Erwachsenenunterhaltung tätig. Daher ist ein M
 
 Bei Interesse freuen wir uns über eine kurze Vorstellung mit Angaben zu deinem Alter, deinem Wohnort beziehungsweise deiner Region, deinem bisherigen Hintergrund und den Bereichen des Online Marketings, die dich besonders interessieren.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

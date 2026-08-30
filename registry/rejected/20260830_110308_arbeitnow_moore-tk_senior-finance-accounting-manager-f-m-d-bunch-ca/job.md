@@ -70,4 +70,4 @@ From day one, you will play a critical role in strengthening and optimising bunc
 
 Please feel free to send your **CV directly to Nour Gammoh at ----- or **apply directly via bunch careers page: **[https://www.bunch.capital/company?ashby_jid=d24fdf4d-e883-4e85-9e21-965699c93035#careers](https://www.bunch.capital/company?ashby_jid=d24fdf4d-e883-4e85-9e21-965699c93035#careers)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -176,4 +176,4 @@ Sarah Buge - Chief Operating Officer
 
 Companisto steht für Chancengleichheit und Vielfalt. Wir freuen uns über Bewerbungen unabhängig von Geschlecht, Herkunft, Alter, Behinderung, Religion, sexueller Orientierung oder Identität.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -36,4 +36,4 @@ Du brennst für innovative Technologien, begeisterst dich für die Rolle und wil
 - **Deutsch- und Englischkenntnisse:** Du sprichst gut Deutsch und hast mind. Englisch-Grundkenntnisse – zur sicheren Kommunikation mit Gästen und Team.
 - **Gastronomie-Erfahrung als Plus:** Erste Erfahrungen aus Küche und/oder Service sind ein Bonus – aber keine Voraussetzung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

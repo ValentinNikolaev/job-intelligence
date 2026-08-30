@@ -121,4 +121,4 @@ CEO / final round
 
 For strong candidates, we aim to complete the process and make an offer within **1 week** from the start of the interview process. Candidates who complete assessments quickly will be prioritized.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

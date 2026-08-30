@@ -28,4 +28,4 @@ Posted: 2026-08-30T08:09:43Z
 - Du hast Spaß daran, gemeinsam ein digitales Produkt mit sozialem Mehrwert weiterzuentwickeln.
 - Du hast Deutschkenntnisse auf Muttersprachenniveau und sprichst fließend Englisch.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -105,4 +105,4 @@ Bewerbungen ohne relevantes Portfolio können wir leider nicht berücksichtigen.
 
 Wir freuen uns darauf, deine Arbeiten zu sehen und gemeinsam Designs zu entwickeln, die nicht nur hochwertig aussehen, sondern Aufmerksamkeit erzeugen, Vertrauen aufbauen und echte Ergebnisse erzielen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
