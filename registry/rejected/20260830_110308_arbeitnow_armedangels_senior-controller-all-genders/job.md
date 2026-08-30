@@ -98,4 +98,4 @@ This helps us get a well-rounded picture of how well we might fit together.
 
 Thank you for your time and interest!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

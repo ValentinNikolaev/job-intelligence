@@ -165,4 +165,4 @@ Die **Jobbusters®** begleitet Sie persönlich und diskret durch den gesamten Be
 
 **Start:** Zum nächstmöglichen Zeitpunkt
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -75,4 +75,4 @@ Menschen, die **über den Tellerrand** hinausdenken. Persönlichkeiten mit klare
 
 Dann bewirb dich jetzt exklusiv über die **PRIME HR Agentur®**, deinem Partner für Premium-Karrieren im Finanzsektor.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,37 @@
+schema_version: 2
+id: 5cb49e9c-99e7-4a2c-a872-b510c22a25a3
+title: Lead Backend Engineer (Taxes Module)
+company: Solidgate
+company_url: https://jobs.dou.ua/companies/solidgate/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '360591'
+  url: https://jobs.dou.ua/companies/solidgate/vacancies/360591/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 30 серпня
+    listing_summary: 'Our Mission and Vision
+
+
+      At Solidgate, our mission is clear: to empower outstanding entrepreneurs to
+      build exceptional internet companies. We exist to fuel the builders — the ones
+      shaping the digital economy — with the financial infrastructure they deserve.'
+published_at: '2026-08-30'
+discovered_at: '2026-08-30T15:02:54Z'
+updated_at: '2026-08-30T15:02:54Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-30T15:02:54Z'
+analysis_priority: 100
+fingerprint: sha256:5e88a71c59c1b0631fd6fb297d54cb6acb518b54f64dd2522dd3f0b7db7b696d
+data_source: dou
+content_source: dou
+company_content_source: dou

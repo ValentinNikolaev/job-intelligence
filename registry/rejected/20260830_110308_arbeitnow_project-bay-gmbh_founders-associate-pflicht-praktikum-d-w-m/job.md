@@ -65,4 +65,4 @@ Marketing-Kampagnen zu bestimmen
 
 - Du wirst als vollwertiges Teammitglied aufgenommen und kannst alle deine Ideen/ Vorschläge mit uns besprechen
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

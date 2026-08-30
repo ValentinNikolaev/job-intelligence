@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: operations-director-frankfurt-am-main-125024
+source_url: https://www.arbeitnow.com/jobs/companies/spark-europe-gmbh-co-kg/operations-director-frankfurt-am-main-125024
+title: Operations Director
+company: SPARK Europe GmbH & Co. KG
+location: Frankfurt am Main
+published_at: '2026-08-30T13:00:46Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-08-30T15:02:43Z'
+rejected_at: '2026-08-30T15:02:43Z'
