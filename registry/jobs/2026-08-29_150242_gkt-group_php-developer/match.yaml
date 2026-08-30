@@ -1,23 +1,20 @@
 score: 78
 recommendation: match
-summary: Strong evidenced PHP backend experience and senior delivery background fit
-  the role title, with Rome-area context supporting location compatibility; the posting
-  is inaccessible behind a verification page, so detailed requirements remain unknown.
+summary: This is a strong technology match for the candidate’s PHP backend background,
+  including Laravel or Symfony, MySQL, autonomous problem solving, and senior production
+  systems experience.
 strengths:
-- Extensive demonstrated PHP backend experience with Laravel and Symfony.
-- Senior software development and technical leadership experience across production
-  systems.
-- Rome/Italy location context aligns with the candidate's stated base.
+- PHP is a core documented skill with Laravel and Symfony experience.
+- MySQL, backend systems, and independent production problem solving are supported.
+- Senior and technical-lead experience is documented.
 gaps:
-- The accessible posting does not expose required frameworks, responsibilities, seniority,
-  work arrangement, or language requirements.
+- The posting gives little detail about seniority, scope, or working arrangements.
 concerns:
-- The source page is a Cloudflare verification screen rather than the vacancy details,
-  leaving role-specific fit and remote expectations unverified.
+- Company and project context are limited in the source.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-08-30T00:25:34Z'
+analyzed_at: '2026-08-30T03:27:40Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:8888b2d784276c76955e762846dc96e246d42d2e94b9a54116535dd64af4028f
+job_version: sha256:9b78bc0f1ead20c58872fb7fed3dff8ae991a087edef0e10679453a25bcae986
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

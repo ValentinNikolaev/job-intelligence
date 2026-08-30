@@ -1,0 +1,20 @@
+score: 49
+recommendation: possible_match
+summary: API, microservice, backend, Agile collaboration, and complex delivery needs
+  align, but the role emphasizes frontend and Spring Boot technologies not demonstrated
+  in the profile.
+strengths:
+- Backend and API architecture experience fits integration responsibilities.
+- Microservices, CI/CD, Agile delivery, and stakeholder collaboration are documented.
+gaps:
+- Angular, React, Spring Boot, JHipster, and Liferay are not demonstrated.
+- Frontend delivery is not a central demonstrated strength.
+concerns:
+- The posting is a broad profile with unclear seniority, location, and remote terms.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-30T03:27:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:08f116cf89076634cc9744ca1beb879f5868db58e5d1029c12ea5244207df44a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
