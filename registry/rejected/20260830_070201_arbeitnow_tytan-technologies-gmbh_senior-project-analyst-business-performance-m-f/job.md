@@ -181,4 +181,4 @@ WE are an equal-opportunity employer committed to fairness and inclusivity. We d
 
 **Please note that we currently do not offer visa sponsorship, so we’re only able to consider candidates who already have a valid work permit. All qualified applicants are hereby encouraged to apply.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

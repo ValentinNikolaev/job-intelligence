@@ -4,8 +4,8 @@ Posted: 2026-08-23T07:53:12Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-23T07:53:12Z is older than 7 days
 
 ### Posizione: Sviluppatore Oracle APEX - Senior
 

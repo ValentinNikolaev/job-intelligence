@@ -24,4 +24,4 @@ Posted: 2026-08-29T23:09:41Z
 - Du verfügst über sehr gute Deutsch- und gute Englischkenntnisse in Wort und Schrift
 - Du bist sicher im Umgang mit MS Office
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

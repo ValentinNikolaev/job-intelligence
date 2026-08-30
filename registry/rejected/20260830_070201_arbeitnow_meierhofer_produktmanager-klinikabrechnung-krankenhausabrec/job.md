@@ -52,4 +52,4 @@ Seit fast 40 Jahren verbindet Meierhofer Erfahrung mit Innovationskraft und digi
 
 Wir wertschätzen Vielfalt und begrüßen deshalb alle Bewerbungen. Falls du Fragen hast, wende dich unter **+49 89 442316 – 208** an unseren Unit Lead Recruiting Annette Gautherie-Kampka. Wir sind gerne für dich da und freuen uns darauf, dich kennenzulernen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

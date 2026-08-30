@@ -164,4 +164,4 @@ questions, you can contact Wesley Schreuder at
 
 Our company is dedicated to building a workplace that promotes equity, diversity, and inclusion, and we believe that a diverse workforce is essential to our success. As we strive to create a workplace where everyone feels valued and respected, regardless of their race, gender, sexual orientation, age, religion, or any other characteristic, we encourage everyone to apply.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -87,4 +87,4 @@ Kindly note that for **non-EU applicants**, a **valid work and residence permit*
 
 **Are you excited about shaping the future with us? Then apply now - we look forward to getting to know you!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

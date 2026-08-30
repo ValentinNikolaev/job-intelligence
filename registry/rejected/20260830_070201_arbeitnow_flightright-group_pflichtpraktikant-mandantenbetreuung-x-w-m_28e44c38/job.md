@@ -44,4 +44,4 @@ Das **Operations Team bei freem** betreut unsere Mandanten: innen und übernimmt
 - **Feedback & Anerkennung** - Besondere Projekte werden bei uns mit dem APA-Award ausgezeichnet, Performance-Feedbacks gibt es ebenso mit deinem Teamlead
 - Ansonsten ist für dein **Frühstück **gesorgt und unser Kühlschrank ist gut gefüllt mit Soft Drinks
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -76,4 +76,4 @@ Wir sind stolz darauf, was wir bisher erreicht haben und freuen uns auf Dich als
 **Bist Du bereit, unser Produktmanagement auf ein neues Level zu heben? **
 **Dann bewirb Dich jetzt!**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

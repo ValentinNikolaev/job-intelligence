@@ -70,4 +70,4 @@ Für Millionen von Eigenheimen. Gemeinsam. Jeden Tag. Heim für Heim.
 
 Das ist genau die Herausforderung, nach der Du suchst? Dann warte nicht länger und bewirb Dich bei uns. Wir freuen uns darauf, Dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

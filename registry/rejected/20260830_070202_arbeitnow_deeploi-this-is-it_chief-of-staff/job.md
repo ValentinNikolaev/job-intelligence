@@ -46,4 +46,4 @@ This is a highly visible role with a wide scope. Wherever a topic matters and ha
 - Well-equipped offices in Berlin and Munich, plus benefits such as Urban Sports Club/EGYM or a public transport ticket and Corporate Benefits.
 - A team culture that is ambitious, transparent and collaborative, where ownership meets impact.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

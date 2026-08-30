@@ -85,4 +85,4 @@ TOWA stellt nach Skills und Impact ein. Wir freuen uns über Bewerbungen aller q
 
 Dein Teamlead ist Anja Meusburger – Klicke [hier](https://www.towa-digital.com/employee/anja-meusburger/) um mehr über sie zu erfahren.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

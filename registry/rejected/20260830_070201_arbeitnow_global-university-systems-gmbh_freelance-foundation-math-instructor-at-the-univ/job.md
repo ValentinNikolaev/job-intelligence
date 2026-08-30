@@ -31,4 +31,4 @@ The University of Europe is seeking a freelance math instructor with teaching ex
 
 **Payrate:** 40€ per hour
 
-If you meet the above criteria and are passionate about teaching mathematics to a diverse, international student body, we encourage you to apply. Please send your CV and a cover letter detailing your teaching experience and approach to career foundations <Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+If you meet the above criteria and are passionate about teaching mathematics to a diverse, international student body, we encourage you to apply. Please send your CV and a cover letter detailing your teaching experience and approach to career foundations <Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

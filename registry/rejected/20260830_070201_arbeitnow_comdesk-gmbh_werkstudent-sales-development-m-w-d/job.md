@@ -67,4 +67,4 @@ Klingt spannend? Dann freuen wir uns auf deine Bewerbung als **Werkstudent Sales
 
 Till Everling
 HR-Manager
-E-Mail: Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+E-Mail: Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

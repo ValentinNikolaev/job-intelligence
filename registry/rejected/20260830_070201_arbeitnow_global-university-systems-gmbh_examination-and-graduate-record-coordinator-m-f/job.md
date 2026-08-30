@@ -174,4 +174,4 @@ Contribute to ongoing improvements in registry processes, systems, and student
 - Opportunity to develop and implement new ideas and concepts
 - Personal and professional development
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

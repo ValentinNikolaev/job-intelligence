@@ -199,4 +199,4 @@ Potential to participate in the employee stock option program.
 
 Urban Sports membership and BVG subsidy, corporate pension program.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

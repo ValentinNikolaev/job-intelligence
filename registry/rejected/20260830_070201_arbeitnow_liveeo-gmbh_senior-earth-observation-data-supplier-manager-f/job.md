@@ -145,4 +145,4 @@ Urban Sports membership and BVG subsidy, corporate pension program.
 
 A diverse and vibrant international environment of 30+ different nationalities
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

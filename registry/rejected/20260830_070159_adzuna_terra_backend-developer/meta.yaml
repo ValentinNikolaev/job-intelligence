@@ -6,7 +6,7 @@ title: Backend Developer
 company: Terra
 location: Bilbao, Vizcaya
 published_at: '2026-08-23T09:59:37Z'
-rejection_category: tech_stack
-rejection_reason: role does not mention Go/Golang or PHP
-updated_at: '2026-08-30T07:01:59Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-23T09:59:37Z is older than 7 days
+updated_at: '2026-08-30T11:03:05Z'
 rejected_at: '2026-08-30T07:01:59Z'

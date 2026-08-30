@@ -48,4 +48,4 @@ Posted: 2026-08-30T05:09:50Z
 - **Verantwortung & Entw****icklung:**** **Raum für Eigeninitiative statt starrer Hierarchien - übernimm Verantwortung, bringe deine Ideen ein und gestalte die Zukunft der Reos Gruppe aktiv mit.
 - **Netw****orking:**** **Zweimal im Jahr kommt die gesamte Reos Gruppe in Hamburg zusammen - freue dich auf unvergessliche Firmenevents, persönlichen Austausch und echte gemeinsame Erlebnisse.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

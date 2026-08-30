@@ -72,4 +72,4 @@ Join our product & tech teams and pave the way for climate neutral living.
 
 Is this exactly the challenge you are looking for? Then don't wait any longer and apply to us. We look forward to getting to know you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

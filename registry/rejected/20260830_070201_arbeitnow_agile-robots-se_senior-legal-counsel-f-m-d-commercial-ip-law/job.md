@@ -49,4 +49,4 @@ We are looking for a lawyer with a strong foundation gained at a leading interna
 - Corporate Benefits Program covering health, mobility, and learning for 100€ net per month.
 - Modern office facilities with a rooftop terrace overlooking Munich, free drinks & fruits, and regular company events contribute to a good working environment
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

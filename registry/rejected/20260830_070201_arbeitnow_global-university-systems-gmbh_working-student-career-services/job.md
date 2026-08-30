@@ -80,4 +80,4 @@ Work in a young, dynamic and positive culture that fosters collaboration
 
 Be at the forefront of an exciting educational opportunity, leading the way forward and growing with BSBI
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

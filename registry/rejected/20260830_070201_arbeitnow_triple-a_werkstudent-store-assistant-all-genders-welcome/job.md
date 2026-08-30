@@ -41,4 +41,4 @@ Satisfyer & GESKE stehen für Innovationen, Spaß am Leben und Lifestyle mit Wir
 
 **Lust auf Sales, ein tolles Gehalt, Selfcare und Lebensfreude verschenken? Dann komm zu uns – als Pleasure & Beauty Consultant bei Satisfyer & GESKE Beauty Tech! ****✨**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
