@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '166776315954502258'
+source_url: https://jooble.org/away/166776315954502258?p=1&pos=3&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=96&brelb=10&scr=50.798298&bscr=50.798298&aq=-457607247541841794&elckey=-3452314755132066997
+title: Fullstack Developer
+company: Rextart
+location: Italian Republic
+published_at: '2026-08-27T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-31T06:15:07Z'
+rejected_at: '2026-08-31T06:15:07Z'

@@ -1,0 +1,37 @@
+schema_version: 2
+id: cb721d79-bf33-46b5-b839-218c3b028664
+title: Full Stack Engineer (PHP + JavaScript + AI)
+company: BetterMe
+company_url: https://jobs.dou.ua/companies/betterme/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '359478'
+  url: https://jobs.dou.ua/companies/betterme/vacancies/359478/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 31 серпня
+    listing_summary: 'About us:
+
+
+      BetterMe — an all-in-one well-being ecosystem empowering millions to become
+      better — physically, mentally, and emotionally. We build what makes people better
+      and keep challenging ourselves to inspire others.'
+published_at: '2026-08-31'
+discovered_at: '2026-08-31T06:14:50Z'
+updated_at: '2026-08-31T06:14:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-31T06:14:50Z'
+analysis_priority: 100
+fingerprint: sha256:72158e9512fe9f821bdfb4bbbba76662bd510f8177fb6b24357102129236e3ae
+data_source: dou
+content_source: dou
+company_content_source: dou

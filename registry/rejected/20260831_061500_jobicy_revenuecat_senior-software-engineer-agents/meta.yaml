@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151947'
+source_url: https://jobicy.com/jobs/151947-senior-software-engineer-agents
+title: Senior Software Engineer, Agents
+company: RevenueCat
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-08-28T18:24:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-31T06:15:00Z'
+rejected_at: '2026-08-31T06:15:00Z'
