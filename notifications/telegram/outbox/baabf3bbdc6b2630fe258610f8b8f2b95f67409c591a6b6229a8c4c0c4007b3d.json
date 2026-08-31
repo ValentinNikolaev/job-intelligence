@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-31T17:16:32Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Gameinspire",
+      "directory": "2026-08-31_170421_gameinspire_senior-golang-engineer",
+      "score": 88,
+      "title": "Senior Golang Engineer",
+      "url": "https://jobs.dou.ua/companies/gameinspire/vacancies/371543/",
+      "vacancy_id": "a451fafb-f1cd-4c09-a658-42a5cc079ace"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "baabf3bbdc6b2630fe258610f8b8f2b95f67409c591a6b6229a8c4c0c4007b3d",
+  "schema_version": 1
+}

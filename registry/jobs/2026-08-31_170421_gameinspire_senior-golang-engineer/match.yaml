@@ -1,0 +1,28 @@
+score: 88
+recommendation: strong_match
+summary: 'Strong fit for a senior Go backend role: recent production Go ownership,
+  microservices, APIs, event-driven systems, PostgreSQL, RabbitMQ, Kubernetes, CI/CD,
+  monitoring, and additional PHP experience align with the stated stack.'
+strengths:
+- Recent production Go backend ownership, including API orchestration and resilient
+  message delivery pipelines.
+- Demonstrated microservices, event-driven architecture, queues, PostgreSQL, Kubernetes,
+  Helm, GitHub Actions, ArgoCD, and monitoring.
+- Meaningful PHP and Symfony/Laravel background matches the Go plus PHP/Symfony environment.
+- Experience with performance optimization, production troubleshooting, code reviews,
+  mentoring, and technical leadership.
+gaps:
+- MongoDB, Redis, Kafka, GraphQL, and GCP are not demonstrated in the candidate profile.
+- Event sourcing and detailed high-load database internals are not explicitly documented.
+concerns:
+- The Ukraine-oriented benefits do not clearly establish whether employment from Italy
+  is supported despite the remote wording.
+- The profile does not quantify two full years specifically in the requested concurrency
+  and context-handling terminology.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-31T17:16:33Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:18ef677fdacc6fe60ef37a084a99c2eec395b9e55ce73e56b6dfd07a0d574a0a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
