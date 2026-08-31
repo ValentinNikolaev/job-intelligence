@@ -1,0 +1,36 @@
+schema_version: 2
+id: 4dd2496a-b6c0-4d9c-a600-94370849b92e
+title: Senior PHP Yii2 Developer
+company: iPOST
+company_url: https://jobs.dou.ua/companies/ipost/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '186031'
+  url: https://jobs.dou.ua/companies/ipost/vacancies/186031/?from=list_hot
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 31 серпня
+    listing_summary: 'Привіт!
+
+
+      Ми — iPOST, українська продуктова IT-компанія та технологічна платформа доставки,
+      яку розвиваємо з 2017 року.'
+published_at: '2026-08-31'
+discovered_at: '2026-08-31T12:11:09Z'
+updated_at: '2026-08-31T12:11:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-31T12:11:09Z'
+analysis_priority: 100
+fingerprint: sha256:810c8427e48e40f6e7dd456155f41a19b60aee29535a20966937be27897c4653
+data_source: dou
+content_source: dou
+company_content_source: dou
