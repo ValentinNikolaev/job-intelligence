@@ -1,0 +1,27 @@
+score: 78
+recommendation: match
+summary: Strong backend and platform overlap through Go, APIs, microservices, AWS,
+  Kubernetes, CI/CD, and production reliability, with identity-specific experience
+  not evidenced.
+strengths:
+- Fifteen-plus years of backend engineering and system design are directly relevant
+  to a senior software-engineering role.
+- Go, APIs, microservices, AWS, Kubernetes, observability, and resilient production
+  systems are documented in the candidate profile.
+- The candidate has experience with security-sensitive GDPR and PCI DSS work and cross-functional
+  technical delivery.
+gaps:
+- Authentication and identity-management implementation is not specifically demonstrated
+  in the candidate profile.
+- The profile does not evidence the role's exact identity protocols, libraries, or
+  provider stack.
+concerns:
+- The posting's remote and timezone arrangements are not established in the sealed
+  vacancy evidence.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-31T21:14:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:40b313819e3c14935ae049dcd42543fd86b0b551ee41091af6739314eb837d6b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

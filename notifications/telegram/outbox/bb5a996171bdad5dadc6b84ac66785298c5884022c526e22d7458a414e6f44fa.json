@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-08-31T21:14:40Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ZFORT Group",
+      "directory": "2026-08-31_210214_zfort-group_software-engineer-authentication-identity-manage",
+      "score": 78,
+      "title": "Software Engineer вЂ” Authentication & Identity Management",
+      "url": "https://jobs.dou.ua/companies/zfort/vacancies/371259/",
+      "vacancy_id": "435d2565-18fb-4d00-9c55-d44f989186e6"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "bb5a996171bdad5dadc6b84ac66785298c5884022c526e22d7458a414e6f44fa",
+  "schema_version": 1
+}

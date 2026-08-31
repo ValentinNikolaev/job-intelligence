@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '370361'
+source_url: https://jobs.dou.ua/companies/zade-agency/vacancies/370361/
+title: Full-Stack Software Engineer
+company: Zade Space
+location: за кордоном, віддалено
+published_at: '2026-08-19'
+rejection_category: stale
+rejection_reason: published_at 2026-08-19 is older than 7 days
+updated_at: '2026-08-31T21:02:14Z'
+rejected_at: '2026-08-31T21:02:14Z'

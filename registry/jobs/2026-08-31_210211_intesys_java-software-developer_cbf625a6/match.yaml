@@ -1,0 +1,25 @@
+score: 35
+recommendation: weak_match
+summary: Senior engineering maturity and API or microservice experience transfer,
+  but the frontend-labeled Java role centers on Java and Spring-oriented enterprise
+  development that is not evidenced.
+strengths:
+- Senior backend engineering, API architecture, microservices, Agile delivery, and
+  collaboration are well supported.
+- The candidate has experience integrating services and delivering production systems
+  for complex business domains.
+gaps:
+- Java, Spring Boot, JHipster, and Liferay experience are not evidenced in the candidate
+  profile.
+- Frontend development and the role's specific enterprise application stack are not
+  demonstrated.
+concerns:
+- The vacancy evidence does not clearly establish remote eligibility for a role associated
+  with Verona.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-31T21:14:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:3d63f07f3593fdb3765fbb462b8bb0e614b34123e2583ff4c44cf607167aac22
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

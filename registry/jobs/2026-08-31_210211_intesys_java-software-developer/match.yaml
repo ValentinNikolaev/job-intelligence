@@ -1,0 +1,24 @@
+score: 25
+recommendation: weak_match
+summary: General engineering experience and a relevant software-development seniority
+  level are present, but this mobile role requires Java, Kotlin, or Swift and mobile-platform
+  experience absent from the profile.
+strengths:
+- Extensive software engineering, API integration, testing, and production delivery
+  experience is documented.
+- The candidate has worked across consumer and business-facing systems and collaborates
+  effectively with product and engineering teams.
+gaps:
+- Mobile application development, Java, Kotlin, Swift, mobile UX patterns, and beta
+  testing are not evidenced.
+- The candidate's documented core is backend Go and PHP rather than mobile engineering.
+concerns:
+- The vacancy evidence does not clearly establish remote eligibility or a location
+  arrangement compatible with the candidate.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-31T21:14:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f9217e142c142dfac9d73909a8c346050c212aa3f482279e159bca54acd7af00
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

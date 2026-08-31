@@ -1,0 +1,33 @@
+schema_version: 2
+id: 435d2565-18fb-4d00-9c55-d44f989186e6
+title: Software Engineer — Authentication & Identity Management
+company: ZFORT Group
+company_url: https://jobs.dou.ua/companies/zfort/vacancies/
+location: Харків, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371259'
+  url: https://jobs.dou.ua/companies/zfort/vacancies/371259/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 28 серпня
+    listing_summary: We are looking for Software Engineer — Authentication & Identity
+      Management to join our team.
+published_at: '2026-08-28'
+discovered_at: '2026-08-31T21:02:14Z'
+updated_at: '2026-08-31T21:02:14Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-08-31T21:02:14Z'
+analysis_priority: 100
+fingerprint: sha256:70192dcf16808f642f19601d2e868c1559af131cffbe9c98c8f29e211c71db09
+data_source: dou
+content_source: dou
+company_content_source: dou
