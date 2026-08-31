@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 88
+Total vacancies: 89
 
-- Found: 69
+- Found: 70
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,7 @@ Total vacancies: 88
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-31 | [Gameinspire](../registry/jobs/2026-08-31_170421_gameinspire_senior-golang-engineer/) | [Senior Golang Engineer](../registry/jobs/2026-08-31_170421_gameinspire_senior-golang-engineer/job.md) | віддалено | Dou | Found | 2026-08-31 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/371543/) | [Open](../registry/jobs/2026-08-31_170421_gameinspire_senior-golang-engineer/company.md) | — | — | — | — |
 | 2026-08-31 | [ShippyPro](../registry/jobs/2026-08-31_131008_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-31_131008_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-31 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-08-31 | [Intesys](../registry/jobs/2026-08-31_131008_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-08-31_131008_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-08-31 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-08-31 | [Chainguard](../registry/jobs/2026-08-31_121119_chainguard_senior-software-engineer-ai-cicd/) | [Senior Software Engineer (AI CICD)](../registry/jobs/2026-08-31_121119_chainguard_senior-software-engineer-ai-cicd/job.md) | Europe,  UK,  USA | Jobicy | Found | 2026-08-31 | [Jobicy](https://jobicy.com/jobs/149855-senior-software-engineer-ai-cicd) | — | — | — | — | — |
