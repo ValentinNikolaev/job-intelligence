@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152044'
+source_url: https://jobicy.com/jobs/152044-engineering-manager-5
+title: Engineering Manager
+company: Enode
+location: Europe
+published_at: '2026-08-29T16:33:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-08-31T13:10:19Z'
+rejected_at: '2026-08-31T13:10:19Z'

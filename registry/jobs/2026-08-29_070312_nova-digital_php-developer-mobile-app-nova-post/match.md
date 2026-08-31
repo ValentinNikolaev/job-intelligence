@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Very strong PHP backend fit with REST APIs, databases, integrations, and senior delivery experience; the posting text is partially corrupted and exact product expectations remain uncertain.
+Excellent PHP backend fit for a high-load mobile product, with strong API, integrations, scalability, reliability, and complex business-logic experience.
 
 ## Why it matches
 
-- Extensive PHP backend experience including Laravel and Symfony systems.
-- Supported REST API, database, integration, testing, and production troubleshooting experience.
-- Seniority and backend ownership align well with the role.
+- Deep PHP backend experience and meaningful Laravel/Symfony background.
+- Proven work on high-volume systems, APIs, external integrations, and performance optimization.
+- Remote setting and large-scale product engineering align well with the candidate profile.
 
 ## Gaps
 
-- Some vacancy requirements cannot be reliably read because the source text is corrupted.
+- Direct mobile-application backend ownership for a parcel-delivery product is not explicitly evidenced.
 
 ## Concerns
 
-- The posting appears Ukraine-focused, while the candidate is based in Italy; remote or relocation terms are not clear.
+- Ukrainian-language requirements, if any beyond the supplied text, are not fully specified.

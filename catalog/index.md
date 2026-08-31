@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 86
+Total vacancies: 88
 
-- Found: 67
+- Found: 69
 - Applied: 16
 - Interview: 1
 - Rejected: 2
@@ -13,6 +13,8 @@ Total vacancies: 86
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-08-31 | [ShippyPro](../registry/jobs/2026-08-31_131008_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-08-31_131008_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-08-31 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-08-31 | [Intesys](../registry/jobs/2026-08-31_131008_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-08-31_131008_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-08-31 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-08-31 | [Chainguard](../registry/jobs/2026-08-31_121119_chainguard_senior-software-engineer-ai-cicd/) | [Senior Software Engineer (AI CICD)](../registry/jobs/2026-08-31_121119_chainguard_senior-software-engineer-ai-cicd/job.md) | Europe,  UK,  USA | Jobicy | Found | 2026-08-31 | [Jobicy](https://jobicy.com/jobs/149855-senior-software-engineer-ai-cicd) | — | — | — | — | — |
 | 2026-08-31 | [iPOST](../registry/jobs/2026-08-31_121109_ipost_senior-php-yii2-developer/) | [Senior PHP Yii2 Developer](../registry/jobs/2026-08-31_121109_ipost_senior-php-yii2-developer/job.md) | Київ, віддалено | Dou | Found | 2026-08-31 | [Dou](https://jobs.dou.ua/companies/ipost/vacancies/186031/?from=list_hot) | [Open](../registry/jobs/2026-08-31_121109_ipost_senior-php-yii2-developer/company.md) | — | — | — | — |
 | 2026-08-31 | [Sonatus](../registry/jobs/2026-08-31_061500_sonatus_senior-ai-engineer/) | [Senior AI Engineer](../registry/jobs/2026-08-31_061500_sonatus_senior-ai-engineer/job.md) | Poland | Jobicy | Found | 2026-08-31 | [Jobicy](https://jobicy.com/jobs/151536-senior-ai-engineer-7) | — | — | — | — | — |
