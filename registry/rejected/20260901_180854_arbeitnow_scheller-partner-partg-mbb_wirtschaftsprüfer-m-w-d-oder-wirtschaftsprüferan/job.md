@@ -69,4 +69,4 @@ Ein erfolgreiches Team braucht die richtige Basis – ein positives Arbeitsklima
 
 Bringen Sie Ihre Stärken ein und gestalten Sie gemeinsam mit uns die Zukunft von Scheller & Partner. Zusammen erreichen wir mehr – für unsere Mandanten, unser Team und Ihre Karriere.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

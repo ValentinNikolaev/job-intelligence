@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '370356'
+source_url: https://jobs.dou.ua/companies/king-group/vacancies/370356/
+title: Middle PHP developer
+company: King Group
+location: Київ, віддалено
+published_at: '2026-08-19'
+rejection_category: stale
+rejection_reason: published_at 2026-08-19 is older than 7 days
+updated_at: '2026-09-01T19:03:34Z'
+rejected_at: '2026-09-01T19:03:34Z'

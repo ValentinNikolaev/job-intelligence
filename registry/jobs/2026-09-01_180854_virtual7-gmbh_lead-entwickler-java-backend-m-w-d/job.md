@@ -153,4 +153,4 @@ Anna-Lena, Alicja, Jörg und Svenja
 Alicja Okuniewicz, Anna-Lena Röcker und Jörg Becker
 +49 721 619017 31
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

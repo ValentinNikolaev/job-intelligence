@@ -1,0 +1,12 @@
+schema_version: 1
+source: custom
+source_job_id: url-sha256:a099b6bbc61f13ed3533196c1b1d4f19470c0dd9f91d7d7a92b4fa9aba5307fa
+source_url: https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/java-software-developer/
+title: Java Software Developer a Verona, tempo indeterminato
+company: Intesys
+location: null
+published_at: null
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-09-01T19:03:31Z'
+rejected_at: '2026-09-01T19:03:31Z'

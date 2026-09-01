@@ -1,0 +1,28 @@
+schema_version: 2
+id: a4287440-4cbe-4c54-aea4-08fbf20689d6
+title: Java Software Developer
+company: Intesys
+company_url: https://www.intesys.it
+location: null
+remote: null
+employment_type: null
+sources:
+- source: custom
+  source_job_id: url-sha256:a7c00120cf05f10ba29fe04ee0d671e014acea67a515130ea9a39b9dca897024
+  url: https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/
+  metadata:
+    source_name: intesys
+    board_url: https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18
+    source_type: custom HTML
+published_at: null
+discovered_at: '2026-09-01T19:03:31Z'
+updated_at: '2026-09-01T19:03:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-01T19:03:31Z'
+analysis_priority: 100
+fingerprint: sha256:46e9e59bdbb3b90ad09c42b56ff3b58ebc567dff8b8d7034c123aa8582d4ede0
+data_source: custom
+content_source: custom
+company_content_source: null

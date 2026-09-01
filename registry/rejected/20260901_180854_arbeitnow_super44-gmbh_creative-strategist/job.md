@@ -63,4 +63,4 @@ An ambitious, high-intensity, in-person environment in Bonn with a team that tak
 
 To apply, send us three pieces of work you are proud of. For each, explain your personal contribution, why you made it that way and what happened after it went live. Then tell us about an independent hospitality business you love and the first Super44 story you would create there.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

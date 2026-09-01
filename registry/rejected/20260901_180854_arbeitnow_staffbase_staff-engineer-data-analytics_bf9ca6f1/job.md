@@ -88,4 +88,4 @@ As a Staff Engineer in our Data & Analytics team, you will drive the technical d
 
 ### ****
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

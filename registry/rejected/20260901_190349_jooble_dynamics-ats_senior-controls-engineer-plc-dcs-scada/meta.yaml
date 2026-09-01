@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1193183957279588642'
+source_url: https://jooble.org/desc/1193183957279588642?ckey=senior+backend+engineer&rgn=55179&pos=8&groupId=293749696&elckey=3781163502473551832&p=1&aq=7443707773808100116&cid=15922&jobAge=157&brelb=100&bscr=10.281977&scr=10.281977
+title: Senior Controls Engineer - PLC/DCS/SCADA
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-08-26T14:36:42.9370000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-01T19:03:49Z'
+rejected_at: '2026-09-01T19:03:49Z'

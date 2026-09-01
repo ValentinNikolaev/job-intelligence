@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-all-genders-data-engineering-frankfurt-am-main-461251
+source_url: https://www.arbeitnow.com/jobs/companies/supreme-sports-hospitality-gmbh/werkstudent-all-genders-data-engineering-frankfurt-am-main-461251
+title: Werkstudent (all genders) Data Engineering
+company: Supreme Sports Hospitality GmbH
+location: Frankfurt am Main, Hessen, Deutschland
+published_at: '2026-09-01T17:30:12Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-01T19:03:22Z'
+rejected_at: '2026-09-01T19:03:22Z'

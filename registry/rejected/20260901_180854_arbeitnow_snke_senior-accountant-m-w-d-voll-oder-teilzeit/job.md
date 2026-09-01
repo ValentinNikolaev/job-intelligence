@@ -48,4 +48,4 @@ Als **Senior Accountant** übernimmst du eine verantwortungsvolle Rolle im opera
 
 Tatjana von Freyberg
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

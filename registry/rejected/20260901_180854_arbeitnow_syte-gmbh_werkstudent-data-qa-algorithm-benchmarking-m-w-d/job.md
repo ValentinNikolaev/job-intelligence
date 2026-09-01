@@ -66,4 +66,4 @@ Dein persönliches Benefit-Budget: 2.200,00 € jährlich für das, was dir wich
 - **Gesundheit** **&** **Wellbeing**: Dein Budget kannst du zudem für alles einsetzen, was Körper und Geist guttut, so z. B. für eine Urban Sports Club Mitgliedschaft, Physiotherapie, Urlaubsreisen etc.
 - **BusinessBike**: Durch unsere Zusammenarbeit mit BusinessBike kannst du ganz einfach dein Wunschrad leasen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
