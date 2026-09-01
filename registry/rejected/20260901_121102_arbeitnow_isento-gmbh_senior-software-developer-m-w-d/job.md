@@ -71,4 +71,4 @@ Wir isentos verstehen uns als Team. Uns ist es wichtig, dass wir uns jederzeit a
 
 Klingt gut? Dann werde als Senior Software Developer (m/w/d) Teil unseres Teams.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -63,4 +63,4 @@ Unser Mandant ist ein internationaler Anbieter für Haushaltsgeräte mit einer b
 
 Wir freuen uns auf Ihre Bewerbung, wenn Sie sich für diese Position interessieren!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

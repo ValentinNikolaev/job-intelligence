@@ -105,4 +105,4 @@ Dann komm zu uns nach Offenburg und bring deine Bauphysik-Kompetenz auf das näc
 
 bei uns telefonisch unter 0781 6390993-0.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

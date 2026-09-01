@@ -31,4 +31,4 @@ Als internationaler Pionier im Cost Engineering betreut costdata mit der weltwei
 
 - Offene, kommunikationsstarke und engagierte Persönlichkeit, die gerne im Team arbeitet
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

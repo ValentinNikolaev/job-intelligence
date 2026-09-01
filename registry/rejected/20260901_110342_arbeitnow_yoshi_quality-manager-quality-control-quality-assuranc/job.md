@@ -98,4 +98,4 @@ Business-fluent **English and German**, other languages are always a plus.
 - Enjoy unlimited premium organic teas and regular tea tastings as part of everyday office life.
 - We love bringing people together! From tea ceremonies and office gatherings to summer and Christmas parties, product launches and exclusive influencer events, there are plenty of opportunities to celebrate and connect as a team.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

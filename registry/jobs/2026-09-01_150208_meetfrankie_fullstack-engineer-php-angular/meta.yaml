@@ -1,0 +1,35 @@
+schema_version: 2
+id: cc6fa3fd-7595-48fc-b9ba-5be64daca8db
+title: fullstack engineer (php + angular)
+company: meetFrankie
+company_url: https://jobs.dou.ua/companies/meetfrankie/vacancies/
+location: Лісабон (Португалія), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '367585'
+  url: https://jobs.dou.ua/companies/meetfrankie/vacancies/367585/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 1 вересня
+    listing_summary: about the company attekmi is a white-label adtech infrastructure
+      provider for companies building or looking to expand and gain greater control
+      over their programmatic monetization operations, including ad networks, ssp,
+      and media trading businesses.
+published_at: '2026-09-01'
+discovered_at: '2026-09-01T15:02:08Z'
+updated_at: '2026-09-01T15:02:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-01T15:02:08Z'
+analysis_priority: 100
+fingerprint: sha256:149de3b4368b3d21a9144d4d4841f15ad0ffc59feda6fc1f67e00c7bb4d0b12a
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -60,4 +60,4 @@ Deine Ansprechperson für diese Stelle ist:
 Wenn du vorab Fragen hast, kannst du uns natürlich auch jederzeit gerne kontaktieren.
 Wir freuen uns auf deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

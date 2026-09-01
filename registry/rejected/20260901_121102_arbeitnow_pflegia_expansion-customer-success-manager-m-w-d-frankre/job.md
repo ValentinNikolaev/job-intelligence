@@ -73,4 +73,4 @@ Wir sind ein wachsendes Unternehmen mit Hauptsitz in Berlin, das auf Eigenverant
 
 Bring Deinen Drive ein, baue echten Social Impact auf und gestalte unseren Markteintritt in Frankreich von Berlin aus aktiv mit.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

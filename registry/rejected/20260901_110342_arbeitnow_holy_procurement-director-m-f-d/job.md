@@ -118,4 +118,4 @@ Typically, this process takes around **2–3 weeks**.
 
 **Any questions or concerns?**
 
-If you have any questions or feedback, please send an email to Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+If you have any questions or feedback, please send an email to Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -77,4 +77,4 @@ Instagram: [https://www.instagram.com/createch.engineering/](https://www.instagr
 
 LinkedIn: [https://www.linkedin.com/company/createch-engineering/](https://www.linkedin.com/company/createch-engineering/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: Strong PHP/Laravel backend and technical-lead fit for an ownership-oriented
+  full-stack role, with an Angular and TypeScript gap.
+strengths:
+- Extensive PHP and Laravel backend experience
+- Technical leadership and reliability ownership
+- Historical AngularJS and strong API/database background
+gaps:
+- Current Angular and TypeScript not clearly established
+- Redis and ClickHouse not established
+concerns:
+- Work location and remote eligibility are not stated
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-01T15:58:12Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7115defee42c0c543a4d8ee07b01cc5bf28dc642725fb2f1f3eaa82370ede4a2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

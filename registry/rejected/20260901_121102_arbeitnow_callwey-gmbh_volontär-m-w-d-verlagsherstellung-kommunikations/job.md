@@ -59,4 +59,4 @@ Das Volontariat wird mit 2.088,00 EUR/Monat vergütet.
 
 Haben wir Dein Interesse geweckt? Dann freuen wir uns auf Deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -1,0 +1,20 @@
+score: 72
+recommendation: match
+summary: Strong PHP/Symfony backend, integrations, databases, queues, scalability,
+  and reliability fit, tempered by German and onsite uncertainty.
+strengths:
+- Extensive PHP Symfony and service experience
+- RabbitMQ MySQL PostgreSQL and performance work
+- E-commerce and payment domain transfer
+gaps:
+- German proficiency and Sulu CMS are not established
+concerns:
+- Konstanz location and remote or relocation conditions are unclear for an Italy-based
+  candidate
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-01T15:58:12Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0f338f107d84107810784c66d20940bff062e58d7d2366ce124fb807caeb4dec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

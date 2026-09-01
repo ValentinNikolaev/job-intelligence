@@ -137,4 +137,4 @@ Sende uns Deine Bewerbungsunterlagen mit Lebenslauf, relevanten Zeugnissen, Geha
 
 **Deine Ansprechpartnerin:** Jennifer Özkan
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -1,0 +1,19 @@
+score: 52
+recommendation: possible_match
+summary: Strong architecture, APIs, microservices, PHP, and client collaboration fit,
+  tempered by Spring Boot and Java enterprise gaps.
+strengths:
+- PHP backend API microservices and architecture
+- Technical leadership and stakeholder work
+- Some AngularJS adjacency
+gaps:
+- Spring Boot JHipster Liferay React and modern Angular not established
+concerns:
+- Remote terms and precise project assignment are not stated
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-01T15:58:12Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8b0d5319125ce170bd19b4defce8e75636946ae9007562f27ff5b75d6d817f0a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -109,4 +109,4 @@ Wir freuen uns auf Deine Bewerbung!**
 Verwandte Suchbegriffe**
 Digitalisierung, Automatisierung, KI, Prozessoptimierung, IT-Projektmanagement
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
