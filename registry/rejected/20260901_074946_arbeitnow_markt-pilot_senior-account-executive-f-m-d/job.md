@@ -75,4 +75,4 @@ Du verstehst die Herausforderungen unserer Kunden, positionierst unsere Lösung 
 
 „Kununu“ hat uns das 5. Jahr in Folge als Top-5%-Company ausgezeichnet! Überzeuge auch Du Dich von unseren Values und bring Deine Karriere auf das nächste Level 🚀
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

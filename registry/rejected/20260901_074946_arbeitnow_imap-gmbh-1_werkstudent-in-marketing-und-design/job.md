@@ -46,4 +46,4 @@ Wir freuen uns auf Deine Bewerbung inklusive:
 - Arbeitsproben (z. B. Designs, Portfolio oder andere kreative Arbeiten)
 - Arbeitszeugnisse und relevante Nachweise aus bisherigen Tätigkeiten
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

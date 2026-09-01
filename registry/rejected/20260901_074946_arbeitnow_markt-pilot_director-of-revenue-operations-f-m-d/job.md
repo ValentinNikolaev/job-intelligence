@@ -77,4 +77,4 @@ This role will report to our CO-CEO.
 
 Awarded as a Top-5%-Employer for the 5th time in a row. Fly with us @MARKT-PILOT! 🚀
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

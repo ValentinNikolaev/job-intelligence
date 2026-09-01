@@ -224,4 +224,4 @@ InMobi is proud to be an Equal Employment Opportunity employer and is committed 
 
 Visit [https://www.inmobi.com/company/careers](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.inmobi.com%2Fcompany%2Fcareers&data=05%7C02%7Crichard.thomas%40inmobi.com%7Ce97eb886aa4d4c8e919608dc52d1cc2f%7C89359cf49e60409980c4775a0cfe27a7%7C0%7C0%7C638476308219536812%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=FOJ4DKK6f1jjlteD9SlK%2FdMDUaZzdYsCFSU%2BX%2BvuCAo%3D&reserved=0) to better understand our benefits, values, and more!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

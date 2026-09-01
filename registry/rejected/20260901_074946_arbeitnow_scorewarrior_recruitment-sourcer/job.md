@@ -117,4 +117,4 @@ Compensation: €2K – €2.4K per month
 
 - • Gross €2K – €2.4K per month
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

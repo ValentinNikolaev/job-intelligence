@@ -199,4 +199,4 @@ Personal training budget & LinkedIn Learning subscription
 
 We know Diversity and Inclusion is much deeper than just hiring, but it's important for us to mention it here. We welcome and embrace individuals of all backgrounds and identities at Elliptic, and this is an ongoing priority for us. We know incredible people don't all think in the same way. We want to be challenged every day. We believe our diverse team of individuals underpins this by bringing creative thinking and innovation to Elliptic every day. We are committed to creating a diverse, inclusive and equitable workplace, so we welcome applications from everyone, even if you may not think you fit all of the requirements of our roles. We foster an environment of psychological safety, where everyone feels comfortable to bring their whole self to work.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

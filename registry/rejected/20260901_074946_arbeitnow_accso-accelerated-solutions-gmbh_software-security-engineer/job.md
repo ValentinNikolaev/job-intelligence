@@ -103,4 +103,4 @@ Talent Manager
 Mobil: +49 1514 0230948
 Email:
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

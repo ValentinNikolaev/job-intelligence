@@ -70,4 +70,4 @@ The ideal candidate for the role will be local to the German area and have the f
 
 Abnormal AI is an equal opportunity employer. Qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability, protected veteran status or other characteristics protected by law. For our EEO policy statement please [*click here*](https://assets.contentstack.io/v3/assets/blt3a076cfd9753fa1f/blt9cbda641db7c0045/6a1e3d3a66aea075cd33e462/AAP_and_EEO_Statement.pdf). If you would like more information on your EEO rights under the law, please *[click here](https://assets.contentstack.io/v3/assets/blt3a076cfd9753fa1f/blt4eb3a265cc7b1ca9/6a1e3d3bfe33e73c16ff026b/EEOC_Know_Your_Rights_Oct_30_2025.pdf)*.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

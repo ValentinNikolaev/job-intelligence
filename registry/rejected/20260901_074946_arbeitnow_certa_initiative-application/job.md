@@ -75,4 +75,4 @@ Don't see a role that fits? Apply here anyway. We grow fast, and new openings ap
 
 We're excited to meet you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

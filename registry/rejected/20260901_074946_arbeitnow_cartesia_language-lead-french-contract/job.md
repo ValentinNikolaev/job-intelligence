@@ -175,4 +175,4 @@ Compensation: $25 – $35 per hour
 
 - • $25 – $35 per hour
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
