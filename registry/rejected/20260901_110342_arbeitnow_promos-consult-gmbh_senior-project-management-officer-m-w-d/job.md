@@ -45,4 +45,4 @@ Posted: 2026-09-01T08:09:46Z
 Wir freuen uns auf dich und deine Bewerbung!
 Dein Promos Recruiting Team
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

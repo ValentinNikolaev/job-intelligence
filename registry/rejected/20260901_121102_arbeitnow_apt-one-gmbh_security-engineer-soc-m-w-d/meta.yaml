@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: security-engineer-soc-berlin-145924
+source_url: https://www.arbeitnow.com/jobs/companies/apt-one-gmbh/security-engineer-soc-berlin-145924
+title: Security Engineer (SOC) (m/w/d)
+company: APT-ONE GmbH
+location: Berlin
+published_at: '2026-09-01T10:00:58Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-01T12:11:02Z'
+rejected_at: '2026-09-01T12:11:02Z'

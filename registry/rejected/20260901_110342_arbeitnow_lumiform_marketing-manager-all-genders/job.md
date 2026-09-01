@@ -109,4 +109,4 @@ If this sounds like you, let's talk. A CV or LinkedIn profile is enough.
 
 - We ask you for 2 references and will conduct reference calls (as a final step)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

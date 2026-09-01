@@ -1,0 +1,34 @@
+schema_version: 2
+id: f4fa5b0a-7b0c-43eb-b177-48d33b51a231
+title: Golang Backend Engineer (Middle+/Senior)
+company: bART Solutions
+company_url: https://jobs.dou.ua/companies/bart-solutions/vacancies/
+location: Львів, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371671'
+  url: https://jobs.dou.ua/companies/bart-solutions/vacancies/371671/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 1 вересня
+    listing_summary: We are looking for a Go Backend Engineer (Middle Strong/Senior)
+      who enjoys building reliable, scalable backend systems and taking ownership
+      of services throughout their entire lifecycle.
+published_at: '2026-09-01'
+discovered_at: '2026-09-01T12:11:10Z'
+updated_at: '2026-09-01T12:11:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-01T12:11:10Z'
+analysis_priority: 100
+fingerprint: sha256:640cce5a6c2b308ca8cac0fd35d47a49a1696c7bdb8838bc0d59ff88c4336b36
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -87,4 +87,4 @@ Genieße flexible, hybride Arbeitszeiten mit der Möglichkeit Remote oder in uns
 
 Erhalte einen Kopfhörer deiner Wahl und eine Urban Sports-Mitgliedschaft.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

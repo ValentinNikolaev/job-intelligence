@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2420090184205074641'
+source_url: https://jooble.org/away/-2420090184205074641?p=1&pos=1&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=654&brelb=15&scr=69.43498&bscr=69.43498&aq=-6461259792041456340&elckey=-4848212398391413409
+title: Senior Software Engineer - Wikidata Platform
+company: Wikimedia Foundation
+location: Italian Republic
+published_at: '2026-08-05T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-05T00:00:00.0000000 is older than 7 days
+updated_at: '2026-09-01T12:11:21Z'
+rejected_at: '2026-09-01T12:11:21Z'

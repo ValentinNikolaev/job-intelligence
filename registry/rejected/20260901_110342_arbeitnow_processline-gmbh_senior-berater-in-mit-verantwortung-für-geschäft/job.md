@@ -143,4 +143,4 @@ Die Vollständigkeit Deiner Bewerbung ist für uns ein Qualitätsmerkmal. Es kö
 
 Bitte beachte, dass Du mit Deiner Bewerbung unseren Datenschutzbestimmungen zustimmst.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

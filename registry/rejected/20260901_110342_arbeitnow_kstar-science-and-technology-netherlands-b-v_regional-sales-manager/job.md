@@ -33,4 +33,4 @@ Backed by 30 years of experience in electrical and electronic technology, Kstar 
 
 - Strong negotiation, communication, analytical skills, and good professional ethics
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

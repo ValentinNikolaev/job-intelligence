@@ -63,4 +63,4 @@ Die Position verbindet strategische, organisatorische, finanzielle und persönli
 
 Wir freuen uns auf Ihre Bewerbung und sichern Ihnen selbstverständlich höchste Diskretion und Vertraulichkeit zu.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

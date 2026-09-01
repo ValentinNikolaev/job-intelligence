@@ -49,4 +49,4 @@ Du sprichst direkt mit unseren Kund:innen, kitzelt die spannenden Details hinter
 
 **Du erkennst dich nicht in jedem einzelnen Punkt wieder? Bewirb dich trotzdem!** Studien zeigen, dass sich insbesondere Frauen und unterrepräsentierte Gruppen oft nur dann bewerben, wenn sie 100 % der Anforderungen erfüllen. Bei uns zählt nicht der perfekte Lebenslauf, sondern deine Persönlichkeit und dein Wille, gemeinsam mit uns zu wachsen. Wir freuen uns auf dich.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

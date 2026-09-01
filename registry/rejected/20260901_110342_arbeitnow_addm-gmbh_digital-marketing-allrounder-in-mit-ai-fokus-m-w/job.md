@@ -65,4 +65,4 @@ In deiner Rolle bist du die Schnittstelle zwischen Idee und fertigem Ergebnis. D
 
 Wenn du Lust hast, in einem kreativen Umfeld mit den Tools zu arbeiten, die gerade alles verändern, dann freuen wir uns sehr auf deine Bewerbung. Bei uns zählt nicht nur, was im Lebenslauf steht – sondern vor allem, was du damit gebaut hast. Zeig uns gern ein Projekt, eine Landingpage oder ein Tool, auf das du stolz bist.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
