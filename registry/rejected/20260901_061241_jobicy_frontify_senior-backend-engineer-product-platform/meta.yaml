@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151394'
+source_url: https://jobicy.com/jobs/151394-senior-backend-engineer-product-platform
+title: Senior Backend Engineer - Product Platform
+company: Frontify
+location: Europe,  Switzerland
+published_at: '2026-08-22T12:23:31Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-22T12:23:31Z is older than 7 days
+updated_at: '2026-09-01T06:12:41Z'
+rejected_at: '2026-09-01T06:12:41Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152042'
+source_url: https://jobicy.com/jobs/152042-net-software-architect
+title: .NET Software Architect
+company: Zartis
+location: Europe
+published_at: '2026-08-29T16:33:25Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-01T06:12:41Z'
+rejected_at: '2026-09-01T06:12:41Z'
