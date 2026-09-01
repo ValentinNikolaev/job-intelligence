@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '370935'
+source_url: https://jobs.dou.ua/companies/yozma-tech/vacancies/370935/
+title: Full-Stack Developer (Go + React)
+company: YozmaTech
+location: віддалено
+published_at: '2026-08-25'
+rejection_category: stale
+rejection_reason: published_at 2026-08-25 is older than 7 days
+updated_at: '2026-09-01T00:21:09Z'
+rejected_at: '2026-09-01T00:21:09Z'
