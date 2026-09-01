@@ -1,28 +1,25 @@
 score: 12
 recommendation: not_match
-summary: Explicit Germany-only remote eligibility is incompatible with the candidate's
-  stated location in Italy; the role also requires extensive Java/J2EE and Oracle
-  ecosystem experience not demonstrated in the profile.
+summary: Technical leadership, Kubernetes, CI/CD, security assessment, and backend
+  architecture are relevant, but the role requires Germany-only remote work and a
+  deeply Java/J2EE/Oracle stack not evidenced in the profile.
 strengths:
-- Demonstrated technical leadership, architecture, Kubernetes, CI/CD, and container-platform
-  experience.
-- Demonstrated Go backend and secure, production-reliability experience.
+- Technical leadership, architecture, Kubernetes, CI/CD, and production troubleshooting
+  are demonstrated.
+- The profile includes security assessments and compliance work.
 gaps:
-- No demonstrated multi-year Java backend, J2EE/EJB, Spring, Hibernate/JPA, Oracle,
-  or WebLogic/Payara experience.
-- No demonstrated Kafka, Quarkus, Tekton, Nexus, Pact, Karate/Cucumber, or XML/WebComponents
-  experience.
+- No demonstrated Java/J2EE, EJB, Spring, Hibernate/JPA, Oracle, or specified testing
+  stack.
+- No demonstrated Germany residence or ability to satisfy Germany-only remote eligibility
+  and SÜ2 requirements.
 concerns:
-- The project is explicitly 90% remote but only in Germany; the profile states Fiumicino,
-  Italy and gives no Germany residence or relocation evidence.
-- German-language capability and eligibility for the required SÜ2 security clearance
-  are not established.
+- Germany-only remote eligibility is incompatible with the candidate profile identifying
+  Italy as the location.
 hard_rejection: true
 hard_rejection_reason: The vacancy explicitly permits remote work only from Germany,
-  while the candidate profile places the candidate in Italy and provides no evidence
-  of German work location or relocation.
-analyzed_at: '2026-09-01T19:00:36Z'
+  while the candidate profile places him in Italy.
+analyzed_at: '2026-09-01T19:58:55Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:324c3d092f6c81788fb1455c05c31c280507d928ee59408fab54e0f03a4e59b5
+job_version: sha256:7bc61ea13138a627f55a87becbf0cefd230c782429212096ddd9fe63aa34f024
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
