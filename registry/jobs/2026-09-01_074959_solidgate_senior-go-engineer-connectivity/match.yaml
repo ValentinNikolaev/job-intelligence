@@ -1,0 +1,28 @@
+score: 88
+recommendation: strong_match
+summary: Strong fit for a senior Go backend role building reliable, scalable, user-facing
+  payment connectivity services, with relevant Go, AWS, SQL, distributed-systems,
+  high-load, observability, and fintech payment experience.
+strengths:
+- Recent hands-on ownership of a robust Go backend and API orchestration platform.
+- Demonstrated AWS, SQL, event-driven, distributed, scalable, and resilient production
+  systems experience.
+- Direct fintech-related experience with payment gateways and high-volume payment
+  infrastructure.
+- Strong evidence of reliability, performance optimization, monitoring, and CI/CD
+  ownership.
+- Relevant communication, collaboration, and technical-lead experience.
+gaps:
+- The profile does not explicitly document five full years of Go as a primary language.
+- Terraform, Grafana, SQS, Kafka, and e-commerce SDK or Payment Form-specific experience
+  are not explicitly documented.
+concerns:
+- The vacancy is listed in Kyiv/remote, so eligibility and working-time expectations
+  should be confirmed for a candidate based in Italy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-01T08:52:30Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f3fd419a1a908665cf431c53a7b64c55823b7230d9fc2e398b5c1a813212dae0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
