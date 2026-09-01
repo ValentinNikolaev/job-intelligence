@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152149'
+source_url: https://jobicy.com/jobs/152149-frontend-engineer-music
+title: Frontend Engineer - Music
+company: Spotify
+location: Sweden,  UK
+published_at: '2026-08-31T05:04:22Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-01T07:50:09Z'
+rejected_at: '2026-09-01T07:50:09Z'

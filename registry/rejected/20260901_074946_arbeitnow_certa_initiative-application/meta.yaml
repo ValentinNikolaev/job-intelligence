@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-initiative-application-448178
+source_url: https://www.arbeitnow.com/jobs/companies/certa/remote-initiative-application-448178
+title: Initiative Application
+company: Certa
+location: Remote
+published_at: '2026-09-01T02:40:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-01T07:49:46Z'
+rejected_at: '2026-09-01T07:49:46Z'

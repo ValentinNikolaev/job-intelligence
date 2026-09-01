@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149981'
+source_url: https://jobicy.com/jobs/149981-software-architect-containers-virtualisation
+title: Software Architect - Containers / Virtualisation
+company: Canonical
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-08-01T03:04:04Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-01T03:04:04Z is older than 7 days
+updated_at: '2026-09-01T07:50:09Z'
+rejected_at: '2026-09-01T07:50:09Z'

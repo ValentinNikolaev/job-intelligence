@@ -1,0 +1,13 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/block-labs/jobs/senior-backend-engineer-go-2963248604
+source_url: https://himalayas.app/companies/block-labs/jobs/senior-backend-engineer-go-2963248604
+title: Senior Backend Engineer (Go)
+company: Block Labs
+location: Albania, Bosnia and Herzegovina, Bulgaria, Croatia, Greece, Ireland, Italy,
+  Kosovo, Malta, Montenegro, Portugal, Romania, Serbia, Spain
+published_at: '2026-07-30T05:45:25Z'
+rejection_category: stale
+rejection_reason: published_at 2026-07-30T05:45:25Z is older than 7 days
+updated_at: '2026-09-01T07:50:05Z'
+rejected_at: '2026-09-01T07:50:05Z'
