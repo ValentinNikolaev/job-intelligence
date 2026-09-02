@@ -1,0 +1,90 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-02T16:08:39Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Starlight Media",
+      "directory": "2026-09-02_160450_starlight-media_senior-full-stack-developer-php-go-vue-js",
+      "score": 84,
+      "title": "Senior Full-Stack Developer (PHP / Go / Vue.js)",
+      "url": "https://jobs.dou.ua/companies/starlightmedia/vacancies/371884/",
+      "vacancy_id": "20960637-ed0b-4c6e-a602-f6a9b157eed6"
+    },
+    {
+      "company": "StairwaySoft",
+      "directory": "2026-09-02_160450_stairwaysoft_backend-team-lead-php",
+      "score": 86,
+      "title": "Backend Team Lead (PHP)",
+      "url": "https://jobs.dou.ua/companies/stairwaysoft/vacancies/371871/",
+      "vacancy_id": "ff6f9df2-619d-47ee-95c7-636899fe520f"
+    },
+    {
+      "company": "ConveyThis",
+      "directory": "2026-09-02_121054_conveythis_middle-php-developer",
+      "score": 78,
+      "title": "Middle PHP Developer",
+      "url": "https://jobs.dou.ua/companies/conveythis/vacancies/371816/",
+      "vacancy_id": "33ddad99-4b65-429f-8110-48e0c7705d50"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-09-02_061617_shippypro_software-engineering-team-lead",
+      "score": 80,
+      "title": "Software Engineering Team Lead",
+      "url": "https://shippypro.factorialhr.com/job_posting/software-engineering-team-lead-311256",
+      "vacancy_id": "c9440f60-fa89-4e30-af3a-84cdbd90d0ca"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-09-02_061617_shippypro_senior-software-engineer",
+      "score": 82,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "d7581959-58ec-4d27-adfd-1f03ba624e5e"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-02_121105_canonical_ubuntu-core-software-engineer",
+      "score": 70,
+      "title": "Ubuntu Core Software Engineer",
+      "url": "https://jobicy.com/jobs/149996-ubuntu-core-software-engineer",
+      "vacancy_id": "8a608438-edfe-4c6f-be85-18ff08faab06"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-02_121105_canonical_software-architect-containers-virtualisation",
+      "score": 68,
+      "title": "Software Architect - Containers / Virtualisation",
+      "url": "https://jobicy.com/jobs/149981-software-architect-containers-virtualisation",
+      "vacancy_id": "33fd88ff-5e2d-4ab6-930c-bb829b2c5588"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-02_121105_canonical_golang-engineering-manager-commercial-systems",
+      "score": 82,
+      "title": "Golang Engineering Manager, Commercial Systems",
+      "url": "https://jobicy.com/jobs/149984-golang-engineering-manager-commercial-systems",
+      "vacancy_id": "68265add-14a0-4d8c-b8f0-9054346cf1e8"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-02_121105_canonical_engineering-manager-public-cloud-python-golang",
+      "score": 80,
+      "title": "Engineering Manager - Public Cloud, Python, Golang",
+      "url": "https://jobicy.com/jobs/149985-engineering-manager-public-cloud-python-golang",
+      "vacancy_id": "8dd4bee2-3fbf-4945-96dc-c9aa0a272af7"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-02_121105_canonical_engineering-manager-for-iam-identity-and-access",
+      "score": 74,
+      "title": "Engineering Manager for IAM (Identity and Access Management)",
+      "url": "https://jobicy.com/jobs/149980-engineering-manager-for-iam-identity-and-access-management",
+      "vacancy_id": "259f2670-1501-436c-a7c4-20aa2569e664"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "99c78a194dc5c74372bff276678cbffdd87eef404b223e0a0ae8c17d8c9f79a0",
+  "schema_version": 1
+}

@@ -1,0 +1,35 @@
+schema_version: 2
+id: 20960637-ed0b-4c6e-a602-f6a9b157eed6
+title: Senior Full-Stack Developer (PHP / Go / Vue.js)
+company: Starlight Media
+company_url: https://jobs.dou.ua/companies/starlightmedia/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371884'
+  url: https://jobs.dou.ua/companies/starlightmedia/vacancies/371884/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 2 вересня
+    salary_label: $2000–2500
+    listing_summary: Starlight Media — одна з найбільших медіагруп у Східній Європі,
+      виробник та дистриб’ютор відеоконтенту, улюблених програм і серіалів мільйонів
+      українців, якість та актуальність яких забезпечує нам лідерство.
+published_at: '2026-09-02'
+discovered_at: '2026-09-02T16:04:50Z'
+updated_at: '2026-09-02T16:04:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-02T16:04:50Z'
+analysis_priority: 100
+fingerprint: sha256:2ae52550d674a9e460e65e1b193db2c3968596fee5cb6198e655d8052a60a2ed
+data_source: dou
+content_source: dou
+company_content_source: dou

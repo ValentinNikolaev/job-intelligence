@@ -1,0 +1,33 @@
+schema_version: 2
+id: ff6f9df2-619d-47ee-95c7-636899fe520f
+title: Backend Team Lead (PHP)
+company: StairwaySoft
+company_url: https://jobs.dou.ua/companies/stairwaysoft/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371871'
+  url: https://jobs.dou.ua/companies/stairwaysoft/vacancies/371871/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 2 вересня
+    listing_summary: We are looking for an experienced Backend Team Lead with a strong
+      PHP background to take ownership of a high-load SMS AdTech project.
+published_at: '2026-09-02'
+discovered_at: '2026-09-02T16:04:50Z'
+updated_at: '2026-09-02T16:04:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-02T16:04:50Z'
+analysis_priority: 100
+fingerprint: sha256:b4ed6ba16a0bea62c3e80dc7ad8ad903a0fb08db321ba15d156e89f1b636a048
+data_source: dou
+content_source: dou
+company_content_source: dou

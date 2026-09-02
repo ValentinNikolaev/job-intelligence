@@ -1,0 +1,21 @@
+score: 62
+recommendation: possible_match
+summary: Leadership and cloud engineering are relevant, but Python is not a demonstrated
+  primary language and the commercial-systems domain is unknown.
+strengths:
+- Technical leadership
+- mentoring
+- AWS
+- Kubernetes
+- delivery and architecture
+gaps:
+- Python development experience is not evidenced
+concerns:
+- Managerial scope and Canonical-specific expectations need confirmation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-02T16:08:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:47d2ca8e7a57baf1b889305480656a5015e14cb209318438fb60a556129c86ae
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,21 @@
+score: 68
+recommendation: match
+summary: Architecture, Kubernetes, AWS, microservices, and production ownership align,
+  while low-level virtualization and Ubuntu-specific experience are uncertain.
+strengths:
+- System architecture
+- Kubernetes
+- AWS
+- microservices
+- performance and reliability
+gaps:
+- Containers/virtualisation internals and Ubuntu platform expertise are not demonstrated
+concerns:
+- Role may require deeper low-level Linux specialization
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-02T16:08:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b2a6fc5fd3203d30a809209a2993c05807eb889dfd86215a2c13e68b85669d18
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

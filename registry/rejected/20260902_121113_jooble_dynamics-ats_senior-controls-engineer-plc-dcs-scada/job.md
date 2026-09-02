@@ -4,8 +4,8 @@ Posted: 2026-08-26T14:36:42.9370000
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-26T14:36:42.9370000 is older than 7 days
 
 ...**Senior **Controls **Engineer **- PLC/DCS/SCADA 
 

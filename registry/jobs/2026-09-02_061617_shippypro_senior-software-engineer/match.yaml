@@ -1,0 +1,22 @@
+score: 82
+recommendation: strong_match
+summary: Senior backend experience in Go and PHP, distributed systems, cloud operations,
+  and reliability maps closely to the role.
+strengths:
+- Go and PHP
+- microservices
+- AWS
+- Kubernetes
+- event-driven systems
+- production troubleshooting
+gaps:
+- Specific application stack and domain experience are not established
+concerns:
+- Exact location policy and role emphasis require confirmation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-02T16:08:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:899ced2c35d8db30c656afddd78948b282d452b8fbf2d8c9dc9fc34f9acb51e6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
