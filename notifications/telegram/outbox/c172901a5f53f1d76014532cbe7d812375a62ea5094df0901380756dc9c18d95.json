@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-02T19:08:19Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "solidgate",
+      "directory": "2026-09-02_180852_solidgate_backend-engineer-billing",
+      "score": 82,
+      "title": "Backend Engineer (Billing)",
+      "url": "https://jobs.ashbyhq.com/solidgate/34fee32d-2a5a-4709-b31f-b3b0219dcdc4",
+      "vacancy_id": "9da98823-f0ac-4bd4-bb17-82fa6f5a9e58"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "c172901a5f53f1d76014532cbe7d812375a62ea5094df0901380756dc9c18d95",
+  "schema_version": 1
+}

@@ -1,0 +1,31 @@
+score: 82
+recommendation: strong_match
+summary: Strong fit for a Europe-remote backend role building Go billing APIs and
+  high-load payment infrastructure, with substantial Go and PHP experience, event-driven
+  systems, queues, AWS, testing, and fintech-related payment integrations.
+strengths:
+- Extensive production backend experience in Go and PHP, with Laravel and microservices
+  background.
+- Relevant high-load, event-driven, queue-based, API, reliability, and performance
+  optimization experience.
+- Fintech-related background includes integrations with Stripe, PayPal, and Skrill
+  payment gateways.
+- Candidate is based in Italy and the role explicitly supports remote work across
+  Europe.
+gaps:
+- Candidate profile does not explicitly establish PostgreSQL experience in the recent
+  Backend Engineer CV, though the LinkedIn record does.
+- Candidate profile does not explicitly establish Kafka or end-to-end billing-domain
+  ownership.
+concerns:
+- The role emphasizes precise graduated pricing, invoice retry recovery, and subscription
+  billing, which are not directly evidenced in the profile.
+- English proficiency entries conflict between professional/full professional and
+  upper-intermediate.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-02T19:08:19Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:5544740909bead6f20baf19a4ea430c01520f63328a99266689be3afac0b7ab7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
