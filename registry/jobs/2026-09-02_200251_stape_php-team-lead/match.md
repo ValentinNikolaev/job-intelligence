@@ -1,23 +1,24 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 91/100  
 **Recommendation:** Strong Match
 
-Strong fit for Stape's remote EU PHP Team Lead role, supported by recent PHP and Symfony work, sustained technical-lead experience, high-load backend and database optimization, REST APIs, RabbitMQ, and production reliability work. The candidate's location and the stated remote EU format align.
+Strong fit for a remote EU PHP Team Lead role, with extensive PHP and Symfony experience, proven technical leadership, high-load backend delivery, and directly relevant messaging and API systems experience.
 
 ## Why it matches
 
-- More than five years of PHP experience, including Laravel and Symfony work in production systems.
-- Technical leadership experience includes planning, task distribution, delivery ownership, interviewing, and leading teams of five and ten backend engineers.
-- Directly supported experience with high-load systems, database bottleneck removal, REST APIs, RabbitMQ, MySQL, PostgreSQL, performance optimization, and operational reliability.
-- The role is remote and EU-based, consistent with the candidate's Rome, Italy location.
+- More than five years of demonstrated PHP experience, including Laravel and Symfony work.
+- Proven technical leadership, including direct management of 10 developers and leadership of a team of 5 backend engineers.
+- Relevant high-load backend experience with APIs, databases, microservices, RabbitMQ, and production performance optimization.
+- Strong evidence of testing, code review, architecture decisions, delivery planning, mentoring, and technical interviews.
+- Candidate is based in Italy and the vacancy explicitly allows remote work from the EU.
 
 ## Gaps
 
-- Docker configuration is not explicitly documented in the configured candidate records.
-- PHPUnit and formal functional-test ownership are not explicitly documented, although unit-test coverage and quality-oriented engineering work are evidenced.
+- Current depth with the latest PHP versions is not explicitly documented.
+- Docker configuration experience is not explicitly documented in the candidate evidence.
+- Redis or Memcached experience is not explicitly documented.
 
 ## Concerns
 
-- Stape requests current-depth knowledge of recent PHP versions; the records establish PHP experience but do not specify version recency.
-- Formal people-management details such as performance reviews and hiring ownership are partially evidenced; task allocation, feedback-related leadership, coaching, interviewing, and team leadership are documented.
+- The posting combines people-management, operational ownership, and hands-on feature development; the candidate evidence supports all three, but the exact scope of formal performance-review and hiring ownership is not fully detailed.

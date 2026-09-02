@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-02T21:10:40Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Stape",
+      "directory": "2026-09-02_200251_stape_php-team-lead",
+      "score": 91,
+      "title": "PHP Team Lead",
+      "url": "https://jobs.dou.ua/companies/stape-inc/vacancies/371904/",
+      "vacancy_id": "1774aae7-d9e1-4c4d-b16c-c8a8f422af62"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "63881b29b2db08d7716e53eab710b69c63398ee38cfd1b3f6dbe61eb4fbffb1b",
+  "schema_version": 1
+}
