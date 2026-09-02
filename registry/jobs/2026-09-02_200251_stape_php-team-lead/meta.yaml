@@ -1,0 +1,35 @@
+schema_version: 2
+id: 1774aae7-d9e1-4c4d-b16c-c8a8f422af62
+title: PHP Team Lead
+company: Stape
+company_url: https://jobs.dou.ua/companies/stape-inc/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371904'
+  url: https://jobs.dou.ua/companies/stape-inc/vacancies/371904/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 2 вересня
+    listing_summary: 'Location: EU-based Cooperation type: Full-time 🧭 Work format:
+      Remote We’re looking for a skilled PHP Team Lead who’s passionate about building
+      reliable backend systems, enjoys working on high-load, scalable architectures,
+      and is ready to lead a team of backend engineers...'
+published_at: '2026-09-02'
+discovered_at: '2026-09-02T20:02:51Z'
+updated_at: '2026-09-02T20:02:51Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-02T20:02:51Z'
+analysis_priority: 100
+fingerprint: sha256:ee20bb3dadba3d9432210487009349c815adc852ba0f2b7b598666faa58480cb
+data_source: dou
+content_source: dou
+company_content_source: dou

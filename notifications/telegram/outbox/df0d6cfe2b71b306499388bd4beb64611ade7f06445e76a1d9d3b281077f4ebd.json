@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-02T20:09:53Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Stape",
+      "directory": "2026-09-02_200251_stape_php-team-lead",
+      "score": 88,
+      "title": "PHP Team Lead",
+      "url": "https://jobs.dou.ua/companies/stape-inc/vacancies/371904/",
+      "vacancy_id": "1774aae7-d9e1-4c4d-b16c-c8a8f422af62"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-02_200303_canonical_python-engineering-manager-commercial-systems",
+      "score": 72,
+      "title": "Python Engineering Manager, Commercial Systems",
+      "url": "https://jobicy.com/jobs/149989-python-engineering-manager-commercial-systems",
+      "vacancy_id": "ac5dae5e-f3af-41e2-94a7-9198dd7f8f58"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "df0d6cfe2b71b306499388bd4beb64611ade7f06445e76a1d9d3b281077f4ebd",
+  "schema_version": 1
+}

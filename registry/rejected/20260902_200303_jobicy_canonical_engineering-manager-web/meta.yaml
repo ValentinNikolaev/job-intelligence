@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149976'
+source_url: https://jobicy.com/jobs/149976-engineering-manager-web
+title: Engineering Manager - Web
+company: Canonical
+location: EMEA
+published_at: '2026-09-02T04:44:52Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-02T20:03:03Z'
+rejected_at: '2026-09-02T20:03:03Z'

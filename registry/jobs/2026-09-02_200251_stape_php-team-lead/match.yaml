@@ -1,0 +1,24 @@
+score: 88
+recommendation: strong_match
+summary: Strong fit for a remote EU PHP team-lead role, with extensive PHP and Symfony
+  experience, backend leadership, high-load systems, APIs, queues, databases, and
+  testing.
+strengths:
+- More than five years of PHP experience and substantial Symfony exposure.
+- Led backend engineers and managed technical delivery, planning, mentoring, and hiring-related
+  activity.
+- Demonstrated high-load backend, REST API, RabbitMQ, MySQL/PostgreSQL, Redis-like
+  resilience, and functional testing experience.
+- Remote work and EU location align with the stated work format.
+gaps:
+- Docker configuration experience is not explicitly documented in the candidate profile.
+concerns:
+- The posting asks for recent PHP-version depth and formal people-management responsibilities
+  that are only partially detailed in the profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-02T20:09:53Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:5880e2e312680d6c95a03cc81f4985a13642ccf86f561a98f6477a984f4f373a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

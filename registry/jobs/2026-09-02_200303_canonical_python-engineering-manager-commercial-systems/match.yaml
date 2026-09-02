@@ -1,0 +1,25 @@
+score: 72
+recommendation: match
+summary: Good fit for remote EMEA engineering management through demonstrated Go development,
+  technical leadership, delivery ownership, mentoring, and a relevant technical degree,
+  with Python and data-governance depth unconfirmed.
+strengths:
+- Professional software development in Go, a listed acceptable high-level language.
+- Technical-lead experience includes planning, delivery ownership, metrics, mentoring,
+  and managing developers.
+- Remote EMEA location aligns, and the candidate has a technical master’s degree.
+- Strong production reliability, performance, automation, and distributed-systems
+  background.
+gaps:
+- Python, data governance, data engineering, data science, and direct engineering-manager
+  scope are not explicitly documented.
+concerns:
+- Canonical sets an unusually high bar for academic record, presentation skills, and
+  exceptional results; the profile provides only partial evidence for these criteria.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-02T20:09:53Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:2ced0279fb46b9f543b4deb5e83a83877ebb0b300c4d0c67f67da755507e49c6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
