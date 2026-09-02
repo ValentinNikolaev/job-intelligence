@@ -1,0 +1,35 @@
+schema_version: 2
+id: 9da98823-f0ac-4bd4-bb17-82fa6f5a9e58
+title: Backend Engineer (Billing)
+company: solidgate
+company_url: https://jobs.ashbyhq.com/solidgate
+location: Europe
+remote: true
+employment_type: FullTime
+sources:
+- source: ashby
+  source_job_id: 34fee32d-2a5a-4709-b31f-b3b0219dcdc4
+  url: https://jobs.ashbyhq.com/solidgate/34fee32d-2a5a-4709-b31f-b3b0219dcdc4
+  metadata:
+    board: solidgate
+    application_url: https://jobs.ashbyhq.com/solidgate/34fee32d-2a5a-4709-b31f-b3b0219dcdc4/application
+    department: Engineering & Data
+    team: Engineering & Data
+    workplace_type: Remote
+    compensation:
+      compensationTierSummary: null
+      scrapeableCompensationSalarySummary: null
+      compensationTiers: []
+      summaryComponents: []
+published_at: '2026-09-02T16:41:47.914+00:00'
+discovered_at: '2026-09-02T18:08:52Z'
+updated_at: '2026-09-02T18:08:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-02T18:08:52Z'
+analysis_priority: 0
+fingerprint: sha256:713d4057ab3bd4f29d35490d82389b2c6369e827fefceb76b756bf1a64179528
+data_source: ashby
+content_source: ashby
+company_content_source: null
