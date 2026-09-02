@@ -1,0 +1,91 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:cf12e87fad1c0e10b5520bf0849e5952b75fc6c3c67c643dba581f9624f7e565
+company_version: sha256:19023263085db49e98c4376ec60df83724bd16caa729bf81df7c29e4937717a9
+prompt_version: sha256:e3191bcba6b169ec449e0df4f39f8b0793c0425c7cce938fdb6f4cbc7127e6ea
+model: codex:gpt-5.6-terra:medium
+quality_contract_version: 1
+cv_export_stem: CV_ValentinNikolaev_stape_PHPTeamLead
+generated_at: '2026-09-02T20:49:43Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:cf12e87fad1c0e10b5520bf0849e5952b75fc6c3c67c643dba581f9624f7e565
+    company_version: sha256:19023263085db49e98c4376ec60df83724bd16caa729bf81df7c29e4937717a9
+    prompt_version: sha256:e3191bcba6b169ec449e0df4f39f8b0793c0425c7cce938fdb6f4cbc7127e6ea
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
+    cv_export_stem: CV_ValentinNikolaev_stape_PHPTeamLead
+    generated_at: '2026-09-02T20:49:43Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:cf12e87fad1c0e10b5520bf0849e5952b75fc6c3c67c643dba581f9624f7e565
+    company_version: sha256:19023263085db49e98c4376ec60df83724bd16caa729bf81df7c29e4937717a9
+    prompt_version: sha256:e3191bcba6b169ec449e0df4f39f8b0793c0425c7cce938fdb6f4cbc7127e6ea
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
+    cv_export_stem: CV_ValentinNikolaev_stape_PHPTeamLead
+    generated_at: '2026-09-02T20:49:43Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:cf12e87fad1c0e10b5520bf0849e5952b75fc6c3c67c643dba581f9624f7e565
+    company_version: sha256:19023263085db49e98c4376ec60df83724bd16caa729bf81df7c29e4937717a9
+    prompt_version: sha256:e3191bcba6b169ec449e0df4f39f8b0793c0425c7cce938fdb6f4cbc7127e6ea
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
+    cv_export_stem: CV_ValentinNikolaev_stape_PHPTeamLead
+    generated_at: '2026-09-02T20:49:43Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:cf12e87fad1c0e10b5520bf0849e5952b75fc6c3c67c643dba581f9624f7e565
+    company_version: sha256:19023263085db49e98c4376ec60df83724bd16caa729bf81df7c29e4937717a9
+    prompt_version: sha256:e3191bcba6b169ec449e0df4f39f8b0793c0425c7cce938fdb6f4cbc7127e6ea
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 1
+    cv_export_stem: CV_ValentinNikolaev_stape_PHPTeamLead
+    generated_at: '2026-09-02T20:49:43Z'
+quality:
+  contract_version: 1
+  documents:
+    cv:
+      word_count: 605
+      sha256: sha256:498a73ece0f3b625379913ec20c65c7b03564ab4fd483ef67f055c65f7db1912
+    cover-letter:
+      word_count: 359
+      sha256: sha256:1209f1fbf95b9de9b2e0c6af4f885f97aabf359fe897a11fb7b32134a516c572
+    analysis:
+      word_count: 978
+      sha256: sha256:bc7071461754942fabe2510942a612d527f282f9db22e84a9f26e39212b9f925
+    interview-preparation:
+      word_count: 1099
+      sha256: sha256:81cb871e73ff485384086e07e5f9f0738365b8399e058b83f4ee39b513ef17c3
+  declaration_sha256: sha256:fb353092a52bad615310f2066b3dd7b72f08f8dff01220da02f19c445499879b
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 13.2.0+codex.20260831211622
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://stape.io/
+  handoffs:
+    research.md:
+      word_count: 301
+      sha256: sha256:6ca8687814c6c4c3f15dd6863550853b46e38a6f81797ace9f1906706701d3d0
+    evidence-map.md:
+      word_count: 1126
+      sha256: sha256:eba85b4c117db0f3a889dee4af1d3390e369beeac112c8d9f8d1fb7690e620e9
+    requirements-risks.md:
+      word_count: 686
+      sha256: sha256:da473ca8f30f7905d266bf5c52e94a40578025fca483df2dd4f36c509da84e12
+files:
+- CV_ValentinNikolaev_stape_PHPTeamLead.docx
+- CV_ValentinNikolaev_stape_PHPTeamLead.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md

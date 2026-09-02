@@ -1,24 +1,32 @@
 score: 88
 recommendation: strong_match
-summary: Strong fit for a remote EU PHP team-lead role, with extensive PHP and Symfony
-  experience, backend leadership, high-load systems, APIs, queues, databases, and
-  testing.
+summary: Strong fit for Stape's remote EU PHP Team Lead role, supported by recent
+  PHP and Symfony work, sustained technical-lead experience, high-load backend and
+  database optimization, REST APIs, RabbitMQ, and production reliability work. The
+  candidate's location and the stated remote EU format align.
 strengths:
-- More than five years of PHP experience and substantial Symfony exposure.
-- Led backend engineers and managed technical delivery, planning, mentoring, and hiring-related
-  activity.
-- Demonstrated high-load backend, REST API, RabbitMQ, MySQL/PostgreSQL, Redis-like
-  resilience, and functional testing experience.
-- Remote work and EU location align with the stated work format.
+- More than five years of PHP experience, including Laravel and Symfony work in production
+  systems.
+- Technical leadership experience includes planning, task distribution, delivery ownership,
+  interviewing, and leading teams of five and ten backend engineers.
+- Directly supported experience with high-load systems, database bottleneck removal,
+  REST APIs, RabbitMQ, MySQL, PostgreSQL, performance optimization, and operational
+  reliability.
+- The role is remote and EU-based, consistent with the candidate's Rome, Italy location.
 gaps:
-- Docker configuration experience is not explicitly documented in the candidate profile.
+- Docker configuration is not explicitly documented in the configured candidate records.
+- PHPUnit and formal functional-test ownership are not explicitly documented, although
+  unit-test coverage and quality-oriented engineering work are evidenced.
 concerns:
-- The posting asks for recent PHP-version depth and formal people-management responsibilities
-  that are only partially detailed in the profile.
+- Stape requests current-depth knowledge of recent PHP versions; the records establish
+  PHP experience but do not specify version recency.
+- Formal people-management details such as performance reviews and hiring ownership
+  are partially evidenced; task allocation, feedback-related leadership, coaching,
+  interviewing, and team leadership are documented.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-09-02T20:09:53Z'
+analyzed_at: '2026-09-02T20:31:46Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 job_version: sha256:5880e2e312680d6c95a03cc81f4985a13642ccf86f561a98f6477a984f4f373a
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
-model: codex:gpt-5.6-luna:low
+model: codex:gpt-5.6-terra:medium
