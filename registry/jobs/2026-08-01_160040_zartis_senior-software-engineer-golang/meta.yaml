@@ -25,17 +25,17 @@ sources:
     - query_index: 1
       parameters:
         geo: italy
+        count: '25'
         industry: dev
-        count: '50'
     - query_index: 3
       parameters:
-        tag: golang
         geo: europe
+        tag: golang
+        count: '25'
         industry: dev
-        count: '50'
-published_at: '2026-08-01T03:00:45Z'
+published_at: '2026-09-02T04:50:28Z'
 discovered_at: '2026-08-01T16:00:40Z'
-updated_at: '2026-08-04T14:36:31Z'
+updated_at: '2026-09-02T12:11:05Z'
 status: applied
 status_history:
 - status: found

@@ -1,0 +1,46 @@
+schema_version: 2
+id: 8a608438-edfe-4c6f-be85-18ff08faab06
+title: Ubuntu Core Software Engineer
+company: Canonical
+company_url: null
+location: EMEA
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '149996'
+  url: https://jobicy.com/jobs/149996-ubuntu-core-software-engineer
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/b4d068a9-221-1.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: Canonical is a leading provider of open source software and operating
+      systems to the global enterprise and technology markets. Our platform, Ubuntu,
+      is very widely used in breakthrough enterprise initiatives such as public cloud,
+      data science, AI, engineering innovation, and IoT. Our customers include the
+      world's leading public cloud and silicon providers, and industry leaders…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        count: '25'
+        industry: dev
+    - query_index: 3
+      parameters:
+        geo: europe
+        tag: golang
+        count: '25'
+        industry: dev
+published_at: '2026-09-02T04:55:26Z'
+discovered_at: '2026-09-02T12:11:05Z'
+updated_at: '2026-09-02T12:11:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-02T12:11:05Z'
+analysis_priority: 0
+fingerprint: sha256:6e29814f9ae9c7fe3299b80a0003ddc52f383d02b47f52b46f81bb92e8d8c6c7
+data_source: jobicy
+content_source: jobicy
+company_content_source: null
