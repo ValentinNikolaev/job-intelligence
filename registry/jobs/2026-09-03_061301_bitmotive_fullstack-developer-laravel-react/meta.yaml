@@ -1,0 +1,36 @@
+schema_version: 2
+id: 6f1a8b77-c19a-4e32-8f06-ab1885b66735
+title: Fullstack Developer (Laravel + React)
+company: Bitmotive
+company_url: https://jobs.dou.ua/companies/bitmotive-llc/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '371897'
+  url: https://jobs.dou.ua/companies/bitmotive-llc/vacancies/371897/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 2 вересня
+    listing_summary: 'The stack, and why we are not strict about it
+
+
+      Our largest engagement is a Laravel API with a Filament admin and a React Native
+      client. Others run on Python and on TypeScript with React.'
+published_at: '2026-09-02'
+discovered_at: '2026-09-03T06:13:01Z'
+updated_at: '2026-09-03T06:13:01Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-03T06:13:01Z'
+analysis_priority: 100
+fingerprint: sha256:cdb00e557abba1b4edeb39654ca52616c9192d63234b2d1dfebb53fd112b4427
+data_source: dou
+content_source: dou
+company_content_source: dou

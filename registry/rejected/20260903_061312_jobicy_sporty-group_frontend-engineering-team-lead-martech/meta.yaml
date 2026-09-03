@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149869'
+source_url: https://jobicy.com/jobs/149869-frontend-engineering-team-lead-martech
+title: Frontend Engineering Team Lead - MarTech
+company: Sporty Group
+location: Europe
+published_at: '2026-08-31T04:15:06Z'
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-09-03T06:13:12Z'
+rejected_at: '2026-09-03T06:13:12Z'

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152375'
+source_url: https://jobicy.com/jobs/152375-freelance-tester-faroe-islands-global-payment-research-100-hr
+title: Freelance Tester (Faroe Islands) – Global Payment Research ($100/hr)
+company: Testlio
+location: EMEA
+published_at: '2026-09-02T12:35:38Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-03T06:13:12Z'
+rejected_at: '2026-09-03T06:13:12Z'
