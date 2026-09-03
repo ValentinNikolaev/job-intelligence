@@ -1,0 +1,33 @@
+score: 73
+recommendation: match
+summary: Strong backend fit through Go, distributed systems, resilient services, AWS,
+  Kubernetes, and production reliability; the decisive uncertainty is that the role
+  is restricted to UK-based remote work, while the candidate is in Italy and would
+  need relocation.
+strengths:
+- Demonstrated recent Go backend ownership for a support-automation platform and integrations.
+- Strong evidence of resilient, event-driven systems, queues, retries, monitoring,
+  and distributed services.
+- Relevant AWS, Kubernetes, CI/CD, performance optimization, and production incident
+  experience.
+- Senior technical leadership, system design, mentoring, and cross-functional delivery
+  experience.
+- Monzo offers relocation support and visa sponsorship, reducing but not removing
+  the location constraint.
+gaps:
+- No explicit Cassandra, Kafka, Envoy, GCP, or React experience is documented in the
+  candidate profile.
+- UK-only remote eligibility means the candidate would likely need relocation to the
+  UK rather than working remotely from Italy.
+concerns:
+- The advertised role requires working within the UK for remote employment; relocation
+  feasibility and timing are unknown.
+- The role's banking domain and interview-level system-design expectations are plausible
+  but not directly evidenced as prior banking-platform ownership in the recent profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-03T23:13:55Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8ac591b131db215f83247362658ff1f21c14e40d4105e13c4cc2119728c2a108
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
