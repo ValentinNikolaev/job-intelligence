@@ -1,0 +1,23 @@
+score: 78
+recommendation: match
+summary: Strong PHP and Laravel backend experience with production APIs, testing,
+  CI/CD, and rapid codebase ownership; React and direct US-hours collaboration are
+  material uncertainties.
+strengths:
+- Extensive demonstrated PHP and Laravel experience in production systems.
+- Strong API, testing, performance, reliability, and code-review background.
+- Proven ability to work across unfamiliar stacks and clarify requirements.
+gaps:
+- React or TypeScript experience is not clearly demonstrated in the candidate profile.
+- Client-engagement breadth and direct US product-leadership collaboration are not
+  established.
+concerns:
+- The role includes a React Native client and moving between client engagements, so
+  frontend depth should be verified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-03T18:12:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fec2917f7083212e7f84bf6d0a0da4ff5e0b5d28e90457ce0812248863b7998b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

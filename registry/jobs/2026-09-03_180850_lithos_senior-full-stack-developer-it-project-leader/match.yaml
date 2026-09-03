@@ -1,0 +1,21 @@
+score: 68
+recommendation: match
+summary: Strong senior backend, architecture, delivery, Agile collaboration, and technical-lead
+  evidence supports the role, while the full-stack breadth and Italian business context
+  are less certain.
+strengths:
+- Extensive senior software-development and technical-lead experience.
+- Strong API, microservices, cloud, CI/CD, performance, and reliability background.
+- Demonstrated planning, stakeholder collaboration, mentoring, and team leadership.
+gaps:
+- Recent full-stack/frontend delivery and project-leader scope are not fully evidenced.
+- Italian language proficiency is not established in the candidate profile.
+concerns:
+- The balance between hands-on frontend work and IT project leadership is unclear.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-03T18:12:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:bc8b1edc96783831fb6966821ab3189be24a38c6089c42a6c7cc79c4e8ea05db
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
