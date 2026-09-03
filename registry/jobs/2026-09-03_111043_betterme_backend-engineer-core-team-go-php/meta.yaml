@@ -1,0 +1,41 @@
+schema_version: 2
+id: 76b85fb4-a92e-4539-ba2a-af973866d563
+title: Backend Engineer Core Team (Go + PHP)
+company: BetterMe
+company_url: https://jobs.dou.ua/companies/betterme/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '332846'
+  url: https://jobs.dou.ua/companies/betterme/vacancies/332846/?from=list_hot
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 3 вересня
+    listing_summary: 'About us:
+
+
+      BetterMe — an all-in-one well-being ecosystem empowering millions to become
+      better — physically, mentally, and emotionally. We build what makes people better
+      and keep challenging ourselves to inspire others.'
+published_at: '2026-09-03'
+discovered_at: '2026-09-03T11:10:43Z'
+updated_at: '2026-09-03T11:10:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-03T11:10:43Z'
+analysis_priority: 100
+fingerprint: sha256:5caaaba39d0ecf9383f160653a7948b2bde2123b8e126125bde3b6d2a97e4238
+data_source: dou
+content_source: dou
+company_content_source: dou

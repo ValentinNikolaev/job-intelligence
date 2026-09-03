@@ -1,0 +1,20 @@
+score: 18
+recommendation: not_match
+summary: The Laravel and React stack is relevant, but the posting is tied to Ukraine
+  or Poland remote eligibility while the candidate is based in Italy.
+strengths:
+- Extensive PHP and Laravel backend experience.
+- Demonstrated API, architecture, and production reliability experience.
+gaps:
+- React is not established as a core recent skill in the candidate profile.
+- Required Ukraine or Poland location eligibility is not supported.
+concerns:
+- The vacancy's remote geography is a decisive eligibility uncertainty.
+hard_rejection: true
+hard_rejection_reason: Remote work is limited to Ukraine or Poland, conflicting with
+  the candidate's stated Italy location.
+analyzed_at: '2026-09-03T11:12:37Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a2521829bcf846f1bac2e58396046a103311399d51ea53bf8b38d573fc52a02b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

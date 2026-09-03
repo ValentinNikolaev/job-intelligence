@@ -1,0 +1,22 @@
+score: 18
+recommendation: not_match
+summary: The candidate's backend seniority is substantial, but this Intesys mobile
+  listing requires Java, Kotlin, or Swift and mobile application experience not supported
+  by the profile.
+strengths:
+- Strong general software engineering and API integration background.
+- Experience collaborating across product and engineering teams.
+gaps:
+- No demonstrated Java, Kotlin, Swift, or native mobile application development.
+- No evidence of mobile UX patterns, mobile testing, or mobile platform delivery.
+concerns:
+- The listing's location and working model are not clearly compatible with Italy-based
+  remote work.
+hard_rejection: true
+hard_rejection_reason: Mobile development is central and requires Java, Kotlin, or
+  Swift, none of which is supported by the candidate evidence.
+analyzed_at: '2026-09-03T11:12:37Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:bb00196e0b96f674cffbdaac59a5ab524d87b6a92b53558f2d318033f58a7f82
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

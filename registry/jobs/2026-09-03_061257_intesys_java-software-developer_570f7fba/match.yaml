@@ -1,0 +1,23 @@
+score: 25
+recommendation: weak_match
+summary: The candidate has broad backend and API engineering experience, but this
+  Intesys frontend-oriented Java listing centers on frontend web skills that are not
+  the candidate's primary profile.
+strengths:
+- Solid software design, backend, API, and cross-functional development experience.
+- Some historical AngularJS and frontend exposure.
+gaps:
+- HTML, CSS, JavaScript, and modern React or Angular are not demonstrated as current
+  core skills.
+- The role emphasizes frontend implementation, UX, and browser or mobile behavior.
+concerns:
+- The listing is presented as a Java Software Developer but its content describes
+  frontend work, creating role-scope ambiguity.
+- Verona location and remote arrangements are not stated as compatible.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-03T11:12:37Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:28055b40531e15cea5121ab459104ec024ec2137a6a0ad2d3e8e4146845eb879
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

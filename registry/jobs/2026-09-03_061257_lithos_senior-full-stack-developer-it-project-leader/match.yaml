@@ -1,0 +1,22 @@
+score: 55
+recommendation: possible_match
+summary: Strong senior backend, architecture, delivery, and technical leadership evidence
+  fits the project-lead dimension, but full-stack breadth and the role's exact location
+  model are unclear.
+strengths:
+- 15+ years of software development with PHP, Go, APIs, and distributed systems.
+- Technical leadership, planning, mentoring, and stakeholder collaboration experience.
+- Relevant Laravel, Symfony, event-driven, AWS, and Kubernetes background.
+gaps:
+- Recent frontend experience is limited compared with the senior full-stack scope.
+- No clear evidence of formal IT project-leader ownership.
+concerns:
+- Remote or commuting compatibility is not clear from the sealed posting.
+- The required technology mix and Italian-language expectations are not fully specified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-03T11:12:37Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:6104fc95bae7683219ed9d73cebfb30f007899bf1efad58dde33adf40e720675
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

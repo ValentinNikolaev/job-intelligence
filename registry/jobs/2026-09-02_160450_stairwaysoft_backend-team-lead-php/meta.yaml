@@ -9,7 +9,7 @@ employment_type: null
 sources:
 - source: dou
   source_job_id: '371871'
-  url: https://jobs.dou.ua/companies/stairwaysoft/vacancies/371871/
+  url: https://jobs.dou.ua/companies/stairwaysoft/vacancies/371871/?from=list_hot
   metadata:
     discovered_by:
     - query_index: 1
@@ -21,7 +21,7 @@ sources:
       PHP background to take ownership of a high-load SMS AdTech project.
 published_at: '2026-09-02'
 discovered_at: '2026-09-02T16:04:50Z'
-updated_at: '2026-09-02T16:04:50Z'
+updated_at: '2026-09-03T11:10:43Z'
 status: found
 status_history:
 - status: found
