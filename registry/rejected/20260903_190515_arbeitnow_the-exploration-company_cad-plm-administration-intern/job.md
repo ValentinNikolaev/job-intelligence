@@ -154,4 +154,4 @@ All offers are contingent upon the successful completion of a background check, 
 
 If applicable, you will receive an email from Zinc upon acceptance of your offer with a link to a secure portal where you can provide the required information to Zinc. *
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

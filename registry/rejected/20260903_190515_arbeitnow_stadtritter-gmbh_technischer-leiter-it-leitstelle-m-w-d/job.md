@@ -53,4 +53,4 @@ Diese Position übernimmt die technische Verantwortung für IT, Leitstellenbetri
 
 Ein Anschreiben ist nicht erforderlich. Bitte bewirb dich direkt mit deinem Lebenslauf. Das Gehalt wird passend zu Erfahrung, Qualifikation und Verantwortungsumfang vereinbart.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

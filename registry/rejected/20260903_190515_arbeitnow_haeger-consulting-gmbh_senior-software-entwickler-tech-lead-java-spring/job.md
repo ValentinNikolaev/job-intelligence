@@ -65,4 +65,4 @@ Posted: 2026-09-03T18:00:25Z
 - **Attraktive Benefits:** Du bekommst ein attraktives Gehalt, diverse Benefits und coole Mitarbeiterevents.
 * Wir freuen uns über Bewerbungen von allen Personen, unabhängig von Geschlecht, Alter, ethnischer Herkunft, Religion, Weltanschauung, Behinderung oder sexueller Identität. Menschen mit Behinderung werden bei gleicher Qualifikation bevorzugt berücksichtigt. Um die Lesbarkeit und Verständlichkeit zu fördern, haben wir in der gesamten Jobanzeige eine einheitliche Schreibweise gewählt. Diese dient ausschließlich der besseren Orientierung und beinhaltet keinerlei Wertung oder Ausschluss.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

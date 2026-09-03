@@ -119,4 +119,4 @@ Unser Ziel ist es, den Prozess schnell, transparent und darauf fokussiert zu hal
 
 [*Saltz Marketplace, UAB*](http://Saltz.App)* is an equal opportunity employer. We respect and empower each individual who joins us. *[*Saltz Marketplace, UAB*](http://Saltz.App)* commits to a transparent, inclusive, non-discriminatory recruitment process and employment.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

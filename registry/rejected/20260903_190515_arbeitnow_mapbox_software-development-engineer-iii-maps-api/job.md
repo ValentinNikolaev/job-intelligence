@@ -155,4 +155,4 @@ By applying for this position, you acknowledge that you have received the [Mapbo
 
 #LI-Remote
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

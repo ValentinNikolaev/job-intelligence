@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 87
+Total vacancies: 88
 
-- Found: 70
+- Found: 71
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 87
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-03 | [Monzo](../registry/jobs/2026-09-03_230349_monzo_backend-engineer-iii/) | [Backend Engineer III](../registry/jobs/2026-09-03_230349_monzo_backend-engineer-iii/job.md) | UK | Jobicy | Found | 2026-09-03 | [Jobicy](https://jobicy.com/jobs/152499-backend-engineer-iii) | — | — | — | — | — |
 | 2026-09-03 | [ShippyPro](../registry/jobs/2026-09-03_190527_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-03_190527_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-03 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-03 | [Intesys](../registry/jobs/2026-09-03_190527_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-03_190527_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-03 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-09-03 | [Agiliway](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/) | [Strong Middle/Senior Golang Developer](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/job.md) | Львів, Чернівці, віддалено | Dou | Found | 2026-09-03 | [Dou](https://jobs.dou.ua/companies/agiliway/vacancies/372032/) | [Open](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/company.md) | — | — | — | — |

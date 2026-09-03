@@ -69,4 +69,4 @@ We are building the leading software platform for AI-powered autonomous systems 
 
 At Auterion, we bring together the sharpest minds who love to solve the hardest problems. Join a vibrant team built on innovation, openness, and excellence, where you’ll be empowered to develop ideas, collaborate across all levels, and make an impact that matters.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -57,4 +57,4 @@ Wir freuen uns darauf, Sie kennenzulernen. Bitte laden Sie Ihre deutschsprachige
 
 Bewerbungsschluss ist der **30. September 2026.** Bewerbungsgespräche können bereits vor Bewerbungsschluss geführt werden.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

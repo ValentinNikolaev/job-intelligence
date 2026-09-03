@@ -1,6 +1,6 @@
 # Gute Seele / HR-Manager (m/w/d) in Teilzeit
 
-Posted: 2026-09-03T17:07:26Z
+Posted: 2026-09-03T21:32:28Z
 
 ## Rejection
 

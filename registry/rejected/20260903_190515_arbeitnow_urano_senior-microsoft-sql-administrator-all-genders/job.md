@@ -96,4 +96,4 @@ Für den Einsatz in diesem Kundenumfeld ist eine Sicherheitsüberprüfung nach d
 
 Du hast die Wahl: Sende uns deinen Lebenslauf unter Angabe der Referenznummer (DG-RM-098) per E-Mail an ----- oder lade deine Unterlagen über unser Karriereportal hoch.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

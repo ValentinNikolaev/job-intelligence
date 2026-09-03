@@ -56,4 +56,4 @@ Aufgaben:
 - Wachstumskultur mit starken persönlichen und beruflichen Entwicklungsmöglichkeiten
 - Eine offene und freundliche Atmosphäre mit Partnern und Kollegen aus der ganzen Welt
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
