@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '8366094339774610258'
+source_url: https://jooble.org/desc/8366094339774610258?ckey=senior+backend+engineer&rgn=55179&pos=11&groupId=293749696&elckey=2664739999720267458&p=1&aq=4039487530285582809&cid=15922&jobAge=101&brelb=100&bscr=6.4579735&scr=6.4579735
+title: Sr Agent Architect
+company: Parloa
+location: Italian Republic
+published_at: '2026-08-30T07:54:33.2630000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-03T19:05:52Z'
+rejected_at: '2026-09-03T19:05:52Z'

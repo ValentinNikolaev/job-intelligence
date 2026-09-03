@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: staff-engineer-fullstack-dresden-sachsen-246014
+source_url: https://www.arbeitnow.com/jobs/companies/staffbase/staff-engineer-fullstack-dresden-sachsen-246014
+title: Staff Engineer - Fullstack
+company: Staffbase
+location: Dresden, Sachsen
+published_at: '2026-09-03T17:55:16Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-03T19:05:15Z'
+rejected_at: '2026-09-03T19:05:15Z'
