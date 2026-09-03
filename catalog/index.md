@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 79
+Total vacancies: 85
 
-- Found: 62
+- Found: 68
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,12 @@ Total vacancies: 79
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-03 | [Agiliway](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/) | [Strong Middle/Senior Golang Developer](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/job.md) | Львів, Чернівці, віддалено | Dou | Found | 2026-09-03 | [Dou](https://jobs.dou.ua/companies/agiliway/vacancies/372032/) | [Open](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/company.md) | — | — | — | — |
+| 2026-09-03 | [Bitmotive](../registry/jobs/2026-09-03_180852_bitmotive_fullstack-developer-laravel-react/) | [Fullstack Developer (Laravel + React)](../registry/jobs/2026-09-03_180852_bitmotive_fullstack-developer-laravel-react/job.md) | віддалено | Dou | Found | 2026-09-03 | [Dou](https://jobs.dou.ua/companies/bitmotive-llc/vacancies/371897/) | [Open](../registry/jobs/2026-09-03_180852_bitmotive_fullstack-developer-laravel-react/company.md) | — | — | — | — |
+| 2026-09-03 | [Intesys](../registry/jobs/2026-09-03_180850_intesys_java-software-developer_dee452a5/) | [Java Software Developer](../registry/jobs/2026-09-03_180850_intesys_java-software-developer_dee452a5/job.md) | — | Custom | Found | 2026-09-03 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-03 | [Lithos](../registry/jobs/2026-09-03_180850_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-09-03_180850_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-09-03 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
+| 2026-09-03 | [Intesys](../registry/jobs/2026-09-03_180850_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-03_180850_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-03 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-03 | [Intesys](../registry/jobs/2026-09-03_180850_intesys_developer/) | [Developer](../registry/jobs/2026-09-03_180850_intesys_developer/job.md) | — | Custom | Found | 2026-09-03 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
 | 2026-09-03 | [BetterMe](../registry/jobs/2026-09-03_111043_betterme_backend-engineer-core-team-go-php/) | [Backend Engineer Core Team (Go + PHP)](../registry/jobs/2026-09-03_111043_betterme_backend-engineer-core-team-go-php/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-03 | [Dou](https://jobs.dou.ua/companies/betterme/vacancies/332846/?from=list_hot) | [Open](../registry/jobs/2026-09-03_111043_betterme_backend-engineer-core-team-go-php/company.md) | — | — | — | — |
 | 2026-09-02 | [Canonical](../registry/jobs/2026-09-02_200303_canonical_python-engineering-manager-commercial-systems/) | [Python Engineering Manager, Commercial Systems](../registry/jobs/2026-09-02_200303_canonical_python-engineering-manager-commercial-systems/job.md) | EMEA | Jobicy | Found | 2026-09-02 | [Jobicy](https://jobicy.com/jobs/149989-python-engineering-manager-commercial-systems) | — | — | — | — | — |
 | 2026-09-02 | [Stape](../registry/jobs/2026-09-02_200251_stape_php-team-lead/) | [PHP Team Lead](../registry/jobs/2026-09-02_200251_stape_php-team-lead/job.md) | за кордоном, віддалено | Dou | Found | 2026-09-02 | [Dou](https://jobs.dou.ua/companies/stape-inc/vacancies/371904/) | [Open](../registry/jobs/2026-09-02_200251_stape_php-team-lead/company.md) | [MD](../registry/jobs/2026-09-02_200251_stape_php-team-lead/application/cv.md) / [DOCX](../registry/jobs/2026-09-02_200251_stape_php-team-lead/application/cv.docx) | [MD](../registry/jobs/2026-09-02_200251_stape_php-team-lead/application/cover-letter.md) / [DOCX](../registry/jobs/2026-09-02_200251_stape_php-team-lead/application/cover-letter.docx) | [Open](../registry/jobs/2026-09-02_200251_stape_php-team-lead/application/analysis.md) | [Open](../registry/jobs/2026-09-02_200251_stape_php-team-lead/application/interview-preparation.md) |

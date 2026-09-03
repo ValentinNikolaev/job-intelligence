@@ -1,0 +1,35 @@
+schema_version: 2
+id: f1cfc663-4ffe-4b31-a7fd-c1167ef6782e
+title: Strong Middle/Senior Golang Developer
+company: Agiliway
+company_url: https://jobs.dou.ua/companies/agiliway/vacancies/
+location: Львів, Чернівці, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372032'
+  url: https://jobs.dou.ua/companies/agiliway/vacancies/372032/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 3 вересня
+    listing_summary: We are looking for a Strong Middle/Senior Golang Developer to
+      join product development for our client from the USA. The product is an AWS-hosted
+      multi-module payment and analytical platform for healthcare services, written
+      in Go language.
+published_at: '2026-09-03'
+discovered_at: '2026-09-03T18:08:52Z'
+updated_at: '2026-09-03T18:08:52Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-03T18:08:52Z'
+analysis_priority: 100
+fingerprint: sha256:218f6228cb997869296874478193d66fcb1925d573c7ea19b1fa35015e9baf92
+data_source: dou
+content_source: dou
+company_content_source: dou
