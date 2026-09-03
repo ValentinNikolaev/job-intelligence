@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-03T12:09:48Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "BetterMe",
+      "directory": "2026-09-03_111043_betterme_backend-engineer-core-team-go-php",
+      "score": 91,
+      "title": "Backend Engineer Core Team (Go + PHP)",
+      "url": "https://jobs.dou.ua/companies/betterme/vacancies/332846/?from=list_hot",
+      "vacancy_id": "76b85fb4-a92e-4539-ba2a-af973866d563"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4217d4dd96b584e6201c2eb018359f152080ebcca471c2a07723145bf130012a",
+  "schema_version": 1
+}

@@ -1,0 +1,36 @@
+score: 91
+recommendation: strong_match
+summary: Strong fit for a remote backend role centered on Go with meaningful PHP work,
+  combining the candidate's recent Go automation platform ownership with extensive
+  PHP/Laravel backend, AWS, Kubernetes, messaging, relational database, CI/CD, observability,
+  and production reliability experience.
+strengths:
+- Commercial Go backend experience designing and owning a support automation platform
+  and resilient message delivery pipelines.
+- Extensive PHP experience including Laravel and Symfony, with recent backend work
+  and prior technical leadership.
+- Direct evidence of AWS, Kubernetes, Helm, GitHub Actions, ArgoCD, monitoring, production
+  troubleshooting, and distributed or event-driven systems.
+- Experience with RabbitMQ, MySQL, PostgreSQL, REST APIs, microservices, performance
+  optimization, and high-volume production systems.
+- Candidate is based in Italy and the posting explicitly offers remote work, with
+  Go and PHP both meaningful parts of the role.
+gaps:
+- Redis or AWS ElastiCache experience is not explicitly documented in the candidate
+  profile.
+- Linux, Docker, and formal unit-test maintenance are not explicitly detailed in the
+  authoritative profile.
+- The posting's specific Clean Architecture, Hexagonal Architecture, DDD, and service-mesh
+  preferences are not explicitly evidenced.
+concerns:
+- The posting references Kyiv and working abroad; the exact eligible countries, timezone
+  expectations, and contracting arrangement for Italy are not specified.
+- The profile documents strong Go and PHP experience but does not explicitly quantify
+  five or more years of commercial Go experience.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-03T12:09:48Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:540cf62ce0e241bdc1db16cd577634c6f1cb2a17766539c91d5bcb377aa45543
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
