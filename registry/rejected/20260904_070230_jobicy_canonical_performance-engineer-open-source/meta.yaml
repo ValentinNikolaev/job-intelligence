@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '149551'
+source_url: https://jobicy.com/jobs/149551-performance-engineer-open-source
+title: Performance Engineer - Open Source
+company: Canonical
+location: Anywhere
+published_at: '2026-08-22T16:10:06Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-22T16:10:06Z is older than 7 days
+updated_at: '2026-09-04T07:02:30Z'
+rejected_at: '2026-09-04T07:02:30Z'

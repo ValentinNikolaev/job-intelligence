@@ -1,0 +1,95 @@
+# Software Engineer, Platform
+
+Posted: 2026-09-03T23:45:30Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: vacancy is explicitly non-remote
+
+The mission of Speechify is to make sure that reading is never a barrier to learning.
+
+Over 50 million people use Speechify's text-to-speech products to turn whatever they're reading – PDFs, books, Google Docs, news articles, websites – into audio, so they can read faster, read more, and remember more. Speechify's text-to-speech reading products include its iOS app, Android App, Mac App, Chrome Extension, and Web App. Google recently named Speechify the Chrome Extension of the Year and Apple named Speechify its 2025 Design Award winner for Inclusivity.
+
+Today, nearly 200 people around the globe work on Speechify in a 100% distributed setting – Speechify has no office.
+
+**Overview**
+
+The Platform team owns the backend behind everything Speechify ships: the public TTS API, payments, subscriptions, auth, consumption tracking, and analytics — serving over 50 million users across iOS, Android, Mac, Chrome, and web.
+
+These are systems where correctness compounds. Subscription state has to stay consistent across five clients and two app-store billing systems that each go quiet at the worst moment. Consumption metering has to be exact enough to bill on and cheap enough to run at our request volume. The public TTS API has external customers with their own products depending on our latency and uptime. None of this degrades gracefully — it is either right, or someone gets charged twice.
+
+The job is to make your own job smaller. Every system you own here should need less of you a year from now than it did the day you took it, and the reward for that is a larger one. That is the entire growth path on this team — there is no separate ladder, and no ceiling except the one you stop raising. We are a flat organization: people become leaders here by taking scope and being right about it, fast.
+
+**What Yo****u'****ll Do**
+
+- Design, build, and own the APIs behind payments, subscriptions, auth, consumption tracking, and our public TTS API
+
+- Take on services you didn't write and make them faster, cheaper, and harder to break
+
+- Establish that a change is correct before it ships, and leave behind the checks that keep it correct after you've moved on
+
+- Automate the parts of your role that shouldn't need a person, then go take on what that freed you up for
+
+- Turn work you've done once into work the whole team can repeat
+
+- Design B2B and enterprise integrations for customers building on top of us
+
+- Work with product, mobile, and web to keep backend architecture ahead of where the product is going
+
+**An Ideal Candidate Should Have**
+
+- Proven backend experience in TS/Node (required)
+
+- Direct experience with GCP; working knowledge of AWS, Azure, or another cloud
+
+- A habit of giving away work you used to own, and something to show for the room it created
+
+- A daily working setup with AI agents you can describe in detail — what runs unattended, what you review, and where you've decided it doesn't get to act alone
+
+- The instinct to check a result against the system itself — logs, database state, the actual request — rather than against a summary of it
+
+- Judgment about what not to build, and the ability to say plainly why you dropped it
+
+- A preference for being corrected over being right
+
+- Preferred: Docker and containerized deployments
+
+- Preferred: deploying high-availability applications on Kubernetes
+
+**Interview process**
+
+Several technical interviews plus a take-home assessment on a real codebase. We aim to finish within a week.
+
+The assessment runs in two stages: you'll submit, get real feedback from an engineer on this team, and have time to act on it. Use the tools you use every day. You'll be asked to walk through your reasoning, so bring it.
+
+**What We Offer **
+
+- A dynamic environment where your contributions shape the company and its products
+
+- A team that values innovation, intuition, and drive
+
+- Autonomy, fostering focus and creativity
+
+- The opportunity to have a significant impact in a revolutionary industry
+
+- Competitive compensation, a welcoming atmosphere, and a commitment to an exceptional asynchronous work culture
+
+- The privilege of working on a product that changes lives, particularly for those with learning differences like dyslexia, ADD, and more
+
+- An active role at the intersection of artificial intelligence and audio – a rapidly evolving tech domain
+
+**Think you're a good fit for this job? **
+
+Tell us more about yourself and why you're interested in the role when you apply.
+And don't forget to include links to your portfolio and LinkedIn.
+
+**Not looking but know someone who would make a great fit? **
+
+Refer them!
+
+**Speechify is committed to a diverse and inclusive workplace. **
+
+Speechify does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.
+
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

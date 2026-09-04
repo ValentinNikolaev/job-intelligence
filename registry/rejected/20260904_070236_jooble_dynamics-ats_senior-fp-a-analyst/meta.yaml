@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3520480129575584131'
+source_url: https://jooble.org/desc/3520480129575584131?ckey=senior+backend+engineer&rgn=55179&pos=8&groupId=293749696&elckey=-7443908014720255664&p=1&aq=3701084676511784561&cid=15922&jobAge=361&brelb=100&bscr=10.539545&scr=10.539545
+title: Senior FP&A Analyst
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-08-20T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-20T00:00:00.0000000 is older than 7 days
+updated_at: '2026-09-04T07:02:36Z'
+rejected_at: '2026-09-04T07:02:36Z'
