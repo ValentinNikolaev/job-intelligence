@@ -45,4 +45,4 @@ Abschlussstärke ist deine DNA
 
 Wir bieten dir die Chance, in einem Umfeld zu arbeiten, das Impact mit Performance verbindet. Du gestaltest die Zukunft unseres Advertising-Geschäfts aktiv mit und profitierst von einer Plattform, die als "Zuhause für Marken mit Haltung" echtes Alleinstellungsmerkmal genießt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

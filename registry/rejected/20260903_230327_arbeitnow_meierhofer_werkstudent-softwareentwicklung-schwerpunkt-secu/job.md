@@ -49,4 +49,4 @@ Seit fast 40 Jahren verbindet Meierhofer Erfahrung mit Innovationskraft und digi
 
 Wir wertschätzen Vielfalt und begrüßen deshalb alle Bewerbungen. Falls du Fragen hast, wende dich unter **+49 89 442316 – 206** an unseren Talent Acquisition Manager Andreas Dürbeck. Wir sind gerne für dich da und freuen uns, dich kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
