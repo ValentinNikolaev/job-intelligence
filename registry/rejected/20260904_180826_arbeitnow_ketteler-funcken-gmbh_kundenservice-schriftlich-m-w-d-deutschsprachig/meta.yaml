@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: kundenservice-schriftlich-deutschsprachig-100-remote-freelance-gutersloh-131865
+source_url: https://www.arbeitnow.com/jobs/companies/ketteler-funcken-gmbh/kundenservice-schriftlich-deutschsprachig-100-remote-freelance-gutersloh-131865
+title: Kundenservice schriftlich (m/w/d), deutschsprachig, 100% Remote, Freelance
+company: Ketteler & Funcken GmbH
+location: Gütersloh
+published_at: '2026-09-04T16:30:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T18:08:26Z'
+rejected_at: '2026-09-04T18:08:26Z'
