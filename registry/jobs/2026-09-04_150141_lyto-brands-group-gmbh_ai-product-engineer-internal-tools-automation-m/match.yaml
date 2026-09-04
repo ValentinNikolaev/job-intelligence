@@ -1,0 +1,22 @@
+score: 73
+recommendation: match
+summary: Strong alignment with PHP/Laravel, production AI support automation, integrations,
+  observability, and end-to-end ownership, with Claude/MCP and product-stack gaps.
+strengths:
+- Built and operated production support automation with measurable AI-driven deflection.
+- Strong PHP/Laravel, Go, API orchestration, retries, monitoring, and multi-service
+  integration background.
+- Demonstrated cross-functional ownership and measurable operational impact.
+gaps:
+- No explicit Claude Code, Anthropic Agent SDK, MCP, RAG, or structured-output experience.
+- Vue/React, MySQL, and DigitalOcean are not clearly evidenced as a combined stack.
+concerns:
+- The small-team role expects hands-on LLM-agent depth beyond the documented OpenAI-powered
+  automation work.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-04T16:29:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:17db0c1e0fdee53d026c9fee7df1026e8d6dc492eab6ca0963dc6869b788d89f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

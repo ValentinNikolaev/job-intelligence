@@ -1,0 +1,34 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-04T16:29:23Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Intesys",
+      "directory": "2026-09-04_150151_intesys_developer",
+      "score": 67,
+      "title": "Developer",
+      "url": "https://www.intesys.it/lavora-con-noi/figure-professionali-developer/",
+      "vacancy_id": "1595848a-34f6-47b2-844a-b5fc564db643"
+    },
+    {
+      "company": "Canonical",
+      "directory": "2026-09-04_150204_canonical_c-golang-software-engineer-working-on-dqlite-a-r",
+      "score": 68,
+      "title": "C, Golang Software Engineer working on dqlite, a Raft extension for SQLite",
+      "url": "https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite",
+      "vacancy_id": "ee269be0-6388-4beb-9ec9-c7e345b78d19"
+    },
+    {
+      "company": "Lyto Brands Group GmbH",
+      "directory": "2026-09-04_150141_lyto-brands-group-gmbh_ai-product-engineer-internal-tools-automation-m",
+      "score": 73,
+      "title": "AI Product Engineer - Internal Tools & Automation (m/w/d) - fully remote",
+      "url": "https://www.arbeitnow.com/jobs/companies/lyto-brands-group-gmbh/ai-product-engineer-internal-tools-automation-fully-remote-dusseldorf-81871",
+      "vacancy_id": "338e758c-0a5a-415f-aa75-e3146b802164"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ee3fb35abd28239d1edd21ead3339c35ec2422ff91c898324735dfb5fc06a2a2",
+  "schema_version": 1
+}

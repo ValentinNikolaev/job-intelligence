@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152380'
+source_url: https://jobicy.com/jobs/152380-payments-solutions-architect-us-or-emea
+title: Payments Solutions Architect (US or EMEA)
+company: Testlio
+location: EMEA,  USA
+published_at: '2026-09-02T12:37:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T15:02:04Z'
+rejected_at: '2026-09-04T15:02:04Z'

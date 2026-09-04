@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152333'
+source_url: https://jobicy.com/jobs/152333-qa-analyst-future-roles
+title: QA Analyst (Future Roles)
+company: Testlio
+location: Argentina,  Brazil,  Canada,  Czechia,  Estonia,  Ireland,  Mexico,  Poland,  Portugal,  Romania,  Spain,  UK,  Ukraine,  USA
+published_at: '2026-09-01T14:38:56Z'
+rejection_category: role_mismatch
+rejection_reason: title is an obvious mismatch for a backend profile
+updated_at: '2026-09-04T15:02:04Z'
+rejected_at: '2026-09-04T15:02:04Z'

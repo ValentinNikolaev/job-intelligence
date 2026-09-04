@@ -1,0 +1,28 @@
+schema_version: 2
+id: 338e758c-0a5a-415f-aa75-e3146b802164
+title: AI Product Engineer - Internal Tools & Automation (m/w/d) - fully remote
+company: Lyto Brands Group GmbH
+company_url: null
+location: Düsseldorf
+remote: true
+employment_type: null
+sources:
+- source: arbeitnow
+  source_job_id: ai-product-engineer-internal-tools-automation-fully-remote-dusseldorf-81871
+  url: https://www.arbeitnow.com/jobs/companies/lyto-brands-group-gmbh/ai-product-engineer-internal-tools-automation-fully-remote-dusseldorf-81871
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+published_at: '2026-09-04T12:30:31Z'
+discovered_at: '2026-09-04T15:01:41Z'
+updated_at: '2026-09-04T15:01:41Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-04T15:01:41Z'
+analysis_priority: 0
+fingerprint: sha256:5ffc2ff64fdb0382149339e096afaef622e6cef00f872aa82cc6004f5b5f44a0
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

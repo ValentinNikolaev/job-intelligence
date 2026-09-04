@@ -45,4 +45,4 @@ Lange Straße 6
 
 18055 RostockTelefon: 0381 - 40 33 45 60
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

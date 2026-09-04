@@ -1,0 +1,12 @@
+schema_version: 1
+source: adzuna
+source_job_id: '5870621745'
+source_url: https://www.adzuna.it/details/5870621745?utm_medium=api&utm_source=b6674f60
+title: 'Regold by idealista: Backend Developer'
+company: idealista
+location: Milano, Provincia di Milano
+published_at: '2026-09-04T14:55:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T15:01:37Z'
+rejected_at: '2026-09-04T15:01:37Z'

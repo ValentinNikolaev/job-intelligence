@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: senior-datenbankadministrator-oracle-postgresql-munich-231184
+source_url: https://www.arbeitnow.com/jobs/companies/coopers-group-ag/senior-datenbankadministrator-oracle-postgresql-munich-231184
+title: Senior Datenbankadministrator (Oracle & PostgreSQL)
+company: Coopers Group AG
+location: Munich
+published_at: '2026-09-04T09:30:59Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T15:01:41Z'
+rejected_at: '2026-09-04T15:01:41Z'
