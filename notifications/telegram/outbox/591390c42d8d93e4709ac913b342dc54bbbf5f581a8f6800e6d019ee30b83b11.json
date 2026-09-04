@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-04T12:24:18Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Hostaway",
+      "directory": "2026-09-04_121043_hostaway_senior-backend-engineer-ai-platform-100-remote-e",
+      "score": 78,
+      "title": "Senior Backend Engineer, AI Platform - 100% Remote - EMEA",
+      "url": "https://careers.hostaway.com/o/senior-backend-engineer-ai-platform-100-remote-emea-3",
+      "vacancy_id": "1431c36e-82e6-4f54-b4fb-c088f40193f7"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "591390c42d8d93e4709ac913b342dc54bbbf5f581a8f6800e6d019ee30b83b11",
+  "schema_version": 1
+}

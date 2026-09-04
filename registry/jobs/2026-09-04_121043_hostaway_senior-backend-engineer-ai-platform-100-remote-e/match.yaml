@@ -1,0 +1,26 @@
+score: 78
+recommendation: match
+summary: Strong senior backend and AI-integration alignment, with a material Python
+  proficiency gap.
+strengths:
+- 15+ years of backend engineering experience across SaaS, APIs, integrations, and
+  production systems.
+- Recent Go-based support automation work includes LLM-assisted triage, customer-facing
+  workflows, and resilient message delivery.
+- Demonstrated observability, monitoring, error handling, AWS, Kubernetes, event-driven
+  architecture, and cross-functional collaboration.
+- PHP and Golang experience are explicitly listed as nice-to-have skills.
+gaps:
+- Strong Python proficiency is mandatory in the posting, but the candidate evidence
+  does not establish professional Python experience.
+- No evidence of LangChain, Vercel AI SDK, or MCP server experience.
+concerns:
+- The role centers on Python-based AI services, so ramp-up scope may be significant
+  despite strong adjacent LLM integration experience.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-04T12:24:18Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:03feeb8188d72bdc1c99a1ce5915f60f96cc801f74e4f7950b1991bbe57f0fec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
