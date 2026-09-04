@@ -1,0 +1,12 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/nvidia/jobs/senior-developer-relations-manager-emea-ai-natives
+source_url: https://himalayas.app/companies/nvidia/jobs/senior-developer-relations-manager-emea-ai-natives
+title: Senior Developer Relations Manager - EMEA AI Natives
+company: NVIDIA
+location: Italy
+published_at: '2026-08-06T20:34:51Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-06T20:34:51Z is older than 7 days
+updated_at: '2026-09-04T06:11:56Z'
+rejected_at: '2026-09-04T06:11:56Z'
