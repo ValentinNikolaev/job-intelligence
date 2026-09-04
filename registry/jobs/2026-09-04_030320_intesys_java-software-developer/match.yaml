@@ -1,0 +1,24 @@
+score: 15
+recommendation: not_match
+summary: Explicit mobile role requiring Java Kotlin or Swift and mobile-platform experience,
+  while the candidate profile documents backend PHP and Go work without mobile application
+  delivery.
+strengths:
+- Strong general software-development background
+- Computer-science education
+- API and backend-service design experience
+gaps:
+- No Java Kotlin or Swift experience
+- No Android or iOS application delivery
+- No mobile UX or platform ownership evidence
+concerns:
+- Location and remote terms are unknown
+- The skills mismatch is decisive
+hard_rejection: true
+hard_rejection_reason: Essential mobile stack and application-development experience
+  are not supported by the candidate profile.
+analyzed_at: '2026-09-04T04:21:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d2acb830e8fb579c584cf37e60cde44a4aea31b1be4aed67a1a12cbdd71735fd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
