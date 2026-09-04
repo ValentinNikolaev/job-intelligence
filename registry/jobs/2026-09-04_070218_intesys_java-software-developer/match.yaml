@@ -1,0 +1,21 @@
+score: 15
+recommendation: not_match
+summary: Mobile developer role requires Java Kotlin and Swift plus mobile-platform
+  and app-testing experience, none supported by the candidate profile.
+strengths:
+- Strong general software development foundation
+- API and systems integration experience
+gaps:
+- Java Kotlin and Swift mobile development are not demonstrated
+- Mobile platform UX app-pattern and beta-testing experience is not evidenced
+concerns:
+- The essential mobile technology stack is fundamentally outside the documented candidate
+  experience
+hard_rejection: true
+hard_rejection_reason: Essential Java Kotlin and Swift mobile-development requirements
+  are unsupported by the candidate profile.
+analyzed_at: '2026-09-04T07:21:48Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a84b67d7be771d3b76d3386ddc5534726e7f500096b81af450da3b4145d7cf37
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
