@@ -128,4 +128,4 @@ Für Fragen vorab steht Dir Anna Hallmeier gerne telefonisch unter der Rufnummer
 
 #LI-Hybrid
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

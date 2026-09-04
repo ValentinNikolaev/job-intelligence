@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152271'
+source_url: https://jobicy.com/jobs/152271-software-backend-engineer-senior-confirmed-paris-or-remote-france
+title: Software Backend Engineer - Senior / Confirmed (Paris or Remote France)
+company: Alma
+location: France
+published_at: '2026-09-01T05:09:02Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T03:03:33Z'
+rejected_at: '2026-09-04T03:03:33Z'

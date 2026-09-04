@@ -139,4 +139,4 @@ Your skills and experience will stand out & set you apart - especially if your c
 
 We're excited to hear from you!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

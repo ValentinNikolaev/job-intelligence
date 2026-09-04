@@ -64,4 +64,4 @@ Inge-Reitz-Str. 5-7
 55120 Mainz
 
 pflegehilfe.org/karriere
-English Speaking Jobs in Germany on Arbeitnow
+Jobs in Germany on Arbeitnow

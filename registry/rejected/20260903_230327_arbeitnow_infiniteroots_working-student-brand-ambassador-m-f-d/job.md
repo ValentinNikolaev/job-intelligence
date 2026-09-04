@@ -43,4 +43,4 @@ We are an equal opportunity employer and value diversity at our company. We do n
 
 Ready to disrupt the food system with us?
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

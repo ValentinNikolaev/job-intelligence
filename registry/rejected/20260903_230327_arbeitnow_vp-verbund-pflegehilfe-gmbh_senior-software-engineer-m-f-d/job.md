@@ -100,4 +100,4 @@ Inge-Reitz-Str. 5-7
 01731737257
 (Mo-Fr 14 Uhr bis 15 Uhr)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

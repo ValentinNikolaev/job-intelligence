@@ -189,4 +189,4 @@ With offices in New York, Berlin, London, São Paulo, and Iași, the company has
 
 ***International transfers:** Your data may be transferred to and processed in the United States, Germany, the United Kingdom, or Romania. Where required, transfers are protected by Standard Contractual Clauses or other approved mechanisms.*
 
-*By submitting your application, you acknowledge that you have read and understood Taktile’s Applicant Privacy Policy. To exercise your rights or ask questions, contact *Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+*By submitting your application, you acknowledge that you have read and understood Taktile’s Applicant Privacy Policy. To exercise your rights or ask questions, contact *Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
