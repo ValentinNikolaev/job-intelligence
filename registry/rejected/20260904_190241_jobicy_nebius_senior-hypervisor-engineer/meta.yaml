@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150137'
+source_url: https://jobicy.com/jobs/150137-senior-hypervisor-engineer
+title: Senior Hypervisor Engineer
+company: Nebius
+location: Czechia,  Europe
+published_at: '2026-09-04T05:15:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T19:02:41Z'
+rejected_at: '2026-09-04T19:02:41Z'

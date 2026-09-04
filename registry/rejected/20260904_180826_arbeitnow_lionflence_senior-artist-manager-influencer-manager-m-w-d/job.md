@@ -77,4 +77,4 @@ Zudem unterstützen wir Unternehmen im Bereich Markenaufbau und entwickeln eigen
 
 Als Circle-of-Marketing bieten wir Kunden ein umfassendes 360°-Dienstleistungspaket und somit auch Services, die über die gewohnten Dienstleistungen einer Marketing-Agentur hinausgehen.Unser idealer Kandidat ist ein Teamplayer mit ausgeprägten Fähigkeiten im Bereich zwischenmenschlicher Kommunikation und verfügt über praktische Erfahrung.Du hast ein starkes Interesse Artists zu betreuen und möchtest ab sofort spannende Aufgaben in dem Bereich Artist Management übernehmen?Du organisierst leidenschaftlich gerne und bist ein aufgeschlossener Mensch? Dann könntest du perfekt zu uns passen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

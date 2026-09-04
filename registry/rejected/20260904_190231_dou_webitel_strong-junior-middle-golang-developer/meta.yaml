@@ -1,0 +1,12 @@
+schema_version: 1
+source: dou
+source_job_id: '369501'
+source_url: https://jobs.dou.ua/companies/webitel/vacancies/369501/
+title: Strong Junior/Middle Golang Developer
+company: Webitel
+location: Львів, віддалено
+published_at: '2026-08-12'
+rejection_category: stale
+rejection_reason: published_at 2026-08-12 is older than 7 days
+updated_at: '2026-09-04T19:02:31Z'
+rejected_at: '2026-09-04T19:02:31Z'

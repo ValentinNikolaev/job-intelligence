@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 84
+Total vacancies: 89
 
-- Found: 67
+- Found: 72
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,11 @@ Total vacancies: 84
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_190227_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-04_190227_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-04 | [ShippyPro](../registry/jobs/2026-09-04_190227_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-04_190227_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-04 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_190227_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-04_190227_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_190227_intesys_java-software-developer_0786646f/) | [Java Software Developer](../registry/jobs/2026-09-04_190227_intesys_java-software-developer_0786646f/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-04 | [virtual7 GmbH](../registry/jobs/2026-09-04_190217_virtual7-gmbh_senior-cloud-developer-m-w-d/) | [Senior Cloud Developer (m/w/d)](../registry/jobs/2026-09-04_190217_virtual7-gmbh_senior-cloud-developer-m-w-d/job.md) | Homeoffice | Arbeitnow | Found | 2026-09-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-senior-cloud-developer-bonn-375513) | — | — | — | — | — |
 | 2026-09-04 | [Canonical](../registry/jobs/2026-09-04_150204_canonical_c-golang-software-engineer-working-on-dqlite-a-r/) | [C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/2026-09-04_150204_canonical_c-golang-software-engineer-working-on-dqlite-a-r/job.md) | EMEA | Jobicy | Found | 2026-09-04 | [Jobicy](https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite) | — | — | — | — | — |
 | 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_150151_intesys_developer/) | [Developer](../registry/jobs/2026-09-04_150151_intesys_developer/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
 | 2026-09-04 | [Lyto Brands Group GmbH](../registry/jobs/2026-09-04_150141_lyto-brands-group-gmbh_ai-product-engineer-internal-tools-automation-m/) | [AI Product Engineer - Internal Tools & Automation (m/w/d) - fully remote](../registry/jobs/2026-09-04_150141_lyto-brands-group-gmbh_ai-product-engineer-internal-tools-automation-m/job.md) | Düsseldorf | Arbeitnow | Found | 2026-09-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/lyto-brands-group-gmbh/ai-product-engineer-internal-tools-automation-fully-remote-dusseldorf-81871) | — | — | — | — | — |

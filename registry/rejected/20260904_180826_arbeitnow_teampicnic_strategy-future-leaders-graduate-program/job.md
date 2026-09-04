@@ -69,4 +69,4 @@ Kurz gesagt: Wenn du nicht nur mitlaufen, sondern deinen Berufseinstieg aktiv mi
 
 **Schick uns deine Bewerbung gern auf Englisch, wenn du schon eine englische Version parat hast.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

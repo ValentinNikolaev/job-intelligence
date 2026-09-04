@@ -229,4 +229,4 @@ Erfahrung in Beratung oder Schulung — der Hebel für die Beratungs-Perspektive
 
 Abgeschlossene Ausbildung oder Studium im IT-Bereich — wenn du es stattdessen praktisch gelernt hast, zählt das bei uns genauso.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

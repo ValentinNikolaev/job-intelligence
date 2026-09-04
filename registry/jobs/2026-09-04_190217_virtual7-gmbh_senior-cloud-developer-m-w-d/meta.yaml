@@ -1,0 +1,31 @@
+schema_version: 2
+id: f2e48994-4872-4724-9a9f-a8d69a8f635d
+title: Senior Cloud Developer (m/w/d)
+company: virtual7 GmbH
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Experienced, freelance
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-cloud-developer-bonn-375513
+  url: https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-senior-cloud-developer-bonn-375513
+  metadata:
+    tags:
+    - Customer Cluster Defense & Public Security
+    - Remote
+    job_types:
+    - Experienced
+    - freelance
+published_at: '2026-09-04T17:30:34Z'
+discovered_at: '2026-09-04T19:02:17Z'
+updated_at: '2026-09-04T19:02:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-04T19:02:17Z'
+analysis_priority: 0
+fingerprint: sha256:5e12748a9ea4e010063d31afe6babfebe826cd941caac3f05b63ac2fbc2f67c1
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

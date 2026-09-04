@@ -107,4 +107,4 @@ Darüber hinaus bist du Mitmenschen gegenüber wertschätzend. Ehrlichkeit und R
 
 Werde Teil von A-LEVEL und sei ein Teil davon, Headhunting im E-Commerce auf ein neues Level zu heben! Wir freuen uns auf deine Bewerbung.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

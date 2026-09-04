@@ -79,4 +79,4 @@ Wenn du ein Unternehmen suchst, in dem deine Talente gefördert werden und das d
 
 Bist du neugierig geworden? Dann schick uns noch heute deine Bewerbungsunterlagen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

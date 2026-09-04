@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152300'
+source_url: https://jobicy.com/jobs/152300-full-stack-product-engineer-intern-agent-native
+title: Full Stack Product Engineer Intern, Agent Native
+company: Mactores
+location: Anywhere
+published_at: '2026-09-01T05:17:12Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-04T19:02:42Z'
+rejected_at: '2026-09-04T19:02:42Z'
