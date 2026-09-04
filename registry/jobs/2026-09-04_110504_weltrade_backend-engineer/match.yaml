@@ -1,0 +1,32 @@
+score: 76
+recommendation: match
+summary: Strong fit for a remote PHP backend role through Symfony and Laravel experience,
+  API integrations, messaging, production reliability, and fintech-adjacent payment
+  experience, with several role-specific quality and legacy-modernization requirements
+  not explicitly evidenced.
+strengths:
+- More than five years of commercial PHP experience with Symfony and Laravel in production
+  backend systems.
+- Demonstrated REST integrations, retries, resilient messaging pipelines, observability,
+  and production troubleshooting.
+- Relevant fintech and payment-gateway background, including Stripe, PayPal, and Skrill
+  integrations.
+- Experience with RabbitMQ, MySQL, PostgreSQL, event-driven systems, and incremental
+  operational improvement.
+gaps:
+- PHP 8.1+, Doctrine, PHPStan or Psalm level 6+, and PHPUnit integration-test practice
+  are not explicitly established in the profile.
+- Direct MariaDB work on tables with hundreds of millions of rows and explicit strangler-fig
+  modernization experience are not evidenced.
+concerns:
+- The posting emphasizes trading and affiliate mechanics, while the candidate profile
+  does not establish direct FX trading or attribution-domain experience.
+- The role requires active use of AI coding tools; the profile establishes LLM automation
+  work but not the named development-tool workflow.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-04T11:26:29Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b9a9448aa119a7c919c664bb56995d6e51eca06661a43826ad64a49e92982d9c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

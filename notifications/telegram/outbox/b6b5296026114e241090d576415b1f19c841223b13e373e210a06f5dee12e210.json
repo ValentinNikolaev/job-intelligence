@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-04T11:26:29Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Weltrade",
+      "directory": "2026-09-04_110504_weltrade_backend-engineer",
+      "score": 76,
+      "title": "Backend Engineer",
+      "url": "https://jobs.dou.ua/companies/weltrade/vacancies/372120/",
+      "vacancy_id": "9102722f-499f-4106-a17c-e627268d4a47"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b6b5296026114e241090d576415b1f19c841223b13e373e210a06f5dee12e210",
+  "schema_version": 1
+}
