@@ -83,4 +83,4 @@ Sie haben Interesse an unserer offenen Vakanz? Dann bewerben Sie sich ganz einfa
 
 Wir freuen uns, Sie kennenzulernen!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

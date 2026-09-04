@@ -59,4 +59,4 @@ Bei Sanoptis schätzen wir Talent, Leidenschaft und Einstellung über spezifisch
 
 Wenn Du Interesse an dieser spannenden Herausforderung hast und Teil unseres wachsenden Teams werden möchtest, sende uns bitte Deinen Lebenslauf unter Angabe Deiner Gehaltsvorstellung sowie Deines frühestmöglichen Eintrittstermins. Wir freuen uns darauf, von Dir zu hören!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

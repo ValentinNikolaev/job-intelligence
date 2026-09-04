@@ -95,4 +95,4 @@ Dann bewirb dich, ein Lebenslauf reicht, ein Anschreiben brauchst du nicht. Wenn
 
 O1 Willst du auch die sieben Screening-Fragen nochmal einzeln als Copy-Paste-Liste, falls die UI die separat abfragt? Die hatte ich im letzten Entwurf schon mitgeliefert, aber nicht in diesem Fünf-Block-Format.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

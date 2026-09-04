@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 84
+Total vacancies: 86
 
-- Found: 67
+- Found: 69
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 84
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-04 | [Canonical](../registry/jobs/2026-09-04_110515_canonical_c-golang-software-engineer-working-on-dqlite-a-r/) | [C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/2026-09-04_110515_canonical_c-golang-software-engineer-working-on-dqlite-a-r/job.md) | EMEA | Jobicy | Found | 2026-09-04 | [Jobicy](https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite) | — | — | — | — | — |
+| 2026-09-04 | [Weltrade](../registry/jobs/2026-09-04_110504_weltrade_backend-engineer/) | [Backend Engineer](../registry/jobs/2026-09-04_110504_weltrade_backend-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-09-04 | [Dou](https://jobs.dou.ua/companies/weltrade/vacancies/372120/) | [Open](../registry/jobs/2026-09-04_110504_weltrade_backend-engineer/company.md) | — | — | — | — |
 | 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_070218_intesys_developer/) | [Developer](../registry/jobs/2026-09-04_070218_intesys_developer/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
 | 2026-09-04 | [ShippyPro](../registry/jobs/2026-09-04_070218_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-04_070218_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-04 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_070218_intesys_java-software-developer_642cce7a/) | [Java Software Developer](../registry/jobs/2026-09-04_070218_intesys_java-software-developer_642cce7a/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |

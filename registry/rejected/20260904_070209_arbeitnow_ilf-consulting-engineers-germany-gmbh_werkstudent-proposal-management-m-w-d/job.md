@@ -106,4 +106,4 @@ Nimm an diversen Freizeitaktivitäten des **Club of Young Engineers** der ILF te
 
 **Ihr Ansprechpartner: **Frau Lina Thiele (+49 40 524754614 /
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

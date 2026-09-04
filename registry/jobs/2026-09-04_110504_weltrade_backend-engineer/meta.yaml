@@ -1,0 +1,34 @@
+schema_version: 2
+id: 9102722f-499f-4106-a17c-e627268d4a47
+title: Backend Engineer
+company: Weltrade
+company_url: https://jobs.dou.ua/companies/weltrade/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372120'
+  url: https://jobs.dou.ua/companies/weltrade/vacancies/372120/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 вересня
+    listing_summary: About Weltrade Weltrade is a leading international Fintech company
+      with over two decades of stability and trust in the global FX and online trading
+      industry.
+published_at: '2026-09-04'
+discovered_at: '2026-09-04T11:05:04Z'
+updated_at: '2026-09-04T11:05:04Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-04T11:05:04Z'
+analysis_priority: 100
+fingerprint: sha256:6e14adb438aa880bf5764d1154d343637552014c7ae65f188ce9a798a9909b07
+data_source: dou
+content_source: dou
+company_content_source: dou

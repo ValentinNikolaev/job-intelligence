@@ -63,4 +63,4 @@ Joining us means:
 - Team culture. Regular team and company events throughout the year, from after work socials to our summer and Christmas parties.
 If you're excited about keeping the people and systems of a quantum computing company running while you study, we'd love to hear from you.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
