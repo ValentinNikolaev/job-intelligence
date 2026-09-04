@@ -49,4 +49,4 @@ Are you an experienced SAP FICO Consultant looking for a new challenge? This is 
 
 - Stable company which invest in their employees
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

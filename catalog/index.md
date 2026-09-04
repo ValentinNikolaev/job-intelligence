@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 86
+Total vacancies: 81
 
-- Found: 69
+- Found: 64
 - Applied: 16
 - Interview: 1
 
@@ -12,13 +12,8 @@ Total vacancies: 86
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-04 | [Canonical](../registry/jobs/2026-09-04_110515_canonical_c-golang-software-engineer-working-on-dqlite-a-r/) | [C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/2026-09-04_110515_canonical_c-golang-software-engineer-working-on-dqlite-a-r/job.md) | EMEA | Jobicy | Found | 2026-09-04 | [Jobicy](https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite) | — | — | — | — | — |
+| 2026-09-04 | [Hostaway](../registry/jobs/2026-09-04_121043_hostaway_senior-backend-engineer-ai-platform-100-remote-e/) | [Senior Backend Engineer, AI Platform - 100% Remote - EMEA](../registry/jobs/2026-09-04_121043_hostaway_senior-backend-engineer-ai-platform-100-remote-e/job.md) | Remote job | Cleanjobdata | Found | 2026-09-04 | [Cleanjobdata](https://careers.hostaway.com/o/senior-backend-engineer-ai-platform-100-remote-emea-3) | [Open](../registry/jobs/2026-09-04_121043_hostaway_senior-backend-engineer-ai-platform-100-remote-e/company.md) | — | — | — | — |
 | 2026-09-04 | [Weltrade](../registry/jobs/2026-09-04_110504_weltrade_backend-engineer/) | [Backend Engineer](../registry/jobs/2026-09-04_110504_weltrade_backend-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-09-04 | [Dou](https://jobs.dou.ua/companies/weltrade/vacancies/372120/) | [Open](../registry/jobs/2026-09-04_110504_weltrade_backend-engineer/company.md) | — | — | — | — |
-| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_070218_intesys_developer/) | [Developer](../registry/jobs/2026-09-04_070218_intesys_developer/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
-| 2026-09-04 | [ShippyPro](../registry/jobs/2026-09-04_070218_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-04_070218_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-04 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
-| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_070218_intesys_java-software-developer_642cce7a/) | [Java Software Developer](../registry/jobs/2026-09-04_070218_intesys_java-software-developer_642cce7a/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
-| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_070218_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-04_070218_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
-| 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_070218_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-04_070218_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-09-03 | [Monzo](../registry/jobs/2026-09-03_230349_monzo_backend-engineer-iii/) | [Backend Engineer III](../registry/jobs/2026-09-03_230349_monzo_backend-engineer-iii/job.md) | UK | Jobicy | Found | 2026-09-03 | [Jobicy](https://jobicy.com/jobs/152499-backend-engineer-iii) | — | — | — | — | — |
 | 2026-09-03 | [Agiliway](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/) | [Strong Middle/Senior Golang Developer](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/job.md) | Львів, Чернівці, віддалено | Dou | Found | 2026-09-03 | [Dou](https://jobs.dou.ua/companies/agiliway/vacancies/372032/) | [Open](../registry/jobs/2026-09-03_180852_agiliway_strong-middle-senior-golang-developer/company.md) | — | — | — | — |
 | 2026-09-03 | [Bitmotive](../registry/jobs/2026-09-03_180852_bitmotive_fullstack-developer-laravel-react/) | [Fullstack Developer (Laravel + React)](../registry/jobs/2026-09-03_180852_bitmotive_fullstack-developer-laravel-react/job.md) | віддалено | Dou | Found | 2026-09-03 | [Dou](https://jobs.dou.ua/companies/bitmotive-llc/vacancies/371897/) | [Open](../registry/jobs/2026-09-03_180852_bitmotive_fullstack-developer-laravel-react/company.md) | — | — | — | — |

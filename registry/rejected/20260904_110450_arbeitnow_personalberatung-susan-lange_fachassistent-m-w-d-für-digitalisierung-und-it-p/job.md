@@ -45,4 +45,4 @@ Lange Straße 6
 
 Telefon: 0381 - 40 33 45 60
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -67,4 +67,4 @@ Wenn Du Erfahrung mit **SAP RE-FX** mitbringst und Dir gerne einmal unverbindlic
 
 Gerne erzähle ich Dir in einem ersten Gespräch mehr über das Unternehmen, die Projekte und die Rahmenbedingungen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

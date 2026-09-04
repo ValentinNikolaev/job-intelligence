@@ -85,4 +85,4 @@ No artificial intelligence (AI) is used in the screening, assessment, or selecti
 Solactive does not charge candidates any fees at any stage of the recruitment process and will never request payment for CV enhancement, interviews, training, equipment, or other recruitment-related services. Please be cautious of fake profiles or fraudulent messages claiming to represent Solactive. If you are unsure whether a communication is legitimate, contact us at .
 Solactive does not accept unsolicited CVs or candidate profiles from recruitment agencies. Any cooperation request must be addressed directly to People & Culture. Costs related to unsolicited CVs or candidate profiles will not be covered by Solactive.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -63,4 +63,4 @@ Sie konzentrieren sich auf das, was Sie am besten können: **Recruiting und den 
 
 Wenn Sie Erfahrung im Recruiting mitbringen und Interesse an einer flexiblen Zusammenarbeit auf Freelancer-Basis haben, freuen wir uns, von Ihnen zu hören.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

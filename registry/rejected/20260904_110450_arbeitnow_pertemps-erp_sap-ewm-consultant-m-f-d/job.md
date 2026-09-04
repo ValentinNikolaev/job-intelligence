@@ -47,4 +47,4 @@ Klingt interessant? Dann bewirb dich!
 
 *Auch wenn diese Stelle nicht ganz deinen Fähigkeiten entspricht, vertreten wir zahlreiche Kunden aus dem SAP-Bereich. Wenn du also auf der Suche bist, bewirb dich gerne bei uns.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

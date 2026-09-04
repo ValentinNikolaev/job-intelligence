@@ -1,0 +1,36 @@
+schema_version: 2
+id: 1431c36e-82e6-4f54-b4fb-c088f40193f7
+title: Senior Backend Engineer, AI Platform - 100% Remote - EMEA
+company: Hostaway
+company_url: https://careers.hostaway.com
+location: Remote job
+remote: true
+employment_type: FULL_TIME
+sources:
+- source: cleanjobdata
+  source_job_id: '89032685'
+  url: https://careers.hostaway.com/o/senior-backend-engineer-ai-platform-100-remote-emea-3
+  metadata:
+    profile: backend-italy
+    employer_id: '950124201'
+    remote_type: remote_region
+    is_active: true
+    language: en
+    experience_level: MI
+    experience_levels:
+    - MI
+    company_industry: Software Development
+    company_employee_count: 387
+    company_linkedin_url: https://www.linkedin.com/company/hostaway
+published_at: '2026-09-03T14:51:41.000Z'
+discovered_at: '2026-09-04T12:10:43Z'
+updated_at: '2026-09-04T12:10:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-04T12:10:43Z'
+analysis_priority: 0
+fingerprint: sha256:ad5ff2b9e8c6358be262175c9a95bfc32be6d26795dc0120b32987c71c810c52
+data_source: cleanjobdata
+content_source: cleanjobdata
+company_content_source: cleanjobdata
