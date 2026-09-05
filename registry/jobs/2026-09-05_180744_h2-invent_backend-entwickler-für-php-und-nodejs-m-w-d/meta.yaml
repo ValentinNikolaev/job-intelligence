@@ -1,0 +1,24 @@
+schema_version: 2
+id: db6fe193-3a43-4623-aa76-916ba5143a78
+title: Backend Entwickler für PHP und NodeJS (m/w/d)
+company: H2 invent
+company_url: null
+location: Tumringen, Lörrach
+remote: null
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5872148833'
+  url: https://www.adzuna.de/details/5872148833?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-05T18:14:31Z'
+discovered_at: '2026-09-05T18:07:44Z'
+updated_at: '2026-09-05T18:07:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-05T18:07:44Z'
+analysis_priority: 0
+fingerprint: sha256:c676582a6cf270bcc6f70676f6425eb6f62767fae4eb2a8728398ccc3a755b97
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

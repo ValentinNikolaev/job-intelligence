@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '151950'
+source_url: https://jobicy.com/jobs/151950-qa-engineer-4
+title: QA Engineer
+company: Workwize
+location: Europe
+published_at: '2026-08-28T18:25:17Z'
+rejection_category: stale
+rejection_reason: published_at 2026-08-28T18:25:17Z is older than 7 days
+updated_at: '2026-09-05T18:08:11Z'
+rejected_at: '2026-09-05T18:08:11Z'

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 83
+Total vacancies: 84
 
-- Found: 66
+- Found: 67
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 83
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-05 | [H2 invent](../registry/jobs/2026-09-05_180744_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/) | [Backend Entwickler für PHP und NodeJS (m/w/d)](../registry/jobs/2026-09-05_180744_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/job.md) | Tumringen, Lörrach | Adzuna | Found | 2026-09-05 | [Adzuna](https://www.adzuna.de/details/5872148833?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_061028_intesys_java-software-developer_943de970/) | [Java Software Developer](../registry/jobs/2026-09-05_061028_intesys_java-software-developer_943de970/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
 | 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_061028_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-05_061028_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
 | 2026-09-05 | [virtual7 GmbH](../registry/jobs/2026-09-05_061015_virtual7-gmbh_senior-cloud-developer-m-w-d/) | [Senior Cloud Developer (m/w/d)](../registry/jobs/2026-09-05_061015_virtual7-gmbh_senior-cloud-developer-m-w-d/job.md) | Homeoffice | Arbeitnow | Found | 2026-09-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-senior-cloud-developer-bonn-375513) | — | — | — | — | — |

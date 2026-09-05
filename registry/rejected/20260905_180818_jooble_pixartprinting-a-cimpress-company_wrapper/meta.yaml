@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-1428202942125443664'
+source_url: https://jooble.org/away/-1428202942125443664?p=1&pos=5&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=60&brelb=10&scr=29.781694&bscr=29.781694&aq=408878620187584853&elckey=-6158865799272662153
+title: Wrapper
+company: Pixartprinting - a Cimpress Company
+location: Italian Republic
+published_at: '2026-09-03T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-05T18:08:18Z'
+rejected_at: '2026-09-05T18:08:18Z'

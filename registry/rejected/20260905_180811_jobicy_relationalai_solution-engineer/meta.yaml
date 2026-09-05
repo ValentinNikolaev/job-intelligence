@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152574'
+source_url: https://jobicy.com/jobs/152574-solution-engineer-3
+title: Solution Engineer
+company: RelationalAI
+location: Anywhere
+published_at: '2026-09-05T11:18:47Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-05T18:08:11Z'
+rejected_at: '2026-09-05T18:08:11Z'
