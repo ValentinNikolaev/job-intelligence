@@ -1,0 +1,24 @@
+score: 74
+recommendation: match
+summary: The role strongly matches the candidate's Go backend, AWS, microservices,
+  production support and infrastructure experience, with some uncertainty around Poland-based
+  remote eligibility and the unspecified remaining requirements.
+strengths:
+- Extensive demonstrated Go backend development.
+- Strong AWS, microservices, production reliability and CI/CD experience.
+- Terraform or CloudFormation-adjacent infrastructure work is plausible from the documented
+  cloud and deployment background, though the exact tool is not evidenced.
+gaps:
+- No supported evidence of Terraform or CloudFormation specifically.
+- The available posting excerpt does not establish all required technologies or language
+  expectations.
+concerns:
+- Remote work is listed for Poland, but eligibility for an Italy-based worker is not
+  stated.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-05T19:54:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:abce175c6920ea84b6a74cfaba1cba0838f23af8117aa2f98c113dac8cfb20ca
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,23 @@
+score: 18
+recommendation: not_match
+summary: The candidate has relevant Go, AWS, Kubernetes, CI/CD and reliability experience,
+  but the vacancy explicitly permits remote work only from Germany and requires SÜ2
+  clearance for a Bonn project.
+strengths:
+- Supported experience with Go, AWS, Kubernetes, CI/CD and GitOps-adjacent tooling.
+- Relevant backend reliability and production operations background.
+gaps:
+- No supported evidence of CEPH/rook, OCI registry operations, SBOMs, artifact signing
+  or Kubernetes operator development.
+- No evidence of SÜ2 eligibility.
+concerns:
+- Candidate location is Italy while the posting states remote only in Germany and
+  includes on-site Bonn work.
+hard_rejection: true
+hard_rejection_reason: Explicit Germany-only remote/location requirement conflicts
+  with the candidate's Italy location.
+analyzed_at: '2026-09-05T19:54:10Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8c42f8b28b703ed8592d8f5e6998d033b3ed5e363f95cbc8856f0e48f6f0d1c6
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
