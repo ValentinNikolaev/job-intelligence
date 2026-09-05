@@ -1,0 +1,42 @@
+# Werkstudent (m/w/d) Legal Tech Sales
+
+Posted: 2026-09-05T11:09:17Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: vacancy is explicitly non-remote
+
+**Aufgaben**
+
+Bei der BBH Solutions AG, dem Legal-Tech-Startup der renommierten BBH Gruppe, gestalten wir die Zukunft der Rechtsberatung. Seit 2021 entwickeln und vertreiben wir innovative Software-Lösungen, die den Rechtsmarkt digitalisieren.
+
+**Aufgaben**
+
+- Unterstützung des Vertriebsteams im operativen Tagesgeschäft und Kommunikation zu Mandant:innen, Interessent:innen und Partner:innen
+- Qualifizierung und Bearbeitung eingehender Anfragen (Inbound Sales) & Unterstützung bei der Neukundengewinnung inkl. Erstansprache (Outbound Sales)
+- Pflege von Kundendaten und Vertriebsaktivitäten im CRM und Erstellung sowie Nachverfolgung von Angeboten
+- Vorbereitung von Kundenterminen, Präsentationen und Vertriebsunterlagen
+- Recherche zu Zielkunden, Märkten und Wettbewerbern
+
+**Profil**
+
+- Bachelor-/oder Masterstudiengang in BWL, Marketing, Vertrieb, Kommunikationswissenschaften oder einem vergleichbaren Studienfach
+- Wünschenswert: Erste Erfahrungen im Austausch mit Kund:innen, Mandant:innen oder externen Stakeholdern
+- Interesse an Legal Tech, Vertrieb, Kundenkommunikation und Business Development
+- Kommunikationsstärke, Begeisterungsfähigkeit sowie ein sicheres und freundliches Auftreten
+- Strukturierte, selbstständige und zuverlässige Arbeitsweise
+- Hohe Eigeninitiative und Lernbereitschaft
+- Sehr gute Deutschkenntnisse in Wort und Schrift (mind. auf dem Niveau C1)
+
+**Warum wir?**
+
+Bei BBH arbeitest Du in einem modernen Arbeitsumfeld mit zentral gelegenen Standorten. Kein Tag ist wie der andere! Spannende Fragestellungen lösen wir interdisziplinär gemeinsam mit Kolleg:innen. Gleichzeitig fördern wir Deine persönliche Weiterentwicklung. Natürlich haben wir noch mehr zu bieten:
+
+- Stundenlohn: 18 Euro für Bachelorstudierende, 20 Euro für Masterstudierende
+- Flexible Arbeitszeiten und die Möglichkeit mobil zu arbeiten
+- Vergünstigter Mittagstisch
+- Attraktive Preisnachlässe und Rabatte bei namhaften Anbietern für Produkte, Dienstleistungen und öffentliche Einrichtungen
+- Betriebliches Gesundheitsmanagement zur Förderung der mentalen und körperlichen Gesundheit, inklusive vergünstigte Mitgliedschaft bei Urban Sports
+
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

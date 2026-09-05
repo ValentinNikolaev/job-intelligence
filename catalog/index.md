@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 84
+Total vacancies: 87
 
-- Found: 67
+- Found: 70
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 84
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-05 | [CRMOZ](../registry/jobs/2026-09-05_195024_crmoz_junior-full-stack-developer/) | [Junior Full Stack Developer](../registry/jobs/2026-09-05_195024_crmoz_junior-full-stack-developer/job.md) | віддалено | Dou | Found | 2026-09-05 | [Dou](https://jobs.dou.ua/companies/crmoz/vacancies/372154/) | [Open](../registry/jobs/2026-09-05_195024_crmoz_junior-full-stack-developer/company.md) | — | — | — | — |
+| 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_195019_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-05_195019_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-05 | [ShippyPro](../registry/jobs/2026-09-05_195019_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-05_195019_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-05 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-05 | [H2 invent](../registry/jobs/2026-09-05_180744_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/) | [Backend Entwickler für PHP und NodeJS (m/w/d)](../registry/jobs/2026-09-05_180744_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/job.md) | Tumringen, Lörrach | Adzuna | Found | 2026-09-05 | [Adzuna](https://www.adzuna.de/details/5872148833?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_061028_intesys_java-software-developer_943de970/) | [Java Software Developer](../registry/jobs/2026-09-05_061028_intesys_java-software-developer_943de970/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
 | 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_061028_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-05_061028_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |

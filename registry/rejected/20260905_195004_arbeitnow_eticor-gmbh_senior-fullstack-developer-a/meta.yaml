@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-senior-fullstack-developer-a-koln-421029
+source_url: https://www.arbeitnow.com/jobs/companies/eticor-gmbh/remote-senior-fullstack-developer-a-koln-421029
+title: Senior Fullstack Developer (a)
+company: Eticor GmbH
+location: Homeoffice
+published_at: '2026-09-05T17:30:28Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-05T19:50:04Z'
+rejected_at: '2026-09-05T19:50:04Z'
