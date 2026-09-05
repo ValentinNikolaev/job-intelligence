@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150239'
+source_url: https://jobicy.com/jobs/150239-pre-sales-solution-architect-ai-infrastructure-remote-in-the-eu
+title: Pre-Sales Solution Architect – AI Infrastructure (remote in the EU)
+company: Mirantis
+location: Europe
+published_at: '2026-09-05T05:30:08Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-05T12:09:06Z'
+rejected_at: '2026-09-05T12:09:06Z'
