@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152328'
+source_url: https://jobicy.com/jobs/152328-sdet-ii
+title: SDET II
+company: Tala
+location: Anywhere
+published_at: '2026-09-01T14:34:20Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-05T06:10:44Z'
+rejected_at: '2026-09-05T06:10:44Z'

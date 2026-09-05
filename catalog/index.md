@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 79
+Total vacancies: 83
 
-- Found: 62
+- Found: 66
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 79
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_061028_intesys_java-software-developer_943de970/) | [Java Software Developer](../registry/jobs/2026-09-05_061028_intesys_java-software-developer_943de970/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-05 | [Intesys](../registry/jobs/2026-09-05_061028_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-05_061028_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-05 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-05 | [virtual7 GmbH](../registry/jobs/2026-09-05_061015_virtual7-gmbh_senior-cloud-developer-m-w-d/) | [Senior Cloud Developer (m/w/d)](../registry/jobs/2026-09-05_061015_virtual7-gmbh_senior-cloud-developer-m-w-d/job.md) | Homeoffice | Arbeitnow | Found | 2026-09-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/virtual7-gmbh/remote-senior-cloud-developer-bonn-375513) | — | — | — | — | — |
+| 2026-09-05 | [Appliscale](../registry/jobs/2026-09-05_061011_appliscale_backend-engineer-golang-remote/) | [Backend Engineer (Golang) (Remote)](../registry/jobs/2026-09-05_061011_appliscale_backend-engineer-golang-remote/job.md) | Polska | Adzuna | Found | 2026-09-05 | [Adzuna](https://www.adzuna.pl/details/5871031013?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-04 | [Canonical](../registry/jobs/2026-09-04_150204_canonical_c-golang-software-engineer-working-on-dqlite-a-r/) | [C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/2026-09-04_150204_canonical_c-golang-software-engineer-working-on-dqlite-a-r/job.md) | EMEA | Jobicy | Found | 2026-09-04 | [Jobicy](https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite) | — | — | — | — | — |
 | 2026-09-04 | [Intesys](../registry/jobs/2026-09-04_150151_intesys_developer/) | [Developer](../registry/jobs/2026-09-04_150151_intesys_developer/job.md) | — | Custom | Found | 2026-09-04 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
 | 2026-09-04 | [Lyto Brands Group GmbH](../registry/jobs/2026-09-04_150141_lyto-brands-group-gmbh_ai-product-engineer-internal-tools-automation-m/) | [AI Product Engineer - Internal Tools & Automation (m/w/d) - fully remote](../registry/jobs/2026-09-04_150141_lyto-brands-group-gmbh_ai-product-engineer-internal-tools-automation-m/job.md) | Düsseldorf | Arbeitnow | Found | 2026-09-04 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/lyto-brands-group-gmbh/ai-product-engineer-internal-tools-automation-fully-remote-dusseldorf-81871) | — | — | — | — | — |

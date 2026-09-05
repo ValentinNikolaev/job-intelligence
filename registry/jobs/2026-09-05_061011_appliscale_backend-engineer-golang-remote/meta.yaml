@@ -1,0 +1,24 @@
+schema_version: 2
+id: 0071d4dc-5b34-402c-acb9-16187fb3a0ec
+title: Backend Engineer (Golang) (Remote)
+company: Appliscale
+company_url: null
+location: Polska
+remote: true
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5871031013'
+  url: https://www.adzuna.pl/details/5871031013?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-04T23:18:51Z'
+discovered_at: '2026-09-05T06:10:11Z'
+updated_at: '2026-09-05T06:10:11Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-05T06:10:11Z'
+analysis_priority: 0
+fingerprint: sha256:8dd1cc3032654e9309da2de95a18b5b65c6908651a985de596756332c58dab0c
+data_source: adzuna
+content_source: adzuna
+company_content_source: null
