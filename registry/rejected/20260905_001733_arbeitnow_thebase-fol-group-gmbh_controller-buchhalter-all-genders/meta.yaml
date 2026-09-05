@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: controller-buchhalter-all-genders-berlin-108922
+source_url: https://www.arbeitnow.com/jobs/companies/thebase-fol-group-gmbh/controller-buchhalter-all-genders-berlin-108922
+title: Controller/ Buchhalter (all genders)
+company: theBASE FOL Group GmbH
+location: Berlin
+published_at: '2026-09-04T22:00:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-05T00:17:33Z'
+rejected_at: '2026-09-05T00:17:33Z'
