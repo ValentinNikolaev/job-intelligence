@@ -3,21 +3,21 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Strong PHP/Laravel backend and technical-lead experience aligns well with the senior full-stack and project-coordination scope, while frontend depth, Java, and HubSpot are not demonstrated.
+Strong PHP/Laravel, API, database, Agile leadership, mentoring, and project coordination fit, with uncertainty around Java, React/Vue, Livewire/FilamentPHP, and recent full-stack delivery.
 
 ## Why it matches
 
-- Extensive PHP and Laravel experience, including backend systems and REST APIs.
-- Recent technical-lead experience includes planning, delivery ownership, team coordination, mentoring, and technical interviews.
-- Experience with MySQL, PostgreSQL, Kubernetes, AWS, CI/CD, and production reliability supports the infrastructure requirements.
-- Candidate is based in Italy and the vacancy clearly allows remote work; English is documented at professional working level.
+- Extensive PHP and Laravel experience across production backend systems.
+- Led teams, mentored developers, planned delivery, and worked with product and technical stakeholders.
+- Demonstrated REST APIs, MySQL/PostgreSQL, infrastructure, performance work, and Agile delivery.
+- Italy-based candidate is compatible with Oderzo or remote and has professional English evidence.
 
 ## Gaps
 
-- ReactJS, Vue.js, HTML/CSS, Java, Livewire, FilamentPHP, and HubSpot CRM are not explicitly evidenced.
-- Budgeting and formal project-management ownership are less directly evidenced than technical delivery and team leadership.
+- Java is required but unsupported by the candidate profile.
+- ReactJS/Vue.js, HTML/CSS, Livewire, and FilamentPHP are not demonstrated.
 
 ## Concerns
 
-- The role is genuinely full-stack and project-management oriented, so the unverified frontend and Java requirements may materially affect day-to-day fit.
-- The stated salary range of 38,000–40,000 EUR is below what the candidate may expect; salary expectations are unknown.
+- The role combines full-stack implementation with substantial project-management ownership; formal budgeting responsibility is not established.
+- The Italian posting leaves day-to-day language expectations uncertain.

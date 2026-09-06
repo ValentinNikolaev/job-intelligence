@@ -1,30 +1,27 @@
 score: 78
 recommendation: match
-summary: Strong PHP/Laravel backend and technical-lead experience aligns well with
-  the senior full-stack and project-coordination scope, while frontend depth, Java,
-  and HubSpot are not demonstrated.
+summary: Strong PHP/Laravel, API, database, Agile leadership, mentoring, and project
+  coordination fit, with uncertainty around Java, React/Vue, Livewire/FilamentPHP,
+  and recent full-stack delivery.
 strengths:
-- Extensive PHP and Laravel experience, including backend systems and REST APIs.
-- Recent technical-lead experience includes planning, delivery ownership, team coordination,
-  mentoring, and technical interviews.
-- Experience with MySQL, PostgreSQL, Kubernetes, AWS, CI/CD, and production reliability
-  supports the infrastructure requirements.
-- Candidate is based in Italy and the vacancy clearly allows remote work; English
-  is documented at professional working level.
+- Extensive PHP and Laravel experience across production backend systems.
+- Led teams, mentored developers, planned delivery, and worked with product and technical
+  stakeholders.
+- Demonstrated REST APIs, MySQL/PostgreSQL, infrastructure, performance work, and
+  Agile delivery.
+- Italy-based candidate is compatible with Oderzo or remote and has professional English
+  evidence.
 gaps:
-- ReactJS, Vue.js, HTML/CSS, Java, Livewire, FilamentPHP, and HubSpot CRM are not
-  explicitly evidenced.
-- Budgeting and formal project-management ownership are less directly evidenced than
-  technical delivery and team leadership.
+- Java is required but unsupported by the candidate profile.
+- ReactJS/Vue.js, HTML/CSS, Livewire, and FilamentPHP are not demonstrated.
 concerns:
-- The role is genuinely full-stack and project-management oriented, so the unverified
-  frontend and Java requirements may materially affect day-to-day fit.
-- The stated salary range of 38,000–40,000 EUR is below what the candidate may expect;
-  salary expectations are unknown.
+- The role combines full-stack implementation with substantial project-management
+  ownership; formal budgeting responsibility is not established.
+- The Italian posting leaves day-to-day language expectations uncertain.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-09-06T11:15:39Z'
+analyzed_at: '2026-09-06T12:17:46Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:acd3bb39cb87db59d0f62b53f4b39e0f161d5fd8fd035b319b653307deaec83a
+job_version: sha256:bc8b1edc96783831fb6966821ab3189be24a38c6089c42a6c7cc79c4e8ea05db
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
