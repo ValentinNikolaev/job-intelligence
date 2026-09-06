@@ -9,7 +9,7 @@ employment_type: FULL_TIME
 sources:
 - source: cleanjobdata
   source_job_id: '89032685'
-  url: https://careers.hostaway.com/o/senior-backend-engineer-ai-platform-100-remote-emea-3
+  url: https://cleanjobdata.com/apply/89032685
   metadata:
     profile: backend-italy
     employer_id: '950124201'
@@ -24,7 +24,7 @@ sources:
     company_linkedin_url: https://www.linkedin.com/company/hostaway
 published_at: '2026-09-03T14:51:41.000Z'
 discovered_at: '2026-09-04T12:10:43Z'
-updated_at: '2026-09-04T12:10:43Z'
+updated_at: '2026-09-06T12:09:01Z'
 status: found
 status_history:
 - status: found
