@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: customer-success-manager-berlin-250802
+source_url: https://www.arbeitnow.com/jobs/companies/norman-ai-gmbh/customer-success-manager-berlin-250802
+title: Customer Success Manager
+company: Norman AI GmbH
+location: Berlin
+published_at: '2026-09-06T11:30:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-06T14:03:49Z'
+rejected_at: '2026-09-06T14:03:49Z'

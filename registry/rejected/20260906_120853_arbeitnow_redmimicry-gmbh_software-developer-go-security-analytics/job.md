@@ -163,4 +163,4 @@ German (a plus)
 
 A close match is enough. If the role speaks to you, apply with your CV and anything else you would like us to see. What follows is short and transparent, a few conversations with the team and then your first week in Berlin. We are an equal opportunity employer and welcome applications from all backgrounds and genders. Questions about the role or the process are welcome at any point.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
