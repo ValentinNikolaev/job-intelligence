@@ -1,0 +1,36 @@
+schema_version: 2
+id: 8fbb6597-fade-48ee-9a03-84603da5db61
+title: Junior Full Stack Developer
+company: CRMOZ
+company_url: https://jobs.dou.ua/companies/crmoz/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372154'
+  url: https://jobs.dou.ua/companies/crmoz/vacancies/372154/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 4 вересня
+    listing_summary: 'Ми шукаємо Junior Full Stack Developer для віддаленої роботи.
+
+
+      Наша компанія спеціалізується на інтеграції Zoho CRM та інших продуктів Zoho
+      Corp.'
+published_at: '2026-09-04'
+discovered_at: '2026-09-06T10:15:37Z'
+updated_at: '2026-09-06T10:15:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-06T10:15:37Z'
+analysis_priority: 100
+fingerprint: sha256:752211a8ec3cb64ad8a5100aa481c11f9d7aea0adb126e4ccb6c8f1057fe715e
+data_source: dou
+content_source: dou
+company_content_source: dou
