@@ -1,0 +1,25 @@
+score: 18
+recommendation: not_match
+summary: The captured Intesys page is a mobile-development role centered on Java,
+  Kotlin, Swift, mobile platforms, and mobile UX, none of which is supported as a
+  core candidate specialty.
+strengths:
+- General software-development and API integration experience.
+- Computer-science education and a record of learning complex systems.
+gaps:
+- Java, Kotlin, and Swift are stated as fundamental requirements and are not evidenced
+  in the candidate profile.
+- Mobile application development, mobile testing, and mobile UX experience are not
+  demonstrated.
+concerns:
+- The vacancy title and source page are inconsistent, although the captured requirements
+  remain materially incompatible.
+- Remote-work terms are not stated.
+hard_rejection: true
+hard_rejection_reason: Essential mobile-language requirements are clearly unsupported
+  by the candidate profile.
+analyzed_at: '2026-09-06T14:20:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:32c40d51ebcc0f45782a629fc27d1ff4c5d136059c71efbfd105492d3b77d274
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

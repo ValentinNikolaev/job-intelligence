@@ -1,0 +1,21 @@
+score: 73
+recommendation: match
+summary: Strong PHP and backend fit for an Italy-based digital agency role, with relevant
+  API and web-platform experience; full-stack depth and remote terms are not established.
+strengths:
+- Extensive PHP experience including Laravel and Symfony in production backend systems.
+- Demonstrated REST API, database, performance, and event-driven web-platform work.
+- Candidate is based in Italy and the company lists Italian operating locations.
+gaps:
+- The posting provides no detailed requirements for the frontend stack or seniority.
+- Recent experience is backend-focused, so current hands-on frontend depth is limited.
+concerns:
+- Remote-work availability and the exact responsibilities behind the full-stack title
+  are unclear.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T14:20:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:cd6ea1c69039f406c75e7286f8b8c6b2ad93a26ae38fe4fc6a5054e66371f316
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

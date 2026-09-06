@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-06T14:20:23Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Queryo",
+      "directory": "2026-09-06_140400_queryo_dev-php-developer-full-stack-developer",
+      "score": 73,
+      "title": "DEV: PHP Developer - Full Stack Developer",
+      "url": "https://www.queryo.com/lavora-con-noi.html",
+      "vacancy_id": "c15a84a8-5d1d-478a-8bc7-f2f00fbd29a1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b0121e9d4bb9ba6c5c343fb41b791e046629f05e087e563ee8747b2149daa59b",
+  "schema_version": 1
+}

@@ -1,0 +1,25 @@
+score: 52
+recommendation: possible_match
+summary: Strong PHP and backend-systems alignment, including REST APIs, microservices,
+  MySQL, and PostgreSQL, but the Germany-based vacancy has unclear remote and language
+  compatibility and adds NodeJS.
+strengths:
+- Extensive PHP backend experience with Laravel, Symfony, APIs, and production systems.
+- Demonstrated microservices, database-performance, and event-driven architecture
+  experience.
+- The role's backend focus matches the candidate's professional profile.
+gaps:
+- NodeJS is requested but not demonstrated as a core candidate technology.
+- The captured posting does not establish remote work or an English-language working
+  environment.
+concerns:
+- The role is located in Tumringen, Germany, creating a material location/relocation
+  uncertainty for an Italy-based candidate.
+- The source is an aggregated listing and the full employer terms are not captured.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T14:20:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:64a78edbd1ab2852f8afcd10770c72567364fb377c34e819959141fa499ddedc
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
