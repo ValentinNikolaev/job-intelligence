@@ -1,0 +1,22 @@
+score: 76
+recommendation: match
+summary: Strong technical match for senior PHP/Laravel integration work, with uncertainty
+  because the role is based in Verona and remote terms are not stated.
+strengths:
+- PHP, Laravel, MySQL/PostgreSQL, SQL, Git, APIs, and integration work are directly
+  supported.
+- Senior autonomy and communication experience exceed the stated 4–5 year requirement.
+- Computer Science master degree matches the preferred education.
+gaps:
+- HTML/CSS/AJAX and frontend React/Vue depth are not strongly evidenced.
+- No clear remote or relocation arrangement is stated.
+concerns:
+- Verona-based work may conflict with the candidate being in Rome if on-site presence
+  is required.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:2805d1879d6dfb42d45e5ca8e313d89eb539cbb3dbd83e02dff0c5ab3f5df97c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

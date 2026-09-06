@@ -1,0 +1,21 @@
+score: 78
+recommendation: match
+summary: Strong PHP/Laravel and performance fit for a full-remote web role, with a
+  moderate gap around the required frontend framework.
+strengths:
+- PHP/Laravel web development, optimization, debugging, and robust software delivery
+  are supported.
+- Computer Science degree and senior backend experience align.
+- Full remote arrangement is favorable.
+gaps:
+- React or Vue experience is not clearly demonstrated.
+- The role is full-stack and client-facing, while the profile is predominantly backend.
+concerns:
+- The captured posting is generic and gives limited detail about the actual project.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8dff7454fbcea28bc063f19d8da743a8cfb0b710098bf0a7e6d1c52ed03f4456
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

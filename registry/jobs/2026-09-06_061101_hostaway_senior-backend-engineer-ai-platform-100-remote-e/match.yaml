@@ -1,0 +1,24 @@
+score: 72
+recommendation: match
+summary: Good senior remote EMEA fit through backend APIs, SaaS integrations, AI-supported
+  automation, observability, and production reliability, with a significant Python
+  gap.
+strengths:
+- Senior backend, API, SaaS, integrations, observability, and reliability experience
+  is strong.
+- AI-powered support automation and LLM-assisted workflows are directly relevant.
+- Italy is explicitly within the allowed EMEA location.
+gaps:
+- Strong Python proficiency is a core requirement but is not evidenced in the candidate
+  profile.
+- LangChain, Vercel AI SDK, MCP servers, and Go are not directly demonstrated in this
+  context.
+concerns:
+- The role is AI-platform focused and may require hands-on Python as a screening gate.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8757070bb6aecdc7a295cd1f035635f5a2ed80bb252cfa13f107807647c34594
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

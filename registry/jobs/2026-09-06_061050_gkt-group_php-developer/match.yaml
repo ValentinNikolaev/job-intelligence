@@ -1,0 +1,19 @@
+score: 78
+recommendation: match
+summary: Good match for an experienced PHP developer role requiring Laravel or Symfony,
+  MySQL, and autonomous problem solving.
+strengths:
+- Direct PHP, Laravel/Symfony, and MySQL alignment.
+- Long-term autonomous backend delivery and troubleshooting are evidenced.
+- Relevant web, API, and integration experience.
+gaps:
+- Remote policy, seniority, and broader responsibilities are not stated.
+concerns:
+- The posting is brief and does not clarify employment location or level.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:764d889b2436415b744c578ded2ee097ebbd90b8a8c51ffad341c15dc29230f3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

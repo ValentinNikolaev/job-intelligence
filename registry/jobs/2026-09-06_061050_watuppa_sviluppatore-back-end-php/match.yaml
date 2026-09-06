@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: Strong PHP backend fit with Rome/remote alignment and relevant AWS, SQL,
+  Laravel/Symfony, and legacy-system experience.
+strengths:
+- 15+ years of PHP backend engineering with Laravel and Symfony.
+- AWS, MySQL, APIs, Git, performance, and legacy-code experience are supported.
+- Rome-based remote role matches the candidate location preference.
+gaps:
+- MongoDB, JavaScript depth, and serverless Lambda are not clearly evidenced.
+concerns:
+- The posting mixes junior, mid, and senior levels, so exact level expectations are
+  unclear.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:1033b9c104b15cf05c649dd53f9f1bda702af09204fc6f2cada27dff718b68ec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 82
+recommendation: strong_match
+summary: Strong match for the remote Rome PHP backend role through extensive PHP,
+  Laravel/Symfony, AWS, SQL, APIs, and maintenance experience.
+strengths:
+- Deep PHP backend and framework experience.
+- AWS, MySQL, Git, API, performance, and legacy-code evidence aligns closely.
+- Rome/remote arrangement is favorable.
+gaps:
+- MongoDB, JavaScript, and AWS Lambda are not explicitly demonstrated.
+concerns:
+- The listing gives broad level bands rather than a single seniority target.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:cfb13344c8dbc4ee70835d53ac8d3bc69267697d9a765d26c47a2f17ce94e236
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

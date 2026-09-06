@@ -1,0 +1,21 @@
+score: 18
+recommendation: not_match
+summary: The captured page describes an Intesys frontend developer role, while the
+  candidate profile is backend-focused and does not establish the required frontend
+  stack.
+strengths:
+- General software design, APIs, and cross-functional engineering experience.
+gaps:
+- Frontend implementation, UX-oriented development, and the required JavaScript/mobile-facing
+  stack are not demonstrated.
+- The title and captured content are inconsistent, making the actual role uncertain.
+concerns:
+- The role is not clearly a backend position aligned with the candidate target.
+hard_rejection: true
+hard_rejection_reason: Fundamentally incompatible frontend-oriented role versus the
+  candidate's backend profile.
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:99e5a8fb2875fa11394d75adec2b3cada053291c0c85bb26ae5ce7c1c30c7dfd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

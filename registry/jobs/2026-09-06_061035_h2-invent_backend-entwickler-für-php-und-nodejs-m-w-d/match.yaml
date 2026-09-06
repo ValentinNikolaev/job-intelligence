@@ -1,0 +1,20 @@
+score: 58
+recommendation: possible_match
+summary: Relevant PHP backend, REST, microservices, database, and performance experience
+  fits well, but the German role details and Node.js requirement create material uncertainty.
+strengths:
+- PHP, REST APIs, microservices, MySQL/PostgreSQL, and performance work align closely.
+- Long senior backend experience and cross-functional delivery are supported.
+gaps:
+- Node.js experience is not established.
+- German-language ability is not established and may be required for the local role.
+concerns:
+- The listing is in Germany and the captured description is truncated, so language
+  and on-site expectations are unclear.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-06T10:17:01Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7df3f724e0229dee36113611b52dadfa823ee4ff5cce439560096bbd868c589f
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
