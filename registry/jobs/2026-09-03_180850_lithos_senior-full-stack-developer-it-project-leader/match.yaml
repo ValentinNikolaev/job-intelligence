@@ -1,21 +1,30 @@
-score: 68
+score: 78
 recommendation: match
-summary: Strong senior backend, architecture, delivery, Agile collaboration, and technical-lead
-  evidence supports the role, while the full-stack breadth and Italian business context
-  are less certain.
+summary: Strong PHP/Laravel backend and technical-lead experience aligns well with
+  the senior full-stack and project-coordination scope, while frontend depth, Java,
+  and HubSpot are not demonstrated.
 strengths:
-- Extensive senior software-development and technical-lead experience.
-- Strong API, microservices, cloud, CI/CD, performance, and reliability background.
-- Demonstrated planning, stakeholder collaboration, mentoring, and team leadership.
+- Extensive PHP and Laravel experience, including backend systems and REST APIs.
+- Recent technical-lead experience includes planning, delivery ownership, team coordination,
+  mentoring, and technical interviews.
+- Experience with MySQL, PostgreSQL, Kubernetes, AWS, CI/CD, and production reliability
+  supports the infrastructure requirements.
+- Candidate is based in Italy and the vacancy clearly allows remote work; English
+  is documented at professional working level.
 gaps:
-- Recent full-stack/frontend delivery and project-leader scope are not fully evidenced.
-- Italian language proficiency is not established in the candidate profile.
+- ReactJS, Vue.js, HTML/CSS, Java, Livewire, FilamentPHP, and HubSpot CRM are not
+  explicitly evidenced.
+- Budgeting and formal project-management ownership are less directly evidenced than
+  technical delivery and team leadership.
 concerns:
-- The balance between hands-on frontend work and IT project leadership is unclear.
+- The role is genuinely full-stack and project-management oriented, so the unverified
+  frontend and Java requirements may materially affect day-to-day fit.
+- The stated salary range of 38,000–40,000 EUR is below what the candidate may expect;
+  salary expectations are unknown.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-09-03T18:12:09Z'
+analyzed_at: '2026-09-06T11:15:39Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:bc8b1edc96783831fb6966821ab3189be24a38c6089c42a6c7cc79c4e8ea05db
+job_version: sha256:acd3bb39cb87db59d0f62b53f4b39e0f161d5fd8fd035b319b653307deaec83a
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

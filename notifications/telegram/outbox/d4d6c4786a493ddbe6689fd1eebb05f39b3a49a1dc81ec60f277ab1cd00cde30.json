@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-06T11:15:39Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Lithos",
+      "directory": "2026-09-03_180850_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 78,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "68146416-f00f-423b-8056-e7eb51576252"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d4d6c4786a493ddbe6689fd1eebb05f39b3a49a1dc81ec60f277ab1cd00cde30",
+  "schema_version": 1
+}
