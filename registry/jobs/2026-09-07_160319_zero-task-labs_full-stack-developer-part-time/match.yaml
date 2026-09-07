@@ -1,0 +1,26 @@
+score: 68
+recommendation: possible_match
+summary: Strong Laravel and backend alignment, but the role also requires substantial
+  React and Next.js delivery that is not established in the candidate evidence.
+strengths:
+- PHP and Laravel backend experience
+- DDD and REST API exposure
+- e-commerce and payment integrations
+- testing and production reliability
+gaps:
+- React 18 and TypeScript
+- Next.js SSR
+- Redux Toolkit
+- Tailwind or SCSS Modules
+- direct evidence of full-stack delivery
+concerns:
+- The posting introduction describes a project-manager profile despite the technical
+  vacancy title
+- part-time scope may limit fit
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T16:36:44Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:e4d3862291b86718d3cad11db88b6ce243c11a729b7e0dadf556aed18ee25d38
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

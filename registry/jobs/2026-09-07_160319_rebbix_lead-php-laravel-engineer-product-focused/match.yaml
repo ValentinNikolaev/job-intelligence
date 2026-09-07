@@ -1,0 +1,27 @@
+score: 80
+recommendation: match
+summary: Strong senior PHP and Laravel leadership fit with product collaboration,
+  SaaS, databases, and stakeholder-facing ownership, with Magento and multi-tenant
+  depth needing confirmation.
+strengths:
+- More than eight years of PHP experience
+- Laravel and backend systems
+- SaaS and product ownership
+- MySQL and PostgreSQL
+- technical leadership and mentoring
+- e-commerce background
+gaps:
+- Explicit multi-tenant SaaS implementation
+- Magento 2
+- JavaScript or React
+- direct product-discovery evidence
+concerns:
+- The role combines lead ownership with hands-on frontend and Magento responsibilities
+  that may be broader than the evidenced focus
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T16:36:44Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d7201523d528a85364c085257d3b0dc389ccc8cf1479a7aa97aa7a28797ab004
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

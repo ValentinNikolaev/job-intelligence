@@ -1,0 +1,26 @@
+score: 82
+recommendation: match
+summary: Strong match for PHP backend work in a high-load product environment, with
+  Symfony, PostgreSQL, REST, DDD-adjacent architecture, integrations, and performance
+  optimization evidenced.
+strengths:
+- PHP and Symfony experience
+- PostgreSQL and REST APIs
+- high-scale and performance work
+- microservices and CQRS-related architecture
+- third-party integrations
+- mentoring and technical leadership
+gaps:
+- Yii is not clearly evidenced
+- direct 10k RPS or 10 TB database scale is not established
+- Ukrainian-language proficiency is not documented
+concerns:
+- The iGaming domain may warrant a values and domain-fit check; advertised middle
+  level may underuse the candidate's seniority
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T16:36:44Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b31d5e8e5082caecd83d64fb89943e41c9a9c08f457ca085582e30cb80657b4a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

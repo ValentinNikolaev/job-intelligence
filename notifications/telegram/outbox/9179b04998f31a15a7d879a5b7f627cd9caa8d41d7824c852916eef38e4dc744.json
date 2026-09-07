@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-07T16:36:44Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Zero Task Labs",
+      "directory": "2026-09-07_160319_zero-task-labs_full-stack-developer-part-time",
+      "score": 68,
+      "title": "Full-Stack Developer (part-time)",
+      "url": "https://jobs.dou.ua/companies/zerotasklabs/vacancies/372349/",
+      "vacancy_id": "65606c18-30d7-4c9d-beda-a682669be0ab"
+    },
+    {
+      "company": "WhiteTech",
+      "directory": "2026-09-07_160319_whitetech_senior-lead-backend-developer",
+      "score": 86,
+      "title": "Senior /Lead Backend Developer",
+      "url": "https://jobs.dou.ua/companies/whitetech/vacancies/372348/",
+      "vacancy_id": "dc469111-535c-4760-ba00-75d6488c496c"
+    },
+    {
+      "company": "Rebbix",
+      "directory": "2026-09-07_160319_rebbix_lead-php-laravel-engineer-product-focused",
+      "score": 80,
+      "title": "Lead PHP/Laravel Engineer — Product-Focused",
+      "url": "https://jobs.dou.ua/companies/rebbix/vacancies/372353/",
+      "vacancy_id": "10155f84-1fba-465f-8bd8-4b17d017bf9e"
+    },
+    {
+      "company": "MadAppGang",
+      "directory": "2026-09-07_160319_madappgang_golang-developer",
+      "score": 78,
+      "title": "Golang Developer",
+      "url": "https://jobs.dou.ua/companies/madappgang/vacancies/372364/",
+      "vacancy_id": "44b9291d-1c42-4551-b57e-ad63291ce614"
+    },
+    {
+      "company": "King Group",
+      "directory": "2026-09-07_160319_king-group_middle-php-developer-core-team",
+      "score": 82,
+      "title": "Middle PHP developer (core team)",
+      "url": "https://jobs.dou.ua/companies/king-group/vacancies/362960/",
+      "vacancy_id": "244da8fa-3708-427d-a338-8e3f2ad0331d"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "9179b04998f31a15a7d879a5b7f627cd9caa8d41d7824c852916eef38e4dc744",
+  "schema_version": 1
+}

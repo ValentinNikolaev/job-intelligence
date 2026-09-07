@@ -1,0 +1,25 @@
+score: 86
+recommendation: match
+summary: Excellent fit for senior PHP backend work in fintech, with Symfony, REST,
+  PostgreSQL, Kubernetes, architecture, testing, and payment-domain experience strongly
+  evidenced.
+strengths:
+- Symfony and PHP backend development
+- REST APIs and relational databases
+- fintech and payment integrations
+- Kubernetes and CI/CD
+- DDD and architecture
+- technical leadership
+gaps:
+- Doctrine and Event Sourcing are not directly evidenced
+- Jenkins-specific expertise is not established
+concerns:
+- The role expects unusually deep breadth across advanced architecture and testing
+  topics; verify Event Sourcing and Jenkins in interview
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T16:36:44Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:61cdb576b1cc54ea166a1229b967961e53ff218ba717861139524c5c12a2ca98
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
