@@ -81,4 +81,4 @@ Posted: 2026-09-07T14:24:36Z
 
 - **Employee Discounts **–** **access top deals in Germany and Austria via our benefits portal
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

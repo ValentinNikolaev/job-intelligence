@@ -127,4 +127,4 @@ Health promotion, EGYM Wellpass, massages, retirement plan, lunch, MacBook Pro a
 
 If you are looking for a company that cultivates talent and provides you with the room to grow and unfold, then Yalwa is just for you! Here you will work autonomously through demanding projects, consistently applying and strengthening your skills. Have we piqued your interest? Then send us your application today!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -97,4 +97,4 @@ SentinelOne is proud to be an Equal Employment Opportunity and Affirmative Actio
 
 SentinelOne participates in the E-Verify Program for all U.S. based roles.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
