@@ -1,0 +1,30 @@
+score: 84
+recommendation: strong_match
+summary: Strong PHP backend fit with relevant framework, database, Kubernetes, messaging,
+  testing, Go, and high-load systems experience; remote/location details and Redis
+  experience remain uncertain.
+strengths:
+- Extensive commercial PHP experience with Laravel and Symfony.
+- Demonstrated backend work on MySQL, PostgreSQL, SQL/query performance, indexes,
+  and high-load services.
+- Kubernetes, Helm, AWS, CI/CD, microservices, event-driven architecture, and production
+  reliability experience.
+- Experience with RabbitMQ and resilient message delivery pipelines, plus Go as a
+  meaningful secondary language.
+- Documented testing, code review, system design, and technical leadership experience.
+gaps:
+- Redis experience is not explicitly documented in the candidate profile.
+- PHP static-analysis tools and frontend frameworks requested as advantages are not
+  explicitly documented.
+concerns:
+- The posting references Kyiv and a hybrid/remote format but does not explicitly confirm
+  work from Italy or EU time zones.
+- The vacancy text is Ukrainian; language requirements for day-to-day work are not
+  stated.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T18:35:26Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:59706eeefa0fda5fceaac20e70a20e28273ce9d2db0d6f8c89894cd18d8eb724
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

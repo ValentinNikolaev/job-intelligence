@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-07T18:35:26Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "EVOPLAY",
+      "directory": "2026-09-07_180853_evoplay_backend-developer-php",
+      "score": 84,
+      "title": "Backend Developer(PHP)",
+      "url": "https://jobs.dou.ua/companies/evoplay/vacancies/372414/",
+      "vacancy_id": "ac748d7a-d128-4aef-8973-873bd3e5a7de"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "18fc8e747be3036bbf5499981615e3405feaeeeb91183109b0577fb4c68a3801",
+  "schema_version": 1
+}
