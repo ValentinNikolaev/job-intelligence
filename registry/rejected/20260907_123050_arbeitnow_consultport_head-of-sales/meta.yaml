@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: head-of-sales-berlin-323226
+source_url: https://www.arbeitnow.com/jobs/companies/consultport/head-of-sales-berlin-323226
+title: Head of Sales
+company: Consultport
+location: Berlin
+published_at: '2026-09-07T09:00:26Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-07T12:30:50Z'
+rejected_at: '2026-09-07T12:30:50Z'

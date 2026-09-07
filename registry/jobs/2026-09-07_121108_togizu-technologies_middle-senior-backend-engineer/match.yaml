@@ -1,0 +1,20 @@
+score: 68
+recommendation: match
+summary: Middle/senior backend work aligns well with the candidate's PHP, Go, API,
+  architecture, and production-reliability background, subject to location and stack
+  confirmation.
+strengths:
+- 15+ years of backend engineering and technical leadership.
+- Strong PHP, Go, microservices, APIs, databases, and reliability experience.
+- Experience owning production systems and collaborating across teams.
+gaps:
+- Exact required technologies and employment location are not fully established.
+concerns:
+- Remote and language requirements need confirmation from the complete posting.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T12:36:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b3f4835dc98586012432b6c487a3c1afe89397366c6942e8e49d0f4a6475f3bf
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

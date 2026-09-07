@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 73
+Total vacancies: 76
 
-- Found: 56
+- Found: 59
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 73
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-07 | [CRMOZ](../registry/jobs/2026-09-07_123104_crmoz_junior-full-stack-developer/) | [Junior Full Stack Developer](../registry/jobs/2026-09-07_123104_crmoz_junior-full-stack-developer/job.md) | віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/crmoz/vacancies/372154/) | [Open](../registry/jobs/2026-09-07_123104_crmoz_junior-full-stack-developer/company.md) | — | — | — | — |
+| 2026-09-07 | [ShippyPro](../registry/jobs/2026-09-07_123101_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-07_123101_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-07 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-09-07 | [Intesys](../registry/jobs/2026-09-07_123101_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-07_123101_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-07 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-09-07 | [Spendbase](../registry/jobs/2026-09-07_121108_spendbase_fullstack-engineer/) | [Fullstack Engineer](../registry/jobs/2026-09-07_121108_spendbase_fullstack-engineer/job.md) | Київ, Львів, за кордоном, віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/spendbase/vacancies/372336/) | [Open](../registry/jobs/2026-09-07_121108_spendbase_fullstack-engineer/company.md) | — | — | — | — |
 | 2026-09-07 | [Togizu Technologies](../registry/jobs/2026-09-07_121108_togizu-technologies_middle-senior-backend-engineer/) | [Middle/Senior backend engineer](../registry/jobs/2026-09-07_121108_togizu-technologies_middle-senior-backend-engineer/job.md) | Ukraine, віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/togizu-technologies-ltd/vacancies/222403/) | [Open](../registry/jobs/2026-09-07_121108_togizu-technologies_middle-senior-backend-engineer/company.md) | — | — | — | — |
 | 2026-09-07 | [Frozeneon](../registry/jobs/2026-09-07_121108_frozeneon_php-laravel-developer/) | [PHP Laravel Developer](../registry/jobs/2026-09-07_121108_frozeneon_php-laravel-developer/job.md) | віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/frozeneon/vacancies/372304/) | [Open](../registry/jobs/2026-09-07_121108_frozeneon_php-laravel-developer/company.md) | — | — | — | — |

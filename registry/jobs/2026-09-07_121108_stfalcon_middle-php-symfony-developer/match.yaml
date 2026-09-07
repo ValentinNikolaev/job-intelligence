@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: PHP/Symfony backend development is directly supported by the candidate's
+  experience, with strong seniority and production-system alignment.
+strengths:
+- Symfony and PHP experience across substantial production systems.
+- Backend APIs, databases, performance, testing, and CI/CD experience.
+- Technical-lead background supports middle/senior responsibilities.
+gaps:
+- Exact location, language, and remote policy require confirmation.
+concerns:
+- The posting may require local availability or additional frontend skills not evidenced
+  here.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T12:36:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:906aa1eb306676a7dd6849efffd33776c224ee95689de89f0357fe0526bc93f3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

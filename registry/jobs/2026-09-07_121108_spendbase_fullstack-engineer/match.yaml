@@ -1,0 +1,19 @@
+score: 65
+recommendation: match
+summary: Full-stack engineering has meaningful backend fit through PHP, APIs, integrations,
+  and production reliability, but frontend depth and location are uncertain.
+strengths:
+- Strong backend engineering, API, database, and integration experience.
+- Experience with event-driven and operationally reliable systems.
+gaps:
+- Full-stack frontend requirements are not clearly covered by the candidate profile.
+- Exact stack and remote eligibility are unclear.
+concerns:
+- Role scope may be frontend-heavy relative to the candidate's recent focus.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-07T12:36:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:10f9c64ec260f1859dd70f3880227f118787a9b2a8548600ed21d831c5802f49
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
