@@ -58,4 +58,4 @@ Transparency, Execution, Ownership, Customer Centricity, Innovation and Integrit
 
 Your contact person for this position is [Geneva Brooks](https://www.linkedin.com/in/geneva-brooks/). If you have any questions, please contact us directly by email ----- For more information about PAIR Finance, please take a look at our [website](https://pairfinance.com/en/business/) and our [careers page](https://pairfinance.com/en/careers/). We look forward to hearing from you!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

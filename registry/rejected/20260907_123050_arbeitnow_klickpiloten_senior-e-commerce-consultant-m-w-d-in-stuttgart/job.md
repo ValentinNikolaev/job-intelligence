@@ -126,4 +126,4 @@ Bewerbungen bitte per E-Mail an
 
 **Wir freuen uns auf dich!**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

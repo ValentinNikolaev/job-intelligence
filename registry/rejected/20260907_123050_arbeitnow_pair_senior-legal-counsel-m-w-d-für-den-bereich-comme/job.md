@@ -65,4 +65,4 @@ Transparenz, Ownership, Execution, Kundenzentrierung, Innovation und Integrität
 
 Deine Ansprechpartnerin für diese Stelle ist [Judith Gröchenig](https://www.linkedin.com/in/judith-groechenig/). Solltest du Fragen haben, schreib uns gerne eine Mail an Website und auf unserer [Karriereseite](https://pair.jobs.personio.com/).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

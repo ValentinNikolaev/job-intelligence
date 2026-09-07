@@ -52,4 +52,4 @@ Ab dem 01. Oktober 2026 suchen wir Verstärkung in Vollzeit (38h/Woche) für uns
 Dann freuen wir uns auf Deine Bewerbung – einfach und schnell über unser Onlineformular.
 Deine HR-Ansprechperson ist Deliah Bargmann.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

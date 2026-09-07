@@ -9,10 +9,10 @@ employment_type: null
 sources:
 - source: adzuna
   source_job_id: '5873270370'
-  url: https://www.adzuna.de/details/5873270370?utm_medium=api&utm_source=b6674f60
+  url: https://www.adzuna.de/land/ad/5873270370?se=wItijdWq8RGl-_JRamYmYw&utm_medium=api&utm_source=b6674f60&v=416D8BB011C3A76CFA16F7E065F548B67E68B4EF
 published_at: '2026-09-06T19:48:15Z'
 discovered_at: '2026-09-07T12:10:48Z'
-updated_at: '2026-09-07T12:10:48Z'
+updated_at: '2026-09-07T16:03:02Z'
 status: found
 status_history:
 - status: found

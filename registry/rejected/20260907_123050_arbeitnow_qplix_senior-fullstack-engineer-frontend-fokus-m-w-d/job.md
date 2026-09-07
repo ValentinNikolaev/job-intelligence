@@ -52,4 +52,4 @@ Nußbaumstr. 12
 80336 München
 [https://www.qplix.com/de/](https://www.qplix.com/de/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

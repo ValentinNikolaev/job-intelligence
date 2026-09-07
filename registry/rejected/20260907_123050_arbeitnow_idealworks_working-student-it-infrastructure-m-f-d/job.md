@@ -31,4 +31,4 @@ Posted: 2026-09-07T11:09:55Z
 - Our modern office is easily accessible by public transport, bike and car and offers numerous catering options for relaxed lunch breaks with your team.
 - Driven by our unique corporate culture, the five values "passion for results", "wellbeing", "personal growth", "trust" and "being and acting as one team" determine our daily actions and cooperation.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

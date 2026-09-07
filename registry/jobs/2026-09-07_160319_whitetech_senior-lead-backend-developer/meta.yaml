@@ -1,0 +1,37 @@
+schema_version: 2
+id: dc469111-535c-4760-ba00-75d6488c496c
+title: Senior /Lead Backend Developer
+company: WhiteTech
+company_url: https://jobs.dou.ua/companies/whitetech/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372348'
+  url: https://jobs.dou.ua/companies/whitetech/vacancies/372348/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 7 вересня
+    listing_summary: 'At WhiteTech, we empower businesses in the financial ecosystem
+      with cutting-edge white-label and SAAS solutions.
+
+
+      Our comprehensive suite of tools is tailored for EMI, PSP, e-commerce, and open
+      banking platforms.'
+published_at: '2026-09-07'
+discovered_at: '2026-09-07T16:03:19Z'
+updated_at: '2026-09-07T16:03:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-07T16:03:19Z'
+analysis_priority: 100
+fingerprint: sha256:074aa9e81a08cf8961a81dc0bbf0e9d69dfe3f4c332364f13fa619c00b1a4e6a
+data_source: dou
+content_source: dou
+company_content_source: dou

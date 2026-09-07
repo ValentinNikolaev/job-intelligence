@@ -1,0 +1,40 @@
+schema_version: 2
+id: 44b9291d-1c42-4551-b57e-ad63291ce614
+title: Golang Developer
+company: MadAppGang
+company_url: https://jobs.dou.ua/companies/madappgang/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372364'
+  url: https://jobs.dou.ua/companies/madappgang/vacancies/372364/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 7 вересня
+    listing_summary: 'We are looking for a Middle/Senior Go developer from anywhere
+      in the world.
+
+
+      MadAppGang is a custom development company headquartered in Kremenchuk, Ukraine
+      and office in Sydney, Australia.
+
+
+      It was founded by an experienced software engineer, Jack Rudenko, in 2011.'
+published_at: '2026-09-07'
+discovered_at: '2026-09-07T16:03:19Z'
+updated_at: '2026-09-07T16:03:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-07T16:03:19Z'
+analysis_priority: 100
+fingerprint: sha256:62b1f40f476b6946ee7641458dba4f3a93210abbf919be05f4f2d07ee918caee
+data_source: dou
+content_source: dou
+company_content_source: dou

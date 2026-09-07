@@ -1,0 +1,39 @@
+schema_version: 2
+id: 65606c18-30d7-4c9d-beda-a682669be0ab
+title: Full-Stack Developer (part-time)
+company: Zero Task Labs
+company_url: https://jobs.dou.ua/companies/zerotasklabs/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372349'
+  url: https://jobs.dou.ua/companies/zerotasklabs/vacancies/372349/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 7 вересня
+    listing_summary: 'Full-Stack Developer (part-time)
+
+
+      Компанія: Zero Task Labs
+
+
+      Zero Task Labs — українська продуктова студія, яка будує digital-продукти та
+      AI-автоматизацію для mid-market компаній і funded стартапів по всьому світу.'
+published_at: '2026-09-07'
+discovered_at: '2026-09-07T16:03:19Z'
+updated_at: '2026-09-07T16:03:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-07T16:03:19Z'
+analysis_priority: 100
+fingerprint: sha256:7efe1cae2f830f51ba7cdeeb7d504b02ebe5d0cbe8c101e03adcf1c0bcbf2c1f
+data_source: dou
+content_source: dou
+company_content_source: dou

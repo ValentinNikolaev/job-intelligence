@@ -4,8 +4,8 @@ Posted: 2026-08-31T15:31:11Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-08-31T15:31:11Z is older than 7 days
 
 [It's Prodigy](https://himalayas.app/companies/it-s-prodigy) è una startup innovativa, operante nel campo dell'innovazione tecnologica, che si pone l'obiettivo di creare soluzioni e prodotti di nuova generazione per piccole, medie e grandi imprese.
 

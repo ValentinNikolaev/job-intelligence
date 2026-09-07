@@ -1,0 +1,40 @@
+schema_version: 2
+id: 10155f84-1fba-465f-8bd8-4b17d017bf9e
+title: Lead PHP/Laravel Engineer — Product-Focused
+company: Rebbix
+company_url: https://jobs.dou.ua/companies/rebbix/vacancies/
+location: Львів, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372353'
+  url: https://jobs.dou.ua/companies/rebbix/vacancies/372353/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 7 вересня
+    listing_summary: 'About the Role
+
+
+      Our client is a leading European company providing solutions for product, material,
+      and logistics cycles, with a strong focus on recycling and sustainability.
+
+
+      We are looking for a Lead Engineer to help shape and build an enterprise multi-tenant
+      SaaS platform.'
+published_at: '2026-09-07'
+discovered_at: '2026-09-07T16:03:19Z'
+updated_at: '2026-09-07T16:03:19Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-07T16:03:19Z'
+analysis_priority: 100
+fingerprint: sha256:d853972e89d06e2a898c5e48421092c5e2693cdf14f39dbc01995173906591cd
+data_source: dou
+content_source: dou
+company_content_source: dou

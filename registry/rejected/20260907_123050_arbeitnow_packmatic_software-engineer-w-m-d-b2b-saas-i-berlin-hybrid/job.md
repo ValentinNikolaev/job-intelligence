@@ -89,4 +89,4 @@ You work in a solution-oriented, pragmatic way and stay close to the product vis
 
 You speak English fluently – German is a plus.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -57,4 +57,4 @@ Westernacher is a diverse work environment and is proud to be an equal-opportuni
 
 #LI-IC1
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
