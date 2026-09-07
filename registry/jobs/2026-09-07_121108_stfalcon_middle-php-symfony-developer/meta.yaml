@@ -1,0 +1,35 @@
+schema_version: 2
+id: 0499365f-4962-4650-8100-7ef66c9c9478
+title: Middle PHP (Symfony) Developer
+company: Stfalcon
+company_url: https://jobs.dou.ua/companies/stfalcon-studio/vacancies/
+location: Хмельницький, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372239'
+  url: https://jobs.dou.ua/companies/stfalcon-studio/vacancies/372239/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 7 вересня
+    listing_summary: Stfalcon — українська IT-компанія з понад 16-річною історією
+      розробки веб- та мобільних продуктів для бізнесу. Ми працюємо з проєктами у
+      сферах логістики, транспорту, охорони здоров’я та фінтеху, де важливі стабільність,
+      масштабованість і продумана архітектура.
+published_at: '2026-09-07'
+discovered_at: '2026-09-07T12:11:08Z'
+updated_at: '2026-09-07T12:11:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-07T12:11:08Z'
+analysis_priority: 100
+fingerprint: sha256:c88c6ce76eec60b2a02273b643edd08ea67f2404c4cef9dc8c62a5f171dbf3cf
+data_source: dou
+content_source: dou
+company_content_source: dou

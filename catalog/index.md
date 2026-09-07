@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 66
+Total vacancies: 73
 
-- Found: 49
+- Found: 56
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,13 @@ Total vacancies: 66
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-07 | [Spendbase](../registry/jobs/2026-09-07_121108_spendbase_fullstack-engineer/) | [Fullstack Engineer](../registry/jobs/2026-09-07_121108_spendbase_fullstack-engineer/job.md) | Київ, Львів, за кордоном, віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/spendbase/vacancies/372336/) | [Open](../registry/jobs/2026-09-07_121108_spendbase_fullstack-engineer/company.md) | — | — | — | — |
+| 2026-09-07 | [Togizu Technologies](../registry/jobs/2026-09-07_121108_togizu-technologies_middle-senior-backend-engineer/) | [Middle/Senior backend engineer](../registry/jobs/2026-09-07_121108_togizu-technologies_middle-senior-backend-engineer/job.md) | Ukraine, віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/togizu-technologies-ltd/vacancies/222403/) | [Open](../registry/jobs/2026-09-07_121108_togizu-technologies_middle-senior-backend-engineer/company.md) | — | — | — | — |
+| 2026-09-07 | [Frozeneon](../registry/jobs/2026-09-07_121108_frozeneon_php-laravel-developer/) | [PHP Laravel Developer](../registry/jobs/2026-09-07_121108_frozeneon_php-laravel-developer/job.md) | віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/frozeneon/vacancies/372304/) | [Open](../registry/jobs/2026-09-07_121108_frozeneon_php-laravel-developer/company.md) | — | — | — | — |
+| 2026-09-07 | [Stfalcon](../registry/jobs/2026-09-07_121108_stfalcon_middle-php-symfony-developer/) | [Middle PHP (Symfony) Developer](../registry/jobs/2026-09-07_121108_stfalcon_middle-php-symfony-developer/job.md) | Хмельницький, віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/stfalcon-studio/vacancies/372239/) | [Open](../registry/jobs/2026-09-07_121108_stfalcon_middle-php-symfony-developer/company.md) | — | — | — | — |
+| 2026-09-07 | [fiskaly](../registry/jobs/2026-09-07_121048_fiskaly_senior-backend-engineer-golang/) | [Senior Backend Engineer (Golang)](../registry/jobs/2026-09-07_121048_fiskaly_senior-backend-engineer-golang/job.md) | Polska | Adzuna | Found | 2026-09-07 | [Adzuna](https://www.adzuna.pl/details/5873242638?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-07 | [H2 invent GmbH](../registry/jobs/2026-09-07_121048_h2-invent-gmbh_softwareentwickler-backend-php-node-js-rest-api/) | [Softwareentwickler Backend - PHP / Node.js / REST API (m/w/d)](../registry/jobs/2026-09-07_121048_h2-invent-gmbh_softwareentwickler-backend-php-node-js-rest-api/job.md) | Lörrach, Lörrach (Kreis) | Adzuna | Found | 2026-09-07 | [Adzuna](https://www.adzuna.de/details/5873270370?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-07 | [Workwise GmbH](../registry/jobs/2026-09-07_121048_workwise-gmbh_softwareentwickler-backend-php-node-js-rest-api/) | [Softwareentwickler Backend - PHP / Node.js / REST API (m/w/d)](../registry/jobs/2026-09-07_121048_workwise-gmbh_softwareentwickler-backend-php-node-js-rest-api/job.md) | Tumringen, Lörrach | Adzuna | Found | 2026-09-07 | [Adzuna](https://www.adzuna.de/details/5873636279?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-07 | [Intesys](../registry/jobs/2026-09-07_001916_intesys_java-software-developer_cba5e715/) | [Java Software Developer](../registry/jobs/2026-09-07_001916_intesys_java-software-developer_cba5e715/job.md) | — | Custom | Found | 2026-09-07 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
 | 2026-09-07 | [Intesys](../registry/jobs/2026-09-07_001916_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-07_001916_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-07 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
 | 2026-09-07 | [Hinto Group](../registry/jobs/2026-09-07_001916_hinto-group_php-developer/) | [PHP Developer](../registry/jobs/2026-09-07_001916_hinto-group_php-developer/job.md) | — | Custom | Found | 2026-09-07 | [Custom](https://www.hintogroup.eu/it/posizioni-aperte/php-developer) | — | — | — | — | — |

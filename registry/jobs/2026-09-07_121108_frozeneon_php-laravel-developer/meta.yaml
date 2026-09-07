@@ -1,0 +1,40 @@
+schema_version: 2
+id: 0f71f810-8f1b-437a-ac5a-685608372f36
+title: PHP Laravel Developer
+company: Frozeneon
+company_url: https://jobs.dou.ua/companies/frozeneon/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372304'
+  url: https://jobs.dou.ua/companies/frozeneon/vacancies/372304/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 7 вересня
+    salary_label: $1600–1800
+    listing_summary: 'Обов’язки
+
+
+      Розробляти та підтримувати фічі у високонавантаженому моноліті, мікросервісах
+      та внутрішніх пакетах (shared-бібліотеки, SDK).
+
+
+      Інтегрувати API та платіжні системи, працювати з вебхуками та постбеками.'
+published_at: '2026-09-07'
+discovered_at: '2026-09-07T12:11:08Z'
+updated_at: '2026-09-07T12:11:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-07T12:11:08Z'
+analysis_priority: 100
+fingerprint: sha256:87ccdb71183080dc2520119363a2f05099bf5b717b07ff94a2bde9b84fa2d91a
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -22,20 +22,15 @@ sources:
       and LATAM are full of talented professionals delivering business success and
       digital improvement…'
     discovered_by:
-    - query_index: 1
-      parameters:
-        geo: italy
-        count: '25'
-        industry: dev
     - query_index: 3
       parameters:
+        industry: dev
         geo: europe
         tag: golang
         count: '25'
-        industry: dev
 published_at: '2026-09-02T04:50:28Z'
 discovered_at: '2026-08-01T16:00:40Z'
-updated_at: '2026-09-02T12:11:05Z'
+updated_at: '2026-09-07T12:11:20Z'
 status: applied
 status_history:
 - status: found
