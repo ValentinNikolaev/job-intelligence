@@ -145,4 +145,4 @@ Hypersonica is an equal-opportunity employer and assesses candidates solely on m
 
 You can apply directly to this role or reach out to Nathan Sweeney, Head of Talent. We review every application and aim to respond to all candidates within two weeks, whether the answer is yes or no.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

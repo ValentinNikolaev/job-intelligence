@@ -40,4 +40,4 @@ Für unser Technik Team suchen wir eine erfahrene Führungskraft zum Aufbau und 
 - **3-monatige Entgeltfortzahlung im Krankheitsfall** sowie Absicherung bei Invalidität und im Todesfall.
 - Unsere oben genannten **Bandbreiten **umfassen Komponenten wie z.B. Grundgehalt, Bonus, Pension Allowance, Lunch- und Internetzuschuss sowie der rechnerische Wert eines möglichen Dienstwagens. Ein Angebot wird dann final immer unter Berücksichtigung der Ausbildung und relevanter Berufserfahrung eines/einer Kandidat*in erstellt.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

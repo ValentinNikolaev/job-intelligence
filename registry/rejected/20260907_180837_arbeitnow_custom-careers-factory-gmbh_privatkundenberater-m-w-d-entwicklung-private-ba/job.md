@@ -53,4 +53,4 @@ Die **CUSTOM CAREERS FACTORY** begleitet Dich persönlich und vertraulich durch 
 
 **Interesse?** Für den ersten Austausch genügt Dein Lebenslauf. Bewirb Dich direkt oder schreib uns gerne an.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

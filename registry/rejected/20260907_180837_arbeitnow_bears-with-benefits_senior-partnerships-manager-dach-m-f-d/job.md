@@ -30,4 +30,4 @@ Posted: 2026-09-07T17:09:25Z
 - Freiraum, ein junges, erfolgreiches und schnell wachsendes Unternehmen aktiv mitzugestalten
 - Beste Kultur: Sympathisches Team und einer sehr offenen und positiven Feedback-Kultur
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

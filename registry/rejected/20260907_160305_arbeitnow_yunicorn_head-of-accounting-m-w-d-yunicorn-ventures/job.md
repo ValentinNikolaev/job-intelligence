@@ -71,4 +71,4 @@ Dann bewirb dich jetzt und starte bald gemeinsam mit uns durch! Lade einfach dei
 
 **Founder Call:** Zum Abschluss möchte dich unser Co-Founder Sam persönlich kennenlernen (ca. 30 min.). Keine Sorge – du bekommst innerhalb von 2 Tagen Feedback. Wenn alles passt, starten wir gemeinsam durch!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

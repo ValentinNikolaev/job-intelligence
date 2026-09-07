@@ -63,4 +63,4 @@ At Tanso, engineers are responsible understanding the problem, challenging assum
 
 We're a diverse group of people, and that diversity is what makes us great. We bring unique perspectives to everything we do and are always eager to learn from each other. We work in cross-functional teams to tackle ambitious challenges, actively seek feedback and be the best versions of ourselves.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

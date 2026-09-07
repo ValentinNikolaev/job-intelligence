@@ -69,4 +69,4 @@ Zeig uns, wer du bist, denn bei uns bist du mehr als nur ein Lebenslauf!
 
 Hinweis: Bitte bewerben Sie sich ausschließlich online über unser Karriereportal. Bewerbungen auf anderen Kanälen (insb. auch E-Mail) können nicht berücksichtigt werden.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

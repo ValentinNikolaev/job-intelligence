@@ -67,4 +67,4 @@ What you will own:
 - Regular 1:1s and retros focused on your growth
 - Real impact — your work supports Europe's transition to a smarter energy system
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

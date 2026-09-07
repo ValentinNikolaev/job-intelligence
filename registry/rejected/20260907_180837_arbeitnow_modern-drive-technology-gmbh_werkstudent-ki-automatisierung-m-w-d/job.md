@@ -77,4 +77,4 @@ Was du bekommst
 
 Schick uns deinen Lebenslauf und ein paar Sätze zu **einer KI- oder Automatisierungslösung, die du selbst gebaut hast**: Wie lief der Prozess vorher, was hast du gebaut, welches Modell oder Tool hast du eingesetzt und warum, was war danach besser? Wenn es dazu ein Repository oder eine kurze Demo gibt, umso besser.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

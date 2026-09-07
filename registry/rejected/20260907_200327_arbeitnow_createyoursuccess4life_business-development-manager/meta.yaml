@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: business-development-manager-schallodenbach-399813
+source_url: https://www.arbeitnow.com/jobs/companies/createyoursuccess4life/business-development-manager-schallodenbach-399813
+title: Business Development Manager
+company: CreateYourSuccess4life
+location: Schallodenbach
+published_at: '2026-09-07T12:30:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-07T20:03:27Z'
+rejected_at: '2026-09-07T20:03:27Z'

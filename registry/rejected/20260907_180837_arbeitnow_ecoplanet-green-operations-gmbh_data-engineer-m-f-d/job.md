@@ -84,4 +84,4 @@ You run what you build: monitoring, alerting, and the occasional early morning d
 
 We don't do long forms. We don't do generic cover letters. Send us your CV and surprise us.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

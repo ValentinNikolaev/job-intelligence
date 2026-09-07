@@ -41,4 +41,4 @@ Employer Branding (Your Development Path)
 - **Your opportunity.** From day one, you take ownership, drive innovation, and develop yourself and the company alongside a team of experts.
 - **Your benefits.** 30 days' vacation, Joblunch subsidy (€69/month), Givve Card (€50/month loaded monthly) or alternatively a subsidised Wellpass membership, discounts via Corporate Benefits, JobRad leasing, company pension contributions (bAV & VL), and outstanding team and company events.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
