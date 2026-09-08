@@ -1,0 +1,35 @@
+schema_version: 2
+id: ef8ac301-1bd0-4539-8ba4-ff08b3b3ff85
+title: Senior PHP Engineer (Vanilla PHP)
+company: SoloWay Technologies
+company_url: https://jobs.dou.ua/companies/soloway-tech/vacancies/
+location: Івано-Франківськ, Чернівці, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372538'
+  url: https://jobs.dou.ua/companies/soloway-tech/vacancies/372538/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 8 вересня
+    listing_summary: 'Remote · Full-time · Payments Platform
+
+
+      About the role: We’re staffing a PHP Engineer for a team at a payments company.'
+published_at: '2026-09-08'
+discovered_at: '2026-09-08T18:09:07Z'
+updated_at: '2026-09-08T18:09:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-08T18:09:07Z'
+analysis_priority: 100
+fingerprint: sha256:e402aade1dedc994c5ed91743931f4a129bfbd90eca29eea71e1fd18bcc9d881
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -21,6 +21,7 @@ Full-time
 €42,000
 -
 €56,000
+Annual
 
 Remote
 
@@ -194,6 +195,7 @@ Full-time
 €42,000
 -
 €56,000
+Annual
 
 Remote
 

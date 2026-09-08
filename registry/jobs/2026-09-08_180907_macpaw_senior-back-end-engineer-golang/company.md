@@ -1,0 +1,3 @@
+# MacPaw
+
+MacPaw is a software company, that develops and distributes software for macOS and iOS. Today, our products have more than 30 million users worldwide. At MacPaw, we believe humans and technology can reach their greatest potential together. MacPaw is proud to be Ukrainian. MacPaw gathers open-minded people who support each...

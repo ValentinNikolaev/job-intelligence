@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 75
+Total vacancies: 79
 
-- Found: 58
+- Found: 62
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 75
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-08 | [MacPaw](../registry/jobs/2026-09-08_180907_macpaw_senior-back-end-engineer-golang/) | [Senior Back-End Engineer (Golang)](../registry/jobs/2026-09-08_180907_macpaw_senior-back-end-engineer-golang/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/macpaw/vacancies/359133/) | [Open](../registry/jobs/2026-09-08_180907_macpaw_senior-back-end-engineer-golang/company.md) | — | — | — | — |
+| 2026-09-08 | [SoloWay Technologies](../registry/jobs/2026-09-08_180907_soloway-technologies_senior-php-engineer-vanilla-php/) | [Senior PHP Engineer (Vanilla PHP)](../registry/jobs/2026-09-08_180907_soloway-technologies_senior-php-engineer-vanilla-php/job.md) | Івано-Франківськ, Чернівці, віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/soloway-tech/vacancies/372538/) | [Open](../registry/jobs/2026-09-08_180907_soloway-technologies_senior-php-engineer-vanilla-php/company.md) | — | — | — | — |
+| 2026-09-08 | [Digital Hiring](../registry/jobs/2026-09-08_180907_digital-hiring_senior-full-stack-developer-php-laravel-vue-js/) | [Senior Full-Stack Developer PHP (Laravel + Vue.js)](../registry/jobs/2026-09-08_180907_digital-hiring_senior-full-stack-developer-php-laravel-vue-js/job.md) | віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/digital-hiring/vacancies/372540/) | [Open](../registry/jobs/2026-09-08_180907_digital-hiring_senior-full-stack-developer-php-laravel-vue-js/company.md) | — | — | — | — |
+| 2026-09-08 | [Wildix](../registry/jobs/2026-09-08_180907_wildix_backend-developer/) | [Backend Developer](../registry/jobs/2026-09-08_180907_wildix_backend-developer/job.md) | віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/wildix/vacancies/368649/) | [Open](../registry/jobs/2026-09-08_180907_wildix_backend-developer/company.md) | — | — | — | — |
 | 2026-09-08 | [airSlate](../registry/jobs/2026-09-08_121108_airslate_team-lead-php-engineer/) | [Team Lead PHP Engineer](../registry/jobs/2026-09-08_121108_airslate_team-lead-php-engineer/job.md) | Вроцлав (Польща), віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/367780/) | [Open](../registry/jobs/2026-09-08_121108_airslate_team-lead-php-engineer/company.md) | — | — | — | — |
 | 2026-09-08 | [airSlate](../registry/jobs/2026-09-08_121108_airslate_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-09-08_121108_airslate_senior-php-engineer/job.md) | Вроцлав (Польща), віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/368837/) | [Open](../registry/jobs/2026-09-08_121108_airslate_senior-php-engineer/company.md) | — | — | — | — |
 | 2026-09-08 | [Alcor](../registry/jobs/2026-09-08_121108_alcor_php-tech-lead/) | [PHP Tech Lead](../registry/jobs/2026-09-08_121108_alcor_php-tech-lead/job.md) | віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/alcor/vacancies/368864/) | [Open](../registry/jobs/2026-09-08_121108_alcor_php-tech-lead/company.md) | — | — | — | — |

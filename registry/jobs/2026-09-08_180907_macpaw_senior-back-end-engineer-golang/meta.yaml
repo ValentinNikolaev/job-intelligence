@@ -1,0 +1,33 @@
+schema_version: 2
+id: f49e50e2-cfb8-4b5f-a950-b836dd7603e2
+title: Senior Back-End Engineer (Golang)
+company: MacPaw
+company_url: https://jobs.dou.ua/companies/macpaw/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '359133'
+  url: https://jobs.dou.ua/companies/macpaw/vacancies/359133/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 8 вересня
+    listing_summary: At MacPaw, we craft software that makes everyday tech life simpler,
+      cleaner, and more enjoyable.
+published_at: '2026-09-08'
+discovered_at: '2026-09-08T18:09:07Z'
+updated_at: '2026-09-08T18:09:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-08T18:09:07Z'
+analysis_priority: 100
+fingerprint: sha256:f195a46871c74f083b94ec090a9a1b049b3a57f76aa7bc425e19f4f3b149c3d5
+data_source: dou
+content_source: dou
+company_content_source: dou

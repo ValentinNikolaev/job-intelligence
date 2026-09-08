@@ -1,0 +1,36 @@
+schema_version: 2
+id: 10a1a603-aad1-4e94-a9d4-27efafef6127
+title: Backend Developer
+company: Wildix
+company_url: https://jobs.dou.ua/companies/wildix/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368649'
+  url: https://jobs.dou.ua/companies/wildix/vacancies/368649/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 8 вересня
+    listing_summary: 'Hello!
+
+
+      We’re Wildix, a global leader in Unified Communications & Collaboration as a
+      Service (UCaaS) and we’re on a mission to redefine how businesses connect.'
+published_at: '2026-09-08'
+discovered_at: '2026-09-08T18:09:07Z'
+updated_at: '2026-09-08T18:09:07Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-08T18:09:07Z'
+analysis_priority: 100
+fingerprint: sha256:762a6df086c986780d161311cc8bca0c38f9039ec981abc2772fcf44b54f50cf
+data_source: dou
+content_source: dou
+company_content_source: dou
