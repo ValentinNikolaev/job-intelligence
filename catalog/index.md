@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 68
+Total vacancies: 72
 
-- Found: 51
+- Found: 55
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 68
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-08 | [Intesys](../registry/jobs/2026-09-08_061148_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-08_061148_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-08 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-08 | [Intesys](../registry/jobs/2026-09-08_061148_intesys_java-software-developer_0d664b36/) | [Java Software Developer](../registry/jobs/2026-09-08_061148_intesys_java-software-developer_0d664b36/job.md) | — | Custom | Found | 2026-09-08 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-08 | [fiskaly](../registry/jobs/2026-09-08_061140_fiskaly_senior-backend-engineer-golang/) | [Senior Backend Engineer (Golang)](../registry/jobs/2026-09-08_061140_fiskaly_senior-backend-engineer-golang/job.md) | Polska | Adzuna | Found | 2026-09-08 | [Adzuna](https://www.adzuna.pl/details/5873242638?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-08 | [H2 invent](../registry/jobs/2026-09-08_061140_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/) | [Backend Entwickler für PHP und NodeJS (m/w/d)](../registry/jobs/2026-09-08_061140_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/job.md) | Tumringen, Lörrach | Adzuna | Found | 2026-09-08 | [Adzuna](https://www.adzuna.de/details/5872148833?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-07 | [EVOPLAY](../registry/jobs/2026-09-07_180853_evoplay_backend-developer-php/) | [Backend Developer(PHP)](../registry/jobs/2026-09-07_180853_evoplay_backend-developer-php/job.md) | Київ, віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/evoplay/vacancies/372414/) | [Open](../registry/jobs/2026-09-07_180853_evoplay_backend-developer-php/company.md) | — | — | — | — |
 | 2026-09-07 | [WhiteTech](../registry/jobs/2026-09-07_160319_whitetech_senior-lead-backend-developer/) | [Senior /Lead Backend Developer](../registry/jobs/2026-09-07_160319_whitetech_senior-lead-backend-developer/job.md) | віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/whitetech/vacancies/372348/) | [Open](../registry/jobs/2026-09-07_160319_whitetech_senior-lead-backend-developer/company.md) | — | — | — | — |
 | 2026-09-07 | [Zero Task Labs](../registry/jobs/2026-09-07_160319_zero-task-labs_full-stack-developer-part-time/) | [Full-Stack Developer (part-time)](../registry/jobs/2026-09-07_160319_zero-task-labs_full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-07 | [Dou](https://jobs.dou.ua/companies/zerotasklabs/vacancies/372349/) | [Open](../registry/jobs/2026-09-07_160319_zero-task-labs_full-stack-developer-part-time/company.md) | — | — | — | — |
