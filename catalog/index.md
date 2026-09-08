@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 72
+Total vacancies: 75
 
-- Found: 55
+- Found: 58
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 72
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-08 | [airSlate](../registry/jobs/2026-09-08_121108_airslate_team-lead-php-engineer/) | [Team Lead PHP Engineer](../registry/jobs/2026-09-08_121108_airslate_team-lead-php-engineer/job.md) | Вроцлав (Польща), віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/367780/) | [Open](../registry/jobs/2026-09-08_121108_airslate_team-lead-php-engineer/company.md) | — | — | — | — |
+| 2026-09-08 | [airSlate](../registry/jobs/2026-09-08_121108_airslate_senior-php-engineer/) | [Senior PHP Engineer](../registry/jobs/2026-09-08_121108_airslate_senior-php-engineer/job.md) | Вроцлав (Польща), віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/airslate/vacancies/368837/) | [Open](../registry/jobs/2026-09-08_121108_airslate_senior-php-engineer/company.md) | — | — | — | — |
+| 2026-09-08 | [Alcor](../registry/jobs/2026-09-08_121108_alcor_php-tech-lead/) | [PHP Tech Lead](../registry/jobs/2026-09-08_121108_alcor_php-tech-lead/job.md) | віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/alcor/vacancies/368864/) | [Open](../registry/jobs/2026-09-08_121108_alcor_php-tech-lead/company.md) | — | — | — | — |
 | 2026-09-08 | [Intesys](../registry/jobs/2026-09-08_061148_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-08_061148_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-08 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
 | 2026-09-08 | [Intesys](../registry/jobs/2026-09-08_061148_intesys_java-software-developer_0d664b36/) | [Java Software Developer](../registry/jobs/2026-09-08_061148_intesys_java-software-developer_0d664b36/job.md) | — | Custom | Found | 2026-09-08 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
 | 2026-09-08 | [fiskaly](../registry/jobs/2026-09-08_061140_fiskaly_senior-backend-engineer-golang/) | [Senior Backend Engineer (Golang)](../registry/jobs/2026-09-08_061140_fiskaly_senior-backend-engineer-golang/job.md) | Polska | Adzuna | Found | 2026-09-08 | [Adzuna](https://www.adzuna.pl/details/5873242638?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |

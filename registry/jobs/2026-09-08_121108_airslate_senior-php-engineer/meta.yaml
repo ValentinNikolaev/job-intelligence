@@ -1,0 +1,36 @@
+schema_version: 2
+id: e3ad6d7d-9e7f-439f-b024-1115dd1c9094
+title: Senior PHP Engineer
+company: airSlate
+company_url: https://jobs.dou.ua/companies/airslate/vacancies/
+location: Вроцлав (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '368837'
+  url: https://jobs.dou.ua/companies/airslate/vacancies/368837/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 8 вересня
+    listing_summary: 'About airSlate
+
+
+      airSlate is a global SaaS technology company that develops no-code workflow
+      automation, electronic signature, and document management solutions.'
+published_at: '2026-09-08'
+discovered_at: '2026-09-08T12:11:08Z'
+updated_at: '2026-09-08T12:11:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-08T12:11:08Z'
+analysis_priority: 100
+fingerprint: sha256:f5bfd5f8494b50c8d7782f6414e7113974b97807e8cdf66107ab335980a38592
+data_source: dou
+content_source: dou
+company_content_source: dou
