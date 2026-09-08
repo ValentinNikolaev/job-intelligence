@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-senior-accountant-hybrid-nl-be-de-lu-fr-germany-209608
+source_url: https://www.arbeitnow.com/jobs/companies/valsoft-corp/remote-senior-accountant-hybrid-nl-be-de-lu-fr-germany-209608
+title: Senior Accountant - Hybrid - NL/BE/DE/LU/FR
+company: Valsoft Corp
+location: Germany
+published_at: '2026-09-07T20:20:10Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-08T00:17:51Z'
+rejected_at: '2026-09-08T00:17:51Z'
