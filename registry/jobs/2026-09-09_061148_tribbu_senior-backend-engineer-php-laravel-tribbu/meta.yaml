@@ -1,0 +1,24 @@
+schema_version: 2
+id: c8c15fba-d906-42b9-9dd1-7f32b05560a3
+title: Senior Backend Engineer (PHP / Laravel) @TRIBBU
+company: TRIBBU
+company_url: null
+location: Madrid, Comunidad de Madrid
+remote: null
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5875820458'
+  url: https://www.adzuna.es/details/5875820458?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-08T19:31:56Z'
+discovered_at: '2026-09-09T06:11:48Z'
+updated_at: '2026-09-09T06:11:48Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-09T06:11:48Z'
+analysis_priority: 0
+fingerprint: sha256:41d8b16deefa4f9b72e14f7beab1a245743429140b36de820f71338de76c1dbb
+data_source: adzuna
+content_source: adzuna
+company_content_source: null
