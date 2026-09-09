@@ -9,7 +9,7 @@ employment_type: null
 sources:
 - source: dou
   source_job_id: '368864'
-  url: https://jobs.dou.ua/companies/alcor/vacancies/368864/
+  url: https://jobs.dou.ua/companies/alcor/vacancies/368864/?from=list_hot
   metadata:
     discovered_by:
     - query_index: 1
@@ -22,7 +22,7 @@ sources:
       outsourcing.
 published_at: '2026-09-08'
 discovered_at: '2026-09-08T12:11:08Z'
-updated_at: '2026-09-08T12:11:08Z'
+updated_at: '2026-09-09T16:44:20Z'
 status: found
 status_history:
 - status: found

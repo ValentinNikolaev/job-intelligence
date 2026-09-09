@@ -2,15 +2,17 @@
 
 Posted: 2026-09-09
 
+**Back-End Developer (all genders) | Microservice Developer (all genders) | PHP Developer (all genders) | Back-End Engineer (all genders) | Microservice Engineer (all genders)**
+
+**Level: Senior | Ukraine (Working from Home) | Full Time (40h/week) | Salary Range: $4.300 — $5.900 monthly**
+
+****
+
 **About Us**
 
 At eduki, we believe that supporting teachers leads to the best possible lessons, the best possible schools, and the best possible education. That’s why we built a platform where teachers can find and share high quality, ready-to-use teaching materials. We offer both printable and digital resources for all school types, subjects, and grade levels. Whether it’s for a last-minute lesson or long-term inspiration, we make it easier for educators to feel confident and prepared.
 
 eduki is used by more than 3 million teachers internationally who download more than 100.000 teaching resources a day. That’s where your impact begins. **Join us!**
-
-**Back-End Developer (all genders) | Microservice Developer (all genders) | PHP Developer (all genders) | Back-End Engineer (all genders) | Microservice Engineer (all genders)**
-
-**Level: Senior | Ukraine (Working from Home) | Full Time (40h/week) | Salary Range: $4.300 — $5.900 monthly**
 
 ** **
 
@@ -66,6 +68,6 @@ In addition to providing the necessary software and hardware, we offer a **500 E
 Judit
 Talent Acquisition Manager
 
-[[email protected](/cdn-cgi/l/email-protection#e094818c858e94a08584958b89ce838f8d)]
+[[email protected](/cdn-cgi/l/email-protection#1a6e7b767f746e5a7f7e6f717334797577)]
 
 *At eduki, we value diversity and the unique contributions each person brings to our team. We foster an inclusive culture where respect and appreciation are essential. Talents are considered regardless of age, gender, sexual identity, ethnicity, nationality, religion, or disability. *

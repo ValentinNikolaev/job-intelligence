@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 77
+Total vacancies: 80
 
-- Found: 60
+- Found: 63
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 77
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-09 | [Intesys](../registry/jobs/2026-09-09_164416_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-09_164416_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-09 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-09 | [ShippyPro](../registry/jobs/2026-09-09_164416_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-09_164416_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-09 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-09-09 | [MeinEinkauf GmbH](../registry/jobs/2026-09-09_164402_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/) | [PHP Backend Developer (m/w/d) - MeinEinkauf GmbH](../registry/jobs/2026-09-09_164402_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/job.md) | Konstanz, Konstanz (Kreis) | Adzuna | Found | 2026-09-09 | [Adzuna](https://www.adzuna.de/details/5877108566?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-09 | [RiseGuide](../registry/jobs/2026-09-09_121037_riseguide_software-engineer-golang/) | [Software Engineer (Golang)](../registry/jobs/2026-09-09_121037_riseguide_software-engineer-golang/job.md) | Варшава (Польща), віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/riseguide/vacancies/360423/) | [Open](../registry/jobs/2026-09-09_121037_riseguide_software-engineer-golang/company.md) | — | — | — | — |
 | 2026-09-09 | [eduki](../registry/jobs/2026-09-09_121037_eduki_senior-back-end-developer-all-genders/) | [Senior Back-End Developer (all genders)](../registry/jobs/2026-09-09_121037_eduki_senior-back-end-developer-all-genders/job.md) | віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/372701/) | [Open](../registry/jobs/2026-09-09_121037_eduki_senior-back-end-developer-all-genders/company.md) | — | — | — | — |
 | 2026-09-09 | [TRIBBU](../registry/jobs/2026-09-09_061148_tribbu_senior-backend-engineer-php-laravel-tribbu/) | [Senior Backend Engineer (PHP / Laravel) @TRIBBU](../registry/jobs/2026-09-09_061148_tribbu_senior-backend-engineer-php-laravel-tribbu/job.md) | Madrid, Comunidad de Madrid | Adzuna | Found | 2026-09-09 | [Adzuna](https://www.adzuna.es/details/5875820458?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
