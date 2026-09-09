@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 78
+Total vacancies: 83
 
-- Found: 61
+- Found: 66
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,11 @@ Total vacancies: 78
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-09 | [CRMOZ](../registry/jobs/2026-09-09_200217_crmoz_junior-full-stack-developer/) | [Junior Full Stack Developer](../registry/jobs/2026-09-09_200217_crmoz_junior-full-stack-developer/job.md) | віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/crmoz/vacancies/372154/) | [Open](../registry/jobs/2026-09-09_200217_crmoz_junior-full-stack-developer/company.md) | — | — | — | — |
+| 2026-09-09 | [Intesys](../registry/jobs/2026-09-09_200214_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-09_200214_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-09 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-09 | [Intesys](../registry/jobs/2026-09-09_200214_intesys_java-software-developer_af34895a/) | [Java Software Developer](../registry/jobs/2026-09-09_200214_intesys_java-software-developer_af34895a/job.md) | — | Custom | Found | 2026-09-09 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-09 | [Intesys](../registry/jobs/2026-09-09_200214_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-09_200214_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-09 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-09 | [ShippyPro](../registry/jobs/2026-09-09_200213_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-09_200213_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-09 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-09 | [Pine Software](../registry/jobs/2026-09-09_164420_pine-software_senior-golang-engineer/) | [Senior Golang engineer](../registry/jobs/2026-09-09_164420_pine-software_senior-golang-engineer/job.md) | віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/pine-software/vacancies/368105/) | [Open](../registry/jobs/2026-09-09_164420_pine-software_senior-golang-engineer/company.md) | — | — | — | — |
 | 2026-09-09 | [DOIT Software](../registry/jobs/2026-09-09_164420_doit-software_team-lead-ai-product-engineering/) | [Team Lead, AI Product Engineering](../registry/jobs/2026-09-09_164420_doit-software_team-lead-ai-product-engineering/job.md) | за кордоном, віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/doit-software/vacancies/372750/) | [Open](../registry/jobs/2026-09-09_164420_doit-software_team-lead-ai-product-engineering/company.md) | — | — | — | — |
 | 2026-09-09 | [MeinEinkauf GmbH](../registry/jobs/2026-09-09_164402_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/) | [PHP Backend Developer (m/w/d) - MeinEinkauf GmbH](../registry/jobs/2026-09-09_164402_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/job.md) | Konstanz, Konstanz (Kreis) | Adzuna | Found | 2026-09-09 | [Adzuna](https://www.adzuna.de/details/5877108566?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
