@@ -1,0 +1,20 @@
+score: 93
+recommendation: strong_match
+summary: Exceptional senior PHP match with direct airSlate experience and deep evidence
+  across backend architecture and operations.
+strengths:
+- Direct prior airSlate senior engineering experience.
+- Strong Laravel/Symfony, SQL, distributed services, Kubernetes, CI/CD, and observability
+  background.
+- Demonstrated measurable performance, cost, and delivery improvements.
+gaps:
+- The vacancy’s precise product area is not fully detailed in the sealed record.
+concerns:
+- Some profile chronology is internally complex and should be date-checked.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-09T17:45:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:142e4930d9c2b20b3ce7a3487c5f8a8c0403cf0864639923e5ebe8c20d2cf192
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

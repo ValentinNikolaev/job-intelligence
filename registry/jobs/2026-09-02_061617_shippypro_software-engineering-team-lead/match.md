@@ -1,22 +1,20 @@
 # Match Analysis
 
-**Score:** 80/100  
+**Score:** 84/100  
 **Recommendation:** Strong Match
 
-Technical leadership, backend ownership, PHP, Go, cloud infrastructure, and mentoring align well with a software engineering team lead role.
+Strong match for a hands-on engineering lead role with PHP/backend systems, AWS, scale, mentoring, and AI-enabled workflows.
 
 ## Why it matches
 
-- Led engineering teams
-- Go and PHP
-- AWS and Kubernetes
-- architecture
-- mentoring and delivery
+- Technical leadership, direct management, mentoring, planning, and delivery ownership are supported.
+- Strong PHP backend, AWS, Kubernetes, distributed systems, and reliability experience.
+- Recent support automation with measurable AI-assisted operational impact is relevant.
 
 ## Gaps
 
-- ShippyPro-specific domain and exact people-management scope are unknown
+- Python and TypeScript/React are not as strongly evidenced as PHP and Go.
 
 ## Concerns
 
-- Work-location and timezone arrangement should be verified
+- The role’s English requirement is plausible but not explicitly documented in the candidate profile.

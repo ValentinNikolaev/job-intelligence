@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: Strong alignment with a Go software-engineering role requiring backend services,
+  reliability, and scalable systems.
+strengths:
+- Recent production Go backend ownership and resilient message pipelines.
+- Strong distributed systems, AWS, Kubernetes, observability, and performance evidence.
+- Candidate profile is centered on senior backend engineering.
+gaps:
+- The vacancy-specific depth of Go years and any domain-specific requirements are
+  not fully confirmed.
+concerns:
+- Role scope and seniority details are limited in the captured posting.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-09T17:45:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:c2b5bac2824f3772860369f9ef8338abbe5cbbd2cd1d5a75a50047bd6efab92e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

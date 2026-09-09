@@ -1,0 +1,20 @@
+score: 84
+recommendation: strong_match
+summary: Strong Go backend fit with distributed systems, reliability, cloud infrastructure,
+  and senior engineering experience.
+strengths:
+- Recent production Go platform ownership and scalable service design.
+- AWS, Kubernetes, queues, observability, and data-pipeline experience are strong
+  matches.
+- Proven performance optimization and cross-functional technical leadership.
+gaps:
+- MacPaw-specific product or security-domain experience is not shown.
+concerns:
+- The posting’s detailed mandatory requirements are limited in the sealed record.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-09T17:45:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0e7e2d121d23e736019c9b7748878dbecc155de417fc0dbc33c49377925a1177
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

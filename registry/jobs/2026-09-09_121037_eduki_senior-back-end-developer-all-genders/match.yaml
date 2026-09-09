@@ -1,0 +1,21 @@
+score: 76
+recommendation: match
+summary: Solid senior backend fit based on PHP and Go, scalable services, event systems,
+  and production ownership.
+strengths:
+- Strong PHP framework background plus recent Go backend development.
+- Event-driven analytics infrastructure and resilient service integrations are directly
+  relevant.
+- Experience with AWS, Kubernetes, databases, CI/CD, and performance optimization.
+gaps:
+- The posting’s exact stack and product-domain requirements are not fully visible
+  in the sealed evidence.
+concerns:
+- German-language or location expectations may require confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-09T17:45:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:cf0aa8723dfe5c3cccaaf798c8bf3787bd3febbff404dc2809cffb2ad043b1f0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

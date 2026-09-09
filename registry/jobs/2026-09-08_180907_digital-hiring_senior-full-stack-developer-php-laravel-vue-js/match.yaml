@@ -1,0 +1,21 @@
+score: 86
+recommendation: strong_match
+summary: Very strong fit for senior Laravel/PHP backend work with relevant full-stack
+  collaboration and modern delivery practices.
+strengths:
+- Extensive PHP and Laravel experience with API and product-wide backend ownership.
+- Strong databases, CI/CD, Kubernetes, performance, and production troubleshooting
+  evidence.
+- Experience collaborating across product and engineering functions.
+gaps:
+- The profile provides less direct evidence of sustained Vue.js and TypeScript delivery.
+concerns:
+- Frontend depth may be secondary to the role’s backend requirements and should be
+  clarified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-09T17:45:22Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:68983af5dc67696b588ac97b34fd6bd143e94cee7a16ba29908db4568bb8972b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
