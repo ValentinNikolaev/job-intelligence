@@ -1,0 +1,23 @@
+score: 72
+recommendation: match
+summary: Good senior PHP/Laravel and scalability fit for a backend architecture role,
+  with location and language details not established.
+strengths:
+- Senior backend experience in PHP and Laravel with system design and production reliability
+  focus.
+- Relevant evidence of scalable APIs, microservices, database performance, and event-driven
+  systems.
+- Experience in digital platforms and high-volume operational environments.
+gaps:
+- The posting excerpt does not establish remote eligibility, required language, or
+  the full technology list.
+concerns:
+- Madrid location may require relocation or onsite presence; the source does not clarify
+  compatibility with working from Italy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-09T18:47:03Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fdf96a636e89687decbcf424c96fa2167abf985b5118719cfda8fea84e12f558
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

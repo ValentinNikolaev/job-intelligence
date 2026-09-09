@@ -1,23 +1,21 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 90/100  
 **Recommendation:** Strong Match
 
-Senior backend experience in Go and PHP, distributed systems, cloud operations, and reliability maps closely to the role.
+Strong fit for a remote senior backend role centered on PHP Laravel, distributed systems, reliability, and automation.
 
 ## Why it matches
 
-- Go and PHP
-- microservices
-- AWS
-- Kubernetes
-- event-driven systems
-- production troubleshooting
+- Extensive PHP and Laravel backend experience with production API and platform systems.
+- Demonstrated microservices, event-driven architecture, AWS, Kubernetes, queues, retries, and observability experience.
+- Directly relevant support automation and AI-assisted workflow experience.
+- Remote work and English requirements are compatible with the profile.
 
 ## Gaps
 
-- Specific application stack and domain experience are not established
+- NodeJS, Python, React, DynamoDB, and the listed testing tools are not all explicitly demonstrated.
 
 ## Concerns
 
-- Exact location policy and role emphasis require confirmation
+- The role's stated salary and AI stack are not independently matched to candidate preferences or every listed technology.
