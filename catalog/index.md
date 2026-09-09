@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 75
+Total vacancies: 77
 
-- Found: 58
+- Found: 60
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 75
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-09 | [RiseGuide](../registry/jobs/2026-09-09_121037_riseguide_software-engineer-golang/) | [Software Engineer (Golang)](../registry/jobs/2026-09-09_121037_riseguide_software-engineer-golang/job.md) | Варшава (Польща), віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/riseguide/vacancies/360423/) | [Open](../registry/jobs/2026-09-09_121037_riseguide_software-engineer-golang/company.md) | — | — | — | — |
+| 2026-09-09 | [eduki](../registry/jobs/2026-09-09_121037_eduki_senior-back-end-developer-all-genders/) | [Senior Back-End Developer (all genders)](../registry/jobs/2026-09-09_121037_eduki_senior-back-end-developer-all-genders/job.md) | віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/372701/) | [Open](../registry/jobs/2026-09-09_121037_eduki_senior-back-end-developer-all-genders/company.md) | — | — | — | — |
 | 2026-09-09 | [TRIBBU](../registry/jobs/2026-09-09_061148_tribbu_senior-backend-engineer-php-laravel-tribbu/) | [Senior Backend Engineer (PHP / Laravel) @TRIBBU](../registry/jobs/2026-09-09_061148_tribbu_senior-backend-engineer-php-laravel-tribbu/job.md) | Madrid, Comunidad de Madrid | Adzuna | Found | 2026-09-09 | [Adzuna](https://www.adzuna.es/details/5875820458?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-08 | [MacPaw](../registry/jobs/2026-09-08_180907_macpaw_senior-back-end-engineer-golang/) | [Senior Back-End Engineer (Golang)](../registry/jobs/2026-09-08_180907_macpaw_senior-back-end-engineer-golang/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/macpaw/vacancies/359133/) | [Open](../registry/jobs/2026-09-08_180907_macpaw_senior-back-end-engineer-golang/company.md) | — | — | — | — |
 | 2026-09-08 | [SoloWay Technologies](../registry/jobs/2026-09-08_180907_soloway-technologies_senior-php-engineer-vanilla-php/) | [Senior PHP Engineer (Vanilla PHP)](../registry/jobs/2026-09-08_180907_soloway-technologies_senior-php-engineer-vanilla-php/job.md) | Івано-Франківськ, Чернівці, віддалено | Dou | Found | 2026-09-08 | [Dou](https://jobs.dou.ua/companies/soloway-tech/vacancies/372538/) | [Open](../registry/jobs/2026-09-08_180907_soloway-technologies_senior-php-engineer-vanilla-php/company.md) | — | — | — | — |
