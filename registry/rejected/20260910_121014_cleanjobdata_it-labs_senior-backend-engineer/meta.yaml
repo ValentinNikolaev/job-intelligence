@@ -1,0 +1,12 @@
+schema_version: 1
+source: cleanjobdata
+source_job_id: '91522051'
+source_url: https://cleanjobdata.com/apply/91522051
+title: Senior Backend Engineer
+company: IT Labs
+location: Zagreb
+published_at: '2026-09-08T14:31:32.485Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-10T12:10:14Z'
+rejected_at: '2026-09-10T12:10:14Z'
