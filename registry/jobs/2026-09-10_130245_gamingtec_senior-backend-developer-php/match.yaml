@@ -1,0 +1,22 @@
+score: 88
+recommendation: strong_match
+summary: Excellent alignment with the senior PHP backend role through extensive PHP,
+  Laravel, Symfony, REST API, database, Docker-adjacent infrastructure, and production
+  troubleshooting experience; remote work is listed.
+strengths:
+- More than five years of demonstrated PHP backend experience.
+- Direct Laravel, Symfony, REST API, PostgreSQL, and maintainable OOP experience.
+- Strong production reliability, CI/CD, and cross-functional delivery background.
+gaps:
+- MongoDB, Redis, Docker, and React are not explicitly evidenced in the candidate
+  profile.
+concerns:
+- The role's listed remote locations and employment terms should be confirmed for
+  Italy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-10T13:15:17Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fb8b41bb407529a4f0e53ba540c2961a69bc90cba85d81b5f00099d4de006540
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
