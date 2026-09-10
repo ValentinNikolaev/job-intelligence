@@ -73,4 +73,4 @@ Nice to have**:
 
 **
 Як подати заявку**:
-Надсилайте ваше резюме за запропонованим нижче посиланням. Додаткова опція: [[email protected](/cdn-cgi/l/email-protection#89e1fbc9f3ecfbe6fde8fae2e5e8ebfaa7eae6e4)]
+Надсилайте ваше резюме за запропонованим нижче посиланням. Додаткова опція: [[email protected](/cdn-cgi/l/email-protection#7d150f3d07180f12091c0e16111c1f0e531e1210)]

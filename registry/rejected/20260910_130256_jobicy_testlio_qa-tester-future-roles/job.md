@@ -4,8 +4,8 @@ Posted: 2026-09-03T13:54:46Z
 
 ## Rejection
 
-- Category: role_mismatch
-- Reason: title is an obvious mismatch for a backend profile
+- Category: stale
+- Reason: published_at 2026-09-03T13:54:46Z is older than 7 days
 
 ### About Testlio
 

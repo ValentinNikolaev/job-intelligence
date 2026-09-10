@@ -67,4 +67,4 @@ Bonus Points:
 
 About Kong: 
 
-Kong Inc., a leading developer of API and AI connectivity technologies, is building the infrastructure that powers the agentic era. Trusted by the Fortune 500 and startups alike, Kong's unified API and AI platform, Kong Konnect, enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI models. For more information, visit www.konghq.com http://www.konghq.com.
+Kong Inc., the AI Connectivity Company, is building the connectivity layer of AI. Trusted by the Fortune 500® and AI-native startups alike, Kong’s unified API and AI platform enables organizations to secure, manage, accelerate, govern, and monetize the flow of intelligence across APIs and AI traffic — on any model, any cloud. For more information, visit www.konghq.com http://www.konghq.com.

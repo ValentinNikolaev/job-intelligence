@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 76
+Total vacancies: 77
 
-- Found: 59
+- Found: 60
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 76
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-10 | [mondogaming srl](../registry/jobs/2026-09-10_175602_mondogaming-srl_svilupparore-backend-golang/) | [Svilupparore Backend Golang](../registry/jobs/2026-09-10_175602_mondogaming-srl_svilupparore-backend-golang/job.md) | Cerignola, Provincia di Foggia | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.it/details/5878733585?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-10 | [Canonical](../registry/jobs/2026-09-10_130255_canonical_software-engineer-python-container-images/) | [Software Engineer - Python - Container Images](../registry/jobs/2026-09-10_130255_canonical_software-engineer-python-container-images/job.md) | APAC,  EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-09-10 | [Jobicy](https://jobicy.com/jobs/150364-software-engineer-python-container-images) | — | — | — | — | — |
 | 2026-09-10 | [Gamingtec](../registry/jobs/2026-09-10_130245_gamingtec_senior-backend-developer-php/) | [Senior Backend Developer (PHP)](../registry/jobs/2026-09-10_130245_gamingtec_senior-backend-developer-php/job.md) | Лімасол (Кіпр), Лондон (Велика Британія), Тбілісі (Грузія), віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/gamingtec/vacancies/372878/) | [Open](../registry/jobs/2026-09-10_130245_gamingtec_senior-backend-developer-php/company.md) | — | — | — | — |
 | 2026-09-10 | [Kozak Group](../registry/jobs/2026-09-10_130245_kozak-group_magento-2-full-stack-developer-part-time/) | [Magento 2 Full-Stack Developer (part-time)](../registry/jobs/2026-09-10_130245_kozak-group_magento-2-full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/kozak-group/vacancies/372790/) | [Open](../registry/jobs/2026-09-10_130245_kozak-group_magento-2-full-stack-developer-part-time/company.md) | — | — | — | — |
