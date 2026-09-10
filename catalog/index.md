@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 68
+Total vacancies: 77
 
-- Found: 51
+- Found: 60
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,15 @@ Total vacancies: 68
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-10 | [Canonical](../registry/jobs/2026-09-10_210333_canonical_software-engineer-python-container-images/) | [Software Engineer - Python - Container Images](../registry/jobs/2026-09-10_210333_canonical_software-engineer-python-container-images/job.md) | APAC,  EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-09-10 | [Jobicy](https://jobicy.com/jobs/150364-software-engineer-python-container-images) | — | — | — | — | — |
+| 2026-09-10 | [Kozak Group](../registry/jobs/2026-09-10_210322_kozak-group_magento-2-full-stack-developer-part-time/) | [Magento 2 Full-Stack Developer (part-time)](../registry/jobs/2026-09-10_210322_kozak-group_magento-2-full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/kozak-group/vacancies/372790/) | [Open](../registry/jobs/2026-09-10_210322_kozak-group_magento-2-full-stack-developer-part-time/company.md) | — | — | — | — |
+| 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_210318_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-10_210318_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-10 | [ShippyPro](../registry/jobs/2026-09-10_210318_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-10_210318_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-10 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_210318_intesys_java-software-developer_5443faa5/) | [Java Software Developer](../registry/jobs/2026-09-10_210318_intesys_java-software-developer_5443faa5/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_210318_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-10_210318_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-10 | [fiskaly](../registry/jobs/2026-09-10_210304_fiskaly_senior-backend-engineer-golang/) | [Senior Backend Engineer (Golang)](../registry/jobs/2026-09-10_210304_fiskaly_senior-backend-engineer-golang/job.md) | Polska | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.pl/details/5873242638?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-10 | [MeinEinkauf GmbH](../registry/jobs/2026-09-10_210304_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/) | [PHP Backend Developer (m/w/d) - MeinEinkauf GmbH](../registry/jobs/2026-09-10_210304_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/job.md) | Konstanz, Konstanz (Kreis) | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.de/details/5877108566?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-10 | [H2 invent](../registry/jobs/2026-09-10_210304_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/) | [Backend Entwickler für PHP und NodeJS (m/w/d)](../registry/jobs/2026-09-10_210304_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/job.md) | Tumringen, Lörrach | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.de/details/5872148833?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-10 | [mondogaming srl](../registry/jobs/2026-09-10_175602_mondogaming-srl_svilupparore-backend-golang/) | [Svilupparore Backend Golang](../registry/jobs/2026-09-10_175602_mondogaming-srl_svilupparore-backend-golang/job.md) | Cerignola, Provincia di Foggia | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.it/details/5878733585?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-10 | [Gamingtec](../registry/jobs/2026-09-10_130245_gamingtec_senior-backend-developer-php/) | [Senior Backend Developer (PHP)](../registry/jobs/2026-09-10_130245_gamingtec_senior-backend-developer-php/job.md) | Лімасол (Кіпр), Лондон (Велика Британія), Тбілісі (Грузія), віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/gamingtec/vacancies/372878/) | [Open](../registry/jobs/2026-09-10_130245_gamingtec_senior-backend-developer-php/company.md) | — | — | — | — |
 | 2026-09-10 | [Honeytech](../registry/jobs/2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack/) | [Senior Software Engineer (Back End / Full Stack)](../registry/jobs/2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/honeytech/vacancies/355101/) | [Open](../registry/jobs/2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack/company.md) | — | — | — | — |
