@@ -1,0 +1,25 @@
+score: 24
+recommendation: not_match
+summary: Remote tracking and notifications work aligns with the candidate's support
+  automation and messaging background, but the graduate or junior seniority is fundamentally
+  below the candidate's level.
+strengths:
+- Remote work
+- event-driven high-volume systems
+- AWS
+- notifications
+- and support-adjacent automation
+gaps:
+- Junior-level scope
+- Python and TypeScript as primary languages
+- and stated early-career profile
+concerns:
+- The role may be materially overqualified despite domain overlap
+hard_rejection: true
+hard_rejection_reason: Fundamentally incompatible junior or graduate seniority for
+  a 15-plus-year senior engineer.
+analyzed_at: '2026-09-10T10:16:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b4ab07125c23272f9aa34bc1618ae51abc4628dc425525aeb74d249e6430bfcb
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

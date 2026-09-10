@@ -1,0 +1,20 @@
+score: 18
+recommendation: not_match
+summary: This Java software developer vacancy is materially misaligned with the candidate's
+  documented PHP and Go backend specialization.
+strengths:
+- General backend
+- API
+- and production engineering experience
+gaps:
+- Java is an essential role focus and is not evidenced
+concerns:
+- The posting appears office-based in Verona
+hard_rejection: true
+hard_rejection_reason: Essential Java skill is unsupported and the apparent location
+  is incompatible with the candidate's remote preference.
+analyzed_at: '2026-09-10T10:16:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b9038bcf4d43e5f9a2c6dcf05081978962abde061a0b599ead5cdbd8f9f6f75a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,22 @@
+score: 18
+recommendation: not_match
+summary: Go seniority and SaaS backend experience are relevant, but fluent German
+  and Austria or Poland location eligibility are explicit requirements not supported
+  by the profile.
+strengths:
+- Senior Go backend experience
+- SaaS systems
+- APIs
+- and full lifecycle delivery
+gaps:
+- Fluent German is not evidenced and the candidate is based in Italy
+concerns:
+- The vacancy states no freelancing and prefers Austria or Poland
+hard_rejection: true
+hard_rejection_reason: Explicit fluent-German and location or employment constraints
+  are decisive mandatory conflicts.
+analyzed_at: '2026-09-10T10:16:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:c99fbdc77d681d2167711c96bd08b36983a69aa24229c391466a4a9a208a91f9
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

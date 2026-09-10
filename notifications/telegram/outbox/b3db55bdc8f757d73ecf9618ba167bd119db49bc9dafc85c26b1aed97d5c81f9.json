@@ -1,0 +1,50 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-10T10:16:15Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Honeytech",
+      "directory": "2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack",
+      "score": 86,
+      "title": "Senior Software Engineer (Back End / Full Stack)",
+      "url": "https://jobs.dou.ua/companies/honeytech/vacancies/355101/",
+      "vacancy_id": "4c9384ab-f97b-47d7-8c1f-8dd1b0366a4c"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-09-10_061208_shippypro_software-engineering-team-lead",
+      "score": 78,
+      "title": "Software Engineering Team Lead",
+      "url": "https://shippypro.factorialhr.com/job_posting/software-engineering-team-lead-311256",
+      "vacancy_id": "d0cd37c0-72f4-49d2-90bc-7e25e825aca7"
+    },
+    {
+      "company": "ShippyPro",
+      "directory": "2026-09-10_061208_shippypro_senior-software-engineer",
+      "score": 84,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "0268153f-a528-4c17-8c21-ecebc1b4e683"
+    },
+    {
+      "company": "Altamira",
+      "directory": "2026-09-10_001708_altamira_senior-php-developer",
+      "score": 82,
+      "title": "Senior PHP Developer",
+      "url": "https://jobs.dou.ua/companies/altamira-ai/vacancies/372787/",
+      "vacancy_id": "8c13043c-e59b-4810-8664-5b1b73269c19"
+    },
+    {
+      "company": "Zero Task Labs",
+      "directory": "2026-09-07_160319_zero-task-labs_full-stack-developer-part-time",
+      "score": 68,
+      "title": "Full-Stack Developer (part-time)",
+      "url": "https://jobs.dou.ua/companies/zerotasklabs/vacancies/372349/",
+      "vacancy_id": "65606c18-30d7-4c9d-beda-a682669be0ab"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b3db55bdc8f757d73ecf9618ba167bd119db49bc9dafc85c26b1aed97d5c81f9",
+  "schema_version": 1
+}

@@ -1,0 +1,21 @@
+score: 78
+recommendation: match
+summary: Strong leadership and backend fit for a remote shipping-platform team, with
+  relevant AWS, distributed systems, PHP, and notification experience.
+strengths:
+- Technical leadership
+- PHP and Go
+- AWS and distributed systems
+- messaging and operational reliability
+gaps:
+- The modernizing stack emphasizes Python and TypeScript
+- which are not core evidenced languages
+concerns:
+- Exact leadership scope and timezone expectations are not fully clear
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-10T10:16:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d776c00452909253edc0f40dba18a2c4708f6846e4d066e143558e21fdd46a2b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,26 @@
+score: 82
+recommendation: strong_match
+summary: Strong remote fit for senior PHP modernization work involving databases,
+  AWS, CI/CD, APIs, architecture, and reliability.
+strengths:
+- PHP
+- Symfony/Laravel
+- MySQL and PostgreSQL
+- AWS
+- CI/CD
+- API design
+- performance optimization
+gaps:
+- React
+- Jest
+- GraphQL
+- and the specific education-welfare domain are not evidenced
+concerns:
+- The engagement is described as hourly freelance work
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-10T10:16:15Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:23f7b63febc64b6ce8d3f8b1000406d047bb433630456bd2cabc3fac3df9cc5e
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
