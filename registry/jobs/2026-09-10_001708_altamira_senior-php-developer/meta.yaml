@@ -1,0 +1,33 @@
+schema_version: 2
+id: 8c13043c-e59b-4810-8664-5b1b73269c19
+title: Senior PHP Developer
+company: Altamira
+company_url: https://jobs.dou.ua/companies/altamira-ai/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372787'
+  url: https://jobs.dou.ua/companies/altamira-ai/vacancies/372787/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 9 вересня
+    listing_summary: Altamira is a software development outsourcing company. We provide
+      solutions that make a tangible impact on our clients’ growth and productivity.
+published_at: '2026-09-09'
+discovered_at: '2026-09-10T00:17:08Z'
+updated_at: '2026-09-10T00:17:08Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-10T00:17:08Z'
+analysis_priority: 100
+fingerprint: sha256:f1abaed06de02d97d7de452d5f17dafeecfeab2b8ca10ad90ea20a1c2faae100
+data_source: dou
+content_source: dou
+company_content_source: dou
