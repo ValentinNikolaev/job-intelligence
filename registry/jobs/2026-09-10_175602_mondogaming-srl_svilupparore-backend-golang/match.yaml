@@ -1,0 +1,33 @@
+score: 68
+recommendation: match
+summary: Strong Go backend and platform-engineering alignment through production automation,
+  AWS/Kubernetes, CI/CD, event-driven systems, and reliability work, with reduced
+  confidence because the listing emphasizes DevOps and does not clearly state remote
+  eligibility.
+strengths:
+- Extensive demonstrated Go backend experience, including API orchestration and resilient
+  message-delivery pipelines.
+- Direct AWS, Kubernetes, Helm, GitHub Actions, ArgoCD, monitoring, and production
+  troubleshooting experience.
+- Strong event-driven architecture and reliability background, including queues, retries,
+  observability, and high-volume systems.
+- Relevant iGaming and betting-adjacent domain exposure through cryptocurrency and
+  digital-asset platforms.
+gaps:
+- The listing provides too little detail to verify specific betting-exchange or Polymarket
+  technologies and responsibilities.
+- No explicit evidence of professional experience with the exact DevOps toolchain
+  or betting-platform stack beyond the documented infrastructure skills.
+concerns:
+- The role is located in Cerignola and the listing does not clearly confirm remote
+  work, while remote compatibility is an important candidate preference.
+- DevOps/SRE emphasis may be less aligned than a primarily software-development role.
+- The posting is truncated, so seniority, language, compensation, and working-model
+  requirements remain uncertain.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-10T18:57:27Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f9e9cb412e877108a77982fe7750b4cf11b20d73c44662fb0101f3ede52f92c0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
