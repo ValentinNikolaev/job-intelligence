@@ -1,0 +1,24 @@
+schema_version: 2
+id: d6f68451-7e1d-4d6e-ab34-b52c47592eed
+title: Senior Backend Engineer (Golang)
+company: fiskaly
+company_url: null
+location: Polska
+remote: true
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5873242638'
+  url: https://www.adzuna.pl/details/5873242638?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-06T18:17:42Z'
+discovered_at: '2026-09-10T06:11:57Z'
+updated_at: '2026-09-10T06:11:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-10T06:11:57Z'
+analysis_priority: 0
+fingerprint: sha256:fce558f9651dbfc6534d6e93370a16e2754bd93473cc6b08fbd021136eb6f21f
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

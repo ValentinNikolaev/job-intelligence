@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150052'
+source_url: https://jobicy.com/jobs/150052-1775-rpg-as400-jd-edwards-enterpriseone-developer
+title: 1775 RPG/AS400 & JD Edwards EnterpriseOne Developer
+company: Softgic
+location: Anywhere
+published_at: '2026-09-02T04:59:34Z'
+rejection_category: stale
+rejection_reason: published_at 2026-09-02T04:59:34Z is older than 7 days
+updated_at: '2026-09-10T06:12:19Z'
+rejected_at: '2026-09-10T06:12:19Z'

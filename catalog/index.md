@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 64
+Total vacancies: 71
 
-- Found: 47
+- Found: 54
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,13 @@ Total vacancies: 64
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-10 | [ShippyPro](../registry/jobs/2026-09-10_061208_shippypro_software-engineering-team-lead/) | [Software Engineering Team Lead](../registry/jobs/2026-09-10_061208_shippypro_software-engineering-team-lead/job.md) | Remote | Custom | Found | 2026-09-10 | [Custom](https://shippypro.factorialhr.com/job_posting/software-engineering-team-lead-311256) | — | — | — | — | — |
+| 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_061208_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-10_061208_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
+| 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_061208_intesys_java-software-developer_28ec3ad0/) | [Java Software Developer](../registry/jobs/2026-09-10_061208_intesys_java-software-developer_28ec3ad0/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
+| 2026-09-10 | [ShippyPro](../registry/jobs/2026-09-10_061208_shippypro_senior-software-engineer/) | [Senior Software Engineer](../registry/jobs/2026-09-10_061208_shippypro_senior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-10 | [Custom](https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743) | — | — | — | — | — |
+| 2026-09-10 | [H2 invent](../registry/jobs/2026-09-10_061157_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/) | [Backend Entwickler für PHP und NodeJS (m/w/d)](../registry/jobs/2026-09-10_061157_h2-invent_backend-entwickler-f%C3%BCr-php-und-nodejs-m-w-d/job.md) | Tumringen, Lörrach | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.de/details/5872148833?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-10 | [MeinEinkauf GmbH](../registry/jobs/2026-09-10_061157_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/) | [PHP Backend Developer (m/w/d) - MeinEinkauf GmbH](../registry/jobs/2026-09-10_061157_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/job.md) | Konstanz, Konstanz (Kreis) | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.de/details/5877108566?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-10 | [fiskaly](../registry/jobs/2026-09-10_061157_fiskaly_senior-backend-engineer-golang/) | [Senior Backend Engineer (Golang)](../registry/jobs/2026-09-10_061157_fiskaly_senior-backend-engineer-golang/job.md) | Polska | Adzuna | Found | 2026-09-10 | [Adzuna](https://www.adzuna.pl/details/5873242638?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-10 | [Altamira](../registry/jobs/2026-09-10_001708_altamira_senior-php-developer/) | [Senior PHP Developer](../registry/jobs/2026-09-10_001708_altamira_senior-php-developer/job.md) | віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/altamira-ai/vacancies/372787/) | [Open](../registry/jobs/2026-09-10_001708_altamira_senior-php-developer/company.md) | — | — | — | — |
 | 2026-09-10 | [Kozak Group](../registry/jobs/2026-09-10_001708_kozak-group_magento-2-full-stack-developer-part-time/) | [Magento 2 Full-Stack Developer (part-time)](../registry/jobs/2026-09-10_001708_kozak-group_magento-2-full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/kozak-group/vacancies/372790/) | [Open](../registry/jobs/2026-09-10_001708_kozak-group_magento-2-full-stack-developer-part-time/company.md) | — | — | — | — |
 | 2026-09-09 | [Pine Software](../registry/jobs/2026-09-09_164420_pine-software_senior-golang-engineer/) | [Senior Golang engineer](../registry/jobs/2026-09-09_164420_pine-software_senior-golang-engineer/job.md) | віддалено | Dou | Found | 2026-09-09 | [Dou](https://jobs.dou.ua/companies/pine-software/vacancies/368105/) | [Open](../registry/jobs/2026-09-09_164420_pine-software_senior-golang-engineer/company.md) | — | — | — | — |
