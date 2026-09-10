@@ -1,0 +1,19 @@
+score: 58
+recommendation: possible_match
+summary: Strong remote EMEA fit with Kubernetes CI/CD Go and leadership, but Python
+  and container-image depth are not evidenced.
+strengths:
+- Remote EMEA aligns with Italy
+- Kubernetes Helm GitHub Actions ArgoCD AWS Go mentoring
+gaps:
+- No explicit Python
+- No explicit container-image building or package management
+concerns:
+- Python and container-image engineering are central requirements
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-10T21:59:36Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a2aa4db0d03cf4b30e39c6c7f618f58384fdb8658b8def772c6e0091ab983fd3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

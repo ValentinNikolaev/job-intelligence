@@ -1,0 +1,20 @@
+score: 18
+recommendation: not_match
+summary: Go seniority fits, but fluent German and Austria or Poland location eligibility
+  are explicit and unsupported constraints.
+strengths:
+- Go backend and SaaS lifecycle experience
+- Distributed systems and reliability
+gaps:
+- No German
+- Italy does not match stated Austria or Poland remote locations
+concerns:
+- No-freelancing condition and current engagement type are unclear
+hard_rejection: true
+hard_rejection_reason: Fluent German and Austria/Poland location eligibility are explicit
+  mandatory constraints unsupported by the profile.
+analyzed_at: '2026-09-10T21:59:36Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8aaf2f63844f2d56b29144c81bde697a2fc6f02c98f835431dfaaca858e2654a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
