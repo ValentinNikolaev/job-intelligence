@@ -1,0 +1,36 @@
+schema_version: 2
+id: 8a0c4e14-b9f0-4c86-897d-db4c9d5007c7
+title: Senior Backend Developer (PHP)
+company: Gamingtec
+company_url: https://jobs.dou.ua/companies/gamingtec/vacancies/
+location: Лімасол (Кіпр), Лондон (Велика Британія), Тбілісі (Грузія), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372878'
+  url: https://jobs.dou.ua/companies/gamingtec/vacancies/372878/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 10 вересня
+    listing_summary: 'Are you ready to take your PHP skills to the next level?
+
+
+      We are dedicated to providing ongoing support for an existing project built
+      on Laravel/Symfony/React technologies.'
+published_at: '2026-09-10'
+discovered_at: '2026-09-10T13:02:45Z'
+updated_at: '2026-09-10T13:02:45Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-10T13:02:45Z'
+analysis_priority: 100
+fingerprint: sha256:a2481c4f65e1bed618ab7020d7f69a9d09ced11e51933332f9ae9e709e3d75fc
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152752'
+source_url: https://jobicy.com/jobs/152752-senior-backend-engineer-core-team
+title: Senior Backend Engineer (Core Team)
+company: Playson
+location: Europe,  Ukraine
+published_at: '2026-09-07T16:39:17Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-10T13:02:56Z'
+rejected_at: '2026-09-10T13:02:56Z'
