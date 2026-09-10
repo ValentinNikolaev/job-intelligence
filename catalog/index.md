@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 75
 
-- Found: 54
+- Found: 58
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 71
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-10 | [Canonical](../registry/jobs/2026-09-10_091437_canonical_software-engineer-python-container-images/) | [Software Engineer - Python - Container Images](../registry/jobs/2026-09-10_091437_canonical_software-engineer-python-container-images/job.md) | APAC,  EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-09-10 | [Jobicy](https://jobicy.com/jobs/150364-software-engineer-python-container-images) | — | — | — | — | — |
+| 2026-09-10 | [Honeytech](../registry/jobs/2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack/) | [Senior Software Engineer (Back End / Full Stack)](../registry/jobs/2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-10 | [Dou](https://jobs.dou.ua/companies/honeytech/vacancies/355101/) | [Open](../registry/jobs/2026-09-10_091425_honeytech_senior-software-engineer-back-end-full-stack/company.md) | — | — | — | — |
+| 2026-09-10 | [ShippyPro](../registry/jobs/2026-09-10_091421_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-10_091421_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-10 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_091421_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-10_091421_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-09-10 | [ShippyPro](../registry/jobs/2026-09-10_061208_shippypro_software-engineering-team-lead/) | [Software Engineering Team Lead](../registry/jobs/2026-09-10_061208_shippypro_software-engineering-team-lead/job.md) | Remote | Custom | Found | 2026-09-10 | [Custom](https://shippypro.factorialhr.com/job_posting/software-engineering-team-lead-311256) | — | — | — | — | — |
 | 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_061208_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-10_061208_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
 | 2026-09-10 | [Intesys](../registry/jobs/2026-09-10_061208_intesys_java-software-developer_28ec3ad0/) | [Java Software Developer](../registry/jobs/2026-09-10_061208_intesys_java-software-developer_28ec3ad0/job.md) | — | Custom | Found | 2026-09-10 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |

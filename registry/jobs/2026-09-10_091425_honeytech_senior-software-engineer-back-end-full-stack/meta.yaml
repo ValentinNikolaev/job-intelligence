@@ -1,0 +1,45 @@
+schema_version: 2
+id: 4c9384ab-f97b-47d7-8c1f-8dd1b0366a4c
+title: Senior Software Engineer (Back End / Full Stack)
+company: Honeytech
+company_url: https://jobs.dou.ua/companies/honeytech/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '355101'
+  url: https://jobs.dou.ua/companies/honeytech/vacancies/355101/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 10 вересня
+    listing_summary: 'Привіт!
+
+
+      Ми — Honeytech, українська продуктова компанія, яка створює digital entertainment
+      продукти та розвиває власні платформи у сфері вебкоміксів для глобальної аудиторії.
+
+
+      Наші результати:
+
+
+      № 1 у своїй ніші на ринках Tier-1.
+
+
+      20M+ юзерів користуються нашим продуктом.'
+published_at: '2026-09-10'
+discovered_at: '2026-09-10T09:14:25Z'
+updated_at: '2026-09-10T09:14:25Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-10T09:14:25Z'
+analysis_priority: 100
+fingerprint: sha256:0bfb59a81743f129f12b11ff994d9c928c7e07c3248e0750c20f93dcaf6a858e
+data_source: dou
+content_source: dou
+company_content_source: dou
