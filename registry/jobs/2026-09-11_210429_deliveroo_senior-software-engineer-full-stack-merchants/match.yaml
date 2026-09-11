@@ -1,0 +1,20 @@
+score: 68
+recommendation: match
+summary: Strong Go, backend, distributed systems, AWS, Kubernetes, ownership, and
+  mentoring fit; frontend depth and UK tech-hub location reduce certainty.
+strengths:
+- Go backend and production systems experience
+- Architecture, reliability, and mentoring evidence
+- AI-assisted automation experience
+gaps:
+- React/TypeScript frontend depth is not evidenced
+- London/UK work eligibility is unclear
+concerns:
+- Role is based in London and remote eligibility from Italy is not stated
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T21:09:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:c063aae664ac4c4f8ea3caa412e285dab6caeab8090e334b349e46bc5779288b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

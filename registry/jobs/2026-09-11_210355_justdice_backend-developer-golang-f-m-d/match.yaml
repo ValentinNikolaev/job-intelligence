@@ -1,0 +1,19 @@
+score: 58
+recommendation: possible_match
+summary: Go backend experience, ownership, and production reliability align, but the
+  Hamburg/German context and unspecified language requirements reduce fit.
+strengths:
+- Recent Go backend and automation experience
+- Distributed systems, monitoring, and reliability background
+gaps:
+- German proficiency is not evidenced
+- Mobile gaming domain is not evidenced
+concerns:
+- Germany location and remote eligibility from Italy are unclear
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T21:09:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f07f0a1ba0454bef0172b9d503f563c159d666ca6636127bfce0c2b3b592f113
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

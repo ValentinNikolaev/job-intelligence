@@ -1,0 +1,19 @@
+score: 18
+recommendation: not_match
+summary: Go backend fit is offset by explicit Austria/Poland location limits and fluent
+  German requirement, neither of which is satisfied by the profile.
+strengths:
+- Relevant Go backend and SaaS-scale experience
+gaps:
+- Fluent German is not evidenced
+- Candidate is based in Italy and the posting limits remote work to Austria or Poland
+concerns:
+- No relocation or Italy exception is stated
+hard_rejection: true
+hard_rejection_reason: Explicit location and fluent-German requirements conflict with
+  the candidate profile.
+analyzed_at: '2026-09-11T21:09:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:e929450242f230578c53d552b65604e2aca84a058df060d6975fec88090fe4de
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

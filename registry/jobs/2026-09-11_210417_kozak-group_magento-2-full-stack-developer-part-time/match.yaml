@@ -1,0 +1,19 @@
+score: 52
+recommendation: possible_match
+summary: Strong PHP background and remote work align, but Magento 2 and full-stack
+  delivery are not demonstrated as core experience.
+strengths:
+- Extensive PHP backend experience
+- Remote arrangement is stated
+gaps:
+- Magento 2 experience is not evidenced
+- Frontend depth is limited in the profile
+concerns:
+- Part-time expectations and timezone are unspecified
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T21:09:31Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:b1af9c0017968130d09dae37d70669e92c44d0b778ff3208dfc2d7aa2f8b93d5
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
