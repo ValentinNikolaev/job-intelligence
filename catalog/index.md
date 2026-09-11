@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 73
+Total vacancies: 77
 
-- Found: 56
+- Found: 60
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 73
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-11 | [Lavriv, Sole Proprietor (Ukraine)](../registry/jobs/2026-09-11_095846_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/) | [PHP розробник](../registry/jobs/2026-09-11_095846_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/job.md) | Київ, Львів, Івано-Франківськ, віддалено | Dou | Found | 2026-09-11 | [Dou](https://jobs.dou.ua/companies/fop-lavriv/vacancies/372960/) | [Open](../registry/jobs/2026-09-11_095846_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/company.md) | — | — | — | — |
+| 2026-09-11 | [Cossack Labs](../registry/jobs/2026-09-11_095846_cossack-labs_golang-developer-middle/) | [Golang developer (Middle)](../registry/jobs/2026-09-11_095846_cossack-labs_golang-developer-middle/job.md) | Київ, Львів, віддалено | Dou | Found | 2026-09-11 | [Dou](https://jobs.dou.ua/companies/cossack-labs/vacancies/372966/) | [Open](../registry/jobs/2026-09-11_095846_cossack-labs_golang-developer-middle/company.md) | — | — | — | — |
+| 2026-09-11 | [ShippyPro](../registry/jobs/2026-09-11_095842_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-11_095842_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-11 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
+| 2026-09-11 | [Intesys](../registry/jobs/2026-09-11_095842_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-11_095842_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-11 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
 | 2026-09-11 | [Canonical](../registry/jobs/2026-09-11_061210_canonical_software-engineer-python-container-images/) | [Software Engineer - Python - Container Images](../registry/jobs/2026-09-11_061210_canonical_software-engineer-python-container-images/job.md) | APAC,  EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-09-11 | [Jobicy](https://jobicy.com/jobs/150364-software-engineer-python-container-images) | — | — | — | — | — |
 | 2026-09-11 | [Kozak Group](../registry/jobs/2026-09-11_061157_kozak-group_magento-2-full-stack-developer-part-time/) | [Magento 2 Full-Stack Developer (part-time)](../registry/jobs/2026-09-11_061157_kozak-group_magento-2-full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-11 | [Dou](https://jobs.dou.ua/companies/kozak-group/vacancies/372790/) | [Open](../registry/jobs/2026-09-11_061157_kozak-group_magento-2-full-stack-developer-part-time/company.md) | — | — | — | — |
 | 2026-09-11 | [Intesys](../registry/jobs/2026-09-11_061153_intesys_java-software-developer_c48d2b9e/) | [Java Software Developer](../registry/jobs/2026-09-11_061153_intesys_java-software-developer_c48d2b9e/job.md) | — | Custom | Found | 2026-09-11 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |

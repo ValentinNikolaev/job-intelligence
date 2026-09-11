@@ -1,0 +1,38 @@
+schema_version: 2
+id: 64b01cdb-e8d4-4645-b1db-96603f7e28e0
+title: Golang developer (Middle)
+company: Cossack Labs
+company_url: https://jobs.dou.ua/companies/cossack-labs/vacancies/
+location: Київ, Львів, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '372966'
+  url: https://jobs.dou.ua/companies/cossack-labs/vacancies/372966/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 11 вересня
+    listing_summary: 'This position is open only to candidates currently residing
+      in Ukraine (preferably in Kyiv or Lviv).
+
+
+      Our product team is looking for an experienced Golang developer. You’ll help
+      create robust, mission‑critical systems. We’re primarily looking for mid-level
+      specialists.'
+published_at: '2026-09-11'
+discovered_at: '2026-09-11T09:58:46Z'
+updated_at: '2026-09-11T09:58:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-11T09:58:46Z'
+analysis_priority: 100
+fingerprint: sha256:3a779f704f402d483430bdf2f13460ec4460294cce3b4f1fa9bec44a02cd02a7
+data_source: dou
+content_source: dou
+company_content_source: dou
