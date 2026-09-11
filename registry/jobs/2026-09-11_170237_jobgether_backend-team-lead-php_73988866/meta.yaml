@@ -1,0 +1,24 @@
+schema_version: 2
+id: 73988866-d8b8-49d4-8031-bd935b44de44
+title: Backend Team Lead (PHP)
+company: Jobgether
+company_url: null
+location: France
+remote: null
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5879927689'
+  url: https://www.adzuna.fr/details/5879927689?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-11T18:01:10Z'
+discovered_at: '2026-09-11T17:02:37Z'
+updated_at: '2026-09-11T17:02:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-11T17:02:37Z'
+analysis_priority: 0
+fingerprint: sha256:8a060fe984f64d00322a2eb260f0fdf75e040aa4430406a8d7a526c978ba0813
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

@@ -1,0 +1,24 @@
+score: 72
+recommendation: match
+summary: PHP technical leadership, architecture, mentoring, and delivery ownership
+  are well supported, while France-based eligibility and the migration context remain
+  uncertain.
+strengths:
+- Five years of documented technical leadership and direct developer management.
+- Strong PHP, Laravel, Symfony, API, database, and distributed-systems experience.
+- Evidence of architecture, migration, delivery planning, mentoring, and operational
+  ownership.
+gaps:
+- The profile does not establish France work authorization, French language ability,
+  or relocation willingness.
+- The specific platform migration technology and partner-company context are not detailed
+  in the excerpt.
+concerns:
+- Remote work from Italy is not clearly stated for the France-based role.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T17:05:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:da52cb8292d872594500cc2fda270d3c4c5437a79b3aebd9c94c517a99682379
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,24 @@
+schema_version: 2
+id: 4ee89590-1141-4200-8a30-f8ee59a0f776
+title: Backend Team Lead (PHP)
+company: Jobgether
+company_url: null
+location: Veldhoven, Noord-Brabant
+remote: null
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5879953032'
+  url: https://www.adzuna.nl/details/5879953032?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-11T18:18:57Z'
+discovered_at: '2026-09-11T17:02:37Z'
+updated_at: '2026-09-11T17:02:37Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-11T17:02:37Z'
+analysis_priority: 0
+fingerprint: sha256:cd96f18d52ece997dda92de79caf1eddb391f25cf0557d29f832f1190b039d2c
+data_source: adzuna
+content_source: adzuna
+company_content_source: null
