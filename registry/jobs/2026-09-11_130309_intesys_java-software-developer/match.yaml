@@ -1,0 +1,23 @@
+score: 19
+recommendation: not_match
+summary: The posting describes a mobile developer requiring Java, Kotlin, Swift, mobile
+  platforms, app integration, beta testing, and mobile UX, none of which is demonstrated
+  as the candidate's core experience.
+strengths:
+- General software engineering, API, and integration experience provide limited transferable
+  foundations.
+gaps:
+- No demonstrated Java, Kotlin, Swift, native mobile, mobile integration, or beta-testing
+  experience.
+- No demonstrated mobile UX or app-pattern experience.
+concerns:
+- Mobile development is the essential role specialization and is materially different
+  from the candidate's backend focus.
+hard_rejection: true
+hard_rejection_reason: Mobile development and its required language/platform experience
+  are essential and unsupported by the candidate profile.
+analyzed_at: '2026-09-11T14:03:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:83cc1131671f0e6904e95f27fa7442b23ed2224febd303e7be78a900c28bf5fd
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

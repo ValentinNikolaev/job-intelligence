@@ -1,0 +1,22 @@
+score: 54
+recommendation: possible_match
+summary: PHP backend, REST APIs, microservices, MySQL/PostgreSQL, and performance
+  work align well, but the Germany-based context and Node.js requirement are not fully
+  supported by the candidate profile.
+strengths:
+- Directly relevant PHP backend, REST API, microservices, SQL, and performance evidence.
+- Strong experience collaborating across frontend, DevOps, and product teams.
+- Seniority and ownership exceed the apparent baseline requirements.
+gaps:
+- Node.js is named as a core technology but is not demonstrated in the profile.
+- German location, language, and work authorization compatibility are unknown.
+concerns:
+- The role may require on-site work in Lörrach and German communication, which could
+  materially change fit.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T14:03:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a311ff4f95c9f2c9dee61fbeb57c52ec298f4f4b9303b5433be6937be0778939
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

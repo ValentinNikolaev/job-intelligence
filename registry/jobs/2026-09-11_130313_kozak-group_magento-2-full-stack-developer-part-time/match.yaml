@@ -1,0 +1,24 @@
+score: 52
+recommendation: possible_match
+summary: Senior PHP, e-commerce, integrations, APIs, queues, and production debugging
+  are relevant, but Magento 2 architecture and its frontend stack are central requirements
+  not demonstrated in the profile.
+strengths:
+- Strong PHP/OOP, e-commerce, payment integration, API, and production troubleshooting
+  evidence.
+- RabbitMQ, AWS, databases, and scalable backend systems are supported by the profile.
+- The role is remote and part-time, reducing location friction.
+gaps:
+- No explicit Magento 2, Luma, RequireJS, KnockoutJS, Hyva, or Magento module experience.
+- No explicit evidence of the required Magento-specific architecture and vendor-module
+  practices.
+concerns:
+- The vacancy makes Magento 2 hands-on experience the core specialization rather than
+  an optional skill.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T14:03:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9e375122cc58e6daad6a9cd686fc4b7d0e4d0e7bc25c16703c3762d4343dac85
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

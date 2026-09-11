@@ -1,0 +1,26 @@
+score: 68
+recommendation: match
+summary: Distributed remote work, Go, Kubernetes, CI/CD, Linux, container operations,
+  technical leadership, and mentoring align well, while Python and container-image
+  tooling are not directly demonstrated.
+strengths:
+- Strong evidence for Go, Kubernetes, AWS, CI/CD, distributed systems, and operational
+  reliability.
+- Technical leadership, mentoring, architecture, and hiring experience match the collaboration
+  expectations.
+- EMEA remote eligibility is explicitly stated and compatible with the candidate's
+  location.
+gaps:
+- Python is a required skill but is not established in the candidate profile.
+- Direct container-image construction, Linux package management, and open-source community
+  work are not clearly evidenced.
+concerns:
+- The role may expect deeper Python and OCI/container-build specialization than the
+  profile proves.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T14:03:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d9603ef8ee653b6008114752cead1d37f3a7e991422dd62c28a4faea2032f65a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

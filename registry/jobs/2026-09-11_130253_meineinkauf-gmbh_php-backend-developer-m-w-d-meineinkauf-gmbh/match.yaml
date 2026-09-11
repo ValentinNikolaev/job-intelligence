@@ -1,0 +1,25 @@
+score: 61
+recommendation: possible_match
+summary: PHP, Symfony, backend services, integrations, databases, and scalable systems
+  are a strong technical fit, but the Germany-based role and German-language or local-work
+  requirements are not established as compatible.
+strengths:
+- Extensive PHP and Symfony backend experience with APIs, integrations, and production
+  systems.
+- Relevant e-commerce, fulfillment-adjacent, data, and multi-service architecture
+  experience.
+- The role's non-monolithic Symfony service environment fits the candidate's backend
+  background.
+gaps:
+- German proficiency and eligibility to work from the listed German location are unknown.
+- Sulu CMS and the specific customs/fulfillment domain are not demonstrated.
+concerns:
+- The source excerpt is truncated and the remote policy and language expectations
+  need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T14:03:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:49d0482c50d27665b030d6210b6f33a2305922ff824cf8d78993a8c30cfdf1e3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

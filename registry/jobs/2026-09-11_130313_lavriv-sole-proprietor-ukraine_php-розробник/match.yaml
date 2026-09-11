@@ -1,0 +1,23 @@
+score: 58
+recommendation: possible_match
+summary: Strong PHP, SQL, backend API, database migration, and maintenance experience
+  fit the work, but the role is tied to Ukraine and the candidate's local eligibility
+  and Ukrainian-language fit are unknown.
+strengths:
+- Extensive demonstrated PHP backend and API development experience.
+- Direct evidence of relational databases, SQL optimization, migrations, and large-scale
+  data work.
+- Remote work is stated and the responsibilities are technically aligned.
+gaps:
+- The profile does not establish Ukrainian employment eligibility or Ukrainian proficiency.
+- The vacancy asks for a relatively junior 1–2 years of commercial PHP experience.
+concerns:
+- The role's Ukraine/MilTech context may impose location, legal, or language constraints
+  not described in the candidate profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T14:03:58Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:14d0b1abc1b82f79a4e8086d42979e5b4d717ec78e99002cb63a65d9aabfa703
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
