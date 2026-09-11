@@ -1,0 +1,12 @@
+schema_version: 1
+source: cleanjobdata
+source_job_id: '89227245'
+source_url: https://cleanjobdata.com/apply/89227245
+title: Senior Backend Engineer (Milan)
+company: Eight Sleep
+location: Milan
+published_at: '2026-09-04T09:45:47.391Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-11T00:18:11Z'
+rejected_at: '2026-09-11T00:18:11Z'
