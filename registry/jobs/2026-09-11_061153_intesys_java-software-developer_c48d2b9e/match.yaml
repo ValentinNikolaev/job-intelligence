@@ -1,0 +1,17 @@
+score: 28
+recommendation: weak_match
+summary: The frontend-focused Intesys posting has limited alignment with the candidate's
+  primarily backend profile and Java is not demonstrated.
+strengths:
+- General software engineering and API experience
+gaps:
+- Frontend role focus and Java-specific evidence
+concerns:
+- Italian workplace details and exact seniority expectations are unclear
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T10:59:34Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0f8bf644ea5efe31ab2d8d2e9da07440dea00c1a8d51550ae36f616a3785884a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

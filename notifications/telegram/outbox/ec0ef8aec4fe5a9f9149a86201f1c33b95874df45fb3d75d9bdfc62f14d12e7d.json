@@ -1,0 +1,42 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-11T10:59:34Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Cossack Labs",
+      "directory": "2026-09-11_095846_cossack-labs_golang-developer-middle",
+      "score": 76,
+      "title": "Golang developer (Middle)",
+      "url": "https://jobs.dou.ua/companies/cossack-labs/vacancies/372966/",
+      "vacancy_id": "64b01cdb-e8d4-4645-b1db-96603f7e28e0"
+    },
+    {
+      "company": "Lithos",
+      "directory": "2026-09-11_061152_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 84,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "5bd4faf4-fed2-4031-9a5d-94365029753d"
+    },
+    {
+      "company": "Airalo",
+      "directory": "2026-09-11_061136_airalo_backend-php-engineer",
+      "score": 72,
+      "title": "Backend/PHP Engineer",
+      "url": "https://www.adzuna.es/details/5878157548?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "2601018c-c8f8-4a02-8252-de8bf7ea1897"
+    },
+    {
+      "company": "Global Technologies",
+      "directory": "2026-09-11_001831_global-technologies_full-remote-php-developer-laravel-api-expert",
+      "score": 82,
+      "title": "Full-Remote PHP Developer | Laravel & API Expert",
+      "url": "https://jooble.org/away/-6847266060912482358?p=1&pos=12&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=96&brelb=10&scr=25.7053&bscr=25.7053&aq=-422835771058018489&elckey=6555269888203995102",
+      "vacancy_id": "d0dad3d5-6a00-45a5-addc-bc6a165f1b77"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ec0ef8aec4fe5a9f9149a86201f1c33b95874df45fb3d75d9bdfc62f14d12e7d",
+  "schema_version": 1
+}

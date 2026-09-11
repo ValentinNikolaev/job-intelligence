@@ -1,0 +1,20 @@
+score: 84
+recommendation: strong_match
+summary: Senior PHP/Laravel development, technical leadership, project coordination,
+  APIs, databases, and remote work align closely with the role.
+strengths:
+- PHP and Laravel experience
+- technical leadership and mentoring
+- Agile delivery and API architecture
+- remote-compatible location
+gaps:
+- Livewire and FilamentPHP are not specifically evidenced
+concerns:
+- Italian language expectations are not stated
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T10:59:34Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:45cafb5a1c1e2dd49d6701b3691dfef0363d8345d4add37794fb7db0bd32afa2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

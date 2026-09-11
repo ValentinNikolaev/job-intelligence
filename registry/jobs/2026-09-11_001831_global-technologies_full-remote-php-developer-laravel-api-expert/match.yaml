@@ -1,0 +1,19 @@
+score: 82
+recommendation: strong_match
+summary: Fully remote PHP/Laravel API work maps directly to the candidate's backend,
+  framework, and integration experience.
+strengths:
+- Deep PHP and Laravel background
+- REST/API integrations
+- remote backend delivery
+gaps:
+- Employer identity and project domain are thinly specified
+concerns:
+- Jooble aggregation and limited posting detail warrant verification
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T10:59:34Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:26188947b98eabdfbfec73ca2496e25b1cd9b0eadaa4a8c990ec97d6d20056d7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

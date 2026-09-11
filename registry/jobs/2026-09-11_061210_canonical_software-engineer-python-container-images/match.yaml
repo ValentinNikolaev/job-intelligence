@@ -1,0 +1,19 @@
+score: 57
+recommendation: possible_match
+summary: Go, CI/CD, Kubernetes, Linux, and distributed backend experience fit well,
+  but Python and container-image specialization are only partially evidenced.
+strengths:
+- Go production experience
+- Kubernetes and CI/CD work
+- resilient distributed systems
+gaps:
+- Deep Python and container-image build experience are not clearly established
+concerns:
+- Open-source community contribution and degree details require verification
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-11T10:59:34Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9c0ad933e79decf463e8bea06d292f827cb1d55675301364a5f5ca493ff7505b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,18 @@
+score: 18
+recommendation: not_match
+summary: Golang backend experience is relevant, but fluent German and Austria/Poland
+  location conditions are decisive conflicts.
+strengths:
+- Strong Go backend and SaaS platform experience
+gaps:
+- Fluent German is not supported by the profile
+concerns:
+- Preferred work locations are Austria or Poland
+hard_rejection: true
+hard_rejection_reason: Fluent German and the stated Austria/Poland location constraint
+  are decisive unsupported requirements.
+analyzed_at: '2026-09-11T10:59:34Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:94494290b3a5edd07ba8e911dedbca36124e72c1fc8e0355722119b3b5c5d0e2
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
