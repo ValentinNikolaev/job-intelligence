@@ -1,0 +1,24 @@
+schema_version: 2
+id: 14b6ffc7-794d-48af-a1f8-45d380d1f9b8
+title: PHP Backend Developer (m/w/d) - MeinEinkauf GmbH
+company: MeinEinkauf GmbH
+company_url: null
+location: Konstanz, Konstanz (Kreis)
+remote: null
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5877108566'
+  url: https://www.adzuna.de/details/5877108566?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-09T14:24:33Z'
+discovered_at: '2026-09-11T06:11:36Z'
+updated_at: '2026-09-11T06:11:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-11T06:11:36Z'
+analysis_priority: 0
+fingerprint: sha256:2faadaf95779ebbd28e69664db6bac5fa52fb165add0534626e01f80f23df107
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

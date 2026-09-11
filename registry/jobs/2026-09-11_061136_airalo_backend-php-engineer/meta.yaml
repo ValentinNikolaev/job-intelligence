@@ -1,0 +1,24 @@
+schema_version: 2
+id: 2601018c-c8f8-4a02-8252-de8bf7ea1897
+title: Backend/PHP Engineer
+company: Airalo
+company_url: null
+location: España
+remote: null
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5878157548'
+  url: https://www.adzuna.es/details/5878157548?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-10T10:19:06Z'
+discovered_at: '2026-09-11T06:11:36Z'
+updated_at: '2026-09-11T06:11:36Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-11T06:11:36Z'
+analysis_priority: 0
+fingerprint: sha256:7f779528fffdc7b74319338091cb82faea290977f768d73583ec9ac1c1b17ecb
+data_source: adzuna
+content_source: adzuna
+company_content_source: null
