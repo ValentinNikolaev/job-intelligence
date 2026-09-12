@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '153088'
+source_url: https://jobicy.com/jobs/153088-senior-software-engineer-8
+title: Senior Software Engineer
+company: Capital on Tap
+location: Portugal
+published_at: '2026-09-12T13:16:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-12T18:08:00Z'
+rejected_at: '2026-09-12T18:08:00Z'
