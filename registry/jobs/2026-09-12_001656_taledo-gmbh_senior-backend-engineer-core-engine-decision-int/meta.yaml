@@ -1,0 +1,31 @@
+schema_version: 2
+id: 9ccff5af-35df-4a8f-a063-55b3ea7bcac9
+title: Senior Backend Engineer - Core Engine / Decision Intelligence (m/w/d)
+company: Taledo GmbH
+company_url: null
+location: Homeoffice
+remote: true
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-backend-engineer-core-engine-decision-intelligence-deutschlandweit-13391
+  url: https://www.arbeitnow.com/jobs/companies/taledo-gmbh/remote-senior-backend-engineer-core-engine-decision-intelligence-deutschlandweit-13391
+  metadata:
+    tags:
+    - IT
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-09-11T17:30:29Z'
+discovered_at: '2026-09-12T00:16:56Z'
+updated_at: '2026-09-12T00:16:56Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-12T00:16:56Z'
+analysis_priority: 0
+fingerprint: sha256:c24babf16663183d581a0613a02d27bd21732c4e6c41cbcafa0bddb9219870c5
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

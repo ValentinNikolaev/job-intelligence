@@ -1,3 +1,0 @@
-# Hostaway
-
-Hostaway is the world's leading vacation rental management software, perfect for those with 2 to 1,000+ listings. We make it easy for you to get more out of your business while spending less time with tedious manual tasks. What we offer: - Channel Manager - Property Management System - Messaging Services - Mobile Apps - User Management - Booking Engine - Revenue Management - Dynamic Pricing - API Our dedicated team brings their deep experience of the sector to the forefront, giving you continual insight into how best to run your business anywhere in the world. More bookings. Less hassle.
