@@ -1,0 +1,24 @@
+schema_version: 2
+id: 23eddaec-d5df-4798-89dc-8dbf2ee8c1bb
+title: Backend Developer - Golang (f/m/d)
+company: justDice
+company_url: null
+location: Hamburg, Deutschland
+remote: null
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5879900537'
+  url: https://www.adzuna.de/details/5879900537?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-11T17:51:49Z'
+discovered_at: '2026-09-12T06:10:23Z'
+updated_at: '2026-09-12T06:10:23Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-12T06:10:23Z'
+analysis_priority: 0
+fingerprint: sha256:087e7081edd5b04b2c95116a189735f90abd0d1298f585e96613f378d70e6433
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

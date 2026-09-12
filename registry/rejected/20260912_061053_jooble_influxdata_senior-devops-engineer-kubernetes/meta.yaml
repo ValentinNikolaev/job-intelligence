@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3545112616499981415'
+source_url: https://jooble.org/desc/3545112616499981415?ckey=senior+backend+engineer&rgn=55179&pos=16&groupId=293749696&elckey=6718421108407560174&p=1&aq=-720524559334646154&cid=15922&jobAge=344&brelb=100&bscr=13.374861&scr=13.374861
+title: Senior DevOps Engineer (Kubernetes)
+company: InfluxData
+location: Italian Republic
+published_at: '2026-08-28T15:42:28.2930000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-28T15:42:28.2930000 is older than 7 days
+updated_at: '2026-09-12T06:10:53Z'
+rejected_at: '2026-09-12T06:10:53Z'

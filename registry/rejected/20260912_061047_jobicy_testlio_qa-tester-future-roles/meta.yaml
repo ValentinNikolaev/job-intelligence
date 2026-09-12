@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152401'
+source_url: https://jobicy.com/jobs/152401-qa-tester-future-roles
+title: QA Tester (Future Roles)
+company: Testlio
+location: Anywhere
+published_at: '2026-09-03T13:54:46Z'
+rejection_category: stale
+rejection_reason: published_at 2026-09-03T13:54:46Z is older than 7 days
+updated_at: '2026-09-12T06:10:47Z'
+rejected_at: '2026-09-12T06:10:47Z'
