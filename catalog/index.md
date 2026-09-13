@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 78
+Total vacancies: 80
 
-- Found: 61
+- Found: 63
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 78
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-13 | [N-iX](../registry/jobs/2026-09-13_120933_n-ix_middle-php-engineer-5298/) | [Middle PHP Engineer (#5298)](../registry/jobs/2026-09-13_120933_n-ix_middle-php-engineer-5298/job.md) | Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено | Dou | Found | 2026-09-13 | [Dou](https://jobs.dou.ua/companies/n-ix/vacancies/298240/) | [Open](../registry/jobs/2026-09-13_120933_n-ix_middle-php-engineer-5298/company.md) | — | — | — | — |
+| 2026-09-13 | [N-iX](../registry/jobs/2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5504)](../registry/jobs/2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504/job.md) | Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено | Dou | Found | 2026-09-13 | [Dou](https://jobs.dou.ua/companies/n-ix/vacancies/258416/) | [Open](../registry/jobs/2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504/company.md) | — | — | — | — |
 | 2026-09-12 | [Lavriv, Sole Proprietor (Ukraine)](../registry/jobs/2026-09-12_061038_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/) | [PHP розробник](../registry/jobs/2026-09-12_061038_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/job.md) | Київ, Львів, Івано-Франківськ, віддалено | Dou | Found | 2026-09-12 | [Dou](https://jobs.dou.ua/companies/fop-lavriv/vacancies/372960/) | [Open](../registry/jobs/2026-09-12_061038_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/company.md) | — | — | — | — |
 | 2026-09-12 | [Kozak Group](../registry/jobs/2026-09-12_061038_kozak-group_magento-2-full-stack-developer-part-time/) | [Magento 2 Full-Stack Developer (part-time)](../registry/jobs/2026-09-12_061038_kozak-group_magento-2-full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-12 | [Dou](https://jobs.dou.ua/companies/kozak-group/vacancies/372790/) | [Open](../registry/jobs/2026-09-12_061038_kozak-group_magento-2-full-stack-developer-part-time/company.md) | — | — | — | — |
 | 2026-09-12 | [Intesys](../registry/jobs/2026-09-12_061035_intesys_java-software-developer_d0834ab3/) | [Java Software Developer](../registry/jobs/2026-09-12_061035_intesys_java-software-developer_d0834ab3/job.md) | — | Custom | Found | 2026-09-12 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
