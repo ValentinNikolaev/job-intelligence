@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '152539'
+source_url: https://jobicy.com/jobs/152539-senior-software-engineer-frontend
+title: Senior Software Engineer, Frontend
+company: Phantom
+location: LATAM,  Canada,  Europe,  USA
+published_at: '2026-09-04T17:04:10Z'
+rejection_category: stale
+rejection_reason: published_at 2026-09-04T17:04:10Z is older than 7 days
+updated_at: '2026-09-13T06:15:10Z'
+rejected_at: '2026-09-13T06:15:10Z'
