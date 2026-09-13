@@ -1,0 +1,42 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-13T20:27:52Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "N-iX",
+      "directory": "2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504",
+      "score": 78,
+      "title": "Senior/ Lead PHP Engineer (with AI Skills) (#5504)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/258416/",
+      "vacancy_id": "b3f12831-c238-4d7d-b31b-4f913336999f"
+    },
+    {
+      "company": "N-iX",
+      "directory": "2026-09-13_120933_n-ix_middle-php-engineer-5298",
+      "score": 76,
+      "title": "Middle PHP Engineer (#5298)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/298240/",
+      "vacancy_id": "b513d833-9e32-4253-8a82-8ec0fb65fc6f"
+    },
+    {
+      "company": "Jobgether",
+      "directory": "2026-09-12_061023_jobgether_backend-team-lead-php",
+      "score": 72,
+      "title": "Backend Team Lead (PHP)",
+      "url": "https://www.adzuna.es/details/5879429722?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "19d7d70a-e0ec-49f0-ac17-5fb3d9e09df1"
+    },
+    {
+      "company": "Global Technologies",
+      "directory": "2026-09-11_001831_global-technologies_full-remote-php-developer-laravel-api-expert",
+      "score": 82,
+      "title": "Full-Remote PHP Developer | Laravel & API Expert",
+      "url": "https://jooble.org/away/-6847266060912482358?p=1&pos=11&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=24&brelb=10&scr=27.626934&bscr=27.626934&aq=834480901623267231&elckey=5438846385450710728",
+      "vacancy_id": "d0dad3d5-6a00-45a5-addc-bc6a165f1b77"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "cf3a4935e3dc4a633a1f89f0a5c66107a694e26d734febb54be88a266cb12f91",
+  "schema_version": 1
+}

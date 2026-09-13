@@ -3,18 +3,20 @@
 **Score:** 82/100  
 **Recommendation:** Strong Match
 
-Fully remote PHP/Laravel API work maps directly to the candidate's backend, framework, and integration experience.
+Full-remote PHP/Laravel/API role closely matches the candidate's core stack and production backend experience.
 
 ## Why it matches
 
-- Deep PHP and Laravel background
-- REST/API integrations
+- PHP
+- Laravel
+- REST APIs
+- relational databases
 - remote backend delivery
 
 ## Gaps
 
-- Employer identity and project domain are thinly specified
+- Incomplete posting detail and employer specifics
 
 ## Concerns
 
-- Jooble aggregation and limited posting detail warrant verification
+- US employer and timezone expectations should be confirmed
