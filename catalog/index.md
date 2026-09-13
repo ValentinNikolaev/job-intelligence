@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 80
+Total vacancies: 82
 
-- Found: 63
+- Found: 65
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 80
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-13 | [Intesys](../registry/jobs/2026-09-13_192701_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-13_192701_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-13 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-13 | [ShippyPro](../registry/jobs/2026-09-13_192701_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-13_192701_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-13 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-13 | [N-iX](../registry/jobs/2026-09-13_120933_n-ix_middle-php-engineer-5298/) | [Middle PHP Engineer (#5298)](../registry/jobs/2026-09-13_120933_n-ix_middle-php-engineer-5298/job.md) | Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено | Dou | Found | 2026-09-13 | [Dou](https://jobs.dou.ua/companies/n-ix/vacancies/298240/) | [Open](../registry/jobs/2026-09-13_120933_n-ix_middle-php-engineer-5298/company.md) | — | — | — | — |
 | 2026-09-13 | [N-iX](../registry/jobs/2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5504)](../registry/jobs/2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504/job.md) | Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено | Dou | Found | 2026-09-13 | [Dou](https://jobs.dou.ua/companies/n-ix/vacancies/258416/) | [Open](../registry/jobs/2026-09-13_120933_n-ix_senior-lead-php-engineer-with-ai-skills-5504/company.md) | — | — | — | — |
 | 2026-09-12 | [Lavriv, Sole Proprietor (Ukraine)](../registry/jobs/2026-09-12_061038_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/) | [PHP розробник](../registry/jobs/2026-09-12_061038_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/job.md) | Київ, Львів, Івано-Франківськ, віддалено | Dou | Found | 2026-09-12 | [Dou](https://jobs.dou.ua/companies/fop-lavriv/vacancies/372960/) | [Open](../registry/jobs/2026-09-12_061038_lavriv-sole-proprietor-ukraine_php-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA/company.md) | — | — | — | — |
