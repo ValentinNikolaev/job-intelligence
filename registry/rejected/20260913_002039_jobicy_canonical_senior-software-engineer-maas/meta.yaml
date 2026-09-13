@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150127'
+source_url: https://jobicy.com/jobs/150127-senior-software-engineer-maas
+title: Senior Software Engineer - MAAS
+company: Canonical
+location: EMEA,  LATAM,  Canada,  USA
+published_at: '2026-09-04T05:15:30Z'
+rejection_category: stale
+rejection_reason: published_at 2026-09-04T05:15:30Z is older than 7 days
+updated_at: '2026-09-13T00:20:39Z'
+rejected_at: '2026-09-13T00:20:39Z'
