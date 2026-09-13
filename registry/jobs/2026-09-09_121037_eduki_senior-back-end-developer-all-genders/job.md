@@ -68,6 +68,6 @@ In addition to providing the necessary software and hardware, we offer a **500 E
 Judit
 Talent Acquisition Manager
 
-[[email protected](/cdn-cgi/l/email-protection#780c19141d160c381d1c0d1311561b1715)]
+[[email protected](/cdn-cgi/l/email-protection#2652474a434852664342534d4f0845494b)]
 
 *At eduki, we value diversity and the unique contributions each person brings to our team. We foster an inclusive culture where respect and appreciation are essential. Talents are considered regardless of age, gender, sexual identity, ethnicity, nationality, religion, or disability. *
