@@ -1,0 +1,41 @@
+schema_version: 2
+id: 8dbce389-0b49-40cc-9ec9-d42f5469dda8
+title: Senior Go/Golang Software Engineer
+company: Talmatic
+company_url: https://jobs.dou.ua/companies/talmatic/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373206'
+  url: https://jobs.dou.ua/companies/talmatic/vacancies/373206/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 14 вересня
+    salary_label: $5000–6000
+    listing_summary: 'Outstaff Hiring: Remote — Contract (Full-time, long-term)
+
+
+      About the Role
+
+
+      We are looking for a Senior Software Engineer to join a growing product engineering
+      team working on a market-leading financial crime investigation platform used
+      by financial institutions and global companies.'
+published_at: '2026-09-14'
+discovered_at: '2026-09-14T18:09:05Z'
+updated_at: '2026-09-14T18:09:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-14T18:09:05Z'
+analysis_priority: 100
+fingerprint: sha256:77ef6bb2b3a5b3ce3a99c736e7f5855d4263e09fd3f17afcbee92c8d40ff01f6
+data_source: dou
+content_source: dou
+company_content_source: dou

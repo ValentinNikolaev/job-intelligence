@@ -1,0 +1,37 @@
+schema_version: 2
+id: 00449976-7291-4483-9d79-32cec4f44564
+title: PHP (Laravel) Developer
+company: Zeeks
+company_url: https://jobs.dou.ua/companies/zeeks/vacancies/
+location: Київ, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373266'
+  url: https://jobs.dou.ua/companies/zeeks/vacancies/373266/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 14 вересня
+    listing_summary: 'Zeeks — технологічна компанія, що створює інфраструктурні, аналітичні
+      та сервісні продукти для міжнародного iGaming-ринку.
+
+
+      Шукаємо PHP (Laravel) Developer, який долучиться до команди, що розвиває єдину
+      продуктову платформу Zeeks.'
+published_at: '2026-09-14'
+discovered_at: '2026-09-14T18:09:05Z'
+updated_at: '2026-09-14T18:09:05Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-14T18:09:05Z'
+analysis_priority: 100
+fingerprint: sha256:bb9434bd2ae1480147ffc978fe12b8621419231c5fe3404bd6ecee71711eaba3
+data_source: dou
+content_source: dou
+company_content_source: dou
