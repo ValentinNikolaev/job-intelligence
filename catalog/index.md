@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 76
+Total vacancies: 80
 
-- Found: 59
+- Found: 63
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 76
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-14 | [Playson](../registry/jobs/2026-09-14_121117_playson_senior-backend-engineer-boosters/) | [Senior Backend Engineer (Boosters)](../registry/jobs/2026-09-14_121117_playson_senior-backend-engineer-boosters/job.md) | Europe | Jobicy | Found | 2026-09-14 | [Jobicy](https://jobicy.com/jobs/153227-senior-backend-engineer-boosters) | — | — | — | — | — |
+| 2026-09-14 | [saas.group](../registry/jobs/2026-09-14_121117_saas-group_head-of-engineering/) | [Head of Engineering](../registry/jobs/2026-09-14_121117_saas-group_head-of-engineering/job.md) | Europe | Jobicy | Found | 2026-09-14 | [Jobicy](https://jobicy.com/jobs/150588-head-of-engineering) | — | — | — | — | — |
+| 2026-09-14 | [Händlerbund Management AG](../registry/jobs/2026-09-14_121044_h%C3%A4ndlerbund-management-ag_senior-fullstack-entwickler-php-laravel-m-w-d-re/) | [Senior Fullstack Entwickler PHP/Laravel (m/w/d) - Remote, 4-Tage-Woche](../registry/jobs/2026-09-14_121044_h%C3%A4ndlerbund-management-ag_senior-fullstack-entwickler-php-laravel-m-w-d-re/job.md) | Leipzig | Arbeitnow | Found | 2026-09-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/handlerbund-management-ag/senior-fullstack-entwickler-php-laravel-remote-4-tage-woche-leipzig-121442) | — | — | — | — | — |
+| 2026-09-14 | [Händlerbund](../registry/jobs/2026-09-14_121040_h%C3%A4ndlerbund_backend-entwickler-php-laravel-m-w-d-remote-4-ta/) | [Backend-Entwickler PHP/Laravel (m/w/d) - Remote, 4-Tage-Woche](../registry/jobs/2026-09-14_121040_h%C3%A4ndlerbund_backend-entwickler-php-laravel-m-w-d-remote-4-ta/job.md) | Heiterblick, Leipzig | Adzuna | Found | 2026-09-14 | [Adzuna](https://www.adzuna.de/details/5877009212?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-14 | [Kozak Group](../registry/jobs/2026-09-14_061457_kozak-group_magento-2-full-stack-developer-part-time/) | [Magento 2 Full-Stack Developer (part-time)](../registry/jobs/2026-09-14_061457_kozak-group_magento-2-full-stack-developer-part-time/job.md) | віддалено | Dou | Found | 2026-09-14 | [Dou](https://jobs.dou.ua/companies/kozak-group/vacancies/372790/) | [Open](../registry/jobs/2026-09-14_061457_kozak-group_magento-2-full-stack-developer-part-time/company.md) | — | — | — | — |
 | 2026-09-14 | [Brain Computing](../registry/jobs/2026-09-14_061453_brain-computing_full-stack-developer-laravel-full-remote/) | [Full Stack Developer – Laravel (Full Remote)](../registry/jobs/2026-09-14_061453_brain-computing_full-stack-developer-laravel-full-remote/job.md) | — | Custom | Found | 2026-09-14 | [Custom](https://recruiting.braincomputing.com/job/detail/RGZObGtkZTNSOHJUNXd2dWNRUVRHQT09) | — | — | — | — | — |
 | 2026-09-14 | [GKT Group](../registry/jobs/2026-09-14_061453_gkt-group_php-developer/) | [PHP Developer](../registry/jobs/2026-09-14_061453_gkt-group_php-developer/job.md) | — | Custom | Found | 2026-09-14 | [Custom](https://gktgroup.it/career/) | — | — | — | — | — |

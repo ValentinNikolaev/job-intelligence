@@ -1,0 +1,30 @@
+schema_version: 2
+id: e03b57d3-a230-4be9-89ad-d03ac6d1402d
+title: Senior Fullstack Entwickler PHP/Laravel (m/w/d) - Remote, 4-Tage-Woche
+company: Händlerbund Management AG
+company_url: null
+location: Leipzig
+remote: true
+employment_type: berufserfahren
+sources:
+- source: arbeitnow
+  source_job_id: senior-fullstack-entwickler-php-laravel-remote-4-tage-woche-leipzig-121442
+  url: https://www.arbeitnow.com/jobs/companies/handlerbund-management-ag/senior-fullstack-entwickler-php-laravel-remote-4-tage-woche-leipzig-121442
+  metadata:
+    tags:
+    - Remote
+    - Software Development
+    job_types:
+    - berufserfahren
+published_at: '2026-09-14T09:30:30Z'
+discovered_at: '2026-09-14T12:10:44Z'
+updated_at: '2026-09-14T12:10:44Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-14T12:10:44Z'
+analysis_priority: 0
+fingerprint: sha256:cf63a7568f5259a2686299b3214815d040d87d4c7f448fd1ac126d973c5ee167
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null
