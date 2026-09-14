@@ -1,0 +1,37 @@
+schema_version: 2
+id: fb53dbfb-0992-44f7-b970-7fb62fce3f43
+title: Senior PHP Back-end Developer (Symfony)
+company: Paybis
+company_url: https://jobs.dou.ua/companies/paybis-com/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '358669'
+  url: https://jobs.dou.ua/companies/paybis-com/vacancies/358669/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 14 вересня
+    listing_summary: 'About Paybis
+
+
+      Paybis is a global fintech company operating in the crypto and payments space.
+      We build scalable financial products used by customers worldwide and continue
+      expanding our backend engineering capabilities to support rapid product growth.'
+published_at: '2026-09-14'
+discovered_at: '2026-09-14T00:19:46Z'
+updated_at: '2026-09-14T00:19:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-14T00:19:46Z'
+analysis_priority: 100
+fingerprint: sha256:e856e81449765edf1da37fc4f696d61b6c7405b5b9174729a588dbd2f2e1feb3
+data_source: dou
+content_source: dou
+company_content_source: dou
