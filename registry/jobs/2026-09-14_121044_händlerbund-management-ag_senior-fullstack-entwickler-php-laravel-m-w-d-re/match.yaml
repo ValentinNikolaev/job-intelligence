@@ -1,0 +1,24 @@
+score: 82
+recommendation: strong_match
+summary: Senior remote PHP/Laravel technical-lead role strongly matches architecture,
+  delivery ownership, mentoring, reviews, and backend experience.
+strengths:
+- PHP/Laravel
+- technical leadership
+- project ownership
+- architecture
+- reviews and knowledge transfer
+gaps:
+- Livewire
+- Alpine.js
+- Tailwind
+- and German language are not evidenced
+concerns:
+- Role has meaningful frontend ownership and Leipzig-related eligibility uncertainty
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T14:42:50Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:beed983e7a8eafe9a195b0a4af06253545c42acbf54f3e13e74c2dd2729f2bfc
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
