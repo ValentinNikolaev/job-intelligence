@@ -1,6 +1,6 @@
 # Backend Developer (PHP) for a Global iGaming Company
 
-Posted: 2026-08-04
+Posted: 2026-09-15
 
 VIDEOSLOTS LTD
 
@@ -67,4 +67,4 @@ and maintainability of your code
 
 **Monthly remuneration:**
 
-3000 — 3350 eur gross
+2300 — 2930 eur gross

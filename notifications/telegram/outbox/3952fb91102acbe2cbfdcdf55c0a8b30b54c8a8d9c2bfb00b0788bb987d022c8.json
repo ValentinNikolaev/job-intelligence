@@ -1,0 +1,114 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-15T13:45:39Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "EVOPLAY",
+      "directory": "2026-09-15_134250_evoplay_senior-php-developer",
+      "score": 84,
+      "title": "Senior PHP developer",
+      "url": "https://jobs.dou.ua/companies/evoplay/vacancies/300514/",
+      "vacancy_id": "87525617-15bc-4469-a22c-064139ae1cea"
+    },
+    {
+      "company": "Wizer",
+      "directory": "2026-09-15_121002_wizer_software-engineer-go",
+      "score": 78,
+      "title": "Software engineer (Go)",
+      "url": "https://jobs.dou.ua/companies/wizer-free-security-awareness-training-company/vacancies/357580/",
+      "vacancy_id": "8c76761f-b298-4e2f-a9df-a840a1f8b68d"
+    },
+    {
+      "company": "Key2Law",
+      "directory": "2026-09-15_121002_key2law_full-stack-developer-laravel",
+      "score": 82,
+      "title": "Full Stack Developer (Laravel)",
+      "url": "https://jobs.dou.ua/companies/key2law/vacancies/373355/",
+      "vacancy_id": "67ddfb1f-7d58-4e6f-be58-6f24d3ebc432"
+    },
+    {
+      "company": "Ciklum",
+      "directory": "2026-09-15_121002_ciklum_senior-go-engineer",
+      "score": 80,
+      "title": "Senior Go Engineer",
+      "url": "https://jobs.dou.ua/companies/ciklum/vacancies/373210/",
+      "vacancy_id": "4901bdea-1fe1-4214-98eb-ac246822d02b"
+    },
+    {
+      "company": "Hinto Group",
+      "directory": "2026-09-15_061216_hinto-group_php-developer",
+      "score": 76,
+      "title": "PHP Developer",
+      "url": "https://www.hintogroup.eu/it/posizioni-aperte/php-developer",
+      "vacancy_id": "1244fb5f-b568-4988-bae6-88c514cb333b"
+    },
+    {
+      "company": "Zeeks",
+      "directory": "2026-09-14_180905_zeeks_php-laravel-developer",
+      "score": 82,
+      "title": "Laravel Backend Developer",
+      "url": "https://jobs.dou.ua/companies/zeeks/vacancies/373266/",
+      "vacancy_id": "00449976-7291-4483-9d79-32cec4f44564"
+    },
+    {
+      "company": "Talmatic",
+      "directory": "2026-09-14_180905_talmatic_senior-go-golang-software-engineer",
+      "score": 81,
+      "title": "Senior Go/Golang Software Engineer",
+      "url": "https://jobs.dou.ua/companies/talmatic/vacancies/373206/",
+      "vacancy_id": "8dbce389-0b49-40cc-9ec9-d42f5469dda8"
+    },
+    {
+      "company": "Kozak Group",
+      "directory": "2026-09-14_061457_kozak-group_magento-2-full-stack-developer-part-time",
+      "score": 67,
+      "title": "Magento 2 Full-Stack Developer (part-time)",
+      "url": "https://jobs.dou.ua/companies/kozak-group/vacancies/372790/",
+      "vacancy_id": "450b15cc-f147-4c42-8b87-a2543b4659d5"
+    },
+    {
+      "company": "Watuppa",
+      "directory": "2026-09-14_061453_watuppa_sviluppatore-back-end-php",
+      "score": 84,
+      "title": "Sviluppatore back-end PHP",
+      "url": "https://www.watuppa.it/it/careers/202101-back-end",
+      "vacancy_id": "bc828587-a474-45e1-ad18-28378a57ce55"
+    },
+    {
+      "company": "Watuppa",
+      "directory": "2026-09-14_061453_watuppa_back-end-php-developer",
+      "score": 84,
+      "title": "Back-end PHP Developer",
+      "url": "https://www.watuppa.it/en/careers/202101-back-end",
+      "vacancy_id": "7c04f963-6053-4886-b582-59a551b5fa1a"
+    },
+    {
+      "company": "Queryo",
+      "directory": "2026-09-14_061453_queryo_dev-php-developer-full-stack-developer",
+      "score": 80,
+      "title": "DEV: PHP Developer - Full Stack Developer",
+      "url": "https://www.queryo.com/lavora-con-noi.html",
+      "vacancy_id": "36994d78-8560-4d75-b1e1-64c4e82a46a8"
+    },
+    {
+      "company": "Madisoft / Nuvola",
+      "directory": "2026-09-14_061453_madisoft-nuvola_symfony-developer",
+      "score": 88,
+      "title": "Symfony Developer",
+      "url": "https://labs.madisoft.it/symfony-developer/",
+      "vacancy_id": "ac3f8b77-8b2f-4912-a721-4e5acb55de83"
+    },
+    {
+      "company": "Intesys",
+      "directory": "2026-09-14_061453_intesys_senior-php-developer-a-verona-a-tempo-indetermin",
+      "score": 87,
+      "title": "Senior PHP Developer a Verona a tempo indeterminato",
+      "url": "https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/senior-php-developer/",
+      "vacancy_id": "5e8d6e3a-f04e-4230-ba09-c5cad72311c5"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "3952fb91102acbe2cbfdcdf55c0a8b30b54c8a8d9c2bfb00b0788bb987d022c8",
+  "schema_version": 1
+}

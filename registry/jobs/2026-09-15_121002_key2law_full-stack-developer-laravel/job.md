@@ -18,8 +18,8 @@ Requirements
 
 - PHP 8.1+, Laravel 10+
 - Eloquent, Queues, Events, Cache, Storage, Sanctum/Fortify, Policies, Horizon
-- REST APIs, MySQL/MariaDB, Redis; PostgreSQL is a plus
-- JS ES6+, HTML/CSS, Blade, Tailwind, Alpine.js and/or Livewire; Vue is a plus
+- REST APIs, MySQL/MariaDB, Redis
+- JS ES6+, HTML/CSS, Blade, Tailwind, Alpine.js and/or Livewire
 - AJAX / Fetch / Axios, responsive UI
 - PHPUnit/Pest, Git, PSR, SOLID
 - Linux, Nginx, Docker, CI/CD, basic AWS (S3), Cloudflare

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 78
+Total vacancies: 81
 
-- Found: 61
+- Found: 64
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 78
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-15 | [EVOPLAY](../registry/jobs/2026-09-15_134250_evoplay_senior-php-developer/) | [Senior PHP developer](../registry/jobs/2026-09-15_134250_evoplay_senior-php-developer/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/evoplay/vacancies/300514/) | [Open](../registry/jobs/2026-09-15_134250_evoplay_senior-php-developer/company.md) | — | — | — | — |
+| 2026-09-15 | [Intesys](../registry/jobs/2026-09-15_134243_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-15_134243_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-15 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
+| 2026-09-15 | [ShippyPro](../registry/jobs/2026-09-15_134243_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-15_134243_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-15 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-15 | [Wizer](../registry/jobs/2026-09-15_121002_wizer_software-engineer-go/) | [Software engineer (Go)](../registry/jobs/2026-09-15_121002_wizer_software-engineer-go/job.md) | віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/wizer-free-security-awareness-training-company/vacancies/357580/) | [Open](../registry/jobs/2026-09-15_121002_wizer_software-engineer-go/company.md) | — | — | — | — |
 | 2026-09-15 | [Key2Law](../registry/jobs/2026-09-15_121002_key2law_full-stack-developer-laravel/) | [Full Stack Developer (Laravel)](../registry/jobs/2026-09-15_121002_key2law_full-stack-developer-laravel/job.md) | віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/key2law/vacancies/373355/) | [Open](../registry/jobs/2026-09-15_121002_key2law_full-stack-developer-laravel/company.md) | — | — | — | — |
 | 2026-09-15 | [Ciklum](../registry/jobs/2026-09-15_121002_ciklum_senior-go-engineer/) | [Senior Go Engineer](../registry/jobs/2026-09-15_121002_ciklum_senior-go-engineer/job.md) | Київ, Львів, віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/ciklum/vacancies/373210/) | [Open](../registry/jobs/2026-09-15_121002_ciklum_senior-go-engineer/company.md) | — | — | — | — |

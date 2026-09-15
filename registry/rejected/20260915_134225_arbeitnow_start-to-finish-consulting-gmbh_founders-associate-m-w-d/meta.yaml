@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: founders-associate-hamburg-270287
+source_url: https://www.arbeitnow.com/jobs/companies/start-to-finish-consulting-gmbh/founders-associate-hamburg-270287
+title: Founders Associate (m/w/d)
+company: Start To Finish Consulting GmbH
+location: Hamburg
+published_at: '2026-09-15T10:30:42Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-15T13:42:25Z'
+rejected_at: '2026-09-15T13:42:25Z'

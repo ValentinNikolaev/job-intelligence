@@ -1,0 +1,34 @@
+schema_version: 2
+id: 87525617-15bc-4469-a22c-064139ae1cea
+title: Senior PHP developer
+company: EVOPLAY
+company_url: https://jobs.dou.ua/companies/evoplay/vacancies/
+location: Київ, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '300514'
+  url: https://jobs.dou.ua/companies/evoplay/vacancies/300514/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 15 вересня
+    listing_summary: Evoplay — одна з провідних продуктових IT-компаній України, яка
+      працює на міжнародному ринку та створює комплексні B2B-рішення для індустрії
+      онлайн-ігор.
+published_at: '2026-09-15'
+discovered_at: '2026-09-15T13:42:50Z'
+updated_at: '2026-09-15T13:42:50Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-15T13:42:50Z'
+analysis_priority: 100
+fingerprint: sha256:4e2d2ea6baf64566a094eb014919fb600e3895a37badad8837d497f743947f16
+data_source: dou
+content_source: dou
+company_content_source: dou
