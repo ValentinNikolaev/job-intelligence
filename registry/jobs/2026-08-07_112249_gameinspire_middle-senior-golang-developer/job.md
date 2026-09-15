@@ -1,6 +1,6 @@
 # Middle/Senior Golang Developer
 
-Posted: 2026-08-07
+Posted: 2026-09-15
 
 ### **About the Company & Product**
 
@@ -14,43 +14,26 @@ We have an open management culture where leaders share a clear product vision ra
 
 We are entering a critical stage of growth, and our goal is to implement new solutions and approaches that will enable us to scale faster, smarter, and more efficiently. We believe this will be a game-changing step in our development and a key advantage in our market. To help us reach this goal, we are actively expanding our development team, so we are looking for an energetic and experienced **Golang Developers** to join our company.
 
-### **What you’ll be doing**
-
+**What you’ll be doing**
 — Implementing new features and functionality in the application;
-
 — Delivering developed code to production while ensuring its quality and performance;
-
 — Actively participating in discussions about architecture, approaches, and best practices;
-
 — Maintaining system stability by monitoring its performance and responding to alerts;
-
 — Conducting code reviews, mentoring team members, and sharing knowledge within the team.
 
-### **You have these superpowers**
-
-— At least 3 years of experience with Golang, including web server development, concurrency, and context handling;
-
-— Proficiency in SQL/NoSQL databases, including understanding indexes, transactions, and query optimization;
-
+**You have these superpowers**
+— At least 2 years of experience with Golang, including web server development, concurrency, and context handling;
+— Proficiency in SQL/NoSQL databases, including understanding indexes and transactions;
 — Solid knowledge of design patterns, clean architecture principles, and SOLID design;
+— Experience with MongoDB, MySQL/PostgreSQL, Redis;
+— Knowledge of queuing systems such as RabbitMQ or Kafka;
+— Experience with highload systems, including database locks, concurrency, isolation levels, and replication;
+— Familiarity with SOA/Microservices architecture, REST API development, and event sourcing;
+— Solid understanding of DevOps practices, CI/CD, deploy strategies, and Kubernetes.
 
-— Experience with MongoDB, MySQL/PostgreSQL;
-
-— Knowledge of Queuing systems such as RabbitMQ or Kafka.
-
-— Familiarity with Redis.
-
-— Highload systems, including database locks, concurrency, isolation levels, and replication.
-
-— Familiarity with SOA/Microservices architecture and REST API development.
-
-— Strong communication skills and a proactive approach to work.
-
-— Intermediate level of English or higher.
-
-### Nice to have
-
-— We are open to considering PHP developers who are willing to learn and work with Go.
+**Nice to have**
+— Experience with PHP, Symfony;
+— Experience with GraphQL.
 
 ### **It’s cool to work with us
 **

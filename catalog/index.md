@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 74
+Total vacancies: 78
 
-- Found: 57
+- Found: 61
 - Applied: 16
 - Interview: 1
 
@@ -12,10 +12,14 @@ Total vacancies: 74
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-15 | [Wizer](../registry/jobs/2026-09-15_121002_wizer_software-engineer-go/) | [Software engineer (Go)](../registry/jobs/2026-09-15_121002_wizer_software-engineer-go/job.md) | віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/wizer-free-security-awareness-training-company/vacancies/357580/) | [Open](../registry/jobs/2026-09-15_121002_wizer_software-engineer-go/company.md) | — | — | — | — |
+| 2026-09-15 | [Key2Law](../registry/jobs/2026-09-15_121002_key2law_full-stack-developer-laravel/) | [Full Stack Developer (Laravel)](../registry/jobs/2026-09-15_121002_key2law_full-stack-developer-laravel/job.md) | віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/key2law/vacancies/373355/) | [Open](../registry/jobs/2026-09-15_121002_key2law_full-stack-developer-laravel/company.md) | — | — | — | — |
+| 2026-09-15 | [Ciklum](../registry/jobs/2026-09-15_121002_ciklum_senior-go-engineer/) | [Senior Go Engineer](../registry/jobs/2026-09-15_121002_ciklum_senior-go-engineer/job.md) | Київ, Львів, віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/ciklum/vacancies/373210/) | [Open](../registry/jobs/2026-09-15_121002_ciklum_senior-go-engineer/company.md) | — | — | — | — |
+| 2026-09-15 | [Gerhard Sprügel GmbH](../registry/jobs/2026-09-15_120939_gerhard-spr%C3%BCgel-gmbh_backend-entwickler-m-w-d-shopware-6/) | [Backend-Entwickler (m/w/d) Shopware 6](../registry/jobs/2026-09-15_120939_gerhard-spr%C3%BCgel-gmbh_backend-entwickler-m-w-d-shopware-6/job.md) | Ingelfingen, Hohenlohekreis | Adzuna | Found | 2026-09-15 | [Adzuna](https://www.adzuna.de/details/5883260590?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-15 | [Hinto Group](../registry/jobs/2026-09-15_061216_hinto-group_php-developer/) | [PHP Developer](../registry/jobs/2026-09-15_061216_hinto-group_php-developer/job.md) | — | Custom | Found | 2026-09-15 | [Custom](https://www.hintogroup.eu/it/posizioni-aperte/php-developer) | — | — | — | — | — |
 | 2026-09-15 | [Airalo](../registry/jobs/2026-09-15_061158_airalo_backend-php-engineer/) | [Backend/PHP Engineer](../registry/jobs/2026-09-15_061158_airalo_backend-php-engineer/job.md) | UK | Adzuna | Found | 2026-09-15 | [Adzuna](https://www.adzuna.co.uk/jobs/details/5883773714?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-14 | [Talmatic](../registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/) | [Senior Go/Golang Software Engineer](../registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/job.md) | віддалено | Dou | Found | 2026-09-14 | [Dou](https://jobs.dou.ua/companies/talmatic/vacancies/373206/) | [Open](../registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/company.md) | — | — | — | — |
-| 2026-09-14 | [Zeeks](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/) | [PHP (Laravel) Developer](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/job.md) | Київ, віддалено | Dou | Found | 2026-09-14 | [Dou](https://jobs.dou.ua/companies/zeeks/vacancies/373266/) | [Open](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/company.md) | — | — | — | — |
+| 2026-09-14 | [Zeeks](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/) | [Laravel Backend Developer](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/job.md) | Київ, віддалено | Dou | Found | 2026-09-14 | [Dou](https://jobs.dou.ua/companies/zeeks/vacancies/373266/) | [Open](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/company.md) | — | — | — | — |
 | 2026-09-14 | [Händlerbund Management AG](../registry/jobs/2026-09-14_180843_h%C3%A4ndlerbund-management-ag_backend-entwickler-php-laravel-m-w-d-remote-4-ta/) | [Backend-Entwickler PHP/Laravel (m/w/d) - Remote, 4-Tage-Woche](../registry/jobs/2026-09-14_180843_h%C3%A4ndlerbund-management-ag_backend-entwickler-php-laravel-m-w-d-remote-4-ta/job.md) | Leipzig, Leipzig (Kreis) | Adzuna | Found | 2026-09-14 | [Adzuna](https://www.adzuna.de/details/5877169817?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-14 | [Playson](../registry/jobs/2026-09-14_121117_playson_senior-backend-engineer-boosters/) | [Senior Backend Engineer (Boosters)](../registry/jobs/2026-09-14_121117_playson_senior-backend-engineer-boosters/job.md) | Europe | Jobicy | Found | 2026-09-14 | [Jobicy](https://jobicy.com/jobs/153227-senior-backend-engineer-boosters) | — | — | — | — | — |
 | 2026-09-14 | [saas.group](../registry/jobs/2026-09-14_121117_saas-group_head-of-engineering/) | [Head of Engineering](../registry/jobs/2026-09-14_121117_saas-group_head-of-engineering/job.md) | Europe | Jobicy | Found | 2026-09-14 | [Jobicy](https://jobicy.com/jobs/150588-head-of-engineering) | — | — | — | — | — |

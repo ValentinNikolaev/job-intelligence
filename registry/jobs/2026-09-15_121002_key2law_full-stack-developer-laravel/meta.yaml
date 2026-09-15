@@ -1,0 +1,34 @@
+schema_version: 2
+id: 67ddfb1f-7d58-4e6f-be58-6f24d3ebc432
+title: Full Stack Developer (Laravel)
+company: Key2Law
+company_url: https://jobs.dou.ua/companies/key2law/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373355'
+  url: https://jobs.dou.ua/companies/key2law/vacancies/373355/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 15 вересня
+    listing_summary: We need a full stack Laravel developer who can own tasks end
+      to end, understand the codebase, implement UI + backend, test, deploy safely,
+      and fix production issues without constant supervision.
+published_at: '2026-09-15'
+discovered_at: '2026-09-15T12:10:02Z'
+updated_at: '2026-09-15T12:10:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-15T12:10:02Z'
+analysis_priority: 100
+fingerprint: sha256:a7975bc96d343590789ed05ee1964814cc95a7c19f71cd0cfe29879c8bc86b46
+data_source: dou
+content_source: dou
+company_content_source: dou

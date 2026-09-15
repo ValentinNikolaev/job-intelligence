@@ -16,16 +16,16 @@ sources:
       name: golang-remote
       url: https://jobs.dou.ua/vacancies/?remote&category=Golang
       category: Golang
-    listing_date_label: 7 серпня
+    listing_date_label: 15 вересня
     listing_summary: 'About the Company & Product
 
 
       We are a rapidly growing product company entering the global gaming entertainment
       market. Our mission is to bring innovative business solutions to the iGaming
       industry by building cutting-edge technology products.'
-published_at: '2026-08-07'
+published_at: '2026-09-15'
 discovered_at: '2026-08-07T11:22:49Z'
-updated_at: '2026-08-09T19:21:07Z'
+updated_at: '2026-09-15T12:10:02Z'
 status: applied
 status_history:
 - status: found

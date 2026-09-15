@@ -1,6 +1,6 @@
 schema_version: 2
 id: 00449976-7291-4483-9d79-32cec4f44564
-title: PHP (Laravel) Developer
+title: Laravel Backend Developer
 company: Zeeks
 company_url: https://jobs.dou.ua/companies/zeeks/vacancies/
 location: Київ, віддалено
@@ -25,13 +25,13 @@ sources:
       продуктову платформу Zeeks.'
 published_at: '2026-09-14'
 discovered_at: '2026-09-14T18:09:05Z'
-updated_at: '2026-09-14T18:09:05Z'
+updated_at: '2026-09-15T12:10:02Z'
 status: found
 status_history:
 - status: found
   changed_at: '2026-09-14T18:09:05Z'
 analysis_priority: 100
-fingerprint: sha256:bb9434bd2ae1480147ffc978fe12b8621419231c5fe3404bd6ecee71711eaba3
+fingerprint: sha256:76c0f918c9c16a3be2eaa7d61b5f9fc55215b2fdb66f53e2d893ebd2da5bb8d6
 data_source: dou
 content_source: dou
 company_content_source: dou
