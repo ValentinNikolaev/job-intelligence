@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-15T22:47:00Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "saas.group",
+      "directory": "2026-09-15_210255_saas-group_head-of-engineering",
+      "score": 72,
+      "title": "Head of Engineering",
+      "url": "https://jobicy.com/jobs/150588-head-of-engineering",
+      "vacancy_id": "fe285b96-bd9b-4897-82c5-1b7e52312e92"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "1f9b0a36c3eb15ae700f0783771cba6e1c663d70fb5ca307b05c10fe6cb6bff8",
+  "schema_version": 1
+}

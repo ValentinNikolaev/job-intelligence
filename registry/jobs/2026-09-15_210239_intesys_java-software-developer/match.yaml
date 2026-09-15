@@ -1,0 +1,20 @@
+score: 18
+recommendation: not_match
+summary: The role is mobile application development requiring Java, Kotlin, or Swift
+  and mobile UX and testing experience, while the candidate profile is centered on
+  backend PHP and Go systems.
+strengths:
+- Strong general software engineering and API integration background.
+gaps:
+- No evidence of professional Java, Kotlin, Swift, or mobile application development.
+- No evidence of mobile UX pattern or beta-testing experience.
+concerns:
+- The vacancy title and captured page content are inconsistent, although both indicate
+  a non-backend specialization.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T22:47:00Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:bff826a0b654735e13d21fa37a6678adc0d6edb8af15cdd875f465c1d9d47f59
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
