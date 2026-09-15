@@ -1,0 +1,24 @@
+score: 78
+recommendation: match
+summary: Strong PHP backend alignment with substantial production experience in Laravel,
+  Symfony, APIs, databases, and system reliability; the main uncertainty is whether
+  this London-based role clearly supports working from Italy.
+strengths:
+- Extensive recent PHP and backend experience with Laravel and Symfony.
+- Demonstrated production ownership of APIs, integrations, performance, and reliable
+  delivery systems.
+- Strong fit for a travel-connectivity product through broad platform and customer-facing
+  backend experience.
+gaps:
+- The posting may expect London or UK-based availability, and remote eligibility from
+  Italy is not clearly established.
+- Any Airalo-specific domain or eSIM experience is not present in the candidate profile.
+concerns:
+- Location and remote-work terms require confirmation before application.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T15:43:37Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:ade34783d759beb8f99348238e8edcd2db87e540dacbd4232d2afde372616b6a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
