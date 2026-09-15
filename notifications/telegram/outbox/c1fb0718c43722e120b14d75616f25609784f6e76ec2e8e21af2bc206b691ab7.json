@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-15T15:43:37Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Airalo",
+      "directory": "2026-09-14_061439_airalo_backend-php-engineer",
+      "score": 78,
+      "title": "Backend/PHP Engineer",
+      "url": "https://www.adzuna.co.uk/jobs/details/5879872720?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "a8074a66-c8f6-43fd-bfec-ef9b34d67936"
+    },
+    {
+      "company": "Recare Deutschland GmbH",
+      "directory": "2026-09-14_001934_recare-deutschland-gmbh_senior-backend-engineer-go-m-w-d",
+      "score": 88,
+      "title": "Senior Backend Engineer (Go) (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-senior-backend-engineer-go-berlin-391760",
+      "vacancy_id": "cee9bf1e-dc21-49e6-b5ab-2ec0a1c1df64"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "c1fb0718c43722e120b14d75616f25609784f6e76ec2e8e21af2bc206b691ab7",
+  "schema_version": 1
+}
