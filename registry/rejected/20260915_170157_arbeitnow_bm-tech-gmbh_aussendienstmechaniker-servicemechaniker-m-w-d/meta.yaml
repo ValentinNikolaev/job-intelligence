@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: aussendienstmechaniker-servicemechaniker-birkenheide-244206
+source_url: https://www.arbeitnow.com/jobs/companies/bm-tech-gmbh/aussendienstmechaniker-servicemechaniker-birkenheide-244206
+title: Außendienstmechaniker / Servicemechaniker (m/w/d)
+company: BM-Tech GmbH
+location: Birkenheide
+published_at: '2026-09-15T14:00:40Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-15T17:01:57Z'
+rejected_at: '2026-09-15T17:01:57Z'

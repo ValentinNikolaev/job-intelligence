@@ -97,4 +97,4 @@ Bei Fragen, ruf uns gerne an.
 
 Dein Ansprechpartner ist Philip Eggers (Tel.: 05820/985869)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

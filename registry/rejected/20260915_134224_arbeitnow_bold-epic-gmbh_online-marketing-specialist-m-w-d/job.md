@@ -69,4 +69,4 @@ Wir freuen uns auf deine Bewerbung!
 
 Wenn du Fragen zu dieser Position hast, kannst du dich jederzeit gerne an Lena Dinkelacker wenden – per Mail oder telefonisch 0711 21722811
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

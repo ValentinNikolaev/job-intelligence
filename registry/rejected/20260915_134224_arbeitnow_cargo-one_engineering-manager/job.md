@@ -219,4 +219,4 @@ We can currently support visa processes in Germany only.
 
 We hire for talent. If you don't tick every box but think you'd be a great match, reach out anyway. We'd love to hear from you.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

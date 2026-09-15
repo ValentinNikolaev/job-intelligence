@@ -75,4 +75,4 @@ Neugierig geworden? Dann freuen wir uns auf Deine Bewerbung (Lebenslauf reicht f
 
 Zeig uns am liebsten etwas, das Du selbst gedreht hast. Drei Reels oder ein Link zu Deinem Instagram sagen uns mehr als ein Anschreiben.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

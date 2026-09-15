@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-senior-sales-engineer-north-america-286129
+source_url: https://www.arbeitnow.com/jobs/companies/camunda/remote-senior-sales-engineer-north-america-286129
+title: Senior Sales Engineer- North America
+company: Camunda
+location: Remote
+published_at: '2026-09-15T14:40:04Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-15T17:01:57Z'
+rejected_at: '2026-09-15T17:01:57Z'

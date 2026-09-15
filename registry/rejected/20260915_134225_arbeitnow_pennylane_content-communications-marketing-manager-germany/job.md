@@ -186,4 +186,4 @@ Pennylane verarbeitet Ihre Daten, um Ihre Bewerbung zu bearbeiten und Ihre Eignu
 
 Pennylane trata sus datos para gestionar su candidatura y evaluar su idoneidad para el puesto. En caso de que su candidatura no sea seleccionada, sus datos podrán conservarse hasta 2 años a partir de nuestro último contacto o de la finalización del proceso de selección, con el fin de constituir y gestionar una reserva de candidatos. Puede oponerse en cualquier momento y solicitar la eliminación de sus datos escribiendo a [**Más información**](https://www.pennylane.com/fr/vos-donnees-personnelles-recrutement)
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

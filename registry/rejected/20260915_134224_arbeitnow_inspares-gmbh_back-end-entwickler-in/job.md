@@ -91,4 +91,4 @@ Karolin Finke-Stryczek
 
 **Tel:** +49 (0) 2431 9440210 oder 0800 360 360 0
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -59,4 +59,4 @@ As an early member of Nomos, you’ll help shape the company and share in its fi
 
 Building a power company from scratch brings complex, rewarding challenges and the chance to solve Europe’s energy crisis for the long term. You’ll learn from people with exceptional depth in their fields, challenge each other’s thinking and take responsibility from the start.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

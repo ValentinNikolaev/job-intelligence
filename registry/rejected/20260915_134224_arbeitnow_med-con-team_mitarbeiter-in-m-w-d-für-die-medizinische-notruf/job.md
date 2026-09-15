@@ -79,4 +79,4 @@ Bei Rückfragen stehen wir Ihnen auch gerne telefonisch zur Verfügung unter der
 
 Wir freuen uns darauf, Sie persönlich kennenzulernen!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

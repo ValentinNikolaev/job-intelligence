@@ -65,4 +65,4 @@ Wir begleiten Menschen und Unternehmen bei allen finanziellen Angelegenheiten. U
 
 Wir freuen uns auf Ihre Bewerbung mit Angabe Ihrer Gehaltsvorstellung und des frühestmöglichen Eintrittsdatums, vorzugsweise per Mail.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

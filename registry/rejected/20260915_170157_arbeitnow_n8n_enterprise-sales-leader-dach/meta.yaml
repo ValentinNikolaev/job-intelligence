@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: enterprise-sales-leader-dach-berlin-348518
+source_url: https://www.arbeitnow.com/jobs/companies/n8n/enterprise-sales-leader-dach-berlin-348518
+title: Enterprise Sales Leader DACH
+company: N8N
+location: Berlin Office
+published_at: '2026-09-15T14:40:08Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-15T17:01:57Z'
+rejected_at: '2026-09-15T17:01:57Z'

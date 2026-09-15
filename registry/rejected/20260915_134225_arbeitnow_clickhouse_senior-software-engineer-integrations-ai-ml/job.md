@@ -133,4 +133,4 @@ ClickHouse provides equal employment opportunities to all employees and applican
 
 Please see [here](https://clickhouse.com/legal/applicant-privacy-notice) for our Privacy Statement.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
