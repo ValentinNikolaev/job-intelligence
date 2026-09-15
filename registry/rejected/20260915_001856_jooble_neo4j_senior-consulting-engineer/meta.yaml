@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-9136881381968840579'
+source_url: https://jooble.org/desc/-9136881381968840579?ckey=senior+backend+engineer&rgn=55179&pos=11&groupId=293749696&elckey=5333932453447166050&p=1&aq=5506023397153960824&cid=15922&jobAge=5&brelb=100&bscr=14.597603&scr=14.597603
+title: Senior Consulting Engineer
+company: Neo4j
+location: Italian Republic
+published_at: '2026-09-14T12:19:36.7299833+00:00'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-15T00:18:56Z'
+rejected_at: '2026-09-15T00:18:56Z'
