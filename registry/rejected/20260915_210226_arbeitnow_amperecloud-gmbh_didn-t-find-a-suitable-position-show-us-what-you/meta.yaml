@@ -1,0 +1,13 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: didnt-find-a-suitable-position-show-us-what-youve-got-with-an-unsolicited-application-berlin-186199
+source_url: https://www.arbeitnow.com/jobs/companies/amperecloud-gmbh/didnt-find-a-suitable-position-show-us-what-youve-got-with-an-unsolicited-application-berlin-186199
+title: Didn't find a suitable position? – Show Us What You’ve Got with an Unsolicited
+  Application!
+company: Amperecloud GmbH
+location: Berlin
+published_at: '2026-09-15T15:30:30Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-15T21:02:26Z'
+rejected_at: '2026-09-15T21:02:26Z'

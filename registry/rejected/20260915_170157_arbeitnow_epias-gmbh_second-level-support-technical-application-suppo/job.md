@@ -95,4 +95,4 @@ Komm an Bord und trage Deinen Teil dazu bei, die digitalen Abläufe in der Notau
 
 Wenn Dich die Aufgabe anspricht, freuen wir uns auf Deinen Lebenslauf sowie Deine Gehaltsvorstellung und Deinen frühestmöglichen Eintrittstermin.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

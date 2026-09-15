@@ -56,4 +56,4 @@ Please consider that the requirements are not listed in order of importance, and
 
 See what TWAICE is up to [https://www.linkedin.com/company/twaice/](https://www.linkedin.com/company/twaice/)
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

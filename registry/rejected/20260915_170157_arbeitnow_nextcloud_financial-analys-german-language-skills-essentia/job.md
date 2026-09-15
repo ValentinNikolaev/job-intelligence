@@ -77,4 +77,4 @@ We are looking for somebody with ambition and drive who would like to grow and l
 
 Please note that we don´t accept CVs from recruitment agencies or third parties and due to high volume of applications if you don´t hear from us within max. 3 weeks with an interview invitation please assume that your application as unsuccessful.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

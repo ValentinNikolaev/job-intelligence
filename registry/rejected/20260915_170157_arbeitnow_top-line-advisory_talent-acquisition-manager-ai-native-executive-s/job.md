@@ -45,4 +45,4 @@ Topline Advisory is an AI-native executive search firm. Our clients are VC and P
 
 - Direct line to the Topline partners, not a layer of account managers
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

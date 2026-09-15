@@ -123,4 +123,4 @@ If you have any questions, feel free to contact Mary Wolf at ----- style="min-he
 
 **Ready to own (y)our growth?**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

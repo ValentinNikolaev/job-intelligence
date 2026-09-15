@@ -49,4 +49,4 @@ Du liebst es, die richtigen Menschen für die richtigen Stellen zu finden – un
 
 *Wir freuen uns über Bewerbungen von Menschen aller Geschlechter, Nationalitäten, Religionen, Altersgruppen und Hintergründe. Was zählt, ist dein Können und deine Motivation, alles andere ist irrelevant.*
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

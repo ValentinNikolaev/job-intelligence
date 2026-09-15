@@ -101,4 +101,4 @@ The people who thrive in this role want real ownership. You’d rather write the
 
 **If that sounds like your kind of challenge, we’d love to hear from you.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

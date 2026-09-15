@@ -75,4 +75,4 @@ Wir sind stolz auf unser tolles Team, lieben unsere Arbeit und leben nach diesen
 
 Sende uns bitte eine Übersicht deiner bisherigen Arbeiten und einige Informationen über dich selbst, sodass wir dich und deine Skills schon mal etwas besser kennenlernen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

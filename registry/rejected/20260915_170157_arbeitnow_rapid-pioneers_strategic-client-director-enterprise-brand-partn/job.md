@@ -55,4 +55,4 @@ You're not coming in to manage an existing book. You're coming in to open doors 
 
 If this sounds like the right next step for you, we'd love to hear from you.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

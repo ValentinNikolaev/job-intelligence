@@ -114,4 +114,4 @@ Bewirb dich am besten über unser Bewerbungsportal - so landet deine Bewerbung d
 
 Falls du Fragen hast, schreibe gerne an **Susi Schaffer **unter ----- style="min-height:1.5em">Ready to own (y)our growth?
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
