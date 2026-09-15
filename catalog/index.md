@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 72
+Total vacancies: 74
 
-- Found: 55
+- Found: 57
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 72
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-15 | [Hinto Group](../registry/jobs/2026-09-15_061216_hinto-group_php-developer/) | [PHP Developer](../registry/jobs/2026-09-15_061216_hinto-group_php-developer/job.md) | — | Custom | Found | 2026-09-15 | [Custom](https://www.hintogroup.eu/it/posizioni-aperte/php-developer) | — | — | — | — | — |
+| 2026-09-15 | [Airalo](../registry/jobs/2026-09-15_061158_airalo_backend-php-engineer/) | [Backend/PHP Engineer](../registry/jobs/2026-09-15_061158_airalo_backend-php-engineer/job.md) | UK | Adzuna | Found | 2026-09-15 | [Adzuna](https://www.adzuna.co.uk/jobs/details/5883773714?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-14 | [Talmatic](../registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/) | [Senior Go/Golang Software Engineer](../registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/job.md) | віддалено | Dou | Found | 2026-09-14 | [Dou](https://jobs.dou.ua/companies/talmatic/vacancies/373206/) | [Open](../registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/company.md) | — | — | — | — |
 | 2026-09-14 | [Zeeks](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/) | [PHP (Laravel) Developer](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/job.md) | Київ, віддалено | Dou | Found | 2026-09-14 | [Dou](https://jobs.dou.ua/companies/zeeks/vacancies/373266/) | [Open](../registry/jobs/2026-09-14_180905_zeeks_php-laravel-developer/company.md) | — | — | — | — |
 | 2026-09-14 | [Händlerbund Management AG](../registry/jobs/2026-09-14_180843_h%C3%A4ndlerbund-management-ag_backend-entwickler-php-laravel-m-w-d-remote-4-ta/) | [Backend-Entwickler PHP/Laravel (m/w/d) - Remote, 4-Tage-Woche](../registry/jobs/2026-09-14_180843_h%C3%A4ndlerbund-management-ag_backend-entwickler-php-laravel-m-w-d-remote-4-ta/job.md) | Leipzig, Leipzig (Kreis) | Adzuna | Found | 2026-09-14 | [Adzuna](https://www.adzuna.de/details/5877169817?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
