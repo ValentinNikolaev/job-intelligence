@@ -105,4 +105,4 @@ Unser Prozess besteht aus einem Kennenlernen mit 30 Minuten, einem technischen I
 
 **Start ist zum nächstmöglichen Zeitpunkt. Wir freuen uns darauf, dich kennenzulernen.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

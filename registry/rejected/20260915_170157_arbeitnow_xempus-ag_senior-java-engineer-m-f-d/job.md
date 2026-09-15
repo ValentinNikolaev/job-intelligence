@@ -55,4 +55,4 @@ We're on the lookout for a Senior Java Engineer (m/f/d) with a passion for softw
 
 We’d love to hear from you!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

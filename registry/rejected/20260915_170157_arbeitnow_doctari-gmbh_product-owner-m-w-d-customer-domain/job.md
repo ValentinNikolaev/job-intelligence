@@ -81,4 +81,4 @@ Darüber hinaus bieten wir eine Vielzahl an Benefits und Möglichkeiten, um Beru
 
 Du hast Interesse mehr zu erfahren oder Lust auf diese Stelle, dann sende uns deinen Lebenslauf inklusive Gehaltsvorstellung und dem frühestmöglichen Eintrittstermin gleich hier. Offene Fragen beantwortet ich dir Maria, Recruiting Manager, gerne unter 01516 3304090. Wir freuen uns auf dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

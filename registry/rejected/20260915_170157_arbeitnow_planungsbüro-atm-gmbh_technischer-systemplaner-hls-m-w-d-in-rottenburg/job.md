@@ -69,4 +69,4 @@ Benefits
 
 Wenn Sie Lust auf einen Arbeitsplatz haben, an dem kurze Wege und klare Strukturen den Alltag prägen, freuen wir uns auf Ihre Bewerbung. Bei uns arbeiten Sie in einem lichtdurchfluteten, ruhig gelegenen Büro mit moderner Ausstattung, darunter drei Bildschirme für Ihren Arbeitsplatz. Werden Sie Teil eines Teams, das seit über 30 Jahren gemeinsam wächst. Bei Fragen zur Stelle steht Ihnen unser Team gerne zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

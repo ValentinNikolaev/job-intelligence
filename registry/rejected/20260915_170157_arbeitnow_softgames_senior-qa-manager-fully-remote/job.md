@@ -149,4 +149,4 @@ At SOFTGAMES, we believe that different perspectives and background in our teams
 
 **Have we caught your interest?** Then we look forward to your detailed application together with your salary expectations and earliest possible start date.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

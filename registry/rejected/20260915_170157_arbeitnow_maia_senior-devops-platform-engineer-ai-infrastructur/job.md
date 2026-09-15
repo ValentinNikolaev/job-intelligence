@@ -167,4 +167,4 @@ Please write these answers yourself and do not submit an AI-generated cover lett
 
 We review this remote opening against a deliberately focused profile. If your experience matches the core requirements and you are ready to take independent responsibility for a growing AI platform, we would like to hear from you.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

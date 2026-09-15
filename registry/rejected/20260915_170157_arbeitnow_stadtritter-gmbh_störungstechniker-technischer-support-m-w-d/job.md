@@ -63,4 +63,4 @@ Bewirb dich mit deinem Lebenslauf und beschreibe kurz, welche Erfahrungen du mit
 
 Stadtritter GmbH · Großbeerenstraße 139a · 14482 Potsdam
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

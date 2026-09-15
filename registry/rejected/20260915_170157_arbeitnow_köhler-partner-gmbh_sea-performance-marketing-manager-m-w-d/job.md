@@ -69,4 +69,4 @@ Für unseren weiteren Erfolgskurs suchen wir für unsere Agentur in Buchholz (be
 
 Wir freuen uns auf Deine Bewerbung mit Angabe Deines Wunscheintrittstermins und Deiner Gehaltsvorstellung per E-Mail. Für Rückfragen steht Dir Nicole Greve sehr gerne telefonisch unter 04181 92892-82 zur Verfügung.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

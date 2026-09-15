@@ -60,4 +60,4 @@ Ray Sono GmbH
 Bettina Kurz
 Senior HR Manager
 Tumblingerstraße 32, 80337 München
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

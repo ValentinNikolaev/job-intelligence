@@ -45,4 +45,4 @@ Dich erwarten flexible Arbeitszeiten sowie eine attraktive Vergütung.
 
 - Homeoffice-Möglichkeit
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -55,4 +55,4 @@ Für unseren Kunden suchen wir zum nächstmöglichen Zeitpunkt eine erfahrene Pe
 
 Klingt nach deiner nächsten Herausforderung? Dann freuen wir uns darauf, dich kennenzulernen! Wir begleiten dich persönlich durch den gesamten Bewerbungsprozess – schick uns einfach deine Bewerbungsunterlagen, wir melden uns zeitnah bei dir zurück.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
