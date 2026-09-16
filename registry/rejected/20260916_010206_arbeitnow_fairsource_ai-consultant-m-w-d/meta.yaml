@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: ai-consultant-munich-37947
+source_url: https://www.arbeitnow.com/jobs/companies/fairsource/ai-consultant-munich-37947
+title: AI Consultant (m/w/d)
+company: Fairsource
+location: Munich
+published_at: '2026-09-15T23:00:26Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-16T01:02:06Z'
+rejected_at: '2026-09-16T01:02:06Z'
