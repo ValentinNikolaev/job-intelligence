@@ -51,4 +51,4 @@ Als Executive Assistant (m/w/d) sind Sie die organisatorische Schaltzentrale der
 
 Sie möchten als Executive Assistant nicht nur organisieren, sondern in einem gesund wachsenden Unternehmen Verantwortung übernehmen, Themen vorantreiben und sichtbare Ergebnisse schaffen? Dann freuen wir uns auf Ihre Bewerbung: Ihr Lebenslauf genügt.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

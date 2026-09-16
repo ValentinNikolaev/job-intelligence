@@ -47,4 +47,4 @@ Wir, die **spo-comm GmbH**, sind die Spezialisten für Mini-PC-Lösungen im Indu
 
 Dann freuen wir uns darauf, dich kennenzulernen! Sende uns einfach deine Kurzbewerbung (Lebenslauf reicht völlig aus) an.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -173,4 +173,4 @@ Experience with operating services in a decoupled, event-driven system, leveragi
 
 Upvest is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

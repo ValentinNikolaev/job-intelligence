@@ -40,4 +40,4 @@ Posted: 2026-09-10
 - Технічне інтерв’ю (онлайн)
 - Співбесіда з COO (онлайн, опціонально)
 
-📩 Приєднуйтесь до команди Kozak Group — надсилайте резюме або пишіть на пошту [[email protected](/cdn-cgi/l/email-protection#ec9a808d888089828dc28e8384888d82839a8dac8783968d87c18b9e83999cc28f8381)]
+📩 Приєднуйтесь до команди Kozak Group — надсилайте резюме або пишіть на пошту [[email protected](/cdn-cgi/l/email-protection#e1978d80858d848f80cf838e8985808f8e9780a18a8e9b808acc86938e9491cf828e8c)]

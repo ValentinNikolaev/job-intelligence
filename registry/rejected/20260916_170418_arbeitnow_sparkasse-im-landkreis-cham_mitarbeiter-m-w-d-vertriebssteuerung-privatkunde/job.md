@@ -95,4 +95,4 @@ Perfektion? Muss nicht sein!
 
 **Bei Fragen können Sie sich gerne an unseren Bereichsdirektor Vorstandssekretariat, Herrn Karl Rank (Tel. 09971 – 481 6400) und Bereichsdirektor Vertriebssteuerung, Herrn Martin Wanninger (Tel. 09971 – 481 6500) wenden.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -107,4 +107,4 @@ Senden Sie uns bitte diese Unterlagen mit Verweis auf die Stellen ID zu und Sie 
 
 *Disclaimer: Zur verbesserten Lesbarkeit haben wir hier nur eine Geschlechtsform verwendet. Da wir konform mit AGG und Gleichberechtigungsgesetz handeln, sind natürlich alle Geschlechtsformen ganz neutral angesprochen. Alter, Herkunft, Religion usw. sind keine Entscheidungsmerkmale bei RSC und unseren Kunden / Mandanten.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
