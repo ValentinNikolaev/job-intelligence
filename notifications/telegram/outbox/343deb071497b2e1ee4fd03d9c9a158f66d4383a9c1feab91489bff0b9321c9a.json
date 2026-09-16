@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-16T17:57:27Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Nord Security",
+      "directory": "2026-09-16_170430_nord-security_backend-engineer-mid-senior-php-go-payments-team",
+      "score": 86,
+      "title": "Backend Engineer | Mid - Senior | PHP + Go | Payments Team",
+      "url": "https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f",
+      "vacancy_id": "5aeb104e-036e-42b5-9320-c544742e5e3f"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "343deb071497b2e1ee4fd03d9c9a158f66d4383a9c1feab91489bff0b9321c9a",
+  "schema_version": 1
+}
