@@ -1,0 +1,24 @@
+score: 20
+recommendation: not_match
+summary: Mobile developer profile requiring Java, Kotlin, or Swift and mobile-platform
+  delivery; candidate evidence supports backend PHP and Go development but does not
+  demonstrate mobile application development or those languages.
+strengths:
+- Strong general software engineering and API integration background.
+- Experience with reliability, production systems, and cross-functional delivery.
+gaps:
+- No evidence of Java, Kotlin, Swift, smartphone or tablet application development,
+  or mobile beta testing.
+- No demonstrated mobile UX or app-pattern experience.
+concerns:
+- Mobile development is the central specialization rather than an optional part of
+  the role.
+- Remote or relocation terms are not stated; the role is associated with Intesys in
+  Verona, Italy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-16T13:54:32Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:f1635a85c43f6d60f89f3b28be94127ad541b88888726032fdcf3dbbf1b3d9e3
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

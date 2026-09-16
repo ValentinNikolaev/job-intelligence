@@ -1,0 +1,26 @@
+score: 34
+recommendation: weak_match
+summary: General Intesys developer role combines frontend technologies with SpringBoot,
+  JHipster, Liferay, APIs, and microservices; candidate has relevant APIs, microservices,
+  PHP, Go, and cloud experience but lacks evidence for the central Java/SpringBoot
+  and frontend stack.
+strengths:
+- Demonstrated API and microservice architecture across production systems.
+- Strong backend engineering, AWS, Kubernetes, CI/CD, and reliability experience.
+- Experience collaborating with product and technical stakeholders in Agile environments.
+gaps:
+- No candidate evidence of Java, SpringBoot, JHipster, Liferay, Angular, or React.
+- The role expects meaningful frontend and enterprise Java delivery in addition to
+  backend work.
+concerns:
+- SpringBoot is a central technology in the described profile and is specifically
+  a weaker fit for the candidate.
+- Remote or relocation terms are not stated; the role is associated with Intesys in
+  Verona, Italy.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-16T13:54:32Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:3205eb4350c355c0500632b666dc355cc244224ef964bbabea48268fe956d047
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
