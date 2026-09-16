@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-managing-director-germany-149083
+source_url: https://www.arbeitnow.com/jobs/companies/valsoft-corp/remote-managing-director-germany-149083
+title: Managing Director
+company: Valsoft Corp
+location: Germany
+published_at: '2026-09-15T23:20:05Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-16T05:02:37Z'
+rejected_at: '2026-09-16T05:02:37Z'
