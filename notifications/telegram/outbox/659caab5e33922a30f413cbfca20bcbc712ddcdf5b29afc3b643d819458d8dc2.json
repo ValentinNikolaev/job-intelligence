@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-16T12:55:06Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Qubit Labs",
+      "directory": "2026-09-16_121113_qubit-labs_lead-php-developer-eu",
+      "score": 84,
+      "title": "Lead PHP Developer (EU)",
+      "url": "https://jobs.dou.ua/companies/qubit-labs/vacancies/373507/",
+      "vacancy_id": "0268ea8a-ddbc-4ca3-88e4-8fb814470e8b"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "659caab5e33922a30f413cbfca20bcbc712ddcdf5b29afc3b643d819458d8dc2",
+  "schema_version": 1
+}

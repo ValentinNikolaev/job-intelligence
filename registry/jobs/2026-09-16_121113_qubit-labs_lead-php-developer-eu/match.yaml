@@ -1,0 +1,37 @@
+score: 84
+recommendation: strong_match
+summary: 'Strong fit for a hands-on PHP lead role: the candidate has senior PHP, Laravel
+  and Symfony experience, MySQL-backed production systems, API and integration work,
+  technical leadership, mentoring, interviewing, performance work, and remote backend
+  delivery experience. The main uncertainties are direct legacy-codebase and Jira
+  evidence and willingness to attend several weeks of onboarding in Cologne.'
+strengths:
+- Strong senior PHP experience across Laravel and Symfony production systems.
+- Led backend engineers, coordinated delivery, conducted interviews, mentored developers,
+  and made technical decisions.
+- Demonstrated MySQL, relational database, API, integration, performance, reliability,
+  and incremental modernization experience.
+- Experience stabilizing business-critical systems and operating established production
+  workflows.
+- Candidate is based in Italy and the vacancy clearly supports remote EU nearshore
+  work.
+gaps:
+- The candidate profile does not explicitly document Jira usage.
+- Direct experience with digital signage, ad tech, or campaign and inventory systems
+  is not established.
+- The profile does not explicitly confirm willingness or ability to spend several
+  weeks onboarding in Cologne.
+concerns:
+- The vacancy emphasizes long-lived legacy PHP applications; the profile shows relevant
+  maintenance and modernization work but does not explicitly label a legacy codebase.
+- The role requires strong English communication; the profile records professional
+  or upper-intermediate English with conflicting source entries.
+- The position is B2B/FOP and Cologne travel expectations should be confirmed before
+  applying.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-16T12:55:06Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:e719be95d24e3600a78d25ced484b438ecaa26a0cddd42d5751c839c66cc8982
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
