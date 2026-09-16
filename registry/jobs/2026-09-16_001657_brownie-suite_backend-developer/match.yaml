@@ -1,0 +1,27 @@
+score: 55
+recommendation: possible_match
+summary: Strong PHP and MVC/LAMP evidence fits the backend core, but the posting combines
+  full-stack and front-end requirements, appears open to junior hires, and does not
+  establish remote work or a senior scope.
+strengths:
+- Extensive PHP experience with Laravel, Symfony, MVC-based systems, and production
+  backend development.
+- Demonstrated MySQL, REST API, e-commerce, performance, and maintainability experience.
+- English-language professional experience and adaptability across varied digital
+  products.
+gaps:
+- The posting requires substantial HTML, CSS, JavaScript, jQuery, Adobe, and CSS preprocessor
+  work that is not a central part of the candidate evidence.
+- No clear evidence of the employer's proprietary framework or CMS.
+concerns:
+- The role is listed alongside junior-oriented hiring language and the posting does
+  not clarify seniority, compensation, or remote eligibility.
+- The stated Milan office location may require relocation or commuting from Rome if
+  remote work is unavailable.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-16T00:46:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:41ed3992e6721d8f1f5fab526f26f9db37579d6cc64765c296bfecccbcb50e87
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
