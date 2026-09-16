@@ -1,0 +1,21 @@
+score: 22
+recommendation: not_match
+summary: The role is centered on Java enterprise development, while the profile demonstrates
+  PHP and Go backend engineering rather than Java or Spring Boot experience.
+strengths:
+- Strong senior software-development background and computer-science education.
+- Demonstrated API, microservice, collaboration, and production-reliability experience.
+gaps:
+- No Java or Spring Boot experience is evidenced.
+- Angular, React, JHipster, and Liferay are not established as current core skills.
+concerns:
+- The role's required technology alignment is unclear beyond general backend and API
+  experience.
+hard_rejection: true
+hard_rejection_reason: Java is the central mandatory specialization, but the profile
+  does not evidence Java experience.
+analyzed_at: '2026-09-16T05:51:09Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:5073368c95ce8d7194c45575277a453b4565c71ab0a6ea29edad4a8a571b9958
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
