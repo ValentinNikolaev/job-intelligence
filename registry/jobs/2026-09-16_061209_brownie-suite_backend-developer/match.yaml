@@ -1,0 +1,26 @@
+score: 76
+recommendation: match
+summary: Strong PHP backend fit for Brownie Suite's proprietary commerce framework
+  and web applications, with substantial PHP, Laravel, Symfony, MySQL, and production
+  engineering experience; the main uncertainty is the role's junior/full-stack framing
+  and on-site expectations.
+strengths:
+- Extensive PHP backend experience with Laravel and Symfony
+- MySQL, MVC, REST APIs, and production troubleshooting experience
+- Relevant e-commerce and web-application background
+- Rome-based candidate and strong adaptability/ownership evidence
+gaps:
+- HTML, CSS, JavaScript, jQuery, and Adobe Creative Suite are not central demonstrated
+  skills in the candidate profile
+- The posting does not specify seniority or working arrangement
+concerns:
+- The role is described as potentially junior and may be less aligned with the candidate's
+  seniority
+- The proprietary framework and exact client-account responsibilities are unfamiliar
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-16T08:50:08Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:07d170eb844081749e56ca539651bca6975cec8eff4bb16e06b9d2f9081f716d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

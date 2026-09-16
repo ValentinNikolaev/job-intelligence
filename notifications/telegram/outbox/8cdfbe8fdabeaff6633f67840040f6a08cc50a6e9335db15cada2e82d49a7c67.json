@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-16T08:50:08Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Brownie Suite",
+      "directory": "2026-09-16_061209_brownie-suite_backend-developer",
+      "score": 76,
+      "title": "Backend Developer",
+      "url": "https://www.browniesuite.com/en/careers",
+      "vacancy_id": "5b47c81b-b842-410f-853b-e26fd2d78cb5"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "8cdfbe8fdabeaff6633f67840040f6a08cc50a6e9335db15cada2e82d49a7c67",
+  "schema_version": 1
+}
