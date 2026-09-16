@@ -1,9 +1,0 @@
-schema_version: 1
-triage_version: deterministic-triage-v1
-vacancy_id: f5f5f250-67de-4cc5-a9fc-c60763aaa399
-skip_model: true
-reason: junior
-confidence: high
-matched_title_rules:
-- junior
-triaged_at: '2026-09-15T21:03:26Z'
