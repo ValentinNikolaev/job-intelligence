@@ -1,0 +1,70 @@
+# Senior Analytics Engineer - Run & Grow
+
+Posted: 2026-09-16T13:45:26Z
+
+## Rejection
+
+- Category: location_requirement
+- Reason: vacancy is explicitly non-remote
+
+The Run & Grow Tribe of Tribes powers the systems, insights, and experiences that keep millions of merchants engaged, successful, and growing with SumUp across every market we operate in. We're at a genuine inflection point in how we use data, moving from fragmented pipelines to a world-class data foundation built on stable business domains, trusted metrics, and AI-ready data products. This is a greenfield opportunity to shape how data is owned, defined, and built at scale, and as our Analytics Engineer, you'll be the connective tissue that makes that vision real.
+
+## What you'll do
+
+- Partner with squads across the tribe on event design and data contracts, maintaining staging pipelines, applying modelling conventions, and keeping domain outputs consistent, tested, and discoverable
+
+- Model key business domains, including merchant activity, product adoption, lifecycle events, and risk scoring, building well-documented, quality-assured data products that serve as the trusted source of truth across the organisation
+
+- Build and maintain the insights layer on top of governed domains, producing reusable KPI models, funnels, cohorts, and segmentations that Product, Commercial, and AI teams can self-serve with confidence
+
+- Implement technical improvements including incremental processing strategies, performance optimisations, and scalable data architecture to support growing data volumes
+
+- Contribute to SumUp's broader data domain strategy, helping establish durable ownership, consistent definitions, and a shared catalogue of data products that unlock self-serve analytics and AI at scale
+
+## You'll be great for this role if…
+
+- Strong, proven experience in analytics engineering or data engineering, with a track record of building and maintaining production data systems
+
+- Expert-level SQL skills for complex transformations and query optimisation, with hands-on experience building layered data models in a modern data warehouse or lakehouse (e.g. Snowflake, Iceberg) and solid command of dbt, including testing, documentation, and modelling conventions
+
+- Ability to think in terms of business domains, not just tables, translating complex business logic into clean, durable, and reusable data models across entities, events, states, and rules
+
+- Comfort working across squads with Product Managers, Engineers, Analysts, and Data Scientists, contributing to data design conversations and helping teams treat data as a first-class deliverable
+
+- Deep care for data quality, trust, and discoverability, building models others can rely on, with a proactive mindset around contracts, freshness, observability, and failure scenarios
+
+## Why you should join SumUp
+
+- 🌎 Opportunity to work with SumUppers globally on large-scale fintech products used by millions of businesses worldwide, from our Berlin office. This involves an office-first setup
+
+- 🌈 Commitment to Diversity and Inclusion: be part of a workplace that values and promotes diversity, fostering an inclusive environment where everyone's perspectives are respected and embraced
+
+- 🚀 Enrolment onto our Virtual Stock Option programme: you will own a stake in SumUp's future success
+
+- 📚 A dedicated annual L&D budget of €2000 for your individual development, which can be used to attend conferences and/or advance your career through further education
+
+- 💶 A corporate pension scheme where we match up to 20% of your contributions
+
+- 🏖️ Generous time off: enjoy 28 days of paid leave plus public holidays and special leave days
+
+- 🏋️ Numerous other benefits such as Urban Sports Club subsidy, Kita placement assistance, subsidised office lunches
+
+- 🌴 Break4me: 1-month sabbatical after 3 years of service
+
+- 🔗 Referral Bonus: earn additional rewards by referring talented individuals to join the SumUp team
+
+## About SumUp
+
+Be empowered to do more that matters.
+
+At SumUp, we're on a mission to empower small businesses across the globe by providing simple and affordable tools that allow them to thrive. Today, over 4 million businesses in 37 markets rely on SumUp as their financial partner to manage payments, finance and customer relationships.
+
+Our commitment to small businesses is reflected in [our diverse team](https://youtu.be/9DG64C3moeQ?si=YpcWuBNBTOQPzeLI) of over 3,000 SumUppers from over 90 nationalities, united by global collaboration and an innovative mindset. [Our core values](https://www.sumup.com/careers/culture/) lay the foundation for who we are and what we stand for, shaping our work culture and driving our success. We foster inclusivity and a continuous learning culture, providing a safe space for personal and professional growth. Our differences make us unique and strong as we strive to create an environment where everyone belongs and feels supported, no matter how they identify.
+
+SumUp is proud to be an Equal Employment Opportunity employer, actively seeking and embracing diversity in our workforce. We don't make hiring or employment decisions based on race, colour, religion or religious belief, ethnic or national origin, nationality, sex, gender, gender identity, sexual orientation, disability, age or any other basis protected by applicable laws or prohibited by company policy. Our commitment extends beyond recruitment to creating a safe and respectful workplace where harassment of any form is strictly prohibited. Discover more about our culture and opportunities on our [careers website](https://www.sumup.com/careers/), and follow our journey on [LinkedIn](https://www.linkedin.com/company/sumup/), [Instagram](https://www.instagram.com/insidesumup/), and [TikTok](https://www.tiktok.com/@insidesumup).
+
+**Job Application Tip**
+
+We recognise that candidates feel they need to meet 100% of the job criteria in order to apply for a job. Please note that this is only a guide. If you don't tick every box, it's ok too because it means you have room to learn and develop your career at SumUp.
+
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

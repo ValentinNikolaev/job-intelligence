@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: data-platform-engineer-berlin-462000
+source_url: https://www.arbeitnow.com/jobs/companies/sumup/data-platform-engineer-berlin-462000
+title: Data Platform Engineer
+company: SumUp
+location: Berlin, Germany
+published_at: '2026-09-16T13:45:26Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-16T17:04:18Z'
+rejected_at: '2026-09-16T17:04:18Z'

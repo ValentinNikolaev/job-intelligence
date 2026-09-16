@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: business-recruiter-germany-336795
+source_url: https://www.arbeitnow.com/jobs/companies/trading212/business-recruiter-germany-336795
+title: Business Recruiter
+company: Trading212
+location: Germany
+published_at: '2026-09-16T14:40:02Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-16T17:04:18Z'
+rejected_at: '2026-09-16T17:04:18Z'
