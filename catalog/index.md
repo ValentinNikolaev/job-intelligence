@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 75
+Total vacancies: 68
 
-- Found: 58
+- Found: 51
 - Applied: 16
 - Interview: 1
 
@@ -12,13 +12,6 @@ Total vacancies: 75
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-09-16 | [Intesys](../registry/jobs/2026-09-16_010217_intesys_java-software-developer/) | [Java Software Developer](../registry/jobs/2026-09-16_010217_intesys_java-software-developer/job.md) | — | Custom | Found | 2026-09-16 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-mobile/) | — | — | — | — | — |
-| 2026-09-16 | [Intesys](../registry/jobs/2026-09-16_010217_intesys_java-software-developer_adcb3893/) | [Java Software Developer](../registry/jobs/2026-09-16_010217_intesys_java-software-developer_adcb3893/job.md) | — | Custom | Found | 2026-09-16 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
-| 2026-09-16 | [Intesys](../registry/jobs/2026-09-16_010217_intesys_developer/) | [Developer](../registry/jobs/2026-09-16_010217_intesys_developer/job.md) | — | Custom | Found | 2026-09-16 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
-| 2026-09-16 | [ShippyPro](../registry/jobs/2026-09-16_010217_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-16_010217_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-16 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
-| 2026-09-16 | [Intesys](../registry/jobs/2026-09-16_010217_intesys_front-end-developer-con-react-a-verona-a-tempo-i/) | [Front-end Developer con React a Verona a tempo indeterminato](../registry/jobs/2026-09-16_010217_intesys_front-end-developer-con-react-a-verona-a-tempo-i/job.md) | — | Custom | Found | 2026-09-16 | [Custom](https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/front-end-developer-react/) | — | — | — | — | — |
-| 2026-09-16 | [Gerhard Sprügel GmbH](../registry/jobs/2026-09-16_010202_gerhard-spr%C3%BCgel-gmbh_backend-entwickler-m-w-d-shopware-6/) | [Backend-Entwickler (m/w/d) Shopware 6](../registry/jobs/2026-09-16_010202_gerhard-spr%C3%BCgel-gmbh_backend-entwickler-m-w-d-shopware-6/job.md) | Ingelfingen, Hohenlohekreis | Adzuna | Found | 2026-09-16 | [Adzuna](https://www.adzuna.de/details/5883260590?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
-| 2026-09-16 | [Brownie Suite](../registry/jobs/2026-09-16_001657_brownie-suite_backend-developer/) | [Backend Developer](../registry/jobs/2026-09-16_001657_brownie-suite_backend-developer/job.md) | — | Custom | Found | 2026-09-16 | [Custom](https://www.browniesuite.com/en/careers) | — | — | — | — | — |
 | 2026-09-16 | [PuntoPost](../registry/jobs/2026-09-16_001648_puntopost_senior-backend-developer-php-symfony/) | [Senior Backend Developer (Php/Symfony)](../registry/jobs/2026-09-16_001648_puntopost_senior-backend-developer-php-symfony/job.md) | Barcelona | Adzuna | Found | 2026-09-16 | [Adzuna](https://www.adzuna.es/details/5885215141?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-15 | [saas.group](../registry/jobs/2026-09-15_210255_saas-group_head-of-engineering/) | [Head of Engineering](../registry/jobs/2026-09-15_210255_saas-group_head-of-engineering/job.md) | Europe | Jobicy | Found | 2026-09-15 | [Jobicy](https://jobicy.com/jobs/150588-head-of-engineering) | — | — | — | — | — |
 | 2026-09-15 | [EVOPLAY](../registry/jobs/2026-09-15_134250_evoplay_senior-php-developer/) | [Senior PHP developer](../registry/jobs/2026-09-15_134250_evoplay_senior-php-developer/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-09-15 | [Dou](https://jobs.dou.ua/companies/evoplay/vacancies/300514/) | [Open](../registry/jobs/2026-09-15_134250_evoplay_senior-php-developer/company.md) | — | — | — | — |
