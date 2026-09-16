@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 77
+Total vacancies: 79
 
-- Found: 60
+- Found: 62
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 77
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-16 | [Gameinspire](../registry/jobs/2026-09-16_170434_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-16_170434_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-16 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-16_170434_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-16 | [Nord Security](../registry/jobs/2026-09-16_170430_nord-security_backend-engineer-mid-senior-php-go-payments-team/) | [Backend Engineer \| Mid - Senior \| PHP + Go \| Payments Team](../registry/jobs/2026-09-16_170430_nord-security_backend-engineer-mid-senior-php-go-payments-team/job.md) | Remote Poland | Custom | Found | 2026-09-16 | [Custom](https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f) | — | — | — | — | — |
 | 2026-09-16 | [Solidgate](../registry/jobs/2026-09-16_130323_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-16_130323_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-16 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-16_130323_solidgate_junior-go-engineer/company.md) | — | — | — | — |
 | 2026-09-16 | [Intesys](../registry/jobs/2026-09-16_130319_intesys_developer/) | [Developer](../registry/jobs/2026-09-16_130319_intesys_developer/job.md) | — | Custom | Found | 2026-09-16 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
 | 2026-09-16 | [ShippyPro](../registry/jobs/2026-09-16_130319_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-16_130319_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-16 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |

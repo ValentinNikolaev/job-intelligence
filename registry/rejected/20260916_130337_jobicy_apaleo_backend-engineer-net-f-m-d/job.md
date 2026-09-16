@@ -4,8 +4,8 @@ Posted: 2026-09-09T16:22:51Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-09-09T16:22:51Z is older than 7 days
 
 ### Join Apaleo and Shape the Future of Hospitality Tech!
 
