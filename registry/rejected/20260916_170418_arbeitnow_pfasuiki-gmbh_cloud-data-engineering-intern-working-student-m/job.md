@@ -75,4 +75,4 @@ If you combine technical curiosity with a builder’s mindset and enjoy taking o
 
 Apply with your CV and a brief introduction outlining your relevant experience and what excites you about joining PFASuiki.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

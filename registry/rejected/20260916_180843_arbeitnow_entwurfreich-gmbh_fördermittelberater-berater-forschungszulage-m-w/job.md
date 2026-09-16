@@ -59,4 +59,4 @@ So geht es weiter: Wir melden uns innerhalb weniger Tage. Im ersten Gespräch le
 
 fundloop ist ein Angebot der ENTWURFREICH GmbH, Fleher Str. 32, 40223 Düsseldorf. Dort liegt auch der Arbeitsvertrag.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

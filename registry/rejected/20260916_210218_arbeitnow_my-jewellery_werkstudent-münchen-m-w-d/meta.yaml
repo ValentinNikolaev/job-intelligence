@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: werkstudent-munchen-127111
+source_url: https://www.arbeitnow.com/jobs/companies/my-jewellery/werkstudent-munchen-127111
+title: Werkstudent München (m/w/d)
+company: My Jewellery
+location: München, Beieren, Duitsland
+published_at: '2026-09-16T14:30:03Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-16T21:02:18Z'
+rejected_at: '2026-09-16T21:02:18Z'

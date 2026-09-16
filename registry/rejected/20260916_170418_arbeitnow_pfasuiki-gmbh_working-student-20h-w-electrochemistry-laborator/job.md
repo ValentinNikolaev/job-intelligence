@@ -73,4 +73,4 @@ Join PFASuiki and work with us on turning innovative electrochemical technology 
 
 We look forward to receiving your application!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

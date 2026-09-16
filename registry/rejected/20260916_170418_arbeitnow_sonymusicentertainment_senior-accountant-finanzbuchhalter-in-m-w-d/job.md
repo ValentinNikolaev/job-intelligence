@@ -168,4 +168,4 @@ We employ, retain, promote and otherwise treat all employees and job applicants 
 
 Please click [here](https://www.sonymusic.com/privacy-policy/) to read our privacy policy before beginning the application process as you will need to agree to the terms of the policy before submitting your information.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

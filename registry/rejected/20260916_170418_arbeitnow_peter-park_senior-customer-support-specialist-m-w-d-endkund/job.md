@@ -95,4 +95,4 @@ Equipment & Wohlbefinden: Ergonomischer Arbeitsplatz mit höhenverstellbaren Tis
 ✅ Bereit für den nächsten Schritt?
 Dann werde Teil unseres Teams – und gestalte mit uns die Zukunft! Bewirb dich einfach und schnell über den Button unten "Auf diese Stelle bewerben" Wir freuen uns, von Dir zu hören!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
