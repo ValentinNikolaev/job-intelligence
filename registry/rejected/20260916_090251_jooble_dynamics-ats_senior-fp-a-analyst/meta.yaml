@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '3520480129575584131'
+source_url: https://jooble.org/desc/3520480129575584131?ckey=senior+backend+engineer&rgn=55179&pos=4&groupId=293749696&elckey=9160376917910375521&p=1&aq=-7821063018264362523&cid=15922&jobAge=51&brelb=100&bscr=8.3606205&scr=8.3606205
+title: Senior FP&A Analyst
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-09-14T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-16T09:02:51Z'
+rejected_at: '2026-09-16T09:02:51Z'
