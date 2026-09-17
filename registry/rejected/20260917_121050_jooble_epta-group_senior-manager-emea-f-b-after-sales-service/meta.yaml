@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2216474656941274863'
+source_url: https://jooble.org/away/-2216474656941274863?p=1&pos=4&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=30&brelb=10&scr=29.433498&bscr=29.433498&aq=5299399216712504311&elckey=-5169776092166434187
+title: Senior Manager, EMEA F&B After-Sales & Service
+company: EPTA GROUP
+location: Italian Republic
+published_at: '2026-09-16T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-17T12:10:50Z'
+rejected_at: '2026-09-17T12:10:50Z'

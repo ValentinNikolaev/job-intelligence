@@ -115,25 +115,19 @@ Helping millions take back control of their online security, privacy, and data.
 
 Main Responsibilities
 
-Design, build, and maintain APIs, services, and systems in our Payments’ infrastructure;
+Design, build, and maintain APIs, services, and systems in our Payments infrastructure;
 
-Write high-quality code that is tested, maintainable, documented, and performs well under load;
+Write high-quality, tested, maintainable, and well-documented code that performs well under load;
 
-Work with different payment methods from all around the world;
+Work with payment methods from around the world and integrate new service providers, each with its own code and functionality;
 
-Integrate new service providers, each with its own code and functionality;
+Improve engineering standards, tooling, and processes to make our development more efficient;
 
-Improve engineering standards, tooling, and processes;
+Collaborate with team members, QA, DevOps, and security teams on day-to-day tasks;
 
-Collaborate with your team members, QA, DevOps, and security teams on day-to-day tasks;
+Take ownership of tasks from start to finish, perform R&D, and find solutions to new and challenging problems;
 
-Mentor colleagues and provide technical guidance when needed;
-
-Perform R&D operations and find solutions to new and challenging problems we encounter;
-
-Demonstrate ownership of tasks from start to finish;
-
-Constantly learn and grow professionally.
+Mentor colleagues, provide technical guidance, and continuously learn and grow professionally.
 
 Core Requirements
 
@@ -373,14 +367,14 @@ Trademark policy
 Patents
 Cookie preferences
 
+opens in a new tab
+
+opens in a new tab
+
+opens in a new tab
+
+opens in a new tab
+
 © 2026 Nord Security. All rights reserved.
-
-opens in a new tab
-
-opens in a new tab
-
-opens in a new tab
-
-opens in a new tab
 
 Nord Security

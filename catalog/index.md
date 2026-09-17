@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 72
 
-- Found: 54
+- Found: 55
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 71
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-17 | [COMFY](../registry/jobs/2026-09-17_121033_comfy_senior-go-developer/) | [Senior Go Developer](../registry/jobs/2026-09-17_121033_comfy_senior-go-developer/job.md) | Дніпро, за кордоном, віддалено | Dou | Found | 2026-09-17 | [Dou](https://jobs.dou.ua/companies/comfy/vacancies/373659/) | [Open](../registry/jobs/2026-09-17_121033_comfy_senior-go-developer/company.md) | — | — | — | — |
 | 2026-09-17 | [Block Labs](../registry/jobs/2026-09-17_061230_block-labs_staff-software-engineer-golang/) | [Staff Software Engineer, Golang](../registry/jobs/2026-09-17_061230_block-labs_staff-software-engineer-golang/job.md) | Albania, Armenia, Bulgaria, Croatia, Georgia, Greece, Ireland, Italy, Kosovo, Malta, Montenegro, Portugal, Romania, Serbia, South Africa, Spain | Himalayas | Found | 2026-09-17 | [Himalayas](https://himalayas.app/companies/block-labs/jobs/staff-software-engineer-golang-404954195) | — | — | — | — | — |
 | 2026-09-17 | [Intesys](../registry/jobs/2026-09-17_061216_intesys_java-software-developer_ee2e23d7/) | [Java Software Developer](../registry/jobs/2026-09-17_061216_intesys_java-software-developer_ee2e23d7/job.md) | — | Custom | Found | 2026-09-17 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/sviluppatore-frontend/) | — | — | — | — | — |
 | 2026-09-17 | [Intesys](../registry/jobs/2026-09-17_061216_intesys_developer/) | [Developer](../registry/jobs/2026-09-17_061216_intesys_developer/job.md) | — | Custom | Found | 2026-09-17 | [Custom](https://www.intesys.it/lavora-con-noi/figure-professionali-developer/) | — | — | — | — | — |
