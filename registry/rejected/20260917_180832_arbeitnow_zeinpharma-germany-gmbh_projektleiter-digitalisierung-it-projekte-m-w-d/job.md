@@ -71,4 +71,4 @@ Dann bist du bei uns genau richtig.
 
 Bei uns zählen Leidenschaft für die Gesundheit, für das Besondere, unternehmerisches Denken und die Lust, Dinge wirklich voranzubringen. Wir freuen uns auf dich!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

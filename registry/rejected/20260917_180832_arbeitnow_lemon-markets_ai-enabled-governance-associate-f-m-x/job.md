@@ -131,4 +131,4 @@ If you feel this role could be a great match for you even if you don’t tick ev
 
 You have any questions? Feel free to contact us via -----
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

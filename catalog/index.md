@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 70
+Total vacancies: 73
 
-- Found: 53
+- Found: 56
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 70
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-17 | [Gameinspire](../registry/jobs/2026-09-17_200431_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-17_200431_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-17 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-17_200431_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-17 | [Solidgate](../registry/jobs/2026-09-17_200431_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-17_200431_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-17 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-17_200431_solidgate_junior-go-engineer/company.md) | — | — | — | — |
+| 2026-09-17 | [ShippyPro](../registry/jobs/2026-09-17_200427_shippypro_graduate-junior-software-engineer/) | [Graduate / Junior Software Engineer](../registry/jobs/2026-09-17_200427_shippypro_graduate-junior-software-engineer/job.md) | Remote | Custom | Found | 2026-09-17 | [Custom](https://shippypro.factorialhr.com/job_posting/graduate-junior-software-engineer-301874) | — | — | — | — | — |
 | 2026-09-17 | [epilot GmbH](../registry/jobs/2026-09-17_180832_epilot-gmbh_senior-staff-product-engineer-full-stack-m-f-d/) | [Senior/Staff Product Engineer (Full Stack) (m/f/d)](../registry/jobs/2026-09-17_180832_epilot-gmbh_senior-staff-product-engineer-full-stack-m-f-d/job.md) | Remote job | Arbeitnow | Found | 2026-09-17 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/epilot-gmbh/remote-senior-staff-product-engineer-full-stack-koln-435694) | — | — | — | — | — |
 | 2026-09-17 | [COMFY](../registry/jobs/2026-09-17_121033_comfy_senior-go-developer/) | [Senior Go Developer](../registry/jobs/2026-09-17_121033_comfy_senior-go-developer/job.md) | Дніпро, за кордоном, віддалено | Dou | Found | 2026-09-17 | [Dou](https://jobs.dou.ua/companies/comfy/vacancies/373659/) | [Open](../registry/jobs/2026-09-17_121033_comfy_senior-go-developer/company.md) | — | — | — | — |
 | 2026-09-17 | [Block Labs](../registry/jobs/2026-09-17_061230_block-labs_staff-software-engineer-golang/) | [Staff Software Engineer, Golang](../registry/jobs/2026-09-17_061230_block-labs_staff-software-engineer-golang/job.md) | Albania, Armenia, Bulgaria, Croatia, Georgia, Greece, Ireland, Italy, Kosovo, Malta, Montenegro, Portugal, Romania, Serbia, South Africa, Spain | Himalayas | Found | 2026-09-17 | [Himalayas](https://himalayas.app/companies/block-labs/jobs/staff-software-engineer-golang-404954195) | — | — | — | — | — |

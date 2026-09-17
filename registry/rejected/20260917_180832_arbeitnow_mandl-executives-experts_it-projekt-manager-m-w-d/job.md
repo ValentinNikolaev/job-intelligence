@@ -55,4 +55,4 @@ Sie möchten nicht nur Projekte koordinieren, sondern Strukturen schaffen, Proze
 
 **Besonderheit:** Die Rolle verbindet klassisches IT-Projektmanagement mit strategischem Prozessaufbau und richtet sich an Kandidaten, die gerne Verantwortung übernehmen, Strukturen schaffen und in einem wachsenden Umfeld aktiv mitgestalten möchten.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

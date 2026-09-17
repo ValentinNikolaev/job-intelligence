@@ -49,4 +49,4 @@ Soley entwickelt Product Mining für große Unternehmen der diskreten Fertigung.
 
 - **Plus:** Spendit Card, Urban Sports Club oder EGYM Wellpass, kostenlose Getränke, Kaffee & Obst sowie Team- und Office-Events
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

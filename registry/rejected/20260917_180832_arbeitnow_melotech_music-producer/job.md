@@ -105,4 +105,4 @@ Offer, contract signing and onboarding
 
 Note: As we are still in stealth, you will learn more about Melotech as you progress through the stages. By the end of the Founder interview, you will have a full grasp of our business and the details of your role.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

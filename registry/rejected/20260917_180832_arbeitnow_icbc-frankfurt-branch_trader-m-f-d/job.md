@@ -51,4 +51,4 @@ Industrial and Commercial Bank of China (ICBC) Frankfurt Branch was established 
 
 Please send your complete application documents — including CV, cover letter (optional), salary expectations, and earliest possible entry date — with reference to the above-mentioned job title to us. We look forward to receiving your application!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

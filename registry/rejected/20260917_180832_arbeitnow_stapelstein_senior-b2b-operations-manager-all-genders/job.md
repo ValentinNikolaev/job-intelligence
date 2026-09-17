@@ -63,4 +63,4 @@ Unser CRM befindet sich im finalen Aufbau. Du übernimmst die fachliche Verantwo
 - Zwei inspirierende Offsites pro Jahr, weil echtes Teamgefühl trotz Remote-first seinen Raum braucht.
 - Flexible Benefits wie Einkaufsbudget, Mobilitätszuschuss oder Urban Sports - nach bestandener Probezeit.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

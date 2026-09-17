@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: data-analyst-cologne-ger-8086
+source_url: https://www.arbeitnow.com/jobs/companies/metycle/data-analyst-cologne-ger-8086
+title: Data Analyst (m/f/d)
+company: METYCLE
+location: Cologne (GER)
+published_at: '2026-09-17T17:09:59Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-17T20:04:13Z'
+rejected_at: '2026-09-17T20:04:13Z'

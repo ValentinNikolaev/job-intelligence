@@ -1,0 +1,13 @@
+schema_version: 1
+source: jobicy
+source_job_id: '153483'
+source_url: https://jobicy.com/jobs/153483-junior-software-engineer-early-career-strong-problem-solving-coding-focus-100-remote-within-spain
+title: Junior Software Engineer – Early Career (Strong Problem solving & Coding Focus)
+  - 100% Remote within Spain
+company: Docplanner
+location: Spain
+published_at: '2026-09-17T06:50:31Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-17T20:04:45Z'
+rejected_at: '2026-09-17T20:04:45Z'

@@ -1,6 +1,6 @@
-# Werkstudent oder Minijob im Kundensupport im HealthCare Bereich (m/w/d)
+# Werkstudent oder Minijob Kundensupport Fahrtenvermittlung im Gesundheitswesen (m/w/d)
 
-Posted: 2026-09-17T14:30:40Z
+Posted: 2026-09-17T18:47:30Z
 
 ## Rejection
 
@@ -45,7 +45,7 @@ Der Umgang mit Menschen, Spaß am Telefonieren, viel Abwechslung in einem agilen
 
 ## Benefits
 
-Wir bieten Dir neben einem attraktiven Gehalt mit betrieblicher Altersvorsorge und 30 Tagen Urlaub, einen direkten Draht zur Geschäftsführung im Büro mit einem hochmotivierten Team.
+Wir bieten Dir neben einem attraktiven Gehalt mit betrieblicher Altersvorsorge einen direkten Draht zur Geschäftsführung im Büro mit einem hochmotivierten Team.
 
 **Bist Du dabei?**
 

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: billing-manager-berlin-204780
+source_url: https://www.arbeitnow.com/jobs/companies/trawa/billing-manager-berlin-204780
+title: Billing Manager
+company: trawa
+location: Berlin HQ
+published_at: '2026-09-17T17:40:04Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-17T20:04:13Z'
+rejected_at: '2026-09-17T20:04:13Z'

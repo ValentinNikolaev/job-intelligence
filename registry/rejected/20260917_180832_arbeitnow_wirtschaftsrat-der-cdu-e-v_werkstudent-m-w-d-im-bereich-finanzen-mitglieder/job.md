@@ -34,4 +34,4 @@ Die Stelle ist auf 6 Monate befristet.
 
 **Kontakt**
 
-Wir freuen uns über Ihr Interesse am Wirtschaftsrat der CDU e.V. Bitte füllen Sie das folgende Formular aus. Sollten Sie Schwierigkeiten mit dem Upload Ihrer Daten oder allgemeine Fragen haben, wende Sie sich gerne per E-Mail an Jobs in Germany on Arbeitnow
+Wir freuen uns über Ihr Interesse am Wirtschaftsrat der CDU e.V. Bitte füllen Sie das folgende Formular aus. Sollten Sie Schwierigkeiten mit dem Upload Ihrer Daten oder allgemeine Fragen haben, wende Sie sich gerne per E-Mail an English Speaking Jobs in Germany on Arbeitnow

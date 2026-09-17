@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150364'
+source_url: https://jobicy.com/jobs/150364-software-engineer-python-container-images
+title: Software Engineer - Python - Container Images
+company: Canonical
+location: APAC,  EMEA,  LATAM,  Canada,  USA
+published_at: '2026-09-10T04:25:18Z'
+rejection_category: stale
+rejection_reason: published_at 2026-09-10T04:25:18Z is older than 7 days
+updated_at: '2026-09-17T20:04:45Z'
+rejected_at: '2026-09-17T20:04:45Z'

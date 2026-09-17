@@ -95,4 +95,4 @@ Relocation required. Currently 4 days on-site, 1 day remote. Policy may change.
 
 We are constantly looking for talent. We recruit through multiple channels – friends & colleagues, universities and professors we know, recruiters, conventions, e-mails and LinkedIn. Join us today.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

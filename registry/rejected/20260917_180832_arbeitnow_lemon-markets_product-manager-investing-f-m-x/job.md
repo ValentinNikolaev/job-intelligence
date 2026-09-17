@@ -117,4 +117,4 @@ Experience in regulated fintech / brokerage or B2B environments is a plus!
 
 **🏝 Workation:** Get out of here! At lemon.markets you can work remotely from anywhere in the EU for up to 10 consecutive days at a time, and up to 60 days per year in total.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
