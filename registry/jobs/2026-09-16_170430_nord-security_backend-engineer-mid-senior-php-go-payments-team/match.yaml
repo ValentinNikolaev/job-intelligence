@@ -1,33 +1,20 @@
 score: 86
 recommendation: strong_match
 summary: Strong fit for a remote Poland backend role combining PHP, Go, microservices,
-  APIs, MySQL, and payment infrastructure; the candidate has directly demonstrated
-  the core languages, backend architecture, production reliability, and payment-related
-  experience.
+  APIs, MySQL, and payment infrastructure.
 strengths:
-- Extensive demonstrated backend development in both Go and PHP, including Laravel
-  and Symfony.
-- Direct experience designing microservices, APIs, event-driven systems, AWS/Kubernetes
-  infrastructure, RabbitMQ, MySQL, and production observability.
-- Relevant payments background through Stripe, PayPal, and Skrill integrations and
-  fintech-related systems.
-- Senior technical leadership, ownership, mentoring, code review, and delivery experience
-  align with the responsibilities.
-- Remote work from Italy is compatible with the stated remote European role, subject
-  to Nord Security's Poland employment/location requirements.
+- Extensive Go and PHP backend development
+- Microservices, APIs, AWS/Kubernetes, messaging, and observability
+- Payment gateway and fintech-related experience
 gaps:
-- Redis, Valkey, KeyDB, Debezium, Grafana, and Go-specific payments infrastructure
-  are not explicitly demonstrated in the candidate profile.
+- Redis-family tooling, Debezium, Grafana, and Go-specific payment infrastructure
+  are not evidenced
 concerns:
-- The posting is explicitly Poland-based and the profile does not state eligibility
-  for Polish employment or willingness to relocate; remote-location compatibility
-  therefore needs confirmation.
-- The role's salary is stated, but the candidate's salary expectations and employment
-  arrangement are unknown.
+- Poland employment or location eligibility and salary expectations require confirmation.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-09-16T17:57:27Z'
+analyzed_at: '2026-09-17T12:39:18Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:44b261975e7b1c6f5fd01583e7c5932f46cdc9ae6cf598b820babe926da9145d
+job_version: sha256:dd4da97f7a534ca279a558559a6da4c290238fe3297d7ffad8a47ecb73ca5f84
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low
