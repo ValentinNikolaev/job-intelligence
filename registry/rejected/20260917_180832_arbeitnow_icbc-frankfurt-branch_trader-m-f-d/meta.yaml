@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: trader-frankfurt-am-main-259463
+source_url: https://www.arbeitnow.com/jobs/companies/icbc-frankfurt-branch/trader-frankfurt-am-main-259463
+title: Trader (m/f/d)
+company: ICBC Frankfurt Branch
+location: Frankfurt am Main
+published_at: '2026-09-17T13:30:32Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-17T18:08:32Z'
+rejected_at: '2026-09-17T18:08:32Z'
