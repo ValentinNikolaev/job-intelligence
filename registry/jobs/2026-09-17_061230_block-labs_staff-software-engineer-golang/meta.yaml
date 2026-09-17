@@ -1,0 +1,80 @@
+schema_version: 2
+id: 80e2f381-51a0-462c-bd65-3df02046b506
+title: Staff Software Engineer, Golang
+company: Block Labs
+company_url: null
+location: Albania, Armenia, Bulgaria, Croatia, Georgia, Greece, Ireland, Italy, Kosovo,
+  Malta, Montenegro, Portugal, Romania, Serbia, South Africa, Spain
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/block-labs/jobs/staff-software-engineer-golang-404954195
+  url: https://himalayas.app/companies/block-labs/jobs/staff-software-engineer-golang-404954195
+  metadata:
+    location_restrictions:
+    - name: Albania
+    - name: Armenia
+    - name: Bulgaria
+    - name: Croatia
+    - name: Georgia
+    - name: Greece
+    - name: Ireland
+    - name: Italy
+    - name: Kosovo
+    - name: Malta
+    - name: Montenegro
+    - name: Portugal
+    - name: Romania
+    - name: Serbia
+    - name: South Africa
+    - name: Spain
+    excerpt: About Block LabsBlock Labs is a premier technology studio operating at
+      the bleeding edge of Web3, Artificial Intelligence, and iGaming.
+    company_slug: block-labs
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - -1
+    - 0
+    - 1
+    - 2
+    - 4
+    categories:
+    - Senior-Golang-Software-Engineer
+    - Golang-Software-Engineer
+    - Senior-Golang-Developer
+    - Senior-Go-Developer
+    - Senior-Golang-Tech-Lead
+    - Staff-Backend-Software-Engineer
+    - Software-Engineer
+    expiry_at: '2026-11-16T02:24:12Z'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        q: backend engineer
+        country: IT
+        seniority: Senior
+        sort: recent
+        exclude_worldwide: 'true'
+    - query_index: 2
+      parameters:
+        q: golang
+        country: IT
+        seniority: Senior
+        sort: recent
+        exclude_worldwide: 'true'
+published_at: '2026-09-17T02:24:13Z'
+discovered_at: '2026-09-17T06:12:30Z'
+updated_at: '2026-09-17T06:12:30Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-17T06:12:30Z'
+analysis_priority: 0
+fingerprint: sha256:522da057ba73a352125f889a90f13e2a0d8f0f1b02ccdcb18fec162a70e2d8f9
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

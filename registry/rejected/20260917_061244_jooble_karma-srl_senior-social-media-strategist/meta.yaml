@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '4026804550357223619'
+source_url: https://jooble.org/away/4026804550357223619?p=1&pos=1&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=96&brelb=10&scr=39.460293&bscr=39.460293&aq=5730519660447001837&elckey=3205999379944141980
+title: Senior Social Media Strategist
+company: Karma SRL
+location: Italian Republic
+published_at: '2026-09-13T00:00:00.0000000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-17T06:12:44Z'
+rejected_at: '2026-09-17T06:12:44Z'
