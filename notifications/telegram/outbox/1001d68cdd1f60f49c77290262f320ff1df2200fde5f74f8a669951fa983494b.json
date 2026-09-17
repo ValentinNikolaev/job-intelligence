@@ -1,0 +1,42 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-17T12:39:18Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "COMFY",
+      "directory": "2026-09-17_121033_comfy_senior-go-developer",
+      "score": 88,
+      "title": "Senior Go Developer",
+      "url": "https://jobs.dou.ua/companies/comfy/vacancies/373659/",
+      "vacancy_id": "1a85ae03-5ba4-474b-b2cf-371e231afc8d"
+    },
+    {
+      "company": "Nord Security",
+      "directory": "2026-09-16_170430_nord-security_backend-engineer-mid-senior-php-go-payments-team",
+      "score": 86,
+      "title": "Backend Engineer | Mid - Senior | PHP + Go | Payments Team",
+      "url": "https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f",
+      "vacancy_id": "5aeb104e-036e-42b5-9320-c544742e5e3f"
+    },
+    {
+      "company": "Block Labs",
+      "directory": "2026-09-17_061230_block-labs_staff-software-engineer-golang",
+      "score": 82,
+      "title": "Staff Software Engineer, Golang",
+      "url": "https://himalayas.app/companies/block-labs/jobs/staff-software-engineer-golang-404954195",
+      "vacancy_id": "80e2f381-51a0-462c-bd65-3df02046b506"
+    },
+    {
+      "company": "PuntoPost",
+      "directory": "2026-09-17_001658_puntopost_senior-backend-developer-php-symfony",
+      "score": 76,
+      "title": "Senior Backend Developer (Php/Symfony)",
+      "url": "https://www.adzuna.es/details/5886721688?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "f25ffa81-28bc-441b-9355-2b4f10b346a1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "1001d68cdd1f60f49c77290262f320ff1df2200fde5f74f8a669951fa983494b",
+  "schema_version": 1
+}

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: grc-specialist-munich-429314
+source_url: https://www.arbeitnow.com/jobs/companies/secfix/grc-specialist-munich-429314
+title: GRC Specialist
+company: Secfix
+location: Remote - EMEA
+published_at: '2026-09-17T11:40:09Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-17T12:37:38Z'
+rejected_at: '2026-09-17T12:37:38Z'

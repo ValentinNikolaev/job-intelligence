@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-complex-claims-coverage-director-germany-126994
+source_url: https://www.arbeitnow.com/jobs/companies/weekday-1/remote-complex-claims-coverage-director-germany-126994
+title: Complex Claims & Coverage Director
+company: Weekday 1
+location: Germany
+published_at: '2026-09-17T11:20:18Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-17T12:37:38Z'
+rejected_at: '2026-09-17T12:37:38Z'
