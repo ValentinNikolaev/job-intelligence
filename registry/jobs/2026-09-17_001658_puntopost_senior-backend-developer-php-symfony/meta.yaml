@@ -1,0 +1,24 @@
+schema_version: 2
+id: f25ffa81-28bc-441b-9355-2b4f10b346a1
+title: Senior Backend Developer (Php/Symfony)
+company: PuntoPost
+company_url: null
+location: Barcelona
+remote: null
+employment_type: null
+sources:
+- source: adzuna
+  source_job_id: '5886721688'
+  url: https://www.adzuna.es/details/5886721688?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-17T01:10:33Z'
+discovered_at: '2026-09-17T00:16:58Z'
+updated_at: '2026-09-17T00:16:58Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-17T00:16:58Z'
+analysis_priority: 0
+fingerprint: sha256:ba351f5f72c44b494ae7d1b3877e23c003ccaa715ab5b88a9d0d3630e59e43e4
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

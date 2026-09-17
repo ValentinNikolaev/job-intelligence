@@ -1,3 +1,0 @@
-# RiseGuide
-
-Expert-Powered Self-Improvement. At RiseGuide, our mission is to offer a strategic alternative to doomscrolling. We distill the insights, frameworks, and principles of the world’s top experts into bite-sized lessons. So every minute you spend learning actually moves you forward. We build RiseGuide on one core idea: the fastest way to...
