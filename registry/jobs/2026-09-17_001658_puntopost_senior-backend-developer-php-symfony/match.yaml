@@ -1,0 +1,20 @@
+score: 76
+recommendation: match
+summary: Strong PHP/Symfony backend and API fit with relevant e-commerce, integrations,
+  databases, and production experience.
+strengths:
+- PHP, Symfony, APIs, and backend systems
+- E-commerce and payment-related integration experience
+- Performance, reliability, and delivery ownership
+gaps:
+- The truncated posting does not establish the complete stack or remote policy
+- Spanish/Mexico logistics domain experience is not directly evidenced
+concerns:
+- Barcelona/location and employment eligibility need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-17T12:39:18Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:38ee50a9faf302ec96f0eff4e0c5dbe20a973eaeffdfe7d37b6f2fab81d105c4
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
