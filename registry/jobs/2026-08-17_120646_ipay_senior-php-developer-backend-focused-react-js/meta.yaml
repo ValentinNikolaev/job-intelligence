@@ -16,13 +16,13 @@ sources:
       name: php-remote
       url: https://jobs.dou.ua/vacancies/?remote&category=PHP
       category: PHP
-    listing_date_label: 17 серпня
+    listing_date_label: 18 вересня
     listing_summary: iPay.ua — a nationwide online payment and transfer service in
       Ukraine that allows users to pay for goods and services at over 2,000 merchants
       using payment cards.We are one of the leaders in the online payments industry.
-published_at: '2026-08-17'
+published_at: '2026-09-18'
 discovered_at: '2026-08-17T12:06:46Z'
-updated_at: '2026-08-20T17:50:57Z'
+updated_at: '2026-09-18T12:09:57Z'
 status: applied
 status_history:
 - status: found

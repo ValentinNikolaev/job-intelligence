@@ -1,6 +1,6 @@
 # Senior PHP Developer (Backend-focused, React.js)
 
-Posted: 2026-08-17
+Posted: 2026-09-18
 
 [iPay.ua](http://ipay.ua/) — a nationwide online payment and transfer service in Ukraine that allows users to pay for goods and services at over 2,000 merchants using payment cards.
 We are one of the leaders in the online payments industry. Every day, we process over 76,000 payments, with more than 27 million transactions completed in 2025. Learn more about us, our mission, values, and goals on our site.
