@@ -1,0 +1,20 @@
+score: 82
+recommendation: strong_match
+summary: Strong fit for a senior remote PHP/Laravel backend role with relevant Vue,
+  APIs, databases, and production ownership experience.
+strengths:
+- Extensive PHP and Laravel experience in production backend systems.
+- Demonstrated performance, reliability, CI/CD, and microservice ownership.
+- Candidate profile includes Vue-related full-stack experience and remote-compatible
+  senior work.
+gaps:
+- Exact depth of recent Vue.js work is not fully evidenced.
+concerns:
+- The posting's precise team and location expectations should be confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-18T19:53:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:4e5b5752bad3d0fc004afa2b62a35044b7e1884a592f9f6e6e043e7a78d8a0e4
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

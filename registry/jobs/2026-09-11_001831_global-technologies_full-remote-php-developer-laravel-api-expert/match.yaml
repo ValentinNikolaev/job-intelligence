@@ -1,21 +1,21 @@
-score: 82
+score: 86
 recommendation: strong_match
-summary: Full-remote PHP/Laravel/API role closely matches the candidate's core stack
-  and production backend experience.
+summary: Excellent match for a fully remote PHP/Laravel API role, with unusually strong
+  alignment across backend delivery, databases, integrations, and reliability.
 strengths:
-- PHP
-- Laravel
-- REST APIs
-- relational databases
-- remote backend delivery
+- Deep PHP and Laravel experience with API and database optimization work.
+- Extensive production integration, microservice, AWS, and reliability evidence.
+- Explicitly remote role and strong alignment with the candidate's senior backend
+  profile.
 gaps:
-- Incomplete posting detail and employer specifics
+- The posting provides limited detail about team structure and product domain.
 concerns:
-- US employer and timezone expectations should be confirmed
+- Employer identity and project context appear relatively sparse in the aggregator-derived
+  posting.
 hard_rejection: false
 hard_rejection_reason: null
-analyzed_at: '2026-09-13T20:27:52Z'
+analyzed_at: '2026-09-18T19:53:23Z'
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
-job_version: sha256:20eb16f4e594a23896b1b2ca990f87b9380205c94b2df32d67bd4b30dc0dbc9d
+job_version: sha256:7ce7fb0e3c68a709fbb2955d928bf4f24c0656d1f236cd958773019abafc3db9
 prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
 model: codex:gpt-5.6-luna:low

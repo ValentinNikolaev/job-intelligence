@@ -1,0 +1,37 @@
+schema_version: 2
+id: 75b87db1-a80d-48e2-bc2d-e28b028bc198
+title: Senior Golang Developer with SRE skills
+company: Gameinspire
+company_url: https://jobs.dou.ua/companies/gameinspire/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373559'
+  url: https://jobs.dou.ua/companies/gameinspire/vacancies/373559/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 16 вересня
+    listing_summary: 'About the Company & Product
+
+
+      We are a rapidly growing product company entering the global gaming entertainment
+      market. Our mission is to bring innovative business solutions to the iGaming
+      industry by building cutting-edge technology products.'
+published_at: '2026-09-16'
+discovered_at: '2026-09-18T18:50:09Z'
+updated_at: '2026-09-18T18:50:09Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-18T18:50:09Z'
+analysis_priority: 100
+fingerprint: sha256:b2dff73a6a4054871571a4e378ea883e7705199e9d8960b125c91a8a880ccc56
+data_source: dou
+content_source: dou
+company_content_source: dou

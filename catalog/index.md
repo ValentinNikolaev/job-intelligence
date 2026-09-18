@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 73
 
-- Found: 54
+- Found: 56
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 71
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-18 | [Gameinspire](../registry/jobs/2026-09-18_185009_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-18_185009_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-18_185009_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-18 | [Solidgate](../registry/jobs/2026-09-18_185009_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-18_185009_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-18_185009_solidgate_junior-go-engineer/company.md) | — | — | — | — |
 | 2026-09-18 | [Edvantis](../registry/jobs/2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel/) | [Senior Full-Stack Software Engineer (PHP/Laravel, Vue.js)](../registry/jobs/2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel/job.md) | Львів, Ряшів (Польща), віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/edvantis/vacancies/373852/) | [Open](../registry/jobs/2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel/company.md) | — | — | — | — |
 | 2026-09-18 | [MeinEinkauf GmbH](../registry/jobs/2026-09-18_180801_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/) | [PHP Backend Developer (m/w/d) - MeinEinkauf GmbH](../registry/jobs/2026-09-18_180801_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh/job.md) | Konstanz, Konstanz (Kreis) | Adzuna | Found | 2026-09-18 | [Adzuna](https://www.adzuna.de/details/5889396455?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-18 | [Add Talent Solutions](../registry/jobs/2026-09-18_120957_add-talent-solutions_tech-lead-solutions-architect-i-gaming/) | [Tech Lead — Solutions Architect (I-Gaming)](../registry/jobs/2026-09-18_120957_add-talent-solutions_tech-lead-solutions-architect-i-gaming/job.md) | віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/add-talent-solutions/vacancies/356776/) | [Open](../registry/jobs/2026-09-18_120957_add-talent-solutions_tech-lead-solutions-architect-i-gaming/company.md) | — | — | — | — |
