@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-872312320107686110'
+source_url: https://jooble.org/away/-872312320107686110?p=1&pos=13&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=456&brelb=15&scr=13.214303&bscr=13.214303&aq=-3292828274564490981&elckey=2647787628567499793
+title: Sr Agent Architect
+company: Parloa
+location: Italian Republic
+published_at: '2026-08-30T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-08-30T00:00:00.0000000 is older than 7 days
+updated_at: '2026-09-18T06:11:49Z'
+rejected_at: '2026-09-18T06:11:49Z'

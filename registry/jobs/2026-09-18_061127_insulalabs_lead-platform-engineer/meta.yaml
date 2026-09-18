@@ -1,0 +1,37 @@
+schema_version: 2
+id: a4d94976-94d6-4b34-95b1-44d90dd3afd1
+title: Lead Platform Engineer
+company: InsulaLabs
+company_url: https://jobs.dou.ua/companies/insulalabs/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373722'
+  url: https://jobs.dou.ua/companies/insulalabs/vacancies/373722/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 17 вересня
+    listing_summary: 'The role
+
+
+      You own the platform. Our product lead decides what we build and why. You decide
+      how it is built, then build it and ship it. There is no engineering manager
+      in between and no architecture committee to convince.'
+published_at: '2026-09-17'
+discovered_at: '2026-09-18T06:11:27Z'
+updated_at: '2026-09-18T06:11:27Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-18T06:11:27Z'
+analysis_priority: 100
+fingerprint: sha256:012b012fc5eb4334aa3a0f201e0fe871ecaf220e6ab110aca223ac4c4cbd944f
+data_source: dou
+content_source: dou
+company_content_source: dou
