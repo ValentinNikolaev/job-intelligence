@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-2682646679238180611'
+source_url: https://jooble.org/away/-2682646679238180611?p=1&pos=4&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=22&brelb=10&scr=38.67182&bscr=38.67182&aq=-654190491584339014&elckey=-5527157210497963629
+title: .NET Web Developer
+company: Gruppozenit
+location: Italian Republic
+published_at: '2026-09-17T13:14:13.5070000'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-18T18:08:29Z'
+rejected_at: '2026-09-18T18:08:29Z'

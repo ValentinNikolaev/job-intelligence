@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '153404'
+source_url: https://jobicy.com/jobs/153404-senior-software-engineer-home-energy-2
+title: Senior Software Engineer (Home Energy)
+company: Enode
+location: Europe
+published_at: '2026-09-16T13:47:10Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-18T18:08:24Z'
+rejected_at: '2026-09-18T18:08:24Z'

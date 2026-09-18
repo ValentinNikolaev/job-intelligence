@@ -1,0 +1,3 @@
+# Edvantis
+
+We are large enough to solve a complex problem, smart enough to care about every project. Edvantis’ goal is to help our clients achieve more via software engineering as a service. We are a mature vendor with our HQ in Berlin, Germany and our development centers in Lviv, Ukraine and...

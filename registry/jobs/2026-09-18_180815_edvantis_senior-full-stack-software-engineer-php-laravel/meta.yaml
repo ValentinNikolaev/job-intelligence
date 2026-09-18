@@ -1,0 +1,34 @@
+schema_version: 2
+id: e457d44c-5797-48f1-a8bd-f01e72c1c1c3
+title: Senior Full-Stack Software Engineer (PHP/Laravel, Vue.js)
+company: Edvantis
+company_url: https://jobs.dou.ua/companies/edvantis/vacancies/
+location: Львів, Ряшів (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373852'
+  url: https://jobs.dou.ua/companies/edvantis/vacancies/373852/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 18 вересня
+    listing_summary: We’re looking for a Senior Full-Stack Software Engineer to work
+      on the project of our Client who empowers organizations to conduct globally
+      connected research and modernize research administration.
+published_at: '2026-09-18'
+discovered_at: '2026-09-18T18:08:15Z'
+updated_at: '2026-09-18T18:08:15Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-18T18:08:15Z'
+analysis_priority: 100
+fingerprint: sha256:71ec5bec43e46f27dc80aa162ff4108cb4a432f38c642905cd53d8c5d7444896
+data_source: dou
+content_source: dou
+company_content_source: dou

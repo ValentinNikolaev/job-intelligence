@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '150846'
+source_url: https://jobicy.com/jobs/150846-software-engineer-3
+title: Software engineer
+company: Sticker Mule
+location: Anywhere
+published_at: '2026-09-16T04:40:03Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-18T18:08:24Z'
+rejected_at: '2026-09-18T18:08:24Z'
