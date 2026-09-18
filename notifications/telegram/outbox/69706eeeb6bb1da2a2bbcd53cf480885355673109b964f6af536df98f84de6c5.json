@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-18T22:55:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Антенор",
+      "directory": "2026-09-18_220220_антенор_golang-backend-developer",
+      "score": 86,
+      "title": "Golang Backend Developer",
+      "url": "https://jobs.dou.ua/companies/antenor/vacancies/373917/",
+      "vacancy_id": "3baf6300-3356-4a85-b096-d6ea46d5fdaf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "69706eeeb6bb1da2a2bbcd53cf480885355673109b964f6af536df98f84de6c5",
+  "schema_version": 1
+}

@@ -1,0 +1,23 @@
+score: 86
+recommendation: strong_match
+summary: Strong fit for a remote Go backend role covering REST, microservices, deployment,
+  reliability, and technical ownership.
+strengths:
+- recent Go backend ownership
+- REST APIs and microservices
+- AWS and Kubernetes
+- event-driven systems and reliability
+- production troubleshooting
+gaps:
+- gRPC experience is not explicitly evidenced
+- direct satellite-transport domain experience is not established
+concerns:
+- Client-side server deployment and Ukrainian-language collaboration details need
+  confirmation
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-18T22:55:47Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:7423bd0dcea0fd6d97ffa960f0b54c735fc7ebc17216994207b1629539035136
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low
