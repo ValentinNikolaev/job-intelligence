@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: data-engineer-data-quality-provenance-134053
+source_url: https://www.arbeitnow.com/jobs/companies/wayve/data-engineer-data-quality-provenance-134053
+title: Data Engineer, Data Quality & Provenance
+company: Wayve
+location: null
+published_at: '2026-09-17T20:55:25Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-18T00:17:51Z'
+rejected_at: '2026-09-18T00:17:51Z'
