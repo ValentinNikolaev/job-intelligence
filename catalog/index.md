@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 73
+Total vacancies: 75
 
-- Found: 56
+- Found: 58
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 73
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-18 | [Антенор](../registry/jobs/2026-09-18_220220_%D0%B0%D0%BD%D1%82%D0%B5%D0%BD%D0%BE%D1%80_golang-backend-developer/) | [Golang Backend Developer](../registry/jobs/2026-09-18_220220_%D0%B0%D0%BD%D1%82%D0%B5%D0%BD%D0%BE%D1%80_golang-backend-developer/job.md) | віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/antenor/vacancies/373917/) | [Open](../registry/jobs/2026-09-18_220220_%D0%B0%D0%BD%D1%82%D0%B5%D0%BD%D0%BE%D1%80_golang-backend-developer/company.md) | — | — | — | — |
+| 2026-09-18 | [Datadog](../registry/jobs/2026-09-18_220202_datadog_partner-solutions-architect-emea/) | [Partner Solutions Architect (EMEA)](../registry/jobs/2026-09-18_220202_datadog_partner-solutions-architect-emea/job.md) | Remote | Arbeitnow | Found | 2026-09-18 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/datadog/remote-partner-solutions-architect-emea-389722) | — | — | — | — | — |
 | 2026-09-18 | [Gameinspire](../registry/jobs/2026-09-18_185009_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-18_185009_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-18_185009_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
 | 2026-09-18 | [Solidgate](../registry/jobs/2026-09-18_185009_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-18_185009_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-18_185009_solidgate_junior-go-engineer/company.md) | — | — | — | — |
 | 2026-09-18 | [Edvantis](../registry/jobs/2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel/) | [Senior Full-Stack Software Engineer (PHP/Laravel, Vue.js)](../registry/jobs/2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel/job.md) | Львів, Ряшів (Польща), віддалено | Dou | Found | 2026-09-18 | [Dou](https://jobs.dou.ua/companies/edvantis/vacancies/373852/) | [Open](../registry/jobs/2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel/company.md) | — | — | — | — |

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-ai-enthusiasts-wanted-in-germany-germany-anywhere-442462
+source_url: https://www.arbeitnow.com/jobs/companies/tester-work/remote-ai-enthusiasts-wanted-in-germany-germany-anywhere-442462
+title: AI Enthusiasts wanted in Germany
+company: Tester Work
+location: Remote job
+published_at: '2026-09-18T20:30:22Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-18T22:02:02Z'
+rejected_at: '2026-09-18T22:02:02Z'

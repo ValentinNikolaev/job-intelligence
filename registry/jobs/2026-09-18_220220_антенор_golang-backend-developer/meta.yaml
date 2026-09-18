@@ -1,0 +1,35 @@
+schema_version: 2
+id: 3baf6300-3356-4a85-b096-d6ea46d5fdaf
+title: Golang Backend Developer
+company: Антенор
+company_url: https://jobs.dou.ua/companies/antenor/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373917'
+  url: https://jobs.dou.ua/companies/antenor/vacancies/373917/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 18 вересня
+    listing_summary: «Антенор» — українська IT-компанія, яка розробляє та впроваджує
+      технологічні рішення для супутникового моніторингу транспорту. Наші продукти
+      використовуються бізнесом для контролю транспорту, аналізу даних та оптимізації
+      операційних процесів.
+published_at: '2026-09-18'
+discovered_at: '2026-09-18T22:02:20Z'
+updated_at: '2026-09-18T22:02:20Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-18T22:02:20Z'
+analysis_priority: 100
+fingerprint: sha256:c3372612e27f8c2f2a5286102a4d5eb8d07d86cf44c365aab51ef000a76e89b3
+data_source: dou
+content_source: dou
+company_content_source: dou

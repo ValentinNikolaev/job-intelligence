@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: aircraft-painter-munich-185819
+source_url: https://www.arbeitnow.com/jobs/companies/tsmg/aircraft-painter-munich-185819
+title: Aircraft Painter
+company: Tsmg
+location: Munich
+published_at: '2026-09-18T20:05:16Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-18T22:02:02Z'
+rejected_at: '2026-09-18T22:02:02Z'
