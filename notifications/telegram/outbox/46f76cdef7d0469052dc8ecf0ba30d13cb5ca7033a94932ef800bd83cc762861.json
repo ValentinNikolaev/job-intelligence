@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-19T11:05:06Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "N-iX",
+      "directory": "2026-09-19_100238_n-ix_senior-lead-php-engineer-with-ai-skills-5828",
+      "score": 76,
+      "title": "Senior/ Lead PHP Engineer (with AI Skills) (#5828)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/258407/",
+      "vacancy_id": "ba1fdf95-20a0-44c6-b7c4-13ef77b147df"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "46f76cdef7d0469052dc8ecf0ba30d13cb5ca7033a94932ef800bd83cc762861",
+  "schema_version": 1
+}
