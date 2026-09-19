@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '153567'
+source_url: https://jobicy.com/jobs/153567-senior-backend-engineer-net
+title: Senior Backend Engineer (.NET)
+company: LastPass
+location: Portugal
+published_at: '2026-09-18T12:09:13Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-19T22:03:37Z'
+rejected_at: '2026-09-19T22:03:37Z'

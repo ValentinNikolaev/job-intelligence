@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-7588302018438760964'
+source_url: https://jooble.org/desc/-7588302018438760964?ckey=senior+backend+engineer&rgn=55179&pos=6&groupId=293749696&elckey=6296616149374423516&p=1&aq=-6872529389098129223&cid=15922&jobAge=232&brelb=100&bscr=7.7001324&scr=7.7001324
+title: Medical Biller
+company: Dynamics ATS
+location: Italian Republic
+published_at: '2026-09-10T22:13:26.8030000'
+rejection_category: stale
+rejection_reason: published_at 2026-09-10T22:13:26.8030000 is older than 7 days
+updated_at: '2026-09-19T22:03:45Z'
+rejected_at: '2026-09-19T22:03:45Z'
