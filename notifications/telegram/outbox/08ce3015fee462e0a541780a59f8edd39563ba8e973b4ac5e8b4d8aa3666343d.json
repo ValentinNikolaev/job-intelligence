@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-19T13:02:22Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Canonical",
+      "directory": "2026-09-19_120935_canonical_distributed-systems-testing-software-engineer-py",
+      "score": 78,
+      "title": "Distributed Systems Testing Software Engineer, Python / Go",
+      "url": "https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go",
+      "vacancy_id": "86d46203-acb8-42ed-b687-7c963dcd7bca"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "08ce3015fee462e0a541780a59f8edd39563ba8e973b4ac5e8b4d8aa3666343d",
+  "schema_version": 1
+}
