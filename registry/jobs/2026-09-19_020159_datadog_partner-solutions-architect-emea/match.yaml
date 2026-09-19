@@ -1,0 +1,30 @@
+score: 63
+recommendation: possible_match
+summary: Relevant AWS, Kubernetes, Go, PHP, CI/CD, troubleshooting, observability-adjacent,
+  and technical leadership background supports the technical foundation, while partner
+  enablement, Datadog expertise, demos, and presentation-heavy solution-architecture
+  work are not established.
+strengths:
+- Hands-on AWS, Kubernetes, Go, PHP, CI/CD, monitoring, logging, and production troubleshooting
+  experience.
+- Strong technical ownership, mentoring, cross-functional collaboration, and systems
+  explanation background.
+- EU residency and remote EMEA context are compatible with the stated location requirement.
+gaps:
+- No demonstrated Datadog or comparable observability-product experience is recorded.
+- Partner-channel enablement, certification programs, joint planning, and proofs of
+  value are not evidenced.
+- Presentation and customer-facing technical advisory experience is not clearly documented.
+concerns:
+- The role is materially oriented toward partner success, enablement, and commercial
+  technical advisory rather than backend software delivery.
+- The posting requests two or more technologies from several categories; the profile
+  supports some categories but not Terraform, Python, or named CI systems beyond GitHub
+  Actions/ArgoCD.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-19T02:57:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:9108e2c469ea8fa78e4f55d3ef7e20edf549489ed5a15a970fd528d4a84210c0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

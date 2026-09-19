@@ -1,0 +1,27 @@
+score: 74
+recommendation: match
+summary: Strong PHP and Laravel backend, technical leadership, Agile delivery, API
+  integration, and project coordination evidence; frontend depth, Java, and some named
+  Laravel ecosystem tools are not established.
+strengths:
+- Extensive PHP backend experience with Laravel and Symfony.
+- Technical leadership, mentoring, planning, and delivery ownership are directly supported.
+- Experience with REST APIs, MySQL/PostgreSQL, Linux-oriented infrastructure, and
+  Agile delivery.
+gaps:
+- Java is required but not supported by the candidate profile.
+- ReactJS/Vue.js, Livewire, and FilamentPHP depth is not established.
+- Full project budgeting and formal end-to-end project management are only partially
+  evidenced.
+concerns:
+- The role is remote-capable, but its onsite/remote arrangement and Italian-language
+  expectations are not fully specified.
+- The position combines senior full-stack delivery with substantial project-management
+  responsibility.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-19T02:57:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a9e508ab02a60752573c9a9ec7f298168e0803eaaf57fdd85c57586650471915
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

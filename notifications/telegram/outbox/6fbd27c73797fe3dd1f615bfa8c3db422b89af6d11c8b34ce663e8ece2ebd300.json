@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-19T02:57:28Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Lithos",
+      "directory": "2026-09-19_020213_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 74,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "e1c84dad-0d2f-425c-802d-e6c0355015fb"
+    },
+    {
+      "company": "Gerhard Sprügel GmbH",
+      "directory": "2026-09-19_020155_gerhard-sprügel-gmbh_backend-entwickler-m-w-d-shopware-6",
+      "score": 70,
+      "title": "Backend-Entwickler (m/w/d) Shopware 6",
+      "url": "https://www.adzuna.de/details/5887220686?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "7ee382cb-4626-47de-81e3-56bda751acf1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "6fbd27c73797fe3dd1f615bfa8c3db422b89af6d11c8b34ce663e8ece2ebd300",
+  "schema_version": 1
+}
