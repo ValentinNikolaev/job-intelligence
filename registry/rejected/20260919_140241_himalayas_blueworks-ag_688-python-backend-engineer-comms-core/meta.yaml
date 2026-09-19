@@ -1,0 +1,18 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/blueworks-ag/jobs/688-python-backend-engineer-comms-core
+source_url: https://himalayas.app/companies/blueworks-ag/jobs/688-python-backend-engineer-comms-core
+title: '#688 Python Backend Engineer (Comms Core)'
+company: blueworks AG
+location: Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria,
+  Croatia, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar,
+  Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle
+  of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta,
+  Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal,
+  Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen,
+  Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands
+published_at: '2026-09-18T13:22:32Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-19T14:02:41Z'
+rejected_at: '2026-09-19T14:02:41Z'

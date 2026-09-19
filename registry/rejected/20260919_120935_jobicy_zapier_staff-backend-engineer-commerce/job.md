@@ -4,8 +4,8 @@ Posted: 2026-09-12T13:16:58Z
 
 ## Rejection
 
-- Category: tech_stack
-- Reason: role does not mention Go/Golang or PHP
+- Category: stale
+- Reason: published_at 2026-09-12T13:16:58Z is older than 7 days
 
 ### **AI at Zapier**
 

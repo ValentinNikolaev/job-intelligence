@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-praktikant-consulting-headquarter-hamburg-und-stuttgart-413866
+source_url: https://www.arbeitnow.com/jobs/companies/enomyc-gmbh/remote-praktikant-consulting-headquarter-hamburg-und-stuttgart-413866
+title: Praktikant Consulting (w/m/d) | Headquarter Hamburg und Stuttgart
+company: enomyc GmbH
+location: Homeoffice
+published_at: '2026-09-19T11:30:15Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-19T14:02:16Z'
+rejected_at: '2026-09-19T14:02:16Z'

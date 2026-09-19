@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-service-technikerin-photovoltaik-munich-335779
+source_url: https://www.arbeitnow.com/jobs/companies/otovo/remote-service-technikerin-photovoltaik-munich-335779
+title: Service Techniker:in Photovoltaik (f/m/x)
+company: Otovo
+location: Remote job
+published_at: '2026-09-19T11:30:11Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-19T14:02:16Z'
+rejected_at: '2026-09-19T14:02:16Z'

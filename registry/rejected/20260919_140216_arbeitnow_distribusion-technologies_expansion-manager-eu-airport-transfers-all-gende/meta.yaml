@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: remote-expansion-manager-eu-airport-transfers-all-genders-30955
+source_url: https://www.arbeitnow.com/jobs/companies/distribusion-technologies/remote-expansion-manager-eu-airport-transfers-all-genders-30955
+title: Expansion Manager, EU Airport transfers (all genders)
+company: Distribusion Technologies
+location: Remote job
+published_at: '2026-09-19T11:30:19Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-19T14:02:16Z'
+rejected_at: '2026-09-19T14:02:16Z'

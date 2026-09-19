@@ -42,4 +42,4 @@ Bei **Yoshi en & Edeneve** übernimmst du eine zentrale Rolle in unserer Finanzb
 - Genieße unbegrenzt hochwertige Bio-Tees sowie regelmäßige Tee-Tastings als Teil unseres Büroalltags.
 - Wir lieben es, Menschen zusammenzubringen! Von Teezeremonien und gemeinsamen Office-Events über Sommer- und Weihnachtsfeiern bis hin zu Produktlaunches und exklusiven Influencer-Events gibt es viele Gelegenheiten, gemeinsam zu feiern und sich als Team zu verbinden.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
