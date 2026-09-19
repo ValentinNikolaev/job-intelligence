@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: electrician-stuttgart-434696
+source_url: https://www.arbeitnow.com/jobs/companies/sereact-gmbh/electrician-stuttgart-434696
+title: Electrician (m/f/d)
+company: Sereact GmbH
+location: Stuttgart Schockenriedstr. 17
+published_at: '2026-09-19T05:40:15Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-19T10:02:21Z'
+rejected_at: '2026-09-19T10:02:21Z'

@@ -1,0 +1,36 @@
+schema_version: 2
+id: ba1fdf95-20a0-44c6-b7c4-13ef77b147df
+title: Senior/ Lead PHP Engineer (with AI Skills) (#5828)
+company: N-iX
+company_url: https://jobs.dou.ua/companies/n-ix/vacancies/
+location: Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '258407'
+  url: https://jobs.dou.ua/companies/n-ix/vacancies/258407/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 13 вересня
+    listing_summary: 'Toronto time zone
+
+
+      We’re looking for a mature, Senior/Lead PHP Engineer with deep Laravel expertise
+      and hands-on experience building or integrating agentic AI systems.'
+published_at: '2026-09-13'
+discovered_at: '2026-09-19T10:02:38Z'
+updated_at: '2026-09-19T10:02:38Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-19T10:02:38Z'
+analysis_priority: 100
+fingerprint: sha256:e2e16701f0e507d76b276211b47d30f94deafa3998d53adbbd173b2a9b0742c4
+data_source: dou
+content_source: dou
+company_content_source: dou
