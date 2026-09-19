@@ -74,4 +74,4 @@ Wir schaffen Mitarbeitenden ein attraktives Umfeld, das von starkem Teamzusammen
 - Weiterbildungsmöglichkeiten durch externe Schulungen
 - Aktive Mitgestaltung eines dynamisch wachsenden Unternehmens
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -46,4 +46,4 @@ Innerhalb der uniPlan energy entwickeln wir vorrangig in Deutschland, aber auch 
 
 ** Unser Morgen braucht Dich. Werde Teil unseres uniPlan Teams.**
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

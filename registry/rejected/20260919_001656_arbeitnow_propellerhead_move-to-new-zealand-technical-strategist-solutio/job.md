@@ -121,4 +121,4 @@ Candidates that progress may be asked to agree to a police background check, cre
 
 Learn more about our company [here](https://www.propellerhead.co.nz/).
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

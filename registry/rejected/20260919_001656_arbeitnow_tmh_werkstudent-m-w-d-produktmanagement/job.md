@@ -43,4 +43,4 @@ Vielfalt bereichert unser Team und macht uns stärker. Unabhängig von Herkunft,
 
 **Deine -----
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

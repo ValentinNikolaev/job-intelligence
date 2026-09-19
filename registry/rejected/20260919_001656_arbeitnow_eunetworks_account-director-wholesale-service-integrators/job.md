@@ -65,4 +65,4 @@ We are proud to be an equal opportunity employer and commit to providing each in
 
 We strive to make the hiring process equitable and accessible for all. Providing candidates with the opportunity to be their true selves and explore how you might thrive at euNetworks. We are a recognised Disability Confident employer and will make provisions where possible to support you through the interview process, if you require any reasonable accommodation through the selection process, please let your Talent Partner know.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
