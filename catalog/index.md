@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 65
+Total vacancies: 67
 
-- Found: 48
+- Found: 50
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 65
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-19 | [Gameinspire](../registry/jobs/2026-09-19_060151_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-19_060151_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-19 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-19_060151_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-19 | [Solidgate](../registry/jobs/2026-09-19_060151_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-19_060151_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-19 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-19_060151_solidgate_junior-go-engineer/company.md) | — | — | — | — |
 | 2026-09-19 | [Lithos](../registry/jobs/2026-09-19_020213_lithos_senior-full-stack-developer-it-project-leader/) | [Senior Full Stack Developer & IT Project Leader](../registry/jobs/2026-09-19_020213_lithos_senior-full-stack-developer-it-project-leader/job.md) | Oderzo / Remote | Custom | Found | 2026-09-19 | [Custom](https://lithos.it/work-with-us/senior-full-stack-developer) | — | — | — | — | — |
 | 2026-09-19 | [Datadog](../registry/jobs/2026-09-19_020159_datadog_partner-solutions-architect-emea/) | [Partner Solutions Architect (EMEA)](../registry/jobs/2026-09-19_020159_datadog_partner-solutions-architect-emea/job.md) | Remote | Arbeitnow | Found | 2026-09-19 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/datadog/remote-partner-solutions-architect-emea-389722) | — | — | — | — | — |
 | 2026-09-19 | [Gerhard Sprügel GmbH](../registry/jobs/2026-09-19_020155_gerhard-spr%C3%BCgel-gmbh_backend-entwickler-m-w-d-shopware-6/) | [Backend-Entwickler (m/w/d) Shopware 6](../registry/jobs/2026-09-19_020155_gerhard-spr%C3%BCgel-gmbh_backend-entwickler-m-w-d-shopware-6/job.md) | Ingelfingen, Hohenlohekreis | Adzuna | Found | 2026-09-19 | [Adzuna](https://www.adzuna.de/details/5887220686?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
