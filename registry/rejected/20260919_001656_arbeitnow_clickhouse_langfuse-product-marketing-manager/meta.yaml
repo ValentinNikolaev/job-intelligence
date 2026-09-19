@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: langfuse-product-marketing-manager-germany-55221
+source_url: https://www.arbeitnow.com/jobs/companies/clickhouse/langfuse-product-marketing-manager-germany-55221
+title: Langfuse - Product Marketing Manager
+company: Clickhouse
+location: Germany
+published_at: '2026-09-18T23:40:13Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-19T00:16:56Z'
+rejected_at: '2026-09-19T00:16:56Z'
