@@ -1,0 +1,18 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-19T18:06:57Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Paddle",
+      "directory": "2026-09-19_180431_paddle_engineering-manager-platform-application-excelle",
+      "score": 82,
+      "title": "Engineering Manager (Platform - Application Excellence)",
+      "url": "https://jobicy.com/jobs/153641-engineering-manager-platform-application-excellence",
+      "vacancy_id": "bcb8bcfa-daba-4e26-9faa-069c8ae9dafb"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "8cdc25e3caa494965bf78bb29c56ab8c1acf4eaf66d90d7602f266eab66c5374",
+  "schema_version": 1
+}

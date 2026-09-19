@@ -1,0 +1,46 @@
+schema_version: 2
+id: 4d8f050d-5235-4230-9d34-e53d940f5ee8
+title: Staff Software Backend Engineer, Tech Lead - Foundations
+company: NetBox Labs
+company_url: null
+location: UK,  USA
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '153647'
+  url: https://jobicy.com/jobs/153647-staff-software-backend-engineer-tech-lead-foundations
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/df239a55-221.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: NetBox Labs seeks a Staff Software Backend Engineer to technically lead
+      our Foundations team. Foundations is the platform team that builds shared platform
+      primitives that other engineering teams depend on including core services for
+      authentication, access control, customer secrets management, and customer telemetry.
+      This role will own the technical direction for Foundations. You will partner…
+    salary:
+      min: 215000
+      max: 235000
+      currency: USD
+      period: yearly
+    discovered_by:
+    - query_index: 2
+      parameters:
+        industry: dev
+        geo: europe
+        count: '25'
+        tag: backend
+published_at: '2026-09-19T12:42:02Z'
+discovered_at: '2026-09-19T18:04:31Z'
+updated_at: '2026-09-19T18:04:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-19T18:04:31Z'
+analysis_priority: 0
+fingerprint: sha256:9a04b6bbe13a3e06efd71018c32ad2bab5768b1be32ba4f5a469f42c6e9f3cd5
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

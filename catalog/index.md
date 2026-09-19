@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 68
+Total vacancies: 70
 
-- Found: 51
+- Found: 53
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 68
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-19 | [Paddle](../registry/jobs/2026-09-19_180431_paddle_engineering-manager-platform-application-excelle/) | [Engineering Manager (Platform - Application Excellence)](../registry/jobs/2026-09-19_180431_paddle_engineering-manager-platform-application-excelle/job.md) | Ireland,  Portugal,  UK | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153641-engineering-manager-platform-application-excellence) | — | — | — | — | — |
+| 2026-09-19 | [NetBox Labs](../registry/jobs/2026-09-19_180431_netbox-labs_staff-software-backend-engineer-tech-lead-founda/) | [Staff Software Backend Engineer, Tech Lead - Foundations](../registry/jobs/2026-09-19_180431_netbox-labs_staff-software-backend-engineer-tech-lead-founda/job.md) | UK,  USA | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153647-staff-software-backend-engineer-tech-lead-foundations) | — | — | — | — | — |
 | 2026-09-19 | [Gameinspire](../registry/jobs/2026-09-19_140233_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-19_140233_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-19 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-19_140233_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
 | 2026-09-19 | [Solidgate](../registry/jobs/2026-09-19_140233_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-19_140233_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-19 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-19_140233_solidgate_junior-go-engineer/company.md) | — | — | — | — |
 | 2026-09-19 | [Canonical](../registry/jobs/2026-09-19_120935_canonical_distributed-systems-testing-software-engineer-py/) | [Distributed Systems Testing Software Engineer, Python / Go](../registry/jobs/2026-09-19_120935_canonical_distributed-systems-testing-software-engineer-py/job.md) | Anywhere | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go) | — | — | — | — | — |
