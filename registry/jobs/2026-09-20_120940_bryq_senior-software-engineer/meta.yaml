@@ -1,0 +1,62 @@
+schema_version: 2
+id: 14768f05-d0f5-46c3-85ae-8b26ef109251
+title: Senior Software Engineer
+company: Bryq
+company_url: null
+location: Italy
+remote: true
+employment_type: Full Time
+sources:
+- source: himalayas
+  source_job_id: https://himalayas.app/companies/bryq/jobs/senior-software-engineer
+  url: https://himalayas.app/companies/bryq/jobs/senior-software-engineer
+  metadata:
+    location_restrictions:
+    - name: Italy
+    excerpt: We are looking for a Senior Software Engineer to join our engineering
+      team and help build the platform that powers Bryq's talent intelligence products.
+    company_slug: bryq
+    company_logo: https://cdn-images.himalayas.app/nu0tciihm43akrpz4u129x1fyxqk
+    seniority:
+    - Senior
+    parent_categories:
+    - Developer
+    timezone_restrictions:
+    - 1
+    categories:
+    - Backend-Development
+    - Software-Engineer
+    - API-Development
+    - Cloud-Engineer
+    - Distributed-Systems-Engineering
+    - Senior-Software-Developer
+    - Senior-Software-Engineer-Jobs
+    - Senior-Engineer
+    - Senior-Lead-Software-Developer
+    - Senior-C#-.NET-Software-Engineer
+    - Senior-Java-Software-Engineer
+    - Senior-Systems-Software-Engineer
+    - Senior-Software-Engineer-C++
+    - Full-Stack-Engineer
+    - Senior-App-Engineer
+    expiry_at: '2026-11-19T07:04:12Z'
+    discovered_by:
+    - query_index: 1
+      parameters:
+        exclude_worldwide: 'true'
+        q: backend engineer
+        sort: recent
+        seniority: Senior
+        country: IT
+published_at: '2026-09-20T07:04:13Z'
+discovered_at: '2026-09-20T12:09:40Z'
+updated_at: '2026-09-20T12:09:40Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-20T12:09:40Z'
+analysis_priority: 0
+fingerprint: sha256:74ca8463926a549f566a5ed2921400694dfdbfccb2cb6e3a31fb77380602b9ea
+data_source: himalayas
+content_source: himalayas
+company_content_source: null

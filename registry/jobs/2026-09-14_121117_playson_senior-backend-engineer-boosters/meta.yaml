@@ -21,20 +21,15 @@ sources:
       are paramount.If you’re a product-passionate person, your mind is keen to solve
       deep tech engineering problems, and you have a fast "PoC…
     discovered_by:
-    - query_index: 1
-      parameters:
-        count: '25'
-        geo: italy
-        industry: dev
     - query_index: 2
       parameters:
-        count: '25'
-        geo: europe
         industry: dev
         tag: backend
+        geo: europe
+        count: '25'
 published_at: '2026-09-14T06:17:07Z'
 discovered_at: '2026-09-14T12:11:17Z'
-updated_at: '2026-09-14T12:11:17Z'
+updated_at: '2026-09-20T12:09:46Z'
 status: found
 status_history:
 - status: found

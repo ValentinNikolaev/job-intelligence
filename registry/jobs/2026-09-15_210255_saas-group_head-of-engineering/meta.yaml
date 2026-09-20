@@ -21,20 +21,15 @@ sources:
       visibility with professional SEO tools. Starting in 2013 with a commitment to
       usability and actionable advice to make professional-grade SEO…
     discovered_by:
-    - query_index: 1
-      parameters:
-        industry: dev
-        geo: italy
-        count: '25'
     - query_index: 4
       parameters:
         industry: dev
+        tag: php
         geo: europe
         count: '25'
-        tag: php
 published_at: '2026-09-14T05:20:20Z'
 discovered_at: '2026-09-15T21:02:55Z'
-updated_at: '2026-09-15T21:02:55Z'
+updated_at: '2026-09-20T12:09:46Z'
 status: found
 status_history:
 - status: found

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 67
+Total vacancies: 68
 
-- Found: 50
+- Found: 51
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,7 @@ Total vacancies: 67
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-20 | [Bryq](../registry/jobs/2026-09-20_120940_bryq_senior-software-engineer/) | [Senior Software Engineer](../registry/jobs/2026-09-20_120940_bryq_senior-software-engineer/job.md) | Italy | Himalayas | Found | 2026-09-20 | [Himalayas](https://himalayas.app/companies/bryq/jobs/senior-software-engineer) | — | — | — | — | — |
 | 2026-09-19 | [NetBox Labs](../registry/jobs/2026-09-19_220337_netbox-labs_staff-software-backend-engineer-tech-lead-founda/) | [Staff Software Backend Engineer, Tech Lead - Foundations](../registry/jobs/2026-09-19_220337_netbox-labs_staff-software-backend-engineer-tech-lead-founda/job.md) | UK,  USA | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153647-staff-software-backend-engineer-tech-lead-foundations) | — | — | — | — | — |
 | 2026-09-19 | [Paddle](../registry/jobs/2026-09-19_180431_paddle_engineering-manager-platform-application-excelle/) | [Engineering Manager (Platform - Application Excellence)](../registry/jobs/2026-09-19_180431_paddle_engineering-manager-platform-application-excelle/job.md) | Ireland,  Portugal,  UK | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153641-engineering-manager-platform-application-excellence) | — | — | — | — | — |
 | 2026-09-19 | [Canonical](../registry/jobs/2026-09-19_120935_canonical_distributed-systems-testing-software-engineer-py/) | [Distributed Systems Testing Software Engineer, Python / Go](../registry/jobs/2026-09-19_120935_canonical_distributed-systems-testing-software-engineer-py/job.md) | Anywhere | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/151013-distributed-systems-testing-software-engineer-python-go) | — | — | — | — | — |
