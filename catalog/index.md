@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 68
+Total vacancies: 72
 
-- Found: 51
+- Found: 55
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 68
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-20 | [saas.group](../registry/jobs/2026-09-20_144002_saas-group_staff-software-engineer/) | [Staff Software Engineer](../registry/jobs/2026-09-20_144002_saas-group_staff-software-engineer/job.md) | EMEA | Jobicy | Found | 2026-09-20 | [Jobicy](https://jobicy.com/jobs/153697-staff-software-engineer-6) | — | — | — | — | — |
+| 2026-09-20 | [Solidgate](../registry/jobs/2026-09-20_143950_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-20_143950_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-20 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-20_143950_solidgate_junior-go-engineer/company.md) | — | — | — | — |
+| 2026-09-20 | [Gameinspire](../registry/jobs/2026-09-20_143950_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-20_143950_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-20 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-20_143950_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-20 | [Sezzle](../registry/jobs/2026-09-20_143932_sezzle_principal-infrastructure-engineer/) | [Principal Infrastructure Engineer](../registry/jobs/2026-09-20_143932_sezzle_principal-infrastructure-engineer/job.md) | Remote | Arbeitnow | Found | 2026-09-20 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/sezzle/remote-principal-infrastructure-engineer-320329) | — | — | — | — | — |
 | 2026-09-20 | [Bryq](../registry/jobs/2026-09-20_120940_bryq_senior-software-engineer/) | [Senior Software Engineer](../registry/jobs/2026-09-20_120940_bryq_senior-software-engineer/job.md) | Italy | Himalayas | Found | 2026-09-20 | [Himalayas](https://himalayas.app/companies/bryq/jobs/senior-software-engineer) | — | — | — | — | — |
 | 2026-09-19 | [NetBox Labs](../registry/jobs/2026-09-19_220337_netbox-labs_staff-software-backend-engineer-tech-lead-founda/) | [Staff Software Backend Engineer, Tech Lead - Foundations](../registry/jobs/2026-09-19_220337_netbox-labs_staff-software-backend-engineer-tech-lead-founda/job.md) | UK,  USA | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153647-staff-software-backend-engineer-tech-lead-foundations) | — | — | — | — | — |
 | 2026-09-19 | [Paddle](../registry/jobs/2026-09-19_180431_paddle_engineering-manager-platform-application-excelle/) | [Engineering Manager (Platform - Application Excellence)](../registry/jobs/2026-09-19_180431_paddle_engineering-manager-platform-application-excelle/job.md) | Ireland,  Portugal,  UK | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153641-engineering-manager-platform-application-excellence) | — | — | — | — | — |

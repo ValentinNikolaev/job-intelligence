@@ -1,0 +1,52 @@
+schema_version: 2
+id: 31147bfc-18e5-4ee8-a7cc-6bd2d9de50aa
+title: Staff Software Engineer
+company: saas.group
+company_url: null
+location: EMEA
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '153697'
+  url: https://jobicy.com/jobs/153697-staff-software-engineer-6
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/f6d362c3-221-1.png
+    industry:
+    - Software Engineering
+    level: Senior
+    excerpt: This role is part of our Prerender team, one of our growing brands at
+      saas.group. For nearly a decade, Prerender has empowered marketers to create
+      dynamic, complex sites at scale, making their JavaScript websites easily indexable
+      by search engines. We eliminate indexing and crawling limitations, allowing
+      our customers to gain the upper-hand on HTML sites…
+    discovered_by:
+    - query_index: 1
+      parameters:
+        geo: italy
+        industry: dev
+        count: '25'
+    - query_index: 2
+      parameters:
+        geo: europe
+        tag: backend
+        industry: dev
+        count: '25'
+    - query_index: 3
+      parameters:
+        geo: europe
+        tag: golang
+        industry: dev
+        count: '25'
+published_at: '2026-09-20T11:04:48Z'
+discovered_at: '2026-09-20T14:40:02Z'
+updated_at: '2026-09-20T14:40:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-20T14:40:02Z'
+analysis_priority: 0
+fingerprint: sha256:38c280dd74e46b259d8738d5717d60a61932c80d760d4eb45e1410a1ffe89fac
+data_source: jobicy
+content_source: jobicy
+company_content_source: null
