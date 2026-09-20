@@ -54,4 +54,4 @@ Posted: 2026-09-20T14:09:57Z
 - Fluent in English, German is a plus
 - Nationality of a NATO member nation or close ally is required
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -59,4 +59,4 @@ Nadine Heuberger, People & Culture Manager
 UnternehmerTUM GmbH
 Lichtenbergstraße 6, 85748 Garching/München
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

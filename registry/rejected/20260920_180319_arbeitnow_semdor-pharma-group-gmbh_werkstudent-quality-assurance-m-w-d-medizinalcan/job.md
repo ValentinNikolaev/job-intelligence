@@ -44,4 +44,4 @@ Damit du gut arbeiten kannst, stellen wir dir modernes Equipment wie Laptop und 
 - Teamkultur
 Freu dich auf ein respektvolles Miteinander, flache Hierarchien und eine offene DU-Kultur.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -35,4 +35,4 @@ Schöne Extras:
 - Blick für UI-Konsistenz und Design-Systeme
 - Interesse an der Bau- / Sanierungs-Domäne
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

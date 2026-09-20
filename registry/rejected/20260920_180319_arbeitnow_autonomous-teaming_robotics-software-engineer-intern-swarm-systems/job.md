@@ -70,4 +70,4 @@ You do not need to bring all of these — experience from university projects, r
 - Duration: 3–6 months, full-time
 - Eligibility: NATO-aligned nationality or close ally citizenship is required
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

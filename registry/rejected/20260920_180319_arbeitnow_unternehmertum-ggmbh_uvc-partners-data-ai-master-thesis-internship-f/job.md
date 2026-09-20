@@ -66,4 +66,4 @@ UVC Partners is an equal opportunity employer.
 
 UVC Partners is an independent venture capital fund. For efficiency, we use certain shared services from UnternehmerTUM. This is why parts of the application process may appear UTUM-branded, and your application will be processed by UVC Partners and UnternehmerTUM.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

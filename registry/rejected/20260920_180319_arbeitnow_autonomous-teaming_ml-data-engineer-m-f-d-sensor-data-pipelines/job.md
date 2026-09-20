@@ -64,4 +64,4 @@ What you'll do:
 
 Join us to shape the future of AI-driven defense!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

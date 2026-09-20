@@ -41,4 +41,4 @@ Der Bundesvorstand von BÜNDNIS 90/DIE GRÜNEN sucht für den Zeitraum vom **01.
 Ein Praktikum in der Bundesgeschäftsstelle ist als Teil einer Ausbildung vorgesehen. Daher bitten wir ausschließlich Studierende um ihre Bewerbung, die im Rahmen ihres Studiums ein **Pflichtpraktikum** absolvieren müssen. Das Praktikum wird in Vollzeit mit** 39 Wochenstunden** durchgeführt und mit **603,00 Euro pro Monat** vergütet. Bitte bewirb dich bis zum **25.09.2026**. Wir sichten die eingegangenen Bewerbungen laufend mit der Möglichkeit, Dich bereits während der Dauer der Ausschreibung zum Bewerbungsgespräch einzuladen.
 Wir freuen uns auf Deine Bewerbung und darauf, Dich vielleicht schon bald in unserem Team willkommen zu heißen.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

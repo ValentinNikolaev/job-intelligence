@@ -63,4 +63,4 @@ Our milestones are binary. Testing happens in the field, not in simulation.
 - You want a title. What we hand out is the final word and full consequence.
 - A good design matters more to you than a running, functional system.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
