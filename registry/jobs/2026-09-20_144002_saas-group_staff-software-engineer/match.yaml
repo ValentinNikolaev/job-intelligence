@@ -1,0 +1,28 @@
+score: 78
+recommendation: match
+summary: Strong senior backend fit for a remote staff role, with substantial Go, distributed
+  systems, AWS, event-driven architecture, reliability, and technical leadership evidence;
+  the profile does not establish every staff-level organizational or product-domain
+  expectation.
+strengths:
+- More than 15 years of backend software engineering experience with recent Go ownership
+  and technical leadership.
+- Direct evidence of scalable APIs, event-driven pipelines, queues, AWS, observability,
+  resilience, and performance improvements.
+- Strong ownership and mentoring signals through technical-lead work, architecture
+  decisions, interviews, and cross-functional delivery.
+gaps:
+- Staff-level scope across the specific company domain and organization is not established
+  in the candidate profile.
+- The vacancy's complete detailed requirements are not fully available in the sealed
+  record, so some role-specific expectations remain unknown.
+concerns:
+- Exact compensation, timezone overlap, and staff-level decision scope are not stated
+  in the available vacancy evidence.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-20T15:40:33Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:d1782cbf980212f6ba9677b7e746db6426e0abdb71618f995b35bd6532cda6a7
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

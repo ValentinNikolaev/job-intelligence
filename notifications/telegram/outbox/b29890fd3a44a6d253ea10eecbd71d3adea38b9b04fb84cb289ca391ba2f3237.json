@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-20T15:40:33Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "saas.group",
+      "directory": "2026-09-20_144002_saas-group_staff-software-engineer",
+      "score": 78,
+      "title": "Staff Software Engineer",
+      "url": "https://jobicy.com/jobs/153697-staff-software-engineer-6",
+      "vacancy_id": "31147bfc-18e5-4ee8-a7cc-6bd2d9de50aa"
+    },
+    {
+      "company": "Bryq",
+      "directory": "2026-09-20_120940_bryq_senior-software-engineer",
+      "score": 82,
+      "title": "Senior Software Engineer",
+      "url": "https://himalayas.app/companies/bryq/jobs/senior-software-engineer",
+      "vacancy_id": "14768f05-d0f5-46c3-85ae-8b26ef109251"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b29890fd3a44a6d253ea10eecbd71d3adea38b9b04fb84cb289ca391ba2f3237",
+  "schema_version": 1
+}
