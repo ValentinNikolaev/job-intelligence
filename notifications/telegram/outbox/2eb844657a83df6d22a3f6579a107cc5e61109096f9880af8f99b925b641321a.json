@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-20T22:47:46Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Solidgate",
+      "directory": "2026-09-20_220400_solidgate_junior-go-engineer",
+      "score": 78,
+      "title": "Junior Go Engineer",
+      "url": "https://jobs.dou.ua/companies/solidgate/vacancies/364821/",
+      "vacancy_id": "d28d1a54-6a24-4716-ab6f-1a88416aaa46"
+    },
+    {
+      "company": "Gameinspire",
+      "directory": "2026-09-20_220400_gameinspire_senior-golang-developer-with-sre-skills",
+      "score": 86,
+      "title": "Senior Golang Developer with SRE skills",
+      "url": "https://jobs.dou.ua/companies/gameinspire/vacancies/373559/",
+      "vacancy_id": "b6f92576-a188-495f-ba07-c5c6ece286a4"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "2eb844657a83df6d22a3f6579a107cc5e61109096f9880af8f99b925b641321a",
+  "schema_version": 1
+}
