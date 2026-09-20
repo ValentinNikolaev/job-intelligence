@@ -156,4 +156,4 @@ We’re always looking for curious, driven people who want to help shape the fut
 
 Submit your application today and take the next step in your journey with ABC Inc.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

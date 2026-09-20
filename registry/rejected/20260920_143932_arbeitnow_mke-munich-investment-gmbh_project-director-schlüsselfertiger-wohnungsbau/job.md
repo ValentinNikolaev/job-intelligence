@@ -89,4 +89,4 @@ Ihr Leistungsbonus, der während des Projekts in mehreren Tranchen ausgezahlt wi
 
 *Die leistungsbezogene Vergütung wird durch einen verbindlichen Vertrag mit sehr klaren Zielen/Prämien garantiert. Der Leistungsbonus wird während der Projektdauer in mehreren Stufen ausgezahlt. Zum Beispiel: Nach Erhalt der Baugenehmigung mit den verbesserten Parametern, nach Abschluss der Rohbauarbeiten innerhalb des Budgets und Zeitplans, nach erfolgreicher Fertigstellung.*
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

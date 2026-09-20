@@ -83,4 +83,4 @@ This is made possible by our employees, who bring out the best in each and every
 
 We are proud of our diversity and welcome your application regardless of gender and sexual identity, nationality, ethnicity, religion, age, or disability.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

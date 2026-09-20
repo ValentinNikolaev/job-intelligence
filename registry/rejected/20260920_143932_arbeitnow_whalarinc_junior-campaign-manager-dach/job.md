@@ -93,4 +93,4 @@ Whalar provides flexible benefits and collaborative work environments/experience
 
 - Urban Sports
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

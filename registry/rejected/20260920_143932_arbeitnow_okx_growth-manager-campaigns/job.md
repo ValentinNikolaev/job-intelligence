@@ -113,4 +113,4 @@ All official OKX vacancies are published on this website. While roles may appear
 
 Information collected and processed as part of the recruitment process of any job application you choose to submit is subject to OKX's [Candidate Privacy Notice](https://www.okx.com/en-eu/help/okx-candidate-privacy-notice).
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

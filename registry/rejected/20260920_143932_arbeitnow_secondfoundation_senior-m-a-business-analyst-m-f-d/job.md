@@ -63,4 +63,4 @@ We are looking for a Senior M&A Business Analyst to join our Berlin office. You 
 
 - Team-building activities and company events
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
