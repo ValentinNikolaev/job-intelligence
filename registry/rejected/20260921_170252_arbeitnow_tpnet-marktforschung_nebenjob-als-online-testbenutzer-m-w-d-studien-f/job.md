@@ -55,4 +55,4 @@ Das erwartet dich
 
 Diese Tätigkeit eignet sich gut als **Nebenverdienst neben Studium, Beruf oder Selbstständigkeit**, wenn du gelegentlich an Studien teilnehmen möchtest und Interesse daran hast, neue Produkte frühzeitig kennenzulernen.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

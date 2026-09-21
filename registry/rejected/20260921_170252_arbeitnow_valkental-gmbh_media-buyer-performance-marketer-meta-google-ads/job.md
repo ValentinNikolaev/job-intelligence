@@ -93,4 +93,4 @@ Wenn du dir vorher ein Bild von uns machen willst: Auf unserer Karriereseite ler
 
 Tabea und das Valkental-Team freuen sich auf dich!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

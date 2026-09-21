@@ -70,4 +70,4 @@ For better insights, check us out on [Instagram](https://www.instagram.com/life.
 Anja Krieling
 Recruiting Specialist & Employer Branding
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -108,4 +108,4 @@ Work hard play hard. Work on your golf skills and refine your swing on the state
 
 Enjoy the open bar. Have some Afterwork drinks on our rooftop while enjoying the view of the Alps.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

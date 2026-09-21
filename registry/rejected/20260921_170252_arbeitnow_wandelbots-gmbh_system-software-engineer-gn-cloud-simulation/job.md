@@ -168,4 +168,4 @@ We offer training and mental health opportunities so that you can develop both m
 **And there is even more!**
 Enjoy our free lunch, snacks and drinks, team events, 30 days of annual vacation + additional rest during Christmas season until New Year. If your child gets sick, we assure that a 100% of your usual earnings will be paid while you take care of your little one.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

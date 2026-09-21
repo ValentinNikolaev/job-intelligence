@@ -39,4 +39,4 @@ You'll own the payroll cycle end to end, keep our employee data and lifecycle pr
 - Fluent English and German; another European language is a bonus.
 - Proven ownership of multi-country payroll and experience leading process or system improvements, or guiding others.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

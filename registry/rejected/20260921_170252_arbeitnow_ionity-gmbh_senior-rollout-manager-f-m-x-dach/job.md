@@ -38,4 +38,4 @@ Die Rolle verbindet Projektmanagement, Infrastrukturentwicklung und Stakeholder-
 - Du verfügst über gute Anwenderkenntnisse in AutoCAD und Microsoft Office, einschließlich fortgeschrittener Excel-Kenntnisse oder vergleichbarer Projektsteuerungs-Tools.
 - Du hast ein einschlägiges Hochschulstudium, eine technische Qualifikation oder vergleichbare berufliche Erfahrung in den Bereichen Ingenieurwesen, Bauwesen, Infrastruktur oder einem verwandten Fachgebiet.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

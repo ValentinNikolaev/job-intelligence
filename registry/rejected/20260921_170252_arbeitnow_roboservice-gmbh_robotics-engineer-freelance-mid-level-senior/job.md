@@ -61,4 +61,4 @@ You won't be writing papers. **You will be working on:**
 
 - **Team of Experts**: We are a team of experts where every voice matters. Work with professionals that are leading their field.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
