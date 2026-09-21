@@ -45,4 +45,4 @@ This role is customer-facing by design: expect 30–50% travel to customer sites
 - Technical fluency in RF communication, embedded systems, unmanned systems, command-and-control or robotics
 - Experience building a sales pipeline or sales function from scratch rather than inheriting one
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

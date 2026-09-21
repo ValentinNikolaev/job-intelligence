@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 73
+Total vacancies: 76
 
-- Found: 55
+- Found: 58
 - Applied: 16
 - Interview: 1
 - Rejected: 1
@@ -13,6 +13,9 @@ Total vacancies: 73
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-21 | [Solidgate](../registry/jobs/2026-09-21_210331_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-21_210331_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-21_210331_solidgate_junior-go-engineer/company.md) | — | — | — | — |
+| 2026-09-21 | [Gameinspire](../registry/jobs/2026-09-21_210331_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-21_210331_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-21_210331_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-21 | [Contabo](../registry/jobs/2026-09-21_210312_contabo_senior-software-developer-platform-infrastructur/) | [Senior Software Developer – Platform & Infrastructure Engineering (all genders)](../registry/jobs/2026-09-21_210312_contabo_senior-software-developer-platform-infrastructur/job.md) | Remote (Germany) | Arbeitnow | Found | 2026-09-21 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/contabo/remote-senior-software-developer-platform-infrastructure-engineering-all-genders-374552) | — | — | — | — | — |
 | 2026-09-21 | [Readdle](../registry/jobs/2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team/) | [Senior Backend Engineer (PHP, Symfony) — Fluix Team](../registry/jobs/2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/readdle-inc/vacancies/374074/) | [Open](../registry/jobs/2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team/company.md) | — | — | — | — |
 | 2026-09-21 | [TrueLabel](../registry/jobs/2026-09-21_170310_truelabel_php-software-engineer/) | [PHP Software Engineer](../registry/jobs/2026-09-21_170310_truelabel_php-software-engineer/job.md) | за кордоном, віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/374027/) | [Open](../registry/jobs/2026-09-21_170310_truelabel_php-software-engineer/company.md) | — | — | — | — |
 | 2026-09-21 | [Propelahed LTD](../registry/jobs/2026-09-21_133342_propelahed-ltd_laravel-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-part-time/) | [Laravel-розробник (part-time)](../registry/jobs/2026-09-21_133342_propelahed-ltd_laravel-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-part-time/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/propelahed-ltd/vacancies/374023/) | [Open](../registry/jobs/2026-09-21_133342_propelahed-ltd_laravel-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-part-time/company.md) | — | — | — | — |

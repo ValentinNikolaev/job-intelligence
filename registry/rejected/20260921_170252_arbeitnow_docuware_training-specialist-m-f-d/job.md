@@ -62,4 +62,4 @@ As part of the DocuWare team, you will benefit from many advantages:
 - **Buddy Program:** You'll be paired with a buddy, who will support you during your onboarding and offer valuable tips.
 For better insights, check us out on [Instagram](https://www.instagram.com/life.at.docuware/)!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -66,4 +66,4 @@ Betreff: **FiSi (2026/43)**
 
 Fragen beantworten wir dir gerne vorab unter [Hier](http://www.lrz.de/wir/stellen/dsgvobewerber) erhältst du Informationen über die Erhebung personenbezogener Daten im Rahmen des Bewerbungsverfahrens.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

@@ -91,4 +91,4 @@ Are you unsure whether the job suits you or you suit us? Or do you still have qu
 This job does not fit? Then take a look at [https://www.lrz.de/en/careers/current-vacancies](https://www.lrz.de/en/careers/current-vacancies) or send us an unsolicited application!
 [Here](https://www.lrz.de/en/data-privacy/data-protection-information-for-applicants) you will find information about the collection of personal data during the application process.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

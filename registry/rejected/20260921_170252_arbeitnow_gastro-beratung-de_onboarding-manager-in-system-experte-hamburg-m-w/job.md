@@ -1,6 +1,6 @@
-# Onboarding Manager*in / System-Experte - Hamburg (m/w/d) Informatik / WI-Informatik - Onboarding und Support digitaler Systeme in der Gastronomie
+# Onboarding Manager*in / System-Experte - Hamburg (m/w/d) Informatik / WI-Informatik - Onboarding und Support digitaler Systeme in der Gastronomie - Teilzeit / Vollzeit
 
-Posted: 2026-09-21T14:30:29Z
+Posted: 2026-09-21T18:47:25Z
 
 ## Rejection
 
@@ -53,4 +53,4 @@ Wir sind ein kleines aber ambitioniertes und wachsendes Team mit entspannter Arb
 
 Wenn du Gastronomiebetriebe bei der Einführung moderner Technologien unterstützen und wertvolle Erfahrungen in einem dynamischen Arbeitsumfeld sammeln möchtest, freuen wir uns auf deine Bewerbung!
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

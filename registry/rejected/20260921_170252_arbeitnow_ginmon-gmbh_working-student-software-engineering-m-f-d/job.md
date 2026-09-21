@@ -85,4 +85,4 @@ We offer special employee conditions and a variety of other attractive benefits.
 
 Do you want to join our team? Then apply now and actively shape the future of the financial world!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

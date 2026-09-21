@@ -93,4 +93,4 @@ Dies ist mehr als eine Position: Es ist eine unternehmerische Führungsaufgabe m
 
 Der Weg zu einer Entscheidung führt über ein vertrauliches Erstgespräch (online, 30 bis 45 Minuten), eine Informationsveranstaltung, Gespräche mit bestehenden Partnern und ausreichend Bedenkzeit. Wenn Sie noch angestellt sind: Wir behandeln Ihre Kontaktaufnahme vertraulich und legen Gespräche außerhalb Ihrer Arbeitszeit.Bewerben Sie sich mit Lebenslauf und einem kurzen Motivationsschreiben bei Christian von Volkmann, Geschäftsführer der VOVOI GmbH, verantwortlich für thexton armstrong in Nord- und Ostdeutschland. E: , F: 030 90 313 662
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
