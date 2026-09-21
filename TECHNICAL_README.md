@@ -250,7 +250,12 @@ registry/jobs/2026-07-22_203015_acme_senior-backend-engineer/
 └── company.md   # only when useful source content exists
 ```
 
-`meta.yaml` is the source of truth. Its UUID is canonical; the directory name is only a readable first-discovery label. `sources` can contain several external references for the same vacancy. `job.md` keeps the preferred description, with direct ATS sources ranked above aggregators.
+The paths above describe the legacy file representation. `config/data-services.yaml`
+selects the operational source; after verified cutover, MongoDB owns metadata,
+descriptions, matches, triage and audit logs. The old YAML/description files remain
+frozen migration evidence. The UUID is canonical; directory names remain stable
+artifact identities. Source ranking, hashes and freshness rules are unchanged.
+See [storage and recovery](docs/data-storage.md) for migration, CI, Sheets and backup.
 
 New vacancies start with `status: found` and a matching first `status_history` entry.
 Statuses are changed only by an explicit user request:

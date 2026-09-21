@@ -136,10 +136,11 @@ def format_message_html(message: str) -> str:
 
 
 def _registry_urls(registry_root: Path) -> dict[str, str]:
+    from jobintel import storage_bridge as op
     result: dict[str, str] = {}
-    for meta_path in sorted((registry_root / "jobs").glob("*/meta.yaml")):
+    for meta_path in op.metadata_paths(registry_root / "jobs"):
         try:
-            meta = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+            meta = op.load_mapping(meta_path)
         except (OSError, yaml.YAMLError):
             continue
         if not isinstance(meta, dict):

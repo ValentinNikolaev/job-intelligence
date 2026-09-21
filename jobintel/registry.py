@@ -12,6 +12,8 @@ from urllib.parse import quote
 
 import yaml
 
+from . import storage_bridge as op
+
 from .models import VACANCY_STATUSES, NormalizedJob, UpsertResult
 from .normalization import slug, vacancy_fingerprint
 
@@ -67,10 +69,17 @@ class Registry:
         self._fingerprint_index: dict[str, list[dict[str, Any]]] | None = None
         self.jobs_dir.mkdir(parents=True, exist_ok=True)
 
+    @op.transactional
     def upsert(self, job: NormalizedJob) -> UpsertResult:
         job.validate()
         source = job.source.strip().lower()
         fingerprint = vacancy_fingerprint(job.company, job.title, job.location)
+        store = op.get_store(self.root)
+        if store is not None:
+            stored_exact = store.resolve_source(source, job.source_job_id)
+            if stored_exact is not None:
+                exact_entry = {"meta": stored_exact["meta"], "path": self.jobs_dir / stored_exact["directory"]}
+                return self._update_existing(exact_entry, job, fingerprint, is_merge=False)
         entries = self._scan()
         exact = (
             self._find_source_indexed(source, job.source_job_id)
@@ -141,6 +150,7 @@ class Registry:
         """Apply supported one-time metadata migrations without changing vacancy status."""
         self._scan()
 
+    @op.transactional
     def update_status(
         self,
         selector: str,
@@ -154,9 +164,14 @@ class Registry:
                 f"invalid vacancy status {status!r}; expected one of: "
                 + ", ".join(VACANCY_STATUSES)
             )
+        store = op.get_store(self.root)
+        entries = self._scan() if store is None else [
+            {"meta": doc["meta"], "path": self.jobs_dir / doc["directory"]}
+            for doc in store.list_vacancies(scope="jobs", include_archived=True)
+        ]
         matches = [
             entry
-            for entry in self._scan()
+            for entry in entries
             if entry["path"].name == selector or str(entry["meta"].get("id")) == selector
         ]
         if not matches:
@@ -201,11 +216,15 @@ class Registry:
         if self._cache_entries and self._entries_cache is not None:
             return self._entries_cache
         entries: list[dict[str, Any]] = []
-        if not self.jobs_dir.exists():
+        store = op.get_store(self.root)
+        if store is None and not self.jobs_dir.exists():
             return entries
-        for meta_path in sorted(self.jobs_dir.glob("*/meta.yaml")):
+        stored = {self.jobs_dir / doc["directory"] / "meta.yaml": doc["meta"]
+                  for doc in store.list_vacancies(scope="jobs")} if store is not None else None
+        paths = sorted(stored) if stored is not None else sorted(op.metadata_paths(self.jobs_dir))
+        for meta_path in paths:
             try:
-                loaded = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+                loaded = stored[meta_path] if stored is not None else yaml.safe_load(op.read_text(meta_path))
             except (OSError, yaml.YAMLError) as exc:
                 raise RegistryError(f"cannot read registry metadata {meta_path}: {exc}") from exc
             if not isinstance(loaded, dict):
@@ -276,7 +295,7 @@ class Registry:
         self._index_entry(entry)
 
     def _cache_replace_entry(self, entry: dict[str, Any], meta: dict[str, Any]) -> None:
-        if not self._cache_entries:
+        if not self._cache_entries or self._entries_cache is None:
             entry["meta"] = meta
             return
         assert self._source_index is not None
@@ -345,7 +364,8 @@ class Registry:
             raise RegistryError(f"temporary registry path already exists: {temp_dir}")
         try:
             temp_dir.mkdir(parents=False)
-            (temp_dir / "meta.yaml").write_text(_dump_yaml(meta), encoding="utf-8", newline="\n")
+            if op.get_store(self.root) is None:
+                (temp_dir / "meta.yaml").write_text(_dump_yaml(meta), encoding="utf-8", newline="\n")
             (temp_dir / "job.md").write_text(
                 _render_job_markdown(meta["title"], job.description, meta["published_at"]),
                 encoding="utf-8",
@@ -358,6 +378,8 @@ class Registry:
                     newline="\n",
                 )
             os.replace(temp_dir, final_dir)
+            op.create_vacancy(final_dir, meta, (final_dir / "job.md").read_text(encoding="utf-8"),
+                              (final_dir / "company.md").read_text(encoding="utf-8") if (final_dir / "company.md").is_file() else None)
         except Exception:
             if temp_dir.exists():
                 shutil.rmtree(temp_dir)
@@ -454,13 +476,13 @@ class Registry:
             selected_job_body,
             _clean_optional(meta.get("published_at")),
         )
-        old_job_markdown = job_path.read_text(encoding="utf-8") if job_path.exists() else ""
+        old_job_markdown = op.read_text(job_path) if op.exists(job_path) else ""
         new_company_markdown = (
             _render_markdown(str(meta["company"]), selected_company_body)
             if selected_company_body
             else None
         )
-        old_company_markdown = company_path.read_text(encoding="utf-8") if company_path.exists() else None
+        old_company_markdown = op.read_text(company_path) if op.exists(company_path) else None
 
         comparable_meta = dict(meta)
         comparable_meta["updated_at"] = original.get("updated_at")
@@ -585,9 +607,9 @@ def _render_job_markdown(heading: str, body: str, published_at: str | None) -> s
 
 
 def _read_markdown_body(path: Path) -> str:
-    if not path.exists():
+    if not op.exists(path):
         return ""
-    text = path.read_text(encoding="utf-8")
+    text = op.read_text(path)
     lines = text.splitlines()
     if lines and lines[0].startswith("# "):
         lines = lines[1:]
@@ -599,7 +621,10 @@ def _read_markdown_body(path: Path) -> str:
 
 
 def _write_atomic_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+    handled = op.write_operational(path, content)
+    if handled is not None:
+        return handled
+    if path.exists() and op.read_text(path) == content:
         return False
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
@@ -621,10 +646,10 @@ def _markdown_url(value: str) -> str:
 
 
 def _read_match_summary(path: Path) -> dict[str, Any] | None:
-    if not path.exists():
+    if not op.exists(path):
         return None
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError) as exc:
         raise RegistryError(f"cannot read match analysis {path}: {exc}") from exc
     if not isinstance(loaded, dict):

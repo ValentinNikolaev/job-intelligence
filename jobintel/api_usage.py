@@ -8,6 +8,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 from .models import CollectorSummary
 
 
@@ -18,6 +20,7 @@ class ApiUsageLog:
     def __init__(self, path: Path) -> None:
         self.path = path
 
+    @op.transactional
     def record(self, summary: CollectorSummary, *, run_started_at: str | None = None) -> None:
         if summary.api_requests <= 0:
             return
@@ -57,10 +60,10 @@ class ApiUsageLog:
         _write_atomic(self.path, _dump(data))
 
     def _load(self) -> dict[str, Any]:
-        if not self.path.exists():
+        if not op.exists(self.path):
             return {"schema_version": SCHEMA_VERSION, "sources": {}}
         try:
-            loaded = yaml.safe_load(self.path.read_text(encoding="utf-8"))
+            loaded = yaml.safe_load(op.read_text(self.path))
         except (OSError, yaml.YAMLError) as exc:
             raise ValueError(f"cannot read API usage log {self.path}: {exc}") from exc
         if loaded is None:
@@ -85,6 +88,9 @@ def _dump(value: dict[str, Any]) -> str:
 
 
 def _write_atomic(path: Path, content: str) -> None:
+    handled = op.write_operational(path, content)
+    if handled is not None:
+        return None
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
     try:

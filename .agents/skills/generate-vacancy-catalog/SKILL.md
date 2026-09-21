@@ -10,7 +10,7 @@ Run the generator only as a separate operating-system process. A normal `python 
 ## Generate
 
 1. Read `AGENTS.md` and preserve all user changes.
-2. Treat `registry/jobs/*/meta.yaml` as canonical. The repository uses `meta.yaml`; never create a parallel `metadata.yaml`.
+2. Read `config/data-services.yaml` for the active source. The generator reads canonical metadata through the storage adapter: MongoDB after cutover, legacy `meta.yaml` during migration. Never create a parallel `metadata.yaml` or consult frozen YAML after MongoDB cutover.
 3. Run `python run.py catalog`. This deterministic command scans all vacancies, validates status history, sorts newest first, computes status totals, selects single-file or monthly output, and writes relative links to available artifacts.
 4. Inspect `catalog/index.md` and any generated monthly files. Confirm totals, newest-first ordering, relative links, and missing-artifact markers.
 5. Confirm the run changed no files outside `catalog/`. Report an error rather than repairing or modifying vacancy metadata.

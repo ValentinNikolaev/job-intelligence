@@ -22,7 +22,10 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     env:
+      MONGODB_URI: ${{ secrets.MONGODB_URI }}
+      JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME || 'job_intelligence' }}
       ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
       ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
       CLEANJOBDATA_API_KEY: ${{ secrets.CLEANJOBDATA_API_KEY }}
@@ -45,6 +48,25 @@ jobs:
 
       - name: Install project
         run: python -m pip install -e .
+
+      - name: Select configured storage
+        id: storage_backend
+        shell: bash
+        run: python -c "import yaml; print('name=' + yaml.safe_load(open('config/data-services.yaml'))['storage']['backend'])" >> "$GITHUB_OUTPUT"
+
+      - name: Grant temporary Atlas runner access
+        if: steps.storage_backend.outputs.name == 'mongodb'
+        id: atlas_access
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network grant
+
+      - name: Verify shared storage before writing
+        env:
+          JOBINTEL_MONGODB_NETWORK_READY: 'true'
+        run: bash .github/scripts/verify-shared-storage.sh
 
       - name: Collect vacancies
         id: collect
@@ -97,7 +119,7 @@ jobs:
         id: unit_tests
         continue-on-error: true
         shell: bash
-        run: bash .github/scripts/run-and-report.sh "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID python -m unittest discover -v
+        run: bash .github/scripts/run-and-report.sh "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID -u MONGODB_URI -u ATLAS_CLIENT_ID -u ATLAS_CLIENT_SECRET python -m unittest discover -v
 
       - name: Run repository doctor
         id: doctor
@@ -257,3 +279,11 @@ jobs:
           echo "changed=false" >> "$GITHUB_OUTPUT"
           echo "retry_queued=true" >> "$GITHUB_OUTPUT"
           echo "origin/${branch} advanced from ${local_base} to ${remote_head}; queued one clean collection run from the latest branch head." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Revoke temporary Atlas runner access
+        if: always() && steps.storage_backend.outputs.name == 'mongodb'
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network revoke

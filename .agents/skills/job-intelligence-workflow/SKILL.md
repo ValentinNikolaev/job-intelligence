@@ -7,6 +7,15 @@ description: Run the repository's vacancy collection, match analysis, vacancy-st
 
 Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code. Use the model already selected for the active Codex task and never claim to have switched models from inside the task.
 
+Read `config/data-services.yaml` before operational work and run `python run.py storage
+doctor`. When MongoDB is selected, old registry YAML and description Markdown are frozen
+migration evidence, not current inputs. For each explicitly selected manual analysis or
+preparation vacancy, obtain current content with `python run.py storage vacancy-context
+--selector <vacancy-id-or-directory> --output .codex-work/vacancy-context.json` and read
+that export. Scheduled analysis continues to use its deterministic sealed input pack.
+Read candidate evidence and application artifacts from their existing file paths.
+If storage is unavailable, stop the affected operation; never switch to old files.
+
 ## Choose one mode
 
 Before choosing a mode, read `prompts/job-intelligence-workflow.md`. It is the shared

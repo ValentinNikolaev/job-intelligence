@@ -10,6 +10,8 @@ def _missing_runtime_dependencies() -> list[str]:
     missing: list[str] = []
     if importlib.util.find_spec("yaml") is None:
         missing.append("PyYAML")
+    if importlib.util.find_spec("pymongo") is None:
+        missing.append("pymongo")
     return missing
 
 

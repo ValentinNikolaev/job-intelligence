@@ -9,12 +9,16 @@ permissions:
   contents: write
 
 concurrency:
-  group: job-intelligence-archive-low-score
+  group: job-intelligence-registry-mutation
   cancel-in-progress: false
 
 jobs:
   archive:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      MONGODB_URI: ${{ secrets.MONGODB_URI }}
+      JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME || 'job_intelligence' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,6 +27,25 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install --upgrade pip && python -m pip install -e .
+      - name: Select configured storage
+        id: storage_backend
+        shell: bash
+        run: python -c "import yaml; print('name=' + yaml.safe_load(open('config/data-services.yaml'))['storage']['backend'])" >> "$GITHUB_OUTPUT"
+
+      - name: Grant temporary Atlas runner access
+        if: steps.storage_backend.outputs.name == 'mongodb'
+        id: atlas_access
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network grant
+
+      - name: Verify shared storage before writing
+        env:
+          JOBINTEL_MONGODB_NETWORK_READY: 'true'
+        run: bash .github/scripts/verify-shared-storage.sh
+
       - name: Archive low-score vacancies
         run: python scripts/archive_jobs.py low-score
       - name: Commit archive
@@ -45,3 +68,11 @@ jobs:
             -m "Changed files: ${changed_files} total; removed active files: ${removed_active_files}." \
             -m "Run: ${run_url}"
           git push origin "HEAD:${GITHUB_REF_NAME:-main}"
+
+      - name: Revoke temporary Atlas runner access
+        if: always() && steps.storage_backend.outputs.name == 'mongodb'
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network revoke

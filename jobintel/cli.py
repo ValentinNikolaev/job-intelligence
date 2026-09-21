@@ -12,6 +12,8 @@ from typing import Any, Iterable, Sequence
 
 import yaml
 
+from . import storage_bridge as op
+
 from .api_usage import ApiUsageLog
 from .catalog import generate_catalog
 from .manual_status_log import ManualStatusEvent, append_manual_status_event
@@ -134,10 +136,18 @@ def _parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     _configure_stdio()
+    command_args = list(sys.argv[1:] if argv is None else argv)
+    if command_args and command_args[0] == "sheets":
+        from .sheets_sync import cli_main
+        return cli_main(command_args[1:])
+    if command_args and command_args[0] == "storage":
+        from .storage_cli import cli_main
+        return cli_main(command_args[1:])
     args = _parser().parse_args(argv)
     project_root = Path(__file__).resolve().parents[1]
     sources_dir = (args.sources or project_root / "sources").resolve()
     registry_dir = (args.registry or project_root / "registry").resolve()
+    lock_root = op.project_root(registry_dir) or registry_dir.parent
     env_path = (args.env or sources_dir / ".env").resolve()
 
     target = args.target.casefold()
@@ -148,7 +158,7 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 2
     if target == "workflow-lock":
-        return _run_workflow_lock(args, project_root)
+        return _run_workflow_lock(args, lock_root)
     if args.ci and target != "doctor":
         print("--ci is only valid with doctor", file=sys.stderr)
         return 2
@@ -172,7 +182,7 @@ def main(argv: list[str] | None = None) -> int:
         try:
             payload = _read_yaml_file(args.input, "manual job draft")
             job = _manual_job_from_payload(payload)
-            with workflow_lock(project_root, "manual:add", timeout_seconds=args.lock_timeout_seconds):
+            with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "manual:add", timeout_seconds=args.lock_timeout_seconds):
                 registry = Registry(registry_dir, cache_entries=True)
                 result = registry.upsert(job)
                 registry.regenerate_index()
@@ -197,7 +207,7 @@ def main(argv: list[str] | None = None) -> int:
             )
             return 2
         try:
-            with workflow_lock(project_root, "status", timeout_seconds=args.lock_timeout_seconds):
+            with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "status", timeout_seconds=args.lock_timeout_seconds):
                 directories = resolve_job_directories(registry_dir, args.arguments[0])
                 if len(directories) != 1:
                     raise ValueError("status updates exactly one vacancy")
@@ -237,7 +247,7 @@ def main(argv: list[str] | None = None) -> int:
             print("Usage: python run.py triage [all|job-directory|vacancy-id]", file=sys.stderr)
             return 2
         try:
-            with workflow_lock(project_root, "triage", timeout_seconds=args.lock_timeout_seconds):
+            with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "triage", timeout_seconds=args.lock_timeout_seconds):
                 selector = args.arguments[0] if args.arguments else "all"
                 directories = resolve_job_directories(registry_dir, selector)
                 counts = {"high": 0, "medium": 0, "low": 0, "skip_model": 0}
@@ -299,7 +309,7 @@ def main(argv: list[str] | None = None) -> int:
             print("Usage: python run.py reindex", file=sys.stderr)
             return 2
         try:
-            with workflow_lock(project_root, "registry:reindex", timeout_seconds=args.lock_timeout_seconds):
+            with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "registry:reindex", timeout_seconds=args.lock_timeout_seconds):
                 changed = Registry(registry_dir).regenerate_index()
         except Exception as exc:
             print(f"Index error: {exc}", file=sys.stderr)
@@ -422,7 +432,7 @@ def main(argv: list[str] | None = None) -> int:
         return 2
 
     try:
-        with workflow_lock(project_root, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
             failed = False
             collected = _collect_selected_jobs(
                 selected,
@@ -601,9 +611,9 @@ def _top_limit(arguments: list[str]) -> int:
 def _top_vacancies(registry_dir: Path, *, limit: int = 5) -> list[dict[str, Any]]:
     inactive_statuses = {"rejected", "withdrawn", "closed"}
     rows: list[dict[str, Any]] = []
-    for meta_path in sorted((registry_dir / "jobs").glob("*/meta.yaml")):
+    for meta_path in sorted(op.metadata_paths(registry_dir / "jobs")):
         match_path = meta_path.parent / "match.yaml"
-        if not match_path.is_file():
+        if not op.exists(match_path):
             continue
         meta = _read_yaml_file(meta_path, "vacancy metadata")
         if str(meta.get("status", "")).strip().casefold() in inactive_statuses:
@@ -651,7 +661,7 @@ def _top_vacancies(registry_dir: Path, *, limit: int = 5) -> list[dict[str, Any]
 
 def _read_yaml_file(path: Path, label: str) -> dict[str, Any]:
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError) as exc:
         raise ValueError(f"cannot read {label} {path}: {exc}") from exc
     if not isinstance(loaded, dict):
@@ -808,7 +818,7 @@ def _run_analysis(
     registry_dir: Path,
 ) -> int:
     try:
-        with workflow_lock(project_root, "analysis:single", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "analysis:single", timeout_seconds=args.lock_timeout_seconds):
             return _run_analysis_locked(args, config, project_root, registry_dir)
     except WorkflowLockError as exc:
         print(f"Analysis failed: {exc}", file=sys.stderr)
@@ -884,7 +894,7 @@ def _run_analysis_batch(
         print("Usage: python run.py analyze-batch --input <batch.yaml> --workflow analyze", file=sys.stderr)
         return 2
     try:
-        with workflow_lock(project_root, "analysis:batch-publish", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "analysis:batch-publish", timeout_seconds=args.lock_timeout_seconds):
             policy, model_label = _selected_workflow(
                 args.workflow, project_root, {"analyze"}, args.model_profile
             )
@@ -937,7 +947,7 @@ def _run_usage(args: argparse.Namespace, project_root: Path, registry_dir: Path)
         print("usage record requires --workflow and --model", file=sys.stderr)
         return 2
     try:
-        with workflow_lock(project_root, "usage:record", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "usage:record", timeout_seconds=args.lock_timeout_seconds):
             run = CodexUsageLog(registry_dir / "codex-usage.yaml").record(
                 workflow=args.workflow,
                 model=args.model,
@@ -1005,8 +1015,8 @@ def _run_workflow_lock(args: argparse.Namespace, project_root: Path) -> int:
         print("Usage: python run.py workflow-lock release", file=sys.stderr)
         return 2
     token = os.environ.get(LOCK_ENV_TOKEN, "").strip()
-    if args.lock_token_file and args.lock_token_file.is_file():
-        token = args.lock_token_file.read_text(encoding="utf-8").strip()
+    if args.lock_token_file and op.exists(args.lock_token_file):
+        token = op.read_text(args.lock_token_file).strip()
     if not token:
         print(
             f"Workflow lock error: missing lock token; set {LOCK_ENV_TOKEN} or pass --lock-token-file",
@@ -1039,14 +1049,14 @@ def _profile_paths(
     candidate_dir = registry_dir / "candidate"
     clarification = candidate_dir / "user-confirmed-career-clarifications.md"
     compact = candidate_dir / "match-profile.md"
-    if compact.is_file():
+    if op.exists(compact):
         paths = [compact.resolve()]
     else:
         paths = [
             (candidate_dir / "linkedin-profile.md").resolve(),
             (candidate_dir / "backend-engineer-cv.md").resolve(),
         ]
-    if clarification.is_file():
+    if op.exists(clarification):
         paths.append(clarification.resolve())
     return paths
 
@@ -1058,7 +1068,7 @@ def _run_preparation(
     registry_dir: Path,
 ) -> int:
     try:
-        with workflow_lock(project_root, "preparation:batch", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "preparation:batch", timeout_seconds=args.lock_timeout_seconds):
             return _run_preparation_locked(args, config, project_root, registry_dir)
     except WorkflowLockError as exc:
         print(f"Preparation failed: {exc}", file=sys.stderr)
@@ -1224,7 +1234,7 @@ def _run_pending(
     registry_dir: Path,
 ) -> int:
     try:
-        with workflow_lock(project_root, "pending", timeout_seconds=args.lock_timeout_seconds):
+        with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "pending", timeout_seconds=args.lock_timeout_seconds):
             return _run_pending_locked(args, config, project_root, registry_dir)
     except WorkflowLockError as exc:
         print(f"Pending check failed: {exc}", file=sys.stderr)
@@ -1372,7 +1382,7 @@ def _selected_workflow(
 
 def _optional_match_score(directory: Path) -> int | None:
     path = directory / "match.yaml"
-    if not path.is_file():
+    if not op.exists(path):
         return None
     return _match_score(directory)
 
@@ -1408,7 +1418,7 @@ def _analysis_is_current(
 def _match_score(directory: Path) -> int:
     path = directory / "match.yaml"
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except OSError as exc:
         raise ValueError(f"match analysis is required before preparation: {path}") from exc
     except yaml.YAMLError as exc:
@@ -1520,11 +1530,11 @@ def _run_doctor(
 
 
 def _require_file(path: Path) -> None:
-    if not path.is_file():
+    if not op.exists(path):
         raise FileNotFoundError(path)
 
 
 def _require_nonempty(path: Path) -> None:
     _require_file(path)
-    if not path.read_text(encoding="utf-8").strip():
+    if not op.read_text(path).strip():
         raise ValueError("file is empty")

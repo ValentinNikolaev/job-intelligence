@@ -1,5 +1,12 @@
 # Job Intelligence workflow contract
 
+Read `config/data-services.yaml` and run `python run.py storage doctor` before
+operational work. MongoDB is the sole source after cutover; frozen registry YAML and
+description files must not be used as live evidence. Use the sealed pack for scheduled
+analysis, and `python run.py storage vacancy-context --selector <selected-id-or-directory>
+--output .codex-work/vacancy-context.json` for an explicitly selected manual analysis or
+preparation vacancy. Candidate evidence and generated application documents stay files.
+
 This file is the shared execution contract for both interactive Codex tasks and
 Scheduled Tasks. A launcher may provide a vacancy URL, pasted vacancy text, an
 explicit registry directory, or a sealed analysis batch. The launcher is not the

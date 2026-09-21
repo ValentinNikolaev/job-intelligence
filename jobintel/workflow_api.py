@@ -7,6 +7,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 from .applications import ApplicationGenerator, CodexApplicationDraftClient, HostMarkdownDocxConverter
 from .catalog_data import CatalogVacancy, load_catalog_vacancies
 from .matching import (
@@ -106,7 +108,7 @@ def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[st
 
 def source_usage(registry_root: Path) -> dict[str, Any]:
     path = registry_root / "source-api-usage.yaml"
-    if not path.is_file():
+    if not op.exists(path):
         return {"sources": []}
     loaded = _read_yaml_mapping(path, "source API usage")
     rows = []
@@ -136,7 +138,7 @@ def source_usage(registry_root: Path) -> dict[str, Any]:
 
 def codex_usage(registry_root: Path) -> dict[str, Any]:
     path = registry_root / "codex-usage.yaml"
-    if not path.is_file():
+    if not op.exists(path):
         return {"runs": []}
     loaded = _read_yaml_mapping(path, "Codex usage")
     runs = loaded.get("runs")
@@ -325,21 +327,21 @@ def _analysis_is_current(
 
 def _rejected_count(registry_root: Path) -> int:
     rejected = registry_root / "rejected"
-    if not rejected.is_dir():
+    if op.get_store(registry_root) is None and not rejected.is_dir():
         return 0
-    return sum(1 for path in rejected.glob("*/meta.yaml") if path.is_file())
+    return sum(1 for path in op.metadata_paths(rejected) if op.exists(path))
 
 
 def _file_bytes(path: Path) -> int:
     try:
-        return path.stat().st_size if path.is_file() else 0
+        return len(op.read_text(path).encode("utf-8")) if op.exists(path) else 0
     except OSError:
         return 0
 
 
 def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError) as exc:
         raise WorkflowApiError(f"cannot read {label} {path}: {exc}") from exc
     if loaded is None:

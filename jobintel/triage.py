@@ -7,6 +7,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 
 TRIAGE_VERSION = "deterministic-triage-v1"
 _HIGH_CONFIDENCE_RULES: tuple[tuple[str, str], ...] = (
@@ -22,7 +24,7 @@ _HIGH_CONFIDENCE_RULES: tuple[tuple[str, str], ...] = (
 
 def triage_directory(directory: Path) -> dict[str, Any]:
     meta = _read_mapping(directory / "meta.yaml")
-    job_text = (directory / "job.md").read_text(encoding="utf-8") if (directory / "job.md").is_file() else ""
+    job_text = op.read_text(directory / "job.md") if op.exists(directory / "job.md") else ""
     title = str(meta.get("title", ""))
     haystack = f"{title}\n{job_text[:12000]}".casefold()
     matched = [(reason, pattern) for reason, pattern in _HIGH_CONFIDENCE_RULES if re.search(pattern, haystack)]
@@ -46,9 +48,9 @@ def triage_directory(directory: Path) -> dict[str, Any]:
 def write_triage(directory: Path) -> dict[str, Any]:
     result = triage_directory(directory)
     path = directory / "triage.yaml"
-    if path.is_file():
+    if op.exists(path):
         try:
-            existing = yaml.safe_load(path.read_text(encoding="utf-8"))
+            existing = yaml.safe_load(op.read_text(path))
         except (OSError, yaml.YAMLError):
             existing = None
         if isinstance(existing, dict) and all(
@@ -58,24 +60,26 @@ def write_triage(directory: Path) -> dict[str, Any]:
         ):
             result["triaged_at"] = existing.get("triaged_at", result["triaged_at"])
     content = yaml.safe_dump(result, allow_unicode=True, sort_keys=False)
-    if not path.is_file() or path.read_text(encoding="utf-8") != content:
+    if op.write_operational(path, content) is not None:
+        return result
+    if not op.exists(path) or op.read_text(path) != content:
         path.write_text(content, encoding="utf-8", newline="\n")
     return result
 
 
 def should_skip_model(directory: Path) -> bool:
     path = directory / "triage.yaml"
-    if not path.is_file():
+    if not op.exists(path):
         return False
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError):
         return False
     return isinstance(loaded, dict) and loaded.get("skip_model") is True and loaded.get("confidence") == "high"
 
 
 def _read_mapping(path: Path) -> dict[str, Any]:
-    loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+    loaded = yaml.safe_load(op.read_text(path))
     if not isinstance(loaded, dict):
         raise ValueError(f"expected YAML mapping: {path}")
     return loaded

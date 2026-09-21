@@ -16,6 +16,8 @@ from typing import Any, Protocol
 
 import yaml
 
+from . import storage_bridge as op
+
 
 APPLICATION_FILES = {
     "cv_markdown": "cv.md",
@@ -252,7 +254,7 @@ class CodexApplicationDraftClient:
             filename = APPLICATION_FILES[field]
             path = self.directory / filename
             try:
-                result[field] = path.read_text(encoding="utf-8")
+                result[field] = op.read_text(path)
             except OSError as exc:
                 raise ApplicationError(f"cannot read Codex application draft {path}: {exc}") from exc
         return result
@@ -303,9 +305,9 @@ class HostMarkdownDocxConverter:
         self.powershell = powershell or shutil.which("pwsh") or shutil.which("powershell") or ""
 
     def convert(self, source: Path, target: Path) -> None:
-        if not self.script_path.is_file():
+        if not op.exists(self.script_path):
             raise ApplicationError(f"Markdown-to-DOCX converter not found: {self.script_path}")
-        if not self.options_path.is_file():
+        if not op.exists(self.options_path):
             raise ApplicationError(f"DOCX options file not found: {self.options_path}")
         if not self.powershell:
             raise ApplicationError("PowerShell is required by the Markdown-to-DOCX converter")
@@ -335,7 +337,7 @@ class HostMarkdownDocxConverter:
         if completed.returncode:
             detail = (completed.stderr or completed.stdout).strip()
             raise ApplicationError(f"Markdown-to-DOCX conversion failed: {detail[:1000]}")
-        if not target.is_file() or target.stat().st_size == 0:
+        if not op.exists(target) or target.stat().st_size == 0:
             raise ApplicationError(f"Markdown-to-DOCX converter did not create {target}")
 
 
@@ -360,6 +362,7 @@ class ApplicationGenerator:
         self.document = _normalize_document(document)
         self._clock = clock or (lambda: datetime.now(timezone.utc))
 
+    @op.exclusive
     def generate_directory(self, directory: Path, *, force: bool = False) -> PreparationResult:
         directory = directory.resolve()
         meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
@@ -456,14 +459,20 @@ class ApplicationGenerator:
                 staging / "manifest.yaml",
                 yaml.safe_dump(manifest, allow_unicode=True, sort_keys=False),
             )
+            def record_published(target: Path) -> None:
+                with op.mutation(directory, "publish-application-manifest"):
+                    if target.name != application_dir.name:
+                        _record_application_directory(directory / "meta.yaml", meta, target.name)
+                    op.record_package(directory, target)
+
             try:
-                _publish_staged_package(staging, application_dir, published_files)
+                _publish_staged_package(staging, application_dir, published_files, on_published=record_published)
             except PermissionError:
                 if application_dir.name != _DEFAULT_APPLICATION_DIRECTORY:
                     raise
-                application_dir = directory / _FALLBACK_APPLICATION_DIRECTORY
-                _publish_staged_package(staging, application_dir, published_files)
-                _record_application_directory(directory / "meta.yaml", meta, application_dir.name)
+                fallback = directory / _FALLBACK_APPLICATION_DIRECTORY
+                _publish_staged_package(staging, fallback, published_files, on_published=record_published)
+                application_dir = fallback
         finally:
             shutil.rmtree(staging, ignore_errors=True)
 
@@ -500,9 +509,9 @@ class ApplicationGenerator:
             raise ApplicationError("at least one candidate source-of-truth path is required")
         sections = []
         for path in self.profile_paths:
-            if not path.is_file():
+            if not op.exists(path):
                 raise ApplicationError(f"candidate source-of-truth file not found: {path}")
-            content = path.read_text(encoding="utf-8").strip()
+            content = op.read_text(path).strip()
             if not content:
                 raise ApplicationError(f"candidate source-of-truth file is empty: {path}")
             sections.append(f"## Source: {path.name}\n\n{content}")
@@ -510,9 +519,9 @@ class ApplicationGenerator:
         return combined, _content_version(combined)
 
     def _load_prompt(self) -> tuple[str, str]:
-        if not self.prompt_path.is_file():
+        if not op.exists(self.prompt_path):
             raise ApplicationError(f"application prompt not found: {self.prompt_path}")
-        prompt = self.prompt_path.read_text(encoding="utf-8").strip()
+        prompt = op.read_text(self.prompt_path).strip()
         if not prompt:
             raise ApplicationError(f"application prompt is empty: {self.prompt_path}")
         return prompt, _content_version(prompt)
@@ -521,14 +530,14 @@ class ApplicationGenerator:
 def resolve_job_directories(registry_root: Path, selector: str) -> list[Path]:
     jobs_dir = registry_root.resolve() / "jobs"
     if selector.casefold() == "all":
-        return sorted(path.parent for path in jobs_dir.glob("*/meta.yaml"))
+        return sorted(path.parent for path in op.metadata_paths(jobs_dir))
 
     direct = jobs_dir / selector
-    if direct.is_dir() and (direct / "meta.yaml").is_file():
+    if op.exists(direct / "meta.yaml"):
         return [direct.resolve()]
 
     matches = []
-    for meta_path in jobs_dir.glob("*/meta.yaml"):
+    for meta_path in op.metadata_paths(jobs_dir):
         meta = _read_yaml_mapping(meta_path, "vacancy metadata")
         if str(meta.get("id", "")) == selector:
             matches.append(meta_path.parent.resolve())
@@ -786,7 +795,7 @@ def _validate_draft_quality(
     for filename in required_handoffs:
         path = draft_directory / "parts" / filename
         try:
-            content = path.read_text(encoding="utf-8").strip()
+            content = op.read_text(path).strip()
         except OSError as exc:
             raise ApplicationError(f"cannot read required application handoff {path}: {exc}") from exc
         minimum, markers = _HANDOFF_REQUIREMENTS[filename]
@@ -813,7 +822,7 @@ def _validate_draft_quality(
     report.update(
         {
             "declaration_sha256": _content_version(
-                quality_path.read_text(encoding="utf-8")
+                op.read_text(quality_path)
             ),
             "method": method,
             "handoffs": handoff_report,
@@ -1029,13 +1038,13 @@ def _load_vacancy(
     directory: Path, meta: Mapping[str, Any]
 ) -> tuple[dict[str, Any], str, str]:
     job_path = directory / "job.md"
-    if not job_path.is_file():
+    if not op.exists(job_path):
         raise ApplicationError(f"vacancy job description is missing: {job_path}")
-    job_text = job_path.read_text(encoding="utf-8").strip()
+    job_text = op.read_text(job_path).strip()
     if not job_text:
         raise ApplicationError(f"vacancy job description is empty: {job_path}")
     company_path = directory / "company.md"
-    company_text = company_path.read_text(encoding="utf-8").strip() if company_path.is_file() else ""
+    company_text = op.read_text(company_path).strip() if op.exists(company_path) else ""
     vacancy = {
         "metadata": dict(meta),
         "job_description": job_text,
@@ -1079,7 +1088,7 @@ def _package_is_current(
     *,
     document: str | None = None,
 ) -> bool:
-    if not manifest_path.is_file():
+    if not op.exists(manifest_path):
         return False
     try:
         manifest = _read_yaml_mapping(manifest_path, "application manifest")
@@ -1123,7 +1132,7 @@ def _required_document_files(
 
 
 def _read_existing_manifest(path: Path) -> dict[str, Any]:
-    if not path.is_file():
+    if not op.exists(path):
         return {}
     try:
         return _read_yaml_mapping(path, "application manifest")
@@ -1173,7 +1182,7 @@ def _copy_existing_application_files(source: Path, staging: Path) -> None:
         return
     allowed = set(APPLICATION_FILES.values()) | {"cv.docx", "cover-letter.docx"}
     for path in source.iterdir():
-        if not path.is_file():
+        if not op.exists(path):
             continue
         if path.name in allowed or (
             path.name.startswith("CV_") and path.suffix.casefold() in {".md", ".docx"}
@@ -1189,7 +1198,7 @@ def _remove_selected_outputs(staging: Path, document: str) -> None:
         filenames.update(
             path.name
             for path in staging.iterdir()
-            if path.is_file()
+            if op.exists(path)
             and path.name.startswith("CV_")
             and path.suffix.casefold() in {".md", ".docx"}
         )
@@ -1197,12 +1206,12 @@ def _remove_selected_outputs(staging: Path, document: str) -> None:
         filenames.add("cover-letter.docx")
     for filename in filenames:
         path = staging / filename
-        if path.is_file():
+        if op.exists(path):
             path.unlink()
 
 
 def _staged_application_files(staging: Path) -> list[str]:
-    return sorted(path.name for path in staging.iterdir() if path.is_file())
+    return sorted(path.name for path in staging.iterdir() if op.exists(path))
 
 
 def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:
@@ -1258,7 +1267,8 @@ def _is_role_noise_segment(value: str) -> bool:
     return True
 
 
-def _publish_staged_package(staging: Path, target: Path, files: Sequence[str]) -> None:
+def _publish_staged_package(staging: Path, target: Path, files: Sequence[str],
+                            *, on_published: Callable[[Path], None] | None = None) -> None:
     expected = [*files, "manifest.yaml"]
     missing = [filename for filename in expected if not (staging / filename).is_file()]
     if missing:
@@ -1271,7 +1281,11 @@ def _publish_staged_package(staging: Path, target: Path, files: Sequence[str]) -
         os.replace(target, backup)
     try:
         os.replace(staging, target)
+        if on_published is not None:
+            on_published(target)
     except Exception:
+        if target.exists() and not staging.exists():
+            os.replace(target, staging)
         if had_previous and backup.exists() and not target.exists():
             os.replace(backup, target)
         raise
@@ -1292,14 +1306,14 @@ def _find_docx_script() -> Path:
         Path.home() / ".codex" / "skills" / "md-to-docx" / "scripts" / "convert_with_md_to_docx.ps1"
     )
     for candidate in candidates:
-        if candidate.is_file():
+        if op.exists(candidate):
             return candidate
     return candidates[0]
 
 
 def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except OSError as exc:
         raise ApplicationError(f"cannot read {label} {path}: {exc}") from exc
     except yaml.YAMLError as exc:
@@ -1314,6 +1328,9 @@ def _content_version(content: str) -> str:
 
 
 def _write_text(path: Path, content: str) -> None:
+    handled = op.write_operational(path, content)
+    if handled is not None:
+        return None
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
     try:

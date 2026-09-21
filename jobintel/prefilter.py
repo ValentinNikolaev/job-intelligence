@@ -10,6 +10,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 from .models import NormalizedJob
 from .normalization import normalize_company, slug
 from .registry import _dump_yaml, _render_job_markdown, _utc_iso
@@ -105,7 +107,7 @@ def load_company_retry_rules(profile_path: Path) -> tuple[CompanyRetryRule, ...]
     if not profile_path.exists():
         return ()
     try:
-        loaded = yaml.safe_load(profile_path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(profile_path))
     except (OSError, yaml.YAMLError) as exc:
         raise ValueError(f"cannot read company retry policy {profile_path}: {exc}") from exc
     if not isinstance(loaded, dict):
@@ -168,6 +170,7 @@ class RejectedRegistry:
         self._entry_cache: dict[tuple[str, str], tuple[Path, dict[str, Any]]] | None = None
         self.root.mkdir(parents=True, exist_ok=True)
 
+    @op.transactional
     def upsert(self, job: NormalizedJob, rejection: Rejection) -> None:
         source = job.source.strip().lower()
         source_job_id = job.source_job_id.strip()
@@ -202,11 +205,16 @@ class RejectedRegistry:
             self._load_cache()[(source, source_job_id)] = (directory, meta)
 
     def _find(self, source: str, source_job_id: str) -> tuple[Path, dict[str, Any]] | None:
+        store = op.get_store(self.root)
+        if store is not None:
+            from .migration import prefilter_id
+            doc = store.get("prefilter_rejections", prefilter_id(source, source_job_id))
+            return (self.root / doc["directory"], doc["meta"]) if doc else None
         if self._cache_entries:
             return self._load_cache().get((source, source_job_id))
-        for meta_path in sorted(self.root.glob("*/meta.yaml")):
+        for meta_path in sorted(op.metadata_paths(self.root)):
             try:
-                loaded = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+                loaded = yaml.safe_load(op.read_text(meta_path))
             except (OSError, yaml.YAMLError):
                 continue
             if not isinstance(loaded, dict):
@@ -219,9 +227,9 @@ class RejectedRegistry:
         if self._entry_cache is not None:
             return self._entry_cache
         cache: dict[tuple[str, str], tuple[Path, dict[str, Any]]] = {}
-        for meta_path in sorted(self.root.glob("*/meta.yaml")):
+        for meta_path in sorted(op.metadata_paths(self.root)):
             try:
-                loaded = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+                loaded = yaml.safe_load(op.read_text(meta_path))
             except (OSError, yaml.YAMLError):
                 continue
             if not isinstance(loaded, dict):
@@ -450,7 +458,10 @@ def _render_rejected_markdown(job: NormalizedJob, rejection: Rejection) -> str:
 
 
 def _write_text_if_changed(path: Path, content: str) -> bool:
-    if path.exists() and path.read_text(encoding="utf-8") == content:
+    handled = op.write_operational(path, content)
+    if handled is not None:
+        return handled
+    if path.exists() and op.read_text(path) == content:
         return False
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
     try:

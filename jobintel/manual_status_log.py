@@ -9,6 +9,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 from .normalization import slug
 
 
@@ -74,10 +76,10 @@ def reason_key(reason: str) -> str:
 
 
 def _read_log(path: Path) -> dict[str, Any]:
-    if not path.is_file():
+    if not op.exists(path):
         return _with_summary([])
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError) as exc:
         raise ManualStatusLogError(f"cannot read manual status log {path}: {exc}") from exc
     if not isinstance(loaded, dict):
@@ -144,6 +146,9 @@ def _dump_yaml(value: dict[str, Any]) -> str:
 
 
 def _write_atomic(path: Path, content: str) -> None:
+    handled = op.write_operational(path, content)
+    if handled is not None:
+        return None
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
     try:

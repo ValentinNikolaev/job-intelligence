@@ -32,7 +32,7 @@ files, hashes, commands, or reviewable Markdown behind.
 - Collects vacancies from public job APIs and company career pages.
 - Normalizes each vacancy into a shared local format.
 - Deduplicates roles across sources without merging ambiguous records.
-- Stores every canonical vacancy as Markdown plus YAML metadata.
+- Stores operational vacancy data in the configured MongoDB backend, with Git-managed application artifacts and a temporary YAML migration mode.
 - Rejects obvious non-profile roles through deterministic filters.
 - Uses committed candidate records as the source of truth.
 - Runs Codex tasks for judgment-heavy match analysis and application writing.

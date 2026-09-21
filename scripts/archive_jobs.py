@@ -10,19 +10,20 @@ from pathlib import Path
 import yaml
 
 from jobintel.workflow_lock import workflow_lock
+from jobintel import storage_bridge as op
 
 
 ARCHIVABLE_JOB_STATUSES = frozenset({"found", "rejected", "withdrawn", "closed"})
 
 
 def read_yaml(path: Path) -> dict:
-    loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+    loaded = op.load_mapping(path)
     return loaded if isinstance(loaded, dict) else {}
 
 
 def eligible(directory: Path, category: str, low_score: int, max_age_days: int) -> bool:
     meta_path = directory / "meta.yaml"
-    if not meta_path.is_file():
+    if not op.exists(meta_path):
         return False
     meta = read_yaml(meta_path)
     if category == "rejected":
@@ -32,13 +33,13 @@ def eligible(directory: Path, category: str, low_score: int, max_age_days: int) 
         return False
     if category == "low-score":
         match_path = directory / "match.yaml"
-        if not match_path.is_file():
+        if not op.exists(match_path):
             return False
         score = read_yaml(match_path).get("score")
         return isinstance(score, int) and score < low_score
     if category == "skipped":
         triage_path = directory / "triage.yaml"
-        return triage_path.is_file() and read_yaml(triage_path).get("skip_model") is True
+        return op.exists(triage_path) and read_yaml(triage_path).get("skip_model") is True
     discovered = parse_datetime(meta.get("discovered_at"))
     if discovered is None:
         return False
@@ -92,10 +93,10 @@ def candidates_for(
 ) -> tuple[Path, list[Path]]:
     if category == "rejected":
         rejected_root = project_root / "registry" / "rejected"
-        if not rejected_root.is_dir():
+        if op.get_store(project_root) is None and not rejected_root.is_dir():
             return rejected_root, []
         directories = sorted(
-            (path for path in rejected_root.iterdir() if path.is_dir() and eligible(path, category, low_score, max_age_days)),
+            (meta.parent for meta in op.metadata_paths(rejected_root) if eligible(meta.parent, category, low_score, max_age_days)),
             key=rejected_sort_key,
         )
         overflow = max(0, len(directories) - keep_items)
@@ -103,9 +104,9 @@ def candidates_for(
 
     jobs_root = project_root / "registry" / "jobs"
     return jobs_root, sorted(
-        path
-        for path in jobs_root.iterdir()
-        if path.is_dir() and eligible(path, category, low_score, max_age_days)
+        meta.parent
+        for meta in op.metadata_paths(jobs_root)
+        if eligible(meta.parent, category, low_score, max_age_days)
     )
 
 
@@ -117,6 +118,17 @@ def archive(
     min_items: int = 1,
     keep_items: int = 50,
 ) -> int:
+    store = op.get_store(project_root)
+    if store is not None:
+        with store.lease("logical-archive"):
+            _, candidates = candidates_for(project_root, category, low_score, max_age_days, keep_items)
+            print(f"{category}: eligible={len(candidates)} minimum={min_items}")
+            if len(candidates) < min_items:
+                return 0
+            for directory in candidates:
+                op.archive_vacancy(directory, None)
+            print(f"Archived {len(candidates)} records in MongoDB; original artifacts retained.")
+            return len(candidates)
     archive_root = project_root / "archives" / category
     archive_root.mkdir(parents=True, exist_ok=True)
     today = dt.date.today().isoformat()
@@ -135,7 +147,14 @@ def archive(
             for directory in candidates:
                 for path in sorted(directory.rglob("*")):
                     if path.is_file():
+                        if op.get_store(directory) is not None and path.parent == directory and path.name in op._FIELDS:
+                            continue
                         archive_file.write(path, path.relative_to(source_root).as_posix())
+                if op.get_store(directory) is not None:
+                    for name in op._FIELDS:
+                        path = directory / name
+                        if op.exists(path):
+                            archive_file.writestr(path.relative_to(source_root).as_posix(), op.read_text(path))
         with zipfile.ZipFile(temporary) as archive_file:
             names = set(archive_file.namelist())
         expected = {
@@ -144,12 +163,25 @@ def archive(
             for path in directory.rglob("*")
             if path.is_file()
         }
+        if op.get_store(project_root) is not None:
+            for directory in candidates:
+                for name in op._FIELDS:
+                    path = directory / name
+                    relative = path.relative_to(source_root).as_posix()
+                    if op.exists(path):
+                        expected.add(relative)
+                    else:
+                        expected.discard(relative)
         if names != expected:
             raise RuntimeError("archive validation failed: ZIP contents differ from source files")
         temporary.replace(destination)
         archive_published = True
         for directory in candidates:
-            shutil.rmtree(directory)
+            op.archive_vacancy(directory, destination.relative_to(project_root).as_posix())
+            if directory.exists():
+                resolved = directory.resolve()
+                resolved.relative_to(source_root.resolve())
+                shutil.rmtree(resolved)
     except Exception:
         temporary.unlink(missing_ok=True)
         # Once source cleanup starts, the validated archive is the only complete

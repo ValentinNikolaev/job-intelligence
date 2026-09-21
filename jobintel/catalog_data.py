@@ -8,6 +8,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 from .models import VACANCY_STATUSES
 
 
@@ -80,7 +82,7 @@ def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
     registry_root = registry_root.resolve()
     jobs_dir = registry_root / "jobs"
     rows = []
-    for meta_path in sorted(jobs_dir.glob("*/meta.yaml")):
+    for meta_path in sorted(op.metadata_paths(jobs_dir)):
         meta = _read_mapping(meta_path)
         directory = meta_path.parent
         _require_fields(
@@ -151,13 +153,13 @@ def _artifacts(directory: Path, meta: dict[str, Any]) -> ArtifactLinks:
 
 def _artifact(path: Path) -> str | None:
     try:
-        return str(path) if path.is_file() else None
+        return str(path) if op.exists(path) else None
     except OSError:
         return None
 
 
 def _read_match(path: Path) -> dict[str, Any] | None:
-    if not path.is_file():
+    if not op.exists(path):
         return None
     match = _read_mapping(path)
     score = match.get("score")
@@ -194,7 +196,7 @@ def _status_changed_at(meta: dict[str, Any], status: str, path: Path) -> str:
 
 def _read_mapping(path: Path) -> dict[str, Any]:
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError) as exc:
         raise CatalogDataError(f"cannot read YAML mapping {path}: {exc}") from exc
     if not isinstance(loaded, dict):

@@ -13,6 +13,8 @@ from typing import Any, Protocol
 
 import yaml
 
+from . import storage_bridge as op
+
 
 RECOMMENDATIONS = (
     "strong_match",
@@ -53,7 +55,7 @@ DEFAULT_MATCH_PROMPT_PATH = (
 
 
 def _prompt_version(path: Path = DEFAULT_MATCH_PROMPT_PATH) -> str:
-    prompt = path.read_text(encoding="utf-8").strip()
+    prompt = op.read_text(path).strip()
     payload = prompt + json.dumps(
         MATCH_OUTPUT_SCHEMA, sort_keys=True, separators=(",", ":")
     )
@@ -179,14 +181,14 @@ class MatchAnalyzer:
 
     def resolve(self, selector: str) -> list[Path]:
         if selector.casefold() == "all":
-            return sorted(path.parent for path in self.jobs_dir.glob("*/meta.yaml"))
+            return sorted(path.parent for path in op.metadata_paths(self.jobs_dir))
 
         direct = self.jobs_dir / selector
-        if direct.is_dir() and (direct / "meta.yaml").is_file():
+        if op.exists(direct / "meta.yaml"):
             return [direct]
 
         matches = []
-        for meta_path in self.jobs_dir.glob("*/meta.yaml"):
+        for meta_path in op.metadata_paths(self.jobs_dir):
             meta = _read_yaml_mapping(meta_path, "vacancy metadata")
             if str(meta.get("id", "")) == selector:
                 matches.append(meta_path.parent)
@@ -203,7 +205,7 @@ class MatchAnalyzer:
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
 
         match_path = directory / "match.yaml"
-        if not force and match_path.exists():
+        if not force and op.exists(match_path):
             existing = _read_yaml_mapping(match_path, "match analysis")
             if (
                 existing.get("profile_version") == profile_version
@@ -228,6 +230,7 @@ class MatchAnalyzer:
             expected_job_version=job_version,
         )
 
+    @op.transactional
     def publish_analysis(
         self,
         directory: Path,
@@ -246,7 +249,7 @@ class MatchAnalyzer:
         if expected_job_version and expected_job_version != job_version:
             raise MatchError(f"vacancy changed after the analysis pack was created: {directory}")
         match_path = directory / "match.yaml"
-        if not force and match_path.exists():
+        if not force and op.exists(match_path):
             existing = _read_yaml_mapping(match_path, "match analysis")
             if (
                 existing.get("profile_version") == profile_version
@@ -280,7 +283,7 @@ class MatchAnalyzer:
     def is_current(self, directory: Path) -> bool:
         _, profile_version, _, _, job_version = self._inputs(directory)
         match_path = directory / "match.yaml"
-        if not match_path.is_file():
+        if not op.exists(match_path):
             return False
         try:
             existing = _read_yaml_mapping(match_path, "match analysis")
@@ -299,9 +302,9 @@ class MatchAnalyzer:
         profile_text, profile_version = self._load_profile()
         meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
         job_path = directory / "job.md"
-        if not job_path.is_file():
+        if not op.exists(job_path):
             raise MatchError(f"vacancy job description is missing: {job_path}")
-        job_text = job_path.read_text(encoding="utf-8")
+        job_text = op.read_text(job_path)
         vacancy = _compact_vacancy(meta, job_text)
         job_version = _content_version(
             json.dumps(vacancy, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
@@ -313,9 +316,9 @@ class MatchAnalyzer:
             raise MatchError("at least one Candidate Profile path is required")
         sections = []
         for path in self.profile_paths:
-            if not path.is_file():
+            if not op.exists(path):
                 raise MatchError(f"Candidate Profile file not found: {path}")
-            content = path.read_text(encoding="utf-8").strip()
+            content = op.read_text(path).strip()
             if not content:
                 raise MatchError(f"Candidate Profile file is empty: {path}")
             sections.append(f"## Source: {path.name}\n\n{content}")
@@ -585,7 +588,7 @@ def analysis_should_skip_status(meta: Mapping[str, Any]) -> bool:
 
 def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:
     try:
-        loaded = yaml.safe_load(path.read_text(encoding="utf-8"))
+        loaded = yaml.safe_load(op.read_text(path))
     except OSError as exc:
         raise MatchError(f"cannot read {label} {path}: {exc}") from exc
     except yaml.YAMLError as exc:
@@ -632,6 +635,9 @@ def _utc_iso(value: datetime) -> str:
 
 
 def _write_atomic(path: Path, content: str) -> None:
+    handled = op.write_operational(path, content)
+    if handled is not None:
+        return None
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
     try:

@@ -52,7 +52,13 @@ def workflow_lock(
         stale_seconds=stale_seconds,
     )
     try:
-        yield lease
+        from .storage_bridge import get_store
+        store = get_store(project_root)
+        if store is None:
+            yield lease
+        else:
+            with store.lease(owner, timeout_seconds=timeout_seconds):
+                yield lease
     finally:
         lease.release()
 

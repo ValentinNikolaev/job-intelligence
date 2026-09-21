@@ -1,0 +1,21 @@
+schema_version: 1
+storage:
+  backend: mongodb
+  database_name: job_intelligence
+  schema_version: 1
+  cutover_verified: true
+google:
+  spreadsheet_id: 1E82sr4Lt-3yEB0Kb_Amso9NCMThcsF0Sy9x7ma5S848
+  parent_folder_id: 1eNgUTyIqGnDqsakQ3JqwWyQHBjsR_WbK
+  backup_folder_id: 1wsfd-IzS9viLGaU7y3dpQWrGryGyKPTP
+  premigration_spreadsheet_copy_id: 1NIbDwjHUGhK4aYr9g7-NVGvwQTbEIxM5cEamnAK_IsA
+operations:
+  model: gpt-5.6-terra
+  reasoning_effort: medium
+  timezone: Europe/Rome
+  sheets_times: ['09:00', '19:00']
+  backup_interval_calendar_days: 3
+  backup_time: '09:30'
+  first_verified_backup_at: '2026-09-21T23:14:10Z'
+  backup_schedule_anchor_date: '2026-09-22'
+  retention: keep_all

@@ -8,6 +8,8 @@ from typing import Any
 
 import yaml
 
+from . import storage_bridge as op
+
 
 class UsageError(RuntimeError):
     pass
@@ -19,6 +21,7 @@ class CodexUsageLog:
     def __init__(self, path: Path) -> None:
         self.path = path.resolve()
 
+    @op.transactional
     def record(
         self,
         *,
@@ -82,10 +85,10 @@ class CodexUsageLog:
         return run
 
     def _load(self) -> dict[str, Any]:
-        if not self.path.is_file():
+        if not op.exists(self.path):
             return {"schema_version": 1, "runs": []}
         try:
-            loaded = yaml.safe_load(self.path.read_text(encoding="utf-8"))
+            loaded = yaml.safe_load(op.read_text(self.path))
         except (OSError, yaml.YAMLError) as exc:
             raise UsageError(f"cannot read Codex usage log {self.path}: {exc}") from exc
         if not isinstance(loaded, dict) or not isinstance(loaded.get("runs"), list):
@@ -94,6 +97,8 @@ class CodexUsageLog:
         return loaded
 
     def _write(self, payload: dict[str, Any]) -> None:
+        if op.write_operational(self.path, yaml.safe_dump(payload, allow_unicode=True, sort_keys=False)) is not None:
+            return
         self.path.parent.mkdir(parents=True, exist_ok=True)
         temp = self.path.with_name(f".{self.path.name}.{uuid.uuid4().hex}.tmp")
         try:

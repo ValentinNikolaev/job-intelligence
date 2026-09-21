@@ -10,7 +10,7 @@ import run
 class RunShimTests(unittest.TestCase):
     def test_missing_runtime_dependencies_reports_pyyaml(self) -> None:
         with patch("run.importlib.util.find_spec", return_value=None):
-            self.assertEqual(["PyYAML"], run._missing_runtime_dependencies())
+            self.assertEqual(["PyYAML", "pymongo"], run._missing_runtime_dependencies())
 
     def test_install_runtime_dependencies_installs_editable_project(self) -> None:
         project_root = Path("project")
