@@ -1,0 +1,35 @@
+schema_version: 2
+id: 3a7f3891-cd46-4200-87c3-a693acb19a19
+title: Senior Backend Engineer (PHP, Symfony) — Fluix Team
+company: Readdle
+company_url: https://jobs.dou.ua/companies/readdle-inc/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '374074'
+  url: https://jobs.dou.ua/companies/readdle-inc/vacancies/374074/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 вересня
+    listing_summary: Readdle is a pioneering force in the personal productivity space
+      on Apple devices, having shaped the landscape since 2007. Our mission is to
+      empower individuals and teams with innovative technology, enhancing their efficiency
+      and creativity.
+published_at: '2026-09-21'
+discovered_at: '2026-09-21T17:03:10Z'
+updated_at: '2026-09-21T17:03:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-21T17:03:10Z'
+analysis_priority: 100
+fingerprint: sha256:3da3b022051609ad658b3c7ba44076e541144848dd45aff37977d0c643c53563
+data_source: dou
+content_source: dou
+company_content_source: dou

@@ -95,4 +95,4 @@ Our hiring process is deliberately lean: first introduction, technical discussio
 
 We look forward to your application.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

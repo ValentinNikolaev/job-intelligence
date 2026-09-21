@@ -69,4 +69,4 @@ Weitere Benefits finden Sie auf unserer Homepage.
 
 **Interessiert?**Wir freuen uns auf Ihre Bewerbung unter Angabe Ihrer Gehaltsvorstellung (bezogen auf Vollzeit) und Ihres möglichen Eintrittstermins. Bewerben Sie sich bis zum **31.10.2026.**
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

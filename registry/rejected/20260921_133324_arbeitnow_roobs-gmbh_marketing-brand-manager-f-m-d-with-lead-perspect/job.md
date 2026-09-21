@@ -189,4 +189,4 @@ Wenn du beim Lesen denkst: „Gebt mir das Ziel – ich finde heraus, wie wir hi
 
 Schick uns deinen CV, dein Portfolio oder Projekte, auf die du besonders stolz bist
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

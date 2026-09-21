@@ -71,4 +71,4 @@ Als **Werkstudent im Bereich Data Analytics bei 1KOMMA5°** unterstützt du die 
 
 - Profitiere von **Benefits & Rabatten** durch Futurebens
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -48,4 +48,4 @@ Teamspirit // Stay connected: What drives us is our sense of community. That's w
 
 Transparency // We want to be transparent, also when it comes to salary: If you have any questions about a possible salary range for this position, feel free to send us an email at ----- We will get back to you as soon as possible.
 
-Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
+Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow

@@ -59,4 +59,4 @@ Wir suchen dich für ein spannendes **Praktikum im Grafikdesign**, um unser Team
 
 **Wir freuen uns auf Dich!** 🤗
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

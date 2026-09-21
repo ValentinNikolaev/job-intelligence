@@ -59,4 +59,4 @@ Dann senden Sie uns bitte Ihre ausführlichen Bewerbungsunterlagen inkl. Arbeits
 
 Wir freuen uns auf Sie!
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

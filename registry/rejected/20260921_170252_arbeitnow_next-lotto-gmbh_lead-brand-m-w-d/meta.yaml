@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: lead-brand-konstanz-8003
+source_url: https://www.arbeitnow.com/jobs/companies/next-lotto-gmbh/lead-brand-konstanz-8003
+title: Lead Brand (m/w/d)
+company: Next Lotto GmbH
+location: Konstanz
+published_at: '2026-09-21T15:30:29Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-21T17:02:52Z'
+rejected_at: '2026-09-21T17:02:52Z'

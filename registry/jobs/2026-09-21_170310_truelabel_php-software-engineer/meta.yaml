@@ -1,0 +1,36 @@
+schema_version: 2
+id: 27faf9b3-1692-40cb-9592-afc543b8c24b
+title: PHP Software Engineer
+company: TrueLabel
+company_url: https://jobs.dou.ua/companies/truelabel/vacancies/
+location: за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '374027'
+  url: https://jobs.dou.ua/companies/truelabel/vacancies/374027/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 вересня
+    listing_summary: 'Role Overview:
+
+
+      TrueLabel is seeking a highly skilled and experienced Senior PHP Developer with
+      a proven track record of building and scaling high-load, business-critical systems.'
+published_at: '2026-09-21'
+discovered_at: '2026-09-21T17:03:10Z'
+updated_at: '2026-09-21T17:03:10Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-21T17:03:10Z'
+analysis_priority: 100
+fingerprint: sha256:7defcc9ee340e4c2d3c44359e18d156b1d05b3be205f4607d9c17a024ac9c181
+data_source: dou
+content_source: dou
+company_content_source: dou

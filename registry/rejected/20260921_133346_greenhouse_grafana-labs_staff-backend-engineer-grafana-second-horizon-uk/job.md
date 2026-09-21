@@ -1,4 +1,4 @@
-# Staff Backend Engineer - Grafana Second Horizon | UK | Remote
+# Staff Backend Engineer - Databases - Analytics | UK | Remote
 
 Posted: 2026-09-18T03:17:42-04:00
 

@@ -89,4 +89,4 @@ Das Beste kommt zum Schluss: Ein herzliches Team, das sich als Mannschaft verste
 Haben wir deine Begeisterung für das ganz große Kino geweckt? Dann sollten wir uns kennenlernen!
 Wir freuen uns auf deine aussagekräftige und vollständige Bewerbung und frühestmöglichem Eintrittstermin.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow

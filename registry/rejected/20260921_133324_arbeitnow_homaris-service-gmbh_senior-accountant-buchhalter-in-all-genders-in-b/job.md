@@ -88,4 +88,4 @@ Du hast Fragen? Melde dich gerne bei Naomi unter oder +49 1579 2465851
 
 Wir schätzen Vielfalt und begrüßen Bewerbungen von Menschen aller Geschlechter, Kulturen und Hintergründe.
 
-Find [Jobs in Germany](https://www.arbeitnow.com) on Arbeitnow
+Find more [English Speaking Jobs in Germany](https://www.arbeitnow.com/english-speaking-jobs) on Arbeitnow
