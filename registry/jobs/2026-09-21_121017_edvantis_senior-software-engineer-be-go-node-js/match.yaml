@@ -1,0 +1,22 @@
+score: 78
+recommendation: possible_match
+summary: Strong Go, backend, distributed systems, Kubernetes, and reliability alignment;
+  Node.js, streaming, and ad-tech evidence is limited.
+strengths:
+- Recent production ownership of Go backend automation and integrations.
+- Strong evidence for microservices, REST APIs, Kubernetes, CI/CD, troubleshooting,
+  performance, and operational reliability.
+- Experience with high-throughput event-driven systems and AWS-backed infrastructure.
+gaps:
+- Node.js and JavaScript/TypeScript experience is not documented.
+- MongoDB, gRPC/Protobuf, video streaming, SSAI, FFmpeg, and ad-tech are not documented.
+concerns:
+- The media-streaming specialization and low-latency requirements may require substantial
+  domain ramp-up.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-21T13:35:27Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:3e7387b64b72b3381ef85f1c67b33791078fe62b1081b893f42dd8bdd34b5def
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,42 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-21T13:35:27Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Propelahed LTD",
+      "directory": "2026-09-21_133342_propelahed-ltd_laravel-розробник-part-time",
+      "score": 82,
+      "title": "Laravel-розробник (part-time)",
+      "url": "https://jobs.dou.ua/companies/propelahed-ltd/vacancies/374023/",
+      "vacancy_id": "2aa3b0cf-4bf2-4a6a-bd05-a6dd7c21594d"
+    },
+    {
+      "company": "Readeat",
+      "directory": "2026-09-21_121017_readeat_middle-backend-developer",
+      "score": 84,
+      "title": "Middle Backend Developer",
+      "url": "https://jobs.dou.ua/companies/readeat/vacancies/366780/",
+      "vacancy_id": "8dbd331e-3408-4d1a-841c-ac25bedfc709"
+    },
+    {
+      "company": "Edvantis",
+      "directory": "2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js",
+      "score": 78,
+      "title": "Senior Software Engineer BE (Go, Node.js)",
+      "url": "https://jobs.dou.ua/companies/edvantis/vacancies/373945/",
+      "vacancy_id": "2358c569-0bae-4bec-ab93-a184b6dd855a"
+    },
+    {
+      "company": "Антенор",
+      "directory": "2026-09-18_220220_антенор_golang-backend-developer",
+      "score": 86,
+      "title": "Golang Backend Developer",
+      "url": "https://jobs.dou.ua/companies/antenor/vacancies/373917/",
+      "vacancy_id": "3baf6300-3356-4a85-b096-d6ea46d5fdaf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4bd4d85fd47b2b19f6a1c8612a9c982718fee87da2a1900b243b03ed0b622deb",
+  "schema_version": 1
+}
