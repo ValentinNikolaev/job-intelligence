@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '1769710028011575701'
+source_url: https://jooble.org/desc/1769710028011575701?ckey=senior+backend+engineer&rgn=55179&pos=1&groupId=293749696&elckey=6028931640497067480&p=1&aq=-955308992610320106&cid=15922&jobAge=283&brelb=100&bscr=12.093328&scr=12.093328
+title: Senior Consultant - Azure Data Platform
+company: Insight
+location: Italian Republic
+published_at: '2026-09-09T12:22:03.9930000'
+rejection_category: stale
+rejection_reason: published_at 2026-09-09T12:22:03.9930000 is older than 7 days
+updated_at: '2026-09-21T13:34:03Z'
+rejected_at: '2026-09-21T13:34:03Z'

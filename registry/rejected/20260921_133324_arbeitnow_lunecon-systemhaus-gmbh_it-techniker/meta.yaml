@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: it-techniker-westerstede-493184
+source_url: https://www.arbeitnow.com/jobs/companies/lunecon-systemhaus-gmbh/it-techniker-westerstede-493184
+title: IT-Techniker
+company: Lunecon Systemhaus GmbH
+location: Westerstede
+published_at: '2026-09-21T10:30:46Z'
+rejection_category: location_requirement
+rejection_reason: vacancy is explicitly non-remote
+updated_at: '2026-09-21T13:33:24Z'
+rejected_at: '2026-09-21T13:33:24Z'

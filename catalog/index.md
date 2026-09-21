@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 69
+Total vacancies: 72
 
-- Found: 52
+- Found: 55
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,9 @@ Total vacancies: 69
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-21 | [Solidgate](../registry/jobs/2026-09-21_133342_solidgate_junior-go-engineer/) | [Junior Go Engineer](../registry/jobs/2026-09-21_133342_solidgate_junior-go-engineer/job.md) | Київ, Львів, Варшава (Польща), віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/solidgate/vacancies/364821/) | [Open](../registry/jobs/2026-09-21_133342_solidgate_junior-go-engineer/company.md) | — | — | — | — |
+| 2026-09-21 | [Gameinspire](../registry/jobs/2026-09-21_133342_gameinspire_senior-golang-developer-with-sre-skills/) | [Senior Golang Developer with SRE skills](../registry/jobs/2026-09-21_133342_gameinspire_senior-golang-developer-with-sre-skills/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/gameinspire/vacancies/373559/) | [Open](../registry/jobs/2026-09-21_133342_gameinspire_senior-golang-developer-with-sre-skills/company.md) | — | — | — | — |
+| 2026-09-21 | [Propelahed LTD](../registry/jobs/2026-09-21_133342_propelahed-ltd_laravel-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-part-time/) | [Laravel-розробник (part-time)](../registry/jobs/2026-09-21_133342_propelahed-ltd_laravel-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-part-time/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/propelahed-ltd/vacancies/374023/) | [Open](../registry/jobs/2026-09-21_133342_propelahed-ltd_laravel-%D1%80%D0%BE%D0%B7%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA-part-time/company.md) | — | — | — | — |
 | 2026-09-21 | [Readeat](../registry/jobs/2026-09-21_121017_readeat_middle-backend-developer/) | [Middle Backend Developer](../registry/jobs/2026-09-21_121017_readeat_middle-backend-developer/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/readeat/vacancies/366780/) | [Open](../registry/jobs/2026-09-21_121017_readeat_middle-backend-developer/company.md) | — | — | — | — |
 | 2026-09-21 | [Edvantis](../registry/jobs/2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js/) | [Senior Software Engineer BE (Go, Node.js)](../registry/jobs/2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js/job.md) | Львів, Ряшів (Польща), віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/edvantis/vacancies/373945/) | [Open](../registry/jobs/2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js/company.md) | — | — | — | — |
 | 2026-09-20 | [saas.group](../registry/jobs/2026-09-20_144002_saas-group_staff-software-engineer/) | [Staff Software Engineer](../registry/jobs/2026-09-20_144002_saas-group_staff-software-engineer/job.md) | EMEA | Jobicy | Found | 2026-09-20 | [Jobicy](https://jobicy.com/jobs/153697-staff-software-engineer-6) | — | — | — | — | — |

@@ -1,0 +1,12 @@
+schema_version: 1
+source: arbeitnow
+source_job_id: fullstack-softwareentwickler-braunschweig-59326
+source_url: https://www.arbeitnow.com/jobs/companies/tecfox-gmbh/fullstack-softwareentwickler-braunschweig-59326
+title: Fullstack Softwareentwickler (m/w/d)
+company: TecFox GmbH
+location: Braunschweig
+published_at: '2026-09-21T12:01:22Z'
+rejection_category: tech_stack
+rejection_reason: Spring Boot is not a target stack
+updated_at: '2026-09-21T13:33:24Z'
+rejected_at: '2026-09-21T13:33:24Z'
