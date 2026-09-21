@@ -48,6 +48,7 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
   word counts, hashes, handoff provenance, and method receipt in `manifest.yaml`.
 - For CV preparation, do not include roles or employment experience older than 10 years in the generated CV `Experience` section. Older evidence may support skills, chronology, or interview preparation only when relevant.
 - Change vacancy status only after an explicit user request, through `python run.py status`; never infer status from artifacts or external events.
+- For every user-reported employer rejection, preserve the full supplied message verbatim as text in `registry/feedback/<vacancy-directory>/<recorded-date>-rejection.md` and in the manual status audit note. Keep the original language and paragraph breaks; distinguish the recording date from any known message date. If no original message is supplied, record the user's description as such without inventing employer wording. Use `python run.py status <vacancy-id-or-directory> rejected` with a concise reason and `--status-note` containing the text and feedback-file path. Preserve these feedback records when vacancy directories are archived or removed.
 - Before finishing code changes, run `python -m unittest discover -v` with an available Python 3.11+ runtime and search project code/configuration for prohibited API integrations.
 
 ## Required Git finalization

@@ -201,6 +201,13 @@ python run.py status <job-directory-or-vacancy-id> reviewing --reason "needs hum
 Manual status changes made through the user/Codex loop are audited in
 `registry/manual-status-log.yaml`, including counts by target status and reason.
 
+For employer rejections reported by the user, retain the full original message in
+`registry/feedback/<vacancy-directory>/<recorded-date>-rejection.md` and pass that
+text plus the feedback-file path through `--status-note` when setting `rejected`.
+Preserve the original language and paragraphs, distinguish the recording date from
+the message date, and label a user summary if the original message is unavailable.
+Feedback records remain available even if the vacancy directory is later removed.
+
 Publish Codex-produced work:
 
 ```text

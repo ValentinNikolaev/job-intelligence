@@ -3,7 +3,7 @@ description: Append-only audit log for manual vacancy status decisions made thro
   user/LLM interaction. Automated collection and prefilter rejections are tracked
   elsewhere.
 summary:
-  total_events: 33
+  total_events: 34
   by_status:
     applied:
       count: 19
@@ -12,8 +12,8 @@ summary:
       count: 2
       last_changed_at: '2026-08-11T13:58:12Z'
     rejected:
-      count: 12
-      last_changed_at: '2026-08-27T19:05:34Z'
+      count: 13
+      last_changed_at: '2026-09-21T20:26:12Z'
   by_reason:
     application-submitted:
       count: 2
@@ -23,6 +23,10 @@ summary:
       count: 1
       reason: applied one day previously; skip duplicate processing
       last_changed_at: '2026-08-01T16:58:51Z'
+    employer-chose-a-different-candidate-after-the-i:
+      count: 1
+      reason: Employer chose a different candidate after the interview process
+      last_changed_at: '2026-09-21T20:26:12Z'
     india-focused-remote-role-public-postings-show-i:
       count: 1
       reason: India-focused remote role; public postings show India location and INR
@@ -556,3 +560,56 @@ events:
   actor: codex
   interaction:
     source: llm_assisted_manual
+- changed_at: '2026-09-21T20:26:12Z'
+  vacancy_id: c8dc7f2e-c9cc-4db1-9be6-e247a444cf60
+  directory: 2026-08-11_100757_coinspaid_senior-php-backend-engineer
+  company: Coinspaid
+  title: Senior PHP Backend Engineer
+  from_status: found
+  to_status: rejected
+  reason: Employer chose a different candidate after the interview process
+  reason_key: employer-chose-a-different-candidate-after-the-i
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: 'Feedback record: registry/feedback/2026-08-11_100757_coinspaid_senior-php-backend-engineer/2026-09-21-rejection.md
+
+
+    # CoinsPaid — Senior PHP Backend Engineer: rejection
+
+
+    - Vacancy ID: `c8dc7f2e-c9cc-4db1-9be6-e247a444cf60`
+
+    - Vacancy: [Senior PHP Backend Engineer](../../jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/job.md)
+
+    - Recorded on: 2026-09-21
+
+    - Message date: not supplied
+
+    - Source: employer message pasted by the user in the Codex conversation
+
+    - Outcome: rejected after participating in the interview process; the team chose
+    a different candidate.
+
+
+    ## Original message
+
+
+    Hi Valentin,
+
+
+    Hope you''re doing great!
+
+
+    As we agreed, I''d like to share with you the feedback from our team.
+
+
+    First of all, thank you very much for taking part in the interview process. We
+    had a great pleasure getting to know you and your experience better. While your
+    expertise is definitely valuable, we decided to move forward with a different
+    candidate at this time.
+
+
+    Thank you once again for your interest in CoinsPaid. I wish you luck in your job
+    search and hope we can stay in touch in case we have any new openings that might
+    be relevant to you.'
