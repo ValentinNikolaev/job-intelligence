@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 67
+Total vacancies: 69
 
-- Found: 50
+- Found: 52
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,8 @@ Total vacancies: 67
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-21 | [Readeat](../registry/jobs/2026-09-21_121017_readeat_middle-backend-developer/) | [Middle Backend Developer](../registry/jobs/2026-09-21_121017_readeat_middle-backend-developer/job.md) | віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/readeat/vacancies/366780/) | [Open](../registry/jobs/2026-09-21_121017_readeat_middle-backend-developer/company.md) | — | — | — | — |
+| 2026-09-21 | [Edvantis](../registry/jobs/2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js/) | [Senior Software Engineer BE (Go, Node.js)](../registry/jobs/2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js/job.md) | Львів, Ряшів (Польща), віддалено | Dou | Found | 2026-09-21 | [Dou](https://jobs.dou.ua/companies/edvantis/vacancies/373945/) | [Open](../registry/jobs/2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js/company.md) | — | — | — | — |
 | 2026-09-20 | [saas.group](../registry/jobs/2026-09-20_144002_saas-group_staff-software-engineer/) | [Staff Software Engineer](../registry/jobs/2026-09-20_144002_saas-group_staff-software-engineer/job.md) | EMEA | Jobicy | Found | 2026-09-20 | [Jobicy](https://jobicy.com/jobs/153697-staff-software-engineer-6) | — | — | — | — | — |
 | 2026-09-20 | [Bryq](../registry/jobs/2026-09-20_120940_bryq_senior-software-engineer/) | [Senior Software Engineer](../registry/jobs/2026-09-20_120940_bryq_senior-software-engineer/job.md) | Italy | Himalayas | Found | 2026-09-20 | [Himalayas](https://himalayas.app/companies/bryq/jobs/senior-software-engineer) | — | — | — | — | — |
 | 2026-09-19 | [NetBox Labs](../registry/jobs/2026-09-19_220337_netbox-labs_staff-software-backend-engineer-tech-lead-founda/) | [Staff Software Backend Engineer, Tech Lead - Foundations](../registry/jobs/2026-09-19_220337_netbox-labs_staff-software-backend-engineer-tech-lead-founda/job.md) | UK,  USA | Jobicy | Found | 2026-09-19 | [Jobicy](https://jobicy.com/jobs/153647-staff-software-backend-engineer-tech-lead-foundations) | — | — | — | — | — |

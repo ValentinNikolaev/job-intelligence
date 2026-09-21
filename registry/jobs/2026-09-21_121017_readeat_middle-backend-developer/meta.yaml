@@ -1,0 +1,44 @@
+schema_version: 2
+id: 8dbd331e-3408-4d1a-841c-ac25bedfc709
+title: Middle Backend Developer
+company: Readeat
+company_url: https://jobs.dou.ua/companies/readeat/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '366780'
+  url: https://jobs.dou.ua/companies/readeat/vacancies/366780/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 вересня
+    listing_summary: 'Requirements
+
+
+      3+ years of experience with PHP 7.4+ and Yii2 framework
+
+
+      Solid understanding of SOLID, DRY principles, and design patterns
+
+
+      Strong proficiency in PostgreSQL and MySQL (optimisation and schema design)
+
+
+      Hands-on experience with AWS services: RDS, ECS, SQS, SNS,...'
+published_at: '2026-09-21'
+discovered_at: '2026-09-21T12:10:17Z'
+updated_at: '2026-09-21T12:10:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-21T12:10:17Z'
+analysis_priority: 100
+fingerprint: sha256:a44c3a2d39d417d3eefcab6173ec5a7738d11c79527562156965e0debc7c8a42
+data_source: dou
+content_source: dou
+company_content_source: dou

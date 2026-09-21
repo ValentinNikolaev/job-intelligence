@@ -1,0 +1,14 @@
+schema_version: 1
+source: himalayas
+source_job_id: https://himalayas.app/companies/foxelli-group/jobs/ai-engineer-technical-product-owner
+source_url: https://himalayas.app/companies/foxelli-group/jobs/ai-engineer-technical-product-owner
+title: AI Engineer (Technical Product Owner)
+company: Foxelli Group
+location: Albania, Andorra, Armenia, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia,
+  Czechia, Estonia, France, Georgia, Greece, Italy, Kosovo, Latvia, Lithuania, Malta,
+  Moldova, Montenegro, North Macedonia, Poland, Slovenia
+published_at: '2026-09-13T02:31:45Z'
+rejection_category: stale
+rejection_reason: published_at 2026-09-13T02:31:45Z is older than 7 days
+updated_at: '2026-09-21T12:10:27Z'
+rejected_at: '2026-09-21T12:10:27Z'

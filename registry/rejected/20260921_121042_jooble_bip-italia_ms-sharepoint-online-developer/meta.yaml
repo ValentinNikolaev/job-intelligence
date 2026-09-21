@@ -1,0 +1,12 @@
+schema_version: 1
+source: jooble
+source_job_id: '-332659202801787354'
+source_url: https://jooble.org/away/-332659202801787354?p=1&pos=4&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=1806&brelb=15&scr=16.354984&bscr=16.354984&aq=-4402609078678888348&elckey=485838258998044020
+title: MS Sharepoint Online Developer
+company: Bip Italia
+location: Italian Republic
+published_at: '2026-07-08T00:00:00.0000000'
+rejection_category: stale
+rejection_reason: published_at 2026-07-08T00:00:00.0000000 is older than 7 days
+updated_at: '2026-09-21T12:10:42Z'
+rejected_at: '2026-09-21T12:10:42Z'
