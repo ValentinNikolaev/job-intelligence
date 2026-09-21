@@ -1,0 +1,12 @@
+schema_version: 1
+source: jobicy
+source_job_id: '153695'
+source_url: https://jobicy.com/jobs/153695-senior-software-engineer-ai
+title: Senior Software Engineer - AI
+company: saas.group
+location: Europe
+published_at: '2026-09-20T11:04:48Z'
+rejection_category: tech_stack
+rejection_reason: role does not mention Go/Golang or PHP
+updated_at: '2026-09-21T06:15:31Z'
+rejected_at: '2026-09-21T06:15:31Z'
