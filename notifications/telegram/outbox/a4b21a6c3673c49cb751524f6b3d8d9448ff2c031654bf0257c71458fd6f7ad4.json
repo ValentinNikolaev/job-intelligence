@@ -1,0 +1,26 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-22T20:33:13Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "TrueLabel",
+      "directory": "2026-09-21_170310_truelabel_php-software-engineer",
+      "score": 66,
+      "title": "PHP Software Engineer",
+      "url": "https://jobs.dou.ua/companies/truelabel/vacancies/374027/",
+      "vacancy_id": "27faf9b3-1692-40cb-9592-afc543b8c24b"
+    },
+    {
+      "company": "Readdle",
+      "directory": "2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team",
+      "score": 84,
+      "title": "Senior Backend Engineer (PHP, Symfony) — Fluix Team",
+      "url": "https://jobs.dou.ua/companies/readdle-inc/vacancies/374074/",
+      "vacancy_id": "3a7f3891-cd46-4200-87c3-a693acb19a19"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a4b21a6c3673c49cb751524f6b3d8d9448ff2c031654bf0257c71458fd6f7ad4",
+  "schema_version": 1
+}
