@@ -7,7 +7,7 @@ name = "job-intelligence"
 version = "0.1.0"
 description = "Minimal local-first job vacancy collector"
 requires-python = ">=3.11"
-dependencies = ["PyYAML>=6.0,<7", "pymongo>=4.10,<5"]
+dependencies = ["PyYAML>=6.0,<7", "pymongo>=4.10,<5", "pycountry>=24.6.1,<27"]
 
 [project.scripts]
 job-intel = "jobintel.cli:main"

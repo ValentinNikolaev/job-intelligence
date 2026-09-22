@@ -8,8 +8,10 @@ from pathlib import Path
 from typing import Any, Callable, Mapping
 from urllib.parse import urlparse
 
+from .country_flags import COUNTRY_FLAGS, country_codes_for_location, render_country_flags
 
-OUTBOX_SCHEMA_VERSION = 1
+
+OUTBOX_SCHEMA_VERSION = 2
 TELEGRAM_ANALYSIS_INITIATOR = "job-intelligence-batch-vacancy-analysis"
 
 
@@ -72,6 +74,7 @@ def build_analysis_notification(
                 ),
                 "directory": directory,
                 "url": source_url,
+                "country_codes": country_codes_for_location(metadata.get("location")),
             }
         )
 
@@ -146,7 +149,8 @@ def validate_notification(value: Mapping[str, Any]) -> dict[str, Any]:
     }
     if set(value) != expected:
         raise TelegramOutboxError("Telegram notification has invalid fields")
-    if value.get("schema_version") != OUTBOX_SCHEMA_VERSION:
+    schema_version = value.get("schema_version")
+    if type(schema_version) is not int or schema_version not in {1, OUTBOX_SCHEMA_VERSION}:
         raise TelegramOutboxError("unsupported Telegram outbox schema")
     if value.get("channel") != "telegram":
         raise TelegramOutboxError("Telegram outbox channel must be telegram")
@@ -163,14 +167,17 @@ def validate_notification(value: Mapping[str, Any]) -> dict[str, Any]:
         raise TelegramOutboxError("Telegram notification requires at least one item")
     items = []
     for index, raw in enumerate(raw_items):
-        if not isinstance(raw, Mapping) or set(raw) != {
+        item_fields = {
             "company",
             "title",
             "score",
             "vacancy_id",
             "directory",
             "url",
-        }:
+        }
+        if schema_version >= 2:
+            item_fields.add("country_codes")
+        if not isinstance(raw, Mapping) or set(raw) != item_fields:
             raise TelegramOutboxError(f"Telegram notification item {index} has invalid fields")
         score = raw.get("score")
         if isinstance(score, bool) or not isinstance(score, int) or not minimum_score <= score <= 100:
@@ -185,8 +192,17 @@ def validate_notification(value: Mapping[str, Any]) -> dict[str, Any]:
                 "url": _required_http_url(raw.get("url"), f"item {index} URL"),
             }
         )
+        if schema_version >= 2:
+            codes = raw.get("country_codes")
+            if (
+                not isinstance(codes, list)
+                or any(not isinstance(code, str) or code not in COUNTRY_FLAGS for code in codes)
+                or len(codes) != len(set(codes))
+            ):
+                raise TelegramOutboxError(f"Telegram notification item {index} has invalid country codes")
+            items[-1]["country_codes"] = list(codes)
     payload = {
-        "schema_version": OUTBOX_SCHEMA_VERSION,
+        "schema_version": schema_version,
         "channel": "telegram",
         "initiator": initiator,
         "minimum_score": minimum_score,
@@ -210,10 +226,12 @@ def render_notification_message(notification: Mapping[str, Any]) -> str:
     validated = validate_notification(notification)
     lines = [f"Automation ID: {validated['initiator']}"]
     for item in validated["items"]:
+        flags = render_country_flags(item.get("country_codes", []))
+        headline = f"{item['company']} — {item['title']}"
         lines.extend(
             (
                 "",
-                f"{item['company']} — {item['title']}",
+                f"{flags} {headline}" if flags else headline,
                 f"Score: {item['score']}",
                 f"Vacancy ID: {item['vacancy_id']}",
                 f"Directory: {item['directory']}",

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import hashlib
 import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -12,10 +13,75 @@ from jobintel.telegram_outbox import (
     enqueue_notification,
     load_notification,
     render_notification_message,
+    validate_notification,
 )
+from scripts.notify_telegram import format_message_html
 
 
 class TelegramOutboxTests(unittest.TestCase):
+    def test_country_flags_survive_queue_roundtrip_and_html_formatting(self) -> None:
+        item = _item("eligible", "eligible-id", "Example & Co", "Backend")
+        item["vacancy"] = {"metadata": {
+            **item["vacancy"],
+            "location": "Italy, Germany, France, Spain, Poland, Portugal, Italy",
+        }}
+        notification = build_analysis_notification(
+            {"items": [item]}, {"eligible": _result(80)}, minimum_score=65,
+        )
+        assert notification is not None
+        self.assertEqual(["IT", "DE", "FR", "ES", "PL", "PT"], notification["items"][0]["country_codes"])
+        with TemporaryDirectory() as temporary:
+            loaded = load_notification(enqueue_notification(Path(temporary), notification))
+        message = format_message_html(render_notification_message(loaded))
+        self.assertIn("<b>🇮🇹 🇩🇪 🇫🇷 🇪🇸 🇵🇱 Example &amp; Co — Backend</b>", message)
+        self.assertNotIn("🇵🇹", message)
+        self.assertIn("<b>URL:</b> https://example.test/eligible", message)
+
+    def test_unknown_location_has_no_flags_or_leading_space(self) -> None:
+        item = _item("eligible", "eligible-id", "Example", "Backend")
+        item["vacancy"]["location"] = "Worldwide"
+        notification = build_analysis_notification(
+            {"items": [item]}, {"eligible": _result(80)}, minimum_score=65,
+        )
+        assert notification is not None
+        self.assertEqual([], notification["items"][0]["country_codes"])
+        self.assertIn("\n\nExample — Backend\n", render_notification_message(notification))
+
+    def test_legacy_v1_manifest_keeps_its_original_hash_and_message(self) -> None:
+        payload = {
+            "schema_version": 1,
+            "channel": "telegram",
+            "initiator": "job-intelligence-batch-vacancy-analysis",
+            "minimum_score": 65,
+            "items": [{"company": "Example", "title": "Backend", "score": 80,
+                       "vacancy_id": "eligible-id", "directory": "eligible",
+                       "url": "https://example.test/eligible"}],
+        }
+        notification = {
+            **payload,
+            "notification_id": hashlib.sha256(json.dumps(
+                payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"),
+            ).encode("utf-8")).hexdigest(),
+            "created_at": "2026-08-19T08:00:00Z",
+        }
+        self.assertEqual(notification, validate_notification(notification))
+        self.assertIn("\n\nExample — Backend\n", render_notification_message(notification))
+
+    def test_country_codes_are_validated_and_protected_by_payload_hash(self) -> None:
+        notification = build_analysis_notification(
+            {"items": [_item("eligible", "eligible-id", "Example", "Backend")]},
+            {"eligible": _result(80)}, minimum_score=65,
+        )
+        assert notification is not None
+        for codes in (None, "IT", ["ZZ"], ["it"], ["IT", "IT"], [{}], [True]):
+            with self.subTest(codes=codes):
+                notification["items"][0]["country_codes"] = codes
+                with self.assertRaisesRegex(TelegramOutboxError, "invalid country codes"):
+                    validate_notification(notification)
+        notification["items"][0]["country_codes"] = ["IT"]
+        with self.assertRaisesRegex(TelegramOutboxError, "does not match"):
+            validate_notification(notification)
+
     def test_builds_notification_only_for_eligible_non_rejected_results(self) -> None:
         notification = build_analysis_notification(
             _pack(),
