@@ -50,7 +50,7 @@ sources:
         url: https://www.cubbit.io/careers/senior-backend-developer-go
   - name: shippypro
     company: ShippyPro
-    board_url: https://shippypro.factorialhr.com
+    board_url: https://shippypro.factorialhr.com/
     company_url: https://www.shippypro.com
     ats: Factorial
     remote: true
@@ -66,7 +66,7 @@ sources:
       - team lead
   - name: madisoft-nuvola
     company: Madisoft / Nuvola
-    board_url: https://labs.madisoft.it/entra-nel-team
+    board_url: https://labs.madisoft.it/entra-nel-team/
     company_url: https://labs.madisoft.it
     source_type: custom HTML
     remote: true
@@ -286,7 +286,7 @@ sources:
       - refactory-open-role-sentinel
   - name: papa-chat
     company: PappaChat
-    board_url: https://pappachat.com/lavora-con-noi/backend-engineer
+    board_url: https://pappachat.com/lavora-con-noi/
     company_url: https://pappachat.com
     source_type: custom HTML
     title_terms:
@@ -296,7 +296,7 @@ sources:
         url: https://pappachat.com/lavora-con-noi/backend-engineer
   - name: watuppa
     company: Watuppa
-    board_url: https://www.watuppa.it/en/careers/202101-back-end
+    board_url: https://www.watuppa.it/en/careers/
     company_url: https://www.watuppa.it
     source_type: custom HTML
     title_terms:
@@ -307,9 +307,11 @@ sources:
         url: https://www.watuppa.it/en/careers/202101-back-end
   - name: motork
     company: MotorK
-    board_url: https://apply.workable.com/motork/
+    board_url: https://www.motork.ai/jobs
     company_url: https://www.motork.io
     ats: Workable
+    allowed_job_hosts:
+      - apply.workable.com
     title_terms:
       - backend
       - developer
@@ -321,7 +323,7 @@ sources:
         url: https://apply.workable.com/motork/j/1BD16CD77B
   - name: hinto-group
     company: Hinto Group
-    board_url: https://www.hintogroup.eu/it/posizioni-aperte/php-developer
+    board_url: https://www.hintogroup.eu/it/posizioni-aperte
     company_url: https://www.hintogroup.eu
     source_type: custom HTML
     title_terms:
@@ -356,7 +358,7 @@ sources:
         url: https://recruiting.braincomputing.com/job/VFNSTmxmN2xkeEJWbGNnQlNFa3AwQT09
   - name: intesys
     company: Intesys
-    board_url: https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18
+    board_url: https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/
     company_url: https://www.intesys.it
     source_type: custom HTML
     title_terms:
@@ -368,7 +370,7 @@ sources:
         url: https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18
   - name: bsd-software
     company: BSD Software
-    board_url: https://www.bsdsoftware.it/LavoraConNoi/PhpDeveloper
+    board_url: https://www.bsdsoftware.it/LavoraConNoi/
     company_url: https://www.bsdsoftware.it
     source_type: custom HTML
     title_terms:
@@ -418,3 +420,288 @@ sources:
     seed_jobs:
       - title: PHP Developer
         url: https://gktgroup.it/career/
+  - name: hubcore
+    company: Hubcore
+    board_url: https://hubcore.ai/it/lavora-con-noi
+    company_url: https://hubcore.ai
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - data engineer
+      - full stack developer
+      - php developer
+      - vuejs developer
+    title_terms:
+      - data engineer
+      - full stack developer
+      - php developer
+      - vuejs developer
+  - name: trustfull
+    company: Trustfull
+    board_url: https://jobs.workable.com/company/5FbNAZwFhraGUvm3uU3MxU/jobs-at-trustfull
+    company_url: https://trustfull.com
+    ats: Workable
+    allowed_job_hosts:
+      - apply.workable.com
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: gruppo-yec
+    company: Gruppo YEC
+    board_url: https://gruppoyec.com/careers
+    company_url: https://gruppoyec.com
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - web developer (react js/php)
+    title_terms:
+      - php
+      - react
+      - web developer
+  - name: joint-tech
+    company: Joint Tech
+    board_url: https://www.joint-tech.com/it/lavora-con-noi/
+    company_url: https://www.joint-tech.com
+    source_type: custom HTML
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: youco
+    company: YouCo
+    board_url: https://www.youco.eu/lavora-con-noi/
+    company_url: https://www.youco.eu
+    source_type: custom HTML
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: alion-docebo
+    company: Docebo
+    board_url: https://alion.io/company/docebo#co_jobs
+    company_url: https://www.docebo.com
+    source_type: Alion company profile
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - platform
+      - software
+  - name: webeetle
+    company: weBeetle
+    board_url: https://www.webeetle.com/join-us/
+    company_url: https://www.webeetle.com
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - developer (fe/be)
+      - front-end/back-end developer
+      - frontend/backend developer
+    title_terms:
+      - developer
+  - name: scf-group
+    company: SCF Group
+    board_url: https://www.scfgroup.it/lavora-con-noi/
+    company_url: https://www.scfgroup.it
+    source_type: custom HTML
+    title_terms:
+      - backend laravel senior
+      - backend php/mysql junior
+      - laravel
+      - php/mysql
+    exclude_title_terms:
+      - posizioni chiuse
+  - name: techseed
+    company: Techseed
+    board_url: https://www.techseed.it/lavora-con-noi
+    company_url: https://www.techseed.it
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - backend/full stack php developer
+      - backend / full stack php developer
+      - full stack php developer
+    title_terms:
+      - backend
+      - full stack
+      - php
+  - name: joker
+    company: Joker S.r.l.
+    board_url: https://jokersrl.it/lavora-con-noi/
+    company_url: https://jokersrl.it
+    source_type: custom HTML
+    title_terms:
+      - .net
+      - developer
+      - laravel
+      - php
+      - sistemista
+  - name: beliven
+    company: Beliven
+    board_url: https://careers.beliven.com/recruiting/
+    company_url: https://beliven.com
+    source_type: custom recruiting portal
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: advinser
+    company: Advinser
+    board_url: https://advinser.it/unisciti-al-team
+    company_url: https://advinser.it
+    source_type: custom HTML
+    notes: General team page; monitored for named technical openings rather than spontaneous applications.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: hnrg
+    company: HNRG
+    board_url: https://hnrg.it/job/back-end-developer/
+    company_url: https://hnrg.it
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - back-end developer
+      - backend developer
+    notes: Direct role URL; emits only while a matching role heading remains visible.
+    title_terms:
+      - back-end developer
+      - backend developer
+  - name: atomica-studio
+    company: Atomica Studio
+    board_url: https://www.atomicastudio.com/en/careers
+    company_url: https://www.atomicastudio.com
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - ai developer
+      - php/laravel developer
+      - wordpress developer
+    title_terms:
+      - ai developer
+      - laravel developer
+      - php developer
+      - wordpress developer
+  - name: romiltec
+    company: Romiltec
+    board_url: https://romiltec.it/lavora-con-noi/
+    company_url: https://romiltec.it
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - ai/ml engineer
+      - full-stack developer
+      - full stack developer
+    title_terms:
+      - ai/ml engineer
+      - full-stack developer
+      - full stack developer
+      - machine learning engineer
+  - name: trinaware
+    company: Trinaware
+    board_url: https://www.trinaware.it/azienda/lavora-con-noi
+    company_url: https://www.trinaware.it
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - backend developer junior
+      - backend developer senior
+    title_terms:
+      - backend developer
+  - name: retesi
+    company: ReteSI
+    board_url: https://www.retesi.it/#careers
+    company_url: https://www.retesi.it
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - software developer
+    title_terms:
+      - software developer
+  - name: brb-development
+    company: BRB Development
+    board_url: https://www.brbdevelopment.com/lavora-con-noi
+    company_url: https://www.brbdevelopment.com
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - junior software developer
+      - senior software developer
+    title_terms:
+      - software developer
+  - name: neting
+    company: Neting
+    board_url: https://www.neting.it/careers/sviluppatore-laravel-remote/
+    company_url: https://www.neting.it
+    source_type: custom HTML
+    remote: true
+    location: Remote Italy
+    extract_headings: true
+    heading_title_terms:
+      - laravel developer
+      - sviluppatore laravel
+    title_terms:
+      - laravel
+      - sviluppatore
+  - name: nextip
+    company: Nextip
+    board_url: https://www.nextip.com/job-position-backend/
+    company_url: https://www.nextip.com
+    source_type: custom HTML
+    extract_headings: true
+    heading_title_terms:
+      - backend developer
+      - php backend developer
+    title_terms:
+      - backend
+      - laravel
+      - php
+  - name: reverse
+    company: Reverse
+    board_url: https://reverse.hr/en/internal-development-team/
+    company_url: https://reverse.hr
+    source_type: custom HTML / external recruiting portal
+    allowed_job_hosts:
+      - public.reversegroup.hr
+    notes: Team page links to the public Reverse Group recruiting portal; generic team content is not emitted as a vacancy.
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: facile-engineering
+    company: Facile.it
+    board_url: https://engineering.facile.it/ita/careers/
+    company_url: https://www.facile.it
+    source_type: custom HTML / external jobs portal
+    allowed_job_hosts:
+      - jobs.facile.it
+    title_terms:
+      - backend
+      - developer
+      - engineer
+      - php
+      - software
+  - name: onpage
+    company: On Page
+    board_url: https://onpage.it/lavora-con-noi/
+    company_url: https://onpage.it
+    source_type: custom HTML
+    title_terms:
+      - backend
+      - laravel
+      - php

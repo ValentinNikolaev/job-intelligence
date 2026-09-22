@@ -7,6 +7,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.error import URLError
 from urllib.request import Request
 
 import yaml
@@ -153,6 +154,127 @@ class CustomCollectorTests(unittest.TestCase):
         self.assertTrue(all(job.analysis_priority == 100 for job in jobs))
         self.assertEqual(3, collector.api_requests)
 
+    def test_extract_headings_creates_distinct_inline_jobs(self) -> None:
+        self._write_config(
+            "\n".join(
+                [
+                    "    extract_headings: true",
+                    "    heading_title_terms: [senior backend engineer, php developer]",
+                ]
+            )
+        )
+        pages = {
+            "https://careers.acme.test/jobs": (
+                "<main><h1>Senior Backend Engineer</h1><h2>PHP Developer</h2>"
+                "<h3>Sales Manager</h3><p>Build reliable services.</p></main>"
+            )
+        }
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            return FakeResponse(pages[request.full_url])
+
+        jobs = list(CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener).fetch())
+
+        self.assertEqual(["PHP Developer", "Senior Backend Engineer"], sorted(job.title for job in jobs))
+        self.assertEqual({"https://careers.acme.test/jobs"}, {job.source_url for job in jobs})
+        self.assertEqual(2, len({job.source_job_id for job in jobs}))
+        self.assertTrue(all(job.source_job_id.startswith("inline-sha256:") for job in jobs))
+
+    def test_heading_does_not_duplicate_json_ld_job(self) -> None:
+        self._write_config(
+            "\n".join(
+                [
+                    "    extract_headings: true",
+                    "    heading_title_terms: [php developer]",
+                ]
+            )
+        )
+        page = (
+            '<script type="application/ld+json">'
+            '{"@type":"JobPosting","title":"PHP Developer",'
+            '"url":"https://careers.acme.test/jobs/php"}'
+            "</script><main><h1>PHP Developer</h1><p>Build APIs.</p></main>"
+        )
+
+        def opener(_: Request, **__: Any) -> FakeResponse:
+            return FakeResponse(page)
+
+        jobs = list(CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener).fetch())
+
+        self.assertEqual(["PHP Developer"], [job.title for job in jobs])
+        self.assertTrue(jobs[0].source_job_id.startswith("url-sha256:"))
+
+    def test_extract_headings_requires_specific_heading_terms(self) -> None:
+        self._write_config("    extract_headings: true")
+
+        with self.assertRaisesRegex(ValueError, "heading_title_terms are required"):
+            load_settings(self.config_path)
+
+    def test_follows_only_allowlisted_external_job_host(self) -> None:
+        self._write_config("    allowed_job_hosts: [jobs.workable.test]")
+        pages = {
+            "https://careers.acme.test/jobs": (
+                '<a href="https://jobs.workable.test/j/backend">Backend Engineer</a>'
+                '<a href="https://other-ats.test/j/php">PHP Developer</a>'
+            ),
+            "https://jobs.workable.test/j/backend": "<h1>Backend Engineer</h1><p>Build APIs.</p>",
+        }
+        requested: list[str] = []
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            requested.append(request.full_url)
+            return FakeResponse(pages[request.full_url])
+
+        jobs = list(CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener).fetch())
+
+        self.assertEqual(["Backend Engineer"], [job.title for job in jobs])
+        self.assertIn("https://jobs.workable.test/j/backend", requested)
+        self.assertNotIn("https://other-ats.test/j/php", requested)
+
+    def test_detail_failure_preserves_other_jobs(self) -> None:
+        self._write_config()
+        pages = {
+            "https://careers.acme.test/jobs": (
+                '<a href="/jobs/backend">Backend Engineer</a>'
+                '<a href="/jobs/php">PHP Developer</a>'
+            ),
+            "https://careers.acme.test/jobs/backend": "<h1>Backend Engineer</h1><p>Build APIs.</p>",
+        }
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            if request.full_url.endswith("/jobs/php"):
+                raise URLError("temporary outage")
+            return FakeResponse(pages[request.full_url])
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
+        jobs = list(collector.fetch())
+
+        self.assertEqual(["Backend Engineer"], [job.title for job in jobs])
+        self.assertEqual(1, collector.errors)
+
+    def test_board_failure_does_not_suppress_seed(self) -> None:
+        self._write_config(
+            "\n".join(
+                [
+                    "    seed_jobs:",
+                    "      - title: PHP Developer",
+                    "        url: https://careers.acme.test/jobs/php-developer",
+                ]
+            )
+        )
+        pages = {"https://careers.acme.test/jobs/php-developer": "<h1>PHP Developer</h1><p>Build APIs.</p>"}
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            if request.full_url == "https://careers.acme.test/jobs":
+                raise URLError("temporary outage")
+            return FakeResponse(pages[request.full_url])
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
+        jobs = list(collector.fetch())
+
+        self.assertEqual(["PHP Developer"], [job.title for job in jobs])
+        self.assertEqual(1, collector.errors)
+
     def test_detail_page_heading_wins_over_generic_apply_link(self) -> None:
         self._write_config()
         pages = {
@@ -238,25 +360,55 @@ class CustomCollectorTests(unittest.TestCase):
         settings = load_settings(DEFAULT_CONFIG_PATH)
         sources = {source.name: source for source in settings.sources}
         expected = {
-            "papa-chat": "https://pappachat.com/lavora-con-noi/backend-engineer",
-            "watuppa": "https://www.watuppa.it/en/careers/202101-back-end",
-            "motork": "https://apply.workable.com/motork/j/1BD16CD77B",
-            "madisoft-nuvola": "https://labs.madisoft.it/symfony-developer/",
-            "hinto-group": "https://www.hintogroup.eu/it/posizioni-aperte/php-developer",
+            "papa-chat": "https://pappachat.com/lavora-con-noi/",
+            "hubcore": "https://hubcore.ai/it/lavora-con-noi",
+            "watuppa": "https://www.watuppa.it/en/careers/",
+            "motork": "https://www.motork.ai/jobs",
+            "madisoft-nuvola": "https://labs.madisoft.it/entra-nel-team/",
+            "trustfull": "https://jobs.workable.com/company/5FbNAZwFhraGUvm3uU3MxU/jobs-at-trustfull",
+            "hinto-group": "https://www.hintogroup.eu/it/posizioni-aperte",
             "cuborio": "https://cuborio.com/azienda/lavora-con-noi",
             "brain-computing": "https://recruiting.braincomputing.com/job/VFNSTmxmN2xkeEJWbGNnQlNFa3AwQT09",
-            "intesys": "https://www.intesys.it/lavora-con-noi/candidatura/?figura_professionale=18",
-            "bsd-software": "https://www.bsdsoftware.it/LavoraConNoi/PhpDeveloper",
+            "intesys": "https://www.intesys.it/lavora-con-noi/posizioni-aperte-y-career/",
+            "bsd-software": "https://www.bsdsoftware.it/LavoraConNoi/",
             "brownie-suite": "https://www.browniesuite.com/en/careers",
             "web2emotions": "https://www.web2emotions.com/agenzia/lavora-con-noi/",
+            "gruppo-yec": "https://gruppoyec.com/careers",
             "queryo": "https://www.queryo.com/lavora-con-noi.html",
+            "joint-tech": "https://www.joint-tech.com/it/lavora-con-noi/",
+            "youco": "https://www.youco.eu/lavora-con-noi/",
             "gkt-group": "https://gktgroup.it/career/",
+            "alion-docebo": "https://alion.io/company/docebo#co_jobs",
+            "webeetle": "https://www.webeetle.com/join-us/",
+            "scf-group": "https://www.scfgroup.it/lavora-con-noi/",
+            "techseed": "https://www.techseed.it/lavora-con-noi",
+            "joker": "https://jokersrl.it/lavora-con-noi/",
+            "beliven": "https://careers.beliven.com/recruiting/",
+            "advinser": "https://advinser.it/unisciti-al-team",
+            "hnrg": "https://hnrg.it/job/back-end-developer/",
+            "atomica-studio": "https://www.atomicastudio.com/en/careers",
+            "romiltec": "https://romiltec.it/lavora-con-noi/",
+            "trinaware": "https://www.trinaware.it/azienda/lavora-con-noi",
+            "retesi": "https://www.retesi.it/#careers",
+            "brb-development": "https://www.brbdevelopment.com/lavora-con-noi",
+            "neting": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+            "nextip": "https://www.nextip.com/job-position-backend/",
+            "reverse": "https://reverse.hr/en/internal-development-team/",
+            "facile-engineering": "https://engineering.facile.it/ita/careers/",
+            "onpage": "https://onpage.it/lavora-con-noi/",
+            "shippypro": "https://shippypro.factorialhr.com/",
         }
 
         self.assertEqual(100, settings.analysis_priority)
+        self.assertEqual(len(settings.sources), len(sources))
+        self.assertEqual(
+            len(settings.sources),
+            len({source.board_url for source in settings.sources}),
+        )
         for name, url in expected.items():
             self.assertIn(name, sources)
-            self.assertIn(url, {seed.url for seed in sources[name].seed_jobs})
+            source_urls = {sources[name].board_url, *(seed.url for seed in sources[name].seed_jobs)}
+            self.assertIn(url, source_urls)
 
 
 if __name__ == "__main__":

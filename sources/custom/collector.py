@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import sys
+import unicodedata
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
@@ -20,6 +21,7 @@ from jobintel.models import NormalizedJob
 
 DEFAULT_CONFIG_PATH = Path(__file__).with_name("config.yaml")
 USER_AGENT = "job-intelligence/0.1"
+_HOSTNAME_RE = re.compile(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*")
 
 
 @dataclass(frozen=True, slots=True)
@@ -40,7 +42,10 @@ class CustomSource:
     location: str | None = None
     notes: str | None = None
     title_terms: tuple[str, ...] = ()
+    heading_title_terms: tuple[str, ...] = ()
     exclude_title_terms: tuple[str, ...] = ()
+    extract_headings: bool = False
+    allowed_job_hosts: tuple[str, ...] = ()
     seed_jobs: tuple[SeedJob, ...] = ()
 
 
@@ -56,6 +61,7 @@ class PageData:
     title: str | None = None
     description: str = ""
     anchors: tuple[tuple[str, str], ...] = ()
+    headings: tuple[str, ...] = ()
     json_ld_jobs: tuple[dict[str, Any], ...] = ()
     canonical_url: str | None = None
 
@@ -66,11 +72,13 @@ class _PageParser(HTMLParser):
         self.base_url = base_url
         self.parts: list[str] = []
         self.anchors: list[tuple[str, str]] = []
+        self.headings: list[str] = []
         self.json_ld_jobs: list[dict[str, Any]] = []
         self.current_anchor_href: str | None = None
         self.current_anchor_parts: list[str] = []
         self.in_title = False
         self.title_parts: list[str] = []
+        self.current_heading_parts: list[str] | None = None
         self.capture_script = False
         self.script_parts: list[str] = []
         self.skip_depth = 0
@@ -93,6 +101,8 @@ class _PageParser(HTMLParser):
             return
         if tag == "title":
             self.in_title = True
+        elif tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+            self.current_heading_parts = []
         elif tag == "link" and (attrs_map.get("rel") or "").casefold() == "canonical":
             href = _clean_string(attrs_map.get("href"))
             if href:
@@ -103,7 +113,7 @@ class _PageParser(HTMLParser):
             self.current_anchor_parts = []
         if tag in {"p", "div", "section", "article", "main", "br", "hr", "li"}:
             self.parts.append("\n")
-        elif tag in {"h1", "h2", "h3"}:
+        elif tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
             self.parts.append("\n\n")
 
     def handle_endtag(self, tag: str) -> None:
@@ -122,6 +132,12 @@ class _PageParser(HTMLParser):
             return
         if tag == "title":
             self.in_title = False
+        elif tag in {"h1", "h2", "h3", "h4", "h5", "h6"}:
+            if self.current_heading_parts is not None:
+                heading = _clean_string(" ".join(self.current_heading_parts))
+                if heading:
+                    self.headings.append(heading)
+            self.current_heading_parts = None
         elif tag == "a" and self.current_anchor_href:
             label = _clean_string(" ".join(self.current_anchor_parts))
             if label:
@@ -139,6 +155,8 @@ class _PageParser(HTMLParser):
             return
         if self.in_title:
             self.title_parts.append(data)
+        if self.current_heading_parts is not None:
+            self.current_heading_parts.append(data)
         if self.current_anchor_href:
             self.current_anchor_parts.append(data)
         self.parts.append(data)
@@ -148,6 +166,7 @@ class _PageParser(HTMLParser):
             title=_clean_string(" ".join(self.title_parts)),
             description=html_to_markdown("\n".join(self.parts)),
             anchors=tuple(self.anchors),
+            headings=tuple(self.headings),
             json_ld_jobs=tuple(self.json_ld_jobs),
             canonical_url=self.canonical_url,
         )
@@ -178,26 +197,48 @@ class CustomCollector:
         self._request_count = 0
         seen: set[str] = set()
         for source in self.settings.sources:
+            jobs: list[NormalizedJob] = []
+            board_page: PageData | None = None
             try:
-                page = self._fetch_page(source.board_url)
-                jobs = parse_source_page(source, page, self.settings.analysis_priority)
-                for seed in source.seed_jobs:
-                    seed_page = page if _canonicalize_url(seed.url) == _canonicalize_url(source.board_url) else self._fetch_page(seed.url)
-                    jobs.append(normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority))
-                for label, url in page.anchors:
+                board_page = self._fetch_page(source.board_url)
+                jobs.extend(parse_source_page(source, board_page, self.settings.analysis_priority))
+                for label, url in board_page.anchors:
                     if not _looks_like_job_link(source, label, url):
                         continue
-                    detail = self._fetch_page(url)
-                    jobs.append(normalize_linked_job(source, label, url, detail, self.settings.analysis_priority))
+                    try:
+                        detail = self._fetch_page(url)
+                        jobs.append(normalize_linked_job(source, label, url, detail, self.settings.analysis_priority))
+                    except Exception as exc:
+                        self._record_failure(source, url, exc)
             except Exception as exc:
-                self.errors += 1
-                print(f"custom: source {source.name!r} failed: {exc}", file=sys.stderr)
-                continue
+                self._record_failure(source, source.board_url, exc)
+            for seed in source.seed_jobs:
+                try:
+                    seed_page = (
+                        board_page
+                        if board_page is not None and _canonicalize_url(seed.url) == _canonicalize_url(source.board_url)
+                        else self._fetch_page(seed.url)
+                    )
+                    jobs.append(normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority))
+                except Exception as exc:
+                    self._record_failure(source, seed.url, exc)
+            if source.extract_headings and board_page is not None:
+                existing_titles = {_normalized_title(job.title) for job in jobs}
+                for heading in board_page.headings:
+                    normalized_heading = _normalized_title(heading)
+                    if normalized_heading in existing_titles or not _heading_title_allowed(source, heading):
+                        continue
+                    jobs.append(normalize_inline_job(source, heading, board_page, self.settings.analysis_priority))
+                    existing_titles.add(normalized_heading)
             for job in jobs:
                 if job.source_job_id in seen:
                     continue
                 seen.add(job.source_job_id)
                 yield job
+
+    def _record_failure(self, source: CustomSource, url: str, exc: Exception) -> None:
+        self.errors += 1
+        print(f"custom: source {source.name!r} page {url!r} failed: {exc}", file=sys.stderr)
 
     def _fetch_page(self, url: str) -> PageData:
         request = Request(url, headers={"Accept": "text/html,application/xhtml+xml", "User-Agent": USER_AGENT})
@@ -256,6 +297,28 @@ def normalize_seed_job(
         source="custom",
         source_job_id=_job_identity(seed.url),
         source_url=seed.url,
+        title=title,
+        company=source.company,
+        company_url=source.company_url,
+        description=description,
+        location=source.location,
+        remote=source.remote,
+        source_metadata=_metadata(source),
+        analysis_priority=analysis_priority,
+    )
+
+
+def normalize_inline_job(
+    source: CustomSource,
+    title: str,
+    page: PageData,
+    analysis_priority: int,
+) -> NormalizedJob:
+    description = page.description or f"{title} at {source.company}."
+    return NormalizedJob(
+        source="custom",
+        source_job_id=_inline_job_identity(source.board_url, title),
+        source_url=source.board_url,
         title=title,
         company=source.company,
         company_url=source.company_url,
@@ -346,7 +409,10 @@ def _load_source(
         "location",
         "notes",
         "title_terms",
+        "heading_title_terms",
         "exclude_title_terms",
+        "extract_headings",
+        "allowed_job_hosts",
         "seed_jobs",
     }
     unknown = sorted(set(payload) - allowed)
@@ -356,7 +422,16 @@ def _load_source(
     company = _required_string(payload.get("company"), f"{name} company")
     board_url = _required_url(payload.get("board_url"), f"{name} board_url")
     terms = tuple(_string_list(payload.get("title_terms"))) or default_terms
+    heading_terms = tuple(_string_list(payload.get("heading_title_terms")))
     excludes = default_excludes + tuple(_string_list(payload.get("exclude_title_terms")))
+    extract_headings = payload.get("extract_headings", False)
+    if not isinstance(extract_headings, bool):
+        raise ValueError(f"{name} extract_headings must be true or false")
+    if extract_headings and not heading_terms:
+        raise ValueError(f"{name} heading_title_terms are required when extract_headings is true")
+    allowed_hosts = _hostname_list(payload.get("allowed_job_hosts"), f"{name} allowed_job_hosts")
+    if _hostname(board_url) in allowed_hosts:
+        raise ValueError(f"{name} allowed_job_hosts must not repeat the board host")
     seeds = tuple(
         SeedJob(
             title=_required_string(item.get("title"), f"{name} seed job title"),
@@ -378,7 +453,10 @@ def _load_source(
         location=_clean_string(payload.get("location")),
         notes=_clean_string(payload.get("notes")),
         title_terms=terms,
+        heading_title_terms=heading_terms,
         exclude_title_terms=excludes,
+        extract_headings=extract_headings,
+        allowed_job_hosts=allowed_hosts,
         seed_jobs=seeds,
     )
 
@@ -408,7 +486,7 @@ def _json_ld_items(value: Any) -> Iterable[dict[str, Any]]:
 
 
 def _looks_like_job_link(source: CustomSource, label: str, url: str) -> bool:
-    if not _same_site(source.board_url, url):
+    if not _allowed_job_host(source, url):
         return False
     searchable = f"{label} {url}".casefold()
     if any(term.casefold() in searchable for term in source.exclude_title_terms):
@@ -417,10 +495,18 @@ def _looks_like_job_link(source: CustomSource, label: str, url: str) -> bool:
 
 
 def _title_allowed(source: CustomSource, title: str) -> bool:
+    return _terms_allowed(source, title, source.title_terms)
+
+
+def _heading_title_allowed(source: CustomSource, title: str) -> bool:
+    return _terms_allowed(source, title, source.heading_title_terms)
+
+
+def _terms_allowed(source: CustomSource, title: str, terms: tuple[str, ...]) -> bool:
     searchable = title.casefold()
     if any(term.casefold() in searchable for term in source.exclude_title_terms):
         return False
-    return any(term.casefold() in searchable for term in source.title_terms)
+    return any(term.casefold() in searchable for term in terms)
 
 
 def _best_title(
@@ -528,6 +614,16 @@ def _job_identity(url: str) -> str:
     return f"url-sha256:{digest}"
 
 
+def _inline_job_identity(board_url: str, title: str) -> str:
+    identity = f"{_canonicalize_url(board_url)}\n{_normalized_title(title)}"
+    digest = hashlib.sha256(identity.encode("utf-8")).hexdigest()
+    return f"inline-sha256:{digest}"
+
+
+def _normalized_title(title: str) -> str:
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", title).casefold()).strip()
+
+
 def _canonicalize_url(url: str) -> str:
     parsed = urlsplit(url)
     return urlunsplit(
@@ -541,10 +637,16 @@ def _canonicalize_url(url: str) -> str:
     )
 
 
-def _same_site(base_url: str, candidate_url: str) -> bool:
-    base = urlsplit(base_url)
+def _allowed_job_host(source: CustomSource, candidate_url: str) -> bool:
     candidate = urlsplit(candidate_url)
-    return candidate.scheme in {"http", "https"} and candidate.netloc.casefold() == base.netloc.casefold()
+    if candidate.scheme not in {"http", "https"}:
+        return False
+    host = _hostname(candidate_url)
+    return host == _hostname(source.board_url) or host in source.allowed_job_hosts
+
+
+def _hostname(url: str) -> str:
+    return (urlsplit(url).hostname or "").casefold().rstrip(".")
 
 
 def _response_charset(response: Any) -> str | None:
@@ -572,6 +674,24 @@ def _string_list(value: Any) -> list[str]:
     if not isinstance(value, list):
         raise ValueError("expected a list of strings")
     return [item.strip() for item in value if isinstance(item, str) and item.strip()]
+
+
+def _hostname_list(value: Any, name: str) -> tuple[str, ...]:
+    if value is None:
+        return ()
+    if not isinstance(value, list):
+        raise ValueError(f"{name} must be a list of hostnames")
+    hosts: list[str] = []
+    for item in value:
+        if not isinstance(item, str):
+            raise ValueError(f"{name} must contain only hostnames")
+        host = item.strip().casefold().rstrip(".")
+        if not host or not _HOSTNAME_RE.fullmatch(host):
+            raise ValueError(f"{name} contains an invalid hostname: {item!r}")
+        if host in hosts:
+            raise ValueError(f"{name} contains duplicate hostname: {host}")
+        hosts.append(host)
+    return tuple(hosts)
 
 
 def _required_string(value: Any, name: str) -> str:
