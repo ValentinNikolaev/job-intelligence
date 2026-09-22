@@ -67,3 +67,15 @@ Treat `config/codex-workflows.yaml` as the project model-routing policy. The fil
 - If there are no repository changes, do not create an empty commit; report that no publication was needed.
 - End the user-facing report with a short changelog derived from the committed diff, followed by the commit hash and publication result.
 - Do not open a pull request unless the user explicitly asks for one.
+
+
+## Application quality
+
+- New application drafts follow quality schema 2 in `docs/application-quality.md`.
+  Legacy receipts must remain identified as legacy; never upgrade them by relabeling.
+- Candidate evidence banks are derived indexes of immutable candidate source files.
+  Unverified, cannot-confirm and retracted entries cannot support generated claims.
+- Application submission/outcome history is descriptive. Do not interpret missing
+  responses as employer rejection, or change status from lifecycle events.
+- Ancillary application documents require explicit named-vacancy approval. Never send
+  messages, submit applications, or change candidate source facts from these commands.

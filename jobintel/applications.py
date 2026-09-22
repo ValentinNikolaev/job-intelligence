@@ -17,6 +17,7 @@ from typing import Any, Protocol
 import yaml
 
 from . import storage_bridge as op
+from .evidence import EvidenceError, validate_claims_ledger, validate_evidence_bank
 
 
 APPLICATION_FILES = {
@@ -31,7 +32,7 @@ APPLICATION_DOCUMENTS = {
     "analysis": "analysis_markdown",
     "interview-preparation": "interview_preparation_markdown",
 }
-QUALITY_CONTRACT_VERSION = 1
+QUALITY_CONTRACT_VERSION = 2
 
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
@@ -148,6 +149,7 @@ _MIN_APPLICATION_WORD_COUNTS = {
     "analysis_markdown": 700,
     "interview_preparation_markdown": 800,
 }
+_COMPACT_MIN_WORD_COUNTS = {**_MIN_APPLICATION_WORD_COUNTS, "cv_markdown": 300, "cover_letter_markdown": 150}
 _HANDOFF_REQUIREMENTS = {
     "research.md": (100, ("Fact", "Inference", "Unknown")),
     "evidence-map.md": (
@@ -281,8 +283,10 @@ def validate_application_draft(
         vacancy=vacancy,
         document=document,
         reference_date=reference_date,
+        document_format=_draft_format(draft_directory),
     )
-    _validate_draft_quality(draft_directory.resolve(), validated, document=document)
+    _validate_draft_quality(draft_directory.resolve(), validated, document=document,
+                            project_root=op.project_root(vacancy_directory), vacancy_text=str(vacancy["job_description"]))
     return validated
 
 
@@ -352,6 +356,7 @@ class ApplicationGenerator:
         *,
         document: str | None = None,
         clock: Callable[[], datetime] | None = None,
+        allow_legacy_drafts: bool = False,
     ) -> None:
         self.registry_root = registry_root.resolve()
         self.profile_paths = tuple(path.resolve() for path in profile_paths)
@@ -360,6 +365,7 @@ class ApplicationGenerator:
         self.converter = converter
         self.model = str(getattr(client, "model", client.__class__.__name__))
         self.document = _normalize_document(document)
+        self.allow_legacy_drafts = allow_legacy_drafts
         self._clock = clock or (lambda: datetime.now(timezone.utc))
 
     @op.exclusive
@@ -405,6 +411,7 @@ class ApplicationGenerator:
             vacancy=vacancy,
             document=self.document,
             reference_date=generated_at,
+            document_format=_draft_format(self.client.directory) if isinstance(self.client, CodexApplicationDraftClient) else "standard",
         )
         quality = _document_quality_report(generated)
         if isinstance(self.client, CodexApplicationDraftClient):
@@ -413,8 +420,13 @@ class ApplicationGenerator:
                     self.client.directory,
                     generated,
                     document=self.document,
+                    project_root=self.registry_root.parent,
+                    vacancy_text=str(vacancy["job_description"]),
                 )
             )
+        expected_versions["quality_contract_version"] = quality["contract_version"]
+        if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] != 2 and not self.allow_legacy_drafts:
+            raise ApplicationError("new application publication requires quality schema_version 2; legacy schema 1 is read-only")
         cv_export_files = _cv_export_files(meta)
 
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
@@ -434,6 +446,22 @@ class ApplicationGenerator:
                 self.converter.convert(
                     staging / "cover-letter.md", staging / "cover-letter.docx"
                 )
+            if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] == 2:
+                from .document_quality import DocumentQualityError, validate_export
+
+                declaration = _read_yaml_mapping(self.client.directory / "quality.yaml", "application quality declaration")
+                reviews = declaration.get("export_reviews", {})
+                exports = {}
+                try:
+                    for name in _selected_documents(self.document):
+                        if name in {"cv", "cover-letter"}:
+                            exports[name] = validate_export(
+                                staging / f"{name}.md", staging / f"{name}.docx",
+                                visual_review=reviews.get(name) if isinstance(reviews, Mapping) else None,
+                            )
+                except DocumentQualityError as exc:
+                    raise ApplicationError(f"export quality validation failed: {exc}") from exc
+                quality["exports"] = exports
             document_versions = _document_versions_from_manifest(
                 previous_manifest,
                 application_dir,
@@ -554,7 +582,10 @@ def validate_application_package(
     vacancy: Mapping[str, Any] | None = None,
     document: str | None = None,
     reference_date: date | datetime | None = None,
+    document_format: str = "standard",
 ) -> dict[str, str]:
+    if document_format not in {"standard", "compact"}:
+        raise ApplicationError("document_format must be standard or compact")
     document = _normalize_document(document)
     expected = set(_selected_fields(document))
     if set(value) != expected:
@@ -591,7 +622,7 @@ def validate_application_package(
             if phrase.casefold() in folded:
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
         word_count = _word_count(content)
-        word_minimum = _MIN_APPLICATION_WORD_COUNTS[field]
+        word_minimum = (_COMPACT_MIN_WORD_COUNTS if document_format == "compact" else _MIN_APPLICATION_WORD_COUNTS)[field]
         if word_count < word_minimum:
             raise ApplicationError(
                 f"{field} is below {word_minimum}-word minimum ({word_count} words)"
@@ -604,13 +635,13 @@ def validate_application_package(
     if "cv_markdown" in result:
         _validate_cv_links(result["cv_markdown"])
         _validate_cv_skills(result["cv_markdown"])
-        _validate_cv_experience_bullets(result["cv_markdown"])
+        _validate_cv_experience_bullets(result["cv_markdown"], minimum=6 if document_format == "compact" else 10)
         _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
         _validate_cv_role_technologies(result["cv_markdown"])
         if vacancy is not None:
             _validate_cv_headline(result["cv_markdown"], vacancy)
     if "cover_letter_markdown" in result:
-        _validate_cover_letter_paragraphs(result["cover_letter_markdown"])
+        _validate_cover_letter_paragraphs(result["cover_letter_markdown"], minimum=3 if document_format == "compact" else 4)
     return result
 
 
@@ -663,7 +694,7 @@ def _validate_cv_skills(markdown: str) -> None:
         )
 
 
-def _validate_cv_experience_bullets(markdown: str) -> None:
+def _validate_cv_experience_bullets(markdown: str, *, minimum: int = 10) -> None:
     section = _markdown_section(markdown, "Experience")
     bullets = [
         line
@@ -671,14 +702,14 @@ def _validate_cv_experience_bullets(markdown: str) -> None:
         if re.match(r"^\s*[-*]\s+\S", line)
         and not re.match(r"^\s*[-*]\s+(?:\*\*)?Technologies", line, re.IGNORECASE)
     ]
-    if len(bullets) < 10:
+    if len(bullets) < minimum:
         raise ApplicationError(
-            "cv_markdown Experience must contain at least 10 evidence-backed bullets "
+            f"cv_markdown Experience must contain at least {minimum} evidence-backed bullets "
             f"({len(bullets)} found)"
         )
 
 
-def _validate_cover_letter_paragraphs(markdown: str) -> None:
+def _validate_cover_letter_paragraphs(markdown: str, *, minimum: int = 4) -> None:
     body: list[str] = []
     for block in re.split(r"\n\s*\n", markdown.strip()):
         text = " ".join(
@@ -691,9 +722,9 @@ def _validate_cover_letter_paragraphs(markdown: str) -> None:
             continue
         if _word_count(text) >= 20:
             body.append(text)
-    if not 4 <= len(body) <= 6:
+    if not minimum <= len(body) <= 6:
         raise ApplicationError(
-            "cover_letter_markdown must contain 4 to 6 substantive body paragraphs "
+            f"cover_letter_markdown must contain {minimum} to 6 substantive body paragraphs "
             f"({len(body)} found)"
         )
 
@@ -719,13 +750,16 @@ def _validate_draft_quality(
     package: Mapping[str, str],
     *,
     document: str | None,
+    project_root: Path | None = None,
+    vacancy_text: str | None = None,
 ) -> dict[str, Any]:
     quality_path = draft_directory / "quality.yaml"
     quality = _read_yaml_mapping(quality_path, "application quality declaration")
-    if quality.get("schema_version") != QUALITY_CONTRACT_VERSION:
+    version = quality.get("schema_version")
+    if type(version) is not int or version not in {1, QUALITY_CONTRACT_VERSION}:
         raise ApplicationError(
             "application quality declaration schema_version must be "
-            f"{QUALITY_CONTRACT_VERSION}: {quality_path}"
+            f"1 (legacy) or {QUALITY_CONTRACT_VERSION}: {quality_path}"
         )
     if quality.get("workflow") != "two-wave":
         raise ApplicationError("application quality declaration workflow must be two-wave")
@@ -819,6 +853,15 @@ def _validate_draft_quality(
         }
 
     report = _document_quality_report(package)
+    report["contract_version"] = version
+    report["document_format"] = _draft_format(draft_directory)
+    if version == 1:
+        report["migration_note"] = "Legacy contract 1: source-linked claims and export checks are not verified; prepare a new contract 2 draft."
+    else:
+        report["grounding"] = _validate_v2_grounding(quality, package, draft_directory, project_root, vacancy_text)
+        for receipt in report["documents"].values():
+            receipt["evidence_bank_path"] = report["grounding"]["evidence_bank_path"]
+            receipt["evidence_bank_sha256"] = report["grounding"]["evidence_bank"]["sha256"]
     report.update(
         {
             "declaration_sha256": _content_version(
@@ -828,6 +871,107 @@ def _validate_draft_quality(
             "handoffs": handoff_report,
         }
     )
+    return report
+
+
+def _draft_format(directory: Path) -> str:
+    quality = _read_yaml_mapping(directory / "quality.yaml", "application quality declaration")
+    value = quality.get("document_format", "standard")
+    if not isinstance(value, str) or value not in {"standard", "compact"}:
+        raise ApplicationError("document_format must be standard or compact")
+    if value == "compact" and quality.get("schema_version") != 2:
+        raise ApplicationError("compact documents require quality schema_version 2")
+    return value
+
+
+def _contained_file(root: Path, relative: Any, label: str) -> Path:
+    if not isinstance(relative, str) or not relative.strip() or Path(relative).is_absolute():
+        raise ApplicationError(f"{label} must be a relative file path")
+    path = (root / relative).resolve()
+    if not path.is_relative_to(root.resolve()):
+        raise ApplicationError(f"{label} escapes its root")
+    return path
+
+
+def _validate_v2_grounding(
+    quality: Mapping[str, Any], package: Mapping[str, str], draft: Path, root: Path | None,
+    vacancy_text: str | None = None,
+) -> dict[str, Any]:
+    if root is None:
+        raise ApplicationError("quality v2 requires a project root containing registry/candidate")
+    bank_path = _contained_file(root, quality.get("evidence_bank"), "evidence_bank")
+    ledger_path = _contained_file(draft, quality.get("claims_ledger"), "claims_ledger")
+    bank = _read_yaml_mapping(bank_path, "candidate evidence bank")
+    ledger = _read_yaml_mapping(ledger_path, "application claims ledger")
+    try:
+        report = validate_claims_ledger(ledger, bank, package, root)
+    except EvidenceError as exc:
+        raise ApplicationError(f"application grounding failed: {exc}") from exc
+    review = quality["final_review"]
+    if not isinstance(review.get("reviewer"), str) or not review["reviewer"].strip():
+        raise ApplicationError("quality v2 final_review requires reviewer identity")
+    hashes = review.get("document_sha256")
+    if not isinstance(hashes, Mapping):
+        raise ApplicationError("quality v2 final_review requires document_sha256")
+    for name, field in APPLICATION_DOCUMENTS.items():
+        if field in package and hashes.get(name) != _content_version(package[field]):
+            raise ApplicationError(f"final review is stale or missing for {name}")
+    if review.get("quality_gate") is not True:
+        raise ApplicationError("quality v2 final_review quality_gate must be true")
+    if "cv_markdown" in package:
+        audit = quality.get("cv_audit")
+        if not isinstance(audit, Mapping) or not str(audit.get("target_role") or "").strip():
+            raise ApplicationError("quality v2 requires cv_audit target_role")
+        proofs = audit.get("top_third_evidence_ids")
+        if not isinstance(proofs, list) or not all(isinstance(item, str) for item in proofs) or len(set(proofs)) < 2 or not set(proofs).issubset(set(report["evidence_ids"])):
+            raise ApplicationError("cv_audit requires at least two used top_third_evidence_ids")
+        top = package["cv_markdown"][:len(package["cv_markdown"]) // 3]
+        for identifier in proofs:
+            if not any(claim.get("document") in {"cv", "cv_markdown"} and identifier in claim.get("evidence_ids", []) and claim.get("text", "") in top for claim in ledger["claims"]):
+                raise ApplicationError("cv_audit evidence must anchor text in the final CV top third")
+        decisions = audit.get("bullet_decisions")
+        if not isinstance(decisions, list) or not decisions or any(
+            not isinstance(item, Mapping) or item.get("decision") not in {"keep", "remove", "rewrite"}
+            or not str(item.get("reason") or "").strip() or not str(item.get("text") or "").strip()
+            for item in decisions
+        ):
+            raise ApplicationError("cv_audit requires reasoned bullet_decisions")
+        report["cv_audit"] = dict(audit)
+    from .requirements import validate_requirements
+
+    try:
+        requirements = validate_requirements(
+            quality.get("requirements"), vacancy_text=vacancy_text,
+            candidate_text="\n".join(entry["source"]["quote"] for entry in bank["entries"]),
+        )
+    except ValueError as exc:
+        raise ApplicationError(f"quality v2 requirements: {exc}") from exc
+    if not requirements:
+        raise ApplicationError("quality v2 requires a structured requirements matrix")
+    for requirement in requirements:
+        ids = requirement.get("evidence_ids", [])
+        if not isinstance(ids, list) or not all(isinstance(item, str) for item in ids) or not set(ids).issubset(set(report["evidence_ids"])):
+            raise ApplicationError("requirement references unused evidence")
+        if requirement["match"] in {"strong", "partial"} and not ids:
+            raise ApplicationError("strong/partial requirements need evidence_ids")
+        if requirement["candidate_quote"] and not any(
+            entry["id"] in ids and requirement["candidate_quote"] in entry["source"]["quote"]
+            for entry in bank["entries"]
+        ):
+            raise ApplicationError("requirement candidate_quote must occur in its referenced evidence")
+    if "cover_letter_markdown" in package:
+        for story in quality["cover_letter"]["evidence_stories"]:
+            ids = story.get("evidence_ids")
+            if not isinstance(ids, list) or not ids or not all(isinstance(item, str) for item in ids) or not set(ids).issubset(set(report["evidence_ids"])):
+                raise ApplicationError("cover letter stories require used evidence_ids")
+            source = str(story.get("candidate_source", "")).replace("\\", "/")
+            if not all(any(entry["id"] == identifier and entry["source"]["path"].replace("\\", "/") == source for entry in bank["entries"]) for identifier in ids):
+                raise ApplicationError("cover letter story source must match its referenced evidence")
+            if not all(any(claim.get("document") in {"cover-letter", "cover_letter_markdown"} and identifier in claim.get("evidence_ids", []) for claim in ledger["claims"]) for identifier in ids):
+                raise ApplicationError("cover letter stories must ground actual letter claims")
+    report.update({"reviewer": review["reviewer"], "document_sha256": dict(hashes), "requirements": requirements,
+                   "evidence_bank_path": str(quality["evidence_bank"]), "claims_ledger_path": str(quality["claims_ledger"]),
+                   "claims": ledger["claims"]})
     return report
 
 
@@ -858,6 +1002,13 @@ def _merge_quality_reports(
         documents.update(current_documents)
     merged.update(current)
     merged["documents"] = documents
+    previous_exports = previous.get("exports")
+    current_exports = current.get("exports")
+    if isinstance(previous_exports, Mapping) or isinstance(current_exports, Mapping):
+        merged["exports"] = {
+            **(dict(previous_exports) if isinstance(previous_exports, Mapping) else {}),
+            **(dict(current_exports) if isinstance(current_exports, Mapping) else {}),
+        }
     return merged
 
 
@@ -1095,6 +1246,39 @@ def _package_is_current(
     except ApplicationError:
         return False
     document = _normalize_document(document)
+    quality = manifest.get("quality", {})
+    quality_documents = quality.get("documents", {}) if isinstance(quality, Mapping) else {}
+    for name in _selected_documents(document):
+        receipt = quality_documents.get(name, {}) if isinstance(quality_documents, Mapping) else {}
+        if isinstance(receipt, Mapping) and receipt.get("evidence_bank_path"):
+            root = op.project_root(application_dir)
+            if root is None:
+                return False
+            try:
+                path = _contained_file(root, receipt["evidence_bank_path"], "evidence_bank")
+                bank = _read_yaml_mapping(path, "candidate evidence bank")
+                if validate_evidence_bank(bank, root)["sha256"] != receipt.get("evidence_bank_sha256"):
+                    return False
+                markdown = op.read_text(application_dir / APPLICATION_FILES[APPLICATION_DOCUMENTS[name]])
+                if _content_version(markdown.strip() + "\n") != receipt.get("sha256"):
+                    return False
+                if name in {"cv", "cover-letter"}:
+                    from .document_quality import file_sha256
+
+                    exports = quality.get("exports", {})
+                    export = exports.get(name, {}) if isinstance(exports, Mapping) else {}
+                    if not isinstance(export, Mapping) or file_sha256(application_dir / f"{name}.docx") != export.get("artifact_sha256"):
+                        return False
+                    if file_sha256(application_dir / f"{name}.md") != export.get("source_sha256"):
+                        return False
+                    if name == "cv":
+                        stem = str(expected_versions.get("cv_export_stem", ""))
+                        if file_sha256(application_dir / f"{stem}.docx") != export.get("artifact_sha256"):
+                            return False
+                        if file_sha256(application_dir / f"{stem}.md") != export.get("source_sha256"):
+                            return False
+            except (ApplicationError, EvidenceError, OSError):
+                return False
     document_versions = manifest.get("documents")
     if isinstance(document_versions, dict):
         for selected_document in _selected_documents(document):

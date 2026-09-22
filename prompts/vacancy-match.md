@@ -39,7 +39,25 @@ concerns:
   - Material uncertainty or concern
 hard_rejection: false
 hard_rejection_reason: null
+requirements: []
 ```
+
+Populate `requirements` with an auditable matrix for this vacancy. Each row has exactly
+`requirement`, `importance`, `basis`, `jd_quote`, `match`, `candidate_quote`, `risk`,
+`mitigation`, and `hard_blocker`. Use importance `critical`, `high`, `meaningful`,
+`preferred`, or `low_signal`; basis `stated`, `structural`, or `inferred`; and match
+`strong`, `partial`, `missing`, `unknown`, or `not_applicable`.
+Use verbatim quotes from the supplied vacancy and Candidate Profile, not paraphrases.
+`stated` and `structural` require a `jd_quote`; `inferred` requires an empty quote and
+can never be `critical`, `high`, or a hard blocker. Strong and partial matches require
+candidate evidence. An unknown work-authorization, salary, availability, or skill fact
+is not an established incompatibility. A hard blocker requires a stated requirement,
+`missing`, and candidate evidence establishing the conflict, plus an overall hard
+rejection. High/critical partial, missing, or unknown matches need a specific risk and
+action. Include every critical/high requirement; do not manufacture rows to fill a
+quota. Leave risk/action/quotes empty when genuinely inapplicable. Importance guides
+preparation and does not introduce an additional numeric score or change the weights.
+Older stored results without a matrix remain readable; every new analysis includes it.
 
 For a batch, return a YAML mapping with `results`. Each result key must be the exact
 vacancy `directory` from the input pack and each value must contain exactly the mapping

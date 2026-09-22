@@ -496,13 +496,52 @@ def _validate_artifact_references(snapshot: Mapping[str, Any], root: Path) -> di
                     str(item.get("sha256") or ""),
                 )
             )
+    lifecycle_files = _lifecycle_artifact_references(collections, root)
+    for item in lifecycle_files:
+        required.append(item)
+        total += item["size"]
     return {
         "files": checked,
+        "lifecycle_files": len(lifecycle_files),
         "evidence": evidence_checked,
         "bytes": total,
         "verified": True,
         "_required": required,
     }
+
+
+
+def _lifecycle_artifact_references(collections: Mapping[str, Any], root: Path) -> list[dict[str, Any]]:
+    """Keep confirmed sent bytes inseparable from their canonical lifecycle history."""
+    references = []
+    history_root = (root / "registry" / "application-history").resolve()
+    for log in _collection_documents(collections, "operational_logs"):
+        if not str(log.get("_id", "")).startswith("application-lifecycle:"):
+            continue
+        payload = log.get("payload", {})
+        for event in payload.get("events", []):
+            if event.get("kind") != "submission":
+                continue
+            base = (root / str(event.get("snapshot", ""))).resolve()
+            base.relative_to(history_root)
+            receipt_path = base / "receipt.json"
+            raw_receipt = receipt_path.read_bytes()
+            expected = {"schema_version": 1, "vacancy_id": payload["vacancy_id"],
+                        **{key: value for key, value in event.items() if key != "recorded_at"}}
+            if json.loads(raw_receipt) != expected:
+                raise ValueError("submission receipt differs from canonical lifecycle history")
+            files = [(receipt_path, raw_receipt)]
+            for artifact in event["artifacts"]:
+                path = (base / artifact["snapshot"]).resolve()
+                path.relative_to(base)
+                raw = path.read_bytes()
+                if len(raw) != artifact["size"] or hashlib.sha256(raw).hexdigest() != artifact["sha256"]:
+                    raise ValueError("submission snapshot differs from canonical lifecycle history")
+                files.append((path, raw))
+            for path, raw in files:
+                locator = path.relative_to(root.resolve()).as_posix()
+                references.append(_required_payload_reference("", locator, len(raw), hashlib.sha256(raw).hexdigest()))
+    return references
 
 
 def _required_payload_reference(

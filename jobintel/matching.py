@@ -14,6 +14,7 @@ from typing import Any, Protocol
 import yaml
 
 from . import storage_bridge as op
+from .requirements import validate_requirements, render_requirements
 
 
 RECOMMENDATIONS = (
@@ -35,6 +36,7 @@ MATCH_OUTPUT_SCHEMA: dict[str, Any] = {
         "concerns": {"type": "array", "items": {"type": "string"}},
         "hard_rejection": {"type": "boolean"},
         "hard_rejection_reason": {"type": ["string", "null"]},
+        "requirements": {"type": "array", "maxItems": 100, "items": {"type": "object"}},
     },
     "required": [
         "score",
@@ -241,7 +243,6 @@ class MatchAnalyzer:
         expected_job_version: str | None = None,
     ) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
-        del profile_text, vacancy
         if analysis_should_skip_status(meta):
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
         if expected_profile_version and expected_profile_version != profile_version:
@@ -265,7 +266,7 @@ class MatchAnalyzer:
                     score if isinstance(score, int) and not isinstance(score, bool) else None,
                 )
 
-        validated = validate_match(analysis)
+        validated = validate_match(analysis, vacancy_text=str(vacancy["job_description"]), candidate_text=profile_text)
         stored = {
             **validated,
             "analyzed_at": _utc_iso(self._clock()),
@@ -417,7 +418,7 @@ def publish_analysis_batch(
             raise MatchError("analysis pack item must be a mapping")
         directory_name = str(item.get("directory", ""))
         directory = analyzer.registry_root / "jobs" / directory_name
-        _, profile_version, _, _, job_version = analyzer._inputs(directory)
+        profile_text, profile_version, _, vacancy, job_version = analyzer._inputs(directory)
         if str(item.get("profile_version", "")) != profile_version:
             raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")
         if str(item.get("job_version", "")) != job_version:
@@ -430,7 +431,7 @@ def publish_analysis_batch(
         result = results[directory_name]
         if not isinstance(result, Mapping):
             raise MatchError(f"batch result must be a mapping: {directory_name}")
-        validated[directory_name] = validate_match(result)
+        validated[directory_name] = validate_match(result, vacancy_text=str(vacancy["job_description"]), candidate_text=profile_text)
     summary = AnalysisSummary(selected=len(items))
     for item in items:
         directory = analyzer.registry_root / "jobs" / str(item.get("directory", ""))
@@ -447,7 +448,8 @@ def publish_analysis_batch(
     return summary
 
 
-def validate_match(value: Mapping[str, Any]) -> dict[str, Any]:
+def validate_match(value: Mapping[str, Any], *, vacancy_text: str | None = None,
+                   candidate_text: str | None = None) -> dict[str, Any]:
     expected = {
         "score",
         "recommendation",
@@ -458,9 +460,9 @@ def validate_match(value: Mapping[str, Any]) -> dict[str, Any]:
         "hard_rejection",
         "hard_rejection_reason",
     }
-    if set(value) != expected:
+    if set(value) - {"requirements"} != expected:
         missing = sorted(expected - set(value))
-        extra = sorted(set(value) - expected)
+        extra = sorted(set(value) - expected - {"requirements"})
         details = []
         if missing:
             details.append("missing " + ", ".join(missing))
@@ -490,7 +492,7 @@ def validate_match(value: Mapping[str, Any]) -> dict[str, Any]:
     if hard_rejection and (recommendation != "not_match" or score > 24):
         raise MatchError("a hard rejection must be not_match with a score from 0 to 24")
 
-    return {
+    result = {
         "score": score,
         "recommendation": recommendation,
         "summary": summary,
@@ -500,6 +502,17 @@ def validate_match(value: Mapping[str, Any]) -> dict[str, Any]:
         "hard_rejection": hard_rejection,
         "hard_rejection_reason": reason,
     }
+    if "requirements" in value:
+        try:
+            rows = validate_requirements(value["requirements"], vacancy_text=vacancy_text, candidate_text=candidate_text)
+        except ValueError as exc:
+            raise MatchError(str(exc)) from exc
+        if any(row["hard_blocker"] for row in rows) and not hard_rejection:
+            raise MatchError("a confirmed requirement hard blocker requires hard_rejection")
+        if hard_rejection and rows and not any(row["hard_blocker"] for row in rows):
+            raise MatchError("hard_rejection requires a stated confirmed blocker in the requirement matrix")
+        result["requirements"] = rows
+    return result
 
 
 def render_match_markdown(match: Mapping[str, Any]) -> str:
@@ -515,6 +528,8 @@ def render_match_markdown(match: Mapping[str, Any]) -> str:
     _append_section(lines, "Why it matches", match["strengths"])
     _append_section(lines, "Gaps", match["gaps"])
     _append_section(lines, "Concerns", match["concerns"])
+    if match.get("requirements"):
+        lines.extend(render_requirements(match["requirements"]))
     if match.get("hard_rejection"):
         _append_section(lines, "Hard rejection", [match.get("hard_rejection_reason")])
     return "\n".join(lines).rstrip() + "\n"

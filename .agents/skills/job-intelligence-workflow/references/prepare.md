@@ -53,7 +53,7 @@ explicit single-document request, use the full-package flow below.
    final role; reuse an existing current CV only when that document depends on it.
 6. The final CV must contain Summary, Skills, Experience, Education, and Languages;
    12–18 evidence-backed hard skills; the candidate's real LinkedIn and GitHub URLs;
-   and at least 10 evidence-backed Experience bullets.
+   and at least 10 evidence-backed Experience bullets (six in compact format).
 7. The research role must use the vacancy posting plus at most two primary company
    sources in one pass. Exceed that budget only for a critical unresolved eligibility
    or company-identity fact and record the reason in its handoff. After all three Wave 1
@@ -64,7 +64,7 @@ explicit single-document request, use the full-package flow below.
    - cover letter: receive this vacancy, final CV, verified `parts/research.md`, and only
      the candidate evidence required to ground the selected stories; invoke the
      highest installed version of `$write-cover-letter` in Draft mode and write only
-     `cover-letter.md`. It must contain four to six body paragraphs, two distinct
+     `cover-letter.md`. In standard format it must contain four to six body paragraphs (three to six in compact), two distinct
      evidence stories, and a company-specific hook grounded in verified research;
    - interview preparation: receive this vacancy, final CV,
      `parts/requirements-risks.md`, and verified `parts/research.md`; write only
@@ -88,7 +88,7 @@ explicit single-document request, use the full-package flow below.
    or final artifacts from different vacancies. Complete all four final drafts for the
    default scope, or only the explicitly selected draft, under its own
    `.codex-work/application/<vacancy-directory>/`.
-11. Before validation, write `quality.yaml`, schema version 1, in the vacancy draft:
+11. Before validation, write `quality.yaml`, schema version 2, in the vacancy draft:
     `workflow: two-wave`; cover-letter skill name, version, and completed workbench;
     two evidence stories with candidate sources; company-motivation fact and source URL;
     and final claim grounding plus cross-file consistency results.
@@ -111,3 +111,12 @@ explicit single-document request, use the full-package flow below.
     scope, confirm only that document's canonical and derived outputs plus the manifest,
     and verify other existing artifacts were unchanged. Confirm the manifest retains the
     quality contract, provenance, word counts, and hashes.
+
+## Version 2 preparation contract
+
+All new drafts use quality schema 2 and `docs/application-quality.md`. Include the
+verified evidence bank, claims ledger, sourced requirement matrix, format selection,
+final CV audit and hash-bound review. Read the compact-format overrides in the
+application prompt before drafting. Legacy schema 1 stays readable with a migration
+notice and does not become current v2 evidence by relabeling. Review actual exported
+text and rendered pages; never mark an uninspected file visually reviewed.

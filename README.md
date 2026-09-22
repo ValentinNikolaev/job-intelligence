@@ -262,6 +262,17 @@ automate repetitive steps, and honest about where human judgment still matters.
 Job Intelligence collects, normalizes, deduplicates, stores, ranks, indexes, and
 prepares vacancy-specific application materials.
 
-It stays small by design. No database. No automatic submission. No hidden
-status tracking. No product-style UI. The repository is a working system and a
-reviewable record of the decisions behind that system.
+MongoDB stores operational vacancy and lifecycle records; candidate evidence and
+application documents remain files. Submission is manual, and vacancy status changes
+require an explicit user request. The repository keeps a reviewable record of those
+decisions.
+
+## Application quality and follow-through
+
+The [quality v2 contract](docs/application-quality.md) adds source-backed
+evidence, grounded claim ledgers, compact document formats, a final CV review, and
+real DOCX export checks. Old receipts stay explicitly legacy. The
+[application lifecycle](docs/application-lifecycle.md) preserves exact sent files,
+records confirmed outcomes, reports descriptive conversion rates and follow-up timing,
+and publishes approved form-answer/interview/follow-up drafts. No application is sent
+and no status changes automatically.

@@ -34,7 +34,7 @@ previous package. The default selection is all four documents. An explicit
 `--document` selection updates only `cv`, `cover-letter`, `analysis`, or
 `interview-preparation` while carrying forward other recognized artifacts unchanged.
 
-The quality contract rejects skeletal drafts before conversion. Full packages require
+The quality contract rejects skeletal drafts before conversion. Standard full packages require
 at least 500 CV words, 300 cover-letter words, 700 analysis words, and 800 interview
 preparation words while retaining the existing hard ceilings. It also checks required
 CV sections, real profile URLs, a bounded skills inventory, evidence-backed Experience
@@ -80,3 +80,13 @@ Scores below `prepare_min_score` are not prepared. Vacancies older than
 `prepare_max_age_days` from `discovered_at` are excluded from preparation. There is no
 automatic preparation queue: the user chooses one to 10 vacancies from analyzed matches
 and requests preparation by vacancy IDs or registry directories.
+
+## Application quality and follow-through
+
+The [quality v2 contract](application-quality.md) adds source-backed
+evidence, grounded claim ledgers, compact document formats, a final CV review, and
+real DOCX export checks. Old receipts stay explicitly legacy. The
+[application lifecycle](application-lifecycle.md) preserves exact sent files,
+records confirmed outcomes, reports descriptive conversion rates and follow-up timing,
+and publishes approved form-answer/interview/follow-up drafts. No application is sent
+and no status changes automatically.

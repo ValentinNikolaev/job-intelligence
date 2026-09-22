@@ -49,12 +49,12 @@ class WorkflowContractTests(unittest.TestCase):
             ".agents/skills/job-intelligence-workflow/SKILL.md"
         )
 
-        self.assertIn("## One-time Git preflight", contract)
-        self.assertIn("git status --short", contract)
-        self.assertIn("git fetch origin", contract)
-        self.assertIn("git rev-list --left-right --count", contract)
-        self.assertIn("Do not repeat the fetch", contract)
-        self.assertIn("one-time Git preflight", workflow_skill)
+        self.assertIn("## One-time repository preflight", contract)
+        self.assertIn("gh repo sync", contract)
+        self.assertIn("gh api", contract)
+        self.assertIn("never invoke `git` directly", contract)
+        self.assertIn("concurrent changes survive", contract)
+        self.assertIn("one-time repository preflight", workflow_skill)
 
     def test_application_contract_has_bounded_research_and_output(self) -> None:
         prompt = self._read("prompts/vacancy-application.md")
@@ -77,7 +77,7 @@ class WorkflowContractTests(unittest.TestCase):
     def test_quality_contract_requires_two_wave_receipt_and_grounded_cover_letter(self) -> None:
         source = self._read("jobintel/applications.py")
         for token in (
-            "QUALITY_CONTRACT_VERSION = 1",
+            "QUALITY_CONTRACT_VERSION = 2",
             "quality.yaml",
             "research.md",
             "evidence-map.md",
@@ -141,7 +141,7 @@ class WorkflowContractTests(unittest.TestCase):
 
         for text in (contract, scheduled, workflow_skill):
             self.assertIn("human-written", text)
-            self.assertIn("staged diff", text)
+            self.assertRegex(text, r"(?:staged|complete) diff")
             self.assertIn("GitHub Actions templates", text)
             self.assertIn("generic `update data`", text)
 

@@ -1,0 +1,399 @@
+schema_version: 1
+entries:
+- id: cv-simple-life
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "### Simple.life\n\n**Software Developer**  \nNovember 2023 - March 2026\n\
+      \nSimple develops a subscription-based digital health platform focused on nutrition,\n\
+      healthy routines, weight management, tracking tools, and an AI coach.\n\n- Designed\
+      \ and owned a Go-based support automation platform connecting **Zendesk**,\n\
+      \  **Intercom**, and internal services.\n- Integrated **OpenAI**-powered auto-triage\
+      \ flows, automating or deflecting up to\n  **30%** of inbound tickets.\n- **Migrated**\
+      \ business-critical support flows from **Zendesk** to **Intercom's**\n  real-time\
+      \ engine, improving routing speed, handling consistency, and operational\n \
+      \ responsiveness.\n- **Built** resilient message delivery pipelines with fallback\
+      \ logic, retries, and\n  monitoring to improve communication reliability during\
+      \ incidents and peak load.\n- **Contributed** to an LLM-assisted support agent\
+      \ for email and multilingual\n  workflows, helping the support team expand automation\
+      \ coverage and ship new support\n  scenarios with less engineering involvement.\n\
+      \n**Skills:** Go | OpenAI | Support Automation | Backend Integrations | Monitoring\
+      \ |\nREST APIs | System Design"
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: cv-airslate
+  employer: airSlate
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "### airSlate\n\n**Software Developer**  \nFebruary 2021 - August 2023\n\
+      \nAirSlate is a global SaaS technology company specialized in no-code business\
+      \ process\nautomation, document management, and e-signature solutions.\n\n-\
+      \ **Reduced** peak load on the main database by removing bottlenecks and\n \
+      \ redistributing workload, improving service stability during high-traffic periods.\n\
+      - **Investigated** and addressed API and query performance bottlenecks across\
+      \ backend\n  services.\n- **Migrated** services from **ECS** to **Kubernetes**\
+      \ and prepared the runtime stack\n  for Kubernetes deployments with **Helm**,\
+      \ **GitHub Actions**, and **ArgoCD**.\n- Implemented **CI/CD pipelines** that\
+      \ shortened release cycles and improved delivery\n  consistency across services.\n\
+      - **Troubleshot** production issues using logs, monitoring, and SRE dashboards;\n\
+      \  delivered fixes and operational improvements.\n\n**Skills:** PHP | Laravel\
+      \ | MySQL | Elasticsearch | RabbitMQ | AWS | Kubernetes |\nPrometheus | REST\
+      \ APIs | CI/CD"
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: cv-hyprr
+  employer: Hyprr
+  role: Technical Lead
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\nHyprr\
+      \ was a creator-focused digital platform with blockchain/NFT components built\
+      \ to\nconnect artists and their audiences.\n\n- **Brought the product from prototype\
+      \ to closed beta in under 6 months.**\n- Influenced product development across\
+      \ project planning, microservice and serverless\n  architecture, CI/CD, and\
+      \ reliability/serviceability concerns.\n- Defined the technology roadmap with\
+      \ the CTO and helped establish the core stack for\n  product delivery.\n- Led\
+      \ backend development and worked on the platform's Ethereum-based digital asset\n\
+      \  components.\n\n**Skills:** PHP | Go | Laravel | MySQL | AWS | Kubernetes\
+      \ | Microservices | REST APIs |\nCI/CD"
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+    sections still obey the ten-year cutoff.
+  status: verified
+  verification: &id001
+    reviewer: Codex evidence-quality implementation review
+    reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+    method: Compared verbatim extract and attribution to immutable candidate source;
+      source-grounding verification, not new candidate attestation.
+- id: cv-pdffiller
+  employer: PDFfiller
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "### PDFfiller\n\n**Software Developer**  \nOctober 2016 - November 2019\n\
+      \nFounding member of the in-product backend team responsible for high-volume\n\
+      transactional and lifecycle email systems.\n\n- **Led a team of 5 backend engineers\
+      \ developing a transactional email service.**\n- **Scaled** the service to around\
+      \ **50 million** emails per month.\n- Made key technical decisions and built\
+      \ deep expertise in email infrastructure,\n  including **DNS**, **DKIM**, **SPF**,\
+      \ **DMARC**, and **FBLs**.\n- Led the team through **BFCM** peak periods with\
+      \ more than **10x** traffic growth.\n\n**Skills:** PHP | Laravel | MySQL | Elasticsearch\
+      \ | RabbitMQ | AWS | Email\nInfrastructure | REST APIs | SRE"
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-simple-app
+  employer: Simple App
+  role: Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Simple App\n\n**Software Developer**  \nNovember 2023 - Present (2\
+      \ years 5 months)\n\nI design and own a support automation platform that connects\
+      \ Zendesk, Intercom, and\ninternal services through a robust, scalable backend\
+      \ in Go. My work enables the support\nteam to operate faster, smarter, and at\
+      \ scale - even during peak loads.\n\n- Engineer a unified API orchestration\
+      \ layer to streamline ticket routing,\n  classification, and lifecycle tracking.\n\
+      - Integrate OpenAI-powered auto-triage flows, resulting in the automated handling\
+      \ or\n  deflection of up to 30% of inbound tickets.\n- Migrate business-critical\
+      \ flows from Zendesk to Intercom's real-time engine,\n  reducing first-response\
+      \ time by 35% and improving resolution rate by 28%.\n- Build resilient message\
+      \ delivery pipelines with fallback logic, retries, and\n  monitoring - reducing\
+      \ incident-related disruptions by over 50%.\n- Maintain high service uptime\
+      \ and throughput without adding team capacity, enabling\n  the support org to\
+      \ scale under pressure.\n- Collaborate cross-functionally with Support Ops,\
+      \ Product, and AI teams to align\n  automation with measurable impact.\n\nThe\
+      \ system now supports tens of thousands of user interactions per month with\
+      \ minimal\nhuman intervention, ensuring continuity, speed, and reliability in\
+      \ customer\ncommunication."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-crurated
+  employer: CRURATED
+  role: Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### CRURATED\n\n**Software Developer**  \nAugust 2024 - January 2026 (1\
+      \ year 6 months)  \nRome, Latium, Italy\n\nI architect and lead the development\
+      \ of the platform's internal event analytics\ninfrastructure - a mission-critical\
+      \ system that powers product metrics, reporting, and\nbusiness insights.\n\n\
+      - Architect a scalable, event-driven system using queues and EventBridge, increasing\n\
+      \  throughput to the DataLake by over 10x.\n- Define a robust, versioned event\
+      \ schema to enforce consistency across teams and\n  accelerate integration of\
+      \ new event types.\n- Reduce implementation time for new analytics streams from\
+      \ several days to under\n  4 hours through modular design.\n- Build routing\
+      \ logic supporting multiple downstreams (e.g., Webhook, S3) with strong\n  delivery\
+      \ guarantees and backpressure handling.\n- Implement fault-tolerant pipelines\
+      \ with automatic retries and observability,\n  maintaining event delivery reliability\
+      \ above 99.9%.\n- Collaborate with product and engineering leadership to ensure\
+      \ end-to-end visibility\n  of critical user and business flows.\n\nThis system\
+      \ now serves as the backbone for data-driven decision-making across the\ncompany."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-hyprr
+  employer: Hyprr
+  role: Technical Lead
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021 (1 year\
+      \ 3 months)\n\n- Brought an innovative Web-3 based social and NFT platform from\
+      \ its initial prototype\n  to a more advanced closed beta stage in less than\
+      \ 6 months.\n- Worked closely with business and technical stakeholders on building\
+      \ a product and\n  defining OKRs.\n- Outlined and managed the technological\
+      \ plan for the product, and collaborated closely\n  with the CTO to establish\
+      \ the essential set of technologies for building the product.\n- Directly managed\
+      \ 10 developers. Influenced all areas of Product Development,\n  including Project\
+      \ Management, Microservice Serverless solutions, CI/CD, and\n  upholding RAS\
+      \ (Reliability, Availability, and Serviceability).\n\nAdditional skills: PHP\
+      \ frameworks Mezzio + Phalcon, PostgreSQL, Prometheus/Jaeger."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-sixt
+  employer: Sixt
+  role: Senior Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November\
+      \ 2019 (1 year)  \nKyiv, Kyiv City, Ukraine\n\nSIXT is a leading international\
+      \ provider of high-quality mobility services.\n\n- Developed microservices to\
+      \ comply with the requirements of the European Union's\n  General Data Protection\
+      \ Regulation (EU GDPR).\n- Developed and enhanced codebase in strict compliance\
+      \ with the PCI DSS (Payment Card\n  Industry Data Security Standard).\n- Lead\
+      \ and participated in internal and external assessments of technical viability.\n\
+      \  Evaluated solution frameworks to guarantee alignment with functional, performance,\n\
+      \  and operational criteria.\n- Conducted system audits, security assessments,\
+      \ and vulnerability scans to identify\n  risks and maintain compliance with\
+      \ industry standards."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-pdffiller-com
+  employer: PDFfiller.com
+  role: Technical Lead
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### PDFfiller.com\n\n**Technical Lead**  \nOctober 2016 - December 2018\
+      \ (2 years 3 months)  \nKyiv, Kyiv City, Ukraine\n\n- Lead a team of 5 backend\
+      \ engineers, responsible for development of a service for\n  transactional emails.\n\
+      - Made key technical decisions at all steps of the project. Gained an in-depth\n\
+      \  understanding of the technical aspects of messaging, such as email FBLs,\
+      \ DNS, DKIM,\n  SPF, DMARC, other fundamental components and tools.\n- Expanded\
+      \ the service's capabilities to accommodate around 50 million emails on a\n\
+      \  monthly basis, an increase of 400%.\n- Lead team efforts during the weeks\
+      \ of BFCM (Black Friday / Cyber Monday), a critical\n  time for the company\
+      \ which sees more than 10x increase in customer traffic.\n- Provided direct\
+      \ coaching and introduced state of the art performance metrics to\n  assist\
+      \ team members.\n- Fostered a culture that combines an enjoyable and diverse\
+      \ atmosphere with the utmost\n  technical excellence."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-aurum-software
+  employer: Aurum Software
+  role: Senior Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Aurum Software\n\n**Senior Software Developer**  \nNovember 2015 -\
+      \ November 2016 (1 year 1 month)  \nKyiv, Kyiv City, Ukraine\n\n- Identified\
+      \ application issues and provided recommendations for resolution to ensure\n\
+      \  optimal performance.\n- Normalized database tables and performed extensive\
+      \ query optimization.\n- Implemented analytical and legal document reporting\
+      \ systems.\n- Developed integration between PocketBook Cloud and PocketBook\
+      \ account.\n- Development and supporting of television advertising strategies\
+      \ planning tool\n  (large part of backend and less part of front-end).\n- Planning\
+      \ algorithms implementation.\n- Writing reconciliation scripts for integration\
+      \ with desktop planning tool version.\n- Increased unit-tests coverage.\n- Performed\
+      \ code reviews for team members.\n\nAdditional skills: PostgreSQL, Restfull\
+      \ API."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-upwork-freelance
+  employer: Upwork freelance
+  role: Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Upwork freelance\n\n**Software Developer**  \nJuly 2008 - September\
+      \ 2016 (8 years 3 months)\n\nIn my tenure on Upwork, I have been deeply involved\
+      \ in server-side application\ndevelopment, adeptly handling coding tasks and\
+      \ reviews. My capabilities extend to the\nintegration of intricate bank payment\
+      \ systems into various applications, highlighting\nmy technical adaptability\
+      \ and problem-solving skills.\n\nI've also been proactive in enhancing operational\
+      \ efficiency by creating and automating\ntools and scripts. These solutions\
+      \ have significantly streamlined routine tasks within\ndepartments, contributing\
+      \ to a more productive work environment.\n\nEfficiency has also been a key focus\
+      \ in my role, as I've undertaken initiatives to\noptimize application performance\
+      \ through careful code profiling and analysis. This\napproach ensures that applications\
+      \ operate at their best, delivering a seamless user\nexperience.\n\nThoroughness\
+      \ characterizes my approach to code and application testing, where my\nattention\
+      \ to detail guarantees the reliability and functionality of the final product.\n\
+      \nReflecting on my tenure on Upwork, I'm gratified by the diverse projects I've\
+      \ tackled\nand the consistent quality I've delivered. My technical proficiency,\
+      \ coupled with a\npragmatic approach, has defined my contributions to the platform."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: linkedin-coinsbank-bit-x
+  employer: CoinsBank/bit-x
+  role: Senior Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### CoinsBank/bit-x\n\n**Senior Software Developer**  \nJanuary 2014 -\
+      \ November 2015 (1 year 11 months)  \nMálaga, Andalusia, Spain\n\n- Designed\
+      \ and implemented large scope of new features in exchange core component\n \
+      \ (fiat money).\n- Develop integration with Stripe/PayPal/Skrill payment gateway\
+      \ providers.\n- Introduced event-based real-time notification system.\n- Working\
+      \ on implementation of a special gift card and voucher system.\n- Optimizing\
+      \ services performance, code profiling.\n\nAdditional skills: Symfony2 & Yii2,\
+      \ PostgreSQL/Riak (as document storage),\nAngularJS/Bootstrap."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  review_notes: Review chronology against user-confirmed-career-clarifications.md;
+    imported Present dates and differing metrics require reconciliation before use.
+  status: unverified
+- id: clarification-simple-life
+  employer: Simple.life
+  source:
+    path: registry/candidate/user-confirmed-career-clarifications.md
+    quote: "## Simple.life\n\n- **Role:** Software Developer\n- **Dates:** November\
+      \ 2023 - July 2026\n- This confirmed end date replaces both the stale March\
+      \ 2026 end date in the\n  Backend Engineer CV registry and the `Present` value\
+      \ in the LinkedIn export."
+    sha256: c11436c2251828251d32281f0e9350ed763e85122798c14baf6de558c817ac11
+  status: verified
+  verification: *id001
+  review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+    sections still obey the ten-year cutoff.
+- id: clarification-crurated
+  employer: CRURATED
+  source:
+    path: registry/candidate/user-confirmed-career-clarifications.md
+    quote: "## CRURATED\n\n- **Role:** PHP Software Developer — Part-time Subcontract\
+      \ / Consulting Engagement\n- **Dates:** August 2024 - January 2026\n- This engagement\
+      \ ran concurrently with Simple.life. It was a parallel,\n  PHP-oriented subcontract/consulting\
+      \ assignment, not a second standard full-time\n  employment position.\n- When\
+      \ both roles appear in an application, label CRURATED explicitly as a\n  concurrent\
+      \ part-time subcontract or consulting engagement so the overlap is not\n  misleading."
+    sha256: c11436c2251828251d32281f0e9350ed763e85122798c14baf6de558c817ac11
+  status: verified
+  verification: *id001
+  review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+    sections still obey the ten-year cutoff.
+- id: support-platform
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- Designed and owned a Go-based support automation platform connecting\
+      \ **Zendesk**,\n  **Intercom**, and internal services."
+    context_quote: '### Simple.life
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Only this achievement and its source role attribution are verified.
+    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+    and other source records.
+  status: verified
+  verification: *id001
+- id: support-triage
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- Integrated **OpenAI**-powered auto-triage flows, automating or deflecting\
+      \ up to\n  **30%** of inbound tickets."
+    context_quote: '### Simple.life
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Only this achievement and its source role attribution are verified.
+    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+    and other source records.
+  status: verified
+  verification: *id001
+- id: database-reliability
+  employer: airSlate
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- **Reduced** peak load on the main database by removing bottlenecks and\n\
+      \  redistributing workload, improving service stability during high-traffic\
+      \ periods."
+    context_quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Only this achievement and its source role attribution are verified.
+    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+    and other source records.
+  status: verified
+  verification: *id001
+- id: kubernetes-migration
+  employer: airSlate
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- **Migrated** services from **ECS** to **Kubernetes** and prepared the\
+      \ runtime stack\n  for Kubernetes deployments with **Helm**, **GitHub Actions**,\
+      \ and **ArgoCD**."
+    context_quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Only this achievement and its source role attribution are verified.
+    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+    and other source records.
+  status: verified
+  verification: *id001
+- id: email-team
+  employer: PDFfiller
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '- **Led a team of 5 backend engineers developing a transactional email
+      service.**'
+    context_quote: '### PDFfiller
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Only this achievement and its source role attribution are verified.
+    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+    and other source records.
+  status: verified
+  verification: *id001
+- id: email-scale
+  employer: PDFfiller
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '- **Scaled** the service to around **50 million** emails per month.'
+    context_quote: '### PDFfiller
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  review_notes: Only this achievement and its source role attribution are verified.
+    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+    and other source records.
+  status: verified
+  verification: *id001

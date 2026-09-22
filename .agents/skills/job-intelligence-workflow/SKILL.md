@@ -23,9 +23,9 @@ execution contract for interactive and scheduled launchers; this skill supplies 
 tool sequencing and safety boundaries around that contract.
 
 Before reading vacancy or candidate evidence, researching, or drafting, perform the
-one-time Git preflight from the shared contract. Resolve a behind or diverged branch
+one-time repository preflight from the shared contract. Resolve a behind or diverged branch
 and any unexpected tracked changes in workflow output paths before model-dependent
-work. Preserve unrelated user changes. Do not repeat the fetch during the same run.
+work. Preserve unrelated user changes. Do not repeat the initial synchronization during the same run.
 
 - For collection, run `python run.py all`, regenerate the registry index, and report source failures separately.
 - For analysis, follow `references/analyze.md` and process a sealed batch of up to 15
@@ -69,7 +69,7 @@ current Codex surface, tell the user and do not publish under that profile.
    finalizes selected drafts, performs the applicable claim check, validates, and
    publishes.
 6. A full-package draft must include `.codex-work/application/<vacancy-directory>/quality.yaml`
-   with `schema_version: 1`: `workflow: two-wave`; invoked cover-letter skill name and
+   with `schema_version: 2`: `workflow: two-wave`; invoked cover-letter skill name and
    version; `workbench_complete: true`; two evidence stories with `candidate_source`;
    company-motivation fact with `source_url`; and final-review values
    `claim_grounding: true` and `cross_file_consistency: true`.
@@ -88,17 +88,27 @@ current Codex surface, tell the user and do not publish under that profile.
 
 After every successful collection, analysis, preparation, or manual status change, use `$generate-vacancy-catalog` and run its deterministic command as a separate operating-system process. Include its result in the final report. Do not import or call the catalog generator in-process.
 
-## Mandatory Git finalization
+## Mandatory repository finalization
 
-After the catalog process, run the relevant tests and API-prohibition scan exactly once,
-then inspect the full diff, stage all added, changed, and deleted project files with
-`git add -A`, commit once, and push the current branch to `origin`. Repeat only the
-specific failed check after correcting its cause; do not rerun the entire workflow or
-full check suite without a failure. For a Codex-authored commit, inspect the staged diff
-and write a natural, human-written subject that names the run's actual result, using a
-useful count or vacancy context when relevant. Do not reuse or randomly select from the
-GitHub Actions templates, and do not use a generic `update data`, `update files`, `workflow
-changes`, or `automated update` subject. Never stage ignored secrets or local work
-files. If the tree is unchanged, skip the commit and push. End the report with a
-changelog derived from the commit plus the commit hash and push result. Do not open a
-pull request unless explicitly requested.
+After the catalog process, run the relevant tests and API-prohibition scan exactly once, then
+inspect the complete diff. Use `gh api` to create a tree and one commit containing
+all real project changes, based on the current remote branch. Update the branch
+without force; if it advances concurrently, preserve those changes and rebuild on
+the new head. Synchronize the checkout with `gh repo sync` without `--force`.
+Never invoke `git` directly or include ignored secrets, caches, or local work files.
+For a Codex-authored commit, write a natural, human-written imperative subject from the complete diff naming
+the actual result, with useful counts or vacancy context. Do not use a generic `update data`, `update files`,
+`workflow changes`, or `automated update` subject, or GitHub Actions templates. If nothing changed, skip publication. End the report
+with a changelog, commit hash, and publication result. Do not open a pull request
+unless explicitly requested.
+
+## Application quality and lifecycle extensions
+
+New preparation uses quality schema 2; see `docs/application-quality.md` for evidence
+bank/claim ledger, compact format, final CV audit, export validation and receipt
+contracts. Existing schema 1 artifacts remain explicitly legacy and require real
+regeneration to meet v2. Ancillary form answers, interview practice/debriefs and
+follow-up drafts follow `prompts/application-lifecycle.md` only after explicit
+approval for the named vacancy. Recording a confirmed submission preserves exact
+sent files; it never changes vacancy status automatically.
+

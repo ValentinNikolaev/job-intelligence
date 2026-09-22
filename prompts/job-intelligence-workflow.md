@@ -12,22 +12,20 @@ Scheduled Tasks. A launcher may provide a vacancy URL, pasted vacancy text, an
 explicit registry directory, or a sealed analysis batch. The launcher is not the
 workflow: it must read this contract and then apply the mode that matches its input.
 
-## One-time Git preflight
+## One-time repository preflight
 
 Before reading candidate or vacancy evidence, browsing, or producing model-dependent
-drafts, inspect the repository once:
+drafts, inspect the repository once using `gh`; never invoke `git` directly.
 
-1. Run `git status --short` and identify any existing tracked changes.
-2. Run `git fetch origin`, identify the current branch and its upstream, and compare
-   `HEAD` with that upstream using `git rev-list --left-right --count`.
-3. If the branch is behind or diverged, integrate the upstream safely before generating
-   artifacts. If tracked changes overlap workflow output paths, resolve ownership first.
-   Preserve unrelated user work.
+1. Use `gh api` to inspect the current remote branch and its file tree. Compare local
+   project files with that baseline, excluding ignored secrets and work files.
+2. Preserve existing local changes and synchronize using `gh repo sync` without
+   `--force`. Resolve overlapping changes before generating workflow artifacts.
+3. Re-read updated instructions and record the baseline revision. Treat unreadable
+   paths as an access problem, never as confirmed deletions.
 
-If sandbox or ACL restrictions make readable tracked directories appear deleted, rerun
-the read-only Git checks with repository access before treating those paths as changes.
-Do not repeat the fetch later in the same run; the final handoff needs a diff/status
-check, not a second preflight.
+Before final publication, inspect the complete diff and recheck the remote head so
+concurrent changes survive. Follow the tree/commit/ref procedure in `AGENTS.md`.
 
 ## Modes
 
@@ -108,7 +106,7 @@ provenance is content provenance, not a label that may be rewritten.
    requirements/risks handoff, and verified research without browsing again; analysis
    receives the vacancy, final CV, and all Wave 1 handoffs.
 4. Before validation, write `.codex-work/application/<directory>/quality.yaml`, schema
-   version 1, with `workflow: two-wave`; cover-letter skill name/version;
+   version 2, with `workflow: two-wave`; cover-letter skill name/version;
    `workbench_complete: true`; two evidence stories with `candidate_source`; a
    company-motivation fact and `source_url`; and final `claim_grounding: true` and
    `cross_file_consistency: true`.
@@ -170,3 +168,17 @@ subject from the staged diff and name the concrete outcome, including a useful c
 vacancy context when relevant. Do not choose from the GitHub Actions templates or use a
 generic `update data`, `update files`, `workflow changes`, or `automated update` subject.
 Keep run identifiers and mechanical file counts in the commit body.
+
+## Application quality and lifecycle extensions
+
+New preparation uses quality schema 2; see `docs/application-quality.md` for evidence
+bank/claim ledger, compact format, final CV audit, export validation and receipt
+contracts. Existing schema 1 artifacts remain explicitly legacy and require real
+regeneration to meet v2. Ancillary form answers, interview practice/debriefs and
+follow-up drafts follow `prompts/application-lifecycle.md` only after explicit
+approval for the named vacancy. Recording a confirmed submission preserves exact
+sent files; it never changes vacancy status automatically.
+
+The current AGENTS.md GitHub CLI policy takes precedence over legacy direct Git
+examples in this document. Use `gh` for repository operations and never force a
+remote update or overwrite unrelated local changes.

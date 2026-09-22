@@ -64,7 +64,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', or 'prepare'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', 'prepare', 'evidence', 'documents', or 'applications'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -137,6 +137,12 @@ def _parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     _configure_stdio()
     command_args = list(sys.argv[1:] if argv is None else argv)
+    if command_args and command_args[0] in {"applications", "documents", "evidence"}:
+        from importlib import import_module
+        module = {"applications": "lifecycle_cli", "documents": "document_quality_cli", "evidence": "evidence_cli"}[command_args[0]]
+        return import_module(f".{module}", __package__).main(
+            command_args[1:], root=Path(__file__).resolve().parents[1]
+        )
     if command_args and command_args[0] == "sheets":
         from .sheets_sync import cli_main
         return cli_main(command_args[1:])

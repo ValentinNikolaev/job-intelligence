@@ -1,0 +1,7 @@
+schema_version: 1
+note: Historical company-specific context; never use as a global candidate preference or current salary evidence.
+companies:
+  ShippyPro:
+    compensation_note: For ShippyPro, the published range is EUR 52,000-72,000.
+    source: Migrated from application-profile.yaml application_defaults.compensation.note
+    status: historical_needs_reverification

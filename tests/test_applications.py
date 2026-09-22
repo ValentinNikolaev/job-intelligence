@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from functools import partial
 import tempfile
 import unittest
 import os
@@ -19,6 +20,7 @@ from jobintel.applications import (
     CodexApplicationDraftClient,
     QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
+    _validate_draft_quality,
     _publish_staged_package,
     resolve_job_directories,
     validate_application_draft,
@@ -60,7 +62,7 @@ def application_payload() -> dict[str, str]:
     analysis_body = " ".join(["Evidence is grounded in the candidate record and the vacancy, with gaps framed as confirmation items rather than claims."] * 5)
     interview_body = " ".join(["Prepare a concise, truthful example, identify the candidate's individual contribution, and connect it to the stated role requirement."] * 7)
     return {
-        "cv_markdown": "# Candidate\nBackend Engineer\n\nhttps://linkedin.com/in/candidate | https://github.com/candidate\n\n## Summary\n\n" + cv_filler + "\n\n## Skills\n\n" + skills + "\n\n## Experience\n\n### Example — Backend Engineer | January 2020 - Present\n" + bullets + "\nTechnologies: PHP, Laravel, MySQL\n\n## Education\n\nMSc in Computer Science\n\n## Languages\n\nEnglish\n",
+        "cv_markdown": "# Candidate\nBackend Engineer\n\nhttps://linkedin.com/in/candidate | https://github.com/candidate\n\n## Summary\n\n" + cv_filler + "\n\n## Skills\n\n" + skills + "\n\n## Experience\n\n### Example Р Р†Р вЂљРІР‚Сњ Backend Engineer | January 2020 - Present\n" + bullets + "\nTechnologies: PHP, Laravel, MySQL\n\n## Education\n\nMSc in Computer Science\n\n## Languages\n\nEnglish\n",
         "cover_letter_markdown": "Dear Hiring Team,\n\n" + "\n\n".join([letter_paragraph] * 4) + "\n\nCandidate\n",
         "analysis_markdown": "# Application Analysis\n\n"
         + "\n\n".join(f"## {heading}\n\n{analysis_body}" for heading in analysis_headings)
@@ -88,7 +90,7 @@ def write_quality_contract(draft: Path, *, include_cover_letter: bool = True) ->
         encoding="utf-8",
     )
     quality: dict[str, Any] = {
-        "schema_version": QUALITY_CONTRACT_VERSION,
+        "schema_version": 1,
         "workflow": "two-wave",
         "handoffs": {"research": "parts/research.md", "evidence_map": "parts/evidence-map.md", "requirements_risks": "parts/requirements-risks.md"},
         "final_review": {"claim_grounding": True, "cross_file_consistency": True, "quality_gate": True},
@@ -187,6 +189,117 @@ class ApplicationTests(unittest.TestCase):
             "# Example\n\nA product company.\n", encoding="utf-8"
         )
 
+    def v2_letter_draft(self):
+        from jobintel.evidence import bootstrap_evidence_bank
+        import hashlib
+
+        draft = self.project / "v2-draft"
+        draft.mkdir()
+        write_quality_contract(draft)
+        package = {"cover_letter_markdown": application_payload()["cover_letter_markdown"]}
+        source = self.registry_root / "candidate" / "candidate.md"
+        source.parent.mkdir(parents=True)
+        source.write_text(package["cover_letter_markdown"], encoding="utf-8")
+        quote = "I connect verified backend delivery experience to the role's PHP, Laravel, API, and reliability priorities."
+        bank = bootstrap_evidence_bank(self.project, [{"id": "delivery", "source": {"path": "registry/candidate/candidate.md", "quote": quote}}])
+        bank["entries"][0].update(status="verified", verification={"reviewer": "fixture", "reviewed_at": "2026-09-22", "method": "source review"})
+        bank_path = self.registry_root / "evidence.yaml"
+        bank_path.write_text(yaml.safe_dump(bank), encoding="utf-8")
+        ledger = {"schema_version": 1, "claims": [{"document": "cover-letter", "text": quote, "evidence_ids": ["delivery"]}]}
+        (draft / "claims.yaml").write_text(yaml.safe_dump(ledger), encoding="utf-8")
+        quality = yaml.safe_load((draft / "quality.yaml").read_text(encoding="utf-8"))
+        quality.update(schema_version=2, evidence_bank="registry/evidence.yaml", claims_ledger="claims.yaml")
+        quality["final_review"].update(reviewer="fixture", document_sha256={"cover-letter": "sha256:" + hashlib.sha256(package["cover_letter_markdown"].encode()).hexdigest()})
+        quality["requirements"] = [{"requirement": "Backend", "importance": "high", "basis": "stated", "jd_quote": "Build Go services.", "match": "partial", "candidate_quote": quote, "risk": "Confirm Go scope", "mitigation": "Ask candidate", "hard_blocker": False, "evidence_ids": ["delivery"]}]
+        for story in quality["cover_letter"]["evidence_stories"]:
+            story["evidence_ids"] = ["delivery"]
+        (draft / "quality.yaml").write_text(yaml.safe_dump(quality), encoding="utf-8")
+        return draft, package, quality
+
+    def test_v2_quality_receipt_binds_evidence_and_final_document(self):
+        draft, package, _ = self.v2_letter_draft()
+        receipt = _validate_draft_quality(draft, package, document="cover-letter", project_root=self.project, vacancy_text="Build Go services.")
+        self.assertEqual(2, receipt["contract_version"])
+        self.assertEqual(["delivery"], receipt["grounding"]["evidence_ids"])
+        package["cover_letter_markdown"] += "Changed after review.\n"
+        with self.assertRaisesRegex(ApplicationError, "final review is stale"):
+            _validate_draft_quality(draft, package, document="cover-letter", project_root=self.project)
+
+    def test_v2_rejects_false_source_and_path_escape(self):
+        draft, package, quality = self.v2_letter_draft()
+        quality["claims_ledger"] = "../claims.yaml"
+        (draft / "quality.yaml").write_text(yaml.safe_dump(quality), encoding="utf-8")
+        with self.assertRaisesRegex(ApplicationError, "escapes its root"):
+            _validate_draft_quality(draft, package, document="cover-letter", project_root=self.project)
+
+    def test_v2_export_failure_prevents_publication(self):
+        draft, package, _ = self.v2_letter_draft()
+        (draft / "cover-letter.md").write_text(package["cover_letter_markdown"], encoding="utf-8")
+        client = CodexApplicationDraftClient(draft, model="test-model", document="cover-letter")
+        generator = self._generator(client, FakeConverter(), document="cover-letter")
+        with self.assertRaisesRegex(ApplicationError, "export quality validation failed"):
+            generator.generate_directory(self.directory)
+        self.assertFalse((self.directory / "application" / "cover-letter.docx").exists())
+
+    def test_v2_publishes_export_and_grounding_receipts(self):
+        from tests.test_document_quality import write_docx
+
+        class RealFixtureConverter:
+            def convert(self, source, target):
+                write_docx(target, source.read_text(encoding="utf-8").splitlines())
+
+        draft, package, _ = self.v2_letter_draft()
+        (draft / "cover-letter.md").write_text(package["cover_letter_markdown"], encoding="utf-8")
+        client = CodexApplicationDraftClient(draft, model="test-model", document="cover-letter")
+        generator = self._generator(client, RealFixtureConverter(), document="cover-letter")
+        self.assertEqual("prepared", generator.generate_directory(self.directory).status)
+        manifest = yaml.safe_load((self.directory / "application" / "manifest.yaml").read_text(encoding="utf-8"))
+        self.assertEqual(2, manifest["quality_contract_version"])
+        self.assertEqual("not_reviewed", manifest["quality"]["exports"]["cover-letter"]["visual_review"]["status"])
+        self.assertEqual("delivery", manifest["quality"]["grounding"]["evidence_entries"][0]["id"])
+        self.assertTrue(generator.is_current(self.directory))
+        exported = self.directory / "application" / "cover-letter.docx"
+        exported.write_bytes(b"corrupted after validation")
+        self.assertFalse(generator.is_current(self.directory))
+
+    def test_new_publication_rejects_legacy_quality_contract(self):
+        draft = self.project / "legacy-draft"
+        draft.mkdir()
+        write_quality_contract(draft)
+        (draft / "cover-letter.md").write_text(application_payload()["cover_letter_markdown"], encoding="utf-8")
+        generator = ApplicationGenerator(self.registry_root, [self.profile], self.prompt,
+            CodexApplicationDraftClient(draft, model="test", document="cover-letter"), FakeConverter(), document="cover-letter")
+        with self.assertRaisesRegex(ApplicationError, "publication requires quality schema_version 2"):
+            generator.generate_directory(self.directory)
+        self.assertFalse((self.directory / "application" / "manifest.yaml").exists())
+
+    def test_compact_letter_allows_three_substantive_paragraphs(self):
+        paragraph = " ".join(["I connect verified backend experience to your delivery priorities."] * 6)
+        letter = "Dear Hiring Team,\n\n" + "\n\n".join([paragraph] * 3) + "\n\nCandidate\n"
+        package = {"cover_letter_markdown": letter}
+        validate_application_package(package, document="cover-letter", document_format="compact")
+        with self.assertRaisesRegex(ApplicationError, "300-word minimum"):
+            validate_application_package(package, document="cover-letter")
+
+    def test_cache_rejects_corrupted_named_cv_export(self):
+        from jobintel.document_quality import file_sha256
+        from jobintel.evidence import validate_evidence_bank
+
+        generator = self._generator(FakeClient(), FakeConverter())
+        generator.generate_directory(self.directory)
+        application = self.directory / "application"
+        manifest_path = application / "manifest.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        bank = {"schema_version": 1, "entries": []}
+        (self.registry_root / "evidence.yaml").write_text(yaml.safe_dump(bank), encoding="utf-8")
+        manifest["quality"]["documents"]["cv"].update(evidence_bank_path="registry/evidence.yaml", evidence_bank_sha256=validate_evidence_bank(bank, self.project)["sha256"])
+        manifest["quality"]["exports"] = {"cv": {"artifact_sha256": file_sha256(application / "cv.docx"), "source_sha256": file_sha256(application / "cv.md")}}
+        manifest_path.write_text(yaml.safe_dump(manifest), encoding="utf-8")
+        self.assertTrue(generator.is_current(self.directory))
+        alias = application / f"{manifest['cv_export_stem']}.docx"
+        alias.write_bytes(b"corrupted named export")
+        self.assertFalse(generator.is_current(self.directory))
+
     def tearDown(self) -> None:
         self.temp.cleanup()
 
@@ -205,6 +318,7 @@ class ApplicationTests(unittest.TestCase):
             converter,
             document=document,
             clock=lambda: self.now,
+            allow_legacy_drafts=True,
         )
 
     def test_generates_complete_package_and_skips_matching_versions(self) -> None:
@@ -282,11 +396,11 @@ class ApplicationTests(unittest.TestCase):
     def test_simple_life_cv_date_range_is_preserved_from_draft(self) -> None:
         payload = application_payload()
         payload["cv_markdown"] = payload["cv_markdown"].replace(
-            "### Example — Backend Engineer | January 2020 - Present",
-            "### Simple.life — Software Developer | November 2023 - July 2026",
+            "### Example Р Р†Р вЂљРІР‚Сњ Backend Engineer | January 2020 - Present",
+            "### Simple.life Р Р†Р вЂљРІР‚Сњ Software Developer | November 2023 - July 2026",
         ).replace(
             "## Education",
-            "### airSlate — Software Developer | February 2021 - August 2023\n"
+            "### airSlate Р Р†Р вЂљРІР‚Сњ Software Developer | February 2021 - August 2023\n"
             "- Improved a supported backend workflow with measured engineering discipline.\n"
             "Technologies: PHP, Symfony, PostgreSQL\n\n## Education",
         )
@@ -455,7 +569,7 @@ class ApplicationTests(unittest.TestCase):
     def test_cv_age_rule_is_scoped_to_experience_and_allows_recent_roles(self) -> None:
         payload = application_payload()
         payload["cv_markdown"] = payload["cv_markdown"].replace(
-            "### Example — Backend Engineer | January 2020 - Present",
+            "### Example Р Р†Р вЂљРІР‚Сњ Backend Engineer | January 2020 - Present",
             "### Current Co | July 2015 - August 2016\nTechnologies: Go\n\n"
             "### New Co | September 2016 - Present",
         )
@@ -797,7 +911,7 @@ class ApplicationTests(unittest.TestCase):
             clock=lambda: self.now,
         ).analyze_directory(self.directory)
 
-        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()):
+        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()), patch("jobintel.cli.ApplicationGenerator", side_effect=partial(ApplicationGenerator, allow_legacy_drafts=True)):
             exit_code = main(
                 [
                     "prepare",
@@ -819,7 +933,8 @@ class ApplicationTests(unittest.TestCase):
         manifest_path = self.directory / "application" / "manifest.yaml"
         self.assertTrue(manifest_path.is_file())
         manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
-        self.assertEqual(QUALITY_CONTRACT_VERSION, manifest["quality_contract_version"])
+        self.assertEqual(1, manifest["quality_contract_version"])
+        self.assertIn("Legacy contract 1", manifest["quality"]["migration_note"])
         self.assertEqual("two-wave", manifest["quality"]["method"]["workflow"])
         self.assertEqual(3, len(manifest["quality"]["handoffs"]))
         self.assertEqual(
@@ -843,7 +958,7 @@ class ApplicationTests(unittest.TestCase):
             clock=lambda: self.now,
         ).analyze_directory(self.directory)
 
-        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()):
+        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()), patch("jobintel.cli.ApplicationGenerator", side_effect=partial(ApplicationGenerator, allow_legacy_drafts=True)):
             exit_code = main(
                 [
                     "prepare",
@@ -915,7 +1030,7 @@ class ApplicationTests(unittest.TestCase):
                 (draft / filename).write_text(payload[field], encoding="utf-8")
             write_quality_contract(draft)
 
-        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()):
+        with patch("jobintel.cli.HostMarkdownDocxConverter", return_value=FakeConverter()), patch("jobintel.cli.ApplicationGenerator", side_effect=partial(ApplicationGenerator, allow_legacy_drafts=True)):
             exit_code = main(
                 [
                     "prepare",
@@ -1170,3 +1285,4 @@ class ApplicationTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

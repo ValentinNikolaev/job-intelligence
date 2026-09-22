@@ -26,7 +26,6 @@ application_defaults:
     earliest_start_date: TODO_CONFIRM
   compensation:
     expected_salary_eur_gross_annual: TODO_CONFIRM
-    note: For ShippyPro, the published range is EUR 52,000-72,000.
   profile_summary: >-
     Backend engineer and technical lead with 15+ years of experience in PHP and Go,
     production reliability, AWS/Kubernetes, APIs, automation systems, and mentoring.

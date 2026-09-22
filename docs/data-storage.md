@@ -164,3 +164,18 @@ as successful recovery points.
 GitHub Actions remains the collection scheduler. The redundant local Codex
 collection task is disabled; scheduled Codex analysis uses the same MongoDB source.
 Sheets and backup schedules are separate from analysis and preparation policy.
+
+## Application history artifacts
+
+Application lifecycle events use MongoDB operational_logs records keyed
+`application-lifecycle:<vacancy-id>`. These contain confirmed submission metadata and
+observed events, separate from vacancy status. Exact submitted file snapshots and
+validated follow-through drafts live under `registry/application-history/<vacancy-id>/`
+as Git-managed artifacts. Keep this directory in full-repository backups and restores;
+never derive a sent version from a subsequently regenerated package. Evidence banks
+under `registry/evidence/` are derived indexes of immutable candidate sources, not
+canonical operational vacancy records.
+
+Backup verification checks lifecycle submission receipts and exact snapshot bytes
+against their MongoDB records and requires them in the backup payload. Missing or
+tampered sent files fail backup validation.

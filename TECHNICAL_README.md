@@ -581,7 +581,18 @@ The tests use temporary registries and fixture responses; they do not call exter
 ## Scope
 
 The project collects, normalizes, deduplicates, stores, ranks, indexes, and prepares
-vacancy-specific application materials. It intentionally has no database, UI, automatic
-submission, application-status tracking, persistent queue, service process, or Docker
-requirement. Scheduled execution remains an opt-in Codex configuration because cadence
-and host permissions are user-specific.
+vacancy-specific application materials. MongoDB stores operational records, while
+candidate evidence and application documents remain files. Application submission is
+manual; lifecycle events do not change vacancy status automatically. Scheduled
+execution remains an opt-in Codex configuration because cadence and host permissions
+are user-specific.
+
+## Application quality and follow-through
+
+The [quality v2 contract](docs/application-quality.md) adds source-backed
+evidence, grounded claim ledgers, compact document formats, a final CV review, and
+real DOCX export checks. Old receipts stay explicitly legacy. The
+[application lifecycle](docs/application-lifecycle.md) preserves exact sent files,
+records confirmed outcomes, reports descriptive conversion rates and follow-up timing,
+and publishes approved form-answer/interview/follow-up drafts. No application is sent
+and no status changes automatically.

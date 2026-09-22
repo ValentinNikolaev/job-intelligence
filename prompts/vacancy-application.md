@@ -38,6 +38,15 @@ the selected field is the complete output contract and publication uses the matc
 
 ## Output and research budgets
 
+Choose `document_format: standard` unless the user or application channel calls for a
+compact document. Compact v2 permits a 300–500-word CV with at least six Experience
+bullets and a 150–250-word cover letter with three to six body paragraphs. It retains
+the supported skills, source evidence, two complementary letter stories, company
+hook, all required sections, and full analysis/interview minima. The compact limits
+override the standard CV/letter minima below; never pad either format. Follow the
+selected length instruction when invoking `$write-cover-letter`.
+
+
 - Required minimums are 500 words for `cv_markdown`, 300 for `cover_letter_markdown`,
   700 for `analysis_markdown`, and 800 for `interview_preparation_markdown`; targets are
   500–700, 300–450, 700–900, and 800–1000 respectively. Do not pad with unsupported or
@@ -93,7 +102,7 @@ Start only after the main agent fixes the final CV. Assign exclusive ownership:
 
 - Cover letter receives this vacancy, final CV, verified research, and only the
   candidate evidence needed to ground its selected stories. It invokes
-  `$write-cover-letter` and writes only `cover-letter.md`. It needs four to six body
+  `$write-cover-letter` and writes only `cover-letter.md`. In standard format it needs four to six body
   paragraphs, two distinct evidence stories, and a company-specific research hook.
 - Interview preparation receives this vacancy, final CV, requirements/risks handoff,
   and verified research, then writes only `interview-preparation.md` without browsing
@@ -103,7 +112,7 @@ Start only after the main agent fixes the final CV. Assign exclusive ownership:
 
 No role may edit another role's file. The final CV must include Summary, Skills,
 Experience, Education, and Languages; 12–18 evidence-backed hard skills; real LinkedIn
-and GitHub URLs; and at least 10 evidence-backed Experience bullets. After Wave 2, the
+and GitHub URLs; and at least 10 evidence-backed Experience bullets (six for compact). After Wave 2, the
 main agent runs one cross-file
 consistency and claim-grounding pass, then `validate-application` once and `prepare`
 once. Preserve the same waves and ownership when running sequentially. For a batch,
@@ -168,7 +177,7 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     as the claim source of truth and the final CV as the selected positioning for this
     application. Follow the skill's
     requirement-to-evidence mapping, two complementary evidence stories, company-motivation
-    research, and final claim ledger. Default to the posting language, 300–450 words, four
+    research, and final claim ledger. Default to the posting language and selected format: standard uses 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
     ATS-friendly formatting. Use the role and company naturally when they improve targeting.
     Put only the finished letter in `cover_letter_markdown`; place research sources and any
@@ -248,7 +257,7 @@ thoughtful questions for the company.
 ## Final checks
 
 - Before validating a full package, write `quality.yaml` under its vacancy draft with
-  `schema_version: 1`, `workflow: two-wave`, invoked cover-letter skill name/version,
+  `schema_version: 2`, `workflow: two-wave`, invoked cover-letter skill name/version,
   `workbench_complete: true`, two evidence stories with `candidate_source`, a
   company-motivation fact and `source_url`, and final `claim_grounding: true` plus
   `cross_file_consistency: true`.
@@ -264,3 +273,30 @@ thoughtful questions for the company.
   explicitly selected single document with the same `--document` value.
 - Do not mention other vacancies.
 - Do not submit an application or contact the company.
+
+## Quality v2 evidence and final artifact review
+
+Follow `docs/application-quality.md` for the exact bank, ledger, and receipt schemas.
+Read the validated `registry/evidence/achievements.yaml` bank in addition to immutable
+candidate sources. Only verified entries support claims. Review unverified source
+extracts against their source quotes before promoting them through `evidence publish`;
+never promote cannot-confirm/retracted entries or use earlier application text as facts.
+The bank is reusable source evidence; vacancy research and phrasing remain isolated.
+
+Write `claims.yaml` with anchors for every Experience bullet and material candidate
+claims in each selected document, including metric and employer attribution. Populate
+quality v2 with `evidence_bank`, `claims_ledger`, `document_format`, requirement rows,
+cover-story evidence IDs, final reviewer and normalized document hashes. For CV work,
+record a `cv_audit` against the finalized CV: target role, two source-backed proof
+points in its top third, and reasoned bullet decisions. Senior Backend and hands-on
+Tech Lead are positioning choices, never permission to alter employment titles.
+
+The default is one combined review. For a user-selected priority application, a
+separate reviewer may audit the final CV; record the actual reviewer and never call
+an inline self-review independent. Do not impersonate a named hiring manager.
+
+After publication, inspect the generated DOCX using `documents validate`. The v2
+publisher already checks text preservation before publishing. Use optional PDF export
+and page rendering when the delivery channel needs PDF. Inspect rendered pages before
+issuing a hash-bound visual-review receipt. A machine text check is not visual review
+or proof of acceptance by a particular ATS. Keep visual status pending until inspected.
