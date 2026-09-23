@@ -1,70 +1,66 @@
 # Valentin Nikolaev
-SENIOR PHP BACKEND DEVELOPER
-Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194
+Senior PHP Backend Developer
+
+Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194  
 [LinkedIn](https://linkedin.com/in/valentinnikolaev) | [GitHub](https://github.com/ValentinNikolaev)
 
 ## Summary
 
-At airSlate, I improved service stability during high-traffic periods. [database-reliability]
-
-At Hyprr, I defined the technology roadmap with the CTO. [cv-hyprr]
-
-Backend engineer with 15+ years of experience building and improving production systems across PHP and Go. I bring documented Laravel, MySQL, API, reliability, and communication-platform experience to a senior PHP backend role serving a CRM/contact-center product. My work has included product roadmaps, production delivery, database stability, and collaboration with product and engineering partners. I do not claim WebSocket, Linux, or Nginx experience because the supplied records do not verify them.
-
-My approach is to make backend systems easier to operate and evolve: clarify service responsibilities, address bottlenecks with evidence, and communicate technical trade-offs with the people shaping the product. This positioning reflects documented production and roadmap work, rather than a claim of experience with every technology named in the vacancy. I am prepared to discuss transferable design thinking and to be transparent about areas that need confirmation.
+Senior backend engineer experienced in PHP/Laravel product development, REST APIs, relational databases, integrations, cloud delivery, and production reliability. Combines hands-on implementation with technical leadership, including defining a technology roadmap with a CTO, taking a product from prototype to closed beta, and leading five backend engineers. Recent work spans database stability, Kubernetes delivery, and customer-support integrations, providing relevant foundations for a communication-focused backend product.
 
 ## Skills
 
-PHP; Laravel; Symfony; Go; MySQL; PostgreSQL; RabbitMQ; AWS; Kubernetes; REST APIs; microservices; CI/CD; GitHub Actions; Helm; ArgoCD; monitoring.
+PHP; Laravel; Symfony; Go; MySQL; PostgreSQL; SQL; REST APIs; Microservices; AWS; Kubernetes; CI/CD; GitHub Actions; ArgoCD; Helm; RabbitMQ
 
 ## Experience
 
-### Simple.life — Software Developer | November 2023 – July 2026
+### Simple.life — Software Developer
+November 2023 – July 2026
 
-Built backend support-automation capabilities for a communication-heavy environment, with the confirmed employment period shown here.
+Digital health product company with production automation connecting customer-support tools and internal services.
 
-- Designed and owned a support automation platform connecting Zendesk, Intercom, and internal services. [support-platform]
-- Integrated auto-triage flows, automating or deflecting up to 30% of inbound tickets. [support-triage]
-- Worked on a backend platform that connected external support tools with internal services. [support-platform]
+- Designed and owned a Go-based support automation platform connecting Zendesk, Intercom, and internal services.
+- Integrated OpenAI-powered auto-triage flows that automated or deflected up to 30% of inbound tickets.
 
-Technologies: Zendesk; Intercom.
+Technologies: Go, OpenAI APIs, Zendesk, Intercom
 
-### airSlate — Software Developer | February 2021 – August 2023
+### airSlate — Software Developer
+February 2021 – August 2023
 
-Contributed to SaaS backend services where dependable delivery, database behavior, and deployment readiness were central concerns.
+Global SaaS platform for document automation, workflow management, and electronic signatures.
 
-The experience is particularly relevant where a product depends on predictable backend behavior under demand, careful rollout practices, and practical collaboration across engineering functions.
+- Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods.
+- Migrated services from ECS to Kubernetes and prepared the deployment stack with Helm, GitHub Actions, and ArgoCD.
 
-- Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods. [database-reliability]
-- Migrated services from ECS to Kubernetes and prepared the runtime stack for Kubernetes deployments with Helm, GitHub Actions, and ArgoCD. [kubernetes-migration]
-- Improved service stability during high-traffic periods by removing database bottlenecks and redistributing workload. [database-reliability]
+Technologies: PHP, Laravel, MySQL, AWS, ECS, Kubernetes, Helm, GitHub Actions, ArgoCD
 
-Technologies: ECS; Kubernetes; Helm; GitHub Actions; ArgoCD.
+### Hyprr — Technical Lead
+November 2019 – January 2021
 
-### Hyprr — Technical Lead | November 2019 – January 2021
+Creator-focused digital platform developed from an early prototype into a closed beta product.
 
-Led backend-oriented product delivery while working with the CTO on the platform’s technology direction.
+- Brought the product from prototype to closed beta in under six months.
+- Defined the technology roadmap with the CTO and helped establish the core stack for product delivery.
+- Influenced product development across project planning, microservice and serverless architecture, CI/CD, and reliability concerns.
+- Led backend development and contributed to the platform’s Ethereum-based digital asset components.
 
-- Brought the product from prototype to closed beta in under 6 months. [cv-hyprr]
-- Defined the technology roadmap with the CTO and helped establish the core stack for product delivery. [cv-hyprr]
+Technologies: PHP, Go, Laravel, MySQL, AWS, Kubernetes, Microservices, REST APIs, CI/CD
 
-Technologies: PHP; Go; Laravel; MySQL; AWS; Kubernetes; Microservices; REST APIs; CI/CD.
+### PDFfiller — Software Developer
+October 2016 – November 2019
 
-### PDFfiller — Software Developer | October 2016 – November 2019
+Document-management SaaS product with a high-volume transactional email platform serving production communication workflows.
 
-Founding member of the in-product backend team responsible for high-volume transactional and lifecycle email systems.
+- Led a team of five backend engineers developing a transactional email service.
+- Scaled the service to approximately 50 million emails per month while supporting production delivery at high volume.
 
-This work developed experience in a communication infrastructure context where scale, delivery quality, and operational readiness were important to the product.
-
-- Led a team of 5 backend engineers developing a transactional email service. [email-team]
-- Scaled the service to around 50 million emails per month. [email-scale]
-
-Technologies: transactional email service.
+Technologies: PHP, Laravel, MySQL, Transactional email systems
 
 ## Education
 
-MSc in Computer Science, National Technical University, Kharkiv, Ukraine, 2003–2008.
+MSc in Computer Science, National Technical University, Kharkiv, Ukraine — 2003–2008
 
 ## Languages
 
-Ukrainian — native | English — Upper-intermediate (as recorded in the primary CV source)
+Ukrainian — native  
+English — upper-intermediate

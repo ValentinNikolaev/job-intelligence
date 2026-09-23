@@ -1,21 +1,21 @@
 profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
 vacancy_version: sha256:4837ac5a2815554b317182a72f65d4173d279769bd74cd591e93e59a1a8b51c4
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:0ab0f2625595fff2b995b3695b674a6f7a26b8763aad7225474560d8f989eacc
+prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_neting_CerchiamoUnoSviluppatoreLaravel
-generated_at: '2026-09-23T21:48:27Z'
+generated_at: '2026-09-23T17:34:18Z'
 documents:
   cv:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:4837ac5a2815554b317182a72f65d4173d279769bd74cd591e93e59a1a8b51c4
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:0ab0f2625595fff2b995b3695b674a6f7a26b8763aad7225474560d8f989eacc
+    prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_neting_CerchiamoUnoSviluppatoreLaravel
-    generated_at: '2026-09-23T21:48:27Z'
+    generated_at: '2026-09-23T17:34:18Z'
   cover-letter:
     profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
     vacancy_version: sha256:4837ac5a2815554b317182a72f65d4173d279769bd74cd591e93e59a1a8b51c4
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 403
-      sha256: sha256:0903314d3be8a110e944c35d1016da74127e301584c07a8f293a134de074d9fc
+      word_count: 572
+      sha256: sha256:8900975edb4741a4f67faaa86c6e48a621b15197c4683291b8d1c37dfb7be901
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 8256caa798db9c5256d821470f2d8b13ad5aefe74bab8bea9c176821a066a9e0
+    sha256: e227a01777f5457244977a5461603b0c8076faccdbadb884e61e125ea4f4709f
     evidence_bank:
       schema_version: 1
       sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
@@ -79,7 +79,7 @@ quality:
         retracted: 0
         unverified: 11
         verified: 9
-    claim_count: 12
+    claim_count: 17
     evidence_ids:
     - cv-hyprr
     - database-reliability
@@ -225,24 +225,33 @@ quality:
     - cv_bullet_coverage
     semantic_review_required: true
     cv_audit:
-      target_role: Cerchiamo uno sviluppatore Laravel
+      target_role: Laravel / PHP Backend Engineer
       top_third_evidence_ids:
       - cv-hyprr
-      - database-reliability
+      - kubernetes-migration
       bullet_decisions:
-      - text: Keep distinct Hyprr product-delivery and architecture achievements.
+      - text: Brought the product from prototype to closed beta in under 6 months.
         decision: keep
-        reason: They directly support Laravel, architecture, and delivery requirements.
-      - text: Remove evidence labels and audit commentary from the employer-facing
-          CV.
-        decision: remove
-        reason: Internal provenance belongs in the claims ledger, not the submitted
-          document.
-    reviewer: Codex final CV repair review
+        reason: Directly demonstrates delivery leadership relevant to web-application
+          architecture.
+      - text: Migrated services from ECS to Kubernetes and prepared the runtime stack
+          for Kubernetes deployments with Helm, GitHub Actions, and ArgoCD.
+        decision: keep
+        reason: Supports Neting's stated cloud-resource and continuous-development
+          context.
+      - text: Integrated auto-triage flows, automating or deflecting up to 30% of
+          inbound tickets.
+        decision: keep
+        reason: Provides a recent, verified backend-automation outcome without overstating
+          Laravel relevance.
+    reviewer: Codex self-review
     document_sha256:
-      cv: sha256:0903314d3be8a110e944c35d1016da74127e301584c07a8f293a134de074d9fc
+      cv: sha256:8900975edb4741a4f67faaa86c6e48a621b15197c4683291b8d1c37dfb7be901
+      cover-letter: sha256:c0620b10170161bee80699431cfe511e8626d69e2dde205b5af4b68c77bbc337
+      analysis: sha256:ad2d3be71eda3e09d930d4f9e792b874c97e2b7898ef1961da3601f7f2caed01
+      interview-preparation: sha256:2449e7cec04457d56fdf9aa61355add4bf004a884ffbc0a8d8dca4f7363a6a57
     requirements:
-    - requirement: Laravel and PHP backend development
+    - requirement: Excellent Laravel knowledge
       importance: critical
       basis: stated
       jd_quote: Ottima conoscenza di Laravel
@@ -253,46 +262,115 @@ quality:
       hard_blocker: false
       evidence_ids:
       - cv-hyprr
-    - requirement: Web-application architecture
-      importance: high
+    - requirement: Excellent PHP 7+ knowledge
+      importance: critical
       basis: stated
-      jd_quote: Progettazione dell’architettura software di applicazioni web based
+      jd_quote: Ottima conoscenza di PHP 7+
       match: strong
-      candidate_quote: Defined the technology roadmap with the CTO
+      candidate_quote: PHP
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
       - cv-hyprr
-    - requirement: Cloud platform support
-      importance: meaningful
+    - requirement: REST API development and related documentation
+      importance: high
       basis: stated
-      jd_quote: Affiancamento nella gestione delle risorse di sistema in ambito cloud
+      jd_quote: Sviluppo API rest e documentazione relativa
       match: partial
-      candidate_quote: Kubernetes
-      risk: Exact responsibility for Neting's preferred cloud environments requires
-        discussion.
-      mitigation: Use the verified ECS-to-Kubernetes migration as the closest evidence.
+      candidate_quote: REST APIs
+      risk: Direct API-documentation practice is not verified.
+      mitigation: Confirm documentation tooling and examples before submission.
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    - requirement: Git and continuous development
+      importance: high
+      basis: stated
+      jd_quote: Git / continuous development
+      match: partial
+      candidate_quote: ECS
+      risk: Git use is not directly verified.
+      mitigation: Confirm Git workflow before representation.
       hard_blocker: false
       evidence_ids:
       - kubernetes-migration
+    - requirement: JavaScript ES6 and a front-end framework
+      importance: high
+      basis: stated
+      jd_quote: Conoscenza di front end e Javascript ES6 e tramite almeno un framework
+        di sviluppo (preferibilmente Angular)
+      match: unknown
+      candidate_quote: ''
+      risk: Current front-end and JavaScript experience are not verified.
+      mitigation: Confirm scope and current capability before applying.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: SQL, HTML5, CSS3, and unit tests
+      importance: high
+      basis: stated
+      jd_quote: Conoscenza di SQL, HTML5, CSS3, Unit Test e tutto ciò che sta intorno
+        allo sviluppo di un’applicazione web
+      match: unknown
+      candidate_quote: ''
+      risk: These specific capabilities are not verified in the usable evidence bank.
+      mitigation: Confirm each item rather than infer it from adjacent backend work.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Cloud-system resource management
+      importance: meaningful
+      basis: stated
+      jd_quote: Affiancamento nella gestione delle risorse di sistema in ambito cloud
+        (AWS / OVH / Google / ..)
+      match: strong
+      candidate_quote: ECS
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - kubernetes-migration
+    - requirement: Another PHP development framework
+      importance: preferred
+      basis: stated
+      jd_quote: Conoscenza di un altro framework di sviluppo PHP (Symphony)
+      match: unknown
+      candidate_quote: ''
+      risk: Symfony is not established by the verified evidence entries selected for
+        this package.
+      mitigation: Confirm before claiming a second PHP framework.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Another programming language
+      importance: preferred
+      basis: stated
+      jd_quote: Conoscenza approfondita di almeno un altro linguaggio di programmazione
+        (Python, Java, ecc.)
+      match: strong
+      candidate_quote: Go
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
     - document: cv
-      text: Combines hands-on implementation with architecture and technical leadership,
-        including defining a technology roadmap with a CTO and taking a product from
-        prototype to closed beta.
+      text: At Hyprr, I led backend development for a platform with digital asset
+        components.
       evidence_ids:
       - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
     - document: cv
-      text: Recent work also covers database stability, Kubernetes delivery, CI/CD,
-        and integration-heavy automation, with an emphasis on maintainable systems
-        and pragmatic collaboration.
+      text: At airSlate, I migrated services from ECS to Kubernetes and prepared the
+        runtime stack.
       evidence_ids:
-      - database-reliability
       - kubernetes-migration
-      - support-platform
+      employer: airSlate
+      role: Software Developer
+      technologies: []
     - document: cv
       text: Designed and owned a Go-based support automation platform connecting Zendesk,
         Intercom, and internal services.
@@ -300,13 +378,15 @@ quality:
       - support-platform
       employer: Simple.life
       role: Software Developer
+      technologies: []
     - document: cv
-      text: Integrated OpenAI-powered auto-triage flows that automated or deflected
-        up to 30% of inbound tickets.
+      text: Integrated auto-triage flows, automating or deflecting up to 30% of inbound
+        tickets.
       evidence_ids:
       - support-triage
       employer: Simple.life
       role: Software Developer
+      technologies: []
     - document: cv
       text: Reduced peak load on the main database by removing bottlenecks and redistributing
         workload, improving service stability during high-traffic periods.
@@ -314,19 +394,30 @@ quality:
       - database-reliability
       employer: airSlate
       role: Software Developer
+      technologies: []
     - document: cv
-      text: Migrated services from ECS to Kubernetes and prepared the deployment stack
-        with Helm, GitHub Actions, and ArgoCD.
+      text: Migrated services from ECS to Kubernetes and prepared the runtime stack
+        for Kubernetes deployments with Helm, GitHub Actions, and ArgoCD.
       evidence_ids:
       - kubernetes-migration
       employer: airSlate
       role: Software Developer
+      technologies: []
     - document: cv
-      text: Brought the product from prototype to closed beta in under six months.
+      text: Brought the product from prototype to closed beta in under 6 months.
       evidence_ids:
       - cv-hyprr
       employer: Hyprr
       role: Technical Lead
+      technologies: []
+    - document: cv
+      text: Influenced product development across project planning, microservice and
+        serverless architecture, CI/CD, and reliability/serviceability concerns.
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
     - document: cv
       text: Defined the technology roadmap with the CTO and helped establish the core
         stack for product delivery.
@@ -334,68 +425,119 @@ quality:
       - cv-hyprr
       employer: Hyprr
       role: Technical Lead
+      technologies: []
     - document: cv
-      text: Influenced product development across project planning, microservice and
-        serverless architecture, CI/CD, and reliability concerns.
+      text: Led backend development and worked on the platform’s Ethereum-based digital
+        asset components.
       evidence_ids:
       - cv-hyprr
       employer: Hyprr
       role: Technical Lead
+      technologies: []
     - document: cv
-      text: Led backend development and contributed to the platform’s Ethereum-based
-        digital asset components.
-      evidence_ids:
-      - cv-hyprr
-      employer: Hyprr
-      role: Technical Lead
-    - document: cv
-      text: Led a team of five backend engineers developing a transactional email
-        service.
+      text: Led a team of 5 backend engineers developing a transactional email service.
       evidence_ids:
       - email-team
       employer: PDFfiller
       role: Software Developer
+      technologies: []
     - document: cv
-      text: Scaled the service to approximately 50 million emails per month while
-        supporting production delivery at high volume.
+      text: Scaled the service to around 50 million emails per month.
       evidence_ids:
       - email-scale
       employer: PDFfiller
       role: Software Developer
-  declaration_sha256: sha256:9065488a33e9ff8f075a28b4ee775c3689028e326a23ad2ff1166f27d13b779a
+      technologies: []
+    - document: cover-letter
+      text: I brought a product from prototype to closed beta in under six months.
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
+    - document: cover-letter
+      text: I migrated services from ECS to Kubernetes and prepared the runtime stack
+        for Kubernetes deployments with Helm, GitHub Actions, and ArgoCD.
+      evidence_ids:
+      - kubernetes-migration
+      employer: airSlate
+      role: Software Developer
+      technologies: []
+    - document: cover-letter
+      text: In a separate airSlate contribution, I reduced peak load on the main database
+        by removing bottlenecks and redistributing workload, improving stability during
+        high-traffic periods.
+      evidence_ids:
+      - database-reliability
+      employer: airSlate
+      role: Software Developer
+      technologies: []
+    - document: analysis
+      text: The technical backend, Laravel/PHP, REST API, cloud, CI/CD, and database-reliability
+        evidence is strong, but confirm Partita IVA, availability, Git/API documentation,
+        and frontend capability before submitting.
+      evidence_ids:
+      - cv-hyprr
+      - kubernetes-migration
+      - database-reliability
+      technologies: []
+    - document: interview-preparation
+      text: Hyprr prototype-to-closed-beta delivery; airSlate’s database reliability
+        work; airSlate’s ECS-to-Kubernetes migration; Simple.life’s support-automation
+        platform; PDFfiller’s five-engineer email-service leadership.
+      evidence_ids:
+      - cv-hyprr
+      - database-reliability
+      - kubernetes-migration
+      - support-platform
+      - email-team
+      technologies: []
+  declaration_sha256: sha256:7812c237640440030f130760d0ee320e2a666e249ccdf4b0ba55fa6a59ae7a4d
   method:
     workflow: two-wave
     final_review:
       claim_grounding: true
       cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 13.2.0+codex.20260831211622
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://www.neting.it/careers/sviluppatore-laravel-remote/
   handoffs:
+    research.md:
+      word_count: 346
+      sha256: sha256:4bb97e42b3eb54ce2438106104b3d2a3b0514c328a41c99ab99dd91fc345d528
     evidence-map.md:
-      word_count: 470
-      sha256: sha256:3f6b0e96a992e9a9fa6a1d71e259fb7673bd0aa3991dea7da624c4453888c232
+      word_count: 548
+      sha256: sha256:816b04e4e4e0e8c1eb07e6b4f770d242d256a9f609782a815bf7ef2d67d039ee
+    requirements-risks.md:
+      word_count: 440
+      sha256: sha256:9b6595dd7451009ef15b965b8169c64a6639d84012826bab46b16df485b9be63
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 0903314d3be8a110e944c35d1016da74127e301584c07a8f293a134de074d9fc
-      artifact_sha256: ff42d1ebdcd85fd15f1a1fec668cb6cc8111ad5ee1540cadb3be4d97f30c3e80
-      extracted_text_sha256: 92c2e8ab6ef499bd90869486489e09f6bbb3475b4ca19e9d953ccb2de914e61f
-      canonical_tokens: 406
-      extracted_tokens: 406
+      source_sha256: 8900975edb4741a4f67faaa86c6e48a621b15197c4683291b8d1c37dfb7be901
+      artifact_sha256: 5526a58e5d925716a544568b60324e3b6eda7891deb90cb8dfa134a8195f5ccd
+      extracted_text_sha256: 72df8b57fd06e6391cfe377fd6b8a88fa2de936a4652b6db3910973853d6b6e2
+      canonical_tokens: 583
+      extracted_tokens: 583
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 38
+        readable_paragraphs: 41
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: ff42d1ebdcd85fd15f1a1fec668cb6cc8111ad5ee1540cadb3be4d97f30c3e80
+        artifact_sha256: 5526a58e5d925716a544568b60324e3b6eda7891deb90cb8dfa134a8195f5ccd
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:
