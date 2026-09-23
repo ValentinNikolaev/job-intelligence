@@ -60,6 +60,7 @@ from .workflow_lock import (
 # A complete outage returns a fatal status; automation must not soften it.
 COLLECTION_SOURCE_FAILURE_EXIT = 75
 SLOW_STORE_JOB_MS = 1_000
+STORE_BATCH_SIZE = 50
 
 
 def _configure_stdio() -> None:
@@ -265,10 +266,13 @@ def main(argv: list[str] | None = None) -> int:
                 selector = args.arguments[0] if args.arguments else "all"
                 directories = resolve_job_directories(registry_dir, selector)
                 counts = {"high": 0, "medium": 0, "low": 0, "skip_model": 0}
-                for directory in directories:
-                    result = write_triage(directory)
-                    counts[str(result["confidence"])] += 1
-                    counts["skip_model"] += int(bool(result["skip_model"]))
+                for offset in range(0, len(directories), STORE_BATCH_SIZE):
+                    batch = directories[offset:offset + STORE_BATCH_SIZE]
+                    with op.vacancy_batch(registry_dir, directories=batch):
+                        for directory in batch:
+                            result = write_triage(directory)
+                            counts[str(result["confidence"])] += 1
+                            counts["skip_model"] += int(bool(result["skip_model"]))
             print(json.dumps({"triaged": len(directories), **counts}, indent=2, sort_keys=True))
             return 0
         except (Exception, WorkflowLockError) as exc:
@@ -694,61 +698,50 @@ def _store_collected_jobs(
         flush=True,
     )
     try:
-        for index, job in enumerate(jobs, start=1):
-            job_started_at = time.monotonic()
-            outcome = "failed"
-            try:
-                rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
-                if rejection is not None:
-                    rejected_registry.upsert(job, rejection)
-                    summary.record("rejected")
-                    outcome = "rejected"
-                    continue
-                result = registry.upsert(job)
-                summary.record(result.status)
-                outcome = result.status
-            except StorageError:
-                # A failed storage/lease is a failed mutation phase, not a bad source row.
-                raise
-            except Exception as exc:
-                summary.errors += 1
-                outcome = "error"
-                print(
-                    f"{name}: failed to store {job.source_job_id}: {exc}",
-                    file=sys.stderr,
-                )
-            finally:
-                job_elapsed_ms = round((time.monotonic() - job_started_at) * 1000)
-                if job_elapsed_ms >= SLOW_STORE_JOB_MS:
-                    print(
-                        json.dumps(
-                            {
-                                "elapsed_ms": job_elapsed_ms,
-                                "event": "collector.store.slow_job",
-                                "outcome": outcome,
-                                "source": name,
-                                "source_job_id": job.source_job_id,
-                            },
-                            sort_keys=True,
-                        ),
-                        file=sys.stderr,
-                        flush=True,
-                    )
-                if index % 10 == 0 or index == len(jobs):
-                    print(
-                        json.dumps(
-                            {
-                                "elapsed_ms": round((time.monotonic() - started_at) * 1000),
-                                "event": "collector.store.progress",
-                                "processed": index,
-                                "source": name,
-                                "total": len(jobs),
-                            },
-                            sort_keys=True,
-                        ),
-                        file=sys.stderr,
-                        flush=True,
-                    )
+        for offset in range(0, len(jobs), STORE_BATCH_SIZE):
+            batch = []
+            for job in jobs[offset:offset + STORE_BATCH_SIZE]:
+                try:
+                    job.validate()
+                    batch.append(job)
+                except Exception as exc:
+                    summary.errors += 1
+                    print(f"{name}: invalid source row: {exc}", file=sys.stderr)
+            outcomes = []
+            with op.vacancy_batch(registry.root, jobs=batch) as store:
+                for job in batch:
+                    job_started_at = time.monotonic()
+                    outcome = "failed"
+                    try:
+                        with op.vacancy_batch_item(store):
+                            rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
+                            if rejection is not None:
+                                rejected_registry.upsert(job, rejection)
+                                outcome = "rejected"
+                            else:
+                                outcome = registry.upsert(job).status
+                        outcomes.append(outcome)
+                    except StorageError:
+                        # Storage failures abort the entire transaction and remain fatal.
+                        raise
+                    except Exception as exc:
+                        summary.errors += 1
+                        outcome = "error"
+                        print(f"{name}: failed to store {job.source_job_id}: {exc}", file=sys.stderr)
+                    finally:
+                        job_elapsed_ms = round((time.monotonic() - job_started_at) * 1000)
+                        if job_elapsed_ms >= SLOW_STORE_JOB_MS:
+                            print(json.dumps({"elapsed_ms": job_elapsed_ms,
+                                              "event": "collector.store.slow_job", "outcome": outcome,
+                                              "source": name, "source_job_id": job.source_job_id}, sort_keys=True),
+                                  file=sys.stderr, flush=True)
+            # Report only committed outcomes; a failed bulk write records no successes.
+            for outcome in outcomes:
+                summary.record(outcome)
+            print(json.dumps({"elapsed_ms": round((time.monotonic() - started_at) * 1000),
+                              "event": "collector.store.progress", "processed": min(offset + STORE_BATCH_SIZE, len(jobs)),
+                              "source": name, "total": len(jobs)}, sort_keys=True),
+                  file=sys.stderr, flush=True)
         completed = True
         return summary
     finally:
@@ -822,54 +815,9 @@ def _top_limit(arguments: list[str]) -> int:
 
 
 def _top_vacancies(registry_dir: Path, *, limit: int = 5) -> list[dict[str, Any]]:
-    inactive_statuses = {"rejected", "withdrawn", "closed"}
-    rows: list[dict[str, Any]] = []
-    for meta_path in sorted(op.metadata_paths(registry_dir / "jobs")):
-        match_path = meta_path.parent / "match.yaml"
-        if not op.exists(match_path):
-            continue
-        meta = _read_yaml_file(meta_path, "vacancy metadata")
-        if str(meta.get("status", "")).strip().casefold() in inactive_statuses:
-            continue
-        match = _read_yaml_file(match_path, "match analysis")
-        score = match.get("score")
-        recommendation = match.get("recommendation")
-        if isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100:
-            raise ValueError(f"match analysis has invalid score: {match_path}")
-        if recommendation not in {
-            "strong_match",
-            "match",
-            "possible_match",
-            "weak_match",
-            "not_match",
-        }:
-            raise ValueError(f"match analysis has invalid recommendation: {match_path}")
-        sources = meta.get("sources")
-        url = ""
-        if isinstance(sources, list) and sources:
-            first_source = sources[0]
-            if isinstance(first_source, dict):
-                url = str(first_source.get("url") or "")
-        rows.append(
-            {
-                "score": score,
-                "recommendation": str(recommendation).replace("_", " "),
-                "discovered_at": str(meta.get("discovered_at") or ""),
-                "company": str(meta.get("company") or ""),
-                "title": str(meta.get("title") or ""),
-                "directory": meta_path.parent.name,
-                "url": url,
-            }
-        )
-    rows.sort(
-        key=lambda row: (
-            int(row["score"]),
-            str(row["discovered_at"]),
-            str(row["directory"]),
-        ),
-        reverse=True,
-    )
-    return rows[:limit]
+    from .workflow_api import top_vacancies
+
+    return top_vacancies(registry_dir, limit=limit)
 
 
 def _read_yaml_file(path: Path, label: str) -> dict[str, Any]:
@@ -967,7 +915,7 @@ def _run_api(
         return 2
     if not args.arguments:
         print(
-            "Usage: python run.py api <workflow-summary|workflow-limits|source-usage|"
+            "Usage: python run.py api <workflow-report|workflow-summary|workflow-limits|source-usage|"
             "codex-usage|catalog-vacancies|queues> --json",
             file=sys.stderr,
         )
@@ -989,11 +937,22 @@ def _run_api(
             queue_response,
             source_usage,
             workflow_limits,
+            workflow_report,
             workflow_summary,
         )
 
         command = args.arguments[0].replace("_", "-").casefold()
-        if command == "workflow-summary":
+        if command == "workflow-report":
+            payload = workflow_report(
+                project_root,
+                registry_dir,
+                config,
+                profile_paths,
+                collection_limit,
+                top_limit=20,
+                queue_limit=args.limit,
+            )
+        elif command == "workflow-summary":
             payload = workflow_summary(project_root, registry_dir, config, profile_paths)
         elif command == "workflow-limits":
             payload = workflow_limits(project_root, collection_limit)

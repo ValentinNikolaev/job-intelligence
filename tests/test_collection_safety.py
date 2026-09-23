@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import re
 import unittest
-from contextlib import redirect_stderr
+from contextlib import contextmanager, redirect_stderr
 from io import StringIO
 from pathlib import Path
 from unittest.mock import MagicMock, patch
@@ -127,7 +127,7 @@ class CollectionSafetyContractTests(unittest.TestCase):
         registry = MagicMock()
         registry.upsert.side_effect = StorageLeaseError("lease lost")
 
-        with self.assertRaises(StorageLeaseError):
+        with patch.object(cli.op, "get_store", return_value=None), self.assertRaises(StorageLeaseError):
             cli._store_collected_jobs(
                 "test",
                 CollectorSummary(source="test", fetched=1),
@@ -152,7 +152,7 @@ class CollectionSafetyContractTests(unittest.TestCase):
         registry.upsert.return_value = UpsertResult("unchanged", "vacancy-1", "example")
         stderr = StringIO()
 
-        with redirect_stderr(stderr):
+        with patch.object(cli.op, "get_store", return_value=None), redirect_stderr(stderr):
             result = cli._store_collected_jobs(
                 "test",
                 CollectorSummary(source="test", fetched=1),
@@ -170,6 +170,24 @@ class CollectionSafetyContractTests(unittest.TestCase):
         self.assertEqual("completed", events[-1]["status"])
         self.assertEqual(1, events[-1]["unchanged"])
         self.assertGreaterEqual(events[-1]["elapsed_ms"], 0)
+
+    def test_bulk_commit_failure_does_not_report_staged_successes(self) -> None:
+        import jobintel.cli as cli
+        from jobintel.models import CollectorSummary, NormalizedJob, UpsertResult
+        from jobintel.storage_contract import StorageConflictError
+
+        @contextmanager
+        def failed_batch(*args, **kwargs):
+            yield None
+            raise StorageConflictError("bulk commit failed")
+
+        registry = MagicMock()
+        registry.upsert.return_value = UpsertResult("created", "one", "one")
+        summary = CollectorSummary(source="test")
+        job = NormalizedJob("test", "one", "https://example.test/one", "PHP Engineer", "Example", "PHP backend")
+        with patch.object(cli.op, "vacancy_batch", failed_batch), self.assertRaises(StorageConflictError):
+            cli._store_collected_jobs("test", summary, [job], registry, MagicMock())
+        self.assertEqual(0, summary.created)
 
 
 if __name__ == "__main__":

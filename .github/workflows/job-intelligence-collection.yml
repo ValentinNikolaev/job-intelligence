@@ -128,41 +128,11 @@ jobs:
         shell: bash
         run: bash .github/scripts/run-and-report.sh "Run repository doctor" hard python run.py doctor --ci
 
-      - name: Workflow summary
-        id: workflow_summary
+      - name: Workflow report
+        id: workflow_report
         continue-on-error: true
         shell: bash
-        run: bash .github/scripts/run-and-report.sh "Workflow summary" hard python run.py api workflow-summary --json
-
-      - name: Workflow limits
-        id: workflow_limits
-        continue-on-error: true
-        shell: bash
-        run: bash .github/scripts/run-and-report.sh "Workflow limits" hard python run.py api workflow-limits --json
-
-      - name: Analyze queue
-        id: analyze_queue
-        continue-on-error: true
-        shell: bash
-        run: bash .github/scripts/run-and-report.sh "Analyze queue" hard python run.py api queues analyze --json --limit 60
-
-      - name: Preparation queue
-        id: preparation_queue
-        continue-on-error: true
-        shell: bash
-        run: bash .github/scripts/run-and-report.sh "Preparation queue" hard python run.py api queues prepare --json --limit 20
-
-      - name: Source API usage
-        id: source_api_usage
-        continue-on-error: true
-        shell: bash
-        run: bash .github/scripts/run-and-report.sh "Source API usage" hard python run.py api source-usage --json
-
-      - name: Top vacancies
-        id: top_vacancies
-        continue-on-error: true
-        shell: bash
-        run: bash .github/scripts/run-and-report.sh "Top vacancies" hard python run.py top 20
+        run: bash .github/scripts/run-and-report.sh "Workflow report" hard python run.py api workflow-report --json --limit 60
 
       - name: Gate deterministic workflow
         id: deterministic
@@ -192,12 +162,7 @@ jobs:
           check_step "Regenerate vacancy catalog" "${{ steps.catalog.outcome }}"
           check_step "Run unit tests" "${{ steps.unit_tests.outcome }}"
           check_step "Run repository doctor" "${{ steps.doctor.outcome }}"
-          check_step "Workflow summary" "${{ steps.workflow_summary.outcome }}"
-          check_step "Workflow limits" "${{ steps.workflow_limits.outcome }}"
-          check_step "Analyze queue" "${{ steps.analyze_queue.outcome }}"
-          check_step "Preparation queue" "${{ steps.preparation_queue.outcome }}"
-          check_step "Source API usage" "${{ steps.source_api_usage.outcome }}"
-          check_step "Top vacancies" "${{ steps.top_vacancies.outcome }}"
+          check_step "Workflow report" "${{ steps.workflow_report.outcome }}"
 
           echo "failure=${hard_failure}" >> "$GITHUB_OUTPUT"
           if [ "$hard_failure" -ne 0 ]; then

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -10,11 +11,14 @@ import yaml
 from . import storage_bridge as op
 
 from .applications import ApplicationGenerator, CodexApplicationDraftClient, HostMarkdownDocxConverter
-from .catalog_data import CatalogVacancy, load_catalog_vacancies
+from .catalog_data import CatalogSnapshot, CatalogVacancy, load_catalog_snapshot
 from .matching import (
     MAX_ANALYSIS_BATCH_SIZE,
+    PROMPT_VERSION,
     CodexMatchDraftClient,
     MatchAnalyzer,
+    _compact_vacancy,
+    _content_version,
     analysis_should_skip_status,
 )
 from .triage import should_skip_model
@@ -78,7 +82,20 @@ def workflow_summary(
 ) -> dict[str, Any]:
     del config
     policy = _policy(project_root)
-    vacancies = load_catalog_vacancies(registry_root)
+    snapshot = load_catalog_snapshot(registry_root)
+    return _summary_from_snapshot(project_root, registry_root, profile_paths, policy, snapshot)
+
+
+def _summary_from_snapshot(
+    project_root: Path,
+    registry_root: Path,
+    profile_paths: list[Path],
+    policy: WorkflowPolicy,
+    snapshot: CatalogSnapshot,
+    *,
+    pending_analyze: int | None = None,
+) -> dict[str, Any]:
+    vacancies = snapshot.vacancies
     inactive = {"rejected", "withdrawn", "closed"}
     active = [vacancy for vacancy in vacancies if vacancy.status not in inactive]
     prepared = [vacancy for vacancy in vacancies if vacancy.artifacts.cv_md and vacancy.artifacts.cover_letter_md]
@@ -87,14 +104,21 @@ def workflow_summary(
         "vacancies_active": len(active),
         "rejected_total": _rejected_count(registry_root),
         "analyzed_total": sum(1 for vacancy in vacancies if vacancy.score is not None),
-        "pending_analyze": len(queue_items("analyze", project_root, registry_root, profile_paths, policy)),
+        "pending_analyze": (
+            pending_analyze
+            if pending_analyze is not None
+            else len(queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot))
+        ),
         "pending_prepare": 0,
         "prepared_total": len(prepared),
     }
 
 
 def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[str, Any]:
-    policy = _policy(project_root)
+    return _limits_from_policy(_policy(project_root), collection_limit)
+
+
+def _limits_from_policy(policy: WorkflowPolicy, collection_limit: int | None) -> dict[str, Any]:
     return {
         "collection_limit_per_source": collection_limit,
         "analyze_batch_size": MAX_ANALYSIS_BATCH_SIZE,
@@ -147,8 +171,76 @@ def codex_usage(registry_root: Path) -> dict[str, Any]:
 
 def catalog_vacancies(registry_root: Path) -> dict[str, Any]:
     base = registry_root.parent
-    rows = [vacancy.to_api_dict(base=base) for vacancy in load_catalog_vacancies(registry_root)]
+    rows = [vacancy.to_api_dict(base=base) for vacancy in load_catalog_snapshot(registry_root).vacancies]
     return {"vacancies": rows}
+
+
+def top_vacancies(registry_root: Path, *, limit: int = 5) -> list[dict[str, Any]]:
+    return _top_from_snapshot(load_catalog_snapshot(registry_root), limit)
+
+
+def _top_from_snapshot(snapshot: CatalogSnapshot, limit: int) -> list[dict[str, Any]]:
+    if isinstance(limit, bool) or not isinstance(limit, int) or limit < 1:
+        raise WorkflowApiError("top limit must be a positive integer")
+    rows = []
+    for vacancy in snapshot.vacancies:
+        if vacancy.status in {"rejected", "withdrawn", "closed"} or vacancy.score is None:
+            continue
+        source = vacancy.sources[0] if vacancy.sources else {}
+        document = snapshot.operational_by_directory.get(vacancy.directory.name)
+        meta = document.get("meta") if document else None
+        rows.append({
+            "score": vacancy.score,
+            "recommendation": str(vacancy.recommendation).replace("_", " "),
+            "discovered_at": (
+                str(meta.get("discovered_at") or "")
+                if isinstance(meta, dict) else vacancy.discovered_at
+            ),
+            "company": vacancy.company,
+            "title": vacancy.title,
+            "directory": vacancy.directory.name,
+            "url": str(source.get("url") or ""),
+        })
+    rows.sort(
+        key=lambda row: (row["score"], row["discovered_at"], row["directory"]),
+        reverse=True,
+    )
+    return rows[:limit]
+
+
+def workflow_report(
+    project_root: Path,
+    registry_root: Path,
+    config: dict[str, str],
+    profile_paths: list[Path],
+    collection_limit: int | None,
+    *,
+    top_limit: int = 5,
+    queue_limit: int | None = None,
+) -> dict[str, Any]:
+    del config
+    if queue_limit is not None and (
+        isinstance(queue_limit, bool) or not isinstance(queue_limit, int) or queue_limit < 1
+    ):
+        raise WorkflowApiError("queue limit must be a positive integer")
+    policy = _policy(project_root)
+    snapshot = load_catalog_snapshot(registry_root)
+    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot)
+    analyze = analyze_all[:queue_limit] if queue_limit is not None else analyze_all
+    return {
+        "summary": _summary_from_snapshot(
+            project_root, registry_root, profile_paths, policy, snapshot,
+            pending_analyze=len(analyze_all),
+        ),
+        "limits": _limits_from_policy(policy, collection_limit),
+        "analyze_queue": {
+            "workflow": "analyze", "limit": queue_limit,
+            "items": [item.to_api_dict() for item in analyze],
+        },
+        "prepare_queue": {"workflow": "prepare", "limit": queue_limit, "items": []},
+        "source_usage": source_usage(registry_root),
+        "top": _top_from_snapshot(snapshot, top_limit),
+    }
 
 
 def queue_items(
@@ -159,6 +251,7 @@ def queue_items(
     policy: WorkflowPolicy | None = None,
     *,
     limit: int | None = None,
+    _snapshot: CatalogSnapshot | None = None,
 ) -> list[QueueItem]:
     policy = policy or _policy(project_root)
     workflow = workflow.replace("-", "_")
@@ -168,7 +261,8 @@ def queue_items(
         raise WorkflowApiError("queue limit must be a positive integer")
     if workflow == "prepare":
         return []
-    vacancies = load_catalog_vacancies(registry_root)
+    snapshot = _snapshot or load_catalog_snapshot(registry_root)
+    vacancies = snapshot.vacancies
     rows = []
     checker = None
     if workflow == "analyze":
@@ -180,15 +274,25 @@ def queue_items(
                 model=policy.workflow("analyze").model_label,
             ),
         )
+    profile_version: str | None = None
+    common_bytes: int | None = None
     for vacancy in vacancies:
         directory = vacancy.directory
+        document = snapshot.operational_by_directory.get(directory.name)
         if workflow == "analyze":
             if analysis_should_skip_status({"status": vacancy.status}):
                 continue
-            if should_skip_model(directory):
+            skip_model = _snapshot_should_skip(document) if document is not None else should_skip_model(directory)
+            if skip_model:
                 continue
             assert checker is not None
-            if checker.is_current(directory):
+            if document is not None:
+                if profile_version is None:
+                    _, profile_version = checker._load_profile()
+                current = _snapshot_analysis_is_current(document, profile_version, checker.model)
+            else:
+                current = checker.is_current(directory)
+            if current:
                 continue
         else:
             if vacancy.score is None:
@@ -211,7 +315,13 @@ def queue_items(
             )
             if generator.is_current(directory):
                 continue
-        estimate = estimate_input_tokens(workflow, project_root, directory, profile_paths)
+        if document is not None:
+            if common_bytes is None:
+                common_bytes = sum(_file_bytes(path) for path in profile_paths)
+                common_bytes += _file_bytes(project_root / "prompts" / "vacancy-match.md")
+            estimate = _snapshot_input_tokens(document, common_bytes)
+        else:
+            estimate = estimate_input_tokens(workflow, project_root, directory, profile_paths)
         budget = _budget_for(workflow)
         rows.append(
             QueueItem(
@@ -224,6 +334,49 @@ def queue_items(
         )
     rows.sort(key=_queue_priority, reverse=True)
     return rows[:limit] if limit is not None else rows
+
+
+def _snapshot_should_skip(document: dict[str, Any]) -> bool:
+    triage = document.get("triage")
+    return isinstance(triage, dict) and triage.get("skip_model") is True and triage.get("confidence") == "high"
+
+
+def _snapshot_analysis_is_current(document: dict[str, Any], profile_version: str, model: str) -> bool:
+    meta = document.get("meta")
+    job_text = document.get("job_text")
+    if not isinstance(meta, dict) or not isinstance(job_text, str):
+        return False
+    match = document.get("match")
+    if not isinstance(match, dict):
+        return False
+    compact = _compact_vacancy(meta, job_text)
+    job_version = _content_version(
+        json.dumps(compact, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    )
+    return (
+        match.get("profile_version") == profile_version
+        and match.get("job_version") == job_version
+        and match.get("prompt_version") == PROMPT_VERSION
+        and match.get("model") == model
+    )
+
+
+def _snapshot_input_tokens(document: dict[str, Any], common_bytes: int) -> int:
+    total = (
+        common_bytes
+        + _serialized_field_bytes(document.get("meta"))
+        + _serialized_field_bytes(document.get("job_text"))
+    )
+    if document.get("company_text") is not None:
+        total += _serialized_field_bytes(document["company_text"])
+    return max(1, total // 4)
+
+
+def _serialized_field_bytes(value: Any) -> int:
+    if value is None:
+        return 0
+    content = value if isinstance(value, str) else yaml.safe_dump(value, allow_unicode=True, sort_keys=False)
+    return len(content.encode("utf-8"))
 
 
 def queue_response(
@@ -252,7 +405,7 @@ def estimate_input_tokens(
     workflow = workflow.replace("-", "_")
     paths = list(profile_paths)
     paths.extend([directory / "meta.yaml", directory / "job.md"])
-    if (directory / "company.md").is_file():
+    if op.exists(directory / "company.md"):
         paths.append(directory / "company.md")
     if workflow == "analyze":
         paths.append(project_root / "prompts" / "vacancy-match.md")
@@ -327,7 +480,10 @@ def _analysis_is_current(
 
 def _rejected_count(registry_root: Path) -> int:
     rejected = registry_root / "rejected"
-    if op.get_store(registry_root) is None and not rejected.is_dir():
+    store = op.get_store(registry_root)
+    if store is not None:
+        return len(store.list_vacancies(scope="rejected"))
+    if not rejected.is_dir():
         return 0
     return sum(1 for path in op.metadata_paths(rejected) if op.exists(path))
 

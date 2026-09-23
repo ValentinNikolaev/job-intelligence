@@ -60,6 +60,10 @@ def parse_datetime(value: object) -> dt.datetime | None:
 
 def rejected_sort_key(directory: Path) -> tuple[dt.datetime, str]:
     meta = read_yaml(directory / "meta.yaml")
+    return _rejected_sort_key(directory, meta)
+
+
+def _rejected_sort_key(directory: Path, meta: dict) -> tuple[dt.datetime, str]:
     timestamp = parse_datetime(meta.get("rejected_at")) or parse_datetime(meta.get("discovered_at"))
     if timestamp is None:
         timestamp = dt.datetime.min.replace(tzinfo=dt.timezone.utc)
@@ -90,15 +94,40 @@ def candidates_for(
     low_score: int,
     max_age_days: int,
     keep_items: int,
+    *,
+    expected_revisions: dict[str, int] | None = None,
 ) -> tuple[Path, list[Path]]:
+    scope = "rejected" if category == "rejected" else "jobs"
+    source_root = project_root / "registry" / scope
+    store = op.get_store(project_root)
+    if store is not None:
+        documents = store.list_vacancies(scope=scope)
+        rows = []
+        for document in documents:
+            directory = source_root / str(document["directory"])
+            meta = document.get("meta")
+            if not isinstance(meta, dict):
+                meta = {}
+            if _eligible_document(meta, document, category, low_score, max_age_days):
+                rows.append((directory, meta, document))
+        if category == "rejected":
+            rows.sort(key=lambda row: _rejected_sort_key(row[0], row[1]))
+            rows = rows[:max(0, len(rows) - keep_items)]
+        else:
+            rows.sort(key=lambda row: row[0])
+        if expected_revisions is not None:
+            expected_revisions.update({directory.name: int(document["revision"]) for directory, _, document in rows})
+        return source_root, [directory for directory, _, _ in rows]
+
     if category == "rejected":
         rejected_root = project_root / "registry" / "rejected"
-        if op.get_store(project_root) is None and not rejected_root.is_dir():
+        if not rejected_root.is_dir():
             return rejected_root, []
-        directories = sorted(
-            (meta.parent for meta in op.metadata_paths(rejected_root) if eligible(meta.parent, category, low_score, max_age_days)),
-            key=rejected_sort_key,
-        )
+        directories = [
+            (meta.parent, read_yaml(meta)) for meta in op.metadata_paths(rejected_root)
+        ]
+        directories.sort(key=lambda row: _rejected_sort_key(row[0], row[1]))
+        directories = [directory for directory, _ in directories]
         overflow = max(0, len(directories) - keep_items)
         return rejected_root, directories[:overflow]
 
@@ -108,6 +137,25 @@ def candidates_for(
         for meta in op.metadata_paths(jobs_root)
         if eligible(meta.parent, category, low_score, max_age_days)
     )
+
+
+def _eligible_document(
+    meta: dict, document: dict, category: str, low_score: int, max_age_days: int
+) -> bool:
+    if category == "rejected":
+        return True
+    status = str(meta.get("status") or "").strip().casefold()
+    if status not in ARCHIVABLE_JOB_STATUSES:
+        return False
+    if category == "low-score":
+        match = document.get("match")
+        score = match.get("score") if isinstance(match, dict) else None
+        return isinstance(score, int) and score < low_score
+    if category == "skipped":
+        triage = document.get("triage")
+        return isinstance(triage, dict) and triage.get("skip_model") is True
+    discovered = parse_datetime(meta.get("discovered_at"))
+    return discovered is not None and discovered.date() < dt.date.today() - dt.timedelta(days=max_age_days)
 
 
 def archive(
@@ -121,12 +169,17 @@ def archive(
     store = op.get_store(project_root)
     if store is not None:
         with store.lease("logical-archive"):
-            _, candidates = candidates_for(project_root, category, low_score, max_age_days, keep_items)
+            expected_revisions: dict[str, int] = {}
+            _, candidates = candidates_for(
+                project_root, category, low_score, max_age_days, keep_items,
+                expected_revisions=expected_revisions,
+            )
             print(f"{category}: eligible={len(candidates)} minimum={min_items}")
             if len(candidates) < min_items:
                 return 0
-            for directory in candidates:
-                op.archive_vacancy(directory, None)
+            archived = op.archive_vacancies(candidates, None, expected_revisions=expected_revisions)
+            if archived != len(candidates):
+                raise RuntimeError("bulk archive did not update every selected vacancy")
             print(f"Archived {len(candidates)} records in MongoDB; original artifacts retained.")
             return len(candidates)
     archive_root = project_root / "archives" / category
@@ -177,7 +230,6 @@ def archive(
         temporary.replace(destination)
         archive_published = True
         for directory in candidates:
-            op.archive_vacancy(directory, destination.relative_to(project_root).as_posix())
             if directory.exists():
                 resolved = directory.resolve()
                 resolved.relative_to(source_root.resolve())

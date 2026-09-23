@@ -10,8 +10,10 @@ import shutil
 import tempfile
 import unittest
 import uuid
+from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from unittest.mock import patch
 
 import yaml
 
@@ -22,6 +24,7 @@ from jobintel.manual_status_log import ManualStatusEvent, append_manual_status_e
 from jobintel.models import CollectorSummary, NormalizedJob
 from jobintel.prefilter import RejectedRegistry, Rejection
 from jobintel.registry import Registry
+from jobintel.storage_contract import SourceIdentityConflict, StorageConflictError
 from jobintel.triage import should_skip_model, write_triage
 
 
@@ -86,11 +89,168 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         write_triage(directory)
         self.assertTrue(should_skip_model(directory) is False)
 
+    def test_collection_batch_uses_bulk_writes_and_replay_is_unchanged(self) -> None:
+        from jobintel.cli import _store_collected_jobs
+        jobs = [replace(self._job(), source_job_id=f"job-{index}", title=f"PHP Engineer {index}")
+                for index in range(20)]
+        registry = Registry(self.temp / "registry", clock=lambda: self.now, cache_entries=True)
+        rejected = RejectedRegistry(self.temp / "registry")
+        store = bridge.get_store(registry.root)
+        collection_type = type(store.database["vacancies"])
+        original_bulk = collection_type.bulk_write
+        original_find_one = collection_type.find_one
+        writes = []
+
+        def bulk(collection, requests, **kwargs):
+            writes.append((collection.name, len(requests)))
+            return original_bulk(collection, requests, **kwargs)
+
+        def find_one(collection, *args, **kwargs):
+            if collection.name in {"vacancies", "source_identities", "prefilter_rejections"}:
+                self.fail(f"per-record network read: {collection.name}")
+            return original_find_one(collection, *args, **kwargs)
+
+        with patch.object(store, "list", wraps=store.list) as reads, patch.object(
+            collection_type, "bulk_write", bulk
+        ), patch.object(collection_type, "find_one", find_one):
+            first = _store_collected_jobs("test", CollectorSummary(source="test"), jobs, registry, rejected)
+            self.assertEqual(20, first.created)
+            self.assertEqual([("source_identities", 20), ("vacancies", 20)], writes)
+            self.assertEqual(3, reads.call_count)
+            writes.clear()
+            reads.reset_mock()
+            second = _store_collected_jobs("test", CollectorSummary(source="test"), jobs, registry, rejected)
+            self.assertEqual(20, second.unchanged)
+            self.assertEqual([], writes)
+            self.assertEqual(3, reads.call_count)
+        self.assertEqual([], list(registry.jobs_dir.iterdir()))
+        self.assertTrue(all(row["revision"] == 1 for row in self.store.list_vacancies()))
+        unrelated = replace(jobs[0], source_job_id="outside-batch", title="Unrelated PHP Engineer")
+        with bridge.vacancy_batch(registry.root, jobs=[unrelated]):
+            registry.upsert(unrelated)
+        self.assertEqual(21, len(registry._scan()))
+
+    def test_batch_cross_source_merge_and_prefilter_replay(self) -> None:
+        first = replace(self._job(), source="adzuna", description="PHP backend")
+        second = replace(first, source="custom", description="Detailed PHP backend requirements")
+        with bridge.vacancy_batch(self.registry.root, jobs=[first, second]):
+            created = self.registry.upsert(first)
+            merged = self.registry.upsert(second)
+        self.assertEqual("merged", merged.status)
+        self.assertEqual(created.directory, merged.directory)
+        row = self.store.get("vacancies", created.vacancy_id)
+        self.assertEqual(2, len(row["meta"]["sources"]))
+        self.assertIn(second.description, row["job_text"])
+        rejected = RejectedRegistry(self.registry.root)
+        rejected_job = replace(first, source_job_id="rejected")
+        rejection = Rejection("tech_stack", "no target stack")
+        with bridge.vacancy_batch(self.registry.root, jobs=[rejected_job]):
+            rejected.upsert(rejected_job, rejection)
+        prior = self.store.list_vacancies(scope="rejected")
+        with bridge.vacancy_batch(self.registry.root, jobs=[rejected_job]):
+            rejected.upsert(rejected_job, rejection)
+        self.assertEqual(prior, self.store.list_vacancies(scope="rejected"))
+        self.assertEqual([], list(rejected.root.iterdir()))
+
+    def test_batch_failure_rolls_back_vacancies_identities_and_row_savepoints(self) -> None:
+        first = self._job()
+        failed = replace(first, source_job_id="failed", title="Different Engineer")
+        self.registry._id_factory = lambda: str(uuid.uuid4())
+        with bridge.vacancy_batch(self.registry.root, jobs=[first, failed]) as store:
+            created = self.registry.upsert(first)
+            with self.assertRaisesRegex(ValueError, "bad row"):
+                with bridge.vacancy_batch_item(store):
+                    self.registry.upsert(failed)
+                    raise ValueError("bad row")
+        self.assertEqual([created.vacancy_id], [row["_id"] for row in self.store.list_vacancies()])
+        self.assertIsNone(self.store.resolve_source(failed.source, failed.source_job_id))
+        before = self.store.list_vacancies()
+        with self.assertRaisesRegex(RuntimeError, "failed batch"):
+            with bridge.vacancy_batch(self.registry.root, jobs=[failed]):
+                self.registry.upsert(failed)
+                raise RuntimeError("failed batch")
+        self.assertEqual(before, self.store.list_vacancies())
+        self.assertIsNone(self.store.resolve_source(failed.source, failed.source_job_id))
+        self.assertEqual([], list(self.registry.jobs_dir.iterdir()))
+
+    def test_batch_resolves_single_active_history_and_blocks_multiple_active(self) -> None:
+        first = self._job()
+        old = self.registry.upsert(first)
+        self.registry._id_factory = lambda: "vacancy-2"
+        active = self.registry.upsert(replace(first, source_job_id="active", title="Active Engineer"))
+        bridge.archive_vacancy(self.registry.jobs_dir / old.directory, "old.zip")
+        identity_id = self.store._source_identity_id(first.source, first.source_job_id)
+        with self.store.lease("test:historical-identity"):
+            identity = self.store.get("source_identities", identity_id)
+            self.store.put("source_identities", identity_id,
+                           {**identity, "vacancy_ids": [old.vacancy_id, active.vacancy_id], "ambiguous": True})
+        with bridge.vacancy_batch(self.registry.root, jobs=[first]):
+            result = self.registry.upsert(first)
+        self.assertEqual(active.vacancy_id, result.vacancy_id)
+        self.assertTrue(self.store.get("vacancies", old.vacancy_id)["archived"])
+        with self.store.lease("test:duplicate-active"):
+            old_doc = self.store.get("vacancies", old.vacancy_id)
+            self.store.put("vacancies", old.vacancy_id, {**old_doc, "archived": False})
+        with self.assertRaises(SourceIdentityConflict):
+            with bridge.vacancy_batch(self.registry.root, jobs=[first]):
+                self.registry.upsert(first)
+
+    def test_bulk_archive_is_atomic_revision_guarded_and_idempotent(self) -> None:
+        self.registry._id_factory = lambda: str(uuid.uuid4())
+        jobs = [self._job(), replace(self._job(), source_job_id="second", title="Second Engineer")]
+        with bridge.vacancy_batch(self.registry.root, jobs=jobs):
+            created = [self.registry.upsert(job) for job in jobs]
+        directories = [self.registry.jobs_dir / row.directory for row in created]
+        revisions = {row["directory"]: row["revision"] for row in self.store.list_vacancies()}
+        with self.assertRaises(StorageConflictError):
+            bridge.archive_vacancies(directories + [self.registry.jobs_dir / "missing"], None)
+        self.assertEqual(2, len(self.store.list_vacancies()))
+        stale = {**revisions, created[-1].directory: 0}
+        with self.assertRaises(StorageConflictError):
+            bridge.archive_vacancies(directories, None, stale)
+        self.assertEqual(2, len(self.store.list_vacancies()))
+        self.assertEqual(2, bridge.archive_vacancies(directories, None, revisions))
+        self.assertEqual(0, bridge.archive_vacancies(directories, None))
+        self.assertEqual([], self.store.list_vacancies())
+
+    def test_triage_batch_reads_once_and_repeat_preserves_revisions(self) -> None:
+        created = self.registry.upsert(self._job())
+        directory = self.registry.jobs_dir / created.directory
+        store = bridge.get_store(self.registry.root)
+        with patch.object(store, "list", wraps=store.list) as reads:
+            with bridge.vacancy_batch(self.registry.root, directories=[directory]):
+                write_triage(directory)
+            self.assertEqual(1, reads.call_count)
+        prior = self.store.get("vacancies", created.vacancy_id)
+        with bridge.vacancy_batch(self.registry.root, directories=[directory]):
+            write_triage(directory)
+        self.assertEqual(prior, self.store.get("vacancies", created.vacancy_id))
+
+    def test_application_publication_creates_directory_for_database_only_vacancy(self) -> None:
+        from jobintel.applications import ApplicationGenerator
+        from tests.test_applications import FakeClient, FakeConverter
+        created = self.registry.upsert(self._job())
+        directory = self.registry.jobs_dir / created.directory
+        self.assertFalse(directory.exists())
+        prompt = self.temp / "prompt.md"
+        prompt.write_text("Prepare a verified application.", encoding="utf-8")
+        generator = ApplicationGenerator(
+            self.registry.root, [self.temp / "registry" / "candidate" / "match-profile.md"],
+            prompt, FakeClient(), FakeConverter(), clock=lambda: self.now,
+        )
+        result = generator.generate_directory(directory)
+        self.assertEqual("prepared", result.status)
+        self.assertTrue((directory / "application" / "manifest.yaml").is_file())
+        self.assertFalse((directory / "meta.yaml").exists())
+        self.assertFalse((directory / "job.md").exists())
+        self.assertEqual(1, len(self.store.list("artifact_manifests")))
+
     def test_archived_source_identity_reuses_same_vacancy_and_status_callback_rolls_back(self) -> None:
         created = self.registry.upsert(self._job())
         directory = self.temp / "registry" / "jobs" / created.directory
         bridge.archive_vacancy(directory, "archive/test.zip")
-        result = self.registry.upsert(self._job())
+        with bridge.vacancy_batch(self.registry.root, jobs=[self._job()]):
+            result = self.registry.upsert(self._job())
         self.assertEqual("vacancy-1", result.vacancy_id)
         with self.assertRaisesRegex(RuntimeError, "audit failure"):
             self.registry.update_status(created.directory, "applied", on_updated=lambda *_: (_ for _ in ()).throw(RuntimeError("audit failure")))
@@ -178,7 +338,7 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         created = self.registry.upsert(self._job())
         directory = self.temp / "registry" / "jobs" / created.directory
         target = directory / "application"
-        target.mkdir()
+        target.mkdir(parents=True)
         for name, content in {"cv.md": "old CV", "manifest.yaml": "old: true"}.items():
             (target / name).write_text(content, encoding="utf-8")
         bridge.record_package(directory, target)
@@ -205,6 +365,9 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         from scripts.archive_jobs import archive
         created = self.registry.upsert(self._job())
         directory = self.temp / "registry" / "jobs" / created.directory
+        # Existing migration artifacts remain files even for MongoDB-only vacancies.
+        directory.mkdir(parents=True)
+        (directory / "job.md").write_text("Frozen migration evidence", encoding="utf-8")
         analyzer = MatchAnalyzer(self.temp / "registry", [self.temp / "registry" / "candidate" / "match-profile.md"], _DraftClient())
         analyzer.publish_analysis(directory, _analysis())
         original = (directory / "job.md").read_bytes()
@@ -217,6 +380,19 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
 
 
 class StorageBridgeNoFallbackTests(unittest.TestCase):
+    def test_bulk_archive_rejects_mixed_scopes_and_duplicates_before_access(self) -> None:
+        from jobintel.storage_contract import StorageConfigurationError
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            job = root / "registry" / "jobs" / "one"
+            rejected = root / "registry" / "rejected" / "two"
+            with patch.object(bridge, "get_store") as get_store:
+                for paths in ([job, job], [job, rejected]):
+                    with self.assertRaises(StorageConfigurationError):
+                        bridge.archive_vacancies(paths, None)
+                get_store.assert_not_called()
+            self.assertEqual(0, bridge.archive_vacancies([job], None))
+
     def test_mongodb_without_uri_fails_instead_of_falling_back_to_yaml(self) -> None:
         root = Path(tempfile.mkdtemp(prefix="jobintel-storage-no-uri-"))
         try:

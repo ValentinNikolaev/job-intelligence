@@ -382,6 +382,18 @@ class Registry:
         }
         timestamp = _parse_datetime(now).strftime("%Y-%m-%d_%H%M%S")
         base_name = f"{timestamp}_{slug(job.company)}_{slug(job.title)}"
+        store = op.get_store(self.root)
+        if store is not None:
+            # MongoDB owns operational content; UUID suffixes also avoid collisions
+            # with directories outside a collection batch's selected snapshot.
+            final_dir = self.jobs_dir / f"{base_name}_{vacancy_id}"
+            store.save_vacancy(final_dir.name, meta,
+                               _render_job_markdown(meta["title"], job.description, meta["published_at"]),
+                               _render_markdown(meta["company"], job.company_description or "")
+                               if meta["company_content_source"] else None,
+                               expected_revision=0)
+            self._cache_add_entry({"meta": meta, "path": final_dir})
+            return UpsertResult("created", vacancy_id, final_dir.name)
         final_dir = self.jobs_dir / base_name
         if final_dir.exists():
             final_dir = self.jobs_dir / f"{base_name}_{vacancy_id[:8]}"

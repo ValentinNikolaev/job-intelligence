@@ -4,6 +4,7 @@ import importlib.util
 import tempfile
 import unittest
 import zipfile
+from contextlib import nullcontext
 from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from unittest.mock import patch
@@ -179,6 +180,38 @@ class ArchiveJobsTests(unittest.TestCase):
             archives = sorted((root / "archives" / "rejected").glob("*.zip"))
             self.assertEqual(2, len(archives))
             self.assertNotEqual(archives[0].name, archives[1].name)
+
+    def test_mongodb_archive_uses_one_snapshot_and_bulk_write(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+
+            class FakeStore:
+                def __init__(self) -> None:
+                    self.scopes: list[str] = []
+
+                def lease(self, owner: str):
+                    self_owner = owner
+                    assert self_owner == "logical-archive"
+                    return nullcontext()
+
+                def list_vacancies(self, *, scope: str):
+                    self.scopes.append(scope)
+                    return [
+                        {"directory": "low", "meta": {"status": "found"}, "match": {"score": 40}, "revision": 3},
+                        {"directory": "high", "meta": {"status": "found"}, "match": {"score": 80}, "revision": 4},
+                    ]
+
+            store = FakeStore()
+            with patch.object(archive_jobs.op, "get_store", return_value=store), patch.object(
+                archive_jobs.op, "archive_vacancies", return_value=1, create=True
+            ) as bulk:
+                self.assertEqual(1, archive_jobs.archive(root, "low-score", 65))
+
+            self.assertEqual(["jobs"], store.scopes)
+            bulk.assert_called_once_with(
+                [root / "registry" / "jobs" / "low"], None,
+                expected_revisions={"low": 3},
+            )
 
 
 if __name__ == "__main__":

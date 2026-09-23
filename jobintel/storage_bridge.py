@@ -8,7 +8,9 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import threading
 import uuid
+from collections.abc import Mapping, Sequence
 from functools import wraps
 from contextlib import contextmanager
 from pathlib import Path
@@ -19,6 +21,7 @@ import yaml
 from .config import load_env
 
 _STORES: dict[tuple[str, str, str], Any] = {}
+_LOCAL = threading.local()
 _FIELDS = {"meta.yaml": "meta", "match.yaml": "match", "triage.yaml": "triage",
            "job.md": "job_text", "company.md": "company_text"}
 _LOGS = {"manual-status-log.yaml", "codex-usage.yaml", "source-api-usage.yaml", "application-confirmations.yaml"}
@@ -35,6 +38,9 @@ def project_root(path: Path) -> Path | None:
 
 
 def get_store(path: Path):
+    scoped = getattr(_LOCAL, "store", None)
+    if scoped is not None and path.resolve().is_relative_to(scoped[0]):
+        return scoped[1]
     root = project_root(path)
     if root is None:
         return None
@@ -126,22 +132,65 @@ def mutation(path: Path, owner: str = "operational-write"):
     if store is None:
         yield None
         return
+    if store.in_vacancy_batch:
+        yield store
+        return
     with store.lease(owner):
         with store.transaction():
             yield store
+
+
+@contextmanager
+def vacancy_batch(path: Path, *, jobs=None, directories: Sequence[Path] | None = None):
+    """Batch MongoDB collection/triage; leave the file backend's behavior intact."""
+    store = get_store(path)
+    if store is None:
+        yield None
+        return
+    from .normalization import vacancy_fingerprint
+    options = (
+        {"directories": [directory.name for directory in directories]}
+        if directories is not None else
+        {"source_keys": [(job.source, job.source_job_id) for job in jobs or ()],
+         "fingerprints": [vacancy_fingerprint(job.company, job.title, job.location) for job in jobs or ()]}
+    )
+    previous = getattr(_LOCAL, "store", None)
+    with store.lease("vacancy-batch"):
+        _LOCAL.store = (project_root(path), store)
+        try:
+            with store.vacancy_batch(**options):
+                yield store
+        finally:
+            _LOCAL.store = previous
+
+
+@contextmanager
+def vacancy_batch_item(store):
+    if store is None:
+        yield
+    else:
+        with store.vacancy_batch_item():
+            yield
 
 
 def transactional(method):
     @wraps(method)
     def wrapped(self, *args, **kwargs):
         root = getattr(self, "registry_root", None) or getattr(self, "root", None) or getattr(self, "path", None)
-        with mutation(root, method.__qualname__):
+        with mutation(root, method.__qualname__) as store:
             # A registry object can outlive another writer's transaction.
-            if get_store(root) is not None:
+            if store is not None:
                 for cache_name in ("_entries_cache", "_entry_cache"):
                     if hasattr(self, cache_name):
                         setattr(self, cache_name, None)
-            return method(self, *args, **kwargs)
+            try:
+                return method(self, *args, **kwargs)
+            finally:
+                # A selected batch snapshot must never escape into a full-registry scan.
+                if store is not None and store.in_vacancy_batch:
+                    for cache_name in ("_entries_cache", "_entry_cache"):
+                        if hasattr(self, cache_name):
+                            setattr(self, cache_name, None)
     return wrapped
 
 
@@ -233,6 +282,28 @@ def archive_vacancy(directory: Path, archive_relative: str | None) -> None:
             payload.update(archived=True, archive_path=archive_relative)
             collection = "prefilter_rejections" if directory.parent.name == "rejected" else "vacancies"
             store.put(collection, doc["_id"], payload, expected_revision=doc["revision"])
+
+
+def archive_vacancies(
+    directories: Sequence[Path],
+    archive_relative: str | None,
+    expected_revisions: Mapping[str, int] | None = None,
+) -> int:
+    if not directories:
+        return 0
+    paths = [directory.resolve() for directory in directories]
+    root = project_root(paths[0])
+    scope = paths[0].parent.name
+    if (root is None or scope not in {"jobs", "rejected"}
+            or len(set(paths)) != len(paths)
+            or any(path.parent != root / "registry" / scope for path in paths)):
+        from .storage_contract import StorageConfigurationError
+        raise StorageConfigurationError("archive directories must be unique and belong to one registry scope")
+    store = get_store(paths[0])
+    if store is None:
+        return 0
+    return store.archive_vacancies([path.name for path in paths], archive_relative,
+                                   scope=scope, expected_revisions=expected_revisions)
 
 
 def record_package(directory: Path, application: Path) -> None:

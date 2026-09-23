@@ -10,7 +10,7 @@ from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-from pymongo import ASCENDING, MongoClient, ReturnDocument
+from pymongo import ASCENDING, MongoClient, ReplaceOne, ReturnDocument
 from pymongo.client_session import ClientSession
 from pymongo.errors import BulkWriteError, DuplicateKeyError, PyMongoError
 from pymongo.read_concern import ReadConcern
@@ -168,7 +168,6 @@ class MongoStore:
         state = self._require_lease()
         existing = getattr(self._local, "session", None)
         if existing is not None:
-            self._assert_lease_live(state)
             yield self
             return
 
@@ -193,6 +192,9 @@ class MongoStore:
                 self._local.session = None
 
     def get(self, collection: str, document_id: Any) -> dict[str, Any] | None:
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is not None and collection in batch["documents"]:
+            return copy.deepcopy(batch["documents"][collection].get(document_id))
         row = self.database[self._collection_name(collection)].find_one(
             {"_id": document_id}, session=self._session()
         )
@@ -211,6 +213,142 @@ class MongoStore:
         if sort:
             cursor = cursor.sort(list(sort))
         return [copy.deepcopy(row) for row in cursor]
+
+    @property
+    def in_vacancy_batch(self) -> bool:
+        return getattr(self._local, "vacancy_batch", None) is not None
+
+    @contextmanager
+    def vacancy_batch(
+        self,
+        *,
+        source_keys: Sequence[tuple[str, str]] = (),
+        fingerprints: Sequence[str] = (),
+        directories: Sequence[str] | None = None,
+        scope: str = "jobs",
+    ) -> Iterator[MongoStore]:
+        """Buffer a bounded collection or directory batch in one fenced transaction.
+
+        Reads within this context see only selected vacancies and their source owners.
+        Collection callers must supply every incoming identity and fingerprint; other
+        callers must select directories. Unselected registry scans are not supported.
+        """
+        if self.in_vacancy_batch:
+            raise StorageConfigurationError("vacancy batches cannot be nested")
+        with self.transaction():
+            documents: dict[str, dict[Any, dict[str, Any]]] = {}
+
+            def load(collection: str, query: Mapping[str, Any]) -> None:
+                target = documents.setdefault(collection, {})
+                target.update((row["_id"], row) for row in self.list(collection, query))
+
+            if directories is not None:
+                load(self._vacancy_collection(scope), {"scope": scope, "directory": {"$in": list(directories)}})
+            else:
+                identities = sorted({self._source_identity_id(source.strip().casefold(), job_id.strip())
+                                     for source, job_id in source_keys})
+                load("source_identities", {"_id": {"$in": identities}})
+                owner_ids = {str(owner) for row in documents["source_identities"].values()
+                             for owner in row.get("vacancy_ids", []) if owner}
+                load("vacancies", {"$or": [
+                    {"_id": {"$in": sorted(owner_ids)}},
+                    {"scope": "jobs", "archived": False, "meta.fingerprint": {"$in": list(set(fingerprints))}},
+                ]})
+                related_ids = {self._source_identity_id(source, job_id)
+                               for row in documents["vacancies"].values()
+                               for source, job_id, _ in self._source_rows(row["meta"], scope="jobs")}
+                missing = related_ids - documents["source_identities"].keys() - set(identities)
+                if missing:
+                    load("source_identities", {"_id": {"$in": sorted(missing)}})
+                owner_ids = {str(owner) for row in documents["source_identities"].values()
+                             for owner in row.get("vacancy_ids", []) if owner}
+                missing_owners = owner_ids - documents["vacancies"].keys()
+                if missing_owners:
+                    load("vacancies", {"_id": {"$in": sorted(missing_owners)}})
+                prefilter_ids = [self._rejected_vacancy_id([(source.strip().casefold(), job_id.strip(), {})], "")
+                                 for source, job_id in source_keys]
+                load("prefilter_rejections", {"_id": {"$in": prefilter_ids}})
+            batch = {"documents": documents, "originals": {}, "dirty": set()}
+            self._local.vacancy_batch = batch
+            try:
+                yield self
+                self._flush_vacancy_batch(batch)
+            finally:
+                # The enclosing transaction must verify the live lease at commit.
+                self._local.vacancy_batch = None
+
+    @contextmanager
+    def vacancy_batch_item(self) -> Iterator[None]:
+        """Roll back a malformed source row without retaining any staged writes."""
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is None:
+            yield
+            return
+        if "item_before" in batch:
+            raise StorageConfigurationError("vacancy batch items cannot be nested")
+        before: dict[tuple[str, Any], dict[str, Any] | None] = {}
+        batch["item_before"] = before
+        dirty_before = set(batch["dirty"])
+        try:
+            yield
+        except Exception:
+            for (collection, document_id), document in before.items():
+                if document is None:
+                    batch["documents"][collection].pop(document_id, None)
+                else:
+                    batch["documents"][collection][document_id] = document
+            batch["dirty"] = dirty_before
+            raise
+        finally:
+            batch.pop("item_before", None)
+
+    def _flush_vacancy_batch(self, batch: dict[str, Any]) -> None:
+        for collection in sorted(batch["documents"]):
+            operations = []
+            for name, document_id in sorted(batch["dirty"]):
+                if name != collection:
+                    continue
+                original = batch["originals"][(name, document_id)]
+                selector = {"_id": document_id, "revision": original.get("revision") if original else {"$exists": False}}
+                operations.append(ReplaceOne(selector, batch["documents"][name][document_id], upsert=original is None))
+            if not operations:
+                continue
+            try:
+                result = self.database[collection].bulk_write(operations, ordered=True, session=self._session())
+            except (BulkWriteError, DuplicateKeyError) as exc:
+                raise StorageConflictError(f"vacancy batch write conflict for {collection}") from exc
+            if result.matched_count + result.upserted_count != len(operations):
+                raise StorageConflictError(f"vacancy batch revision conflict for {collection}")
+
+    def archive_vacancies(
+        self,
+        directories: Sequence[str],
+        archive_relative: str | None,
+        *,
+        scope: str = "jobs",
+        expected_revisions: Mapping[str, int] | None = None,
+    ) -> int:
+        if len(set(directories)) != len(directories):
+            raise StorageConfigurationError("archive directories must be unique")
+        if not directories:
+            return 0
+        changed = 0
+        with self.lease("archive-vacancies"):
+            with self.vacancy_batch(directories=directories, scope=scope):
+                for directory in directories:
+                    doc = self.get_by_directory(directory, scope=scope)
+                    if doc is None:
+                        raise StorageConflictError(f"missing archive vacancy: {scope}:{directory}")
+                    if expected_revisions is not None:
+                        if directory not in expected_revisions:
+                            raise StorageConflictError(f"missing expected revision for {directory}")
+                        self._check_revision(doc, expected_revisions[directory], self._vacancy_collection(scope), doc["_id"])
+                    if doc.get("archived") is True and doc.get("archive_path") == archive_relative:
+                        continue
+                    payload = {**doc, "archived": True, "archive_path": archive_relative}
+                    self.put(self._vacancy_collection(scope), doc["_id"], payload, expected_revision=doc["revision"])
+                    changed += 1
+        return changed
 
     def put(
         self,
@@ -342,9 +480,7 @@ class MongoStore:
 
         collection = "vacancies" if scope == "jobs" else "prefilter_rejections"
         with self.transaction():
-            current = self.database[collection].find_one(
-                {"_id": vacancy_id}, session=self._session()
-            )
+            current = self.get(collection, vacancy_id)
             if current is not None:
                 if current.get("scope") != scope or current.get("directory") != directory:
                     raise StorageConflictError(
@@ -358,9 +494,7 @@ class MongoStore:
 
             for source, source_job_id, reference in sources:
                 identity_id = self._source_identity_id(source, source_job_id)
-                identity = self.database["source_identities"].find_one(
-                    {"_id": identity_id}, session=self._session()
-                )
+                identity = self.get("source_identities", identity_id)
                 vacancy_ids = sorted(
                     {str(value) for value in (identity or {}).get("vacancy_ids", []) if value}
                 )
@@ -456,6 +590,10 @@ class MongoStore:
         self, directory: str, *, scope: str = "jobs"
     ) -> dict[str, Any] | None:
         collection = self._vacancy_collection(scope)
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is not None and collection in batch["documents"]:
+            return next((copy.deepcopy(row) for row in batch["documents"][collection].values()
+                         if row.get("scope") == scope and row.get("directory") == directory), None)
         row = self.database[collection].find_one(
             {"scope": scope, "directory": directory}, session=self._session()
         )
@@ -497,6 +635,11 @@ class MongoStore:
     def _active_vacancy_ids(self, vacancy_ids: Sequence[str]) -> list[str]:
         if not vacancy_ids:
             return []
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is not None and "vacancies" in batch["documents"]:
+            return sorted(str(vacancy_id) for vacancy_id in vacancy_ids
+                          if (row := batch["documents"]["vacancies"].get(vacancy_id)) is not None
+                          and row.get("archived") is not True)
         rows = self.database["vacancies"].find(
             {
                 "_id": {"$in": list(vacancy_ids)},
@@ -511,6 +654,11 @@ class MongoStore:
         self, *, scope: str = "jobs", include_archived: bool = False
     ) -> list[dict[str, Any]]:
         collection = self._vacancy_collection(scope)
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is not None and collection in batch["documents"]:
+            return sorted((copy.deepcopy(row) for row in batch["documents"][collection].values()
+                           if row.get("scope") == scope and (include_archived or row.get("archived") is False)),
+                          key=lambda row: row["directory"])
         query: dict[str, Any] = {"scope": scope}
         if not include_archived:
             query["archived"] = False
@@ -699,9 +847,7 @@ class MongoStore:
             raise StorageConfigurationError("payload _id does not match document_id")
         for reserved in ("revision", "writer_fence", "updated_at"):
             clean.pop(reserved, None)
-        current = self.database[collection].find_one(
-            {"_id": document_id}, session=self._session()
-        )
+        current = self.get(collection, document_id)
         if current is None:
             if expected_revision not in (None, 0):
                 raise StorageConflictError(
@@ -722,6 +868,15 @@ class MongoStore:
             "writer_fence": state["lease"].fence,
             "updated_at": self._utcnow(),
         }
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is not None and collection in batch["documents"]:
+            key = (collection, document_id)
+            batch["originals"].setdefault(key, copy.deepcopy(current))
+            if "item_before" in batch:
+                batch["item_before"].setdefault(key, copy.deepcopy(current))
+            batch["dirty"].add(key)
+            batch["documents"][collection][document_id] = stored
+            return copy.deepcopy(stored)
         try:
             result = self.database[collection].replace_one(
                 selector,
@@ -960,7 +1115,11 @@ class MongoStore:
         state = getattr(self._local, "lease_state", None)
         if state is None:
             raise StorageLeaseError("a MongoDB writer lease is required for mutations")
-        self._assert_lease_live(state)
+        if self.in_vacancy_batch:
+            if state["lost"].is_set():
+                raise self._lease_lost_error(state, "lease was previously marked lost")
+        else:
+            self._assert_lease_live(state)
         return state
 
     def _session(self) -> ClientSession | None:

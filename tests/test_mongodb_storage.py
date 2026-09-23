@@ -216,6 +216,27 @@ class MongoStoreTests(unittest.TestCase):
 
         self.assertEqual([], self.store.list("vacancy_events"))
 
+    def test_bulk_vacancy_conflict_rolls_back_prior_identity_writes(self) -> None:
+        with self.store.lease("test:bulk-conflict"):
+            with self.assertRaises(StorageConflictError):
+                with self.store.vacancy_batch(source_keys=[("adzuna", "one"), ("adzuna", "two")]):
+                    self.store.save_vacancy("same-directory", self._meta("one", "one", "first"), "first", None)
+                    self.store.save_vacancy("same-directory", self._meta("two", "two", "second"), "second", None)
+        self.assertEqual([], self.store.list("vacancies"))
+        self.assertEqual([], self.store.list("source_identities"))
+
+    def test_bulk_vacancy_commit_checks_lease_after_buffered_mutations(self) -> None:
+        with self.assertRaises(StorageLeaseError):
+            with self.store.lease("test:bulk-fenced"):
+                with self.store.vacancy_batch(source_keys=[("adzuna", "one")]):
+                    self.store.save_vacancy("one", self._meta("one", "one", "first"), "first", None)
+                    self.store.database["writer_leases"].update_one(
+                        {"_id": "operational-writer"},
+                        {"$set": {"expires_at": datetime.now(timezone.utc) - timedelta(seconds=10)}},
+                    )
+        self.assertEqual([], self.store.list("vacancies"))
+        self.assertEqual([], self.store.list("source_identities"))
+
     def test_source_identity_is_unique_and_fingerprint_is_not(self) -> None:
         first = self._meta("vacancy-1", "source-1", "same-fingerprint")
         second = self._meta("vacancy-2", "source-2", "same-fingerprint")

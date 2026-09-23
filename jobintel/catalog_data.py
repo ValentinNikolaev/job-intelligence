@@ -78,12 +78,38 @@ class CatalogVacancy:
         }
 
 
+@dataclass(slots=True)
+class CatalogSnapshot:
+    vacancies: list[CatalogVacancy]
+    operational_by_directory: dict[str, dict[str, Any]]
+
+
 def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
+    return load_catalog_snapshot(registry_root).vacancies
+
+
+def load_catalog_snapshot(registry_root: Path) -> CatalogSnapshot:
     registry_root = registry_root.resolve()
     jobs_dir = registry_root / "jobs"
-    rows = []
-    for meta_path in sorted(op.metadata_paths(jobs_dir)):
-        meta = _read_mapping(meta_path)
+    store = op.get_store(registry_root)
+    operational_by_directory: dict[str, dict[str, Any]] = {}
+    if store is None:
+        entries = [(path, None) for path in sorted(op.metadata_paths(jobs_dir))]
+    else:
+        documents = store.list_vacancies(scope="jobs")
+        entries = []
+        for document in documents:
+            directory_name = str(document["directory"])
+            operational_by_directory[directory_name] = document
+            entries.append((jobs_dir / directory_name / "meta.yaml", document))
+        entries.sort(key=lambda entry: entry[0])
+    rows: list[CatalogVacancy] = []
+    for meta_path, document in entries:
+        meta = (
+            _read_mapping(meta_path)
+            if document is None
+            else _document_mapping(document, "meta", meta_path)
+        )
         directory = meta_path.parent
         _require_fields(
             meta,
@@ -95,7 +121,12 @@ def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
         if status not in VACANCY_STATUSES:
             raise CatalogDataError(f"invalid vacancy status {status!r}: {meta_path}")
         status_changed_at = _status_changed_at(meta, status, meta_path)
-        match = _read_match(directory / "match.yaml")
+        match_path = directory / "match.yaml"
+        match = (
+            _read_match(match_path)
+            if document is None
+            else _validated_match(document.get("match"), match_path)
+        )
         rows.append(
             CatalogVacancy(
                 vacancy_id=str(meta["id"]),
@@ -111,11 +142,18 @@ def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
                 score=match["score"] if match else None,
                 recommendation=match["recommendation"] if match else None,
                 sources=_source_refs(meta["sources"], meta_path),
-                artifacts=_artifacts(directory, meta),
+                artifacts=_artifacts(directory, meta, document),
             )
         )
     rows.sort(key=lambda row: (row.discovered_at, row.vacancy_id), reverse=True)
-    return rows
+    return CatalogSnapshot(rows, operational_by_directory)
+
+
+def _document_mapping(document: dict[str, Any], field: str, path: Path) -> dict[str, Any]:
+    value = document.get(field)
+    if not isinstance(value, dict):
+        raise CatalogDataError(f"YAML document must be a mapping: {path}")
+    return value
 
 
 def _source_refs(value: Any, path: Path) -> tuple[dict[str, Any], ...]:
@@ -135,12 +173,20 @@ def _source_refs(value: Any, path: Path) -> tuple[dict[str, Any], ...]:
     return tuple(refs)
 
 
-def _artifacts(directory: Path, meta: dict[str, Any]) -> ArtifactLinks:
+def _artifacts(
+    directory: Path, meta: dict[str, Any], document: dict[str, Any] | None = None
+) -> ArtifactLinks:
     application_name = str(meta.get("application_directory", "application")).strip()
     application = directory / application_name
     return ArtifactLinks(
-        job_md=_artifact(directory / "job.md"),
-        company_md=_artifact(directory / "company.md"),
+        job_md=_artifact(
+            directory / "job.md",
+            None if document is None else document.get("job_text") is not None,
+        ),
+        company_md=_artifact(
+            directory / "company.md",
+            None if document is None else document.get("company_text") is not None,
+        ),
         match_md=_artifact(directory / "match.md"),
         cv_md=_artifact(application / "cv.md"),
         cv_docx=_artifact(application / "cv.docx"),
@@ -151,9 +197,9 @@ def _artifacts(directory: Path, meta: dict[str, Any]) -> ArtifactLinks:
     )
 
 
-def _artifact(path: Path) -> str | None:
+def _artifact(path: Path, present: bool | None = None) -> str | None:
     try:
-        return str(path) if op.exists(path) else None
+        return str(path) if (op.exists(path) if present is None else present) else None
     except OSError:
         return None
 
@@ -161,7 +207,14 @@ def _artifact(path: Path) -> str | None:
 def _read_match(path: Path) -> dict[str, Any] | None:
     if not op.exists(path):
         return None
-    match = _read_mapping(path)
+    return _validated_match(_read_mapping(path), path)
+
+
+def _validated_match(match: Any, path: Path) -> dict[str, Any] | None:
+    if match is None:
+        return None
+    if not isinstance(match, dict):
+        raise CatalogDataError(f"YAML document must be a mapping: {path}")
     score = match.get("score")
     recommendation = match.get("recommendation")
     if isinstance(score, bool) or not isinstance(score, int) or not 0 <= score <= 100:

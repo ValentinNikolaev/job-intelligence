@@ -429,6 +429,7 @@ class ApplicationGenerator:
             raise ApplicationError("new application publication requires quality schema_version 2; legacy schema 1 is read-only")
         cv_export_files = _cv_export_files(meta)
 
+        directory.mkdir(parents=True, exist_ok=True)
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
         try:
             previous_manifest = _read_existing_manifest(manifest_path)

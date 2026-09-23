@@ -51,3 +51,11 @@ server-rendered HTML exposes matching links or JSON-LD.
 The board, every seed, and every followed detail page fail independently. A
 failed board page does not suppress explicit seeds, while a failed detail page
 does not discard roles already collected from the same source.
+
+Up to eight sources are fetched concurrently. Pages within a source are fetched
+in their existing order, and the collector emits jobs and resolves duplicates
+in config order even when later sources finish first. Each source owns its own
+`urllib` opener, and each page uses a fresh request; no HTTP session is shared
+between workers. The
+per-source and per-page JSON logs include timings and failures, while request
+and error totals include every attempted page across workers.

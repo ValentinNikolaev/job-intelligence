@@ -8,6 +8,7 @@ from datetime import datetime, timedelta, timezone
 from io import StringIO
 from pathlib import Path
 from typing import Any, Mapping
+from unittest.mock import patch
 
 import yaml
 
@@ -21,7 +22,9 @@ from jobintel.workflow_api import (
     catalog_vacancies,
     queue_response,
     source_usage,
+    top_vacancies,
     workflow_limits,
+    workflow_report,
     workflow_summary,
 )
 
@@ -240,6 +243,47 @@ class WorkflowApiTests(unittest.TestCase):
         self.assertEqual(2, len(catalog["vacancies"]))
         self.assertIn("artifacts", catalog["vacancies"][0])
 
+    def test_workflow_report_uses_one_mongodb_jobs_snapshot(self) -> None:
+        expected_summary = workflow_summary(self.project, self.registry_root, {}, [self.profile])
+        expected_queue = queue_response("analyze", self.project, self.registry_root, [self.profile])
+        expected_top = top_vacancies(self.registry_root)
+        documents = []
+        for meta_path in sorted((self.registry_root / "jobs").glob("*/meta.yaml")):
+            directory = meta_path.parent
+            match_path = directory / "match.yaml"
+            documents.append({
+                "directory": directory.name,
+                "meta": yaml.safe_load(meta_path.read_text(encoding="utf-8")),
+                "match": yaml.safe_load(match_path.read_text(encoding="utf-8")) if match_path.is_file() else None,
+                "triage": None,
+                "job_text": (directory / "job.md").read_text(encoding="utf-8"),
+                "company_text": (directory / "company.md").read_text(encoding="utf-8") if (directory / "company.md").is_file() else None,
+            })
+
+        class FakeStore:
+            def __init__(self) -> None:
+                self.scopes: list[str] = []
+
+            def list_vacancies(self, *, scope: str):
+                self.scopes.append(scope)
+                return documents if scope == "jobs" else []
+
+            def get(self, collection: str, key: str):
+                return None
+
+            def get_by_directory(self, directory: str, *, scope: str):
+                raise AssertionError("per-vacancy MongoDB lookup")
+
+        store = FakeStore()
+        with patch("jobintel.catalog_data.op.get_store", return_value=store):
+            report = workflow_report(self.project, self.registry_root, {}, [self.profile], 100)
+
+        self.assertEqual(["jobs", "rejected"], store.scopes)
+        self.assertEqual(expected_summary, report["summary"])
+        self.assertEqual(expected_queue, report["analyze_queue"])
+        self.assertEqual(expected_top, report["top"])
+        self.assertEqual([], report["prepare_queue"]["items"])
+
     def test_cli_api_outputs_json_without_source_env(self) -> None:
         broken_env = self.sources / ".env"
         broken_env.write_text("not dotenv\n", encoding="utf-8")
@@ -267,6 +311,34 @@ class WorkflowApiTests(unittest.TestCase):
         payload = json.loads(output.getvalue())
         self.assertEqual("prepare", payload["workflow"])
         self.assertEqual([], payload["items"])
+
+    def test_cli_workflow_report_outputs_combined_snapshot(self) -> None:
+        output = StringIO()
+
+        with redirect_stdout(output):
+            exit_code = main(
+                [
+                    "api",
+                    "workflow-report",
+                    "--json",
+                    "--limit",
+                    "1",
+                    "--registry",
+                    str(self.registry_root),
+                    "--sources",
+                    str(self.sources),
+                    "--profile",
+                    str(self.profile),
+                ]
+            )
+
+        self.assertEqual(0, exit_code)
+        payload = json.loads(output.getvalue())
+        self.assertEqual(
+            {"summary", "limits", "analyze_queue", "prepare_queue", "source_usage", "top"},
+            set(payload),
+        )
+        self.assertEqual(1, len(payload["analyze_queue"]["items"]))
 
 
 if __name__ == "__main__":

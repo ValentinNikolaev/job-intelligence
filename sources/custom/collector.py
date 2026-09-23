@@ -6,13 +6,15 @@ import re
 import sys
 import time
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path
+from threading import Lock
 from typing import Any, Callable, Iterable, Mapping
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit, urlunsplit
-from urllib.request import Request, urlopen
+from urllib.request import Request, build_opener
 
 import yaml
 
@@ -22,6 +24,8 @@ from jobintel.models import NormalizedJob
 
 DEFAULT_CONFIG_PATH = Path(__file__).with_name("config.yaml")
 USER_AGENT = "job-intelligence/0.1"
+MAX_WORKERS = 8
+_LOG_LOCK = Lock()
 _HOSTNAME_RE = re.compile(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*")
 
 
@@ -65,6 +69,16 @@ class PageData:
     headings: tuple[str, ...] = ()
     json_ld_jobs: tuple[dict[str, Any], ...] = ()
     canonical_url: str | None = None
+
+
+@dataclass(slots=True)
+class _SourceResult:
+    jobs: list[NormalizedJob]
+    opener: Callable[..., Any] | None = None
+    requests: int = 0
+    errors: int = 0
+    completed: bool = False
+    elapsed_ms: int = 0
 
 
 class _PageParser(HTMLParser):
@@ -180,7 +194,7 @@ class CustomCollector:
         self,
         config: Mapping[str, str],
         *,
-        opener: Callable[..., Any] = urlopen,
+        opener: Callable[..., Any] | None = None,
     ) -> None:
         config_path = Path(config.get("CUSTOM_CONFIG", "") or DEFAULT_CONFIG_PATH)
         self.settings = _load_settings(config_path)
@@ -200,84 +214,91 @@ class CustomCollector:
         self._request_count = 0
         self.sources_failed = 0
         seen: set[str] = set()
-        for source in self.settings.sources:
-            source_started_at = time.monotonic()
-            source_requests_before = self._request_count
-            source_errors_before = self.errors
-            jobs: list[NormalizedJob] = []
+        with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, self.sources_total)) as executor:
+            # Consume in config order so deduplication and emitted jobs are stable.
+            for source, result in zip(self.settings.sources, executor.map(self._fetch_source, self.settings.sources)):
+                self.errors += result.errors
+                self._request_count += result.requests
+                if not result.completed:
+                    self.sources_failed += 1
+                emitted_jobs: list[NormalizedJob] = []
+                for job in result.jobs:
+                    if job.source_job_id in seen:
+                        continue
+                    seen.add(job.source_job_id)
+                    emitted_jobs.append(job)
+                status = "failed" if not result.completed else "partial" if result.errors else "completed"
+                self._log_event(
+                    "custom.source.finished",
+                    source=source.name,
+                    status=status,
+                    elapsed_ms=result.elapsed_ms,
+                    api_requests=result.requests,
+                    errors=result.errors,
+                    fetched=len(emitted_jobs),
+                )
+                yield from emitted_jobs
+
+    def _fetch_source(self, source: CustomSource) -> _SourceResult:
+        started_at = time.monotonic()
+        result = _SourceResult(jobs=[])
+        self._log_event(
+            "custom.source.started",
+            source=source.name,
+            board_url=source.board_url,
+            seed_jobs=len(source.seed_jobs),
+        )
+        try:
+            result.opener = self._opener if self._opener is not None else build_opener().open
             board_page: PageData | None = None
-            source_completed = False
-            self._log_event(
-                "custom.source.started",
-                source=source.name,
-                board_url=source.board_url,
-                seed_jobs=len(source.seed_jobs),
-            )
             try:
-                board_page = self._fetch_page_logged(source, source.board_url, "board")
-                jobs.extend(parse_source_page(source, board_page, self.settings.analysis_priority))
-                source_completed = True
+                board_page = self._fetch_page_logged(source, source.board_url, "board", result)
+                result.jobs.extend(parse_source_page(source, board_page, self.settings.analysis_priority))
+                result.completed = True
                 for label, url in board_page.anchors:
                     if not _looks_like_job_link(source, label, url):
                         continue
                     detail: PageData | None = None
                     try:
-                        detail = self._fetch_page_logged(source, url, "detail")
-                        jobs.append(normalize_linked_job(source, label, url, detail, self.settings.analysis_priority))
+                        detail = self._fetch_page_logged(source, url, "detail", result)
+                        result.jobs.append(normalize_linked_job(source, label, url, detail, self.settings.analysis_priority))
                     except Exception as exc:
                         if detail is not None:
-                            self._record_failure(source, url, "detail_parse", exc, 0)
+                            self._record_failure(source, url, "detail_parse", exc, 0, result)
             except Exception as exc:
                 if board_page is not None:
-                    self._record_failure(source, source.board_url, "board_parse", exc, 0)
+                    self._record_failure(source, source.board_url, "board_parse", exc, 0, result)
             for seed in source.seed_jobs:
                 seed_page: PageData | None = None
                 try:
                     seed_page = (
                         board_page
                         if board_page is not None and _canonicalize_url(seed.url) == _canonicalize_url(source.board_url)
-                        else self._fetch_page_logged(source, seed.url, "seed")
+                        else self._fetch_page_logged(source, seed.url, "seed", result)
                     )
-                    jobs.append(normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority))
-                    source_completed = True
+                    result.jobs.append(normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority))
+                    result.completed = True
                 except Exception as exc:
                     if seed_page is not None:
-                        self._record_failure(source, seed.url, "seed_parse", exc, 0)
+                        self._record_failure(source, seed.url, "seed_parse", exc, 0, result)
             if source.extract_headings and board_page is not None:
-                existing_titles = {_normalized_title(job.title) for job in jobs}
+                existing_titles = {_normalized_title(job.title) for job in result.jobs}
                 for heading in board_page.headings:
                     normalized_heading = _normalized_title(heading)
                     if normalized_heading in existing_titles or not _heading_title_allowed(source, heading):
                         continue
-                    jobs.append(normalize_inline_job(source, heading, board_page, self.settings.analysis_priority))
+                    result.jobs.append(normalize_inline_job(source, heading, board_page, self.settings.analysis_priority))
                     existing_titles.add(normalized_heading)
-            emitted_jobs: list[NormalizedJob] = []
-            for job in jobs:
-                if job.source_job_id in seen:
-                    continue
-                seen.add(job.source_job_id)
-                emitted_jobs.append(job)
+        except Exception as exc:
+            self._record_failure(source, source.board_url, "source_parse", exc, 0, result)
+        finally:
+            result.elapsed_ms = round((time.monotonic() - started_at) * 1000)
+        return result
 
-            source_errors = self.errors - source_errors_before
-            if not source_completed:
-                self.sources_failed += 1
-            status = "failed" if not source_completed else "partial" if source_errors else "completed"
-            self._log_event(
-                "custom.source.finished",
-                source=source.name,
-                status=status,
-                elapsed_ms=round((time.monotonic() - source_started_at) * 1000),
-                api_requests=self._request_count - source_requests_before,
-                errors=source_errors,
-                fetched=len(emitted_jobs),
-            )
-
-            yield from emitted_jobs
-
-    def _fetch_page_logged(self, source: CustomSource, url: str, phase: str) -> PageData:
+    def _fetch_page_logged(self, source: CustomSource, url: str, phase: str, result: _SourceResult) -> PageData:
         started_at = time.monotonic()
         try:
-            page = self._fetch_page(url)
+            page = self._fetch_page(url, result)
         except Exception as exc:
             self._record_failure(
                 source,
@@ -285,6 +306,7 @@ class CustomCollector:
                 phase,
                 exc,
                 round((time.monotonic() - started_at) * 1000),
+                result,
             )
             raise
         self._log_event(
@@ -307,8 +329,9 @@ class CustomCollector:
         phase: str,
         exc: Exception,
         elapsed_ms: int,
+        result: _SourceResult,
     ) -> None:
-        self.errors += 1
+        result.errors += 1
         self._log_event(
             "custom.page.finished",
             source=source.name,
@@ -322,13 +345,15 @@ class CustomCollector:
 
     @staticmethod
     def _log_event(event: str, **payload: Any) -> None:
-        print(json.dumps({"event": event, **payload}, sort_keys=True), file=sys.stderr, flush=True)
+        with _LOG_LOCK:
+            print(json.dumps({"event": event, **payload}, sort_keys=True), file=sys.stderr, flush=True)
 
-    def _fetch_page(self, url: str) -> PageData:
+    def _fetch_page(self, url: str, result: _SourceResult) -> PageData:
+        assert result.opener is not None
         request = Request(url, headers={"Accept": "text/html,application/xhtml+xml", "User-Agent": USER_AGENT})
         try:
-            self._request_count += 1
-            with self._opener(request, timeout=self.timeout) as response:
+            result.requests += 1
+            with result.opener(request, timeout=self.timeout) as response:
                 html = response.read().decode(_response_charset(response) or "utf-8", errors="replace")
         except HTTPError as exc:
             raise RuntimeError(f"{url} returned HTTP {exc.code}") from exc

@@ -201,7 +201,10 @@ class RejectedRegistry:
         if existing is None:
             meta["rejected_at"] = now
             directory = self.root / f"{_timestamp_slug(now)}_{source}_{slug(job.company)}_{slug(job.title)}"
-            if directory.exists():
+            if op.get_store(self.root) is not None:
+                from .migration import prefilter_id
+                directory = self.root / f"{directory.name}_{prefilter_id(source, source_job_id)}"
+            elif directory.exists():
                 directory = self.root / f"{directory.name}_{uuid.uuid4().hex[:8]}"
             previous = None
             previous_markdown = None
@@ -230,6 +233,12 @@ class RejectedRegistry:
         if unchanged:
             return
 
+        store = op.get_store(self.root)
+        if store is not None:
+            current = store.get_by_directory(directory.name, scope="rejected")
+            store.save_vacancy(directory.name, meta, markdown, None, scope="rejected",
+                               expected_revision=current["revision"] if current else 0)
+            return
         directory.mkdir(parents=True, exist_ok=True)
         _write_text_if_changed(directory / "meta.yaml", _dump_yaml(meta))
         _write_text_if_changed(directory / "job.md", markdown)

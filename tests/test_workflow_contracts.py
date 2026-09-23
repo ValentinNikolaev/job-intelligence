@@ -179,6 +179,22 @@ class WorkflowContractTests(unittest.TestCase):
         gate = workflow.split("- name: Gate deterministic workflow", 1)[1]
         self.assertRegex(gate, r"steps\.collect\.outcome")
 
+    def test_collection_workflow_uses_one_combined_mongodb_report(self) -> None:
+        workflow = self._read(".github/workflows/job-intelligence-collection.yml")
+
+        self.assertEqual(1, workflow.count("python run.py api workflow-report"))
+        for superseded in (
+            "python run.py api workflow-summary",
+            "python run.py api workflow-limits",
+            "python run.py api queues analyze",
+            "python run.py api queues prepare",
+            "python run.py api source-usage",
+            "python run.py top 20",
+        ):
+            self.assertNotIn(superseded, workflow)
+        gate = workflow.split("- name: Gate deterministic workflow", 1)[1]
+        self.assertIn("steps.workflow_report.outcome", gate)
+
     def test_collection_fetches_before_writer_lock_and_preserves_storage_failures(self) -> None:
         source = self._read("jobintel/cli.py")
         collection_start = source.index('if target == "all":')

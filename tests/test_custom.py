@@ -4,6 +4,8 @@ import importlib.util
 import json
 import sys
 import tempfile
+import threading
+import time
 import unittest
 from contextlib import redirect_stderr
 from datetime import datetime, timezone
@@ -312,6 +314,90 @@ class CustomCollectorTests(unittest.TestCase):
 
         self.assertEqual(["PHP Developer"], [job.title for job in jobs])
         self.assertEqual(1, collector.errors)
+
+    def test_parallel_sources_preserve_order_deduplication_and_failures(self) -> None:
+        sources = [
+            {
+                "name": f"source-{index}",
+                "company": f"Company {index}",
+                "board_url": f"https://company-{index}.test/jobs",
+                "title_terms": ["backend"],
+            }
+            for index in range(3)
+        ]
+        self.config_path.write_text(yaml.safe_dump({"sources": sources}), encoding="utf-8")
+        last_source_finished = threading.Event()
+        completion_order: list[int] = []
+        completion_lock = threading.Lock()
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            index = int(request.full_url.split("company-")[1].split(".")[0])
+            if index == 0:
+                self.assertTrue(last_source_finished.wait(5))
+            if index == 1:
+                raise URLError("one source offline")
+            with completion_lock:
+                completion_order.append(index)
+            if index == 2:
+                last_source_finished.set()
+            return FakeResponse(
+                '<script type="application/ld+json">'
+                '{"@type":"JobPosting","title":"Backend Engineer",'
+                '"url":"https://shared.test/backend"}'
+                "</script>"
+            )
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
+        stderr = StringIO()
+        with redirect_stderr(stderr):
+            jobs = list(collector.fetch())
+
+        self.assertEqual([2, 0], completion_order)
+        self.assertEqual(["Company 0"], [job.company for job in jobs])
+        self.assertEqual(3, collector.api_requests)
+        self.assertEqual(1, collector.errors)
+        self.assertEqual((3, 1), (collector.sources_total, collector.sources_failed))
+        events = [json.loads(line) for line in stderr.getvalue().splitlines()]
+        finished = [event for event in events if event["event"] == "custom.source.finished"]
+        self.assertEqual(["source-0", "source-1", "source-2"], [event["source"] for event in finished])
+        self.assertEqual(["completed", "failed", "completed"], [event["status"] for event in finished])
+        self.assertEqual([1, 1, 1], [event["api_requests"] for event in finished])
+
+    def test_parallel_sources_limit_active_workers(self) -> None:
+        sources = [
+            {
+                "name": f"source-{index}",
+                "company": f"Company {index}",
+                "board_url": f"https://company-{index}.test/jobs",
+            }
+            for index in range(12)
+        ]
+        self.config_path.write_text(yaml.safe_dump({"sources": sources}), encoding="utf-8")
+        first_wave = threading.Barrier(8, timeout=5)
+        active = 0
+        peak_active = 0
+        active_lock = threading.Lock()
+
+        def opener(request: Request, **_: Any) -> FakeResponse:
+            nonlocal active, peak_active
+            index = int(request.full_url.split("company-")[1].split(".")[0])
+            with active_lock:
+                active += 1
+                peak_active = max(peak_active, active)
+            try:
+                if index < 8:
+                    first_wave.wait()
+                time.sleep(0.01)
+                return FakeResponse("<main>No matching roles.</main>")
+            finally:
+                with active_lock:
+                    active -= 1
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
+        self.assertEqual([], list(collector.fetch()))
+        self.assertEqual(8, peak_active)
+        self.assertEqual(12, collector.api_requests)
+        self.assertEqual(0, collector.errors)
 
     def test_detail_page_heading_wins_over_generic_apply_link(self) -> None:
         self._write_config()
