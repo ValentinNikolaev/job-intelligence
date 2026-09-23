@@ -1,28 +1,31 @@
 # Match Analysis
 
-**Score:** 68/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-Strong senior backend and product ownership evidence with Go and PHP, but the hybrid Toronto requirement conflicts with the candidate's Italy location and the role includes unverified frontend and experimentation expectations.
+Strong backend, Go, PHP, AWS, AI-automation, architecture, and technical-leadership fit, moderated by the stated Toronto hybrid requirement and broader full-stack expectations.
 
 ## Why it matches
 
-- 15+ years building production systems across PHP and Go.
-- Designed and owned a Go support automation platform.
-- Led architecture, delivery, and technical teams.
+- Candidate has production Go and PHP backend experience, AWS, event-driven systems, and technical leadership.
+- Candidate has documented AI-assisted support automation experience and measurable operational outcomes.
+- Candidate has led architecture, cross-functional delivery, mentoring, and CI/CD or observability improvements.
 
 ## Gaps
 
-- Professional TypeScript, Node.js, and A/B testing experience is not established.
+- Recent evidence does not establish Angular, React, TypeScript, or Node.js depth.
+- The candidate profile does not establish a Toronto work arrangement or Canadian work authorization.
 
 ## Concerns
 
-- The posting describes three office days weekly in Toronto; relocation or EU remote eligibility is not stated.
+- The posting describes three days per week in Toronto, which may conflict with working from Rome.
+- Salary and equity fit are unknown.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Toronto hybrid attendance | critical / stated | unknown | 3 days a week in the office | Fiumicino, Latium, Italy | Relocation or remote eligibility is unresolved. / Verify whether EU-remote or relocation is available. |
-| Staff-level backend/product engineering | critical / stated | strong | Staff Product Engineer | Senior Software Engineer \| Tech Lead \| Backend \| AWS \| Golang \| PHP | Role scope may include product work beyond the evidenced backend focus. / Confirm product ownership and Toronto work arrangement. |
-| Go and PHP | meaningful / stated | strong | Go • JavaScript • PHP | - Go | / |
+| Staff-level architecture and cross-functional technical leadership | critical / stated | strong | you will define product direction and solve high-impact, ambiguous technical challenges across our entire ecosystem | I architect and lead the development | / |
+| AI-assisted development or AI-powered product leverage | high / stated | partial | Institutionalize AI-assisted development practices, standards, and guardrails | auto-triage flows | The profile demonstrates AI-enabled product work but not institutionalizing development guardrails across an engineering organization. / Explain the validation, monitoring, and rollout practices used for the support automation platform. |
+| Toronto hybrid workplace compatibility | high / stated | unknown | 3 days a week in the office |  | The candidate is based in Rome and the profile does not establish relocation or Canadian work authorization. / Confirm whether the employer permits European remote work or provides relocation support. |
+| Go, PHP, and AWS cloud infrastructure | high / stated | strong | serverless services, Node.js (TypeScript), Golang, PHP, Angular, React, and AWS cloud infrastructure | Backend engineer with 15+ years of experience | / |

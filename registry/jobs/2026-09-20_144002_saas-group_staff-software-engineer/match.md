@@ -1,20 +1,18 @@
 # Match Analysis
 
-**Score:** 84/100  
-**Recommendation:** Strong Match
+**Score:** 75/100  
+**Recommendation:** Match
 
-Senior distributed-systems leadership, Go, cloud infrastructure, and mentoring are a strong fit for this fully remote staff role.
+Good staff backend fit with PHP, Go, architecture, leadership, and SaaS experience.
 
 ## Why it matches
 
-- Go
-- distributed systems
-- technical leadership
+- SaaS backend
 
 ## Gaps
 
-- TypeScript and rendering domain are unknown
+- Staff scope and stack partly unknown
 
 ## Concerns
 
-- Compensation is undisclosed
+- Remote compatibility needs confirmation

@@ -1,29 +1,18 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Excellent fit for a remote senior backend role: Laravel/PHP, microservices, distributed workflows, AI integrations, scale, and architectural ownership are all strongly evidenced.
+Strong senior backend fit with event-driven systems, APIs, and cloud infrastructure.
 
 ## Why it matches
 
-- Laravel/PHP backend and high-volume production systems.
-- Microservices, async workflows, reliability, and architecture ownership.
-- Remote role and Italian salary range are materially compatible.
+- Senior backend engineering
 
 ## Gaps
 
-- Node.js and Python are present in the posting but not established as primary candidate languages.
+- Primary language unknown
 
 ## Concerns
 
-- Exact overlap with carrier/shipping domain is not evidenced.
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Senior backend architecture | critical / stated | strong | you design systems, own trade-offs | Go | / |
-| PHP Laravel | critical / stated | strong | Our backend – built on PHP Laravel | Frameworks - Laravel - Symfony | / |
-| Distributed scalable systems | high / stated | strong | distributed systems | Architect a scalable, event-driven system using queues and EventBridge | / |
-| Remote work | high / stated | strong | Remote | Go | / |
+- Timezone details unclear

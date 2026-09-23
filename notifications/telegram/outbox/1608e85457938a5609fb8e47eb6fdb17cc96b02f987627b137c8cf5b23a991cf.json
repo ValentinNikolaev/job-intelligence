@@ -1,0 +1,122 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-23T17:35:17Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Real Estate Bees",
+      "country_codes": [],
+      "directory": "2026-09-23_071037_real-estate-bees_backend-engineer-php-laravel",
+      "score": 88,
+      "title": "Backend Engineer (PHP/Laravel)",
+      "url": "https://jobs.dou.ua/companies/real-estate-bees/vacancies/374149/",
+      "vacancy_id": "7ebfb9ad-be19-4653-8f52-78438c563a4c"
+    },
+    {
+      "company": "Nextip",
+      "country_codes": [],
+      "directory": "2026-09-23_070849_nextip_senior-php-backend-developer",
+      "score": 87,
+      "title": "SENIOR PHP BACKEND DEVELOPER",
+      "url": "https://www.nextip.com/job-position-backend/",
+      "vacancy_id": "b532459a-ee45-4494-929c-a8fe44b5c4a3"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070843_neting_cerchiamo-uno-sviluppatore-laravel",
+      "score": 84,
+      "title": "Cerchiamo uno sviluppatore Laravel",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "9d714b9e-37a0-43bd-b3ff-3588e4538686"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070841_neting_sviluppatore-laravel-remote",
+      "score": 89,
+      "title": "Sviluppatore Laravel Remote",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "fb937be2-1497-44a0-a8a6-70894b3be480"
+    },
+    {
+      "company": "Beliven",
+      "country_codes": [],
+      "directory": "2026-09-23_070643_beliven_lead-software-engineer",
+      "score": 79,
+      "title": "LEAD SOFTWARE ENGINEER",
+      "url": "https://careers.beliven.com/recruiting/details/lead-software-engineer",
+      "vacancy_id": "14bc6d24-85bf-4dd8-891d-9ff03931e58f"
+    },
+    {
+      "company": "Readdle",
+      "country_codes": [],
+      "directory": "2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team",
+      "score": 91,
+      "title": "Senior Backend Engineer (PHP, Symfony) — Fluix Team",
+      "url": "https://jobs.dou.ua/companies/readdle-inc/vacancies/374074/",
+      "vacancy_id": "3a7f3891-cd46-4200-87c3-a693acb19a19"
+    },
+    {
+      "company": "ShippyPro",
+      "country_codes": [],
+      "directory": "2026-09-18_061122_shippypro_senior-software-engineer",
+      "score": 82,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "d1bf7099-0b18-418c-84df-26a3245c8c50"
+    },
+    {
+      "company": "Qubit Labs",
+      "country_codes": [],
+      "directory": "2026-09-16_121113_qubit-labs_lead-php-developer-eu",
+      "score": 90,
+      "title": "Lead PHP Developer (EU)",
+      "url": "https://jobs.dou.ua/companies/qubit-labs/vacancies/373507/",
+      "vacancy_id": "0268ea8a-ddbc-4ca3-88e4-8fb814470e8b"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-09-23_140200_canonical_senior-staff-principal-engineer",
+      "score": 72,
+      "title": "Senior/Staff/Principal Engineer",
+      "url": "https://jobicy.com/jobs/149522-senior-staff-principal-engineer",
+      "vacancy_id": "72cf8817-3513-42e5-ac20-fa35f0d0ab79"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-09-23_140054_canonical_microservices-engineer",
+      "score": 76,
+      "title": "Microservices Engineer",
+      "url": "https://jobicy.com/jobs/149558-microservices-engineer",
+      "vacancy_id": "2fdc9baf-1e0f-482e-bf5a-9f541ac8371f"
+    },
+    {
+      "company": "Distribusion Technologies",
+      "country_codes": [],
+      "directory": "2026-09-23_063206_distribusion-technologies_staff-software-engineer-all-genders",
+      "score": 74,
+      "title": "Staff Software Engineer (all genders)",
+      "url": "https://www.arbeitnow.com/jobs/companies/distribusion-technologies/remote-staff-software-engineer-all-genders-berlin-465930",
+      "vacancy_id": "e2148f6a-cf8d-4df0-a58c-4a8ad71c7420"
+    },
+    {
+      "company": "saas.group",
+      "country_codes": [],
+      "directory": "2026-09-20_144002_saas-group_staff-software-engineer",
+      "score": 75,
+      "title": "Staff Software Engineer",
+      "url": "https://jobicy.com/jobs/153697-staff-software-engineer-6",
+      "vacancy_id": "31147bfc-18e5-4ee8-a7cc-6bd2d9de50aa"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "1608e85457938a5609fb8e47eb6fdb17cc96b02f987627b137c8cf5b23a991cf",
+  "schema_version": 2
+}

@@ -1,28 +1,18 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Strong senior PHP backend alignment based on the role title and the candidate’s extensive PHP, Laravel, Symfony, API, database, and production experience; detailed requirements are limited in the supplied posting.
+Very strong senior PHP backend alignment across Laravel, Symfony, APIs, and databases.
 
 ## Why it matches
 
-- PHP
-- Laravel
-- Symfony
-- backend ownership
-- production systems
+- Senior PHP backend experience
 
 ## Gaps
 
-- Specific vacancy requirements and work arrangement are not fully explicit
+- Specific employer requirements unknown
 
 ## Concerns
 
-- The posting provides limited detail for precise requirement matching
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Senior PHP backend engineering | critical / stated | strong | SENIOR PHP BACKEND DEVELOPER | PHP | / |
+- Remote terms need confirmation

@@ -1,20 +1,18 @@
 # Match Analysis
 
-**Score:** 89/100  
+**Score:** 90/100  
 **Recommendation:** Strong Match
 
-Senior PHP, MySQL, API integration, legacy modernization, and technical-lead evidence fit the role closely; Cologne onboarding is a logistics consideration.
+Excellent lead PHP match with explicit EU scope and leadership experience.
 
 ## Why it matches
 
-- PHP and legacy modernization
-- team leadership
-- APIs and databases
+- Lead PHP development
 
 ## Gaps
 
-- Digital-signage or ad-tech experience is not evidenced
+- Contract terms unknown
 
 ## Concerns
 
-- Several weeks of Cologne onboarding require confirmation
+- Hands-on balance needs confirmation
