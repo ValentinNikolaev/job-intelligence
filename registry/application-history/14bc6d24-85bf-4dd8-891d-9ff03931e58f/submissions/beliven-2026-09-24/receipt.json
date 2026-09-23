@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "7bf59ab581675225221a790d9155388db8fd83548fd9b6afe91627141d3f6a69",
+      "size": 11848,
+      "snapshot": "files/application/cv.docx",
+      "source": "registry/jobs/2026-09-23_070643_beliven_lead-software-engineer/application/cv.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:beliven-2026-09-24",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-09-24",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/14bc6d24-85bf-4dd8-891d-9ff03931e58f/submissions/beliven-2026-09-24",
+  "submission_id": "beliven-2026-09-24",
+  "vacancy_id": "14bc6d24-85bf-4dd8-891d-9ff03931e58f"
+}
