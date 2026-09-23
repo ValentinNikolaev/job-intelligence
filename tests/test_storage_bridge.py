@@ -155,9 +155,11 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         self.assertEqual(1, len(first))
         first_id = first[0]["_id"]
         bridge.archive_vacancy(self.temp / "registry" / "rejected" / first[0]["directory"], "archive/prefilter.zip")
+        archived_revision = self.store.get("prefilter_rejections", first_id)["revision"]
         rejected.upsert(self._job(), rejection)
         rows = self.store.list("prefilter_rejections")
         self.assertEqual([first_id], [row["_id"] for row in rows])
+        self.assertEqual(archived_revision, rows[0]["revision"])
 
     def _status_with_audit(self, directory_name: str, status: str, log_path: Path) -> None:
         self.now += timedelta(seconds=1)

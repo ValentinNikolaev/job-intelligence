@@ -1,7 +1,10 @@
 from __future__ import annotations
 
+import json
 import re
 import unittest
+from contextlib import redirect_stderr
+from io import StringIO
 from pathlib import Path
 from unittest.mock import MagicMock, patch
 
@@ -132,6 +135,41 @@ class CollectionSafetyContractTests(unittest.TestCase):
                 registry,
                 MagicMock(),
             )
+
+    def test_store_phase_emits_structured_timing_events(self) -> None:
+        import jobintel.cli as cli
+        from jobintel.models import CollectorSummary, NormalizedJob, UpsertResult
+
+        job = NormalizedJob(
+            source="test",
+            source_job_id="job-1",
+            source_url="https://example.test/jobs/1",
+            title="PHP Backend Engineer",
+            company="Example",
+            description="Build PHP services.",
+        )
+        registry = MagicMock()
+        registry.upsert.return_value = UpsertResult("unchanged", "vacancy-1", "example")
+        stderr = StringIO()
+
+        with redirect_stderr(stderr):
+            result = cli._store_collected_jobs(
+                "test",
+                CollectorSummary(source="test", fetched=1),
+                [job],
+                registry,
+                MagicMock(),
+            )
+
+        self.assertEqual(1, result.unchanged)
+        events = [json.loads(line) for line in stderr.getvalue().splitlines()]
+        self.assertEqual("collector.store.started", events[0]["event"])
+        self.assertEqual("collector.store.finished", events[-1]["event"])
+        progress = next(event for event in events if event["event"] == "collector.store.progress")
+        self.assertEqual((1, 1), (progress["processed"], progress["total"]))
+        self.assertEqual("completed", events[-1]["status"])
+        self.assertEqual(1, events[-1]["unchanged"])
+        self.assertGreaterEqual(events[-1]["elapsed_ms"], 0)
 
 
 if __name__ == "__main__":

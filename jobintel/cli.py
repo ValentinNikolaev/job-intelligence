@@ -59,6 +59,7 @@ from .workflow_lock import (
 # This status is intentionally reserved for partial collector/API fetch failures.
 # A complete outage returns a fatal status; automation must not soften it.
 COLLECTION_SOURCE_FAILURE_EXIT = 75
+SLOW_STORE_JOB_MS = 1_000
 
 
 def _configure_stdio() -> None:
@@ -456,8 +457,33 @@ def main(argv: list[str] | None = None) -> int:
     sources_failed = sum(summary.sources_failed for _, summary, _ in collected)
     all_sources_failed = sources_total > 0 and sources_failed == sources_total
     persistence_failed = False
+    persistence_started_at = time.monotonic()
+    persistence_status = "failed"
+    print(
+        json.dumps(
+            {
+                "event": "collection.store.started",
+                "jobs": sum(len(jobs) for _, _, jobs in collected),
+                "sources": len(collected),
+            },
+            sort_keys=True,
+        ),
+        file=sys.stderr,
+        flush=True,
+    )
     try:
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
+            print(
+                json.dumps(
+                    {
+                        "event": "collection.store.lock_acquired",
+                        "wait_ms": round((time.monotonic() - persistence_started_at) * 1000),
+                    },
+                    sort_keys=True,
+                ),
+                file=sys.stderr,
+                flush=True,
+            )
             for name, summary, jobs in collected:
                 source_error_count = summary.errors
                 summary = _store_collected_jobs(
@@ -478,9 +504,23 @@ def main(argv: list[str] | None = None) -> int:
                     raise
                 persistence_failed = persistence_failed or summary.errors > source_error_count
             registry.regenerate_index()
+            persistence_status = "partial" if persistence_failed else "completed"
     except (Exception, WorkflowLockError) as exc:
         print(f"Collection error: {exc}", file=sys.stderr)
         return 1
+    finally:
+        print(
+            json.dumps(
+                {
+                    "elapsed_ms": round((time.monotonic() - persistence_started_at) * 1000),
+                    "event": "collection.store.finished",
+                    "status": persistence_status,
+                },
+                sort_keys=True,
+            ),
+            file=sys.stderr,
+            flush=True,
+        )
     if persistence_failed:
         return 1
     if all_sources_failed:
@@ -612,25 +652,106 @@ def _store_collected_jobs(
     *,
     company_retry_rules=(),
 ) -> CollectorSummary:
-    for job in jobs:
-        try:
-            rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
-            if rejection is not None:
-                rejected_registry.upsert(job, rejection)
-                summary.record("rejected")
-                continue
-            result = registry.upsert(job)
-            summary.record(result.status)
-        except StorageError:
-            # A failed storage/lease is a failed mutation phase, not a bad source row.
-            raise
-        except Exception as exc:
-            summary.errors += 1
-            print(
-                f"{name}: failed to store {job.source_job_id}: {exc}",
-                file=sys.stderr,
-            )
-    return summary
+    started_at = time.monotonic()
+    errors_before = summary.errors
+    completed = False
+    print(
+        json.dumps(
+            {
+                "event": "collector.store.started",
+                "jobs": len(jobs),
+                "source": name,
+            },
+            sort_keys=True,
+        ),
+        file=sys.stderr,
+        flush=True,
+    )
+    try:
+        for index, job in enumerate(jobs, start=1):
+            job_started_at = time.monotonic()
+            outcome = "failed"
+            try:
+                rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
+                if rejection is not None:
+                    rejected_registry.upsert(job, rejection)
+                    summary.record("rejected")
+                    outcome = "rejected"
+                    continue
+                result = registry.upsert(job)
+                summary.record(result.status)
+                outcome = result.status
+            except StorageError:
+                # A failed storage/lease is a failed mutation phase, not a bad source row.
+                raise
+            except Exception as exc:
+                summary.errors += 1
+                outcome = "error"
+                print(
+                    f"{name}: failed to store {job.source_job_id}: {exc}",
+                    file=sys.stderr,
+                )
+            finally:
+                job_elapsed_ms = round((time.monotonic() - job_started_at) * 1000)
+                if job_elapsed_ms >= SLOW_STORE_JOB_MS:
+                    print(
+                        json.dumps(
+                            {
+                                "elapsed_ms": job_elapsed_ms,
+                                "event": "collector.store.slow_job",
+                                "outcome": outcome,
+                                "source": name,
+                                "source_job_id": job.source_job_id,
+                            },
+                            sort_keys=True,
+                        ),
+                        file=sys.stderr,
+                        flush=True,
+                    )
+                if index % 10 == 0 or index == len(jobs):
+                    print(
+                        json.dumps(
+                            {
+                                "elapsed_ms": round((time.monotonic() - started_at) * 1000),
+                                "event": "collector.store.progress",
+                                "processed": index,
+                                "source": name,
+                                "total": len(jobs),
+                            },
+                            sort_keys=True,
+                        ),
+                        file=sys.stderr,
+                        flush=True,
+                    )
+        completed = True
+        return summary
+    finally:
+        status = (
+            "failed"
+            if not completed
+            else "partial"
+            if summary.errors > errors_before
+            else "completed"
+        )
+        print(
+            json.dumps(
+                {
+                    "created": summary.created,
+                    "elapsed_ms": round((time.monotonic() - started_at) * 1000),
+                    "errors": summary.errors - errors_before,
+                    "event": "collector.store.finished",
+                    "merged": summary.merged,
+                    "rejected": summary.rejected,
+                    "source": name,
+                    "status": status,
+                    "unchanged": summary.unchanged,
+                    "updated": summary.updated,
+                },
+                sort_keys=True,
+            ),
+            file=sys.stderr,
+            flush=True,
+        )
 
 
 def _collection_limit(cli_limit: int | None, config: dict[str, str]) -> int | None:

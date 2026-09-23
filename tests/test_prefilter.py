@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
+from unittest.mock import MagicMock, patch
 
 import yaml
 
@@ -230,6 +231,60 @@ class PrefilterTests(unittest.TestCase):
             self.assertIn("Posted: 2026-07-22T12:00:00Z", markdown)
             self.assertIn("## Rejection", markdown)
             self.assertIn("Reason:", markdown)
+
+    def test_rejected_registry_skips_unchanged_persistence(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "registry"
+            registry = RejectedRegistry(root, cache_entries=True)
+            job = make_job(title="QA Automation Engineer")
+            rejection = prefilter_job(job, now=self.now)
+            self.assertIsNotNone(rejection)
+
+            with patch.object(registry, "_persist", wraps=registry._persist) as persist:
+                registry.upsert(job, rejection)
+                registry.upsert(job, rejection)
+                self.assertEqual(1, persist.call_count)
+
+                changed = make_job(
+                    title="QA Automation Engineer",
+                    description="Updated automation testing description.",
+                )
+                registry.upsert(changed, rejection)
+                self.assertEqual(2, persist.call_count)
+
+            directory = next((root / "rejected").iterdir())
+            self.assertIn(
+                "Updated automation testing description.",
+                (directory / "job.md").read_text(encoding="utf-8"),
+            )
+
+    def test_mongodb_rejection_noop_does_not_rebuild_registry_cache(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary) / "registry"
+            job = make_job(title="QA Automation Engineer")
+            rejection = prefilter_job(job, now=self.now)
+            self.assertIsNotNone(rejection)
+            RejectedRegistry(root).upsert(job, rejection)
+            directory = next((root / "rejected").iterdir())
+            meta = yaml.safe_load((directory / "meta.yaml").read_text(encoding="utf-8"))
+            markdown = (directory / "job.md").read_text(encoding="utf-8")
+
+            store = MagicMock()
+            store.get.return_value = {
+                "directory": directory.name,
+                "meta": meta,
+                "job_text": markdown,
+            }
+            registry = RejectedRegistry(root, cache_entries=True)
+            with patch("jobintel.prefilter.op.get_store", return_value=store), patch.object(
+                registry,
+                "_persist",
+            ) as persist:
+                registry.upsert(job, rejection)
+
+            persist.assert_not_called()
+            store.get.assert_called_once()
+            store.list.assert_not_called()
 
     def test_rejects_company_before_cv_retry_date(self) -> None:
         rejection = prefilter_job(

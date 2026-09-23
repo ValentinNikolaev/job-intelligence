@@ -170,8 +170,8 @@ class WorkflowContractTests(unittest.TestCase):
     def test_collection_workflow_has_bounded_safety_limits_and_gates_collection(self) -> None:
         workflow = self._read(".github/workflows/job-intelligence-collection.yml")
 
+        self.assertIn("timeout-minutes: 75", workflow)
         self.assertIn("timeout-minutes: 45", workflow)
-        self.assertIn("timeout-minutes: 20", workflow)
         self.assertIn("--lock-timeout-seconds 90", workflow)
         # Collection is intentionally soft only for its dedicated source-failure
         # status; the deterministic gate must still inspect its outcome.

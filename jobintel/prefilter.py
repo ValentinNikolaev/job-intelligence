@@ -167,15 +167,25 @@ class RejectedRegistry:
     def __init__(self, registry_root: Path, *, cache_entries: bool = False) -> None:
         self.root = registry_root / "rejected"
         self._cache_entries = cache_entries
-        self._entry_cache: dict[tuple[str, str], tuple[Path, dict[str, Any]]] | None = None
+        self._entry_cache: dict[tuple[str, str], tuple[Path, dict[str, Any], str]] | None = None
         self.root.mkdir(parents=True, exist_ok=True)
 
-    @op.transactional
     def upsert(self, job: NormalizedJob, rejection: Rejection) -> None:
+        now = _utc_iso(datetime.now(timezone.utc))
+        directory, meta, markdown, unchanged = self._plan_upsert(job, rejection, now)
+        if unchanged:
+            return
+        self._persist(job, rejection, now)
+
+    def _plan_upsert(
+        self,
+        job: NormalizedJob,
+        rejection: Rejection,
+        now: str,
+    ) -> tuple[Path, dict[str, Any], str, bool]:
         source = job.source.strip().lower()
         source_job_id = job.source_job_id.strip()
         existing = self._find(source, source_job_id)
-        now = _utc_iso(datetime.now(timezone.utc))
         meta = {
             "schema_version": 1,
             "source": source,
@@ -187,29 +197,57 @@ class RejectedRegistry:
             "published_at": (job.published_at or "").strip() or None,
             "rejection_category": rejection.category,
             "rejection_reason": rejection.reason,
-            "updated_at": now,
         }
         if existing is None:
             meta["rejected_at"] = now
             directory = self.root / f"{_timestamp_slug(now)}_{source}_{slug(job.company)}_{slug(job.title)}"
             if directory.exists():
                 directory = self.root / f"{directory.name}_{uuid.uuid4().hex[:8]}"
+            previous = None
+            previous_markdown = None
         else:
-            directory, previous = existing
+            directory, previous, previous_markdown = existing
             meta["rejected_at"] = previous.get("rejected_at", now)
+
+        markdown = _render_rejected_markdown(job, rejection)
+        unchanged = bool(
+            previous is not None
+            and _without_updated_at(previous) == meta
+            and previous_markdown == markdown
+        )
+        meta["updated_at"] = (
+            str(previous.get("updated_at") or now)
+            if unchanged and previous is not None
+            else now
+        )
+        return directory, meta, markdown, unchanged
+
+    @op.transactional
+    def _persist(self, job: NormalizedJob, rejection: Rejection, now: str) -> None:
+        source = job.source.strip().lower()
+        source_job_id = job.source_job_id.strip()
+        directory, meta, markdown, unchanged = self._plan_upsert(job, rejection, now)
+        if unchanged:
+            return
 
         directory.mkdir(parents=True, exist_ok=True)
         _write_text_if_changed(directory / "meta.yaml", _dump_yaml(meta))
-        _write_text_if_changed(directory / "job.md", _render_rejected_markdown(job, rejection))
-        if self._cache_entries:
-            self._load_cache()[(source, source_job_id)] = (directory, meta)
+        _write_text_if_changed(directory / "job.md", markdown)
+        # MongoDB lookups already use the source-identity index. Rebuilding the
+        # complete prefilter cache after every rejection creates an N+1 query loop.
+        if self._cache_entries and op.get_store(self.root) is None:
+            self._load_cache()[(source, source_job_id)] = (directory, meta, markdown)
 
-    def _find(self, source: str, source_job_id: str) -> tuple[Path, dict[str, Any]] | None:
+    def _find(self, source: str, source_job_id: str) -> tuple[Path, dict[str, Any], str] | None:
         store = op.get_store(self.root)
         if store is not None:
             from .migration import prefilter_id
             doc = store.get("prefilter_rejections", prefilter_id(source, source_job_id))
-            return (self.root / doc["directory"], doc["meta"]) if doc else None
+            return (
+                self.root / doc["directory"],
+                doc["meta"],
+                str(doc.get("job_text") or ""),
+            ) if doc else None
         if self._cache_entries:
             return self._load_cache().get((source, source_job_id))
         for meta_path in sorted(op.metadata_paths(self.root)):
@@ -220,13 +258,15 @@ class RejectedRegistry:
             if not isinstance(loaded, dict):
                 continue
             if loaded.get("source") == source and str(loaded.get("source_job_id")) == source_job_id:
-                return meta_path.parent, loaded
+                job_path = meta_path.parent / "job.md"
+                markdown = op.read_text(job_path) if op.exists(job_path) else ""
+                return meta_path.parent, loaded, markdown
         return None
 
-    def _load_cache(self) -> dict[tuple[str, str], tuple[Path, dict[str, Any]]]:
+    def _load_cache(self) -> dict[tuple[str, str], tuple[Path, dict[str, Any], str]]:
         if self._entry_cache is not None:
             return self._entry_cache
-        cache: dict[tuple[str, str], tuple[Path, dict[str, Any]]] = {}
+        cache: dict[tuple[str, str], tuple[Path, dict[str, Any], str]] = {}
         for meta_path in sorted(op.metadata_paths(self.root)):
             try:
                 loaded = yaml.safe_load(op.read_text(meta_path))
@@ -235,7 +275,9 @@ class RejectedRegistry:
             if not isinstance(loaded, dict):
                 continue
             key = (str(loaded.get("source") or ""), str(loaded.get("source_job_id") or ""))
-            cache[key] = (meta_path.parent, loaded)
+            job_path = meta_path.parent / "job.md"
+            markdown = op.read_text(job_path) if op.exists(job_path) else ""
+            cache[key] = (meta_path.parent, loaded, markdown)
         self._entry_cache = cache
         return cache
 
@@ -446,6 +488,10 @@ def _normalize_text(value: str) -> str:
 
 def _timestamp_slug(value: str) -> str:
     return value.replace(":", "").replace("-", "").replace("T", "_").replace("Z", "")
+
+
+def _without_updated_at(meta: dict[str, Any]) -> dict[str, Any]:
+    return {key: value for key, value in meta.items() if key != "updated_at"}
 
 
 def _render_rejected_markdown(job: NormalizedJob, rejection: Rejection) -> str:
