@@ -1,0 +1,39 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-23T22:40:44Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Nextip",
+      "country_codes": [],
+      "directory": "2026-09-23_070849_nextip_senior-php-backend-developer",
+      "score": 82,
+      "title": "SENIOR PHP BACKEND DEVELOPER",
+      "url": "https://www.nextip.com/job-position-backend/",
+      "vacancy_id": "b532459a-ee45-4494-929c-a8fe44b5c4a3"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070843_neting_cerchiamo-uno-sviluppatore-laravel",
+      "score": 88,
+      "title": "Cerchiamo uno sviluppatore Laravel",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "9d714b9e-37a0-43bd-b3ff-3588e4538686"
+    },
+    {
+      "company": "Beliven",
+      "country_codes": [],
+      "directory": "2026-09-23_070643_beliven_lead-software-engineer",
+      "score": 70,
+      "title": "LEAD SOFTWARE ENGINEER",
+      "url": "https://careers.beliven.com/recruiting/details/lead-software-engineer",
+      "vacancy_id": "14bc6d24-85bf-4dd8-891d-9ff03931e58f"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "91eab7f7497393dbebbc607094bc97dc77d03783b43153a259fe15226da79891",
+  "schema_version": 2
+}
