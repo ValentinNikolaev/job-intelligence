@@ -13,6 +13,15 @@
 
 Treat `config/codex-workflows.yaml` as the project model-routing policy. The file is advisory because a repository cannot switch the model of its current Codex task. Select the configured model and reasoning level when creating each Codex task or Scheduled Task, and pass the matching `--workflow` when publishing; project code derives the only allowed model label from policy.
 
+Keep scheduled analysis on its lightweight `luna_low` profile and preparation
+on the selected project profile. For a user-selected preparation batch, divide
+work into at most three independent groups in one delegation wave, not one
+subagent per vacancy. Reuse completed vacancy research and match evidence;
+resume from a checkpoint after interruption instead of starting the batch
+again. Stop after the requested packages pass their required quality and
+validation gates. The global GPT-6 Sol/medium default applies to tasks without
+a selected project workflow profile.
+
 ## Workflow boundaries
 
 - Keep collection, normalization, deduplication, hashing, validation, atomic publishing, DOCX conversion, and index generation deterministic and covered by tests.
