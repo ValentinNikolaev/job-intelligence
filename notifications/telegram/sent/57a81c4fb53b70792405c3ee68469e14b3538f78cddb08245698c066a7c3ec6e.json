@@ -1,0 +1,154 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-23T00:17:23Z",
+  "delivered_at": "2026-09-23T00:20:23Z",
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "TrueLabel",
+      "country_codes": [],
+      "directory": "2026-09-21_170310_truelabel_php-software-engineer",
+      "score": 78,
+      "title": "PHP Software Engineer",
+      "url": "https://jobs.dou.ua/companies/truelabel/vacancies/374027/",
+      "vacancy_id": "27faf9b3-1692-40cb-9592-afc543b8c24b"
+    },
+    {
+      "company": "Readdle",
+      "country_codes": [],
+      "directory": "2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team",
+      "score": 88,
+      "title": "Senior Backend Engineer (PHP, Symfony) — Fluix Team",
+      "url": "https://jobs.dou.ua/companies/readdle-inc/vacancies/374074/",
+      "vacancy_id": "3a7f3891-cd46-4200-87c3-a693acb19a19"
+    },
+    {
+      "company": "Propelahed LTD",
+      "country_codes": [],
+      "directory": "2026-09-21_133342_propelahed-ltd_laravel-розробник-part-time",
+      "score": 82,
+      "title": "Laravel-розробник (part-time)",
+      "url": "https://jobs.dou.ua/companies/propelahed-ltd/vacancies/374023/",
+      "vacancy_id": "2aa3b0cf-4bf2-4a6a-bd05-a6dd7c21594d"
+    },
+    {
+      "company": "Readeat",
+      "country_codes": [],
+      "directory": "2026-09-21_121017_readeat_middle-backend-developer",
+      "score": 80,
+      "title": "Middle Backend Developer",
+      "url": "https://jobs.dou.ua/companies/readeat/vacancies/366780/",
+      "vacancy_id": "8dbd331e-3408-4d1a-841c-ac25bedfc709"
+    },
+    {
+      "company": "Edvantis",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js",
+      "score": 84,
+      "title": "Senior Software Engineer BE (Go, Node.js)",
+      "url": "https://jobs.dou.ua/companies/edvantis/vacancies/373945/",
+      "vacancy_id": "2358c569-0bae-4bec-ab93-a184b6dd855a"
+    },
+    {
+      "company": "N-iX",
+      "country_codes": [],
+      "directory": "2026-09-19_100238_n-ix_senior-lead-php-engineer-with-ai-skills-5828",
+      "score": 86,
+      "title": "Senior/ Lead PHP Engineer (with AI Skills) (#5828)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/258407/",
+      "vacancy_id": "ba1fdf95-20a0-44c6-b7c4-13ef77b147df"
+    },
+    {
+      "company": "Lithos",
+      "country_codes": [],
+      "directory": "2026-09-19_020213_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 72,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "e1c84dad-0d2f-425c-802d-e6c0355015fb"
+    },
+    {
+      "company": "Антенор",
+      "country_codes": [],
+      "directory": "2026-09-18_220220_антенор_golang-backend-developer",
+      "score": 86,
+      "title": "Golang Backend Developer",
+      "url": "https://jobs.dou.ua/companies/antenor/vacancies/373917/",
+      "vacancy_id": "3baf6300-3356-4a85-b096-d6ea46d5fdaf"
+    },
+    {
+      "company": "Edvantis",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel",
+      "score": 85,
+      "title": "Senior Full-Stack Software Engineer (PHP/Laravel, Vue.js)",
+      "url": "https://jobs.dou.ua/companies/edvantis/vacancies/373852/",
+      "vacancy_id": "e457d44c-5797-48f1-a8bd-f01e72c1c1c3"
+    },
+    {
+      "company": "Add Talent Solutions",
+      "country_codes": [],
+      "directory": "2026-09-18_120957_add-talent-solutions_tech-lead-solutions-architect-i-gaming",
+      "score": 75,
+      "title": "Tech Lead — Solutions Architect (I-Gaming)",
+      "url": "https://jobs.dou.ua/companies/add-talent-solutions/vacancies/356776/",
+      "vacancy_id": "75c10641-ed93-4388-bf52-c826945bcb22"
+    },
+    {
+      "company": "InsulaLabs",
+      "country_codes": [],
+      "directory": "2026-09-18_061127_insulalabs_lead-platform-engineer",
+      "score": 76,
+      "title": "Lead Platform Engineer",
+      "url": "https://jobs.dou.ua/companies/insulalabs/vacancies/373722/",
+      "vacancy_id": "a4d94976-94d6-4b34-95b1-44d90dd3afd1"
+    },
+    {
+      "company": "ShippyPro",
+      "country_codes": [],
+      "directory": "2026-09-18_061122_shippypro_senior-software-engineer",
+      "score": 87,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "d1bf7099-0b18-418c-84df-26a3245c8c50"
+    },
+    {
+      "company": "COMFY",
+      "country_codes": [],
+      "directory": "2026-09-17_121033_comfy_senior-go-developer",
+      "score": 88,
+      "title": "Senior Go Developer",
+      "url": "https://jobs.dou.ua/companies/comfy/vacancies/373659/",
+      "vacancy_id": "1a85ae03-5ba4-474b-b2cf-371e231afc8d"
+    },
+    {
+      "company": "Nord Security",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-09-16_170430_nord-security_backend-engineer-mid-senior-php-go-payments-team",
+      "score": 90,
+      "title": "Backend Engineer | Mid - Senior | PHP + Go | Payments Team",
+      "url": "https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f",
+      "vacancy_id": "5aeb104e-036e-42b5-9320-c544742e5e3f"
+    },
+    {
+      "company": "Qubit Labs",
+      "country_codes": [],
+      "directory": "2026-09-16_121113_qubit-labs_lead-php-developer-eu",
+      "score": 89,
+      "title": "Lead PHP Developer (EU)",
+      "url": "https://jobs.dou.ua/companies/qubit-labs/vacancies/373507/",
+      "vacancy_id": "0268ea8a-ddbc-4ca3-88e4-8fb814470e8b"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "57a81c4fb53b70792405c3ee68469e14b3538f78cddb08245698c066a7c3ec6e",
+  "schema_version": 2,
+  "telegram_message_id": 229
+}
