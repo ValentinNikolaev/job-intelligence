@@ -83,6 +83,12 @@ current Codex surface, tell the user and do not publish under that profile.
    minima, provenance, word counts, and hashes before publication. The final manifest
    must retain the quality contract, provenance, word counts, and hashes.
 8. Never submit applications or contact employers.
+9. After preparation, the final report must list the application-package directory for
+   every successfully prepared vacancy. Give its absolute local path to
+   `registry/jobs/<vacancy-directory>/application/` and, after repository publication,
+   a stable repository URL pinned to the published commit. Explicitly identify each
+   selected vacancy that has no package and why; never make the user infer paths from
+   vacancy IDs, catalog entries, or the changelog.
 
 ## Mandatory final catalog step
 
