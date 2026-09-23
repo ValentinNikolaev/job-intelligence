@@ -1,0 +1,500 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:0b8d8e79e05539781a1632203e305f55038532e6e3b1f00562f1517293c5a1bb
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
+model: codex:gpt-5.6-terra:medium
+quality_contract_version: 2
+cv_export_stem: CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer
+generated_at: '2026-09-23T17:34:03Z'
+documents:
+  cv:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:0b8d8e79e05539781a1632203e305f55038532e6e3b1f00562f1517293c5a1bb
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer
+    generated_at: '2026-09-23T17:34:03Z'
+  cover-letter:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:0b8d8e79e05539781a1632203e305f55038532e6e3b1f00562f1517293c5a1bb
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer
+    generated_at: '2026-09-23T17:34:03Z'
+  analysis:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:0b8d8e79e05539781a1632203e305f55038532e6e3b1f00562f1517293c5a1bb
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer
+    generated_at: '2026-09-23T17:34:03Z'
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:0b8d8e79e05539781a1632203e305f55038532e6e3b1f00562f1517293c5a1bb
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:ccfb89ad39be789b63bfbd0b7ce70d593b208b1758f6ae7e44e598aa3d00e240
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer
+    generated_at: '2026-09-23T17:34:03Z'
+quality:
+  contract_version: 2
+  documents:
+    cv:
+      word_count: 537
+      sha256: sha256:375bbe38ef65947dc19182fb25b070c0af187562e446d37ecf04ce23b173f32d
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
+    cover-letter:
+      word_count: 342
+      sha256: sha256:27bb27321b8dcab4cc76815bf12ffa15a94b90d26b5ad4c79202ea797d350cca
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
+    analysis:
+      word_count: 770
+      sha256: sha256:a962eef91bc150084064e9f443570e261349b050b036fe0006c37316eb0a0d1c
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
+    interview-preparation:
+      word_count: 851
+      sha256: sha256:cc8cde7409b119a0f11e8c6dcc8a5f8b0d2e27b33d946a2185f083a99a02f298
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
+  document_format: standard
+  grounding:
+    schema_version: 1
+    sha256: 411e000f407b919e3e1cad7117def65024c72466bdbf8346f81aab7974d55774
+    evidence_bank:
+      schema_version: 1
+      sha256: 27243c553c1d4bdb3d72f2d27f3eb52ba0920adf7a0def73a382a858f7e77863
+      entry_count: 20
+      statuses:
+        cannot-confirm: 0
+        retracted: 0
+        unverified: 11
+        verified: 9
+    claim_count: 15
+    evidence_ids:
+    - cv-hyprr
+    - database-reliability
+    - email-scale
+    - email-team
+    - kubernetes-migration
+    - support-platform
+    - support-triage
+    evidence_entries:
+    - id: cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\n\
+          Hyprr was a creator-focused digital platform with blockchain/NFT components\
+          \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+          \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+          \ development across project planning, microservice and serverless\n  architecture,\
+          \ CI/CD, and reliability/serviceability concerns.\n- Defined the technology\
+          \ roadmap with the CTO and helped establish the core stack for\n  product\
+          \ delivery.\n- Led backend development and worked on the platform's Ethereum-based\
+          \ digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel | MySQL\
+          \ | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+      status: verified
+      verification: &id001
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
+    - id: database-reliability
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+          \ and\n  redistributing workload, improving service stability during high-traffic\
+          \ periods."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: email-scale
+      employer: PDFfiller
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '- **Scaled** the service to around **50 million** emails per month.'
+        context_quote: '### PDFfiller
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: email-team
+      employer: PDFfiller
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '- **Led a team of 5 backend engineers developing a transactional email
+          service.**'
+        context_quote: '### PDFfiller
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: kubernetes-migration
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Migrated** services from **ECS** to **Kubernetes** and prepared\
+          \ the runtime stack\n  for Kubernetes deployments with **Helm**, **GitHub\
+          \ Actions**, and **ArgoCD**."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: support-platform
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- Designed and owned a Go-based support automation platform connecting\
+          \ **Zendesk**,\n  **Intercom**, and internal services."
+        context_quote: '### Simple.life
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: support-triage
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- Integrated **OpenAI**-powered auto-triage flows, automating or deflecting\
+          \ up to\n  **30%** of inbound tickets."
+        context_quote: '### Simple.life
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    checks:
+    - source_quotes
+    - source_hashes
+    - verified_status
+    - numeric_tokens
+    - declared_attribution
+    - cv_bullet_coverage
+    semantic_review_required: true
+    cv_audit:
+      target_role: Senior Software Engineer
+      top_third_evidence_ids:
+      - support-platform
+      - support-triage
+      bullet_decisions:
+      - text: Designed and owned a Go-based support automation platform connecting
+          Zendesk, Intercom, and internal services.
+        decision: keep
+        reason: Direct evidence of integration ownership.
+      - text: Reduced peak load on the main database by removing bottlenecks and redistributing
+          workload, improving service stability during high-traffic periods.
+        decision: keep
+        reason: Direct reliability evidence.
+    reviewer: Codex self-review
+    document_sha256:
+      cv: sha256:375bbe38ef65947dc19182fb25b070c0af187562e446d37ecf04ce23b173f32d
+      cover-letter: sha256:27bb27321b8dcab4cc76815bf12ffa15a94b90d26b5ad4c79202ea797d350cca
+      analysis: sha256:a962eef91bc150084064e9f443570e261349b050b036fe0006c37316eb0a0d1c
+      interview-preparation: sha256:cc8cde7409b119a0f11e8c6dcc8a5f8b0d2e27b33d946a2185f083a99a02f298
+    requirements:
+    - requirement: PHP Laravel backend services
+      importance: critical
+      basis: stated
+      jd_quote: Design and build scalable backend services in PHP Laravel
+      match: strong
+      candidate_quote: PHP | Go | Laravel
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    - requirement: Microservices and distributed systems
+      importance: critical
+      basis: stated
+      jd_quote: Experience with microservices, async patterns, and distributed systems
+      match: strong
+      candidate_quote: microservice and serverless
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    - requirement: AI workflow automation
+      importance: high
+      basis: stated
+      jd_quote: Integrate AI and LLMs to automate workflows
+      match: strong
+      candidate_quote: '**OpenAI**-powered'
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - support-triage
+    - requirement: Production reliability
+      importance: high
+      basis: stated
+      jd_quote: Own performance and reliability
+      match: strong
+      candidate_quote: service stability
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - database-reliability
+    - requirement: Shipping domain
+      importance: preferred
+      basis: inferred
+      jd_quote: ''
+      match: unknown
+      candidate_quote: ''
+      risk: Shipping-domain experience is not evidenced.
+      mitigation: Discuss transferable integration experience.
+      hard_blocker: false
+    evidence_bank_path: registry/evidence/achievements.yaml
+    claims_ledger_path: claims.yaml
+    claims:
+    - document: cv
+      text: Designed and owned a support automation platform connecting Zendesk, Intercom,
+        and internal services.
+      evidence_ids:
+      - support-platform
+      employer: Simple.life
+      role: Software Developer
+      technologies: []
+    - document: cv
+      text: Integrated OpenAI-powered auto-triage flows that automated or deflected
+        up to 30% of inbound tickets.
+      evidence_ids:
+      - support-triage
+      employer: Simple.life
+      role: Software Developer
+      technologies: []
+    - document: cv
+      text: Reduced peak load on the main database by removing bottlenecks and redistributing
+        workload, improving service stability during high-traffic periods.
+      evidence_ids:
+      - database-reliability
+      employer: airSlate
+      role: Software Developer
+      technologies: []
+    - document: cv
+      text: Migrated services from ECS to Kubernetes and prepared the runtime stack
+        for deployments with Helm, GitHub Actions, and ArgoCD.
+      evidence_ids:
+      - kubernetes-migration
+      employer: airSlate
+      role: Software Developer
+      technologies: []
+    - document: cv
+      text: Brought a social and NFT platform from its initial prototype to a more
+        advanced closed beta in under six months.
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
+    - document: cv
+      text: Influenced product development across project planning, microservice and
+        serverless architecture, CI/CD, and reliability/serviceability concerns.
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
+    - document: cv
+      text: Defined the technology roadmap with the CTO and helped establish the core
+        stack for product delivery.
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
+    - document: cv
+      text: Led backend development for the platform’s Ethereum-based digital-asset
+        components.
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
+    - document: cv
+      text: Led a team of five backend engineers developing a transactional email
+        service.
+      evidence_ids:
+      - email-team
+      employer: PDFfiller
+      role: Software Developer
+      technologies: []
+    - document: cv
+      text: Scaled the service to around 50 million emails per month.
+      evidence_ids:
+      - email-scale
+      employer: PDFfiller
+      role: Software Developer
+      technologies: []
+    - document: cover-letter
+      text: automated or deflected up to 30% of inbound tickets
+      evidence_ids:
+      - support-triage
+      employer: Simple.life
+      role: Software Developer
+      technologies: []
+    - document: cover-letter
+      text: I reduced peak load on the main database
+      evidence_ids:
+      - database-reliability
+      employer: airSlate
+      role: Software Developer
+      technologies: []
+    - document: analysis
+      text: the candidate has direct PHP/Laravel evidence
+      evidence_ids:
+      - cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      technologies: []
+    - document: interview-preparation
+      text: the ownership boundary of the support platform
+      evidence_ids:
+      - support-platform
+      employer: Simple.life
+      role: Software Developer
+      technologies: []
+    - document: cv
+      text: Recent work includes backend integration ownership and workflow automation
+      evidence_ids:
+      - support-platform
+      - support-triage
+      employer: Simple.life
+      role: Software Developer
+      technologies: []
+  declaration_sha256: sha256:b74e3d29aa33426373689fd7dcee2bb9d01c6a31edf4db5a4a88995a48209fba
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 13.2.0+codex.20260831211622
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743
+  handoffs:
+    research.md:
+      word_count: 185
+      sha256: sha256:5dec0da0ba56c8bb4b093d9f45198be764b90197f8ef8b0e340348a381c684d7
+    evidence-map.md:
+      word_count: 464
+      sha256: sha256:a514832b641913badb73c3fd9b208b767b2188220fac60631ef16eeadd85d275
+    requirements-risks.md:
+      word_count: 286
+      sha256: sha256:70ea387601d6e515b69cd3ed30d007e89a56a8595aa34c89c6594b55ef00d1a0
+  exports:
+    cv:
+      schema_version: 1
+      source_file: cv.md
+      artifact_file: cv.docx
+      source_sha256: 375bbe38ef65947dc19182fb25b070c0af187562e446d37ecf04ce23b173f32d
+      artifact_sha256: 50d6896b27ed1d5fe8f163a22005736b29ee433d7454ca17f8979f64f7e702c3
+      extracted_text_sha256: 94368cf1f5cb7ff1613b7d192c0907ac0ac7aa119c775af8e91c4bfde612b810
+      canonical_tokens: 543
+      extracted_tokens: 543
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 36
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: 50d6896b27ed1d5fe8f163a22005736b29ee433d7454ca17f8979f64f7e702c3
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+    cover-letter:
+      schema_version: 1
+      source_file: cover-letter.md
+      artifact_file: cover-letter.docx
+      source_sha256: 27bb27321b8dcab4cc76815bf12ffa15a94b90d26b5ad4c79202ea797d350cca
+      artifact_sha256: d8c01ebca549218bb7b2e8723ffad108984505c648d824ec762d69afc1c5cfaa
+      extracted_text_sha256: e468e451434635d53afbb1c7ee4d6f20d080d3fe53123a52ad5c061a6cded938
+      canonical_tokens: 348
+      extracted_tokens: 348
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 8
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: d8c01ebca549218bb7b2e8723ffad108984505c648d824ec762d69afc1c5cfaa
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+files:
+- CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer.docx
+- CV_ValentinNikolaev_shippypro_SeniorSoftwareEngineer.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md
