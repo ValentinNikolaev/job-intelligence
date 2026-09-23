@@ -21,6 +21,26 @@ from jobintel.storage_contract import (
 
 
 class MongoStoreLeaseUnitTests(unittest.TestCase):
+    def test_ambiguous_identity_with_one_active_owner_is_resolved(self) -> None:
+        client = MagicMock()
+        database = MagicMock()
+        vacancies = MagicMock()
+        client.__getitem__.return_value = database
+        database.__getitem__.return_value = vacancies
+        vacancies.find.return_value = [{"_id": "active-vacancy"}]
+        store = MongoStore("mongodb://example", "jobintel_test", client=client)
+        identity = {
+            "vacancy_ids": ["archived-vacancy", "active-vacancy"],
+            "ambiguous": True,
+        }
+        active = {"_id": "active-vacancy", "directory": "active", "archived": False}
+        store.get = MagicMock(side_effect=[identity, active])
+
+        resolved = store.resolve_source("custom", "historical-duplicate")
+
+        self.assertEqual(active, resolved)
+        vacancies.find.assert_called_once()
+
     def test_transaction_checks_current_lease_outside_snapshot(self) -> None:
         client = MagicMock()
         database = MagicMock()
@@ -349,6 +369,54 @@ class MongoStoreTests(unittest.TestCase):
                 )
         with self.assertRaises(SourceIdentityConflict):
             self.store.resolve_source("adzuna", "ambiguous")
+
+    def test_historical_ambiguous_identity_resolves_single_active_owner(self) -> None:
+        source_id = MongoStore._source_identity_id("custom", "historical-duplicate")
+        archived = self._meta("old-vacancy", "old-source", "same-fingerprint")
+        active = self._meta("active-vacancy", "active-source", "same-fingerprint")
+        active["sources"] = [
+            {
+                "source": "custom",
+                "source_job_id": "historical-duplicate",
+                "url": "https://example.test/active",
+            }
+        ]
+        with self.store.lease("test:historical-duplicate"):
+            old = self.store.save_vacancy("old", archived, "old", None)
+            current = self.store.save_vacancy("active", active, "active", None)
+            old_payload = {
+                key: value
+                for key, value in old.items()
+                if key not in {"_id", "revision", "writer_fence", "updated_at"}
+            }
+            old_payload["archived"] = True
+            self.store.put(
+                "vacancies", old["_id"], old_payload, expected_revision=old["revision"]
+            )
+            self.store.put(
+                "source_identities",
+                source_id,
+                {
+                    "source": "custom",
+                    "source_job_id": "historical-duplicate",
+                    "vacancy_ids": [old["_id"], current["_id"]],
+                    "prefilter_ids": [],
+                    "ambiguous": True,
+                    "reference": None,
+                },
+            )
+
+            resolved = self.store.resolve_source("custom", "historical-duplicate")
+            updated = self.store.save_vacancy(
+                "active",
+                active,
+                "active",
+                None,
+                expected_revision=current["revision"],
+            )
+
+        self.assertEqual("active-vacancy", resolved["_id"])
+        self.assertEqual("active-vacancy", updated["_id"])
 
     def test_resolve_source_returns_archived_vacancy_and_ignores_prefilter_only(self) -> None:
         rejected = {

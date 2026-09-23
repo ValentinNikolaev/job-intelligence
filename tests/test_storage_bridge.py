@@ -79,7 +79,9 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         directory.mkdir(parents=True, exist_ok=True)
         (directory / "meta.yaml").write_text("id: poisoned\nstatus: rejected\n", encoding="utf-8")
         self.assertEqual("vacancy-1", self.registry._scan()[0]["meta"]["id"])
+        revision = self.store.get("vacancies", "vacancy-1")["revision"]
         self.assertEqual("unchanged", self.registry.upsert(self._job()).status)
+        self.assertEqual(revision, self.store.get("vacancies", "vacancy-1")["revision"])
         self.assertFalse((directory / "triage.yaml").exists())
         write_triage(directory)
         self.assertTrue(should_skip_model(directory) is False)

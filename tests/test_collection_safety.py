@@ -45,7 +45,7 @@ class CollectionSafetyContractTests(unittest.TestCase):
         rejected = MagicMock()
         usage = MagicMock()
         if usage_error:
-            usage.record.side_effect = usage_error
+            usage.record_many.side_effect = usage_error
         lock = MagicMock()
         lock.__enter__.side_effect = lock_enter or lock_error
         lock.__exit__.return_value = False

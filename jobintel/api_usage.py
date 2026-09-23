@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import os
 import uuid
+from collections.abc import Sequence
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -22,41 +23,60 @@ class ApiUsageLog:
 
     @op.transactional
     def record(self, summary: CollectorSummary, *, run_started_at: str | None = None) -> None:
-        if summary.api_requests <= 0:
+        self._record_many((summary,), run_started_at=run_started_at)
+
+    @op.transactional
+    def record_many(
+        self,
+        summaries: Sequence[CollectorSummary],
+        *,
+        run_started_at: str | None = None,
+    ) -> None:
+        self._record_many(summaries, run_started_at=run_started_at)
+
+    def _record_many(
+        self,
+        summaries: Sequence[CollectorSummary],
+        *,
+        run_started_at: str | None,
+    ) -> None:
+        recorded = [summary for summary in summaries if summary.api_requests > 0]
+        if not recorded:
             return
         data = self._load()
         sources = data.setdefault("sources", {})
         if not isinstance(sources, dict):
             sources = {}
             data["sources"] = sources
-        source = sources.setdefault(summary.source, {})
-        if not isinstance(source, dict):
-            source = {}
-            sources[summary.source] = source
+        for summary in recorded:
+            source = sources.setdefault(summary.source, {})
+            if not isinstance(source, dict):
+                source = {}
+                sources[summary.source] = source
 
-        previous_total = _non_negative_int(source.get("total_requests"))
-        source["total_requests"] = previous_total + summary.api_requests
-        source["last_run_at"] = _utc_now()
-        source["last_status"] = "failed" if summary.errors else "completed"
-        runs = source.setdefault("runs", [])
-        if not isinstance(runs, list):
-            runs = []
-            source["runs"] = runs
-        runs.append(
-            {
-                "run_started_at": run_started_at or source["last_run_at"],
-                "recorded_at": source["last_run_at"],
-                "requests": summary.api_requests,
-                "fetched": summary.fetched,
-                "created": summary.created,
-                "updated": summary.updated,
-                "duplicates_merged": summary.merged,
-                "unchanged": summary.unchanged,
-                "rejected": summary.rejected,
-                "errors": summary.errors,
-                "limit_reached": summary.limit_reached,
-            }
-        )
+            previous_total = _non_negative_int(source.get("total_requests"))
+            source["total_requests"] = previous_total + summary.api_requests
+            source["last_run_at"] = _utc_now()
+            source["last_status"] = "failed" if summary.errors else "completed"
+            runs = source.setdefault("runs", [])
+            if not isinstance(runs, list):
+                runs = []
+                source["runs"] = runs
+            runs.append(
+                {
+                    "run_started_at": run_started_at or source["last_run_at"],
+                    "recorded_at": source["last_run_at"],
+                    "requests": summary.api_requests,
+                    "fetched": summary.fetched,
+                    "created": summary.created,
+                    "updated": summary.updated,
+                    "duplicates_merged": summary.merged,
+                    "unchanged": summary.unchanged,
+                    "rejected": summary.rejected,
+                    "errors": summary.errors,
+                    "limit_reached": summary.limit_reached,
+                }
+            )
         _write_atomic(self.path, _dump(data))
 
     def _load(self) -> dict[str, Any]:

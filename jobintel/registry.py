@@ -69,16 +69,42 @@ class Registry:
         self._fingerprint_index: dict[str, list[dict[str, Any]]] | None = None
         self.jobs_dir.mkdir(parents=True, exist_ok=True)
 
-    @op.transactional
     def upsert(self, job: NormalizedJob) -> UpsertResult:
         job.validate()
+        store = op.get_store(self.root)
+        if store is not None:
+            source = job.source.strip().lower()
+            stored_exact = store.resolve_source(source, job.source_job_id)
+            if stored_exact is not None:
+                exact_entry = {
+                    "meta": stored_exact["meta"],
+                    "path": self.jobs_dir / stored_exact["directory"],
+                    "stored": stored_exact,
+                }
+                unchanged = self._update_existing(
+                    exact_entry,
+                    job,
+                    vacancy_fingerprint(job.company, job.title, job.location),
+                    is_merge=False,
+                    persist=False,
+                )
+                if unchanged is not None:
+                    return unchanged
+        return self._persist_upsert(job)
+
+    @op.transactional
+    def _persist_upsert(self, job: NormalizedJob) -> UpsertResult:
         source = job.source.strip().lower()
         fingerprint = vacancy_fingerprint(job.company, job.title, job.location)
         store = op.get_store(self.root)
         if store is not None:
             stored_exact = store.resolve_source(source, job.source_job_id)
             if stored_exact is not None:
-                exact_entry = {"meta": stored_exact["meta"], "path": self.jobs_dir / stored_exact["directory"]}
+                exact_entry = {
+                    "meta": stored_exact["meta"],
+                    "path": self.jobs_dir / stored_exact["directory"],
+                    "stored": stored_exact,
+                }
                 return self._update_existing(exact_entry, job, fingerprint, is_merge=False)
         entries = self._scan()
         exact = (
@@ -394,7 +420,8 @@ class Registry:
         fingerprint: str,
         *,
         is_merge: bool,
-    ) -> UpsertResult:
+        persist: bool = True,
+    ) -> UpsertResult | None:
         directory: Path = entry["path"]
         original: dict[str, Any] = entry["meta"]
         meta = dict(original)
@@ -448,8 +475,13 @@ class Registry:
         if not is_merge:
             meta["fingerprint"] = fingerprint
 
+        stored = entry.get("stored")
         job_path = directory / "job.md"
-        current_job_body = _read_markdown_body(job_path)
+        current_job_body = (
+            _markdown_body(str(stored.get("job_text") or ""))
+            if isinstance(stored, dict)
+            else _read_markdown_body(job_path)
+        )
         selected_job_body = current_job_body
         content_source = meta.get("content_source")
         if job.description.strip():
@@ -458,7 +490,11 @@ class Registry:
                 meta["content_source"] = source
 
         company_path = directory / "company.md"
-        current_company_body = _read_markdown_body(company_path)
+        current_company_body = (
+            _markdown_body(str(stored.get("company_text") or ""))
+            if isinstance(stored, dict)
+            else _read_markdown_body(company_path)
+        )
         selected_company_body = current_company_body
         company_content_source = meta.get("company_content_source")
         if _clean_optional(job.company_description):
@@ -476,13 +512,21 @@ class Registry:
             selected_job_body,
             _clean_optional(meta.get("published_at")),
         )
-        old_job_markdown = op.read_text(job_path) if op.exists(job_path) else ""
+        old_job_markdown = (
+            str(stored.get("job_text") or "")
+            if isinstance(stored, dict)
+            else op.read_text(job_path) if op.exists(job_path) else ""
+        )
         new_company_markdown = (
             _render_markdown(str(meta["company"]), selected_company_body)
             if selected_company_body
             else None
         )
-        old_company_markdown = op.read_text(company_path) if op.exists(company_path) else None
+        old_company_markdown = (
+            stored.get("company_text")
+            if isinstance(stored, dict)
+            else op.read_text(company_path) if op.exists(company_path) else None
+        )
 
         comparable_meta = dict(meta)
         comparable_meta["updated_at"] = original.get("updated_at")
@@ -490,6 +534,8 @@ class Registry:
         content_changed = new_job_markdown != old_job_markdown or new_company_markdown != old_company_markdown
         if not metadata_changed and not content_changed:
             return UpsertResult("unchanged", str(meta["id"]), directory.name)
+        if not persist:
+            return None
 
         meta["updated_at"] = _utc_iso(self._clock())
         _write_atomic_if_changed(job_path, new_job_markdown)
@@ -609,7 +655,10 @@ def _render_job_markdown(heading: str, body: str, published_at: str | None) -> s
 def _read_markdown_body(path: Path) -> str:
     if not op.exists(path):
         return ""
-    text = op.read_text(path)
+    return _markdown_body(op.read_text(path))
+
+
+def _markdown_body(text: str) -> str:
     lines = text.splitlines()
     if lines and lines[0].startswith("# "):
         lines = lines[1:]

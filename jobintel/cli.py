@@ -484,6 +484,7 @@ def main(argv: list[str] | None = None) -> int:
                 file=sys.stderr,
                 flush=True,
             )
+            stored_summaries: list[CollectorSummary] = []
             for name, summary, jobs in collected:
                 source_error_count = summary.errors
                 summary = _store_collected_jobs(
@@ -495,14 +496,39 @@ def main(argv: list[str] | None = None) -> int:
                     company_retry_rules=company_retry_rules,
                 )
                 _print_summary(summary)
-                try:
-                    api_usage.record(summary, run_started_at=run_started_at)
-                except StorageError:
-                    raise
-                except Exception as exc:
-                    print(f"API usage log error: {exc}", file=sys.stderr)
-                    raise
+                stored_summaries.append(summary)
                 persistence_failed = persistence_failed or summary.errors > source_error_count
+            usage_started_at = time.monotonic()
+            print(
+                json.dumps(
+                    {
+                        "event": "collection.api_usage.started",
+                        "sources": len(stored_summaries),
+                    },
+                    sort_keys=True,
+                ),
+                file=sys.stderr,
+                flush=True,
+            )
+            try:
+                api_usage.record_many(stored_summaries, run_started_at=run_started_at)
+            except StorageError:
+                raise
+            except Exception as exc:
+                print(f"API usage log error: {exc}", file=sys.stderr)
+                raise
+            finally:
+                print(
+                    json.dumps(
+                        {
+                            "elapsed_ms": round((time.monotonic() - usage_started_at) * 1000),
+                            "event": "collection.api_usage.finished",
+                        },
+                        sort_keys=True,
+                    ),
+                    file=sys.stderr,
+                    flush=True,
+                )
             registry.regenerate_index()
             persistence_status = "partial" if persistence_failed else "completed"
     except (Exception, WorkflowLockError) as exc:

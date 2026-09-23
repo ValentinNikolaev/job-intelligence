@@ -370,7 +370,7 @@ class MongoStore:
                 if scope == "jobs" and (
                     (identity or {}).get("ambiguous")
                     or (vacancy_ids and vacancy_ids != [vacancy_id])
-                ):
+                ) and self._active_vacancy_ids(vacancy_ids) != [vacancy_id]:
                     raise SourceIdentityConflict(
                         source,
                         source_job_id,
@@ -475,12 +475,15 @@ class MongoStore:
             {str(value) for value in identity.get("vacancy_ids", []) if value}
         )
         if identity.get("ambiguous") or len(vacancy_ids) > 1:
-            raise SourceIdentityConflict(
-                source,
-                source_job_id,
-                ",".join(vacancy_ids) or "ambiguous",
-                "lookup",
-            )
+            active_vacancy_ids = self._active_vacancy_ids(vacancy_ids)
+            if len(active_vacancy_ids) != 1:
+                raise SourceIdentityConflict(
+                    source,
+                    source_job_id,
+                    ",".join(vacancy_ids) or "ambiguous",
+                    "lookup",
+                )
+            vacancy_ids = active_vacancy_ids
         if not vacancy_ids:
             # Prefilter evidence does not own the source identity for active collection.
             return None
@@ -490,6 +493,19 @@ class MongoStore:
                 f"source identity {source}:{source_job_id} references missing vacancy {vacancy_ids[0]}"
             )
         return vacancy
+
+    def _active_vacancy_ids(self, vacancy_ids: Sequence[str]) -> list[str]:
+        if not vacancy_ids:
+            return []
+        rows = self.database["vacancies"].find(
+            {
+                "_id": {"$in": list(vacancy_ids)},
+                "archived": {"$ne": True},
+            },
+            {"_id": 1},
+            session=self._session(),
+        )
+        return sorted(str(row["_id"]) for row in rows)
 
     def list_vacancies(
         self, *, scope: str = "jobs", include_archived: bool = False
