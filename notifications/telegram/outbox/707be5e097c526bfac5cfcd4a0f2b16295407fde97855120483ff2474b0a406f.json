@@ -1,0 +1,55 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-23T12:25:33Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Honeytech",
+      "country_codes": [],
+      "directory": "2026-09-23_071039_honeytech_staff-engineer",
+      "score": 76,
+      "title": "Staff Engineer",
+      "url": "https://jobs.dou.ua/companies/honeytech/vacancies/374116/",
+      "vacancy_id": "6e1b9eab-fedd-465f-90b2-f0382dbc3d75"
+    },
+    {
+      "company": "Real Estate Bees",
+      "country_codes": [],
+      "directory": "2026-09-23_071037_real-estate-bees_backend-engineer-php-laravel",
+      "score": 83,
+      "title": "Backend Engineer (PHP/Laravel)",
+      "url": "https://jobs.dou.ua/companies/real-estate-bees/vacancies/374149/",
+      "vacancy_id": "7ebfb9ad-be19-4653-8f52-78438c563a4c"
+    },
+    {
+      "company": "DNIPRO-M",
+      "country_codes": [],
+      "directory": "2026-09-23_071035_dnipro-m_middle-senior-php-developer-laravel",
+      "score": 83,
+      "title": "Middle/Senior PHP Developer (Laravel)",
+      "url": "https://jobs.dou.ua/companies/dnipro-m/vacancies/370711/",
+      "vacancy_id": "058433ea-c83c-4447-89d5-2d2dcffc36d2"
+    },
+    {
+      "company": "DNIPRO-M",
+      "country_codes": [],
+      "directory": "2026-09-23_071033_dnipro-m_middle-senior-php-developer-symfony",
+      "score": 83,
+      "title": "Middle/Senior PHP Developer (Symfony)",
+      "url": "https://jobs.dou.ua/companies/dnipro-m/vacancies/370601/",
+      "vacancy_id": "5aa3311a-5845-4639-abca-0a7663ddc7ea"
+    },
+    {
+      "company": "WhiteTech",
+      "country_codes": [],
+      "directory": "2026-09-23_071029_whitetech_software-architect-php-symfony",
+      "score": 78,
+      "title": "Software Architect (PHP/Symfony)",
+      "url": "https://jobs.dou.ua/companies/whitetech/vacancies/374232/",
+      "vacancy_id": "443581ab-35f2-44ed-be38-4aca0f1eed0e"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "707be5e097c526bfac5cfcd4a0f2b16295407fde97855120483ff2474b0a406f",
+  "schema_version": 2
+}
