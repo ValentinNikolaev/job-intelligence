@@ -1,21 +1,20 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Possible Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Strong Go, backend, distributed systems, Kubernetes, and reliability alignment; Node.js, streaming, and ad-tech evidence is limited.
+Go backend, distributed systems, APIs, AWS, Kubernetes, and CI/CD experience align well with the senior backend role.
 
 ## Why it matches
 
-- Recent production ownership of Go backend automation and integrations.
-- Strong evidence for microservices, REST APIs, Kubernetes, CI/CD, troubleshooting, performance, and operational reliability.
-- Experience with high-throughput event-driven systems and AWS-backed infrastructure.
+- Go backend engineering
+- cloud and Kubernetes
+- production systems
 
 ## Gaps
 
-- Node.js and JavaScript/TypeScript experience is not documented.
-- MongoDB, gRPC/Protobuf, video streaming, SSAI, FFmpeg, and ad-tech are not documented.
+- Node.js depth is not clearly evidenced
 
 ## Concerns
 
-- The media-streaming specialization and low-latency requirements may require substantial domain ramp-up.
+- Exact remote and timezone terms should be confirmed

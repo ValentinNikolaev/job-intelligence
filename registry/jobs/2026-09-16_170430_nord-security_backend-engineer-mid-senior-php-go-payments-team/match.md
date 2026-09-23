@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 90/100  
 **Recommendation:** Strong Match
 
-Strong fit for a remote Poland backend role combining PHP, Go, microservices, APIs, MySQL, and payment infrastructure.
+PHP and Go, payment integrations, microservices, SQL, messaging, Kubernetes, and mentoring are all supported by candidate evidence.
 
 ## Why it matches
 
-- Extensive Go and PHP backend development
-- Microservices, APIs, AWS/Kubernetes, messaging, and observability
-- Payment gateway and fintech-related experience
+- PHP and Go
+- payment systems
+- microservices and production reliability
 
 ## Gaps
 
-- Redis-family tooling, Debezium, Grafana, and Go-specific payment infrastructure are not evidenced
+- Specific Nord payment stack experience is not evidenced
 
 ## Concerns
 
-- Poland employment or location eligibility and salary expectations require confirmation.
+- Poland work authorization or employment eligibility is unknown

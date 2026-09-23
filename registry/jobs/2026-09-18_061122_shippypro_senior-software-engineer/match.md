@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Excellent fit for the remote senior backend role combining Laravel, microservices, asynchronous workflows, scale, reliability, and automation.
+Backend engineering, Go and PHP, integrations, event-driven systems, and production reliability align strongly with a senior software role.
 
 ## Why it matches
 
-- Deep PHP/Laravel and backend engineering experience.
-- Strong evidence of microservices, event-driven systems, queues, AWS, Redis, and production reliability.
-- Relevant support automation, AI-assisted workflows, integrations, and high-volume messaging experience.
+- Backend systems
+- integrations and messaging
+- production reliability
 
 ## Gaps
 
-- Node.js, Python, React, and DynamoDB depth is less directly documented.
+- Shipping-domain experience is not evidenced
 
 ## Concerns
 
-- The role references OpenAI integrations; the candidate's project-specific responsibilities should be discussed precisely.
+- Exact hiring location and remote policy should be confirmed

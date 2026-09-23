@@ -22,7 +22,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 25
     env:
       MONGODB_URI: ${{ secrets.MONGODB_URI }}
       JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME || 'job_intelligence' }}
@@ -71,13 +71,14 @@ jobs:
       - name: Collect vacancies
         id: collect
         shell: bash
-        run: bash .github/scripts/run-and-report.sh "Collect vacancies" soft python run.py all --lock-timeout-seconds 3600
+        timeout-minutes: 10
+        run: bash .github/scripts/run-and-report.sh "Collect vacancies" soft python run.py all --lock-timeout-seconds 90
 
       - name: Write deterministic triage
         id: triage
         continue-on-error: true
         shell: bash
-        run: bash .github/scripts/run-and-report.sh "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 3600
+        run: bash .github/scripts/run-and-report.sh "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 90
 
       - name: Archive low-score vacancies
         id: archive_low_score
@@ -182,6 +183,7 @@ jobs:
           }
 
           check_step "Write deterministic triage" "${{ steps.triage.outcome }}"
+          check_step "Collect vacancies" "${{ steps.collect.outcome }}"
           check_step "Archive low-score vacancies" "${{ steps.archive_low_score.outcome }}"
           check_step "Archive skipped vacancies" "${{ steps.archive_skipped.outcome }}"
           check_step "Archive stale vacancies" "${{ steps.archive_stale.outcome }}"

@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-Solid platform-engineering match based on Kubernetes, AWS, CI/CD, observability, reliability, and technical leadership, with some platform-specific uncertainty.
+Cloud, Kubernetes, CI/CD, observability, and senior engineering evidence support the platform role, though dedicated platform ownership is partly uncertain.
 
 ## Why it matches
 
-- Direct experience migrating services to Kubernetes and operating AWS-backed systems.
-- Strong CI/CD, monitoring, performance, and incident-response evidence.
-- Senior technical-lead background and Go/PHP backend experience.
+- AWS and Kubernetes
+- CI/CD
+- reliability engineering
 
 ## Gaps
 
-- Dedicated platform-engineering scope and the posting's complete infrastructure stack are not fully evidenced.
+- Dedicated platform-team scope is not fully evidenced
 
 ## Concerns
 
-- If the role is primarily SRE rather than software/platform engineering, fit is somewhat lower.
+- SRE versus software-engineering emphasis should be clarified

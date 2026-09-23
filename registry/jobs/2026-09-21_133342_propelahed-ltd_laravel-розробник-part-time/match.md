@@ -3,18 +3,18 @@
 **Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong PHP and Laravel alignment with relevant backend, API, database, and delivery experience; part-time scope and any client-specific gaps need confirmation.
+Candidate has strong PHP and Laravel backend evidence with senior delivery and integration experience; part-time expectations require confirmation.
 
 ## Why it matches
 
-- Extensive documented PHP and Laravel backend experience.
-- Strong evidence for APIs, databases, production reliability, performance optimization, and CI/CD.
-- Remote work and independent delivery experience are well supported by the candidate profile.
+- Laravel and PHP
+- backend integrations
+- senior engineering experience
 
 ## Gaps
 
-- Vacancy-specific responsibilities and required supporting tools are not fully available in the sealed job text.
+- Part-time availability is unknown
 
 ## Concerns
 
-- Part-time availability and exact engagement expectations require confirmation.
+- Language and engagement conditions should be confirmed

@@ -792,6 +792,8 @@ class MongoStore:
                     "stop": threading.Event(),
                     "lost": threading.Event(),
                     "error": None,
+                    "last_renewed_at": row["acquired_at"],
+                    "loss_cause": None,
                 }
             if time.monotonic() >= deadline:
                 holder = leases.find_one({"_id": LEASE_ID}) or {}
@@ -819,11 +821,14 @@ class MongoStore:
                 )
             except PyMongoError as exc:
                 state["error"] = exc
+                state["loss_cause"] = "heartbeat renewal failed"
                 state["lost"].set()
                 return
             if row is None:
+                state["loss_cause"] = "heartbeat renewal no longer matched the active lease"
                 state["lost"].set()
                 return
+            state["last_renewed_at"] = now
 
     def _release_lease(self, state: dict[str, Any]) -> None:
         lease: WriterLease = state["lease"]
@@ -848,7 +853,7 @@ class MongoStore:
         self, state: dict[str, Any], *, session: ClientSession | None = None
     ) -> None:
         if state["lost"].is_set():
-            raise StorageLeaseError("MongoDB writer lease was lost")
+            raise self._lease_lost_error(state, "lease was previously marked lost")
         lease: WriterLease = state["lease"]
         row = self.database["writer_leases"].find_one(
             {
@@ -860,8 +865,9 @@ class MongoStore:
             session=session,
         )
         if row is None:
+            state["loss_cause"] = "lease expired or was fenced"
             state["lost"].set()
-            raise StorageLeaseError("MongoDB writer lease expired or was fenced")
+            raise self._lease_lost_error(state, "lease expired or was fenced")
 
     def _touch_fence_guard(
         self, state: dict[str, Any], session: ClientSession
@@ -873,8 +879,34 @@ class MongoStore:
             session=session,
         )
         if result.matched_count != 1:
+            state["loss_cause"] = "writer fence guard no longer matched the active lease"
             state["lost"].set()
-            raise StorageLeaseError("MongoDB writer transaction was fenced")
+            raise self._lease_lost_error(state, "writer transaction was fenced")
+
+    def _lease_lost_error(self, state: Mapping[str, Any], cause: str) -> StorageLeaseError:
+        """Return diagnostics that identify a lease without exposing its token or URI."""
+        lease: WriterLease = state["lease"]
+        details = [
+            f"owner={lease.owner}",
+            f"fence={lease.fence}",
+            f"last_renewed_at={state.get('last_renewed_at', 'unknown')}",
+            f"cause={state.get('loss_cause') or cause}",
+        ]
+        heartbeat_error = state.get("error")
+        if heartbeat_error is not None:
+            details.append(f"heartbeat_error={type(heartbeat_error).__name__}")
+        try:
+            holder = self.database["writer_leases"].find_one({"_id": LEASE_ID}) or {}
+        except PyMongoError:
+            holder = {}
+        if holder:
+            details.extend(
+                [
+                    f"current_owner={holder.get('owner', 'unknown')}",
+                    f"current_fence={holder.get('fence', 'unknown')}",
+                ]
+            )
+        return StorageLeaseError("MongoDB writer lease was lost (" + ", ".join(details) + ")")
 
     def _rollback_restore(
         self,

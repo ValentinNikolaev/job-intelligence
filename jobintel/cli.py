@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -40,6 +41,7 @@ from .matching import (
 from .models import CollectorSummary, NormalizedJob
 from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
 from .registry import Registry
+from .storage_contract import StorageError
 from .workflows import WorkflowPolicy, load_workflow_policy
 from .triage import should_skip_model, write_triage
 from .telegram_outbox import build_analysis_notification, enqueue_notification
@@ -52,6 +54,11 @@ from .workflow_lock import (
     workflow_lock,
     workflow_lock_status,
 )
+
+
+# This status is intentionally reserved for tolerated collector/API fetch failures.
+# Automation must not treat any other non-zero status as a successful collection.
+COLLECTION_SOURCE_FAILURE_EXIT = 75
 
 
 def _configure_stdio() -> None:
@@ -437,15 +444,19 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Unknown collector '{args.target}'. Available: {available}", file=sys.stderr)
         return 2
 
+    # Fetching is deliberately outside the writer/workflow lease. Source APIs can be
+    # slow or unavailable without blocking deterministic mutation work by another run.
+    collected = _collect_selected_jobs(
+        selected,
+        limit=collection_limit,
+        error_log_dir=registry_dir,
+    )
+    source_failed = any(summary.errors > 0 for _, summary, _ in collected)
+    persistence_failed = False
     try:
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
-            failed = False
-            collected = _collect_selected_jobs(
-                selected,
-                limit=collection_limit,
-                error_log_dir=registry_dir,
-            )
             for name, summary, jobs in collected:
+                source_error_count = summary.errors
                 summary = _store_collected_jobs(
                     name,
                     summary,
@@ -457,15 +468,19 @@ def main(argv: list[str] | None = None) -> int:
                 _print_summary(summary)
                 try:
                     api_usage.record(summary, run_started_at=run_started_at)
+                except StorageError:
+                    raise
                 except Exception as exc:
-                    failed = True
                     print(f"API usage log error: {exc}", file=sys.stderr)
-                failed = failed or summary.errors > 0
+                    raise
+                persistence_failed = persistence_failed or summary.errors > source_error_count
             registry.regenerate_index()
     except (Exception, WorkflowLockError) as exc:
         print(f"Collection error: {exc}", file=sys.stderr)
         return 1
-    return 1 if failed else 0
+    if persistence_failed:
+        return 1
+    return COLLECTION_SOURCE_FAILURE_EXIT if source_failed else 0
 
 
 def _run_collector(
@@ -522,28 +537,51 @@ def _fetch_collector_jobs(
 ) -> tuple[CollectorSummary, list[NormalizedJob]]:
     summary = CollectorSummary(source=name)
     jobs: list[NormalizedJob] = []
+    started_at = time.monotonic()
+    print(
+        json.dumps({"event": "collector.fetch.started", "source": name}, sort_keys=True),
+        file=sys.stderr,
+        flush=True,
+    )
     try:
-        for job in collector.fetch():
-            if limit is not None and summary.fetched >= limit:
-                summary.limit_reached = True
-                break
-            summary.fetched += 1
-            jobs.append(job)
-    except Exception as exc:
-        summary.errors += 1
-        print(f"{name}: collection failed: {exc}", file=sys.stderr)
-        if name == "cleanjobdata" and error_log_dir is not None:
-            error_log_dir.mkdir(parents=True, exist_ok=True)
-            (error_log_dir / "cleanjobdata-latest-error.txt").write_text(
-                f"{type(exc).__name__}: {exc}\n", encoding="utf-8"
-            )
-    collector_errors = getattr(collector, "errors", 0)
-    if isinstance(collector_errors, int) and collector_errors > 0:
-        summary.errors += collector_errors
-    requests = getattr(collector, "api_requests", 0)
-    if isinstance(requests, int) and requests > 0:
-        summary.api_requests = requests
-    return summary, jobs
+        try:
+            for job in collector.fetch():
+                if limit is not None and summary.fetched >= limit:
+                    summary.limit_reached = True
+                    break
+                summary.fetched += 1
+                jobs.append(job)
+        except Exception as exc:
+            summary.errors += 1
+            print(f"{name}: collection failed: {exc}", file=sys.stderr)
+            if name == "cleanjobdata" and error_log_dir is not None:
+                error_log_dir.mkdir(parents=True, exist_ok=True)
+                (error_log_dir / "cleanjobdata-latest-error.txt").write_text(
+                    f"{type(exc).__name__}: {exc}\n", encoding="utf-8"
+                )
+        collector_errors = getattr(collector, "errors", 0)
+        if isinstance(collector_errors, int) and collector_errors > 0:
+            summary.errors += collector_errors
+        requests = getattr(collector, "api_requests", 0)
+        if isinstance(requests, int) and requests > 0:
+            summary.api_requests = requests
+        return summary, jobs
+    finally:
+        print(
+            json.dumps(
+                {
+                    "api_requests": summary.api_requests,
+                    "elapsed_ms": round((time.monotonic() - started_at) * 1000),
+                    "errors": summary.errors,
+                    "event": "collector.fetch.finished",
+                    "fetched": summary.fetched,
+                    "source": name,
+                },
+                sort_keys=True,
+            ),
+            file=sys.stderr,
+            flush=True,
+        )
 
 
 def _store_collected_jobs(
@@ -564,6 +602,9 @@ def _store_collected_jobs(
                 continue
             result = registry.upsert(job)
             summary.record(result.status)
+        except StorageError:
+            # A failed storage/lease is a failed mutation phase, not a bad source row.
+            raise
         except Exception as exc:
             summary.errors += 1
             print(

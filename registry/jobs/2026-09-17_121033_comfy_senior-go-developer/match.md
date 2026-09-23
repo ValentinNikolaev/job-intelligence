@@ -3,18 +3,18 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Strong direct Go backend fit with APIs, distributed systems, observability, and production ownership aligned to a senior Go role.
+Go, backend architecture, APIs, event-driven systems, and senior delivery experience strongly match the position.
 
 ## Why it matches
 
-- Production Go backend ownership
-- Microservices, event-driven systems, and resilient integrations
-- Performance, monitoring, and technical leadership
+- Go backend engineering
+- distributed systems
+- senior ownership
 
 ## Gaps
 
-- The posting does not clearly evidence its exact domain stack or location arrangement.
+- Retail domain experience is not evidenced
 
 ## Concerns
 
-- Confirm the employment model and any mandatory Ukrainian or office-location requirement.
+- Ukrainian employment and remote conditions should be confirmed

@@ -167,6 +167,28 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("refusing to queue another run", workflow)
         self.assertNotIn("git rebase", workflow)
 
+    def test_collection_workflow_has_bounded_safety_limits_and_gates_collection(self) -> None:
+        workflow = self._read(".github/workflows/job-intelligence-collection.yml")
+
+        self.assertIn("timeout-minutes: 25", workflow)
+        self.assertIn("timeout-minutes: 10", workflow)
+        self.assertIn("--lock-timeout-seconds 90", workflow)
+        # Collection is intentionally soft only for its dedicated source-failure
+        # status; the deterministic gate must still inspect its outcome.
+        self.assertRegex(self._read(".github/scripts/run-and-report.sh"), r"status.*-eq 75")
+        gate = workflow.split("- name: Gate deterministic workflow", 1)[1]
+        self.assertRegex(gate, r"steps\.collect\.outcome")
+
+    def test_collection_fetches_before_writer_lock_and_preserves_storage_failures(self) -> None:
+        source = self._read("jobintel/cli.py")
+        collection_start = source.index('if target == "all":')
+        collection = source[source.rfind("def ", 0, collection_start):source.index("def _run_collector", collection_start)]
+
+        lock_at = collection.index("workflow_lock(", collection.index('if target == "all":'))
+        self.assertLess(collection.index("_collect_selected_jobs"), lock_at)
+        self.assertIn("StorageError", collection)
+        self.assertRegex(collection, r"(?i)(?:source|collector).{0,80}(?:exit|code)")
+
     def test_two_wave_preparation_has_parallel_parts_handoff_and_cv_barrier(self) -> None:
         prepare = self._flat(
             self._read(
