@@ -1,0 +1,28 @@
+# Match Analysis
+
+**Score:** 80/100  
+**Recommendation:** Strong Match
+
+The PHP backend role is closely aligned with the candidate’s PHP, Laravel/Symfony, API, database, and production engineering background; the posting gives limited detail for further specificity.
+
+## Why it matches
+
+- PHP backend
+- Laravel
+- Symfony
+- APIs
+- production reliability
+
+## Gaps
+
+- Exact seniority criteria and work arrangement are unclear
+
+## Concerns
+
+- Limited job-description detail
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| PHP backend development | critical / stated | strong | Job Position - PHP Backend - NEXTIP | PHP | / |

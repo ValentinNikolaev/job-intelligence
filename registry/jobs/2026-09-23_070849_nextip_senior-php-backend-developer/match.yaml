@@ -1,0 +1,31 @@
+# Match Analysis
+
+**Score:** 92/100  
+**Recommendation:** Strong Match
+
+Excellent PHP/Laravel backend fit with PostgreSQL, APIs, queues, integrations, performance work, and end-to-end ownership; Laravel 12/PHP 8.2 specifics are not confirmed.
+
+## Why it matches
+
+- PHP
+- Laravel
+- PostgreSQL
+- REST APIs
+- queue processing
+- system design
+
+## Gaps
+
+- Laravel 12 and PHP 8.2 versions are not explicit
+
+## Concerns
+
+- Remote/location arrangement is not clear from the supplied vacancy
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Professional PHP and Laravel backend experience | critical / stated | strong | 3+ years of professional PHP and 3+ years of production Laravel | PHP \| Laravel | / |
+| PostgreSQL and data-heavy backend work | high / stated | strong | Solid database skills (PostgreSQL), including query optimization | PostgreSQL | / |
+| REST APIs, integrations and reliable background jobs | high / stated | strong | Design, build and maintain REST API endpoints | REST APIs | / |
