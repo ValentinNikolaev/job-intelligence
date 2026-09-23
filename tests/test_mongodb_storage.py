@@ -4,6 +4,8 @@ import os
 import threading
 import unittest
 import uuid
+from datetime import datetime, timedelta, timezone
+from unittest.mock import MagicMock
 
 from pymongo import MongoClient
 
@@ -14,7 +16,72 @@ from jobintel.storage_contract import (
     StorageConflictError,
     StorageLeaseError,
     StorageRestoreError,
+    WriterLease,
 )
+
+
+class MongoStoreLeaseUnitTests(unittest.TestCase):
+    def test_transaction_checks_current_lease_outside_snapshot(self) -> None:
+        client = MagicMock()
+        database = MagicMock()
+        client.__getitem__.return_value = database
+
+        session = MagicMock()
+        session_manager = MagicMock()
+        session_manager.__enter__.return_value = session
+        session_manager.__exit__.return_value = False
+        client.start_session.return_value = session_manager
+
+        writer_leases = MagicMock()
+        fence_guards = MagicMock()
+        fence_guards.update_one.return_value = MagicMock(matched_count=1)
+        database.__getitem__.side_effect = lambda name: {
+            "writer_leases": writer_leases,
+            "writer_fence_guards": fence_guards,
+        }[name]
+
+        now = datetime.now(timezone.utc)
+        lease = WriterLease(
+            "test:snapshot",
+            "token",
+            7,
+            now,
+            now + timedelta(seconds=30),
+        )
+        current = {
+            "_id": "operational-writer",
+            "owner": lease.owner,
+            "token": lease.token,
+            "fence": lease.fence,
+            "expires_at": now + timedelta(seconds=30),
+        }
+
+        def find_lease(_query, *, session=None):
+            return None if session is not None else current
+
+        writer_leases.find_one.side_effect = find_lease
+        store = MongoStore("mongodb://example", "jobintel_test", client=client)
+        store._local.lease_state = {
+            "lease": lease,
+            "depth": 1,
+            "stop": threading.Event(),
+            "lost": threading.Event(),
+            "error": None,
+            "last_renewed_at": now,
+            "loss_cause": None,
+        }
+
+        with store.transaction():
+            pass
+
+        session.commit_transaction.assert_called_once_with()
+        self.assertEqual(2, fence_guards.update_one.call_count)
+        self.assertTrue(
+            all(
+                call.kwargs.get("session") is None
+                for call in writer_leases.find_one.call_args_list
+            )
+        )
 
 
 class MongoStoreTests(unittest.TestCase):

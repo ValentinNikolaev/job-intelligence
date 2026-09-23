@@ -168,7 +168,7 @@ class MongoStore:
         state = self._require_lease()
         existing = getattr(self._local, "session", None)
         if existing is not None:
-            self._assert_lease_live(state, session=existing)
+            self._assert_lease_live(state)
             yield self
             return
 
@@ -179,10 +179,10 @@ class MongoStore:
                     read_concern=ReadConcern("snapshot"),
                     write_concern=WriteConcern("majority"),
                 )
-                self._assert_lease_live(state, session=session)
+                self._assert_lease_live(state)
                 self._touch_fence_guard(state, session)
                 yield self
-                self._assert_lease_live(state, session=session)
+                self._assert_lease_live(state)
                 self._touch_fence_guard(state, session)
                 session.commit_transaction()
             except Exception:
@@ -849,9 +849,8 @@ class MongoStore:
                     f"cannot release MongoDB writer lease ({type(exc).__name__})"
                 ) from exc
 
-    def _assert_lease_live(
-        self, state: dict[str, Any], *, session: ClientSession | None = None
-    ) -> None:
+    def _assert_lease_live(self, state: dict[str, Any]) -> None:
+        """Check the current lease document, never a transaction snapshot."""
         if state["lost"].is_set():
             raise self._lease_lost_error(state, "lease was previously marked lost")
         lease: WriterLease = state["lease"]
@@ -861,8 +860,7 @@ class MongoStore:
                 "token": lease.token,
                 "fence": lease.fence,
                 "expires_at": {"$gt": self._utcnow()},
-            },
-            session=session,
+            }
         )
         if row is None:
             state["loss_cause"] = "lease expired or was fenced"
@@ -946,7 +944,7 @@ class MongoStore:
         state = getattr(self._local, "lease_state", None)
         if state is None:
             raise StorageLeaseError("a MongoDB writer lease is required for mutations")
-        self._assert_lease_live(state, session=self._session())
+        self._assert_lease_live(state)
         return state
 
     def _session(self) -> ClientSession | None:
