@@ -112,13 +112,16 @@ explicit single-document request, use the full-package flow below.
     and verify other existing artifacts were unchanged. Confirm the manifest retains the
     quality contract, provenance, word counts, and hashes.
 14. In the user-facing result, include a package-location entry for every successfully
-    prepared vacancy. Each entry must contain the vacancy/company label, the absolute
-    local path to `registry/jobs/<vacancy-directory>/application/`, and, when the files
-    were committed remotely, a stable URL to that directory pinned to the published
-    commit SHA. For every selected vacancy that was skipped or failed, say explicitly
-    that no package was produced and give the reason. Do not report only a shared
-    parent directory, catalog link, commit link, or list of artifact filenames: the
-    per-vacancy package directories are mandatory handoff information.
+    prepared vacancy. Each entry must contain the vacancy/company label, its direct
+    source vacancy URL, the absolute local path to
+    `registry/jobs/<vacancy-directory>/application/`, and, when the files were committed
+    remotely, a stable URL to that directory pinned to the published commit SHA. If the
+    posting is no longer reachable, preserve the recorded direct URL and label it as
+    unavailable instead of silently omitting it. For every selected vacancy that was
+    skipped or failed, say explicitly that no package was produced and give the reason.
+    Do not report only a shared parent directory, catalog link, commit link, list of
+    artifact filenames, or vacancy ID: the source URL and per-vacancy package directory
+    links are mandatory handoff information.
 
 ## Version 2 preparation contract
 

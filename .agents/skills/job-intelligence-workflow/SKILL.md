@@ -84,11 +84,14 @@ current Codex surface, tell the user and do not publish under that profile.
    must retain the quality contract, provenance, word counts, and hashes.
 8. Never submit applications or contact employers.
 9. After preparation, the final report must list the application-package directory for
-   every successfully prepared vacancy. Give its absolute local path to
+   every successfully prepared vacancy and the direct source URL for that vacancy. Give
+   its absolute local path to
    `registry/jobs/<vacancy-directory>/application/` and, after repository publication,
-   a stable repository URL pinned to the published commit. Explicitly identify each
-   selected vacancy that has no package and why; never make the user infer paths from
-   vacancy IDs, catalog entries, or the changelog.
+   a stable repository URL pinned to the published commit. If the source posting is no
+   longer reachable, still return its recorded direct URL and mark it unavailable.
+   Explicitly identify each selected vacancy that has no package and why; never make the
+   user infer package paths or vacancy URLs from IDs, catalog entries, chat history, or
+   the changelog.
 
 ## Mandatory final catalog step
 
