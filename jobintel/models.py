@@ -63,6 +63,8 @@ class UpsertResult:
 @dataclass(slots=True)
 class CollectorSummary:
     source: str
+    sources_total: int = 1
+    sources_failed: int = 0
     fetched: int = 0
     created: int = 0
     updated: int = 0
@@ -90,6 +92,8 @@ class CollectorSummary:
     def as_dict(self) -> dict[str, Any]:
         return {
             "source": self.source,
+            "sources_total": self.sources_total,
+            "sources_failed": self.sources_failed,
             "fetched": self.fetched,
             "created": self.created,
             "updated": self.updated,

@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import sys
+import time
 import unicodedata
 from dataclasses import dataclass
 from html.parser import HTMLParser
@@ -187,6 +188,8 @@ class CustomCollector:
         self._opener = opener
         self.errors = 0
         self._request_count = 0
+        self.sources_total = len(self.settings.sources)
+        self.sources_failed = 0
 
     @property
     def api_requests(self) -> int:
@@ -195,33 +198,51 @@ class CustomCollector:
     def fetch(self) -> Iterable[NormalizedJob]:
         self.errors = 0
         self._request_count = 0
+        self.sources_failed = 0
         seen: set[str] = set()
         for source in self.settings.sources:
+            source_started_at = time.monotonic()
+            source_requests_before = self._request_count
+            source_errors_before = self.errors
             jobs: list[NormalizedJob] = []
             board_page: PageData | None = None
+            source_completed = False
+            self._log_event(
+                "custom.source.started",
+                source=source.name,
+                board_url=source.board_url,
+                seed_jobs=len(source.seed_jobs),
+            )
             try:
-                board_page = self._fetch_page(source.board_url)
+                board_page = self._fetch_page_logged(source, source.board_url, "board")
                 jobs.extend(parse_source_page(source, board_page, self.settings.analysis_priority))
+                source_completed = True
                 for label, url in board_page.anchors:
                     if not _looks_like_job_link(source, label, url):
                         continue
+                    detail: PageData | None = None
                     try:
-                        detail = self._fetch_page(url)
+                        detail = self._fetch_page_logged(source, url, "detail")
                         jobs.append(normalize_linked_job(source, label, url, detail, self.settings.analysis_priority))
                     except Exception as exc:
-                        self._record_failure(source, url, exc)
+                        if detail is not None:
+                            self._record_failure(source, url, "detail_parse", exc, 0)
             except Exception as exc:
-                self._record_failure(source, source.board_url, exc)
+                if board_page is not None:
+                    self._record_failure(source, source.board_url, "board_parse", exc, 0)
             for seed in source.seed_jobs:
+                seed_page: PageData | None = None
                 try:
                     seed_page = (
                         board_page
                         if board_page is not None and _canonicalize_url(seed.url) == _canonicalize_url(source.board_url)
-                        else self._fetch_page(seed.url)
+                        else self._fetch_page_logged(source, seed.url, "seed")
                     )
                     jobs.append(normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority))
+                    source_completed = True
                 except Exception as exc:
-                    self._record_failure(source, seed.url, exc)
+                    if seed_page is not None:
+                        self._record_failure(source, seed.url, "seed_parse", exc, 0)
             if source.extract_headings and board_page is not None:
                 existing_titles = {_normalized_title(job.title) for job in jobs}
                 for heading in board_page.headings:
@@ -230,15 +251,78 @@ class CustomCollector:
                         continue
                     jobs.append(normalize_inline_job(source, heading, board_page, self.settings.analysis_priority))
                     existing_titles.add(normalized_heading)
+            emitted_jobs: list[NormalizedJob] = []
             for job in jobs:
                 if job.source_job_id in seen:
                     continue
                 seen.add(job.source_job_id)
-                yield job
+                emitted_jobs.append(job)
 
-    def _record_failure(self, source: CustomSource, url: str, exc: Exception) -> None:
+            source_errors = self.errors - source_errors_before
+            if not source_completed:
+                self.sources_failed += 1
+            status = "failed" if not source_completed else "partial" if source_errors else "completed"
+            self._log_event(
+                "custom.source.finished",
+                source=source.name,
+                status=status,
+                elapsed_ms=round((time.monotonic() - source_started_at) * 1000),
+                api_requests=self._request_count - source_requests_before,
+                errors=source_errors,
+                fetched=len(emitted_jobs),
+            )
+
+            yield from emitted_jobs
+
+    def _fetch_page_logged(self, source: CustomSource, url: str, phase: str) -> PageData:
+        started_at = time.monotonic()
+        try:
+            page = self._fetch_page(url)
+        except Exception as exc:
+            self._record_failure(
+                source,
+                url,
+                phase,
+                exc,
+                round((time.monotonic() - started_at) * 1000),
+            )
+            raise
+        self._log_event(
+            "custom.page.finished",
+            source=source.name,
+            phase=phase,
+            url=url,
+            status="completed",
+            elapsed_ms=round((time.monotonic() - started_at) * 1000),
+            anchors=len(page.anchors),
+            headings=len(page.headings),
+            json_ld_jobs=len(page.json_ld_jobs),
+        )
+        return page
+
+    def _record_failure(
+        self,
+        source: CustomSource,
+        url: str,
+        phase: str,
+        exc: Exception,
+        elapsed_ms: int,
+    ) -> None:
         self.errors += 1
-        print(f"custom: source {source.name!r} page {url!r} failed: {exc}", file=sys.stderr)
+        self._log_event(
+            "custom.page.finished",
+            source=source.name,
+            phase=phase,
+            url=url,
+            status="failed",
+            elapsed_ms=elapsed_ms,
+            error_type=type(exc).__name__,
+            error=str(exc),
+        )
+
+    @staticmethod
+    def _log_event(event: str, **payload: Any) -> None:
+        print(json.dumps({"event": event, **payload}, sort_keys=True), file=sys.stderr, flush=True)
 
     def _fetch_page(self, url: str) -> PageData:
         request = Request(url, headers={"Accept": "text/html,application/xhtml+xml", "User-Agent": USER_AGENT})

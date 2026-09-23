@@ -58,12 +58,23 @@ class CollectionSafetyContractTests(unittest.TestCase):
         ), store_patch:
             return cli.main(["fake", "--sources", str(self.root), "--registry", str(self.root)])
 
-    def test_source_fetch_failure_returns_tolerated_exit(self) -> None:
+    def test_complete_source_outage_is_fatal(self) -> None:
         class Failing:
             def fetch(self):
                 raise RuntimeError("temporary source outage")
 
-        self.assertEqual(75, self._main_with(Failing()))
+        self.assertEqual(1, self._main_with(Failing()))
+
+    def test_partial_composite_source_failure_returns_tolerated_exit(self) -> None:
+        class PartiallyFailing:
+            sources_total = 3
+            sources_failed = 1
+            errors = 1
+
+            def fetch(self):
+                return []
+
+        self.assertEqual(75, self._main_with(PartiallyFailing()))
 
     def test_fetch_completes_before_writer_lock_entry(self) -> None:
         events: list[str] = []

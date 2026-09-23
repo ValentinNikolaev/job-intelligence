@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import sys
 import tempfile
 import unittest
+from contextlib import redirect_stderr
 from datetime import datetime, timezone
+from io import StringIO
 from pathlib import Path
 from typing import Any
 from urllib.error import URLError
@@ -247,10 +250,45 @@ class CustomCollectorTests(unittest.TestCase):
             return FakeResponse(pages[request.full_url])
 
         collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=opener)
-        jobs = list(collector.fetch())
+        stderr = StringIO()
+        with redirect_stderr(stderr):
+            jobs = list(collector.fetch())
 
         self.assertEqual(["Backend Engineer"], [job.title for job in jobs])
         self.assertEqual(1, collector.errors)
+        self.assertEqual((1, 0), (collector.sources_total, collector.sources_failed))
+        events = [json.loads(line) for line in stderr.getvalue().splitlines()]
+        failure = next(event for event in events if event.get("status") == "failed")
+        self.assertEqual("custom.page.finished", failure["event"])
+        self.assertEqual("detail", failure["phase"])
+        self.assertEqual("https://careers.acme.test/jobs/php", failure["url"])
+        self.assertEqual("RuntimeError", failure["error_type"])
+        self.assertIn("temporary outage", failure["error"])
+        self.assertGreaterEqual(failure["elapsed_ms"], 0)
+        source = next(event for event in events if event["event"] == "custom.source.finished")
+        self.assertEqual("partial", source["status"])
+        self.assertEqual(1, source["errors"])
+        self.assertEqual(1, source["fetched"])
+        self.assertGreaterEqual(source["elapsed_ms"], 0)
+
+    def test_complete_custom_source_failure_is_counted_and_logged(self) -> None:
+        self._write_config()
+
+        def offline(*_args: Any, **_kwargs: Any) -> FakeResponse:
+            raise URLError("offline")
+
+        collector = CustomCollector({"CUSTOM_CONFIG": str(self.config_path)}, opener=offline)
+        stderr = StringIO()
+
+        with redirect_stderr(stderr):
+            jobs = list(collector.fetch())
+
+        self.assertEqual([], jobs)
+        self.assertEqual((1, 1), (collector.sources_total, collector.sources_failed))
+        events = [json.loads(line) for line in stderr.getvalue().splitlines()]
+        self.assertEqual("custom.source.started", events[0]["event"])
+        self.assertEqual("custom.source.finished", events[-1]["event"])
+        self.assertEqual("failed", events[-1]["status"])
 
     def test_board_failure_does_not_suppress_seed(self) -> None:
         self._write_config(

@@ -5,8 +5,8 @@ label="$1"
 failure_mode="$2"
 shift 2
 
-# Must match jobintel.cli.COLLECTION_SOURCE_FAILURE_EXIT. This is the sole
-# tolerated source error status; storage and workflow failures propagate.
+# Must match jobintel.cli.COLLECTION_SOURCE_FAILURE_EXIT. Only partial source
+# failures are tolerated; a complete source outage and deterministic failures propagate.
 
 started_ms="$(date +%s%3N)"
 echo "## ${label}" >> "$GITHUB_STEP_SUMMARY"

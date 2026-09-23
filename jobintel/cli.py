@@ -56,8 +56,8 @@ from .workflow_lock import (
 )
 
 
-# This status is intentionally reserved for tolerated collector/API fetch failures.
-# Automation must not treat any other non-zero status as a successful collection.
+# This status is intentionally reserved for partial collector/API fetch failures.
+# A complete outage returns a fatal status; automation must not soften it.
 COLLECTION_SOURCE_FAILURE_EXIT = 75
 
 
@@ -452,6 +452,9 @@ def main(argv: list[str] | None = None) -> int:
         error_log_dir=registry_dir,
     )
     source_failed = any(summary.errors > 0 for _, summary, _ in collected)
+    sources_total = sum(summary.sources_total for _, summary, _ in collected)
+    sources_failed = sum(summary.sources_failed for _, summary, _ in collected)
+    all_sources_failed = sources_total > 0 and sources_failed == sources_total
     persistence_failed = False
     try:
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, f"collection:{target}", timeout_seconds=args.lock_timeout_seconds):
@@ -479,6 +482,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Collection error: {exc}", file=sys.stderr)
         return 1
     if persistence_failed:
+        return 1
+    if all_sources_failed:
+        print(
+            f"Collection failed: all {sources_total} selected sources failed",
+            file=sys.stderr,
+        )
         return 1
     return COLLECTION_SOURCE_FAILURE_EXIT if source_failed else 0
 
@@ -562,6 +571,14 @@ def _fetch_collector_jobs(
         collector_errors = getattr(collector, "errors", 0)
         if isinstance(collector_errors, int) and collector_errors > 0:
             summary.errors += collector_errors
+        sources_total = getattr(collector, "sources_total", 1)
+        if isinstance(sources_total, int) and not isinstance(sources_total, bool) and sources_total > 0:
+            summary.sources_total = sources_total
+        sources_failed = getattr(collector, "sources_failed", None)
+        if isinstance(sources_failed, int) and not isinstance(sources_failed, bool):
+            summary.sources_failed = max(0, min(sources_failed, summary.sources_total))
+        elif summary.errors > 0 and summary.fetched == 0:
+            summary.sources_failed = summary.sources_total
         requests = getattr(collector, "api_requests", 0)
         if isinstance(requests, int) and requests > 0:
             summary.api_requests = requests
@@ -576,6 +593,8 @@ def _fetch_collector_jobs(
                     "event": "collector.fetch.finished",
                     "fetched": summary.fetched,
                     "source": name,
+                    "sources_failed": summary.sources_failed,
+                    "sources_total": summary.sources_total,
                 },
                 sort_keys=True,
             ),
