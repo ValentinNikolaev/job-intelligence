@@ -1,0 +1,22 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-23T13:30:11Z",
+  "delivered_at": "2026-09-23T13:33:03Z",
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Nextip",
+      "country_codes": [],
+      "directory": "2026-09-23_070849_nextip_senior-php-backend-developer",
+      "score": 82,
+      "title": "SENIOR PHP BACKEND DEVELOPER",
+      "url": "https://www.nextip.com/job-position-backend/",
+      "vacancy_id": "b532459a-ee45-4494-929c-a8fe44b5c4a3"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b7b7b95ad254f698cbf5daa1a5fb266a5b8102287cd0ad94741aab8270d3accb",
+  "schema_version": 2,
+  "telegram_message_id": 232
+}
