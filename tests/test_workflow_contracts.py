@@ -62,12 +62,14 @@ class WorkflowContractTests(unittest.TestCase):
             ".agents/skills/job-intelligence-workflow/references/prepare.md"
         )
 
-        self.assertIn("Required minimums are 500 words for `cv_markdown`", prompt)
+        self.assertIn("Required minimums are 400 words for `cv_markdown`", prompt)
         self.assertIn("300 for `cover_letter_markdown`", prompt)
         self.assertIn("700 for `analysis_markdown`", prompt)
         self.assertIn("800 for `interview_preparation_markdown`", prompt)
         self.assertIn("targets are", prompt)
-        self.assertIn("500–700, 300–450, 700–900, and 800–1000", prompt)
+        self.assertIn("400–650, 300–450, 700–900, and 800–1000", prompt)
+        self.assertIn("Summary` must be one concise paragraph of 50–110 words", prompt)
+        self.assertIn("internal evidence markers", prompt)
         self.assertIn("Hard ceilings are 800 words for the CV", prompt)
         self.assertIn("at most two primary", prompt)
         self.assertIn("one research pass", prompt)
@@ -89,7 +91,7 @@ class WorkflowContractTests(unittest.TestCase):
             "quality_contract_version",
         ):
             self.assertIn(token, source)
-        for minimum in ("500", "300", "700", "800"):
+        for minimum in ("400", "300", "700", "800"):
             self.assertIn(minimum, source)
 
     def test_prepare_requires_same_profile_match_without_relabeling(self) -> None:

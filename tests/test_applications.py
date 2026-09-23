@@ -56,8 +56,18 @@ def application_payload() -> dict[str, str]:
     skills = ", ".join(
         ("PHP", "Laravel", "Symfony", "Go", "MySQL", "PostgreSQL", "SQL", "REST APIs", "Git", "AWS", "Kubernetes", "RabbitMQ")
     )
-    bullets = "\n".join(f"- Delivered backend outcome {number} through careful design, testing, and collaboration." for number in range(1, 11))
-    cv_filler = " ".join(["Experienced backend engineer delivering reliable PHP and Go services for product teams."] * 42)
+    bullets = "\n".join(
+        f"- Delivered backend outcome {number} through careful system design, automated testing, production monitoring, cross-functional collaboration, and a controlled release process for customer-facing services with documented rollback steps and measurable service-level checks."
+        for number in range(1, 11)
+    )
+    cv_filler = (
+        "Experienced backend engineer with more than ten years of work across PHP and Go "
+        "services, API design, relational databases, cloud infrastructure, and production "
+        "reliability. Combines hands-on delivery with system design, technical leadership, "
+        "performance improvement, and collaboration with product teams. Focuses on maintainable "
+        "architecture, measurable operational outcomes, and dependable releases for evolving "
+        "customer-facing platforms."
+    )
     letter_paragraph = " ".join(["I connect verified backend delivery experience to the role's PHP, Laravel, API, and reliability priorities."] * 6)
     analysis_body = " ".join(["Evidence is grounded in the candidate record and the vacancy, with gaps framed as confirmation items rather than claims."] * 5)
     interview_body = " ".join(["Prepare a concise, truthful example, identify the candidate's individual contribution, and connect it to the stated role requirement."] * 7)
@@ -746,6 +756,56 @@ class ApplicationTests(unittest.TestCase):
         (draft / "parts" / "research.md").write_text("## Fact\nshort", encoding="utf-8")
         with self.assertRaisesRegex(ApplicationError, "research"):
             validate_application_draft(self.directory, draft)
+
+    def test_validate_application_package_rejects_internal_cv_evidence_markers(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "Experienced backend engineer", "Experienced backend engineer [support-platform]", 1
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "internal evidence marker"):
+            validate_application_package(payload)
+
+    def test_validate_application_package_rejects_meta_summary_language(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "Experienced backend engineer", "The verified record supports an experienced backend engineer", 1
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "internal review language"):
+            validate_application_package(payload)
+
+    def test_validate_application_package_rejects_fragmented_or_story_first_summary(self) -> None:
+        payload = application_payload()
+        summary = payload["cv_markdown"].split("## Summary\n\n", 1)[1].split(
+            "\n\n## Skills", 1
+        )[0]
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            summary,
+            "At Example, I delivered a backend platform.\n\n" + summary,
+            1,
+        )
+
+        with self.assertRaisesRegex(ApplicationError, "one concise employer-facing paragraph"):
+            validate_application_package(payload)
+
+    def test_validate_application_package_rejects_story_first_summary(self) -> None:
+        payload = application_payload()
+        summary = payload["cv_markdown"].split("## Summary\n\n", 1)[1].split(
+            "\n\n## Skills", 1
+        )[0]
+        story_first = (
+            "At Example, I delivered a backend platform used by product teams while "
+            "improving reliability and release safety. My background includes more than "
+            "ten years of PHP and Go development, API design, relational databases, cloud "
+            "infrastructure, performance optimization, system design, technical leadership, "
+            "and cross-functional delivery for customer-facing production services with "
+            "documented operational ownership and dependable release practices."
+        )
+        payload["cv_markdown"] = payload["cv_markdown"].replace(summary, story_first, 1)
+
+        with self.assertRaisesRegex(ApplicationError, "professional identity"):
+            validate_application_package(payload)
 
     def test_validate_application_cli_checks_draft_without_publishing(self) -> None:
         draft = self.project / "application-draft"

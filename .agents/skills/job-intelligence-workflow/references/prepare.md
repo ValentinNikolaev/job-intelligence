@@ -53,7 +53,12 @@ explicit single-document request, use the full-package flow below.
    final role; reuse an existing current CV only when that document depends on it.
 6. The final CV must contain Summary, Skills, Experience, Education, and Languages;
    12–18 evidence-backed hard skills; the candidate's real LinkedIn and GitHub URLs;
-   and at least 10 evidence-backed Experience bullets (six in compact format).
+   and at least 10 evidence-backed Experience bullets (six in compact format). Its
+   Summary must be one employer-facing paragraph of 50–110 words that opens with the
+   candidate's professional identity. Strip all evidence IDs, source/verification
+   commentary, confirmation notes, placeholders, and drafting language from the final
+   CV; keep those only in handoffs, `claims.yaml`, and `quality.yaml`. Never duplicate
+   or lightly paraphrase an Experience bullet to meet a count or word minimum.
 7. The research role must use the vacancy posting plus at most two primary company
    sources in one pass. Exceed that budget only for a critical unresolved eligibility
    or company-identity fact and record the reason in its handoff. After all three Wave 1
@@ -77,7 +82,10 @@ explicit single-document request, use the full-package flow below.
    skill is unavailable, stop; never substitute generic or retired inline letter logic.
 9. The main agent must perform one cross-file consistency and claim-grounding pass after
    Wave 2. Resolve contradictions against candidate evidence and the final CV without
-   starting another broad drafting loop. If subagents or enough slots are unavailable,
+   starting another broad drafting loop. As part of that pass, read the final Summary
+   as employer-facing copy and reject any evidence labels, audit commentary, gap list,
+   source notes, placeholders, duplicated claims, or opening employer anecdote. If
+   subagents or enough slots are unavailable,
    execute the same Wave 1 roles, main CV synthesis, and Wave 2 roles sequentially with
    the same file ownership and boundaries. Do not claim that the repository or current
    task switched models.

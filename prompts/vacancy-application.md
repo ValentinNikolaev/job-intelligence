@@ -47,9 +47,9 @@ override the standard CV/letter minima below; never pad either format. Follow th
 selected length instruction when invoking `$write-cover-letter`.
 
 
-- Required minimums are 500 words for `cv_markdown`, 300 for `cover_letter_markdown`,
+- Required minimums are 400 words for `cv_markdown`, 300 for `cover_letter_markdown`,
   700 for `analysis_markdown`, and 800 for `interview_preparation_markdown`; targets are
-  500–700, 300–450, 700–900, and 800–1000 respectively. Do not pad with unsupported or
+  400–650, 300–450, 700–900, and 800–1000 respectively. Do not pad with unsupported or
   repetitive content merely to reach a minimum.
 - Hard ceilings are 800 words for the CV, 450 for the cover letter, 1000 for the
   analysis, and 1100 for interview preparation. Treat a ceiling breach as a validation
@@ -150,9 +150,15 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
    vacancy-specific Skills section with 12–18 supported hard
    skills, ordered by relevance. Use exact vacancy terminology only when the candidate
    evidence supports it. Under every role in Experience, add a concise
-   `Technologies: ...` line containing only technologies supported for that specific
-   employer or engagement. Never infer a technology across employers, copy the global
-   Skills list into each role, or omit these lines as repetition. Do not keyword-stuff.
+    `Technologies: ...` line containing only technologies supported for that specific
+    employer or engagement. Never infer a technology across employers, copy the global
+    Skills list into each role, or omit these lines as repetition. Do not keyword-stuff.
+    Keep the final CV strictly employer-facing: never expose evidence IDs, source or
+    verification notes, audit language, confirmation items, placeholders, or statements
+    about what "this CV" or "the record" proves. Evidence markers belong only in the
+    handoff and claims ledger. Do not repeat or paraphrase the same Experience bullet to
+    satisfy a word or bullet minimum, and do not add explanatory prose after a role's
+    bullets.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support
@@ -203,6 +209,14 @@ vacancy-aligned professional headline derived from `vacancy.metadata.title`, whi
 remaining factually supported by the candidate source documents. This is the final
 canonical tailored CV. Every Experience role must include a non-empty,
 evidence-backed `Technologies: ...` line specific to that role.
+
+The `Summary` must be one concise paragraph of 50–110 words. Open with the candidate's
+professional identity and scope, then foreground the most relevant supported strengths
+or outcomes. Do not open with an employer-specific anecdote. Do not name gaps, missing
+skills, verification state, evidence sources, the drafting process, or the target
+company in the Summary. The entire CV is candidate-facing prose and must not contain
+internal evidence markers such as `[support-platform]`, audit commentary, TODO/TBD
+tokens, placeholders, or duplicated Experience bullets.
 
 ### `cover_letter_markdown`
 

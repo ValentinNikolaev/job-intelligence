@@ -137,6 +137,25 @@ _FORBIDDEN_APPLICATION_PHRASES = (
     "Zend Certified PHP Developer",
     "Zend PHP Certification",
 )
+_CV_INTERNAL_MARKER_RE = re.compile(
+    r"\[[a-z][a-z0-9]*(?:-[a-z0-9]+)+\](?!\()",
+    re.IGNORECASE,
+)
+_CV_META_PHRASES = (
+    "candidate record",
+    "confirmation item",
+    "evidence bank",
+    "not claimed here",
+    "not separately recorded",
+    "positioned for",
+    "source excerpt",
+    "the experience below",
+    "the record supports",
+    "the wording preserves",
+    "this cv",
+    "verified claim",
+    "verified record",
+)
 _MAX_APPLICATION_WORD_COUNTS = {
     "cv_markdown": 800,
     "cover_letter_markdown": 450,
@@ -144,7 +163,7 @@ _MAX_APPLICATION_WORD_COUNTS = {
     "interview_preparation_markdown": 1100,
 }
 _MIN_APPLICATION_WORD_COUNTS = {
-    "cv_markdown": 500,
+    "cv_markdown": 400,
     "cover_letter_markdown": 300,
     "analysis_markdown": 700,
     "interview_preparation_markdown": 800,
@@ -634,6 +653,8 @@ def validate_application_package(
                 f"{field} exceeds {word_limit}-word limit ({word_count} words)"
             )
     if "cv_markdown" in result:
+        _validate_cv_candidate_facing(result["cv_markdown"])
+        _validate_cv_summary(result["cv_markdown"])
         _validate_cv_links(result["cv_markdown"])
         _validate_cv_skills(result["cv_markdown"])
         _validate_cv_experience_bullets(result["cv_markdown"], minimum=6 if document_format == "compact" else 10)
@@ -664,6 +685,46 @@ def _markdown_section(markdown: str, heading: str) -> str:
         if in_section:
             selected.append(line)
     return "\n".join(selected)
+
+
+def _validate_cv_candidate_facing(markdown: str) -> None:
+    marker = _CV_INTERNAL_MARKER_RE.search(markdown)
+    if marker:
+        raise ApplicationError(
+            "cv_markdown contains an internal evidence marker: " + marker.group(0)
+        )
+    folded = markdown.casefold()
+    for phrase in _CV_META_PHRASES:
+        if phrase in folded:
+            raise ApplicationError(
+                "cv_markdown contains internal review language: " + phrase
+            )
+    if re.search(r"(?i)(?:\bTODO\b|\bTBD\b|\bPLACEHOLDER\b|<[^>\n]+>)", markdown):
+        raise ApplicationError("cv_markdown contains an unresolved placeholder")
+
+
+def _validate_cv_summary(markdown: str) -> None:
+    section = _markdown_section(markdown, "Summary").strip()
+    paragraphs = [part.strip() for part in re.split(r"\n\s*\n", section) if part.strip()]
+    if len(paragraphs) != 1:
+        raise ApplicationError(
+            "cv_markdown Summary must be one concise employer-facing paragraph "
+            f"({len(paragraphs)} found)"
+        )
+    summary = paragraphs[0]
+    count = _word_count(summary)
+    if not 50 <= count <= 110:
+        raise ApplicationError(
+            "cv_markdown Summary must contain 50 to 110 words "
+            f"({count} found)"
+        )
+    if re.search(r"(?m)^\s*[-*#]", summary):
+        raise ApplicationError("cv_markdown Summary must not contain headings or bullets")
+    if re.match(r"(?i)^at\s+\S", summary):
+        raise ApplicationError(
+            "cv_markdown Summary must open with the candidate's professional identity, "
+            "not an employer-specific anecdote"
+        )
 
 
 def _validate_cv_links(markdown: str) -> None:

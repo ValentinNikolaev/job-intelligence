@@ -160,7 +160,10 @@ submission snapshots and lifecycle source receipts retain raw-byte hashes. Singl
 document mode includes only selected document hashes and applicable CV/letter fields.
 The existing substantive handoffs remain required.
 
-Standard limits remain CV 500–800 words, letter 300–450. `document_format: compact`
+Standard limits remain CV 400–800 words, letter 300–450. A CV Summary is one
+employer-facing paragraph of 50–110 words and cannot contain internal evidence IDs,
+source/verification commentary, gap notes, placeholders, or drafting language.
+`document_format: compact`
 allows CV 300–800 and letter 150–450, with at least six Experience bullets and three
 body paragraphs. Recommended compact targets are CV 300–500 and letter 150–250.
 The analysis/interview minima and ceilings remain unchanged. Preserve two meaningful
