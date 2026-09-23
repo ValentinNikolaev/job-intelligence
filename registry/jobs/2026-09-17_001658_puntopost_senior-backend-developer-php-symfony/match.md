@@ -1,21 +1,20 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Strong PHP/Symfony backend and API fit with relevant e-commerce, integrations, databases, and production experience.
+Strong PHP/Symfony, APIs, e-commerce logistics, and senior backend fit with location uncertainty.
 
 ## Why it matches
 
-- PHP, Symfony, APIs, and backend systems
-- E-commerce and payment-related integration experience
-- Performance, reliability, and delivery ownership
+- PHP and Symfony
+- APIs
+- e-commerce
 
 ## Gaps
 
-- The truncated posting does not establish the complete stack or remote policy
-- Spanish/Mexico logistics domain experience is not directly evidenced
+- Spanish language and local arrangement unknown
 
 ## Concerns
 
-- Barcelona/location and employment eligibility need confirmation.
+- Barcelona location may constrain remote work

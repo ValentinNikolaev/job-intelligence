@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 67/100  
 **Recommendation:** Match
 
-Strong PHP/Symfony and integration fit for logistics and e-commerce backend work, moderated by uncertainty about the local working arrangement.
+PHP/Symfony services, integrations, and backend ownership fit, while German location and language requirements need confirmation.
 
 ## Why it matches
 
-- Extensive PHP and Symfony backend experience.
-- Relevant e-commerce, APIs, payment, integrations, databases, and reliability background.
-- Candidate has experience with multiple services rather than only monolithic applications.
+- PHP
+- Symfony
+- integrations
 
 ## Gaps
 
-- Sulu CMS, Shopware, and the employer's specific logistics domain are not evidenced.
+- German language and local eligibility
 
 ## Concerns
 
-- The Konstanz location may require onsite presence; remote compatibility is not clear from the sealed posting.
+- Remote arrangement is unclear
