@@ -6,7 +6,7 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable, Mapping
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urlsplit, urlunsplit
 
 from .country_flags import COUNTRY_FLAGS, country_codes_for_location, render_country_flags
 
@@ -135,6 +135,51 @@ def load_notification(path: Path) -> dict[str, Any]:
     return validate_notification(value)
 
 
+def undelivered_items(notification: Mapping[str, Any], sent_dir: Path) -> list[dict[str, Any]]:
+    """Select posting URLs that have never been delivered to Telegram."""
+    validated = validate_notification(notification)
+    delivered_urls: set[str] = set()
+    delivered_ids: set[str] = set()
+    for path in sorted(sent_dir.glob("*.json")):
+        try:
+            receipt = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            raise TelegramOutboxError(f"cannot read Telegram delivery receipt {path}: {exc}") from exc
+        if not isinstance(receipt, dict):
+            raise TelegramOutboxError(f"invalid Telegram delivery receipt: {path}")
+        if receipt.get("delivery_status") != "sent":
+            continue
+        items = receipt.get("items")
+        if not isinstance(items, list):
+            raise TelegramOutboxError(f"invalid Telegram delivery receipt items: {path}")
+        actual_ids = receipt.get("delivered_vacancy_ids")
+        if actual_ids is not None and not isinstance(actual_ids, list):
+            raise TelegramOutboxError(f"invalid delivered vacancy IDs: {path}")
+        for item in items:
+            if not isinstance(item, dict):
+                raise TelegramOutboxError(f"invalid Telegram delivery receipt item: {path}")
+            vacancy_id = str(item.get("vacancy_id") or "")
+            url = str(item.get("url") or "")
+            if actual_ids is None or vacancy_id in actual_ids:
+                delivered_ids.add(vacancy_id)
+                delivered_urls.add(_posting_url_key(url))
+
+    selected: list[dict[str, Any]] = []
+    for item in validated["items"]:
+        key = _posting_url_key(item["url"])
+        if item["vacancy_id"] in delivered_ids or key in delivered_urls:
+            continue
+        selected.append(item)
+        delivered_ids.add(item["vacancy_id"])
+        delivered_urls.add(key)
+    return selected
+
+
+def _posting_url_key(url: str) -> str:
+    parsed = urlsplit(url.strip())
+    return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), parsed.path.rstrip("/") or "/", parsed.query, ""))
+
+
 def validate_notification(value: Mapping[str, Any]) -> dict[str, Any]:
     if not isinstance(value, Mapping):
         raise TelegramOutboxError("Telegram notification must be a mapping")
@@ -222,10 +267,12 @@ def validate_notification(value: Mapping[str, Any]) -> dict[str, Any]:
     }
 
 
-def render_notification_message(notification: Mapping[str, Any]) -> str:
+def render_notification_message(
+    notification: Mapping[str, Any], *, items: list[dict[str, Any]] | None = None
+) -> str:
     validated = validate_notification(notification)
     lines = [f"Automation ID: {validated['initiator']}"]
-    for item in validated["items"]:
+    for item in validated["items"] if items is None else items:
         flags = render_country_flags(item.get("country_codes", []))
         headline = f"{item['company']} — {item['title']}"
         lines.extend(

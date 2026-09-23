@@ -13,6 +13,7 @@ from jobintel.telegram_outbox import (
     enqueue_notification,
     load_notification,
     render_notification_message,
+    undelivered_items,
     validate_notification,
 )
 from scripts.notify_telegram import format_message_html
@@ -141,6 +142,34 @@ class TelegramOutboxTests(unittest.TestCase):
         self.assertEqual(first, second)
         self.assertEqual(notification, loaded)
         self.assertEqual(sent, third)
+
+    def test_delivery_filters_sent_urls_and_duplicates_within_batch(self) -> None:
+        previous = build_analysis_notification(
+            {"items": [_item("old", "old-id", "Neting", "Laravel")]},
+            {"old": _result(84)}, minimum_score=65,
+        )
+        assert previous is not None
+        repeated = _item("repeat", "new-id", "Neting", "Laravel Remote")
+        repeated["source_url"] = "https://EXAMPLE.test/old/#details"
+        fresh = _item("fresh", "fresh-id", "Fresh", "Backend")
+        duplicate_fresh = _item("fresh-again", "another-id", "Fresh", "Backend role")
+        duplicate_fresh["source_url"] = "https://example.test/fresh/"
+        current = build_analysis_notification(
+            {"items": [repeated, fresh, duplicate_fresh]},
+            {name: _result(80) for name in ("repeat", "fresh", "fresh-again")},
+            minimum_score=65,
+        )
+        assert current is not None
+        with TemporaryDirectory() as temporary:
+            sent_dir = Path(temporary)
+            receipt = {**previous, "delivery_status": "sent"}
+            (sent_dir / "previous.json").write_text(json.dumps(receipt), encoding="utf-8")
+            selected = undelivered_items(current, sent_dir)
+            self.assertEqual(["fresh-id"], [item["vacancy_id"] for item in selected])
+            self.assertIn("Fresh — Backend", render_notification_message(current, items=selected))
+            receipt = {**current, "delivery_status": "sent", "delivered_vacancy_ids": ["fresh-id"]}
+            (sent_dir / "current.json").write_text(json.dumps(receipt), encoding="utf-8")
+            self.assertEqual([], undelivered_items(current, sent_dir))
 
     def test_rendered_message_has_the_sender_contract(self) -> None:
         notification = build_analysis_notification(
