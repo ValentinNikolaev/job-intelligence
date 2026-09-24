@@ -3,29 +3,22 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Strong Go backend and technical-lead alignment with REST, microservices, resilience, and production ownership; gRPC evidence is not explicit.
+Very strong fit for a senior backend Go role focused on resilient microservices, real-time user-facing systems, API ownership, testing, technical leadership, and production reliability.
 
 ## Why it matches
 
-- Go backend
-- microservices
-- reliability
-- technical leadership
-- REST APIs
+- Recent Go backend ownership in production automation and event-driven systems
+- Microservices, REST APIs, resilient delivery pipelines, observability, and reliability
+- Technical Lead background with code review, mentoring, planning, and delivery ownership
+- AWS, Kubernetes, CI/CD, monitoring, and production troubleshooting experience
+- Remote collaboration and professional English evidence
 
 ## Gaps
 
-- gRPC is not explicitly evidenced
+- gRPC is not explicitly evidenced in the candidate source records
+- Cross-selling platform domain is new
 
 ## Concerns
 
-- Business-English fluency is stated in the vacancy; the profile records English as upper-intermediate/professional with conflicting entries
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Go backend development in resilient microservices | critical / stated | strong | Experience building Go applications with a focus on resilience and uptime | Designed and owned a Go-based support automation platform | / |
-| gRPC | high / stated | unknown | gRPC-based microservice architecture |  | Verify direct gRPC delivery experience before application. / Highlight transferable API and microservice experience and verify gRPC exposure. |
-| REST API and backend testing | high / stated | strong | Solid experience with gRPC, REST API, and Backend testing | REST APIs \| System Design | / |
-| Tech Lead or Team Lead experience | meaningful / stated | strong | Experience in a Tech Lead/Team Lead role or similar positions | Technical Lead | / |
+- Clarify hands-on depth with gRPC during screening
+- Confirm availability, work authorization, and exact remote expectations

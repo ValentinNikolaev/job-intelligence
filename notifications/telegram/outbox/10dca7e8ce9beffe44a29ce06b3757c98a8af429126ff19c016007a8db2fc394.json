@@ -1,0 +1,28 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-24T19:35:14Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Таксі 994",
+      "country_codes": [],
+      "directory": "2026-09-24_184317_таксі-994_розробник-php-бек-енд_588654ef-fb41-48b5-8624-37ee96df9052",
+      "score": 78,
+      "title": "Розробник php (Бек-енд)",
+      "url": "https://jobs.dou.ua/companies/taksi-994/vacancies/294817/",
+      "vacancy_id": "588654ef-fb41-48b5-8624-37ee96df9052"
+    },
+    {
+      "company": "ZFORT Group",
+      "country_codes": [],
+      "directory": "2026-09-23_135957_zfort-group_backend-golang-developer",
+      "score": 88,
+      "title": "Backend/Golang Developer",
+      "url": "https://jobs.dou.ua/companies/zfort/vacancies/374288/",
+      "vacancy_id": "6f78cdea-8afa-4a54-afd4-9835af2e299c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "10dca7e8ce9beffe44a29ce06b3757c98a8af429126ff19c016007a8db2fc394",
+  "schema_version": 2
+}
