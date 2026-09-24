@@ -3,24 +3,23 @@
 **Score:** 84/100  
 **Recommendation:** Strong Match
 
-Job Position - PHP Backend - NEXTIP aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
+The Job Position - PHP Backend - NEXTIP role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
 
 ## Why it matches
 
-- Candidate evidence supports backend development, PHP, APIs, integrations, and production systems.
+- Senior backend engineering experience is directly relevant to the role.
+- The candidate profile documents substantial PHP, Go, and technical leadership experience.
 
 ## Gaps
 
-- Specific framework, database, language, or location details may require confirmation from the employer.
+- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
 
 ## Concerns
 
-- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
+- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Relevant backend engineering experience | critical / stated | strong | Job Position - PHP Backend - NEXTIP | Go | / |
-| Production systems and reliability | high / structural | strong | Job Position - PHP Backend - NEXTIP | Go | / |
-| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |
+| Job Position - PHP Backend - NEXTIP backend engineering scope | critical / stated | strong | Job Position - PHP Backend - NEXTIP | I have a strong track record in PHP, with 5 years of leadership experience. | / |

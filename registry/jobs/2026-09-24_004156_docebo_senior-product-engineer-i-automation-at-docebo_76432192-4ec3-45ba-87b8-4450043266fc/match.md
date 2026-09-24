@@ -1,26 +1,25 @@
 # Match Analysis
 
-**Score:** 67/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Senior Product Engineer I - Automation at Docebo aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
+The Senior Product Engineer I - Automation at Docebo role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
 
 ## Why it matches
 
-- Candidate evidence supports senior backend ownership, Go/PHP, automation, event-driven systems, and technical leadership.
+- Senior backend engineering experience is directly relevant to the role.
+- The candidate profile documents substantial PHP, Go, and technical leadership experience.
 
 ## Gaps
 
-- The posting includes product/full-stack or frontend expectations not fully evidenced in the candidate profile.
+- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
 
 ## Concerns
 
-- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
+- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Relevant backend engineering experience | critical / stated | strong | Senior Product Engineer I - Automation at Docebo | Go | / |
-| Production systems and reliability | high / structural | strong | Senior Product Engineer I - Automation at Docebo | Go | / |
-| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |
+| Senior Product Engineer I - Automation at Docebo backend engineering scope | critical / stated | partial | Senior Product Engineer I - Automation at Docebo | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
