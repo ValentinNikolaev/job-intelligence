@@ -59,6 +59,18 @@ explicit single-document request, use the full-package flow below.
    commentary, confirmation notes, placeholders, and drafting language from the final
    CV; keep those only in handoffs, `claims.yaml`, and `quality.yaml`. Never duplicate
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
+   Apply the mandatory **recent-experience editorial gate** before the CV is final:
+   - treat roles ending within the last five years as the primary employer-facing
+     narrative; give each such role at least four distinct, evidence-backed bullets
+     when the candidate source supports them, and explain any shortfall to the user
+     instead of compensating with older experience;
+   - ensure those recent roles contain at least 60% of all Experience bullets;
+   - keep roles ending more than five years ago compact, normally two or three
+     non-duplicative bullets each, unless the user asks for a different balance;
+   - count bullets by role and read the finished Experience section as a hiring
+     manager would. Reject a draft where a recent role has a single generic bullet,
+     or where older roles carry the substantive detail that should describe recent
+     work. Do this editorial review even when deterministic validation succeeds.
 7. The research role must use the vacancy posting plus at most two primary company
    sources in one pass. Exceed that budget only for a critical unresolved eligibility
    or company-identity fact and record the reason in its handoff. After all three Wave 1
