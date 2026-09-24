@@ -88,7 +88,9 @@ entries:
     sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
   review_notes: Review chronology against user-confirmed-career-clarifications.md;
     imported Present dates and differing metrics require reconciliation before use.
-  status: unverified
+  status: retracted
+  reason: Candidate directly corrected the imported 50 million ordinary-month figure
+    to about 3 million; preserve this historical source but do not use it for claims.
 - id: linkedin-simple-app
   employer: Simple App
   role: Software Developer
@@ -201,7 +203,9 @@ entries:
     sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
   review_notes: Review chronology against user-confirmed-career-clarifications.md;
     imported Present dates and differing metrics require reconciliation before use.
-  status: unverified
+  status: retracted
+  reason: Candidate directly corrected the imported 50 million ordinary-month figure
+    to about 3 million; preserve this historical source but do not use it for claims.
 - id: linkedin-aurum-software
   employer: Aurum Software
   role: Senior Software Developer
@@ -326,8 +330,9 @@ entries:
   review_notes: Only this achievement and its source role attribution are verified.
     Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
     and other source records.
-  status: verified
-  verification: *id001
+  status: cannot-confirm
+  reason: Candidate said the question about the Simple.life 30% figure was unclear;
+    await explicit clarification before using the percentage.
 - id: database-reliability
   employer: airSlate
   role: Software Developer
@@ -359,11 +364,10 @@ entries:
 
       **Software Developer**'
     sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
-  review_notes: Only this achievement and its source role attribution are verified.
-    Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
-    and other source records.
-  status: verified
-  verification: *id001
+  review_notes: Superseded by user-confirmed-career-clarifications.md; do not use.
+  status: cannot-confirm
+  reason: Candidate explicitly could not confirm this ECS-to-Kubernetes migration
+    on 2026-09-24.
 - id: email-team
   employer: PDFfiller
   role: Software Developer
@@ -395,5 +399,339 @@ entries:
   review_notes: Only this achievement and its source role attribution are verified.
     Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
     and other source records.
+  status: retracted
+  reason: Candidate directly corrected the imported 50 million ordinary-month figure
+    to about 3 million; preserve this historical source but do not use it for claims.
+- id: support-platform-linkedin
+  employer: Simple App
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: 'I design and own a support automation platform that connects Zendesk,
+      Intercom, and
+
+      internal services through a robust, scalable backend in Go. My work enables
+      the support
+
+      team to operate faster, smarter, and at scale - even during peak loads.'
+    context_quote: '### Simple App
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
   status: verified
-  verification: *id001
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: support-operations
+  employer: Simple App
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Maintain high service uptime and throughput without adding team capacity,\
+      \ enabling\n  the support org to scale under pressure.\n- Collaborate cross-functionally\
+      \ with Support Ops, Product, and AI teams to align\n  automation with measurable\
+      \ impact."
+    context_quote: '### Simple App
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: crurated-analytics
+  employer: CRURATED
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: 'I architect and lead the development of the platform''s internal event
+      analytics
+
+      infrastructure - a mission-critical system that powers product metrics, reporting,
+      and
+
+      business insights.'
+    context_quote: '### CRURATED
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: crurated-event-design
+  employer: CRURATED
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Define a robust, versioned event schema to enforce consistency across\
+      \ teams and\n  accelerate integration of new event types."
+    context_quote: '### CRURATED
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: crurated-stream-design
+  employer: CRURATED
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Build routing logic supporting multiple downstreams (e.g., Webhook,\
+      \ S3) with strong\n  delivery guarantees and backpressure handling."
+    context_quote: '### CRURATED
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: airslate-logger
+  employer: airSlate
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Developed a Laravel/Symfony-based product-wide logger package, adhering\
+      \ to\n  interservice communication standard."
+    context_quote: "### airSlate\n\n#### Technical Lead\n\nJanuary 2023 - August 2023\
+      \ (8 months)  \nKyiv, Kyiv City, Ukraine\n\n- Played a key role in Agile planning\
+      \ with Product Management and Development,\n  building feature road maps and\
+      \ supporting release plans.\n- Was responsible for delivering team assignments\
+      \ on all stages of the project from\n  draft to production release.\n- Performed\
+      \ task evaluation, planning and distribution between team members in\n  accordance\
+      \ with Planning Intervals (PI).\n- Defined and tracked key performance metrics\
+      \ for the development team, which\n  increased feature delivery rate by approx.\
+      \ 20%.\n- Conducted over 20 technical interviews for different positions within\
+      \ the company.\n\n#### Senior Software Developer\n\nFebruary 2021 - January\
+      \ 2023 (2 years)  \nKyiv, Kyiv City, Ukraine\n\n- Migrated managed services\
+      \ from ECS to Kubernetes. Prepared infrastructure for\n  launching services\
+      \ in Kubernetes (Helm charts, GitHub Actions, ArgoCD), leading to\n  30% cost\
+      \ cutting and over 20% performance boost.\n- Lowered the maximum workload on\
+      \ the main database to 65% to avoid interruptions in\n  the product's service\
+      \ during prime time, resulting in a 23% reduction in operational\n  expenses."
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Senior Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: airslate-team-lead
+  employer: airSlate
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Played a key role in Agile planning with Product Management and Development,\n\
+      \  building feature road maps and supporting release plans.\n- Was responsible\
+      \ for delivering team assignments on all stages of the project from\n  draft\
+      \ to production release.\n- Performed task evaluation, planning and distribution\
+      \ between team members in\n  accordance with Planning Intervals (PI)."
+    context_quote: '### airSlate
+
+
+      #### Technical Lead'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Technical Lead
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: email-bfcm
+  employer: PDFfiller
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '- Led the team through **BFCM** peak periods with more than **10x** traffic
+      growth.'
+    context_quote: '### PDFfiller
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: support-api-orchestration
+  employer: Simple App
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Engineer a unified API orchestration layer to streamline ticket routing,\n\
+      \  classification, and lifecycle tracking."
+    context_quote: '### Simple App
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: crurated-eventbridge
+  employer: CRURATED
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: using queues and EventBridge
+    context_quote: '### CRURATED
+
+
+      **Software Developer**'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: career-15-years
+  employer: null
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: 'Backend engineer with 15+ years of experience building and improving production
+
+      systems across **PHP** and **Go**.'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-source excerpt, employer and role; no new candidate
+      attestation.
+  review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+    confirmation before reuse.
+- id: support-confirmed-volume
+  employer: Simple App
+  source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: 'Confirmed scope for application claims: the Go support platform handled
+      at
+
+      least 20,000 tickets per ordinary month, volume grew to as much as three
+
+      times that level during the U.S. peak season, and the candidate personally
+
+      owned the platform''s operation under this load.'
+    context_quote: '## Simple.life / Simple App
+
+
+      **Role:** Software Developer'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Transcribed direct candidate confirmation from the current task and checked
+      scope.
+  review_notes: Direct candidate confirmation; no independent source for measurement
+    method.
+- id: pdffiller-user-confirmed
+  employer: PDFfiller
+  source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: 'Confirmed for application claims: at PDFfiller, the ordinary monthly volume
+
+      was about 3 million emails, with up to 10x volume during BFCM, and he led five
+
+      backend engineers.'
+    context_quote: '**PDFfiller role:** Software Developer'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Transcribed direct candidate correction in this task; measurement system
+      not supplied.
+  review_notes: Direct candidate confirmation; supersedes conflicting imported volume
+    claims.
+  role: Software Developer
+- id: hyprr-user-confirmed
+  employer: Hyprr
+  source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: 'At Hyprr, the product progressed from prototype to closed
+
+      beta in less than six months.'
+    context_quote: '**Hyprr role:** Technical Lead'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Transcribed direct candidate correction in this task; measurement system
+      not supplied.
+  review_notes: Direct candidate confirmation; supersedes conflicting imported volume
+    claims.
+  role: Technical Lead
+- id: support-user-confirmed-automation
+  employer: Simple App
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: 'Confirmed scope for application claims, as of this reply: the overall
+
+      Simple.life support platform reaches up to 86% fully automated handling.
+
+      The candidate personally implemented many, but not all, automation scenarios.
+
+      The figure comes from internal Intercom metrics and custom backend metrics
+
+      exported to Grafana.'
+    context_quote: '## Simple.life / Simple App
+
+
+      **Role:** Software Developer'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  status: verified
+  verification:
+    reviewer: Codex transcription review
+    reviewed_at: '2026-09-25'
+    method: Transcribed direct candidate clarification, including scope and measurement
+      basis.
+  review_notes: 86% is the platform-wide current figure; candidate implemented many,
+    not all, scenarios.

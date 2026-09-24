@@ -73,9 +73,9 @@ current Codex surface, tell the user and do not publish under that profile.
    version; `workbench_complete: true`; two evidence stories with `candidate_source`;
    company-motivation fact with `source_url`; and final-review values
    `claim_grounding: true` and `cross_file_consistency: true`.
-   Apply the recent-experience editorial gate in `references/prepare.md` before
-   recording that final review. A total bullet count never substitutes for a
-   role-by-role hiring-manager review.
+   Apply the recent-experience and impact/judgment editorial gates in
+   `references/prepare.md` before recording that final review. A total bullet
+   count never substitutes for a role-by-role hiring-manager review.
 7. After the selected drafts for a vacancy are complete, run
    `python run.py validate-application <job-directory-or-vacancy-id> --input
    <draft-directory> [--document <document>]` once as the prepublication check. Omit

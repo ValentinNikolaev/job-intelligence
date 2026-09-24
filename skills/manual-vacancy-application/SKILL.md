@@ -63,7 +63,10 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    requirements/risks roles in parallel when subagent slots are available. Research
    receives meta/job/company plus minimal candidate motivation hooks, not the full CV;
    CV/evidence receives the vacancy and configured candidate sources, performs no web
-   research, and includes a complete proposed CV draft in `evidence-map.md`;
+   research, and includes a complete proposed CV draft in `evidence-map.md`. Apply
+   the recent-experience and impact/judgment editorial gates from
+   `$job-intelligence-workflow`: recent roles carry the majority of substantive
+   outcome bullets and older roles remain compact;
    requirements/risks receives the vacancy and candidate evidence. Each writes only its
    exclusive handoff under `.codex-work/application/<vacancy-directory>/parts/`:
    `research.md`, `evidence-map.md`, or `requirements-risks.md`. No Wave 1 role may

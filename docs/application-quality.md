@@ -9,8 +9,10 @@ publishes local drafts.
 ## Candidate evidence bank
 
 `registry/candidate/*.md` remains immutable. `registry/evidence/achievements.yaml` is a
-source index, not another source of truth. The initial reviewed bank contains 20 extracts: nine verified and eleven unverified.
-Ambiguous imported dates and metrics remain unverified. Newly bootstrapped entries
+source index, not another source of truth. Its entries include source-reviewed
+excerpts, candidate-confirmed clarifications, and unresolved imported claims;
+use the evidence validation command for current counts. Ambiguous imported dates
+and metrics remain unverified. Newly bootstrapped entries
 always start unverified.
 A reviewer must compare the quoted source, attribution and meaning before using an
 entry. Current candidate unknowns can be listed with:
@@ -170,6 +172,24 @@ The analysis/interview minima and ceilings remain unchanged. Preserve two meanin
 letter stories, credible claims and required sections in either format. Compact is
 selected for the application channel or user preference, never an excuse for generic
 or skeletal content. Current Experience still excludes roles older than ten years.
+
+For Senior or Tech Lead positioning, the final CV audit is editorial as well as
+mechanical. Each Experience bullet should identify a supported contribution, the
+system or people affected, and a consequence. Quantified scale is useful only when
+the candidate evidence supports it. Review architecture judgment, reliability and
+operations, simplification, and influence beyond code where the source records them.
+Do not turn an unsupported trade-off or missing metric into a claim. Prefer compact
+format to padding a standard CV with duties. Group Skills by domain and review the
+rendered export for a two-page PDF limit when PDF conversion is available. The
+`cv_audit.bullet_decisions` receipt must cover every final Experience bullet with
+its exact text and a reason tied to a vacancy requirement or senior-level signal;
+the validator checks coverage, while the reviewer remains responsible for meaning.
+When an imported candidate source offers useful but unconfirmed figures, present
+them with their context for candidate selection and ask how each was measured.
+If the candidate requests clarification, ask a focused follow-up about the
+metric's scope, personal contribution, and measurement source; a question is
+not a rejection. Use only the figures the candidate confirms; retain a
+qualitative outcome when confirmation is unavailable.
 
 ## Export validation and visual review
 

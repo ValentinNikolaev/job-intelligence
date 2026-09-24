@@ -482,13 +482,14 @@ class CliTests(unittest.TestCase):
             linkedin = candidate / "linkedin-profile.md"
             cv = candidate / "backend-engineer-cv.md"
             clarification = candidate / "user-confirmed-career-clarifications.md"
-            for path in (linkedin, cv, clarification):
+            impact = candidate / "user-confirmed-impact-2026-09-25.md"
+            for path in (linkedin, cv, clarification, impact):
                 path.write_text(path.stem, encoding="utf-8")
 
             paths = _profile_paths(None, {}, root, registry_root)
 
             self.assertEqual(
-                [linkedin.resolve(), cv.resolve(), clarification.resolve()],
+                [linkedin.resolve(), cv.resolve(), clarification.resolve(), impact.resolve()],
                 paths,
             )
 

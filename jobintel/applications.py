@@ -771,6 +771,23 @@ def _validate_cv_experience_bullets(markdown: str, *, minimum: int = 10) -> None
         )
 
 
+def _validate_cv_audit_bullet_coverage(markdown: str, decisions: list[Mapping[str, Any]]) -> None:
+    section = _markdown_section(markdown, "Experience")
+    final_bullets = {
+        re.sub(r"\s+", " ", re.sub(r"^\s*[-*]\s+", "", line).strip())
+        for line in section.splitlines()
+        if re.match(r"^\s*[-*]\s+\S", line)
+        and not re.match(r"^\s*[-*]\s+(?:\*\*)?Technologies", line, re.IGNORECASE)
+    }
+    reviewed = {
+        re.sub(r"\s+", " ", item["text"].strip())
+        for item in decisions
+        if item["decision"] in {"keep", "rewrite"}
+    }
+    if not final_bullets.issubset(reviewed):
+        raise ApplicationError("cv_audit bullet_decisions must cover every final Experience bullet")
+
+
 def _validate_cover_letter_paragraphs(markdown: str, *, minimum: int = 4) -> None:
     body: list[str] = []
     for block in re.split(r"\n\s*\n", markdown.strip()):
@@ -998,6 +1015,7 @@ def _validate_v2_grounding(
             for item in decisions
         ):
             raise ApplicationError("cv_audit requires reasoned bullet_decisions")
+        _validate_cv_audit_bullet_coverage(package["cv_markdown"], decisions)
         report["cv_audit"] = dict(audit)
     from .requirements import validate_requirements
 

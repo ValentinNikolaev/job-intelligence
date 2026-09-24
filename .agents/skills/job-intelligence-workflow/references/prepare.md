@@ -71,6 +71,30 @@ explicit single-document request, use the full-package flow below.
      manager would. Reject a draft where a recent role has a single generic bullet,
      or where older roles carry the substantive detail that should describe recent
      work. Do this editorial review even when deterministic validation succeeds.
+   For Senior or Tech Lead positioning, also apply the **impact and judgment gate**:
+   - lead each Experience bullet with a supported result or consequential change;
+     name the candidate's contribution, the system or people affected, and the
+     outcome. Use scale or a numeric result only when the source supports it;
+     otherwise state the concrete operational or delivery consequence;
+   - prefer evidence of architecture decisions and their reason, reliability,
+     observability, migrations, simplification, and cross-team influence over a
+     list of technologies or planning duties. Never manufacture a trade-off,
+     incident, cost saving, team reach, or learning story to satisfy this gate;
+   - omit generic duties and repeated claims. If ten distinct outcome bullets
+     cannot be grounded, choose `document_format: compact` when the user's
+     requested format permits it, rather than padding the standard CV;
+   - group Skills by domain, retain only defensible skills relevant to this
+     vacancy, and check a rendered PDF against a two-page limit when PDF export
+     is available. Keep the optional projects section only if it adds distinct,
+     source-backed depth within that limit.
+   Before finalizing, surface any additional relevant numbers found in candidate
+   sources that have not been candidate-confirmed. Ask the candidate to select
+   which figures they can substantiate and how they were measured. If the
+   candidate says a question is unclear, explain the metric, scope, personal
+   contribution, and measurement source in a focused follow-up; do not treat
+   the request for clarification as a rejection. Keep genuinely unanswered or
+   uncertain numbers out of the CV; an unattended scheduled task
+   records the question and proceeds with supported qualitative outcomes.
 7. The research role must use the vacancy posting plus at most two primary company
    sources in one pass. Exceed that budget only for a critical unresolved eligibility
    or company-identity fact and record the reason in its handoff. After all three Wave 1

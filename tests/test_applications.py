@@ -20,6 +20,7 @@ from jobintel.applications import (
     CodexApplicationDraftClient,
     QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
+    _validate_cv_audit_bullet_coverage,
     _validate_draft_quality,
     _publish_staged_package,
     resolve_job_directories,
@@ -198,6 +199,29 @@ class ApplicationTests(unittest.TestCase):
         (self.directory / "company.md").write_text(
             "# Example\n\nA product company.\n", encoding="utf-8"
         )
+
+    def test_cv_audit_covers_each_final_experience_bullet(self) -> None:
+        cv = (
+            "## Experience\n\n### Example — Backend Engineer\n"
+            "- Reduced peak database load by moving reports to a read replica.\n"
+            "- Shortened onboarding by documenting the deployment process.\n"
+            "Technologies: Go, PostgreSQL\n\n## Education\n"
+        )
+        decisions = [
+            {
+                "text": "Reduced peak database load by moving reports to a read replica.",
+                "decision": "keep",
+                "reason": "Relevant production performance outcome.",
+            }
+        ]
+        with self.assertRaisesRegex(ApplicationError, "cover every final Experience bullet"):
+            _validate_cv_audit_bullet_coverage(cv, decisions)
+        decisions.append({
+            "text": "Shortened onboarding by documenting the deployment process.",
+            "decision": "keep",
+            "reason": "Shows team-level influence.",
+        })
+        _validate_cv_audit_bullet_coverage(cv, decisions)
 
     def v2_letter_draft(self):
         from jobintel.evidence import bootstrap_evidence_bank

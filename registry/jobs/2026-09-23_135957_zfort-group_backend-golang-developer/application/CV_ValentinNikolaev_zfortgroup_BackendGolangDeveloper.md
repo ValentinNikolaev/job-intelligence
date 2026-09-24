@@ -1,62 +1,72 @@
 # Valentin Nikolaev
-Backend / Golang Developer
+Backend/Golang Developer
 
-Rome, Italy | +39 351 370 1194 | valeinikolaev@gmail.com  
-LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/ValentinNikolaev
+Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194
+
+LinkedIn: https://linkedin.com/in/valentinnikolaev
+
+GitHub: https://github.com/ValentinNikolaev
 
 ## Summary
 
-Backend engineer with 15+ years of experience delivering Go and PHP services, integrations, and high-load communication systems. Over the past five years I have worked on support automation, database stability, service observability, and backend delivery from planning through production. I combine hands-on development with technical leadership, focusing on clear service boundaries, reliable operations, and changes that solve a measured product or support problem. Earlier work adds experience leading an email-platform team through high-demand periods and taking a product from prototype to closed beta.
+Backend engineer with 15+ years of experience building production systems across Go and PHP. Recent work includes operating a Go support platform at 20,000+ tickets in an ordinary month and up to three times that volume in U.S. peak season. Brings API orchestration, event-driven platform design, database-stability work, technical leadership from product delivery through production, standardized logging, and communication-platform delivery through seasonal peaks.
 
 ## Skills
 
-Go; PHP; REST APIs; microservices; backend integrations; event-driven systems; MySQL; PostgreSQL; RabbitMQ; AWS; Laravel; Symfony; GitHub Actions; monitoring and logging; system design; performance optimization; CI/CD.
+**Backend & APIs:** Go, PHP, REST APIs, microservices, system design
+
+**Data & messaging:** PostgreSQL, MySQL, Elasticsearch, RabbitMQ, event-driven systems
+
+**Cloud & delivery:** AWS, GitHub Actions
+
+**Operations:** Prometheus, monitoring and logging, performance optimization, production reliability
 
 ## Experience
 
-### Simple.life — Software Developer | November 2023–July 2026
+### Simple.life (Simple App) — Software Developer
+November 2023 – July 2026
 
-- Designed and owned a Go-based support-automation platform connecting customer-support tools and internal services.
-- Engineered an API orchestration layer for ticket routing, classification, and lifecycle tracking across the support workflow.
-- Integrated auto-triage flows that automated or deflected up to 30% of inbound tickets.
-- Contributed to an LLM-assisted support agent for email and multilingual workflows, expanding automation coverage and enabling new support scenarios with less engineering involvement.
-- Worked with Support Operations, Product, and AI teams to align automation changes with measurable support outcomes.
+Technologies: Go, Zendesk, Intercom, REST APIs, monitoring
 
-Technologies: Go, backend integrations, REST APIs, monitoring.
+- Owned operation of a Go support platform handling 20,000+ tickets in an ordinary month and up to three times that volume during U.S. peak season.
+- Built a unified API orchestration layer that connected Zendesk, Intercom, and internal services for ticket routing, classification, and lifecycle tracking.
+- Contributed multiple automation scenarios to a platform that now handles up to 86% through full automation, measured via Intercom internal and backend Grafana metrics.
 
-### airSlate — Software Developer / Technical Lead | February 2021–August 2023
+### CRURATED — PHP Software Developer, part-time subcontract / consulting engagement
+August 2024 – January 2026
 
-- Reduced peak load on the main database by redistributing workload, improving service stability during high-traffic periods.
-- Developed a Laravel/Symfony product-wide logger package aligned with an interservice-communication standard.
-- Delivered team assignments from initial draft through production release, coordinating scope, planning, and delivery across the project lifecycle.
-- Contributed to Agile planning, release roadmaps, and task distribution across planning intervals.
-- Investigated production issues through logs, monitoring, and SRE dashboards, then delivered fixes and operational improvements.
+Technologies: PHP, AWS EventBridge, queues, Webhook, S3
 
-Technologies: PHP, Laravel, Symfony, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, CI/CD.
+- Architected and led development of internal event analytics infrastructure that supported product metrics, reporting, and business insights.
+- Defined a versioned event schema and routing to Webhook and S3, maintaining cross-team consistency with delivery guarantees and backpressure handling.
 
-### Hyprr — Technical Lead | November 2019–January 2021
+### airSlate — Technical Lead / Senior Software Developer
+February 2021 – August 2023
 
-- Helped bring a creator-focused digital product from prototype to closed beta in under six months.
-- Defined the technology roadmap with the CTO and led backend development across microservice and serverless architecture decisions.
-- Influenced project planning, CI/CD, reliability, and serviceability decisions as the product moved toward closed beta.
+Technologies: PHP, Laravel, Symfony, MySQL, Prometheus, REST APIs
 
-Technologies: PHP, Go, Laravel, MySQL, AWS, microservices, REST APIs, CI/CD.
+- Reduced peak load on the main database by removing bottlenecks and redistributing work, improving service stability during high-traffic periods.
+- Developed a Laravel/Symfony product-wide logger package aligned with the interservice communication standard.
 
-### PDFfiller — Software Developer | October 2016–November 2019
+### Hyprr — Technical Lead
+November 2019 – January 2021
 
-- Led a team of five backend engineers developing a transactional-email service.
-- Scaled the service to around 50 million emails per month and built deep expertise in DNS, DKIM, SPF, DMARC, and feedback loops.
-- Led the team through Black Friday/Cyber Monday peak periods, when customer traffic grew more than tenfold.
+Technologies: PHP, Go, AWS, microservices, CI/CD
 
-Technologies: PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, email infrastructure, REST APIs.
+- Brought a Web3 social and NFT platform from prototype to closed beta in less than six months, guiding its technical roadmap with the CTO.
+
+### PDFfiller — Software Developer
+October 2016 – November 2019
+
+Technologies: PHP, Laravel, MySQL, RabbitMQ, AWS, email infrastructure
+
+- Led five backend engineers developing a transactional email service that handled about 3 million emails in an ordinary month.
+- Led the transactional-email team through BFCM peak periods at up to ten times ordinary-month volume.
 
 ## Education
 
-Master's degree in Computer Science, National Technical University, Kharkiv, Ukraine | 2003–2008
+Master of Computer Applications, National Technical University "Kharkiv Polytechnic Institute", 2003–2008
 
 ## Languages
 
-Ukrainian: native | English: upper-intermediate
-
-
-
+Ukrainian — Native | English — Upper-intermediate

@@ -1219,7 +1219,6 @@ def _profile_paths(
         paths = [Path(value.strip()) for value in configured.split(os.pathsep) if value.strip()]
         return [(path if path.is_absolute() else project_root / path).resolve() for path in paths]
     candidate_dir = registry_dir / "candidate"
-    clarification = candidate_dir / "user-confirmed-career-clarifications.md"
     compact = candidate_dir / "match-profile.md"
     if op.exists(compact):
         paths = [compact.resolve()]
@@ -1228,8 +1227,7 @@ def _profile_paths(
             (candidate_dir / "linkedin-profile.md").resolve(),
             (candidate_dir / "backend-engineer-cv.md").resolve(),
         ]
-    if op.exists(clarification):
-        paths.append(clarification.resolve())
+    paths.extend(path.resolve() for path in sorted(candidate_dir.glob("user-confirmed-*.md")))
     return paths
 
 
