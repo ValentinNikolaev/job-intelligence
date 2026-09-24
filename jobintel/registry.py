@@ -16,6 +16,7 @@ from . import storage_bridge as op
 
 from .models import VACANCY_STATUSES, NormalizedJob, UpsertResult
 from .normalization import slug, vacancy_fingerprint
+from .storage_contract import SourceIdentityConflict
 
 
 SCHEMA_VERSION = 2
@@ -74,8 +75,16 @@ class Registry:
         store = op.get_store(self.root)
         if store is not None:
             source = job.source.strip().lower()
-            stored_exact = store.resolve_source(source, job.source_job_id)
+            try:
+                stored_exact = store.resolve_source(source, job.source_job_id)
+            except SourceIdentityConflict:
+                rejected_owner = store.rejected_source_owner(source, job.source_job_id)
+                if rejected_owner is None:
+                    raise
+                return UpsertResult("rejected", str(rejected_owner["_id"]), str(rejected_owner["directory"]))
             if stored_exact is not None:
+                if stored_exact["meta"].get("status") == "rejected":
+                    return UpsertResult("rejected", str(stored_exact["_id"]), str(stored_exact["directory"]))
                 exact_entry = {
                     "meta": stored_exact["meta"],
                     "path": self.jobs_dir / stored_exact["directory"],
@@ -98,8 +107,16 @@ class Registry:
         fingerprint = vacancy_fingerprint(job.company, job.title, job.location)
         store = op.get_store(self.root)
         if store is not None:
-            stored_exact = store.resolve_source(source, job.source_job_id)
+            try:
+                stored_exact = store.resolve_source(source, job.source_job_id)
+            except SourceIdentityConflict:
+                rejected_owner = store.rejected_source_owner(source, job.source_job_id)
+                if rejected_owner is None:
+                    raise
+                return UpsertResult("rejected", str(rejected_owner["_id"]), str(rejected_owner["directory"]))
             if stored_exact is not None:
+                if stored_exact["meta"].get("status") == "rejected":
+                    return UpsertResult("rejected", str(stored_exact["_id"]), str(stored_exact["directory"]))
                 exact_entry = {
                     "meta": stored_exact["meta"],
                     "path": self.jobs_dir / stored_exact["directory"],

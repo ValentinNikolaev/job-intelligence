@@ -632,6 +632,18 @@ class MongoStore:
             )
         return vacancy
 
+    def rejected_source_owner(self, source: str, source_job_id: str) -> dict[str, Any] | None:
+        identity = self.get(
+            "source_identities", self._source_identity_id(source.strip().casefold(), source_job_id.strip())
+        )
+        if identity is None:
+            return None
+        for vacancy_id in sorted({str(value) for value in identity.get("vacancy_ids", []) if value}):
+            vacancy = self.get("vacancies", vacancy_id)
+            if vacancy is not None and str(vacancy.get("meta", {}).get("status", "")).casefold() == "rejected":
+                return vacancy
+        return None
+
     def _active_vacancy_ids(self, vacancy_ids: Sequence[str]) -> list[str]:
         if not vacancy_ids:
             return []

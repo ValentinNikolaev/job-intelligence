@@ -21,6 +21,30 @@ from jobintel.storage_contract import (
 
 
 class MongoStoreLeaseUnitTests(unittest.TestCase):
+    def test_rejected_source_owner_survives_archival_and_parallel_vacancy(self) -> None:
+        client = MagicMock()
+        database = MagicMock()
+        client.__getitem__.return_value = database
+        store = MongoStore("mongodb://example", "jobintel_test", client=client)
+        rows = {
+            ("source_identities", MongoStore._source_identity_id("custom", "reused-url")): {
+                "vacancy_ids": ["old-rejected", "new-found"], "ambiguous": True,
+            },
+            ("vacancies", "old-rejected"): {
+                "_id": "old-rejected", "directory": "old", "archived": True,
+                "meta": {"status": "rejected"},
+            },
+            ("vacancies", "new-found"): {
+                "_id": "new-found", "directory": "new", "archived": False,
+                "meta": {"status": "found"},
+            },
+        }
+        store.get = MagicMock(side_effect=lambda collection, key: rows.get((collection, key)))
+
+        owner = store.rejected_source_owner("custom", "reused-url")
+
+        self.assertEqual("old-rejected", owner["_id"])
+
     def test_ambiguous_identity_with_one_active_owner_is_resolved(self) -> None:
         client = MagicMock()
         database = MagicMock()

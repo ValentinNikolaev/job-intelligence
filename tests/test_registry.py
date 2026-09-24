@@ -4,12 +4,13 @@ import tempfile
 import unittest
 from datetime import datetime, timezone
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 import yaml
 
 from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
+from jobintel.storage_contract import SourceIdentityConflict
 
 
 def make_job(**overrides: object) -> NormalizedJob:
@@ -49,6 +50,34 @@ class RegistryTests(unittest.TestCase):
     def _meta(self) -> dict[str, object]:
         path = self._directories()[0] / "meta.yaml"
         return yaml.safe_load(path.read_text(encoding="utf-8"))
+
+    def test_rejected_source_is_skipped_without_updating_registry(self) -> None:
+        store = MagicMock()
+        store.resolve_source.side_effect = SourceIdentityConflict(
+            "custom", "reused-url", "old-rejected,new-found", "lookup"
+        )
+        store.rejected_source_owner.return_value = {
+            "_id": "old-rejected", "directory": "old-vacancy", "meta": {"status": "rejected"},
+        }
+        with patch("jobintel.registry.op.get_store", return_value=store):
+            result = self.registry.upsert(make_job(source="custom", source_job_id="reused-url"))
+
+        self.assertEqual(("rejected", "old-rejected", "old-vacancy"),
+                         (result.status, result.vacancy_id, result.directory))
+        store.resolve_source.assert_called_once_with("custom", "reused-url")
+        store.save_vacancy.assert_not_called()
+        self.assertEqual([], self._directories())
+
+    def test_ambiguous_source_without_rejected_owner_still_fails(self) -> None:
+        store = MagicMock()
+        store.resolve_source.side_effect = SourceIdentityConflict(
+            "custom", "reused-url", "first,second", "lookup"
+        )
+        store.rejected_source_owner.return_value = None
+        with patch("jobintel.registry.op.get_store", return_value=store):
+            with self.assertRaises(SourceIdentityConflict):
+                self.registry.upsert(make_job(source="custom", source_job_id="reused-url"))
+        store.save_vacancy.assert_not_called()
 
     def test_repeated_source_record_is_byte_for_byte_unchanged(self) -> None:
         first = self.registry.upsert(make_job())

@@ -102,6 +102,10 @@ class OperationalStore(Protocol):
         self, source: str, source_job_id: str
     ) -> dict[str, Any] | None: ...
 
+    def rejected_source_owner(
+        self, source: str, source_job_id: str
+    ) -> dict[str, Any] | None: ...
+
     def list_vacancies(
         self, *, scope: str = "jobs", include_archived: bool = False
     ) -> list[dict[str, Any]]: ...
