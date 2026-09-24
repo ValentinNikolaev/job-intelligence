@@ -17,8 +17,10 @@ Go; PHP; REST APIs; microservices; backend integrations; event-driven systems; M
 ### Simple.life — Software Developer | November 2023–July 2026
 
 - Designed and owned a Go-based support-automation platform connecting customer-support tools and internal services.
+- Engineered an API orchestration layer for ticket routing, classification, and lifecycle tracking across the support workflow.
 - Integrated auto-triage flows that automated or deflected up to 30% of inbound tickets.
 - Contributed to an LLM-assisted support agent for email and multilingual workflows, expanding automation coverage and enabling new support scenarios with less engineering involvement.
+- Worked with Support Operations, Product, and AI teams to align automation changes with measurable support outcomes.
 
 Technologies: Go, backend integrations, REST APIs, monitoring.
 
@@ -27,6 +29,8 @@ Technologies: Go, backend integrations, REST APIs, monitoring.
 - Reduced peak load on the main database by redistributing workload, improving service stability during high-traffic periods.
 - Developed a Laravel/Symfony product-wide logger package aligned with an interservice-communication standard.
 - Delivered team assignments from initial draft through production release, coordinating scope, planning, and delivery across the project lifecycle.
+- Contributed to Agile planning, release roadmaps, and task distribution across planning intervals.
+- Investigated production issues through logs, monitoring, and SRE dashboards, then delivered fixes and operational improvements.
 
 Technologies: PHP, Laravel, Symfony, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, CI/CD.
 
@@ -53,5 +57,6 @@ Master's degree in Computer Science, National Technical University, Kharkiv, Ukr
 ## Languages
 
 Ukrainian: native | English: upper-intermediate
+
 
 
