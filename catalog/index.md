@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 66
+Total vacancies: 70
 
-- Found: 49
+- Found: 53
 - Applied: 16
 - Interview: 1
 
@@ -12,6 +12,10 @@ Total vacancies: 66
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-24 | [Urban Sports Club](../registry/jobs/2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-golang_74726102-1f01-40b4-a27a-44f6ff26b898/) | [Senior Backend Engineer (all genders) - Golang](../registry/jobs/2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-golang_74726102-1f01-40b4-a27a-44f6ff26b898/job.md) | Madrid | Adzuna | Found | 2026-09-24 | [Adzuna](https://www.adzuna.es/details/5896082598?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-24 | [InShared Nederland B.V.](../registry/jobs/2026-09-24_062746_inshared-nederland-b-v_senior-backend-developer-php-sql_71c04261-321d-45eb-94eb-bac8ed2bcd72/) | [Senior Backend Developer (PHP & SQL)](../registry/jobs/2026-09-24_062746_inshared-nederland-b-v_senior-backend-developer-php-sql_71c04261-321d-45eb-94eb-bac8ed2bcd72/job.md) | Leusderkwartier, Amersfoort | Adzuna | Found | 2026-09-24 | [Adzuna](https://www.adzuna.nl/details/5896411767?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-24 | [Urban Sports Club](../registry/jobs/2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-golang_6fef5564-711f-45bf-a09f-eca241e70781/) | [Senior Backend Engineer (all genders) - Golang](../registry/jobs/2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-golang_6fef5564-711f-45bf-a09f-eca241e70781/job.md) | Valencia | Adzuna | Found | 2026-09-24 | [Adzuna](https://www.adzuna.es/details/5896099153?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
+| 2026-09-24 | [Urban Sports Club](../registry/jobs/2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-php_0519f7c9-a00e-4319-b77e-9b3a4f8939d0/) | [Senior Backend Engineer (all genders) - PHP](../registry/jobs/2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-php_0519f7c9-a00e-4319-b77e-9b3a4f8939d0/job.md) | Valencia | Adzuna | Found | 2026-09-24 | [Adzuna](https://www.adzuna.es/details/5896098725?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-24 | [Docebo](../registry/jobs/2026-09-24_004156_docebo_cloud-engineer-ii-at-docebo_ff00d0cf-38fc-4f9e-a44e-7e0d880132b5/) | [Cloud Engineer II at Docebo](../registry/jobs/2026-09-24_004156_docebo_cloud-engineer-ii-at-docebo_ff00d0cf-38fc-4f9e-a44e-7e0d880132b5/job.md) | — | Custom | Found | 2026-09-24 | [Custom](https://alion.io/job/docebo-senior-cloud-engineer-ii) | — | — | — | — | — |
 | 2026-09-24 | [Docebo](../registry/jobs/2026-09-24_004156_docebo_data-engineer-i-at-docebo_bce447fb-c752-4b1f-bc35-7c61f09d4cfa/) | [Data Engineer I at Docebo](../registry/jobs/2026-09-24_004156_docebo_data-engineer-i-at-docebo_bce447fb-c752-4b1f-bc35-7c61f09d4cfa/job.md) | — | Custom | Found | 2026-09-24 | [Custom](https://alion.io/job/docebo-data-engineer-i) | — | — | — | — | — |
 | 2026-09-24 | [Docebo](../registry/jobs/2026-09-24_004156_docebo_senior-product-engineer-i-automation-at-docebo_76432192-4ec3-45ba-87b8-4450043266fc/) | [Senior Product Engineer I - Automation at Docebo](../registry/jobs/2026-09-24_004156_docebo_senior-product-engineer-i-automation-at-docebo_76432192-4ec3-45ba-87b8-4450043266fc/job.md) | — | Custom | Found | 2026-09-24 | [Custom](https://alion.io/job/docebo-senior-product-engineer-i-automation) | — | — | — | — | — |
