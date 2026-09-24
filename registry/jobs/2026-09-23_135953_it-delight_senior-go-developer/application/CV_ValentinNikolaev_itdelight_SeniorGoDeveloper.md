@@ -6,45 +6,43 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/
 
 ## Summary
 
-Backend engineer with more than 15 years of experience building reliable production systems across Go and PHP. Recent work includes auto-triage flows automating or deflecting up to 30% of inbound tickets and database work improving service stability during high-traffic periods. My experience spans REST APIs, microservice and serverless architecture, technical leadership, transactional email, and platform delivery from prototype through closed beta. I combine hands-on backend delivery with platform planning, focusing on maintainable services, pragmatic integrations, and operationally practical architecture for products. I bring experience across support automation, communication systems, product delivery, backend reliability, and technical decision-making with delivery stakeholders. I prefer measurable outcomes and operational feedback under changing production constraints.
+Backend engineer with 15+ years of experience delivering Go and PHP services, integrations, and high-load communication systems. Over the past five years I have worked on support automation, database stability, service observability, and backend delivery from planning through production. I combine hands-on development with technical leadership, focusing on clear service boundaries, reliable operations, and changes that solve a measured product or support problem. Earlier work adds experience leading an email-platform team through high-demand periods and taking a product from prototype to closed beta.
 
 ## Skills
 
-Go; PHP; REST APIs; microservices; backend integrations; event-driven systems; MySQL; PostgreSQL; RabbitMQ; AWS; GitHub Actions; Laravel; monitoring, logging, and observability.
-
-## Engineering Focus
-
-Production backend platforms; customer-operations automation; transactional email; service integrations; database stability; high-load systems; microservice design; serverless architecture; CI/CD; delivery planning; technology roadmaps; reliability and serviceability; performance optimization; observability; messaging systems; REST; service ownership; operational troubleshooting; pragmatic system design.
+Go; PHP; REST APIs; microservices; backend integrations; event-driven systems; MySQL; PostgreSQL; RabbitMQ; AWS; Laravel; Symfony; GitHub Actions; monitoring and logging; system design; performance optimization; CI/CD.
 
 ## Experience
 
 ### Simple.life — Software Developer | November 2023–July 2026
 
-- Integrated auto-triage into the support workflow, automating or deflecting up to 30% of inbound tickets.
+- Designed and owned a Go-based support-automation platform connecting customer-support tools and internal services.
+- Integrated auto-triage flows that automated or deflected up to 30% of inbound tickets.
+- Contributed to an LLM-assisted support agent for email and multilingual workflows, expanding automation coverage and enabling new support scenarios with less engineering involvement.
 
-Technologies: Go, Zendesk, Intercom, REST APIs, monitoring.
+Technologies: Go, backend integrations, REST APIs, monitoring.
 
-### airSlate — Software Developer | February 2021–August 2023
+### airSlate — Software Developer / Technical Lead | February 2021–August 2023
 
-- Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods.
+- Reduced peak load on the main database by redistributing workload, improving service stability during high-traffic periods.
+- Developed a Laravel/Symfony product-wide logger package aligned with an interservice-communication standard.
+- Delivered team assignments from initial draft through production release, coordinating scope, planning, and delivery across the project lifecycle.
 
-Technologies: PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, CI/CD.
+Technologies: PHP, Laravel, Symfony, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, CI/CD.
 
 ### Hyprr — Technical Lead | November 2019–January 2021
 
-- Helped bring a product from prototype to closed beta in under six months.
-- Defined the technology roadmap with the CTO.
-- Helped establish the core technology stack for product delivery.
-- Led backend development for platform work involving Ethereum-based digital assets.
-- Worked on the platform's Ethereum-based digital asset components.
-- Contributed to planning, microservice and serverless architecture, CI/CD, and reliability and serviceability decisions.
+- Helped bring a creator-focused digital product from prototype to closed beta in under six months.
+- Defined the technology roadmap with the CTO and led backend development across microservice and serverless architecture decisions.
+- Influenced project planning, CI/CD, reliability, and serviceability decisions as the product moved toward closed beta.
 
 Technologies: PHP, Go, Laravel, MySQL, AWS, microservices, REST APIs, CI/CD.
 
 ### PDFfiller — Software Developer | October 2016–November 2019
 
-- Led five backend engineers developing a transactional email service.
-- Scaled the service to around 50 million emails per month.
+- Led a team of five backend engineers developing a transactional-email service.
+- Scaled the service to around 50 million emails per month and built deep expertise in DNS, DKIM, SPF, DMARC, and feedback loops.
+- Led the team through Black Friday/Cyber Monday peak periods, when customer traffic grew more than tenfold.
 
 Technologies: PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, email infrastructure, REST APIs.
 
@@ -55,3 +53,5 @@ Master's degree in Computer Science, National Technical University, Kharkiv, Ukr
 ## Languages
 
 Ukrainian: native | English: upper-intermediate
+
+
