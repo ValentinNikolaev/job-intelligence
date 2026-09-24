@@ -1,23 +1,26 @@
 # Match Analysis
 
 **Score:** 78/100  
-**Recommendation:** Strong Match
+**Recommendation:** Match
 
-Strong fit for a PHP backend role maintaining and extending APIs, web systems, support chatbots, and payment-related integrations.
+Розробник php (Бек-енд) aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- Extensive PHP backend experience with Laravel and Symfony
-- API, SQL, integrations, payment gateways, and production troubleshooting experience
-- Backend ownership across messaging, automation, reliability, and performance work
-- Relevant experience with customer-facing and operational systems
+- Candidate evidence supports backend development, PHP, APIs, integrations, and production systems.
 
 ## Gaps
 
-- Google Pay, push notifications, and route-distance calculations are not explicitly evidenced
-- The posting provides limited detail on framework, database, and team expectations
+- Specific framework, database, language, or location details may require confirmation from the employer.
 
 ## Concerns
 
-- Confirm hands-on Google Pay and mobile push-notification integration experience
-- Confirm Ukrainian-language and location/remote working expectations
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Relevant backend engineering experience | critical / stated | strong | Розробник php (Бек-енд) | Go | / |
+| Production systems and reliability | high / structural | strong | Розробник php (Бек-енд) | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

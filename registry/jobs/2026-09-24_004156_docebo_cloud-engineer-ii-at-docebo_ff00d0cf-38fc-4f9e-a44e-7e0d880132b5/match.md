@@ -1,29 +1,26 @@
 # Match Analysis
 
-**Score:** 68/100  
-**Recommendation:** Match
+**Score:** 58/100  
+**Recommendation:** Possible Match
 
-Good AWS, Kubernetes, CI/CD, observability, reliability, and automation background; Python, Terraform, Datadog, and FedRAMP are material gaps.
+Cloud Engineer II at Docebo aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- AWS and Kubernetes infrastructure
-- GitHub Actions, ArgoCD, Helm, monitoring, and incident troubleshooting
+- Candidate evidence includes AWS, Kubernetes, Helm, ArgoCD, GitHub Actions, and production troubleshooting.
 
 ## Gaps
 
-- Python, Terraform/CDK, Datadog, and FedRAMP are not explicit
+- The supplied posting emphasizes Python, while the candidate profile foregrounds Go and PHP.
 
 ## Concerns
 
-- Infrastructure-heavy scope and Milan hybrid attendance need confirmation
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| AWS production services | critical / stated | partial | EC2, ECS, EKS, VPC, S3, and RDS | AWS | Complete service set is not evidenced / Verify service-by-service experience |
-| Cloud infrastructure | critical / stated | strong | cloud, DevOps, or infrastructure engineering experience | AWS | / |
-| Infrastructure as code | high / stated | unknown | Terraform, CloudFormation, or CDK |  | Named IaC tools are not explicit / Confirm IaC ownership |
-| Milan hybrid attendance | high / stated | unknown | 3 days a week in the office | Rome, Italy | Location feasibility is unverified / Clarify attendance |
-| CI/CD | high / stated | strong | high-performing CI/CD pipelines | GitHub Actions | / |
+| Relevant backend engineering experience | critical / stated | strong | Cloud Engineer II at Docebo | Go | / |
+| Production systems and reliability | high / structural | strong | Cloud Engineer II at Docebo | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

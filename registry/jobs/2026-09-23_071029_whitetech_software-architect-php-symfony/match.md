@@ -1,26 +1,26 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-Strong PHP/Symfony, fintech-related, backend architecture, scalability, and technical-leadership alignment; direct evidence for every fintech architecture requirement is not available.
+Software Architect (PHP/Symfony) aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- I have a strong track record in PHP, with 5 years of leadership experience.
-- Developed a Laravel/Symfony-based product-wide logger package, adhering to interservice communication standard.
-- Migrated managed services from ECS to Kubernetes. Prepared infrastructure for launching services in Kubernetes (Helm charts, GitHub Actions, ArgoCD), leading to 30% cost cutting and over 20% performance boost.
+- Candidate evidence supports architecture, system design, scalability, event-driven systems, and technical leadership.
 
 ## Gaps
 
-- Specific fintech platform architecture scope and some stated architecture-governance details are not confirmed.
+- Some role-specific domain or framework details are not explicitly evidenced.
 
 ## Concerns
 
-- Role scope and location/remote terms require confirmation.
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP/Symfony architecture | critical / stated | strong | Software Architect (PHP/Symfony) | Developed a Laravel/Symfony-based product-wide logger package, adhering to interservice communication standard. | / |
+| Relevant backend engineering experience | critical / stated | strong | Software Architect (PHP/Symfony) | Go | / |
+| Production systems and reliability | high / structural | strong | Software Architect (PHP/Symfony) | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

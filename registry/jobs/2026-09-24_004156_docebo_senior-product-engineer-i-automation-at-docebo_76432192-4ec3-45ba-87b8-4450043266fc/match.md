@@ -1,31 +1,26 @@
 # Match Analysis
 
-**Score:** 86/100  
-**Recommendation:** Strong Match
+**Score:** 67/100  
+**Recommendation:** Match
 
-Excellent Go/PHP backend, automation, AWS, Kubernetes, scalability, and technical-leadership fit; Toronto hybrid attendance is the main uncertainty.
+Senior Product Engineer I - Automation at Docebo aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- Go and PHP backend depth
-- Support automation and resilient message pipelines
-- Technical leadership and architecture
+- Candidate evidence supports senior backend ownership, Go/PHP, automation, event-driven systems, and technical leadership.
 
 ## Gaps
 
-- DynamoDB and batch-processing depth are not explicit
-- Toronto office days and work authorization are unknown
+- The posting includes product/full-stack or frontend expectations not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Remote/hybrid location may require relocation or Canadian work authorization
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go and PHP backend | critical / stated | partial | Go and PHP | Go | Batch-processing depth is not explicit / Confirm relevant batch workloads |
-| Scalable distributed systems | critical / stated | strong | scalable microservices, distributed systems | Microservices | / |
-| Toronto hybrid attendance | high / stated | unknown | 3 days a week in the office | Rome, Italy | Relocation and work authorization are unverified / Clarify location and eligibility |
-| AWS and Kubernetes | high / stated | strong | AWS, Kubernetes | AWS | / |
-| Automation domain | high / stated | strong | enterprise automation platform | support automation platform | / |
+| Relevant backend engineering experience | critical / stated | strong | Senior Product Engineer I - Automation at Docebo | Go | / |
+| Production systems and reliability | high / structural | strong | Senior Product Engineer I - Automation at Docebo | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

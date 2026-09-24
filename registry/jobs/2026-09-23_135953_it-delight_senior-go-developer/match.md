@@ -1,35 +1,26 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Strong Go, Kubernetes, ArgoCD, REST, and distributed-systems fit; PostgreSQL is supported, while Kafka, gRPC, mTLS, and the Russian working language need verification.
+Senior Go Developer aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- Go
-- microservices
-- PostgreSQL
-- Kubernetes
-- ArgoCD
+- Candidate evidence directly supports Go backend systems, microservices, reliability, and production operations.
 
 ## Gaps
 
-- Kafka
-- gRPC
-- mTLS
-- and core-banking integrations are not explicit
+- Some named integration technologies and domain-specific requirements are not explicitly evidenced.
 
 ## Concerns
 
-- Working language is Russian
-- which is supported by the profile but should be confirmed for current fluency
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go microservice development | critical / stated | strong | Go, microservice architecture | Designed and owned a Go-based support automation platform | / |
-| Kafka, gRPC and mTLS | high / stated | unknown | PostgreSQL, Kafka |  | These named technologies are not explicit in the candidate profile. / Verify before applying and position proven event-driven/API work accurately. |
-| Kubernetes and ArgoCD | high / stated | strong | Kubernetes and ArgoCD at a confident operational level | ArgoCD | / |
-| Russian working language | meaningful / stated | strong | working language | Russian - Native or Bilingual | / |
+| Relevant backend engineering experience | critical / stated | strong | Senior Go Developer | Go | / |
+| Production systems and reliability | high / structural | strong | Senior Go Developer | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

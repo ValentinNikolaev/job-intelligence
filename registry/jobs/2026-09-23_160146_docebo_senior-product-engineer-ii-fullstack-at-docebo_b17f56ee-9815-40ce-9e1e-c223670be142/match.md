@@ -1,27 +1,26 @@
 # Match Analysis
 
-**Score:** 65/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Senior product-engineering seniority and Go/PHP backend evidence fit well, while Python and full-stack frontend depth are uncertain and the Toronto hybrid arrangement needs confirmation.
+Senior Product Engineer II - Fullstack at Docebo aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- Senior backend experience with Go, PHP, APIs, and automation.
-- Production reliability, Kubernetes, CI/CD, and event-driven systems are evidenced.
+- Candidate evidence supports senior backend ownership, Go/PHP, automation, event-driven systems, and technical leadership.
 
 ## Gaps
 
-- Python, JavaScript, TypeScript, and Node.js are not established as professional experience.
+- The posting includes product/full-stack or frontend expectations not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Remote/hybrid Toronto location is not clearly compatible with Italy.
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior full-stack product engineer | critical / stated | partial | Senior Product Engineer II - Fullstack | Backend engineer with 15+ years of experience | Frontend breadth may be below role expectations. / Clarify actual frontend responsibilities and assess transferable API/product experience. |
-| Three days in Toronto office | critical / stated | unknown | 3 days a week in the office | Rome, Italy | Work authorization and attendance are unresolved. / Confirm EU remote or relocation terms. |
-| Go and PHP | high / stated | strong | Python • Go • JavaScript • PHP | Languages - Go - PHP | / |
+| Relevant backend engineering experience | critical / stated | strong | Senior Product Engineer II - Fullstack at Docebo | Go | / |
+| Production systems and reliability | high / structural | strong | Senior Product Engineer II - Fullstack at Docebo | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

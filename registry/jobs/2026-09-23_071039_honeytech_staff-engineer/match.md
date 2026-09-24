@@ -3,24 +3,24 @@
 **Score:** 76/100  
 **Recommendation:** Match
 
-Strong senior backend, architecture, asynchronous processing, observability, and technical-leadership alignment, with some role-specific scale details unknown.
+Staff Engineer aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- I design and own a support automation platform that connects Zendesk, Intercom, and internal services through a robust, scalable backend in Go.
-- Migrated managed services from ECS to Kubernetes. Prepared infrastructure for launching services in Kubernetes (Helm charts, GitHub Actions, ArgoCD), leading to 30% cost cutting and over 20% performance boost.
-- Directly managed 10 developers.
+- Candidate evidence supports architecture, system design, scalability, event-driven systems, and technical leadership.
 
 ## Gaps
 
-- The profile does not establish the exact advertised traffic scale or all listed architecture patterns.
+- Some role-specific domain or framework details are not explicitly evidenced.
 
 ## Concerns
 
-- The posting is in Ukrainian; language and work-location terms should be confirmed.
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend architecture and hands-on system design | critical / stated | strong | сильною архітектурною та backend-експертизою | Architect a scalable, event-driven system using queues and EventBridge, increasing throughput to the DataLake by over 10x. | / |
+| Relevant backend engineering experience | critical / stated | strong | Staff Engineer | Go | / |
+| Production systems and reliability | high / structural | strong | Staff Engineer | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |

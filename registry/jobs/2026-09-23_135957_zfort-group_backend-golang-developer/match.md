@@ -3,22 +3,24 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Very strong fit for a senior backend Go role focused on resilient microservices, real-time user-facing systems, API ownership, testing, technical leadership, and production reliability.
+Backend/Golang Developer aligns with the candidate's backend and production-engineering background, with the listed gaps requiring confirmation.
 
 ## Why it matches
 
-- Recent Go backend ownership in production automation and event-driven systems
-- Microservices, REST APIs, resilient delivery pipelines, observability, and reliability
-- Technical Lead background with code review, mentoring, planning, and delivery ownership
-- AWS, Kubernetes, CI/CD, monitoring, and production troubleshooting experience
-- Remote collaboration and professional English evidence
+- Candidate evidence directly supports Go backend systems, microservices, reliability, and production operations.
 
 ## Gaps
 
-- gRPC is not explicitly evidenced in the candidate source records
-- Cross-selling platform domain is new
+- Some named integration technologies and domain-specific requirements are not explicitly evidenced.
 
 ## Concerns
 
-- Clarify hands-on depth with gRPC during screening
-- Confirm availability, work authorization, and exact remote expectations
+- Remote, compensation, work authorization, and availability details are not fully established in the supplied vacancy evidence.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Relevant backend engineering experience | critical / stated | strong | Backend/Golang Developer | Go | / |
+| Production systems and reliability | high / structural | strong | Backend/Golang Developer | Go | / |
+| Exact stack and working arrangement | meaningful / inferred | unknown |  |  | The supplied materials do not establish every exact technology or working-arrangement detail. / Confirm the remaining stack, location, and employment constraints during screening. |
