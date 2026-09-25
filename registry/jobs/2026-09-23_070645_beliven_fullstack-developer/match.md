@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 68/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Backend-heavy full-stack fit through PHP, Go, APIs, databases, and delivery infrastructure, while frontend depth is not strongly documented.
+Strong senior backend and PHP/Laravel overlap with API and delivery experience; frontend depth is less evidenced.
 
 ## Why it matches
 
-- Backend engineering
-- PHP and Go
-- APIs
-- CI/CD
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Frontend scope and framework experience are limited or unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Full-stack expectations may reduce fit
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

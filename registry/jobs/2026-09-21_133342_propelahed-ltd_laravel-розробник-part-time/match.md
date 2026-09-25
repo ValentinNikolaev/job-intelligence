@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 87/100  
+**Score:** 91/100  
 **Recommendation:** Strong Match
 
-Strong Laravel and regulated-client portal alignment with production PHP, APIs, deployment, and independent delivery experience.
+Laravel/PHP and remote backend delivery are strongly supported; part-time availability should be confirmed.
 
 ## Why it matches
 
-- Laravel
-- PHP production systems
-- backend delivery
-- regulated-domain adjacency
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Azure App Service and current hourly availability are unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Part-time hours and rate require confirmation
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

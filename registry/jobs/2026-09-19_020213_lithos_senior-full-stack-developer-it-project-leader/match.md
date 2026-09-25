@@ -1,27 +1,19 @@
 # Match Analysis
 
-**Score:** 83/100  
-**Recommendation:** Strong Match
+**Score:** 74/100  
+**Recommendation:** Match
 
-Senior Full Stack Developer & IT Project Leader at Lithos aligns with the candidate’s backend experience, with the listed gaps requiring verification.
+PHP/Laravel, leadership, APIs, databases, and delivery coordination fit well; React/Vue, Java, and formal budgeting are less evidenced.
 
 ## Why it matches
 
-- Backend engineering experience across production systems and APIs
-- Documented PHP framework and backend experience
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Node.js or JavaScript/TypeScript depth is not established in the candidate profile
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Verify location, working-hours, compensation, and availability details with the employer
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Production backend development | critical / stated | strong | # Senior Full Stack Developer & IT Project Leader | Backend Engineer | / |
-| Relevant primary language/framework | high / stated | strong | PHP | PHP | / |
-| Distributed systems, APIs, or microservices | high / stated | strong | # Senior Full Stack Developer & IT Project Leader | Go | / |
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

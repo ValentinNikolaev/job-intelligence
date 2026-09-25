@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 80/100  
+**Score:** 83/100  
 **Recommendation:** Strong Match
 
-Strong backend fit for PHP, databases, AWS, Redis, high-load systems, and engineering-quality responsibilities; Yii2 and Terraform are less certain.
+Backend engineering, PHP, APIs, databases, performance optimization, and senior production experience exceed the middle-level scope.
 
 ## Why it matches
 
-- PHP backend
-- AWS
-- databases
-- high-load and performance work
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Yii2 and Terraform are not established
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Middle-level scope may underuse the candidate's seniority
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

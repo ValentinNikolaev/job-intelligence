@@ -1,23 +1,19 @@
 # Match Analysis
 
-**Score:** 72/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Broad developer fit supported by substantial backend, PHP, Go, cloud, integrations, and production reliability experience.
+Broad backend engineering fit across PHP, Go, APIs, microservices, AWS, and production reliability.
 
 ## Why it matches
 
-- Backend breadth
-- PHP and Go
-- cloud infrastructure
-- production operations
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Role level
-- frontend needs
-- and domain are unclear
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Generic posting leaves material requirements uncertain
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

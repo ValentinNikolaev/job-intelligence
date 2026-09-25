@@ -3,19 +3,17 @@
 **Score:** 92/100  
 **Recommendation:** Strong Match
 
-Excellent fit for a remote Laravel role, supported by extensive PHP, Laravel, API, database, and reliability experience.
+Strong PHP/Laravel backend fit with extensive production APIs, integrations, performance work, and remote-capable experience.
 
 ## Why it matches
 
-- Laravel and PHP depth
-- remote fit
-- system design
-- database and performance work
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Specific team and project constraints are unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Salary and start timing are unknown
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

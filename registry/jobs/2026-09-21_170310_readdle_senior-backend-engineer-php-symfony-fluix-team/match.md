@@ -3,19 +3,17 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Very strong fit for senior PHP/Symfony backend work, especially high-volume services, APIs, reliability, and technical leadership.
+PHP backend, Symfony/Laravel, high-volume messaging, APIs, and reliability experience are strongly relevant.
 
 ## Why it matches
 
-- PHP and Symfony
-- high-volume email systems
-- technical leadership
-- reliability
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Fluix-specific product experience is unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Exact location and compensation terms are unknown
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

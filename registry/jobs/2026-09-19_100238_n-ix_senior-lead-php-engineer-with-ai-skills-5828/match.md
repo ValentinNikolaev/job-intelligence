@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 90/100  
 **Recommendation:** Strong Match
 
-Strong PHP/Laravel and leadership fit with documented LLM-assisted automation, backend ownership, cloud, databases, and production engineering.
+PHP/Laravel leadership and hands-on LLM automation experience closely match the role; Toronto hours require confirmation.
 
 ## Why it matches
 
-- PHP and Laravel
-- technical leadership
-- LLM automation
-- backend architecture
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Agentic orchestration depth and Toronto-time overlap are not fully established
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Required EDT schedule may be a practical constraint
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

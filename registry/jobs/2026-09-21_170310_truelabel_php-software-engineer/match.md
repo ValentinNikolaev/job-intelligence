@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 89/100  
 **Recommendation:** Strong Match
 
-Strong PHP backend match with Laravel/Symfony experience, databases, APIs, performance optimization, and production delivery.
+PHP backend experience, Laravel, APIs, databases, production reliability, and senior ownership align closely.
 
 ## Why it matches
 
-- PHP
-- Laravel and Symfony
-- database optimization
-- API engineering
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Employer-specific framework and domain details are unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Compensation and work model need confirmation
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

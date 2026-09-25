@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 91/100  
+**Score:** 92/100  
 **Recommendation:** Strong Match
 
-Excellent PHP/Laravel alignment with senior backend experience, performance work, production systems, and remote compatibility.
+Strong PHP/Laravel backend fit with extensive production APIs, integrations, performance work, and remote-capable experience.
 
 ## Why it matches
 
-- Laravel and PHP
-- backend architecture
-- performance optimization
-- production ownership
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Company-specific domain details are unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Compensation and hiring process are unknown
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

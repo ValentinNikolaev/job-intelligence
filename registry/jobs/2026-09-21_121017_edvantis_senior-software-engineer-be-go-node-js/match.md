@@ -1,25 +1,19 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 92/100  
 **Recommendation:** Strong Match
 
-Strong Go and distributed-backend alignment with APIs, microservices, Kubernetes, CI/CD, performance, and production troubleshooting.
+Strong PHP/Laravel backend fit with extensive production APIs, integrations, performance work, and remote-capable experience.
 
 ## Why it matches
 
-- Go
-- microservices
-- Kubernetes
-- CI/CD
-- reliability
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Node.js
-- streaming/ad-tech
-- MongoDB
-- and gRPC are not clearly evidenced
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Domain-specific media and low-latency requirements need validation
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

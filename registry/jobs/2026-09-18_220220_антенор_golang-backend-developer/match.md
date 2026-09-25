@@ -1,23 +1,19 @@
 # Match Analysis
 
-**Score:** 80/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Golang Backend Developer at Антенор aligns with the candidate’s backend experience, with the listed gaps requiring verification.
+Go backend, REST APIs, microservices, databases, Docker, Linux, Kubernetes, CI/CD, and monitoring align directly.
 
 ## Why it matches
 
-- Backend engineering experience across production systems and APIs
-- Documented Go backend and distributed-systems experience
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
+
+## Gaps
+
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Verify location, working-hours, compensation, and availability details with the employer
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Production backend development | critical / stated | strong | # Golang Backend Developer | Backend Engineer | / |
-| Relevant primary language/framework | high / stated | strong | # Golang Backend Developer | Go | / |
-| Distributed systems, APIs, or microservices | high / stated | strong | # Golang Backend Developer | Go | / |
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.

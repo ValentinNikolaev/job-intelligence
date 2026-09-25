@@ -1,0 +1,155 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-25T10:48:33Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070843_neting_cerchiamo-uno-sviluppatore-laravel",
+      "score": 92,
+      "title": "Cerchiamo uno sviluppatore Laravel",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "9d714b9e-37a0-43bd-b3ff-3588e4538686"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070841_neting_sviluppatore-laravel-remote",
+      "score": 92,
+      "title": "Sviluppatore Laravel Remote",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "fb937be2-1497-44a0-a8a6-70894b3be480"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070839_neting_sviluppatore-laravel-remote-neting",
+      "score": 92,
+      "title": "Sviluppatore Laravel Remote - Neting %",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "941f55a5-acb0-47cf-9e33-a6d9928ab48b"
+    },
+    {
+      "company": "Beliven",
+      "country_codes": [],
+      "directory": "2026-09-23_070645_beliven_fullstack-developer",
+      "score": 78,
+      "title": "FULLSTACK DEVELOPER",
+      "url": "https://careers.beliven.com/recruiting/details/fullstack-developer",
+      "vacancy_id": "e6f3408a-f272-4530-b0c4-e38e7b9a3d32"
+    },
+    {
+      "company": "Beliven",
+      "country_codes": [],
+      "directory": "2026-09-23_070643_beliven_lead-software-engineer",
+      "score": 82,
+      "title": "LEAD SOFTWARE ENGINEER",
+      "url": "https://careers.beliven.com/recruiting/details/lead-software-engineer",
+      "vacancy_id": "14bc6d24-85bf-4dd8-891d-9ff03931e58f"
+    },
+    {
+      "company": "weBeetle",
+      "country_codes": [],
+      "directory": "2026-09-23_070623_webeetle_developer",
+      "score": 84,
+      "title": "Developer",
+      "url": "https://www.webeetle.com/join-us/#developer",
+      "vacancy_id": "5a8488b3-59bb-4a2f-93e1-d39f12ba963d"
+    },
+    {
+      "company": "TrueLabel",
+      "country_codes": [],
+      "directory": "2026-09-21_170310_truelabel_php-software-engineer",
+      "score": 89,
+      "title": "PHP Software Engineer",
+      "url": "https://jobs.dou.ua/companies/truelabel/vacancies/374027/",
+      "vacancy_id": "27faf9b3-1692-40cb-9592-afc543b8c24b"
+    },
+    {
+      "company": "Readdle",
+      "country_codes": [],
+      "directory": "2026-09-21_170310_readdle_senior-backend-engineer-php-symfony-fluix-team",
+      "score": 88,
+      "title": "Senior Backend Engineer (PHP, Symfony) — Fluix Team",
+      "url": "https://jobs.dou.ua/companies/readdle-inc/vacancies/374074/",
+      "vacancy_id": "3a7f3891-cd46-4200-87c3-a693acb19a19"
+    },
+    {
+      "company": "Propelahed LTD",
+      "country_codes": [],
+      "directory": "2026-09-21_133342_propelahed-ltd_laravel-розробник-part-time",
+      "score": 91,
+      "title": "Laravel-розробник (part-time)",
+      "url": "https://jobs.dou.ua/companies/propelahed-ltd/vacancies/374023/",
+      "vacancy_id": "2aa3b0cf-4bf2-4a6a-bd05-a6dd7c21594d"
+    },
+    {
+      "company": "Readeat",
+      "country_codes": [],
+      "directory": "2026-09-21_121017_readeat_middle-backend-developer",
+      "score": 83,
+      "title": "Middle Backend Developer",
+      "url": "https://jobs.dou.ua/companies/readeat/vacancies/366780/",
+      "vacancy_id": "8dbd331e-3408-4d1a-841c-ac25bedfc709"
+    },
+    {
+      "company": "Edvantis",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-09-21_121017_edvantis_senior-software-engineer-be-go-node-js",
+      "score": 92,
+      "title": "Senior Software Engineer BE (Go, Node.js)",
+      "url": "https://jobs.dou.ua/companies/edvantis/vacancies/373945/",
+      "vacancy_id": "2358c569-0bae-4bec-ab93-a184b6dd855a"
+    },
+    {
+      "company": "N-iX",
+      "country_codes": [],
+      "directory": "2026-09-19_100238_n-ix_senior-lead-php-engineer-with-ai-skills-5828",
+      "score": 90,
+      "title": "Senior/ Lead PHP Engineer (with AI Skills) (#5828)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/258407/",
+      "vacancy_id": "ba1fdf95-20a0-44c6-b7c4-13ef77b147df"
+    },
+    {
+      "company": "Lithos",
+      "country_codes": [],
+      "directory": "2026-09-19_020213_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 74,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "e1c84dad-0d2f-425c-802d-e6c0355015fb"
+    },
+    {
+      "company": "Антенор",
+      "country_codes": [],
+      "directory": "2026-09-18_220220_антенор_golang-backend-developer",
+      "score": 88,
+      "title": "Golang Backend Developer",
+      "url": "https://jobs.dou.ua/companies/antenor/vacancies/373917/",
+      "vacancy_id": "3baf6300-3356-4a85-b096-d6ea46d5fdaf"
+    },
+    {
+      "company": "Edvantis",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel",
+      "score": 92,
+      "title": "Senior Full-Stack Software Engineer (PHP/Laravel, Vue.js)",
+      "url": "https://jobs.dou.ua/companies/edvantis/vacancies/373852/",
+      "vacancy_id": "e457d44c-5797-48f1-a8bd-f01e72c1c1c3"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "885c31cba24def2028e3a041271286780920325aa777e3935cbaa7acdd76c2c6",
+  "schema_version": 2
+}

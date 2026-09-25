@@ -1,21 +1,19 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-Good seniority and technical-lead alignment with architecture, mentoring, delivery planning, and production backend ownership.
+Senior engineering leadership, architecture, PHP/Laravel, AWS, Kubernetes, and delivery ownership are well supported.
 
 ## Why it matches
 
-- Technical leadership
-- architecture
-- mentoring
-- backend delivery
+- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
+- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
 
 ## Gaps
 
-- Exact leadership scope and product domain are unknown
+- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
 
 ## Concerns
 
-- Role may require technologies not documented in the profile
+- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.
