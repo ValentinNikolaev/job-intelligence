@@ -1,0 +1,155 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-25T03:41:18Z",
+  "delivered_at": "2026-09-25T03:44:27Z",
+  "delivered_vacancy_ids": [
+    "ef649a67-760d-4cbf-aed3-49536a0d342a"
+  ],
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Lithos",
+      "country_codes": [],
+      "directory": "2026-09-19_020213_lithos_senior-full-stack-developer-it-project-leader",
+      "score": 83,
+      "title": "Senior Full Stack Developer & IT Project Leader",
+      "url": "https://lithos.it/work-with-us/senior-full-stack-developer",
+      "vacancy_id": "e1c84dad-0d2f-425c-802d-e6c0355015fb"
+    },
+    {
+      "company": "Антенор",
+      "country_codes": [],
+      "directory": "2026-09-18_220220_антенор_golang-backend-developer",
+      "score": 80,
+      "title": "Golang Backend Developer",
+      "url": "https://jobs.dou.ua/companies/antenor/vacancies/373917/",
+      "vacancy_id": "3baf6300-3356-4a85-b096-d6ea46d5fdaf"
+    },
+    {
+      "company": "Edvantis",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-09-18_180815_edvantis_senior-full-stack-software-engineer-php-laravel",
+      "score": 81,
+      "title": "Senior Full-Stack Software Engineer (PHP/Laravel, Vue.js)",
+      "url": "https://jobs.dou.ua/companies/edvantis/vacancies/373852/",
+      "vacancy_id": "e457d44c-5797-48f1-a8bd-f01e72c1c1c3"
+    },
+    {
+      "company": "Add Talent Solutions",
+      "country_codes": [],
+      "directory": "2026-09-18_120957_add-talent-solutions_tech-lead-solutions-architect-i-gaming",
+      "score": 85,
+      "title": "Tech Lead — Solutions Architect (I-Gaming)",
+      "url": "https://jobs.dou.ua/companies/add-talent-solutions/vacancies/356776/",
+      "vacancy_id": "75c10641-ed93-4388-bf52-c826945bcb22"
+    },
+    {
+      "company": "InsulaLabs",
+      "country_codes": [],
+      "directory": "2026-09-18_061127_insulalabs_lead-platform-engineer",
+      "score": 79,
+      "title": "Lead Platform Engineer",
+      "url": "https://jobs.dou.ua/companies/insulalabs/vacancies/373722/",
+      "vacancy_id": "a4d94976-94d6-4b34-95b1-44d90dd3afd1"
+    },
+    {
+      "company": "ShippyPro",
+      "country_codes": [],
+      "directory": "2026-09-18_061122_shippypro_senior-software-engineer",
+      "score": 85,
+      "title": "Senior Software Engineer",
+      "url": "https://shippypro.factorialhr.com/job_posting/senior-software-engineer-309743",
+      "vacancy_id": "d1bf7099-0b18-418c-84df-26a3245c8c50"
+    },
+    {
+      "company": "LUMASERV GmbH",
+      "country_codes": [],
+      "directory": "2026-09-24_122359_lumaserv-gmbh_php-laravel-backend-developer-gn_ef649a67-760d-4cbf-aed3-49536a0d342a",
+      "score": 80,
+      "title": "PHP Laravel Backend Developer [gn]",
+      "url": "https://www.adzuna.de/details/5896731578?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "ef649a67-760d-4cbf-aed3-49536a0d342a"
+    },
+    {
+      "company": "Urban Sports Club",
+      "country_codes": [],
+      "directory": "2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-php_0519f7c9-a00e-4319-b77e-9b3a4f8939d0",
+      "score": 83,
+      "title": "Senior Backend Engineer (all genders) - PHP",
+      "url": "https://www.adzuna.es/details/5896098725?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "0519f7c9-a00e-4319-b77e-9b3a4f8939d0"
+    },
+    {
+      "company": "Urban Sports Club",
+      "country_codes": [],
+      "directory": "2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-golang_74726102-1f01-40b4-a27a-44f6ff26b898",
+      "score": 83,
+      "title": "Senior Backend Engineer (all genders) - Golang",
+      "url": "https://www.adzuna.es/details/5896082598?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "74726102-1f01-40b4-a27a-44f6ff26b898"
+    },
+    {
+      "company": "Urban Sports Club",
+      "country_codes": [],
+      "directory": "2026-09-24_062746_urban-sports-club_senior-backend-engineer-all-genders-golang_6fef5564-711f-45bf-a09f-eca241e70781",
+      "score": 83,
+      "title": "Senior Backend Engineer (all genders) - Golang",
+      "url": "https://www.adzuna.es/details/5896099153?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "6fef5564-711f-45bf-a09f-eca241e70781"
+    },
+    {
+      "company": "InShared Nederland B.V.",
+      "country_codes": [],
+      "directory": "2026-09-24_062746_inshared-nederland-b-v_senior-backend-developer-php-sql_71c04261-321d-45eb-94eb-bac8ed2bcd72",
+      "score": 83,
+      "title": "Senior Backend Developer (PHP & SQL)",
+      "url": "https://www.adzuna.nl/details/5896411767?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "71c04261-321d-45eb-94eb-bac8ed2bcd72"
+    },
+    {
+      "company": "ibelsa GmbH",
+      "country_codes": [],
+      "directory": "2026-09-24_004151_ibelsa-gmbh_backend-entwickler-in-php-m-w-d_2580a5fc-ff10-4802-ac00-ad400d2cbe4e",
+      "score": 80,
+      "title": "Backend Entwickler:in PHP (m/w/d)",
+      "url": "https://www.adzuna.de/details/5895651382?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "2580a5fc-ff10-4802-ac00-ad400d2cbe4e"
+    },
+    {
+      "company": "Global Technologies",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_140556_global-technologies_full-remote-php-developer-laravel-api-expert",
+      "score": 80,
+      "title": "Full-Remote PHP Developer | Laravel & API Expert",
+      "url": "https://jooble.org/away/-6847266060912482358?p=1&pos=7&rgn=55179&cid=15922&ckey=senior+backend+engineer&jobAge=132&brelb=10&scr=26.864878&bscr=26.864878&aq=5638648868020264242&elckey=-3873418248407598832",
+      "vacancy_id": "9f33fb71-9a00-4c2b-8215-5b34d5ae5498"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-09-23_140241_canonical_software-engineer-app-stores",
+      "score": 83,
+      "title": "Software Engineer - App Stores",
+      "url": "https://jobicy.com/jobs/149552-software-engineer-app-stores",
+      "vacancy_id": "3156ec25-1f8b-494a-a58b-b465e2d98ed6"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-09-23_140200_canonical_senior-staff-principal-engineer",
+      "score": 83,
+      "title": "Senior/Staff/Principal Engineer",
+      "url": "https://jobicy.com/jobs/149522-senior-staff-principal-engineer",
+      "vacancy_id": "72cf8817-3513-42e5-ac20-fa35f0d0ab79"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "038ec043d49ab4366d907bdee05abeebae61d0dccfbdcdb483ba5318adf82eed",
+  "schema_version": 2,
+  "telegram_message_id": 244
+}
