@@ -2,18 +2,21 @@
 
 # Vacancy Catalog
 
-Total vacancies: 89
+Total vacancies: 92
 
 - Found: 72
 - Applied: 11
 - Interview: 1
-- Rejected: 4
+- Rejected: 7
 - Withdrawn: 1
 
 ## Vacancies
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-25 | [RiseGuide](../registry/jobs/2026-09-25_215057_riseguide_software-engineer-golang_ea948bd3-533f-446f-a7aa-1d29f2bdaca9/) | [Software Engineer (Golang)](../registry/jobs/2026-09-25_215057_riseguide_software-engineer-golang_ea948bd3-533f-446f-a7aa-1d29f2bdaca9/job.md) | — | Manual | Rejected | 2026-09-25 | [Manual](https://jobs.ashbyhq.com/RiseGuide/e36291f1-af7e-45b3-bd01-baa650918029) | — | — | — | — | — |
+| 2026-09-25 | [UPSTARS](../registry/jobs/2026-09-25_215046_upstars_senior-backend-developer-php-golang_1d238a13-27e8-4e1a-9db5-096a20c9eeb0/) | [Senior Backend Developer (PHP/Golang)](../registry/jobs/2026-09-25_215046_upstars_senior-backend-developer-php-golang_1d238a13-27e8-4e1a-9db5-096a20c9eeb0/job.md) | Ukraine/Europe | Manual | Rejected | 2026-09-25 | [Manual](https://career.upstars.com/jobs/7656408-senior-backend-developer-php-golang) | — | — | — | — | — |
+| 2026-09-25 | [BetterMe](../registry/jobs/2026-09-25_215035_betterme_backend-engineer-core-team-golang-php_43bc1707-1218-405a-a45d-f4a81cd7b352/) | [Backend Engineer Core Team (GoLang + PHP)](../registry/jobs/2026-09-25_215035_betterme_backend-engineer-core-team-golang-php_43bc1707-1218-405a-a45d-f4a81cd7b352/job.md) | Remote (Europe or Ukraine) | Manual | Rejected | 2026-09-25 | [Manual](https://djinni.co/jobs/812977-backend-engineer-core-team-golang-php/) | — | — | — | — | — |
 | 2026-09-25 | [Recare Deutschland GmbH](../registry/jobs/2026-09-25_181923_recare-deutschland-gmbh_senior-backend-engineer-go-m-w-d_f2ba10d6-6781-4168-bbcd-7c7becdfb7e5/) | [Senior Backend Engineer (Go) (m/w/d)](../registry/jobs/2026-09-25_181923_recare-deutschland-gmbh_senior-backend-engineer-go-m-w-d_f2ba10d6-6781-4168-bbcd-7c7becdfb7e5/job.md) | Austria, France, Germany, Italy, Poland, Portugal, Spain | Himalayas | Found | 2026-09-25 | [Himalayas](https://himalayas.app/companies/recare-deutschland-gmbh/jobs/senior-backend-engineer-go-m-w-d) | — | — | — | — | — |
 | 2026-09-25 | [app:soluts/* GmbH](../registry/jobs/2026-09-25_181908_app-soluts-gmbh_web-backend-infrastructure-developer-m-w-d_58f6b510-c655-433e-bdbe-c77e264f3cda/) | [Web, Backend & Infrastructure Developer (m/w/d)](../registry/jobs/2026-09-25_181908_app-soluts-gmbh_web-backend-infrastructure-developer-m-w-d_58f6b510-c655-433e-bdbe-c77e264f3cda/job.md) | Friedrichstadt, Düsseldorf | Adzuna | Found | 2026-09-25 | [Adzuna](https://www.adzuna.de/details/5898413510?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-09-25 | [Nebius](../registry/jobs/2026-09-25_122410_nebius_senior-backend-software-engineer-observability_06ed9b68-3b52-4f35-8580-102e2986c4bf/) | [Senior Backend Software Engineer (Observability)](../registry/jobs/2026-09-25_122410_nebius_senior-backend-software-engineer-observability_06ed9b68-3b52-4f35-8580-102e2986c4bf/job.md) | Netherlands | Jobicy | Found | 2026-09-25 | [Jobicy](https://jobicy.com/jobs/147408-senior-backend-software-engineer-observability) | — | — | — | — | — |
