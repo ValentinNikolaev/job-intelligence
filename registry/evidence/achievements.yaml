@@ -735,3 +735,216 @@ entries:
       basis.
   review_notes: 86% is the platform-wide current figure; candidate implemented many,
     not all, scenarios.
+- id: crurated-confirmed-datalake-production
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+    quote: 'CRURATED DataLake and event analytics: full technical ownership, production
+      use.'
+    context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement'
+    sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate confirmation and scoped interpretation; production
+      use and technical ownership only.
+- id: crurated-confirmed-event-version-production
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+    quote: 'CRURATED parallel event-version publication: full technical ownership,
+      production use.'
+    context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement'
+    sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate confirmation and scoped interpretation; production
+      use and technical ownership only.
+- id: crurated-confirmed-crutrade-production
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+    quote: 'CRURATED Crutrade integration: full technical ownership of production
+      authentication/OTP, account linking, collection import/export, purchase-ownership
+      verification, and request/response logging.'
+    context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement'
+    sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate confirmation and scoped interpretation; production
+      use and technical ownership only.
+- id: airslate-letter-lead-scope
+  employer: airSlate
+  role: Programming Team Lead
+  source:
+    path: registry/candidate/employment-letter-extract-2026-09-25.md
+    quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to Aug 22,
+      2023 Duties and Responsibilities: Lead epic decomposition (delegation, ownership
+      and participation) Implementation of tasks (direct developing/testing) Tasks
+      delegation alongside with the team Technical monitoring (health check) of the
+      developed system or its separate section Brainstorm potential solutions with
+      the team Active participation in product backlog planning'
+    context_quote: © airSlate, Inc.
+    sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared candidate-supplied employee-letter transcript; confirms stated
+      duties and role scope, not outcomes.
+- id: airslate-letter-debt-release
+  employer: airSlate
+  role: Programming Team Lead
+  source:
+    path: registry/candidate/employment-letter-extract-2026-09-25.md
+    quote: 'Technical debt roadmap management
+
+      > Planning the release cycle backlog with the team'
+    context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to
+      Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+      ownership and participation) Implementation of tasks (direct developing/testing)
+      Tasks delegation alongside with the team Technical monitoring (health check)
+      of the developed system or its separate section Brainstorm potential solutions
+      with the team Active participation in product backlog planning
+
+      > © airSlate, Inc.'
+    sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared candidate-supplied employee-letter transcript; confirms stated
+      duties and role scope, not outcomes.
+- id: airslate-letter-operations-people
+  employer: airSlate
+  role: Programming Team Lead
+  source:
+    path: registry/candidate/employment-letter-extract-2026-09-25.md
+    quote: 'On-call (health check, duty development, sos-cases investigation)
+
+      > Knowledge sharing in the technical and domain area
+
+      > Technical on-boarding new members
+
+      > Participation in Personal Development Plans
+
+      > Conducting technical interview for new team members.'
+    context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to
+      Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+      ownership and participation) Implementation of tasks (direct developing/testing)
+      Tasks delegation alongside with the team Technical monitoring (health check)
+      of the developed system or its separate section Brainstorm potential solutions
+      with the team Active participation in product backlog planning
+
+      > © airSlate, Inc.'
+    sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared candidate-supplied employee-letter transcript; confirms stated
+      duties and role scope, not outcomes.
+- id: crurated-reviewed-throughput
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/crurated-metric-review-2026-09-25.md
+    quote: CRURATED DataLake throughput increased by over 10x under the candidate's
+      technical ownership; Grafana and operational observation were identified as
+      verification sources.
+    context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement.'
+    sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+  status: verified
+  verification:
+    reviewer: Codex contextual candidate-reply review
+    reviewed_at: '2026-09-25'
+    method: Candidate supplied verification bases for offered LinkedIn metrics without
+      excluding any; not independently audited.
+  review_notes: Use only within stated system scope and preserve original units; candidate
+    correction supersedes this entry.
+- id: crurated-reviewed-stream-onboarding
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/crurated-metric-review-2026-09-25.md
+    quote: CRURATED new analytics stream setup dropped from several days to under
+      4 hours through modular design under the candidate's technical ownership; operational
+      observation was identified as the basis.
+    context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement.'
+    sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+  status: verified
+  verification:
+    reviewer: Codex contextual candidate-reply review
+    reviewed_at: '2026-09-25'
+    method: Candidate supplied verification bases for offered LinkedIn metrics without
+      excluding any; not independently audited.
+  review_notes: Use only within stated system scope and preserve original units; candidate
+    correction supersedes this entry.
+- id: crurated-reviewed-delivery-reliability
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/crurated-metric-review-2026-09-25.md
+    quote: CRURATED event delivery reliability exceeded 99.9% under the candidate's
+      technical ownership; Grafana was identified as a verification source.
+    context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement.'
+    sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+  status: verified
+  verification:
+    reviewer: Codex contextual candidate-reply review
+    reviewed_at: '2026-09-25'
+    method: Candidate supplied verification bases for offered LinkedIn metrics without
+      excluding any; not independently audited.
+  review_notes: Use only within stated system scope and preserve original units; candidate
+    correction supersedes this entry.
+- id: crurated-reviewed-event-types
+  employer: CRURATED
+  role: PHP Software Developer
+  source:
+    path: registry/candidate/crurated-metric-review-2026-09-25.md
+    quote: CRURATED event processing covered more than 30 event types in the candidate's
+      described monitoring scope. The count is fixed and can be checked against code
+      and data; do not claim the candidate personally implemented every event type.
+    context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time subcontract
+      / consulting engagement.'
+    sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+  status: verified
+  verification:
+    reviewer: Codex contextual candidate-reply review
+    reviewed_at: '2026-09-25'
+    method: Candidate supplied verification bases for offered LinkedIn metrics without
+      excluding any; not independently audited.
+  review_notes: Use only within stated system scope and preserve original units; candidate
+    correction supersedes this entry.
+- id: airslate-production-fixes
+  employer: airSlate
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- **Troubleshot** production issues using logs, monitoring, and SRE dashboards;\n\
+      \  delivered fixes and operational improvements."
+    context_quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-25'
+    method: Compared exact candidate-authored CV excerpt and airSlate employer/role
+      attribution; no numerical outcome inferred.

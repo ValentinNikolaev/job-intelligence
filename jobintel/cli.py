@@ -125,6 +125,11 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument("--json", action="store_true", help="emit machine-readable JSON where supported")
     parser.add_argument("--force", action="store_true", help="force analysis even when cached versions match")
     parser.add_argument(
+        "--allow-low-score-cv-refresh",
+        action="store_true",
+        help="explicit named-vacancy CV-only refresh of an existing package when the fresh match is possible_match below the normal preparation threshold",
+    )
+    parser.add_argument(
         "--lock-timeout-seconds",
         type=float,
         default=0,
@@ -1268,6 +1273,8 @@ def _run_preparation_locked(
         policy, model_label = _selected_workflow(
             args.workflow, project_root, {"prepare"}, args.model_profile
         )
+        if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
+            raise ValueError("--allow-low-score-cv-refresh requires --document cv")
         Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         directories = _resolve_explicit_preparation_directories(
@@ -1294,7 +1301,9 @@ def _run_preparation_locked(
                     "run workflow analyze first"
                 )
             score = _match_score(directory)
-            if not policy.prepare_score_is_eligible(args.workflow, score):
+            if not policy.prepare_score_is_eligible(args.workflow, score) and not _allows_explicit_low_score_cv_refresh(
+                directory, args, score
+            ):
                 raise ValueError(
                     f"{directory.name}: "
                     + _ineligible_score_message(policy, args.workflow, score)
@@ -1458,6 +1467,8 @@ def _run_pending_locked(
             )
             return 0
         if stage == "prepare":
+            if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
+                raise ValueError("--allow-low-score-cv-refresh requires --document cv")
             directories = _resolve_explicit_preparation_directories(
                 registry_dir,
                 selectors,
@@ -1508,7 +1519,10 @@ def _run_pending_locked(
                 ):
                     continue
                 score = _optional_match_score(directory)
-                if score is None or not policy.prepare_score_is_eligible(args.workflow, score):
+                if score is None or (
+                    not policy.prepare_score_is_eligible(args.workflow, score)
+                    and not _allows_explicit_low_score_cv_refresh(directory, args, score)
+                ):
                     continue
                 checker = ApplicationGenerator(
                     registry_dir,
@@ -1555,6 +1569,19 @@ def _optional_match_score(directory: Path) -> int | None:
     if not op.exists(path):
         return None
     return _match_score(directory)
+
+
+def _allows_explicit_low_score_cv_refresh(
+    directory: Path, args: argparse.Namespace, score: int
+) -> bool:
+    if not getattr(args, "allow_low_score_cv_refresh", False):
+        return False
+    if args.document != "cv":
+        raise ValueError("--allow-low-score-cv-refresh requires --document cv")
+    if score < 45 or not op.exists(directory / "application" / "cv.md"):
+        return False
+    match = _read_yaml_file(directory / "match.yaml", "match analysis")
+    return match.get("recommendation") == "possible_match" and match.get("hard_rejection") is False
 
 
 def _vacancy_status_skips_analysis(directory: Path) -> bool:

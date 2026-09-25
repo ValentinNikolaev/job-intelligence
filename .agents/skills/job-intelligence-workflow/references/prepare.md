@@ -24,11 +24,23 @@ explicit single-document request, use the full-package flow below.
    --workflow analyze --model-profile <selected-profile> --force`, and rerun the pending
    check. Do not draft a vacancy that remains absent; report the actual eligibility or
    freshness reason.
+   When the candidate explicitly requests a CV-only refresh for a named vacancy
+   whose existing application already has a CV, a fresh same-profile
+   `possible_match` below the normal score threshold may be refreshed with
+   `--document cv --allow-low-score-cv-refresh` on both `pending prepare` and
+   `prepare`. State the score and material gaps to the candidate. This narrow
+   override does not admit a `not_match`, hard rejection, new application, other
+   document, or automatic preparation selection.
 4. Process each printed vacancy independently. For the current vacancy, read its
    `meta.yaml`, `job.md`, optional `company.md`, the configured candidate sources, and
    `prompts/vacancy-application.md`. Do not read non-selected vacancies, compare selected
    vacancies, or carry company research, requirements, keywords, or wording from one
    package into another.
+   Consult relevant `registry/candidate/*-experience-inventory-*.md` files during
+   evidence review to discover work that may fit the vacancy. Keep delivered work,
+   proposals, duties, and unconfirmed figures separate. An inventory note is not
+   a verified achievement; anchor every CV claim in a reviewed evidence-bank entry
+   backed by direct candidate source or a later candidate confirmation.
 5. For a full package, create `.codex-work/application/<vacancy-directory>/parts/`, then run Wave 1 with
    three independent roles in parallel when subagent slots are available. Route only
    the minimum inputs below and assign exactly one handoff file:
@@ -65,8 +77,11 @@ explicit single-document request, use the full-package flow below.
      when the candidate source supports them, and explain any shortfall to the user
      instead of compensating with older experience;
    - ensure those recent roles contain at least 60% of all Experience bullets;
-   - keep roles ending more than five years ago compact, normally two or three
-     non-duplicative bullets each, unless the user asks for a different balance;
+   - keep roles ending more than five years ago compact. For a Senior or Tech Lead
+     CV, aim for three distinct, non-duplicative bullets for each displayed role
+     within the ten-year window when the sources support them. A role with only one
+     or two bullets needs a source review and a deliberate editorial decision; do
+     not publish that shape by default or invent another achievement to fill it;
    - count bullets by role and read the finished Experience section as a hiring
      manager would. Reject a draft where a recent role has a single generic bullet,
      or where older roles carry the substantive detail that should describe recent
@@ -76,6 +91,11 @@ explicit single-document request, use the full-package flow below.
      name the candidate's contribution, the system or people affected, and the
      outcome. Use scale or a numeric result only when the source supports it;
      otherwise state the concrete operational or delivery consequence;
+   - rank the bullets within each role before finalizing: lead with the strongest
+     vacancy-relevant outcome and scope, then architecture judgment, operational
+     reliability or security, and cross-team influence as evidence permits. A
+     technology implementation or duty should never displace a stronger result;
+     record the reason for the chosen order in the CV audit;
    - prefer evidence of architecture decisions and their reason, reliability,
      observability, migrations, simplification, and cross-team influence over a
      list of technologies or planning duties. Never manufacture a trade-off,
@@ -83,6 +103,11 @@ explicit single-document request, use the full-package flow below.
    - omit generic duties and repeated claims. If ten distinct outcome bullets
      cannot be grounded, choose `document_format: compact` when the user's
      requested format permits it, rather than padding the standard CV;
+   - review every displayed role for senior-level signal: a concrete system or
+     organizational consequence, ownership or judgment, and a distinct proof
+     point. Reject generic planning, troubleshooting or tool-list bullets without
+     a supported consequence. Never split one result into multiple bullets merely
+     to satisfy the role count;
    - group Skills by domain, retain only defensible skills relevant to this
      vacancy, and check a rendered PDF against a two-page limit when PDF export
      is available. Keep the optional projects section only if it adds distinct,
@@ -145,7 +170,7 @@ explicit single-document request, use the full-package flow below.
    counts, provenance, and hashes before publication. If it fails, correct only that
    vacancy and rerun its validator.
 13. After every selected draft passes, publish the verified batch once with
-    `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile> [--document <document>]`.
+    `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile> [--document <document>] [--allow-low-score-cv-refresh]`.
     The deterministic publisher resolves every selector before publication and reads
     each package only from its matching vacancy-keyed draft directory. A legacy
     single-vacancy call may still pass that vacancy's draft directory directly. If DOCX

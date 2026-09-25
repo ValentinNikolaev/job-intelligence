@@ -12,12 +12,20 @@ for exactly one document (`cv`, `cover-letter`, `analysis`, or
 upstream evidence work, and do not regenerate the other three documents. In that mode,
 the selected field is the complete output contract and publication uses the matching
 `--document` value.
+For a specifically requested refresh of an existing CV, a fresh `possible_match`
+below the configured score threshold may use the explicit
+`--allow-low-score-cv-refresh` publisher option. Preserve the match score and gaps
+in the user-facing report; never add unsupported job-ad keywords to compensate.
 
 ## Isolation and source-of-truth rules
 
 - This package contains exactly one vacancy. Never use knowledge, conclusions,
   keywords, research, or CV changes from another package in the task batch.
 - Treat every supplied candidate document as immutable source-of-truth evidence.
+- Review relevant experience inventories to find reusable work history, but keep
+  delivered systems, design proposals, general duties, and unconfirmed metrics
+  distinct. An inventory is a discovery record; use a verified evidence-bank entry
+  tied to direct candidate source or clarification for every generated claim.
 - Never invent employment, responsibilities, technologies, achievements, metrics,
   education, certifications, leadership, domain experience, motivations, or personal
   connections.
@@ -178,6 +186,13 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     compatible with the user's requested delivery format. Group Skills by domain
     and keep only terms the candidate can defend. Keep the exported CV within two
     readable PDF pages where PDF conversion is available.
+    Audit each displayed employer separately. Recent roles should carry the main
+    evidence; for Senior or Tech Lead positioning, a role with only one or two
+    bullets requires another source review and an explicit editorial decision,
+    never filler or two phrasings of one result. Order the bullets by supported
+    importance to this vacancy: strongest outcome and scope first, then architecture
+    judgment, production reliability or security, and cross-team influence as
+    applicable. Record the role counts and ordering rationale in the CV audit.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support

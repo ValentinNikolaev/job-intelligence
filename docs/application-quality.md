@@ -6,6 +6,12 @@ claims. Reprepare an explicitly approved vacancy to create a new v2 package. Mat
 analysis and preparation still run inside Codex; project code only validates and
 publishes local drafts.
 
+An explicit named-vacancy refresh of an existing CV can use
+`--document cv --allow-low-score-cv-refresh` when its fresh same-profile match is
+`possible_match` below the configured preparation threshold. The flag does not apply to
+new packages, other documents, hard rejections, or automatic selection. Report the
+score and material gaps to the candidate rather than disguising fit.
+
 ## Candidate evidence bank
 
 `registry/candidate/*.md` remains immutable. `registry/evidence/achievements.yaml` is a
@@ -179,7 +185,12 @@ system or people affected, and a consequence. Quantified scale is useful only wh
 the candidate evidence supports it. Review architecture judgment, reliability and
 operations, simplification, and influence beyond code where the source records them.
 Do not turn an unsupported trade-off or missing metric into a claim. Prefer compact
-format to padding a standard CV with duties. Group Skills by domain and review the
+format over padding. Count distinct outcome bullets under every displayed role and
+explain any one- or two-bullet role before publication. Recent roles should carry the
+most substantive evidence; order bullets within each role by vacancy-relevant impact
+and scope before implementation details. Record these role-by-role choices in
+`cv_audit.bullet_decisions`, including why the first bullet is the strongest and why
+the remaining bullets are distinct. Group Skills by domain and review the
 rendered export for a two-page PDF limit when PDF conversion is available. The
 `cv_audit.bullet_decisions` receipt must cover every final Experience bullet with
 its exact text and a reason tied to a vacancy requirement or senior-level signal;

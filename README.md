@@ -128,15 +128,22 @@ tasks that need language judgment. The repository keeps the handoff visible.
 
 ## Candidate Evidence
 
-The workflow relies on two candidate records:
+The workflow starts with two imported candidate records and supplements them with
+append-only clarification and experience-inventory files:
 
 - `registry/candidate/linkedin-profile.md`
 - `registry/candidate/backend-engineer-cv.md`
+- `registry/candidate/user-confirmed-*.md`
+- `registry/candidate/*-experience-inventory-*.md`
+- `registry/candidate/employment-letter-extract-*.md`
 
-Those files are the evidence base. Application drafts and match analysis must not
-add experience, metrics, tools, companies, or responsibilities unless the candidate
-records support them. If two records conflict, the workflow preserves the conflict
-for review instead of guessing.
+Inventory files keep candidate-reported delivery, proposals, and unresolved questions
+separate; their presence does not verify a CV claim. Employment-letter extracts
+preserve candidate-supplied transcripts and their chronology caveats. The reviewed
+achievements bank selects usable excerpts. Application drafts and match analysis must not add
+experience, metrics, tools, companies, or responsibilities unless verified candidate
+evidence supports them. If records conflict, the workflow preserves the conflict for
+review instead of guessing.
 
 ## Model Boundary
 

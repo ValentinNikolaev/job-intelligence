@@ -541,12 +541,20 @@ artifact links are repository-relative and missing files are shown as unavailabl
 
 ### Candidate source of truth
 
-The candidate profile is stored in two primary records:
+The candidate profile starts with two imported records:
 
 - [LinkedIn profile registry](registry/candidate/linkedin-profile.md) - detailed career timeline and extended experience.
 - [Backend Engineer CV registry](registry/candidate/backend-engineer-cv.md) - curated positioning, skills, and selected experience.
 
-Future CV and cover-letter variants must start from these two records. Treat facts and metrics as evidence-backed only when one of the records supports them; do not invent or silently combine claims. When the records conflict, preserve the conflict for review or ask the candidate instead of guessing. A newer source explicitly supplied by the candidate may amend or supersede these records.
+Supplementary source files under `registry/candidate/user-confirmed-*.md` record direct
+candidate clarifications. Files matching `registry/candidate/*-experience-inventory-*.md`
+preserve broader work context, including open questions and unshipped proposals. The
+default profile loader includes direct candidate clarifications; experience inventories
+are consulted during source review. The reviewed achievements bank controls which
+claims are verified for an application. Future CV and cover-letter
+variants must preserve the source hierarchy and never promote an inventory note or
+unconfirmed metric to an achievement. When records conflict, preserve the conflict for
+review or ask the candidate instead of guessing.
 
 ## Add a collector
 

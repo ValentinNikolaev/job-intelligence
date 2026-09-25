@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 import yaml
 
-from jobintel.cli import _profile_paths, _run_collector, _run_doctor, main
+from jobintel.cli import _allows_explicit_low_score_cv_refresh, _profile_paths, _run_collector, _run_doctor, main
 from jobintel.models import NormalizedJob
 from jobintel.prefilter import RejectedRegistry
 from jobintel.registry import Registry
@@ -492,6 +492,31 @@ class CliTests(unittest.TestCase):
                 [linkedin.resolve(), cv.resolve(), clarification.resolve(), impact.resolve()],
                 paths,
             )
+
+    def test_low_score_override_is_only_for_existing_cv_possible_match(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            vacancy = Path(temporary) / "selected-vacancy"
+            vacancy.mkdir()
+            match = vacancy / "match.yaml"
+            match.write_text("score: 57\nrecommendation: possible_match\nhard_rejection: false\n", encoding="utf-8")
+            args = SimpleNamespace(allow_low_score_cv_refresh=True, document="cv")
+            self.assertFalse(_allows_explicit_low_score_cv_refresh(vacancy, args, 57))
+
+            application = vacancy / "application"
+            application.mkdir()
+            (application / "cv.md").write_text("# Existing CV\n", encoding="utf-8")
+            self.assertTrue(_allows_explicit_low_score_cv_refresh(vacancy, args, 57))
+            self.assertFalse(_allows_explicit_low_score_cv_refresh(vacancy, args, 40))
+            self.assertFalse(_allows_explicit_low_score_cv_refresh(
+                vacancy, SimpleNamespace(allow_low_score_cv_refresh=False, document="cv"), 57
+            ))
+
+            match.write_text("score: 57\nrecommendation: possible_match\nhard_rejection: true\n", encoding="utf-8")
+            self.assertFalse(_allows_explicit_low_score_cv_refresh(vacancy, args, 57))
+            with self.assertRaisesRegex(ValueError, "requires --document cv"):
+                _allows_explicit_low_score_cv_refresh(
+                    vacancy, SimpleNamespace(allow_low_score_cv_refresh=True, document="cover-letter"), 57
+                )
 
     def test_doctor_ci_skips_only_host_local_converter_checks(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
