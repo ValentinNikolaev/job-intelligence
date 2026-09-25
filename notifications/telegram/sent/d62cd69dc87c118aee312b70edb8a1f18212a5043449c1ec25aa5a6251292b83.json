@@ -1,0 +1,163 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-25T01:38:07Z",
+  "delivered_at": "2026-09-25T01:41:32Z",
+  "delivered_vacancy_ids": [
+    "0cd41a50-9abe-436b-843f-a54c85d6aca2",
+    "98523299-90b7-41c1-b733-437b63cff76d",
+    "4d0f08ce-5823-40c1-9a64-1a6461208ec3",
+    "15778eca-d074-420f-8bac-c2cb164d5096",
+    "05157206-8864-4b3a-bb38-cb8d42304ac8",
+    "5b6ee848-5d71-4f63-83a4-cad0226bf54a",
+    "72551b16-b096-4a2c-805a-53ea37fb0442",
+    "72f6ead5-395f-45d9-bb98-9554ece2fe48",
+    "d43a3058-b24c-4625-872e-52756000be12",
+    "e337809b-051d-4eb8-b668-01aa70fb26b2",
+    "bd177803-0ee5-40d6-bc76-5dcf943cd454",
+    "43fccc2b-0b90-468b-8625-18682768f254",
+    "0cba921f-97e3-4ccb-a1f8-e41d83b68109"
+  ],
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "NuxGame",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004220_nuxgame_middle-golang-developer_0cd41a50-9abe-436b-843f-a54c85d6aca2",
+      "score": 90,
+      "title": "Middle Golang Developer",
+      "url": "https://djinni.co/jobs/845741-middle-golang-developer/",
+      "vacancy_id": "0cd41a50-9abe-436b-843f-a54c85d6aca2"
+    },
+    {
+      "company": "ZFORT Group",
+      "country_codes": [],
+      "directory": "2026-09-25_004218_zfort-group_backend-golang-developer_98523299-90b7-41c1-b733-437b63cff76d",
+      "score": 86,
+      "title": "Backend/Golang Developer",
+      "url": "https://djinni.co/jobs/850128-backend-golang-developer/",
+      "vacancy_id": "98523299-90b7-41c1-b733-437b63cff76d"
+    },
+    {
+      "company": "TrueLabel",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_truelabel_senior-php-developer-with-igaming-experience_4d0f08ce-5823-40c1-9a64-1a6461208ec3",
+      "score": 90,
+      "title": "Senior PHP Developer (with iGaming experience)",
+      "url": "https://djinni.co/jobs/850052-senior-php-developer-with-igaming-experience/",
+      "vacancy_id": "4d0f08ce-5823-40c1-9a64-1a6461208ec3"
+    },
+    {
+      "company": "Soco",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_soco_backend-and-infrastructure-engineer-go-postgresq_15778eca-d074-420f-8bac-c2cb164d5096",
+      "score": 78,
+      "title": "Backend and infrastructure Engineer (Go, PostgreSQL, Airflow)",
+      "url": "https://djinni.co/jobs/849295-backend-and-infrastructure-engineer-go-postgr/",
+      "vacancy_id": "15778eca-d074-420f-8bac-c2cb164d5096"
+    },
+    {
+      "company": "SlotCatalog",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_slotcatalog_senior-php-developer_05157206-8864-4b3a-bb38-cb8d42304ac8",
+      "score": 90,
+      "title": "Senior PHP Developer",
+      "url": "https://djinni.co/jobs/838747-senior-php-developer/",
+      "vacancy_id": "05157206-8864-4b3a-bb38-cb8d42304ac8"
+    },
+    {
+      "company": "SIXT",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_sixt_middle-backend-engineer-golang-php_5b6ee848-5d71-4f63-83a4-cad0226bf54a",
+      "score": 87,
+      "title": "Middle Backend Engineer (Golang+PHP)",
+      "url": "https://djinni.co/jobs/850092-middle-backend-engineer-golang-php/",
+      "vacancy_id": "5b6ee848-5d71-4f63-83a4-cad0226bf54a"
+    },
+    {
+      "company": "Phoenixgame",
+      "country_codes": [],
+      "directory": "2026-09-25_004218_phoenixgame_middle-senior-backend-developer-python-ruby-php_72551b16-b096-4a2c-805a-53ea37fb0442",
+      "score": 90,
+      "title": "Middle / Senior Backend Developer (Python / Ruby / PHP)",
+      "url": "https://djinni.co/jobs/841341-middle-senior-backend-developer-python-ruby-p/",
+      "vacancy_id": "72551b16-b096-4a2c-805a-53ea37fb0442"
+    },
+    {
+      "company": "Nova Digital",
+      "country_codes": [],
+      "directory": "2026-09-25_004218_nova-digital_lead-backend-php-developer_72f6ead5-395f-45d9-bb98-9554ece2fe48",
+      "score": 90,
+      "title": "Lead Backend PHP Developer",
+      "url": "https://djinni.co/jobs/837817-lead-backend-php-developer/",
+      "vacancy_id": "72f6ead5-395f-45d9-bb98-9554ece2fe48"
+    },
+    {
+      "company": "New Wave Devs",
+      "country_codes": [],
+      "directory": "2026-09-25_004218_new-wave-devs_senior-backend-engineer-go-llm-and-rag-in-produc_d43a3058-b24c-4625-872e-52756000be12",
+      "score": 86,
+      "title": "Senior Backend Engineer (Go), LLM and RAG in production, AI product",
+      "url": "https://djinni.co/jobs/849837-senior-backend-engineer-go-llm-and-rag-in-pro/",
+      "vacancy_id": "d43a3058-b24c-4625-872e-52756000be12"
+    },
+    {
+      "company": "Mobilunity",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_mobilunity_fullstack-laravel-engineer_e337809b-051d-4eb8-b668-01aa70fb26b2",
+      "score": 81,
+      "title": "Fullstack Laravel Engineer",
+      "url": "https://djinni.co/jobs/841312-fullstack-laravel-engineer/",
+      "vacancy_id": "e337809b-051d-4eb8-b668-01aa70fb26b2"
+    },
+    {
+      "company": "Mantah",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_mantah_lead-go-developer_bd177803-0ee5-40d6-bc76-5dcf943cd454",
+      "score": 86,
+      "title": "Lead Go Developer",
+      "url": "https://djinni.co/jobs/849368-lead-go-developer/",
+      "vacancy_id": "bd177803-0ee5-40d6-bc76-5dcf943cd454"
+    },
+    {
+      "company": "Mantah",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_mantah_go-developer_43fccc2b-0b90-468b-8625-18682768f254",
+      "score": 75,
+      "title": "Go Developer",
+      "url": "https://djinni.co/jobs/849362-go-developer/",
+      "vacancy_id": "43fccc2b-0b90-468b-8625-18682768f254"
+    },
+    {
+      "company": "Luxoft",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-25_004218_luxoft_senior-devops-engineer-developer-go-node-typescr_0cba921f-97e3-4ccb-a1f8-e41d83b68109",
+      "score": 73,
+      "title": "Senior DevOps Engineer / Developer (Go, Node, TypeScrip, Kubernetes)",
+      "url": "https://djinni.co/jobs/849707-senior-devops-engineer-developer-go-node-type/",
+      "vacancy_id": "0cba921f-97e3-4ccb-a1f8-e41d83b68109"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d62cd69dc87c118aee312b70edb8a1f18212a5043449c1ec25aa5a6251292b83",
+  "schema_version": 2,
+  "telegram_message_id": 242
+}
