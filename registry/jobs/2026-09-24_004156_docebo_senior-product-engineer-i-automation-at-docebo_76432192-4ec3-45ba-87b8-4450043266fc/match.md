@@ -1,25 +1,26 @@
 # Match Analysis
 
-**Score:** 72/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-The Senior Product Engineer I - Automation at Docebo role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Automation and backend experience align well with the product-engineering scope and Go/PHP stack; three office days in Toronto is a material location concern.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- Go and PHP
+- support automation
+- APIs and production reliability
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Toronto office presence and broader product-stack details
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Remote/hybrid location is Toronto with three office days
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior Product Engineer I - Automation at Docebo backend engineering scope | critical / stated | partial | Senior Product Engineer I - Automation at Docebo | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
+| Automation product engineering | high / stated | strong | Senior Product Engineer I - Automation | I design and own a support automation platform | Toronto office attendance may be incompatible with Rome-based work. / Verify whether European remote work is permitted. |

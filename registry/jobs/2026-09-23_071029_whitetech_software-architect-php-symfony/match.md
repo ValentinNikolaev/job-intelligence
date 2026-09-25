@@ -1,25 +1,28 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 89/100  
 **Recommendation:** Strong Match
 
-The Software Architect (PHP/Symfony) role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+PHP/Symfony architecture, fintech, payments, scalability and technical authority align closely with the candidate's leadership and finance-related background.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- Software architecture
+- PHP/Symfony
+- fintech
+- payments
+- technical leadership
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Exact financial-platform scale and open-banking details are not established
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Cross-team architect scope may require more recent architecture ownership evidence
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Software Architect (PHP/Symfony) backend engineering scope | critical / stated | strong | Software Architect (PHP/Symfony) | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| Mission-critical fintech architecture | critical / stated | strong | mission-critical fintech products | My background spans various domains, including Document automation, Technology, | / |

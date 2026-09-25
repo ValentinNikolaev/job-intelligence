@@ -1,25 +1,30 @@
 # Match Analysis
 
-**Score:** 91/100  
+**Score:** 93/100  
 **Recommendation:** Strong Match
 
-The Backend Engineer (PHP/Laravel) role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+PHP/Laravel, PostgreSQL, APIs, payments, queues, integrations and architecture are exceptionally aligned with the candidate profile.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- PHP
+- Laravel
+- PostgreSQL
+- REST APIs
+- payments
+- queues
+- architecture
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Laravel 12 and PHP 8.2 specifics are not independently evidenced
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Remote/location terms are not stated in the supplied excerpt
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend Engineer (PHP/Laravel) backend engineering scope | critical / stated | strong | Backend Engineer (PHP/Laravel) | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| Laravel/PHP backend | critical / stated | strong | Laravel 12 / PHP 8.2 | Developed a Laravel/Symfony-based product-wide logger package | / |

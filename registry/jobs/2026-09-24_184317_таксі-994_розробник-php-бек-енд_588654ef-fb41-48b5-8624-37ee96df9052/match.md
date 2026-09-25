@@ -3,23 +3,25 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-The Розробник php (Бек-енд) role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Strong PHP and backend integration fit for API, payments, notifications, and support-bot work; SQL is supported, while Ukrainian-language and local-work details are uncertain.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- PHP backend development
+- payment integrations
+- APIs
+- automation and support systems
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Specific current SQL depth is not detailed
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Work arrangement and language requirements are not stated in the supplied posting
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Розробник php (Бек-енд) backend engineering scope | critical / stated | partial | Розробник php (Бек-енд) | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
+| PHP backend development | critical / stated | strong | Необхідні навички: php, sql. | Backend engineer with 15+ years of experience building and improving production | / |

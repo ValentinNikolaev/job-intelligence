@@ -3,23 +3,26 @@
 **Score:** 72/100  
 **Recommendation:** Match
 
-The Staff Product Engineer at Docebo role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Staff-level backend, architecture and leadership evidence is strong, with Go and PHP overlap; Toronto hybrid attendance and JavaScript/TypeScript breadth are concerns.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- Staff-level architecture
+- technical leadership
+- Go
+- PHP
+- product collaboration
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- JavaScript and TypeScript are not evidenced
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Three office days in Toronto
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Staff Product Engineer at Docebo backend engineering scope | critical / stated | partial | Staff Product Engineer at Docebo | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
+| Staff seniority | critical / stated | strong | Seniority | I'm a highly experienced developer with over 15 years of expertise. | / |

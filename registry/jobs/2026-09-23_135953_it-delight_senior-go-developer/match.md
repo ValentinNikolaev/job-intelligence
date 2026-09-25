@@ -1,26 +1,29 @@
 # Match Analysis
 
-**Score:** 86/100  
-**Recommendation:** Strong Match
+**Score:** 67/100  
+**Recommendation:** Match
 
-Strong senior Go alignment with backend architecture, APIs, reliability, and team collaboration evidence.
+Go, microservices, Kubernetes and ArgoCD are strong matches, while Kafka, mTLS, banking integrations and Russian working language are not fully evidenced.
 
 ## Why it matches
 
 - Go
-- scalable backend systems
-- observability and reliability
+- microservices
+- Kubernetes
+- ArgoCD
+- distributed systems
 
 ## Gaps
 
-- Vacancy-specific framework requirements may need confirmation
+- Kafka
+- mTLS and core-banking integrations
 
 ## Concerns
 
-- Exact seniority expectations are not fully captured
+- Russian is listed as native/bilingual but the profile contains duplicate language records
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior Go Developer backend engineering scope | critical / stated | strong | Senior Go Developer | robust, scalable backend in Go | / |
+| Working language Russian | critical / stated | strong | Team: Distributed, working language — Russian | Russian - Native or Bilingual | Profile retains duplicate language entries and should be reconciled. / Confirm current spoken Russian level. |

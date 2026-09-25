@@ -1,25 +1,28 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 93/100  
 **Recommendation:** Strong Match
 
-The Job Position - PHP Backend - NEXTIP role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+PHP/Laravel backend and contact-center platform work align very strongly with the candidate's experience; WebSocket, Italian and exact location expectations are unknown.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- PHP
+- Laravel
+- APIs
+- automation
+- messaging/contact-center systems
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- WebSocket and Italian proficiency are not evidenced
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Romanian-language page variant does not establish different role requirements
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Job Position - PHP Backend - NEXTIP backend engineering scope | critical / stated | strong | Job Position - PHP Backend - NEXTIP | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| PHP/Laravel backend | critical / stated | strong | SENIOR PHP BACKEND DEVELOPER | Developed a Laravel/Symfony-based product-wide logger package | / |

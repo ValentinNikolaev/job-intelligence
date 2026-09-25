@@ -1,25 +1,29 @@
 # Match Analysis
 
-**Score:** 72/100  
+**Score:** 70/100  
 **Recommendation:** Match
 
-The Senior Product Engineer II - Fullstack at Docebo role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Senior backend and automation experience match Go/PHP product engineering, but full-stack JavaScript/TypeScript and Toronto hybrid attendance reduce fit.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- Go
+- PHP
+- backend systems
+- automation
+- senior experience
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- JavaScript
+- TypeScript and Node.js are not evidenced
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Toronto hybrid location
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior Product Engineer II - Fullstack at Docebo backend engineering scope | critical / stated | partial | Senior Product Engineer II - Fullstack at Docebo | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
+| Full-stack product engineering | high / stated | partial | Senior Product Engineer II - Fullstack | Backend engineer with 15+ years of experience building and improving production | Frontend stack depth is not established. / Confirm backend-focused scope and frontend expectations. |

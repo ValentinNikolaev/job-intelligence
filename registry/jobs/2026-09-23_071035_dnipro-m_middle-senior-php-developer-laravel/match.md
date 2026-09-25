@@ -1,25 +1,29 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 91/100  
 **Recommendation:** Strong Match
 
-The Middle/Senior PHP Developer (Laravel) role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+PHP/Laravel, microservices, PostgreSQL, Redis-adjacent messaging, Docker/Kubernetes and testing align strongly; exact Docker and PHPUnit evidence is limited.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- PHP
+- Laravel
+- microservices
+- PostgreSQL
+- Kubernetes
+- RabbitMQ
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Docker and PHPUnit are not explicit in the candidate profile
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Work arrangement and language details need confirmation
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Middle/Senior PHP Developer (Laravel) backend engineering scope | critical / stated | strong | Middle/Senior PHP Developer (Laravel) | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| PHP and Laravel experience | critical / stated | strong | Досвід роботи з PHP 8.2+ та Laravel від 2 років | - Laravel | / |

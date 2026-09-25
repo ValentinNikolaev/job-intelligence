@@ -3,24 +3,26 @@
 **Score:** 88/100  
 **Recommendation:** Strong Match
 
-Strong backend Go fit with relevant production ownership, APIs, distributed systems, and cloud experience.
+Go backend, microservices, scalability, reliability and technical-lead experience align closely; gRPC and fluent business English should be verified.
 
 ## Why it matches
 
-- Go backend
-- AWS and distributed systems
-- production reliability
+- Go
+- microservices
+- resilience
+- system design
+- technical leadership
 
 ## Gaps
 
-- Specific product-domain details are limited
+- Specific gRPC depth is not explicit
 
 ## Concerns
 
-- Some employer and process details are not explicit
+- Business-English proficiency is described but not formally levelled
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend/Golang Developer backend engineering scope | critical / stated | strong | Backend/Golang Developer | robust, scalable backend in Go | / |
+| Go applications with resilience and uptime | critical / stated | strong | Experience building Go applications with a focus on resilience and uptime | Build resilient message delivery pipelines with fallback logic, retries, and | / |

@@ -1,25 +1,28 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 94/100  
 **Recommendation:** Strong Match
 
-The SENIOR PHP BACKEND DEVELOPER role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Senior PHP/Laravel backend, contact-center domain, APIs, automation and Italian location align exceptionally well; WebSocket and Italian fluency are uncertain.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- PHP
+- Laravel
+- backend architecture
+- support/contact-center domain
+- Italy
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- WebSocket and Italian proficiency are not evidenced
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- The posting requires strong Italian-context communication details not supplied
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| SENIOR PHP BACKEND DEVELOPER backend engineering scope | critical / stated | strong | SENIOR PHP BACKEND DEVELOPER | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| PHP/Laravel backend | critical / stated | strong | Sviluppatore Senior PHP BACKEND Developer – LARAVEL | Backend engineer with 15+ years of experience building and improving production | / |

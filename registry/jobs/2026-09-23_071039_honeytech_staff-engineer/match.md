@@ -1,25 +1,27 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 85/100  
+**Recommendation:** Strong Match
 
-The Staff Engineer role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Staff architecture, hands-on backend scaling, asynchronous processing and technical influence fit the role; Ukrainian product context and exact stack are partly unspecified.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- Architecture
+- backend scaling
+- asynchronous processing
+- hands-on technical leadership
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Exact required language and stack details are not fully visible
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
+- Role requires balancing architecture with direct implementation
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Staff Engineer backend engineering scope | critical / stated | partial | Staff Engineer | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
+| Staff architectural and backend expertise | critical / stated | strong | Шукаємо в команду | Directly managed 10 developers. | / |
