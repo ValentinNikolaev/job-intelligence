@@ -3,26 +3,21 @@
 **Score:** 72/100  
 **Recommendation:** Match
 
-Broad backend developer fit across Go, PHP, APIs, AWS, databases, CI/CD, and production systems; the generic posting leaves seniority, stack, and location requirements uncertain.
+Broad developer fit supported by substantial backend, PHP, Go, cloud, integrations, and production reliability experience.
 
 ## Why it matches
 
-- backend development
-- Go
-- PHP
-- APIs
-- AWS
+- Backend breadth
+- PHP and Go
+- cloud infrastructure
+- production operations
 
 ## Gaps
 
-- Exact technology and seniority requirements are unclear
+- Role level
+- frontend needs
+- and domain are unclear
 
 ## Concerns
 
-- Generic vacancy text limits precise matching
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Software development | critical / stated | strong | Developer | PHP | / |
+- Generic posting leaves material requirements uncertain

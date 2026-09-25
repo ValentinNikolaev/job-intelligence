@@ -1,20 +1,21 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Strong PHP and backend overlap with documented API, integrations, and production reliability experience; remote and domain details need confirmation.
+Strong PHP backend match with Laravel/Symfony experience, databases, APIs, performance optimization, and production delivery.
 
 ## Why it matches
 
-- PHP backend development
-- APIs and integrations
-- production reliability
+- PHP
+- Laravel and Symfony
+- database optimization
+- API engineering
 
 ## Gaps
 
-- Role-specific product and domain experience is not evidenced
+- Employer-specific framework and domain details are unknown
 
 ## Concerns
 
-- Remote and location compatibility should be confirmed
+- Compensation and work model need confirmation

@@ -3,23 +3,19 @@
 **Score:** 72/100  
 **Recommendation:** Match
 
-The Cloud Engineer II at Docebo role aligns with the candidate's backend engineering and senior delivery background; the vacancy-specific stack and working arrangement determine the remaining risk.
+Good backend and cloud alignment through AWS, Kubernetes, CI/CD, event pipelines, and operational troubleshooting, with some cloud-engineering specifics unknown.
 
 ## Why it matches
 
-- Senior backend engineering experience is directly relevant to the role.
-- The candidate profile documents substantial PHP, Go, and technical leadership experience.
+- AWS and Kubernetes
+- event-driven infrastructure
+- CI/CD
+- observability
 
 ## Gaps
 
-- Some vacancy-specific tools or domain requirements are not explicitly evidenced in the Candidate Profile.
+- Exact cloud platform scope and infrastructure ownership are unclear
 
 ## Concerns
 
-- Working arrangement, compensation, and any unlisted mandatory requirements should be confirmed before preparation.
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Cloud Engineer II at Docebo backend engineering scope | critical / stated | partial | Cloud Engineer II at Docebo | I have a strong track record in PHP, with 5 years of leadership experience. | The title alone does not establish the complete stack or scope required for this role. / Confirm the full mandatory stack and responsibilities from the vacancy before preparation. |
+- Cloud Engineer emphasis may exceed the documented software focus

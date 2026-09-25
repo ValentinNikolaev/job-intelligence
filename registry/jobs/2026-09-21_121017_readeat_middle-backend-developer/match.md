@@ -3,18 +3,19 @@
 **Score:** 80/100  
 **Recommendation:** Strong Match
 
-Backend engineering experience substantially exceeds the middle-level baseline and includes PHP, Go, APIs, databases, and reliability work.
+Strong backend fit for PHP, databases, AWS, Redis, high-load systems, and engineering-quality responsibilities; Yii2 and Terraform are less certain.
 
 ## Why it matches
 
-- Backend systems
-- PHP and Go
-- APIs and databases
+- PHP backend
+- AWS
+- databases
+- high-load and performance work
 
 ## Gaps
 
-- Company domain experience is not evidenced
+- Yii2 and Terraform are not established
 
 ## Concerns
 
-- Role level and compensation alignment should be checked
+- Middle-level scope may underuse the candidate's seniority

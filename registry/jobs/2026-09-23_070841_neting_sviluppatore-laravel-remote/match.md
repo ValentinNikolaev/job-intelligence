@@ -1,18 +1,21 @@
 # Match Analysis
 
-**Score:** 89/100  
+**Score:** 92/100  
 **Recommendation:** Strong Match
 
-Strong direct remote Laravel match aligned with PHP backend experience.
+Excellent fit for a remote Laravel role, supported by extensive PHP, Laravel, API, database, and reliability experience.
 
 ## Why it matches
 
-- Remote role
+- Laravel and PHP depth
+- remote fit
+- system design
+- database and performance work
 
 ## Gaps
 
-- Language and compensation unknown
+- Specific team and project constraints are unknown
 
 ## Concerns
 
-- Seniority needs confirmation
+- Salary and start timing are unknown

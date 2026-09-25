@@ -1,20 +1,21 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Candidate has strong PHP and Laravel backend evidence with senior delivery and integration experience; part-time expectations require confirmation.
+Strong Laravel and regulated-client portal alignment with production PHP, APIs, deployment, and independent delivery experience.
 
 ## Why it matches
 
-- Laravel and PHP
-- backend integrations
-- senior engineering experience
+- Laravel
+- PHP production systems
+- backend delivery
+- regulated-domain adjacency
 
 ## Gaps
 
-- Part-time availability is unknown
+- Azure App Service and current hourly availability are unknown
 
 ## Concerns
 
-- Language and engagement conditions should be confirmed
+- Part-time hours and rate require confirmation

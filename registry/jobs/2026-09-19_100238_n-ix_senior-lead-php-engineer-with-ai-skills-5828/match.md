@@ -3,18 +3,19 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Senior PHP and technical-lead experience aligns with backend architecture, mentoring, delivery, and the role's AI-adjacent context.
+Strong PHP/Laravel and leadership fit with documented LLM-assisted automation, backend ownership, cloud, databases, and production engineering.
 
 ## Why it matches
 
-- PHP leadership
-- architecture and delivery
-- AI automation exposure
+- PHP and Laravel
+- technical leadership
+- LLM automation
+- backend architecture
 
 ## Gaps
 
-- Specific AI engineering requirements are not fully evidenced
+- Agentic orchestration depth and Toronto-time overlap are not fully established
 
 ## Concerns
 
-- Role scope and remote eligibility should be confirmed
+- Required EDT schedule may be a practical constraint

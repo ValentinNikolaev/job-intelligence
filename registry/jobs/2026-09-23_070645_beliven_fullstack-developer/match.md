@@ -3,28 +3,19 @@
 **Score:** 68/100  
 **Recommendation:** Match
 
-Solid backend and end-to-end engineering foundation with PHP, Go, APIs, AWS, CI/CD, and event-driven systems; frontend depth and the hybrid office requirement need verification.
+Backend-heavy full-stack fit through PHP, Go, APIs, databases, and delivery infrastructure, while frontend depth is not strongly documented.
 
 ## Why it matches
 
-- backend engineering
-- Go
-- PHP
-- AWS
+- Backend engineering
+- PHP and Go
 - APIs
 - CI/CD
 
 ## Gaps
 
-- Deep frontend experience is not established
+- Frontend scope and framework experience are limited or unknown
 
 ## Concerns
 
-- Hybrid work requires three office days weekly; compatibility with Rome-based location is unclear
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Full-stack engineering across frontend and backend | critical / stated | partial | Conoscenza di Javascript (ES6+) | PHP | Frontend depth may be below the role’s expected breadth. / Emphasize end-to-end ownership and verify frontend expectations. |
-| Cloud, CI/CD and observability | high / stated | strong | Conoscenza di uno o più strumenti per CI/CD | AWS | / |
+- Full-stack expectations may reduce fit

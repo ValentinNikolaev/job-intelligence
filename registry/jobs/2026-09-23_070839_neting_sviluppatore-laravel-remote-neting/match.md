@@ -1,28 +1,21 @@
 # Match Analysis
 
-**Score:** 87/100  
+**Score:** 91/100  
 **Recommendation:** Strong Match
 
-Strong Laravel/PHP fit with an explicitly remote role, supported by extensive backend, API, database, and operational experience; Italian-language expectations are uncertain.
+Strong Laravel/PHP match with proven backend delivery, production troubleshooting, and scalable service experience.
 
 ## Why it matches
 
-- Laravel
-- PHP
-- remote compatibility
-- APIs
-- production systems
+- PHP and Laravel
+- scalable backend systems
+- API performance
+- remote work
 
 ## Gaps
 
-- Italian-language requirement is not confirmed
+- Posting-specific expectations are not fully evidenced
 
 ## Concerns
 
-- Confirm required spoken/written Italian level
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Laravel/PHP development | critical / stated | strong | Sviluppatore Laravel Remote - Neting | PHP \| Laravel | / |
+- Compensation and availability are unknown

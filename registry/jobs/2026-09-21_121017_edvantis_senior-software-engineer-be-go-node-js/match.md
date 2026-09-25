@@ -1,20 +1,25 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Go backend, distributed systems, APIs, AWS, Kubernetes, and CI/CD experience align well with the senior backend role.
+Strong Go and distributed-backend alignment with APIs, microservices, Kubernetes, CI/CD, performance, and production troubleshooting.
 
 ## Why it matches
 
-- Go backend engineering
-- cloud and Kubernetes
-- production systems
+- Go
+- microservices
+- Kubernetes
+- CI/CD
+- reliability
 
 ## Gaps
 
-- Node.js depth is not clearly evidenced
+- Node.js
+- streaming/ad-tech
+- MongoDB
+- and gRPC are not clearly evidenced
 
 ## Concerns
 
-- Exact remote and timezone terms should be confirmed
+- Domain-specific media and low-latency requirements need validation
