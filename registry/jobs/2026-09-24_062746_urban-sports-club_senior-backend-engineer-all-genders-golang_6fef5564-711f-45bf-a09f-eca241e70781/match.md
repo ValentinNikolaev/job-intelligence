@@ -1,23 +1,21 @@
 # Match Analysis
 
-**Score:** 83/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Senior Backend Engineer (all genders) - Golang at Urban Sports Club aligns with the candidate’s backend experience, with the listed gaps requiring verification.
+Strong Go backend, event-driven and reliability fit; Valencia location and role-specific domain requirements need confirmation.
 
 ## Why it matches
 
-- Backend engineering experience across production systems and APIs
-- Documented Go backend and distributed-systems experience
+- Go
+- event-driven systems
+- scalable APIs
+- production reliability
+
+## Gaps
+
+- Exact Go framework and domain experience are unknown
 
 ## Concerns
 
-- Verify location, working-hours, compensation, and availability details with the employer
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Production backend development | critical / stated | strong | # Senior Backend Engineer (all genders) - Golang | Backend Engineer | / |
-| Relevant primary language/framework | high / stated | strong | # Senior Backend Engineer (all genders) - Golang | Go | / |
-| Distributed systems, APIs, or microservices | high / stated | strong | # Senior Backend Engineer (all genders) - Golang | Go | / |
+- Valencia location may conflict with remote preference

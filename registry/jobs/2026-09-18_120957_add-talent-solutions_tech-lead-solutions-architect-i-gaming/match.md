@@ -1,28 +1,21 @@
 # Match Analysis
 
-**Score:** 85/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Tech Lead — Solutions Architect (I-Gaming) at Add Talent Solutions aligns with the candidate’s backend experience, with the listed gaps requiring verification.
+Technical leadership, architecture, PHP, Go, cloud and i-gaming-adjacent product experience provide a good fit.
 
 ## Why it matches
 
-- Backend engineering experience across production systems and APIs
-- Documented Go backend and distributed-systems experience
-- Documented PHP framework and backend experience
+- Technical leadership
+- system architecture
+- PHP and Go
+- product delivery
 
 ## Gaps
 
-- Node.js or JavaScript/TypeScript depth is not established in the candidate profile
+- Specific solutions-architecture and gaming requirements are partly unknown
 
 ## Concerns
 
-- Verify location, working-hours, compensation, and availability details with the employer
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Production backend development | critical / stated | strong | # Tech Lead — Solutions Architect (I-Gaming) | Backend Engineer | / |
-| Relevant primary language/framework | high / stated | strong | # Tech Lead — Solutions Architect (I-Gaming) | Go | / |
-| Distributed systems, APIs, or microservices | high / stated | strong | microservices | Go | / |
+- Location and remote policy need confirmation

@@ -1,23 +1,21 @@
 # Match Analysis
 
-**Score:** 83/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Senior Backend Engineer (all genders) - PHP at Urban Sports Club aligns with the candidate’s backend experience, with the listed gaps requiring verification.
+Strong PHP backend and digital-product experience match the role; Valencia location and domain specifics require confirmation.
 
 ## Why it matches
 
-- Backend engineering experience across production systems and APIs
-- Documented PHP framework and backend experience
+- PHP
+- scalable backend services
+- digital products
+- performance and reliability
+
+## Gaps
+
+- Exact framework and Spanish workplace requirements are unknown
 
 ## Concerns
 
-- Verify location, working-hours, compensation, and availability details with the employer
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Production backend development | critical / stated | strong | # Senior Backend Engineer (all genders) - PHP | Backend Engineer | / |
-| Relevant primary language/framework | high / stated | strong | PHP | PHP | / |
-| Distributed systems, APIs, or microservices | high / stated | strong | # Senior Backend Engineer (all genders) - PHP | Go | / |
+- Valencia location may conflict with remote preference
