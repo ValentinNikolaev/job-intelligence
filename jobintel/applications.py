@@ -460,8 +460,8 @@ class ApplicationGenerator:
                 _write_text(staging / filename, generated[field])
             if self.document in {None, "cv"}:
                 self.converter.convert(staging / "cv.md", staging / "cv.docx")
-                shutil.copyfile(staging / "cv.md", staging / cv_export_files["markdown"])
-                shutil.copyfile(staging / "cv.docx", staging / cv_export_files["docx"])
+                shutil.copyfile(_win_long_path(staging / "cv.md"), _win_long_path(staging / cv_export_files["markdown"]))
+                shutil.copyfile(_win_long_path(staging / "cv.docx"), _win_long_path(staging / cv_export_files["docx"]))
             if self.document in {None, "cover-letter"}:
                 self.converter.convert(
                     staging / "cover-letter.md", staging / "cover-letter.docx"
@@ -1591,18 +1591,35 @@ def _content_version(content: str) -> str:
     return "sha256:" + hashlib.sha256(content.encode("utf-8")).hexdigest()
 
 
+def _win_long_path(path: Path) -> Path:
+    """Bypass Windows' 260-character MAX_PATH limit for deeply nested drafts.
+
+    Vacancy directory names carry a slug plus a UUID, and staging adds a
+    hidden-dot prefix and a UUID-suffixed temp name on top of that; combined,
+    these routinely exceed MAX_PATH on a stock Windows install (LongPathsEnabled
+    is off by default), turning a real path into a bogus FileNotFoundError.
+    """
+    if os.name != "nt":
+        return path
+    resolved = str(path.resolve())
+    if resolved.startswith("\\\\?\\"):
+        return path
+    return Path("\\\\?\\" + resolved)
+
+
 def _write_text(path: Path, content: str) -> None:
     handled = op.write_operational(path, content)
     if handled is not None:
         return None
     path.parent.mkdir(parents=True, exist_ok=True)
     temp_path = path.with_name(f".{path.name}.{uuid.uuid4().hex}.tmp")
+    long_temp_path = _win_long_path(temp_path)
     try:
-        temp_path.write_text(content, encoding="utf-8", newline="\n")
-        os.replace(temp_path, path)
+        long_temp_path.write_text(content, encoding="utf-8", newline="\n")
+        os.replace(long_temp_path, _win_long_path(path))
     finally:
-        if temp_path.exists():
-            temp_path.unlink()
+        if long_temp_path.exists():
+            long_temp_path.unlink()
 
 
 def _utc_iso(value: datetime) -> str:

@@ -170,7 +170,11 @@ class FakeMatchClient:
 
 class ApplicationTests(unittest.TestCase):
     def setUp(self) -> None:
-        self.temp = tempfile.TemporaryDirectory()
+        # ignore_cleanup_errors: a long vacancy-directory regression test below
+        # creates paths deep enough that plain shutil.rmtree can intermittently
+        # trip Windows' MAX_PATH during teardown; that is a cleanup-only quirk;
+        # the production code path itself is exercised (and fixed) in-test.
+        self.temp = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
         self.project = Path(self.temp.name)
         self.registry_root = self.project / "registry"
         self.profile = self.project / "candidate.md"
@@ -396,6 +400,43 @@ class ApplicationTests(unittest.TestCase):
         self.assertNotIn("simple_life_end_date", manifest)
         self.assertEqual(QUALITY_CONTRACT_VERSION, manifest["quality_contract_version"])
         self.assertIn("documents", manifest["quality"])
+
+    def test_generates_package_under_a_deeply_nested_long_vacancy_directory(self) -> None:
+        # A long vacancy slug plus the hidden-dot, UUID-suffixed staging temp
+        # names it produces can exceed Windows' 260-character MAX_PATH, which
+        # a stock install does not opt out of (LongPathsEnabled defaults to 0).
+        # This reproduces that shape and confirms publication still succeeds.
+        registry = Registry(
+            self.registry_root,
+            clock=lambda: self.now,
+            id_factory=lambda: "vacancy-long",
+        )
+        long_title = "Senior Backend Engineer " + "With A Very Long Descriptive Role Title " * 4
+        created = registry.upsert(
+            NormalizedJob(
+                source="direct",
+                source_job_id="job-long",
+                source_url="https://example.test/jobs/long",
+                title=long_title,
+                company="A Company With An Unusually Long Name For Path Testing",
+                description="Build Go services.",
+                location="Remote Europe",
+                remote=True,
+            )
+        )
+        long_directory = self.registry_root / "jobs" / created.directory
+        (long_directory / "company.md").write_text(
+            "# A Company With An Unusually Long Name For Path Testing\n\nA product company.\n",
+            encoding="utf-8",
+        )
+        generator = self._generator(FakeClient(), FakeConverter())
+
+        result = generator.generate_directory(long_directory)
+
+        self.assertEqual("prepared", result.status)
+        application = long_directory / "application"
+        for filename in ("cv.md", "cv.docx", "cover-letter.md", "interview-preparation.md", "analysis.md", "manifest.yaml"):
+            self.assertTrue((application / filename).is_file(), f"missing {filename}")
 
     def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
         self.assertEqual(

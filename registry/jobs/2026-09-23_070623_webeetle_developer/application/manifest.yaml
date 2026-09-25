@@ -1,0 +1,807 @@
+profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+vacancy_version: sha256:f21fa90911d217d82a797a86b1887cd6568e2ba1df1679abdd0a0385fd38173c
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+model: codex:gpt-5.6-terra:medium
+quality_contract_version: 2
+cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
+generated_at: '2026-09-25T23:04:08Z'
+documents:
+  cv:
+    profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+    vacancy_version: sha256:f21fa90911d217d82a797a86b1887cd6568e2ba1df1679abdd0a0385fd38173c
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
+    generated_at: '2026-09-25T23:04:08Z'
+  cover-letter:
+    profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+    vacancy_version: sha256:f21fa90911d217d82a797a86b1887cd6568e2ba1df1679abdd0a0385fd38173c
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
+    generated_at: '2026-09-25T23:04:08Z'
+  analysis:
+    profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+    vacancy_version: sha256:f21fa90911d217d82a797a86b1887cd6568e2ba1df1679abdd0a0385fd38173c
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
+    generated_at: '2026-09-25T23:04:08Z'
+  interview-preparation:
+    profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+    vacancy_version: sha256:f21fa90911d217d82a797a86b1887cd6568e2ba1df1679abdd0a0385fd38173c
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
+    generated_at: '2026-09-25T23:04:08Z'
+quality:
+  contract_version: 2
+  documents:
+    cv:
+      word_count: 445
+      sha256: sha256:cfa43b733689533980fbf5bafe77181222e6a367c89c823b5b40d5c3cf0d0a8d
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+    cover-letter:
+      word_count: 344
+      sha256: sha256:12324917b8292e063ce2a8eb18c0b05f16a8c0ce185b8c1745d1605d6f559b46
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+    analysis:
+      word_count: 791
+      sha256: sha256:785a9bf512a6bddd8cd3a4faf1a0b0a465f95b9f75a07269df95dd40f0235432
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+    interview-preparation:
+      word_count: 829
+      sha256: sha256:b0da9573e9d236b240ef04874a2f6ab884a09dc0bf9e8b179b86c13a80f80b69
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+  document_format: standard
+  grounding:
+    schema_version: 1
+    sha256: 60d50fa5979215ea7c849adf58768da6a21b159ed1b2a03714f463589610d138
+    evidence_bank:
+      schema_version: 1
+      sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+      entry_count: 46
+      statuses:
+        cannot-confirm: 3
+        retracted: 3
+        unverified: 9
+        verified: 31
+    claim_count: 22
+    evidence_ids:
+    - airslate-letter-lead-scope
+    - airslate-letter-operations-people
+    - airslate-production-fixes
+    - career-15-years
+    - crurated-analytics
+    - crurated-event-design
+    - crurated-reviewed-delivery-reliability
+    - crurated-reviewed-stream-onboarding
+    - crurated-stream-design
+    - cv-hyprr
+    - database-reliability
+    - email-team
+    - support-confirmed-volume
+    - support-operations
+    - support-platform-linkedin
+    - support-user-confirmed-automation
+    evidence_entries:
+    - id: airslate-letter-lead-scope
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to Aug
+          22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning'
+        context_quote: © airSlate, Inc.
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-letter-operations-people
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'On-call (health check, duty development, sos-cases investigation)
+
+          > Knowledge sharing in the technical and domain area
+
+          > Technical on-boarding new members
+
+          > Participation in Personal Development Plans
+
+          > Conducting technical interview for new team members.'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-production-fixes
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Troubleshot** production issues using logs, monitoring, and SRE\
+          \ dashboards;\n  delivered fixes and operational improvements."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-authored CV excerpt and airSlate employer/role
+          attribution; no numerical outcome inferred.
+    - id: career-15-years
+      employer: null
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: 'Backend engineer with 15+ years of experience building and improving
+          production
+
+          systems across **PHP** and **Go**.'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-analytics
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: 'I architect and lead the development of the platform''s internal event
+          analytics
+
+          infrastructure - a mission-critical system that powers product metrics,
+          reporting, and
+
+          business insights.'
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-event-design
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Define a robust, versioned event schema to enforce consistency across\
+          \ teams and\n  accelerate integration of new event types."
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-reviewed-delivery-reliability
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED event delivery reliability exceeded 99.9% under the candidate's
+          technical ownership; Grafana was identified as a verification source.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated system scope and preserve original units;
+        candidate correction supersedes this entry.
+    - id: crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED new analytics stream setup dropped from several days to under
+          4 hours through modular design under the candidate's technical ownership;
+          operational observation was identified as the basis.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated system scope and preserve original units;
+        candidate correction supersedes this entry.
+    - id: crurated-stream-design
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Build routing logic supporting multiple downstreams (e.g., Webhook,\
+          \ S3) with strong\n  delivery guarantees and backpressure handling."
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\n\
+          Hyprr was a creator-focused digital platform with blockchain/NFT components\
+          \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+          \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+          \ development across project planning, microservice and serverless\n  architecture,\
+          \ CI/CD, and reliability/serviceability concerns.\n- Defined the technology\
+          \ roadmap with the CTO and helped establish the core stack for\n  product\
+          \ delivery.\n- Led backend development and worked on the platform's Ethereum-based\
+          \ digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel | MySQL\
+          \ | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+      status: verified
+      verification: &id001
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
+    - id: database-reliability
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+          \ and\n  redistributing workload, improving service stability during high-traffic\
+          \ periods."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: email-team
+      employer: PDFfiller
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '- **Led a team of 5 backend engineers developing a transactional email
+          service.**'
+        context_quote: '### PDFfiller
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: support-confirmed-volume
+      employer: Simple App
+      source:
+        path: registry/candidate/user-confirmed-impact-2026-09-25.md
+        quote: 'Confirmed scope for application claims: the Go support platform handled
+          at
+
+          least 20,000 tickets per ordinary month, volume grew to as much as three
+
+          times that level during the U.S. peak season, and the candidate personally
+
+          owned the platform''s operation under this load.'
+        context_quote: '## Simple.life / Simple App
+
+
+          **Role:** Software Developer'
+        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Transcribed direct candidate confirmation from the current task and
+          checked scope.
+      review_notes: Direct candidate confirmation; no independent source for measurement
+        method.
+    - id: support-operations
+      employer: Simple App
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Maintain high service uptime and throughput without adding team\
+          \ capacity, enabling\n  the support org to scale under pressure.\n- Collaborate\
+          \ cross-functionally with Support Ops, Product, and AI teams to align\n\
+          \  automation with measurable impact."
+        context_quote: '### Simple App
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: support-platform-linkedin
+      employer: Simple App
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: 'I design and own a support automation platform that connects Zendesk,
+          Intercom, and
+
+          internal services through a robust, scalable backend in Go. My work enables
+          the support
+
+          team to operate faster, smarter, and at scale - even during peak loads.'
+        context_quote: '### Simple App
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: support-user-confirmed-automation
+      employer: Simple App
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-impact-2026-09-25.md
+        quote: 'Confirmed scope for application claims, as of this reply: the overall
+
+          Simple.life support platform reaches up to 86% fully automated handling.
+
+          The candidate personally implemented many, but not all, automation scenarios.
+
+          The figure comes from internal Intercom metrics and custom backend metrics
+
+          exported to Grafana.'
+        context_quote: '## Simple.life / Simple App
+
+
+          **Role:** Software Developer'
+        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Transcribed direct candidate clarification, including scope and measurement
+          basis.
+      review_notes: 86% is the platform-wide current figure; candidate implemented
+        many, not all, scenarios.
+    checks:
+    - source_quotes
+    - source_hashes
+    - verified_status
+    - numeric_tokens
+    - declared_attribution
+    - cv_bullet_coverage
+    semantic_review_required: true
+    cv_audit:
+      target_role: Back-End Developer (PHP/Symfony/Node.js, microservices focus)
+      top_third_evidence_ids:
+      - career-15-years
+      - support-platform-linkedin
+      bullet_decisions:
+      - text: Designed and owned a support automation platform built on a scalable
+          Go backend
+        decision: keep
+        reason: Directly answers the posting's core PHP/Symfony backend requirement
+          track and demonstrates event-driven backend ownership; leads with the strongest,
+          most recent story.
+      - text: Personally owned platform operation under peak load reaching up to three
+          times the
+        decision: keep
+        reason: Demonstrates scale and personal ownership under load, relevant to
+          production reliability expectations.
+      - text: Reached up to 86% fully automated handling across the support platform's
+          ticket
+        decision: keep
+        reason: Quantified automation outcome supporting the candidate's operational
+          impact claim.
+      - text: Maintained high service uptime and throughput without adding team capacity.
+        decision: keep
+        reason: Supports reliability and efficiency, relevant to production-grade
+          backend expectations.
+      - text: Architected and led development of the platform's internal event analytics
+        decision: keep
+        reason: Directly matches the posting's stated focus on microservices/event-driven
+          enterprise architecture.
+      - text: Defined a versioned event schema to enforce consistency across teams
+          and speed
+        decision: keep
+        reason: Matches the posting's API/REST and distributed-systems architecture
+          requirement.
+      - text: Built routing logic across multiple downstream destinations, reaching
+          event
+        decision: keep
+        reason: Further evidences distributed API/event architecture depth relevant
+          to the role.
+      - text: Reduced new analytics stream setup time from several days to under 4
+          hours through
+        decision: keep
+        reason: Shows delivery efficiency and modular design judgment, a senior-level
+          signal.
+      - text: Reduced peak load on the main database by removing bottlenecks and redistributing
+        decision: keep
+        reason: Matches the posting's MySQL/RDBMS requirement with a concrete reliability
+          result.
+      - text: Led epic decomposition, task delegation, and technical health-check
+          monitoring for
+        decision: keep
+        reason: Evidences Agile/Scrum delivery leadership called out in the posting.
+      - text: Owned on-call operations, technical onboarding, and conducted technical
+          interviews
+        decision: keep
+        reason: Relevant to the posting's team-mentoring context and the candidate's
+          own onboarding-adjacent transparency about learning Italian.
+      - text: Troubleshot production issues using logs, monitoring, and SRE dashboards.
+        decision: keep
+        reason: Reinforces production reliability and operational ownership signal.
+      - text: Brought the product from prototype to closed beta in under six months.
+        decision: keep
+        reason: Compact older-role bullet showing delivery speed and ownership at
+          a smaller company, relevant to weBeetle's team size.
+      - text: Defined the technology roadmap directly with the CTO, establishing the
+          core
+        decision: keep
+        reason: Matches the posting's microservices requirement and shows architecture-level
+          judgment.
+      - text: Led a team of 5 backend engineers building a transactional email service
+          handling
+        decision: keep
+        reason: Compact older-role bullet demonstrating team leadership scale, kept
+          brief given its lower direct relevance to this posting's technical focus.
+    reviewer: Claude Sonnet 5 (active Codex task, self-review; no independent reviewer)
+    document_sha256:
+      cv: sha256:cfa43b733689533980fbf5bafe77181222e6a367c89c823b5b40d5c3cf0d0a8d
+      cover-letter: sha256:12324917b8292e063ce2a8eb18c0b05f16a8c0ce185b8c1745d1605d6f559b46
+      analysis: sha256:785a9bf512a6bddd8cd3a4faf1a0b0a465f95b9f75a07269df95dd40f0235432
+      interview-preparation: sha256:b0da9573e9d236b240ef04874a2f6ab884a09dc0bf9e8b179b86c13a80f80b69
+    requirements:
+    - requirement: On-site work in Angri, Italy or Split, Croatia with limited remote
+        days
+      importance: critical
+      basis: stated
+      jd_quote: 'Sede di lavoro @
+
+        Angri (SA), Italy
+
+        e
+
+        Spalato, Croazia
+
+        .'
+      match: unknown
+      candidate_quote: ''
+      risk: The candidate is based in Fiumicino/Rome, distant from either site, with
+        remote work capped at 2-4 days per month.
+      mitigation: Disclosed transparently; candidate to confirm logistics directly
+        with weBeetle before proceeding.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: PHP/Symfony backend development
+      importance: critical
+      basis: stated
+      jd_quote: Conoscenza di framework come Laravel / Symfony.
+      match: strong
+      candidate_quote: architect and lead the development of the platform's internal
+        event analytics
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - crurated-analytics
+    - requirement: MySQL or another RDBMS
+      importance: high
+      basis: stated
+      jd_quote: o altro database management system RDBMS.
+      match: strong
+      candidate_quote: Reduced** peak load on the main database by removing bottlenecks
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - database-reliability
+    - requirement: API/REST distributed systems architecture
+      importance: high
+      basis: stated
+      jd_quote: Conoscenza del linguaggio / librerie API e dell'architettura software
+        per i sistemi distribuiti REST.
+      match: strong
+      candidate_quote: Define a robust, versioned event schema to enforce consistency
+        across teams
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - crurated-event-design
+    - requirement: Agile/Scrum development lifecycle
+      importance: meaningful
+      basis: stated
+      jd_quote: Conoscenza del framework agile per la gestione del ciclo di sviluppo.
+      match: strong
+      candidate_quote: Led a team of 5 backend engineers developing a transactional
+        email service.
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - email-team
+    - requirement: 2+ years of experience in an analogous role
+      importance: preferred
+      basis: stated
+      jd_quote: 'I candidati devono avere un''esperienza di almeno
+
+        2 anni
+
+        in ruolo analogo'
+      match: strong
+      candidate_quote: 15+ years of experience building and improving production
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - career-15-years
+    evidence_bank_path: registry/evidence/achievements.yaml
+    claims_ledger_path: claims.yaml
+    claims:
+    - document: cv
+      text: 15+ years of experience
+      evidence_ids:
+      - career-15-years
+    - document: cv
+      text: Designed and owned a support automation platform built on a scalable Go
+        backend
+      evidence_ids:
+      - support-platform-linkedin
+    - document: cv
+      text: Personally owned platform operation under peak load reaching up to three
+        times the
+      evidence_ids:
+      - support-confirmed-volume
+    - document: cv
+      text: Reached up to 86% fully automated handling across the support platform's
+        ticket
+      evidence_ids:
+      - support-user-confirmed-automation
+    - document: cv
+      text: Maintained high service uptime and throughput without adding team capacity.
+      evidence_ids:
+      - support-operations
+    - document: cv
+      text: Architected and led development of the platform's internal event analytics
+      evidence_ids:
+      - crurated-analytics
+    - document: cv
+      text: Defined a versioned event schema to enforce consistency across teams and
+        speed
+      evidence_ids:
+      - crurated-event-design
+    - document: cv
+      text: Built routing logic across multiple downstream destinations, reaching
+        event
+      evidence_ids:
+      - crurated-stream-design
+    - document: cv
+      text: Reduced new analytics stream setup time from several days to under 4 hours
+        through
+      evidence_ids:
+      - crurated-reviewed-stream-onboarding
+    - document: cv
+      text: Reduced peak load on the main database by removing bottlenecks and redistributing
+      evidence_ids:
+      - database-reliability
+    - document: cv
+      text: Led epic decomposition, task delegation, and technical health-check monitoring
+        for
+      evidence_ids:
+      - airslate-letter-lead-scope
+    - document: cv
+      text: Owned on-call operations, technical onboarding, and conducted technical
+        interviews
+      evidence_ids:
+      - airslate-letter-operations-people
+    - document: cv
+      text: Troubleshot production issues using logs, monitoring, and SRE dashboards.
+      evidence_ids:
+      - airslate-production-fixes
+    - document: cv
+      text: Brought the product from prototype to closed beta in under six months.
+      evidence_ids:
+      - cv-hyprr
+    - document: cv
+      text: Defined the technology roadmap directly with the CTO, establishing the
+        core
+      evidence_ids:
+      - cv-hyprr
+    - document: cv
+      text: Led a team of 5 backend engineers building a transactional email service
+        handling
+      evidence_ids:
+      - email-team
+    - document: cover-letter
+      text: ho definito uno schema eventi versionato per garantire coerenza tra i
+        team
+      evidence_ids:
+      - crurated-event-design
+    - document: cover-letter
+      text: ho progettato e gestito una piattaforma di automazione del supporto basata
+        su Go
+      evidence_ids:
+      - support-platform-linkedin
+    - document: analysis
+      text: Simple.life Go-based support platform
+      evidence_ids:
+      - support-platform-linkedin
+    - document: analysis
+      text: airSlate's Programming Team Lead role adds database performance and on-call/team
+      evidence_ids:
+      - database-reliability
+    - document: interview-preparation
+      text: 'reaching event
+
+        delivery reliability above 99.9%'
+      evidence_ids:
+      - crurated-reviewed-delivery-reliability
+    - document: interview-preparation
+      text: 'you owned on-call operations, technical
+
+        onboarding, and interviewing new team members'
+      evidence_ids:
+      - airslate-letter-operations-people
+  declaration_sha256: sha256:6940872bdcd05ebe91ad8942876e5dcb332b84cf953a6ad71fb58d89de41a9fd
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 13.3.0+codex.20260924215023
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://www.webeetle.com/join-us/#developer
+  handoffs:
+    research.md:
+      word_count: 310
+      sha256: sha256:551f437ac87adff191c9433f506462bf624f28d42c5680372ba54ea5fcca970a
+    evidence-map.md:
+      word_count: 653
+      sha256: sha256:932c5445ef7c6be320b67c14d1a5bd545a3856b2f4164b3f96d6081fc59d1b97
+    requirements-risks.md:
+      word_count: 557
+      sha256: sha256:a1268c51213c4ae43702e0bde56f9d77173ed85cbdcb9b96b4a3f2119cb91560
+  exports:
+    cv:
+      schema_version: 1
+      source_file: cv.md
+      artifact_file: cv.docx
+      source_sha256: cfa43b733689533980fbf5bafe77181222e6a367c89c823b5b40d5c3cf0d0a8d
+      artifact_sha256: 72243269025236ea7133f429feecdfaa6418a152a1c50e9f4bdb989cd1e4763b
+      extracted_text_sha256: 29a41b201d6bfd8d4f7e6d1c50d15035468382f4bac44f116a9f16308afc9452
+      canonical_tokens: 457
+      extracted_tokens: 457
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 42
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: 72243269025236ea7133f429feecdfaa6418a152a1c50e9f4bdb989cd1e4763b
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+    cover-letter:
+      schema_version: 1
+      source_file: cover-letter.md
+      artifact_file: cover-letter.docx
+      source_sha256: 12324917b8292e063ce2a8eb18c0b05f16a8c0ce185b8c1745d1605d6f559b46
+      artifact_sha256: 8b5037278ab08b266ef1bef0b91d9748675ed72eb5c3221248f0464312c80b4e
+      extracted_text_sha256: 7f2577c227b77631b0ff81c9fbd5cb3eb5d2535528fca552caab49f02e87ad49
+      canonical_tokens: 355
+      extracted_tokens: 355
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 8
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: 8b5037278ab08b266ef1bef0b91d9748675ed72eb5c3221248f0464312c80b4e
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+files:
+- CV_ValentinNikolaev_webeetle_Developer.docx
+- CV_ValentinNikolaev_webeetle_Developer.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md
