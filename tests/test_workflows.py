@@ -16,7 +16,7 @@ class WorkflowPolicyTests(unittest.TestCase):
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 65))
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 74))
         self.assertTrue(policy.prepare_score_is_eligible("prepare", 75))
-        self.assertEqual(7, policy.prepare_max_age_days)
+        self.assertEqual(14, policy.prepare_max_age_days)
         self.assertEqual(10, policy.prepare_batch_size)
         self.assertEqual(
             "codex:gpt-5.6-terra:medium",

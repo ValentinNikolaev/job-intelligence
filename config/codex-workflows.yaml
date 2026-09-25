@@ -4,7 +4,7 @@ note: >-
   Project code cannot switch the active Codex model. The publisher derives its
   provenance label from the explicitly selected workflow.
 prepare_min_score: 65
-prepare_max_age_days: 7
+prepare_max_age_days: 14
 prepare_batch_size: 10
 model_profiles:
   luna_low:

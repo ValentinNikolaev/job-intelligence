@@ -1,0 +1,328 @@
+profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
+prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+model: codex:gpt-5.6-terra:medium
+quality_contract_version: 2
+cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+generated_at: '2026-09-25T22:43:38Z'
+documents:
+  interview-preparation:
+    profile_version: sha256:ab7df396126b7ceb12d29e236830aaf306b8d5c3bdd1d17ac264d74ea372473d
+    vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+    company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
+    prompt_version: sha256:fc710ddf99093181344e1703172401ea9d2b40897a3b64056c11a628d3ec2938
+    model: codex:gpt-5.6-terra:medium
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+    generated_at: '2026-09-25T22:43:38Z'
+quality:
+  contract_version: 2
+  documents:
+    interview-preparation:
+      word_count: 892
+      sha256: sha256:3d3752b879e94f5e9825af72fc8dab40b161771226dad5b3561a344a8eb8b2ae
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+  document_format: standard
+  grounding:
+    schema_version: 1
+    sha256: 06f3f2a5dd53bd705a904577c8cc6c99e243f83e02a89d8c95c4edc6793f5a97
+    evidence_bank:
+      schema_version: 1
+      sha256: 76fdf70379fc2a0b140664e8303d80f22b1f5611062160ecd17a04167fb6661a
+      entry_count: 46
+      statuses:
+        cannot-confirm: 3
+        retracted: 3
+        unverified: 9
+        verified: 31
+    claim_count: 7
+    evidence_ids:
+    - airslate-production-fixes
+    - cv-hyprr
+    - database-reliability
+    - hyprr-user-confirmed
+    - support-confirmed-volume
+    - support-platform-linkedin
+    evidence_entries:
+    - id: airslate-production-fixes
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Troubleshot** production issues using logs, monitoring, and SRE\
+          \ dashboards;\n  delivered fixes and operational improvements."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-authored CV excerpt and airSlate employer/role
+          attribution; no numerical outcome inferred.
+    - id: cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\n\
+          Hyprr was a creator-focused digital platform with blockchain/NFT components\
+          \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+          \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+          \ development across project planning, microservice and serverless\n  architecture,\
+          \ CI/CD, and reliability/serviceability concerns.\n- Defined the technology\
+          \ roadmap with the CTO and helped establish the core stack for\n  product\
+          \ delivery.\n- Led backend development and worked on the platform's Ethereum-based\
+          \ digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel | MySQL\
+          \ | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+      status: verified
+      verification: &id001
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
+    - id: database-reliability
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+          \ and\n  redistributing workload, improving service stability during high-traffic\
+          \ periods."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id001
+    - id: hyprr-user-confirmed
+      employer: Hyprr
+      source:
+        path: registry/candidate/user-confirmed-impact-2026-09-25.md
+        quote: 'At Hyprr, the product progressed from prototype to closed
+
+          beta in less than six months.'
+        context_quote: '**Hyprr role:** Technical Lead'
+        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Transcribed direct candidate correction in this task; measurement
+          system not supplied.
+      review_notes: Direct candidate confirmation; supersedes conflicting imported
+        volume claims.
+      role: Technical Lead
+    - id: support-confirmed-volume
+      employer: Simple App
+      source:
+        path: registry/candidate/user-confirmed-impact-2026-09-25.md
+        quote: 'Confirmed scope for application claims: the Go support platform handled
+          at
+
+          least 20,000 tickets per ordinary month, volume grew to as much as three
+
+          times that level during the U.S. peak season, and the candidate personally
+
+          owned the platform''s operation under this load.'
+        context_quote: '## Simple.life / Simple App
+
+
+          **Role:** Software Developer'
+        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Transcribed direct candidate confirmation from the current task and
+          checked scope.
+      review_notes: Direct candidate confirmation; no independent source for measurement
+        method.
+    - id: support-platform-linkedin
+      employer: Simple App
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: 'I design and own a support automation platform that connects Zendesk,
+          Intercom, and
+
+          internal services through a robust, scalable backend in Go. My work enables
+          the support
+
+          team to operate faster, smarter, and at scale - even during peak loads.'
+        context_quote: '### Simple App
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    checks:
+    - source_quotes
+    - source_hashes
+    - verified_status
+    - numeric_tokens
+    - declared_attribution
+    - cv_bullet_coverage
+    semantic_review_required: true
+    reviewer: Claude Sonnet 5 (active Codex task, self-review; no independent reviewer)
+    document_sha256:
+      interview-preparation: sha256:3d3752b879e94f5e9825af72fc8dab40b161771226dad5b3561a344a8eb8b2ae
+    requirements:
+    - requirement: Strong commercial Go/Golang experience
+      importance: critical
+      basis: stated
+      jd_quote: Strong commercial experience with **Go / Golang**.
+      match: strong
+      candidate_quote: robust, scalable backend in Go
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - support-platform-linkedin
+    - requirement: System design ownership as a key interview focus
+      importance: critical
+      basis: stated
+      jd_quote: System design is a key part of the role and will be an important focus
+        during the interview process.
+      match: strong
+      candidate_quote: technology roadmap
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    - requirement: Relational database and SQL performance troubleshooting
+      importance: high
+      basis: stated
+      jd_quote: Analyze SQL queries, database performance, application waits, and
+        network latency.
+      match: strong
+      candidate_quote: peak load on the main database by removing bottlenecks
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - database-reliability
+    - requirement: Distributed backend troubleshooting and debugging
+      importance: high
+      basis: stated
+      jd_quote: Troubleshoot distributed production systems and identify performance
+        bottlenecks.
+      match: strong
+      candidate_quote: using logs, monitoring, and SRE dashboards
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - airslate-production-fixes
+    - requirement: Code ownership and on-call rotation participation
+      importance: high
+      basis: stated
+      jd_quote: Take ownership of the code you deliver and participate in an on-call
+        rotation.
+      match: strong
+      candidate_quote: 20,000 tickets per ordinary month
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - support-confirmed-volume
+    - requirement: Mentor engineers and share technical knowledge
+      importance: meaningful
+      basis: stated
+      jd_quote: Mentor engineers and share technical knowledge across the team.
+      match: partial
+      candidate_quote: technology roadmap
+      risk: Verified evidence shows technical-lead/roadmap ownership, not a named
+        mentoring program.
+      mitigation: Frame Hyprr technical leadership honestly as leadership-adjacent
+        knowledge sharing rather than claiming formal mentoring language not in the
+        record.
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    - requirement: At least 3 hours overlap with Eastern US working hours
+      importance: meaningful
+      basis: stated
+      jd_quote: At least 3 hours overlap with Eastern US working hours
+      match: unknown
+      candidate_quote: ''
+      risk: Candidate's exact daily schedule flexibility for a CET/CEST afternoon
+        overlap block is not recorded in candidate evidence.
+      mitigation: Confirm directly with recruiter Lyudmila that a CET/CEST afternoon
+        overlap block is workable.
+      hard_blocker: false
+      evidence_ids: []
+    evidence_bank_path: registry/evidence/achievements.yaml
+    claims_ledger_path: claims.yaml
+    claims:
+    - document: interview-preparation
+      text: 'robust, scalable backend
+
+        in Go'
+      evidence_ids:
+      - support-platform-linkedin
+    - document: interview-preparation
+      text: 20,000 tickets
+      evidence_ids:
+      - support-confirmed-volume
+    - document: interview-preparation
+      text: as much as three times that level
+      evidence_ids:
+      - support-confirmed-volume
+    - document: interview-preparation
+      text: 'removing bottlenecks and redistributing
+
+        workload'
+      evidence_ids:
+      - database-reliability
+    - document: interview-preparation
+      text: using logs, monitoring, and SRE dashboards
+      evidence_ids:
+      - airslate-production-fixes
+    - document: interview-preparation
+      text: six months
+      evidence_ids:
+      - hyprr-user-confirmed
+    - document: interview-preparation
+      text: technology roadmap
+      evidence_ids:
+      - cv-hyprr
+  declaration_sha256: sha256:c6f70cc74054e277f759273c34c017be699d7616ac263aa7896d891039e2a41a
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+  handoffs:
+    research.md:
+      word_count: 310
+      sha256: sha256:fe63261250281e2598ec809220cfb35336227386334a370ffa285f13c663d472
+    evidence-map.md:
+      word_count: 563
+      sha256: sha256:7589d50a10142e9467a7179beeee3018f73d3d8695148dbcab9949bf05b9dd0b
+    requirements-risks.md:
+      word_count: 545
+      sha256: sha256:ba873aaa79646a9a32e7de3e9b357b07c620db010fe4cbe1416f01a44ee8cf07
+  exports: {}
+files:
+- interview-preparation.md
