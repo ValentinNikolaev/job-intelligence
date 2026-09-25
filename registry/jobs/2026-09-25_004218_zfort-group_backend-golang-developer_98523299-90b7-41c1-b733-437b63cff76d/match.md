@@ -1,25 +1,29 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Backend/Golang Developer aligns with the candidate's documented backend experience, with the strongest fit in the explicitly evidenced Go/PHP and production-systems areas.
+Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
 
 ## Why it matches
 
-- Strong backend engineering background in Go and PHP.
-- Go is explicitly represented in the candidate profile and is central to this role.
+- Go backend
+- APIs
+- event-driven systems
+- reliability
 
 ## Gaps
 
-- Some vacancy-specific domain or framework requirements are not explicitly evidenced in the candidate profile.
+- Kafka depth is not established
 
 ## Concerns
 
-- The supplied vacancy text may contain additional requirements beyond the summarized evidence; verify them before preparation.
+- Location and language compatibility are not fully specified
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Relevant backend engineering experience | critical / structural | strong | # Backend/Golang Developer | Backend engineer with 15+ years of experience building and improving production | Confirm the remaining role-specific requirements during preparation. / Use only verified candidate evidence in any application package. |
+| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
+| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
+| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |

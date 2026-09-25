@@ -1,21 +1,29 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong fit for a remote Go backend role, with recent Go automation, event-driven systems, APIs, reliability, and production ownership.
+Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
 
 ## Why it matches
 
-- Go backend ownership
-- resilient integrations
-- observability and reliability
-- production delivery
+- Go backend
+- APIs
+- event-driven systems
+- reliability
 
 ## Gaps
 
-- Specific employer stack and domain details are not established
+- Kafka depth is not established
 
 ## Concerns
 
-- Compensation and availability are unknown
+- Location and language compatibility are not fully specified
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
+| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
+| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |

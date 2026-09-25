@@ -1,21 +1,29 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong match for Golang backend work based on current Go platform ownership, APIs, automation, and measurable reliability improvements.
+Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
 
 ## Why it matches
 
-- Go
-- backend integrations
-- scalable services
-- production troubleshooting
+- Go backend
+- APIs
+- event-driven systems
+- reliability
 
 ## Gaps
 
-- Role-specific product and tooling requirements need confirmation
+- Kafka depth is not established
 
 ## Concerns
 
-- Salary and work schedule are unknown
+- Location and language compatibility are not fully specified
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
+| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
+| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |
