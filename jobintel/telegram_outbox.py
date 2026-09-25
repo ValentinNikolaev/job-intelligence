@@ -13,6 +13,10 @@ from .country_flags import COUNTRY_FLAGS, country_codes_for_location, render_cou
 
 OUTBOX_SCHEMA_VERSION = 2
 TELEGRAM_ANALYSIS_INITIATOR = "job-intelligence-batch-vacancy-analysis"
+# dou and djinni are Ukraine-only job boards whose location field often omits
+# the country explicitly (e.g. "Київ, за кордоном, віддалено").
+_UKRAINE_DEFAULT_SOURCES = {"dou", "djinni"}
+_UKRAINE_COUNTRY_CODE = "UA"
 
 
 class TelegramOutboxError(RuntimeError):
@@ -74,7 +78,7 @@ def build_analysis_notification(
                 ),
                 "directory": directory,
                 "url": source_url,
-                "country_codes": country_codes_for_location(metadata.get("location")),
+                "country_codes": _country_codes_with_source_default(metadata),
             }
         )
 
@@ -103,6 +107,14 @@ def build_analysis_notification(
             "+00:00", "Z"
         ),
     }
+
+
+def _country_codes_with_source_default(metadata: Mapping[str, Any]) -> list[str]:
+    """Fall back to Ukraine for dou/djinni vacancies with no explicit country."""
+    codes = country_codes_for_location(metadata.get("location"))
+    if not codes and metadata.get("data_source") in _UKRAINE_DEFAULT_SOURCES:
+        return [_UKRAINE_COUNTRY_CODE]
+    return codes
 
 
 def enqueue_notification(project_root: Path, notification: Mapping[str, Any]) -> Path:

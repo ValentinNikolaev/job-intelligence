@@ -48,6 +48,38 @@ class TelegramOutboxTests(unittest.TestCase):
         self.assertEqual([], notification["items"][0]["country_codes"])
         self.assertIn("\n\nExample — Backend\n", render_notification_message(notification))
 
+    def test_dou_and_djinni_default_to_ukraine_when_country_is_not_explicit(self) -> None:
+        for source in ("dou", "djinni"):
+            with self.subTest(source=source):
+                item = _item("eligible", "eligible-id", "Example", "Backend")
+                item["vacancy"]["location"] = "Київ, за кордоном, віддалено"
+                item["vacancy"]["data_source"] = source
+                notification = build_analysis_notification(
+                    {"items": [item]}, {"eligible": _result(80)}, minimum_score=65,
+                )
+                assert notification is not None
+                self.assertEqual(["UA"], notification["items"][0]["country_codes"])
+
+    def test_ukraine_default_does_not_apply_to_other_sources(self) -> None:
+        item = _item("eligible", "eligible-id", "Example", "Backend")
+        item["vacancy"]["location"] = "Remote"
+        item["vacancy"]["data_source"] = "adzuna"
+        notification = build_analysis_notification(
+            {"items": [item]}, {"eligible": _result(80)}, minimum_score=65,
+        )
+        assert notification is not None
+        self.assertEqual([], notification["items"][0]["country_codes"])
+
+    def test_dou_and_djinni_explicit_country_is_not_overridden(self) -> None:
+        item = _item("eligible", "eligible-id", "Example", "Backend")
+        item["vacancy"]["location"] = "Remote Germany"
+        item["vacancy"]["data_source"] = "dou"
+        notification = build_analysis_notification(
+            {"items": [item]}, {"eligible": _result(80)}, minimum_score=65,
+        )
+        assert notification is not None
+        self.assertEqual(["DE"], notification["items"][0]["country_codes"])
+
     def test_legacy_v1_manifest_keeps_its_original_hash_and_message(self) -> None:
         payload = {
             "schema_version": 1,
