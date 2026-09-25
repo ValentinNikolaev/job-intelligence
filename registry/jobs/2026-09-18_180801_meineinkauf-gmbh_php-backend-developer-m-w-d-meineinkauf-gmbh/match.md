@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 67/100  
+**Score:** 74/100  
 **Recommendation:** Match
 
-PHP/Symfony services, integrations, and backend ownership fit, while German location and language requirements need confirmation.
+Strong PHP and Symfony backend alignment with integrations, APIs, databases, and production systems; the German location and language requirements are not sufficiently established.
 
 ## Why it matches
 
-- PHP
-- Symfony
-- integrations
+- PHP and Symfony experience is directly documented.
+- Backend integrations, APIs, databases, and operational reliability are relevant.
+- E-commerce and payment-adjacent background supports the domain.
 
 ## Gaps
 
-- German language and local eligibility
+- German-language proficiency and local employment eligibility are unknown.
 
 ## Concerns
 
-- Remote arrangement is unclear
+- The role location is Konstanz and remote compatibility is not explicit.

@@ -1,18 +1,20 @@
 # Match Analysis
 
-**Score:** 74/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-Staff-level backend and platform experience aligns with architecture and leadership evidence.
+Strong senior backend fit from Go, PHP, event-driven architecture, APIs, observability, and production ownership; staff-level organizational scope is less certain.
 
 ## Why it matches
 
-- Staff-level ownership
+- Backend architecture and cross-team delivery are well supported.
+- Go, PHP, AWS, queues, event systems, and reliability are relevant.
+- Technical leadership and mentoring experience are documented.
 
 ## Gaps
 
-- Exact staff expectations unknown
+- Staff-level influence across a large organization is not fully evidenced.
 
 ## Concerns
 
-- Language and location terms need verification
+- The exact seniority expectations and location policy require confirmation.

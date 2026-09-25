@@ -1,18 +1,20 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Good microservices and backend fit with Go, PHP, APIs, and cloud deployment.
+Strong backend and distributed-systems fit through Go, event-driven services, AWS, Kubernetes, and production reliability work; the posting's emphasis on microservices is well aligned.
 
 ## Why it matches
 
-- Microservices
+- Go backend and microservice experience is current and directly evidenced.
+- Event-driven pipelines, queues, retries, monitoring, and AWS are supported by recent work.
+- Production ownership and performance improvements are demonstrated.
 
 ## Gaps
 
-- Ubuntu-specific requirements unknown
+- The supplied profile does not establish every specific platform or cloud product requested.
 
 ## Concerns
 
-- Travel expectations unclear
+- Exact location and work-authorization arrangement are not stated in the vacancy evidence.

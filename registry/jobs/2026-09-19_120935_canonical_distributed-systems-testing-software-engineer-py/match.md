@@ -3,18 +3,18 @@
 **Score:** 70/100  
 **Recommendation:** Match
 
-Go, AWS, Kubernetes, CI/CD, Linux, and distributed systems fit, but testing-focused Python depth is less certain.
+Strong cloud, Kubernetes, AWS, Go, CI/CD, observability, and distributed-systems background supports the role; Python and deep testing-specialist experience are not established.
 
 ## Why it matches
 
-- Go
-- cloud infrastructure
-- CI/CD
+- Go development, cloud infrastructure, Kubernetes, AWS, and CI/CD are evidenced.
+- Distributed systems, reliability, monitoring, and event pipelines are strong matches.
+- Production troubleshooting and performance work are documented.
 
 ## Gaps
 
-- Dedicated distributed testing and Python
+- Python and modern test-process ownership are not clearly present in the candidate profile.
 
 ## Concerns
 
-- International travel requirement
+- Required international travel and exact location compatibility are unknown.

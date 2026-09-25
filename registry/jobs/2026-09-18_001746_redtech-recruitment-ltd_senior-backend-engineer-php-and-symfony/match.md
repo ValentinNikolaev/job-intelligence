@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 79/100  
-**Recommendation:** Match
+**Score:** 83/100  
+**Recommendation:** Strong Match
 
-PHP/Symfony integrations, AWS, and backend ownership are strong matches; UK location and work authorization are unresolved.
+Excellent match for an integration-focused senior PHP/Symfony backend role with AWS ownership, third-party APIs, and autonomous production work; UK location and work authorization remain unknown.
 
 ## Why it matches
 
-- PHP and Symfony
-- third-party integrations
-- AWS
+- PHP, Symfony, API integrations, AWS, and backend ownership align directly.
+- Extensive production troubleshooting, performance, and reliability experience is documented.
+- Senior technical leadership and autonomous delivery are supported.
 
 ## Gaps
 
-- UK eligibility
+- UK work authorization and London location compatibility are not established.
 
 ## Concerns
 
-- Farringdon location may not be remote
+- The role's increasing AWS responsibility may require confirming hands-on infrastructure depth.
