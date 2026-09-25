@@ -1,0 +1,42 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-25T19:58:26Z",
+  "delivered_at": "2026-09-25T20:00:15Z",
+  "delivered_vacancy_ids": [
+    "f2ba10d6-6781-4168-bbcd-7c7becdfb7e5"
+  ],
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Docebo",
+      "country_codes": [],
+      "directory": "2026-09-23_160146_docebo_staff-product-engineer-at-docebo_760daf44-476f-43f4-9c67-87485d1c9285",
+      "score": 70,
+      "title": "Staff Product Engineer at Docebo",
+      "url": "https://alion.io/job/docebo-staff-product-engineer",
+      "vacancy_id": "760daf44-476f-43f4-9c67-87485d1c9285"
+    },
+    {
+      "company": "Recare Deutschland GmbH",
+      "country_codes": [
+        "AT",
+        "FR",
+        "DE",
+        "IT",
+        "PL",
+        "PT",
+        "ES"
+      ],
+      "directory": "2026-09-25_181923_recare-deutschland-gmbh_senior-backend-engineer-go-m-w-d_f2ba10d6-6781-4168-bbcd-7c7becdfb7e5",
+      "score": 86,
+      "title": "Senior Backend Engineer (Go) (m/w/d)",
+      "url": "https://himalayas.app/companies/recare-deutschland-gmbh/jobs/senior-backend-engineer-go-m-w-d",
+      "vacancy_id": "f2ba10d6-6781-4168-bbcd-7c7becdfb7e5"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "c37a8cfbf23ed9cf2d2f486ffa92d226a9e5f61a2b3ad7b75f512a91af56effc",
+  "schema_version": 2,
+  "telegram_message_id": 247
+}
