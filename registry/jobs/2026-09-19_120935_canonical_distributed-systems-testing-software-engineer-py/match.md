@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Strong cloud, Kubernetes, AWS, Go, CI/CD, observability, and distributed-systems background supports the role; Python and deep testing-specialist experience are not established.
+Strong fit for Go, Kubernetes, AWS, CI/CD, distributed systems, observability, and reliability; dedicated testing strategy and Python are less explicit.
 
 ## Why it matches
 
-- Go development, cloud infrastructure, Kubernetes, AWS, and CI/CD are evidenced.
-- Distributed systems, reliability, monitoring, and event pipelines are strong matches.
-- Production troubleshooting and performance work are documented.
+- Distributed systems, cloud infrastructure, Kubernetes, AWS, and CI/CD
+- Reliability, monitoring, and production troubleshooting
 
 ## Gaps
 
-- Python and modern test-process ownership are not clearly present in the candidate profile.
+- Modern test strategy and Python development are not strongly evidenced
+- OpenStack, Juju, Terraform, and AI/ML pipelines are not established
 
 ## Concerns
 
-- Required international travel and exact location compatibility are unknown.
+- Required travel of 2-4 weeks per year needs confirmation

@@ -1,23 +1,19 @@
 # Match Analysis
 
-**Score:** 83/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Senior/Staff/Principal Engineer at Canonical aligns with the candidate’s backend experience, with the listed gaps requiring verification.
+Senior technical leadership, architecture, mentoring, and large-scale backend evidence fit the general Senior+ track, though staff-level scope is partly uncertain.
 
 ## Why it matches
 
-- Backend engineering experience across production systems and APIs
-- Documented Go backend and distributed-systems experience
+- Technical leadership and architecture
+- Team management, mentoring, delivery, and reliability experience
+
+## Gaps
+
+- Company-level open-source and department-scale influence are not directly evidenced
 
 ## Concerns
 
-- Verify location, working-hours, compensation, and availability details with the employer
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Production backend development | critical / stated | strong | # Senior/Staff/Principal Engineer | Backend Engineer | / |
-| Relevant primary language/framework | high / stated | strong | # Senior/Staff/Principal Engineer | Go | / |
-| Distributed systems, APIs, or microservices | high / stated | strong | # Senior/Staff/Principal Engineer | Go | / |
+- Canonical evaluates academic results and proven execution; team placement is determined later

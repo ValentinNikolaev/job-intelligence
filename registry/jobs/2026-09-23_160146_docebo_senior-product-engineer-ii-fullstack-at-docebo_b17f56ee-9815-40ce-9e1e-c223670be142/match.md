@@ -1,29 +1,21 @@
 # Match Analysis
 
-**Score:** 70/100  
-**Recommendation:** Match
+**Score:** 55/100  
+**Recommendation:** Possible Match
 
-Senior backend and automation experience match Go/PHP product engineering, but full-stack JavaScript/TypeScript and Toronto hybrid attendance reduce fit.
+Senior backend and automation evidence fits several technologies, but the Toronto hybrid requirement and full-stack scope create material uncertainty.
 
 ## Why it matches
 
-- Go
-- PHP
-- backend systems
-- automation
-- senior experience
+- Senior backend experience with Go, PHP, APIs, and automation
+- Production reliability and system design evidence
 
 ## Gaps
 
-- JavaScript
-- TypeScript and Node.js are not evidenced
+- Toronto hybrid attendance is not compatible on the supplied record
+- Frontend and TypeScript depth are not established
 
 ## Concerns
 
-- Toronto hybrid location
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Full-stack product engineering | high / stated | partial | Senior Product Engineer II - Fullstack | Backend engineer with 15+ years of experience building and improving production | Frontend stack depth is not established. / Confirm backend-focused scope and frontend expectations. |
+- Work authorization and relocation are unknown
+- Salary and exact office expectations require confirmation

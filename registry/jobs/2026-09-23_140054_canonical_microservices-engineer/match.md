@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Strong backend and distributed-systems fit through Go, event-driven services, AWS, Kubernetes, and production reliability work; the posting's emphasis on microservices is well aligned.
+Excellent fit for Go microservices, APIs, distributed systems, AWS, Kubernetes, CI/CD, and reliability-focused backend engineering.
 
 ## Why it matches
 
-- Go backend and microservice experience is current and directly evidenced.
-- Event-driven pipelines, queues, retries, monitoring, and AWS are supported by recent work.
-- Production ownership and performance improvements are demonstrated.
+- Go, microservices, REST APIs, AWS, Kubernetes, and CI/CD
+- Event-driven architecture and production reliability
 
 ## Gaps
 
-- The supplied profile does not establish every specific platform or cloud product requested.
+- Canonical-specific Ubuntu and open-source contribution history is not evidenced
 
 ## Concerns
 
-- Exact location and work-authorization arrangement are not stated in the vacancy evidence.
+- Exact seniority and travel expectations are not fully specified

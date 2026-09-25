@@ -1,20 +1,19 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 82/100  
+**Recommendation:** Strong Match
 
-Strong senior backend fit from Go, PHP, event-driven architecture, APIs, observability, and production ownership; staff-level organizational scope is less certain.
+Strong staff-level fit for Go migration, API architecture, distributed systems, and cross-team technical leadership.
 
 ## Why it matches
 
-- Backend architecture and cross-team delivery are well supported.
-- Go, PHP, AWS, queues, event systems, and reliability are relevant.
-- Technical leadership and mentoring experience are documented.
+- Technical leadership and architecture
+- Go, event-driven systems, APIs, reliability, and scaling
 
 ## Gaps
 
-- Staff-level influence across a large organization is not fully evidenced.
+- Elixir and travel-domain experience are not evidenced
 
 ## Concerns
 
-- The exact seniority expectations and location policy require confirmation.
+- Staff influence expectations and Berlin/remote terms need confirmation

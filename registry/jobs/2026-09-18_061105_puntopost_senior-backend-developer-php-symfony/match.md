@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 81/100  
-**Recommendation:** Strong Match
+**Score:** 77/100  
+**Recommendation:** Match
 
-Strong senior PHP/Symfony backend fit with logistics-adjacent integrations, APIs, scalable services, and production reliability; location and Spanish requirements need confirmation.
+Strong PHP/Symfony backend and integration fit for a senior role, with location, Spanish, and logistics-domain details unresolved.
 
 ## Why it matches
 
-- PHP and Symfony are core documented technologies.
-- Integration-heavy backend and e-commerce experience are highly relevant.
-- Senior ownership, performance optimization, and reliability work are evidenced.
+- PHP/Symfony, APIs, e-commerce, integrations, and senior backend experience
+- Performance and production reliability evidence
 
 ## Gaps
 
-- Spanish proficiency and Madrid work eligibility are not established.
+- Spanish and Mexico logistics experience are not evidenced
+- Madrid location and work arrangement require confirmation
 
 ## Concerns
 
-- The posting's exact remote policy is unclear.
+- The supplied posting excerpt is incomplete for detailed requirement matching

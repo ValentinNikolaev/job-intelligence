@@ -1,20 +1,20 @@
 # Match Analysis
 
-**Score:** 74/100  
+**Score:** 72/100  
 **Recommendation:** Match
 
-Strong PHP and Symfony backend alignment with integrations, APIs, databases, and production systems; the German location and language requirements are not sufficiently established.
+Strong PHP/Symfony and integration fit for backend services, with uncertainty around German language, Konstanz location, and the company's specific CMS stack.
 
 ## Why it matches
 
-- PHP and Symfony experience is directly documented.
-- Backend integrations, APIs, databases, and operational reliability are relevant.
-- E-commerce and payment-adjacent background supports the domain.
+- PHP, Symfony, backend integrations, and e-commerce-related systems
+- Microservices, APIs, databases, and production reliability
 
 ## Gaps
 
-- German-language proficiency and local employment eligibility are unknown.
+- German language and Sulu CMS are not evidenced
+- Konstanz work arrangement is unclear
 
 ## Concerns
 
-- The role location is Konstanz and remote compatibility is not explicit.
+- Work authorization and on-site expectations are unknown
