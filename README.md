@@ -70,7 +70,7 @@ tasks that need language judgment. The repository keeps the handoff visible.
 
 1. **Collect vacancies**
 
-   Source collectors fetch vacancies from Adzuna, Arbeitnow, CleanJobData, DOU,
+   Source collectors fetch vacancies from Adzuna, Arbeitnow, CleanJobData, Djinni, DOU,
    Himalayas, Jobicy, Jobspresso, Jooble, We Work Remotely, public Ashby boards,
    public Greenhouse boards, and selected company career pages.
 
@@ -182,6 +182,7 @@ python run.py adzuna
 python run.py arbeitnow
 python run.py cleanjobdata
 python run.py dou
+python run.py djinni
 python run.py himalayas
 python run.py jobicy
 python run.py jobspresso

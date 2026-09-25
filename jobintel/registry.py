@@ -33,6 +33,7 @@ SOURCE_RANKS = {
     "ashby": 30,
     "custom": 35,
     "dou": 10,
+    "djinni": 10,
 }
 
 _CANONICAL_FIELDS = (

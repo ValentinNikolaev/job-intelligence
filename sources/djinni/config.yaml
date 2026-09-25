@@ -1,0 +1,11 @@
+version: 1
+timeout_seconds: 12
+max_pages_per_query: 5
+analysis_priority: 100
+queries:
+  - name: php-remote
+    url: https://djinni.co/jobs/?primary_keyword=PHP&employment=remote
+    category: PHP
+  - name: golang-remote
+    url: https://djinni.co/jobs/?primary_keyword=Golang&employment=remote
+    category: Golang
