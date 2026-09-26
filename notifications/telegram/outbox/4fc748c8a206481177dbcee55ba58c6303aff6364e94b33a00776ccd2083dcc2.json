@@ -1,0 +1,72 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-26T19:53:26Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "QoQ",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-26_062536_qoq_go-developer-middle_d5e90ef5-cc98-4946-9404-181d470f7cd6",
+      "score": 72,
+      "title": "Go Developer (Middle)",
+      "url": "https://djinni.co/jobs/844885-go-developer-middle/",
+      "vacancy_id": "d5e90ef5-cc98-4946-9404-181d470f7cd6"
+    },
+    {
+      "company": "Docebo",
+      "country_codes": [],
+      "directory": "2026-09-23_160146_docebo_staff-product-engineer-at-docebo_760daf44-476f-43f4-9c67-87485d1c9285",
+      "score": 74,
+      "title": "Staff Product Engineer at Docebo",
+      "url": "https://alion.io/job/docebo-staff-product-engineer",
+      "vacancy_id": "760daf44-476f-43f4-9c67-87485d1c9285"
+    },
+    {
+      "company": "MeinEinkauf GmbH",
+      "country_codes": [],
+      "directory": "2026-09-26_181803_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh_86ed353c-ac71-4c35-b930-840f269c3ee6",
+      "score": 78,
+      "title": "PHP Backend Developer (m/w/d) - MeinEinkauf GmbH",
+      "url": "https://www.adzuna.de/details/5899681040?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "86ed353c-ac71-4c35-b930-840f269c3ee6"
+    },
+    {
+      "company": "Lumaserv",
+      "country_codes": [
+        "DE"
+      ],
+      "directory": "2026-09-26_181803_lumaserv_php-laravel-backend-developer-gn_e2a3421f-8e20-42cc-aee5-663272891990",
+      "score": 80,
+      "title": "PHP Laravel Backend Developer [gn]",
+      "url": "https://www.adzuna.de/details/5899841802?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "e2a3421f-8e20-42cc-aee5-663272891990"
+    },
+    {
+      "company": "Urban Sports Club",
+      "country_codes": [
+        "ES"
+      ],
+      "directory": "2026-09-26_062528_urban-sports-club_senior-backend-engineer-all-genders-php_d15c7fa0-1ce2-4314-ad4a-6eb2ff0f9872",
+      "score": 70,
+      "title": "Senior Backend Engineer (all genders) - PHP",
+      "url": "https://www.adzuna.es/details/5898050187?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "d15c7fa0-1ce2-4314-ad4a-6eb2ff0f9872"
+    },
+    {
+      "company": "ibelsa",
+      "country_codes": [
+        "DE"
+      ],
+      "directory": "2026-09-26_062528_ibelsa_backend-entwickler-in-php-m-w-d_de789b64-5cc7-499f-94cd-c341d69778d8",
+      "score": 82,
+      "title": "Backend Entwickler:in PHP (m/w/d)",
+      "url": "https://www.adzuna.de/details/5898603009?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "de789b64-5cc7-499f-94cd-c341d69778d8"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4fc748c8a206481177dbcee55ba58c6303aff6364e94b33a00776ccd2083dcc2",
+  "schema_version": 2
+}
