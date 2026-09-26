@@ -72,6 +72,13 @@ explicit single-document request, use the full-package flow below.
    CV; keep those only in handoffs, `claims.yaml`, and `quality.yaml`. Never duplicate
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
    Apply the mandatory **recent-experience editorial gate** before the CV is final:
+   - give every displayed role at least two distinct, source-backed outcome or decision
+     bullets, and each role ending within the last three years at least three. Re-read
+     the candidate source when a role falls short; omit a nonessential older role or
+     ask the candidate a focused question when distinct facts remain unavailable.
+     Never divide one result into multiple bullets to pass this count;
+   - order displayed roles by their actual end dates, newest first, including when
+     part-time work overlaps another role. State overlapping engagements clearly;
    - treat roles ending within the last five years as the primary employer-facing
      narrative; give each such role at least four distinct, evidence-backed bullets
      when the candidate source supports them, and explain any shortfall to the user
@@ -112,6 +119,9 @@ explicit single-document request, use the full-package flow below.
      vacancy, and check a rendered PDF against a two-page limit when PDF export
      is available. Keep the optional projects section only if it adds distinct,
      source-backed depth within that limit.
+   - list PHP under Simple.life technologies only when a direct candidate source
+     supports its use there. Do not move a PHP delivery result from concurrent
+     CRURATED into Simple.life, or infer a Simple.life PHP result from a skills list.
    Before finalizing, surface any additional relevant numbers found in candidate
    sources that have not been candidate-confirmed. Ask the candidate to select
    which figures they can substantiate and how they were measured. If the
@@ -132,6 +142,10 @@ explicit single-document request, use the full-package flow below.
      highest installed version of `$write-cover-letter` in Draft mode and write only
      `cover-letter.md`. In standard format it must contain four to six body paragraphs (three to six in compact), two distinct
      evidence stories, and a company-specific hook grounded in verified research;
+     open with a role-specific proposition rather than the reusable "I am applying
+     for" formula. Name a past employer only when its identity makes a selected
+     example clearer; do not retell the CV or imply a personal result from a
+     platform-wide figure;
    - interview preparation: receive this vacancy, final CV,
      `parts/requirements-risks.md`, and verified `parts/research.md`; write only
      `interview-preparation.md` without repeating company research;

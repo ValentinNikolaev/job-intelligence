@@ -124,6 +124,19 @@ class MatchingTests(unittest.TestCase):
 
         self.assertEqual(3, len(client.calls))
 
+    def test_explicit_force_reanalyzes_applied_vacancy_without_status_change(self) -> None:
+        client = FakeClient()
+        analyzer = MatchAnalyzer(self.registry_root, [self.profile], client, clock=lambda: self.now)
+        meta_path = self.directory / "meta.yaml"
+        meta = yaml.safe_load(meta_path.read_text(encoding="utf-8"))
+        meta["status"] = "applied"
+        meta_path.write_text(yaml.safe_dump(meta, allow_unicode=True, sort_keys=False), encoding="utf-8")
+
+        self.assertEqual("skipped", analyzer.analyze_directory(self.directory).status)
+        self.assertEqual("analyzed", analyzer.analyze_directory(self.directory, force=True).status)
+        self.assertEqual("applied", yaml.safe_load(meta_path.read_text(encoding="utf-8"))["status"])
+        self.assertEqual(1, len(client.calls))
+
     def test_cloudflare_email_hash_and_updated_at_do_not_stale_analysis(self) -> None:
         (self.directory / "job.md").write_text(
             "Build Go services.\n\n"

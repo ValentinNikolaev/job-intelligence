@@ -92,6 +92,13 @@ def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path) -> dict[
         if not isinstance(source, Mapping):
             raise EvidenceError(f"{identifier} requires source provenance")
         quote = _source(project_root, source)
+        attribution_source = entry.get("attribution_source")
+        if attribution_source is not None:
+            if not isinstance(attribution_source, Mapping):
+                raise EvidenceError(f"{identifier} attribution_source must be a source mapping")
+            attribution_quote = _source(project_root, attribution_source)
+        else:
+            attribution_quote = ""
         quote_key = (str(_source_path(project_root, source)).casefold(), quote)
         if status in {"cannot-confirm", "retracted"}:
             blocked_quotes.add(quote_key)
@@ -99,8 +106,8 @@ def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path) -> dict[
             verified_quotes.add(quote_key)
         for key in ("employer", "role", "period"):
             value = entry.get(key)
-            attribution_quote = quote + "\n" + str(source.get("context_quote", ""))
-            if value and _text(value, key).casefold() not in attribution_quote.casefold():
+            available_attribution = quote + "\n" + str(source.get("context_quote", "")) + "\n" + attribution_quote + "\n" + str(attribution_source.get("context_quote", "") if attribution_source else "")
+            if value and _text(value, key).casefold() not in available_attribution.casefold():
                 raise EvidenceError(f"{identifier} {key} is absent from its source quote")
         technologies = entry.get("technologies", [])
         if not isinstance(technologies, list):

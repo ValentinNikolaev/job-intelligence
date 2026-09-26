@@ -1,25 +1,24 @@
 # Match Analysis
 
-**Score:** 85/100  
+**Score:** 83/100  
 **Recommendation:** Strong Match
 
-Strong senior Go backend fit for a technical-ownership, senior-IC role with real production Go ownership, database performance work, and architecture leadership; direct mentoring language and Postgres/GORM/CircleCI-specific depth are not separately confirmed, though closely adjacent evidence exists.
+Go production ownership, integration architecture, database reliability and remote team collaboration fit the senior individual-contributor role. Direct mentoring and healthcare standards remain open.
 
 ## Why it matches
 
-- Owns a production Go backend (support automation platform) with real scale and personal operational ownership, matching the "own a domain" framing of this role
-- Verified database-performance and production-troubleshooting experience matches the role's optimization and reliability focus
-- Architecture/roadmap ownership at CTO level (Hyprr) matches the technical-ownership and architecture-decision expectations
+- Designed and operated a Go support platform and released a secure Amazon Connect backend.
+- Built a vendor-neutral helpdesk gateway with production adapters and first B2B demo.
+- Reduced database load and diagnosed production failures at airSlate.
 
 ## Gaps
 
-- No verified evidence names Postgres/GORM or CircleCI specifically, though general SQL/database and CI/CD experience is well evidenced
-- Direct "mentoring" language is not in the compact candidate profile used for this match, though team task-distribution and roadmap leadership are
-- No healthcare/FHIR/HL7/DICOM background, but the posting states this is a bonus, not a requirement
+- No verified FHIR, HL7, DICOM or healthcare-domain experience.
+- Direct mentoring examples are less specific than architecture and team-delivery examples.
 
 ## Concerns
 
-- Real-time/synchronous communication comfort (the posting stresses being "put on the spot" in conversation) is not directly evidenced
+- The candidate has held Technical Lead duties; confirm preference for a senior individual-contributor remit.
 
 ## Requirement evidence
 

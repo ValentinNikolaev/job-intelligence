@@ -4,6 +4,7 @@ from functools import partial
 import tempfile
 import unittest
 import os
+import zipfile
 from contextlib import redirect_stderr, redirect_stdout
 from datetime import datetime, timezone
 from io import StringIO
@@ -21,12 +22,56 @@ from jobintel.applications import (
     QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
     _validate_cv_audit_bullet_coverage,
+    _validate_cv_role_depth,
+    _validate_cover_letter_paragraphs,
+    _keep_cv_role_header_with_date,
     _validate_draft_quality,
     _publish_staged_package,
     resolve_job_directories,
     validate_application_draft,
     validate_application_package,
 )
+
+
+class ExperienceRoleDepthTests(unittest.TestCase):
+    def test_rejects_shallow_recent_and_older_roles(self) -> None:
+        cv = ("## Experience\n\n### Recent | January 2024 - September 2026\n"
+              "- First result\n- Second result\n"
+              "### Earlier | January 2019 - January 2021\n- One result\n")
+        with self.assertRaisesRegex(ApplicationError, "Recent.*requires 3"):
+            _validate_cv_role_depth(cv, reference_date=datetime(2026, 9, 26))
+        cv = cv.replace("- Second result\n", "- Second result\n- Third result\n")
+        with self.assertRaisesRegex(ApplicationError, "Earlier.*requires 2"):
+            _validate_cv_role_depth(cv, reference_date=datetime(2026, 9, 26))
+
+    def test_rejects_roles_out_of_reverse_chronology(self) -> None:
+        cv = ("## Experience\n\n### Earlier | January 2019 - January 2021\n"
+              "- First result\n- Second result\n"
+              "### Recent | January 2024 - September 2026\n"
+              "- First result\n- Second result\n- Third result\n")
+        with self.assertRaisesRegex(ApplicationError, "reverse chronology"):
+            _validate_cv_role_depth(cv, reference_date=datetime(2026, 9, 26))
+
+    def test_rejects_stock_cover_letter_opening(self) -> None:
+        body = " ".join(["This work is relevant to the vacancy."] * 5)
+        letter = "Dear Hiring Team,\n\nI am applying for this role. " + body + "\n\n" + "\n\n".join([body] * 3)
+        with self.assertRaisesRegex(ApplicationError, "generic application formula"):
+            _validate_cover_letter_paragraphs(letter)
+
+    def test_cv_docx_keeps_role_heading_and_date_with_first_bullet(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "cv.docx"
+            xml = (b'<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">'
+                   b'<w:body><w:p><w:pPr><w:pStyle w:val="Heading3"/></w:pPr><w:r><w:t>Role</w:t></w:r></w:p>'
+                   b'<w:p><w:pPr></w:pPr><w:r><w:t>2024 - 2026</w:t></w:r></w:p>'
+                   b'<w:p><w:pPr></w:pPr><w:r><w:t>Result</w:t></w:r></w:p></w:body></w:document>')
+            with zipfile.ZipFile(path, "w") as archive:
+                archive.writestr("word/document.xml", xml)
+            _keep_cv_role_header_with_date(path)
+            with zipfile.ZipFile(path) as archive:
+                updated = archive.read("word/document.xml")
+            self.assertEqual(2, updated.count(b"<w:keepNext/>"))
+            self.assertIn(b"<w:t>Result</w:t>", updated)
 from jobintel.cli import main
 from jobintel.matching import MatchAnalyzer
 from jobintel.models import NormalizedJob
@@ -477,6 +522,7 @@ class ApplicationTests(unittest.TestCase):
             "## Education",
             "### airSlate Р Р†Р вЂљРІР‚Сњ Software Developer | February 2021 - August 2023\n"
             "- Improved a supported backend workflow with measured engineering discipline.\n"
+            "- Diagnosed production incidents through service logs and monitoring.\n"
             "Technologies: PHP, Symfony, PostgreSQL\n\n## Education",
         )
 
@@ -559,6 +605,23 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual("old", (target / "cv.md").read_text(encoding="utf-8"))
         self.assertTrue(self._generator(FakeClient(), FakeConverter()).is_current(self.directory))
 
+    def test_locked_previous_package_backup_is_retained_outside_registry(self) -> None:
+        target = self.directory / "application"
+        target.mkdir()
+        (target / "cv.md").write_text("old", encoding="utf-8")
+        staging = self.directory / ".application.staging"
+        staging.mkdir()
+        (staging / "cv.md").write_text("new", encoding="utf-8")
+        (staging / "manifest.yaml").write_text("current: true", encoding="utf-8")
+
+        with patch("jobintel.applications.shutil.rmtree", side_effect=PermissionError("locked")):
+            _publish_staged_package(staging, target, ["cv.md"])
+
+        self.assertEqual("new", (target / "cv.md").read_text(encoding="utf-8"))
+        retained = list((self.project / ".codex-work" / "retained-backups").glob("*"))
+        self.assertEqual(1, len(retained))
+        self.assertEqual("old", (retained[0] / "cv.md").read_text(encoding="utf-8"))
+
     def test_invalid_markdown_contract_is_not_published(self) -> None:
         payload = application_payload()
         payload["analysis_markdown"] = "# Missing required sections\n"
@@ -632,7 +695,7 @@ class ApplicationTests(unittest.TestCase):
         payload["cv_markdown"] = payload["cv_markdown"].replace(
             "Technologies: PHP, Laravel, MySQL\n\n## Education",
             "Technologies: PHP, Laravel, MySQL\n\n### Legacy Co | 2008 - 2015\n"
-            "- Maintained services.\nTechnologies: PHP\n\n## Education",
+            "- Maintained services.\n- Diagnosed service failures.\nTechnologies: PHP\n\n## Education",
         )
 
         with self.assertRaisesRegex(ApplicationError, "more than 10 years ago"):
@@ -645,8 +708,14 @@ class ApplicationTests(unittest.TestCase):
         payload = application_payload()
         payload["cv_markdown"] = payload["cv_markdown"].replace(
             "### Example Р Р†Р вЂљРІР‚Сњ Backend Engineer | January 2020 - Present",
-            "### Current Co | July 2015 - August 2016\nTechnologies: Go\n\n"
             "### New Co | September 2016 - Present",
+        ).replace(
+            "Technologies: PHP, Laravel, MySQL\n\n## Education",
+            "Technologies: PHP, Laravel, MySQL\n\n"
+            "### Current Co | July 2015 - August 2016\n"
+            "- Delivered an independently scoped backend change.\n"
+            "- Diagnosed a separate production failure.\n"
+            "Technologies: Go\n\n## Education",
         )
 
         result = validate_application_package(
@@ -660,15 +729,16 @@ class ApplicationTests(unittest.TestCase):
         payload = application_payload()
         payload["cv_markdown"] = payload["cv_markdown"].replace(
             "Technologies: PHP, Laravel, MySQL\n\n## Education",
-            "Technologies: PHP, Laravel, MySQL\n\n### Missing Co\n- Built services.\n\n## Education",
+            "Technologies: PHP, Laravel, MySQL\n\n### Missing Co | January 2017 - December 2018\n"
+            "- Built services.\n- Diagnosed a production incident.\n\n## Education",
         )
 
         with self.assertRaisesRegex(ApplicationError, "Missing Co"):
             validate_application_package(payload)
 
         payload["cv_markdown"] = payload["cv_markdown"].replace(
-            "- Built services.\n\n## Education",
-            "- Built services.\n\n**Technologies**: Go | PostgreSQL\n\n## Education",
+            "- Diagnosed a production incident.\n\n## Education",
+            "- Diagnosed a production incident.\n\n**Technologies**: Go | PostgreSQL\n\n## Education",
         )
         result = validate_application_package(payload)
         self.assertIn("**Technologies**: Go | PostgreSQL", result["cv_markdown"])
@@ -677,7 +747,7 @@ class ApplicationTests(unittest.TestCase):
         payload = application_payload()
         payload["cover_letter_markdown"] = payload["cover_letter_markdown"].replace(
             "I connect verified backend delivery experience",
-            "I am applying for the Senior Backend Engineer role at Example and connect verified backend delivery experience",
+            "My backend delivery experience connects to Example's Senior Backend Engineer priorities; it joins verified backend delivery experience",
             1,
         )
 
@@ -691,7 +761,7 @@ class ApplicationTests(unittest.TestCase):
             },
         )
 
-        self.assertIn("Senior Backend Engineer role at Example", result["cover_letter_markdown"])
+        self.assertIn("Example's Senior Backend Engineer priorities", result["cover_letter_markdown"])
 
     def test_prompt_change_invalidates_and_republishes_application(self) -> None:
         generator = self._generator(FakeClient(), FakeConverter())

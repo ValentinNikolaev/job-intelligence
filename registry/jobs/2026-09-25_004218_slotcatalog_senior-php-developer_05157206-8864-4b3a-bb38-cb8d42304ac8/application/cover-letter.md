@@ -1,34 +1,16 @@
-Dear Hiring Team,
+Dear SlotCatalog Hiring Team,
 
-I'm a backend engineer with 15+ years of PHP production experience, and I'm applying
-for the Senior PHP Developer role at SlotCatalog. Your posting's emphasis on
-architecture, ownership, and real production impact over task execution is exactly how
-I've approached backend work across the last several years, and I'd like to bring that
-ownership to a platform managing large-scale structured data at your scale.
+Your Senior PHP Developer role calls for someone who will own a backend service after it reaches production, not only design it. I have more than 15 years of backend experience across PHP and Go systems, and the combination of architecture, data quality and service reliability in your posting closely matches the work I want to continue doing.
 
-Most recently, as the PHP developer behind CRURATED's internal event-analytics
-pipeline, I architected a scalable, event-driven system using queues and EventBridge
-that increased data-lake throughput by more than 10x, while defining a versioned event
-schema to keep new event types consistent across teams. I took full technical
-ownership of that pipeline in production, and kept event delivery reliability above
-99.9% through fault-tolerant retries and observability. That is the same kind of
-ownership your posting describes: design through release, monitoring, and long-term
-stability, not a handoff at deployment.
+At CRURATED, I held full technical ownership of a PHP event analytics platform in production. I designed an event-driven pipeline using queues and AWS EventBridge and introduced versioned event schemas so new event types could be integrated consistently. DataLake throughput rose by more than tenfold under my ownership, while event delivery reliability exceeded 99.9%. This is the sort of design-through-operation responsibility I would bring to your backend services and their long-term stability.
 
-Earlier, at airSlate, I reduced peak load on the main database by removing bottlenecks
-and redistributing workload, and troubleshot production issues directly from logs,
-monitoring, and SRE dashboards rather than waiting for an escalation. I also built a
-Laravel/Symfony-based logger package used across services, so I'm comfortable owning
-both the architecture and the operational reality of a PHP backend under real traffic.
+At airSlate, a different production problem demanded a more focused change: I identified bottlenecks on the main database and redistributed workload, reducing peak load and improving stability during busy periods. I also built a Laravel/Symfony logger package aligned with the communication standard used across services. Those examples reflect both the framework depth and practical modernization of existing systems that your role requires.
 
-Your move into AI-powered tools alongside your existing SEO and data-driven business is
-a natural fit for the kind of automation and data-pipeline work I've been doing: my
-recent projects have all involved turning raw operational data into reliable,
-observable pipelines that a business can act on, not just a working prototype.
+Your posting describes a data platform for slot games that is expanding into regulated markets and AI-powered tools. The need to keep structured data dependable while the product grows interests me because I have owned data pipelines and operational support systems whose behavior mattered after release. I would welcome a discussion about the PHP backend's current architecture and the decisions your team expects this role to make with Product, DevOps and Data.
 
-I'd welcome the chance to talk through how that experience applies to SlotCatalog's
-backend, and to hear more about where the regulated-market and media-sales expansion is
-headed technically.
+I am particularly interested in how those teams balance delivery speed with the data quality and monitoring needs of a growing platform.
 
-Best regards,
+Thank you for considering my application. I would be glad to explain the architectural choices and production trade-offs behind these examples.
+
+Best regards,  
 Valentin Nikolaev

@@ -23,16 +23,17 @@ commerce-sector benefits.
 
 ## Initial Resume Audit
 
-The candidate's strongest, most directly relevant evidence is the CRURATED event
-analytics work (versioned event schema, multi-destination routing, 99.9%+ delivery
-reliability) and the Simple.life Go-based support platform, both recent and both
-event-driven/API-oriented, matching the posting's microservices and API/REST emphasis
-well. airSlate's Programming Team Lead role adds database performance and on-call/team
-leadership evidence. Hyprr and PDFfiller round out the ten-year window with
-architecture-roadmap and team-leadership evidence respectively. No verified evidence
-covers MongoDB or Node.js production work specifically, and no verified evidence covers
-Ambassador/Envoy/Istio by name (Kubernetes/microservices architecture is verified via
-Hyprr).
+The strongest evidence is the CRURATED PHP event system (versioned contracts,
+multi-destination routing, and above-99.9% delivery) and the Simple.life Go helpdesk
+gateway, which abstracts Intercom and Zendesk behind a vendor-neutral event model.
+The latter enabled a first B2B demonstration of the support AI product. The candidate
+confirmed PHP may appear as a Simple.life technology, but gave no specific PHP
+achievement there; CRURATED supplies the direct PHP result. airSlate adds database performance
+and team-leadership evidence. Hyprr and PDFfiller were removed from this tailored CV:
+the available facts did not support two separate outcome bullets for either role
+without splitting one result or turning duties into achievements. Their omission does
+not erase that work history from source records. No verified evidence covers MongoDB,
+Node.js production work, or Ambassador/Envoy/Istio by name.
 
 ## Strict Hiring Manager Review
 
@@ -63,35 +64,39 @@ answers on both points before investing further interview time.
 
 ## ATS Keyword Analysis
 
-Present and well covered: PHP, Symfony, MySQL, REST/API, Microservices, Kubernetes,
-Agile/Scrum, CI/CD. Present but only partially evidenced: Node.js (event-driven
-platform experience is PHP-based), Ambassador/Envoy/Istio (Kubernetes-level evidence
-only). Not present in verified evidence: MongoDB, React/Angular/VueJS, HTML5/CSS3
+Present and well covered: PHP, Symfony, MySQL, REST/API, microservices and event-driven
+service design. Partially evidenced: Node.js (event-driven experience is PHP/Go-based),
+Ambassador/Envoy/Istio (general distributed-service experience only). Not present in
+verified evidence: MongoDB, React/Angular/VueJS, HTML5/CSS3
 (candidate is targeting the Back-End track, so front-end keywords are out of scope by
 design).
 
 ## Major CV Changes
 
-The CV was built to foreground the CRURATED and Simple.life event-driven/API work
-first, since these map most directly onto weBeetle's stated microservices focus, ahead
-of the airSlate database and Hyprr architecture-roadmap material. PDFfiller's
-transactional-email leadership story was kept compact, since it is the least directly
-relevant of the five roles to this specific posting's technical focus, while still
-demonstrating team-leadership scale within the 10-year evidence window.
+The CV now leads with the most recent Simple.life role and foregrounds its gateway,
+telephony and reliability work, then shows concurrent CRURATED PHP event architecture.
+The earlier Simple bullet saying the candidate "Reached up to 86%" blurred his own
+contribution with a platform-wide measure. He implemented many, not all, scenarios;
+the revision emphasizes personally delivered systems and omits that aggregate figure.
+Hyprr and PDFfiller are omitted because their available outcomes cannot honestly
+produce two distinct bullets each under the new role-by-role gate. The final CV
+therefore concentrates its 14 substantive bullets in the three strongest recent roles.
 
 ## Final Quality Gate
 
-Every CV Experience bullet is anchored to a verified achievements.yaml entry via
-claims.yaml. The cover letter's two evidence stories (CRURATED event reliability,
-Simple.life platform ownership) are each anchored to specific verified entries and a
-real company-motivation fact with its source URL. Cross-file consistency was checked:
-employment dates, the CRURATED/Simple.life concurrency framing, and the
-Italian-language disclosure are consistent across cv.md, cover-letter.md,
-interview-preparation.md, and this analysis.
+The revised CV uses candidate-reported delivered facts with reviewed evidence-bank
+entries and keeps the earlier confirmed Software Developer title. The candidate
+confirmed that the August–September work belongs to past Simple.life experience;
+the exact employment end month remains unresolved, so the CV states only 2026.
+The two letter stories are CRURATED event architecture and airSlate database
+stability, each tied to a separate source and the vacancy. A draft DOCX exported
+through Word occupies two pages; both rendered pages were inspected for clipping,
+legibility and role breaks. Publication still requires the selected Codex model
+profile and final package validation.
 
 ## Recommendation
 
-Proceed with the application. The technical fit is strong enough to justify applying
+Apply With Reservations. The technical fit is strong enough to justify applying
 despite real, disclosed logistics and language reservations; the cover letter's direct,
 honest question about Italian proficiency gives weBeetle the information needed to
 make an informed call, which is the right approach given the mismatch is material but

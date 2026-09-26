@@ -39,7 +39,9 @@ cURL specifically) — be candid that hands-on ownership of production troublesh
 is well evidenced, but naming those exact tools is not separately confirmed in the
 record, so don't overclaim familiarity with a specific tool beyond what is true.
 Expect questions on SQL query optimization, JSON/XML handling in API payloads, and
-how to communicate a technical root cause to a non-technical partner.
+how to communicate a technical root cause to a non-technical partner. No reviewed
+source currently confirms direct JSON/XML, Git or Postman/cURL use. Ask the candidate
+for examples rather than treating REST experience as proof of those tools.
 
 ## CV Deep-Dive Questions
 
@@ -52,8 +54,10 @@ stream onboarding) is relevant to a PHP-support role even though it centers on
 analytics infrastructure: the honest answer is that it demonstrates the same
 production-ownership and reliability instincts the INFOBUS role needs, applied to a
 different domain. Expect a question on the shift from full-time PHP roles toward a
-recent Go-focused role (Simple.life) — be ready to explain that PHP expertise has
-stayed current throughout via the CRURATED subcontract rather than lapsing.
+recent Go-focused role (Simple.life) — PHP is confirmed as a technology there, but no
+particular PHP outcome is established. Explain PHP depth with CRURATED and airSlate.
+The later Simple.life work is confirmed as past experience; the exact end month still
+requires clarification, so the current CV shows only the end year 2026.
 
 ## Company-Specific Preparation
 

@@ -18,39 +18,44 @@ which is treated as the primary source.
 
 ## Initial Resume Audit
 
-The candidate's PHP evidence is strong and current: a concurrent PHP subcontract
-engagement at CRURATED (Aug 2024 to Jan 2026) delivering production event-analytics
-infrastructure, plus PHP/Laravel/Symfony work at airSlate and Hyprr going back to 2019.
-The CV leads with the CRURATED event-driven architecture and database-reliability work
-from airSlate, which most directly answers the posting's "architecture, ownership, and
-real production impact" framing. Simple.life (a Go-based platform) is deliberately
-kept compact at 2 bullets since it is less relevant to a PHP-only role; that Go
-exposure is not hidden, it is simply not the headline story for this specific posting.
-Education (MSc in Computer Science) and languages are recorded plainly without
-embellishment. The CV's six-role structure gives the reader a clear, chronological
-picture of PHP depth without requiring them to infer seniority from title alone.
+The previous package displayed CRURATED before the later-ending Simple.life role,
+leaving the chronology out of order. Its Simple.life section had two bullets,
+Hyprr one, and PDFfiller one, despite a compliant total bullet count. The revised
+CV begins with Simple.life and selects five separate recent outcomes: telephony
+security and launch, a multi-tenant gateway that enabled a B2B demo, consolidation
+of three Snowflake pipelines, repair of recurring Intercom cron failures, and
+self-service GDPR export. PHP experience remains clear in the concurrent CRURATED
+subcontract and earlier airSlate work. The candidate has confirmed PHP in the
+Simple.life technology mix, but has not confirmed a specific PHP achievement there;
+its five bullets therefore describe their evidenced Go/platform work. The newer
+source calls the Simple.life title Senior Backend Engineer and the earlier direct
+clarification calls it Software Developer. The CV retains Software Developer and
+uses an end year only pending the exact month. PDFfiller was removed from this
+version; Hyprr has distinct roadmap and digital-asset backend contributions.
 
 ## Strict Hiring Manager Review
 
-A hiring manager reading this CV would see 15+ years of PHP experience with a genuinely
-recent, production-scale event-pipeline ownership story (10x DataLake throughput,
-99.9% delivery reliability) and a direct Laravel/Symfony artifact (the airSlate logger
-package). The database-bottleneck and SRE-troubleshooting bullets answer the posting's
-explicit "diagnose and resolve production issues under pressure" requirement almost
-verbatim. The clearest weakness on paper is the Filament (v5) admin-panel builder,
-which has no verified match, and the unverified English C1-C2 level; both should be
-confirmed candidly rather than glossed over in the interview. The cover letter
-reinforces the same two stories rather than introducing new, unverified claims, which
-keeps the whole package internally consistent: a reader who checks the cover letter
-against the CV will find the same DataLake throughput figure, the same reliability
-percentage, and the same airSlate database story, not a different or exaggerated
-version of either.
+A hiring manager now sees recent product ownership before the historical PHP depth:
+the support gateway and telephony platform have a visible release or demo consequence,
+and the Snowflake consolidation gives concrete simplification and testing results.
+CRURATED demonstrates PHP architecture and production ownership through the DataLake's
+more-than-tenfold throughput gain and above-99.9% event delivery reliability. The
+airSlate logger is the clearest direct Laravel/Symfony artifact; its database and
+production troubleshooting work answers reliability requirements. The cover letter
+uses the CRURATED architecture and airSlate production examples rather than a
+chronological recap. Filament v5 remains unverified, as does the posting's C1-C2
+English requirement. Neither should become a claimed skill merely to increase a
+keyword count. The CV does not quantify a Simple.life business outcome from the
+unmeasured estimate table: it uses only candidate-supplied delivery facts.
 
 ## Red Flags
 
-None identified in the verified evidence. The CRURATED engagement's concurrent,
-part-time nature is disclosed explicitly in the CV heading so it does not read as an
-undisclosed second full-time job.
+The CRURATED engagement's concurrent, part-time nature is disclosed in its heading.
+The exact Simple.life end month remains unresolved because the direct career
+clarification says July 2026, while later candidate-supplied work extends through
+September and a follow-up authorizes treating that work as past experience. The
+current CV states only the supported end year, 2026. The newer block also uses a
+different job title; the earlier confirmed Software Developer title is retained.
 
 ## ATS Keyword Analysis
 
@@ -66,22 +71,28 @@ ATS for "data," "reliability," and "production" without inventing a skill.
 
 ## Major CV Changes
 
-Relative to the candidate's general-purpose backend-engineer CV, this version leads
-with CRURATED (the PHP-specific, most recent role) ahead of Simple.life (Go-based),
-reorders Skills to foreground PHP/Laravel/Symfony/PostgreSQL over Go, and compresses
-Simple.life to 2 bullets instead of the usual 4 to keep the document PHP-focused for
-this specific posting.
+Before: "Engineered a unified API orchestration layer to streamline ticket routing"
+offered little evidence of outcome. After: the gateway bullet identifies a new
+multi-tenant service, its vendor-neutral adapters and the first B2B demo it enabled;
+the candidate's 2026 Simple.life block is the source. Before: Hyprr had a single
+roadmap/beta sentence. After: roadmap and core-stack responsibility is separate from
+backend development of the Ethereum-based components; the candidate's source CV
+records both. Before: the letter began with a conventional application sentence and
+repeated much of the CV. After: it opens with the role's ownership problem and uses
+two relevant examples, CRURATED and airSlate. Role counts are now Simple.life 5,
+CRURATED 5, airSlate 3 and Hyprr 2. Recent roles carry ten of fifteen bullets.
 
 ## Final Quality Gate
 
-All Experience bullets are anchored to source-reviewed or candidate-confirmed evidence
-entries; no unverified or invented figures appear in the CV or cover letter. The
-Filament gap and English-level uncertainty are surfaced in interview preparation
-rather than concealed. Word counts, links, and section structure meet the standard
-contract-2 minima.
+Final claim grounding, evidence-bank review, DOCX export and visual page review must
+be completed before publication. The previous manifest recorded text preservation
+but no page count and `visual_review: not_reviewed`; it did not prove a two-page CV.
+The old quality receipt counted bullets and declared review success while accepting
+one-bullet roles. The revision must bind each complete bullet to a verified bank
+entry, audit role counts and ordering, then validate Markdown and exported DOCX.
 
 ## Recommendation
 
-Strong match. Submit with confidence, and use the interview to proactively address the
-two open items -- the Filament admin-panel builder and current English proficiency
-level -- rather than waiting to be asked.
+Apply With Reservations. The PHP, framework, architecture and production ownership
+evidence fits well, while Filament and C1-C2 English are unresolved. Confirm those
+points with the candidate before sending and complete the export review first.

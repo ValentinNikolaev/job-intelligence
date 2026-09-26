@@ -203,7 +203,7 @@ class MatchAnalyzer:
     def analyze_directory(self, directory: Path, *, force: bool = False) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
 
-        if analysis_should_skip_status(meta):
+        if analysis_should_skip_status(meta) and not force:
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
 
         match_path = directory / "match.yaml"
@@ -243,7 +243,7 @@ class MatchAnalyzer:
         expected_job_version: str | None = None,
     ) -> AnalysisResult:
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
-        if analysis_should_skip_status(meta):
+        if analysis_should_skip_status(meta) and not force:
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
         if expected_profile_version and expected_profile_version != profile_version:
             raise MatchError(f"candidate profile changed after the analysis pack was created: {directory}")

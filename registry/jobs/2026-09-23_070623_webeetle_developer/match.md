@@ -1,27 +1,24 @@
 # Match Analysis
 
-**Score:** 74/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Strong technical fit for weBeetle's Back-End Developer opening (PHP/Symfony, Node.js, REST, microservices, MySQL, Agile), backed by extensive verified backend evidence, but the role is overwhelmingly on-site in Angri (Italy) or Split (Croatia) with only 2-4 remote days per month, and daily workplace communication would likely be in Italian, which the candidate is still learning.
+PHP/Symfony, database and distributed-service experience support the backend track, but Node.js and MongoDB are unverified and the Angri/Split onsite pattern creates substantial logistics uncertainty.
 
 ## Why it matches
 
-- PHP/Symfony backend experience directly matches the posting's core requirement
-- REST/API, microservices, and Agile/Scrum experience are strongly evidenced
-- MySQL and event-driven backend architecture experience (CRURATED) map onto the posting's database and API requirements
-- 15+ years of production backend experience substantially exceeds the posting's 2-year minimum
+- Owned PHP analytics and versioned event routing in production at CRURATED.
+- Built Laravel/Symfony logging and reduced database load at airSlate.
+- Designed a Go vendor-neutral gateway and operated support integrations at Simple.life.
 
 ## Gaps
 
-- MongoDB (NoSQL) experience is not evidenced
-- Node.js is listed among the candidate's skills at a general level; no specific Node.js production achievement is verified
+- No confirmed production Node.js or MongoDB example.
+- No verified Ambassador, Envoy or Istio implementation.
 
 ## Concerns
 
-- The role is based on-site in Angri (SA), Italy or Split, Croatia, with smart working limited to 2-4 days per month; the candidate is based in Fiumicino/Rome, a significant distance from either site
-- Daily workplace communication is likely in Italian; the candidate is still learning Italian, though English is strong
-- The posting is explicitly open to junior candidates needing mentoring, while the candidate is senior; worth clarifying expectations and scope in conversation
+- Posting allows only two to four remote days monthly; willingness to work onsite in Angri or Split is unconfirmed.
 
 ## Requirement evidence
 
@@ -29,7 +26,7 @@ Strong technical fit for weBeetle's Back-End Developer opening (PHP/Symfony, Nod
 | --- | --- | --- | --- | --- | --- |
 | On-site work in Angri, Italy or Split, Croatia with limited remote days | critical / stated | unknown | Sede di lavoro @ Angri (SA), Italy e Spalato, Croazia . |  | The candidate is based in Fiumicino/Rome, a significant distance from either site, and remote work is limited to 2-4 days per month. / Confirm relocation feasibility, commute logistics, or any flexibility on the on-site requirement before proceeding. |
 | PHP/Symfony backend development | critical / stated | strong | Conoscenza di framework come Laravel / Symfony. | PHP Software Developer | / |
-| Node.js / event-driven scripting platform | high / stated | partial | Conoscenza del linguaggio di scripting base e della piattaforma event-driven. | architect and lead the development of the platform's internal event analytics | Direct Node.js production evidence is not verified; strongest event-driven evidence is PHP-based (CRURATED). / Clarify in interview how much of the role is genuinely Node.js versus PHP/Symfony. |
+| Node.js / event-driven scripting platform | high / stated | unknown | Conoscenza del linguaggio di scripting base e della piattaforma event-driven. |  | Event-driven PHP and Go work does not establish production Node.js experience. / Confirm any Node.js production work; otherwise describe the transferable event-driven design only. |
 | MySQL or another RDBMS | high / stated | strong | o altro database management system RDBMS. | Reduced** peak load on the main database by removing bottlenecks | / |
 | API / REST distributed systems architecture | high / stated | strong | Conoscenza del linguaggio / librerie API e dell'architettura software per i sistemi distribuiti REST. | Define a robust, versioned event schema to enforce consistency across teams | / |
 | Microservices (Kubernetes and related systems) | high / stated | strong | Conoscenza di sistemi come Kubernetes, Ambassador, Envoy, Istio & affini. | Defined the technology roadmap with the CTO | / |

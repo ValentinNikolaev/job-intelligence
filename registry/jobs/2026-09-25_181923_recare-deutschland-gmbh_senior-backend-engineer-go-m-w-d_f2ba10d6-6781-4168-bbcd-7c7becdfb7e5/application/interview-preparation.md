@@ -20,21 +20,20 @@ The posting explicitly wants someone "looking for a strong individual contributo
 role rather than a path into people management" who still "supports and mentors
 other engineers." The strongest story here is owning the Simple.life support
 platform end to end: designing it, personally owning its operation under load of up
-to three times the ordinary monthly ticket volume, and building the API
-orchestration layer myself. Pair that with the Hyprr story: working directly with
-the CTO to define the technology roadmap and owning microservice/serverless
-architecture decisions as Technical Lead, which is direct evidence of contributing
-to architecture decisions without being handed them.
+to three times the ordinary monthly ticket volume, and building the
+vendor-neutral helpdesk gateway. Pair that with the Hyprr story: working with the CTO on
+the technology roadmap and contributing to microservice and serverless
+architecture as Technical Lead. Be precise about which decisions you made.
 
 ## Technical Interview
 
 Expect a deep system-design conversation, since the posting frames "own a domain
 inside our core Go codebase" as central. Be ready to walk through the Simple.life
 platform's design: why Go, how the Zendesk/Intercom/internal-service integration is
-structured, and how the API orchestration layer routes and classifies tickets.
+structured, and how the gateway separates vendor adapters from tenant event ingestion.
 Expect questions on database performance, referencing the airSlate story: reducing
 peak load on the main database by removing bottlenecks and redistributing workload.
-Be candid that Postgres/GORM and CircleCI specifically are not separately confirmed
+Be candid that CircleCI specifically is not separately confirmed
 in the record, even though general SQL/database and CI/CD experience is well
 evidenced — do not claim tool-specific familiarity beyond what is true. Expect a
 question about AI-tool usage in daily engineering work, since the posting states the
@@ -50,8 +49,9 @@ Simple.life — be ready to explain that clearly rather than let it look like an
 unexplained overlap. Expect a question on what "mentoring" has actually looked like
 day to day: the honest answer is that direct evidence in this package centers on
 architecture leadership and team task-distribution (airSlate) rather than a named
-mentoring program, so frame it as leadership-adjacent knowledge sharing rather than
-overclaiming a formal mentoring track record.
+mentoring program. At airSlate, you supported technical onboarding and
+knowledge sharing; describe an actual example rather than implying a formal
+mentoring track record.
 
 ## Company-Specific Preparation
 

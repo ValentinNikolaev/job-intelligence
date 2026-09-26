@@ -87,6 +87,19 @@ class EvidenceTests(unittest.TestCase):
         with self.assertRaisesRegex(EvidenceError, "role is absent"):
             validate_evidence_bank(self.bank, self.root)
 
+    def test_separate_candidate_source_can_establish_role_attribution(self):
+        fact = self.root / "registry/candidate/fact.md"
+        fact.write_text("Example delivered a Go gateway.", encoding="utf-8")
+        bank = bootstrap_evidence_bank(self.root, [{"id": "gateway", "employer": "Example",
+            "source": {"path": "registry/candidate/fact.md",
+            "quote": "Example delivered a Go gateway."}}])
+        bank["entries"][0].update(role="Backend Engineer", status="verified", verification={"reviewer": "test", "reviewed_at": "2026-09-26", "method": "source review"},
+            attribution_source=self.bank["entries"][0]["source"])
+        self.assertEqual(1, validate_evidence_bank(bank, self.root)["entry_count"])
+        self.path.write_text(self.quote + "\nnew context", encoding="utf-8")
+        with self.assertRaisesRegex(EvidenceError, "stale source hash"):
+            validate_evidence_bank(bank, self.root)
+
     def test_same_quote_cannot_be_resurrected_under_another_id(self):
         blocked = copy.deepcopy(self.bank["entries"][0])
         blocked.update(id="old-claim", status="cannot-confirm", reason="Candidate cannot confirm this result")

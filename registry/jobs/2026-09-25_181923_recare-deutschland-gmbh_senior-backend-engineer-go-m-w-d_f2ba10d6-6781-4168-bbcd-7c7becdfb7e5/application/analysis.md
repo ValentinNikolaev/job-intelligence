@@ -19,75 +19,83 @@ CI/CD.
 
 ## Initial Resume Audit
 
-The candidate's most directly relevant experience is the Simple.life Go platform:
-designed and personally owned, handling ticket volume that scales up to three times
-the ordinary monthly baseline during peak season, with a self-built API
-orchestration layer. The Hyprr Technical Lead role adds direct CTO-level
-architecture-ownership evidence. The airSlate database-bottleneck and team-planning
-work rounds out the profile with database performance and cross-functional
-leadership evidence, though it is PHP-centric rather than Go-centric.
+The original CV's most relevant item was Simple.life Go platform ownership
+under a confirmed monthly baseline of at least 20,000 tickets and up to three
+times that volume at peak. Yet its first bullets stayed at the level of
+platform description and a platform-wide automation percentage. The revised
+CV leads with ownership at scale and then distinct results: the vendor-neutral
+gateway, AWS telephony, consolidated data pipelines and recovery from cron
+failures. airSlate adds database-bottleneck and production-diagnosis evidence.
+Hyprr remains a brief roadmap and delivery example, without claiming sole
+ownership of architecture decisions.
 
 ## Strict Hiring Manager Review
 
-A hiring manager would see a candidate whose most recent, most senior-scoped work
-(Simple.life, Hyprr) is genuinely about single-handed ownership of a backend domain,
-matching the posting's explicit senior-IC, not-a-manager framing well. The most
-likely friction point is that only one role (Simple.life) is purely Go-focused;
-the CV and cover letter both address this directly by showing Go and PHP running in
-parallel across the career rather than presenting Go as a brand-new skill.
+A hiring manager would see a recent Go role with direct system ownership,
+supported architecture decisions and production consequences. The strongest
+match is ownership of a codebase domain; the gateway and telephony systems
+give more concrete proof than the earlier broad platform sentence. The
+database-performance story at airSlate answers another specific requirement.
+The PHP-centered CRURATED work remains clearly labeled as concurrent
+consulting, rather than making it appear to be another Go employer.
 
 ## Red Flags
 
-- Postgres/GORM and CircleCI are named tools in the posting with no verified
-  evidence entry naming either specifically; this is disclosed as an open item in
-  interview preparation rather than concealed or overclaimed.
-- Direct "mentoring" language is not in the compact match-analysis candidate
-  profile; the CV and interview preparation both frame this honestly as
-  architecture-leadership-adjacent rather than a named mentoring program.
+- CircleCI is named in the posting without supporting candidate evidence;
+  it is left out of the CV. The new candidate block names PostgreSQL/GORM
+  at Simple.life, but its period and role-title conflict requires
+  reconciliation before the final date and title are printed.
+- The candidate record supports technical onboarding and knowledge sharing at
+  airSlate, not a quantified or formal mentoring program. The CV uses the
+  narrower wording.
 - No healthcare-domain background, though the posting explicitly frames this as a
   bonus, not a requirement.
 
 ## ATS Keyword Analysis
 
-The CV and cover letter contain: Go, Golang, PostgreSQL, SQL performance, system
-design, architecture decisions, microservices, Kubernetes, CI/CD, GitHub Actions,
-technical ownership, database optimization, and remote-first collaboration
-language, matching the posting's core keyword set. GORM, CircleCI, and SonarCloud
-are not present as literal keywords since the candidate's verified record does not
-name them.
+The CV and cover letter use supported terms such as Go, PostgreSQL, SQL
+performance, service architecture, Kubernetes, AWS, CI/CD, GitHub Actions,
+technical ownership and production diagnosis. The new Simple.life source
+names GORM, but the revised CV does not need that keyword to establish
+database experience. CircleCI and SonarCloud remain absent because no
+candidate evidence supports their use. The language stays readable instead
+of reproducing the job posting's entire tool list.
 
 ## Major CV Changes
 
-The CV was rebuilt specifically for this posting: it leads with Go ownership
-(Simple.life) rather than the PHP-heavier CRURATED/airSlate material, compresses the
-CRURATED bullets since that engagement is PHP-specific and less directly relevant to
-a Go-only backend, and foregrounds the Hyprr CTO-level architecture story earlier
-than a purely chronological CV would, since architecture-decision ownership is the
-posting's most emphasized theme.
+The CV now opens the recent Go role with a supported scale and ownership
+result, then gives distinct gateway, telephony, pipeline and failure-recovery
+outcomes. CRURATED carries three separate production contributions, meeting
+the recent-role threshold without padding. Experience stays in reverse
+chronological order with the overlap clearly explained. airSlate retains three
+distinct points and Hyprr two; PDFfiller is omitted because
+its two available bullets repeated one email-service scale story.
 
 ## Final Quality Gate
 
-Every Experience bullet traces to a verified evidence-bank entry with a matching
-claim in claims.yaml; every numeric claim (20,000 tickets, 86%, 99.9%, 3 million
-emails, 10x, 6 months) is confirmed against its cited source. The cover letter uses
-two complementary, non-duplicative evidence stories (Simple.life ownership, Hyprr
-architecture leadership) and one verified, sourced company fact. No unsupported
-tools, employers, or metrics were introduced, and the Postgres/GORM/CircleCI naming
-gap is disclosed rather than concealed.
+The final gate requires a fresh claim check against the updated evidence
+bank, exact matching claim text in claims.yaml and document hashes in
+quality.yaml. The cover letter uses two complementary stories: Go domain
+ownership and airSlate database diagnosis. Company claims are confined to the
+posting. Do not mark the receipt complete until the title/date clarification
+and export review are finished; the previous manifest showed no PDF page count
+and a visual-review status of `not_reviewed`.
 
 ## Recommendation
 
-Strong recommendation to proceed. The candidate's Simple.life and Hyprr evidence
-maps directly onto the posting's two most emphasized requirements: real production
-Go ownership and independent architecture-decision-making in a senior-IC role. The
-honest disclosure of the Postgres/GORM naming gap and the mentoring-language gap
-should read as credibility rather than weakness to a careful reviewer.
+Proceed once the source chronology is resolved. The revised Simple.life
+examples substantiate Go ownership and design judgment, while airSlate
+supports database optimization. Confirm the exact work period and official
+title before sending the CV, and discuss how Recare handles ownership,
+technical review and provider integration in the interview.
 
 ## Additional Context
 
-The recurring pattern across Simple.life, Hyprr, and even the PHP-centric CRURATED
-and airSlate roles is that the candidate is consistently the person who takes
-technical ownership of a system end to end rather than one contributor among many
-on a shared component. That pattern, more than any single technology match, is the
-strongest predictor of fit for a role explicitly designed around single-owner
-domains within a small backend team. This continuity of ownership across employers, rather than a single flagship project, is the clearest signal that the candidate would settle quickly into Recare's small-team, high-autonomy model.
+The candidate's Go platform, CRURATED DataLake and Hyprr roadmap provide
+different forms of ownership. They should not be flattened into a claim that
+every system was built single-handedly: the candidate described a
+cross-functional team for the telephony work, full technical ownership rather
+than sole coding for CRURATED, and collaboration with the CTO at Hyprr.
+That distinction matters in an interview for a senior individual contributor
+role. The strongest evidence is how he defined and delivered his own scope
+while coordinating with others and maintaining production accountability.

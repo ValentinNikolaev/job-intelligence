@@ -25,10 +25,11 @@ Crutrade integration ownership (authentication/OTP, account linking, purchase
 verification, request/response logging) and the CRURATED DataLake/event-analytics
 ownership (99.9%+ delivery reliability, sub-4-hour stream onboarding). The airSlate
 database-bottleneck story adds a second, independent proof point for the
-"database performance" requirement. The candidate's most recent full-time role
-(Simple.life) is Go-focused rather than PHP-focused, which is honestly disclosed
-rather than concealed, with the concurrent CRURATED PHP subcontract used to establish
-current PHP relevance.
+"database performance" requirement. The latest Simple.life work is Go-focused. A
+direct follow-up permits PHP only on that role's Technologies line, without a
+specific PHP achievement. Concurrent CRURATED work supplies direct PHP production
+evidence. The Simple.life work is past experience, but the exact end month remains
+unresolved; the CV uses the confirmed Software Developer title and a year-only date.
 
 ## Strict Hiring Manager Review
 
@@ -43,52 +44,49 @@ infer a gap.
 
 ## Red Flags
 
-- Git and Postman/cURL are both explicitly listed as expected tools, and no verified
-  evidence entry names either one specifically; this is disclosed as an open item in
-  interview preparation rather than concealed or overclaimed in the CV.
+- Git, Postman/cURL and direct JSON/XML handling are listed in the posting, but no
+  reviewed evidence-bank entry confirms these named tools or formats. They were
+  improperly listed in the prior CV's Skills and are removed from this revision.
 - The CRURATED engagement is part-time/concurrent, not full-time; both the CV heading
   and the cover letter make this explicit to avoid appearing misleading.
-- Weekend duty rotation acceptance is not independently confirmed with the candidate
-  beyond the cover letter's openness to discussing it further.
+- Weekend duty rotation acceptance is not confirmed. The revised letter asks about
+  expectations without promising acceptance.
 
 ## ATS Keyword Analysis
 
-The CV and cover letter contain: PHP, MySQL, SQL, REST API, API integration, database
-performance, troubleshooting, logs, monitoring, Laravel, Symfony, Git-adjacent version
-control context, JSON/XML-adjacent integration work, and production reliability
-language, matching the posting's core keyword set. Postman and cURL are not present
-as literal keywords since the candidate's verified record does not name them.
+The CV and letter use supported terms: PHP, MySQL, SQL performance, REST APIs, API
+integration, database stability, troubleshooting, logging, Laravel and Symfony.
+Git, Postman/cURL and JSON/XML stay explicit gaps pending candidate confirmation;
+adding those keywords without evidence would mislead the hiring reader.
 
 ## Major CV Changes
 
 The CV was built specifically for this posting: it leads with a support-and-
 integration-focused Summary and headline rather than a generic backend-engineer
-framing, orders Experience with the two most support-relevant employers (CRURATED,
-Simple.life) first, and keeps the AWS/Kubernetes/architecture-heavy airSlate and
-Hyprr material compact rather than leading with it, since this posting rewards
-troubleshooting depth over architecture breadth.
+framing, restores reverse chronology with Simple.life before concurrent CRURATED,
+and keeps airSlate's database and incident examples focused on the support role.
+Hyprr and PDFfiller are omitted: current sources do not give two distinct outcomes
+for either without splitting a result or presenting duties as achievements. The
+three displayed jobs carry 13 substantive bullets, all on recent work.
 
 ## Final Quality Gate
 
-Every Experience bullet in the CV traces to a verified evidence-bank entry with a
-matching claim in claims.yaml; every numeric claim (99.9%, 20,000 tickets, 86%, 3
-million emails, 10x, 4 hours) is confirmed against its cited source. The cover letter
-uses two complementary, non-duplicative evidence stories and one verified,
-sourced company fact. No unsupported tools, employers, or metrics were introduced.
+The revised CV uses reviewed evidence-bank entries for the later Simple.life work.
+The candidate confirmed that work as past experience and allowed PHP only in the
+Simple.life technologies line, with no PHP achievement attributed to that role.
+The earlier confirmed Software Developer title is retained; the exact end month
+remains unresolved, so the CV uses a year-only 2026 end. The old receipt marked
+grounding true despite its own Git evidence gap; the revised CV removes unsupported
+Git, JSON and XML claims. A draft DOCX exported through Word occupies two pages,
+and both rendered pages were inspected for clipping, legibility and role breaks.
+The letter uses CRURATED integration and airSlate database stability as separate,
+sourced examples. Publication still requires final validation in the selected
+Codex model profile.
 
 ## Recommendation
 
-Strong recommendation to proceed. The candidate's CRURATED and airSlate evidence maps
+Apply With Reservations. The candidate's CRURATED and airSlate evidence maps
 directly onto the posting's two most emphasized requirements: partner API
 integration diagnosis and database performance troubleshooting. The honest
 disclosure of the CRURATED engagement's part-time nature and the Git/Postman gaps
 should read as credibility rather than weakness to a careful reviewer.
-
-## Additional Context
-
-The candidate's Simple.life and airSlate roles both involve owning systems under
-sustained production load rather than short-lived projects, which is a useful signal
-for a support-oriented role where the same systems need to be maintained reliably
-over long periods rather than handed off after a sprint. This continuity of
-ownership, more than any single technology match, is the strongest predictor of fit
-for INFOBUS's stated need.

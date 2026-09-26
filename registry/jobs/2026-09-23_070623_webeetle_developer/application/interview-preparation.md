@@ -39,9 +39,9 @@ calls this out as the company's core technical focus. Walk through the CRURATED 
 schema versioning work: why a versioned schema matters for consistency across teams,
 and how the routing logic supports multiple downstream destinations (webhook, S3-style
 targets) with delivery guarantees. Be ready to connect this to the posting's specific
-mention of Kubernetes, Ambassador, Envoy, and Istio — your direct evidence is
-Kubernetes/microservices architecture at Hyprr, so be honest that your service-mesh
-tooling exposure (Ambassador/Envoy/Istio specifically) is not independently verified
+mention of Kubernetes, Ambassador, Envoy, and Istio. Your CV demonstrates distributed
+service design through CRURATED and Simple.life; direct experience with those named
+service-mesh products is not independently verified. Keep that distinction clear
 and frame it as transferable systems-design knowledge rather than hands-on tool
 experience. For the database side, use the airSlate story: reducing peak load on the
 main database by removing bottlenecks and redistributing workload. Be candid that
@@ -54,6 +54,14 @@ otherwise strong match.
 Expect a question about the CRURATED and Simple.life overlap: be precise that CRURATED
 was a concurrent, part-time subcontract/consulting engagement running alongside your
 full Simple.life role, not two competing full-time jobs. Expect a question probing the
+new candidate-supplied later Simple.life work: reconcile the official title and end
+month with the earlier July 2026 clarification before presenting a month-specific CV.
+The current draft uses Software Developer and year-only 2026, based on direct follow-up.
+PHP may appear in Simple.life's Technologies line but has no specific documented
+achievement there; use CRURATED and airSlate for PHP examples. Discuss
+gateway, telephony and Snowflake results as past work without inventing an employment
+timeline. If asked about 86% automation, explain that this is a platform-wide measure;
+you implemented many scenarios, not every one. Expect a question probing the
 airSlate "Programming Team Lead" title: be ready to describe the shift from
 individual contribution to leading epic decomposition, task delegation, and on-call
 ownership. Expect a direct question about your Italian level — answer with the same

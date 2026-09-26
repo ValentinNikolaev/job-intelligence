@@ -8,6 +8,7 @@ import shutil
 import subprocess
 import tempfile
 import uuid
+import zipfile
 from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
@@ -362,6 +363,41 @@ class HostMarkdownDocxConverter:
             raise ApplicationError(f"Markdown-to-DOCX conversion failed: {detail[:1000]}")
         if not op.exists(target) or target.stat().st_size == 0:
             raise ApplicationError(f"Markdown-to-DOCX converter did not create {target}")
+        if source.name.casefold() == "cv.md":
+            _keep_cv_role_header_with_date(target)
+
+
+def _keep_cv_role_header_with_date(path: Path) -> None:
+    """Prevent a role heading and date from being orphaned by a page break."""
+    with zipfile.ZipFile(path) as archive:
+        original = archive.read("word/document.xml")
+        paragraphs = list(re.finditer(rb"<w:p(?:\s[^>]*)?>.*?</w:p>", original, re.DOTALL))
+        replacements: dict[int, bytes] = {}
+        for index, match in enumerate(paragraphs[:-1]):
+            if not re.search(rb'<w:pStyle\s+w:val="(?:3|Heading3)"', match.group()):
+                continue
+            for linked_index in (index, index + 1):
+                linked = paragraphs[linked_index].group()
+                if b"<w:keepNext" in linked or b"</w:pPr>" not in linked:
+                    continue
+                replacements[linked_index] = linked.replace(b"</w:pPr>", b"<w:keepNext/></w:pPr>", 1)
+        if not replacements:
+            return
+        updated = original
+        for index in sorted(replacements, reverse=True):
+            match = paragraphs[index]
+            updated = updated[:match.start()] + replacements[index] + updated[match.end():]
+        descriptor, temporary = tempfile.mkstemp(dir=path.parent, suffix=".docx.tmp")
+        os.close(descriptor)
+        try:
+            with zipfile.ZipFile(temporary, "w") as output:
+                for member in archive.infolist():
+                    content = updated if member.filename == "word/document.xml" else archive.read(member.filename)
+                    output.writestr(member, content)
+        except BaseException:
+            Path(temporary).unlink(missing_ok=True)
+            raise
+    os.replace(temporary, path)
 
 
 class ApplicationGenerator:
@@ -659,6 +695,7 @@ def validate_application_package(
         _validate_cv_skills(result["cv_markdown"])
         _validate_cv_experience_bullets(result["cv_markdown"], minimum=6 if document_format == "compact" else 10)
         _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
+        _validate_cv_role_depth(result["cv_markdown"], reference_date=reference_date)
         _validate_cv_role_technologies(result["cv_markdown"])
         if vacancy is not None:
             _validate_cv_headline(result["cv_markdown"], vacancy)
@@ -771,6 +808,51 @@ def _validate_cv_experience_bullets(markdown: str, *, minimum: int = 10) -> None
         )
 
 
+def _validate_cv_role_depth(markdown: str, *, reference_date: date | datetime | None) -> None:
+    """Enforce role coverage while leaving factual distinctness to the source review."""
+    today = (
+        reference_date.date() if isinstance(reference_date, datetime)
+        else reference_date or datetime.now(timezone.utc).date()
+    )
+    recent_cutoff = (today.year - 3, today.month)
+    section = _markdown_section(markdown, "Experience")
+    roles: list[tuple[str, list[str]]] = []
+    for line in section.splitlines():
+        heading = re.match(r"^###\s+(.+?)\s*$", line)
+        if heading:
+            roles.append((heading.group(1), []))
+        elif roles:
+            roles[-1][1].append(line)
+    if not roles:
+        raise ApplicationError("cv_markdown Experience must use H3 headings for each role")
+    previous_end: tuple[int, int] | None = None
+    for title, lines in roles:
+        period = _EXPERIENCE_DATE_RANGE_RE.search("\n".join([title, *lines[:4]]))
+        if period is None:
+            raise ApplicationError(f"cv_markdown Experience role has no dated range: {title}")
+        end = period.group("end")
+        if end.casefold() in {"present", "current"}:
+            end_key = (today.year, today.month)
+        else:
+            parts = end.split()
+            end_year = int(parts[-1])
+            end_month = (
+                next(i for i, month in enumerate(_MONTH_NAMES, 1) if month.casefold() == parts[0].casefold())
+                if len(parts) > 1 else (today.month if end_year == today.year else 12)
+            )
+            end_key = (end_year, end_month)
+        if previous_end is not None and end_key > previous_end:
+            raise ApplicationError(f"cv_markdown Experience is not in reverse chronology at: {title}")
+        previous_end = end_key
+        count = sum(bool(re.match(r"^\s*[-*]\s+\S", line)) for line in lines)
+        required = 3 if end_key >= recent_cutoff else 2
+        if count < required:
+            raise ApplicationError(
+                f"cv_markdown Experience role {title} has {count} bullets; "
+                f"requires {required} distinct source-backed bullets"
+            )
+
+
 def _validate_cv_audit_bullet_coverage(markdown: str, decisions: list[Mapping[str, Any]]) -> None:
     section = _markdown_section(markdown, "Experience")
     final_bullets = {
@@ -805,6 +887,11 @@ def _validate_cover_letter_paragraphs(markdown: str, *, minimum: int = 4) -> Non
         raise ApplicationError(
             f"cover_letter_markdown must contain {minimum} to 6 substantive body paragraphs "
             f"({len(body)} found)"
+        )
+    if re.match(r"(?i)^I am applying for\b", body[0]):
+        raise ApplicationError(
+            "cover_letter_markdown opens with a generic application formula; "
+            "lead with a vacancy-specific, source-backed proposition"
         )
 
 
@@ -1555,7 +1642,18 @@ def _publish_staged_package(staging: Path, target: Path, files: Sequence[str],
         raise
     finally:
         if backup.exists() and target.exists():
-            shutil.rmtree(backup, ignore_errors=True)
+            try:
+                shutil.rmtree(backup)
+            except OSError as exc:
+                root = op.project_root(target)
+                if root is None:
+                    raise ApplicationError(f"published application backup could not be removed: {backup}") from exc
+                retained = root / ".codex-work" / "retained-backups" / f"{target.parent.name}-{backup.name}"
+                retained.parent.mkdir(parents=True, exist_ok=True)
+                try:
+                    os.replace(backup, retained)
+                except OSError as move_exc:
+                    raise ApplicationError(f"published application backup could not be retained: {backup}") from move_exc
 
 
 def _find_docx_script() -> Path:

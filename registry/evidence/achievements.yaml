@@ -516,7 +516,7 @@ entries:
     confirmation before reuse.
 - id: airslate-logger
   employer: airSlate
-  source:
+  source: &id003
     path: registry/candidate/linkedin-profile.md
     quote: "- Developed a Laravel/Symfony-based product-wide logger package, adhering\
       \ to\n  interservice communication standard."
@@ -948,3 +948,428 @@ entries:
     reviewed_at: '2026-09-25'
     method: Compared exact candidate-authored CV excerpt and airSlate employer/role
       attribution; no numerical outcome inferred.
+- id: simple-2025-llm-support
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+    quote: '**A. LLM-powered cancellation & refund automation for support emails (Mar–Sep
+      2025, epic DEV-21969)**
+
+      - Built OpenAI-generated replies for step 1 of the cancellation workflow (regular
+      subscriptions), then turned AI replies on for cancellation emails at the first
+      step (Jun 2025); added 1-step automation for refunds over 30 days; reworked
+      the refund flow after cancellation.
+
+      - Prompt engineering and iteration: cancellation prompts (regular plans), deletion-request
+      predictor, TrustPilot prompts, 4-5★ and 1-3★ review prompts; migrated all prompts
+      from GPT-4 to GPT-4o (May 2025).
+
+      - Built the deletion-request predictor (OpenAI classifier) and hardened it against
+      moderation failures and mapping errors; routed users with active deletion requests
+      to L1.
+
+      - Preprocessing pipeline: stop-word cleanup for cancellations/refunds, text
+      sanitization for both automation services, removal of boilerplate before categorization,
+      CC-contacts support, "get email from inquiry" action, empty-body ticket workaround.
+
+      - Fixed 5 production defects in cancellation emails in one release (incorrect
+      cancellation/end dates, tags & pending status not applied, missing name in AI
+      reply, AI note not sent).'
+    sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: &id002
+    path: registry/candidate/user-confirmed-career-clarifications.md
+    quote: '- **Role:** Software Developer'
+    sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2025-fin-categorization
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+    quote: '**B. Ticket categorization: ML model → Intercom Fin A/B test → migration
+      (Jun–Aug 2025)**
+
+      - Designed and launched an A/B test comparing the in-house ML categorization
+      model with Intercom AI Categorization (Fin) via two Intercom attributes (`fin_automation_category`,
+      `general_email_categorization`), with category mapping into the existing billing
+      automation (cancellation / refund / other / billing_other / account deletion).
+
+      - Migrated ticket categorization to Intercom AI Categorization (Aug 2025), then
+      executed the switch to Fin with ML kept as fallback.
+
+      - Added token input/output telemetry for the general categorization action and
+      OpenAI event logging per generated reply.'
+    sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2025-review-automation
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+    quote: '**C. Public-review automation on App Store, Google Play and TrustPilot
+      (Jan–Jul 2025, epic DEV-23082)**
+
+      - Built from scratch the automation that replies to public reviews (Jan 2025),
+      extended it to 2-3★ reviews (Mar 2025) and to 1-3★ App Store / Google Play reviews
+      and TrustPilot 2-3★ / 4-5★ (May 2025).
+
+      - Keyword guardrails: reviews with sensitive/legal keywords are excluded from
+      auto-reply and routed to a human with the review link in an internal note; internal
+      note with the exact payload sent to OpenAI for auditability.
+
+      - Handled rate limiting (HTTP 429) on the review-reply endpoint and Azure OpenAI
+      call-rate limits.'
+    sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2025-support-agent
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+    quote: '**D. Launch of the standalone LLM support agent service (Oct–Dec 2025)**
+
+      - Bootstrapped the new AI-agent service: scenario for "account found but subscription
+      not found", useful-links generation for the new billing system, PayPal invoice-ID
+      / order-ID parsing, tagging of users with workbooks, subscription lookup from
+      the second email in the body, user-search time limits, removal of `is_issue_resolved`
+      logic.
+
+      - Automated closing of conversations handled by the LLM reply engine (new workflow,
+      Nov 2025); added alerts for TrustPilot processing.'
+    sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2025-deepl
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+    quote: '**E. Localization: migration to DeepL (Sep 2025)**
+
+      - Migrated translation from the previous provider to DeepL after mass language-detection
+      failures on customer messages; added Arabic support; built a prototype translation
+      bot for Intercom (Jul 2025); fixed inconsistent translations and non-EN first-message
+      handling.'
+    sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2025-admin-events
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+    quote: '**F. Cost optimization and platform hygiene**
+
+      - Admin panel cost optimisation (epic DEV-20905): load only the last 40 days
+      of customer events on first open; capped the Data Platform events loop at 1
+      year; stopped loading events for tickets handled by the LLM engine unless escalated
+      to L1.
+
+      - Dropped the Zendesk usecase and all methods depending on it (Apr 2025); removed
+      unused refund threads and outdated cron commands; unified the tagging system
+      in support-api; migrated legacy support service onto shared packages (Nov 2025);
+      fixed linter in CI; upgraded Go to 1.22.10.
+
+      - Moved OpenAI integration into the support-automation service; introduced feature
+      flags; replaced link generation and user lookup in the API with calls to the
+      automation service (Support API v2).'
+    sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-telephony
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: '**A. Outbound telephony platform on Amazon Connect (Aug–Sep 2026)**
+
+      - Owned architecture and backend end-to-end; wrote the epic/design doc; passed
+      security sign-off; released to production on 2026-09-25.
+
+      - Agent federation via AssumeRole + GetFederationToken: no per-agent AWS accounts,
+      no SAML app, IT removed from the critical path.
+
+      - Connect users created lazily by the backend (moved out of Terraform); stale
+      users cleaned by cron; admin activate/deactivate.
+
+      - PII controls: customer phone number never rendered or logged (masked only),
+      purged from contact record by TTL, DevTools disabled by policy.
+
+      - Compliance logic: call windows with timezones/Sundays/holidays, do-not-call
+      list, queued-callback withdrawal on opt-out, retry policy owned by backend (Connect
+      retries = 0), outcome written to the existing Intercom ticket (no duplicate
+      tickets).
+
+      - Designed load: 10–20 calls/day per agent, max 50. Cross-functional team: backend
+      (Valentin), frontend, SRE.
+
+      - Authored a 30-scenario telephony QA checklist with run journal; 4 documented
+      runs in 2 days before launch; every finding converted to a ticket.'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-helpdesk-gateway
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug 2026)**
+
+      - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind a vendor-neutral
+      event model; the only repo holding vendor SDKs.
+
+      - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+      ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter, Zendesk
+      adapter with full outbound (reply, note, tags, status), client + service in
+      the support-agent, dev environment and deploy.
+
+      - Enabled the company''s first B2B demo of the support-AI product (golden cases
+      + admin console).'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-llm-agent
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: '**C. Production LLM support agent — backend lead (whole year, ~60 tickets)**
+
+      - Implemented 10+ agent action tools: subscription cancel, cancellation offer,
+      refund, marketing/Braze unsubscribe, user search (incl. via OpenAI vision),
+      attachments extraction, useful-links generation for new billing, review processing
+      for a second product.
+
+      - Built the evaluation pipeline: conversation texts + action events + subscription-state
+      snapshots on ticket open/close → Eval JSON.
+
+      - Built email and product-ticket categorization on prompts; retro-mapped 500+
+      product tickets and all emails since Jan 2026 as training/eval data.
+
+      - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom responses,
+      nil-error wrapping, malformed session data, content_filter errors, duplicate
+      handling, language misdetection).
+
+      - Migrated 3 services to DeepL without language detection.
+
+      - Working set in production: ~7,000 pending tickets in a 7-day window.'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-snowflake-pipelines
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one engine
+      (Sep 2026)**
+
+      - Researched the codebase, proved ~70% structural identity, replaced 3 independent
+      cron pipelines (CEO questions, profile reports, deletion feedback) with one
+      two-phase engine (ingest + push; keyset pagination, run budget, throttle, retries,
+      feature flag) via Template Method with 6 hook points.
+
+      - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered. Removed
+      a hard cap of 100 items/day. Eliminated daily full-history re-reads from Snowflake.
+      No public API / admin-UI changes; no downtime.'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-cron-resilience
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: '**E. Elimination of daily cron fatal failures under Intercom API degradation
+      (Jul–Aug 2026)**
+
+      - Diagnosed from logs and code: up to 14 fatal runs/day; a 48-page scan of ~7,000
+      tickets exceeded the 19.5-minute run budget when Intercom search degraded; per-page
+      retry was bypassed by the overall-context-done branch.
+
+      - Fix: partial-success semantics with an "incomplete scan" metric instead of
+      fatal; sharded search by updated_at with 3–4 parallel cursor chains.'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-gdpr
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep 2026,
+      ~37 tickets)**
+
+      - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+      Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake analytics
+      (two products). Self-service admin workflow (create / list / detail / status).
+
+      - Deletion contour rework: new dp-gdpr-service contract (bulk requestId + lookup),
+      rollback on Data Platform when a request is cancelled, cascade deletion to Braze
+      and avo-ai, cancellation contract with actor + reason.
+
+      - Executed an under-18 compliance program: account deletion, subscription cancellation
+      and refunds after two notification waves.'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+    context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App), Support
+      & Content Platform'
+  attribution_source: *id002
+  status: verified
+  verification:
+    reviewer: Codex source review
+    reviewed_at: '2026-09-26'
+    method: Compared direct candidate-supplied fact section and earlier direct role
+      clarification; Jira and Slack records were not independently inspected.
+  review_notes: Candidate-reported delivered work only; estimates and example bullets
+    are excluded. August-September work confirmed as past in user follow-up; exact
+    end month remains unconfirmed.
+- id: simple-2026-stack-php
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-follow-up-2026-09-26.md
+    quote: В Simple.life php имел место но достен лишь в упоминания используемых технологий.
+    sha256: 15edbe5ce107ec7a6db46fb490c3f6185590fe5021b7db0218b43c6bec9398f8
+  attribution_source: *id002
+  technologies:
+  - php
+  status: verified
+  verification:
+    reviewer: Codex transcription and source review
+    reviewed_at: '2026-09-26'
+    method: Transcribed the candidate follow-up verbatim; technology permitted only
+      in Simple.life Technologies line.
+  review_notes: No specific Simple.life PHP contribution or result is confirmed.
+- id: airslate-logger-general
+  employer: airSlate
+  role: Software Developer
+  source: *id003
+  attribution_source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex cross-source review
+    reviewed_at: '2026-09-26'
+    method: Compared the exact logger excerpt in candidate LinkedIn export with the
+      generalized Software Developer attribution in candidate CV; no LinkedIn metrics
+      used.
+  review_notes: Use the generalized Software Developer/Programming Team Lead CV heading;
+    the imported LinkedIn Senior title is not asserted.

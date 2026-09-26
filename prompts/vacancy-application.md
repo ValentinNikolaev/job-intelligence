@@ -42,8 +42,14 @@ in the user-facing report; never add unsupported job-ad keywords to compensate.
   earlier direct career clarification gives Software Developer and an end date
   of July 2026. The later block also says `Present`. Resolve these conflicts
   through a direct candidate clarification before using either newer title or
-  end date in an employer-facing CV; otherwise retain the earlier confirmed
-  title and dates and flag the conflict in the analysis.
+  a precise end date in an employer-facing CV; retain the earlier confirmed
+  title and flag the date conflict in the analysis.
+- The candidate's 2026-09-26 follow-up permits the August–September work as
+  past experience and permits PHP only in Simple.life's Technologies line.
+  It does not confirm a specific Simple.life PHP result or an exact end month.
+  Use the earlier confirmed Software Developer title and a year-only 2026 end
+  until the title and end-month conflicts are resolved. Attribute the
+  concurrent PHP delivery results to CRURATED.
 - Review relevant experience inventories to find reusable work history, but keep
   delivered systems, design proposals, general duties, and unconfirmed metrics
   distinct. An inventory is a discovery record; use a verified evidence-bank entry
@@ -215,6 +221,13 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     importance to this vacancy: strongest outcome and scope first, then architecture
     judgment, production reliability or security, and cross-team influence as
     applicable. Record the role counts and ordering rationale in the CV audit.
+    Every displayed role needs at least two distinct source-backed outcome or
+    decision bullets; each role ending within the last three years needs at
+    least three. Recheck candidate sources before declaring a shortage. If
+    distinct facts remain unavailable, omit a nonessential older role or ask
+    the candidate a focused question and leave that package pending. Never
+    split one outcome to meet a quota. Sort roles by end date, newest first,
+    and label overlapping work accurately.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support
@@ -242,6 +255,10 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     research, and final claim ledger. Default to the posting language and selected format: standard uses 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
     ATS-friendly formatting. Use the role and company naturally when they improve targeting.
+    Start the body with a vacancy-specific, source-backed proposition rather
+    than "I am applying for". Select one or two complementary examples and
+    explain their relevance instead of replaying the CV. Name a former
+    employer only when its identity helps place an example in context.
     Put only the finished letter in `cover_letter_markdown`; place research sources and any
     unresolved confirmation items in `analysis_markdown`. If the skill is unavailable, stop
     rather than recreating the retired inline cover-letter logic. Do not invoke `stop-slop`

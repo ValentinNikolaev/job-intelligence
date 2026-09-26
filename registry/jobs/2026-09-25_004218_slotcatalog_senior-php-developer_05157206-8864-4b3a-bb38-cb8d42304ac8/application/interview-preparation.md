@@ -16,7 +16,8 @@ Expect confirmation of the practical basics: remote setup, English communication
 availability honestly, and to speak plainly about your English level rather than
 assume it's assumed. Since the company frames itself around real production impact,
 expect an early question about a time you owned something after release, not just
-built it.
+built it. Clarify whether remote work from Rome is accepted, and prepare truthful
+answers on notice period and compensation; no fixed figures are in the source record.
 
 ## Culture Fit / Behavioral Interview
 
@@ -30,18 +31,27 @@ handing it off after the initial build. Pair that with the airSlate story: you
 personally reduced peak load on the main database by removing bottlenecks and
 redistributing workload, and troubleshot production issues directly from logs,
 monitoring, and SRE dashboards rather than waiting for an escalation from someone else.
+Other evidence-led behavioral prompts: When did you replace repeated code with a
+shared design? What production problem forced a change in your first plan? When did
+security or data privacy alter a feature? How did you coordinate a release across
+backend, frontend and operations? Which system did you continue to own after launch?
+Use the Simple.life Snowflake consolidation, Intercom cron repair, telephony security
+release and CRURATED operations as distinct stories without inventing conflict or
+measured outcomes absent from the candidate sources.
 
 ## Technical Interview
 
-Expect deep questions on PHP 8, Laravel/Symfony, PostgreSQL/MySQL, and REST APIs under
-real traffic. Walk through the CRURATED event schema decision: why a versioned event
+High priority: PHP 8, Laravel/Symfony, PostgreSQL/MySQL, REST APIs and production
+diagnosis. Walk through the CRURATED event schema decision: why a versioned event
 schema was necessary to keep new event types consistent across teams, and how the
 modular design let you cut new analytics-stream setup time from several days to under
 4 hours. Be ready to go deep on the Laravel/Symfony-based product-wide logger package
 you built at airSlate, since that is your most direct, concrete Laravel/Symfony
 artifact. For the database bottleneck story, be specific about the diagnostic process:
 what you looked at first, how you identified the bottleneck, and how you redistributed
-workload without downtime. You do not have verified experience with the specific
+workload; do not claim zero downtime without a source. Medium priority: Docker,
+CI/CD, observability and the Simple.life consolidation and cron repair architecture.
+Lower-evidence topic: the specific Filament (v5) admin-panel builder. You do not have verified experience with the specific
 Filament (v5) admin-panel builder the posting names — be honest about that rather than
 implying familiarity, while noting your broader PHP admin/backend tooling experience.
 
@@ -54,15 +64,17 @@ time CRURATED actually represents. Expect a question on the Crutrade integration
 specifically: you took full technical ownership of it in production, including
 authentication/OTP, account linking, and collection import/export — be ready to name
 one concrete technical decision in that integration, not just the list of features.
-Expect a question about why your recent Simple.life work is Go-based while this role
-is PHP-only: be honest that Simple.life is a Go platform, and that your PHP depth
-comes from CRURATED, airSlate, and Hyprr running in parallel or in sequence with it.
+Expect a question about why your recent Simple.life accomplishments are mainly Go
+based while this role is PHP-focused: PHP was in that role's technology mix, but no
+particular PHP achievement is documented there. Recent PHP delivery is shown through
+the concurrent CRURATED engagement. The exact Simple.life end month is unresolved;
+state the known 2026 end year until it is clarified.
 
 ## Company-Specific Preparation
 
 SlotCatalog's stated direction — regulated markets, direct media sales, and
-"AI-powered tools" — connects naturally to your CRURATED and Simple.life work turning
-raw operational data into reliable, observable pipelines. Since the posting emphasizes
+"AI-powered tools" — connects naturally to CRURATED analytics and the Simple.life
+production LLM support agent. Since the posting emphasizes
 SEO and "large-scale structured data," be ready to talk about data reliability and
 throughput (the 10x DataLake throughput increase) rather than only feature delivery.
 The posting does not name the exact regulated markets or AI initiatives, so use the
@@ -89,3 +101,5 @@ recruiter screen to learn specifics before the technical rounds.
   day to day?"
 - "What does 'AI-powered tools' mean concretely for this team's roadmap?"
 - "What does production on-call or incident response look like in practice here?"
+- "Which backend service currently has the greatest data-quality risk?"
+- "How do Product, DevOps and Data evaluate an architecture decision together?"

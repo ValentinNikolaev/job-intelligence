@@ -1,25 +1,24 @@
 # Match Analysis
 
-**Score:** 85/100  
+**Score:** 81/100  
 **Recommendation:** Strong Match
 
-Strong senior PHP fit with direct Laravel/Symfony, PostgreSQL/MySQL, REST API, and end-to-end production-ownership evidence spanning multiple recent roles; CI/CD, Docker, and Linux experience are documented, while the filament admin-panel builder and English C1-C2 level are not verified.
+Recent PHP consulting ownership, service reliability and earlier Laravel/Symfony work match the production PHP remit. Formal C1-C2 English and Filament experience remain unverified.
 
 ## Why it matches
 
-- 15+ years of PHP production experience across multiple employers, including a current PHP subcontract engagement (CRURATED)
-- Direct Laravel/Symfony product-wide component experience (airSlate logger package) and PHP/Laravel architecture leadership (Hyprr)
-- Real production ownership, incident troubleshooting, and database performance work (airSlate) matching the posting's ownership/reliability framing
-- Event-driven architecture and data-pipeline ownership at production scale (CRURATED DataLake, >99.9% delivery reliability)
+- Owned a PHP event analytics system in production with versioned contracts and monitored delivery reliability.
+- Built a shared Laravel/Symfony logger and reduced main-database load at airSlate.
+- Owned production release and incident diagnosis across recent backend work.
 
 ## Gaps
 
-- No verified evidence of the specific "filament" admin-panel builder (v.5)
-- English proficiency level (C1-C2) is not documented in verified evidence
+- No verified Filament v5 production experience.
+- C1-C2 English level has not been formally assessed.
 
 ## Concerns
 
-- SEO-sensitive or high-traffic content/affiliate site experience is not established
+- CRURATED was concurrent part-time consulting, while latest Simple.life outcomes were predominantly Go.
 
 ## Requirement evidence
 

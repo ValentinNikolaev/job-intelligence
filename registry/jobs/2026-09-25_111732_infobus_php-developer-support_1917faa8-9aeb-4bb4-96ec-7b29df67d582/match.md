@@ -1,31 +1,30 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 75/100  
 **Recommendation:** Match
 
-Strong PHP/MySQL troubleshooting and partner-API-integration fit with direct evidence of production authentication/integration ownership and database performance work; Git usage and PHP 7.4-specific depth are not directly evidenced, and remote/language details remain to be confirmed with the employer.
+PHP integration ownership, log-led diagnosis and database load reduction match partner-system support. PHP 7.4-specific use, Git evidence and weekend-duty availability need confirmation.
 
 ## Why it matches
 
-- Direct production API-integration ownership (authentication/OTP, account linking, request/response logging) closely matches the partner-API support focus of this role
-- Verified database performance and troubleshooting-via-logs experience matches the role's core support responsibilities
-- 15+ years of PHP experience across multiple employers
+- Owned production Crutrade authentication, account linking and request/response logging.
+- Reduced database pressure and diagnosed incidents at airSlate.
+- Led PHP event analytics delivery and operated integration systems at CRURATED.
 
 ## Gaps
 
-- No verified evidence explicitly ties to Git, Postman/cURL, or JSON/XML handling specifically, though REST API and integration work is well evidenced
-- PHP 7.4-specific version depth is not separately confirmed
+- No reviewed source names Git, Postman/cURL or JSON/XML practice.
+- The exact PHP 7.4 version is not separately documented.
 
 ## Concerns
 
-- The posting requires weekend duty rotation; candidate's willingness to take this on is not yet confirmed
-- Remote work terms and language requirements are not detailed in the posting
+- Weekend duty rotation acceptance is unconfirmed.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Confident knowledge of PHP 7.4+ | critical / stated | strong | Confident knowledge of PHP 7.4+. | Backend engineer with 15+ years of experience building and improving production systems across | / |
+| Confident knowledge of PHP 7.4+ | critical / stated | partial | Confident knowledge of PHP 7.4+. | Backend engineer with 15+ years of experience building and improving production systems across | PHP production experience is clear; the exact PHP 7.4+ version claim is not directly documented. / Confirm versions personally used before stating 7.4+ proficiency. |
 | Experience working with MySQL and SQL optimization | critical / stated | strong | Strong SQL skills, including writing and optimizing queries. | Reduced** peak load on the main database by removing bottlenecks | / |
 | Develop and maintain REST APIs; diagnose integration issues | critical / stated | strong | Experience diagnosing API issues and integration problems. | CRURATED Crutrade integration: full technical ownership of production authentication/OTP, account linking, collection import/export, purchase-ownership verification, and request/response logging. | / |
 | Analyze logs and identify errors; troubleshoot system issues | high / stated | strong | Analyze system logs and identify errors. | Troubleshot** production issues using logs, monitoring, and SRE dashboards | / |

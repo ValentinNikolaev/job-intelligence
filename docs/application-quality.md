@@ -36,6 +36,11 @@ normalized-text SHA-256 and always creates unverified entries. It never overwrit
 Publish validates all entries and preserves existing IDs and retractions. Optional `source.context_quote` is another exact excerpt from the same source for
 employer/role/period context; it never supplies claim numbers. Sources
 must be direct candidate Markdown files; paths escaping that directory are rejected.
+When the work excerpt and separately confirmed role title live in different
+candidate files, an entry may use `attribution_source` with its own candidate
+path, exact quote and normalized hash. This second source establishes role
+attribution only; claim numbers and technologies still need the primary
+`source.quote`. Do not use it to conceal a title or date conflict.
 
 A bank contains:
 
@@ -195,6 +200,11 @@ rendered export for a two-page PDF limit when PDF conversion is available. The
 `cv_audit.bullet_decisions` receipt must cover every final Experience bullet with
 its exact text and a reason tied to a vacancy requirement or senior-level signal;
 the validator checks coverage, while the reviewer remains responsible for meaning.
+The validator also requires reverse chronology and at least two bullets for
+each displayed role, rising to three for roles ending within three years of
+preparation. These are rejection thresholds, not prompts to invent or split
+achievements. Revisit sources and omit an inessential older role or pause the
+package when distinct facts cannot support the threshold.
 When an imported candidate source offers useful but unconfirmed figures, present
 them with their context for candidate selection and ask how each was measured.
 If the candidate requests clarification, ask a focused follow-up about the

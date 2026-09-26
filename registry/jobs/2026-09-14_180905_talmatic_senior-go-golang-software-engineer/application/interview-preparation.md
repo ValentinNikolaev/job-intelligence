@@ -42,13 +42,13 @@ For airSlate, expect a request to explain the database bottleneck, signals used,
 
 Talmatic's public position is as the staffing intermediary. The end client is unnamed, although the posting says its product is a financial-crime investigation platform used by financial institutions and global companies. Before a technical round, ask for the end-client name, product boundary, principal data sources, current Go-service estate, expected frontend contribution, database and search choices, compliance constraints, and system-design format. This information is necessary to tailor architecture answers; do not infer it from the job title.
 
-Explain why high-accountability SaaS systems are a credible match through the Go support platform, operational monitoring, database stability and technical roadmaps. Ask what success in six months and shared on-call ownership look like.
+Connect the Go platform and database-stability examples to the role. Ask how success and on-call ownership are defined.
 
 ## Preparation Plan
 
 **Must prepare:** rehearse a 10-minute Simple App system-design walkthrough; a five-minute airSlate SQL and production-diagnosis story; and a concise Hyprr roadmap story. Confirm availability, notice period, salary expectations, work authorization and Eastern-US overlap before committing to any answer. Review Go concurrency, cancellation, HTTP services, SQL diagnostics, observability, APIs and safe production changes.
 
-**Before the technical round:** learn the end-client name and system context; map your design explanation to their data sensitivity and workflow; prepare questions about Neo4j, Elasticsearch, PostgreSQL, AWS managed services, on-call, RFC process and code review. Practise explaining documented achievements in plain English without relying on unconfirmed imported metrics.
+**Before the technical round:** learn the end-client name and system context; prepare questions about Neo4j, Elasticsearch, PostgreSQL, AWS, on-call, RFCs and code review. Explain documented achievements without relying on unconfirmed metrics.
 
 **Before the final or culture round:** prepare questions about decision rights, collaboration, delivery expectations and contract logistics. Rehearse an honest gap answer for fintech, formal mentoring and named frontend or scripting tools.
 

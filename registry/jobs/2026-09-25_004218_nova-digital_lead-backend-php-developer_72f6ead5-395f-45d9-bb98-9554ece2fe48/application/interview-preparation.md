@@ -9,11 +9,13 @@ leadership. Treat the "PoC speed vs. production rigor" balance as the central th
 ## Recruiter / HR Screening
 
 Expect confirmation of language requirements (confident Ukrainian, English at B1) and
-remote/location logistics ("full remote з будь-якого куточка України" or office work
-in company hubs). Be ready to describe your current Ukrainian and English proficiency
+remote/location logistics (the registry says worldwide remote, while the posting says
+remote from Ukraine or office work in company hubs). Clarify whether Rome is eligible.
+Be ready to describe your current Ukrainian and English proficiency
 plainly rather than assume it is obvious from your background. Since the team explicitly
 values PoC/MVP speed, expect an early question about how quickly you can stand up a
-working prototype from an idea.
+working prototype from an idea. Have a factual notice-period and salary expectation
+ready; neither is documented in the candidate sources.
 
 ## Culture Fit / Behavioral Interview
 
@@ -24,23 +26,27 @@ directly with the CTO, established the core PHP/Go/AWS/Kubernetes stack, and bro
 the product from prototype to closed beta in under 6 months. Pair that with the
 CRURATED story: you took full technical ownership of the DataLake/event-analytics
 platform and the Crutrade integration in production, showing you can both lead and
-personally execute.
+personally execute. Prepare five distinct behavioral examples: a contested architecture
+decision, a prototype you changed after feedback, a production failure you diagnosed,
+a cross-team dependency you resolved, and a decision to simplify existing code. Use
+the CRURATED schema/versioning work, Simple.life pipeline consolidation, and Hyprr
+roadmap where the details fit; do not invent conflict or stakeholder reactions.
 
 ## Technical Interview
 
-Expect deep questions on PHP 7/8, Laravel/Symfony, PostgreSQL, RabbitMQ, and
-event-driven or DDD-style architecture. Walk through the CRURATED architecture
+High priority: PHP 7/8, Laravel/Symfony, PostgreSQL, event-driven architecture and
+the route from PoC to production. Walk through the CRURATED architecture
 decision: why queues and EventBridge, why a versioned event schema, and how that
 increased data-lake throughput by more than 10x. Be ready to connect this to the
 posting's own architecture-committee framing: describe how you would defend a similar
-decision before a review body, not just execute it solo. For the AI-orientation
-requirement, be candid: your strongest verified evidence is cross-functional
-collaboration with Support Ops, Product, and AI teams on a production automation
-platform, not hands-on LLM-API development itself — frame it as "designed the
-API/architecture around an AI team's needs" rather than claiming direct LLM
-integration work you have not had independently confirmed. GCP and on-premise
-infrastructure are gaps against your AWS/Kubernetes background; acknowledge this
-directly rather than implying GCP depth you do not have.
+decision before a review body, not just execute it solo. High priority for AI:
+explain the Simple.life LLM support agent's action tools and evaluation pipeline,
+including how conversation text, action events and subscription-state snapshots fed
+evaluation JSON. This is hands-on backend work, not merely AI-team proximity.
+Medium priority: Kubernetes/Docker, API contracts, service integration and queues;
+distinguish the evidenced EventBridge work from the posting's RabbitMQ example.
+Lower-evidence probes: gRPC, WebSockets, GCP and on-premise infrastructure. State
+the boundary of experience clearly rather than substituting a neighboring tool.
 
 ## CV Deep-Dive Questions
 
@@ -48,16 +54,19 @@ Expect a question about the CRURATED engagement's concurrent, part-time structur
 alongside Simple.life — be ready to explain the time split honestly. Expect a
 follow-up on the Hyprr roadmap story: name one specific technology or architecture
 decision you and the CTO made, not just that a roadmap existed. Expect a question
-about why your most recent full-time role (Simple.life) is Go-based rather than PHP:
-be honest that your PHP depth in this window comes from the concurrent CRURATED
-engagement plus your earlier airSlate and Hyprr history.
+about why your most recent full-time role (Simple.life) is principally Go-based:
+PHP was also in that role's technology mix, but no specific PHP achievement is
+documented; current PHP delivery is evidenced by the concurrent CRURATED engagement.
+Clarify the exact Simple.life end month and title if asked rather than silently
+promoting the later block's conflicting Senior Backend Engineer title.
 
 ## Company-Specific Preparation
 
 Nova Digital's stated scale (50+ million daily requests, 10+ million users) and its
-R&D mission of PoC-to-production hardening connects directly to your CRURATED and
-Hyprr stories: both involve taking something from an early, fast-moving stage to a
-reliable production state. The posting does not name specific current PoC/MVP
+R&D mission of PoC-to-production hardening connects to CRURATED's production
+analytics pipeline, Hyprr's prototype-to-closed-beta product development, and the
+Simple.life gateway that enabled a first B2B demo. These are different maturity
+stages; do not call the Hyprr beta a proven production system. The posting does not name specific current PoC/MVP
 projects, so use the recruiter screen to learn what the R&D team is actively building
 before the technical rounds.
 
@@ -77,9 +86,9 @@ recruiter for the technical rounds.
    architecture or technology decision you and the CTO made together.
 2. Rehearse the CRURATED event-driven architecture story, including the "why" behind
    queues/EventBridge and the versioned event schema.
-3. Prepare an honest, specific answer distinguishing "cross-team AI collaboration" from
-   "hands-on LLM API development," since the posting's AI-orientation ask is broader
-   than your most direct evidence.
+3. Prepare a hands-on Simple.life LLM-agent example: one action tool, its evaluation
+   data, and a production defect you fixed, while keeping unmeasured resolution-rate
+   estimates out of the story.
 4. Confirm your current Ukrainian and English proficiency levels in plain terms before
    the call.
 
@@ -95,3 +104,5 @@ recruiter for the technical rounds.
   does that process look like?)
 - "What does the split between GCP and on-premise infrastructure actually look like
   for this team's services?"
+- "What evidence must a PoC show before the team funds and operates an MVP?"
+- "Which production measures decide whether an R&D service is ready for handover?"
