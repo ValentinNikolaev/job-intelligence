@@ -102,7 +102,7 @@ scheduled instructions. Only Codex uses the connected Google Drive plugin. Proje
 code prepares plans/checksums/receipts and never calls Google APIs; GitHub Actions has
 no Google credentials.
 
-Each confirmed application is one row keyed by hidden `application_id`. User notes,
+Each confirmed application with a complete four-document package is one row keyed by hidden `application_id`; the visible vacancy ID connects it to internal resources. User notes,
 contacts, next actions and due dates belong to the user. Sorting rows is safe because
 each run reads IDs again. System status changes use `python run.py status`, not sheet
 edits. Duplicate IDs, newer/conflicting revisions and changed immutable events stop

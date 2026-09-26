@@ -79,6 +79,37 @@ def vacancy(vacancy_id: str = "vac-1", *, status: str = "applied") -> dict:
 
 
 class MigrationProjectionTests(unittest.TestCase):
+    def test_sheets_export_requires_complete_package_and_resolves_new_folder_link(self) -> None:
+        def application(identifier: str, directory: str) -> dict:
+            return {"application_id": identifier, "vacancy_id": identifier, "directory": directory,
+                    "company": directory, "title": "Engineer", "current_status": "applied",
+                    "confirmation": {"state": "confirmed"}, "revision": 1}
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            package = root / "registry" / "jobs" / "complete-job" / "application"
+            package.mkdir(parents=True)
+            for filename in ("cv.md", "cv.docx", "cover-letter.md", "cover-letter.docx",
+                             "analysis.md", "interview-preparation.md"):
+                (package / filename).write_text("draft", encoding="utf-8")
+            (package / "manifest.yaml").write_text(yaml.safe_dump({"documents": {
+                name: {} for name in ("cv", "cover-letter", "analysis", "interview-preparation")
+            }}), encoding="utf-8")
+            export = export_applications({"collections": {"applications": [
+                application("good", "complete-job"), application("missing", "missing-job")
+            ], "status_events": []}}, package_root=root)
+            self.assertEqual(["good"], [item["application_id"] for item in export["applications"]])
+            self.assertEqual(["missing"], [item["application_id"] for item in export["coverage"]["confirmed_without_package_records"]])
+            self.assertTrue(export["applications"][0]["package_url"].endswith("/registry/jobs/complete-job/application"))
+            (package / "manifest.yaml").write_text(yaml.safe_dump({"files": [
+                "cv.md", "cv.docx", "cover-letter.md", "cover-letter.docx",
+                "analysis.md", "interview-preparation.md",
+            ]}), encoding="utf-8")
+            legacy = export_applications({"collections": {"applications": [
+                application("good", "complete-job")
+            ], "status_events": []}}, package_root=root)
+            self.assertEqual(1, len(legacy["applications"]))
+
     def test_ids_use_exact_stable_prefixes(self) -> None:
         event = status_event_id("vac-1", "2026-01-02T10:00:00Z", "found", "applied")
         expected = uuid.uuid5(

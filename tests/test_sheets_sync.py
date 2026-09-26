@@ -148,9 +148,36 @@ class SheetsSyncTests(unittest.TestCase):
     def test_incremental_requests_do_not_write_manual_columns(self) -> None:
         plan = build_sync_plan(source(), observed([]), synced_at="2026-09-21T12:00:00Z")
         requests = build_batch_requests(plan, sheet_ids={APPLICATION_TAB: 0, HISTORY_TAB: 1001}, application_next_row=2, history_next_row=2)
-        written_columns = [item["updateCells"]["range"]["startColumnIndex"] for item in requests]
+        written_columns = [item["updateCells"]["range"]["startColumnIndex"] for item in requests if "updateCells" in item]
         self.assertNotIn(len(SYSTEM_COLUMNS) + 4, written_columns)
         self.assertTrue(requests)
+
+    def test_package_link_can_fill_without_storage_revision_change(self) -> None:
+        exported = source()
+        exported["applications"][0]["package_url"] = "https://example.test/package"
+        old = build_sync_plan(source(), observed([]))["operations"][0]["cells"]
+        plan = build_sync_plan(exported, observed([{"row_index": 2, "cells": old}]))
+        self.assertEqual("update", plan["operations"][0]["kind"])
+        self.assertEqual({"package_url": "https://example.test/package"}, plan["operations"][0]["cells"])
+
+    def test_excluded_package_row_and_history_are_deleted_only_without_manual_data(self) -> None:
+        exported = source()
+        exported["applications"] = []
+        exported["events"] = []
+        exported["coverage"] = {"confirmed_without_package_records": [{"application_id": "app-1"}]}
+        row = {"row_index": 2, "cells": {"application_id": "app-1", "vacancy_id": "vac-1"}}
+        history = {"schema_version": 1, "headers": ["event_id", "application_id", "vacancy_id", "status", "effective_at", "recorded_at", "reason", "note"],
+                   "rows": [{"row_index": 2, "cells": {"event_id": "event-1", "application_id": "app-1"}}]}
+        plan = build_sync_plan(exported, {**observed([row]), "history": history})
+        self.assertEqual(1, plan["summary"]["deletes"])
+        self.assertEqual(1, plan["summary"]["history_deletes"])
+        requests = build_batch_requests(plan, sheet_ids={APPLICATION_TAB: 0, HISTORY_TAB: 1001},
+                                        application_next_row=3, history_next_row=3)
+        self.assertEqual(2, sum("deleteDimension" in request for request in requests))
+        self.assertTrue(verify_sync_plan(plan, {**observed([]), "history": {**history, "rows": []}})["verified"])
+        row["cells"]["my_notes"] = "keep"
+        blocked = build_sync_plan(exported, {**observed([row]), "history": history})
+        self.assertEqual("excluded_application_has_manual_data", blocked["conflicts"][0]["reason"])
 
     def test_setup_renames_only_confirmed_blank_sheet1_and_adds_views(self) -> None:
         metadata = {"sheets": [{"properties": {"title": "Sheet1", "sheetId": 0}}]}

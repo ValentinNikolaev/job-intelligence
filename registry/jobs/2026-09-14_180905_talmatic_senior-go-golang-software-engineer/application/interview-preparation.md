@@ -1,100 +1,64 @@
-# Interview Preparation — Talmatic: Senior Go/Golang Software Engineer
-
-Talmatic's posting is an outstaff/concierge placement onto "a growing product
-engineering team working on a market-leading financial crime investigation platform."
-You are already in contact with recruiter Lyudmila, so expect a Talmatic-side screen
-first, followed by technical rounds with the end client's engineering team. The
-posting explicitly says system design will be a key interview focus, so treat that as
-the center of gravity for your preparation rather than a side topic.
-
 ## Recruiter / HR Screening
 
-Expect Lyudmila to confirm the practical basics: contract structure (Talmatic
-outstaff vs. direct client relationship), start date (posting says ASAP), the EU-remote
-setup, and the requirement for "at least 3 hours overlap with Eastern US working
-hours." Be ready to state plainly that you can commit to a CET/CEST afternoon overlap
-block without disrupting your normal working day, and ask her directly who the end
-client is and what the remaining interview stages look like, since the public posting
-does not name the client. Keep your English answers clear and structured — the posting
-stresses "excellent communication skills" because the role may involve direct client
-contact.
+Expect Talmatic to confirm the remote EU contract, unnamed end client, English communication, start timing, and three hours of Eastern US overlap. State only what is documented: you work from Rome and should confirm a regular afternoon overlap block before representing it as agreed. Ask whether Talmatic employs the contractor or acts as an intermediary, who signs the contract, and who owns day-to-day prioritization. The candidate record does not confirm notice period or earliest start date.
+
+For motivation, say that you want a hands-on technical-lead role close to backend architecture and reliable delivery. Do not claim financial-crime, platform, Neo4j, Python, Node.js, React or TypeScript experience. Work-authorization wording still needs confirmation.
 
 ## Culture Fit / Behavioral Interview
 
-The posting repeatedly signals a small, senior-led team: "engineers who are
-comfortable with ownership, direct communication, and getting things done without
-unnecessary bureaucracy." Your strongest story here is owning the support automation
-platform at Simple.life end to end — you designed and own a robust, scalable backend
-in Go connecting Zendesk, Intercom, and internal services, and it handles at least
-20,000 tickets in an ordinary month, growing to
-as much as three times that level during peak season, without you handing operational
-ownership to anyone else. Pair that with the Hyprr story: as Technical Lead you helped
-define the technology roadmap directly with the CTO and took the product from
-prototype to closed beta in under six months — a concrete example of practical,
-low-bureaucracy decision-making in a small team.
+Prepare these behavioral questions and use only the documented experience as the basis for a STAR answer:
+
+1. **Tell us about ownership under operational pressure.** Use Simple App: design and ownership of the Go support platform; at least 20,000 ordinary monthly tickets and up to three times that in the US peak season. Explain your personal operational scope and distinguish it from work done by others.
+2. **Describe a time you made an architecture decision with limited process.** Use Hyprr: technology roadmap work with the CTO and product progress from prototype to closed beta in less than six months. Be ready with a real design decision; do not invent a trade-off.
+3. **How have you improved a production system?** Use airSlate: database bottleneck removal and workload redistribution improved stability during high traffic.
+4. **How do you investigate incidents?** Use airSlate logs, monitoring and SRE dashboards, then explain the diagnostic sequence actually used.
+5. **How do you share knowledge?** Use verified airSlate onboarding, knowledge sharing, technical interviews, planning and technical monitoring. Present this as technical leadership, not formal people management.
+6. **How do you communicate with product partners?** Use airSlate planning and roadmap context, and describe concrete communication habits without claiming client ownership.
+7. **Why change roles now?** Tie the answer to continued hands-on backend architecture and reliable delivery, without negative commentary on previous employers.
+
+For every answer, state context, contribution and supported outcome. Acknowledge the lack of direct fintech or graph-database evidence.
 
 ## Technical Interview
 
-Given the explicit emphasis on system design, prepare to walk through the Simple.life
-support platform as a design exercise: why Go, how the Zendesk/Intercom/internal
-service integration is structured, and how the resilient message delivery pipeline
-(fallback logic, retries, monitoring) keeps the system stable during incident load.
-Be ready to go deep on distributed troubleshooting using the airSlate example —
-reducing peak load on the main database by removing bottlenecks and redistributing
-workload — and connect it to the posting's ask to "analyze SQL queries, database
-performance, application waits, and network latency." You also troubleshot production
-issues at airSlate "using logs, monitoring, and SRE dashboards," which maps directly
-onto the "troubleshoot distributed production systems" requirement. For AWS and
-containerization, reference the Kubernetes/Helm/GitHub Actions/ArgoCD migration work
-at airSlate and the AWS/Kubernetes/microservices architecture at Hyprr. Be candid that
-Neo4j and direct financial-services domain exposure are not in your background; both
-are listed as nice-to-have, not mandatory, so acknowledge the gap rather than
-overclaim it.
+**High priority — system design.** The posting explicitly says system design is central. Rehearse the Go support platform: service boundaries, integration contracts, API orchestration, lifecycle tracking, monitoring, operations, and peak-load handling. Discuss only known components: Zendesk, Intercom, internal services, Go, monitoring and Grafana-backed metrics.
+
+**High priority — SQL and database performance.** Build a structured approach: reproduce and bound the problem; inspect query shape, indexes, waits, resource saturation and application behavior; make one reversible change; observe the result; document the outcome. Use the airSlate story about removing bottlenecks and redistributing workload to reduce peak database load and improve stability. Do not attribute a specific percentage or AWS migration to yourself.
+
+**High priority — distributed production troubleshooting.** Explain logs, monitoring and SRE dashboards as evidence sources, distinguish symptoms from causes, establish a timeline, protect the service, and add follow-up observability.
+
+**Medium priority — AWS and containers.** The CV supports AWS and Kubernetes exposure, Helm, ArgoCD and GitHub Actions as skills, but the candidate cannot confirm the specific airSlate ECS-to-Kubernetes migration. Be ready to explain concepts and actual scope, never claim that unconfirmed migration as an achievement.
+
+**Medium priority — Go coding and backend breadth.** Refresh Go concurrency, cancellation, error handling, HTTP APIs, testing, interfaces, profiling and safe rollout patterns. Be candid about unconfirmed Python, Node.js, React or TypeScript experience.
+
+**Low priority — Neo4j and financial-crime domain.** Learn graph data-modeling basics and investigation-platform concerns, while stating clearly that you lack claimed Neo4j or financial-services production experience.
 
 ## CV Deep-Dive Questions
 
-Expect questions probing exactly how you moved from a mostly-PHP background toward
-Go — be ready to explain the practical reasons (performance, concurrency, or team
-context) rather than a generic preference. Expect a question on scale: how the support
-platform's ticket volume is measured and who else, if anyone, shares operational
-ownership with you — the honest answer is that you personally own its operation under
-peak load. Expect a question about the Hyprr CTO-level roadmap work: be ready to
-describe one specific architectural trade-off you influenced, not just that you
-"defined the roadmap." Mentoring is your softest area on paper — your evidence is
-technical leadership and roadmap ownership rather than a named mentoring program, so
-frame it honestly as leadership-adjacent knowledge sharing rather than claiming a
-formal mentoring track record you cannot back up.
+Expect a detailed review of Simple App ticket volume, personal operational ownership, automation scope and measurement. The accurate answer is that the metric combines internal Intercom and backend metrics exported to Grafana, and that you implemented many but not all scenarios.
+
+For airSlate, expect a request to explain the database bottleneck, signals used, workload redistribution, and production-fix process. Be ready to separate supported outcomes from broad tool experience. For Hyprr, expect questions about the CTO roadmap, the product's path to closed beta, and a specific architecture decision. For CRURATED, explain that the work was a concurrent part-time consulting engagement and describe only the production ownership documented for DataLake, event-version publication and the Crutrade integration.
 
 ## Company-Specific Preparation
 
-Talmatic itself is a staffing/concierge service, not the end employer: it "provides
-access to a unique vetted pool of tech talent available for contract hire." The actual
-engineering work happens on an unnamed end client's "market-leading financial crime
-investigation platform used by financial institutions and global companies." Since the
-end client is not disclosed publicly, use the Talmatic screen to learn its identity,
-domain specifics, and team structure before the technical rounds, so you can tailor
-your system-design answers to their actual environment rather than a generic SaaS
-example.
+Talmatic's public position is as the staffing intermediary. The end client is unnamed, although the posting says its product is a financial-crime investigation platform used by financial institutions and global companies. Before a technical round, ask for the end-client name, product boundary, principal data sources, current Go-service estate, expected frontend contribution, database and search choices, compliance constraints, and system-design format. This information is necessary to tailor architecture answers; do not infer it from the job title.
+
+Explain why high-accountability SaaS systems are a credible match through the Go support platform, operational monitoring, database stability and technical roadmaps. Ask what success in six months and shared on-call ownership look like.
 
 ## Preparation Plan
 
-1. Rehearse the Simple.life system-design walkthrough end to end (problem, design,
-   trade-offs, operational ownership under peak load).
-2. Rehearse the airSlate database-bottleneck and SRE-troubleshooting stories with
-   specific technical detail, since "system design" and "distributed troubleshooting"
-   are the posting's clearest priorities.
-3. Prepare a short, honest answer on the Go/PHP transition and on mentoring, since both
-   are likely probe points that reward candor over overclaiming.
-4. Draft two or three specific questions for Lyudmila about the end client and
-   remaining process stages before the first call.
+**Must prepare:** rehearse a 10-minute Simple App system-design walkthrough; a five-minute airSlate SQL and production-diagnosis story; and a concise Hyprr roadmap story. Confirm availability, notice period, salary expectations, work authorization and Eastern-US overlap before committing to any answer. Review Go concurrency, cancellation, HTTP services, SQL diagnostics, observability, APIs and safe production changes.
+
+**Before the technical round:** learn the end-client name and system context; map your design explanation to their data sensitivity and workflow; prepare questions about Neo4j, Elasticsearch, PostgreSQL, AWS managed services, on-call, RFC process and code review. Practise explaining documented achievements in plain English without relying on unconfirmed imported metrics.
+
+**Before the final or culture round:** prepare questions about decision rights, collaboration, delivery expectations and contract logistics. Rehearse an honest gap answer for fintech, formal mentoring and named frontend or scripting tools.
 
 ## Questions to Ask
 
-- "Who is the end client, and can you share more about the financial crime
-  investigation platform I'd be working on?"
-- "What does the interview process look like after this screen — how many technical
-  rounds, and is the system-design round separate from a coding round?"
-- "Is this a Talmatic-employed contract or a direct placement with the end client's
-  team, and how is day-to-day reporting structured?"
-- "What does the on-call rotation actually look like in practice — frequency, scope,
-  and escalation support?"
+1. Who is the end client, and what part of the financial-crime investigation workflow would this role own?
+2. What problem should the successful engineer solve in the first six months?
+3. How is the system-design interview structured, and what system context can you share beforehand?
+4. Which Go services, AWS managed services, relational databases, Neo4j and Elasticsearch components are in active use?
+5. How is on-call organized: frequency, escalation path, observability and incident ownership?
+6. What does the required Eastern-US overlap look like in the team's normal week?
+7. What share of the role's 20% frontend work is React/TypeScript delivery versus architecture and collaboration?
+8. What does Talmatic handle after placement, and who manages performance and contract renewal?

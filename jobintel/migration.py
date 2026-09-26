@@ -17,7 +17,7 @@ from contextlib import nullcontext
 from dataclasses import dataclass, field
 from pathlib import Path, PurePosixPath
 from typing import Any, Iterable, Mapping, Protocol, Sequence
-from urllib.parse import quote
+from urllib.parse import quote, unquote, urlsplit
 
 import yaml
 
@@ -31,6 +31,10 @@ OPERATIONAL_LOGS = (
     "source-api-usage.yaml",
 )
 REPOSITORY_URL = "https://github.com/ValentinNikolaev/job-intelligence"
+_COMPLETE_PACKAGE_FILES = frozenset({
+    "cv.md", "cv.docx", "cover-letter.md", "cover-letter.docx",
+    "analysis.md", "interview-preparation.md", "manifest.yaml",
+})
 _ACTUAL_DATE = re.compile(r"actual application date[^0-9]*(\d{4}-\d{2}-\d{2})", re.I)
 _NOT_SUBMITTED = re.compile(r"(?:not|wasn['’]t|was not)\s+(?:externally\s+)?submitted|form not submitted", re.I)
 
@@ -1120,7 +1124,45 @@ def reconcile(store: DocumentStore, plan: Mapping[str, Any]) -> dict[str, Any]:
     return report
 
 
-def export_applications(source: Mapping[str, Any] | DocumentStore) -> dict[str, Any]:
+def _complete_package_locator(application: Mapping[str, Any], root: Path) -> str | None:
+    """Return a package link only when all four generated documents exist."""
+    directory = str(application.get("directory") or "")
+    if not directory or Path(directory).name != directory or "/" in directory or "\\" in directory:
+        return None
+    package = root / "registry" / "jobs" / directory / "application"
+    if all((package / filename).is_file() for filename in _COMPLETE_PACKAGE_FILES):
+        manifest = yaml.safe_load((package / "manifest.yaml").read_text(encoding="utf-8"))
+        current_documents = {"cv", "cover-letter", "analysis", "interview-preparation"}
+        if isinstance(manifest, Mapping) and (
+            current_documents.issubset(manifest.get("documents") or {})
+            or (_COMPLETE_PACKAGE_FILES - {"manifest.yaml"}).issubset(manifest.get("files") or [])
+        ):
+            return str(application.get("package_locator") or (
+                f"{REPOSITORY_URL}/tree/main/registry/jobs/{quote(directory)}/application"
+            ))
+    locator = str(application.get("package_locator") or "")
+    url = urlsplit(locator)
+    if url.netloc != "github.com" or "/archives/" not in url.path:
+        return None
+    archive_name = unquote(url.path.split("/archives/", 1)[1])
+    archive_rel = Path(archive_name)
+    if archive_rel.is_absolute() or ".." in archive_rel.parts or archive_rel.suffix != ".zip":
+        return None
+    archive = root / "archives" / archive_rel
+    if not archive.is_file():
+        return None
+    with zipfile.ZipFile(archive) as bundle:
+        names = {
+            PurePosixPath(name).name
+            for name in bundle.namelist()
+            if f"/{directory}/application/" in f"/{name}"
+        }
+    return locator if _COMPLETE_PACKAGE_FILES.issubset(names) else None
+
+
+def export_applications(
+    source: Mapping[str, Any] | DocumentStore, *, package_root: Path | None = None
+) -> dict[str, Any]:
     """Return the stable Sheets input and explicit coverage exceptions."""
     if isinstance(source, Mapping):
         documents = source.get("collections", {}).get("applications", [])
@@ -1130,12 +1172,21 @@ def export_applications(source: Mapping[str, Any] | DocumentStore) -> dict[str, 
         events = source.list("status_events")
     confirmed: list[dict[str, Any]] = []
     needs_review: list[dict[str, Any]] = []
+    without_package: list[dict[str, str]] = []
     for raw in documents:
         item = dict(raw)
         confirmation = item.get("confirmation")
         state = confirmation.get("state") if isinstance(confirmation, Mapping) else None
         if state != "confirmed":
             needs_review.append(_storage_payload(item))
+            continue
+        package_locator = _complete_package_locator(item, package_root) if package_root is not None else item.get("package_locator")
+        if package_root is not None and package_locator is None:
+            without_package.append({
+                "application_id": str(item.get("application_id") or item.get("_id") or ""),
+                "vacancy_id": str(item.get("vacancy_id") or ""),
+                "directory": str(item.get("directory") or ""),
+            })
             continue
         salary = item.get("salary") if isinstance(item.get("salary"), Mapping) else {}
         confirmed.append(
@@ -1151,7 +1202,7 @@ def export_applications(source: Mapping[str, Any] | DocumentStore) -> dict[str, 
                 "status_effective_at": item.get("status_changed_at"),
                 "status_recorded_at": item.get("status_recorded_at"),
                 "vacancy_url": item.get("source_url"),
-                "package_url": item.get("package_locator"),
+                "package_url": package_locator,
                 "application_channel": item.get("channel"),
                 "location": item.get("location"),
                 "work_format": item.get("remote"),
@@ -1166,6 +1217,7 @@ def export_applications(source: Mapping[str, Any] | DocumentStore) -> dict[str, 
         )
     confirmed.sort(key=lambda item: str(item["application_id"]))
     needs_review.sort(key=lambda item: str(item.get("application_id") or item.get("_id")))
+    without_package.sort(key=lambda item: item["application_id"])
     confirmed_ids = {str(item["application_id"]) for item in confirmed}
     exported_events = [
         {
@@ -1192,6 +1244,8 @@ def export_applications(source: Mapping[str, Any] | DocumentStore) -> dict[str, 
         "coverage": {
             "confirmed": len(confirmed),
             "needs_review": len(needs_review),
+            "confirmed_without_package": len(without_package),
+            "confirmed_without_package_records": without_package,
             "status_events_total": len(events),
             "status_events_exported": len(exported_events),
             "needs_review_records": needs_review,

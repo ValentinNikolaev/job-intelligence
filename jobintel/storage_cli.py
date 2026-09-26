@@ -101,10 +101,10 @@ def cli_main(argv=None):
             if source is None:
                 source = build_plan(root)
             if isinstance(source, dict):
-                result = export_applications(source)
+                result = export_applications(source, package_root=root)
             else:
                 with source.lease("sheets:export"):
-                    result = export_applications(source)
+                    result = export_applications(source, package_root=root)
             from .sheets_sync import build_export
             result = build_export(result)
         elif args.operation == "backup":

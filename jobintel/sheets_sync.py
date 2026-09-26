@@ -72,10 +72,11 @@ DISPLAY_HEADERS = {
     "salary_to": "Зарплата до", "salary_currency": "Валюта", "salary_period": "Период",
     "salary_tax_basis": "Gross/Net", "application_channel": "Канал подачи", "vacancy_url": "Ссылка на вакансию",
     "package_url": "Пакет документов", "completion_reason": "Причина завершения",
-    "application_id": "application_id", "vacancy_id": "vacancy_id", "source_revision": "source_revision",
+    "application_id": "application_id", "vacancy_id": "ID вакансии", "source_revision": "source_revision",
     "synced_source_version": "synced_source_version", "synced_at": "synced_at",
 }
 HEADER_TO_FIELD = {label: field for field, label in DISPLAY_HEADERS.items()}
+HEADER_TO_FIELD["vacancy_id"] = "vacancy_id"  # Existing sheets use the former technical header.
 # A plan is only safe after the setup pass has created every system-owned column.
 REQUIRED_HEADERS = SYSTEM_COLUMNS
 APPLICATION_HEADERS = SYSTEM_COLUMNS + MANUAL_COLUMNS
@@ -142,6 +143,11 @@ def build_sync_plan(
 
     operations: list[dict[str, Any]] = []
     conflicts: list[dict[str, Any]] = []
+    excluded_ids = {
+        _text(item.get("application_id"))
+        for item in source["coverage"].get("confirmed_without_package_records", [])
+        if isinstance(item, Mapping) and _text(item.get("application_id"))
+    }
     for application in source["applications"]:
         expected = _system_cells(application, source["source_revision"])
         observed_row = rows_by_id.get(application["application_id"])
@@ -166,7 +172,7 @@ def build_sync_plan(
             continue
         changed = {key: value for key, value in expected.items() if _text(before.get(key)) != _text(value)}
         if changed:
-            if row_revision == application["source_revision"]:
+            if row_revision == application["source_revision"] and not set(changed).issubset({"package_url"}):
                 conflicts.append(_conflict(application, observed_row, "same_revision_data_mismatch"))
                 continue
             changed = _with_sync_time(changed, synced_at)
@@ -177,6 +183,16 @@ def build_sync_plan(
             "before": before,
             "cells": changed,
         })
+    for application_id in sorted(excluded_ids):
+        row = rows_by_id.get(application_id)
+        if row is None:
+            continue
+        if any(_text(row["cells"].get(field)) for field in MANUAL_COLUMNS):
+            conflicts.append({"application_id": application_id, "row_index": row["row_index"],
+                              "reason": "excluded_application_has_manual_data"})
+            continue
+        operations.append({"kind": "delete", "application_id": application_id,
+                           "row_index": row["row_index"], "before": row["cells"], "cells": {}})
     result = {
         "schema_version": SCHEMA_VERSION,
         "export_payload_sha256": source["payload_sha256"],
@@ -185,11 +201,12 @@ def build_sync_plan(
         "manual_columns": list(MANUAL_COLUMNS),
         "operations": operations,
         "conflicts": conflicts,
-        "history_operations": _history_operations(source["events"], observed.get("history")),
+        "history_operations": _history_operations(source["events"], observed.get("history"), excluded_ids),
         "summary": {
             "inserts": sum(item["kind"] == "insert" for item in operations),
             "updates": sum(item["kind"] == "update" for item in operations),
             "noops": sum(item["kind"] == "noop" for item in operations),
+            "deletes": sum(item["kind"] == "delete" for item in operations),
             "conflicts": len(conflicts),
         },
     }
@@ -198,6 +215,9 @@ def build_sync_plan(
     )
     result["summary"]["history_noops"] = sum(
         item["kind"] == "noop" for item in result["history_operations"]
+    )
+    result["summary"]["history_deletes"] = sum(
+        item["kind"] == "delete" for item in result["history_operations"]
     )
     result["payload_sha256"] = payload_hash(result)
     return result
@@ -221,6 +241,10 @@ def verify_sync_plan(plan: Mapping[str, Any], observed: Mapping[str, Any]) -> di
     failures: list[dict[str, Any]] = []
     checked = 0
     for operation in plan.get("operations", []):
+        if operation.get("kind") == "delete":
+            if _text(operation.get("application_id")) in rows:
+                failures.append({"application_id": operation["application_id"], "reason": "still_present_after_delete"})
+            continue
         if operation.get("kind") not in {"insert", "update"}:
             continue
         application_id = _text(operation.get("application_id"))
@@ -254,6 +278,10 @@ def verify_sync_plan(plan: Mapping[str, Any], observed: Mapping[str, Any]) -> di
         for operation in plan.get("history_operations", []):
             event_id = _text(operation.get("event_id"))
             row = history_rows.get(event_id)
+            if operation.get("kind") == "delete":
+                if row is not None:
+                    failures.append({"event_id": event_id, "reason": "history_still_present_after_delete"})
+                continue
             if row is None:
                 failures.append({"event_id": event_id, "reason": "history_missing_after_write"})
                 continue
@@ -371,7 +399,7 @@ def build_batch_requests(plan: Mapping[str, Any], *, sheet_ids: Mapping[str, int
     requests: list[dict[str, Any]] = []
     next_app, next_history = application_next_row, history_next_row
     for operation in plan.get("operations", []):
-        if operation.get("kind") == "noop":
+        if operation.get("kind") in {"noop", "delete"}:
             continue
         row = operation.get("row_index") or next_app
         next_app += operation.get("kind") == "insert"
@@ -381,6 +409,28 @@ def build_batch_requests(plan: Mapping[str, Any], *, sheet_ids: Mapping[str, int
             continue
         requests.extend(_write_cells(history_id, next_history - 1, operation["cells"], HISTORY_COLUMNS))
         next_history += 1
+    for operation in sorted((item for item in plan.get("operations", []) if item.get("kind") == "delete"),
+                            key=lambda item: item["row_index"], reverse=True):
+        row = operation["row_index"] - 1
+        requests.append({"deleteDimension": {"range": {"sheetId": app_id, "dimension": "ROWS",
+                                                          "startIndex": row, "endIndex": row + 1}}})
+    for operation in sorted((item for item in plan.get("history_operations", []) if item.get("kind") == "delete"),
+                            key=lambda item: item["row_index"], reverse=True):
+        row = operation["row_index"] - 1
+        requests.append({"deleteDimension": {"range": {"sheetId": history_id, "dimension": "ROWS",
+                                                          "startIndex": row, "endIndex": row + 1}}})
+    if requests:
+        column = SYSTEM_COLUMNS.index("vacancy_id")
+        requests.extend([
+            {"updateCells": {"range": {"sheetId": app_id, "startRowIndex": 0, "endRowIndex": 1,
+                                       "startColumnIndex": column, "endColumnIndex": column + 1},
+                             "rows": [{"values": [literal_cell_data(DISPLAY_HEADERS["vacancy_id"])]}],
+                             "fields": "userEnteredValue"}},
+            {"updateDimensionProperties": {"range": {"sheetId": app_id, "dimension": "COLUMNS",
+                                                    "startIndex": column, "endIndex": column + 1},
+                                           "properties": {"hiddenByUser": False, "pixelSize": 285},
+                                           "fields": "hiddenByUser,pixelSize"}},
+        ])
     return requests
 
 
@@ -459,7 +509,7 @@ def cli_main(argv: Sequence[str] | None = None) -> int:
                 properties = sheet["properties"]
                 sheet_id = properties["sheetId"]
                 required_rows = max((item["updateCells"]["range"]["endRowIndex"] for item in result["requests"]
-                                     if item["updateCells"]["range"]["sheetId"] == sheet_id), default=0)
+                                     if "updateCells" in item and item["updateCells"]["range"]["sheetId"] == sheet_id), default=0)
                 current_rows = properties.get("gridProperties", {}).get("rowCount", 0)
                 if required_rows > current_rows:
                     expansions.append({"appendDimension": {"sheetId": sheet_id, "dimension": "ROWS", "length": required_rows - current_rows}})
@@ -493,7 +543,7 @@ def _event(value: Any) -> dict[str, Any]:
     return dict(item)
 
 
-def _history_operations(events: list[dict[str, Any]], observed: Any) -> list[dict[str, Any]]:
+def _history_operations(events: list[dict[str, Any]], observed: Any, excluded_ids: set[str] | None = None) -> list[dict[str, Any]]:
     existing: dict[str, dict[str, Any]] = {}
     if observed is not None:
         history = _observed_history(_mapping(observed, "observed history"))
@@ -514,6 +564,11 @@ def _history_operations(events: list[dict[str, Any]], observed: Any) -> list[dic
             raise SheetsSyncError(f"observed history conflicts with immutable event_id: {event['event_id']}")
         else:
             operations.append({"kind": "noop", "event_id": event["event_id"], "row_index": row["row_index"], "before": row["cells"], "cells": {}})
+    if excluded_ids:
+        for event_id, row in existing.items():
+            if _text(row["cells"].get("application_id")) in excluded_ids:
+                operations.append({"kind": "delete", "event_id": event_id,
+                                   "row_index": row["row_index"], "before": row["cells"], "cells": {}})
     return operations
 
 
@@ -582,7 +637,8 @@ def _tab_setup_requests(ids: Mapping[str, int]) -> list[dict[str, Any]]:
     app_id = _sheet_id(ids, APPLICATION_TAB)
     first_tech = len(SYSTEM_COLUMNS) - len(TECHNICAL_COLUMNS)
     requests.extend([
-        {"updateDimensionProperties": {"range": {"sheetId": app_id, "dimension": "COLUMNS", "startIndex": first_tech, "endIndex": first_tech + len(TECHNICAL_COLUMNS)}, "properties": {"hiddenByUser": True}, "fields": "hiddenByUser"}},
+        {"updateDimensionProperties": {"range": {"sheetId": app_id, "dimension": "COLUMNS", "startIndex": first_tech, "endIndex": first_tech + 1}, "properties": {"hiddenByUser": True}, "fields": "hiddenByUser"}},
+        {"updateDimensionProperties": {"range": {"sheetId": app_id, "dimension": "COLUMNS", "startIndex": first_tech + 2, "endIndex": first_tech + len(TECHNICAL_COLUMNS)}, "properties": {"hiddenByUser": True}, "fields": "hiddenByUser"}},
         {"updateDimensionProperties": {"range": {"sheetId": app_id, "dimension": "COLUMNS", "startIndex": 0, "endIndex": 2}, "properties": {"pixelSize": 180}, "fields": "pixelSize"}},
         {"repeatCell": {"range": {"sheetId": app_id, "startRowIndex": 1, "startColumnIndex": 2, "endColumnIndex": 4}, "cell": {"userEnteredFormat": {"numberFormat": {"type": "DATE_TIME", "pattern": "yyyy-mm-dd hh:mm"}}}, "fields": "userEnteredFormat.numberFormat"}},
         {"repeatCell": {"range": {"sheetId": app_id, "startRowIndex": 1, "startColumnIndex": 5, "endColumnIndex": 7}, "cell": {"userEnteredFormat": {"numberFormat": {"type": "DATE_TIME", "pattern": "yyyy-mm-dd hh:mm"}}}, "fields": "userEnteredFormat.numberFormat"}},
