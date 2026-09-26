@@ -22,6 +22,15 @@ in the user-facing report; never add unsupported job-ad keywords to compensate.
 - This package contains exactly one vacancy. Never use knowledge, conclusions,
   keywords, research, or CV changes from another package in the task batch.
 - Treat every supplied candidate document as immutable source-of-truth evidence.
+- For Simple.life / Simple App, read
+  `registry/candidate/user-confirmed-simple-life-2026-09-26.md` alongside the
+  earlier career clarifications and apply its role-specific CV rendering rules
+  to the selected vacancy. Keep its fact list separate from its explicitly
+  unmeasured estimates; do not invent figures or present estimates as measured
+  outcomes. Its `Present` date and Senior Backend Engineer title conflict with
+  the earlier confirmed July 2026 end date and Software Developer title:
+  resolve that conflict from a direct candidate clarification before using
+  either newer value in an employer-facing CV.
 - Review relevant experience inventories to find reusable work history, but keep
   delivered systems, design proposals, general duties, and unconfirmed metrics
   distinct. An inventory is a discovery record; use a verified evidence-bank entry
