@@ -23,14 +23,27 @@ in the user-facing report; never add unsupported job-ad keywords to compensate.
   keywords, research, or CV changes from another package in the task batch.
 - Treat every supplied candidate document as immutable source-of-truth evidence.
 - For Simple.life / Simple App, read
+  `registry/candidate/user-supplied-simple-life-2025-2026-09-26.md` and
   `registry/candidate/user-confirmed-simple-life-2026-09-26.md` alongside the
-  earlier career clarifications and apply its role-specific CV rendering rules
-  to the selected vacancy. Keep its fact list separate from its explicitly
-  unmeasured estimates; do not invent figures or present estimates as measured
-  outcomes. Its `Present` date and Senior Backend Engineer title conflict with
-  the earlier confirmed July 2026 end date and Software Developer title:
-  resolve that conflict from a direct candidate clarification before using
-  either newer value in an employer-facing CV.
+  earlier career and impact clarifications. Use the two period-specific blocks
+  as candidate-supplied work inventories when selecting vacancy-relevant
+  achievements. Apply their role-specific rendering guidance to the whole
+  Simple.life entry: aim for 5–7 distinct bullets when evidence supports them,
+  never exceed 7, and keep each at most 40 words.
+  Combine overlapping LLM-agent and DeepL work into one bullet each when both
+  periods appear; do not count the same work or outcome twice.
+- Keep candidate-reported delivery facts separate from the blocks' estimates.
+  The cited Jira/Slack records and estimated outcomes were not independently
+  inspected. Do not invent figures, turn a projected effect into an achieved
+  result, or present an estimate as measured. Apply the confirmation and
+  grounding rules below before using a numeric outcome in an employer-facing
+  CV, including the example bullets in either block.
+- Both Simple.life blocks use a Senior Backend Engineer title, while the
+  earlier direct career clarification gives Software Developer and an end date
+  of July 2026. The later block also says `Present`. Resolve these conflicts
+  through a direct candidate clarification before using either newer title or
+  end date in an employer-facing CV; otherwise retain the earlier confirmed
+  title and dates and flag the conflict in the analysis.
 - Review relevant experience inventories to find reusable work history, but keep
   delivered systems, design proposals, general duties, and unconfirmed metrics
   distinct. An inventory is a discovery record; use a verified evidence-bank entry
