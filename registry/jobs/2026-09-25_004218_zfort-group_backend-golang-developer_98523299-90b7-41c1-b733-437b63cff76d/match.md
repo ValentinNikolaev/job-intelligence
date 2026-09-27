@@ -1,22 +1,27 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 81/100  
 **Recommendation:** Strong Match
 
-Strong remote backend fit through extensive Go, PHP, API, database, messaging, and production-system experience.
+Backend/Golang Developer at ZFORT Group aligns with the candidate's senior backend and delivery background, with role-specific tooling or domain details requiring verification.
 
 ## Why it matches
 
-- Go and PHP
-- microservices
-- PostgreSQL and MySQL
-- messaging
-- CI/CD
+- robust, scalable backend in Go.
+- Directly managed 10 developers.
+- event-driven system
 
 ## Gaps
 
-- Specific product domain and local hiring constraints are unknown
+- Some vacancy-specific domain and tooling details are not explicitly established in the profile.
 
 ## Concerns
 
-- EU work authorization and exact language requirement are not stated
+- Confirm work authorization, compensation, and availability directly; the sealed profile does not state these facts.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Primary role technology and backend delivery | critical / stated | strong | # Backend/Golang Developer | robust, scalable backend in Go. | / |
+| Technical leadership | high / stated | strong | Experience in a Tech Lead/Team Lead role or similar positions; | Directly managed 10 developers. | / |

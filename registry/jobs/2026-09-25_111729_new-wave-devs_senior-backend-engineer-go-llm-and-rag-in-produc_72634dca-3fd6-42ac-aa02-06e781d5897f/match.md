@@ -1,21 +1,25 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong match for senior Go backend work and production AI automation, with demonstrated integrations, reliability, and system design.
+Senior Backend Engineer (Go), LLM and RAG in production, AI product at New Wave Devs aligns with the candidate's senior backend and delivery background, with role-specific tooling or domain details requiring verification.
 
 ## Why it matches
 
-- Go backend ownership
-- LLM-assisted automation
-- APIs and integrations
-- observability and resilience
+- robust, scalable backend in Go.
+- event-driven system
 
 ## Gaps
 
-- Specific RAG production depth and employer constraints are not fully evidenced
+- Some vacancy-specific domain and tooling details are not explicitly established in the profile.
 
 ## Concerns
 
-- Exact seniority and language expectations require confirmation
+- Confirm work authorization, compensation, and availability directly; the sealed profile does not state these facts.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Primary role technology and backend delivery | critical / stated | strong | # Senior Backend Engineer (Go), LLM and RAG in production, AI product | robust, scalable backend in Go. | / |

@@ -1,22 +1,27 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 90/100  
+**Recommendation:** Strong Match
 
-Good remote Golang backend fit supported by production Go, APIs, cloud, and reliability experience; middle scope is a possible seniority mismatch.
+Middle Golang Developer at NuxGame aligns with the candidate's senior backend and delivery background, with role-specific tooling or domain details requiring verification.
 
 ## Why it matches
 
-- Go
-- backend systems
-- AWS and Kubernetes
-- integrations
-- production troubleshooting
+- robust, scalable backend in Go.
+- Migrated managed services from ECS to Kubernetes.
+- event-driven system
 
 ## Gaps
 
-- Role-specific domain and exact required years are not confirmed
+- Some vacancy-specific domain and tooling details are not explicitly established in the profile.
 
 ## Concerns
 
-- Candidate's recent employment dates conflict across source records
+- Confirm work authorization, compensation, and availability directly; the sealed profile does not state these facts.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Primary role technology and backend delivery | critical / stated | strong | # Middle Golang Developer | robust, scalable backend in Go. | / |
+| Kubernetes and delivery operations | high / stated | strong | Розуміння технологій контейнеризації (наприклад, Docker, Kubernetes). | Migrated managed services from ECS to Kubernetes. | / |

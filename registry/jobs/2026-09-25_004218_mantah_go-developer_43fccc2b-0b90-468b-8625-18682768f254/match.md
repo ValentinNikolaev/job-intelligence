@@ -1,23 +1,25 @@
 # Match Analysis
 
-**Score:** 89/100  
-**Recommendation:** Strong Match
+**Score:** 66/100  
+**Recommendation:** Match
 
-Very strong fit for production Go, distributed microservices, PostgreSQL, messaging, observability, resilience, and regulated integrations.
+Go Developer at Mantah aligns with the candidate's senior backend and delivery background, with role-specific tooling or domain details requiring verification.
 
 ## Why it matches
 
-- Go
-- gRPC and REST
-- PostgreSQL
-- RabbitMQ
-- Prometheus
-- fault-tolerant systems
+- robust, scalable backend in Go.
+- event-driven system
 
 ## Gaps
 
-- Insurance-domain depth and exact English level are not fully evidenced
+- Insurance-domain experience is not explicitly established in the candidate profile.
 
 ## Concerns
 
-- Ukraine eligibility and regulatory experience should be verified
+- Confirm work authorization, compensation, and availability directly; the sealed profile does not state these facts.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Primary role technology and backend delivery | critical / stated | strong | # Go Developer | robust, scalable backend in Go. | / |

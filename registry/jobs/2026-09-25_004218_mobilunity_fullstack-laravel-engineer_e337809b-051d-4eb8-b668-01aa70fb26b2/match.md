@@ -1,22 +1,26 @@
 # Match Analysis
 
-**Score:** 86/100  
-**Recommendation:** Strong Match
+**Score:** 76/100  
+**Recommendation:** Match
 
-Strong Laravel and backend fit with cloud, databases, APIs, CI/CD, and leadership experience; frontend depth is less clearly evidenced.
+Fullstack Laravel Engineer at Mobilunity aligns with the candidate's senior backend and delivery background, with role-specific tooling or domain details requiring verification.
 
 ## Why it matches
 
-- Laravel and PHP
-- backend integrations
-- AWS and Kubernetes
-- databases
-- CI/CD
+- I have a strong track record in PHP, with 5 years of leadership experience.
+- event-driven system
 
 ## Gaps
 
-- Fullstack frontend responsibilities are not strongly evidenced
+- The profile does not establish React/TypeScript delivery as a recent core responsibility.
+- Insurance-domain experience is not explicitly established in the candidate profile.
 
 ## Concerns
 
-- Ukraine hiring and exact remote arrangement need confirmation
+- Confirm work authorization, compensation, and availability directly; the sealed profile does not state these facts.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Primary role technology and backend delivery | critical / stated | strong | # Fullstack Laravel Engineer | I have a strong track record in PHP, with 5 years of leadership experience. | / |
