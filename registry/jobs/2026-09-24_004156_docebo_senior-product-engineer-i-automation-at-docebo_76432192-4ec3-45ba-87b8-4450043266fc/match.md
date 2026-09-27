@@ -1,26 +1,18 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 61/100  
+**Recommendation:** Possible Match
 
-Automation and backend experience align well with the product-engineering scope and Go/PHP stack; three office days in Toronto is a material location concern.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- Go and PHP
-- support automation
-- APIs and production reliability
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Toronto office presence and broader product-stack details
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Remote/hybrid location is Toronto with three office days
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Automation product engineering | high / stated | strong | Senior Product Engineer I - Automation | I design and own a support automation platform | Toronto office attendance may be incompatible with Rome-based work. / Verify whether European remote work is permitted. |
+- Verify unresolved hiring constraints during any later user-approved preparation.

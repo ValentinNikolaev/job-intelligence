@@ -3,17 +3,16 @@
 **Score:** 92/100  
 **Recommendation:** Strong Match
 
-Strong PHP/Laravel backend fit with extensive production APIs, integrations, performance work, and remote-capable experience.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
-- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.
+- Verify unresolved hiring constraints during any later user-approved preparation.

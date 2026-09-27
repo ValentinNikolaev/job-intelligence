@@ -1,27 +1,18 @@
 # Match Analysis
 
-**Score:** 85/100  
-**Recommendation:** Strong Match
+**Score:** 64/100  
+**Recommendation:** Possible Match
 
-Staff architecture, hands-on backend scaling, asynchronous processing and technical influence fit the role; Ukrainian product context and exact stack are partly unspecified.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- Architecture
-- backend scaling
-- asynchronous processing
-- hands-on technical leadership
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Exact required language and stack details are not fully visible
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Role requires balancing architecture with direct implementation
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Staff architectural and backend expertise | critical / stated | strong | Шукаємо в команду | Directly managed 10 developers. | / |
+- Verify unresolved hiring constraints during any later user-approved preparation.

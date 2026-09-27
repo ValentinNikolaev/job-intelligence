@@ -1,29 +1,18 @@
 # Match Analysis
 
-**Score:** 91/100  
+**Score:** 94/100  
 **Recommendation:** Strong Match
 
-PHP/Laravel, microservices, PostgreSQL, Redis-adjacent messaging, Docker/Kubernetes and testing align strongly; exact Docker and PHPUnit evidence is limited.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- PHP
-- Laravel
-- microservices
-- PostgreSQL
-- Kubernetes
-- RabbitMQ
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Docker and PHPUnit are not explicit in the candidate profile
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Work arrangement and language details need confirmation
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| PHP and Laravel experience | critical / stated | strong | Досвід роботи з PHP 8.2+ та Laravel від 2 років | - Laravel | / |
+- Verify unresolved hiring constraints during any later user-approved preparation.

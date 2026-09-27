@@ -1,28 +1,18 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 86/100  
 **Recommendation:** Strong Match
 
-Go backend, microservices, scalability, reliability and technical-lead experience align closely; gRPC and fluent business English should be verified.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- Go
-- microservices
-- resilience
-- system design
-- technical leadership
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Specific gRPC depth is not explicit
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Business-English proficiency is described but not formally levelled
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Go applications with resilience and uptime | critical / stated | strong | Experience building Go applications with a focus on resilience and uptime | Build resilient message delivery pipelines with fallback logic, retries, and | / |
+- Verify unresolved hiring constraints during any later user-approved preparation.

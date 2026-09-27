@@ -1,29 +1,18 @@
 # Match Analysis
 
-**Score:** 92/100  
+**Score:** 94/100  
 **Recommendation:** Strong Match
 
-Symfony/PHP, microservices, messaging, databases and operational engineering are strong matches; Symfony 6/7 and Docker remain version-specific uncertainties.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- PHP
-- Symfony
-- microservices
-- RabbitMQ
-- PostgreSQL
-- production reliability
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Symfony 6/7 and Docker specifics are not explicit
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Exact work arrangement is unknown
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| PHP and Symfony experience | critical / stated | strong | Досвід роботи з PHP 8.2+ та Symfony 6/7 | Developed a Laravel/Symfony-based product-wide logger package | / |
+- Verify unresolved hiring constraints during any later user-approved preparation.

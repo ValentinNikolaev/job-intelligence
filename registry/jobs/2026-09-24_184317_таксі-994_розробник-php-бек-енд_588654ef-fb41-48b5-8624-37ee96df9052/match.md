@@ -1,27 +1,18 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 54/100  
+**Recommendation:** Possible Match
 
-Strong PHP and backend integration fit for API, payments, notifications, and support-bot work; SQL is supported, while Ukrainian-language and local-work details are uncertain.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- PHP backend development
-- payment integrations
-- APIs
-- automation and support systems
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Specific current SQL depth is not detailed
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Work arrangement and language requirements are not stated in the supplied posting
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| PHP backend development | critical / stated | strong | Необхідні навички: php, sql. | Backend engineer with 15+ years of experience building and improving production | / |
+- Verify unresolved hiring constraints during any later user-approved preparation.

@@ -1,28 +1,18 @@
 # Match Analysis
 
-**Score:** 89/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-PHP/Symfony architecture, fintech, payments, scalability and technical authority align closely with the candidate's leadership and finance-related background.
+Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
 
 ## Why it matches
 
-- Software architecture
-- PHP/Symfony
-- fintech
-- payments
-- technical leadership
+- The candidate profile documents relevant backend experience and production delivery for this role.
 
 ## Gaps
 
-- Exact financial-platform scale and open-banking details are not established
+- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
 
 ## Concerns
 
-- Cross-team architect scope may require more recent architecture ownership evidence
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Mission-critical fintech architecture | critical / stated | strong | mission-critical fintech products | My background spans various domains, including Document automation, Technology, | / |
+- Verify unresolved hiring constraints during any later user-approved preparation.
