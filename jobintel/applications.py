@@ -294,9 +294,8 @@ def validate_application_draft(
 ) -> dict[str, str]:
     """Validate a local Codex draft without publishing or converting it."""
     vacancy_directory = vacancy_directory.resolve()
-    snapshot = op.materialize_vacancy_snapshot(vacancy_directory)
-    meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
-    vacancy, _, _ = _load_vacancy(snapshot, meta)
+    meta = _read_yaml_mapping(vacancy_directory / "meta.yaml", "vacancy metadata")
+    vacancy, _, _ = _load_vacancy(vacancy_directory, meta)
     draft = CodexApplicationDraftClient(
         draft_directory,
         model="deterministic-draft-validator",
@@ -443,15 +442,14 @@ class ApplicationGenerator:
     @op.exclusive
     def generate_directory(self, directory: Path, *, force: bool = False) -> PreparationResult:
         directory = directory.resolve()
-        snapshot = op.materialize_vacancy_snapshot(directory)
-        meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
+        meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
         vacancy_id = str(meta.get("id", ""))
         if not vacancy_id:
             raise ApplicationError(f"vacancy metadata has no id: {directory / 'meta.yaml'}")
 
         candidate_profile, profile_version = self._load_candidate_profile()
         prompt, prompt_version = self._load_prompt()
-        vacancy, vacancy_version, company_version = _load_vacancy(snapshot, meta)
+        vacancy, vacancy_version, company_version = _load_vacancy(directory, meta)
         generated_at = self._clock()
         expected_versions = {
             "profile_version": profile_version,
@@ -502,10 +500,10 @@ class ApplicationGenerator:
             raise ApplicationError("new application publication requires quality schema_version 2; legacy schema 1 is read-only")
         cv_export_files = _cv_export_files(meta)
 
-        staging_root = self.registry_root.parent / ".codex-work" / "publication-staging" / directory.name
-        staging_root.mkdir(parents=True, exist_ok=True)
-        staging = Path(tempfile.mkdtemp(prefix=".application-", dir=staging_root))
+        directory.mkdir(parents=True, exist_ok=True)
+        staging = Path(tempfile.mkdtemp(prefix=".application-", dir=directory))
         try:
+            cv_preview_reused = False
             previous_manifest = _read_existing_manifest(manifest_path)
             if self.document is not None:
                 _copy_existing_application_files(application_dir, staging)
@@ -514,7 +512,7 @@ class ApplicationGenerator:
                 filename = APPLICATION_FILES[field]
                 _write_text(staging / filename, generated[field])
             if self.document in {None, "cv"}:
-                reused = (
+                cv_preview_reused = (
                     isinstance(self.client, CodexApplicationDraftClient)
                     and isinstance(self.converter, HostMarkdownDocxConverter)
                     and _reuse_cv_preview(
@@ -524,7 +522,7 @@ class ApplicationGenerator:
                         self.converter,
                     )
                 )
-                if not reused:
+                if not cv_preview_reused:
                     self.converter.convert(staging / "cv.md", staging / "cv.docx")
                 shutil.copyfile(_win_long_path(staging / "cv.md"), _win_long_path(staging / cv_export_files["markdown"]))
                 shutil.copyfile(_win_long_path(staging / "cv.docx"), _win_long_path(staging / cv_export_files["docx"]))
@@ -545,6 +543,8 @@ class ApplicationGenerator:
                                 staging / f"{name}.md", staging / f"{name}.docx",
                                 visual_review=reviews.get(name) if isinstance(reviews, Mapping) else None,
                             )
+                            if name == "cv":
+                                exports[name]["preview_reused"] = cv_preview_reused
                 except DocumentQualityError as exc:
                     raise ApplicationError(f"export quality validation failed: {exc}") from exc
                 quality["exports"] = exports
@@ -594,11 +594,10 @@ class ApplicationGenerator:
 
     def is_current(self, directory: Path) -> bool:
         directory = directory.resolve()
-        snapshot = op.materialize_vacancy_snapshot(directory)
-        meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
+        meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
         _, profile_version = self._load_candidate_profile()
         _, prompt_version = self._load_prompt()
-        _, vacancy_version, company_version = _load_vacancy(snapshot, meta)
+        _, vacancy_version, company_version = _load_vacancy(directory, meta)
         expected_versions = {
             "profile_version": profile_version,
             "vacancy_version": vacancy_version,
@@ -644,11 +643,6 @@ class ApplicationGenerator:
 
 def resolve_job_directories(registry_root: Path, selector: str) -> list[Path]:
     jobs_dir = registry_root.resolve() / "jobs"
-    stored = op.resolve_vacancy_directories(registry_root, selector)
-    if stored is not None:
-        if not stored:
-            raise ApplicationError(f"vacancy not found in configured storage: {selector}")
-        return stored
     if selector.casefold() == "all":
         return sorted(path.parent for path in op.metadata_paths(jobs_dir))
 
@@ -1748,7 +1742,6 @@ def _publish_staged_package(staging: Path, target: Path, files: Sequence[str],
     if missing:
         raise ApplicationError("staged application package is incomplete: " + ", ".join(missing))
 
-    parent_existed = target.parent.exists()
     target.parent.mkdir(parents=True, exist_ok=True)
     backup = target.with_name(f".{target.name}.{uuid.uuid4().hex}.backup")
     had_previous = target.exists()
@@ -1763,8 +1756,6 @@ def _publish_staged_package(staging: Path, target: Path, files: Sequence[str],
             os.replace(target, staging)
         if had_previous and backup.exists() and not target.exists():
             os.replace(backup, target)
-        if not parent_existed and target.parent.exists() and not any(target.parent.iterdir()):
-            target.parent.rmdir()
         raise
     finally:
         if backup.exists() and target.exists():

@@ -16,13 +16,6 @@ that export. Scheduled analysis continues to use its deterministic sealed input 
 Read candidate evidence and application artifacts from their existing file paths.
 If storage is unavailable, stop the affected operation; never switch to old files.
 
-Before a preparation editor receives any selected vacancy, run `python run.py
-prepare-preflight <selector-1> [<selector-2> ...] --workflow prepare [--model-profile
-<profile>] [--document <document>]`. The command is read-only apart from an ignored
-`.codex-work/vacancy-snapshots/` view. It resolves selectors against canonical storage,
-checks the adapter, required metadata, current same-profile match, score eligibility and
-hard rejection. A failed preflight means no drafts, preview, conversion, or publication.
-
 ## Choose one mode
 
 Before choosing a mode, read `prompts/job-intelligence-workflow.md`. It is the shared
@@ -70,6 +63,12 @@ current Codex surface, tell the user and do not publish under that profile.
    preparation. Stop if the active task cannot load it; do not recreate the retired
    inline drafting flow.
 4. Publish through `run.py` so schema validation, hashes, atomic writes, DOCX conversion, and cache metadata remain deterministic.
+   For an explicitly selected CV-only batch, first run `python run.py prepare-preflight
+   <directory-or-id> [...] --workflow prepare --model-profile <selected-profile>`. It is
+   read-only JSON and must pass its explicit-selection, MongoDB, fresh-match,
+   converter/options, renderer, and isolated-current-worktree gates before drafting.
+   After the final draft, run `lint-application`, then CV preview, then the combined
+   validator; lint moves predictable defects earlier but never replaces validation.
 5. For default full-package preparation, use the two-wave orchestration and exclusive
    file ownership in `references/prepare.md`. For an explicit single-document request,
    run only the roles and handoffs required by that document. The main agent alone

@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import html
+import json
 import math
 import re
 import shutil
@@ -138,6 +139,29 @@ def _tool(name: str, explicit: str | Path | None = None) -> str:
                     return str(path)
     hint = "Poppler (pdfinfo, pdftotext, pdftoppm)" if name.startswith("pdf") else "LibreOffice (soffice)"
     raise DocumentQualityError(f"Required tool {name} is unavailable. Install {hint} or provide its executable path; no PDF check was performed.")
+
+
+def preview_capabilities(
+    converter_script: str | Path,
+    options_path: str | Path,
+    powershell: str | None,
+) -> dict[str, Any]:
+    """Check every CV-preview prerequisite without creating an artifact."""
+    script, options = Path(converter_script), Path(options_path)
+    if not script.is_file():
+        raise DocumentQualityError(f"Markdown-to-DOCX converter not found: {script}")
+    if not options.is_file():
+        raise DocumentQualityError(f"DOCX options file not found: {options}")
+    if not powershell:
+        raise DocumentQualityError("PowerShell is required by the Markdown-to-DOCX converter")
+    try:
+        json.loads(options.read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        raise DocumentQualityError(f"DOCX options are unavailable or invalid: {options}") from exc
+    return {"status": "available", "converter": str(script.resolve()),
+            "options": str(options.resolve()), "renderer": _tool("pdftoppm"),
+            "pdf_exporter": _tool("soffice"), "pdf_info": _tool("pdfinfo"),
+            "pdf_text": _tool("pdftotext")}
 
 
 def _run(command: list[str]) -> str:

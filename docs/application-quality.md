@@ -257,6 +257,15 @@ to the same artifact hash. Editing or regenerating the file invalidates that rev
 Uninspected exports retain `not_reviewed`; text preservation alone cannot certify a
 specific employer's ATS. Use `documents validate --help` for visual receipt options.
 
+For a selected CV-only batch, run `python run.py prepare-preflight <directory-or-id>
+[...] --workflow prepare` before drafting, then run `lint-application` before the
+combined validator. Lint aggregates predictable handoff, grounding quote, evidence
+status, hash, CV-audit, and Experience-depth defects; it never replaces publication
+validation. `documents preview-cv` returns `status: unavailable` without writing a
+canonical package when a renderer prerequisite is missing. A successful preview is
+bound to the Markdown, converter code, DOCX options and artifact hashes, so changing
+any of them invalidates preview reuse and requires another visual review.
+
 ## Measurement and later application stages
 
 See `application-lifecycle.md` and `../prompts/application-lifecycle.md` for confirmed

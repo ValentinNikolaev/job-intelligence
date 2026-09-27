@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from .document_quality import DocumentQualityError, export_pdf, pdf_page_count, render_pdf_pages, validate_export, verify_cv_experience
+from .document_quality import DocumentQualityError, export_pdf, pdf_page_count, preview_capabilities, render_pdf_pages, validate_export, verify_cv_experience
 
 
 def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
@@ -50,6 +50,11 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
             if source.name != "cv.md" or not _win_long_path(source).is_file() or not source.is_relative_to(work):
                 raise DocumentQualityError("preview-cv requires a draft cv.md under .codex-work")
             converter = HostMarkdownDocxConverter(base)
+            try:
+                capability = preview_capabilities(converter.script_path, converter.options_path, converter.powershell)
+            except DocumentQualityError as exc:
+                print(json.dumps({"status": "unavailable", "source": str(source), "reason": str(exc)}, ensure_ascii=False, indent=2))
+                return 1
             target = converter.preview_directory(source)
             parent = target.parent
             receipt = target / "receipt.json"
@@ -89,6 +94,7 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
                           "pdf_sha256": pages["artifact_sha256"],
                           "visual_review": "required", "cached": False}
                 receipt.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            result["availability"] = capability
         elif args.action == "validate":
             review = None
             if args.visual_review:

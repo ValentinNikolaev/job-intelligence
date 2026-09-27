@@ -74,6 +74,7 @@ class RepositoryFinalizationTests(unittest.TestCase):
         snapshot = fin.review(self.work)
         self.assertEqual(4, len(snapshot["files"]))
         self.assertIn(b"GIT binary patch", Path(snapshot["patch"]).read_bytes())
+        self.assertTrue(fin.review(self.work)["reused"])
         with patch.object(fin, "fetch", side_effect=fin.FinalizationError("temporary fetch failure")):
             with self.assertRaisesRegex(fin.FinalizationError, "temporary fetch failure"):
                 fin.publish(self.work, "Preserve reviewed fixture changes", "Fixture run")
@@ -92,6 +93,17 @@ class RepositoryFinalizationTests(unittest.TestCase):
         api_review = fin.review_committed(self.work)
         self.assertEqual(4, len(api_review["files"]))
         self.assertEqual(result["commit"], fin.verify_committed_review(self.work)["commit"])
+
+    def test_reports_exact_remote_overlap_before_rebase(self) -> None:
+        fin.preflight(self.work)
+        (self.work / "existing.txt").write_text("reviewed\n", encoding="utf-8")
+        fin.review(self.work)
+        (self.seed / "existing.txt").write_text("parallel\n", encoding="utf-8")
+        run("git", "add", "-A", cwd=self.seed)
+        run("git", "commit", "-m", "Overlap fixture", cwd=self.seed)
+        run("git", "push", "origin", "HEAD:main", cwd=self.seed)
+        with self.assertRaisesRegex(fin.FinalizationError, r"remote advanced on reviewed paths.*existing.txt"):
+            fin.publish(self.work, "Preserve reviewed fixture", "Fixture run")
 
 
 if __name__ == "__main__":

@@ -160,9 +160,9 @@ def verify_committed_review(root: Path) -> dict:
     if status(root) or head(root) != record["commit"]:
         raise FinalizationError("unpublished commit or checkout changed after API review")
     paths = changed_paths(root, "HEAD^", "HEAD")
-    patch = git(root, "diff", "HEAD^", "HEAD", "--binary", "--full-index", "--no-ext-diff")
-    if (index_entries(root, paths) != record["entries"] or
-            hashlib.sha256(patch).hexdigest() != record["patch_sha256"]):
+    patch_path = root / ".codex-work" / "finalization" / "api-review.patch"
+    if (index_entries(root, paths) != record["entries"] or not patch_path.is_file() or
+            hashlib.sha256(patch_path.read_bytes()).hexdigest() != record["patch_sha256"]):
         raise FinalizationError("committed project changes differ from the API review")
     return record
 
@@ -205,8 +205,9 @@ def publish_api(root: Path) -> dict[str, str]:
         remote_commit = gh_api(root, "GET", f"repos/{repo}/git/commits/{remote}")
         base_tree_sha = remote_commit["tree"]["sha"]
         remote_entries = api_tree(root, repo, base_tree_sha)
-        if any(remote_entries.get(path) != base_entries[path] for path in paths):
-            raise FinalizationError("remote changed a reviewed path; inspect and integrate before API publication")
+        overlap = sorted(path for path in paths if remote_entries.get(path) != base_entries[path])
+        if overlap:
+            raise FinalizationError("remote changed reviewed paths before API publication: " + ", ".join(overlap))
         updates = []
         for path, value in record["entries"].items():
             mode = value.split(":", 1)[0] if value else (base_entries[path] or "100644").split(":", 1)[0]
@@ -267,15 +268,30 @@ def review(root: Path) -> dict:
     git(root, "add", "-A")
     git(root, "diff", "--cached", "--check")
     entries = reviewed_snapshot(root)
-    patch = git(root, "diff", "--cached", "--binary", "--full-index", "--no-ext-diff")
     work = root / ".codex-work" / "finalization"
+    record_path = work / "review.json"
+    current_status = hashlib.sha256(status(root)).hexdigest()
+    if record_path.is_file():
+        try:
+            cached = json.loads(record_path.read_text(encoding="utf-8"))
+            cached_patch = work / "review.patch"
+            if (cached.get("base") == head(root) and cached.get("entries") == entries and
+                    cached.get("status_sha256") == current_status and cached_patch.is_file() and
+                    hashlib.sha256(cached_patch.read_bytes()).hexdigest() == cached.get("patch_sha256")):
+                return {"base": cached["base"], "files": list(entries), "patch": str(cached_patch), "reused": True}
+        except (OSError, ValueError, TypeError):
+            pass
+    # Take the remote snapshot before generating an expensive binary patch.  Later
+    # publication still rechecks it, so this is an optimization rather than trust.
+    repo, branch, remote = remote_info(root)
+    patch = git(root, "diff", "--cached", "--binary", "--full-index", "--no-ext-diff")
     work.mkdir(parents=True, exist_ok=True)
     (work / "review.patch").write_bytes(patch)
-    result = {"base": head(root), "entries": entries,
+    result = {"base": head(root), "remote_head": remote, "repo": repo, "branch": branch, "entries": entries,
               "patch_sha256": hashlib.sha256(patch).hexdigest(),
-              "status_sha256": hashlib.sha256(status(root)).hexdigest()}
+              "status_sha256": current_status}
     (work / "review.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    return {"base": result["base"], "files": list(entries), "patch": str(work / "review.patch")}
+    return {"base": result["base"], "files": list(entries), "patch": str(work / "review.patch"), "reused": False}
 
 
 def verify_review(root: Path, record: dict) -> None:
@@ -283,8 +299,10 @@ def verify_review(root: Path, record: dict) -> None:
         raise FinalizationError("HEAD changed after review; review the complete diff again")
     if reviewed_snapshot(root) != record["entries"]:
         raise FinalizationError("staged project files changed after review")
-    patch = git(root, "diff", "--cached", "--binary", "--full-index", "--no-ext-diff")
-    if hashlib.sha256(patch).hexdigest() != record["patch_sha256"] or hashlib.sha256(status(root)).hexdigest() != record["status_sha256"]:
+    patch_path = root / ".codex-work" / "finalization" / "review.patch"
+    if (not patch_path.is_file() or
+            hashlib.sha256(patch_path.read_bytes()).hexdigest() != record["patch_sha256"] or
+            hashlib.sha256(status(root)).hexdigest() != record["status_sha256"]):
         raise FinalizationError("working tree changed after review; review again")
 
 
@@ -319,6 +337,9 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
         if remote != base:
             if not ancestor(root, base, remote):
                 raise FinalizationError("remote branch no longer descends from reviewed base; inspect remote history")
+            overlap = sorted(set(changed_paths(root, base, remote)).intersection(record["entries"]))
+            if overlap:
+                raise FinalizationError("remote advanced on reviewed paths; inspect before integration: " + ", ".join(overlap))
             git(root, "-c", "commit.gpgsign=false", "rebase", "--no-gpg-sign", remote)
             verify_commit_content(root, record["entries"])
         commit = head(root)
