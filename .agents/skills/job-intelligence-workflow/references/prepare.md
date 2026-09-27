@@ -73,7 +73,7 @@ explicit single-document request, use the full-package flow below.
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
    Apply the mandatory **recent-experience editorial gate** before the CV is final:
    - give every displayed role at least two distinct, source-backed outcome or decision
-     bullets, and each role ending within the last three years at least three. Re-read
+     bullets, and each role ending within the last five years at least three. Re-read
      the candidate source when a role falls short; omit a nonessential older role or
      ask the candidate a focused question when distinct facts remain unavailable.
      Never divide one result into multiple bullets to pass this count;

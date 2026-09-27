@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
 company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
-prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
-generated_at: '2026-09-27T17:09:08Z'
+generated_at: '2026-09-27T21:15:30Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
     company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
-    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
-    generated_at: '2026-09-27T17:09:08Z'
+    generated_at: '2026-09-27T21:15:30Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 403
-      sha256: sha256:0aad23005b2b151017d7f2335736d30d8b769fbae1d7b921166b136457d1408b
+      word_count: 415
+      sha256: sha256:bf5e39fcaa4a7ee7dfb170d0d4290548ff6fe5c58f1a5891a658281e18357d88
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -66,10 +66,10 @@ quality:
       sha256: sha256:d7738106ada7b3b301779044d040463a69ae2b69c6c309d8a4f877e23f952a0a
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
-  document_format: compact
+  document_format: standard
   grounding:
     schema_version: 1
-    sha256: 7eb320e23fcf489c92ad9fa0dd98eb86662df33a618f3e044196f13f48d867f7
+    sha256: 74506133d31876e0d0c841b7591a9f81ad947bb32b46d3e1ad0469720de75357
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -79,8 +79,10 @@ quality:
         retracted: 3
         unverified: 9
         verified: 47
-    claim_count: 11
+    claim_count: 12
     evidence_ids:
+    - airslate-letter-debt-release
+    - airslate-letter-lead-scope
     - airslate-logger-general
     - career-15-years
     - crurated-confirmed-datalake-production
@@ -94,6 +96,48 @@ quality:
     - simple-2026-helpdesk-gateway
     - simple-2026-telephony-privacy
     evidence_entries:
+    - id: airslate-letter-debt-release
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'Technical debt roadmap management
+
+          > Planning the release cycle backlog with the team'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-letter-lead-scope
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to Aug
+          22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning'
+        context_quote: © airSlate, Inc.
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
     - id: airslate-logger-general
       employer: airSlate
       role: Software Developer
@@ -393,196 +437,156 @@ quality:
     semantic_review_required: true
     cv_audit:
       target_role: Senior Go/Golang Software Engineer
-      editorial_review:
-        knowledge_base_version: 1
-        verdict: approve
-        reviewer: Codex CV editorial rebuild review, Talmatic
       top_third_evidence_ids:
       - career-15-years
       - simple-2026-telephony-privacy
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: Codex CV editorial review, Talmatic
       bullet_decisions:
       - text: Owned the privacy-first architecture and backend for a health-domain
           calling platform protecting PII/PHI; it passed formal security and call-recording
           compliance reviews before production.
         decision: keep
-        verdict: approve
+        reason: Production architecture and compliance review establish senior ownership
+          in AWS services.
         weight: critical
         signal_type: security
-        ordering_rationale: Leads the role with end-to-end Go/AWS architecture, health-domain
-          privacy, formal review, and production delivery.
-        reason: Directly supports Talmatic's system-design and AWS requirements with
-          a verified security consequence.
+        ordering_rationale: Leads the most recent role with verified architecture
+          and production release under privacy constraints.
+        verdict: approve
       - text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event
           model and Intercom and Zendesk adapters, enabling the company’s first B2B
           support-AI demonstration.
         decision: keep
-        verdict: approve
+        reason: Direct Go system design and integration with a distinct product delivery
+          consequence.
         weight: high
         signal_type: architecture
-        ordering_rationale: Follows the privacy platform as the strongest direct Go
-          integration architecture and product-delivery result.
-        reason: Supports commercial Go and complex backend integration ownership.
+        ordering_rationale: Follows the security result with the strongest direct
+          Go integration example.
+        verdict: approve
       - text: Improved resilience of Go support automation by turning recurring external-search
           failures into observable partial completions, so operations could identify
           incomplete processing instead of losing the entire run.
         decision: keep
-        verdict: approve
-        weight: high
+        reason: Demonstrates production diagnosis and an operational response to a
+          concrete distributed failure mode.
+        weight: medium
         signal_type: reliability
-        ordering_rationale: Shows production diagnosis and a verified operational
-          consequence without implementation mechanics.
-        reason: Supports distributed troubleshooting and production ownership.
+        ordering_rationale: Places production resilience after the two wider architecture
+          outcomes.
+        verdict: approve
       - text: Automated GDPR data exports across seven sources through a self-service
           administration workflow for creating, tracking, and reviewing requests.
         decision: keep
-        verdict: approve
+        reason: Shows separate data integration and compliance delivery across several
+          services.
         weight: medium
         signal_type: impact
-        ordering_rationale: Retained after direct Go reliability work as a distinct
-          compliance and integration result.
-        reason: Shows regulated data-flow ownership without overstating an outcome.
+        ordering_rationale: Follows the closer Go and reliability examples as a distinct
+          compliance delivery outcome.
+        verdict: approve
       - text: Led the production DataLake and event-analytics architecture, increasing
           throughput by over 10x under technical ownership.
         decision: keep
-        verdict: approve
+        reason: Architecture ownership with a candidate reviewed production throughput
+          result.
         weight: critical
         signal_type: scale
-        ordering_rationale: Leads CRURATED because the confirmed measured production
-          consequence is its strongest signal.
-        reason: Demonstrates consequential architecture ownership and scale.
+        ordering_rationale: Leads the consulting role with the most measurable system
+          scale result.
+        verdict: approve
       - text: Designed modular event-stream architecture for the production DataLake,
           reducing new analytics-stream setup from several days to under four hours.
         decision: keep
-        verdict: approve
+        reason: Distinct system design outcome that improved analytics delivery time.
         weight: high
         signal_type: architecture
-        ordering_rationale: Has a direct, separate delivery-speed consequence.
-        reason: Demonstrates modular system design relevant to a complex SaaS platform.
+        ordering_rationale: Follows throughput with the strongest architecture and
+          delivery consequence.
+        verdict: approve
       - text: Designed versioned event schemas and parallel production publication
           so analytics consumers could evolve schemas while new events continued to
           be delivered.
         decision: keep
+        reason: Separately confirmed production event version work and integration
+          consistency.
+        weight: medium
+        signal_type: architecture
+        ordering_rationale: Third because the source confirms scope and production
+          use without a measured impact.
         verdict: approve
-        weight: high
-        signal_type: reliability
-        ordering_rationale: Shows safe evolution of a live production system without
-          a separate measured impact.
-        reason: Supports distributed-systems design and integration reliability.
       - text: Reduced peak load on the main database by removing bottlenecks and redistributing
           workload, improving service stability during high-traffic periods.
         decision: keep
-        verdict: approve
+        reason: Direct relational database stability and performance result relevant
+          to the vacancy.
         weight: high
         signal_type: reliability
-        ordering_rationale: Leads airSlate because it is the sole directly confirmed
-          performance and stability consequence.
-        reason: Supports relational-data performance and production troubleshooting.
+        ordering_rationale: Leads airSlate with its clearest verified production consequence.
+        verdict: approve
       - text: Developed a Laravel/Symfony logger package aligned with the interservice
           communication standard, giving teams a shared logging implementation.
         decision: keep
-        verdict: approve
+        reason: A distinct shared engineering standard that supports distributed observability.
         weight: medium
         signal_type: team_influence
-        ordering_rationale: Is a distinct team-level standardization result with less
-          direct external consequence.
-        reason: Supports observability and engineering influence without claiming
-          unsupported adoption metrics.
-    reviewer: Codex CV editorial rebuild review, Talmatic
+        ordering_rationale: Follows database stability with a separate cross-service
+          engineering contribution.
+        verdict: approve
+      - text: Led epic decomposition, task delegation, and release-backlog planning
+          with the engineering team.
+        decision: keep
+        reason: Verified team leadership scope across decomposition, delegation, and
+          release planning without an unsupported outcome claim.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Third as a broader leadership proof point, distinct from
+          database work and shared logging.
+        verdict: approve
+    reviewer: Codex CV editorial review, Talmatic
     document_sha256:
-      cv: sha256:0aad23005b2b151017d7f2335736d30d8b769fbae1d7b921166b136457d1408b
+      cv: sha256:bf5e39fcaa4a7ee7dfb170d0d4290548ff6fe5c58f1a5891a658281e18357d88
     requirements:
     - requirement: Strong commercial Go/Golang experience
       importance: critical
       basis: stated
       jd_quote: Strong commercial experience with **Go / Golang**.
       match: strong
-      candidate_quote: New Go service abstracting helpdesk vendors
+      candidate_quote: New Go service abstracting helpdesk vendors (Intercom, Zendesk)
+        behind a vendor-neutral event model
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
       - simple-2026-helpdesk-gateway
-    - requirement: System design ownership as a key interview focus
+    - requirement: System design and software architecture
       importance: critical
       basis: stated
-      jd_quote: System design is a key part of the role and will be an important focus
-        during the interview process.
+      jd_quote: Strong **system design and software architecture** skills.
       match: strong
-      candidate_quote: candidate owned the architecture
+      candidate_quote: The candidate owned the architecture and
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
       - simple-2026-telephony-privacy
-    - requirement: Relational database and SQL performance troubleshooting
+    - requirement: Relational database and SQL performance
       importance: high
       basis: stated
       jd_quote: Analyze SQL queries, database performance, application waits, and
         network latency.
       match: partial
-      candidate_quote: peak load on the main database
-      risk: The exact SQL, wait, and network-latency scope is not verified.
-      mitigation: Discuss the confirmed database performance example without claiming
-        narrower diagnostics.
+      candidate_quote: improving service stability during high-traffic periods
+      risk: Main-database load and stability are verified; specific SQL, wait, and
+        network diagnosis is not.
+      mitigation: Discuss the database stability result without claiming unverified
+        diagnostics.
       hard_blocker: false
       evidence_ids:
       - database-reliability
-    - requirement: Code ownership and on-call rotation participation
-      importance: high
-      basis: stated
-      jd_quote: Take ownership of the code you deliver and participate in an on-call
-        rotation.
-      match: partial
-      candidate_quote: candidate owned the architecture
-      risk: Formal on-call rotation participation is not verified.
-      mitigation: Confirm rotation expectations and candidate availability.
-      hard_blocker: false
-      evidence_ids:
-      - simple-2026-telephony-privacy
-    - requirement: Distributed backend troubleshooting and debugging
-      importance: high
-      basis: stated
-      jd_quote: Troubleshoot distributed production systems and identify performance
-        bottlenecks.
-      match: strong
-      candidate_quote: Diagnosed from logs and code
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - simple-2026-cron-resilience
-    - requirement: Mentor engineers and share technical knowledge
-      importance: meaningful
-      basis: stated
-      jd_quote: Mentor engineers and share technical knowledge across the team.
-      match: unknown
-      candidate_quote: ''
-      risk: A direct mentoring example is not verified.
-      mitigation: Confirm a specific mentoring example before adding it.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: At least 3 hours overlap with Eastern US working hours
-      importance: meaningful
-      basis: stated
-      jd_quote: At least 3 hours overlap with Eastern US working hours
-      match: unknown
-      candidate_quote: ''
-      risk: Daily overlap commitment is not recorded.
-      mitigation: Confirm availability with the recruiter.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: Financial services, fintech, payments, or RegTech background
-      importance: preferred
-      basis: stated
-      jd_quote: Previous experience in **financial services, fintech, payments, or
-        RegTech**.
-      match: missing
-      candidate_quote: ''
-      risk: No verified direct domain result.
-      mitigation: Present transferable SaaS reliability experience without claiming
-        financial-services experience.
-      hard_blocker: false
-      evidence_ids: []
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
@@ -597,59 +601,83 @@ quality:
       evidence_ids:
       - simple-2026-telephony-privacy
       - simple-2026-helpdesk-gateway
-      - crurated-confirmed-datalake-production
+      - crurated-event-design
     - document: cv
       text: Owned the privacy-first architecture and backend for a health-domain calling
         platform protecting PII/PHI; it passed formal security and call-recording
         compliance reviews before production.
       evidence_ids:
       - simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model
         and Intercom and Zendesk adapters, enabling the company’s first B2B support-AI
         demonstration.
       evidence_ids:
       - simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Improved resilience of Go support automation by turning recurring external-search
         failures into observable partial completions, so operations could identify
         incomplete processing instead of losing the entire run.
       evidence_ids:
       - simple-2026-cron-resilience
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Automated GDPR data exports across seven sources through a self-service
         administration workflow for creating, tracking, and reviewing requests.
       evidence_ids:
       - simple-2026-gdpr
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Led the production DataLake and event-analytics architecture, increasing
         throughput by over 10x under technical ownership.
       evidence_ids:
       - crurated-reviewed-throughput
       - crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Designed modular event-stream architecture for the production DataLake,
         reducing new analytics-stream setup from several days to under four hours.
       evidence_ids:
       - crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Designed versioned event schemas and parallel production publication so
         analytics consumers could evolve schemas while new events continued to be
         delivered.
       evidence_ids:
-      - crurated-event-design
       - crurated-confirmed-event-version-production
+      - crurated-event-design
+      employer: CRURATED
     - document: cv
       text: Reduced peak load on the main database by removing bottlenecks and redistributing
         workload, improving service stability during high-traffic periods.
       evidence_ids:
       - database-reliability
+      employer: airSlate
+      role: Software Developer
     - document: cv
       text: Developed a Laravel/Symfony logger package aligned with the interservice
         communication standard, giving teams a shared logging implementation.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:8b74e109205dfd4077c1738ed0ee7105a4f4210bfaaa505800571adfcdaa8995
+      employer: airSlate
+      role: Software Developer
+    - document: cv
+      text: Led epic decomposition, task delegation, and release-backlog planning
+        with the engineering team.
+      evidence_ids:
+      - airslate-letter-lead-scope
+      - airslate-letter-debt-release
+      employer: airSlate
+  declaration_sha256: sha256:174bd2e326cb5abe6f50ec72a8a332e2c95b9c27f2a59408b020534663de04ba
   method:
     workflow: two-wave
     final_review:
@@ -657,32 +685,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 511
-      sha256: sha256:26775b65e270e281ffe941eb956dda5026fd498091ac3987a1ae49444efb8ee9
+      word_count: 754
+      sha256: sha256:a0aeaf4d17d5da0a41c5d99362b784599aebb751d87f5edb9df3b50d128b86df
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 0aad23005b2b151017d7f2335736d30d8b769fbae1d7b921166b136457d1408b
-      artifact_sha256: da6a9f68d0e2e818538080aec2443ed2ed36b9ebb2026451dc7496a3184b6c4c
-      extracted_text_sha256: 42b3c35fce4d8277b87c680ba888f8894e1d0dac37457077d79fc90d075c714b
-      canonical_tokens: 425
-      extracted_tokens: 425
+      source_sha256: bf5e39fcaa4a7ee7dfb170d0d4290548ff6fe5c58f1a5891a658281e18357d88
+      artifact_sha256: 0e71c8fb7e45216a1cf659c60c6253a6842cd564a81947ed6b58485371e46019
+      extracted_text_sha256: 65517a9aabce17bb57d721368b9541a1022851d2c726fe217bd5f86c9a8dc237
+      canonical_tokens: 438
+      extracted_tokens: 438
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 30
+        readable_paragraphs: 31
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: da6a9f68d0e2e818538080aec2443ed2ed36b9ebb2026451dc7496a3184b6c4c
+        artifact_sha256: 0e71c8fb7e45216a1cf659c60c6253a6842cd564a81947ed6b58485371e46019
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

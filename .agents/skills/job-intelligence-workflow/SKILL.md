@@ -76,6 +76,11 @@ current Codex surface, tell the user and do not publish under that profile.
    Apply the recent-experience and impact/judgment editorial gates in
    `references/prepare.md` before recording that final review. A total bullet
    count never substitutes for a role-by-role hiring-manager review.
+   Every displayed Experience role ending within the five years through the
+   validator's reference month needs at least three distinct, source-backed
+   Experience bullets; older displayed roles need at least two. Technologies
+   lines never count, and no factual-distinctness rule permits filler or a
+   rephrased duplicate.
 7. After the selected drafts for a vacancy are complete, run
    `python run.py validate-application <job-directory-or-vacancy-id> --input
    <draft-directory> [--document <document>]` once as the prepublication check. Omit

@@ -333,14 +333,17 @@ class HostMarkdownDocxConverter:
 
     def preview_digest(self, source: Path) -> str:
         """Bind a preview to exact Markdown, converter script, and DOCX options."""
-        content = (_win_long_path(source).read_bytes() + self.options_path.read_bytes()
-                   + self.script_path.read_bytes() + Path(__file__).read_bytes())
+        content = (
+            _win_long_path(source).read_bytes()
+            + self.options_path.read_bytes()
+            + self.script_path.read_bytes()
+            + Path(__file__).read_bytes()
+        )
         return hashlib.sha256(content).hexdigest()[:20]
 
     def preview_directory(self, source: Path) -> Path:
         vacancy_key = hashlib.sha256(str(source.parent.resolve()).encode("utf-8")).hexdigest()[:12]
         return self.project_root / ".codex-work" / "previews" / vacancy_key / self.preview_digest(source)
-
     def convert(self, source: Path, target: Path) -> None:
         if not op.exists(self.script_path):
             raise ApplicationError(f"Markdown-to-DOCX converter not found: {self.script_path}")
@@ -511,8 +514,12 @@ class ApplicationGenerator:
                 reused = (
                     isinstance(self.client, CodexApplicationDraftClient)
                     and isinstance(self.converter, HostMarkdownDocxConverter)
-                    and _reuse_cv_preview(self.client.directory / "cv.md", staging / "cv.md",
-                                          staging / "cv.docx", self.converter)
+                    and _reuse_cv_preview(
+                        self.client.directory / "cv.md",
+                        staging / "cv.md",
+                        staging / "cv.docx",
+                        self.converter,
+                    )
                 )
                 if not reused:
                     self.converter.convert(staging / "cv.md", staging / "cv.docx")
@@ -840,7 +847,7 @@ def _validate_cv_role_depth(markdown: str, *, reference_date: date | datetime | 
         reference_date.date() if isinstance(reference_date, datetime)
         else reference_date or datetime.now(timezone.utc).date()
     )
-    recent_cutoff = (today.year - 3, today.month)
+    recent_cutoff = (today.year - 5, today.month)
     section = _markdown_section(markdown, "Experience")
     roles: list[tuple[str, list[str]]] = []
     for line in section.splitlines():
@@ -870,7 +877,18 @@ def _validate_cv_role_depth(markdown: str, *, reference_date: date | datetime | 
         if previous_end is not None and end_key > previous_end:
             raise ApplicationError(f"cv_markdown Experience is not in reverse chronology at: {title}")
         previous_end = end_key
-        count = sum(bool(re.match(r"^\s*[-*]\s+\S", line)) for line in lines)
+        bullets = [
+            re.sub(r"^\s*[-*]\s+", "", line).strip()
+            for line in lines
+            if re.match(r"^\s*[-*]\s+\S", line)
+            and not re.match(r"^\s*[-*]\s+(?:\*\*)?Technologies", line, re.IGNORECASE)
+        ]
+        normalized = [re.sub(r"\W+", "", bullet).casefold() for bullet in bullets]
+        if len(normalized) != len(set(normalized)):
+            raise ApplicationError(
+                f"cv_markdown Experience role {title} repeats an Experience bullet"
+            )
+        count = len(bullets)
         required = 3 if end_key >= recent_cutoff else 2
         if count < required:
             raise ApplicationError(
@@ -1772,8 +1790,12 @@ def _find_docx_script() -> Path:
     return candidates[0]
 
 
-def _reuse_cv_preview(draft: Path, staged_source: Path, target: Path,
-                      converter: HostMarkdownDocxConverter) -> bool:
+def _reuse_cv_preview(
+    draft: Path,
+    staged_source: Path,
+    target: Path,
+    converter: HostMarkdownDocxConverter,
+) -> bool:
     """Copy a verified preview only when it exactly matches publication inputs."""
     work = converter.project_root / ".codex-work"
     if not draft.resolve().is_relative_to(work.resolve()):
@@ -1789,11 +1811,14 @@ def _reuse_cv_preview(draft: Path, staged_source: Path, target: Path,
         artifact_hash = hashlib.sha256(_win_long_path(artifact).read_bytes()).hexdigest()
     except (OSError, ValueError) as exc:
         raise ApplicationError(f"CV preview could not be verified: {exc}") from exc
-    if (receipt.get("source_sha256") != source_hash or
-            receipt.get("docx_sha256") != artifact_hash or
-            receipt.get("page_count", 0) < 1 or receipt.get("page_count", 0) > 2 or
-            receipt.get("rendered_pages") != receipt.get("page_count") or
-            receipt.get("experience_bullets", 0) < 1):
+    if (
+        receipt.get("source_sha256") != source_hash
+        or receipt.get("docx_sha256") != artifact_hash
+        or receipt.get("page_count", 0) < 1
+        or receipt.get("page_count", 0) > 2
+        or receipt.get("rendered_pages") != receipt.get("page_count")
+        or receipt.get("experience_bullets", 0) < 1
+    ):
         raise ApplicationError("CV preview no longer matches the staged source or artifact")
     shutil.copyfile(_win_long_path(artifact), _win_long_path(target))
     return True

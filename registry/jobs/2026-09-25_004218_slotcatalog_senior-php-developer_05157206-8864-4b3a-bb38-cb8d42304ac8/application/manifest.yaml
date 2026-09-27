@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-generated_at: '2026-09-27T17:09:11Z'
+generated_at: '2026-09-27T21:15:33Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-    generated_at: '2026-09-27T17:09:11Z'
+    generated_at: '2026-09-27T21:15:33Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 389
-      sha256: sha256:71f643b6f4962930e8c70c19a6a94bba697e7965673c6f57da59caa384cf6150
+      word_count: 401
+      sha256: sha256:3a1682b05413b59b62c5881eba356b3e20cd98754b8f613ba43d04a355e9dafb
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: compact
   grounding:
     schema_version: 1
-    sha256: 9baaf3379cd6554e06738fc09f5e088b86978cf8a17c9a343320ecda4e6818a0
+    sha256: 654d0e147d6e32ea66235c7a3220bea708bf9eb24029ba7e0a8c194da56e28b7
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -79,8 +79,10 @@ quality:
         retracted: 3
         unverified: 9
         verified: 47
-    claim_count: 11
+    claim_count: 12
     evidence_ids:
+    - airslate-letter-debt-release
+    - airslate-letter-lead-scope
     - airslate-logger-general
     - career-15-years
     - crurated-confirmed-crutrade-production
@@ -93,6 +95,48 @@ quality:
     - simple-2026-helpdesk-gateway
     - simple-2026-telephony-privacy
     evidence_entries:
+    - id: airslate-letter-debt-release
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'Technical debt roadmap management
+
+          > Planning the release cycle backlog with the team'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-letter-lead-scope
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to Aug
+          22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning'
+        context_quote: © airSlate, Inc.
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
     - id: airslate-logger-general
       employer: airSlate
       role: Software Developer
@@ -364,119 +408,139 @@ quality:
     semantic_review_required: true
     cv_audit:
       target_role: Senior PHP Developer
-      editorial_review:
-        knowledge_base_version: 1
-        verdict: approve
-        reviewer: Codex CV editorial rebuild review, SlotCatalog
       top_third_evidence_ids:
       - career-15-years
       - crurated-reviewed-throughput
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: Codex CV editorial review, SlotCatalog
       bullet_decisions:
       - text: Owned the privacy-first architecture and backend for a health-domain
           calling platform protecting PII/PHI; it passed formal security and call-recording
           compliance reviews before production.
         decision: keep
-        verdict: approve
+        reason: Demonstrates end-to-end backend ownership and production release under
+          compliance constraints.
         weight: critical
         signal_type: security
-        ordering_rationale: Leads the most recent role with verified architecture,
-          security review, compliance review, and production delivery.
-        reason: Demonstrates ownership of a production backend under material regulatory
-          constraints.
+        ordering_rationale: Leads the most recent role with its strongest verified
+          architecture outcome.
+        verdict: approve
       - text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event
           model and Intercom and Zendesk adapters, enabling the company’s first B2B
           support-AI demonstration.
         decision: keep
-        verdict: approve
+        reason: Distinct integration and product-delivery outcome applicable to service
+          ownership.
         weight: high
         signal_type: architecture
-        ordering_rationale: Follows with a distinct integration-architecture and product-delivery
-          consequence.
-        reason: Shows end-to-end ownership of a scalable backend integration.
+        ordering_rationale: Second as a separate complex backend integration with
+          direct product consequence.
+        verdict: approve
       - text: Automated GDPR data exports across seven sources through a self-service
           administration workflow for creating, tracking, and reviewing requests.
         decision: keep
-        verdict: approve
+        reason: Shows multi-source data service and compliance delivery.
         weight: medium
         signal_type: impact
-        ordering_rationale: Retained as a separate compliance and maintainability
-          outcome after stronger architecture results.
-        reason: Shows responsible data-service delivery without claiming unsupported
-          business impact.
+        ordering_rationale: Third as broader operational scope after stronger architecture
+          results.
+        verdict: approve
       - text: Led the production DataLake and event-analytics architecture, increasing
           throughput by over 10x under technical ownership.
         decision: keep
-        verdict: approve
+        reason: Direct PHP production architecture and measurable scale relevant to
+          SlotCatalog.
         weight: critical
         signal_type: scale
-        ordering_rationale: Leads the PHP consulting role because it has the clearest
-          measured production consequence.
-        reason: Directly supports SlotCatalog's PHP architecture and real production
-          impact emphasis.
+        ordering_rationale: Leads the PHP role with the strongest measured production
+          impact.
+        verdict: approve
       - text: Designed modular event-stream architecture for the production DataLake,
           reducing new analytics-stream setup from several days to under four hours.
         decision: keep
-        verdict: approve
+        reason: Distinct modular architecture and faster analytics delivery.
         weight: high
         signal_type: architecture
-        ordering_rationale: Follows the throughput result with an independent delivery-speed
-          consequence.
-        reason: Demonstrates maintainable architecture and practical technical judgment.
+        ordering_rationale: Second for the independent setup-time consequence.
+        verdict: approve
       - text: Maintained event delivery reliability above 99.9% through fault-tolerant
           routing, retries, and operational monitoring.
         decision: keep
-        verdict: approve
+        reason: Candidate reviewed production reliability measure shows post-release
+          ownership.
         weight: high
         signal_type: reliability
-        ordering_rationale: Third as verified long-term production behavior.
-        reason: Supports ownership after release and production stability.
+        ordering_rationale: Third for sustained service behavior after architecture
+          results.
+        verdict: approve
       - text: Delivered the production Crutrade integration for authentication, account
           linking, collection import and export, purchase-ownership verification,
           and request/response logging.
         decision: keep
-        verdict: approve
+        reason: Confirmed end-to-end production integration scope without invented
+          adoption or revenue effects.
         weight: medium
         signal_type: impact
-        ordering_rationale: Retained after measured delivery and reliability signals
-          because production integration scope is confirmed without a separate business
-          metric.
-        reason: Shows end-to-end feature delivery relevant to SlotCatalog's service
-          ownership.
+        ordering_rationale: Fourth because its outcome is production delivery without
+          a measured effect.
+        verdict: approve
       - text: Reduced peak load on the main database by removing bottlenecks and redistributing
           workload, improving service stability during high-traffic periods.
         decision: keep
-        verdict: approve
+        reason: Relational database performance and real traffic stability are central
+          to the role.
         weight: high
         signal_type: reliability
-        ordering_rationale: Leads airSlate with its strongest verified relational-data
-          performance result.
-        reason: Supports MySQL/PostgreSQL and production-troubleshooting requirements.
+        ordering_rationale: Leads airSlate with its clearest verified system outcome.
+        verdict: approve
       - text: Developed a Laravel/Symfony logger package aligned with the interservice
           communication standard, giving teams a shared logging implementation.
         decision: keep
-        verdict: approve
+        reason: Shared framework component and cross-service logging standard.
         weight: medium
         signal_type: team_influence
-        ordering_rationale: Follows as a distinct shared engineering standard with
-          a less direct external consequence.
-        reason: Supports Laravel/Symfony experience and technical standards contribution.
-    reviewer: Codex CV editorial rebuild review, SlotCatalog
+        ordering_rationale: Second as distinct Laravel/Symfony standardization work.
+        verdict: approve
+      - text: Led epic decomposition, task delegation, and release-backlog planning
+          with the engineering team.
+        decision: keep
+        reason: Verified team leadership scope across decomposition, delegation, and
+          release planning without an unsupported outcome claim.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Third as leadership scope distinct from performance and
+          logging.
+        verdict: approve
+    reviewer: Codex CV editorial review, SlotCatalog
     document_sha256:
-      cv: sha256:71f643b6f4962930e8c70c19a6a94bba697e7965673c6f57da59caa384cf6150
+      cv: sha256:3a1682b05413b59b62c5881eba356b3e20cd98754b8f613ba43d04a355e9dafb
     requirements:
-    - requirement: 5+ years of PHP production experience
+    - requirement: Production PHP experience
       importance: critical
       basis: stated
       jd_quote: 5+ years of PHP experience in production environments
       match: strong
-      candidate_quote: 15+ years of experience
+      candidate_quote: Backend engineer with 15+ years of experience building and
+        improving production
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
       - career-15-years
-    - requirement: Laravel and/or Symfony in large codebases
-      importance: critical
+    - requirement: English C1-C2
+      importance: high
+      basis: stated
+      jd_quote: English C1-C2 is a must
+      match: unknown
+      candidate_quote: ''
+      risk: Formal C1-C2 assessment is unverified.
+      mitigation: Confirm current speaking and writing level before submission.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Laravel and Symfony in large codebases
+      importance: high
       basis: stated
       jd_quote: Laravel and/or Symfony
       match: strong
@@ -486,38 +550,17 @@ quality:
       hard_blocker: false
       evidence_ids:
       - airslate-logger-general
-    - requirement: English C1-C2 proficiency
+    - requirement: Production stability and troubleshooting
       importance: high
       basis: stated
-      jd_quote: English C1-C2 is a must
-      match: unknown
-      candidate_quote: ''
-      risk: A formal C1-C2 assessment is not verified.
-      mitigation: Confirm current level before submission.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: PostgreSQL / MySQL and relational data modeling
-      importance: high
-      basis: stated
-      jd_quote: PostgreSQL / MySQL
-      match: partial
-      candidate_quote: peak load on the main database
-      risk: Direct database stability is verified; complete relational-data-modeling
-        scope is not.
-      mitigation: Present the verified result without widening it.
+      jd_quote: Ability to diagnose and resolve production issues under pressure
+      match: strong
+      candidate_quote: improving service stability during high-traffic periods
+      risk: ''
+      mitigation: ''
       hard_blocker: false
       evidence_ids:
       - database-reliability
-    - requirement: Practicable usage of admin panels builder filament (v.5)
-      importance: preferred
-      basis: stated
-      jd_quote: Practicable usage of admin panels builder filament (v.5)
-      match: missing
-      candidate_quote: ''
-      risk: No verified Filament v5 experience.
-      mitigation: Do not claim it; clarify whether it is essential.
-      hard_blocker: false
-      evidence_ids: []
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
@@ -538,50 +581,75 @@ quality:
         compliance reviews before production.
       evidence_ids:
       - simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model
         and Intercom and Zendesk adapters, enabling the company’s first B2B support-AI
         demonstration.
       evidence_ids:
       - simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Automated GDPR data exports across seven sources through a self-service
         administration workflow for creating, tracking, and reviewing requests.
       evidence_ids:
       - simple-2026-gdpr
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Led the production DataLake and event-analytics architecture, increasing
         throughput by over 10x under technical ownership.
       evidence_ids:
       - crurated-reviewed-throughput
       - crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Designed modular event-stream architecture for the production DataLake,
         reducing new analytics-stream setup from several days to under four hours.
       evidence_ids:
       - crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Maintained event delivery reliability above 99.9% through fault-tolerant
         routing, retries, and operational monitoring.
       evidence_ids:
       - crurated-reviewed-delivery-reliability
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Delivered the production Crutrade integration for authentication, account
         linking, collection import and export, purchase-ownership verification, and
         request/response logging.
       evidence_ids:
       - crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Reduced peak load on the main database by removing bottlenecks and redistributing
         workload, improving service stability during high-traffic periods.
       evidence_ids:
       - database-reliability
+      employer: airSlate
+      role: Software Developer
     - document: cv
       text: Developed a Laravel/Symfony logger package aligned with the interservice
         communication standard, giving teams a shared logging implementation.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:60626d58ec9fa3b86a2133f2512635e80552f069042a6cb949a8ab474a45c5ce
+      employer: airSlate
+      role: Software Developer
+    - document: cv
+      text: Led epic decomposition, task delegation, and release-backlog planning
+        with the engineering team.
+      evidence_ids:
+      - airslate-letter-lead-scope
+      - airslate-letter-debt-release
+      employer: airSlate
+  declaration_sha256: sha256:344ca31716b5177706dcfaa99811737bb37ed6ffdbd24a4c4fd13de8d38e3e40
   method:
     workflow: two-wave
     final_review:
@@ -589,32 +657,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 455
-      sha256: sha256:28ba772b055bbecc85f8fdf923d59b34655204c7a59435ec15b741bd55ad29e9
+      word_count: 721
+      sha256: sha256:c099b0f256df30058ac250373837540ca0edcc150398e7f1d7ae47cd7382f3db
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 71f643b6f4962930e8c70c19a6a94bba697e7965673c6f57da59caa384cf6150
-      artifact_sha256: 739402486cf58b26cbbb2ba070fb7c078e0fc491127dd9f052b890c537e8de63
-      extracted_text_sha256: 472a28c5ab0865091ad20578e4334b547b1a2b84bd53d6da83b363301734045e
-      canonical_tokens: 410
-      extracted_tokens: 410
+      source_sha256: 3a1682b05413b59b62c5881eba356b3e20cd98754b8f613ba43d04a355e9dafb
+      artifact_sha256: c45eb391b445b566fa8394e1d1567afc78f8d245f61139aa33a30bfed426dac2
+      extracted_text_sha256: b6f865fe31dc01b600b73f1275c06e2e0e80e85ae215614effc6b34907afe21a
+      canonical_tokens: 423
+      extracted_tokens: 423
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 30
+        readable_paragraphs: 31
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 739402486cf58b26cbbb2ba070fb7c078e0fc491127dd9f052b890c537e8de63
+        artifact_sha256: c45eb391b445b566fa8394e1d1567afc78f8d245f61139aa33a30bfed426dac2
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

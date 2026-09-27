@@ -40,6 +40,7 @@ February 2021 – August 2023
 
 - Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods.
 - Developed a Laravel/Symfony logger package aligned with the interservice communication standard, giving teams a shared logging implementation.
+- Led epic decomposition, task delegation, and release-backlog planning with the engineering team.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
 

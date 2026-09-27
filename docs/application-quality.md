@@ -219,8 +219,11 @@ that a claimed consequence is true or that two bullets represent distinct work;
 the editor must confirm both against verified candidate evidence. A rejected
 bullet stays out of the CV rather than being padded or split to reach a count.
 The validator also requires reverse chronology and at least two bullets for
-each displayed role, rising to three for roles ending within three years of
-preparation. These are rejection thresholds, not prompts to invent or split
+each displayed role, rising to three for roles ending within five years of
+preparation (including the explicit five-year cutoff month). It counts only
+Experience bullets, never a Technologies line, and rejects a mechanically
+detectable repeated bullet within the same role. These are rejection thresholds,
+not prompts to invent or split
 achievements. Revisit sources and omit an inessential older role or pause the
 package when distinct facts cannot support the threshold.
 When an imported candidate source offers useful but unconfirmed figures, present

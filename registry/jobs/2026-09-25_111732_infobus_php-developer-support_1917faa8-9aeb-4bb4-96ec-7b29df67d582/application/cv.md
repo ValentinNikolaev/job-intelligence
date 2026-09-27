@@ -42,6 +42,7 @@ February 2021 – August 2023
 
 - Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods.
 - Investigated production issues through logs, monitoring, and SRE dashboards, then delivered fixes and operational improvements.
+- Built a product-wide Laravel/Symfony logger package aligned with the interservice communication standard, giving backend services a shared logging contract.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
 

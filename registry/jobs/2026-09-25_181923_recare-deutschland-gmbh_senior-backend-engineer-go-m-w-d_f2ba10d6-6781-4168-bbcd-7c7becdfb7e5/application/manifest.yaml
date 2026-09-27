@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:ccfe2c023a3a0409f57e1be3a5b8d330c770df6bfbd56b8bffb8886b13e8a154
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_recaredeutschland_SeniorBackendEngineerGoMWD
-generated_at: '2026-09-27T16:50:55Z'
+generated_at: '2026-09-27T21:15:47Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:ccfe2c023a3a0409f57e1be3a5b8d330c770df6bfbd56b8bffb8886b13e8a154
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_recaredeutschland_SeniorBackendEngineerGoMWD
-    generated_at: '2026-09-27T16:50:55Z'
+    generated_at: '2026-09-27T21:15:47Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:ccfe2c023a3a0409f57e1be3a5b8d330c770df6bfbd56b8bffb8886b13e8a154
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 400
-      sha256: sha256:6d14c7bac7f83f80b8168193b9b91fc0596fdc07774342a13732d012914c625a
+      word_count: 420
+      sha256: sha256:98666974c63df8a57eb91af977a0166256ef232a0ef80cef8289cfce267db7b5
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 56f7f292ebd24acf419492bf681042e3a1f7e43cd075f00b86c8bacc16217cc0
+    sha256: 62a19c75f378edea30bd094e896a6b2bdb0c7226c6e8746f98c8e5ca003c2e57
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -79,8 +79,10 @@ quality:
         retracted: 3
         unverified: 9
         verified: 47
-    claim_count: 11
+    claim_count: 12
     evidence_ids:
+    - airslate-letter-operations-people
+    - airslate-logger-general
     - airslate-production-fixes
     - crurated-confirmed-crutrade-production
     - crurated-confirmed-datalake-production
@@ -92,6 +94,76 @@ quality:
     - simple-2026-telephony-lawful-calling
     - simple-2026-telephony-privacy
     evidence_entries:
+    - id: airslate-letter-operations-people
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'On-call (health check, duty development, sos-cases investigation)
+
+          > Knowledge sharing in the technical and domain area
+
+          > Technical on-boarding new members
+
+          > Participation in Personal Development Plans
+
+          > Conducting technical interview for new team members.'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-logger-general
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Developed a Laravel/Symfony-based product-wide logger package, adhering\
+          \ to\n  interservice communication standard."
+        context_quote: "### airSlate\n\n#### Technical Lead\n\nJanuary 2023 - August\
+          \ 2023 (8 months)  \nKyiv, Kyiv City, Ukraine\n\n- Played a key role in\
+          \ Agile planning with Product Management and Development,\n  building feature\
+          \ road maps and supporting release plans.\n- Was responsible for delivering\
+          \ team assignments on all stages of the project from\n  draft to production\
+          \ release.\n- Performed task evaluation, planning and distribution between\
+          \ team members in\n  accordance with Planning Intervals (PI).\n- Defined\
+          \ and tracked key performance metrics for the development team, which\n\
+          \  increased feature delivery rate by approx. 20%.\n- Conducted over 20\
+          \ technical interviews for different positions within the company.\n\n####\
+          \ Senior Software Developer\n\nFebruary 2021 - January 2023 (2 years)  \n\
+          Kyiv, Kyiv City, Ukraine\n\n- Migrated managed services from ECS to Kubernetes.\
+          \ Prepared infrastructure for\n  launching services in Kubernetes (Helm\
+          \ charts, GitHub Actions, ArgoCD), leading to\n  30% cost cutting and over\
+          \ 20% performance boost.\n- Lowered the maximum workload on the main database\
+          \ to 65% to avoid interruptions in\n  the product's service during prime\
+          \ time, resulting in a 23% reduction in operational\n  expenses."
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      attribution_source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex cross-source review
+        reviewed_at: '2026-09-26'
+        method: Compared the exact logger excerpt in candidate LinkedIn export with
+          the generalized Software Developer attribution in candidate CV; no LinkedIn
+          metrics used.
+      review_notes: Use the generalized Software Developer/Programming Team Lead CV
+        heading; the imported LinkedIn Senior title is not asserted.
     - id: airslate-production-fixes
       employer: airSlate
       role: Software Developer
@@ -328,142 +400,143 @@ quality:
     - cv_bullet_coverage
     semantic_review_required: true
     cv_audit:
-      target_role: Senior Backend Engineer — Go, secure integrations and reliability
+      target_role: Senior Backend Engineer - Go domain ownership and reliable delivery
       top_third_evidence_ids:
       - simple-2026-telephony-privacy
       - simple-2026-helpdesk-gateway
       editorial_review:
         knowledge_base_version: 1
         verdict: approve
-        reviewer: Codex CV editorial review (terra_medium)
+        reviewer: Codex CV editorial self-review
       bullet_decisions:
       - text: Architected and released a health-domain calling platform that protected
           sensitive customer data and cleared formal security and call-recording compliance
           review.
         decision: keep
-        verdict: approve
         weight: critical
         signal_type: security
-        ordering_rationale: Strongest security outcome and production architecture
-          evidence.
-        reason: Verified formal review and release show senior judgment.
+        ordering_rationale: Closest health-domain ownership and release outcome leads
+          the role.
+        reason: Candidate directly confirmed architecture ownership and production
+          security review.
+        verdict: approve
       - text: Established backend-owned lawful-calling controls for customer contact,
           ensuring opt-outs and restricted calling periods were enforced before calls
           were placed.
         decision: keep
-        verdict: approve
         weight: high
         signal_type: security
-        ordering_rationale: Direct operational control follows the reviewed release.
-        reason: Evidence supports lawful contact controls without mechanics.
+        ordering_rationale: Independent governance capability follows the platform
+          release.
+        reason: Documented backend controls establish a distinct compliance consequence.
+        verdict: approve
       - text: Created a multi-tenant Go helpdesk gateway with a vendor-neutral event
           model and production adapters, supporting the company’s first B2B support-AI
           demonstration.
         decision: keep
-        verdict: approve
         weight: high
         signal_type: architecture
-        ordering_rationale: Go domain architecture and product consequence follow
-          security outcomes.
-        reason: Evidence confirms gateway delivery and B2B demo.
+        ordering_rationale: Reusable Go domain architecture follows privacy work.
+        reason: Supports Go ownership and integration design at production scope.
+        verdict: approve
       - text: Recovered ticket processing from external API degradation by making
           incomplete work observable and avoiding fatal processing outcomes.
         decision: keep
-        verdict: approve
-        weight: high
+        weight: medium
         signal_type: reliability
-        ordering_rationale: Reliability result is distinct from gateway architecture.
-        reason: Evidence supports diagnosed degradation and resilience change.
+        ordering_rationale: Operational resilience follows principal architecture
+          signals.
+        reason: Candidate documented cause and recovery design.
+        verdict: approve
       - text: Consolidated overlapping data-to-support pipelines into one reusable
           processing engine, simplifying maintenance while preserving uninterrupted
           delivery.
         decision: keep
-        verdict: approve
         weight: medium
         signal_type: architecture
-        ordering_rationale: Maintainability improvement completes the recent role.
-        reason: Evidence confirms consolidation and no downtime.
+        ordering_rationale: Simplification result completes the current role without
+          duplicating the gateway.
+        reason: Candidate documented consolidation and continuity.
+        verdict: approve
       - text: Technically owned the production DataLake and event-analytics capability
           used for platform data flows.
         decision: keep
-        verdict: approve
         weight: high
         signal_type: architecture
-        ordering_rationale: Primary production domain ownership leads the consulting
-          role.
-        reason: Evidence confirms technical ownership and production use.
+        ordering_rationale: Broadest data domain ownership leads the consulting role.
+        reason: Candidate directly confirmed technical ownership in production.
+        verdict: approve
       - text: Built production parallel publishing for event versions so consumers
           could transition schemas without interrupting delivery.
         decision: keep
-        verdict: approve
         weight: high
         signal_type: reliability
-        ordering_rationale: Compatibility and delivery continuity follow data-domain
-          ownership.
-        reason: Evidence confirms parallel event-version publication.
+        ordering_rationale: Compatibility delivery follows data domain ownership.
+        reason: Candidate confirmed distinct parallel-version publication.
+        verdict: approve
       - text: Owned the Crutrade production integration, covering authentication,
           account linking, collection exchange, purchase verification, and operational
           logging.
         decision: keep
-        verdict: approve
         weight: medium
         signal_type: architecture
-        ordering_rationale: Integration ownership adds a distinct production boundary.
-        reason: Evidence confirms full technical ownership.
+        ordering_rationale: Separate partner integration rounds out the role.
+        reason: Demonstrates independent production integration ownership.
+        verdict: approve
       - text: Removed database bottlenecks and redistributed workload, reducing peak
           pressure and improving stability during high-traffic periods.
         decision: keep
-        verdict: approve
         weight: high
         signal_type: reliability
-        ordering_rationale: Best supported airSlate consequence leads the role.
-        reason: Directly maps to database-slowdown responsibility.
+        ordering_rationale: Most relevant database outcome leads airSlate.
+        reason: Direct source supports a service stability consequence.
+        verdict: approve
       - text: Resolved production issues using monitoring and SRE dashboards, translating
           diagnosis into fixes and operational improvements.
         decision: keep
-        verdict: approve
         weight: medium
         signal_type: reliability
-        ordering_rationale: Distinct operational proof follows the database outcome.
-        reason: Verified production diagnosis and fixes.
-    reviewer: Codex CV editorial review (terra_medium)
+        ordering_rationale: Production diagnosis follows database optimization.
+        reason: Candidate CV documents operational fixes.
+        verdict: approve
+      - text: Built a product-wide Laravel/Symfony logger package aligned with the
+          interservice communication standard, establishing a shared logging component
+          across services.
+        decision: keep
+        weight: medium
+        signal_type: architecture
+        ordering_rationale: Distinct common component rounds out airSlate with architecture
+          depth.
+        reason: Verified source establishes package scope and interservice standard
+          without unsupported impact.
+        verdict: approve
+    reviewer: Codex CV editorial self-review
     document_sha256:
-      cv: sha256:6d14c7bac7f83f80b8168193b9b91fc0596fdc07774342a13732d012914c625a
+      cv: sha256:98666974c63df8a57eb91af977a0166256ef232a0ef80cef8289cfce267db7b5
     requirements:
-    - requirement: Production Golang ownership
-      importance: critical
-      basis: stated
-      jd_quote: production experience in Golang, or another C family language with
-        a real, demonstrable ability to operate in Go without hand holding
-      match: strong
-      candidate_quote: The candidate owned the architecture and
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - simple-2026-telephony-privacy
-    - requirement: Architecture decisions
+    - requirement: Production Go domain ownership
       importance: critical
       basis: stated
       jd_quote: Own a domain inside our core Go codebase, contributing to architecture
         decisions and code quality within your area
       match: strong
-      candidate_quote: The candidate owned the architecture and
+      candidate_quote: New Go service abstracting helpdesk vendors
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
-      - simple-2026-telephony-privacy
-    - requirement: CI and testing frameworks
+      - simple-2026-helpdesk-gateway
+    - requirement: Supporting and mentoring engineers
       importance: high
       basis: stated
-      jd_quote: You should have experience with CI and testing frameworks
-      match: unknown
-      candidate_quote: ''
-      risk: No source identifies a particular test framework.
-      mitigation: Confirm framework-specific depth.
+      jd_quote: supporting and mentoring other engineers
+      match: partial
+      candidate_quote: Technical on-boarding new members
+      risk: Direct mentoring outcomes are not verified.
+      mitigation: Confirm a concrete example before interview.
       hard_blocker: false
-      evidence_ids: []
+      evidence_ids:
+      - airslate-letter-operations-people
     - requirement: Database slowdown analysis
       importance: high
       basis: stated
@@ -475,24 +548,15 @@ quality:
       hard_blocker: false
       evidence_ids:
       - database-reliability
-    - requirement: Postgres and GORM
-      importance: meaningful
+    - requirement: Healthcare interoperability standards
+      importance: preferred
       basis: stated
-      jd_quote: Postgres.
+      jd_quote: Healthcare experience is a bonus, not a requirement. FHIR, HL7, or
+        DICOM exposure is great to have
       match: unknown
       candidate_quote: ''
-      risk: No verified Postgres or GORM evidence.
-      mitigation: Confirm directly.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: Healthcare standards
-      importance: low_signal
-      basis: stated
-      jd_quote: Healthcare experience is a bonus, not a requirement.
-      match: missing
-      candidate_quote: ''
-      risk: No verified FHIR, HL7, or DICOM experience.
-      mitigation: Present verified privacy delivery only.
+      risk: Specific healthcare standards are unconfirmed.
+      mitigation: Do not claim FHIR, HL7 or DICOM.
       hard_blocker: false
       evidence_ids: []
     evidence_bank_path: registry/evidence/achievements.yaml
@@ -500,10 +564,11 @@ quality:
     claims:
     - document: cv
       text: My recent work combines Go backend design with production delivery, security
-        review, integration boundaries, and failure diagnosis
+        review, integration boundaries, and failure diagnosis.
       evidence_ids:
       - simple-2026-telephony-privacy
       - simple-2026-helpdesk-gateway
+      - simple-2026-cron-resilience
       technologies: []
     - document: cv
       text: '- Architected and released a health-domain calling platform that protected
@@ -587,10 +652,19 @@ quality:
         diagnosis into fixes and operational improvements.'
       evidence_ids:
       - airslate-production-fixes
+      - airslate-letter-operations-people
+      employer: airSlate
+      technologies: []
+    - document: cv
+      text: '- Built a product-wide Laravel/Symfony logger package aligned with the
+        interservice communication standard, establishing a shared logging component
+        across services.'
+      evidence_ids:
+      - airslate-logger-general
       employer: airSlate
       role: Software Developer
       technologies: []
-  declaration_sha256: sha256:50031bc84abdc74b4f7d4f7758504f90b272dbf605db9e1a8add65ca5c466df6
+  declaration_sha256: sha256:0f78a0b95aeecf99c5cf6b558d1b187264499ddcdf37c678a8ff8ebe65ba5b86
   method:
     workflow: two-wave
     final_review:
@@ -598,32 +672,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 514
-      sha256: sha256:fbb7da42717a921782417b6e0f1928f7be7cbb476c27ba69ca84085790172a1d
+      word_count: 808
+      sha256: sha256:8e4d6412bca7059423fc0bf862c2b6c10ba273e27798293ff0010794cbcc054b
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 6d14c7bac7f83f80b8168193b9b91fc0596fdc07774342a13732d012914c625a
-      artifact_sha256: 21ff06c73dea1482bc7a0ded047b021cae5b1484711e579e74f7cfc1a9296063
-      extracted_text_sha256: de70eb6a95297a6963e0606de56943d9e9301d0bf5a57b322412ba11095511fe
-      canonical_tokens: 419
-      extracted_tokens: 419
+      source_sha256: 98666974c63df8a57eb91af977a0166256ef232a0ef80cef8289cfce267db7b5
+      artifact_sha256: 06bb071a385f776c2a258e8a44f0f49668cbf79f67f2fd5ad7a08a8e812d1bd3
+      extracted_text_sha256: fd2160722afea3246e8b4615895d5282e134e8a8036ff8e58b48fb5c6a615017
+      canonical_tokens: 440
+      extracted_tokens: 440
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 31
+        readable_paragraphs: 32
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 21ff06c73dea1482bc7a0ded047b021cae5b1484711e579e74f7cfc1a9296063
+        artifact_sha256: 06bb071a385f776c2a258e8a44f0f49668cbf79f67f2fd5ad7a08a8e812d1bd3
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

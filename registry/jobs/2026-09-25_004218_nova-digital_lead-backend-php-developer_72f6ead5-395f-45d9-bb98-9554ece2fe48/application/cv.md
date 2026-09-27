@@ -17,7 +17,7 @@ Backend engineer and technical lead with 15+ years building PHP and Go productio
 ## Experience
 
 ### Simple.life / Simple App — Software Developer
-November 2023 – July 2026
+November 2023 – 2026
 
 - Architected and released a health-domain calling platform with privacy-first PII/PHI protection; formal security and call-recording compliance reviews approved its production release.
 - Designed backend-owned lawful-calling controls for time zones, holidays, do-not-call rules and opt-outs, ensuring calls could not bypass customer-contact safeguards.
@@ -38,11 +38,12 @@ August 2024 – January 2026
 
 **Technologies:** PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
-### airSlate — Software Developer
+### airSlate — Software Developer / Programming Team Lead
 February 2021 – August 2023
 
 - Reduced peak pressure on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods.
 - Built a Laravel/Symfony product-wide logger package aligned with the interservice communication standard, creating a shared service-level component.
+- Led epic decomposition, task delegation, and release-backlog planning with the engineering team.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
 

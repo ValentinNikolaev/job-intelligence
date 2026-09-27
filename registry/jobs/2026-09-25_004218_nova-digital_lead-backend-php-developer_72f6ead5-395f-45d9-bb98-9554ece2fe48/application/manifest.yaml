@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:dc2242e063a56d98f32162fc7c04c8b0533e69f283b7b81fe613b77fe2b382cb
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_novadigital_LeadBackendPHPDeveloper
-generated_at: '2026-09-27T16:50:49Z'
+generated_at: '2026-09-27T21:15:37Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:dc2242e063a56d98f32162fc7c04c8b0533e69f283b7b81fe613b77fe2b382cb
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_novadigital_LeadBackendPHPDeveloper
-    generated_at: '2026-09-27T16:50:49Z'
+    generated_at: '2026-09-27T21:15:37Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:dc2242e063a56d98f32162fc7c04c8b0533e69f283b7b81fe613b77fe2b382cb
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 418
-      sha256: sha256:b6828b0b044616b678196fb94284ff839e10bc0f624f2d32a19b80f58a349012
+      word_count: 432
+      sha256: sha256:9a2f2e60c6415577221ea0c2b9ea469931c502780ed74091dcbbcecabb8fc7f8
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 93c01a1153b9bbb75204523b75ae0c0a12073c15df4cf3d7a5c4bac5a05e7aeb
+    sha256: d6a864557d2c5aeb0251953fe8ee74392daf9f42e0c5fefba063e66d5e1c212c
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -81,7 +81,10 @@ quality:
         verified: 47
     claim_count: 14
     evidence_ids:
+    - airslate-letter-debt-release
+    - airslate-letter-lead-scope
     - airslate-logger-general
+    - airslate-team-lead
     - career-15-years
     - crurated-confirmed-crutrade-production
     - crurated-confirmed-datalake-production
@@ -97,6 +100,48 @@ quality:
     - simple-2026-telephony-lawful-calling
     - simple-2026-telephony-privacy
     evidence_entries:
+    - id: airslate-letter-debt-release
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'Technical debt roadmap management
+
+          > Planning the release cycle backlog with the team'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-letter-lead-scope
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to Aug
+          22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning'
+        context_quote: © airSlate, Inc.
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
     - id: airslate-logger-general
       employer: airSlate
       role: Software Developer
@@ -138,6 +183,30 @@ quality:
           metrics used.
       review_notes: Use the generalized Software Developer/Programming Team Lead CV
         heading; the imported LinkedIn Senior title is not asserted.
+    - id: airslate-team-lead
+      employer: airSlate
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Played a key role in Agile planning with Product Management and\
+          \ Development,\n  building feature road maps and supporting release plans.\n\
+          - Was responsible for delivering team assignments on all stages of the project\
+          \ from\n  draft to production release.\n- Performed task evaluation, planning\
+          \ and distribution between team members in\n  accordance with Planning Intervals\
+          \ (PI)."
+        context_quote: '### airSlate
+
+
+          #### Technical Lead'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Technical Lead
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
     - id: career-15-years
       employer: null
       source:
@@ -467,7 +536,7 @@ quality:
       target_role: Nova Digital Lead Backend PHP Developer
       top_third_evidence_ids:
       - career-15-years
-      - simple-2026-telephony-privacy
+      - airslate-team-lead
       editorial_review:
         knowledge_base_version: 1
         verdict: approve
@@ -477,114 +546,139 @@ quality:
           PII/PHI protection; formal security and call-recording compliance reviews
           approved its production release.
         decision: keep
-        reason: Security-reviewed production architecture is the strongest recent
-          outcome.
+        reason: A production architecture release with confirmed security and compliance
+          consequence.
         weight: critical
         signal_type: security
-        ordering_rationale: Leads the role because it combines ownership, risk control
-          and release.
+        ordering_rationale: The strongest recent architecture and release result leads.
         verdict: approve
       - text: Designed backend-owned lawful-calling controls for time zones, holidays,
           do-not-call rules and opt-outs, ensuring calls could not bypass customer-contact
           safeguards.
         decision: keep
-        reason: Shows consequential policy design for a sensitive production service.
+        reason: Separate backend policy decision with customer-contact consequence.
         weight: high
         signal_type: security
-        ordering_rationale: Follows the release with the customer-protection consequence.
+        ordering_rationale: Follows the released platform with its distinct safeguard.
         verdict: approve
       - text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event
           model, enabling the first B2B demonstration of the support-AI product.
         decision: keep
-        reason: Demonstrates reusable integration architecture and delivery.
+        reason: Direct service integration with an observed product demonstration.
         weight: high
         signal_type: architecture
-        ordering_rationale: Places integration architecture before supporting workflows.
+        ordering_rationale: Integration architecture follows the security-critical
+          result.
         verdict: approve
       - text: Delivered self-service GDPR exports across seven data sources, giving
           administration a tracked workflow for export requests.
         decision: keep
-        reason: Shows compliance-oriented delivery across systems.
+        reason: Cross-system compliance delivery with a concrete administrative workflow.
         weight: medium
         signal_type: impact
-        ordering_rationale: Distinct compliance outcome after core platform work.
+        ordering_rationale: Broader backend delivery follows the central architecture
+          story.
         verdict: approve
       - text: Built evaluation data for the production support agent from conversations,
           actions and subscription-state snapshots.
         decision: keep
-        reason: Supports Nova's AI-oriented backend remit without vendor overclaiming.
+        reason: Supported AI evaluation infrastructure relevant to the posting.
         weight: medium
         signal_type: architecture
-        ordering_rationale: Last because it is enabling infrastructure rather than
-          a released risk-control result.
+        ordering_rationale: Relevant AI infrastructure closes the role without implying
+          model ownership.
         verdict: approve
       - text: Owned production DataLake and event-analytics architecture, increasing
           throughput by over 10x under documented technical ownership.
         decision: keep
-        reason: Direct PHP scale outcome for the target role.
+        reason: Direct PHP engagement ownership and measured analytics scale.
         weight: critical
         signal_type: scale
-        ordering_rationale: Leads CRURATED with its highest measurable system result.
+        ordering_rationale: Strongest production PHP and architecture proof leads.
         verdict: approve
       - text: Reduced setup of a new analytics stream from several days to under four
           hours through modular stream design.
         decision: keep
-        reason: Shows architecture decision with delivery consequence.
+        reason: Verified modular delivery speed for new product streams.
         weight: high
         signal_type: impact
-        ordering_rationale: Follows scale with the strongest time-to-delivery outcome.
+        ordering_rationale: Follows platform scale with its separate delivery-speed
+          result.
         verdict: approve
       - text: Maintained event-delivery reliability above 99.9% through fault-tolerant
           routing, retry design and operational monitoring.
         decision: keep
-        reason: Establishes reliability ownership for production events.
+        reason: Measured production event reliability.
         weight: high
         signal_type: reliability
-        ordering_rationale: Reliability follows throughput and delivery impact.
+        ordering_rationale: Production operation follows architecture and stream onboarding.
         verdict: approve
       - text: Designed versioned event contracts and parallel publication so consumers
           could migrate without blocking new event data.
         decision: keep
-        reason: Evidence of cross-service architecture judgment.
+        reason: Supported distributed-service evolution and migration path.
         weight: medium
         signal_type: architecture
-        ordering_rationale: Distinct interoperability proof after measured outcomes.
+        ordering_rationale: Contract judgment follows higher-impact measured outcomes.
         verdict: approve
       - text: Owned a production partner integration covering authentication, account
           linking, collection exchange and purchase-ownership verification.
         decision: keep
-        reason: Relevant production integration ownership without unsupported business
-          impact.
+        reason: Distinct API and legacy integration ownership in production.
         weight: medium
         signal_type: impact
-        ordering_rationale: Last as a concrete integration scope without a measured
-          consequence.
+        ordering_rationale: Integration scope closes the role after the event platform.
         verdict: approve
       - text: Reduced peak pressure on the main database by removing bottlenecks and
           redistributing workload, improving service stability during high-traffic
           periods.
         decision: keep
-        reason: Verified operational-stability outcome.
+        reason: Confirmed database stability consequence under peak load.
         weight: high
         signal_type: reliability
-        ordering_rationale: Leads the compact role with its concrete consequence.
+        ordering_rationale: Strongest airSlate result leads the role.
         verdict: approve
       - text: Built a Laravel/Symfony product-wide logger package aligned with the
           interservice communication standard, creating a shared service-level component.
         decision: keep
-        reason: Direct Laravel/Symfony signal for the vacancy.
+        reason: Direct framework work and cross-service standardization.
         weight: medium
         signal_type: team_influence
-        ordering_rationale: Follows stability because its scope is standardization.
+        ordering_rationale: Shared component follows the stronger stability outcome.
+        verdict: approve
+      - text: Led epic decomposition, task delegation, and release-backlog planning
+          with the engineering team.
+        decision: keep
+        reason: Distinct documented leadership scope without an unsupported outcome
+          claim.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Team delivery ownership is third because no measured product
+          result is documented.
         verdict: approve
     reviewer: Codex CV editorial self-review
     document_sha256:
-      cv: sha256:b6828b0b044616b678196fb94284ff839e10bc0f624f2d32a19b80f58a349012
+      cv: sha256:9a2f2e60c6415577221ea0c2b9ea469931c502780ed74091dcbbcecabb8fc7f8
     requirements:
-    - requirement: Laravel or Symfony
+    - requirement: PHP technical leadership
       importance: critical
       basis: stated
-      jd_quote: Глибокі знання **Laravel** чи **Symfony**
+      jd_quote: Від 5 років комерційного досвіду розробки на PHP (7-8 версії) та успішний
+        досвід управління командою або технічного лідерства (Tech/Team Lead).
+      match: strong
+      candidate_quote: Played a key role in Agile planning with Product Management
+        and Development
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - airslate-team-lead
+      - career-15-years
+    - requirement: Laravel or Symfony
+      importance: high
+      basis: stated
+      jd_quote: Глибокі знання **Laravel** чи **Symfony**, досвід швидкого розгортання
+        проєктів за допомогою сучасних інструментів екосистеми.
       match: strong
       candidate_quote: Developed a Laravel/Symfony-based product-wide logger package
       risk: ''
@@ -592,18 +686,6 @@ quality:
       hard_blocker: false
       evidence_ids:
       - airslate-logger-general
-    - requirement: Event-driven architecture
-      importance: high
-      basis: stated
-      jd_quote: Досвід роботи в логістиці, стартапах, e-commerce або фінтех-проєктах.
-      match: strong
-      candidate_quote: Define a robust, versioned event schema to enforce consistency
-        across teams
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - crurated-event-design
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
@@ -612,77 +694,102 @@ quality:
         production systems.
       evidence_ids:
       - career-15-years
-    - document: cv
-      text: Recent work combines architecture ownership for privacy-sensitive health-domain
-        services, production event analytics, PHP integrations, and operational reliability.
-      evidence_ids:
-      - simple-2026-telephony-privacy
-      - crurated-confirmed-datalake-production
+      - airslate-team-lead
     - document: cv
       text: Architected and released a health-domain calling platform with privacy-first
         PII/PHI protection; formal security and call-recording compliance reviews
         approved its production release.
       evidence_ids:
       - simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Designed backend-owned lawful-calling controls for time zones, holidays,
         do-not-call rules and opt-outs, ensuring calls could not bypass customer-contact
         safeguards.
       evidence_ids:
       - simple-2026-telephony-lawful-calling
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model,
         enabling the first B2B demonstration of the support-AI product.
       evidence_ids:
       - simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Delivered self-service GDPR exports across seven data sources, giving
         administration a tracked workflow for export requests.
       evidence_ids:
       - simple-2026-gdpr
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Built evaluation data for the production support agent from conversations,
         actions and subscription-state snapshots.
       evidence_ids:
       - simple-2026-llm-agent
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Owned production DataLake and event-analytics architecture, increasing
         throughput by over 10x under documented technical ownership.
       evidence_ids:
-      - crurated-reviewed-throughput
       - crurated-confirmed-datalake-production
+      - crurated-reviewed-throughput
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Reduced setup of a new analytics stream from several days to under four
         hours through modular stream design.
       evidence_ids:
       - crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Maintained event-delivery reliability above 99.9% through fault-tolerant
         routing, retry design and operational monitoring.
       evidence_ids:
       - crurated-reviewed-delivery-reliability
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Designed versioned event contracts and parallel publication so consumers
         could migrate without blocking new event data.
       evidence_ids:
       - crurated-event-design
       - crurated-confirmed-event-version-production
+      employer: CRURATED
     - document: cv
       text: Owned a production partner integration covering authentication, account
         linking, collection exchange and purchase-ownership verification.
       evidence_ids:
       - crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Reduced peak pressure on the main database by removing bottlenecks and
         redistributing workload, improving service stability during high-traffic periods.
       evidence_ids:
       - database-reliability
+      employer: airSlate
+      role: Software Developer
     - document: cv
       text: Built a Laravel/Symfony product-wide logger package aligned with the interservice
         communication standard, creating a shared service-level component.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:749b8ad4dda8006fafee82209f5e2384957020d7e3d6bfdc72da68fc711864f6
+      employer: airSlate
+      role: Software Developer
+    - document: cv
+      text: Led epic decomposition, task delegation, and release-backlog planning
+        with the engineering team.
+      evidence_ids:
+      - airslate-letter-lead-scope
+      - airslate-letter-debt-release
+      employer: airSlate
+  declaration_sha256: sha256:2229729c33559fad81226ab34c01f867d4f2f1a132c0719bb65bd87c584276b4
   method:
     workflow: two-wave
     final_review:
@@ -690,32 +797,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 466
-      sha256: sha256:f4a6b5b35d8f0de7673a81cf43ba1c59a6fb7b7bba8fd464a1d5fb310e235f66
+      word_count: 569
+      sha256: sha256:3e411ec457271cef8ba7a7c72c90a3e4d59ae1fe61e158369dc03263512b8412
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: b6828b0b044616b678196fb94284ff839e10bc0f624f2d32a19b80f58a349012
-      artifact_sha256: f6ac669f203de79e3790a19e081488737d0c6e3ea6d893534a2fa89de9e6c003
-      extracted_text_sha256: 34261b8538c421ea0ec2fbb39fe516ca695079fa0d73327f50c2b3c9fd605216
-      canonical_tokens: 447
-      extracted_tokens: 447
+      source_sha256: 9a2f2e60c6415577221ea0c2b9ea469931c502780ed74091dcbbcecabb8fc7f8
+      artifact_sha256: 6c9d291669ec337e07c5289b7e0b48aa5e1f576d2218f938983cdd260d7c772e
+      extracted_text_sha256: b33ec46698343363a9774bdc3a0ddcafc85fdc61709332f0c4c7094801b52b25
+      canonical_tokens: 462
+      extracted_tokens: 462
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 33
+        readable_paragraphs: 34
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: f6ac669f203de79e3790a19e081488737d0c6e3ea6d893534a2fa89de9e6c003
+        artifact_sha256: 6c9d291669ec337e07c5289b7e0b48aa5e1f576d2218f938983cdd260d7c772e
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

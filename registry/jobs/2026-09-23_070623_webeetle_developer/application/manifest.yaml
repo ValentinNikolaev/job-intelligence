@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
-generated_at: '2026-09-27T16:50:51Z'
+generated_at: '2026-09-27T21:15:40Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    prompt_version: sha256:73b39e09f8e0fc0dbdd4d947e001630b7692afc15ef74e7207690ecf6aeadf02
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
-    generated_at: '2026-09-27T16:50:51Z'
+    generated_at: '2026-09-27T21:15:40Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 400
-      sha256: sha256:061e93d5b3ade39b06916a8a9dd62406fd5297806a040f8b6e532c4ca4b8b82d
+      word_count: 414
+      sha256: sha256:7cd474a563b3295f464e3e5c9bd4a26d29892d92445c9679d9e73415fe7c788c
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 2caa5d21743b6e9d55b5de80f8a5be33823246a792801b54ecd99c5333c7c848
+    sha256: 4818ebec8058a95c7e4c3e6d6910ce5e31fe9bdac00bccbc2f74d293eddc578a
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -81,6 +81,8 @@ quality:
         verified: 47
     claim_count: 14
     evidence_ids:
+    - airslate-letter-debt-release
+    - airslate-letter-lead-scope
     - airslate-logger-general
     - career-15-years
     - crurated-confirmed-crutrade-production
@@ -97,6 +99,48 @@ quality:
     - simple-2026-telephony-lawful-calling
     - simple-2026-telephony-privacy
     evidence_entries:
+    - id: airslate-letter-debt-release
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'Technical debt roadmap management
+
+          > Planning the release cycle backlog with the team'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-letter-lead-scope
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021, to Aug
+          22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning'
+        context_quote: © airSlate, Inc.
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
     - id: airslate-logger-general
       employer: airSlate
       role: Software Developer
@@ -455,7 +499,7 @@ quality:
       target_role: weBeetle Backend Developer
       top_third_evidence_ids:
       - career-15-years
-      - simple-2026-telephony-privacy
+      - airslate-logger-general
       editorial_review:
         knowledge_base_version: 1
         verdict: approve
@@ -464,103 +508,113 @@ quality:
       - text: Delivered a privacy-first outbound-calling backend for a health-domain
           workflow; security and recording-compliance review cleared it for production.
         decision: keep
-        reason: Released security-sensitive backend result.
+        reason: Released backend result with formal security consequence.
         weight: critical
         signal_type: security
-        ordering_rationale: Strongest outcome and production consequence leads.
+        ordering_rationale: Strongest recent production result leads.
         verdict: approve
       - text: Built policy controls for contact timing, holidays, opt-outs and do-not-call
           records, keeping customer outreach within defined safeguards.
         decision: keep
-        reason: Shows consequential backend policy design.
+        reason: Distinct service policy design and user safeguard.
         weight: high
         signal_type: security
-        ordering_rationale: Customer-protection outcome follows release.
+        ordering_rationale: Follows the overall release with the separate control
+          result.
         verdict: approve
       - text: Created a Go integration gateway that normalized vendor events across
           Intercom and Zendesk, supporting the first B2B support-AI demonstration.
         decision: keep
-        reason: Demonstrates distributed integration architecture.
+        reason: Supported distributed integration and product demonstration.
         weight: high
         signal_type: architecture
-        ordering_rationale: Integration relevance precedes operational detail.
+        ordering_rationale: Integration signal precedes narrower operations work.
         verdict: approve
       - text: Made support-ticket processing resilient during dependency degradation
           through partial-success reporting and recoverable scans.
         decision: keep
-        reason: Verified resilience consequence.
+        reason: Separate documented processing resilience result.
         weight: medium
         signal_type: reliability
-        ordering_rationale: Follows core architecture with operations signal.
+        ordering_rationale: Production resilience follows service architecture.
         verdict: approve
       - text: Automated GDPR export requests across seven sources through a self-service
           administrative flow.
         decision: keep
-        reason: Distinct cross-system compliance delivery.
+        reason: Cross-source administrative and compliance delivery.
         weight: medium
         signal_type: impact
-        ordering_rationale: Last because it is less central to backend track.
+        ordering_rationale: Closes with a distinct system delivery example.
         verdict: approve
       - text: Built modular PHP event-stream delivery for production analytics, cutting
           new-stream setup from several days to under four hours.
         decision: keep
-        reason: Direct PHP delivery result.
+        reason: PHP platform delivery with a supported onboarding result.
         weight: critical
         signal_type: impact
-        ordering_rationale: Leads PHP role with business-relevant speed outcome.
+        ordering_rationale: Strongest direct PHP delivery result leads.
         verdict: approve
       - text: Sustained event delivery above 99.9% with fault-tolerant routing, retries
           and production monitoring.
         decision: keep
-        reason: Measured production reliability.
+        reason: Measured production event reliability.
         weight: high
         signal_type: reliability
-        ordering_rationale: Reliability is the next strongest outcome.
+        ordering_rationale: Runtime consequence follows onboarding result.
         verdict: approve
       - text: Established versioned event schemas with parallel publishing, allowing
           downstream consumers to move between versions without halting new data.
         decision: keep
-        reason: Shows maintainable distributed-service evolution.
+        reason: Distributed-service contract evolution with documented migration effect.
         weight: high
         signal_type: architecture
-        ordering_rationale: Architecture proof precedes scope-only integration work.
+        ordering_rationale: Architecture proof follows the measured results.
         verdict: approve
       - text: Took technical ownership of a production partner connection spanning
           authentication, account linking, collection import/export and purchase verification.
         decision: keep
-        reason: Concrete production API integration ownership.
+        reason: Concrete production REST integration scope.
         weight: medium
         signal_type: impact
-        ordering_rationale: Distinct integration scope without invented impact.
+        ordering_rationale: Distinct integration follows the core event system.
         verdict: approve
       - text: Increased DataLake throughput by more than tenfold under documented
           technical ownership.
         decision: keep
-        reason: Measured scale proof.
+        reason: Confirmed scale result, separate from stream onboarding.
         weight: medium
         signal_type: scale
-        ordering_rationale: Last because the preceding bullets better map to everyday
-          backend delivery.
+        ordering_rationale: Scale proof closes because the posting favors everyday
+          PHP service delivery.
         verdict: approve
       - text: Improved high-traffic service stability by removing main-database bottlenecks
           and redistributing workload.
         decision: keep
-        reason: Verified relational-database reliability result.
+        reason: Direct relational-database stability result.
         weight: high
         signal_type: reliability
-        ordering_rationale: Leads compact role with clear consequence.
+        ordering_rationale: Strongest airSlate result leads.
         verdict: approve
       - text: Developed a shared Laravel/Symfony logging package that followed the
           product's interservice communication standard.
         decision: keep
-        reason: Direct Symfony and team-standardization evidence.
+        reason: Direct Symfony/Laravel and team-standardization evidence.
         weight: medium
         signal_type: team_influence
-        ordering_rationale: Follows stronger stability outcome.
+        ordering_rationale: Framework component follows service stability.
+        verdict: approve
+      - text: Led epic decomposition, task delegation, and release-backlog planning
+          with the engineering team.
+        decision: keep
+        reason: Documented team leadership scope without an unsupported outcome claim.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Delivery leadership is third because it records scope
+          more than measured outcome.
         verdict: approve
     reviewer: Codex CV editorial self-review
     document_sha256:
-      cv: sha256:061e93d5b3ade39b06916a8a9dd62406fd5297806a040f8b6e532c4ca4b8b82d
+      cv: sha256:7cd474a563b3295f464e3e5c9bd4a26d29892d92445c9679d9e73415fe7c788c
     requirements:
     - requirement: PHP with Laravel or Symfony
       importance: critical
@@ -597,76 +651,98 @@ quality:
       - airslate-logger-general
       - crurated-event-design
     - document: cv
-      text: Recent experience covers a secure health-domain service, multi-tenant
-        vendor integration, PHP analytics pipelines and database stability.
-      evidence_ids:
-      - simple-2026-telephony-privacy
-      - simple-2026-helpdesk-gateway
-      - crurated-confirmed-datalake-production
-      - database-reliability
-    - document: cv
       text: Delivered a privacy-first outbound-calling backend for a health-domain
         workflow; security and recording-compliance review cleared it for production.
       evidence_ids:
       - simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Built policy controls for contact timing, holidays, opt-outs and do-not-call
         records, keeping customer outreach within defined safeguards.
       evidence_ids:
       - simple-2026-telephony-lawful-calling
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Created a Go integration gateway that normalized vendor events across
         Intercom and Zendesk, supporting the first B2B support-AI demonstration.
       evidence_ids:
       - simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Made support-ticket processing resilient during dependency degradation
         through partial-success reporting and recoverable scans.
       evidence_ids:
       - simple-2026-cron-resilience
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Automated GDPR export requests across seven sources through a self-service
         administrative flow.
       evidence_ids:
       - simple-2026-gdpr
+      employer: Simple.life
+      role: Software Developer
     - document: cv
       text: Built modular PHP event-stream delivery for production analytics, cutting
         new-stream setup from several days to under four hours.
       evidence_ids:
       - crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Sustained event delivery above 99.9% with fault-tolerant routing, retries
         and production monitoring.
       evidence_ids:
       - crurated-reviewed-delivery-reliability
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Established versioned event schemas with parallel publishing, allowing
         downstream consumers to move between versions without halting new data.
       evidence_ids:
       - crurated-event-design
       - crurated-confirmed-event-version-production
+      employer: CRURATED
     - document: cv
       text: Took technical ownership of a production partner connection spanning authentication,
         account linking, collection import/export and purchase verification.
       evidence_ids:
       - crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Increased DataLake throughput by more than tenfold under documented technical
         ownership.
       evidence_ids:
       - crurated-reviewed-throughput
       - crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
     - document: cv
       text: Improved high-traffic service stability by removing main-database bottlenecks
         and redistributing workload.
       evidence_ids:
       - database-reliability
+      employer: airSlate
+      role: Software Developer
     - document: cv
       text: Developed a shared Laravel/Symfony logging package that followed the product's
         interservice communication standard.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:f73a9996f2539e144c3386204f48000bd11bdf7cee848f701e9b3d0cc286830f
+      employer: airSlate
+      role: Software Developer
+    - document: cv
+      text: Led epic decomposition, task delegation, and release-backlog planning
+        with the engineering team.
+      evidence_ids:
+      - airslate-letter-lead-scope
+      - airslate-letter-debt-release
+      employer: airSlate
+  declaration_sha256: sha256:833226b28cc1c870a5540ba2bef9df37dd58c6ca4010ac077df6772e45a72810
   method:
     workflow: two-wave
     final_review:
@@ -674,32 +750,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 473
-      sha256: sha256:5c1f8d4429dfa4911b4216ed3dfa21f11e83cb1b534da5a541db6bb834d7c452
+      word_count: 545
+      sha256: sha256:d1c42f87ae99fc6237eb50e74dd9462730a83043f6c1ec4dde88384d5071c6bf
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 061e93d5b3ade39b06916a8a9dd62406fd5297806a040f8b6e532c4ca4b8b82d
-      artifact_sha256: 077ec9e47396641e6b43fefe654b09c370021e5e231f412843ccfa9ed1e513e4
-      extracted_text_sha256: a4a5f5d1b49ecb9fe69627bd41cf06b53d7ac3bda7a53142347b0acff6c9f8dd
-      canonical_tokens: 424
-      extracted_tokens: 424
+      source_sha256: 7cd474a563b3295f464e3e5c9bd4a26d29892d92445c9679d9e73415fe7c788c
+      artifact_sha256: cb26dec996c429d6350f2614b60558509ef21b968764b21dbcf51d9a972766d0
+      extracted_text_sha256: 6b0bcc47a3c679766e40373bff980289f7166a17171564ad7f63ed114f79d93a
+      canonical_tokens: 439
+      extracted_tokens: 439
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 33
+        readable_paragraphs: 34
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 077ec9e47396641e6b43fefe654b09c370021e5e231f412843ccfa9ed1e513e4
+        artifact_sha256: cb26dec996c429d6350f2614b60558509ef21b968764b21dbcf51d9a972766d0
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

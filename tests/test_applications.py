@@ -36,14 +36,51 @@ from jobintel.applications import (
 
 
 class ExperienceRoleDepthTests(unittest.TestCase):
-    def test_rejects_shallow_recent_and_older_roles(self) -> None:
-        cv = ("## Experience\n\n### Recent | January 2024 - September 2026\n"
+    def test_requires_three_bullets_at_the_five_year_cutoff(self) -> None:
+        cv = ("## Experience\n\n### Cutoff role | September 2019 - September 2021\n"
               "- First result\n- Second result\n"
-              "### Earlier | January 2019 - January 2021\n- One result\n")
-        with self.assertRaisesRegex(ApplicationError, "Recent.*requires 3"):
+              "- Technologies: Go\n")
+        with self.assertRaisesRegex(ApplicationError, "Cutoff role.*requires 3"):
             _validate_cv_role_depth(cv, reference_date=datetime(2026, 9, 26))
-        cv = cv.replace("- Second result\n", "- Second result\n- Third result\n")
-        with self.assertRaisesRegex(ApplicationError, "Earlier.*requires 2"):
+
+    def test_compact_cv_applies_the_five_year_role_minimum(self) -> None:
+        summary = " ".join(["Senior backend engineer delivers reliable PHP and Go services through evidence-backed architecture, operational ownership, and collaborative product delivery."] * 4)
+        education_detail = " ".join(["Advanced study included distributed systems, database design, software architecture, security, delivery planning, and operational reliability."] * 13)
+        cv = (
+            "# Candidate\nBackend Engineer\n\nhttps://linkedin.com/in/candidate | https://github.com/candidate\n\n"
+            f"## Summary\n\n{summary}\n\n"
+            "## Skills\n\nPHP, Laravel, Symfony, Go, MySQL, PostgreSQL, SQL, REST APIs, Git, AWS, Kubernetes, RabbitMQ\n\n"
+            "## Experience\n\n"
+            "### Current role | January 2024 - Present\n"
+            "- Delivered a supported production change for customers.\n"
+            "- Improved a documented service reliability outcome.\n"
+            "- Led a source-backed architecture decision.\n"
+            "- Standardized a team delivery practice.\n"
+            "Technologies: PHP, Go\n\n"
+            "### Cutoff role | September 2019 - September 2021\n"
+            "- Delivered a distinct supported backend result.\n"
+            "- Owned a separate operational improvement.\n"
+            "- Technologies: PHP, MySQL\n\n"
+            f"## Education\n\nMSc in Computer Science. {education_detail}\n\n## Languages\n\nEnglish\n"
+        )
+        with self.assertRaisesRegex(ApplicationError, "Cutoff role.*requires 3"):
+            validate_application_package(
+                {"cv_markdown": cv}, document="cv", document_format="compact",
+                reference_date=datetime(2026, 9, 26),
+            )
+
+    def test_allows_two_bullets_before_the_five_year_cutoff(self) -> None:
+        cv = ("## Experience\n\n### Older role | August 2019 - August 2021\n"
+              "- First result\n- Second result\n"
+              "- Technologies: Go\n")
+        _validate_cv_role_depth(cv, reference_date=datetime(2026, 9, 26))
+
+    def test_rejects_duplicate_or_technologies_only_third_bullet(self) -> None:
+        cv = ("## Experience\n\n### Recent role | January 2024 - Present\n"
+              "- Delivered a production service change.\n"
+              "- Delivered a production service change!\n"
+              "- Technologies: Go, PostgreSQL\n")
+        with self.assertRaisesRegex(ApplicationError, "repeats an Experience bullet"):
             _validate_cv_role_depth(cv, reference_date=datetime(2026, 9, 26))
 
     def test_rejects_roles_out_of_reverse_chronology(self) -> None:
@@ -565,6 +602,7 @@ class ApplicationTests(unittest.TestCase):
             "### airSlate Р Р†Р вЂљРІР‚Сњ Software Developer | February 2021 - August 2023\n"
             "- Improved a supported backend workflow with measured engineering discipline.\n"
             "- Diagnosed production incidents through service logs and monitoring.\n"
+            "- Coordinated release-ready work with product and engineering stakeholders.\n"
             "Technologies: PHP, Symfony, PostgreSQL\n\n## Education",
         )
 

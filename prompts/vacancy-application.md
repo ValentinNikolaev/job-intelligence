@@ -226,7 +226,7 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     ticket, test-count, coverage and implementation-mechanic bullets unless
     a distinct source-backed consequence can be stated without those details.
     Every displayed role needs at least two distinct source-backed outcome or
-    decision bullets; each role ending within the last three years needs at
+    decision bullets; each role ending within the last five years needs at
     least three. Recheck candidate sources before declaring a shortage. If
     distinct facts remain unavailable, omit a nonessential older role or ask
     the candidate a focused question and leave that package pending. Never
