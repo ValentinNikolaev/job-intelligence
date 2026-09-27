@@ -6,7 +6,7 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/
 
 ## Summary
 
-Backend engineer with more than 15 years of experience in Go and PHP production systems. I design services that connect external platforms, make operational failure visible and keep data flows maintainable as they evolve. Recent work includes a secure Amazon Connect backend, a multi-tenant Go integration gateway and resilience improvements for support automation. I also bring experience with event-driven PHP systems, AWS, SQL performance work and cross-service logging standards.
+Backend engineer with more than 15 years of experience in Go and PHP production systems. I design privacy-sensitive backend systems that connect external platforms, make operational failure visible and keep data flows maintainable as they evolve. Recent work includes a PII/PHI-protected Amazon Connect platform, a multi-tenant Go integration gateway and resilience improvements for support automation. I also bring experience with event-driven PHP systems, AWS, SQL performance work and cross-service logging standards.
 
 ## Skills
 
@@ -19,7 +19,9 @@ Backend engineer with more than 15 years of experience in Go and PHP production 
 ### Simple.life / Simple App — Software Developer
 November 2023 – 2026
 
-- Architected and released an Amazon Connect outbound-calling backend, using federated agent access and masked customer numbers; it passed security sign-off without requiring individual AWS accounts or SAML setup.
+- Owned the architecture and backend for a health-domain Amazon Connect platform designed around PII/PHI protection: customer numbers were resolved server-side, masked in the browser and logs, and purged from Connect by TTL; it passed formal security and call-recording compliance reviews before production.
+- Built backend-controlled lawful-calling safeguards for customer-timezone windows, holidays, do-not-call enforcement and opt-out withdrawal, with Amazon Connect retries set to zero so scheduled calls could not bypass those controls.
+- Implemented least-privilege agent federation through Entra and AssumeRole/GetFederationToken, separating diagnostics and administration access while avoiding per-agent AWS accounts and a SAML application.
 - Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model, Intercom and Zendesk adapters, tenant event ingestion and SQS queues, enabling the company’s first B2B support-AI demonstration.
 - Stabilized recurring Intercom search failures by tracing the timeout path and introducing partial-success reporting with time-sharded cursor scans, so incomplete processing was observable instead of aborting the run.
 - Automated GDPR data exports across seven sources through a self-service administration workflow for creating, tracking and reviewing requests.

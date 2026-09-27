@@ -1,21 +1,21 @@
-profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
+profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:f194cee284680ab8df792d1843ab47732c893cb66392cead375a6042491bc379
+prompt_version: sha256:b613a40f2ee7ecb9ff2ff7c23f6115ab24a8174db058a168b2b06ebf19881b81
 model: codex:gpt-5.6-terra:high
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
-generated_at: '2026-09-27T15:27:33Z'
+generated_at: '2026-09-27T15:54:40Z'
 documents:
   cv:
-    profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
+    profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:f194cee284680ab8df792d1843ab47732c893cb66392cead375a6042491bc379
+    prompt_version: sha256:b613a40f2ee7ecb9ff2ff7c23f6115ab24a8174db058a168b2b06ebf19881b81
     model: codex:gpt-5.6-terra:high
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
-    generated_at: '2026-09-27T15:27:33Z'
+    generated_at: '2026-09-27T15:54:40Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
@@ -47,10 +47,10 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 404
-      sha256: sha256:647c3731853aa2ed1dd3085228bfce6bf45bfc3384445b0a3b49246cdd15a642
+      word_count: 451
+      sha256: sha256:588e8e67ec66facc461796f1e3764d2fd2f3f4ad15fd28624a524f7902215af0
       evidence_bank_path: registry/evidence/achievements.yaml
-      evidence_bank_sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
+      evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
       word_count: 311
       sha256: sha256:10155b992ce754d3921f4aab15d7ace7f49e9cb55cf47537cdc33126988b6ef9
@@ -69,17 +69,17 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 797786c485ab317433adaa4ee574e4d683ba3003dc42b3efbe9b7cc967844733
+    sha256: 74927d9555d5db32122da7fb3b644f40a1d726a3253f1f81066b566c130b1dae
     evidence_bank:
       schema_version: 1
-      sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
-      entry_count: 60
+      sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
+      entry_count: 62
       statuses:
         cannot-confirm: 3
         retracted: 3
         unverified: 9
-        verified: 45
-    claim_count: 12
+        verified: 47
+    claim_count: 14
     evidence_ids:
     - airslate-logger-general
     - career-15-years
@@ -93,6 +93,8 @@ quality:
     - simple-2026-gdpr
     - simple-2026-helpdesk-gateway
     - simple-2026-telephony
+    - simple-2026-telephony-lawful-calling
+    - simple-2026-telephony-privacy
     evidence_entries:
     - id: airslate-logger-general
       employer: airSlate
@@ -398,6 +400,55 @@ quality:
       review_notes: Candidate-reported delivered work only; estimates and example
         bullets are excluded. August-September work confirmed as past in user follow-up;
         exact end month remains unconfirmed.
+    - id: simple-2026-telephony-lawful-calling
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+        quote: "## Lawful calling and delivery controls\n\n- The backend scheduler\
+          \ enforced customer-timezone call windows, Sundays and public\n  holidays,\
+          \ the do-not-call list and automatic withdrawal of queued callbacks on\n\
+          \  opt-out, window closure or hang. Amazon Connect retries were set to zero,\
+          \ so built-in\n  retries could not bypass these controls.\n- The call outcome\
+          \ was written to the existing Intercom ticket, with no duplicate ticket\n\
+          \  or duplicate PII record.\n"
+        sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+        context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
+      status: verified
+      verification:
+        reviewer: Candidate direct confirmation and Codex source review
+        reviewed_at: '2026-09-27'
+        method: Recorded the candidate''s direct clarification verbatim and checked
+          the claim scope against its stated project context.
+      review_notes: Render the effect of backend-owned lawful-calling controls without
+        exposing internal implementation or permission names.
+    - id: simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+        quote: "## Context and ownership\n\nSimple operates in the medical and health\
+          \ domain, including clinic callback requests;\nevery call carries PII and\
+          \ potentially PHI. The candidate owned the architecture and\nbackend end\
+          \ to end, authored the epic and design document and made the security\n\
+          decisions. The work passed formal security sign-off (DEV-35381) and a BAA\
+          \ and\ncall-recording compliance review (DEV-35382), then reached production\
+          \ on 2026-09-25\nwith a three-person cross-functional team: backend, frontend\
+          \ and SRE.\n\n## Verified privacy, access and audit design\n\n- The customer\
+          \ phone number was resolved server-side, never returned by the API,\n  rendered\
+          \ in the agent UI or written to logs; only a mask reached the browser. There\n\
+          \  was no number-reveal UI.\n"
+        sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+        context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
+      status: verified
+      verification:
+        reviewer: Candidate direct confirmation and Codex source review
+        reviewed_at: '2026-09-27'
+        method: Recorded the candidate''s direct clarification verbatim and checked
+          the claim scope against its stated project context.
+      review_notes: Internal ticket identifiers, permission names and detailed consent
+        flow are source context. Render only the employer-relevant privacy, security
+        and lawful calling outcome in a CV.
     checks:
     - source_quotes
     - source_hashes
@@ -410,67 +461,79 @@ quality:
       target_role: weBeetle Back-End Developer
       top_third_evidence_ids:
       - career-15-years
-      - simple-2026-telephony
+      - simple-2026-telephony-privacy
       bullet_decisions:
-      - text: Released an Amazon Connect outbound-calling platform with federated
-          agent access and customer-number masking, satisfying security requirements
-          without individual AWS accounts.
+      - text: 'Architected a health-domain Amazon Connect platform with PII/PHI protection
+          as its starting point: phone numbers were server-resolved, masked in UI
+          and logs, passed only as transient contact attributes and purged by TTL;
+          formal security and recording-compliance reviews preceded production.'
         decision: keep
-        reason: Leads with the strongest vacancy-relevant production result and a
-          concrete system consequence.
-      - text: Built a Go helpdesk gateway that abstracts Intercom and Zendesk behind
-          a vendor-neutral event model, enabling the company’s first B2B support-AI
-          demo.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
+      - text: Implemented backend-owned contact controls for timezones, holidays,
+          do-not-call rules and opt-outs, setting Amazon Connect retries to zero so
+          repeat calls could not bypass those safeguards.
         decision: keep
-        reason: Retains a distinct architecture, reliability, security or delivery
-          consequence; it is not a duty list or an internal LOC metric.
-      - text: Changed degraded Intercom searches from fatal cron failures to tracked
-          partial results through sharded cursor scans and explicit incomplete-scan
-          reporting.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
+      - text: Implemented least-privilege Entra federation and lazy Connect-user lifecycle
+          management, separating call access from diagnostics and administration without
+          individual AWS accounts or a SAML application.
         decision: keep
-        reason: Retains a distinct architecture, reliability, security or delivery
-          consequence; it is not a duty list or an internal LOC metric.
-      - text: Delivered self-service GDPR export automation across seven sources,
-          providing a single administration flow for request creation, status and
-          review.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
+      - text: Built a Go helpdesk gateway with vendor-neutral events, Intercom and
+          Zendesk adapters and SQS queues, enabling the support-AI product’s first
+          B2B demonstration.
         decision: keep
-        reason: Retains a distinct architecture, reliability, security or delivery
-          consequence; it is not a duty list or an internal LOC metric.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
+      - text: Made Intercom ticket processing resilient with partial-success reporting
+          and sharded cursor scans, retaining visibility of incomplete work during
+          dependency degradation.
+        decision: keep
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
+      - text: Delivered self-service GDPR exports across seven data sources with request
+          creation, status tracking and review.
+        decision: keep
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
       - text: Built modular event-stream architecture for production analytics, reducing
           the setup of a new stream from several days to under four hours.
         decision: keep
-        reason: Uses a candidate-reviewed operational outcome with explicit technical
-          ownership.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
       - text: Maintained event delivery above 99.9% through retry design, fault-tolerant
           routing and operational monitoring.
         decision: keep
-        reason: Uses a candidate-reviewed operational outcome with explicit technical
-          ownership.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
       - text: Designed versioned event contracts and parallel publication so consumers
           could migrate without preventing delivery of new event data.
         decision: keep
-        reason: Retains a distinct architecture, reliability, security or delivery
-          consequence; it is not a duty list or an internal LOC metric.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
       - text: Owned a production partner integration covering authentication, OTP,
           account linking and request/response logging.
         decision: keep
-        reason: Retains a distinct architecture, reliability, security or delivery
-          consequence; it is not a duty list or an internal LOC metric.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
       - text: Removed database bottlenecks and redistributed workload, reducing peak
           pressure on the main database and improving service stability during heavy
           traffic.
         decision: keep
-        reason: Retains a distinct architecture, reliability, security or delivery
-          consequence; it is not a duty list or an internal LOC metric.
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
       - text: Introduced a Laravel/Symfony logger package aligned with the product’s
           interservice communication standard, creating a shared service-level logging
           component.
         decision: keep
-        reason: Keeps a distinct cross-service standardization result without presenting
-          routine support work as an achievement.
-    reviewer: Codex CV correction review
+        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
+          architecture, reliability or delivery consequence.
+    reviewer: Codex telephony privacy CV review
     document_sha256:
-      cv: sha256:647c3731853aa2ed1dd3085228bfce6bf45bfc3384445b0a3b49246cdd15a642
+      cv: sha256:588e8e67ec66facc461796f1e3764d2fd2f3f4ad15fd28624a524f7902215af0
     requirements:
     - requirement: PHP/Symfony backend development
       importance: critical
@@ -555,34 +618,47 @@ quality:
     claims_ledger_path: claims.yaml
     claims:
     - document: cv
-      text: 15+ years
+      text: more than 15 years
       evidence_ids:
       - career-15-years
     - document: cv
-      text: secure AWS telephony
+      text: privacy-sensitive
+      evidence_ids:
+      - simple-2026-telephony-privacy
+    - document: cv
+      text: 'Architected a health-domain Amazon Connect platform with PII/PHI protection
+        as its starting point: phone numbers were server-resolved, masked in UI and
+        logs, passed only as transient contact attributes and purged by TTL; formal
+        security and recording-compliance reviews preceded production.'
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      - simple-2026-telephony
+    - document: cv
+      text: Implemented backend-owned contact controls for timezones, holidays, do-not-call
+        rules and opt-outs, setting Amazon Connect retries to zero so repeat calls
+        could not bypass those safeguards.
+      evidence_ids:
+      - simple-2026-telephony-lawful-calling
+    - document: cv
+      text: Implemented least-privilege Entra federation and lazy Connect-user lifecycle
+        management, separating call access from diagnostics and administration without
+        individual AWS accounts or a SAML application.
       evidence_ids:
       - simple-2026-telephony
     - document: cv
-      text: Released an Amazon Connect outbound-calling platform with federated agent
-        access and customer-number masking, satisfying security requirements without
-        individual AWS accounts.
-      evidence_ids:
-      - simple-2026-telephony
-    - document: cv
-      text: Built a Go helpdesk gateway that abstracts Intercom and Zendesk behind
-        a vendor-neutral event model, enabling the company’s first B2B support-AI
-        demo.
+      text: Built a Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk
+        adapters and SQS queues, enabling the support-AI product’s first B2B demonstration.
       evidence_ids:
       - simple-2026-helpdesk-gateway
     - document: cv
-      text: Changed degraded Intercom searches from fatal cron failures to tracked
-        partial results through sharded cursor scans and explicit incomplete-scan
-        reporting.
+      text: Made Intercom ticket processing resilient with partial-success reporting
+        and sharded cursor scans, retaining visibility of incomplete work during dependency
+        degradation.
       evidence_ids:
       - simple-2026-cron-resilience
     - document: cv
-      text: Delivered self-service GDPR export automation across seven sources, providing
-        a single administration flow for request creation, status and review.
+      text: Delivered self-service GDPR exports across seven data sources with request
+        creation, status tracking and review.
       evidence_ids:
       - simple-2026-gdpr
     - document: cv
@@ -618,7 +694,7 @@ quality:
         component.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:836d10815ae46de7eb33d20b7db9ae19df36d8d58b8c1b6cc1509c52b53d373b
+  declaration_sha256: sha256:daff59afc98de905f490cb5d434c85f87f317e3cd8a22e4f1a06817891fce63b
   method:
     workflow: two-wave
     final_review:
@@ -626,32 +702,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 703
-      sha256: sha256:50a815b5226ed8b599211dc4ed2f64096660b350ff76c5f7fcb8e174634814eb
+      word_count: 795
+      sha256: sha256:c4056ce318a17a656cb2c1af172acea7277bb1277d9274ad6e18f9d6952da47e
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 647c3731853aa2ed1dd3085228bfce6bf45bfc3384445b0a3b49246cdd15a642
-      artifact_sha256: 2bbbae5f6833ba57f3c6ae89abbc8336b5fe7c244c6a6a8e346ad9e894a17d34
-      extracted_text_sha256: bb624a7bb45ee201e7b770ee8ce3e62ada83af3660c59576773876ce23d4c34d
-      canonical_tokens: 419
-      extracted_tokens: 419
+      source_sha256: 588e8e67ec66facc461796f1e3764d2fd2f3f4ad15fd28624a524f7902215af0
+      artifact_sha256: 37f1785c7a2295f48868574ebf8d139626375fafda0eebd9f4b1c5f002f2d987
+      extracted_text_sha256: 3a2047d41c9eb8af8967930570e0f2b5e2b18abcddef77fd790586bc321fe91a
+      canonical_tokens: 475
+      extracted_tokens: 475
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 31
+        readable_paragraphs: 33
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 2bbbae5f6833ba57f3c6ae89abbc8336b5fe7c244c6a6a8e346ad9e894a17d34
+        artifact_sha256: 37f1785c7a2295f48868574ebf8d139626375fafda0eebd9f4b1c5f002f2d987
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

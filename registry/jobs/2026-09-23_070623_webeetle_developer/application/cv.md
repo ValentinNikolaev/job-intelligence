@@ -6,7 +6,7 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/
 
 ## Summary
 
-Backend developer with 15+ years of experience across PHP and Go services. I work on integrations and data flows that must remain understandable and dependable in production: external APIs, event pipelines, operational tooling and database performance. Recent work spans secure AWS telephony, a vendor-neutral helpdesk gateway and PHP event analytics, alongside pragmatic improvements to service resilience, release operations and cross-service maintainability. I favour explicit service boundaries and observable production behaviour.
+Backend developer with more than 15 years in Go and PHP production systems. I build privacy-sensitive backend services, integrations and operational workflows with a focus on clear system boundaries and reliable delivery. Recent work includes a PII/PHI-protected Amazon Connect platform, a multi-tenant Go gateway, event-driven PHP systems and SQL performance improvements.
 
 ## Skills
 
@@ -19,10 +19,12 @@ Backend developer with 15+ years of experience across PHP and Go services. I wor
 ### Simple.life / Simple App — Software Developer
 November 2023 – 2026
 
-- Released an Amazon Connect outbound-calling platform with federated agent access and customer-number masking, satisfying security requirements without individual AWS accounts.
-- Built a Go helpdesk gateway that abstracts Intercom and Zendesk behind a vendor-neutral event model, enabling the company’s first B2B support-AI demo.
-- Changed degraded Intercom searches from fatal cron failures to tracked partial results through sharded cursor scans and explicit incomplete-scan reporting.
-- Delivered self-service GDPR export automation across seven sources, providing a single administration flow for request creation, status and review.
+- Architected a health-domain Amazon Connect platform with PII/PHI protection as its starting point: phone numbers were server-resolved, masked in UI and logs, passed only as transient contact attributes and purged by TTL; formal security and recording-compliance reviews preceded production.
+- Implemented backend-owned contact controls for timezones, holidays, do-not-call rules and opt-outs, setting Amazon Connect retries to zero so repeat calls could not bypass those safeguards.
+- Implemented least-privilege Entra federation and lazy Connect-user lifecycle management, separating call access from diagnostics and administration without individual AWS accounts or a SAML application.
+- Built a Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk adapters and SQS queues, enabling the support-AI product’s first B2B demonstration.
+- Made Intercom ticket processing resilient with partial-success reporting and sharded cursor scans, retaining visibility of incomplete work during dependency degradation.
+- Delivered self-service GDPR exports across seven data sources with request creation, status tracking and review.
 
 **Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Intercom API, Zendesk API, REST APIs
 

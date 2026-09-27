@@ -6,7 +6,7 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/
 
 ## Summary
 
-Backend developer with 15+ years in PHP and Go production systems, focused on integrations, operational diagnosis and durable support tooling. I have owned authentication and partner API flows, made ticket-processing failures observable under dependency degradation and improved database stability under load. Recent PHP consulting work combines event architecture, reliability and request-level logging; Go work adds hands-on experience with multi-vendor support integrations and self-service compliance workflows. I use logs and monitoring to turn ambiguous support failures into concrete repair work.
+Senior backend developer with 15+ years in PHP and Go systems. I build support and integration services where privacy, operational visibility and dependable customer contact matter. Recent work includes PII/PHI-protected health-domain telephony, resilient ticket processing, GDPR automation and event-driven PHP delivery for customer-facing production data services across multiple integrations.
 
 ## Skills
 
@@ -19,10 +19,12 @@ Backend developer with 15+ years in PHP and Go production systems, focused on in
 ### Simple.life / Simple App — Software Developer
 November 2023 – 2026
 
-- Built a Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk adapters, webhook ingestion and outbound actions, enabling the first B2B demonstration of the support-AI product.
-- Made degraded Intercom searches recoverable by introducing partial-success reporting and sharded cursor scans, so ticket processing could continue with incomplete work recorded for follow-up.
-- Built LLM-assisted cancellation and refund email workflows with a deletion-request classifier that routes active requests to first-line support.
-- Automated data exports across seven sources through a self-service GDPR administration workflow for request creation, status tracking and review.
+- Owned the health-domain Amazon Connect backend with privacy by design: customer numbers remained server-side, masked in UI and logs, and transient in Connect; formal security and call-recording compliance reviews approved its production release.
+- Implemented backend-enforced call windows, holidays, do-not-call rules and opt-out withdrawal, with zero Amazon Connect retries so repeat calls could not bypass customer-contact controls.
+- Built least-privilege agent federation through Entra and lazy Connect-user lifecycle management, separating support-call access from diagnostics and administration without individual AWS accounts or SAML.
+- Built the multi-tenant helpdesk gateway with Intercom and Zendesk adapters, tenant event ingestion and SQS queues, enabling the first B2B support-AI demonstration.
+- Made Intercom ticket processing observable during API degradation through partial-success handling and sharded cursor searches.
+- Built self-service GDPR exports across seven sources, centralizing request creation, tracking and review for administrators.
 
 **Technologies:** Go, PHP, PostgreSQL, Intercom API, Zendesk API, SQS, REST APIs, monitoring
 

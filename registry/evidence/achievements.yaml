@@ -1373,3 +1373,62 @@ entries:
       used.
   review_notes: Use the generalized Software Developer/Programming Team Lead CV heading;
     the imported LinkedIn Senior title is not asserted.
+- id: simple-2026-telephony-privacy
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+    quote: |
+      ## Context and ownership
+
+      Simple operates in the medical and health domain, including clinic callback requests;
+      every call carries PII and potentially PHI. The candidate owned the architecture and
+      backend end to end, authored the epic and design document and made the security
+      decisions. The work passed formal security sign-off (DEV-35381) and a BAA and
+      call-recording compliance review (DEV-35382), then reached production on 2026-09-25
+      with a three-person cross-functional team: backend, frontend and SRE.
+
+      ## Verified privacy, access and audit design
+
+      - The customer phone number was resolved server-side, never returned by the API,
+        rendered in the agent UI or written to logs; only a mask reached the browser. There
+        was no number-reveal UI.
+    sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+    context_quote: |
+      Employer: Simple.life / Simple App  
+      Role: Software Developer
+  status: verified
+  verification:
+    reviewer: Candidate direct confirmation and Codex source review
+    reviewed_at: '2026-09-27'
+    method: Recorded the candidate''s direct clarification verbatim and checked the
+      claim scope against its stated project context.
+  review_notes: Internal ticket identifiers, permission names and detailed consent flow
+    are source context. Render only the employer-relevant privacy, security and lawful
+    calling outcome in a CV.
+- id: simple-2026-telephony-lawful-calling
+  employer: Simple.life
+  role: Software Developer
+  source:
+    path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+    quote: |
+      ## Lawful calling and delivery controls
+
+      - The backend scheduler enforced customer-timezone call windows, Sundays and public
+        holidays, the do-not-call list and automatic withdrawal of queued callbacks on
+        opt-out, window closure or hang. Amazon Connect retries were set to zero, so built-in
+        retries could not bypass these controls.
+      - The call outcome was written to the existing Intercom ticket, with no duplicate ticket
+        or duplicate PII record.
+    sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+    context_quote: |
+      Employer: Simple.life / Simple App  
+      Role: Software Developer
+  status: verified
+  verification:
+    reviewer: Candidate direct confirmation and Codex source review
+    reviewed_at: '2026-09-27'
+    method: Recorded the candidate''s direct clarification verbatim and checked the
+      claim scope against its stated project context.
+  review_notes: Render the effect of backend-owned lawful-calling controls without
+    exposing internal implementation or permission names.

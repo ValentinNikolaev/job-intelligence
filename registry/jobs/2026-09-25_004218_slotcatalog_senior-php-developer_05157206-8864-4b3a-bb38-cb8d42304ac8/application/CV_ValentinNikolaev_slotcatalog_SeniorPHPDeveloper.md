@@ -6,7 +6,7 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/
 
 ## Summary
 
-Senior backend developer with 15+ years across PHP and Go systems. I build and operate event-driven data services, integrations and production tooling, with recent PHP ownership of analytics architecture, event delivery and partner authentication flows. My work combines deliberate API and schema design with measurable operational results: reliable event delivery, faster onboarding of new streams and database stability under load.
+Senior backend developer with 15+ years across PHP and Go systems. I build privacy-sensitive production platforms, event-driven data services and integrations, including a health-domain Amazon Connect platform designed around PII/PHI protection. My work combines deliberate API and schema design with operational results: lawful calling controls, reliable event delivery, faster onboarding of new streams and database stability under load.
 
 ## Skills
 
@@ -19,7 +19,9 @@ Senior backend developer with 15+ years across PHP and Go systems. I build and o
 ### Simple.life / Simple App — Software Developer
 November 2023 – 2026
 
-- Architected and released an Amazon Connect telephony backend with federated agent access and phone-number masking; it passed security sign-off and avoided individual AWS accounts and SAML setup.
+- Designed the health-domain Amazon Connect backend around PII/PHI protection: phone numbers remained server-side and masked in browser and logs, with transient Connect attributes and TTL purging; formal security and call-recording compliance reviews cleared the production release.
+- Made lawful-calling decisions backend-owned through timezone windows, holidays, do-not-call enforcement and opt-out withdrawal; zero Amazon Connect retries ensured that retries could not bypass those controls.
+- Established least-privilege agent access with opaque Entra identities, role federation and lazy Connect-user lifecycle management, avoiding per-agent AWS accounts and a SAML application.
 - Built a multi-tenant Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk adapters, tenant ingestion and SQS queues, enabling the first B2B demonstration of the support-AI product.
 - Made ticket processing resilient during Intercom API degradation through partial-success handling and sharded cursor searches, retaining visibility of incomplete work instead of failing the full run.
 - Built self-service GDPR export workflows across seven data sources, giving administrators request creation, status tracking and review in one place.

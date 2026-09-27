@@ -6,7 +6,7 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/
 
 ## Summary
 
-Backend engineer and technical lead with more than 15 years of PHP and Go delivery experience. I turn product ideas into production services by defining integration boundaries, evolving event contracts and taking responsibility for reliability after release. Recent work includes a greenfield multi-tenant gateway, an evaluation pipeline for an LLM support agent and PHP analytics architecture under direct technical ownership. I am most effective where a team needs pragmatic architecture and hands-on delivery for a new or changing product.
+Lead backend developer with 15+ years across PHP and Go production systems. I own architecture for privacy-sensitive integrations, event-driven platforms and operational tooling. Recent work includes a PII/PHI-protected health-domain calling platform, vendor-neutral Go integration services and support automation. I combine system design, delivery ownership and production controls with event analytics and PHP platform work.
 
 ## Skills
 
@@ -19,10 +19,12 @@ Backend engineer and technical lead with more than 15 years of PHP and Go delive
 ### Simple.life / Simple App — Software Developer
 November 2023 – 2026
 
-- Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model and Intercom/Zendesk adapters, creating the company’s first B2B support-AI demonstration.
-- Built an evaluation pipeline for a production LLM support agent that joined conversation text, action events and subscription-state snapshots; retro-mapped 500+ product tickets to create training and evaluation data.
-- Architected and released an Amazon Connect calling backend after security sign-off, using federated agent access to remove per-agent AWS account setup.
-- Automated GDPR data exports across seven sources with a self-service administration workflow for request creation, listing and status tracking.
+- Owned the architecture and backend of a health-domain calling platform where PII/PHI protection led the design: customer numbers stayed server-side, masked in UI and logs, and short-lived in Amazon Connect; security and call-recording compliance reviews approved production release.
+- Designed backend-enforced calling policy for timezone windows, holidays, do-not-call controls and opt-outs, with zero Amazon Connect retries so the platform could not circumvent customer-contact restrictions.
+- Designed federated agent access around opaque Entra identities and least privilege, separating operational diagnostics from call access while removing per-agent AWS accounts and a SAML application.
+- Built the multi-tenant Go helpdesk gateway that isolated vendor SDKs behind a shared event model and enabled the first B2B support-AI demonstration.
+- Built the evaluation pipeline for the production support agent, combining ticket conversations, action events and subscription-state snapshots into evaluation JSON.
+- Automated GDPR export and deletion workflows across seven sources through a self-service administration flow.
 
 **Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Intercom API, Zendesk API
 
