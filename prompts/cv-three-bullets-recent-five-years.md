@@ -1,13 +1,27 @@
 # Require three substantial CV bullets for roles ending within five years
 
-Update the Job Intelligence CV quality contract and repair the recent six CV-only
-packages where the new rule finds a short role. Read `AGENTS.md`,
+Update the Job Intelligence CV quality contract and regenerate **all six CVs**
+prepared in the preceding six-CV editorial rebuild, including CVs that already
+meet the new per-role minimum. Read `AGENTS.md`,
 `config/codex-workflows.yaml`, `docs/application-quality.md`,
 `config/cv-editorial-knowledge.yaml`, the `$job-intelligence-workflow` skill,
 `prompts/cv-editorial-rebuild-six.md`, and the immutable candidate sources first.
-The six selected vacancy directories in that prompt define the package scope;
-use each vacancy's current `application_directory` rather than assuming the
+Use each vacancy's current `application_directory` rather than assuming the
 original path. In particular, Talmatic currently uses `application-codex/`.
+
+## Six CVs to regenerate
+
+Regenerate the CV Markdown, DOCX, upload-friendly CV copies, and CV-related
+manifest receipts for every vacancy below. Keep each draft and evidence review
+independent. Do not treat an already compliant bullet count as a reason to skip
+that vacancy.
+
+1. `registry/jobs/2026-09-14_180905_talmatic_senior-go-golang-software-engineer/`
+2. `registry/jobs/2026-09-25_004218_slotcatalog_senior-php-developer_05157206-8864-4b3a-bb38-cb8d42304ac8/`
+3. `registry/jobs/2026-09-25_004218_nova-digital_lead-backend-php-developer_72f6ead5-395f-45d9-bb98-9554ece2fe48/`
+4. `registry/jobs/2026-09-23_070623_webeetle_developer/`
+5. `registry/jobs/2026-09-25_111732_infobus_php-developer-support_1917faa8-9aeb-4bb4-96ec-7b29df67d582/`
+6. `registry/jobs/2026-09-25_181923_recare-deutschland-gmbh_senior-backend-engineer-go-m-w-d_f2ba10d6-6781-4168-bbcd-7c7becdfb7e5/`
 
 ## Editorial rule
 
@@ -52,17 +66,17 @@ role solely to bypass the three-bullet rule.
   Technologies lines, and a rejected duplicate/unsupported third bullet where
   the deterministic contract can detect it. Keep human factual-distinctness
   review explicit.
-- Audit the six current CVs individually. Rebuild and publish only the CV for each
-  package with an in-scope role below three, using verified vacancy-specific
-  evidence, updated claims and `cv_audit.bullet_decisions`, and a positive
-  editorial receipt.
-  Preserve cover letters, analysis, interview preparation, and status. Reuse a
-  fresh genuine same-profile match; if a new one is required, analyze that vacancy
-  rather than changing a provenance label.
-- Validate every changed draft with `validate-application --document cv`, publish
-  with `prepare --document cv`, then inspect the rendered DOCX/PDF for a readable
-  maximum of two pages with all Experience bullets present. Regenerate the catalog
-  when required; run the project checks and inspect the complete diff.
+- Audit and regenerate all six CVs individually under the new editorial rule,
+  using verified vacancy-specific evidence, updated claims and
+  `cv_audit.bullet_decisions`, and a positive editorial receipt. Preserve cover
+  letters, analysis, interview preparation, and status. Reuse a fresh genuine
+  same-profile match; if a new one is required, analyze that vacancy rather than
+  changing a provenance label.
+- Validate all six finalized drafts with `validate-application --document cv`,
+  publish the six CV-only packages with `prepare --document cv` after they pass,
+  then inspect every rendered DOCX/PDF for a readable maximum of two pages with
+  all Experience bullets present. Regenerate the catalog when required; run the
+  project checks and inspect the complete diff.
 
 Report per vacancy the before/after bullet counts by role, each added bullet and
 its candidate evidence, any fact still requiring confirmation, page count, and
