@@ -11,6 +11,19 @@ posting, company sources, and candidate evidence have not changed. Never reuse a
 different vacancy's research or wording. Finalize all selected CV drafts under
 `.codex-work/application/<directory>/` before validating any of them.
 
+Before reading vacancy evidence or assigning an editor, run one fail-closed batch gate:
+
+```text
+python run.py prepare-preflight <selector-1> [<selector-2> ...] --workflow prepare --model-profile <profile> --document cv
+```
+
+It checks the selected explicit batch, the configured storage adapter, canonical selector
+resolution, required MongoDB metadata, same-profile match freshness, score eligibility,
+and `hard_rejection`. For a MongoDB backend it writes a minimal `meta.yaml`, `job.md`,
+`match.yaml`, and optional company view only under `.codex-work/vacancy-snapshots/`.
+Never copy metadata from a shared checkout. A nonzero preflight ends the run before any
+draft, preview, conversion, or canonical package path is created.
+
 For each final CV, run:
 
 ```text
@@ -37,8 +50,8 @@ suite, evidence checks, and the prohibited-API scan. Do not rerun the full suite
 after a successful gate unless a relevant code change requires it.
 
 Record actual elapsed seconds in an ignored `.codex-work/preparation-timing.json`
-with keys `analysis`, `editorial_drafting`, `validation`, `conversion`,
-`visual_review`, `diff_review`, and `publication`. Record `null` for a stage that
+with keys `preflight`, `analysis`, `editorial_drafting`, `validation`, `preview`,
+`conversion`, `visual_review`, `publication`, and `finalization`. Record `null` for a stage that
 the run did not perform; never estimate human drafting from command time. Time
 preview conversion separately from the human review. Include a short before/after
 table in the report with the exact fixture or batch used and the remaining slowest

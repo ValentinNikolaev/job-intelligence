@@ -126,6 +126,61 @@ def metadata_paths(scope_root: Path, *, include_archived: bool = False) -> list[
             for doc in store.list_vacancies(scope=scope_root.name, include_archived=include_archived)]
 
 
+def resolve_vacancy_directories(registry_root: Path, selector: str) -> list[Path] | None:
+    """Resolve a vacancy from the configured canonical store.
+
+    ``None`` deliberately means that the legacy file backend is selected.  An empty
+    list means that MongoDB is authoritative but the selector does not exist; callers
+    must not search frozen registry files in that case.
+    """
+    registry_root = registry_root.resolve()
+    store = get_store(registry_root)
+    if store is None:
+        return None
+    jobs_dir = registry_root / "jobs"
+    records = store.list_vacancies(scope="jobs")
+    if selector.casefold() == "all":
+        return [jobs_dir / str(record["directory"]) for record in records]
+    matches = [
+        jobs_dir / str(record["directory"])
+        for record in records
+        if str(record.get("directory")) == selector
+        or str(record.get("meta", {}).get("id", "")) == selector
+    ]
+    return sorted(matches)
+
+
+def materialize_vacancy_snapshot(directory: Path) -> Path:
+    """Write the smallest read-only vacancy view under ``.codex-work``.
+
+    MongoDB remains the source of every byte.  The snapshot exists only so legacy
+    deterministic validators can operate in a worktree with no registry metadata
+    files.  It intentionally excludes application artifacts and never writes back.
+    """
+    directory = directory.resolve()
+    store = get_store(directory)
+    if store is None:
+        return directory
+    root = project_root(directory)
+    if root is None:
+        raise RuntimeError(f"cannot locate project root for vacancy snapshot: {directory}")
+    fields: dict[str, str] = {}
+    for filename in ("meta.yaml", "job.md", "match.yaml", "company.md"):
+        path = directory / filename
+        if exists(path):
+            fields[filename] = read_text(path)
+    digest = hashlib.sha256(
+        "".join(f"{name}\0{fields[name]}\0" for name in sorted(fields)).encode("utf-8")
+    ).hexdigest()[:20]
+    snapshot = root / ".codex-work" / "vacancy-snapshots" / directory.name / digest
+    snapshot.mkdir(parents=True, exist_ok=True)
+    for filename, content in fields.items():
+        target = snapshot / filename
+        if not target.is_file() or target.read_text(encoding="utf-8") != content:
+            target.write_text(content, encoding="utf-8")
+    return snapshot
+
+
 @contextmanager
 def mutation(path: Path, owner: str = "operational-write"):
     store = get_store(path)

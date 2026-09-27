@@ -16,6 +16,13 @@ that export. Scheduled analysis continues to use its deterministic sealed input 
 Read candidate evidence and application artifacts from their existing file paths.
 If storage is unavailable, stop the affected operation; never switch to old files.
 
+Before a preparation editor receives any selected vacancy, run `python run.py
+prepare-preflight <selector-1> [<selector-2> ...] --workflow prepare [--model-profile
+<profile>] [--document <document>]`. The command is read-only apart from an ignored
+`.codex-work/vacancy-snapshots/` view. It resolves selectors against canonical storage,
+checks the adapter, required metadata, current same-profile match, score eligibility and
+hard rejection. A failed preflight means no drafts, preview, conversion, or publication.
+
 ## Choose one mode
 
 Before choosing a mode, read `prompts/job-intelligence-workflow.md`. It is the shared

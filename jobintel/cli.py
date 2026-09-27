@@ -73,7 +73,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', 'prepare', 'evidence', 'documents', or 'applications'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'evidence', 'documents', or 'applications'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -171,9 +171,9 @@ def main(argv: list[str] | None = None) -> int:
     env_path = (args.env or sources_dir / ".env").resolve()
 
     target = args.target.casefold()
-    if args.document and target not in {"prepare", "pending", "validate-application"}:
+    if args.document and target not in {"prepare", "prepare-preflight", "pending", "validate-application"}:
         print(
-            "--document is valid only with prepare, pending prepare, or validate-application",
+            "--document is valid only with prepare-preflight, prepare, pending prepare, or validate-application",
             file=sys.stderr,
         )
         return 2
@@ -380,6 +380,8 @@ def main(argv: list[str] | None = None) -> int:
         return _run_analysis(args, config, project_root, registry_dir)
     if target == "analyze-batch":
         return _run_analysis_batch(args, config, project_root, registry_dir)
+    if target == "prepare-preflight":
+        return _run_preparation_preflight(args, config, project_root, registry_dir)
     if target == "prepare":
         return _run_preparation(args, config, project_root, registry_dir)
     if target == "pending":
@@ -1250,6 +1252,115 @@ def _run_preparation(
         return 1
 
 
+def _run_preparation_preflight(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> int:
+    """Fail closed before an editor receives a selected preparation batch."""
+    if not args.arguments or args.input or args.force or not args.workflow:
+        print(
+            "Usage: python run.py prepare-preflight <job-directory|vacancy-id> "
+            "[<job-directory|vacancy-id> ...] --workflow prepare "
+            "[--model-profile <profile>] [--document <document>]",
+            file=sys.stderr,
+        )
+        return 2
+    try:
+        report = _preflight_preparation(args, config, project_root, registry_dir)
+    except Exception as exc:
+        print(json.dumps({"ok": False, "errors": [str(exc)], "vacancies": []}, ensure_ascii=False))
+        return 2
+    print(json.dumps(report, ensure_ascii=False, sort_keys=True))
+    return 0
+
+
+def _preflight_preparation(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> dict[str, Any]:
+    """Resolve and verify a batch without mutating vacancy or package state.
+
+    This is shared by the explicit command and the publisher.  MongoDB fields are
+    read through the storage bridge and then materialised solely under
+    ``.codex-work``.  A report is intentionally complete so a caller does not need
+    to start drafting to discover a rejected or stale vacancy.
+    """
+    if not args.arguments:
+        raise ValueError("preparation requires at least one explicit vacancy selector")
+    policy, model_label = _selected_workflow(
+        args.workflow, project_root, {"prepare"}, args.model_profile
+    )
+    if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
+        raise ValueError("--allow-low-score-cv-refresh requires --document cv")
+
+    store = op.get_store(registry_dir)
+    backend = "yaml"
+    if store is not None:
+        backend = "mongodb"
+        hello = store.client.admin.command("hello")
+        if not hello.get("setName"):
+            raise ValueError("storage adapter is unavailable: MongoDB must be a replica set")
+        schema = store.get("storage_schema", "operational")
+        if not schema or schema.get("schema_version") != 1:
+            raise ValueError("storage adapter is unavailable: MongoDB storage schema is missing or incompatible")
+
+    profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+    directories = _resolve_explicit_preparation_directories(
+        registry_dir, args.arguments, limit=policy.prepare_batch_size
+    )
+    rows: list[dict[str, Any]] = []
+    errors: list[str] = []
+    for directory in directories:
+        row: dict[str, Any] = {"selector": next(
+            selector for selector in args.arguments
+            if directory in resolve_job_directories(registry_dir, selector)
+        ), "directory": directory.name}
+        try:
+            snapshot = op.materialize_vacancy_snapshot(directory)
+            meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+            required = ("id", "title", "company", "discovered_at")
+            missing = [key for key in required if not str(meta.get(key) or "").strip()]
+            if missing:
+                raise ValueError("metadata is missing required fields: " + ", ".join(missing))
+            if str(meta.get("status") or "").casefold() == "rejected":
+                raise ValueError("vacancy is rejected and cannot be prepared")
+            job = op.read_text(directory / "job.md").strip()
+            if not job:
+                raise ValueError("canonical job description is missing or empty")
+            match = _read_yaml_file(directory / "match.yaml", "match analysis")
+            if match.get("hard_rejection") is True:
+                raise ValueError("match has hard_rejection: true; publication is blocked")
+            if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
+                raise ValueError(
+                    f"vacancy is older than prepare_max_age_days {policy.prepare_max_age_days}"
+                )
+            if not _analysis_is_current(
+                directory, registry_dir, profile_paths, policy, project_root,
+                model_profile=args.model_profile,
+            ):
+                raise ValueError("match analysis is missing or stale for the selected model profile")
+            score = _match_score(directory)
+            if not policy.prepare_score_is_eligible(args.workflow, score) and not _allows_explicit_low_score_cv_refresh(directory, args, score):
+                raise ValueError(_ineligible_score_message(policy, args.workflow, score))
+            row.update({"ok": True, "score": score, "snapshot": str(snapshot)})
+        except Exception as exc:
+            row.update({"ok": False, "reason": str(exc)})
+            errors.append(f"{directory.name}: {exc}")
+        rows.append(row)
+    if errors:
+        raise ValueError("; ".join(errors))
+    return {
+        "ok": True,
+        "backend": backend,
+        "workflow": args.workflow,
+        "model": model_label,
+        "vacancies": rows,
+    }
+
 def _run_preparation_locked(
     args: argparse.Namespace,
     config: dict[str, str],
@@ -1270,44 +1381,10 @@ def _run_preparation_locked(
         return 2
 
     try:
-        policy, model_label = _selected_workflow(
-            args.workflow, project_root, {"prepare"}, args.model_profile
-        )
-        if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
-            raise ValueError("--allow-low-score-cv-refresh requires --document cv")
-        Registry(registry_dir).migrate_metadata()
+        report = _preflight_preparation(args, config, project_root, registry_dir)
+        policy, model_label = _selected_workflow(args.workflow, project_root, {"prepare"}, args.model_profile)
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
-        directories = _resolve_explicit_preparation_directories(
-            registry_dir,
-            args.arguments,
-            limit=policy.prepare_batch_size,
-        )
-        for directory in directories:
-            if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
-                raise ValueError(
-                    f"{directory.name}: vacancy is older than prepare_max_age_days "
-                    f"{policy.prepare_max_age_days}; do not prepare stale vacancies"
-                )
-            if not _analysis_is_current(
-                directory,
-                registry_dir,
-                profile_paths,
-                policy,
-                project_root,
-                model_profile=args.model_profile,
-            ):
-                raise ValueError(
-                    f"{directory.name}: match analysis is missing or stale; "
-                    "run workflow analyze first"
-                )
-            score = _match_score(directory)
-            if not policy.prepare_score_is_eligible(args.workflow, score) and not _allows_explicit_low_score_cv_refresh(
-                directory, args, score
-            ):
-                raise ValueError(
-                    f"{directory.name}: "
-                    + _ineligible_score_message(policy, args.workflow, score)
-                )
+        directories = [registry_dir / "jobs" / str(row["directory"]) for row in report["vacancies"]]
     except Exception as exc:
         print(f"Preparation configuration error: {exc}", file=sys.stderr)
         return 2

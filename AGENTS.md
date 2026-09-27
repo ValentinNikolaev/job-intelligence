@@ -35,6 +35,7 @@ a selected project workflow profile.
   If the stored match uses another profile, run a genuine vacancy-specific analysis in
   the selected-profile Codex task and publish that draft with `--force`; never relabel
   an older judgment.
+- Before any preparation/editorial task, run `python run.py prepare-preflight <explicit-selector> ... --workflow prepare [--model-profile <profile>] [--document cv]`. It is a read-only, fail-closed batch gate: it checks the configured storage adapter, resolves every selector from the canonical backend, materializes only ignored `.codex-work` snapshots, and rejects stale, ineligible, hard-rejected, or incomplete MongoDB records before drafts are created. After MongoDB cutover, never copy frozen registry metadata from another checkout to make preparation work.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
 - Treat user approval as the mandatory preparation gateway: research, adapted CV,

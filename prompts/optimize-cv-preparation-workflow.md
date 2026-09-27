@@ -51,6 +51,11 @@ The command must fail closed before drafting if a required gate is unavailable. 
 write only ignored work files. It must never print credentials or read a frozen YAML
 metadata fallback.
 
+The command is `python run.py prepare-preflight <selector-1> [<selector-2> ...]
+--workflow prepare [--model-profile <profile>] [--document cv]`. Its MongoDB context
+snapshot belongs only under `.codex-work/vacancy-snapshots/`; it is not a publication
+target or a fallback to a shared checkout.
+
 ### 2. Draft-lint before the combined validator
 
 Add a fast, deterministic lint command for one draft directory. It should reuse the

@@ -7,6 +7,12 @@ analysis, and `python run.py storage vacancy-context --selector <selected-id-or-
 --output .codex-work/vacancy-context.json` for an explicitly selected manual analysis or
 preparation vacancy. Candidate evidence and generated application documents stay files.
 
+For any explicitly selected preparation batch, run `python run.py prepare-preflight
+<selector-1> [<selector-2> ...] --workflow prepare [--model-profile <profile>]
+[--document <document>]` before reading vacancy evidence or drafting. It is a
+fail-closed, storage-backed gate; MongoDB canonical metadata is materialized only under
+`.codex-work/vacancy-snapshots/`. Do not copy frozen registry files from another checkout.
+
 This file is the shared execution contract for both interactive Codex tasks and
 Scheduled Tasks. A launcher may provide a vacancy URL, pasted vacancy text, an
 explicit registry directory, or a sealed analysis batch. The launcher is not the
