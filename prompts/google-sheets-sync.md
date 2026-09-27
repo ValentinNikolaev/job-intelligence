@@ -2,7 +2,7 @@
 
 Read `AGENTS.md`, `config/data-services.yaml`, and this file from the current checkout at the start of every run. Do not reuse an earlier prompt, destination, export, plan, or connector result. Record the checked-out Git revision in the run receipt.
 
-Invoke the installed `google-drive` and `google-sheets` skills for connector operations. Inspect `git status --short`; stop on real project changes or unresolved merges. Fetch `origin` once and compare the current branch with its configured upstream. Fast-forward a clean behind branch; stop on divergence or missing upstream. Re-read this prompt and config after updating and record the actual Git revision. Do not commit, push, migrate data, generate applications, or change a vacancy status.
+Invoke the installed `google-drive` and `google-sheets` skills for connector operations. Inspect the local checkout and remote revision with `gh`; stop on real project changes or unresolved merges. Use `gh repo sync` without `--force` only for a clean checkout; stop on refusal or divergence and preserve all local files. Re-read this prompt and config after updating and record the actual revision. Do not commit, push, migrate data, generate applications, or change a vacancy status.
 
 The fixed destination in `config/data-services.yaml` is spreadsheet `1E82sr4Lt-3yEB0Kb_Amso9NCMThcsF0Sy9x7ma5S848` in parent folder `1eNgUTyIqGnDqsakQ3JqwWyQHBjsR_WbK`; its backup folder is `1wsfd-IzS9viLGaU7y3dpQWrGryGyKPTP`. Read IDs from config before acting and never rediscover by name. GitHub Actions must never call Google APIs.
 

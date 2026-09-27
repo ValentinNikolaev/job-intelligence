@@ -10,8 +10,8 @@ model must match the selected profile; the repository cannot change the active m
 during a run.
 
 Configure this Scheduled Task with the model and reasoning from the selected `analyze`
-profile in `config/codex-workflows.yaml` (default: `luna_low`). Work only inside the
-configured repository.
+profile in `config/codex-workflows.yaml` (default: `luna_low`). Use an isolated managed
+worktree of the configured repository for the run.
 
 Read `AGENTS.md` and `prompts/job-intelligence-workflow.md`, invoke
 `$job-intelligence-workflow` in analysis mode, and use a
@@ -21,8 +21,8 @@ queue, running triage, or creating the pack. Keep it through publication, catalo
 generation, verification, commit, and push, and release it after success or failure:
 `python run.py workflow-lock acquire analysis --lock-token-file .codex-work/workflow-lock-token.txt --lock-timeout-seconds 3600`.
 Set `JOBINTEL_WORKFLOW_LOCK_TOKEN` from that token file for every guarded command in
-the run. Only after acquiring the lock, refresh the configured remote branch with
-`git fetch --prune origin` and `git pull --ff-only`. Record the authoritative backlog
+the run. Only after acquiring the lock, refresh the clean isolated checkout with
+`python scripts/finalize_repository.py preflight`. Record the authoritative backlog
 before analysis with `python run.py api workflow-summary --json`, then inspect queue
 details with `python run.py api queues analyze --json --limit 30`. Do not rely on stale
 task context when deciding which vacancies are pending. Release the lock with
@@ -66,3 +66,6 @@ number of analyzed vacancies or another concrete result when it makes the subjec
 informative. Do not select from the GitHub Actions templates and do not fall back to a
 generic `update data`, `update files`, `workflow changes`, or `automated update`
 subject. Put the workflow/run identifier and mechanical file counts in the commit body.
+Use `python scripts/finalize_repository.py review`, inspect its complete patch, then
+`python scripts/finalize_repository.py publish --subject <specific-subject> --body
+<run-metadata>`. Verify its reported remote head. Leave the shared checkout untouched.

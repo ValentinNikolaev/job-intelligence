@@ -62,11 +62,11 @@ a selected project workflow profile.
 
 ## Required repository finalization
 
-- Use GitHub CLI (`gh`) for repository inspection, synchronization, commit creation, and remote branch updates. Do not invoke `git` directly. This rule takes precedence over direct Git commands in older workflow instructions. Local file editing and deterministic project checks remain part of the workflow.
+- Use GitHub CLI (`gh`) for remote repository inspection. In an isolated managed worktree, the reviewed repository finalizer may use local Git for read-only state checks, fetch, clean fast-forward, staging, diff, commit, rebase of its own unpublished commit, and non-force push. Never run that finalizer in the shared checkout. Local file editing and deterministic project checks remain part of the workflow.
 - At the end of every successful task that changes repository files, regenerate the vacancy catalog when the workflow requires it, run the relevant checks, and inspect the complete diff.
 - Include every real added, modified, renamed, and deleted project file in one commit. Never include ignored secrets, `.codex-work/`, IDE files, caches, or virtual environments. Never leave real project changes unpublished.
-- Use `gh api` to create a tree and one commit based on the current remote branch, review the complete diff, and update the branch without force. If the branch advances concurrently, preserve those changes and rebuild the commit on the new head.
-- Publish the complete task as the final repository change with a concise message. Synchronize the local checkout using `gh repo sync` without `--force`; never discard unrelated local changes.
+- Use `python scripts/finalize_repository.py preflight`, then `review`, inspect its complete staged diff, and `publish` from that isolated worktree. The finalizer checks the current remote head with `gh`, creates one local commit, and pushes without force. If the branch advances, integrate those commits safely and retry; stop for review if the resulting project changes differ. Never discard unrelated local or remote changes. Do not run `gh repo sync` against the dirty authoring checkout. A separate clean checkout may use non-force synchronization when needed.
+- If the host cannot push the reviewed local commit, run `review-commit`, inspect its patch, then use `publish-api` from the same isolated worktree. It creates one remote commit from the exact reviewed blobs and updates the branch without force. Verify that commit in a separate clean checkout; do not synchronize over the authoring checkout.
 - For Codex-authored commits, derive the subject from the final diff and write a
   natural, specific imperative sentence that names the actual outcome. Include useful
   counts or vacancy context when they distinguish the run. Do not select from the

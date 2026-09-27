@@ -96,7 +96,9 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    workbench, exactly two evidence stories pointing to `registry/candidate/` sources,
    one sourced company-motivation fact, and both final-review confirmations. Ensure the
    three Wave 1 handoffs meet the minimum depth and required labeled sections from
-   `$job-intelligence-workflow`. Then run the single combined deterministic draft check:
+   `$job-intelligence-workflow`. When a CV is selected, run `python run.py documents
+   preview-cv .codex-work/application/<vacancy-directory>/cv.md` and inspect every
+   rendered page before publication. Then run the single combined deterministic draft check:
    `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
    After it succeeds, publish once with `python run.py prepare <vacancy-directory> --input .codex-work/application/<vacancy-directory> --workflow prepare --model-profile <selected-profile> [--document <document>]`.
    If validation fails, fix only its cause and rerun the validator. If DOCX conversion

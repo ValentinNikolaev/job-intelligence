@@ -15,17 +15,18 @@ workflow: it must read this contract and then apply the mode that matches its in
 ## One-time repository preflight
 
 Before reading candidate or vacancy evidence, browsing, or producing model-dependent
-drafts, inspect the repository once using `gh`; never invoke `git` directly.
+drafts, create or reuse an isolated managed worktree. Inspect the remote with `gh`.
 
-1. Use `gh api` to inspect the current remote branch and its file tree. Compare local
-   project files with that baseline, excluding ignored secrets and work files.
-2. Preserve existing local changes and synchronize using `gh repo sync` without
-   `--force`. Resolve overlapping changes before generating workflow artifacts.
-3. Re-read updated instructions and record the baseline revision. Treat unreadable
+1. Run `python scripts/finalize_repository.py preflight` in the isolated worktree.
+   It uses `gh` for remote inspection, refuses any local changes, fetches, and only
+   fast-forwards a clean checkout. Leave shared checkout changes untouched.
+2. Re-read updated instructions and record the baseline revision. Treat unreadable
    paths as an access problem, never as confirmed deletions.
 
-Before final publication, inspect the complete diff and recheck the remote head so
-concurrent changes survive. Follow the tree/commit/ref procedure in `AGENTS.md`.
+Before final publication, run `python scripts/finalize_repository.py review`, inspect
+its complete `.codex-work/finalization/review.patch`, then run `publish --subject
+<specific-subject>`. The finalizer rechecks the remote head and non-force pushes one
+reviewed commit. It stops if integration changes reviewed files or has a conflict.
 
 ## Modes
 
@@ -110,8 +111,10 @@ provenance is content provenance, not a label that may be rewritten.
    `workbench_complete: true`; two evidence stories with `candidate_source`; a
    company-motivation fact and `source_url`; and final `claim_grounding: true` and
    `cross_file_consistency: true`.
-5. The main agent performs one cross-file consistency and claim check, then runs
-   `validate-application` once and `prepare` once. Subagents never run those commands or
+5. The main agent performs one cross-file consistency and claim check, previews selected
+   CV drafts with `python run.py documents preview-cv .codex-work/application/<directory>/cv.md`,
+   inspects every rendered page, then runs `validate-application` once per finalized
+   vacancy and one batch `prepare` call after all drafts pass. Subagents never run those commands or
    edit another role's file. The validator checks the quality contract, required
    handoffs, provenance, word counts, and hashes; the manifest retains them.
 6. If subagents or enough slots are unavailable, execute the same roles sequentially,
@@ -161,7 +164,8 @@ before model-dependent publication and report the configuration mismatch.
 
 After deterministic publication, regenerate the catalog in its required separate
 process. Run the required tests and prohibited-API scan exactly once after the final
-catalog state, then inspect the complete diff and perform the Git handoff. Repeat only a
+catalog state, then inspect the complete staged diff and perform the isolated-worktree
+finalization. Repeat only a
 specific failed check after correcting its cause; do not duplicate the full suite or
 rerun the model workflow. For the Codex-authored commit, derive a natural, human-written
 subject from the staged diff and name the concrete outcome, including a useful count or
@@ -179,6 +183,6 @@ follow-up drafts follow `prompts/application-lifecycle.md` only after explicit
 approval for the named vacancy. Recording a confirmed submission preserves exact
 sent files; it never changes vacancy status automatically.
 
-The current AGENTS.md GitHub CLI policy takes precedence over legacy direct Git
-examples in this document. Use `gh` for repository operations and never force a
-remote update or overwrite unrelated local changes.
+`AGENTS.md` permits only the reviewed finalizer's narrow local Git operations in an
+isolated worktree. Use `gh` for remote inspection and never force a remote update or
+overwrite unrelated local changes.

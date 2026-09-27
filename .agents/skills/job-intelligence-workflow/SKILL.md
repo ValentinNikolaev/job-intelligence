@@ -23,7 +23,7 @@ execution contract for interactive and scheduled launchers; this skill supplies 
 tool sequencing and safety boundaries around that contract.
 
 Before reading vacancy or candidate evidence, researching, or drafting, perform the
-one-time repository preflight from the shared contract. Resolve a behind or diverged branch
+one-time repository preflight from the shared contract in an isolated managed worktree. Resolve a behind or diverged branch
 and any unexpected tracked changes in workflow output paths before model-dependent
 work. Preserve unrelated user changes. Do not repeat the initial synchronization during the same run.
 
@@ -85,6 +85,9 @@ current Codex surface, tell the user and do not publish under that profile.
    `validate-application` must check that quality contract, required handoffs, document
    minima, provenance, word counts, and hashes before publication. The final manifest
    must retain the quality contract, provenance, word counts, and hashes.
+   Before that check, preview a selected CV draft with `python run.py documents preview-cv
+   .codex-work/application/<vacancy-directory>/cv.md` and inspect its rendered pages.
+   Reuse the preview only while its draft and converter options remain unchanged.
 8. Never submit applications or contact employers.
 9. After preparation, the final report must list the application-package directory for
    every successfully prepared vacancy and the direct source URL for that vacancy. Give
@@ -103,11 +106,11 @@ After every successful collection, analysis, preparation, or manual status chang
 ## Mandatory repository finalization
 
 After the catalog process, run the relevant tests and API-prohibition scan exactly once, then
-inspect the complete diff. Use `gh api` to create a tree and one commit containing
-all real project changes, based on the current remote branch. Update the branch
-without force; if it advances concurrently, preserve those changes and rebuild on
-the new head. Synchronize the checkout with `gh repo sync` without `--force`.
-Never invoke `git` directly or include ignored secrets, caches, or local work files.
+run `python scripts/finalize_repository.py review` in the isolated worktree and inspect
+the complete staged patch. Publish with `python scripts/finalize_repository.py publish
+--subject <specific-subject>`. The finalizer creates one local commit, integrates a
+concurrent remote advance when reviewed files stay identical, and pushes without force.
+Do not synchronize a dirty shared checkout or include ignored secrets, caches, or local work files.
 For a Codex-authored commit, write a natural, human-written imperative subject from the complete diff naming
 the actual result, with useful counts or vacancy context. Do not use a generic `update data`, `update files`,
 `workflow changes`, or `automated update` subject, or GitHub Actions templates. If nothing changed, skip publication. End the report

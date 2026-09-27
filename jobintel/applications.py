@@ -331,6 +331,16 @@ class HostMarkdownDocxConverter:
         ).resolve()
         self.powershell = powershell or shutil.which("pwsh") or shutil.which("powershell") or ""
 
+    def preview_digest(self, source: Path) -> str:
+        """Bind a preview to exact Markdown, converter script, and DOCX options."""
+        content = (_win_long_path(source).read_bytes() + self.options_path.read_bytes()
+                   + self.script_path.read_bytes() + Path(__file__).read_bytes())
+        return hashlib.sha256(content).hexdigest()[:20]
+
+    def preview_directory(self, source: Path) -> Path:
+        vacancy_key = hashlib.sha256(str(source.parent.resolve()).encode("utf-8")).hexdigest()[:12]
+        return self.project_root / ".codex-work" / "previews" / vacancy_key / self.preview_digest(source)
+
     def convert(self, source: Path, target: Path) -> None:
         if not op.exists(self.script_path):
             raise ApplicationError(f"Markdown-to-DOCX converter not found: {self.script_path}")
@@ -498,7 +508,14 @@ class ApplicationGenerator:
                 filename = APPLICATION_FILES[field]
                 _write_text(staging / filename, generated[field])
             if self.document in {None, "cv"}:
-                self.converter.convert(staging / "cv.md", staging / "cv.docx")
+                reused = (
+                    isinstance(self.client, CodexApplicationDraftClient)
+                    and isinstance(self.converter, HostMarkdownDocxConverter)
+                    and _reuse_cv_preview(self.client.directory / "cv.md", staging / "cv.md",
+                                          staging / "cv.docx", self.converter)
+                )
+                if not reused:
+                    self.converter.convert(staging / "cv.md", staging / "cv.docx")
                 shutil.copyfile(_win_long_path(staging / "cv.md"), _win_long_path(staging / cv_export_files["markdown"]))
                 shutil.copyfile(_win_long_path(staging / "cv.docx"), _win_long_path(staging / cv_export_files["docx"]))
             if self.document in {None, "cover-letter"}:
@@ -1753,6 +1770,33 @@ def _find_docx_script() -> Path:
         if op.exists(candidate):
             return candidate
     return candidates[0]
+
+
+def _reuse_cv_preview(draft: Path, staged_source: Path, target: Path,
+                      converter: HostMarkdownDocxConverter) -> bool:
+    """Copy a verified preview only when it exactly matches publication inputs."""
+    work = converter.project_root / ".codex-work"
+    if not draft.resolve().is_relative_to(work.resolve()):
+        return False
+    preview = converter.preview_directory(draft)
+    receipt_path = preview / "receipt.json"
+    if not _win_long_path(receipt_path).is_file():
+        return False
+    try:
+        receipt = json.loads(_win_long_path(receipt_path).read_text(encoding="utf-8"))
+        artifact = preview / "cv.docx"
+        source_hash = hashlib.sha256(_win_long_path(staged_source).read_bytes()).hexdigest()
+        artifact_hash = hashlib.sha256(_win_long_path(artifact).read_bytes()).hexdigest()
+    except (OSError, ValueError) as exc:
+        raise ApplicationError(f"CV preview could not be verified: {exc}") from exc
+    if (receipt.get("source_sha256") != source_hash or
+            receipt.get("docx_sha256") != artifact_hash or
+            receipt.get("page_count", 0) < 1 or receipt.get("page_count", 0) > 2 or
+            receipt.get("rendered_pages") != receipt.get("page_count") or
+            receipt.get("experience_bullets", 0) < 1):
+        raise ApplicationError("CV preview no longer matches the staged source or artifact")
+    shutil.copyfile(_win_long_path(artifact), _win_long_path(target))
+    return True
 
 
 def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:

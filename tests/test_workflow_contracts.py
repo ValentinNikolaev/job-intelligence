@@ -50,10 +50,10 @@ class WorkflowContractTests(unittest.TestCase):
         )
 
         self.assertIn("## One-time repository preflight", contract)
-        self.assertIn("gh repo sync", contract)
-        self.assertIn("gh api", contract)
-        self.assertIn("never invoke `git` directly", contract)
-        self.assertIn("concurrent changes survive", contract)
+        self.assertIn("scripts/finalize_repository.py preflight", contract)
+        self.assertIn("scripts/finalize_repository.py review", contract)
+        self.assertIn("`gh` for remote inspection", contract)
+        self.assertIn("integration changes reviewed files", contract)
         self.assertIn("one-time repository preflight", workflow_skill)
 
     def test_application_contract_has_bounded_research_and_output(self) -> None:

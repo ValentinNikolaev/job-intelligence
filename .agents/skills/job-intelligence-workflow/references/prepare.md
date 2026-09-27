@@ -183,9 +183,21 @@ explicit single-document request, use the full-package flow below.
     and final claim grounding plus cross-file consistency results.
 12. After the main consistency pass, run the vacancy's single combined deterministic
    draft check:
+   First preview the finalized CV from its ignored draft path with `python run.py
+   documents preview-cv .codex-work/application/<vacancy-directory>/cv.md`. This
+   uses publication's converter and DOCX options, checks extractable Experience text,
+   enforces the two-page PDF budget, and renders pages under `.codex-work/previews/`.
+   Inspect each rendered page yourself. A preview never touches the canonical DOCX,
+   including when that file is open. A changed CV or converter option requires a new
+   preview for only that vacancy.
    `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
    Do this once per selected vacancy after drafting is complete, not after each wave or
    file.
+   Reuse completed vacancy research only while its posting, company sources, and
+   candidate evidence inputs remain unchanged. Reuse a match only when it is fresh
+   and from the same selected model profile. Record elapsed time separately for
+   analysis, editorial drafting, validation, conversion, visual review, diff review,
+   and publication; use `docs/preparation-runbook.md` for the timing ledger.
    The validator checks the quality contract, required handoffs, structure, minimum word
    counts, provenance, and hashes before publication. If it fails, correct only that
    vacancy and rerun its validator.

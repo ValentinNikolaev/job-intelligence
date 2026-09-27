@@ -7,13 +7,9 @@ This is a reporting-only benchmark task. Do not collect vacancies, run
 model-dependent vacancy analysis, prepare applications, change vacancy statuses, or
 call the OpenAI Platform API from project code.
 
-Before benchmarking, pull the latest committed repository state from the configured
-remote branch:
-
-```powershell
-git fetch --prune origin
-git pull --ff-only
-```
+Before benchmarking, inspect the local checkout and remote revision with `gh`.
+Use `gh repo sync` without `--force` only if the checkout is clean; stop on refusal
+or divergence and preserve all local files. Read the updated instructions afterward.
 
 Read `AGENTS.md` and `config/codex-workflows.yaml`, then gather current deterministic
 data:

@@ -91,11 +91,13 @@ consequence, or convert an unsupported metric into an achievement.
    final bullet has an evidence anchor and an editorial verdict.
 3. Run `validate-application ... --document cv` for each selected vacancy.
 4. Publish with `prepare ... --document cv` only after all selected drafts pass.
-5. Export each resulting DOCX and visually inspect the actual rendered document:
-   maximum two pages, no clipping, orphaned headings, overlap, or unreadable density.
+5. Before canonical publication, preview each final draft with `python run.py documents
+   preview-cv .codex-work/application/<vacancy-directory>/cv.md` and visually inspect
+   every rendered page: maximum two pages, no clipping, orphaned headings, overlap,
+   or unreadable density. The publisher reuses a matching checked preview DOCX.
 6. Regenerate the catalog, run the relevant tests and the prohibited-API scan, inspect
-   the complete diff, and publish all project changes to `main` through `gh api`
-   without force.
+   the complete staged diff, and publish the reviewed commit to `main` through
+   `scripts/finalize_repository.py` without force.
 
 Report, for every vacancy: the reordered final bullets with weights, removed/rejected
 bullets and their reasons, evidence sources, page count, validation result, and the

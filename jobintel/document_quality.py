@@ -7,6 +7,7 @@ import math
 import re
 import shutil
 import subprocess
+import sys
 import tempfile
 import unicodedata
 import zipfile
@@ -163,6 +164,41 @@ def _pdf_contents(path: Path) -> tuple[str, int]:
     return text, int(match[1])
 
 
+def pdf_page_count(path: Path) -> int:
+    info = _run([_tool("pdfinfo"), str(Path(path).resolve())])
+    match = re.search(r"^Pages:\s*(\d+)\s*$", info, re.MULTILINE)
+    if not match or int(match[1]) < 1:
+        raise DocumentQualityError("PDF page count could not be verified")
+    return int(match[1])
+
+
+def verify_cv_experience(source: Path, artifact: Path) -> int:
+    """Require actual Experience bullets to survive document text extraction."""
+    markdown = source.read_text(encoding="utf-8-sig")
+    match = re.search(r"(?im)^(?P<marks>#{1,3})\s+Experience\s*$", markdown)
+    if not match:
+        raise DocumentQualityError("CV has no Experience section")
+    remainder = markdown[match.end():]
+    following = re.search(rf"(?m)^#{{1,{len(match['marks'])}}}\s+\S", remainder)
+    section = remainder[:following.start()] if following else remainder
+    bullets = [line for line in section.splitlines() if re.match(r"^\s*[-*]\s+\S", line)]
+    if not bullets:
+        raise DocumentQualityError("CV Experience has no extractable bullets")
+    if artifact.suffix.lower() == ".docx":
+        text = _docx_contents(artifact, 9.0)[0]
+    else:
+        text = _pdf_contents(artifact)[0]
+    actual = _tokens(text)
+    cursor = 0
+    for token in _tokens(markdown_visible_text(section)):
+        while cursor < len(actual) and actual[cursor] != token:
+            cursor += 1
+        if cursor == len(actual):
+            raise DocumentQualityError("Export lost or reordered Experience text")
+        cursor += 1
+    return len(bullets)
+
+
 def _review(artifact_hash: str, value: Mapping[str, Any] | None) -> dict[str, Any]:
     if value is None:
         return {"status": "not_reviewed", "artifact_sha256": artifact_hash}
@@ -253,17 +289,28 @@ def validate_export(source: Path, artifact: Path, *, max_pages: int | None = Non
 
 
 def export_pdf(source: Path, target: Path, *, executable: str | Path | None = None) -> Path:
-    """Convert using a private LibreOffice profile, without overwriting a PDF."""
+    """Convert with LibreOffice or Windows Word, without overwriting a PDF."""
     source, target = Path(source).resolve(), Path(target).resolve()
     if source.suffix.lower() != ".docx" or not source.is_file():
         raise DocumentQualityError("PDF export requires an existing DOCX")
     if target.suffix.lower() != ".pdf" or target.exists():
         raise DocumentQualityError("PDF target must be a new .pdf file")
-    executable = _tool("soffice", executable)
     target.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        office_executable = _tool("soffice", executable)
+    except DocumentQualityError:
+        if executable is not None or not shutil.which("pwsh") or sys.platform != "win32":
+            raise
+        script = Path(__file__).resolve().parents[1] / "scripts" / "export_docx_pdf_word.ps1"
+        if not script.is_file():
+            raise DocumentQualityError(f"Word PDF export script is missing: {script}")
+        _run([shutil.which("pwsh"), "-NoProfile", "-File", str(script), "-InputPath", str(source), "-OutputPath", str(target)])
+        if not target.is_file() or target.stat().st_size == 0:
+            raise DocumentQualityError("Word did not create a nonempty PDF")
+        return target
     with tempfile.TemporaryDirectory(prefix="jobintel-pdf-", dir=target.parent) as temporary:
         work = Path(temporary)
-        _run([executable, f"-env:UserInstallation={(work / 'profile').as_uri()}", "--headless", "--convert-to", "pdf", "--outdir", str(work), str(source)])
+        _run([office_executable, f"-env:UserInstallation={(work / 'profile').as_uri()}", "--headless", "--convert-to", "pdf", "--outdir", str(work), str(source)])
         converted = work / (source.stem + ".pdf")
         if not converted.is_file() or converted.stat().st_size == 0:
             raise DocumentQualityError("LibreOffice did not create a nonempty PDF")
