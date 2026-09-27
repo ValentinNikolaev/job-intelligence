@@ -241,6 +241,10 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
 8. Proofread grammar, spelling, punctuation, capitalization, formatting, duplication,
     terminology, sentence length, and tone. Use present tense for current duties and past
     tense for previous duties and completed achievements.
+    Do not present source-code line counts, test counts or coverage, or removal of a
+    hardcoded limit as an achievement. Such internal implementation detail may support a
+    stronger verified operational, customer, security, reliability, or delivery outcome,
+    but omit it from the CV when that consequence is not supported by candidate evidence.
 9. Run the single final quality gate. Confirm factual support, credibility, prominent
    relevant experience, ATS readability, internal consistency, and authentic
    customization. Score role fit, recruiter screening potential, hiring-manager appeal,

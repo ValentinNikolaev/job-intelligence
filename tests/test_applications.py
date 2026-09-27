@@ -22,6 +22,7 @@ from jobintel.applications import (
     QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
     _validate_cv_audit_bullet_coverage,
+    _validate_cv_experience_bullets,
     _validate_cv_role_depth,
     _validate_cover_letter_paragraphs,
     _keep_cv_role_header_with_date,
@@ -271,6 +272,16 @@ class ApplicationTests(unittest.TestCase):
             "reason": "Shows team-level influence.",
         })
         _validate_cv_audit_bullet_coverage(cv, decisions)
+
+    def test_cv_rejects_source_line_count_as_achievement_metric(self) -> None:
+        cv = (
+            "## Experience\n\n### Example — Backend Engineer\n"
+            "- Consolidated pipelines, reducing code from 1,670 to 800 lines.\n"
+            "- Reduced peak database load by moving reports to a read replica.\n"
+            "Technologies: Go, PostgreSQL\n\n## Education\n"
+        )
+        with self.assertRaisesRegex(ApplicationError, "source-code line counts"):
+            _validate_cv_experience_bullets(cv, minimum=2)
 
     def v2_letter_draft(self):
         from jobintel.evidence import bootstrap_evidence_bank

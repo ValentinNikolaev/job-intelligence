@@ -5,7 +5,7 @@ prompt_version: sha256:f194cee284680ab8df792d1843ab47732c893cb66392cead375a60424
 model: codex:gpt-5.6-terra:high
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-generated_at: '2026-09-26T22:31:21Z'
+generated_at: '2026-09-27T15:27:29Z'
 documents:
   cv:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
@@ -15,7 +15,7 @@ documents:
     model: codex:gpt-5.6-terra:high
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-    generated_at: '2026-09-26T22:31:21Z'
+    generated_at: '2026-09-27T15:27:29Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 520
-      sha256: sha256:dc8d687c373482dc66942f24b0eff72a88356eaee136694c8e9d12be76efeb43
+      word_count: 426
+      sha256: sha256:8ac5c8b932d1700799a952428d134538def4f94d9f150d42dff99c5b83545458
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 4b6eed7126b5d11563746b907e0a885910c2e528c9501c82baacc2d491e856a0
+    sha256: 66ecd8b7c1501770eef83a4dc78623bdb180494bb373fb9e108b16c8502bb221
     evidence_bank:
       schema_version: 1
       sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
@@ -79,10 +79,9 @@ quality:
         retracted: 3
         unverified: 9
         verified: 45
-    claim_count: 25
+    claim_count: 13
     evidence_ids:
-    - airslate-logger
-    - airslate-production-fixes
+    - airslate-logger-general
     - career-15-years
     - crurated-confirmed-crutrade-production
     - crurated-confirmed-datalake-production
@@ -92,20 +91,15 @@ quality:
     - crurated-reviewed-delivery-reliability
     - crurated-reviewed-stream-onboarding
     - crurated-reviewed-throughput
-    - crurated-stream-design
-    - cv-hyprr
     - database-reliability
-    - hyprr-user-confirmed
     - simple-2026-cron-resilience
     - simple-2026-gdpr
     - simple-2026-helpdesk-gateway
-    - simple-2026-snowflake-pipelines
-    - simple-2026-stack-php
     - simple-2026-telephony
-    - support-platform-linkedin
     evidence_entries:
-    - id: airslate-logger
+    - id: airslate-logger-general
       employer: airSlate
+      role: Software Developer
       source:
         path: registry/candidate/linkedin-profile.md
         quote: "- Developed a Laravel/Symfony-based product-wide logger package, adhering\
@@ -128,33 +122,22 @@ quality:
           \ to 65% to avoid interruptions in\n  the product's service during prime\
           \ time, resulting in a 23% reduction in operational\n  expenses."
         sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
-      role: Senior Software Developer
-      status: verified
-      verification:
-        reviewer: Codex transcription review
-        reviewed_at: '2026-09-25'
-        method: Compared exact candidate-source excerpt, employer and role; no new
-          candidate attestation.
-      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
-        confirmation before reuse.
-    - id: airslate-production-fixes
-      employer: airSlate
-      role: Software Developer
-      source:
+      attribution_source:
         path: registry/candidate/backend-engineer-cv.md
-        quote: "- **Troubleshot** production issues using logs, monitoring, and SRE\
-          \ dashboards;\n  delivered fixes and operational improvements."
-        context_quote: '### airSlate
+        quote: '### airSlate
 
 
           **Software Developer**'
         sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
       status: verified
       verification:
-        reviewer: Codex source review
-        reviewed_at: '2026-09-25'
-        method: Compared exact candidate-authored CV excerpt and airSlate employer/role
-          attribution; no numerical outcome inferred.
+        reviewer: Codex cross-source review
+        reviewed_at: '2026-09-26'
+        method: Compared the exact logger excerpt in candidate LinkedIn export with
+          the generalized Software Developer attribution in candidate CV; no LinkedIn
+          metrics used.
+      review_notes: Use the generalized Software Developer/Programming Team Lead CV
+        heading; the imported LinkedIn Senior title is not asserted.
     - id: career-15-years
       employer: null
       source:
@@ -316,50 +299,6 @@ quality:
           without excluding any; not independently audited.
       review_notes: Use only within stated system scope and preserve original units;
         candidate correction supersedes this entry.
-    - id: crurated-stream-design
-      employer: CRURATED
-      source:
-        path: registry/candidate/linkedin-profile.md
-        quote: "- Build routing logic supporting multiple downstreams (e.g., Webhook,\
-          \ S3) with strong\n  delivery guarantees and backpressure handling."
-        context_quote: '### CRURATED
-
-
-          **Software Developer**'
-        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
-      role: Software Developer
-      status: verified
-      verification:
-        reviewer: Codex transcription review
-        reviewed_at: '2026-09-25'
-        method: Compared exact candidate-source excerpt, employer and role; no new
-          candidate attestation.
-      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
-        confirmation before reuse.
-    - id: cv-hyprr
-      employer: Hyprr
-      role: Technical Lead
-      source:
-        path: registry/candidate/backend-engineer-cv.md
-        quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\n\
-          Hyprr was a creator-focused digital platform with blockchain/NFT components\
-          \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
-          \ from prototype to closed beta in under 6 months.**\n- Influenced product\
-          \ development across project planning, microservice and serverless\n  architecture,\
-          \ CI/CD, and reliability/serviceability concerns.\n- Defined the technology\
-          \ roadmap with the CTO and helped establish the core stack for\n  product\
-          \ delivery.\n- Led backend development and worked on the platform's Ethereum-based\
-          \ digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel | MySQL\
-          \ | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
-        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
-      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
-        sections still obey the ten-year cutoff.
-      status: verified
-      verification: &id001
-        reviewer: Codex evidence-quality implementation review
-        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
-        method: Compared verbatim extract and attribution to immutable candidate source;
-          source-grounding verification, not new candidate attestation.
     - id: database-reliability
       employer: airSlate
       role: Software Developer
@@ -377,25 +316,11 @@ quality:
         Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
         and other source records.
       status: verified
-      verification: *id001
-    - id: hyprr-user-confirmed
-      employer: Hyprr
-      source:
-        path: registry/candidate/user-confirmed-impact-2026-09-25.md
-        quote: 'At Hyprr, the product progressed from prototype to closed
-
-          beta in less than six months.'
-        context_quote: '**Hyprr role:** Technical Lead'
-        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
-      status: verified
       verification:
-        reviewer: Codex transcription review
-        reviewed_at: '2026-09-25'
-        method: Transcribed direct candidate correction in this task; measurement
-          system not supplied.
-      review_notes: Direct candidate confirmation; supersedes conflicting imported
-        volume claims.
-      role: Technical Lead
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
     - id: simple-2026-cron-resilience
       employer: Simple.life
       role: Software Developer
@@ -413,7 +338,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: &id002
+      attribution_source: &id001
         path: registry/candidate/user-confirmed-career-clarifications.md
         quote: '- **Role:** Software Developer'
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
@@ -448,7 +373,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id002
+      attribution_source: *id001
       status: verified
       verification:
         reviewer: Codex source review
@@ -478,7 +403,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id002
+      attribution_source: *id001
       status: verified
       verification:
         reviewer: Codex source review
@@ -488,53 +413,6 @@ quality:
       review_notes: Candidate-reported delivered work only; estimates and example
         bullets are excluded. August-September work confirmed as past in user follow-up;
         exact end month remains unconfirmed.
-    - id: simple-2026-snowflake-pipelines
-      employer: Simple.life
-      role: Software Developer
-      source:
-        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
-        quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one
-          engine (Sep 2026)**
-
-          - Researched the codebase, proved ~70% structural identity, replaced 3 independent
-          cron pipelines (CEO questions, profile reports, deletion feedback) with
-          one two-phase engine (ingest + push; keyset pagination, run budget, throttle,
-          retries, feature flag) via Template Method with 6 hook points.
-
-          - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered.
-          Removed a hard cap of 100 items/day. Eliminated daily full-history re-reads
-          from Snowflake. No public API / admin-UI changes; no downtime.'
-        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
-        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
-          Support & Content Platform'
-      attribution_source: *id002
-      status: verified
-      verification:
-        reviewer: Codex source review
-        reviewed_at: '2026-09-26'
-        method: Compared direct candidate-supplied fact section and earlier direct
-          role clarification; Jira and Slack records were not independently inspected.
-      review_notes: Candidate-reported delivered work only; estimates and example
-        bullets are excluded. August-September work confirmed as past in user follow-up;
-        exact end month remains unconfirmed.
-    - id: simple-2026-stack-php
-      employer: Simple.life
-      role: Software Developer
-      source:
-        path: registry/candidate/user-confirmed-simple-life-follow-up-2026-09-26.md
-        quote: В Simple.life php имел место но достен лишь в упоминания используемых
-          технологий.
-        sha256: 15edbe5ce107ec7a6db46fb490c3f6185590fe5021b7db0218b43c6bec9398f8
-      attribution_source: *id002
-      technologies:
-      - php
-      status: verified
-      verification:
-        reviewer: Codex transcription and source review
-        reviewed_at: '2026-09-26'
-        method: Transcribed the candidate follow-up verbatim; technology permitted
-          only in Simple.life Technologies line.
-      review_notes: No specific Simple.life PHP contribution or result is confirmed.
     - id: simple-2026-telephony
       employer: Simple.life
       role: Software Developer
@@ -567,7 +445,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id002
+      attribution_source: *id001
       status: verified
       verification:
         reviewer: Codex source review
@@ -577,31 +455,6 @@ quality:
       review_notes: Candidate-reported delivered work only; estimates and example
         bullets are excluded. August-September work confirmed as past in user follow-up;
         exact end month remains unconfirmed.
-    - id: support-platform-linkedin
-      employer: Simple App
-      source:
-        path: registry/candidate/linkedin-profile.md
-        quote: 'I design and own a support automation platform that connects Zendesk,
-          Intercom, and
-
-          internal services through a robust, scalable backend in Go. My work enables
-          the support
-
-          team to operate faster, smarter, and at scale - even during peak loads.'
-        context_quote: '### Simple App
-
-
-          **Software Developer**'
-        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
-      role: Software Developer
-      status: verified
-      verification:
-        reviewer: Codex transcription review
-        reviewed_at: '2026-09-25'
-        method: Compared exact candidate-source excerpt, employer and role; no new
-          candidate attestation.
-      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
-        confirmation before reuse.
     checks:
     - source_quotes
     - source_hashes
@@ -613,122 +466,142 @@ quality:
     cv_audit:
       target_role: Senior PHP Developer
       top_third_evidence_ids:
+      - career-15-years
       - simple-2026-telephony
-      - crurated-reviewed-throughput
       bullet_decisions:
-      - text: Architected and released an outbound telephony backend on Amazon Connect
-          after security sign-off, using agent federation to avoid individual AWS
-          accounts while keeping customer phone numbers masked and out of logs.
+      - text: Architected and released an Amazon Connect telephony backend with federated
+          agent access and phone-number masking; it passed security sign-off and avoided
+          individual AWS accounts and SAML setup.
         decision: keep
-        reason: Leads with a recent architecture and security release; the posting
-          explicitly values accountable production ownership.
-      - text: Built a multi-tenant Go helpdesk gateway with vendor-neutral events
-          and Intercom/Zendesk adapters, enabling the first B2B demo of the support
-          AI product.
+        reason: Leads with the strongest vacancy-relevant production result and a
+          concrete system consequence.
+      - text: Built a multi-tenant Go helpdesk gateway with vendor-neutral events,
+          Intercom and Zendesk adapters, tenant ingestion and SQS queues, enabling
+          the first B2B demonstration of the support-AI product.
         decision: keep
-        reason: Separately proves API abstraction and a shipped B2B demo, relevant
-          to evolving product-backed data services.
-      - text: Consolidated three Snowflake-to-Intercom pipelines into one engine,
-          reducing code from 1,670 to 800 lines, testing all three processes and removing
-          a 100-item-per-day cap.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
+      - text: Made ticket processing resilient during Intercom API degradation through
+          partial-success handling and sharded cursor searches, retaining visibility
+          of incomplete work instead of failing the full run.
         decision: keep
-        reason: Shows maintainability, tested consolidation and removal of a delivery
-          cap, all with candidate-supplied code figures.
-      - text: Resolved recurring fatal cron runs under Intercom API degradation by
-          introducing partial-success handling and sharded cursor searches for a backlog
-          of about 7,000 tickets.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
+      - text: Built self-service GDPR export workflows across seven data sources,
+          giving administrators request creation, status tracking and review in one
+          place.
         decision: keep
-        reason: Shows operational diagnosis and failure handling under a degraded
-          external API, rather than a generic support duty.
-      - text: Automated GDPR data exports across seven sources through a self-service
-          admin workflow, replacing manual coordination for request creation and status
-          tracking.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
+      - text: Architected a production event analytics pipeline with queues and AWS
+          EventBridge; DataLake throughput grew by more than tenfold under technical
+          ownership.
         decision: keep
-        reason: Shows a distinct compliance workflow spanning data sources without
-          claiming an unmeasured time or cost saving.
-      - text: Architected an event-driven analytics pipeline with queues and AWS EventBridge;
-          DataLake throughput increased by more than 10x under full technical ownership.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
+      - text: Reduced onboarding of a new analytics stream from several days to under
+          four hours through modular stream design.
         decision: keep
-        reason: Leads PHP experience with the strongest confirmed throughput outcome
-          and candidate-owned event architecture.
-      - text: Kept event delivery reliability above 99.9% through retry and observability
-          work on the production analytics pipeline.
+        reason: Uses a candidate-reviewed operational outcome with explicit technical
+          ownership.
+      - text: Maintained event delivery reliability above 99.9% with fault-tolerant
+          routing, retries and observability.
         decision: keep
-        reason: Adds the separately measured reliability result for production operation;
-          this is not another throughput claim.
-      - text: Designed versioned event schemas and owned parallel event-version publication
-          in production, allowing analytics consumers to move between schemas without
-          blocking new events.
+        reason: Uses a candidate-reviewed operational outcome with explicit technical
+          ownership.
+      - text: Designed versioned event schemas with parallel publication in production,
+          letting consumers move between schemas while new events continued to arrive.
         decision: keep
-        reason: Shows schema migration judgment and actual parallel event-version
-          publication across analytics consumers.
-      - text: Owned the production Crutrade integration, including authentication
-          and OTP, account linking, collection exchange and purchase-ownership verification.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
+      - text: Delivered the production Crutrade integration for authentication and
+          OTP, account linking, collection exchange, purchase-ownership verification
+          and request/response logging.
         decision: keep
-        reason: Shows another production integration with security-sensitive authentication
-          and ownership verification.
-      - text: Reduced setup time for new analytics streams from several days to under
-          four hours through modular design.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
+      - text: Reduced peak load on the main database by isolating bottlenecks and
+          redistributing workload, improving stability during high-traffic periods.
         decision: keep
-        reason: Adds a distinct modular-design efficiency result with a candidate-reviewed
-          setup-time figure.
-      - text: Reduced peak load on the main database by finding bottlenecks and redistributing
-          workload, improving stability during high-traffic periods.
-        decision: keep
-        reason: Leads airSlate with database load reduction, a direct fit for relational
-          performance and stability.
+        reason: Retains a distinct architecture, reliability, security or delivery
+          consequence; it is not a duty list or an internal LOC metric.
       - text: Built a Laravel/Symfony logger package used across services and aligned
           it with the interservice communication standard.
         decision: keep
-        reason: Shows the concrete Laravel/Symfony artifact used across services,
-          not merely a framework keyword.
-      - text: Diagnosed production issues with logs, monitoring and SRE dashboards,
-          then delivered fixes and operational improvements.
-        decision: keep
-        reason: Adds source-backed incident diagnosis and fixes as a separate operational
-          contribution.
-      - text: Defined the technology roadmap with the CTO and established the PHP,
-          Go, AWS and Kubernetes stack for product delivery.
-        decision: keep
-        reason: Leads the older Hyprr role with a roadmap and stack decision made
-          with the CTO.
-      - text: Led backend development on Ethereum-based digital asset components as
-          the platform advanced from prototype to closed beta in under six months.
-        decision: keep
-        reason: Shows backend digital-asset work on the beta product, distinct from
-          the roadmap decision; beta timing appears once.
-    reviewer: Codex self-review in current correction task (not independent)
+        reason: Keeps a distinct cross-service standardization result without presenting
+          routine support work as an achievement.
+    reviewer: Codex CV correction review
     document_sha256:
-      cv: sha256:dc8d687c373482dc66942f24b0eff72a88356eaee136694c8e9d12be76efeb43
-      cover-letter: sha256:4586646e0084ae9efd5bc676dc1f352bb42b220eec118ac27a1cf4e3d353e275
-      analysis: sha256:0aa64c0d9201c59768ea8f13aae015289cf5b8d80bae33766a3ae951781b649b
-      interview-preparation: sha256:2308166ff820c83ca6469a1043afbaae80e6b8a5d2355d59326c5452d21703a2
+      cv: sha256:8ac5c8b932d1700799a952428d134538def4f94d9f150d42dff99c5b83545458
     requirements:
     - requirement: 5+ years of PHP production experience
       importance: critical
       basis: stated
       jd_quote: 5+ years of PHP experience in production environments
-      match: strong
-      candidate_quote: 'Backend engineer with 15+ years of experience building and
-        improving production
-
-        systems across'
-      risk: ''
-      mitigation: ''
+      match: unknown
+      candidate_quote: ''
+      risk: The refreshed CV does not surface direct role-specific evidence for this
+        requirement.
+      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
       hard_blocker: false
-      evidence_ids:
-      - career-15-years
+      evidence_ids: []
     - requirement: Laravel and/or Symfony in large codebases
       importance: critical
       basis: stated
       jd_quote: Laravel and/or Symfony
-      match: strong
-      candidate_quote: Developed a Laravel/Symfony-based product-wide logger package
-      risk: ''
-      mitigation: ''
+      match: unknown
+      candidate_quote: ''
+      risk: The refreshed CV does not surface direct role-specific evidence for this
+        requirement.
+      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
       hard_blocker: false
-      evidence_ids:
-      - airslate-logger
+      evidence_ids: []
+    - requirement: PostgreSQL / MySQL and relational data modeling
+      importance: high
+      basis: stated
+      jd_quote: PostgreSQL / MySQL
+      match: unknown
+      candidate_quote: ''
+      risk: The refreshed CV does not surface direct role-specific evidence for this
+        requirement.
+      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Designing and maintaining REST APIs under real traffic
+      importance: high
+      basis: stated
+      jd_quote: Experience designing and maintaining **REST APIs** under real traffic
+      match: unknown
+      candidate_quote: ''
+      risk: The refreshed CV does not surface direct role-specific evidence for this
+        requirement.
+      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Diagnose and resolve production issues under pressure
+      importance: high
+      basis: stated
+      jd_quote: Ability to diagnose and resolve production issues under pressure
+      match: unknown
+      candidate_quote: ''
+      risk: The refreshed CV does not surface direct role-specific evidence for this
+        requirement.
+      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Own features and services end-to-end including release and post-release
+        stability
+      importance: high
+      basis: stated
+      jd_quote: Own features and services end-to-end, including releases and post-release
+        stability
+      match: unknown
+      candidate_quote: ''
+      risk: The refreshed CV does not surface direct role-specific evidence for this
+        requirement.
+      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
+      hard_blocker: false
+      evidence_ids: []
     - requirement: English C1-C2 proficiency
       importance: high
       basis: stated
@@ -739,52 +612,6 @@ quality:
       mitigation: Confirm current English level with the candidate before submission.
       hard_blocker: false
       evidence_ids: []
-    - requirement: PostgreSQL / MySQL and relational data modeling
-      importance: high
-      basis: stated
-      jd_quote: PostgreSQL / MySQL
-      match: strong
-      candidate_quote: peak load on the main database by removing bottlenecks
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - database-reliability
-    - requirement: Designing and maintaining REST APIs under real traffic
-      importance: high
-      basis: stated
-      jd_quote: Experience designing and maintaining **REST APIs** under real traffic
-      match: strong
-      candidate_quote: CRURATED DataLake and event analytics
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - crurated-confirmed-datalake-production
-    - requirement: Diagnose and resolve production issues under pressure
-      importance: high
-      basis: stated
-      jd_quote: Ability to diagnose and resolve production issues under pressure
-      match: strong
-      candidate_quote: using logs, monitoring, and SRE dashboards
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - airslate-production-fixes
-    - requirement: Own features and services end-to-end including release and post-release
-        stability
-      importance: high
-      basis: stated
-      jd_quote: Own features and services end-to-end, including releases and post-release
-        stability
-      match: strong
-      candidate_quote: CRURATED event delivery reliability exceeded 99.9%
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - crurated-reviewed-delivery-reliability
     - requirement: Practicable usage of the filament admin-panel builder (v.5)
       importance: preferred
       basis: stated
@@ -799,66 +626,68 @@ quality:
     claims_ledger_path: claims.yaml
     claims:
     - document: cv
-      text: Architected and released an outbound telephony backend on Amazon Connect
-        after security sign-off, using agent federation to avoid individual AWS accounts
-        while keeping customer phone numbers masked and out of logs.
+      text: 15+ years
+      evidence_ids:
+      - career-15-years
+    - document: cv
+      text: event-driven data services
       evidence_ids:
       - simple-2026-telephony
     - document: cv
-      text: Built a multi-tenant Go helpdesk gateway with vendor-neutral events and
-        Intercom/Zendesk adapters, enabling the first B2B demo of the support AI product.
+      text: Architected and released an Amazon Connect telephony backend with federated
+        agent access and phone-number masking; it passed security sign-off and avoided
+        individual AWS accounts and SAML setup.
+      evidence_ids:
+      - simple-2026-telephony
+    - document: cv
+      text: Built a multi-tenant Go helpdesk gateway with vendor-neutral events, Intercom
+        and Zendesk adapters, tenant ingestion and SQS queues, enabling the first
+        B2B demonstration of the support-AI product.
       evidence_ids:
       - simple-2026-helpdesk-gateway
     - document: cv
-      text: Consolidated three Snowflake-to-Intercom pipelines into one engine, reducing
-        code from 1,670 to 800 lines, testing all three processes and removing a 100-item-per-day
-        cap.
-      evidence_ids:
-      - simple-2026-snowflake-pipelines
-    - document: cv
-      text: Resolved recurring fatal cron runs under Intercom API degradation by introducing
-        partial-success handling and sharded cursor searches for a backlog of about
-        7,000 tickets.
+      text: Made ticket processing resilient during Intercom API degradation through
+        partial-success handling and sharded cursor searches, retaining visibility
+        of incomplete work instead of failing the full run.
       evidence_ids:
       - simple-2026-cron-resilience
     - document: cv
-      text: Automated GDPR data exports across seven sources through a self-service
-        admin workflow, replacing manual coordination for request creation and status
-        tracking.
+      text: Built self-service GDPR export workflows across seven data sources, giving
+        administrators request creation, status tracking and review in one place.
       evidence_ids:
       - simple-2026-gdpr
     - document: cv
-      text: Architected an event-driven analytics pipeline with queues and AWS EventBridge;
-        DataLake throughput increased by more than 10x under full technical ownership.
+      text: Architected a production event analytics pipeline with queues and AWS
+        EventBridge; DataLake throughput grew by more than tenfold under technical
+        ownership.
       evidence_ids:
       - crurated-eventbridge
       - crurated-reviewed-throughput
       - crurated-confirmed-datalake-production
     - document: cv
-      text: Kept event delivery reliability above 99.9% through retry and observability
-        work on the production analytics pipeline.
+      text: Reduced onboarding of a new analytics stream from several days to under
+        four hours through modular stream design.
+      evidence_ids:
+      - crurated-reviewed-stream-onboarding
+    - document: cv
+      text: Maintained event delivery reliability above 99.9% with fault-tolerant
+        routing, retries and observability.
       evidence_ids:
       - crurated-reviewed-delivery-reliability
-      - crurated-stream-design
     - document: cv
-      text: Designed versioned event schemas and owned parallel event-version publication
-        in production, allowing analytics consumers to move between schemas without
-        blocking new events.
+      text: Designed versioned event schemas with parallel publication in production,
+        letting consumers move between schemas while new events continued to arrive.
       evidence_ids:
       - crurated-event-design
       - crurated-confirmed-event-version-production
     - document: cv
-      text: Owned the production Crutrade integration, including authentication and
-        OTP, account linking, collection exchange and purchase-ownership verification.
+      text: Delivered the production Crutrade integration for authentication and OTP,
+        account linking, collection exchange, purchase-ownership verification and
+        request/response logging.
       evidence_ids:
       - crurated-confirmed-crutrade-production
     - document: cv
-      text: Reduced setup time for new analytics streams from several days to under
-        four hours through modular design.
-      evidence_ids:
-      - crurated-reviewed-stream-onboarding
-    - document: cv
-      text: Reduced peak load on the main database by finding bottlenecks and redistributing
+      text: Reduced peak load on the main database by isolating bottlenecks and redistributing
         workload, improving stability during high-traffic periods.
       evidence_ids:
       - database-reliability
@@ -866,110 +695,41 @@ quality:
       text: Built a Laravel/Symfony logger package used across services and aligned
         it with the interservice communication standard.
       evidence_ids:
-      - airslate-logger
-    - document: cv
-      text: Diagnosed production issues with logs, monitoring and SRE dashboards,
-        then delivered fixes and operational improvements.
-      evidence_ids:
-      - airslate-production-fixes
-    - document: cv
-      text: Defined the technology roadmap with the CTO and established the PHP, Go,
-        AWS and Kubernetes stack for product delivery.
-      evidence_ids:
-      - cv-hyprr
-    - document: cv
-      text: Led backend development on Ethereum-based digital asset components as
-        the platform advanced from prototype to closed beta in under six months.
-      evidence_ids:
-      - cv-hyprr
-      - hyprr-user-confirmed
-    - document: cover-letter
-      text: DataLake throughput rose by more than tenfold
-      evidence_ids:
-      - crurated-reviewed-throughput
-    - document: cover-letter
-      text: event delivery reliability exceeded 99.9%
-      evidence_ids:
-      - crurated-reviewed-delivery-reliability
-    - document: cover-letter
-      text: identified bottlenecks on the main database and redistributed workload
-      evidence_ids:
-      - database-reliability
-    - document: cover-letter
-      text: built a Laravel/Symfony logger package
-      evidence_ids:
-      - airslate-logger
-    - document: analysis
-      text: CRURATED demonstrates PHP architecture
-      evidence_ids:
-      - crurated-confirmed-datalake-production
-    - document: interview-preparation
-      text: 99.9% reliability outcome
-      evidence_ids:
-      - crurated-reviewed-delivery-reliability
-    - document: cv
-      text: 15+ years
-      evidence_ids:
-      - career-15-years
-    - document: cv
-      text: DataLake throughput increased more than tenfold
-      evidence_ids:
-      - crurated-reviewed-throughput
-    - document: cv
-      text: PHP, Laravel, Symfony
-      evidence_ids:
-      - airslate-logger
-    - document: cv
-      text: '**Technologies:** Go, PHP'
-      evidence_ids:
-      - simple-2026-stack-php
-      - support-platform-linkedin
-  declaration_sha256: sha256:8ff8d013c30331e4f7531bbe3eb0cce4e4a226c8fe4ce8195d1c3ee659aefb9a
+      - airslate-logger-general
+  declaration_sha256: sha256:16697ba36fcec023f87fe7adeb7e33a9c8e5c08cefb0772207b0ed1c473825fd
   method:
     workflow: two-wave
     final_review:
       claim_grounding: true
       cross_file_consistency: true
-    cover_letter:
-      skill: write-cover-letter
-      version: 13.3.0+codex.20260924215023
-      workbench_complete: true
-      evidence_story_count: 2
-      company_source_url: https://djinni.co/jobs/838747-senior-php-developer/
   handoffs:
-    research.md:
-      word_count: 271
-      sha256: sha256:fd195819880792fef9d98f08bd92390f47db21b2db57c7834b70e86c269d4022
     evidence-map.md:
-      word_count: 822
-      sha256: sha256:9e44aacc8e93f5ca43c1ad7ff313b08058d5836a8b37f710456d3188c569cc15
-    requirements-risks.md:
-      word_count: 419
-      sha256: sha256:c0655700c5b20b500d36cf9b04adc87f94023f8010699a9d729d2f43cc69695e
+      word_count: 765
+      sha256: sha256:ef9fe25705c67460f6b75d5b89636bbf647d7342064ef9b2f8647111bbe5ad74
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: dc8d687c373482dc66942f24b0eff72a88356eaee136694c8e9d12be76efeb43
-      artifact_sha256: feb6b05b49ff8b2f1a2f2c4707adaa53d9eb09e148187028867ac2591f90748f
-      extracted_text_sha256: 0412f1a1992dbb0313a8c8b1f2801183727a59b43289b7522ec82d1998fd513b
-      canonical_tokens: 539
-      extracted_tokens: 539
+      source_sha256: 8ac5c8b932d1700799a952428d134538def4f94d9f150d42dff99c5b83545458
+      artifact_sha256: b89e89e676946542acdc386eb4ded289baf00f99ac2e30dc3bc8406412227ec0
+      extracted_text_sha256: 899552a1cb9d3c18fd43f5700ced1b6dfcca0f4b5bef312bb17e60e475eeade5
+      canonical_tokens: 442
+      extracted_tokens: 442
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 39
+        readable_paragraphs: 32
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: feb6b05b49ff8b2f1a2f2c4707adaa53d9eb09e148187028867ac2591f90748f
+        artifact_sha256: b89e89e676946542acdc386eb4ded289baf00f99ac2e30dc3bc8406412227ec0
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

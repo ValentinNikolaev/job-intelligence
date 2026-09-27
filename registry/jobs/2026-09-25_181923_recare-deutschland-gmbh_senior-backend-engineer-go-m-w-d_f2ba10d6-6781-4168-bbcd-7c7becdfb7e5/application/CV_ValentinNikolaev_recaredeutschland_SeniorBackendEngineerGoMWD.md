@@ -1,55 +1,46 @@
 # Valentin Nikolaev
-Senior Backend Engineer — Go
+Senior Backend Engineer | Go, Integrations and Service Reliability
 
 Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194  
-[LinkedIn](https://linkedin.com/in/valentinnikolaev) | [GitHub](https://github.com/ValentinNikolaev)
+LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/ValentinNikolaev
 
 ## Summary
 
-Backend engineer and technical lead with more than 15 years in production Go and PHP systems. I design, deliver and operate backend services, including a Go support platform with direct operational ownership at peak demand. Recent work has covered AWS telephony, helpdesk integrations and simplification of data pipelines; earlier work includes database performance, service reliability and technical leadership. I am comfortable owning a defined system, making architecture decisions with colleagues and following the work through to production. My experience fits a senior individual contributor role centered on Go, code quality and practical engineering judgment.
+Senior backend engineer with more than 15 years of experience building and operating Go and PHP services. My recent work combines domain ownership with practical system design: vendor-neutral integration APIs, secure AWS telephony and production resilience under degraded dependencies. I have also delivered event-stream architecture, database-load improvements and shared service tooling. I work as a hands-on individual contributor who can take a defined backend domain through design, delivery and operation.
 
 ## Skills
 
-**Backend:** Go, PHP, REST APIs, OpenAPI, event-driven design; **Data:** PostgreSQL, SQL, MySQL, Snowflake, Elasticsearch, database performance; **Delivery and operations:** AWS, Amazon Connect, SQS, Kubernetes, CI/CD, GitHub Actions, monitoring
+**Backend:** Go, PHP, REST APIs, OpenAPI, event-driven design, service integration.  
+**Data:** PostgreSQL, MySQL, SQL performance, Snowflake, data pipelines, monitoring.  
+**Delivery and operations:** AWS, Amazon Connect, SQS, Kubernetes, CI/CD, production troubleshooting.
 
 ## Experience
 
 ### Simple.life / Simple App — Software Developer
-November 2023–2026
+November 2023 – 2026
 
-- Designed and operated a Go support automation platform connecting helpdesk and internal services, handling at least 20,000 tickets in an ordinary month and up to three times that volume during the US peak season.
-- Built a vendor-neutral Go gateway with Intercom and Zendesk adapters, tenant-specific event ingestion and SQS queues, enabling the company's first B2B support-AI demo.
-- Architected an outbound-calling backend on Amazon Connect with federated agent access, removing per-agent AWS accounts and SAML setup; it passed security sign-off and entered production.
-- Consolidated three duplicated Snowflake-to-Intercom pipelines into one two-phase engine, reducing code from 1,670 to 800 lines, expanding process test coverage from one to three and removing a 100-item daily cap.
-- Investigated fatal cron runs during Intercom API degradation and introduced partial-success reporting and parallel, time-sharded cursor scans so incomplete work could be tracked without aborting the whole run.
+- Built a vendor-neutral Go gateway with Intercom and Zendesk adapters, tenant-specific event ingestion and SQS queues, enabling the company’s first B2B support-AI demonstration.
+- Architected an Amazon Connect calling backend with federated agent access and customer-number masking; the design passed security sign-off and reached production without per-agent AWS accounts or SAML setup.
+- Improved resilience of a ticket-processing cron during Intercom API degradation by adding partial-success reporting and parallel time-sharded cursor scans, preserving visibility of incomplete work.
 
-Technologies: Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Snowflake, Intercom, Zendesk
+**Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Intercom API, Zendesk API
 
 ### CRURATED — PHP Software Developer, concurrent part-time consulting engagement
-August 2024–January 2026
+August 2024 – January 2026
 
-- Owned production DataLake and event analytics as throughput grew by more than tenfold, with Grafana and operational observation used to assess the increase.
-- Delivered parallel publication of event versions in production under full technical ownership.
-- Owned the production Crutrade integration for authentication and OTP, account linking, collection transfer, purchase-ownership checks and request/response logging.
+- Reworked modular stream design for production analytics, cutting setup of a new analytics stream from several days to under four hours.
+- Kept production event delivery above 99.9% through fault-tolerant routing, retries and observability.
+- Implemented versioned event schemas with parallel publication in production, allowing consumers to transition between schema versions while new events were delivered.
 
-Technologies: PHP, DataLake, event analytics, EventBridge, REST APIs
+**Technologies:** PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
 ### airSlate — Software Developer / Programming Team Lead
-February 2021–August 2023
+February 2021 – August 2023
 
-- Reduced peak load on the main database by removing bottlenecks and redistributing work, improving stability during high-traffic periods.
-- Delivered production fixes after tracing issues through logs, monitoring and SRE dashboards.
-- Developed a Laravel/Symfony logger package to the company's interservice communication standard, giving teams a shared logging implementation.
+- Reduced peak pressure on the main database by finding bottlenecks and redistributing workload, improving stability during busy periods.
+- Created a Laravel/Symfony logging package that conformed to the interservice communication standard and gave teams a shared implementation.
 
-Technologies: PHP, Laravel, Symfony, MySQL, Elasticsearch, RabbitMQ, AWS, Prometheus, CI/CD
-
-### Hyprr — Technical Lead
-November 2019–January 2021
-
-- Helped take the creator platform from prototype to closed beta in less than six months through technical leadership and backend delivery.
-- Defined the technology roadmap with the CTO and helped establish the core stack for product delivery, including microservice and serverless design.
-
-Technologies: Go, PHP, Laravel, MySQL, AWS, Kubernetes, microservices
+**Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
 
 ## Education
 
@@ -57,4 +48,4 @@ MSc in Computer Science, National Technical University, Kharkiv, Ukraine (2003�
 
 ## Languages
 
-Ukrainian (native) | English (professional working)
+Ukrainian (native), English (professional working)

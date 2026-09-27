@@ -1,57 +1,49 @@
 # Valentin Nikolaev
-Senior PHP Developer
+Senior PHP Developer | Event-Driven Systems and Production Delivery
 
 Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194  
 LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/ValentinNikolaev
 
 ## Summary
 
-Senior backend engineer with 15+ years of experience across PHP and Go production systems. At CRURATED, owned a PHP event analytics platform whose DataLake throughput increased more than tenfold while event delivery reliability exceeded 99.9%. Earlier PHP work includes a Laravel/Symfony logger used across airSlate services and database load reduction during peak traffic. Brings hands-on architecture, release and operational ownership, plus experience defining a product technology roadmap with a CTO.
+Senior backend developer with 15+ years across PHP and Go systems. I build and operate event-driven data services, integrations and production tooling, with recent PHP ownership of analytics architecture, event delivery and partner authentication flows. My work combines deliberate API and schema design with measurable operational results: reliable event delivery, faster onboarding of new streams and database stability under load.
 
 ## Skills
 
-**PHP and architecture:** PHP, Laravel, Symfony, REST APIs, event-driven architecture, microservices; **Data and messaging:** PostgreSQL, MySQL, queues, AWS EventBridge; **Delivery and operations:** Docker, Kubernetes, CI/CD, GitHub Actions, ArgoCD, Helm, production monitoring
+**Languages and frameworks:** PHP, Laravel, Symfony, Go.  
+**Data and integration:** MySQL, PostgreSQL, REST APIs, AWS EventBridge, queues, event-driven architecture, versioned schemas.  
+**Delivery and operations:** AWS, Kubernetes, CI/CD, monitoring, production troubleshooting, Amazon Connect.
 
 ## Experience
 
-### Simple App (Simple.life) — Software Developer
+### Simple.life / Simple App — Software Developer
 November 2023 – 2026
 
-- Architected and released an outbound telephony backend on Amazon Connect after security sign-off, using agent federation to avoid individual AWS accounts while keeping customer phone numbers masked and out of logs.
-- Built a multi-tenant Go helpdesk gateway with vendor-neutral events and Intercom/Zendesk adapters, enabling the first B2B demo of the support AI product.
-- Consolidated three Snowflake-to-Intercom pipelines into one engine, reducing code from 1,670 to 800 lines, testing all three processes and removing a 100-item-per-day cap.
-- Resolved recurring fatal cron runs under Intercom API degradation by introducing partial-success handling and sharded cursor searches for a backlog of about 7,000 tickets.
-- Automated GDPR data exports across seven sources through a self-service admin workflow, replacing manual coordination for request creation and status tracking.
+- Architected and released an Amazon Connect telephony backend with federated agent access and phone-number masking; it passed security sign-off and avoided individual AWS accounts and SAML setup.
+- Built a multi-tenant Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk adapters, tenant ingestion and SQS queues, enabling the first B2B demonstration of the support-AI product.
+- Made ticket processing resilient during Intercom API degradation through partial-success handling and sharded cursor searches, retaining visibility of incomplete work instead of failing the full run.
+- Built self-service GDPR export workflows across seven data sources, giving administrators request creation, status tracking and review in one place.
 
-**Technologies:** Go, PHP, PostgreSQL, AWS, Kubernetes, Snowflake, Intercom, Zendesk
+**Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Intercom API, Zendesk API
 
-### CRURATED — PHP Software Developer (concurrent part-time subcontract)
+### CRURATED — PHP Software Developer, concurrent part-time subcontract
 August 2024 – January 2026
 
-- Architected an event-driven analytics pipeline with queues and AWS EventBridge; DataLake throughput increased by more than 10x under full technical ownership.
-- Kept event delivery reliability above 99.9% through retry and observability work on the production analytics pipeline.
-- Designed versioned event schemas and owned parallel event-version publication in production, allowing analytics consumers to move between schemas without blocking new events.
-- Owned the production Crutrade integration, including authentication and OTP, account linking, collection exchange and purchase-ownership verification.
-- Reduced setup time for new analytics streams from several days to under four hours through modular design.
+- Architected a production event analytics pipeline with queues and AWS EventBridge; DataLake throughput grew by more than tenfold under technical ownership.
+- Reduced onboarding of a new analytics stream from several days to under four hours through modular stream design.
+- Maintained event delivery reliability above 99.9% with fault-tolerant routing, retries and observability.
+- Designed versioned event schemas with parallel publication in production, letting consumers move between schemas while new events continued to arrive.
+- Delivered the production Crutrade integration for authentication and OTP, account linking, collection exchange, purchase-ownership verification and request/response logging.
 
-**Technologies:** PHP, Laravel, AWS EventBridge, queues, REST APIs
+**Technologies:** PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
 ### airSlate — Senior Software Developer
 February 2021 – August 2023
 
-- Reduced peak load on the main database by finding bottlenecks and redistributing workload, improving stability during high-traffic periods.
+- Reduced peak load on the main database by isolating bottlenecks and redistributing workload, improving stability during high-traffic periods.
 - Built a Laravel/Symfony logger package used across services and aligned it with the interservice communication standard.
-- Diagnosed production issues with logs, monitoring and SRE dashboards, then delivered fixes and operational improvements.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
-
-### Hyprr — Technical Lead
-November 2019 – January 2021
-
-- Defined the technology roadmap with the CTO and established the PHP, Go, AWS and Kubernetes stack for product delivery.
-- Led backend development on Ethereum-based digital asset components as the platform advanced from prototype to closed beta in under six months.
-
-**Technologies:** PHP, Go, Laravel, AWS, Kubernetes
 
 ## Education
 

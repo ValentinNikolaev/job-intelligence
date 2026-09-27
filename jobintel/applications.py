@@ -104,6 +104,9 @@ _EXPERIENCE_DATE_RANGE_RE = re.compile(
     rf"(?P<end>Present|Current|(?:(?:{_MONTH_PATTERN})\s+)?\d{{4}})\b",
     re.IGNORECASE,
 )
+_CV_INTERNAL_IMPLEMENTATION_METRIC_RE = re.compile(
+    r"(?i)\b(?:LOC|lines?\s+of\s+code|code\s+from\s+\d[\d,]*\s+to\s+\d[\d,]*\s+lines?)\b"
+)
 
 _REQUIRED_HEADINGS = {
     "cv_markdown": (
@@ -806,6 +809,12 @@ def _validate_cv_experience_bullets(markdown: str, *, minimum: int = 10) -> None
             f"cv_markdown Experience must contain at least {minimum} evidence-backed bullets "
             f"({len(bullets)} found)"
         )
+    for bullet in bullets:
+        if _CV_INTERNAL_IMPLEMENTATION_METRIC_RE.search(bullet):
+            raise ApplicationError(
+                "cv_markdown Experience must not present source-code line counts "
+                "as an achievement metric"
+            )
 
 
 def _validate_cv_role_depth(markdown: str, *, reference_date: date | datetime | None) -> None:
@@ -1538,7 +1547,7 @@ def _copy_existing_application_files(source: Path, staging: Path) -> None:
         if path.name in allowed or (
             path.name.startswith("CV_") and path.suffix.casefold() in {".md", ".docx"}
         ):
-            shutil.copy2(path, staging / path.name)
+            shutil.copy2(_win_long_path(path), _win_long_path(staging / path.name))
 
 
 def _remove_selected_outputs(staging: Path, document: str) -> None:
@@ -1644,11 +1653,14 @@ def _publish_staged_package(staging: Path, target: Path, files: Sequence[str],
         if backup.exists() and target.exists():
             try:
                 shutil.rmtree(backup)
+            except FileNotFoundError:
+                pass
             except OSError as exc:
                 root = op.project_root(target)
                 if root is None:
                     raise ApplicationError(f"published application backup could not be removed: {backup}") from exc
-                retained = root / ".codex-work" / "retained-backups" / f"{target.parent.name}-{backup.name}"
+                backup_key = hashlib.sha256(str(backup).encode("utf-8")).hexdigest()[:16]
+                retained = root / ".codex-work" / "retained-backups" / f"{target.name}-{backup_key}"
                 retained.parent.mkdir(parents=True, exist_ok=True)
                 try:
                     os.replace(backup, retained)
