@@ -1,29 +1,22 @@
 # Match Analysis
 
-**Score:** 72/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Good Go backend alignment with relevant production automation and APIs; location and exact seniority expectations remain unclear.
+Strong Go and backend fit with relevant production automation and infrastructure experience; middle-level scope may underuse the candidate's seniority.
 
 ## Why it matches
 
-- Go backend ownership and API orchestration.
-- Production support automation, integrations, retries, and monitoring.
-- Strong backend engineering and systems-design background.
+- Go backend development
+- distributed systems
+- APIs
+- CI/CD
+- production reliability
 
 ## Gaps
 
-- The supplied posting does not establish remote or relocation compatibility.
-- Specific domain and team expectations are not fully evidenced.
+- Specific employer domain and exact role-level expectations are not confirmed
 
 ## Concerns
 
-- Location compatibility and work authorization are unknown.
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Go backend development | critical / stated | strong | Go | robust, scalable backend in Go | / |
-| Remote/location fit | high / structural | unknown | Go |  | Work arrangement is not established in the supplied record. / Confirm location and remote policy. |
-| Production APIs and integrations | high / structural | strong | Go | Engineer a unified API orchestration layer | / |
+- Candidate profile contains conflicting employment-date records

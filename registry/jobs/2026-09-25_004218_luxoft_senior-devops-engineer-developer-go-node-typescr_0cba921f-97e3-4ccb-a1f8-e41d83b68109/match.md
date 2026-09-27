@@ -1,29 +1,28 @@
 # Match Analysis
 
-**Score:** 82/100  
-**Recommendation:** Strong Match
+**Score:** 63/100  
+**Recommendation:** Possible Match
 
-Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
+Backend and Kubernetes foundations fit, but the role is infrastructure-heavy and requires substantial TypeScript, operator, OpenTelemetry, and service-mesh experience not shown.
 
 ## Why it matches
 
-- Go backend
-- APIs
-- event-driven systems
-- reliability
+- Go
+- Kubernetes
+- AWS
+- GitHub Actions
+- ArgoCD
+- observability foundations
 
 ## Gaps
 
-- Kafka depth is not established
+- Operator SDK and CRDs
+- OpenTelemetry
+- TypeScript/React
+- Istio
+- MCP
+- and broker APIs
 
 ## Concerns
 
-- Location and language compatibility are not fully specified
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
-| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
-| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |
+- SRE/DevOps emphasis is less aligned with the candidate's backend focus

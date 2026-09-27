@@ -1,29 +1,22 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 86/100  
 **Recommendation:** Strong Match
 
-Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
+Strong lead-level Go fit with leadership, distributed systems, CI/CD, AI implementation, higher education, and complex integration experience.
 
 ## Why it matches
 
-- Go backend
-- APIs
-- event-driven systems
-- reliability
+- Go
+- technical leadership
+- distributed systems
+- AI automation
+- fintech-related integrations
 
 ## Gaps
 
-- Kafka depth is not established
+- Advanced English and insurance experience are not fully confirmed
 
 ## Concerns
 
-- Location and language compatibility are not fully specified
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
-| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
-| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |
+- Ukraine eligibility and customer-domain details require confirmation

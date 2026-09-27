@@ -1,20 +1,21 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 88/100  
+**Recommendation:** Strong Match
 
-Strong Go and LLM-automation background aligns well, while production RAG depth and role-specific platform requirements remain uncertain.
+Strong match for senior Go backend work and production AI automation, with demonstrated integrations, reliability, and system design.
 
 ## Why it matches
 
 - Go backend ownership
 - LLM-assisted automation
-- scalable APIs and reliability
+- APIs and integrations
+- observability and resilience
 
 ## Gaps
 
-- RAG production depth is not explicitly evidenced
+- Specific RAG production depth and employer constraints are not fully evidenced
 
 ## Concerns
 
-- Remote conditions and required AI stack need verification
+- Exact seniority and language expectations require confirmation

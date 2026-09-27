@@ -1,29 +1,22 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
+Excellent technology fit for a remote Go and PHP backend role, including prior SIXT experience, microservices, compliance, and production delivery.
 
 ## Why it matches
 
-- Go backend
-- APIs
-- event-driven systems
-- reliability
+- Go and PHP
+- prior SIXT experience
+- microservices
+- GDPR and PCI DSS
+- backend reliability
 
 ## Gaps
 
-- Kafka depth is not established
+- Exact middle-level scope and current company team context are unknown
 
 ## Concerns
 
-- Location and language compatibility are not fully specified
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
-| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
-| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |
+- Candidate record contains conflicting date presentations

@@ -1,29 +1,25 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Strong Go backend fit with APIs, asynchronous systems, and production reliability experience; Kafka and Ukrainian-language details need confirmation.
+Strong Go product-engineering fit with microservices, databases, Kafka-adjacent messaging, Kubernetes, scale, and mentoring experience.
 
 ## Why it matches
 
-- Go backend
-- APIs
-- event-driven systems
-- reliability
+- Go
+- microservices
+- high-load backend systems
+- Kubernetes
+- architecture and mentoring
 
 ## Gaps
 
-- Kafka depth is not established
+- MongoDB
+- Redis
+- Elasticsearch
+- and exact transaction scale are not all directly evidenced
 
 ## Concerns
 
-- Location and language compatibility are not fully specified
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| Kafka | meaningful / inferred | unknown |  |  | Kafka experience is not explicit. / Verify Kafka production exposure. |
-| Go backend development | meaningful / inferred | strong |  | robust, scalable backend in Go | / |
-| scalable APIs | meaningful / inferred | strong |  | Engineer a unified API orchestration layer | / |
+- Remote arrangement is listed but office expectations should be confirmed
