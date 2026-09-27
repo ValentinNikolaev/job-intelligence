@@ -1,18 +1,21 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 80/100  
 **Recommendation:** Strong Match
 
-Independent sealed-pack assessment: relevant backend experience is documented; some vacancy-specific constraints remain unclear.
+Backend/Golang Developer is a strong match based on the documented backend, PHP/Go, and seniority evidence; remaining tool or work-location uncertainty should be checked.
 
 ## Why it matches
 
-- The candidate profile documents relevant backend experience and production delivery for this role.
+- Go backend alignment is supported by the candidate profile.
+- Seniority and technical-lead scope align with documented experience.
 
 ## Gaps
 
-- The supplied vacancy data leaves some role-specific requirements, language, compensation, and work-authorization details unclear.
+- Specific tool depth and employment conditions require confirmation from the employer.
 
-## Concerns
+## Requirement evidence
 
-- Verify unresolved hiring constraints during any later user-approved preparation.
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Core backend role fit and stated technology requirements | critical / stated | partial | # Backend/Golang Developer | Backend engineer with 15+ years of experience building and improving production | The posting names additional tools or domain requirements not fully evidenced. / Confirm the missing tools and domain expectations during screening. |

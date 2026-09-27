@@ -1,19 +1,22 @@
 # Match Analysis
 
-**Score:** 92/100  
-**Recommendation:** Strong Match
+**Score:** 72/100  
+**Recommendation:** Match
 
-Strong PHP/Laravel backend fit with extensive production APIs, integrations, performance work, and remote-capable experience.
+Sviluppatore Laravel Remote - Neting % is a match based on the documented backend, PHP/Go, and seniority evidence; remaining tool or work-location uncertainty should be checked.
 
 ## Why it matches
 
-- Candidate profile documents 15+ years of backend software engineering across PHP and Go.
-- Candidate evidence supports APIs, production reliability, databases, and cloud or delivery infrastructure.
+- Strong PHP backend alignment with documented Laravel/Symfony experience.
+- Seniority and technical-lead scope align with documented experience.
+- Relevant platform, delivery, and production-reliability experience is documented.
 
 ## Gaps
 
-- Role-specific domain details and any unlisted technology depth are not fully evidenced in the candidate profile.
+- Frontend depth is not established as a primary recent specialization in the supplied profile.
 
-## Concerns
+## Requirement evidence
 
-- Confirm engagement terms, timezone expectations, and any role-specific requirements not explicit in the candidate evidence.
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Core backend role fit and stated technology requirements | critical / stated | partial | # Sviluppatore Laravel Remote - Neting % | Backend engineer with 15+ years of experience building and improving production | The posting names additional tools or domain requirements not fully evidenced. / Confirm the missing tools and domain expectations during screening. |
