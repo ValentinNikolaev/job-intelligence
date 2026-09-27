@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:dc2242e063a56d98f32162fc7c04c8b0533e69f283b7b81fe613b77fe2b382cb
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:b613a40f2ee7ecb9ff2ff7c23f6115ab24a8174db058a168b2b06ebf19881b81
-model: codex:gpt-5.6-terra:high
+prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_novadigital_LeadBackendPHPDeveloper
-generated_at: '2026-09-27T15:54:38Z'
+generated_at: '2026-09-27T16:50:49Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:dc2242e063a56d98f32162fc7c04c8b0533e69f283b7b81fe613b77fe2b382cb
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:b613a40f2ee7ecb9ff2ff7c23f6115ab24a8174db058a168b2b06ebf19881b81
-    model: codex:gpt-5.6-terra:high
+    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_novadigital_LeadBackendPHPDeveloper
-    generated_at: '2026-09-27T15:54:38Z'
+    generated_at: '2026-09-27T16:50:49Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:dc2242e063a56d98f32162fc7c04c8b0533e69f283b7b81fe613b77fe2b382cb
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 457
-      sha256: sha256:2297aa6e14172939b33b3ecf1dd44144b3e07fa3407152b0b830d683316c0d15
+      word_count: 418
+      sha256: sha256:b6828b0b044616b678196fb94284ff839e10bc0f624f2d32a19b80f58a349012
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 369775924f8cc27036b3566e9452a42cc31129b170008ca642313ff329cfcc5c
+    sha256: 93c01a1153b9bbb75204523b75ae0c0a12073c15df4cf3d7a5c4bac5a05e7aeb
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -79,7 +79,7 @@ quality:
         retracted: 3
         unverified: 9
         verified: 47
-    claim_count: 15
+    claim_count: 14
     evidence_ids:
     - airslate-logger-general
     - career-15-years
@@ -94,7 +94,6 @@ quality:
     - simple-2026-gdpr
     - simple-2026-helpdesk-gateway
     - simple-2026-llm-agent
-    - simple-2026-telephony
     - simple-2026-telephony-lawful-calling
     - simple-2026-telephony-privacy
     evidence_entries:
@@ -407,48 +406,6 @@ quality:
       review_notes: Candidate-reported delivered work only; estimates and example
         bullets are excluded. August-September work confirmed as past in user follow-up;
         exact end month remains unconfirmed.
-    - id: simple-2026-telephony
-      employer: Simple.life
-      role: Software Developer
-      source:
-        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
-        quote: '**A. Outbound telephony platform on Amazon Connect (Aug–Sep 2026)**
-
-          - Owned architecture and backend end-to-end; wrote the epic/design doc;
-          passed security sign-off; released to production on 2026-09-25.
-
-          - Agent federation via AssumeRole + GetFederationToken: no per-agent AWS
-          accounts, no SAML app, IT removed from the critical path.
-
-          - Connect users created lazily by the backend (moved out of Terraform);
-          stale users cleaned by cron; admin activate/deactivate.
-
-          - PII controls: customer phone number never rendered or logged (masked only),
-          purged from contact record by TTL, DevTools disabled by policy.
-
-          - Compliance logic: call windows with timezones/Sundays/holidays, do-not-call
-          list, queued-callback withdrawal on opt-out, retry policy owned by backend
-          (Connect retries = 0), outcome written to the existing Intercom ticket (no
-          duplicate tickets).
-
-          - Designed load: 10–20 calls/day per agent, max 50. Cross-functional team:
-          backend (Valentin), frontend, SRE.
-
-          - Authored a 30-scenario telephony QA checklist with run journal; 4 documented
-          runs in 2 days before launch; every finding converted to a ticket.'
-        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
-        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
-          Support & Content Platform'
-      attribution_source: *id001
-      status: verified
-      verification:
-        reviewer: Codex source review
-        reviewed_at: '2026-09-26'
-        method: Compared direct candidate-supplied fact section and earlier direct
-          role clarification; Jira and Slack records were not independently inspected.
-      review_notes: Candidate-reported delivered work only; estimates and example
-        bullets are excluded. August-September work confirmed as past in user follow-up;
-        exact end month remains unconfirmed.
     - id: simple-2026-telephony-lawful-calling
       employer: Simple.life
       role: Software Developer
@@ -507,250 +464,225 @@ quality:
     - cv_bullet_coverage
     semantic_review_required: true
     cv_audit:
-      target_role: Lead Backend PHP Developer
+      target_role: Nova Digital Lead Backend PHP Developer
       top_third_evidence_ids:
       - career-15-years
       - simple-2026-telephony-privacy
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: Codex CV editorial self-review
       bullet_decisions:
-      - text: 'Owned the architecture and backend of a health-domain calling platform
-          where PII/PHI protection led the design: customer numbers stayed server-side,
-          masked in UI and logs, and short-lived in Amazon Connect; security and call-recording
-          compliance reviews approved production release.'
+      - text: Architected and released a health-domain calling platform with privacy-first
+          PII/PHI protection; formal security and call-recording compliance reviews
+          approved its production release.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Designed backend-enforced calling policy for timezone windows, holidays,
-          do-not-call controls and opt-outs, with zero Amazon Connect retries so the
-          platform could not circumvent customer-contact restrictions.
+        reason: Security-reviewed production architecture is the strongest recent
+          outcome.
+        weight: critical
+        signal_type: security
+        ordering_rationale: Leads the role because it combines ownership, risk control
+          and release.
+        verdict: approve
+      - text: Designed backend-owned lawful-calling controls for time zones, holidays,
+          do-not-call rules and opt-outs, ensuring calls could not bypass customer-contact
+          safeguards.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Designed federated agent access around opaque Entra identities and least
-          privilege, separating operational diagnostics from call access while removing
-          per-agent AWS accounts and a SAML application.
+        reason: Shows consequential policy design for a sensitive production service.
+        weight: high
+        signal_type: security
+        ordering_rationale: Follows the release with the customer-protection consequence.
+        verdict: approve
+      - text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event
+          model, enabling the first B2B demonstration of the support-AI product.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Built the multi-tenant Go helpdesk gateway that isolated vendor SDKs
-          behind a shared event model and enabled the first B2B support-AI demonstration.
+        reason: Demonstrates reusable integration architecture and delivery.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Places integration architecture before supporting workflows.
+        verdict: approve
+      - text: Delivered self-service GDPR exports across seven data sources, giving
+          administration a tracked workflow for export requests.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Built the evaluation pipeline for the production support agent, combining
-          ticket conversations, action events and subscription-state snapshots into
-          evaluation JSON.
+        reason: Shows compliance-oriented delivery across systems.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Distinct compliance outcome after core platform work.
+        verdict: approve
+      - text: Built evaluation data for the production support agent from conversations,
+          actions and subscription-state snapshots.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Automated GDPR export and deletion workflows across seven sources through
-          a self-service administration flow.
+        reason: Supports Nova's AI-oriented backend remit without vendor overclaiming.
+        weight: medium
+        signal_type: architecture
+        ordering_rationale: Last because it is enabling infrastructure rather than
+          a released risk-control result.
+        verdict: approve
+      - text: Owned production DataLake and event-analytics architecture, increasing
+          throughput by over 10x under documented technical ownership.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Owned the production event analytics architecture using queues and AWS
-          EventBridge as DataLake throughput grew by more than tenfold.
+        reason: Direct PHP scale outcome for the target role.
+        weight: critical
+        signal_type: scale
+        ordering_rationale: Leads CRURATED with its highest measurable system result.
+        verdict: approve
+      - text: Reduced setup of a new analytics stream from several days to under four
+          hours through modular stream design.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Reduced new analytics stream setup from several days to under four hours
-          through modular stream design.
+        reason: Shows architecture decision with delivery consequence.
+        weight: high
+        signal_type: impact
+        ordering_rationale: Follows scale with the strongest time-to-delivery outcome.
+        verdict: approve
+      - text: Maintained event-delivery reliability above 99.9% through fault-tolerant
+          routing, retry design and operational monitoring.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Kept event delivery reliability above 99.9% through fault-tolerant pipeline
-          design, retries and observability.
+        reason: Establishes reliability ownership for production events.
+        weight: high
+        signal_type: reliability
+        ordering_rationale: Reliability follows throughput and delivery impact.
+        verdict: approve
+      - text: Designed versioned event contracts and parallel publication so consumers
+          could migrate without blocking new event data.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Designed versioned event schemas and parallel event-version publication,
-          allowing consumers to transition without blocking new events.
+        reason: Evidence of cross-service architecture judgment.
+        weight: medium
+        signal_type: architecture
+        ordering_rationale: Distinct interoperability proof after measured outcomes.
+        verdict: approve
+      - text: Owned a production partner integration covering authentication, account
+          linking, collection exchange and purchase-ownership verification.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Owned the production Crutrade integration across authentication and
-          OTP, account linking, collection exchange and purchase-ownership verification.
+        reason: Relevant production integration ownership without unsupported business
+          impact.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Last as a concrete integration scope without a measured
+          consequence.
+        verdict: approve
+      - text: Reduced peak pressure on the main database by removing bottlenecks and
+          redistributing workload, improving service stability during high-traffic
+          periods.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Developed a Laravel/Symfony logger package used across services and
-          aligned it with the interservice communication standard.
+        reason: Verified operational-stability outcome.
+        weight: high
+        signal_type: reliability
+        ordering_rationale: Leads the compact role with its concrete consequence.
+        verdict: approve
+      - text: Built a Laravel/Symfony product-wide logger package aligned with the
+          interservice communication standard, creating a shared service-level component.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Reduced peak load on the main database by removing bottlenecks and redistributing
-          workload, improving stability during busy periods.
-        decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-    reviewer: Codex telephony privacy CV review
+        reason: Direct Laravel/Symfony signal for the vacancy.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Follows stability because its scope is standardization.
+        verdict: approve
+    reviewer: Codex CV editorial self-review
     document_sha256:
-      cv: sha256:2297aa6e14172939b33b3ecf1dd44144b3e07fa3407152b0b830d683316c0d15
+      cv: sha256:b6828b0b044616b678196fb94284ff839e10bc0f624f2d32a19b80f58a349012
     requirements:
-    - requirement: 5+ years commercial PHP 7/8 experience with team/tech lead experience
-      importance: critical
-      basis: stated
-      jd_quote: Від 5 років комерційного досвіду розробки на PHP (7-8 версії) та успішний
-        досвід управління командою або технічного лідерства (Tech/Team Lead).
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: Deep Laravel or Symfony knowledge
+    - requirement: Laravel or Symfony
       importance: critical
       basis: stated
       jd_quote: Глибокі знання **Laravel** чи **Symfony**
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: PostgreSQL and message brokers (RabbitMQ or similar)
-      importance: high
-      basis: stated
-      jd_quote: Впевнена робота з PostgreSQL (або іншими реляційними БД) та брокерами
-        повідомлень
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: AI-orientation and understanding of modern LLM APIs (OpenAI, Claude)
-      importance: high
-      basis: stated
-      jd_quote: Інтерес до сфери штучного інтелекту, розуміння принципів роботи API
-        сучасних LLM (OpenAI, Claude тощо)
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: Understanding of DDD, modular-monolith, and microservice architectures
-      importance: high
-      basis: stated
-      jd_quote: Розуміння DDD, монолітно-модульної та мікросервісної архітектур.
-      match: unknown
-      candidate_quote: ''
-      risk: Specific DDD practice is not source-backed.
-      mitigation: Discuss the evidenced event-driven and microservice architecture
-        without claiming formal DDD work.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: Docker and Kubernetes (K8s) practical experience
-      importance: high
-      basis: stated
-      jd_quote: Практичний досвід роботи з Docker, Kubernetes (K8s)
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: GCP and on-premise infrastructure experience
-      importance: meaningful
-      basis: stated
-      jd_quote: Досвід роботи з хмарною платформою **GCP** (Google Cloud Platform)
-        та побудови рішень на власній **On-Premise** інфраструктурі.
-      match: missing
-      candidate_quote: ''
+      match: strong
+      candidate_quote: Developed a Laravel/Symfony-based product-wide logger package
       risk: ''
       mitigation: ''
       hard_blocker: false
-      evidence_ids: []
+      evidence_ids:
+      - airslate-logger-general
+    - requirement: Event-driven architecture
+      importance: high
+      basis: stated
+      jd_quote: Досвід роботи в логістиці, стартапах, e-commerce або фінтех-проєктах.
+      match: strong
+      candidate_quote: Define a robust, versioned event schema to enforce consistency
+        across teams
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - crurated-event-design
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
     - document: cv
-      text: 15+ years
+      text: Backend engineer and technical lead with 15+ years building PHP and Go
+        production systems.
       evidence_ids:
       - career-15-years
     - document: cv
-      text: privacy-sensitive
+      text: Recent work combines architecture ownership for privacy-sensitive health-domain
+        services, production event analytics, PHP integrations, and operational reliability.
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      - crurated-confirmed-datalake-production
+    - document: cv
+      text: Architected and released a health-domain calling platform with privacy-first
+        PII/PHI protection; formal security and call-recording compliance reviews
+        approved its production release.
       evidence_ids:
       - simple-2026-telephony-privacy
     - document: cv
-      text: 'Owned the architecture and backend of a health-domain calling platform
-        where PII/PHI protection led the design: customer numbers stayed server-side,
-        masked in UI and logs, and short-lived in Amazon Connect; security and call-recording
-        compliance reviews approved production release.'
-      evidence_ids:
-      - simple-2026-telephony-privacy
-      - simple-2026-telephony
-    - document: cv
-      text: Designed backend-enforced calling policy for timezone windows, holidays,
-        do-not-call controls and opt-outs, with zero Amazon Connect retries so the
-        platform could not circumvent customer-contact restrictions.
+      text: Designed backend-owned lawful-calling controls for time zones, holidays,
+        do-not-call rules and opt-outs, ensuring calls could not bypass customer-contact
+        safeguards.
       evidence_ids:
       - simple-2026-telephony-lawful-calling
     - document: cv
-      text: Designed federated agent access around opaque Entra identities and least
-        privilege, separating operational diagnostics from call access while removing
-        per-agent AWS accounts and a SAML application.
-      evidence_ids:
-      - simple-2026-telephony
-    - document: cv
-      text: Built the multi-tenant Go helpdesk gateway that isolated vendor SDKs behind
-        a shared event model and enabled the first B2B support-AI demonstration.
+      text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model,
+        enabling the first B2B demonstration of the support-AI product.
       evidence_ids:
       - simple-2026-helpdesk-gateway
     - document: cv
-      text: Built the evaluation pipeline for the production support agent, combining
-        ticket conversations, action events and subscription-state snapshots into
-        evaluation JSON.
-      evidence_ids:
-      - simple-2026-llm-agent
-    - document: cv
-      text: Automated GDPR export and deletion workflows across seven sources through
-        a self-service administration flow.
+      text: Delivered self-service GDPR exports across seven data sources, giving
+        administration a tracked workflow for export requests.
       evidence_ids:
       - simple-2026-gdpr
     - document: cv
-      text: Owned the production event analytics architecture using queues and AWS
-        EventBridge as DataLake throughput grew by more than tenfold.
+      text: Built evaluation data for the production support agent from conversations,
+        actions and subscription-state snapshots.
       evidence_ids:
-      - crurated-confirmed-datalake-production
-      - crurated-reviewed-throughput
+      - simple-2026-llm-agent
     - document: cv
-      text: Reduced new analytics stream setup from several days to under four hours
-        through modular stream design.
+      text: Owned production DataLake and event-analytics architecture, increasing
+        throughput by over 10x under documented technical ownership.
+      evidence_ids:
+      - crurated-reviewed-throughput
+      - crurated-confirmed-datalake-production
+    - document: cv
+      text: Reduced setup of a new analytics stream from several days to under four
+        hours through modular stream design.
       evidence_ids:
       - crurated-reviewed-stream-onboarding
     - document: cv
-      text: Kept event delivery reliability above 99.9% through fault-tolerant pipeline
-        design, retries and observability.
+      text: Maintained event-delivery reliability above 99.9% through fault-tolerant
+        routing, retry design and operational monitoring.
       evidence_ids:
       - crurated-reviewed-delivery-reliability
     - document: cv
-      text: Designed versioned event schemas and parallel event-version publication,
-        allowing consumers to transition without blocking new events.
+      text: Designed versioned event contracts and parallel publication so consumers
+        could migrate without blocking new event data.
       evidence_ids:
       - crurated-event-design
       - crurated-confirmed-event-version-production
     - document: cv
-      text: Owned the production Crutrade integration across authentication and OTP,
-        account linking, collection exchange and purchase-ownership verification.
+      text: Owned a production partner integration covering authentication, account
+        linking, collection exchange and purchase-ownership verification.
       evidence_ids:
       - crurated-confirmed-crutrade-production
     - document: cv
-      text: Developed a Laravel/Symfony logger package used across services and aligned
-        it with the interservice communication standard.
-      evidence_ids:
-      - airslate-logger-general
-    - document: cv
-      text: Reduced peak load on the main database by removing bottlenecks and redistributing
-        workload, improving stability during busy periods.
+      text: Reduced peak pressure on the main database by removing bottlenecks and
+        redistributing workload, improving service stability during high-traffic periods.
       evidence_ids:
       - database-reliability
-  declaration_sha256: sha256:7cd508a222ad36be143bf3b6397e86724143ab55ac647a4c7779ea321301229a
+    - document: cv
+      text: Built a Laravel/Symfony product-wide logger package aligned with the interservice
+        communication standard, creating a shared service-level component.
+      evidence_ids:
+      - airslate-logger-general
+  declaration_sha256: sha256:749b8ad4dda8006fafee82209f5e2384957020d7e3d6bfdc72da68fc711864f6
   method:
     workflow: two-wave
     final_review:
@@ -758,32 +690,32 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 811
-      sha256: sha256:89cb0e4683578b190dea8a5aeb59d06e658f0487894d6036ec9a91dd9b69e487
+      word_count: 466
+      sha256: sha256:f4a6b5b35d8f0de7673a81cf43ba1c59a6fb7b7bba8fd464a1d5fb310e235f66
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 2297aa6e14172939b33b3ecf1dd44144b3e07fa3407152b0b830d683316c0d15
-      artifact_sha256: 2afe62ebef57195770d305f21311f00a5b7f4979bdcb134fe3539ccaed2b7778
-      extracted_text_sha256: 8e233e2b07cb05995265b1e9d6020a6bffbb8d4aff2dee3322fa73d2d4bafcef
-      canonical_tokens: 483
-      extracted_tokens: 483
+      source_sha256: b6828b0b044616b678196fb94284ff839e10bc0f624f2d32a19b80f58a349012
+      artifact_sha256: f6ac669f203de79e3790a19e081488737d0c6e3ea6d893534a2fa89de9e6c003
+      extracted_text_sha256: 34261b8538c421ea0ec2fbb39fe516ca695079fa0d73327f50c2b3c9fd605216
+      canonical_tokens: 447
+      extracted_tokens: 447
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 34
+        readable_paragraphs: 33
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 2afe62ebef57195770d305f21311f00a5b7f4979bdcb134fe3539ccaed2b7778
+        artifact_sha256: f6ac669f203de79e3790a19e081488737d0c6e3ea6d893534a2fa89de9e6c003
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

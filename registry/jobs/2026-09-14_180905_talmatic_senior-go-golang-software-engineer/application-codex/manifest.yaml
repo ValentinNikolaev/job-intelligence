@@ -1,75 +1,75 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
-vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
-company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
 prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
 model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
-cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-generated_at: '2026-09-27T17:09:11Z'
+cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+generated_at: '2026-09-27T17:09:08Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
-    vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
-    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+    company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
     prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
     model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
-    cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-    generated_at: '2026-09-27T17:09:11Z'
+    cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+    generated_at: '2026-09-27T17:09:08Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
-    vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
-    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+    company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
     prompt_version: sha256:f194cee284680ab8df792d1843ab47732c893cb66392cead375a6042491bc379
     model: codex:gpt-5.6-terra:high
     quality_contract_version: 2
-    cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-    generated_at: '2026-09-26T22:31:21Z'
+    cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+    generated_at: '2026-09-26T22:17:51Z'
   analysis:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
-    vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
-    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+    company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
     prompt_version: sha256:f194cee284680ab8df792d1843ab47732c893cb66392cead375a6042491bc379
     model: codex:gpt-5.6-terra:high
     quality_contract_version: 2
-    cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-    generated_at: '2026-09-26T22:31:21Z'
+    cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+    generated_at: '2026-09-26T22:17:51Z'
   interview-preparation:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
-    vacancy_version: sha256:4ac20e26259c7ee6db1eee89fdc758b24aa1e0f10c45b03e9a7089cd660ac782
-    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    vacancy_version: sha256:975f51cf1f6aafd1c5760f3b0c0d3896b58bb275b1d3db67d8e41b2161b96acc
+    company_version: sha256:4c72b4df949827352fd117fd2fb760d8e4f9a18c1e172db25b2481f6793108d4
     prompt_version: sha256:f194cee284680ab8df792d1843ab47732c893cb66392cead375a6042491bc379
     model: codex:gpt-5.6-terra:high
     quality_contract_version: 2
-    cv_export_stem: CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper
-    generated_at: '2026-09-26T22:31:21Z'
+    cv_export_stem: CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer
+    generated_at: '2026-09-26T22:17:51Z'
 quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 389
-      sha256: sha256:71f643b6f4962930e8c70c19a6a94bba697e7965673c6f57da59caa384cf6150
+      word_count: 403
+      sha256: sha256:0aad23005b2b151017d7f2335736d30d8b769fbae1d7b921166b136457d1408b
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
-      word_count: 317
-      sha256: sha256:4586646e0084ae9efd5bc676dc1f352bb42b220eec118ac27a1cf4e3d353e275
+      word_count: 353
+      sha256: sha256:ce0d7165d0f3c14d1067a88c53d5c6a9bf8a808cd46f6e0477885cb439601ce3
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
     analysis:
-      word_count: 874
-      sha256: sha256:0aa64c0d9201c59768ea8f13aae015289cf5b8d80bae33766a3ae951781b649b
+      word_count: 877
+      sha256: sha256:9be0044e828290826e9cdab06a3774b237047f2f5e7ea4b5977154c95bc9c796
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
     interview-preparation:
-      word_count: 976
-      sha256: sha256:2308166ff820c83ca6469a1043afbaae80e6b8a5d2355d59326c5452d21703a2
+      word_count: 1054
+      sha256: sha256:d7738106ada7b3b301779044d040463a69ae2b69c6c309d8a4f877e23f952a0a
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 99ddcf3c8baa786982179b3a64870b4e9abd4329338b59135f64b00d00d5eac1
   document_format: compact
   grounding:
     schema_version: 1
-    sha256: 9baaf3379cd6554e06738fc09f5e088b86978cf8a17c9a343320ecda4e6818a0
+    sha256: 7eb320e23fcf489c92ad9fa0dd98eb86662df33a618f3e044196f13f48d867f7
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -83,12 +83,13 @@ quality:
     evidence_ids:
     - airslate-logger-general
     - career-15-years
-    - crurated-confirmed-crutrade-production
     - crurated-confirmed-datalake-production
-    - crurated-reviewed-delivery-reliability
+    - crurated-confirmed-event-version-production
+    - crurated-event-design
     - crurated-reviewed-stream-onboarding
     - crurated-reviewed-throughput
     - database-reliability
+    - simple-2026-cron-resilience
     - simple-2026-gdpr
     - simple-2026-helpdesk-gateway
     - simple-2026-telephony-privacy
@@ -151,23 +152,6 @@ quality:
           candidate attestation.
       review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
         confirmation before reuse.
-    - id: crurated-confirmed-crutrade-production
-      employer: CRURATED
-      role: PHP Software Developer
-      source:
-        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
-        quote: 'CRURATED Crutrade integration: full technical ownership of production
-          authentication/OTP, account linking, collection import/export, purchase-ownership
-          verification, and request/response logging.'
-        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
-          / consulting engagement'
-        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
-      status: verified
-      verification:
-        reviewer: Codex source review
-        reviewed_at: '2026-09-25'
-        method: Compared exact candidate confirmation and scoped interpretation; production
-          use and technical ownership only.
     - id: crurated-confirmed-datalake-production
       employer: CRURATED
       role: PHP Software Developer
@@ -184,24 +168,42 @@ quality:
         reviewed_at: '2026-09-25'
         method: Compared exact candidate confirmation and scoped interpretation; production
           use and technical ownership only.
-    - id: crurated-reviewed-delivery-reliability
+    - id: crurated-confirmed-event-version-production
       employer: CRURATED
       role: PHP Software Developer
       source:
-        path: registry/candidate/crurated-metric-review-2026-09-25.md
-        quote: CRURATED event delivery reliability exceeded 99.9% under the candidate's
-          technical ownership; Grafana was identified as a verification source.
-        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
-          subcontract / consulting engagement.'
-        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED parallel event-version publication: full technical ownership,
+          production use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
       status: verified
       verification:
-        reviewer: Codex contextual candidate-reply review
+        reviewer: Codex source review
         reviewed_at: '2026-09-25'
-        method: Candidate supplied verification bases for offered LinkedIn metrics
-          without excluding any; not independently audited.
-      review_notes: Use only within stated system scope and preserve original units;
-        candidate correction supersedes this entry.
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-event-design
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Define a robust, versioned event schema to enforce consistency across\
+          \ teams and\n  accelerate integration of new event types."
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
     - id: crurated-reviewed-stream-onboarding
       employer: CRURATED
       role: PHP Software Developer
@@ -262,6 +264,36 @@ quality:
         reviewed_at: '2026-09-22T22:01:45.004885+00:00'
         method: Compared verbatim extract and attribution to immutable candidate source;
           source-grounding verification, not new candidate attestation.
+    - id: simple-2026-cron-resilience
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**E. Elimination of daily cron fatal failures under Intercom API degradation
+          (Jul–Aug 2026)**
+
+          - Diagnosed from logs and code: up to 14 fatal runs/day; a 48-page scan
+          of ~7,000 tickets exceeded the 19.5-minute run budget when Intercom search
+          degraded; per-page retry was bypassed by the overall-context-done branch.
+
+          - Fix: partial-success semantics with an "incomplete scan" metric instead
+          of fatal; sharded search by updated_at with 3–4 parallel cursor chains.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: &id001
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: '- **Role:** Software Developer'
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
     - id: simple-2026-gdpr
       employer: Simple.life
       role: Software Developer
@@ -284,10 +316,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: &id001
-        path: registry/candidate/user-confirmed-career-clarifications.md
-        quote: '- **Role:** Software Developer'
-        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      attribution_source: *id001
       status: verified
       verification:
         reviewer: Codex source review
@@ -363,14 +392,14 @@ quality:
     - cv_bullet_coverage
     semantic_review_required: true
     cv_audit:
-      target_role: Senior PHP Developer
+      target_role: Senior Go/Golang Software Engineer
       editorial_review:
         knowledge_base_version: 1
         verdict: approve
-        reviewer: Codex CV editorial rebuild review, SlotCatalog
+        reviewer: Codex CV editorial rebuild review, Talmatic
       top_third_evidence_ids:
       - career-15-years
-      - crurated-reviewed-throughput
+      - simple-2026-telephony-privacy
       bullet_decisions:
       - text: Owned the privacy-first architecture and backend for a health-domain
           calling platform protecting PII/PHI; it passed formal security and call-recording
@@ -379,10 +408,10 @@ quality:
         verdict: approve
         weight: critical
         signal_type: security
-        ordering_rationale: Leads the most recent role with verified architecture,
-          security review, compliance review, and production delivery.
-        reason: Demonstrates ownership of a production backend under material regulatory
-          constraints.
+        ordering_rationale: Leads the role with end-to-end Go/AWS architecture, health-domain
+          privacy, formal review, and production delivery.
+        reason: Directly supports Talmatic's system-design and AWS requirements with
+          a verified security consequence.
       - text: Built a multi-tenant Go helpdesk gateway with a vendor-neutral event
           model and Intercom and Zendesk adapters, enabling the company’s first B2B
           support-AI demonstration.
@@ -390,148 +419,185 @@ quality:
         verdict: approve
         weight: high
         signal_type: architecture
-        ordering_rationale: Follows with a distinct integration-architecture and product-delivery
-          consequence.
-        reason: Shows end-to-end ownership of a scalable backend integration.
+        ordering_rationale: Follows the privacy platform as the strongest direct Go
+          integration architecture and product-delivery result.
+        reason: Supports commercial Go and complex backend integration ownership.
+      - text: Improved resilience of Go support automation by turning recurring external-search
+          failures into observable partial completions, so operations could identify
+          incomplete processing instead of losing the entire run.
+        decision: keep
+        verdict: approve
+        weight: high
+        signal_type: reliability
+        ordering_rationale: Shows production diagnosis and a verified operational
+          consequence without implementation mechanics.
+        reason: Supports distributed troubleshooting and production ownership.
       - text: Automated GDPR data exports across seven sources through a self-service
           administration workflow for creating, tracking, and reviewing requests.
         decision: keep
         verdict: approve
         weight: medium
         signal_type: impact
-        ordering_rationale: Retained as a separate compliance and maintainability
-          outcome after stronger architecture results.
-        reason: Shows responsible data-service delivery without claiming unsupported
-          business impact.
+        ordering_rationale: Retained after direct Go reliability work as a distinct
+          compliance and integration result.
+        reason: Shows regulated data-flow ownership without overstating an outcome.
       - text: Led the production DataLake and event-analytics architecture, increasing
           throughput by over 10x under technical ownership.
         decision: keep
         verdict: approve
         weight: critical
         signal_type: scale
-        ordering_rationale: Leads the PHP consulting role because it has the clearest
-          measured production consequence.
-        reason: Directly supports SlotCatalog's PHP architecture and real production
-          impact emphasis.
+        ordering_rationale: Leads CRURATED because the confirmed measured production
+          consequence is its strongest signal.
+        reason: Demonstrates consequential architecture ownership and scale.
       - text: Designed modular event-stream architecture for the production DataLake,
           reducing new analytics-stream setup from several days to under four hours.
         decision: keep
         verdict: approve
         weight: high
         signal_type: architecture
-        ordering_rationale: Follows the throughput result with an independent delivery-speed
-          consequence.
-        reason: Demonstrates maintainable architecture and practical technical judgment.
-      - text: Maintained event delivery reliability above 99.9% through fault-tolerant
-          routing, retries, and operational monitoring.
+        ordering_rationale: Has a direct, separate delivery-speed consequence.
+        reason: Demonstrates modular system design relevant to a complex SaaS platform.
+      - text: Designed versioned event schemas and parallel production publication
+          so analytics consumers could evolve schemas while new events continued to
+          be delivered.
         decision: keep
         verdict: approve
         weight: high
         signal_type: reliability
-        ordering_rationale: Third as verified long-term production behavior.
-        reason: Supports ownership after release and production stability.
-      - text: Delivered the production Crutrade integration for authentication, account
-          linking, collection import and export, purchase-ownership verification,
-          and request/response logging.
-        decision: keep
-        verdict: approve
-        weight: medium
-        signal_type: impact
-        ordering_rationale: Retained after measured delivery and reliability signals
-          because production integration scope is confirmed without a separate business
-          metric.
-        reason: Shows end-to-end feature delivery relevant to SlotCatalog's service
-          ownership.
+        ordering_rationale: Shows safe evolution of a live production system without
+          a separate measured impact.
+        reason: Supports distributed-systems design and integration reliability.
       - text: Reduced peak load on the main database by removing bottlenecks and redistributing
           workload, improving service stability during high-traffic periods.
         decision: keep
         verdict: approve
         weight: high
         signal_type: reliability
-        ordering_rationale: Leads airSlate with its strongest verified relational-data
-          performance result.
-        reason: Supports MySQL/PostgreSQL and production-troubleshooting requirements.
+        ordering_rationale: Leads airSlate because it is the sole directly confirmed
+          performance and stability consequence.
+        reason: Supports relational-data performance and production troubleshooting.
       - text: Developed a Laravel/Symfony logger package aligned with the interservice
           communication standard, giving teams a shared logging implementation.
         decision: keep
         verdict: approve
         weight: medium
         signal_type: team_influence
-        ordering_rationale: Follows as a distinct shared engineering standard with
-          a less direct external consequence.
-        reason: Supports Laravel/Symfony experience and technical standards contribution.
-    reviewer: Codex CV editorial rebuild review, SlotCatalog
+        ordering_rationale: Is a distinct team-level standardization result with less
+          direct external consequence.
+        reason: Supports observability and engineering influence without claiming
+          unsupported adoption metrics.
+    reviewer: Codex CV editorial rebuild review, Talmatic
     document_sha256:
-      cv: sha256:71f643b6f4962930e8c70c19a6a94bba697e7965673c6f57da59caa384cf6150
+      cv: sha256:0aad23005b2b151017d7f2335736d30d8b769fbae1d7b921166b136457d1408b
     requirements:
-    - requirement: 5+ years of PHP production experience
+    - requirement: Strong commercial Go/Golang experience
       importance: critical
       basis: stated
-      jd_quote: 5+ years of PHP experience in production environments
+      jd_quote: Strong commercial experience with **Go / Golang**.
       match: strong
-      candidate_quote: 15+ years of experience
+      candidate_quote: New Go service abstracting helpdesk vendors
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
-      - career-15-years
-    - requirement: Laravel and/or Symfony in large codebases
+      - simple-2026-helpdesk-gateway
+    - requirement: System design ownership as a key interview focus
       importance: critical
       basis: stated
-      jd_quote: Laravel and/or Symfony
+      jd_quote: System design is a key part of the role and will be an important focus
+        during the interview process.
       match: strong
-      candidate_quote: Developed a Laravel/Symfony-based product-wide logger package
+      candidate_quote: candidate owned the architecture
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
-      - airslate-logger-general
-    - requirement: English C1-C2 proficiency
+      - simple-2026-telephony-privacy
+    - requirement: Relational database and SQL performance troubleshooting
       importance: high
       basis: stated
-      jd_quote: English C1-C2 is a must
-      match: unknown
-      candidate_quote: ''
-      risk: A formal C1-C2 assessment is not verified.
-      mitigation: Confirm current level before submission.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: PostgreSQL / MySQL and relational data modeling
-      importance: high
-      basis: stated
-      jd_quote: PostgreSQL / MySQL
+      jd_quote: Analyze SQL queries, database performance, application waits, and
+        network latency.
       match: partial
       candidate_quote: peak load on the main database
-      risk: Direct database stability is verified; complete relational-data-modeling
-        scope is not.
-      mitigation: Present the verified result without widening it.
+      risk: The exact SQL, wait, and network-latency scope is not verified.
+      mitigation: Discuss the confirmed database performance example without claiming
+        narrower diagnostics.
       hard_blocker: false
       evidence_ids:
       - database-reliability
-    - requirement: Practicable usage of admin panels builder filament (v.5)
+    - requirement: Code ownership and on-call rotation participation
+      importance: high
+      basis: stated
+      jd_quote: Take ownership of the code you deliver and participate in an on-call
+        rotation.
+      match: partial
+      candidate_quote: candidate owned the architecture
+      risk: Formal on-call rotation participation is not verified.
+      mitigation: Confirm rotation expectations and candidate availability.
+      hard_blocker: false
+      evidence_ids:
+      - simple-2026-telephony-privacy
+    - requirement: Distributed backend troubleshooting and debugging
+      importance: high
+      basis: stated
+      jd_quote: Troubleshoot distributed production systems and identify performance
+        bottlenecks.
+      match: strong
+      candidate_quote: Diagnosed from logs and code
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - simple-2026-cron-resilience
+    - requirement: Mentor engineers and share technical knowledge
+      importance: meaningful
+      basis: stated
+      jd_quote: Mentor engineers and share technical knowledge across the team.
+      match: unknown
+      candidate_quote: ''
+      risk: A direct mentoring example is not verified.
+      mitigation: Confirm a specific mentoring example before adding it.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: At least 3 hours overlap with Eastern US working hours
+      importance: meaningful
+      basis: stated
+      jd_quote: At least 3 hours overlap with Eastern US working hours
+      match: unknown
+      candidate_quote: ''
+      risk: Daily overlap commitment is not recorded.
+      mitigation: Confirm availability with the recruiter.
+      hard_blocker: false
+      evidence_ids: []
+    - requirement: Financial services, fintech, payments, or RegTech background
       importance: preferred
       basis: stated
-      jd_quote: Practicable usage of admin panels builder filament (v.5)
+      jd_quote: Previous experience in **financial services, fintech, payments, or
+        RegTech**.
       match: missing
       candidate_quote: ''
-      risk: No verified Filament v5 experience.
-      mitigation: Do not claim it; clarify whether it is essential.
+      risk: No verified direct domain result.
+      mitigation: Present transferable SaaS reliability experience without claiming
+        financial-services experience.
       hard_blocker: false
       evidence_ids: []
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
     - document: cv
-      text: Senior PHP backend engineer with more than 15 years of experience building
-        production systems in PHP and Go.
+      text: Senior Go/Golang backend engineer with more than 15 years of experience
+        building production systems in Go and PHP.
       evidence_ids:
       - career-15-years
     - document: cv
-      text: Recent PHP consulting work includes a production DataLake that increased
-        throughput by over 10x and reduced analytics-stream setup to under four hours.
+      text: Recent work includes a PII/PHI-protected Amazon Connect platform, a vendor-neutral
+        Go integration gateway, and production event systems.
       evidence_ids:
-      - crurated-reviewed-throughput
-      - crurated-reviewed-stream-onboarding
+      - simple-2026-telephony-privacy
+      - simple-2026-helpdesk-gateway
+      - crurated-confirmed-datalake-production
     - document: cv
       text: Owned the privacy-first architecture and backend for a health-domain calling
         platform protecting PII/PHI; it passed formal security and call-recording
@@ -544,6 +610,12 @@ quality:
         demonstration.
       evidence_ids:
       - simple-2026-helpdesk-gateway
+    - document: cv
+      text: Improved resilience of Go support automation by turning recurring external-search
+        failures into observable partial completions, so operations could identify
+        incomplete processing instead of losing the entire run.
+      evidence_ids:
+      - simple-2026-cron-resilience
     - document: cv
       text: Automated GDPR data exports across seven sources through a self-service
         administration workflow for creating, tracking, and reviewing requests.
@@ -561,16 +633,12 @@ quality:
       evidence_ids:
       - crurated-reviewed-stream-onboarding
     - document: cv
-      text: Maintained event delivery reliability above 99.9% through fault-tolerant
-        routing, retries, and operational monitoring.
+      text: Designed versioned event schemas and parallel production publication so
+        analytics consumers could evolve schemas while new events continued to be
+        delivered.
       evidence_ids:
-      - crurated-reviewed-delivery-reliability
-    - document: cv
-      text: Delivered the production Crutrade integration for authentication, account
-        linking, collection import and export, purchase-ownership verification, and
-        request/response logging.
-      evidence_ids:
-      - crurated-confirmed-crutrade-production
+      - crurated-event-design
+      - crurated-confirmed-event-version-production
     - document: cv
       text: Reduced peak load on the main database by removing bottlenecks and redistributing
         workload, improving service stability during high-traffic periods.
@@ -581,7 +649,7 @@ quality:
         communication standard, giving teams a shared logging implementation.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:60626d58ec9fa3b86a2133f2512635e80552f069042a6cb949a8ab474a45c5ce
+  declaration_sha256: sha256:8b74e109205dfd4077c1738ed0ee7105a4f4210bfaaa505800571adfcdaa8995
   method:
     workflow: two-wave
     final_review:
@@ -589,18 +657,18 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 455
-      sha256: sha256:28ba772b055bbecc85f8fdf923d59b34655204c7a59435ec15b741bd55ad29e9
+      word_count: 511
+      sha256: sha256:26775b65e270e281ffe941eb956dda5026fd498091ac3987a1ae49444efb8ee9
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 71f643b6f4962930e8c70c19a6a94bba697e7965673c6f57da59caa384cf6150
-      artifact_sha256: 739402486cf58b26cbbb2ba070fb7c078e0fc491127dd9f052b890c537e8de63
-      extracted_text_sha256: 472a28c5ab0865091ad20578e4334b547b1a2b84bd53d6da83b363301734045e
-      canonical_tokens: 410
-      extracted_tokens: 410
+      source_sha256: 0aad23005b2b151017d7f2335736d30d8b769fbae1d7b921166b136457d1408b
+      artifact_sha256: da6a9f68d0e2e818538080aec2443ed2ed36b9ebb2026451dc7496a3184b6c4c
+      extracted_text_sha256: 42b3c35fce4d8277b87c680ba888f8894e1d0dac37457077d79fc90d075c714b
+      canonical_tokens: 425
+      extracted_tokens: 425
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
@@ -614,37 +682,37 @@ quality:
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 739402486cf58b26cbbb2ba070fb7c078e0fc491127dd9f052b890c537e8de63
+        artifact_sha256: da6a9f68d0e2e818538080aec2443ed2ed36b9ebb2026451dc7496a3184b6c4c
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:
       schema_version: 1
       source_file: cover-letter.md
       artifact_file: cover-letter.docx
-      source_sha256: 4586646e0084ae9efd5bc676dc1f352bb42b220eec118ac27a1cf4e3d353e275
-      artifact_sha256: b624522624ef82fdb99ee67dab8ccddf8213dff53632ae46deeaa89939de6b18
-      extracted_text_sha256: 1ec00e9bbd8ab9f14fad0b4c8f7d400deaf6503a9dec9338c27cddd8a5f233dd
-      canonical_tokens: 324
-      extracted_tokens: 324
+      source_sha256: ce0d7165d0f3c14d1067a88c53d5c6a9bf8a808cd46f6e0477885cb439601ce3
+      artifact_sha256: 6821c8f869486167a9bc15c58185e6f0e43aa2c31ae5ccee6f137f7591d35518
+      extracted_text_sha256: f67f6e728cf5117fe4762135045fec5e450f85f2c687024082c14a1811e8e475
+      canonical_tokens: 362
+      extracted_tokens: 362
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 8
+        readable_paragraphs: 7
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: b624522624ef82fdb99ee67dab8ccddf8213dff53632ae46deeaa89939de6b18
+        artifact_sha256: 6821c8f869486167a9bc15c58185e6f0e43aa2c31ae5ccee6f137f7591d35518
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
 files:
-- CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper.docx
-- CV_ValentinNikolaev_slotcatalog_SeniorPHPDeveloper.md
+- CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer.docx
+- CV_ValentinNikolaev_talmatic_SeniorGoGolangSoftwareEngineer.md
 - analysis.md
 - cover-letter.docx
 - cover-letter.md

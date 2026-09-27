@@ -103,6 +103,12 @@ explicit single-document request, use the full-package flow below.
      reliability or security, and cross-team influence as evidence permits. A
      technology implementation or duty should never displace a stronger result;
      record the reason for the chosen order in the CV audit;
+   - consult `config/cv-editorial-knowledge.yaml` for approved outcome shapes and
+     rejected internal-detail patterns. For each final Experience bullet record
+     `weight`, `signal_type`, `ordering_rationale`, and `verdict: approve` in
+     `cv_audit.bullet_decisions`; add a positive versioned
+     `cv_audit.editorial_review` with the actual editor identity. The guidance
+     never supplies facts and is no reason to add filler;
    - prefer evidence of architecture decisions and their reason, reliability,
      observability, migrations, simplification, and cross-team influence over a
      list of technologies or planning duties. Never manufacture a trade-off,

@@ -221,6 +221,10 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     importance to this vacancy: strongest outcome and scope first, then architecture
     judgment, production reliability or security, and cross-team influence as
     applicable. Record the role counts and ordering rationale in the CV audit.
+    Use `config/cv-editorial-knowledge.yaml` as a guide to employer-facing
+    outcomes. It supplies patterns, never candidate facts. Reject internal
+    ticket, test-count, coverage and implementation-mechanic bullets unless
+    a distinct source-backed consequence can be stated without those details.
     Every displayed role needs at least two distinct source-backed outcome or
     decision bullets; each role ending within the last three years needs at
     least three. Recheck candidate sources before declaring a shortage. If
@@ -379,7 +383,12 @@ claims in each selected document, including metric and employer attribution. Pop
 quality v2 with `evidence_bank`, `claims_ledger`, `document_format`, requirement rows,
 cover-story evidence IDs, final reviewer and normalized document hashes. For CV work,
 record a `cv_audit` against the finalized CV: target role, two source-backed proof
-points in its top third, and reasoned bullet decisions. Senior Backend and hands-on
+points in its top third, and reasoned bullet decisions. For every retained
+Experience bullet, record weight, signal type, ordering rationale and an
+`approve` verdict; record the actual editor and knowledge-base version in
+`cv_audit.editorial_review`. Rank bullets by descending weight within each
+role. Do not declare approval to bypass missing facts or fill a bullet quota.
+Senior Backend and hands-on
 Tech Lead are positioning choices, never permission to alter employment titles.
 
 The default is one combined review. For a user-selected priority application, a

@@ -3,32 +3,34 @@
 **Score:** 77/100  
 **Recommendation:** Match
 
-PHP event-system ownership, production integration, team leadership and Go support AI work fit the lead backend remit. DDD and modular-monolith practice are not established by the reviewed candidate record.
+The role aligns with documented PHP platform ownership, Laravel/Symfony work, production event-system design, integrations, and technical leadership. The candidate record does not establish DDD, modular-monolith, GCP, or on-premise delivery, so the CV must not imply them.
 
 ## Why it matches
 
-- Owned PHP event analytics and production Crutrade integration at CRURATED.
-- Led development planning and delivery and built a shared Laravel/Symfony component at airSlate.
-- Built a Go support platform with LLM-enabled workflows at Simple.life.
+- PHP production ownership for CRURATED event analytics and a production partner integration.
+- Laravel/Symfony shared-component work and production database-stability evidence at airSlate.
+- Event-driven architecture, versioned contracts, queues, REST APIs, and Kubernetes are documented.
+- Simple.life work provides evidence of Go backend ownership and LLM-enabled support automation.
 
 ## Gaps
 
-- No explicit verified DDD or modular-monolith project.
-- Exact experience with each requested AI vendor API is unverified.
+- No verified DDD or modular-monolith implementation.
+- No verified GCP or on-premise infrastructure delivery.
+- Exact experience with individual vendor LLM APIs beyond documented support automation is not established.
 
 ## Concerns
 
-- CRURATED was a concurrent part-time PHP engagement; latest full-time work was mainly Go.
+- CRURATED PHP work was a concurrent part-time subcontract; the CV must label it accurately.
+- Ukrainian and English meet the source CV description, but the vacancy-specific language bar was not independently confirmed.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| 5+ years commercial PHP 7/8 experience with team/tech lead experience | critical / stated | strong | Від 5 років комерційного досвіду розробки на PHP (7-8 версії) та успішний досвід управління командою або технічного лідерства (Tech/Team Lead). | Brought the product from prototype to closed beta in under 6 months. | / |
+| Commercial PHP 7/8 experience with team or technical leadership | critical / stated | strong | Від 5 років комерційного досвіду розробки на PHP (7-8 версії) та успішний досвід управління командою або технічного лідерства (Tech/Team Lead). | I have a strong track record in PHP, with 5 years of leadership experience. | / |
 | Deep Laravel or Symfony knowledge | critical / stated | strong | Глибокі знання **Laravel** чи **Symfony** | Developed a Laravel/Symfony-based product-wide logger package | / |
-| Confident Ukrainian; English at B1 level | high / stated | unknown | Впевнене володіння українською мовою, англійська |  | LinkedIn lists Ukrainian as Full Professional, but this has not been independently confirmed for this specific role's bar. / Confirm current Ukrainian/English proficiency with the candidate before submission. |
-| Understanding of DDD, modular-monolith, and microservice architectures | high / stated | partial | Розуміння DDD, монолітно-модульної та мікросервісної архітектур. | CRURATED DataLake and event analytics: full technical ownership, production use. | Microservice work is documented; DDD and modular-monolith examples are not. / Ask for a concrete DDD or modular-monolith design example before making a stronger claim. |
-| PostgreSQL and message brokers (RabbitMQ or similar) | high / stated | strong | Впевнена робота з PostgreSQL (або іншими реляційними БД) та брокерами повідомлень | peak load on the main database by removing bottlenecks | / |
-| AI-orientation and understanding of modern LLM APIs (OpenAI, Claude) | high / stated | strong | Інтерес до сфери штучного інтелекту, розуміння принципів роботи API сучасних LLM (OpenAI, Claude тощо) | Integrate OpenAI-powered auto-triage flows | / |
-| Docker and Kubernetes (K8s) practical experience | high / stated | strong | Практичний досвід роботи з Docker, Kubernetes (K8s) | PHP \| Go \| Laravel \| MySQL \| AWS \| Kubernetes \| Microservices \| REST APIs \| CI/CD | / |
-| GCP and on-premise infrastructure experience | meaningful / stated | missing | Досвід роботи з хмарною платформою **GCP** (Google Cloud Platform) та побудови рішень на власній **On-Premise** інфраструктурі. |  | / |
+| REST API integration and event-driven architecture | high / stated | partial | Практичні навички проектування та розробки REST API, gRPC, WebSockets, вміння розбиратися в чужих API та legacy-коді для інтеграції сервісів. | Define a robust, versioned event schema to enforce consistency across teams | The record supports REST and event contracts, but does not establish gRPC or WebSockets delivery. / Present only the documented REST and event-driven work; confirm any gRPC or WebSockets examples before submission. |
+| DDD, modular-monolith, and microservice architecture | high / stated | partial | Розуміння DDD, монолітно-модульної та мікросервісної архітектур. | Microservices | Microservice experience is documented, while DDD and modular-monolith examples are not. / Do not claim DDD or modular-monolith practice; ask for a concrete example if it is material to the screen. |
+| PostgreSQL or another relational database and a message broker | high / stated | strong | Впевнена робота з PostgreSQL (або іншими реляційними БД) та брокерами повідомлень | PostgreSQL | / |
+| Docker and Kubernetes practical experience | high / stated | strong | Практичний досвід роботи з Docker, Kubernetes (K8s) та системами контролю версій (Git/GitLab). | Kubernetes | / |
+| GCP and on-premise infrastructure | meaningful / stated | missing | Досвід роботи з хмарною платформою **GCP** (Google Cloud Platform) та побудови рішень на власній **On-Premise** інфраструктурі. |  | Neither GCP nor on-premise delivery is verified in the candidate sources. / Keep the gap explicit and do not add these keywords to the CV. |

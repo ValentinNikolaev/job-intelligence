@@ -1,21 +1,21 @@
 profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
 vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:b613a40f2ee7ecb9ff2ff7c23f6115ab24a8174db058a168b2b06ebf19881b81
-model: codex:gpt-5.6-terra:high
+prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+model: codex:gpt-5.6-terra:medium
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
-generated_at: '2026-09-27T15:54:40Z'
+generated_at: '2026-09-27T16:50:51Z'
 documents:
   cv:
     profile_version: sha256:f243042352c5e312ad5b423a7184a7532bebec2ae975e800b6f8d878e8ebf55c
     vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:b613a40f2ee7ecb9ff2ff7c23f6115ab24a8174db058a168b2b06ebf19881b81
-    model: codex:gpt-5.6-terra:high
+    prompt_version: sha256:ea08ff4c808808747ee9c5c8137222fca2008fca9eddc6099718304fe77ded69
+    model: codex:gpt-5.6-terra:medium
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_webeetle_Developer
-    generated_at: '2026-09-27T15:54:40Z'
+    generated_at: '2026-09-27T16:50:51Z'
   cover-letter:
     profile_version: sha256:bf0fc74d78b499a280425a978c7f47be8fd3070edcbbbe0edd462ac3aae8ce93
     vacancy_version: sha256:5e876ce9716f60f5e46cfefced9a311e148ce9a8061621b3befaaa801b47f3b0
@@ -47,8 +47,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 451
-      sha256: sha256:588e8e67ec66facc461796f1e3764d2fd2f3f4ad15fd28624a524f7902215af0
+      word_count: 400
+      sha256: sha256:061e93d5b3ade39b06916a8a9dd62406fd5297806a040f8b6e532c4ca4b8b82d
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
     cover-letter:
@@ -69,7 +69,7 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 74927d9555d5db32122da7fb3b644f40a1d726a3253f1f81066b566c130b1dae
+    sha256: 2caa5d21743b6e9d55b5de80f8a5be33823246a792801b54ecd99c5333c7c848
     evidence_bank:
       schema_version: 1
       sha256: 166ebd7016ee285033356d062cbb6dfe966bb957f247f150376b7bd8b7804fda
@@ -84,15 +84,16 @@ quality:
     - airslate-logger-general
     - career-15-years
     - crurated-confirmed-crutrade-production
+    - crurated-confirmed-datalake-production
     - crurated-confirmed-event-version-production
     - crurated-event-design
     - crurated-reviewed-delivery-reliability
     - crurated-reviewed-stream-onboarding
+    - crurated-reviewed-throughput
     - database-reliability
     - simple-2026-cron-resilience
     - simple-2026-gdpr
     - simple-2026-helpdesk-gateway
-    - simple-2026-telephony
     - simple-2026-telephony-lawful-calling
     - simple-2026-telephony-privacy
     evidence_entries:
@@ -171,6 +172,22 @@ quality:
         reviewed_at: '2026-09-25'
         method: Compared exact candidate confirmation and scoped interpretation; production
           use and technical ownership only.
+    - id: crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED DataLake and event analytics: full technical ownership, production
+          use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
     - id: crurated-confirmed-event-version-production
       employer: CRURATED
       role: PHP Software Developer
@@ -233,6 +250,25 @@ quality:
         quote: CRURATED new analytics stream setup dropped from several days to under
           4 hours through modular design under the candidate's technical ownership;
           operational observation was identified as the basis.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated system scope and preserve original units;
+        candidate correction supersedes this entry.
+    - id: crurated-reviewed-throughput
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED DataLake throughput increased by over 10x under the candidate's
+          technical ownership; Grafana and operational observation were identified
+          as verification sources.
         context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
           subcontract / consulting engagement.'
         sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
@@ -358,48 +394,6 @@ quality:
       review_notes: Candidate-reported delivered work only; estimates and example
         bullets are excluded. August-September work confirmed as past in user follow-up;
         exact end month remains unconfirmed.
-    - id: simple-2026-telephony
-      employer: Simple.life
-      role: Software Developer
-      source:
-        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
-        quote: '**A. Outbound telephony platform on Amazon Connect (Aug–Sep 2026)**
-
-          - Owned architecture and backend end-to-end; wrote the epic/design doc;
-          passed security sign-off; released to production on 2026-09-25.
-
-          - Agent federation via AssumeRole + GetFederationToken: no per-agent AWS
-          accounts, no SAML app, IT removed from the critical path.
-
-          - Connect users created lazily by the backend (moved out of Terraform);
-          stale users cleaned by cron; admin activate/deactivate.
-
-          - PII controls: customer phone number never rendered or logged (masked only),
-          purged from contact record by TTL, DevTools disabled by policy.
-
-          - Compliance logic: call windows with timezones/Sundays/holidays, do-not-call
-          list, queued-callback withdrawal on opt-out, retry policy owned by backend
-          (Connect retries = 0), outcome written to the existing Intercom ticket (no
-          duplicate tickets).
-
-          - Designed load: 10–20 calls/day per agent, max 50. Cross-functional team:
-          backend (Valentin), frontend, SRE.
-
-          - Authored a 30-scenario telephony QA checklist with run journal; 4 documented
-          runs in 2 days before launch; every finding converted to a ticket.'
-        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
-        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
-          Support & Content Platform'
-      attribution_source: *id001
-      status: verified
-      verification:
-        reviewer: Codex source review
-        reviewed_at: '2026-09-26'
-        method: Compared direct candidate-supplied fact section and earlier direct
-          role clarification; Jira and Slack records were not independently inspected.
-      review_notes: Candidate-reported delivered work only; estimates and example
-        bullets are excluded. August-September work confirmed as past in user follow-up;
-        exact end month remains unconfirmed.
     - id: simple-2026-telephony-lawful-calling
       employer: Simple.life
       role: Software Developer
@@ -458,243 +452,221 @@ quality:
     - cv_bullet_coverage
     semantic_review_required: true
     cv_audit:
-      target_role: weBeetle Back-End Developer
+      target_role: weBeetle Backend Developer
       top_third_evidence_ids:
       - career-15-years
       - simple-2026-telephony-privacy
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: Codex CV editorial self-review
       bullet_decisions:
-      - text: 'Architected a health-domain Amazon Connect platform with PII/PHI protection
-          as its starting point: phone numbers were server-resolved, masked in UI
-          and logs, passed only as transient contact attributes and purged by TTL;
-          formal security and recording-compliance reviews preceded production.'
+      - text: Delivered a privacy-first outbound-calling backend for a health-domain
+          workflow; security and recording-compliance review cleared it for production.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Implemented backend-owned contact controls for timezones, holidays,
-          do-not-call rules and opt-outs, setting Amazon Connect retries to zero so
-          repeat calls could not bypass those safeguards.
+        reason: Released security-sensitive backend result.
+        weight: critical
+        signal_type: security
+        ordering_rationale: Strongest outcome and production consequence leads.
+        verdict: approve
+      - text: Built policy controls for contact timing, holidays, opt-outs and do-not-call
+          records, keeping customer outreach within defined safeguards.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Implemented least-privilege Entra federation and lazy Connect-user lifecycle
-          management, separating call access from diagnostics and administration without
-          individual AWS accounts or a SAML application.
+        reason: Shows consequential backend policy design.
+        weight: high
+        signal_type: security
+        ordering_rationale: Customer-protection outcome follows release.
+        verdict: approve
+      - text: Created a Go integration gateway that normalized vendor events across
+          Intercom and Zendesk, supporting the first B2B support-AI demonstration.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Built a Go helpdesk gateway with vendor-neutral events, Intercom and
-          Zendesk adapters and SQS queues, enabling the support-AI product’s first
-          B2B demonstration.
+        reason: Demonstrates distributed integration architecture.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Integration relevance precedes operational detail.
+        verdict: approve
+      - text: Made support-ticket processing resilient during dependency degradation
+          through partial-success reporting and recoverable scans.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Made Intercom ticket processing resilient with partial-success reporting
-          and sharded cursor scans, retaining visibility of incomplete work during
-          dependency degradation.
+        reason: Verified resilience consequence.
+        weight: medium
+        signal_type: reliability
+        ordering_rationale: Follows core architecture with operations signal.
+        verdict: approve
+      - text: Automated GDPR export requests across seven sources through a self-service
+          administrative flow.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Delivered self-service GDPR exports across seven data sources with request
-          creation, status tracking and review.
+        reason: Distinct cross-system compliance delivery.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Last because it is less central to backend track.
+        verdict: approve
+      - text: Built modular PHP event-stream delivery for production analytics, cutting
+          new-stream setup from several days to under four hours.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Built modular event-stream architecture for production analytics, reducing
-          the setup of a new stream from several days to under four hours.
+        reason: Direct PHP delivery result.
+        weight: critical
+        signal_type: impact
+        ordering_rationale: Leads PHP role with business-relevant speed outcome.
+        verdict: approve
+      - text: Sustained event delivery above 99.9% with fault-tolerant routing, retries
+          and production monitoring.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Maintained event delivery above 99.9% through retry design, fault-tolerant
-          routing and operational monitoring.
+        reason: Measured production reliability.
+        weight: high
+        signal_type: reliability
+        ordering_rationale: Reliability is the next strongest outcome.
+        verdict: approve
+      - text: Established versioned event schemas with parallel publishing, allowing
+          downstream consumers to move between versions without halting new data.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Designed versioned event contracts and parallel publication so consumers
-          could migrate without preventing delivery of new event data.
+        reason: Shows maintainable distributed-service evolution.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Architecture proof precedes scope-only integration work.
+        verdict: approve
+      - text: Took technical ownership of a production partner connection spanning
+          authentication, account linking, collection import/export and purchase verification.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Owned a production partner integration covering authentication, OTP,
-          account linking and request/response logging.
+        reason: Concrete production API integration ownership.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Distinct integration scope without invented impact.
+        verdict: approve
+      - text: Increased DataLake throughput by more than tenfold under documented
+          technical ownership.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Removed database bottlenecks and redistributed workload, reducing peak
-          pressure on the main database and improving service stability during heavy
-          traffic.
+        reason: Measured scale proof.
+        weight: medium
+        signal_type: scale
+        ordering_rationale: Last because the preceding bullets better map to everyday
+          backend delivery.
+        verdict: approve
+      - text: Improved high-traffic service stability by removing main-database bottlenecks
+          and redistributing workload.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-      - text: Introduced a Laravel/Symfony logger package aligned with the product’s
-          interservice communication standard, creating a shared service-level logging
-          component.
+        reason: Verified relational-database reliability result.
+        weight: high
+        signal_type: reliability
+        ordering_rationale: Leads compact role with clear consequence.
+        verdict: approve
+      - text: Developed a shared Laravel/Symfony logging package that followed the
+          product's interservice communication standard.
         decision: keep
-        reason: Leads with a distinct, source-backed privacy, security, lawful-calling,
-          architecture, reliability or delivery consequence.
-    reviewer: Codex telephony privacy CV review
+        reason: Direct Symfony and team-standardization evidence.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Follows stronger stability outcome.
+        verdict: approve
+    reviewer: Codex CV editorial self-review
     document_sha256:
-      cv: sha256:588e8e67ec66facc461796f1e3764d2fd2f3f4ad15fd28624a524f7902215af0
+      cv: sha256:061e93d5b3ade39b06916a8a9dd62406fd5297806a040f8b6e532c4ca4b8b82d
     requirements:
-    - requirement: PHP/Symfony backend development
+    - requirement: PHP with Laravel or Symfony
       importance: critical
       basis: stated
       jd_quote: Conoscenza di framework come Laravel / Symfony.
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: On-site work in Angri, Italy or Split, Croatia with limited remote
-        days
-      importance: critical
-      basis: stated
-      jd_quote: 'Sede di lavoro @
-
-        Angri (SA), Italy
-
-        e
-
-        Spalato, Croazia
-
-        .'
-      match: unknown
-      candidate_quote: ''
-      risk: The candidate is based in Fiumicino/Rome, distant from either site, with
-        remote work capped at 2-4 days per month.
-      mitigation: Disclosed transparently; candidate to confirm logistics directly
-        with weBeetle before proceeding.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: MySQL or another RDBMS
-      importance: high
-      basis: stated
-      jd_quote: o altro database management system RDBMS.
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: API/REST distributed systems architecture
-      importance: high
-      basis: stated
-      jd_quote: Conoscenza del linguaggio / librerie API e dell'architettura software
-        per i sistemi distribuiti REST.
-      match: unknown
-      candidate_quote: ''
-      risk: The refreshed CV does not surface direct role-specific evidence for this
-        requirement.
-      mitigation: Keep it for recruiter discussion and do not add an unsupported claim.
-      hard_blocker: false
-      evidence_ids: []
-    - requirement: Agile/Scrum development lifecycle
-      importance: meaningful
-      basis: stated
-      jd_quote: Conoscenza del framework agile per la gestione del ciclo di sviluppo.
-      match: unknown
-      candidate_quote: ''
+      match: strong
+      candidate_quote: Developed a Laravel/Symfony-based product-wide logger package
       risk: ''
       mitigation: ''
       hard_blocker: false
-      evidence_ids: []
-    - requirement: 2+ years of experience in an analogous role
-      importance: preferred
+      evidence_ids:
+      - airslate-logger-general
+    - requirement: REST distributed systems
+      importance: high
       basis: stated
-      jd_quote: 'I candidati devono avere un''esperienza di almeno
-
-        2 anni
-
-        in ruolo analogo'
-      match: unknown
-      candidate_quote: ''
+      jd_quote: per i sistemi distribuiti REST.
+      match: strong
+      candidate_quote: Define a robust, versioned event schema to enforce consistency
+        across teams
       risk: ''
       mitigation: ''
       hard_blocker: false
-      evidence_ids: []
+      evidence_ids:
+      - crurated-event-design
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
     - document: cv
-      text: more than 15 years
+      text: Backend developer with 15+ years across PHP and Go production systems,
+        including Laravel/Symfony services, relational data, REST integration and
+        event-driven platforms.
       evidence_ids:
       - career-15-years
+      - airslate-logger-general
+      - crurated-event-design
     - document: cv
-      text: privacy-sensitive
+      text: Recent experience covers a secure health-domain service, multi-tenant
+        vendor integration, PHP analytics pipelines and database stability.
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      - simple-2026-helpdesk-gateway
+      - crurated-confirmed-datalake-production
+      - database-reliability
+    - document: cv
+      text: Delivered a privacy-first outbound-calling backend for a health-domain
+        workflow; security and recording-compliance review cleared it for production.
       evidence_ids:
       - simple-2026-telephony-privacy
     - document: cv
-      text: 'Architected a health-domain Amazon Connect platform with PII/PHI protection
-        as its starting point: phone numbers were server-resolved, masked in UI and
-        logs, passed only as transient contact attributes and purged by TTL; formal
-        security and recording-compliance reviews preceded production.'
-      evidence_ids:
-      - simple-2026-telephony-privacy
-      - simple-2026-telephony
-    - document: cv
-      text: Implemented backend-owned contact controls for timezones, holidays, do-not-call
-        rules and opt-outs, setting Amazon Connect retries to zero so repeat calls
-        could not bypass those safeguards.
+      text: Built policy controls for contact timing, holidays, opt-outs and do-not-call
+        records, keeping customer outreach within defined safeguards.
       evidence_ids:
       - simple-2026-telephony-lawful-calling
     - document: cv
-      text: Implemented least-privilege Entra federation and lazy Connect-user lifecycle
-        management, separating call access from diagnostics and administration without
-        individual AWS accounts or a SAML application.
-      evidence_ids:
-      - simple-2026-telephony
-    - document: cv
-      text: Built a Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk
-        adapters and SQS queues, enabling the support-AI product’s first B2B demonstration.
+      text: Created a Go integration gateway that normalized vendor events across
+        Intercom and Zendesk, supporting the first B2B support-AI demonstration.
       evidence_ids:
       - simple-2026-helpdesk-gateway
     - document: cv
-      text: Made Intercom ticket processing resilient with partial-success reporting
-        and sharded cursor scans, retaining visibility of incomplete work during dependency
-        degradation.
+      text: Made support-ticket processing resilient during dependency degradation
+        through partial-success reporting and recoverable scans.
       evidence_ids:
       - simple-2026-cron-resilience
     - document: cv
-      text: Delivered self-service GDPR exports across seven data sources with request
-        creation, status tracking and review.
+      text: Automated GDPR export requests across seven sources through a self-service
+        administrative flow.
       evidence_ids:
       - simple-2026-gdpr
     - document: cv
-      text: Built modular event-stream architecture for production analytics, reducing
-        the setup of a new stream from several days to under four hours.
+      text: Built modular PHP event-stream delivery for production analytics, cutting
+        new-stream setup from several days to under four hours.
       evidence_ids:
       - crurated-reviewed-stream-onboarding
     - document: cv
-      text: Maintained event delivery above 99.9% through retry design, fault-tolerant
-        routing and operational monitoring.
+      text: Sustained event delivery above 99.9% with fault-tolerant routing, retries
+        and production monitoring.
       evidence_ids:
       - crurated-reviewed-delivery-reliability
     - document: cv
-      text: Designed versioned event contracts and parallel publication so consumers
-        could migrate without preventing delivery of new event data.
+      text: Established versioned event schemas with parallel publishing, allowing
+        downstream consumers to move between versions without halting new data.
       evidence_ids:
       - crurated-event-design
       - crurated-confirmed-event-version-production
     - document: cv
-      text: Owned a production partner integration covering authentication, OTP, account
-        linking and request/response logging.
+      text: Took technical ownership of a production partner connection spanning authentication,
+        account linking, collection import/export and purchase verification.
       evidence_ids:
       - crurated-confirmed-crutrade-production
     - document: cv
-      text: Removed database bottlenecks and redistributed workload, reducing peak
-        pressure on the main database and improving service stability during heavy
-        traffic.
+      text: Increased DataLake throughput by more than tenfold under documented technical
+        ownership.
+      evidence_ids:
+      - crurated-reviewed-throughput
+      - crurated-confirmed-datalake-production
+    - document: cv
+      text: Improved high-traffic service stability by removing main-database bottlenecks
+        and redistributing workload.
       evidence_ids:
       - database-reliability
     - document: cv
-      text: Introduced a Laravel/Symfony logger package aligned with the product’s
-        interservice communication standard, creating a shared service-level logging
-        component.
+      text: Developed a shared Laravel/Symfony logging package that followed the product's
+        interservice communication standard.
       evidence_ids:
       - airslate-logger-general
-  declaration_sha256: sha256:daff59afc98de905f490cb5d434c85f87f317e3cd8a22e4f1a06817891fce63b
+  declaration_sha256: sha256:f73a9996f2539e144c3386204f48000bd11bdf7cee848f701e9b3d0cc286830f
   method:
     workflow: two-wave
     final_review:
@@ -702,18 +674,18 @@ quality:
       cross_file_consistency: true
   handoffs:
     evidence-map.md:
-      word_count: 795
-      sha256: sha256:c4056ce318a17a656cb2c1af172acea7277bb1277d9274ad6e18f9d6952da47e
+      word_count: 473
+      sha256: sha256:5c1f8d4429dfa4911b4216ed3dfa21f11e83cb1b534da5a541db6bb834d7c452
   exports:
     cv:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 588e8e67ec66facc461796f1e3764d2fd2f3f4ad15fd28624a524f7902215af0
-      artifact_sha256: 37f1785c7a2295f48868574ebf8d139626375fafda0eebd9f4b1c5f002f2d987
-      extracted_text_sha256: 3a2047d41c9eb8af8967930570e0f2b5e2b18abcddef77fd790586bc321fe91a
-      canonical_tokens: 475
-      extracted_tokens: 475
+      source_sha256: 061e93d5b3ade39b06916a8a9dd62406fd5297806a040f8b6e532c4ca4b8b82d
+      artifact_sha256: 077ec9e47396641e6b43fefe654b09c370021e5e231f412843ccfa9ed1e513e4
+      extracted_text_sha256: a4a5f5d1b49ecb9fe69627bd41cf06b53d7ac3bda7a53142347b0acff6c9f8dd
+      canonical_tokens: 424
+      extracted_tokens: 424
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
@@ -727,7 +699,7 @@ quality:
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 37f1785c7a2295f48868574ebf8d139626375fafda0eebd9f4b1c5f002f2d987
+        artifact_sha256: 077ec9e47396641e6b43fefe654b09c370021e5e231f412843ccfa9ed1e513e4
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
     cover-letter:

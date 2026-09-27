@@ -1,48 +1,48 @@
 # Valentin Nikolaev
-Backend Developer | PHP, Go and Production Integrations
+Backend Developer | PHP, Symfony and Distributed Services
 
 Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194  
 LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/ValentinNikolaev
 
 ## Summary
 
-Backend developer with more than 15 years in Go and PHP production systems. I build privacy-sensitive backend services, integrations and operational workflows with a focus on clear system boundaries and reliable delivery. Recent work includes a PII/PHI-protected Amazon Connect platform, a multi-tenant Go gateway, event-driven PHP systems and SQL performance improvements.
+Backend developer with 15+ years across PHP and Go production systems, including Laravel/Symfony services, relational data, REST integration and event-driven platforms. I focus on maintainable service boundaries, practical operational reliability and delivery from design to production. Recent experience covers a secure health-domain service, multi-tenant vendor integration, PHP analytics pipelines and database stability. I have also worked with Agile planning and shared service components. I bring practical backend depth to teams maintaining distributed REST services, with PHP service delivery and operational support experience.
 
 ## Skills
 
 **Languages and frameworks:** PHP, Laravel, Symfony, Go.  
-**Data and integration:** MySQL, PostgreSQL, REST APIs, EventBridge, queues, event-driven architecture, Intercom API, Zendesk API.  
-**Delivery and operations:** AWS, Kubernetes, CI/CD, monitoring, production troubleshooting, SQS.
+**Data and services:** MySQL, PostgreSQL, REST APIs, queues, AWS EventBridge, event-driven systems, microservices.  
+**Delivery:** AWS, Kubernetes, RabbitMQ, CI/CD, monitoring, logging, production reliability.
 
 ## Experience
 
 ### Simple.life / Simple App — Software Developer
-November 2023 – 2026
+November 2023 – July 2026
 
-- Architected a health-domain Amazon Connect platform with PII/PHI protection as its starting point: phone numbers were server-resolved, masked in UI and logs, passed only as transient contact attributes and purged by TTL; formal security and recording-compliance reviews preceded production.
-- Implemented backend-owned contact controls for timezones, holidays, do-not-call rules and opt-outs, setting Amazon Connect retries to zero so repeat calls could not bypass those safeguards.
-- Implemented least-privilege Entra federation and lazy Connect-user lifecycle management, separating call access from diagnostics and administration without individual AWS accounts or a SAML application.
-- Built a Go helpdesk gateway with vendor-neutral events, Intercom and Zendesk adapters and SQS queues, enabling the support-AI product’s first B2B demonstration.
-- Made Intercom ticket processing resilient with partial-success reporting and sharded cursor scans, retaining visibility of incomplete work during dependency degradation.
-- Delivered self-service GDPR exports across seven data sources with request creation, status tracking and review.
+- Delivered a privacy-first outbound-calling backend for a health-domain workflow; security and recording-compliance review cleared it for production.
+- Built policy controls for contact timing, holidays, opt-outs and do-not-call records, keeping customer outreach within defined safeguards.
+- Created a Go integration gateway that normalized vendor events across Intercom and Zendesk, supporting the first B2B support-AI demonstration.
+- Made support-ticket processing resilient during dependency degradation through partial-success reporting and recoverable scans.
+- Automated GDPR export requests across seven sources through a self-service administrative flow.
 
-**Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Intercom API, Zendesk API, REST APIs
+**Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Intercom API, Zendesk API
 
-### CRURATED — PHP Software Developer, concurrent part-time consulting engagement
+### CRURATED — PHP Software Developer, concurrent part-time subcontract
 August 2024 – January 2026
 
-- Built modular event-stream architecture for production analytics, reducing the setup of a new stream from several days to under four hours.
-- Maintained event delivery above 99.9% through retry design, fault-tolerant routing and operational monitoring.
-- Designed versioned event contracts and parallel publication so consumers could migrate without preventing delivery of new event data.
-- Owned a production partner integration covering authentication, OTP, account linking and request/response logging.
+- Built modular PHP event-stream delivery for production analytics, cutting new-stream setup from several days to under four hours.
+- Sustained event delivery above 99.9% with fault-tolerant routing, retries and production monitoring.
+- Established versioned event schemas with parallel publishing, allowing downstream consumers to move between versions without halting new data.
+- Took technical ownership of a production partner connection spanning authentication, account linking, collection import/export and purchase verification.
+- Increased DataLake throughput by more than tenfold under documented technical ownership.
 
 **Technologies:** PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
-### airSlate — Software Developer / Programming Team Lead
+### airSlate — Software Developer
 February 2021 – August 2023
 
-- Removed database bottlenecks and redistributed workload, reducing peak pressure on the main database and improving service stability during heavy traffic.
-- Introduced a Laravel/Symfony logger package aligned with the product’s interservice communication standard, creating a shared service-level logging component.
+- Improved high-traffic service stability by removing main-database bottlenecks and redistributing workload.
+- Developed a shared Laravel/Symfony logging package that followed the product's interservice communication standard.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
 
@@ -52,4 +52,4 @@ MSc in Computer Science, National Technical University, Kharkiv, Ukraine (2003�
 
 ## Languages
 
-Ukrainian (native), English (upper-intermediate), Italian (learning)
+Ukrainian (native), English (upper-intermediate)

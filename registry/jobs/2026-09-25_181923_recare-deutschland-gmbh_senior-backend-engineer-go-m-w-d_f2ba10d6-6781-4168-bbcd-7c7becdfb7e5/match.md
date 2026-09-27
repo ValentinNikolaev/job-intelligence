@@ -3,33 +3,32 @@
 **Score:** 83/100  
 **Recommendation:** Strong Match
 
-Go production ownership, integration architecture, database reliability and remote team collaboration fit the senior individual-contributor role. Direct mentoring and healthcare standards remain open.
+Production Go ownership, privacy-sensitive integration architecture, database reliability work, and CI/CD experience fit the senior individual-contributor remit; direct healthcare standards, Postgres/GORM, and real-time communication evidence remain open.
 
 ## Why it matches
 
-- Designed and operated a Go support platform and released a secure Amazon Connect backend.
-- Built a vendor-neutral helpdesk gateway with production adapters and first B2B demo.
-- Reduced database load and diagnosed production failures at airSlate.
+- Owned the architecture and backend for a privacy-first health-domain calling platform that passed formal security and call-recording compliance review before production release.
+- Built a vendor-neutral Go helpdesk gateway with production adapters and enabled the company's first B2B support-AI demonstration.
+- Reduced peak database load at airSlate and has production CI/CD, reliability, and delivery experience.
 
 ## Gaps
 
-- No verified FHIR, HL7, DICOM or healthcare-domain experience.
-- Direct mentoring examples are less specific than architecture and team-delivery examples.
+- No verified FHIR, HL7, DICOM, Postgres, or GORM experience.
+- Direct mentoring evidence is narrower than architecture and delivery evidence.
 
 ## Concerns
 
-- The candidate has held Technical Lead duties; confirm preference for a senior individual-contributor remit.
+- The candidate has Technical Lead experience; confirm preference for a senior individual-contributor role rather than people management.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Production Golang experience with real ownership | critical / stated | strong | production experience in Golang, or another C family language with a real, demonstrable ability to operate in Go without hand holding | robust, scalable backend in Go | / |
-| 4-5+ years full-time professional coding experience | critical / stated | strong | you have been coding full time professionally for 4 to 5 plus years | Backend engineer with 15+ years of experience building and improving production systems across | / |
-| Technical ownership of a codebase domain and architecture decisions | critical / stated | strong | Own a domain inside our core Go codebase, contributing to architecture decisions and code quality within your area | Defined the technology roadmap with the CTO | / |
-| Supporting or mentoring other engineers without managing a team | high / stated | partial | You have some experience supporting or mentoring other engineers | Performed task evaluation, planning and distribution between team members | The compact candidate profile used for match analysis does not carry explicit mentoring/onboarding language, only team task-distribution evidence. / The fuller candidate record (employment letter extract) documents on-call knowledge sharing, technical onboarding, and conducting technical interviews for new hires; surface that during preparation and interview. |
-| Database optimization and slowdown analysis | high / stated | strong | Analysing and improving database slowdowns and issues | Reduced** peak load on the main database by removing bottlenecks | / |
-| Experience with CI and testing frameworks | high / stated | strong | You should have experience with CI and testing frameworks | Influenced product development across project planning, microservice and serverless architecture, CI/CD, and reliability/serviceability concerns. | / |
-| Postgres/GORM experience | meaningful / stated | unknown | Postgres. |  | No verified evidence names Postgres or GORM specifically; general SQL/database performance work is evidenced instead. / Confirm Postgres-specific depth directly with the candidate if asked. |
-| Clear, confident real-time and written communicator | meaningful / stated | unknown | You are a clear, confident communicator |  | Real-time/synchronous communication comfort specifically is not directly evidenced in verified sources. / Confirm with the candidate; written communication is well evidenced through technical documentation and CTO-level roadmap discussions. |
-| Healthcare/FHIR/HL7/DICOM background | low_signal / stated | missing | Healthcare experience is a bonus, not a requirement. |  | / |
+| Production Golang experience with ownership | critical / stated | strong | production experience in Golang, or another C family language with a real, demonstrable ability to operate in Go without hand holding | Go | / |
+| Professional software-development experience | critical / stated | strong | you have been coding full time professionally for 4 to 5 plus years | Go | / |
+| Technical ownership and architecture decisions | critical / stated | strong | Own a domain inside our core Go codebase, contributing to architecture decisions and code quality within your area | Go | / |
+| Supporting or mentoring engineers | high / stated | unknown | You have some experience supporting or mentoring other engineers |  | Direct mentoring evidence is not present in the configured candidate profile. / Confirm mentorship examples with the candidate before interview. |
+| Database slowdown analysis and improvement | high / stated | strong | Analysing and improving database slowdowns and issues | Go | / |
+| CI and testing frameworks | high / stated | strong | You should have experience with CI and testing frameworks | Go | / |
+| Postgres and GORM | meaningful / stated | unknown | Postgres. |  | No verified source names Postgres or GORM. / Confirm database-specific depth before representing it. |
+| Healthcare interoperability standards | low_signal / stated | missing | Healthcare experience is a bonus, not a requirement. FHIR, HL7, or DICOM exposure is great to have |  | No verified FHIR, HL7, or DICOM background. / Emphasize the verified health-domain privacy and compliance delivery without claiming interoperability standards. |

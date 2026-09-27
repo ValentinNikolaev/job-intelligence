@@ -1,49 +1,48 @@
 # Valentin Nikolaev
-Lead Backend PHP Developer | Product Architecture and Event Platforms
+Lead Backend PHP Developer | Event Platforms and Product Architecture
 
 Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194  
 LinkedIn: https://linkedin.com/in/valentinnikolaev | GitHub: https://github.com/ValentinNikolaev
 
 ## Summary
 
-Lead backend developer with 15+ years across PHP and Go production systems. I own architecture for privacy-sensitive integrations, event-driven platforms and operational tooling. Recent work includes a PII/PHI-protected health-domain calling platform, vendor-neutral Go integration services and support automation. I combine system design, delivery ownership and production controls with event analytics and PHP platform work.
+Backend engineer and technical lead with 15+ years building PHP and Go production systems. Recent work combines architecture ownership for privacy-sensitive health-domain services, production event analytics, PHP integrations, and operational reliability. I design REST and event-driven backends, turn product needs into maintainable services, and lead delivery from technical design through production controls. My PHP experience includes Laravel and Symfony components, while recent Go work adds support automation and integration-platform depth.
 
 ## Skills
 
-**Languages and frameworks:** PHP, Laravel, Symfony, Go.  
-**Architecture and data:** REST APIs, OpenAPI, event-driven systems, AWS EventBridge, queues, versioned event schemas, MySQL, PostgreSQL.  
-**Operations:** AWS, Kubernetes, CI/CD, monitoring, production troubleshooting, SQS.
+**Backend:** PHP, Go, Laravel, Symfony, REST APIs, OpenAPI.  
+**Architecture and integration:** Event-driven systems, versioned event contracts, queues, AWS EventBridge, microservices, system design.  
+**Data and operations:** PostgreSQL, MySQL, AWS, Kubernetes, RabbitMQ, CI/CD, monitoring and logging.
 
 ## Experience
 
 ### Simple.life / Simple App — Software Developer
-November 2023 – 2026
+November 2023 – July 2026
 
-- Owned the architecture and backend of a health-domain calling platform where PII/PHI protection led the design: customer numbers stayed server-side, masked in UI and logs, and short-lived in Amazon Connect; security and call-recording compliance reviews approved production release.
-- Designed backend-enforced calling policy for timezone windows, holidays, do-not-call controls and opt-outs, with zero Amazon Connect retries so the platform could not circumvent customer-contact restrictions.
-- Designed federated agent access around opaque Entra identities and least privilege, separating operational diagnostics from call access while removing per-agent AWS accounts and a SAML application.
-- Built the multi-tenant Go helpdesk gateway that isolated vendor SDKs behind a shared event model and enabled the first B2B support-AI demonstration.
-- Built the evaluation pipeline for the production support agent, combining ticket conversations, action events and subscription-state snapshots into evaluation JSON.
-- Automated GDPR export and deletion workflows across seven sources through a self-service administration flow.
+- Architected and released a health-domain calling platform with privacy-first PII/PHI protection; formal security and call-recording compliance reviews approved its production release.
+- Designed backend-owned lawful-calling controls for time zones, holidays, do-not-call rules and opt-outs, ensuring calls could not bypass customer-contact safeguards.
+- Built a multi-tenant Go helpdesk gateway with a vendor-neutral event model, enabling the first B2B demonstration of the support-AI product.
+- Delivered self-service GDPR exports across seven data sources, giving administration a tracked workflow for export requests.
+- Built evaluation data for the production support agent from conversations, actions and subscription-state snapshots.
 
 **Technologies:** Go, PHP, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Intercom API, Zendesk API
 
 ### CRURATED — PHP Software Developer, concurrent part-time subcontract
 August 2024 – January 2026
 
-- Owned the production event analytics architecture using queues and AWS EventBridge as DataLake throughput grew by more than tenfold.
-- Reduced new analytics stream setup from several days to under four hours through modular stream design.
-- Kept event delivery reliability above 99.9% through fault-tolerant pipeline design, retries and observability.
-- Designed versioned event schemas and parallel event-version publication, allowing consumers to transition without blocking new events.
-- Owned the production Crutrade integration across authentication and OTP, account linking, collection exchange and purchase-ownership verification.
+- Owned production DataLake and event-analytics architecture, increasing throughput by over 10x under documented technical ownership.
+- Reduced setup of a new analytics stream from several days to under four hours through modular stream design.
+- Maintained event-delivery reliability above 99.9% through fault-tolerant routing, retry design and operational monitoring.
+- Designed versioned event contracts and parallel publication so consumers could migrate without blocking new event data.
+- Owned a production partner integration covering authentication, account linking, collection exchange and purchase-ownership verification.
 
 **Technologies:** PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
-### airSlate — Senior Software Developer
+### airSlate — Software Developer
 February 2021 – August 2023
 
-- Developed a Laravel/Symfony logger package used across services and aligned it with the interservice communication standard.
-- Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving stability during busy periods.
+- Reduced peak pressure on the main database by removing bottlenecks and redistributing workload, improving service stability during high-traffic periods.
+- Built a Laravel/Symfony product-wide logger package aligned with the interservice communication standard, creating a shared service-level component.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, monitoring
 

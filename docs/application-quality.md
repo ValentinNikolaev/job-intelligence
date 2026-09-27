@@ -143,10 +143,18 @@ final_review:
 cv_audit:
   target_role: '<supported target positioning>'
   top_third_evidence_ids: [example-delivery, example-reliability]
+  editorial_review:
+    knowledge_base_version: 1
+    verdict: approve
+    reviewer: '<actual editor identity>'
   bullet_decisions:
     - text: '<bullet reviewed>'
       decision: keep
       reason: '<why it answers an important requirement>'
+      weight: critical
+      signal_type: impact
+      ordering_rationale: '<why this bullet precedes the next one in its role>'
+      verdict: approve
 requirements: []
 cover_letter:
   skill: write-cover-letter
@@ -200,6 +208,16 @@ rendered export for a two-page PDF limit when PDF conversion is available. The
 `cv_audit.bullet_decisions` receipt must cover every final Experience bullet with
 its exact text and a reason tied to a vacancy requirement or senior-level signal;
 the validator checks coverage, while the reviewer remains responsible for meaning.
+The versioned, deterministic CV guidance lives in `config/cv-editorial-knowledge.yaml`.
+For every final Experience bullet, record `weight` (`critical`, `high`, `medium`,
+`low`), `signal_type` (`impact`, `architecture`, `security`, `reliability`,
+`scale`, `team_influence`), an ordering rationale, and `verdict: approve`.
+List bullets from strongest to weakest within each role. The validator checks the
+positive versioned editorial receipt, exact final-bullet coverage, descending
+weights, and known internal-detail anti-patterns. These checks cannot establish
+that a claimed consequence is true or that two bullets represent distinct work;
+the editor must confirm both against verified candidate evidence. A rejected
+bullet stays out of the CV rather than being padded or split to reach a count.
 The validator also requires reverse chronology and at least two bullets for
 each displayed role, rising to three for roles ending within three years of
 preparation. These are rejection thresholds, not prompts to invent or split

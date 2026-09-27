@@ -22,6 +22,7 @@ from jobintel.applications import (
     QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
     _validate_cv_audit_bullet_coverage,
+    _validate_cv_editorial_review,
     _validate_cv_experience_bullets,
     _validate_cv_role_depth,
     _validate_cover_letter_paragraphs,
@@ -282,6 +283,36 @@ class ApplicationTests(unittest.TestCase):
         )
         with self.assertRaisesRegex(ApplicationError, "source-code line counts"):
             _validate_cv_experience_bullets(cv, minimum=2)
+
+    def test_editorial_review_requires_approved_ordered_source_facing_bullets(self) -> None:
+        cv = (
+            "## Experience\n\n### Example | January 2020 - Present\n"
+            "- Released a privacy architecture after formal security review.\n"
+            "- Standardized the release process across the team.\n"
+        )
+        audit = {
+            "editorial_review": {"knowledge_base_version": 1, "verdict": "approve", "reviewer": "fixture"},
+            "bullet_decisions": [
+                {"text": "Released a privacy architecture after formal security review.", "decision": "keep", "verdict": "approve", "reason": "Security outcome", "weight": "critical", "signal_type": "security", "ordering_rationale": "Most consequential"},
+                {"text": "Standardized the release process across the team.", "decision": "keep", "verdict": "approve", "reason": "Team result", "weight": "medium", "signal_type": "team_influence", "ordering_rationale": "Secondary contribution"},
+            ],
+        }
+        _validate_cv_editorial_review(cv, audit)
+        with self.assertRaisesRegex(ApplicationError, "positive versioned editorial_review"):
+            _validate_cv_editorial_review(cv, {**audit, "editorial_review": {"verdict": "approve"}})
+        audit["bullet_decisions"][0]["weight"] = "low"
+        with self.assertRaisesRegex(ApplicationError, "descend by editorial weight"):
+            _validate_cv_editorial_review(cv, audit)
+        audit["bullet_decisions"][0]["weight"] = "critical"
+        audit["bullet_decisions"][0]["verdict"] = "rewrite"
+        with self.assertRaisesRegex(ApplicationError, "approve editorial verdict"):
+            _validate_cv_editorial_review(cv, audit)
+        audit["bullet_decisions"][0]["verdict"] = "approve"
+        with self.assertRaisesRegex(ApplicationError, "anti-pattern telephony-mechanics"):
+            _validate_cv_editorial_review(cv.replace("formal security review", "TTL mechanics"), {
+                **audit,
+                "bullet_decisions": [{**audit["bullet_decisions"][0], "text": "Released a privacy architecture after TTL mechanics."}, audit["bullet_decisions"][1]],
+            })
 
     def v2_letter_draft(self):
         from jobintel.evidence import bootstrap_evidence_bank

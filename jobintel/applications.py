@@ -879,6 +879,75 @@ def _validate_cv_audit_bullet_coverage(markdown: str, decisions: list[Mapping[st
         raise ApplicationError("cv_audit bullet_decisions must cover every final Experience bullet")
 
 
+def _validate_cv_editorial_review(
+    markdown: str, audit: Mapping[str, Any], *, knowledge_path: Path | None = None,
+) -> None:
+    """Check the review receipt and objective ordering without judging unsourced prose."""
+    path = knowledge_path or Path(__file__).resolve().parent.parent / "config" / "cv-editorial-knowledge.yaml"
+    knowledge = _read_yaml_mapping(path, "CV editorial knowledge base")
+    version = knowledge.get("schema_version")
+    if type(version) is not int or version < 1:
+        raise ApplicationError("CV editorial knowledge base requires a positive schema_version")
+    review = audit.get("editorial_review")
+    if (not isinstance(review, Mapping) or review.get("knowledge_base_version") != version
+            or review.get("verdict") != "approve" or not str(review.get("reviewer") or "").strip()):
+        raise ApplicationError("cv_audit requires a positive versioned editorial_review receipt")
+    patterns = knowledge.get("rejected_anti_patterns")
+    if not isinstance(patterns, list) or not patterns:
+        raise ApplicationError("CV editorial knowledge base requires rejected_anti_patterns")
+    compiled = []
+    for item in patterns:
+        if not isinstance(item, Mapping) or not str(item.get("id") or "").strip():
+            raise ApplicationError("CV editorial anti-pattern requires an id")
+        try:
+            compiled.append((item["id"], re.compile(item["regex"])))
+        except (KeyError, TypeError, re.error) as exc:
+            raise ApplicationError(f"invalid CV editorial anti-pattern: {item['id']}") from exc
+
+    decisions = audit.get("bullet_decisions")
+    if not isinstance(decisions, list):
+        raise ApplicationError("cv_audit requires bullet_decisions")
+    by_text: dict[str, list[Mapping[str, Any]]] = {}
+    for item in decisions:
+        if isinstance(item, Mapping):
+            key = re.sub(r"\s+", " ", str(item.get("text") or "").strip())
+            by_text.setdefault(key, []).append(item)
+
+    ranks = {"critical": 0, "high": 1, "medium": 2, "low": 3}
+    signals = {"impact", "architecture", "security", "reliability", "scale", "team_influence"}
+    section = _markdown_section(markdown, "Experience")
+    seen: set[str] = set()
+    previous_rank = 0
+    for line in section.splitlines():
+        if re.match(r"^###\s+", line):
+            previous_rank = 0
+            continue
+        if not re.match(r"^\s*[-*]\s+\S", line) or re.match(
+            r"^\s*[-*]\s+(?:\*\*)?Technologies", line, re.IGNORECASE
+        ):
+            continue
+        bullet = re.sub(r"\s+", " ", re.sub(r"^\s*[-*]\s+", "", line).strip())
+        if bullet in seen:
+            raise ApplicationError("cv_markdown repeats an Experience bullet")
+        seen.add(bullet)
+        matches = by_text.get(bullet, [])
+        approved = [item for item in matches if item.get("verdict") == "approve"
+                    and item.get("decision") in {"keep", "rewrite"}]
+        if len(approved) != 1:
+            raise ApplicationError("every final Experience bullet requires one approve editorial verdict")
+        item = approved[0]
+        weight = item.get("weight")
+        if weight not in ranks or item.get("signal_type") not in signals or not str(item.get("ordering_rationale") or "").strip():
+            raise ApplicationError("approved Experience bullets require weight, signal_type and ordering_rationale")
+        rank = ranks[weight]
+        if rank < previous_rank:
+            raise ApplicationError("Experience bullets must descend by editorial weight within each role")
+        previous_rank = rank
+        for identifier, pattern in compiled:
+            if pattern.search(bullet):
+                raise ApplicationError(f"CV editorial anti-pattern {identifier} in Experience bullet")
+
+
 def _validate_cover_letter_paragraphs(markdown: str, *, minimum: int = 4) -> None:
     body: list[str] = []
     for block in re.split(r"\n\s*\n", markdown.strip()):
@@ -1112,6 +1181,7 @@ def _validate_v2_grounding(
         ):
             raise ApplicationError("cv_audit requires reasoned bullet_decisions")
         _validate_cv_audit_bullet_coverage(package["cv_markdown"], decisions)
+        _validate_cv_editorial_review(package["cv_markdown"], audit)
         report["cv_audit"] = dict(audit)
     from .requirements import validate_requirements
 
