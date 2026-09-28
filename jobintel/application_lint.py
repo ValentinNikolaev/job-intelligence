@@ -11,7 +11,7 @@ from typing import Any
 from .applications import (
     APPLICATION_DOCUMENTS, APPLICATION_FILES, _HANDOFF_REQUIREMENTS,
     _markdown_section, _read_yaml_mapping, _required_handoffs, _selected_documents,
-    _validate_cv_audit_bullet_coverage, validate_application_draft,
+    _validate_cv_audit_bullet_coverage,
 )
 from .evidence import validate_evidence_bank
 
@@ -137,9 +137,5 @@ def lint_application_draft(
                         job_text = ""
                     if jd_quote not in job_text:
                         _diagnostic(diagnostics, "JOB_QUOTE_NOT_EXACT", "jd_quote is not an exact selected-vacancy substring", quality_path)
-    try:
-        validate_application_draft(vacancy_directory, draft, document=document)
-    except Exception as exc:
-        _diagnostic(diagnostics, "COMBINED_VALIDATOR", str(exc), draft)
     diagnostics.sort(key=lambda item: (item["code"], item["path"], item["message"]))
     return {"ok": not diagnostics, "draft": str(draft), "diagnostics": diagnostics}

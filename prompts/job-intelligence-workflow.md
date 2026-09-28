@@ -7,6 +7,12 @@ analysis, and `python run.py storage vacancy-context --selector <selected-id-or-
 --output .codex-work/vacancy-context.json` for an explicitly selected manual analysis or
 preparation vacancy. Candidate evidence and generated application documents stay files.
 
+For any explicitly selected preparation batch, run `python run.py prepare-preflight
+<selector-1> [<selector-2> ...] --workflow prepare [--model-profile <profile>]
+[--document <document>]` before reading vacancy evidence or drafting. It is a
+fail-closed, storage-backed gate; MongoDB canonical metadata is materialized only under
+`.codex-work/vacancy-snapshots/`. Do not copy frozen registry files from another checkout.
+
 This file is the shared execution contract for both interactive Codex tasks and
 Scheduled Tasks. A launcher may provide a vacancy URL, pasted vacancy text, an
 explicit registry directory, or a sealed analysis batch. The launcher is not the
@@ -66,9 +72,11 @@ separate user-gated action.
    when company identity, role context, and one defensible motivation point are
    verified. Exceed the budget only for a critical unresolved eligibility or company-
    identity fact, and record the reason.
-8. Complete all four drafts by default, or only the explicitly selected draft, then run the deterministic draft check:
-   `python run.py validate-application <directory> --input
-   .codex-work/application/<directory> [--document <document>]`. After it succeeds, publish once with
+8. Complete all four drafts by default, or only the explicitly selected draft, then run
+   `python run.py lint-application <directory> --input .codex-work/application/<directory>
+   [--document <document>]`, preview any selected CV, and run the combined deterministic
+   draft check: `python run.py validate-application <directory> --input
+   .codex-work/application/<directory> [--document <document>]`. After both checks succeed, publish once with
    `python run.py prepare <directory> --input .codex-work/application/<directory>
    --workflow prepare [--model-profile <profile>] [--document <document>]`. After a validation failure,
    correct only its cause, rerun the validator, and do not publish until it passes.
@@ -86,17 +94,6 @@ Before Wave 1, confirm each selected vacancy has a fresh match produced by the s
 model profile selected for preparation. If not, create and publish a new isolated match
 draft from that selected-profile task before drafting application artifacts. Model
 provenance is content provenance, not a label that may be rewritten.
-
-For a selected CV-only batch, run this read-only JSON gate once before drafting:
-
-```powershell
-python run.py prepare-preflight <vacancy-id-or-directory> [...] --workflow prepare --model-profile <selected-profile>
-```
-
-It fails closed unless selection is explicit and unique, MongoDB is usable in the
-managed worktree, same-profile matches are current, conversion and rendering are
-available, and the worktree is at its current remote base. It never uses frozen YAML
-metadata as a fallback.
 
 1. In Wave 1, run independent research, CV/evidence, and requirements/risks roles in
    parallel when subagent slots are available. Research receives only this vacancy's
@@ -123,17 +120,12 @@ metadata as a fallback.
    company-motivation fact and `source_url`; and final `claim_grounding: true` and
    `cross_file_consistency: true`.
 5. The main agent performs one cross-file consistency and claim check, runs
-   `python run.py lint-application <directory> --input .codex-work/application/<directory> [--document cv]`,
-   repairs every deterministic diagnostic, previews selected CV drafts with
+   `lint-application` once per finalized vacancy, previews selected CV drafts with
    `python run.py documents preview-cv .codex-work/application/<directory>/cv.md`,
    inspects every rendered page, then runs `validate-application` once per finalized
    vacancy and one batch `prepare` call after all drafts pass. Subagents never run those commands or
    edit another role's file. The validator checks the quality contract, required
-   handoffs, provenance, word counts, and hashes; the manifest retains them. Lint is
-   an aggregate early feedback pass, never a replacement for the authoritative validator.
-   A preview receipt is bound to Markdown, converter code and DOCX options; reuse is
-   allowed only while every bound hash still matches. Missing rendering returns explicit
-   `unavailable` JSON without creating a canonical package.
+   handoffs, provenance, word counts, and hashes; the manifest retains them.
 6. If subagents or enough slots are unavailable, execute the same roles sequentially,
    preserving the two waves, handoff files, and exclusive ownership. Do not claim a
    model switch that the current Codex task did not perform.

@@ -12,9 +12,10 @@ from unittest.mock import patch
 import yaml
 
 from jobintel.application_lint import lint_application_draft
+from jobintel import cli
 from jobintel.document_quality import DocumentQualityError, preview_capabilities
 from jobintel.document_quality_cli import main as document_main
-from jobintel.preparation_preflight import PreparationPreflightError, run_preflight, selected_preparation_directories
+from jobintel.cli import _resolve_explicit_preparation_directories
 
 
 class PreparationGateTests(unittest.TestCase):
@@ -30,15 +31,23 @@ class PreparationGateTests(unittest.TestCase):
             "schema_version: 1\nprepare_min_score: 65\nprepare_max_age_days: 14\nprepare_batch_size: 1\nmodel_profiles:\n  p:\n    model: test\n    reasoning: low\n    model_label: codex:test:low\nworkflows:\n  analyze:\n    default_profile: p\n    allowed_profiles: [p]\n  prepare:\n    default_profile: p\n    allowed_profiles: [p]\n", encoding="utf-8")
 
     def test_preflight_rejects_missing_mongodb_before_drafting(self) -> None:
-        with patch("jobintel.preparation_preflight.load_env", return_value={}):
-            with self.assertRaisesRegex(PreparationPreflightError, "MongoDB configuration"):
-                run_preflight(self.root, ["vacancy"], workflow="prepare")
+        from types import SimpleNamespace
+
+        args = SimpleNamespace(
+            arguments=["vacancy"], workflow="prepare", model_profile=None,
+            document="cv", profile=None, allow_low_score_cv_refresh=False,
+        )
+        with patch("jobintel.storage_bridge.get_store", return_value=None):
+            with self.assertRaisesRegex(ValueError, "storage doctor"):
+                cli._preflight_preparation(
+                    args, {}, self.root, self.root / "registry", verify_environment=True
+                )
 
     def test_preflight_rejects_automatic_or_duplicate_selection(self) -> None:
-        with self.assertRaisesRegex(PreparationPreflightError, "explicit"):
-            selected_preparation_directories(self.root / "registry", ["all"], limit=1)
-        with self.assertRaisesRegex(PreparationPreflightError, "duplicate"):
-            selected_preparation_directories(self.root / "registry", ["vacancy", "vacancy"], limit=2)
+        with self.assertRaisesRegex(ValueError, "automatic"):
+            _resolve_explicit_preparation_directories(self.root / "registry", ["all"], limit=1)
+        with self.assertRaisesRegex(ValueError, "duplicate"):
+            _resolve_explicit_preparation_directories(self.root / "registry", ["vacancy", "vacancy"], limit=2)
 
     def test_preview_capability_reports_unavailable_renderer(self) -> None:
         script, options = self.root / "converter.ps1", self.root / "options.json"
@@ -82,7 +91,7 @@ class PreparationGateTests(unittest.TestCase):
         report = lint_application_draft(vacancy, draft, document="cv")
         codes = {item["code"] for item in report["diagnostics"]}
         self.assertFalse(report["ok"])
-        self.assertTrue({"HANDOFF_MARKER", "ARTIFACT_HASH_STALE", "CV_AUDIT_ANCHOR", "CV_DUPLICATE_BULLET", "CV_TECHNOLOGIES_NOT_BULLETS", "EVIDENCE_UNAVAILABLE", "CLAIM_ROLE_INCOMPATIBLE", "CANDIDATE_QUOTE_NOT_EXACT", "JOB_QUOTE_NOT_EXACT", "COMBINED_VALIDATOR"}.issubset(codes))
+        self.assertTrue({"HANDOFF_MARKER", "ARTIFACT_HASH_STALE", "CV_AUDIT_ANCHOR", "CV_DUPLICATE_BULLET", "CV_TECHNOLOGIES_NOT_BULLETS", "EVIDENCE_UNAVAILABLE", "CLAIM_ROLE_INCOMPATIBLE", "CANDIDATE_QUOTE_NOT_EXACT", "JOB_QUOTE_NOT_EXACT"}.issubset(codes))
 
 
 if __name__ == "__main__":

@@ -27,9 +27,9 @@ from .applications import (
     validate_application_draft,
 )
 from .application_lint import lint_application_draft
-from .preparation_preflight import run_preflight
 from .collector import Collector, discover_collectors
 from .config import load_env
+from .document_quality import DocumentQualityError, preview_capabilities
 from .matching import (
     AnalysisSummary,
     CodexMatchDraftClient,
@@ -75,7 +75,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'prepare-preflight', 'validate-application', 'workflow-lock', 'prepare', 'evidence', 'documents', or 'applications'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'evidence', 'documents', or 'applications'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -173,29 +173,14 @@ def main(argv: list[str] | None = None) -> int:
     env_path = (args.env or sources_dir / ".env").resolve()
 
     target = args.target.casefold()
-    if args.document and target not in {"prepare", "pending", "lint-application", "validate-application"}:
+    if args.document and target not in {"prepare", "prepare-preflight", "pending", "lint-application", "validate-application"}:
         print(
-            "--document is valid only with prepare, pending prepare, lint-application, or validate-application",
+            "--document is valid only with prepare-preflight, prepare, pending prepare, lint-application, or validate-application",
             file=sys.stderr,
         )
         return 2
     if target == "workflow-lock":
         return _run_workflow_lock(args, lock_root)
-    if target == "lint-application":
-        if len(args.arguments) != 1 or not args.input or args.workflow or args.model_profile or args.force or args.pack:
-            print("Usage: python run.py lint-application <job-directory|vacancy-id> --input <draft-directory> [--document <document>] [--json]", file=sys.stderr)
-            return 2
-        try:
-            directories = resolve_job_directories(registry_dir, args.arguments[0])
-            if len(directories) != 1:
-                raise ValueError("lint-application requires exactly one vacancy")
-            draft_directory = _preparation_draft_directory(args.input, directories[0], selection_size=1, document=args.document)
-            result = lint_application_draft(directories[0], draft_directory, document=args.document)
-        except Exception as exc:
-            print(f"Application draft lint failed: {exc}", file=sys.stderr)
-            return 1
-        print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
-        return 0 if result["ok"] else 1
     if args.ci and target != "doctor":
         print("--ci is only valid with doctor", file=sys.stderr)
         return 2
@@ -301,6 +286,9 @@ def main(argv: list[str] | None = None) -> int:
             print(f"Triage error: {exc}", file=sys.stderr)
             return 1
 
+    if target == "lint-application":
+        return _run_application_lint(args, registry_dir)
+
     if target == "validate-application":
         if (
             len(args.arguments) != 1
@@ -393,24 +381,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Configuration error: {exc}", file=sys.stderr)
         return 2
 
-    if target == "prepare-preflight":
-        if not args.workflow or args.input or args.force or args.pack or args.document:
-            print("Usage: python run.py prepare-preflight <job-directory|vacancy-id> [...] --workflow prepare [--model-profile <profile>]", file=sys.stderr)
-            return 2
-        try:
-            result = run_preflight(project_root, args.arguments, workflow=args.workflow,
-                                   model_profile=args.model_profile,
-                                   profile_paths=_profile_paths(args.profile, config, project_root, registry_dir))
-        except Exception as exc:
-            print(f"Preparation preflight failed: {exc}", file=sys.stderr)
-            return 1
-        print(json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True))
-        return 0
-
     if target == "analyze":
         return _run_analysis(args, config, project_root, registry_dir)
     if target == "analyze-batch":
         return _run_analysis_batch(args, config, project_root, registry_dir)
+    if target == "prepare-preflight":
+        return _run_preparation_preflight(args, config, project_root, registry_dir)
     if target == "prepare":
         return _run_preparation(args, config, project_root, registry_dir)
     if target == "pending":
@@ -1281,6 +1257,173 @@ def _run_preparation(
         return 1
 
 
+def _run_application_lint(args: argparse.Namespace, registry_dir: Path) -> int:
+    """Report cheap, deterministic draft defects before the combined validator."""
+    if (
+        len(args.arguments) != 1
+        or not args.input
+        or args.profile
+        or args.workflow
+        or args.model_profile
+        or args.force
+        or args.pack
+    ):
+        print(
+            "Usage: python run.py lint-application <job-directory|vacancy-id> "
+            "--input <draft-directory> [--document cv|cover-letter|analysis|interview-preparation]",
+            file=sys.stderr,
+        )
+        return 2
+    try:
+        directories = resolve_job_directories(registry_dir, args.arguments[0])
+        if len(directories) != 1:
+            raise ValueError("lint-application requires exactly one vacancy")
+        directory = directories[0]
+        draft_directory = _preparation_draft_directory(
+            args.input, directory, selection_size=1, document=args.document
+        )
+        report = lint_application_draft(directory, draft_directory, document=args.document)
+    except Exception as exc:
+        print(json.dumps({"ok": False, "diagnostics": [{"code": "LINT_ERROR", "message": str(exc)}]}, ensure_ascii=False))
+        return 1
+    print(json.dumps(report, ensure_ascii=False, sort_keys=True))
+    return 0 if report["ok"] else 1
+
+
+def _run_preparation_preflight(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+) -> int:
+    """Fail closed before an editor receives a selected preparation batch."""
+    if not args.arguments or args.input or args.force or not args.workflow:
+        print(
+            "Usage: python run.py prepare-preflight <job-directory|vacancy-id> "
+            "[<job-directory|vacancy-id> ...] --workflow prepare "
+            "[--model-profile <profile>] [--document <document>]",
+            file=sys.stderr,
+        )
+        return 2
+    try:
+        report = _preflight_preparation(
+            args, config, project_root, registry_dir, verify_environment=True
+        )
+    except Exception as exc:
+        print(json.dumps({"ok": False, "errors": [str(exc)], "vacancies": []}, ensure_ascii=False))
+        return 2
+    print(json.dumps(report, ensure_ascii=False, sort_keys=True))
+    return 0
+
+
+def _preflight_preparation(
+    args: argparse.Namespace,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+    *,
+    verify_environment: bool = False,
+) -> dict[str, Any]:
+    """Resolve and verify a batch without mutating vacancy or package state.
+
+    This is shared by the explicit command and the publisher.  MongoDB fields are
+    read through the storage bridge and then materialised solely under
+    ``.codex-work``.  A report is intentionally complete so a caller does not need
+    to start drafting to discover a rejected or stale vacancy.
+    """
+    if not args.arguments:
+        raise ValueError("preparation requires at least one explicit vacancy selector")
+    policy, model_label = _selected_workflow(
+        args.workflow, project_root, {"prepare"}, args.model_profile
+    )
+    if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
+        raise ValueError("--allow-low-score-cv-refresh requires --document cv")
+
+    profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+    directories = _resolve_explicit_preparation_directories(
+        registry_dir, args.arguments, limit=policy.prepare_batch_size
+    )
+
+    store = op.get_store(registry_dir)
+    backend = "yaml"
+    if store is None:
+        if verify_environment:
+            raise ValueError(
+                "storage doctor did not confirm MongoDB availability; "
+                "preparation preflight cannot use frozen YAML data"
+            )
+    else:
+        backend = "mongodb"
+        hello = store.client.admin.command("hello")
+        if not hello.get("setName"):
+            raise ValueError("storage adapter is unavailable: MongoDB must be a replica set")
+        schema = store.get("storage_schema", "operational")
+        if not schema or schema.get("schema_version") != 1:
+            raise ValueError("storage adapter is unavailable: MongoDB storage schema is missing or incompatible")
+
+    rows: list[dict[str, Any]] = []
+    errors: list[str] = []
+    for directory in directories:
+        row: dict[str, Any] = {"selector": next(
+            selector for selector in args.arguments
+            if directory in resolve_job_directories(registry_dir, selector)
+        ), "directory": directory.name}
+        try:
+            snapshot = op.materialize_vacancy_snapshot(directory)
+            meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+            required = ("id", "title", "company", "discovered_at")
+            missing = [key for key in required if not str(meta.get(key) or "").strip()]
+            if missing:
+                raise ValueError("metadata is missing required fields: " + ", ".join(missing))
+            if str(meta.get("status") or "").casefold() == "rejected":
+                raise ValueError("vacancy is rejected and cannot be prepared")
+            job = op.read_text(directory / "job.md").strip()
+            if not job:
+                raise ValueError("canonical job description is missing or empty")
+            match = _read_yaml_file(directory / "match.yaml", "match analysis")
+            if match.get("hard_rejection") is True:
+                raise ValueError("match has hard_rejection: true; publication is blocked")
+            if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
+                raise ValueError(
+                    f"vacancy is older than prepare_max_age_days {policy.prepare_max_age_days}"
+                )
+            if not _analysis_is_current(
+                directory, registry_dir, profile_paths, policy, project_root,
+                model_profile=args.model_profile,
+            ):
+                raise ValueError("match analysis is missing or stale for the selected model profile")
+            score = _match_score(directory)
+            if not policy.prepare_score_is_eligible(args.workflow, score) and not _allows_explicit_low_score_cv_refresh(directory, args, score):
+                raise ValueError(_ineligible_score_message(policy, args.workflow, score))
+            row.update({"ok": True, "score": score, "snapshot": str(snapshot)})
+        except Exception as exc:
+            row.update({"ok": False, "reason": str(exc)})
+            errors.append(f"{directory.name}: {exc}")
+        rows.append(row)
+    if errors:
+        raise ValueError("; ".join(errors))
+    report = {
+        "ok": True,
+        "backend": backend,
+        "workflow": args.workflow,
+        "model": model_label,
+        "vacancies": rows,
+    }
+    if verify_environment:
+        converter = HostMarkdownDocxConverter(project_root)
+        try:
+            report["preview"] = preview_capabilities(
+                converter.script_path, converter.options_path, converter.powershell
+            )
+        except DocumentQualityError as exc:
+            raise ValueError(
+                "CV preview is unavailable; no canonical package can be created: " + str(exc)
+            ) from exc
+        from scripts.finalize_repository import preflight as finalizer_preflight
+
+        report["worktree"] = finalizer_preflight(project_root)
+    return report
+
 def _run_preparation_locked(
     args: argparse.Namespace,
     config: dict[str, str],
@@ -1301,44 +1444,10 @@ def _run_preparation_locked(
         return 2
 
     try:
-        policy, model_label = _selected_workflow(
-            args.workflow, project_root, {"prepare"}, args.model_profile
-        )
-        if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
-            raise ValueError("--allow-low-score-cv-refresh requires --document cv")
-        Registry(registry_dir).migrate_metadata()
+        report = _preflight_preparation(args, config, project_root, registry_dir)
+        policy, model_label = _selected_workflow(args.workflow, project_root, {"prepare"}, args.model_profile)
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
-        directories = _resolve_explicit_preparation_directories(
-            registry_dir,
-            args.arguments,
-            limit=policy.prepare_batch_size,
-        )
-        for directory in directories:
-            if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
-                raise ValueError(
-                    f"{directory.name}: vacancy is older than prepare_max_age_days "
-                    f"{policy.prepare_max_age_days}; do not prepare stale vacancies"
-                )
-            if not _analysis_is_current(
-                directory,
-                registry_dir,
-                profile_paths,
-                policy,
-                project_root,
-                model_profile=args.model_profile,
-            ):
-                raise ValueError(
-                    f"{directory.name}: match analysis is missing or stale; "
-                    "run workflow analyze first"
-                )
-            score = _match_score(directory)
-            if not policy.prepare_score_is_eligible(args.workflow, score) and not _allows_explicit_low_score_cv_refresh(
-                directory, args, score
-            ):
-                raise ValueError(
-                    f"{directory.name}: "
-                    + _ineligible_score_message(policy, args.workflow, score)
-                )
+        directories = [registry_dir / "jobs" / str(row["directory"]) for row in report["vacancies"]]
     except Exception as exc:
         print(f"Preparation configuration error: {exc}", file=sys.stderr)
         return 2
@@ -1352,6 +1461,13 @@ def _run_preparation_locked(
                 selection_size=len(directories),
                 document=args.document,
             )
+            lint = lint_application_draft(directory, draft_directory, document=args.document)
+            if not lint["ok"]:
+                raise ValueError(
+                    "draft lint failed: " + "; ".join(
+                        item["code"] for item in lint["diagnostics"]
+                    )
+                )
             generator = ApplicationGenerator(
                 registry_dir,
                 profile_paths,

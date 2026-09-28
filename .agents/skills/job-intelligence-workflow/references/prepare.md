@@ -13,7 +13,13 @@ explicit single-document request, use the full-package flow below.
 2. Require one to 10 vacancy IDs or registry directories explicitly named in the chat
    request. Preserve that sealed selection. Do not run `pending prepare all`, query an
    automatic preparation queue, or add another vacancy based on score or similarity.
-3. Verify the complete selection with
+3. Run `python run.py prepare-preflight <selector-1> [<selector-2> ...] --workflow
+   prepare --model-profile <selected-profile> [--document <document>]` before reading
+   vacancy evidence or assigning editorial work. The MongoDB snapshot it creates lives
+   only under `.codex-work/vacancy-snapshots/`; never use a shared-checkout metadata
+   file as a fallback. Stop the selected batch on its first reported hard rejection,
+   stale/missing match, missing canonical metadata, or adapter error.
+4. Verify the complete selection with
    `python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile> [--document <document>]`.
    The command prints only vacancies that are analyzed, fresh, score-eligible, and not
    already current. Match freshness is evaluated against the same selected model
@@ -24,11 +30,6 @@ explicit single-document request, use the full-package flow below.
    --workflow analyze --model-profile <selected-profile> --force`, and rerun the pending
    check. Do not draft a vacancy that remains absent; report the actual eligibility or
    freshness reason.
-   Before drafting a selected CV-only batch, run
-   `python run.py prepare-preflight <directory-or-id> [...] --workflow prepare --model-profile <selected-profile>`.
-   This read-only JSON gate requires explicit unique selection, MongoDB, fresh matching,
-   converter/options, renderer, and a current isolated worktree; do not use frozen YAML
-   metadata or start drafting after it fails.
    When the candidate explicitly requests a CV-only refresh for a named vacancy
    whose existing application already has a CV, a fresh same-profile
    `possible_match` below the normal score threshold may be refreshed with
@@ -36,7 +37,7 @@ explicit single-document request, use the full-package flow below.
    `prepare`. State the score and material gaps to the candidate. This narrow
    override does not admit a `not_match`, hard rejection, new application, other
    document, or automatic preparation selection.
-4. Process each printed vacancy independently. For the current vacancy, read its
+5. Process each printed vacancy independently. For the current vacancy, read its
    `meta.yaml`, `job.md`, optional `company.md`, the configured candidate sources, and
    `prompts/vacancy-application.md`. Do not read non-selected vacancies, compare selected
    vacancies, or carry company research, requirements, keywords, or wording from one
@@ -46,7 +47,7 @@ explicit single-document request, use the full-package flow below.
    proposals, duties, and unconfirmed figures separate. An inventory note is not
    a verified achievement; anchor every CV claim in a reviewed evidence-bank entry
    backed by direct candidate source or a later candidate confirmation.
-5. For a full package, create `.codex-work/application/<vacancy-directory>/parts/`, then run Wave 1 with
+6. For a full package, create `.codex-work/application/<vacancy-directory>/parts/`, then run Wave 1 with
    three independent roles in parallel when subagent slots are available. Route only
    the minimum inputs below and assign exactly one handoff file:
    - research: read this vacancy's `meta.yaml`, `job.md`, optional `company.md`, and only
@@ -68,7 +69,7 @@ explicit single-document request, use the full-package flow below.
    For `--document cv`, run only CV/evidence plus the main CV synthesis. For another
    single document, run only its necessary evidence/research handoffs and its owning
    final role; reuse an existing current CV only when that document depends on it.
-6. The final CV must contain Summary, Skills, Experience, Education, and Languages;
+7. The final CV must contain Summary, Skills, Experience, Education, and Languages;
    12–18 evidence-backed hard skills; the candidate's real LinkedIn and GitHub URLs;
    and at least 10 evidence-backed Experience bullets (six in compact format). Its
    Summary must be one employer-facing paragraph of 50–110 words that opens with the
@@ -141,12 +142,12 @@ explicit single-document request, use the full-package flow below.
    the request for clarification as a rejection. Keep genuinely unanswered or
    uncertain numbers out of the CV; an unattended scheduled task
    records the question and proceeds with supported qualitative outcomes.
-7. The research role must use the vacancy posting plus at most two primary company
+8. The research role must use the vacancy posting plus at most two primary company
    sources in one pass. Exceed that budget only for a critical unresolved eligibility
    or company-identity fact and record the reason in its handoff. After all three Wave 1
    handoffs finish, the main agent must reconcile conflicts, reject unsupported claims,
    and synthesize the final vacancy-specific `cv.md` without repeating the research.
-8. Start Wave 2 only after `cv.md` is final. Run three independent roles in parallel
+9. Start Wave 2 only after `cv.md` is final. Run three independent roles in parallel
    when slots are available, with exclusive ownership of one final file each:
    - cover letter: receive this vacancy, final CV, verified `parts/research.md`, and only
      the candidate evidence required to ground the selected stories; invoke the
@@ -166,7 +167,7 @@ explicit single-document request, use the full-package flow below.
    No role may edit another role's file. Keep the
    `$write-cover-letter` workbench internal and run its claim-grounding check. If that
    skill is unavailable, stop; never substitute generic or retired inline letter logic.
-9. The main agent must perform one cross-file consistency and claim-grounding pass after
+10. The main agent must perform one cross-file consistency and claim-grounding pass after
    Wave 2. Resolve contradictions against candidate evidence and the final CV without
    starting another broad drafting loop. As part of that pass, read the final Summary
    as employer-facing copy and reject any evidence labels, audit commentary, gap list,
@@ -175,25 +176,29 @@ explicit single-document request, use the full-package flow below.
    execute the same Wave 1 roles, main CV synthesis, and Wave 2 roles sequentially with
    the same file ownership and boundaries. Do not claim that the repository or current
    task switched models.
-10. Do not let a role reread unneeded candidate sources, other handoffs, the full
+11. Do not let a role reread unneeded candidate sources, other handoffs, the full
    registry, or another vacancy directory. For a batch, each role still owns exactly
    one vacancy-keyed file. Agents may be
    distributed across vacancies, but no agent may combine evidence, research, handoffs,
    or final artifacts from different vacancies. Complete all four final drafts for the
    default scope, or only the explicitly selected draft, under its own
    `.codex-work/application/<vacancy-directory>/`.
-11. Before validation, write `quality.yaml`, schema version 2, in the vacancy draft:
+12. Before validation, write `quality.yaml`, schema version 2, in the vacancy draft:
     `workflow: two-wave`; cover-letter skill name, version, and completed workbench;
     two evidence stories with candidate sources; company-motivation fact and source URL;
     and final claim grounding plus cross-file consistency results.
-12. After the main consistency pass, run
-   `python run.py lint-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
-   Repair all reported deterministic diagnostics before the authoritative validator.
-   For a CV, preview with `python run.py documents preview-cv
-   .codex-work/application/<vacancy-directory>/cv.md`; the receipt is bound to Markdown,
-   converter and options, and a renderer failure is an explicit preflight failure.
-13. Run the vacancy's single combined deterministic draft check:
-   `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
+13. After the main consistency pass, run the fast deterministic lint first:
+   `python run.py lint-application <vacancy-directory> --input
+   .codex-work/application/<vacancy-directory> [--document <document>]`.
+   Correct every reported handoff, quote, evidence, hash, audit, or Experience-depth
+   defect. Then preview the finalized CV from its ignored draft path with `python run.py
+   documents preview-cv .codex-work/application/<vacancy-directory>/cv.md`. This
+   uses publication's converter and DOCX options, checks extractable Experience text,
+   enforces the two-page PDF budget, and renders pages under `.codex-work/previews/`.
+   Inspect each rendered page yourself. A preview never touches the canonical DOCX,
+   including when that file is open. A changed CV or converter option requires a new
+   preview for only that vacancy.
+   Finally run `python run.py validate-application <vacancy-directory> --input .codex-work/application/<vacancy-directory> [--document <document>]`.
    Do this once per selected vacancy after drafting is complete, not after each wave or
    file.
    Reuse completed vacancy research only while its posting, company sources, and
@@ -204,7 +209,7 @@ explicit single-document request, use the full-package flow below.
    The validator checks the quality contract, required handoffs, structure, minimum word
    counts, provenance, and hashes before publication. If it fails, correct only that
    vacancy and rerun its validator.
-13. After every selected draft passes, publish the verified batch once with
+14. After every selected draft passes, publish the verified batch once with
     `python run.py prepare <selector-1> [<selector-2> ...] --input .codex-work/application --workflow prepare --model-profile <selected-profile> [--document <document>] [--allow-low-score-cv-refresh]`.
     The deterministic publisher resolves every selector before publication and reads
     each package only from its matching vacancy-keyed draft directory. A legacy
@@ -215,7 +220,7 @@ explicit single-document request, use the full-package flow below.
     scope, confirm only that document's canonical and derived outputs plus the manifest,
     and verify other existing artifacts were unchanged. Confirm the manifest retains the
     quality contract, provenance, word counts, and hashes.
-14. In the user-facing result, include a package-location entry for every successfully
+15. In the user-facing result, include a package-location entry for every successfully
     prepared vacancy. Each entry must contain the vacancy/company label, its direct
     source vacancy URL, the absolute local path to
     `registry/jobs/<vacancy-directory>/application/`, and, when the files were committed
