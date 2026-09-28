@@ -3,17 +3,27 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Senior technical leadership, architecture, mentoring, and large-scale backend evidence fit the general Senior+ track, though staff-level scope is partly uncertain.
+Strong seniority and technical-lead fit for a broad Canonical engineering track, supported by architecture, mentoring, distributed systems, and delivery leadership evidence.
 
 ## Why it matches
 
-- Technical leadership and architecture
-- Team management, mentoring, delivery, and reliability experience
+- Technical leadership
+- architecture and scalability
+- Go/PHP backend depth
+- mentoring and cross-functional delivery
 
 ## Gaps
 
-- Company-level open-source and department-scale influence are not directly evidenced
+- Canonical-specific stack and exceptional academic track record may require clarification
 
 ## Concerns
 
-- Canonical evaluates academic results and proven execution; team placement is determined later
+- The general selection track does not specify a single team or product
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Senior technical leadership | critical / stated | strong | Senior/Staff/Principal Engineer | Technical Lead | / |
+| Architecture and scalable systems | high / stated | strong | architecture | architecture | / |
+| Distributed remote collaboration | high / stated | strong | globally distributed team | Collaborate cross-functionally | / |

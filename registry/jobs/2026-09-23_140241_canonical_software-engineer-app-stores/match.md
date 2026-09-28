@@ -1,20 +1,30 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 69/100
 **Recommendation:** Match
 
-Strong Go, backend, AWS, Kubernetes, CI/CD, and scale evidence; Python and open-source/Linux depth are less explicit.
+Good backend and systems alignment with Canonical's remote distributed environment, but the app-store domain and likely platform specifics are not fully evidenced.
 
 ## Why it matches
 
-- Go backend and scalable production systems
-- AWS, Kubernetes, CI/CD, APIs, and reliability
+- Go and backend systems
+- APIs and distributed services
+- CI/CD and Kubernetes
+- remote collaboration
 
 ## Gaps
 
-- Python is not listed as a core candidate language
-- Snap/Charm and Linux/open-source experience are not directly evidenced
+- App-store or Ubuntu-specific experience
+- some role-specific platform requirements
 
 ## Concerns
 
-- Canonical's high bar and travel expectations require confirmation
+- Canonical selection language is demanding and the aggregator copy may omit team details
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Backend software engineering | critical / stated | strong | Software Engineer - App Stores | Go | / |
+| Distributed remote work | high / stated | strong | global distributed collaboration | Fiumicino, Latium, Italy | / |
+| App-store domain | meaningful / stated | unknown | App Stores |  | Domain-specific experience is not established / Clarify transferable platform and release experience |

@@ -1,22 +1,29 @@
 # Match Analysis
 
-**Score:** 87/100  
+**Score:** 88/100
 **Recommendation:** Strong Match
 
-Excellent remote PHP/Laravel/API fit backed by extensive production backend, integration and performance experience.
+Strong fit for a remote PHP and Laravel backend role, with extensive PHP, API, Laravel/Symfony, database, and production automation experience.
 
 ## Why it matches
 
-- PHP and Laravel
-- REST APIs
-- remote work
-- integrations
-- performance optimization
+- PHP backend depth
+- Laravel and API experience
+- production reliability and automation
+- remote-compatible seniority
 
 ## Gaps
 
-- Employer identity and project specifics are limited in the posting
+- Exact employer domain and team practices are not established
 
 ## Concerns
 
-- US company timezone and working-hours expectations need confirmation
+- Posting details are sourced through an aggregator and may be incomplete
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| PHP/Laravel backend development | critical / stated | strong | PHP Developer \| Laravel & API Expert | PHP | / |
+| API and integrations | high / stated | strong | API Expert | API | / |
+| Remote work | high / stated | strong | Full-Remote | Rome, Italy | / |
