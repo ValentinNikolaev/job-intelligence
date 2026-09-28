@@ -36,3 +36,11 @@ filters:
 boards:
   - token: grafanalabs
     company: Grafana Labs
+  - token: cloudflare
+    company: Cloudflare
+  - token: faire
+    company: Faire
+  - token: abnormalsecurity
+    company: Abnormal Security
+  - token: cloudbeds
+    company: Cloudbeds

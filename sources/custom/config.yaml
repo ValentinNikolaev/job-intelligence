@@ -23,6 +23,125 @@ default_exclude_title_terms:
   - stage
   - tirocinio
 sources:
+  - name: canonical
+    company: Canonical
+    board_url: https://canonical.com/careers
+    company_url: https://canonical.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Canonical careers board; role-level eligibility and location remain posting-specific.
+  - name: docker
+    company: Docker
+    board_url: https://www.docker.com/career-openings/
+    company_url: https://www.docker.com
+    source_type: company careers page / Ashby
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    allowed_job_hosts:
+      - jobs.ashbyhq.com
+    notes: Official Docker openings page; follows only linked Ashby role pages.
+  - name: automattic
+    company: Automattic
+    board_url: https://automattic.com/work-with-us/jobs/
+    company_url: https://automattic.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Automattic jobs page; general applications are not vacancies.
+  - name: cloudflare
+    company: Cloudflare
+    board_url: https://www.cloudflare.com/careers/jobs/
+    company_url: https://www.cloudflare.com
+    source_type: company careers page / Greenhouse
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    allowed_job_hosts:
+      - boards.greenhouse.io
+    notes: Official Cloudflare jobs board; role locations and work authorization are verified per posting.
+  - name: shopify
+    company: Shopify
+    board_url: https://www.shopify.com/careers
+    company_url: https://www.shopify.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Shopify careers board; retains only named technical roles.
+  - name: akamai
+    company: Akamai
+    board_url: https://jobs.akamai.com/
+    company_url: https://www.akamai.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Akamai jobs board; may be unavailable to non-browser collectors.
+  - name: docusign
+    company: DocuSign
+    board_url: https://careers.docusign.com/
+    company_url: https://www.docusign.com
+    source_type: company careers page / iCIMS
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    allowed_job_hosts:
+      - uscareers-docusign.icims.com
+      - canadacareers-docusign.icims.com
+      - emeacareers-docusign.icims.com
+      - latamcareers-docusign.icims.com
+      - apjcareers-docusign.icims.com
+    notes: Official DocuSign career hub; country board and role eligibility remain posting-specific.
+  - name: vast-data
+    company: VAST Data
+    board_url: https://www.vastdata.com/careers
+    company_url: https://www.vastdata.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official VAST Data careers page.
+  - name: workiva
+    company: Workiva
+    board_url: https://www.workiva.com/careers
+    company_url: https://www.workiva.com
+    source_type: company careers page / Workday
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    allowed_job_hosts:
+      - workiva.wd503.myworkdayjobs.com
+    notes: Official Workiva careers page; follows its linked Workday roles.
+  - name: abnormal-security
+    company: Abnormal Security
+    board_url: https://abnormal.ai/careers/open-roles
+    company_url: https://abnormal.ai
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Abnormal Security open-roles page.
+  - name: cloudbeds
+    company: Cloudbeds
+    board_url: https://www.cloudbeds.com/careers/
+    company_url: https://www.cloudbeds.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Cloudbeds careers page.
+  - name: buffer
+    company: Buffer
+    board_url: https://buffer.com/journey
+    company_url: https://buffer.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Buffer journey and careers page; general culture content is not emitted as a vacancy.
+  - name: duckduckgo
+    company: DuckDuckGo
+    board_url: https://duckduckgo.com/hiring
+    company_url: https://duckduckgo.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official DuckDuckGo hiring page; collector availability depends on the site's TLS and bot policy.
+  - name: awesomemotive
+    company: Awesome Motive
+    board_url: https://awesomemotive.com/careers/
+    company_url: https://awesomemotive.com
+    source_type: company careers page
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    notes: Official Awesome Motive careers page; collector availability depends on the site's bot policy.
+  - name: faire
+    company: Faire
+    board_url: https://www.faire.com/careers
+    company_url: https://www.faire.com
+    source_type: company careers page / Greenhouse
+    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    allowed_job_hosts:
+      - boards.greenhouse.io
+    notes: Official Faire careers page; follows only linked Greenhouse role pages.
   - name: cubbit
     company: Cubbit S.r.l.
     board_url: https://www.cubbit.io/careers
