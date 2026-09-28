@@ -21,7 +21,27 @@ queue, running triage, or creating the pack. Keep it through publication, catalo
 generation, verification, commit, and push, and release it after success or failure:
 `python run.py workflow-lock acquire analysis --lock-token-file .codex-work/workflow-lock-token.txt --lock-timeout-seconds 3600`.
 Set `JOBINTEL_WORKFLOW_LOCK_TOKEN` from that token file for every guarded command in
-the run. Only after acquiring the lock, refresh the clean isolated checkout with
+the run. A managed worktree may omit ignored configuration files. Before the storage
+doctor and before any guarded command, locate the configured MongoDB environment in
+the primary checkout (currently `sources/.env`) and load its variables into the
+process environment without copying the file into the worktree, printing secrets, or
+tracking it. If the configured environment cannot be loaded, stop before queue work;
+do not fall back to frozen registry files.
+
+Before repository inspection or synchronization, verify the GitHub CLI identity and
+write access for the configured repository. Run `gh auth status --hostname github.com`
+and `gh api user --jq .login`; if the active account is not the intended account for
+the repository, switch explicitly with `gh auth switch --hostname github.com --user
+<correct-account>` and verify the login again. Confirm that this account can push to
+the repository before starting finalization, then run `gh auth setup-git` so the Git
+transport used by the finalizer uses the selected account. Verify the effective
+transport/account with a non-destructive remote check; a successful `gh api` identity
+alone is insufficient when Git uses a stale SSH identity. If no authenticated account
+with write access is available, continue only through local analysis and verification,
+then stop before commit/push and report the account/access blocker. Do not use a
+different account silently and do not force-push.
+
+Only after acquiring the lock, refresh the clean isolated checkout with
 `python scripts/finalize_repository.py preflight`. Record the authoritative backlog
 before analysis with `python run.py api workflow-summary --json`, then inspect queue
 details with `python run.py api queues analyze --json --limit 30`. Do not rely on stale
