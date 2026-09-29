@@ -28,7 +28,7 @@ from .applications import (
 )
 from .application_lint import lint_application_draft
 from .collector import Collector, discover_collectors
-from .config import load_env
+from .config import apply_env_file, load_env, load_env_file
 from .document_quality import DocumentQualityError, preview_capabilities
 from .matching import (
     AnalysisSummary,
@@ -171,6 +171,15 @@ def main(argv: list[str] | None = None) -> int:
     registry_dir = (args.registry or project_root / "registry").resolve()
     lock_root = op.project_root(registry_dir) or registry_dir.parent
     env_path = (args.env or sources_dir / ".env").resolve()
+    if args.env:
+        try:
+            explicit_values = load_env_file(env_path)
+        except ValueError:
+            # Offline commands intentionally do not require a parseable dotenv file.
+            # Commands that need configuration still validate it when they call load_env.
+            explicit_values = {}
+        if "MONGODB_URI" in explicit_values:
+            apply_env_file(env_path, require_exists=True)
 
     target = args.target.casefold()
     if args.document and target not in {"prepare", "prepare-preflight", "pending", "lint-application", "validate-application"}:

@@ -9,7 +9,7 @@ from pathlib import Path
 
 import yaml
 
-from .config import load_env
+from .config import apply_env_file, load_env
 from . import storage_bridge as bridge
 
 
@@ -33,6 +33,11 @@ def cli_main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("operation", choices=["doctor", "inventory", "plan", "migrate", "reconcile", "vacancy-context", "export-applications", "backup", "verify-backup", "restore"])
     parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument(
+        "--env",
+        type=Path,
+        help="external dotenv file to load into this process without copying it into the project root",
+    )
     parser.add_argument("--input", type=Path)
     parser.add_argument("--output", type=Path)
     parser.add_argument("--database")
@@ -44,6 +49,12 @@ def cli_main(argv=None):
     parser.add_argument("--ci", action="store_true")
     parser.add_argument("--sheets-snapshot", type=Path)
     args = parser.parse_args(argv)
+    if args.env:
+        try:
+            apply_env_file(args.env.resolve(), require_exists=True)
+        except Exception as exc:
+            print(f"Storage operation failed: {exc}", file=sys.stderr)
+            return 1
     root = args.project_root.resolve()
     store = None
     try:

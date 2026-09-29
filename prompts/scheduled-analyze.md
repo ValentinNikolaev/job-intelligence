@@ -19,7 +19,7 @@ batch of up to 15 sealed pending vacancies when the batch contract is available.
 Acquire the shared collection/analysis lock before fetching, pulling, inspecting the
 queue, running triage, or creating the pack. Keep it through publication, catalog
 generation, verification, commit, and push, and release it after success or failure:
-`python run.py workflow-lock acquire analysis --lock-token-file .codex-work/workflow-lock-token.txt --lock-timeout-seconds 3600`.
+`python run.py workflow-lock acquire analysis --lock-token-file .codex-work/workflow-lock-token.txt --lock-timeout-seconds 3600 --env <primary-sources-.env>`.
 Set `JOBINTEL_WORKFLOW_LOCK_TOKEN` from that token file for every guarded command in
 the run. A managed worktree may omit ignored configuration files. Before the storage
 doctor and before any guarded command, locate the configured MongoDB environment in
@@ -27,6 +27,14 @@ the primary checkout (currently `sources/.env`) and load its variables into the
 process environment without copying the file into the worktree, printing secrets, or
 tracking it. If the configured environment cannot be loaded, stop before queue work;
 do not fall back to frozen registry files.
+
+Every `python run.py` invocation that needs project configuration must pass that
+absolute primary-checkout path explicitly as `--env <primary-sources-.env>`, including
+`storage doctor`, `api`, `triage`, `pending analyze`, and `analyze-batch`. The launcher
+loads that file only into the invoked process, preserving an existing process override;
+it never copies or prints dotenv values. Do not rely on setting a shell environment in
+one command and then invoking a later command: scheduled shell commands may use
+separate processes. A missing explicit `--env` file is a hard preflight failure.
 
 Before repository inspection or synchronization, verify the GitHub CLI identity and
 write access for the configured repository. Run `gh auth status --hostname github.com`
@@ -43,18 +51,18 @@ different account silently and do not force-push.
 
 Only after acquiring the lock, refresh the clean isolated checkout with
 `python scripts/finalize_repository.py preflight`. Record the authoritative backlog
-before analysis with `python run.py api workflow-summary --json`, then inspect queue
-details with `python run.py api queues analyze --json --limit 30`. Do not rely on stale
+before analysis with `python run.py api workflow-summary --json --env <primary-sources-.env>`, then inspect queue
+details with `python run.py api queues analyze --json --limit 30 --env <primary-sources-.env>`. Do not rely on stale
 task context when deciding which vacancies are pending. Release the lock with
-`python run.py workflow-lock release --lock-token-file .codex-work/workflow-lock-token.txt`.
+`python run.py workflow-lock release --lock-token-file .codex-work/workflow-lock-token.txt --env <primary-sources-.env>`.
 While holding that token, create the pack with:
-`python run.py --workflow analyze pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml`.
+`python run.py --workflow analyze pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml --env <primary-sources-.env>`.
 Treat that newly written pack as the only batch source for the current run. Evaluate
 every record independently and write the same metadata and items with a strict
 `results` mapping. Before publication, verify that the batch item directories and
 result keys exactly match the current pack; never reuse items or results from an
 earlier run. Publish with `python run.py analyze-batch --input
-.codex-work/analyze-batch.yaml --workflow analyze --model-profile <selected-profile>`.
+.codex-work/analyze-batch.yaml --workflow analyze --model-profile <selected-profile> --env <primary-sources-.env>`.
 If the configured model is
 unavailable or does not match, report the mismatch and do not publish. Never call the
 OpenAI Platform API from project code. The workflow skill owns its final catalog step.
@@ -76,7 +84,7 @@ workflow owns delivery, tracked receipts, and moving confirmed manifests to
 `notifications/telegram/sent/`.
 
 After publication and catalog generation, run `python run.py api workflow-summary
---json` again. Report `pending_analyze` before, after, and as a delta. Keep the catalog
+--json --env <primary-sources-.env>` again. Report `pending_analyze` before, after, and as a delta. Keep the catalog
 total separate and never report "catalog vacancies not processed this run": that
 subtraction measures only the current run, not the pending-analysis backlog.
 

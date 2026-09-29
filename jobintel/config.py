@@ -4,7 +4,8 @@ import os
 from pathlib import Path
 
 
-def load_env(path: Path) -> dict[str, str]:
+def load_env_file(path: Path) -> dict[str, str]:
+    """Read dotenv values without inheriting the current process environment."""
     values: dict[str, str] = {}
     if path.exists():
         for line_number, raw_line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
@@ -23,6 +24,19 @@ def load_env(path: Path) -> dict[str, str]:
             if len(value) >= 2 and value[0] == value[-1] and value[0] in {'"', "'"}:
                 value = value[1:-1]
             values[key] = value
+    return values
+
+
+def apply_env_file(path: Path, *, require_exists: bool = False) -> None:
+    """Load dotenv values into this process without replacing environment overrides."""
+    if require_exists and not path.is_file():
+        raise FileNotFoundError(f"environment file does not exist: {path}")
+    for key, value in load_env_file(path).items():
+        os.environ.setdefault(key, value)
+
+
+def load_env(path: Path) -> dict[str, str]:
+    values = load_env_file(path)
 
     # Process environment deliberately wins over the shared file.
     values.update({key: value for key, value in os.environ.items() if value is not None})
