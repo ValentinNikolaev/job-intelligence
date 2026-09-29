@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 84
+Total vacancies: 85
 
-- Found: 62
+- Found: 63
 - Applied: 16
 - Interview: 2
 - Rejected: 4
@@ -13,6 +13,7 @@ Total vacancies: 84
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-09-29 | [Conexo](../registry/jobs/2026-09-29_191229_conexo_software-developer-backend-microservices_0f63ff88-da70-4422-8b30-b94e875dd433/) | [Software Developer – Backend / Microservices](../registry/jobs/2026-09-29_191229_conexo_software-developer-backend-microservices_0f63ff88-da70-4422-8b30-b94e875dd433/job.md) | Roma, Italy (hybrid) | Manual | Found | 2026-09-29 | [Manual](https://www.linkedin.com/posts/federica-santolamazza-6310186_ecco-una-nuova-opportunit%C3%A0-in-conexo-share-7510692165925216257-WRxg) | — | — | — | — | — |
 | 2026-09-29 | [Kozak Agency](../registry/jobs/2026-09-29_182140_kozak-agency_senior-go-developer_fcd4d0fd-3545-40b7-a089-b420431896b8/) | [Senior Go developer](../registry/jobs/2026-09-29_182140_kozak-agency_senior-go-developer_fcd4d0fd-3545-40b7-a089-b420431896b8/job.md) | EU | Djinni | Found | 2026-09-29 | [Djinni](https://djinni.co/jobs/850826-senior-go-developer/) | — | — | — | — | — |
 | 2026-09-29 | [ZFORT Group](../registry/jobs/2026-09-29_122627_zfort-group_software-engineer-authentication-identity-manage_da522785-2488-40d0-bb6b-760d6d2150b9/) | [Software Engineer — Authentication & Identity Management](../registry/jobs/2026-09-29_122627_zfort-group_software-engineer-authentication-identity-manage_da522785-2488-40d0-bb6b-760d6d2150b9/job.md) | за кордоном, віддалено | Dou | Found | 2026-09-29 | [Dou](https://jobs.dou.ua/companies/zfort/vacancies/374903/) | [Open](../registry/jobs/2026-09-29_122627_zfort-group_software-engineer-authentication-identity-manage_da522785-2488-40d0-bb6b-760d6d2150b9/company.md) | — | — | — | — |
 | 2026-09-29 | [NeverEnding](../registry/jobs/2026-09-29_122627_neverending_lead-backend-engineer_a741d221-c535-47a7-9f72-6e963bc7d56f/) | [Lead Backend Engineer](../registry/jobs/2026-09-29_122627_neverending_lead-backend-engineer_a741d221-c535-47a7-9f72-6e963bc7d56f/job.md) | Україна, Барселона (Іспанія), Варшава (Польща), віддалено | Dou | Found | 2026-09-29 | [Dou](https://jobs.dou.ua/companies/neverending/vacancies/368667/) | [Open](../registry/jobs/2026-09-29_122627_neverending_lead-backend-engineer_a741d221-c535-47a7-9f72-6e963bc7d56f/company.md) | — | — | — | — |
