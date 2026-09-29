@@ -1,0 +1,27 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-29T19:07:06Z",
+  "delivered_at": "2026-09-29T19:11:38Z",
+  "delivered_vacancy_ids": [
+    "fcd4d0fd-3545-40b7-a089-b420431896b8"
+  ],
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Kozak Agency",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_182140_kozak-agency_senior-go-developer_fcd4d0fd-3545-40b7-a089-b420431896b8",
+      "score": 72,
+      "title": "Senior Go developer",
+      "url": "https://djinni.co/jobs/850826-senior-go-developer/",
+      "vacancy_id": "fcd4d0fd-3545-40b7-a089-b420431896b8"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "df783cc644317e3d74b299c3500894b1f970033c38dd339f1f6bf186ab681aed",
+  "schema_version": 2,
+  "telegram_message_id": 251
+}
