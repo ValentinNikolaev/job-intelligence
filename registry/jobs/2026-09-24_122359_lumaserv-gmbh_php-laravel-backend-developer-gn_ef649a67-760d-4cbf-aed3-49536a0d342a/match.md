@@ -1,21 +1,21 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 86/100  
 **Recommendation:** Strong Match
 
-Very strong PHP/Laravel backend fit with API, architecture, quality and performance experience; location remains the main concern.
+Strong PHP/backend/API and architecture fit with a meaningful PHP preference bonus; Laravel and German-language expectations need confirmation.
 
 ## Why it matches
 
-- PHP and Laravel
-- APIs
-- architecture
-- performance and production ownership
+- PHP backend
+- API/service design
+- architecture and performance focus
 
 ## Gaps
 
-- German language and exact domain experience are unknown
+- Laravel is not explicit
+- German proficiency is not established
 
 ## Concerns
 
-- Bubenheim location may not support remote work
+- Location Bubenheim/Koblenz and remote arrangement require confirmation
