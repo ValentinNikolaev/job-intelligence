@@ -105,6 +105,24 @@ class RepositoryFinalizationTests(unittest.TestCase):
         with self.assertRaisesRegex(fin.FinalizationError, r"remote advanced on reviewed paths.*existing.txt"):
             fin.publish(self.work, "Preserve reviewed fixture", "Fixture run")
 
+    def test_review_includes_only_top_level_telegram_outbox_manifests(self) -> None:
+        fin.preflight(self.work)
+        outbox = self.work / "notifications" / "telegram" / "outbox"
+        nested = outbox / "nested"
+        nested.mkdir(parents=True)
+        manifest = outbox / "manifest.json"
+        manifest.write_text("{}\n", encoding="utf-8")
+        (nested / "not-a-manifest.json").write_text("{}\n", encoding="utf-8")
+        private = self.work / ".secret.json"
+        private.write_text("secret\n", encoding="utf-8")
+        exclude = self.root / "exclude"
+        run("git", "config", "core.excludesfile", str(exclude), cwd=self.work)
+        exclude.write_text("notifications/telegram/outbox/\n.secret.json\n", encoding="utf-8")
+        snapshot = fin.review(self.work)
+        self.assertIn("notifications/telegram/outbox/manifest.json", snapshot["files"])
+        self.assertNotIn("notifications/telegram/outbox/nested/not-a-manifest.json", snapshot["files"])
+        self.assertNotIn(".secret.json", snapshot["files"])
+
 
 if __name__ == "__main__":
     unittest.main()

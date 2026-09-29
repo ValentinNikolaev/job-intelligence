@@ -11,6 +11,13 @@ from pathlib import Path
 
 
 EXCLUDED_PARTS = {".codex-work", ".venv", "venv", "__pycache__", ".idea", ".pytest_cache"}
+TELEGRAM_OUTBOX_PREFIX = "notifications/telegram/outbox/"
+
+
+def is_intended_telegram_outbox(path: str) -> bool:
+    return (path.startswith(TELEGRAM_OUTBOX_PREFIX) and
+            path.endswith(".json") and
+            "/" not in path[len(TELEGRAM_OUTBOX_PREFIX):])
 
 
 class FinalizationError(RuntimeError):
@@ -258,14 +265,19 @@ def reviewed_snapshot(root: Path) -> dict[str, str | None]:
     if ignored.returncode not in {0, 1}:
         raise FinalizationError("could not check staged paths against Git ignore rules")
     if ignored.stdout:
-        path = ignored.stdout.split(b"\0", 1)[0].decode("utf-8", "replace")
-        raise FinalizationError(f"ignored file was staged: {path}")
+        ignored_paths = [part.decode("utf-8", "replace") for part in ignored.stdout.split(b"\0") if part]
+        unexpected = [path for path in ignored_paths if not is_intended_telegram_outbox(path)]
+        if unexpected:
+            raise FinalizationError(f"ignored file was staged: {unexpected[0]}")
     return index_entries(root, paths)
 
 
 def review(root: Path) -> dict:
     ensure_worktree(root)
     git(root, "add", "-A")
+    outbox = sorted((root / TELEGRAM_OUTBOX_PREFIX).glob("*.json"))
+    if outbox:
+        git(root, "add", "-f", "--", *(str(path.relative_to(root)) for path in outbox))
     git(root, "diff", "--cached", "--check")
     entries = reviewed_snapshot(root)
     work = root / ".codex-work" / "finalization"
