@@ -939,6 +939,12 @@ def _validate_cv_editorial_review(
     if (not isinstance(review, Mapping) or review.get("knowledge_base_version") != version
             or review.get("verdict") != "approve" or not str(review.get("reviewer") or "").strip()):
         raise ApplicationError("cv_audit requires a positive versioned editorial_review receipt")
+    target_role = str(audit.get("target_role") or "")
+    if re.search(r"\b(?:senior|tech(?:nical)?\s+lead|staff|principal|architect)\b", target_role, re.IGNORECASE):
+        if review.get("mode") != "independent":
+            raise ApplicationError(
+                "Senior and Tech Lead CV audits require an independent editorial_review mode"
+            )
     patterns = knowledge.get("rejected_anti_patterns")
     if not isinstance(patterns, list) or not patterns:
         raise ApplicationError("CV editorial knowledge base requires rejected_anti_patterns")
@@ -986,6 +992,10 @@ def _validate_cv_editorial_review(
         weight = item.get("weight")
         if weight not in ranks or item.get("signal_type") not in signals or not str(item.get("ordering_rationale") or "").strip():
             raise ApplicationError("approved Experience bullets require weight, signal_type and ordering_rationale")
+        if any(not str(item.get(field) or "").strip() for field in ("contribution", "affected_scope", "consequence")):
+            raise ApplicationError(
+                "approved Experience bullets require contribution, affected_scope and consequence"
+            )
         rank = ranks[weight]
         if rank < previous_rank:
             raise ApplicationError("Experience bullets must descend by editorial weight within each role")

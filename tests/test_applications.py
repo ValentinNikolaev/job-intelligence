@@ -330,8 +330,8 @@ class ApplicationTests(unittest.TestCase):
         audit = {
             "editorial_review": {"knowledge_base_version": 1, "verdict": "approve", "reviewer": "fixture"},
             "bullet_decisions": [
-                {"text": "Released a privacy architecture after formal security review.", "decision": "keep", "verdict": "approve", "reason": "Security outcome", "weight": "critical", "signal_type": "security", "ordering_rationale": "Most consequential"},
-                {"text": "Standardized the release process across the team.", "decision": "keep", "verdict": "approve", "reason": "Team result", "weight": "medium", "signal_type": "team_influence", "ordering_rationale": "Secondary contribution"},
+                {"text": "Released a privacy architecture after formal security review.", "decision": "keep", "verdict": "approve", "reason": "Security outcome", "weight": "critical", "signal_type": "security", "ordering_rationale": "Most consequential", "contribution": "Led the release decision", "affected_scope": "Customer data platform", "consequence": "Security review cleared the production release"},
+                {"text": "Standardized the release process across the team.", "decision": "keep", "verdict": "approve", "reason": "Team result", "weight": "medium", "signal_type": "team_influence", "ordering_rationale": "Secondary contribution", "affected_scope": "Engineering team", "contribution": "Defined the release process", "consequence": "The team used one release process"},
             ],
         }
         _validate_cv_editorial_review(cv, audit)
@@ -350,6 +350,14 @@ class ApplicationTests(unittest.TestCase):
                 **audit,
                 "bullet_decisions": [{**audit["bullet_decisions"][0], "text": "Released a privacy architecture after TTL mechanics."}, audit["bullet_decisions"][1]],
             })
+        senior_audit = {**audit, "target_role": "Senior Backend Engineer"}
+        with self.assertRaisesRegex(ApplicationError, "independent editorial_review mode"):
+            _validate_cv_editorial_review(cv, senior_audit)
+        senior_audit["editorial_review"] = {**audit["editorial_review"], "mode": "independent"}
+        _validate_cv_editorial_review(cv, senior_audit)
+        senior_audit["bullet_decisions"][0].pop("consequence")
+        with self.assertRaisesRegex(ApplicationError, "contribution, affected_scope and consequence"):
+            _validate_cv_editorial_review(cv, senior_audit)
 
     def v2_letter_draft(self):
         from jobintel.evidence import bootstrap_evidence_bank

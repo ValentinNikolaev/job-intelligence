@@ -147,6 +147,7 @@ cv_audit:
     knowledge_base_version: 1
     verdict: approve
     reviewer: '<actual editor identity>'
+    mode: independent
   bullet_decisions:
     - text: '<bullet reviewed>'
       decision: keep
@@ -154,6 +155,9 @@ cv_audit:
       weight: critical
       signal_type: impact
       ordering_rationale: '<why this bullet precedes the next one in its role>'
+      contribution: '<candidate-owned decision or delivery>'
+      affected_scope: '<system, users, team, or organisation affected>'
+      consequence: '<source-backed consequence; not merely the completed implementation>'
       verdict: approve
 requirements: []
 cover_letter:
@@ -197,6 +201,19 @@ mechanical. Each Experience bullet should identify a supported contribution, the
 system or people affected, and a consequence. Quantified scale is useful only when
 the candidate evidence supports it. Review architecture judgment, reliability and
 operations, simplification, and influence beyond code where the source records them.
+The audit must also distinguish material senior-level evidence from routine baseline
+work. Restoring a third-party integration, cron, scan, retry flow, or long-running job
+is ordinary operational ownership unless evidence establishes a consequence beyond
+returning to expected behaviour. Similarly, creating a shared logger, library, package,
+or implementation aligned with an existing standard is not a Senior+ outcome without
+a documented architectural decision, adoption, migration, or organisation-level
+consequence. Senior-sounding verbs do not change this test. Omit a baseline item when
+the stronger result cannot be grounded; never invent scale, influence, or a trade-off.
+For Senior, Tech Lead, Staff, Principal, or Architect positioning, the editorial review
+must be independent of the CV author and record `mode: independent`. Every retained
+bullet's receipt must state the candidate's contribution, affected scope, and actual
+consequence. These fields make the reviewer confront a duty-only or routine-baseline
+line before it can be approved; they are not a licence to infer a missing outcome.
 Do not turn an unsupported trade-off or missing metric into a claim. Prefer compact
 format over padding. Count distinct outcome bullets under every displayed role and
 explain any one- or two-bullet role before publication. Recent roles should carry the

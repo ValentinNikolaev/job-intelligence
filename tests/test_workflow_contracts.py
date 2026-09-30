@@ -76,6 +76,18 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("at most two primary", prepare)
         self.assertIn("python run.py validate-application <vacancy-directory>", prepare)
 
+    def test_senior_cv_contract_rejects_routine_baseline_framing(self) -> None:
+        prompt = self._read("prompts/vacancy-application.md")
+        knowledge = self._read("config/cv-editorial-knowledge.yaml")
+        quality = self._read("docs/application-quality.md")
+
+        self.assertIn("senior_editorial_filter", knowledge)
+        self.assertIn("routine operational ownership is not a differentiator", prompt)
+        self.assertIn("mode: independent", prompt)
+        self.assertIn("candidate-owned contribution", prompt)
+        self.assertIn("routine baseline", quality)
+        self.assertIn("mode: independent", quality)
+
     def test_quality_contract_requires_two_wave_receipt_and_grounded_cover_letter(self) -> None:
         source = self._read("jobintel/applications.py")
         for token in (

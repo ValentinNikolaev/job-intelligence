@@ -7,6 +7,16 @@ approved_outcome_patterns:
     shape: "Owned a source-backed architectural decision, explaining the affected system and verified result."
   - id: production-risk
     shape: "Reduced a documented reliability, security or compliance risk through a specific contribution."
+senior_editorial_filter:
+  purpose: "Keep Senior and architect CVs focused on exceptional judgment and leverage, not competent day-to-day delivery."
+  required_questions:
+    - "Would this read as ordinary expected work from a capable Senior engineer if the company, system and result were removed? If yes, omit it unless the evidence shows a distinct material consequence."
+    - "Does the bullet show a decision, scope, adoption, simplification, risk reduction, or influence that goes beyond completing the assigned implementation?"
+    - "If reliability work is retained, does it state a source-backed service or operating consequence rather than merely that an integration, cron, scan or retry was repaired?"
+  routine_baseline_examples:
+    - "Repairing a degraded third-party integration, a failing cron, a long-running scan, or retry handling is normal operational ownership unless the evidence establishes a material consequence beyond restoring expected behaviour."
+    - "Building a shared package or aligning it with an existing interservice standard is implementation work unless the evidence establishes the architectural decision, adoption, migration, or verified organisation-level consequence."
+  decision_rule: "Do not promote routine baseline work with senior-sounding verbs such as architected, owned, redesigned, or product-wide. Omit it when the stronger consequence is not source-backed; do not invent one."
 rejected_anti_patterns:
   - id: source-code-size
     category: internal_implementation_metric

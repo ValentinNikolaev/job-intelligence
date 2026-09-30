@@ -225,6 +225,25 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     outcomes. It supplies patterns, never candidate facts. Reject internal
     ticket, test-count, coverage and implementation-mechanic bullets unless
     a distinct source-backed consequence can be stated without those details.
+    Apply its `senior_editorial_filter` before retaining every Experience bullet.
+    In a Senior or Tech Lead CV, routine operational ownership is not a differentiator
+    by itself: repairing a vendor integration, cron, scan, retry flow, or long-running
+    job belongs in the CV only when the evidence supports a material consequence beyond
+    restoring normal operation. Likewise, a logger, library, package, or standard
+    alignment is not a senior outcome merely because it is shared or product-wide;
+    retain it only for a documented architectural decision, adoption, migration, or
+    organisation-level consequence. Never manufacture that consequence. Do not use
+    words such as “architected”, “owned”, “redesigned”, or “product-wide” to elevate
+    otherwise routine delivery. When a bullet does not clear this editorial bar, omit
+    it and prefer another distinct, source-backed example.
+    For Senior, Tech Lead, Staff, Principal, or Architect positioning, run an independent
+    editorial pass after the main CV synthesis. The reviewer must not be the agent that
+    wrote the final CV. Give that reviewer the final CV, the verified evidence anchors,
+    and `config/cv-editorial-knowledge.yaml`; record `mode: independent` and the actual
+    reviewer identity in `cv_audit.editorial_review`. For every retained bullet, the
+    receipt must explicitly record the candidate-owned contribution, the affected scope,
+    and the source-backed consequence. A missing consequence or one that merely states
+    completed implementation is a reject, not a reason to add senior-sounding language.
     Every displayed role needs at least two distinct source-backed outcome or
     decision bullets; each role ending within the last five years needs at
     least three. Recheck candidate sources before declaring a shortage. If
