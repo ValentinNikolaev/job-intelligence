@@ -93,6 +93,26 @@ class PreparationGateTests(unittest.TestCase):
         self.assertFalse(report["ok"])
         self.assertTrue({"HANDOFF_MARKER", "ARTIFACT_HASH_STALE", "CV_AUDIT_ANCHOR", "CV_DUPLICATE_BULLET", "CV_TECHNOLOGIES_NOT_BULLETS", "EVIDENCE_UNAVAILABLE", "CLAIM_ROLE_INCOMPATIBLE", "CANDIDATE_QUOTE_NOT_EXACT", "JOB_QUOTE_NOT_EXACT"}.issubset(codes))
 
+    def test_lint_accepts_canonical_mongodb_job_text_without_local_projection(self) -> None:
+        candidate = self.root / "registry" / "candidate" / "candidate.md"
+        candidate.write_text("Candidate source", encoding="utf-8")
+        source_hash = hashlib.sha256(candidate.read_text(encoding="utf-8").encode()).hexdigest()
+        vacancy = self.root / "registry" / "jobs" / "vacancy"
+        draft = self.root / "draft"
+        (draft / "parts").mkdir(parents=True)
+        (draft / "parts" / "evidence-map.md").write_text("Priority requirement Candidate evidence and source Match ## Proposed CV " * 100, encoding="utf-8")
+        cv = "# Candidate\nBackend Engineer\n\n## Summary\n\nSenior backend engineer with relevant experience.\n\n## Skills\n\nGo, PHP, Laravel, Symfony, AWS, Kubernetes, EventBridge, SQS, REST APIs, OpenAPI, Webhooks, Queues\n\n## Experience\n\n### Acme — Engineer | January 2024 – Current\n\n- Delivered a supported backend outcome.\n- Improved a supported production workflow.\n- Built a supported integration.\n\nTechnologies: Go, AWS\n\n## Education\n\nMSc\n\n## Languages\n\nEnglish\n"
+        (draft / "cv.md").write_text(cv, encoding="utf-8")
+        bank = {"schema_version": 1, "entries": [{"id": "verified", "status": "verified", "employer": "Acme", "role": "Engineer", "period": "2024", "technologies": [], "source": {"path": "registry/candidate/candidate.md", "quote": "Candidate source", "sha256": source_hash}, "verification": {"reviewer": "test", "reviewed_at": "2026-01-01", "method": "test"}}]}
+        (self.root / "registry" / "evidence.yaml").write_text(yaml.safe_dump(bank), encoding="utf-8")
+        claims = {"schema_version": 1, "claims": [{"document": "cv", "text": bullet, "evidence_ids": ["verified"], "employer": "Acme", "role": "Engineer"} for bullet in ("Delivered a supported backend outcome.", "Improved a supported production workflow.", "Built a supported integration.")]}
+        (draft / "claims.yaml").write_text(yaml.safe_dump(claims), encoding="utf-8")
+        digest = "sha256:" + hashlib.sha256((cv.strip() + "\n").encode()).hexdigest()
+        quality = {"schema_version": 2, "workflow": "two-wave", "evidence_bank": "registry/evidence.yaml", "claims_ledger": "claims.yaml", "final_review": {"claim_grounding": True, "cross_file_consistency": True, "reviewer": "test", "quality_gate": True, "document_sha256": {"cv": digest}}, "cv_audit": {"target_role": "Backend Engineer", "top_third_evidence_ids": ["verified", "verified"], "bullet_decisions": []}, "requirements": [{"requirement": "Go", "importance": "critical", "basis": "stated", "jd_quote": "Canonical MongoDB job wording", "match": "strong", "candidate_quote": "Candidate source", "risk": "", "mitigation": "", "hard_blocker": False, "evidence_ids": ["verified"]}]}
+        (draft / "quality.yaml").write_text(yaml.safe_dump(quality), encoding="utf-8")
+        report = lint_application_draft(vacancy, draft, document="cv", vacancy_text="Canonical MongoDB job wording")
+        self.assertNotIn("JOB_QUOTE_NOT_EXACT", {item["code"] for item in report["diagnostics"]})
+
 
 if __name__ == "__main__":
     unittest.main()

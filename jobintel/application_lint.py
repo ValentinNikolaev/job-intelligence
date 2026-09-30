@@ -62,7 +62,11 @@ def _cv_lint(markdown: str, quality: Mapping[str, Any], path: Path, items: list[
 
 
 def lint_application_draft(
-    vacancy_directory: Path, draft_directory: Path, *, document: str | None = None
+    vacancy_directory: Path,
+    draft_directory: Path,
+    *,
+    document: str | None = None,
+    vacancy_text: str | None = None,
 ) -> dict[str, Any]:
     """Return every predictable local defect without publishing or converting a package."""
     vacancy_directory, draft = vacancy_directory.resolve(), draft_directory.resolve()
@@ -132,10 +136,13 @@ def lint_application_draft(
                         _diagnostic(diagnostics, "CANDIDATE_QUOTE_NOT_EXACT", "candidate_quote is not an exact referenced evidence substring", quality_path)
                     jd_quote = row.get("jd_quote")
                     if jd_quote:
-                        try:
-                            job_text = (vacancy_directory / "job.md").read_text(encoding="utf-8-sig")
-                        except OSError:
-                            job_text = ""
+                        if vacancy_text is None:
+                            try:
+                                job_text = (vacancy_directory / "job.md").read_text(encoding="utf-8-sig")
+                            except OSError:
+                                job_text = ""
+                        else:
+                            job_text = vacancy_text
                         if jd_quote not in job_text:
                             _diagnostic(diagnostics, "JOB_QUOTE_NOT_EXACT", "jd_quote is not an exact selected-vacancy substring", quality_path)
     diagnostics.sort(key=lambda item: (item["code"], item["path"], item["message"]))

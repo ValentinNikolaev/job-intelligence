@@ -1291,7 +1291,12 @@ def _run_application_lint(args: argparse.Namespace, registry_dir: Path) -> int:
         draft_directory = _preparation_draft_directory(
             args.input, directory, selection_size=1, document=args.document
         )
-        report = lint_application_draft(directory, draft_directory, document=args.document)
+        report = lint_application_draft(
+            directory,
+            draft_directory,
+            document=args.document,
+            vacancy_text=op.read_text(directory / "job.md"),
+        )
     except Exception as exc:
         print(json.dumps({"ok": False, "diagnostics": [{"code": "LINT_ERROR", "message": str(exc)}]}, ensure_ascii=False))
         return 1
@@ -1470,7 +1475,12 @@ def _run_preparation_locked(
                 selection_size=len(directories),
                 document=args.document,
             )
-            lint = lint_application_draft(directory, draft_directory, document=args.document)
+            lint = lint_application_draft(
+                directory,
+                draft_directory,
+                document=args.document,
+                vacancy_text=op.read_text(directory / "job.md"),
+            )
             if not lint["ok"]:
                 raise ValueError(
                     "draft lint failed: " + "; ".join(
