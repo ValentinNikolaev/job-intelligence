@@ -1,0 +1,27 @@
+# EarnIn
+
+- ReadyToTouch: [company profile](https://readytotouch.com/golang/companies/earnin)
+- Website: [official site](https://www.earnin.com/)
+- Careers: [careers](https://www.earnin.com/careers)
+- Dev blog: —
+- About: [about](https://www.earnin.com/about)
+- Remote flag (ReadyToTouch): yes
+- Type: product
+- Description (ReadyToTouch): —
+- Industries: FinTech
+
+## Profiles
+
+- LinkedIn alias: earnin (verified by ReadyToTouch)
+- GitHub: [swissre](https://github.com/swissre) (verified by ReadyToTouch)
+- Glassdoor overview: [overview](https://www.glassdoor.com/Overview/Working-at-EarnIn-EI_IE962632.11,17.htm)
+- Glassdoor reviews: [reviews](https://www.glassdoor.com/Reviews/EarnIn-Reviews-E962632.htm)
+- Glassdoor rating (ReadyToTouch): —
+
+## Provenance
+
+- Source dataset: [ReadyToTouch Go companies API](https://readytotouch.com/api/v1/unsafe/golang/companies.json)
+- Source listing: [Golang companies, remote filter](https://readytotouch.com/golang/companies?remote=1)
+- Retrieved: 2026-10-01
+- ReadyToTouch company ID: 1386
+- Metadata above is transcribed from ReadyToTouch. LinkedIn is recorded as its ReadyToTouch alias; the GitHub URL is formed from the supplied login. Careers destinations and their hiring platform have not yet been independently checked.
