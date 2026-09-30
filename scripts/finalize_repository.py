@@ -8,10 +8,18 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+from typing import Mapping
 
 
 EXCLUDED_PARTS = {".codex-work", ".venv", "venv", "__pycache__", ".idea", ".pytest_cache"}
 TELEGRAM_OUTBOX_PREFIX = "notifications/telegram/outbox/"
+REQUIRED_PROJECT_FILES = frozenset({
+    "AGENTS.md",
+    "pyproject.toml",
+    "run.py",
+    "config/data-services.yaml",
+    "scripts/finalize_repository.py",
+})
 
 
 def is_intended_telegram_outbox(path: str) -> bool:
@@ -22,6 +30,15 @@ def is_intended_telegram_outbox(path: str) -> bool:
 
 class FinalizationError(RuntimeError):
     pass
+
+
+def require_complete_project_tree(entries: Mapping[str, str | None], *, label: str) -> None:
+    """Reject a normal workflow publication when its repository spine is absent."""
+    missing = sorted(path for path in REQUIRED_PROJECT_FILES if not entries.get(path))
+    if missing:
+        raise FinalizationError(
+            f"{label} is missing required project files: {', '.join(missing)}"
+        )
 
 
 def command(*args: str, cwd: Path, check: bool = True) -> bytes:
@@ -103,6 +120,10 @@ def preflight(root: Path) -> dict[str, str]:
         if not ancestor(root, local, remote):
             raise FinalizationError("local and remote history diverged; inspect both histories before proceeding")
         git(root, "merge", "--ff-only", remote)
+    require_complete_project_tree(
+        tree_entries(root, head(root), sorted(REQUIRED_PROJECT_FILES)),
+        label="isolated checkout",
+    )
     return {"repo": repo, "branch": branch, "base": head(root)}
 
 
@@ -146,6 +167,10 @@ def review_committed(root: Path) -> dict:
     ensure_worktree(root)
     if status(root):
         raise FinalizationError("committed API fallback requires a clean isolated checkout")
+    require_complete_project_tree(
+        tree_entries(root, head(root), sorted(REQUIRED_PROJECT_FILES)),
+        label="reviewed commit",
+    )
     paths = changed_paths(root, "HEAD^", "HEAD")
     if not paths or any(EXCLUDED_PARTS.intersection(Path(path).parts) for path in paths):
         raise FinalizationError("commit has no reviewable project changes or includes local work")
@@ -212,6 +237,7 @@ def publish_api(root: Path) -> dict[str, str]:
         remote_commit = gh_api(root, "GET", f"repos/{repo}/git/commits/{remote}")
         base_tree_sha = remote_commit["tree"]["sha"]
         remote_entries = api_tree(root, repo, base_tree_sha)
+        require_complete_project_tree(remote_entries, label="remote base tree")
         overlap = sorted(path for path in paths if remote_entries.get(path) != base_entries[path])
         if overlap:
             raise FinalizationError("remote changed reviewed paths before API publication: " + ", ".join(overlap))
@@ -223,6 +249,7 @@ def publish_api(root: Path) -> dict[str, str]:
         created_tree = gh_api(root, "POST", f"repos/{repo}/git/trees", {
             "base_tree": base_tree_sha, "tree": updates})["sha"]
         published_entries = api_tree(root, repo, created_tree)
+        require_complete_project_tree(published_entries, label="published API tree")
         differences = {path for path in set(remote_entries) | set(published_entries)
                        if remote_entries.get(path) != published_entries.get(path)}
         if differences != set(paths) or any(published_entries.get(path) != record["entries"][path] for path in paths):
@@ -280,6 +307,10 @@ def review(root: Path) -> dict:
         git(root, "add", "-f", "--", *(str(path.relative_to(root)) for path in outbox))
     git(root, "diff", "--cached", "--check")
     entries = reviewed_snapshot(root)
+    require_complete_project_tree(
+        index_entries(root, sorted(REQUIRED_PROJECT_FILES)),
+        label="staged project tree",
+    )
     work = root / ".codex-work" / "finalization"
     record_path = work / "review.json"
     current_status = hashlib.sha256(status(root)).hexdigest()

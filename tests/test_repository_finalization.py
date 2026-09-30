@@ -29,6 +29,10 @@ class RepositoryFinalizationTests(unittest.TestCase):
         run("git", "config", "commit.gpgsign", "false", cwd=self.seed)
         (self.seed / ".gitignore").write_text(".codex-work/\n", encoding="utf-8")
         (self.seed / "existing.txt").write_text("original\n", encoding="utf-8")
+        for required in fin.REQUIRED_PROJECT_FILES:
+            path = self.seed / required
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_text("fixture\n", encoding="utf-8")
         run("git", "add", "-A", cwd=self.seed)
         run("git", "commit", "-m", "Seed fixture", cwd=self.seed)
         run("git", "push", "origin", "HEAD:main", cwd=self.seed)
@@ -122,6 +126,12 @@ class RepositoryFinalizationTests(unittest.TestCase):
         self.assertIn("notifications/telegram/outbox/manifest.json", snapshot["files"])
         self.assertNotIn("notifications/telegram/outbox/nested/not-a-manifest.json", snapshot["files"])
         self.assertNotIn(".secret.json", snapshot["files"])
+
+    def test_review_rejects_missing_repository_spine_file(self) -> None:
+        fin.preflight(self.work)
+        (self.work / "run.py").unlink()
+        with self.assertRaisesRegex(fin.FinalizationError, r"staged project tree is missing required project files: run.py"):
+            fin.review(self.work)
 
 
 if __name__ == "__main__":

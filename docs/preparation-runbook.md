@@ -62,6 +62,11 @@ Inspect the complete binary-capable `.codex-work/finalization/review.patch` and 
 listed paths. It stages only normal Git project changes, detects whitespace errors,
 and records the reviewed blob IDs. Then run `python scripts/finalize_repository.py
 publish --subject "<specific imperative sentence>" --body "<run metadata>"`.
+
+Never construct a GitHub tree, commit, or branch-ref update directly with `gh api`.
+The finalizer's `publish-api` command is the only permitted API fallback: it starts
+from the current remote base tree, applies only reviewed paths, and verifies the
+resulting tree still contains the workflow's required repository files.
 This creates one local commit and makes a non-force push. A concurrent remote
 advance is fetched and integrated into that unpublished commit; publication stops
 for review if integration changes a reviewed blob or conflicts. On partial failure,

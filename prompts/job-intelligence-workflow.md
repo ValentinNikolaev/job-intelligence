@@ -32,7 +32,10 @@ drafts, create or reuse an isolated managed worktree. Inspect the remote with `g
 Before final publication, run `python scripts/finalize_repository.py review`, inspect
 its complete `.codex-work/finalization/review.patch`, then run `publish --subject
 <specific-subject>`. The finalizer rechecks the remote head and non-force pushes one
-reviewed commit. It stops if integration changes reviewed files or has a conflict.
+reviewed commit. It stops if integration changes reviewed files, has a conflict, or
+the local/remote tree lacks the repository spine required by the workflow. Do not call
+`gh api` to create Git trees, commits, or branch refs directly: `publish` and the
+reviewed `publish-api` fallback are the only publication paths.
 
 ## Modes
 
