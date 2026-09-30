@@ -1,0 +1,41 @@
+name: Verify Atlas Runner Access
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: job-intelligence-registry-mutation
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -e .
+      - name: Grant temporary Atlas runner access
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network grant
+      - name: Verify shared database without changing vacancies
+        env:
+          MONGODB_URI: ${{ secrets.MONGODB_URI }}
+          JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME }}
+          JOBINTEL_MONGODB_NETWORK_READY: 'true'
+        run: bash .github/scripts/verify-shared-storage.sh
+      - name: Revoke temporary Atlas runner access
+        if: always()
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network revoke

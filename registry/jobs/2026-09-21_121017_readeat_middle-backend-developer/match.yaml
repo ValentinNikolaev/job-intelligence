@@ -1,0 +1,24 @@
+score: 84
+recommendation: strong_match
+summary: Strong backend fit across PHP, databases, AWS, and scalable systems; Yii2,
+  Redis, and Terraform are not documented.
+strengths:
+- Extensive PHP backend experience with Laravel and Symfony and strong design/system
+  skills.
+- Documented PostgreSQL, MySQL, AWS, container orchestration, and high-load reliability
+  work.
+- Proven performance optimization, production troubleshooting, code review, and automated
+  delivery experience.
+gaps:
+- Yii2 framework experience is not documented.
+- Redis and Terraform experience are not documented.
+concerns:
+- The role may require hands-on AWS services and infrastructure tooling beyond the
+  documented profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-21T13:35:27Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:0df1e797ceeb04ce9e342b1a5da9c9f225bd0922b056e8b0dc0898e01cd0897d
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

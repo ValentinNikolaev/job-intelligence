@@ -1,0 +1,24 @@
+schema_version: 2
+id: aa70614d-4499-4b02-9e0c-3645a9a61027
+title: Senior Backend Engineer – PHP and Symfony
+company: RedTech Recruitment Ltd.
+company_url: null
+location: Farringdon, Central London
+remote: null
+employment_type: full-time, permanent
+sources:
+- source: adzuna
+  source_job_id: '5888299688'
+  url: https://www.adzuna.co.uk/jobs/details/5888299688?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-17T23:58:46Z'
+discovered_at: '2026-09-18T00:17:46Z'
+updated_at: '2026-09-18T00:17:46Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-18T00:17:46Z'
+analysis_priority: 0
+fingerprint: sha256:d4adcf95a5ea0a07319da0c3ed9c80325c4ccfe07681ea48e5c7960f0e6be7c8
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

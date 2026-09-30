@@ -1,0 +1,18 @@
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+vacancy_version: sha256:aa8a87cde8c43b517ab43e352edb0d3b0041d8998f7dc73fb94e97cce510b271
+company_version: sha256:878395978d8114bd6a9e125c3b1a327c18df60546e15838187d11cdc7c696e62
+prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+model: codex:gpt-5.6-terra:medium
+cv_export_stem: CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD
+generated_at: '2026-08-14T11:50:54Z'
+documents:
+  interview-preparation:
+    profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+    vacancy_version: sha256:aa8a87cde8c43b517ab43e352edb0d3b0041d8998f7dc73fb94e97cce510b271
+    company_version: sha256:878395978d8114bd6a9e125c3b1a327c18df60546e15838187d11cdc7c696e62
+    prompt_version: sha256:dbd9408e4482d92271c723a468e794fe4ca6ce82f575b85f4e49f2db43240a4d
+    model: codex:gpt-5.6-terra:medium
+    cv_export_stem: CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD
+    generated_at: '2026-08-14T11:50:54Z'
+files:
+- interview-preparation.md

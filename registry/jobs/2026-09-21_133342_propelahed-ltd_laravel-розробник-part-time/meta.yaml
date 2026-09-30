@@ -1,0 +1,34 @@
+schema_version: 2
+id: 2aa3b0cf-4bf2-4a6a-bd05-a6dd7c21594d
+title: Laravel-розробник (part-time)
+company: Propelahed LTD
+company_url: https://jobs.dou.ua/companies/propelahed-ltd/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '374023'
+  url: https://jobs.dou.ua/companies/propelahed-ltd/vacancies/374023/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 21 вересня
+    listing_summary: 'Про проєкт Розробляємо клієнтський портал для фінансової компанії,
+      діяльність якої регулюється. Перша фаза вже працює в продакшені. Шукаємо розробника
+      на задачі другої фази: від специфікації до деплою.'
+published_at: '2026-09-21'
+discovered_at: '2026-09-21T13:33:42Z'
+updated_at: '2026-09-21T13:33:42Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-21T13:33:42Z'
+analysis_priority: 100
+fingerprint: sha256:b9577f754ab055f574da13823bdc67505a5ca494fc639ce25be924f6f50bb55b
+data_source: dou
+content_source: dou
+company_content_source: dou

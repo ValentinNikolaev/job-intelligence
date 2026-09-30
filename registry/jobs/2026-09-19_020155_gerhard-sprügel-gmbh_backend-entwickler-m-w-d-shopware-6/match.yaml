@@ -1,0 +1,27 @@
+score: 70
+recommendation: match
+summary: Strong PHP, Symfony, MySQL, API integration, backend, and e-commerce-related
+  evidence aligns well, but the central Shopware 6 requirement, German-language expectations,
+  Vue.js, and likely onsite location are not supported.
+strengths:
+- Extensive PHP and Symfony backend development experience.
+- Supported MySQL, API integration, e-commerce, performance, and production reliability
+  background.
+- Salary range is materially aligned with a senior backend profile, subject to the
+  candidate's preferences.
+gaps:
+- Shopware or Shopware 6 plugin development is not present in the candidate evidence.
+- German language ability is not recorded.
+- Vue.js and Twig experience are not established.
+concerns:
+- The vacancy is located in Ingelfingen and does not clearly state remote work, which
+  is a location concern for a Rome-based candidate.
+- Shopware 6 appears central enough that the onboarding gap could be significant despite
+  transferable PHP/Symfony experience.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-19T02:57:28Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:bbbbb17b403a111e4a3ad0d77cf1b449c93e8b89bd56e9e1706a766f130d9f04
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

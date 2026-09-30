@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:dd3b0818d7fd07a831fe0d5cc45953647f5171140777d729c5d502b8183b1f39
+company_version: sha256:9a535c58a7f683211cfb5fe752de0212afcc75551ee72735eb5695d7b4100a8a
+prompt_version: sha256:9bf5d3343b1bb9decb2ab1a42e52cb16c3b064be057d59c9b1975a873e2b697f
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_blackbirdlab_SeniorBackendPHPGolangSoftwareEngineer
+generated_at: '2026-08-02T15:34:50Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_blackbirdlab_SeniorBackendPHPGolangSoftwareEngineer.md
+- CV_ValentinNikolaev_blackbirdlab_SeniorBackendPHPGolangSoftwareEngineer.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md

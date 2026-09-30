@@ -1,0 +1,41 @@
+schema_version: 1
+purpose: Senior and architect CV editorial guidance; examples are shapes, never candidate facts.
+approved_outcome_patterns:
+  - id: consequential-delivery
+    shape: "Delivered a source-backed change to a named system, explaining the resulting customer or operating consequence."
+  - id: architectural-judgment
+    shape: "Owned a source-backed architectural decision, explaining the affected system and verified result."
+  - id: production-risk
+    shape: "Reduced a documented reliability, security or compliance risk through a specific contribution."
+rejected_anti_patterns:
+  - id: source-code-size
+    category: internal_implementation_metric
+    regex: '(?i)\b(?:LOC|lines? of code|code from [\d,]+ to [\d,]+ lines?)\b'
+    reason: Source-code size is an implementation detail, not an employer-facing outcome.
+  - id: test-inventory
+    category: internal_implementation_metric
+    regex: '(?i)\b\d+\s+(?:(?:unit|integration|e2e|automated)\s+)?tests?\b'
+    reason: A test count does not establish the resulting product or operational value.
+  - id: coverage-inventory
+    category: internal_implementation_metric
+    regex: '(?i)\b(?:test\s+)?coverage\s*(?:of|at|to|:)?\s*\d+(?:\.\d+)?%'
+    reason: Coverage percentages belong in supporting evidence or interview detail.
+  - id: ticket-id
+    category: internal_identifier
+    regex: '\b[A-Z][A-Z0-9]{2,}-\d{2,}\b'
+    reason: Internal ticket identifiers do not communicate a candidate contribution.
+  - id: internal-contract-detail
+    category: internal_identifier
+    regex: '(?i)\b(?:API field|permission name|UI control|QA scenario)s?\b'
+    reason: Internal contract names and QA steps belong in supporting evidence, not a CV.
+  - id: telephony-mechanics
+    category: implementation_mechanics
+    regex: '(?i)\b(?:TTL|contact[- ]flow|masked in the browser|purged from Connect|queue routing)\b'
+    reason: State the verified privacy or production result without internal telephony mechanics.
+implementation_to_consequence:
+  - implementation: source-code line count, test count or ticket inventory
+    consequence: Describe the verified delivery, reliability or maintainability result; omit the bullet if none is sourced.
+  - implementation: phone-number masking, transport, retention or purge mechanics
+    consequence: Describe the verified privacy architecture, security review and production release at outcome level.
+  - implementation: API field, permission name or UI control
+    consequence: Describe the supported access, audit or user outcome without internal identifiers.

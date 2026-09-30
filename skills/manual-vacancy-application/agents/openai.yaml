@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manual Vacancy Application"
+  short_description: "Turn a manual vacancy into application drafts"
+  default_prompt: "Use $manual-vacancy-application to add this manual vacancy, analyze it, and prepare the CV and cover letter."

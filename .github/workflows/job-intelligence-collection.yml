@@ -1,0 +1,256 @@
+name: Job Intelligence Collection
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      push_retry_count:
+        description: Number of clean reruns already queued after a push race
+        required: false
+        default: 0
+        type: number
+
+permissions:
+  actions: write
+  contents: write
+
+concurrency:
+  group: job-intelligence-registry-mutation
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      MONGODB_URI: ${{ secrets.MONGODB_URI }}
+      JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME || 'job_intelligence' }}
+      ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+      ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+      CLEANJOBDATA_API_KEY: ${{ secrets.CLEANJOBDATA_API_KEY }}
+      JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      JOBINTEL_COLLECTION_LIMIT: ${{ vars.JOBINTEL_COLLECTION_LIMIT || '100' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "pyproject.toml"
+
+      - name: Install project
+        run: python -m pip install -e .
+
+      - name: Select configured storage
+        id: storage_backend
+        shell: bash
+        run: python -c "import yaml; print('name=' + yaml.safe_load(open('config/data-services.yaml'))['storage']['backend'])" >> "$GITHUB_OUTPUT"
+
+      - name: Grant temporary Atlas runner access
+        if: steps.storage_backend.outputs.name == 'mongodb'
+        id: atlas_access
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network grant
+
+      - name: Verify shared storage before writing
+        env:
+          JOBINTEL_MONGODB_NETWORK_READY: 'true'
+        run: bash .github/scripts/verify-shared-storage.sh
+
+      - name: Collect vacancies
+        id: collect
+        shell: bash
+        timeout-minutes: 45
+        run: bash .github/scripts/run-and-report.sh "Collect vacancies" soft python run.py all --lock-timeout-seconds 90
+
+      - name: Write deterministic triage
+        id: triage
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Write deterministic triage" hard python run.py triage --lock-timeout-seconds 90
+
+      - name: Archive low-score vacancies
+        id: archive_low_score
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive low-score vacancies" hard python scripts/archive_jobs.py low-score
+
+      - name: Archive skipped vacancies
+        id: archive_skipped
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive skipped vacancies" hard python scripts/archive_jobs.py skipped
+
+      - name: Archive stale vacancies
+        id: archive_stale
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive stale vacancies" hard python scripts/archive_jobs.py stale --max-age-days 7
+
+      - name: Archive rejected vacancies
+        id: archive_rejected
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Archive rejected vacancies" hard python scripts/archive_jobs.py rejected --keep-items 50
+
+      - name: Regenerate registry index
+        id: reindex
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Regenerate registry index" hard python run.py reindex
+
+      - name: Regenerate vacancy catalog
+        id: catalog
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Regenerate vacancy catalog" hard python run.py catalog
+
+      - name: Run unit tests
+        id: unit_tests
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Run unit tests" hard env -u TELEGRAM_BOT_TOKEN -u TELEGRAM_CHAT_ID -u MONGODB_URI -u ATLAS_CLIENT_ID -u ATLAS_CLIENT_SECRET python -m unittest discover -v
+
+      - name: Run repository doctor
+        id: doctor
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Run repository doctor" hard python run.py doctor --ci
+
+      - name: Workflow report
+        id: workflow_report
+        continue-on-error: true
+        shell: bash
+        run: bash .github/scripts/run-and-report.sh "Workflow report" hard python run.py api workflow-report --json --limit 60
+
+      - name: Gate deterministic workflow
+        id: deterministic
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          hard_failure=0
+
+          check_step() {
+            local label="$1"
+            local outcome="$2"
+            if [ "$outcome" != "success" ]; then
+              hard_failure=1
+              echo "::error title=${label} failed::Deterministic workflow step outcome was ${outcome}."
+              echo "- ${label}: ${outcome}" >> "$GITHUB_STEP_SUMMARY"
+            fi
+          }
+
+          check_step "Write deterministic triage" "${{ steps.triage.outcome }}"
+          check_step "Collect vacancies" "${{ steps.collect.outcome }}"
+          check_step "Archive low-score vacancies" "${{ steps.archive_low_score.outcome }}"
+          check_step "Archive skipped vacancies" "${{ steps.archive_skipped.outcome }}"
+          check_step "Archive stale vacancies" "${{ steps.archive_stale.outcome }}"
+          check_step "Archive rejected vacancies" "${{ steps.archive_rejected.outcome }}"
+          check_step "Regenerate registry index" "${{ steps.reindex.outcome }}"
+          check_step "Regenerate vacancy catalog" "${{ steps.catalog.outcome }}"
+          check_step "Run unit tests" "${{ steps.unit_tests.outcome }}"
+          check_step "Run repository doctor" "${{ steps.doctor.outcome }}"
+          check_step "Workflow report" "${{ steps.workflow_report.outcome }}"
+
+          echo "failure=${hard_failure}" >> "$GITHUB_OUTPUT"
+          if [ "$hard_failure" -ne 0 ]; then
+            echo "Deterministic checks failed; refusing to commit generated changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+      - name: Commit deterministic changes
+        id: commit
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUSH_RETRY_COUNT: ${{ inputs.push_retry_count || 0 }}
+        run: |
+          set -euo pipefail
+          if [ "${{ steps.deterministic.outputs.failure }}" = "1" ]; then
+            echo "Deterministic checks failed; refusing to commit generated changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          git status --short
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No repository changes to commit." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git config user.name "Valentin Nikolaev"
+          git config user.email "435393+ValentinNikolaev@users.noreply.github.com"
+          git add -A
+          git diff --cached --stat
+
+          changed_files="$(git diff --cached --name-only | wc -l | tr -d ' ')"
+          added_files="$(git diff --cached --name-status | awk '$1 == "A" { count++ } END { print count + 0 }')"
+          modified_files="$(git diff --cached --name-status | awk '$1 == "M" { count++ } END { print count + 0 }')"
+          deleted_files="$(git diff --cached --name-status | awk '$1 == "D" { count++ } END { print count + 0 }')"
+          new_active_vacancies="$(git diff --cached --name-status -- registry/jobs | awk '$1 == "A" && $2 ~ /\/meta\.yaml$/ { count++ } END { print count + 0 }')"
+          new_rejected_vacancies="$(git diff --cached --name-status -- registry/rejected | awk '$1 == "A" && $2 ~ /\/meta\.yaml$/ { count++ } END { print count + 0 }')"
+          commit_subject="$(python -m jobintel.commit_messages collection \
+            --run-number "${GITHUB_RUN_NUMBER}" \
+            --active "${new_active_vacancies}" \
+            --rejected "${new_rejected_vacancies}")"
+          run_url="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+          git commit \
+            -m "${commit_subject}" \
+            -m "Collection found ${new_active_vacancies} active vacancies and filtered ${new_rejected_vacancies} rejected vacancies during ${GITHUB_WORKFLOW} #${GITHUB_RUN_NUMBER} via ${GITHUB_EVENT_NAME}." \
+            -m "Changed files: ${changed_files} total, ${added_files} added, ${modified_files} modified, ${deleted_files} deleted." \
+            -m "Run: ${run_url}"
+
+          branch="${GITHUB_REF_NAME:-main}"
+          local_commit="$(git rev-parse HEAD)"
+          local_base="$(git rev-parse HEAD^)"
+          if git push origin "HEAD:${branch}"; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Committed and pushed deterministic collection changes." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git fetch origin "${branch}"
+          remote_head="$(git rev-parse "origin/${branch}")"
+          if [ "${remote_head}" = "${local_commit}" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "The collection commit was already present on origin/${branch}." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          if [ "${remote_head}" = "${local_base}" ]; then
+            echo "Push failed even though origin/${branch} did not advance; refusing to retry." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          if [ "${PUSH_RETRY_COUNT}" -ge 1 ]; then
+            echo "origin/${branch} advanced again during the clean retry; refusing to queue another run." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          gh workflow run job-intelligence-collection.yml \
+            --repo "${GITHUB_REPOSITORY}" \
+            --ref "${branch}" \
+            -f push_retry_count=1
+
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          echo "retry_queued=true" >> "$GITHUB_OUTPUT"
+          echo "origin/${branch} advanced from ${local_base} to ${remote_head}; queued one clean collection run from the latest branch head." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Revoke temporary Atlas runner access
+        if: always() && steps.storage_backend.outputs.name == 'mongodb'
+        env:
+          ATLAS_PROJECT_ID: ${{ vars.ATLAS_PROJECT_ID }}
+          ATLAS_CLIENT_ID: ${{ secrets.ATLAS_CLIENT_ID }}
+          ATLAS_CLIENT_SECRET: ${{ secrets.ATLAS_CLIENT_SECRET }}
+        run: python -m jobintel.atlas_network revoke

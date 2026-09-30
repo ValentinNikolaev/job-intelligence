@@ -1,0 +1,33 @@
+score: 76
+recommendation: match
+summary: Strong fit for the senior PHP/Laravel backend and technical-lead responsibilities,
+  with relevant AWS, database, reliability, and production AI-automation experience;
+  Toronto-time-zone coverage and depth of agentic AI implementation remain material
+  uncertainties.
+strengths:
+- More than six years of documented professional PHP experience, including Laravel
+  and Symfony backend work.
+- Technical leadership experience includes mentoring, roadmap and delivery ownership,
+  interviewing, and management of a 10-person engineering group.
+- Demonstrated MySQL/PostgreSQL work, query and performance optimization, AWS, Kubernetes,
+  CI/CD, monitoring, and production reliability.
+- Built and integrated AI-supported support automation and an LLM-assisted support
+  agent in real operational workflows.
+- Strong evidence of end-to-end backend ownership, communication, and collaboration
+  across product and engineering stakeholders.
+gaps:
+- The profile does not explicitly document Docker experience or retrieval, tool-calling,
+  autonomous-agent frameworks, or Codex/Claude Code usage.
+- The profile does not clearly establish routine work during Toronto EDT hours.
+concerns:
+- The role explicitly requires working in the Toronto time zone, while the candidate
+  profile identifies the candidate in Italy and does not state timezone availability.
+- English proficiency is recorded inconsistently across candidate sources, from Upper-intermediate
+  to Professional Working.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-19T11:05:06Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:fda117eacbc2ac6b3b8594f615a0401fe38d631d411818d6d4abc0a0a31e86b5
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

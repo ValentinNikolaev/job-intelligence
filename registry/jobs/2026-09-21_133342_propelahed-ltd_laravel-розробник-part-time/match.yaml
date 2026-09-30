@@ -1,0 +1,22 @@
+score: 82
+recommendation: strong_match
+summary: Strong PHP and Laravel alignment with relevant backend, API, database, and
+  delivery experience; part-time scope and any client-specific gaps need confirmation.
+strengths:
+- Extensive documented PHP and Laravel backend experience.
+- Strong evidence for APIs, databases, production reliability, performance optimization,
+  and CI/CD.
+- Remote work and independent delivery experience are well supported by the candidate
+  profile.
+gaps:
+- Vacancy-specific responsibilities and required supporting tools are not fully available
+  in the sealed job text.
+concerns:
+- Part-time availability and exact engagement expectations require confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-21T13:35:27Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:337e10a45a85b33593f5d09d5228bad905bd5cf3421aa578e59fe4db56dde092
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

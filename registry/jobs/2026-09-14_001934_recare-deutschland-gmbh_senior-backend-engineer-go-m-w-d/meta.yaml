@@ -1,0 +1,31 @@
+schema_version: 2
+id: cee9bf1e-dc21-49e6-b5ab-2ec0a1c1df64
+title: Senior Backend Engineer (Go) (m/w/d)
+company: Recare Deutschland GmbH
+company_url: null
+location: Remote job
+remote: true
+employment_type: Experienced, fulltime permanent
+sources:
+- source: arbeitnow
+  source_job_id: remote-senior-backend-engineer-go-berlin-391760
+  url: https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-senior-backend-engineer-go-berlin-391760
+  metadata:
+    tags:
+    - Engineering
+    - Remote
+    job_types:
+    - Experienced
+    - fulltime permanent
+published_at: '2026-09-13T23:30:39Z'
+discovered_at: '2026-09-14T00:19:34Z'
+updated_at: '2026-09-14T00:19:34Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-14T00:19:34Z'
+analysis_priority: 0
+fingerprint: sha256:a6f355c393ea21569ea4ea81cc87cff9bb51b3adc52580d13986574e8519fc29
+data_source: arbeitnow
+content_source: arbeitnow
+company_content_source: null

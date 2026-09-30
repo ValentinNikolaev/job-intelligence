@@ -1,0 +1,19 @@
+score: 86
+recommendation: strong_match
+summary: Very strong backend-focused PHP match with relevant React collaboration potential
+  and payments-domain experience.
+strengths:
+- Deep PHP/Laravel/Symfony backend experience.
+- Payment integrations, APIs, databases, queues, performance, and reliability experience.
+- Some documented frontend exposure and strong cross-functional delivery background.
+gaps:
+- Current React depth is not quantified.
+concerns:
+- Exact payment platform and employment arrangement should be verified.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-18T22:15:38Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:ad748da7751aed558b0ec9286f0b27da544e904382ffac784524030ac336d95c
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

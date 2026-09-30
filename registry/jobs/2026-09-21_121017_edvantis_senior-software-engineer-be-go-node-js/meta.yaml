@@ -1,0 +1,35 @@
+schema_version: 2
+id: 2358c569-0bae-4bec-ab93-a184b6dd855a
+title: Senior Software Engineer BE (Go, Node.js)
+company: Edvantis
+company_url: https://jobs.dou.ua/companies/edvantis/vacancies/
+location: Львів, Ряшів (Польща), віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373945'
+  url: https://jobs.dou.ua/companies/edvantis/vacancies/373945/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 21 вересня
+    listing_summary: We are looking for a Senior Software Engineer to work on the
+      project of our Client who provides a range of media and advertising services,
+      including a proprietary ad server, a media planning tool, and stoppable advertising,
+      among others.
+published_at: '2026-09-21'
+discovered_at: '2026-09-21T12:10:17Z'
+updated_at: '2026-09-21T12:10:17Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-21T12:10:17Z'
+analysis_priority: 100
+fingerprint: sha256:dcfbde4fe44a84f74ab577f1a5587a24ccba09d7142c9812cce4187b709649d0
+data_source: dou
+content_source: dou
+company_content_source: dou

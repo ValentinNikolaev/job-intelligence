@@ -1,0 +1,34 @@
+schema_version: 2
+id: 75c10641-ed93-4388-bf52-c826945bcb22
+title: Tech Lead — Solutions Architect (I-Gaming)
+company: Add Talent Solutions
+company_url: https://jobs.dou.ua/companies/add-talent-solutions/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '356776'
+  url: https://jobs.dou.ua/companies/add-talent-solutions/vacancies/356776/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 18 вересня
+    salary_label: $5000–8000
+    listing_summary: We are seeking a hands-on Tech Lead / Solution Architect to shape
+      and scale our next-generation iGaming platform.
+published_at: '2026-09-18'
+discovered_at: '2026-09-18T12:09:57Z'
+updated_at: '2026-09-18T12:09:57Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-18T12:09:57Z'
+analysis_priority: 100
+fingerprint: sha256:21a9fba6faebaa765fed0f6387274c351935c2c923c063bd463cf09c368b2b0f
+data_source: dou
+content_source: dou
+company_content_source: dou

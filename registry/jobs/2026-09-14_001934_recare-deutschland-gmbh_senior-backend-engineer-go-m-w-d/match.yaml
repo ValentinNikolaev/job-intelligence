@@ -1,0 +1,27 @@
+score: 88
+recommendation: strong_match
+summary: Excellent fit for a senior Go backend ownership role with remote work explicitly
+  available from Italy, supported by recent Go production work, architecture, automation,
+  observability, performance, and technical leadership.
+strengths:
+- Recent production ownership of a Go backend platform with integrations, resilient
+  messaging, and measurable operational impact.
+- Strong match for technical ownership, architecture decisions, mentoring, CI/CD,
+  testing, and performance optimization.
+- Explicit remote availability from Italy aligns with the candidate’s location.
+- Candidate has relevant AI and automation experience and a computer science master’s
+  degree.
+gaps:
+- Healthcare, FHIR, HL7, or DICOM experience is not documented, though the vacancy
+  treats it as optional.
+- GORM and CircleCI are not explicitly documented in the candidate profile.
+concerns:
+- The role requires clear real-time and written communication; the profile supports
+  professional English but contains conflicting proficiency entries.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T15:43:37Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:4ee4ca577a1a76970cade3d82393bc3d33cac8e5fd246b51b8948d28e96eff1b
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

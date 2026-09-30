@@ -1,0 +1,28 @@
+score: 82
+recommendation: strong_match
+summary: Strong fit for a remote engineering-management role combining Go, PHP/Laravel,
+  AWS platform tooling, event-driven systems, and developer enablement; the main uncertainty
+  is the depth of formal management across multiple organizations and direct internal
+  developer-experience ownership.
+strengths:
+- Technical leadership and team management, including leading 10 developers and setting
+  technology roadmaps.
+- Recent Go backend ownership plus demonstrated PHP/Laravel, AWS, Kubernetes, CI/CD,
+  queues, EventBridge, observability, and reliability work.
+- Evidence of improving delivery processes, mentoring, cross-functional alignment,
+  and operational performance.
+gaps:
+- The profile does not explicitly establish two or more years of formal people management
+  at two separate organizations.
+- Direct ownership of an internal developer-experience or golden-path product is not
+  explicitly documented.
+concerns:
+- Paddle lists Terraform, Redis, Honeycomb, SLOs, and OpenTelemetry, which are not
+  explicitly evidenced in the candidate profile.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-19T18:06:57Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:35c6cb3a04671ec989bbec8c92feb825ac4258b8ac61d05bd4b35d196c9dd009
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

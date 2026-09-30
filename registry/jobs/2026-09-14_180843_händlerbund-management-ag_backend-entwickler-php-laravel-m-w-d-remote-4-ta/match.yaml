@@ -1,0 +1,20 @@
+score: 76
+recommendation: match
+summary: Remote four-day PHP/Laravel backend role fits the candidate’s core stack,
+  APIs, data modeling, queues, and product automation experience.
+strengths:
+- PHP/Laravel
+- backend architecture
+- databases and APIs
+- event and queue experience
+gaps:
+- German language and Leipzig-specific eligibility are not evidenced
+concerns:
+- The source truncates the complete requirements
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T14:42:50Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:64d905cc89790aeca30b4e83b3242e13db646b4679e355df87e50e4ed1e230ca
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

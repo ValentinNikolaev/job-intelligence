@@ -1,0 +1,4 @@
+interface:
+  display_name: "Job Intelligence Workflow"
+  short_description: "Run vacancy analysis and application workflows"
+  default_prompt: "Use $job-intelligence-workflow to process the next pending vacancy without calling the OpenAI API."

@@ -1,0 +1,43 @@
+# Search settings only. Keep CLEANJOBDATA_API_KEY in ../.env or task secrets.
+version: 1
+
+# CleanJobData's free trial allows 250 /jobs requests per month and 1 req/sec.
+# Four requests per scheduled run leaves room for manual benchmark checks.
+request_budget: 4
+limit: 20
+max_pages_per_profile: 1
+timeout_seconds: 30
+min_request_interval_seconds: 1
+extra_fields:
+  - description
+
+# Profiles are fetched round-robin under the shared request budget.
+search_profiles:
+  - name: backend-italy
+    search: "senior backend engineer"
+    location: "IT"
+    max_age: "7d"
+    sort_by: relevance
+    max_pages: 1
+
+  - name: golang-italy
+    search: "golang backend engineer"
+    location: "IT"
+    max_age: "7d"
+    sort_by: relevance
+    max_pages: 1
+
+  - name: php-italy
+    search: "senior php backend developer"
+    location: "IT"
+    max_age: "7d"
+    sort_by: relevance
+    max_pages: 1
+
+  - name: remote-backend-europe
+    search: "remote senior backend engineer"
+    location: "DE,NL,ES,FR,GB,IE,PT,PL"
+    remote: true
+    max_age: "7d"
+    sort_by: relevance
+    max_pages: 1

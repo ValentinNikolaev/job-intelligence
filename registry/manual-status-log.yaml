@@ -1,0 +1,615 @@
+schema_version: 1
+description: Append-only audit log for manual vacancy status decisions made through
+  user/LLM interaction. Automated collection and prefilter rejections are tracked
+  elsewhere.
+summary:
+  total_events: 34
+  by_status:
+    applied:
+      count: 19
+      last_changed_at: '2026-08-20T17:51:00Z'
+    interview:
+      count: 2
+      last_changed_at: '2026-08-11T13:58:12Z'
+    rejected:
+      count: 13
+      last_changed_at: '2026-09-21T20:26:12Z'
+  by_reason:
+    application-submitted:
+      count: 2
+      reason: Application submitted
+      last_changed_at: '2026-08-04T19:27:35Z'
+    applied-one-day-previously-skip-duplicate-proces:
+      count: 1
+      reason: applied one day previously; skip duplicate processing
+      last_changed_at: '2026-08-01T16:58:51Z'
+    employer-chose-a-different-candidate-after-the-i:
+      count: 1
+      reason: Employer chose a different candidate after the interview process
+      last_changed_at: '2026-09-21T20:26:12Z'
+    india-focused-remote-role-public-postings-show-i:
+      count: 1
+      reason: India-focused remote role; public postings show India location and INR
+        compensation.
+      last_changed_at: '2026-08-01T19:54:58Z'
+    location-restriction:
+      count: 1
+      reason: location restriction
+      last_changed_at: '2026-08-08T08:55:34Z'
+    remote-role-includes-americas-region-avoid-ameri:
+      count: 1
+      reason: remote role includes Americas region; avoid American continent work-time
+        requirements
+      last_changed_at: '2026-08-01T16:20:42Z'
+    requires-america-timezone:
+      count: 1
+      reason: requires America timezone
+      last_changed_at: '2026-08-01T17:09:10Z'
+    requires-hybrid-type-of-work:
+      count: 1
+      reason: requires hybrid type of work
+      last_changed_at: '2026-07-31T20:02:31Z'
+    sparkfabrik-requires-strong-italian-language-lev:
+      count: 1
+      reason: SparkFabrik requires strong Italian language level for informal communication
+      last_changed_at: '2026-08-01T16:20:42Z'
+    submission-form-resets-after-validation-errors:
+      count: 1
+      reason: Submission form resets after validation errors
+      last_changed_at: '2026-08-04T18:51:00Z'
+    team-decision:
+      count: 1
+      reason: team decision
+      last_changed_at: '2026-08-08T08:55:36Z'
+    unspecified:
+      count: 6
+      reason: unspecified
+      last_changed_at: '2026-08-27T19:05:34Z'
+    user-confirmed-all-jobs-were-applied-after-compl:
+      count: 1
+      reason: User confirmed all jobs were applied after completing the Solidgate
+        application form.
+      last_changed_at: '2026-08-02T16:06:18Z'
+    user-confirmed-all-jobs-were-applied-after-sendi:
+      count: 1
+      reason: User confirmed all jobs were applied after sending the Zfort application
+        message.
+      last_changed_at: '2026-08-02T16:06:18Z'
+    user-confirmed-application-submitted:
+      count: 1
+      reason: User confirmed application submitted
+      last_changed_at: '2026-08-04T18:16:05Z'
+    user-confirmed-application-submitted-to-zartis:
+      count: 1
+      reason: User confirmed application submitted to Zartis
+      last_changed_at: '2026-08-01T20:27:52Z'
+    user-reported-application-submitted:
+      count: 4
+      reason: User reported application submitted
+      last_changed_at: '2026-08-20T17:51:00Z'
+    user-reported-applying-to-cubbit-s-r-l-senior-ba:
+      count: 1
+      reason: User reported applying to Cubbit S.r.l. Senior Backend Developer GO
+        one week ago.
+      last_changed_at: '2026-08-01T19:51:51Z'
+    user-reported-hr-interview-invitation-and-ongoin:
+      count: 1
+      reason: User reported HR interview invitation and ongoing email correspondence
+        with Solidgate.
+      last_changed_at: '2026-08-04T15:38:38Z'
+    user-reported-interview-scheduling-request:
+      count: 1
+      reason: user reported interview scheduling request
+      last_changed_at: '2026-08-11T13:58:12Z'
+    user-requested-job-intelligence-workflow-applica:
+      count: 1
+      reason: user requested Job Intelligence Workflow application status; external
+        application form not submitted
+      last_changed_at: '2026-08-02T15:35:06Z'
+    user-requested-marking-jagaad-senior-php-backend:
+      count: 1
+      reason: User requested marking Jagaad Senior PHP Backend Developer as applied
+        after preparing CV and cover letter.
+      last_changed_at: '2026-08-01T19:27:25Z'
+    user-requested-marking-the-deda-next-backend-php:
+      count: 1
+      reason: User requested marking the Deda.Next Backend PHP Developer vacancy as
+        applied after generating the application package.
+      last_changed_at: '2026-08-02T14:33:33Z'
+    user-requested-marking-the-n-ix-php-senior-vacan:
+      count: 1
+      reason: User requested marking the N-iX PHP Senior vacancy as applied after
+        generating the application package.
+      last_changed_at: '2026-08-02T14:22:03Z'
+    zfort-group-team-requires-at-least-5-years-of-ac:
+      count: 1
+      reason: ZFORT Group team requires at least 5 years of active Go/Golang experience
+        for this Backend/Golang Developer role.
+      last_changed_at: '2026-08-04T15:54:19Z'
+events:
+- changed_at: '2026-07-31T20:02:31Z'
+  vacancy_id: 0e2632ce-88f0-470f-8792-4adfc5586e46
+  directory: 2026-07-31_154304_hellofresh_staff-software-engineer-supply-chain-management
+  company: hellofresh
+  title: Staff Software Engineer, Supply Chain Management Technology (all genders)
+  from_status: found
+  to_status: rejected
+  reason: requires hybrid type of work
+  reason_key: requires-hybrid-type-of-work
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-01T16:20:42Z'
+  vacancy_id: ffe3989c-579a-4f28-8c46-9c30718c4665
+  directory: 2026-08-01_160014_canonical-ltd_software-architect-containers-virtualisation
+  company: Canonical Ltd.
+  title: Software Architect - Containers / Virtualisation
+  from_status: found
+  to_status: rejected
+  reason: remote role includes Americas region; avoid American continent work-time
+    requirements
+  reason_key: remote-role-includes-americas-region-avoid-ameri
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User rejected Jobicy 149981 and asked future vacancies requiring American
+    continent work time to be ignored.
+- changed_at: '2026-08-01T16:20:42Z'
+  vacancy_id: 4677d4cc-9b27-4a31-a5ce-f2d895d2a6f4
+  directory: 2026-08-01_155811_sparkfabrik-s-r-l_php-developer
+  company: SparkFabrik S.r.l.
+  title: PHP Developer
+  from_status: found
+  to_status: rejected
+  reason: SparkFabrik requires strong Italian language level for informal communication
+  reason_key: sparkfabrik-requires-strong-italian-language-lev
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User asked to reject all SparkFabrik jobs for half a year and return them
+    to the pool after 2027-02-01.
+- changed_at: '2026-08-01T16:58:51Z'
+  vacancy_id: 2410847b-c39f-48e3-b917-c2223aafec05
+  directory: 2026-08-01_155816_nord-security_backend-engineer-mid-senior-php-go-payments-team
+  company: Nord Security
+  title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
+  from_status: found
+  to_status: applied
+  reason: applied one day previously; skip duplicate processing
+  reason_key: applied-one-day-previously-skip-duplicate-proces
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User said to skip this Nord Security vacancy because it was applied one day
+    previously.
+- changed_at: '2026-08-01T17:09:10Z'
+  vacancy_id: 005a15f1-3302-42af-aaec-18190a5a7594
+  directory: 2026-07-31_221149_bright-vision-technologies_golang-applications-engineer
+  company: Bright Vision Technologies
+  title: Golang Applications Engineer
+  from_status: found
+  to_status: rejected
+  reason: requires America timezone
+  reason_key: requires-america-timezone
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User rejected Bright Vision Technologies Golang Applications Engineer because
+    it is in America timezone.
+- changed_at: '2026-08-01T19:27:25Z'
+  vacancy_id: e599eee7-c95c-4c7b-8119-d26441091128
+  directory: 2026-08-01_155803_jagaad-s-r-l_senior-php-backend-developer
+  company: Jagaad S.r.l.
+  title: Senior PHP Backend Developer
+  from_status: found
+  to_status: applied
+  reason: User requested marking Jagaad Senior PHP Backend Developer as applied after
+    preparing CV and cover letter.
+  reason_key: user-requested-marking-jagaad-senior-php-backend
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Application package prepared in repository; status marked applied per user
+    request.
+- changed_at: '2026-08-01T19:51:51Z'
+  vacancy_id: adcc33da-9d41-4430-87d4-ffe37ae815f8
+  directory: 2026-08-01_155750_cubbit-s-r-l_senior-backend-developer-go
+  company: Cubbit S.r.l.
+  title: Senior Backend Developer GO
+  from_status: found
+  to_status: applied
+  reason: User reported applying to Cubbit S.r.l. Senior Backend Developer GO one
+    week ago.
+  reason_key: user-reported-applying-to-cubbit-s-r-l-senior-ba
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: 'Actual application date reported by user: 2026-07-25. Status recorded after
+    vacancy entered registry to preserve chronological status history.'
+- changed_at: '2026-08-01T19:54:58Z'
+  vacancy_id: c56dbfa1-a9b4-4d42-a008-b15d12618ddc
+  directory: 2026-08-01_182447_signoz_staff-backend-engineer
+  company: SigNoz
+  title: Staff Backend Engineer
+  from_status: found
+  to_status: rejected
+  reason: India-focused remote role; public postings show India location and INR compensation.
+  reason_key: india-focused-remote-role-public-postings-show-i
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: 'Verified against SigNoz/Ashby, LinkedIn, and remote job aggregators: role
+    appears India-oriented rather than EU-compatible remote.'
+- changed_at: '2026-08-01T20:27:52Z'
+  vacancy_id: ed02d111-5074-4f96-8698-e100080dc2af
+  directory: 2026-08-01_160040_zartis_senior-software-engineer-golang
+  company: Zartis
+  title: Senior Software Engineer (Golang)
+  from_status: found
+  to_status: applied
+  reason: User confirmed application submitted to Zartis
+  reason_key: user-confirmed-application-submitted-to-zartis
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-02T14:22:03Z'
+  vacancy_id: 989507fe-2633-4fe0-b131-f7ed85f3d5ab
+  directory: 2026-08-02_141848_n-ix_php-senior
+  company: N-iX
+  title: PHP Senior
+  from_status: found
+  to_status: applied
+  reason: User requested marking the N-iX PHP Senior vacancy as applied after generating
+    the application package.
+  reason_key: user-requested-marking-the-n-ix-php-senior-vacan
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Application artifacts generated and vacancy marked applied by Codex task.
+- changed_at: '2026-08-02T14:33:33Z'
+  vacancy_id: e5073567-23da-4cf6-9ac0-dc211c8b22f9
+  directory: 2026-08-02_143030_deda-next_backend-php-developer
+  company: Deda.Next
+  title: Backend PHP Developer
+  from_status: found
+  to_status: applied
+  reason: User requested marking the Deda.Next Backend PHP Developer vacancy as applied
+    after generating the application package.
+  reason_key: user-requested-marking-the-deda-next-backend-php
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Application artifacts generated and vacancy marked applied by Codex task.
+- changed_at: '2026-08-02T15:35:06Z'
+  vacancy_id: 6958877c-2fe7-4fa7-bc07-71ba6003b733
+  directory: 2026-08-02_003315_blackbird-lab_senior-backend-php-golang-software-engineer
+  company: Blackbird Lab
+  title: Senior Backend (PHP/Golang) Software Engineer
+  from_status: found
+  to_status: applied
+  reason: user requested Job Intelligence Workflow application status; external application
+    form not submitted
+  reason_key: user-requested-job-intelligence-workflow-applica
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Prepared package and recorded applied status in registry only; Teamtailor
+    application was not submitted.
+- changed_at: '2026-08-02T16:06:18Z'
+  vacancy_id: 5e6e50a7-4297-42d4-80bd-dccc46b23451
+  directory: 2026-08-02_003330_solidgate_senior-golang-engineer-taxes
+  company: Solidgate
+  title: Senior Golang Engineer (Taxes)
+  from_status: found
+  to_status: applied
+  reason: User confirmed all jobs were applied after completing the Solidgate application
+    form.
+  reason_key: user-confirmed-all-jobs-were-applied-after-compl
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User stated all jobs applied; marking Solidgate applied.
+- changed_at: '2026-08-02T16:06:18Z'
+  vacancy_id: ea0a32ea-8b49-4992-830c-3113b6f7b1e4
+  directory: 2026-08-02_003333_zfort-group_backend-golang-developer
+  company: ZFORT Group
+  title: Backend/Golang Developer
+  from_status: found
+  to_status: applied
+  reason: User confirmed all jobs were applied after sending the Zfort application
+    message.
+  reason_key: user-confirmed-all-jobs-were-applied-after-sendi
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User stated all jobs applied; marking Zfort applied.
+- changed_at: '2026-08-03T19:18:35Z'
+  vacancy_id: 47cb9e0b-3736-4fd2-a85f-bc03402d002b
+  directory: 2026-08-03_190559_archer-recruitment_senior-php-developer-remote-ireland
+  company: Archer Recruitment
+  title: Senior PHP Developer - Remote (Ireland)
+  from_status: found
+  to_status: applied
+  reason: application submitted
+  reason_key: application-submitted
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: User reported the application as submitted.
+- changed_at: '2026-08-04T15:38:38Z'
+  vacancy_id: 5e6e50a7-4297-42d4-80bd-dccc46b23451
+  directory: 2026-08-02_003330_solidgate_senior-golang-engineer-taxes
+  company: Solidgate
+  title: Senior Golang Engineer (Taxes)
+  from_status: applied
+  to_status: interview
+  reason: User reported HR interview invitation and ongoing email correspondence with
+    Solidgate.
+  reason_key: user-reported-hr-interview-invitation-and-ongoin
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: Invitation to HR interview; communication is happening by email.
+- changed_at: '2026-08-04T15:54:19Z'
+  vacancy_id: ea0a32ea-8b49-4992-830c-3113b6f7b1e4
+  directory: 2026-08-02_003333_zfort-group_backend-golang-developer
+  company: ZFORT Group
+  title: Backend/Golang Developer
+  from_status: applied
+  to_status: rejected
+  reason: ZFORT Group team requires at least 5 years of active Go/Golang experience
+    for this Backend/Golang Developer role.
+  reason_key: zfort-group-team-requires-at-least-5-years-of-ac
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-04T18:16:05Z'
+  vacancy_id: 4d5ebad9-f71a-4390-a579-4fff482d6875
+  directory: 2026-08-04_093824_sfox_backend-developer-php-for-a-global-igaming-compa
+  company: SFox
+  title: Backend Developer (PHP) for a Global iGaming Company
+  from_status: found
+  to_status: applied
+  reason: User confirmed application submitted
+  reason_key: user-confirmed-application-submitted
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-04T18:51:00Z'
+  vacancy_id: 2f2f4832-4ca8-4689-903b-3983a85285dc
+  directory: 2026-08-04_124045_faria_senior-php-laravel-engineer
+  company: Faria
+  title: Senior PHP/Laravel Engineer
+  from_status: found
+  to_status: rejected
+  reason: Submission form resets after validation errors
+  reason_key: submission-form-resets-after-validation-errors
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-04T19:27:35Z'
+  vacancy_id: b839f4d9-4525-4270-b3fc-fb21352c0b12
+  directory: 2026-08-04_170437_valant_full-stack-php-laravel-developer-devops-skills
+  company: Valant
+  title: Full Stack PHP Laravel Developer/ DevOps Skills
+  from_status: found
+  to_status: applied
+  reason: Application submitted
+  reason_key: application-submitted
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-08T08:55:34Z'
+  vacancy_id: 2410847b-c39f-48e3-b917-c2223aafec05
+  directory: 2026-08-01_155816_nord-security_backend-engineer-mid-senior-php-go-payments-team
+  company: Nord Security
+  title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
+  from_status: applied
+  to_status: rejected
+  reason: location restriction
+  reason_key: location-restriction
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+  note: Employer declined because hiring is limited exclusively to the location specified
+    in the posting.
+- changed_at: '2026-08-08T08:55:36Z'
+  vacancy_id: 5e6e50a7-4297-42d4-80bd-dccc46b23451
+  directory: 2026-08-02_003330_solidgate_senior-golang-engineer-taxes
+  company: Solidgate
+  title: Senior Golang Engineer (Taxes)
+  from_status: interview
+  to_status: rejected
+  reason: team decision
+  reason_key: team-decision
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+  note: Employer declined to proceed after team discussion, citing current circumstances
+    and team priorities.
+- changed_at: '2026-08-09T19:21:07Z'
+  vacancy_id: b026db32-002c-47a4-a277-c2a73772d396
+  directory: 2026-08-07_112249_gameinspire_middle-senior-golang-developer
+  company: Gameinspire
+  title: Middle/Senior Golang Developer
+  from_status: found
+  to_status: applied
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-09T19:21:09Z'
+  vacancy_id: 9a8a4a10-af21-4cdb-8542-5c31233e74d0
+  directory: 2026-08-05_230409_micro1_senior-backend-engineer
+  company: micro1
+  title: Senior Backend Engineer
+  from_status: found
+  to_status: applied
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-09T19:21:11Z'
+  vacancy_id: efe56330-8bb8-4a90-b89a-551ed91ffa8d
+  directory: 2026-08-05_065339_linro_backend-engineer-remote-germany
+  company: Linro
+  title: Backend Engineer - Remote Germany
+  from_status: found
+  to_status: applied
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-11T13:58:12Z'
+  vacancy_id: bb67dbbd-ff90-4447-971f-e7e2a7e2b7d2
+  directory: 2026-08-10_194528_whitetech_php-developer-with-ddd
+  company: WhiteTech
+  title: PHP Developer with DDD
+  from_status: found
+  to_status: interview
+  reason: user reported interview scheduling request
+  reason_key: user-reported-interview-scheduling-request
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+  note: Schedule your interview with WhiteTech
+- changed_at: '2026-08-20T17:50:56Z'
+  vacancy_id: 4c2bd774-7617-4059-9eb2-86242e31708e
+  directory: 2026-08-13_180551_favbet_senior-php-developer
+  company: FAVBET
+  title: Senior PHP Developer
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-20T17:50:57Z'
+  vacancy_id: 9437a4eb-1e56-4dd0-bbcf-7360806bd7c0
+  directory: 2026-08-17_120646_ipay_senior-php-developer-backend-focused-react-js
+  company: iPay
+  title: Senior PHP Developer (Backend-focused, React.js)
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-20T17:50:58Z'
+  vacancy_id: 26f1ca48-0ef0-4959-9b15-92a1c1e312c2
+  directory: 2026-08-18_180722_boosta_senior-lead-php-developer-edlight
+  company: Boosta
+  title: Senior/Lead PHP Developer | Edlight
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-20T17:51:00Z'
+  vacancy_id: d2d7d820-7122-4cd1-b96f-1fc94f4f2fa6
+  directory: 2026-08-14_160240_brainstack_php-developer-billing
+  company: Brainstack
+  title: PHP Developer (Billing)
+  from_status: found
+  to_status: applied
+  reason: User reported application submitted
+  reason_key: user-reported-application-submitted
+  actor: user
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-27T19:05:31Z'
+  vacancy_id: 296606bf-51cd-4ef0-905b-322362baf958
+  directory: 2026-08-25_060844_shippypro_senior-software-engineer
+  company: ShippyPro
+  title: Senior Software Engineer
+  from_status: found
+  to_status: rejected
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-27T19:05:33Z'
+  vacancy_id: 7d18176c-5e99-4d71-b0b8-b878fb9db190
+  directory: 2026-08-25_060844_shippypro_software-engineering-team-lead
+  company: ShippyPro
+  title: Software Engineering Team Lead
+  from_status: found
+  to_status: rejected
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-08-27T19:05:34Z'
+  vacancy_id: 4d01b3f6-d354-4153-8603-8d55ef7c6647
+  directory: 2026-08-27_170144_shippypro_graduate-junior-software-engineer
+  company: ShippyPro
+  title: Graduate / Junior Software Engineer
+  from_status: found
+  to_status: rejected
+  reason: unspecified
+  reason_key: unspecified
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+- changed_at: '2026-09-21T20:26:12Z'
+  vacancy_id: c8dc7f2e-c9cc-4db1-9be6-e247a444cf60
+  directory: 2026-08-11_100757_coinspaid_senior-php-backend-engineer
+  company: Coinspaid
+  title: Senior PHP Backend Engineer
+  from_status: found
+  to_status: rejected
+  reason: Employer chose a different candidate after the interview process
+  reason_key: employer-chose-a-different-candidate-after-the-i
+  actor: codex
+  interaction:
+    source: llm_assisted_manual
+  note: 'Feedback record: registry/feedback/2026-08-11_100757_coinspaid_senior-php-backend-engineer/2026-09-21-rejection.md
+
+
+    # CoinsPaid — Senior PHP Backend Engineer: rejection
+
+
+    - Vacancy ID: `c8dc7f2e-c9cc-4db1-9be6-e247a444cf60`
+
+    - Vacancy: [Senior PHP Backend Engineer](../../jobs/2026-08-11_100757_coinspaid_senior-php-backend-engineer/job.md)
+
+    - Recorded on: 2026-09-21
+
+    - Message date: not supplied
+
+    - Source: employer message pasted by the user in the Codex conversation
+
+    - Outcome: rejected after participating in the interview process; the team chose
+    a different candidate.
+
+
+    ## Original message
+
+
+    Hi Valentin,
+
+
+    Hope you''re doing great!
+
+
+    As we agreed, I''d like to share with you the feedback from our team.
+
+
+    First of all, thank you very much for taking part in the interview process. We
+    had a great pleasure getting to know you and your experience better. While your
+    expertise is definitely valuable, we decided to move forward with a different
+    candidate at this time.
+
+
+    Thank you once again for your interest in CoinsPaid. I wish you luck in your job
+    search and hope we can stay in touch in case we have any new openings that might
+    be relevant to you.'

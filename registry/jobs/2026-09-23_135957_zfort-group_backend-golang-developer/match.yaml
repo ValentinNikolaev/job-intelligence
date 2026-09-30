@@ -1,0 +1,124 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-23T14:36:21Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ZFORT Group",
+      "country_codes": [],
+      "directory": "2026-09-23_135957_zfort-group_backend-golang-developer",
+      "score": 88,
+      "title": "Backend/Golang Developer",
+      "url": "https://jobs.dou.ua/companies/zfort/vacancies/374288/",
+      "vacancy_id": "6f78cdea-8afa-4a54-afd4-9835af2e299c"
+    },
+    {
+      "company": "IT Delight",
+      "country_codes": [],
+      "directory": "2026-09-23_135953_it-delight_senior-go-developer",
+      "score": 76,
+      "title": "Senior Go Developer",
+      "url": "https://jobs.dou.ua/companies/it-delight/vacancies/374361/",
+      "vacancy_id": "b23fbe03-07be-4648-acea-f4caa0a4efe0"
+    },
+    {
+      "company": "Real Estate Bees",
+      "country_codes": [],
+      "directory": "2026-09-23_071037_real-estate-bees_backend-engineer-php-laravel",
+      "score": 92,
+      "title": "Backend Engineer (PHP/Laravel)",
+      "url": "https://jobs.dou.ua/companies/real-estate-bees/vacancies/374149/",
+      "vacancy_id": "7ebfb9ad-be19-4653-8f52-78438c563a4c"
+    },
+    {
+      "company": "Nextip",
+      "country_codes": [],
+      "directory": "2026-09-23_070849_nextip_senior-php-backend-developer",
+      "score": 82,
+      "title": "SENIOR PHP BACKEND DEVELOPER",
+      "url": "https://www.nextip.com/job-position-backend/",
+      "vacancy_id": "b532459a-ee45-4494-929c-a8fe44b5c4a3"
+    },
+    {
+      "company": "Nextip",
+      "country_codes": [],
+      "directory": "2026-09-23_070847_nextip_job-position-php-backend-nextip",
+      "score": 80,
+      "title": "Job Position - PHP Backend - NEXTIP",
+      "url": "https://www.nextip.com/ro/job-position-backend/",
+      "vacancy_id": "9d68f4af-d774-45b9-9f91-686daa634770"
+    },
+    {
+      "company": "Nextip",
+      "country_codes": [],
+      "directory": "2026-09-23_070845_nextip_job-position-php-backend-nextip",
+      "score": 80,
+      "title": "Job Position - PHP Backend - NEXTIP",
+      "url": "https://www.nextip.com/job-position-backend/",
+      "vacancy_id": "1e74c2a7-55f8-4638-9ee4-1380f7ad1cea"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070843_neting_cerchiamo-uno-sviluppatore-laravel",
+      "score": 84,
+      "title": "Cerchiamo uno sviluppatore Laravel",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "9d714b9e-37a0-43bd-b3ff-3588e4538686"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070841_neting_sviluppatore-laravel-remote",
+      "score": 88,
+      "title": "Sviluppatore Laravel Remote",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "fb937be2-1497-44a0-a8a6-70894b3be480"
+    },
+    {
+      "company": "Neting",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-23_070839_neting_sviluppatore-laravel-remote-neting",
+      "score": 87,
+      "title": "Sviluppatore Laravel Remote - Neting %",
+      "url": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+      "vacancy_id": "941f55a5-acb0-47cf-9e33-a6d9928ab48b"
+    },
+    {
+      "company": "Beliven",
+      "country_codes": [],
+      "directory": "2026-09-23_070645_beliven_fullstack-developer",
+      "score": 68,
+      "title": "FULLSTACK DEVELOPER",
+      "url": "https://careers.beliven.com/recruiting/details/fullstack-developer",
+      "vacancy_id": "e6f3408a-f272-4530-b0c4-e38e7b9a3d32"
+    },
+    {
+      "company": "Beliven",
+      "country_codes": [],
+      "directory": "2026-09-23_070643_beliven_lead-software-engineer",
+      "score": 78,
+      "title": "LEAD SOFTWARE ENGINEER",
+      "url": "https://careers.beliven.com/recruiting/details/lead-software-engineer",
+      "vacancy_id": "14bc6d24-85bf-4dd8-891d-9ff03931e58f"
+    },
+    {
+      "company": "weBeetle",
+      "country_codes": [],
+      "directory": "2026-09-23_070623_webeetle_developer",
+      "score": 72,
+      "title": "Developer",
+      "url": "https://www.webeetle.com/join-us/#developer",
+      "vacancy_id": "5a8488b3-59bb-4a2f-93e1-d39f12ba963d"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "bb107ec3496bfe04b69c55e008eefa567e15f2bbab9ccda2541a90acc43dc279",
+  "schema_version": 2
+}

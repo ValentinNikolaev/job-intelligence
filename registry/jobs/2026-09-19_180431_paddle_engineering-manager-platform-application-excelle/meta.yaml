@@ -1,0 +1,41 @@
+schema_version: 2
+id: bcb8bcfa-daba-4e26-9faa-069c8ae9dafb
+title: Engineering Manager (Platform - Application Excellence)
+company: Paddle
+company_url: null
+location: Ireland,  Portugal,  UK
+remote: true
+employment_type: null
+sources:
+- source: jobicy
+  source_job_id: '153641'
+  url: https://jobicy.com/jobs/153641-engineering-manager-platform-application-excellence
+  metadata:
+    company_logo: https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/28ca3645-221.png
+    industry:
+    - Software Engineering
+    level: Director
+    excerpt: What do we do? Paddle offers digital product companies a completely different
+      approach to their payment infrastructure. Instead of assembling and maintaining
+      a complex stack of payments-related apps and services, we’re a Merchant of Record
+      for our customers. That means we take away 100% of the pain of payment fragmentation.
+      It’s faster, safer, cheaper, and,…
+    discovered_by:
+    - query_index: 4
+      parameters:
+        industry: dev
+        geo: europe
+        count: '25'
+        tag: php
+published_at: '2026-09-19T12:42:02Z'
+discovered_at: '2026-09-19T18:04:31Z'
+updated_at: '2026-09-19T18:04:31Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-19T18:04:31Z'
+analysis_priority: 0
+fingerprint: sha256:e5fb9d6749602876f90f45fb516839a240dade9cdbb935dd26b0338d2ef4e0fe
+data_source: jobicy
+content_source: jobicy
+company_content_source: null

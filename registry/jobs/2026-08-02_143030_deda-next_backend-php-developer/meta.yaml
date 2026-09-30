@@ -1,0 +1,29 @@
+schema_version: 2
+id: e5073567-23da-4cf6-9ac0-dc211c8b22f9
+title: Backend PHP Developer
+company: Deda.Next
+company_url: https://www.deda.com/
+location: Pisa, Roma
+remote: false
+employment_type: Hybrid
+sources:
+- source: manual
+  source_job_id: '7926763'
+  url: https://careers.deda.com/jobs/7926763-backend-php-developer?utm_source=LinkedIn
+  metadata:
+    source_name: Deda Careers
+    apply_url: https://careers.deda.com/jobs/7926763-backend-php-developer
+published_at: '2026-08-02T00:00:00Z'
+discovered_at: '2026-08-02T14:30:30Z'
+updated_at: '2026-08-02T14:33:33Z'
+status: applied
+status_history:
+- status: found
+  changed_at: '2026-08-02T14:30:30Z'
+- status: applied
+  changed_at: '2026-08-02T14:33:33Z'
+analysis_priority: 90
+fingerprint: sha256:089e1cbdabec080836f004d4b5b3aae6b4568f6f2858cf571036d7e7c3f0223a
+data_source: manual
+content_source: manual
+company_content_source: manual

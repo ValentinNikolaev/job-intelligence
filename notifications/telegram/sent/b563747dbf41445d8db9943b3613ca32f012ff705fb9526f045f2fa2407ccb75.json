@@ -1,0 +1,98 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-29T13:05:45Z",
+  "delivered_at": "2026-09-29T13:10:16Z",
+  "delivered_vacancy_ids": [
+    "da522785-2488-40d0-bb6b-760d6d2150b9",
+    "a741d221-c535-47a7-9f72-6e963bc7d56f",
+    "8f00cee8-1f32-4abc-8d70-d6a1735180f5",
+    "d40f4db3-c9e7-40ed-84a5-4e78553426ad",
+    "927da7d6-df59-4e7d-95fa-e345d85f32f2",
+    "3c4c25cc-3271-473b-b118-1afd88b95ea7"
+  ],
+  "delivery_status": "sent",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ZFORT Group",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122627_zfort-group_software-engineer-authentication-identity-manage_da522785-2488-40d0-bb6b-760d6d2150b9",
+      "score": 82,
+      "title": "Software Engineer — Authentication & Identity Management",
+      "url": "https://jobs.dou.ua/companies/zfort/vacancies/374903/",
+      "vacancy_id": "da522785-2488-40d0-bb6b-760d6d2150b9"
+    },
+    {
+      "company": "NeverEnding",
+      "country_codes": [
+        "UA",
+        "ES",
+        "PL"
+      ],
+      "directory": "2026-09-29_122627_neverending_lead-backend-engineer_a741d221-c535-47a7-9f72-6e963bc7d56f",
+      "score": 77,
+      "title": "Lead Backend Engineer",
+      "url": "https://jobs.dou.ua/companies/neverending/vacancies/368667/",
+      "vacancy_id": "a741d221-c535-47a7-9f72-6e963bc7d56f"
+    },
+    {
+      "company": "Hurma System",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122627_hurma-system_full-stack-developer_8f00cee8-1f32-4abc-8d70-d6a1735180f5",
+      "score": 74,
+      "title": "Full Stack Developer",
+      "url": "https://jobs.dou.ua/companies/hurma-system/vacancies/311366/",
+      "vacancy_id": "8f00cee8-1f32-4abc-8d70-d6a1735180f5"
+    },
+    {
+      "company": "NeverEnding",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122625_neverending_lead-backend-engineer_d40f4db3-c9e7-40ed-84a5-4e78553426ad",
+      "score": 77,
+      "title": "Lead Backend Engineer",
+      "url": "https://djinni.co/jobs/821185-lead-backend-engineer/",
+      "vacancy_id": "d40f4db3-c9e7-40ed-84a5-4e78553426ad"
+    },
+    {
+      "company": "GenSoft",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122625_gensoft_senior-go-engineer-security-critical-distributed_927da7d6-df59-4e7d-95fa-e345d85f32f2",
+      "score": 84,
+      "title": "Senior Go Engineer (Security-Critical Distributed Systems)",
+      "url": "https://djinni.co/jobs/850734-senior-go-engineer-security-critical-distribu/",
+      "vacancy_id": "927da7d6-df59-4e7d-95fa-e345d85f32f2"
+    },
+    {
+      "company": "FlexSolution",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122625_flexsolution_senior-golang-engineer-cryptosigning_3c4c25cc-3271-473b-b118-1afd88b95ea7",
+      "score": 82,
+      "title": "Senior Golang Engineer (Cryptosigning)",
+      "url": "https://djinni.co/jobs/850730-senior-golang-engineer-cryptosigning/",
+      "vacancy_id": "3c4c25cc-3271-473b-b118-1afd88b95ea7"
+    },
+    {
+      "company": "LUMASERV GmbH",
+      "country_codes": [],
+      "directory": "2026-09-24_122359_lumaserv-gmbh_php-laravel-backend-developer-gn_ef649a67-760d-4cbf-aed3-49536a0d342a",
+      "score": 86,
+      "title": "PHP Laravel Backend Developer [gn]",
+      "url": "https://www.adzuna.de/details/5896731578?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "ef649a67-760d-4cbf-aed3-49536a0d342a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b563747dbf41445d8db9943b3613ca32f012ff705fb9526f045f2fa2407ccb75",
+  "schema_version": 2,
+  "telegram_message_id": 250
+}

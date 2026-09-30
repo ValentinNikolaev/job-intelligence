@@ -1,0 +1,55 @@
+# CRURATED experience inventory — source review (2026-09-25)
+
+This source inventory preserves candidate-authored statements from the current task and historical ChatGPT conversations for future CV construction. It separates candidate-reported delivery, proposed designs, and code shown in conversations. A later direct [candidate confirmation](user-confirmed-crurated-2026-09-25.md) establishes production scope and technical ownership for specified work; this inventory alone does not verify individual authorship of pasted code or numeric measurements. No assistant-written answer is treated as evidence of work completed. Only the separately reviewed evidence bank may support generated achievements.
+
+## Identity and scope
+
+- Role: PHP Software Developer, concurrent part-time subcontract / consulting engagement, August 2024–January 2026. Existing candidate clarification: `registry/candidate/user-confirmed-career-clarifications.md`.
+- The candidate directly corrected the positioning: lead developer of the analytics solution, not manager of the whole team. [Original correction](https://chatgpt.com/c/686c2e60-d96c-800a-9e31-626e31af0120).
+- Technical context directly named in the current conversation: PHP, Laravel, Amazon/AWS, DataLake. Historical conversations specifically mention PHP 8.3, Laravel 11 and AWS EventBridge.
+
+## Analytics and DataLake — candidate-described work
+
+- Candidate's LinkedIn text says he architected and led the internal event analytics infrastructure used for product metrics, reporting and business insight. It describes queues and AWS EventBridge, versioned event schema, routing to Webhook/S3, retries, backpressure and observability. Source: `registry/candidate/linkedin-profile.md`, CRURATED section. Attribution and exact architecture should be reviewed against the candidate's latest clarification before CV use.
+- Candidate described simplifying the event publisher and transformer configuration so the analytics architecture could support additional object types. He reported adding five authentication-related events. [Laravel Auth Event Setup](https://chatgpt.com/c/27504be7-4cca-4636-a828-8d9bfc540a9c), [Improving Publisher Architecture](https://chatgpt.com/c/408e7d26-22e8-4dbd-a3c1-11f45b2d30de). Completion and production use of each part remain to be confirmed.
+- Candidate proposed compatible parallel publishing of old and new event versions to let the analytics team move to new schemas without blocking new-core development, and raised AWS event-volume/budget trade-offs. [Laravel Auth Event Setup](https://chatgpt.com/c/27504be7-4cca-4636-a828-8d9bfc540a9c). His later [direct confirmation](user-confirmed-crurated-2026-09-25.md) establishes that parallel event-version publication ran in production under his technical ownership; the specific budget trade-off decision remains unverified.
+- After the team chose to give up real-time analytics because Professionals data volume had been underestimated, the candidate stated that he personally rewrote the services. He described ongoing data-correctness and historical-migration work: absent timestamps, legacy identifiers, payload repairs, re-sending events, deleted historical records and performance under millions of records. [Проблемы с даталейком](https://chatgpt.com/c/67c71b9d-d83c-800a-b0ce-ba715b53704c). This directly supports architecture judgment and hands-on ownership; it does not establish that a 2-million-row migration finished successfully.
+- In a knowledge-transfer conversation before leaving CRURATED, the candidate showed Laravel commands for regular sync, deferred delivery, unsent-event replay, historical migration, metrics and alerts, and requested Confluence documentation focused on the purpose and operating principles. [Knowledge transfer перед увольнением](https://chatgpt.com/c/695511f5-34d0-832e-89e0-96b198d496e4). Pasted code proves these components were discussed, not personal authorship of every component or a measured reliability outcome.
+- Candidate decomposed DataLake observability into separate monitoring for scheduled commands, queue jobs, events (described as more than 30 types), alerts and dashboards, discussing CloudWatch dimensions and a monitoring epic. [AWS метрики трекинг](https://chatgpt.com/c/68581ac8-4c40-800a-a81d-e67792978999). This is evidence of planning and cross-cutting ownership; whether the monitoring was implemented and whether the event-type count is exact need confirmation.
+
+## CRURATED ↔ Crutrade integration — candidate-described work
+
+- Candidate said he took responsibility for authentication and OTP while coordinating with frontend and other teams. [Crutrade Service Update](https://chatgpt.com/c/66fb0210-78d8-800a-a12c-6fe8f1ea13d8). His later [direct confirmation](user-confirmed-crurated-2026-09-25.md) establishes production use under his technical ownership.
+- Candidate discussed API design for reusable service connections, account linking, collection import/export and job history, and reported an existing endpoint showing whether a user had purchased an item for a potential airdrop. [Laravel Guzzle API Client](https://chatgpt.com/c/670e63d3-6e4c-800a-ba05-39e6677936e1), [Concern about Education Approach](https://chatgpt.com/c/673c7da9-4770-800a-b0f8-ef3fe6af5d06). Assistant-proposed endpoint paths are not implementation evidence.
+- Candidate identified a security/integrity risk in accepting frontend-supplied bottle identifiers: the backend must verify ownership and related price/user data before import. [Concern about Education Approach](https://chatgpt.com/c/673c7da9-4770-800a-b0f8-ef3fe6af5d06). The candidate later confirmed purchase-ownership verification in production; the precise implementation of the bottle and price checks remains unverified.
+- Candidate discussed logging requests and responses to Crutrade, request IDs, and safe handling of Guzzle response streams. [Guzzle logging middleware rewrite](https://chatgpt.com/c/67374576-0af4-800a-855f-5a3f3657b6cf). He later confirmed production request/response logging; its measured outcome and exact request-ID implementation remain unverified.
+- Candidate coordinated a staged rollout plan using CRURATED production API, Crutrade staging API and a frontend test branch, followed by Crutrade production enablement and frontend merge/feature flag. He requested test accounts and cross-team agreement. [Ответ на сообщение на английском](https://chatgpt.com/c/6784e217-70e4-800a-9feb-b971737ce943). This is a plan, not proof that every stage completed.
+- In November 2024 the candidate said the integration task was closed "I think for now" and he had returned to DataLake analytics. [Datalake Analytics Task Update](https://chatgpt.com/c/674447e1-effc-800a-8684-d4120e4609ee). This is a work-status statement, not proof of production release or a business result.
+- A PHP SDK was explored; the candidate later said it was not used. [Generate API Clients Swagger](https://chatgpt.com/c/66fd80b8-b4b0-800a-9794-a210e5aeb307), [Traduzione headline LinkedIn](https://chatgpt.com/c/686c2e60-d96c-800a-9e31-626e31af0120). Do not claim SDK adoption in CV.
+
+## Architecture research and proposals — preserve, but do not state as shipped
+
+- Candidate explored CDC from Aurora through DMS and Firehose into S3, dynamic partitioning, JSON/SNAPPY, deduplication and eventual Hudi/Delta processing, plus binlog and network prerequisites. The conversation frames this as design/planning. [CDC solution proposals](https://chatgpt.com/c/6907b17d-7144-832e-83dc-2ef212c26b8f).
+- Candidate reviewed AWS/Data Crux architecture for ingestion, S3 layout, Athena/Glue costs, network security, data protection and observability gaps. [Analyze AWS architecture](https://chatgpt.com/c/68c1c4c2-0510-8327-b2cf-79ee8233912d). Which recommendations were adopted is unknown.
+- Candidate described limited visibility into the downstream analytics team's pipeline while investigating missing historical event types and requested event exports to diagnose completeness. [Ответ на сообщение на английском](https://chatgpt.com/c/6784e217-70e4-800a-9feb-b971737ce943). This supports an operational concern, not a completed observability improvement.
+- Candidate asked for Laravel/PHP refactoring help for a shipment excise-tax calculator. This demonstrates technical involvement, not a CV-level outcome yet. [PHP Class Refactoring Issues](https://chatgpt.com/c/66fae2a8-5b54-800a-bb37-8ec971fd4afe).
+
+## Numbers to validate before CV use
+
+The candidate later supplied verification bases for the offered figures without excluding any; see [CRURATED metric review](crurated-metric-review-2026-09-25.md). The notes below preserve the provenance concerns that prompted that review. Any later correction from the candidate supersedes the contextual interpretation.
+
+- LinkedIn reports DataLake throughput >10×, new analytics stream setup reduced from several days to <4 hours, and event delivery reliability >99.9%. The later [metric review](crurated-metric-review-2026-09-25.md) records the candidate's contextual measurement response and full technical ownership. Exact baseline and measurement window remain unspecified.
+- A historical CV drafting conversation also mentions data loss below 0.1%, but the candidate asked the assistant to add plausible percentages to career copy. Treat all unconfirmed quantitative claims as questions, not facts. [Traduzione headline LinkedIn](https://chatgpt.com/c/686c2e60-d96c-800a-9e31-626e31af0120).
+- A conversation contrasted processing 100 records with 2 million records to illustrate migration complexity. It does not verify a completed 2-million-record migration. [Проблемы с даталейком](https://chatgpt.com/c/67c71b9d-d83c-800a-b0ce-ba715b53704c).
+- A monitoring planning conversation mentions more than 30 event types. The candidate later stated the count is fixed and can be checked against code and data; it does not establish personal implementation of every event type. [AWS метрики трекинг](https://chatgpt.com/c/68581ac8-4c40-800a-a81d-e67792978999).
+
+## Open candidate confirmations
+
+1. Candidate correction, if any, to the four figures and their Grafana, operational-observation, or code/data measurement bases recorded in the later metric review.
+2. The candidate has since confirmed production use and full technical ownership of DataLake, parallel event-version publishing, and the listed Crutrade features: auth/OTP, account linking, collection import/export, purchase-ownership verification, and logging. The precise business outcome of each feature remains to be stated separately.
+3. Which DataLake commands, alerts and backfills the candidate authored or operated, and their production outcomes.
+4. Whether CDC and AWS architecture recommendations were adopted or remained proposals.
+
+## CV boundary
+
+Only select distinct, grounded outcomes from this inventory. Use the actual role and concurrent part-time engagement label. Do not equate lead developer with line manager, a proposal with a shipped system, a pasted code sample with personal authorship, or a drafted metric with measurement.

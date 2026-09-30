@@ -1,0 +1,20 @@
+score: 84
+recommendation: strong_match
+summary: Full-remote PHP/Laravel role strongly fits the candidate’s backend experience,
+  with plausible Vue.js and API alignment.
+strengths:
+- PHP/Laravel expertise
+- full-stack collaboration
+- REST APIs
+- production optimization
+gaps:
+- Vue.js depth is not evidenced
+concerns:
+- Some source text is incomplete and client-facing duties may vary
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T14:42:50Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:a6b4395d9acb84a4f352d8bce9b75e80cdd3b15c358904859b640318609f6893
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

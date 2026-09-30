@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:3c42fa7ff41787057ee2baac17c69422f9873110e9c5d1bbee3aea8d6c0061a1
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:9bf5d3343b1bb9decb2ab1a42e52cb16c3b064be057d59c9b1975a873e2b697f
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_zartis_SeniorSoftwareEngineerGolang
+generated_at: '2026-08-01T20:12:38Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_zartis_SeniorSoftwareEngineerGolang.md
+- CV_ValentinNikolaev_zartis_SeniorSoftwareEngineerGolang.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md

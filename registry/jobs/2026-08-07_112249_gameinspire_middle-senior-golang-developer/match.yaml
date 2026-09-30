@@ -1,0 +1,20 @@
+score: 86
+recommendation: strong_match
+summary: Very strong match for Go microservices, high-load systems, databases, queues,
+  mentoring, and production operations.
+strengths:
+- Go and concurrency
+- microservices and high-load systems
+- MySQL/PostgreSQL and RabbitMQ
+- monitoring and mentoring
+gaps:
+- MongoDB and Redis depth is not explicit
+concerns:
+- Gaming domain experience is not established
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T11:25:12Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:11915379f9a0acfca79199c2cef51ed62727b6617565dc49f953f6007600525a
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

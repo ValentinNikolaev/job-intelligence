@@ -1,0 +1,17 @@
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+vacancy_version: sha256:b18ceec1e1f1f565d787e575da76f7c3b08706f7dc5a98c337fd4e03d1a0716c
+company_version: sha256:a9d001d21b9632a5b3b17b172da3387b5b8bf03ee6d99ced41a04f5caf740ec1
+prompt_version: sha256:9bf5d3343b1bb9decb2ab1a42e52cb16c3b064be057d59c9b1975a873e2b697f
+model: codex:gpt-5.6-terra:medium
+simple_life_end_date: July 2026
+cv_export_stem: CV_ValentinNikolaev_nix_PHPSenior
+generated_at: '2026-08-02T14:21:36Z'
+files:
+- cv.md
+- cv.docx
+- CV_ValentinNikolaev_nix_PHPSenior.md
+- CV_ValentinNikolaev_nix_PHPSenior.docx
+- cover-letter.md
+- cover-letter.docx
+- analysis.md
+- interview-preparation.md

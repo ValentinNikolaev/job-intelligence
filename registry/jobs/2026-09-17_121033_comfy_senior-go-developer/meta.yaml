@@ -1,0 +1,37 @@
+schema_version: 2
+id: 1a85ae03-5ba4-474b-b2cf-371e231afc8d
+title: Senior Go Developer
+company: COMFY
+company_url: https://jobs.dou.ua/companies/comfy/vacancies/
+location: Дніпро, за кордоном, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373659'
+  url: https://jobs.dou.ua/companies/comfy/vacancies/373659/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 17 вересня
+    listing_summary: 'COMFY — один із лідерів українського ринку електроніки та побутової
+      техніки. Ми об’єднуємо 110 магазинів і цифрові продукти, якими користуються
+      понад 12 млн клієнтів.
+
+
+      Шукаємо Senior Go Developer до Web-напряму.'
+published_at: '2026-09-17'
+discovered_at: '2026-09-17T12:10:33Z'
+updated_at: '2026-09-17T12:10:33Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-17T12:10:33Z'
+analysis_priority: 100
+fingerprint: sha256:c963fbde733712858ff9a92ad65ec10b68d68eee9904ca2e2fa53a012a540775
+data_source: dou
+content_source: dou
+company_content_source: dou

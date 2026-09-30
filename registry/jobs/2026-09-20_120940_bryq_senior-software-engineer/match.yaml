@@ -1,0 +1,28 @@
+score: 82
+recommendation: strong_match
+summary: 'Excellent match for a remote senior backend role: the candidate has recent
+  Go backend ownership, APIs, distributed and event-driven systems, AWS, databases,
+  reliability work, mentoring, architecture, and a directly relevant degree, with
+  only domain-specific preferences unconfirmed.'
+strengths:
+- Exceeds the experience requirement and has senior/lead responsibility, technical
+  ownership, architecture, code review, mentoring, and production support evidence.
+- Strong alignment with backend languages, REST APIs, cloud infrastructure, relational
+  databases, event-driven systems, RabbitMQ, performance, and reliability.
+- Direct experience building automation and data/analytics infrastructure, plus a
+  computer-science master's degree and remote-compatible Italy location.
+gaps:
+- B2B SaaS, HR technology, psychometric data, and assessment-platform experience are
+  not established in the candidate profile.
+- GraphQL, non-relational databases beyond the listed experience, and open-source
+  contributions are not clearly evidenced.
+concerns:
+- The vacancy does not state a compensation range, and exact on-call expectations
+  and timezone overlap should be confirmed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-20T15:40:33Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:2cf0d4e335beac353f9de783ff437caa77b004c1dbe7daa214263021c2af96d9
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

@@ -1,0 +1,19 @@
+score: 78
+recommendation: match
+summary: Strong PHP role alignment through Laravel/Symfony, MySQL, and autonomous
+  backend problem solving.
+strengths:
+- 15+ years of PHP backend development
+- Laravel and Symfony
+- MySQL and API experience
+gaps:
+- Remote terms and seniority level are not stated
+concerns:
+- The page mixes multiple openings and gives limited role detail
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T14:42:50Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:93b9569f6c1206cbe9ece9aa237e443f60a0a256abc2ec1f78e910ddd97822aa
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

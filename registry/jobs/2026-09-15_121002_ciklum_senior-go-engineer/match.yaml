@@ -1,0 +1,17 @@
+score: 80
+recommendation: strong_match
+summary: Strong senior Go fit with distributed systems and reliability experience.
+strengths:
+- Recent production Go
+- Event-driven systems
+gaps:
+- Supporting tools unclear
+concerns:
+- Location compatibility unclear
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-15T13:45:40Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:1ee5c9daafce502f675b5b9b9b79024eb0d9b0e1b11c03d53e29182355f9c9ec
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

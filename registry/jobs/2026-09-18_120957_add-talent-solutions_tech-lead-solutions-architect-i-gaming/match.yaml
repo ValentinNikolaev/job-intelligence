@@ -1,0 +1,20 @@
+score: 74
+recommendation: match
+summary: Good seniority and architecture fit, with strong PHP/backend, cloud, delivery,
+  and technical leadership evidence; domain specifics remain uncertain.
+strengths:
+- Extensive technical-lead and system-design experience.
+- Strong PHP, Go, AWS, microservices, CI/CD, and production reliability background.
+- Prior digital-product and cryptocurrency experience provides relevant adjacent domain
+  exposure.
+gaps:
+- Specific iGaming platform and regulatory experience is not established.
+concerns:
+- Exact hands-on technology requirements and working-location arrangement need confirmation.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-18T19:53:23Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:8c7b2165049d32bde56fcec38b402c01dfa11f1eed7108ff2bf3ae796bb7fc62
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

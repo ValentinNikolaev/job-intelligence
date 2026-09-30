@@ -1,0 +1,21 @@
+score: 76
+recommendation: match
+summary: Remote part-time backend work developing infrastructure scenarios for AI
+  evaluation uses the candidate's production backend, cloud, troubleshooting, and
+  scaling experience.
+strengths:
+- Senior backend engineering
+- cloud infrastructure reasoning
+- troubleshooting and reliability
+- remote work
+gaps:
+- Reinforcement-learning environment authoring is not evidenced
+concerns:
+- Contractor 20-hour schedule and customer-specific requirements may limit fit
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-08-07T16:30:10Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:84c188c6755baa358cab550e4c4f4467205bfccd31d2e9d38719787640960e70
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

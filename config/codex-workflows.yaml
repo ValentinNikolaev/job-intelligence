@@ -1,0 +1,33 @@
+schema_version: 1
+note: >-
+  These settings document which model to select when creating each Codex task.
+  Project code cannot switch the active Codex model. The publisher derives its
+  provenance label from the explicitly selected workflow.
+prepare_min_score: 65
+prepare_max_age_days: 14
+prepare_batch_size: 10
+model_profiles:
+  luna_low:
+    model: gpt-5.6-luna
+    reasoning: low
+    model_label: codex:gpt-5.6-luna:low
+  terra_medium:
+    model: gpt-5.6-terra
+    reasoning: medium
+    model_label: codex:gpt-5.6-terra:medium
+  terra_high:
+    model: gpt-5.6-terra
+    reasoning: high
+    model_label: codex:gpt-5.6-terra:high
+workflows:
+  analyze:
+    default_profile: luna_low
+    allowed_profiles: [luna_low, terra_medium, terra_high]
+    purpose: High-volume vacancy scoring and initial selection.
+  prepare:
+    default_profile: terra_medium
+    allowed_profiles: [terra_medium, terra_high, luna_low]
+    purpose: >
+      Application package workflow for one to ten vacancies explicitly selected
+      by the user through vacancy IDs or registry directories. Keep every package
+      isolated and publish it from its own vacancy-keyed draft directory.

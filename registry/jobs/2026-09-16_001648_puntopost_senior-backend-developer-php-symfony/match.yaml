@@ -1,0 +1,30 @@
+score: 68
+recommendation: match
+summary: Senior PHP/Symfony backend work aligns closely with the candidate's framework,
+  API, database, and production-reliability experience, while Barcelona location,
+  remote policy, language expectations, and the truncated responsibilities remain
+  unresolved.
+strengths:
+- Direct Symfony and PHP experience across senior backend development and technical
+  leadership roles.
+- Strong evidence in APIs, MySQL/PostgreSQL, microservices, performance optimization,
+  queues, and production reliability.
+- Experience building and operating systems for digital products and e-commerce-related
+  domains.
+gaps:
+- The available posting text does not provide enough detail to verify the full responsibility
+  set, team context, or required supporting technologies.
+- No explicit candidate evidence establishes Spanish proficiency or Barcelona work
+  authorization/relocation plans.
+concerns:
+- The role is located in Barcelona and remote eligibility is not stated, creating
+  a meaningful location and logistics uncertainty for a candidate based in Rome.
+- The source text is truncated, so mandatory requirements and salary or employment
+  conditions cannot be fully assessed.
+hard_rejection: false
+hard_rejection_reason: null
+analyzed_at: '2026-09-16T00:46:39Z'
+profile_version: sha256:aa0ba8ff6fdf264f0a5972277a1ebd6b768c623e8592a094e06b3a4005fcbad2
+job_version: sha256:939eed533572c2a9216e9eebf926a93fd1f106620a4eb56e88d93de8542291b4
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

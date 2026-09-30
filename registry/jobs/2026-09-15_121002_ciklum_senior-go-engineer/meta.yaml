@@ -1,0 +1,37 @@
+schema_version: 2
+id: 4901bdea-1fe1-4214-98eb-ac246822d02b
+title: Senior Go Engineer
+company: Ciklum
+company_url: https://jobs.dou.ua/companies/ciklum/vacancies/
+location: Київ, Львів, віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373210'
+  url: https://jobs.dou.ua/companies/ciklum/vacancies/373210/
+  metadata:
+    discovered_by:
+    - query_index: 2
+      name: golang-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=Golang
+      category: Golang
+    listing_date_label: 14 вересня
+    listing_summary: 'Ciklum is looking for a Senior Go Engineer to join our team
+      full-time in Ukraine.
+
+
+      We are a custom product engineering company that supports both multinational
+      organizations and scaling startups to solve their most complex business challenges.'
+published_at: '2026-09-14'
+discovered_at: '2026-09-15T12:10:02Z'
+updated_at: '2026-09-15T12:10:02Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-15T12:10:02Z'
+analysis_priority: 100
+fingerprint: sha256:17471c4a3a6123435d6a9d70046d5ef5f35983c945cb498172cea9203cace3fc
+data_source: dou
+content_source: dou
+company_content_source: dou

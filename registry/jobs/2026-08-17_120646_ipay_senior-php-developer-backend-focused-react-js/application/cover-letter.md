@@ -1,0 +1,13 @@
+Dear Hiring Team,
+
+I am applying for the Senior PHP Developer position at iPay. I am a backend engineer with more than 15 years of experience building and improving production systems, with a strong background in PHP, Laravel, MySQL, REST APIs, system design, and operational reliability. I am most effective in roles where hands-on engineering is tied to practical outcomes: removing performance bottlenecks, stabilizing services, improving integrations, and helping teams make sound technical decisions.
+
+At airSlate, I worked on PHP and Laravel backend services in a high-traffic SaaS environment. I reduced peak load on the main database by removing bottlenecks and redistributing workload, then investigated and addressed API and query performance issues across backend services. I also developed a product-wide Laravel/Symfony logging package aligned with interservice communication standards and troubleshot production incidents using logs, monitoring, and SRE dashboards. This experience is directly relevant to improving the performance, reliability, and observability of critical backend flows while continuing to deliver new APIs and features.
+
+I also bring earlier, directly relevant payment and security experience. At CoinsBank/bit-x in 2014–2015, I implemented integrations with Stripe, PayPal, and Skrill for a platform handling fiat-money functionality. In subsequent work at Sixt in 2018–2019, I developed and enhanced microservices under PCI DSS constraints and conducted system audits, security assessments, and vulnerability scans. Although these roles are from an earlier stage of my career, they gave me practical exposure to payment integrations and security-sensitive engineering that complements my more recent work on performance and production reliability.
+
+iPay's mission to develop Ukraine's online-payment market while making internet payments safer and more convenient gives this role a clear product purpose. I am particularly interested in the opportunity to work on backend logic where engineering quality has an immediate effect on payment availability and partner operations. The position's combination of hands-on PHP development, database performance, REST APIs, architectural participation, and knowledge sharing is closely aligned with the work I have delivered across transactional and mission-critical systems.
+
+I would welcome the opportunity to discuss how my experience in PHP backend development, MySQL optimization, production reliability, and earlier payment-security work could contribute to iPay's engineering team. Thank you for your consideration.
+
+Valentin Nikolaev

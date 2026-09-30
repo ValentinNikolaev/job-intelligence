@@ -1,0 +1,19 @@
+score: 86
+recommendation: strong_match
+summary: PHP backend, APIs, production reliability, and adult-entertainment domain
+  experience align well.
+strengths:
+- PHP
+- backend architecture
+- integrations
+- scalable services
+gaps:
+- Specific iGaming stack and seniority expectations are not fully stated.
+concerns: []
+hard_rejection: false
+hard_rejection_reason: ''
+analyzed_at: '2026-08-04T10:23:50Z'
+profile_version: sha256:8cc5934229eaee0ddc71dca5b69eaf6f186effe69d9e39c53d48ca8a49b374bd
+job_version: sha256:48fc940c4e8342531cce50df31d6a1dc576ac0cf3174b906e374047e4e77e3b0
+prompt_version: job-match-v1:sha256:87da602394f115832ee0c15c7fc1bdd8f2a494c860f387208cfa64cd33fd8ce3
+model: codex:gpt-5.6-luna:low

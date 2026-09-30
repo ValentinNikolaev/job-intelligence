@@ -1,0 +1,24 @@
+schema_version: 2
+id: db9d8601-2fa0-41af-a3a2-c5e81b89e14e
+title: Backend-Entwickler PHP/Laravel (m/w/d) - Remote, 4-Tage-Woche
+company: Händlerbund Management AG
+company_url: null
+location: Leipzig, Leipzig (Kreis)
+remote: true
+employment_type: full-time
+sources:
+- source: adzuna
+  source_job_id: '5877169817'
+  url: https://www.adzuna.de/details/5877169817?utm_medium=api&utm_source=b6674f60
+published_at: '2026-09-09T16:32:19Z'
+discovered_at: '2026-09-14T18:08:43Z'
+updated_at: '2026-09-14T18:08:43Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-14T18:08:43Z'
+analysis_priority: 0
+fingerprint: sha256:f427e82602e6ea9d2399fe596a4f3ee3dc55356ee7df1a660539502e610d7886
+data_source: adzuna
+content_source: adzuna
+company_content_source: null

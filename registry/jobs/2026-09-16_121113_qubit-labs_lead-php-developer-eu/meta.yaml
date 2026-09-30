@@ -1,0 +1,35 @@
+schema_version: 2
+id: 0268ea8a-ddbc-4ca3-88e4-8fb814470e8b
+title: Lead PHP Developer (EU)
+company: Qubit Labs
+company_url: https://jobs.dou.ua/companies/qubit-labs/vacancies/
+location: віддалено
+remote: true
+employment_type: null
+sources:
+- source: dou
+  source_job_id: '373507'
+  url: https://jobs.dou.ua/companies/qubit-labs/vacancies/373507/
+  metadata:
+    discovered_by:
+    - query_index: 1
+      name: php-remote
+      url: https://jobs.dou.ua/vacancies/?remote&category=PHP
+      category: PHP
+    listing_date_label: 16 вересня
+    listing_summary: The company is a leading Digital-out-of-Home provider in Germany.
+      It operates a growing network of digital screens at high-frequency retail locations
+      and develops its own technology platform for campaign management, screen operations,
+      monitoring and advertising delivery.
+published_at: '2026-09-16'
+discovered_at: '2026-09-16T12:11:13Z'
+updated_at: '2026-09-16T12:11:13Z'
+status: found
+status_history:
+- status: found
+  changed_at: '2026-09-16T12:11:13Z'
+analysis_priority: 100
+fingerprint: sha256:733f6a441f1b3bf174736a6ac382598ec48b66f1a5d20ff99e5ddeecff28e3a7
+data_source: dou
+content_source: dou
+company_content_source: dou
