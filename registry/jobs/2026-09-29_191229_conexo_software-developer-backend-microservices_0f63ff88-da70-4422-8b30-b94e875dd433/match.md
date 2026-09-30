@@ -1,36 +1,39 @@
 # Match Analysis
 
-**Score:** 76/100
-**Recommendation:** Match
+**Score:** 82/100
+**Recommendation:** Strong Match
 
-Strong technical fit for the Rome hybrid backend and microservices role through demonstrated Go, event-driven systems, Kubernetes, CI/CD, production troubleshooting, and cross-functional delivery. The recruiter confirmed that a more experienced profile may be considered; salary target and several preferred tools remain unknown.
+Strong fit for the backend and microservices work in Rome, with demonstrated Go, event-driven systems, Kubernetes, CI/CD, and production reliability experience; Docker, on-premise infrastructure, testing detail, salary target, and hybrid-work preference remain to be confirmed.
 
 ## Why it matches
 
-- Go backend ownership and microservices experience are directly evidenced.
-- Kubernetes, CI/CD, AWS, monitoring, and production troubleshooting are documented.
-- Event-driven systems, queues, reliability work, and cross-functional delivery are documented.
-- Rome location and English proficiency are compatible with the posting.
+- Demonstrated Go backend ownership for support automation and integrations.
+- Demonstrated event-driven architecture using queues and EventBridge.
+- Demonstrated Kubernetes migration and deployment tooling with Helm, GitHub Actions, and ArgoCD.
+- Candidate is based in Rome, matching the stated work location.
 
 ## Gaps
 
-- Docker, GitLab specifically, Linux shell scripting, TDD/Kanban, Kafka, MQTT, InfluxDB, and TimescaleDB are not directly evidenced.
-- Salary target is not provided.
+- Docker and on-premise environment experience are not explicitly evidenced in the profile.
+- The profile does not provide specific unit or integration testing examples for this role.
+- Linux, shell scripting, GitLab, Kafka, MQTT, InfluxDB, and TimescaleDB are not explicitly evidenced.
 
 ## Concerns
 
-- The posting initially stated experience up to three years, but the recruiter explicitly confirmed that a more experienced profile may be considered.
-- The role is hybrid rather than remote.
+- The vacancy is hybrid rather than clearly remote, while the candidate-specific preferences favor remote work.
+- The stated target profile is up to three years of experience, although the recruiter explicitly said more experienced profiles are considered.
+- Salary target and work authorization or availability are not stated in the profile.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go or Golang backend development | critical / stated | strong | Sviluppo di soluzioni backend con Go, Java o TypeScript. | Go-based backends | / |
-| Microservices and event-driven architecture | critical / stated | strong | Progettazione di microservizi event-driven. | event-driven system | / |
-| Docker, Kubernetes, Git, and CI/CD | high / stated | partial | Conoscenza di Docker, Kubernetes, Git e CI/CD, preferibilmente GitLab. | Kubernetes | Docker, Git, and Linux are not directly stated and CI/CD uses GitHub tooling rather than the preferred GitLab. / Confirm Docker, Git, and GitLab exposure during screening. |
-| Unit and integration testing | high / stated | partial | Esperienza con unit e integration test. | Increased unit-tests coverage. | The profile does not provide detailed recent Go unit and integration testing examples. / Confirm a recent Go testing example during screening. |
-| Experience up to three years, subject to recruiter clarification | high / stated | partial | Profilo ricercato: candidati e candidate con un’esperienza fino a 3 anni. | over 15 years of expertise | The original seniority wording conflicts with the profile, although the recruiter confirmed that a more experienced profile may be considered. / Confirm level and compensation expectations with the recruiter. |
-| English language | high / stated | strong | Buona conoscenza dell’inglese. | Professional Working | The profile contains conflicting English proficiency entries. / Use the conservative professional-working description. |
-| Rome hybrid work location | high / stated | strong | Sede e modalità di lavoro: Roma, modalità ibrida. | Fiumicino, Latium, Italy | Hybrid attendance expectations are not specified. / Confirm onsite cadence before proceeding. |
-| Salary target within stated range | meaningful / stated | unknown | Fascia retributiva: RAL €27.000–€35.000, commisurata alle competenze e all’esperienza. |  | The candidate has not supplied a RAL target. / Obtain the candidate’s target before replying. |
+| Backend development with Go, Java, or TypeScript | critical / stated | strong | Sviluppo di soluzioni backend con Go, Java o TypeScript. | Go-based backends | / |
+| Event-driven microservices design | critical / stated | strong | Progettazione di microservizi event-driven. | event-driven system | / |
+| Docker, Kubernetes, Git, and CI/CD | high / stated | partial | Conoscenza di Docker, Kubernetes, Git e CI/CD, preferibilmente GitLab. | Kubernetes | Docker and GitLab are not explicitly evidenced in the profile. / Confirm Docker and Git usage in the interview or application materials; present the documented Kubernetes and CI/CD experience. |
+| Unit and integration testing | high / stated | unknown | Esperienza con unit e integration test. |  | The profile does not provide a specific unit or integration testing example. / Verify testing experience before preparation or in the interview. |
+| Linux and shell scripting | high / stated | unknown | Buona conoscenza di Linux e shell scripting. |  | The profile does not explicitly evidence Linux or shell scripting. / Verify the candidate's level and provide a concrete production example if available. |
+| Good English | high / stated | strong | Buona conoscenza dell’inglese. | Upper-intermediate | / |
+| Hybrid work in Rome | meaningful / stated | partial | Sede e modalità di lavoro: Roma, modalità ibrida. | Fiumicino | Hybrid attendance expectations and commute are not specified, and the candidate-specific preference favors remote work. / Confirm the required office days and commute feasibility before proceeding. |
+| Salary range €27,000–€35,000 and target RAL | meaningful / stated | unknown | Fascia retributiva: RAL €27.000–€35.000, commisurata alle competenze e all’esperienza. |  | The candidate's target RAL is not present in the profile. / Obtain an explicit target RAL before responding to the recruiter. |
+| Agile/Scrum cross-functional collaboration | meaningful / stated | strong | Collaborazione in un team cross-funzionale Agile/Scrum. | Support Ops | / |

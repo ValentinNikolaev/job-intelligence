@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-09-30T17:37:35Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Conexo",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-29_191229_conexo_software-developer-backend-microservices_0f63ff88-da70-4422-8b30-b94e875dd433",
+      "score": 82,
+      "title": "Software Developer – Backend / Microservices",
+      "url": "https://www.linkedin.com/posts/federica-santolamazza-6310186_ecco-una-nuova-opportunit%C3%A0-in-conexo-share-7510692165925216257-WRxg",
+      "vacancy_id": "0f63ff88-da70-4422-8b30-b94e875dd433"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "f52a1cc1a83ca82d6c22b1aa393c2444de5f28be6f1f5706b7f668779623f34f",
+  "schema_version": 2
+}
