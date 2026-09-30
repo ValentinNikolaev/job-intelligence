@@ -12,6 +12,13 @@ An explicit named-vacancy refresh of an existing CV can use
 new packages, other documents, hard rejections, or automatic selection. Report the
 score and material gaps to the candidate rather than disguising fit.
 
+When the user explicitly chooses to pursue a vacancy that remains a recorded hard
+rejection, a CV-only refresh of its existing package may instead use
+`--document cv --bypass-hard-rejection-cv-refresh`. This is a narrow, user-approved
+exception: it does not alter the match record, make the vacancy generally eligible,
+permit a new package or other documents, or apply to scheduled work. Report the
+recorded rejection and the bypass in the user-facing result.
+
 ## Candidate evidence bank
 
 `registry/candidate/*.md` remains immutable. `registry/evidence/achievements.yaml` is a

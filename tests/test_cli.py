@@ -12,7 +12,7 @@ from unittest.mock import patch
 
 import yaml
 
-from jobintel.cli import _allows_explicit_low_score_cv_refresh, _profile_paths, _run_collector, _run_doctor, main
+from jobintel.cli import _allows_explicit_hard_rejection_cv_refresh, _allows_explicit_low_score_cv_refresh, _profile_paths, _run_collector, _run_doctor, main
 from jobintel.models import NormalizedJob
 from jobintel.prefilter import RejectedRegistry
 from jobintel.registry import Registry
@@ -516,6 +516,28 @@ class CliTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "requires --document cv"):
                 _allows_explicit_low_score_cv_refresh(
                     vacancy, SimpleNamespace(allow_low_score_cv_refresh=True, document="cover-letter"), 57
+                )
+
+    def test_hard_rejection_bypass_is_only_for_an_existing_user_selected_cv(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            vacancy = Path(temporary) / "selected-vacancy"
+            vacancy.mkdir()
+            (vacancy / "match.yaml").write_text(
+                "score: 22\nrecommendation: not_match\nhard_rejection: true\n",
+                encoding="utf-8",
+            )
+            args = SimpleNamespace(bypass_hard_rejection_cv_refresh=True, document="cv")
+            self.assertFalse(_allows_explicit_hard_rejection_cv_refresh(vacancy, args))
+            application = vacancy / "application"
+            application.mkdir()
+            (application / "cv.md").write_text("# Existing CV\n", encoding="utf-8")
+            self.assertTrue(_allows_explicit_hard_rejection_cv_refresh(vacancy, args))
+            self.assertFalse(_allows_explicit_hard_rejection_cv_refresh(
+                vacancy, SimpleNamespace(bypass_hard_rejection_cv_refresh=False, document="cv")
+            ))
+            with self.assertRaisesRegex(ValueError, "requires --document cv"):
+                _allows_explicit_hard_rejection_cv_refresh(
+                    vacancy, SimpleNamespace(bypass_hard_rejection_cv_refresh=True, document="cover-letter")
                 )
 
     def test_doctor_ci_skips_only_host_local_converter_checks(self) -> None:

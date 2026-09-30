@@ -16,6 +16,10 @@ For a specifically requested refresh of an existing CV, a fresh `possible_match`
 below the configured score threshold may use the explicit
 `--allow-low-score-cv-refresh` publisher option. Preserve the match score and gaps
 in the user-facing report; never add unsupported job-ad keywords to compensate.
+For an explicit user-approved CV refresh of an existing package despite a recorded
+hard rejection, use `--bypass-hard-rejection-cv-refresh` only with `--document cv`.
+Preserve the hard rejection in the analysis and clearly report the bypass; it never
+makes the vacancy eligible for a new package, another document, or automatic work.
 
 ## Isolation and source-of-truth rules
 

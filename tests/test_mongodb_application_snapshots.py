@@ -176,7 +176,7 @@ class MongoApplicationSnapshotTests(unittest.TestCase):
 
     def test_preflight_reports_missing_selector_and_slotcatalog_hard_rejection_before_drafting(self) -> None:
         args = SimpleNamespace(arguments=["missing"], workflow="prepare", model_profile=None, document="cv", profile=None,
-                               allow_low_score_cv_refresh=False)
+                               allow_low_score_cv_refresh=False, bypass_hard_rejection_cv_refresh=False)
         with patch("jobintel.storage_bridge.get_store", return_value=self.store):
             with self.assertRaisesRegex(ApplicationError, "not found in configured storage"):
                 _preflight_preparation(args, {}, self.root, self.registry)

@@ -132,6 +132,11 @@ def _parser() -> argparse.ArgumentParser:
         help="explicit named-vacancy CV-only refresh of an existing package when the fresh match is possible_match below the normal preparation threshold",
     )
     parser.add_argument(
+        "--bypass-hard-rejection-cv-refresh",
+        action="store_true",
+        help="explicit user-approved CV-only refresh of an existing package despite a recorded hard rejection; never applies to a new package or other documents",
+    )
+    parser.add_argument(
         "--lock-timeout-seconds",
         type=float,
         default=0,
@@ -1352,6 +1357,8 @@ def _preflight_preparation(
     )
     if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
         raise ValueError("--allow-low-score-cv-refresh requires --document cv")
+    if getattr(args, "bypass_hard_rejection_cv_refresh", False) and args.document != "cv":
+        raise ValueError("--bypass-hard-rejection-cv-refresh requires --document cv")
 
     profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
     directories = _resolve_explicit_preparation_directories(
@@ -1395,7 +1402,8 @@ def _preflight_preparation(
             if not job:
                 raise ValueError("canonical job description is missing or empty")
             match = _read_yaml_file(directory / "match.yaml", "match analysis")
-            if match.get("hard_rejection") is True:
+            hard_rejection_bypassed = _allows_explicit_hard_rejection_cv_refresh(directory, args)
+            if match.get("hard_rejection") is True and not hard_rejection_bypassed:
                 raise ValueError("match has hard_rejection: true; publication is blocked")
             if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
                 raise ValueError(
@@ -1407,9 +1415,16 @@ def _preflight_preparation(
             ):
                 raise ValueError("match analysis is missing or stale for the selected model profile")
             score = _match_score(directory)
-            if not policy.prepare_score_is_eligible(args.workflow, score) and not _allows_explicit_low_score_cv_refresh(directory, args, score):
+            if (not policy.prepare_score_is_eligible(args.workflow, score)
+                    and not _allows_explicit_low_score_cv_refresh(directory, args, score)
+                    and not hard_rejection_bypassed):
                 raise ValueError(_ineligible_score_message(policy, args.workflow, score))
-            row.update({"ok": True, "score": score, "snapshot": str(snapshot)})
+            row.update({
+                "ok": True,
+                "score": score,
+                "snapshot": str(snapshot),
+                "hard_rejection_bypassed_by_user": hard_rejection_bypassed,
+            })
         except Exception as exc:
             row.update({"ok": False, "reason": str(exc)})
             errors.append(f"{directory.name}: {exc}")
@@ -1635,6 +1650,8 @@ def _run_pending_locked(
         if stage == "prepare":
             if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
                 raise ValueError("--allow-low-score-cv-refresh requires --document cv")
+            if getattr(args, "bypass_hard_rejection_cv_refresh", False) and args.document != "cv":
+                raise ValueError("--bypass-hard-rejection-cv-refresh requires --document cv")
             directories = _resolve_explicit_preparation_directories(
                 registry_dir,
                 selectors,
@@ -1688,6 +1705,7 @@ def _run_pending_locked(
                 if score is None or (
                     not policy.prepare_score_is_eligible(args.workflow, score)
                     and not _allows_explicit_low_score_cv_refresh(directory, args, score)
+                    and not _allows_explicit_hard_rejection_cv_refresh(directory, args)
                 ):
                     continue
                 checker = ApplicationGenerator(
@@ -1748,6 +1766,23 @@ def _allows_explicit_low_score_cv_refresh(
         return False
     match = _read_yaml_file(directory / "match.yaml", "match analysis")
     return match.get("recommendation") == "possible_match" and match.get("hard_rejection") is False
+
+
+def _allows_explicit_hard_rejection_cv_refresh(directory: Path, args: argparse.Namespace) -> bool:
+    """Permit only a user-authorized refresh of a selected, existing CV.
+
+    The match remains a hard rejection in the canonical record.  This narrowly opens
+    a truthful CV refresh for a user who knowingly wants to pursue it; it never makes
+    the vacancy eligible for a new package, a different document, or automation.
+    """
+    if not getattr(args, "bypass_hard_rejection_cv_refresh", False):
+        return False
+    if args.document != "cv":
+        raise ValueError("--bypass-hard-rejection-cv-refresh requires --document cv")
+    if not op.exists(directory / "application" / "cv.md"):
+        return False
+    match = _read_yaml_file(directory / "match.yaml", "match analysis")
+    return match.get("hard_rejection") is True
 
 
 def _vacancy_status_skips_analysis(directory: Path) -> bool:
