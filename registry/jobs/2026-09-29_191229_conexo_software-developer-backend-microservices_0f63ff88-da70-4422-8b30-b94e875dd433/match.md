@@ -1,39 +1,36 @@
 # Match Analysis
 
-**Score:** 72/100
+**Score:** 76/100
 **Recommendation:** Match
 
-Conexo's recruiter explicitly confirmed by email that candidates with greater experience will be considered, removing the previous seniority blocker. The candidate has direct Go, microservices, event-driven systems, Kubernetes, CI/CD, English and Rome-location alignment. Docker, GitLab, Linux/shell scripting and integration-testing evidence remain incomplete, while the requested RAL target is still unconfirmed.
+Strong technical fit for the Rome hybrid backend and microservices role through demonstrated Go, event-driven systems, Kubernetes, CI/CD, production troubleshooting, and cross-functional delivery. The recruiter confirmed that a more experienced profile may be considered; salary target and several preferred tools remain unknown.
 
 ## Why it matches
 
-- The recruiter explicitly invited the candidate to send a CV despite greater experience.
-- Direct Go, microservices and event-driven-systems background.
-- Direct Kubernetes and CI/CD delivery experience, plus professional English and Rome location.
+- Go backend ownership and microservices experience are directly evidenced.
+- Kubernetes, CI/CD, AWS, monitoring, and production troubleshooting are documented.
+- Event-driven systems, queues, reliability work, and cross-functional delivery are documented.
+- Rome location and English proficiency are compatible with the posting.
 
 ## Gaps
 
-- Docker, GitLab, Linux and shell-scripting evidence is not explicit in the selected candidate sources.
-- Integration-testing, TDD and Kanban evidence is incomplete or absent.
-- The candidate's RAL target has not been confirmed.
+- Docker, GitLab specifically, Linux shell scripting, TDD/Kanban, Kafka, MQTT, InfluxDB, and TimescaleDB are not directly evidenced.
+- Salary target is not provided.
 
 ## Concerns
 
-- The role is hybrid and its office-attendance cadence is not specified.
-- The employer has requested the candidate's RAL target; this should be answered separately and truthfully.
+- The posting initially stated experience up to three years, but the recruiter explicitly confirmed that a more experienced profile may be considered.
+- The role is hybrid rather than remote.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend development with Go, Java, or TypeScript | critical / stated | strong | - Sviluppo di soluzioni backend con Go, Java o TypeScript. | - Go | / |
-| Event-driven microservices | critical / stated | strong | - Progettazione di microservizi event-driven. | - Event-driven systems | / |
-| Docker, Kubernetes, Git, and CI/CD | high / stated | partial | - Conoscenza di Docker, Kubernetes, Git e CI/CD, preferibilmente GitLab. | - Kubernetes | Docker, Git and GitLab are not individually verified in the selected candidate sources. / Present verified Kubernetes and CI/CD experience only; do not claim Docker or GitLab without confirmation. |
-| Unit and integration testing | high / stated | partial | - Esperienza con unit e integration test. | - Increased unit-tests coverage. | Integration-testing experience is not explicitly verified. / Do not claim integration-test depth; provide a concrete example only after candidate confirmation. |
-| Employer consideration of candidates with greater experience | high / stated | strong | prendiamo in considerazione profilo anche con maggior esperienza quindi può inviarmi il suo curriculum. | I'm a highly experienced developer with over 15 years of expertise. | / |
-| Good English | high / stated | strong | - Buona conoscenza dell’inglese. | - **English - Upper-intermediate** | / |
-| Rome hybrid work | high / stated | strong | Sede e modalità di lavoro: Roma, modalità ibrida. | Rome, Italy | The exact office-attendance cadence is unknown. / Confirm the cadence before accepting an interview or offer. |
-| Linux and shell scripting | meaningful / stated | unknown | - Buona conoscenza di Linux e shell scripting. |  | Linux and shell-scripting experience is not explicitly verified. / Ask the candidate only if Conexo requires this evidence before progressing. |
-| TDD or Kanban familiarity | meaningful / stated | unknown | - Familiarità con TDD/Kanban. |  | TDD and Kanban experience is not explicitly verified. / Do not add these terms to the CV without evidence. |
-| RAL target within the published range | meaningful / stated | unknown | Le chiedo la cortesia di indicarmi la sua RAL target. |  | The candidate's RAL target is unconfirmed. / Confirm a truthful target or range before replying to the recruiter. |
-| Kafka, MQTT, InfluxDB, or TimescaleDB | preferred / stated | unknown | Plus: Kafka, MQTT, InfluxDB, TimescaleDB. |  | The optional technologies are not verified in the selected candidate sources. / Do not claim optional technologies without evidence. |
+| Go or Golang backend development | critical / stated | strong | Sviluppo di soluzioni backend con Go, Java o TypeScript. | Go-based backends | / |
+| Microservices and event-driven architecture | critical / stated | strong | Progettazione di microservizi event-driven. | event-driven system | / |
+| Docker, Kubernetes, Git, and CI/CD | high / stated | partial | Conoscenza di Docker, Kubernetes, Git e CI/CD, preferibilmente GitLab. | Kubernetes | Docker, Git, and Linux are not directly stated and CI/CD uses GitHub tooling rather than the preferred GitLab. / Confirm Docker, Git, and GitLab exposure during screening. |
+| Unit and integration testing | high / stated | partial | Esperienza con unit e integration test. | Increased unit-tests coverage. | The profile does not provide detailed recent Go unit and integration testing examples. / Confirm a recent Go testing example during screening. |
+| Experience up to three years, subject to recruiter clarification | high / stated | partial | Profilo ricercato: candidati e candidate con un’esperienza fino a 3 anni. | over 15 years of expertise | The original seniority wording conflicts with the profile, although the recruiter confirmed that a more experienced profile may be considered. / Confirm level and compensation expectations with the recruiter. |
+| English language | high / stated | strong | Buona conoscenza dell’inglese. | Professional Working | The profile contains conflicting English proficiency entries. / Use the conservative professional-working description. |
+| Rome hybrid work location | high / stated | strong | Sede e modalità di lavoro: Roma, modalità ibrida. | Fiumicino, Latium, Italy | Hybrid attendance expectations are not specified. / Confirm onsite cadence before proceeding. |
+| Salary target within stated range | meaningful / stated | unknown | Fascia retributiva: RAL €27.000–€35.000, commisurata alle competenze e all’esperienza. |  | The candidate has not supplied a RAL target. / Obtain the candidate’s target before replying. |
