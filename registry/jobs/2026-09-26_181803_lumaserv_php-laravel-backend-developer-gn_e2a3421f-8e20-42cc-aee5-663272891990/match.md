@@ -1,29 +1,26 @@
 # Match Analysis
 
-**Score:** 80/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Excellent PHP/Laravel backend fit with architecture, API, performance, and ownership evidence; German language and exact work model remain unknown.
+Very strong PHP/Laravel backend fit with architecture, APIs, performance, reliability, and technical ownership; German language and location arrangements are uncertain.
 
 ## Why it matches
 
-- Direct PHP/Laravel experience and backend service ownership.
-- Performance, reliability, CI/CD, AWS, and Kubernetes background.
-- Strong architectural judgment and technical leadership.
+- PHP and Laravel are core candidate technologies with substantial backend and leadership evidence.
+- APIs
+- system design
+- performance optimization
+- databases
+- CI/CD
+- and reliability align closely.
 
 ## Gaps
 
-- German language proficiency is not evidenced.
-- Specific LUMASERV domain experience is not evidenced.
+- German language proficiency and Germany work arrangement are not established.
 
 ## Concerns
 
-- The supplied summary does not establish remote eligibility or language requirements.
-
-## Requirement evidence
-
-| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
-| --- | --- | --- | --- | --- | --- |
-| PHP and Laravel applications/APIs | critical / stated | strong | mit PHP und Laravel Anwendungen, APIs und Services | Laravel | / |
-| German/work model | high / structural | unknown | PHP Laravel Backend Developer [gn] |  | Language and work arrangement are not established. / Confirm both before preparation. |
-| Architecture, quality, and performance ownership | high / stated | strong | Architektur, Qualität und Performance aktiv mitzugestalten | System design | / |
+- The employer's exact language
+- salary
+- and remote policy are not specified in the supplied vacancy.
