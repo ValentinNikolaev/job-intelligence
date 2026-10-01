@@ -2,10 +2,10 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 73
 
 - Found: 49
-- Applied: 16
+- Applied: 18
 - Interview: 2
 - Rejected: 4
 
@@ -13,6 +13,8 @@ Total vacancies: 71
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-01 | [Tabby](../registry/jobs/2026-10-01_125254_tabby_senior-backend-engineer-ii_132dba9d-a998-4994-87e3-3f959beb1e81/) | [Senior Backend Engineer II](../registry/jobs/2026-10-01_125254_tabby_senior-backend-engineer-ii_132dba9d-a998-4994-87e3-3f959beb1e81/job.md) | — | Manual | Applied | 2026-10-01 | [Manual](https://himalayas.app/companies/tabby/jobs/senior-backend-engineer-ii-3596154257) | — | — | — | — | — |
+| 2026-10-01 | [S-PRO](../registry/jobs/2026-10-01_125245_s-pro_senior-php-engineer_239a07f1-0aba-4a69-9f35-ec61ecd4bc20/) | [Senior PHP Engineer](../registry/jobs/2026-10-01_125245_s-pro_senior-php-engineer_239a07f1-0aba-4a69-9f35-ec61ecd4bc20/job.md) | — | Manual | Applied | 2026-10-01 | [Manual](https://himalayas.app/companies/s-pro/jobs/senior-php-engineer) | — | — | — | — | — |
 | 2026-10-01 | [Voodoo](../registry/jobs/2026-10-01_111218_voodoo_senior-backend-engineer-golang-casual-game_19537149-8717-4b77-9f81-4df0b601364d/) | [Senior Backend Engineer (Golang) – Casual Game](../registry/jobs/2026-10-01_111218_voodoo_senior-backend-engineer-golang-casual-game_19537149-8717-4b77-9f81-4df0b601364d/job.md) | España | Adzuna | Found | 2026-10-01 | [Adzuna](https://www.adzuna.es/details/5905193462?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-10-01 | [Block Labs](../registry/jobs/2026-10-01_002954_block-labs_senior-backend-engineer-go_becda159-1447-4289-bc6b-524d9f8c4b51/) | [Senior Backend Engineer (Go)](../registry/jobs/2026-10-01_002954_block-labs_senior-backend-engineer-go_becda159-1447-4289-bc6b-524d9f8c4b51/job.md) | Albania, Bulgaria, Croatia, Greece, Ireland, Italy, Kosovo, Malta, Montenegro, Portugal, Romania, Serbia, Spain | Himalayas | Found | 2026-10-01 | [Himalayas](https://himalayas.app/companies/block-labs/jobs/senior-backend-engineer-go) | — | — | — | — | — |
 | 2026-09-30 | [Akvelon](../registry/jobs/2026-09-30_181231_akvelon_senior-back-end-go-engineer_c51d9df6-7e51-4013-8ad3-6bc67c590856/) | [Senior Back-end (Go) Engineer](../registry/jobs/2026-09-30_181231_akvelon_senior-back-end-go-engineer_c51d9df6-7e51-4013-8ad3-6bc67c590856/job.md) | Canada, Kazakhstan, Poland, Portugal, Serbia | Djinni | Found | 2026-09-30 | [Djinni](https://djinni.co/jobs/851019-senior-back-end-go-engineer/) | — | — | — | — | — |
