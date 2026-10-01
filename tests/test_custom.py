@@ -120,6 +120,43 @@ class CustomCollectorTests(unittest.TestCase):
         self.assertEqual(100, jobs[0].analysis_priority)
         self.assertIn("Build Laravel integrations.", jobs[0].description)
 
+    def test_location_terms_require_italy_eligibility_and_reject_country_only_roles(self) -> None:
+        source = CustomSource(
+            name="acme",
+            company="Acme",
+            board_url="https://careers.acme.test/jobs",
+            title_terms=("backend",),
+            location_terms=("Italy", "Europe", "EMEA"),
+            exclude_location_terms=("Canada only", "UK only"),
+        )
+        page = PageData(
+            json_ld_jobs=(
+                {
+                    "@type": "JobPosting",
+                    "title": "Backend Engineer",
+                    "url": "https://careers.acme.test/jobs/emea",
+                    "description": "Remote across EMEA, including Italy.",
+                },
+                {
+                    "@type": "JobPosting",
+                    "title": "Backend Engineer",
+                    "url": "https://careers.acme.test/jobs/canada",
+                    "description": "Remote across Europe but Canada only.",
+                },
+                {
+                    "@type": "JobPosting",
+                    "title": "Backend Engineer",
+                    "url": "https://careers.acme.test/jobs/us",
+                    "description": "Remote in the United States.",
+                },
+            )
+        )
+
+        jobs = parse_source_page(source, page, 100)
+
+        self.assertEqual(["https://careers.acme.test/jobs/emea"], [job.source_url for job in jobs])
+        self.assertEqual(["Italy", "Europe", "EMEA"], jobs[0].source_metadata["eligible_location_terms"])
+
     def test_fetch_follows_matching_same_site_links_and_seeds(self) -> None:
         self._write_config(
             "\n".join(
@@ -533,6 +570,47 @@ class CustomCollectorTests(unittest.TestCase):
             self.assertIn(name, sources)
             source_urls = {sources[name].board_url, *(seed.url for seed in sources[name].seed_jobs)}
             self.assertIn(url, source_urls)
+
+    def test_default_config_keeps_direct_eu_company_boards_unique(self) -> None:
+        settings = load_settings(DEFAULT_CONFIG_PATH)
+        sources = {source.name: source for source in settings.sources}
+        expected = {
+            "canonical": "https://canonical.com/careers",
+            "docker": "https://www.docker.com/career-openings/",
+            "automattic": "https://automattic.com/work-with-us/jobs/",
+            "shopify": "https://www.shopify.com/careers",
+            "akamai": "https://jobs.akamai.com/",
+            "docusign": "https://careers.docusign.com/",
+            "vast-data": "https://www.vastdata.com/careers",
+            "workiva": "https://www.workiva.com/careers",
+            "buffer": "https://buffer.com/journey",
+            "duckduckgo": "https://duckduckgo.com/hiring",
+            "awesomemotive": "https://awesomemotive.com/careers/",
+        }
+        expected_titles = {
+            "backend",
+            "golang",
+            "php",
+            "laravel",
+            "senior software engineer",
+            "staff software engineer",
+            "lead engineer",
+            "tech lead",
+            "principal engineer",
+            "backend architect",
+            "software architect",
+        }
+
+        for name, url in expected.items():
+            self.assertIn(name, sources)
+            source = sources[name]
+            self.assertEqual(url, source.board_url)
+            self.assertTrue(expected_titles.issubset(source.title_terms))
+            self.assertEqual(("Italy", "Europe", "European Union", "EMEA"), source.location_terms)
+            self.assertIn("US only", source.exclude_location_terms)
+        self.assertEqual(("emeacareers-docusign.icims.com",), sources["docusign"].allowed_job_hosts)
+        for greenhouse_only in ("cloudflare", "abnormal-security", "cloudbeds", "faire"):
+            self.assertNotIn(greenhouse_only, sources)
 
 
 if __name__ == "__main__":

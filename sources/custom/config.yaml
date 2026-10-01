@@ -28,120 +28,106 @@ sources:
     board_url: https://canonical.com/careers
     company_url: https://canonical.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    notes: Official Canonical careers board; role-level eligibility and location remain posting-specific.
+    title_terms: &eu_backend_titles [backend, golang, go engineer, go developer, php, laravel, senior software engineer, staff software engineer, lead engineer, tech lead, principal engineer, backend architect, software architect]
+    location_terms: &italy_eligible_locations [Italy, Europe, European Union, EMEA]
+    exclude_location_terms: &italy_ineligible_locations [US only, U.S. only, United States only, Canada only, UK only, UK-only, United Kingdom only, excluding Italy, except Italy]
+    notes: Official Canonical careers board; only role pages with an Italy, Europe, European Union, or EMEA eligibility signal are emitted.
   - name: docker
     company: Docker
     board_url: https://www.docker.com/career-openings/
     company_url: https://www.docker.com
     source_type: company careers page / Ashby
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     allowed_job_hosts:
       - jobs.ashbyhq.com
-    notes: Official Docker openings page; follows only linked Ashby role pages.
+    notes: Official Docker openings page; follows only linked Ashby role pages with an Italy-compatible eligibility signal.
   - name: automattic
     company: Automattic
     board_url: https://automattic.com/work-with-us/jobs/
     company_url: https://automattic.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    notes: Official Automattic jobs page; general applications are not vacancies.
-  - name: cloudflare
-    company: Cloudflare
-    board_url: https://www.cloudflare.com/careers/jobs/
-    company_url: https://www.cloudflare.com
-    source_type: company careers page / Greenhouse
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    allowed_job_hosts:
-      - boards.greenhouse.io
-    notes: Official Cloudflare jobs board; role locations and work authorization are verified per posting.
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
+    notes: Official Automattic jobs page; general applications are not vacancies and only Italy-compatible roles are emitted.
   - name: shopify
     company: Shopify
     board_url: https://www.shopify.com/careers
     company_url: https://www.shopify.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    notes: Official Shopify careers board; retains only named technical roles.
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
+    notes: Official Shopify careers board; retains only named Italy-compatible technical roles.
   - name: akamai
     company: Akamai
     board_url: https://jobs.akamai.com/
     company_url: https://www.akamai.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     notes: Official Akamai jobs board; may be unavailable to non-browser collectors.
   - name: docusign
     company: DocuSign
     board_url: https://careers.docusign.com/
     company_url: https://www.docusign.com
     source_type: company careers page / iCIMS
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     allowed_job_hosts:
-      - uscareers-docusign.icims.com
-      - canadacareers-docusign.icims.com
       - emeacareers-docusign.icims.com
-      - latamcareers-docusign.icims.com
-      - apjcareers-docusign.icims.com
-    notes: Official DocuSign career hub; country board and role eligibility remain posting-specific.
+    notes: Official DocuSign career hub; only EMEA role pages with an Italy-compatible eligibility signal are followed.
   - name: vast-data
     company: VAST Data
     board_url: https://www.vastdata.com/careers
     company_url: https://www.vastdata.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    notes: Official VAST Data careers page.
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
+    notes: Official VAST Data careers page; only Italy-compatible technical roles are emitted.
   - name: workiva
     company: Workiva
     board_url: https://www.workiva.com/careers
     company_url: https://www.workiva.com
     source_type: company careers page / Workday
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     allowed_job_hosts:
       - workiva.wd503.myworkdayjobs.com
-    notes: Official Workiva careers page; follows its linked Workday roles.
-  - name: abnormal-security
-    company: Abnormal Security
-    board_url: https://abnormal.ai/careers/open-roles
-    company_url: https://abnormal.ai
-    source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    notes: Official Abnormal Security open-roles page.
-  - name: cloudbeds
-    company: Cloudbeds
-    board_url: https://www.cloudbeds.com/careers/
-    company_url: https://www.cloudbeds.com
-    source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    notes: Official Cloudbeds careers page.
+    notes: Official Workiva careers page; follows only linked Italy-compatible Workday roles.
   - name: buffer
     company: Buffer
     board_url: https://buffer.com/journey
     company_url: https://buffer.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     notes: Official Buffer journey and careers page; general culture content is not emitted as a vacancy.
   - name: duckduckgo
     company: DuckDuckGo
     board_url: https://duckduckgo.com/hiring
     company_url: https://duckduckgo.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     notes: Official DuckDuckGo hiring page; collector availability depends on the site's TLS and bot policy.
   - name: awesomemotive
     company: Awesome Motive
     board_url: https://awesomemotive.com/careers/
     company_url: https://awesomemotive.com
     source_type: company careers page
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
+    title_terms: *eu_backend_titles
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
     notes: Official Awesome Motive careers page; collector availability depends on the site's bot policy.
-  - name: faire
-    company: Faire
-    board_url: https://www.faire.com/careers
-    company_url: https://www.faire.com
-    source_type: company careers page / Greenhouse
-    title_terms: [backend, software engineer, software developer, platform engineer, cloud engineer, infrastructure engineer, site reliability, golang, php]
-    allowed_job_hosts:
-      - boards.greenhouse.io
-    notes: Official Faire careers page; follows only linked Greenhouse role pages.
   - name: cubbit
     company: Cubbit S.r.l.
     board_url: https://www.cubbit.io/careers

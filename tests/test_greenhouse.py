@@ -181,6 +181,24 @@ class GreenhouseTests(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     GreenhouseCollector({"GREENHOUSE_CONFIG": str(self.config_path)})
 
+    def test_default_config_uses_greenhouse_only_for_client_rendered_company_boards(self) -> None:
+        settings = GreenhouseCollector({}).settings
+        boards = {board.token: board.company for board in settings.boards}
+
+        self.assertEqual(
+            {
+                "cloudflare": "Cloudflare",
+                "faire": "Faire",
+                "abnormalsecurity": "Abnormal Security",
+                "cloudbeds": "Cloudbeds",
+            },
+            {token: boards[token] for token in ("cloudflare", "faire", "abnormalsecurity", "cloudbeds")},
+        )
+        self.assertEqual(len(boards), len(settings.boards))
+        self.assertEqual(("Italy", "Europe", "European Union", "EMEA"), settings.filters.location_terms)
+        for term in ("golang", "php", "laravel", "backend architect", "software architect"):
+            self.assertIn(term, settings.filters.title_terms)
+
 
 if __name__ == "__main__":
     unittest.main()

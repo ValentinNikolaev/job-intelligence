@@ -26,6 +26,11 @@ sources:
     # Exact external ATS hosts that the board is allowed to link to.
     allowed_job_hosts:
       - jobs.workable.com
+    # Role content must make Italy eligibility explicit. This can be an Italy,
+    # Europe, European Union, or EMEA signal; explicit US/Canada/UK-only
+    # restrictions suppress the role.
+    location_terms: [Italy, Europe, European Union, EMEA]
+    exclude_location_terms: [US only, Canada only, UK only]
     seed_jobs:
       - title: Senior PHP Backend Developer
         url: https://example.test/careers/senior-php-backend-developer
@@ -47,6 +52,14 @@ Markdown, so downstream validation and publishing remain deterministic.
 generic application form as a seed unless it represents a real current vacancy.
 Pages that require JavaScript rendering may produce no vacancies until their
 server-rendered HTML exposes matching links or JSON-LD.
+
+`location_terms` is an optional role-level allowlist. When configured, the
+title, visible job-page text, and JSON-LD location must contain one of those
+terms. `exclude_location_terms` rejects an explicit conflicting restriction
+even when an allowlist term is also present. Use these fields for a location
+policy; do not label every role on a global company page as remote or Italy
+eligible. A worldwide role is emitted only when its page also makes Italy or
+an allowed European region explicit.
 
 The board, every seed, and every followed detail page fail independently. A
 failed board page does not suppress explicit seeds, while a failed detail page

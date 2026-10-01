@@ -36,8 +36,6 @@ boards:
   company: Ashby
 - name: codesphere
   company: Codesphere
-- name: docker
-  company: Docker
 - name: hopper
   company: Hopper
 - name: jimdo.com

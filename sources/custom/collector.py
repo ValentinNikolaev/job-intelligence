@@ -49,6 +49,8 @@ class CustomSource:
     title_terms: tuple[str, ...] = ()
     heading_title_terms: tuple[str, ...] = ()
     exclude_title_terms: tuple[str, ...] = ()
+    location_terms: tuple[str, ...] = ()
+    exclude_location_terms: tuple[str, ...] = ()
     extract_headings: bool = False
     allowed_job_hosts: tuple[str, ...] = ()
     seed_jobs: tuple[SeedJob, ...] = ()
@@ -261,7 +263,9 @@ class CustomCollector:
                     detail: PageData | None = None
                     try:
                         detail = self._fetch_page_logged(source, url, "detail", result)
-                        result.jobs.append(normalize_linked_job(source, label, url, detail, self.settings.analysis_priority))
+                        job = normalize_linked_job(source, label, url, detail, self.settings.analysis_priority)
+                        if job is not None:
+                            result.jobs.append(job)
                     except Exception as exc:
                         if detail is not None:
                             self._record_failure(source, url, "detail_parse", exc, 0, result)
@@ -276,7 +280,9 @@ class CustomCollector:
                         if board_page is not None and _canonicalize_url(seed.url) == _canonicalize_url(source.board_url)
                         else self._fetch_page_logged(source, seed.url, "seed", result)
                     )
-                    result.jobs.append(normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority))
+                    job = normalize_seed_job(source, seed, seed_page, self.settings.analysis_priority)
+                    if job is not None:
+                        result.jobs.append(job)
                     result.completed = True
                 except Exception as exc:
                     if seed_page is not None:
@@ -287,8 +293,10 @@ class CustomCollector:
                     normalized_heading = _normalized_title(heading)
                     if normalized_heading in existing_titles or not _heading_title_allowed(source, heading):
                         continue
-                    result.jobs.append(normalize_inline_job(source, heading, board_page, self.settings.analysis_priority))
-                    existing_titles.add(normalized_heading)
+                    job = normalize_inline_job(source, heading, board_page, self.settings.analysis_priority)
+                    if job is not None:
+                        result.jobs.append(job)
+                        existing_titles.add(normalized_heading)
         except Exception as exc:
             self._record_failure(source, source.board_url, "source_parse", exc, 0, result)
         finally:
@@ -374,6 +382,9 @@ def parse_source_page(source: CustomSource, page: PageData, analysis_priority: i
             continue
         source_url = _job_url(payload) or page.canonical_url or source.board_url
         description = html_to_markdown(_clean_string(payload.get("description"))) or page.description
+        location = _json_ld_location(payload) or source.location
+        if not _location_allowed(source, title, description, location):
+            continue
         jobs.append(
             NormalizedJob(
                 source="custom",
@@ -383,7 +394,7 @@ def parse_source_page(source: CustomSource, page: PageData, analysis_priority: i
                 company=_json_ld_company(payload) or source.company,
                 company_url=source.company_url,
                 description=description,
-                location=_json_ld_location(payload) or source.location,
+                location=location,
                 remote=source.remote,
                 employment_type=_clean_string(payload.get("employmentType")),
                 published_at=_clean_string(payload.get("datePosted")),
@@ -399,9 +410,11 @@ def normalize_seed_job(
     seed: SeedJob,
     page: PageData,
     analysis_priority: int,
-) -> NormalizedJob:
+) -> NormalizedJob | None:
     title = seed.title.strip()
     description = page.description or f"{title} at {source.company}."
+    if not _location_allowed(source, title, description, source.location):
+        return None
     return NormalizedJob(
         source="custom",
         source_job_id=_job_identity(seed.url),
@@ -422,8 +435,10 @@ def normalize_inline_job(
     title: str,
     page: PageData,
     analysis_priority: int,
-) -> NormalizedJob:
+) -> NormalizedJob | None:
     description = page.description or f"{title} at {source.company}."
+    if not _location_allowed(source, title, description, source.location):
+        return None
     return NormalizedJob(
         source="custom",
         source_job_id=_inline_job_identity(source.board_url, title),
@@ -445,10 +460,12 @@ def normalize_linked_job(
     url: str,
     page: PageData,
     analysis_priority: int,
-) -> NormalizedJob:
+) -> NormalizedJob | None:
     description = page.description
     title = _best_title(label, page.title, description, source, url)
     description = description or f"{title} at {source.company}."
+    if not _location_allowed(source, title, description, source.location):
+        return None
     return NormalizedJob(
         source="custom",
         source_job_id=_job_identity(url),
@@ -520,6 +537,8 @@ def _load_source(
         "title_terms",
         "heading_title_terms",
         "exclude_title_terms",
+        "location_terms",
+        "exclude_location_terms",
         "extract_headings",
         "allowed_job_hosts",
         "seed_jobs",
@@ -533,6 +552,8 @@ def _load_source(
     terms = tuple(_string_list(payload.get("title_terms"))) or default_terms
     heading_terms = tuple(_string_list(payload.get("heading_title_terms")))
     excludes = default_excludes + tuple(_string_list(payload.get("exclude_title_terms")))
+    location_terms = tuple(_string_list(payload.get("location_terms")))
+    excluded_location_terms = tuple(_string_list(payload.get("exclude_location_terms")))
     extract_headings = payload.get("extract_headings", False)
     if not isinstance(extract_headings, bool):
         raise ValueError(f"{name} extract_headings must be true or false")
@@ -564,6 +585,8 @@ def _load_source(
         title_terms=terms,
         heading_title_terms=heading_terms,
         exclude_title_terms=excludes,
+        location_terms=location_terms,
+        exclude_location_terms=excluded_location_terms,
         extract_headings=extract_headings,
         allowed_job_hosts=allowed_hosts,
         seed_jobs=seeds,
@@ -616,6 +639,22 @@ def _terms_allowed(source: CustomSource, title: str, terms: tuple[str, ...]) -> 
     if any(term.casefold() in searchable for term in source.exclude_title_terms):
         return False
     return any(term.casefold() in searchable for term in terms)
+
+
+def _location_allowed(
+    source: CustomSource,
+    title: str,
+    description: str,
+    location: str | None,
+) -> bool:
+    if not source.location_terms and not source.exclude_location_terms:
+        return True
+    searchable = "\n".join(part for part in (title, description, location or "") if part).casefold()
+    if any(term.casefold() in searchable for term in source.exclude_location_terms):
+        return False
+    return not source.location_terms or any(
+        term.casefold() in searchable for term in source.location_terms
+    )
 
 
 def _best_title(
@@ -682,6 +721,10 @@ def _metadata(source: CustomSource) -> dict[str, Any]:
     ):
         if value:
             metadata[key] = value
+    if source.location_terms:
+        metadata["eligible_location_terms"] = list(source.location_terms)
+    if source.exclude_location_terms:
+        metadata["excluded_location_terms"] = list(source.exclude_location_terms)
     return metadata
 
 

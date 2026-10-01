@@ -7,16 +7,18 @@ filters:
   remote_only: true
   location_terms:
     - Italy
-    - Germany
-    - Netherlands
     - Europe
     - European Union
     - EMEA
-    - Worldwide
-    - Anywhere
-    - Global
   title_terms:
     - backend
+    - backend architect
+    - golang
+    - go engineer
+    - go developer
+    - laravel
+    - php
+    - software architect
     - software engineer
     - software developer
     - platform engineer
