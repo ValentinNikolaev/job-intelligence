@@ -1,0 +1,33 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-01T13:42:53Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Block Labs",
+      "country_codes": [
+        "AL",
+        "BG",
+        "HR",
+        "GR",
+        "IE",
+        "IT",
+        "XK",
+        "MT",
+        "ME",
+        "PT",
+        "RO",
+        "RS",
+        "ES"
+      ],
+      "directory": "2026-10-01_002954_block-labs_senior-backend-engineer-go_becda159-1447-4289-bc6b-524d9f8c4b51",
+      "score": 88,
+      "title": "Senior Backend Engineer (Go)",
+      "url": "https://himalayas.app/companies/block-labs/jobs/senior-backend-engineer-go",
+      "vacancy_id": "becda159-1447-4289-bc6b-524d9f8c4b51"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d498374c20262e8d79e7f3fb78473183110f1c7b08ab067ff1f880de297408d8",
+  "schema_version": 2
+}
