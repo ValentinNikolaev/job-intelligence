@@ -19,14 +19,18 @@ model_profiles:
     model: gpt-5.6-terra
     reasoning: high
     model_label: codex:gpt-5.6-terra:high
+  sol_medium:
+    model: gpt-6-sol
+    reasoning: medium
+    model_label: codex:gpt-6-sol:medium
 workflows:
   analyze:
     default_profile: luna_medium
-    allowed_profiles: [luna_medium, terra_medium, terra_high]
+    allowed_profiles: [luna_medium, terra_medium, terra_high, sol_medium]
     purpose: High-volume vacancy scoring and initial selection.
   prepare:
     default_profile: terra_medium
-    allowed_profiles: [terra_medium, terra_high, luna_medium]
+    allowed_profiles: [terra_medium, terra_high, luna_medium, sol_medium]
     purpose: >
       Application package workflow for one to ten vacancies explicitly selected
       by the user through vacancy IDs or registry directories. Keep every package
