@@ -1,0 +1,89 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-02T14:43:49Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Wooden Sword Games",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_wooden-sword-games_senior-php-developer-game-backend_cb978155-40d1-43dd-b93e-d8f5c42cbd1d",
+      "score": 78,
+      "title": "Senior PHP Developer (Game Backend)",
+      "url": "https://jobs.dou.ua/companies/wooden-sword/vacancies/375387/",
+      "vacancy_id": "cb978155-40d1-43dd-b93e-d8f5c42cbd1d"
+    },
+    {
+      "company": "SIXT",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_sixt_senior-middle-backend-engineer_2b08a76f-f956-417a-857f-f9a8ebc61e9f",
+      "score": 90,
+      "title": "Senior\\Middle Backend Engineer",
+      "url": "https://jobs.dou.ua/companies/sixt/vacancies/350228/",
+      "vacancy_id": "2b08a76f-f956-417a-857f-f9a8ebc61e9f"
+    },
+    {
+      "company": "Netpeak",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_netpeak_senior-full-stack-developer-php-symfony-vue-js_9567720c-184a-4940-9562-8f6382bcf401",
+      "score": 76,
+      "title": "Senior Full-Stack Developer (PHP/Symfony + Vue.js)",
+      "url": "https://jobs.dou.ua/companies/netpeak/vacancies/375331/",
+      "vacancy_id": "9567720c-184a-4940-9562-8f6382bcf401"
+    },
+    {
+      "company": "Frozeneon",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_frozeneon_middle-php-backend-developer_bf97f814-ae4d-4ba8-90eb-41f54bcc54e2",
+      "score": 79,
+      "title": "Middle PHP Backend Developer",
+      "url": "https://jobs.dou.ua/companies/frozeneon/vacancies/371043/",
+      "vacancy_id": "bf97f814-ae4d-4ba8-90eb-41f54bcc54e2"
+    },
+    {
+      "company": "Samsara",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-10-02_121451_samsara_sr-software-engineer-ii-tech-lead-agentic-platfo_acdf083d-44be-424b-bbc5-9d8d825bf446",
+      "score": 72,
+      "title": "Sr. Software Engineer II / Tech lead, Agentic Platform (Poland, Remote, B2B)",
+      "url": "https://jobicy.com/jobs/154396-sr-software-engineer-ii-tech-lead-agentic-platform-poland-remote-b2b",
+      "vacancy_id": "acdf083d-44be-424b-bbc5-9d8d825bf446"
+    },
+    {
+      "company": "QuickNode",
+      "country_codes": [
+        "PT",
+        "US"
+      ],
+      "directory": "2026-10-02_121451_quicknode_senior-software-engineer-go_d26931ae-d6ec-4db8-a4d1-52901e6dce5a",
+      "score": 84,
+      "title": "Senior Software Engineer - Go",
+      "url": "https://jobicy.com/jobs/154387-senior-software-engineer-go-2",
+      "vacancy_id": "d26931ae-d6ec-4db8-a4d1-52901e6dce5a"
+    },
+    {
+      "company": "Chainguard",
+      "country_codes": [
+        "GB",
+        "US"
+      ],
+      "directory": "2026-10-02_121451_chainguard_senior-software-engineer-ai-cicd_e074cd36-305f-46fd-846f-f39937439e99",
+      "score": 82,
+      "title": "Senior Software Engineer (AI CICD)",
+      "url": "https://jobicy.com/jobs/149855-senior-software-engineer-ai-cicd",
+      "vacancy_id": "e074cd36-305f-46fd-846f-f39937439e99"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "e41974f43c241c70c6d82c99476fc5c2be2a0241d7361c63e6d9920c34f5be2d",
+  "schema_version": 2
+}
