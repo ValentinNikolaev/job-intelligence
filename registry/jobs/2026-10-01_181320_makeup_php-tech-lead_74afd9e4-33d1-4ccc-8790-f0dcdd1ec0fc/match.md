@@ -1,20 +1,27 @@
 # Match Analysis
 
-**Score:** 85/100
+**Score:** 86/100
 **Recommendation:** Strong Match
 
-Very strong match for a hands-on PHP Tech Lead role: confirmed leadership, Laravel/Symfony, production architecture, CI/CD, observability, and high-load business systems align closely.
+Strong technical-lead fit with deep PHP, architecture, delivery, mentoring, and operational evidence; the retail domain is learnable.
 
 ## Why it matches
 
-- Confirmed Technical Lead experience and leadership of backend engineers.
-- Strong PHP, Laravel, Symfony, SQL, queues, CI/CD, cloud, and production reliability evidence.
-- Direct experience with high-load, e-commerce-adjacent, and business-critical systems.
+- PHP leadership
+- architecture and delivery ownership
+- mentoring and reliability
 
 ## Gaps
 
-- Exact current team size and Docker depth are not fully specified in the profile.
+- MAKEUP-specific commerce and product context not evidenced
 
 ## Concerns
 
-- Remote eligibility is stated, but the practical location and employment arrangement should be confirmed.
+- Confirm team size and hands-on versus coordination balance
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| PHP technical leadership | critical / stated | strong | PHP Tech Lead | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| Team delivery and technical decisions | high / structural | strong | Tech Lead | Technical Lead | / |

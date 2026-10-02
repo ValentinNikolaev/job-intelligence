@@ -1,21 +1,30 @@
 # Match Analysis
 
-**Score:** 77/100  
-**Recommendation:** Match
+**Score:** 87/100
+**Recommendation:** Strong Match
 
-Good lead-backend fit through Go, architecture, mentoring and AWS; Ukrainian vacancy text and remote details require confirmation.
+Excellent lead-backend alignment with Go, architecture, small-team mentoring, AWS/Kubernetes, observability, and product-impact ownership.
 
 ## Why it matches
 
-- Go production backend
-- technical leadership
-- architecture and mentoring
+- Go leadership
+- high-load/reliability mindset
+- Kubernetes/AWS
+- mentoring
 
 ## Gaps
 
-- Node.js is not established
-- exact PostgreSQL/Redis and Kubernetes depth are not explicit
+- Redis
+- gaming/iGaming
+- and ClickHouse are not explicit
 
 ## Concerns
 
-- Language and remote arrangement are unclear from the supplied text
+- Confirm Barcelona/Warsaw hybrid expectation versus remote from Italy
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Technical lead and active backend coding | critical / stated | strong | близько 60–70% часу — це безпосереднє написання коду | Directly managed 10 developers. Influenced all areas of Product Development | / |
+| Go, distributed systems, and operations | high / stated | strong | Golang | Go | / |

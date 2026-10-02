@@ -1,28 +1,28 @@
 # Match Analysis
 
-**Score:** 79/100
+**Score:** 78/100
 **Recommendation:** Match
 
-Good Go backend fit with current support automation, APIs, reliability, and cross-functional delivery evidence; health-domain, exact cloud, and any security-specific requirements need confirmation.
+Good Go/backend fit with unusually relevant support automation and health-product adjacency; the exact level and AI-health requirements need clarification.
 
 ## Why it matches
 
-- Current Go ownership of a support automation platform is directly relevant.
-- API orchestration, retries, monitoring, throughput, and measurable operational outcomes are evidenced.
-- AWS, Kubernetes, event-driven systems, and CI/CD appear in the candidate profile.
+- Go
+- API integrations
+- support automation
+- reliability
 
 ## Gaps
 
-- The profile does not establish every health-platform or named Go framework requirement.
+- Specific health-platform and AI/ML engineering depth is limited
 
 ## Concerns
 
-- Any mandatory timezone, English, or domain-specific healthcare experience is not fully specified.
+- Role level may be below the candidate's leadership profile
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go backend engineering | critical / stated | strong | GoLang Engineer | Engineer a unified API orchestration layer | / |
-| Distributed APIs and integrations | high / stated | strong | GoLang Engineer | Engineer a unified API orchestration layer | / |
-| Production reliability and observability | high / structural | strong | GoLang Engineer | fallback logic, retries, and | / |
+| Go engineering | critical / stated | strong | GoLang Engineer | Go | / |
+| Production automation and integrations | high / structural | strong | GoLang Engineer | OpenAI | / |

@@ -1,0 +1,181 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-02T22:50:51Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "SIXT",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_sixt_senior-middle-backend-engineer_2b08a76f-f956-417a-857f-f9a8ebc61e9f",
+      "score": 88,
+      "title": "Senior\\Middle Backend Engineer",
+      "url": "https://jobs.dou.ua/companies/sixt/vacancies/350228/",
+      "vacancy_id": "2b08a76f-f956-417a-857f-f9a8ebc61e9f"
+    },
+    {
+      "company": "Netpeak",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_netpeak_senior-full-stack-developer-php-symfony-vue-js_9567720c-184a-4940-9562-8f6382bcf401",
+      "score": 84,
+      "title": "Senior Full-Stack Developer (PHP/Symfony + Vue.js)",
+      "url": "https://jobs.dou.ua/companies/netpeak/vacancies/375331/",
+      "vacancy_id": "9567720c-184a-4940-9562-8f6382bcf401"
+    },
+    {
+      "company": "Frozeneon",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_121447_frozeneon_middle-php-backend-developer_bf97f814-ae4d-4ba8-90eb-41f54bcc54e2",
+      "score": 72,
+      "title": "Middle PHP Backend Developer",
+      "url": "https://jobs.dou.ua/companies/frozeneon/vacancies/371043/",
+      "vacancy_id": "bf97f814-ae4d-4ba8-90eb-41f54bcc54e2"
+    },
+    {
+      "company": "Dillo",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-02_002603_dillo_senior-php-developer-php-vue-mysql-stable-e-comm_53f5713a-ed03-416a-b57e-7ed3738c2c69",
+      "score": 86,
+      "title": "Senior PHP Developer (PHP, Vue, MySQL) – Stable e-Commerce SaaS",
+      "url": "https://djinni.co/jobs/825575-senior-php-developer-php-vue-mysql-stable-e-c/",
+      "vacancy_id": "53f5713a-ed03-416a-b57e-7ed3738c2c69"
+    },
+    {
+      "company": "Nova Digital",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-01_181320_nova-digital_php-developer-mobile-app-nova-post_f18fbede-63f0-4a03-add1-90909fc9db73",
+      "score": 79,
+      "title": "PHP Developer (Mobile App Nova Post)",
+      "url": "https://jobs.dou.ua/companies/nova-digital/vacancies/371133/",
+      "vacancy_id": "f18fbede-63f0-4a03-add1-90909fc9db73"
+    },
+    {
+      "company": "MAKEUP",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-01_181320_makeup_php-tech-lead_74afd9e4-33d1-4ccc-8790-f0dcdd1ec0fc",
+      "score": 86,
+      "title": "PHP Tech Lead",
+      "url": "https://jobs.dou.ua/companies/makeup/vacancies/375291/",
+      "vacancy_id": "74afd9e4-33d1-4ccc-8790-f0dcdd1ec0fc"
+    },
+    {
+      "company": "VITALOOP AI Health Platform",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-01_181318_vitaloop-ai-health-platform_golang-engineer_d4b1c7bb-60dd-4a93-b60a-c0aacb88a56c",
+      "score": 78,
+      "title": "GoLang Engineer",
+      "url": "https://djinni.co/jobs/851231-golang-engineer/",
+      "vacancy_id": "d4b1c7bb-60dd-4a93-b60a-c0aacb88a56c"
+    },
+    {
+      "company": "Akvelon",
+      "country_codes": [
+        "CA",
+        "KZ",
+        "PL",
+        "PT",
+        "RS"
+      ],
+      "directory": "2026-09-30_181231_akvelon_senior-back-end-go-engineer_c51d9df6-7e51-4013-8ad3-6bc67c590856",
+      "score": 83,
+      "title": "Senior Back-end (Go) Engineer",
+      "url": "https://djinni.co/jobs/851019-senior-back-end-go-engineer/",
+      "vacancy_id": "c51d9df6-7e51-4013-8ad3-6bc67c590856"
+    },
+    {
+      "company": "Kozak Agency",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_182140_kozak-agency_senior-go-developer_fcd4d0fd-3545-40b7-a089-b420431896b8",
+      "score": 77,
+      "title": "Senior Go developer",
+      "url": "https://djinni.co/jobs/850826-senior-go-developer/",
+      "vacancy_id": "fcd4d0fd-3545-40b7-a089-b420431896b8"
+    },
+    {
+      "company": "ZFORT Group",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122627_zfort-group_software-engineer-authentication-identity-manage_da522785-2488-40d0-bb6b-760d6d2150b9",
+      "score": 81,
+      "title": "Software Engineer — Authentication & Identity Management",
+      "url": "https://jobs.dou.ua/companies/zfort/vacancies/374903/",
+      "vacancy_id": "da522785-2488-40d0-bb6b-760d6d2150b9"
+    },
+    {
+      "company": "NeverEnding",
+      "country_codes": [
+        "UA",
+        "ES",
+        "PL"
+      ],
+      "directory": "2026-09-29_122627_neverending_lead-backend-engineer_a741d221-c535-47a7-9f72-6e963bc7d56f",
+      "score": 88,
+      "title": "Lead Backend Engineer",
+      "url": "https://jobs.dou.ua/companies/neverending/vacancies/368667/",
+      "vacancy_id": "a741d221-c535-47a7-9f72-6e963bc7d56f"
+    },
+    {
+      "company": "Hurma System",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122627_hurma-system_full-stack-developer_8f00cee8-1f32-4abc-8d70-d6a1735180f5",
+      "score": 73,
+      "title": "Full Stack Developer",
+      "url": "https://jobs.dou.ua/companies/hurma-system/vacancies/311366/",
+      "vacancy_id": "8f00cee8-1f32-4abc-8d70-d6a1735180f5"
+    },
+    {
+      "company": "NeverEnding",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122625_neverending_lead-backend-engineer_d40f4db3-c9e7-40ed-84a5-4e78553426ad",
+      "score": 87,
+      "title": "Lead Backend Engineer",
+      "url": "https://djinni.co/jobs/821185-lead-backend-engineer/",
+      "vacancy_id": "d40f4db3-c9e7-40ed-84a5-4e78553426ad"
+    },
+    {
+      "company": "GenSoft",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122625_gensoft_senior-go-engineer-security-critical-distributed_927da7d6-df59-4e7d-95fa-e345d85f32f2",
+      "score": 80,
+      "title": "Senior Go Engineer (Security-Critical Distributed Systems)",
+      "url": "https://djinni.co/jobs/850734-senior-go-engineer-security-critical-distribu/",
+      "vacancy_id": "927da7d6-df59-4e7d-95fa-e345d85f32f2"
+    },
+    {
+      "company": "FlexSolution",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-29_122625_flexsolution_senior-golang-engineer-cryptosigning_3c4c25cc-3271-473b-b118-1afd88b95ea7",
+      "score": 81,
+      "title": "Senior Golang Engineer (Cryptosigning)",
+      "url": "https://djinni.co/jobs/850730-senior-golang-engineer-cryptosigning/",
+      "vacancy_id": "3c4c25cc-3271-473b-b118-1afd88b95ea7"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "84a3e2b7dcb6dabc272123f725781e26f3f728e48f1e3caf58df3300c3b5e4f0",
+  "schema_version": 2
+}

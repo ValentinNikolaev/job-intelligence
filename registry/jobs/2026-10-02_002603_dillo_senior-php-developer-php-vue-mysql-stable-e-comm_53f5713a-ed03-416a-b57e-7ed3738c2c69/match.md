@@ -1,20 +1,27 @@
 # Match Analysis
 
-**Score:** 82/100
+**Score:** 86/100
 **Recommendation:** Strong Match
 
-Strong PHP backend fit with Laravel/Symfony-adjacent experience, production ownership, SQL, integrations, and technical leadership; remote and language details remain partly unknown.
+Very strong match for senior PHP e-commerce backend work, with direct MySQL, Vue-adjacent product, performance, and reliability evidence.
 
 ## Why it matches
 
-- Extensive PHP backend experience with Laravel and Symfony, including production systems.
-- Evidence of technical leadership, architecture decisions, performance work, and incident response.
-- Direct e-commerce and business-critical platform background.
+- PHP/Laravel
+- MySQL and high-volume systems
+- e-commerce and performance optimization
 
 ## Gaps
 
-- Vue experience is not established in the candidate profile.
+- Exact Vue ownership and Dillo-specific domain details are not established
 
 ## Concerns
 
-- The posting does not clearly state remote eligibility or working-location constraints.
+- Source posting may change availability over time
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Senior PHP backend experience | critical / stated | strong | Senior PHP Developer (PHP, Vue, MySQL) | PHP | / |
+| MySQL and scalable e-commerce systems | high / stated | strong | MySQL | MySQL | / |

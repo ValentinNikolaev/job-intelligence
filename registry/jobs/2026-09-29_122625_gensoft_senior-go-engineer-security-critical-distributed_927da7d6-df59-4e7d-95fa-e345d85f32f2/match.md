@@ -1,20 +1,29 @@
 # Match Analysis
 
-**Score:** 84/100  
+**Score:** 80/100
 **Recommendation:** Strong Match
 
-Excellent Go, distributed-systems, reliability and security overlap; applied cryptography depth and North American-hours overlap need confirmation.
+Strong Go ownership and distributed-reliability fit for a security-critical service; applied cryptography and MPC are material but unverified gaps.
 
 ## Why it matches
 
 - Go production systems
-- concurrency and resilience
-- security-sensitive backend work
+- failure recovery and observability
+- security/compliance mindset
 
 ## Gaps
 
-- Applied cryptography and mobile SDK bindings are not explicitly established
+- Applied cryptography
+- MPC/threshold signatures
+- and mobile SDK bindings not evidenced
 
 ## Concerns
 
-- UK and North American working-hour overlap may reduce compatibility
+- Security-critical ownership raises a high verification bar
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Production Go and distributed systems | critical / stated | strong | Strong hands-on production experience with Go | Go | / |
+| Security engineering | high / stated | partial | Practical security engineering: authentication, encrypted storage, sensitive data handling and safe logging. | system audits | Cryptographic signing experience is not explicit. / Use interview to verify applied cryptography and secure-storage decisions. |

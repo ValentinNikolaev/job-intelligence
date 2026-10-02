@@ -1,21 +1,28 @@
 # Match Analysis
 
-**Score:** 77/100  
-**Recommendation:** Match
+**Score:** 88/100
+**Recommendation:** Strong Match
 
-Good lead-backend fit through Go, architecture, mentoring and AWS; Ukrainian vacancy text and remote details require confirmation.
+Excellent fit for a hands-on lead backend role: Go/PHP, architecture, mentoring, high-load reliability, and direct stakeholder influence are well supported.
 
 ## Why it matches
 
-- Go production backend
-- technical leadership
-- architecture and mentoring
+- Technical leadership
+- Go/PHP backend
+- architecture and reliability
+- mentoring
 
 ## Gaps
 
-- Node.js is not established
-- exact PostgreSQL/Redis and Kubernetes depth are not explicit
+- Gaming/iGaming and specific high-load tools are not established
 
 ## Concerns
 
-- Language and remote arrangement are unclear from the supplied text
+- Confirm expected 60-70% coding balance and timezone
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Hands-on lead backend engineering | critical / stated | strong | Lead Backend Engineer | Technical Lead | / |
+| Go, AWS, Docker/Kubernetes | high / stated | strong | Golang | Kubernetes | / |

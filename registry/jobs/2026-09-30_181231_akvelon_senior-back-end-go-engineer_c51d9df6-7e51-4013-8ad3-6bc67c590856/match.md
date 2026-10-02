@@ -1,27 +1,27 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 83/100
+**Recommendation:** Strong Match
 
-Strong Go backend and production-systems fit, with uncertainty around Python, Cassandra, GraphQL, and North-American overlap from Europe.
+Strong senior Go backend alignment with production ownership, distributed systems, and operational reliability evidence; exact Akvelon stack details are incomplete.
 
 ## Why it matches
 
-- Recent backend ownership in Go and support automation.
-- Proven APIs
-- event-driven systems
-- AWS
-- Kubernetes
-- SQL
-- testing
-- and reliability work.
+- Go production ownership
+- distributed/event-driven systems
+- observability and reliability
 
 ## Gaps
 
-- Python
-- Cassandra
-- and GraphQL experience are not established in the profile.
+- Specific vacancy framework or cloud requirements may need validation
 
 ## Concerns
 
-- The post requires overlap until 12 PM PST and European working-time compatibility is not confirmed.
+- Confirm role scope and remote eligibility
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Senior Go backend engineering | critical / stated | strong | Senior Back-end (Go) Engineer | Go | / |
+| Reliability and production ownership | high / structural | strong | Back-end | fallback logic | / |

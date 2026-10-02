@@ -1,21 +1,29 @@
 # Match Analysis
 
-**Score:** 82/100  
+**Score:** 81/100
 **Recommendation:** Strong Match
 
-Strong Go, AWS, distributed-backend and security overlap; identity protocols, gRPC, Kubernetes and Terraform need verification.
+Strong backend and security-adjacent fit for identity work, with direct GDPR, PCI DSS, audits, and vulnerability-assessment evidence; exact identity stack is unknown.
 
 ## Why it matches
 
-- Go backend systems
-- AWS and event-driven infrastructure
-- security-sensitive data handling
+- Security/compliance exposure
+- backend engineering
+- audits and risk assessment
 
 ## Gaps
 
-- No explicit OAuth2/OIDC or gRPC evidence in the profile
-- no explicit Kubernetes/Terraform evidence
+- Specific authentication and identity-management products not evidenced
 
 ## Concerns
 
-- Remote arrangement and working-time compatibility are not stated
+- Confirm language
+- location
+- and hands-on coding balance
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Authentication and identity engineering | critical / stated | partial | Authentication & Identity Management | system audits | Direct identity-provider experience is not explicit. / Map prior security and compliance work to the stack during screening. |
+| Security assessment and safe handling | high / structural | strong | Identity Management | system audits | / |

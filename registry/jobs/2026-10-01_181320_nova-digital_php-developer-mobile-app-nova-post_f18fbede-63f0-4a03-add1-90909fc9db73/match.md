@@ -1,29 +1,28 @@
 # Match Analysis
 
-**Score:** 82/100
-**Recommendation:** Strong Match
+**Score:** 79/100
+**Recommendation:** Match
 
-Strong PHP backend fit with Laravel, RabbitMQ, AWS, Kubernetes, REST APIs, observability, and production reliability evidence; MongoDB and some named tooling remain unconfirmed.
+Strong PHP backend fit for a product integration role, with relevant automation and API experience; mobile-specific and Nova Post domain knowledge remain unknown.
 
 ## Why it matches
 
-- PHP/Laravel backend experience and REST API work are directly supported.
-- RabbitMQ, AWS, Kubernetes, CI/CD, Prometheus, and production troubleshooting are evidenced.
-- High-scale transactional email and reliable message delivery provide relevant distributed-systems experience.
+- PHP backend
+- integrations
+- automation
+- production reliability
 
 ## Gaps
 
-- MongoDB, Qless/Kafka, GitLab, Graylog/Kibana, OpenAPI/Swagger, and RPC are not explicitly evidenced in the profile.
+- Mobile application and logistics-domain experience not evidenced
 
 ## Concerns
 
-- The source text is Ukrainian and the vacancy's exact language requirement is not fully legible in the sealed record.
+- Need to confirm remote/location and expected seniority
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP and Laravel backend development | critical / stated | strong | PHP Developer | Developed and enhanced codebase | / |
-| MongoDB | high / stated | unknown | MongoDB |  | MongoDB experience is not explicitly established. / Confirm production MongoDB exposure before application. |
-| REST APIs and integrations | high / stated | strong | RESTful API | REST APIs | / |
-| RabbitMQ or another message broker | high / stated | strong | RabbitMQ, Qless, Kafka | RabbitMQ | / |
+| PHP product development | critical / stated | strong | PHP Developer (Mobile App Nova Post) | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| Integrations and automation | high / structural | strong | Mobile App Nova Post | Zendesk | / |

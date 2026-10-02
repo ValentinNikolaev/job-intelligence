@@ -1,28 +1,28 @@
 # Match Analysis
 
-**Score:** 90/100
+**Score:** 88/100
 **Recommendation:** Strong Match
 
-Excellent Go/PHP, SQL, Symfony, microservices, cloud, observability and architecture fit; relocation compensation materially improves location flexibility.
+Strong senior backend fit across Go, PHP, SQL, testing, legacy modernization, and service ownership; relocation support is a positive, while agentic coding evidence is not detailed.
 
 ## Why it matches
 
-- Go and PHP are explicit core technologies
-- Strong legacy, SQL, testing and production ownership evidence
-- Relocation compensation is stated
+- Go and PHP backend experience
+- production ownership and reliability
+- SQL and Kubernetes/CI/CD evidence
 
 ## Gaps
 
-- Oracle and agentic coding experience are not directly evidenced
+- Specific Oracle and agentic-coding depth is not established
 
 ## Concerns
 
-- Employment is described as SIXT TECH Ukraine; working arrangement should be confirmed
+- English is described at professional/full-professional level in conflicting profile entries
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go and PHP experience | critical / stated | strong | 5-7+ years experience with Go, PHP. | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
-| PostgreSQL/Oracle SQL | high / stated | partial | Strong SQL skills (with PostgreSQL, Oracle) | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | Oracle is not evidenced. / Clarify Oracle exposure or position SQL transferability. |
-| Relocation | meaningful / stated | strong | Relocation compensation | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
+| Production Go/PHP backend experience | critical / stated | strong | 5-7+ years experience with Go, PHP. | Go | / |
+| SQL and tested service development | high / stated | strong | Strong SQL skills (with PostgreSQL, Oracle) | PostgreSQL | / |
+| Relocation compatibility | meaningful / stated | strong | Relocation compensation | Fiumicino, Latium, Italy | / |
