@@ -777,7 +777,8 @@ def _validate_cv_candidate_facing(markdown: str) -> None:
             raise ApplicationError(
                 "cv_markdown contains internal review language: " + phrase
             )
-    if re.search(r"(?i)(?:\bTODO\b|\bTBD\b|\bPLACEHOLDER\b|<[^>\n]+>)", markdown):
+    visible = re.sub(r"(?im)^[ \t]*<!--[ \t]*pagebreak[ \t]*-->[ \t]*$", "", markdown)
+    if re.search(r"(?i)(?:\bTODO\b|\bTBD\b|\bPLACEHOLDER\b|<[^>\n]+>)", visible):
         raise ApplicationError("cv_markdown contains an unresolved placeholder")
 
 

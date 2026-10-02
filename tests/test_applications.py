@@ -21,6 +21,7 @@ from jobintel.applications import (
     CodexApplicationDraftClient,
     QUALITY_CONTRACT_VERSION,
     _cv_export_stem,
+    _validate_cv_candidate_facing,
     _validate_cv_audit_bullet_coverage,
     _validate_cv_editorial_review,
     _validate_cv_experience_bullets,
@@ -36,6 +37,11 @@ from jobintel.applications import (
 
 
 class ExperienceRoleDepthTests(unittest.TestCase):
+    def test_cv_allows_only_converter_page_break_markup(self) -> None:
+        _validate_cv_candidate_facing("## Experience\n\n<!-- pagebreak -->\n\n### Next role")
+        with self.assertRaisesRegex(ApplicationError, "unresolved placeholder"):
+            _validate_cv_candidate_facing("## Experience\n\n<!-- other note -->\n")
+
     def test_requires_three_bullets_at_the_five_year_cutoff(self) -> None:
         cv = ("## Experience\n\n### Cutoff role | September 2019 - September 2021\n"
               "- First result\n- Second result\n"

@@ -10,6 +10,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import unicodedata
 import zipfile
 from collections.abc import Mapping
@@ -332,14 +333,25 @@ def export_pdf(source: Path, target: Path, *, executable: str | Path | None = No
         if not target.is_file() or target.stat().st_size == 0:
             raise DocumentQualityError("Word did not create a nonempty PDF")
         return target
-    with tempfile.TemporaryDirectory(prefix="jobintel-pdf-", dir=target.parent) as temporary:
-        work = Path(temporary)
+    work = Path(tempfile.mkdtemp(prefix="jobintel-pdf-"))
+    try:
         _run([office_executable, f"-env:UserInstallation={(work / 'profile').as_uri()}", "--headless", "--convert-to", "pdf", "--outdir", str(work), str(source)])
         converted = work / (source.stem + ".pdf")
         if not converted.is_file() or converted.stat().st_size == 0:
             raise DocumentQualityError("LibreOffice did not create a nonempty PDF")
         with target.open("xb") as output:
             output.write(converted.read_bytes())
+    finally:
+        for attempt in range(20):
+            try:
+                shutil.rmtree(work)
+                break
+            except FileNotFoundError:
+                break
+            except OSError as exc:
+                if getattr(exc, "winerror", None) not in (32, 145) or attempt == 19:
+                    raise DocumentQualityError(f"Could not remove LibreOffice profile: {exc}") from exc
+                time.sleep(0.25)
     return target
 
 

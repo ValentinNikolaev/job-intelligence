@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import shutil
 import tempfile
 import unittest
 import zipfile
@@ -176,6 +177,7 @@ class ExportQualityTests(unittest.TestCase):
             self.assertIn("--headless", command)
             self.assertTrue(any(part.startswith("-env:UserInstallation=file:") for part in command))
             outdir = Path(command[command.index("--outdir") + 1])
+            self.assertNotEqual(target.parent, outdir.parent)
             write_pdf(outdir / "cv.pdf", ["Candidate"])
             return "converted"
 
@@ -185,6 +187,33 @@ class ExportQualityTests(unittest.TestCase):
             with self.assertRaisesRegex(DocumentQualityError, "new .pdf"):
                 export_pdf(self.artifact, target)
             self.assertEqual(saved, target.read_bytes())
+
+    def test_pdf_conversion_retries_transient_windows_profile_cleanup(self) -> None:
+        target = self.root / "cv.pdf"
+        remove = shutil.rmtree
+        attempts = 0
+
+        def convert(command: list[str]) -> str:
+            work = Path(command[command.index("--outdir") + 1])
+            write_pdf(work / "cv.pdf", ["Candidate"])
+            return "converted"
+
+        def remove_after_retry(path: Path) -> None:
+            nonlocal attempts
+            attempts += 1
+            if attempts == 1:
+                error = OSError(145, "Directory not empty")
+                error.winerror = 145
+                raise error
+            remove(path)
+
+        with patch("jobintel.document_quality._tool", return_value="soffice"), \
+             patch("jobintel.document_quality._run", side_effect=convert), \
+             patch("jobintel.document_quality.shutil.rmtree", side_effect=remove_after_retry), \
+             patch("jobintel.document_quality.time.sleep"):
+            self.assertEqual(target, export_pdf(self.artifact, target))
+        self.assertEqual(2, attempts)
+        self.assertTrue(target.is_file())
 
 
 class RealPdfQualityTests(unittest.TestCase):

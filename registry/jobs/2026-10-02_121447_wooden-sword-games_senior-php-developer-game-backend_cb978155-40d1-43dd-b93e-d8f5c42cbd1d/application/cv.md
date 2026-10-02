@@ -5,38 +5,40 @@ Rome, Italy | valeinikolaev@gmail.com | +39 351 370 1194 | LinkedIn: https://lin
 
 ## Summary
 
-Backend engineer with 15+ years of experience building production systems in PHP and Go. Recent work combines PHP event analytics with high-volume backend ownership: a Go support platform handled more than 20,000 tickets in an ordinary month and up to three times that volume in peak season. I bring Laravel, REST APIs, PostgreSQL, performance, reliability, and a practical approach to clear service contracts and maintainable delivery.
+Senior PHP and Go backend engineer with more than 15 years of production experience. In recent PHP consulting work, I held technical ownership of a live event analytics platform and its service integrations; my earlier Laravel experience includes backend development and API delivery. I have improved throughput and delivery reliability in production systems, worked with PostgreSQL and event-driven services, and led backend work through substantial traffic peaks. I bring hands-on ownership, code review experience, and a practical focus on maintainable service contracts and performance.
 
 ## Skills
 
-PHP, Laravel, Symfony, Go, REST APIs, PostgreSQL, MySQL, RabbitMQ, AWS EventBridge, queues, event-driven systems, API contracts, system design, performance analysis, code review, monitoring
+Languages and frameworks: PHP, Laravel, Symfony, Go. Backend and data: REST APIs, PostgreSQL, MySQL, SQL optimization, event-driven architecture, queues, AWS EventBridge. Delivery and operations: performance analysis, monitoring, RabbitMQ, Kubernetes, GitHub Actions, code review.
 
 ## Experience
 
 ### Simple.life / Simple App — Software Developer | November 2023 – July 2026
 
-- Owned a Go support platform processing at least 20,000 tickets per ordinary month, with volume up to three times that level in the U.S. peak season.
-- Implemented many automation scenarios on a support platform that reached up to 86% fully automated handling.
-- Designed and launched an A/B test of in-house ticket categorization against Intercom Fin, then migrated to Fin while retaining the ML model as a fallback.
-- Built public-review automation across App Store, Google Play, and TrustPilot, with keyword guardrails that route sensitive or legal cases to human review.
-- Built cancellation and refund email automation with a deletion-request classifier that routed active deletion requests to L1, alongside production fixes for the workflow.
+- Owned a Go support platform connecting Zendesk, Intercom, and internal services, giving support teams a shared backend for routing and ticket lifecycle work.
+- Implemented many support automation scenarios, contributing to a platform that reached up to 86% fully automated handling overall.
+- Designed an A/B comparison of in-house ticket categorization and Intercom Fin, then moved categorization to Fin with the in-house model retained as fallback.
+- Built public-review automation across App Store, Google Play, and Trustpilot, routing sensitive or legal cases to a human reviewer instead of an automatic reply.
 
-Technologies: Go, PHP, PostgreSQL, Intercom API, AWS, Kubernetes, OpenAPI, DeepL, monitoring
+Technologies: Go, PostgreSQL, Intercom API, Zendesk API, AWS, Kubernetes, monitoring
 
-### CRURATED — PHP Software Developer, concurrent part-time subcontract / consulting engagement | August 2024 – January 2026
+<!-- pagebreak -->
 
-- Held full technical ownership of production DataLake and event analytics work for product metrics, reporting, and business insights.
-- Owned a production Crutrade integration covering authentication and OTP, account linking, collection import and export, purchase-ownership verification, and request/response logging.
-- Owned production parallel publication of event versions as the platform evolved.
+### CRURATED — PHP Software Developer, concurrent part-time consulting | August 2024 – January 2026
 
-Technologies: PHP, Laravel, AWS EventBridge, queues, event-driven architecture, REST APIs
+- Owned the production DataLake and event analytics system as its technical lead, increasing throughput by more than 10x for product reporting.
+- Simplified analytics stream setup through modular design, cutting the onboarding time from several days to under four hours.
+- Maintained event delivery reliability above 99.9% in the production analytics pipeline through routing and operational controls.
+- Owned parallel publication of event versions in production, keeping old and new schemas available during the analytics transition.
+
+Technologies: PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
 ### PDFfiller — Software Developer | October 2016 – November 2019
 
-- Led five backend engineers developing a transactional email service handling about 3 million emails in an ordinary month.
-- Guided the service through BFCM e-commerce peaks of up to 10x ordinary traffic, applying DNS, DKIM, SPF, DMARC, and feedback-loop expertise.
+- Led five backend engineers delivering a transactional email service that handled about three million messages in an ordinary month.
+- Led the backend team through BFCM peaks reaching up to ten times ordinary email traffic, applying messaging and deliverability expertise under the seasonal surge.
 
-Technologies: PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, email infrastructure
+Technologies: PHP, Laravel, MySQL, RabbitMQ, AWS, email infrastructure
 
 ## Education
 
@@ -44,4 +46,4 @@ MSc in Computer Science, National Technical University, Kharkiv, Ukraine | 2003�
 
 ## Languages
 
-Ukrainian: native | English: upper-intermediate | Russian: native
+Ukrainian: native | English: upper-intermediate
