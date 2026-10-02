@@ -306,6 +306,16 @@ class WorkflowContractTests(unittest.TestCase):
             r"vacanc.{0,180}(?:do not|never).{0,80}(?:reuse|share))",
         )
 
+    def test_sheets_sync_allows_a_verified_runtime_outside_an_isolated_worktree(self) -> None:
+        prompt = self._read("prompts/google-sheets-sync.md")
+
+        self.assertIn("isolated managed worktree", prompt)
+        self.assertIn("already provisioned Python 3.11+", prompt)
+        self.assertIn("parent checkout's provisioned runtime is allowed", prompt)
+        self.assertIn("must never be copied into the worktree", prompt)
+        self.assertIn("Record the executable and version in the receipt", prompt)
+        self.assertIn("do not install packages during an unattended run", prompt)
+
 
 if __name__ == "__main__":
     unittest.main()
