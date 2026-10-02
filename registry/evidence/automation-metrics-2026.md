@@ -20,8 +20,9 @@ automatically closed conversations fell by 2.0% as total closed volume fell by
 125,750 *closed conversations across all handlers* per month. This is not, by
 itself, the number of tickets processed by Valentin's Go service: the earlier
 candidate-confirmed lower bound of 20,000 tickets per ordinary month has a
-different stated scope. Keep both figures distinct until their populations are
-confirmed to match.
+different stated scope. Valentin confirmed that the report counts overall
+support volume in `registry/candidate/user-confirmed-support-volume-scope-2026-10-02.md`.
+Keep the two figures distinct.
 
 ## July–September extrapolation
 
