@@ -22,7 +22,9 @@ class WorkflowPolicyTests(unittest.TestCase):
             "codex:gpt-5.6-terra:medium",
             policy.workflow("prepare").model_label,
         )
-        self.assertEqual("luna_low", policy.workflow("analyze").default_profile)
+        self.assertEqual("luna_medium", policy.workflow("analyze").default_profile)
+        self.assertIn("codex:gpt-5.6-luna:low", policy.approved_analysis_model_labels())
+        self.assertIn("codex:gpt-5.6-luna:medium", policy.approved_analysis_model_labels())
         self.assertEqual(
             "codex:gpt-5.6-terra:medium",
             policy.resolve_model_profile("analyze", "terra-medium").model_label,

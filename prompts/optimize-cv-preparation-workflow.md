@@ -40,7 +40,7 @@ It must complete before agents draft any document and report machine-readable JS
 It must check, at minimum:
 
 - the selected IDs are explicit, unique, and within the configured batch maximum;
-- the selected workflow/model profile is valid and every match is fresh for it;
+- the selected workflow/model profile is valid and every match is current and from an approved analysis profile;
 - MongoDB configuration is available to this worktree and `storage doctor` succeeds;
 - the DOCX converter, its options, and the configured preview renderer are available;
 - the preview command can report a clear `unavailable` result without writing a

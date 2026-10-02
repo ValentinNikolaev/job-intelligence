@@ -5,7 +5,7 @@ import json
 import os
 import re
 import uuid
-from collections.abc import Callable, Mapping, Sequence
+from collections.abc import Callable, Collection, Mapping, Sequence
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -173,12 +173,18 @@ class MatchAnalyzer:
         client: MatchClient,
         *,
         clock: Callable[[], datetime] | None = None,
+        allowed_models: Collection[str] | None = None,
     ) -> None:
         self.registry_root = registry_root
         self.jobs_dir = registry_root / "jobs"
         self.profile_paths = tuple(profile_paths)
         self.client = client
         self.model = str(getattr(client, "model", client.__class__.__name__))
+        self.allowed_models = (
+            frozenset(allowed_models)
+            if allowed_models is not None
+            else frozenset((self.model,))
+        )
         self._clock = clock or (lambda: datetime.now(timezone.utc))
 
     def resolve(self, selector: str) -> list[Path]:
@@ -213,7 +219,7 @@ class MatchAnalyzer:
                 existing.get("profile_version") == profile_version
                 and existing.get("job_version") == job_version
                 and existing.get("prompt_version") == PROMPT_VERSION
-                and existing.get("model") == self.model
+                and existing.get("model") in self.allowed_models
             ):
                 score = existing.get("score")
                 return AnalysisResult(
@@ -256,7 +262,7 @@ class MatchAnalyzer:
                 existing.get("profile_version") == profile_version
                 and existing.get("job_version") == job_version
                 and existing.get("prompt_version") == PROMPT_VERSION
-                and existing.get("model") == self.model
+                and existing.get("model") in self.allowed_models
             ):
                 score = existing.get("score")
                 return AnalysisResult(
@@ -281,7 +287,9 @@ class MatchAnalyzer:
             "analyzed", str(meta.get("id", "")), directory.name, int(stored["score"])
         )
 
-    def is_current(self, directory: Path) -> bool:
+    def is_current(
+        self, directory: Path, *, allowed_models: Collection[str] | None = None
+    ) -> bool:
         _, profile_version, _, _, job_version = self._inputs(directory)
         match_path = directory / "match.yaml"
         if not op.exists(match_path):
@@ -294,7 +302,9 @@ class MatchAnalyzer:
             existing.get("profile_version") == profile_version
             and existing.get("job_version") == job_version
             and existing.get("prompt_version") == PROMPT_VERSION
-            and existing.get("model") == self.model
+            and existing.get("model") in (
+                allowed_models if allowed_models is not None else self.allowed_models
+            )
         )
 
     def _inputs(
@@ -335,6 +345,7 @@ def build_analysis_pack(
     limit: int | None = None,
     triage_skip: Callable[[Path], bool] | None = None,
     model: str = "pack-builder",
+    allowed_models: Collection[str] | None = None,
 ) -> AnalysisPack:
     """Create a sealed, deterministic input pack for one batched Codex run."""
     if limit is None:
@@ -345,6 +356,7 @@ def build_analysis_pack(
         registry_root,
         profile_paths,
         CodexMatchDraftClient(Path("unused-match.yaml"), model=model),
+        allowed_models=allowed_models,
     )
     profile, profile_version = analyzer._load_profile()
     items: list[dict[str, Any]] = []

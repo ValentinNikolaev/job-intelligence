@@ -5,9 +5,10 @@ before reading vacancy evidence or drafting. It refuses local changes and update
 clean checkout to the remote head. Keep shared service files, open documents, and
 parallel work in their existing checkouts.
 
-For a selected CV batch, reuse a fresh same-profile match only when the vacancy,
-candidate, and workflow inputs are unchanged. Reuse vacancy research only when its
-posting, company sources, and candidate evidence have not changed. Never reuse a
+For a selected CV batch, reuse a current match from any approved analysis profile
+when the vacancy, candidate, and workflow inputs are unchanged. Reuse vacancy
+research only when its posting, company sources, and candidate evidence have not
+changed. Never reuse a
 different vacancy's research or wording. Finalize all selected CV drafts under
 `.codex-work/application/<directory>/` before validating any of them.
 
@@ -18,7 +19,7 @@ python run.py prepare-preflight <selector-1> [<selector-2> ...] --workflow prepa
 ```
 
 It checks the selected explicit batch, the configured storage adapter, canonical selector
-resolution, required MongoDB metadata, same-profile match freshness, score eligibility,
+resolution, required MongoDB metadata, approved-profile match freshness, score eligibility,
 and `hard_rejection`. For a MongoDB backend it writes a minimal `meta.yaml`, `job.md`,
 `match.yaml`, and optional company view only under `.codex-work/vacancy-snapshots/`.
 Never copy metadata from a shared checkout. A nonzero preflight ends the run before any

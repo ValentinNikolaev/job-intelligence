@@ -13,7 +13,7 @@
 
 Treat `config/codex-workflows.yaml` as the project model-routing policy. The file is advisory because a repository cannot switch the model of its current Codex task. Select the configured model and reasoning level when creating each Codex task or Scheduled Task, and pass the matching `--workflow` when publishing; project code derives the only allowed model label from policy.
 
-Keep scheduled analysis on its lightweight `luna_low` profile and preparation
+Keep scheduled analysis on its lightweight `luna_medium` profile and preparation
 on the selected project profile. For a user-selected preparation batch, divide
 work into at most three independent groups in one delegation wave, not one
 subagent per vacancy. Reuse completed vacancy research and match evidence;
@@ -31,10 +31,13 @@ a selected project workflow profile.
   content. Automatic `all` selection remains prohibited. Analysis may use the sealed
   batch contract (up to 15 vacancies) when every result is keyed to its input directory,
   evaluated independently, and published only after deterministic validation.
-- Preparation eligibility requires a fresh match from the same selected model profile.
-  If the stored match uses another profile, run a genuine vacancy-specific analysis in
-  the selected-profile Codex task and publish that draft with `--force`; never relabel
-  an older judgment.
+- Preparation eligibility requires a current match from an approved analysis profile.
+  Reuse it across preparation profiles when its vacancy, candidate, and prompt versions
+  still match. Preserve the analysis model and score separately from the preparation
+  model; never relabel a judgment. Reanalyze only when that match is missing or stale.
+- Changing the active analysis profile does not requeue a current match from a
+  historically approved analysis model. Historical labels are read-only provenance;
+  new analysis uses a current allowed profile.
 - Before any preparation/editorial task, run `python run.py prepare-preflight <explicit-selector> ... --workflow prepare [--model-profile <profile>] [--document cv]`. It is a read-only, fail-closed batch gate: it checks the configured storage adapter, resolves every selector from the canonical backend, materializes only ignored `.codex-work` snapshots, and rejects stale, ineligible, hard-rejected, or incomplete MongoDB records before drafts are created. After MongoDB cutover, never copy frozen registry metadata from another checkout to make preparation work.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.

@@ -70,7 +70,7 @@ role solely to bypass the three-bullet rule.
   using verified vacancy-specific evidence, updated claims and
   `cv_audit.bullet_decisions`, and a positive editorial receipt. Preserve cover
   letters, analysis, interview preparation, and status. Reuse a fresh genuine
-  same-profile match; if a new one is required, analyze that vacancy rather than
+  approved-profile match; if a new one is required, analyze that vacancy rather than
   changing a provenance label.
 - Validate all six finalized drafts with `validate-application --document cv`,
   publish the six CV-only packages with `prepare --document cv` after they pass,

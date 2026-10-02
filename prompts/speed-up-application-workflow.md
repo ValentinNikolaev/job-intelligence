@@ -43,7 +43,7 @@ dirty authoring checkout as a failed publication.
   preview or cause a silent overwrite.
 - Validate each finalized vacancy draft once, then publish the selected batch once.
   After a real edit, recheck only affected drafts and previews. Reuse fresh,
-  same-profile match evidence and completed vacancy research when their inputs have
+  approved-profile match evidence and completed vacancy research when their inputs have
   not changed; never relabel an old match or reuse another vacancy's content.
 - Record elapsed time for analysis, editorial drafting, validation, conversion,
   visual review, diff review, and publication. Report before/after timings from a

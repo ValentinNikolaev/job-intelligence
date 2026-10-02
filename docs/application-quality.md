@@ -7,7 +7,7 @@ analysis and preparation still run inside Codex; project code only validates and
 publishes local drafts.
 
 An explicit named-vacancy refresh of an existing CV can use
-`--document cv --allow-low-score-cv-refresh` when its fresh same-profile match is
+`--document cv --allow-low-score-cv-refresh` when its current approved-profile match is
 `possible_match` below the configured preparation threshold. The flag does not apply to
 new packages, other documents, hard rejections, or automatic selection. Report the
 score and material gaps to the candidate rather than disguising fit.

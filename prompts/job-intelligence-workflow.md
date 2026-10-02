@@ -56,10 +56,10 @@ separate user-gated action.
    `python run.py analyze <directory> --input <draft.yaml> --workflow analyze
    [--model-profile <profile>]`. Do not run triage, `pending analyze all`,
    `analyze-batch`, or another queue command in this mode.
-   A match produced by a different model profile is not current for preparation under
-   the selected profile. Run a real analysis in the selected-profile Codex task and
-   publish it with `--model-profile <profile> --force`; never change only the stored
-   model label or reuse another profile's judgment as if it were new.
+   A current match produced by any approved `analyze` profile can support preparation.
+   Preserve its actual model label and score alongside the preparation model. If the
+   match is missing or stale, run a real analysis in an allowed analysis task; never
+   change only the stored model label or reuse a stale judgment as if it were new.
 5. Do not prepare merely because the score meets `prepare_min_score`. Prepare only
    when the user has explicitly asked to prepare this vacancy or has clearly approved
    preparation after intake/analysis. The approval must identify the vacancy by ID,
@@ -93,10 +93,11 @@ run only the roles and handoffs necessary for that document; preserve any existi
 unselected artifacts. The cover-letter skill is required only when the selected scope
 includes `cover-letter`.
 
-Before Wave 1, confirm each selected vacancy has a fresh match produced by the same
-model profile selected for preparation. If not, create and publish a new isolated match
-draft from that selected-profile task before drafting application artifacts. Model
-provenance is content provenance, not a label that may be rewritten.
+Before Wave 1, confirm each selected vacancy has a current match produced by an
+approved analysis profile. Reuse that match across preparation profiles when the
+vacancy, candidate, and match prompt versions still agree. If no current match exists,
+create and publish a new isolated match draft in an allowed analysis task before
+drafting application artifacts. Preserve both model labels as content provenance.
 
 1. In Wave 1, run independent research, CV/evidence, and requirements/risks roles in
    parallel when subagent slots are available. Research receives only this vacancy's

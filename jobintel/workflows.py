@@ -39,6 +39,7 @@ class WorkflowPolicy:
     workflows: dict[str, Workflow]
     prepare_batch_size: int = 1
     model_profiles: dict[str, ModelProfile] | None = None
+    historical_analysis_models: tuple[str, ...] = ()
 
     def workflow(self, name: str) -> Workflow:
         canonical = name.strip().casefold().replace("-", "_")
@@ -70,6 +71,13 @@ class WorkflowPolicy:
         except KeyError as exc:
             raise WorkflowError(f"unknown model profile {requested!r}") from exc
 
+    def approved_analysis_model_labels(self) -> frozenset[str]:
+        active = {
+            self.resolve_model_profile("analyze", profile).model_label
+            for profile in self.workflow("analyze").allowed_profiles
+        }
+        return frozenset(active | set(self.historical_analysis_models))
+
 
 def load_workflow_policy(path: Path) -> WorkflowPolicy:
     try:
@@ -95,6 +103,12 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
         )
 
     model_profiles = _load_model_profiles(loaded.get("model_profiles"))
+    raw_historical = loaded.get("historical_analysis_models", [])
+    if not isinstance(raw_historical, list) or any(
+        not isinstance(value, str) or not value.strip() for value in raw_historical
+    ):
+        raise WorkflowError("historical_analysis_models must be a list of model labels")
+    historical_analysis_models = tuple(value.strip() for value in raw_historical)
     raw_workflows = loaded.get("workflows")
     if not isinstance(raw_workflows, dict):
         raise WorkflowError("workflows must be a YAML mapping")
@@ -140,6 +154,7 @@ def load_workflow_policy(path: Path) -> WorkflowPolicy:
         workflows,
         prepare_batch_size,
         model_profiles,
+        historical_analysis_models,
     )
 
 

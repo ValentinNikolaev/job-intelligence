@@ -1474,7 +1474,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(0, exit_code)
         self.assertIn(created.directory, output.getvalue())
 
-    def test_pending_prepare_uses_selected_model_profile_for_match_freshness(self) -> None:
+    def test_pending_prepare_reuses_current_analysis_from_another_allowed_profile(self) -> None:
         registry = Registry(
             self.registry_root,
             clock=lambda: self.now,
@@ -1494,7 +1494,7 @@ class ApplicationTests(unittest.TestCase):
         MatchAnalyzer(
             self.registry_root,
             [self.profile],
-            FakeMatchClient(72, model="codex:gpt-5.6-terra:medium"),
+            FakeMatchClient(72, model="codex:gpt-5.6-luna:low"),
             clock=lambda: self.now,
         ).analyze_directory(directory)
 
@@ -1518,6 +1518,50 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertEqual(0, exit_code)
         self.assertIn(created.directory, output.getvalue())
+
+        match_path = directory / "match.yaml"
+        match = yaml.safe_load(match_path.read_text(encoding="utf-8"))
+        match["model"] = "codex:unapproved:low"
+        match_path.write_text(yaml.safe_dump(match), encoding="utf-8")
+        output = StringIO()
+        with redirect_stdout(output):
+            self.assertEqual(0, main([
+                "pending", "prepare", created.vacancy_id, "--registry", str(self.registry_root),
+                "--profile", str(self.profile), "--workflow", "prepare",
+                "--model-profile", "terra_medium",
+            ]))
+        self.assertNotIn(created.directory, output.getvalue())
+
+        match["model"] = "codex:gpt-5.6-luna:low"
+        match_path.write_text(yaml.safe_dump(match), encoding="utf-8")
+        (directory / "job.md").write_text("Build a changed Go service.\n", encoding="utf-8")
+        output = StringIO()
+        with redirect_stdout(output):
+            self.assertEqual(0, main([
+                "pending", "prepare", created.vacancy_id, "--registry", str(self.registry_root),
+                "--profile", str(self.profile), "--workflow", "prepare",
+                "--model-profile", "terra_medium",
+            ]))
+        self.assertNotIn(created.directory, output.getvalue())
+
+    def test_manifest_records_reused_analysis_provenance(self) -> None:
+        MatchAnalyzer(
+            self.registry_root, [self.profile], FakeMatchClient(78), clock=lambda: self.now
+        ).analyze_directory(self.directory)
+        generator = self._generator(FakeClient(), FakeConverter())
+        self.assertEqual("prepared", generator.generate_directory(self.directory).status)
+        manifest = yaml.safe_load(
+            (self.directory / "application" / "manifest.yaml").read_text(encoding="utf-8")
+        )
+        self.assertEqual("codex:gpt-5.6-luna:low", manifest["analysis"]["model"])
+        self.assertEqual(78, manifest["analysis"]["score"])
+        self.assertEqual(generator.model, manifest["model"])
+        self.assertTrue(generator.is_current(self.directory))
+        match_path = self.directory / "match.yaml"
+        match = yaml.safe_load(match_path.read_text(encoding="utf-8"))
+        match["score"] = 79
+        match_path.write_text(yaml.safe_dump(match), encoding="utf-8")
+        self.assertFalse(generator.is_current(self.directory))
 
     def test_pending_prepare_accepts_explicit_batch(self) -> None:
         registry = Registry(

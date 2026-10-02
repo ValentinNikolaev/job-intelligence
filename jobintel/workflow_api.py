@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Collection
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -273,6 +274,7 @@ def queue_items(
                 project_root / ".codex-work" / "unused-match.yaml",
                 model=policy.workflow("analyze").model_label,
             ),
+            allowed_models=policy.approved_analysis_model_labels(),
         )
     profile_version: str | None = None
     common_bytes: int | None = None
@@ -289,7 +291,9 @@ def queue_items(
             if document is not None:
                 if profile_version is None:
                     _, profile_version = checker._load_profile()
-                current = _snapshot_analysis_is_current(document, profile_version, checker.model)
+                current = _snapshot_analysis_is_current(
+                    document, profile_version, checker.allowed_models
+                )
             else:
                 current = checker.is_current(directory)
             if current:
@@ -341,7 +345,9 @@ def _snapshot_should_skip(document: dict[str, Any]) -> bool:
     return isinstance(triage, dict) and triage.get("skip_model") is True and triage.get("confidence") == "high"
 
 
-def _snapshot_analysis_is_current(document: dict[str, Any], profile_version: str, model: str) -> bool:
+def _snapshot_analysis_is_current(
+    document: dict[str, Any], profile_version: str, models: Collection[str]
+) -> bool:
     meta = document.get("meta")
     job_text = document.get("job_text")
     if not isinstance(meta, dict) or not isinstance(job_text, str):
@@ -357,7 +363,7 @@ def _snapshot_analysis_is_current(document: dict[str, Any], profile_version: str
         match.get("profile_version") == profile_version
         and match.get("job_version") == job_version
         and match.get("prompt_version") == PROMPT_VERSION
-        and match.get("model") == model
+        and match.get("model") in models
     )
 
 
@@ -475,7 +481,9 @@ def _analysis_is_current(
             model=policy.workflow("analyze").model_label,
         ),
     )
-    return checker.is_current(directory)
+    return checker.is_current(
+        directory, allowed_models=policy.approved_analysis_model_labels()
+    )
 
 
 def _rejected_count(registry_root: Path) -> int:

@@ -22,16 +22,15 @@ explicit single-document request, use the full-package flow below.
 4. Verify the complete selection with
    `python run.py pending prepare <selector-1> [<selector-2> ...] --workflow prepare --model-profile <selected-profile> [--document <document>]`.
    The command prints only vacancies that are analyzed, fresh, score-eligible, and not
-   already current. Match freshness is evaluated against the same selected model
-   profile. If an explicitly selected vacancy is absent only because its current match
-   was produced by another profile, do not relabel or reuse that judgment. Evaluate the
-   vacancy in the active selected-profile Codex task, publish the new isolated draft
-   with `python run.py analyze <vacancy-directory> --input <match-draft.yaml>
-   --workflow analyze --model-profile <selected-profile> --force`, and rerun the pending
-   check. Do not draft a vacancy that remains absent; report the actual eligibility or
-   freshness reason.
+   already current. Match freshness uses the current candidate, vacancy, and prompt
+   versions. The match must originate from an approved `analyze` profile, which may
+   differ from the preparation profile. Preserve both provenance labels. If the match
+   is missing or stale because the vacancy, candidate, or match prompt changed, run a
+   genuine analysis in an allowed `analyze` task and rerun preflight and pending. Do not
+   relabel an existing judgment. Do not draft a vacancy that remains absent; report the
+   actual eligibility or freshness reason.
    When the candidate explicitly requests a CV-only refresh for a named vacancy
-   whose existing application already has a CV, a fresh same-profile
+   whose existing application already has a CV, a current approved-profile
    `possible_match` below the normal score threshold may be refreshed with
    `--document cv --allow-low-score-cv-refresh` on both `pending prepare` and
    `prepare`. State the score and material gaps to the candidate. This narrow
@@ -203,7 +202,7 @@ explicit single-document request, use the full-package flow below.
    file.
    Reuse completed vacancy research only while its posting, company sources, and
    candidate evidence inputs remain unchanged. Reuse a match only when it is fresh
-   and from the same selected model profile. Record elapsed time separately for
+   and from an approved analysis profile. Record elapsed time separately for
    analysis, editorial drafting, validation, conversion, visual review, diff review,
    and publication; use `docs/preparation-runbook.md` for the timing ledger.
    The validator checks the quality contract, required handoffs, structure, minimum word

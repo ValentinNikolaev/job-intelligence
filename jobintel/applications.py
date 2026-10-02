@@ -459,6 +459,7 @@ class ApplicationGenerator:
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            **_match_provenance(snapshot),
             "quality_contract_version": QUALITY_CONTRACT_VERSION,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
@@ -608,6 +609,7 @@ class ApplicationGenerator:
             "company_version": company_version,
             "prompt_version": prompt_version,
             "model": self.model,
+            **_match_provenance(snapshot),
             "quality_contract_version": QUALITY_CONTRACT_VERSION,
             "cv_export_stem": _cv_export_stem(
                 company=str(meta.get("company") or ""),
@@ -1519,6 +1521,21 @@ def _load_vacancy(
     return vacancy, vacancy_version, company_version
 
 
+def _match_provenance(snapshot: Path) -> dict[str, Any]:
+    path = snapshot / "match.yaml"
+    if not op.exists(path):
+        return {}
+    match = _read_yaml_mapping(path, "match analysis")
+    return {
+        "analysis": {
+            "model": match.get("model"),
+            "score": match.get("score"),
+            "analyzed_at": match.get("analyzed_at"),
+            "version": _content_version(json.dumps(match, ensure_ascii=False, sort_keys=True)),
+        }
+    }
+
+
 def _application_directory(directory: Path, meta: Mapping[str, Any]) -> Path:
     name = str(meta.get("application_directory", _DEFAULT_APPLICATION_DIRECTORY)).strip()
     if not name or Path(name).name != name or not name.startswith("application"):
@@ -1538,7 +1555,7 @@ def _record_application_directory(meta_path: Path, meta: Mapping[str, Any], dire
 def _package_is_current(
     application_dir: Path,
     manifest_path: Path,
-    expected_versions: Mapping[str, str],
+    expected_versions: Mapping[str, Any],
     *,
     document: str | None = None,
 ) -> bool:

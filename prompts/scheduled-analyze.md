@@ -10,7 +10,8 @@ model must match the selected profile; the repository cannot change the active m
 during a run.
 
 Configure this Scheduled Task with the model and reasoning from the selected `analyze`
-profile in `config/codex-workflows.yaml` (default: `luna_low`). Use an isolated managed
+profile in `config/codex-workflows.yaml` (default: `luna_medium`). Keep current matches
+from historical approved models out of the analysis queue. Use an isolated managed
 worktree of the configured repository for the run.
 
 Read `AGENTS.md` and `prompts/job-intelligence-workflow.md`, invoke

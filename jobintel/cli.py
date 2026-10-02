@@ -1041,7 +1041,7 @@ def _run_analysis_locked(
         return 2
 
     try:
-        _, model_label = _selected_workflow(
+        policy, model_label = _selected_workflow(
             args.workflow, project_root, {"analyze"}, args.model_profile
         )
         Registry(registry_dir).migrate_metadata()
@@ -1057,7 +1057,10 @@ def _run_analysis_locked(
     for directory in directories:
         try:
             client = CodexMatchDraftClient(args.input, model=model_label)
-            analyzer = MatchAnalyzer(registry_dir, profile_paths, client)
+            analyzer = MatchAnalyzer(
+                registry_dir, profile_paths, client,
+                allowed_models=policy.approved_analysis_model_labels(),
+            )
             result = analyzer.analyze_directory(directory, force=args.force)
             if result.status == "skipped":
                 summary.skipped += 1
@@ -1110,6 +1113,7 @@ def _run_analysis_batch(
                 registry_dir,
                 profile_paths,
                 CodexMatchDraftClient(project_root / ".codex-work" / "unused-match.yaml", model=model_label),
+                allowed_models=policy.approved_analysis_model_labels(),
             )
             summary = publish_analysis_batch(pack, results, analyzer)
             Registry(registry_dir).regenerate_index()
@@ -1411,9 +1415,8 @@ def _preflight_preparation(
                 )
             if not _analysis_is_current(
                 directory, registry_dir, profile_paths, policy, project_root,
-                model_profile=args.model_profile,
             ):
-                raise ValueError("match analysis is missing or stale for the selected model profile")
+                raise ValueError("match analysis is missing, stale, or from an unapproved analysis model")
             score = _match_score(directory)
             if (not policy.prepare_score_is_eligible(args.workflow, score)
                     and not _allows_explicit_low_score_cv_refresh(directory, args, score)
@@ -1422,6 +1425,8 @@ def _preflight_preparation(
             row.update({
                 "ok": True,
                 "score": score,
+                "analysis_model": match.get("model"),
+                "analysis_analyzed_at": match.get("analyzed_at"),
                 "snapshot": str(snapshot),
                 "hard_rejection_bypassed_by_user": hard_rejection_bypassed,
             })
@@ -1670,6 +1675,7 @@ def _run_pending_locked(
                 limit=args.limit,
                 triage_skip=should_skip_model,
                 model=model_label,
+                allowed_models=policy.approved_analysis_model_labels(),
             )
             dump_analysis_pack(pack, args.pack.resolve())
             print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
@@ -1688,6 +1694,7 @@ def _run_pending_locked(
                         project_root / ".codex-work" / "unused-match.yaml",
                         model=model_label,
                     ),
+                    allowed_models=policy.approved_analysis_model_labels(),
                 )
             else:
                 if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
@@ -1698,7 +1705,6 @@ def _run_pending_locked(
                     profile_paths,
                     policy,
                     project_root,
-                    model_profile=args.model_profile,
                 ):
                     continue
                 score = _optional_match_score(directory)
@@ -1799,18 +1805,18 @@ def _analysis_is_current(
     profile_paths: list[Path],
     policy: WorkflowPolicy,
     project_root: Path,
-    *,
-    model_profile: str | None = None,
 ) -> bool:
     checker = MatchAnalyzer(
         registry_dir,
         profile_paths,
         CodexMatchDraftClient(
             project_root / ".codex-work" / "unused-match.yaml",
-            model=policy.resolve_model_profile("analyze", model_profile).model_label,
+            model=policy.workflow("analyze").model_label,
         ),
     )
-    return checker.is_current(directory)
+    return checker.is_current(
+        directory, allowed_models=policy.approved_analysis_model_labels()
+    )
 
 
 def _match_score(directory: Path) -> int:

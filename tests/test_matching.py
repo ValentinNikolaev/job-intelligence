@@ -8,7 +8,7 @@ from typing import Any, Mapping
 
 import yaml
 
-from jobintel.matching import CodexMatchDraftClient, MatchAnalyzer, MatchError, PROMPT_VERSION
+from jobintel.matching import CodexMatchDraftClient, MatchAnalyzer, MatchError, PROMPT_VERSION, build_analysis_pack
 from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
 
@@ -84,6 +84,37 @@ class MatchingTests(unittest.TestCase):
 
     def tearDown(self) -> None:
         self.temp.cleanup()
+
+    def test_medium_analysis_reuses_current_historical_low_result(self) -> None:
+        historical = FakeClient()
+        historical.model = "codex:gpt-5.6-luna:low"
+        MatchAnalyzer(
+            self.registry_root, [self.profile], historical, clock=lambda: self.now
+        ).analyze_directory(self.directory)
+        accepted = {
+            "codex:gpt-5.6-luna:low", "codex:gpt-5.6-luna:medium"
+        }
+        pack = build_analysis_pack(
+            self.registry_root, [self.profile], directories=[self.directory],
+            model="codex:gpt-5.6-luna:medium", allowed_models=accepted,
+        )
+        self.assertEqual((), pack.items)
+
+        medium = FakeClient()
+        medium.model = "codex:gpt-5.6-luna:medium"
+        analyzer = MatchAnalyzer(
+            self.registry_root, [self.profile], medium, clock=lambda: self.now,
+            allowed_models=accepted,
+        )
+        self.assertEqual("skipped", analyzer.analyze_directory(self.directory).status)
+        self.assertEqual([], medium.calls)
+
+        (self.directory / "job.md").write_text("Build changed services.\n", encoding="utf-8")
+        refreshed = build_analysis_pack(
+            self.registry_root, [self.profile], directories=[self.directory],
+            model="codex:gpt-5.6-luna:medium", allowed_models=accepted,
+        )
+        self.assertEqual(1, len(refreshed.items))
 
     def test_analysis_writes_valid_files_and_skips_matching_versions(self) -> None:
         client = FakeClient()

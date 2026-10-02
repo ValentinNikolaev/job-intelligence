@@ -106,15 +106,15 @@ class WorkflowContractTests(unittest.TestCase):
         for minimum in ("400", "300", "700", "800"):
             self.assertIn(minimum, source)
 
-    def test_prepare_requires_same_profile_match_without_relabeling(self) -> None:
+    def test_prepare_reuses_approved_analysis_profile_without_relabeling(self) -> None:
         prepare = self._read(
             ".agents/skills/job-intelligence-workflow/references/prepare.md"
         )
         shared = self._read("prompts/job-intelligence-workflow.md")
         combined = self._flat(f"{prepare} {shared}")
 
-        self.assertIn("same selected model profile", combined)
-        self.assertIn("--model-profile <selected-profile> --force", combined)
+        self.assertIn("approved analysis profile", combined)
+        self.assertIn("Preserve both model labels", combined)
         self.assertRegex(combined, r"(?i)(?:do not|never).{0,100}(?:relabel|model label)")
 
     def test_preparation_defaults_to_full_package_and_allows_one_explicit_document(self) -> None:

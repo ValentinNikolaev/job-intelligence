@@ -20,8 +20,9 @@ Before a preparation editor receives any selected vacancy, run `python run.py
 prepare-preflight <selector-1> [<selector-2> ...] --workflow prepare [--model-profile
 <profile>] [--document <document>]`. The command is read-only apart from an ignored
 `.codex-work/vacancy-snapshots/` view. It resolves selectors against canonical storage,
-checks the adapter, required metadata, current same-profile match, score eligibility and
-hard rejection. A failed preflight means no drafts, preview, conversion, or publication.
+checks the adapter, required metadata, current match from an approved analysis
+profile, score eligibility, and hard rejection. A failed preflight means no drafts,
+preview, conversion, or publication.
 
 ## Choose one mode
 

@@ -71,11 +71,13 @@ makes affected documents stale for regeneration.
 
 The `prepare` route uses the model configured in `config/codex-workflows.yaml` and the
 hard-capped `prepare_batch_size` policy.
-Its eligibility check requires the current match analysis to use the same selected
-model profile. If an explicitly selected vacancy was last analyzed under another
-profile, the active preparation-profile Codex task must evaluate it again and publish a
-new isolated match draft with `analyze --model-profile <profile> --force`; changing only
-the stored model label is prohibited.
+Its eligibility check accepts a current match analysis from any approved `analyze`
+profile. It still checks candidate, vacancy, and match-prompt versions, score, and hard
+rejection. The manifest keeps the original analysis model, score, timestamp, and
+version separately from the preparation model. Reanalysis is needed only when the
+match is missing or stale; changing only the stored model label is prohibited.
+The active `luna_medium` route also treats current historical `luna_low` matches as
+already analyzed, so the model change does not put them back in the analysis queue.
 Scores below `prepare_min_score` are not prepared. Vacancies older than
 `prepare_max_age_days` from `discovered_at` are excluded from preparation. There is no
 automatic preparation queue: the user chooses one to 10 vacancies from analyzed matches
