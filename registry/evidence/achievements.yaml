@@ -662,17 +662,19 @@ entries:
       **Role:** Software Developer'
     sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
   role: Software Developer
-  status: verified
+  status: retracted
   verification:
     reviewer: Codex transcription review
     reviewed_at: '2026-09-25'
     method: Transcribed direct candidate confirmation from the current task and checked
       scope.
-  review_notes: Direct candidate confirmation; no independent source for measurement
-    method. The 125,750 monthly average in the later support-operation report counts
-    all closed conversations across handlers. The candidate confirmed this is the
-    overall support volume in registry/candidate/user-confirmed-support-volume-scope-2026-10-02.md.
-    Do not substitute it for this Go-service ticket count.
+  reason: The candidate corrected the 20,000 figure as a mistaken calculation of
+    automation volume, not a measured Go-service ticket count. See
+    registry/candidate/user-corrected-automation-volume-2026-10-02.md.
+  review_notes: Historical transcription only. Do not use the 20,000 figure or
+    its combined peak-season claim as verified volume. The newer candidate
+    correction says all tickets pass through the Go service; use the measured
+    report totals and the separate verified entry for closed-ticket scale.
 - id: pdffiller-user-confirmed
   employer: PDFfiller
   source:
@@ -1460,8 +1462,8 @@ entries:
     conflicting Simple.life end dates are reconciled. Do not treat lower automated
     volume as growth. See registry/evidence/automation-metrics-2026.md for wording
     without period labels and a separately marked forecast. The candidate confirmed
-    that the all-handler count covers overall support in
-    registry/candidate/user-confirmed-support-volume-scope-2026-10-02.md.
+    all tickets pass through his Go service in
+    registry/candidate/user-corrected-automation-volume-2026-10-02.md.
 - id: simple-2026-q1-q2-ai-agent-volume
   employer: Simple App
   role: Software Developer
@@ -1486,3 +1488,28 @@ entries:
     identify which changes caused its growth or assign all growth to the candidate.
     Reconcile the conflicting Simple.life end dates before employer-facing use.
     See registry/evidence/automation-metrics-2026.md for wording without period labels.
+- id: simple-2026-go-service-closed-ticket-volume
+  employer: Simple App
+  role: Software Developer
+  period: '2026'
+  source:
+    path: registry/candidate/user-supplied-support-automation-comparison-2026-10-02.md
+    quote: 'Q1 2026: 419,127 all closed; 310,195 automated (74.0%); 108,932 human-handled (26.0%). Q2 2026: 377,251 all closed; 303,840 automated (80.5%); 73,411 human-handled (19.5%). The automation rate rose by 6.5 percentage points; automated count fell 2.0% and human-handled count fell 32.6%.'
+    sha256: 1f34302ae0891728f61eed1836676c8e6f234984eb57952ab4732821e6a33b89
+  attribution_source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: '## Simple.life / Simple App'
+    context_quote: '**Role:** Software Developer (confirmed in the earlier career clarification).'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  status: verified
+  verification:
+    reviewer: Codex report and candidate-clarification review
+    reviewed_at: '2026-10-02'
+    method: Checked report totals and calculated three-month averages; candidate
+      separately confirmed all tickets pass through the Go service in
+      registry/candidate/user-corrected-automation-volume-2026-10-02.md.
+  review_notes: The April–June average is 125,750 closed tickets per month through
+    the Go service; 101,280 of those monthly closures were successful automations
+    on average. These are rounded averages of reported aggregates, not measured
+    identical monthly counts or all incoming tickets. Do not reuse the retracted
+    20,000 estimate or attribute all automation outcomes solely to the candidate.

@@ -17,12 +17,13 @@ contribution.
 The automation rate increased by 6.5 percentage points, while the count of
 automatically closed conversations fell by 2.0% as total closed volume fell by
 10.0%. AI Agent closed 52,302 more conversations (+27.5%). April–June averaged
-125,750 *closed conversations across all handlers* per month. This is not, by
-itself, the number of tickets processed by Valentin's Go service: the earlier
-candidate-confirmed lower bound of 20,000 tickets per ordinary month has a
-different stated scope. Valentin confirmed that the report counts overall
-support volume in `registry/candidate/user-confirmed-support-volume-scope-2026-10-02.md`.
-Keep the two figures distinct.
+125,750 *closed conversations across all handlers* and 101,280 successful
+automated closures per month. Valentin subsequently confirmed that all tickets
+pass through his Go service, so the first number is also the average number of
+closed tickets passing through that service. These are averages of three-month
+reported totals, not separately observed equal monthly counts or all incoming
+tickets. His earlier 20,000 automation figure came from a mistaken calculation
+and is retracted; see `registry/candidate/user-corrected-automation-volume-2026-10-02.md`.
 
 ## July–September extrapolation
 
@@ -50,9 +51,9 @@ dates and checking the target vacancy's evidence rules. The wording uses
 elapsed months and does not give the candidate sole credit for aggregate
 changes:
 
-- Built Go-based support automation workflows; across the wider support
-  operation, about 125,750 conversations closed per month, and the share
-  closed without a person rose from 74.0% to 80.5%.
+- Built Go-based support automation workflows on a service handling about
+  125,750 closed tickets per month; platform-wide automated closures averaged
+  101,280 per month, with their share rising from 74.0% to 80.5%.
 - Built LLM support-agent scenarios on a platform where AI Agent closed
   242,823 conversations over three months, 27.5% more than in the preceding
   three months.
