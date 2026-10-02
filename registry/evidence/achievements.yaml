@@ -1432,3 +1432,49 @@ entries:
       claim scope against its stated project context.
   review_notes: Render the effect of backend-owned lawful-calling controls without
     exposing internal implementation or permission names.
+- id: simple-2026-q1-q2-platform-automation-rate
+  employer: Simple App
+  role: Software Developer
+  period: '2026'
+  source:
+    path: registry/candidate/user-supplied-support-automation-comparison-2026-10-02.md
+    quote: 'Q1 2026: 419,127 all closed; 310,195 automated (74.0%); 108,932 human-handled (26.0%). Q2 2026: 377,251 all closed; 303,840 automated (80.5%); 73,411 human-handled (19.5%). The automation rate rose by 6.5 percentage points; automated count fell 2.0% and human-handled count fell 32.6%.'
+    sha256: 1f34302ae0891728f61eed1836676c8e6f234984eb57952ab4732821e6a33b89
+  attribution_source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: '## Simple.life / Simple App'
+    context_quote: '**Role:** Software Developer (confirmed in the earlier career clarification).'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  status: verified
+  verification:
+    reviewer: Codex document and attribution review
+    reviewed_at: '2026-10-02'
+    method: Transcribed the candidate-supplied DOCX, recalculated percentages and
+      compared attribution with candidate-confirmed platform ownership; underlying
+      exports unavailable.
+  review_notes: Platform-wide result to which the candidate contributed; do not
+    claim sole responsibility or imply employment throughout Q2 until the conflicting
+    Simple.life end dates are reconciled. Do not treat lower automated volume as growth.
+- id: simple-2026-q1-q2-ai-agent-volume
+  employer: Simple App
+  role: Software Developer
+  period: '2026'
+  source:
+    path: registry/candidate/user-supplied-support-automation-comparison-2026-10-02.md
+    quote: 'AI Agent closed 190,521 conversations in Q1 2026 and 242,823 in Q2 2026 (+27.5%). Its share of all closed conversations rose from 45.5% to 64.4%; its share of automated closures rose from 61.4% to 79.9%.'
+    sha256: 1f34302ae0891728f61eed1836676c8e6f234984eb57952ab4732821e6a33b89
+  attribution_source:
+    path: registry/candidate/user-confirmed-impact-2026-09-25.md
+    quote: '## Simple.life / Simple App'
+    context_quote: '**Role:** Software Developer (confirmed in the earlier career clarification).'
+    sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+  status: verified
+  verification:
+    reviewer: Codex document and attribution review
+    reviewed_at: '2026-10-02'
+    method: Transcribed the candidate-supplied DOCX, recalculated percentages and
+      compared attribution with candidate-confirmed platform ownership; underlying
+      exports unavailable.
+  review_notes: AI Agent is the report's handler category. The report does not
+    identify which changes caused its growth or assign all growth to the candidate.
+    Reconcile the conflicting Simple.life end dates before employer-facing use.
