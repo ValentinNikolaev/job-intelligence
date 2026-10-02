@@ -669,7 +669,9 @@ entries:
     method: Transcribed direct candidate confirmation from the current task and checked
       scope.
   review_notes: Direct candidate confirmation; no independent source for measurement
-    method.
+    method. The 125,750 monthly average in the later support-operation report counts
+    all closed conversations across handlers; do not silently substitute it for this
+    Go-service ticket count without confirming the populations match.
 - id: pdffiller-user-confirmed
   employer: PDFfiller
   source:
@@ -1453,8 +1455,10 @@ entries:
       compared attribution with candidate-confirmed platform ownership; underlying
       exports unavailable.
   review_notes: Platform-wide result to which the candidate contributed; do not
-    claim sole responsibility or imply employment throughout Q2 until the conflicting
-    Simple.life end dates are reconciled. Do not treat lower automated volume as growth.
+    claim sole responsibility or imply employment throughout April–June until the
+    conflicting Simple.life end dates are reconciled. Do not treat lower automated
+    volume as growth. See registry/evidence/automation-metrics-2026.md for wording
+    without period labels and a separately marked forecast.
 - id: simple-2026-q1-q2-ai-agent-volume
   employer: Simple App
   role: Software Developer
@@ -1478,3 +1482,4 @@ entries:
   review_notes: AI Agent is the report's handler category. The report does not
     identify which changes caused its growth or assign all growth to the candidate.
     Reconcile the conflicting Simple.life end dates before employer-facing use.
+    See registry/evidence/automation-metrics-2026.md for wording without period labels.
