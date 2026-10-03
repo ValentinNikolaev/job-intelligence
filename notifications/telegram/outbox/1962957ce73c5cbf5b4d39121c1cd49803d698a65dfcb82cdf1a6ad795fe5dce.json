@@ -1,0 +1,168 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-03T13:34:47Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Stream-market",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-28_182126_stream-market_php-fullstack-розробник_17545a5f-febc-4996-b4b0-65c41b801855",
+      "score": 78,
+      "title": "PHP Fullstack розробник",
+      "url": "https://jobs.dou.ua/companies/stream-market/vacancies/358896/",
+      "vacancy_id": "17545a5f-febc-4996-b4b0-65c41b801855"
+    },
+    {
+      "company": "Mind Studios",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-28_182124_mind-studios_senior-go-engineer-digital-asset-signing-infrast_2d0703dd-78d5-43e5-8437-75c6ef03f936",
+      "score": 86,
+      "title": "Senior Go Engineer (Digital Asset Signing Infrastructure)",
+      "url": "https://djinni.co/jobs/850590-senior-go-engineer-digital-asset-signing-infr/",
+      "vacancy_id": "2d0703dd-78d5-43e5-8437-75c6ef03f936"
+    },
+    {
+      "company": "Mobilunity",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-28_100226_mobilunity_laravel-typescript-engineer_fe83d80b-0dfd-410f-8e0f-31db3bdf2783",
+      "score": 91,
+      "title": "Laravel Engineer",
+      "url": "https://jobs.dou.ua/companies/mobilunity/vacancies/371170/",
+      "vacancy_id": "fe83d80b-0dfd-410f-8e0f-31db3bdf2783"
+    },
+    {
+      "company": "Kredyt Kapital",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-28_100226_kredyt-kapital_middle-full-stack-developer-php-laravel-vue-reac_43aa1229-9817-46ed-8169-8698615268e6",
+      "score": 84,
+      "title": "Middle Full-Stack Developer (PHP / Laravel / Vue / React)",
+      "url": "https://jobs.dou.ua/companies/kredyt-kapital/vacancies/374766/",
+      "vacancy_id": "43aa1229-9817-46ed-8169-8698615268e6"
+    },
+    {
+      "company": "Nova Digital",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-28_063833_nova-digital_php-developer-mobile-app-nova-post_611470d1-59bc-4550-a4b6-ad99afbe25d2",
+      "score": 82,
+      "title": "PHP Developer (Mobile App Nova Post)",
+      "url": "https://djinni.co/jobs/845118-php-developer-mobile-app-nova-post/",
+      "vacancy_id": "611470d1-59bc-4550-a4b6-ad99afbe25d2"
+    },
+    {
+      "company": "QoQ",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-09-26_062536_qoq_go-developer-middle_d5e90ef5-cc98-4946-9404-181d470f7cd6",
+      "score": 76,
+      "title": "Go Developer (Middle)",
+      "url": "https://djinni.co/jobs/844885-go-developer-middle/",
+      "vacancy_id": "d5e90ef5-cc98-4946-9404-181d470f7cd6"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-10-03_061815_canonical_ubuntu-core-software-engineer_9f29bd12-df71-4f7b-9014-87baa3d17411",
+      "score": 73,
+      "title": "Ubuntu Core Software Engineer",
+      "url": "https://jobicy.com/jobs/149996-ubuntu-core-software-engineer",
+      "vacancy_id": "9f29bd12-df71-4f7b-9014-87baa3d17411"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [
+        "CA",
+        "US"
+      ],
+      "directory": "2026-10-03_061815_canonical_software-architect-containers-virtualisation_d61fb0d3-49b2-49af-a196-6a9703cd6059",
+      "score": 69,
+      "title": "Software Architect - Containers / Virtualisation",
+      "url": "https://jobicy.com/jobs/149981-software-architect-containers-virtualisation",
+      "vacancy_id": "d61fb0d3-49b2-49af-a196-6a9703cd6059"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-10-03_061815_canonical_python-engineering-manager-commercial-systems_1e5731f8-7297-4941-b03e-06a568901121",
+      "score": 69,
+      "title": "Python Engineering Manager, Commercial Systems",
+      "url": "https://jobicy.com/jobs/149989-python-engineering-manager-commercial-systems",
+      "vacancy_id": "1e5731f8-7297-4941-b03e-06a568901121"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "2026-10-03_061815_canonical_golang-engineering-manager-commercial-systems_d55f4816-7bda-40fa-aab2-ea4341396678",
+      "score": 83,
+      "title": "Golang Engineering Manager, Commercial Systems",
+      "url": "https://jobicy.com/jobs/149984-golang-engineering-manager-commercial-systems",
+      "vacancy_id": "d55f4816-7bda-40fa-aab2-ea4341396678"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [
+        "CA",
+        "US"
+      ],
+      "directory": "2026-10-03_061815_canonical_engineering-manager-public-cloud-python-golang_802b0938-cdaa-4335-9cd0-b50dbb049bb5",
+      "score": 80,
+      "title": "Engineering Manager - Public Cloud, Python, Golang",
+      "url": "https://jobicy.com/jobs/149985-engineering-manager-public-cloud-python-golang",
+      "vacancy_id": "802b0938-cdaa-4335-9cd0-b50dbb049bb5"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [
+        "CA",
+        "US"
+      ],
+      "directory": "2026-10-03_061815_canonical_engineering-manager-for-iam-identity-and-access_bafd43ea-c0e6-4d78-84ae-30802de5967e",
+      "score": 79,
+      "title": "Engineering Manager for IAM (Identity and Access Management)",
+      "url": "https://jobicy.com/jobs/149980-engineering-manager-for-iam-identity-and-access-management",
+      "vacancy_id": "bafd43ea-c0e6-4d78-84ae-30802de5967e"
+    },
+    {
+      "company": "Miratech",
+      "country_codes": [],
+      "directory": "2026-10-03_002318_miratech_senior-golang-backend-engineer-remote-scalable-i_cd2505f2-ead5-460e-87c8-478c0d1076ab",
+      "score": 79,
+      "title": "Senior Golang Backend Engineer - Remote & Scalable Impact",
+      "url": "https://www.adzuna.es/details/5908611219?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "cd2505f2-ead5-460e-87c8-478c0d1076ab"
+    },
+    {
+      "company": "Miratech",
+      "country_codes": [],
+      "directory": "2026-10-03_002318_miratech_senior-backend-golang-engineer_667a39d5-2d4a-4e31-8047-de2a26685efb",
+      "score": 78,
+      "title": "Senior Backend Golang Engineer",
+      "url": "https://www.adzuna.es/details/5908611372?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "667a39d5-2d4a-4e31-8047-de2a26685efb"
+    },
+    {
+      "company": "MotorK",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-10-02_181233_motork_java-software-engineer_aad3f3cd-ea92-4b5a-a2ac-3e8355063ef8",
+      "score": 74,
+      "title": "Java Software Engineer",
+      "url": "https://himalayas.app/companies/motork/jobs/java-software-engineer",
+      "vacancy_id": "aad3f3cd-ea92-4b5a-a2ac-3e8355063ef8"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "1962957ce73c5cbf5b4d39121c1cd49803d698a65dfcb82cdf1a6ad795fe5dce",
+  "schema_version": 2
+}

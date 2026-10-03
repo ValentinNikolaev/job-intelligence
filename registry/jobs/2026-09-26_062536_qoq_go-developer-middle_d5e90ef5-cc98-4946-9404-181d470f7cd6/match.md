@@ -1,27 +1,28 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 76/100
 **Recommendation:** Match
 
-Go Developer (Middle) at QoQ aligns with the candidate's senior backend and delivery background, with role-specific tooling or domain details requiring verification.
+Good Go backend alignment with transferable distributed-systems and reliability experience; the middle-level scope may underuse the candidate's seniority and exact requirements need verification.
 
 ## Why it matches
 
-- robust, scalable backend in Go.
-- Migrated managed services from ECS to Kubernetes.
-- event-driven system
+- Go
+- backend systems
+- APIs
+- reliability
+- architecture
 
 ## Gaps
 
-- Some vacancy-specific domain and tooling details are not explicitly established in the profile.
+- Role-specific domain and exact Go depth are not fully visible in the sealed description
 
 ## Concerns
 
-- Confirm work authorization, compensation, and availability directly; the sealed profile does not state these facts.
+- Seniority and compensation are unspecified
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Primary role technology and backend delivery | critical / stated | strong | # Go Developer (Middle) | robust, scalable backend in Go. | / |
-| Kubernetes and delivery operations | high / stated | strong | Understanding the basics of Kubernetes and CI/CD | Migrated managed services from ECS to Kubernetes. | / |
+| Go development | critical / stated | strong | Go Developer | backend in Go | / |
