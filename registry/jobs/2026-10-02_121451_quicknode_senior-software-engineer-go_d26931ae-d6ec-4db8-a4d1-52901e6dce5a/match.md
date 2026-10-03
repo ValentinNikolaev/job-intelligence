@@ -1,28 +1,26 @@
 # Match Analysis
 
-**Score:** 84/100
+**Score:** 88/100
 **Recommendation:** Strong Match
 
-Strong Go, distributed-systems, production ownership and blockchain-adjacent background fit; direct RPC infrastructure and precise location eligibility remain uncertainties.
+QuickNode's remote senior Go infrastructure role closely matches the candidate's backend, event-driven, performance, reliability, and AWS experience.
 
 ## Why it matches
 
-- Go backend and distributed-systems fit
-- Production reliability, performance and observability experience
-- Cryptocurrency and high-scale platform background
+- Go backend services, distributed/event-driven systems, performance work, and production ownership are evidenced.
+- Remote company context and Italy location are potentially compatible.
 
 ## Gaps
 
-- Direct blockchain RPC/node infrastructure is not explicitly evidenced
-- Rust is not required by this record
+- Blockchain RPC infrastructure at QuickNode's scale is not directly evidenced.
 
 ## Concerns
 
-- Remote geography and employment eligibility should be confirmed
+- The listing includes Portugal and USA, so country and contract eligibility require confirmation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go distributed-systems engineering | critical / stated | strong | design, build, and scale the critical infrastructure that powers high-performance blockchain RPC services | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | Direct RPC service experience is not explicit. / Frame transferable high-throughput and event-driven systems evidence. |
-| Web3/blockchain infrastructure | high / stated | partial | Experience working with Web3, blockchain infrastructure, or high-throughput API platforms | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | Cryptocurrency domain evidence is older and not specific to RPC infrastructure. / Confirm relevant systems and protocols. |
+| High-throughput backend services in Go | critical / stated | strong | Design, build, and optimize high-throughput, low-latency backend services in Go. | I design and own a support automation platform that connects Zendesk, Intercom, and | Blockchain-specific traffic and latency constraints are not shown. / Emphasize documented throughput, reliability, and performance optimization without claiming RPC experience. |
+| Remote work | high / stated | strong | We are a global remote company | Fiumicino, Latium, Italy | The location field includes Portugal and USA rather than Italy. / Confirm Italian hiring and B2B/employment terms. |

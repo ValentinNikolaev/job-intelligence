@@ -1,24 +1,26 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 71/100
 **Recommendation:** Match
 
-Strong match for experienced Go backend work with PostgreSQL, Elasticsearch, Kubernetes, APIs, and legacy PHP; Toulouse arrangements remain uncertain.
+The Go/NATS/PostgreSQL backend role matches the candidate's Go, event-driven, API, and production-reliability background, but Toulouse location and the exact work arrangement are unresolved.
 
 ## Why it matches
 
-- Go backend
-- PostgreSQL
-- Elasticsearch
-- Kubernetes
-- PHP
-- and production reliability are supported.
-- CRM and backend modernization align with integration and automation experience.
+- Go, event-driven architecture, PostgreSQL, observability, and PHP legacy compatibility are relevant.
+- The candidate has customer-oriented and internal platform experience.
 
 ## Gaps
 
-- NATS and Toulouse work arrangement are not established in the profile.
+- NATS, Elasticsearch, and Toulouse eligibility are not established.
 
 ## Concerns
 
-- The posting does not establish remote eligibility or relocation support.
+- The posting does not state remote work in the supplied excerpt.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Seasoned Golang developer | critical / stated | strong | We are looking for a Golang seasoned developer | I design and own a support automation platform that connects Zendesk, Intercom, and | The role's NATS-specific experience is not shown. / Present verified event-driven and backend systems experience without claiming NATS. |
+| Toulouse work location | high / stated | unknown | Toulouse H/F | Fiumicino, Latium, Italy | Remote or relocation terms are not stated. / Confirm work arrangement and eligibility. |

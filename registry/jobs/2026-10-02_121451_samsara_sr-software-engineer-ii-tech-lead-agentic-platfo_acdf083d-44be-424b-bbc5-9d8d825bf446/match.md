@@ -1,27 +1,26 @@
 # Match Analysis
 
-**Score:** 72/100
-**Recommendation:** Match
+**Score:** 84/100
+**Recommendation:** Strong Match
 
-Senior backend and technical-lead experience aligns with platform ownership and agentic systems; Samsara-specific domain, timezone and exact language requirements require verification.
+The senior tech-lead platform role aligns with the candidate's long experience, system-design judgment, Go backend work, automation, and technical leadership.
 
 ## Why it matches
 
-- Technical leadership and backend ownership
-- Automation/AI-assisted systems and Go experience
-- Distributed systems and production reliability
+- Complex production systems, roadmap influence, APIs, event systems, and operational support are evidenced.
+- The candidate has led teams and mentored engineers.
 
 ## Gaps
 
-- Exact agentic-platform stack and domain experience are not fully evidenced
+- Telematics and mobile/full-stack delivery are not established.
 
 ## Concerns
 
-- Location and working-hours compatibility are not clear from the supplied posting
+- The Poland B2B arrangement and hiring eligibility need confirmation from Italy.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior software engineering and technical leadership | critical / stated | strong | Sr. Software Engineer II / Tech lead, Agentic Platform | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
-| Agentic platform experience | high / stated | partial | Agentic Platform | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | Candidate's automation experience may not map to the platform's specific architecture. / Verify platform, model and deployment expectations. |
+| 8+ years building and operating complex enterprise systems | critical / stated | strong | 8+ years of relevant engineering experience | Directly managed 10 developers. | The specific Samsara domain is unfamiliar. / Anchor claims in documented production systems and operational outcomes. |
+| Technical leadership and team development | high / stated | strong | Hire, develop and lead an inclusive, engaged, and high performing team | Directly managed 10 developers. | The posting may expect a larger formal management scope. / State the documented team size and technical-lead responsibilities precisely. |

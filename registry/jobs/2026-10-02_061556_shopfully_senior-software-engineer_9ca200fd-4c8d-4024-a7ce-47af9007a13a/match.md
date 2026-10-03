@@ -1,20 +1,26 @@
 # Match Analysis
 
-**Score:** 69/100
-**Recommendation:** Match
+**Score:** 82/100
+**Recommendation:** Strong Match
 
-Good Go/AWS/Kubernetes/distributed-systems and ownership fit, but the role has several important requirements not evidenced in the profile: Kafka, Python or Scala, tens-of-billions data, Databricks, and ad-tech.
+Italy-remote senior Go platform work is strongly aligned with the candidate's event-driven systems, production ownership, APIs, and reliability experience, though Kafka and ad-tech are gaps.
 
 ## Why it matches
 
-- Strong Go backend, event-driven architecture, AWS, Kubernetes, REST, and production reliability evidence.
-- Demonstrated ownership of automation and analytics systems with measurable operational impact.
-- GDPR and compliance experience is present.
+- Go, event-driven architecture, observability, distributed systems, and cross-functional leadership are well supported.
+- The candidate is based in Italy and has relevant e-commerce and data-platform exposure.
 
 ## Gaps
 
-- Kafka, Python or Scala, gRPC/Protobuf, Databricks, and ad-tech experience are not established.
+- Kafka, Databricks, ad-tech, and North American overlap are not established.
 
 ## Concerns
 
-- The posting requires North American-hour overlap and on-call ownership; practical fit and availability are unknown.
+- The role requires overlap into North American hours, which should be confirmed as practical.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Backend/distributed systems engineering, ideally Go | critical / stated | strong | 5+ years of backend/distributed systems engineering experience, ideally in Go | Architect a scalable, event-driven system using queues and EventBridge, increasing | Kafka and advertising-domain experience are not shown. / Map queue/event and analytics-pipeline evidence without claiming Kafka or ad-tech expertise. |
+| Remote from Italy with North American overlap | high / stated | unknown | Fluent in English with ability to provide overlap availability into North American hours (9am to 12pm EST). | Fiumicino, Latium, Italy | Availability for the specified overlap is unknown. / Confirm schedule compatibility before applying. |

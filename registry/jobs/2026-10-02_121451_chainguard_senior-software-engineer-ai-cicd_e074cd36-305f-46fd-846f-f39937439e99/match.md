@@ -1,29 +1,26 @@
 # Match Analysis
 
-**Score:** 82/100
+**Score:** 81/100
 **Recommendation:** Strong Match
 
-Strong Go, Kubernetes, CI/CD, AI tooling and autonomous product-engineering fit; hardened supply-chain security depth is the main gap.
+Chainguard's remote senior engineering and CI/CD-security context fits the candidate's backend, AWS/Kubernetes, CI/CD, and reliability background, with security-product gaps.
 
 ## Why it matches
 
-- Go, Kubernetes and CI/CD are explicitly evidenced
-- AI-assisted automation experience
-- Senior end-to-end delivery and architecture background
+- AWS, Kubernetes, CI/CD, production troubleshooting, and technical leadership are supported.
+- The candidate has experience integrating automation into engineering and support workflows.
 
 ## Gaps
 
-- Container/artifact supply-chain security is not directly evidenced
-- Customer-facing product experience is only partially explicit
+- AI CI/CD and software-supply-chain security are not directly established.
 
 ## Concerns
 
-- European remote eligibility and exact working-hours expectations need confirmation
+- The advertised USD salary and unspecified hiring geography may be incompatible with Italy.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Containers, Kubernetes and CI/CD | critical / stated | strong | Expertise with containers, artifact registries, Docker, Kubernetes and its greater ecosystem | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | Artifact-registry security is not explicit. / Highlight deployment and CI/CD ownership, then verify registry controls. |
-| Go | high / stated | strong | Proficiency with Go (Golang) or strong readiness to ramp quickly. | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
-| AI tooling | high / stated | strong | Experience with AI tooling and a genuine enthusiasm for applying it to complex problems | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
+| Senior software engineering for AI/CI/CD | high / stated | partial | Senior Software Engineer (AI CICD) | Implemented CI/CD pipelines to ensure efficient software development processes, | The AI and supply-chain-security core may require experience not in the profile. / Present CI/CD and automation evidence without claiming security-product expertise. |
+| Flexible remote-first culture | high / stated | unknown | Flexible & Remote-First Culture | Fiumicino, Latium, Italy | Remote location eligibility is not specified. / Verify Italy/EMEA employment coverage. |

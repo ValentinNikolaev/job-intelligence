@@ -1,20 +1,26 @@
 # Match Analysis
 
-**Score:** 72/100
+**Score:** 76/100
 **Recommendation:** Match
 
-Strong PHP backend and production engineering fit for the mobility/insurance scale-up, with meaningful Laravel/Symfony, SQL, queues, testing, and reliability evidence; Paris and French-language compatibility are unresolved.
+The permanent PHP backend role is technically aligned through the candidate's PHP, Symfony/Laravel, integrations, and production systems experience, with Paris location and French-language uncertainty.
 
 ## Why it matches
 
-- Deep PHP backend experience with Laravel, Symfony, SQL, APIs, queues, and performance optimization.
-- Relevant scale-up, finance-related, and business-critical production background.
-- Evidence of CI/CD, monitoring, incident diagnosis, and pragmatic architecture.
+- PHP backend and framework experience is a strong match.
+- The candidate has mobility, insurance, payment, and integration-domain exposure.
 
 ## Gaps
 
-- French fluency and regular Paris availability are not established.
+- French proficiency and Paris work eligibility are not established.
 
 ## Concerns
 
-- The posting appears Paris-based and the recorded source does not establish remote eligibility.
+- The posting appears client-recruiter sourced and does not clearly state remote work.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| Backend Engineer PHP | critical / stated | strong | Backend Engineer PHP (F/H/X) | I have a strong track record in PHP, with 5 years of leadership experience. | The client's exact framework and architecture are only partially visible. / Tailor to verified PHP/Symfony/Laravel and integration evidence. |
+| Paris-based permanent employment | high / stated | unknown | Backend Engineer PHP | Fiumicino, Latium, Italy | Relocation, remote policy, and French-language expectations are unknown. / Confirm work arrangement and language requirements before applying. |

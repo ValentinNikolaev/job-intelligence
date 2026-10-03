@@ -3,26 +3,24 @@
 **Score:** 74/100
 **Recommendation:** Match
 
-Strong PHP backend and integration fit for Symfony services, with relevant API, e-commerce, database, reliability, and multi-system experience; German-language and location details are material unknowns.
+The PHP/Symfony backend role matches the candidate's PHP, integrations, and production backend history, while Konstanz location and German-language expectations remain uncertain.
 
 ## Why it matches
 
-- PHP, Symfony, backend integrations, databases, and production reliability are supported.
-- E-commerce, payment, fulfillment-adjacent, and high-volume systems experience is relevant.
-- AWS, Kubernetes, REST APIs, and event-driven architecture broaden the fit.
+- PHP backend, Symfony, integrations, and scalable service experience are relevant.
+- E-commerce and payment-related background transfers well to fulfillment services.
 
 ## Gaps
 
-- German language proficiency, Sulu CMS, customs/fulfillment domain, and exact local work authorization are not established.
+- German proficiency and local work eligibility are not established.
 
 ## Concerns
 
-- The posting is for Konstanz and the sealed record does not clearly establish remote eligibility.
+- The posting does not clearly establish remote work from Italy.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| German language | critical / stated | unknown | PHP Backend Developer (m/w/d) |  | The role's German-language expectation is not explicit enough to establish either compatibility or conflict. / Confirm language requirement and candidate proficiency. |
-| PHP backend and Symfony services | critical / stated | strong | PHP Backend Developer | Developed a Laravel/Symfony-based product-wide logger package | / |
-| Partner integrations and APIs | high / stated | strong | Partner-Integrationen | Develop integration with Stripe/PayPal/Skrill payment gateway providers. | / |
+| PHP backend development with Symfony services | critical / stated | strong | Als PHP Backend Developer entwickelst du die Services | I have a strong track record in PHP, with 5 years of leadership experience. | Sulu-CMS and the company's exact domain stack are not in the profile. / Use verified PHP/Symfony and integration experience only. |
+| Konstanz-based work | high / stated | unknown | Als PHP Backend Developer | Fiumicino, Latium, Italy | Relocation, remote terms, and German requirements are unknown. / Confirm cross-border hiring or relocation support. |
