@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 72
+Total vacancies: 74
 
-- Found: 50
+- Found: 52
 - Applied: 17
 - Interview: 3
 - Rejected: 2
@@ -13,6 +13,8 @@ Total vacancies: 72
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-03 | [Docebo](../registry/jobs/2026-10-03_183935_docebo_21830-devops-engineer-jobs_afb4e1cd-f7c1-4c67-8362-b2de57e7ce9c/) | [21830 DevOps Engineer Jobs](../registry/jobs/2026-10-03_183935_docebo_21830-devops-engineer-jobs_afb4e1cd-f7c1-4c67-8362-b2de57e7ce9c/job.md) | — | Custom | Found | 2026-10-03 | [Custom](https://alion.io/jobs/devops-engineer) | — | — | — | — | — |
+| 2026-10-03 | [Voodoo](../registry/jobs/2026-10-03_183927_voodoo_senior-backend-engineer-golang-casual-game_2668f7a7-4133-4e82-914f-42d2608c0e77/) | [Senior Backend Engineer (Golang) - Casual Game](../registry/jobs/2026-10-03_183927_voodoo_senior-backend-engineer-golang-casual-game_2668f7a7-4133-4e82-914f-42d2608c0e77/job.md) | Paris, Ile-de-France | Adzuna | Found | 2026-10-03 | [Adzuna](https://www.adzuna.fr/details/5909925270?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-10-03 | [Miratech](../registry/jobs/2026-10-03_134258_miratech_senior-backend-golang-engineer_076ffbc0-fabb-4e91-9eb3-34e66f7f3d43/) | [Senior Backend Golang Engineer](../registry/jobs/2026-10-03_134258_miratech_senior-backend-golang-engineer_076ffbc0-fabb-4e91-9eb3-34e66f7f3d43/job.md) | España | Adzuna | Found | 2026-10-03 | [Adzuna](https://www.adzuna.es/details/5909781698?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_software-architect-containers-virtualisation_d61fb0d3-49b2-49af-a196-6a9703cd6059/) | [Software Architect - Containers / Virtualisation](../registry/jobs/2026-10-03_061815_canonical_software-architect-containers-virtualisation_d61fb0d3-49b2-49af-a196-6a9703cd6059/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149981-software-architect-containers-virtualisation) | — | — | — | — | — |
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_golang-engineering-manager-commercial-systems_d55f4816-7bda-40fa-aab2-ea4341396678/) | [Golang Engineering Manager, Commercial Systems](../registry/jobs/2026-10-03_061815_canonical_golang-engineering-manager-commercial-systems_d55f4816-7bda-40fa-aab2-ea4341396678/job.md) | EMEA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149984-golang-engineering-manager-commercial-systems) | — | — | — | — | — |
