@@ -1,0 +1,63 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-03T21:39:55Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Sysdig",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-09-27_062648_sysdig_senior-software-engineer-platform-team_e7dd55e3-32f0-4fb8-b874-7ec793f337ea",
+      "score": 84,
+      "title": "Senior Software Engineer (Platform team)",
+      "url": "https://himalayas.app/companies/sysdig/jobs/senior-software-engineer-platform-team",
+      "vacancy_id": "e7dd55e3-32f0-4fb8-b874-7ec793f337ea"
+    },
+    {
+      "company": "MeinEinkauf GmbH",
+      "country_codes": [],
+      "directory": "2026-09-26_181803_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh_86ed353c-ac71-4c35-b930-840f269c3ee6",
+      "score": 78,
+      "title": "PHP Backend Developer (m/w/d) - MeinEinkauf GmbH",
+      "url": "https://www.adzuna.de/details/5899681040?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "86ed353c-ac71-4c35-b930-840f269c3ee6"
+    },
+    {
+      "company": "Lumaserv",
+      "country_codes": [
+        "DE"
+      ],
+      "directory": "2026-09-26_181803_lumaserv_php-laravel-backend-developer-gn_e2a3421f-8e20-42cc-aee5-663272891990",
+      "score": 87,
+      "title": "PHP Laravel Backend Developer [gn]",
+      "url": "https://www.adzuna.de/details/5899841802?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "e2a3421f-8e20-42cc-aee5-663272891990"
+    },
+    {
+      "company": "Urban Sports Club",
+      "country_codes": [
+        "ES"
+      ],
+      "directory": "2026-09-26_062528_urban-sports-club_senior-backend-engineer-all-genders-php_d15c7fa0-1ce2-4314-ad4a-6eb2ff0f9872",
+      "score": 80,
+      "title": "Senior Backend Engineer (all genders) - PHP",
+      "url": "https://www.adzuna.es/details/5898050187?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "d15c7fa0-1ce2-4314-ad4a-6eb2ff0f9872"
+    },
+    {
+      "company": "ibelsa",
+      "country_codes": [
+        "DE"
+      ],
+      "directory": "2026-09-26_062528_ibelsa_backend-entwickler-in-php-m-w-d_de789b64-5cc7-499f-94cd-c341d69778d8",
+      "score": 82,
+      "title": "Backend Entwickler:in PHP (m/w/d)",
+      "url": "https://www.adzuna.de/details/5898603009?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "de789b64-5cc7-499f-94cd-c341d69778d8"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "0e5997f8752f24b53edbf6b354574801468371757af728b07b325267cc0cb220",
+  "schema_version": 2
+}
