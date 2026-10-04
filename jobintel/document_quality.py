@@ -224,6 +224,64 @@ def verify_cv_experience(source: Path, artifact: Path) -> int:
     return len(bullets)
 
 
+def cv_role_page_warnings(source: Path, pdf: Path) -> list[dict[str, str | int]]:
+    """Flag role blocks spanning PDF pages for the required human layout review."""
+    markdown = source.read_text(encoding="utf-8-sig")
+    match = re.search(r"(?im)^(?P<marks>#{1,3})\s+Experience\s*$", markdown)
+    if not match:
+        raise DocumentQualityError("CV has no Experience section")
+    remainder = markdown[match.end():]
+    following = re.search(rf"(?m)^#{{1,{len(match['marks'])}}}\s+\S", remainder)
+    section = remainder[:following.start()] if following else remainder
+    roles: list[dict[str, object]] = []
+    for line in section.splitlines():
+        heading = re.match(r"^###\s+(.+?)\s*$", line)
+        if heading:
+            roles.append({"heading": heading.group(1), "bullets": [], "technologies": None})
+        elif roles and re.match(r"^\s*[-*]\s+\S", line):
+            bullets = roles[-1]["bullets"]
+            assert isinstance(bullets, list)
+            bullets.append(re.sub(r"^\s*[-*]\s+", "", line))
+        elif roles and re.match(r"^\s*Technologies\s*:", line, re.IGNORECASE):
+            roles[-1]["technologies"] = line.strip()
+    text, _ = _pdf_contents(pdf)
+    pages = [_tokens(page) for page in text.split("\f") if page.strip()]
+
+    def page_for(fragment: str) -> int | None:
+        sought = _tokens(fragment)
+        if not sought:
+            return None
+        return next((index for index, tokens in enumerate(pages, 1)
+                     if any(tokens[offset:offset + len(sought)] == sought
+                            for offset in range(len(tokens) - len(sought) + 1))), None)
+
+    warnings: list[dict[str, str | int]] = []
+    for role in roles:
+        heading = str(role["heading"])
+        bullets = role["bullets"]
+        assert isinstance(bullets, list)
+        heading_page = page_for(heading)
+        bullet_pages = [page_for(bullet) for bullet in bullets]
+        if heading_page is None or any(page is None for page in bullet_pages):
+            warnings.append({"role": heading, "reason": "page_location_unverified"})
+        elif bullet_pages and heading_page != bullet_pages[0]:
+            warnings.append({"role": heading, "reason": "heading_orphaned",
+                             "heading_page": heading_page, "first_bullet_page": bullet_pages[0]})
+        elif len(set(bullet_pages)) > 1:
+            warnings.append({"role": heading, "reason": "role_split",
+                             "first_page": bullet_pages[0], "last_page": bullet_pages[-1]})
+        technologies = role["technologies"]
+        if technologies is not None and bullet_pages and all(page is not None for page in bullet_pages):
+            technologies_page = page_for(str(technologies))
+            if technologies_page is None:
+                warnings.append({"role": heading, "reason": "technologies_page_unverified"})
+            elif technologies_page != bullet_pages[-1]:
+                warnings.append({"role": heading, "reason": "technologies_orphaned",
+                                 "last_bullet_page": bullet_pages[-1],
+                                 "technologies_page": technologies_page})
+    return warnings
+
+
 def _review(artifact_hash: str, value: Mapping[str, Any] | None) -> dict[str, Any]:
     if value is None:
         return {"status": "not_reviewed", "artifact_sha256": artifact_hash}

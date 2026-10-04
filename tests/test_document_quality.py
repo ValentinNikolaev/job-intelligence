@@ -12,7 +12,7 @@ from unittest.mock import patch
 from xml.sax.saxutils import escape
 
 from jobintel.document_quality import (
-    DocumentQualityError, _tool, export_pdf, file_sha256, markdown_visible_text,
+    DocumentQualityError, _tool, cv_role_page_warnings, export_pdf, file_sha256, markdown_visible_text,
     render_pdf_pages, validate_export,
 )
 from jobintel.document_quality_cli import main
@@ -52,6 +52,47 @@ def write_pdf(path: Path, pages: list[str]) -> None:
         output += f"{offset:010d} 00000 n \n".encode()
     output += f"trailer\n<< /Size {len(objects) + 1} /Root 1 0 R >>\nstartxref\n{xref}\n%%EOF\n".encode()
     path.write_bytes(output)
+
+
+class CvPageLayoutTests(unittest.TestCase):
+    def test_flags_role_heading_orphaned_on_previous_page(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            source = Path(temporary) / "cv.md"
+            source.write_text(
+                "## Experience\n\n### Recent Role | 2023 - 2026\n"
+                "- Built a backend service for support operations.\n"
+                "- Improved its production reliability.\n\n## Education\nMSc\n",
+                encoding="utf-8",
+            )
+            page1 = "Experience Recent Role 2023 2026"
+            page2 = "Built a backend service for support operations Improved its production reliability Education MSc"
+            with patch("jobintel.document_quality._pdf_contents", return_value=(page1 + "\f" + page2 + "\f", 2)):
+                warnings = cv_role_page_warnings(source, Path(temporary) / "cv.pdf")
+            self.assertEqual("heading_orphaned", warnings[0]["reason"])
+            self.assertEqual(1, warnings[0]["heading_page"])
+            self.assertEqual(2, warnings[0]["first_bullet_page"])
+
+    def test_complete_role_on_one_page_has_no_warning(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            source = Path(temporary) / "cv.md"
+            source.write_text("## Experience\n\n### Recent Role | 2023 - 2026\n"
+                              "- Built a backend service for support operations.\n"
+                              "- Improved its production reliability.\n\n## Education\nMSc\n",
+                              encoding="utf-8")
+            text = "Experience Recent Role 2023 2026 Built a backend service for support operations Improved its production reliability Education MSc\f"
+            with patch("jobintel.document_quality._pdf_contents", return_value=(text, 1)):
+                self.assertEqual([], cv_role_page_warnings(source, Path(temporary) / "cv.pdf"))
+
+    def test_flags_technologies_line_left_on_next_page(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            source = Path(temporary) / "cv.md"
+            source.write_text("## Experience\n\n### Recent Role | 2023 - 2026\n"
+                              "- Built a backend service.\nTechnologies: Go, PostgreSQL\n"
+                              "\n## Education\nMSc\n", encoding="utf-8")
+            pages = "Experience Recent Role 2023 2026 Built a backend service\fTechnologies Go PostgreSQL Education MSc\f"
+            with patch("jobintel.document_quality._pdf_contents", return_value=(pages, 2)):
+                warnings = cv_role_page_warnings(source, Path(temporary) / "cv.pdf")
+            self.assertEqual("technologies_orphaned", warnings[0]["reason"])
 
 
 class ExportQualityTests(unittest.TestCase):

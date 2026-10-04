@@ -75,7 +75,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'evidence', 'documents', or 'applications'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'timing', 'evidence', 'documents', or 'applications'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -156,11 +156,37 @@ def _parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> int:
+    command_args = list(sys.argv[1:] if argv is None else argv)
+    stage = {
+        "prepare-preflight": "preflight", "lint-application": "lint",
+        "validate-application": "validation", "prepare": "publication_batch",
+    }.get(command_args[0] if command_args else "")
+    if command_args[:2] == ["documents", "preview-cv"]:
+        stage = "preview"
+    if stage is None:
+        return _main(command_args)
+    from .preparation_timing import timed_call
+
+    selector_start = 2 if command_args[:2] == ["documents", "preview-cv"] else 1
+    selector = next((argument for argument in command_args[selector_start:]
+                     if not argument.startswith("-")), None)
+    if stage in {"preflight", "publication_batch"}:
+        selector = None
+    elif stage == "preview" and selector:
+        selector = Path(selector).parent.name
+    root = Path(__file__).resolve().parents[1]
+    if "--registry" in command_args:
+        root = Path(command_args[command_args.index("--registry") + 1]).resolve().parent
+    return timed_call(root, stage, selector,
+                      lambda: _main(command_args))
+
+
+def _main(argv: list[str] | None = None) -> int:
     _configure_stdio()
     command_args = list(sys.argv[1:] if argv is None else argv)
-    if command_args and command_args[0] in {"applications", "documents", "evidence"}:
+    if command_args and command_args[0] in {"applications", "documents", "evidence", "timing"}:
         from importlib import import_module
-        module = {"applications": "lifecycle_cli", "documents": "document_quality_cli", "evidence": "evidence_cli"}[command_args[0]]
+        module = {"applications": "lifecycle_cli", "documents": "document_quality_cli", "evidence": "evidence_cli", "timing": "preparation_timing"}[command_args[0]]
         return import_module(f".{module}", __package__).main(
             command_args[1:], root=Path(__file__).resolve().parents[1]
         )
@@ -332,11 +358,25 @@ def main(argv: list[str] | None = None) -> int:
                 selection_size=1,
                 document=args.document,
             )
-            validate_application_draft(
-                directory,
-                draft_directory,
-                document=args.document,
+            lint = lint_application_draft(
+                directory, draft_directory, document=args.document,
+                vacancy_text=op.read_text(directory / "job.md"),
             )
+            failures = []
+            if not lint["ok"]:
+                failures.append("draft lint failed: " + "; ".join(
+                    item["code"] for item in lint["diagnostics"]
+                ))
+            try:
+                validate_application_draft(
+                    directory,
+                    draft_directory,
+                    document=args.document,
+                )
+            except Exception as exc:
+                failures.append(str(exc))
+            if failures:
+                raise ValueError("; ".join(failures))
         except Exception as exc:
             print(f"Application draft validation failed: {exc}", file=sys.stderr)
             return 1
@@ -1442,6 +1482,9 @@ def _preflight_preparation(
         "workflow": args.workflow,
         "model": model_label,
         "vacancies": rows,
+        "shared_candidate_context": _shared_candidate_context(
+            project_root, registry_dir, profile_paths
+        ),
     }
     if verify_environment:
         converter = HostMarkdownDocxConverter(project_root)
@@ -1457,6 +1500,38 @@ def _preflight_preparation(
 
         report["worktree"] = finalizer_preflight(project_root)
     return report
+
+
+def _shared_candidate_context(
+    project_root: Path, registry_dir: Path, profile_paths: Sequence[Path]
+) -> dict[str, Any]:
+    """Materialize verified evidence once for a selected batch, without claims or ranking."""
+    profiles = [{"path": str(path), "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
+                for path in profile_paths]
+    bank_path = registry_dir / "evidence" / "achievements.yaml"
+    result: dict[str, Any] = {"profiles": profiles, "verified_evidence": None}
+    if not bank_path.is_file():
+        return result
+    from .evidence import validate_evidence_bank
+
+    bank_bytes = bank_path.read_bytes()
+    bank = _read_yaml_file(bank_path, "candidate evidence bank")
+    validate_evidence_bank(bank, project_root)
+    verified = [entry for entry in bank.get("entries", [])
+                if isinstance(entry, dict) and entry.get("status") == "verified"]
+    digest = hashlib.sha256(bank_bytes).hexdigest()
+    packet = project_root / ".codex-work" / "preparation-shared" / f"verified-evidence-{digest[:20]}.json"
+    packet.parent.mkdir(parents=True, exist_ok=True)
+    payload = {"schema_version": 1, "source_bank": str(bank_path),
+               "source_sha256": digest, "entries": verified}
+    encoded = json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8") + b"\n"
+    if not packet.is_file() or packet.read_bytes() != encoded:
+        temporary = packet.with_suffix(".json.tmp")
+        temporary.write_bytes(encoded)
+        os.replace(temporary, packet)
+    result["verified_evidence"] = {"path": str(packet), "count": len(verified),
+                                    "source_sha256": digest}
+    return result
 
 def _run_preparation_locked(
     args: argparse.Namespace,
@@ -1516,10 +1591,12 @@ def _run_preparation_locked(
                     model=model_label,
                     document=args.document,
                 ),
-                HostMarkdownDocxConverter(project_root),
+                HostMarkdownDocxConverter(project_root, timing_vacancy=directory.name),
                 document=args.document,
             )
-            result = generator.generate_directory(directory, force=args.force)
+            from .preparation_timing import timed_call
+            result = timed_call(project_root, "publication", directory.name,
+                                lambda: generator.generate_directory(directory, force=args.force))
         except Exception as exc:
             summary.errors += 1
             print(f"{directory.name}: preparation failed: {exc}", file=sys.stderr)

@@ -324,6 +324,7 @@ class HostMarkdownDocxConverter:
         script_path: Path | None = None,
         options_path: Path | None = None,
         powershell: str | None = None,
+        timing_vacancy: str | None = None,
     ) -> None:
         self.project_root = project_root.resolve()
         self.script_path = (script_path or _find_docx_script()).resolve()
@@ -331,6 +332,7 @@ class HostMarkdownDocxConverter:
             options_path or self.project_root / "config" / "application-docx-options.json"
         ).resolve()
         self.powershell = powershell or shutil.which("pwsh") or shutil.which("powershell") or ""
+        self.timing_vacancy = timing_vacancy
 
     def preview_digest(self, source: Path) -> str:
         """Bind a preview to exact Markdown, converter script, and DOCX options."""
@@ -367,21 +369,25 @@ class HostMarkdownDocxConverter:
             "-OptionsPath",
             str(self.options_path),
         ]
-        completed = subprocess.run(
-            command,
-            cwd=self.project_root,
-            capture_output=True,
-            text=True,
-            timeout=180,
-            check=False,
-        )
-        if completed.returncode:
-            detail = (completed.stderr or completed.stdout).strip()
-            raise ApplicationError(f"Markdown-to-DOCX conversion failed: {detail[:1000]}")
-        if not op.exists(target) or target.stat().st_size == 0:
-            raise ApplicationError(f"Markdown-to-DOCX converter did not create {target}")
-        if source.name.casefold() == "cv.md":
-            _keep_cv_role_header_with_date(target)
+        def convert_and_check() -> None:
+            completed = subprocess.run(
+                command,
+                cwd=self.project_root,
+                capture_output=True,
+                text=True,
+                timeout=180,
+                check=False,
+            )
+            if completed.returncode:
+                detail = (completed.stderr or completed.stdout).strip()
+                raise ApplicationError(f"Markdown-to-DOCX conversion failed: {detail[:1000]}")
+            if not op.exists(target) or target.stat().st_size == 0:
+                raise ApplicationError(f"Markdown-to-DOCX converter did not create {target}")
+            if source.name.casefold() == "cv.md":
+                _keep_cv_role_header_with_date(target)
+
+        from .preparation_timing import timed_call
+        timed_call(self.project_root, "conversion", self.timing_vacancy or str(source), convert_and_check)
 
 
 def _keep_cv_role_header_with_date(path: Path) -> None:

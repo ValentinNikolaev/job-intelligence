@@ -16,6 +16,7 @@ from jobintel import cli
 from jobintel.document_quality import DocumentQualityError, preview_capabilities
 from jobintel.document_quality_cli import main as document_main
 from jobintel.cli import _resolve_explicit_preparation_directories
+from jobintel.cli import _shared_candidate_context
 
 
 class PreparationGateTests(unittest.TestCase):
@@ -49,6 +50,21 @@ class PreparationGateTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate"):
             _resolve_explicit_preparation_directories(self.root / "registry", ["vacancy", "vacancy"], limit=2)
 
+    def test_shared_candidate_packet_contains_only_verified_entries(self) -> None:
+        candidate = self.root / "registry" / "candidate" / "candidate.md"
+        candidate.write_text("Verified candidate source", encoding="utf-8")
+        bank = self.root / "registry" / "evidence" / "achievements.yaml"
+        bank.parent.mkdir(parents=True)
+        bank.write_text(yaml.safe_dump({"schema_version": 1, "entries": [
+            {"id": "good", "status": "verified", "source": {"quote": "Verified candidate source"}},
+            {"id": "withdrawn", "status": "retracted", "source": {"quote": "Old claim"}},
+        ]}), encoding="utf-8")
+        with patch("jobintel.evidence.validate_evidence_bank"):
+            result = _shared_candidate_context(self.root, self.root / "registry", [candidate])
+        packet = Path(result["verified_evidence"]["path"])
+        self.assertTrue(packet.is_relative_to(self.root / ".codex-work"))
+        self.assertEqual(["good"], [entry["id"] for entry in json.loads(packet.read_text())["entries"]])
+
     def test_preview_capability_reports_unavailable_renderer(self) -> None:
         script, options = self.root / "converter.ps1", self.root / "options.json"
         script.write_text("convert", encoding="utf-8")
@@ -79,7 +95,7 @@ class PreparationGateTests(unittest.TestCase):
         draft.mkdir()
         (draft / "parts").mkdir()
         (draft / "parts" / "evidence-map.md").write_text("incomplete handoff", encoding="utf-8")
-        (draft / "cv.md").write_text("## Summary\nCandidate\n\n## Skills\nPHP\n\n## Experience\n### Acme | 2024 - Present\n- Same result\n- Same result\n- Technologies: PHP\n### Old | 2010 - 2011\n- Technologies: PHP\n\n## Education\nCS\n\n## Languages\nEnglish\n", encoding="utf-8")
+        (draft / "cv.md").write_text("## Summary\nCandidate \n\n## Skills\nPHP\n\n## Experience\n### Acme | 2024 - Present\n- Same result\n- Same result\n- Technologies: PHP\n### Old | 2010 - 2011\n- Technologies: PHP\n\n## Education\nCS\n\n## Languages\nEnglish\n", encoding="utf-8")
         bank = {"schema_version": 1, "entries": [
             {"id": "verified", "status": "verified", "employer": "Acme", "role": "Engineer", "period": "2024", "technologies": [], "source": {"path": "registry/candidate/candidate.md", "quote": "Candidate source", "sha256": source_hash}, "verification": {"reviewer": "test", "reviewed_at": "2026-01-01", "method": "test"}},
             {"id": "blocked", "status": "retracted", "reason": "withdrawn", "employer": "Acme", "role": "Engineer", "period": "2024", "technologies": [], "source": {"path": "registry/candidate/candidate.md", "quote": "Candidate source", "sha256": source_hash}},
@@ -91,7 +107,7 @@ class PreparationGateTests(unittest.TestCase):
         report = lint_application_draft(vacancy, draft, document="cv")
         codes = {item["code"] for item in report["diagnostics"]}
         self.assertFalse(report["ok"])
-        self.assertTrue({"HANDOFF_MARKER", "ARTIFACT_HASH_STALE", "CV_AUDIT_ANCHOR", "CV_DUPLICATE_BULLET", "CV_TECHNOLOGIES_NOT_BULLETS", "EVIDENCE_UNAVAILABLE", "CLAIM_ROLE_INCOMPATIBLE", "CANDIDATE_QUOTE_NOT_EXACT", "JOB_QUOTE_NOT_EXACT"}.issubset(codes))
+        self.assertTrue({"HANDOFF_MARKER", "ARTIFACT_HASH_STALE", "CV_AUDIT_ANCHOR", "CV_DUPLICATE_BULLET", "CV_TECHNOLOGIES_NOT_BULLETS", "EVIDENCE_UNAVAILABLE", "CLAIM_ROLE_INCOMPATIBLE", "CANDIDATE_QUOTE_NOT_EXACT", "JOB_QUOTE_NOT_EXACT", "TRAILING_WHITESPACE"}.issubset(codes))
 
     def test_lint_accepts_canonical_mongodb_job_text_without_local_projection(self) -> None:
         candidate = self.root / "registry" / "candidate" / "candidate.md"

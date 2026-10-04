@@ -80,6 +80,8 @@ def lint_application_draft(
         path = draft / APPLICATION_FILES[APPLICATION_DOCUMENTS[name]]
         try:
             package[APPLICATION_DOCUMENTS[name]] = path.read_text(encoding="utf-8-sig")
+            if any(line.rstrip(" \t") != line for line in package[APPLICATION_DOCUMENTS[name]].splitlines()):
+                _diagnostic(diagnostics, "TRAILING_WHITESPACE", f"{path.name} has trailing spaces or tabs", path)
         except OSError:
             _diagnostic(diagnostics, "DOCUMENT_MISSING", f"required draft document is missing: {path.name}", path)
     if quality is not None:

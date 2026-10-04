@@ -22,15 +22,29 @@ It checks the selected explicit batch, the configured storage adapter, canonical
 resolution, required MongoDB metadata, approved-profile match freshness, score eligibility,
 and `hard_rejection`. For a MongoDB backend it writes a minimal `meta.yaml`, `job.md`,
 `match.yaml`, and optional company view only under `.codex-work/vacancy-snapshots/`.
+Its `shared_candidate_context` lists the immutable profile sources and a verified-only
+evidence packet under ignored `.codex-work/preparation-shared/`. Read those shared
+candidate facts once for the selected batch. Keep each vacancy's posting, match,
+research, claims, CV, and quality receipt independent; never copy a vacancy-specific
+judgment or paragraph into another package. For each CV, explicitly review every
+relevant source role in the ten-year Experience window and record why it appears
+or is omitted; role-depth checks alone cannot detect a missing employer.
 Never copy metadata from a shared checkout. A nonzero preflight ends the run before any
 draft, preview, conversion, or canonical package path is created.
 
 For each final CV, run:
 
 ```text
-python run.py documents preview-cv .codex-work/application/<directory>/cv.md
 python run.py validate-application <directory> --input .codex-work/application/<directory> --document cv
+python run.py documents preview-cv .codex-work/application/<directory>/cv.md
 ```
+
+`validate-application` first reports aggregate lint defects, including trailing
+whitespace and stale quality hashes, then runs the full grounding contract. Fix
+these defects before any DOCX or PDF conversion. The preview receipt includes
+`layout_warnings` when a role heading or its bullets span pages; use them to
+adjust the source before the required visual review. An empty warning list is
+not a visual approval.
 
 The preview uses the same Markdown-to-DOCX converter and options as publication.
 It stores the DOCX, PDF, page images, and receipt under `.codex-work/previews/`.
@@ -50,13 +64,16 @@ draft if an edit is needed. Run the catalog in its own process, the required ful
 suite, evidence checks, and the prohibited-API scan. Do not rerun the full suite
 after a successful gate unless a relevant code change requires it.
 
-Record actual elapsed seconds in an ignored `.codex-work/preparation-timing.json`
-with keys `preflight`, `analysis`, `editorial_drafting`, `validation`, `preview`,
-`conversion`, `visual_review`, `publication`, and `finalization`. Record `null` for a stage that
-the run did not perform; never estimate human drafting from command time. Time
-preview conversion separately from the human review. Include a short before/after
-table in the report with the exact fixture or batch used and the remaining slowest
-stage.
+CLI commands automatically record UTC boundaries and elapsed seconds for preflight,
+lint, validation, preview, DOCX conversion, PDF export, page rendering, and publication
+under ignored `.codex-work/preparation-timing/events/`. Mark model and human work
+at its real boundaries with `python run.py timing start editorial_drafting --vacancy
+<directory>` and `python run.py timing stop editorial_drafting --vacancy <directory>`;
+the same commands accept `analysis`, `visual_review`, and `finalization`. Run
+`python run.py timing report` to create `.codex-work/preparation-timing.json` with
+events and stage totals. Never infer human drafting from command time. Include a
+before/after table with the exact fixture or batch used and the slowest remaining
+stage; note overlapping batch work rather than summing it as serial elapsed time.
 
 For repository publication, run `python scripts/finalize_repository.py review`.
 Inspect the complete binary-capable `.codex-work/finalization/review.patch` and its

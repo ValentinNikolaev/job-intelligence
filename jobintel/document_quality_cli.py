@@ -11,7 +11,8 @@ from pathlib import Path
 
 import yaml
 
-from .document_quality import DocumentQualityError, export_pdf, pdf_page_count, preview_capabilities, render_pdf_pages, validate_export, verify_cv_experience
+from .document_quality import DocumentQualityError, cv_role_page_warnings, export_pdf, pdf_page_count, preview_capabilities, render_pdf_pages, validate_export, verify_cv_experience
+from .preparation_timing import timed_call
 
 
 def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
@@ -49,7 +50,7 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
             work = (base / ".codex-work").resolve()
             if source.name != "cv.md" or not _win_long_path(source).is_file() or not source.is_relative_to(work):
                 raise DocumentQualityError("preview-cv requires a draft cv.md under .codex-work")
-            converter = HostMarkdownDocxConverter(base)
+            converter = HostMarkdownDocxConverter(base, timing_vacancy=source.parent.name)
             try:
                 capability = preview_capabilities(converter.script_path, converter.options_path, converter.powershell)
             except DocumentQualityError as exc:
@@ -67,6 +68,9 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
                     raise DocumentQualityError("cached CV preview no longer matches its source or rendered artifacts")
                 if result["page_count"] > args.max_pages:
                     raise DocumentQualityError(f"PDF has {result['page_count']} pages, exceeding the budget of {args.max_pages}")
+                if "layout_warnings" not in result:
+                    result["layout_warnings"] = cv_role_page_warnings(source, target / "cv.pdf")
+                    receipt.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                 result["cached"] = True
             else:
                 parent.mkdir(parents=True, exist_ok=True)
@@ -76,13 +80,16 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
                     converter.convert(stage / "cv.md", stage / "cv.docx")
                     docx_check = validate_export(stage / "cv.md", stage / "cv.docx")
                     bullets = verify_cv_experience(stage / "cv.md", stage / "cv.docx")
-                    export_pdf(stage / "cv.docx", stage / "cv.pdf")
+                    timed_call(base, "pdf_export", source.parent.name,
+                               lambda: export_pdf(stage / "cv.docx", stage / "cv.pdf"))
                     page_count = pdf_page_count(stage / "cv.pdf")
                     if page_count > args.max_pages:
                         raise DocumentQualityError(f"PDF has {page_count} pages, exceeding the budget of {args.max_pages}")
-                    pages = render_pdf_pages(stage / "cv.pdf", stage / "pages")
+                    pages = timed_call(base, "page_render", source.parent.name,
+                                       lambda: render_pdf_pages(stage / "cv.pdf", stage / "pages"))
                     if len(pages["pages"]) != page_count:
                         raise DocumentQualityError("rendered page count differs from PDF metadata")
+                    layout_warnings = cv_role_page_warnings(stage / "cv.md", stage / "cv.pdf")
                     if target.exists():
                         raise DocumentQualityError(f"incomplete preview already exists: {target}")
                     stage.rename(target)
@@ -92,7 +99,8 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
                           "source_sha256": docx_check["source_sha256"],
                           "docx_sha256": docx_check["artifact_sha256"],
                           "pdf_sha256": pages["artifact_sha256"],
-                          "visual_review": "required", "cached": False}
+                          "visual_review": "required", "layout_warnings": layout_warnings,
+                          "cached": False}
                 receipt.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             result["availability"] = capability
         elif args.action == "validate":
