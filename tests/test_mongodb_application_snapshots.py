@@ -147,16 +147,18 @@ class MongoApplicationSnapshotTests(unittest.TestCase):
             (self.root / "options.json").write_text("{}", encoding="utf-8")
             preview = converter.preview_directory(draft / "cv.md")
             preview.mkdir(parents=True)
+            canonical_cv = (draft / "cv.md").read_text(encoding="utf-8").strip().encode("utf-8") + b"\n"
+            (preview / "cv.md").write_bytes(canonical_cv)
             artifact = preview / "cv.docx"
             artifact.write_bytes(b"preview")
             (preview / "receipt.json").write_text(json.dumps({
-                "source_sha256": hashlib.sha256((draft / "cv.md").read_bytes()).hexdigest(),
+                "source_sha256": hashlib.sha256(canonical_cv).hexdigest(),
                 "docx_sha256": hashlib.sha256(artifact.read_bytes()).hexdigest(),
                 "page_count": 2, "rendered_pages": 2, "experience_bullets": 10,
             }), encoding="utf-8")
             staged = self.root / ".codex-work" / "staged" / "cv.md"
             staged.parent.mkdir(parents=True)
-            staged.write_bytes((draft / "cv.md").read_bytes())
+            staged.write_bytes(canonical_cv)
             self.assertTrue(_reuse_cv_preview(draft / "cv.md", staged, staged.with_suffix(".docx"), converter))
 
             seen_before_publication = []

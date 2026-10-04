@@ -706,7 +706,7 @@ def validate_application_package(
         content = value[field]
         if not isinstance(content, str) or not content.strip():
             raise ApplicationError(f"{field} must be non-empty Markdown")
-        clean = content.strip() + "\n"
+        clean = _canonical_application_markdown(content)
         if "```" in clean[:20]:
             raise ApplicationError(f"{field} must not be wrapped in a code fence")
         result[field] = clean
@@ -1857,11 +1857,17 @@ def _reuse_cv_preview(
         receipt = json.loads(_win_long_path(receipt_path).read_text(encoding="utf-8"))
         artifact = preview / "cv.docx"
         source_hash = hashlib.sha256(_win_long_path(staged_source).read_bytes()).hexdigest()
+        draft_hash = hashlib.sha256(_canonical_application_markdown(
+            _win_long_path(draft).read_text(encoding="utf-8")
+        ).encode("utf-8")).hexdigest()
+        preview_hash = hashlib.sha256(_win_long_path(preview / "cv.md").read_bytes()).hexdigest()
         artifact_hash = hashlib.sha256(_win_long_path(artifact).read_bytes()).hexdigest()
-    except (OSError, ValueError) as exc:
+    except (OSError, UnicodeError, ValueError) as exc:
         raise ApplicationError(f"CV preview could not be verified: {exc}") from exc
     if (
         receipt.get("source_sha256") != source_hash
+        or receipt.get("source_sha256") != draft_hash
+        or receipt.get("source_sha256") != preview_hash
         or receipt.get("docx_sha256") != artifact_hash
         or receipt.get("page_count", 0) < 1
         or receipt.get("page_count", 0) > 2
@@ -1887,6 +1893,11 @@ def _read_yaml_mapping(path: Path, label: str) -> dict[str, Any]:
 
 def _content_version(content: str) -> str:
     return "sha256:" + hashlib.sha256(content.encode("utf-8")).hexdigest()
+
+
+def _canonical_application_markdown(content: str) -> str:
+    """Match the Markdown bytes written for a validated application draft."""
+    return content.strip() + "\n"
 
 
 def _win_long_path(path: Path) -> Path:

@@ -4,7 +4,6 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import shutil
 import sys
 import tempfile
 from pathlib import Path
@@ -44,7 +43,7 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
 
     try:
         if args.action == "preview-cv":
-            from .applications import HostMarkdownDocxConverter, _win_long_path
+            from .applications import HostMarkdownDocxConverter, _canonical_application_markdown, _win_long_path
 
             source = resolve(args.source).resolve()
             work = (base / ".codex-work").resolve()
@@ -59,9 +58,14 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
             target = converter.preview_directory(source)
             parent = target.parent
             receipt = target / "receipt.json"
+            canonical_source = _canonical_application_markdown(
+                _win_long_path(source).read_text(encoding="utf-8")
+            ).encode("utf-8")
+            canonical_hash = hashlib.sha256(canonical_source).hexdigest()
             if receipt.is_file() and (target / "cv.docx").is_file() and (target / "cv.pdf").is_file():
                 result = json.loads(receipt.read_text(encoding="utf-8"))
-                if (result.get("source_sha256") != hashlib.sha256(_win_long_path(source).read_bytes()).hexdigest()
+                if (result.get("source_sha256") != canonical_hash
+                        or result.get("source_sha256") != hashlib.sha256(_win_long_path(target / "cv.md").read_bytes()).hexdigest()
                         or result.get("docx_sha256") != hashlib.sha256((target / "cv.docx").read_bytes()).hexdigest()
                         or result.get("pdf_sha256") != hashlib.sha256((target / "cv.pdf").read_bytes()).hexdigest()
                         or len(list((target / "pages").glob("page-*.png"))) != result.get("page_count")):
@@ -76,7 +80,7 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
                 parent.mkdir(parents=True, exist_ok=True)
                 with tempfile.TemporaryDirectory(prefix=".preview-", dir=parent) as temporary:
                     stage = Path(temporary)
-                    shutil.copyfile(_win_long_path(source), stage / "cv.md")
+                    (stage / "cv.md").write_bytes(canonical_source)
                     converter.convert(stage / "cv.md", stage / "cv.docx")
                     docx_check = validate_export(stage / "cv.md", stage / "cv.docx")
                     bullets = verify_cv_experience(stage / "cv.md", stage / "cv.docx")
