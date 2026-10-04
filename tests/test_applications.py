@@ -28,12 +28,67 @@ from jobintel.applications import (
     _validate_cv_role_depth,
     _validate_cover_letter_paragraphs,
     _keep_cv_role_header_with_date,
+    _merge_quality_reports,
     _validate_draft_quality,
     _publish_staged_package,
     resolve_job_directories,
     validate_application_draft,
     validate_application_package,
 )
+
+
+class QualityMergeTests(unittest.TestCase):
+    def test_cv_only_update_preserves_other_document_receipts(self) -> None:
+        previous = {
+            "documents": {name: {"sha256": f"old-{name}"} for name in
+                          ("cv", "cover-letter", "analysis", "interview-preparation")},
+            "exports": {"cv": {"artifact_sha256": "old-cv-export"},
+                        "cover-letter": {"artifact_sha256": "letter-export"}},
+            "method": {"workflow": "two-wave", "cover_letter": {"skill": "write-cover-letter"}},
+            "handoffs": {"research.md": {"sha256": "research"},
+                         "evidence-map.md": {"sha256": "old-map"},
+                         "requirements-risks.md": {"sha256": "risks"}},
+            "grounding": {
+                "claims": [{"document": name, "text": f"old-{name}", "evidence_ids": [name]}
+                           for name in ("cv", "cover-letter", "analysis", "interview-preparation")],
+                "document_sha256": {name: f"old-{name}" for name in
+                                    ("cv", "cover-letter", "analysis", "interview-preparation")},
+                "evidence_ids": ["cv", "cover-letter", "analysis", "interview-preparation"],
+                "evidence_entries": [{"id": name} for name in
+                                     ("cv", "cover-letter", "analysis", "interview-preparation")],
+                "claim_count": 4,
+            },
+        }
+        current = {
+            "documents": {"cv": {"sha256": "new-cv"}},
+            "exports": {"cv": {"artifact_sha256": "new-cv-export"}},
+            "method": {"workflow": "two-wave"},
+            "handoffs": {"evidence-map.md": {"sha256": "new-map"}},
+            "grounding": {
+                "claims": [{"document": "cv", "text": "new-cv", "evidence_ids": ["new-cv"]}],
+                "document_sha256": {"cv": "new-cv", "cover-letter": "unreviewed-letter-hash"},
+                "evidence_ids": ["new-cv"],
+                "evidence_entries": [{"id": "new-cv"}],
+                "claim_count": 1,
+            },
+        }
+
+        merged = _merge_quality_reports(previous, current, document="cv")
+
+        self.assertEqual("new-cv", merged["documents"]["cv"]["sha256"])
+        self.assertEqual("old-cover-letter", merged["documents"]["cover-letter"]["sha256"])
+        self.assertEqual("letter-export", merged["exports"]["cover-letter"]["artifact_sha256"])
+        self.assertEqual("write-cover-letter", merged["method"]["cover_letter"]["skill"])
+        self.assertEqual("research", merged["handoffs"]["research.md"]["sha256"])
+        self.assertEqual("risks", merged["handoffs"]["requirements-risks.md"]["sha256"])
+        self.assertEqual("new-map", merged["handoffs"]["evidence-map.md"]["sha256"])
+        self.assertEqual("old-cover-letter", merged["grounding"]["document_sha256"]["cover-letter"])
+        self.assertEqual("new-cv", merged["grounding"]["document_sha256"]["cv"])
+        self.assertEqual(4, merged["grounding"]["claim_count"])
+        self.assertEqual({"new-cv", "old-cover-letter", "old-analysis", "old-interview-preparation"},
+                         {claim["text"] for claim in merged["grounding"]["claims"]})
+        self.assertEqual({"new-cv", "cover-letter", "analysis", "interview-preparation"},
+                         set(merged["grounding"]["evidence_ids"]))
 
 
 class ExperienceRoleDepthTests(unittest.TestCase):

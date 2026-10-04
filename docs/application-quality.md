@@ -192,6 +192,12 @@ submission snapshots and lifecycle source receipts retain raw-byte hashes. Singl
 document mode includes only selected document hashes and applicable CV/letter fields.
 The existing substantive handoffs remain required.
 
+When one document is republished, its manifest quality receipt replaces only that
+document's claims, hashes, export, and applicable handoffs. Receipts for unchanged
+documents remain in the manifest. `grounding.document_receipts` records each
+document's review and claims-ledger source after such a merge. The top-level
+claims-ledger hash and path refer to the newly published document.
+
 Standard limits remain CV 400–800 words, letter 300–450. A CV Summary is one
 employer-facing paragraph of 50–110 words and cannot contain internal evidence IDs,
 source/verification commentary, gap notes, placeholders, or drafting language.

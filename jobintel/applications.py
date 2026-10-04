@@ -1321,6 +1321,77 @@ def _merge_quality_reports(
             **(dict(previous_exports) if isinstance(previous_exports, Mapping) else {}),
             **(dict(current_exports) if isinstance(current_exports, Mapping) else {}),
         }
+    for field in ("method", "handoffs"):
+        old = previous.get(field)
+        new = current.get(field)
+        if isinstance(old, Mapping) or isinstance(new, Mapping):
+            merged[field] = {
+                **(dict(old) if isinstance(old, Mapping) else {}),
+                **(dict(new) if isinstance(new, Mapping) else {}),
+            }
+    old_grounding = previous.get("grounding")
+    new_grounding = current.get("grounding")
+    if isinstance(old_grounding, Mapping):
+        grounding = dict(old_grounding)
+        if isinstance(new_grounding, Mapping):
+            grounding.update(new_grounding)
+        old_hashes = old_grounding.get("document_sha256")
+        new_hashes = new_grounding.get("document_sha256") if isinstance(new_grounding, Mapping) else None
+        document_hashes = dict(old_hashes) if isinstance(old_hashes, Mapping) else {}
+        if isinstance(new_hashes, Mapping) and document in new_hashes:
+            document_hashes[document] = new_hashes[document]
+        else:
+            document_hashes.pop(document, None)
+        grounding["document_sha256"] = document_hashes
+
+        selected_names = {document, APPLICATION_DOCUMENTS[document]}
+        old_claims = old_grounding.get("claims")
+        new_claims = new_grounding.get("claims") if isinstance(new_grounding, Mapping) else None
+        claims = [claim for claim in old_claims if isinstance(claim, Mapping)
+                  and claim.get("document") not in selected_names] if isinstance(old_claims, list) else []
+        if isinstance(new_claims, list):
+            claims.extend(new_claims)
+        grounding["claims"] = claims
+        grounding["claim_count"] = len(claims)
+
+        evidence_ids = sorted({identifier for claim in claims for identifier in claim.get("evidence_ids", [])})
+        entries = {}
+        for receipt in (old_grounding, new_grounding):
+            if not isinstance(receipt, Mapping):
+                continue
+            for entry in receipt.get("evidence_entries", []):
+                if isinstance(entry, Mapping) and isinstance(entry.get("id"), str):
+                    entries[entry["id"]] = entry
+        missing_entries = set(evidence_ids) - entries.keys()
+        if missing_entries:
+            raise ApplicationError("application quality receipt lacks evidence entries: " + ", ".join(sorted(missing_entries)))
+        grounding["evidence_ids"] = evidence_ids
+        grounding["evidence_entries"] = [entries[identifier] for identifier in evidence_ids]
+
+        old_receipts = old_grounding.get("document_receipts")
+        document_receipts = dict(old_receipts) if isinstance(old_receipts, Mapping) else {}
+        if not document_receipts and isinstance(old_hashes, Mapping):
+            document_receipts = {name: {
+                "document_sha256": digest,
+                "claims_ledger_sha256": old_grounding.get("sha256"),
+                "claims_ledger_path": old_grounding.get("claims_ledger_path"),
+                "reviewer": old_grounding.get("reviewer"),
+                "declaration_sha256": previous.get("declaration_sha256"),
+            } for name, digest in old_hashes.items()}
+        if isinstance(new_hashes, Mapping) and document in new_hashes:
+            document_receipts[document] = {
+                "document_sha256": new_hashes[document],
+                "claims_ledger_sha256": new_grounding.get("sha256"),
+                "claims_ledger_path": new_grounding.get("claims_ledger_path"),
+                "reviewer": new_grounding.get("reviewer"),
+                "declaration_sha256": current.get("declaration_sha256"),
+            }
+        else:
+            document_receipts.pop(document, None)
+        grounding["document_receipts"] = document_receipts
+        if document == "cv" and not isinstance(new_grounding, Mapping):
+            grounding.pop("cv_audit", None)
+        merged["grounding"] = grounding
     return merged
 
 
