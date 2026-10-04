@@ -1,0 +1,745 @@
+profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
+company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
+prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+model: codex:gpt-5.6-terra:medium
+analysis: &id001
+  model: codex:gpt-5.6-terra:medium
+  score: 86
+  analyzed_at: '2026-10-04T18:39:12Z'
+  version: sha256:521332b5eb65c547438c60ffa4077841c0a52e4c28e44f9733eab946fd9f46ec
+quality_contract_version: 2
+cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
+generated_at: '2026-10-04T19:09:58Z'
+documents:
+  cv:
+    profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+    vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
+    company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
+    prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+    model: codex:gpt-5.6-terra:medium
+    analysis: *id001
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
+    generated_at: '2026-10-04T19:09:58Z'
+  cover-letter:
+    profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+    vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
+    company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
+    prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+    model: codex:gpt-5.6-terra:medium
+    analysis: *id001
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
+    generated_at: '2026-10-04T19:09:58Z'
+  analysis:
+    profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+    vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
+    company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
+    prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+    model: codex:gpt-5.6-terra:medium
+    analysis: *id001
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
+    generated_at: '2026-10-04T19:09:58Z'
+  interview-preparation:
+    profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+    vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
+    company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
+    prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+    model: codex:gpt-5.6-terra:medium
+    analysis: *id001
+    quality_contract_version: 2
+    cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
+    generated_at: '2026-10-04T19:09:58Z'
+quality:
+  contract_version: 2
+  documents:
+    cv:
+      word_count: 455
+      sha256: sha256:e1bfa7a030613df9d8fdf7a96ebef24269d119c11d597ca1d3733a7989389fef
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
+    cover-letter:
+      word_count: 306
+      sha256: sha256:87ee8290dd60ba5a8c3c9680b04027eb0db50cad314ce232bf6b20487b1e743f
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
+    analysis:
+      word_count: 905
+      sha256: sha256:2a080dcc3ff36b01b163cf0925186f9c9440294b170ce6743098a2f3248e9d25
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
+    interview-preparation:
+      word_count: 965
+      sha256: sha256:111a60d8f08e0e562ff51272ab51a242110228f4bad75da10f0c45ed22debc0c
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
+  document_format: standard
+  grounding:
+    schema_version: 1
+    sha256: 0adc16665c4de78b964f41e27546057cfd76a1f5a235f27dda20b2d339754206
+    evidence_bank:
+      schema_version: 1
+      sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
+      entry_count: 65
+      statuses:
+        cannot-confirm: 3
+        retracted: 4
+        unverified: 9
+        verified: 49
+    claim_count: 16
+    evidence_ids:
+    - career-15-years
+    - crurated-confirmed-crutrade-production
+    - crurated-confirmed-datalake-production
+    - crurated-confirmed-event-version-production
+    - crurated-reviewed-stream-onboarding
+    - crurated-reviewed-throughput
+    - pdffiller-user-confirmed
+    - simple-2026-helpdesk-gateway
+    - simple-2026-llm-agent
+    - simple-2026-snowflake-pipelines
+    - simple-2026-telephony-privacy
+    evidence_entries:
+    - id: career-15-years
+      employer: null
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: 'Backend engineer with 15+ years of experience building and improving
+          production
+
+          systems across **PHP** and **Go**.'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED Crutrade integration: full technical ownership of production
+          authentication/OTP, account linking, collection import/export, purchase-ownership
+          verification, and request/response logging.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED DataLake and event analytics: full technical ownership, production
+          use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-confirmed-event-version-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED parallel event-version publication: full technical ownership,
+          production use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED new analytics stream setup dropped from several days to under
+          4 hours through modular design under the candidate's technical ownership;
+          operational observation was identified as the basis.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated system scope and preserve original units;
+        candidate correction supersedes this entry.
+    - id: crurated-reviewed-throughput
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED DataLake throughput increased by over 10x under the candidate's
+          technical ownership; Grafana and operational observation were identified
+          as verification sources.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated system scope and preserve original units;
+        candidate correction supersedes this entry.
+    - id: pdffiller-user-confirmed
+      employer: PDFfiller
+      source:
+        path: registry/candidate/user-confirmed-impact-2026-09-25.md
+        quote: 'Confirmed for application claims: at PDFfiller, the ordinary monthly
+          volume
+
+          was about 3 million emails, with up to 10x volume during BFCM, and he led
+          five
+
+          backend engineers.'
+        context_quote: '**PDFfiller role:** Software Developer'
+        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Transcribed direct candidate correction in this task; measurement
+          system not supplied.
+      review_notes: Direct candidate confirmation; supersedes conflicting imported
+        volume claims.
+      role: Software Developer
+    - id: simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug 2026)**
+
+          - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+          a vendor-neutral event model; the only repo holding vendor SDKs.
+
+          - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+          ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+          Zendesk adapter with full outbound (reply, note, tags, status), client +
+          service in the support-agent, dev environment and deploy.
+
+          - Enabled the company''s first B2B demo of the support-AI product (golden
+          cases + admin console).'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: &id002
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: '- **Role:** Software Developer'
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-llm-agent
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+          tickets)**
+
+          - Implemented 10+ agent action tools: subscription cancel, cancellation
+          offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+          vision), attachments extraction, useful-links generation for new billing,
+          review processing for a second product.
+
+          - Built the evaluation pipeline: conversation texts + action events + subscription-state
+          snapshots on ticket open/close → Eval JSON.
+
+          - Built email and product-ticket categorization on prompts; retro-mapped
+          500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+          - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+          responses, nil-error wrapping, malformed session data, content_filter errors,
+          duplicate handling, language misdetection).
+
+          - Migrated 3 services to DeepL without language detection.
+
+          - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id002
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-snowflake-pipelines
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one
+          engine (Sep 2026)**
+
+          - Researched the codebase, proved ~70% structural identity, replaced 3 independent
+          cron pipelines (CEO questions, profile reports, deletion feedback) with
+          one two-phase engine (ingest + push; keyset pagination, run budget, throttle,
+          retries, feature flag) via Template Method with 6 hook points.
+
+          - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered.
+          Removed a hard cap of 100 items/day. Eliminated daily full-history re-reads
+          from Snowflake. No public API / admin-UI changes; no downtime.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id002
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+        quote: "## Context and ownership\n\nSimple operates in the medical and health\
+          \ domain, including clinic callback requests;\nevery call carries PII and\
+          \ potentially PHI. The candidate owned the architecture and\nbackend end\
+          \ to end, authored the epic and design document and made the security\n\
+          decisions. The work passed formal security sign-off (DEV-35381) and a BAA\
+          \ and\ncall-recording compliance review (DEV-35382), then reached production\
+          \ on 2026-09-25\nwith a three-person cross-functional team: backend, frontend\
+          \ and SRE.\n\n## Verified privacy, access and audit design\n\n- The customer\
+          \ phone number was resolved server-side, never returned by the API,\n  rendered\
+          \ in the agent UI or written to logs; only a mask reached the browser. There\n\
+          \  was no number-reveal UI.\n"
+        sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+        context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
+      status: verified
+      verification:
+        reviewer: Candidate direct confirmation and Codex source review
+        reviewed_at: '2026-09-27'
+        method: Recorded the candidate''s direct clarification verbatim and checked
+          the claim scope against its stated project context.
+      review_notes: Internal ticket identifiers, permission names and detailed consent
+        flow are source context. Render only the employer-relevant privacy, security
+        and lawful calling outcome in a CV.
+    checks:
+    - source_quotes
+    - source_hashes
+    - verified_status
+    - numeric_tokens
+    - declared_attribution
+    - cv_bullet_coverage
+    semantic_review_required: true
+    cv_audit:
+      target_role: Senior Backend Engineer PHP e integrazioni API
+      top_third_evidence_ids:
+      - career-15-years
+      - simple-2026-helpdesk-gateway
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: Codex root independent final reviewer of terra_medium CV
+        mode: independent
+      bullet_decisions:
+      - text: Progettato e portato in produzione una piattaforma di chiamate outbound
+          su Amazon Connect, con architettura backend, controlli di accesso e protezioni
+          per dati personali sottoposti a security sign-off.
+        decision: keep
+        reason: Mostra progettazione backend, privacy e responsabilità di produzione
+          pertinenti ai canali conversazionali.
+        weight: critical
+        signal_type: security
+        ordering_rationale: È la prova più forte di giudizio tecnico e conseguenza
+          di prodotto nel ruolo.
+        contribution: Architettura e backend end-to-end della piattaforma di chiamata.
+        affected_scope: Flusso di chiamate con PII e team cross-funzionale.
+        consequence: Security sign-off e rilascio in produzione.
+        verdict: approve
+      - text: Realizzato un gateway Go multi-tenant che astrae Intercom e Zendesk
+          dietro un modello eventi comune, con contratti OpenAPI, webhook e adapter
+          per entrambi i servizi, abilitando la prima demo B2B dell'azienda per il
+          prodotto di supporto AI.
+        decision: keep
+        reason: Dimostra integrazioni REST e progettazione di contratti direttamente
+          rilevanti.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Segue la prova privacy perché collega API e risultato
+          di prodotto.
+        contribution: Gateway, contratti e adapter dei fornitori di helpdesk.
+        affected_scope: Integrazioni Intercom e Zendesk e prodotto di supporto AI.
+        consequence: Prima demo B2B dell'azienda.
+        verdict: approve
+      - text: Consolidato tre pipeline Snowflake–Intercom in un unico motore riutilizzabile,
+          rimuovendo il limite di 100 elementi al giorno e le riletture quotidiane
+          dell'intera cronologia senza interruzioni del servizio.
+        decision: keep
+        reason: Mostra semplificazione con conseguenza operativa documentata.
+        weight: medium
+        signal_type: reliability
+        ordering_rationale: Dopo le integrazioni principali, aggiunge prova distinta
+          di manutenibilità.
+        contribution: Consolidamento in un motore riutilizzabile.
+        affected_scope: Tre pipeline Snowflake–Intercom.
+        consequence: Rimossi limite operativo e riletture complete senza downtime.
+        verdict: approve
+      - text: Sviluppato strumenti backend per annullamenti, rimborsi, categorizzazione
+          e gestione delle recensioni per il supporto clienti.
+        decision: keep
+        reason: Collega il contributo a un risultato di piattaforma con attribuzione
+          limitata.
+        weight: low
+        signal_type: impact
+        ordering_rationale: Chiude il ruolo perché il risultato è condiviso e non
+          una metrica personale.
+        contribution: Molti strumenti e scenari di automazione backend.
+        affected_scope: Piattaforma di supporto Simple.life.
+        consequence: Strumenti backend per flussi di supporto clienti.
+        verdict: approve
+      - text: Avuto piena responsabilità tecnica del DataLake e dell'analytics degli
+          eventi in produzione, con throughput aumentato di oltre 10x secondo Grafana
+          e osservazione operativa.
+        decision: keep
+        reason: È la prova più forte di ownership PHP e scale per il ruolo richiesto.
+        weight: critical
+        signal_type: scale
+        ordering_rationale: Apre il ruolo con ownership e risultato misurato.
+        contribution: Responsabilità tecnica di DataLake e analytics.
+        affected_scope: Sistema eventi CRURATED in produzione.
+        consequence: Throughput aumentato oltre dieci volte.
+        verdict: approve
+      - text: Reso modulare la configurazione dei nuovi stream analytics, riducendo
+          l'avvio da alcuni giorni a meno di quattro ore.
+        decision: keep
+        reason: Mostra una decisione di progettazione con impatto operativo misurato.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Segue il risultato di throughput con una seconda prova
+          quantitativa distinta.
+        contribution: Progettazione modulare degli stream.
+        affected_scope: Avvio di nuovi stream analytics.
+        consequence: Avvio ridotto a meno di quattro ore.
+        verdict: approve
+      - text: Realizzato la pubblicazione parallela di versioni degli eventi in produzione,
+          mantenendo la compatibilità durante l'evoluzione degli schemi.
+        decision: keep
+        reason: Mostra evoluzione sicura degli eventi in produzione.
+        weight: medium
+        signal_type: reliability
+        ordering_rationale: Aggiunge una prova di affidabilità senza ripetere le metriche
+          precedenti.
+        contribution: Pubblicazione parallela delle versioni evento.
+        affected_scope: Schemi ed elaborazione eventi di produzione.
+        consequence: Compatibilità durante l'evoluzione degli schemi.
+        verdict: approve
+      - text: 'Gestito tecnicamente l''integrazione Crutrade in produzione: autenticazione
+          e OTP, collegamento account, import/export delle collezioni, verifica della
+          proprietà degli acquisti e logging delle richieste e risposte.'
+        decision: keep
+        reason: Dimostra un'integrazione esterna di produzione con responsabilità
+          completa.
+        weight: low
+        signal_type: impact
+        ordering_rationale: Completa il ruolo con un esempio distinto di API e integrazione.
+        contribution: Ownership tecnica dell'integrazione Crutrade.
+        affected_scope: Account, collezioni e verifica acquisti.
+        consequence: Integrazione disponibile in produzione.
+        verdict: approve
+      - text: Guidato cinque backend engineer nello sviluppo di un servizio di email
+          transazionali ad alto volume.
+        decision: keep
+        reason: Aggiunge leadership backend documentata senza gonfiare lo scope.
+        weight: high
+        signal_type: team_influence
+        ordering_rationale: Apre il ruolo storico con la responsabilità di team.
+        contribution: Guida di cinque backend engineer.
+        affected_scope: Servizio email transazionale.
+        consequence: Capacità di delivery su servizio ad alto volume.
+        verdict: approve
+      - text: Preparato il servizio per circa 3 milioni di email mensili e per picchi
+          BFCM fino a dieci volte il traffico ordinario, con attenzione a capacità
+          e affidabilità della messaggistica.
+        decision: keep
+        reason: Fornisce una prova corretta di capacità e affidabilità, con cifra
+          rettificata dal candidato.
+        weight: medium
+        signal_type: reliability
+        ordering_rationale: Segue la leadership con il contesto operativo verificato.
+        contribution: Preparazione del servizio ai picchi di traffico.
+        affected_scope: Infrastruttura email transazionale.
+        consequence: Capacità per volume ordinario e picchi BFCM.
+        verdict: approve
+    reviewer: Codex root final grounding and consistency reviewer
+    document_sha256:
+      cv: sha256:e1bfa7a030613df9d8fdf7a96ebef24269d119c11d597ca1d3733a7989389fef
+      cover-letter: sha256:87ee8290dd60ba5a8c3c9680b04027eb0db50cad314ce232bf6b20487b1e743f
+      analysis: sha256:2a080dcc3ff36b01b163cf0925186f9c9440294b170ce6743098a2f3248e9d25
+      interview-preparation: sha256:111a60d8f08e0e562ff51272ab51a242110228f4bad75da10f0c45ed22debc0c
+    requirements:
+    - requirement: Conoscenza approfondita di PHP o altro linguaggio elencato
+      importance: critical
+      basis: stated
+      jd_quote: conoscenza approfondita di almeno uno tra PHP, JavaScript ES5+, TypeScript,
+        Python e Java
+      match: strong
+      candidate_quote: PHP
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - career-15-years
+    - requirement: Esperienza di sviluppo software di almeno quattro anni
+      importance: high
+      basis: stated
+      jd_quote: almeno 4 anni di esperienza nello sviluppo software
+      match: strong
+      candidate_quote: 15+ years
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - career-15-years
+    - requirement: Progettazione e consumo di API REST
+      importance: high
+      basis: stated
+      jd_quote: progettazione, utilizzo e consumo di API REST
+      match: strong
+      candidate_quote: OpenAPI
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+    evidence_bank_path: registry/evidence/achievements.yaml
+    claims_ledger_path: claims.yaml
+    claims:
+    - document: cv
+      text: Progettato e portato in produzione una piattaforma di chiamate outbound
+        su Amazon Connect, con architettura backend, controlli di accesso e protezioni
+        per dati personali sottoposti a security sign-off.
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
+    - document: cv
+      text: Realizzato un gateway Go multi-tenant che astrae Intercom e Zendesk dietro
+        un modello eventi comune, con contratti OpenAPI, webhook e adapter per entrambi
+        i servizi, abilitando la prima demo B2B dell'azienda per il prodotto di supporto
+        AI.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
+    - document: cv
+      text: Consolidato tre pipeline Snowflake–Intercom in un unico motore riutilizzabile,
+        rimuovendo il limite di 100 elementi al giorno e le riletture quotidiane dell'intera
+        cronologia senza interruzioni del servizio.
+      evidence_ids:
+      - simple-2026-snowflake-pipelines
+      employer: Simple.life
+      role: Software Developer
+    - document: cv
+      text: Sviluppato strumenti backend per annullamenti, rimborsi, categorizzazione
+        e gestione delle recensioni per il supporto clienti.
+      evidence_ids:
+      - simple-2026-llm-agent
+      employer: Simple.life
+      role: Software Developer
+    - document: cv
+      text: Avuto piena responsabilità tecnica del DataLake e dell'analytics degli
+        eventi in produzione, con throughput aumentato di oltre 10x secondo Grafana
+        e osservazione operativa.
+      evidence_ids:
+      - crurated-confirmed-datalake-production
+      - crurated-reviewed-throughput
+    - document: cv
+      text: Reso modulare la configurazione dei nuovi stream analytics, riducendo
+        l'avvio da alcuni giorni a meno di quattro ore.
+      evidence_ids:
+      - crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
+    - document: cv
+      text: Realizzato la pubblicazione parallela di versioni degli eventi in produzione,
+        mantenendo la compatibilità durante l'evoluzione degli schemi.
+      evidence_ids:
+      - crurated-confirmed-event-version-production
+      employer: CRURATED
+      role: PHP Software Developer
+    - document: cv
+      text: 'Gestito tecnicamente l''integrazione Crutrade in produzione: autenticazione
+        e OTP, collegamento account, import/export delle collezioni, verifica della
+        proprietà degli acquisti e logging delle richieste e risposte.'
+      evidence_ids:
+      - crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
+    - document: cv
+      text: Guidato cinque backend engineer nello sviluppo di un servizio di email
+        transazionali ad alto volume.
+      evidence_ids:
+      - pdffiller-user-confirmed
+      employer: PDFfiller
+      role: Software Developer
+    - document: cv
+      text: Preparato il servizio per circa 3 milioni di email mensili e per picchi
+        BFCM fino a dieci volte il traffico ordinario, con attenzione a capacità e
+        affidabilità della messaggistica.
+      evidence_ids:
+      - pdffiller-user-confirmed
+      employer: PDFfiller
+      role: Software Developer
+    - document: cover-letter
+      text: In un incarico parallelo come PHP Software Developer per CRURATED ho avuto
+        piena responsabilità tecnica di DataLake e analytics degli eventi in produzione.
+      evidence_ids:
+      - crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
+    - document: analysis
+      text: PHP
+      evidence_ids:
+      - career-15-years
+    - document: interview-preparation
+      text: PHP
+      evidence_ids:
+      - career-15-years
+    - document: cv
+      text: PHP e Go
+      evidence_ids:
+      - career-15-years
+    - document: cv
+      text: piattaforme di supporto basate su API e canali conversazionali
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+    - document: cover-letter
+      text: Un gateway Go ha unificato Intercom e Zendesk tramite un modello eventi,
+        contratti OpenAPI, webhook e adapter dedicati, consentendo la prima demo B2B
+        dell'azienda per il prodotto di supporto AI.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
+  declaration_sha256: sha256:e97634e04a0b2b410e80a1bc575da3066c4d875a5c10e57205dc5d17e425e1e5
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      skill: write-cover-letter
+      version: 15.0.0
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://www.comparasemplice.it/chi-siamo
+  handoffs:
+    research.md:
+      word_count: 189
+      sha256: sha256:e644aaefaee8b1d03f14b0fef178d7bd2700cb69c1011c6f2d0b65116ace8859
+    evidence-map.md:
+      word_count: 990
+      sha256: sha256:10bb501ee439a0619a995dba0af5afb7a58d406ebb29992318f0a65bce2a4a80
+    requirements-risks.md:
+      word_count: 541
+      sha256: sha256:15dd26cb1d1b4452b75f3626d135d23d25a67acceda41c47e63f944112c09a7e
+  exports:
+    cv:
+      schema_version: 1
+      source_file: cv.md
+      artifact_file: cv.docx
+      source_sha256: e1bfa7a030613df9d8fdf7a96ebef24269d119c11d597ca1d3733a7989389fef
+      artifact_sha256: 1d934028d418e3ac08fd2264bb652aaa4012c4ca7c182e0074c6917d0fc46e7c
+      extracted_text_sha256: 30472eb867f36f51b85ce9ab056e97773669b7226f4976a803ec2334fac0b250
+      canonical_tokens: 471
+      extracted_tokens: 471
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 32
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: reviewed
+        artifact_sha256: 1d934028d418e3ac08fd2264bb652aaa4012c4ca7c182e0074c6917d0fc46e7c
+        reviewer: Codex root visual reviewer
+        reviewed_at: '2026-10-04T19:05:38.214435+00:00'
+        checks:
+          blank_pages: true
+          overflow: true
+          page_breaks: true
+          readability: true
+        method: recorded reviewer attestation; not an automated visual judgment
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+      preview_reused: true
+    cover-letter:
+      schema_version: 1
+      source_file: cover-letter.md
+      artifact_file: cover-letter.docx
+      source_sha256: 87ee8290dd60ba5a8c3c9680b04027eb0db50cad314ce232bf6b20487b1e743f
+      artifact_sha256: 2c0a6eeb45843c14c2882c04a04a821a2f2993d2b1ebbf84fce41016f1c97de6
+      extracted_text_sha256: 3cdb552f8ce3c28ab39953478fa6da3adcb70e0932b016e17ca2ad23218221c7
+      canonical_tokens: 314
+      extracted_tokens: 314
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 7
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: 2c0a6eeb45843c14c2882c04a04a821a2f2993d2b1ebbf84fce41016f1c97de6
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+files:
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md
