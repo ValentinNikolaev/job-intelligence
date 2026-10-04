@@ -1,27 +1,29 @@
 # Match Analysis
 
-**Score:** 72/100
-**Recommendation:** Match
+**Score:** 84/100
+**Recommendation:** Strong Match
 
-Good PHP backend alignment and substantially more senior experience than requested; the middle-level scope and any specific framework requirements need confirmation.
+Strong Laravel/PHP backend match for high-load product work with MySQL, Redis, RabbitMQ, APIs, Docker and code review; AI-agent depth is the main uncertainty.
 
 ## Why it matches
 
-- Long PHP backend history
-- Laravel/Symfony
-- SQL and production systems
+- PHP/Laravel
+- MySQL, Redis, RabbitMQ and async processing
+- REST integrations, Docker and production reliability
 
 ## Gaps
 
-- Vacancy-specific framework and product context are not strongly evidenced in the sealed summary
+- AI-agent tooling and race-condition specifics are not explicit
+- Payment-system and HMAC details are not explicit
 
 ## Concerns
 
-- Potential seniority mismatch if the role has limited ownership
+- The role is middle level despite the candidate's senior scope
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP backend development | critical / stated | strong | Middle PHP Backend Developer | PHP | / |
-| Backend production experience | high / structural | strong | Middle PHP Backend Developer | PHP | / |
+| Laravel/PHP | critical / stated | strong | 2-3+ роки PHP, впевнений Laravel | PHP \| Laravel | / |
+| AI coding agents | high / stated | unknown | Практичний досвід з AI-агентами для кодингу |  | Daily-tool expectation is unverified / Discuss Codex/agent workflow experience |
+| MySQL, Redis and RabbitMQ | high / stated | strong | MySQL: індекси, план запиту, оптимізація важких вибірок; Redis | MySQL | Redis is not in the concise CV evidence / Confirm recent Redis work |

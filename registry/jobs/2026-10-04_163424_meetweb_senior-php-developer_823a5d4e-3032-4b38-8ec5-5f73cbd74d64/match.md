@@ -1,31 +1,27 @@
 # Match Analysis
 
-**Score:** 78/100
+**Score:** 74/100
 **Recommendation:** Match
 
-Strong fit for a senior PHP backend role because the candidate has 15+ years of backend experience, a strong PHP record, and Laravel/Symfony experience; the remote arrangement is compatible, but the posting provides too little detail to assess responsibilities, language, salary, or authorization.
+Senior PHP alignment is strong and the posting offers home working, but the captured vacancy contains almost no technical requirements beyond title and location.
 
 ## Why it matches
 
-- Extensive PHP backend experience, including Laravel, Symfony, and production systems.
-- Seniority and leadership evidence align with the Senior PHP Developer title.
-- Remote work is explicitly offered, compatible with the candidate's Italy-based location.
+- Senior PHP background
+- Remote benefit
+- Backend and product experience
 
 ## Gaps
 
-- The vacancy provides no detailed responsibilities, technical requirements, language requirements, salary, or work-authorization information.
+- Framework, database, seniority scope and language requirements are absent
 
 ## Concerns
 
-- The posting identifies Napoli while only stating work from home; the exact remote-work geography and any location or timezone constraints are not specified.
+- The source extract is too sparse for a detailed technical assessment
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior PHP development experience | critical / stated | strong | Senior PHP Developer | I have a strong track record in PHP, with 5 years of leadership experience. | / |
-| Remote-work geography and language requirements | high / stated | unknown | Napoli, Campania |  | The posting does not state whether work from home is available from the candidate's location or what language level is required. / Verify geographic eligibility, timezone expectations, and language requirements with MEETWEB. |
-| PHP backend skills and relevant frameworks | high / structural | strong | Senior PHP Developer | Backend engineer with 15+ years of experience building and improving production | / |
-| Full-time permanent employment | meaningful / stated | unknown | Tipo di contratto: Tempo pieno, Tempo indeterminato |  | The candidate's availability and preference for a full-time permanent contract are not stated in the profile. / Confirm availability and contract preference before applying. |
-| Senior-level ownership and experience | meaningful / inferred | strong |  | I'm a highly experienced developer with over 15 years of expertise. | / |
-| Remote work compatibility | meaningful / stated | strong | Lavoro da casa | Rome, Italy | / |
+| Senior PHP development | critical / stated | strong | Senior PHP Developer | PHP | / |
+| Remote work | high / stated | strong | Lavoro da casa | Rome, Italy | Terms are not detailed / Confirm cross-border hiring |

@@ -1,0 +1,100 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-04T22:21:31Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "TocToc",
+      "country_codes": [],
+      "directory": "2026-10-04_220435_toctoc_sviluppatore-php-toctoc_cc94766e-f4c6-44de-ac5b-90dbbda6795c",
+      "score": 78,
+      "title": "Sviluppatore php - TocToc",
+      "url": "https://www.toctoc.me/sviluppatore-php/",
+      "vacancy_id": "cc94766e-f4c6-44de-ac5b-90dbbda6795c"
+    },
+    {
+      "company": "ESIS Italia",
+      "country_codes": [],
+      "directory": "2026-10-04_220251_esis-italia_programmatore-php-rif-3975-esis-italia_83091776-83b0-443b-91ba-64437ea11004",
+      "score": 76,
+      "title": "Programmatore PHP (Rif. 3975) - ESIS Italia",
+      "url": "https://www.esis-italia.com/annunci-di-lavoro/programmatore-php-rif-3975/",
+      "vacancy_id": "83091776-83b0-443b-91ba-64437ea11004"
+    },
+    {
+      "company": "MEETWEB",
+      "country_codes": [],
+      "directory": "2026-10-04_163424_meetweb_senior-php-developer_823a5d4e-3032-4b38-8ec5-5f73cbd74d64",
+      "score": 74,
+      "title": "Senior PHP Developer",
+      "url": "https://it.indeed.com/viewjob?jk=db36fda271f20057",
+      "vacancy_id": "823a5d4e-3032-4b38-8ec5-5f73cbd74d64"
+    },
+    {
+      "company": "SIXT",
+      "country_codes": [],
+      "directory": "2026-10-02_121447_sixt_senior-middle-backend-engineer_2b08a76f-f956-417a-857f-f9a8ebc61e9f",
+      "score": 91,
+      "title": "Senior\\Middle Backend Engineer",
+      "url": "https://jobs.dou.ua/companies/sixt/vacancies/350228/",
+      "vacancy_id": "2b08a76f-f956-417a-857f-f9a8ebc61e9f"
+    },
+    {
+      "company": "Netpeak",
+      "country_codes": [],
+      "directory": "2026-10-02_121447_netpeak_senior-full-stack-developer-php-symfony-vue-js_9567720c-184a-4940-9562-8f6382bcf401",
+      "score": 70,
+      "title": "Senior Full-Stack Developer (PHP/Symfony + Vue.js)",
+      "url": "https://jobs.dou.ua/companies/netpeak/vacancies/375331/",
+      "vacancy_id": "9567720c-184a-4940-9562-8f6382bcf401"
+    },
+    {
+      "company": "Frozeneon",
+      "country_codes": [],
+      "directory": "2026-10-02_121447_frozeneon_middle-php-backend-developer_bf97f814-ae4d-4ba8-90eb-41f54bcc54e2",
+      "score": 84,
+      "title": "Middle PHP Backend Developer",
+      "url": "https://jobs.dou.ua/companies/frozeneon/vacancies/371043/",
+      "vacancy_id": "bf97f814-ae4d-4ba8-90eb-41f54bcc54e2"
+    },
+    {
+      "company": "Dillo",
+      "country_codes": [],
+      "directory": "2026-10-02_002603_dillo_senior-php-developer-php-vue-mysql-stable-e-comm_53f5713a-ed03-416a-b57e-7ed3738c2c69",
+      "score": 69,
+      "title": "Senior PHP Developer (PHP, Vue, MySQL) – Stable e-Commerce SaaS",
+      "url": "https://djinni.co/jobs/825575-senior-php-developer-php-vue-mysql-stable-e-c/",
+      "vacancy_id": "53f5713a-ed03-416a-b57e-7ed3738c2c69"
+    },
+    {
+      "company": "Nova Digital",
+      "country_codes": [],
+      "directory": "2026-10-01_181320_nova-digital_php-developer-mobile-app-nova-post_f18fbede-63f0-4a03-add1-90909fc9db73",
+      "score": 82,
+      "title": "PHP Developer (Mobile App Nova Post)",
+      "url": "https://jobs.dou.ua/companies/nova-digital/vacancies/371133/",
+      "vacancy_id": "f18fbede-63f0-4a03-add1-90909fc9db73"
+    },
+    {
+      "company": "MAKEUP",
+      "country_codes": [],
+      "directory": "2026-10-01_181320_makeup_php-tech-lead_74afd9e4-33d1-4ccc-8790-f0dcdd1ec0fc",
+      "score": 93,
+      "title": "PHP Tech Lead",
+      "url": "https://jobs.dou.ua/companies/makeup/vacancies/375291/",
+      "vacancy_id": "74afd9e4-33d1-4ccc-8790-f0dcdd1ec0fc"
+    },
+    {
+      "company": "Akvelon",
+      "country_codes": [],
+      "directory": "2026-09-30_181231_akvelon_senior-back-end-go-engineer_c51d9df6-7e51-4013-8ad3-6bc67c590856",
+      "score": 86,
+      "title": "Senior Back-end (Go) Engineer",
+      "url": "https://djinni.co/jobs/851019-senior-back-end-go-engineer/",
+      "vacancy_id": "c51d9df6-7e51-4013-8ad3-6bc67c590856"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ea2478f0fe8a2dfe9c6193fd06d93ad402946e00a6fda28ffc8ce8f0c022a6ea",
+  "schema_version": 2
+}
