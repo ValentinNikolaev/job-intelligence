@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-04T12:16:03Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Monzo",
+      "country_codes": [
+        "GB"
+      ],
+      "directory": "2026-10-04_080334_monzo_backend-engineer-iii_17641bfe-ea36-42fd-87d2-0c258165c9fa",
+      "score": 82,
+      "title": "Backend Engineer III",
+      "url": "https://jobicy.com/jobs/152499-backend-engineer-iii",
+      "vacancy_id": "17641bfe-ea36-42fd-87d2-0c258165c9fa"
+    },
+    {
+      "company": "Miratech",
+      "country_codes": [
+        "ES"
+      ],
+      "directory": "2026-10-04_080321_miratech_senior-golang-backend-engineer-remote-microservi_2c445dbc-f772-4a5d-aafb-521243cfab22",
+      "score": 88,
+      "title": "Senior Golang Backend Engineer — Remote, Microservices",
+      "url": "https://www.adzuna.es/details/5909782016?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "2c445dbc-f772-4a5d-aafb-521243cfab22"
+    },
+    {
+      "company": "Samsara",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-10-02_121451_samsara_sr-software-engineer-ii-tech-lead-agentic-platfo_acdf083d-44be-424b-bbc5-9d8d825bf446",
+      "score": 86,
+      "title": "Sr. Software Engineer II / Tech lead, Agentic Platform (Poland, Remote, B2B)",
+      "url": "https://jobicy.com/jobs/154396-sr-software-engineer-ii-tech-lead-agentic-platform-poland-remote-b2b",
+      "vacancy_id": "acdf083d-44be-424b-bbc5-9d8d825bf446"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "698d8d390b3a7758e7db8d267f5a7f06f793330c0c520f0431547bcf54e20118",
+  "schema_version": 2
+}
