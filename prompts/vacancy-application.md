@@ -255,6 +255,17 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     the candidate a focused question and leave that package pending. Never
     split one outcome to meet a quota. Sort roles by end date, newest first,
     and label overlapping work accurately.
+    Before approving Experience, enumerate the candidate-source roles within the
+    ten-year window in `cv_audit.role_coverage`. For each role record employer,
+    source period, source path, include/exclude decision, and a vacancy-specific
+    reason. Check this inventory against the final CV, including on regeneration;
+    the previous tailored CV is not a complete career inventory. A recent role
+    with relevant, verified outcomes must not disappear merely because another
+    role already supplies enough bullets or because one claim was withdrawn.
+    Exclude unsupported claims individually, retain the role's other supported
+    evidence, and ask a focused question when a relevant role cannot meet the
+    minimum. The independent editor must review these inclusion and omission
+    decisions as well as the bullets that remain visible.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support

@@ -1,34 +1,38 @@
-profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
 vacancy_version: sha256:138776f2fef8ecf356b3caf4f83b76447e2729ad08897cd996c8f294f1b23bdc
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+prompt_version: sha256:511c7c687089eb278549a83958bb04ba9c54cc164c254201e61ecf137db7edd1
 model: codex:gpt-6-sol:medium
 analysis: &id001
   model: codex:gpt-6-sol:medium
-  score: 89
-  analyzed_at: '2026-10-02T21:26:43Z'
-  version: sha256:d8b72e575d4b71a7cacc8e82ad419b64e3bdc4dff02c116ce573ea15301d90d4
+  score: 90
+  analyzed_at: '2026-10-04T21:06:05Z'
+  version: sha256:9c0ff51c5c624de31bf65de8b2c1e3288c48ff44e00a56e6bf11ec04f55dfffd
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_kozakagency_SeniorGoDeveloper
-generated_at: '2026-10-02T22:05:06Z'
+generated_at: '2026-10-04T21:44:00Z'
 documents:
   cv:
-    profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
+    profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
     vacancy_version: sha256:138776f2fef8ecf356b3caf4f83b76447e2729ad08897cd996c8f294f1b23bdc
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
+    prompt_version: sha256:511c7c687089eb278549a83958bb04ba9c54cc164c254201e61ecf137db7edd1
     model: codex:gpt-6-sol:medium
     analysis: *id001
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_kozakagency_SeniorGoDeveloper
-    generated_at: '2026-10-02T22:05:06Z'
+    generated_at: '2026-10-04T21:44:00Z'
   cover-letter:
     profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
     vacancy_version: sha256:138776f2fef8ecf356b3caf4f83b76447e2729ad08897cd996c8f294f1b23bdc
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
     model: codex:gpt-6-sol:medium
-    analysis: *id001
+    analysis: &id002
+      model: codex:gpt-6-sol:medium
+      score: 89
+      analyzed_at: '2026-10-02T21:26:43Z'
+      version: sha256:d8b72e575d4b71a7cacc8e82ad419b64e3bdc4dff02c116ce573ea15301d90d4
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_kozakagency_SeniorGoDeveloper
     generated_at: '2026-10-02T22:05:06Z'
@@ -38,7 +42,7 @@ documents:
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
     model: codex:gpt-6-sol:medium
-    analysis: *id001
+    analysis: *id002
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_kozakagency_SeniorGoDeveloper
     generated_at: '2026-10-02T22:05:06Z'
@@ -48,7 +52,7 @@ documents:
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:959806ccae0709b4b02d884236fb85abd8a9a5d81b4bd2d0a867dbfa20da234e
     model: codex:gpt-6-sol:medium
-    analysis: *id001
+    analysis: *id002
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_kozakagency_SeniorGoDeveloper
     generated_at: '2026-10-02T22:05:06Z'
@@ -56,10 +60,10 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 436
-      sha256: sha256:dd6444514c2050153c3253934c7e5109289391b8683a289fc744bd8e7cbb5e97
+      word_count: 521
+      sha256: sha256:a8019c1f9f0868bdd4ca698eba8fc238e05c948f6e53ace1c9607fa08c57ee84
       evidence_bank_path: registry/evidence/achievements.yaml
-      evidence_bank_sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
+      evidence_bank_sha256: c72f601806d248b1dc3ac542aabd441a5243fbfd238cd0ad4b9114641afb01ab
     cover-letter:
       word_count: 358
       sha256: sha256:d4bbdff619f224fa8773dc56f6f7f7bd3b62476f68a69c9d9de13d3601bb2ac2
@@ -78,19 +82,21 @@ quality:
   document_format: standard
   grounding:
     schema_version: 1
-    sha256: 71c71db6c047585ce0fc88fcb8ebae8d022fce7710f53f4a53195920fff0465c
+    sha256: 29cc64744c7dca96b4f78495278c42b9d63c66f913ff671a192af00d5ac44b8e
     evidence_bank:
       schema_version: 1
-      sha256: 4854f99c429194adb7cf9d3ca2c42795b0c05f3f4c217ed286902dfdf7e2d1e8
-      entry_count: 65
+      sha256: c72f601806d248b1dc3ac542aabd441a5243fbfd238cd0ad4b9114641afb01ab
+      entry_count: 67
       statuses:
         cannot-confirm: 3
         retracted: 4
         unverified: 9
-        verified: 49
-    claim_count: 21
+        verified: 51
+    claim_count: 25
     evidence_ids:
+    - airslate-cicd-delivery
     - airslate-logger
+    - airslate-user-confirmed-impact
     - career-15-years
     - crurated-confirmed-datalake-production
     - crurated-confirmed-event-version-production
@@ -98,6 +104,7 @@ quality:
     - crurated-reviewed-stream-onboarding
     - crurated-reviewed-throughput
     - cv-hyprr
+    - database-reliability
     - pdffiller-user-confirmed
     - simple-2025-fin-categorization
     - simple-2025-review-automation
@@ -106,6 +113,24 @@ quality:
     - support-platform-linkedin
     - support-user-confirmed-automation
     evidence_entries:
+    - id: airslate-cicd-delivery
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- Implemented **CI/CD pipelines** that shortened release cycles and\
+          \ improved delivery\n  consistency across services."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source review
+        reviewed_at: '2026-10-04'
+        method: Compared exact candidate-authored CV excerpt and airSlate Software
+          Developer attribution; qualitative release-cycle outcome only.
     - id: airslate-logger
       employer: airSlate
       source:
@@ -139,6 +164,44 @@ quality:
           candidate attestation.
       review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
         confirmation before reuse.
+    - id: airslate-user-confirmed-impact
+      employer: airSlate
+      source:
+        path: registry/candidate/user-confirmed-airslate-impact-2026-10-04.md
+        quote: '## Question
+
+
+          > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+          на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+          БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы подтверждаете,
+          как измерялись и каков был ваш личный вклад? Пока использую только подтверждённые
+          качественные формулировки без этих цифр.
+
+
+          ## Candidate reply
+
+
+          > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно рулили
+          всем'
+        sha256: 1a4a1df52116752cb580d12ba494e4b25924ee88c19a947eede2d1d00eac7b12
+      status: verified
+      verification:
+        reviewer: Codex root direct candidate confirmation review
+        reviewed_at: '2026-10-04'
+        method: Compared original LinkedIn airSlate figures with the candidate reply
+          confirming Prometheus measurement and backend-lead contribution.
+      review_notes: API average response time ~30% lower; CI/CD delivery time 11 minutes
+        shorter (~70%); main database maximum workload level 65%, not a reduction
+        of 65%; team feature delivery rate ~20% higher. Leadership contribution, not
+        sole implementation. Keep expense figure out of these CVs.
+      role: Software Developer
+      attribution_source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
     - id: career-15-years
       employer: null
       source:
@@ -263,11 +326,29 @@ quality:
       review_notes: Source-exact record reviewed; use only the recorded facts. Employment
         sections still obey the ten-year cutoff.
       status: verified
-      verification:
+      verification: &id003
         reviewer: Codex evidence-quality implementation review
         reviewed_at: '2026-09-22T22:01:45.004885+00:00'
         method: Compared verbatim extract and attribution to immutable candidate source;
           source-grounding verification, not new candidate attestation.
+    - id: database-reliability
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+          \ and\n  redistributing workload, improving service stability during high-traffic\
+          \ periods."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id003
     - id: pdffiller-user-confirmed
       employer: PDFfiller
       source:
@@ -312,7 +393,7 @@ quality:
         sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: &id002
+      attribution_source: &id004
         path: registry/candidate/user-confirmed-career-clarifications.md
         quote: '- **Role:** Software Developer'
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
@@ -346,7 +427,7 @@ quality:
         sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id002
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -374,7 +455,7 @@ quality:
         sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id002
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -472,18 +553,20 @@ quality:
       editorial_review:
         knowledge_base_version: 1
         verdict: approve
-        reviewer: Codex primary agent
+        reviewer: Codex root independent editor; CV authored by kozak_cv
         mode: independent
-        basis: Reviewed exact provisional 11-bullet CV, evidence map, risk handoff,
-          and standalone support-agent source; confirmed chronology, recent-role share,
-          distinct consequences, and metric bounds.
+        basis: Read direct candidate sources and later confirmations; reviewed all
+          retained outcomes, role inventory, dates, attribution, metric units, ordering
+          and absence of unsupported migration.
       bullet_decisions:
       - text: Owned a Go support platform connecting Zendesk, Intercom, and internal
           services, giving support operations a shared backend for ticket routing
           and lifecycle work.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Owned the Go support platform affected Support ticket routing and
+          lifecycle; the supported consequence is Shared backend connected customer
+          operations systems. This is a distinct architecture example relevant to
+          Senior Go Developer.
         weight: critical
         signal_type: architecture
         ordering_rationale: Strongest vacancy-relevant ownership or scale opens the
@@ -495,8 +578,10 @@ quality:
       - text: Launched a standalone support agent service and automated closure for
           conversations handled by its LLM reply workflow.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Launched standalone support-agent service affected LLM-handled support
+          conversations; the supported consequence is Enabled automated closure for
+          handled conversations. This is a distinct impact example relevant to Senior
+          Go Developer.
         weight: high
         signal_type: impact
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -508,8 +593,10 @@ quality:
       - text: Implemented many automation scenarios, contributing to a platform that
           reached up to 86% fully automated handling overall.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Implemented many automation scenarios affected Simple.life support
+          platform; the supported consequence is Contributed to platform-wide automated
+          handling up to 86%. This is a distinct impact example relevant to Senior
+          Go Developer.
         weight: high
         signal_type: impact
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -522,8 +609,10 @@ quality:
           Intercom Fin, then moved categorization to Fin with the in-house model retained
           as fallback.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Compared and migrated categorization affected Ticket categorization;
+          the supported consequence is In-house model remained a fallback after Fin
+          migration. This is a distinct architecture example relevant to Senior Go
+          Developer.
         weight: medium
         signal_type: architecture
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -536,8 +625,9 @@ quality:
           directing sensitive and legal cases to human review rather than an automatic
           reply.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Built public-review automation guardrails affected Public review responses;
+          the supported consequence is Sensitive and legal cases went to human review.
+          This is a distinct security example relevant to Senior Go Developer.
         weight: medium
         signal_type: security
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -549,8 +639,9 @@ quality:
       - text: Owned the production DataLake and event analytics system as technical
           lead, increasing throughput by more than 10x for product reporting.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Owned production DataLake analytics affected Product reporting pipeline;
+          the supported consequence is Throughput increased by more than 10x. This
+          is a distinct scale example relevant to Senior Go Developer.
         weight: critical
         signal_type: scale
         ordering_rationale: Strongest vacancy-relevant ownership or scale opens the
@@ -562,8 +653,9 @@ quality:
       - text: Simplified analytics stream onboarding through modular design, reducing
           setup from several days to under four hours.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Modularized new analytics streams affected Stream onboarding; the
+          supported consequence is Setup fell from several days to under four hours.
+          This is a distinct impact example relevant to Senior Go Developer.
         weight: high
         signal_type: impact
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -575,8 +667,9 @@ quality:
       - text: Maintained event delivery reliability above 99.9% in production through
           routing and operational controls.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Owned production delivery controls affected Event delivery pipeline;
+          the supported consequence is Delivery reliability exceeded 99.9%. This is
+          a distinct reliability example relevant to Senior Go Developer.
         weight: high
         signal_type: reliability
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -588,8 +681,10 @@ quality:
       - text: Owned parallel publication of event versions in production, keeping
           old and new schemas available during the analytics transition.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Owned parallel event publication affected Production event schemas;
+          the supported consequence is Old and new versions remained available during
+          transition. This is a distinct architecture example relevant to Senior Go
+          Developer.
         weight: medium
         signal_type: architecture
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -598,11 +693,66 @@ quality:
         affected_scope: Production event schemas
         consequence: Old and new versions remained available during transition
         verdict: approve
+      - text: Led backend work that lowered the main database's maximum workload to
+          65%, helping prevent service interruptions during peak traffic.
+        decision: keep
+        reason: Direct database reliability outcome relevant to production backend
+          load and performance.
+        weight: high
+        signal_type: reliability
+        contribution: Led backend bottleneck removal and workload redistribution
+        affected_scope: airSlate main database during peak traffic
+        consequence: Maximum workload lowered to 65%, supporting high-traffic service
+          stability
+        ordering_rationale: Starts airSlate with service-stability consequence under
+          peak load; subsequent bullets cover distinct API and delivery outcomes.
+        verdict: approve
+      - text: Identified and optimized backend bottlenecks, reducing average API response
+          times by 30%.
+        decision: keep
+        reason: Distinct response-time result relevant to API performance; candidate
+          confirmed Prometheus measurement.
+        weight: high
+        signal_type: impact
+        contribution: Directed backend performance optimization
+        affected_scope: airSlate backend API services
+        consequence: Average API response times reduced 30%
+        ordering_rationale: Follows database stability with a separate API latency
+          result.
+        verdict: approve
+      - text: Led CI/CD improvements that shortened feature-delivery time by 11 minutes,
+          about 70%, while making releases more consistent.
+        decision: keep
+        reason: A measured release-time outcome distinct from runtime performance
+          and team delivery rate.
+        weight: medium
+        signal_type: impact
+        contribution: Led implementation and improvement of backend CI/CD
+        affected_scope: airSlate release workflow
+        consequence: Feature-delivery time shortened 11 minutes, approximately 70%,
+          with more consistent delivery
+        ordering_rationale: After service and API results, shows an separately measured
+          release-process improvement.
+        verdict: approve
+      - text: Directed backend planning and team delivery with Product and Development,
+          increasing the team's feature-delivery rate by about 20%.
+        decision: keep
+        reason: Team-level result distinct from the CI/CD pipeline timing; leadership
+          contribution is confirmed.
+        weight: medium
+        signal_type: team_influence
+        contribution: Directed backend team delivery and its performance metrics
+        affected_scope: airSlate development team and feature roadmap
+        consequence: Feature delivery rate increased approximately 20%
+        ordering_rationale: Closes airSlate with cross-team delivery influence after
+          direct service and release outcomes.
+        verdict: approve
       - text: Led five backend engineers delivering a transactional email service
           that handled about three million messages in an ordinary month.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Led five backend engineers affected Transactional email service; the
+          supported consequence is Ordinary volume reached about three million messages
+          monthly. This is a distinct scale example relevant to Senior Go Developer.
         weight: high
         signal_type: scale
         ordering_rationale: Strongest vacancy-relevant ownership or scale opens the
@@ -615,8 +765,9 @@ quality:
           email traffic, applying messaging and deliverability expertise under the
           seasonal surge.
         decision: keep
-        reason: Distinct production result or architectural judgment relevant to the
-          selected Senior Go responsibilities.
+        reason: Led team through BFCM traffic peak affected Transactional email service;
+          the supported consequence is Team handled up to ten times ordinary traffic.
+          This is a distinct team_influence example relevant to Senior Go Developer.
         weight: medium
         signal_type: team_influence
         ordering_rationale: Follows higher-weight evidence with a separate system,
@@ -625,9 +776,56 @@ quality:
         affected_scope: Transactional email service
         consequence: Team handled up to ten times ordinary traffic
         verdict: approve
-    reviewer: Codex package synthesizer; independent CV review by Codex primary agent
+      role_coverage:
+      - employer: Simple.life / Simple App
+        source_period: November 2023–July 2026
+        source_path: registry/candidate/user-confirmed-career-clarifications.md
+        decision: include
+        reason: Most recent production Go platform ownership and automation; five
+          distinct supported outcomes.
+      - employer: CRURATED
+        source_period: August 2024–January 2026
+        source_path: registry/candidate/user-confirmed-career-clarifications.md
+        decision: include
+        reason: Concurrent PHP consulting with confirmed production event-system ownership,
+          throughput, onboarding, reliability and schema transition.
+      - employer: airSlate
+        source_period: February 2021–August 2023
+        source_path: registry/candidate/backend-engineer-cv.md
+        decision: include
+        reason: Recent PHP/Laravel production backend and lead work; four distinct
+          measured outcomes confirmed 2026-10-04. Exclude withdrawn migration claim
+          individually.
+      - employer: Hyprr
+        source_period: November 2019–January 2021
+        source_path: registry/candidate/backend-engineer-cv.md
+        decision: exclude
+        reason: Earlier prototype-to-beta and technical planning evidence; available
+          distinct source-backed outcomes are narrower than the selected recent backend
+          examples. Avoid expanding overlapping duties to fill bullets.
+      - employer: Sixt
+        source_period: December 2018–November 2019
+        source_path: registry/candidate/linkedin-profile.md
+        decision: exclude
+        reason: Older mobility compliance work; no target-specific need or confirmed
+          distinct delivery outcomes outweigh the selected production backend evidence.
+          Imported overlap with PDFfiller is unresolved.
+      - employer: PDFfiller
+        source_period: October 2016–November 2019
+        source_path: registry/candidate/backend-engineer-cv.md
+        decision: include
+        reason: 'Two distinct candidate-confirmed outcomes: five-engineer team/service
+          scale and BFCM capacity. Older role remains compact; additional strong outcomes
+          are not confirmed.'
+      - employer: Aurum Software
+        source_period: November 2015–November 2016
+        source_path: registry/candidate/linkedin-profile.md
+        decision: exclude
+        reason: Most of this engagement lies before ten-year window; older duties
+          and technologies do not add a distinct stronger target-specific result.
+    reviewer: Codex root independent editor; CV authored by kozak_cv
     document_sha256:
-      cv: sha256:dd6444514c2050153c3253934c7e5109289391b8683a289fc744bd8e7cbb5e97
+      cv: sha256:a8019c1f9f0868bdd4ca698eba8fc238e05c948f6e53ace1c9607fa08c57ee84
       cover-letter: sha256:d4bbdff619f224fa8773dc56f6f7f7bd3b62476f68a69c9d9de13d3601bb2ac2
       analysis: sha256:40c2325f6a091aee0096a06fa5982ddf3c759e45793a7dd2b73f7cdca770a774
       interview-preparation: sha256:3ee24cc3fe52a3f5a066b52eef2dcefc026a996fefc8517e254aa589c124fd73
@@ -746,6 +944,31 @@ quality:
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
+    - document: cover-letter
+      text: I am a backend engineer with more than 15 years in production software
+      evidence_ids:
+      - career-15-years
+    - document: cover-letter
+      text: At Simple.life, I owned a Go support platform that connected Zendesk,
+        Intercom, and internal services.
+      evidence_ids:
+      - support-platform-linkedin
+    - document: cover-letter
+      text: Under my technical ownership, DataLake throughput increased by more than
+        10x, and event delivery reliability exceeded 99.9%.
+      evidence_ids:
+      - crurated-reviewed-throughput
+      - crurated-reviewed-delivery-reliability
+    - document: analysis
+      text: Its API orchestration and independent ownership answer the role's production
+        service and API requirements.
+      evidence_ids:
+      - support-api-orchestration
+      - support-platform-linkedin
+    - document: interview-preparation
+      text: the Simple.life Go support platform
+      evidence_ids:
+      - support-platform-linkedin
     - document: cv
       text: Senior Go and PHP backend engineer with more than 15 years of production
         software experience.
@@ -756,6 +979,7 @@ quality:
         through shared APIs
       evidence_ids:
       - support-platform-linkedin
+      - support-api-orchestration
     - document: cv
       text: REST APIs
       evidence_ids:
@@ -823,36 +1047,62 @@ quality:
         surge.
       evidence_ids:
       - pdffiller-user-confirmed
-    - document: cover-letter
-      text: I am a backend engineer with more than 15 years in production software
-      evidence_ids:
-      - career-15-years
-    - document: cover-letter
-      text: At Simple.life, I owned a Go support platform that connected Zendesk,
-        Intercom, and internal services.
-      evidence_ids:
-      - support-platform-linkedin
-    - document: cover-letter
-      text: Under my technical ownership, DataLake throughput increased by more than
-        10x, and event delivery reliability exceeded 99.9%.
-      evidence_ids:
-      - crurated-reviewed-throughput
-      - crurated-reviewed-delivery-reliability
-    - document: analysis
-      text: Its API orchestration and independent ownership answer the role's production
-        service and API requirements.
-      evidence_ids:
-      - support-api-orchestration
-      - support-platform-linkedin
-    - document: interview-preparation
-      text: the Simple.life Go support platform
-      evidence_ids:
-      - support-platform-linkedin
     - document: cv
       text: I have led production event analytics work
       evidence_ids:
       - crurated-confirmed-datalake-production
-  declaration_sha256: sha256:d7d1ed7784699beb0ef6dbbfceda19e49d25aa484ea0a998808a089071a6c12f
+    - document: cv
+      text: Led backend work that lowered the main database's maximum workload to
+        65%, helping prevent service interruptions during peak traffic.
+      evidence_ids:
+      - database-reliability
+      - airslate-user-confirmed-impact
+    - document: cv
+      text: Identified and optimized backend bottlenecks, reducing average API response
+        times by 30%.
+      evidence_ids:
+      - airslate-user-confirmed-impact
+      - database-reliability
+    - document: cv
+      text: Led CI/CD improvements that shortened feature-delivery time by 11 minutes,
+        about 70%, while making releases more consistent.
+      evidence_ids:
+      - airslate-cicd-delivery
+      - airslate-user-confirmed-impact
+    - document: cv
+      text: Directed backend planning and team delivery with Product and Development,
+        increasing the team's feature-delivery rate by about 20%.
+      evidence_ids:
+      - airslate-user-confirmed-impact
+    document_receipts:
+      cv:
+        document_sha256: sha256:a8019c1f9f0868bdd4ca698eba8fc238e05c948f6e53ace1c9607fa08c57ee84
+        claims_ledger_sha256: 29cc64744c7dca96b4f78495278c42b9d63c66f913ff671a192af00d5ac44b8e
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root independent editor; CV authored by kozak_cv
+        declaration_sha256: sha256:b6852e9642a164e968b6b7a0a756114402068ee6ff1c89c06d6dceb866af6782
+      cover-letter:
+        document_sha256: sha256:d4bbdff619f224fa8773dc56f6f7f7bd3b62476f68a69c9d9de13d3601bb2ac2
+        claims_ledger_sha256: 71c71db6c047585ce0fc88fcb8ebae8d022fce7710f53f4a53195920fff0465c
+        claims_ledger_path: claims.yaml
+        reviewer: Codex package synthesizer; independent CV review by Codex primary
+          agent
+        declaration_sha256: sha256:d7d1ed7784699beb0ef6dbbfceda19e49d25aa484ea0a998808a089071a6c12f
+      analysis:
+        document_sha256: sha256:40c2325f6a091aee0096a06fa5982ddf3c759e45793a7dd2b73f7cdca770a774
+        claims_ledger_sha256: 71c71db6c047585ce0fc88fcb8ebae8d022fce7710f53f4a53195920fff0465c
+        claims_ledger_path: claims.yaml
+        reviewer: Codex package synthesizer; independent CV review by Codex primary
+          agent
+        declaration_sha256: sha256:d7d1ed7784699beb0ef6dbbfceda19e49d25aa484ea0a998808a089071a6c12f
+      interview-preparation:
+        document_sha256: sha256:3ee24cc3fe52a3f5a066b52eef2dcefc026a996fefc8517e254aa589c124fd73
+        claims_ledger_sha256: 71c71db6c047585ce0fc88fcb8ebae8d022fce7710f53f4a53195920fff0465c
+        claims_ledger_path: claims.yaml
+        reviewer: Codex package synthesizer; independent CV review by Codex primary
+          agent
+        declaration_sha256: sha256:d7d1ed7784699beb0ef6dbbfceda19e49d25aa484ea0a998808a089071a6c12f
+  declaration_sha256: sha256:b6852e9642a164e968b6b7a0a756114402068ee6ff1c89c06d6dceb866af6782
   method:
     workflow: two-wave
     final_review:
@@ -869,8 +1119,8 @@ quality:
       word_count: 297
       sha256: sha256:28746be76e7b27740f6aa35b14f31631b340606d44e1a1145aa9f054e8097616
     evidence-map.md:
-      word_count: 876
-      sha256: sha256:5c2b14c5ab119a2a260da10a59b96362bde67befec57d944892dcf2ae1cb67d7
+      word_count: 1199
+      sha256: sha256:900a7d1f62a78a1af67112845db1fef939a80e11ceac800908d98752bddc8029
     requirements-risks.md:
       word_count: 443
       sha256: sha256:004476d5be9407888521e4f95053cd5170702721e687dcd22117f8ece987877d
@@ -879,25 +1129,33 @@ quality:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: dd6444514c2050153c3253934c7e5109289391b8683a289fc744bd8e7cbb5e97
-      artifact_sha256: 7600787f43e4cb27f169b0cd519b79430d3ab1614f8fd1ac757f30e3ea502569
-      extracted_text_sha256: ff9753137dbf4e4d635c14e0b32316b147895c7ad43c781871931a777270a200
-      canonical_tokens: 443
-      extracted_tokens: 443
+      source_sha256: a8019c1f9f0868bdd4ca698eba8fc238e05c948f6e53ace1c9607fa08c57ee84
+      artifact_sha256: eb1a21a4e7999afdf3037ec8995991dfac5874b4ff0dc72043a8ebdca983260e
+      extracted_text_sha256: 0570c93401f2a6e362ce12855d93eb3106a3a239220753525f6588ad0b7da19a
+      canonical_tokens: 532
+      extracted_tokens: 532
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 29
+        readable_paragraphs: 35
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
-        status: not_reviewed
-        artifact_sha256: 7600787f43e4cb27f169b0cd519b79430d3ab1614f8fd1ac757f30e3ea502569
+        status: reviewed
+        artifact_sha256: eb1a21a4e7999afdf3037ec8995991dfac5874b4ff0dc72043a8ebdca983260e
+        reviewer: Codex root independent visual review of both final rendered pages
+        reviewed_at: '2026-10-04T21:42:50.347310+00:00'
+        checks:
+          blank_pages: true
+          overflow: true
+          page_breaks: true
+          readability: true
+        method: recorded reviewer attestation; not an automated visual judgment
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
       preview_reused: true

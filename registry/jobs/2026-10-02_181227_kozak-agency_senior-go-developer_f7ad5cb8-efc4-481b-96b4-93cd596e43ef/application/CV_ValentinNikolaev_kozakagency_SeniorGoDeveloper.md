@@ -34,6 +34,15 @@ Technologies: Go, PostgreSQL, REST APIs, Intercom API, Zendesk API, AWS, Kuberne
 
 Technologies: PHP, Laravel, AWS EventBridge, queues, REST APIs, event-driven architecture
 
+### airSlate — Software Developer | February 2021 – August 2023
+
+- Led backend work that lowered the main database's maximum workload to 65%, helping prevent service interruptions during peak traffic.
+- Identified and optimized backend bottlenecks, reducing average API response times by 30%.
+- Led CI/CD improvements that shortened feature-delivery time by 11 minutes, about 70%, while making releases more consistent.
+- Directed backend planning and team delivery with Product and Development, increasing the team's feature-delivery rate by about 20%.
+
+Technologies: PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, CI/CD
+
 ### PDFfiller — Software Developer | October 2016 – November 2019
 
 - Led five backend engineers delivering a transactional email service that handled about three million messages in an ordinary month.

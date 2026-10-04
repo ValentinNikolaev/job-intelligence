@@ -1557,3 +1557,11 @@ entries:
     shorter (~70%); main database maximum workload level 65%, not a reduction of 65%;
     team feature delivery rate ~20% higher. Leadership contribution, not sole implementation.
     Keep expense figure out of these CVs.
+  role: Software Developer
+  attribution_source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
