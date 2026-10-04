@@ -13,7 +13,7 @@ import yaml
 from . import storage_bridge as op
 
 from .models import NormalizedJob
-from .normalization import normalize_company, slug
+from .normalization import normalize_company, record_directory_name
 from .registry import _dump_yaml, _render_job_markdown, _utc_iso
 
 
@@ -200,12 +200,10 @@ class RejectedRegistry:
         }
         if existing is None:
             meta["rejected_at"] = now
-            directory = self.root / f"{_timestamp_slug(now)}_{source}_{slug(job.company)}_{slug(job.title)}"
-            if op.get_store(self.root) is not None:
-                from .migration import prefilter_id
-                directory = self.root / f"{directory.name}_{prefilter_id(source, source_job_id)}"
-            elif directory.exists():
-                directory = self.root / f"{directory.name}_{uuid.uuid4().hex[:8]}"
+            from .migration import prefilter_id
+            directory = self.root / record_directory_name(
+                now, job.company, prefilter_id(source, source_job_id)
+            )
             previous = None
             previous_markdown = None
         else:
@@ -493,10 +491,6 @@ def _parse_timestamp(value: str | None) -> datetime | None:
 
 def _normalize_text(value: str) -> str:
     return " ".join(value.casefold().split())
-
-
-def _timestamp_slug(value: str) -> str:
-    return value.replace(":", "").replace("-", "").replace("T", "_").replace("Z", "")
 
 
 def _without_updated_at(meta: dict[str, Any]) -> dict[str, Any]:

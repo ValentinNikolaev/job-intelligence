@@ -15,7 +15,7 @@ import yaml
 from . import storage_bridge as op
 
 from .models import VACANCY_STATUSES, NormalizedJob, UpsertResult
-from .normalization import slug, vacancy_fingerprint
+from .normalization import record_directory_name, vacancy_fingerprint
 from .storage_contract import SourceIdentityConflict
 
 
@@ -398,13 +398,9 @@ class Registry:
             "content_source": job.source.strip().lower() if job.description.strip() else None,
             "company_content_source": job.source.strip().lower() if _clean_optional(job.company_description) else None,
         }
-        timestamp = _parse_datetime(now).strftime("%Y-%m-%d_%H%M%S")
-        base_name = f"{timestamp}_{slug(job.company)}_{slug(job.title)}"
+        final_dir = self.jobs_dir / record_directory_name(now, job.company, vacancy_id)
         store = op.get_store(self.root)
         if store is not None:
-            # MongoDB owns operational content; UUID suffixes also avoid collisions
-            # with directories outside a collection batch's selected snapshot.
-            final_dir = self.jobs_dir / f"{base_name}_{vacancy_id}"
             store.save_vacancy(final_dir.name, meta,
                                _render_job_markdown(meta["title"], job.description, meta["published_at"]),
                                _render_markdown(meta["company"], job.company_description or "")
@@ -412,9 +408,8 @@ class Registry:
                                expected_revision=0)
             self._cache_add_entry({"meta": meta, "path": final_dir})
             return UpsertResult("created", vacancy_id, final_dir.name)
-        final_dir = self.jobs_dir / base_name
         if final_dir.exists():
-            final_dir = self.jobs_dir / f"{base_name}_{vacancy_id[:8]}"
+            raise RegistryError(f"registry path already exists: {final_dir}")
         temp_dir = self.jobs_dir / f".tmp-{vacancy_id}"
         if temp_dir.exists():
             raise RegistryError(f"temporary registry path already exists: {temp_dir}")

@@ -232,6 +232,20 @@ class PrefilterTests(unittest.TestCase):
             self.assertIn("## Rejection", markdown)
             self.assertIn("Reason:", markdown)
 
+    def test_new_rejected_directories_are_short_and_source_unique(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            registry = RejectedRegistry(Path(temporary) / "registry")
+            rejection = prefilter_job(make_job(title="QA Automation Engineer"), now=self.now)
+            directories = set()
+            for source in ("adzuna", "djinni"):
+                job = make_job(source=source, company="Very Long Company Name " * 20,
+                               title="QA Automation Engineer " * 20)
+                directory, meta, _, _ = registry._plan_upsert(job, rejection, "2026-10-05T12:00:00Z")
+                self.assertLessEqual(len(directory.name), 56)
+                self.assertEqual(job.title.strip(), meta["title"])
+                directories.add(directory.name)
+            self.assertEqual(2, len(directories))
+
     def test_rejected_registry_skips_unchanged_persistence(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary) / "registry"

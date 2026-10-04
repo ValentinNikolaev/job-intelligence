@@ -1,10 +1,33 @@
 import unittest
 
 from jobintel.html_to_markdown import html_to_markdown
-from jobintel.normalization import normalize_company, normalize_location, vacancy_fingerprint
+from jobintel.normalization import normalize_company, normalize_location, record_directory_name, vacancy_fingerprint
 
 
 class NormalizationTests(unittest.TestCase):
+    def test_record_directory_bounds_long_company_and_preserves_full_uuid(self) -> None:
+        name = record_directory_name(
+            "2026-10-05T12:14:47Z", "Wooden Sword Games " * 20,
+            "cb978155-40d1-43dd-b93e-d8f5c42cbd1d",
+        )
+        self.assertLessEqual(len(name), 56)
+        self.assertTrue(name.startswith("20261005_wooden-sword-g_"))
+        self.assertTrue(name.endswith("cb97815540d143ddb93ed8f5c42cbd1d"))
+
+    def test_record_directory_does_not_collide_on_shared_uuid_prefix(self) -> None:
+        names = {record_directory_name("2026-10-05T12:00:00Z", "Acme", identity)
+                 for identity in ("cb978155-40d1-43dd-b93e-d8f5c42cbd1d",
+                                  "cb978155-40d1-43dd-b93e-d8f5c42cbd1e")}
+        self.assertEqual(2, len(names))
+
+    def test_record_directory_handles_unicode_empty_and_non_uuid_ids(self) -> None:
+        for company in ("Компания / с очень длинным названием " * 20, "<> : / ?", ""):
+            with self.subTest(company=company[:20]):
+                name = record_directory_name("2026-10-05T12:00:00Z", company, "id/with:unsafe?chars" * 10)
+                self.assertLessEqual(len(name), 56)
+                self.assertNotRegex(name, r'[<>:"/\\|?*]')
+                self.assertEqual(name, record_directory_name("2026-10-05T12:00:00Z", company, "id/with:unsafe?chars" * 10))
+
     def test_fingerprint_normalizes_safe_variants(self) -> None:
         first = vacancy_fingerprint("Acme Ltd.", "Senior Backend Engineer", "Work from home - Europe")
         second = vacancy_fingerprint("  ACME  ", "Senior—Backend Engineer", "Remote, Europe")

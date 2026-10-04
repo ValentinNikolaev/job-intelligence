@@ -51,6 +51,33 @@ class RegistryTests(unittest.TestCase):
         path = self._directories()[0] / "meta.yaml"
         return yaml.safe_load(path.read_text(encoding="utf-8"))
 
+    def test_new_mongodb_directory_fits_windows_application_path_budget(self) -> None:
+        job = make_job(company="Wooden Sword Games " * 20, title="Senior PHP Developer Game Backend " * 20)
+        store = MagicMock()
+        with patch("jobintel.registry.op.get_store", return_value=store):
+            result = self.registry._create(job, "sha256:test")
+        self.assertLessEqual(len(result.directory), 56)
+        self.assertTrue(result.directory.endswith("31d603fe5bcb4ea09d398fb214f17750"))
+        saved_directory, meta = store.save_vacancy.call_args.args[:2]
+        self.assertEqual(result.directory, saved_directory)
+        self.assertEqual(job.title.strip(), meta["title"])
+        self.assertEqual(job.company.strip(), meta["company"])
+        self.assertEqual(result.vacancy_id, meta["id"])
+        path = ("I:/Development/Git/ValentinNikolaev/job-intelligence/registry/jobs/"
+                + result.directory + "/application/"
+                + "CV_ValentinNikolaev_woodenswordgames_SeniorPHPDeveloperGameBackend.docx")
+        self.assertLess(len(path), 260)
+
+    def test_existing_long_directory_is_preserved_on_recollection(self) -> None:
+        created = self.registry.upsert(make_job())
+        legacy_name = "2026-07-22_183015_acme-ltd_senior-backend-engineer_" + created.vacancy_id
+        legacy = self.root / "jobs" / legacy_name
+        (self.root / "jobs" / created.directory).rename(legacy)
+        updated = self.registry.upsert(make_job(description="Updated description."))
+        self.assertEqual(legacy_name, updated.directory)
+        self.assertEqual(created.vacancy_id, updated.vacancy_id)
+        self.assertEqual([legacy], self._directories())
+
     def test_rejected_source_is_skipped_without_updating_registry(self) -> None:
         store = MagicMock()
         store.resolve_source.side_effect = SourceIdentityConflict(

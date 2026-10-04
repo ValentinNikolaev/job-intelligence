@@ -122,11 +122,18 @@ mapping rather than adding ATS-specific canonical fields.
 ## 6. Registry Format
 
 ```text
-registry/jobs/2026-07-22_203015_acme_senior-backend-engineer/
+registry/jobs/20260722_acme_31d603fe5bcb4ea09d398fb214f17750/
 ├── meta.yaml
 ├── job.md
 └── company.md
 ```
+
+New vacancy and prefilter-rejection directories use `YYYYMMDD_company_uuid`:
+the company slug is limited to 14 characters and the complete UUID is stored as
+32 hexadecimal characters. Names are at most 56 characters; the full title,
+company, timestamps and original UUID remain in metadata. Existing directories
+keep their stored names on recollection, updates and preparation; no rename or
+data migration is performed. The directory name is not a vacancy identity.
 
 `meta.yaml`:
 

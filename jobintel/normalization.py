@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import re
 import unicodedata
+import uuid
 
 
 _COMPANY_SUFFIXES = {
@@ -52,4 +53,15 @@ def slug(value: str, *, fallback: str = "job", max_length: int = 48) -> str:
     result = normalize_text(value).replace("_", "-").replace(" ", "-")
     result = re.sub(r"-+", "-", result).strip("-")
     return (result or fallback)[:max_length].rstrip("-")
+
+
+def record_directory_name(discovered_at: str, company: str, record_id: str) -> str:
+    """Bound new registry folder names without truncating UUID identity."""
+    date_part = discovered_at[:10].replace("-", "")
+    company_part = slug(company, fallback="company", max_length=14)
+    try:
+        identity = uuid.UUID(record_id).hex
+    except ValueError:
+        identity = hashlib.sha256(record_id.encode("utf-8")).hexdigest()[:32]
+    return f"{date_part}_{company_part}_{identity}"
 
