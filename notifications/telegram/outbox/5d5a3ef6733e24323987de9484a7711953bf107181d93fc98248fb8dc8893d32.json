@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-04T20:11:37Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "MEETWEB",
+      "country_codes": [],
+      "directory": "2026-10-04_163424_meetweb_senior-php-developer_823a5d4e-3032-4b38-8ec5-5f73cbd74d64",
+      "score": 78,
+      "title": "Senior PHP Developer",
+      "url": "https://it.indeed.com/viewjob?jk=db36fda271f20057",
+      "vacancy_id": "823a5d4e-3032-4b38-8ec5-5f73cbd74d64"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "5d5a3ef6733e24323987de9484a7711953bf107181d93fc98248fb8dc8893d32",
+  "schema_version": 2
+}
