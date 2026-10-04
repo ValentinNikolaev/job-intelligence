@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 72
 
-- Found: 49
+- Found: 50
 - Applied: 17
 - Interview: 3
 - Rejected: 2
@@ -13,6 +13,7 @@ Total vacancies: 71
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 | [MEETWEB](../registry/jobs/2026-10-04_163424_meetweb_senior-php-developer_823a5d4e-3032-4b38-8ec5-5f73cbd74d64/) | [Senior PHP Developer](../registry/jobs/2026-10-04_163424_meetweb_senior-php-developer_823a5d4e-3032-4b38-8ec5-5f73cbd74d64/job.md) | Napoli, Campania | Indeed | Found | 2026-10-04 | [Indeed](https://it.indeed.com/viewjob?jk=db36fda271f20057) | — | — | — | — | — |
 | 2026-10-04 | [Canonical](../registry/jobs/2026-10-04_135624_canonical_solutions-architect-for-automotive_1d2be8f7-ecd1-400c-ba3c-75e8085da41f/) | [Solutions Architect for Automotive](../registry/jobs/2026-10-04_135624_canonical_solutions-architect-for-automotive_1d2be8f7-ecd1-400c-ba3c-75e8085da41f/job.md) | Anywhere | Jobicy | Found | 2026-10-04 | [Jobicy](https://jobicy.com/jobs/154514-solutions-architect-for-automotive) | — | — | — | — | — |
 | 2026-10-04 | [Monzo](../registry/jobs/2026-10-04_080334_monzo_backend-engineer-iii_17641bfe-ea36-42fd-87d2-0c258165c9fa/) | [Backend Engineer III](../registry/jobs/2026-10-04_080334_monzo_backend-engineer-iii_17641bfe-ea36-42fd-87d2-0c258165c9fa/job.md) | UK | Jobicy | Found | 2026-10-04 | [Jobicy](https://jobicy.com/jobs/152499-backend-engineer-iii) | — | — | — | — | — |
 | 2026-10-04 | [Miratech](../registry/jobs/2026-10-04_080321_miratech_senior-golang-backend-engineer-remote-microservi_2c445dbc-f772-4a5d-aafb-521243cfab22/) | [Senior Golang Backend Engineer — Remote, Microservices](../registry/jobs/2026-10-04_080321_miratech_senior-golang-backend-engineer-remote-microservi_2c445dbc-f772-4a5d-aafb-521243cfab22/job.md) | España | Adzuna | Found | 2026-10-04 | [Adzuna](https://www.adzuna.es/details/5909782016?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
