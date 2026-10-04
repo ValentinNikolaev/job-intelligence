@@ -33,6 +33,8 @@ _HOSTNAME_RE = re.compile(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:
 class SeedJob:
     title: str
     url: str
+    description_start: str | None = None
+    description_end: str | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -412,12 +414,19 @@ def normalize_seed_job(
     analysis_priority: int,
 ) -> NormalizedJob | None:
     title = seed.title.strip()
-    description = page.description or f"{title} at {source.company}."
+    if seed.description_start:
+        description = _seed_section(page.description, seed)
+        if description is None:
+            return None
+    else:
+        description = page.description or f"{title} at {source.company}."
     if not _location_allowed(source, title, description, source.location):
         return None
     return NormalizedJob(
         source="custom",
-        source_job_id=_job_identity(seed.url),
+        source_job_id=(
+            _inline_job_identity(seed.url, title) if seed.description_start else _job_identity(seed.url)
+        ),
         source_url=seed.url,
         title=title,
         company=source.company,
@@ -428,6 +437,20 @@ def normalize_seed_job(
         source_metadata=_metadata(source),
         analysis_priority=analysis_priority,
     )
+
+
+def _seed_section(description: str, seed: SeedJob) -> str | None:
+    # Match visible text across markup whitespace, then retain original content.
+    def marker(value: str) -> re.Pattern[str]:
+        return re.compile(r"\s+".join(re.escape(part) for part in value.split()), re.IGNORECASE)
+
+    start = marker(seed.description_start or "").search(description)
+    if start is None:
+        return None
+    end = marker(seed.description_end).search(description, start.end()) if seed.description_end else None
+    if seed.description_end and end is None:
+        return None
+    return description[start.start():end.start() if end else len(description)].strip()
 
 
 def normalize_inline_job(
@@ -566,9 +589,13 @@ def _load_source(
         SeedJob(
             title=_required_string(item.get("title"), f"{name} seed job title"),
             url=_required_url(item.get("url"), f"{name} seed job url"),
+            description_start=_clean_string(item.get("description_start")),
+            description_end=_clean_string(item.get("description_end")),
         )
         for item in _mapping_list(payload.get("seed_jobs", []), f"{name} seed_jobs")
     )
+    if any(seed.description_end and not seed.description_start for seed in seeds):
+        raise ValueError(f"{name} seed description_end requires description_start")
     remote = payload.get("remote")
     if remote is not None and not isinstance(remote, bool):
         raise ValueError(f"{name} remote must be true, false, or null")

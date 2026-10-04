@@ -50,8 +50,21 @@ Markdown, so downstream validation and publishing remain deterministic.
 
 `seed_jobs` are for persistent or known open company-board pages. Do not add a
 generic application form as a seed unless it represents a real current vacancy.
+For a named role inside a shared board, set `description_start` and
+`description_end` on its seed to exact visible text delimiting that role.
+Matching ignores case and markup whitespace. Every configured marker must be present
+in order; otherwise that seed emits no vacancy. The end marker requires a start
+marker and is excluded from the description. Scoped seeds use the board URL and
+title for identity, allowing several named roles on one page without collisions.
+Do not use application-select options or placeholder text as role boundaries.
 Pages that require JavaScript rendering may produce no vacancies until their
 server-rendered HTML exposes matching links or JSON-LD.
+
+The [Rome-office source notes](rome-boards.md) record the 20 added boards,
+verified parsing modes, and access/freshness limitations. An office in Rome does
+not assign Rome to every vacancy; Laser Romae's Go role is in Milan and FOS's
+PHP/Python role is in Genova. Undated advertisements retain an unknown publication
+date. The normal shared prefilter still applies, including CMS/front-end exclusions.
 
 `location_terms` is an optional role-level allowlist. When configured, the
 title, visible job-page text, and JSON-LD location must contain one of those

@@ -19,6 +19,14 @@ provide the same names as environment secrets for the task or host. Edit
 independent Adzuna search; pagination is round-robin so every query gets a
 first page before a broad query can consume the run budget.
 
+The checked-in profiles use only `country: it`, for the Italian market at
+[Adzuna Italia](https://www.adzuna.it/), without a Rome-only location constraint.
+Requests continue to use `https://api.adzuna.com/v1/api/jobs/it/search/{page}`.
+User-facing vacancy links preserve the API's `redirect_url`, including its
+tracking parameters; Italian responses supply `adzuna.it` links. Do not replace
+the API host with the HTML website or rewrite redirect paths. An explicit
+`ADZUNA_CONFIG` can still select a different market configuration.
+
 ```yaml
 queries:
   - country: it

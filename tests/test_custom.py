@@ -55,6 +55,64 @@ class FakeResponse:
 
 
 class CustomCollectorTests(unittest.TestCase):
+    def test_scoped_seeds_isolate_roles_and_keep_distinct_stable_ids(self) -> None:
+        source = CustomSource(name="acme", company="Acme", board_url="https://acme.test/jobs")
+        page = PageData(description=(
+            "General application: Java, marketing.\nSenior\n PHP Developer\n"
+            "Build PHP APIs.\nGo Developer\nBuild Go services.\nSend your CV\n"
+            "Select role: PHP Developer; Lorem ipsum."
+        ))
+        php_seed = custom_module.SeedJob(
+            "Senior PHP Developer", source.board_url, "Senior PHP Developer", "Go Developer"
+        )
+        go_seed = custom_module.SeedJob(
+            "Go Developer", source.board_url, "Go Developer", "Send your CV"
+        )
+        php = custom_module.normalize_seed_job(source, php_seed, page, 100)
+        go = custom_module.normalize_seed_job(source, go_seed, page, 100)
+        self.assertIsNotNone(php)
+        self.assertIsNotNone(go)
+        self.assertIn("Build PHP APIs.", php.description)
+        self.assertNotIn("Go services", php.description)
+        self.assertNotIn("General application", php.description)
+        self.assertNotIn("Lorem ipsum", go.description)
+        self.assertNotEqual(php.source_job_id, go.source_job_id)
+        self.assertEqual(php.source_url, go.source_url)
+        again = custom_module.normalize_seed_job(source, php_seed, page, 100)
+        self.assertEqual(php.source_job_id, again.source_job_id)
+        self.assertIsNone(php.published_at)
+        self.assertIsNone(php.location)
+
+    def test_scoped_seed_disappeared_or_reordered_markers_emit_nothing(self) -> None:
+        source = CustomSource(name="acme", company="Acme", board_url="https://acme.test/jobs")
+        seed = custom_module.SeedJob("PHP Developer", source.board_url, "Open roles", "Apply now")
+        for text in ("General candidature form", "Open roles: Lorem ipsum", "Apply now\nOpen roles"):
+            with self.subTest(text=text):
+                self.assertIsNone(custom_module.normalize_seed_job(source, seed, PageData(description=text), 100))
+
+    def test_scoped_seed_end_requires_start(self) -> None:
+        self._write_config("    seed_jobs:\n      - title: PHP Developer\n        url: https://acme.test/jobs\n        description_end: Apply now")
+        with self.assertRaisesRegex(ValueError, "description_end requires description_start"):
+            load_settings(self.config_path)
+
+    def test_default_config_monitors_all_20_rome_office_companies_without_rome_filter(self) -> None:
+        sources = {s.name: s for s in load_settings(DEFAULT_CONFIG_PATH).sources}
+        names = {
+            "immobiliare", "laser-romae", "proxima-group", "toctoc", "polis-net", "esis-italia",
+            "iptsat", "geb-software", "tecninf", "jarvis-farm", "labica", "diyticket",
+            "aryon-solutions", "tun2u", "molecole", "nois3", "next-adv", "mdesigner", "area-sx", "gruppo-fos",
+        }
+        self.assertEqual(20, len(names))
+        self.assertTrue(names <= sources.keys())
+        for name in names:
+            self.assertFalse(sources[name].location_terms)
+            self.assertFalse(sources[name].exclude_location_terms)
+        self.assertIsNone(sources["laser-romae"].location)
+        self.assertEqual("Genova", sources["gruppo-fos"].location)
+        for name in ("proxima-group", "iptsat", "aryon-solutions", "labica"):
+            self.assertFalse(sources[name].seed_jobs)
+            self.assertFalse(sources[name].extract_headings)
+
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.config_path = Path(self.temp.name) / "custom.yaml"

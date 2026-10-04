@@ -810,3 +810,249 @@ sources:
       - backend
       - laravel
       - php
+
+# Rome-office companies: vacancies retain their own locations.
+  - name: immobiliare
+    company: Immobiliare.it
+    board_url: https://www.immobiliare.it/info/lavora-con-noi/
+    company_url: https://www.immobiliare.it
+    source_type: company careers page
+    title_terms: &id001
+    - php developer
+    - sviluppatore php
+    - programmatore php
+    - golang
+    - go developer
+    - go engineer
+    - backend developer
+    - back-end developer
+    - back end developer
+    - backend engineer
+    notes: Rome office; PHP/Go engineering stack. Official careers page currently returns HTTP 403 to the collector;
+      no inferred vacancies or Rome-only filter.
+  - name: laser-romae
+    company: Laser Romae
+    board_url: https://careers.laserromae.it/jobs
+    company_url: https://careers.laserromae.it
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome operational office; the Go Developer opening is in Milan, while Back End Developer roles include Rome
+      and Milan. TLS certificate currently fails verification; no source-level location override.
+  - name: proxima-group
+    company: Proxima Group
+    board_url: https://proximagroup.eu/join-pro/
+    company_url: https://proximagroup.eu
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome office; public hiring page currently contains placeholder headings and filter labels only. Monitor
+      real linked role pages; never seed Lorem ipsum or application options.
+  - name: toctoc
+    company: TocToc
+    board_url: https://www.toctoc.me/lavora-con-noi/
+    company_url: https://www.toctoc.me
+    source_type: company careers page
+    title_terms: [sviluppatore php, sviluppatore-php, php developer, golang, backend developer]
+    notes: Rome office; officially linked PHP role with Roma / Remote hiring.
+  - name: polis-net
+    company: Polis-net
+    board_url: https://www.polis-net.it/entra-in-polis-net/
+    company_url: https://www.polis-net.it
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome office; evergreen full-stack PHP/Laravel hiring text mentions 2018-2019 plans. Publication date and
+      present hiring freshness are unconfirmed; TLS currently fails verification.
+    extract_headings: true
+    heading_title_terms:
+    - Web Developer Full Stack
+  - name: esis-italia
+    company: ESIS Italia
+    board_url: https://www.esis-italia.com/lavora-con-noi/
+    company_url: https://www.esis-italia.com
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome office; follows the officially linked Programmatore PHP role detail. No source-level office location
+      assigned to vacancies.
+  - name: iptsat
+    company: IPTSAT
+    board_url: https://www.iptsat.com/lavora-con-noi/
+    company_url: https://www.iptsat.com
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome office; PHP/Laravel software development. The careers page currently exposes general candidature only,
+      with no named PHP/Go vacancy.
+  - name: geb-software
+    company: GEB Software
+    board_url: https://www.gebsoftware.com/lavora-con-noi/
+    company_url: https://www.gebsoftware.com
+    source_type: company careers page
+    title_terms:
+    - analista programmatore php
+    notes: Rome office; undated PHP5/Drupal7 programmer advertisement. Monitor its actual role section; no inferred
+      publication date or work location.
+    seed_jobs:
+    - title: Analista Programmatore PHP
+      url: https://www.gebsoftware.com/lavora-con-noi/
+      description_start: GEB Software S.r.l. è alla ricerca di 1 Analista Programmatore PHP
+      description_end: Stiamo cercando un
+  - name: tecninf
+    company: Tecninf
+    board_url: https://www.tecninf.it/lavora-con-noi/
+    company_url: https://www.tecninf.it
+    source_type: company careers page
+    title_terms:
+    - sviluppatore php
+    notes: Rome office; named Sviluppatore PHP opening without a detailed job description or role-location/remote statement.
+    seed_jobs:
+    - title: Sviluppatore PHP
+      url: https://www.tecninf.it/lavora-con-noi/
+      description_start: Unisciti al team Tecninf
+      description_end: Contatti
+  - name: jarvis-farm
+    company: Jarvis Farm
+    board_url: https://www.jarvisfarm.it/lavora-con-noi/
+    company_url: https://www.jarvisfarm.it
+    source_type: company careers page
+    title_terms:
+    - senior backend developer
+    notes: Undated Senior Backend Developer advertisement includes Java EE and PHP Laravel/Symfony, with Roma / home
+      office location. Keep the mixed-stack description as published.
+    seed_jobs:
+    - title: Senior Backend Developer
+      url: https://www.jarvisfarm.it/lavora-con-noi/
+      description_start: Senior Backend Developer
+      description_end: Jarvis Workplace & Culture
+    location: Roma / home office
+  - name: labica
+    company: Labica
+    board_url: https://www.labica.it/content/ricerca-personale-php-mvc-mvvm-mvp-flutter-cordova-ionic-csharp-visual-studio-analista-programmatore-roma-smartworking
+    company_url: https://www.labica.it
+    source_type: company careers page
+    title_terms: *id001
+    notes: Historic PHP/analyst-programmer careers URL now returns 404 after site redesign. No current replacement
+      careers page verified; retain monitoring without a seeded vacancy.
+  - name: diyticket
+    company: DIYticket
+    board_url: https://www.diyticket.it/jobs
+    company_url: https://www.diyticket.it
+    source_type: company careers page
+    title_terms:
+    - sviluppatore frontend
+    notes: Undated Sviluppatore FrontEnd title is preserved verbatim; its description requests PHP/Laravel/Symfony
+      and fullstack skills in Rome. Shared backend prefilter may reject the frontend title.
+    seed_jobs:
+    - title: Sviluppatore FrontEnd
+      url: https://www.diyticket.it/jobs
+      description_start: Sviluppatore FrontEnd
+      description_end: INFO
+    location: Roma
+  - name: aryon-solutions
+    company: Aryon Solutions
+    board_url: https://www.aryonsolutions.it/lavora-con-noi/
+    company_url: https://www.aryonsolutions.it
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome office; JAVA/PHP appears only in the application role selector. Currently advertised Ionic/Angular
+      role is outside target stack; never turn selector options into vacancies.
+  - name: tun2u
+    company: Tun2U
+    board_url: https://www.tun2u.it/contatti/
+    company_url: https://www.tun2u.it
+    source_type: company careers page
+    title_terms:
+    - junior php developer
+    - full stack magento developer
+    notes: Rome office; undated Junior PHP and Full Stack Magento role advertisements. Generic section seeds exclude
+      adjacent frontend, account-manager and marketing content.
+    seed_jobs:
+    - title: Junior PHP Developer
+      url: https://www.tun2u.it/contatti/
+      description_start: Junior PHP Developer
+      description_end: Full Stack Magento Developer
+    - title: Full Stack Magento Developer
+      url: https://www.tun2u.it/contatti/
+      description_start: Full Stack Magento Developer
+      description_end: Key Account Manager
+    location: Roma
+  - name: molecole
+    company: Molecole
+    board_url: https://www.molecole.com/lavora/
+    company_url: https://www.molecole.com
+    source_type: company careers page
+    title_terms: *id001
+    notes: Rome office; undated PHP Senior WordPress/Joomla advertisement. TLS currently fails verification; no inferred
+      freshness.
+    extract_headings: true
+    heading_title_terms:
+    - Programmatore PHP Senior
+  - name: nois3
+    company: NOIS3
+    board_url: https://www.nois3.it/lavora-con-noi/
+    company_url: https://www.nois3.it
+    source_type: company careers page
+    title_terms:
+    - front-end / backend developer freelance
+    notes: Rome legal/office address; advertised freelance frontend/backend role uses PHP/MySQL WordPress and has
+      been fully remote since March 2020.
+    seed_jobs:
+    - title: Front-End / Backend Developer Freelance
+      url: https://www.nois3.it/lavora-con-noi/
+      description_start: Front-End / Backend Developer Freelance
+      description_end: 'stai applicando per:'
+    remote: true
+  - name: next-adv
+    company: Next Adv
+    board_url: https://www.nextadv.it/lavora-con-noi/
+    company_url: https://www.nextadv.it
+    source_type: company careers page
+    title_terms:
+    - web developer
+    notes: Rome office; the Web Developer section requests PHP alongside WordPress/Shopify. Do not infer role location
+      from the office footer.
+    seed_jobs:
+    - title: Web Developer
+      url: https://www.nextadv.it/lavora-con-noi/
+      description_start: Web Developer
+      description_end: Siamo sempre alla ricerca di nuovi professionisti
+  - name: mdesigner
+    company: Mdesigner
+    board_url: https://www.mdesigner.it/lavora-con-noi/
+    company_url: https://www.mdesigner.it
+    source_type: company careers page
+    title_terms:
+    - programmatore web e cms
+    notes: Rome office; named Programmatore Web e CMS opening with PHP/MySQL. General candidature form and other creative
+      professions are outside the role description.
+    seed_jobs:
+    - title: Programmatore Web e CMS
+      url: https://www.mdesigner.it/lavora-con-noi/
+      description_start: Posizioni aperte
+      description_end: Compila il seguente modulo
+  - name: area-sx
+    company: Area SX
+    board_url: https://www.areasx.com/index.php?D=1&page=curricula.php
+    company_url: https://www.areasx.com
+    source_type: company careers page
+    title_terms:
+    - programmatori
+    notes: Rome office; ongoing programmer collaborator recruitment with PHP/MySQL and electronics. Undated opportunity,
+      not a dated new opening.
+    seed_jobs:
+    - title: Programmatori
+      url: https://www.areasx.com/index.php?D=1&page=curricula.php
+      description_start: Area SX cerca programmatori
+      description_end: Speriamo di vederti presto tra noi!
+  - name: gruppo-fos
+    company: Gruppo FOS
+    board_url: https://www.gruppofos.it/lavora-noi/
+    company_url: https://www.gruppofos.it
+    source_type: company careers page
+    title_terms:
+    - junior software developer
+    notes: Rome office is separate from the Junior Software Developer PHP/Python role in Genova. Only that explicit
+      role section is seeded; no Rome-only filter.
+    seed_jobs:
+    - title: Junior Software Developer
+      url: https://www.gruppofos.it/lavora-noi/
+      description_start: Junior Software Developer
+      description_end: Java Developer
+    location: Genova

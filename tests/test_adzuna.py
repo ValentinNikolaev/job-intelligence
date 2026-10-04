@@ -34,6 +34,35 @@ class FakeResponse:
 
 
 class AdzunaTests(unittest.TestCase):
+    def test_default_profiles_use_italian_api_and_preserve_adzuna_it_redirect(self) -> None:
+        import yaml
+
+        settings = yaml.safe_load(MODULE.DEFAULT_CONFIG_PATH.read_text(encoding="utf-8"))
+        self.assertTrue(settings["queries"])
+        self.assertEqual({"it"}, {q["country"] for q in settings["queries"]})
+        redirect = "https://www.adzuna.it/land/ad/123?v=tracking&utm_source=api"
+        requested = []
+
+        def opener(request: Any, timeout: float) -> FakeResponse:
+            parsed = urlparse(request.full_url)
+            self.assertEqual("api.adzuna.com", parsed.netloc)
+            self.assertEqual("/v1/api/jobs/it/search/1", parsed.path)
+            requested.append(request.full_url)
+            return FakeResponse({"count": 1, "results": [{
+                "id": "123", "title": "Senior PHP Backend Developer", "description": "PHP APIs",
+                "redirect_url": redirect, "location": {"area": ["Italia", "Lazio", "Roma"]},
+            }]})
+
+        collector = AdzunaCollector(
+            {"ADZUNA_APP_ID": "test-id", "ADZUNA_APP_KEY": "test-key"},
+            opener=opener, sleep=lambda _: None,
+        )
+        jobs = list(collector.fetch())
+        self.assertEqual(len(settings["queries"]), len(requested))
+        self.assertEqual(1, len(jobs))
+        self.assertEqual(redirect, jobs[0].source_url)
+        self.assertEqual("Roma, Lazio, Italia", jobs[0].location)
+
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.config_path = Path(self.temp.name) / "adzuna.yaml"
