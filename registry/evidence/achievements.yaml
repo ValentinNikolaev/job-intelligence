@@ -668,13 +668,12 @@ entries:
     reviewed_at: '2026-09-25'
     method: Transcribed direct candidate confirmation from the current task and checked
       scope.
-  reason: The candidate corrected the 20,000 figure as a mistaken calculation of
-    automation volume, not a measured Go-service ticket count. See
-    registry/candidate/user-corrected-automation-volume-2026-10-02.md.
-  review_notes: Historical transcription only. Do not use the 20,000 figure or
-    its combined peak-season claim as verified volume. The newer candidate
-    correction says all tickets pass through the Go service; use the measured
-    report totals and the separate verified entry for closed-ticket scale.
+  reason: The candidate corrected the 20,000 figure as a mistaken calculation of automation
+    volume, not a measured Go-service ticket count. See registry/candidate/user-corrected-automation-volume-2026-10-02.md.
+  review_notes: Historical transcription only. Do not use the 20,000 figure or its
+    combined peak-season claim as verified volume. The newer candidate correction
+    says all tickets pass through the Go service; use the measured report totals and
+    the separate verified entry for closed-ticket scale.
 - id: pdffiller-user-confirmed
   employer: PDFfiller
   source:
@@ -1383,52 +1382,40 @@ entries:
   role: Software Developer
   source:
     path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
-    quote: |
-      ## Context and ownership
-
-      Simple operates in the medical and health domain, including clinic callback requests;
-      every call carries PII and potentially PHI. The candidate owned the architecture and
-      backend end to end, authored the epic and design document and made the security
-      decisions. The work passed formal security sign-off (DEV-35381) and a BAA and
-      call-recording compliance review (DEV-35382), then reached production on 2026-09-25
-      with a three-person cross-functional team: backend, frontend and SRE.
-
-      ## Verified privacy, access and audit design
-
-      - The customer phone number was resolved server-side, never returned by the API,
-        rendered in the agent UI or written to logs; only a mask reached the browser. There
-        was no number-reveal UI.
+    quote: "## Context and ownership\n\nSimple operates in the medical and health\
+      \ domain, including clinic callback requests;\nevery call carries PII and potentially\
+      \ PHI. The candidate owned the architecture and\nbackend end to end, authored\
+      \ the epic and design document and made the security\ndecisions. The work passed\
+      \ formal security sign-off (DEV-35381) and a BAA and\ncall-recording compliance\
+      \ review (DEV-35382), then reached production on 2026-09-25\nwith a three-person\
+      \ cross-functional team: backend, frontend and SRE.\n\n## Verified privacy,\
+      \ access and audit design\n\n- The customer phone number was resolved server-side,\
+      \ never returned by the API,\n  rendered in the agent UI or written to logs;\
+      \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
     sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
-    context_quote: |
-      Employer: Simple.life / Simple App  
-      Role: Software Developer
+    context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
   status: verified
   verification:
     reviewer: Candidate direct confirmation and Codex source review
     reviewed_at: '2026-09-27'
     method: Recorded the candidate''s direct clarification verbatim and checked the
       claim scope against its stated project context.
-  review_notes: Internal ticket identifiers, permission names and detailed consent flow
-    are source context. Render only the employer-relevant privacy, security and lawful
-    calling outcome in a CV.
+  review_notes: Internal ticket identifiers, permission names and detailed consent
+    flow are source context. Render only the employer-relevant privacy, security and
+    lawful calling outcome in a CV.
 - id: simple-2026-telephony-lawful-calling
   employer: Simple.life
   role: Software Developer
   source:
     path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
-    quote: |
-      ## Lawful calling and delivery controls
-
-      - The backend scheduler enforced customer-timezone call windows, Sundays and public
-        holidays, the do-not-call list and automatic withdrawal of queued callbacks on
-        opt-out, window closure or hang. Amazon Connect retries were set to zero, so built-in
-        retries could not bypass these controls.
-      - The call outcome was written to the existing Intercom ticket, with no duplicate ticket
-        or duplicate PII record.
+    quote: "## Lawful calling and delivery controls\n\n- The backend scheduler enforced\
+      \ customer-timezone call windows, Sundays and public\n  holidays, the do-not-call\
+      \ list and automatic withdrawal of queued callbacks on\n  opt-out, window closure\
+      \ or hang. Amazon Connect retries were set to zero, so built-in\n  retries could\
+      \ not bypass these controls.\n- The call outcome was written to the existing\
+      \ Intercom ticket, with no duplicate ticket\n  or duplicate PII record.\n"
     sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
-    context_quote: |
-      Employer: Simple.life / Simple App  
-      Role: Software Developer
+    context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
   status: verified
   verification:
     reviewer: Candidate direct confirmation and Codex source review
@@ -1443,12 +1430,16 @@ entries:
   period: '2026'
   source:
     path: registry/candidate/user-supplied-support-automation-comparison-2026-10-02.md
-    quote: 'Q1 2026: 419,127 all closed; 310,195 automated (74.0%); 108,932 human-handled (26.0%). Q2 2026: 377,251 all closed; 303,840 automated (80.5%); 73,411 human-handled (19.5%). The automation rate rose by 6.5 percentage points; automated count fell 2.0% and human-handled count fell 32.6%.'
+    quote: 'Q1 2026: 419,127 all closed; 310,195 automated (74.0%); 108,932 human-handled
+      (26.0%). Q2 2026: 377,251 all closed; 303,840 automated (80.5%); 73,411 human-handled
+      (19.5%). The automation rate rose by 6.5 percentage points; automated count
+      fell 2.0% and human-handled count fell 32.6%.'
     sha256: 1f34302ae0891728f61eed1836676c8e6f234984eb57952ab4732821e6a33b89
   attribution_source:
     path: registry/candidate/user-confirmed-impact-2026-09-25.md
     quote: '## Simple.life / Simple App'
-    context_quote: '**Role:** Software Developer (confirmed in the earlier career clarification).'
+    context_quote: '**Role:** Software Developer (confirmed in the earlier career
+      clarification).'
     sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
   status: verified
   verification:
@@ -1457,25 +1448,27 @@ entries:
     method: Transcribed the candidate-supplied DOCX, recalculated percentages and
       compared attribution with candidate-confirmed platform ownership; underlying
       exports unavailable.
-  review_notes: Platform-wide result to which the candidate contributed; do not
-    claim sole responsibility or imply employment throughout April–June until the
-    conflicting Simple.life end dates are reconciled. Do not treat lower automated
-    volume as growth. See registry/evidence/automation-metrics-2026.md for wording
-    without period labels and a separately marked forecast. The candidate confirmed
-    all tickets pass through his Go service in
-    registry/candidate/user-corrected-automation-volume-2026-10-02.md.
+  review_notes: Platform-wide result to which the candidate contributed; do not claim
+    sole responsibility or imply employment throughout April–June until the conflicting
+    Simple.life end dates are reconciled. Do not treat lower automated volume as growth.
+    See registry/evidence/automation-metrics-2026.md for wording without period labels
+    and a separately marked forecast. The candidate confirmed all tickets pass through
+    his Go service in registry/candidate/user-corrected-automation-volume-2026-10-02.md.
 - id: simple-2026-q1-q2-ai-agent-volume
   employer: Simple App
   role: Software Developer
   period: '2026'
   source:
     path: registry/candidate/user-supplied-support-automation-comparison-2026-10-02.md
-    quote: 'AI Agent closed 190,521 conversations in Q1 2026 and 242,823 in Q2 2026 (+27.5%). Its share of all closed conversations rose from 45.5% to 64.4%; its share of automated closures rose from 61.4% to 79.9%.'
+    quote: AI Agent closed 190,521 conversations in Q1 2026 and 242,823 in Q2 2026
+      (+27.5%). Its share of all closed conversations rose from 45.5% to 64.4%; its
+      share of automated closures rose from 61.4% to 79.9%.
     sha256: 1f34302ae0891728f61eed1836676c8e6f234984eb57952ab4732821e6a33b89
   attribution_source:
     path: registry/candidate/user-confirmed-impact-2026-09-25.md
     quote: '## Simple.life / Simple App'
-    context_quote: '**Role:** Software Developer (confirmed in the earlier career clarification).'
+    context_quote: '**Role:** Software Developer (confirmed in the earlier career
+      clarification).'
     sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
   status: verified
   verification:
@@ -1484,32 +1477,83 @@ entries:
     method: Transcribed the candidate-supplied DOCX, recalculated percentages and
       compared attribution with candidate-confirmed platform ownership; underlying
       exports unavailable.
-  review_notes: AI Agent is the report's handler category. The report does not
-    identify which changes caused its growth or assign all growth to the candidate.
-    Reconcile the conflicting Simple.life end dates before employer-facing use.
-    See registry/evidence/automation-metrics-2026.md for wording without period labels.
+  review_notes: AI Agent is the report's handler category. The report does not identify
+    which changes caused its growth or assign all growth to the candidate. Reconcile
+    the conflicting Simple.life end dates before employer-facing use. See registry/evidence/automation-metrics-2026.md
+    for wording without period labels.
 - id: simple-2026-go-service-closed-ticket-volume
   employer: Simple App
   role: Software Developer
   period: '2026'
   source:
     path: registry/candidate/user-supplied-support-automation-comparison-2026-10-02.md
-    quote: 'Q1 2026: 419,127 all closed; 310,195 automated (74.0%); 108,932 human-handled (26.0%). Q2 2026: 377,251 all closed; 303,840 automated (80.5%); 73,411 human-handled (19.5%). The automation rate rose by 6.5 percentage points; automated count fell 2.0% and human-handled count fell 32.6%.'
+    quote: 'Q1 2026: 419,127 all closed; 310,195 automated (74.0%); 108,932 human-handled
+      (26.0%). Q2 2026: 377,251 all closed; 303,840 automated (80.5%); 73,411 human-handled
+      (19.5%). The automation rate rose by 6.5 percentage points; automated count
+      fell 2.0% and human-handled count fell 32.6%.'
     sha256: 1f34302ae0891728f61eed1836676c8e6f234984eb57952ab4732821e6a33b89
   attribution_source:
     path: registry/candidate/user-confirmed-impact-2026-09-25.md
     quote: '## Simple.life / Simple App'
-    context_quote: '**Role:** Software Developer (confirmed in the earlier career clarification).'
+    context_quote: '**Role:** Software Developer (confirmed in the earlier career
+      clarification).'
     sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
   status: verified
   verification:
     reviewer: Codex report and candidate-clarification review
     reviewed_at: '2026-10-02'
-    method: Checked report totals and calculated three-month averages; candidate
-      separately confirmed all tickets pass through the Go service in
-      registry/candidate/user-corrected-automation-volume-2026-10-02.md.
+    method: Checked report totals and calculated three-month averages; candidate separately
+      confirmed all tickets pass through the Go service in registry/candidate/user-corrected-automation-volume-2026-10-02.md.
   review_notes: The April–June average is 125,750 closed tickets per month through
     the Go service; 101,280 of those monthly closures were successful automations
-    on average. These are rounded averages of reported aggregates, not measured
-    identical monthly counts or all incoming tickets. Do not reuse the retracted
-    20,000 estimate or attribute all automation outcomes solely to the candidate.
+    on average. These are rounded averages of reported aggregates, not measured identical
+    monthly counts or all incoming tickets. Do not reuse the retracted 20,000 estimate
+    or attribute all automation outcomes solely to the candidate.
+- id: airslate-cicd-delivery
+  employer: airSlate
+  role: Software Developer
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- Implemented **CI/CD pipelines** that shortened release cycles and improved\
+      \ delivery\n  consistency across services."
+    context_quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex root source review
+    reviewed_at: '2026-10-04'
+    method: Compared exact candidate-authored CV excerpt and airSlate Software Developer
+      attribution; qualitative release-cycle outcome only.
+- id: airslate-user-confirmed-impact
+  employer: airSlate
+  source:
+    path: registry/candidate/user-confirmed-airslate-impact-2026-10-04.md
+    quote: '## Question
+
+
+      > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно на
+      30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной БД
+      до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы подтверждаете,
+      как измерялись и каков был ваш личный вклад? Пока использую только подтверждённые
+      качественные формулировки без этих цифр.
+
+
+      ## Candidate reply
+
+
+      > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно рулили
+      всем'
+    sha256: 1a4a1df52116752cb580d12ba494e4b25924ee88c19a947eede2d1d00eac7b12
+  status: verified
+  verification:
+    reviewer: Codex root direct candidate confirmation review
+    reviewed_at: '2026-10-04'
+    method: Compared original LinkedIn airSlate figures with the candidate reply confirming
+      Prometheus measurement and backend-lead contribution.
+  review_notes: API average response time ~30% lower; CI/CD delivery time 11 minutes
+    shorter (~70%); main database maximum workload level 65%, not a reduction of 65%;
+    team feature delivery rate ~20% higher. Leadership contribution, not sole implementation.
+    Keep expense figure out of these CVs.
