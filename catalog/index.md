@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 69
+Total vacancies: 71
 
-- Found: 47
+- Found: 49
 - Applied: 17
 - Interview: 3
 - Rejected: 2
@@ -13,6 +13,8 @@ Total vacancies: 69
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-04 | [Monzo](../registry/jobs/2026-10-04_080334_monzo_backend-engineer-iii_17641bfe-ea36-42fd-87d2-0c258165c9fa/) | [Backend Engineer III](../registry/jobs/2026-10-04_080334_monzo_backend-engineer-iii_17641bfe-ea36-42fd-87d2-0c258165c9fa/job.md) | UK | Jobicy | Found | 2026-10-04 | [Jobicy](https://jobicy.com/jobs/152499-backend-engineer-iii) | — | — | — | — | — |
+| 2026-10-04 | [Miratech](../registry/jobs/2026-10-04_080321_miratech_senior-golang-backend-engineer-remote-microservi_2c445dbc-f772-4a5d-aafb-521243cfab22/) | [Senior Golang Backend Engineer — Remote, Microservices](../registry/jobs/2026-10-04_080321_miratech_senior-golang-backend-engineer-remote-microservi_2c445dbc-f772-4a5d-aafb-521243cfab22/job.md) | España | Adzuna | Found | 2026-10-04 | [Adzuna](https://www.adzuna.es/details/5909782016?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-10-04 | [infisical](../registry/jobs/2026-10-04_010527_infisical_senior-full-stack-engineer_b1fb3d18-5775-418d-8ba5-996d5793b134/) | [Senior Full Stack Engineer](../registry/jobs/2026-10-04_010527_infisical_senior-full-stack-engineer_b1fb3d18-5775-418d-8ba5-996d5793b134/job.md) | Brazil,  Canada,  Europe,  USA | Jobicy | Found | 2026-10-04 | [Jobicy](https://jobicy.com/jobs/154483-senior-full-stack-engineer-4) | — | — | — | — | — |
 | 2026-10-03 | [Voodoo](../registry/jobs/2026-10-03_183927_voodoo_senior-backend-engineer-golang-casual-game_2668f7a7-4133-4e82-914f-42d2608c0e77/) | [Senior Backend Engineer (Golang) - Casual Game](../registry/jobs/2026-10-03_183927_voodoo_senior-backend-engineer-golang-casual-game_2668f7a7-4133-4e82-914f-42d2608c0e77/job.md) | Paris, Ile-de-France | Adzuna | Found | 2026-10-03 | [Adzuna](https://www.adzuna.fr/details/5909925270?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-10-03 | [Miratech](../registry/jobs/2026-10-03_134258_miratech_senior-backend-golang-engineer_076ffbc0-fabb-4e91-9eb3-34e66f7f3d43/) | [Senior Backend Golang Engineer](../registry/jobs/2026-10-03_134258_miratech_senior-backend-golang-engineer_076ffbc0-fabb-4e91-9eb3-34e66f7f3d43/job.md) | España | Adzuna | Found | 2026-10-03 | [Adzuna](https://www.adzuna.es/details/5909781698?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
