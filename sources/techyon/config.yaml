@@ -1,0 +1,4 @@
+version: 1
+timeout_seconds: 12
+# Follow the public pagination, with a bound on listing-page requests.
+max_pages: 10
