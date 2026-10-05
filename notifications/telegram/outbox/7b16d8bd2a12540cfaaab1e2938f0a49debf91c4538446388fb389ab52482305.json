@@ -1,0 +1,55 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-05T14:25:32Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "BetterMe",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261005_betterme_fb4f7c58efdb4c8da0e220effd403146",
+      "score": 91,
+      "title": "Backend Engineer Core Team (Go + PHP)",
+      "url": "https://jobs.dou.ua/companies/betterme/vacancies/332846/",
+      "vacancy_id": "fb4f7c58-efdb-4c8d-a0e2-20effd403146"
+    },
+    {
+      "company": "DeltaFunc",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261005_deltafunc_8104eb5e655747a29cef9332b8e11a63",
+      "score": 88,
+      "title": "PHP Tech Lead",
+      "url": "https://djinni.co/jobs/851548-php-tech-lead/",
+      "vacancy_id": "8104eb5e-6557-47a2-9cef-9332b8e11a63"
+    },
+    {
+      "company": "MAKEUP",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "2026-10-01_181320_makeup_php-tech-lead_74afd9e4-33d1-4ccc-8790-f0dcdd1ec0fc",
+      "score": 89,
+      "title": "PHP Tech Lead",
+      "url": "https://jobs.dou.ua/companies/makeup/vacancies/375291/",
+      "vacancy_id": "74afd9e4-33d1-4ccc-8790-f0dcdd1ec0fc"
+    },
+    {
+      "company": "NetBox Labs",
+      "country_codes": [
+        "GB",
+        "US"
+      ],
+      "directory": "20261005_netbox-labs_51771763a57f45efada1012920ff884b",
+      "score": 78,
+      "title": "Senior Software Backend Engineer, Foundations",
+      "url": "https://jobicy.com/jobs/154539-senior-software-backend-engineer-foundations",
+      "vacancy_id": "51771763-a57f-45ef-ada1-012920ff884b"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "7b16d8bd2a12540cfaaab1e2938f0a49debf91c4538446388fb389ab52482305",
+  "schema_version": 2
+}

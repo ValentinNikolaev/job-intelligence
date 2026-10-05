@@ -1,29 +1,29 @@
 # Match Analysis
 
-**Score:** 93/100
+**Score:** 89/100
 **Recommendation:** Strong Match
 
-Exceptional match for a hands-on PHP tech lead in high-scale e-commerce: PHP leadership, Laravel/Symfony, architecture, reliability, performance, CI/CD and production ownership are well supported.
+The role aligns closely with confirmed PHP technical leadership, team-of-five management, Laravel/Symfony, production systems, CI/CD, and e-commerce-adjacent experience.
 
 ## Why it matches
 
-- PHP and 2+ years of technical leadership
-- Architecture, mentoring and delivery ownership
-- E-commerce-adjacent scale, performance and reliability
+- Hands-on PHP technical leadership and team management are directly supported.
+- The candidate has mature PHP frameworks, SQL, queues, AWS, CI/CD, reliability, and high-volume production experience.
 
 ## Gaps
 
-- Exact team size 3–8 and Ukrainian location preference are not fully established
-- Laravel at the stated scale is not explicit
+- Docker, caching, and explicit e-commerce ownership are not all directly established in the candidate profile.
 
 ## Concerns
 
-- The role offers Kyiv office or remote; cross-border hiring terms need confirmation
+- The job is remote-capable but also Kyiv-based; location and collaboration expectations should be confirmed.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| 6+ years PHP/backend | critical / stated | strong | 6+ років комерційного досвіду у PHP/backend-розробці | PHP | / |
-| 2+ years Tech Lead/Team Lead | critical / stated | strong | 2+ роки в ролі Tech Lead /Team Lead | Technical Lead | Exact team-size scope should be confirmed / Describe airSlate and Hyprr leadership scope |
-| production architecture, testing, CI/CD and monitoring | high / stated | strong | Практичний досвід автоматизованих тестів, CI/CD, Docker, Git, моніторингу | GitHub Actions | / |
+| PHP/backend experience | critical / stated | strong | 6+ років комерційного досвіду у PHP/backend-розробці. | - PHP | The profile states 15+ years overall and extensive PHP experience, but the exact commercial PHP year count is not stated as a single number. / Confirm chronology in interview. |
+| Tech Lead responsibility for 3–8 people | critical / stated | strong | 2+ роки в ролі Tech Lead /Team Lead із реальною відповідальністю за команду приблизно 3–8 людей. | **Technical Lead** | / |
+| Production architecture and reliability | high / stated | partial | Розуміння SQL, REST API, черг, кешування, транзакцій і роботи production систем. | - MySQL | Caching and transactions are not explicit in the profile text. / Confirm concrete caching and transaction design work. |
+| Modern PHP frameworks | high / stated | strong | Досвід із modern PHP та Laravel, Symfony або іншим зрілим PHP-фреймворком. | - Laravel | / |
+| E-commerce or business-critical scale | preferred / stated | partial | Досвід у e-commerce, high-load або іншому business-critical продукті. | - PHP | The e-commerce claim is broad rather than tied to a named role. / Clarify the named e-commerce systems and scale. |
