@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import io
+import shutil
+import subprocess
 import tempfile
 import unittest
 from contextlib import redirect_stdout
@@ -17,6 +19,24 @@ from tests.test_sheets_sync import observed
 
 
 class CompanyInquiryTests(unittest.TestCase):
+    @unittest.skipUnless(shutil.which("git"), "Git is required for checkout-byte verification")
+    def test_inquiry_snapshot_survives_windows_line_ending_conversion(self):
+        self.message.write_bytes(b"Buongiorno,\n\nAvete opportunita backend?\n")
+        self.lifecycle.record_company_inquiry(**self.options)
+        base = self.root / "registry/application-history/company-inquiries"
+        attributes = Path(__file__).parents[1] / "registry/application-history/company-inquiries/.gitattributes"
+        (base / ".gitattributes").write_bytes(attributes.read_bytes())
+        def git(*args):
+            return subprocess.run(["git", "-C", str(self.root), *args], check=True, capture_output=True)
+        git("init")
+        git("config", "core.autocrlf", "true")
+        git("add", "registry/application-history/company-inquiries")
+        checkout = self.root / "checked-out"
+        checkout.mkdir()
+        git("checkout-index", "--all", "--prefix=" + checkout.as_posix() + "/")
+        message = checkout / "registry/application-history/company-inquiries/laser-romae/2026-10-05/message.txt"
+        self.assertEqual(message.read_bytes(), self.message.read_bytes())
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
