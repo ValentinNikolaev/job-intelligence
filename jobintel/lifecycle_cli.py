@@ -15,6 +15,14 @@ def main(argv=None, *, root: Path | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--project-root", type=Path, default=root or Path(__file__).resolve().parents[1])
     commands = parser.add_subparsers(dest="command", required=True)
+    inquiry = commands.add_parser("record-company-inquiry", help="record a confirmed hiring inquiry without a vacancy")
+    for field in ("company-key", "company", "inquiry-id", "sent-on", "recipient", "subject"):
+        inquiry.add_argument("--" + field, required=True)
+    inquiry.add_argument("--message-file", type=Path, required=True)
+    inquiry.add_argument("--confirm-sent", action="store_true")
+    check_inquiry = commands.add_parser("verify-company-inquiry")
+    check_inquiry.add_argument("--company-key", required=True)
+    check_inquiry.add_argument("--inquiry-id", required=True)
     submission = commands.add_parser("record-submission", help="record exact files already sent by the user")
     submission.add_argument("vacancy")
     submission.add_argument("--submission-id", required=True)
@@ -48,7 +56,13 @@ def main(argv=None, *, root: Path | None = None) -> int:
             print(json.dumps({"questions": profile_questions(args.project_root)}, ensure_ascii=False, indent=2))
             return 0
         lifecycle = ApplicationLifecycle(args.project_root)
-        if args.command == "record-submission":
+        if args.command == "record-company-inquiry":
+            result = lifecycle.record_company_inquiry(company_key=args.company_key, company=args.company,
+                inquiry_id=args.inquiry_id, sent_on=args.sent_on, recipient=args.recipient,
+                subject=args.subject, message_file=args.message_file, confirmed=args.confirm_sent)
+        elif args.command == "verify-company-inquiry":
+            result = lifecycle.verify_company_inquiry(company_key=args.company_key, inquiry_id=args.inquiry_id)
+        elif args.command == "record-submission":
             result = lifecycle.record_submission(args.vacancy, submission_id=args.submission_id,
                 sent_on=args.sent_on, artifacts=args.artifact, confirmed=args.confirm_sent,
                 channel=args.channel, positioning=args.positioning, format=args.format, role_family=args.role_family)

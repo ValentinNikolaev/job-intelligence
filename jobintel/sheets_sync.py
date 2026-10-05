@@ -529,6 +529,11 @@ def _application(value: Any) -> dict[str, Any]:
     required = ("application_id", "vacancy_id", "directory", "company", "title", "status", "source_revision")
     result = dict(item)
     for field in required:
+        if field == "vacancy_id" and item.get("entry_type") == "company_inquiry":
+            if item.get("vacancy_id") or not str(item.get("application_id", "")).startswith("company-inquiry:"):
+                raise SheetsSyncError("company inquiry must have its own ID and no vacancy_id")
+            result[field] = ""
+            continue
         if not _text(item.get(field)):
             raise SheetsSyncError(f"application {field} is required")
         result[field] = _text(item[field])

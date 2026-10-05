@@ -93,6 +93,17 @@ def profile_questions(root: Path) -> list[dict]:
     return questions
 
 
+def verify_inquiry_snapshot(root: Path, payload: dict) -> None:
+    destination = (root / payload["snapshot"]).resolve()
+    destination.relative_to((root / "registry/application-history/company-inquiries").resolve())
+    expected = {k: v for k, v in payload.items() if k != "recorded_at"}
+    if json.loads((destination / "receipt.json").read_text(encoding="utf-8")) != expected:
+        raise ValueError("company inquiry receipt differs from canonical history")
+    data = (destination / "message.txt").read_bytes()
+    if len(data) != payload["message_size"] or _sha(data) != payload["message_sha256"]:
+        raise ValueError("company inquiry message hash or size mismatch")
+
+
 class ApplicationLifecycle:
     def __init__(self, root: Path, *, store=None, today: date | None = None):
         self.root = root.resolve()
@@ -200,6 +211,50 @@ class ApplicationLifecycle:
                 raise ValueError("identical submission already recorded; reuse its submission ID")
             self._bundle(destination, files)
             return self._append(vacancy, event)
+
+    def record_company_inquiry(self, *, company_key: str, company: str, inquiry_id: str,
+                               sent_on: str, recipient: str, subject: str,
+                               message_file: Path, confirmed: bool) -> dict:
+        if not confirmed:
+            raise ValueError("explicit confirmation of the sent message is required")
+        _key(company_key)
+        _key(inquiry_id)
+        _date(sent_on, self.today)
+        if not company.strip() or not subject.strip() or not re.fullmatch(r"[^\s@]+@[^\s@]+\.[^\s@]+", recipient):
+            raise ValueError("company, subject and a recipient email are required")
+        data = (self.root / message_file).read_bytes()
+        if not data.strip():
+            raise ValueError("sent message is empty")
+        data.decode("utf-8-sig")
+        key = f"company-inquiry:{company_key}:{inquiry_id}"
+        destination = self.root / "registry/application-history/company-inquiries" / company_key / inquiry_id
+        payload = {
+            "schema_version": 1, "entry_type": "company_inquiry", "application_id": key,
+            "company_key": company_key, "company": company.strip(), "vacancy_id": None,
+            "sent_on": sent_on, "recipient": recipient, "subject": subject.strip(),
+            "status": "contacted", "channel": "email", "attachments_status": "not_provided",
+            "confirmation": "explicit_user_confirmation", "message_sha256": _sha(data),
+            "message_size": len(data), "snapshot": destination.relative_to(self.root).as_posix(),
+        }
+        with self.store.lease("application-lifecycle:record-company-inquiry"):
+            previous = self.store.get("operational_logs", key)
+            if previous and {k: v for k, v in previous["payload"].items() if k != "recorded_at"} != payload:
+                raise ValueError("company inquiry ID already exists with different content")
+            self._bundle(destination, {"message.txt": data, "receipt.json": _json(payload)})
+            if previous:
+                return previous["payload"]
+            recorded = {**payload, "recorded_at": datetime.now(timezone.utc).isoformat()}
+            self.store.put("operational_logs", key, {"payload": recorded}, expected_revision=0)
+            return recorded
+
+    def verify_company_inquiry(self, *, company_key: str, inquiry_id: str) -> dict:
+        _key(company_key)
+        _key(inquiry_id)
+        doc = self.store.get("operational_logs", f"company-inquiry:{company_key}:{inquiry_id}")
+        if doc is None:
+            raise ValueError("unknown company inquiry")
+        verify_inquiry_snapshot(self.root, doc["payload"])
+        return {"verified": True, "application_id": doc["payload"]["application_id"]}
 
     def verify_submission(self, selector: str, *, submission_id: str) -> dict:
         vacancy = self.vacancy(selector)
@@ -322,6 +377,9 @@ class ApplicationLifecycle:
             groups[dimension] = {label: self._summary([r for r in rows if r[dimension] == label], cutoff)
                                  for label in sorted({r[dimension] for r in rows})}
         return {"as_of": cutoff.isoformat(), "summary": self._summary(rows, cutoff), "segments": groups,
+                "company_inquiries": [doc["payload"] for doc in self.store.list("operational_logs")
+                                      if str(doc["_id"]).startswith("company-inquiry:")
+                                      and date.fromisoformat(doc["payload"]["sent_on"]) <= cutoff],
                 "interpretation": "Observed invitations / confirmed submissions. Pending applications are censored, not rejections. "
                 "Intervals are descriptive and assume independent observations; repeated vacancies, unequal follow-up, "
                 "small samples and selection effects limit comparisons. No causal or automatic strategy recommendations.",

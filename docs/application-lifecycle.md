@@ -9,6 +9,23 @@ vacancy's status: only the existing explicit `run.py status` command does that.
 
 ## Record what actually happened
 
+For a confirmed general hiring inquiry to a company, without a specific vacancy:
+
+```powershell
+python run.py applications record-company-inquiry --company-key laser-romae --company "Laser Romae" --inquiry-id 2026-10-05 --sent-on 2026-10-05 --recipient info@laserromae.it --subject "Backend opportunities" --message-file .codex-work/sent-message.txt --confirm-sent
+python run.py applications verify-company-inquiry --company-key laser-romae --inquiry-id 2026-10-05
+```
+
+Confirm the recipient, sending date, subject and exact message first. This records
+an immutable message and receipt under `registry/application-history/company-inquiries/`
+and a canonical `operational_logs` entry. Identical retries reuse the record;
+conflicting content cannot overwrite it. Attachments remain `not_provided` because
+this command records the message only. It never creates a vacancy or changes one.
+The lifecycle report lists company inquiries separately from vacancy submissions,
+so they do not enter the interview-rate denominator or vacancy follow-up schedule.
+The application export includes these verified inquiries as `contacted` rows with
+an empty vacancy ID and the sent-message snapshot as their document locator.
+
 ```powershell
 python run.py applications record-submission <vacancy> --submission-id <key> --sent-on YYYY-MM-DD --artifact <sent-cv> --artifact <sent-letter> --channel direct --positioning senior-backend --format compact --role-family backend --confirm-sent
 python run.py applications verify-submission <vacancy> --submission-id <key>

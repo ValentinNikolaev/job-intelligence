@@ -1,0 +1,18 @@
+{
+  "application_id": "company-inquiry:laser-romae:2026-10-05",
+  "attachments_status": "not_provided",
+  "channel": "email",
+  "company": "Laser Romae",
+  "company_key": "laser-romae",
+  "confirmation": "explicit_user_confirmation",
+  "entry_type": "company_inquiry",
+  "message_sha256": "2e207763a6646023088fa79489151af72aedde4661cda81d24fd94c28677d8fa",
+  "message_size": 829,
+  "recipient": "info@laserromae.it",
+  "schema_version": 1,
+  "sent_on": "2026-10-05",
+  "snapshot": "registry/application-history/company-inquiries/laser-romae/2026-10-05",
+  "status": "contacted",
+  "subject": "Opportunità attuali nello sviluppo backend — Go e PHP",
+  "vacancy_id": null
+}

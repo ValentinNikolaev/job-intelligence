@@ -1167,9 +1167,11 @@ def export_applications(
     if isinstance(source, Mapping):
         documents = source.get("collections", {}).get("applications", [])
         events = source.get("collections", {}).get("status_events", [])
+        logs = source.get("collections", {}).get("operational_logs", [])
     else:
         documents = source.list("applications")
         events = source.list("status_events")
+        logs = source.list("operational_logs")
     confirmed: list[dict[str, Any]] = []
     needs_review: list[dict[str, Any]] = []
     without_package: list[dict[str, str]] = []
@@ -1215,6 +1217,27 @@ def export_applications(
                 "source_revision": int(item.get("revision") or item.get("source_revision") or 1),
             }
         )
+    for log in logs:
+        if not str(log.get("_id", "")).startswith("company-inquiry:"):
+            continue
+        inquiry = log["payload"]
+        if package_root is not None:
+            from .application_lifecycle import verify_inquiry_snapshot
+            try:
+                verify_inquiry_snapshot(package_root, inquiry)
+            except (OSError, ValueError):
+                without_package.append({"application_id": inquiry["application_id"],
+                                        "vacancy_id": "", "directory": inquiry["snapshot"]})
+                continue
+        confirmed.append({
+            "entry_type": "company_inquiry", "application_id": inquiry["application_id"],
+            "vacancy_id": None, "directory": inquiry["snapshot"], "company": inquiry["company"],
+            "title": "Company hiring inquiry", "effective_at": inquiry["sent_on"],
+            "recorded_at": inquiry["recorded_at"], "status": inquiry["status"],
+            "application_channel": inquiry["channel"],
+            "package_url": f"{REPOSITORY_URL}/tree/main/{quote(inquiry['snapshot'])}",
+            "source_revision": int(log.get("revision") or 1),
+        })
     confirmed.sort(key=lambda item: str(item["application_id"]))
     needs_review.sort(key=lambda item: str(item.get("application_id") or item.get("_id")))
     without_package.sort(key=lambda item: item["application_id"])
@@ -1236,7 +1259,8 @@ def export_applications(
     return {
         "schema_version": 1,
         "source_revision": max(
-            (int(item.get("revision") or item.get("source_revision") or 1) for item in documents),
+            (int(item.get("revision") or item.get("source_revision") or 1)
+             for item in [*documents, *(log for log in logs if str(log.get("_id", "")).startswith("company-inquiry:"))]),
             default=0,
         ),
         "applications": confirmed,
