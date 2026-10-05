@@ -207,13 +207,18 @@ body paragraphs. Recommended compact targets are CV 300–500 and letter 150–2
 The analysis/interview minima and ceilings remain unchanged. Preserve two meaningful
 letter stories, credible claims and required sections in either format. Compact is
 selected for the application channel or user preference, never an excuse for generic
-or skeletal content. Detailed Experience focuses on the last ten years, while
-dated entries in the same Experience section preserve every older or
-briefly represented employer and engagement. Employer coverage is mandatory. Use H3 role headings for all companies; do not
-create a separate Additional or Earlier Experience section. An older role ending
-outside the five-year window may retain only its dated H3 heading and an empty body.
-Such entries need no invented achievement bullets or Technologies line. The ten-year
-detail limit still applies to roles containing a body; recent roles still need three bullets.
+or skeletal content. Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller
+is the earliest permitted employer; exclude employers whose work started before PDFfiller and roles
+ending nine or more years before the reference month. Never mention excluded employers in any CV
+section, including Summary or Skills. Preserve every employer within this approved window in one
+Experience section, with consistent H3 employer/role/date headings and source-backed dates. Older
+permitted roles may have a dated heading with an empty body. Keep reverse chronology, overlaps and
+supported uncertainty; never invent continuity. This rule supersedes the former full-career coverage
+requirement. Preserve the approved section structure during revisions. Never add Additional or
+Earlier Experience. Use literal, entity-free headings and flat unordered Experience lists with one
+consistent marker; keep blank lines between items. Review exported list indentation and markers on
+every page. Recent roles still need three source-backed bullets; older detailed roles need two.
+Date-only permitted older roles need neither invented achievements nor a Technologies line.
 
 For Senior or Tech Lead positioning, the final CV audit is editorial as well as
 mechanical. Each Experience bullet should identify a supported contribution, the

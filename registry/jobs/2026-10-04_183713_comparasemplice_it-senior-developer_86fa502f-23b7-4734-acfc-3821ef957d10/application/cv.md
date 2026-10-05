@@ -67,12 +67,6 @@ Technologies: PHP, Go, Laravel, MySQL, AWS, microservizi.
 
 Technologies: PHP, Laravel, MySQL, RabbitMQ, DNS, DKIM, SPF, DMARC.
 
-### Aurum Software — Senior Software Developer | November 2015 – November 2016
-
-### Upwork freelance — Software Developer | July 2008 – September 2016
-
-### CoinsBank/bit-x — Senior Software Developer | January 2014 – November 2015
-
 ## Education
 
 **MSc in Computer Science**, National Technical University, Kharkiv, Ucraina — 2003–2008

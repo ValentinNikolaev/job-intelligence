@@ -77,10 +77,16 @@ consequence, or convert an unsupported metric into an achievement.
 - Use only `verified` evidence-bank entries backed by `registry/candidate/*.md`.
 - Preserve the confirmed Simple.life date/title treatment and PHP attribution rules.
 - Retain at least two distinct substantive bullets for every detailed role and at
-  least three for each role ending in the last five years. Preserve every employer
-  and engagement with source-backed dates in one Experience section. Never omit a company. If verified evidence cannot support the
-  detailed-role minimum without filler, retain its dated chronology entry or
-  ask for the missing facts before publishing a detailed role.
+  least three for each role ending in the last five years. Use `config/cv-editorial-knowledge.yaml`
+  as the CV career boundary: PDFfiller is the earliest permitted employer; exclude employers whose
+  work started before PDFfiller and roles ending nine or more years before the reference month.
+  Never mention excluded employers in any CV section, including Summary or Skills. Preserve every
+  employer within this approved window in one Experience section, with consistent H3
+  employer/role/date headings and source-backed dates. Older permitted roles may have a dated
+  heading with an empty body. Keep reverse chronology, overlaps and supported uncertainty; never
+  invent continuity. This rule supersedes the former full-career coverage requirement. If verified
+  evidence cannot support the detailed-role minimum without filler, retain a permitted older dated
+  entry or ask for facts.
 - Keep reverse chronology, role dates, vacancy-specific skills, and a maximum of two
   visually readable pages.
 - Use PHP for Simple.life only in Technologies unless a direct source confirms a

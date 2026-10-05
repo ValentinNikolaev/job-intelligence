@@ -557,6 +557,7 @@ class ApplicationGenerator:
                             exports[name] = validate_export(
                                 staging / f"{name}.md", staging / f"{name}.docx",
                                 visual_review=reviews.get(name) if isinstance(reviews, Mapping) else None,
+                                require_cv_lists=name == "cv",
                             )
                             if name == "cv":
                                 exports[name]["preview_reused"] = cv_preview_reused
@@ -760,7 +761,7 @@ def validate_application_package(
         _validate_cv_role_technologies(result["cv_markdown"])
         if career_source_path is not None:
             try:
-                validate_career_coverage(result["cv_markdown"], career_source_path)
+                validate_career_coverage(result["cv_markdown"], career_source_path, reference_date=reference_date)
             except CareerCoverageError as exc:
                 raise ApplicationError(str(exc)) from exc
         if vacancy is not None:

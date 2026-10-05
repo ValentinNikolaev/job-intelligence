@@ -1,9 +1,12 @@
-"""Check that a tailored CV retains every employer in the candidate record."""
+"""Check employer coverage inside the candidate-approved CV career window."""
 
 from __future__ import annotations
 
 import re
+from datetime import date, datetime
 from pathlib import Path
+
+import yaml
 
 
 _MONTHS = (
@@ -131,20 +134,61 @@ def _cv_entries(markdown: str) -> list[tuple[str, str]]:
                     break
                 following.append(next_line)
             entries.append((title, "\n".join((title, *following))))
-        elif section in {"additional experience", "earlier experience"} and _PERIOD.search(line):
-            entries.append((re.sub(r"^\s*[-*]\s+", "", line), line))
     return entries
 
 
-def validate_career_coverage(markdown: str, source_path: Path) -> None:
-    """Require every sourced employer in one dated Experience chronology.
+def _scoped_roles(roles: dict, source_path: Path, reference_date: date | datetime | None) -> dict:
+    root = source_path.parents[2]
+    policy_path = root / "config" / "cv-editorial-knowledge.yaml"
+    if not policy_path.is_file() and not (root / ".git").exists():
+        return roles  # Standalone source fixtures have no project-specific career policy.
+    try:
+        scope = yaml.safe_load(_read_source(policy_path))["career_scope"]
+        first = scope["first_employer"]
+        years = scope["maximum_years_since_end"]
+        if first not in roles or type(years) is not int or years < 1:
+            raise ValueError("invalid career scope")
+        start = roles[first][0]
+        if start[1] is None:
+            raise ValueError("career boundary requires a source-backed month")
+    except (KeyError, TypeError, ValueError, yaml.YAMLError) as exc:
+        raise CareerCoverageError("CV career scope is missing or invalid") from exc
+    today = reference_date.date() if isinstance(reference_date, datetime) else reference_date or date.today()
+    cutoff = (today.year - years, today.month)
+    return {employer: period for employer, period in roles.items()
+            if (period[0][0], period[0][1] or 1) >= start
+            and (period[1] is None or (period[1][0], period[1][1] or 12) > cutoff)}
+
+
+def validate_career_coverage(markdown: str, source_path: Path, *, reference_date: date | datetime | None = None) -> None:
+    """Require sourced employers in the approved window and reject excluded history.
 
     The LinkedIn headings are read on each validation. A newly documented employer
-    therefore enters the required set automatically, while corrupt/missing sources fail.
+    within the approved window enters the required set automatically. Missing sources fail.
     """
     if re.search(r"^##\s+(?:Additional|Earlier) Experience\s*$", markdown, re.MULTILINE | re.IGNORECASE):
         raise CareerCoverageError("cv_markdown must keep all employers in one Experience section")
-    roles = _corrected_roles(source_path)
+    if re.search(r"^#{1,6}\s+.*(?:&#(?:x[0-9a-f]+|\d+);|&nbsp;)", markdown, re.MULTILINE | re.IGNORECASE):
+        raise CareerCoverageError("CV headings must not contain encoded whitespace or HTML entities")
+    if len(re.findall(r"^##\s+Experience\s*$", markdown, re.MULTILINE | re.IGNORECASE)) != 1:
+        raise CareerCoverageError("cv_markdown must have exactly one Experience section")
+    section = re.split(r"(?im)^##\s+Experience\s*$", markdown, maxsplit=1)[1]
+    section = re.split(r"(?m)^##\s+", section, maxsplit=1)[0]
+    markers = set()
+    for line in section.splitlines():
+        bullet = re.match(r"^(\s*)([-*+]|\d+[.)])\s+", line)
+        if bullet:
+            if bullet[1] or bullet[2] not in {"-", "*", "+"}:
+                raise CareerCoverageError("Experience bullets must be flat unordered lists")
+            markers.add(bullet[2])
+    if len(markers) > 1:
+        raise CareerCoverageError("Experience bullets must use a consistent list marker")
+    all_roles = _corrected_roles(source_path)
+    roles = _scoped_roles(all_roles, source_path, reference_date)
+    for employer in all_roles.keys() - roles.keys():
+        aliases = _ALIASES.get(employer.casefold(), (employer,))
+        if any(re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", markdown, re.IGNORECASE) for alias in aliases):
+            raise CareerCoverageError(f"cv_markdown mentions an employer outside the approved career window: {employer}")
     entries = _cv_entries(markdown)
     for employer, (expected_start, expected_end) in roles.items():
         aliases = _ALIASES.get(employer.casefold(), (employer,))

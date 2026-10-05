@@ -1,4 +1,8 @@
 schema_version: 1
+career_scope:
+  first_employer: PDFfiller.com
+  maximum_years_since_end: 9
+  rule: Include only employers starting at or after PDFfiller; never mention earlier employers anywhere in a CV.
 purpose: Senior and architect CV editorial guidance; examples are shapes, never candidate facts.
 approved_outcome_patterns:
   - id: consequential-delivery

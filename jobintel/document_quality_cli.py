@@ -76,13 +76,14 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
                     result["layout_warnings"] = cv_role_page_warnings(source, target / "cv.pdf")
                     receipt.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
                 result["cached"] = True
+                validate_export(source, target / "cv.docx", require_cv_lists=True)
             else:
                 parent.mkdir(parents=True, exist_ok=True)
                 with tempfile.TemporaryDirectory(prefix=".preview-", dir=parent) as temporary:
                     stage = Path(temporary)
                     (stage / "cv.md").write_bytes(canonical_source)
                     converter.convert(stage / "cv.md", stage / "cv.docx")
-                    docx_check = validate_export(stage / "cv.md", stage / "cv.docx")
+                    docx_check = validate_export(stage / "cv.md", stage / "cv.docx", require_cv_lists=True)
                     bullets = verify_cv_experience(stage / "cv.md", stage / "cv.docx")
                     timed_call(base, "pdf_export", source.parent.name,
                                lambda: export_pdf(stage / "cv.docx", stage / "cv.pdf"))

@@ -54,6 +54,40 @@ def write_pdf(path: Path, pages: list[str]) -> None:
     path.write_bytes(output)
 
 
+class CvListFormattingTests(unittest.TestCase):
+    def test_detects_formatting_damage_despite_preserved_text(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source, artifact = root / "cv.md", root / "cv.docx"
+            source.write_text("## Experience\n### Employer\n- Built service.\n- Improved reliability.\n", encoding="utf-8")
+            for damage in (None, "missing", "nested", "decimal", "indent"):
+                with self.subTest(damage=damage):
+                    write_docx(artifact, ["Experience", "Employer", "Built service.", "Improved reliability."])
+                    with zipfile.ZipFile(artifact) as archive:
+                        entries = {name: archive.read(name) for name in archive.namelist()}
+                    props = '<w:pPr><w:numPr><w:ilvl w:val="0"/><w:numId w:val="1"/></w:numPr></w:pPr>'
+                    xml = entries["word/document.xml"].decode()
+                    xml = xml.replace('<w:p><w:r><w:rPr>', '<w:p>' + props + '<w:r><w:rPr>')
+                    if damage == "missing":
+                        xml = xml.replace(props, "", 3)
+                    elif damage == "nested":
+                        xml = xml.replace('w:ilvl w:val="0"', 'w:ilvl w:val="1"')
+                    elif damage == "indent":
+                        xml = xml.replace('<w:p>' + props, '<w:p>' + props.replace('</w:pPr>', '<w:ind w:left="800"/></w:pPr>'), 3)
+                    entries["word/document.xml"] = xml.encode()
+                    fmt = "decimal" if damage == "decimal" else "bullet"
+                    entries["word/numbering.xml"] = ('<w:numbering xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:abstractNum w:abstractNumId="0"><w:lvl w:ilvl="0"><w:numFmt w:val="' + fmt + '"/><w:lvlText w:val="bullet"/><w:pPr><w:ind w:left="720" w:hanging="360"/></w:pPr></w:lvl></w:abstractNum><w:num w:numId="1"><w:abstractNumId w:val="0"/></w:num></w:numbering>').encode()
+                    with zipfile.ZipFile(artifact, "w") as archive:
+                        for name, content in entries.items():
+                            archive.writestr(name, content)
+                    validate_export(source, artifact)  # Text preservation still passes.
+                    if damage is None:
+                        validate_export(source, artifact, require_cv_lists=True)
+                    else:
+                        with self.assertRaises(DocumentQualityError):
+                            validate_export(source, artifact, require_cv_lists=True)
+
+
 class CvPageLayoutTests(unittest.TestCase):
     def test_flags_role_heading_orphaned_on_previous_page(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

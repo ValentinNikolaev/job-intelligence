@@ -84,12 +84,18 @@ current Codex surface, tell the user and do not publish under that profile.
    Apply the recent-experience and impact/judgment editorial gates in
    `references/prepare.md` before recording that final review. A total bullet
    count never substitutes for a role-by-role hiring-manager review.
-   Preserve every documented employer and engagement in the final CV. Compare the
-   complete candidate career inventory with the single `Experience` section; retain short dated chronology entries when detailed
-   bullets are unnecessary. Use consistent H3 role headings throughout; never split
-   older companies into an Additional or Earlier Experience section. Never omit a company for relevance, page count, age,
-   or insufficient achievement bullets. Review overlap and uncertain dates without
-   inventing continuity. Record every company's representation in `cv_audit.role_coverage`.
+   Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
+   permitted employer; exclude employers whose work started before PDFfiller and roles ending nine
+   or more years before the reference month. Never mention excluded employers in any CV section,
+   including Summary or Skills. Preserve every employer within this approved window in one
+   Experience section, with consistent H3 employer/role/date headings and source-backed dates. Older
+   permitted roles may have a dated heading with an empty body. Keep reverse chronology, overlaps
+   and supported uncertainty; never invent continuity. This rule supersedes the former full-career
+   coverage requirement. Preserve the approved section structure during revisions. Never add
+   Additional or Earlier Experience. Use literal, entity-free headings and flat unordered Experience
+   lists with one consistent marker; keep blank lines between items. Review exported list
+   indentation and markers on every page. Record the permitted employers in
+   `cv_audit.role_coverage`; record exclusions as internal scope decisions.
    Every displayed Experience role ending within the five years through the
    validator's reference month needs at least three distinct, source-backed
    Experience bullets; older detailed roles need at least two. Technologies

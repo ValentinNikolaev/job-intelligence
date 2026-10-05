@@ -77,12 +77,18 @@ explicit single-document request, use the full-package flow below.
    CV; keep those only in handoffs, `claims.yaml`, and `quality.yaml`. Never duplicate
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
    Apply the mandatory **recent-experience editorial gate** before the CV is final:
-   - retain every documented employer and engagement. Check the full source career
-     inventory, not only the previous tailored CV, against the single Experience section. Record each employer, source
-     path, source period, and final section in `cv_audit.role_coverage`. No company
-     may be excluded for vacancy relevance, age, page count, or a bullet shortage.
-     Preserve real dates, overlaps, and supported uncertainty; never manufacture
-     continuous employment or conceal a genuine source gap;
+   - Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
+     permitted employer; exclude employers whose work started before PDFfiller and roles ending nine
+     or more years before the reference month. Never mention excluded employers in any CV section,
+     including Summary or Skills. Preserve every employer within this approved window in one
+     Experience section, with consistent H3 employer/role/date headings and source-backed dates.
+     Older permitted roles may have a dated heading with an empty body. Keep reverse chronology,
+     overlaps and supported uncertainty; never invent continuity. This rule supersedes the former
+     full-career coverage requirement. Preserve the approved section structure during revisions.
+     Never add Additional or Earlier Experience. Use literal, entity-free headings and flat
+     unordered Experience lists with one consistent marker; keep blank lines between items. Review
+     exported list indentation and markers on every page. Record permitted employers, dates and
+     sources in `cv_audit.role_coverage`, and excluded employers as internal scope decisions;
    - give every detailed role at least two distinct, source-backed outcome or decision
      bullets, and each role ending within the last five years at least three. Re-read
      the candidate source when a role falls short; preserve its dated employer/role

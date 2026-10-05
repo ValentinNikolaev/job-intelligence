@@ -26,12 +26,18 @@ Its `shared_candidate_context` lists the immutable profile sources and a verifie
 evidence packet under ignored `.codex-work/preparation-shared/`. Read those shared
 candidate facts once for the selected batch. Keep each vacancy's posting, match,
 research, claims, CV, and quality receipt independent; never copy a vacancy-specific
-judgment or paragraph into another package. For each CV, explicitly review every
-documented employer and engagement, including older work, and record its dates,
-source and final section in `cv_audit.role_coverage`. All companies must appear
-in one Experience section. Tailor
-detail, never employer coverage. Preserve genuine dates and supported uncertainty
-without inventing continuity. Role-depth checks alone cannot detect a missing employer.
+judgment or paragraph into another package. Use `config/cv-editorial-knowledge.yaml` as the CV
+career boundary: PDFfiller is the earliest permitted employer; exclude employers whose work started
+before PDFfiller and roles ending nine or more years before the reference month. Never mention
+excluded employers in any CV section, including Summary or Skills. Preserve every employer within
+this approved window in one Experience section, with consistent H3 employer/role/date headings and
+source-backed dates. Older permitted roles may have a dated heading with an empty body. Keep reverse
+chronology, overlaps and supported uncertainty; never invent continuity. This rule supersedes the
+former full-career coverage requirement. Preserve the approved section structure during revisions.
+Never add Additional or Earlier Experience. Use literal, entity-free headings and flat unordered
+Experience lists with one consistent marker; keep blank lines between items. Review exported list
+indentation and markers on every page. Record permitted employers and sources in
+`cv_audit.role_coverage`, with exclusions in the internal scope audit.
 Never copy metadata from a shared checkout. A nonzero preflight ends the run before any
 draft, preview, conversion, or canonical package path is created.
 

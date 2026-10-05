@@ -50,9 +50,14 @@ record still cannot support three distinct strong bullets, ask focused questions
 about a concrete system, personal contribution, and observed result. Leave that
 vacancy's CV unpublished until the necessary facts are confirmed, and report the
 specific gap instead of satisfying the count with filler. Do not omit a substantive
-role to bypass the three-bullet rule. Preserve every documented company with
-supported dates in one Experience section,
-including older work. Never remove an employer for relevance or page count.
+role within the approved career window to bypass the three-bullet rule. Use
+`config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest permitted
+employer; exclude employers whose work started before PDFfiller and roles ending nine or more years
+before the reference month. Never mention excluded employers in any CV section, including Summary or
+Skills. Preserve every employer within this approved window in one Experience section, with
+consistent H3 employer/role/date headings and source-backed dates. Older permitted roles may have a
+dated heading with an empty body. Keep reverse chronology, overlaps and supported uncertainty; never
+invent continuity. This rule supersedes the former full-career coverage requirement.
 
 ## Implementation and package repair
 

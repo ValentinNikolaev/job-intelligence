@@ -102,6 +102,19 @@ class CareerCoverageTests(unittest.TestCase):
         with self.assertRaisesRegex(CareerCoverageError, "one Experience section"):
             validate_career_coverage(CV + "\n## Additional Experience\n", self.source)
 
+    def test_rejects_encoded_headings_and_broken_lists(self) -> None:
+        for dirty in (
+            CV.replace("### Hyprr", "### &#x20;Hyprr"),
+            CV.replace("### Hyprr", "### &nbsp;Hyprr"),
+            CV.replace("- Delivered work.", "  - Delivered work.", 1),
+            CV.replace("- Delivered work.", "1. Delivered work.", 1),
+            CV.replace("- Delivered work.", "* Delivered work.", 1),
+            CV + "\n## Experience\n",
+        ):
+            with self.subTest(markdown=dirty):
+                with self.assertRaises(CareerCoverageError):
+                    validate_career_coverage(dirty, self.source)
+
     def test_missing_and_corrupt_source_fail_closed(self) -> None:
         self.source.unlink()
         with self.assertRaisesRegex(CareerCoverageError, "unavailable"):
@@ -110,7 +123,7 @@ class CareerCoverageTests(unittest.TestCase):
         with self.assertRaisesRegex(CareerCoverageError, "no Experience"):
             validate_career_coverage(CV, self.source)
 
-    def test_project_inventory_requires_all_nine_documented_companies(self) -> None:
+    def test_project_inventory_requires_six_companies_from_pdffiller(self) -> None:
         project_source = Path(__file__).resolve().parents[1] / "registry/candidate/linkedin-profile.md"
         cv = """## Experience
 ### Simple.life | November 2023 - 2026
@@ -119,12 +132,17 @@ class CareerCoverageTests(unittest.TestCase):
 ### Hyprr | November 2019 - January 2021
 ### PDFfiller | October 2016 - November 2019
 ### Sixt | December 2018 - November 2019
-### Aurum Software | November 2015 - November 2016
-### CoinsBank/bit-x | January 2014 - November 2015
-### Upwork freelance | July 2008 - September 2016
 """
-        validate_career_coverage(cv, project_source)
-        for employer in ("airSlate", "Hyprr", "Sixt", "Aurum Software", "CoinsBank/bit-x", "Upwork freelance"):
+        reference = date(2026, 10, 5)
+        validate_career_coverage(cv, project_source, reference_date=reference)
+        for employer in ("Aurum Software", "CoinsBank", "bit-x", "Upwork freelance"):
+            for section in ("Summary", "Skills", "Other"):
+                with self.subTest(excluded=employer, section=section):
+                    with self.assertRaisesRegex(CareerCoverageError, "outside the approved career window"):
+                        validate_career_coverage(cv + f"\n## {section}\nWorked at {employer}.\n", project_source, reference_date=reference)
+        with self.assertRaisesRegex(CareerCoverageError, "outside the approved career window"):
+            validate_career_coverage(cv, project_source, reference_date=date(2028, 11, 1))
+        for employer in ("airSlate", "Hyprr", "Sixt", "PDFfiller"):
             with self.subTest(employer=employer):
                 omission = "\n".join(line for line in cv.splitlines() if employer not in line)
                 with self.assertRaisesRegex(CareerCoverageError, employer):

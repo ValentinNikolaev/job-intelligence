@@ -305,8 +305,59 @@ def _review(artifact_hash: str, value: Mapping[str, Any] | None) -> dict[str, An
             "method": "recorded reviewer attestation; not an automated visual judgment"}
 
 
+def _validate_cv_lists(markdown: str, artifact: Path) -> None:
+    """Check actual Word numbering; preserved text alone cannot detect broken lists."""
+    section = re.split(r"(?im)^##\s+Experience\s*$", markdown, maxsplit=1)
+    if len(section) != 2:
+        raise DocumentQualityError("CV has no Experience section")
+    experience = re.split(r"(?m)^##\s+", section[1], maxsplit=1)[0]
+    bullets = [_tokens(markdown_visible_text(line[2:])) for line in experience.splitlines()
+               if re.match(r"^[-*+]\s+", line)]
+    if not bullets:
+        raise DocumentQualityError("CV has no Experience bullets")
+    with zipfile.ZipFile(artifact) as archive:
+        document = _xml(archive, "word/document.xml")
+        numbering = _xml(archive, "word/numbering.xml")
+        paragraphs = list(document.iter(_W + "p"))
+        cursor = 0
+        formats = set()
+        for bullet in bullets:
+            while cursor < len(paragraphs):
+                paragraph = paragraphs[cursor]
+                cursor += 1
+                text = "".join(node.text or "" for node in paragraph.iter(_W + "t"))
+                if _tokens(text) == bullet:
+                    break
+            else:
+                raise DocumentQualityError("DOCX lost a CV bullet paragraph")
+            num = paragraph.find(_W + "pPr/" + _W + "numPr")
+            if num is None or num.find(_W + "ilvl") is None or num.find(_W + "numId") is None:
+                raise DocumentQualityError("DOCX Experience bullet lost list formatting")
+            if num.find(_W + "ilvl").get(_W + "val") != "0":
+                raise DocumentQualityError("DOCX Experience bullets must not be nested")
+            num_id = num.find(_W + "numId").get(_W + "val")
+            definition = next((node for node in numbering.findall(_W + "num")
+                               if node.get(_W + "numId") == num_id), None)
+            abstract = definition.find(_W + "abstractNumId") if definition is not None else None
+            level = next((next((level for level in node.findall(_W + "lvl")
+                               if level.get(_W + "ilvl") == "0"), None)
+                          for node in numbering.findall(_W + "abstractNum")
+                          if abstract is not None and node.get(_W + "abstractNumId") == abstract.get(_W + "val")), None)
+            if level is None or level.find(_W + "numFmt") is None or level.find(_W + "numFmt").get(_W + "val") != "bullet":
+                raise DocumentQualityError("DOCX Experience lists must use bullet markers")
+            marker = level.find(_W + "lvlText")
+            indent = paragraph.find(_W + "pPr/" + _W + "ind")
+            if indent is None:
+                indent = level.find(_W + "pPr/" + _W + "ind")
+            formats.add((marker.get(_W + "val") if marker is not None else None,
+                         tuple(sorted(indent.attrib.items())) if indent is not None else ()))
+        if len(formats) > 1:
+            raise DocumentQualityError("DOCX Experience bullet markers and indentation must be consistent")
+
+
 def validate_export(source: Path, artifact: Path, *, max_pages: int | None = None,
-                    min_font_pt: float = 9.0, visual_review: Mapping[str, Any] | None = None) -> dict[str, Any]:
+                    min_font_pt: float = 9.0, visual_review: Mapping[str, Any] | None = None,
+                    require_cv_lists: bool = False) -> dict[str, Any]:
     """Validate all visible source tokens in order; bind receipt to exact artifact bytes."""
     source, artifact = Path(source), Path(artifact)
     if max_pages is not None and (type(max_pages) is not int or max_pages < 1):
@@ -326,6 +377,8 @@ def validate_export(source: Path, artifact: Path, *, max_pages: int | None = Non
     structure: dict[str, Any] = {}
     if artifact.suffix.lower() == ".docx":
         text, links, structure = _docx_contents(artifact, min_font_pt)
+        if require_cv_lists:
+            _validate_cv_lists(markdown, artifact)
         if max_pages is not None:
             raise DocumentQualityError("DOCX page count is renderer-dependent; export PDF to enforce a page budget")
         for match in _LINK.finditer(markdown):
@@ -363,7 +416,8 @@ def validate_export(source: Path, artifact: Path, *, max_pages: int | None = Non
         "extracted_text_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
         "canonical_tokens": len(expected), "extracted_tokens": len(actual),
         "checks": {"readable_text": True, "canonical_text_preserved_in_order": True,
-                   "contacts_and_numeric_values_preserved": True,
+                    "contacts_and_numeric_values_preserved": True,
+                    "cv_experience_list_formatting": "verified" if require_cv_lists and artifact.suffix.lower() == ".docx" else "not_checked",
                    "hyperlink_targets": "verified" if artifact.suffix.lower() == ".docx" else "not_checked"},
         "structure": structure, "page_count": page_count, "max_pages": max_pages,
         "visual_review": _review(artifact_hash, visual_review),

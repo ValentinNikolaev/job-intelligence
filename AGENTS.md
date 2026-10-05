@@ -59,7 +59,19 @@ a selected project workflow profile.
   `quality.yaml` receipt recording cover-letter skill provenance and final grounding
   review, and deterministic `validate-application` checks. Preserve the resulting
   word counts, hashes, handoff provenance, and method receipt in `manifest.yaml`.
-- Never omit a documented employer or engagement from a CV. Preserve the complete source-backed employment chronology and all companies, including on vacancy-specific regeneration. Tailor bullets and emphasis, not the list of employers. Detailed `Experience` focuses on the most recent ten years; retain older or briefly represented work with employer, role, and supported dates in the same `Experience` section using the same H3 employer heading format. Do not create a separate Additional or Earlier Experience section. This continuity rule supersedes the previous exclusion of older companies. Do not invent dates, extend employment, hide overlaps, or fill genuine gaps with fabricated work. If source dates conflict, preserve the supported uncertainty or ask for clarification. Validate employer coverage against the candidate sources before publication; bullet counts alone are insufficient.
+- Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
+  permitted employer; exclude employers whose work started before PDFfiller and roles ending nine or
+  more years before the reference month. Never mention excluded employers in any CV section,
+  including Summary or Skills. Preserve every employer within this approved window in one Experience
+  section, with consistent H3 employer/role/date headings and source-backed dates. Older permitted
+  roles may have a dated heading with an empty body. Keep reverse chronology, overlaps and supported
+  uncertainty; never invent continuity. This rule supersedes the former full-career coverage
+  requirement. Preserve the approved section structure during revisions. Never add Additional or
+  Earlier Experience. Use literal, entity-free headings and flat unordered Experience lists with one
+  consistent marker; keep blank lines between items. Review exported list indentation and markers on
+  every page. Validate both permitted-employer coverage and excluded-employer absence before
+  publication.
+
 - Every displayed CV Experience role ending within five years of the validator reference month requires at least three distinct, source-backed Experience bullets; older detailed roles require at least two. An older role ending outside the five-year window may be a dated H3 heading only, with no body, to retain chronology without inventing achievements. Technologies lines, duplicate phrasing, and filler never satisfy this gate.
 - Change vacancy status only after an explicit user request, through `python run.py status`; never infer status from artifacts or external events.
 - For every user-reported employer rejection, preserve the full supplied message verbatim as text in `registry/feedback/<vacancy-directory>/<recorded-date>-rejection.md` and in the manual status audit note. Keep the original language and paragraph breaks; distinguish the recording date from any known message date. If no original message is supplied, record the user's description as such without inventing employer wording. Use `python run.py status <vacancy-id-or-directory> rejected` with a concise reason and `--status-note` containing the text and feedback-file path. Preserve these feedback records when vacancy directories are archived or removed.

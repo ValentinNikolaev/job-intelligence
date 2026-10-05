@@ -65,14 +65,17 @@ makes the vacancy eligible for a new package, another document, or automatic wor
   credential, or the exact phrase "Zend Certified PHP Developer" anywhere in the
   generated CV, cover letter, application analysis, or interview preparation, even
   when source candidate records include it.
-- Preserve every documented employer and engagement in the generated CV. Tailor
-  the bullets and emphasis without deleting companies. Detailed `Experience`
-  focuses on the most recent ten years; represent older or briefly covered work
-  in the same `Experience` section as dated entries with employer
-  and role. Use the same H3 heading format for every company; never create a separate
-  Additional or Earlier Experience section. An older date-only role has no body. Never sacrifice employer coverage for relevance, page count, age,
-  or insufficient achievement bullets. Keep genuine dates, overlaps, and supported
-  uncertainty; never extend employment or fabricate work to conceal a real gap.
+- Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
+  permitted employer; exclude employers whose work started before PDFfiller and roles ending nine or
+  more years before the reference month. Never mention excluded employers in any CV section,
+  including Summary or Skills. Preserve every employer within this approved window in one Experience
+  section, with consistent H3 employer/role/date headings and source-backed dates. Older permitted
+  roles may have a dated heading with an empty body. Keep reverse chronology, overlaps and supported
+  uncertainty; never invent continuity. This rule supersedes the former full-career coverage
+  requirement. Preserve the approved section structure during revisions. Never add Additional or
+  Earlier Experience. Use literal, entity-free headings and flat unordered Experience lists with one
+  consistent marker; keep blank lines between items. Review exported list indentation and markers on
+  every page.
 - When candidate sources conflict, report the conflict or preserve the uncertainty;
   do not silently choose the more favorable claim.
 - When a metric is unavailable, improve wording with a factual outcome instead of a
@@ -259,17 +262,11 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     bullets are unnecessary, or ask a focused question and leave the package pending. Never
     split one outcome to meet a quota. Sort roles by end date, newest first,
     and label overlapping work accurately.
-    Before approving the CV, enumerate every candidate-source employer and engagement
-    in `cv_audit.role_coverage`. For each record employer, source period, source path,
-    the final section and a reason for the chosen level of detail. Every employer
-    must remain included. Check this inventory against the final CV on regeneration;
-    the previous tailored CV is not a complete career inventory. A recent role
-    with relevant, verified outcomes must not disappear merely because another
-    role already supplies enough bullets or because one claim was withdrawn.
-    Exclude unsupported claims individually, retain the role's other supported
-    evidence, and ask a focused question when a relevant role cannot meet the
-    minimum. The independent editor must review complete employer coverage,
-    source-backed chronology, and level-of-detail decisions as well as final bullets.
+    Before approving the CV, enumerate the source employers and apply the canonical career scope.
+    Record all permitted employers, dates, source paths and detail decisions in
+    `cv_audit.role_coverage`; document exclusions internally. The independent editor must verify
+    both complete in-window coverage and absence of excluded companies anywhere in the CV. Exclude
+    unsupported claims individually without dropping an otherwise permitted employer.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support

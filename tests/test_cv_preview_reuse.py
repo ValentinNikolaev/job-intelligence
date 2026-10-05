@@ -42,7 +42,8 @@ class CvPreviewReuseTests(unittest.TestCase):
                 return {"pages": ["page-1.png", "page-2.png"],
                         "artifact_sha256": hashlib.sha256(source.read_bytes()).hexdigest()}
 
-            def validate_export(source: Path, artifact: Path) -> dict:
+            def validate_export(source: Path, artifact: Path, *, require_cv_lists: bool = False) -> dict:
+                self.assertTrue(require_cv_lists)
                 return {"source_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
                         "artifact_sha256": hashlib.sha256(artifact.read_bytes()).hexdigest()}
 
