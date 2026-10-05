@@ -3,26 +3,25 @@
 **Score:** 80/100
 **Recommendation:** Strong Match
 
-Strong Go/cloud/reliability and technical-leadership alignment for public-cloud image delivery, with a gap around direct people management and low-level Ubuntu image work.
+Strong engineering-management, AWS, delivery-pipeline, and Go overlap for a remote EMEA role; public-cloud image specialization and direct people-management scope need confirmation.
 
 ## Why it matches
 
-- Go
-- AWS
-- Kubernetes
-- reliability
-- technical leadership
+- AWS, Kubernetes, CI/CD, reliability, and software leadership are supported.
+- Mentoring and team-delivery responsibilities are evidenced.
+- Remote EMEA location is compatible.
 
 ## Gaps
 
-- Ubuntu image pipelines and formal people management are not established
+- Public-cloud image publishing and Python depth are not established.
 
 ## Concerns
 
-- Travel and broad timezone expectations need confirmation
+- International travel and Canonical-specific leadership expectations need confirmation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Technical leadership and team development | critical / stated | strong | technical leadership and a solid background in software development is a must | Technical Lead | Formal management scope is uncertain. / Confirm coaching, hiring, and delivery-accountability experience. |
+| Lead and develop a software engineering team | critical / stated | strong | Build and lead a team of engineers | Directly managed 10 developers. Influenced all areas of Product Development, | / Emphasize people leadership and delivery ownership. |
+| AWS or another major public cloud with automated reliable pipelines | high / stated | strong | Practical experience with at least one of Microsoft Azure, Google Cloud, or AWS | Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | Public-cloud image publishing itself is not established. / Connect AWS/Kubernetes/CI-CD evidence to the image-pipeline scope. |

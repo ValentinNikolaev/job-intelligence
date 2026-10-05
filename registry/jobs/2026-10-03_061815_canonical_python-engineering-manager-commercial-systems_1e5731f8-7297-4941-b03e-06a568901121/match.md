@@ -3,25 +3,24 @@
 **Score:** 69/100
 **Recommendation:** Match
 
-Leadership, backend engineering, automation, and distributed-team experience are relevant, but Python-specific depth and direct people-management evidence are less explicit than the role requires.
+Engineering leadership, delivery, and software-development experience fit the management scope, but Python, commercial systems, and direct-report leadership are not fully evidenced.
 
 ## Why it matches
 
-- Technical leadership
-- backend systems
-- automation
-- delivery and mentoring
+- Technical leadership, planning, mentoring, and delivery coordination are supported.
+- Remote EMEA and software engineering experience align.
 
 ## Gaps
 
-- Python and formal direct-management scope are not clearly evidenced
+- Python and commercial data-governance experience are not established.
 
 ## Concerns
 
-- Exceptional academic record is requested and not fully established
+- The role requires sustained people-management scope and excellent English presentation skills.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Software development in a high-level language | critical / stated | strong | Experience with software development in a high-level language (Golang, Python, Java, ...) | backend in Go | Python-specific depth remains uncertain. / Confirm Python production experience and management scope. |
+| Lead a team of software engineers working in Python | critical / stated | partial | Leading a team of software engineers working in Python | Directly managed 10 developers. Influenced all areas of Product Development, | People leadership is supported, but Python is not established. / Confirm Python experience and frame the leadership scope precisely. |
+| Accountability for product design and development | high / stated | strong | Accountability for the design and development of an internal product | Outlined and managed the technological plan for the product, and collaborated closely | / Use product roadmap and delivery evidence. |

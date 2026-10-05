@@ -3,28 +3,24 @@
 **Score:** 69/100
 **Recommendation:** Match
 
-Cloud-native architecture, Kubernetes, AWS, and technical-lead experience transfer well, while the role's low-level storage, networking, virtualization, and C demands are material gaps.
+Strong technical leadership, Go, Kubernetes, and distributed-systems overlap; C, virtualization, storage/networking depth, and Canonical-specific academic expectations remain gaps.
 
 ## Why it matches
 
-- Technical leadership
-- Kubernetes
-- AWS
-- architecture and reliability
+- Go, Kubernetes, distributed systems, architecture, and mentoring are supported.
+- Remote EMEA location is compatible.
 
 ## Gaps
 
-- C
-- virtualization
-- storage
-- and networking are not established
+- C, LXD/MicroCloud, virtualization, and storage/networking specialization are not established.
 
 ## Concerns
 
-- The architect scope may require deeper systems specialization
+- Canonical calls for an exceptional academic track record that cannot be verified from the profile.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Container and virtualization architecture | critical / stated | partial | Experience with storage, networking and virtualization | Kubernetes | Virtualization and low-level infrastructure evidence is incomplete. / Verify relevant infrastructure ownership before preparation. |
+| Technical leadership with Go, containers, and distributed systems | critical / stated | partial | Experience with Go and C | Outlined and managed the technological plan for the product, and collaborated closely | C and the specific LXD/MicroCloud domain are not evidenced. / Emphasize Go, Kubernetes, architecture, and leadership while verifying C exposure. |
+| Container technologies and Linux | high / stated | strong | Experience with container technologies | Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | / Emphasize Kubernetes migration and production operations. |

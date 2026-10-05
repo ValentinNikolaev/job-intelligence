@@ -3,28 +3,25 @@
 **Score:** 74/100
 **Recommendation:** Match
 
-Relevant backend, PHP, AWS, distributed-systems, and AI-assisted development experience supports this Italy-based role, while Java and frontend depth are material gaps.
+Strong backend, PHP, AWS, microservices, databases, and AI-automation overlap for an Italy-remote role; Java and frontend depth are not established.
 
 ## Why it matches
 
-- Backend engineering
-- PHP
-- AWS
-- microservices
-- AI-assisted workflows
+- PHP, backend, AWS, microservices, SQL/NoSQL, and production systems fit well.
+- AI-assisted support automation experience aligns with the company’s stated workflow.
+- Italy remote location is compatible.
 
 ## Gaps
 
-- Java is not established; Vue
-- React
-- or Angular depth is unclear
+- Java and Vue/React/Angular experience are not established.
 
 ## Concerns
 
-- The role emphasizes rapid autonomous delivery and automotive SaaS domain experience
+- The role emphasizes rapid AI-enabled delivery and exact frontend expectations.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend development with PHP, Node.js, or Java | critical / stated | strong | 5+ years of backend development - PHP, Node.js, or Java preferred | PHP | Java-specific work is not evidenced. / Position PHP/backend strengths and verify willingness to work in Java. |
+| At least five years of backend development in PHP, Node.js, or Java | critical / stated | strong | 5+ years of backend development - PHP, Node.js, or Java preferred | I have a strong track record in PHP, with 5 years of leadership experience. | / Lead with PHP backend and leadership evidence. |
+| Microservices, distributed systems, SQL/NoSQL, and AWS | high / stated | strong | Fluent in microservices architecture and distributed systems | Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | Frontend framework experience is not established. / Verify the expected frontend contribution. |

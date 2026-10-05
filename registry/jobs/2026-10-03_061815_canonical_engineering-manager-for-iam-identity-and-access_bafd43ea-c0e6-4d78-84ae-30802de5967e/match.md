@@ -3,26 +3,25 @@
 **Score:** 79/100
 **Recommendation:** Match
 
-Strong Go, Kubernetes, security, distributed-systems, and technical-leadership overlap for Canonical IAM; direct IAM standards and people-management depth remain uncertain.
+Strong Go, Kubernetes, distributed-systems, security, and leadership fit for remote EMEA; IAM-specific standards and hiring scope are not confirmed.
 
 ## Why it matches
 
-- Go
-- Kubernetes
-- security and performance
-- distributed systems
-- technical leadership
+- Go, Kubernetes, distributed architecture, security, and performance evidence align.
+- Team leadership and mentoring are supported.
+- IAM is desirable rather than essential in the posting.
 
 ## Gaps
 
-- IAM technologies and standards are not explicitly established
+- IAM technologies and standards are not established.
 
 ## Concerns
 
-- The role requests hiring and leading a high-performance team
+- Canonical's academic, English-presentation, and international-travel requirements need verification.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go and Kubernetes software development | critical / stated | partial | Experience with Go and Python software development | Go | Python depth is not clearly evidenced. / Confirm Python and IAM-adjacent production work. |
+| Lead a high-performance engineering team using Go and Python services | critical / stated | partial | Proven experience hiring and leading a high performance software engineering team | Directly managed 10 developers. Influenced all areas of Product Development, | Leadership is evidenced, but hiring scope and Python are not confirmed. / Verify hiring responsibility and Python experience. |
+| Distributed systems, containers, Kubernetes, security, and performance | high / stated | strong | container technology and Kubernetes | Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | IAM-specific standards are not established. / Emphasize infrastructure security and operational reliability without claiming IAM expertise. |

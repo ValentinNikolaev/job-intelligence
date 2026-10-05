@@ -3,24 +3,25 @@
 **Score:** 91/100
 **Recommendation:** Strong Match
 
-The EMEA-remote Staff backend role strongly matches the candidate's Go and PHP backend experience, architecture judgment, reliability work, and technical leadership.
+Excellent Staff backend fit with greenfield architecture, Go, AWS, Kubernetes, CI/CD, reliability, and cross-team influence; accounting-domain experience is the principal gap.
 
 ## Why it matches
 
-- The candidate is based in Italy and the role explicitly accepts EMEA.
-- Production backend ownership, event-driven architecture, AWS/Kubernetes, CI/CD, and mentoring are evidenced.
+- Staff-level architecture, technical leadership, and mentoring are strongly evidenced.
+- Go, AWS, Kubernetes, CI/CD, observability, and reliable production systems align.
+- Italy and EMEA remote eligibility are explicit.
 
 ## Gaps
 
-- Accounting or ledger product experience is not established.
+- Trust accounting, ledger, and regulatory-financial domain experience is not established.
 
 ## Concerns
 
-- The role's Staff-level influence expectations should be matched to the candidate's documented leadership scope.
+- Financial correctness and auditability will require domain learning or prior evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| 8+ years and Staff-equivalent engineering | critical / stated | partial | 8+ years | Migrated managed services from ECS to Kubernetes. | The profile shows technical-lead scope but not a Staff title. / Use concrete architecture, ownership, and influence evidence rather than relabeling titles. |
-| AWS, Kubernetes, CI/CD, and production operations | high / stated | strong | Comfortable with AWS, Kubernetes, CI/CD pipelines, and operating services in production. | Migrated managed services from ECS to Kubernetes. | The candidate has a confirmed boundary around the ECS-to-Kubernetes claim. / Use only the supported AWS/Kubernetes/CI/CD evidence from the candidate source. |
+| Eight-plus years and Staff-equivalent architecture and influence | critical / stated | strong | 8+ years | I'm a highly experienced developer with over 15 years of expertise. | Exact Staff title duration is not stated. / Use technical-lead and architecture evidence to establish equivalent scope. |
+| AWS, Kubernetes, CI/CD, and production backend systems | high / stated | strong | Comfortable with AWS, Kubernetes, CI/CD pipelines, and operating services in production. | Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | Accounting or ledger experience is not established. / Address the financial-domain gap directly and emphasize correctness and reliability evidence. |
