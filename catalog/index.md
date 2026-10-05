@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 79
+Total vacancies: 77
 
-- Found: 55
+- Found: 53
 - Applied: 19
 - Interview: 3
 - Rejected: 2
@@ -13,11 +13,9 @@ Total vacancies: 79
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-05 | [Canonical](../registry/jobs/20261005_canonical_d3a9fafbdb1946cc9a6ec4f15c30759d/) | [C, Golang Software Engineer working on dqlite, a Raft extension for SQLite](../registry/jobs/20261005_canonical_d3a9fafbdb1946cc9a6ec4f15c30759d/job.md) | EMEA | Jobicy | Found | 2026-10-05 | [Jobicy](https://jobicy.com/jobs/150128-c-golang-software-engineer-working-on-dqlite-a-raft-extension-for-sqlite) | — | — | — | — | — |
+| 2026-10-05 | [YLD.com](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/) | [Contract Golang Software Engineer (Remote Europe)](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/job.md) | Berlin | Arbeitnow | Found | 2026-10-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/yldcom/contract-golang-software-engineer-remote-europe-berlin-280012) | — | — | — | — | — |
 | 2026-10-05 | [NetBox Labs](../registry/jobs/20261005_netbox-labs_51771763a57f45efada1012920ff884b/) | [Senior Software Backend Engineer, Foundations](../registry/jobs/20261005_netbox-labs_51771763a57f45efada1012920ff884b/job.md) | LATAM,  UK,  USA | Jobicy | Found | 2026-10-05 | [Jobicy](https://jobicy.com/jobs/154539-senior-software-backend-engineer-foundations) | — | — | — | — | — |
-| 2026-10-05 | [NetBox Labs](../registry/jobs/20261005_netbox-labs_1da2241e3efd4d24acfdc3cc21be60c9/) | [Senior Full Stack Engineer, Observability](../registry/jobs/20261005_netbox-labs_1da2241e3efd4d24acfdc3cc21be60c9/job.md) | LATAM,  UK,  USA | Jobicy | Found | 2026-10-05 | [Jobicy](https://jobicy.com/jobs/154544-senior-full-stack-engineer-observability) | — | — | — | — | — |
 | 2026-10-05 | [BetterMe](../registry/jobs/20261005_betterme_fb4f7c58efdb4c8da0e220effd403146/) | [Backend Engineer Core Team (Go + PHP)](../registry/jobs/20261005_betterme_fb4f7c58efdb4c8da0e220effd403146/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-10-05 | [Dou](https://jobs.dou.ua/companies/betterme/vacancies/332846/) | [Open](../registry/jobs/20261005_betterme_fb4f7c58efdb4c8da0e220effd403146/company.md) | — | — | — | — |
-| 2026-10-05 | [TapOK](../registry/jobs/20261005_tapok_3c7b69b952a54c2d91a016b8f12fa98e/) | [Full-stack Developer](../registry/jobs/20261005_tapok_3c7b69b952a54c2d91a016b8f12fa98e/job.md) | віддалено | Dou | Found | 2026-10-05 | [Dou](https://jobs.dou.ua/companies/tapok/vacancies/375539/) | [Open](../registry/jobs/20261005_tapok_3c7b69b952a54c2d91a016b8f12fa98e/company.md) | — | — | — | — |
 | 2026-10-05 | [DeltaFunc](../registry/jobs/20261005_deltafunc_8104eb5e655747a29cef9332b8e11a63/) | [PHP Tech Lead](../registry/jobs/20261005_deltafunc_8104eb5e655747a29cef9332b8e11a63/job.md) | Worldwide | Djinni | Found | 2026-10-05 | [Djinni](https://djinni.co/jobs/851548-php-tech-lead/) | — | — | — | — | — |
 | 2026-10-05 | [Polis-net](../registry/jobs/20261005_polis-net_7b4e4c108d984caebbc72d3d70df1b52/) | [Web Developer Full Stack](../registry/jobs/20261005_polis-net_7b4e4c108d984caebbc72d3d70df1b52/job.md) | — | Custom | Found | 2026-10-05 | [Custom](https://www.polis-net.it/entra-in-polis-net/) | — | — | — | — | — |
 | 2026-10-05 | [Laser Romae](../registry/jobs/20261005_laser-romae_638d1c1456a241c38a4f5a26110245cc/) | [Go Developer](../registry/jobs/20261005_laser-romae_638d1c1456a241c38a4f5a26110245cc/job.md) | — | Custom | Found | 2026-10-05 | [Custom](https://careers.laserromae.it/jobs/go-developer) | — | — | — | — | — |
