@@ -917,6 +917,9 @@ def _validate_cv_role_depth(markdown: str, *, reference_date: date | datetime | 
         if previous_end is not None and end_key > previous_end:
             raise ApplicationError(f"cv_markdown Experience is not in reverse chronology at: {title}")
         previous_end = end_key
+        if end_key < recent_cutoff and not any(line.strip() for line in lines):
+            # A dated older employer can retain chronology without invented achievements.
+            continue
         bullets = [
             re.sub(r"^\s*[-*]\s+", "", line).strip()
             for line in lines
@@ -1468,7 +1471,7 @@ def _validate_cv_role_technologies(markdown: str) -> None:
     missing = [
         title
         for title, lines in roles
-        if not any(
+        if any(line.strip() for line in lines) and not any(
             re.match(r"^\s*(?:\*\*)?Technologies(?:\*\*)?\s*:\s*\S", line, re.IGNORECASE)
             for line in lines
         )
@@ -1507,7 +1510,15 @@ def _validate_cv_experience_age(
         if in_experience:
             experience_lines.append(line)
 
-    for match in _EXPERIENCE_DATE_RANGE_RE.finditer("\n".join(experience_lines)):
+    detailed_lines: list[str] = []
+    for block in re.split(r"(?=^###\s+)", "\n".join(experience_lines), flags=re.MULTILINE):
+        block_lines = block.splitlines()
+        if block_lines and re.match(r"^###\s+", block_lines[0]) and not any(
+            line.strip() for line in block_lines[1:]
+        ):
+            continue
+        detailed_lines.extend(block_lines)
+    for match in _EXPERIENCE_DATE_RANGE_RE.finditer("\n".join(detailed_lines)):
         end = match.group("end")
         if end.casefold() in {"present", "current"}:
             continue

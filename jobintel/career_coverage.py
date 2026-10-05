@@ -22,7 +22,7 @@ _ALIASES = {
     "pdffiller.com": ("pdffiller.com", "pdffiller"),
     "coinsbank/bit-x": ("coinsbank/bit-x", "coinsbank", "bit-x"),
 }
-_ALLOWED_SECTIONS = {"experience", "additional experience", "earlier experience"}
+_ALLOWED_SECTIONS = {"experience"}
 
 
 class CareerCoverageError(ValueError):
@@ -137,11 +137,13 @@ def _cv_entries(markdown: str) -> list[tuple[str, str]]:
 
 
 def validate_career_coverage(markdown: str, source_path: Path) -> None:
-    """Require every sourced employer as a dated Experience or earlier-work entry.
+    """Require every sourced employer in one dated Experience chronology.
 
     The LinkedIn headings are read on each validation. A newly documented employer
     therefore enters the required set automatically, while corrupt/missing sources fail.
     """
+    if re.search(r"^##\s+(?:Additional|Earlier) Experience\s*$", markdown, re.MULTILINE | re.IGNORECASE):
+        raise CareerCoverageError("cv_markdown must keep all employers in one Experience section")
     roles = _corrected_roles(source_path)
     entries = _cv_entries(markdown)
     for employer, (expected_start, expected_end) in roles.items():

@@ -63,6 +63,8 @@ def _cv_lint(markdown: str, quality: Mapping[str, Any], path: Path, items: list[
                     if len(parts) > 1 else (today.month if year == today.year else 12)
                 )
                 end_key = (year, month)
+            if end_key < cutoff and not any(line.strip() for line in lines):
+                continue
             required = 3 if end_key >= cutoff else 2
         if len(bullets) < required:
             _diagnostic(items, "CV_ROLE_DEPTH", f"{title} has {len(bullets)} Experience bullets; requires {required}", path)

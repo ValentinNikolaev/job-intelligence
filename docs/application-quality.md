@@ -208,8 +208,12 @@ The analysis/interview minima and ceilings remain unchanged. Preserve two meanin
 letter stories, credible claims and required sections in either format. Compact is
 selected for the application channel or user preference, never an excuse for generic
 or skeletal content. Detailed Experience focuses on the last ten years, while
-dated Additional Experience/Earlier Experience entries preserve every older or
-briefly represented employer and engagement. Employer coverage is mandatory.
+dated entries in the same Experience section preserve every older or
+briefly represented employer and engagement. Employer coverage is mandatory. Use H3 role headings for all companies; do not
+create a separate Additional or Earlier Experience section. An older role ending
+outside the five-year window may retain only its dated H3 heading and an empty body.
+Such entries need no invented achievement bullets or Technologies line. The ten-year
+detail limit still applies to roles containing a body; recent roles still need three bullets.
 
 For Senior or Tech Lead positioning, the final CV audit is editorial as well as
 mechanical. Each Experience bullet should identify a supported contribution, the
@@ -230,7 +234,7 @@ bullet's receipt must state the candidate's contribution, affected scope, and ac
 consequence. These fields make the reviewer confront a duty-only or routine-baseline
 line before it can be approved; they are not a licence to infer a missing outcome.
 Do not turn an unsupported trade-off or missing metric into a claim. Prefer compact
-format over padding. Count distinct outcome bullets under every displayed role and
+format over padding. Count distinct outcome bullets under every detailed role and
 explain any one- or two-bullet role before publication. Recent roles should carry the
 most substantive evidence; order bullets within each role by vacancy-relevant impact
 and scope before implementation details. Record these role-by-role choices in
@@ -251,7 +255,7 @@ that a claimed consequence is true or that two bullets represent distinct work;
 the editor must confirm both against verified candidate evidence. A rejected
 bullet stays out of the CV rather than being padded or split to reach a count.
 The validator also requires reverse chronology and at least two bullets for
-each displayed role, rising to three for roles ending within five years of
+each detailed role, rising to three for roles ending within five years of
 preparation (including the explicit five-year cutoff month). It counts only
 Experience bullets, never a Technologies line, and rejects a mechanically
 detectable repeated bullet within the same role. These are rejection thresholds,

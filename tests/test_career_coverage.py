@@ -5,6 +5,10 @@ from datetime import date
 
 from jobintel.application_lint import _cv_lint
 from jobintel.career_coverage import CareerCoverageError, validate_career_coverage
+from jobintel.applications import (
+    ApplicationError, _validate_cv_experience_age, _validate_cv_role_depth,
+    _validate_cv_role_technologies,
+)
 
 
 SOURCE = """# Candidate
@@ -36,8 +40,7 @@ airSlate, Hyprr
 - Delivered work.
 ### Hyprr — Technical Lead | November 2019 - January 2021
 - Delivered work.
-## Earlier Experience
-- **Upwork freelance**, Software Developer | July 2008 - September 2016
+### Upwork freelance — Software Developer | July 2008 - September 2016
 """
 
 
@@ -69,7 +72,7 @@ class CareerCoverageTests(unittest.TestCase):
 
     def test_rejects_missing_dated_historical_entry(self) -> None:
         with self.assertRaisesRegex(CareerCoverageError, "Upwork freelance"):
-            validate_career_coverage(CV.replace("- **Upwork freelance**, Software Developer | July 2008 - September 2016", ""), self.source)
+            validate_career_coverage(CV.replace("### Upwork freelance — Software Developer | July 2008 - September 2016", ""), self.source)
 
     def test_new_source_employer_is_required(self) -> None:
         self.source.write_text(SOURCE.replace("## Education", "### New Employer\nEngineer\nJanuary 2017 - October 2017\n## Education"), encoding="utf-8")
@@ -89,11 +92,15 @@ class CareerCoverageTests(unittest.TestCase):
         )
         with self.assertRaisesRegex(CareerCoverageError, "New Employer"):
             validate_career_coverage(CV, self.source)
-        active_cv = CV.replace("## Earlier Experience", "### New Employer | March 2026 - Present\n## Earlier Experience")
+        active_cv = CV.replace("## Experience", "## Experience\n### New Employer | March 2026 - Present")
         validate_career_coverage(active_cv, self.source)
         closed_cv = active_cv.replace("New Employer | March 2026 - Present", "New Employer | March 2026 - October 2026")
         with self.assertRaisesRegex(CareerCoverageError, "unsupported dates for New Employer"):
             validate_career_coverage(closed_cv, self.source)
+
+    def test_rejects_separate_additional_experience_section(self) -> None:
+        with self.assertRaisesRegex(CareerCoverageError, "one Experience section"):
+            validate_career_coverage(CV + "\n## Additional Experience\n", self.source)
 
     def test_missing_and_corrupt_source_fail_closed(self) -> None:
         self.source.unlink()
@@ -111,11 +118,10 @@ class CareerCoverageTests(unittest.TestCase):
 ### airSlate | February 2021 - August 2023
 ### Hyprr | November 2019 - January 2021
 ### PDFfiller | October 2016 - November 2019
-## Earlier Experience
-Sixt | December 2018 - November 2019
-Aurum Software | November 2015 - November 2016
-CoinsBank/bit-x | January 2014 - November 2015
-Upwork freelance | July 2008 - September 2016
+### Sixt | December 2018 - November 2019
+### Aurum Software | November 2015 - November 2016
+### CoinsBank/bit-x | January 2014 - November 2015
+### Upwork freelance | July 2008 - September 2016
 """
         validate_career_coverage(cv, project_source)
         for employer in ("airSlate", "Hyprr", "Sixt", "Aurum Software", "CoinsBank/bit-x", "Upwork freelance"):
@@ -135,6 +141,37 @@ Upwork freelance | July 2008 - September 2016
                 diagnostics = []
                 _cv_lint(cv, {}, Path("cv.md"), diagnostics, reference_date=date(2026, 10, 5))
                 self.assertEqual(expected_depth_warning, any(item["code"] == "CV_ROLE_DEPTH" for item in diagnostics))
+
+    def test_unified_experience_accepts_dated_older_roles_without_filler(self) -> None:
+        cv = (
+            "## Experience\n\n### Recent | January 2024 - Present\n"
+            "- First result.\n- Second result.\n- Third result.\nTechnologies: PHP\n\n"
+            "### Sixt | December 2018 - November 2019\n\n"
+            "### Upwork freelance | July 2008 - September 2016\n\n"
+            "### CoinsBank/bit-x | January 2014 - November 2015\n"
+        )
+        _validate_cv_role_depth(cv, reference_date=date(2026, 10, 5))
+        _validate_cv_role_technologies(cv)
+        _validate_cv_experience_age(cv, reference_date=date(2026, 10, 5))
+        diagnostics = []
+        _cv_lint(cv, {"cv_audit": {"bullet_decisions": []}}, Path("cv.md"), diagnostics,
+                 reference_date=date(2026, 10, 5))
+        self.assertFalse(any(item["code"] == "CV_ROLE_DEPTH" for item in diagnostics))
+
+    def test_chronology_only_recent_role_still_requires_three_bullets(self) -> None:
+        cv = "## Experience\n\n### Recent | January 2024 - Present\n"
+        with self.assertRaisesRegex(ApplicationError, "requires 3"):
+            _validate_cv_role_depth(cv, reference_date=date(2026, 10, 5))
+        diagnostics = []
+        _cv_lint(cv, {}, Path("cv.md"), diagnostics, reference_date=date(2026, 10, 5))
+        self.assertTrue(any(item["code"] == "CV_ROLE_DEPTH" for item in diagnostics))
+
+    def test_older_detailed_role_cannot_bypass_depth_or_age_rules(self) -> None:
+        cv = "## Experience\n\n### Older | January 2014 - November 2015\n- One result.\n"
+        with self.assertRaisesRegex(ApplicationError, "requires 2"):
+            _validate_cv_role_depth(cv, reference_date=date(2026, 10, 5))
+        with self.assertRaisesRegex(ApplicationError, "more than 10 years ago"):
+            _validate_cv_experience_age(cv, reference_date=date(2026, 10, 5))
 
 
 if __name__ == "__main__":

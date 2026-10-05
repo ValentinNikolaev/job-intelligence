@@ -68,8 +68,9 @@ makes the vacancy eligible for a new package, another document, or automatic wor
 - Preserve every documented employer and engagement in the generated CV. Tailor
   the bullets and emphasis without deleting companies. Detailed `Experience`
   focuses on the most recent ten years; represent older or briefly covered work
-  in dated `Additional Experience` or `Earlier Experience` entries with employer
-  and role. Never sacrifice employer coverage for relevance, page count, age,
+  in the same `Experience` section as dated entries with employer
+  and role. Use the same H3 heading format for every company; never create a separate
+  Additional or Earlier Experience section. An older date-only role has no body. Never sacrifice employer coverage for relevance, page count, age,
   or insufficient achievement bullets. Keep genuine dates, overlaps, and supported
   uncertainty; never extend employment or fabricate work to conceal a real gap.
 - When candidate sources conflict, report the conflict or preserve the uncertainty;
@@ -251,7 +252,7 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     receipt must explicitly record the candidate-owned contribution, the affected scope,
     and the source-backed consequence. A missing consequence or one that merely states
     completed implementation is a reject, not a reason to add senior-sounding language.
-    Every displayed role needs at least two distinct source-backed outcome or
+    Every detailed role needs at least two distinct source-backed outcome or
     decision bullets; each role ending within the last five years needs at
     least three. Recheck candidate sources before declaring a shortage. If
     distinct facts remain unavailable, keep a dated chronology entry when detailed

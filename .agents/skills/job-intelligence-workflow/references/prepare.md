@@ -78,18 +78,18 @@ explicit single-document request, use the full-package flow below.
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
    Apply the mandatory **recent-experience editorial gate** before the CV is final:
    - retain every documented employer and engagement. Check the full source career
-     inventory, not only the previous tailored CV, against Experience and the dated
-     Additional Experience/Earlier Experience sections. Record each employer, source
+     inventory, not only the previous tailored CV, against the single Experience section. Record each employer, source
      path, source period, and final section in `cv_audit.role_coverage`. No company
      may be excluded for vacancy relevance, age, page count, or a bullet shortage.
      Preserve real dates, overlaps, and supported uncertainty; never manufacture
      continuous employment or conceal a genuine source gap;
-   - give every displayed role at least two distinct, source-backed outcome or decision
+   - give every detailed role at least two distinct, source-backed outcome or decision
      bullets, and each role ending within the last five years at least three. Re-read
      the candidate source when a role falls short; preserve its dated employer/role
-     entry in Additional Experience or Earlier Experience when detailed bullets are
+     entry in the same Experience section when detailed bullets are
      unnecessary, or ask a focused question when distinct facts remain unavailable.
-     Never divide one result into multiple bullets to pass this count;
+     Older date-only entries use the same H3 role headings with no body; do not add
+     a separate Additional or Earlier Experience section. Never divide one result into multiple bullets to pass this count;
    - order displayed roles by their actual end dates, newest first, including when
      part-time work overlaps another role. State overlapping engagements clearly;
    - treat roles ending within the last five years as the primary employer-facing
@@ -98,7 +98,7 @@ explicit single-document request, use the full-package flow below.
      instead of compensating with older experience;
    - ensure those recent roles contain at least 60% of all Experience bullets;
    - keep roles ending more than five years ago compact. For a Senior or Tech Lead
-     CV, aim for three distinct, non-duplicative bullets for each displayed role
+     CV, aim for three distinct, non-duplicative bullets for each detailed role
      within the ten-year window when the sources support them. A role with only one
      or two bullets needs a source review and a deliberate editorial decision; do
      not publish that shape by default or invent another achievement to fill it;
@@ -129,7 +129,7 @@ explicit single-document request, use the full-package flow below.
    - omit generic duties and repeated claims. If ten distinct outcome bullets
      cannot be grounded, choose `document_format: compact` when the user's
      requested format permits it, rather than padding the standard CV;
-   - review every displayed role for senior-level signal: a concrete system or
+   - review every detailed role for senior-level signal: a concrete system or
      organizational consequence, ownership or judgment, and a distinct proof
      point. Reject generic planning, troubleshooting or tool-list bullets without
      a supported consequence. Never split one result into multiple bullets merely

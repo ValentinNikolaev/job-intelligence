@@ -27,7 +27,7 @@ that vacancy.
 
 Every role displayed in `Experience` whose end date falls within the last five
 years must have **at least three distinct, source-backed bullets** in both standard
-and compact CVs. Keep the existing two-bullet minimum for older displayed roles,
+and compact CVs. Keep the existing two-bullet minimum for older detailed roles,
 the preference for four or more substantial bullets in recent roles when evidence
 supports them, and the overall CV minima. Rank bullets by value to the target
 vacancy, but do not require every bullet to be exceptionally vacancy-specific:
@@ -51,7 +51,7 @@ about a concrete system, personal contribution, and observed result. Leave that
 vacancy's CV unpublished until the necessary facts are confirmed, and report the
 specific gap instead of satisfying the count with filler. Do not omit a substantive
 role to bypass the three-bullet rule. Preserve every documented company with
-supported dates in Experience or a concise Additional/Earlier Experience entry,
+supported dates in one Experience section,
 including older work. Never remove an employer for relevance or page count.
 
 ## Implementation and package repair

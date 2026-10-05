@@ -1,7 +1,7 @@
 profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
 vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
 company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
-prompt_version: sha256:e1abc5b5e76be95a73f661f5e969d5702b5e11bd9e4e9c0c95c6a363f79a07f8
+prompt_version: sha256:de95568b49dc3c1249351fcadcdf71ea1cdfdf9571d2c1857b10ab8349a23765
 model: codex:gpt-6-sol:medium
 analysis: &id001
   model: codex:gpt-5.6-luna:medium
@@ -10,18 +10,18 @@ analysis: &id001
   version: sha256:bf1ed9892717bde1977b3798ad4f8bb704af9fec188ebb499b3cf484a476b970
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
-generated_at: '2026-10-05T14:30:30Z'
+generated_at: '2026-10-05T15:23:15Z'
 documents:
   cv:
     profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
     vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
     company_version: sha256:442d97e090d8e45edda3acf7a9515d69dab858c7396f146ad7ea2609649f11e6
-    prompt_version: sha256:e1abc5b5e76be95a73f661f5e969d5702b5e11bd9e4e9c0c95c6a363f79a07f8
+    prompt_version: sha256:de95568b49dc3c1249351fcadcdf71ea1cdfdf9571d2c1857b10ab8349a23765
     model: codex:gpt-6-sol:medium
     analysis: *id001
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_comparasemplice_ITSeniorDeveloper
-    generated_at: '2026-10-05T14:30:30Z'
+    generated_at: '2026-10-05T15:23:15Z'
   cover-letter:
     profile_version: sha256:ff93a3bb9c63ef4f70e2e70ff4a4074b5b9f1d7026aaa13e6d667a64792437ac
     vacancy_version: sha256:1e753b6677ed178d24c71ce463180886d822c49b537eb5f80bc615a6996f5aa9
@@ -60,8 +60,8 @@ quality:
   contract_version: 2
   documents:
     cv:
-      word_count: 499
-      sha256: sha256:87a37ce06f58f44a67c92d20385ec40d6bca5873fde79e02507ce4907ff77504
+      word_count: 497
+      sha256: sha256:ecb5121450dda80117b83702b316acde202a13ba2708632aaf041eda8381e658
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: 792c0b490e10a4bdcad7d646a0b15a7346ca6a1c912e77f92ffa05853657f503
     cover-letter:
@@ -488,7 +488,8 @@ quality:
       editorial_review:
         knowledge_base_version: 1
         verdict: approve
-        reviewer: Codex vacancy_editor independent CV evidence reviewer
+        reviewer: Codex vacancy_editor independent unified-Experience presentation
+          reviewer
         mode: independent
       role_coverage:
       - employer: Simple.life
@@ -525,26 +526,30 @@ quality:
         source_period: December 2018 – November 2019
         source_path: registry/candidate/linkedin-profile.md
         decision: include
-        section: Additional Experience
-        reason: Dated chronology retained without promoting unverified achievements.
+        section: Experience
+        reason: Dated H3 employer heading retained in the unified chronology without
+          unverified achievements.
       - employer: Aurum Software
         source_period: November 2015 – November 2016
         source_path: registry/candidate/linkedin-profile.md
         decision: include
-        section: Additional Experience
-        reason: Dated chronology retained without promoting unverified achievements.
+        section: Experience
+        reason: Dated H3 employer heading retained in the unified chronology without
+          unverified achievements.
       - employer: Upwork freelance
         source_period: July 2008 – September 2016
         source_path: registry/candidate/linkedin-profile.md
         decision: include
-        section: Additional Experience
-        reason: Dated chronology retained without promoting unverified achievements.
+        section: Experience
+        reason: Dated H3 employer heading retained in the unified chronology without
+          unverified achievements.
       - employer: CoinsBank/bit-x
         source_period: January 2014 – November 2015
         source_path: registry/candidate/linkedin-profile.md
         decision: include
-        section: Additional Experience
-        reason: Dated chronology retained without promoting unverified achievements.
+        section: Experience
+        reason: Dated H3 employer heading retained in the unified chronology without
+          unverified achievements.
       bullet_decisions:
       - text: Progettato e portato in produzione una piattaforma outbound su Amazon
           Connect, con architettura backend e protezioni dei dati personali sottoposte
@@ -714,7 +719,7 @@ quality:
         verdict: approve
     reviewer: Codex root final grounding reviewer
     document_sha256:
-      cv: sha256:87a37ce06f58f44a67c92d20385ec40d6bca5873fde79e02507ce4907ff77504
+      cv: sha256:ecb5121450dda80117b83702b316acde202a13ba2708632aaf041eda8381e658
       cover-letter: sha256:87ee8290dd60ba5a8c3c9680b04027eb0db50cad314ce232bf6b20487b1e743f
       analysis: sha256:2a080dcc3ff36b01b163cf0925186f9c9440294b170ce6743098a2f3248e9d25
       interview-preparation: sha256:111a60d8f08e0e562ff51272ab51a242110228f4bad75da10f0c45ed22debc0c
@@ -908,11 +913,11 @@ quality:
       role: Senior Software Developer
     document_receipts:
       cv:
-        document_sha256: sha256:87a37ce06f58f44a67c92d20385ec40d6bca5873fde79e02507ce4907ff77504
+        document_sha256: sha256:ecb5121450dda80117b83702b316acde202a13ba2708632aaf041eda8381e658
         claims_ledger_sha256: 8c163ee96c8e36cf19aa6ce66b8f71ea3daebcb7c9c0fa4e4a82b831913b49e2
         claims_ledger_path: claims.yaml
         reviewer: Codex root final grounding reviewer
-        declaration_sha256: sha256:958ff1d9db96cc59f1c11d5b9f9b746f4cf441d02adb0876a2e535370cf2f46f
+        declaration_sha256: sha256:0bd54222736c43e2d604f6bf8012fece2b9ade15ed365d7b050a69195a5b7ab4
       cover-letter:
         document_sha256: sha256:87ee8290dd60ba5a8c3c9680b04027eb0db50cad314ce232bf6b20487b1e743f
         claims_ledger_sha256: 0adc16665c4de78b964f41e27546057cfd76a1f5a235f27dda20b2d339754206
@@ -931,7 +936,7 @@ quality:
         claims_ledger_path: claims.yaml
         reviewer: Codex root final grounding and consistency reviewer
         declaration_sha256: sha256:e97634e04a0b2b410e80a1bc575da3066c4d875a5c10e57205dc5d17e425e1e5
-  declaration_sha256: sha256:958ff1d9db96cc59f1c11d5b9f9b746f4cf441d02adb0876a2e535370cf2f46f
+  declaration_sha256: sha256:0bd54222736c43e2d604f6bf8012fece2b9ade15ed365d7b050a69195a5b7ab4
   method:
     workflow: two-wave
     final_review:
@@ -958,27 +963,27 @@ quality:
       schema_version: 1
       source_file: cv.md
       artifact_file: cv.docx
-      source_sha256: 87a37ce06f58f44a67c92d20385ec40d6bca5873fde79e02507ce4907ff77504
-      artifact_sha256: 9eea23e6557de2ab1fc41d61b66287657e4bdcd23742c4cbd7bf8c2f471a4ff0
-      extracted_text_sha256: a75a3a4834ae64d3dc9fd5c7b41b7d1cda3ffe7a2036893aa889b53c7ef596c6
-      canonical_tokens: 508
-      extracted_tokens: 508
+      source_sha256: ecb5121450dda80117b83702b316acde202a13ba2708632aaf041eda8381e658
+      artifact_sha256: d7769a86d5f203e5febbc306593d68c241075f96c17522eefc48dbca1ffefb8b
+      extracted_text_sha256: f52e63ae6ec5a59d96ce015ad4d8225afe3f6961311cfd0c66b4b7e3e5195ca7
+      canonical_tokens: 506
+      extracted_tokens: 506
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
         contacts_and_numeric_values_preserved: true
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 43
+        readable_paragraphs: 42
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: reviewed
-        artifact_sha256: 9eea23e6557de2ab1fc41d61b66287657e4bdcd23742c4cbd7bf8c2f471a4ff0
+        artifact_sha256: d7769a86d5f203e5febbc306593d68c241075f96c17522eefc48dbca1ffefb8b
         reviewer: Codex root visual reviewer
-        reviewed_at: '2026-10-05T14:25:00Z'
+        reviewed_at: '2026-10-05T15:23:09.721571+00:00'
         checks:
           blank_pages: true
           overflow: true
