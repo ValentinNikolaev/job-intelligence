@@ -3,24 +3,26 @@
 **Score:** 88/100
 **Recommendation:** Strong Match
 
-QuickNode's remote senior Go infrastructure role closely matches the candidate's backend, event-driven, performance, reliability, and AWS experience.
+Strong remote senior Go infrastructure fit with distributed-systems, API, performance, and production-debugging evidence; exact country eligibility remains unclear.
 
 ## Why it matches
 
-- Go backend services, distributed/event-driven systems, performance work, and production ownership are evidenced.
-- Remote company context and Italy location are potentially compatible.
+- Recent Go backend ownership
+- Event-driven and performance work
+- Cryptocurrency background
 
 ## Gaps
 
-- Blockchain RPC infrastructure at QuickNode's scale is not directly evidenced.
+- Direct blockchain RPC or node-infrastructure experience is not explicit
 
 ## Concerns
 
-- The listing includes Portugal and USA, so country and contract eligibility require confirmation.
+- Verify Italy employment eligibility for the Portugal/USA listing
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| High-throughput backend services in Go | critical / stated | strong | Design, build, and optimize high-throughput, low-latency backend services in Go. | I design and own a support automation platform that connects Zendesk, Intercom, and | Blockchain-specific traffic and latency constraints are not shown. / Emphasize documented throughput, reliability, and performance optimization without claiming RPC experience. |
-| Remote work | high / stated | strong | We are a global remote company | Fiumicino, Latium, Italy | The location field includes Portugal and USA rather than Italy. / Confirm Italian hiring and B2B/employment terms. |
+| Strong Go proficiency | critical / stated | strong | Strong proficiency in Go, with a demonstrated ability to quickly adopt new languages and frameworks as needed. | I design and own a support automation platform that connects Zendesk, Intercom, and | / |
+| Distributed systems and streaming architectures | critical / stated | strong | Deep experience designing and operating distributed systems, databases, and streaming architectures. | - Architect a scalable, event-driven system using queues and EventBridge, increasing | / |
+| Web3 or blockchain infrastructure | high / stated | partial | Experience working with Web3, blockchain infrastructure, or high-throughput API platforms | My background spans various domains, including Document automation, Technology, | RPC depth is not explicit. / Verify specific blockchain and API-scale work. |

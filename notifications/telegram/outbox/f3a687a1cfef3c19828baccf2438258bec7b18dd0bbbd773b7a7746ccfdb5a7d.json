@@ -1,0 +1,128 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-05T04:24:28Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Voodoo",
+      "country_codes": [
+        "FR"
+      ],
+      "directory": "2026-10-02_181220_voodoo_senior-backend-engineer-golang-casual-game_fcd158b3-9796-4999-a792-67ef043f5960",
+      "score": 86,
+      "title": "Senior Backend Engineer (Golang) - Casual Game",
+      "url": "https://www.adzuna.fr/details/5908357559?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "fcd158b3-9796-4999-a792-67ef043f5960"
+    },
+    {
+      "company": "Samsara",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "2026-10-02_121451_samsara_sr-software-engineer-ii-tech-lead-agentic-platfo_acdf083d-44be-424b-bbc5-9d8d825bf446",
+      "score": 84,
+      "title": "Sr. Software Engineer II / Tech lead, Agentic Platform (Poland, Remote, B2B)",
+      "url": "https://jobicy.com/jobs/154396-sr-software-engineer-ii-tech-lead-agentic-platform-poland-remote-b2b",
+      "vacancy_id": "acdf083d-44be-424b-bbc5-9d8d825bf446"
+    },
+    {
+      "company": "QuickNode",
+      "country_codes": [
+        "PT",
+        "US"
+      ],
+      "directory": "2026-10-02_121451_quicknode_senior-software-engineer-go_d26931ae-d6ec-4db8-a4d1-52901e6dce5a",
+      "score": 88,
+      "title": "Senior Software Engineer - Go",
+      "url": "https://jobicy.com/jobs/154387-senior-software-engineer-go-2",
+      "vacancy_id": "d26931ae-d6ec-4db8-a4d1-52901e6dce5a"
+    },
+    {
+      "company": "Chainguard",
+      "country_codes": [
+        "GB",
+        "US"
+      ],
+      "directory": "2026-10-02_121451_chainguard_senior-software-engineer-ai-cicd_e074cd36-305f-46fd-846f-f39937439e99",
+      "score": 79,
+      "title": "Senior Software Engineer (AI CICD)",
+      "url": "https://jobicy.com/jobs/149855-senior-software-engineer-ai-cicd",
+      "vacancy_id": "e074cd36-305f-46fd-846f-f39937439e99"
+    },
+    {
+      "company": "ShopFully",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-10-02_061556_shopfully_senior-software-engineer_9ca200fd-4c8d-4024-a7ce-47af9007a13a",
+      "score": 88,
+      "title": "Senior Software Engineer",
+      "url": "https://himalayas.app/companies/shopfully/jobs/senior-software-engineer",
+      "vacancy_id": "9ca200fd-4c8d-4024-a7ce-47af9007a13a"
+    },
+    {
+      "company": "Collective.work",
+      "country_codes": [],
+      "directory": "2026-10-02_061543_collective-work_backend-engineer-php-h-f-cdi_3e255e67-0aed-4f23-966f-e026b85c7b5b",
+      "score": 80,
+      "title": "Backend Engineer PHP H/F - CDI",
+      "url": "https://www.adzuna.fr/details/5906992443?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "3e255e67-0aed-4f23-966f-e026b85c7b5b"
+    },
+    {
+      "company": "MeinEinkauf GmbH",
+      "country_codes": [],
+      "directory": "2026-10-01_181302_meineinkauf-gmbh_php-backend-developer-m-w-d-meineinkauf-gmbh_50886fb9-7da5-491c-83d6-396c7bc0964d",
+      "score": 81,
+      "title": "PHP Backend Developer (m/w/d) - MeinEinkauf GmbH",
+      "url": "https://www.adzuna.de/details/5905705161?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "50886fb9-7da5-491c-83d6-396c7bc0964d"
+    },
+    {
+      "company": "Voodoo",
+      "country_codes": [
+        "ES"
+      ],
+      "directory": "2026-10-01_111218_voodoo_senior-backend-engineer-golang-casual-game_19537149-8717-4b77-9f81-4df0b601364d",
+      "score": 85,
+      "title": "Senior Backend Engineer (Golang) – Casual Game",
+      "url": "https://www.adzuna.es/details/5905193462?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "19537149-8717-4b77-9f81-4df0b601364d"
+    },
+    {
+      "company": "D-Edge",
+      "country_codes": [],
+      "directory": "2026-09-30_181220_d-edge_backend-software-engineer-golang-m-f-nb-toulouse_a74e0d3f-19b8-4c89-8437-131c540845bc",
+      "score": 84,
+      "title": "Backend Software Engineer Golang M - F - Nb - Toulouse H/F",
+      "url": "https://www.adzuna.fr/details/5903217285?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "a74e0d3f-19b8-4c89-8437-131c540845bc"
+    },
+    {
+      "company": "Percona",
+      "country_codes": [
+        "HR",
+        "IT",
+        "PL",
+        "ES"
+      ],
+      "directory": "2026-09-28_100229_percona_sr-software-engineer-go-mongodb_7b9e883d-1634-4eeb-92bc-d7f2d94e5362",
+      "score": 78,
+      "title": "Sr. Software Engineer - Go/MongoDB",
+      "url": "https://himalayas.app/companies/percona/jobs/sr-software-engineer-go-mongodb-7934765505",
+      "vacancy_id": "7b9e883d-1634-4eeb-92bc-d7f2d94e5362"
+    },
+    {
+      "company": "AMBOSS",
+      "country_codes": [],
+      "directory": "2026-09-28_100219_amboss_backend-engineer-golang_0e98f237-8cb6-4941-b3d7-88364dcc71ea",
+      "score": 82,
+      "title": "Backend Engineer (Golang)",
+      "url": "https://jobs.ashbyhq.com/amboss/839f4419-2317-4680-a963-2415b0cfc629",
+      "vacancy_id": "0e98f237-8cb6-4941-b3d7-88364dcc71ea"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "f3a687a1cfef3c19828baccf2438258bec7b18dd0bbbd773b7a7746ccfdb5a7d",
+  "schema_version": 2
+}

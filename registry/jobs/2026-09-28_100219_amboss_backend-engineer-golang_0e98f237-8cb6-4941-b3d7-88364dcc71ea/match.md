@@ -1,26 +1,29 @@
 # Match Analysis
 
-**Score:** 86/100
+**Score:** 82/100
 **Recommendation:** Strong Match
 
-AMBOSS's remote Go backend role aligns strongly with the candidate's Go services, API integration, production maintenance, support automation, and technical communication experience.
+Strong English-language Go backend fit through APIs, support automation, incident work, and AI-assisted systems; Claude Code and payment-platform experience are not evidenced.
 
 ## Why it matches
 
-- Go, backend APIs, testing/maintenance, incident work, and support-channel collaboration are well aligned.
-- The candidate has relevant payment and e-commerce-adjacent experience.
+- Recent Go backend
+- Support automation and incident prevention
+- REST/MySQL/Git evidence
 
 ## Gaps
 
-- Claude Code or equivalent agentic engineering workflow and German eligibility are not established.
+- AI coding-tool usage and Stripe or Chargebee are not explicit
 
 ## Concerns
 
-- The role's Berlin location and remote-country limits should be confirmed.
+- Berlin hybrid metadata may conflict with Italy unless remote eligibility is confirmed
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| 3+ years of hands-on Golang plus MySQL or NoSQL | critical / stated | strong | 3+ years of solid hands-on experience with Golang, plus MySQL or NoSQL. | Backend engineer with 15+ years of experience building and improving production | The profile lists MySQL but not recent Go duration as a separate quantified total. / Use dated Go roles and verified database evidence. |
-| APIs and production lifecycle | high / stated | strong | Experience building and integrating APIs (GraphQL and/or RESTful) | Go \| OpenAI \| Support Automation \| Backend Integrations \| Monitoring | GraphQL is not evidenced. / Present REST and integration work without claiming GraphQL. |
+| Golang with MySQL or NoSQL | critical / stated | strong | 3+ years of solid hands-on experience with Golang, plus MySQL or NoSQL. | Backend engineer with 15+ years of experience building and improving production | / |
+| AI coding tools | high / stated | partial | Solid experience using AI coding tools such as Claude Code (or similar), and exposure to agentic engineering workflows. | - Integrated **OpenAI**-powered auto-triage flows, automating or deflecting up to | Coding-agent use is not evidenced. / Confirm coding-agent experience separately. |
+| APIs and relational database design | high / stated | strong | Experience building and integrating APIs (GraphQL and/or RESTful) and working with relational database design. | - Designed and owned a Go-based support automation platform connecting **Zendesk**, | GraphQL is not explicit. / Emphasize documented REST and relational work. |
+| English communication | high / stated | strong | Good verbal and written communication skills in English | English - Professional Working | / |

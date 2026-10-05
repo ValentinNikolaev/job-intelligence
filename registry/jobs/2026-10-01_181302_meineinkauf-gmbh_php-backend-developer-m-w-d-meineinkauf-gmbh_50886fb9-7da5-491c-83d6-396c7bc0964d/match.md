@@ -1,26 +1,32 @@
 # Match Analysis
 
-**Score:** 74/100
-**Recommendation:** Match
+**Score:** 81/100
+**Recommendation:** Strong Match
 
-The PHP/Symfony backend role matches the candidate's PHP, integrations, and production backend history, while Konstanz location and German-language expectations remain uncertain.
+Strong PHP/Symfony and integration fit for fulfillment software; German and Konstanz conditions require verification.
 
 ## Why it matches
 
-- PHP backend, Symfony, integrations, and scalable service experience are relevant.
-- E-commerce and payment-related background transfers well to fulfillment services.
+- PHP/Symfony and e-commerce
+- Backend integrations
+- Production reliability
 
 ## Gaps
 
-- German proficiency and local work eligibility are not established.
+- German
+- Swiss customs
+- and fulfillment experience are not evidenced
 
 ## Concerns
 
-- The posting does not clearly establish remote work from Italy.
+- Employment
+- relocation
+- and language requirements need confirmation
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP backend development with Symfony services | critical / stated | strong | Als PHP Backend Developer entwickelst du die Services | I have a strong track record in PHP, with 5 years of leadership experience. | Sulu-CMS and the company's exact domain stack are not in the profile. / Use verified PHP/Symfony and integration experience only. |
-| Konstanz-based work | high / stated | unknown | Als PHP Backend Developer | Fiumicino, Latium, Italy | Relocation, remote terms, and German requirements are unknown. / Confirm cross-border hiring or relocation support. |
+| PHP applications and Symfony services | critical / stated | strong | mehreren eigenständigen PHP-Applikationen (Symfony-Services, Sulu-CMS) | My background includes document automation, customer operations automation, digital | / |
+| Fulfillment and partner integrations | high / stated | partial | Zollabwicklung, Fulfillment, Partner-Integrationen | Developed integration between PocketBook Cloud and PocketBook account. | Swiss customs and parcel fulfillment are not direct evidence. / Present integration ownership and verify onboarding expectations. |
+| German communication | meaningful / inferred | unknown |  | English - Professional Working | German proficiency is not recorded. / Confirm team language. |

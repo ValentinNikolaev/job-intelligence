@@ -3,24 +3,26 @@
 **Score:** 85/100
 **Recommendation:** Strong Match
 
-The remote senior Go backend role in Spain is a strong technical fit through recent Go ownership and scalable, reliable backend systems, with geography requiring confirmation.
+Strong remote senior Go fit with automation and reliability evidence; gaming experience and Italy-eligible contracting remain unknown.
 
 ## Why it matches
 
-- Go backend, APIs, automation, monitoring, and senior technical leadership are evidenced.
-- Remote work is stated.
+- Go backend ownership
+- Senior production engineering
+- Remote work explicitly stated
 
 ## Gaps
 
-- Casual-game domain experience is not established.
+- Casual-game or mobile-game experience is not evidenced
 
 ## Concerns
 
-- The Spain location may require local hiring eligibility or relocation.
+- Spain listing may not establish Italy eligibility
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior Golang backend engineering | critical / stated | strong | Senior Backend Engineer (Golang) – Casual Game | I design and own a support automation platform that connects Zendesk, Intercom, and | Game backend specifics are not evidenced. / Use transferable scale and reliability evidence. |
-| Remote position | high / stated | strong | This position is remote. | Fiumicino, Latium, Italy | The listing's Spain location may limit remote hiring. / Confirm Italy eligibility. |
+| Senior Golang backend engineering | critical / stated | strong | Senior Backend Engineer (Golang) – Casual Game | I design and own a support automation platform that connects Zendesk, Intercom, and | / |
+| Remote work | high / stated | strong | This position is remote. | Fiumicino, Latium, Italy | / |
+| Gaming domain | meaningful / structural | unknown | Our Gaming team |  | Domain onboarding may be needed. / Emphasize scalable consumer-facing backend work. |

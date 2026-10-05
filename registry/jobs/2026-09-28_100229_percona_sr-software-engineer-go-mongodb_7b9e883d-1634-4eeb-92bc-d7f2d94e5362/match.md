@@ -1,26 +1,33 @@
 # Match Analysis
 
-**Score:** 93/100
-**Recommendation:** Strong Match
+**Score:** 78/100
+**Recommendation:** Match
 
-Percona's remote Go/MongoDB tools role is an exceptional technical fit for the candidate's Go, distributed/event-driven systems, MongoDB environment, APIs, reliability, and open-source-adjacent backend work.
+Good remote Go tooling fit through backend, reliability, APIs, and observability evidence; MongoDB replication internals and open-source depth are not established.
 
 ## Why it matches
 
-- Go production experience, concurrency-adjacent reliability work, APIs, observability, and distributed systems are strong matches.
-- Italy is explicitly included in the location list.
+- Production Go
+- Event-driven reliability work
+- APIs and monitoring
+- Italy included in remote metadata
 
 ## Gaps
 
-- MongoDB change streams, oplog replication, and backup/restore internals are not directly evidenced.
+- Change streams
+- oplog
+- sharding
+- backup/restore
+- and open-source contribution are not explicit
 
 ## Concerns
 
-- The role may require deeper systems-level concurrency and replication expertise than the profile demonstrates.
+- Concurrency and database-internals bar is high
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Strong Go experience in production | critical / stated | strong | Strong Go experience in production | I design and own a support automation platform that connects Zendesk, Intercom, and | The posting emphasizes low-level concurrency details not explicitly listed in the profile. / Verify concurrency examples before making detailed claims. |
-| Hands-on MongoDB knowledge | high / stated | unknown | MongoDB knowledge | MySQL | The required MongoDB replication concepts are not evidenced. / Treat MongoDB as a material learning gap and do not claim hands-on expertise. |
+| Production Go concurrency | critical / stated | partial | Strong Go experience in production, **with real fluency in concurrency: goroutines, channels, context cancellation, worker pools, and backpressure. You have debugged a race condition that only showed up under load, and you know how you found it. | - Build resilient message delivery pipelines with fallback logic, retries, and | Explicit goroutine and race-debugging evidence is absent. / Verify concurrency depth. |
+| MongoDB replication internals | critical / stated | unknown | Hands-on MongoDB knowledge: **change streams, the oplog, resume tokens, replica sets, and sharding. You do not need to have built replication before, but you should understand why it is hard. |  | MongoDB internals are not established. / Confirm hands-on MongoDB scope. |
+| APIs and operational metrics | high / stated | partial | Comfort building and operating command-line tools and HTTP APIs, **and instrumenting them with metrics and structured logs. | - Engineer a unified API orchestration layer to streamline ticket routing, | CLI and structured-log details are not explicit. / Verify operational tooling examples. |

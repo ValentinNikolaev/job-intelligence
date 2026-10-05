@@ -1,26 +1,28 @@
 # Match Analysis
 
-**Score:** 76/100
+**Score:** 80/100
 **Recommendation:** Match
 
-The permanent PHP backend role is technically aligned through the candidate's PHP, Symfony/Laravel, integrations, and production systems experience, with Paris location and French-language uncertainty.
+Good Paris scale-up fit because PHP, Laravel, Symfony, integrations, and technical leadership align; French and work-location requirements are unclear.
 
 ## Why it matches
 
-- PHP backend and framework experience is a strong match.
-- The candidate has mobility, insurance, payment, and integration-domain exposure.
+- Strong PHP background
+- Laravel/Symfony
+- Backend integration and leadership
 
 ## Gaps
 
-- French proficiency and Paris work eligibility are not established.
+- French proficiency and detailed framework requirements are not evidenced
 
 ## Concerns
 
-- The posting appears client-recruiter sourced and does not clearly state remote work.
+- Paris remote or relocation terms are not established
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend Engineer PHP | critical / stated | strong | Backend Engineer PHP (F/H/X) | I have a strong track record in PHP, with 5 years of leadership experience. | The client's exact framework and architecture are only partially visible. / Tailor to verified PHP/Symfony/Laravel and integration evidence. |
-| Paris-based permanent employment | high / stated | unknown | Backend Engineer PHP | Fiumicino, Latium, Italy | Relocation, remote policy, and French-language expectations are unknown. / Confirm work arrangement and language requirements before applying. |
+| PHP backend development | critical / stated | strong | un Backend Engineer PHP (F/H/X) | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| Mobility and insurance scale-up domain | meaningful / structural | partial | une scale-up française de la mobilité et de l’assurance en forte croissance | My background includes document automation, customer operations automation, digital | Direct mobility-insurance experience is not stated. / Emphasize fintech and integration transferability. |
+| French communication | meaningful / inferred | unknown |  |  | French proficiency is not recorded. / Confirm whether English is sufficient. |

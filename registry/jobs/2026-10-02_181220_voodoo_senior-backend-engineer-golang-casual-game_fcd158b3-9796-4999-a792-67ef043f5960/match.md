@@ -3,24 +3,26 @@
 **Score:** 86/100
 **Recommendation:** Strong Match
 
-A remote senior Go backend role is a strong technical fit through recent Go platform ownership, scalable integrations, and production reliability work.
+Strong remote senior Go fit with recent automation-platform ownership and reliability work; game-domain experience is not evidenced.
 
 ## Why it matches
 
-- Recent Go backend ownership and operational responsibility are directly relevant.
-- The candidate has senior leadership and high-volume communication-system experience.
+- Recent Go backend ownership
+- Senior production engineering
+- Remote work explicitly stated
 
 ## Gaps
 
-- Game backend experience is not evidenced.
+- Casual-game or mobile-game backend experience is not evidenced
 
 ## Concerns
 
-- The posting's remote geography and exact backend stack should be confirmed.
+- The posting excerpt is truncated; verify full location and contract conditions
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior Golang backend engineering | critical / stated | strong | Senior Backend Engineer (Golang) - Casual Game | I design and own a support automation platform that connects Zendesk, Intercom, and | The game domain is a material but non-mandatory gap unless stated elsewhere in the full posting. / Demonstrate transferable scale, reliability, and service ownership. |
-| Remote position | high / stated | strong | This position is remote. | Fiumicino, Latium, Italy | Country eligibility is not included in the excerpt. / Confirm Italy/EMEA hiring coverage. |
+| Production Go backend experience | critical / stated | strong | Senior Backend Engineer (Golang) - Casual Game | I design and own a support automation platform that connects Zendesk, Intercom, and | / |
+| Remote work | high / stated | strong | This position is remote. | Fiumicino, Latium, Italy | / |
+| Game-domain experience | meaningful / structural | unknown | Our Gaming team |  | Domain onboarding may be required. / Emphasize transferable backend and reliability work. |

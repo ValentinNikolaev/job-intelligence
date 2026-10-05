@@ -1,26 +1,30 @@
 # Match Analysis
 
-**Score:** 82/100
+**Score:** 88/100
 **Recommendation:** Strong Match
 
-Italy-remote senior Go platform work is strongly aligned with the candidate's event-driven systems, production ownership, APIs, and reliability experience, though Kafka and ad-tech are gaps.
+Strong Italy-remote senior Go platform fit with event-driven, AWS/Kubernetes, reliability, and privacy evidence; Kafka and Python or Scala are not established.
 
 ## Why it matches
 
-- Go, event-driven architecture, observability, distributed systems, and cross-functional leadership are well supported.
-- The candidate is based in Italy and has relevant e-commerce and data-platform exposure.
+- Go and event-driven systems
+- AWS/Kubernetes and observability
+- GDPR and senior ownership
 
 ## Gaps
 
-- Kafka, Databricks, ad-tech, and North American overlap are not established.
+- Kafka
+- Python or Scala
+- and Databricks are not explicit
 
 ## Concerns
 
-- The role requires overlap into North American hours, which should be confirmed as practical.
+- North American overlap and compensation fit should be confirmed
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend/distributed systems engineering, ideally Go | critical / stated | strong | 5+ years of backend/distributed systems engineering experience, ideally in Go | Architect a scalable, event-driven system using queues and EventBridge, increasing | Kafka and advertising-domain experience are not shown. / Map queue/event and analytics-pipeline evidence without claiming Kafka or ad-tech expertise. |
-| Remote from Italy with North American overlap | high / stated | unknown | Fluent in English with ability to provide overlap availability into North American hours (9am to 12pm EST). | Fiumicino, Latium, Italy | Availability for the specified overlap is unknown. / Confirm schedule compatibility before applying. |
+| Kafka event-driven architecture | critical / stated | unknown | Production experience with Kafka-based event-driven architecture (Confluent Kafka). | - Architect a scalable, event-driven system using queues and EventBridge, increasing | Kafka-specific experience is not documented. / Verify Kafka and consumer-group experience. |
+| Backend/distributed systems | critical / stated | strong | 5+ years of backend/distributed systems engineering experience, ideally in Go | Backend engineer with 15+ years of experience building and improving production | / |
+| AWS and Kubernetes | high / stated | strong | Experience with AWS and Kubernetes (EKS). | Migrated managed services from ECS to Kubernetes. | EKS-specific operation is not explicit. / Clarify AWS and EKS production scope. |

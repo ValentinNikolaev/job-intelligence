@@ -1,26 +1,28 @@
 # Match Analysis
 
-**Score:** 71/100
-**Recommendation:** Match
+**Score:** 84/100
+**Recommendation:** Strong Match
 
-The Go/NATS/PostgreSQL backend role matches the candidate's Go, event-driven, API, and production-reliability background, but Toulouse location and the exact work arrangement are unresolved.
+Strong Go backend fit for a PostgreSQL, Elasticsearch, Kubernetes, NATS, and PHP stack; Toulouse location and work arrangement need verification.
 
 ## Why it matches
 
-- Go, event-driven architecture, PostgreSQL, observability, and PHP legacy compatibility are relevant.
-- The candidate has customer-oriented and internal platform experience.
+- Go/PHP and infrastructure
+- Performance and production troubleshooting
+- APIs and observability
 
 ## Gaps
 
-- NATS, Elasticsearch, and Toulouse eligibility are not established.
+- NATS and CRM-specific experience are not explicit
 
 ## Concerns
 
-- The posting does not state remote work in the supplied excerpt.
+- Remote work and Italy-compatible contract are not established
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Seasoned Golang developer | critical / stated | strong | We are looking for a Golang seasoned developer | I design and own a support automation platform that connects Zendesk, Intercom, and | The role's NATS-specific experience is not shown. / Present verified event-driven and backend systems experience without claiming NATS. |
-| Toulouse work location | high / stated | unknown | Toulouse H/F | Fiumicino, Latium, Italy | Remote or relocation terms are not stated. / Confirm work arrangement and eligibility. |
+| Seasoned Golang development | critical / stated | strong | We are looking for a Golang seasoned developer | Backend engineer with 15+ years of experience building and improving production | / |
+| Go/NATS/PostgreSQL/Elasticsearch/Kubernetes stack | high / stated | partial | Go/NATS/Postgresql/Elasticsearch/k8s stack with some PHP legacy components | Migrated managed services from ECS to Kubernetes. | NATS and exact database/search scope are not evidenced. / Verify stack depth. |
+| High-performance software | high / stated | strong | building high-quality and high-performance software | - Identified and optimized performance bottlenecks, which decreased API response times | / |

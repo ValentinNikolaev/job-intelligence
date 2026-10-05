@@ -1,26 +1,30 @@
 # Match Analysis
 
-**Score:** 81/100
-**Recommendation:** Strong Match
+**Score:** 79/100
+**Recommendation:** Match
 
-Chainguard's remote senior engineering and CI/CD-security context fits the candidate's backend, AWS/Kubernetes, CI/CD, and reliability background, with security-product gaps.
+Good senior Go and Kubernetes fit with CI/CD and AI-automation evidence; secure supply-chain and registry depth is not established.
 
 ## Why it matches
 
-- AWS, Kubernetes, CI/CD, production troubleshooting, and technical leadership are supported.
-- The candidate has experience integrating automation into engineering and support workflows.
+- Go and Kubernetes
+- GitHub Actions and ArgoCD
+- Senior autonomous delivery
 
 ## Gaps
 
-- AI CI/CD and software-supply-chain security are not directly established.
+- Docker
+- artifact registries
+- and software-supply-chain security are not explicit
 
 ## Concerns
 
-- The advertised USD salary and unspecified hiring geography may be incompatible with Italy.
+- Europe/UK/USA scope and USD salary need confirmation for Italy
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior software engineering for AI/CI/CD | high / stated | partial | Senior Software Engineer (AI CICD) | Implemented CI/CD pipelines to ensure efficient software development processes, | The AI and supply-chain-security core may require experience not in the profile. / Present CI/CD and automation evidence without claiming security-product expertise. |
-| Flexible remote-first culture | high / stated | unknown | Flexible & Remote-First Culture | Fiumicino, Latium, Italy | Remote location eligibility is not specified. / Verify Italy/EMEA employment coverage. |
+| Containers and Kubernetes ecosystem | critical / stated | partial | Expertise with containers, artifact registries, Docker, Kubernetes and its greater ecosystem | - Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | Docker and registry-security depth is not stated. / Clarify container security work. |
+| 5+ years software development | critical / stated | strong | 5+ years of experience in software development | I'm a highly experienced developer with over 15 years of expertise. | / |
+| Go proficiency | high / stated | strong | Proficiency with Go (Golang) or strong readiness to ramp quickly. | I design and own a support automation platform that connects Zendesk, Intercom, and | / |

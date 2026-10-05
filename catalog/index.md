@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 74
+Total vacancies: 73
 
-- Found: 52
+- Found: 51
 - Applied: 17
 - Interview: 3
 - Rejected: 2
@@ -27,7 +27,6 @@ Total vacancies: 74
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_software-architect-containers-virtualisation_d61fb0d3-49b2-49af-a196-6a9703cd6059/) | [Software Architect - Containers / Virtualisation](../registry/jobs/2026-10-03_061815_canonical_software-architect-containers-virtualisation_d61fb0d3-49b2-49af-a196-6a9703cd6059/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149981-software-architect-containers-virtualisation) | — | — | — | — | — |
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_golang-engineering-manager-commercial-systems_d55f4816-7bda-40fa-aab2-ea4341396678/) | [Golang Engineering Manager, Commercial Systems](../registry/jobs/2026-10-03_061815_canonical_golang-engineering-manager-commercial-systems_d55f4816-7bda-40fa-aab2-ea4341396678/job.md) | EMEA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149984-golang-engineering-manager-commercial-systems) | — | — | — | — | — |
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_engineering-manager-for-iam-identity-and-access_bafd43ea-c0e6-4d78-84ae-30802de5967e/) | [Engineering Manager for IAM (Identity and Access Management)](../registry/jobs/2026-10-03_061815_canonical_engineering-manager-for-iam-identity-and-access_bafd43ea-c0e6-4d78-84ae-30802de5967e/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149980-engineering-manager-for-iam-identity-and-access-management) | — | — | — | — | — |
-| 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_ubuntu-core-software-engineer_9f29bd12-df71-4f7b-9014-87baa3d17411/) | [Ubuntu Core Software Engineer](../registry/jobs/2026-10-03_061815_canonical_ubuntu-core-software-engineer_9f29bd12-df71-4f7b-9014-87baa3d17411/job.md) | EMEA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149996-ubuntu-core-software-engineer) | — | — | — | — | — |
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_engineering-manager-public-cloud-python-golang_802b0938-cdaa-4335-9cd0-b50dbb049bb5/) | [Engineering Manager - Public Cloud, Python, Golang](../registry/jobs/2026-10-03_061815_canonical_engineering-manager-public-cloud-python-golang_802b0938-cdaa-4335-9cd0-b50dbb049bb5/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149985-engineering-manager-public-cloud-python-golang) | — | — | — | — | — |
 | 2026-10-03 | [Canonical](../registry/jobs/2026-10-03_061815_canonical_python-engineering-manager-commercial-systems_1e5731f8-7297-4941-b03e-06a568901121/) | [Python Engineering Manager, Commercial Systems](../registry/jobs/2026-10-03_061815_canonical_python-engineering-manager-commercial-systems_1e5731f8-7297-4941-b03e-06a568901121/job.md) | EMEA | Jobicy | Found | 2026-10-03 | [Jobicy](https://jobicy.com/jobs/149989-python-engineering-manager-commercial-systems) | — | — | — | — | — |
 | 2026-10-03 | [Miratech](../registry/jobs/2026-10-03_002318_miratech_senior-golang-backend-engineer-remote-scalable-i_cd2505f2-ead5-460e-87c8-478c0d1076ab/) | [Senior Golang Backend Engineer - Remote & Scalable Impact](../registry/jobs/2026-10-03_002318_miratech_senior-golang-backend-engineer-remote-scalable-i_cd2505f2-ead5-460e-87c8-478c0d1076ab/job.md) | Madrid, Comunidad de Madrid | Adzuna | Found | 2026-10-03 | [Adzuna](https://www.adzuna.es/details/5908611219?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
