@@ -1565,3 +1565,65 @@ entries:
 
       **Software Developer**'
     sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+- id: cv-chronology-sixt
+  employer: Sixt
+  role: Senior Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November 2019 (1 year)  "
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: verified
+  verification:
+    reviewer: Codex root chronology transcription review
+    reviewed_at: '2026-10-05'
+    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
+      metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
+    sole ownership.
+- id: cv-chronology-aurum
+  employer: Aurum Software
+  role: Senior Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Aurum Software\n\n**Senior Software Developer**  \nNovember 2015 - November 2016 (1 year\
+      \ 1 month)  "
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: verified
+  verification:
+    reviewer: Codex root chronology transcription review
+    reviewed_at: '2026-10-05'
+    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
+      metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
+    sole ownership.
+- id: cv-chronology-upwork
+  employer: Upwork freelance
+  role: Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### Upwork freelance\n\n**Software Developer**  \nJuly 2008 - September 2016 (8 years 3 months)"
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: verified
+  verification:
+    reviewer: Codex root chronology transcription review
+    reviewed_at: '2026-10-05'
+    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
+      metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
+    sole ownership.
+- id: cv-chronology-coinsbank
+  employer: CoinsBank/bit-x
+  role: Senior Software Developer
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "### CoinsBank/bit-x\n\n**Senior Software Developer**  \nJanuary 2014 - November 2015 (1 year\
+      \ 11 months)  "
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: verified
+  verification:
+    reviewer: Codex root chronology transcription review
+    reviewed_at: '2026-10-05'
+    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
+      metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
+    sole ownership.

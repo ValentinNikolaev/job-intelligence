@@ -50,7 +50,9 @@ record still cannot support three distinct strong bullets, ask focused questions
 about a concrete system, personal contribution, and observed result. Leave that
 vacancy's CV unpublished until the necessary facts are confirmed, and report the
 specific gap instead of satisfying the count with filler. Do not omit a substantive
-role solely to bypass the three-bullet rule.
+role to bypass the three-bullet rule. Preserve every documented company with
+supported dates in Experience or a concise Additional/Earlier Experience entry,
+including older work. Never remove an employer for relevance or page count.
 
 ## Implementation and package repair
 

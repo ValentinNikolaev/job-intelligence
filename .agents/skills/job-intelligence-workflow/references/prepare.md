@@ -77,10 +77,18 @@ explicit single-document request, use the full-package flow below.
    CV; keep those only in handoffs, `claims.yaml`, and `quality.yaml`. Never duplicate
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
    Apply the mandatory **recent-experience editorial gate** before the CV is final:
+   - retain every documented employer and engagement. Check the full source career
+     inventory, not only the previous tailored CV, against Experience and the dated
+     Additional Experience/Earlier Experience sections. Record each employer, source
+     path, source period, and final section in `cv_audit.role_coverage`. No company
+     may be excluded for vacancy relevance, age, page count, or a bullet shortage.
+     Preserve real dates, overlaps, and supported uncertainty; never manufacture
+     continuous employment or conceal a genuine source gap;
    - give every displayed role at least two distinct, source-backed outcome or decision
      bullets, and each role ending within the last five years at least three. Re-read
-     the candidate source when a role falls short; omit a nonessential older role or
-     ask the candidate a focused question when distinct facts remain unavailable.
+     the candidate source when a role falls short; preserve its dated employer/role
+     entry in Additional Experience or Earlier Experience when detailed bullets are
+     unnecessary, or ask a focused question when distinct facts remain unavailable.
      Never divide one result into multiple bullets to pass this count;
    - order displayed roles by their actual end dates, newest first, including when
      part-time work overlaps another role. State overlapping engagements clearly;

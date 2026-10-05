@@ -10,6 +10,7 @@ from typing import Any
 
 from .applications import (
     APPLICATION_DOCUMENTS, APPLICATION_FILES, _HANDOFF_REQUIREMENTS,
+    _EXPERIENCE_DATE_RANGE_RE, _MONTH_NAMES,
     _markdown_section, _read_yaml_mapping, _required_handoffs, _selected_documents,
     _validate_cv_audit_bullet_coverage,
 )
@@ -28,7 +29,7 @@ def _load(path: Path, label: str, items: list[dict[str, str]]) -> dict[str, Any]
         return None
 
 
-def _cv_lint(markdown: str, quality: Mapping[str, Any], path: Path, items: list[dict[str, str]]) -> None:
+def _cv_lint(markdown: str, quality: Mapping[str, Any], path: Path, items: list[dict[str, str]], *, reference_date: date | None = None) -> None:
     section = _markdown_section(markdown, "Experience")
     roles: list[tuple[str, list[str]]] = []
     for line in section.splitlines():
@@ -37,7 +38,8 @@ def _cv_lint(markdown: str, quality: Mapping[str, Any], path: Path, items: list[
             roles.append((heading.group(1), []))
         elif roles:
             roles[-1][1].append(line)
-    cutoff = date.today().year - 5
+    today = reference_date or date.today()
+    cutoff = (today.year - 5, today.month)
     for title, lines in roles:
         bullets = [re.sub(r"^\s*[-*]\s+", "", line).strip() for line in lines
                    if re.match(r"^\s*[-*]\s+\S", line)
@@ -47,8 +49,21 @@ def _cv_lint(markdown: str, quality: Mapping[str, Any], path: Path, items: list[
         normal = [re.sub(r"\W+", "", bullet).casefold() for bullet in bullets]
         if len(normal) != len(set(normal)):
             _diagnostic(items, "CV_DUPLICATE_BULLET", f"duplicate normalized Experience bullet in {title}", path)
-        years = [int(value) for value in re.findall(r"\b(19\d{2}|20\d{2})\b", title)]
-        required = 3 if years and max(years) >= cutoff else 2
+        period = _EXPERIENCE_DATE_RANGE_RE.search("\n".join([title, *lines[:4]]))
+        required = 2
+        if period:
+            end = period.group("end")
+            if end.casefold() in {"present", "current"}:
+                end_key = (today.year, today.month)
+            else:
+                parts = end.split()
+                year = int(parts[-1])
+                month = (
+                    next(index for index, name in enumerate(_MONTH_NAMES, 1) if name.casefold() == parts[0].casefold())
+                    if len(parts) > 1 else (today.month if year == today.year else 12)
+                )
+                end_key = (year, month)
+            required = 3 if end_key >= cutoff else 2
         if len(bullets) < required:
             _diagnostic(items, "CV_ROLE_DEPTH", f"{title} has {len(bullets)} Experience bullets; requires {required}", path)
     audit = quality.get("cv_audit")

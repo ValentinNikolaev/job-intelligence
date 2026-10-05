@@ -27,8 +27,11 @@ evidence packet under ignored `.codex-work/preparation-shared/`. Read those shar
 candidate facts once for the selected batch. Keep each vacancy's posting, match,
 research, claims, CV, and quality receipt independent; never copy a vacancy-specific
 judgment or paragraph into another package. For each CV, explicitly review every
-relevant source role in the ten-year Experience window and record why it appears
-or is omitted; role-depth checks alone cannot detect a missing employer.
+documented employer and engagement, including older work, and record its dates,
+source and final section in `cv_audit.role_coverage`. All companies must appear
+in Experience or a dated Additional Experience/Earlier Experience entry. Tailor
+detail, never employer coverage. Preserve genuine dates and supported uncertainty
+without inventing continuity. Role-depth checks alone cannot detect a missing employer.
 Never copy metadata from a shared checkout. A nonzero preflight ends the run before any
 draft, preview, conversion, or canonical package path is created.
 

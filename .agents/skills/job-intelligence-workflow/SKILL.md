@@ -84,6 +84,12 @@ current Codex surface, tell the user and do not publish under that profile.
    Apply the recent-experience and impact/judgment editorial gates in
    `references/prepare.md` before recording that final review. A total bullet
    count never substitutes for a role-by-role hiring-manager review.
+   Preserve every documented employer and engagement in the final CV. Compare the
+   complete candidate career inventory with `Experience`, `Additional Experience`,
+   and `Earlier Experience`; retain short dated chronology entries when detailed
+   bullets are unnecessary. Never omit a company for relevance, page count, age,
+   or insufficient achievement bullets. Review overlap and uncertain dates without
+   inventing continuity. Record every company's representation in `cv_audit.role_coverage`.
    Every displayed Experience role ending within the five years through the
    validator's reference month needs at least three distinct, source-backed
    Experience bullets; older displayed roles need at least two. Technologies

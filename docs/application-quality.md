@@ -207,7 +207,9 @@ body paragraphs. Recommended compact targets are CV 300–500 and letter 150–2
 The analysis/interview minima and ceilings remain unchanged. Preserve two meaningful
 letter stories, credible claims and required sections in either format. Compact is
 selected for the application channel or user preference, never an excuse for generic
-or skeletal content. Current Experience still excludes roles older than ten years.
+or skeletal content. Detailed Experience focuses on the last ten years, while
+dated Additional Experience/Earlier Experience entries preserve every older or
+briefly represented employer and engagement. Employer coverage is mandatory.
 
 For Senior or Tech Lead positioning, the final CV audit is editorial as well as
 mechanical. Each Experience bullet should identify a supported contribution, the
@@ -254,8 +256,15 @@ preparation (including the explicit five-year cutoff month). It counts only
 Experience bullets, never a Technologies line, and rejects a mechanically
 detectable repeated bullet within the same role. These are rejection thresholds,
 not prompts to invent or split
-achievements. Revisit sources and omit an inessential older role or pause the
-package when distinct facts cannot support the threshold.
+achievements. Revisit sources and preserve a dated chronology entry when detailed
+bullets are unnecessary, or pause when essential distinct facts cannot be supported.
+Never delete an employer to bypass the threshold. Before approval, record complete
+source-backed employer coverage in `cv_audit.role_coverage`, including source path,
+source period and final section. Check every company against the actual CV, not
+against a previous tailored draft. Preserve overlaps, genuine gaps and unresolved
+date precision without extending periods or inventing employment. The publication
+gate must reject missing employers even when all displayed roles pass bullet-depth
+and editorial checks.
 When an imported candidate source offers useful but unconfirmed figures, present
 them with their context for candidate selection and ask how each was measured.
 If the candidate requests clarification, ask a focused follow-up about the

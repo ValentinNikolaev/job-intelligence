@@ -19,6 +19,7 @@ import yaml
 
 from . import storage_bridge as op
 from .evidence import EvidenceError, validate_claims_ledger, validate_evidence_bank
+from .career_coverage import CareerCoverageError, validate_career_coverage
 
 
 APPLICATION_FILES = {
@@ -291,6 +292,7 @@ def validate_application_draft(
     *,
     document: str | None = None,
     reference_date: date | datetime | None = None,
+    career_source_path: Path | None = None,
 ) -> dict[str, str]:
     """Validate a local Codex draft without publishing or converting it."""
     vacancy_directory = vacancy_directory.resolve()
@@ -308,6 +310,7 @@ def validate_application_draft(
         document=document,
         reference_date=reference_date,
         document_format=_draft_format(draft_directory),
+        career_source_path=career_source_path,
     )
     _validate_draft_quality(draft_directory.resolve(), validated, document=document,
                             project_root=op.project_root(vacancy_directory), vacancy_text=str(vacancy["job_description"]))
@@ -479,6 +482,7 @@ class ApplicationGenerator:
             manifest_path,
             expected_versions,
             document=self.document,
+            career_source_path=self._career_source_path(),
         ):
             return PreparationResult("skipped", vacancy_id, directory.name)
 
@@ -492,6 +496,7 @@ class ApplicationGenerator:
             document=self.document,
             reference_date=generated_at,
             document_format=_draft_format(self.client.directory) if isinstance(self.client, CodexApplicationDraftClient) else "standard",
+            career_source_path=self._career_source_path(),
         )
         quality = _document_quality_report(generated)
         if isinstance(self.client, CodexApplicationDraftClient):
@@ -628,7 +633,15 @@ class ApplicationGenerator:
             application_dir / "manifest.yaml",
             expected_versions,
             document=self.document,
+            career_source_path=self._career_source_path(),
         )
+
+    def _career_source_path(self) -> Path | None:
+        source = self.registry_root / "candidate" / "linkedin-profile.md"
+        if (source.is_file() or (self.registry_root.parent / ".git").exists()
+                or any(path.name == source.name for path in self.profile_paths)):
+            return source
+        return None
 
     def _load_candidate_profile(self) -> tuple[str, str]:
         if not self.profile_paths:
@@ -686,6 +699,7 @@ def validate_application_package(
     document: str | None = None,
     reference_date: date | datetime | None = None,
     document_format: str = "standard",
+    career_source_path: Path | None = None,
 ) -> dict[str, str]:
     if document_format not in {"standard", "compact"}:
         raise ApplicationError("document_format must be standard or compact")
@@ -744,6 +758,11 @@ def validate_application_package(
         _validate_cv_experience_age(result["cv_markdown"], reference_date=reference_date)
         _validate_cv_role_depth(result["cv_markdown"], reference_date=reference_date)
         _validate_cv_role_technologies(result["cv_markdown"])
+        if career_source_path is not None:
+            try:
+                validate_career_coverage(result["cv_markdown"], career_source_path)
+            except CareerCoverageError as exc:
+                raise ApplicationError(str(exc)) from exc
         if vacancy is not None:
             _validate_cv_headline(result["cv_markdown"], vacancy)
     if "cover_letter_markdown" in result:
@@ -1636,6 +1655,7 @@ def _package_is_current(
     expected_versions: Mapping[str, Any],
     *,
     document: str | None = None,
+    career_source_path: Path | None = None,
 ) -> bool:
     if not op.exists(manifest_path):
         return False
@@ -1644,6 +1664,13 @@ def _package_is_current(
     except ApplicationError:
         return False
     document = _normalize_document(document)
+    if career_source_path is not None and "cv" in _selected_documents(document):
+        try:
+            validate_career_coverage(
+                op.read_text(application_dir / "cv.md"), career_source_path,
+            )
+        except (CareerCoverageError, OSError):
+            return False
     quality = manifest.get("quality", {})
     quality_documents = quality.get("documents", {}) if isinstance(quality, Mapping) else {}
     for name in _selected_documents(document):

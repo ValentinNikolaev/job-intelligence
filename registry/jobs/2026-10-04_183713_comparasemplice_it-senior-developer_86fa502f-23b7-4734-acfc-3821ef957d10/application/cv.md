@@ -7,7 +7,7 @@ LinkedIn: https://linkedin.com/in/valentinnikolaev · GitHub: https://github.com
 
 ## Summary
 
-Senior backend engineer con oltre 15 anni di esperienza nello sviluppo di sistemi in produzione in PHP e Go. Lavoro su API, integrazioni, database SQL, automazione e sistemi event-driven, con attenzione concreta a sicurezza dei dati, affidabilità e manutenibilità. L'esperienza recente combina ownership tecnica di integrazioni PHP/Laravel per analytics e servizi esterni con piattaforme di supporto basate su API e canali conversazionali. Cerco un ruolo hands-on in cui contribuire alla progettazione e all'evoluzione di prodotti digitali affidabili.
+Senior backend engineer con oltre 15 anni di esperienza nello sviluppo di sistemi in produzione in PHP e Go. Lavoro su API, integrazioni, database SQL e sistemi event-driven, con attenzione a sicurezza, affidabilità e manutenibilità. L'esperienza recente combina responsabilità tecnica su analytics e integrazioni PHP/Laravel con piattaforme di supporto basate su API e canali conversazionali.
 
 ## Skills
 
@@ -15,36 +15,57 @@ Senior backend engineer con oltre 15 anni di esperienza nello sviluppo di sistem
 
 **Dati e integrazioni:** PostgreSQL, MySQL, EventBridge, webhook
 
-**Piattaforma e delivery:** AWS, Kubernetes, GitHub Actions, CI/CD
-
-**Affidabilità e progettazione:** sistemi event-driven, RabbitMQ, monitoraggio
+**Piattaforma e affidabilità:** AWS, Kubernetes, GitHub Actions, CI/CD, RabbitMQ, monitoraggio
 
 ## Experience
 
-### Simple.life — Software Developer | 2023–2026
+### Simple.life — Software Developer | November 2023 – 2026
 
-- Progettato e portato in produzione una piattaforma di chiamate outbound su Amazon Connect, con architettura backend, controlli di accesso e protezioni per dati personali sottoposti a security sign-off.
-- Realizzato un gateway Go multi-tenant che astrae Intercom e Zendesk dietro un modello eventi comune, con contratti OpenAPI, webhook e adapter per entrambi i servizi, abilitando la prima demo B2B dell'azienda per il prodotto di supporto AI.
-- Consolidato tre pipeline Snowflake–Intercom in un unico motore riutilizzabile, rimuovendo il limite di 100 elementi al giorno e le riletture quotidiane dell'intera cronologia senza interruzioni del servizio.
-- Sviluppato strumenti backend per annullamenti, rimborsi, categorizzazione e gestione delle recensioni per il supporto clienti.
+- Progettato e portato in produzione una piattaforma outbound su Amazon Connect, con architettura backend e protezioni dei dati personali sottoposte a security sign-off.
+- Realizzato un gateway Go per Intercom e Zendesk con contratti OpenAPI e webhook, abilitando la prima demo B2B del prodotto di supporto AI.
+- Consolidato tre pipeline Snowflake–Intercom, eliminando il limite di 100 elementi giornalieri e le riletture della cronologia senza interruzioni del servizio.
 
-Technologies: Go, PostgreSQL, AWS, Amazon Connect, SQS, Kubernetes, Intercom API, Zendesk API, Snowflake, OpenAPI.
+Technologies: Go, PostgreSQL, AWS, Amazon Connect, Kubernetes, OpenAPI.
 
-### CRURATED — PHP Software Developer, incarico di consulenza part-time parallelo | 2024–2026
+### CRURATED — PHP Software Developer, consulenza part-time parallela | August 2024 – January 2026
 
-- Avuto piena responsabilità tecnica del DataLake e dell'analytics degli eventi in produzione, con throughput aumentato di oltre 10x secondo Grafana e osservazione operativa.
-- Reso modulare la configurazione dei nuovi stream analytics, riducendo l'avvio da alcuni giorni a meno di quattro ore.
-- Realizzato la pubblicazione parallela di versioni degli eventi in produzione, mantenendo la compatibilità durante l'evoluzione degli schemi.
-- Gestito tecnicamente l'integrazione Crutrade in produzione: autenticazione e OTP, collegamento account, import/export delle collezioni, verifica della proprietà degli acquisti e logging delle richieste e risposte.
+- Avuto piena responsabilità tecnica del DataLake e degli analytics in produzione, aumentando il throughput oltre 10x secondo Grafana e osservazione operativa.
+- Reso modulare l'avvio dei nuovi stream analytics, riducendolo da alcuni giorni a meno di quattro ore.
+- Realizzato la pubblicazione parallela delle versioni degli eventi, mantenendo la compatibilità durante l'evoluzione degli schemi in produzione.
 
-Technologies: PHP, Laravel, AWS, EventBridge, code, API REST, webhook, S3.
+Technologies: PHP, Laravel, AWS, EventBridge, API REST, webhook.
 
-### PDFfiller — Software Developer | 2016–2019
+### airSlate — Software Developer, responsabilità di backend lead | February 2021 – August 2023
 
-- Guidato cinque backend engineer nello sviluppo di un servizio di email transazionali ad alto volume.
-- Preparato il servizio per circa 3 milioni di email mensili e per picchi BFCM fino a dieci volte il traffico ordinario, con attenzione a capacità e affidabilità della messaggistica.
+- Guidato il lavoro sulle prestazioni API, riducendo i tempi medi di risposta di circa il 30%, con misurazioni in Prometheus.
+- Guidato il miglioramento delle pipeline CI/CD, accorciando i tempi di delivery di 11 minuti, circa il 70%.
+- Coordinato il lavoro backend e seguito le metriche del team, aumentando il ritmo di consegna delle funzionalità di circa il 20%.
 
-Technologies: PHP, Laravel, MySQL, RabbitMQ, infrastruttura email, DNS, DKIM, SPF, DMARC.
+Technologies: PHP, Laravel, MySQL, Prometheus, API REST, CI/CD.
+
+### Hyprr — Technical Lead | November 2019 – January 2021
+
+- Portato il prodotto dal prototipo alla closed beta in meno di sei mesi.
+- Definito con il CTO lo stack e la roadmap tecnologica, guidando lo sviluppo backend del prodotto con microservizi e serverless.
+
+Technologies: PHP, Go, Laravel, MySQL, AWS, microservizi.
+
+### PDFfiller — Software Developer | October 2016 – November 2019
+
+- Guidato cinque backend engineer nello sviluppo del servizio di email transazionali.
+- Preparato il servizio per circa 3 milioni di email mensili e picchi BFCM fino a 10x, curando capacità e affidabilità.
+
+Technologies: PHP, Laravel, MySQL, RabbitMQ, DNS, DKIM, SPF, DMARC.
+
+## Additional Experience
+
+Sixt — Senior Software Developer | December 2018 – November 2019
+
+Aurum Software — Senior Software Developer | November 2015 – November 2016
+
+Upwork freelance — Software Developer | July 2008 – September 2016
+
+CoinsBank/bit-x — Senior Software Developer | January 2014 – November 2015
 
 ## Education
 

@@ -65,10 +65,13 @@ makes the vacancy eligible for a new package, another document, or automatic wor
   credential, or the exact phrase "Zend Certified PHP Developer" anywhere in the
   generated CV, cover letter, application analysis, or interview preparation, even
   when source candidate records include it.
-- In the generated CV `Experience` section, include only roles and employment
-  experience from the most recent 10 years. Older experience may inform supported
-  skills, chronology, or interview preparation only when relevant, but must not appear
-  as dated Experience entries in the CV.
+- Preserve every documented employer and engagement in the generated CV. Tailor
+  the bullets and emphasis without deleting companies. Detailed `Experience`
+  focuses on the most recent ten years; represent older or briefly covered work
+  in dated `Additional Experience` or `Earlier Experience` entries with employer
+  and role. Never sacrifice employer coverage for relevance, page count, age,
+  or insufficient achievement bullets. Keep genuine dates, overlaps, and supported
+  uncertainty; never extend employment or fabricate work to conceal a real gap.
 - When candidate sources conflict, report the conflict or preserve the uncertainty;
   do not silently choose the more favorable claim.
 - When a metric is unavailable, improve wording with a factual outcome instead of a
@@ -251,21 +254,21 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     Every displayed role needs at least two distinct source-backed outcome or
     decision bullets; each role ending within the last five years needs at
     least three. Recheck candidate sources before declaring a shortage. If
-    distinct facts remain unavailable, omit a nonessential older role or ask
-    the candidate a focused question and leave that package pending. Never
+    distinct facts remain unavailable, keep a dated chronology entry when detailed
+    bullets are unnecessary, or ask a focused question and leave the package pending. Never
     split one outcome to meet a quota. Sort roles by end date, newest first,
     and label overlapping work accurately.
-    Before approving Experience, enumerate the candidate-source roles within the
-    ten-year window in `cv_audit.role_coverage`. For each role record employer,
-    source period, source path, include/exclude decision, and a vacancy-specific
-    reason. Check this inventory against the final CV, including on regeneration;
+    Before approving the CV, enumerate every candidate-source employer and engagement
+    in `cv_audit.role_coverage`. For each record employer, source period, source path,
+    the final section and a reason for the chosen level of detail. Every employer
+    must remain included. Check this inventory against the final CV on regeneration;
     the previous tailored CV is not a complete career inventory. A recent role
     with relevant, verified outcomes must not disappear merely because another
     role already supplies enough bullets or because one claim was withdrawn.
     Exclude unsupported claims individually, retain the role's other supported
     evidence, and ask a focused question when a relevant role cannot meet the
-    minimum. The independent editor must review these inclusion and omission
-    decisions as well as the bullets that remain visible.
+    minimum. The independent editor must review complete employer coverage,
+    source-backed chronology, and level-of-detail decisions as well as final bullets.
 6. In the combined audit pass, run an ATS keyword gap analysis: top 15 prominent CV
    terms, matches, fully missing required terms, underrepresented supported terms, and
    vacancy terms that must not be added because the candidate evidence does not support

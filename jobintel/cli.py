@@ -372,6 +372,9 @@ def _main(argv: list[str] | None = None) -> int:
                     directory,
                     draft_directory,
                     document=args.document,
+                    career_source_path=(registry_dir / "candidate" / "linkedin-profile.md")
+                    if ((registry_dir / "candidate" / "linkedin-profile.md").is_file()
+                        or (registry_dir.parent / ".git").exists()) else None,
                 )
             except Exception as exc:
                 failures.append(str(exc))

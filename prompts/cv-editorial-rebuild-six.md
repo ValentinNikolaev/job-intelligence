@@ -77,8 +77,11 @@ consequence, or convert an unsupported metric into an achievement.
 - Use only `verified` evidence-bank entries backed by `registry/candidate/*.md`.
 - Preserve the confirmed Simple.life date/title treatment and PHP attribution rules.
 - Retain at least two distinct substantive bullets for every displayed role and at
-  least three for each role ending in the last five years. Omit a role if evidence
-  cannot satisfy this without filler.
+  least three for each role ending in the last five years. Preserve every employer
+  and engagement with source-backed dates in Experience or Additional/Earlier
+  Experience. Never omit a company. If verified evidence cannot support the
+  detailed-role minimum without filler, retain its dated chronology entry or
+  ask for the missing facts before publishing a detailed role.
 - Keep reverse chronology, role dates, vacancy-specific skills, and a maximum of two
   visually readable pages.
 - Use PHP for Simple.life only in Technologies unless a direct source confirms a
