@@ -835,9 +835,12 @@ sources:
     board_url: https://careers.laserromae.it/jobs
     company_url: https://careers.laserromae.it
     source_type: company careers page
+    ats: bizneo
     title_terms: *id001
-    notes: Rome operational office; the Go Developer opening is in Milan, while Back End Developer roles include Rome
-      and Milan. TLS certificate currently fails verification; no source-level location override.
+    notes: Rome operational office. Bizneo visible publication dates feed the shared freshness prefilter;
+      a missing year is inferred as the latest non-future occurrence and marked in metadata.
+      Go Developer lists Milan in the header but Rome in the body; no source-level location override.
+      TLS certificate currently fails verification.
   - name: proxima-group
     company: Proxima Group
     board_url: https://proximagroup.eu/join-pro/

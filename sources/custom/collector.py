@@ -8,6 +8,7 @@ import time
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
+from datetime import date, datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from threading import Lock
@@ -483,12 +484,18 @@ def normalize_linked_job(
     url: str,
     page: PageData,
     analysis_priority: int,
+    *,
+    now: datetime | None = None,
 ) -> NormalizedJob | None:
+    for job in parse_source_page(source, page, analysis_priority):
+        if _canonicalize_url(job.source_url) == _canonicalize_url(url):
+            return job
     description = page.description
     title = _best_title(label, page.title, description, source, url)
     description = description or f"{title} at {source.company}."
     if not _location_allowed(source, title, description, source.location):
         return None
+    published_at, date_metadata = _visible_publication_date(source, page, now=now)
     return NormalizedJob(
         source="custom",
         source_job_id=_job_identity(url),
@@ -499,9 +506,44 @@ def normalize_linked_job(
         description=description,
         location=source.location,
         remote=source.remote,
-        source_metadata=_metadata(source),
+        published_at=published_at,
+        source_metadata={**_metadata(source), **date_metadata},
         analysis_priority=analysis_priority,
     )
+
+
+def _visible_publication_date(
+    source: CustomSource, page: PageData, *, now: datetime | None = None,
+) -> tuple[str | None, dict[str, Any]]:
+    if source.ats != "bizneo":
+        return None, {}
+    match = re.search(
+        r"\bPubblicata\s+(\d{1,2})\s+di\s+"
+        r"(Gennaio|Febbraio|Marzo|Aprile|Maggio|Giugno|Luglio|Agosto|Settembre|Ottobre|Novembre|Dicembre)"
+        r"\b(?:\s+(\d{4})\b)?", page.description, re.IGNORECASE,
+    )
+    if match is None:
+        return None, {}
+    months = (
+        "gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno",
+        "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre",
+    )
+    month = months.index(match[2].casefold()) + 1
+    reference = (now or datetime.now(timezone.utc)).date()
+    metadata: dict[str, Any] = {"publication_date_text": match[0]}
+    years = [int(match[3])] if match[3] else range(reference.year, reference.year - 5, -1)
+    for year in years:
+        try:
+            published = date(year, month, int(match[1]))
+        except ValueError:
+            continue
+        if match[3] or published <= reference:
+            if not match[3]:
+                # Latest possible past date is an upper bound, not a confirmed year.
+                metadata["publication_date_year_inferred"] = True
+                metadata["publication_date_basis"] = "latest_non_future_occurrence"
+            return published.isoformat(), metadata
+    return None, metadata
 
 
 def create_collector(config: Mapping[str, str]) -> CustomCollector:

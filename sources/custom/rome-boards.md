@@ -37,9 +37,16 @@ without inventing a publication date or asserting a fresh opening.
 
 The visible source descriptions remain authoritative. In particular:
 
-- Laser Romae has a Rome office, but its Go Developer posting is in Milan.
+- Laser Romae has a Rome office. Its Go Developer posting lists Milan in the
+  header but Rome (hybrid) in the body, so the role location is contradictory.
   [Office](https://www.laserromae.it/dove-siamo/) and
   [careers board](https://careers.laserromae.it/jobs) support separate facts.
+  A 2026-10-05 diagnostic snapshot of the linked job pages shows `Pubblicata
+  28 di Maggio` for Go Developer and `Pubblicata 9 di Febbraio` for Back End
+  Developer in Rome, with no publication year. Both exceed the seven-day
+  freshness window even under the latest possible non-future year. The Bizneo
+  parser now records these dates and their year inference for the shared prefilter.
+  Collection still rejects the expired TLS certificate.
 - Gruppo FOS has a [Rome office](https://www.gruppofos.it/contatti/), while
   its PHP/Python Junior Software Developer advertisement specifies Genova.
   Its bounded seed excludes Java and Rome listings elsewhere on the board.

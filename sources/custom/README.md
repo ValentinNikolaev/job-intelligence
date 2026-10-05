@@ -5,6 +5,15 @@ API is available. Jobs collected here are treated as direct company-board leads:
 they use `source: custom`, receive `analysis_priority: 100`, and have the highest
 source precedence because these pages are more authoritative than aggregators.
 
+Linked detail pages retain matching JSON-LD `JobPosting` metadata, including
+`datePosted`, instead of losing it in the visible-text fallback. Sources configured
+with `ats: bizneo` also parse Italian `Pubblicata <day> di <month> [year]` text.
+When the year is absent, `published_at` uses the latest non-future occurrence
+(an upper bound on the actual date), with the original text and inference basis
+preserved in source metadata. This lets the existing seven-day prefilter reject
+old advertisements without claiming a confirmed publication year or closed role.
+Missing or invalid dates remain unknown; TLS verification is still required.
+
 Edit [`config.yaml`](config.yaml):
 
 ```yaml

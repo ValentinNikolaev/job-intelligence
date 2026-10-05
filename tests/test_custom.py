@@ -18,6 +18,7 @@ from urllib.request import Request
 import yaml
 
 from jobintel.models import NormalizedJob
+from jobintel.prefilter import prefilter_job
 from jobintel.registry import Registry
 
 
@@ -55,6 +56,75 @@ class FakeResponse:
 
 
 class CustomCollectorTests(unittest.TestCase):
+    def test_bizneo_visible_dates_reach_stale_prefilter(self) -> None:
+        source = CustomSource(
+            name="laser-romae", company="Laser Romae",
+            board_url="https://careers.laserromae.it/jobs", ats="bizneo",
+        )
+        now = datetime(2026, 10, 5, tzinfo=timezone.utc)
+        for title, slug, text, expected in (
+            ("Go Developer", "go-developer", "28 di Maggio", "2026-05-28"),
+            ("Back End Developer", "back-end-developer", "9 di Febbraio", "2026-02-09"),
+        ):
+            with self.subTest(title=title):
+                url = source.board_url + "/" + slug
+                parser = custom_module._PageParser(url)
+                parser.feed(f"<h1>{title}</h1><span>Pubblicata <i>{text}</i></span><p>Build APIs.</p>")
+                job = custom_module.normalize_linked_job(source, title, url, parser.page_data(), 100, now=now)
+                self.assertEqual(expected, job.published_at)
+                self.assertEqual("Pubblicata " + text, " ".join(job.source_metadata["publication_date_text"].split()))
+                self.assertTrue(job.source_metadata["publication_date_year_inferred"])
+                rejection = prefilter_job(job, now=now)
+                self.assertIsNotNone(rejection)
+                self.assertEqual("stale", rejection.category)
+
+    def test_bizneo_fresh_date_and_year_rollover(self) -> None:
+        source = CustomSource(name="acme", company="Acme", board_url="https://acme.test/jobs", ats="bizneo")
+        for now, text, expected in (
+            (datetime(2026, 10, 5, tzinfo=timezone.utc), "2 di OTTOBRE", "2026-10-02"),
+            (datetime(2026, 1, 2, tzinfo=timezone.utc), "31 di Dicembre", "2025-12-31"),
+        ):
+            with self.subTest(text=text):
+                job = custom_module.normalize_linked_job(
+                    source, "Go Developer", source.board_url + "/go",
+                    PageData(description="Pubblicata " + text + "\nBuild APIs."), 100, now=now,
+                )
+                self.assertEqual(expected, job.published_at)
+                self.assertIsNone(prefilter_job(job, now=now))
+
+    def test_bizneo_explicit_year_leap_day_invalid_and_missing_dates(self) -> None:
+        source = CustomSource(name="acme", company="Acme", board_url="https://acme.test/jobs", ats="bizneo")
+        now = datetime(2026, 10, 5, tzinfo=timezone.utc)
+        for text, expected in (
+            ("Pubblicata 9 di Febbraio 2024", "2024-02-09"),
+            ("Pubblicata 29 di Febbraio", "2024-02-29"),
+            ("Pubblicata 31 di Febbraio", None),
+            ("Pubblicata 29 di Febbraio 2025", None),
+            ("Build APIs. Deadline 9 di Febbraio", None),
+        ):
+            with self.subTest(text=text):
+                published, metadata = custom_module._visible_publication_date(source, PageData(description=text), now=now)
+                self.assertEqual(expected, published)
+                if "2024" in text:
+                    self.assertNotIn("publication_date_year_inferred", metadata)
+        source = CustomSource(name="other", company="Other", board_url=source.board_url)
+        self.assertEqual((None, {}), custom_module._visible_publication_date(
+            source, PageData(description="Pubblicata 9 di Febbraio"), now=now,
+        ))
+
+    def test_linked_detail_preserves_matching_json_ld_date_and_location(self) -> None:
+        source = CustomSource(name="acme", company="Acme", board_url="https://acme.test/jobs", title_terms=("backend",))
+        url = source.board_url + "/backend"
+        page = PageData(description="Visible fallback", json_ld_jobs=(
+            {"@type": "JobPosting", "title": "Backend Engineer", "url": url + "-other", "datePosted": "2026-10-04"},
+            {"@type": "JobPosting", "title": "Backend Engineer", "url": url, "datePosted": "2026-02-09",
+             "description": "Build reliable APIs.", "jobLocation": {"address": {"addressLocality": "Roma"}}},
+        ))
+        job = custom_module.normalize_linked_job(source, "Backend Engineer", url, page, 100)
+        self.assertEqual("2026-02-09", job.published_at)
+        self.assertEqual("Roma", job.location)
+        self.assertEqual("Build reliable APIs.", job.description)
+
     def test_scoped_seeds_isolate_roles_and_keep_distinct_stable_ids(self) -> None:
         source = CustomSource(name="acme", company="Acme", board_url="https://acme.test/jobs")
         page = PageData(description=(
@@ -108,6 +178,7 @@ class CustomCollectorTests(unittest.TestCase):
             self.assertFalse(sources[name].location_terms)
             self.assertFalse(sources[name].exclude_location_terms)
         self.assertIsNone(sources["laser-romae"].location)
+        self.assertEqual("bizneo", sources["laser-romae"].ats)
         self.assertEqual("Genova", sources["gruppo-fos"].location)
         for name in ("proxima-group", "iptsat", "aryon-solutions", "labica"):
             self.assertFalse(sources[name].seed_jobs)
