@@ -1,27 +1,31 @@
 # Match Analysis
 
-**Score:** 84/100
-**Recommendation:** Strong Match
+**Score:** 78/100
+**Recommendation:** Match
 
-Strong PHP/Laravel full-stack and business-process automation fit with REST, databases, optimization, and architecture evidence; Vue or React depth and Ukrainian collaboration context need confirmation.
+Strong PHP/Laravel, PostgreSQL, REST, architecture, and product-automation fit; frontend framework depth and explicit AI-development workflow remain unverified.
 
 ## Why it matches
 
-- PHP and Laravel
-- REST APIs
-- database optimization
-- product and architecture work
+- PHP/Laravel, PostgreSQL, REST APIs, queues, and production optimization are relevant.
+- Product architecture, mentoring, CI/CD, and business-process automation experience transfer well.
+- Remote or hybrid format is potentially compatible with Italy.
 
 ## Gaps
 
-- Specific Vue or React implementation evidence is limited
+- Vue/React and current JavaScript frontend work are not evidenced.
+- AI tools in a daily development workflow are not explicitly documented.
 
 ## Concerns
 
-- Hybrid/remote availability and gig-contract details need confirmation
+- The advertised middle level may underuse the candidate's senior/lead experience.
+- Ukrainian gig-contract terms and work authorization need confirmation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP and Laravel development | critical / stated | strong | Middle Full-Stack Developer (PHP / Laravel / Vue / React) | Laravel | / |
+| Vue or React and JavaScript ES6+ | critical / stated | unknown | Vue.js |  | The candidate sources do not establish the requested frontend framework experience. / Verify recent frontend delivery before treating the role as full-stack. |
+| PHP and Laravel | critical / stated | strong | Laravel | Laravel | Exact Laravel duration is not consolidated in the profile. / Confirm recent Laravel version and ownership. |
+| AI tools in development workflow | high / stated | unknown | AI-інструментів |  | AI product work is not evidence of using coding assistants in the requested workflow. / Confirm tools, task delegation, and review safeguards. |
+| PostgreSQL and REST/OpenAPI | high / stated | strong | PostgreSQL | EventBridge | OpenAPI/Swagger is not directly evidenced. / Provide API contract and data-model examples. |

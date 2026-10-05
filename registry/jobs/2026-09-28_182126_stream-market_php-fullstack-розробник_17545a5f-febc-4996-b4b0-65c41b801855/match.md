@@ -1,27 +1,31 @@
 # Match Analysis
 
-**Score:** 78/100
+**Score:** 79/100
 **Recommendation:** Match
 
-Strong PHP and Laravel alignment with relevant API, performance, architecture, and product-development experience; Vue, WebSocket, and Ukrainian-language evidence need confirmation.
+Strong PHP/Laravel backend, API, database, architecture, and optimization fit; Vue, WebSocket, and recent full-stack evidence remain material uncertainties.
 
 ## Why it matches
 
-- PHP and Laravel backend experience
-- API integrations
-- performance optimization
-- technical leadership
+- Long PHP/Laravel and backend experience with product and architecture ownership.
+- MySQL, REST/API integrations, performance optimization, and complex business logic are relevant.
+- Technical leadership and system-design evidence fit the senior/tech-lead path.
 
 ## Gaps
 
-- WebSocket and current Vue depth are not established in the candidate profile
+- Vue or another modern frontend framework is not established.
+- WebSocket and e-commerce domain experience are not explicit.
 
 ## Concerns
 
-- Salary and employment details are unspecified
+- The role expects meaningful frontend contribution in addition to backend depth.
+- Ukrainian remote employment terms are not fully specified for an Italy-based candidate.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Laravel backend development | critical / stated | strong | Обов’язковий досвід роботи з Laravel 3+ років | Laravel | / |
+| Vue or comparable frontend framework | critical / stated | unknown | Досвід роботи з Vue.js або подібними front-end фреймворками 2+ років |  | No candidate evidence establishes the required frontend duration. / Request a recent frontend example before relying on full-stack fit. |
+| PHP and Laravel experience | critical / stated | strong | Обов’язковий досвід роботи з Laravel 3+ років | Laravel | The exact continuous Laravel duration is not stated in one record. / Confirm recent Laravel projects and version depth. |
+| Architecture and technical decisions | high / stated | partial | Участь у розробці та розвитку ERP системи | technological plan | ERP domain experience is not established. / Map comparable business-process and data-model work. |
+| MySQL, APIs, integrations, and performance | high / stated | strong | Досвід роботи з базами даних MySQL (проєктування структури, оптимізація запитів, індексація) | performance bottlenecks | WebSocket-specific experience is not shown. / Confirm real-time integration work. |

@@ -1,30 +1,30 @@
 # Match Analysis
 
-**Score:** 87/100
+**Score:** 84/100
 **Recommendation:** Strong Match
 
-Excellent lead-backend alignment with Go, architecture, small-team mentoring, AWS/Kubernetes, observability, and product-impact ownership.
+Worldwide remote availability removes the regional uncertainty while the candidate matches the lead-backend, Go, architecture, leadership, AWS, Kubernetes, and reliability core.
 
 ## Why it matches
 
-- Go leadership
-- high-load/reliability mindset
-- Kubernetes/AWS
-- mentoring
+- Documented technical leadership, mentoring, architecture, and direct ownership.
+- Go backend, event-driven systems, AWS, Kubernetes, CI/CD, and performance work align.
+- Worldwide remote framing is compatible with the candidate's Italy location.
 
 ## Gaps
 
-- Redis
-- gaming/iGaming
-- and ClickHouse are not explicit
+- Redis and gaming/iGaming experience are not explicitly evidenced.
+- Exact English level and salary expectations are unknown.
 
 ## Concerns
 
-- Confirm Barcelona/Warsaw hybrid expectation versus remote from Italy
+- The role is transaction- and latency-critical; direct gaming-platform experience would reduce onboarding risk.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Technical lead and active backend coding | critical / stated | strong | близько 60–70% часу — це безпосереднє написання коду | Directly managed 10 developers. Influenced all areas of Product Development | / |
-| Go, distributed systems, and operations | high / stated | strong | Golang | Go | / |
+| Five-plus years of Go or Node backend development | critical / stated | strong | 5+ років | Go-based support automation platform | The profile does not summarize total Go years in one statement. / Confirm the commercial Go timeline. |
+| Technical leadership and mentoring | critical / stated | strong | технічного лідерства | Directly managed 10 developers. | The advertised team is smaller than the candidate's documented team. / Emphasize hands-on mentoring and coding in a small team. |
+| High-load distributed systems | high / stated | strong | Сильна експертиза в роботі з високонавантаженими та розподіленими системами. | EventBridge | Gaming-specific latency and transaction semantics are not documented. / Test understanding of low-latency consistency and failure trade-offs. |
+| AWS, Docker, Kubernetes, and CI/CD | high / stated | strong | Досвід роботи з Docker та Kubernetes. | Kubernetes | Docker is not named in this evidence line, although containerized Kubernetes work is. / Confirm Docker-based local and production workflows. |
