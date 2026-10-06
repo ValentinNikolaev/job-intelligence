@@ -10,6 +10,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from jobintel.job_alerts import JobAlertCollector, normalize_batch
+from jobintel.arc_alerts import go_php_cards, resolve_tracking
 from jobintel.registry import Registry
 
 
@@ -33,6 +34,98 @@ def batch(source="reteinformaticalavoro", *, html=False):
 
 
 class JobAlertsTests(unittest.TestCase):
+    def test_arc_resolution_never_follows_final_destination_or_account_links(self):
+        from unittest.mock import Mock
+        opener = Mock()
+        response = Mock(code=302, headers={"Location": "https://arc.dev/t/remote-jobs/senior-php-ab12cd3456?utm=email"})
+        opener.open.return_value = response
+        url = "http://url8035.arc.dev/ls/click?upn=private"
+        self.assertEqual(resolve_tracking(url, opener=opener), "https://arc.dev/dashboard/d/remote-jobs/ab12cd3456")
+        self.assertEqual(opener.open.call_count, 1)
+        request = opener.open.call_args.args[0]
+        self.assertEqual(request.get_method(), "HEAD")
+        self.assertTrue(request.full_url.startswith("https://url8035.arc.dev/ls/click?"))
+        for destination in ("https://evil.test/job", "https://arc.dev/profile", "https://url8035.arc.dev/wf/unsubscribe?upn=private", url):
+            response.headers = {"Location": destination}
+            with self.subTest(destination=destination), self.assertRaises(ValueError):
+                resolve_tracking(url, opener=opener)
+
+    def test_arc_digest_selects_card_stack_not_subject_or_greeting(self):
+        php = '<a href="https://url8035.arc.dev/ls/click?upn=php"><p>Example</p><p>4 days ago</p><p>Backend Engineer</p><p>Permanent</p><p>PHP</p></a>'
+        python = php.replace('upn=php', 'upn=python').replace('<p>PHP</p>', '<p>Python</p>')
+        selected, skipped = go_php_cards('<p>New Golang Job Recommendations</p>'+php+python)
+        self.assertEqual(len(selected), 1)
+        self.assertEqual(skipped, 1)
+        self.assertEqual(selected[0]["company"], "Example")
+
+    def test_arc_resolved_link_receipt_and_full_posting_grounding(self):
+        data = self.arc_batch()
+        email = data["emails"][0]
+        job = email["jobs"][0]
+        direct = job["source_url"]
+        tracking = "https://url8035.arc.dev/ls/click?upn=private"
+        email["body_html"] = email["body_html"].replace(direct, tracking)
+        email["resolved_links"] = {tracking: direct}
+        page = 'Example Company\nSenior PHP Developer\nRemote\nRequirements: PHP Laravel\nBenefit: https://example.test/benefits'
+        job.update(posting_text=page, description=page, remote_working="Remote")
+        del job["published_date"]
+        del job["location"]
+        normalized, = normalize_batch(data, "arc")
+        self.assertEqual(normalized.source_metadata["description_scope"], "posting_text")
+        self.assertIn("posting_text_sha256", normalized.source_metadata)
+        self.assertNotIn("private", json.dumps(asdict(normalized)))
+        job["description"] += '\nInvented requirement'
+        with self.assertRaises(ValueError): normalize_batch(data, "arc")
+        job["description"] = page
+        email["resolved_links"] = {tracking+'missing': direct}
+        with self.assertRaises(ValueError): normalize_batch(data, "arc")
+
+    def arc_batch(self):
+        data = batch("indeed", html=True)
+        email = data["emails"][0]
+        email["sender"] = "Arc <talent@arc.dev>"
+        old_url = email["jobs"][0]["source_url"]
+        url = "https://arc.dev/t/remote-jobs/example-senior-php-ab12cd3456?utm_source=mail#card"
+        email["body_html"] = email["body_html"].replace(old_url, url)
+        email["jobs"][0]["source_url"] = url
+        del email["jobs"][0]["remote_working"]
+        return data
+
+    def test_arc_direct_posting_and_exact_sender(self):
+        data = self.arc_batch()
+        job, = normalize_batch(data, "arc")
+        self.assertEqual(job.source_url, "https://arc.dev/dashboard/d/remote-jobs/ab12cd3456")
+        self.assertEqual(job.source_job_id, "ab12cd3456")
+        self.assertIsNone(job.remote)
+        for sender in ("support@arc.dev", "talent@arc.dev.evil.test", "talent@evil.test"):
+            data["emails"][0]["sender"] = sender
+            with self.subTest(sender=sender), self.assertRaises(ValueError):
+                normalize_batch(data, "arc")
+
+    def test_arc_rejects_non_posting_and_unresolved_tracking_links(self):
+        for url in ("https://arc.dev/profile", "https://arc.dev/remote-jobs",
+                    "https://arc.dev/remote-jobs/j/", "https://evil.test/remote-jobs/j/example",
+                    "https://url8035.arc.dev/ls/click?upn=private",
+                    "https://arc.dev/remote-jobs/j/example/extra"):
+            data = self.arc_batch()
+            email = data["emails"][0]
+            old = email["jobs"][0]["source_url"]
+            email["body_html"] = email["body_html"].replace(old, url)
+            email["jobs"][0]["source_url"] = url
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                normalize_batch(data, "arc")
+
+    def test_arc_relative_age_cannot_become_publication_date(self):
+        data = self.arc_batch()
+        email = data["emails"][0]
+        email["body_html"] += "<p>4 days ago</p>"
+        email["jobs"][0]["published_date"] = "4 days ago"
+        with self.assertRaises(ValueError):
+            normalize_batch(data, "arc")
+        del email["jobs"][0]["published_date"]
+        job, = normalize_batch(data, "arc")
+        self.assertIsNone(job.published_at)
+
     def test_both_sources_normalize_text_and_html_without_tracking(self):
         for source in ("reteinformaticalavoro", "indeed"):
             for html in (False, True):

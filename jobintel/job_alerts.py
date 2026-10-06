@@ -77,6 +77,13 @@ def _posting(value: str, source: str) -> tuple[str, str]:
     url = urlsplit(value)
     if url.scheme not in {"http", "https"} or url.username or url.password or url.port not in {None, 443}:
         raise ValueError("invalid vacancy URL")
+    if source == "arc":
+        if url.hostname not in {"arc.dev", "www.arc.dev"}:
+            raise ValueError("expected a direct Arc vacancy URL; tracking links need resolution")
+        match = re.fullmatch(r"(?:/t/remote-jobs/[A-Za-z0-9_-]+-|/dashboard/d/remote-jobs/)([a-z0-9]{10})/?", url.path)
+        if not match:
+            raise ValueError("expected an Arc posting route with a stable ID, not an account or search link")
+        return match[1], f"https://arc.dev/dashboard/d/remote-jobs/{match[1]}"
     if source == "indeed":
         if url.hostname == "cts.indeed.com":
             # Decode the embedded destination offline; never follow tracking links.
@@ -121,7 +128,7 @@ def _date(value: str) -> str:
 
 
 def normalize_batch(payload: Any, source: str) -> list[NormalizedJob]:
-    if source not in {"reteinformaticalavoro", "indeed"}:
+    if source not in {"reteinformaticalavoro", "indeed", "arc"}:
         raise ValueError("unsupported Job Alert source")
     if not isinstance(payload, dict) or set(payload) != {"schema_version", "emails"}:
         raise ValueError("expected schema_version and emails")
@@ -145,12 +152,15 @@ def normalize_batch(payload: Any, source: str) -> list[NormalizedJob]:
 
 def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
     required = {"message_id", "sender", "subject", "received_at", "jobs"}
-    if not isinstance(email, dict) or not required <= set(email) or set(email) - required - {"body_html", "body_text"}:
+    allowed_email = {"body_html", "body_text"} | ({"resolved_links"} if source == "arc" else set())
+    if not isinstance(email, dict) or not required <= set(email) or set(email) - required - allowed_email:
         raise ValueError("invalid email envelope fields")
     message_id = _text(email["message_id"], "message_id")
     sender = parseaddr(_text(email["sender"], "sender"))[1]
+    if source == "arc" and sender.lower() != "talent@arc.dev":
+        raise ValueError("Arc alerts must come from talent@arc.dev")
     sender_domains = ({"indeed.com", "jobalert.indeed.com", "match.indeed.com"} if source == "indeed"
-                      else {"reteinformaticalavoro.it"})
+                      else {"arc.dev"} if source == "arc" else {"reteinformaticalavoro.it"})
     if sender.lower().rsplit("@", 1)[-1] not in sender_domains or "@" not in sender:
         raise ValueError("unexpected sender domain")
     _text(email["subject"], "subject")
@@ -169,10 +179,20 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
         body = _text(email["body_text"], "body_text")
         evidence = _spaces(body)
         links = [url.rstrip(".,;)>]") for url in re.findall(r"https?://[^\s<]+", body)]
+    resolved = email.get("resolved_links", {})
+    if not isinstance(resolved, dict):
+        raise ValueError("resolved_links must map original Arc card links to checked destinations")
+    for original, destination in resolved.items():
+        tracking = urlsplit(original)
+        if (original not in links or tracking.hostname != "url8035.arc.dev" or tracking.path != "/ls/click"
+                or tracking.scheme not in {"http", "https"} or tracking.username or tracking.password
+                or tracking.port not in {None, 443} or set(parse_qs(tracking.query)) != {"upn"}):
+            raise ValueError("resolved Arc link is not an original supported tracking link")
+        _posting(_text(destination, "resolved destination"), "arc")
     posting_ids: set[str] = set()
     for link in links:
         try:
-            posting_ids.add(_posting(link, source)[0])
+            posting_ids.add(_posting(resolved.get(link, link), source)[0])
         except ValueError:
             continue
     if not posting_ids:
@@ -183,41 +203,52 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
     for item in email["jobs"]:
         required_job = {"title", "company", "source_url", "description"}
         optional = {"location", "employment_type", "remote_working", "published_date"}
-        if not isinstance(item, dict) or not required_job <= set(item) or set(item) - required_job - optional:
+        page_keys = {"posting_text"} if source == "arc" else set()
+        if not isinstance(item, dict) or not required_job <= set(item) or set(item) - required_job - optional - page_keys:
             raise ValueError("invalid job fields")
         job_id, source_url = _posting(_text(item["source_url"], "source_url"), source)
         if job_id not in posting_ids:
             raise ValueError("vacancy link is absent from the original email")
         fields = {key: _text(item[key], key) for key in (required_job - {"source_url"}) | (set(item) & optional)}
+        posting_text = _text(item["posting_text"], "posting_text") if "posting_text" in item else None
+        if posting_text is not None:
+            for key in ("title", "company"):
+                if _spaces(fields[key]) not in evidence or _spaces(fields[key]) not in _spaces(posting_text):
+                    raise ValueError(f"posting text and original email must both contain {key}")
+        field_evidence = _spaces(posting_text) if posting_text is not None else evidence
         for key, value in fields.items():
-            if re.search(r"https?://|\b[^\s@]+@[^\s@]+\.[^\s@]+", value, re.I):
+            forbidden = r"\b[^\s@]+@[^\s@]+\.[^\s@]+" if key == "description" and posting_text else r"https?://|\b[^\s@]+@[^\s@]+\.[^\s@]+"
+            if re.search(forbidden, value, re.I):
                 raise ValueError(f"{key} must exclude email addresses and personal links")
-            if _spaces(value) not in evidence:
-                raise ValueError(f"{key} is not an exact excerpt from the email")
+            if _spaces(value) not in field_evidence:
+                raise ValueError(f"{key} is not an exact excerpt from the source evidence")
         for key in ("title", "company"):
             if _spaces(fields[key]) not in _spaces(fields["description"]):
                 raise ValueError(f"description must include the vacancy's {key}")
         remote_value = fields.get("remote_working")
         if remote_value is not None:
             allowed_remote = ({"Remoto", "Da remoto", "Lavoro da casa", "Ibrido", "In presenza"}
-                              if source == "indeed" else {"Totale", "Parziale", "No"})
+                              if source == "indeed" else {"Remote", "remote", "Hybrid", "hybrid", "On-site", "on-site"}
+                              if source == "arc" else {"Totale", "Parziale", "No"})
             if remote_value not in allowed_remote:
                 raise ValueError("unsupported remote_working evidence")
             if _spaces(remote_value) not in _spaces(fields["description"]):
                 raise ValueError("remote_working is absent from this vacancy excerpt")
-            if source != "indeed" and not re.search(r"Remote working\s*:\s*" + re.escape(remote_value) + r"\b", fields["description"], re.I):
+            if source == "reteinformaticalavoro" and not re.search(r"Remote working\s*:\s*" + re.escape(remote_value) + r"\b", fields["description"], re.I):
                 raise ValueError("remote_working needs a label in this vacancy excerpt")
         job = NormalizedJob(
             source=source, source_job_id=job_id, source_url=source_url,
             title=fields["title"], company=fields["company"], description=fields["description"],
             location=fields.get("location"), employment_type=fields.get("employment_type"),
-            remote=None if remote_value is None else remote_value not in {"No", "In presenza"},
+            remote=None if remote_value is None else remote_value not in {"No", "In presenza", "On-site", "on-site"},
             published_at=_date(fields["published_date"]) if "published_date" in fields else None,
             source_metadata={"channel": "job_alert_email", "message_id": message_id,
-                             "received_at": received.astimezone(timezone.utc).isoformat(), "description_scope": "email_excerpt",
+                             "received_at": received.astimezone(timezone.utc).isoformat(), "description_scope": "posting_text" if posting_text else "email_excerpt",
                              "remote_working": remote_value, "email_body_sha256": hashlib.sha256(body.encode()).hexdigest()},
             analysis_priority=100,
         )
+        if posting_text is not None:
+            job.source_metadata["posting_text_sha256"] = hashlib.sha256(posting_text.encode()).hexdigest()
         job.validate()
         jobs.append(job)
     return jobs
