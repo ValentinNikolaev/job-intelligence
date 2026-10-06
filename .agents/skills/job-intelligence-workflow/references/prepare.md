@@ -165,10 +165,17 @@ explicit single-document request, use the full-package flow below.
    - cover letter: receive this vacancy, final CV, verified `parts/research.md`, and only
      the candidate evidence required to ground the selected stories; invoke the
      highest installed version of `$write-cover-letter` in Draft mode and write only
-     `cover-letter.md`. In standard format it must contain four to six body paragraphs (three to six in compact), two distinct
-     evidence stories, and a company-specific hook grounded in verified research;
+     `cover-letter.md`. Read the user's current `social-promotion/social-voice.md`
+     and `social-promotion/employer-letter-flow.md` before composing. Select the
+     actual channel: `cover_letter.channel: email` uses 100–180 words and three
+     to four body paragraphs, with an editorial target of 100–130 body words.
+     Keep two supported abilities in the internal workbench; use at most one
+     brief visible example and explain relevance once. A natural purpose opening
+     is allowed for email. For an attachment, standard format uses four to six
+     body paragraphs (three to six in compact), two distinct evidence stories,
+     and a company-specific hook grounded in verified research;
      open with a role-specific proposition rather than the reusable "I am applying
-     for" formula. Name a past employer only when its identity makes a selected
+     for" formula for attachments. Name a past employer only when its identity makes a selected
      example clearer; do not retell the CV or imply a personal result from a
      platform-wide figure;
    - interview preparation: receive this vacancy, final CV,
@@ -200,6 +207,8 @@ explicit single-document request, use the full-package flow below.
     `workflow: two-wave`; cover-letter skill name, version, and completed workbench;
     two evidence stories with candidate sources; company-motivation fact and source URL;
     and final claim grounding plus cross-file consistency results.
+    Record the letter channel (email or attachment). Complete the canonical
+    employer-letter delivery check on the exact final text after simplifying.
 13. After the main consistency pass, run the fast deterministic lint first:
    `python run.py lint-application <vacancy-directory> --input
    .codex-work/application/<vacancy-directory> [--document <document>]`.

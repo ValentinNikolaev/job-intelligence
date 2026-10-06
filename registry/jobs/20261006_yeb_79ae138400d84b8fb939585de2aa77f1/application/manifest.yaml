@@ -1,7 +1,7 @@
 profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
 vacancy_version: sha256:c3221dc5b12e68098c3a018fc228026f0db131c656eb4d7cec2c025e0ece3bab
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:db1b91812177048f419f9449ce35321485345e172c2d9285bcc4d8de1cda0bf0
+prompt_version: sha256:e9e55870d7d51b69306b9f4765b39cc6be696e4a0d96664ea5244b0641a17198
 model: codex:gpt-6.1-sol:high
 analysis: &id001
   model: codex:gpt-5.6-luna:medium
@@ -10,7 +10,7 @@ analysis: &id001
   version: sha256:18db097ff346fc3b57374f815ea6cf03500f22d06274e1d294c6e903230dcbd4
 quality_contract_version: 2
 cv_export_stem: CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper
-generated_at: '2026-10-06T19:31:12Z'
+generated_at: '2026-10-06T20:54:56Z'
 documents:
   cv:
     profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
@@ -18,7 +18,11 @@ documents:
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:db1b91812177048f419f9449ce35321485345e172c2d9285bcc4d8de1cda0bf0
     model: codex:gpt-6.1-sol:high
-    analysis: *id001
+    analysis: &id002
+      model: codex:gpt-5.6-luna:medium
+      score: 77
+      analyzed_at: '2026-10-06T19:02:59Z'
+      version: sha256:18db097ff346fc3b57374f815ea6cf03500f22d06274e1d294c6e903230dcbd4
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper
     generated_at: '2026-10-06T19:31:12Z'
@@ -26,19 +30,19 @@ documents:
     profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
     vacancy_version: sha256:c3221dc5b12e68098c3a018fc228026f0db131c656eb4d7cec2c025e0ece3bab
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:db1b91812177048f419f9449ce35321485345e172c2d9285bcc4d8de1cda0bf0
+    prompt_version: sha256:e9e55870d7d51b69306b9f4765b39cc6be696e4a0d96664ea5244b0641a17198
     model: codex:gpt-6.1-sol:high
     analysis: *id001
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper
-    generated_at: '2026-10-06T19:31:12Z'
+    generated_at: '2026-10-06T20:54:56Z'
   analysis:
     profile_version: sha256:916a839c62c07bec18bd72f4c04b1bddd1d1409a96a303f8291c737a948a1e35
     vacancy_version: sha256:c3221dc5b12e68098c3a018fc228026f0db131c656eb4d7cec2c025e0ece3bab
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:db1b91812177048f419f9449ce35321485345e172c2d9285bcc4d8de1cda0bf0
     model: codex:gpt-6.1-sol:high
-    analysis: *id001
+    analysis: *id002
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper
     generated_at: '2026-10-06T19:31:12Z'
@@ -48,7 +52,7 @@ documents:
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:db1b91812177048f419f9449ce35321485345e172c2d9285bcc4d8de1cda0bf0
     model: codex:gpt-6.1-sol:high
-    analysis: *id001
+    analysis: *id002
     quality_contract_version: 2
     cv_export_stem: CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper
     generated_at: '2026-10-06T19:31:12Z'
@@ -61,8 +65,8 @@ quality:
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: f28fdb52a3d04b1616980b3d9787317b2475a240ae03f8bddf0d09fcd864b04f
     cover-letter:
-      word_count: 226
-      sha256: sha256:d3e62b35a027e0a6416c69379e4a114ebe22c94e162821005cf1de44433a2ec2
+      word_count: 114
+      sha256: sha256:896284e29c3dbdd751510957943cc1536164b63c01529c2afb24db36be39ee67
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: f28fdb52a3d04b1616980b3d9787317b2475a240ae03f8bddf0d09fcd864b04f
     analysis:
@@ -78,7 +82,7 @@ quality:
   document_format: compact
   grounding:
     schema_version: 1
-    sha256: f0961eed53789b6ce6a939e5807523ed0ff825f1c5ac4d5649e2447afa880b19
+    sha256: 1fed85afebd6529990bd6fc6d5aba84eff04432a64d6e5ab9f34b01ed5c418e5
     evidence_bank:
       schema_version: 1
       sha256: f28fdb52a3d04b1616980b3d9787317b2475a240ae03f8bddf0d09fcd864b04f
@@ -88,7 +92,7 @@ quality:
         retracted: 4
         unverified: 9
         verified: 59
-    claim_count: 32
+    claim_count: 30
     evidence_ids:
     - airslate-cicd-delivery
     - airslate-letter-lead-scope
@@ -249,7 +253,7 @@ quality:
           \ engagement so the overlap is not\n  misleading."
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
       status: verified
-      verification: &id002
+      verification:
         reviewer: Codex evidence-quality implementation review
         reviewed_at: '2026-09-22T22:01:45.004885+00:00'
         method: Compared verbatim extract and attribution to immutable candidate source;
@@ -388,7 +392,11 @@ quality:
       review_notes: Source-exact record reviewed; use only the recorded facts. Employment
         sections still obey the ten-year cutoff.
       status: verified
-      verification: *id002
+      verification: &id003
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
     - id: database-reliability
       employer: airSlate
       role: Software Developer
@@ -406,7 +414,7 @@ quality:
         Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
         and other source records.
       status: verified
-      verification: *id002
+      verification: *id003
     - id: email-bfcm
       employer: PDFfiller
       source:
@@ -443,7 +451,7 @@ quality:
         Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
         and other source records.
       status: verified
-      verification: *id002
+      verification: *id003
     - id: hyprr-user-confirmed
       employer: Hyprr
       source:
@@ -506,7 +514,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: &id003
+      attribution_source: &id004
         path: registry/candidate/user-confirmed-career-clarifications.md
         quote: '- **Role:** Software Developer'
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
@@ -539,7 +547,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -568,7 +576,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -610,7 +618,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -1202,10 +1210,11 @@ quality:
         - email-bfcm
         - pdffiller-user-confirmed
         verdict: approve
-    reviewer: Codex root cross-file self-review; independent CV editor /root/yeb_cv_evidence
+    reviewer: Codex root final letter-only grounding and employer-flow delivery review,
+      2026-10-06
     document_sha256:
       cv: sha256:b6328225b6b3dee56c417987886f4adf58e14fb7876fd47ea69d4aac3a574396
-      cover-letter: sha256:d3e62b35a027e0a6416c69379e4a114ebe22c94e162821005cf1de44433a2ec2
+      cover-letter: sha256:896284e29c3dbdd751510957943cc1536164b63c01529c2afb24db36be39ee67
       analysis: sha256:4a35d3a5fdbff5c67b6cbe6997e5568938077e6a30efe3539cd21cd2c9f8e038
       interview-preparation: sha256:09be53359b9c500320d4cbf45d9bcf8e532319dd0d0ab4cc402ac07bc662a324
     requirements:
@@ -1482,48 +1491,6 @@ quality:
       - cv-hyprr
       - crurated-confirmed-crutrade-production
       - airslate-user-confirmed-impact
-    - document: cover-letter
-      text: nei progetti e-commerce di Yeb posso contribuire alla parte PHP e alle
-        integrazioni, dall'analisi della richiesta al rilascio. Vi scrivo per la posizione
-        di Programmatore Senior PHP / Web developer.
-      evidence_ids:
-      - clarification-crurated
-      - crurated-confirmed-crutrade-production
-      - airslate-team-lead
-    - document: cover-letter
-      text: Per un'applicazione commerciale, collegare servizi significa anche gestire
-        correttamente identità e dati. In una recente integrazione in produzione ho
-        curato autenticazione, collegamento degli account e trasferimento delle collezioni,
-        con verifica della proprietà degli acquisti. È un'esperienza pertinente al
-        vostro lavoro di personalizzazione e integrazione delle piattaforme e-commerce.
-      evidence_ids:
-      - crurated-confirmed-crutrade-production
-    - document: cover-letter
-      text: Alla parte di sviluppo affianco l'organizzazione del lavoro del team.
-        Ho valutato e suddiviso attività backend, partecipato alla pianificazione
-        con prodotto e sviluppo e seguito gli incarichi fino al rilascio. Posso quindi
-        contribuire anche al confronto sulla fattibilità delle richieste e all'organizzazione
-        delle attività, oltre che all'implementazione.
-      evidence_ids:
-      - airslate-team-lead
-      - airslate-letter-lead-scope
-    - document: cover-letter
-      text: Mi interessa che nei vostri servizi lo sviluppo sia accompagnato da integrazioni,
-        assistenza e manutenzione. È un contesto in cui la mia esperienza può essere
-        utile anche dopo il primo rilascio. Il mio percorso è principalmente backend
-        e API, mentre l'esperienza specifica sulle vostre piattaforme va approfondita
-        insieme.
-      evidence_ids:
-      - career-15-years
-      - cv-hyprr
-      - support-platform-linkedin
-    - document: cover-letter
-      text: Posso iniziare entro una settimana. Vorrei inoltre sapere se per questa
-        posizione è possibile lavorare da remoto o in modalità ibrida. Allego il mio
-        CV e resto disponibile per un colloquio e per discutere il contributo che
-        potrei portare ai vostri progetti.
-      evidence_ids:
-      - yeb-availability-2026-10-06
     - document: analysis
       text: Вы подтвердили возможность начать через неделю и попросили уточнить remote
         или hybrid.
@@ -1554,13 +1521,61 @@ quality:
       text: PHP Software Developer, consulenza part-time, in parallelo a Simple.life
       evidence_ids:
       - clarification-crurated
-  declaration_sha256: sha256:86b3125c429d95bcdf61c249c7d9ef142cb654b93198213ca9af84b2fdff0f48
+    - document: cover-letter
+      text: vi scrivo per la posizione di Programmatore Senior PHP / Web developer.
+        Il mio lavoro si concentra sul backend PHP e sulle integrazioni tra applicazioni
+        e servizi.
+      evidence_ids:
+      - clarification-crurated
+    - document: cover-letter
+      text: Ho lavorato su integrazioni commerciali in produzione, comprese autenticazione
+        e gestione degli account. Accanto allo sviluppo, ho seguito la valutazione
+        delle richieste, la suddivisione delle attività e il lavoro del team fino
+        al rilascio. Sono aspetti su cui posso contribuire ai vostri progetti e‑commerce.
+      evidence_ids:
+      - crurated-confirmed-crutrade-production
+      - airslate-team-lead
+      - airslate-letter-lead-scope
+    - document: cover-letter
+      text: Posso iniziare entro una settimana. Vorrei sapere se per questa posizione
+        è possibile lavorare da remoto o in modalità ibrida. Allego il mio CV e resto
+        disponibile per un colloquio.
+      evidence_ids:
+      - yeb-availability-2026-10-06
+    document_receipts:
+      cv:
+        document_sha256: sha256:b6328225b6b3dee56c417987886f4adf58e14fb7876fd47ea69d4aac3a574396
+        claims_ledger_sha256: f0961eed53789b6ce6a939e5807523ed0ff825f1c5ac4d5649e2447afa880b19
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root cross-file self-review; independent CV editor /root/yeb_cv_evidence
+        declaration_sha256: sha256:86b3125c429d95bcdf61c249c7d9ef142cb654b93198213ca9af84b2fdff0f48
+      cover-letter:
+        document_sha256: sha256:896284e29c3dbdd751510957943cc1536164b63c01529c2afb24db36be39ee67
+        claims_ledger_sha256: 1fed85afebd6529990bd6fc6d5aba84eff04432a64d6e5ab9f34b01ed5c418e5
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root final letter-only grounding and employer-flow delivery
+          review, 2026-10-06
+        declaration_sha256: sha256:0f943a2ad09bb2ad523a05a0f25d743a96e6d11c7033482853553dc1d593e15d
+      analysis:
+        document_sha256: sha256:4a35d3a5fdbff5c67b6cbe6997e5568938077e6a30efe3539cd21cd2c9f8e038
+        claims_ledger_sha256: f0961eed53789b6ce6a939e5807523ed0ff825f1c5ac4d5649e2447afa880b19
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root cross-file self-review; independent CV editor /root/yeb_cv_evidence
+        declaration_sha256: sha256:86b3125c429d95bcdf61c249c7d9ef142cb654b93198213ca9af84b2fdff0f48
+      interview-preparation:
+        document_sha256: sha256:09be53359b9c500320d4cbf45d9bcf8e532319dd0d0ab4cc402ac07bc662a324
+        claims_ledger_sha256: f0961eed53789b6ce6a939e5807523ed0ff825f1c5ac4d5649e2447afa880b19
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root cross-file self-review; independent CV editor /root/yeb_cv_evidence
+        declaration_sha256: sha256:86b3125c429d95bcdf61c249c7d9ef142cb654b93198213ca9af84b2fdff0f48
+  declaration_sha256: sha256:0f943a2ad09bb2ad523a05a0f25d743a96e6d11c7033482853553dc1d593e15d
   method:
     workflow: two-wave
     final_review:
       claim_grounding: true
       cross_file_consistency: true
     cover_letter:
+      channel: email
       skill: write-cover-letter
       version: 15.0.0
       workbench_complete: true
@@ -1608,11 +1623,11 @@ quality:
       schema_version: 1
       source_file: cover-letter.md
       artifact_file: cover-letter.docx
-      source_sha256: d3e62b35a027e0a6416c69379e4a114ebe22c94e162821005cf1de44433a2ec2
-      artifact_sha256: 964a9548a61d7eb0a018e4b5cbd899edbfcd1c5a76333965dd92f487fb89104b
-      extracted_text_sha256: e7ed33835953a9bd72da211dc2c0e1e088aef727eda597f8ccea32605184f5ef
-      canonical_tokens: 235
-      extracted_tokens: 235
+      source_sha256: 896284e29c3dbdd751510957943cc1536164b63c01529c2afb24db36be39ee67
+      artifact_sha256: fefd1aa60d7b723fc13d5d9d2fcb7ced93313fadebed646ca12cc28d28752ef2
+      extracted_text_sha256: 7d3c4e440bf75da4a3549814eca1389fc4ff2eb9d4fb023c8b80e07d4265cb67
+      canonical_tokens: 114
+      extracted_tokens: 114
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
@@ -1620,22 +1635,34 @@ quality:
         cv_experience_list_formatting: not_checked
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 9
+        readable_paragraphs: 6
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
-        status: not_reviewed
-        artifact_sha256: 964a9548a61d7eb0a018e4b5cbd899edbfcd1c5a76333965dd92f487fb89104b
+        status: reviewed
+        artifact_sha256: fefd1aa60d7b723fc13d5d9d2fcb7ced93313fadebed646ca12cc28d28752ef2
+        reviewer: 'Codex root: inspected the single rendered PDF page from this DOCX'
+        reviewed_at: '2026-10-06T20:55:42.811645+00:00'
+        checks:
+          blank_pages: true
+          overflow: true
+          page_breaks: true
+          readability: true
+        method: recorded reviewer attestation; not an automated visual judgment
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
+      rendered_pdf_sha256: 7f79fb4ebfbf747ef91913925416df6912742dba99aeab2301ad7079b5d71dec
+      rendered_page_sha256: b8293f06e908b7429e73aa9d4911d0f61317f979d09c25bcbb6d01233dfdff7d
 files:
 - CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper.docx
 - CV_ValentinNikolaev_yeb_ProgrammatoreSeniorPHPWebDeveloper.md
 - analysis.md
 - cover-letter.docx
 - cover-letter.md
+- cv-export-review.json
 - cv.docx
 - cv.md
 - interview-preparation.md
+- letter-export-review.json

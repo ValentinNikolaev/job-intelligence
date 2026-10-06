@@ -104,6 +104,11 @@ hook, all required sections, and full analysis/interview minima. The compact lim
 override the standard CV/letter minima below; never pad either format. Follow the
 selected length instruction when invoking `$write-cover-letter`.
 
+For a short application email, `cover_letter.channel: email` overrides both
+attachment formats: 100–180 total Markdown words and three to four substantive
+body paragraphs, aiming for 100–130 body words. Preserve the two source-backed
+abilities in the internal workbench and use the canonical employer-letter flow.
+
 
 - Required minimums are 400 words for `cv_markdown`, 300 for `cover_letter_markdown`,
   700 for `analysis_markdown`, and 800 for `interview_preparation_markdown`; targets are
@@ -298,8 +303,16 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     research, and final claim ledger. Default to the posting language and selected format: standard uses 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
     ATS-friendly formatting. Use the role and company naturally when they improve targeting.
+    Before composing, read the user's current `social-promotion/social-voice.md`
+    and `social-promotion/employer-letter-flow.md`. For a short application email,
+    record `cover_letter.channel: email` in quality schema 2: 100–180 words and
+    three to four body paragraphs, aiming editorially for 100–130 body words.
+    Keep the two supported abilities and evidence stories internal, with at most
+    one brief visible example. State the application purpose naturally, explain
+    relevance once and finish with the practical next step. Complete the flow's
+    read-aloud delivery check. Channel overrides attachment length and structure.
     Start the body with a vacancy-specific, source-backed proposition rather
-    than "I am applying for". Select one or two complementary examples and
+    than "I am applying for" for attachments. Select one or two complementary examples and
     explain their relevance instead of replaying the CV. Name a former
     employer only when its identity helps place an example in context.
     Put only the finished letter in `cover_letter_markdown`; place research sources and any

@@ -512,6 +512,43 @@ class ApplicationTests(unittest.TestCase):
         with self.assertRaisesRegex(ApplicationError, "300-word minimum"):
             validate_application_package(package, document="cover-letter")
 
+    def test_email_channel_accepts_short_purpose_opening_without_relaxing_attachments(self):
+        paragraph = " ".join(["I connect verified backend experience to your delivery priorities."] * 4)
+        letter = "I am applying for your backend vacancy. " + "\n\n".join([paragraph] * 3)
+        package = {"cover_letter_markdown": letter}
+        validate_application_package(package, document="cover-letter", letter_channel="email")
+        with self.assertRaisesRegex(ApplicationError, "150-word minimum"):
+            validate_application_package(package, document="cover-letter", document_format="compact")
+        with self.assertRaisesRegex(ApplicationError, "180-word limit"):
+            validate_application_package({"cover_letter_markdown": letter + " extra" * 100}, document="cover-letter", letter_channel="email")
+        with self.assertRaisesRegex(ApplicationError, "3 to 4 substantive"):
+            validate_application_package({"cover_letter_markdown": letter.replace("\n\n", " ")}, document="cover-letter", letter_channel="email")
+        with self.assertRaisesRegex(ApplicationError, "channel must be"):
+            validate_application_package(package, document="cover-letter", letter_channel="sms")
+
+    def test_email_channel_is_loaded_and_retained_by_publication(self):
+        import hashlib
+        from tests.test_document_quality import write_docx
+
+        class RealFixtureConverter:
+            def convert(self, source, target):
+                write_docx(target, source.read_text(encoding="utf-8").splitlines())
+
+        draft, _, quality = self.v2_letter_draft()
+        quote = "I connect verified backend delivery experience to the role's PHP, Laravel, API, and reliability priorities."
+        paragraph = quote + " These responsibilities match the work described in the vacancy and the verified experience supplied with this application."
+        letter = "Dear Hiring Team,\n\n" + "\n\n".join([paragraph] * 3) + "\n\nKind regards,\nCandidate\n"
+        quality["cover_letter"]["channel"] = "email"
+        quality["final_review"]["document_sha256"]["cover-letter"] = "sha256:" + hashlib.sha256(letter.encode()).hexdigest()
+        (draft / "cover-letter.md").write_text(letter, encoding="utf-8")
+        (draft / "quality.yaml").write_text(yaml.safe_dump(quality), encoding="utf-8")
+        client = CodexApplicationDraftClient(draft, model="test-model", document="cover-letter")
+        generator = self._generator(client, RealFixtureConverter(), document="cover-letter")
+        self.assertEqual("prepared", generator.generate_directory(self.directory).status)
+        manifest = yaml.safe_load((self.directory / "application" / "manifest.yaml").read_text(encoding="utf-8"))
+        self.assertEqual("email", manifest["quality"]["method"]["cover_letter"]["channel"])
+        self.assertLess(manifest["quality"]["documents"]["cover-letter"]["word_count"], 150)
+
     def test_cache_rejects_corrupted_named_cv_export(self):
         from jobintel.document_quality import file_sha256
         from jobintel.evidence import validate_evidence_bank

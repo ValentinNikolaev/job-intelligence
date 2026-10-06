@@ -310,6 +310,7 @@ def validate_application_draft(
         document=document,
         reference_date=reference_date,
         document_format=_draft_format(draft_directory),
+        letter_channel=_draft_letter_channel(draft_directory),
         career_source_path=career_source_path,
     )
     _validate_draft_quality(draft_directory.resolve(), validated, document=document,
@@ -496,6 +497,7 @@ class ApplicationGenerator:
             document=self.document,
             reference_date=generated_at,
             document_format=_draft_format(self.client.directory) if isinstance(self.client, CodexApplicationDraftClient) else "standard",
+            letter_channel=_draft_letter_channel(self.client.directory) if isinstance(self.client, CodexApplicationDraftClient) else "attachment",
             career_source_path=self._career_source_path(),
         )
         quality = _document_quality_report(generated)
@@ -700,10 +702,13 @@ def validate_application_package(
     document: str | None = None,
     reference_date: date | datetime | None = None,
     document_format: str = "standard",
+    letter_channel: str = "attachment",
     career_source_path: Path | None = None,
 ) -> dict[str, str]:
     if document_format not in {"standard", "compact"}:
         raise ApplicationError("document_format must be standard or compact")
+    if not isinstance(letter_channel, str) or letter_channel not in {"attachment", "email"}:
+        raise ApplicationError("cover_letter channel must be attachment or email")
     document = _normalize_document(document)
     expected = set(_selected_fields(document))
     if set(value) != expected:
@@ -741,11 +746,15 @@ def validate_application_package(
                 raise ApplicationError(f"{field} contains forbidden phrase: {phrase}")
         word_count = _word_count(content)
         word_minimum = (_COMPACT_MIN_WORD_COUNTS if document_format == "compact" else _MIN_APPLICATION_WORD_COUNTS)[field]
+        if field == "cover_letter_markdown" and letter_channel == "email":
+            word_minimum = 100
         if word_count < word_minimum:
             raise ApplicationError(
                 f"{field} is below {word_minimum}-word minimum ({word_count} words)"
             )
         word_limit = _MAX_APPLICATION_WORD_COUNTS[field]
+        if field == "cover_letter_markdown" and letter_channel == "email":
+            word_limit = 180
         if word_count > word_limit:
             raise ApplicationError(
                 f"{field} exceeds {word_limit}-word limit ({word_count} words)"
@@ -767,7 +776,12 @@ def validate_application_package(
         if vacancy is not None:
             _validate_cv_headline(result["cv_markdown"], vacancy)
     if "cover_letter_markdown" in result:
-        _validate_cover_letter_paragraphs(result["cover_letter_markdown"], minimum=3 if document_format == "compact" else 4)
+        _validate_cover_letter_paragraphs(
+            result["cover_letter_markdown"],
+            minimum=3 if letter_channel == "email" or document_format == "compact" else 4,
+            maximum=4 if letter_channel == "email" else 6,
+            allow_application_opening=letter_channel == "email",
+        )
     return result
 
 
@@ -1037,7 +1051,10 @@ def _validate_cv_editorial_review(
                 raise ApplicationError(f"CV editorial anti-pattern {identifier} in Experience bullet")
 
 
-def _validate_cover_letter_paragraphs(markdown: str, *, minimum: int = 4) -> None:
+def _validate_cover_letter_paragraphs(
+    markdown: str, *, minimum: int = 4, maximum: int = 6,
+    allow_application_opening: bool = False,
+) -> None:
     body: list[str] = []
     for block in re.split(r"\n\s*\n", markdown.strip()):
         text = " ".join(
@@ -1050,12 +1067,12 @@ def _validate_cover_letter_paragraphs(markdown: str, *, minimum: int = 4) -> Non
             continue
         if _word_count(text) >= 20:
             body.append(text)
-    if not minimum <= len(body) <= 6:
+    if not minimum <= len(body) <= maximum:
         raise ApplicationError(
-            f"cover_letter_markdown must contain {minimum} to 6 substantive body paragraphs "
+            f"cover_letter_markdown must contain {minimum} to {maximum} substantive body paragraphs "
             f"({len(body)} found)"
         )
-    if re.match(r"(?i)^I am applying for\b", body[0]):
+    if not allow_application_opening and re.match(r"(?i)^I am applying for\b", body[0]):
         raise ApplicationError(
             "cover_letter_markdown opens with a generic application formula; "
             "lead with a vacancy-specific, source-backed proposition"
@@ -1150,6 +1167,7 @@ def _validate_draft_quality(
                 "cover_letter company_motivation must include a fact and HTTP(S) source_url"
             )
         method["cover_letter"] = {
+            "channel": _draft_letter_channel(draft_directory),
             "skill": skill,
             "version": skill_version,
             "workbench_complete": True,
@@ -1215,6 +1233,19 @@ def _draft_format(directory: Path) -> str:
     if value == "compact" and quality.get("schema_version") != 2:
         raise ApplicationError("compact documents require quality schema_version 2")
     return value
+
+
+def _draft_letter_channel(directory: Path) -> str:
+    quality = _read_yaml_mapping(directory / "quality.yaml", "application quality declaration")
+    letter = quality.get("cover_letter", {})
+    if not isinstance(letter, Mapping):
+        raise ApplicationError("cover_letter must be a mapping")
+    channel = letter.get("channel", "attachment")
+    if not isinstance(channel, str) or channel not in {"attachment", "email"}:
+        raise ApplicationError("cover_letter channel must be attachment or email")
+    if channel == "email" and quality.get("schema_version") != 2:
+        raise ApplicationError("email letters require quality schema_version 2")
+    return channel
 
 
 def _contained_file(root: Path, relative: Any, label: str) -> Path:

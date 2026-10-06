@@ -168,6 +168,7 @@ cv_audit:
       verdict: approve
 requirements: []
 cover_letter:
+  channel: attachment # email for a short application email; omitted defaults to attachment
   skill: write-cover-letter
   version: '<actually invoked installed version>'
   workbench_complete: true
@@ -204,8 +205,19 @@ source/verification commentary, gap notes, placeholders, or drafting language.
 `document_format: compact`
 allows CV 300–800 and letter 150–450, with at least six Experience bullets and three
 body paragraphs. Recommended compact targets are CV 300–500 and letter 150–250.
+
+Channel is independent of CV/document format. With quality schema 2,
+`cover_letter.channel: email` validates a short application email at 100–180
+words and three to four substantive body paragraphs. Aim editorially for
+100–130 body words; the validator counts the complete Markdown, including any
+heading, greeting and signature. A natural application opening is permitted.
+Omitted channel retains existing attachment limits; unknown channels fail closed.
+Keep two complementary, source-linked abilities in the skill workbench and
+receipt without requiring two visible project narratives. The user's current
+`social-promotion/employer-letter-flow.md` governs voice, relevance and the
+read-aloud delivery check. Grounding, handoffs and export checks remain required.
 The analysis/interview minima and ceilings remain unchanged. Preserve two meaningful
-letter stories, credible claims and required sections in either format. Compact is
+letter evidence themes in the workbench, credible claims and required sections in either format. Compact is
 selected for the application channel or user preference, never an excuse for generic
 or skeletal content. Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller
 is the earliest permitted employer; exclude employers whose work started before PDFfiller and roles
