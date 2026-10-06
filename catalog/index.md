@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 71
+Total vacancies: 72
 
-- Found: 47
+- Found: 48
 - Applied: 19
 - Interview: 3
 - Rejected: 2
@@ -13,6 +13,7 @@ Total vacancies: 71
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 | [Yeb](../registry/jobs/20261006_yeb_79ae138400d84b8fb939585de2aa77f1/) | [Programmatore Senior PHP/ Web developer](../registry/jobs/20261006_yeb_79ae138400d84b8fb939585de2aa77f1/job.md) | Roma, Lazio | Indeed | Found | 2026-10-06 | [Indeed](https://it.indeed.com/viewjob?jk=3659205324aca3fe) | — | — | — | — | — |
 | 2026-10-05 | [YLD.com](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/) | [Contract Golang Software Engineer (Remote Europe)](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/job.md) | Berlin | Arbeitnow | Found | 2026-10-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/yldcom/contract-golang-software-engineer-remote-europe-berlin-280012) | — | [MD](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cv.md) / [DOCX](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cv.docx) | [MD](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cover-letter.md) / [DOCX](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cover-letter.docx) | [Open](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/analysis.md) | [Open](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/interview-preparation.md) |
 | 2026-10-05 | [NetBox Labs](../registry/jobs/20261005_netbox-labs_51771763a57f45efada1012920ff884b/) | [Senior Software Backend Engineer, Foundations](../registry/jobs/20261005_netbox-labs_51771763a57f45efada1012920ff884b/job.md) | LATAM,  UK,  USA | Jobicy | Found | 2026-10-05 | [Jobicy](https://jobicy.com/jobs/154539-senior-software-backend-engineer-foundations) | — | — | — | — | — |
 | 2026-10-05 | [BetterMe](../registry/jobs/20261005_betterme_fb4f7c58efdb4c8da0e220effd403146/) | [Backend Engineer Core Team (Go + PHP)](../registry/jobs/20261005_betterme_fb4f7c58efdb4c8da0e220effd403146/job.md) | Київ, за кордоном, віддалено | Dou | Found | 2026-10-05 | [Dou](https://jobs.dou.ua/companies/betterme/vacancies/332846/) | [Open](../registry/jobs/20261005_betterme_fb4f7c58efdb4c8da0e220effd403146/company.md) | — | — | — | — |
