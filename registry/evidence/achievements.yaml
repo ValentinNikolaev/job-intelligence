@@ -1663,3 +1663,31 @@ entries:
     reviewed_at: '2026-10-06T19:21:20.381130+00:00'
     method: Compared exact candidate-authored work excerpt, employer, role and period;
       qualitative delivered work only, no audit certification or new candidate attestation.
+- id: yeb-availability-2026-10-06
+  status: verified
+  employer: null
+  role: null
+  source:
+    path: registry/candidate/candidate-declared-yeb-availability-2026-10-06.md
+    quote: 1 week, remote or hybrid question
+    sha256: a57cc324ac24d677af73a0aebeef0a00606d4a251e69f50631086ebed7e74f2d
+  verification:
+    reviewer: Codex root direct candidate reply review
+    reviewed_at: '2026-10-06'
+    method: Compared verbatim user reply in the current Yeb preparation chat.
+  review_notes: Yeb-specific availability within one week; ask employer remote/hybrid.
+    No fixed start date, office acceptance or employer remote promise.
+- id: yeb-profile-rome-location
+  status: verified
+  employer: null
+  role: null
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: Rome, Italy
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  verification:
+    reviewer: Codex root candidate source review
+    reviewed_at: '2026-10-06'
+    method: Compared exact location in primary candidate CV.
+  review_notes: Location only. Does not imply office attendance, relocation, work
+    authorization, or language proficiency.

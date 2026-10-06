@@ -1059,3 +1059,17 @@ sources:
       description_start: Junior Software Developer
       description_end: Java Developer
     location: Genova
+  - name: yeb
+    company: Yeb
+    board_url: https://www.yeb.it/azienda/lavora-con-noi
+    company_url: https://www.yeb.it
+    source_type: custom HTML / inline careers accordion
+    location: Roma
+    notes: Official careers page. The Senior PHP section states Rome, permanent CCNL Commercio employment and immediate full-time availability. Remote policy and publication date are unstated. Only the bounded seed is collected; linked accordion pages contain all roles. Use the stable page URL because accordion fragment IDs vary between renders.
+    title_terms:
+      - yeb-senior-php-seed-only
+    seed_jobs:
+      - title: Programmatore Senior PHP/ Web developer
+        url: https://www.yeb.it/azienda/lavora-con-noi
+        description_start: Programmatore Senior PHP/ Web developer
+        description_end: Programmatore Junior PHP/ Web developer

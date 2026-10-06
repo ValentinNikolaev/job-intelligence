@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "source_file": "cv.md",
+  "artifact_file": "cv.docx",
+  "source_sha256": "b6328225b6b3dee56c417987886f4adf58e14fb7876fd47ea69d4aac3a574396",
+  "artifact_sha256": "a789730c03a14d8abe3b962953c66d45a7740e0091a20fee3b45223ac2b67831",
+  "extracted_text_sha256": "06ff225b71d479405fac55a06efd7b973b788502d4a4a78b7adf7a2e405230b2",
+  "canonical_tokens": 526,
+  "extracted_tokens": 526,
+  "checks": {
+    "readable_text": true,
+    "canonical_text_preserved_in_order": true,
+    "contacts_and_numeric_values_preserved": true,
+    "cv_experience_list_formatting": "not_checked",
+    "hyperlink_targets": "verified"
+  },
+  "structure": {
+    "readable_paragraphs": 43,
+    "minimum_declared_font_pt": 12.0,
+    "font_scope": "body runs, document defaults, directly applied styles"
+  },
+  "page_count": null,
+  "max_pages": null,
+  "visual_review": {
+    "status": "reviewed",
+    "artifact_sha256": "a789730c03a14d8abe3b962953c66d45a7740e0091a20fee3b45223ac2b67831",
+    "reviewer": "Codex root visual inspection of both final rendered CV pages",
+    "reviewed_at": "2026-10-06T19:22:59.701610+00:00",
+    "checks": {
+      "blank_pages": true,
+      "overflow": true,
+      "page_breaks": true,
+      "readability": true
+    },
+    "method": "recorded reviewer attestation; not an automated visual judgment"
+  },
+  "limits": "Token comparison checks preservation, not factual truth or visual layout. PDF annotations and inherited fonts are not audited."
+}

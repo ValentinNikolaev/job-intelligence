@@ -646,6 +646,29 @@ class CustomCollectorTests(unittest.TestCase):
         self.assertEqual(100, meta["analysis_priority"])
         self.assertIn("Direct company-board description.", (directory / "job.md").read_text(encoding="utf-8"))
 
+    def test_yeb_seed_is_stable_and_isolates_the_senior_section(self) -> None:
+        source = next(s for s in load_settings(DEFAULT_CONFIG_PATH).sources if s.name == "yeb")
+        html = (
+            '<h4><a href="#dexp-accordion-item-999--3">Programmatore Senior PHP/ Web developer</a></h4>'
+            '<p>Progettazione PHP in ambiente LAMP. Sede di lavoro: Roma.</p>'
+            '<h4>Programmatore Junior PHP/ Web developer</h4><p>Junior-only requirements.</p>'
+            '<h4>Stagiaire Web marketing SEO</h4><p>Marketing-only requirements.</p>'
+        )
+        parser = custom_module._PageParser(source.board_url)
+        parser.feed(html)
+        page = parser.page_data()
+        seed, = source.seed_jobs
+        self.assertEqual(source.board_url, seed.url)
+        self.assertIsNone(source.remote)
+        self.assertFalse(any(custom_module._looks_like_job_link(source, label, url) for label, url in page.anchors))
+        job = custom_module.normalize_seed_job(source, seed, page, 100)
+        self.assertIsNotNone(job)
+        self.assertIn("LAMP", job.description)
+        self.assertNotIn("Junior-only", job.description)
+        self.assertNotIn("Marketing-only", job.description)
+        self.assertIsNone(job.published_at)
+        self.assertIsNone(custom_module.normalize_seed_job(source, seed, PageData(description="No open roles."), 100))
+
     def test_default_config_monitors_requested_italian_company_boards(self) -> None:
         settings = load_settings(DEFAULT_CONFIG_PATH)
         sources = {source.name: source for source in settings.sources}

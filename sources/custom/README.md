@@ -94,3 +94,17 @@ in config order even when later sources finish first. Each source owns its own
 between workers. The
 per-source and per-page JSON logs include timings and failures, while request
 and error totals include every attempted page across workers.
+
+## Yeb
+
+The Yeb board at <https://www.yeb.it/azienda/lavora-con-noi> uses an accordion
+whose fragment IDs change between page renders. The configured Senior PHP seed
+uses the stable page URL and visible Senior/Junior headings to isolate its
+requirements; generic accordion links are deliberately not followed. Remote work
+and the publication date remain unknown.
+
+The full Senior section mentions Drupal and WordPress as preferred knowledge.
+The existing shared CMS prefilter therefore excludes it from automatic intake.
+An explicitly user-selected application can use `add-manual` with the complete
+section and its original qualifications; this does not change the collection
+policy or remove source wording to evade it.
