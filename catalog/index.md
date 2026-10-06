@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 72
+Total vacancies: 77
 
-- Found: 48
+- Found: 53
 - Applied: 19
 - Interview: 3
 - Rejected: 2
@@ -13,6 +13,11 @@ Total vacancies: 72
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-06 | [FXC Intelligence](../registry/jobs/20261006_fxc-intelligen_394ef999828b4135a2b5e84e9c8acf5c/) | [Senior Software Engineer (Golang/TypeScript/React) - Independent Contractor](../registry/jobs/20261006_fxc-intelligen_394ef999828b4135a2b5e84e9c8acf5c/job.md) | Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Georgia, Greece, Hungary, Ireland, Italy, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine | Himalayas | Found | 2026-10-06 | [Himalayas](https://himalayas.app/companies/fxcintel/jobs/senior-software-engineer-golang-typescript-react-independent-contractor-8521559733) | — | — | — | — | — |
+| 2026-10-06 | [Codebridge Technology](../registry/jobs/20261006_codebridge-tec_ffbbad2aebe1482e9544b9865722fae0/) | [Full-Stack PHP Developer](../registry/jobs/20261006_codebridge-tec_ffbbad2aebe1482e9544b9865722fae0/job.md) | Київ, віддалено | Dou | Found | 2026-10-06 | [Dou](https://jobs.dou.ua/companies/codebridge-technology/vacancies/375731/) | [Open](../registry/jobs/20261006_codebridge-tec_ffbbad2aebe1482e9544b9865722fae0/company.md) | — | — | — | — |
+| 2026-10-06 | [Orgmeter](../registry/jobs/20261006_orgmeter_7e2f758c0c994da2a953207e5005e6ce/) | [Senior PHP Developer](../registry/jobs/20261006_orgmeter_7e2f758c0c994da2a953207e5005e6ce/job.md) | Worldwide | Djinni | Found | 2026-10-06 | [Djinni](https://djinni.co/jobs/851854-senior-php-developer/) | — | — | — | — | — |
+| 2026-10-06 | [N-iX](../registry/jobs/20261006_n-ix_30e8963523454ee2aa70b5c74f4eb603/) | [Senior / Lead PHP Engineer with AI skills (#5887)](../registry/jobs/20261006_n-ix_30e8963523454ee2aa70b5c74f4eb603/job.md) | Ukraine | Djinni | Found | 2026-10-06 | [Djinni](https://djinni.co/jobs/851789-senior-lead-php-engineer-with-ai-skills-5887/) | — | — | — | — | — |
+| 2026-10-06 | [Dice Leads](../registry/jobs/20261006_dice-leads_26cd9666e1e84b73a623fd93041d6037/) | [Senior Backend-розробник (PHP / Python / SQL)](../registry/jobs/20261006_dice-leads_26cd9666e1e84b73a623fd93041d6037/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-06 | [Djinni](https://djinni.co/jobs/851799-senior-backend-rozrobnik-php-python-sql/) | — | — | — | — | — |
 | 2026-10-06 | [Yeb](../registry/jobs/20261006_yeb_79ae138400d84b8fb939585de2aa77f1/) | [Programmatore Senior PHP/ Web developer](../registry/jobs/20261006_yeb_79ae138400d84b8fb939585de2aa77f1/job.md) | Roma, Lazio | Indeed | Found | 2026-10-06 | [Indeed](https://it.indeed.com/viewjob?jk=3659205324aca3fe) | — | — | — | — | — |
 | 2026-10-05 | [YLD.com](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/) | [Contract Golang Software Engineer (Remote Europe)](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/job.md) | Berlin | Arbeitnow | Found | 2026-10-05 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/yldcom/contract-golang-software-engineer-remote-europe-berlin-280012) | — | [MD](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cv.md) / [DOCX](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cv.docx) | [MD](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cover-letter.md) / [DOCX](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/cover-letter.docx) | [Open](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/analysis.md) | [Open](../registry/jobs/20261005_yld-com_2f71f40022294bed9f46832cec2b2442/application/interview-preparation.md) |
 | 2026-10-05 | [NetBox Labs](../registry/jobs/20261005_netbox-labs_51771763a57f45efada1012920ff884b/) | [Senior Software Backend Engineer, Foundations](../registry/jobs/20261005_netbox-labs_51771763a57f45efada1012920ff884b/job.md) | LATAM,  UK,  USA | Jobicy | Found | 2026-10-05 | [Jobicy](https://jobicy.com/jobs/154539-senior-software-backend-engineer-foundations) | — | — | — | — | — |
