@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-06T09:20:46Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Yeb",
+      "country_codes": [],
+      "directory": "20261006_yeb_79ae138400d84b8fb939585de2aa77f1",
+      "score": 76,
+      "title": "Programmatore Senior PHP/ Web developer",
+      "url": "https://it.indeed.com/viewjob?jk=3659205324aca3fe",
+      "vacancy_id": "79ae1384-00d8-4b8f-b939-585de2aa77f1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "2c91652a05ca62e3bca3ea3b24669b1c9f366f9e039b4e3e08e8e099401a67ab",
+  "schema_version": 2
+}
