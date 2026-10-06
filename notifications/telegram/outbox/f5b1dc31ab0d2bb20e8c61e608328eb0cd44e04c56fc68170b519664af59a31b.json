@@ -1,0 +1,107 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-06T13:25:36Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Codebridge Technology",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261006_codebridge-tec_ffbbad2aebe1482e9544b9865722fae0",
+      "score": 74,
+      "title": "Full-Stack PHP Developer",
+      "url": "https://jobs.dou.ua/companies/codebridge-technology/vacancies/375731/",
+      "vacancy_id": "ffbbad2a-ebe1-482e-9544-b9865722fae0"
+    },
+    {
+      "company": "Orgmeter",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261006_orgmeter_7e2f758c0c994da2a953207e5005e6ce",
+      "score": 86,
+      "title": "Senior PHP Developer",
+      "url": "https://djinni.co/jobs/851854-senior-php-developer/",
+      "vacancy_id": "7e2f758c-0c99-4da2-a953-207e5005e6ce"
+    },
+    {
+      "company": "N-iX",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261006_n-ix_30e8963523454ee2aa70b5c74f4eb603",
+      "score": 82,
+      "title": "Senior / Lead PHP Engineer with AI skills (#5887)",
+      "url": "https://djinni.co/jobs/851789-senior-lead-php-engineer-with-ai-skills-5887/",
+      "vacancy_id": "30e89635-2345-4ee2-aa70-b5c74f4eb603"
+    },
+    {
+      "company": "Dice Leads",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261006_dice-leads_26cd9666e1e84b73a623fd93041d6037",
+      "score": 73,
+      "title": "Senior Backend-розробник (PHP / Python / SQL)",
+      "url": "https://djinni.co/jobs/851799-senior-backend-rozrobnik-php-python-sql/",
+      "vacancy_id": "26cd9666-e1e8-4b73-a623-fd93041d6037"
+    },
+    {
+      "company": "FXC Intelligence",
+      "country_codes": [
+        "AL",
+        "AD",
+        "AM",
+        "AT",
+        "AZ",
+        "BE",
+        "BA",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "GE",
+        "GR",
+        "HU",
+        "IE",
+        "IT",
+        "KZ",
+        "XK",
+        "LV",
+        "LI",
+        "LT",
+        "MT",
+        "MD",
+        "MC",
+        "ME",
+        "NL",
+        "MK",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "SM",
+        "RS",
+        "SK",
+        "SI",
+        "ES",
+        "SE",
+        "CH",
+        "UA"
+      ],
+      "directory": "20261006_fxc-intelligen_394ef999828b4135a2b5e84e9c8acf5c",
+      "score": 78,
+      "title": "Senior Software Engineer (Golang/TypeScript/React) - Independent Contractor",
+      "url": "https://himalayas.app/companies/fxcintel/jobs/senior-software-engineer-golang-typescript-react-independent-contractor-8521559733",
+      "vacancy_id": "394ef999-828b-4135-a2b5-e84e9c8acf5c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "f5b1dc31ab0d2bb20e8c61e608328eb0cd44e04c56fc68170b519664af59a31b",
+  "schema_version": 2
+}
