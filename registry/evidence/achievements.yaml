@@ -1570,60 +1570,96 @@ entries:
   role: Senior Software Developer
   source:
     path: registry/candidate/linkedin-profile.md
-    quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November 2019 (1 year)  "
+    quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November\
+      \ 2019 (1 year)  "
     sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
   status: verified
   verification:
     reviewer: Codex root chronology transcription review
     reviewed_at: '2026-10-05'
-    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
-      metric verified.
-  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
-    sole ownership.
+    method: Compared exact candidate-supplied employer, title and dated period only;
+      no achievement or metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results,
+    engagement type or sole ownership.
 - id: cv-chronology-aurum
   employer: Aurum Software
   role: Senior Software Developer
   source:
     path: registry/candidate/linkedin-profile.md
-    quote: "### Aurum Software\n\n**Senior Software Developer**  \nNovember 2015 - November 2016 (1 year\
-      \ 1 month)  "
+    quote: "### Aurum Software\n\n**Senior Software Developer**  \nNovember 2015 -\
+      \ November 2016 (1 year 1 month)  "
     sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
   status: verified
   verification:
     reviewer: Codex root chronology transcription review
     reviewed_at: '2026-10-05'
-    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
-      metric verified.
-  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
-    sole ownership.
+    method: Compared exact candidate-supplied employer, title and dated period only;
+      no achievement or metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results,
+    engagement type or sole ownership.
 - id: cv-chronology-upwork
   employer: Upwork freelance
   role: Software Developer
   source:
     path: registry/candidate/linkedin-profile.md
-    quote: "### Upwork freelance\n\n**Software Developer**  \nJuly 2008 - September 2016 (8 years 3 months)"
+    quote: "### Upwork freelance\n\n**Software Developer**  \nJuly 2008 - September\
+      \ 2016 (8 years 3 months)"
     sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
   status: verified
   verification:
     reviewer: Codex root chronology transcription review
     reviewed_at: '2026-10-05'
-    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
-      metric verified.
-  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
-    sole ownership.
+    method: Compared exact candidate-supplied employer, title and dated period only;
+      no achievement or metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results,
+    engagement type or sole ownership.
 - id: cv-chronology-coinsbank
   employer: CoinsBank/bit-x
   role: Senior Software Developer
   source:
     path: registry/candidate/linkedin-profile.md
-    quote: "### CoinsBank/bit-x\n\n**Senior Software Developer**  \nJanuary 2014 - November 2015 (1 year\
-      \ 11 months)  "
+    quote: "### CoinsBank/bit-x\n\n**Senior Software Developer**  \nJanuary 2014 -\
+      \ November 2015 (1 year 11 months)  "
     sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
   status: verified
   verification:
     reviewer: Codex root chronology transcription review
     reviewed_at: '2026-10-05'
-    method: Compared exact candidate-supplied employer, title and dated period only; no achievement or
-      metric verified.
-  review_notes: Chronology-only entry. Do not infer achievements, measured results, engagement type or
-    sole ownership.
+    method: Compared exact candidate-supplied employer, title and dated period only;
+      no achievement or metric verified.
+  review_notes: Chronology-only entry. Do not infer achievements, measured results,
+    engagement type or sole ownership.
+- id: sixt-gdpr-microservices
+  employer: Sixt
+  role: Senior Software Developer
+  period: December 2018 - November 2019
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Developed microservices to comply with the requirements of the European\
+      \ Union's\n  General Data Protection Regulation (EU GDPR)."
+    context_quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November\
+      \ 2019 (1 year)  "
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: verified
+  verification:
+    reviewer: /root exact candidate source and attribution review
+    reviewed_at: '2026-10-06T19:21:20.381091+00:00'
+    method: Compared exact candidate-authored work excerpt, employer, role and period;
+      qualitative delivered work only, no audit certification or new candidate attestation.
+- id: sixt-pci-dss-codebase
+  employer: Sixt
+  role: Senior Software Developer
+  period: December 2018 - November 2019
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Developed and enhanced codebase in strict compliance with the PCI DSS\
+      \ (Payment Card\n  Industry Data Security Standard)."
+    context_quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November\
+      \ 2019 (1 year)  "
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: verified
+  verification:
+    reviewer: /root exact candidate source and attribution review
+    reviewed_at: '2026-10-06T19:21:20.381130+00:00'
+    method: Compared exact candidate-authored work excerpt, employer, role and period;
+      qualitative delivered work only, no audit certification or new candidate attestation.
