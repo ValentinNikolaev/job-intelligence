@@ -1,0 +1,87 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-06T19:38:46Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Voodoo",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_voodoo_3a780de2d6c44a9297ab342f30483dff",
+      "score": 82,
+      "title": "Staff Backend Engineer - Golang",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pb8s5dkw0g",
+      "vacancy_id": "3a780de2-d6c4-4a92-97ab-342f30483dff"
+    },
+    {
+      "company": "SoftServe",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_softserve_0a9daec235184eb2aec18677a7cd96f7",
+      "score": 80,
+      "title": "Senior Go Software Engineer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pm2x3zx0s2",
+      "vacancy_id": "0a9daec2-3518-4eb2-aec1-8677a7cd96f7"
+    },
+    {
+      "company": "ShippyPro",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_shippypro_9fbe052e0bfe4bf0b4696cdb16b11cf9",
+      "score": 91,
+      "title": "Senior Software Engineer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/mbyln0s1o7",
+      "vacancy_id": "9fbe052e-0bfe-4bf0-b469-6cdb16b11cf9"
+    },
+    {
+      "company": "Remote Crew",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_remote-crew_070b566dad454cdda912f28f6ee02770",
+      "score": 77,
+      "title": "Senior Software Engineer (Golang)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pmw1vlkq7z",
+      "vacancy_id": "070b566d-ad45-4cdd-a912-f28f6ee02770"
+    },
+    {
+      "company": "FINN",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_finn_fcf9a863f6b64308b0a134ebea3a181b",
+      "score": 84,
+      "title": "Senior Backend Engineer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pb8tu1hif5",
+      "vacancy_id": "fcf9a863-f6b6-4308-b0a1-34ebea3a181b"
+    },
+    {
+      "company": "Coinspaid Dev",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_coinspaid-dev_2d66ce614ee8420a80cb79c00a88a1a8",
+      "score": 88,
+      "title": "Senior PHP Backend Engineer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pl4qmgyq7o",
+      "vacancy_id": "2d66ce61-4ee8-420a-80cb-79c00a88a1a8"
+    },
+    {
+      "company": "AlfaDocs.com",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_alfadocs-com_95cfb08c66864db19a676faf375f9a05",
+      "score": 78,
+      "title": "Senior Full Stack/Backend Engineer (PHP + React)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pj26c4yuil",
+      "vacancy_id": "95cfb08c-6686-4db1-9a67-6faf375f9a05"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "e738187f883ccd68fcb5333ffc18b23495c9e71a26fc5a5a3387ffd7f28a9cbc",
+  "schema_version": 2
+}
