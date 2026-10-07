@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-07T13:51:23Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Sombra",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f",
+      "score": 70,
+      "title": "Middle/Senior Backend (Golang+TypeScript) Engineer",
+      "url": "https://jobs.dou.ua/companies/sombra/vacancies/375739/",
+      "vacancy_id": "657a21b4-3f2a-4c52-be6a-9d4fd7e4d91f"
+    },
+    {
+      "company": "MWDN",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba",
+      "score": 66,
+      "title": "Golang Networking Engineer",
+      "url": "https://jobs.dou.ua/companies/mwdn/vacancies/375853/",
+      "vacancy_id": "f0ca9ecf-8c4d-4b13-aca6-c03d97a55bba"
+    },
+    {
+      "company": "Antenor",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261007_antenor_aa7dc1cd863a443f8ebd60603773de59",
+      "score": 82,
+      "title": "Golang Backend Developer",
+      "url": "https://djinni.co/jobs/849148-golang-backend-developer/",
+      "vacancy_id": "aa7dc1cd-863a-443f-8ebd-60603773de59"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "7a42d2e5d9856f47d352daf805702c336b56d2bef08c143a4a4d586a9b67a7f3",
+  "schema_version": 2
+}

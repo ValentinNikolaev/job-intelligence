@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 79
+Total vacancies: 83
 
-- Found: 54
+- Found: 58
 - Applied: 21
 - Interview: 3
 - Rejected: 1
@@ -13,6 +13,10 @@ Total vacancies: 79
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-07 | [MWDN](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/) | [Golang Networking Engineer](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/job.md) | віддалено | Dou | Found | 2026-10-07 | [Dou](https://jobs.dou.ua/companies/mwdn/vacancies/375853/) | [Open](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/company.md) | — | — | — | — |
+| 2026-10-07 | [Sombra](../registry/jobs/20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f/) | [Middle/Senior Backend (Golang+TypeScript) Engineer](../registry/jobs/20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f/job.md) | віддалено | Dou | Found | 2026-10-07 | [Dou](https://jobs.dou.ua/companies/sombra/vacancies/375739/) | [Open](../registry/jobs/20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f/company.md) | — | — | — | — |
+| 2026-10-07 | [eduki](../registry/jobs/20261007_eduki_487f3638a6a3428dbf542f68c29deb7a/) | [Intermediate Back-End Developer](../registry/jobs/20261007_eduki_487f3638a6a3428dbf542f68c29deb7a/job.md) | віддалено | Dou | Found | 2026-10-07 | [Dou](https://jobs.dou.ua/companies/lehrermarktplatz/vacancies/369724/) | [Open](../registry/jobs/20261007_eduki_487f3638a6a3428dbf542f68c29deb7a/company.md) | — | — | — | — |
+| 2026-10-07 | [Antenor](../registry/jobs/20261007_antenor_aa7dc1cd863a443f8ebd60603773de59/) | [Golang Backend Developer](../registry/jobs/20261007_antenor_aa7dc1cd863a443f8ebd60603773de59/job.md) | Ukraine | Djinni | Found | 2026-10-07 | [Djinni](https://djinni.co/jobs/849148-golang-backend-developer/) | — | — | — | — | — |
 | 2026-10-07 | [ShippyPro](../registry/jobs/20261007_shippypro_52dfecfea04845de837129e619ea1025/) | [Senior Software Engineer](../registry/jobs/20261007_shippypro_52dfecfea04845de837129e619ea1025/job.md) | Italy | Himalayas | Found | 2026-10-07 | [Himalayas](https://himalayas.app/companies/shippypro/jobs/senior-software-engineer) | — | — | — | — | — |
 | 2026-10-07 | [Voodoo](../registry/jobs/20261007_voodoo_d2b23ff61d0d4046b711c37c61bb059f/) | [Senior Backend Engineer (Golang) - Castle Busters](../registry/jobs/20261007_voodoo_d2b23ff61d0d4046b711c37c61bb059f/job.md) | Paris | Cleanjobdata | Found | 2026-10-07 | [Cleanjobdata](https://cleanjobdata.com/apply/105947141) | [Open](../registry/jobs/20261007_voodoo_d2b23ff61d0d4046b711c37c61bb059f/company.md) | — | — | — | — |
 | 2026-10-06 | [FINN](../registry/jobs/20261006_finn_fcf9a863f6b64308b0a134ebea3a181b/) | [Senior Backend Engineer](../registry/jobs/20261006_finn_fcf9a863f6b64308b0a134ebea3a181b/job.md) | Open to candidates in Italy | Arc | Found | 2026-10-06 | [Arc](https://arc.dev/dashboard/d/remote-jobs/pb8tu1hif5) | — | — | — | — | — |
