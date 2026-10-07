@@ -232,6 +232,20 @@ consistent marker; keep blank lines between items. Review exported list indentat
 every page. Recent roles still need three source-backed bullets; older detailed roles need two.
 Date-only permitted older roles need neither invented achievements nor a Technologies line.
 
+Before compressing each detailed Experience role, apply `responsibility_scope_review`
+in `config/cv-editorial-knowledge.yaml`. The CV/evidence handoff maps supported
+involvement in defining the problem and scope, independent decisions versus influence
+or participation, responsibility after merge, and actual consequences. Missing
+information remains unknown and may require a focused clarification; it never
+licenses a stronger claim. After shortening, the final editor checks whether the
+role's strongest vacancy-relevant bullets still show where responsibility began and
+ended. Include relevant parts of that chain, not every answer in every bullet.
+Explain those choices using the existing `cv_audit.bullet_decisions` contribution,
+affected_scope, consequence, and reason fields; no new receipt schema or separate
+review loop is required. Delivery across frontend, backend, infrastructure, and
+production alone does not establish product decision-making or a Product Engineer
+title. Positioning must fit the vacancy and verified evidence.
+
 For Senior or Tech Lead positioning, the final CV audit is editorial as well as
 mechanical. Each Experience bullet should identify a supported contribution, the
 system or people affected, and a consequence. Quantified scale is useful only when

@@ -21,6 +21,16 @@ senior_editorial_filter:
     - "Repairing a degraded third-party integration, a failing cron, a long-running scan, or retry handling is normal operational ownership unless the evidence establishes a material consequence beyond restoring expected behaviour."
     - "Building a shared package or aligning it with an existing interservice standard is implementation work unless the evidence establishes the architectural decision, adoption, migration, or verified organisation-level consequence."
   decision_rule: "Do not promote routine baseline work with senior-sounding verbs such as architected, owned, redesigned, or product-wide. Omit it when the stronger consequence is not source-backed; do not invent one."
+responsibility_scope_review:
+  purpose: "Preserve the candidate's supported level of responsibility when compressing experience into CV bullets."
+  role_questions:
+    - "Before implementation, did the candidate receive a defined task or help identify the problem, requirements, priorities, or scope?"
+    - "Which decisions did the candidate make independently, which did they influence, and which were made by others?"
+    - "After implementation, did responsibility end at merge or include rollout, production operation, observing results, and subsequent changes?"
+    - "What source-backed consequence did the candidate's contribution have for the product, users, team, or system?"
+  compression_check: "After shortening each detailed role, do its strongest vacancy-relevant bullets still show the supported decisions and where responsibility began and ended? Include relevant parts of the chain, not every answer in every bullet."
+  grounding_rule: "Distinguish participation, influence, and independent decision-making. Unknown responsibility remains unknown; ask a focused clarification when material and never infer ownership, business analysis, user analytics, or an outcome."
+  positioning_rule: "Choose positioning for the vacancy using verified evidence. Delivery across frontend, backend, infrastructure, and production alone does not establish product decision-making or a Product Engineer title."
 rejected_anti_patterns:
   - id: source-code-size
     category: internal_implementation_metric

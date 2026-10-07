@@ -112,6 +112,17 @@ explicit single-document request, use the full-package flow below.
      manager would. Reject a draft where a recent role has a single generic bullet,
      or where older roles carry the substantive detail that should describe recent
      work. Do this editorial review even when deterministic validation succeeds.
+   Before compressing each detailed role, apply `responsibility_scope_review` from
+   `config/cv-editorial-knowledge.yaml` in the existing CV/evidence pass. Map the
+   supported boundaries in `parts/evidence-map.md`: involvement in problem and scope
+   definition, independent decisions versus influence or participation, responsibility
+   after merge, and consequences. Mark unknowns explicitly; ask a focused clarification
+   when material rather than inventing authority or outcomes. After shortening, ensure
+   the strongest vacancy-relevant bullets preserve the supported level of responsibility;
+   do not force the whole chain into every bullet. Explain the retained boundaries in
+   the existing `cv_audit.bullet_decisions` fields. The final editor checks this in the
+   existing editorial pass. Cross-stack delivery alone never establishes product
+   decision-making or a Product Engineer title.
    For Senior or Tech Lead positioning, also apply the **impact and judgment gate**:
    - lead each Experience bullet with a supported result or consequential change;
      name the candidate's contribution, the system or people affected, and the

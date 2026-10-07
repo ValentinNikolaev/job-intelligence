@@ -241,6 +241,17 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     outcomes. It supplies patterns, never candidate facts. Reject internal
     ticket, test-count, coverage and implementation-mechanic bullets unless
     a distinct source-backed consequence can be stated without those details.
+    Apply its `responsibility_scope_review` in the same audit pass, before
+    compressing each detailed role into bullets. In `parts/evidence-map.md`, map
+    source-backed responsibility before implementation, independent decisions versus
+    influence or participation, responsibility after merge, and actual consequences;
+    mark missing information as unknown. After shortening, check that the strongest
+    vacancy-relevant bullets still communicate those supported boundaries. Every
+    bullet need not contain the whole chain. Record the relevant rationale in the
+    existing `cv_audit.bullet_decisions` contribution, affected_scope, consequence,
+    and reason fields. Ask a focused clarification for a material unknown rather
+    than inferring authority. Do not infer product decision-making or a Product
+    Engineer title from delivery across the stack alone.
     Apply its `senior_editorial_filter` before retaining every Experience bullet.
     In a Senior or Tech Lead CV, routine operational ownership is not a differentiator
     by itself: repairing a vendor integration, cron, scan, retry flow, or long-running
