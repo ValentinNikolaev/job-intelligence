@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-07T19:44:07Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "MotorK",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "2026-10-02_181233_motork_java-software-engineer_aad3f3cd-ea92-4b5a-a2ac-3e8355063ef8",
+      "score": 78,
+      "title": "Java Software Engineer",
+      "url": "https://himalayas.app/companies/motork/jobs/java-software-engineer",
+      "vacancy_id": "aad3f3cd-ea92-4b5a-a2ac-3e8355063ef8"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "07e0957baa833a475b83303c691066cbeba25af3619b670698c19389288fe19b",
+  "schema_version": 2
+}
