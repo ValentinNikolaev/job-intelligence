@@ -55,7 +55,10 @@ At run start fix a UTC cutoff. On the first run search the preceding seven days.
 On later runs start two days before the last fully searched cutoff, including
 long interruptions. Do not use unread state as a cursor. Search all incoming
 mail in the interval with `after:<unix-seconds> before:<unix-seconds> -in:spam
--in:trash -in:sent -in:drafts`; do not restrict to Inbox, Gmail categories,
+-in:trash -in:sent -in:drafts`; separately search `in:trash -in:sent -in:drafts`
+without a receipt-date filter, since a recently deleted message can be old.
+Page through both searches and merge results by Gmail message ID before processing.
+Deletion time is not the employer event time. Do not restrict to Inbox, Gmail categories,
 keywords, or previously known sender domains. Such filters miss ATS mail and
 new recruiters. Iterate every search page. Retry pending message IDs even when
 they fall outside the current window.
@@ -71,6 +74,12 @@ thread ID, RFC Message-ID when present, From, Reply-To, subject, Gmail receipt
 time, source URL, and exact decoded original text. Authentication failure or
 material sender inconsistencies require manual review; do not equate missing
 authentication headers with verified authentication.
+
+Trash membership means mailbox cleanup, not event cancellation or rejection.
+If the event is already accepted in canonical history, keep it accepted even
+when its source message is deleted, disappears from Gmail, or moves between
+labels. A deleted but previously unrecorded message can still supply evidence
+under the same identity and grounding rules. Never restore or delete mail.
 
 Exclude job alerts, recommendations, newsletters, marketing, account/security
 mail, invoices and unrelated personal correspondence. Personalized job alerts
@@ -104,8 +113,8 @@ with mutually consistent identity and role evidence. If a company has multiple
 applications, resolve the particular role/attempt explicitly. Record the matching
 evidence and alternatives rejected. Do not invent a company-domain alias.
 
-Unknown company, unconfirmed application, several plausible roles, missing
-submission linkage, suspicious sender, or contradictory evidence goes to
+Unknown company, unconfirmed application, several plausible roles,
+suspicious sender, or contradictory evidence goes to
 `needs_review`. Report the likely candidates and exact missing evidence; do not
 create applications, infer `applied`, or attach the message to a guessed vacancy.
 
@@ -151,6 +160,17 @@ employer body to an ignored note file, then use:
 python run.py applications record-event <vacancy> --submission-id <existing-id> --event-id gmail-<message-id>-<kind> --kind <kind> --occurred-on YYYY-MM-DD --note-file <verbatim-note> --note-origin employer_message
 python run.py status <vacancy> interview --actor scheduled-application-mail --interaction-id gmail-<message-id> --reason <evidence-based-reason> --status-note <source-metadata-and-exact-message>
 ```
+
+Duplicate detection must also cover events recorded manually or by another
+workflow, without a Gmail ID. Compare the confirmed application/attempt,
+event kind, round/stage, actual event or appointment date when known, and
+original evidence in lifecycle history, status audit and feedback files.
+The current `interview` status alone does not prove that a new round was recorded.
+Conversely, missing message IDs do not make an already recorded event new.
+For a demonstrably equivalent event, classify the mail `already_recorded`,
+mark its ID processed after verification, and perform no repeated event/status
+write or notification. If equivalence is uncertain, keep it pending for review.
+Do not manufacture a second event solely to add source metadata to an old one.
 
 Apply status only if it changes and the table authorizes it. All status changes
 must use `run.py status`, never direct database writes. Execute through structured
