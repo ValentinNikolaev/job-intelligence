@@ -1,0 +1,30 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-07T01:28:54Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ShippyPro",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261007_shippypro_52dfecfea04845de837129e619ea1025",
+      "score": 87,
+      "title": "Senior Software Engineer",
+      "url": "https://himalayas.app/companies/shippypro/jobs/senior-software-engineer",
+      "vacancy_id": "52dfecfe-a048-45de-8371-29e619ea1025"
+    },
+    {
+      "company": "Voodoo",
+      "country_codes": [],
+      "directory": "20261007_voodoo_d2b23ff61d0d4046b711c37c61bb059f",
+      "score": 86,
+      "title": "Senior Backend Engineer (Golang) - Castle Busters",
+      "url": "https://cleanjobdata.com/apply/105947141",
+      "vacancy_id": "d2b23ff6-1d0d-4046-b711-c37c61bb059f"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4279360cbb596dc5346f0fb7c1d77208d52aeeae8a35f560d53b1f81a797b34d",
+  "schema_version": 2
+}
