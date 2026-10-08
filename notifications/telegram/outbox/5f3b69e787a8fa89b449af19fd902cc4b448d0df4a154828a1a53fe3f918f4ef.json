@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-08T19:20:29Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "PioGroup Software",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261008_piogroup-softw_6bfc4c079327487697350c69914fae47",
+      "score": 78,
+      "title": "Full-Stack Developer (PHP Symfony + React)",
+      "url": "https://jobs.dou.ua/companies/piogroup-software/vacancies/376026/",
+      "vacancy_id": "6bfc4c07-9327-4876-9735-0c69914fae47"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "5f3b69e787a8fa89b449af19fd902cc4b448d0df4a154828a1a53fe3f918f4ef",
+  "schema_version": 2
+}
