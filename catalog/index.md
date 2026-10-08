@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 82
+Total vacancies: 83
 
-- Found: 57
+- Found: 58
 - Applied: 21
 - Interview: 3
 - Rejected: 1
@@ -13,7 +13,8 @@ Total vacancies: 82
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-08 | [Techyon SRL](../registry/jobs/20261008_techyon-srl_40a9726570cd4b5c8e264edfc7a33f3f/) | [SVILUPPATORE SOFTWARE \| CATEGORIA PROTETTA \| L. 68/99](../registry/jobs/20261008_techyon-srl_40a9726570cd4b5c8e264edfc7a33f3f/job.md) | Treviso, IT | Techyon | Found | 2026-10-08 | [Techyon](https://www.techyon.it/candidati/sviluppatore-software-treviso.html) | — | — | — | — | — |
+| 2026-10-08 | [PioGroup Software](../registry/jobs/20261008_piogroup-softw_6bfc4c079327487697350c69914fae47/) | [Full-Stack Developer (PHP Symfony + React)](../registry/jobs/20261008_piogroup-softw_6bfc4c079327487697350c69914fae47/job.md) | віддалено | Dou | Found | 2026-10-08 | [Dou](https://jobs.dou.ua/companies/piogroup-software/vacancies/376026/) | [Open](../registry/jobs/20261008_piogroup-softw_6bfc4c079327487697350c69914fae47/company.md) | — | — | — | — |
+| 2026-10-08 | [mondogaming srl](../registry/jobs/20261008_mondogaming-sr_ef711223e77141ccb149bd6cee80da56/) | [Svilupparore Backend Golang](../registry/jobs/20261008_mondogaming-sr_ef711223e77141ccb149bd6cee80da56/job.md) | Cerignola, Provincia di Foggia | Adzuna | Found | 2026-10-08 | [Adzuna](https://www.adzuna.it/details/5919380125?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-10-08 | [Akvelon](../registry/jobs/20261008_akvelon_09f019189fe14af6b48ba59755ef67ff/) | [Senior Back-end (Go) Engineer (Location: Portugal, Poland, Austria, Bulgaria, Germany, Hungary, Kazakhstan)](../registry/jobs/20261008_akvelon_09f019189fe14af6b48ba59755ef67ff/job.md) | Гдиня (Польща), віддалено | Dou | Found | 2026-10-08 | [Dou](https://jobs.dou.ua/companies/akvelon-ukraine/vacancies/375980/) | [Open](../registry/jobs/20261008_akvelon_09f019189fe14af6b48ba59755ef67ff/company.md) | — | — | — | — |
 | 2026-10-07 | [MWDN](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/) | [Golang Networking Engineer](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/job.md) | віддалено | Dou | Found | 2026-10-07 | [Dou](https://jobs.dou.ua/companies/mwdn/vacancies/375853/) | [Open](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/company.md) | — | — | — | — |
 | 2026-10-07 | [Sombra](../registry/jobs/20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f/) | [Middle/Senior Backend (Golang+TypeScript) Engineer](../registry/jobs/20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f/job.md) | віддалено | Dou | Found | 2026-10-07 | [Dou](https://jobs.dou.ua/companies/sombra/vacancies/375739/) | [Open](../registry/jobs/20261007_sombra_657a21b43f2a4c52be6a9d4fd7e4d91f/company.md) | — | — | — | — |
