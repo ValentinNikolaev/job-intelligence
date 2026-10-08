@@ -1,33 +1,31 @@
 # Match Analysis
 
-**Score:** 66/100
+**Score:** 68/100  
 **Recommendation:** Match
 
-Strong Go backend, distributed systems, reliability, observability, and production ownership evidence fits the platform context, but the central networking, proxy, gRPC, and low-latency requirements are only partially supported by the candidate profile.
+Good Go backend and infrastructure foundation, but the role is specifically networking and low-latency data-path engineering and requires protocol depth not demonstrated in the profile.
 
 ## Why it matches
 
-- The candidate has substantial Go backend and production reliability experience.
-- The profile documents microservices, Kubernetes, CI/CD, observability, performance optimization, and infrastructure work.
-- The role is remote and the candidate is based in Italy.
+- Go backend experience, Kubernetes, AWS, observability, and production reliability are relevant.
+- The candidate has distributed systems, event-driven, CI/CD, and debugging evidence.
+- Independent backend ownership aligns with the role's working style.
 
 ## Gaps
 
-- Networking, reverse or forward proxies, sidecars, connectors, and gRPC are not explicitly evidenced as hands-on candidate experience.
-- QUIC, MCP, WebSockets, and HTTP/2 or HTTP/3 are not evidenced.
+- Seven years of production Go, strong gRPC, proxies or sidecars, and TCP/IP depth are not explicitly evidenced.
+- QUIC, MCP, WebSockets, HTTP/2 or HTTP/3, and Node.js are not established.
 
 ## Concerns
 
-- The role is in a specialized AI infrastructure data-path domain where networking expertise appears central rather than optional.
+- Networking and traffic-handling experience is central rather than optional.
+- The role is client-project based, so final product and location terms are not fully specified.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Networking, proxy, gateway, data-path, or infrastructure-oriented software | critical / stated | partial | Strong experience building networking, proxy, gateway, data-path, or infrastructure-oriented software. | I architect and lead the development of the platform's internal event analytics | Event infrastructure is relevant but does not establish networking or proxy data-path experience. / Confirm concrete networking, gateway, proxy, or data-path work before preparation. |
-| gRPC and HTTP, TCP/IP, APIs, and application-layer protocols | critical / stated | unknown | Strong hands-on experience with gRPC. |  | gRPC and TCP/IP experience are not explicitly evidenced in the sealed profile. / Verify protocol experience and identify a source-backed example before drafting. |
-| Strong production Go experience | critical / stated | strong | Strong production experience with **Go (Golang)**. | Go-based backends, APIs, automation platforms, communications infrastructure | / |
-| Proxies, sidecars, connectors, or traffic-handling components | high / stated | unknown | Experience building reverse proxies, forward proxies, gateways, sidecars, connectors, or similar traffic-handling components. |  | The profile does not establish direct experience with these components. / Treat this as a screening risk and confirm before preparation. |
-| Throughput, latency, concurrency, reliability, and observability | high / stated | partial | Experience developing software where throughput, latency, concurrency, or network efficiency matter. | resilient message delivery pipelines with fallback logic, retries, and | Reliability and production performance are evidenced, but the profile does not specifically establish network efficiency or low-latency data-path work. / Use only the verified reliability and performance evidence unless networking examples are confirmed. |
-| Linux production debugging and troubleshooting | meaningful / stated | partial | Comfortable developing, debugging, and troubleshooting software in Linux environments. | Troubleshot production issues by analyzing logs, monitoring system performance, SRE | Production troubleshooting is evidenced, but Linux is not directly named in the candidate quote. / Confirm Linux-specific examples. |
-| Remote-compatible location | meaningful / structural | strong | Client Location: Israel | Fiumicino, Latium, Italy | Client-time-zone and contracting arrangements are not specified. / Confirm working-hours and contractor eligibility during screening. |
+| Seven years of strong production Go experience | critical / stated | partial | At least 7 years of strong production experience with **Go (Golang)**. | - Go | Go is evidenced, but seven years of production Go is not established. / Confirm the Go timeline and avoid presenting broader PHP experience as Go tenure. |
+| Networking, proxies, gateways, sidecars, or data-path software | critical / stated | missing | Strong experience building networking, proxy, gateway, data-path, or infrastructure-oriented software. |  | The Candidate Profile does not provide direct proxy, gateway, sidecar, or data-path evidence. / Treat networking fit as a central screening risk and verify any omitted project evidence. |
+| gRPC, HTTP, TCP/IP, proxies, and application-layer protocols | high / stated | partial | Strong hands-on experience with gRPC. | REST APIs \| System Design | REST API experience is present, but gRPC and TCP/IP depth are not established. / Highlight documented REST and backend integration work without inferring protocol experience. |
+| Kubernetes, observability, and production troubleshooting | meaningful / stated | strong | Improve reliability, error handling, testing, and observability of production services. | - Kubernetes | None material beyond the role's networking specialization. / Use the airSlate migration and production troubleshooting evidence. |
