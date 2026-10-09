@@ -70,6 +70,7 @@ def html_to_markdown(value: str | None) -> str:
     decoded = html.unescape(html.unescape(value))
     parser = _MarkdownParser()
     parser.feed(decoded)
+    parser.close()
     text = "".join(parser.parts)
     # Turn the start marker `[\0href\0label]` into `[label](href)`.
     text = re.sub(r"\[\x00([^\x00]+)\x00([^]]*)\]", r"[\2](\1)", text)

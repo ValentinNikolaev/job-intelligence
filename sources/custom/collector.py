@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import ssl
 import sys
 import time
 import unicodedata
@@ -15,8 +16,9 @@ from threading import Lock
 from typing import Any, Callable, Iterable, Mapping
 from urllib.error import HTTPError, URLError
 from urllib.parse import urljoin, urlsplit, urlunsplit
-from urllib.request import Request, build_opener
+from urllib.request import HTTPSHandler, Request, build_opener
 
+import certifi
 import yaml
 
 from jobintel.html_to_markdown import html_to_markdown
@@ -43,6 +45,7 @@ class CustomSource:
     name: str
     company: str
     board_url: str
+    enabled: bool = True
     company_url: str | None = None
     source_type: str | None = None
     ats: str | None = None
@@ -207,7 +210,7 @@ class CustomCollector:
         self._opener = opener
         self.errors = 0
         self._request_count = 0
-        self.sources_total = len(self.settings.sources)
+        self.sources_total = sum(source.enabled for source in self.settings.sources)
         self.sources_failed = 0
 
     @property
@@ -219,9 +222,15 @@ class CustomCollector:
         self._request_count = 0
         self.sources_failed = 0
         seen: set[str] = set()
+        active_sources = [source for source in self.settings.sources if source.enabled]
+        for source in self.settings.sources:
+            if not source.enabled:
+                self._log_event("custom.source.skipped", source=source.name, reason=source.notes)
+        if not active_sources:
+            return
         with ThreadPoolExecutor(max_workers=min(MAX_WORKERS, self.sources_total)) as executor:
             # Consume in config order so deduplication and emitted jobs are stable.
-            for source, result in zip(self.settings.sources, executor.map(self._fetch_source, self.settings.sources)):
+            for source, result in zip(active_sources, executor.map(self._fetch_source, active_sources)):
                 self.errors += result.errors
                 self._request_count += result.requests
                 if not result.completed:
@@ -254,7 +263,17 @@ class CustomCollector:
             seed_jobs=len(source.seed_jobs),
         )
         try:
-            result.opener = self._opener if self._opener is not None else build_opener().open
+            result.opener = self._opener if self._opener is not None else build_opener(
+                HTTPSHandler(context=ssl.create_default_context(cafile=certifi.where()))
+            ).open
+            if source.ats == "workday":
+                self._fetch_workday(source, result)
+                result.completed = True
+                return result
+            if source.ats == "oracle":
+                self._fetch_oracle(source, result)
+                result.completed = True
+                return result
             board_page: PageData | None = None
             try:
                 board_page = self._fetch_page_logged(source, source.board_url, "board", result)
@@ -305,6 +324,119 @@ class CustomCollector:
         finally:
             result.elapsed_ms = round((time.monotonic() - started_at) * 1000)
         return result
+
+    def _fetch_workday(self, source: CustomSource, result: _SourceResult) -> None:
+        parsed = urlsplit(source.board_url)
+        host = parsed.hostname or ""
+        site = parsed.path.strip("/").split("/")[-1]
+        if not host.endswith(".myworkdayjobs.com") or not re.fullmatch(r"[A-Za-z0-9_-]+", site):
+            raise ValueError("Workday board must use an official myworkdayjobs.com site URL")
+        tenant = host.split(".")[0]
+        api = f"https://{host}/wday/cxs/{tenant}/{site}"
+        for offset in range(0, 1000, 20):
+            listing = self._fetch_json(api + "/jobs", result, {
+                "appliedFacets": {}, "limit": 20, "offset": offset, "searchText": "",
+            })
+            rows = listing.get("jobPostings")
+            total = listing.get("total")
+            if not isinstance(rows, list) or not isinstance(total, int):
+                raise ValueError("Workday response is missing jobPostings or total")
+            for row in rows:
+                title = _clean_string(row.get("title"))
+                if not title or not _title_allowed(source, title):
+                    continue
+                path = row.get("externalPath")
+                if not isinstance(path, str) or not path.startswith("/job/") or ".." in path:
+                    raise ValueError("Workday job has an invalid externalPath")
+                info = self._fetch_json(api + path, result).get("jobPostingInfo")
+                if not isinstance(info, dict):
+                    raise ValueError("Workday detail is missing jobPostingInfo")
+                if info.get("canApply") is False or info.get("posted") is False:
+                    continue
+                description = html_to_markdown(_clean_string(info.get("jobDescription")))
+                locations = [info.get("location"), *(info.get("additionalLocations") or [])]
+                location = ", ".join(value for value in locations if isinstance(value, str)) or None
+                title = _clean_string(info.get("title")) or title
+                if not description or not _location_allowed(source, title, description, location):
+                    continue
+                url = f"https://{host}/{site}{path}"
+                result.jobs.append(NormalizedJob(
+                    source="custom", source_job_id=_job_identity(url), source_url=url,
+                    title=title, company=source.company, company_url=source.company_url,
+                    description=description, location=location,
+                    employment_type=_clean_string(info.get("timeType")),
+                    published_at=_clean_string(info.get("startDate")),
+                    source_metadata=_metadata(source), analysis_priority=self.settings.analysis_priority,
+                ))
+            if offset + len(rows) >= total:
+                return
+            if not rows:
+                raise RuntimeError("Workday pagination ended before its reported total")
+        raise RuntimeError("Workday pagination exceeded 1000 matching listings")
+
+    def _fetch_oracle(self, source: CustomSource, result: _SourceResult) -> None:
+        parsed = urlsplit(source.board_url)
+        host = parsed.hostname or ""
+        site = parsed.path.strip("/").split("/")[-1]
+        if not host.endswith(".oraclecloud.com") or not re.fullmatch(r"CX_\d+", site):
+            raise ValueError("Oracle board must use an official oraclecloud.com candidate site URL")
+        api = f"https://{host}/hcmRestApi/resources/latest"
+        for offset in range(0, 1000, 25):
+            listing = self._fetch_json(
+                api + f"/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber={site},limit=25,offset={offset}", result,
+            ).get("items")
+            if not isinstance(listing, list) or len(listing) != 1:
+                raise ValueError("Oracle response is missing its search result")
+            rows, total = listing[0].get("requisitionList"), listing[0].get("TotalJobsCount")
+            if not isinstance(rows, list) or not isinstance(total, int):
+                raise ValueError("Oracle response is missing requisitionList or TotalJobsCount")
+            for row in rows:
+                title = _clean_string(row.get("Title"))
+                if not title or not _title_allowed(source, title):
+                    continue
+                identity = str(row.get("Id", ""))
+                if not identity.isdigit():
+                    raise ValueError("Oracle job has an invalid Id")
+                details = self._fetch_json(
+                    api + f"/recruitingCEJobRequisitionDetails?onlyData=true&expand=all&finder=ById;Id={identity},siteNumber={site}", result,
+                ).get("items")
+                if not isinstance(details, list) or len(details) != 1 or str(details[0].get("Id")) != identity:
+                    raise ValueError("Oracle detail does not match the requested job")
+                info = details[0]
+                title = _clean_string(info.get("Title")) or title
+                description = html_to_markdown("\n".join(_clean_string(info.get(key)) or "" for key in (
+                    "ExternalDescriptionStr", "ExternalQualificationsStr", "ExternalResponsibilitiesStr",
+                )))
+                locations = [info.get("PrimaryLocation"), *(item.get("Name") for item in info.get("secondaryLocations", []))]
+                location = ", ".join(value for value in locations if isinstance(value, str)) or None
+                if not description or not _title_allowed(source, title) or not _location_allowed(source, title, description, location):
+                    continue
+                url = source.board_url.rstrip("/") + f"/job/{identity}"
+                result.jobs.append(NormalizedJob(
+                    source="custom", source_job_id=_job_identity(url), source_url=url,
+                    title=title, company=source.company, company_url=source.company_url,
+                    description=description, location=location,
+                    remote=True if info.get("WorkplaceTypeCode") == "ORA_REMOTE" else None,
+                    employment_type=_clean_string(info.get("JobSchedule")),
+                    published_at=_clean_string(info.get("ExternalPostedStartDate")),
+                    source_metadata=_metadata(source), analysis_priority=self.settings.analysis_priority,
+                ))
+            if offset + len(rows) >= total:
+                return
+            if not rows:
+                raise RuntimeError("Oracle pagination ended before its reported total")
+        raise RuntimeError("Oracle pagination exceeded 1000 matching listings")
+
+    def _fetch_json(self, url: str, result: _SourceResult, payload: dict[str, Any] | None = None) -> dict[str, Any]:
+        assert result.opener is not None
+        request = Request(url, data=json.dumps(payload).encode() if payload is not None else None,
+                          headers={"Accept": "application/json", "Content-Type": "application/json", "User-Agent": USER_AGENT})
+        result.requests += 1
+        with result.opener(request, timeout=self.timeout) as response:
+            data = json.loads(response.read().decode("utf-8"))
+        if not isinstance(data, dict):
+            raise ValueError("ATS response must be a JSON object")
+        return data
 
     def _fetch_page_logged(self, source: CustomSource, url: str, phase: str, result: _SourceResult) -> PageData:
         started_at = time.monotonic()
@@ -374,6 +506,7 @@ class CustomCollector:
             raise RuntimeError(f"{url} timed out") from exc
         parser = _PageParser(url)
         parser.feed(html)
+        parser.close()
         return parser.page_data()
 
 
@@ -591,6 +724,7 @@ def _load_source(
 ) -> CustomSource:
     allowed = {
         "name",
+        "enabled",
         "company",
         "board_url",
         "company_url",
@@ -612,6 +746,9 @@ def _load_source(
     if unknown:
         raise ValueError(f"unknown custom source fields for {payload.get('name')!r}: {', '.join(unknown)}")
     name = _required_string(payload.get("name"), "source name")
+    enabled = payload.get("enabled", True)
+    if not isinstance(enabled, bool):
+        raise ValueError(f"{name} enabled must be true or false")
     company = _required_string(payload.get("company"), f"{name} company")
     board_url = _required_url(payload.get("board_url"), f"{name} board_url")
     terms = tuple(_string_list(payload.get("title_terms"))) or default_terms
@@ -643,6 +780,7 @@ def _load_source(
         raise ValueError(f"{name} remote must be true, false, or null")
     return CustomSource(
         name=name,
+        enabled=enabled,
         company=company,
         board_url=board_url,
         company_url=_optional_url(payload.get("company_url"), f"{name} company_url"),

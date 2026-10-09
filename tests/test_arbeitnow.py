@@ -58,6 +58,11 @@ def api_job(**overrides: Any) -> dict[str, Any]:
 
 
 class ArbeitnowTests(unittest.TestCase):
+    def test_ampersand_title_does_not_discard_the_page(self) -> None:
+        page = parse_api_response({"data": [api_job(), api_job(title="Senior Solutions Engineer, UK&I")], "links": {"next": None}})
+        self.assertEqual(2, len(page.jobs))
+        self.assertEqual("Senior Solutions Engineer, UK&I", page.jobs[1].title)
+
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.config_path = Path(self.temp.name) / "arbeitnow.yaml"

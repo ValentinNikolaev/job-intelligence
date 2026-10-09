@@ -17,6 +17,7 @@ import yaml
 
 from jobintel.html_to_markdown import html_to_markdown
 from jobintel.models import NormalizedJob
+from jobintel.feed_health import require_current_feed
 
 
 DEFAULT_CONFIG_PATH = Path(__file__).with_name("config.yaml")
@@ -55,6 +56,7 @@ class WeWorkRemotelyCollector:
         if not self.feeds:
             raise ValueError("We Work Remotely feeds are empty; edit sources/weworkremotely/config.yaml")
         jobs_by_url: dict[str, NormalizedJob] = {}
+        feed_jobs: list[NormalizedJob] = []
         cutoff = self._now().astimezone(timezone.utc) - timedelta(days=self.max_age_days)
         for feed in self.feeds:
             request = Request(feed.url, headers={
@@ -62,7 +64,9 @@ class WeWorkRemotelyCollector:
             })
             payload = self._get_bytes(request, f"We Work Remotely feed {feed.name!r}")
             discovery = {"feed_index": feed.index, "feed": feed.name, "url": feed.url}
-            for job in parse_feed(payload):
+            parsed_jobs = parse_feed(payload)
+            feed_jobs.extend(parsed_jobs)
+            for job in parsed_jobs:
                 if not _is_recent(job, cutoff) or not _is_target_job(job):
                     continue
                 dedupe_key = _canonical_url(job.source_url)
@@ -78,6 +82,7 @@ class WeWorkRemotelyCollector:
                         metadata = dict(existing.source_metadata)
                         metadata["discovered_by"] = discoveries
                         jobs_by_url[dedupe_key] = replace(existing, source_metadata=metadata)
+        require_current_feed(feed_jobs, cutoff, "We Work Remotely")
         yield from jobs_by_url.values()
 
     def _get_bytes(self, request: Request, context: str) -> bytes:
@@ -223,12 +228,14 @@ def _is_target_job(job: NormalizedJob) -> bool:
         job.title, job.description,
         " ".join(str(value) for value in metadata.get("skills", [])),
         " ".join(str(value) for value in metadata.get("categories", [])),
-    ]).casefold()
-    has_stack = bool(re.search(r"(?<![a-z0-9])(?:go|golang|php|laravel|symfony)(?![a-z0-9])", haystack))
+    ])
+    has_stack = bool(re.search(r"(?<![a-z0-9])(?:golang|php|laravel|symfony)(?![a-z0-9])", haystack, re.IGNORECASE))
+    has_stack = has_stack or bool(re.search(r"(?<![A-Za-z0-9])Go(?![A-Za-z0-9])", haystack))
+    has_stack = has_stack or any(str(skill).casefold() == "go" for skill in metadata.get("skills", []))
     has_role = bool(re.search(
         r"\b(?:back[ -]?end|software|platform|api|services?|engineering (?:lead|manager)|"
-        r"tech(?:nical)? lead|lead (?:engineer|developer)|staff engineer|principal engineer)\b",
-        haystack,
+        r"tech(?:nical)? lead|(?:lead|staff|principal|senior) (?:engineer|developer)|engineer|developer)\b",
+        job.title.casefold(),
     ))
     return has_stack and has_role
 

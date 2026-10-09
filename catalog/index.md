@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 80
+Total vacancies: 81
 
-- Found: 56
+- Found: 57
 - Applied: 20
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 80
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-09 | [Neting](../registry/jobs/20261009_neting_7bd9a25007de4f86b4778b6f3e796f83/) | [Sviluppatore Front-End Web Developer - Neting %](../registry/jobs/20261009_neting_7bd9a25007de4f86b4778b6f3e796f83/job.md) | — | Custom | Found | 2026-10-09 | [Custom](https://www.neting.it/careers/sviluppatore-web-developer-front-end/) | — | — | — | — | — |
 | 2026-10-09 | [WhiteBIT](../registry/jobs/20261009_whitebit_f48c4d6717684944b06cf4e76341277e/) | [Blockchain Platform Engineer](../registry/jobs/20261009_whitebit_f48c4d6717684944b06cf4e76341277e/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/852528-blockchain-platform-engineer/) | — | — | — | — | — |
 | 2026-10-09 | [N-iX](../registry/jobs/20261009_n-ix_d34505d57b1241168dc24efda738e072/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5828)](../registry/jobs/20261009_n-ix_d34505d57b1241168dc24efda738e072/job.md) | Ukraine | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/846926-senior-lead-php-engineer-with-ai-skills-5828/) | — | — | — | — | — |
 | 2026-10-09 | [New Wave Devs](../registry/jobs/20261009_new-wave-devs_c25c9c152025428793eca295902d0d79/) | [Senior Backend Engineer (Go), product team](../registry/jobs/20261009_new-wave-devs_c25c9c152025428793eca295902d0d79/job.md) | Worldwide | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/852532-senior-backend-engineer-go-product-team/) | — | — | — | — | — |

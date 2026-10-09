@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import ssl
 import sys
 import tempfile
 import threading
@@ -12,6 +13,7 @@ from datetime import datetime, timezone
 from io import StringIO
 from pathlib import Path
 from typing import Any
+from unittest.mock import patch
 from urllib.error import URLError
 from urllib.request import Request
 
@@ -56,6 +58,79 @@ class FakeResponse:
 
 
 class CustomCollectorTests(unittest.TestCase):
+    def test_default_transport_uses_verified_certificate_bundle(self):
+        collector = CustomCollector({})
+        context = ssl.create_default_context()
+        with patch.object(custom_module.ssl, "create_default_context", return_value=context) as create_context, patch.object(custom_module, "build_opener") as build:
+            build.return_value.open.return_value = FakeResponse("<html></html>")
+            with redirect_stderr(StringIO()):
+                collector._fetch_source(collector.settings.sources[0])
+        create_context.assert_called_once_with(cafile=custom_module.certifi.where())
+        handler = build.call_args.args[0]
+        self.assertIs(context, handler._context)
+        self.assertTrue(context.check_hostname)
+        self.assertEqual(ssl.CERT_REQUIRED, context.verify_mode)
+
+    def test_disabled_source_is_logged_without_requesting_retired_url(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "config.yaml"
+            path.write_text("version: 1\nsources:\n  - name: retired\n    company: Acme\n    enabled: false\n    board_url: https://example.test/retired\n    notes: No verified replacement\n", encoding="utf-8")
+            collector = CustomCollector({"CUSTOM_CONFIG": str(path)}, opener=lambda *_a, **_k: self.fail("retired URL requested"))
+            with redirect_stderr(StringIO()) as log:
+                self.assertEqual([], list(collector.fetch()))
+            self.assertIn("custom.source.skipped", log.getvalue())
+            self.assertIn("No verified replacement", log.getvalue())
+            self.assertEqual(0, collector.api_requests)
+
+    def test_workday_paginates_and_uses_detail_dates_and_eligibility(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "config.yaml"
+            path.write_text("version: 1\nsources:\n  - name: acme\n    company: Acme\n    board_url: https://acme.wd503.myworkdayjobs.com/careers\n    ats: workday\n    title_terms: [engineer]\n    location_terms: [Italy]\n", encoding="utf-8")
+            requests = []
+            def opener(request, timeout):
+                requests.append(request)
+                if request.data:
+                    offset = json.loads(request.data)["offset"]
+                    row = {"title": "Backend Engineer", "externalPath": f"/job/Rome/Engineer_{offset}"}
+                    return FakeResponse(json.dumps({"total": 21, "jobPostings": [row] * (20 if offset == 0 else 1)}))
+                offset = request.full_url.rsplit("_", 1)[-1]
+                return FakeResponse(json.dumps({"jobPostingInfo": {"title": "Backend Engineer", "jobDescription": "<p>Build Go services.</p>", "location": "Rome, Italy" if offset == "0" else "USA", "startDate": "2026-10-09", "timeType": "Full time", "canApply": True}}))
+            collector = CustomCollector({"CUSTOM_CONFIG": str(path)}, opener=opener)
+            with redirect_stderr(StringIO()):
+                jobs = list(collector.fetch())
+            self.assertEqual(1, len(jobs))
+            self.assertEqual(("2026-10-09", "Rome, Italy", None), (jobs[0].published_at, jobs[0].location, jobs[0].remote))
+            self.assertEqual([0, 20], [json.loads(r.data)["offset"] for r in requests if r.data])
+            self.assertIn("Build Go services", jobs[0].description)
+            self.assertEqual(len(requests), collector.api_requests)
+            self.assertEqual(0, collector.errors)
+
+    def test_oracle_paginates_and_reads_full_detail_before_eligibility(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "config.yaml"
+            path.write_text("version: 1\nsources:\n  - name: acme\n    company: Acme\n    board_url: https://acme.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1\n    ats: oracle\n    title_terms: [engineer]\n    location_terms: [Italy]\n", encoding="utf-8")
+            requests = []
+            def opener(request, timeout):
+                requests.append(request.full_url)
+                if "recruitingCEJobRequisitions?" in request.full_url:
+                    offset = int(request.full_url.rsplit("offset=", 1)[-1])
+                    rows = [{"Id": "1" if offset == 0 else "2", "Title": "Backend Engineer", "PrimaryLocation": "Europe"}]
+                    if offset == 0:
+                        rows.extend({"Id": str(i), "Title": "Sales Manager"} for i in range(3, 27))
+                    return FakeResponse(json.dumps({"items": [{"requisitionList": rows, "TotalJobsCount": 26}]}))
+                identity = request.full_url.split("Id=", 1)[-1].split(",", 1)[0]
+                return FakeResponse(json.dumps({"items": [{"Id": identity, "Title": "Backend Engineer", "ExternalDescriptionStr": "<p>Build Go services.</p>", "PrimaryLocation": "Rome, Italy" if identity == "1" else "Japan", "ExternalPostedStartDate": "2026-10-09T09:00:00+00:00", "WorkplaceTypeCode": "ORA_REMOTE", "secondaryLocations": []}]}))
+            collector = CustomCollector({"CUSTOM_CONFIG": str(path)}, opener=opener)
+            with redirect_stderr(StringIO()):
+                jobs = list(collector.fetch())
+            self.assertEqual(1, len(jobs))
+            self.assertEqual(("2026-10-09T09:00:00+00:00", "Rome, Italy", True), (jobs[0].published_at, jobs[0].location, jobs[0].remote))
+            self.assertTrue(jobs[0].source_url.endswith("/sites/CX_1/job/1"))
+            self.assertIn("Build Go services", jobs[0].description)
+            self.assertEqual(4, collector.api_requests)
+            self.assertEqual(0, collector.errors)
+            self.assertTrue(any("offset=25" in url for url in requests))
+
     def test_bizneo_visible_dates_reach_stale_prefilter(self) -> None:
         source = CustomSource(
             name="laser-romae", company="Laser Romae",
@@ -673,7 +748,7 @@ class CustomCollectorTests(unittest.TestCase):
         settings = load_settings(DEFAULT_CONFIG_PATH)
         sources = {source.name: source for source in settings.sources}
         expected = {
-            "papa-chat": "https://pappachat.com/lavora-con-noi/",
+            "papa-chat": "https://pappachat.com/lavora-con-noi",
             "hubcore": "https://hubcore.ai/it/lavora-con-noi",
             "watuppa": "https://www.watuppa.it/en/careers/",
             "motork": "https://www.motork.ai/jobs",
@@ -704,7 +779,7 @@ class CustomCollectorTests(unittest.TestCase):
             "trinaware": "https://www.trinaware.it/azienda/lavora-con-noi",
             "retesi": "https://www.retesi.it/#careers",
             "brb-development": "https://www.brbdevelopment.com/lavora-con-noi",
-            "neting": "https://www.neting.it/careers/sviluppatore-laravel-remote/",
+            "neting": "https://www.neting.it/lavora-con-noi/",
             "nextip": "https://www.nextip.com/job-position-backend/",
             "reverse": "https://reverse.hr/en/internal-development-team/",
             "facile-engineering": "https://engineering.facile.it/ita/careers/",
@@ -729,12 +804,12 @@ class CustomCollectorTests(unittest.TestCase):
         expected = {
             "canonical": "https://canonical.com/careers",
             "docker": "https://www.docker.com/career-openings/",
-            "automattic": "https://automattic.com/work-with-us/jobs/",
+            "automattic": "https://automattic.com/jobs/",
             "shopify": "https://www.shopify.com/careers",
-            "akamai": "https://jobs.akamai.com/",
+            "akamai": "https://fa-extu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
             "docusign": "https://careers.docusign.com/",
             "vast-data": "https://www.vastdata.com/careers",
-            "workiva": "https://www.workiva.com/careers",
+            "workiva": "https://workiva.wd503.myworkdayjobs.com/careers",
             "buffer": "https://buffer.com/journey",
             "duckduckgo": "https://duckduckgo.com/hiring",
             "awesomemotive": "https://awesomemotive.com/careers/",

@@ -45,13 +45,13 @@ sources:
     notes: Official Docker openings page; follows only linked Ashby role pages with an Italy-compatible eligibility signal.
   - name: automattic
     company: Automattic
-    board_url: https://automattic.com/work-with-us/jobs/
+    board_url: https://automattic.com/jobs/
     company_url: https://automattic.com
     source_type: company careers page
     title_terms: *eu_backend_titles
     location_terms: *italy_eligible_locations
     exclude_location_terms: *italy_ineligible_locations
-    notes: Official Automattic jobs page; general applications are not vacancies and only Italy-compatible roles are emitted.
+    notes: Official Automattic jobs page linked from work-with-us, verified 2026-10-09; general applications are not vacancies and only Italy-compatible roles are emitted.
   - name: shopify
     company: Shopify
     board_url: https://www.shopify.com/careers
@@ -63,13 +63,14 @@ sources:
     notes: Official Shopify careers board; retains only named Italy-compatible technical roles.
   - name: akamai
     company: Akamai
-    board_url: https://jobs.akamai.com/
+    board_url: https://fa-extu-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1
     company_url: https://www.akamai.com
-    source_type: company careers page
+    source_type: company careers page / Oracle
+    ats: oracle
     title_terms: *eu_backend_titles
     location_terms: *italy_eligible_locations
     exclude_location_terms: *italy_ineligible_locations
-    notes: Official Akamai jobs board; may be unavailable to non-browser collectors.
+    notes: Official Akamai Oracle candidate site verified 2026-10-09, including Akamai branding and public listing/detail API. The jobs.akamai.com alias returns 403; role-level Italy eligibility still applies.
   - name: docusign
     company: DocuSign
     board_url: https://careers.docusign.com/
@@ -92,15 +93,15 @@ sources:
     notes: Official VAST Data careers page; only Italy-compatible technical roles are emitted.
   - name: workiva
     company: Workiva
-    board_url: https://www.workiva.com/careers
+    board_url: https://workiva.wd503.myworkdayjobs.com/careers
     company_url: https://www.workiva.com
-    source_type: company careers page / Workday
+    source_type: official Workday public listings
+    ats: workday
     title_terms: *eu_backend_titles
     location_terms: *italy_eligible_locations
     exclude_location_terms: *italy_ineligible_locations
-    allowed_job_hosts:
-      - workiva.wd503.myworkdayjobs.com
-    notes: Official Workiva careers page; follows only linked Italy-compatible Workday roles.
+    notes: Official Workday linked by Workiva's careers page. Uses public listing/detail JSON because the corporate careers hub returns HTTP 403; eligibility is checked on each role.
+
   - name: buffer
     company: Buffer
     board_url: https://buffer.com/journey
@@ -267,17 +268,14 @@ sources:
         url: https://lithos.it/work-with-us/senior-full-stack-developer
   - name: nordsecurity
     company: Nord Security
-    board_url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
+    board_url: https://nordsecurity.com/careers/
     company_url: https://nordsecurity.com
-    source_type: custom HTML
-    remote: true
-    location: Remote Poland
-    notes: Current direct company posting for Backend Engineer, PHP + Go, with Docker/Kubernetes tooling.
-    title_terms:
-      - backend engineer | mid - senior | php + go | payments team
-    seed_jobs:
-      - title: Backend Engineer | Mid - Senior | PHP + Go | Payments Team
-        url: https://nordsecurity.com/careers/633dc3cf-40c5-4c24-ab60-8cdf42c8c22f
+    source_type: company careers page
+    title_terms: [backend engineer]
+    location_terms: *italy_eligible_locations
+    exclude_location_terms: *italy_ineligible_locations
+    notes: Current careers index replaces the removed PHP + Go Payments posting. Preserve role-specific location and remote evidence; Poland-remote is not Italy eligibility.
+
   - name: bitrock
     company: Bitrock
     board_url: https://www.careers-page.com/bitrock-careers
@@ -391,14 +389,12 @@ sources:
       - refactory-open-role-sentinel
   - name: papa-chat
     company: PappaChat
-    board_url: https://pappachat.com/lavora-con-noi/
+    board_url: https://pappachat.com/lavora-con-noi
     company_url: https://pappachat.com
-    source_type: custom HTML
-    title_terms:
-      - backend engineer
-    seed_jobs:
-      - title: Backend Engineer (PHP / modern PHP framework)
-        url: https://pappachat.com/lavora-con-noi/backend-engineer
+    source_type: company careers page
+    title_terms: [backend engineer]
+    notes: The former backend detail page returns 404. Current hiring page has no named backend opening; spontaneous applications are not vacancies. Monitor the index without a stale seed.
+
   - name: watuppa
     company: Watuppa
     board_url: https://www.watuppa.it/en/careers/
@@ -749,18 +745,12 @@ sources:
       - software developer
   - name: neting
     company: Neting
-    board_url: https://www.neting.it/careers/sviluppatore-laravel-remote/
+    board_url: https://www.neting.it/lavora-con-noi/
     company_url: https://www.neting.it
-    source_type: custom HTML
-    remote: true
-    location: Remote Italy
-    extract_headings: true
-    heading_title_terms:
-      - laravel developer
-      - sviluppatore laravel
-    title_terms:
-      - laravel
-      - sviluppatore
+    source_type: company careers page
+    title_terms: [laravel, sviluppatore]
+    notes: Current official careers index replaces the removed remote Laravel role. Current roles carry their own location and work mode; do not inherit Remote Italy from the retired advertisement.
+
   - name: nextip
     company: Nextip
     board_url: https://www.nextip.com/job-position-backend/
@@ -828,8 +818,7 @@ sources:
     - back-end developer
     - back end developer
     - backend engineer
-    notes: Rome office; PHP/Go engineering stack. Official careers page currently returns HTTP 403 to the collector;
-      no inferred vacancies or Rome-only filter.
+    notes: Official hiring page remains accessible to browser search but automated HTTP is blocked by DataDome (403), verified 2026-10-09. Keep failure visible; no CAPTCHA bypass, inferred vacancies or Rome-only filter.
   - name: laser-romae
     company: Laser Romae
     board_url: https://careers.laserromae.it/jobs
@@ -840,7 +829,7 @@ sources:
     notes: Rome operational office. Bizneo visible publication dates feed the shared freshness prefilter;
       a missing year is inferred as the latest non-future occurrence and marked in metadata.
       Go Developer lists Milan in the header but Rome in the body; no source-level location override.
-      TLS certificate currently fails verification.
+      TLS verification succeeds with the certifi CA bundle, rechecked 2026-10-09.
   - name: proxima-group
     company: Proxima Group
     board_url: https://proximagroup.eu/join-pro/
@@ -863,7 +852,7 @@ sources:
     source_type: company careers page
     title_terms: *id001
     notes: Rome office; evergreen full-stack PHP/Laravel hiring text mentions 2018-2019 plans. Publication date and
-      present hiring freshness are unconfirmed; TLS currently fails verification.
+      present hiring freshness are unconfirmed; TLS verification succeeds with certifi, rechecked 2026-10-09.
     extract_headings: true
     heading_title_terms:
     - Web Developer Full Stack
@@ -927,12 +916,13 @@ sources:
     location: Roma / home office
   - name: labica
     company: Labica
+    enabled: false
     board_url: https://www.labica.it/content/ricerca-personale-php-mvc-mvvm-mvp-flutter-cordova-ionic-csharp-visual-studio-analista-programmatore-roma-smartworking
     company_url: https://www.labica.it
     source_type: company careers page
     title_terms: *id001
-    notes: Historic PHP/analyst-programmer careers URL now returns 404 after site redesign. No current replacement
-      careers page verified; retain monitoring without a seeded vacancy.
+    notes: Disabled after live verification on 2026-10-09. Historic vacancy returns 404; redesigned official site exposes no verified replacement careers page. Keep the retired URL for audit; re-enable only with a verified hiring source.
+
   - name: diyticket
     company: DIYticket
     board_url: https://www.diyticket.it/jobs
@@ -982,7 +972,7 @@ sources:
     company_url: https://www.molecole.com
     source_type: company careers page
     title_terms: *id001
-    notes: Rome office; undated PHP Senior WordPress/Joomla advertisement. TLS currently fails verification; no inferred
+    notes: Rome office; undated PHP Senior WordPress/Joomla advertisement. TLS verification succeeds with certifi, rechecked 2026-10-09; no inferred
       freshness.
     extract_headings: true
     heading_title_terms:

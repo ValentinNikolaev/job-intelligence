@@ -17,6 +17,7 @@ import yaml
 
 from jobintel.html_to_markdown import html_to_markdown
 from jobintel.models import NormalizedJob
+from jobintel.feed_health import require_current_feed
 
 
 FEED_URL = "https://jobspresso.co/jobs/feed/"
@@ -53,6 +54,7 @@ class JobspressoCollector:
         jobs = parse_feed(self._get_bytes(request, "Jobspresso jobs feed"))
         if self.cheap_mode:
             cutoff = self._now().astimezone(timezone.utc) - timedelta(days=self.max_age_days)
+            require_current_feed(jobs, cutoff, "Jobspresso")
             jobs = [job for job in jobs if _is_recent(job.published_at, cutoff) and _is_relevant(job)]
         yield from jobs
 

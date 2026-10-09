@@ -13,6 +13,9 @@ When the year is absent, `published_at` uses the latest non-future occurrence
 preserved in source metadata. This lets the existing seven-day prefilter reject
 old advertisements without claiming a confirmed publication year or closed role.
 Missing or invalid dates remain unknown; TLS verification is still required.
+The default HTTPS transport uses the existing `certifi` CA bundle with hostname
+and certificate checks enabled. This avoids expired alternate trust chains in
+the Windows certificate store; it does not bypass HTTP access restrictions.
 
 Edit [`config.yaml`](config.yaml):
 
@@ -56,6 +59,25 @@ current role titles rather than broad words such as `developer`. The role
 identity is a hash of the canonical board URL and normalized heading, so
 multiple roles on one page remain distinct. It stores the fetched HTML as
 Markdown, so downstream validation and publishing remain deterministic.
+
+Set `enabled: false` only for an explicitly retired source, retaining its original
+URL and the verification reason in `notes`. Disabled sources make no requests
+and emit a `custom.source.skipped` event; access failures on enabled sources
+remain errors. Labica is retired pending a verified replacement hiring page.
+
+`ats: workday` uses the official `myworkdayjobs.com` public listing/detail JSON,
+with bounded pagination, configured title/location guards, full descriptions,
+and the detail's actual `startDate`. Closed or unposted jobs are excluded. It
+does not infer remote status or eligibility from a corporate careers page.
+Workiva uses this path because its corporate hub returns HTTP 403. Immobiliare
+remains blocked by DataDome; no public alternative was verified and the failure
+is deliberately visible. Awesome Motive's normal collector request succeeds,
+although other request clients can receive HTTP 403.
+
+`ats: oracle` reads the official Oracle candidate site's public paginated
+requisition and detail JSON. Akamai uses its branded Oracle endpoint because
+the jobs.akamai.com alias returns HTTP 403. The collector preserves the real
+posting date and checks each full role description for title/location eligibility.
 
 `seed_jobs` are for persistent or known open company-board pages. Do not add a
 generic application form as a seed unless it represents a real current vacancy.

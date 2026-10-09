@@ -138,6 +138,12 @@ class JobspressoTests(unittest.TestCase):
         )
         self.assertEqual(1, len(list(collector.fetch())))
 
+    def test_stale_feed_is_an_upstream_failure(self) -> None:
+        collector = JobspressoCollector(self._config(), opener=lambda *_a, **_k: FakeResponse(feed()),
+                                       now=lambda: datetime(2026, 10, 9, tzinfo=timezone.utc))
+        with self.assertRaisesRegex(RuntimeError, "Jobspresso feed is stale"):
+            list(collector.fetch())
+
     def test_plain_english_lowercase_go_is_not_treated_as_golang(self) -> None:
         payload = feed(title="Senior Backend Engineer").replace(
             "<li>Go</li><li>PostgreSQL</li>", "<li>Help APIs go to production</li>",

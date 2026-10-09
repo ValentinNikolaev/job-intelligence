@@ -12,6 +12,10 @@ HTTP/TLS access; three accessible boards had no named target-stack vacancy.
 Access failures are reported, not bypassed. Undated/evergreen text is preserved
 without inventing a publication date or asserting a fresh opening.
 
+On 2026-10-09, Laser Romae, Polis-net and Molecole passed HTTPS verification
+with the certifi CA bundle. The TLS failures below describe the original
+2026-10-05 check, not their current access state. Immobiliare remains HTTP 403.
+
 | Company | Careers page | Extraction | Live result / limitation |
 |---|---|---|---|
 | Immobiliare.it | [Careers](https://www.immobiliare.it/info/lavora-con-noi/) | target-stack links / JSON-LD | 0; HTTP 403 |
@@ -46,14 +50,17 @@ The visible source descriptions remain authoritative. In particular:
   Developer in Rome, with no publication year. Both exceed the seven-day
   freshness window even under the latest possible non-future year. The Bizneo
   parser now records these dates and their year inference for the shared prefilter.
-  Collection still rejects the expired TLS certificate.
+  HTTPS verification succeeds with certifi as of 2026-10-09; the old vacancy
+  dates still fail the freshness filter.
 - Gruppo FOS has a [Rome office](https://www.gruppofos.it/contatti/), while
   its PHP/Python Junior Software Developer advertisement specifies Genova.
   Its bounded seed excludes Java and Rome listings elsewhere on the board.
 - Proxima's placeholder headings, IPTSAT's general application, and Aryon's
   JAVA/PHP form option do not establish current target-stack vacancies.
 - Labica's historic careers URL now returns 404; its redesigned site exposes
-  no verified replacement careers page. The original endpoint remains monitored.
+  no verified replacement careers page. The original endpoint is retained for
+  audit but disabled after rechecking on 2026-10-09; no generic company page is
+  substituted for a hiring source.
 - GEB, DIYticket, Tun2U and Molecole advertise old PHP/CMS stacks without dates.
   Polis-net mentions 2018-2019 projects. These are undated employer leads; shared
   role/stack filters can exclude them from the candidate's active queue.

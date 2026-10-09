@@ -5,6 +5,11 @@ from jobintel.normalization import normalize_company, normalize_location, record
 
 
 class NormalizationTests(unittest.TestCase):
+    def test_unterminated_ampersand_text_is_flushed(self) -> None:
+        for title in ("Senior Solutions Engineer, UK&I", "Backend Engineer, R&D"):
+            with self.subTest(title=title):
+                self.assertEqual(title, html_to_markdown(title))
+
     def test_record_directory_bounds_long_company_and_preserves_full_uuid(self) -> None:
         name = record_directory_name(
             "2026-10-05T12:14:47Z", "Wooden Sword Games " * 20,

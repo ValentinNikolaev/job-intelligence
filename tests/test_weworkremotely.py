@@ -32,6 +32,18 @@ def feed(title="Acme: Senior Platform Engineer", guid="wwr-9988", link="https://
 
 
 class Tests(unittest.TestCase):
+    def test_plain_go_and_engineering_mentions_do_not_select_sales_jobs(self):
+        job = parse_feed(feed(title="Acme: Account Executive", description="Help our software team go to market"))[0]
+        self.assertFalse(MODULE._is_target_job(job))
+        job = parse_feed(feed(title="Acme: Backend Engineer", description="Help APIs go to production").replace("<w:skills>Go, Kubernetes; PostgreSQL</w:skills>", ""))[0]
+        self.assertFalse(MODULE._is_target_job(job))
+
+    def test_all_stale_feed_is_an_upstream_failure(self):
+        collector = Collector(self.config(), opener=lambda *_a, **_k: Response(feed()),
+                              now=lambda: datetime(2026, 10, 9, tzinfo=timezone.utc))
+        with self.assertRaisesRegex(RuntimeError, "We Work Remotely feed is stale"):
+            list(collector.fetch())
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(); self.path = Path(self.temp.name) / "c.yaml"
         self.path.write_text(f"version: 1\ntimeout_seconds: 8\nfeeds:\n  - name: programming\n    url: {PROGRAMMING}\n  - name: devops\n    url: {DEVOPS}\n", encoding="utf-8")
@@ -88,9 +100,10 @@ class Tests(unittest.TestCase):
         jobs = list(Collector(self.config(), opener=lambda *args, **kwargs: Response(payload), now=lambda: datetime(2026, 8, 24, tzinfo=timezone.utc)).fetch())
         self.assertEqual(1, len(jobs))
 
-    def test_default_config_disables_devops_feed(self):
+    def test_default_config_uses_current_official_all_jobs_feed(self):
         collector = Collector({})
-        self.assertEqual(["programming"], [item.name for item in collector.feeds])
+        self.assertEqual(["all-jobs"], [item.name for item in collector.feeds])
+        self.assertEqual(["https://weworkremotely.com/remote-jobs.rss"], [item.url for item in collector.feeds])
 
     def test_rejects_invalid_max_age(self):
         self.path.write_text(f"version: 1\nmax_age_days: 0\nfeeds:\n  - name: p\n    url: {PROGRAMMING}\n", encoding="utf-8")
