@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-09T13:48:16Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "New Wave Devs",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261009_new-wave-devs_c25c9c152025428793eca295902d0d79",
+      "score": 82,
+      "title": "Senior Backend Engineer (Go), product team",
+      "url": "https://djinni.co/jobs/852532-senior-backend-engineer-go-product-team/",
+      "vacancy_id": "c25c9c15-2025-4287-93ec-a295902d0d79"
+    },
+    {
+      "company": "N-iX",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261009_n-ix_d34505d57b1241168dc24efda738e072",
+      "score": 76,
+      "title": "Senior/ Lead PHP Engineer (with AI Skills) (#5828)",
+      "url": "https://djinni.co/jobs/846926-senior-lead-php-engineer-with-ai-skills-5828/",
+      "vacancy_id": "d34505d5-7b12-4116-8dc2-4efda738e072"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ace47aad5847e7411641de81e072ac5114733bfc1845047065eccde08ea30b94",
+  "schema_version": 2
+}
