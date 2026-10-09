@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 77
+Total vacancies: 80
 
-- Found: 53
+- Found: 56
 - Applied: 21
 - Interview: 3
 
@@ -12,6 +12,9 @@ Total vacancies: 77
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-09 | [WhiteBIT](../registry/jobs/20261009_whitebit_f48c4d6717684944b06cf4e76341277e/) | [Blockchain Platform Engineer](../registry/jobs/20261009_whitebit_f48c4d6717684944b06cf4e76341277e/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/852528-blockchain-platform-engineer/) | — | — | — | — | — |
+| 2026-10-09 | [N-iX](../registry/jobs/20261009_n-ix_d34505d57b1241168dc24efda738e072/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5828)](../registry/jobs/20261009_n-ix_d34505d57b1241168dc24efda738e072/job.md) | Ukraine | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/846926-senior-lead-php-engineer-with-ai-skills-5828/) | — | — | — | — | — |
+| 2026-10-09 | [New Wave Devs](../registry/jobs/20261009_new-wave-devs_c25c9c152025428793eca295902d0d79/) | [Senior Backend Engineer (Go), product team](../registry/jobs/20261009_new-wave-devs_c25c9c152025428793eca295902d0d79/job.md) | Worldwide | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/852532-senior-backend-engineer-go-product-team/) | — | — | — | — | — |
 | 2026-10-08 | [PioGroup Software](../registry/jobs/20261008_piogroup-softw_6bfc4c079327487697350c69914fae47/) | [Full-Stack Developer (PHP Symfony + React)](../registry/jobs/20261008_piogroup-softw_6bfc4c079327487697350c69914fae47/job.md) | віддалено | Dou | Found | 2026-10-08 | [Dou](https://jobs.dou.ua/companies/piogroup-software/vacancies/376026/) | [Open](../registry/jobs/20261008_piogroup-softw_6bfc4c079327487697350c69914fae47/company.md) | — | — | — | — |
 | 2026-10-08 | [Akvelon](../registry/jobs/20261008_akvelon_09f019189fe14af6b48ba59755ef67ff/) | [Senior Back-end (Go) Engineer (Location: Portugal, Poland, Austria, Bulgaria, Germany, Hungary, Kazakhstan)](../registry/jobs/20261008_akvelon_09f019189fe14af6b48ba59755ef67ff/job.md) | Гдиня (Польща), віддалено | Dou | Found | 2026-10-08 | [Dou](https://jobs.dou.ua/companies/akvelon-ukraine/vacancies/375980/) | [Open](../registry/jobs/20261008_akvelon_09f019189fe14af6b48ba59755ef67ff/company.md) | — | — | — | — |
 | 2026-10-07 | [MWDN](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/) | [Golang Networking Engineer](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/job.md) | віддалено | Dou | Found | 2026-10-07 | [Dou](https://jobs.dou.ua/companies/mwdn/vacancies/375853/) | [Open](../registry/jobs/20261007_mwdn_f0ca9ecf8c4d4b13aca6c03d97a55bba/company.md) | — | — | — | — |
