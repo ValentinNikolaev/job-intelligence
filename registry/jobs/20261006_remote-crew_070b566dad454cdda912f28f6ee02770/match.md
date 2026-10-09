@@ -1,38 +1,37 @@
 # Match Analysis
 
-**Score:** 74/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-Good Go/AWS/Kubernetes/backend fit for a remote European distributed-systems role, with a material unresolved gap because Terraform is explicitly mandatory and is not evidenced in the Candidate Profile.
+Good fit for a remote senior Go backend and infrastructure role: the profile supports Go, AWS, Kubernetes, event-driven systems, CI/CD, observability, system design, and technical leadership. Terraform is explicitly mandatory but not established in the supplied profile, while Kafka and DynamoDB are also unconfirmed; these are material screening risks rather than proven incompatibilities.
 
 ## Why it matches
 
-- Strong recent Go backend and distributed-systems experience, including support automation, event-driven systems, APIs, queues, and reliability work.
-- Evidence for AWS, Kubernetes, CI/CD, Helm, ArgoCD, PostgreSQL, monitoring, and technical leadership.
-- The role is remote-first in Europe and open to candidates in Italy, matching the candidate's location.
-- The candidate has relevant AI/automation and customer-operations platform experience.
+- Strong evidence of Go backend development, AWS, Kubernetes, event-driven systems, CI/CD, observability, and production reliability.
+- The candidate has led backend teams, made architecture decisions, and supported complex distributed systems.
+- Remote Europe/Italy compatibility is plausible from the vacancy and the candidate's location in Italy; English is documented as professional working level.
 
 ## Gaps
 
-- Terraform is stated as mandatory but is not explicitly evidenced in the Candidate Profile.
-- Kafka, DynamoDB, and explicit infrastructure-engineering role experience are not evidenced.
-- React, TypeScript, Python, and ISO/SOC 2 experience are not evidenced, though these are nice-to-have items.
+- Hands-on Terraform, a mandatory requirement, is not established in the supplied profile.
+- Kafka, DynamoDB, and React/TypeScript or Python experience are not established.
 
 ## Concerns
 
-- The role combines backend engineering with substantial DevOps/infrastructure ownership; the candidate's strongest evidence is backend leadership with adjacent platform and deployment work.
-- Salary and work-authorization facts are not established in the Candidate Profile.
+- The role combines backend engineering with substantial infrastructure ownership, so the unconfirmed Terraform and platform-depth requirements need early verification.
+- Work authorization and salary expectations are not stated in the profile.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Terraform infrastructure as code | critical / stated | unknown | Hands-on experience with Terraform for infrastructure-as-code (mandatory) |  | The mandatory Terraform experience is not present in the Candidate Profile, so eligibility cannot be confirmed. / Verify hands-on Terraform work before preparation or application submission. |
-| 5+ years building backend or distributed systems | critical / stated | strong | 5+ years of experience in software engineering roles building backend or distributed systems | I'm a highly experienced developer with over 15 years of expertise. | / |
-| Strong Go backend development | critical / stated | strong | Strong experience with Go (Golang) for backend service development | Go-based support automation platform | / |
-| Kubernetes container orchestration | critical / stated | strong | Hands-on experience with Kubernetes for container orchestration (mandatory) | ECS to Kubernetes | / |
-| Event-driven architecture and Kafka/Postgres/DynamoDB | high / stated | partial | Experience with event-driven architectures and technologies (Kafka, Postgres, DynamoDB) | event-driven system using queues and EventBridge | Kafka and DynamoDB are not explicitly evidenced; PostgreSQL and event-driven architecture are. / Describe the EventBridge, queues, routing, schema, and downstream-storage work and clarify any Kafka/DynamoDB exposure. |
-| DevOps or infrastructure engineering experience | high / stated | partial | Proven experience in DevOps or infrastructure engineering roles | ECS to Kubernetes | The profile supports substantial infrastructure work but does not establish a formal DevOps or infrastructure-engineering job title. / Frame the concrete deployment, Kubernetes, CI/CD, observability, and reliability ownership without changing role titles. |
-| Fluent English communication | high / stated | partial | Fluent English and strong communication skills in distributed teams | English - Professional Working | The profile contains conflicting English proficiency entries, and fluent level is not unambiguously confirmed. / Confirm current spoken and written proficiency before proceeding. |
-| AWS cloud infrastructure and services | high / stated | strong | Solid experience with AWS cloud infrastructure and services | AWS | / |
-| Frontend, Python, security, and compliance extras | preferred / stated | unknown | Frontend experience (React, TypeScript) or Python knowledge - nice to have |  | Nice-to-have technologies and certifications are not established in the Candidate Profile. / Do not claim them; treat as optional discussion points only if independently confirmed. |
+| Terraform infrastructure as code | critical / stated | unknown | Hands-on experience with Terraform for infrastructure-as-code (mandatory) |  | Terraform experience is mandatory but is not stated in the supplied candidate profile. / Verify hands-on Terraform scope before advancing; do not infer it from general AWS or Kubernetes experience. |
+| Strong Go backend experience | critical / stated | strong | Strong experience with Go (Golang) for backend service development | Backend engineer with 15+ years of experience building and improving production | / |
+| Kubernetes container orchestration | critical / stated | strong | Hands-on experience with Kubernetes for container orchestration (mandatory) | - Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | / |
+| Event-driven architecture and messaging/data technologies | high / stated | partial | Experience with event-driven architectures and technologies (Kafka, Postgres, DynamoDB) | - Event-driven systems | Kafka and DynamoDB experience is not established, and RabbitMQ/PostgreSQL do not prove equivalent production experience. / Confirm Kafka and DynamoDB delivery scope and map comparable messaging/data work during screening. |
+| AWS cloud infrastructure and services | high / stated | strong | Solid experience with AWS cloud infrastructure and services | - AWS | / |
+| CI/CD and deployment automation | high / stated | strong | Solid understanding of CI/CD pipelines and deployment automation | - Implemented CI/CD pipelines to ensure efficient software development processes, | / |
+| Reliability, observability, and operational excellence | high / stated | strong | Ensure reliability, observability and operational excellence across services | - Production reliability | / |
+| Remote Europe work and English communication | high / stated | strong | Location: Remote-first in Europe | Fiumicino, Latium, Italy | / Confirm the employer's exact remote-work, timezone, and work-authorization conditions. |
+| System design, security, and compliance | meaningful / stated | partial | Strong understanding of system design, concurrency and data consistency | - System design - Performance optimization - Production reliability | The profile supports system design and security work, but concurrency and data-consistency depth are not stated explicitly. / Use a technical screen to verify concurrency and consistency decisions in distributed systems. |
+| Technical leadership and mentoring | meaningful / stated | strong | Contribute to code reviews, mentor teammates and promote engineering best practices | - Directly managed 10 developers. Influenced all areas of Product Development, | / |
