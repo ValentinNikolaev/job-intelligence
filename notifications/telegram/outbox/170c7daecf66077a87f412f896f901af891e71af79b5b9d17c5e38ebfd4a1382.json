@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-09T19:47:28Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Spendbase",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261009_spendbase_06612d99fc7c491d85954a7ed628ffad",
+      "score": 78,
+      "title": "Fullstack Engineer (Banking)",
+      "url": "https://jobs.dou.ua/companies/spendbase/vacancies/376179/?from=list_hot",
+      "vacancy_id": "06612d99-fc7c-491d-8595-4a7ed628ffad"
+    },
+    {
+      "company": "Mysterytag",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e",
+      "score": 74,
+      "title": "Fullstack Developer (PHP + JavaScript / Next.js)",
+      "url": "https://jobs.dou.ua/companies/mysterytag/vacancies/376220/",
+      "vacancy_id": "3b060c6c-9520-42c3-9c6d-d241cf29cb3e"
+    },
+    {
+      "company": "Orgmeter",
+      "country_codes": [
+        "ES"
+      ],
+      "directory": "20261006_orgmeter_7e2f758c0c994da2a953207e5005e6ce",
+      "score": 88,
+      "title": "Senior PHP Developer",
+      "url": "https://djinni.co/jobs/851854-senior-php-developer/",
+      "vacancy_id": "7e2f758c-0c99-4da2-a953-207e5005e6ce"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "170c7daecf66077a87f412f896f901af891e71af79b5b9d17c5e38ebfd4a1382",
+  "schema_version": 2
+}
