@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "57834fcf252d3c0ca39a6f0869953772f3214c323e4c8cafe6370806b046f121",
+      "size": 794,
+      "snapshot": "files/application/cover-letter.md",
+      "source": "registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/application/cover-letter.md"
+    }
+  ],
+  "channel": "email",
+  "event_id": "submission:wematica-letter-2026-10-11",
+  "format": "email",
+  "kind": "submission",
+  "occurred_on": "2026-10-11",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/a05479b0-47ee-4b76-acc1-acd71734bc5c/submissions/wematica-letter-2026-10-11",
+  "submission_id": "wematica-letter-2026-10-11",
+  "vacancy_id": "a05479b0-47ee-4b76-acc1-acd71734bc5c"
+}
