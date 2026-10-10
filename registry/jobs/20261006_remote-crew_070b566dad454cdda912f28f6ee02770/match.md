@@ -1,37 +1,35 @@
 # Match Analysis
 
-**Score:** 76/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Good fit for a remote senior Go backend and infrastructure role: the profile supports Go, AWS, Kubernetes, event-driven systems, CI/CD, observability, system design, and technical leadership. Terraform is explicitly mandatory but not established in the supplied profile, while Kafka and DynamoDB are also unconfirmed; these are material screening risks rather than proven incompatibilities.
+Strong fit for a senior Go backend role combining distributed systems, infrastructure, and reliability work. Conversational-AI and enterprise-retail context aligns with support automation and AI-assisted backend experience; exact DevOps depth and time-zone expectations need confirmation.
 
 ## Why it matches
 
-- Strong evidence of Go backend development, AWS, Kubernetes, event-driven systems, CI/CD, observability, and production reliability.
-- The candidate has led backend teams, made architecture decisions, and supported complex distributed systems.
-- Remote Europe/Italy compatibility is plausible from the vacancy and the candidate's location in Italy; English is documented as professional working level.
+- Strong Go backend, APIs, event-driven systems, queues, and production reliability evidence.
+- AWS, Kubernetes, CI/CD, monitoring, and operational troubleshooting are represented.
+- Support automation and LLM-assisted product work match the conversational-AI context.
+- Remote-first Europe and Italy-compatible metadata support location fit.
 
 ## Gaps
 
-- Hands-on Terraform, a mandatory requirement, is not established in the supplied profile.
-- Kafka, DynamoDB, and React/TypeScript or Python experience are not established.
+- The vacancy does not name its exact infrastructure-as-code stack or required cloud services.
+- Direct enterprise-retail experience is not established in the candidate profile.
 
 ## Concerns
 
-- The role combines backend engineering with substantial infrastructure ownership, so the unconfirmed Terraform and platform-depth requirements need early verification.
-- Work authorization and salary expectations are not stated in the profile.
+- The role combines backend and DevOps responsibilities; the relative split is unspecified.
+- Candidate salary expectations are unknown.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Terraform infrastructure as code | critical / stated | unknown | Hands-on experience with Terraform for infrastructure-as-code (mandatory) |  | Terraform experience is mandatory but is not stated in the supplied candidate profile. / Verify hands-on Terraform scope before advancing; do not infer it from general AWS or Kubernetes experience. |
-| Strong Go backend experience | critical / stated | strong | Strong experience with Go (Golang) for backend service development | Backend engineer with 15+ years of experience building and improving production | / |
-| Kubernetes container orchestration | critical / stated | strong | Hands-on experience with Kubernetes for container orchestration (mandatory) | - Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | / |
-| Event-driven architecture and messaging/data technologies | high / stated | partial | Experience with event-driven architectures and technologies (Kafka, Postgres, DynamoDB) | - Event-driven systems | Kafka and DynamoDB experience is not established, and RabbitMQ/PostgreSQL do not prove equivalent production experience. / Confirm Kafka and DynamoDB delivery scope and map comparable messaging/data work during screening. |
-| AWS cloud infrastructure and services | high / stated | strong | Solid experience with AWS cloud infrastructure and services | - AWS | / |
-| CI/CD and deployment automation | high / stated | strong | Solid understanding of CI/CD pipelines and deployment automation | - Implemented CI/CD pipelines to ensure efficient software development processes, | / |
-| Reliability, observability, and operational excellence | high / stated | strong | Ensure reliability, observability and operational excellence across services | - Production reliability | / |
-| Remote Europe work and English communication | high / stated | strong | Location: Remote-first in Europe | Fiumicino, Latium, Italy | / Confirm the employer's exact remote-work, timezone, and work-authorization conditions. |
-| System design, security, and compliance | meaningful / stated | partial | Strong understanding of system design, concurrency and data consistency | - System design - Performance optimization - Production reliability | The profile supports system design and security work, but concurrency and data-consistency depth are not stated explicitly. / Use a technical screen to verify concurrency and consistency decisions in distributed systems. |
-| Technical leadership and mentoring | meaningful / stated | strong | Contribute to code reviews, mentor teammates and promote engineering best practices | - Directly managed 10 developers. Influenced all areas of Product Development, | / |
+| Infrastructure expertise and infrastructure-as-code | critical / stated | partial | This role combines backend development with DevOps responsibilities, requiring someone who can build reliable services, manage infrastructure-as-code | AWS \| Kubernetes \| | The profile confirms cloud and Kubernetes experience but does not identify the specific infrastructure-as-code tools required. / Confirm recent Terraform or equivalent infrastructure-as-code ownership and the expected DevOps scope. |
+| Senior Golang backend engineering | critical / stated | strong | Remote Crew is looking for a Senior Backend Engineer with strong Go (Golang) and infrastructure expertise | Backend engineer with 15+ years of experience building and improving production | / |
+| Design and scale distributed systems | high / stated | strong | to design and scale distributed systems powering conversational AI experiences | Build resilient message delivery pipelines with fallback logic, retries, and | / |
+| Remote-first Europe / candidate in Italy | high / stated | strong | Location: Remote-first in Europe | Fiumicino, Latium, Italy | / |
+| Conversational AI and support automation context | meaningful / stated | strong | powering conversational AI experiences for large enterprise retailers | support automation platform that connects Zendesk, Intercom, and | / |
+| Collaboration with product, AI, and frontend teams | meaningful / stated | strong | collaborate closely with product, AI, and frontend teams to deliver scalable, customer-facing features | Collaborate cross-functionally with Support Ops, Product, and AI teams to align | / |
+| Salary alignment | low_signal / stated | unknown | Salary: €60k – €80k per year |  | Candidate salary expectations are not present in the supplied profile. / Confirm expectations and employment arrangement during screening. |
