@@ -64,6 +64,13 @@ def api_job(**overrides: Any) -> dict[str, Any]:
 
 
 class GreenhouseTests(unittest.TestCase):
+    def test_description_location_is_an_explicit_per_board_opt_in(self):
+        payload = {"jobs": [api_job(location={"name": "Remote"}, offices=[], content="Build PHP APIs. Candidates across Europe may apply.")]}
+        filters = GreenhouseFilters(remote_only=True, location_terms=("Europe",))
+        self.assertEqual([], parse_board_response(GreenhouseBoard("acme"), payload, filters))
+        jobs = parse_board_response(GreenhouseBoard("acme", location_from_description=True), payload, filters)
+        self.assertEqual(1, len(jobs))
+
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.config_path = Path(self.temp.name) / "greenhouse.yaml"

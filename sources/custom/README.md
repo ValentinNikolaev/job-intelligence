@@ -1,5 +1,9 @@
 # Custom company-board collector
 
+Hostaway is limited to ten unique matching detail pages per run with
+`max_detail_pages: 10`. The optional limit accepts 1–100; absent limits preserve
+existing source behavior. Repeated links are fetched once.
+
 The custom collector monitors company-owned career pages where no stable public
 API is available. Jobs collected here are treated as direct company-board leads:
 they use `source: custom`, receive `analysis_priority: 100`, and have the highest

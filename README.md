@@ -72,7 +72,9 @@ tasks that need language judgment. The repository keeps the handoff visible.
 
    Source collectors fetch vacancies from Adzuna, Arbeitnow, CleanJobData, Djinni, DOU,
    Himalayas, Jobicy, Jobspresso, Jooble, Techyon, We Work Remotely, public Ashby boards,
-   public Greenhouse boards, and selected company career pages.
+   public Greenhouse boards, and selected company career pages. Remotive, Remote OK
+   and LaraJobs have bounded pilots; see [European remote sources](docs/europe-remote-sources.md)
+   for expiration, eligibility, attribution and deferred search channels.
 
 2. **Normalize and deduplicate**
 

@@ -83,15 +83,12 @@ def prefilter_job(
     american_work_time_rejection = _american_work_time_rejection(full_text)
     if american_work_time_rejection is not None:
         return american_work_time_rejection
-    if not _has_english_requirement(full_text):
-        blocking_language = _hard_blocking_language_requirement(full_text)
-        if blocking_language is not None:
-            return Rejection(
-                "language_requirement",
-                f"hard {blocking_language} language requirement without English green light",
-            )
-        if _has_hard_language_requirement(full_text, "italian"):
-            return Rejection("language_requirement", "hard Italian language requirement without English green light")
+    requirement_text = "\n".join(part for part in (job.description, job.location or "") if part)
+    blocking_language = _hard_blocking_language_requirement(requirement_text.casefold())
+    if blocking_language is not None:
+        return Rejection("language_requirement", f"hard {blocking_language} language requirement")
+    if _has_hard_language_requirement(requirement_text.casefold(), "italian"):
+        return Rejection("language_requirement", "hard Italian language requirement")
     cms_stack = _cms_stack(full_text)
     if cms_stack is not None:
         return Rejection("tech_stack", f"{cms_stack} vacancies are ignored")
@@ -345,12 +342,17 @@ def _has_hard_language_requirement(text: str, language: str) -> bool:
         "turkish": r"turkish|türkçe|turco",
     }[language]
     hard = r"required|mandatory|must|fluent|native|excellent|professional|mother tongue|b2|c1|c2"
-    return bool(
-        re.search(rf"\b({aliases})\b.{{0,80}}\b({hard})\b", text)
-        or re.search(rf"\b({hard})\b.{{0,80}}\b({aliases})\b", text)
-        or (language == "german" and re.search(r"\bdeutschkenntnisse\b", text))
-        or (language == "italian" and re.search(r"\bmadrelingua italiana\b", text))
-    )
+    for clause in re.split(r"[\n.;,]", text):
+        if not re.search(rf"\b({aliases})\b", clause):
+            continue
+        if re.search(r"\b(?:optional|nice.to.have|advantage|a plus|not required|not mandatory|would be)\b", clause):
+            continue
+        if (re.search(rf"\b({aliases})\b.{{0,80}}\b({hard})\b", clause)
+                or re.search(rf"\b({hard})\b.{{0,80}}\b({aliases})\b", clause)
+                or (language == "german" and re.search(r"\bdeutschkenntnisse\b", clause))
+                or (language == "italian" and re.search(r"\bmadrelingua italiana\b", clause))):
+            return True
+    return False
 
 
 def _hard_blocking_language_requirement(text: str) -> str | None:

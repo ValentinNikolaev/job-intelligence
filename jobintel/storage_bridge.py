@@ -202,12 +202,13 @@ def vacancy_batch(path: Path, *, jobs=None, directories: Sequence[Path] | None =
     if store is None:
         yield None
         return
-    from .normalization import vacancy_fingerprint
+    from .normalization import vacancy_fingerprint, vacancy_url_variants
     options = (
         {"directories": [directory.name for directory in directories]}
         if directories is not None else
         {"source_keys": [(job.source, job.source_job_id) for job in jobs or ()],
-         "fingerprints": [vacancy_fingerprint(job.company, job.title, job.location) for job in jobs or ()]}
+         "fingerprints": [vacancy_fingerprint(job.company, job.title, job.location) for job in jobs or ()],
+         "source_urls": [url for job in jobs or () for url in vacancy_url_variants(job.source_url)]}
     )
     previous = getattr(_LOCAL, "store", None)
     with store.lease("vacancy-batch"):

@@ -224,6 +224,7 @@ class MongoStore:
         *,
         source_keys: Sequence[tuple[str, str]] = (),
         fingerprints: Sequence[str] = (),
+        source_urls: Sequence[str] = (),
         directories: Sequence[str] | None = None,
         scope: str = "jobs",
     ) -> Iterator[MongoStore]:
@@ -253,6 +254,8 @@ class MongoStore:
                 load("vacancies", {"$or": [
                     {"_id": {"$in": sorted(owner_ids)}},
                     {"scope": "jobs", "archived": False, "meta.fingerprint": {"$in": list(set(fingerprints))}},
+                    {"scope": "jobs", "archived": False, "meta.sources.url": {"$in": list(set(source_urls))}},
+                    {"scope": "jobs", "archived": False, "meta.sources.metadata.apply_url": {"$in": list(set(source_urls))}},
                 ]})
                 related_ids = {self._source_identity_id(source, job_id)
                                for row in documents["vacancies"].values()

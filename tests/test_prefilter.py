@@ -65,7 +65,7 @@ class PrefilterTests(unittest.TestCase):
         self.assertEqual("location_requirement", rejection.category)
         self.assertIn("non-remote", rejection.reason)
 
-    def test_english_requirement_is_green_light_for_local_language_text(self) -> None:
+    def test_english_does_not_cancel_mandatory_german(self) -> None:
         rejection = prefilter_job(
             make_job(
                 description=(
@@ -77,7 +77,18 @@ class PrefilterTests(unittest.TestCase):
             now=self.now,
         )
 
-        self.assertIsNone(rejection)
+        self.assertIsNotNone(rejection)
+        self.assertEqual("language_requirement", rejection.category)
+
+    def test_english_with_optional_languages_is_allowed(self) -> None:
+        for qualification in ("German is optional", "German would be a plus", "German is not required"):
+            with self.subTest(qualification=qualification):
+                self.assertIsNone(prefilter_job(make_job(description="Professional English required. " + qualification + ". Build Go services."), now=self.now))
+
+    def test_structured_polish_requirement_is_not_cancelled_by_english(self) -> None:
+        rejection = prefilter_job(make_job(description="PHP backend\nEnglish B2\nPolish C1"), now=self.now)
+        self.assertIsNotNone(rejection)
+        self.assertEqual("language_requirement", rejection.category)
 
     def test_rejects_hard_european_language_without_english(self) -> None:
         for description in (

@@ -23,6 +23,16 @@ default_exclude_title_terms:
   - stage
   - tirocinio
 sources:
+  - name: hostaway
+    company: Hostaway
+    board_url: https://careers.hostaway.com/
+    company_url: https://www.hostaway.com/
+    source_type: official company careers / Recruitee
+    title_terms: [backend, golang, php, technical lead, tech lead, staff engineer, principal engineer]
+    location_terms: [Italy, Europe, European Union, EMEA]
+    exclude_location_terms: [US only, U.S. only, United States only, Canada only, UK only, UK-only, United Kingdom only, excluding Italy, except Italy]
+    max_detail_pages: 10
+    notes: Verified public server-rendered board. Follow unique matching role links, preserve their original posting dates, and admit only role-level Italy/Europe/EMEA signals.
   - name: canonical
     company: Canonical
     board_url: https://canonical.com/careers

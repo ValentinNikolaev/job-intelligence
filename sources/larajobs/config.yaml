@@ -1,0 +1,6 @@
+version: 1
+enabled: true
+pilot_until: 2026-10-24
+timeout_seconds: 15
+max_items: 100
+max_detail_requests: 5

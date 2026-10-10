@@ -31,6 +31,28 @@ def make_job(**overrides: object) -> NormalizedJob:
 
 
 class RegistryTests(unittest.TestCase):
+    def test_official_apply_url_merges_different_locations_and_preserves_interview(self):
+        first = self.registry.upsert(make_job(source="manual", source_metadata={"apply_url": "https://careers.hostaway.com/o/backend/c/new"}))
+        self.registry.update_status(first.vacancy_id, "interview")
+        history = self._meta()["status_history"]
+        result = self.registry.upsert(make_job(source="custom", source_job_id="direct-1", source_url="https://careers.hostaway.com/o/backend", location="Remote EMEA"))
+        self.assertEqual("merged", result.status)
+        self.assertEqual(first.vacancy_id, result.vacancy_id)
+        self.assertEqual(1, len(self._directories()))
+        self.assertEqual("interview", self._meta()["status"])
+        self.assertEqual(history, self._meta()["status_history"])
+
+    def test_shared_board_url_does_not_merge_distinct_roles(self):
+        self.registry.upsert(make_job(source_url="https://company.test/careers"))
+        job = make_job(source="custom", source_job_id="other", source_url="https://company.test/careers", title="PHP Architect")
+        self.assertIsNone(self.registry._find_url_candidate(self.registry._scan(), job))
+
+    def test_greenhouse_eu_url_alias_merges_without_location_fingerprint_match(self):
+        first = self.registry.upsert(make_job(source="manual", source_url="https://job-boards.eu.greenhouse.io/acme/jobs/42"))
+        result = self.registry.upsert(make_job(source="greenhouse", source_job_id="42", source_url="https://job-boards.greenhouse.io/acme/jobs/42", location="Remote"))
+        self.assertEqual("merged", result.status)
+        self.assertEqual(first.vacancy_id, result.vacancy_id)
+
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name) / "registry"

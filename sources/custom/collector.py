@@ -60,6 +60,7 @@ class CustomSource:
     extract_headings: bool = False
     allowed_job_hosts: tuple[str, ...] = ()
     seed_jobs: tuple[SeedJob, ...] = ()
+    max_detail_pages: int | None = None
 
 
 @dataclass(frozen=True, slots=True)
@@ -279,9 +280,15 @@ class CustomCollector:
                 board_page = self._fetch_page_logged(source, source.board_url, "board", result)
                 result.jobs.extend(parse_source_page(source, board_page, self.settings.analysis_priority))
                 result.completed = True
+                visited_details: set[str] = set()
                 for label, url in board_page.anchors:
                     if not _looks_like_job_link(source, label, url):
                         continue
+                    if url in visited_details:
+                        continue
+                    if source.max_detail_pages is not None and len(visited_details) >= source.max_detail_pages:
+                        break
+                    visited_details.add(url)
                     detail: PageData | None = None
                     try:
                         detail = self._fetch_page_logged(source, url, "detail", result)
@@ -741,11 +748,15 @@ def _load_source(
         "extract_headings",
         "allowed_job_hosts",
         "seed_jobs",
+        "max_detail_pages",
     }
     unknown = sorted(set(payload) - allowed)
     if unknown:
         raise ValueError(f"unknown custom source fields for {payload.get('name')!r}: {', '.join(unknown)}")
     name = _required_string(payload.get("name"), "source name")
+    max_detail_pages = payload.get("max_detail_pages")
+    if max_detail_pages is not None and (isinstance(max_detail_pages, bool) or not isinstance(max_detail_pages, int) or not 1 <= max_detail_pages <= 100):
+        raise ValueError(f"{name} max_detail_pages must be an integer from 1 to 100")
     enabled = payload.get("enabled", True)
     if not isinstance(enabled, bool):
         raise ValueError(f"{name} enabled must be true or false")
@@ -797,6 +808,7 @@ def _load_source(
         extract_headings=extract_headings,
         allowed_job_hosts=allowed_hosts,
         seed_jobs=seeds,
+        max_detail_pages=max_detail_pages,
     )
 
 

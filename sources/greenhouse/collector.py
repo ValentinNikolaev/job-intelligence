@@ -25,6 +25,7 @@ DEFAULT_CONFIG_PATH = Path(__file__).with_name("config.yaml")
 class GreenhouseBoard:
     token: str
     company: str | None = None
+    location_from_description: bool = False
 
 
 @dataclass(frozen=True, slots=True)
@@ -119,7 +120,7 @@ def parse_board_response(
     for index, raw_job in enumerate(raw_jobs, 1):
         if not isinstance(raw_job, dict):
             raise ValueError(f"job {index} is not an object")
-        if not _matches_filters(raw_job, active_filters):
+        if not _matches_filters(raw_job, active_filters, location_from_description=board.location_from_description):
             continue
         jobs.append(normalize_job(board, raw_job))
     return jobs
@@ -199,23 +200,25 @@ def _load_filters(value: object) -> GreenhouseFilters:
 
 
 def _load_board(value: object, index: int) -> GreenhouseBoard:
+    location_from_description = False
     if isinstance(value, str):
         token = value.strip()
         company = None
     elif isinstance(value, dict):
-        allowed = {"token", "company"}
+        allowed = {"token", "company", "location_from_description"}
         unknown = sorted(set(value) - allowed)
         if unknown:
             raise ValueError(f"unknown Greenhouse board {index} fields: {', '.join(unknown)}")
         token = _as_string(value.get("token")) or ""
         company = _as_string(value.get("company"))
+        location_from_description = _optional_bool(value.get("location_from_description"), "location_from_description") or False
     else:
         raise ValueError(f"Greenhouse board {index} must be a string or mapping")
     if not token:
         raise ValueError(f"Greenhouse board {index} has no token")
     if "/" in token or " " in token or token.startswith(("http://", "https://")):
         raise ValueError(f"invalid Greenhouse board token: {token}")
-    return GreenhouseBoard(token=token, company=company)
+    return GreenhouseBoard(token=token, company=company, location_from_description=location_from_description)
 
 
 def _source_metadata(board: str, payload: Mapping[str, Any]) -> dict[str, Any]:
@@ -239,11 +242,11 @@ def _source_metadata(board: str, payload: Mapping[str, Any]) -> dict[str, Any]:
     return metadata
 
 
-def _matches_filters(payload: Mapping[str, Any], filters: GreenhouseFilters) -> bool:
+def _matches_filters(payload: Mapping[str, Any], filters: GreenhouseFilters, *, location_from_description: bool = False) -> bool:
     if filters.remote_only and not _is_remote(payload):
         return False
     if filters.location_terms and not _contains_term(
-        _location_text(payload), filters.location_terms
+        _location_text(payload) + ("\n" + html_to_markdown(_as_string(payload.get("content"))) if location_from_description else ""), filters.location_terms
     ):
         return False
     if filters.title_terms and not _contains_term(

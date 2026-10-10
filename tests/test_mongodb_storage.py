@@ -4,6 +4,7 @@ import os
 import threading
 import unittest
 import uuid
+from contextlib import nullcontext
 from datetime import datetime, timedelta, timezone
 from unittest.mock import MagicMock
 
@@ -21,6 +22,21 @@ from jobintel.storage_contract import (
 
 
 class MongoStoreLeaseUnitTests(unittest.TestCase):
+    def test_vacancy_batch_loads_official_apply_url_owner_before_merge(self):
+        client = MagicMock()
+        store = MongoStore("mongodb://example", "jobintel_test", client=client)
+        url = "https://careers.hostaway.com/o/backend/c/new"
+        existing = {"_id": "existing", "directory": "existing-dir", "scope": "jobs", "archived": False,
+                    "meta": {"sources": [{"source": "manual", "source_job_id": "old", "metadata": {"apply_url": url}}]}}
+        def rows(collection, query):
+            if collection == "vacancies" and any(part.get("meta.sources.metadata.apply_url", {}).get("$in") == [url] for part in query.get("$or", [])):
+                return [existing]
+            return []
+        store.list = MagicMock(side_effect=rows)
+        store.transaction = MagicMock(return_value=nullcontext())
+        with store.vacancy_batch(source_keys=[("custom", "new")], source_urls=[url]):
+            self.assertEqual(existing, store.get("vacancies", "existing"))
+
     def test_rejected_source_owner_survives_archival_and_parallel_vacancy(self) -> None:
         client = MagicMock()
         database = MagicMock()

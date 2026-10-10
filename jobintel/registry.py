@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 import shutil
 import uuid
 from collections import defaultdict
@@ -15,7 +16,7 @@ import yaml
 from . import storage_bridge as op
 
 from .models import VACANCY_STATUSES, NormalizedJob, UpsertResult
-from .normalization import record_directory_name, vacancy_fingerprint
+from .normalization import canonical_vacancy_url, normalize_company, normalize_text, record_directory_name, vacancy_fingerprint
 from .storage_contract import SourceIdentityConflict
 
 
@@ -25,6 +26,9 @@ SOURCE_RANKS = {
     "arbeitnow": 10,
     "himalayas": 10,
     "jobicy": 10,
+    "remotive": 10,
+    "remoteok": 10,
+    "larajobs": 10,
     "jobspresso": 10,
     "jooble": 10,
     "weworkremotely": 10,
@@ -133,6 +137,13 @@ class Registry:
 
         if exact is not None:
             return self._update_existing(exact, job, fingerprint, is_merge=False)
+
+        url_candidate = self._find_url_candidate(entries, job)
+        if url_candidate is not None:
+            meta = url_candidate["meta"]
+            if meta.get("status") == "rejected":
+                return UpsertResult("rejected", str(meta["id"]), url_candidate["path"].name)
+            return self._update_existing(url_candidate, job, fingerprint, is_merge=True)
 
         candidate = (
             self._find_fingerprint_candidate_indexed(fingerprint, source)
@@ -372,6 +383,25 @@ class Registry:
             if incoming_source not in existing_sources:
                 candidates.append(entry)
         # Ambiguity is kept separate. A false separation is safer than a false merge.
+        return candidates[0] if len(candidates) == 1 else None
+
+    @staticmethod
+    def _find_url_candidate(entries: list[dict[str, Any]], job: NormalizedJob) -> dict[str, Any] | None:
+        incoming = canonical_vacancy_url(job.source_url)
+        if not incoming:
+            return None
+        role_url = bool(re.search(r"/(?:o/[^/]+|jobs?/[^/]+)(?:$|\?)", incoming))
+        candidates = []
+        for entry in entries:
+            meta = entry["meta"]
+            if normalize_company(str(meta.get("company") or "")) != normalize_company(job.company):
+                continue
+            if not role_url and normalize_text(str(meta.get("title") or "")) != normalize_text(job.title):
+                continue
+            urls = [str(ref.get("url") or "") for ref in meta.get("sources", [])]
+            urls.extend(str((ref.get("metadata") or {}).get("apply_url") or "") for ref in meta.get("sources", []))
+            if incoming in {canonical_vacancy_url(url) for url in urls}:
+                candidates.append(entry)
         return candidates[0] if len(candidates) == 1 else None
 
     def _create(self, job: NormalizedJob, fingerprint: str) -> UpsertResult:

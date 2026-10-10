@@ -4,6 +4,7 @@ import hashlib
 import re
 import unicodedata
 import uuid
+from urllib.parse import urlsplit, urlunsplit
 
 
 _COMPANY_SUFFIXES = {
@@ -28,6 +29,31 @@ def normalize_company(value: str) -> str:
     while words and words[-1] in _COMPANY_SUFFIXES:
         words.pop()
     return " ".join(words)
+
+
+def canonical_vacancy_url(value: str) -> str:
+    parts = urlsplit(value.strip())
+    host = (parts.hostname or "").casefold()
+    if parts.scheme not in {"http", "https"} or not host:
+        return ""
+    if host == "job-boards.eu.greenhouse.io":
+        host = "job-boards.greenhouse.io"
+    path = parts.path.rstrip("/")
+    path = re.sub(r"(/o/[^/]+)/c/new$", r"\1", path)
+    return urlunsplit(("https", host, path, parts.query, ""))
+
+
+def vacancy_url_variants(value: str) -> tuple[str, ...]:
+    canonical = canonical_vacancy_url(value)
+    if not canonical:
+        return ()
+    variants = {value.strip(), canonical}
+    parts = urlsplit(canonical)
+    if re.fullmatch(r"/o/[^/]+", parts.path):
+        variants.add(canonical + "/c/new")
+    if parts.hostname == "job-boards.greenhouse.io":
+        variants.add(canonical.replace("job-boards.greenhouse.io", "job-boards.eu.greenhouse.io", 1))
+    return tuple(sorted(variants))
 
 
 def normalize_location(value: str | None) -> str:

@@ -36,6 +36,9 @@ filters:
     - principal engineer
 
 boards:
+  - token: whitetech
+    company: WhiteTech
+    location_from_description: true
   - token: grafanalabs
     company: Grafana Labs
   - token: cloudflare

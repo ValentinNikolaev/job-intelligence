@@ -1,5 +1,9 @@
 # Greenhouse source
 
+WhiteTech opts into `location_from_description: true` because its location field
+says Remote while its body explicitly permits Europe/CET. Other boards retain
+location/office-only filtering.
+
 Greenhouse exposes public company job boards through a keyless Job Board API.
 This collector fetches:
 

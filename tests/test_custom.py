@@ -58,6 +58,21 @@ class FakeResponse:
 
 
 class CustomCollectorTests(unittest.TestCase):
+    def test_detail_cap_counts_unique_links_and_stops_extra_requests(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "config.yaml"
+            path.write_text("version: 1\nsources:\n  - name: acme\n    company: Acme\n    board_url: https://acme.test/careers\n    title_terms: [backend]\n    max_detail_pages: 1\n", encoding="utf-8")
+            requests = []
+            def opener(request, timeout):
+                requests.append(request.full_url)
+                if request.full_url.endswith("/careers"):
+                    return FakeResponse('<a href="/jobs/one">Backend Engineer</a><a href="/jobs/one">Backend Engineer</a><a href="/jobs/two">Backend Lead</a>')
+                return FakeResponse("<h1>Backend Engineer</h1><p>Build PHP APIs.</p>")
+            collector = CustomCollector({"CUSTOM_CONFIG": str(path)}, opener=opener)
+            with redirect_stderr(StringIO()):
+                list(collector.fetch())
+            self.assertEqual(["https://acme.test/careers", "https://acme.test/jobs/one"], requests)
+
     def test_default_transport_uses_verified_certificate_bundle(self):
         collector = CustomCollector({})
         context = ssl.create_default_context()
