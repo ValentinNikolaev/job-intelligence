@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 67
+Total vacancies: 68
 
-- Found: 43
+- Found: 44
 - Applied: 20
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 67
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-10 | [Wematica](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/) | [BACKEND DEVELOPER PHP](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/job.md) | Monterotondo, Lazio, Italia | Manual | Found | 2026-10-10 | [Manual](https://it.indeed.com/viewjob?jk=f747149e226dbe43) | — | — | [MD](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/application/cover-letter.md) / [DOCX](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/application/cover-letter.docx) | — | — |
 | 2026-10-09 | [Mysterytag](../registry/jobs/20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e/) | [Fullstack Developer (PHP + JavaScript / Next.js)](../registry/jobs/20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e/job.md) | Київ, віддалено | Dou | Found | 2026-10-09 | [Dou](https://jobs.dou.ua/companies/mysterytag/vacancies/376220/) | [Open](../registry/jobs/20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e/company.md) | — | — | — | — |
 | 2026-10-09 | [Spendbase](../registry/jobs/20261009_spendbase_06612d99fc7c491d85954a7ed628ffad/) | [Fullstack Engineer (Banking)](../registry/jobs/20261009_spendbase_06612d99fc7c491d85954a7ed628ffad/job.md) | Київ, Львів, за кордоном, віддалено | Dou | Found | 2026-10-09 | [Dou](https://jobs.dou.ua/companies/spendbase/vacancies/376179/?from=list_hot) | [Open](../registry/jobs/20261009_spendbase_06612d99fc7c491d85954a7ed628ffad/company.md) | — | — | — | — |
 | 2026-10-09 | [N-iX](../registry/jobs/20261009_n-ix_d34505d57b1241168dc24efda738e072/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5828)](../registry/jobs/20261009_n-ix_d34505d57b1241168dc24efda738e072/job.md) | Ukraine | Djinni | Found | 2026-10-09 | [Djinni](https://djinni.co/jobs/846926-senior-lead-php-engineer-with-ai-skills-5828/) | — | — | — | — | — |
