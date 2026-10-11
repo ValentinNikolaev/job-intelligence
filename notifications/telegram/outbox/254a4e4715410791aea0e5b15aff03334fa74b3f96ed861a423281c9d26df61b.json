@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-11T10:58:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Wematica",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261010_wematica_a05479b047ee4b76acc1acd71734bc5c",
+      "score": 78,
+      "title": "BACKEND DEVELOPER PHP",
+      "url": "https://it.indeed.com/viewjob?jk=f747149e226dbe43",
+      "vacancy_id": "a05479b0-47ee-4b76-acc1-acd71734bc5c"
+    },
+    {
+      "company": "SoftServe",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_softserve_0a9daec235184eb2aec18677a7cd96f7",
+      "score": 88,
+      "title": "Senior Go Software Engineer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pm2x3zx0s2",
+      "vacancy_id": "0a9daec2-3518-4eb2-aec1-8677a7cd96f7"
+    },
+    {
+      "company": "Remote Crew",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_remote-crew_070b566dad454cdda912f28f6ee02770",
+      "score": 78,
+      "title": "Senior Software Engineer (Golang)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pmw1vlkq7z",
+      "vacancy_id": "070b566d-ad45-4cdd-a912-f28f6ee02770"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "254a4e4715410791aea0e5b15aff03334fa74b3f96ed861a423281c9d26df61b",
+  "schema_version": 2
+}
