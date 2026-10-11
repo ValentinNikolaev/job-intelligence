@@ -1,36 +1,33 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 87/100  
 **Recommendation:** Strong Match
 
-Very strong fit for a senior Go backend role in Italy, with direct evidence across microservices, PostgreSQL, Kubernetes, AWS, observability, CI/CD, reliability, and technical leadership; Terraform, secure-development depth, and some listed cloud tools remain unconfirmed.
+Strong fit for a senior Go backend role in Italy, with direct evidence across Go, microservices, PostgreSQL, Kubernetes, AWS, Terraform, CI/CD, observability, support automation, and production reliability.
 
 ## Why it matches
 
-- Strong Go backend experience and recent ownership of production automation services.
-- Direct experience with microservices, PostgreSQL, AWS, Kubernetes, Helm, GitHub Actions, ArgoCD, and Prometheus.
-- Evidence of performance optimization, incident troubleshooting, production reliability, and technical leadership.
-- Italy location and remote European scope align with the vacancy.
+- Go backend and API experience is central to the candidate profile.
+- Direct evidence covers microservices, PostgreSQL, Kubernetes, AWS, Terraform, CI/CD, Prometheus, and production troubleshooting.
+- The candidate has technical-lead experience and measurable operational improvements in support automation and event-driven systems.
+- Italy-based remote eligibility aligns with the stated location.
 
 ## Gaps
 
-- The supplied candidate evidence does not explicitly confirm Terraform or Ansible.
-- Docker, CloudFoundry, Grafana, and a specific secure-development framework are not directly evidenced.
+- Grafana, Docker, VMs, and CloudFoundry are not explicitly evidenced in the supplied profile.
+- The specific retail-client and EU PaaS context is not established.
 
 ## Concerns
 
-- The role emphasizes security and compliance; the profile shows GDPR and PCI DSS work but not the exact platform's security practices.
-- The vacancy is sourced through a third-party listing, so current availability and hiring status should be rechecked before preparation.
+- The role includes substantial SRE and incident-support ownership; the candidate has reliability evidence, but the exact SRE scope is not stated.
+- Salary is unavailable, so compensation fit is unknown.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Containerization and cloud technologies including Kubernetes | critical / stated | partial | Experience with containerization and cloud technologies (Docker, Kubernetes, VMs, CloudFoundry) | Kubernetes deployments with **Helm**, **GitHub Actions**, and **ArgoCD**. | Kubernetes and AWS/ECS are supported, but Docker, VMs, and CloudFoundry are not explicitly confirmed. / Present the verified Kubernetes/ECS/AWS scope and do not claim the unverified tools. |
-| Five or more years of software development with strong Go | critical / stated | strong | Extensive experience (5+ years) in software development, with strong expertise in Go | Go-based backends | / Lead with recent Go production ownership and backend scope. |
-| Microservices architecture | critical / stated | strong | Hands-on experience with microservices architecture | Microservices | / Use the airSlate and Hyprr service architecture evidence. |
-| Relational databases, particularly PostgreSQL | critical / stated | strong | Experience working with relational databases, particularly PostgreSQL | PostgreSQL | / Cite PostgreSQL alongside production performance and data-processing work. |
-| Observability with Grafana and Prometheus | high / stated | partial | Experience with observability tools such as Grafana and Prometheus | Prometheus | Prometheus is supported; Grafana is not explicitly confirmed. / Name Prometheus and monitoring/logging experience, then verify Grafana separately. |
-| Secure software development | high / stated | partial | Understanding of secure software development principles | EU GDPR | Compliance and security assessment experience is evidenced, but the exact secure-development practices are not fully mapped. / Use the GDPR, PCI DSS, security assessment, and vulnerability-scan evidence. |
-| Technical leadership and complex systems support | high / stated | strong | Experience providing technical leadership and supporting complex systems | increased feature delivery rate by approx. 20%. | / Emphasize technical-lead and production-operations examples. |
-| English communication in a distributed team | high / stated | strong | Confident communication skills in English, both written and verbal, in a multicultural and distributed setup | English - Upper-intermediate | The profile does not provide a detailed spoken-English assessment. / Keep the claim at the confirmed Upper-intermediate level. |
+| 5+ years of software development with strong Go expertise | critical / stated | strong | Extensive experience (5+ years) in software development, with strong expertise in Go | Backend engineer with 15+ years of experience building and improving production | / |
+| Scalable Go microservices and backend systems | critical / stated | strong | Design and develop scalable microservices using Go | Designed and owned a Go-based support automation platform connecting **Zendesk**, | / |
+| Secure development and observability | high / stated | partial | Understanding of secure software development principles | Developed microservices to comply with the requirements of the European Union's | The profile supports compliance-oriented engineering and Prometheus, but does not explicitly name Grafana or the full secure-development scope. / Clarify the candidate's security-development and observability tooling examples during screening. |
+| PostgreSQL and relational database experience | high / stated | strong | Experience working with relational databases, particularly PostgreSQL | PostgreSQL | / |
+| Cloud, Kubernetes, and CI/CD delivery | high / stated | strong | Experience with containerization and cloud technologies (Docker, Kubernetes, VMs, CloudFoundry) | Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | / |

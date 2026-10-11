@@ -1,0 +1,70 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-11T22:51:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "SoftServe",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_softserve_0a9daec235184eb2aec18677a7cd96f7",
+      "score": 87,
+      "title": "Senior Go Software Engineer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pm2x3zx0s2",
+      "vacancy_id": "0a9daec2-3518-4eb2-aec1-8677a7cd96f7"
+    },
+    {
+      "company": "Remote Crew",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261006_remote-crew_070b566dad454cdda912f28f6ee02770",
+      "score": 83,
+      "title": "Senior Software Engineer (Golang)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pmw1vlkq7z",
+      "vacancy_id": "070b566d-ad45-4cdd-a912-f28f6ee02770"
+    },
+    {
+      "company": "refurbed",
+      "country_codes": [
+        "AT",
+        "BE",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "DE",
+        "GR",
+        "HU",
+        "IE",
+        "IT",
+        "LV",
+        "LT",
+        "LU",
+        "MT",
+        "NL",
+        "PL",
+        "PT",
+        "RO",
+        "SK",
+        "SI",
+        "ES",
+        "SE",
+        "GB"
+      ],
+      "directory": "20261011_refurbed_d4c16c34d7b049c0bbda2abc71220758",
+      "score": 78,
+      "title": "Senior Backend Engineer (f/m/x) - remote",
+      "url": "https://himalayas.app/companies/refurbed-com/jobs/senior-backend-engineer-f-m-x-remote",
+      "vacancy_id": "d4c16c34-d7b0-49c0-bbda-2abc71220758"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a73bbf8a9228d3a17661391aa48724511d38f72218dd042656b588797ef3020e",
+  "schema_version": 2
+}
