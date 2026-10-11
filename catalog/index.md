@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 60
+Total vacancies: 62
 
-- Found: 36
+- Found: 38
 - Applied: 20
 - Interview: 4
 
@@ -12,6 +12,8 @@ Total vacancies: 60
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-11 | [Canonical](../registry/jobs/20261011_canonical_14638059004144cc85f64ec959efaa9c/) | [Software Engineer - Python - Container Images](../registry/jobs/20261011_canonical_14638059004144cc85f64ec959efaa9c/job.md) | APAC,  EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-11 | [Jobicy](https://jobicy.com/jobs/150364-software-engineer-python-container-images) | — | — | — | — | — |
+| 2026-10-11 | [refurbed](../registry/jobs/20261011_refurbed_d4c16c34d7b049c0bbda2abc71220758/) | [Senior Backend Engineer (f/m/x) - remote](../registry/jobs/20261011_refurbed_d4c16c34d7b049c0bbda2abc71220758/job.md) | Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Romania, Slovakia, Slovenia, Spain, Sweden, United Kingdom | Himalayas | Found | 2026-10-11 | [Himalayas](https://himalayas.app/companies/refurbed-com/jobs/senior-backend-engineer-f-m-x-remote) | — | — | — | — | — |
 | 2026-10-11 | [Hostaway](../registry/jobs/20261011_hostaway_b89ee7ba35f649f5aced0aa9db9923e6/) | [Staff Backend Engineer, Money Movement - 100% Remote - Europe](../registry/jobs/20261011_hostaway_b89ee7ba35f649f5aced0aa9db9923e6/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-10-11 | [Himalayas](https://himalayas.app/companies/hostaway/jobs/staff-backend-engineer-money-movement-100-remote-europe) | — | — | — | — | — |
 | 2026-10-10 | [Wematica](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/) | [BACKEND DEVELOPER PHP](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/job.md) | Monterotondo, Lazio, Italia | Indeed, Manual | Found | 2026-10-10 | [Indeed](https://it.indeed.com/viewjob?jk=f747149e226dbe43), [Manual](https://it.indeed.com/viewjob?jk=f747149e226dbe43) | — | — | [MD](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/application/cover-letter.md) / [DOCX](../registry/jobs/20261010_wematica_a05479b047ee4b76acc1acd71734bc5c/application/cover-letter.docx) | — | — |
 | 2026-10-09 | [Mysterytag](../registry/jobs/20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e/) | [Fullstack Developer (PHP + JavaScript / Next.js)](../registry/jobs/20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e/job.md) | Київ, віддалено | Dou | Found | 2026-10-09 | [Dou](https://jobs.dou.ua/companies/mysterytag/vacancies/376220/) | [Open](../registry/jobs/20261009_mysterytag_3b060c6c952042c39c6dd241cf29cb3e/company.md) | — | — | — | — |
