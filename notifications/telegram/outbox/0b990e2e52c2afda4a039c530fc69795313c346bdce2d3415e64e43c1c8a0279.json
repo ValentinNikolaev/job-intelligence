@@ -1,0 +1,77 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-12T12:47:38Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "SevenPro",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_sevenpro_87e453d71829465ab7628ad4068ab6da",
+      "score": 78,
+      "title": "PHP Full-stack Engineer (part-time)",
+      "url": "https://jobs.dou.ua/companies/sevenpro/vacancies/376291/",
+      "vacancy_id": "87e453d7-1829-465a-b762-8ad4068ab6da"
+    },
+    {
+      "company": "Honeytech",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_honeytech_9d7ff08575264b01bf0e1a6793fa6aee",
+      "score": 86,
+      "title": "Senior Software Engineer (Back End / Full Stack)",
+      "url": "https://jobs.dou.ua/companies/honeytech/vacancies/355101/",
+      "vacancy_id": "9d7ff085-7526-4b01-bf0e-1a6793fa6aee"
+    },
+    {
+      "company": "Altris AI",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_altris-ai_587f97c56d23419392dcfa3ffbb51f21",
+      "score": 84,
+      "title": "Senior PHP Backend Developer",
+      "url": "https://jobs.dou.ua/companies/altris-ai/vacancies/376298/",
+      "vacancy_id": "587f97c5-6d23-4193-92dc-fa3ffbb51f21"
+    },
+    {
+      "company": "Phoenixgame",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_phoenixgame_ccdce7f6a9ea4247bddde639afcaa524",
+      "score": 82,
+      "title": "Middle Golang Engineer",
+      "url": "https://djinni.co/jobs/824835-middle-golang-engineer/",
+      "vacancy_id": "ccdce7f6-a9ea-4247-bddd-e639afcaa524"
+    },
+    {
+      "company": "Smartsheet",
+      "country_codes": [
+        "BG"
+      ],
+      "directory": "20261012_smartsheet_3b9fc6ee38a441f98580d40fac92b042",
+      "score": 67,
+      "title": "Software Engineer (Remote Eligible in Bulgaria)",
+      "url": "https://jobicy.com/jobs/155069-software-engineer-remote-eligible-in-bulgaria",
+      "vacancy_id": "3b9fc6ee-38a4-41f9-8580-d40fac92b042"
+    },
+    {
+      "company": "Cision",
+      "country_codes": [
+        "BG",
+        "HU"
+      ],
+      "directory": "20261012_cision_ed41f7afca3c416abf2388b1394d4aa1",
+      "score": 70,
+      "title": "Senior Staff Software Engineer",
+      "url": "https://jobicy.com/jobs/155079-senior-staff-software-engineer",
+      "vacancy_id": "ed41f7af-ca3c-416a-bf23-88b1394d4aa1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "0b990e2e52c2afda4a039c530fc69795313c346bdce2d3415e64e43c1c8a0279",
+  "schema_version": 2
+}
