@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-12T18:48:12Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Dinarys",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_dinarys_31f53e2e6ac64f829cec663a8510611d",
+      "score": 70,
+      "title": "AI Technical Lead (PHP)",
+      "url": "https://jobs.dou.ua/companies/dinarys/vacancies/368865/",
+      "vacancy_id": "31f53e2e-6ac6-4f82-9cec-663a8510611d"
+    },
+    {
+      "company": "Spendbase",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261009_spendbase_06612d99fc7c491d85954a7ed628ffad",
+      "score": 88,
+      "title": "Senior Golang Engineer (Banking)",
+      "url": "https://jobs.dou.ua/companies/spendbase/vacancies/376179/?from=list_hot",
+      "vacancy_id": "06612d99-fc7c-491d-8595-4a7ed628ffad"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "f7aaaed59b8a07958203e70c999ab187fc76cafcf17a56b4c86b88302b323679",
+  "schema_version": 2
+}
