@@ -7,6 +7,7 @@ import unittest
 from unittest.mock import AsyncMock, patch
 
 from scripts.notify_telegram import (
+    delivery_fingerprint,
     enrich_vacancy_urls,
     format_message_html,
     message_with_initiator,
@@ -51,11 +52,36 @@ class TelegramNotificationTests(unittest.TestCase):
 
         formatted = format_message_html(message)
 
-        self.assertIn("<b>Automation ID:</b> <i>batch-analysis</i>", formatted)
+        self.assertNotIn("Automation ID", formatted)
         self.assertIn("<b>SumUp — Backend Engineer</b> <i>(score 88)</i>", formatted)
-        self.assertIn("<b>Vacancy ID:</b> one", formatted)
+        self.assertIn("<b>Vacancy ID:</b> <code>one</code>", formatted)
         self.assertIn("https://example.test/job?a=1&amp;b=2", formatted)
         self.assertIn("</b> https://example.test/job?a=1&amp;b=2\n\n<b>Acme", formatted)
+
+    def test_directory_links_only_when_tracked_and_escapes_values(self) -> None:
+        message = "Vacancy ID: id<&>\nDirectory: tracked\nDirectory: absent"
+        with TemporaryDirectory() as temporary, patch(
+            "scripts.notify_telegram.subprocess.run"
+        ) as git:
+            for name in ("tracked", "absent"):
+                (Path(temporary) / "registry" / "jobs" / name).mkdir(parents=True)
+            git.side_effect = [
+                type("Result", (), {"returncode": 0, "stdout": "registry/jobs/tracked/meta.yaml\n"})(),
+                type("Result", (), {"returncode": 0, "stdout": ""})(),
+            ]
+            formatted = format_message_html(message, repository_root=Path(temporary))
+        self.assertIn("<code>id&lt;&amp;&gt;</code>", formatted)
+        self.assertIn('<a href="https://github.com/ValentinNikolaev/job-intelligence/tree/main/registry/jobs/tracked">tracked</a>', formatted)
+        self.assertIn("<b>Directory:</b> absent", formatted)
+        self.assertEqual(2, git.call_count)
+
+    def test_initiator_remains_in_deduplication_without_appearing_in_message(self) -> None:
+        message = message_with_initiator("Title\nScore: 68", "first")
+        self.assertNotIn("Automation ID", format_message_html(message))
+        self.assertNotEqual(
+            delivery_fingerprint(message, "123", initiator="first"),
+            delivery_fingerprint(message, "123", initiator="second"),
+        )
 
     def test_enriches_unavailable_url_from_registry(self) -> None:
         with TemporaryDirectory() as temporary:

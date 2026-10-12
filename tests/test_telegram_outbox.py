@@ -46,7 +46,7 @@ class TelegramOutboxTests(unittest.TestCase):
         )
         assert notification is not None
         self.assertEqual([], notification["items"][0]["country_codes"])
-        self.assertIn("\n\nExample — Backend\n", render_notification_message(notification))
+        self.assertTrue(render_notification_message(notification).startswith("Example — Backend\n"))
 
     def test_dou_and_djinni_default_to_ukraine_when_country_is_not_explicit(self) -> None:
         for source in ("dou", "djinni"):
@@ -98,7 +98,7 @@ class TelegramOutboxTests(unittest.TestCase):
             "created_at": "2026-08-19T08:00:00Z",
         }
         self.assertEqual(notification, validate_notification(notification))
-        self.assertIn("\n\nExample — Backend\n", render_notification_message(notification))
+        self.assertTrue(render_notification_message(notification).startswith("Example — Backend\n"))
 
     def test_country_codes_are_validated_and_protected_by_payload_hash(self) -> None:
         notification = build_analysis_notification(
@@ -213,12 +213,14 @@ class TelegramOutboxTests(unittest.TestCase):
 
         message = render_notification_message(notification)
 
-        self.assertIn("Automation ID: job-intelligence-batch-vacancy-analysis", message)
+        self.assertNotIn("Automation ID", message)
+        self.assertEqual("job-intelligence-batch-vacancy-analysis", notification["initiator"])
         self.assertIn("Example — Backend", message)
         self.assertIn("Score: 80", message)
         self.assertIn("Vacancy ID: eligible-id", message)
         self.assertIn("Directory: eligible", message)
         self.assertIn("URL: https://example.test/eligible", message)
+        self.assertIn("<code>eligible-id</code>", format_message_html(message))
 
     def test_tampered_manifest_is_rejected(self) -> None:
         notification = build_analysis_notification(

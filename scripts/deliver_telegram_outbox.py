@@ -35,6 +35,7 @@ async def _main() -> int:
             token=token,
             chat_id=chat_id,
             receipt_dir=args.receipt_dir,
+            initiator=notification["initiator"],
         )
     args.sent_dir.mkdir(parents=True, exist_ok=True)
     sent_path = args.sent_dir / args.outbox_file.name

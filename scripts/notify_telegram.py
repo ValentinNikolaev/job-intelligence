@@ -11,6 +11,8 @@ import shutil
 import sys
 from pathlib import Path
 import re
+import subprocess
+from urllib.parse import quote
 
 import yaml
 
@@ -18,6 +20,7 @@ from jobintel.config import load_env
 
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/sendMessage"
+REPOSITORY_URL = "https://github.com/ValentinNikolaev/job-intelligence"
 _LABEL_RE = re.compile(r"^(Automation ID|Score|Vacancy ID|Directory|URL):\s*(.*)$", re.IGNORECASE)
 _MISSING_URLS = {"", "-", "—", "n/a", "none", "unknown", "unavailable"}
 _VACANCY_ID_RE = re.compile(r"^\s*Vacancy ID:\s*(\S+)\s*$", re.IGNORECASE)
@@ -96,7 +99,26 @@ def validate_vacancy_urls(message: str) -> None:
         raise ValueError(f"Vacancy notification contains missing URLs for: {', '.join(missing)}")
 
 
-def format_message_html(message: str) -> str:
+def _tracked_directory_url(directory: str, repository_root: Path) -> str | None:
+    if not directory or directory in {".", ".."} or "/" in directory or "\\" in directory:
+        return None
+    relative = f"registry/jobs/{directory}"
+    if not (repository_root / relative).is_dir():
+        return None
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "--cached", "--", f":(literal){relative}"],
+            cwd=repository_root, capture_output=True, text=True, check=False,
+        )
+    except OSError:
+        return None
+    if result.returncode or not result.stdout.strip():
+        return None
+    return f"{REPOSITORY_URL}/tree/main/registry/jobs/{quote(directory, safe='')}"
+
+
+def format_message_html(message: str, *, repository_root: Path | None = None) -> str:
+    repository_root = repository_root or Path(__file__).resolve().parents[1]
     lines = message.strip().splitlines()
     separated: list[str] = []
     for line in lines:
@@ -115,7 +137,17 @@ def format_message_html(message: str) -> str:
         if label_match:
             label = label_match.group(1)
             value = escape(label_match.group(2), quote=False)
-            if label.casefold() in {"automation id", "score"}:
+            if label.casefold() == "automation id":
+                continue
+            if label.casefold() == "vacancy id":
+                rendered.append(f"<b>{escape(label)}:</b> <code>{value}</code>")
+            elif label.casefold() == "directory":
+                url = _tracked_directory_url(label_match.group(2).strip(), repository_root)
+                if url:
+                    rendered.append(f'<b>{escape(label)}:</b> <a href="{escape(url, quote=True)}">{value}</a>')
+                else:
+                    rendered.append(f"<b>{escape(label)}:</b> {value}")
+            elif label.casefold() == "score":
                 rendered.append(f"<b>{escape(label)}:</b> <i>{value}</i>")
             else:
                 rendered.append(f"<b>{escape(label)}:</b> {value}")
@@ -222,8 +254,10 @@ async def send_message(message: str, *, token: str, chat_id: str) -> dict[str, o
     return response
 
 
-def delivery_fingerprint(message: str, chat_id: str) -> str:
+def delivery_fingerprint(message: str, chat_id: str, *, initiator: str | None = None) -> str:
     payload = f"{chat_id}\0{format_message_html(message)}"
+    if initiator:
+        payload = f"{initiator}\0{payload}"
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
 
@@ -233,9 +267,10 @@ async def send_message_once(
     token: str,
     chat_id: str,
     receipt_dir: Path,
+    initiator: str | None = None,
 ) -> tuple[dict[str, object] | None, bool]:
     receipt_dir.mkdir(parents=True, exist_ok=True)
-    fingerprint = delivery_fingerprint(message, chat_id)
+    fingerprint = delivery_fingerprint(message, chat_id, initiator=initiator)
     receipt_path = receipt_dir / f"{fingerprint}.json"
     if receipt_path.is_file():
         return None, False
@@ -257,6 +292,7 @@ async def send_message_once(
             "fingerprint": fingerprint,
             "sent_at": datetime.now(timezone.utc).isoformat(),
             "telegram_message_id": message_id,
+            "initiator": initiator,
         }
         temporary = receipt_dir / f".{fingerprint}.{os.getpid()}.tmp"
         temporary.write_text(json.dumps(receipt, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -303,6 +339,7 @@ async def _main() -> int:
             token=token,
             chat_id=chat_id,
             receipt_dir=Path(__file__).resolve().parents[1] / ".codex-work" / "telegram-deliveries",
+            initiator=args.initiator,
         )
     except Exception as exc:
         print(f"Telegram notification error: {exc}", file=sys.stderr)

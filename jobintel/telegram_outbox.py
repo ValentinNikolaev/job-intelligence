@@ -283,7 +283,7 @@ def render_notification_message(
     notification: Mapping[str, Any], *, items: list[dict[str, Any]] | None = None
 ) -> str:
     validated = validate_notification(notification)
-    lines = [f"Automation ID: {validated['initiator']}"]
+    lines: list[str] = []
     for item in validated["items"] if items is None else items:
         flags = render_country_flags(item.get("country_codes", []))
         headline = f"{item['company']} — {item['title']}"
