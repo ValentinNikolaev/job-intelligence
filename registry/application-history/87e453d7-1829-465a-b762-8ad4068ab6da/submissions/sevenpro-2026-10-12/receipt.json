@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "710b08e599f6759db453169a7495a904856fa1b9a3b62d85b877c3c99ff01fa0",
+      "size": 12311,
+      "snapshot": "files/application/CV_ValentinNikolaev_sevenpro_PHPFullStackEngineerPartTime.docx",
+      "source": "registry/jobs/20261012_sevenpro_87e453d71829465ab7628ad4068ab6da/application/CV_ValentinNikolaev_sevenpro_PHPFullStackEngineerPartTime.docx"
+    }
+  ],
+  "channel": "web-form",
+  "event_id": "submission:sevenpro-2026-10-12",
+  "format": "docx",
+  "kind": "submission",
+  "occurred_on": "2026-10-12",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/87e453d7-1829-465a-b762-8ad4068ab6da/submissions/sevenpro-2026-10-12",
+  "submission_id": "sevenpro-2026-10-12",
+  "vacancy_id": "87e453d7-1829-465a-b762-8ad4068ab6da"
+}

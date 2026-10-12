@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "266f97c485a367aff8f7933e9f84bfb63564fb4ccec78a45e85d2f5b27886176",
+      "size": 12296,
+      "snapshot": "files/application/CV_ValentinNikolaev_altrisai_SeniorPHPBackendDeveloper.docx",
+      "source": "registry/jobs/20261012_altris-ai_587f97c56d23419392dcfa3ffbb51f21/application/CV_ValentinNikolaev_altrisai_SeniorPHPBackendDeveloper.docx"
+    }
+  ],
+  "channel": "not_provided",
+  "event_id": "submission:altris-ai-2026-10-12",
+  "format": "docx",
+  "kind": "submission",
+  "occurred_on": "2026-10-12",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/587f97c5-6d23-4193-92dc-fa3ffbb51f21/submissions/altris-ai-2026-10-12",
+  "submission_id": "altris-ai-2026-10-12",
+  "vacancy_id": "587f97c5-6d23-4193-92dc-fa3ffbb51f21"
+}

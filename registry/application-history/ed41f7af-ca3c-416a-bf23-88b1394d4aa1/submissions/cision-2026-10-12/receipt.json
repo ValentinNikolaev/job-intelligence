@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "97c4c64aff6f273eec358fcf831ed7e834041d095e79877c3bead251eab0073b",
+      "size": 12453,
+      "snapshot": "files/application/CV_ValentinNikolaev_cision_SeniorStaffSoftwareEngineer.docx",
+      "source": "registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/CV_ValentinNikolaev_cision_SeniorStaffSoftwareEngineer.docx"
+    }
+  ],
+  "channel": "web-form",
+  "event_id": "submission:cision-2026-10-12",
+  "format": "docx",
+  "kind": "submission",
+  "occurred_on": "2026-10-12",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/ed41f7af-ca3c-416a-bf23-88b1394d4aa1/submissions/cision-2026-10-12",
+  "submission_id": "cision-2026-10-12",
+  "vacancy_id": "ed41f7af-ca3c-416a-bf23-88b1394d4aa1"
+}
