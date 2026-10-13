@@ -1,0 +1,30 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-13T19:35:32Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Stape",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261013_stape_1eaf3ec9f12a45008aae58f568943dc1",
+      "score": 93,
+      "title": "PHP Team Lead",
+      "url": "https://jobs.dou.ua/companies/stape-inc/vacancies/371904/",
+      "vacancy_id": "1eaf3ec9-f12a-4500-8aae-58f568943dc1"
+    },
+    {
+      "company": "Eventhub GmbH",
+      "country_codes": [],
+      "directory": "20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25",
+      "score": 78,
+      "title": "Senior Fullstack PHP/Laravel Developer – Remote (Europe/Berlin Time Zone)",
+      "url": "https://larajobs.com/job/3945",
+      "vacancy_id": "f2e096b9-770f-42ad-9ce7-06b6372c6e25"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a19adff133a86cfd8269a7ff12ea739caa4426a6a2f84f6be214206809272c5f",
+  "schema_version": 2
+}
