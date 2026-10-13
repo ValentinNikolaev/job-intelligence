@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "8ca706f6b8eec7f2c86ddba15ced95e74c54394b91f1e91a521a1630e033b1ab",
+      "size": 83798,
+      "snapshot": "files/application/CV_ValentinNikolaev_Eventhub.pdf",
+      "source": "registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/application/CV_ValentinNikolaev_Eventhub.pdf"
+    }
+  ],
+  "channel": "web-form",
+  "event_id": "submission:eventhub-2026-10-14",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-10-14",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/f2e096b9-770f-42ad-9ce7-06b6372c6e25/submissions/eventhub-2026-10-14",
+  "submission_id": "eventhub-2026-10-14",
+  "vacancy_id": "f2e096b9-770f-42ad-9ce7-06b6372c6e25"
+}
