@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 57
+Total vacancies: 61
 
-- Found: 35
+- Found: 39
 - Applied: 18
 - Interview: 4
 
@@ -12,6 +12,10 @@ Total vacancies: 57
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-13 | [Eventhub GmbH](../registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/) | [Senior Fullstack PHP/Laravel Developer – Remote (Europe/Berlin Time Zone)](../registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/job.md) | Remote (Europe/Berlin Time Zone) | Larajobs | Found | 2026-10-13 | [Larajobs](https://larajobs.com/job/3945) | — | — | — | — | — |
+| 2026-10-13 | [infisical](../registry/jobs/20261013_infisical_459d4bcfb043454ea178ff340055c3d1/) | [Full Stack Engineer](../registry/jobs/20261013_infisical_459d4bcfb043454ea178ff340055c3d1/job.md) | Brazil,  Canada,  Europe,  USA | Jobicy | Found | 2026-10-13 | [Jobicy](https://jobicy.com/jobs/155189-full-stack-engineer-3) | — | — | — | — | — |
+| 2026-10-13 | [Smartsheet](../registry/jobs/20261013_smartsheet_26b6c213dac74cd5a32d4d521c95fb9f/) | [Sr. Software Engineer (Remote Eligible from Bulgaria)](../registry/jobs/20261013_smartsheet_26b6c213dac74cd5a32d4d521c95fb9f/job.md) | Bulgaria | Jobicy | Found | 2026-10-13 | [Jobicy](https://jobicy.com/jobs/155172-sr-software-engineer-remote-eligible-from-bulgaria) | — | — | — | — | — |
+| 2026-10-13 | [Stape](../registry/jobs/20261013_stape_1eaf3ec9f12a45008aae58f568943dc1/) | [PHP Team Lead](../registry/jobs/20261013_stape_1eaf3ec9f12a45008aae58f568943dc1/job.md) | за кордоном, віддалено | Dou | Found | 2026-10-13 | [Dou](https://jobs.dou.ua/companies/stape-inc/vacancies/371904/) | [Open](../registry/jobs/20261013_stape_1eaf3ec9f12a45008aae58f568943dc1/company.md) | — | — | — | — |
 | 2026-10-13 | [HZ AI Inc](../registry/jobs/20261013_hz-ai-inc_9bbd3f821e584d4ead35a44195ca62d6/) | [Senior Go Backend Engineer](../registry/jobs/20261013_hz-ai-inc_9bbd3f821e584d4ead35a44195ca62d6/job.md) | Worldwide | Djinni | Found | 2026-10-13 | [Djinni](https://djinni.co/jobs/852889-senior-go-backend-engineer/) | — | — | — | — | — |
 | 2026-10-12 | [Dinarys](../registry/jobs/20261012_dinarys_31f53e2e6ac64f829cec663a8510611d/) | [AI Technical Lead (PHP)](../registry/jobs/20261012_dinarys_31f53e2e6ac64f829cec663a8510611d/job.md) | віддалено | Dou | Found | 2026-10-12 | [Dou](https://jobs.dou.ua/companies/dinarys/vacancies/368865/) | [Open](../registry/jobs/20261012_dinarys_31f53e2e6ac64f829cec663a8510611d/company.md) | — | — | — | — |
 | 2026-10-12 | [Cision](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/) | [Senior Staff Software Engineer](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/job.md) | Bulgaria,  Hungary | Jobicy | Found | 2026-10-12 | [Jobicy](https://jobicy.com/jobs/155079-senior-staff-software-engineer) | — | [MD](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/cv.md) / [DOCX](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/cv.docx) | [MD](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/cover-letter.md) / [DOCX](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/cover-letter.docx) | [Open](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/analysis.md) | [Open](../registry/jobs/20261012_cision_ed41f7afca3c416abf2388b1394d4aa1/application/interview-preparation.md) |
