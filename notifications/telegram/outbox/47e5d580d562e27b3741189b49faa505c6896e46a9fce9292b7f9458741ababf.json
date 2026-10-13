@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-13T09:30:33Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "HZ AI Inc",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261013_hz-ai-inc_9bbd3f821e584d4ead35a44195ca62d6",
+      "score": 87,
+      "title": "Senior Go Backend Engineer",
+      "url": "https://djinni.co/jobs/852889-senior-go-backend-engineer/",
+      "vacancy_id": "9bbd3f82-1e58-4d4e-ad35-a44195ca62d6"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "47e5d580d562e27b3741189b49faa505c6896e46a9fce9292b7f9458741ababf",
+  "schema_version": 2
+}
