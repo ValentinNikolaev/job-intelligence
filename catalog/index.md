@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 54
+Total vacancies: 55
 
-- Found: 31
+- Found: 32
 - Applied: 18
 - Interview: 4
 - Rejected: 1
@@ -13,6 +13,7 @@ Total vacancies: 54
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-14 | [Nord Security](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/) | [Backend Engineer \| Mid - Senior \| Business Onboarding & Setup Team](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/job.md) | Vilnius; Kaunas, Lithuania (Hybrid) | Manual | Found | 2026-10-14 | [Manual](https://jobs.ashbyhq.com/nord-security/a8f7480a-ce42-4e20-8132-a29030963f6c) | — | [MD](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cv.md) / [DOCX](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cv.docx) | [MD](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cover-letter.md) / [DOCX](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cover-letter.docx) | [Open](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/analysis.md) | [Open](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/interview-preparation.md) |
 | 2026-10-14 | [Sombra](../registry/jobs/20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da/) | [Senior Golang Engineer](../registry/jobs/20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da/job.md) | Київ, Львів, Івано-Франківськ, віддалено | Dou | Found | 2026-10-14 | [Dou](https://jobs.dou.ua/companies/sombra/vacancies/376646/) | [Open](../registry/jobs/20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da/company.md) | — | — | — | — |
 | 2026-10-14 | [OpenTag](../registry/jobs/20261014_opentag_43c3cb17cf184cb78c164657b8f8b5ba/) | [Senior Golang Developer](../registry/jobs/20261014_opentag_43c3cb17cf184cb78c164657b8f8b5ba/job.md) | Київ, Софія (Болгарія), віддалено | Dou | Found | 2026-10-14 | [Dou](https://jobs.dou.ua/companies/opentag/vacancies/311552/) | [Open](../registry/jobs/20261014_opentag_43c3cb17cf184cb78c164657b8f8b5ba/company.md) | — | — | — | — |
 | 2026-10-14 | [АЛЛО](../registry/jobs/20261014_%D0%B0%D0%BB%D0%BB%D0%BE_28288dd0b86c4544bbc7898a0c055d90/) | [Magento Developer](../registry/jobs/20261014_%D0%B0%D0%BB%D0%BB%D0%BE_28288dd0b86c4544bbc7898a0c055d90/job.md) | Дніпро, віддалено | Dou | Found | 2026-10-14 | [Dou](https://jobs.dou.ua/companies/allo/vacancies/376635/) | [Open](../registry/jobs/20261014_%D0%B0%D0%BB%D0%BB%D0%BE_28288dd0b86c4544bbc7898a0c055d90/company.md) | — | — | — | — |

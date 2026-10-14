@@ -876,8 +876,11 @@ entries:
     reviewed_at: '2026-09-25'
     method: Candidate supplied verification bases for offered LinkedIn metrics without
       excluding any; not independently audited.
-  review_notes: Use only within stated system scope and preserve original units; candidate
-    correction supersedes this entry.
+  review_notes: Use only within stated DataLake/event-system scope and preserve original
+    units. The direct candidate metric review contextually confirms these figures
+    with Grafana, operational observation, or code/data as the stated basis; no independent
+    company-system audit. Any later candidate correction, if supplied, takes precedence;
+    no such correction identified in candidate sources reviewed on 2026-10-14.
 - id: crurated-reviewed-stream-onboarding
   employer: CRURATED
   role: PHP Software Developer
@@ -895,8 +898,11 @@ entries:
     reviewed_at: '2026-09-25'
     method: Candidate supplied verification bases for offered LinkedIn metrics without
       excluding any; not independently audited.
-  review_notes: Use only within stated system scope and preserve original units; candidate
-    correction supersedes this entry.
+  review_notes: Use only within stated DataLake/event-system scope and preserve original
+    units. The direct candidate metric review contextually confirms these figures
+    with Grafana, operational observation, or code/data as the stated basis; no independent
+    company-system audit. Any later candidate correction, if supplied, takes precedence;
+    no such correction identified in candidate sources reviewed on 2026-10-14.
 - id: crurated-reviewed-delivery-reliability
   employer: CRURATED
   role: PHP Software Developer
@@ -913,8 +919,11 @@ entries:
     reviewed_at: '2026-09-25'
     method: Candidate supplied verification bases for offered LinkedIn metrics without
       excluding any; not independently audited.
-  review_notes: Use only within stated system scope and preserve original units; candidate
-    correction supersedes this entry.
+  review_notes: Use only within stated DataLake/event-system scope and preserve original
+    units. The direct candidate metric review contextually confirms these figures
+    with Grafana, operational observation, or code/data as the stated basis; no independent
+    company-system audit. Any later candidate correction, if supplied, takes precedence;
+    no such correction identified in candidate sources reviewed on 2026-10-14.
 - id: crurated-reviewed-event-types
   employer: CRURATED
   role: PHP Software Developer
@@ -932,8 +941,11 @@ entries:
     reviewed_at: '2026-09-25'
     method: Candidate supplied verification bases for offered LinkedIn metrics without
       excluding any; not independently audited.
-  review_notes: Use only within stated system scope and preserve original units; candidate
-    correction supersedes this entry.
+  review_notes: Use only within stated DataLake/event-system scope and preserve original
+    units. The direct candidate metric review contextually confirms these figures
+    with Grafana, operational observation, or code/data as the stated basis; no independent
+    company-system audit. Any later candidate correction, if supplied, takes precedence;
+    no such correction identified in candidate sources reviewed on 2026-10-14.
 - id: airslate-production-fixes
   employer: airSlate
   role: Software Developer
@@ -1691,3 +1703,260 @@ entries:
     method: Compared exact location in primary candidate CV.
   review_notes: Location only. Does not imply office attendance, relocation, work
     authorization, or language proficiency.
+- id: candidate-supported-backend-skills
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '### Languages
+
+
+      - Go
+
+      - PHP
+
+
+      ### Frameworks
+
+
+      - Laravel
+
+      - Symfony
+
+
+      ### Infrastructure
+
+
+      - AWS
+
+      - Kubernetes
+
+      - RabbitMQ
+
+
+      ### Databases
+
+
+      - MySQL
+
+      - PostgreSQL
+
+      - Elasticsearch
+
+
+      ### Architecture
+
+
+      - Microservices
+
+      - Event-driven systems
+
+
+      ### Messaging Systems
+
+
+      - Email delivery infrastructure
+
+      - DNS / DKIM / SPF / DMARC
+
+
+      ### Observability
+
+
+      - Prometheus
+
+      - Monitoring & logging
+
+
+      ### CI/CD
+
+
+      - GitHub Actions
+
+      - ArgoCD
+
+      - Helm
+
+
+      ### Engineering
+
+
+      - System design
+
+      - Performance optimization
+
+      - Production reliability
+
+
+      ### AI / Automation
+
+
+      - OpenAI APIs
+
+      - LLM automation systems'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Source-reported general skills only. Does not confirm the withdrawn
+    airSlate ECS-to-Kubernetes migration or employer-specific technology outcomes.
+- id: simple-confirmed-2026-stack
+  source:
+    path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+    quote: 'Stack: Go, PostgreSQL (GORM), AWS (Amazon Connect, SQS, IAM/IRSA, Lambda),
+      Kubernetes CronJobs, Terraform, Intercom API, Zendesk API, Snowflake, OpenAI/LLM
+      tooling, OpenAPI, DeepL, Braze, AppsFlyer, Microsoft Entra ID.'
+    sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+  status: verified
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Stack only; Software Developer title and year-only2026 end remain
+    governed by direct follow-up. No newer title/end-month is established.
+- id: airslate-source-stack
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: 'PHP | Laravel | MySQL | Elasticsearch | RabbitMQ | AWS | Kubernetes |
+
+      Prometheus | REST APIs | CI/CD'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Role-specific technology list only; ECS-to-Kubernetes migration remains
+    withdrawn. Symfony usage is separately evidenced by the logger entry.
+- id: candidate-education-languages
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "## Education\n\n- **MSc in Computer Science**, National Technical University,\
+      \ Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n- **Ukrainian - native**\n\
+      - **English - Upper-intermediate**\n"
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Transcribed source degree and languages. No new proficiency assessment
+    or credential attestation.
+- id: candidate-public-contact-links
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "Rome, Italy  \nvaleinikolaev@gmail.com | +39 351 370 1194  \n[LinkedIn](https://linkedin.com/in/valentinnikolaev)\
+      \ |\n[GitHub](https://github.com/ValentinNikolaev)"
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  status: verified
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Public application contact links transcribed from immutable candidate
+    CV.
+- id: pdffiller-source-chronology-conservative
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "**Technical Lead**  \nOctober 2016 - December 2018 (2 years 3 months)\
+      \  \nKyiv, Kyiv City, Ukraine"
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  status: retracted
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Imported LinkedIn period conflicts with imported CV ending2019. This
+    records the shorter source period for conservative chronology, not a resolution
+    or new candidate confirmation; role title separately remains Software Developer
+    as candidate-confirmed.
+  reason: The direct candidate date clarification in employment-letter-extract-2026-09-25.md
+    confirms November 2019 and supersedes this imported earlier end date for CV chronology.
+- id: pdffiller-candidate-confirmed-end-2019
+  status: verified
+  source:
+    path: registry/candidate/employment-letter-extract-2026-09-25.md
+    quote: '## Candidate date clarification
+
+
+      Asked whether PDFfiller ended on 30 November 2018 as in the letter extract or
+      November 2019 as in the CV, the candidate chose:
+
+
+      > CV верно: ноябрь 2019
+
+
+      Use November 2019 as the PDFfiller end date in CV chronology. The reason the
+      letter covers a shorter period remains unknown; do not infer a legal-entity
+      transfer or role change.'
+    sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Direct candidate clarification chooses CV end date November 2019 over
+    earlier letter/LinkedIn dates. No new start-date or title confirmation.
+- id: pdffiller-source-start-date
+  status: verified
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: October 2016 - November 2019
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: CV start October2016; November2019 end is separately candidate-confirmed
+    by pdffiller-candidate-confirmed-end-2019. This entry excludes retracted email-volume
+    claims.
+- id: pdffiller-messaging-design
+  status: verified
+  source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: "- Made key technical decisions and built deep expertise in email infrastructure,\n\
+      \  including **DNS**, **DKIM**, **SPF**, **DMARC**, and **FBLs**."
+    context_quote: '### PDFfiller
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Messaging design and DNS/DKIM/SPF/DMARC/FBL expertise only. Excludes
+    withdrawn email volume and imported conflicting end-date claims; ordinary volume/peak
+    and end date have separate direct candidate confirmations.
+  employer: PDFfiller
+  role: Software Developer
+- id: airslate-planning-general-role
+  employer: airSlate
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: "- Played a key role in Agile planning with Product Management and Development,\n\
+      \  building feature road maps and supporting release plans.\n- Was responsible\
+      \ for delivering team assignments on all stages of the project from\n  draft\
+      \ to production release.\n- Performed task evaluation, planning and distribution\
+      \ between team members in\n  accordance with Planning Intervals (PI)."
+    context_quote: '### airSlate
+
+
+      #### Technical Lead'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  role: Software Developer
+  status: verified
+  verification:
+    reviewer: Codex root source-excerpt review for NordPass package
+    reviewed_at: '2026-10-14'
+    method: source-quote-and-attribution-review
+  review_notes: Planning and release responsibilities from imported LinkedIn, attributed
+    with the general Software Developer title in the primary CV. Original Technical
+    Lead evidence entry remains unchanged; the supplied employment letter separately
+    establishes Programming Team Lead scope. No new date or quantified result.
+  attribution_source:
+    path: registry/candidate/backend-engineer-cv.md
+    quote: '### airSlate
+
+
+      **Software Developer**'
+    sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
