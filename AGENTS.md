@@ -98,7 +98,11 @@ a selected project workflow profile.
 
 ## Application quality
 
-- New application drafts follow quality schema 2 in `docs/application-quality.md`.
+- New application drafts follow quality schema 3 in `docs/application-quality.md`
+  and the executable review contract in `docs/application-review-contract.md`.
+  Before changing application prompts or editorial policy, run the blind corpus
+  workflow in `prompts/editorial-evaluation.md`. Keep semantic judgment in Codex;
+  project code checks source records, artifact bindings and curated decisions.
   Legacy receipts must remain identified as legacy; never upgrade them by relabeling.
 - Candidate evidence banks are derived indexes of immutable candidate source files.
   Unverified, cannot-confirm and retracted entries cannot support generated claims.

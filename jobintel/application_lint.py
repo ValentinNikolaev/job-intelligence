@@ -14,7 +14,8 @@ from .applications import (
     _markdown_section, _read_yaml_mapping, _required_handoffs, _selected_documents,
     _validate_cv_audit_bullet_coverage,
 )
-from .evidence import validate_evidence_bank
+from .evidence import validate_evidence_bank, validate_claims_ledger
+from .application_review import validate_role_inventory, validate_letter_review
 
 
 def _diagnostic(items: list[dict[str, str]], code: str, message: str, path: Path) -> None:
@@ -113,7 +114,7 @@ def lint_application_draft(
             for marker in markers:
                 if marker.casefold() not in content.casefold():
                     _diagnostic(diagnostics, "HANDOFF_MARKER", f"{filename} is missing marker: {marker}", path)
-        if quality.get("schema_version") == 2:
+        if quality.get("schema_version") in {2, 3}:
             review = quality.get("final_review")
             hashes = review.get("document_sha256") if isinstance(review, Mapping) else None
             if not isinstance(hashes, Mapping):
@@ -136,6 +137,19 @@ def lint_application_draft(
                         _diagnostic(diagnostics, "EVIDENCE_UNAVAILABLE", str(exc), project_root / bank_path)
             ledger = _load(draft / ledger_path, "application claims ledger", diagnostics) if isinstance(ledger_path, str) else None
             if isinstance(bank, Mapping) and isinstance(ledger, Mapping):
+                if quality.get('schema_version') == 3:
+                    checks = [("CLAIM_CONTEXT", lambda: validate_claims_ledger(ledger, bank, package, project_root))]
+                    if ledger.get('schema_version') != 2:
+                        _diagnostic(diagnostics, 'CLAIM_CONTEXT', 'quality v3 requires claims ledger schema_version 2', quality_path)
+                    if 'cv_markdown' in package:
+                        checks.append(('ROLE_COVERAGE', lambda: validate_role_inventory(quality.get('cv_audit', {}), package['cv_markdown'], project_root)))
+                    if 'cover_letter_markdown' in package:
+                        checks.append(('LETTER_REVIEW', lambda: validate_letter_review(quality, package['cover_letter_markdown'], draft, project_root, ledger)))
+                    for code, check in checks:
+                        try:
+                            check()
+                        except (ValueError, OSError, KeyError, TypeError) as exc:
+                            _diagnostic(diagnostics, code, str(exc), quality_path)
                 entries = {str(entry.get("id")): entry for entry in bank.get("entries", []) if isinstance(entry, Mapping)}
                 for claim in ledger.get("claims", []):
                     if not isinstance(claim, Mapping):

@@ -1,10 +1,16 @@
 # Evidence-backed application quality
 
-New preparation uses quality contract 2. Existing contract-1 packages remain readable
-and explicitly legacy; their boolean review declarations are not upgraded to verified
-claims. Reprepare an explicitly approved vacancy to create a new v2 package. Match
+New preparation uses quality contract 3. Existing contract-1 and contract-2 packages remain readable
+and explicitly legacy; their existing review declarations are not upgraded to verified
+v3 claims. Reprepare only an explicitly approved vacancy to create a new v3 package. Match
 analysis and preparation still run inside Codex; project code only validates and
 publishes local drafts.
+
+The [review contract](application-review-contract.md) specifies the additional v3
+role inventory, source excerpts for contribution/scope/consequence, measurement
+context, final-letter review and editorial evaluation commands. The v2 examples
+below describe the retained grounding/export foundation, not a complete new draft.
+Do not regenerate existing CVs or receipts merely to introduce this contract.
 
 An explicit named-vacancy refresh of an existing CV can use
 `--document cv --allow-low-score-cv-refresh` when its current approved-profile match is

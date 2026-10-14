@@ -472,24 +472,32 @@ class ApplicationTests(unittest.TestCase):
             generator.generate_directory(self.directory)
         self.assertFalse((self.directory / "application" / "cover-letter.docx").exists())
 
-    def test_v2_publishes_export_and_grounding_receipts(self):
+    def test_v3_publishes_export_and_grounding_receipts(self):
         from tests.test_document_quality import write_docx
 
         class RealFixtureConverter:
             def convert(self, source, target):
                 write_docx(target, source.read_text(encoding="utf-8").splitlines())
 
-        draft, package, _ = self.v2_letter_draft()
+        from tests.application_review_fixtures import add_letter_review
+        draft, package, quality = self.v2_letter_draft()
+        add_letter_review(self.project, draft, quality, package)
         (draft / "cover-letter.md").write_text(package["cover_letter_markdown"], encoding="utf-8")
         client = CodexApplicationDraftClient(draft, model="test-model", document="cover-letter")
         generator = self._generator(client, RealFixtureConverter(), document="cover-letter")
         self.assertEqual("prepared", generator.generate_directory(self.directory).status)
         manifest = yaml.safe_load((self.directory / "application" / "manifest.yaml").read_text(encoding="utf-8"))
-        self.assertEqual(2, manifest["quality_contract_version"])
+        self.assertEqual(3, manifest["quality_contract_version"])
         self.assertEqual("not_reviewed", manifest["quality"]["exports"]["cover-letter"]["visual_review"]["status"])
         self.assertEqual("delivery", manifest["quality"]["grounding"]["evidence_entries"][0]["id"])
         self.assertTrue(generator.is_current(self.directory))
         exported = self.directory / "application" / "cover-letter.docx"
+        voice_path = self.project / 'config/social-voice.md'
+        original_voice = voice_path.read_bytes()
+        voice_path.write_bytes(b'Changed canonical voice')
+        self.assertFalse(generator.is_current(self.directory))
+        voice_path.write_bytes(original_voice)
+        self.assertTrue(generator.is_current(self.directory))
         exported.write_bytes(b"corrupted after validation")
         self.assertFalse(generator.is_current(self.directory))
 
@@ -500,7 +508,7 @@ class ApplicationTests(unittest.TestCase):
         (draft / "cover-letter.md").write_text(application_payload()["cover_letter_markdown"], encoding="utf-8")
         generator = ApplicationGenerator(self.registry_root, [self.profile], self.prompt,
             CodexApplicationDraftClient(draft, model="test", document="cover-letter"), FakeConverter(), document="cover-letter")
-        with self.assertRaisesRegex(ApplicationError, "publication requires quality schema_version 2"):
+        with self.assertRaisesRegex(ApplicationError, "publication requires quality schema_version 3"):
             generator.generate_directory(self.directory)
         self.assertFalse((self.directory / "application" / "manifest.yaml").exists())
 

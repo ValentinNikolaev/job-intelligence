@@ -183,8 +183,10 @@ explicit single-document request, use the full-package flow below.
      Keep two supported abilities in the internal workbench; use at most one
      brief visible example and explain relevance once. A natural purpose opening
      is allowed for email. For an attachment, standard format uses four to six
-     body paragraphs (three to six in compact), two distinct evidence stories,
+     body paragraphs (three to six in compact), two internal complementary evidence strands,
      and a company-specific hook grounded in verified research;
+      normally narrate at most one short example; add a second only for a distinct
+      substantive vacancy expectation and record the additional reader value;
      open with a role-specific proposition rather than the reusable "I am applying
      for" formula for attachments. Name a past employer only when its identity makes a selected
      example clearer; do not retell the CV or imply a personal result from a
@@ -214,12 +216,19 @@ explicit single-document request, use the full-package flow below.
    or final artifacts from different vacancies. Complete all four final drafts for the
    default scope, or only the explicitly selected draft, under its own
    `.codex-work/application/<vacancy-directory>/`.
-12. Before validation, write `quality.yaml`, schema version 2, in the vacancy draft:
+12. Before validation, write `quality.yaml`, schema version 3, in the vacancy draft:
     `workflow: two-wave`; cover-letter skill name, version, and completed workbench;
-    two evidence stories with candidate sources; company-motivation fact and source URL;
+    two internal evidence strands with candidate sources; company-motivation fact and source URL;
     and final claim grounding plus cross-file consistency results.
     Record the letter channel (email or attachment). Complete the canonical
     employer-letter delivery check on the exact final text after simplifying.
+    Apply `docs/application-review-contract.md` in the same passes: enrich only the
+    selected evidence with exact contextual excerpts; list unknowns with `evidence
+    questions`; use claims ledger schema 2 with attributed measurement records;
+    record every source employer and independently reviewed scope decision in
+    `cv_audit.role_coverage`; bind the final letter review to its text, mapping,
+    company snapshot and current canonical voice files. Never invent a measurement
+    baseline/method or turn a proposal into delivery. Reuse current verified sources.
 13. After the main consistency pass, run the fast deterministic lint first:
    `python run.py lint-application <vacancy-directory> --input
    .codex-work/application/<vacancy-directory> [--document <document>]`.
@@ -265,11 +274,11 @@ explicit single-document request, use the full-package flow below.
     artifact filenames, or vacancy ID: the source URL and per-vacancy package directory
     links are mandatory handoff information.
 
-## Version 2 preparation contract
+## Version 3 preparation contract
 
-All new drafts use quality schema 2 and `docs/application-quality.md`. Include the
+All new drafts use quality schema 3 and `docs/application-quality.md`. Include the
 verified evidence bank, claims ledger, sourced requirement matrix, format selection,
 final CV audit and hash-bound review. Read the compact-format overrides in the
-application prompt before drafting. Legacy schema 1 stays readable with a migration
+application prompt before drafting. Legacy schemas 1 and 2 stay readable with a migration
 notice and does not become current v2 evidence by relabeling. Review actual exported
 text and rendered pages; never mark an uninspected file visually reviewed.

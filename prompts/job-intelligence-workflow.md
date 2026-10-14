@@ -119,10 +119,13 @@ drafting application artifacts. Preserve both model labels as content provenance
    requirements/risks handoff, and verified research without browsing again; analysis
    receives the vacancy, final CV, and all Wave 1 handoffs.
 4. Before validation, write `.codex-work/application/<directory>/quality.yaml`, schema
-   version 2, with `workflow: two-wave`; cover-letter skill name/version;
-   `workbench_complete: true`; two evidence stories with `candidate_source`; a
+   version 3, with `workflow: two-wave`; cover-letter skill name/version;
+   `workbench_complete: true`; two internal evidence strands with `candidate_source`; a
    company-motivation fact and `source_url`; and final `claim_grounding: true` and
    `cross_file_consistency: true`.
+   Apply `docs/application-review-contract.md` in these same passes: claims ledger
+   schema 2, complete reviewed role inventory, contextual measurements and a final
+   letter review bound to text, priorities, primary-source snapshot and current voice.
 5. The main agent performs one cross-file consistency and claim check, runs
    `lint-application` once per finalized vacancy, previews selected CV drafts with
    `python run.py documents preview-cv .codex-work/application/<directory>/cv.md`,
@@ -188,10 +191,10 @@ Keep run identifiers and mechanical file counts in the commit body.
 
 ## Application quality and lifecycle extensions
 
-New preparation uses quality schema 2; see `docs/application-quality.md` for evidence
+New preparation uses quality schema 3; see `docs/application-quality.md` for evidence
 bank/claim ledger, compact format, final CV audit, export validation and receipt
-contracts. Existing schema 1 artifacts remain explicitly legacy and require real
-regeneration to meet v2. Ancillary form answers, interview practice/debriefs and
+contracts. Existing schema 1 and 2 artifacts remain explicitly legacy; only an
+explicitly approved regeneration can meet v3. Ancillary form answers, interview practice/debriefs and
 follow-up drafts follow `prompts/application-lifecycle.md` only after explicit
 approval for the named vacancy. Recording a confirmed submission preserves exact
 sent files; it never changes vacancy status automatically.

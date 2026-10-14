@@ -20,6 +20,13 @@ REQUIRED_PROJECT_FILES = frozenset({
     "config/data-services.yaml",
     "scripts/finalize_repository.py",
 })
+EDITORIAL_POLICY_PATHS = frozenset({
+    'config/cv-editorial-knowledge.yaml', 'prompts/vacancy-application.md',
+    'docs/application-quality.md', 'docs/application-review-contract.md',
+    '.agents/skills/job-intelligence-workflow/references/prepare.md',
+    'prompts/job-intelligence-workflow.md', 'prompts/editorial-evaluation.md',
+    'tests/fixtures/editorial-corpus.yaml',
+})
 
 
 def is_intended_telegram_outbox(path: str) -> bool:
@@ -30,6 +37,16 @@ def is_intended_telegram_outbox(path: str) -> bool:
 
 class FinalizationError(RuntimeError):
     pass
+
+
+def require_editorial_evaluation(root: Path, paths) -> None:
+    if not EDITORIAL_POLICY_PATHS.intersection(paths):
+        return
+    decisions = root / '.codex-work/editorial-decisions.json'
+    if not decisions.is_file():
+        raise FinalizationError('editorial policy changes require independent editorial decisions; run prompts/editorial-evaluation.md')
+    command(sys.executable, 'run.py', 'editorial', 'evaluate', '--input', str(decisions),
+            '--output', '.codex-work/editorial-receipt.json', cwd=root)
 
 
 def require_complete_project_tree(entries: Mapping[str, str | None], *, label: str) -> None:
@@ -172,6 +189,7 @@ def review_committed(root: Path) -> dict:
         label="reviewed commit",
     )
     paths = changed_paths(root, "HEAD^", "HEAD")
+    require_editorial_evaluation(root, paths)
     if not paths or any(EXCLUDED_PARTS.intersection(Path(path).parts) for path in paths):
         raise FinalizationError("commit has no reviewable project changes or includes local work")
     patch = git(root, "diff", "HEAD^", "HEAD", "--binary", "--full-index", "--no-ext-diff")
@@ -192,6 +210,7 @@ def verify_committed_review(root: Path) -> dict:
     if status(root) or head(root) != record["commit"]:
         raise FinalizationError("unpublished commit or checkout changed after API review")
     paths = changed_paths(root, "HEAD^", "HEAD")
+    require_editorial_evaluation(root, paths)
     patch_path = root / ".codex-work" / "finalization" / "api-review.patch"
     if (index_entries(root, paths) != record["entries"] or not patch_path.is_file() or
             hashlib.sha256(patch_path.read_bytes()).hexdigest() != record["patch_sha256"]):
@@ -307,6 +326,7 @@ def review(root: Path) -> dict:
         git(root, "add", "-f", "--", *(str(path.relative_to(root)) for path in outbox))
     git(root, "diff", "--cached", "--check")
     entries = reviewed_snapshot(root)
+    require_editorial_evaluation(root, entries)
     require_complete_project_tree(
         index_entries(root, sorted(REQUIRED_PROJECT_FILES)),
         label="staged project tree",
@@ -338,6 +358,7 @@ def review(root: Path) -> dict:
 
 
 def verify_review(root: Path, record: dict) -> None:
+    require_editorial_evaluation(root, record['entries'])
     if head(root) != record["base"]:
         raise FinalizationError("HEAD changed after review; review the complete diff again")
     if reviewed_snapshot(root) != record["entries"]:

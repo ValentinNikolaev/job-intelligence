@@ -1,0 +1,93 @@
+schema_version: 1
+note: Synthetic case excerpts, not candidate claims or complete applications. Judge evidence support, selection and framing against each supplied requirement. Do not apply whole-document word, paragraph or bullet-count minima to these excerpts.
+cases:
+  - id: routine-repair
+    kind: cv-bullet
+    requirement: Senior engineer demonstrating material production consequences.
+    source: Repaired a failing cron. The job resumed its expected behavior. No other consequence is recorded.
+    text: Architected a business-critical scheduler transformation by fixing the cron.
+    expected:
+      decision: omit
+      reason_codes: [routine_baseline, unsupported_ownership]
+      rationale: An impressive verb cannot establish a material consequence or architectural ownership.
+  - id: material-reliability
+    kind: cv-bullet
+    requirement: Senior engineer responsible for safe financial workflows.
+    source: Owned the duplicate-payment investigation, designed an idempotent payment boundary, and deployed it. This prevented repeat charges during retry storms.
+    text: Designed and deployed an idempotent payment boundary that prevented repeat charges during retry storms.
+    expected:
+      decision: keep
+      reason_codes: [supported_consequence]
+      rationale: A specific decision and production consequence are supported without a percentage.
+  - id: package-without-adoption
+    kind: cv-bullet
+    requirement: Staff engineer influencing several teams.
+    source: Implemented a shared logging package following the existing standard. Team adoption and operational results are unknown.
+    text: Set organization-wide observability strategy through a shared logging package.
+    expected:
+      decision: omit
+      reason_codes: [unsupported_influence]
+      rationale: The source records implementation, not organization-wide strategy or adoption.
+  - id: verified-adoption
+    kind: cv-bullet
+    requirement: Staff engineer helping multiple teams migrate safely.
+    source: Designed the migration contract with three teams. All three adopted it and retired their separate incompatible release adapters.
+    text: Designed a migration contract adopted by three teams, enabling retirement of incompatible release adapters.
+    expected:
+      decision: keep
+      reason_codes: [supported_influence]
+      rationale: Cross-team adoption and the resulting simplification are explicit.
+  - id: metric-reassignment
+    kind: cv-bullet
+    requirement: Engineer improving API latency.
+    source: Reduced team onboarding time by 35%. API latency was not measured.
+    text: Reduced API latency by 35%.
+    expected:
+      decision: omit
+      reason_codes: [unsupported_metric]
+      rationale: The same number describes a different measure and cannot support latency.
+  - id: team-result
+    kind: cv-bullet
+    requirement: Senior engineer with accurate individual contribution.
+    source: The team redesigned the service. The candidate implemented the storage adapter. Architecture decisions belonged to the technical lead.
+    text: Independently redesigned the service architecture.
+    expected:
+      decision: rewrite
+      reason_codes: [unsupported_ownership]
+      rationale: Preserve the documented adapter contribution without claiming the lead's decisions.
+  - id: proposal-not-delivery
+    kind: cv-bullet
+    requirement: Engineer with production migration experience.
+    source: Authored a migration proposal. Implementation and rollout were not approved.
+    text: Delivered the production migration.
+    expected:
+      decision: rewrite
+      reason_codes: [delivery_stage]
+      rationale: The source supports a proposal, not implementation or production rollout.
+  - id: missing-role
+    kind: cv-role-coverage
+    requirement: Retain all employers in the approved career window; earlier dated headings may have no body.
+    source: Both Acme (2022-2024) and Beta (2019-2021) are within the approved career window. The candidate has verified Acme delivery and Beta architectural decisions.
+    text: 'Experience: Acme (2022-2024). Beta omitted because Acme already supplies enough bullets.'
+    expected:
+      decision: rewrite
+      reason_codes: [role_omission]
+      rationale: A bullet quota does not permit removing an approved employer.
+  - id: cv-replay-letter
+    kind: cover-letter
+    requirement: Employer needs safe billing migration and coordination with support; letter should explain relevant fit.
+    source: Candidate delivered billing migration with rollback checks and worked with support on reconciliation. Other employers and technology lists do not explain this fit.
+    text: I worked at Acme, Beta and Gamma. I used PHP, Go, PostgreSQL, Redis, Docker and Kubernetes. My CV lists all these roles and skills.
+    expected:
+      decision: rewrite
+      reason_codes: [cv_replay, vacancy_priority]
+      rationale: Select relevant abilities and explain the employer's work instead of replaying chronology.
+  - id: one-example-email
+    kind: cover-letter
+    requirement: Short email. Two internal evidence strands may be supported by one narrated example. No compulsory second case study.
+    source: The candidate delivered a billing migration with rollback checks and collaborated with support on reconciliation. These support technical delivery and coordination.
+    text: Your billing migration combines a safe technical rollout with support coordination. In my previous migration I delivered rollback checks and worked with support on reconciliation. I would be glad to discuss this experience.
+    expected:
+      decision: keep
+      reason_codes: [complementary_evidence, channel_fit]
+      rationale: One grounded example addresses two relevant abilities naturally.

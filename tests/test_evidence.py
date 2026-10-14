@@ -9,6 +9,74 @@ from jobintel.evidence import EvidenceError, bootstrap_evidence_bank, validate_c
 
 
 class EvidenceTests(unittest.TestCase):
+    def contextual_metric(self):
+        text = 'Example Backend Engineer reduced team onboarding time by 35%.'
+        self.path.write_text(text, encoding='utf-8')
+        bank = bootstrap_evidence_bank(self.root, [dict(id='time', source=dict(path='registry/candidate/cv.md', quote=text))])
+        entry = bank['entries'][0]
+        entry.update(status='verified', verification=dict(reviewer='editor', reviewed_at='2026-10-15', method='source review'))
+        entry['measurements'] = [dict(id='reduction', value='35%', measure='onboarding time', unit='%', scope='team',
+            baseline=None, period=None, method=None, quote=text)]
+        claim = 'Reduced team onboarding time by 35%.'
+        ledger = dict(schema_version=2, claims=[dict(document='cover-letter', text=claim, evidence_ids=['time'],
+            measurements=[dict(evidence_id='time', measurement_id='reduction', claim_quote=claim)])])
+        return bank, ledger, dict(cover_letter_markdown=claim)
+
+    def test_measurement_context_accepts_explicit_unknown_method_without_inventing_it(self):
+        bank, ledger, package = self.contextual_metric()
+        receipt = validate_claims_ledger(ledger, bank, package, self.root)
+        self.assertIsNone(receipt['evidence_entries'][0]['measurements'][0]['method'])
+        self.assertEqual(2, receipt['schema_version'])
+
+    def test_strict_numeric_claim_requires_context(self):
+        bank, ledger, package = self.contextual_metric()
+        ledger['claims'][0].pop('measurements')
+        with self.assertRaisesRegex(EvidenceError, 'numeric token requires'):
+            validate_claims_ledger(ledger, bank, package, self.root)
+
+    def test_measurement_cannot_change_unit_scope_or_reference(self):
+        for mutation in ('unit', 'scope', 'reference'):
+            with self.subTest(mutation=mutation):
+                bank, ledger, package = self.contextual_metric()
+                if mutation == 'reference':
+                    ledger['claims'][0]['measurements'][0]['measurement_id'] = 'other'
+                else:
+                    claim = package['cover_letter_markdown'].replace('%', ' seconds') if mutation == 'unit' else package['cover_letter_markdown'].replace('team', 'customer')
+                    ledger['claims'][0]['text'] = claim
+                    ledger['claims'][0]['measurements'][0]['claim_quote'] = claim
+                    package['cover_letter_markdown'] = claim
+                with self.assertRaises(EvidenceError):
+                    validate_claims_ledger(ledger, bank, package, self.root)
+
+    def test_measurement_basis_must_be_sourced_or_explicitly_unknown(self):
+        for field in ('baseline', 'period', 'method'):
+            with self.subTest(field=field):
+                bank, ledger, package = self.contextual_metric()
+                bank['entries'][0]['measurements'][0][field] = 'Invented measurement context'
+                with self.assertRaisesRegex(EvidenceError, 'absent from its source quote'):
+                    validate_claims_ledger(ledger, bank, package, self.root)
+
+    def test_translation_keeps_the_original_numeric_context_and_units(self):
+        bank, ledger, package = self.contextual_metric()
+        claim = 'Ridotto il tempo di onboarding della squadra del 35%.'
+        binding = ledger['claims'][0]['measurements'][0]
+        binding.update(claim_quote=claim, translation=dict(language='Italian', reviewer='Italian editor',
+            reason='The translated measure and scope preserve onboarding time for the team.',
+            source_quote=bank['entries'][0]['measurements'][0]['quote'], measure='tempo di onboarding', scope='squadra'))
+        ledger['claims'][0]['text'] = package['cover_letter_markdown'] = claim
+        validate_claims_ledger(ledger, bank, package, self.root)
+        binding['translation']['language'] = 'English'
+        with self.assertRaisesRegex(EvidenceError, 'source language'):
+            validate_claims_ledger(ledger, bank, package, self.root)
+
+
+    def test_achievement_context_cannot_claim_an_unsourced_fact(self):
+        self.bank['entries'][0]['achievement_context'] = dict(responsibility=dict(status='supported', quote='Independently set business priorities'))
+        with self.assertRaisesRegex(EvidenceError, 'primary evidence'):
+            validate_evidence_bank(self.bank, self.root)
+        self.bank['entries'][0]['achievement_context'] = dict(responsibility=dict(status='unknown'))
+        validate_evidence_bank(self.bank, self.root)
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

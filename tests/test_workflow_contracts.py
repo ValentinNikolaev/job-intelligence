@@ -91,7 +91,7 @@ class WorkflowContractTests(unittest.TestCase):
     def test_quality_contract_requires_two_wave_receipt_and_grounded_cover_letter(self) -> None:
         source = self._read("jobintel/applications.py")
         for token in (
-            "QUALITY_CONTRACT_VERSION = 2",
+            "QUALITY_CONTRACT_VERSION = 3",
             "quality.yaml",
             "research.md",
             "evidence-map.md",

@@ -77,10 +77,15 @@ current Codex surface, tell the user and do not publish under that profile.
    finalizes selected drafts, performs the applicable claim check, validates, and
    publishes.
 6. A full-package draft must include `.codex-work/application/<vacancy-directory>/quality.yaml`
-   with `schema_version: 2`: `workflow: two-wave`; invoked cover-letter skill name and
-   version; `workbench_complete: true`; two evidence stories with `candidate_source`;
+   with `schema_version: 3`: `workflow: two-wave`; invoked cover-letter skill name and
+   version; `workbench_complete: true`; two internal evidence strands with `candidate_source`;
    company-motivation fact with `source_url`; and final-review values
    `claim_grounding: true` and `cross_file_consistency: true`.
+   Follow `docs/application-review-contract.md`: claims ledger schema 2, complete
+   reviewed career inventory, contextual measurement bindings and a final-letter
+   review tied to exact text, priorities, captured company source and current voice.
+   Two evidence strands do not require two narrated examples. Integrate these checks
+   into the existing evidence and final review passes; do not add another agent wave.
    Apply the recent-experience and impact/judgment editorial gates in
    `references/prepare.md` before recording that final review. A total bullet
    count never substitutes for a role-by-role hiring-manager review.
@@ -146,10 +151,10 @@ unless explicitly requested.
 
 ## Application quality and lifecycle extensions
 
-New preparation uses quality schema 2; see `docs/application-quality.md` for evidence
+New preparation uses quality schema 3; see `docs/application-quality.md` for evidence
 bank/claim ledger, compact format, final CV audit, export validation and receipt
-contracts. Existing schema 1 artifacts remain explicitly legacy and require real
-regeneration to meet v2. Ancillary form answers, interview practice/debriefs and
+contracts. Existing schema 1 and 2 artifacts remain explicitly legacy; only an
+explicitly approved regeneration can meet v3. Ancillary form answers, interview practice/debriefs and
 follow-up drafts follow `prompts/application-lifecycle.md` only after explicit
 approval for the named vacancy. Recording a confirmed submission preserves exact
 sent files; it never changes vacancy status automatically.

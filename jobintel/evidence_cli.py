@@ -9,7 +9,7 @@ from pathlib import Path
 
 import yaml
 
-from .evidence import EvidenceError, bootstrap_evidence_bank, validate_evidence_bank
+from .evidence import EvidenceError, bootstrap_evidence_bank, validate_evidence_bank, evidence_questions
 
 
 def _load(path: Path):
@@ -29,6 +29,9 @@ def main(argv: list[str] | None = None, *, root: Path) -> int:
     commands = parser.add_subparsers(dest="action", required=True)
     validate = commands.add_parser("validate", help="Check source quotes, hashes and verification provenance")
     validate.add_argument("--bank", type=Path, default=Path("registry/evidence/achievements.yaml"))
+    questions = commands.add_parser('questions', help='List missing achievement and measurement context without changing evidence')
+    questions.add_argument('--bank', type=Path, default=Path('registry/evidence/achievements.yaml'))
+    questions.add_argument('--id', dest='identifiers', action='append', default=[])
     bootstrap = commands.add_parser("bootstrap", help="Seal selected source excerpts as unverified; never overwrite")
     bootstrap.add_argument("--input", type=Path, required=True)
     bootstrap.add_argument("--output", type=Path, required=True)
@@ -37,7 +40,9 @@ def main(argv: list[str] | None = None, *, root: Path) -> int:
     publish.add_argument("--output", type=Path, default=Path("registry/evidence/achievements.yaml"))
     args = parser.parse_args(argv)
     try:
-        if args.action == "validate":
+        if args.action == 'questions':
+            receipt = evidence_questions(_load(root / args.bank), root, args.identifiers)
+        elif args.action == "validate":
             receipt = validate_evidence_bank(_load(root / args.bank), root)
         else:
             loaded = _load(root / args.input)

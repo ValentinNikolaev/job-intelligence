@@ -166,7 +166,9 @@ Start only after the main agent fixes the final CV. Assign exclusive ownership:
 - Cover letter receives this vacancy, final CV, verified research, and only the
   candidate evidence needed to ground its selected stories. It invokes
   `$write-cover-letter` and writes only `cover-letter.md`. In standard format it needs four to six body
-  paragraphs, two distinct evidence stories, and a company-specific research hook.
+   paragraphs, two internal complementary evidence strands, and a company-specific research hook.
+   Normally narrate at most one short example; a second must address a distinct
+   substantive expectation and have explicit additional reader value.
 - Interview preparation receives this vacancy, final CV, requirements/risks handoff,
   and verified research, then writes only `interview-preparation.md` without browsing
   again.
@@ -310,20 +312,20 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     Treat the full vacancy as the job description; treat the configured candidate records
     as the claim source of truth and the final CV as the selected positioning for this
     application. Follow the skill's
-    requirement-to-evidence mapping, two complementary evidence stories, company-motivation
+     requirement-to-evidence mapping, two complementary internal evidence strands, company-motivation
     research, and final claim ledger. Default to the posting language and selected format: standard uses 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
     ATS-friendly formatting. Use the role and company naturally when they improve targeting.
     Before composing, read the user's current `social-promotion/social-voice.md`
     and `social-promotion/employer-letter-flow.md`. For a short application email,
-    record `cover_letter.channel: email` in quality schema 2: 100–180 words and
+     record `cover_letter.channel: email` in quality schema 3: 100–180 words and
     three to four body paragraphs, aiming editorially for 100–130 body words.
     Keep the two supported abilities and evidence stories internal, with at most
     one brief visible example. State the application purpose naturally, explain
     relevance once and finish with the practical next step. Complete the flow's
     read-aloud delivery check. Channel overrides attachment length and structure.
     Start the body with a vacancy-specific, source-backed proposition rather
-    than "I am applying for" for attachments. Select one or two complementary examples and
+     than "I am applying for" for attachments. Normally select one short example; add a second only for a different substantive expectation and
     explain their relevance instead of replaying the CV. Name a former
     employer only when its identity helps place an example in context.
     Put only the finished letter in `cover_letter_markdown`; place research sources and any
@@ -362,8 +364,9 @@ tokens, placeholders, or duplicated Experience bullets.
 
 A tailored letter produced through `$write-cover-letter`. State the target role and use
 the company name or a verified company detail when that makes the opening and motivation
-specific. Build the body around two complementary, evidence-backed examples tied to the
-highest-priority responsibilities rather than replaying the CV chronologically. Demonstrate
+specific. Build the body around two complementary, internally mapped abilities tied to the
+highest-priority responsibilities rather than replaying the CV chronologically. Normally
+narrate one short example; a second needs distinct additional reader value. Demonstrate
 only verified understanding of the product, mission, values, or current initiatives. Do not
 add address placeholders, unsupported enthusiasm, product use, personal connections, facts,
 or metrics. End with a concise statement of fit and interest and the candidate's name.
@@ -411,10 +414,38 @@ thoughtful questions for the company.
 ## Final checks
 
 - Before validating a full package, write `quality.yaml` under its vacancy draft with
-  `schema_version: 2`, `workflow: two-wave`, invoked cover-letter skill name/version,
-  `workbench_complete: true`, two evidence stories with `candidate_source`, a
+  `schema_version: 3`, `workflow: two-wave`, invoked cover-letter skill name/version,
+  `workbench_complete: true`, two internal evidence strands with `candidate_source`, a
   company-motivation fact and `source_url`, and final `claim_grounding: true` plus
   `cross_file_consistency: true`.
+
+- Follow `docs/application-review-contract.md` as the executable v3 field contract.
+  During the existing evidence pass, collect exact primary-source excerpts for
+  problem, contribution, scope, decision, consequence, delivery stage and responsibility.
+  Keep unsupported fields unknown and list material questions with `python run.py
+  evidence questions --id <selected-evidence-id>`. Do not ask leading numeric questions.
+  Use claims ledger schema 2. Every final CV claim must anchor contribution, scope
+  and consequence to its own verified evidence. Every numeric claim token must bind
+  to a source measurement with its measure, unit, scope and explicit known/unknown
+  baseline, period and method. Dates and counts also need context; no global pool of
+  numbers may support a different measure. Keep qualitative results when numbers
+  cannot be confirmed, and distinguish proposals from delivered production changes.
+- In the existing independent CV edit, record every source employer in
+  `cv_audit.role_coverage`, corrected source periods, policy-driven include/exclude
+  decisions, source quotes/hashes, final headings and the actual editor identity.
+  Record the CV author separately. Preserve the current approved career window.
+- In the existing final letter pass, map two complementary abilities to supported
+  high/critical vacancy priorities where available and anchor both in final letter
+  claims. Record narrated examples separately from internal evidence strands.
+  Capture company evidence directly from the primary source in a draft-local text
+  snapshot with URL, quote, raw hash and checking date; never create a snapshot from
+  generated research prose. Verify the final company sentence against it.
+  After all edits or translation, read the exact final text aloud against both
+  canonical voice files from `config/application-review.yaml`. Record language,
+  concrete review notes and actual file hashes. Use `letter_basis`/`review_digest`
+  from `jobintel.application_review` for the mapping digest and normalized final-text
+  SHA-256 for the letter; changes invalidate the review. Keep this work in the existing
+  final pass, without an additional compulsory agent loop.
 
 - All four Markdown fields are required and non-empty by default. For an explicit
   single-document request, only the selected field is required and the other fields
@@ -439,7 +470,7 @@ The bank is reusable source evidence; vacancy research and phrasing remain isola
 
 Write `claims.yaml` with anchors for every Experience bullet and material candidate
 claims in each selected document, including metric and employer attribution. Populate
-quality v2 with `evidence_bank`, `claims_ledger`, `document_format`, requirement rows,
+quality v3 with `evidence_bank`, `claims_ledger`, `document_format`, requirement rows,
 cover-story evidence IDs, final reviewer and normalized document hashes. For CV work,
 record a `cv_audit` against the finalized CV: target role, two source-backed proof
 points in its top third, and reasoned bullet decisions. For every retained

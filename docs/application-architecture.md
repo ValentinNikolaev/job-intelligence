@@ -85,7 +85,7 @@ and requests preparation by vacancy IDs or registry directories.
 
 ## Application quality and follow-through
 
-The [quality v2 contract](application-quality.md) adds source-backed
+The [quality v3 contract](application-quality.md) adds source-backed
 evidence, grounded claim ledgers, compact document formats, a final CV review, and
 real DOCX export checks. Old receipts stay explicitly legacy. The
 [application lifecycle](application-lifecycle.md) preserves exact sent files,

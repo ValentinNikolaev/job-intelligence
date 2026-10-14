@@ -280,7 +280,7 @@ decisions.
 
 ## Application quality and follow-through
 
-The [quality v2 contract](docs/application-quality.md) adds source-backed
+The [quality v3 contract](docs/application-quality.md) adds source-backed
 evidence, grounded claim ledgers, compact document formats, a final CV review, and
 real DOCX export checks. Old receipts stay explicitly legacy. The
 [application lifecycle](docs/application-lifecycle.md) preserves exact sent files,

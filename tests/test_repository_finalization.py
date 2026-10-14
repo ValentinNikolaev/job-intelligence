@@ -15,6 +15,13 @@ def run(*args: str, cwd: Path) -> str:
 
 
 class RepositoryFinalizationTests(unittest.TestCase):
+    def test_editorial_policy_change_requires_executable_evaluation(self) -> None:
+        path = self.work / 'config/cv-editorial-knowledge.yaml'
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text('schema_version: 1\n', encoding='utf-8')
+        with self.assertRaisesRegex(fin.FinalizationError, 'editorial decisions'):
+            fin.review(self.work)
+
     def setUp(self) -> None:
         self.temporary = tempfile.TemporaryDirectory(prefix="jobintel-finalize-")
         self.addCleanup(self.temporary.cleanup)

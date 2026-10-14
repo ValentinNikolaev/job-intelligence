@@ -14,6 +14,125 @@ class EvidenceError(ValueError):
 
 
 STATUSES = frozenset({"verified", "unverified", "cannot-confirm", "retracted"})
+CONTEXT_FIELDS = ('problem', 'contribution', 'scope', 'decision', 'consequence', 'delivery_status', 'responsibility')
+_NUMBER = re.compile(r'(?<!\w)\d+(?:[.,]\d+)*(?:%|[xX])?')
+
+
+def _validate_context(entry: Mapping[str, Any], quote: str) -> None:
+    context = entry.get('achievement_context', {})
+    if not isinstance(context, Mapping) or set(context) - set(CONTEXT_FIELDS):
+        raise EvidenceError('achievement_context has unknown fields or is not a mapping')
+    for name, field in context.items():
+        if not isinstance(field, Mapping) or field.get('status') not in {'supported', 'unknown'}:
+            raise EvidenceError(f'achievement_context.{name} requires supported or unknown status')
+        if field['status'] == 'supported':
+            if _text(field.get('quote'), f'achievement_context.{name}.quote') not in quote:
+                raise EvidenceError('achievement context must quote its primary evidence')
+        elif field.get('quote'):
+            raise EvidenceError('unknown achievement context cannot contain a supported quote')
+    measurements = entry.get('measurements', [])
+    if not isinstance(measurements, list):
+        raise EvidenceError('measurements must be a list')
+    seen = set()
+    for measurement in measurements:
+        if not isinstance(measurement, Mapping):
+            raise EvidenceError('measurement must be a mapping')
+        identifier = _text(measurement.get('id'), 'measurement.id')
+        if identifier in seen:
+            raise EvidenceError('duplicate measurement id')
+        seen.add(identifier)
+        excerpt = _text(measurement.get('quote'), 'measurement.quote')
+        if excerpt not in quote:
+            raise EvidenceError('measurement quote must occur in its primary evidence')
+        for name in ('value', 'measure', 'unit', 'scope'):
+            value = _text(measurement.get(name), f'measurement.{name}')
+            if value.casefold() not in excerpt.casefold():
+                raise EvidenceError(f'measurement {name} is absent from its source quote')
+        if measurement['value'] not in _NUMBER.findall(excerpt):
+            raise EvidenceError('measurement value must be an exact numeric token')
+        for name in ('baseline', 'period', 'method'):
+            if name not in measurement:
+                raise EvidenceError(f'measurement.{name} must record source text or explicit null')
+            if measurement[name] is not None and _text(measurement[name], f'measurement.{name}').casefold() not in excerpt.casefold():
+                raise EvidenceError(f'measurement {name} is absent from its source quote')
+
+
+def evidence_questions(bank: Mapping[str, Any], root: Path, identifiers: Sequence[str] = ()) -> dict[str, Any]:
+    """List unanswered factual questions without ranking claims or updating sources."""
+    validate_evidence_bank(bank, root)
+    known = {entry['id'] for entry in bank['entries']}
+    if set(identifiers) - known:
+        raise EvidenceError('unknown selected evidence ids')
+    prompts = dict(problem='What problem or constraint did this work address?',
+        contribution='What did you personally deliver or decide?', scope='Which system, users or team were affected?',
+        decision='Which approach did you choose, and what constraints influenced it?',
+        consequence='What changed after the work, and what source confirms it?',
+        delivery_status='Was this proposed, implemented or deployed? What confirms that stage?',
+        responsibility='Which decisions were yours, which did you influence, and which belonged to others?')
+    questions = []
+    for entry in bank['entries']:
+        if identifiers and entry['id'] not in identifiers:
+            continue
+        context = entry.get('achievement_context', {})
+        for field in CONTEXT_FIELDS:
+            if context.get(field, {}).get('status') != 'supported':
+                questions.append(dict(evidence_id=entry['id'], field=field, question=prompts[field],
+                                      source_quote=entry['source']['quote'], status=entry['status']))
+        for measurement in entry.get('measurements', []):
+            for field in ('baseline', 'period', 'method'):
+                if measurement[field] is None:
+                    questions.append(dict(evidence_id=entry['id'], measurement_id=measurement['id'], field=field,
+                        question=f'What is the {field} for this measurement, if it is known?', source_quote=measurement['quote']))
+        if _NUMBER.search(entry['source']['quote']) and not entry.get('measurements'):
+            questions.append(dict(evidence_id=entry['id'], field='measurement_context',
+                question='Which numbers describe measured outcomes, dates or versions? What do they measure and how?',
+                source_quote=entry['source']['quote']))
+    return dict(schema_version=1, questions=questions, candidate_sources_changed=False)
+
+
+def _validate_claim_context(claim: Mapping, referenced: list[Mapping], *, strict: bool) -> None:
+    text = claim['text']
+    bindings = claim.get('measurements', [])
+    if not isinstance(bindings, list):
+        raise EvidenceError('claim measurements must be a list')
+    covered = set()
+    for binding in bindings:
+        if not isinstance(binding, Mapping):
+            raise EvidenceError('claim measurement binding must be a mapping')
+        entry = next((entry for entry in referenced if entry['id'] == binding.get('evidence_id')), None)
+        measurement = next((item for item in entry.get('measurements', []) if item['id'] == binding.get('measurement_id')), None) if entry else None
+        if measurement is None:
+            raise EvidenceError('claim measurement references unavailable attributed context')
+        excerpt = _text(binding.get('claim_quote'), 'claim measurement quote')
+        if excerpt not in text:
+            raise EvidenceError('claim measurement quote must occur in final claim')
+        translation = binding.get('translation')
+        if translation is not None:
+            if not isinstance(translation, Mapping):
+                raise EvidenceError('measurement translation must be a mapping')
+            language = _text(translation.get('language'), 'measurement translation language')
+            if language.casefold() == str(measurement.get('language', 'English')).casefold():
+                raise EvidenceError('measurement translation cannot relabel a measure in the source language')
+            _text(translation.get('reviewer'), 'measurement translation reviewer')
+            _text(translation.get('reason'), 'measurement translation semantic review')
+            if translation.get('source_quote') != measurement['quote']:
+                raise EvidenceError('measurement translation must bind the exact original context')
+        for name in ('value', 'measure', 'unit', 'scope'):
+            label = _text(translation.get(name), f'measurement translated {name}') if translation is not None and name in {'measure', 'scope'} else measurement[name]
+            if label.casefold() not in excerpt.casefold():
+                raise EvidenceError(f'claim measurement changes the source {name}')
+        covered.add(measurement['value'])
+    if strict and set(_NUMBER.findall(text)) - covered:
+        raise EvidenceError('every claim numeric token requires attributed measurement context')
+    if strict and claim['document'] in {'cv', 'cv_markdown'}:
+        support = claim.get('support')
+        if not isinstance(support, Mapping):
+            raise EvidenceError('CV claim requires source excerpts for contribution, scope and consequence')
+        for name in ('contribution', 'scope', 'consequence'):
+            field = support.get(name)
+            entry = next((entry for entry in referenced if isinstance(field, Mapping) and entry['id'] == field.get('evidence_id')), None)
+            if entry is None or _text(field.get('quote'), f'claim support.{name}') not in entry['source']['quote']:
+                raise EvidenceError(f'CV claim support.{name} must quote referenced primary evidence')
 
 
 def _digest(value: Any) -> str:
@@ -92,6 +211,7 @@ def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path) -> dict[
         if not isinstance(source, Mapping):
             raise EvidenceError(f"{identifier} requires source provenance")
         quote = _source(project_root, source)
+        _validate_context(entry, quote)
         attribution_source = entry.get("attribution_source")
         if attribution_source is not None:
             if not isinstance(attribution_source, Mapping):
@@ -133,8 +253,8 @@ def validate_claims_ledger(
 ) -> dict[str, Any]:
     """Check anchors, metrics and declared role attribution, not semantic equivalence."""
     receipt = validate_evidence_bank(bank, project_root)
-    if ledger.get("schema_version") != 1 or not isinstance(ledger.get("claims"), list):
-        raise EvidenceError("claims ledger requires schema_version 1 and claims list")
+    if type(ledger.get("schema_version")) is not int or ledger['schema_version'] not in {1, 2} or not isinstance(ledger.get("claims"), list):
+        raise EvidenceError("claims ledger requires schema_version 1 or 2 and claims list")
     entries = {entry["id"]: entry for entry in bank["entries"]}
     fields = {"cv": "cv_markdown", "cover-letter": "cover_letter_markdown",
               "analysis": "analysis_markdown", "interview-preparation": "interview_preparation_markdown"}
@@ -177,6 +297,7 @@ def validate_claims_ledger(
         source_numbers = set(re.findall(r"(?<!\w)\d+(?:[.,]\d+)*(?:%|[xX])?", "\n".join(e["source"]["quote"] for e in referenced)))
         if numbers - source_numbers:
             raise EvidenceError(f"claim contains unsupported numeric tokens: {sorted(numbers - source_numbers)}")
+        _validate_claim_context(claim, referenced, strict=ledger['schema_version'] == 2)
         anchors[field].append(text)
         if field == "cv_markdown":
             evidence_by_anchor[text] = referenced
@@ -200,7 +321,7 @@ def validate_claims_ledger(
                             for key in ("employer", "role"):
                                 if not entry.get(key) or entry[key].casefold() not in role_heading:
                                     raise EvidenceError(f"CV bullet evidence {key} must match its actual role heading")
-    return {"schema_version": 1, "sha256": _digest(ledger), "evidence_bank": receipt,
+    return {"schema_version": ledger['schema_version'], "sha256": _digest(ledger), "evidence_bank": receipt,
             "claim_count": len(seen), "evidence_ids": sorted(used),
             "evidence_entries": [entries[identifier] for identifier in sorted(used)],
             "checks": ["source_quotes", "source_hashes", "verified_status", "numeric_tokens", "declared_attribution", "cv_bullet_coverage"],

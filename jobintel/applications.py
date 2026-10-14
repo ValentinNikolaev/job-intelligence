@@ -34,7 +34,7 @@ APPLICATION_DOCUMENTS = {
     "analysis": "analysis_markdown",
     "interview-preparation": "interview_preparation_markdown",
 }
-QUALITY_CONTRACT_VERSION = 2
+QUALITY_CONTRACT_VERSION = 3
 
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
@@ -314,7 +314,7 @@ def validate_application_draft(
         career_source_path=career_source_path,
     )
     _validate_draft_quality(draft_directory.resolve(), validated, document=document,
-                            project_root=op.project_root(vacancy_directory), vacancy_text=str(vacancy["job_description"]))
+                            project_root=op.project_root(vacancy_directory), vacancy_text=str(vacancy["job_description"]), reference_date=reference_date)
     return validated
 
 
@@ -509,11 +509,12 @@ class ApplicationGenerator:
                     document=self.document,
                     project_root=self.registry_root.parent,
                     vacancy_text=str(vacancy["job_description"]),
+                    reference_date=generated_at,
                 )
             )
         expected_versions["quality_contract_version"] = quality["contract_version"]
-        if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] != 2 and not self.allow_legacy_drafts:
-            raise ApplicationError("new application publication requires quality schema_version 2; legacy schema 1 is read-only")
+        if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] != QUALITY_CONTRACT_VERSION and not self.allow_legacy_drafts:
+            raise ApplicationError("new application publication requires quality schema_version 3; legacy schemas 1 and 2 are read-only")
         cv_export_files = _cv_export_files(meta)
 
         staging_root = self.registry_root.parent / ".codex-work" / "publication-staging" / directory.name
@@ -547,7 +548,7 @@ class ApplicationGenerator:
                 self.converter.convert(
                     staging / "cover-letter.md", staging / "cover-letter.docx"
                 )
-            if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] == 2:
+            if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] in {2, 3}:
                 from .document_quality import DocumentQualityError, validate_export
 
                 declaration = _read_yaml_mapping(self.client.directory / "quality.yaml", "application quality declaration")
@@ -1102,14 +1103,15 @@ def _validate_draft_quality(
     document: str | None,
     project_root: Path | None = None,
     vacancy_text: str | None = None,
+    reference_date: date | datetime | None = None,
 ) -> dict[str, Any]:
     quality_path = draft_directory / "quality.yaml"
     quality = _read_yaml_mapping(quality_path, "application quality declaration")
     version = quality.get("schema_version")
-    if type(version) is not int or version not in {1, QUALITY_CONTRACT_VERSION}:
+    if type(version) is not int or version not in {1, 2, QUALITY_CONTRACT_VERSION}:
         raise ApplicationError(
             "application quality declaration schema_version must be "
-            f"1 (legacy) or {QUALITY_CONTRACT_VERSION}: {quality_path}"
+            f"1, 2 (legacy) or {QUALITY_CONTRACT_VERSION}: {quality_path}"
         )
     if quality.get("workflow") != "two-wave":
         raise ApplicationError("application quality declaration workflow must be two-wave")
@@ -1207,9 +1209,11 @@ def _validate_draft_quality(
     report["contract_version"] = version
     report["document_format"] = _draft_format(draft_directory)
     if version == 1:
-        report["migration_note"] = "Legacy contract 1: source-linked claims and export checks are not verified; prepare a new contract 2 draft."
+        report["migration_note"] = "Legacy contract 1: source-linked claims and export checks are not verified; only an explicitly approved new contract 3 draft can verify current controls."
     else:
-        report["grounding"] = _validate_v2_grounding(quality, package, draft_directory, project_root, vacancy_text)
+        report["grounding"] = _validate_v2_grounding(quality, package, draft_directory, project_root, vacancy_text, reference_date=reference_date)
+        if version == 2:
+            report['migration_note'] = 'Legacy contract 2: new role, letter and measurement-context controls were not verified.'
         for receipt in report["documents"].values():
             receipt["evidence_bank_path"] = report["grounding"]["evidence_bank_path"]
             receipt["evidence_bank_sha256"] = report["grounding"]["evidence_bank"]["sha256"]
@@ -1230,8 +1234,8 @@ def _draft_format(directory: Path) -> str:
     value = quality.get("document_format", "standard")
     if not isinstance(value, str) or value not in {"standard", "compact"}:
         raise ApplicationError("document_format must be standard or compact")
-    if value == "compact" and quality.get("schema_version") != 2:
-        raise ApplicationError("compact documents require quality schema_version 2")
+    if value == "compact" and quality.get("schema_version") not in {2, 3}:
+        raise ApplicationError("compact documents require quality schema_version 2 or 3")
     return value
 
 
@@ -1243,8 +1247,8 @@ def _draft_letter_channel(directory: Path) -> str:
     channel = letter.get("channel", "attachment")
     if not isinstance(channel, str) or channel not in {"attachment", "email"}:
         raise ApplicationError("cover_letter channel must be attachment or email")
-    if channel == "email" and quality.get("schema_version") != 2:
-        raise ApplicationError("email letters require quality schema_version 2")
+    if channel == "email" and quality.get("schema_version") not in {2, 3}:
+        raise ApplicationError("email letters require quality schema_version 2 or 3")
     return channel
 
 
@@ -1260,6 +1264,7 @@ def _contained_file(root: Path, relative: Any, label: str) -> Path:
 def _validate_v2_grounding(
     quality: Mapping[str, Any], package: Mapping[str, str], draft: Path, root: Path | None,
     vacancy_text: str | None = None,
+    *, reference_date: date | datetime | None = None,
 ) -> dict[str, Any]:
     if root is None:
         raise ApplicationError("quality v2 requires a project root containing registry/candidate")
@@ -1335,6 +1340,13 @@ def _validate_v2_grounding(
                 raise ApplicationError("cover letter story source must match its referenced evidence")
             if not all(any(claim.get("document") in {"cover-letter", "cover_letter_markdown"} and identifier in claim.get("evidence_ids", []) for claim in ledger["claims"]) for identifier in ids):
                 raise ApplicationError("cover letter stories must ground actual letter claims")
+    if quality.get("schema_version") == 3:
+        from .application_review import validate_application_review
+        try:
+            reference = reference_date.date() if isinstance(reference_date, datetime) else reference_date
+            report["application_review"] = validate_application_review(quality, package, draft, root, ledger, reference_date=reference)
+        except (ValueError, OSError, KeyError, TypeError) as exc:
+            raise ApplicationError(f"application editorial review failed: {exc}") from exc
     report.update({"reviewer": review["reviewer"], "document_sha256": dict(hashes), "requirements": requirements,
                    "evidence_bank_path": str(quality["evidence_bank"]), "claims_ledger_path": str(quality["claims_ledger"]),
                    "claims": ledger["claims"]})
@@ -1389,6 +1401,9 @@ def _merge_quality_reports(
         grounding = dict(old_grounding)
         if isinstance(new_grounding, Mapping):
             grounding.update(new_grounding)
+        old_review = old_grounding.get('application_review', {})
+        new_review = new_grounding.get('application_review', {}) if isinstance(new_grounding, Mapping) else {}
+        grounding['application_review'] = {**old_review, **new_review}
         old_hashes = old_grounding.get("document_sha256")
         new_hashes = new_grounding.get("document_sha256") if isinstance(new_grounding, Mapping) else None
         document_hashes = dict(old_hashes) if isinstance(old_hashes, Mapping) else {}
@@ -1439,6 +1454,7 @@ def _merge_quality_reports(
                 "claims_ledger_path": new_grounding.get("claims_ledger_path"),
                 "reviewer": new_grounding.get("reviewer"),
                 "declaration_sha256": current.get("declaration_sha256"),
+                "application_review": new_grounding.get('application_review', {}),
             }
         else:
             document_receipts.pop(document, None)
@@ -1730,6 +1746,12 @@ def _package_is_current(
                 markdown = op.read_text(application_dir / APPLICATION_FILES[APPLICATION_DOCUMENTS[name]])
                 if _content_version(markdown.strip() + "\n") != receipt.get("sha256"):
                     return False
+                if name == 'cover-letter' and expected_versions.get('quality_contract_version') == 3:
+                    from .application_review import document_digest, validate_voice_review
+                    review = quality.get('grounding', {}).get('application_review', {}).get('letter_review')
+                    if not isinstance(review, Mapping) or review.get('document_sha256') != document_digest(markdown):
+                        return False
+                    validate_voice_review(review, root)
                 if name in {"cv", "cover-letter"}:
                     from .document_quality import file_sha256
 
@@ -1745,7 +1767,7 @@ def _package_is_current(
                             return False
                         if file_sha256(application_dir / f"{stem}.md") != export.get("source_sha256"):
                             return False
-            except (ApplicationError, EvidenceError, OSError):
+            except (ApplicationError, EvidenceError, OSError, ValueError, KeyError, TypeError):
                 return False
     document_versions = manifest.get("documents")
     if isinstance(document_versions, dict):

@@ -1,5 +1,13 @@
 # One-pass preparation and repository handoff
 
+New selected drafts use [quality contract 3](application-review-contract.md).
+Collect source context and measurement bindings during the existing evidence pass,
+review the complete career inventory during the independent CV edit, and bind the
+final letter to its priorities, primary-source capture and current voice during the
+existing delivery check. Two internal evidence strands need not produce two examples.
+Old packages remain untouched. Evaluate prompt/policy changes using
+[the blind editorial corpus workflow](../prompts/editorial-evaluation.md).
+
 Use an isolated managed worktree. Run `python scripts/finalize_repository.py preflight`
 before reading vacancy evidence or drafting. It refuses local changes and updates a
 clean checkout to the remote head. Keep shared service files, open documents, and

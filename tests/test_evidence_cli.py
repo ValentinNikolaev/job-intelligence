@@ -3,6 +3,7 @@ from __future__ import annotations
 import contextlib
 import copy
 import io
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -16,6 +17,20 @@ from jobintel.cli import main as root_main
 
 
 class EvidenceCommandTests(unittest.TestCase):
+    def test_context_questions_are_nonleading_selected_and_read_only(self):
+        self.write('registry/evidence/achievements.yaml', self.bank)
+        before = {str(path): path.read_bytes() for path in self.root.rglob('*') if path.is_file()}
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            result = main(['questions', '--id', 'php'], root=self.root)
+        self.assertEqual(0, result)
+        receipt = json.loads(output.getvalue())
+        self.assertFalse(receipt['candidate_sources_changed'])
+        self.assertTrue(all(row['evidence_id'] == 'php' for row in receipt['questions']))
+        self.assertEqual({'problem', 'contribution', 'scope', 'decision', 'consequence', 'delivery_status', 'responsibility'}, {row['field'] for row in receipt['questions']})
+        self.assertEqual(before, {str(path): path.read_bytes() for path in self.root.rglob('*') if path.is_file()})
+        self.assertEqual(1, self.call('questions', '--id', 'unknown'))
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

@@ -75,7 +75,7 @@ def _configure_stdio() -> None:
 def _parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
     parser.add_argument(
-        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'timing', 'evidence', 'documents', or 'applications'"
+        "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'timing', 'evidence', 'documents', 'applications', or 'editorial'"
     )
     parser.add_argument("arguments", nargs="*", help="target-specific arguments")
     parser.add_argument("--sources", type=Path, help="sources directory (default: <project>/sources)")
@@ -184,9 +184,9 @@ def main(argv: list[str] | None = None) -> int:
 def _main(argv: list[str] | None = None) -> int:
     _configure_stdio()
     command_args = list(sys.argv[1:] if argv is None else argv)
-    if command_args and command_args[0] in {"applications", "documents", "evidence", "timing"}:
+    if command_args and command_args[0] in {"applications", "documents", "evidence", "timing", "editorial"}:
         from importlib import import_module
-        module = {"applications": "lifecycle_cli", "documents": "document_quality_cli", "evidence": "evidence_cli", "timing": "preparation_timing"}[command_args[0]]
+        module = {"applications": "lifecycle_cli", "documents": "document_quality_cli", "evidence": "evidence_cli", "timing": "preparation_timing", "editorial": "editorial_eval"}[command_args[0]]
         return import_module(f".{module}", __package__).main(
             command_args[1:], root=Path(__file__).resolve().parents[1]
         )
