@@ -1,0 +1,28 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-14T08:56:42Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ElevenLabs",
+      "country_codes": [],
+      "directory": "20261014_elevenlabs_7aa4069c20604c8a960c6e34b090d290",
+      "score": 78,
+      "title": "Full-Stack Engineer (Backend-Leaning) - CoreMusic",
+      "url": "https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-coremusic-140966",
+      "vacancy_id": "7aa4069c-2060-4c8a-960c-6e34b090d290"
+    },
+    {
+      "company": "TechBiz Global GmbH",
+      "country_codes": [],
+      "directory": "20261014_techbiz-global_44ecf3b63f974cfc87ed52940d861b3e",
+      "score": 75,
+      "title": "Senior/Leading Software Engineer (fintech)",
+      "url": "https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-481208",
+      "vacancy_id": "44ecf3b6-3f97-4cfc-87ed-52940d861b3e"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "122133207cb32b10e09aae67feaafb864413133ad6fb2ca09ca5ef9611e95d08",
+  "schema_version": 2
+}
