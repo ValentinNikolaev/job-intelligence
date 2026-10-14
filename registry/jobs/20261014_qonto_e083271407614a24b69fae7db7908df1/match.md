@@ -3,32 +3,32 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Strong fit for a senior/staff Go backend role: the candidate has 15+ years of backend experience, recent ownership of production Go automation and event-driven systems, AWS and reliability work, and technical-lead scope. The visible posting does not expose the complete requirements, remote geography, compensation, or work-authorization details, so those remain material uncertainties.
+Strong fit for a senior Go backend role available to candidates in Italy, supported by recent production Go ownership, scalable integrations, AWS infrastructure, reliability work, and relevant fintech-related systems experience. The posting provides limited detail beyond the mission, so exact team scope and banking-domain depth remain to be confirmed.
 
 ## Why it matches
 
-- Recent production Go ownership across support automation, resilient messaging, APIs, and operational reliability directly supports a senior backend mandate.
-- Demonstrated architecture of event-driven systems with queues, EventBridge, versioned schemas, routing, retries, backpressure, and observability.
-- Seniority is supported by 15+ years of experience, technical-lead work, roadmap and delivery responsibility, mentoring, and direct management of 10 developers.
-- Finance-adjacent and payments-related backend experience, including bank payment integrations and exchange-core features, is relevant to a finance workspace.
+- Recent ownership of a robust, scalable Go support-automation backend connecting Zendesk, Intercom, and internal services.
+- Demonstrated senior technical leadership across backend architecture, AWS, Kubernetes, event-driven systems, reliability, and production operations.
+- Italy-compatible location and meaningful experience with fintech-related systems and high-volume transactional email infrastructure.
+- The role's financial-infrastructure mission aligns with the candidate's background in production systems that require reliability and careful handling of real-time workflows.
 
 ## Gaps
 
-- The supplied vacancy text does not expose the detailed mandatory technology, architecture, leadership, or delivery requirements, so exact requirement coverage cannot be fully verified.
+- The supplied posting does not specify the exact backend framework, banking domain requirements, team structure, or staff-level expectations.
+- Direct experience with Qonto's banking infrastructure and regulated financial products is not established in the candidate profile.
 
 ## Concerns
 
-- The posting says remote restrictions apply but does not state the permitted countries, time zones, or European-hours compatibility.
-- Salary, work authorization, and availability are not stated in the supplied candidate profile or visible posting.
+- Salary is not provided, and the posting extract is sparse despite the Staff seniority label.
+- English is documented as Professional Working or Upper-intermediate in conflicting profile sources; language requirements should be confirmed.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior/staff-level backend engineering scope | critical / stated | strong | Senior/Staff - Go Backend Engineer - remote friendly | I'm a highly experienced developer with over 15 years of expertise. | / |
-| Go backend engineering | critical / stated | strong | Senior/Staff - Go Backend Engineer - remote friendly | Go | / |
-| Remote work compatible with the employer's restrictions | high / stated | unknown | Remote restrictions apply |  | The permitted country and time-zone rules are not present in the supplied posting. / Confirm European location and working-hours eligibility before applying. |
-| Backend architecture and production reliability | high / structural | strong | Senior/Staff - Go Backend Engineer - remote friendly | Event-driven systems | / |
-| Finance or banking domain context | meaningful / structural | partial | banking at its core | bank payment systems | The supplied profile shows relevant payments and finance-related work but does not establish direct banking-workspace experience. / Validate the role's domain ownership and emphasize payment integrations and fintech-related systems. |
-| Customer-focused product context | meaningful / stated | strong | customer satisfaction | mentoring | / |
-| Compensation and work authorization alignment | preferred / stated | unknown | N/A |  | The supplied posting and profile do not establish compensation expectations or authorization requirements. / Confirm both during the employer's screening process. |
+| Production Go backend engineering | critical / stated | strong | Senior/Staff - Go Backend Engineer - remote friendly | Go-based backends | The posting's core implementation expectations are only summarized, so the precise Go service scope is unknown. / Confirm the team's Go version, service architecture, testing expectations, and ownership scope during screening. |
+| Work from or relocate to Italy | critical / stated | strong | Open to candidates in Italy | Fiumicino, Latium, Italy | The exact remote-work arrangement and any office cadence are not stated. / Confirm remote eligibility and required overlap or travel expectations before applying. |
+| Build highly scalable APIs and robust real-time financial services | high / stated | partial | from highly scalable APIs to robust banking services that handle real money, in real time, with zero room for mistakes. | reliable | The candidate demonstrates scalable and reliable backend systems but direct banking-service ownership is not confirmed. / Present the strongest production reliability and high-volume integration examples, then verify the required banking-domain depth. |
+| Senior or Staff-level backend ownership | high / stated | strong | Seniority | leadership experience | Staff-level influence expectations and decision-making scope are not described in the supplied posting. / Clarify the expected architecture, cross-team leadership, and mentoring responsibilities. |
+| Financial-services or fintech context | meaningful / structural | partial | delivering Europe's leading finance workspace with banking at its core, augmented by financial tools. | fintech-related systems | The profile names fintech-related systems but does not identify the specific products or regulatory responsibilities. / Clarify which prior fintech systems and compliance constraints can be discussed in an interview. |
+| Permanent employment | preferred / stated | unknown | Permanent role |  | Availability and preference for a permanent role are not stated in the profile. / Confirm employment preference and availability directly. |
