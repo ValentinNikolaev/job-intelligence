@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 49
+Total vacancies: 50
 
-- Found: 27
+- Found: 28
 - Applied: 18
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 49
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-14 | [Qonto](../registry/jobs/20261014_qonto_e083271407614a24b69fae7db7908df1/) | [Senior/Staff - Go Backend Engineer - remote friendly](../registry/jobs/20261014_qonto_e083271407614a24b69fae7db7908df1/job.md) | — | Arc | Found | 2026-10-14 | [Arc](https://arc.dev/dashboard/d/remote-jobs/pqekkv6yhs) | — | — | — | — | — |
 | 2026-10-14 | [ElevenLabs](../registry/jobs/20261014_elevenlabs_7aa4069c20604c8a960c6e34b090d290/) | [Full-Stack Engineer (Backend-Leaning) - CoreMusic](../registry/jobs/20261014_elevenlabs_7aa4069c20604c8a960c6e34b090d290/job.md) | Remote | Arbeitnow | Found | 2026-10-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-coremusic-140966) | — | — | — | — | — |
 | 2026-10-14 | [TechBiz Global GmbH](../registry/jobs/20261014_techbiz-global_44ecf3b63f974cfc87ed52940d861b3e/) | [Senior/Leading Software Engineer (fintech)](../registry/jobs/20261014_techbiz-global_44ecf3b63f974cfc87ed52940d861b3e/job.md) | Remote job | Arbeitnow | Found | 2026-10-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-481208) | — | — | — | — | — |
 | 2026-10-13 | [Eventhub GmbH](../registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/) | [Senior Fullstack PHP/Laravel Developer – Remote (Europe/Berlin Time Zone)](../registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/job.md) | Remote (Europe/Berlin Time Zone) | Larajobs | Found | 2026-10-13 | [Larajobs](https://larajobs.com/job/3945) | — | [MD](../registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/application/cv.md) / [DOCX](../registry/jobs/20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25/application/cv.docx) | — | — | — |
