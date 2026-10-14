@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 50
+Total vacancies: 51
 
-- Found: 28
+- Found: 29
 - Applied: 18
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 50
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-14 | [team.blue](../registry/jobs/20261014_team-blue_39593ff20a1546a6b61a84d92b1bc80e/) | [Senior Java Backend Developer](../registry/jobs/20261014_team-blue_39593ff20a1546a6b61a84d92b1bc80e/job.md) | Italy | Himalayas | Found | 2026-10-14 | [Himalayas](https://himalayas.app/companies/team-blue/jobs/senior-java-backend-developer) | — | — | — | — | — |
 | 2026-10-14 | [Qonto](../registry/jobs/20261014_qonto_e083271407614a24b69fae7db7908df1/) | [Senior/Staff - Go Backend Engineer - remote friendly](../registry/jobs/20261014_qonto_e083271407614a24b69fae7db7908df1/job.md) | — | Arc | Found | 2026-10-14 | [Arc](https://arc.dev/dashboard/d/remote-jobs/pqekkv6yhs) | — | — | — | — | — |
 | 2026-10-14 | [ElevenLabs](../registry/jobs/20261014_elevenlabs_7aa4069c20604c8a960c6e34b090d290/) | [Full-Stack Engineer (Backend-Leaning) - CoreMusic](../registry/jobs/20261014_elevenlabs_7aa4069c20604c8a960c6e34b090d290/job.md) | Remote | Arbeitnow | Found | 2026-10-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-coremusic-140966) | — | — | — | — | — |
 | 2026-10-14 | [TechBiz Global GmbH](../registry/jobs/20261014_techbiz-global_44ecf3b63f974cfc87ed52940d861b3e/) | [Senior/Leading Software Engineer (fintech)](../registry/jobs/20261014_techbiz-global_44ecf3b63f974cfc87ed52940d861b3e/job.md) | Remote job | Arbeitnow | Found | 2026-10-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-481208) | — | — | — | — | — |
