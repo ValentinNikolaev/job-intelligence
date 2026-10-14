@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-14T18:58:16Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Sombra",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da",
+      "score": 78,
+      "title": "Senior Golang Engineer",
+      "url": "https://jobs.dou.ua/companies/sombra/vacancies/376646/",
+      "vacancy_id": "8fd6e817-f3b6-479e-8d94-575f3432c2da"
+    },
+    {
+      "company": "Alcor",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261014_alcor_3a7a5a6278d94083a385be42c48e40f6",
+      "score": 84,
+      "title": "PHP Tech Lead",
+      "url": "https://djinni.co/jobs/853358-php-tech-lead/",
+      "vacancy_id": "3a7a5a62-78d9-4083-a385-be42c48e40f6"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "7b2d5d242002c8d5b767f8b0f54e2e4f909986584dbdbf07185fb025150a9840",
+  "schema_version": 2
+}
