@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-15T13:41:50Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "PulseRise Technologies",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261015_pulserise-tech_16949268f9d94758af0912cdc639687d",
+      "score": 78,
+      "title": "Golang Developer/Team Lead, AI Product Engineering",
+      "url": "https://djinni.co/jobs/847531-golang-developer-team-lead-ai-product-enginee/",
+      "vacancy_id": "16949268-f9d9-4758-af09-12cdc639687d"
+    },
+    {
+      "company": "Bewort",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261015_bewort_4257c67a81de4e97b73960b4ca5f846e",
+      "score": 84,
+      "title": "AI-Driven PHP Developer",
+      "url": "https://djinni.co/jobs/828178-ai-driven-php-developer/",
+      "vacancy_id": "4257c67a-81de-4e97-b739-60b4ca5f846e"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "6c2c529596f69de1f1c6c8ce34ba1bfdea7368e6387655e502b65445a6974347",
+  "schema_version": 2
+}
