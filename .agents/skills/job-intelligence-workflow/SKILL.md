@@ -7,6 +7,15 @@ description: Run the repository's vacancy collection, match analysis, vacancy-st
 
 Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code. Use the model already selected for the active Codex task and never claim to have switched models from inside the task.
 
+For a standalone LinkedIn profile audit/rewrite, Skills alignment, or Featured
+proof task, route first to
+[`linkedin-profile-workflow`](../linkedin-profile-workflow/SKILL.md) and
+[`prompts/linkedin-profile.md`](../../../prompts/linkedin-profile.md).
+That workflow reuses candidate evidence without invoking vacancy collection,
+application preparation, storage access, or catalog generation unless that
+specific operation is actually requested. The operational steps below apply to
+the vacancy/application modes, not candidate-only LinkedIn work.
+
 Read `config/data-services.yaml` before operational work and run `python run.py storage
 doctor`. When MongoDB is selected, old registry YAML and description Markdown are frozen
 migration evidence, not current inputs. For each explicitly selected manual analysis or

@@ -41,6 +41,17 @@ a selected project workflow profile.
 - Before any preparation/editorial task, run `python run.py prepare-preflight <explicit-selector> ... --workflow prepare [--model-profile <profile>] [--document cv]`. It is a read-only, fail-closed batch gate: it checks the configured storage adapter, resolves every selector from the canonical backend, materializes only ignored `.codex-work` snapshots, and rejects stale, ineligible, hard-rejected, or incomplete MongoDB records before drafts are created. After MongoDB cutover, never copy frozen registry metadata from another checkout to make preparation work.
 - Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
+- For an explicitly requested LinkedIn profile audit/rewrite, Skills keyword map, or
+  Featured proof assets, use `$linkedin-profile-workflow` and
+  `prompts/linkedin-profile.md`. This standalone profile workflow uses the published
+  `linkedin-profile-optimizer` and `linkedin-featured-proof` skills configured in
+  `config/linkedin-profile.yaml`. It is separate from named-vacancy application
+  preparation: do not run `prepare-preflight`, generate application packages,
+  apply CV-only career/bullet quotas, or change candidate sources for a profile
+  task. Access live vacancies only for explicitly selected comparisons through
+  current read-only storage exports. Keep profile drafts under `.codex-work/`;
+  LinkedIn edits, uploads, visibility changes, messages, and source/memory updates
+  require their own explicit authorization.
 - Treat user approval as the mandatory preparation gateway: research, adapted CV,
   cover letter, interview preparation, and any later application-process artifacts
   may be generated only after the user explicitly asks to prepare a named vacancy

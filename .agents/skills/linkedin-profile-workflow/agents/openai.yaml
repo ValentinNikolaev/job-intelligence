@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn Profile Workflow"
+  short_description: "Use verified career evidence for LinkedIn profile work"
+  default_prompt: "Use $linkedin-profile-workflow to audit or rewrite my requested LinkedIn sections using current Job Intelligence evidence and the published LinkedIn skills."

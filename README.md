@@ -147,6 +147,26 @@ experience, metrics, tools, companies, or responsibilities unless verified candi
 evidence supports them. If records conflict, the workflow preserves the conflict for
 review instead of guessing.
 
+## LinkedIn Profile and Featured Proof
+
+For an explicitly requested LinkedIn audit, rewrite, Skills alignment, or Featured
+case study, I use the project skill
+[`linkedin-profile-workflow`](.agents/skills/linkedin-profile-workflow/SKILL.md).
+It loads the published `linkedin-profile-optimizer` and `linkedin-featured-proof`
+skills from `agent-plugins`, using the same immutable candidate sources, reviewed
+evidence, and current personal voice as the application workflow.
+
+The [workflow prompt](prompts/linkedin-profile.md) defines the inputs, evidence
+review, draft outputs, and external-action boundaries. The
+[integration configuration](config/linkedin-profile.yaml) pins a reviewed library
+revision as a read-only fallback when the installed plugin predates these skills.
+Profile work does not generate applications, change vacancy status, overwrite the
+source LinkedIn record, or update the live LinkedIn profile automatically.
+
+Example request: `Use $linkedin-profile-workflow to audit my LinkedIn headline,
+About, Experience and Skills against the three vacancies I explicitly selected.
+Keep unsupported skills and metrics out of the proposed copy.`
+
 ## Model Boundary
 
 Project code must stay deterministic. It can collect, normalize, deduplicate,

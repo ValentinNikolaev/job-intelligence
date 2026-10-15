@@ -1,0 +1,19 @@
+schema_version: 1
+purpose: Standalone Codex LinkedIn profile and public proof workflow; no application publisher.
+skills:
+  preferred_plugin: agent-plugins@valentin-agent-plugins
+  introduced_in_release: 19.0.0
+  fallback:
+    repository: ValentinNikolaev/agent-skills
+    revision: f09374bc8e131c39b3934ece64d3d8180e89d11b
+    profile: codex/skills/linkedin-profile-optimizer/SKILL.md
+    featured: codex/skills/linkedin-featured-proof/SKILL.md
+context:
+  candidate_profile: config/application-profile.yaml
+  candidate_directory: registry/candidate
+  evidence_bank: registry/evidence/achievements.yaml
+  evidence_contract: docs/application-quality.md
+  voice_configuration: config/application-review.yaml
+  voice_source_name: social-voice.md
+  vacancy_storage_configuration: config/data-services.yaml
+draft_root: .codex-work/linkedin
