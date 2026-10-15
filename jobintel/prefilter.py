@@ -131,7 +131,9 @@ def load_company_retry_rules(profile_path: Path) -> tuple[CompanyRetryRule, ...]
                 raise ValueError(
                     f"company_retry_after[{index}].allow_after must be YYYY-MM-DD"
                 ) from exc
-        raw_aliases = raw.get("aliases") or ()
+        raw_aliases = raw.get("aliases")
+        if raw_aliases is None:
+            raw_aliases = []
         if not isinstance(raw_aliases, list):
             raise ValueError(f"company_retry_after[{index}].aliases must be a list")
         reason = str(raw.get("reason") or "CV rejected; retry is temporarily blocked.").strip()

@@ -349,6 +349,30 @@ class PrefilterTests(unittest.TestCase):
 
         self.assertIsNone(rejection)
 
+    def test_company_retry_rules_allow_absent_or_empty_aliases(self) -> None:
+        for aliases in ({}, {"aliases": []}, {"aliases": None}):
+            with self.subTest(aliases=aliases), tempfile.TemporaryDirectory() as temporary:
+                profile = Path(temporary) / "profile.yaml"
+                profile.write_text(yaml.safe_dump({"company_retry_after": [{
+                    "company": "Acme", "allow_after": "2027-02-01", **aliases,
+                }]}), encoding="utf-8")
+
+                rules = load_company_retry_rules(profile)
+
+                self.assertEqual((), rules[0].aliases)
+                rejection = prefilter_job(make_job(), now=self.now, company_retry_rules=rules)
+                self.assertEqual("company_retry_block", rejection.category)
+
+    def test_company_retry_rules_reject_non_list_aliases(self) -> None:
+        for aliases in ("Acme Labs", {}, False, 0):
+            with self.subTest(aliases=aliases), tempfile.TemporaryDirectory() as temporary:
+                profile = Path(temporary) / "profile.yaml"
+                profile.write_text(yaml.safe_dump({"company_retry_after": [{
+                    "company": "Acme", "allow_after": "2027-02-01", "aliases": aliases,
+                }]}), encoding="utf-8")
+                with self.assertRaisesRegex(ValueError, "aliases must be a list"):
+                    load_company_retry_rules(profile)
+
     def test_loads_company_retry_rules_from_profile(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             profile = Path(temporary) / "profile.yaml"
