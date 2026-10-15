@@ -5,6 +5,13 @@ vacancies in the local registry. It uses
 `https://himalayas.app/jobs/api/search`, requires no API key or account, and is
 intended for private job discovery.
 
+The shipped four-query configuration includes worldwide jobs alongside roles
+explicitly available in Italy (`country: IT`, `exclude_worldwide: false`). This
+country parameter describes where a candidate can work, not employer headquarters.
+UK/Germany/Netherlands and additional Swiss employers can therefore be discovered
+through eligible European or worldwide postings. No salary rejection threshold
+is applied; unknown compensation remains available for later analysis.
+
 ## Configuration
 
 Edit `sources/himalayas/config.yaml`:

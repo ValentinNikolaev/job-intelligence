@@ -10,6 +10,8 @@ filters:
     - Europe
     - European Union
     - EMEA
+    - Worldwide
+    - Anywhere
   title_terms:
     - backend
     - backend architect

@@ -8,28 +8,28 @@ max_pages_per_query: 1
 queries:
   - q: "backend engineer"
     country: "IT"
-    exclude_worldwide: true
+    exclude_worldwide: false
     seniority: "Senior"
     sort: "recent"
     max_pages: 1
 
   - q: "golang"
     country: "IT"
-    exclude_worldwide: true
+    exclude_worldwide: false
     seniority: "Senior"
     sort: "recent"
     max_pages: 1
 
   - q: "php backend"
     country: "IT"
-    exclude_worldwide: true
+    exclude_worldwide: false
     seniority: "Senior"
     sort: "recent"
     max_pages: 1
 
   - q: "technical lead"
     country: "IT"
-    exclude_worldwide: true
+    exclude_worldwide: false
     seniority: "Manager"
     sort: "recent"
     max_pages: 1

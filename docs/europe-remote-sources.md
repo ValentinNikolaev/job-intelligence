@@ -2,6 +2,17 @@
 
 Verified on 2026-10-10 for remote work from Rome with PHP/Go backend and hands-on technical leadership. A remote label does not establish Italy eligibility, work authorization or acceptable contract terms.
 
+## Search objective updated on 2026-10-15
+
+Prioritize higher-paying employers in the United Kingdom, Germany and the
+Netherlands, with Switzerland as an additional market. Employer country is separate
+from the candidate's working location: continue screening for remote work from
+Italy. Europe/EMEA/worldwide employers remain eligible regardless of headquarters.
+The initial compensation search target is around EUR 100,000–130,000 annual base;
+it is advisory, not a rejection threshold. Preserve unknown compensation and
+distinguish base, bonus, equity and contractor revenue. Do not infer a foreign
+salary band from an employer's headquarters or confirm work authorization.
+
 ## Enabled collection
 
 | Source | Interface | Per-run bound |
@@ -11,8 +22,28 @@ Verified on 2026-10-10 for remote work from Rome with PHP/Go backend and hands-o
 | Remotive | Documented public JSON API | One request; at most 100 input records |
 | Remote OK | Public JSON API | One request; at most 100 records including legal metadata |
 | LaraJobs | Published RSS | One feed and at most five detail requests |
+| Hacker News Who is hiring? | Documented HN Algolia search API | One discovery and up to three pages per thread; seven requests maximum |
+| Synthesia, DeepL, Secfix, Taktile | Existing public Ashby posting API | One board request each |
 
-API/RSS pilots expire after **2026-10-24 inclusive, UTC**, then make no requests until explicitly extended. Responses are capped at 3 MB; timeouts at 30 seconds. JSON feeds do not fetch details. The existing six-hour schedule adds at most four feed requests per source/day; manual runs are additional requests.
+The HN pilot expires after **2026-10-29 inclusive, UTC**. It covers fresh top-level
+employer comments in the current hiring thread and, across month boundaries, the
+previous thread. Replies and the candidate-oriented thread are excluded. Original
+comment dates, full text, salary/contract header and attribution are retained;
+active status and country-specific employment remain unverified. The enabled
+collector is discovered by `all` on the existing six-hour schedule.
+
+The four additional Ashby boards were checked against the public posting API on
+2026-10-15. Board availability does not guarantee an active Go/PHP role or Italy
+eligibility. Existing title, remote, geography and shared stack/language/freshness
+filters still apply. Existing Stream and Weaviate coverage includes Dutch employers.
+Greenhouse also admits declared worldwide/anywhere roles. Himalayas retains
+`country: IT` as the employee-eligibility filter but now includes worldwide roles
+in its four existing queries, without adding requests or changing the schedule.
+
+- [HN search API](https://hn.algolia.com/api)
+- [HN official monthly employer threads](https://news.ycombinator.com/user?id=whoishiring)
+
+Remotive/Remote OK/LaraJobs pilots expire after **2026-10-24 inclusive, UTC**, then make no requests until explicitly extended. Responses are capped at 3 MB; timeouts at 30 seconds. JSON feeds do not fetch details. The existing six-hour schedule adds at most four feed requests per source/day; manual runs are additional requests.
 
 Remotive advises at most four requests/day and delays API jobs by 24 hours. Remotive and Remote OK require attribution/linkback, retained in records and source URLs. Do not syndicate Remotive jobs to third-party aggregators or hide listings behind signup gates.
 
@@ -41,6 +72,11 @@ Cross-source deduplication also checks company and official role URLs, including
 - [Welcome to the Jungle international](https://app.welcometothejungle.com/): check active employer postings and working hours; no stable collection interface verified.
 
 These channels have **no enabled collector**. Do not use undocumented browser APIs or activate accounts/alerts for this expansion. Individual findings can follow manual intake; preparing/submitting applications remains separate.
+
+[Golangprojects RSS](https://www.golangprojects.com/rss.xml) was rechecked on
+2026-10-15: sampled items omit publication dates and only provide truncated
+descriptions. Detail pages returned HTTP 403. No collector is enabled: neither
+the run date nor a page's month heading may substitute for an original job date.
 
 [EU Remote Jobs terms](https://euremotejobs.com/tos/) prohibit scraping, systematic extraction and republication: no collector without provider permission. RemoteinEurope redirects to existing WeWorkRemotely coverage. EuropeanRemote and ReadyToTouch are employer discovery lists, not active vacancy feeds.
 

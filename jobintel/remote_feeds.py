@@ -34,7 +34,7 @@ ROLE_PATTERN = re.compile(
     r"(?:tech|technical|engineering) lead|staff engineer|principal engineer)\b", re.I
 )
 ELIGIBLE_LOCATION = re.compile(r"\b(?:italy|italia|europe|european union|eea|eu|emea|worldwide|anywhere|global)\b", re.I)
-EXCLUDED_LOCATION = re.compile(r"\b(?:excluding|except) italy\b|\b(?:us|usa|uk|united states|united kingdom|canada|poland|france|spain|germany)[ -]only\b", re.I)
+EXCLUDED_LOCATION = re.compile(r"\b(?:excluding|except) italy\b|\b(?:us|usa|uk|united states|united kingdom|canada|poland|france|spain|germany|netherlands|switzerland)[ -]only\b", re.I)
 
 
 def timestamp(value: object) -> str | None:
@@ -128,6 +128,8 @@ def exclusion_reason(job: NormalizedJob, now: datetime) -> str | None:
     if not ELIGIBLE_LOCATION.search(location):
         return "unconfirmed_italy_eligibility"
     if EXCLUDED_LOCATION.search(location + "\n" + job.description):
+        return "country_restriction"
+    if re.search(r"\bremote\s*\(\s*(?:uk|united kingdom|germany|netherlands|switzerland|us|usa|united states|canada)\s*\)", location, re.I):
         return "country_restriction"
     for clause in re.split(r"[\n.;]", job.description):
         if (re.search(r"\bmust (?:be (?:based|located|resident)|reside|live) in\b", clause, re.I)

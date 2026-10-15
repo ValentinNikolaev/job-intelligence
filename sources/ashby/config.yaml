@@ -55,3 +55,11 @@ boards:
   company: Weaviate
 - name: ygo
   company: YGO
+- name: synthesia
+  company: Synthesia
+- name: deepl
+  company: DeepL
+- name: secfix
+  company: Secfix
+- name: taktile
+  company: Taktile

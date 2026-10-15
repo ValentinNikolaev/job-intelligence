@@ -202,7 +202,7 @@ class GreenhouseTests(unittest.TestCase):
             {token: boards[token] for token in ("cloudflare", "faire", "abnormalsecurity", "cloudbeds")},
         )
         self.assertEqual(len(boards), len(settings.boards))
-        self.assertEqual(("Italy", "Europe", "European Union", "EMEA"), settings.filters.location_terms)
+        self.assertEqual(("Italy", "Europe", "European Union", "EMEA", "Worldwide", "Anywhere"), settings.filters.location_terms)
         for term in ("golang", "php", "laravel", "backend architect", "software architect"):
             self.assertIn(term, settings.filters.title_terms)
 

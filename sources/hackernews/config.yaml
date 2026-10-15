@@ -1,0 +1,5 @@
+version: 1
+enabled: true
+pilot_until: 2026-10-29
+timeout_seconds: 15
+max_pages_per_thread: 3
