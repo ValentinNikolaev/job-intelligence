@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-15T19:42:56Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Hanna Robulets Company",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261015_hanna-robulets_289dae2b12bb4be09ab4985773e4963b",
+      "score": 70,
+      "title": "Senior PHP Developer Magento/ Adobe Commerce",
+      "url": "https://djinni.co/jobs/853575-senior-php-developer-magento-adobe-commerce/",
+      "vacancy_id": "289dae2b-12bb-4be0-9ab4-985773e4963b"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "cf31daec449e81bc5ffbd8c0151015d4678e7577496773c89a01912095b0ac51",
+  "schema_version": 2
+}
