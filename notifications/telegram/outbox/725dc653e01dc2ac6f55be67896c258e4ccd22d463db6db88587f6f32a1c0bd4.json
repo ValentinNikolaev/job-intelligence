@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-15T11:35:06Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Qonto",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261014_qonto_e083271407614a24b69fae7db7908df1",
+      "score": 91,
+      "title": "Senior/Staff - Go Backend Engineer - remote friendly",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pqekkv6yhs",
+      "vacancy_id": "e0832714-0761-4a24-b69f-ae7db7908df1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "725dc653e01dc2ac6f55be67896c258e4ccd22d463db6db88587f6f32a1c0bd4",
+  "schema_version": 2
+}

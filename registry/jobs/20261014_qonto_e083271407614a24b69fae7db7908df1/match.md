@@ -1,34 +1,35 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 91/100  
 **Recommendation:** Strong Match
 
-Strong fit for a senior Go backend role available to candidates in Italy, supported by recent production Go ownership, scalable integrations, AWS infrastructure, reliability work, and relevant fintech-related systems experience. The posting provides limited detail beyond the mission, so exact team scope and banking-domain depth remain to be confirmed.
+Strong fit for a senior/staff Go backend role in Italy, combining demonstrated production backend ownership, scalable event-driven architecture, reliability work, support automation, and technical leadership. The main uncertainty is the vacancy's financial-domain context and exact stack details, not the core engineering responsibilities.
 
 ## Why it matches
 
-- Recent ownership of a robust, scalable Go support-automation backend connecting Zendesk, Intercom, and internal services.
-- Demonstrated senior technical leadership across backend architecture, AWS, Kubernetes, event-driven systems, reliability, and production operations.
-- Italy-compatible location and meaningful experience with fintech-related systems and high-volume transactional email infrastructure.
-- The role's financial-infrastructure mission aligns with the candidate's background in production systems that require reliability and careful handling of real-time workflows.
+- Demonstrated Go backend ownership and production responsibility across support automation and internal services.
+- Strong evidence of scalable, resilient, event-driven systems, retries, monitoring, and measurable operational impact.
+- Relevant technical-leadership experience through architecture, planning, mentoring, and technical interviews.
+- Candidate is based in Italy and the vacancy explicitly accepts candidates in Italy.
 
 ## Gaps
 
-- The supplied posting does not specify the exact backend framework, banking domain requirements, team structure, or staff-level expectations.
-- Direct experience with Qonto's banking infrastructure and regulated financial products is not established in the candidate profile.
+- Direct experience building financial transaction or banking services is not explicitly established in the supplied profile.
+- The vacancy does not specify its backend language stack beyond general backend expertise, so exact technology alignment remains partly unknown.
 
 ## Concerns
 
-- Salary is not provided, and the posting extract is sparse despite the Staff seniority label.
-- English is documented as Professional Working or Upper-intermediate in conflicting profile sources; language requirements should be confirmed.
+- Qonto's real-money financial infrastructure implies domain, compliance, and correctness expectations that should be explored during the process.
+- Staff-level scope is plausible from the profile, but the supplied evidence does not quantify ownership in a financial domain.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Production Go backend engineering | critical / stated | strong | Senior/Staff - Go Backend Engineer - remote friendly | Go-based backends | The posting's core implementation expectations are only summarized, so the precise Go service scope is unknown. / Confirm the team's Go version, service architecture, testing expectations, and ownership scope during screening. |
-| Work from or relocate to Italy | critical / stated | strong | Open to candidates in Italy | Fiumicino, Latium, Italy | The exact remote-work arrangement and any office cadence are not stated. / Confirm remote eligibility and required overlap or travel expectations before applying. |
-| Build highly scalable APIs and robust real-time financial services | high / stated | partial | from highly scalable APIs to robust banking services that handle real money, in real time, with zero room for mistakes. | reliable | The candidate demonstrates scalable and reliable backend systems but direct banking-service ownership is not confirmed. / Present the strongest production reliability and high-volume integration examples, then verify the required banking-domain depth. |
-| Senior or Staff-level backend ownership | high / stated | strong | Seniority | leadership experience | Staff-level influence expectations and decision-making scope are not described in the supplied posting. / Clarify the expected architecture, cross-team leadership, and mentoring responsibilities. |
-| Financial-services or fintech context | meaningful / structural | partial | delivering Europe's leading finance workspace with banking at its core, augmented by financial tools. | fintech-related systems | The profile names fintech-related systems but does not identify the specific products or regulatory responsibilities. / Clarify which prior fintech systems and compliance constraints can be discussed in an interview. |
-| Permanent employment | preferred / stated | unknown | Permanent role |  | Availability and preference for a permanent role are not stated in the profile. / Confirm employment preference and availability directly. |
+| Production backend engineering at scale | critical / stated | strong | Design, build, deploy, and maintain services handling real financial transactions, owning reliability in production, not just at merge time | Backend engineer with 15+ years of experience | The profile establishes production backend work but not direct financial-transaction ownership in the recent roles. / Clarify the candidate's relevant payment and financial-system experience and map it to Qonto's transaction domain. |
+| Architecture, resilience, and scalability | critical / stated | strong | Co-own service architecture, resilience, and scalability with respect to Domain-Driven Design principles | Architect a scalable, event-driven system using queues and EventBridge, increasing throughput to the DataLake by over 10x. | Domain-Driven Design is not named explicitly in the candidate evidence. / Ask for an architecture example showing bounded contexts, domain ownership, and trade-offs. |
+| Technical leadership and mentoring | high / stated | strong | Grow in technical leadership: lead design discussions, anticipate risks, and mentor less experienced engineers | I have a strong track record in PHP, with 5 years of leadership experience. | The quantified leadership evidence is primarily PHP-oriented rather than explicitly tied to Go. / Describe recent cross-functional Go ownership and design leadership in interviews. |
+| Testing, monitoring, incident handling, and root-cause analysis | high / stated | strong | You write tests, set up monitoring, handle incidents methodically, and do root cause analysis | Build resilient message delivery pipelines with fallback logic, retries, and monitoring - reducing incident-related disruptions by over 50%. | The profile provides stronger evidence for monitoring and resilience than for a named root-cause-analysis process. / Prepare a concrete incident investigation and post-mortem example from production work. |
+| Go backend fluency | high / structural | strong | As a Backend Engineer at Qonto, you'll | Designed and owned a Go-based support automation platform connecting **Zendesk**, **Intercom**, and internal services. | The supplied vacancy text does not state Go as a mandatory technology despite the role title. / Confirm the expected Go version, services, and interview depth if contacted. |
+| Work eligibility and location in Italy | high / stated | strong | You can choose to work in Qonto as long as you're living in (or willing to relocate to) either Germany, France, Italy, Serbia, or Spain. | Fiumicino, Latium, Italy | Work authorization and exact working arrangement are not stated in the candidate profile. / Confirm Italian work authorization and preferred remote arrangement during the process. |
+| English communication | high / stated | strong | fluent in English | English - Professional Working | The profile contains conflicting English proficiency entries. / Use the candidate's current practical working level and verify expectations in the interview. |
