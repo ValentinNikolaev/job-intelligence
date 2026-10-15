@@ -292,9 +292,9 @@ def render_notification_message(
                 "",
                 f"{flags} {headline}" if flags else headline,
                 f"Score: {item['score']}",
+                f"URL: {item['url']}",
                 f"Vacancy ID: {item['vacancy_id']}",
                 f"Directory: {item['directory']}",
-                f"URL: {item['url']}",
             )
         )
     return "\n".join(lines).strip()
