@@ -9,6 +9,7 @@ import subprocess
 import sys
 from pathlib import Path
 from typing import Mapping
+from urllib.parse import quote
 
 
 EXCLUDED_PARTS = {".codex-work", ".venv", "venv", "__pycache__", ".idea", ".pytest_cache"}
@@ -86,14 +87,30 @@ def gh_api(root: Path, method: str, endpoint: str, payload: dict | None = None) 
     return json.loads(result.stdout)
 
 
-def remote_info(root: Path) -> tuple[str, str, str]:
+def remote_branch_sha(root: Path, repo: str, branch: str) -> str | None:
+    refs = json.loads(gh(root, "api", f"repos/{repo}/git/matching-refs/heads/{quote(branch, safe='/')}"))
+    return next((ref["object"]["sha"] for ref in refs if ref["ref"] == f"refs/heads/{branch}"), None)
+
+
+def remote_info(root: Path, branch: str | None = None) -> tuple[str, str, str]:
+    if branch is not None:
+        git(root, "check-ref-format", f"refs/heads/{branch}")
     info = json.loads(gh(root, "repo", "view", "--json", "nameWithOwner,defaultBranchRef"))
     repo = info["nameWithOwner"]
-    branch = info["defaultBranchRef"]["name"]
-    sha = gh(root, "api", f"repos/{repo}/git/ref/heads/{branch}", "--jq", ".object.sha").decode().strip()
+    default_branch = info["defaultBranchRef"]["name"]
+    sha = remote_branch_sha(root, repo, branch) if branch is not None else None
+    if sha is None:
+        sha = gh(root, "api", f"repos/{repo}/git/ref/heads/{quote(default_branch, safe='/')}", "--jq", ".object.sha").decode().strip()
     if len(sha) != 40 or any(c not in "0123456789abcdef" for c in sha):
         raise FinalizationError("remote branch did not return a commit SHA")
-    return repo, branch, sha
+    return repo, branch or default_branch, sha
+
+
+def reviewed_remote_info(root: Path, record: dict) -> tuple[str, str, str]:
+    result = remote_info(root, record.get("target_branch"))
+    if result[:2] != (record["repo"], record["branch"]):
+        raise FinalizationError("publication repository or branch changed after review")
+    return result
 
 
 def ensure_worktree(root: Path) -> None:
@@ -121,17 +138,17 @@ def ancestor(root: Path, older: str, newer: str) -> bool:
     return result.returncode == 0
 
 
-def fetch(root: Path, branch: str, expected: str) -> None:
-    git(root, "fetch", "--no-tags", "origin", branch)
+def fetch(root: Path, expected: str) -> None:
+    git(root, "fetch", "--no-tags", "origin", expected)
     git(root, "cat-file", "-e", f"{expected}^{{commit}}")
 
 
-def preflight(root: Path) -> dict[str, str]:
+def preflight(root: Path, *, branch: str | None = None) -> dict[str, str]:
     ensure_worktree(root)
     if status(root):
         raise FinalizationError("isolated checkout has local changes; preserve and account for them before preflight")
-    repo, branch, remote = remote_info(root)
-    fetch(root, branch, remote)
+    repo, branch, remote = remote_info(root, branch)
+    fetch(root, remote)
     local = head(root)
     if local != remote:
         if not ancestor(root, local, remote):
@@ -179,7 +196,7 @@ def api_tree(root: Path, repo: str, tree_sha: str) -> dict[str, str]:
             if item["type"] == "blob"}
 
 
-def review_committed(root: Path) -> dict:
+def review_committed(root: Path, *, branch: str | None = None) -> dict:
     """Review a clean unpublished commit for the API fallback after a push refusal."""
     ensure_worktree(root)
     if status(root):
@@ -196,10 +213,20 @@ def review_committed(root: Path) -> dict:
     work = root / ".codex-work" / "finalization"
     work.mkdir(parents=True, exist_ok=True)
     (work / "api-review.patch").write_bytes(patch)
-    record = {"commit": head(root), "parent": git(root, "rev-parse", "HEAD^").decode().strip(),
+    parent = git(root, "rev-parse", "HEAD^").decode().strip()
+    staged_review = work / "review.json"
+    if branch is None and staged_review.is_file():
+        previous = json.loads(staged_review.read_text(encoding="utf-8"))
+        if (previous.get("entries") == index_entries(root, paths) and
+                ancestor(root, previous["base"], parent)):
+            branch = previous.get("target_branch")
+    repo, selected_branch, _ = remote_info(root, branch)
+    record = {"commit": head(root), "parent": parent,
+              "repo": repo, "branch": selected_branch, "target_branch": branch,
               "entries": index_entries(root, paths), "patch_sha256": hashlib.sha256(patch).hexdigest()}
     (work / "api-review.json").write_text(json.dumps(record, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    return {"commit": record["commit"], "files": paths, "patch": str(work / "api-review.patch")}
+    return {"commit": record["commit"], "branch": selected_branch,
+            "files": paths, "patch": str(work / "api-review.patch")}
 
 
 def verify_committed_review(root: Path) -> dict:
@@ -229,12 +256,13 @@ def publish_api(root: Path) -> dict[str, str]:
     """Publish a reviewed local commit with gh when this host cannot push via Git."""
     ensure_worktree(root)
     record = verify_committed_review(root)
-    repo, branch, _ = remote_info(root)
+    repo, branch, _ = reviewed_remote_info(root, record)
     attempt_path = root / ".codex-work" / "finalization" / "api-attempt.json"
     if attempt_path.is_file():
         attempt = json.loads(attempt_path.read_text(encoding="utf-8"))
-        if attempt.get("reviewed_commit") == record["commit"]:
-            latest = remote_info(root)[2]
+        if (attempt.get("reviewed_commit") == record["commit"] and
+                attempt.get("repo") == repo and attempt.get("branch") == branch):
+            latest = reviewed_remote_info(root, record)[2]
             if api_commit_is_published(root, repo, attempt["created_commit"], latest):
                 return {"repo": repo, "branch": branch, "commit": attempt["created_commit"],
                         "remote_head": latest, "result": "published and verified by GitHub API"}
@@ -252,7 +280,7 @@ def publish_api(root: Path) -> dict[str, str]:
                 raise FinalizationError(f"uploaded blob hash differs for {path}")
             blob_shas[path] = local_sha
     for _ in range(4):
-        remote = remote_info(root)[2]
+        remote = reviewed_remote_info(root, record)[2]
         remote_commit = gh_api(root, "GET", f"repos/{repo}/git/commits/{remote}")
         base_tree_sha = remote_commit["tree"]["sha"]
         remote_entries = api_tree(root, repo, base_tree_sha)
@@ -276,19 +304,24 @@ def publish_api(root: Path) -> dict[str, str]:
         created_commit = gh_api(root, "POST", f"repos/{repo}/git/commits", {
             "message": message, "tree": created_tree, "parents": [remote]})["sha"]
         attempt_path.write_text(json.dumps({"reviewed_commit": record["commit"],
+                                            "repo": repo, "branch": branch,
                                             "created_commit": created_commit}, sort_keys=True) + "\n", encoding="utf-8")
         try:
-            gh_api(root, "PATCH", f"repos/{repo}/git/refs/heads/{branch}", {
-                "sha": created_commit, "force": False})
+            if record.get("target_branch") and remote_branch_sha(root, repo, branch) is None:
+                gh_api(root, "POST", f"repos/{repo}/git/refs", {
+                    "ref": f"refs/heads/{branch}", "sha": created_commit})
+            else:
+                gh_api(root, "PATCH", f"repos/{repo}/git/refs/heads/{quote(branch, safe='/')}", {
+                    "sha": created_commit, "force": False})
         except FinalizationError:
-            latest = remote_info(root)[2]
+            latest = reviewed_remote_info(root, record)[2]
             if api_commit_is_published(root, repo, created_commit, latest):
                 return {"repo": repo, "branch": branch, "commit": created_commit,
                         "remote_head": latest, "result": "published and verified by GitHub API"}
             if latest != remote:
                 continue
             raise
-        verified = remote_info(root)[2]
+        verified = reviewed_remote_info(root, record)[2]
         if not api_commit_is_published(root, repo, created_commit, verified):
             raise FinalizationError(f"API update returned success, but remote head is {verified}; inspect commit {created_commit}")
         return {"repo": repo, "branch": branch, "commit": created_commit,
@@ -318,7 +351,7 @@ def reviewed_snapshot(root: Path) -> dict[str, str | None]:
     return index_entries(root, paths)
 
 
-def review(root: Path) -> dict:
+def review(root: Path, *, branch: str | None = None) -> dict:
     ensure_worktree(root)
     git(root, "add", "-A")
     outbox = sorted((root / TELEGRAM_OUTBOX_PREFIX).glob("*.json"))
@@ -338,23 +371,28 @@ def review(root: Path) -> dict:
         try:
             cached = json.loads(record_path.read_text(encoding="utf-8"))
             cached_patch = work / "review.patch"
-            if (cached.get("base") == head(root) and cached.get("entries") == entries and
+            if (cached.get("target_branch") == branch and
+                    cached.get("base") == head(root) and cached.get("entries") == entries and
                     cached.get("status_sha256") == current_status and cached_patch.is_file() and
                     hashlib.sha256(cached_patch.read_bytes()).hexdigest() == cached.get("patch_sha256")):
-                return {"base": cached["base"], "files": list(entries), "patch": str(cached_patch), "reused": True}
+                return {"base": cached["base"], "branch": cached["branch"],
+                        "files": list(entries), "patch": str(cached_patch), "reused": True}
         except (OSError, ValueError, TypeError):
             pass
     # Take the remote snapshot before generating an expensive binary patch.  Later
     # publication still rechecks it, so this is an optimization rather than trust.
-    repo, branch, remote = remote_info(root)
+    target_branch = branch
+    repo, branch, remote = remote_info(root, branch)
     patch = git(root, "diff", "--cached", "--binary", "--full-index", "--no-ext-diff")
     work.mkdir(parents=True, exist_ok=True)
     (work / "review.patch").write_bytes(patch)
-    result = {"base": head(root), "remote_head": remote, "repo": repo, "branch": branch, "entries": entries,
+    result = {"base": head(root), "remote_head": remote, "repo": repo, "branch": branch,
+              "target_branch": target_branch, "entries": entries,
               "patch_sha256": hashlib.sha256(patch).hexdigest(),
               "status_sha256": current_status}
     (work / "review.json").write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    return {"base": result["base"], "files": list(entries), "patch": str(work / "review.patch"), "reused": False}
+    return {"base": result["base"], "branch": branch,
+            "files": list(entries), "patch": str(work / "review.patch"), "reused": False}
 
 
 def verify_review(root: Path, record: dict) -> None:
@@ -386,7 +424,7 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
     record = json.loads(review_path.read_text(encoding="utf-8"))
     if head(root) == record["base"]:
         verify_review(root, record)
-        repo, branch, remote = remote_info(root)
+        repo, branch, remote = reviewed_remote_info(root, record)
         git(root, "-c", "commit.gpgsign=false", "commit", "-m", subject,
             "-m", body or "Reviewed project changes")
         base = record["base"]
@@ -395,9 +433,9 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
             raise FinalizationError("unpublished commit or local files changed; inspect before retrying")
         verify_commit_content(root, record["entries"])
         base = git(root, "rev-parse", "HEAD^").decode().strip()
-        repo, branch, remote = remote_info(root)
+        repo, branch, remote = reviewed_remote_info(root, record)
     for _ in range(4):
-        fetch(root, branch, remote)
+        fetch(root, remote)
         if remote != base:
             if not ancestor(root, base, remote):
                 raise FinalizationError("remote branch no longer descends from reviewed base; inspect remote history")
@@ -409,16 +447,16 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
         commit = head(root)
         result = subprocess.run(["git", "-c", "core.longpaths=true", "push", "origin", f"HEAD:refs/heads/{branch}"], cwd=root, capture_output=True)
         if result.returncode == 0:
-            verified = remote_info(root)[2]
+            verified = reviewed_remote_info(root, record)[2]
             if verified != commit:
-                fetch(root, branch, verified)
+                fetch(root, verified)
                 if not ancestor(root, commit, verified):
                     raise FinalizationError(f"push returned success but remote head is {verified}; published commit ancestry could not be verified")
             if status(root):
                 raise FinalizationError("published commit is verified, but isolated checkout has local changes")
             return {"repo": repo, "branch": branch, "commit": commit,
                     "remote_head": verified, "result": "published and verified" if verified == commit else "published; remote advanced afterward"}
-        latest = remote_info(root)[2]
+        latest = reviewed_remote_info(root, record)[2]
         if latest == remote:
             raise FinalizationError("non-force push failed without a remote advance: " + result.stderr.decode("utf-8", "replace")[:1000])
         base, remote = remote, latest
@@ -428,9 +466,9 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="action", required=True)
-    commands.add_parser("preflight")
-    commands.add_parser("review")
-    commands.add_parser("review-commit")
+    for action in ("preflight", "review", "review-commit"):
+        command_parser = commands.add_parser(action)
+        command_parser.add_argument("--branch", help="Explicit publication branch; defaults to the remote default branch")
     commands.add_parser("publish-api")
     release = commands.add_parser("publish")
     release.add_argument("--subject", required=True)
@@ -439,11 +477,11 @@ def main(argv: list[str] | None = None) -> int:
     root = Path.cwd().resolve()
     try:
         if args.action == "preflight":
-            result = preflight(root)
+            result = preflight(root, branch=args.branch)
         elif args.action == "review":
-            result = review(root)
+            result = review(root, branch=args.branch)
         elif args.action == "review-commit":
-            result = review_committed(root)
+            result = review_committed(root, branch=args.branch)
         elif args.action == "publish-api":
             result = publish_api(root)
         else:

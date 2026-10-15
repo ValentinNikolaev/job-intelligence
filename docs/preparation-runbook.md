@@ -98,6 +98,15 @@ listed paths. It stages only normal Git project changes, detects whitespace erro
 and records the reviewed blob IDs. Then run `python scripts/finalize_repository.py
 publish --subject "<specific imperative sentence>" --body "<run metadata>"`.
 
+For changes intended for a pull request, pass `--branch <feature-branch>` to both
+`preflight` and `review`. An existing branch is checked against its current remote
+head; a new branch starts from the remote default branch. The review receipt binds
+the publication target, and `publish` pushes only that branch without force. Omitting
+`--branch` retains publication to the remote default branch. `review-commit` carries
+the target from a matching staged review into the API fallback; pass the same
+`--branch` explicitly when recovering without that review receipt. `publish-api`
+creates a missing feature branch or updates the existing target without force.
+
 Never construct a GitHub tree, commit, or branch-ref update directly with `gh api`.
 The finalizer's `publish-api` command is the only permitted API fallback: it starts
 from the current remote base tree, applies only reviewed paths, and verifies the

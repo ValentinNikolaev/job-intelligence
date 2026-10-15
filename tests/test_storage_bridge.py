@@ -91,7 +91,8 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
 
     def test_collection_batch_uses_bulk_writes_and_replay_is_unchanged(self) -> None:
         from jobintel.cli import _store_collected_jobs
-        jobs = [replace(self._job(), source_job_id=f"job-{index}", title=f"PHP Engineer {index}")
+        jobs = [replace(self._job(), source_job_id=f"job-{index}",
+                        source_url=f"https://example.test/jobs/job-{index}", title=f"PHP Engineer {index}")
                 for index in range(20)]
         registry = Registry(self.temp / "registry", clock=lambda: self.now, cache_entries=True)
         rejected = RejectedRegistry(self.temp / "registry")
@@ -125,7 +126,8 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
             self.assertEqual(3, reads.call_count)
         self.assertEqual([], list(registry.jobs_dir.iterdir()))
         self.assertTrue(all(row["revision"] == 1 for row in self.store.list_vacancies()))
-        unrelated = replace(jobs[0], source_job_id="outside-batch", title="Unrelated PHP Engineer")
+        unrelated = replace(jobs[0], source_job_id="outside-batch",
+                            source_url="https://example.test/jobs/outside-batch", title="Unrelated PHP Engineer")
         with bridge.vacancy_batch(registry.root, jobs=[unrelated]):
             registry.upsert(unrelated)
         self.assertEqual(21, len(registry._scan()))
@@ -154,13 +156,14 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
 
     def test_batch_failure_rolls_back_vacancies_identities_and_row_savepoints(self) -> None:
         first = self._job()
-        failed = replace(first, source_job_id="failed", title="Different Engineer")
+        failed = replace(first, source_job_id="failed",
+                         source_url="https://example.test/jobs/failed", title="Different Engineer")
         self.registry._id_factory = lambda: str(uuid.uuid4())
         with bridge.vacancy_batch(self.registry.root, jobs=[first, failed]) as store:
             created = self.registry.upsert(first)
             with self.assertRaisesRegex(ValueError, "bad row"):
                 with bridge.vacancy_batch_item(store):
-                    self.registry.upsert(failed)
+                    self.assertEqual("created", self.registry.upsert(failed).status)
                     raise ValueError("bad row")
         self.assertEqual([created.vacancy_id], [row["_id"] for row in self.store.list_vacancies()])
         self.assertIsNone(self.store.resolve_source(failed.source, failed.source_job_id))
@@ -177,7 +180,10 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         first = self._job()
         old = self.registry.upsert(first)
         self.registry._id_factory = lambda: "vacancy-2"
-        active = self.registry.upsert(replace(first, source_job_id="active", title="Active Engineer"))
+        active = self.registry.upsert(replace(first, source_job_id="active",
+                                             source_url="https://example.test/jobs/active", title="Active Engineer"))
+        self.assertEqual("created", active.status)
+        self.assertNotEqual(old.vacancy_id, active.vacancy_id)
         bridge.archive_vacancy(self.registry.jobs_dir / old.directory, "old.zip")
         identity_id = self.store._source_identity_id(first.source, first.source_job_id)
         with self.store.lease("test:historical-identity"):
@@ -197,10 +203,12 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
 
     def test_bulk_archive_is_atomic_revision_guarded_and_idempotent(self) -> None:
         self.registry._id_factory = lambda: str(uuid.uuid4())
-        jobs = [self._job(), replace(self._job(), source_job_id="second", title="Second Engineer")]
+        jobs = [self._job(), replace(self._job(), source_job_id="second",
+                                    source_url="https://example.test/jobs/second", title="Second Engineer")]
         with bridge.vacancy_batch(self.registry.root, jobs=jobs):
             created = [self.registry.upsert(job) for job in jobs]
         directories = [self.registry.jobs_dir / row.directory for row in created]
+        self.assertTrue(all(row.status == "created" for row in created))
         revisions = {row["directory"]: row["revision"] for row in self.store.list_vacancies()}
         with self.assertRaises(StorageConflictError):
             bridge.archive_vacancies(directories + [self.registry.jobs_dir / "missing"], None)

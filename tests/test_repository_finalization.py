@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import os
 import subprocess
 import tempfile
@@ -12,6 +13,37 @@ from scripts import finalize_repository as fin
 
 def run(*args: str, cwd: Path) -> str:
     return subprocess.run(args, cwd=cwd, check=True, capture_output=True, text=True).stdout.strip()
+
+
+class PublicationBranchResolutionTests(unittest.TestCase):
+    def test_explicit_branch_uses_exact_ref_or_default_base_when_missing(self) -> None:
+        for refs, expected in (([], "a" * 40), ([
+            {"ref": "refs/heads/review/python/other", "object": {"sha": "c" * 40}},
+            {"ref": "refs/heads/review/python", "object": {"sha": "b" * 40}},
+        ], "b" * 40)):
+            with self.subTest(refs=refs), tempfile.TemporaryDirectory() as temporary:
+                def gh(_root, *args):
+                    if args[0] == "repo":
+                        return json.dumps({"nameWithOwner": "example/fixture", "defaultBranchRef": {"name": "main"}}).encode()
+                    if "matching-refs" in args[1]:
+                        return json.dumps(refs).encode()
+                    return ("a" * 40).encode()
+
+                with patch.object(fin, "gh", side_effect=gh):
+                    self.assertEqual(("example/fixture", "review/python", expected),
+                                     fin.remote_info(Path(temporary), "review/python"))
+
+    def test_invalid_branch_is_rejected_before_remote_access(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary, patch.object(fin, "gh") as gh:
+            with self.assertRaises(fin.FinalizationError):
+                fin.remote_info(Path(temporary), "../invalid")
+            gh.assert_not_called()
+
+    def test_publication_rejects_a_changed_remote_destination(self) -> None:
+        record = {"repo": "example/fixture", "branch": "main", "target_branch": None}
+        with patch.object(fin, "remote_info", return_value=("example/fixture", "other", "a" * 40)):
+            with self.assertRaisesRegex(fin.FinalizationError, "branch changed after review"):
+                fin.reviewed_remote_info(Path.cwd(), record)
 
 
 class RepositoryFinalizationTests(unittest.TestCase):
@@ -44,11 +76,107 @@ class RepositoryFinalizationTests(unittest.TestCase):
         run("git", "commit", "-m", "Seed fixture", cwd=self.seed)
         run("git", "push", "origin", "HEAD:main", cwd=self.seed)
         run("git", "worktree", "add", "--detach", str(self.work), "HEAD", cwd=self.seed)
-        self.patch_remote = patch.object(fin, "remote_info", side_effect=lambda _root: (
-            "example/fixture", "main", run("git", "--git-dir", str(self.bare), "rev-parse", "refs/heads/main", cwd=self.root)
-        ))
+        self.patch_remote = patch.object(fin, "remote_info", side_effect=self.remote_info)
         self.patch_remote.start()
         self.addCleanup(self.patch_remote.stop)
+
+    def remote_info(self, _root: Path, branch: str | None = None):
+        selected = branch or "main"
+        remote = subprocess.run(
+            ["git", "--git-dir", str(self.bare), "rev-parse", "--verify", f"refs/heads/{selected}"],
+            cwd=self.root, capture_output=True, text=True,
+        )
+        sha = remote.stdout.strip() if remote.returncode == 0 else run(
+            "git", "--git-dir", str(self.bare), "rev-parse", "refs/heads/main", cwd=self.root,
+        )
+        return "example/fixture", selected, sha
+
+    def test_explicit_branch_publication_preserves_main(self) -> None:
+        original_main = self.remote_info(self.work)[2]
+        branch = "review/python-fixes"
+        run("git", "switch", "-c", branch, cwd=self.work)
+        self.assertEqual(branch, fin.preflight(self.work, branch=branch)["branch"])
+        (self.work / "fix.txt").write_text("reviewed fix\n", encoding="utf-8")
+        fin.review(self.work, branch=branch)
+
+        result = fin.publish(self.work, "Fix reviewed Python behavior", "Regression checks passed")
+
+        self.assertEqual(branch, result["branch"])
+        self.assertEqual(original_main, self.remote_info(self.work)[2])
+        self.assertEqual(result["commit"], self.remote_info(self.work, branch)[2])
+        api_review = fin.review_committed(self.work)
+        self.assertEqual(branch, fin.verify_committed_review(self.work)["target_branch"])
+        self.assertEqual(result["commit"], api_review["commit"])
+
+    def test_review_cache_is_bound_to_publication_branch(self) -> None:
+        (self.work / "fix.txt").write_text("reviewed fix\n", encoding="utf-8")
+        fin.review(self.work)
+        fin.review(self.work, branch="review/python-fixes")
+        record = json.loads((self.work / ".codex-work/finalization/review.json").read_text(encoding="utf-8"))
+        self.assertEqual("review/python-fixes", record["target_branch"])
+
+    def test_new_branch_integrates_concurrent_main_without_publishing_to_main(self) -> None:
+        branch = "review/python-fixes"
+        (self.work / "fix.txt").write_text("reviewed fix\n", encoding="utf-8")
+        fin.review(self.work, branch=branch)
+        (self.seed / "parallel.txt").write_text("parallel change\n", encoding="utf-8")
+        run("git", "add", "-A", cwd=self.seed)
+        run("git", "commit", "-m", "Concurrent main change", cwd=self.seed)
+        run("git", "push", "origin", "HEAD:main", cwd=self.seed)
+        remote_main = self.remote_info(self.work)[2]
+
+        result = fin.publish(self.work, "Fix reviewed Python behavior", "")
+
+        self.assertEqual(remote_main, self.remote_info(self.work)[2])
+        self.assertEqual(result["commit"], self.remote_info(self.work, branch)[2])
+        self.assertEqual("parallel change\n", (self.work / "parallel.txt").read_text(encoding="utf-8"))
+        fin.review_committed(self.work)
+        self.assertEqual(branch, fin.verify_committed_review(self.work)["target_branch"])
+
+    def test_api_fallback_creates_only_the_reviewed_feature_branch(self) -> None:
+        branch = "review/api-fixes"
+        original_main = self.remote_info(self.work)[2]
+        (self.work / "fix.txt").write_text("reviewed fix\n", encoding="utf-8")
+        fin.review(self.work, branch=branch)
+        with patch.object(fin, "fetch", side_effect=fin.FinalizationError("fetch failed")):
+            with self.assertRaisesRegex(fin.FinalizationError, "fetch failed"):
+                fin.publish(self.work, "Fix reviewed Python behavior", "")
+        fin.review_committed(self.work)
+        record = fin.verify_committed_review(self.work)
+        paths = run("git", "ls-files", cwd=self.work).splitlines()
+        base_tree = fin.tree_entries(self.work, "HEAD^", paths)
+        updated_tree = {**base_tree, **record["entries"]}
+        remote_sha = original_main
+        requests = []
+
+        def api(_root, method, endpoint, payload=None):
+            nonlocal remote_sha
+            requests.append((method, endpoint, payload))
+            if endpoint.endswith("/git/blobs"):
+                return {"sha": record["entries"]["fix.txt"].split(":")[1]}
+            if method == "GET" and "/git/commits/" in endpoint:
+                return {"tree": {"sha": "base-tree"}}
+            if endpoint.endswith("/git/trees"):
+                return {"sha": "updated-tree"}
+            if endpoint.endswith("/git/commits"):
+                return {"sha": "f" * 40}
+            if endpoint.endswith("/git/refs"):
+                self.assertEqual(f"refs/heads/{branch}", payload["ref"])
+                remote_sha = payload["sha"]
+                return {}
+            self.fail(f"unexpected API call: {method} {endpoint}")
+
+        with patch.object(fin, "remote_info", side_effect=lambda _root, target=None: (
+            "example/fixture", target or "main", remote_sha,
+        )), patch.object(fin, "remote_branch_sha", return_value=None), patch.object(
+            fin, "api_tree", side_effect=lambda _root, _repo, sha: base_tree if sha == "base-tree" else updated_tree,
+        ), patch.object(fin, "gh_api", side_effect=api):
+            result = fin.publish_api(self.work)
+
+        self.assertEqual(branch, result["branch"])
+        self.assertEqual("f" * 40, result["commit"])
+        self.assertEqual(original_main, self.remote_info(self.work)[2])
+        self.assertFalse(any(method == "PATCH" for method, _, _ in requests))
 
     def test_isolated_review_refusal_concurrency_and_non_force_publication(self) -> None:
         with self.assertRaisesRegex(fin.FinalizationError, "managed Git worktree"):
