@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 48
+Total vacancies: 51
 
-- Found: 25
+- Found: 28
 - Applied: 18
 - Interview: 4
 - Rejected: 1
@@ -13,6 +13,9 @@ Total vacancies: 48
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-15 | [Bewort](../registry/jobs/20261015_bewort_4257c67a81de4e97b73960b4ca5f846e/) | [AI-Driven PHP Developer](../registry/jobs/20261015_bewort_4257c67a81de4e97b73960b4ca5f846e/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-15 | [Djinni](https://djinni.co/jobs/828178-ai-driven-php-developer/) | — | — | — | — | — |
+| 2026-10-15 | [PulseRise Technologies](../registry/jobs/20261015_pulserise-tech_16949268f9d94758af0912cdc639687d/) | [Golang Developer/Team Lead, AI Product Engineering](../registry/jobs/20261015_pulserise-tech_16949268f9d94758af0912cdc639687d/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-15 | [Djinni](https://djinni.co/jobs/847531-golang-developer-team-lead-ai-product-enginee/) | — | — | — | — | — |
+| 2026-10-15 | [Artigaming](../registry/jobs/20261015_artigaming_0e8a725a96024198a2be7422b5b9bfa2/) | [Senior Back-end Developer (PHP)](../registry/jobs/20261015_artigaming_0e8a725a96024198a2be7422b5b9bfa2/job.md) | Worldwide | Djinni | Found | 2026-10-15 | [Djinni](https://djinni.co/jobs/845838-senior-back-end-developer-php/) | — | — | — | — | — |
 | 2026-10-14 | [Nord Security](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/) | [Backend Engineer \| Mid - Senior \| Business Onboarding & Setup Team](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/job.md) | Vilnius; Kaunas, Lithuania (Hybrid) | Manual | Found | 2026-10-14 | [Manual](https://jobs.ashbyhq.com/nord-security/a8f7480a-ce42-4e20-8132-a29030963f6c) | — | [MD](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cv.md) / [DOCX](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cv.docx) | [MD](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cover-letter.md) / [DOCX](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/cover-letter.docx) | [Open](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/analysis.md) | [Open](../registry/jobs/20261014_nord-security_142e9dec5c054e3094f204aef6523e37/application/interview-preparation.md) |
 | 2026-10-14 | [Sombra](../registry/jobs/20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da/) | [Senior Golang Engineer](../registry/jobs/20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da/job.md) | Київ, Львів, Івано-Франківськ, віддалено | Dou | Found | 2026-10-14 | [Dou](https://jobs.dou.ua/companies/sombra/vacancies/376646/) | [Open](../registry/jobs/20261014_sombra_8fd6e817f3b6479e8d94575f3432c2da/company.md) | — | — | — | — |
 | 2026-10-14 | [Alcor](../registry/jobs/20261014_alcor_3a7a5a6278d94083a385be42c48e40f6/) | [PHP Tech Lead](../registry/jobs/20261014_alcor_3a7a5a6278d94083a385be42c48e40f6/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-14 | [Djinni](https://djinni.co/jobs/853358-php-tech-lead/) | — | — | — | — | — |
