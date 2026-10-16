@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 54
 
-- Found: 31
+- Found: 32
 - Applied: 18
 - Interview: 3
 - Rejected: 1
@@ -13,10 +13,11 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-16 | [G2i](../registry/jobs/20261016_g2i_f49ccb15309647cab2bbd93b5075025d/) | [Go Senior Software Engineer, AI Training](../registry/jobs/20261016_g2i_f49ccb15309647cab2bbd93b5075025d/job.md) | Worldwide | Himalayas | Found | 2026-10-16 | [Himalayas](https://himalayas.app/companies/g2i/jobs/go-senior-software-engineer-ai-training) | — | — | — | — | — |
+| 2026-10-16 | [Elogic Commerce](../registry/jobs/20261016_elogic-commerc_8cdaaa2401a7436c954ca603d8cbd3fc/) | [Middle+ Magento Developer](../registry/jobs/20261016_elogic-commerc_8cdaaa2401a7436c954ca603d8cbd3fc/job.md) | віддалено | Dou | Found | 2026-10-16 | [Dou](https://jobs.dou.ua/companies/elogic/vacancies/376629/) | [Open](../registry/jobs/20261016_elogic-commerc_8cdaaa2401a7436c954ca603d8cbd3fc/company.md) | — | — | — | — |
+| 2026-10-16 | [Snotor](../registry/jobs/20261016_snotor_a4358af2bf914c06a21b5e6f4ea8b779/) | [Go Backend Developer](../registry/jobs/20261016_snotor_a4358af2bf914c06a21b5e6f4ea8b779/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-16 | [Djinni](https://djinni.co/jobs/853708-go-backend-developer/) | — | — | — | — | — |
 | 2026-10-16 | [WhiteTech](../registry/jobs/20261016_whitetech_f3d03897422a4ac6965e2969f4b25f8d/) | [PHP Developer with DDD](../registry/jobs/20261016_whitetech_f3d03897422a4ac6965e2969f4b25f8d/job.md) | Worldwide | Himalayas | Found | 2026-10-16 | [Himalayas](https://himalayas.app/companies/whitetech/jobs/php-developer-with-ddd) | — | — | — | — | — |
-| 2026-10-16 | [Xperteez Technology](../registry/jobs/20261016_xperteez-techn_a576cd81805945ea8f11f33882c2ea30/) | [Backend Security Engineer, Remote - Contract](../registry/jobs/20261016_xperteez-techn_a576cd81805945ea8f11f33882c2ea30/job.md) | Worldwide | Himalayas | Found | 2026-10-16 | [Himalayas](https://himalayas.app/companies/xperteez-technology/jobs/backend-security-engineer-remote-contract-290311741) | — | — | — | — | — |
 | 2026-10-16 | [TradeQuo](../registry/jobs/20261016_tradequo_6e53df022f9045bbabe3c67e01e2a38f/) | [Senior Ruby Developer (Ruby & Go)](../registry/jobs/20261016_tradequo_6e53df022f9045bbabe3c67e01e2a38f/job.md) | Worldwide | Himalayas | Found | 2026-10-16 | [Himalayas](https://himalayas.app/companies/tradequo/jobs/senior-ruby-developer-ruby-go) | — | — | — | — | — |
-| 2026-10-16 | [Xperteez Technology](../registry/jobs/20261016_xperteez-techn_30703753f243447b9b7957d9cd7b3da8/) | [🌍 Senior Software Engineer, Verifiers- Remote - Contract](../registry/jobs/20261016_xperteez-techn_30703753f243447b9b7957d9cd7b3da8/job.md) | Worldwide | Himalayas | Found | 2026-10-16 | [Himalayas](https://himalayas.app/companies/xperteez-technology/jobs/senior-software-engineer-verifiers-remote-contract) | — | — | — | — | — |
 | 2026-10-16 | [Gorin Systems](../registry/jobs/20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429/) | [Full Stack Laravel / React Developer](../registry/jobs/20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429/job.md) | Worldwide | Himalayas | Found | 2026-10-16 | [Himalayas](https://himalayas.app/companies/gorin-systems/jobs/full-stack-laravel-react-developer-5277609797) | — | — | — | — | — |
 | 2026-10-15 | [Hanna Robulets Company](../registry/jobs/20261015_hanna-robulets_289dae2b12bb4be09ab4985773e4963b/) | [Senior PHP Developer Magento/ Adobe Commerce](../registry/jobs/20261015_hanna-robulets_289dae2b12bb4be09ab4985773e4963b/job.md) | Worldwide | Djinni | Found | 2026-10-15 | [Djinni](https://djinni.co/jobs/853575-senior-php-developer-magento-adobe-commerce/) | — | — | — | — | — |
 | 2026-10-15 | [Bewort](../registry/jobs/20261015_bewort_4257c67a81de4e97b73960b4ca5f846e/) | [AI-Driven PHP Developer](../registry/jobs/20261015_bewort_4257c67a81de4e97b73960b4ca5f846e/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-15 | [Djinni](https://djinni.co/jobs/828178-ai-driven-php-developer/) | — | — | — | — | — |
