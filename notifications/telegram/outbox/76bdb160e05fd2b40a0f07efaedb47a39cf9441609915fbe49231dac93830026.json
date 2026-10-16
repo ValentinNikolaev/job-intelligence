@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-16T13:46:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Snotor",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261016_snotor_a4358af2bf914c06a21b5e6f4ea8b779",
+      "score": 78,
+      "title": "Go Backend Developer",
+      "url": "https://djinni.co/jobs/853708-go-backend-developer/",
+      "vacancy_id": "a4358af2-bf91-4c06-a21b-5e6f4ea8b779"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "76bdb160e05fd2b40a0f07efaedb47a39cf9441609915fbe49231dac93830026",
+  "schema_version": 2
+}
