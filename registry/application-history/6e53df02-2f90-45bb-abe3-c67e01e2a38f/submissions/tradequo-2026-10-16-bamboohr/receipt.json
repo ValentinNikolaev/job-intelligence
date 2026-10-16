@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "95de5b4ab400b47d44d5bc1f8a4bbcf10cc286ac051324b693de78b33e95b8b3",
+      "size": 12564,
+      "snapshot": "files/application/CV_ValentinNikolaev_tradequo_SeniorRubyDeveloperRubyGo.docx",
+      "source": "registry/jobs/20261016_tradequo_6e53df022f9045bbabe3c67e01e2a38f/application/CV_ValentinNikolaev_tradequo_SeniorRubyDeveloperRubyGo.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:tradequo-2026-10-16-bamboohr",
+  "format": "docx",
+  "kind": "submission",
+  "occurred_on": "2026-10-16",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/6e53df02-2f90-45bb-abe3-c67e01e2a38f/submissions/tradequo-2026-10-16-bamboohr",
+  "submission_id": "tradequo-2026-10-16-bamboohr",
+  "vacancy_id": "6e53df02-2f90-45bb-abe3-c67e01e2a38f"
+}

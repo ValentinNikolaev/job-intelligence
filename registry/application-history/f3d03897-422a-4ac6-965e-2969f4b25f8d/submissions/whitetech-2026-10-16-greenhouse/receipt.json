@@ -1,0 +1,27 @@
+{
+  "artifacts": [
+    {
+      "sha256": "e86dc279db29f320893142778968995279e6d9b66df84d37c5505e83dcffca78",
+      "size": 12354,
+      "snapshot": "files/application/CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD.docx",
+      "source": "registry/jobs/20261016_whitetech_f3d03897422a4ac6965e2969f4b25f8d/application/CV_ValentinNikolaev_whitetech_PHPDeveloperWithDDD.docx"
+    },
+    {
+      "sha256": "dc94031fd7ff3486da7200e4091bee45bab118d8f39a18737c8fde287b8d1da3",
+      "size": 10859,
+      "snapshot": "files/application/cover-letter.docx",
+      "source": "registry/jobs/20261016_whitetech_f3d03897422a4ac6965e2969f4b25f8d/application/cover-letter.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:whitetech-2026-10-16-greenhouse",
+  "format": "docx",
+  "kind": "submission",
+  "occurred_on": "2026-10-16",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/f3d03897-422a-4ac6-965e-2969f4b25f8d/submissions/whitetech-2026-10-16-greenhouse",
+  "submission_id": "whitetech-2026-10-16-greenhouse",
+  "vacancy_id": "f3d03897-422a-4ac6-965e-2969f4b25f8d"
+}
