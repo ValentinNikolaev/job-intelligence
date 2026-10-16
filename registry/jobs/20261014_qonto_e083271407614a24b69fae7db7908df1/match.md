@@ -3,33 +3,35 @@
 **Score:** 91/100  
 **Recommendation:** Strong Match
 
-Strong fit for a senior/staff Go backend role in Italy, combining demonstrated production backend ownership, scalable event-driven architecture, reliability work, support automation, and technical leadership. The main uncertainty is the vacancy's financial-domain context and exact stack details, not the core engineering responsibilities.
+Strong fit for a senior/staff Go backend role in Italy, with recent production ownership, scalable backend and event-driven systems, operational reliability, technical leadership, and cross-functional delivery. The main uncertainties are the depth of recent financial-transaction experience, explicit DDD practice, and Qonto's exact stack.
 
 ## Why it matches
 
-- Demonstrated Go backend ownership and production responsibility across support automation and internal services.
-- Strong evidence of scalable, resilient, event-driven systems, retries, monitoring, and measurable operational impact.
-- Relevant technical-leadership experience through architecture, planning, mentoring, and technical interviews.
-- Candidate is based in Italy and the vacancy explicitly accepts candidates in Italy.
+- Recent Go backend ownership across APIs, automation platforms, event-driven analytics, and production operations.
+- Direct evidence of scalability, resilience, monitoring, incident troubleshooting, and measurable performance improvements.
+- Technical leadership, mentoring, design decisions, and collaboration with product and other engineering functions.
+- Italy-based and aligned with a remote-friendly role open to candidates in Italy.
 
 ## Gaps
 
-- Direct experience building financial transaction or banking services is not explicitly established in the supplied profile.
-- The vacancy does not specify its backend language stack beyond general backend expertise, so exact technology alignment remains partly unknown.
+- Direct recent ownership of banking services and real-money financial transactions is not established by the supplied profile.
+- Domain-Driven Design is not explicitly named in the candidate evidence.
+- The profile does not specify Qonto's full backend stack or the candidate's testing depth for this role.
 
 ## Concerns
 
-- Qonto's real-money financial infrastructure implies domain, compliance, and correctness expectations that should be explored during the process.
-- Staff-level scope is plausible from the profile, but the supplied evidence does not quantify ownership in a financial domain.
+- Finance is a high-consequence domain, so the depth of production controls and transaction correctness should be tested during interviews.
+- Salary, work authorization, and availability are not stated in the supplied evidence.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Production backend engineering at scale | critical / stated | strong | Design, build, deploy, and maintain services handling real financial transactions, owning reliability in production, not just at merge time | Backend engineer with 15+ years of experience | The profile establishes production backend work but not direct financial-transaction ownership in the recent roles. / Clarify the candidate's relevant payment and financial-system experience and map it to Qonto's transaction domain. |
-| Architecture, resilience, and scalability | critical / stated | strong | Co-own service architecture, resilience, and scalability with respect to Domain-Driven Design principles | Architect a scalable, event-driven system using queues and EventBridge, increasing throughput to the DataLake by over 10x. | Domain-Driven Design is not named explicitly in the candidate evidence. / Ask for an architecture example showing bounded contexts, domain ownership, and trade-offs. |
-| Technical leadership and mentoring | high / stated | strong | Grow in technical leadership: lead design discussions, anticipate risks, and mentor less experienced engineers | I have a strong track record in PHP, with 5 years of leadership experience. | The quantified leadership evidence is primarily PHP-oriented rather than explicitly tied to Go. / Describe recent cross-functional Go ownership and design leadership in interviews. |
-| Testing, monitoring, incident handling, and root-cause analysis | high / stated | strong | You write tests, set up monitoring, handle incidents methodically, and do root cause analysis | Build resilient message delivery pipelines with fallback logic, retries, and monitoring - reducing incident-related disruptions by over 50%. | The profile provides stronger evidence for monitoring and resilience than for a named root-cause-analysis process. / Prepare a concrete incident investigation and post-mortem example from production work. |
-| Go backend fluency | high / structural | strong | As a Backend Engineer at Qonto, you'll | Designed and owned a Go-based support automation platform connecting **Zendesk**, **Intercom**, and internal services. | The supplied vacancy text does not state Go as a mandatory technology despite the role title. / Confirm the expected Go version, services, and interview depth if contacted. |
-| Work eligibility and location in Italy | high / stated | strong | You can choose to work in Qonto as long as you're living in (or willing to relocate to) either Germany, France, Italy, Serbia, or Spain. | Fiumicino, Latium, Italy | Work authorization and exact working arrangement are not stated in the candidate profile. / Confirm Italian work authorization and preferred remote arrangement during the process. |
-| English communication | high / stated | strong | fluent in English | English - Professional Working | The profile contains conflicting English proficiency entries. / Use the candidate's current practical working level and verify expectations in the interview. |
+| Strong backend engineering experience with large-scale web architecture and real production constraints | critical / stated | strong | Strong backend engineering experience with exposure to large-scale web application architecture and real production constraints | Backend engineer with 15+ years | / |
+| Location compatibility for Italy | critical / stated | strong | You can choose to work in Qonto as long as you're living in (or willing to relocate to) either Germany, France, Italy, Serbia, or Spain. | Rome, Italy | / |
+| Design, deploy, and maintain reliable services handling production workloads | high / stated | partial | Design, build, deploy, and maintain services handling real financial transactions, owning reliability in production, not just at merge time | Build resilient message delivery pipelines | The supplied evidence demonstrates production reliability but does not directly establish ownership of real financial transactions. / Probe transaction consistency, failure recovery, idempotency, and operational controls in the interview. |
+| Scalable architecture, resilience, and continuous improvement | high / stated | partial | Co-own service architecture, resilience, and scalability with respect to Domain-Driven Design principles | Architect a scalable, event-driven system | DDD is not explicitly evidenced, although scalable event-driven architecture is. / Map prior bounded-context, domain-model, and service-boundary decisions to Qonto's DDD practice during interview preparation. |
+| Cross-functional squad collaboration in English | high / stated | partial | Team player: Comfortable working in squad teams with PMs, Designers, and other stacks; fluent in English | Collaborate cross-functionally with Support Ops | Cross-functional collaboration is evidenced, while the profile records English as Upper-intermediate rather than fluent. / Verify working-level English in the interview and prepare concise examples of collaboration with product and adjacent teams. |
+| Technical leadership and mentoring | high / stated | strong | Grow in technical leadership: lead design discussions, anticipate risks, and mentor less experienced engineers | Lead a team of 5 backend engineers | / |
+| Testing, monitoring, incident handling, and root-cause analysis | high / stated | strong | Quality-driven: You write tests, set up monitoring, handle incidents methodically, and do root cause analysis | Troubleshot production issues | Explicit testing examples for the most recent Go work are limited in the supplied profile. / Ask for concrete test strategy, observability, incident, and post-mortem examples from recent services. |
+| Fast transfer across technologies and backend stacks | meaningful / stated | strong | You don't need to know our exact stack, but you transfer fast and are comfortable with similar technologies | My background includes document automation | Qonto's exact stack is not fully supplied in the vacancy. / Emphasize transferable Go, API, AWS, Kubernetes, event-driven, and database experience. |
