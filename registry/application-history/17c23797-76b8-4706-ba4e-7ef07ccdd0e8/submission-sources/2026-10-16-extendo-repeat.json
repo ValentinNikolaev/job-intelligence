@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "kind": "gmail_sent_message_evidence",
+  "vacancy_id": "17c23797-76b8-4706-ba4e-7ef07ccdd0e8",
+  "submission_id": "2026-10-16-extendo-repeat",
+  "confirmation": "explicit_user_confirmation_and_gmail_sent_message",
+  "gmail_message_id": "1a146b74c6b513a6",
+  "gmail_thread_id": "1a146b66f5e1cc20",
+  "gmail_url": "https://mail.google.com/mail/u/?authuser=valeinikolaev%40gmail.com#all/1a146b74c6b513a6",
+  "sent_at": "2026-10-16T23:56:20+02:00",
+  "headers": {
+    "From": "Valentin Nikolaev <valeinikolaev@gmail.com>",
+    "To": "job@exportdigitale.com",
+    "Subject": "Candidatura per PHP Backend Developer",
+    "Date": "Fri, 16 Oct 2026 23:56:20 +0200",
+    "Message-ID": "<CAGrMsC=5Kqn226D434bDhrno7ndMLHfXQv4v6RGFPfraY_=cLQ@mail.gmail.com>"
+  },
+  "body": {
+    "mime_type": "text/plain",
+    "charset": "utf-8",
+    "content": "Buongiorno,\r\n\r\nvi avevo già scritto in primavera per il ruolo di PHP Backend Developer. Mi\r\ninteressa il lavoro di Extendo nella system integration, vicino alla mia\r\nesperienza con API e servizi backend.\r\n\r\nHo lavorato con PHP e API REST nello sviluppo backend, anche su servizi che\r\nusavano MySQL ed Elasticsearch. In un progetto ho rimosso colli di\r\nbottiglia dal database principale e ridistribuito il carico, migliorando la\r\nstabilità nei picchi di traffico.\r\n\r\nAllego il CV aggiornato, con una sintesi dei progetti più recenti. Mi\r\nfarebbe piacere parlarne e capire come è organizzata la modalità mista tra\r\nFondi e remoto.\r\n\r\nCordiali saluti,\r\nValentin Nikolaev\r\n",
+    "sha256": "1821aada236e9d72ae51ecd03474d438db45782ce25a20c1bbcf686d9775bf35",
+    "size": 674
+  },
+  "attachment": {
+    "filename": "CV_ValentinNikolaev_ExtendoDigital.pdf",
+    "sha256": "6726a2feda6283b2f3e3cb1a5b109ecb4607481eac59407f1379701f9380d91b",
+    "size": 83602
+  }
+}

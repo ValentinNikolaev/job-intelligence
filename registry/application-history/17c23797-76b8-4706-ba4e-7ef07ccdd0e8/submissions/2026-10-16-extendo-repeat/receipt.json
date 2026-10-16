@@ -1,0 +1,27 @@
+{
+  "artifacts": [
+    {
+      "sha256": "6726a2feda6283b2f3e3cb1a5b109ecb4607481eac59407f1379701f9380d91b",
+      "size": 83602,
+      "snapshot": "files/application/CV_ValentinNikolaev_ExtendoDigital.pdf",
+      "source": "registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/CV_ValentinNikolaev_ExtendoDigital.pdf"
+    },
+    {
+      "sha256": "1821aada236e9d72ae51ecd03474d438db45782ce25a20c1bbcf686d9775bf35",
+      "size": 674,
+      "snapshot": "files/application/sent-email-2026-10-16.txt",
+      "source": "registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/sent-email-2026-10-16.txt"
+    }
+  ],
+  "channel": "email",
+  "event_id": "submission:2026-10-16-extendo-repeat",
+  "format": "standard",
+  "kind": "submission",
+  "occurred_on": "2026-10-16",
+  "positioning": "php-backend",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/17c23797-76b8-4706-ba4e-7ef07ccdd0e8/submissions/2026-10-16-extendo-repeat",
+  "submission_id": "2026-10-16-extendo-repeat",
+  "vacancy_id": "17c23797-76b8-4706-ba4e-7ef07ccdd0e8"
+}
