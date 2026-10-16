@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "source_file": "cv.md",
+  "artifact_file": "CV_ValentinNikolaev_ExtendoDigital.pdf",
+  "source_sha256": "232108804712d4e0f5c5a335ec33e9011f5b0fa003f972d5471a90274d969f77",
+  "artifact_sha256": "6726a2feda6283b2f3e3cb1a5b109ecb4607481eac59407f1379701f9380d91b",
+  "extracted_text_sha256": "14b54ab2554bd4e67576a487f288f9a365fead819e59cc15031885c2ce2c51aa",
+  "canonical_tokens": 568,
+  "extracted_tokens": 570,
+  "checks": {
+    "readable_text": true,
+    "canonical_text_preserved_in_order": true,
+    "contacts_and_numeric_values_preserved": true,
+    "cv_experience_list_formatting": "not_checked",
+    "hyperlink_targets": "not_checked"
+  },
+  "structure": {},
+  "page_count": 2,
+  "max_pages": 2,
+  "visual_review": {
+    "status": "reviewed",
+    "artifact_sha256": "6726a2feda6283b2f3e3cb1a5b109ecb4607481eac59407f1379701f9380d91b",
+    "reviewer": "/root, inspected both final rendered CV pages",
+    "reviewed_at": "2026-10-16T21:30:37.501617+00:00",
+    "checks": {
+      "blank_pages": true,
+      "overflow": true,
+      "page_breaks": true,
+      "readability": true
+    },
+    "method": "recorded reviewer attestation; not an automated visual judgment"
+  },
+  "limits": "Token comparison checks preservation, not factual truth or visual layout. PDF annotations and inherited fonts are not audited."
+}

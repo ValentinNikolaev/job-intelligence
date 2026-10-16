@@ -1,0 +1,10 @@
+Buongiorno,
+
+vi avevo già scritto in primavera per il ruolo di PHP Backend Developer. Mi interessa il lavoro di Extendo nella system integration, vicino alla mia esperienza con API e servizi backend.
+
+Ho lavorato con PHP e API REST nello sviluppo backend, anche su servizi che usavano MySQL ed Elasticsearch. In un progetto ho rimosso colli di bottiglia dal database principale e ridistribuito il carico, migliorando la stabilità nei picchi di traffico.
+
+Allego il CV aggiornato, con una sintesi dei progetti più recenti. Mi farebbe piacere parlarne e capire come è organizzata la modalità mista tra Fondi e remoto.
+
+Cordiali saluti,
+Valentin Nikolaev
