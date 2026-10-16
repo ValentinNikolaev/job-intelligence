@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-16T19:47:04Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ITExpert",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261016_itexpert_ea7a72e7c1374fd0ada77142da9f3473",
+      "score": 86,
+      "title": "Senior PHP Back-end Developer",
+      "url": "https://djinni.co/jobs/853821-senior-php-back-end-developer/",
+      "vacancy_id": "ea7a72e7-c137-4fd0-ada7-7142da9f3473"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "b05de6a18a761c6e4f525e854602199c166f573ac91627806c2c0cf2e168b40c",
+  "schema_version": 2
+}
