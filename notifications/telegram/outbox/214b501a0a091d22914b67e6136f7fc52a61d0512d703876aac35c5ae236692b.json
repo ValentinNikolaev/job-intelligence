@@ -1,0 +1,37 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-16T09:51:49Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "WhiteTech",
+      "country_codes": [],
+      "directory": "20261016_whitetech_f3d03897422a4ac6965e2969f4b25f8d",
+      "score": 84,
+      "title": "PHP Developer with DDD",
+      "url": "https://himalayas.app/companies/whitetech/jobs/php-developer-with-ddd",
+      "vacancy_id": "f3d03897-422a-4ac6-965e-2969f4b25f8d"
+    },
+    {
+      "company": "TradeQuo",
+      "country_codes": [],
+      "directory": "20261016_tradequo_6e53df022f9045bbabe3c67e01e2a38f",
+      "score": 71,
+      "title": "Senior Ruby Developer (Ruby & Go)",
+      "url": "https://himalayas.app/companies/tradequo/jobs/senior-ruby-developer-ruby-go",
+      "vacancy_id": "6e53df02-2f90-45bb-abe3-c67e01e2a38f"
+    },
+    {
+      "company": "Gorin Systems",
+      "country_codes": [],
+      "directory": "20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429",
+      "score": 67,
+      "title": "Full Stack Laravel / React Developer",
+      "url": "https://himalayas.app/companies/gorin-systems/jobs/full-stack-laravel-react-developer-5277609797",
+      "vacancy_id": "07bf371a-4365-4f7a-942f-5f88d647f429"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "214b501a0a091d22914b67e6136f7fc52a61d0512d703876aac35c5ae236692b",
+  "schema_version": 2
+}
