@@ -20,7 +20,7 @@ Backend engineer with 15+ years of experience and a strong PHP background across
 
 ### Simple.life | Software Developer
 
-**November 2023 - July 2026**
+**November 2023 - August 2026**
 
 - Designed and owned a backend support automation platform connecting Zendesk, Intercom, and internal services through a unified API orchestration layer.
 - Integrated automated triage flows that handled or deflected up to 30% of inbound tickets and supported the rollout of new automation scenarios.

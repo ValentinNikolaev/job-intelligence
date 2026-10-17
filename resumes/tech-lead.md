@@ -20,7 +20,7 @@ Hands-on backend engineering leader with 15+ years of software development exper
 
 ### Simple.life | Software Developer
 
-**November 2023 - July 2026**
+**November 2023 - August 2026**
 
 - Designed and owned a Go-based support automation platform connecting Zendesk, Intercom, and internal services.
 - Translated operational needs into a unified API orchestration layer, automated triage workflows, and reliable message-delivery pipelines.
