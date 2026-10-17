@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 51
+Total vacancies: 52
 
-- Found: 29
+- Found: 30
 - Applied: 18
 - Interview: 3
 - Rejected: 1
@@ -13,6 +13,7 @@ Total vacancies: 51
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-17 | [Export Digitale](../registry/jobs/20261017_export-digital_0c95801ecc124137bea51a6f943bdda3/) | [PHP Backend Developer](../registry/jobs/20261017_export-digital_0c95801ecc124137bea51a6f943bdda3/job.md) | Fondi, Lazio | Indeed | Found | 2026-10-17 | [Indeed](https://it.indeed.com/viewjob?jk=8969764f330f42bb) | — | — | — | — | — |
 | 2026-10-17 | [Taraki](../registry/jobs/20261017_taraki_29eab03780c847bca06c7e7e709ead20/) | [Connectivity Engineer (Crypto)](../registry/jobs/20261017_taraki_29eab03780c847bca06c7e7e709ead20/job.md) | Worldwide | Himalayas | Found | 2026-10-17 | [Himalayas](https://himalayas.app/companies/taraki/jobs/connectivity-engineer-crypto) | — | — | — | — | — |
 | 2026-10-16 | [Extendo Digital](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/) | [PHP Backend Developer](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/job.md) | Fondi (LT), Italy | Manual | Found | 2026-10-16 | [Manual](https://www.extendo.digital/job.php) | — | [MD](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/cv.md) / [DOCX](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/cv.docx) | [MD](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/cover-letter.md) / [DOCX](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/cover-letter.docx) | [Open](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/analysis.md) | [Open](../registry/jobs/20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8/application/interview-preparation.md) |
 | 2026-10-16 | [ITExpert](../registry/jobs/20261016_itexpert_ea7a72e7c1374fd0ada77142da9f3473/) | [Senior PHP Back-end Developer](../registry/jobs/20261016_itexpert_ea7a72e7c1374fd0ada77142da9f3473/job.md) | EU | Djinni | Found | 2026-10-16 | [Djinni](https://djinni.co/jobs/853821-senior-php-back-end-developer/) | — | — | — | — | — |
