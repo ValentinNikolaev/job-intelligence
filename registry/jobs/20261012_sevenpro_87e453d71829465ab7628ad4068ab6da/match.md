@@ -1,28 +1,27 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 70/100  
 **Recommendation:** Match
 
-Strong PHP and backend leadership fit for an independent modernization role, with uncertainty around the requested legacy full-stack UI stack and part-time availability.
+Good PHP modernization and ownership fit for a remote part-time role, with relevant MySQL, Laravel, APIs, and legacy-system experience; frontend specifics are uncertain.
 
 ## Why it matches
 
-- PHP is a meaningful part of the role and the candidate has extensive PHP backend and Laravel/Symfony experience.
-- The candidate has demonstrated ownership of production platforms, integrations, reliability, and client-facing technical decisions.
+- PHP, Laravel, MySQL, gradual modernization, independent ownership, and client communication align.
+- The part-time remote structure may fit the candidate's documented consulting experience.
 
 ## Gaps
 
-- The profile does not explicitly demonstrate Bootstrap, jQuery, AJAX, or server-rendered multi-page application work.
+- HTML/CSS/Bootstrap/jQuery/AJAX and server-rendered multipage application experience are not clearly evidenced.
 
 ## Concerns
 
-- Part-time availability and English B2 are not explicitly confirmed in the candidate profile.
+- The posting is client-facing and part-time, so workload and exact frontend expectations need confirmation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Commercial PHP and legacy-system modernization | critical / stated | strong | 3+ years of commercial experience with PHP | Go | / |
-| HTML/CSS/Bootstrap/jQuery/AJAX full-stack UI | high / stated | unknown | Experience with HTML, CSS, Bootstrap, jQuery, and AJAX |  | No explicit evidence for the named browser-side stack. / Confirm the recent hands-on UI scope before proceeding. |
-| MySQL or MariaDB | high / stated | strong | Good knowledge of MySQL or MariaDB | PHP | / |
-| Existing-code ownership and gradual modernization | high / stated | strong | Modernizing the system step by step without a complete rewrite | backend systems | / |
+| Commercial PHP and legacy-system modernization | critical / stated | strong | 3+ years of commercial experience with PHP; - Experience working with legacy PHP systems; | I have a strong track record in PHP, with 5 years of leadership experience. | The profile does not label a project specifically as legacy PHP. / Use documented maintenance, migration, and modernization evidence without overclaiming. |
+| Frontend and server-rendered multipage applications | high / stated | unknown | Experience with HTML, CSS, Bootstrap, jQuery, and AJAX; - Experience with server-rendered multi-page applications; |  | The sealed candidate profile does not provide direct evidence for this frontend stack. / Confirm the practical frontend requirements before preparation. |
+| MySQL, Laravel, and external integrations | high / stated | strong | Good knowledge of MySQL or MariaDB; | **Skills:** PHP \| Laravel \| MySQL \| Elasticsearch \| RabbitMQ \| AWS \| Kubernetes \| Prometheus \| REST APIs \| CI/CD | / |

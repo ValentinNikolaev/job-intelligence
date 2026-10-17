@@ -3,31 +3,25 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Strong Go backend and technical-lead fit for a remote product engineering pod, with credible AI automation and reliability evidence; client-facing delivery, Claude Code, and German remain unverified.
+Strong Go and technical-lead fit in a CET-compatible remote AI product role, with a material unverified requirement for prior Claude Code use and deep AI-system delivery.
 
 ## Why it matches
 
-- Production Go backend ownership, event-driven systems, queues, observability, and resilient delivery pipelines are directly supported.
-- Technical-lead experience includes roadmap planning, delivery coordination, mentoring, and measurable engineering outcomes.
-- Remote European time-zone compatibility and strong English are consistent with the posting and candidate profile.
+- Go backend, leadership, product collaboration, client-facing communication, and EU time-zone fit align.
+- AI tooling, queues, PostgreSQL, Redis, integrations, and reliability are relevant.
 
 ## Gaps
 
-- The profile documents OpenAI-powered automation but does not establish production use of Claude Code.
-- Direct enterprise-client requirements gathering and external pod representation are not explicitly evidenced.
+- Proven Claude Code use and the requested depth of production AI-system engineering are not established.
 
 ## Concerns
 
-- The role expects 30-40% coordination and client work rather than primarily deep specialist coding; the profile supports leadership but not this exact operating split.
-- On-call willingness and German are not stated.
+- The role is explicitly coordination-heavy and includes on-call responsibilities.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| AI/backend engineering and production quality | critical / stated | partial | **AI/backend engineering:** Deep knowledge of building and productionizing complex AI systems | Integrate OpenAI-powered auto-triage flows | The profile supports AI-enabled backend automation and reliability, but not the full depth of complex AI-system productionization requested. / Ask for concrete examples of model quality, evaluation, observability, and failure handling during screening. |
-| Production Go experience | critical / stated | strong | **Go (Golang):** Real production experience | Go-based support automation platform | / |
-| Technical leadership experience | critical / stated | strong | 2-3+ years of technical leadership experience leading a team, squad, pod or similar unit (a hard must, think team lead or early-stage engineering manager) | Directly managed 10 developers. | / |
-| Product and client-facing pod coordination | high / stated | unknown | Gather client requirements first-hand and funnel them straight into the pod so nothing gets lost in translation |  | Direct client discovery and external representation are not established by the supplied profile. / Verify client-facing ownership and requirements-to-delivery examples before preparation. |
-| Proven Claude Code experience | high / stated | missing | Proven experience using Claude Code, share specific examples |  | This is explicitly required and the supplied profile names OpenAI tooling instead. / Confirm whether the candidate has relevant Claude Code experience outside the supplied profile; do not claim it without evidence. |
-| European time-zone availability | high / stated | strong | Location: remote, within ±3 hours of CET | Fiumicino, Latium, Italy | / |
+| Production Go and technical leadership | critical / stated | partial | **2-3+ years of technical leadership experience leading a team, squad, pod or similar unit (a hard must, think team lead or early-stage engineering manager)** | I have a strong track record in PHP, with 5 years of leadership experience. | Leadership duration is supported broadly, but the profile does not specify the exact Go-team leadership period. / Confirm the Go leadership scope and duration. |
+| Go backend and AI engineering | critical / stated | partial | **Solid Golang experience**, you'll review AI's code and you must understand how it works | I design and own a support automation platform that connects Zendesk, Intercom, and internal services through a robust, scalable backend in Go. | The profile supports Go and LLM tooling but not the full requested AI search/recommendation production depth. / Verify production AI-system architecture and evaluation experience. |
+| Proven Claude Code use | critical / stated | unknown | Proven experience using Claude Code, share specific examples |  | The candidate profile documents OpenAI and LLM tooling, not Claude Code specifically. / Confirm concrete Claude Code examples before preparation. |

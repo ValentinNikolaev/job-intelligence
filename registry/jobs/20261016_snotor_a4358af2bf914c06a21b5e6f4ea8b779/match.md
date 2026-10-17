@@ -1,35 +1,28 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 88/100  
+**Recommendation:** Strong Match
 
-Strong Go backend, REST, PostgreSQL, AWS, reliability, integration, and delivery evidence aligns well with the role; WebSockets, multi-tenancy/JWT, and industrial IoT remain material unknowns.
+Excellent Go backend alignment across APIs, PostgreSQL, AWS, Docker, CI/CD, testing, retries, and production operations; some IoT-specific tools remain gaps.
 
 ## Why it matches
 
-- Production Go backend ownership and support automation experience.
-- Strong evidence for APIs, messaging reliability, retries, monitoring, AWS, Kubernetes, and CI/CD.
-- PostgreSQL and SQL-oriented performance work are supported.
+- Go, REST APIs, PostgreSQL, AWS, Docker, testing, and failure handling are directly supported.
+- The candidate has relevant event-driven, support-automation, and production backend experience.
+- The role is backend-focused and does not impose a decisive location conflict.
 
 ## Gaps
 
-- WebSocket implementation is not established in the supplied profile.
-- Multi-tenant authorization and JWT validation with JWKS are not established.
-- Industrial IoT, TimescaleDB, and device telemetry experience are not established.
+- Industrial IoT, WebSockets, MQTT, TimescaleDB, and Cognito are not established in the profile.
 
 ## Concerns
 
-- The role's real-time device and security model may require experience not visible in the profile.
-- Docker and formal OpenAPI ownership are not explicitly documented.
+- Client-facing English and the exact remote arrangement should be confirmed.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| REST APIs and WebSockets | critical / stated | partial | Experience designing REST APIs, maintaining OpenAPI contracts and working with WebSockets. | REST APIs | REST is supported, but WebSockets and OpenAPI contract ownership are not evidenced. / Verify real-time channel and API-contract experience before preparation. |
-| Production backend services in Go | critical / stated | strong | Strong commercial experience building production backend services in Go. | backend in Go. | / |
-| PostgreSQL and SQL optimization | high / stated | partial | Strong PostgreSQL and SQL skills, including indexing, transactions and query optimisation. | - PostgreSQL | PostgreSQL and optimization are supported, but indexing and transaction examples are not explicit in the profile. / Use confirmed database and performance evidence and verify the detailed SQL scope. |
-| Multi-tenant authorization and JWT validation using JWKS | high / stated | unknown | Understanding of multi-tenant systems, authorisation and JWT validation using JWKS. |  | A security-critical requirement is not covered by the supplied candidate evidence. / Confirm direct multi-tenant and JWT/JWKS experience before claiming fit. |
-| Integrations, timeouts, retries, idempotency, and failure handling | high / stated | strong | Experience with service integrations, timeouts, retries, idempotency and failure handling. | - Build resilient message delivery pipelines with fallback logic, retries, and | Idempotency is not named directly, although reliability and retry handling are well evidenced. / Verify an idempotency example if the role advances. |
-| AWS services and deployed-application troubleshooting | high / stated | strong | Experience integrating AWS services and troubleshooting deployed applications. | - AWS | / |
-| Automated tests, deployment, and CI/CD | meaningful / stated | partial | Write automated tests, document API contracts and support deployment and troubleshooting. | GitHub Actions | CI/CD and deployment are supported, but automated test and API-documentation evidence is limited. / Confirm testing and OpenAPI documentation examples. |
+| Production Go backend services | critical / stated | strong | Strong commercial experience building production backend services in Go. | I design and own a support automation platform that connects Zendesk, Intercom, and internal services through a robust, scalable backend in Go. | / |
+| REST APIs, PostgreSQL, AWS, Docker, and testing | high / stated | partial | Technology environment ** Go, PostgreSQL / TimescaleDB, AWS, Docker, REST, OpenAPI, WebSockets. | Stack: Go, PostgreSQL (GORM), AWS (Amazon Connect, SQS, IAM/IRSA, Lambda), Kubernetes CronJobs, Terraform, Intercom API, Zendesk API, Snowflake, OpenAI/LLM tooling, OpenAPI, DeepL, Braze, AppsFlyer, Microsoft Entra ID. | WebSockets and TimescaleDB are not evidenced, although the core backend stack is. / Confirm the missing transport and time-series database experience. |
+| Reliability, retries, and failure handling | high / stated | strong | Experience with service integrations, timeouts, retries, idempotency and failure handling. | Diagnosed and eliminated daily fatal failures (up to 14/day) of a cron scanning ~7,000 tickets under Intercom API degradation by introducing partial-success semantics and sharded cursor pagination, cutting full-scan time roughly 4×. | / |
