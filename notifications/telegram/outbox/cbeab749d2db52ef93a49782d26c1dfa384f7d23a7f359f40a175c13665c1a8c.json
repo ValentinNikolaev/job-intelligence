@@ -1,0 +1,229 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-17T12:04:24Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Phoenixgame",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_phoenixgame_ccdce7f6a9ea4247bddde639afcaa524",
+      "score": 84,
+      "title": "Middle Golang Engineer",
+      "url": "https://djinni.co/jobs/824835-middle-golang-engineer/",
+      "vacancy_id": "ccdce7f6-a9ea-4247-bddd-e639afcaa524"
+    },
+    {
+      "company": "GenSoft",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261012_gensoft_ca252eb898c54603a57db13683e6e882",
+      "score": 86,
+      "title": "Senior Go Engineer (Security-Critical Distributed Systems)",
+      "url": "https://jobs.dou.ua/companies/gensoft/vacancies/376236/",
+      "vacancy_id": "ca252eb8-98c5-4603-a57d-b13683e6e882"
+    },
+    {
+      "company": "Wematica",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261010_wematica_a05479b047ee4b76acc1acd71734bc5c",
+      "score": 88,
+      "title": "BACKEND DEVELOPER PHP",
+      "url": "https://it.indeed.com/viewjob?jk=f747149e226dbe43",
+      "vacancy_id": "a05479b0-47ee-4b76-acc1-acd71734bc5c"
+    },
+    {
+      "company": "Extendo Digital",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261016_extendo-digita_17c2379776b84706ba4e7ef07ccdd0e8",
+      "score": 90,
+      "title": "PHP Backend Developer",
+      "url": "https://www.extendo.digital/job.php",
+      "vacancy_id": "17c23797-76b8-4706-ba4e-7ef07ccdd0e8"
+    },
+    {
+      "company": "WhiteTech",
+      "country_codes": [],
+      "directory": "20261016_whitetech_f3d03897422a4ac6965e2969f4b25f8d",
+      "score": 91,
+      "title": "PHP Developer with DDD",
+      "url": "https://himalayas.app/companies/whitetech/jobs/php-developer-with-ddd",
+      "vacancy_id": "f3d03897-422a-4ac6-965e-2969f4b25f8d"
+    },
+    {
+      "company": "TradeQuo",
+      "country_codes": [],
+      "directory": "20261016_tradequo_6e53df022f9045bbabe3c67e01e2a38f",
+      "score": 75,
+      "title": "Senior Ruby Developer (Ruby & Go)",
+      "url": "https://himalayas.app/companies/tradequo/jobs/senior-ruby-developer-ruby-go",
+      "vacancy_id": "6e53df02-2f90-45bb-abe3-c67e01e2a38f"
+    },
+    {
+      "company": "Gorin Systems",
+      "country_codes": [],
+      "directory": "20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429",
+      "score": 78,
+      "title": "Full Stack Laravel / React Developer",
+      "url": "https://himalayas.app/companies/gorin-systems/jobs/full-stack-laravel-react-developer-5277609797",
+      "vacancy_id": "07bf371a-4365-4f7a-942f-5f88d647f429"
+    },
+    {
+      "company": "Nord Security",
+      "country_codes": [
+        "LT"
+      ],
+      "directory": "20261014_nord-security_142e9dec5c054e3094f204aef6523e37",
+      "score": 72,
+      "title": "Backend Engineer | Mid - Senior | Business Onboarding & Setup Team",
+      "url": "https://jobs.ashbyhq.com/nord-security/a8f7480a-ce42-4e20-8132-a29030963f6c",
+      "vacancy_id": "142e9dec-5c05-4e30-94f2-04aef6523e37"
+    },
+    {
+      "company": "ElevenLabs",
+      "country_codes": [],
+      "directory": "20261014_elevenlabs_7aa4069c20604c8a960c6e34b090d290",
+      "score": 76,
+      "title": "Full-Stack Engineer (Backend-Leaning) - CoreMusic",
+      "url": "https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-coremusic-140966",
+      "vacancy_id": "7aa4069c-2060-4c8a-960c-6e34b090d290"
+    },
+    {
+      "company": "TechBiz Global GmbH",
+      "country_codes": [],
+      "directory": "20261014_techbiz-global_44ecf3b63f974cfc87ed52940d861b3e",
+      "score": 79,
+      "title": "Senior/Leading Software Engineer (fintech)",
+      "url": "https://www.arbeitnow.com/jobs/companies/techbiz-global-gmbh/remote-senior-leading-software-engineer-fintech-berlin-481208",
+      "vacancy_id": "44ecf3b6-3f97-4cfc-87ed-52940d861b3e"
+    },
+    {
+      "company": "Eventhub GmbH",
+      "country_codes": [],
+      "directory": "20261013_eventhub-gmbh_f2e096b9770f42ad9ce706b6372c6e25",
+      "score": 92,
+      "title": "Senior Fullstack PHP/Laravel Developer – Remote (Europe/Berlin Time Zone)",
+      "url": "https://larajobs.com/job/3945",
+      "vacancy_id": "f2e096b9-770f-42ad-9ce7-06b6372c6e25"
+    },
+    {
+      "company": "Smartsheet",
+      "country_codes": [
+        "BG"
+      ],
+      "directory": "20261012_smartsheet_3b9fc6ee38a441f98580d40fac92b042",
+      "score": 67,
+      "title": "Software Engineer (Remote Eligible in Bulgaria)",
+      "url": "https://jobicy.com/jobs/155069-software-engineer-remote-eligible-in-bulgaria",
+      "vacancy_id": "3b9fc6ee-38a4-41f9-8580-d40fac92b042"
+    },
+    {
+      "company": "refurbed",
+      "country_codes": [
+        "AT",
+        "BE",
+        "BG",
+        "HR",
+        "CY",
+        "CZ",
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "DE",
+        "GR",
+        "HU",
+        "IE",
+        "IT",
+        "LV",
+        "LT",
+        "LU",
+        "MT",
+        "NL",
+        "PL",
+        "PT",
+        "RO",
+        "SK",
+        "SI",
+        "ES",
+        "SE",
+        "GB"
+      ],
+      "directory": "20261011_refurbed_d4c16c34d7b049c0bbda2abc71220758",
+      "score": 83,
+      "title": "Senior Backend Engineer (f/m/x) - remote",
+      "url": "https://himalayas.app/companies/refurbed-com/jobs/senior-backend-engineer-f-m-x-remote",
+      "vacancy_id": "d4c16c34-d7b0-49c0-bbda-2abc71220758"
+    },
+    {
+      "company": "Hostaway",
+      "country_codes": [
+        "AL",
+        "AD",
+        "AT",
+        "BY",
+        "BE",
+        "BA",
+        "BG",
+        "HR",
+        "CZ",
+        "DK",
+        "EE",
+        "FO",
+        "FI",
+        "FR",
+        "DE",
+        "GI",
+        "GR",
+        "GG",
+        "VA",
+        "HU",
+        "IS",
+        "IE",
+        "IM",
+        "IT",
+        "JE",
+        "XK",
+        "LV",
+        "LI",
+        "LT",
+        "LU",
+        "MT",
+        "MD",
+        "MC",
+        "ME",
+        "NL",
+        "MK",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "SM",
+        "RS",
+        "SK",
+        "SI",
+        "ES",
+        "SJ",
+        "SE",
+        "CH",
+        "UA",
+        "GB",
+        "AX"
+      ],
+      "directory": "20261011_hostaway_b89ee7ba35f649f5aced0aa9db9923e6",
+      "score": 88,
+      "title": "Staff Backend Engineer, Money Movement - 100% Remote - Europe",
+      "url": "https://himalayas.app/companies/hostaway/jobs/staff-backend-engineer-money-movement-100-remote-europe",
+      "vacancy_id": "b89ee7ba-35f6-49f5-aced-0aa9db9923e6"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "cbeab749d2db52ef93a49782d26c1dfa384f7d23a7f359f40a175c13665c1a8c",
+  "schema_version": 2
+}

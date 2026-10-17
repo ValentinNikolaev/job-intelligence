@@ -3,26 +3,25 @@
 **Score:** 67/100  
 **Recommendation:** Match
 
-Good Go, AWS, Kubernetes, distributed-systems, and production-backend fit, but Bulgaria work authorization is mandatory and not established by the profile.
+Possible-to-good software-engineering fit from broad backend and cloud experience, but Bulgaria eligibility and the role's exact language/stack requirements are not established.
 
 ## Why it matches
 
-- Go, AWS, Kubernetes, CI/CD, microservices, and high-availability backend work are relevant.
-- The candidate has demonstrated production troubleshooting and measurable performance improvements.
+- Senior backend engineering, cloud, APIs, and reliability are supported.
 
 ## Gaps
 
-- Java, React, DynamoDB, Terraform, and Bulgaria work authorization are not evidenced.
+- The candidate is based in Italy and the listing emphasizes Bulgaria eligibility.
+- Exact role language and product context are uncertain.
 
 ## Concerns
 
-- The posting requires ongoing legal eligibility to work in Bulgaria; the profile says Rome, Italy and does not confirm authorization.
+- Work authorization or country eligibility cannot be inferred from the profile.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Bulgaria legal work eligibility | critical / stated | unknown | Legally eligible to work in Bulgaria on an ongoing basis. | Rome, Italy | Work authorization is not stated; remote location alone does not establish eligibility. / Confirm employer-of-record and authorization requirements before any application decision. |
-| Go or comparable backend language | critical / stated | strong | Experience with programming languages like Golang, Java, C, or Node.js. | Go | / |
-| Scalable high-availability and microservice systems | critical / stated | strong | Experience with scalable, high-availability applications. | monitoring | / |
-| AWS and Kubernetes | high / stated | partial | Familiarity with AWS and Docker | Kubernetes | Docker is not explicit in the candidate evidence. / Confirm container tooling. |
+| Software engineering | critical / stated | strong | Software Engineer | Go-based backends | / |
+| Remote eligibility in Bulgaria | high / stated | unknown | Remote Eligible in Bulgaria | Fiumicino, Latium, Italy | The candidate's eligibility for a Bulgaria-specific remote arrangement is unknown. / Confirm geographic and employment eligibility before preparation. |
+| Cloud/backend delivery | meaningful / structural | strong | Software Engineer | Kubernetes | / |
