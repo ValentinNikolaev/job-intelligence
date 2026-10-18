@@ -1,0 +1,57 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-18T18:21:39Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Qonto",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261014_qonto_e083271407614a24b69fae7db7908df1",
+      "score": 86,
+      "title": "Senior/Staff - Go Backend Engineer - remote friendly",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pqekkv6yhs",
+      "vacancy_id": "e0832714-0761-4a24-b69f-ae7db7908df1"
+    },
+    {
+      "company": "Bloomreach",
+      "country_codes": [],
+      "directory": "20261018_bloomreach_e35451f2b8f34668bc8f9617a1863c39",
+      "score": 72,
+      "title": "Staff Software Engineer - Python, Java / Spring or Go",
+      "url": "https://jobicy.com/jobs/155731-staff-software-engineer-python-java-spring-or-go",
+      "vacancy_id": "e35451f2-b8f3-4668-bc8f-9617a1863c39"
+    },
+    {
+      "company": "PlanetScale",
+      "country_codes": [],
+      "directory": "20261018_planetscale_369d17199167495fa81d2ed35f32de4b",
+      "score": 84,
+      "title": "Enterprise Support Engineer",
+      "url": "https://weworkremotely.com/remote-jobs/planetscale-enterprise-support-engineer",
+      "vacancy_id": "369d1719-9167-495f-a81d-2ed35f32de4b"
+    },
+    {
+      "company": "Dremio",
+      "country_codes": [],
+      "directory": "20261018_dremio_4e1c3b18e4774cb7b4a8151be1b764cd",
+      "score": 74,
+      "title": "Staff Software Engineer - Connectivity",
+      "url": "https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity",
+      "vacancy_id": "4e1c3b18-e477-4cb7-b4a8-151be1b764cd"
+    },
+    {
+      "company": "ScholarshipOwl",
+      "country_codes": [],
+      "directory": "20261018_scholarshipowl_21869a6e4d0d4402833514492611c085",
+      "score": 77,
+      "title": "Senior Full Stack Developer - B2B platform (Laravel + Nuxt/Vue)",
+      "url": "https://www.arbeitnow.com/jobs/companies/scholarshipowl/remote-senior-full-stack-developer-b2b-platform-laravel-nuxt-vue-berlin-7781",
+      "vacancy_id": "21869a6e-4d0d-4402-8335-14492611c085"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "19659f9fe42349570e4eb4ffbef09a589a0fddc5ffaedad2a8b61294bb447569",
+  "schema_version": 2
+}
