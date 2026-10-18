@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 54
+Total vacancies: 56
 
-- Found: 32
+- Found: 34
 - Applied: 18
 - Interview: 3
 - Rejected: 1
@@ -13,6 +13,8 @@ Total vacancies: 54
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-18 | [Bloomreach](../registry/jobs/20261018_bloomreach_e35451f2b8f34668bc8f9617a1863c39/) | [Staff Software Engineer - Python, Java / Spring or Go](../registry/jobs/20261018_bloomreach_e35451f2b8f34668bc8f9617a1863c39/job.md) | Europe | Jobicy | Found | 2026-10-18 | [Jobicy](https://jobicy.com/jobs/155731-staff-software-engineer-python-java-spring-or-go) | — | — | — | — | — |
+| 2026-10-18 | [Ready](../registry/jobs/20261018_ready_d50aea93a8594678ac13a4e6848760d2/) | [Senior Full Stack Developer (Node.js + PHP)](../registry/jobs/20261018_ready_d50aea93a8594678ac13a4e6848760d2/job.md) | Worldwide | Himalayas | Found | 2026-10-18 | [Himalayas](https://himalayas.app/companies/joinready/jobs/senior-full-stack-developer-node-js-php) | — | — | — | — | — |
 | 2026-10-18 | [Dremio](../registry/jobs/20261018_dremio_4e1c3b18e4774cb7b4a8151be1b764cd/) | [Staff Software Engineer - Connectivity](../registry/jobs/20261018_dremio_4e1c3b18e4774cb7b4a8151be1b764cd/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-10-18 | [Weworkremotely](https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity) | — | — | — | — | — |
 | 2026-10-18 | [PlanetScale](../registry/jobs/20261018_planetscale_369d17199167495fa81d2ed35f32de4b/) | [Enterprise Support Engineer](../registry/jobs/20261018_planetscale_369d17199167495fa81d2ed35f32de4b/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-10-18 | [Weworkremotely](https://weworkremotely.com/remote-jobs/planetscale-enterprise-support-engineer) | — | — | — | — | — |
 | 2026-10-18 | [Ready](../registry/jobs/20261018_ready_2d196e3f60104181b8aad7f71f554c82/) | [Senior Full Stack Go Developer (Go + Next.js)](../registry/jobs/20261018_ready_2d196e3f60104181b8aad7f71f554c82/job.md) | Worldwide | Himalayas | Found | 2026-10-18 | [Himalayas](https://himalayas.app/companies/joinready/jobs/senior-full-stack-go-developer-go-next-js) | — | — | — | — | — |
