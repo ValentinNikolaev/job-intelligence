@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-18T02:03:11Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Gorin Systems",
+      "country_codes": [],
+      "directory": "20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429",
+      "score": 71,
+      "title": "Full Stack Laravel / React Developer",
+      "url": "https://himalayas.app/companies/gorin-systems/jobs/full-stack-laravel-react-developer-5277609797",
+      "vacancy_id": "07bf371a-4365-4f7a-942f-5f88d647f429"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "6dabb8fd38321140bd39a8fbe8b0d4c189485e97128df9bba20c5f46fbfe358f",
+  "schema_version": 2
+}
