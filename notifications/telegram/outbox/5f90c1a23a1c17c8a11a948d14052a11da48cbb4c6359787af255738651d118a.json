@@ -1,0 +1,52 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-19T19:59:35Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "TrueLabel",
+      "country_codes": [
+        "PT"
+      ],
+      "directory": "20261019_truelabel_d1b44dd19488436a9cd8c345f638c199",
+      "score": 86,
+      "title": "Senior PHP Software Engineer (Payments)",
+      "url": "https://jobs.dou.ua/companies/truelabel/vacancies/377139/",
+      "vacancy_id": "d1b44dd1-9488-436a-9cd8-c345f638c199"
+    },
+    {
+      "company": "Hunt.IT Recruitment",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261019_hunt-it-recrui_4ead6da5a3e640af9e0328ded1b270d0",
+      "score": 82,
+      "title": "Back-End Developer",
+      "url": "https://djinni.co/jobs/854069-back-end-developer/",
+      "vacancy_id": "4ead6da5-a3e6-40af-9e03-28ded1b270d0"
+    },
+    {
+      "company": "Hamsters.pro",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c",
+      "score": 78,
+      "title": "Middle PHP Developer (CRM / CPA / Integrations)",
+      "url": "https://djinni.co/jobs/853984-middle-php-developer-crm-cpa-integrations/",
+      "vacancy_id": "cc37f1f6-e359-411f-bbd9-5801e96fc95c"
+    },
+    {
+      "company": "Gorin Systems",
+      "country_codes": [],
+      "directory": "20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429",
+      "score": 71,
+      "title": "Full Stack Laravel / React Developer",
+      "url": "https://himalayas.app/companies/gorin-systems/jobs/full-stack-laravel-react-developer-5277609797?utm_source=api",
+      "vacancy_id": "07bf371a-4365-4f7a-942f-5f88d647f429"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "5f90c1a23a1c17c8a11a948d14052a11da48cbb4c6359787af255738651d118a",
+  "schema_version": 2
+}
