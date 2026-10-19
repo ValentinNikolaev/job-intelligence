@@ -1,0 +1,2476 @@
+profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+vacancy_version: sha256:5681a763861b8ab468ccfb3ca3b77491823c0e29ed053209f4b396f3fff34858
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:a0cb73fd3c0c4f78e5288ac14e9e4f9180f2ffb034b57e7435aa576a527e6eeb
+model: codex:gpt-6.1-sol:high
+analysis: &id001
+  model: codex:gpt-5.6-luna:medium
+  score: 74
+  analyzed_at: '2026-10-18T18:21:44Z'
+  version: sha256:9f186930407c69d5526e1a2c3a241f47cd120f7c60cc482bee2afe0632ff798f
+quality_contract_version: 3
+cv_export_stem: CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity
+generated_at: '2026-10-19T18:49:20Z'
+documents:
+  cv:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:5681a763861b8ab468ccfb3ca3b77491823c0e29ed053209f4b396f3fff34858
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:a0cb73fd3c0c4f78e5288ac14e9e4f9180f2ffb034b57e7435aa576a527e6eeb
+    model: codex:gpt-6.1-sol:high
+    analysis: *id001
+    quality_contract_version: 3
+    cv_export_stem: CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity
+    generated_at: '2026-10-19T18:49:20Z'
+  cover-letter:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:5681a763861b8ab468ccfb3ca3b77491823c0e29ed053209f4b396f3fff34858
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:a0cb73fd3c0c4f78e5288ac14e9e4f9180f2ffb034b57e7435aa576a527e6eeb
+    model: codex:gpt-6.1-sol:high
+    analysis: *id001
+    quality_contract_version: 3
+    cv_export_stem: CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity
+    generated_at: '2026-10-19T18:49:20Z'
+  analysis:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:5681a763861b8ab468ccfb3ca3b77491823c0e29ed053209f4b396f3fff34858
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:a0cb73fd3c0c4f78e5288ac14e9e4f9180f2ffb034b57e7435aa576a527e6eeb
+    model: codex:gpt-6.1-sol:high
+    analysis: *id001
+    quality_contract_version: 3
+    cv_export_stem: CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity
+    generated_at: '2026-10-19T18:49:20Z'
+  interview-preparation:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:5681a763861b8ab468ccfb3ca3b77491823c0e29ed053209f4b396f3fff34858
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:a0cb73fd3c0c4f78e5288ac14e9e4f9180f2ffb034b57e7435aa576a527e6eeb
+    model: codex:gpt-6.1-sol:high
+    analysis: *id001
+    quality_contract_version: 3
+    cv_export_stem: CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity
+    generated_at: '2026-10-19T18:49:20Z'
+quality:
+  contract_version: 3
+  documents:
+    cv:
+      word_count: 502
+      sha256: sha256:0fd5b718dee6a5793345304076cbc1698860b846700360febc1677327fb5f0e4
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
+    cover-letter:
+      word_count: 344
+      sha256: sha256:70eed27eb73c208510a2b0cca732c6cdfeef90bbc82e271a91255bd2b83f728f
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
+    analysis:
+      word_count: 875
+      sha256: sha256:ad377d1730f4940a0655164b6252ab86b077bcf6261fb6b28a0b93a006290f90
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
+    interview-preparation:
+      word_count: 1064
+      sha256: sha256:ac6298d76da3b0b0c8c16fcfa9d744a9c6d409803349ead653761b15bb2acafb
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
+  document_format: standard
+  grounding:
+    schema_version: 2
+    sha256: 331a99129120d4655d7bb8284028c87ff126143aeb838ab1ca0ad156a766495f
+    evidence_bank:
+      schema_version: 1
+      sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
+      entry_count: 85
+      statuses:
+        cannot-confirm: 3
+        retracted: 5
+        unverified: 9
+        verified: 68
+    claim_count: 24
+    evidence_ids:
+    - airslate-cicd-delivery
+    - airslate-user-confirmed-impact
+    - candidate-education-languages
+    - candidate-supported-backend-skills
+    - clarification-crurated
+    - crurated-analytics
+    - crurated-confirmed-crutrade-production
+    - crurated-confirmed-datalake-production
+    - crurated-confirmed-event-version-production
+    - crurated-event-design
+    - crurated-reviewed-stream-onboarding
+    - cv-hyprr
+    - database-reliability
+    - simple-2026-gdpr
+    - simple-2026-helpdesk-gateway
+    - simple-2026-llm-agent
+    - simple-2026-snowflake-pipelines
+    - simple-2026-telephony-privacy
+    - simple-confirmed-2026-stack
+    - support-platform-linkedin
+    evidence_entries:
+    - id: airslate-cicd-delivery
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- Implemented **CI/CD pipelines** that shortened release cycles and\
+          \ improved delivery\n  consistency across services."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source review
+        reviewed_at: '2026-10-04'
+        method: Compared exact candidate-authored CV excerpt and airSlate Software
+          Developer attribution; qualitative release-cycle outcome only.
+    - id: airslate-user-confirmed-impact
+      employer: airSlate
+      source:
+        path: registry/candidate/user-confirmed-airslate-impact-2026-10-04.md
+        quote: '## Question
+
+
+          > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+          на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+          БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы подтверждаете,
+          как измерялись и каков был ваш личный вклад? Пока использую только подтверждённые
+          качественные формулировки без этих цифр.
+
+
+          ## Candidate reply
+
+
+          > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно рулили
+          всем'
+        sha256: 1a4a1df52116752cb580d12ba494e4b25924ee88c19a947eede2d1d00eac7b12
+      status: verified
+      verification:
+        reviewer: Codex root direct candidate confirmation review
+        reviewed_at: '2026-10-04'
+        method: Compared original LinkedIn airSlate figures with the candidate reply
+          confirming Prometheus measurement and backend-lead contribution.
+      review_notes: API average response time ~30% lower; CI/CD delivery time 11 minutes
+        shorter (~70%); main database maximum workload level 65%, not a reduction
+        of 65%; team feature delivery rate ~20% higher. Leadership contribution, not
+        sole implementation. Keep expense figure out of these CVs.
+      role: Software Developer
+      attribution_source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+    - id: candidate-education-languages
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+          \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n-\
+          \ **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source-excerpt review for NordPass package
+        reviewed_at: '2026-10-14'
+        method: source-quote-and-attribution-review
+      review_notes: Transcribed source degree and languages. No new proficiency assessment
+        or credential attestation.
+    - id: candidate-supported-backend-skills
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '### Languages
+
+
+          - Go
+
+          - PHP
+
+
+          ### Frameworks
+
+
+          - Laravel
+
+          - Symfony
+
+
+          ### Infrastructure
+
+
+          - AWS
+
+          - Kubernetes
+
+          - RabbitMQ
+
+
+          ### Databases
+
+
+          - MySQL
+
+          - PostgreSQL
+
+          - Elasticsearch
+
+
+          ### Architecture
+
+
+          - Microservices
+
+          - Event-driven systems
+
+
+          ### Messaging Systems
+
+
+          - Email delivery infrastructure
+
+          - DNS / DKIM / SPF / DMARC
+
+
+          ### Observability
+
+
+          - Prometheus
+
+          - Monitoring & logging
+
+
+          ### CI/CD
+
+
+          - GitHub Actions
+
+          - ArgoCD
+
+          - Helm
+
+
+          ### Engineering
+
+
+          - System design
+
+          - Performance optimization
+
+          - Production reliability
+
+
+          ### AI / Automation
+
+
+          - OpenAI APIs
+
+          - LLM automation systems'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source-excerpt review for NordPass package
+        reviewed_at: '2026-10-14'
+        method: source-quote-and-attribution-review
+      review_notes: Source-reported general skills only. Does not confirm the withdrawn
+        airSlate ECS-to-Kubernetes migration or employer-specific technology outcomes.
+    - id: clarification-crurated
+      employer: CRURATED
+      source:
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: "## CRURATED\n\n- **Role:** PHP Software Developer — Part-time Subcontract\
+          \ / Consulting Engagement\n- **Dates:** August 2024 - January 2026\n- This\
+          \ engagement ran concurrently with Simple.life. It was a parallel,\n  PHP-oriented\
+          \ subcontract/consulting assignment, not a second standard full-time\n \
+          \ employment position.\n- When both roles appear in an application, label\
+          \ CRURATED explicitly as a\n  concurrent part-time subcontract or consulting\
+          \ engagement so the overlap is not\n  misleading."
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification: &id002
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+    - id: crurated-analytics
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: 'I architect and lead the development of the platform''s internal event
+          analytics
+
+          infrastructure - a mission-critical system that powers product metrics,
+          reporting, and
+
+          business insights.'
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED Crutrade integration: full technical ownership of production
+          authentication/OTP, account linking, collection import/export, purchase-ownership
+          verification, and request/response logging.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED DataLake and event analytics: full technical ownership, production
+          use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-confirmed-event-version-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED parallel event-version publication: full technical ownership,
+          production use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-event-design
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Define a robust, versioned event schema to enforce consistency across\
+          \ teams and\n  accelerate integration of new event types."
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED new analytics stream setup dropped from several days to under
+          4 hours through modular design under the candidate's technical ownership;
+          operational observation was identified as the basis.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated DataLake/event-system scope and preserve
+        original units. The direct candidate metric review contextually confirms these
+        figures with Grafana, operational observation, or code/data as the stated
+        basis; no independent company-system audit. Any later candidate correction,
+        if supplied, takes precedence; no such correction identified in candidate
+        sources reviewed on 2026-10-14.
+    - id: cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\n\
+          Hyprr was a creator-focused digital platform with blockchain/NFT components\
+          \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+          \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+          \ development across project planning, microservice and serverless\n  architecture,\
+          \ CI/CD, and reliability/serviceability concerns.\n- Defined the technology\
+          \ roadmap with the CTO and helped establish the core stack for\n  product\
+          \ delivery.\n- Led backend development and worked on the platform's Ethereum-based\
+          \ digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel | MySQL\
+          \ | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+      status: verified
+      verification: *id002
+    - id: database-reliability
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+          \ and\n  redistributing workload, improving service stability during high-traffic\
+          \ periods."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id002
+    - id: simple-2026-gdpr
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+          2026, ~37 tickets)**
+
+          - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+          Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+          analytics (two products). Self-service admin workflow (create / list / detail
+          / status).
+
+          - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+          + lookup), rollback on Data Platform when a request is cancelled, cascade
+          deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+          - Executed an under-18 compliance program: account deletion, subscription
+          cancellation and refunds after two notification waves.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: &id003
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: '- **Role:** Software Developer'
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug 2026)**
+
+          - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+          a vendor-neutral event model; the only repo holding vendor SDKs.
+
+          - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+          ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+          Zendesk adapter with full outbound (reply, note, tags, status), client +
+          service in the support-agent, dev environment and deploy.
+
+          - Enabled the company''s first B2B demo of the support-AI product (golden
+          cases + admin console).'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id003
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-llm-agent
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+          tickets)**
+
+          - Implemented 10+ agent action tools: subscription cancel, cancellation
+          offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+          vision), attachments extraction, useful-links generation for new billing,
+          review processing for a second product.
+
+          - Built the evaluation pipeline: conversation texts + action events + subscription-state
+          snapshots on ticket open/close → Eval JSON.
+
+          - Built email and product-ticket categorization on prompts; retro-mapped
+          500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+          - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+          responses, nil-error wrapping, malformed session data, content_filter errors,
+          duplicate handling, language misdetection).
+
+          - Migrated 3 services to DeepL without language detection.
+
+          - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id003
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-snowflake-pipelines
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one
+          engine (Sep 2026)**
+
+          - Researched the codebase, proved ~70% structural identity, replaced 3 independent
+          cron pipelines (CEO questions, profile reports, deletion feedback) with
+          one two-phase engine (ingest + push; keyset pagination, run budget, throttle,
+          retries, feature flag) via Template Method with 6 hook points.
+
+          - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered.
+          Removed a hard cap of 100 items/day. Eliminated daily full-history re-reads
+          from Snowflake. No public API / admin-UI changes; no downtime.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id003
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+        quote: "## Context and ownership\n\nSimple operates in the medical and health\
+          \ domain, including clinic callback requests;\nevery call carries PII and\
+          \ potentially PHI. The candidate owned the architecture and\nbackend end\
+          \ to end, authored the epic and design document and made the security\n\
+          decisions. The work passed formal security sign-off (DEV-35381) and a BAA\
+          \ and\ncall-recording compliance review (DEV-35382), then reached production\
+          \ on 2026-09-25\nwith a three-person cross-functional team: backend, frontend\
+          \ and SRE.\n\n## Verified privacy, access and audit design\n\n- The customer\
+          \ phone number was resolved server-side, never returned by the API,\n  rendered\
+          \ in the agent UI or written to logs; only a mask reached the browser. There\n\
+          \  was no number-reveal UI.\n"
+        sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+        context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
+      status: verified
+      verification:
+        reviewer: Candidate direct confirmation and Codex source review
+        reviewed_at: '2026-09-27'
+        method: Recorded the candidate''s direct clarification verbatim and checked
+          the claim scope against its stated project context.
+      review_notes: Internal ticket identifiers, permission names and detailed consent
+        flow are source context. Render only the employer-relevant privacy, security
+        and lawful calling outcome in a CV.
+    - id: simple-confirmed-2026-stack
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: 'Stack: Go, PostgreSQL (GORM), AWS (Amazon Connect, SQS, IAM/IRSA,
+          Lambda), Kubernetes CronJobs, Terraform, Intercom API, Zendesk API, Snowflake,
+          OpenAI/LLM tooling, OpenAPI, DeepL, Braze, AppsFlyer, Microsoft Entra ID.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+      status: verified
+      verification:
+        reviewer: Codex root source-excerpt review for NordPass package
+        reviewed_at: '2026-10-14'
+        method: source-quote-and-attribution-review
+      review_notes: Stack only; Software Developer title and year-only2026 end remain
+        governed by direct follow-up. No newer title/end-month is established.
+    - id: support-platform-linkedin
+      employer: Simple App
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: 'I design and own a support automation platform that connects Zendesk,
+          Intercom, and
+
+          internal services through a robust, scalable backend in Go. My work enables
+          the support
+
+          team to operate faster, smarter, and at scale - even during peak loads.'
+        context_quote: '### Simple App
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    checks:
+    - source_quotes
+    - source_hashes
+    - verified_status
+    - numeric_tokens
+    - declared_attribution
+    - cv_bullet_coverage
+    semantic_review_required: true
+    cv_audit:
+      target_role: Backend Engineer — Go, APIs and Connectivity
+      top_third_evidence_ids:
+      - simple-2026-helpdesk-gateway
+      - simple-2026-telephony-privacy
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: independent_cv_editor
+        author: prepare_dremio_scholarshipowl
+        mode: independent
+        document_sha256: sha256:0fd5b718dee6a5793345304076cbc1698860b846700360febc1677327fb5f0e4
+        notes: Independently reviewed final CV against Dremio canonical snapshot,
+          original candidate records and verified evidence bank. Driver/Arrow experience
+          remains unclaimed. Rejected PDFfiller scope-only bullet; retained employer
+          chronology. Crutrade rewritten to delivered cross-platform capability. Recent
+          roles contain twelve of fourteen bullets. No routine cron repair or shared
+          logger/package promoted into senior impact. Formatting-only contact-line
+          trailing spaces removed; exact prior content reconstructed and original
+          hash confirmed. Formatting-only Skills group markers removed; reconstructing
+          original four markers reproduced prior reviewed hash. Bounded headline change
+          to Connectivity approved as truthful service-integration focus, not driver
+          expertise or historical title. Skills paragraph spacing changed only; reconstructed
+          prior wording/hash confirmed. User approved dated-only Sixt and PDFfiller.
+      bullet_decisions:
+      - text: Built a vendor-neutral Go helpdesk gateway with tenant-isolated ingestion
+          and vendor adapters, enabling the company's first business-to-business demonstration
+          of its support-AI product.
+        decision: keep
+        reason: Direct Go API boundary and independent service delivery answer Dremio
+          distributed-service ownership.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: First because a deployed vendor boundary and concrete
+          business demo best transfer to connectivity.
+        contribution: Built gateway service, adapters and ingestion contracts.
+        affected_scope: Multi-tenant helpdesk and support-AI integration.
+        consequence: Enabled the first B2B demonstration; no adoption or revenue inferred.
+        verdict: approve
+      - text: Owned telephony architecture and backend delivery through formal security
+          review and production release, protecting customer phone data and separating
+          agent access from administration.
+        decision: keep
+        reason: Explicit design/security ownership through release demonstrates lifecycle
+          responsibility and authentication boundaries.
+        weight: high
+        signal_type: security
+        ordering_rationale: Second adds access and privacy judgment beyond gateway
+          implementation.
+        contribution: Owned telephony architecture/backend and made security decisions.
+        affected_scope: Customer phone information and support-agent access.
+        consequence: Security-reviewed production release protected phone data and
+          separated access privileges.
+        verdict: approve
+      - text: Automated GDPR exports and cancellation-aware deletion across support
+          and data services, giving administrators a self-service workflow for managing
+          requests and their status.
+        decision: keep
+        reason: Cross-service privacy workflow is substantive delivered capability
+          relevant to dependable service boundaries.
+        weight: high
+        signal_type: security
+        ordering_rationale: Third retains distinct compliance workflow before data-processing
+          efficiency.
+        contribution: Delivered export administration and cancellation-aware deletion
+          coordination.
+        affected_scope: Support, payment and customer-data services.
+        consequence: Administrators gained self-service request management and status
+          visibility; no turnaround estimate used.
+        verdict: approve
+      - text: Consolidated duplicated Snowflake-to-Intercom pipelines into a common
+          processing engine, eliminating daily full-history reads while preserving
+          public interfaces and avoiding downtime.
+        decision: keep
+        reason: A consequential consolidation removes unnecessary data reads without
+          breaking public clients.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Fourth gives concrete simplification after ownership/security
+          evidence.
+        contribution: Consolidated independent pipelines into a shared processing
+          engine.
+        affected_scope: Snowflake-to-Intercom support-data ingestion.
+        consequence: Daily full-history rereads eliminated with unchanged public interfaces
+          and no downtime.
+        verdict: approve
+      - text: Built production support-agent actions and an evaluation pipeline linking
+          conversations, actions and subscription state, supporting automated cancellation,
+          refund and other customer workflows.
+        decision: keep
+        reason: Production agent actions and evaluation connect service implementation
+          to delivered customer workflows.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Fifth is distinct shipped automation/evaluation scope,
+          less central than connectivity contracts.
+        contribution: Built action tools and conversation/action/state evaluation
+          pipeline.
+        affected_scope: Support-agent cancellation, refund and account workflows.
+        consequence: Production support gained executable automation actions and linked
+          evaluation data; not sole platform automation credit.
+        verdict: approve
+      - text: Took full technical ownership of production DataLake and event analytics
+          infrastructure that powered product metrics, reporting and business insights.
+        decision: keep
+        reason: Technical ownership of analytics infrastructure is directly relevant
+          to data-platform service scope.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: First CRURATED bullet establishes production ownership
+          and the system purpose.
+        contribution: Held full technical ownership of DataLake/event analytics production
+          work.
+        affected_scope: Product-metric, reporting and business-insight infrastructure.
+        consequence: Production analytics infrastructure powered these product/reporting
+          uses, without inferred organization-wide business gains.
+        verdict: approve
+      - text: Delivered parallel event-version publication in production and defined
+          a versioned schema to keep event integration consistent across teams.
+        decision: keep
+        reason: Schema consistency and parallel versions transfer to Dremio compatibility
+          responsibilities.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Second narrows the broad analytics ownership to distinct
+          compatibility work.
+        contribution: Delivered parallel versions and defined versioned event schema.
+        affected_scope: Cross-team event producers and analytics consumers.
+        consequence: Production event versions and consistent schema supported integration;
+          no driver work inferred.
+        verdict: approve
+      - text: Shortened new analytics-stream setup through modular design under personal
+          technical ownership, making additional event feeds quicker to integrate.
+        decision: keep
+        reason: Reviewed modular-design outcome demonstrates faster extension of data
+          feeds.
+        weight: high
+        signal_type: impact
+        ordering_rationale: Third states a distinct onboarding consequence after schema
+          architecture.
+        contribution: Designed modular analytics-stream integration.
+        affected_scope: New feeds into the CRURATED analytics platform.
+        consequence: New-stream setup became quicker; exact timing and measurement
+          window omitted.
+        verdict: approve
+      - text: Connected customer accounts and collections across CRURATED and Crutrade
+          through a production integration under full technical ownership, including
+          authentication and purchase-ownership verification.
+        decision: keep
+        reason: A shipped cross-platform identity/collection integration adds authentic
+          service integration evidence.
+        weight: medium
+        signal_type: security
+        ordering_rationale: Fourth is a separate customer integration, subordinate
+          to the data-platform work.
+        contribution: Technically owned production authentication, linked accounts,
+          collection exchange and ownership checks.
+        affected_scope: CRURATED and Crutrade customer account/collection boundary.
+        consequence: Customer accounts and collections were connected through the
+          production integration with purchase ownership verified; no adoption/revenue
+          inferred.
+        verdict: approve
+      - text: Reduced peak load on the main database by removing bottlenecks and redistributing
+          workload, improving service stability during high-traffic periods.
+        decision: keep
+        reason: Source explicitly establishes service stability under peak database
+          load, a material consequence rather than generic tuning.
+        weight: high
+        signal_type: reliability
+        ordering_rationale: First airSlate bullet has the clearest operational consequence
+          and affected production system.
+        contribution: Removed database bottlenecks and redistributed load.
+        affected_scope: Main production database and dependent services at traffic
+          peaks.
+        consequence: Service stability improved during high traffic.
+        verdict: approve
+      - text: Implemented CI/CD pipelines that shortened release cycles and improved
+          delivery consistency across services.
+        decision: keep
+        reason: Verified release-cycle and consistency improvements answer production
+          delivery quality.
+        weight: high
+        signal_type: impact
+        ordering_rationale: Second adds release-process benefit distinct from runtime
+          reliability.
+        contribution: Implemented CI/CD pipelines.
+        affected_scope: Multiple backend services and their release process.
+        consequence: Release cycles shortened and delivery consistency improved.
+        verdict: approve
+      - text: Improved API response times by identifying and optimizing backend performance
+          bottlenecks and directing the work as backend lead.
+        decision: keep
+        reason: Candidate confirmation establishes backend-lead scope and API-performance
+          outcome.
+        weight: high
+        signal_type: impact
+        ordering_rationale: Third adds distinct request performance after stability
+          and delivery; no unsupported metric or sole authorship.
+        contribution: Directed backend bottleneck identification and optimization.
+        affected_scope: airSlate API/backend responses.
+        consequence: API response times improved; quantitative measurements deliberately
+          omitted.
+        verdict: approve
+      - text: Brought the product from prototype to closed beta while leading backend
+          development for a creator-focused digital platform.
+        decision: keep
+        reason: Source-backed prototype-to-beta transition demonstrates delivery leadership
+          with a concrete milestone.
+        weight: high
+        signal_type: impact
+        ordering_rationale: First Hyprr bullet gives the clearest product consequence.
+        contribution: Led backend development during progression from prototype.
+        affected_scope: Creator platform.
+        consequence: Product reached closed beta; no ownership of product strategy
+          inferred.
+        verdict: approve
+      - text: Defined the technology roadmap with the CTO and established the core
+          delivery stack, influencing microservice architecture and reliability decisions.
+        decision: keep
+        reason: Co-defined roadmap and core stack show bounded influence on technical
+          direction.
+        weight: medium
+        signal_type: architecture
+        ordering_rationale: Second complements beta delivery with architecture influence;
+          only two bullets because this older role is intentionally compact.
+        contribution: Defined technical roadmap with CTO and helped establish stack.
+        affected_scope: Microservice/serverless product delivery and reliability.
+        consequence: Established the technical basis for core product delivery, not
+          sole independent strategy authority.
+        verdict: approve
+      role_coverage: &id004
+      - employer: Simple App
+        source_period:
+          start:
+          - 2023
+          - 11
+          end:
+          - 2026
+          - null
+        decision: include
+        reason: Included as strongest recent Go/API service ownership for Dremio;
+          five distinct bullets, official Software Developer title retained. Exact
+          August 2026 end follows newest direct confirmation; canonical inventory
+          stores end year without month.
+        heading: Simple.life — Software Developer — November 2023 - August 2026
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Simple App\n\n**Software Developer**  \nNovember 2023 - Present\
+            \ (2 years 5 months)\n\nI design and own a support automation platform\
+            \ that connects Zendesk, Intercom, and\ninternal services through a robust,\
+            \ scalable backend in Go. My work enables the support\nteam to operate\
+            \ faster, smarter, and at scale - even during peak loads.\n\n- Engineer\
+            \ a unified API orchestration layer to streamline ticket routing,\n  classification,\
+            \ and lifecycle tracking.\n- Integrate OpenAI-powered auto-triage flows,\
+            \ resulting in the automated handling or\n  deflection of up to 30% of\
+            \ inbound tickets.\n- Migrate business-critical flows from Zendesk to\
+            \ Intercom's real-time engine,\n  reducing first-response time by 35%\
+            \ and improving resolution rate by 28%.\n- Build resilient message delivery\
+            \ pipelines with fallback logic, retries, and\n  monitoring - reducing\
+            \ incident-related disruptions by over 50%.\n- Maintain high service uptime\
+            \ and throughput without adding team capacity, enabling\n  the support\
+            \ org to scale under pressure.\n- Collaborate cross-functionally with\
+            \ Support Ops, Product, and AI teams to align\n  automation with measurable\
+            \ impact.\n\nThe system now supports tens of thousands of user interactions\
+            \ per month with minimal\nhuman intervention, ensuring continuity, speed,\
+            \ and reliability in customer\ncommunication."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        - path: registry/candidate/user-confirmed-simple-life-end-date-2026-10-16.md
+          quote: 'The confirmed employment period is **November 2023 - August 2026**
+            for
+
+            **Simple.life / Simple App**. This is a completed role, not current employment.'
+          sha256: d13638cc0b4daf316854403fecac56ea12e6cb308dd5c248e206e15012548038
+        reviewer: independent_cv_editor
+      - employer: CRURATED
+        source_period:
+          start:
+          - 2024
+          - 8
+          end:
+          - 2026
+          - 1
+        decision: include
+        reason: Included as concurrent part-time consulting with four distinct analytics,
+          schema, modularity and integration outcomes; overlap is explicit.
+        heading: CRURATED — PHP Software Developer, concurrent part-time subcontract
+          / consulting — August 2024 - January 2026
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### CRURATED\n\n**Software Developer**  \nAugust 2024 - January\
+            \ 2026 (1 year 6 months)  \nRome, Latium, Italy\n\nI architect and lead\
+            \ the development of the platform's internal event analytics\ninfrastructure\
+            \ - a mission-critical system that powers product metrics, reporting,\
+            \ and\nbusiness insights.\n\n- Architect a scalable, event-driven system\
+            \ using queues and EventBridge, increasing\n  throughput to the DataLake\
+            \ by over 10x.\n- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types.\n- Reduce\
+            \ implementation time for new analytics streams from several days to under\n\
+            \  4 hours through modular design.\n- Build routing logic supporting multiple\
+            \ downstreams (e.g., Webhook, S3) with strong\n  delivery guarantees and\
+            \ backpressure handling.\n- Implement fault-tolerant pipelines with automatic\
+            \ retries and observability,\n  maintaining event delivery reliability\
+            \ above 99.9%.\n- Collaborate with product and engineering leadership\
+            \ to ensure end-to-end visibility\n  of critical user and business flows.\n\
+            \nThis system now serves as the backbone for data-driven decision-making\
+            \ across the\ncompany."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        - path: registry/candidate/user-confirmed-career-clarifications.md
+          quote: "## CRURATED\n\n- **Role:** PHP Software Developer — Part-time Subcontract\
+            \ / Consulting Engagement\n- **Dates:** August 2024 - January 2026\n-\
+            \ This engagement ran concurrently with Simple.life. It was a parallel,\n\
+            \  PHP-oriented subcontract/consulting assignment, not a second standard\
+            \ full-time\n  employment position."
+          sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+        reviewer: independent_cv_editor
+      - employer: airSlate
+        source_period:
+          start:
+          - 2021
+          - 2
+          end:
+          - 2023
+          - 8
+        decision: include
+        reason: Included with three distinct confirmed reliability, delivery and API-performance
+          results; additional fourth result unnecessary for Dremio.
+        heading: airSlate — Software Developer — February 2021 - August 2023
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### airSlate\n\n#### Technical Lead\n\nJanuary 2023 - August 2023\
+            \ (8 months)  \nKyiv, Kyiv City, Ukraine\n\n- Played a key role in Agile\
+            \ planning with Product Management and Development,\n  building feature\
+            \ road maps and supporting release plans.\n- Was responsible for delivering\
+            \ team assignments on all stages of the project from\n  draft to production\
+            \ release.\n- Performed task evaluation, planning and distribution between\
+            \ team members in\n  accordance with Planning Intervals (PI).\n- Defined\
+            \ and tracked key performance metrics for the development team, which\n\
+            \  increased feature delivery rate by approx. 20%.\n- Conducted over 20\
+            \ technical interviews for different positions within the company.\n\n\
+            #### Senior Software Developer\n\nFebruary 2021 - January 2023 (2 years)\
+            \  \nKyiv, Kyiv City, Ukraine\n\n- Migrated managed services from ECS\
+            \ to Kubernetes. Prepared infrastructure for\n  launching services in\
+            \ Kubernetes (Helm charts, GitHub Actions, ArgoCD), leading to\n  30%\
+            \ cost cutting and over 20% performance boost.\n- Lowered the maximum\
+            \ workload on the main database to 65% to avoid interruptions in\n  the\
+            \ product's service during prime time, resulting in a 23% reduction in\
+            \ operational\n  expenses.\n- Developed a Laravel/Symfony-based product-wide\
+            \ logger package, adhering to\n  interservice communication standard.\n\
+            - Implemented CI/CD pipelines to ensure efficient software development\
+            \ processes,\n  accelerating feature delivery time by 11 minutes, a ~70%\
+            \ improvement.\n- Troubleshot production issues by analyzing logs, monitoring\
+            \ system performance, SRE\n  dashboards. Introduced necessary fixes and\
+            \ optimizations.\n- Identified and optimized performance bottlenecks,\
+            \ which decreased API response times\n  by 30% on average."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: independent_cv_editor
+      - employer: Hyprr
+        source_period:
+          start:
+          - 2019
+          - 11
+          end:
+          - 2021
+          - 1
+        decision: include
+        reason: 'Included with two deliberately compact older bullets: beta milestone
+          and architecture roadmap; no padded overlapping leadership duties.'
+        heading: Hyprr — Technical Lead — November 2019 - January 2021
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\
+            \ (1 year 3 months)\n\n- Brought an innovative Web-3 based social and\
+            \ NFT platform from its initial prototype\n  to a more advanced closed\
+            \ beta stage in less than 6 months.\n- Worked closely with business and\
+            \ technical stakeholders on building a product and\n  defining OKRs.\n\
+            - Outlined and managed the technological plan for the product, and collaborated\
+            \ closely\n  with the CTO to establish the essential set of technologies\
+            \ for building the product.\n- Directly managed 10 developers. Influenced\
+            \ all areas of Product Development,\n  including Project Management, Microservice\
+            \ Serverless solutions, CI/CD, and\n  upholding RAS (Reliability, Availability,\
+            \ and Serviceability).\n\nAdditional skills: PHP frameworks Mezzio + Phalcon,\
+            \ PostgreSQL, Prometheus/Jaeger."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: independent_cv_editor
+      - employer: Sixt
+        source_period:
+          start:
+          - 2018
+          - 12
+          end:
+          - 2019
+          - 11
+        decision: include
+        reason: 'Included as dated heading only: older regulatory duties lack a distinct
+          documented material consequence relevant enough to expand.'
+        heading: Sixt — Senior Software Developer — December 2018 - November 2019
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November\
+            \ 2019 (1 year)  \nKyiv, Kyiv City, Ukraine\n\nSIXT is a leading international\
+            \ provider of high-quality mobility services.\n\n- Developed microservices\
+            \ to comply with the requirements of the European Union's\n  General Data\
+            \ Protection Regulation (EU GDPR).\n- Developed and enhanced codebase\
+            \ in strict compliance with the PCI DSS (Payment Card\n  Industry Data\
+            \ Security Standard).\n- Lead and participated in internal and external\
+            \ assessments of technical viability.\n  Evaluated solution frameworks\
+            \ to guarantee alignment with functional, performance,\n  and operational\
+            \ criteria.\n- Conducted system audits, security assessments, and vulnerability\
+            \ scans to identify\n  risks and maintain compliance with industry standards."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: independent_cv_editor
+      - employer: PDFfiller.com
+        source_period:
+          start:
+          - 2016
+          - 10
+          end:
+          - 2019
+          - 11
+        decision: include
+        reason: Included as dated heading only after rejecting duty/technical-decision
+          lists without a distinct supported consequence; overlap with Sixt remains
+          source-exact.
+        heading: PDFfiller.com — Software Developer — October 2016 - November 2019
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### PDFfiller.com\n\n**Technical Lead**  \nOctober 2016 - December\
+            \ 2018 (2 years 3 months)  \nKyiv, Kyiv City, Ukraine\n\n- Lead a team\
+            \ of 5 backend engineers, responsible for development of a service for\n\
+            \  transactional emails.\n- Made key technical decisions at all steps\
+            \ of the project. Gained an in-depth\n  understanding of the technical\
+            \ aspects of messaging, such as email FBLs, DNS, DKIM,\n  SPF, DMARC,\
+            \ other fundamental components and tools.\n- Expanded the service's capabilities\
+            \ to accommodate around 50 million emails on a\n  monthly basis, an increase\
+            \ of 400%.\n- Lead team efforts during the weeks of BFCM (Black Friday\
+            \ / Cyber Monday), a critical\n  time for the company which sees more\
+            \ than 10x increase in customer traffic.\n- Provided direct coaching and\
+            \ introduced state of the art performance metrics to\n  assist team members.\n\
+            - Fostered a culture that combines an enjoyable and diverse atmosphere\
+            \ with the utmost\n  technical excellence."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        - path: registry/candidate/employment-letter-extract-2026-09-25.md
+          quote: Use November 2019 as the PDFfiller end date in CV chronology. The
+            reason the letter covers a shorter period remains unknown; do not infer
+            a legal-entity transfer or role change.
+          sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+        reviewer: independent_cv_editor
+      - employer: Aurum Software
+        source_period:
+          start:
+          - 2015
+          - 11
+          end:
+          - 2016
+          - 11
+        decision: exclude
+        reason: Excluded because engagement began before the permitted PDFfiller career
+          boundary; employer absent from all CV sections.
+        heading: null
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Aurum Software\n\n**Senior Software Developer**  \nNovember\
+            \ 2015 - November 2016 (1 year 1 month)  \nKyiv, Kyiv City, Ukraine\n\n\
+            - Identified application issues and provided recommendations for resolution\
+            \ to ensure\n  optimal performance.\n- Normalized database tables and\
+            \ performed extensive query optimization.\n- Implemented analytical and\
+            \ legal document reporting systems.\n- Developed integration between PocketBook\
+            \ Cloud and PocketBook account.\n- Development and supporting of television\
+            \ advertising strategies planning tool\n  (large part of backend and less\
+            \ part of front-end).\n- Planning algorithms implementation.\n- Writing\
+            \ reconciliation scripts for integration with desktop planning tool version.\n\
+            - Increased unit-tests coverage.\n- Performed code reviews for team members.\n\
+            \nAdditional skills: PostgreSQL, Restfull API."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: independent_cv_editor
+      - employer: Upwork freelance
+        source_period:
+          start:
+          - 2008
+          - 7
+          end:
+          - 2016
+          - 9
+        decision: exclude
+        reason: Excluded because engagement began before the permitted PDFfiller career
+          boundary; employer absent from all CV sections.
+        heading: null
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Upwork freelance\n\n**Software Developer**  \nJuly 2008 - September\
+            \ 2016 (8 years 3 months)\n\nIn my tenure on Upwork, I have been deeply\
+            \ involved in server-side application\ndevelopment, adeptly handling coding\
+            \ tasks and reviews. My capabilities extend to the\nintegration of intricate\
+            \ bank payment systems into various applications, highlighting\nmy technical\
+            \ adaptability and problem-solving skills.\n\nI've also been proactive\
+            \ in enhancing operational efficiency by creating and automating\ntools\
+            \ and scripts. These solutions have significantly streamlined routine\
+            \ tasks within\ndepartments, contributing to a more productive work environment.\n\
+            \nEfficiency has also been a key focus in my role, as I've undertaken\
+            \ initiatives to\noptimize application performance through careful code\
+            \ profiling and analysis. This\napproach ensures that applications operate\
+            \ at their best, delivering a seamless user\nexperience.\n\nThoroughness\
+            \ characterizes my approach to code and application testing, where my\n\
+            attention to detail guarantees the reliability and functionality of the\
+            \ final product.\n\nReflecting on my tenure on Upwork, I'm gratified by\
+            \ the diverse projects I've tackled\nand the consistent quality I've delivered.\
+            \ My technical proficiency, coupled with a\npragmatic approach, has defined\
+            \ my contributions to the platform."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: independent_cv_editor
+      - employer: CoinsBank/bit-x
+        source_period:
+          start:
+          - 2014
+          - 1
+          end:
+          - 2015
+          - 11
+        decision: exclude
+        reason: Excluded because engagement began before the permitted PDFfiller career
+          boundary; employer absent from all CV sections.
+        heading: null
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### CoinsBank/bit-x\n\n**Senior Software Developer**  \nJanuary\
+            \ 2014 - November 2015 (1 year 11 months)  \nMálaga, Andalusia, Spain\n\
+            \n- Designed and implemented large scope of new features in exchange core\
+            \ component\n  (fiat money).\n- Develop integration with Stripe/PayPal/Skrill\
+            \ payment gateway providers.\n- Introduced event-based real-time notification\
+            \ system.\n- Working on implementation of a special gift card and voucher\
+            \ system.\n- Optimizing services performance, code profiling.\n\nAdditional\
+            \ skills: Symfony2 & Yii2, PostgreSQL/Riak (as document storage),\nAngularJS/Bootstrap."
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: independent_cv_editor
+    application_review:
+      role_coverage: *id004
+      letter_review:
+        reviewer: prepare_dremio_scholarshipowl
+        document_sha256: sha256:70eed27eb73c208510a2b0cca732c6cdfeef90bbc82e271a91255bd2b83f728f
+        basis_sha256: 5ffa0f719c40334d2284d2a04f017abb3e94828cc90c7f3960ccdcb25289c70a
+        priority_mapping:
+        - requirement: Distributed services, APIs, and failure handling
+          evidence_ids:
+          - simple-2026-helpdesk-gateway
+          point: Vendor-neutral service contracts
+          why_priority: Direct high-priority API/distributed-service requirement with
+            a deployed vendor boundary.
+          letter_quote: One useful example is a vendor-neutral helpdesk gateway I
+            built in Go.
+        - requirement: Staff-level production ownership
+          evidence_ids:
+          - simple-2026-telephony-privacy
+          point: Responsibility through security and production delivery
+          why_priority: Critical substantial-ownership requirement needs decisions
+            and operational delivery beyond coding.
+          letter_quote: My production work has included end-to-end backend and security
+            decisions for a telephony platform, and technical ownership of event analytics
+            and parallel event-version publication.
+        distinctness: First ability concerns interface boundaries; second concerns
+          ownership through security and delivery. No second narrated project is needed.
+        channel_fit: Attachment, five body paragraphs; one brief gateway narrative,
+          with domain gap and location question proportionately explicit.
+        narrated_examples:
+        - letter_quote: One useful example is a vendor-neutral helpdesk gateway I
+            built in Go.
+          adds_value: Shows the concrete vendor-neutral boundary and real delivery
+            milestone behind the service-design capability.
+        company_claim: Dremio Enterprise runs on Kubernetes, on-premise or in the
+          cloud.
+        company_grounding: Official homepage product navigation states self-managed
+          Kubernetes/on-premise/cloud deployment; final sentence preserves those deployment
+          options without inferring an internal architecture.
+        voice:
+          language: English
+          notes: 'Exact final text reviewed aloud after simplification: calm professional
+            proposition, one short example, proportionate confidence, no invented
+            product use or enthusiasm; final paragraph makes the practical Italy question
+            explicit.'
+          rules:
+          - path: I:/Development/Git/ValentinNikolaev/social-promotion/social-voice.md
+            sha256: b987b951b05059dee37f676e868bb284dbb18980170f841f53a3b80e3a6c1a3f
+          - path: I:/Development/Git/ValentinNikolaev/social-promotion/employer-letter-flow.md
+            sha256: 2ec9140dc47c1ee5e918656f8d6f046913a2fd2356a706dad7429e37d00a59c9
+        company_source:
+          path: parts/company-source.txt
+          url: https://www.dremio.com/
+          quote: Self managed software that runs on Kubernetes, on-premise, or in
+            the cloud
+          sha256: 4bdedd0ee24ae783cd70968c98ba9d5d0504f8b659f220d628706bca17d06deb
+          checked_on: '2026-10-19'
+        company_fact: Self managed software that runs on Kubernetes, on-premise, or
+          in the cloud
+    reviewer: /root
+    document_sha256:
+      cv: sha256:0fd5b718dee6a5793345304076cbc1698860b846700360febc1677327fb5f0e4
+      cover-letter: sha256:70eed27eb73c208510a2b0cca732c6cdfeef90bbc82e271a91255bd2b83f728f
+      analysis: sha256:ad377d1730f4940a0655164b6252ab86b077bcf6261fb6b28a0b93a006290f90
+      interview-preparation: sha256:ac6298d76da3b0b0c8c16fcfa9d744a9c6d409803349ead653761b15bb2acafb
+    requirements:
+    - requirement: Staff-level production ownership
+      importance: critical
+      basis: stated
+      jd_quote: 8+ years of production software engineering experience, or equivalent
+        depth demonstrated through sustained ownership of complex systems and multiple
+        substantial team-area features.
+      match: strong
+      candidate_quote: "## Context and ownership\n\nSimple operates in the medical\
+        \ and health domain, including clinic callback requests;\nevery call carries\
+        \ PII and potentially PHI. The candidate owned the architecture and\nbackend\
+        \ end to end, authored the epic and design document and made the security\n\
+        decisions. The work passed formal security sign-off (DEV-35381) and a BAA\
+        \ and\ncall-recording compliance review (DEV-35382), then reached production\
+        \ on 2026-09-25\nwith a three-person cross-functional team: backend, frontend\
+        \ and SRE.\n\n## Verified privacy, access and audit design\n\n- The customer\
+        \ phone number was resolved server-side, never returned by the API,\n  rendered\
+        \ in the agent UI or written to logs; only a mask reached the browser. There\n\
+        \  was no number-reveal UI."
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      - crurated-confirmed-datalake-production
+      - crurated-confirmed-event-version-production
+    - requirement: Go or systems/services programming
+      importance: critical
+      basis: stated
+      jd_quote: Deep proficiency in Java, C++, Rust, Go, or another systems or services
+        language
+      match: strong
+      candidate_quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+        2026)**
+
+        - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind a
+        vendor-neutral event model; the only repo holding vendor SDKs.
+
+        - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+        ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter, Zendesk
+        adapter with full outbound (reply, note, tags, status), client + service in
+        the support-agent, dev environment and deploy.
+
+        - Enabled the company''s first B2B demo of the support-AI product (golden
+        cases + admin console).'
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+    - requirement: Communication and mentoring
+      importance: high
+      basis: stated
+      jd_quote: Clear written and verbal communication, including the ability to explain
+        technical trade-offs, surface risks early, align contributors across teams,
+        and influence without formal authority.
+      match: partial
+      candidate_quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January\
+        \ 2021\n\nHyprr was a creator-focused digital platform with blockchain/NFT\
+        \ components built to\nconnect artists and their audiences.\n\n- **Brought\
+        \ the product from prototype to closed beta in under 6 months.**\n- Influenced\
+        \ product development across project planning, microservice and serverless\n\
+        \  architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+        \ the technology roadmap with the CTO and helped establish the core stack\
+        \ for\n  product delivery.\n- Led backend development and worked on the platform's\
+        \ Ethereum-based digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel\
+        \ | MySQL | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+      risk: Influence in a connectivity or partner ecosystem is not directly evidenced.
+      mitigation: Confirm examples of cross-team technical influence.
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    - requirement: Distributed services, APIs, and failure handling
+      importance: high
+      basis: stated
+      jd_quote: Experience designing and debugging APIs, protocols, client libraries,
+        drivers, or distributed services
+      match: strong
+      candidate_quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+        2026)**
+
+        - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind a
+        vendor-neutral event model; the only repo holding vendor SDKs.
+
+        - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+        ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter, Zendesk
+        adapter with full outbound (reply, note, tags, status), client + service in
+        the support-agent, dev environment and deploy.
+
+        - Enabled the company''s first B2B demo of the support-AI product (golden
+        cases + admin console).'
+      risk: Driver/protocol-specific depth is not shown.
+      mitigation: Highlight only the supported API and distributed-event work.
+      hard_blocker: false
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      - crurated-event-design
+    - requirement: Computer Science education
+      importance: meaningful
+      basis: stated
+      jd_quote: Bachelor's degree in Computer Science or a related technical field,
+        or equivalent practical experience.
+      match: strong
+      candidate_quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+        \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n- **Ukrainian\
+        \ - native**\n- **English - Upper-intermediate**"
+      risk: ''
+      mitigation: ''
+      hard_blocker: false
+      evidence_ids:
+      - candidate-education-languages
+    evidence_bank_path: registry/evidence/achievements.yaml
+    claims_ledger_path: claims.yaml
+    claims:
+    - document: cv
+      text: Built a vendor-neutral Go helpdesk gateway with tenant-isolated ingestion
+        and vendor adapters, enabling the company's first business-to-business demonstration
+        of its support-AI product.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      support:
+        contribution:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+        scope:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+        consequence:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+    - document: cv
+      text: Owned telephony architecture and backend delivery through formal security
+        review and production release, protecting customer phone data and separating
+        agent access from administration.
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      support:
+        contribution:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+        scope:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+        consequence:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+    - document: cv
+      text: Automated GDPR exports and cancellation-aware deletion across support
+        and data services, giving administrators a self-service workflow for managing
+        requests and their status.
+      evidence_ids:
+      - simple-2026-gdpr
+      support:
+        contribution:
+          evidence_id: simple-2026-gdpr
+          quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+            2026, ~37 tickets)**
+
+            - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+            Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+            analytics (two products). Self-service admin workflow (create / list /
+            detail / status).
+
+            - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+            + lookup), rollback on Data Platform when a request is cancelled, cascade
+            deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+            - Executed an under-18 compliance program: account deletion, subscription
+            cancellation and refunds after two notification waves.'
+        scope:
+          evidence_id: simple-2026-gdpr
+          quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+            2026, ~37 tickets)**
+
+            - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+            Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+            analytics (two products). Self-service admin workflow (create / list /
+            detail / status).
+
+            - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+            + lookup), rollback on Data Platform when a request is cancelled, cascade
+            deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+            - Executed an under-18 compliance program: account deletion, subscription
+            cancellation and refunds after two notification waves.'
+        consequence:
+          evidence_id: simple-2026-gdpr
+          quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+            2026, ~37 tickets)**
+
+            - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+            Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+            analytics (two products). Self-service admin workflow (create / list /
+            detail / status).
+
+            - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+            + lookup), rollback on Data Platform when a request is cancelled, cascade
+            deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+            - Executed an under-18 compliance program: account deletion, subscription
+            cancellation and refunds after two notification waves.'
+    - document: cv
+      text: Consolidated duplicated Snowflake-to-Intercom pipelines into a common
+        processing engine, eliminating daily full-history reads while preserving public
+        interfaces and avoiding downtime.
+      evidence_ids:
+      - simple-2026-snowflake-pipelines
+      support:
+        contribution:
+          evidence_id: simple-2026-snowflake-pipelines
+          quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one
+            engine (Sep 2026)**
+
+            - Researched the codebase, proved ~70% structural identity, replaced 3
+            independent cron pipelines (CEO questions, profile reports, deletion feedback)
+            with one two-phase engine (ingest + push; keyset pagination, run budget,
+            throttle, retries, feature flag) via Template Method with 6 hook points.
+
+            - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered.
+            Removed a hard cap of 100 items/day. Eliminated daily full-history re-reads
+            from Snowflake. No public API / admin-UI changes; no downtime.'
+        scope:
+          evidence_id: simple-2026-snowflake-pipelines
+          quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one
+            engine (Sep 2026)**
+
+            - Researched the codebase, proved ~70% structural identity, replaced 3
+            independent cron pipelines (CEO questions, profile reports, deletion feedback)
+            with one two-phase engine (ingest + push; keyset pagination, run budget,
+            throttle, retries, feature flag) via Template Method with 6 hook points.
+
+            - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered.
+            Removed a hard cap of 100 items/day. Eliminated daily full-history re-reads
+            from Snowflake. No public API / admin-UI changes; no downtime.'
+        consequence:
+          evidence_id: simple-2026-snowflake-pipelines
+          quote: '**D. Consolidation of three Snowflake→Intercom pipelines into one
+            engine (Sep 2026)**
+
+            - Researched the codebase, proved ~70% structural identity, replaced 3
+            independent cron pipelines (CEO questions, profile reports, deletion feedback)
+            with one two-phase engine (ingest + push; keyset pagination, run budget,
+            throttle, retries, feature flag) via Template Method with 6 hook points.
+
+            - Code: 1,670 → 800 LOC (−52%). Tests: 1 of 3 → 3 of 3 processes covered.
+            Removed a hard cap of 100 items/day. Eliminated daily full-history re-reads
+            from Snowflake. No public API / admin-UI changes; no downtime.'
+    - document: cv
+      text: Built production support-agent actions and an evaluation pipeline linking
+        conversations, actions and subscription state, supporting automated cancellation,
+        refund and other customer workflows.
+      evidence_ids:
+      - simple-2026-llm-agent
+      support:
+        contribution:
+          evidence_id: simple-2026-llm-agent
+          quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+            tickets)**
+
+            - Implemented 10+ agent action tools: subscription cancel, cancellation
+            offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+            vision), attachments extraction, useful-links generation for new billing,
+            review processing for a second product.
+
+            - Built the evaluation pipeline: conversation texts + action events +
+            subscription-state snapshots on ticket open/close → Eval JSON.
+
+            - Built email and product-ticket categorization on prompts; retro-mapped
+            500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+            - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+            responses, nil-error wrapping, malformed session data, content_filter
+            errors, duplicate handling, language misdetection).
+
+            - Migrated 3 services to DeepL without language detection.
+
+            - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        scope:
+          evidence_id: simple-2026-llm-agent
+          quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+            tickets)**
+
+            - Implemented 10+ agent action tools: subscription cancel, cancellation
+            offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+            vision), attachments extraction, useful-links generation for new billing,
+            review processing for a second product.
+
+            - Built the evaluation pipeline: conversation texts + action events +
+            subscription-state snapshots on ticket open/close → Eval JSON.
+
+            - Built email and product-ticket categorization on prompts; retro-mapped
+            500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+            - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+            responses, nil-error wrapping, malformed session data, content_filter
+            errors, duplicate handling, language misdetection).
+
+            - Migrated 3 services to DeepL without language detection.
+
+            - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        consequence:
+          evidence_id: simple-2026-llm-agent
+          quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+            tickets)**
+
+            - Implemented 10+ agent action tools: subscription cancel, cancellation
+            offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+            vision), attachments extraction, useful-links generation for new billing,
+            review processing for a second product.
+
+            - Built the evaluation pipeline: conversation texts + action events +
+            subscription-state snapshots on ticket open/close → Eval JSON.
+
+            - Built email and product-ticket categorization on prompts; retro-mapped
+            500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+            - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+            responses, nil-error wrapping, malformed session data, content_filter
+            errors, duplicate handling, language misdetection).
+
+            - Migrated 3 services to DeepL without language detection.
+
+            - Working set in production: ~7,000 pending tickets in a 7-day window.'
+    - document: cv
+      text: Took full technical ownership of production DataLake and event analytics
+        infrastructure that powered product metrics, reporting and business insights.
+      evidence_ids:
+      - crurated-analytics
+      - crurated-confirmed-datalake-production
+      support:
+        contribution:
+          evidence_id: crurated-confirmed-datalake-production
+          quote: 'CRURATED DataLake and event analytics: full technical ownership,
+            production use.'
+        scope:
+          evidence_id: crurated-confirmed-datalake-production
+          quote: 'CRURATED DataLake and event analytics: full technical ownership,
+            production use.'
+        consequence:
+          evidence_id: crurated-analytics
+          quote: 'I architect and lead the development of the platform''s internal
+            event analytics
+
+            infrastructure - a mission-critical system that powers product metrics,
+            reporting, and
+
+            business insights.'
+    - document: cv
+      text: Delivered parallel event-version publication in production and defined
+        a versioned schema to keep event integration consistent across teams.
+      evidence_ids:
+      - crurated-event-design
+      - crurated-confirmed-event-version-production
+      support:
+        contribution:
+          evidence_id: crurated-event-design
+          quote: "- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types."
+        scope:
+          evidence_id: crurated-event-design
+          quote: "- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types."
+        consequence:
+          evidence_id: crurated-event-design
+          quote: "- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types."
+    - document: cv
+      text: Shortened new analytics-stream setup through modular design under personal
+        technical ownership, making additional event feeds quicker to integrate.
+      evidence_ids:
+      - crurated-reviewed-stream-onboarding
+      support:
+        contribution:
+          evidence_id: crurated-reviewed-stream-onboarding
+          quote: CRURATED new analytics stream setup dropped from several days to
+            under 4 hours through modular design under the candidate's technical ownership;
+            operational observation was identified as the basis.
+        scope:
+          evidence_id: crurated-reviewed-stream-onboarding
+          quote: CRURATED new analytics stream setup dropped from several days to
+            under 4 hours through modular design under the candidate's technical ownership;
+            operational observation was identified as the basis.
+        consequence:
+          evidence_id: crurated-reviewed-stream-onboarding
+          quote: CRURATED new analytics stream setup dropped from several days to
+            under 4 hours through modular design under the candidate's technical ownership;
+            operational observation was identified as the basis.
+    - document: cv
+      text: Connected customer accounts and collections across CRURATED and Crutrade
+        through a production integration under full technical ownership, including
+        authentication and purchase-ownership verification.
+      evidence_ids:
+      - crurated-confirmed-crutrade-production
+      support:
+        contribution:
+          evidence_id: crurated-confirmed-crutrade-production
+          quote: 'CRURATED Crutrade integration: full technical ownership of production
+            authentication/OTP, account linking, collection import/export, purchase-ownership
+            verification, and request/response logging.'
+        scope:
+          evidence_id: crurated-confirmed-crutrade-production
+          quote: 'CRURATED Crutrade integration: full technical ownership of production
+            authentication/OTP, account linking, collection import/export, purchase-ownership
+            verification, and request/response logging.'
+        consequence:
+          evidence_id: crurated-confirmed-crutrade-production
+          quote: 'CRURATED Crutrade integration: full technical ownership of production
+            authentication/OTP, account linking, collection import/export, purchase-ownership
+            verification, and request/response logging.'
+    - document: cv
+      text: Reduced peak load on the main database by removing bottlenecks and redistributing
+        workload, improving service stability during high-traffic periods.
+      evidence_ids:
+      - database-reliability
+      support:
+        contribution:
+          evidence_id: database-reliability
+          quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+            \ and\n  redistributing workload, improving service stability during high-traffic\
+            \ periods."
+        scope:
+          evidence_id: database-reliability
+          quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+            \ and\n  redistributing workload, improving service stability during high-traffic\
+            \ periods."
+        consequence:
+          evidence_id: database-reliability
+          quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+            \ and\n  redistributing workload, improving service stability during high-traffic\
+            \ periods."
+    - document: cv
+      text: Implemented CI/CD pipelines that shortened release cycles and improved
+        delivery consistency across services.
+      evidence_ids:
+      - airslate-cicd-delivery
+      support:
+        contribution:
+          evidence_id: airslate-cicd-delivery
+          quote: "- Implemented **CI/CD pipelines** that shortened release cycles\
+            \ and improved delivery\n  consistency across services."
+        scope:
+          evidence_id: airslate-cicd-delivery
+          quote: "- Implemented **CI/CD pipelines** that shortened release cycles\
+            \ and improved delivery\n  consistency across services."
+        consequence:
+          evidence_id: airslate-cicd-delivery
+          quote: "- Implemented **CI/CD pipelines** that shortened release cycles\
+            \ and improved delivery\n  consistency across services."
+    - document: cv
+      text: Improved API response times by identifying and optimizing backend performance
+        bottlenecks and directing the work as backend lead.
+      evidence_ids:
+      - airslate-user-confirmed-impact
+      support:
+        contribution:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        scope:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        consequence:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+    - document: cv
+      text: Brought the product from prototype to closed beta while leading backend
+        development for a creator-focused digital platform.
+      evidence_ids:
+      - cv-hyprr
+      support:
+        contribution:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        scope:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        consequence:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+    - document: cv
+      text: Defined the technology roadmap with the CTO and established the core delivery
+        stack, influencing microservice architecture and reliability decisions.
+      evidence_ids:
+      - cv-hyprr
+      support:
+        contribution:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        scope:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        consequence:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+    - document: cv
+      text: Backend engineer with experience designing and operating Go services,
+        production integrations and event-driven systems.
+      evidence_ids:
+      - support-platform-linkedin
+      - crurated-analytics
+      support:
+        contribution:
+          evidence_id: support-platform-linkedin
+          quote: 'I design and own a support automation platform that connects Zendesk,
+            Intercom, and
+
+            internal services through a robust, scalable backend in Go. My work enables
+            the support
+
+            team to operate faster, smarter, and at scale - even during peak loads.'
+        scope:
+          evidence_id: support-platform-linkedin
+          quote: 'I design and own a support automation platform that connects Zendesk,
+            Intercom, and
+
+            internal services through a robust, scalable backend in Go. My work enables
+            the support
+
+            team to operate faster, smarter, and at scale - even during peak loads.'
+        consequence:
+          evidence_id: support-platform-linkedin
+          quote: 'I design and own a support automation platform that connects Zendesk,
+            Intercom, and
+
+            internal services through a robust, scalable backend in Go. My work enables
+            the support
+
+            team to operate faster, smarter, and at scale - even during peak loads.'
+    - document: cv
+      text: MSc in Computer Science
+      evidence_ids:
+      - candidate-education-languages
+      support:
+        contribution:
+          evidence_id: candidate-education-languages
+          quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+            \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n\
+            - **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+        scope:
+          evidence_id: candidate-education-languages
+          quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+            \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n\
+            - **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+        consequence:
+          evidence_id: candidate-education-languages
+          quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+            \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n\
+            - **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+    - document: cv
+      text: Ukrainian — native; English — Upper-intermediate
+      evidence_ids:
+      - candidate-education-languages
+      support:
+        contribution:
+          evidence_id: candidate-education-languages
+          quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+            \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n\
+            - **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+        scope:
+          evidence_id: candidate-education-languages
+          quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+            \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n\
+            - **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+        consequence:
+          evidence_id: candidate-education-languages
+          quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+            \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n\
+            - **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+    - document: cv
+      text: 'Languages and APIs: Go, PHP, REST APIs, OpenAPI'
+      evidence_ids:
+      - candidate-supported-backend-skills
+      - simple-confirmed-2026-stack
+      support:
+        contribution:
+          evidence_id: candidate-supported-backend-skills
+          quote: '### Languages
+
+
+            - Go
+
+            - PHP
+
+
+            ### Frameworks
+
+
+            - Laravel
+
+            - Symfony
+
+
+            ### Infrastructure
+
+
+            - AWS
+
+            - Kubernetes
+
+            - RabbitMQ
+
+
+            ### Databases
+
+
+            - MySQL
+
+            - PostgreSQL
+
+            - Elasticsearch
+
+
+            ### Architecture
+
+
+            - Microservices
+
+            - Event-driven systems
+
+
+            ### Messaging Systems
+
+
+            - Email delivery infrastructure
+
+            - DNS / DKIM / SPF / DMARC
+
+
+            ### Observability
+
+
+            - Prometheus
+
+            - Monitoring & logging
+
+
+            ### CI/CD
+
+
+            - GitHub Actions
+
+            - ArgoCD
+
+            - Helm
+
+
+            ### Engineering
+
+
+            - System design
+
+            - Performance optimization
+
+            - Production reliability
+
+
+            ### AI / Automation
+
+
+            - OpenAI APIs
+
+            - LLM automation systems'
+        scope:
+          evidence_id: candidate-supported-backend-skills
+          quote: '### Languages
+
+
+            - Go
+
+            - PHP
+
+
+            ### Frameworks
+
+
+            - Laravel
+
+            - Symfony
+
+
+            ### Infrastructure
+
+
+            - AWS
+
+            - Kubernetes
+
+            - RabbitMQ
+
+
+            ### Databases
+
+
+            - MySQL
+
+            - PostgreSQL
+
+            - Elasticsearch
+
+
+            ### Architecture
+
+
+            - Microservices
+
+            - Event-driven systems
+
+
+            ### Messaging Systems
+
+
+            - Email delivery infrastructure
+
+            - DNS / DKIM / SPF / DMARC
+
+
+            ### Observability
+
+
+            - Prometheus
+
+            - Monitoring & logging
+
+
+            ### CI/CD
+
+
+            - GitHub Actions
+
+            - ArgoCD
+
+            - Helm
+
+
+            ### Engineering
+
+
+            - System design
+
+            - Performance optimization
+
+            - Production reliability
+
+
+            ### AI / Automation
+
+
+            - OpenAI APIs
+
+            - LLM automation systems'
+        consequence:
+          evidence_id: candidate-supported-backend-skills
+          quote: '### Languages
+
+
+            - Go
+
+            - PHP
+
+
+            ### Frameworks
+
+
+            - Laravel
+
+            - Symfony
+
+
+            ### Infrastructure
+
+
+            - AWS
+
+            - Kubernetes
+
+            - RabbitMQ
+
+
+            ### Databases
+
+
+            - MySQL
+
+            - PostgreSQL
+
+            - Elasticsearch
+
+
+            ### Architecture
+
+
+            - Microservices
+
+            - Event-driven systems
+
+
+            ### Messaging Systems
+
+
+            - Email delivery infrastructure
+
+            - DNS / DKIM / SPF / DMARC
+
+
+            ### Observability
+
+
+            - Prometheus
+
+            - Monitoring & logging
+
+
+            ### CI/CD
+
+
+            - GitHub Actions
+
+            - ArgoCD
+
+            - Helm
+
+
+            ### Engineering
+
+
+            - System design
+
+            - Performance optimization
+
+            - Production reliability
+
+
+            ### AI / Automation
+
+
+            - OpenAI APIs
+
+            - LLM automation systems'
+    - document: cover-letter
+      text: One useful example is a vendor-neutral helpdesk gateway I built in Go.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+    - document: cover-letter
+      text: My production work has included end-to-end backend and security decisions
+        for a telephony platform, and technical ownership of event analytics and parallel
+        event-version publication.
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      - crurated-confirmed-datalake-production
+      - crurated-confirmed-event-version-production
+    - document: analysis
+      text: The candidate has direct Go integration and production-ownership evidence,
+        with transferable event-contract experience.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      - crurated-event-design
+    - document: interview-preparation
+      text: CRURATED was concurrent part-time consulting, not another full-time position.
+      evidence_ids:
+      - clarification-crurated
+    - document: cv
+      text: I have built vendor-neutral helpdesk infrastructure
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      support:
+        contribution:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+        scope:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+        consequence:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+    - document: cv
+      text: carries changes through implementation, security review and production
+        delivery.
+      evidence_ids:
+      - simple-2026-telephony-privacy
+      support:
+        contribution:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+        scope:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+        consequence:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+  declaration_sha256: sha256:fc7438cf5933185cf583b22a524db63c029ceadc985fb8019b90f09615f6bc4a
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+    cover_letter:
+      channel: attachment
+      skill: write-cover-letter
+      version: 19.0.0+codex.20261015154707
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://www.dremio.com/
+  handoffs:
+    research.md:
+      word_count: 200
+      sha256: sha256:0622fee565b2a976662cce0511143d35f4ad366efe98a19d36da8d1efb8cf3fa
+    evidence-map.md:
+      word_count: 954
+      sha256: sha256:f06b08ca9dbf88aa7c741a19eb1e0a8eb90bf349ca60b03e7415031a25d73b89
+    requirements-risks.md:
+      word_count: 328
+      sha256: sha256:6f588fd615d1b4d60076c5ead16ee8cbdfc8521c2c214c286c67f89c7886447b
+  exports:
+    cv:
+      schema_version: 1
+      source_file: cv.md
+      artifact_file: cv.docx
+      source_sha256: 0fd5b718dee6a5793345304076cbc1698860b846700360febc1677327fb5f0e4
+      artifact_sha256: 6fab1db7a7621395368f6f561b3c6edeb482923bd46064b2634c239cc0c264e6
+      extracted_text_sha256: 4da5f08617a306ac26bbcd232bda40440ace414ba3c336efc5f684f4efe016eb
+      canonical_tokens: 516
+      extracted_tokens: 516
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        cv_experience_list_formatting: verified
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 39
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: reviewed
+        artifact_sha256: 6fab1db7a7621395368f6f561b3c6edeb482923bd46064b2634c239cc0c264e6
+        reviewer: /root
+        reviewed_at: '2026-10-19T18:48:26.084550+00:00'
+        checks:
+          blank_pages: true
+          overflow: true
+          page_breaks: true
+          readability: true
+        method: recorded reviewer attestation; not an automated visual judgment
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+      preview_reused: true
+    cover-letter:
+      schema_version: 1
+      source_file: cover-letter.md
+      artifact_file: cover-letter.docx
+      source_sha256: 70eed27eb73c208510a2b0cca732c6cdfeef90bbc82e271a91255bd2b83f728f
+      artifact_sha256: 7a6baa32e3089c9afa808585c576fc5b41425d122c90667dc58ed5b60295b04d
+      extracted_text_sha256: b905239d6c8fe290aa46ac326c696844e98996dd5f847b8a521114838fe73aa1
+      canonical_tokens: 360
+      extracted_tokens: 360
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        cv_experience_list_formatting: not_checked
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 7
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: 7a6baa32e3089c9afa808585c576fc5b41425d122c90667dc58ed5b60295b04d
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+files:
+- CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity.docx
+- CV_ValentinNikolaev_dremio_StaffSoftwareEngineerConnectivity.md
+- analysis.md
+- cover-letter.docx
+- cover-letter.md
+- cv.docx
+- cv.md
+- interview-preparation.md

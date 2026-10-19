@@ -884,6 +884,26 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertIn("Backend Engineer", result["cv_markdown"])
 
+    def test_cv_headline_accepts_go_among_alternative_languages(self) -> None:
+        payload = application_payload()
+        payload["cv_markdown"] = payload["cv_markdown"].replace(
+            "# Candidate\nBackend Engineer", "# Candidate\nBackend Engineer - Go", 1
+        )
+
+        result = validate_application_package(
+            payload,
+            vacancy={"metadata": {"title": "Staff Software Engineer - Python, Java / Spring or Go"}},
+        )
+
+        self.assertIn("Backend Engineer - Go", result["cv_markdown"])
+
+    def test_cv_headline_rejects_generic_title_for_go_vacancy(self) -> None:
+        with self.assertRaisesRegex(ApplicationError, "headline is not aligned"):
+            validate_application_package(
+                application_payload(),
+                vacancy={"metadata": {"title": "Staff Software Engineer - Go"}},
+            )
+
     def test_cv_experience_rejects_employment_older_than_ten_years(self) -> None:
         payload = application_payload()
         payload["cv_markdown"] = payload["cv_markdown"].replace(

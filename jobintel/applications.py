@@ -1638,7 +1638,7 @@ def _headline_terms(value: str) -> list[str]:
     terms: list[str] = []
     seen: set[str] = set()
     for token in re.findall(r"[A-Za-z0-9]+", value.casefold()):
-        if len(token) < 3 or token in _ROLE_LOCATION_TERMS or token in _ROLE_NOISE_TERMS:
+        if (len(token) < 3 and token != "go") or token in _ROLE_LOCATION_TERMS or token in _ROLE_NOISE_TERMS:
             continue
         if token not in seen:
             terms.append(token)
