@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 52
+Total vacancies: 58
 
-- Found: 30
+- Found: 36
 - Applied: 18
 - Interview: 3
 - Rejected: 1
@@ -13,6 +13,12 @@ Total vacancies: 52
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-19 | [Proxify AB](../registry/jobs/20261019_proxify-ab_6aff5b78209346b886d6555162852bc9/) | [Senior Magento Developer](../registry/jobs/20261019_proxify-ab_6aff5b78209346b886d6555162852bc9/job.md) | Anywhere in the World, Stockholm | Weworkremotely | Found | 2026-10-19 | [Weworkremotely](https://weworkremotely.com/remote-jobs/proxify-ab-senior-magento-developer-5) | — | — | — | — | — |
+| 2026-10-19 | [Proxify AB](../registry/jobs/20261019_proxify-ab_122ed59c55c84b7da88369768d168c75/) | [Senior Platform Engineer](../registry/jobs/20261019_proxify-ab_122ed59c55c84b7da88369768d168c75/job.md) | Anywhere in the World, Stockholm | Weworkremotely | Found | 2026-10-19 | [Weworkremotely](https://weworkremotely.com/remote-jobs/proxify-ab-senior-platform-engineer-1) | — | — | — | — | — |
+| 2026-10-19 | [N-iX](../registry/jobs/20261019_n-ix_e1c75a704803408e910ae9b44193f646/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5828)](../registry/jobs/20261019_n-ix_e1c75a704803408e910ae9b44193f646/job.md) | Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено | Dou | Found | 2026-10-19 | [Dou](https://jobs.dou.ua/companies/n-ix/vacancies/377074/) | [Open](../registry/jobs/20261019_n-ix_e1c75a704803408e910ae9b44193f646/company.md) | — | — | — | — |
+| 2026-10-19 | [New Wave Devs](../registry/jobs/20261019_new-wave-devs_d0fb3d82724e43b3a74676e3cf90ba8c/) | [Senior Backend Engineer (Go), product team](../registry/jobs/20261019_new-wave-devs_d0fb3d82724e43b3a74676e3cf90ba8c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853963-senior-backend-engineer-go-product-team/) | — | — | — | — | — |
+| 2026-10-19 | [alpview it service](../registry/jobs/20261019_alpview-it-ser_5d653ccdc17c41b4ac6429756c805f4c/) | [Senior PHP / Laravel Engineer — AI-native team with Claude Code (long-term)](../registry/jobs/20261019_alpview-it-ser_5d653ccdc17c41b4ac6429756c805f4c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853872-senior-php-laravel-engineer-ai-native-team-wi/) | — | — | — | — | — |
+| 2026-10-19 | [Dinarys](../registry/jobs/20261019_dinarys_2f6f2cc302794877b63f087174b868ec/) | [AI Technical Lead (PHP)](../registry/jobs/20261019_dinarys_2f6f2cc302794877b63f087174b868ec/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/848947-ai-technical-lead-php/) | — | — | — | — | — |
 | 2026-10-18 | [Bloomreach](../registry/jobs/20261018_bloomreach_e35451f2b8f34668bc8f9617a1863c39/) | [Staff Software Engineer - Python, Java / Spring or Go](../registry/jobs/20261018_bloomreach_e35451f2b8f34668bc8f9617a1863c39/job.md) | Europe | Jobicy | Found | 2026-10-18 | [Jobicy](https://jobicy.com/jobs/155731-staff-software-engineer-python-java-spring-or-go) | — | — | — | — | — |
 | 2026-10-18 | [Dremio](../registry/jobs/20261018_dremio_4e1c3b18e4774cb7b4a8151be1b764cd/) | [Staff Software Engineer - Connectivity](../registry/jobs/20261018_dremio_4e1c3b18e4774cb7b4a8151be1b764cd/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-10-18 | [Weworkremotely](https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity) | — | — | — | — | — |
 | 2026-10-18 | [PlanetScale](../registry/jobs/20261018_planetscale_369d17199167495fa81d2ed35f32de4b/) | [Enterprise Support Engineer](../registry/jobs/20261018_planetscale_369d17199167495fa81d2ed35f32de4b/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-10-18 | [Weworkremotely](https://weworkremotely.com/remote-jobs/planetscale-enterprise-support-engineer) | — | — | — | — | — |
