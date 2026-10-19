@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 58
+Total vacancies: 59
 
-- Found: 36
+- Found: 37
 - Applied: 18
 - Interview: 3
 - Rejected: 1
@@ -13,9 +13,10 @@ Total vacancies: 58
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-19 | [Proxify AB](../registry/jobs/20261019_proxify-ab_6aff5b78209346b886d6555162852bc9/) | [Senior Magento Developer](../registry/jobs/20261019_proxify-ab_6aff5b78209346b886d6555162852bc9/job.md) | Anywhere in the World, Stockholm | Weworkremotely | Found | 2026-10-19 | [Weworkremotely](https://weworkremotely.com/remote-jobs/proxify-ab-senior-magento-developer-5) | — | — | — | — | — |
-| 2026-10-19 | [Proxify AB](../registry/jobs/20261019_proxify-ab_122ed59c55c84b7da88369768d168c75/) | [Senior Platform Engineer](../registry/jobs/20261019_proxify-ab_122ed59c55c84b7da88369768d168c75/job.md) | Anywhere in the World, Stockholm | Weworkremotely | Found | 2026-10-19 | [Weworkremotely](https://weworkremotely.com/remote-jobs/proxify-ab-senior-platform-engineer-1) | — | — | — | — | — |
-| 2026-10-19 | [N-iX](../registry/jobs/20261019_n-ix_e1c75a704803408e910ae9b44193f646/) | [Senior/ Lead PHP Engineer (with AI Skills) (#5828)](../registry/jobs/20261019_n-ix_e1c75a704803408e910ae9b44193f646/job.md) | Київ, Львів, Дніпро, Вінниця, Івано-Франківськ, Тернопіль, віддалено | Dou | Found | 2026-10-19 | [Dou](https://jobs.dou.ua/companies/n-ix/vacancies/377074/) | [Open](../registry/jobs/20261019_n-ix_e1c75a704803408e910ae9b44193f646/company.md) | — | — | — | — |
+| 2026-10-19 | [AMS Accelerate IT](../registry/jobs/20261019_ams-accelerate_a3bc1bda353b4bbbb272e7c39ee69e53/) | [Senior Backend Engineer](../registry/jobs/20261019_ams-accelerate_a3bc1bda353b4bbbb272e7c39ee69e53/job.md) | Worldwide | Himalayas | Found | 2026-10-19 | [Himalayas](https://himalayas.app/companies/ams-accelerate-it/jobs/senior-backend-engineer?utm_source=api) | — | — | — | — | — |
+| 2026-10-19 | [TrueLabel](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/) | [Senior PHP Software Engineer (Payments)](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-19 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377139/) | [Open](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/company.md) | — | — | — | — |
+| 2026-10-19 | [Hamsters.pro](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/) | [Middle PHP Developer (CRM / CPA / Integrations)](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853984-middle-php-developer-crm-cpa-integrations/) | — | — | — | — | — |
+| 2026-10-19 | [Hunt.IT Recruitment](../registry/jobs/20261019_hunt-it-recrui_4ead6da5a3e640af9e0328ded1b270d0/) | [Back-End Developer](../registry/jobs/20261019_hunt-it-recrui_4ead6da5a3e640af9e0328ded1b270d0/job.md) | EU | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/854069-back-end-developer/) | — | — | — | — | — |
 | 2026-10-19 | [New Wave Devs](../registry/jobs/20261019_new-wave-devs_d0fb3d82724e43b3a74676e3cf90ba8c/) | [Senior Backend Engineer (Go), product team](../registry/jobs/20261019_new-wave-devs_d0fb3d82724e43b3a74676e3cf90ba8c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853963-senior-backend-engineer-go-product-team/) | — | — | — | — | — |
 | 2026-10-19 | [alpview it service](../registry/jobs/20261019_alpview-it-ser_5d653ccdc17c41b4ac6429756c805f4c/) | [Senior PHP / Laravel Engineer — AI-native team with Claude Code (long-term)](../registry/jobs/20261019_alpview-it-ser_5d653ccdc17c41b4ac6429756c805f4c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853872-senior-php-laravel-engineer-ai-native-team-wi/) | — | — | — | — | — |
 | 2026-10-19 | [Dinarys](../registry/jobs/20261019_dinarys_2f6f2cc302794877b63f087174b868ec/) | [AI Technical Lead (PHP)](../registry/jobs/20261019_dinarys_2f6f2cc302794877b63f087174b868ec/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/848947-ai-technical-lead-php/) | — | — | — | — | — |
