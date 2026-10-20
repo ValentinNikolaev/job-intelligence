@@ -6,6 +6,10 @@ A minimal local-first collector that turns source-specific vacancies into one hu
 Source API → collector → normalized job → deduplication → registry/jobs → registry/index.md
 ```
 
+The [phased account-configuration migration plan](docs/multiaccount-migration-plan.md)
+tracks completed and pending work. Its first iteration preserves the current
+single-account flow and MongoDB storage; a second account is connected last.
+
 The current MVP implements Adzuna, Arbeitnow, CleanJobData, DOU, Himalayas,
 Jobicy, Jobspresso, Jooble, We Work Remotely, public Ashby and Greenhouse
 job-board collectors, and custom company-board monitoring.
