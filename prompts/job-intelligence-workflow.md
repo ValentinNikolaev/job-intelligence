@@ -51,8 +51,13 @@ separate user-gated action.
    publish it only with `python run.py add-manual --input <draft.yaml>`.
 3. Keep the run scoped to the newly published vacancy. Do not select `all` and do not
    compare it with another vacancy.
-4. If no current match exists, evaluate this vacancy independently, write one result
-   draft under `.codex-work/manual-analysis/`, and publish it directly with
+4. If no current match exists, export one sealed input using
+   `python run.py analyze <directory> --pack .codex-work/manual-analysis/pack.yaml
+   --workflow analyze [--model-profile <profile>]`. Evaluate this vacancy independently
+   from the pack's current prompt, matching-policy snapshot, candidate evidence and
+   vacancy. Copy the entire pack unchanged to a draft under `.codex-work/manual-analysis/`
+   and add one exact directory-keyed `results` value. Preserve its input payloads,
+   versions and `pack_sha256`, then publish directly with
    `python run.py analyze <directory> --input <draft.yaml> --workflow analyze
    [--model-profile <profile>]`. Do not run triage, `pending analyze all`,
    `analyze-batch`, or another queue command in this mode.
@@ -60,6 +65,8 @@ separate user-gated action.
    Preserve its actual model label and score alongside the preparation model. If the
    match is missing or stale, run a real analysis in an allowed analysis task; never
    change only the stored model label or reuse a stale judgment as if it were new.
+   A result-only draft cannot be published. Changed prompt, policy, candidate or
+   vacancy inputs require a new sealed pack and fresh Codex judgment.
 5. Do not prepare merely because the score meets `prepare_min_score`. Prepare only
    when the user has explicitly asked to prepare this vacancy or has clearly approved
    preparation after intake/analysis. The approval must identify the vacancy by ID,

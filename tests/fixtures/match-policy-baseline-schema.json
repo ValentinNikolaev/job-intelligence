@@ -1,0 +1,68 @@
+{
+  "type": "object",
+  "properties": {
+    "score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "recommendation": {
+      "type": "string",
+      "enum": [
+        "strong_match",
+        "match",
+        "possible_match",
+        "weak_match",
+        "not_match"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "concerns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hard_rejection": {
+      "type": "boolean"
+    },
+    "hard_rejection_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "requirements": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "score",
+    "recommendation",
+    "summary",
+    "strengths",
+    "gaps",
+    "concerns",
+    "hard_rejection",
+    "hard_rejection_reason"
+  ],
+  "additionalProperties": false
+}

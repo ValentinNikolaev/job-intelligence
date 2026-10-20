@@ -71,8 +71,9 @@ current Codex surface, tell the user and do not publish under that profile.
    source files, and the relevant prompt. Handle one selected vacancy at a time and do
    not compare vacancies or reuse vacancy-specific research, keywords, or draft content.
    For scheduled analysis, read only the sealed input pack and the batch prompt. For a
-   manual vacancy, read only that selected directory, its configured candidate evidence,
-   and `prompts/vacancy-match.md`. In either mode, do not compare vacancies or read
+   manual vacancy, export only its named single-item pack with `analyze --pack` and
+   read that pack's prompt, matching policy, candidate evidence and vacancy. Keep its
+   payloads and hashes unchanged when adding results. In either mode, do not compare vacancies or read
    another vacancy's artifacts.
 2. Write model-produced drafts only under `.codex-work/`; the directory is ignored by Git.
 3. When a cover letter is selected, require `$write-cover-letter` from the highest installed version of

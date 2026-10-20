@@ -19,17 +19,19 @@ account remain outside this authorization.
 
 ## Progress and maintenance
 
-Phases 0-2 are complete and independently reviewed: deterministic consumers use the
-validated policy, baseline parity is preserved and stale triage is evaluated read-only.
-Phases 0-1 are published; phase-2 publication is the next coordinator action. Phase 3
-has not started.
+Phases 0-2 are complete, published and independently reviewed. Phase 3 is in progress:
+analysis preferences, shared freshness and sealed Codex drafts passed core review and
+both independent semantic gates. Full MongoDB verification and architecture review
+passed. The final three-view council and anonymized peer review approved the bounded
+implementation for publication in draft PR 2. Phase 3 remains in progress until clean
+published-worktree review R6 and CI on the exact published commit pass.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
 | 0 | Inventory and behavioral baseline | None | Done |
 | 1 | Validated configuration for existing selection rules | 0 | Done |
 | 2 | Configuration-driven prefilter and triage | 1 | Done |
-| 3 | Configurable match-analysis preferences | 2 | Not started |
+| 3 | Configurable match-analysis preferences | 2 | In progress |
 | 4 | Candidate-independent document preparation | 3 | Not started |
 | 5 | Explicit account description with one live account | 4 | Not started |
 | 6 | Second account in an isolated environment | 5 | Not started |
@@ -170,23 +172,57 @@ by normal operation remain real history and must not be discarded.
 
 Tasks:
 
-- [ ] Extract candidate-specific scoring preferences from `prompts/vacancy-match.md`:
+- [x] Extract candidate-specific scoring preferences from `prompts/vacancy-match.md`:
   technology and role preferences, Rome, relocation, support/email domains and
   timezone compatibility. Preserve the distinction between preferences and blockers.
-- [ ] Supply a deterministic, versioned policy snapshot to individual and sealed-batch
+- [x] Supply a deterministic, versioned policy snapshot to individual and sealed-batch
   analysis. Keep semantic evaluation inside Codex and source text as data.
-- [ ] Run the required [blind editorial evaluation](../prompts/editorial-evaluation.md)
+- [x] Run the required [blind editorial evaluation](../prompts/editorial-evaluation.md)
   before changing application prompts or editorial policy; record its evidence.
-- [ ] Bind match freshness to the relevant effective inputs using the existing
+- [x] Bind match freshness to the relevant effective inputs using the existing
   versioning contract where possible. Changing notification settings must not stale
   a match; changing scoring preferences must be detected.
-- [ ] Define compatibility for existing matches explicitly. Preserve original model,
+- [x] Define compatibility for existing matches explicitly. Preserve original model,
   score, prompt/profile provenance and legacy receipts; never relabel old judgments.
-- [ ] Test analysis and preparation-preflight freshness consistently. Avoid automatic
+- [x] Test analysis and preparation-preflight freshness consistently. Avoid automatic
   mass reanalysis and distinguish input-version changes from semantic policy changes.
 
 Acceptance gate: personal analysis preferences come from configuration, changed
 inputs invalidate the right results, and evaluation supports the intended behavior.
+
+Working-tree evidence: [matching policy and sealed analysis](matching-policy.md),
+strict qualitative policy loader, shared runtime effective-input identity and actual
+payload-bound schema-2 drafts. Targeted unit and real-MongoDB checks exercise current
+and stale inputs without rewriting original judgments. R5 core review approved the
+corrected publication boundaries. Actual blind matching evaluation passed and its
+exact effective identity is pinned for legacy compatibility. Fresh independent
+editorial evaluation passed 10/10 after bounded fixture clarification. Final full
+MongoDB verification passed 782 tests without skips; core post-pin and architecture
+R5a reviews approved. Final council and peer review accepted the local implementation
+and gates for publication; phase 3 is `In progress`. Publication, clean R6 review and
+exact-commit CI are future steps.
+
+### Final council synthesis
+
+All three independent views (first principles, contrarian and a fresh executor) and
+the anonymized peer review approved bounded publication, with no confirmed must-fix
+or material code disagreement. Explicit configuration, shared freshness, sealed
+inputs and the exact legacy-version pairing fit phases 0-3; account infrastructure
+and phases 4-6 remain deferred. The fresh executor independently passed 67 focused
+tests in 79.035 seconds, separately from the coordinator's 782-test full suite.
+
+The weakest accepted evidence is one masked matching reviewer and a small synthetic
+corpus. Identical variant judgments do not prove broad numeric stability or hiring
+effects. Recomputing a receipt checks bindings; it is not independent semantic
+corroboration. The editorial fixture clarification does not establish that the
+original omission judgment was wrong. Underlying semantic artifacts remain ignored;
+the coordinator will preserve the exact current packs, decisions and receipts, copy
+them into the clean R6 checkout and revalidate them through R6 and CI.
+
+The next action is reviewed finalizer publication into draft PR 2, followed by clean
+R6 and CI on the exact published commit. Finalizer refusal, changed bindings or
+integrated code, R6 defects or CI failures require reassessment. Phase 3 will be
+marked done only after those gates actually pass, in a final documentation increment.
 
 ## Phase 4: candidate-independent document preparation
 
@@ -288,3 +324,10 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Completed the phase-2 working-tree cutover: explicit immutable policy at collection/triage/pending/API/skipped-archive boundaries; shared pure triage with policy/recognition/current-input version binding; read-only stale/legacy refresh; policy-efficacy and side-effect regression tests, including real-MongoDB receipt/revision preservation. Updated integration fixtures and preserved source/CLI/storage contracts. | `JOBINTEL_TEST_MONGODB_URI` set only to the disposable local replica set; targeted selection/prefilter/triage/API/archive/CLI/storage-bridge suite passed 106 tests in 21.365 seconds with no skips. Independent review and full release checks remain pending, so phase 2 is in progress. Source-side relevance extraction is explicitly deferred before second-account onboarding; phase 3 remains unstarted. |
 | 2026-10-20 | Review R3 identified CR-002: a positive million-day age setting passed schema validation but constructing the datetime cutoff overflowed after collection fetched rows. Replaced cutoff subtraction with exact integer elapsed-microsecond comparison; positive configuration integers remain supported, including values beyond floating-point range. Added million-day/1,001-digit policy and explicit-override regressions, one-microsecond cutoff cases and a dated-row collection regression. | Coordinator's pre-correction full MongoDB suite passed 723 tests in 121.885 seconds with no skips. After correction, selection-runtime/baseline/prefilter/CLI targeted checks passed 57 tests in 3.204 seconds; `git diff --check` passed. Final full checks and independent re-review of CR-002 remain pending. Phase 2 remains in progress; no phase-3 changes or production operations. |
 | 2026-10-20 | Review R3 approved the corrected phase-2 increment and closed CR-002. Coordinator accepted phase 2 and marked it done. | Reviewer independently passed 43 focused tests and confirmed that restoring old cutoff subtraction in memory causes two expected `OverflowError` regression failures. Final post-correction `python -m unittest discover -v` with the disposable MongoDB replica set passed 725 tests in 136.660 seconds with no skips. API-prohibition unit check, explicit runtime/configuration API search, local Markdown-link checks and `git diff --check` passed. Catalog inputs remain unchanged. Publication remains the coordinator's next step; phase 3 is unstarted. |
+| 2026-10-20 | Published phase 2 as commit `d5711331d032c38d27d995ee6a820f7cdfef8c0c` in PR 2. Cumulative review R4 approved the clean published worktree. Started phase 3 with separate matching policy, runtime effective-input identity, shared freshness, sealed individual/batch Codex drafts and the bounded semantic-evaluation gate. | R4 independently passed 90 tests and verified a negative control caused four expected failures before restoring the passing control. Phase 3 is in progress; semantic evaluation and acceptance remain pending. No later-phase account work, model endpoint calls or production operations. |
+| 2026-10-20 | Implemented phase-3 runtime policy/context, shared freshness and schema-2 payload sealing for direct/CLI single and batch publication. Added strict policy and negative integrity tests, real unpatched preparation freshness, file/MongoDB snapshot parity and fail-before-side-effect checks. Updated source/distributed manual workflow and scheduled contracts; integrated the independently developed synthetic scoring evaluator/finalizer gate through its separate file owner. | Combined targeted disposable-MongoDB suite passed 113 tests in 17.001 seconds with no skips; one additional real-MongoDB preflight/snapshot policy-change regression passed in 0.825 seconds. Seal/policy/matching/workflow-contract checks passed 55 tests in 5.076 seconds with no skips after adding a Windows junction fallback for actual link-escape coverage. Runtime/prompt review R5 is underway. The legacy bridge remains disabled until the exact reviewed effective identity passes actual independent semantic evaluation; no approval is inferred from fixture tests. |
+| 2026-10-20 | R5 requested CR-005/006 corrections after 57 independent focused tests: public raw-result publication could assign current provenance to old analysis; a resealed source URL could enter notifications. Required complete sealed input at the public single-publication boundary and canonical source-URL comparison for every batch item before writes. Added valid public-single and forced/raw/copied-label/last-item URL regressions. Separately owned finalizer retry/rebase findings CR-003/004 are undergoing architecture verification. | Corrected matching/seal/batch/storage-bridge checks passed 52 tests in 14.658 seconds against actual disposable MongoDB, no skips. In-memory negative controls produced four expected raw-publication subtest failures and one expected URL-binding failure; restored two-test control passed. Core fixes await independent R5 re-review. Frozen prompt/schema/policy inputs are undergoing actual independent blind semantic/editorial evaluation; no legacy pin or phase-3 acceptance yet. |
+| 2026-10-20 | R5 core re-review approved CR-005/006 and closed both findings. Actual blind matching evaluation passed and coordinator reviewed all pair reasoning: 56 judgments, 28 comparison rows, zero ties/inversions and four hard rejections across two conflict types and two variants; no source-quote/band issues. Authorized exact production legacy pin `job-match-v2:sha256:936069737a4caa24ba6a39627dc3ef204e5bee92bf658d074f62be57028137c5`. | Decisions SHA-256 `91aeb564fcc6a843ad11167ddc239d3530aa4ab490ec940a216ec85a4135f3d9`; blind-pack SHA-256 `d2b16de239aa5c34fdd12ca82237c5b4fbae35de2d5717b5554e96c29154d71f`. One masked reviewer gave identical judgments for equivalent-policy variants; this does not establish independent numeric replication, variant-identity blindness or hiring effectiveness. Real-constant tests exercise current/legacy reuse and prompt/schema/policy/profile/job/model invalidation without rewriting receipts/history; targeted actual-MongoDB checks passed 58 tests in 14.738 seconds, no skips. Editorial, final full-suite and cumulative acceptance gates remain pending; phase 3 stays in progress. |
+| 2026-10-20 | Initial phase-3 editorial evaluation scored 9/10. The reviewer retained omission on adjudication because proposal-only evidence did not satisfy a production-experience requirement. Technical review identified ambiguity between CV selection and the intended delivery-stage grounding contract. Coordinator authorized the separate evaluator owner to clarify only that synthetic case's kind/requirement, leaving source, claim, curated disposition and production editorial policy unchanged. | A fresh independently evaluated ten-case export remains required; 10/10 is not claimed. Matching-evaluation inputs and its 56-judgment receipt remain unchanged. Finalizer retry/rebase/tie-gate review CR-003/004 remains independently pending at this checkpoint; phase 3 remains in progress. |
+| 2026-10-20 | Fresh independent editorial assessment passed 10/10; coordinator inspected every reason. The earlier 9/10 and defensible omission/adjudication remain recorded above. Core post-pin review approved without new findings. Architecture R5a re-review approved and closed CR-003/004 after 47 independent tests, five expected mutation failures and restored controls; actual matching receipt revalidated. | Editorial corpus SHA-256 `569ee2c6f5b55b9c8fa3e06030e239e11a26d52b0bff4627fc3bcd87a15e1ecc`, policy `222e61ce3544f70f9ef2b463c9b4c911ed5ac19cee11e39878e27d109e8665cd`, decisions `6c109f3db119d58f7b2626da7a6ab5dc01fc4309b9a82f08017d282943596555`. Final `python -m unittest discover -v` on Python 3.14.6 with disposable MongoDB 8 passed 782 tests in 127.566 seconds, no skips; API unit/search and diff checks passed. Two final council views approved bounded draft publication; the third view and anonymized peer review remain pending. Phase 3 stays in progress. Publication, clean R6 and exact-published-commit CI remain future steps. |
+| 2026-10-20 | Final council and anonymized peer review approved bounded publication with no confirmed must-fix; synthesis and accepted evidence limits recorded above. All three views agreed on phases 0-3 boundaries; phases 4-6 remain deferred. Fresh executor verification passed 67 focused tests in 79.035 seconds, independently of the coordinator's full suite. | Local implementation and gates are accepted for publication into draft PR 2. Exact ignored semantic packs/decisions/receipts will be preserved and revalidated in the clean review checkout. Receipt recomputation establishes bindings, not independent semantic corroboration; the one-reviewer synthetic evaluation remains limited. Phase 3 stays in progress pending actual finalizer publication, clean R6 and exact-published-SHA CI. |

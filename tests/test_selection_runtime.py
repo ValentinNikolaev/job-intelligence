@@ -135,7 +135,7 @@ class SelectionRuntimeTests(unittest.TestCase):
 
     def make_project(self, root: Path):
         (root / "config").mkdir()
-        for name in ("selection-policy.yaml", "codex-workflows.yaml"):
+        for name in ("selection-policy.yaml", "matching-policy.yaml", "codex-workflows.yaml"):
             (root / "config" / name).write_bytes((ROOT / "config" / name).read_bytes())
         (root / "prompts").mkdir()
         (root / "prompts/vacancy-match.md").write_text("Synthetic matching prompt", encoding="utf-8")

@@ -59,6 +59,9 @@ class WorkflowApiTests(unittest.TestCase):
         (self.project / "config/selection-policy.yaml").write_bytes(
             (Path(__file__).resolve().parents[1] / "config/selection-policy.yaml").read_bytes()
         )
+        (self.project / "config/matching-policy.yaml").write_bytes(
+            (Path(__file__).resolve().parents[1] / "config/matching-policy.yaml").read_bytes()
+        )
         (self.project / "config" / "codex-workflows.yaml").write_text(
             yaml.safe_dump(
                 {
@@ -84,7 +87,7 @@ class WorkflowApiTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.project / "prompts").mkdir()
-        (self.project / "prompts" / "vacancy-match.md").write_text("Match one vacancy.\n", encoding="utf-8")
+        (self.project / "prompts" / "vacancy-match.md").write_bytes((Path(__file__).resolve().parents[1] / "prompts/vacancy-match.md").read_bytes())
         (self.project / "prompts" / "vacancy-application.md").write_text("Prepare one vacancy.\n", encoding="utf-8")
         self.profile = self.project / "profile.md"
         self.profile.write_text("# Candidate\n\nBackend engineer using Go.\n", encoding="utf-8")

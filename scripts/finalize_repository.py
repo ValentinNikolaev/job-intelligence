@@ -23,11 +23,21 @@ REQUIRED_PROJECT_FILES = frozenset({
 })
 EDITORIAL_POLICY_PATHS = frozenset({
     'config/cv-editorial-knowledge.yaml', 'prompts/vacancy-application.md',
+    'config/matching-policy.yaml', 'prompts/vacancy-match.md',
     'docs/application-quality.md', 'docs/application-review-contract.md',
     '.agents/skills/job-intelligence-workflow/references/prepare.md',
     'prompts/job-intelligence-workflow.md', 'prompts/editorial-evaluation.md',
     'tests/fixtures/editorial-corpus.yaml',
 })
+MATCH_POLICY_PATHS = frozenset({
+    'config/matching-policy.yaml', 'prompts/vacancy-match.md',
+    'jobintel/matching_policy.py', 'jobintel/matching.py', 'jobintel/match_policy_eval.py',
+    'scripts/evaluate_match_policy.py', 'tests/fixtures/match-policy-corpus.yaml',
+    'tests/fixtures/match-policy-baseline-prompt.md', 'tests/fixtures/match-policy-baseline-schema.json',
+})
+EDITORIAL_EVALUATION_DEPENDENCIES = EDITORIAL_POLICY_PATHS | {
+    'jobintel/editorial_eval.py', 'jobintel/application_review.py',
+}
 
 
 def is_intended_telegram_outbox(path: str) -> bool:
@@ -48,6 +58,38 @@ def require_editorial_evaluation(root: Path, paths) -> None:
         raise FinalizationError('editorial policy changes require independent editorial decisions; run prompts/editorial-evaluation.md')
     command(sys.executable, 'run.py', 'editorial', 'evaluate', '--input', str(decisions),
             '--output', '.codex-work/editorial-receipt.json', cwd=root)
+
+
+def require_match_policy_evaluation(root: Path, paths) -> None:
+    if not MATCH_POLICY_PATHS.intersection(paths):
+        return
+    decisions = root / '.codex-work/match-policy-decisions.json'
+    if not decisions.is_file():
+        raise FinalizationError(
+            'match policy changes require independent match-policy decisions at '
+            '.codex-work/match-policy-decisions.json; run scripts/evaluate_match_policy.py export'
+        )
+    command(sys.executable, 'scripts/evaluate_match_policy.py', 'evaluate', '--input', str(decisions),
+            '--output', '.codex-work/match-policy-receipt.json', cwd=root)
+
+
+def evaluation_dependencies(paths) -> set[str]:
+    paths = set(paths)
+    dependencies = set()
+    if MATCH_POLICY_PATHS.intersection(paths):
+        dependencies.update(MATCH_POLICY_PATHS)
+    if EDITORIAL_POLICY_PATHS.intersection(paths):
+        dependencies.update(EDITORIAL_EVALUATION_DEPENDENCIES)
+    return dependencies - paths
+
+
+def require_unchanged_evaluation_dependencies(before: Mapping, after: Mapping, paths) -> None:
+    changed = sorted(path for path in evaluation_dependencies(paths) if before.get(path) != after.get(path))
+    if changed:
+        raise FinalizationError(
+            'remote changed evaluation dependencies; refresh the checkout, review and evaluate again: '
+            + ', '.join(changed)
+        )
 
 
 def require_complete_project_tree(entries: Mapping[str, str | None], *, label: str) -> None:
@@ -207,6 +249,7 @@ def review_committed(root: Path, *, branch: str | None = None) -> dict:
     )
     paths = changed_paths(root, "HEAD^", "HEAD")
     require_editorial_evaluation(root, paths)
+    require_match_policy_evaluation(root, paths)
     if not paths or any(EXCLUDED_PARTS.intersection(Path(path).parts) for path in paths):
         raise FinalizationError("commit has no reviewable project changes or includes local work")
     patch = git(root, "diff", "HEAD^", "HEAD", "--binary", "--full-index", "--no-ext-diff")
@@ -238,6 +281,7 @@ def verify_committed_review(root: Path) -> dict:
         raise FinalizationError("unpublished commit or checkout changed after API review")
     paths = changed_paths(root, "HEAD^", "HEAD")
     require_editorial_evaluation(root, paths)
+    require_match_policy_evaluation(root, paths)
     patch_path = root / ".codex-work" / "finalization" / "api-review.patch"
     if (index_entries(root, paths) != record["entries"] or not patch_path.is_file() or
             hashlib.sha256(patch_path.read_bytes()).hexdigest() != record["patch_sha256"]):
@@ -268,6 +312,8 @@ def publish_api(root: Path) -> dict[str, str]:
                         "remote_head": latest, "result": "published and verified by GitHub API"}
     paths = sorted(record["entries"])
     base_entries = tree_entries(root, record["parent"], paths)
+    dependencies = sorted(evaluation_dependencies(paths))
+    dependency_entries = tree_entries(root, record["parent"], dependencies) if dependencies else {}
     message = git(root, "log", "-1", "--format=%B").decode("utf-8").strip()
     blob_shas: dict[str, str] = {}
     for path, value in record["entries"].items():
@@ -285,6 +331,7 @@ def publish_api(root: Path) -> dict[str, str]:
         base_tree_sha = remote_commit["tree"]["sha"]
         remote_entries = api_tree(root, repo, base_tree_sha)
         require_complete_project_tree(remote_entries, label="remote base tree")
+        require_unchanged_evaluation_dependencies(dependency_entries, remote_entries, paths)
         overlap = sorted(path for path in paths if remote_entries.get(path) != base_entries[path])
         if overlap:
             raise FinalizationError("remote changed reviewed paths before API publication: " + ", ".join(overlap))
@@ -306,6 +353,8 @@ def publish_api(root: Path) -> dict[str, str]:
         attempt_path.write_text(json.dumps({"reviewed_commit": record["commit"],
                                             "repo": repo, "branch": branch,
                                             "created_commit": created_commit}, sort_keys=True) + "\n", encoding="utf-8")
+        require_editorial_evaluation(root, paths)
+        require_match_policy_evaluation(root, paths)
         try:
             if record.get("target_branch") and remote_branch_sha(root, repo, branch) is None:
                 gh_api(root, "POST", f"repos/{repo}/git/refs", {
@@ -360,6 +409,7 @@ def review(root: Path, *, branch: str | None = None) -> dict:
     git(root, "diff", "--cached", "--check")
     entries = reviewed_snapshot(root)
     require_editorial_evaluation(root, entries)
+    require_match_policy_evaluation(root, entries)
     require_complete_project_tree(
         index_entries(root, sorted(REQUIRED_PROJECT_FILES)),
         label="staged project tree",
@@ -397,6 +447,7 @@ def review(root: Path, *, branch: str | None = None) -> dict:
 
 def verify_review(root: Path, record: dict) -> None:
     require_editorial_evaluation(root, record['entries'])
+    require_match_policy_evaluation(root, record['entries'])
     if head(root) != record["base"]:
         raise FinalizationError("HEAD changed after review; review the complete diff again")
     if reviewed_snapshot(root) != record["entries"]:
@@ -432,10 +483,18 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
         if status(root) or git(root, "log", "-1", "--format=%s").decode().strip() != subject:
             raise FinalizationError("unpublished commit or local files changed; inspect before retrying")
         verify_commit_content(root, record["entries"])
+        require_editorial_evaluation(root, record["entries"])
+        require_match_policy_evaluation(root, record["entries"])
         base = git(root, "rev-parse", "HEAD^").decode().strip()
         repo, branch, remote = reviewed_remote_info(root, record)
+    dependencies = sorted(evaluation_dependencies(record["entries"]))
+    dependency_entries = tree_entries(root, record["base"], dependencies) if dependencies else {}
     for _ in range(4):
         fetch(root, remote)
+        if dependencies:
+            require_unchanged_evaluation_dependencies(
+                dependency_entries, tree_entries(root, remote, dependencies), record["entries"],
+            )
         if remote != base:
             if not ancestor(root, base, remote):
                 raise FinalizationError("remote branch no longer descends from reviewed base; inspect remote history")
@@ -445,6 +504,8 @@ def publish(root: Path, subject: str, body: str) -> dict[str, str]:
             git(root, "-c", "commit.gpgsign=false", "rebase", "--no-gpg-sign", remote)
             verify_commit_content(root, record["entries"])
         commit = head(root)
+        require_editorial_evaluation(root, record["entries"])
+        require_match_policy_evaluation(root, record["entries"])
         result = subprocess.run(["git", "-c", "core.longpaths=true", "push", "origin", f"HEAD:refs/heads/{branch}"], cwd=root, capture_output=True)
         if result.returncode == 0:
             verified = reviewed_remote_info(root, record)[2]

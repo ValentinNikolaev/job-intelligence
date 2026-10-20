@@ -46,7 +46,7 @@ class MatchingBatchTests(unittest.TestCase):
             second = registry.upsert(NormalizedJob("direct", "2", "https://e/2", "Backend Two", "Example", "Build APIs."))
             pack = build_analysis_pack(registry_root, [profile], limit=1, model="codex:test")
             analyzer = MatchAnalyzer(registry_root, [profile], type("Client", (), {"model": "codex:test"})())
-            publish_analysis_batch({"items": list(pack.items)}, {pack.items[0]["directory"]: payload(80)}, analyzer)
+            publish_analysis_batch(pack.to_dict(), {pack.items[0]["directory"]: payload(80)}, analyzer)
             next_pack = build_analysis_pack(registry_root, [profile], limit=1, model="codex:test")
             self.assertNotEqual(pack.items[0]["directory"], next_pack.items[0]["directory"])
             self.assertIn(next_pack.items[0]["directory"], {first.directory, second.directory})
@@ -89,7 +89,7 @@ class MatchingBatchTests(unittest.TestCase):
             pack = build_analysis_pack(registry_root, [profile])
             with self.assertRaises(Exception):
                 publish_analysis_batch(
-                    {"items": list(pack.items)},
+                    pack.to_dict(),
                     {},
                     MatchAnalyzer(registry_root, [profile], type("Client", (), {"model": "codex:test"})()),
                 )
@@ -112,10 +112,10 @@ class MatchingBatchTests(unittest.TestCase):
                 [profile],
                 type("Client", (), {"model": "codex:test"})(),
             )
-            publish_analysis_batch({"items": list(pack.items)}, results, analyzer)
+            publish_analysis_batch(pack.to_dict(), results, analyzer)
 
             with self.assertRaisesRegex(MatchError, "analysis pack is stale"):
-                publish_analysis_batch({"items": list(pack.items)}, results, analyzer)
+                publish_analysis_batch(pack.to_dict(), results, analyzer)
 
     def test_analysis_pack_orders_priority_vacancies_first(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -196,7 +196,7 @@ class MatchingBatchTests(unittest.TestCase):
             registry.update_status(created.vacancy_id, "applied")
 
             summary = publish_analysis_batch(
-                {"items": list(pack.items)},
+                pack.to_dict(),
                 {created.directory: payload(82)},
                 MatchAnalyzer(registry_root, [profile], type("Client", (), {"model": "codex:test"})()),
             )

@@ -77,6 +77,9 @@ class SelectionBaselineTests(unittest.TestCase):
             registry_root = project / "registry"
             (project / "config").mkdir()
             (project / "config/selection-policy.yaml").write_bytes((ROOT / "config/selection-policy.yaml").read_bytes())
+            (project / "config/matching-policy.yaml").write_bytes((ROOT / "config/matching-policy.yaml").read_bytes())
+            (project / "prompts").mkdir()
+            (project / "prompts/vacancy-match.md").write_bytes((ROOT / "prompts/vacancy-match.md").read_bytes())
             (project / "config/codex-workflows.yaml").write_bytes((ROOT / "config/codex-workflows.yaml").read_bytes())
             profile = registry_root / "candidate/match-profile.md"
             profile.parent.mkdir(parents=True)

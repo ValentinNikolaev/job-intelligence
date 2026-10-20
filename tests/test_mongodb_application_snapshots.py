@@ -104,6 +104,9 @@ class MongoApplicationSnapshotTests(unittest.TestCase):
         (self.registry / "candidate").mkdir(parents=True)
         (self.registry / "candidate" / "match-profile.md").write_text("Verified candidate evidence.", encoding="utf-8")
         (self.root / "config").mkdir()
+        (self.root / "config/matching-policy.yaml").write_bytes((Path(__file__).resolve().parents[1] / "config/matching-policy.yaml").read_bytes())
+        (self.root / "prompts").mkdir()
+        (self.root / "prompts/vacancy-match.md").write_bytes((Path(__file__).resolve().parents[1] / "prompts/vacancy-match.md").read_bytes())
         (self.root / "config" / "data-services.yaml").write_text(
             "storage:\n  backend: mongodb\n  cutover_verified: true\n", encoding="utf-8"
         )

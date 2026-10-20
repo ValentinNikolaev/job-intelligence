@@ -271,7 +271,7 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         created = self.registry.upsert(self._job())
         directory = self.temp / "registry" / "jobs" / created.directory
         analyzer = MatchAnalyzer(self.temp / "registry", [self.temp / "registry" / "candidate" / "match-profile.md"], _DraftClient())
-        analyzer.publish_analysis(directory, _analysis())
+        analyzer.analyze_directory(directory)
         self.assertTrue(analyzer.is_current(directory))
         ApiUsageLog(self.temp / "registry" / "source-api-usage.yaml").record(CollectorSummary(source="test", api_requests=2))
         self.assertFalse((self.temp / "registry" / "source-api-usage.yaml").exists())
@@ -395,6 +395,43 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         self.assertFalse(snapshot_should_skip(retitled, policy=policy))
         self.assertEqual(retitled, self.store.get("vacancies", created.vacancy_id))
 
+    def test_matching_policy_freshness_reaches_real_mongodb_preflight_and_snapshot_queue(self) -> None:
+        from types import SimpleNamespace
+        from jobintel.cli import _preflight_preparation
+        from jobintel.matching import current_matching_context
+        from jobintel.workflow_api import queue_response
+        from jobintel.workflows import load_workflow_policy
+
+        project = Path(__file__).resolve().parents[1]
+        for name in ("matching-policy.yaml", "selection-policy.yaml", "codex-workflows.yaml"):
+            (self.temp / "config" / name).write_bytes((project / "config" / name).read_bytes())
+        (self.temp / "prompts").mkdir()
+        (self.temp / "prompts/vacancy-match.md").write_bytes((project / "prompts/vacancy-match.md").read_bytes())
+        profile = self.temp / "registry/candidate/match-profile.md"
+        workflow = load_workflow_policy(self.temp / "config/codex-workflows.yaml")
+        client = SimpleNamespace(model=workflow.workflow("analyze").model_label,
+                                 analyze=lambda **kwargs: {**_analysis(), "recommendation": "strong_match"})
+        registry = Registry(self.temp / "registry", clock=lambda: datetime.now(timezone.utc), id_factory=lambda: "vacancy-1")
+        created = registry.upsert(self._job())
+        directory = self.temp / "registry/jobs" / created.directory
+        analyzer = MatchAnalyzer(self.temp / "registry", [profile], client, context=current_matching_context(self.temp))
+        analyzer.analyze_directory(directory)
+        original = self.store.get("vacancies", created.vacancy_id)
+        args = SimpleNamespace(arguments=[created.directory], workflow="prepare", model_profile=None, document="cv", profile=[profile],
+                               allow_low_score_cv_refresh=False, bypass_hard_rejection_cv_refresh=False)
+        report = _preflight_preparation(args, {}, self.temp, self.temp / "registry")
+        self.assertEqual("mongodb", report["backend"])
+        self.assertTrue(report["vacancies"][0]["ok"])
+        self.assertEqual([], queue_response("analyze", self.temp, self.temp / "registry", [profile])["items"])
+        path = self.temp / "config/matching-policy.yaml"
+        raw = yaml.safe_load(path.read_text(encoding="utf-8"))
+        path.write_text(yaml.safe_dump(raw | {"preferred_cities": ["Other"]}), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "match analysis is missing, stale"):
+            _preflight_preparation(args, {}, self.temp, self.temp / "registry")
+        rows = queue_response("analyze", self.temp, self.temp / "registry", [profile])["items"]
+        self.assertEqual([created.vacancy_id], [row["vacancy_id"] for row in rows])
+        self.assertEqual(original, self.store.get("vacancies", created.vacancy_id))
+
     def test_mongo_archive_retains_original_artifacts_without_unpublished_zip(self) -> None:
         from scripts.archive_jobs import archive
         created = self.registry.upsert(self._job())
@@ -403,7 +440,7 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         directory.mkdir(parents=True)
         (directory / "job.md").write_text("Frozen migration evidence", encoding="utf-8")
         analyzer = MatchAnalyzer(self.temp / "registry", [self.temp / "registry" / "candidate" / "match-profile.md"], _DraftClient())
-        analyzer.publish_analysis(directory, _analysis())
+        analyzer.analyze_directory(directory)
         original = (directory / "job.md").read_bytes()
         self.assertEqual(1, archive(self.temp, "low-score", 101))
         self.assertEqual(original, (directory / "job.md").read_bytes())

@@ -59,8 +59,10 @@ task context when deciding which vacancies are pending. Release the lock with
 While holding that token, create the pack with:
 `python run.py --workflow analyze pending analyze all --limit 15 --pack .codex-work/analyze-pack.yaml --env <primary-sources-.env>`.
 Treat that newly written pack as the only batch source for the current run. Evaluate
-every record independently and write the same metadata and items with a strict
-`results` mapping. Before publication, verify that the batch item directories and
+every record independently using the pack's prompt and matching-policy snapshot.
+Copy its full schema-2 envelope unchanged, including prompt, policy, output schema,
+profile/vacancy payloads, versions and `pack_sha256`, and add a strict `results` mapping.
+Before publication, verify that the batch item directories and
 result keys exactly match the current pack; never reuse items or results from an
 earlier run. Publish with `python run.py analyze-batch --input
 .codex-work/analyze-batch.yaml --workflow analyze --model-profile <selected-profile> --env <primary-sources-.env>`.

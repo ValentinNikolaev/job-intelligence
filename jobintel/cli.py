@@ -39,7 +39,9 @@ from .matching import (
     dump_analysis_pack,
     load_analysis_pack,
     publish_analysis_batch,
+    current_matching_context,
 )
+from .matching_policy import MatchingContext
 from .models import CollectorSummary, NormalizedJob
 from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
 from .selection_policy import DEFAULT_SELECTION_POLICY_PATH, SelectionPolicy, load_selection_policy
@@ -1068,9 +1070,10 @@ def _run_analysis(
     registry_dir: Path,
 ) -> int:
     try:
+        context = current_matching_context(project_root)
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "analysis:single", timeout_seconds=args.lock_timeout_seconds):
-            return _run_analysis_locked(args, config, project_root, registry_dir)
-    except WorkflowLockError as exc:
+            return _run_analysis_locked(args, config, project_root, registry_dir, context)
+    except (ValueError, OSError, WorkflowLockError) as exc:
         print(f"Analysis failed: {exc}", file=sys.stderr)
         return 1
 
@@ -1080,49 +1083,51 @@ def _run_analysis_locked(
     config: dict[str, str],
     project_root: Path,
     registry_dir: Path,
+    context: MatchingContext,
 ) -> int:
-    if len(args.arguments) != 1:
+    if len(args.arguments) != 1 or args.arguments[0].casefold() == "all":
         print(
             "Usage: python run.py analyze <job-directory|vacancy-id> --input <draft.yaml> "
             "--workflow analyze [--force]",
             file=sys.stderr,
         )
         return 2
-    if not args.input or not args.workflow:
-        print("analyze requires --input and --workflow analyze", file=sys.stderr)
+    if bool(args.input) == bool(args.pack) or not args.workflow:
+        print("analyze requires exactly one of --input or --pack and --workflow analyze", file=sys.stderr)
         return 2
 
     try:
         policy, model_label = _selected_workflow(
             args.workflow, project_root, {"analyze"}, args.model_profile
         )
-        Registry(registry_dir).migrate_metadata()
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
-        directories = resolve_job_directories(registry_dir, args.arguments[0])
+        client = CodexMatchDraftClient(args.input or Path("unused-match.yaml"), model=model_label, context=context)
+        analyzer = MatchAnalyzer(registry_dir, profile_paths, client, allowed_models=policy.approved_analysis_model_labels(), context=context)
+        directories = analyzer.resolve(args.arguments[0])
         if len(directories) != 1:
             raise ValueError("analyze publishes exactly one Codex draft at a time")
+        if args.pack:
+            pack = build_analysis_pack(registry_dir, profile_paths, directories=directories, limit=1,
+                                       model=model_label, allowed_models=policy.approved_analysis_model_labels(),
+                                       context=context, force=args.force)
+            dump_analysis_pack(pack, args.pack.resolve())
+            print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
+            return 0
+        pack = load_analysis_pack(args.input, context=context)
+        if len(pack["items"]) != 1 or pack["items"][0]["directory"] != directories[0].name:
+            raise ValueError("single analysis draft must be sealed to exactly the selected vacancy")
+        results = pack.get("results")
+        if not isinstance(results, dict):
+            raise ValueError("single analysis draft requires a results mapping in its sealed pack")
     except Exception as exc:
         print(f"Analysis configuration error: {exc}", file=sys.stderr)
         return 2
 
-    summary = AnalysisSummary(selected=len(directories))
-    for directory in directories:
-        try:
-            client = CodexMatchDraftClient(args.input, model=model_label)
-            analyzer = MatchAnalyzer(
-                registry_dir, profile_paths, client,
-                allowed_models=policy.approved_analysis_model_labels(),
-            )
-            result = analyzer.analyze_directory(directory, force=args.force)
-            if result.status == "skipped":
-                summary.skipped += 1
-            else:
-                summary.analyzed += 1
-            score = f" ({result.score}/100)" if result.score is not None else ""
-            print(f"{directory.name}: {result.status}{score}")
-        except Exception as exc:
-            summary.errors += 1
-            print(f"{directory.name}: analysis failed: {exc}", file=sys.stderr)
+    try:
+        summary = publish_analysis_batch(pack, results, analyzer, force=args.force)
+    except Exception as exc:
+        print(f"{directories[0].name}: analysis failed: {exc}", file=sys.stderr)
+        return 1
 
     try:
         Registry(registry_dir).regenerate_index()
@@ -1147,11 +1152,12 @@ def _run_analysis_batch(
         print("Usage: python run.py analyze-batch --input <batch.yaml> --workflow analyze", file=sys.stderr)
         return 2
     try:
+        context = current_matching_context(project_root)
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "analysis:batch-publish", timeout_seconds=args.lock_timeout_seconds):
             policy, model_label = _selected_workflow(
                 args.workflow, project_root, {"analyze"}, args.model_profile
             )
-            pack = load_analysis_pack(args.input)
+            pack = load_analysis_pack(args.input, context=context)
             results = pack.get("results")
             if not isinstance(results, dict):
                 raise ValueError("batch input must contain a results mapping keyed by directory")
@@ -1166,6 +1172,7 @@ def _run_analysis_batch(
                 profile_paths,
                 CodexMatchDraftClient(project_root / ".codex-work" / "unused-match.yaml", model=model_label),
                 allowed_models=policy.approved_analysis_model_labels(),
+                context=context,
             )
             summary = publish_analysis_batch(pack, results, analyzer)
             Registry(registry_dir).regenerate_index()
@@ -1320,9 +1327,10 @@ def _run_preparation(
     registry_dir: Path,
 ) -> int:
     try:
+        context = current_matching_context(project_root)
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "preparation:batch", timeout_seconds=args.lock_timeout_seconds):
-            return _run_preparation_locked(args, config, project_root, registry_dir)
-    except WorkflowLockError as exc:
+            return _run_preparation_locked(args, config, project_root, registry_dir, matching_context=context)
+    except (ValueError, OSError, WorkflowLockError) as exc:
         print(f"Preparation failed: {exc}", file=sys.stderr)
         return 1
 
@@ -1398,6 +1406,7 @@ def _preflight_preparation(
     registry_dir: Path,
     *,
     verify_environment: bool = False,
+    matching_context: MatchingContext | None = None,
 ) -> dict[str, Any]:
     """Resolve and verify a batch without mutating vacancy or package state.
 
@@ -1408,6 +1417,7 @@ def _preflight_preparation(
     """
     if not args.arguments:
         raise ValueError("preparation requires at least one explicit vacancy selector")
+    matching_context = matching_context if matching_context is not None else current_matching_context(project_root)
     policy, model_label = _selected_workflow(
         args.workflow, project_root, {"prepare"}, args.model_profile
     )
@@ -1467,6 +1477,7 @@ def _preflight_preparation(
                 )
             if not _analysis_is_current(
                 directory, registry_dir, profile_paths, policy, project_root,
+                matching_context=matching_context,
             ):
                 raise ValueError("match analysis is missing, stale, or from an unapproved analysis model")
             score = _match_score(directory)
@@ -1550,6 +1561,7 @@ def _run_preparation_locked(
     config: dict[str, str],
     project_root: Path,
     registry_dir: Path,
+    *, matching_context: MatchingContext | None = None,
 ) -> int:
     if not args.arguments:
         print(
@@ -1565,7 +1577,7 @@ def _run_preparation_locked(
         return 2
 
     try:
-        report = _preflight_preparation(args, config, project_root, registry_dir)
+        report = _preflight_preparation(args, config, project_root, registry_dir, matching_context=matching_context)
         policy, model_label = _selected_workflow(args.workflow, project_root, {"prepare"}, args.model_profile)
         profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
         directories = [registry_dir / "jobs" / str(row["directory"]) for row in report["vacancies"]]
@@ -1689,8 +1701,9 @@ def _run_pending(
 ) -> int:
     try:
         selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
+        matching_context = current_matching_context(project_root)
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "pending", timeout_seconds=args.lock_timeout_seconds):
-            return _run_pending_locked(args, config, project_root, registry_dir, selection_policy)
+            return _run_pending_locked(args, config, project_root, registry_dir, selection_policy, matching_context)
     except (ValueError, OSError, WorkflowLockError) as exc:
         print(f"Pending check failed: {exc}", file=sys.stderr)
         return 1
@@ -1702,6 +1715,7 @@ def _run_pending_locked(
     project_root: Path,
     registry_dir: Path,
     selection_policy: SelectionPolicy,
+    matching_context: MatchingContext,
 ) -> int:
     if not args.arguments or args.arguments[0] not in {"analyze", "prepare"}:
         print(
@@ -1767,6 +1781,7 @@ def _run_pending_locked(
                 triage_skip=lambda directory: should_skip_model(directory, policy=selection_policy),
                 model=model_label,
                 allowed_models=policy.approved_analysis_model_labels(),
+                context=matching_context,
             )
             dump_analysis_pack(pack, args.pack.resolve())
             print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
@@ -1786,6 +1801,7 @@ def _run_pending_locked(
                         model=model_label,
                     ),
                     allowed_models=policy.approved_analysis_model_labels(),
+                    context=matching_context,
                 )
             else:
                 if not _vacancy_is_fresh(directory, policy.prepare_max_age_days):
@@ -1796,6 +1812,7 @@ def _run_pending_locked(
                     profile_paths,
                     policy,
                     project_root,
+                    matching_context=matching_context,
                 ):
                     continue
                 score = _optional_match_score(directory)
@@ -1896,6 +1913,7 @@ def _analysis_is_current(
     profile_paths: list[Path],
     policy: WorkflowPolicy,
     project_root: Path,
+    *, matching_context: MatchingContext | None = None,
 ) -> bool:
     checker = MatchAnalyzer(
         registry_dir,
@@ -1904,6 +1922,7 @@ def _analysis_is_current(
             project_root / ".codex-work" / "unused-match.yaml",
             model=policy.workflow("analyze").model_label,
         ),
+        context=matching_context if matching_context is not None else current_matching_context(project_root),
     )
     return checker.is_current(
         directory, allowed_models=policy.approved_analysis_model_labels()
@@ -1996,6 +2015,7 @@ def _run_doctor(
 
     check("workflow policy", lambda: load_workflow_policy(project_root / "config" / "codex-workflows.yaml"))
     check("selection policy", lambda: load_selection_policy(project_root / "config/selection-policy.yaml"))
+    check("matching policy and prompt", lambda: current_matching_context(project_root))
     try:
         config = load_env(env_path)
         print(f"OK: source environment ({env_path})")

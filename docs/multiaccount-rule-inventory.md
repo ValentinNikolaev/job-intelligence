@@ -97,11 +97,11 @@ The current Go contextual recognizer also accepts an incidental “Go” near �
 in the title/body window; the synthetic corpus freezes that ambiguous behavior rather
 than fixing it during extraction.
 
-The existing editorial export/finalizer policy bindings do not include the match
-prompt. Phase 3 needs the mandatory independent blind editorial pass plus scoring
-evidence bound to the changed match prompt and policy snapshot. Editorial fixture unit
-tests are not that pass and do not prove scoring behavior. Match freshness must agree
-between individual analysis, sealed packs, snapshots and preparation preflight.
+At baseline, the editorial export/finalizer policy bindings did not include the match
+prompt. Phase 3 adds that binding and a separate scoring-policy gate; actual independent
+passes remain required. Editorial fixture unit tests are not those passes and do not
+prove scoring behavior. Match freshness must agree between individual analysis, sealed
+packs, snapshots and preparation preflight.
 
 ## Selection schema and versioning contract
 
@@ -241,3 +241,87 @@ MongoDB replica set passed **725 tests in 136.660 seconds, no skips**. API-prohi
 unit and explicit runtime/configuration search checks, local Markdown links and
 `git diff --check` passed. Phase 2 is accepted and done; publication is the coordinator's
 next action. Phase 3 remains unstarted.
+
+## Phase-3 working-tree implementation
+
+Phase 2 was published as `d5711331d032c38d27d995ee6a820f7cdfef8c0c` in PR 2.
+Independent cumulative review R4 approved the clean published worktree after 90 tests
+and a four-failure negative control. Phase 3 is now in progress; its runtime contract
+is documented in [matching-policy.md](matching-policy.md).
+
+`config/matching-policy.yaml` now owns the former personal preferences from the match
+prompt: remote work, meaningful preferred technologies, discouraged central technology
+requirements/SRE roles, relocation packages, cities, support/email domains and the
+US-hours exception. Scoring weights and general evidence/blocker rules remain in the
+generic prompt. No model or numeric adjustment logic moved into project code.
+
+A runtime context binds generic prompt, output schema and typed policy in the existing
+`prompt_version` field. Candidate evidence/profile hashes, stored scores and model
+provenance remain separate. A shared freshness predicate reaches file/snapshot queues
+and actual preparation preflight. New schema-2 single/batch drafts seal and validate
+actual profile/vacancy/policy/prompt payloads as well as hashes, selectors and current
+canonical source comparisons. Source/distributed manual and scheduled instructions
+use that same envelope while retaining single-vacancy manual isolation.
+
+Before the final additional real-MongoDB regression, 113 targeted runtime, seal,
+policy, workflow, preparation, storage-bridge and API-prohibition tests passed in
+17.001 seconds with no skips. An additional real-MongoDB regression passed in 0.825
+seconds: an unpatched preparation preflight and actual snapshot queue accept a current
+match, a policy change makes it stale in both paths, and stored match/document/revision
+remain unchanged. The directory-link escape test runs through a real temporary Windows
+junction when symlink privilege is unavailable. At that checkpoint, full acceptance
+and the exact production legacy bridge pin awaited review and actual blind passes.
+
+Review R5 requested CR-005 and CR-006 corrections: raw public publication could assign
+current provenance to an unbound result, and a resealed source URL could reach
+notifications. Public publication now requires a complete sealed one-item draft;
+batch validation compares every notification source URL with current metadata before
+any write. The corrected focused suite passed 52 tests in 14.658 seconds with actual
+disposable MongoDB and no skips. In-memory negative controls caused four expected
+raw-publication subtest failures and one expected URL-binding failure; the restored
+two-test control passed. At that checkpoint, these fixes awaited independent R5
+re-review and finalizer retry/rebase findings CR-003/004 awaited architecture
+verification. Mechanical results alone did not establish semantic acceptance.
+
+R5 core re-review subsequently approved and closed CR-005/006. The actual independent
+matching evaluation passed: 56 judgments and 28 pair rows, zero ties/inversions, four
+hard rejections, with all pair reasoning reviewed by the coordinator. The exact
+approved effective identity is now pinned for the narrow old-813df legacy bridge;
+its digest and evaluation hashes are recorded in [matching-policy.md](matching-policy.md).
+Production-constant tests verify unchanged current/legacy reuse and invalidation on
+prompt/schema/policy/profile/job/model changes, preserving historical bytes. The
+post-pin targeted actual-MongoDB suite passed 58 tests in 14.738 seconds, no skips.
+Identical judgments from one masked reviewer do not establish independent numeric
+replication or complete variant-identity blindness.
+
+The initial editorial pass scored 9/10; its proposal-only evidence defensibly led the
+reviewer to omit a claim under a production-experience requirement. Technical review
+found ambiguity between CV selection and delivery-stage grounding. Only the synthetic
+case kind/requirement was clarified; source text, claim, curated disposition and
+production editorial policy stayed unchanged. A fresh independent pass scored 10/10,
+and the coordinator inspected every reason. Exact corpus/policy/decision hashes are
+recorded in [matching-policy.md](matching-policy.md).
+
+Final full verification used Python 3.14.6 and a disposable MongoDB 8 replica set:
+`python -m unittest discover -v` passed 782 tests in 127.566 seconds, no skips.
+API-prohibition unit/search and diff checks passed. Core post-pin review approved;
+architecture R5a approved and closed CR-003/004 after 47 independent tests, five
+mutation failures and restored controls, also revalidating the actual matching receipt.
+The completed final council (first principles, contrarian and fresh executor) and
+anonymized peer review approved bounded publication, with no confirmed must-fix or
+material code disagreement. They agreed that explicit configuration, shared
+freshness, seals and the exact legacy pairing fit phases 0-3 without adding account
+infrastructure. The fresh executor separately passed 67 focused tests in 79.035
+seconds; this is independent focused evidence, not the coordinator's 782-test suite.
+
+Accepted limits remain one masked matching reviewer and a small synthetic corpus:
+identical judgments do not demonstrate broad numeric stability or hiring effects.
+Receipt recomputation verifies bindings rather than independently corroborating
+semantic judgments. The editorial clarification does not establish that the original
+omission was wrong. The coordinator will preserve the exact ignored evaluation
+packs, decisions and receipts and copy them to the clean R6 checkout for revalidation.
+
+Phase 3 remains in progress with local implementation/gates accepted for publication
+into draft PR 2. Reviewed finalizer publication, clean R6 and exact-published-commit
+CI remain future steps. Refused publication, changed bindings/integrated code, R6
+defects or CI failures require reassessment. Phases 4-6 remain deferred.

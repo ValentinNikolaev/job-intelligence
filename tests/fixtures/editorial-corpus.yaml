@@ -56,8 +56,8 @@ cases:
       reason_codes: [unsupported_ownership]
       rationale: Preserve the documented adapter contribution without claiming the lead's decisions.
   - id: proposal-not-delivery
-    kind: cv-bullet
-    requirement: Engineer with production migration experience.
+    kind: claim-grounding
+    requirement: Assess the accuracy of the recorded migration delivery stage, distinguishing proposal authorship from implementation and production rollout. This statement-level grounding check is separate from selecting achievements for a CV.
     source: Authored a migration proposal. Implementation and rollout were not approved.
     text: Delivered the production migration.
     expected:

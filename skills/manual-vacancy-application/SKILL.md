@@ -45,10 +45,15 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
 3. Capture the newly published vacancy directory from the `add-manual` command output.
    Do not rediscover it through a queue or broad registry scan. From this point, keep
    the workflow scoped to that single vacancy.
-4. If the vacancy has no current `match.yaml`, analyze only this directory. Read its
-   vacancy files, the configured candidate evidence, and `prompts/vacancy-match.md`;
-   write one result draft under `.codex-work/manual-analysis/`, then publish it with
+4. If the vacancy has no current `match.yaml`, export only this directory with
+   `python run.py analyze <vacancy-directory> --pack .codex-work/manual-analysis/pack.yaml --workflow analyze --model-profile <selected-profile>`.
+   Read that schema-2 sealed pack: it contains the current generic prompt, typed
+   matching-policy snapshot, candidate evidence and one vacancy. Copy it unchanged
+   to a draft under `.codex-work/manual-analysis/` and add its one directory-keyed
+   `results` value. Preserve every input payload, version and `pack_sha256`; publish with
    `python run.py analyze <vacancy-directory> --input <draft.yaml> --workflow analyze --model-profile <selected-profile>`.
+   Raw result-only drafts and stale or altered packs fail closed; regenerate the
+   selected pack and reevaluate if an effective input changed.
    Do not run triage, `pending analyze all`, `analyze-batch`, or any queue command for
    this manual flow, and do not read unrelated vacancy directories.
 5. Treat the published match score only as an eligibility signal, never as consent:
