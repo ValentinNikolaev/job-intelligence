@@ -39,15 +39,23 @@ def document():
 
 class AccountScriptTests(unittest.TestCase):
     def test_direct_processes_use_their_own_checkout_and_reject_before_payload_parsing(self):
-        for script in ("archive_jobs.py", "notify_telegram.py", "deliver_telegram_outbox.py", "verify_restored_backup.py"):
-            with self.subTest(script=script):
-                result = subprocess.run(
-                    [sys.executable, str(ROOT / "scripts" / script), "--account=unknown"],
-                    cwd=ROOT.parent, capture_output=True, text=True, timeout=20,
-                )
-                self.assertEqual(2, result.returncode, result.stderr)
-                self.assertIn("requested account is not enabled", result.stderr)
-                self.assertNotIn("ModuleNotFoundError", result.stderr)
+        environment = dict(os.environ)
+        environment.pop("JOBINTEL_ACCOUNT", None)
+        cases = (
+            (environment, "requested account is not enabled"),
+            (dict(environment, JOBINTEL_ACCOUNT="current"),
+             "command-line and environment account selectors disagree"),
+        )
+        for child_environment, expected_error in cases:
+            for script in ("archive_jobs.py", "notify_telegram.py", "deliver_telegram_outbox.py", "verify_restored_backup.py"):
+                with self.subTest(script=script, account=child_environment.get("JOBINTEL_ACCOUNT")):
+                    result = subprocess.run(
+                        [sys.executable, str(ROOT / "scripts" / script), "--account=unknown"],
+                        cwd=ROOT.parent, env=child_environment, capture_output=True, text=True, timeout=20,
+                    )
+                    self.assertEqual(2, result.returncode, result.stderr)
+                    self.assertIn(expected_error, result.stderr)
+                    self.assertNotIn("ModuleNotFoundError", result.stderr)
 
     def test_notification_credentials_follow_context_without_process_environment_leaks(self):
         with TemporaryDirectory() as temporary, patch.dict(os.environ, {}, clear=True):
@@ -84,30 +92,31 @@ class AccountScriptTests(unittest.TestCase):
                         if "jobintel.atlas_network revoke" in step.get("run", ""):
                             self.assertIn("always()", step["if"])
 
-    def test_unknown_account_stops_all_direct_scripts_before_payload_or_side_effects(self):
-        with TemporaryDirectory() as temporary, patch.dict(os.environ, {}, clear=True):
-            root = Path(temporary)
-            common = ["--project-root", str(root), "--account=unknown"]
-            with patch.object(archive_jobs, "archive") as archive, patch.object(archive_jobs, "workflow_lock") as lock:
-                with self.assertRaises(SystemExit) as failure:
-                    archive_jobs.main(["low-score", *common])
-                self.assertEqual(2, failure.exception.code)
-                archive.assert_not_called()
-                lock.assert_not_called()
-            with patch.object(notify_telegram, "enrich_vacancy_urls") as enrich, patch.object(notify_telegram, "notification_config") as credentials:
-                self.assertEqual(2, asyncio.run(notify_telegram._main(["--message-file", str(root / "missing"), *common])))
-                enrich.assert_not_called()
-                credentials.assert_not_called()
-            delivery = ["--outbox-file", str(root / "missing"), "--sent-dir", str(root / "sent"), "--receipt-dir", str(root / "receipts"), *common]
-            with patch.object(deliver_telegram_outbox, "load_notification") as payload, patch.object(deliver_telegram_outbox, "notification_config") as credentials:
-                self.assertEqual(2, asyncio.run(deliver_telegram_outbox._main(delivery)))
-                payload.assert_not_called()
-                credentials.assert_not_called()
-            restore = ["--input", str(root / "missing"), "--database", "jobintel_restore_test", "--artifact-output", str(root / "restore"), "--output", str(root / "receipt.json"), *common]
-            with patch.object(verify_restored_backup, "verify_restored_backup") as verify:
-                self.assertEqual(2, verify_restored_backup.main(restore))
-                verify.assert_not_called()
-                self.assertFalse((root / "receipt.json").exists())
+    def test_unknown_or_conflicting_account_stops_all_direct_scripts_before_payload_or_side_effects(self):
+        for environment in ({}, {"JOBINTEL_ACCOUNT": "current"}):
+            with self.subTest(environment=environment), TemporaryDirectory() as temporary, patch.dict(os.environ, environment, clear=True):
+                root = Path(temporary)
+                common = ["--project-root", str(root), "--account=unknown"]
+                with patch.object(archive_jobs, "archive") as archive, patch.object(archive_jobs, "workflow_lock") as lock:
+                    with self.assertRaises(SystemExit) as failure:
+                        archive_jobs.main(["low-score", *common])
+                    self.assertEqual(2, failure.exception.code)
+                    archive.assert_not_called()
+                    lock.assert_not_called()
+                with patch.object(notify_telegram, "enrich_vacancy_urls") as enrich, patch.object(notify_telegram, "notification_config") as credentials:
+                    self.assertEqual(2, asyncio.run(notify_telegram._main(["--message-file", str(root / "missing"), *common])))
+                    enrich.assert_not_called()
+                    credentials.assert_not_called()
+                delivery = ["--outbox-file", str(root / "missing"), "--sent-dir", str(root / "sent"), "--receipt-dir", str(root / "receipts"), *common]
+                with patch.object(deliver_telegram_outbox, "load_notification") as payload, patch.object(deliver_telegram_outbox, "notification_config") as credentials:
+                    self.assertEqual(2, asyncio.run(deliver_telegram_outbox._main(delivery)))
+                    payload.assert_not_called()
+                    credentials.assert_not_called()
+                restore = ["--input", str(root / "missing"), "--database", "jobintel_restore_test", "--artifact-output", str(root / "restore"), "--output", str(root / "receipt.json"), *common]
+                with patch.object(verify_restored_backup, "verify_restored_backup") as verify:
+                    self.assertEqual(2, verify_restored_backup.main(restore))
+                    verify.assert_not_called()
+                    self.assertFalse((root / "receipt.json").exists())
 
     def test_archive_default_and_explicit_current_have_same_root_and_parameters(self):
         with TemporaryDirectory() as temporary, patch.dict(os.environ, {}, clear=True):
