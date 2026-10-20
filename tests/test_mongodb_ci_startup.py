@@ -151,9 +151,12 @@ esac
 
     def test_workflow_keeps_real_tests_and_always_cleanup(self):
         workflow = yaml.safe_load((ROOT / ".github/workflows/mongodb-tests.yml").read_text(encoding="utf-8"))
+        self.assertEqual("ubuntu-22.04", workflow["jobs"]["tests"]["runs-on"])
         triggers = workflow.get("on", workflow.get(True))
         self.assertIn(".github/scripts/start-test-mongodb.sh", triggers["push"]["paths"])
         steps = workflow["jobs"]["tests"]["steps"]
+        setup = next(step for step in steps if step.get("uses") == "actions/setup-python@v5")
+        self.assertEqual("3.11", setup["with"]["python-version"])
         self.assertIn("bash .github/scripts/start-test-mongodb.sh", [step.get("run") for step in steps])
         tests = next(step for step in steps if step.get("run") == "python -m unittest discover -v")
         self.assertEqual("current", tests["env"]["JOBINTEL_ACCOUNT"])

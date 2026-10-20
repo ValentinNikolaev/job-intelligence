@@ -424,6 +424,34 @@ exact-head CI. Keep live collection retries and deployed automation changes outs
 this iteration. The original phase-5 verification remains historical evidence;
 post-merge failures below are not passing checks.
 
+### Temporary CI host compatibility
+
+The first stabilization push at `458f4cf` passed on runner image
+`20261012.334.1` (kernel 6.17), while PR run
+[39482379187](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39482379187)
+failed before tests on image `20261018.339.1` (kernel `7.0.0-1017-azure`).
+The new diagnostics captured MongoDB fatal `12257600`, container exit 1 and
+`oom_killed=false`: this occurrence hit MongoDB's kernel compatibility guard.
+Earlier undiagnosed exits remain unexplained. Cleanup still succeeded; skipped
+tests in the failed run are not passing evidence.
+
+Only the MongoDB test job temporarily selects `ubuntu-22.04`, whose current
+[runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md)
+lists kernel 6.8. The label remains a moving image, so actual CI is mandatory.
+The official `mongo:8.0` image currently supplies 8.0.34; the Ubuntu-specific
+kernel exemption is recorded for 8.0.35 in
+[SERVER-131779](https://jira.mongodb.org/browse/SERVER-131779).
+Keep the MongoDB image, compatibility guard, real replica-set tests, timeouts and
+cleanup intact. This workaround changes the test host, not production MongoDB.
+
+The repository maintainer must review this pin by **2027-03-01**. Return to a
+supported newer runner only after the official Mongo image contains the needed
+fix and its full real-Mongo suite passes on that runner. Complete migration before
+the Ubuntu 22.04 brownouts starting **2027-03-23**, ahead of its
+[2027-04-17 retirement](https://github.com/actions/runner-images/issues/14254).
+Do not bypass the database guard or repeatedly rerun failed startup to obtain a
+green result. Exact-head CI and clean published review remain acceptance gates.
+
 ## Phase 6: connect the second account last
 
 Tasks:
@@ -513,3 +541,5 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Independent R1b approved the full synthetic stand and traced actual CLI/environment/storage/archive/Telegram caller contracts; final architecture view is sound with no concrete must-fix. All four implementation checklist items are locally complete, while publication acceptance remains in progress. | R1b independently passed four stand tests in 14.764 seconds and six extra fixture controls in 5.907 seconds, no skips. Hostile values are removed by the harness; production process overrides still win. The audit hook is event instrumentation, not OS isolation. Guide, CI and stand reviewers found no confirmed blocker; overlapping reports do not add independent proof. Final anonymized peer synthesis, complete staged inspection, clean published review and exact-head Ubuntu CI remain required. |
 | 2026-10-20 | Coordinator integrated discovery passed 916 tests in 255.778 seconds on Python 3.14.6 with `JOBINTEL_ACCOUNT=current` and a real disposable MongoDB 8 replica set, no skips. Required Mongo transaction/restore/storage tests actually executed. Final project code/configuration API search found no prohibited integrations; 52 local links and diff checks passed. | This passing gate includes the production-like selector environment missing from the old check. No runtime/config/prompt/canonical record/artifact/source/model-policy changes are present. Catalog inputs are unchanged, so live catalog regeneration is not required. Exact Ubuntu helper startup, publication and clean-checkout gates remain pending; local fake-Docker success does not substitute for them. |
 | 2026-10-20 | Final Quick council completed three independent scoped specialist/architecture views and anonymized Orca-session peer review. All scoped increments approved; conditional publication recommendation has no concrete must-fix. Coordinator inspected the complete ten-path staged diff, verified staged helper LF and excluded runtime/config/data/artifact/policy changes. | Convergence is not independent proof. The strongest reasoning connects the reproduced selector fixture defect and discriminating helper mutations to actual caller boundaries. The weakest point remains local Git Bash/fake-Docker versus actual Ubuntu startup; the real-Mongo local suite does not explain historical exits. Harness sanitization does not override production process precedence, and audit instrumentation is not OS isolation. Reviewed publication is accepted; final stabilization acceptance still requires clean published cumulative review and exact-head Ubuntu CI. New external effects, lost failure status, unbounded diagnostics, real helper defects or substantive tree divergence require correction. |
+| 2026-10-20 | Published initial stabilization as `458f4cf6bfa9cee1d4b2c59a83cfdc3098d996ef` in draft [PR 5](https://github.com/ValentinNikolaev/job-intelligence/pull/5). Fresh clean-checkout cumulative R2 approved all ten paths, independently passing 27 focused tests in 53.373 seconds without skips and verifying 3,472 remaining entries identical to the main base. | R2 reproduced the original selector and both helper mutation failures; 52 links and prohibited-API/diff checks passed. Push CI 39482308979 passed 916 tests in 64.493 seconds with two missing-Poppler skips, but PR CI 39482379187 failed before tests on a newer runner image. New diagnostics identified this occurrence as the MongoDB kernel guard, not OOM; cleanup passed. Historical undiagnosed exits remain unexplained. Acceptance remains in progress. |
+| 2026-10-20 | Applied the bounded CI host workaround documented above: test-job-only Ubuntu 22.04, explicit maintainer deadline and guarded return to a newer runner. Independent architecture, risk and execution reassessment conditionally accepted the workaround; their lifecycle concern moved removal ahead of the March 23 brownouts. | Owner passed all 12 helper checks in 36.233 seconds without skips; independent correction review approved after 12 in 36.433 seconds, and restoring the old runner in memory failed the intended assertion. Real Mongo image, guard, helper, tests and cleanup are unchanged. Source/link/diff checks passed. Corrected published verification and exact-head push/PR real-Mongo CI remain required; no repeat local full-suite run is claimed for this test/CI/documentation-only correction. |
