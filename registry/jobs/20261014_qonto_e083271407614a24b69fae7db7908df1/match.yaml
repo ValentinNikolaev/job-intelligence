@@ -1,0 +1,79 @@
+score: 86
+recommendation: strong_match
+summary: Strong Italy-eligible Go backend match; Qonto-specific transaction scale
+  remains an interview topic.
+strengths:
+- Production Go
+- scalable APIs
+- reliability
+- monitoring
+- leadership
+- Italy eligibility
+gaps:
+- Direct modern banking infrastructure at Qonto scale is not evidenced
+concerns:
+- Exact stack and work authorization are unknown
+hard_rejection: false
+hard_rejection_reason: null
+requirements:
+- requirement: Strong backend engineering experience
+  importance: critical
+  basis: stated
+  jd_quote: 'Technical expertise: Strong backend engineering experience with exposure
+    to large-scale web application architecture and real production constraints'
+  match: strong
+  candidate_quote: 'Backend engineer with 15+ years of experience building and improving
+    production
+
+    systems across **PHP** and **Go**.'
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: Go backend stack fluency or fast transferability
+  importance: critical
+  basis: stated
+  jd_quote: 'Stack fluency:'
+  match: strong
+  candidate_quote: "- Designed and owned a Go-based support automation platform connecting\
+    \ **Zendesk**,\n  **Intercom**, and internal services."
+  risk: Qonto's exact stack is not specified.
+  mitigation: Map Go service and API experience during screening.
+  hard_blocker: false
+- requirement: Candidate may work from Italy
+  importance: critical
+  basis: stated
+  jd_quote: You can choose to work in Qonto as long as you're living in (or willing
+    to relocate to) either Germany, France, Italy, Serbia, or Spain.
+  match: strong
+  candidate_quote: Fiumicino, Latium, Italy
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: Reliability, testing, monitoring, and root-cause analysis
+  importance: high
+  basis: stated
+  jd_quote: 'Quality-driven: You write tests, set up monitoring, handle incidents
+    methodically, and do root cause analysis'
+  match: strong
+  candidate_quote: "- Build resilient message delivery pipelines with fallback logic,\
+    \ retries, and\n  monitoring - reducing incident-related disruptions by over 50%."
+  risk: Root-cause examples are not separately enumerated.
+  mitigation: Use production incident examples in interview.
+  hard_blocker: false
+- requirement: Technical leadership and mentoring
+  importance: high
+  basis: stated
+  jd_quote: 'Grow in technical leadership: lead design discussions, anticipate risks,
+    and mentor less experienced engineers'
+  match: strong
+  candidate_quote: "- Directly managed 10 developers. Influenced all areas of Product\
+    \ Development,\n  including Project Management, Microservice Serverless solutions,\
+    \ CI/CD, and\n  upholding RAS (Reliability, Availability, and Serviceability)."
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+analyzed_at: '2026-10-20T10:57:45Z'
+profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+job_version: sha256:901eed5db923a6d1d5dbcb9effaf27730c20c0c94e8ebc95171b6b1d75f68628
+prompt_version: job-match-v1:sha256:813df4c8583b3d5ac10bf119ee81af822f104b467466a37c820cb6a3ca2629f0
+model: codex:gpt-5.6-luna:medium

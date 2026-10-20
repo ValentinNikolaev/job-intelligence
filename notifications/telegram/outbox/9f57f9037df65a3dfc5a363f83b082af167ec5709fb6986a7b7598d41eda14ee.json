@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-20T11:00:35Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "YozmaTech",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25",
+      "score": 83,
+      "title": "Middle Backend engineer (Golang)",
+      "url": "https://djinni.co/jobs/854098-middle-backend-engineer-golang/",
+      "vacancy_id": "0de73c80-c52b-47cc-b5c7-a84fa7f3fb25"
+    },
+    {
+      "company": "TrueLabel",
+      "country_codes": [
+        "PT"
+      ],
+      "directory": "20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c",
+      "score": 84,
+      "title": "Senior PHP Developer (Core)",
+      "url": "https://jobs.dou.ua/companies/truelabel/vacancies/377174/",
+      "vacancy_id": "1a308b68-b795-40ca-9b04-e0de1681f43c"
+    },
+    {
+      "company": "Qonto",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261014_qonto_e083271407614a24b69fae7db7908df1",
+      "score": 86,
+      "title": "Senior/Staff - Go Backend Engineer - remote friendly",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pqekkv6yhs",
+      "vacancy_id": "e0832714-0761-4a24-b69f-ae7db7908df1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "9f57f9037df65a3dfc5a363f83b082af167ec5709fb6986a7b7598d41eda14ee",
+  "schema_version": 2
+}

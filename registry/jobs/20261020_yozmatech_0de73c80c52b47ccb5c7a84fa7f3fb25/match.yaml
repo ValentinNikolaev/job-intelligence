@@ -1,0 +1,82 @@
+score: 83
+recommendation: strong_match
+summary: Strong remote Go backend fit; TypeScript and autonomous coding-agent depth
+  remain unverified.
+strengths:
+- Production Go
+- AWS
+- Kubernetes
+- microservices
+- event-driven systems
+- ownership
+gaps:
+- TypeScript is not explicit
+- autonomous coding-agent workflow is not explicit
+concerns:
+- Exact client SaaS context and work authorization are unknown
+hard_rejection: false
+hard_rejection_reason: null
+requirements:
+- requirement: Hands-on proficiency in Go
+  importance: critical
+  basis: stated
+  jd_quote: Hands-on proficiency in Go — must have;
+  match: strong
+  candidate_quote: 'Backend engineer with 15+ years of experience building and improving
+    production
+
+    systems across **PHP** and **Go**.'
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: Autonomous AI agents for end-to-end coding
+  importance: high
+  basis: stated
+  jd_quote: 'Agentic Coding: Experience in using autonomous AI agents (e.g., Claude
+    Code, Cursor, Aider) to plan, write, test, and debug code end-to-end;'
+  match: partial
+  candidate_quote: "- Integrated **OpenAI**-powered auto-triage flows, automating\
+    \ or deflecting up to\n  **30%** of inbound tickets."
+  risk: AI product automation is not explicit coding-agent usage.
+  mitigation: Confirm concrete coding-agent examples.
+  hard_blocker: false
+- requirement: Cloud-platform experience
+  importance: high
+  basis: stated
+  jd_quote: Previous work with cloud platforms such as GCP, AWS, or others;
+  match: strong
+  candidate_quote: '### Infrastructure
+
+
+    - AWS
+
+    - Kubernetes'
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: Technical-project ownership
+  importance: high
+  basis: stated
+  jd_quote: Proven ability to lead technical projects, set priorities, and own outcomes;
+  match: strong
+  candidate_quote: "- Designed and owned a Go-based support automation platform connecting\
+    \ **Zendesk**,\n  **Intercom**, and internal services."
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: SaaS architecture and development best practices
+  importance: high
+  basis: stated
+  jd_quote: Deep familiarity with SaaS architecture and development best practices;
+  match: strong
+  candidate_quote: '- Microservices
+
+    - Event-driven systems'
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+analyzed_at: '2026-10-20T10:57:44Z'
+profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+job_version: sha256:98b6a68d4286a21267d79a47fc0921806c624f3bc4614f0b060a084c4eb33d72
+prompt_version: job-match-v1:sha256:813df4c8583b3d5ac10bf119ee81af822f104b467466a37c820cb6a3ca2629f0
+model: codex:gpt-5.6-luna:medium

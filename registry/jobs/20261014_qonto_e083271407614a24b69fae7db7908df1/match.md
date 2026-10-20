@@ -3,29 +3,31 @@
 **Score:** 86/100  
 **Recommendation:** Strong Match
 
-Italy eligibility, Go/backend depth, financial-system experience, event-driven architecture, reliability, and technical leadership make this a strong match.
+Strong Italy-eligible Go backend match; Qonto-specific transaction scale remains an interview topic.
 
 ## Why it matches
 
+- Production Go
+- scalable APIs
+- reliability
+- monitoring
+- leadership
 - Italy eligibility
-- Go and event-driven backend work
-- reliability and technical leadership
 
 ## Gaps
 
-- Exact Qonto stack and DDD depth not explicit
-- salary unavailable
+- Direct modern banking infrastructure at Qonto scale is not evidenced
 
 ## Concerns
 
-- Conflicting but professional-level English labels in the profile
+- Exact stack and work authorization are unknown
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Eligibility to work from Italy | critical / stated | strong | Open to candidates in Italy | Fiumicino, Latium, Italy | Work authorization is not stated. / Confirm authorization during the process. |
-| Backend engineering under production constraints | critical / stated | strong | Strong backend engineering experience with exposure to large-scale web application architecture and real production constraints | Backend engineer with 15+ years of experience building and improving production | Qonto's exact scale is not directly comparable. / Use documented production-scale examples. |
-| Financial infrastructure and reliable services | high / stated | partial | build the financial infrastructure that 600,000+ European SMEs depend on every day, from highly scalable APIs to robust banking services that handle real money, in real time, with zero room for mistakes. | My background includes document automation, customer operations automation, digital | Direct banking-service ownership at this scale is not established. / Present payment-gateway and fintech examples without overstating banking depth. |
-| Monitoring, incidents, and root-cause analysis | high / stated | strong | Quality-driven: You write tests, set up monitoring, handle incidents methodically, and do root cause analysis | Implement fault-tolerant pipelines with automatic retries and observability, | Root-cause wording is not explicit in the quote. / Prepare an incident-analysis example. |
-| Technical leadership and mentoring | high / stated | strong | Grow in technical leadership: lead design discussions, anticipate risks, and mentor less experienced engineers | Directly managed 10 developers. Influenced all areas of Product Development, | / |
+| Strong backend engineering experience | critical / stated | strong | Technical expertise: Strong backend engineering experience with exposure to large-scale web application architecture and real production constraints | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
+| Go backend stack fluency or fast transferability | critical / stated | strong | Stack fluency: | - Designed and owned a Go-based support automation platform connecting **Zendesk**, **Intercom**, and internal services. | Qonto's exact stack is not specified. / Map Go service and API experience during screening. |
+| Candidate may work from Italy | critical / stated | strong | You can choose to work in Qonto as long as you're living in (or willing to relocate to) either Germany, France, Italy, Serbia, or Spain. | Fiumicino, Latium, Italy | / |
+| Reliability, testing, monitoring, and root-cause analysis | high / stated | strong | Quality-driven: You write tests, set up monitoring, handle incidents methodically, and do root cause analysis | - Build resilient message delivery pipelines with fallback logic, retries, and monitoring - reducing incident-related disruptions by over 50%. | Root-cause examples are not separately enumerated. / Use production incident examples in interview. |
+| Technical leadership and mentoring | high / stated | strong | Grow in technical leadership: lead design discussions, anticipate risks, and mentor less experienced engineers | - Directly managed 10 developers. Influenced all areas of Product Development, including Project Management, Microservice Serverless solutions, CI/CD, and upholding RAS (Reliability, Availability, and Serviceability). | / |

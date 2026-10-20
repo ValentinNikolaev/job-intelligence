@@ -1,0 +1,83 @@
+score: 84
+recommendation: strong_match
+summary: Strong PHP backend match; Kafka and Redis depth should be verified.
+strengths:
+- PHP
+- Laravel
+- Symfony
+- RabbitMQ
+- event-driven systems
+- production troubleshooting
+gaps:
+- Kafka and Redis are not explicit
+concerns:
+- Domain preference and work authorization are unknown
+hard_rejection: false
+hard_rejection_reason: null
+requirements:
+- requirement: Event-driven Kafka and RabbitMQ integrations
+  importance: critical
+  basis: stated
+  jd_quote: Develop and support event-driven integrations based on Kafka and RabbitMQ
+    (producers/consumers, queues, message processing).
+  match: partial
+  candidate_quote: PHP | Laravel | MySQL | Elasticsearch | RabbitMQ | AWS | Email
+  risk: RabbitMQ is evidenced, but Kafka is not explicit.
+  mitigation: Clarify Kafka and asynchronous integration ownership.
+  hard_blocker: false
+- requirement: PHP backend development with Laravel and Symfony
+  importance: critical
+  basis: stated
+  jd_quote: We’re looking for a **Senior PHP Backend Developer** to strengthen the
+    engineering team of a high-load iGaming platform, built on PHP (Laravel and Symfony).
+  match: strong
+  candidate_quote: '### Frameworks
+
+
+    - Laravel
+
+    - Symfony'
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: Relational data and Redis optimization
+  importance: high
+  basis: stated
+  jd_quote: 'Design and optimize data handling: relational databases and caching/storage
+    with Redis.'
+  match: partial
+  candidate_quote: '- MySQL
+
+    - PostgreSQL
+
+    - Elasticsearch'
+  risk: Redis is not explicit.
+  mitigation: Confirm Redis experience or transferability.
+  hard_blocker: false
+- requirement: Asynchronous delivery guarantees and failure handling
+  importance: high
+  basis: stated
+  jd_quote: 'Understand how asynchronous processing works: message flow, delivery
+    guarantees, idempotency, retries, ordering, backpressure, and failure handling.'
+  match: strong
+  candidate_quote: "- Build resilient message delivery pipelines with fallback logic,\
+    \ retries, and\n  monitoring - reducing incident-related disruptions by over 50%."
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+- requirement: Production incident investigation
+  importance: high
+  basis: stated
+  jd_quote: Investigate and resolve defects and incidents using logs, databases, metrics,
+    and monitoring.
+  match: strong
+  candidate_quote: "- Troubleshot production issues by analyzing logs, monitoring\
+    \ system performance, SRE\n  dashboards. Introduced necessary fixes and optimizations."
+  risk: ''
+  mitigation: ''
+  hard_blocker: false
+analyzed_at: '2026-10-20T10:57:45Z'
+profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+job_version: sha256:05a571438c7a07a6d9a463c3f678f337818004390291e120368e52b4fd24a46b
+prompt_version: job-match-v1:sha256:813df4c8583b3d5ac10bf119ee81af822f104b467466a37c820cb6a3ca2629f0
+model: codex:gpt-5.6-luna:medium
