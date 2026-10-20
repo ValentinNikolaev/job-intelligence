@@ -15,7 +15,8 @@ candidate do not require separate accounts.
 Phases **0-3** were implemented in reviewed increments and merged in PR 2. Phase **4**,
 candidate-independent document preparation, is complete in
 [PR 3](https://github.com/ValentinNikolaev/job-intelligence/pull/3) on a new branch
-from the updated main. Phases 5-6 and operating a second account remain deferred.
+from the updated main. Phase **5** is now in progress on a new branch from merged
+main; phase 6 and operating a second account remain deferred.
 Existing named-vacancy approval requirements still apply to actual application
 preparation; this implementation iteration uses synthetic fixtures only.
 
@@ -31,7 +32,9 @@ PR 2 was merged as `83d812e29fdfbbc1aa942def52011fe5a6bab2d3`. Phase 4 is comple
 in PR 3. Independent cumulative review R3 approved the clean published code at
 `d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6`; both exact-head CI runs passed.
 The iteration extracts preparation configuration while preserving analysis
-identities, candidate sources and published artifacts. Phases 5-6 remain deferred.
+identities, candidate sources and published artifacts. PR 3 was merged as
+`e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Phase 5 is in progress on
+`ValentinNikolaev/multiaccount-p5` from that updated main; phase 6 remains deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
@@ -40,7 +43,7 @@ identities, candidate sources and published artifacts. Phases 5-6 remain deferre
 | 2 | Configuration-driven prefilter and triage | 1 | Done |
 | 3 | Configurable match-analysis preferences | 2 | Done |
 | 4 | Candidate-independent document preparation | 3 | Done |
-| 5 | Explicit account description with one live account | 4 | Not started |
+| 5 | Explicit account description with one live account | 4 | In progress |
 | 6 | Second account in an isolated environment | 5 | Not started |
 
 Maintain this file in the same change as implementation progress:
@@ -297,9 +300,20 @@ separate from main; account selection and a second account remain phases 5-6 wor
 
 ## Phase 5: explicit account description, one live account
 
+Implementation scope: introduce an enforced single-account contract while keeping
+the supported existing layout. Descriptor references that consumers cannot honor
+must fail closed, rather than silently fall back to their previous defaults.
+Candidate/evidence settings remain owned by the preparation profile; integration
+destinations remain owned by data-services configuration and environment. Do not
+add a mutable process-wide active account or change match/preparation identities
+merely because an account label is introduced. Unknown or conflicting selections
+must fail before operational environment loading, timing, dispatch, locks or writes.
+The [account contract and entrypoint inventory](account-context.md) records the
+ownership boundaries, supported layout and explicit source/editorial limitations.
+
 Tasks:
 
-- [ ] Add a small versioned account descriptor referencing the existing policy,
+- [x] Add a small versioned account descriptor referencing the existing policy,
   profile, source configurations, data paths and integration destinations. Reuse
   configuration already extracted; avoid moving files merely to create a directory.
 - [ ] Introduce one resolver/context for these references and an explicit `--account`
@@ -393,3 +407,6 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Final council (three separate architecture/risk/execution views and anonymized peer review) accepted bounded draft publication after the full suite and independent R2 closure. The remaining two-fixed-voice-file documentation paragraph was corrected to the configured nonempty list; a complete current-pack semantic reassessment passed 10/10 and coordinator inspected every reason. | Final policy SHA-256 `b912be8bca0b344eb9b283a8262af03766ea494dae5396ff8006c980bbfce3e0`, corpus `94f7fff8a3735f82dd5f343a2e7014273228c998968589cbd16e83e33e287457`, decisions `f63e65fb54a4050628f5b1c0c355412709070fe090728eac4e1eaf514a893217`. The same independent reviewer retained prior conversation context but read only the new pack during reassessment, so this is not a memory-clean replication. Council test counts overlap and are not additive confidence; source semantics remain a reviewed trust boundary. Phase 4 remains in progress pending finalizer publication, clean published-commit review and exact-SHA CI; phases 5-6 stay deferred. |
 | 2026-10-20 | Complete staged-diff inspection found P4-006: CV grounding hashed the bound project policy but still read editorial rules from the module checkout. Passed the explicit context policy path to validation and added an alternate-project anti-pattern regression with complete synthetic policy fixtures. Independent R2 reproduced the original bypass and verified rejection under the bound policy, default/restored passing controls and the expected old-fallback mutation failure. | Owner's 100 focused tests passed; each of the three final council advisors separately inspected the minimal three-file correction and passed its regression. Exact post-correction full suite passed 815 tests in 81.647 seconds, no skips, with disposable MongoDB 8/Python 3.14.6. Current 10/10 semantic receipt revalidated unchanged policy/input hashes; API-prohibition and diff checks passed. All P4-001 through P4-006 findings are closed. Only reviewed publication, clean published review and exact-SHA CI remain before phase-4 completion. |
 | 2026-10-20 | Accepted phase 4 after publication of `d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6` in PR 3. Fresh independent cumulative review R3 approved all 47 changed paths in a clean Windows checkout, supported closure of P4-001 through P4-006 and found no new confirmed P1/P2. Marked phase 4 done; phases 5-6 remain unstarted. | R3 observed 88 passing targeted executions without skips and two expected in-memory negative-control failures with restored passing controls. All nine employer chronologies equal the baseline; six remain within the configured scope. Fresh export/receipt recomputation preserves the recorded 10/10 bindings without independent semantic corroboration. Exact-head push CI 39442642289 and PR CI 39442699794 passed on attempt 1: 815 tests in 29.397/32.250 seconds, each with two missing-Poppler PDF skips. The final local full suite passed 815 in 81.647 seconds without skips. This acceptance increment changes documentation only and requires its own diff/link review and publication; no runtime suite repeat is claimed. Main, candidate sources, applications, statuses, catalog inputs and MongoDB contracts remain unchanged by this iteration. |
+| 2026-10-20 | Started phase 5 from merged phase-4 main `e87e8dd9dd973a963b058abe0a2827c66b6385cb` in new managed branch `ValentinNikolaev/multiaccount-p5`. Three independent architecture/risk/execution advisors inspected actual entrypoints; anonymized peer review is underway before implementation. The bounded design pins unsupported layout references and preserves the existing one-account resources. | Pre-change `python -m unittest discover -v` on Python 3.14.6 with a disposable MongoDB 8 replica set passed 815 tests in 227.222 seconds, no skips. Identified boundaries include pre-dispatch timing, subsidiary CLIs, direct archive/notification/restore scripts, current-directory Sheets routing, environment leakage and destination-scoped store caches. Implementation and acceptance remain pending; no production operations, candidate/artifact/status/catalog changes or phase-6 onboarding. |
+| 2026-10-20 | Preimplementation Quick council completed three independent first-principles/contrarian/execution passes and anonymized Orca-session peer review. Coordinator accepted bounded implementation with concerns converted to explicit gates: one `current` account, pinned unsupported references, operation-local credentials, coherent roots, pre-effect selection and a reviewed entrypoint inventory. | Convergence is not independent proof. The weakest point is distributed resource/root reconstruction, so acceptance requires actual early-rejection, cross-root/destination/credential tests and default/freshness parity. Descriptor/path-metadata reads and runtime dependency bootstrap may precede validation; operational reads/writes may not. CLI/process-environment disagreement rejects, dotenv cannot select an account. Existing source relevance and Zend exclusion remain scoped to the sole current account; broader onboarding stays deferred. No new runtime verification is claimed at this decision checkpoint. |
+| 2026-10-20 | Completed the dormant phase-5 contract increment: strict `config/accounts.yaml`, immutable `jobintel/accounts.py` context/resolver, safe selector extraction, freshness checks and read-only module gate; explicit descriptor-only fixtures and 33 focused tests. Added the account ownership/entrypoint guide. R1 independently approved the complete six-file delta; existing runtime consumers are still unchanged. | Owner's 33 tests passed in 1.602 seconds; independent R1 passed 33 in 1.574 seconds, no skips. R1 additionally verified real Windows internal/external config and registry junction rejection and root-alias parity; removing containment produced nine expected assertions across two tests, restored controls passed. Coordinator's final contract full suite passed 848 tests in 164.792 seconds on Python 3.14.6/disposable MongoDB 8, no skips. Runtime account wiring, operation-local credentials/cache isolation, scripts/Actions and final phase acceptance remain pending. No production, candidate/artifact/status/catalog or storage-contract changes. |

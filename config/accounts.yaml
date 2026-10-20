@@ -1,0 +1,20 @@
+schema_version: 1
+default_account: current
+accounts:
+  current:
+    references:
+      selection_policy: config/selection-policy.yaml
+      matching_policy: config/matching-policy.yaml
+      application_profile: config/application-profile.yaml
+      application_review: config/application-review.yaml
+      editorial_knowledge: config/cv-editorial-knowledge.yaml
+      workflow_policy: config/codex-workflows.yaml
+      data_services: config/data-services.yaml
+    paths:
+      sources: sources
+      registry: registry
+      catalog: catalog
+      archives: archives
+      notifications: notifications/telegram
+      work: .codex-work
+      environment: sources/.env
