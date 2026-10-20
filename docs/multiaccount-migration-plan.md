@@ -37,7 +37,9 @@ identities, candidate sources and published artifacts. PR 3 was merged as
 `e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Phase 5 is complete on
 `ValentinNikolaev/multiaccount-p5` from that updated main. Clean cumulative R6
 approved published runtime `d66943b60107a196dc7a04f94429a6932aca058e`; exact-head
-push and PR CI passed. PR 4 remains open and unmerged; phase 6 remains deferred.
+push and PR CI passed. PR 4 was merged as
+`c46d4b420a3405e177c29cce6da3378acafdc646`. The post-merge stabilization below
+is complete in PR 5; phase 6 remains deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
@@ -365,11 +367,12 @@ Scheduled Task behavior. Agent review records are posted by the author account,
 not separate GitHub-user approvals. The existing source bundle and Zend exclusion
 remain explicitly scoped to the sole current account. No second candidate, production
 operation, application generation, canonical record/artifact rewrite or MongoDB
-migration occurred. The PR stays open and unmerged for handoff.
+migration occurred. PR 4 was subsequently merged; the stabilization below is a
+separate reviewed follow-up.
 
 ## Post-merge phase-5 stabilization
 
-Status: In progress. This bounded follow-up keeps one live account and prepares
+Status: Done. This bounded follow-up keeps one live account and prepares
 operator guidance before phase 6. PR 4 was merged as
 `c46d4b420a3405e177c29cce6da3378acafdc646`; the new branch starts from updated main
 `bbe895399d2b492143382a5099f5195461249f5d`, preserving subsequent analysis, catalog
@@ -423,6 +426,33 @@ scan, complete diff inspection, reviewed publication, clean published review and
 exact-head CI. Keep live collection retries and deployed automation changes outside
 this iteration. The original phase-5 verification remains historical evidence;
 post-merge failures below are not passing checks.
+
+Accepted implementation at
+[`b0f6452`](https://github.com/ValentinNikolaev/job-intelligence/commit/b0f64528cc77a4f41f6a2c6c817635880e597c2f)
+in [PR 5](https://github.com/ValentinNikolaev/job-intelligence/pull/5): independent
+R1a/R1b/R1c increment reviews, fresh clean cumulative R2, corrected published R3
+and the final council/anonymous peer gates passed. R3 verified all 3,472 remaining
+tracked entries unchanged from the main base, actual LF helper under Windows CRLF
+checkout, and exact reviewed workflow/test hashes. Negative controls distinguish
+the original fixture error, missing primary readiness, swallowed failure and wrong
+runner selection. Reviews are independent agent assessments, not separate
+GitHub-user approvals; convergence is not additional proof.
+
+The local full suite passed 916 tests in 255.778 seconds without skips on
+Python 3.14.6/current selection/disposable MongoDB 8.
+[Corrected push CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39483820658)
+and [corrected PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39483830402)
+passed at that exact head on attempt 1: 916 tests in 72.219/66.547 seconds,
+respectively, with two missing-Poppler PDF skips each. Both actually reached a
+writable replica set, ran the real MongoDB tests and completed cleanup. The observed
+runner image was `ubuntu-22.04`, version `20261012.322.1`; its published inventory
+lists kernel 6.8. The image stream is mutable. The temporary compatibility workaround
+and its maintainer deadlines below remain open maintenance work, not phase-6 work.
+
+This acceptance update changes documentation only and requires its own independent
+diff/link review, publication and final-head CI before PR handoff. No additional
+local full-suite execution is claimed. Production operations, deployed tasks and
+second-account activation remain outside the evidence; phase 6 is not started.
 
 ### Temporary CI host compatibility
 
@@ -543,3 +573,4 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Final Quick council completed three independent scoped specialist/architecture views and anonymized Orca-session peer review. All scoped increments approved; conditional publication recommendation has no concrete must-fix. Coordinator inspected the complete ten-path staged diff, verified staged helper LF and excluded runtime/config/data/artifact/policy changes. | Convergence is not independent proof. The strongest reasoning connects the reproduced selector fixture defect and discriminating helper mutations to actual caller boundaries. The weakest point remains local Git Bash/fake-Docker versus actual Ubuntu startup; the real-Mongo local suite does not explain historical exits. Harness sanitization does not override production process precedence, and audit instrumentation is not OS isolation. Reviewed publication is accepted; final stabilization acceptance still requires clean published cumulative review and exact-head Ubuntu CI. New external effects, lost failure status, unbounded diagnostics, real helper defects or substantive tree divergence require correction. |
 | 2026-10-20 | Published initial stabilization as `458f4cf6bfa9cee1d4b2c59a83cfdc3098d996ef` in draft [PR 5](https://github.com/ValentinNikolaev/job-intelligence/pull/5). Fresh clean-checkout cumulative R2 approved all ten paths, independently passing 27 focused tests in 53.373 seconds without skips and verifying 3,472 remaining entries identical to the main base. | R2 reproduced the original selector and both helper mutation failures; 52 links and prohibited-API/diff checks passed. Push CI 39482308979 passed 916 tests in 64.493 seconds with two missing-Poppler skips, but PR CI 39482379187 failed before tests on a newer runner image. New diagnostics identified this occurrence as the MongoDB kernel guard, not OOM; cleanup passed. Historical undiagnosed exits remain unexplained. Acceptance remains in progress. |
 | 2026-10-20 | Applied the bounded CI host workaround documented above: test-job-only Ubuntu 22.04, explicit maintainer deadline and guarded return to a newer runner. Independent architecture, risk and execution reassessment conditionally accepted the workaround; their lifecycle concern moved removal ahead of the March 23 brownouts. | Owner passed all 12 helper checks in 36.233 seconds without skips; independent correction review approved after 12 in 36.433 seconds, and restoring the old runner in memory failed the intended assertion. Real Mongo image, guard, helper, tests and cleanup are unchanged. Source/link/diff checks passed. Corrected published verification and exact-head push/PR real-Mongo CI remain required; no repeat local full-suite run is claimed for this test/CI/documentation-only correction. |
+| 2026-10-20 | Accepted stabilization implementation at `b0f64528cc77a4f41f6a2c6c817635880e597c2f` after clean published R3 approved the corrected cumulative ten-path delta and exact-head push/PR CI passed. The bounded final council reassessment included three independent views and anonymized independent-session peer synthesis; no concrete code must-fix remains. Marked stabilization Done, preserved phase 6 Not started and corrected stale PR-4 handoff wording. | R3 confirmed reviewed executable hashes, actual LF helper under Windows CRLF and all 3,472 other tree entries unchanged; two cheap published-file checks passed in 0.081 seconds without skips. CI 39483820658/39483830402 passed 916 tests in 72.219/66.547 seconds, each with two missing-Poppler skips, writable Mongo replica set and successful cleanup. These are actual new-runner runs, not retries of the failed original run. This documentation-only acceptance requires independent diff/link review, publication and final-head CI before handoff. Runtime/configuration/canonical inputs are unchanged; catalog regeneration is unnecessary. |
