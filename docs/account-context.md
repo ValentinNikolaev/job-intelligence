@@ -146,3 +146,8 @@ decision and the required editorial evaluation before onboarding.
 
 Phase 6 remains responsible for a second live account, isolated operational
 destinations and end-to-end cross-account verification.
+
+The [second-account rollout and recovery checklist](second-account-rollout.md)
+records future provisioning, activation and recovery gates. Schema 1 cannot onboard
+a second account; a reviewed phase-6 contract extension must precede registration.
+The checklist does not authorize deployment or changes to live automation.

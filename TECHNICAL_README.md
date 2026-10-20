@@ -16,6 +16,10 @@ phase 4 source resolution, reviewed career corrections and draft/manifest identi
 The [single-account execution contract](docs/account-context.md) describes phase 5
 selection, supported paths, credential precedence and operational entrypoints.
 
+The [second-account rollout checklist](docs/second-account-rollout.md) defines future
+phase-6 prerequisites, activation gates and recovery steps; schema 1 still supports
+only the current account.
+
 The current MVP implements Adzuna, Arbeitnow, CleanJobData, DOU, Himalayas,
 Jobicy, Jobspresso, Jooble, We Work Remotely, public Ashby and Greenhouse
 job-board collectors, and custom company-board monitoring.

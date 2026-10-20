@@ -37,7 +37,9 @@ identities, candidate sources and published artifacts. PR 3 was merged as
 `e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Phase 5 is complete on
 `ValentinNikolaev/multiaccount-p5` from that updated main. Clean cumulative R6
 approved published runtime `d66943b60107a196dc7a04f94429a6932aca058e`; exact-head
-push and PR CI passed. PR 4 remains open and unmerged; phase 6 remains deferred.
+push and PR CI passed. PR 4 was merged as
+`c46d4b420a3405e177c29cce6da3378acafdc646`. The post-merge stabilization below
+is complete in PR 5; phase 6 remains deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
@@ -365,7 +367,120 @@ Scheduled Task behavior. Agent review records are posted by the author account,
 not separate GitHub-user approvals. The existing source bundle and Zend exclusion
 remain explicitly scoped to the sole current account. No second candidate, production
 operation, application generation, canonical record/artifact rewrite or MongoDB
-migration occurred. The PR stays open and unmerged for handoff.
+migration occurred. PR 4 was subsequently merged; the stabilization below is a
+separate reviewed follow-up.
+
+## Post-merge phase-5 stabilization
+
+Status: Done. This bounded follow-up keeps one live account and prepares
+operator guidance before phase 6. PR 4 was merged as
+`c46d4b420a3405e177c29cce6da3378acafdc646`; the new branch starts from updated main
+`bbe895399d2b492143382a5099f5195461249f5d`, preserving subsequent analysis, catalog
+and Telegram delivery commits.
+
+Tasks:
+
+- [x] Isolate direct-script subprocess selector environments and separately cover
+  unknown-account rejection and CLI/process disagreement without weakening guards.
+- [x] Add bounded, narrowly scoped diagnostics for isolated MongoDB CI startup
+  failures, preserving genuine failures, required integration tests and cleanup.
+- [x] Exercise representative checked-in automation commands on a synthetic stand
+  with the Actions account environment, real entrypoints and observable fixture
+  results. Distinguish external-boundary mocks, static inspection and unverified
+  deployed Scheduled Task settings from successful local execution.
+- [x] Document future second-account provisioning, activation prerequisites and
+  rollback/recovery without enabling it or changing the current MongoDB contract.
+
+The bounded acceptance matrix is:
+
+| Deliverable | Required observable result | Verification boundary |
+| --- | --- | --- |
+| Selector subprocess isolation | All four scripts reject unknown-only and actual CLI/process conflict with exit 2 before effects; former fixture failure reproduced | Direct child processes with explicit environments plus operational sentinels; resolver unchanged |
+| MongoDB CI diagnostics | Success remains successful; early exit, exhausted readiness, initialization and diagnostic failures remain nonzero with bounded useful evidence | Testable helper with stubbed Docker, real disposable replica set for integration tests; cause of historical exits remains unknown until observed |
+| Synthetic automation stand | Real selected-root commands produce expected seeded catalog/archive/receipt results, while a second synthetic root and external destinations remain untouched | Test-owned temporary configuration, allowlisted environment, explicit absolute synthetic dotenv; distinguish blocked/mocked boundaries from actual command effects |
+| Future-account operator guide | Prerequisites and explicit activation gates, separate resources, before/after-write rollback and history-preserving recovery | Documentation review; schema 1 still rejects a second account and deployed settings remain unverified |
+
+Observed local stand commands (A and B are temporary roots with the supported
+`current` descriptor; E is an absolute external synthetic dotenv):
+
+| Executed boundary | Observable fixture result | Remaining limit |
+| --- | --- | --- |
+| Account gate and four benchmark APIs from unrelated B | Selected A's seeded vacancies/usage and expected limits; B unchanged | This tests local root routing, not deployed Scheduled Task settings |
+| Explicit E and YAML storage doctor | E's limit 7 overrides A's default dotenv limit 99; healthy YAML fixture storage | Hostile parent value 501 is removed by the harness, not overridden by production CLI; process precedence remains intact |
+| Direct low-score archive | One seeded directory removed into a ZIP with exact original file bytes; pending record retained | Fixture mutation, not production archival |
+| Reindex, catalog and follow-up catalog API | Surviving selected vacancy present; archived and unrelated content absent | Generated fixture files, not a refresh of the live catalog |
+| Direct Telegram duplicate delivery | Valid hashed notification consumed, prior receipt preserved and duplicate-skipped receipt written without sending | Receipt/deduplication behavior, not successful transport delivery |
+| Guard controls and B snapshot | DNS/TCP denied before access; all positive children load audit hooks; B's complete tree remains byte-identical | Enumerated CPython audit instrumentation, not an OS security sandbox |
+
+All children use an allowlisted runtime environment with current selection.
+Provider collection, model analysis/result publication, application preparation,
+mail/status operations, Sheets connectors, backup/restore, Atlas grants, repository
+publication and deployed tasks are outside this stand. Real MongoDB checks are
+separate full-suite evidence. Additional reviewer controls for ordinary outside
+write/removal, child processes, os.system and UDP passed but are not new persisted
+regression tests.
+
+Acceptance requires independent architecture/council and code review, negative
+controls, the full unittest suite against disposable MongoDB, the prohibited-API
+scan, complete diff inspection, reviewed publication, clean published review and
+exact-head CI. Keep live collection retries and deployed automation changes outside
+this iteration. The original phase-5 verification remains historical evidence;
+post-merge failures below are not passing checks.
+
+Accepted implementation at
+[`b0f6452`](https://github.com/ValentinNikolaev/job-intelligence/commit/b0f64528cc77a4f41f6a2c6c817635880e597c2f)
+in [PR 5](https://github.com/ValentinNikolaev/job-intelligence/pull/5): independent
+R1a/R1b/R1c increment reviews, fresh clean cumulative R2, corrected published R3
+and the final council/anonymous peer gates passed. R3 verified all 3,472 remaining
+tracked entries unchanged from the main base, actual LF helper under Windows CRLF
+checkout, and exact reviewed workflow/test hashes. Negative controls distinguish
+the original fixture error, missing primary readiness, swallowed failure and wrong
+runner selection. Reviews are independent agent assessments, not separate
+GitHub-user approvals; convergence is not additional proof.
+
+The local full suite passed 916 tests in 255.778 seconds without skips on
+Python 3.14.6/current selection/disposable MongoDB 8.
+[Corrected push CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39483820658)
+and [corrected PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39483830402)
+passed at that exact head on attempt 1: 916 tests in 72.219/66.547 seconds,
+respectively, with two missing-Poppler PDF skips each. Both actually reached a
+writable replica set, ran the real MongoDB tests and completed cleanup. The observed
+runner image was `ubuntu-22.04`, version `20261012.322.1`; its published inventory
+lists kernel 6.8. The image stream is mutable. The temporary compatibility workaround
+and its maintainer deadlines below remain open maintenance work, not phase-6 work.
+
+This acceptance update changes documentation only and requires its own independent
+diff/link review, publication and final-head CI before PR handoff. No additional
+local full-suite execution is claimed. Production operations, deployed tasks and
+second-account activation remain outside the evidence; phase 6 is not started.
+
+### Temporary CI host compatibility
+
+The first stabilization push at `458f4cf` passed on runner image
+`20261012.334.1` (kernel 6.17), while PR run
+[39482379187](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39482379187)
+failed before tests on image `20261018.339.1` (kernel `7.0.0-1017-azure`).
+The new diagnostics captured MongoDB fatal `12257600`, container exit 1 and
+`oom_killed=false`: this occurrence hit MongoDB's kernel compatibility guard.
+Earlier undiagnosed exits remain unexplained. Cleanup still succeeded; skipped
+tests in the failed run are not passing evidence.
+
+Only the MongoDB test job temporarily selects `ubuntu-22.04`, whose current
+[runner inventory](https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2204-Readme.md)
+lists kernel 6.8. The label remains a moving image, so actual CI is mandatory.
+The official `mongo:8.0` image currently supplies 8.0.34; the Ubuntu-specific
+kernel exemption is recorded for 8.0.35 in
+[SERVER-131779](https://jira.mongodb.org/browse/SERVER-131779).
+Keep the MongoDB image, compatibility guard, real replica-set tests, timeouts and
+cleanup intact. This workaround changes the test host, not production MongoDB.
+
+The repository maintainer must review this pin by **2027-03-01**. Return to a
+supported newer runner only after the official Mongo image contains the needed
+fix and its full real-Mongo suite passes on that runner. Complete migration before
+the Ubuntu 22.04 brownouts starting **2027-03-23**, ahead of its
+[2027-04-17 retirement](https://github.com/actions/runner-images/issues/14254).
+Do not bypass the database guard or repeatedly rerun failed startup to obtain a
+green result. Exact-head CI and clean published review remain acceptance gates.
 
 ## Phase 6: connect the second account last
 
@@ -448,3 +563,14 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Corrected integrated verification completed: `python -m unittest discover -v` passed 900 tests in 284.203 seconds on Python 3.14.6 with a disposable MongoDB 8 replica set, no skips. The final project code/configuration API-prohibition search found no prohibited integrations; local links and diff checks passed. | Runtime implementation checklist items are complete, including explicit current-account source/Zend ownership limits. Phase 5 stays in progress until final council synthesis, complete staged inspection, reviewed publication, clean cumulative published-code review and exact-head CI. Canonical catalog inputs did not change, so catalog regeneration is not required. |
 | 2026-10-20 | Final Quick council and anonymized Orca-session peer review conditionally accepted reviewed publication of the frozen single-current-account runtime. Three specialists converged on bounded authority/configuration ownership without a new concrete must-fix; the peer independently observed 17 distinct focused tests, reproduced the five old-fixture failures in memory, restored all 10 collection-safety passes and confirmed the corrected full-suite log. Complete 52-path staged runtime diff inspection followed; no unrelated records, credentials or artifacts are staged. | The strongest argument examines the caller-trusted explicit-store seam and the actual guarded restore caller. The weakest accepted point is future operational callers bypassing account guards when using account-independent primitives; ContextVar scoping does not establish concurrent tenancy. The receipt field `source_files_mutated: false` is an assertion supported by inspected control flow/tests, not independent before/after forensic measurement. Convergence and overlapping counts are not additional proof. Reproduced pre-gate effects, destination drift or substantive published-tree differences require reassessment. Clean published cumulative review and exact-head CI remain mandatory before phase acceptance; deployed Scheduled Task settings have not been inspected or changed. |
 | 2026-10-20 | Accepted phase 5 after independent clean cumulative R6 approved the complete 53-path published delta at `d66943b60107a196dc7a04f94429a6932aca058e`. P5-001 and P5-002 are closed on the actual CRLF Windows checkout; no new confirmed P1/P2 or material missing test. Marked phase 5 Done; phase 6 remains Not started. | R6 passed 117 tests in 32.709 seconds and 69 in 14.980 seconds, no skips; four real configuration/registry junction redirections rejected and root-alias parity passed in 0.586 seconds. In-memory old-behavior negatives reproduced both reviewed defects and restored controls passed in 1.431 seconds. Unrelated Qonto match blob and empty registry diff verified. Exact-head push CI 39467930438 attempt 1 and PR CI 39467937515 attempt 2 passed 900 tests in 47.868/54.188 seconds, each with two missing-Poppler PDF skips; the local complete suite passed all 900 without skips. PR attempt 1 stopped before tests on Mongo container exit of unknown cause; it is retained as failed evidence. Final council release conditions are satisfied for the bounded runtime; this acceptance increment changes documentation only and requires its own review/publication and final-head CI before PR handoff. No runtime full-suite repeat is claimed. |
+| 2026-10-20 | Started the authorized four-point post-merge stabilization on `ValentinNikolaev/multiaccount-stabilization` from updated main `bbe895399d2b492143382a5099f5195461249f5d`. Inspected actual failure logs and began three independent preimplementation architecture/risk/execution council passes. | Main CI 39472515338 failed before tests when its isolated MongoDB container exited; root cause is unknown because diagnostic logs were absent. Collection 39472977120 completed collection, triage, archive and storage checks, but its final gate correctly blocked publication after four direct-script subtests failed. The subprocesses inherited `JOBINTEL_ACCOUNT=current` and correctly rejected conflicting unknown CLI selection; the tests expected the other error branch. Root reproduced a selector-free pass versus four failures with current, without production operations. Runtime guards stay strict; implementation and acceptance remain pending. |
+| 2026-10-20 | Preimplementation Quick council completed three independent architecture/risk/execution passes and anonymized Orca-session peer review. Accepted the four-point increment with explicit command-to-evidence gates and separate code/test/guide owners. | Architecture is sound for the bounded follow-up; convergence is not independent proof. The weakest point is sampled automation coverage: six empty-state feasibility commands are not acceptance evidence. Require seeded fixture effects, a second synthetic-root sentinel, explicit external synthetic dotenv, blocked external boundaries and real replica-set transaction tests without skips. Diagnostics must preserve failures and cleanup, cap output/durations and never dump broad environment or full container configuration. No schema/runtime guard, live destination, model policy or deployed automation change is authorized by this design. |
+| 2026-10-20 | Implemented and independently reviewed the future second-account operator guide, linked from the account guide and technical README. Independent R1c approved the complete three-document increment against the current resolver, ownership and recovery contracts. | All 46 local links resolve and scoped whitespace checks passed; the read-only current-account gate returned current. No runtime, deployed automation, provider/message/storage operation or full suite was exercised by that review. The guide explicitly keeps schema-1 onboarding unsupported, activation separately authorized, and uncertain deliveries/history preserved during recovery. |
+| 2026-10-20 | Implemented the test-owned automation stand in `tests/test_account_automation.py`: 11 positive real subprocess entrypoints and two blocked transport controls with supported current-account descriptors in two temporary roots. Seeded data exercises nonempty benchmark APIs, explicit external synthetic dotenv precedence, YAML storage doctor, actual archive ZIP/removal, reindex/catalog and valid Telegram duplicate-skip receipt movement. | Owner focused verification under `JOBINTEL_ACCOUNT=current` passed 46 tests in 35.233 seconds with no skips. Every child starts from unrelated fixture B; its full tree stays byte-identical. Verified child audit guards deny network, nested transport processes and audited writes outside the temporary sandbox, with a narrow Windows stdlib socketpair exception. This is local fixture evidence, not live delivery, actual GitHub jobs, deployed Scheduled Tasks, provider collection, analysis/preparation, backup/restore or MongoDB verification. Independent stand review and the full real-Mongo suite remain pending; overlapping targeted counts are not additive proof. |
+| 2026-10-20 | Completed selector isolation and the testable MongoDB CI startup helper. The helper waits for ping and writable primary, bounds commands with forced kill deadlines, detects exited containers, reports allowlisted state and capped logs, preserves original failure even when diagnostics fail, and leaves always-run cleanup intact. CI now uses current selection and triggers on helper changes; only the helper gets a new LF rule. | Owner passed 84 account tests with selector absent in 26.522 seconds and current in 11.237 seconds, plus 12 fake-Docker/workflow/Bash checks in 43.054 seconds, no skips. Original base fixture reproduces exactly four assertion failures under current. Independent R1a approved after 11 script tests in 8.227/7.881 seconds, 12 helper checks in 50.207 seconds, no skips; old fixture reproduced four failures in 6.011 seconds. Scratch mutations removing primary readiness and suppressing failure exit failed as expected in 0.470/0.617 seconds. Historical MongoDB startup cause remains unknown until actual diagnostics identify it. |
+| 2026-10-20 | Independent R1b approved the full synthetic stand and traced actual CLI/environment/storage/archive/Telegram caller contracts; final architecture view is sound with no concrete must-fix. All four implementation checklist items are locally complete, while publication acceptance remains in progress. | R1b independently passed four stand tests in 14.764 seconds and six extra fixture controls in 5.907 seconds, no skips. Hostile values are removed by the harness; production process overrides still win. The audit hook is event instrumentation, not OS isolation. Guide, CI and stand reviewers found no confirmed blocker; overlapping reports do not add independent proof. Final anonymized peer synthesis, complete staged inspection, clean published review and exact-head Ubuntu CI remain required. |
+| 2026-10-20 | Coordinator integrated discovery passed 916 tests in 255.778 seconds on Python 3.14.6 with `JOBINTEL_ACCOUNT=current` and a real disposable MongoDB 8 replica set, no skips. Required Mongo transaction/restore/storage tests actually executed. Final project code/configuration API search found no prohibited integrations; 52 local links and diff checks passed. | This passing gate includes the production-like selector environment missing from the old check. No runtime/config/prompt/canonical record/artifact/source/model-policy changes are present. Catalog inputs are unchanged, so live catalog regeneration is not required. Exact Ubuntu helper startup, publication and clean-checkout gates remain pending; local fake-Docker success does not substitute for them. |
+| 2026-10-20 | Final Quick council completed three independent scoped specialist/architecture views and anonymized Orca-session peer review. All scoped increments approved; conditional publication recommendation has no concrete must-fix. Coordinator inspected the complete ten-path staged diff, verified staged helper LF and excluded runtime/config/data/artifact/policy changes. | Convergence is not independent proof. The strongest reasoning connects the reproduced selector fixture defect and discriminating helper mutations to actual caller boundaries. The weakest point remains local Git Bash/fake-Docker versus actual Ubuntu startup; the real-Mongo local suite does not explain historical exits. Harness sanitization does not override production process precedence, and audit instrumentation is not OS isolation. Reviewed publication is accepted; final stabilization acceptance still requires clean published cumulative review and exact-head Ubuntu CI. New external effects, lost failure status, unbounded diagnostics, real helper defects or substantive tree divergence require correction. |
+| 2026-10-20 | Published initial stabilization as `458f4cf6bfa9cee1d4b2c59a83cfdc3098d996ef` in draft [PR 5](https://github.com/ValentinNikolaev/job-intelligence/pull/5). Fresh clean-checkout cumulative R2 approved all ten paths, independently passing 27 focused tests in 53.373 seconds without skips and verifying 3,472 remaining entries identical to the main base. | R2 reproduced the original selector and both helper mutation failures; 52 links and prohibited-API/diff checks passed. Push CI 39482308979 passed 916 tests in 64.493 seconds with two missing-Poppler skips, but PR CI 39482379187 failed before tests on a newer runner image. New diagnostics identified this occurrence as the MongoDB kernel guard, not OOM; cleanup passed. Historical undiagnosed exits remain unexplained. Acceptance remains in progress. |
+| 2026-10-20 | Applied the bounded CI host workaround documented above: test-job-only Ubuntu 22.04, explicit maintainer deadline and guarded return to a newer runner. Independent architecture, risk and execution reassessment conditionally accepted the workaround; their lifecycle concern moved removal ahead of the March 23 brownouts. | Owner passed all 12 helper checks in 36.233 seconds without skips; independent correction review approved after 12 in 36.433 seconds, and restoring the old runner in memory failed the intended assertion. Real Mongo image, guard, helper, tests and cleanup are unchanged. Source/link/diff checks passed. Corrected published verification and exact-head push/PR real-Mongo CI remain required; no repeat local full-suite run is claimed for this test/CI/documentation-only correction. |
+| 2026-10-20 | Accepted stabilization implementation at `b0f64528cc77a4f41f6a2c6c817635880e597c2f` after clean published R3 approved the corrected cumulative ten-path delta and exact-head push/PR CI passed. The bounded final council reassessment included three independent views and anonymized independent-session peer synthesis; no concrete code must-fix remains. Marked stabilization Done, preserved phase 6 Not started and corrected stale PR-4 handoff wording. | R3 confirmed reviewed executable hashes, actual LF helper under Windows CRLF and all 3,472 other tree entries unchanged; two cheap published-file checks passed in 0.081 seconds without skips. CI 39483820658/39483830402 passed 916 tests in 72.219/66.547 seconds, each with two missing-Poppler skips, writable Mongo replica set and successful cleanup. These are actual new-runner runs, not retries of the failed original run. This documentation-only acceptance requires independent diff/link review, publication and final-head CI before handoff. Runtime/configuration/canonical inputs are unchanged; catalog regeneration is unnecessary. |

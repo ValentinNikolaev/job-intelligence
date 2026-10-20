@@ -378,7 +378,8 @@ Independent clean cumulative R6 approved published runtime `d66943b6`, closed bo
 reviewed findings and passed 186 targeted executions without skips. Exact-head
 push and PR CI passed 900 tests with two missing-Poppler PDF skips each; the local
 full suite passed all 900 without skips. The [execution log](multiaccount-migration-plan.md#execution-log)
-records failed attempts, corrected checks and final council limitations. PR 4 remains
-open and unmerged; phase 6 remains deferred.
+records failed attempts, corrected checks and final council limitations. PR 4 was
+merged as `c46d4b420a3405e177c29cce6da3378acafdc646`; its post-merge stabilization
+is recorded in the plan and PR 5. Phase 6 remains deferred.
 Candidate evidence, canonical records, artifacts, status, catalog inputs and the
 MongoDB storage contract are unchanged by this implementation.
