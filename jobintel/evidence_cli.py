@@ -2,10 +2,14 @@
 from __future__ import annotations
 
 import argparse
+import sys
 import json
 import os
 import tempfile
 from pathlib import Path
+
+from .accounts import AccountConfigurationError, AccountContext, resolve_account_arguments
+from .storage_bridge import operation_resources
 
 import yaml
 
@@ -28,8 +32,23 @@ def _output_path(root: Path, path: Path, context: PreparationContext) -> Path:
     return target
 
 
-def main(argv: list[str] | None = None, *, root: Path) -> int:
-    parser = argparse.ArgumentParser(description="Validate and maintain source-backed candidate evidence.")
+def main(argv=None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
+    try:
+        context, arguments = resolve_account_arguments(
+            list(sys.argv[1:] if argv is None else argv), root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+        with operation_resources(context):
+            return _main(arguments, root=context.project_root)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+
+
+def _main(argv=None, *, root: Path) -> int:
+    parser = argparse.ArgumentParser(description="Validate and maintain source-backed candidate evidence.", allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, help="account project directory")
     commands = parser.add_subparsers(dest="action", required=True)
     validate = commands.add_parser("validate", help="Check source quotes, hashes and verification provenance")
     validate.add_argument("--bank", type=Path)
@@ -86,3 +105,7 @@ def main(argv: list[str] | None = None, *, root: Path) -> int:
     except (OSError, ValueError, TypeError, KeyError, yaml.YAMLError) as exc:
         print(f"Evidence error: {exc}")
         return 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

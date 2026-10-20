@@ -238,6 +238,57 @@ def require_account_context(
     return current
 
 
+
+def resolve_account_arguments(
+    argv: Sequence[str],
+    *,
+    root: Path | None = None,
+    context: AccountContext | None = None,
+    default_root: Path,
+) -> tuple[AccountContext, list[str]]:
+    """Resolve exact common selectors before a command parser or operational work."""
+    account, arguments = extract_account_selector(argv)
+    remaining: list[str] = []
+    explicit_root = None
+    index = 0
+    while index < len(arguments):
+        argument = arguments[index]
+        if argument == "--":
+            remaining.extend(arguments[index:])
+            break
+        if argument == "--project-root":
+            index += 1
+            if index == len(arguments) or arguments[index].startswith("-"):
+                raise AccountConfigurationError("--project-root requires a directory")
+            value = arguments[index]
+        elif argument.startswith("--project-root="):
+            value = argument[len("--project-root="):]
+        else:
+            remaining.append(argument)
+            index += 1
+            continue
+        if not value or value != value.strip():
+            raise AccountConfigurationError("--project-root requires a nonempty trimmed directory")
+        candidate = _root(Path(value))
+        if explicit_root is not None and candidate != explicit_root:
+            raise AccountConfigurationError("conflicting command-line project roots")
+        explicit_root = candidate
+        index += 1
+    if context is not None and not isinstance(context, AccountContext):
+        raise AccountConfigurationError("invalid account context")
+    selected_root = _root(
+        root if root is not None else
+        context.project_root if context is not None else
+        explicit_root if explicit_root is not None else default_root
+    )
+    if explicit_root is not None:
+        if (root is not None or context is not None) and selected_root != explicit_root:
+            raise AccountConfigurationError("command-line project root conflicts with the supplied root or context")
+        selected_root = explicit_root
+    current = require_account_context(selected_root, context, account=account)
+    return current, remaining
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     """Validate account control-plane configuration without operational access."""
     parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)

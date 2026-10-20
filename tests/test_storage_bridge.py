@@ -4,6 +4,7 @@ Run with ``JOBINTEL_TEST_MONGODB_URI`` pointing at a disposable local replica se
 Each test run creates and drops only a randomized ``jobintel_test_`` database.
 """
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import os
 import shutil
@@ -18,6 +19,7 @@ from unittest.mock import patch
 import yaml
 
 from jobintel import storage_bridge as bridge
+from jobintel.accounts import load_account_context
 from jobintel.api_usage import ApiUsageLog
 from jobintel.matching import MatchAnalyzer
 from jobintel.manual_status_log import ManualStatusEvent, append_manual_status_event
@@ -46,6 +48,7 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         self.temp = Path(tempfile.mkdtemp(prefix="jobintel-storage-bridge-"))
         self.database_name = f"jobintel_test_{uuid.uuid4().hex}"
         (self.temp / "config").mkdir()
+        write_file_account_config(self.temp)
         (self.temp / "sources").mkdir()
         (self.temp / "registry" / "candidate").mkdir(parents=True)
         (self.temp / "registry" / "candidate" / "match-profile.md").write_text("Candidate evidence", encoding="utf-8")
@@ -97,6 +100,24 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         self.assertFalse((directory / "triage.yaml").exists())
         write_triage(directory)
         self.assertTrue(should_skip_model(directory) is False)
+
+    def test_account_resources_keep_explicit_mongo_destinations_separate(self) -> None:
+        created = self.registry.upsert(self._job())
+        context = load_account_context(self.temp)
+        other_database = f"jobintel_test_{uuid.uuid4().hex}"
+        try:
+            with bridge.operation_resources(context, environment={"MONGODB_URI": TEST_URI, "JOBINTEL_DATABASE_NAME": self.database_name}):
+                first = bridge.get_store(self.temp / "registry")
+                self.assertEqual(created.vacancy_id, first.list_vacancies()[0]["_id"])
+            with bridge.operation_resources(context, environment={"MONGODB_URI": TEST_URI, "JOBINTEL_DATABASE_NAME": other_database}):
+                second = bridge.get_store(self.temp / "registry")
+                self.assertEqual([], second.list_vacancies())
+                self.assertIsNot(first, second)
+            with bridge.operation_resources(context, environment={"MONGODB_URI": TEST_URI, "JOBINTEL_DATABASE_NAME": self.database_name}):
+                self.assertIs(first, bridge.get_store(self.temp / "registry"))
+                self.assertEqual(created.vacancy_id, self.registry._scan()[0]["meta"]["id"])
+        finally:
+            self.store.client.drop_database(other_database)
 
     def test_collection_batch_uses_bulk_writes_and_replay_is_unchanged(self) -> None:
         from jobintel.cli import _store_collected_jobs
@@ -481,6 +502,7 @@ class StorageBridgeNoFallbackTests(unittest.TestCase):
         root = Path(tempfile.mkdtemp(prefix="jobintel-storage-no-uri-"))
         try:
             (root / "config").mkdir()
+            write_file_account_config(root)
             (root / "registry" / "jobs").mkdir(parents=True)
             (root / "config" / "data-services.yaml").write_text("storage:\n  backend: mongodb\n", encoding="utf-8")
             (root / "registry" / "jobs" / "stale" / "meta.yaml").parent.mkdir()

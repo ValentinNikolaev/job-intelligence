@@ -18,6 +18,7 @@ jobs:
   deliver:
     runs-on: ubuntu-latest
     env:
+      JOBINTEL_ACCOUNT: current
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
@@ -36,6 +37,9 @@ jobs:
 
       - name: Install project
         run: python -m pip install -e .
+
+      - name: Validate account configuration
+        run: python -m jobintel.accounts --account current
 
       - name: Deliver queued notifications
         shell: bash

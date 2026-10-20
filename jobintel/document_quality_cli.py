@@ -8,14 +8,32 @@ import sys
 import tempfile
 from pathlib import Path
 
+from .accounts import AccountConfigurationError, AccountContext, resolve_account_arguments
+from .storage_bridge import operation_resources
+
 import yaml
 
 from .document_quality import DocumentQualityError, cv_role_page_warnings, export_pdf, pdf_page_count, preview_capabilities, render_pdf_pages, validate_export, verify_cv_experience
 from .preparation_timing import timed_call
 
 
-def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="run.py documents")
+def main(argv=None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
+    try:
+        context, arguments = resolve_account_arguments(
+            list(sys.argv[1:] if argv is None else argv), root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+        with operation_resources(context):
+            return _main(arguments, root=context.project_root)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+
+
+def _main(argv=None, *, root: Path) -> int:
+    parser = argparse.ArgumentParser(prog="run.py documents", allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, help="account project directory")
     commands = parser.add_subparsers(dest="action", required=True)
     validate = commands.add_parser("validate", help="Compare an actual DOCX/PDF with its canonical Markdown")
     validate.add_argument("source", type=Path, help="Canonical Markdown")
@@ -36,7 +54,7 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
     preview.add_argument("source", type=Path, help="Draft cv.md under .codex-work")
     preview.add_argument("--max-pages", type=int, default=2)
     args = parser.parse_args(argv)
-    base = Path(root or Path.cwd())
+    base = root
 
     def resolve(path: Path) -> Path:
         return path if path.is_absolute() else base / path

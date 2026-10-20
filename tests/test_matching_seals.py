@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import copy
 import os
@@ -49,6 +50,7 @@ class MatchingSealTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         (self.root / "config").mkdir()
+        write_file_account_config(self.root)
         for name in ("matching-policy.yaml", "selection-policy.yaml", "codex-workflows.yaml"):
             (self.root / "config" / name).write_bytes((ROOT / "config" / name).read_bytes())
         (self.root / "prompts").mkdir()

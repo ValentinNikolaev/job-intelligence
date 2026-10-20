@@ -15,6 +15,7 @@ from jobintel.evidence import bootstrap_evidence_bank
 from jobintel.evidence_cli import main
 from jobintel.cli import main as root_main
 from tests.preparation_fixtures import write_preparation_config
+from tests.account_fixtures import write_account_config
 
 
 class EvidenceCommandTests(unittest.TestCase):
@@ -40,6 +41,7 @@ class EvidenceCommandTests(unittest.TestCase):
         (self.root / '.codex-work').mkdir()
         (self.root / 'registry/candidate/cv.md').write_text('Example: Backend Engineer using PHP.\n', encoding='utf-8')
         write_preparation_config(self.root, profile_sources=["registry/candidate/cv.md"])
+        write_account_config(self.root)
         self.extracts = [{'id': 'php', 'source': {'path': 'registry/candidate/cv.md', 'quote': 'Example: Backend Engineer using PHP.'}}]
         self.bank = bootstrap_evidence_bank(self.root, self.extracts)
 

@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 from tests.preparation_fixtures import write_preparation_config
 
 from functools import partial
@@ -328,6 +329,7 @@ class ApplicationTests(unittest.TestCase):
         (self.project / "prompts").mkdir()
         original_root = Path(__file__).resolve().parents[1]
         (self.project / "config").mkdir()
+        write_file_account_config(self.project)
         for name in ("matching-policy.yaml", "codex-workflows.yaml", "selection-policy.yaml"):
             (self.project / "config" / name).write_bytes((original_root / "config" / name).read_bytes())
         for name in ("vacancy-match.md", "vacancy-application.md"):

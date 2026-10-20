@@ -1,5 +1,6 @@
 """Synthetic, fixed-time behavior oracle for the personal-rule extraction."""
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import tempfile
 import unittest
@@ -76,6 +77,7 @@ class SelectionBaselineTests(unittest.TestCase):
             project = Path(temporary)
             registry_root = project / "registry"
             (project / "config").mkdir()
+            write_file_account_config(project)
             (project / "config/selection-policy.yaml").write_bytes((ROOT / "config/selection-policy.yaml").read_bytes())
             (project / "config/matching-policy.yaml").write_bytes((ROOT / "config/matching-policy.yaml").read_bytes())
             (project / "prompts").mkdir()
@@ -113,6 +115,6 @@ class SelectionBaselineTests(unittest.TestCase):
             self.assertEqual(expected, [row.vacancy.vacancy_id for row in rows])
             output = StringIO()
             with redirect_stdout(output), patch("jobintel.cli.load_env", return_value={}):
-                result = main(["pending", "analyze", "all", "--workflow", "analyze", "--registry", str(registry_root), "--profile", str(profile)])
+                result = main(["pending", "analyze", "all", "--workflow", "analyze", "--registry", str(registry_root), "--profile", str(profile)], root=project)
             self.assertEqual(0, result, output.getvalue())
             self.assertEqual([str(directories[key]) for key in expected], output.getvalue().splitlines())

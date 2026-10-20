@@ -10,3 +10,12 @@ def write_account_config(root: Path) -> Path:
     if not target.is_file() or target.read_bytes() != content:
         target.write_bytes(content)
     return target
+
+
+def write_file_account_config(root: Path) -> Path:
+    """Declare isolated filesystem storage without overriding a configured backend."""
+    descriptor = write_account_config(root)
+    storage = Path(root) / "config/data-services.yaml"
+    if not storage.exists():
+        storage.write_text("storage:\n  backend: yaml\n  cutover_verified: false\n", encoding="utf-8")
+    return descriptor

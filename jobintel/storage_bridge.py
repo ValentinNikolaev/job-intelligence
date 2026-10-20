@@ -13,15 +13,90 @@ import uuid
 from collections.abc import Mapping, Sequence
 from functools import wraps
 from contextlib import contextmanager
+from contextvars import ContextVar
+from dataclasses import dataclass, field
 from pathlib import Path
+from types import MappingProxyType
 from typing import Any
 
 import yaml
 
-from .config import load_env
+from .config import load_env, resolve_environment
+from .accounts import AccountConfigurationError, AccountContext, require_account_context
 
 _STORES: dict[tuple[str, str, str], Any] = {}
 _LOCAL = threading.local()
+
+
+@dataclass(frozen=True)
+class _OperationResources:
+    context: AccountContext
+    environment: Mapping[str, str] | None = field(default=None, repr=False)
+    env_path: Path | None = None
+
+
+_RESOURCES: ContextVar[_OperationResources | None] = ContextVar("jobintel_operation_resources", default=None)
+
+
+@contextmanager
+def operation_resources(
+    context: AccountContext, *, environment: Mapping[str, str] | None = None,
+    env_path: Path | None = None,
+):
+    """Bind validated project resources for one operation, restoring them on exit."""
+    current = require_account_context(context.project_root, context)
+    parent = _RESOURCES.get()
+    if parent is not None:
+        parent.context.require_root(current.project_root)
+        if parent.context != current:
+            raise AccountConfigurationError("operation resources belong to a stale account context")
+    if environment is None and env_path is None and parent is not None:
+        environment, env_path = parent.environment, parent.env_path
+    resources = _OperationResources(
+        current, MappingProxyType(dict(environment)) if environment is not None else None,
+        Path(env_path).resolve() if env_path is not None else None,
+    )
+    token = _RESOURCES.set(resources)
+    try:
+        yield resources
+    finally:
+        _RESOURCES.reset(token)
+
+
+def _configured(root: Path) -> bool:
+    return any(os.path.lexists(root / "config" / name) for name in ("accounts.yaml", "data-services.yaml"))
+
+
+def _validated_context(root: Path, context: AccountContext | None = None) -> AccountContext | None:
+    resources = _RESOURCES.get()
+    if resources is not None:
+        resources.context.require_root(root)
+        if context is None:
+            context = resources.context
+    if context is not None or _configured(root):
+        return require_account_context(root, context)
+    return None
+
+
+def resource_environment(context: AccountContext) -> dict[str, str]:
+    """Return effective credentials while keeping selector provenance separate."""
+    current = require_account_context(context.project_root, context)
+    return _environment_for(current)
+
+
+def _environment_for(current: AccountContext) -> dict[str, str]:
+    resources = _RESOURCES.get()
+    if resources is not None:
+        resources.context.require_root(current.project_root)
+        if resources.context != current:
+            raise AccountConfigurationError("operation resources belong to a stale account context")
+        if resources.environment is not None:
+            return dict(resources.environment)
+        if resources.env_path is not None:
+            return resolve_environment(current.path("environment"), override_path=resources.env_path)
+    return load_env(current.path("environment"))
+
+
 _FIELDS = {"meta.yaml": "meta", "match.yaml": "match", "triage.yaml": "triage",
            "job.md": "job_text", "company.md": "company_text"}
 _LOGS = {"manual-status-log.yaml", "codex-usage.yaml", "source-api-usage.yaml", "application-confirmations.yaml"}
@@ -32,26 +107,34 @@ def project_root(path: Path) -> Path | None:
     for parent in (path, *path.parents):
         if parent.name == "registry":
             return parent.parent
-        if (parent / "config" / "data-services.yaml").is_file():
+        if _configured(parent):
             return parent
     return None
 
 
-def get_store(path: Path):
-    scoped = getattr(_LOCAL, "store", None)
-    if scoped is not None and path.resolve().is_relative_to(scoped[0]):
-        return scoped[1]
+def get_store(path: Path, *, context: AccountContext | None = None, environment: Mapping[str, str] | None = None):
     root = project_root(path)
     if root is None:
+        if context is not None or _RESOURCES.get() is not None:
+            raise AccountConfigurationError("operational path has no selected project root")
         return None
-    config_path = root / "config" / "data-services.yaml"
+    context = _validated_context(root, context)
+    config_path = context.reference("data_services") if context else root / "config" / "data-services.yaml"
     # Fixture registries without project configuration never acquire production access.
     if not config_path.is_file():
+        if context is not None:
+            raise FileNotFoundError("selected account storage configuration is missing")
         return None
     config = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
-    env = load_env(root / "sources" / ".env")
+    if not isinstance(config, dict) or not isinstance(config.get("storage"), dict) or "backend" not in config["storage"]:
+        raise ValueError("selected account storage configuration requires an explicit backend")
+    env = dict(environment) if environment is not None else _environment_for(context) if context else load_env(root / "sources" / ".env")
     backend = env.get("JOBINTEL_STORAGE_BACKEND", config.get("storage", {}).get("backend", "yaml"))
+    scoped = getattr(_LOCAL, "store", None)
+    scoped_here = scoped is not None and path.resolve().is_relative_to(scoped[0])
     if backend == "yaml":
+        if scoped_here:
+            raise AccountConfigurationError("operation destination differs from the active vacancy batch")
         if config.get("storage", {}).get("cutover_verified"):
             raise RuntimeError("YAML rollback is disabled after cutover; export and reconcile MongoDB first")
         return None
@@ -62,6 +145,10 @@ def get_store(path: Path):
         raise RuntimeError("MongoDB backend requires MONGODB_URI; YAML fallback is disabled")
     name = env.get("JOBINTEL_DATABASE_NAME", config.get("storage", {}).get("database_name", "job_intelligence"))
     key = (str(root), hashlib.sha256(uri.encode()).hexdigest(), name)
+    if scoped_here:
+        if _STORES.get(key) is not scoped[1]:
+            raise AccountConfigurationError("operation destination differs from the active vacancy batch")
+        return scoped[1]
     if key not in _STORES:
         from .mongodb_storage import MongoStore
         _STORES[key] = MongoStore(uri, name)

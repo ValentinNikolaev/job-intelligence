@@ -8,7 +8,6 @@ import json
 import os
 import sys
 import uuid
-from contextlib import contextmanager
 from pathlib import Path
 from typing import Any, Mapping, Sequence
 
@@ -20,7 +19,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from jobintel import storage_bridge
+from jobintel.accounts import AccountConfigurationError, AccountContext, require_account_context, resolve_account_arguments
 from jobintel.backup import (
     _archive_bytes,
     _bson_json_loads,
@@ -29,7 +28,7 @@ from jobintel.backup import (
     verify_backup,
 )
 from jobintel.catalog_data import load_catalog_vacancies
-from jobintel.config import load_env
+from jobintel.storage_bridge import resource_environment
 from jobintel.migration import export_applications
 from jobintel.mongodb_storage import MongoStore
 from jobintel.sheets_sync import build_export
@@ -47,8 +46,11 @@ def verify_restored_backup(
     downloaded_backup: Path,
     database: str,
     artifact_output: Path,
+    *,
+    context: AccountContext | None = None,
 ) -> dict[str, Any]:
     """Validate restored data and artifacts without changing source or production."""
+    context = require_account_context(context.project_root if context is not None else PROJECT_ROOT, context)
     if not database.startswith(("jobintel_test_", "jobintel_restore_")):
         raise VerificationError("database must use the isolated jobintel_test_/jobintel_restore_ prefix")
     if len(database.encode("utf-8")) > 63:
@@ -66,7 +68,7 @@ def verify_restored_backup(
     if not restored_project.is_dir():
         raise VerificationError(f"restored project directory is missing: {restored_project}")
 
-    env = load_env(PROJECT_ROOT / "sources" / ".env")
+    env = resource_environment(context)
     test_uri = str(env.get("JOBINTEL_TEST_MONGODB_URI") or "")
     production_uri = str(env.get("MONGODB_URI") or "")
     _validate_test_uri(test_uri, production_uri)
@@ -87,8 +89,7 @@ def verify_restored_backup(
             invariant_report = _validate_links_and_history(actual)
             exported = build_export(export_applications(store))
 
-        with _restored_store_environment(test_uri, database):
-            catalog = load_catalog_vacancies(restored_project / "registry")
+        catalog = load_catalog_vacancies(restored_project / "registry", store=store)
         catalog_ids = sorted(item.vacancy_id for item in catalog)
         expected_catalog_ids = sorted(
             str(item["_id"])
@@ -124,7 +125,6 @@ def verify_restored_backup(
         return result
     finally:
         store.close()
-        _close_bridge_stores()
 
 
 def _snapshot_from_backup(directory: Path, manifest: Mapping[str, Any]) -> Mapping[str, Any]:
@@ -300,34 +300,6 @@ def _validate_links_and_history(snapshot: Mapping[str, Any]) -> dict[str, Any]:
     }
 
 
-@contextmanager
-def _restored_store_environment(uri: str, database: str):
-    keys = ("MONGODB_URI", "JOBINTEL_DATABASE_NAME", "JOBINTEL_STORAGE_BACKEND")
-    previous = {key: os.environ.get(key) for key in keys}
-    os.environ.update(
-        {
-            "MONGODB_URI": uri,
-            "JOBINTEL_DATABASE_NAME": database,
-            "JOBINTEL_STORAGE_BACKEND": "mongodb",
-        }
-    )
-    try:
-        yield
-    finally:
-        _close_bridge_stores()
-        for key, value in previous.items():
-            if value is None:
-                os.environ.pop(key, None)
-            else:
-                os.environ[key] = value
-
-
-def _close_bridge_stores() -> None:
-    for store in list(storage_bridge._STORES.values()):
-        store.close()
-    storage_bridge._STORES.clear()
-
-
 def _bson_sha256(value: Any) -> str:
     text = json_util.dumps(
         value,
@@ -366,7 +338,9 @@ def _write_receipt(path: Path, value: Mapping[str, Any]) -> None:
 
 
 def _parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, default=PROJECT_ROOT)
     parser.add_argument("--input", required=True, type=Path, dest="downloaded_backup")
     parser.add_argument("--database", required=True)
     parser.add_argument("--artifact-output", required=True, type=Path)
@@ -375,12 +349,20 @@ def _parser() -> argparse.ArgumentParser:
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    args = _parser().parse_args(argv)
+    try:
+        context, remaining = resolve_account_arguments(
+            sys.argv[1:] if argv is None else argv, default_root=PROJECT_ROOT,
+        )
+        args = _parser().parse_args(remaining)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
     try:
         result = verify_restored_backup(
             args.downloaded_backup,
             args.database,
             args.artifact_output,
+            context=context,
         )
         exit_code = 0
     except Exception as exc:

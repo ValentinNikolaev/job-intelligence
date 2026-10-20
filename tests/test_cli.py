@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import tempfile
 import threading
@@ -23,6 +24,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             env_path = root / "broken.env"
             env_path.write_text("this is not dotenv\n", encoding="utf-8")
             registry = Registry(
@@ -44,7 +46,7 @@ class CliTests(unittest.TestCase):
             with redirect_stdout(StringIO()):
                 self.assertEqual(
                     0,
-                    main(["reindex", "--registry", str(registry_root), "--env", str(env_path)]),
+                    main(["reindex", "--registry", str(registry_root), "--env", str(env_path)], root=registry_root.parent),
                 )
                 self.assertEqual(
                     0,
@@ -57,7 +59,8 @@ class CliTests(unittest.TestCase):
                             str(registry_root),
                             "--env",
                             str(env_path),
-                        ]
+                        ],
+                        root=registry_root.parent,
                     ),
                 )
                 with patch(
@@ -68,13 +71,14 @@ class CliTests(unittest.TestCase):
                         0,
                         main(
                             ["catalog", "--registry", str(registry_root), "--env", str(env_path)]
-                        ),
+                        , root=registry_root.parent),
                     )
 
     def test_status_command_records_manual_status_log_with_reason(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             registry = Registry(
                 registry_root,
                 clock=lambda: datetime(2026, 7, 23, 10, 0, tzinfo=timezone.utc),
@@ -105,7 +109,8 @@ class CliTests(unittest.TestCase):
                             "requires hybrid work",
                             "--interaction-id",
                             "thread-123",
-                        ]
+                        ],
+                        root=registry_root.parent,
                     ),
                 )
                 self.assertEqual(
@@ -119,7 +124,8 @@ class CliTests(unittest.TestCase):
                             str(registry_root),
                             "--reason",
                             "requires hybrid work",
-                        ]
+                        ],
+                        root=registry_root.parent,
                     ),
                 )
 
@@ -137,6 +143,7 @@ class CliTests(unittest.TestCase):
     def test_status_audit_failure_rolls_back_metadata(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             registry_root = Path(temporary) / "registry"
+            _write_cli_config(registry_root.parent)
             registry = Registry(registry_root, id_factory=lambda: "vacancy-1")
             created = registry.upsert(
                 NormalizedJob(
@@ -162,7 +169,8 @@ class CliTests(unittest.TestCase):
                             "applied",
                             "--registry",
                             str(registry_root),
-                        ]
+                        ],
+                        root=registry_root.parent,
                     ),
                 )
 
@@ -179,6 +187,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             draft = root / "manual.yaml"
             draft.write_text(
                 "\n".join(
@@ -197,7 +206,7 @@ class CliTests(unittest.TestCase):
 
             output = StringIO()
             with redirect_stdout(output):
-                exit_code = main(["add-manual", "--registry", str(registry_root), "--input", str(draft)])
+                exit_code = main(["add-manual", "--registry", str(registry_root), "--input", str(draft)], root=registry_root.parent)
 
             self.assertEqual(0, exit_code)
             self.assertIn("Manual job created", output.getvalue())
@@ -211,6 +220,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             jobs = [
                 NormalizedJob(
                     source="direct",
@@ -243,6 +253,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             sources = root / "sources"
             sources.mkdir()
             env_path = sources / ".env"
@@ -284,7 +295,8 @@ class CliTests(unittest.TestCase):
                             str(sources),
                             "--env",
                             str(env_path),
-                        ]
+                        ],
+                        root=registry_root.parent,
                     ),
                 )
 
@@ -297,6 +309,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             env_path = root / "broken.env"
             env_path.write_text("this is not dotenv\n", encoding="utf-8")
             registry = Registry(
@@ -348,7 +361,7 @@ class CliTests(unittest.TestCase):
             with redirect_stdout(output):
                 self.assertEqual(
                     0,
-                    main(["top", "5", "--registry", str(registry_root), "--env", str(env_path)]),
+                    main(["top", "5", "--registry", str(registry_root), "--env", str(env_path)], root=registry_root.parent),
                 )
 
             text = output.getvalue()
@@ -361,6 +374,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             _write_workflow_config(root)
             candidate = registry_root / "candidate"
             candidate.mkdir(parents=True)
@@ -394,7 +408,8 @@ class CliTests(unittest.TestCase):
                             str(registry_root),
                             "--env",
                             str(env_path),
-                        ]
+                        ],
+                        root=registry_root.parent,
                     ),
                 )
 
@@ -406,6 +421,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             _write_workflow_config(root)
             candidate = registry_root / "candidate"
             candidate.mkdir(parents=True)
@@ -447,7 +463,8 @@ class CliTests(unittest.TestCase):
                         str(registry_root),
                         "--pack",
                         str(pack_path),
-                    ]
+                    ],
+                    root=registry_root.parent,
                 )
 
             self.assertEqual(0, result)
@@ -457,6 +474,7 @@ class CliTests(unittest.TestCase):
     def test_triage_accepts_one_explicit_selector(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             registry_root = Path(temporary) / "registry"
+            _write_cli_config(registry_root.parent)
             ids = iter(("first", "selected"))
             registry = Registry(registry_root, id_factory=lambda: next(ids))
             first = registry.upsert(
@@ -467,7 +485,7 @@ class CliTests(unittest.TestCase):
             )
 
             with redirect_stdout(StringIO()):
-                result = main(["triage", selected.directory, "--registry", str(registry_root)])
+                result = main(["triage", selected.directory, "--registry", str(registry_root)], root=registry_root.parent)
 
             self.assertEqual(0, result)
             self.assertFalse((registry_root / "jobs" / first.directory / "triage.yaml").exists())
@@ -477,6 +495,7 @@ class CliTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             candidate = registry_root / "candidate"
             candidate.mkdir(parents=True)
             linkedin = candidate / "linkedin-profile.md"
@@ -543,7 +562,7 @@ class CliTests(unittest.TestCase):
     def test_doctor_ci_skips_only_host_local_converter_checks(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
-            (root / "config").mkdir()
+            (root / "config").mkdir(exist_ok=True)
             (root / "config" / "codex-workflows.yaml").write_text(
                 yaml.safe_dump(
                     {
@@ -568,6 +587,7 @@ class CliTests(unittest.TestCase):
                 encoding="utf-8",
             )
             registry_root = root / "registry"
+            _write_cli_config(registry_root.parent)
             candidate = registry_root / "candidate"
             candidate.mkdir(parents=True)
             (candidate / "linkedin-profile.md").write_text("LinkedIn\n", encoding="utf-8")
@@ -579,7 +599,7 @@ class CliTests(unittest.TestCase):
             )
             (candidate / "backend-engineer-cv.md").write_text("CV\n", encoding="utf-8")
             prompts = root / "prompts"
-            prompts.mkdir()
+            prompts.mkdir(exist_ok=True)
             (prompts / "vacancy-match.md").write_text("Match\n", encoding="utf-8")
             (prompts / "vacancy-application.md").write_text("Apply\n", encoding="utf-8")
             sources = root / "sources"
@@ -637,8 +657,19 @@ def _write_match(registry_root: Path, directory: str, score: int) -> None:
     )
 
 
+def _write_cli_config(root: Path) -> None:
+    write_file_account_config(root)
+    original = Path(__file__).resolve().parents[1]
+    for name in ("selection-policy.yaml", "matching-policy.yaml", "codex-workflows.yaml"):
+        target = root / "config" / name
+        if not target.exists():
+            target.write_bytes((original / "config" / name).read_bytes())
+    (root / "prompts").mkdir(exist_ok=True)
+    (root / "prompts/vacancy-match.md").write_bytes((original / "prompts/vacancy-match.md").read_bytes())
+
+
 def _write_workflow_config(root: Path) -> None:
-    (root / "config").mkdir()
+    (root / "config").mkdir(exist_ok=True)
     (root / "config" / "codex-workflows.yaml").write_text(
         yaml.safe_dump(
             {

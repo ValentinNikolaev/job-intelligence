@@ -28,7 +28,8 @@ from .applications import (
 )
 from .application_lint import lint_application_draft
 from .collector import Collector, discover_collectors
-from .config import apply_env_file, load_env, load_env_file
+from .config import load_env, load_env_file
+from .accounts import AccountConfigurationError, AccountContext, require_account_context, resolve_account_arguments
 from .document_quality import DocumentQualityError, preview_capabilities
 from .matching import (
     AnalysisSummary,
@@ -77,7 +78,7 @@ def _configure_stdio() -> None:
 
 
 def _parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.")
+    parser = argparse.ArgumentParser(description="Collect vacancies into a local filesystem registry.", allow_abbrev=False)
     parser.add_argument(
         "target", help="collector name, 'all', 'list', 'add-manual', 'reindex', 'catalog', 'top', 'doctor', 'api', 'triage', 'usage', 'status', 'pending', 'analyze', 'analyze-batch', 'lint-application', 'validate-application', 'workflow-lock', 'prepare-preflight', 'prepare', 'timing', 'evidence', 'documents', 'applications', or 'editorial'"
     )
@@ -159,8 +160,59 @@ def _parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main(argv: list[str] | None = None) -> int:
+def _path_option(arguments: list[str], name: str) -> Path | None:
+    selected = None
+    for index, argument in enumerate(arguments):
+        if argument == "--":
+            break
+        if argument == name:
+            if index + 1 == len(arguments) or arguments[index + 1].startswith("-"):
+                raise AccountConfigurationError(f"{name} requires a path")
+            value = arguments[index + 1]
+        elif argument.startswith(name + "="):
+            value = argument.split("=", 1)[1]
+            if not value:
+                raise AccountConfigurationError(f"{name} requires a path")
+        else:
+            continue
+        path = Path(value).resolve()
+        if selected is not None and selected != path:
+            raise AccountConfigurationError(f"conflicting {name} paths")
+        selected = path
+    return selected
+
+
+def main(argv: list[str] | None = None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
     command_args = list(sys.argv[1:] if argv is None else argv)
+    try:
+        context, command_args = resolve_account_arguments(
+            command_args, root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+        for option, name in (("--registry", "registry"), ("--sources", "sources")):
+            selected = _path_option(command_args, option)
+            if selected is not None and selected != context.path(name):
+                raise AccountConfigurationError(f"{option} must match the selected account path")
+        env_path = _path_option(command_args, "--env")
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+    if env_path is not None:
+        try:
+            load_env_file(env_path)
+        except ValueError:
+            # Offline commands historically tolerate an unusable explicit dotenv.
+            # Commands that require it still validate args.env before execution.
+            env_path = None
+    try:
+        with op.operation_resources(context, env_path=env_path):
+            return _timed_main(command_args, context)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+
+
+def _timed_main(command_args: list[str], context: AccountContext) -> int:
     stage = {
         "prepare-preflight": "preflight", "lint-application": "lint",
         "validate-application": "validation", "prepare": "publication_batch",
@@ -168,7 +220,7 @@ def main(argv: list[str] | None = None) -> int:
     if command_args[:2] == ["documents", "preview-cv"]:
         stage = "preview"
     if stage is None:
-        return _main(command_args)
+        return _main(command_args, root=context.project_root, context=context)
     from .preparation_timing import timed_call
 
     selector_start = 2 if command_args[:2] == ["documents", "preview-cv"] else 1
@@ -178,44 +230,32 @@ def main(argv: list[str] | None = None) -> int:
         selector = None
     elif stage == "preview" and selector:
         selector = Path(selector).parent.name
-    root = Path(__file__).resolve().parents[1]
-    if "--registry" in command_args:
-        root = Path(command_args[command_args.index("--registry") + 1]).resolve().parent
-    return timed_call(root, stage, selector,
-                      lambda: _main(command_args))
+    return timed_call(context.project_root, stage, selector,
+                      lambda: _main(command_args, root=context.project_root, context=context))
 
 
-def _main(argv: list[str] | None = None) -> int:
+def _main(argv: list[str] | None = None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
     _configure_stdio()
+    project_root = Path(root or Path(__file__).resolve().parents[1]).resolve()
+    context = require_account_context(project_root, context)
     command_args = list(sys.argv[1:] if argv is None else argv)
     if command_args and command_args[0] in {"applications", "documents", "evidence", "timing", "editorial"}:
         from importlib import import_module
         module = {"applications": "lifecycle_cli", "documents": "document_quality_cli", "evidence": "evidence_cli", "timing": "preparation_timing", "editorial": "editorial_eval"}[command_args[0]]
         return import_module(f".{module}", __package__).main(
-            command_args[1:], root=Path(__file__).resolve().parents[1]
+            command_args[1:], root=project_root, context=context
         )
     if command_args and command_args[0] == "sheets":
         from .sheets_sync import cli_main
-        return cli_main(command_args[1:])
+        return cli_main(command_args[1:], root=project_root, context=context)
     if command_args and command_args[0] == "storage":
         from .storage_cli import cli_main
-        return cli_main(command_args[1:])
+        return cli_main(command_args[1:], root=project_root, context=context)
     args = _parser().parse_args(argv)
-    project_root = Path(__file__).resolve().parents[1]
-    sources_dir = (args.sources or project_root / "sources").resolve()
-    registry_dir = (args.registry or project_root / "registry").resolve()
+    sources_dir = context.path("sources")
+    registry_dir = context.path("registry")
     lock_root = op.project_root(registry_dir) or registry_dir.parent
     env_path = (args.env or sources_dir / ".env").resolve()
-    if args.env:
-        try:
-            explicit_values = load_env_file(env_path)
-        except ValueError:
-            # Offline commands intentionally do not require a parseable dotenv file.
-            # Commands that need configuration still validate it when they call load_env.
-            explicit_values = {}
-        if "MONGODB_URI" in explicit_values:
-            apply_env_file(env_path, require_exists=True)
-
     target = args.target.casefold()
     if args.document and target not in {"prepare", "prepare-preflight", "pending", "lint-application", "validate-application"}:
         print(

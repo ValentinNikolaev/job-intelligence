@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import json
 import tempfile
@@ -56,6 +57,7 @@ class WorkflowApiTests(unittest.TestCase):
         self.sources = self.project / "sources"
         self.sources.mkdir()
         (self.project / "config").mkdir()
+        write_file_account_config(self.project)
         (self.project / "config/selection-policy.yaml").write_bytes(
             (Path(__file__).resolve().parents[1] / "config/selection-policy.yaml").read_bytes()
         )
@@ -310,7 +312,8 @@ class WorkflowApiTests(unittest.TestCase):
                     str(broken_env),
                     "--profile",
                     str(self.profile),
-                ]
+                ],
+                root=self.project,
             )
 
         self.assertEqual(0, exit_code)
@@ -335,7 +338,8 @@ class WorkflowApiTests(unittest.TestCase):
                     str(self.sources),
                     "--profile",
                     str(self.profile),
-                ]
+                ],
+                root=self.project,
             )
 
         self.assertEqual(0, exit_code)

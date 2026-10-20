@@ -20,8 +20,9 @@ from jobintel.accounts import (
     load_account_context,
     main,
     require_account_context,
+    resolve_account_arguments,
 )
-from tests.account_fixtures import write_account_config
+from tests.account_fixtures import write_account_config, write_file_account_config
 
 
 class AccountSelectorTests(unittest.TestCase):
@@ -194,7 +195,6 @@ class AccountContextTests(unittest.TestCase):
     def test_duplicate_nontext_and_recursive_keys_are_rejected(self):
         variants = [
             self.original + b"schema_version: 1\n",
-            self.original.replace(b"      registry: registry\n", b"      registry: registry\n      registry: registry\n"),
             self.original + b"42: hidden\n",
             b"? [sequence, key]\n: hidden\n",
             b"accounts: &loop\n  current: *loop\n",
@@ -204,6 +204,21 @@ class AccountContextTests(unittest.TestCase):
             with self.subTest(raw=raw):
                 self.descriptor.write_bytes(raw)
                 with self.assertRaises(AccountConfigurationError):
+                    self.load()
+
+    def test_nested_duplicate_is_rejected_for_lf_and_crlf_descriptors(self):
+        for newline in (b"\n", b"\r\n"):
+            with self.subTest(newline=newline):
+                valid = newline.join(self.original.splitlines()) + newline
+                self.descriptor.write_bytes(valid)
+                self.assertEqual("current", self.load().account_id)
+                key = b"      registry: registry" + newline
+                self.assertEqual(1, valid.count(key))
+                malformed = valid.replace(key, key + key)
+                self.assertNotEqual(valid, malformed)
+                self.assertEqual(2, malformed.count(key))
+                self.descriptor.write_bytes(malformed)
+                with self.assertRaisesRegex(AccountConfigurationError, "duplicate YAML keys"):
                     self.load()
 
     def test_schema_version_is_exactly_integer_one(self):
@@ -333,6 +348,78 @@ class AccountContextTests(unittest.TestCase):
         self.assertEqual(self.descriptor, write_account_config(self.root))
         self.assertEqual(before, {p.relative_to(self.root): p.stat().st_mtime_ns for p in self.root.rglob("*") if p.is_file()})
         self.assertEqual([Path("config/accounts.yaml")], list(before))
+
+    def test_file_fixture_declares_yaml_and_preserves_existing_backend(self):
+        self.assertEqual(self.descriptor, write_file_account_config(self.root))
+        storage = self.root / "config/data-services.yaml"
+        self.assertEqual({"storage": {"backend": "yaml", "cutover_verified": False}},
+                         yaml.safe_load(storage.read_text(encoding="utf-8")))
+        storage.write_text("storage:\n  backend: mongodb\n", encoding="utf-8")
+        before = storage.read_bytes()
+        write_file_account_config(self.root)
+        self.assertEqual(before, storage.read_bytes())
+
+    def test_common_arguments_resolve_both_selector_forms_and_preserve_command(self):
+        for arguments in (
+            ["--account", "current", "evidence", "questions", "--project-root", str(self.root)],
+            [f"--project-root={self.root}", "evidence", "--account=current", "questions"],
+        ):
+            with self.subTest(arguments=arguments), patch.dict(os.environ, {}, clear=True):
+                context, remaining = resolve_account_arguments(arguments, default_root=self.base / "absent")
+            self.assertEqual(self.root, context.project_root)
+            self.assertEqual(["evidence", "questions"], remaining)
+
+    def test_common_arguments_preserve_supplied_context_and_reject_root_disagreement(self):
+        context = self.load()
+        other = self.base / "other"
+        write_account_config(other)
+        with patch.dict(os.environ, {}, clear=True):
+            self.assertEqual(
+                (context, ["report"]),
+                resolve_account_arguments(["report"], context=context, default_root=other),
+            )
+            for kwargs in ({"root": other}, {"context": load_account_context(other, environ={})}):
+                with self.subTest(kwargs=kwargs), self.assertRaisesRegex(AccountConfigurationError, "conflicts"):
+                    resolve_account_arguments(["--project-root", str(self.root)], default_root=self.root, **kwargs)
+            with self.assertRaisesRegex(AccountConfigurationError, "another project root"):
+                resolve_account_arguments([], root=other, context=context, default_root=self.root)
+
+    def test_common_arguments_reject_conflicting_roots_and_accept_equal_repeats(self):
+        other = self.base / "other"
+        write_account_config(other)
+        with patch.dict(os.environ, {}, clear=True):
+            context, arguments = resolve_account_arguments(
+                ["--project-root", str(self.root), "report", f"--project-root={self.root}"],
+                default_root=other,
+            )
+            self.assertEqual(self.root, context.project_root)
+            self.assertEqual(["report"], arguments)
+            with self.assertRaisesRegex(AccountConfigurationError, "conflicting"):
+                resolve_account_arguments(
+                    ["--project-root", str(self.root), f"--project-root={other}"],
+                    default_root=self.root,
+                )
+
+    def test_common_arguments_reject_missing_or_blank_root_before_descriptor_read(self):
+        for arguments in (["--project-root"], ["--project-root="], ["--project-root", "--other"],
+                          ["--project-root", "  "], ["--project-root", str(self.root) + " "]):
+            with self.subTest(arguments=arguments), patch.object(Path, "read_bytes", side_effect=AssertionError("read")):
+                with self.assertRaises(AccountConfigurationError):
+                    resolve_account_arguments(arguments, default_root=self.root)
+
+    def test_common_arguments_leave_abbreviations_and_post_delimiter_selectors_for_parser(self):
+        arguments = ["report", "--acc=another", "--project-r=another", "--", "--account=another",
+                     "--project-root=another"]
+        with patch.dict(os.environ, {}, clear=True):
+            context, remaining = resolve_account_arguments(arguments, root=self.root, default_root=self.base)
+        self.assertEqual("current", context.account_id)
+        self.assertEqual(arguments, remaining)
+
+    def test_common_arguments_reject_stale_supplied_context(self):
+        context = self.load()
+        self.descriptor.write_bytes(self.original + b"# changed\n")
+        with patch.dict(os.environ, {}, clear=True), self.assertRaisesRegex(AccountConfigurationError, "stale"):
+            resolve_account_arguments([], context=context, default_root=self.base)
 
     def test_module_cli_reports_only_current_account_without_operational_access(self):
         (self.root / "sources").mkdir()

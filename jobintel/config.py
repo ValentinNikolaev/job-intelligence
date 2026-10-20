@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+from collections.abc import Mapping
 from pathlib import Path
 
 
@@ -35,10 +36,21 @@ def apply_env_file(path: Path, *, require_exists: bool = False) -> None:
         os.environ.setdefault(key, value)
 
 
-def load_env(path: Path) -> dict[str, str]:
+def resolve_environment(
+    path: Path, *, environ: Mapping[str, str] | None = None, require_exists: bool = False,
+    override_path: Path | None = None,
+) -> dict[str, str]:
+    """Resolve operation credentials without changing the process environment."""
+    if require_exists and not path.is_file():
+        raise FileNotFoundError(f"environment file does not exist: {path}")
     values = load_env_file(path)
-
-    # Process environment deliberately wins over the shared file.
-    values.update({key: value for key, value in os.environ.items() if value is not None})
+    if override_path is not None:
+        values.update(load_env_file(override_path))
+    environment = os.environ if environ is None else environ
+    values.update({key: value for key, value in environment.items() if value is not None})
     return values
+
+
+def load_env(path: Path) -> dict[str, str]:
+    return resolve_environment(path)
 

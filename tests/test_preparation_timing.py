@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import io
 import json
@@ -18,6 +19,7 @@ class PreparationTimingTests(unittest.TestCase):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
         self.root = Path(temporary.name)
+        write_file_account_config(self.root)
 
     def test_independent_events_aggregate_by_vacancy_and_stage(self) -> None:
         started = datetime.now(timezone.utc)
@@ -41,8 +43,9 @@ class PreparationTimingTests(unittest.TestCase):
     def test_preparation_cli_records_validation_in_fixture_workspace(self) -> None:
         registry = self.root / "registry"
         registry.mkdir()
+        write_file_account_config(self.root)
         with patch("jobintel.cli._main", return_value=0):
-            self.assertEqual(0, cli.main(["validate-application", "vacancy", "--registry", str(registry)]))
+            self.assertEqual(0, cli.main(["validate-application", "vacancy", "--registry", str(registry)], root=self.root))
         event = report(self.root)["events"][0]
         self.assertEqual("validation", event["stage"])
         self.assertEqual("vacancy", event["vacancy"])

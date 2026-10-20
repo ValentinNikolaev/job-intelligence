@@ -361,3 +361,19 @@ Independent cumulative R3 approved the clean published code `d8495d0` after 88
 passing targeted executions without skips. Exact-head push and PR CI each passed
 815 tests with two missing-Poppler PDF skips; the local full suite passed all 815
 without skips. No account selector or second live account is enabled in phase 4.
+
+## Phase-5 account ownership
+
+The [account guide](account-context.md) defines the sole supported `current`
+account, pinned descriptor references and resource paths, selector precedence,
+operation-local credential precedence and operational entrypoint inventory.
+Unknown selections and incompatible roots fail before operational access; default
+and explicit current selection share the existing destinations and policies.
+The current Go/PHP/Italy source bundle and Zend-credential exclusion are explicitly
+scoped to this account. They require a new ownership decision before phase-6
+onboarding; this phase does not claim a generic source set or shared tenancy.
+
+Phase 5 remains in progress pending the integrated release checks and clean
+published-code review recorded in the [execution log](multiaccount-migration-plan.md#execution-log).
+Candidate evidence, canonical records, artifacts, status, catalog inputs and the
+MongoDB storage contract are unchanged by this implementation.

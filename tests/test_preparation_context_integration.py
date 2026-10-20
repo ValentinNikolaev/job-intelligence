@@ -19,6 +19,7 @@ from jobintel.cli import _preparation_profile_paths, _profile_paths, _shared_can
 from jobintel.evidence import bootstrap_evidence_bank
 from jobintel.evidence_cli import main as evidence_main
 from tests.preparation_fixtures import write_preparation_config
+from tests.account_fixtures import write_account_config
 from tests.test_application_lifecycle import MemoryStore
 
 
@@ -40,6 +41,7 @@ class PreparationContextIntegrationTests(unittest.TestCase):
             voice_sources=["unavailable-host-voice.md"],
         )
         self.context = write_preparation_config(self.root, **self.options)
+        write_account_config(self.root)
         self.extracts = [dict(id="delivery", source=dict(path="records/person/resume.md", quote=self.quote))]
         self.bank = bootstrap_evidence_bank(self.root, self.extracts, context=self.context)
         self.bank["entries"][0].update(
@@ -130,7 +132,7 @@ class PreparationContextIntegrationTests(unittest.TestCase):
             if result.returncode:
                 self.skipTest("directory symlinks and junctions unavailable")
         code, message = self.evidence("publish", "--input", "records/proofs/bank.yaml", "--output", ".codex-work/bank.yaml")
-        self.assertEqual(1, code, message)
+        self.assertEqual(2, code, message)
         self.assertEqual([], list(destination.iterdir()))
         with self.assertRaisesRegex(ValueError, "escapes the project"):
             _shared_candidate_context(self.root, self.root / "registry", [self.source], context=self.context)

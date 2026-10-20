@@ -6,14 +6,31 @@ import json
 import sys
 from pathlib import Path
 
+from .accounts import AccountConfigurationError, AccountContext, resolve_account_arguments
+from .storage_bridge import operation_resources
+
 from pymongo.errors import PyMongoError
 
 from .application_lifecycle import ApplicationLifecycle, DRAFT_KINDS, EVENT_KINDS, profile_questions
 
 
-def main(argv=None, *, root: Path | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--project-root", type=Path, default=root or Path(__file__).resolve().parents[1])
+def main(argv=None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
+    try:
+        context, arguments = resolve_account_arguments(
+            list(sys.argv[1:] if argv is None else argv), root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+        with operation_resources(context):
+            return _main(arguments, root=context.project_root)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+
+
+def _main(argv=None, *, root: Path) -> int:
+    parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, help="account project directory")
     commands = parser.add_subparsers(dest="command", required=True)
     inquiry = commands.add_parser("record-company-inquiry", help="record a confirmed hiring inquiry without a vacancy")
     for field in ("company-key", "company", "inquiry-id", "sent-on", "recipient", "subject"):
@@ -53,9 +70,9 @@ def main(argv=None, *, root: Path | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         if args.command == "profile-questions":
-            print(json.dumps({"questions": profile_questions(args.project_root)}, ensure_ascii=False, indent=2))
+            print(json.dumps({"questions": profile_questions(root)}, ensure_ascii=False, indent=2))
             return 0
-        lifecycle = ApplicationLifecycle(args.project_root)
+        lifecycle = ApplicationLifecycle(root)
         if args.command == "record-company-inquiry":
             result = lifecycle.record_company_inquiry(company_key=args.company_key, company=args.company,
                 inquiry_id=args.inquiry_id, sent_on=args.sent_on, recipient=args.recipient,
@@ -69,7 +86,7 @@ def main(argv=None, *, root: Path | None = None) -> int:
         elif args.command == "record-event":
             note = None
             if args.note_file:
-                with args.note_file.open(encoding="utf-8-sig", newline="") as handle:
+                with (root / args.note_file).open(encoding="utf-8-sig", newline="") as handle:
                     note = handle.read()
             result = lifecycle.record_event(args.vacancy, submission_id=args.submission_id,
                 event_id=args.event_id, kind=args.kind, occurred_on=args.occurred_on,
@@ -85,7 +102,7 @@ def main(argv=None, *, root: Path | None = None) -> int:
             result = lifecycle.followups(as_of=args.as_of)
         else:
             result = lifecycle.publish_draft(args.vacancy, kind=args.kind,
-                draft=json.loads(args.draft.read_text(encoding="utf-8-sig")), approved_vacancy=args.approved_vacancy)
+                draft=json.loads((root / args.draft).read_text(encoding="utf-8-sig")), approved_vacancy=args.approved_vacancy)
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return 0
     except (OSError, ValueError, RuntimeError, PyMongoError) as exc:
@@ -94,3 +111,7 @@ def main(argv=None, *, root: Path | None = None) -> int:
 
 
 cli_main = main
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
