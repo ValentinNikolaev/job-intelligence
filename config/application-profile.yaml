@@ -66,3 +66,147 @@ open_questions_for_candidate:
   - Confirm notice period and earliest start date.
   - Confirm expected gross annual salary or acceptable range.
   - Confirm whether any production NodeJS, Python, DynamoDB, React, TypeScript, or logistics experience can be added to source evidence.
+
+preparation:
+  cv_owner_stem: ValentinNikolaev
+  candidate_directory: registry/candidate
+  evidence_bank: registry/evidence/achievements.yaml
+  profile_sources:
+    preferred:
+    - registry/candidate/match-profile.md
+    fallback:
+    - registry/candidate/linkedin-profile.md
+    - registry/candidate/backend-engineer-cv.md
+    supplements:
+    - registry/candidate/user-confirmed-*.md
+  career_sources:
+  - path: registry/candidate/linkedin-profile.md
+    section: Experience
+  - path: registry/candidate/backend-engineer-cv.md
+    section: Work Experience
+  employer_aliases:
+    Simple App:
+    - simple app
+    - simple.life
+    - simple life
+    PDFfiller.com:
+    - pdffiller.com
+    - pdffiller
+    CoinsBank/bit-x:
+    - coinsbank/bit-x
+    - coinsbank
+    - bit-x
+  career_scope:
+    first_employer: PDFfiller.com
+    maximum_years_since_end: 9
+  career_clarifications:
+  - employer: Simple App
+    reviewed:
+      reviewer: Codex phase 4 source review
+      reason: Preserve the confirmed start and supported end year. Apply the follow-up title and PHP claim
+        boundaries; the precise employment end month remains unconfirmed. Apply the source-backed role
+        rendering bounds of 5–7 bullets, at most seven, and one sentence of at most 40 words per bullet.
+        Generic grounding and measurement requirements override the source formula requiring a number;
+        never invent numeric achievements or present unverified estimates as measured outcomes.
+    sources:
+    - path: registry/candidate/user-confirmed-career-clarifications.md
+      sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      quote: "## Simple.life\n\n- **Role:** Software Developer\n- **Dates:** November 2023 - July 2026\n\
+        - This confirmed end date replaces both the stale March 2026 end date in the\n  Backend Engineer\
+        \ CV registry and the `Present` value in the LinkedIn export."
+    - path: registry/candidate/user-confirmed-simple-life-follow-up-2026-09-26.md
+      sha256: 15edbe5ce107ec7a6db46fb490c3f6185590fe5021b7db0218b43c6bec9398f8
+      quote: This confirms that the August–September work belongs to past experience and that PHP may
+        appear only in the Simple.life technologies line. It does not establish a specific PHP contribution
+        or confirm the official Simple.life job title or exact employment end date. Preserve the earlier
+        confirmed Software Developer title until a direct clarification resolves the conflicting Senior
+        Backend Engineer title in the later supplied blocks. Do not treat the September work period as
+        an independently confirmed employment end date.
+    - path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+      sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+      quote: '1. Output 5–7 bullets max, ordered by relevance to the target vacancy (AI/LLM roles → lead with
+        A, B, C; backend/platform roles → lead with D, E, F; product-engineering roles → lead with A, C).
+    
+        2. Every bullet follows: **Built/Led/Architected [X] using [Y], resulting in [Z with a number]**.
+        One sentence, ≤ 40 words.
+    
+        3. Use only figures from FACTS and ESTIMATES. FACTS may be stated as-is. ESTIMATES are stated as approximate
+        figures with "~" (e.g. "~35%", "~3×"); do not add words like "estimated" or "roughly" to the bullet
+        itself.
+    
+        4. Never claim "led a team of N"; use "with a 3-person backend team" or "as backend owner of …".
+    
+        5. Preferred verbs: architected, built from scratch, launched, migrated, consolidated, hardened, cut,
+        automated.
+    
+        6. Do not mention internal codenames (Emily, support-automation, support-legacy, palta) — use functional
+        names (LLM reply engine, support automation service, legacy support service, legacy billing).'
+    - path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+      sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+      quote: '1. Output 5–7 bullets max, ordered by relevance to the target vacancy (architecture/platform
+        roles → lead with items A, B, D; AI/LLM roles → lead with C; backend-reliability roles → lead with
+        E, D; compliance/fintech → lead with F).
+    
+        2. Every bullet follows: **Built/Led/Architected [X] using [Y], resulting in [Z with a number]**.
+        One sentence, ≤ 40 words. No task lists.
+    
+        3. Use only figures from the FACTS and ESTIMATES sections. FACTS may be stated as-is. ESTIMATES must
+        be rendered with a softener ("~", "up to", "roughly") or converted to a qualitative claim ("cut turnaround
+        from days to hours"); never present an estimate as an exact measured value.
+    
+        4. Never claim "led a team of N" — the honest framing is "with a 3-person cross-functional team" or
+        "as sole backend owner".
+    
+        5. Prefer verbs: architected, designed, built from scratch, led backend development, diagnosed and
+        eliminated, consolidated, automated, drove.
+    
+        6. Do not mention internal codenames (Kova, med-support, support-automation-ai) — use functional names
+        (support admin panel, LLM support agent, helpdesk gateway).'
+    corrections:
+      start:
+        value: November 2023
+        precision: month
+        source: 0
+      end:
+        value: July 2026
+        precision: year
+        source: 0
+        uncertainty_source: 1
+  - employer: CRURATED
+    reviewed:
+      reviewer: Codex phase 4 source review
+      reason: Preserve confirmed dates and the explicitly parallel engagement without inventing continuous
+        employment.
+    sources:
+    - path: registry/candidate/user-confirmed-career-clarifications.md
+      sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      quote: "## CRURATED\n\n- **Role:** PHP Software Developer — Part-time Subcontract / Consulting Engagement\n\
+        - **Dates:** August 2024 - January 2026\n- This engagement ran concurrently with Simple.life.\
+        \ It was a parallel,\n  PHP-oriented subcontract/consulting assignment, not a second standard\
+        \ full-time\n  employment position.\n- When both roles appear in an application, label CRURATED\
+        \ explicitly as a\n  concurrent part-time subcontract or consulting engagement so the overlap\
+        \ is not\n  misleading."
+    corrections:
+      start:
+        value: August 2024
+        precision: month
+        source: 0
+      end:
+        value: January 2026
+        precision: month
+        source: 0
+  - employer: PDFfiller.com
+    reviewed:
+      reviewer: Codex phase 4 source review
+      reason: Use the candidate-selected CV end date, preserving the unexplained disagreement with the
+        employment extract.
+    sources:
+    - path: registry/candidate/employment-letter-extract-2026-09-25.md
+      sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      quote: Use November 2019 as the PDFfiller end date in CV chronology. The reason the letter covers
+        a shorter period remains unknown; do not infer a legal-entity transfer or role change.
+    corrections:
+      end:
+        value: November 2019
+        precision: month
+        source: 0

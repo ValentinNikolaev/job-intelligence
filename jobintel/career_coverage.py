@@ -6,7 +6,7 @@ import re
 from datetime import date, datetime
 from pathlib import Path
 
-import yaml
+from .preparation_context import PreparationContext, PreparationContextError, resolve_preparation_context
 
 
 _MONTHS = (
@@ -20,11 +20,6 @@ _PERIOD = re.compile(
     re.IGNORECASE,
 )
 _HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
-_ALIASES = {
-    "simple app": ("simple app", "simple.life", "simple life"),
-    "pdffiller.com": ("pdffiller.com", "pdffiller"),
-    "coinsbank/bit-x": ("coinsbank/bit-x", "coinsbank", "bit-x"),
-}
 _ALLOWED_SECTIONS = {"experience"}
 
 
@@ -72,46 +67,62 @@ def _read_source(path: Path) -> str:
         raise CareerCoverageError(f"candidate career source unavailable: {path}") from exc
 
 
-def _corrected_roles(source_path: Path) -> dict[str, tuple[tuple[int, int | None], tuple[int, int | None] | None]]:
-    linked = _source_roles(_read_source(source_path))
-    # The primary CV is another immutable source. Its employer headings can only add
-    # coverage; later candidate clarifications resolve conflicting imported dates.
-    primary_path = source_path.with_name("backend-engineer-cv.md")
-    if primary_path.is_file() or (source_path.parents[2] / ".git").exists():
-        primary = _source_roles(_read_source(primary_path), section_name="Work Experience")
-        for employer, period in primary.items():
-            if not any(
-                employer.casefold() == other.casefold()
-                or employer.casefold() in _ALIASES.get(other.casefold(), ())
-                for other in linked
-            ):
-                linked[employer] = period
+def _context(source_path: Path, context: PreparationContext | None) -> PreparationContext:
+    try:
+        root = next((parent for parent in source_path.resolve().parents if (parent / "config/application-profile.yaml").is_file()), source_path.resolve().parents[2])
+        context = resolve_preparation_context(root, context)
+        if source_path.resolve() != context.career_source_path:
+            raise PreparationContextError("career source differs from its preparation context")
+        return context
+    except PreparationContextError as exc:
+        raise CareerCoverageError(str(exc)) from exc
 
-    if "Simple App" in linked or "CRURATED" in linked:
-        clarification = _read_source(source_path.with_name("user-confirmed-career-clarifications.md"))
-        if "Simple App" in linked:
-            simple_section = re.split(r"(?m)^## Simple\.life\s*$", clarification, maxsplit=1)
-            if len(simple_section) != 2:
-                raise CareerCoverageError("candidate career clarification has no Simple.life dates")
-            simple_period = _PERIOD.search(re.split(r"(?m)^## ", simple_section[1], maxsplit=1)[0])
-            follow_up = _read_source(source_path.with_name("user-confirmed-simple-life-follow-up-2026-09-26.md"))
-            if simple_period is None or "does not establish" not in follow_up or "exact employment end date" not in follow_up:
-                raise CareerCoverageError("candidate Simple.life end-date clarification is incomplete")
-            linked["Simple App"] = (_date_key(simple_period.group("start")), (_date_key(simple_period.group("end"))[0], None))
-        if "CRURATED" in linked:
-            crurated_section = re.split(r"(?m)^## CRURATED\s*$", clarification, maxsplit=1)
-            if len(crurated_section) != 2:
-                raise CareerCoverageError("candidate career clarification has no CRURATED dates")
-            crurated_period = _PERIOD.search(re.split(r"(?m)^## ", crurated_section[1], maxsplit=1)[0])
-            if crurated_period is None:
-                raise CareerCoverageError("candidate career clarification has no CRURATED dates")
-            linked["CRURATED"] = (_date_key(crurated_period.group("start")), _date_key(crurated_period.group("end")))
-    if "PDFfiller.com" in linked:
-        letter = _read_source(source_path.with_name("employment-letter-extract-2026-09-25.md"))
-        correction = re.search(r"Use\s+((?:" + _MONTH + r")\s+\d{4})\s+as the PDFfiller end date", letter, re.IGNORECASE)
-        if correction is None:
-            raise CareerCoverageError("candidate PDFfiller end-date clarification is missing")
-        linked["PDFfiller.com"] = (linked["PDFfiller.com"][0], _date_key(correction.group(1)))
+
+def _corrected_roles(source_path: Path, *, context: PreparationContext | None = None) -> dict:
+    context = _context(source_path, context)
+    aliases = context.employer_aliases
+    linked = {}
+    for source in context.preparation["career_sources"]:
+        roles = _source_roles(_read_source(context.source_path(source["path"])), section_name=source["section"])
+        for employer, period in roles.items():
+            if not any(employer.casefold() == other.casefold()
+                    or employer.casefold() in aliases.get(other.casefold(), ()) for other in linked):
+                linked[employer] = period
+    from .evidence import EvidenceError, _source
+    corrected = set()
+    for clarification in context.preparation["career_clarifications"]:
+        matches = [name for name in linked if clarification["employer"].casefold() == name.casefold()
+                   or clarification["employer"].casefold() in aliases.get(name.casefold(), ())]
+        if len(matches) != 1:
+            raise CareerCoverageError("career clarification must identify one sourced employer")
+        employer = matches[0]
+        if employer in corrected:
+            raise CareerCoverageError("duplicate career clarification for the same sourced employer")
+        corrected.add(employer)
+        try:
+            quotes = [_source(context.project_root, record, context=context) for record in clarification["sources"]]
+        except EvidenceError as exc:
+            raise CareerCoverageError(f"career clarification source is invalid: {exc}") from exc
+        if not any(alias.casefold() in "\n".join(quotes).casefold() for alias in aliases.get(employer.casefold(), (employer,))):
+            raise CareerCoverageError("career clarification sources do not identify the employer")
+        period = list(linked[employer])
+        for field, correction in clarification["corrections"].items():
+            value = correction["value"]
+            match = re.fullmatch(r"(?:(?:" + _MONTH + r")\s+)?\d{4}", value, re.IGNORECASE)
+            quote = quotes[correction["source"]]
+            if match is None or re.search(r"(?<!\w)" + re.escape(value) + r"(?!\w)", quote, re.IGNORECASE) is None:
+                raise CareerCoverageError("corrected career date must occur exactly in its bound source quote")
+            parsed = _date_key(value)
+            if correction["precision"] == "month" and parsed[1] is None:
+                raise CareerCoverageError("career correction cannot invent month precision")
+            if correction["precision"] == "year" and parsed[1] is not None:
+                if "uncertainty_source" not in correction:
+                    raise CareerCoverageError("reduced career date precision requires an uncertainty source")
+                parsed = (parsed[0], None)
+            period[0 if field == "start" else 1] = parsed
+        if period[1] is not None and (period[0][0], period[0][1] or 1) > (period[1][0], period[1][1] or 12):
+            raise CareerCoverageError("corrected career period ends before it starts")
+        linked[employer] = tuple(period)
     return linked
 
 
@@ -137,22 +148,17 @@ def _cv_entries(markdown: str) -> list[tuple[str, str]]:
     return entries
 
 
-def _scoped_roles(roles: dict, source_path: Path, reference_date: date | datetime | None) -> dict:
-    root = source_path.parents[2]
-    policy_path = root / "config" / "cv-editorial-knowledge.yaml"
-    if not policy_path.is_file() and not (root / ".git").exists():
-        return roles  # Standalone source fixtures have no project-specific career policy.
-    try:
-        scope = yaml.safe_load(_read_source(policy_path))["career_scope"]
-        first = scope["first_employer"]
-        years = scope["maximum_years_since_end"]
-        if first not in roles or type(years) is not int or years < 1:
-            raise ValueError("invalid career scope")
+def _scoped_roles(roles: dict, source_path: Path, reference_date: date | datetime | None, *, context: PreparationContext | None = None) -> dict:
+    context = _context(source_path, context)
+    scope = context.preparation["career_scope"]
+    first = scope["first_employer"]
+    years = scope["maximum_years_since_end"]
+    if first is not None:
+        if first not in roles or roles[first][0][1] is None:
+            raise CareerCoverageError("CV career boundary requires a sourced employer and month")
         start = roles[first][0]
-        if start[1] is None:
-            raise ValueError("career boundary requires a source-backed month")
-    except (KeyError, TypeError, ValueError, yaml.YAMLError) as exc:
-        raise CareerCoverageError("CV career scope is missing or invalid") from exc
+    else:
+        start = (1, 1)
     today = reference_date.date() if isinstance(reference_date, datetime) else reference_date or date.today()
     cutoff = (today.year - years, today.month)
     return {employer: period for employer, period in roles.items()
@@ -160,7 +166,7 @@ def _scoped_roles(roles: dict, source_path: Path, reference_date: date | datetim
             and (period[1] is None or (period[1][0], period[1][1] or 12) > cutoff)}
 
 
-def validate_career_coverage(markdown: str, source_path: Path, *, reference_date: date | datetime | None = None) -> None:
+def validate_career_coverage(markdown: str, source_path: Path, *, reference_date: date | datetime | None = None, context: PreparationContext | None = None) -> None:
     """Require sourced employers in the approved window and reject excluded history.
 
     The LinkedIn headings are read on each validation. A newly documented employer
@@ -183,15 +189,16 @@ def validate_career_coverage(markdown: str, source_path: Path, *, reference_date
             markers.add(bullet[2])
     if len(markers) > 1:
         raise CareerCoverageError("Experience bullets must use a consistent list marker")
-    all_roles = _corrected_roles(source_path)
-    roles = _scoped_roles(all_roles, source_path, reference_date)
+    context = _context(source_path, context)
+    all_roles = _corrected_roles(source_path, context=context)
+    roles = _scoped_roles(all_roles, source_path, reference_date, context=context)
     for employer in all_roles.keys() - roles.keys():
-        aliases = _ALIASES.get(employer.casefold(), (employer,))
+        aliases = context.employer_aliases.get(employer.casefold(), (employer,))
         if any(re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", markdown, re.IGNORECASE) for alias in aliases):
             raise CareerCoverageError(f"cv_markdown mentions an employer outside the approved career window: {employer}")
     entries = _cv_entries(markdown)
     for employer, (expected_start, expected_end) in roles.items():
-        aliases = _ALIASES.get(employer.casefold(), (employer,))
+        aliases = context.employer_aliases.get(employer.casefold(), (employer,))
         matching = []
         for title, body in entries:
             if not any(re.search(r"(?<!\w)" + re.escape(alias) + r"(?!\w)", title, re.IGNORECASE) for alias in aliases):
@@ -208,9 +215,7 @@ def validate_career_coverage(markdown: str, source_path: Path, *, reference_date
             start_ok = start == expected_start
             end_ok = (
                 end is None if expected_end is None else
-                end is not None and end[0] == expected_end[0] and (
-                    expected_end[1] is None or end[1] == expected_end[1]
-                )
+                end == expected_end
             )
             if start_ok and end_ok:
                 break

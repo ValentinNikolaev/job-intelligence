@@ -10,6 +10,9 @@ The [phased account-configuration migration plan](docs/multiaccount-migration-pl
 tracks completed and pending work. Its first iteration preserves the current
 single-account flow and MongoDB storage; a second account is connected last.
 
+The [preparation configuration guide](docs/preparation-configuration.md) describes
+phase 4 source resolution, reviewed career corrections and draft/manifest identity.
+
 The current MVP implements Adzuna, Arbeitnow, CleanJobData, DOU, Himalayas,
 Jobicy, Jobspresso, Jooble, We Work Remotely, public Ashby and Greenhouse
 job-board collectors, and custom company-board monitoring.

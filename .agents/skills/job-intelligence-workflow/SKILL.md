@@ -5,6 +5,13 @@ description: Run the repository's vacancy collection, match analysis, vacancy-st
 
 # Job Intelligence Workflow
 
+For application preparation, resolve the `preparation` section of
+`config/application-profile.yaml`. Use its candidate paths, evidence bank, career
+scope, aliases, reviewed clarifications and CV filename owner. Read voice sources
+from `config/application-review.yaml`. Copy preflight's exact
+`preparation_context_version` into every new schema-3 quality draft; do not update
+an old draft's identity without reviewing it under a new preflight.
+
 Obey `AGENTS.md` first. Never call the OpenAI Platform API from repository code. Use the model already selected for the active Codex task and never claim to have switched models from inside the task.
 
 For a standalone LinkedIn profile audit/rewrite, Skills alignment, or Featured
@@ -99,9 +106,7 @@ current Codex surface, tell the user and do not publish under that profile.
    Apply the recent-experience and impact/judgment editorial gates in
    `references/prepare.md` before recording that final review. A total bullet
    count never substitutes for a role-by-role hiring-manager review.
-   Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
-   permitted employer; exclude employers whose work started before PDFfiller and roles ending nine
-   or more years before the reference month. Never mention excluded employers in any CV section,
+   Use the preparation career scope in `config/application-profile.yaml` as the CV boundary. Exclude employers outside its configured start and recency limits. Never mention excluded employers in any CV section,
    including Summary or Skills. Preserve every employer within this approved window in one
    Experience section, with consistent H3 employer/role/date headings and source-backed dates. Older
    permitted roles may have a dated heading with an empty body. Keep reverse chronology, overlaps

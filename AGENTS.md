@@ -39,7 +39,7 @@ a selected project workflow profile.
   historically approved analysis model. Historical labels are read-only provenance;
   new analysis uses a current allowed profile.
 - Before any preparation/editorial task, run `python run.py prepare-preflight <explicit-selector> ... --workflow prepare [--model-profile <profile>] [--document cv]`. It is a read-only, fail-closed batch gate: it checks the configured storage adapter, resolves every selector from the canonical backend, materializes only ignored `.codex-work` snapshots, and rejects stale, ineligible, hard-rejected, or incomplete MongoDB records before drafts are created. After MongoDB cutover, never copy frozen registry metadata from another checkout to make preparation work.
-- Treat `registry/candidate/*.md` as immutable source-of-truth evidence. Never invent candidate claims.
+- Treat the configured preparation candidate directory (currently `registry/candidate/*.md`) as immutable source-of-truth evidence. Never invent candidate claims.
 - Use the repo skill `$job-intelligence-workflow` for collection, match analysis, and application preparation.
 - For an explicitly requested LinkedIn profile audit/rewrite, Skills keyword map, or
   Featured proof assets, use `$linkedin-profile-workflow` and
@@ -70,9 +70,7 @@ a selected project workflow profile.
   `quality.yaml` receipt recording cover-letter skill provenance and final grounding
   review, and deterministic `validate-application` checks. Preserve the resulting
   word counts, hashes, handoff provenance, and method receipt in `manifest.yaml`.
-- Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
-  permitted employer; exclude employers whose work started before PDFfiller and roles ending nine or
-  more years before the reference month. Never mention excluded employers in any CV section,
+- Use the preparation career scope in `config/application-profile.yaml` as the CV boundary. Exclude employers outside its configured start and recency limits. Never mention excluded employers in any CV section,
   including Summary or Skills. Preserve every employer within this approved window in one Experience
   section, with consistent H3 employer/role/date headings and source-backed dates. Older permitted
   roles may have a dated heading with an empty body. Keep reverse chronology, overlaps and supported

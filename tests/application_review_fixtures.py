@@ -4,6 +4,8 @@ from pathlib import Path
 
 import yaml
 
+from jobintel.preparation_context import load_preparation_context
+
 from jobintel.application_review import document_digest, letter_basis, review_digest
 
 
@@ -36,6 +38,7 @@ def add_letter_review(root, draft, quality, package):
         path.write_text('Use calm, concrete language and verify the final text.\n', encoding='utf-8')
         rules.append(dict(path='config/' + name, sha256=hashlib.sha256(path.read_bytes()).hexdigest()))
     (config / 'application-review.yaml').write_text(yaml.safe_dump(dict(schema_version=1, voice_sources=[r['path'] for r in rules])), encoding='utf-8')
+    quality['preparation_context_version'] = load_preparation_context(root).version
     quote = ledger['claims'][0]['text']
     review = dict(reviewer='letter-editor', document_sha256=document_digest(letter),
         basis_sha256=review_digest(letter_basis(quality)),

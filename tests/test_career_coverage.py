@@ -1,8 +1,11 @@
+import hashlib
 import tempfile
+import yaml
 import unittest
 from pathlib import Path
 from datetime import date
 
+from tests.preparation_fixtures import write_preparation_config
 from jobintel.application_lint import _cv_lint
 from jobintel.career_coverage import CareerCoverageError, validate_career_coverage
 from jobintel.applications import (
@@ -48,7 +51,9 @@ class CareerCoverageTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.source = Path(self.temp.name) / "linkedin-profile.md"
+        self.root = Path(self.temp.name)
+        self.source = self.root / "registry/candidate/linkedin-profile.md"
+        self.source.parent.mkdir(parents=True)
         self.source.write_text(SOURCE, encoding="utf-8")
         self.source.with_name("user-confirmed-career-clarifications.md").write_text(
             "## Simple.life\n- **Dates:** November 2023 - July 2026\n", encoding="utf-8"
@@ -56,6 +61,13 @@ class CareerCoverageTests(unittest.TestCase):
         self.source.with_name("user-confirmed-simple-life-follow-up-2026-09-26.md").write_text(
             "This does not establish the exact employment end date.", encoding="utf-8"
         )
+        clarification = self.source.with_name("user-confirmed-career-clarifications.md")
+        follow_up = self.source.with_name("user-confirmed-simple-life-follow-up-2026-09-26.md")
+        records = [dict(path=path.relative_to(self.root).as_posix(), sha256=hashlib.sha256(path.read_text(encoding="utf-8").encode()).hexdigest(), quote=path.read_text(encoding="utf-8").strip()) for path in (clarification, follow_up)]
+        write_preparation_config(self.root, employer_aliases={"Simple App": ["simple app", "simple.life", "simple life"]},
+            career_clarifications=[dict(employer="Simple App", reviewed=dict(reviewer="fixture", reason="Preserve the explicitly uncertain end date."), sources=records,
+                corrections=dict(start=dict(value="November 2023", precision="month", source=0), end=dict(value="July 2026", precision="year", source=0, uncertainty_source=1)))])
+
 
     def test_accepts_detailed_and_dated_earlier_employers(self) -> None:
         validate_career_coverage(CV, self.source)
@@ -82,6 +94,10 @@ class CareerCoverageTests(unittest.TestCase):
     def test_new_primary_cv_employer_is_required(self) -> None:
         primary = self.source.with_name("backend-engineer-cv.md")
         primary.write_text("# Candidate\n## Work Experience\n### Other Firm\nEngineer\nMarch 2017 - May 2018\n## Education\n", encoding="utf-8")
+        profile_path = self.root / "config/application-profile.yaml"
+        profile = yaml.safe_load(profile_path.read_text(encoding="utf-8"))
+        profile["preparation"]["career_sources"].append(dict(path=primary.relative_to(self.root).as_posix(), section="Work Experience"))
+        profile_path.write_text(yaml.safe_dump(profile), encoding="utf-8")
         with self.assertRaisesRegex(CareerCoverageError, "Other Firm"):
             validate_career_coverage(CV, self.source)
 

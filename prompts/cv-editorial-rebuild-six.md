@@ -54,11 +54,11 @@ names, API field names, UI controls, TTL mechanics, queue/contact-flow mechanics
 specific QA scenarios, and similar implementation details in the evidence bank or
 interview preparation. Do not put them in a CV.
 
-For Simple.life telephony, lead with the employer-relevant result: privacy-first
-health-domain calling architecture protecting PII/PHI, formal security and
-call-recording compliance review, and a production release. Describe lawful calling,
-least-privilege access, and auditability only at outcome level. Do not list how phone
-numbers were resolved, masked, transported, retained, or purged.
+For privacy-sensitive calling work, lead with the employer-relevant privacy,
+security, compliance or production consequence only when supported by the selected
+candidate's evidence. Describe access controls and auditability at outcome level;
+do not invent a regulated domain, formal review or production release. Keep phone
+resolution, masking, transport, retention and purge mechanics in supporting records.
 
 ## Reusable editorial knowledge base
 
@@ -74,12 +74,12 @@ consequence, or convert an unsupported metric into an achievement.
 
 ## Evidence and rendering rules
 
-- Use only `verified` evidence-bank entries backed by `registry/candidate/*.md`.
-- Preserve the confirmed Simple.life date/title treatment and PHP attribution rules.
+- Use only `verified` entries from the configured preparation evidence bank, backed
+  by direct Markdown files in the configured immutable candidate directory.
+- Preserve source-backed date/title, precision and technology-attribution boundaries
+  from the configured reviewed career clarifications.
 - Retain at least two distinct substantive bullets for every detailed role and at
-  least three for each role ending in the last five years. Use `config/cv-editorial-knowledge.yaml`
-  as the CV career boundary: PDFfiller is the earliest permitted employer; exclude employers whose
-  work started before PDFfiller and roles ending nine or more years before the reference month.
+  least three for each role ending in the last five years. Use the preparation career scope in `config/application-profile.yaml` as the CV boundary. Exclude employers outside its configured start and recency limits.
   Never mention excluded employers in any CV section, including Summary or Skills. Preserve every
   employer within this approved window in one Experience section, with consistent H3
   employer/role/date headings and source-backed dates. Older permitted roles may have a dated
@@ -89,8 +89,8 @@ consequence, or convert an unsupported metric into an achievement.
   entry or ask for facts.
 - Keep reverse chronology, role dates, vacancy-specific skills, and a maximum of two
   visually readable pages.
-- Use PHP for Simple.life only in Technologies unless a direct source confirms a
-  Simple.life PHP result. Attribute CRURATED PHP delivery to CRURATED.
+- Keep each technology result attributed to the employer and contribution supported
+  by its verified sources; a technology inventory alone does not establish delivery.
 
 ## Required workflow and acceptance criteria
 

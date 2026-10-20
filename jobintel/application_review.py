@@ -8,10 +8,9 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
-import yaml
-
-from .career_coverage import _ALIASES, _corrected_roles, _cv_entries, _scoped_roles, validate_career_coverage
+from .career_coverage import _corrected_roles, _cv_entries, _scoped_roles, validate_career_coverage
 from .evidence import _source
+from .preparation_context import PreparationContext, resolve_preparation_context
 
 
 def review_digest(value: Any) -> str:
@@ -28,14 +27,15 @@ def _text(value: Any, label: str) -> str:
     return value.strip()
 
 
-def validate_role_inventory(audit: Mapping, markdown: str, root: Path, *, reference_date: date | None = None) -> list:
+def validate_role_inventory(audit: Mapping, markdown: str, root: Path, *, reference_date: date | None = None, context: PreparationContext | None = None) -> list:
     rows = audit.get('role_coverage')
     if not isinstance(rows, list) or not rows:
         raise ValueError('cv_audit.role_coverage requires a complete source-role inventory')
-    source_path = root / 'registry/candidate/linkedin-profile.md'
-    all_roles = _corrected_roles(source_path)
-    permitted = _scoped_roles(all_roles, source_path, reference_date)
-    validate_career_coverage(markdown, source_path, reference_date=reference_date)
+    context = resolve_preparation_context(root, context)
+    source_path = context.career_source_path
+    all_roles = _corrected_roles(source_path, context=context)
+    permitted = _scoped_roles(all_roles, source_path, reference_date, context=context)
+    validate_career_coverage(markdown, source_path, reference_date=reference_date, context=context)
     editor = audit['editorial_review']
     author = _text(editor.get('author'), 'CV editorial author')
     if editor.get('mode') == 'independent' and author == editor['reviewer']:
@@ -62,10 +62,10 @@ def validate_role_inventory(audit: Mapping, markdown: str, root: Path, *, refere
         sources = row.get('sources')
         if not isinstance(sources, list) or not sources:
             raise ValueError('role_coverage requires exact candidate sources')
-        quotes = '\n'.join(_source(root, item) for item in sources if isinstance(item, Mapping))
+        quotes = '\n'.join(_source(root, item, context=context) for item in sources if isinstance(item, Mapping))
         if len([item for item in sources if isinstance(item, Mapping)]) != len(sources):
             raise ValueError('role_coverage sources must be mappings')
-        aliases = _ALIASES.get(employer.casefold(), (employer,))
+        aliases = context.employer_aliases.get(employer.casefold(), (employer,))
         if not any(alias.casefold() in quotes.casefold() for alias in aliases):
             raise ValueError('role_coverage source does not support the employer')
         if expected == 'include':
@@ -87,7 +87,7 @@ def letter_basis(quality: Mapping) -> dict:
                 requirements=quality['requirements'], channel=letter.get('channel', 'attachment'))
 
 
-def validate_letter_review(quality: Mapping, markdown: str, draft: Path, root: Path, ledger: Mapping) -> dict:
+def validate_letter_review(quality: Mapping, markdown: str, draft: Path, root: Path, ledger: Mapping, *, context: PreparationContext | None = None) -> dict:
     letter = quality['cover_letter']
     review = letter.get('editorial_review')
     if not isinstance(review, Mapping):
@@ -158,17 +158,15 @@ def validate_letter_review(quality: Mapping, markdown: str, draft: Path, root: P
     if company_quote not in markdown:
         raise ValueError('letter company claim must be present in the final text')
     _text(review.get('company_grounding'), 'letter company source-to-final-text review')
-    validate_voice_review(review, root)
+    validate_voice_review(review, root, context=context)
     return {**review, 'company_source': dict(snapshot), 'company_fact': company['fact']}
 
 
-def validate_voice_review(review: Mapping, root: Path) -> None:
-    policy = yaml.safe_load((root / 'config/application-review.yaml').read_text(encoding='utf-8'))
-    if not isinstance(policy, Mapping) or policy.get('schema_version') != 1:
-        raise ValueError('letter review requires voice policy schema_version 1')
-    configured = policy['voice_sources']
-    if not isinstance(configured, list) or len(configured) != 2 or {Path(path).name for path in configured if isinstance(path, str)} != {'social-voice.md', 'employer-letter-flow.md'}:
-        raise ValueError('letter review requires both canonical voice sources')
+def validate_voice_review(review: Mapping, root: Path, *, context: PreparationContext | None = None) -> None:
+    context = resolve_preparation_context(root, context)
+    if context.project_root != root.resolve():
+        raise ValueError('letter voice context belongs to another project')
+    configured = context.voice_sources
     voice = review.get('voice')
     if not isinstance(voice, Mapping):
         raise ValueError('letter review requires final-language voice inspection')
@@ -187,12 +185,12 @@ def validate_voice_review(review: Mapping, root: Path) -> None:
             raise ValueError('letter voice review is stale or uses another rules source')
 
 
-def validate_application_review(quality: Mapping, package: Mapping, draft: Path, root: Path, ledger: Mapping, *, reference_date: date | None = None) -> dict:
+def validate_application_review(quality: Mapping, package: Mapping, draft: Path, root: Path, ledger: Mapping, *, reference_date: date | None = None, context: PreparationContext | None = None) -> dict:
     receipt = {}
     if 'cv_markdown' in package:
-        receipt['role_coverage'] = validate_role_inventory(quality['cv_audit'], package['cv_markdown'], root, reference_date=reference_date)
+        receipt['role_coverage'] = validate_role_inventory(quality['cv_audit'], package['cv_markdown'], root, reference_date=reference_date, context=context)
     if 'cover_letter_markdown' in package:
-        receipt['letter_review'] = validate_letter_review(quality, package['cover_letter_markdown'], draft, root, ledger)
+        receipt['letter_review'] = validate_letter_review(quality, package['cover_letter_markdown'], draft, root, ledger, context=context)
     if ledger.get('schema_version') != 2:
         raise ValueError('quality v3 requires claims ledger schema_version 2 with measurement context')
     return receipt

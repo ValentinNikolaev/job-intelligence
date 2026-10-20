@@ -20,6 +20,7 @@ import yaml
 from . import storage_bridge as op
 from .evidence import EvidenceError, validate_claims_ledger, validate_evidence_bank
 from .career_coverage import CareerCoverageError, validate_career_coverage
+from .preparation_context import PreparationContext, PreparationContextError, load_preparation_context, resolve_preparation_context
 
 
 APPLICATION_FILES = {
@@ -38,7 +39,6 @@ QUALITY_CONTRACT_VERSION = 3
 
 _DEFAULT_APPLICATION_DIRECTORY = "application"
 _FALLBACK_APPLICATION_DIRECTORY = "application-codex"
-_CV_OWNER_STEM = "ValentinNikolaev"
 _MAX_CV_EXPORT_STEM_LENGTH = 72
 _ROLE_NOISE_TERMS = {
     "hybrid",
@@ -293,9 +293,15 @@ def validate_application_draft(
     document: str | None = None,
     reference_date: date | datetime | None = None,
     career_source_path: Path | None = None,
+    context: PreparationContext | None = None,
 ) -> dict[str, str]:
     """Validate a local Codex draft without publishing or converting it."""
     vacancy_directory = vacancy_directory.resolve()
+    try:
+        context = resolve_preparation_context(op.project_root(vacancy_directory) or vacancy_directory.parents[2], context)
+    except PreparationContextError as exc:
+        raise ApplicationError(str(exc)) from exc
+    career_source_path = career_source_path or context.career_source_path
     snapshot = op.materialize_vacancy_snapshot(vacancy_directory)
     meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
     vacancy, _, _ = _load_vacancy(snapshot, meta)
@@ -312,9 +318,10 @@ def validate_application_draft(
         document_format=_draft_format(draft_directory),
         letter_channel=_draft_letter_channel(draft_directory),
         career_source_path=career_source_path,
+        context=context,
     )
     _validate_draft_quality(draft_directory.resolve(), validated, document=document,
-                            project_root=op.project_root(vacancy_directory), vacancy_text=str(vacancy["job_description"]), reference_date=reference_date)
+                            project_root=context.project_root, vacancy_text=str(vacancy["job_description"]), reference_date=reference_date, context=context)
     return validated
 
 
@@ -439,8 +446,13 @@ class ApplicationGenerator:
         document: str | None = None,
         clock: Callable[[], datetime] | None = None,
         allow_legacy_drafts: bool = False,
+        context: PreparationContext | None = None,
     ) -> None:
         self.registry_root = registry_root.resolve()
+        try:
+            self.context = resolve_preparation_context(self.registry_root.parent, context)
+        except PreparationContextError as exc:
+            raise ApplicationError(str(exc)) from exc
         self.profile_paths = tuple(path.resolve() for path in profile_paths)
         self.prompt_path = prompt_path.resolve()
         self.client = client
@@ -453,6 +465,13 @@ class ApplicationGenerator:
     @op.exclusive
     def generate_directory(self, directory: Path, *, force: bool = False) -> PreparationResult:
         directory = directory.resolve()
+        if directory.parent != self.registry_root / "jobs":
+            raise ApplicationError("vacancy directory belongs to another preparation registry")
+        if not isinstance(self.client, CodexApplicationDraftClient) and not self.allow_legacy_drafts:
+            raise ApplicationError("new application publication requires a validated Codex draft; raw application clients are unsupported")
+        if load_preparation_context(self.context.project_root).version != self.context.version:
+            raise ApplicationError("preparation context changed after the operation was configured")
+        directory = directory.resolve()
         snapshot = op.materialize_vacancy_snapshot(directory)
         meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
         vacancy_id = str(meta.get("id", ""))
@@ -460,6 +479,9 @@ class ApplicationGenerator:
             raise ApplicationError(f"vacancy metadata has no id: {directory / 'meta.yaml'}")
 
         candidate_profile, profile_version = self._load_candidate_profile()
+        match_path = snapshot / "match.yaml"
+        if op.exists(match_path) and _read_yaml_mapping(match_path, "match analysis").get("profile_version") != profile_version:
+            raise ApplicationError("current match belongs to another preparation candidate profile")
         prompt, prompt_version = self._load_prompt()
         vacancy, vacancy_version, company_version = _load_vacancy(snapshot, meta)
         generated_at = self._clock()
@@ -471,7 +493,9 @@ class ApplicationGenerator:
             "model": self.model,
             **_match_provenance(snapshot),
             "quality_contract_version": QUALITY_CONTRACT_VERSION,
+            "preparation_context_version": self.context.version,
             "cv_export_stem": _cv_export_stem(
+                owner_stem=self.context.cv_owner_stem,
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
             ),
@@ -484,6 +508,7 @@ class ApplicationGenerator:
             expected_versions,
             document=self.document,
             career_source_path=self._career_source_path(),
+            context=self.context,
         ):
             return PreparationResult("skipped", vacancy_id, directory.name)
 
@@ -499,6 +524,7 @@ class ApplicationGenerator:
             document_format=_draft_format(self.client.directory) if isinstance(self.client, CodexApplicationDraftClient) else "standard",
             letter_channel=_draft_letter_channel(self.client.directory) if isinstance(self.client, CodexApplicationDraftClient) else "attachment",
             career_source_path=self._career_source_path(),
+            context=self.context,
         )
         quality = _document_quality_report(generated)
         if isinstance(self.client, CodexApplicationDraftClient):
@@ -510,12 +536,27 @@ class ApplicationGenerator:
                     project_root=self.registry_root.parent,
                     vacancy_text=str(vacancy["job_description"]),
                     reference_date=generated_at,
+                    context=self.context,
                 )
             )
+        else:
+            quality["contract_version"] = 1
+            quality["migration_note"] = "Legacy raw-client fixture: grounding, editorial review and current preparation provenance were not verified."
+        if quality["contract_version"] == QUALITY_CONTRACT_VERSION:
+            quality["preparation_context_version"] = self.context.version
+            for receipt in quality["documents"].values():
+                receipt["preparation_context_version"] = self.context.version
+        else:
+            expected_versions.pop("preparation_context_version", None)
+            quality.pop("preparation_context_version", None)
+            for receipt in quality["documents"].values():
+                receipt.pop("preparation_context_version", None)
+            if isinstance(quality.get("grounding"), dict):
+                quality["grounding"].pop("preparation_context_version", None)
         expected_versions["quality_contract_version"] = quality["contract_version"]
         if isinstance(self.client, CodexApplicationDraftClient) and quality["contract_version"] != QUALITY_CONTRACT_VERSION and not self.allow_legacy_drafts:
             raise ApplicationError("new application publication requires quality schema_version 3; legacy schemas 1 and 2 are read-only")
-        cv_export_files = _cv_export_files(meta)
+        cv_export_files = _cv_export_files(meta, owner_stem=self.context.cv_owner_stem)
 
         staging_root = self.registry_root.parent / ".codex-work" / "publication-staging" / directory.name
         staging_root.mkdir(parents=True, exist_ok=True)
@@ -592,6 +633,8 @@ class ApplicationGenerator:
                 staging / "manifest.yaml",
                 yaml.safe_dump(manifest, allow_unicode=True, sort_keys=False),
             )
+            if load_preparation_context(self.context.project_root).version != self.context.version:
+                raise ApplicationError("preparation context changed before publication")
             def record_published(target: Path) -> None:
                 with op.mutation(directory, "publish-application-manifest"):
                     if target.name != application_dir.name:
@@ -612,6 +655,10 @@ class ApplicationGenerator:
         return PreparationResult("prepared", vacancy_id, directory.name)
 
     def is_current(self, directory: Path) -> bool:
+        if directory.resolve().parent != self.registry_root / "jobs":
+            return False
+        if load_preparation_context(self.context.project_root).version != self.context.version:
+            return False
         directory = directory.resolve()
         snapshot = op.materialize_vacancy_snapshot(directory)
         meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
@@ -626,7 +673,9 @@ class ApplicationGenerator:
             "model": self.model,
             **_match_provenance(snapshot),
             "quality_contract_version": QUALITY_CONTRACT_VERSION,
+            "preparation_context_version": self.context.version,
             "cv_export_stem": _cv_export_stem(
+                owner_stem=self.context.cv_owner_stem,
                 company=str(meta.get("company") or ""),
                 title=str(meta.get("title") or ""),
             ),
@@ -638,20 +687,18 @@ class ApplicationGenerator:
             expected_versions,
             document=self.document,
             career_source_path=self._career_source_path(),
+            context=self.context,
         )
 
-    def _career_source_path(self) -> Path | None:
-        source = self.registry_root / "candidate" / "linkedin-profile.md"
-        if (source.is_file() or (self.registry_root.parent / ".git").exists()
-                or any(path.name == source.name for path in self.profile_paths)):
-            return source
-        return None
+    def _career_source_path(self) -> Path:
+        return self.context.career_source_path
 
     def _load_candidate_profile(self) -> tuple[str, str]:
         if not self.profile_paths:
             raise ApplicationError("at least one candidate source-of-truth path is required")
         sections = []
         for path in self.profile_paths:
+            self.context.source_path(self.context.relative(path))
             if not op.exists(path):
                 raise ApplicationError(f"candidate source-of-truth file not found: {path}")
             content = op.read_text(path).strip()
@@ -705,6 +752,7 @@ def validate_application_package(
     document_format: str = "standard",
     letter_channel: str = "attachment",
     career_source_path: Path | None = None,
+    context: PreparationContext | None = None,
 ) -> dict[str, str]:
     if document_format not in {"standard", "compact"}:
         raise ApplicationError("document_format must be standard or compact")
@@ -771,7 +819,7 @@ def validate_application_package(
         _validate_cv_role_technologies(result["cv_markdown"])
         if career_source_path is not None:
             try:
-                validate_career_coverage(result["cv_markdown"], career_source_path, reference_date=reference_date)
+                validate_career_coverage(result["cv_markdown"], career_source_path, reference_date=reference_date, context=context)
             except CareerCoverageError as exc:
                 raise ApplicationError(str(exc)) from exc
         if vacancy is not None:
@@ -1104,6 +1152,7 @@ def _validate_draft_quality(
     project_root: Path | None = None,
     vacancy_text: str | None = None,
     reference_date: date | datetime | None = None,
+    context: PreparationContext | None = None,
 ) -> dict[str, Any]:
     quality_path = draft_directory / "quality.yaml"
     quality = _read_yaml_mapping(quality_path, "application quality declaration")
@@ -1154,10 +1203,10 @@ def _validate_draft_quality(
                 raise ApplicationError(f"cover_letter evidence story {index} must be a mapping")
             requirement = str(story.get("requirement") or "").strip()
             source = str(story.get("candidate_source") or "").strip().replace("\\", "/")
-            if not requirement or not source.startswith("registry/candidate/"):
+            if not requirement or not source:
                 raise ApplicationError(
                     f"cover_letter evidence story {index} must include a requirement and "
-                    "a registry/candidate source"
+                    "a configured candidate source"
                 )
         motivation = cover_letter.get("company_motivation")
         if not isinstance(motivation, Mapping):
@@ -1211,10 +1260,11 @@ def _validate_draft_quality(
     if version == 1:
         report["migration_note"] = "Legacy contract 1: source-linked claims and export checks are not verified; only an explicitly approved new contract 3 draft can verify current controls."
     else:
-        report["grounding"] = _validate_v2_grounding(quality, package, draft_directory, project_root, vacancy_text, reference_date=reference_date)
+        report["grounding"] = _validate_v2_grounding(quality, package, draft_directory, project_root, vacancy_text, reference_date=reference_date, context=context)
         if version == 2:
             report['migration_note'] = 'Legacy contract 2: new role, letter and measurement-context controls were not verified.'
         for receipt in report["documents"].values():
+            receipt["preparation_context_version"] = report["grounding"]["preparation_context_version"]
             receipt["evidence_bank_path"] = report["grounding"]["evidence_bank_path"]
             receipt["evidence_bank_sha256"] = report["grounding"]["evidence_bank"]["sha256"]
     report.update(
@@ -1264,16 +1314,24 @@ def _contained_file(root: Path, relative: Any, label: str) -> Path:
 def _validate_v2_grounding(
     quality: Mapping[str, Any], package: Mapping[str, str], draft: Path, root: Path | None,
     vacancy_text: str | None = None,
-    *, reference_date: date | datetime | None = None,
+    *, reference_date: date | datetime | None = None, context: PreparationContext | None = None,
 ) -> dict[str, Any]:
     if root is None:
         raise ApplicationError("quality v2 requires a project root containing registry/candidate")
+    try:
+        context = resolve_preparation_context(root, context)
+    except PreparationContextError as exc:
+        raise ApplicationError(str(exc)) from exc
+    if quality.get("schema_version") == 3 and quality.get("preparation_context_version") != context.version:
+        raise ApplicationError("quality preparation_context_version is missing or stale")
     bank_path = _contained_file(root, quality.get("evidence_bank"), "evidence_bank")
+    if bank_path != context.evidence_bank:
+        raise ApplicationError("quality evidence_bank differs from its preparation context")
     ledger_path = _contained_file(draft, quality.get("claims_ledger"), "claims_ledger")
     bank = _read_yaml_mapping(bank_path, "candidate evidence bank")
     ledger = _read_yaml_mapping(ledger_path, "application claims ledger")
     try:
-        report = validate_claims_ledger(ledger, bank, package, root)
+        report = validate_claims_ledger(ledger, bank, package, root, context=context)
     except EvidenceError as exc:
         raise ApplicationError(f"application grounding failed: {exc}") from exc
     review = quality["final_review"]
@@ -1306,7 +1364,8 @@ def _validate_v2_grounding(
         ):
             raise ApplicationError("cv_audit requires reasoned bullet_decisions")
         _validate_cv_audit_bullet_coverage(package["cv_markdown"], decisions)
-        _validate_cv_editorial_review(package["cv_markdown"], audit)
+        _validate_cv_editorial_review(package["cv_markdown"], audit,
+                                      knowledge_path=context.project_root / "config/cv-editorial-knowledge.yaml")
         report["cv_audit"] = dict(audit)
     from .requirements import validate_requirements
 
@@ -1344,10 +1403,10 @@ def _validate_v2_grounding(
         from .application_review import validate_application_review
         try:
             reference = reference_date.date() if isinstance(reference_date, datetime) else reference_date
-            report["application_review"] = validate_application_review(quality, package, draft, root, ledger, reference_date=reference)
+            report["application_review"] = validate_application_review(quality, package, draft, root, ledger, reference_date=reference, context=context)
         except (ValueError, OSError, KeyError, TypeError) as exc:
             raise ApplicationError(f"application editorial review failed: {exc}") from exc
-    report.update({"reviewer": review["reviewer"], "document_sha256": dict(hashes), "requirements": requirements,
+    report.update({"preparation_context_version": context.version, "reviewer": review["reviewer"], "document_sha256": dict(hashes), "requirements": requirements,
                    "evidence_bank_path": str(quality["evidence_bank"]), "claims_ledger_path": str(quality["claims_ledger"]),
                    "claims": ledger["claims"]})
     return report
@@ -1442,6 +1501,7 @@ def _merge_quality_reports(
         if not document_receipts and isinstance(old_hashes, Mapping):
             document_receipts = {name: {
                 "document_sha256": digest,
+                "preparation_context_version": old_grounding.get("preparation_context_version"),
                 "claims_ledger_sha256": old_grounding.get("sha256"),
                 "claims_ledger_path": old_grounding.get("claims_ledger_path"),
                 "reviewer": old_grounding.get("reviewer"),
@@ -1450,6 +1510,7 @@ def _merge_quality_reports(
         if isinstance(new_hashes, Mapping) and document in new_hashes:
             document_receipts[document] = {
                 "document_sha256": new_hashes[document],
+                "preparation_context_version": new_grounding.get("preparation_context_version"),
                 "claims_ledger_sha256": new_grounding.get("sha256"),
                 "claims_ledger_path": new_grounding.get("claims_ledger_path"),
                 "reviewer": new_grounding.get("reviewer"),
@@ -1715,6 +1776,7 @@ def _package_is_current(
     *,
     document: str | None = None,
     career_source_path: Path | None = None,
+    context: PreparationContext | None = None,
 ) -> bool:
     if not op.exists(manifest_path):
         return False
@@ -1726,22 +1788,35 @@ def _package_is_current(
     if career_source_path is not None and "cv" in _selected_documents(document):
         try:
             validate_career_coverage(
-                op.read_text(application_dir / "cv.md"), career_source_path,
+                op.read_text(application_dir / "cv.md"), career_source_path, context=context,
             )
         except (CareerCoverageError, OSError):
             return False
     quality = manifest.get("quality", {})
+    if manifest.get("quality_contract_version") != QUALITY_CONTRACT_VERSION or not isinstance(quality, Mapping) or quality.get("contract_version") != QUALITY_CONTRACT_VERSION:
+        return False
+    grounding = quality.get("grounding")
+    expected_context = expected_versions.get("preparation_context_version")
+    if not isinstance(expected_context, str) or not expected_context.startswith("preparation-v1:sha256:") or not isinstance(grounding, Mapping) or grounding.get("preparation_context_version") != expected_context:
+        return False
     quality_documents = quality.get("documents", {}) if isinstance(quality, Mapping) else {}
     for name in _selected_documents(document):
         receipt = quality_documents.get(name, {}) if isinstance(quality_documents, Mapping) else {}
+        if not isinstance(receipt, Mapping) or any(not isinstance(receipt.get(key), str) or not receipt[key].strip()
+                for key in ("evidence_bank_path", "evidence_bank_sha256", "sha256", "preparation_context_version")):
+            return False
+        if expected_versions.get("quality_contract_version") == 3 and (not isinstance(receipt, Mapping) or receipt.get("preparation_context_version") != expected_versions.get("preparation_context_version")):
+            return False
         if isinstance(receipt, Mapping) and receipt.get("evidence_bank_path"):
-            root = op.project_root(application_dir)
+            root = context.project_root if context is not None else op.project_root(application_dir)
             if root is None:
                 return False
             try:
                 path = _contained_file(root, receipt["evidence_bank_path"], "evidence_bank")
+                if context is not None and path != context.evidence_bank:
+                    return False
                 bank = _read_yaml_mapping(path, "candidate evidence bank")
-                if validate_evidence_bank(bank, root)["sha256"] != receipt.get("evidence_bank_sha256"):
+                if validate_evidence_bank(bank, root, context=context)["sha256"] != receipt.get("evidence_bank_sha256"):
                     return False
                 markdown = op.read_text(application_dir / APPLICATION_FILES[APPLICATION_DOCUMENTS[name]])
                 if _content_version(markdown.strip() + "\n") != receipt.get("sha256"):
@@ -1751,7 +1826,7 @@ def _package_is_current(
                     review = quality.get('grounding', {}).get('application_review', {}).get('letter_review')
                     if not isinstance(review, Mapping) or review.get('document_sha256') != document_digest(markdown):
                         return False
-                    validate_voice_review(review, root)
+                    validate_voice_review(review, root, context=context)
                 if name in {"cv", "cover-letter"}:
                     from .document_quality import file_sha256
 
@@ -1888,8 +1963,9 @@ def _staged_application_files(staging: Path) -> list[str]:
     return sorted(path.name for path in staging.iterdir() if op.exists(path))
 
 
-def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:
+def _cv_export_files(meta: Mapping[str, Any], *, owner_stem: str) -> dict[str, str]:
     stem = _cv_export_stem(
+        owner_stem=owner_stem,
         company=str(meta.get("company") or ""),
         title=str(meta.get("title") or ""),
     )
@@ -1899,10 +1975,12 @@ def _cv_export_files(meta: Mapping[str, Any]) -> dict[str, str]:
     }
 
 
-def _cv_export_stem(*, company: str, title: str) -> str:
+def _cv_export_stem(*, company: str, title: str, owner_stem: str) -> str:
     company_part = _compact_company_slug(company) or "company"
     role_part = _pascal_role_slug(title) or "Role"
-    stem = f"CV_{_CV_OWNER_STEM}_{company_part}_{role_part}"
+    if not re.fullmatch(r"[A-Za-z0-9]{1,60}", owner_stem):
+        raise ApplicationError("invalid configured CV filename owner")
+    stem = f"CV_{owner_stem}_{company_part}_{role_part}"
     if len(stem) <= _MAX_CV_EXPORT_STEM_LENGTH:
         return stem
     digest = hashlib.sha256(stem.encode("utf-8")).hexdigest()[:8]

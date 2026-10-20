@@ -336,3 +336,28 @@ retry are retained in the [plan's final synthesis](multiaccount-migration-plan.m
 The next action is reviewed finalizer publication of the documentation-only acceptance
 increment and final PR handoff. Changed bindings/integrated code, refused publication,
 new review defects or CI failures require reassessment. Phases 4-6 remain deferred.
+
+## Phase-4 preparation configuration
+
+Phase 4 is complete in [PR 3](https://github.com/ValentinNikolaev/job-intelligence/pull/3).
+The [preparation guide](preparation-configuration.md) records
+configuration ownership, source boundaries, profile precedence and legacy behavior.
+Personal filename, path, employer-alias and career-window decisions move to the
+required `preparation` section of `config/application-profile.yaml`; voice paths stay
+in `config/application-review.yaml`. Shared grounding and editorial guidance stay in
+`config/cv-editorial-knowledge.yaml`. The reviewed default clarification records retain
+the existing date precision, title/technology attribution and source-backed rendering
+limits. Candidate records themselves remain unchanged.
+
+The pre-existing Zend-credential exclusion remains a shared current editorial
+restriction in the generic application prompt and validator. This iteration does not
+claim that every personal editorial exception is configurable. Review that restriction
+before candidate-independent onboarding in phase 5, alongside the deferred source-side
+relevance preferences. A second live account remains phase 6 work.
+
+See the [migration execution log](multiaccount-migration-plan.md#execution-log) for
+actual baseline disagreements, review findings, corrective work and release gates.
+Independent cumulative R3 approved the clean published code `d8495d0` after 88
+passing targeted executions without skips. Exact-head push and PR CI each passed
+815 tests with two missing-Poppler PDF skips; the local full suite passed all 815
+without skips. No account selector or second live account is enabled in phase 4.

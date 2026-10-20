@@ -7,6 +7,21 @@ and their original review records. New preparation still needs explicit named-va
 approval and its normal preflight. These controls run inside the existing evidence,
 independent CV edit and final letter passes, without another compulsory agent wave.
 
+Resolve preparation settings from `config/application-profile.yaml` and voice sources
+from `config/application-review.yaml`. New schema-3 `quality.yaml` drafts must copy
+the exact `preparation_context_version` returned by the selected batch's preflight.
+Validation and publication reject missing or changed context before publication;
+never attach a current identity to an old draft to make it eligible. The manifest
+records this identity for each newly published document. A single-document refresh
+preserves the other documents' original identities and review records. Existing
+records without the binding stay readable and require explicit regeneration to meet
+the current preparation contract.
+
+Candidate source contents, evidence entries and cover-letter voice bytes retain
+their own source/hash checks. Configuration identity does not prove source meaning
+or replace those checks. CV-only and evidence commands resolve voice configuration
+without requiring unrelated host-local letter files to be available.
+
 ## Achievement context and missing facts
 
 An evidence-bank entry may add `achievement_context`. The supported keys are
@@ -131,10 +146,10 @@ letter. The validator verifies file/quote consistency, not the remote site's tru
 whether a forged local capture came from it; the reviewer must inspect the primary
 source. The manifest retains the quote, URL and source hash in its review basis.
 
-Read the two canonical files configured in `config/application-review.yaml` and
+Read every current voice source configured in `config/application-review.yaml` and
 inspect the exact final language after all edits or translation. Record practical
-voice notes and raw-byte hashes for both files in configured order. Configuration
-must name social-voice.md and employer-letter-flow.md. A changed final letter, evidence
+voice notes and raw-byte hashes for all sources in configured order. The nonempty
+source list may use different filenames. A changed final letter, evidence
 mapping, company snapshot or current voice source invalidates its review. Source paths
 are configurable for another host; missing rules fail the new letter check explicitly.
 Markdown review hashes use SHA-256 of `(text.strip() + "\n")`, prefixed with `sha256:`.

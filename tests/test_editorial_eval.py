@@ -1,5 +1,6 @@
 import copy
 import tempfile
+import shutil
 import unittest
 from pathlib import Path
 
@@ -37,6 +38,28 @@ class EditorialEvaluationTests(unittest.TestCase):
                 receipt = evaluate_decisions(self.root, answers)
                 self.assertFalse(receipt['ok'])
                 self.assertEqual('routine-repair', receipt['failures'][0]['id'])
+
+    def test_effective_preparation_policy_is_bound_without_contact_data_or_source_reads(self):
+        import yaml
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            for name in (*POLICY_FILES, 'tests/fixtures/editorial-corpus.yaml',
+                         'config/application-profile.yaml', 'config/application-review.yaml'):
+                path = root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(self.root / name, path)
+            pack = export_pack(root)
+            self.assertEqual(self.pack['policy_sha256'], pack['policy_sha256'])
+            self.assertNotIn('email:', pack['policies']['config/application-profile.yaml#preparation'])
+            path = root / 'config/application-profile.yaml'
+            profile = yaml.safe_load(path.read_text(encoding='utf-8'))
+            profile['candidate']['full_name'] = 'Unrelated contact-only edit'
+            path.write_text(yaml.safe_dump(profile, sort_keys=False), encoding='utf-8')
+            self.assertEqual(pack['policy_sha256'], export_pack(root)['policy_sha256'])
+            profile['preparation']['career_scope']['maximum_years_since_end'] -= 1
+            path.write_text(yaml.safe_dump(profile, sort_keys=False), encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'stale'):
+                evaluate_decisions(root, self.answers)
 
     def test_missing_duplicate_fabricated_and_stale_results_are_rejected(self):
         for mutation in ('missing', 'duplicate', 'fabricated', 'stale'):

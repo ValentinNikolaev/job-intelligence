@@ -17,6 +17,7 @@ from jobintel.document_quality import DocumentQualityError, preview_capabilities
 from jobintel.document_quality_cli import main as document_main
 from jobintel.cli import _resolve_explicit_preparation_directories
 from jobintel.cli import _shared_candidate_context
+from tests.preparation_fixtures import write_preparation_config
 
 
 class PreparationGateTests(unittest.TestCase):
@@ -33,6 +34,7 @@ class PreparationGateTests(unittest.TestCase):
         (self.root / "registry" / "jobs" / "vacancy" / "meta.yaml").write_text("id: vacancy-id\n", encoding="utf-8")
         (self.root / "config" / "codex-workflows.yaml").write_text(
             "schema_version: 1\nprepare_min_score: 65\nprepare_max_age_days: 14\nprepare_batch_size: 1\nmodel_profiles:\n  p:\n    model: test\n    reasoning: low\n    model_label: codex:test:low\nworkflows:\n  analyze:\n    default_profile: p\n    allowed_profiles: [p]\n  prepare:\n    default_profile: p\n    allowed_profiles: [p]\n", encoding="utf-8")
+        write_preparation_config(self.root)
 
     def test_preflight_rejects_missing_mongodb_before_drafting(self) -> None:
         from types import SimpleNamespace
@@ -89,6 +91,7 @@ class PreparationGateTests(unittest.TestCase):
         self.assertFalse((self.root / "application").exists())
 
     def test_lint_reports_all_predictable_draft_diagnostics(self) -> None:
+        write_preparation_config(self.root, evidence_bank="registry/evidence.yaml")
         candidate = self.root / "registry" / "candidate" / "candidate.md"
         candidate.write_text("Candidate source", encoding="utf-8")
         source_hash = hashlib.sha256(candidate.read_text(encoding="utf-8").encode()).hexdigest()
@@ -113,6 +116,7 @@ class PreparationGateTests(unittest.TestCase):
         self.assertTrue({"HANDOFF_MARKER", "ARTIFACT_HASH_STALE", "CV_AUDIT_ANCHOR", "CV_DUPLICATE_BULLET", "CV_TECHNOLOGIES_NOT_BULLETS", "EVIDENCE_UNAVAILABLE", "CLAIM_ROLE_INCOMPATIBLE", "CANDIDATE_QUOTE_NOT_EXACT", "JOB_QUOTE_NOT_EXACT", "TRAILING_WHITESPACE"}.issubset(codes))
 
     def test_lint_accepts_canonical_mongodb_job_text_without_local_projection(self) -> None:
+        write_preparation_config(self.root, evidence_bank="registry/evidence.yaml")
         candidate = self.root / "registry" / "candidate" / "candidate.md"
         candidate.write_text("Candidate source", encoding="utf-8")
         source_hash = hashlib.sha256(candidate.read_text(encoding="utf-8").encode()).hexdigest()

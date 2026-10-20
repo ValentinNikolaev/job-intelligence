@@ -27,6 +27,7 @@ from jobintel.registry import Registry
 from jobintel.storage_contract import SourceIdentityConflict, StorageConflictError
 from jobintel.triage import should_skip_model, snapshot_should_skip, write_triage
 from jobintel.selection_policy import DEFAULT_SELECTION_POLICY_PATH, load_selection_policy
+from tests.preparation_fixtures import write_preparation_config
 
 
 TEST_URI = os.environ.get(
@@ -48,6 +49,13 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         (self.temp / "sources").mkdir()
         (self.temp / "registry" / "candidate").mkdir(parents=True)
         (self.temp / "registry" / "candidate" / "match-profile.md").write_text("Candidate evidence", encoding="utf-8")
+        (self.temp / "registry/candidate/linkedin-profile.md").write_text(
+            "# Candidate\n## Experience\n### Example\nBackend Engineer\nJanuary 2020 - Present\n",
+            encoding="utf-8",
+        )
+        context = write_preparation_config(self.temp, profile_sources=["registry/candidate/match-profile.md"])
+        context.evidence_bank.parent.mkdir(parents=True)
+        context.evidence_bank.write_text("schema_version: 1\nentries: []\n", encoding="utf-8")
         (self.temp / "config" / "data-services.yaml").write_text(
             yaml.safe_dump({"storage": {"backend": "mongodb", "database_name": self.database_name, "schema_version": 1, "cutover_verified": True}}),
             encoding="utf-8",
@@ -246,10 +254,15 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         generator = ApplicationGenerator(
             self.registry.root, [self.temp / "registry" / "candidate" / "match-profile.md"],
             prompt, FakeClient(), FakeConverter(), clock=lambda: self.now,
+            allow_legacy_drafts=True,
         )
         result = generator.generate_directory(directory)
         self.assertEqual("prepared", result.status)
         self.assertTrue((directory / "application" / "manifest.yaml").is_file())
+        manifest = yaml.safe_load((directory / "application/manifest.yaml").read_text(encoding="utf-8"))
+        self.assertEqual(1, manifest["quality_contract_version"])
+        self.assertNotIn("preparation_context_version", manifest)
+        self.assertFalse(generator.is_current(directory))
         self.assertFalse((directory / "meta.yaml").exists())
         self.assertFalse((directory / "job.md").exists())
         self.assertEqual(1, len(self.store.list("artifact_manifests")))

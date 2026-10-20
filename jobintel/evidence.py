@@ -8,6 +8,8 @@ from collections.abc import Mapping, Sequence
 from pathlib import Path
 from typing import Any
 
+from .preparation_context import PreparationContext, PreparationContextError, load_preparation_context, resolve_preparation_context
+
 
 class EvidenceError(ValueError):
     pass
@@ -57,9 +59,9 @@ def _validate_context(entry: Mapping[str, Any], quote: str) -> None:
                 raise EvidenceError(f'measurement {name} is absent from its source quote')
 
 
-def evidence_questions(bank: Mapping[str, Any], root: Path, identifiers: Sequence[str] = ()) -> dict[str, Any]:
+def evidence_questions(bank: Mapping[str, Any], root: Path, identifiers: Sequence[str] = (), *, context: PreparationContext | None = None) -> dict[str, Any]:
     """List unanswered factual questions without ranking claims or updating sources."""
-    validate_evidence_bank(bank, root)
+    validate_evidence_bank(bank, root, context=context)
     known = {entry['id'] for entry in bank['entries']}
     if set(identifiers) - known:
         raise EvidenceError('unknown selected evidence ids')
@@ -145,16 +147,19 @@ def _text(value: Any, label: str) -> str:
     return value.strip()
 
 
-def _source_path(root: Path, source: Mapping[str, Any]) -> Path:
+def _source_path(root: Path, source: Mapping[str, Any], *, context: PreparationContext | None = None) -> Path:
     relative = _text(source.get("path"), "source.path").replace("\\", "/")
-    path = (root / relative).resolve()
-    if not relative.startswith("registry/candidate/") or len(relative.split("/")) != 3 or path.parent != (root / "registry" / "candidate").resolve() or path.suffix.lower() != ".md":
-        raise EvidenceError("evidence sources must be direct registry/candidate/*.md files")
-    return path
+    try:
+        context = context or load_preparation_context(root)
+        if context.project_root != root.resolve():
+            raise PreparationContextError("evidence context belongs to another project")
+        return context.source_path(relative)
+    except PreparationContextError as exc:
+        raise EvidenceError(str(exc)) from exc
 
 
-def _source(root: Path, source: Mapping[str, Any]) -> str:
-    path = _source_path(root, source)
+def _source(root: Path, source: Mapping[str, Any], *, context: PreparationContext | None = None) -> str:
+    path = _source_path(root, source, context=context)
     try:
         raw = path.read_bytes()
         content = raw.decode("utf-8-sig").replace("\r\n", "\n").replace("\r", "\n")
@@ -171,25 +176,35 @@ def _source(root: Path, source: Mapping[str, Any]) -> str:
     return quote
 
 
-def bootstrap_evidence_bank(project_root: Path, extracts: Sequence[Mapping[str, Any]]) -> dict[str, Any]:
+def bootstrap_evidence_bank(project_root: Path, extracts: Sequence[Mapping[str, Any]], *, context: PreparationContext | None = None) -> dict[str, Any]:
     """Seal caller-selected verbatim extracts as unverified, without inventing claims."""
+    try:
+        context = resolve_preparation_context(project_root, context)
+    except PreparationContextError as exc:
+        raise EvidenceError(str(exc)) from exc
     entries = []
     for extract in extracts:
         if not isinstance(extract, Mapping) or not isinstance(extract.get("source"), Mapping):
             raise EvidenceError("each extract requires a source mapping")
         source = dict(extract["source"])
-        path = _source_path(project_root, source)
+        path = _source_path(project_root, source, context=context)
         try:
             source["sha256"] = hashlib.sha256(path.read_text(encoding="utf-8-sig").encode("utf-8")).hexdigest()
         except OSError as exc:
             raise EvidenceError(f"cannot read candidate source {path}: {exc}") from exc
         entries.append({**extract, "status": "unverified", "source": source})
     bank = {"schema_version": 1, "entries": entries}
-    validate_evidence_bank(bank, project_root)
+    validate_evidence_bank(bank, project_root, context=context)
     return bank
 
 
-def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path) -> dict[str, Any]:
+def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path, *, context: PreparationContext | None = None) -> dict[str, Any]:
+    try:
+        context = resolve_preparation_context(project_root, context)
+        if context.project_root != project_root.resolve():
+            raise PreparationContextError("evidence context belongs to another project")
+    except PreparationContextError as exc:
+        raise EvidenceError(str(exc)) from exc
     if bank.get("schema_version") != 1 or not isinstance(bank.get("entries"), list):
         raise EvidenceError("evidence bank requires schema_version 1 and entries list")
     identifiers: set[str] = set()
@@ -210,16 +225,16 @@ def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path) -> dict[
         source = entry.get("source")
         if not isinstance(source, Mapping):
             raise EvidenceError(f"{identifier} requires source provenance")
-        quote = _source(project_root, source)
+        quote = _source(project_root, source, context=context)
         _validate_context(entry, quote)
         attribution_source = entry.get("attribution_source")
         if attribution_source is not None:
             if not isinstance(attribution_source, Mapping):
                 raise EvidenceError(f"{identifier} attribution_source must be a source mapping")
-            attribution_quote = _source(project_root, attribution_source)
+            attribution_quote = _source(project_root, attribution_source, context=context)
         else:
             attribution_quote = ""
-        quote_key = (str(_source_path(project_root, source)).casefold(), quote)
+        quote_key = (str(_source_path(project_root, source, context=context)).casefold(), quote)
         if status in {"cannot-confirm", "retracted"}:
             blocked_quotes.add(quote_key)
         elif status == "verified":
@@ -250,9 +265,10 @@ def validate_evidence_bank(bank: Mapping[str, Any], project_root: Path) -> dict[
 
 def validate_claims_ledger(
     ledger: Mapping[str, Any], bank: Mapping[str, Any], package: Mapping[str, str], project_root: Path,
+    *, context: PreparationContext | None = None,
 ) -> dict[str, Any]:
     """Check anchors, metrics and declared role attribution, not semantic equivalence."""
-    receipt = validate_evidence_bank(bank, project_root)
+    receipt = validate_evidence_bank(bank, project_root, context=context)
     if type(ledger.get("schema_version")) is not int or ledger['schema_version'] not in {1, 2} or not isinstance(ledger.get("claims"), list):
         raise EvidenceError("claims ledger requires schema_version 1 or 2 and claims list")
     entries = {entry["id"]: entry for entry in bank["entries"]}
