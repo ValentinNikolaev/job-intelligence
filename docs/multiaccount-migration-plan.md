@@ -19,15 +19,16 @@ account remain outside this authorization.
 
 ## Progress and maintenance
 
-The phase-0 behavioral baseline and phase-1 dormant configuration are complete and
-independently reviewed. Runtime selection remains on the existing implementation
-until the separately reviewed phase-2 cutover.
+Phases 0-2 are complete and independently reviewed: deterministic consumers use the
+validated policy, baseline parity is preserved and stale triage is evaluated read-only.
+Phases 0-1 are published; phase-2 publication is the next coordinator action. Phase 3
+has not started.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
 | 0 | Inventory and behavioral baseline | None | Done |
 | 1 | Validated configuration for existing selection rules | 0 | Done |
-| 2 | Configuration-driven prefilter and triage | 1 | Not started |
+| 2 | Configuration-driven prefilter and triage | 1 | Done |
 | 3 | Configurable match-analysis preferences | 2 | Not started |
 | 4 | Candidate-independent document preparation | 3 | Not started |
 | 5 | Explicit account description with one live account | 4 | Not started |
@@ -88,8 +89,8 @@ Acceptance gate: the inventory identifies the consumers that must change togethe
 and durable tests can expose behavior drift during extraction.
 
 Implementation evidence: [rule inventory and baseline](multiaccount-rule-inventory.md),
-39 fixed-time prefilter cases, 13 triage cases and four queue cases. The original
-runtime remains unchanged. Full post-change MongoDB checks passed 710 tests with no
+39 fixed-time prefilter cases, 13 triage cases and four queue cases. The phase-0/1
+increment retained the original runtime. Its MongoDB checks passed 710 tests with no
 skips. Independent review R1 approved the corrected increment, including a mutation
 that confirms receipt-timestamp preservation is exercised; the phase is `Done`.
 
@@ -97,8 +98,8 @@ that confirms receipt-timestamp preservation is exercised; the phase is `Done`.
 
 Tasks:
 
-- [x] Add the proposed `config/selection-policy.yaml` with a versioned schema that
-  reproduces the current rules. This path is proposed, not an existing interface.
+- [x] Introduce `config/selection-policy.yaml` with a versioned schema reproducing
+  the baseline rules. Phase 1 shipped it as a dormant interface; phase 2 activates it.
 - [x] Cover maximum vacancy age, excluded roles, target technologies, excluded
   technologies and combinations, remote requirements, blocking mandatory languages,
   existing location/timezone decisions and triage exclusions.
@@ -118,9 +119,9 @@ Tasks:
 Acceptance gate: the file describes the existing behavior completely, validates
 deterministically, and does not yet alter production decisions.
 
-Implementation evidence: dormant `jobintel/selection_policy.py`, explicit version-1
-configuration and strict loader tests. Immutable relevant-subset digests are available
-for phase 2; no operational imports or CLI arguments changed. Full post-change MongoDB
+Implementation evidence: phase 1 added dormant `jobintel/selection_policy.py`, explicit
+version-1 configuration and strict loader tests. Immutable relevant-subset digests
+support phase 2; phase 1 changed no operational imports or CLI arguments. Its MongoDB
 checks passed 710 tests with no skips. Independent verification of the final test
 correction passed and review R1 approved the increment; the phase is `Done`.
 
@@ -128,29 +129,38 @@ correction passed and review R1 approved the increment; the phase is `Done`.
 
 Tasks:
 
-- [ ] Load and validate the policy once at each relevant command boundary, before
+- [x] Load and validate the policy once at each relevant command boundary, before
   collection requests or mutations. Pass it explicitly to consumers; avoid hidden
   mutable process-wide settings. A required invalid policy fails closed.
-- [ ] Switch `jobintel/prefilter.py` and collection callers in `jobintel/cli.py` to the
+- [x] Switch `jobintel/prefilter.py` and collection callers in `jobintel/cli.py` to the
   typed policy. Retain normalization, text recognition, precedence and explanations.
-- [ ] Switch `jobintel/triage.py` and its CLI, pending-queue and `workflow_api.py`
+- [x] Switch `jobintel/triage.py` and its CLI, pending-queue, `workflow_api.py` and
+  skipped-archive
   consumers together. Test both path-based and MongoDB snapshot-based queue paths.
-- [ ] Define triage freshness using the existing `triage_version` field, without a
+- [x] Define triage freshness using the existing `triage_version` field, without a
   MongoDB schema change. An unchanged legacy-equivalent policy may reuse legacy
   decisions; changed relevant rules must trigger recomputation or an explicit
   refresh requirement, never silently reuse an incompatible skip decision.
-- [ ] Compare old and new results on the phase-0 corpus without writing production
+- [x] Compare old and new results on the phase-0 corpus without writing production
   records. Compare decisions, categories, reasons and queue behavior, not just totals.
-- [ ] Add meaningful tests showing that changing one supported configuration value
+- [x] Add meaningful tests showing that changing one supported configuration value
   changes its intended decision, while unrelated settings preserve other decisions.
-- [ ] Verify existing commands and automation entrypoints still work with their
+- [x] Verify existing commands and automation entrypoints still work with their
   existing arguments. Remove obsolete personal decision constants only after all
   consumers have switched; shared recognition dictionaries may remain code.
-- [ ] Run the release checks below and record the resulting evidence and limitations.
+- [x] Run the release checks below and record the resulting evidence and limitations.
 
 Acceptance gate: baseline decisions are equivalent, configuration changes are
 effective, stale triage cannot bypass updated rules, and no storage migration or
 historical record rewrite is needed. Phases 0-2 form a standalone release.
+
+Implementation evidence: [phase-2 runtime contract](multiaccount-rule-inventory.md#phase-2-cutover-and-verification)
+and targeted disposable-MongoDB checks (106 tests passed, no skips). Current baseline
+decisions and explanations remain equal; stale/legacy triage reads reevaluate current
+inputs without rewriting receipts. Final post-correction full checks passed 725 tests
+with no skips. Review R3 approved the corrected increment, closed CR-002 and verified
+that restoring cutoff subtraction triggers the regression tests. The coordinator
+accepted phase 2; it is `Done`.
 
 Recovery: revert the extraction/configuration change if its release gate fails.
 No database rollback should be necessary for extraction alone. Any records written
@@ -217,6 +227,9 @@ Tasks:
   notifications, backups and repository finalization with the single live account.
 - [ ] Use isolated fixtures to exercise distinct contexts without onboarding a second
   live candidate. Retain current MongoDB connection, schema and current file paths.
+- [ ] Resolve the deferred source-side Go/PHP/Italy relevance preferences listed in
+  the rule inventory, or explicitly scope the supported source set, before claiming
+  candidate-independent onboarding. Phases 0-3 leave those source decisions intact.
 
 Acceptance gate: implicit default and explicit current-account runs are equivalent;
 unknown accounts fail early. Only one live account is enabled.
@@ -271,3 +284,7 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Authorized implementation scope expanded to phases 0-3 with separate reviewed increments. Implemented phase-0 inventory and synthetic corpus in `docs/multiaccount-rule-inventory.md`, `tests/fixtures/selection-baseline.yaml` and `tests/test_selection_baseline.py`; added phase-1 dormant configuration, immutable strict loader and loader tests. Added archive skip readers to the phase-2 consumer inventory. | Before implementation, coordinator verified 697 tests with no skips on Python 3.14.6 and a disposable MongoDB 8 replica set using `JOBINTEL_TEST_MONGODB_URI` and `python -m unittest discover -v`. New targeted command `python -m unittest tests.test_selection_policy tests.test_selection_baseline tests.test_prefilter tests.test_triage -v`: 42 tests passed, including 13 new test methods. `git diff --check` passed. Both phases remain in progress pending independent increment review and full post-change verification. No runtime cutover, candidate/artifact/status changes or catalog input changes; phases 2-3 remain unstarted. |
 | 2026-10-20 | Iteration-1 review fixes: target identifiers now use all existing technology recognizer capabilities rather than the selected Go/PHP defaults; invalid UTF-8 receives a safe file/field validation error; the triage repeat test advances its clock by one day and asserts the original receipt timestamp and bytes survive. | Coordinator's full post-change `python -m unittest discover -v` against the disposable MongoDB replica set passed 710 tests in 53.325 seconds with no skips. That run preceded the final test-only clock correction; `python -m unittest tests.test_selection_baseline tests.test_selection_policy -v` passed all 13 tests after the correction. Phase-0/1 statuses remain in progress pending the reviewer's verification of the corrected diff; no phase-2 runtime work has started. |
 | 2026-10-20 | Independent review R1 approved iteration 1; finding CR-001 closed and coordinator accepted phases 0-1. Marked both phases done. | Reviewer independently passed all 13 targeted selection tests and verified that removing timestamp preservation produces 13 expected triage subtest failures. Full MongoDB evidence remains 710 passing tests, no skips. Phase 2 remains unstarted; runtime behavior and operational records are unchanged. |
+| 2026-10-20 | Published phases 0-1 as commit `188d3c4c34253b8fd91a373e678f160910aed7ad` on the feature branch in [PR 2](https://github.com/ValentinNikolaev/job-intelligence/pull/2). Independent post-integration review R2 approved the clean published increment. Started phase 2 configuration cutover for prefilter, triage, pending queues, workflow API and skipped archive readers. | R2 independently passed 13 targeted tests and diff checks. Published-commit CI passed 710 tests with two PDF-tool skips on Ubuntu; local MongoDB suite had no skips. The PR CI's initial MongoDB container startup failure occurred before tests and passed on rerun. Phase 2 remains in progress; targeted runtime checks are underway before full checks and independent review. No phase-3 work or production data writes. |
+| 2026-10-20 | Completed the phase-2 working-tree cutover: explicit immutable policy at collection/triage/pending/API/skipped-archive boundaries; shared pure triage with policy/recognition/current-input version binding; read-only stale/legacy refresh; policy-efficacy and side-effect regression tests, including real-MongoDB receipt/revision preservation. Updated integration fixtures and preserved source/CLI/storage contracts. | `JOBINTEL_TEST_MONGODB_URI` set only to the disposable local replica set; targeted selection/prefilter/triage/API/archive/CLI/storage-bridge suite passed 106 tests in 21.365 seconds with no skips. Independent review and full release checks remain pending, so phase 2 is in progress. Source-side relevance extraction is explicitly deferred before second-account onboarding; phase 3 remains unstarted. |
+| 2026-10-20 | Review R3 identified CR-002: a positive million-day age setting passed schema validation but constructing the datetime cutoff overflowed after collection fetched rows. Replaced cutoff subtraction with exact integer elapsed-microsecond comparison; positive configuration integers remain supported, including values beyond floating-point range. Added million-day/1,001-digit policy and explicit-override regressions, one-microsecond cutoff cases and a dated-row collection regression. | Coordinator's pre-correction full MongoDB suite passed 723 tests in 121.885 seconds with no skips. After correction, selection-runtime/baseline/prefilter/CLI targeted checks passed 57 tests in 3.204 seconds; `git diff --check` passed. Final full checks and independent re-review of CR-002 remain pending. Phase 2 remains in progress; no phase-3 changes or production operations. |
+| 2026-10-20 | Review R3 approved the corrected phase-2 increment and closed CR-002. Coordinator accepted phase 2 and marked it done. | Reviewer independently passed 43 focused tests and confirmed that restoring old cutoff subtraction in memory causes two expected `OverflowError` regression failures. Final post-correction `python -m unittest discover -v` with the disposable MongoDB replica set passed 725 tests in 136.660 seconds with no skips. API-prohibition unit check, explicit runtime/configuration API search, local Markdown-link checks and `git diff --check` passed. Catalog inputs remain unchanged. Publication remains the coordinator's next step; phase 3 is unstarted. |

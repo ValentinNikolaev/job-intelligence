@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import hashlib
+import json
 import re
+from collections.abc import Mapping
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -8,9 +11,11 @@ from typing import Any
 import yaml
 
 from . import storage_bridge as op
+from .selection_policy import DEFAULT_SELECTION_POLICY_PATH, SelectionPolicy, load_selection_policy
 
 
-TRIAGE_VERSION = "deterministic-triage-v1"
+TRIAGE_VERSION = "deterministic-triage-v2"
+BODY_WINDOW = 12000
 _HIGH_CONFIDENCE_RULES: tuple[tuple[str, str], ...] = (
     ("sales", r"\b(sales|account executive|business development|pre[- ]sales|sales engineer)\b"),
     ("qa", r"\b(qa|quality assurance|test automation|manual tester|software tester)\b"),
@@ -22,31 +27,48 @@ _HIGH_CONFIDENCE_RULES: tuple[tuple[str, str], ...] = (
 )
 
 
-def triage_directory(directory: Path) -> dict[str, Any]:
-    meta = _read_mapping(directory / "meta.yaml")
-    job_text = op.read_text(directory / "job.md") if op.exists(directory / "job.md") else ""
+def evaluate_triage(meta: Mapping[str, Any], job_text: str, *, policy: SelectionPolicy) -> dict[str, Any]:
+    """Pure decision and input binding shared by file and operational snapshots."""
     title = str(meta.get("title", ""))
-    haystack = f"{title}\n{job_text[:12000]}".casefold()
-    matched = [(reason, pattern) for reason, pattern in _HIGH_CONFIDENCE_RULES if re.search(pattern, haystack)]
+    body = job_text[:BODY_WINDOW].casefold()
+    haystack = f"{title.casefold()}\n{body}"
+    patterns = dict(_HIGH_CONFIDENCE_RULES)
+    selected = [(reason, patterns[reason]) for reason in policy.triage_exclusions]
+    matched = [(reason, pattern) for reason, pattern in selected if re.search(pattern, haystack)]
     # Only title matches are high-confidence; body-only matches can be incidental.
-    title_matches = [reason for reason, pattern in _HIGH_CONFIDENCE_RULES if re.search(pattern, title.casefold())]
+    title_matches = [reason for reason, pattern in selected if re.search(pattern, title.casefold())]
     skip_model = bool(title_matches)
     reason = title_matches[0] if title_matches else (matched[0][0] if matched else None)
     confidence = "high" if title_matches else ("medium" if matched else "low")
     return {
         "schema_version": 1,
-        "triage_version": TRIAGE_VERSION,
+        "triage_version": _triage_version(title.casefold(), body, policy),
         "vacancy_id": str(meta.get("id", "")),
         "skip_model": skip_model,
         "reason": reason,
         "confidence": confidence,
         "matched_title_rules": title_matches,
-        "triaged_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
 
 
-def write_triage(directory: Path) -> dict[str, Any]:
-    result = triage_directory(directory)
+def _triage_version(title: str, body: str, policy: SelectionPolicy) -> str:
+    inputs = {"policy": policy.triage_fingerprint(), "title": title, "body": body,
+              "recognition": {"algorithm": "title-first-v1", "patterns": _HIGH_CONFIDENCE_RULES, "body_window": BODY_WINDOW}}
+    canonical = json.dumps(inputs, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return f"{TRIAGE_VERSION}:sha256:{hashlib.sha256(canonical.encode('utf-8')).hexdigest()}"
+
+
+def triage_directory(directory: Path, *, policy: SelectionPolicy | None = None) -> dict[str, Any]:
+    policy = policy if policy is not None else load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
+    meta = _read_mapping(directory / "meta.yaml")
+    job_text = op.read_text(directory / "job.md") if op.exists(directory / "job.md") else ""
+    result = evaluate_triage(meta, job_text, policy=policy)
+    result["triaged_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return result
+
+
+def write_triage(directory: Path, *, policy: SelectionPolicy | None = None) -> dict[str, Any]:
+    result = triage_directory(directory, policy=policy)
     path = directory / "triage.yaml"
     if op.exists(path):
         try:
@@ -67,15 +89,38 @@ def write_triage(directory: Path) -> dict[str, Any]:
     return result
 
 
-def should_skip_model(directory: Path) -> bool:
+def snapshot_should_skip(document: Mapping[str, Any], *, policy: SelectionPolicy | None = None) -> bool:
+    """Recompute existing receipts against current inputs; never rewrite their history."""
+    policy = policy if policy is not None else load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
+    receipt = document.get("triage")
+    meta = document.get("meta")
+    body = document.get("job_text", "")
+    if not isinstance(receipt, dict) or not isinstance(meta, dict) or not isinstance(body, str):
+        return False
+    if (type(receipt.get("schema_version")) is not int or receipt["schema_version"] != 1
+            or type(receipt.get("skip_model")) is not bool
+            or not isinstance(receipt.get("confidence"), str)
+            or receipt.get("confidence") not in {"high", "medium", "low"}
+            or not isinstance(receipt.get("triage_version"), str)
+            or not receipt["triage_version"]
+            or str(receipt.get("vacancy_id", "")) != str(meta.get("id", ""))):
+        return False
+    decision = evaluate_triage(meta, body, policy=policy)
+    return decision["skip_model"] is True and decision["confidence"] == "high"
+
+
+def should_skip_model(directory: Path, *, policy: SelectionPolicy | None = None) -> bool:
+    policy = policy if policy is not None else load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
     path = directory / "triage.yaml"
     if not op.exists(path):
         return False
     try:
         loaded = yaml.safe_load(op.read_text(path))
-    except (OSError, yaml.YAMLError):
+        meta = _read_mapping(directory / "meta.yaml")
+        job_text = op.read_text(directory / "job.md") if op.exists(directory / "job.md") else ""
+    except (OSError, ValueError, yaml.YAMLError):
         return False
-    return isinstance(loaded, dict) and loaded.get("skip_model") is True and loaded.get("confidence") == "high"
+    return snapshot_should_skip({"meta": meta, "job_text": job_text, "triage": loaded}, policy=policy)
 
 
 def _read_mapping(path: Path) -> dict[str, Any]:

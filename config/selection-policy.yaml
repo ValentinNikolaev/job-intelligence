@@ -1,4 +1,4 @@
-# Dormant until the phase-2 runtime cutover. Lists replace; their order is significant.
+# Lists replace; their order is significant. Recognizer code does not supply defaults.
 schema_version: 1
 max_age_days: 7
 excluded_roles: [qa, mobile]

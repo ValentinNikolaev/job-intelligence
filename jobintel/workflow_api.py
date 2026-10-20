@@ -22,7 +22,8 @@ from .matching import (
     _content_version,
     analysis_should_skip_status,
 )
-from .triage import should_skip_model
+from .triage import should_skip_model, snapshot_should_skip
+from .selection_policy import SelectionPolicy, load_selection_policy
 from .workflows import WorkflowPolicy, load_workflow_policy
 
 
@@ -83,8 +84,9 @@ def workflow_summary(
 ) -> dict[str, Any]:
     del config
     policy = _policy(project_root)
+    selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
     snapshot = load_catalog_snapshot(registry_root)
-    return _summary_from_snapshot(project_root, registry_root, profile_paths, policy, snapshot)
+    return _summary_from_snapshot(project_root, registry_root, profile_paths, policy, snapshot, selection_policy=selection_policy)
 
 
 def _summary_from_snapshot(
@@ -95,6 +97,7 @@ def _summary_from_snapshot(
     snapshot: CatalogSnapshot,
     *,
     pending_analyze: int | None = None,
+    selection_policy: SelectionPolicy | None = None,
 ) -> dict[str, Any]:
     vacancies = snapshot.vacancies
     inactive = {"rejected", "withdrawn", "closed"}
@@ -108,7 +111,7 @@ def _summary_from_snapshot(
         "pending_analyze": (
             pending_analyze
             if pending_analyze is not None
-            else len(queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot))
+            else len(queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot, selection_policy=selection_policy))
         ),
         "pending_prepare": 0,
         "prepared_total": len(prepared),
@@ -225,8 +228,9 @@ def workflow_report(
     ):
         raise WorkflowApiError("queue limit must be a positive integer")
     policy = _policy(project_root)
+    selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
     snapshot = load_catalog_snapshot(registry_root)
-    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot)
+    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot, selection_policy=selection_policy)
     analyze = analyze_all[:queue_limit] if queue_limit is not None else analyze_all
     return {
         "summary": _summary_from_snapshot(
@@ -253,6 +257,7 @@ def queue_items(
     *,
     limit: int | None = None,
     _snapshot: CatalogSnapshot | None = None,
+    selection_policy: SelectionPolicy | None = None,
 ) -> list[QueueItem]:
     policy = policy or _policy(project_root)
     workflow = workflow.replace("-", "_")
@@ -262,6 +267,7 @@ def queue_items(
         raise WorkflowApiError("queue limit must be a positive integer")
     if workflow == "prepare":
         return []
+    selection_policy = selection_policy if selection_policy is not None else load_selection_policy(project_root / "config/selection-policy.yaml")
     snapshot = _snapshot or load_catalog_snapshot(registry_root)
     vacancies = snapshot.vacancies
     rows = []
@@ -284,7 +290,10 @@ def queue_items(
         if workflow == "analyze":
             if analysis_should_skip_status({"status": vacancy.status}):
                 continue
-            skip_model = _snapshot_should_skip(document) if document is not None else should_skip_model(directory)
+            skip_model = (
+                snapshot_should_skip(document, policy=selection_policy)
+                if document is not None else should_skip_model(directory, policy=selection_policy)
+            )
             if skip_model:
                 continue
             assert checker is not None
@@ -338,11 +347,6 @@ def queue_items(
         )
     rows.sort(key=_queue_priority, reverse=True)
     return rows[:limit] if limit is not None else rows
-
-
-def _snapshot_should_skip(document: dict[str, Any]) -> bool:
-    triage = document.get("triage")
-    return isinstance(triage, dict) and triage.get("skip_model") is True and triage.get("confidence") == "high"
 
 
 def _snapshot_analysis_is_current(

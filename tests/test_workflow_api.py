@@ -56,6 +56,9 @@ class WorkflowApiTests(unittest.TestCase):
         self.sources = self.project / "sources"
         self.sources.mkdir()
         (self.project / "config").mkdir()
+        (self.project / "config/selection-policy.yaml").write_bytes(
+            (Path(__file__).resolve().parents[1] / "config/selection-policy.yaml").read_bytes()
+        )
         (self.project / "config" / "codex-workflows.yaml").write_text(
             yaml.safe_dump(
                 {

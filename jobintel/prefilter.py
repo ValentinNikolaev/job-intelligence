@@ -4,7 +4,7 @@ import re
 import os
 import uuid
 from dataclasses import dataclass
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -15,9 +15,7 @@ from . import storage_bridge as op
 from .models import NormalizedJob
 from .normalization import normalize_company, record_directory_name
 from .registry import _dump_yaml, _render_job_markdown, _utc_iso
-
-
-MAX_JOB_AGE_DAYS = 7
+from .selection_policy import DEFAULT_SELECTION_POLICY_PATH, LocationPolicy, SelectionPolicy, load_selection_policy
 
 
 @dataclass(frozen=True, slots=True)
@@ -43,9 +41,12 @@ def prefilter_job(
     job: NormalizedJob,
     *,
     now: datetime | None = None,
-    max_age_days: int = MAX_JOB_AGE_DAYS,
+    max_age_days: int | None = None,
     company_retry_rules: tuple[CompanyRetryRule, ...] = (),
+    policy: SelectionPolicy | None = None,
 ) -> Rejection | None:
+    policy = policy if policy is not None else load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
+    max_age_days = policy.max_age_days if max_age_days is None else max_age_days
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         now = now.replace(tzinfo=timezone.utc)
@@ -56,16 +57,19 @@ def prefilter_job(
         return retry_rejection
 
     published_at = _parse_timestamp(job.published_at)
-    if published_at is not None and published_at < now - timedelta(days=max_age_days):
-        return Rejection(
-            "stale",
-            f"published_at {job.published_at} is older than {max_age_days} days",
-        )
+    if published_at is not None:
+        age = now - published_at
+        age_microseconds = (age.days * 86400 + age.seconds) * 1000000 + age.microseconds
+        if age_microseconds > max_age_days * 86400000000:
+            return Rejection(
+                "stale",
+                f"published_at {job.published_at} is older than {max_age_days} days",
+            )
 
     title_text = _normalize_text(job.title)
-    if _is_obvious_role_mismatch(title_text):
+    if _is_obvious_role_mismatch(title_text, policy.excluded_roles):
         return Rejection("role_mismatch", "title is an obvious mismatch for a backend profile")
-    if job.remote is False:
+    if policy.reject_explicit_non_remote and job.remote is False:
         return Rejection("location_requirement", "vacancy is explicitly non-remote")
 
     full_text = _normalize_text(
@@ -80,23 +84,22 @@ def prefilter_job(
             if part
         )
     )
-    american_work_time_rejection = _american_work_time_rejection(full_text)
+    american_work_time_rejection = _american_work_time_rejection(full_text, policy.location)
     if american_work_time_rejection is not None:
         return american_work_time_rejection
     requirement_text = "\n".join(part for part in (job.description, job.location or "") if part)
-    blocking_language = _hard_blocking_language_requirement(requirement_text.casefold())
+    blocking_language = _hard_blocking_language_requirement(requirement_text.casefold(), policy.blocking_languages)
     if blocking_language is not None:
         return Rejection("language_requirement", f"hard {blocking_language} language requirement")
-    if _has_hard_language_requirement(requirement_text.casefold(), "italian"):
-        return Rejection("language_requirement", "hard Italian language requirement")
-    cms_stack = _cms_stack(full_text)
+    cms_stack = _cms_stack(full_text, policy.excluded_cms)
     if cms_stack is not None:
         return Rejection("tech_stack", f"{cms_stack} vacancies are ignored")
-    blacklisted_stack = _blacklisted_stack(full_text)
+    blacklisted_stack = _blacklisted_stack(full_text, policy)
     if blacklisted_stack is not None:
         return Rejection("tech_stack", f"{blacklisted_stack} is not a target stack")
-    if not _has_target_stack(full_text):
-        return Rejection("tech_stack", "role does not mention Go/Golang or PHP")
+    if not any(_has_technology(full_text, technology) for technology in policy.target_technologies):
+        names = " or ".join(_TECHNOLOGY_NAMES[technology] for technology in policy.target_technologies)
+        return Rejection("tech_stack", f"role does not mention {names}")
     return None
 
 
@@ -288,18 +291,12 @@ class RejectedRegistry:
         return cache
 
 
-def _is_obvious_role_mismatch(title_text: str) -> bool:
-    patterns = (
-        r"\bqa\b",
-        r"\bquality assurance\b",
-        r"\btest automation\b",
-        r"\bautomation tester\b",
-        r"\bandroid\b",
-        r"\bios\b",
-        r"\bmobile engineer\b",
-        r"\bmobile developer\b",
-    )
-    return any(re.search(pattern, title_text) for pattern in patterns)
+def _is_obvious_role_mismatch(title_text: str, roles: tuple[str, ...]) -> bool:
+    patterns = {
+        "qa": r"\b(?:qa|quality assurance|test automation|automation tester)\b",
+        "mobile": r"\b(?:android|ios|mobile engineer|mobile developer)\b",
+    }
+    return any(re.search(patterns[role], title_text) for role in roles)
 
 
 def _has_english_requirement(text: str) -> bool:
@@ -357,60 +354,34 @@ def _has_hard_language_requirement(text: str, language: str) -> bool:
     return False
 
 
-def _hard_blocking_language_requirement(text: str) -> str | None:
-    languages = (
-        "albanian",
-        "bulgarian",
-        "croatian",
-        "czech",
-        "danish",
-        "dutch",
-        "estonian",
-        "finnish",
-        "french",
-        "german",
-        "greek",
-        "hungarian",
-        "latvian",
-        "lithuanian",
-        "norwegian",
-        "polish",
-        "portuguese",
-        "romanian",
-        "serbian",
-        "slovak",
-        "slovenian",
-        "spanish",
-        "swedish",
-        "turkish",
-    )
+def _hard_blocking_language_requirement(text: str, languages: tuple[str, ...]) -> str | None:
     for language in languages:
         if _has_hard_language_requirement(text, language):
             return language.title()
     return None
 
 
-def _american_work_time_rejection(text: str) -> Rejection | None:
-    if _has_european_work_availability(text):
+def _american_work_time_rejection(text: str, policy: LocationPolicy) -> Rejection | None:
+    if policy.allow_european_exception and _has_european_work_availability(text):
         return None
     us_marker = r"(?:\bus\b|u\.s\.|\busa\b|\bunited states\b)"
-    if re.search(rf"\bremote\s*\(?\s*{us_marker}\s*\)?", text):
+    if policy.reject_us_remote and re.search(rf"\bremote\s*\(?\s*{us_marker}\s*\)?", text):
         return Rejection("location_requirement", "remote role is limited to the United States")
-    if re.search(rf"{us_marker}\s*\(?\s*remote\s*\)?\b", text):
+    if policy.reject_us_remote and re.search(rf"{us_marker}\s*\(?\s*remote\s*\)?\b", text):
         return Rejection("location_requirement", "remote role is limited to the United States")
-    if re.search(rf"\b(?:remote|work from home|work-from-home)\b.{{0,80}}\b(?:only|limited to|restricted to)\b.{{0,80}}{us_marker}", text):
+    if policy.reject_us_remote and re.search(rf"\b(?:remote|work from home|work-from-home)\b.{{0,80}}\b(?:only|limited to|restricted to)\b.{{0,80}}{us_marker}", text):
         return Rejection("location_requirement", "remote role is limited to the United States")
-    if re.search(rf"{us_marker}.{{0,80}}\b(?:only|residents?|candidates?|applicants?|based|located)\b", text):
+    if policy.reject_us_location and re.search(rf"{us_marker}.{{0,80}}\b(?:only|residents?|candidates?|applicants?|based|located)\b", text):
         return Rejection("location_requirement", "requires United States location")
-    if re.search(r"\b(?:north|south|latin)?\s*american\s+time\s*zones?\b", text):
+    if policy.reject_american_timezones and re.search(r"\b(?:north|south|latin)?\s*american\s+time\s*zones?\b", text):
         return Rejection("timezone_requirement", "requires American continent work time")
-    if re.search(r"\b(?:us|u\.s\.|usa|united states)\s+time\s*zones?\b", text):
+    if policy.reject_american_timezones and re.search(r"\b(?:us|u\.s\.|usa|united states)\s+time\s*zones?\b", text):
         return Rejection("timezone_requirement", "requires American continent work time")
-    if re.search(r"\b(?:work|working|operate|available|availability|overlap).{0,80}\b(?:us|u\.s\.|usa|united states|north america|south america|latin america|latam|americas?)\s+time\s*zones?\b", text):
+    if policy.reject_american_timezones and re.search(r"\b(?:work|working|operate|available|availability|overlap).{0,80}\b(?:us|u\.s\.|usa|united states|north america|south america|latin america|latam|americas?)\s+time\s*zones?\b", text):
         return Rejection("timezone_requirement", "requires American continent work time")
-    if re.search(r"\b(?:based|located|resident|reside).{0,80}\b(?:north america|south america|latin america|latam|americas?)\b", text):
+    if policy.reject_american_location and re.search(r"\b(?:based|located|resident|reside).{0,80}\b(?:north america|south america|latin america|latam|americas?)\b", text):
         return Rejection("location_requirement", "requires American continent location")
-    if re.search(r"\b(?:north america|south america|latin america|latam|americas?)\b.{0,80}\b(?:only|based|residents?|candidates?|applicants?)\b", text):
+    if policy.reject_american_location and re.search(r"\b(?:north america|south america|latin america|latam|americas?)\b.{0,80}\b(?:only|based|residents?|candidates?|applicants?)\b", text):
         return Rejection("location_requirement", "requires American continent location")
     return None
 
@@ -434,28 +405,35 @@ def _has_european_work_availability(text: str) -> bool:
     )
 
 
-def _blacklisted_stack(text: str) -> str | None:
-    if re.search(r"\bspring boot\b", text):
-        return "Spring Boot"
-    if _has_python_stack(text) and _has_r_stack(text):
-        return "Python + R"
-    if _has_python_stack(text) and re.search(r"\bjulia\b", text):
-        return "Python + Julia"
+_TECHNOLOGY_NAMES = {"go": "Go/Golang", "php": "PHP", "python": "Python", "r": "R", "julia": "Julia", "spring_boot": "Spring Boot"}
+
+
+def _has_technology(text: str, technology: str) -> bool:
+    recognizers = {
+        "go": _has_go_stack, "php": _has_php_stack, "python": _has_python_stack,
+        "r": _has_r_stack, "julia": lambda value: bool(re.search(r"\bjulia\b", value)),
+        "spring_boot": lambda value: bool(re.search(r"\bspring boot\b", value)),
+    }
+    return recognizers[technology](text)
+
+
+def _blacklisted_stack(text: str, policy: SelectionPolicy) -> str | None:
+    for technology in policy.excluded_technologies:
+        if _has_technology(text, technology):
+            return _TECHNOLOGY_NAMES[technology]
+    for combination in policy.excluded_combinations:
+        if all(_has_technology(text, technology) for technology in combination):
+            return " + ".join(_TECHNOLOGY_NAMES[technology] for technology in combination)
     return None
 
 
-def _cms_stack(text: str) -> str | None:
-    if re.search(r"\btypo3\b", text):
-        return "TYPO3"
-    if re.search(r"\bword\s*press\b|\bwordpress\b", text):
-        return "WordPress"
-    if re.search(r"\bdrupal\b", text):
-        return "Drupal"
+def _cms_stack(text: str, excluded: tuple[str, ...]) -> str | None:
+    recognizers = {"typo3": (r"\btypo3\b", "TYPO3"), "wordpress": (r"\bword\s*press\b|\bwordpress\b", "WordPress"), "drupal": (r"\bdrupal\b", "Drupal")}
+    for cms in excluded:
+        pattern, name = recognizers[cms]
+        if re.search(pattern, text):
+            return name
     return None
-
-
-def _has_target_stack(text: str) -> bool:
-    return bool(_has_go_stack(text) or _has_php_stack(text))
 
 
 def _has_go_stack(text: str) -> bool:

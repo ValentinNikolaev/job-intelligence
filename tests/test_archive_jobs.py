@@ -11,6 +11,8 @@ from unittest.mock import patch
 
 import yaml
 
+from jobintel.triage import write_triage
+
 
 SCRIPT = Path(__file__).parents[1] / "scripts" / "archive_jobs.py"
 SPEC = importlib.util.spec_from_file_location("archive_jobs", SCRIPT)
@@ -32,7 +34,7 @@ class ArchiveJobsTests(unittest.TestCase):
     ) -> None:
         directory = root / "registry" / "jobs" / f"job-{number:03d}"
         directory.mkdir(parents=True)
-        meta = {"id": str(number), "status": status}
+        meta = {"id": str(number), "status": status, "title": "SRE" if skipped else "Backend Engineer"}
         if discovered_at is not None:
             meta["discovered_at"] = discovered_at
         (directory / "meta.yaml").write_text(yaml.safe_dump(meta), encoding="utf-8")
@@ -40,7 +42,9 @@ class ArchiveJobsTests(unittest.TestCase):
         if score is not None:
             (directory / "match.yaml").write_text(yaml.safe_dump({"score": score}), encoding="utf-8")
         if skipped:
-            (directory / "triage.yaml").write_text(yaml.safe_dump({"skip_model": True}), encoding="utf-8")
+            (root / "config").mkdir(exist_ok=True)
+            (root / "config/selection-policy.yaml").write_bytes((SCRIPT.parents[1] / "config/selection-policy.yaml").read_bytes())
+            write_triage(directory)
 
     def make_rejected(self, root: Path, number: int) -> None:
         directory = root / "registry" / "rejected" / f"rejected-{number:03d}"

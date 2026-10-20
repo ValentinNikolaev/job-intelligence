@@ -25,7 +25,8 @@ from jobintel.models import CollectorSummary, NormalizedJob
 from jobintel.prefilter import RejectedRegistry, Rejection
 from jobintel.registry import Registry
 from jobintel.storage_contract import SourceIdentityConflict, StorageConflictError
-from jobintel.triage import should_skip_model, write_triage
+from jobintel.triage import should_skip_model, snapshot_should_skip, write_triage
+from jobintel.selection_policy import DEFAULT_SELECTION_POLICY_PATH, load_selection_policy
 
 
 TEST_URI = os.environ.get(
@@ -368,6 +369,31 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         self.assertEqual("new CV", (staging / "cv.md").read_text(encoding="utf-8"))
         self.assertEqual(old_receipt, self.store.list("artifact_manifests"))
         self.assertEqual(old_vacancy, self.store.get("vacancies", "vacancy-1"))
+
+    def test_triage_policy_and_title_refresh_reads_do_not_rewrite_mongodb(self) -> None:
+        policy = load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
+        source_job = replace(self._job(), title="SRE")
+        created = self.registry.upsert(source_job)
+        directory = self.temp / "registry/jobs" / created.directory
+        write_triage(directory, policy=policy)
+        original = self.store.get("vacancies", created.vacancy_id)
+        self.assertTrue(should_skip_model(directory, policy=policy))
+        self.assertFalse(should_skip_model(directory, policy=replace(policy, triage_exclusions=())))
+        self.assertTrue(snapshot_should_skip(original, policy=replace(policy, max_age_days=1)))
+        self.assertEqual(original, self.store.get("vacancies", created.vacancy_id))
+
+        write_triage(directory, policy=replace(policy, triage_exclusions=()))
+        disabled_receipt = self.store.get("vacancies", created.vacancy_id)
+        self.assertFalse(disabled_receipt["triage"]["skip_model"])
+        self.assertTrue(should_skip_model(directory, policy=policy))
+        self.assertTrue(snapshot_should_skip(disabled_receipt, policy=policy))
+        self.assertEqual(disabled_receipt, self.store.get("vacancies", created.vacancy_id))
+
+        self.registry.upsert(replace(source_job, title="Backend Engineer"))
+        retitled = self.store.get("vacancies", created.vacancy_id)
+        self.assertFalse(should_skip_model(directory, policy=policy))
+        self.assertFalse(snapshot_should_skip(retitled, policy=policy))
+        self.assertEqual(retitled, self.store.get("vacancies", created.vacancy_id))
 
     def test_mongo_archive_retains_original_artifacts_without_unpublished_zip(self) -> None:
         from scripts.archive_jobs import archive

@@ -42,6 +42,7 @@ from .matching import (
 )
 from .models import CollectorSummary, NormalizedJob
 from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
+from .selection_policy import DEFAULT_SELECTION_POLICY_PATH, SelectionPolicy, load_selection_policy
 from .registry import Registry
 from .storage_contract import StorageError
 from .workflows import WorkflowPolicy, load_workflow_policy
@@ -309,6 +310,7 @@ def _main(argv: list[str] | None = None) -> int:
             print("Usage: python run.py triage [all|job-directory|vacancy-id]", file=sys.stderr)
             return 2
         try:
+            selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
             with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "triage", timeout_seconds=args.lock_timeout_seconds):
                 selector = args.arguments[0] if args.arguments else "all"
                 directories = resolve_job_directories(registry_dir, selector)
@@ -317,7 +319,7 @@ def _main(argv: list[str] | None = None) -> int:
                     batch = directories[offset:offset + STORE_BATCH_SIZE]
                     with op.vacancy_batch(registry_dir, directories=batch):
                         for directory in batch:
-                            result = write_triage(directory)
+                            result = write_triage(directory, policy=selection_policy)
                             counts[str(result["confidence"])] += 1
                             counts["skip_model"] += int(bool(result["skip_model"]))
             print(json.dumps({"triaged": len(directories), **counts}, indent=2, sort_keys=True))
@@ -458,6 +460,7 @@ def _main(argv: list[str] | None = None) -> int:
         return 2
     try:
         collection_limit = _collection_limit(args.collection_limit, config)
+        selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
     except ValueError as exc:
         print(f"Configuration error: {exc}", file=sys.stderr)
         return 2
@@ -567,6 +570,7 @@ def _main(argv: list[str] | None = None) -> int:
                     registry,
                     rejected_registry,
                     company_retry_rules=company_retry_rules,
+                    selection_policy=selection_policy,
                 )
                 _print_summary(summary)
                 stored_summaries.append(summary)
@@ -639,7 +643,9 @@ def _run_collector(
     *,
     limit: int | None,
     company_retry_rules=(),
+    selection_policy: SelectionPolicy | None = None,
 ) -> CollectorSummary:
+    selection_policy = selection_policy if selection_policy is not None else load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
     summary, jobs = _fetch_collector_jobs(name, collector, limit=limit)
     return _store_collected_jobs(
         name,
@@ -648,6 +654,7 @@ def _run_collector(
         registry,
         rejected_registry,
         company_retry_rules=company_retry_rules,
+        selection_policy=selection_policy,
     )
 
 
@@ -750,7 +757,9 @@ def _store_collected_jobs(
     rejected_registry: RejectedRegistry,
     *,
     company_retry_rules=(),
+    selection_policy: SelectionPolicy | None = None,
 ) -> CollectorSummary:
+    selection_policy = selection_policy if selection_policy is not None else load_selection_policy(DEFAULT_SELECTION_POLICY_PATH)
     started_at = time.monotonic()
     errors_before = summary.errors
     completed = False
@@ -783,7 +792,7 @@ def _store_collected_jobs(
                     outcome = "failed"
                     try:
                         with op.vacancy_batch_item(store):
-                            rejection = prefilter_job(job, company_retry_rules=company_retry_rules)
+                            rejection = prefilter_job(job, company_retry_rules=company_retry_rules, policy=selection_policy)
                             if rejection is not None:
                                 rejected_registry.upsert(job, rejection)
                                 outcome = "rejected"
@@ -1679,9 +1688,10 @@ def _run_pending(
     registry_dir: Path,
 ) -> int:
     try:
+        selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
         with workflow_lock(op.project_root(registry_dir) or registry_dir.parent, "pending", timeout_seconds=args.lock_timeout_seconds):
-            return _run_pending_locked(args, config, project_root, registry_dir)
-    except WorkflowLockError as exc:
+            return _run_pending_locked(args, config, project_root, registry_dir, selection_policy)
+    except (ValueError, OSError, WorkflowLockError) as exc:
         print(f"Pending check failed: {exc}", file=sys.stderr)
         return 1
 
@@ -1691,6 +1701,7 @@ def _run_pending_locked(
     config: dict[str, str],
     project_root: Path,
     registry_dir: Path,
+    selection_policy: SelectionPolicy,
 ) -> int:
     if not args.arguments or args.arguments[0] not in {"analyze", "prepare"}:
         print(
@@ -1753,7 +1764,7 @@ def _run_pending_locked(
                 profile_paths,
                 directories=directories,
                 limit=args.limit,
-                triage_skip=should_skip_model,
+                triage_skip=lambda directory: should_skip_model(directory, policy=selection_policy),
                 model=model_label,
                 allowed_models=policy.approved_analysis_model_labels(),
             )
@@ -1765,7 +1776,7 @@ def _run_pending_locked(
             if stage == "analyze":
                 if _vacancy_status_skips_analysis(directory):
                     continue
-                if should_skip_model(directory):
+                if should_skip_model(directory, policy=selection_policy):
                     continue
                 checker = MatchAnalyzer(
                     registry_dir,
@@ -1984,6 +1995,7 @@ def _run_doctor(
             print(f"ERROR: {label}: {exc}", file=sys.stderr)
 
     check("workflow policy", lambda: load_workflow_policy(project_root / "config" / "codex-workflows.yaml"))
+    check("selection policy", lambda: load_selection_policy(project_root / "config/selection-policy.yaml"))
     try:
         config = load_env(env_path)
         print(f"OK: source environment ({env_path})")

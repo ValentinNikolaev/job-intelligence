@@ -1,4 +1,4 @@
-"""Strict, immutable selection configuration; runtime cutover is a separate phase."""
+"""Strict, immutable configuration for deterministic vacancy selection."""
 from __future__ import annotations
 
 import hashlib
@@ -22,6 +22,7 @@ LANGUAGE_IDS = frozenset({
     "slovak", "slovenian", "spanish", "swedish", "turkish",
 })
 TRIAGE_IDS = frozenset({"sales", "qa", "mobile", "junior", "sre", "consulting", "non_backend"})
+DEFAULT_SELECTION_POLICY_PATH = Path(__file__).resolve().parents[1] / "config/selection-policy.yaml"
 
 
 class SelectionPolicyError(ValueError):

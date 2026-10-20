@@ -1,15 +1,17 @@
 # Selection-rule inventory and behavioral baseline
 
 Recorded 2026-10-20 for [migration phases 0-3](multiaccount-migration-plan.md).
-This inventory describes existing behavior. It does not authorize collection,
+The baseline sections describe behavior captured before extraction in commit
+`188d3c4c34253b8fd91a373e678f160910aed7ad`; the phase-2 section below records the
+configuration cutover. This inventory does not authorize collection,
 reclassification, preparation, historical rewrites or a second account. Candidate
 source records and secrets were not used to construct the synthetic baseline.
 
 ## Common deterministic selection
 
-The current operational implementation is [prefilter.py](../jobintel/prefilter.py).
-The dormant [selection-policy.yaml](../config/selection-policy.yaml) reproduces its
-personal decisions. Normalization, timestamp parsing, word boundaries, language
+The operational implementation is [prefilter.py](../jobintel/prefilter.py).
+[selection-policy.yaml](../config/selection-policy.yaml) now supplies its personal
+decisions, preserving the baseline values below. Normalization, timestamp parsing, word boundaries, language
 requirement recognition and technology aliases remain shared Python mechanics.
 Table order is rejection precedence; the first applicable rule supplies the category
 and exact explanation. Configuration lists preserve the existing within-rule order.
@@ -33,7 +35,7 @@ a bypass while extracting language policy.
 
 ## Triage, queues and archive consumers
 
-[triage.py](../jobintel/triage.py) currently applies ordered categories `sales`, `qa`,
+[triage.py](../jobintel/triage.py) applied baseline ordered categories `sales`, `qa`,
 `mobile`, `junior`, `sre`, `consulting`, `non_backend`. These are personal exclusions;
 category patterns are recognition mechanics. A title match means high confidence and
 `skip_model: true`; body-only recognition means medium confidence and no skip; no
@@ -42,7 +44,7 @@ reason is the first matching category in rule order, and all matching title cate
 retain that order. Only the first 12,000 body characters are inspected. The selected
 categories belong to `selection-policy.yaml:triage_exclusions`.
 
-All these consumers must be considered together during phase 2:
+The baseline identified these consumers for the coordinated phase-2 cutover:
 
 | Location | Current behavior | Required cutover boundary |
 | --- | --- | --- |
@@ -55,16 +57,18 @@ All these consumers must be considered together during phase 2:
 | `.github/workflows/job-intelligence-collection.yml` | Collection, triage, skipped/low-score/stale archive, workflow reporting | Preserve existing command arguments and destinations; fail before operations on invalid policy |
 | `.github/workflows/job-intelligence-archive-skipped.yml` | Can archive independently of the collection/triage run | Must receive shared freshness protection; preceding triage cannot be assumed |
 
-`triage_version` currently equals `deterministic-triage-v1`, but readers do not
-validate it or the title/body that produced the receipt. Phase 2 must define the exact
-legacy-equivalent bridge and recompute stale decisions read-only, or explicitly
-require refresh. No receipt or original historical judgment may be relabeled.
+At baseline, `triage_version` equaled `deterministic-triage-v1`, and readers did not
+validate it or the title/body that produced the receipt. Phase 2 adds current-input
+evaluation as described below. No original historical receipt is relabeled by reads.
 
 ## Existing source-side and deferred policy owners
 
 Source filters run before the common prefilter. They are intentionally not a second
 copy of the new common selection policy: provider queries and source relevance
 continue to live under their existing owners in this iteration.
+These source-side Go/PHP/Italy relevance decisions remain a constraint on future
+onboarding. Before phase 6 claims candidate-independent onboarding, configure or
+explicitly scope the affected sources; phases 0-3 do not perform that extraction.
 
 | Locations | Existing decisions and consumers | Owner / disposition |
 | --- | --- | --- |
@@ -99,13 +103,13 @@ evidence bound to the changed match prompt and policy snapshot. Editorial fixtur
 tests are not that pass and do not prove scoring behavior. Match freshness must agree
 between individual analysis, sealed packs, snapshots and preparation preflight.
 
-## Dormant schema and versioning contract
+## Selection schema and versioning contract
 
 [selection_policy.py](../jobintel/selection_policy.py) exposes
 `load_selection_policy(path) -> SelectionPolicy` with frozen dataclasses and tuple
 collections. All fields are required. There are no code defaults, environment
 overrides, inherited layers or implicit list additions. The caller supplies the exact
-path; the planned command boundary resolves it as `project_root/config/selection-policy.yaml`.
+path; command boundaries resolve it as `project_root/config/selection-policy.yaml`.
 Missing files fail rather than searching another checkout. Schema version 1 rejects
 unknown fields, duplicate YAML keys, recursive aliases, invalid field types/IDs,
 duplicate IDs/combinations, conflicting target/excluded technologies, redundant
@@ -124,8 +128,8 @@ serialized with sorted keys; ordered lists remain ordered. The returned object e
 - `triage_fingerprint()`: schema version and triage exclusions only.
 
 These are canonical SHA-256 subset digests, not receipt versions or evidence that a
-stored decision is current. Phase 2 must additionally handle recognizer version and
-current vacancy content. Changing age/language/stack policy cannot change the triage
+stored decision is current. The phase-2 receipt additionally binds recognizer version
+and current vacancy content. Changing age/language/stack policy cannot change the triage
 subset; changing triage exclusions cannot change the prefilter subset. Analysis policy
 will have its own narrower inputs rather than depending on notification settings.
 
@@ -162,4 +166,78 @@ its clock one day between writes. Reviewer R1 independently passed all 13 target
 selection tests and confirmed that removing timestamp preservation produces 13 expected
 triage subtest failures. R1 approved the increment, closed CR-001 and the coordinator
 accepted phases 0-1. Catalog inputs did not change; publication remains the
-coordinator's next step.
+coordinator's responsibility. The increment was published as commit
+`188d3c4c34253b8fd91a373e678f160910aed7ad` in
+[PR 2](https://github.com/ValentinNikolaev/job-intelligence/pull/2). Independent review
+R2 approved the clean published increment. Ubuntu CI passed 710 tests with two PDF-tool
+skips; the local disposable-MongoDB run had no skips. A PR CI MongoDB-container startup
+failure happened before tests and passed on rerun.
+
+## Phase-2 cutover and verification
+
+The working-tree implementation now passes an immutable policy from collection,
+triage and pending command boundaries, before source requests, leases or metadata
+migration. Collection's existing `max_age_days` library override remains available;
+when absent, the selected file supplies age. All supported technology identifiers
+(Go, PHP, Python, R, Julia, Spring Boot) have recognition implementations for target,
+exclusion and combination decisions. Current category/reason/precedence values remain
+covered by the frozen baseline corpus.
+
+Direct workflow API report/summary/analysis-queue functions load their known project's
+selection file once before obtaining operational snapshots. Nested readers receive the
+same object. Skipped-archive commands and direct `archive`/`candidates_for` entrypoints
+validate their project's policy before lease or filesystem mutation. Other archive
+categories keep their existing thresholds and selection rules. Compatibility library
+helpers may omit the policy argument: they load the package's explicit
+`DEFAULT_SELECTION_POLICY_PATH`, never walk a temporary registry to guess a project or
+fall back after an invalid/missing file. Command paths always pass the already loaded
+object. `doctor` includes deterministic selection-policy validation.
+
+`evaluate_triage(meta, job_text, policy=...)` is a pure evaluator. New receipt versions
+have prefix `deterministic-triage-v2:sha256:` and bind the canonical triage-policy subset,
+recognition algorithm/patterns/body-window contract, casefolded current title and first
+12,000 body characters. Unrelated age/language/stack settings do not alter this binding.
+The writer retains timestamps and bytes when an unchanged current receipt is repeated.
+
+File, snapshot, pending and skipped-archive readers share the same evaluation. An
+existing structurally valid schema-1 receipt, including a legacy v1 receipt or an old
+no-skip result, is reevaluated against current policy/title/body. They neither trust
+its stored skip bit nor rewrite its timestamp/version. Thus removing an exclusion or
+retitling a vacancy can clear an old skip, and newly enabling an exclusion can take
+effect. Missing receipts retain the previous non-skipping queue behavior. Malformed
+receipts (wrong schema/boolean/confidence/version/identity) do not establish a skip.
+Legacy archive-test fixtures now contain actual SRE titles and real receipts rather
+than orphan `skip_model` flags with no corresponding source evidence.
+
+[test_selection_runtime.py](../tests/test_selection_runtime.py) covers each policy
+group, relevant/irrelevant edits, every supported technology, ordered explanations,
+legacy/new/missing/malformed receipts, title/body changes, file/snapshot/pending/archive
+parity, command loading once, and invalid policy rejection before fetch, migration,
+archive access, leases or writes. The real-MongoDB storage-bridge regression verifies
+that policy and title refresh reads preserve stored receipt contents and revisions.
+
+Targeted command on 2026-10-20, with the disposable test URI set:
+`python -m unittest tests.test_selection_runtime tests.test_selection_baseline tests.test_selection_policy tests.test_prefilter tests.test_triage tests.test_workflow_api tests.test_archive_jobs tests.test_cli tests.test_storage_bridge -v`:
+**106 tests passed in 21.365 seconds, no skips**. This includes unchanged baseline
+results; full checks and independent review were pending at this checkpoint. No
+production operations, candidate/artifact/status changes, source-query changes,
+MongoDB schema/index/database/adapter changes or catalog input changes were performed.
+
+Independent review R3 identified CR-002: a large valid age setting could overflow
+datetime cutoff subtraction after collection had fetched rows. The correction compares
+elapsed microseconds against an integer day threshold, preserving strict cutoff
+semantics without float conversion or an arbitrary configuration upper bound. Regression
+coverage includes 1,000,000 days, a 1,001-digit integer, explicit overrides, a dated
+collection row and the exact cutoff plus/minus one microsecond. The coordinator's
+pre-correction full MongoDB suite passed 723 tests in 121.885 seconds with no skips;
+after correction, 57 selection-runtime/baseline/prefilter/CLI targeted tests passed in
+3.204 seconds. These checks preceded the final verification recorded below.
+
+Final acceptance on 2026-10-20: review R3 approved the corrected increment and closed
+CR-002 after 43 focused tests passed. Restoring cutoff subtraction in memory caused
+two expected `OverflowError` regression failures, confirming the new tests exercise
+the defect. The coordinator's final post-correction full suite against the disposable
+MongoDB replica set passed **725 tests in 136.660 seconds, no skips**. API-prohibition
+unit and explicit runtime/configuration search checks, local Markdown links and
+`git diff --check` passed. Phase 2 is accepted and done; publication is the coordinator's
+next action. Phase 3 remains unstarted.
