@@ -32,8 +32,12 @@ MongoDB archival is logical: it hides records from active queues and keeps their
 original Git-managed artifacts in place. Only legacy YAML archival creates ZIPs and
 removes directories. The initial migration retains historical ZIP data only for
 confirmed submissions, as requested by the owner. Other archived vacancies and
-prefilter records are excluded from the new database and backups; original ZIPs
-remain untouched in Git. Required evidence and documents are extracted individually.
+prefilter records are excluded from the new database and backups. Historical ZIP
+cleanup now retains complete applied-vacancy directories, with six unverified legacy
+application histories preserved conservatively; see the
+[filesystem retention record](archived-vacancy-retention.md). Retained ZIP paths and
+member bytes stay unchanged, while complete original ZIPs remain in Git history.
+Required evidence and documents are extracted individually.
 This prevents a failed
 Git push from leaving database references to a ZIP that existed only on a runner.
 
