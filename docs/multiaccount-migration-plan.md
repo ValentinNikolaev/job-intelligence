@@ -12,20 +12,21 @@ An account represents one candidate, their preferences, evidence, application
 history and integration destinations. Multiple search profiles for the same
 candidate do not require separate accounts.
 
-The next implementation iteration covers **phases 0-2 only**. It extracts existing
-deterministic rules into configuration without changing their meaning. This document
-records the agreed sequence; it does not authorize starting every later phase or
-operating a second account.
+The authorized implementation covers **phases 0-3**, in reviewed increments: baseline
+and dormant configuration (0-1), deterministic cutover (2), then analysis preferences
+(3). Phases 0-2 retain a standalone release gate. Later phases and operating a second
+account remain outside this authorization.
 
 ## Progress and maintenance
 
-Planning is complete; implementation has not started. Repository inspection used to
-prepare this plan is not completion of the baseline or verification gates below.
+The phase-0 behavioral baseline and phase-1 dormant configuration are complete and
+independently reviewed. Runtime selection remains on the existing implementation
+until the separately reviewed phase-2 cutover.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
-| 0 | Inventory and behavioral baseline | None | Not started; next |
-| 1 | Validated configuration for existing selection rules | 0 | Not started |
+| 0 | Inventory and behavioral baseline | None | Done |
+| 1 | Validated configuration for existing selection rules | 0 | Done |
 | 2 | Configuration-driven prefilter and triage | 1 | Not started |
 | 3 | Configurable match-analysis preferences | 2 | Not started |
 | 4 | Candidate-independent document preparation | 3 | Not started |
@@ -67,49 +68,61 @@ Maintain this file in the same change as implementation progress:
 
 Tasks:
 
-- [ ] Inventory personal rules in `jobintel/`, `sources/`, `config/`, `prompts/`,
+- [x] Inventory personal rules in `jobintel/`, `sources/`, `config/`, `prompts/`,
   `.agents/skills/`, scripts and GitHub Actions. Record location, current value,
   consumer, precedence and intended configuration owner in this document or a linked
   inventory. Identify duplicated or contradictory rules without changing them.
-- [ ] Separate personal decisions from shared mechanics: recognizing a mandatory
+- [x] Separate personal decisions from shared mechanics: recognizing a mandatory
   language requirement is shared; deciding whether that language blocks a candidate
   belongs to the candidate's policy.
-- [ ] Build on `tests/test_prefilter.py`, `tests/test_triage.py` and collection/queue
+- [x] Build on `tests/test_prefilter.py`, `tests/test_triage.py` and collection/queue
   tests to capture representative accepted, rejected and ambiguous vacancies.
   Freeze the reference time for age-dependent cases.
-- [ ] Capture current decisions, rejection categories, explanations, rule precedence
+- [x] Capture current decisions, rejection categories, explanations, rule precedence
   and relevant queue behavior. Include optional versus mandatory languages, mixed
   stacks, European exceptions to American-hours restrictions and title/body triage.
-- [ ] Record baseline checks and any pre-existing failures separately from migration
+- [x] Record baseline checks and any pre-existing failures separately from migration
   failures. Use fixtures or read-only snapshots; do not probe production with writes.
 
 Acceptance gate: the inventory identifies the consumers that must change together,
 and durable tests can expose behavior drift during extraction.
 
+Implementation evidence: [rule inventory and baseline](multiaccount-rule-inventory.md),
+39 fixed-time prefilter cases, 13 triage cases and four queue cases. The original
+runtime remains unchanged. Full post-change MongoDB checks passed 710 tests with no
+skips. Independent review R1 approved the corrected increment, including a mutation
+that confirms receipt-timestamp preservation is exercised; the phase is `Done`.
+
 ## Phase 1: validated configuration, without runtime cutover
 
 Tasks:
 
-- [ ] Add the proposed `config/selection-policy.yaml` with a versioned schema that
+- [x] Add the proposed `config/selection-policy.yaml` with a versioned schema that
   reproduces the current rules. This path is proposed, not an existing interface.
-- [ ] Cover maximum vacancy age, excluded roles, target technologies, excluded
+- [x] Cover maximum vacancy age, excluded roles, target technologies, excluded
   technologies and combinations, remote requirements, blocking mandatory languages,
   existing location/timezone decisions and triage exclusions.
-- [ ] Keep company retry rules in `config/application-profile.yaml` for this iteration.
+- [x] Keep company retry rules in `config/application-profile.yaml` for this iteration.
   Do not create another authoritative copy. Keep already configurable source queries
   in `sources/*/config.yaml` and workflow settings in `config/codex-workflows.yaml`.
-- [ ] Add a typed loader with strict field/type/version validation. Reject unknown
+- [x] Add a typed loader with strict field/type/version validation. Reject unknown
   fields and contradictory settings; document defaults, path resolution and ordering.
-- [ ] Define explicit list semantics. Avoid implicit concatenation or layered
+- [x] Define explicit list semantics. Avoid implicit concatenation or layered
   inheritance in this iteration. Configuration must not contain executable code.
-- [ ] Test valid configuration and failures for missing required settings, malformed
+- [x] Test valid configuration and failures for missing required settings, malformed
   YAML, unsupported versions and unsupported rule values. Diagnostics identify the
   file and field without exposing secrets.
-- [ ] Leave the operational flow on the existing implementation until phase 2.
+- [x] Leave the operational flow on the existing implementation until phase 2.
   Do not expose unsupported allowlist or other future capabilities as working fields.
 
 Acceptance gate: the file describes the existing behavior completely, validates
 deterministically, and does not yet alter production decisions.
+
+Implementation evidence: dormant `jobintel/selection_policy.py`, explicit version-1
+configuration and strict loader tests. Immutable relevant-subset digests are available
+for phase 2; no operational imports or CLI arguments changed. Full post-change MongoDB
+checks passed 710 tests with no skips. Independent verification of the final test
+correction passed and review R1 approved the increment; the phase is `Done`.
 
 ## Phase 2: configuration-driven deterministic selection
 
@@ -255,3 +268,6 @@ Such work requires a separate decision after the phased migration is useful.
 | Date | Work completed | Verification and remaining work |
 | --- | --- | --- |
 | 2026-10-20 | Inspected current personal-rule/configuration boundaries; recorded the phased plan, gates and progress-update protocol; linked it from `TECHNICAL_README.md`. | Local Markdown links, seven pending phases and 45 unchecked tasks verified; `git diff --check` passed. Runtime tests not run: documentation only. No implementation, runtime cutover, database migration or second-account onboarding performed. All phase checklists remain open. |
+| 2026-10-20 | Authorized implementation scope expanded to phases 0-3 with separate reviewed increments. Implemented phase-0 inventory and synthetic corpus in `docs/multiaccount-rule-inventory.md`, `tests/fixtures/selection-baseline.yaml` and `tests/test_selection_baseline.py`; added phase-1 dormant configuration, immutable strict loader and loader tests. Added archive skip readers to the phase-2 consumer inventory. | Before implementation, coordinator verified 697 tests with no skips on Python 3.14.6 and a disposable MongoDB 8 replica set using `JOBINTEL_TEST_MONGODB_URI` and `python -m unittest discover -v`. New targeted command `python -m unittest tests.test_selection_policy tests.test_selection_baseline tests.test_prefilter tests.test_triage -v`: 42 tests passed, including 13 new test methods. `git diff --check` passed. Both phases remain in progress pending independent increment review and full post-change verification. No runtime cutover, candidate/artifact/status changes or catalog input changes; phases 2-3 remain unstarted. |
+| 2026-10-20 | Iteration-1 review fixes: target identifiers now use all existing technology recognizer capabilities rather than the selected Go/PHP defaults; invalid UTF-8 receives a safe file/field validation error; the triage repeat test advances its clock by one day and asserts the original receipt timestamp and bytes survive. | Coordinator's full post-change `python -m unittest discover -v` against the disposable MongoDB replica set passed 710 tests in 53.325 seconds with no skips. That run preceded the final test-only clock correction; `python -m unittest tests.test_selection_baseline tests.test_selection_policy -v` passed all 13 tests after the correction. Phase-0/1 statuses remain in progress pending the reviewer's verification of the corrected diff; no phase-2 runtime work has started. |
+| 2026-10-20 | Independent review R1 approved iteration 1; finding CR-001 closed and coordinator accepted phases 0-1. Marked both phases done. | Reviewer independently passed all 13 targeted selection tests and verified that removing timestamp preservation produces 13 expected triage subtest failures. Full MongoDB evidence remains 710 passing tests, no skips. Phase 2 remains unstarted; runtime behavior and operational records are unchanged. |
