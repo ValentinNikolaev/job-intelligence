@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 51
+Total vacancies: 52
 
-- Found: 26
+- Found: 27
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,7 @@ Total vacancies: 51
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-20 | [YozmaTech](../registry/jobs/20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25/) | [Middle Backend engineer (Golang)](../registry/jobs/20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25/job.md) | Worldwide | Djinni | Found | 2026-10-20 | [Djinni](https://djinni.co/jobs/854098-middle-backend-engineer-golang/) | — | — | — | — | — |
 | 2026-10-20 | [TrueLabel](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/) | [Senior PHP Developer (Core)](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-20 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377174/) | [Open](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/company.md) | — | — | — | — |
 | 2026-10-19 | [TrueLabel](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/) | [Senior PHP Software Engineer (Payments)](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-19 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377139/) | [Open](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/company.md) | — | — | — | — |
 | 2026-10-19 | [Hamsters.pro](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/) | [Middle PHP Developer (CRM / CPA / Integrations)](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853984-middle-php-developer-crm-cpa-integrations/) | — | — | — | — | — |
