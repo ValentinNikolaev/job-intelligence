@@ -15,14 +15,17 @@ from .applications import ApplicationGenerator, CodexApplicationDraftClient, Hos
 from .catalog_data import CatalogSnapshot, CatalogVacancy, load_catalog_snapshot
 from .matching import (
     MAX_ANALYSIS_BATCH_SIZE,
-    PROMPT_VERSION,
+    current_matching_context,
+    match_is_current,
     CodexMatchDraftClient,
     MatchAnalyzer,
     _compact_vacancy,
     _content_version,
     analysis_should_skip_status,
 )
-from .triage import should_skip_model
+from .triage import should_skip_model, snapshot_should_skip
+from .selection_policy import SelectionPolicy, load_selection_policy
+from .matching_policy import MatchingContext, canonical
 from .workflows import WorkflowPolicy, load_workflow_policy
 
 
@@ -83,8 +86,10 @@ def workflow_summary(
 ) -> dict[str, Any]:
     del config
     policy = _policy(project_root)
+    selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
+    matching_context = current_matching_context(project_root)
     snapshot = load_catalog_snapshot(registry_root)
-    return _summary_from_snapshot(project_root, registry_root, profile_paths, policy, snapshot)
+    return _summary_from_snapshot(project_root, registry_root, profile_paths, policy, snapshot, selection_policy=selection_policy, matching_context=matching_context)
 
 
 def _summary_from_snapshot(
@@ -95,6 +100,8 @@ def _summary_from_snapshot(
     snapshot: CatalogSnapshot,
     *,
     pending_analyze: int | None = None,
+    selection_policy: SelectionPolicy | None = None,
+    matching_context: MatchingContext | None = None,
 ) -> dict[str, Any]:
     vacancies = snapshot.vacancies
     inactive = {"rejected", "withdrawn", "closed"}
@@ -108,7 +115,7 @@ def _summary_from_snapshot(
         "pending_analyze": (
             pending_analyze
             if pending_analyze is not None
-            else len(queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot))
+            else len(queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot, selection_policy=selection_policy, matching_context=matching_context))
         ),
         "pending_prepare": 0,
         "prepared_total": len(prepared),
@@ -225,8 +232,10 @@ def workflow_report(
     ):
         raise WorkflowApiError("queue limit must be a positive integer")
     policy = _policy(project_root)
+    selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
+    matching_context = current_matching_context(project_root)
     snapshot = load_catalog_snapshot(registry_root)
-    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot)
+    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot, selection_policy=selection_policy, matching_context=matching_context)
     analyze = analyze_all[:queue_limit] if queue_limit is not None else analyze_all
     return {
         "summary": _summary_from_snapshot(
@@ -253,6 +262,8 @@ def queue_items(
     *,
     limit: int | None = None,
     _snapshot: CatalogSnapshot | None = None,
+    selection_policy: SelectionPolicy | None = None,
+    matching_context: MatchingContext | None = None,
 ) -> list[QueueItem]:
     policy = policy or _policy(project_root)
     workflow = workflow.replace("-", "_")
@@ -262,6 +273,8 @@ def queue_items(
         raise WorkflowApiError("queue limit must be a positive integer")
     if workflow == "prepare":
         return []
+    selection_policy = selection_policy if selection_policy is not None else load_selection_policy(project_root / "config/selection-policy.yaml")
+    matching_context = matching_context if matching_context is not None else current_matching_context(project_root)
     snapshot = _snapshot or load_catalog_snapshot(registry_root)
     vacancies = snapshot.vacancies
     rows = []
@@ -275,6 +288,7 @@ def queue_items(
                 model=policy.workflow("analyze").model_label,
             ),
             allowed_models=policy.approved_analysis_model_labels(),
+            context=matching_context,
         )
     profile_version: str | None = None
     common_bytes: int | None = None
@@ -284,7 +298,10 @@ def queue_items(
         if workflow == "analyze":
             if analysis_should_skip_status({"status": vacancy.status}):
                 continue
-            skip_model = _snapshot_should_skip(document) if document is not None else should_skip_model(directory)
+            skip_model = (
+                snapshot_should_skip(document, policy=selection_policy)
+                if document is not None else should_skip_model(directory, policy=selection_policy)
+            )
             if skip_model:
                 continue
             assert checker is not None
@@ -292,7 +309,7 @@ def queue_items(
                 if profile_version is None:
                     _, profile_version = checker._load_profile()
                 current = _snapshot_analysis_is_current(
-                    document, profile_version, checker.allowed_models
+                    document, profile_version, checker.allowed_models, context=matching_context
                 )
             else:
                 current = checker.is_current(directory)
@@ -340,13 +357,8 @@ def queue_items(
     return rows[:limit] if limit is not None else rows
 
 
-def _snapshot_should_skip(document: dict[str, Any]) -> bool:
-    triage = document.get("triage")
-    return isinstance(triage, dict) and triage.get("skip_model") is True and triage.get("confidence") == "high"
-
-
 def _snapshot_analysis_is_current(
-    document: dict[str, Any], profile_version: str, models: Collection[str]
+    document: dict[str, Any], profile_version: str, models: Collection[str], *, context: MatchingContext
 ) -> bool:
     meta = document.get("meta")
     job_text = document.get("job_text")
@@ -359,12 +371,7 @@ def _snapshot_analysis_is_current(
     job_version = _content_version(
         json.dumps(compact, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     )
-    return (
-        match.get("profile_version") == profile_version
-        and match.get("job_version") == job_version
-        and match.get("prompt_version") == PROMPT_VERSION
-        and match.get("model") in models
-    )
+    return match_is_current(match, profile_version=profile_version, job_version=job_version, models=models, context=context)
 
 
 def _snapshot_input_tokens(document: dict[str, Any], common_bytes: int) -> int:
@@ -480,6 +487,7 @@ def _analysis_is_current(
             project_root / ".codex-work" / "unused-match.yaml",
             model=policy.workflow("analyze").model_label,
         ),
+        context=current_matching_context(project_root),
     )
     return checker.is_current(
         directory, allowed_models=policy.approved_analysis_model_labels()

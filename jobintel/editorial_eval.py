@@ -11,7 +11,8 @@ import yaml
 from .application_review import review_digest
 
 
-POLICY_FILES = ('config/cv-editorial-knowledge.yaml', 'prompts/vacancy-application.md', 'docs/application-quality.md',
+POLICY_FILES = ('config/cv-editorial-knowledge.yaml', 'prompts/vacancy-application.md',
+                'config/matching-policy.yaml', 'prompts/vacancy-match.md', 'docs/application-quality.md',
                 'docs/application-review-contract.md', '.agents/skills/job-intelligence-workflow/references/prepare.md',
                 'prompts/job-intelligence-workflow.md')
 CORPUS_PATH = 'tests/fixtures/editorial-corpus.yaml'

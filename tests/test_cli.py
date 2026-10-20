@@ -571,6 +571,12 @@ class CliTests(unittest.TestCase):
             candidate = registry_root / "candidate"
             candidate.mkdir(parents=True)
             (candidate / "linkedin-profile.md").write_text("LinkedIn\n", encoding="utf-8")
+            (root / "config/selection-policy.yaml").write_bytes(
+                (Path(__file__).resolve().parents[1] / "config/selection-policy.yaml").read_bytes()
+            )
+            (root / "config/matching-policy.yaml").write_bytes(
+                (Path(__file__).resolve().parents[1] / "config/matching-policy.yaml").read_bytes()
+            )
             (candidate / "backend-engineer-cv.md").write_text("CV\n", encoding="utf-8")
             prompts = root / "prompts"
             prompts.mkdir()

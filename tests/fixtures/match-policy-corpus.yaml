@@ -1,0 +1,365 @@
+schema_version: 1
+note: Bounded phase-3 migration corpus. All names, evidence and vacancies are synthetic.
+candidate: 'Alex is a fictional candidate based in Rome, Italy.
+
+  Alex is a senior backend engineer with ten years of verified backend delivery, API
+  design and service operation.
+
+  Alex has verified production Go and PHP experience.
+
+  Alex has verified experience building support automation and transactional email
+  services.
+
+  Alex speaks English at C1 and Italian at A2, and has no German proficiency.
+
+  Alex has no production Spring Boot or ASP.NET/.NET experience and is willing to
+  learn with training.
+
+  Alex can work 09:00-18:00 Europe/Rome and cannot work a full US Pacific workday.
+
+  Alex can attend a local Rome office for a hybrid role.
+
+  Alex prefers remote work; an unknown remote arrangement remains uncertain rather
+  than an established conflict.
+
+  Alex prefers relocation assistance but has not made it mandatory.
+
+  Alex has no stated restriction on the commercial domain of a backend role.
+
+  '
+cases:
+- id: remote-hybrid
+  vacancies:
+  - id: a
+    source: 'Senior backend engineer. Build and operate reliable product services
+      and APIs. Demonstrated senior backend delivery and API design are required.
+      English C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Based in Rome, Italy. Standard
+      European working hours. Hybrid: two days per week in our Rome office.'
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Based in Rome, Italy. Standard
+      European working hours. Fully remote from Italy.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Remote is preferred; local hybrid is feasible and must stay a soft
+      disadvantage.
+- id: remote-unknown
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Based in Rome, Italy. Standard
+      European working hours. The remote-work arrangement is unspecified.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Based in Rome, Italy. Standard
+      European working hours. Fully remote from Italy.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty:
+    - a
+    rationale: An unspecified arrangement is uncertain; explicit remote is preferred
+      without inventing a blocker.
+- id: spring-centrality
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Spring Boot appears
+      only in archived integration notes; this role does not use it.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Spring Boot is our central
+      production stack. Previous Spring Boot experience is preferred, not mandatory;
+      training is provided.
+  expected:
+    preferred: a
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Central Spring Boot receives a soft penalty; optional experience plus
+      training is not an essential blocker.
+- id: dotnet-centrality
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. ASP.NET appears only
+      in archived integration notes; this role does not use it.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. ASP.NET Core is our
+      central production web backend stack. Previous .NET experience is preferred,
+      not mandatory; training is provided.
+  expected:
+    preferred: a
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Central ASP.NET receives a soft penalty; optional experience and training
+      cannot create a hard rejection.
+- id: sre-title
+  vacancies:
+  - id: a
+    source: 'Senior backend engineer. Build and operate reliable product services
+      and APIs. Demonstrated senior backend delivery and API design are required.
+      English C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Job title: Senior Backend
+      Engineer. Infrastructure on-call is not required.'
+  - id: b
+    source: 'Senior backend engineer. Build and operate reliable product services
+      and APIs. Demonstrated senior backend delivery and API design are required.
+      English C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Job title: Senior Site
+      Reliability Engineer (SRE). This is a backend software engineering role with
+      the same product API responsibilities; infrastructure on-call is not required.'
+  expected:
+    preferred: a
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Apply the stated soft SRE preference without inventing incompatible
+      responsibilities.
+- id: relocation
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Relocation assistance
+      is not specified.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. A relocation assistance
+      package is offered.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty:
+    - a
+    rationale: Relocation assistance is a preference; an unspecified package remains
+      uncertain.
+- id: php-meaningful
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Stack choices are flexible;
+      no particular language is a meaningful part of this role.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. PHP is a meaningful
+      part of the service implementation and daily backend work.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Meaningful PHP work aligns with a positive policy preference and verified
+      production experience.
+- id: go-meaningful
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Stack choices are flexible;
+      no particular language is a meaningful part of this role.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Go (Golang) is a meaningful
+      part of the service implementation and daily backend work.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Meaningful Go work aligns with a positive policy preference and verified
+      production experience.
+- id: rome
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Standard European working hours. Based in Milan, Italy.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Standard European working hours. Based in Rome, Italy.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Rome receives its stated location preference; both locations allow
+      the same Italian remote arrangement.
+- id: support-automation
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Build backend APIs for
+      a customer support ticket product. Automation is outside this role.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Build backend APIs for
+      a customer support ticket product. This role includes support automation.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: Support automation is preferred in addition to the shared support domain.
+- id: email-domain
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Build backend services
+      for an inventory product; the role has no email responsibilities.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Build backend services
+      for a transactional email product in the email domain.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: The email domain has a positive stated preference and verified candidate
+      evidence.
+- id: support-domain
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Build backend services
+      for an inventory product; the role has no support responsibilities.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. Build backend services
+      for a customer support product in the support domain; automation is outside
+      this role.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: false
+      b: false
+    uncertainty: []
+    rationale: The support domain has a positive stated preference, distinct from
+      support automation.
+- id: german-boundary
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. German at C1 is optional
+      and nice to have; English C1 alone meets the mandatory language requirements.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Milan, Italy. Standard European working hours. German at C1 is a mandatory
+      requirement for daily client work; English cannot substitute.
+  expected:
+    preferred: a
+    hard_rejection:
+      a: false
+      b: true
+    uncertainty: []
+    rationale: No German is evidenced; optional German cannot block, mandatory C1
+      creates a decisive conflict.
+- id: pacific-exception
+  vacancies:
+  - id: a
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Rome, Italy. You must work the full US Pacific workday, 09:00-18:00
+      America/Los_Angeles. European-hours working is not permitted.
+  - id: b
+    source: Senior backend engineer. Build and operate reliable product services and
+      APIs. Demonstrated senior backend delivery and API design are required. English
+      C1 is required. Language-specific training is available. No prior experience
+      in a particular programming language is mandatory. Fully remote from Italy.
+      Based in Rome, Italy. The team is US Pacific based, but European staff may explicitly
+      work 09:00-18:00 Europe/Rome; full Pacific workday overlap is not required.
+  expected:
+    preferred: b
+    hard_rejection:
+      a: true
+      b: false
+    uncertainty: []
+    rationale: A full Pacific workday conflicts with evidenced availability; explicit
+      European hours remove that conflict.

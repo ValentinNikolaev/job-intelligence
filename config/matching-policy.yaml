@@ -1,0 +1,10 @@
+schema_version: 1
+prefer_remote: true
+preferred_technologies: [php, go]
+discouraged_core_technologies: [spring_boot, aspnet]
+discouraged_roles: [sre]
+prefer_relocation_package: true
+preferred_cities: [Roma, Rome]
+preferred_domains: [support_automation, email, support]
+block_us_work_requirements: true
+allow_european_or_candidate_local_hours: true

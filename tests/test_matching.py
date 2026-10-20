@@ -8,7 +8,7 @@ from typing import Any, Mapping
 
 import yaml
 
-from jobintel.matching import CodexMatchDraftClient, MatchAnalyzer, MatchError, PROMPT_VERSION, build_analysis_pack
+from jobintel.matching import CodexMatchDraftClient, MatchAnalyzer, MatchError, current_matching_context, build_analysis_pack
 from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
 
@@ -135,7 +135,7 @@ class MatchingTests(unittest.TestCase):
         self.assertEqual("skipped", second.status)
         self.assertEqual(1, len(client.calls))
         self.assertEqual(before, (self.directory / "match.yaml").read_bytes())
-        self.assertEqual(PROMPT_VERSION, match["prompt_version"])
+        self.assertEqual(current_matching_context().prompt_version, match["prompt_version"])
         self.assertEqual("2026-07-22T20:00:00Z", match["analyzed_at"])
         self.assertIn("**Score:** 84/100", markdown)
         self.assertIn("## Why it matches", markdown)
@@ -207,31 +207,31 @@ class MatchingTests(unittest.TestCase):
 
     def test_codex_draft_client_reads_yaml_without_network(self) -> None:
         draft = self.project / "match-draft.yaml"
+        pack = build_analysis_pack(self.registry_root, [self.profile], directories=[self.directory]).to_dict()
         draft.write_text(
-            yaml.safe_dump(match_payload(), allow_unicode=True, sort_keys=False),
+            yaml.safe_dump(pack | {"results": {self.directory.name: match_payload()}}, allow_unicode=True, sort_keys=False),
             encoding="utf-8",
         )
         client = CodexMatchDraftClient(
             draft, model="codex:gpt-5.6-luna:low"
         )
-        result = client.analyze(candidate_profile="Profile", vacancy={"title": "Engineer"})
+        result = client.analyze(candidate_profile=pack["profile"]["text"], vacancy=pack["items"][0]["vacancy"])
 
         self.assertEqual(84, result["score"])
         self.assertEqual("codex:gpt-5.6-luna:low", client.model)
 
-    def test_match_prompt_documents_candidate_specific_score_adjustments(self) -> None:
+    def test_match_prompt_uses_separate_preferences_and_preserves_baseline_choices(self) -> None:
         prompt = (ROOT / "prompts" / "vacancy-match.md").read_text(encoding="utf-8")
 
-        self.assertIn("decrease the score for roles that are not remote", prompt)
-        self.assertIn("decrease the score when Spring Boot is a central requirement", prompt)
-        self.assertIn("decrease the score for Site Reliability Engineer or SRE roles", prompt)
-        self.assertIn("increase the score when the role offers a relocation package", prompt)
-        self.assertIn("increase the score when PHP is a meaningful part of the role", prompt)
-        self.assertIn("increase the score when Go or Golang is a meaningful part of the role", prompt)
-        self.assertIn("increase the score when the role is based in Roma or Rome", prompt)
-        self.assertIn("increase the score when the role involves support automation", prompt)
-        self.assertIn("increase the score when the role is in the mail/email domain", prompt)
-        self.assertIn("increase the score when the role is in the support domain", prompt)
+        policy = current_matching_context().policy
+        self.assertIn("sealed `policy` snapshot", prompt)
+        self.assertEqual(("php", "go"), policy.preferred_technologies)
+        self.assertEqual(("spring_boot", "aspnet"), policy.discouraged_core_technologies)
+        self.assertEqual(("sre",), policy.discouraged_roles)
+        self.assertEqual(("Roma", "Rome"), policy.preferred_cities)
+        self.assertEqual(("support_automation", "email", "support"), policy.preferred_domains)
+        self.assertTrue(policy.prefer_remote and policy.prefer_relocation_package)
+        self.assertTrue(policy.block_us_work_requirements and policy.allow_european_or_candidate_local_hours)
 
     def test_index_orders_analyzed_scores_then_unanalyzed(self) -> None:
         ids = iter(("vacancy-2", "vacancy-3"))

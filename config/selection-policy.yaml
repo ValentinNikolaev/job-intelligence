@@ -1,0 +1,44 @@
+# Lists replace; their order is significant. Recognizer code does not supply defaults.
+schema_version: 1
+max_age_days: 7
+excluded_roles: [qa, mobile]
+reject_explicit_non_remote: true
+target_technologies: [go, php]
+excluded_cms: [typo3, wordpress, drupal]
+excluded_technologies: [spring_boot]
+excluded_combinations:
+  - [python, r]
+  - [python, julia]
+blocking_languages:
+  - albanian
+  - bulgarian
+  - croatian
+  - czech
+  - danish
+  - dutch
+  - estonian
+  - finnish
+  - french
+  - german
+  - greek
+  - hungarian
+  - latvian
+  - lithuanian
+  - norwegian
+  - polish
+  - portuguese
+  - romanian
+  - serbian
+  - slovak
+  - slovenian
+  - spanish
+  - swedish
+  - turkish
+  - italian
+location:
+  reject_us_remote: true
+  reject_us_location: true
+  reject_american_timezones: true
+  reject_american_location: true
+  allow_european_exception: true
+triage_exclusions: [sales, qa, mobile, junior, sre, consulting, non_backend]

@@ -11,6 +11,8 @@ import yaml
 
 from jobintel.workflow_lock import workflow_lock
 from jobintel import storage_bridge as op
+from jobintel.selection_policy import SelectionPolicy, load_selection_policy
+from jobintel.triage import should_skip_model, snapshot_should_skip
 
 
 ARCHIVABLE_JOB_STATUSES = frozenset({"found", "rejected", "withdrawn", "closed"})
@@ -21,7 +23,7 @@ def read_yaml(path: Path) -> dict:
     return loaded if isinstance(loaded, dict) else {}
 
 
-def eligible(directory: Path, category: str, low_score: int, max_age_days: int) -> bool:
+def eligible(directory: Path, category: str, low_score: int, max_age_days: int, *, selection_policy: SelectionPolicy | None = None) -> bool:
     meta_path = directory / "meta.yaml"
     if not op.exists(meta_path):
         return False
@@ -38,8 +40,7 @@ def eligible(directory: Path, category: str, low_score: int, max_age_days: int) 
         score = read_yaml(match_path).get("score")
         return isinstance(score, int) and score < low_score
     if category == "skipped":
-        triage_path = directory / "triage.yaml"
-        return op.exists(triage_path) and read_yaml(triage_path).get("skip_model") is True
+        return should_skip_model(directory, policy=selection_policy)
     discovered = parse_datetime(meta.get("discovered_at"))
     if discovered is None:
         return False
@@ -96,7 +97,10 @@ def candidates_for(
     keep_items: int,
     *,
     expected_revisions: dict[str, int] | None = None,
+    selection_policy: SelectionPolicy | None = None,
 ) -> tuple[Path, list[Path]]:
+    if category == "skipped" and selection_policy is None:
+        selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
     scope = "rejected" if category == "rejected" else "jobs"
     source_root = project_root / "registry" / scope
     store = op.get_store(project_root)
@@ -108,7 +112,7 @@ def candidates_for(
             meta = document.get("meta")
             if not isinstance(meta, dict):
                 meta = {}
-            if _eligible_document(meta, document, category, low_score, max_age_days):
+            if _eligible_document(meta, document, category, low_score, max_age_days, selection_policy=selection_policy):
                 rows.append((directory, meta, document))
         if category == "rejected":
             rows.sort(key=lambda row: _rejected_sort_key(row[0], row[1]))
@@ -135,12 +139,13 @@ def candidates_for(
     return jobs_root, sorted(
         meta.parent
         for meta in op.metadata_paths(jobs_root)
-        if eligible(meta.parent, category, low_score, max_age_days)
+        if eligible(meta.parent, category, low_score, max_age_days, selection_policy=selection_policy)
     )
 
 
 def _eligible_document(
-    meta: dict, document: dict, category: str, low_score: int, max_age_days: int
+    meta: dict, document: dict, category: str, low_score: int, max_age_days: int,
+    *, selection_policy: SelectionPolicy | None = None,
 ) -> bool:
     if category == "rejected":
         return True
@@ -152,8 +157,7 @@ def _eligible_document(
         score = match.get("score") if isinstance(match, dict) else None
         return isinstance(score, int) and score < low_score
     if category == "skipped":
-        triage = document.get("triage")
-        return isinstance(triage, dict) and triage.get("skip_model") is True
+        return snapshot_should_skip({**document, "meta": meta}, policy=selection_policy)
     discovered = parse_datetime(meta.get("discovered_at"))
     return discovered is not None and discovered.date() < dt.date.today() - dt.timedelta(days=max_age_days)
 
@@ -165,7 +169,11 @@ def archive(
     max_age_days: int = 7,
     min_items: int = 1,
     keep_items: int = 50,
+    *,
+    selection_policy: SelectionPolicy | None = None,
 ) -> int:
+    if category == "skipped" and selection_policy is None:
+        selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
     store = op.get_store(project_root)
     if store is not None:
         with store.lease("logical-archive"):
@@ -173,6 +181,7 @@ def archive(
             _, candidates = candidates_for(
                 project_root, category, low_score, max_age_days, keep_items,
                 expected_revisions=expected_revisions,
+                selection_policy=selection_policy,
             )
             print(f"{category}: eligible={len(candidates)} minimum={min_items}")
             if len(candidates) < min_items:
@@ -186,7 +195,7 @@ def archive(
     archive_root.mkdir(parents=True, exist_ok=True)
     today = dt.date.today().isoformat()
     destination = archive_destination(archive_root, today)
-    source_root, candidates = candidates_for(project_root, category, low_score, max_age_days, keep_items)
+    source_root, candidates = candidates_for(project_root, category, low_score, max_age_days, keep_items, selection_policy=selection_policy)
     print(f"{category}: eligible={len(candidates)} minimum={min_items}")
     if len(candidates) < min_items:
         print("No archive created; threshold not exceeded.")
@@ -259,6 +268,7 @@ def main() -> int:
     if args.keep_items < 0:
         parser.error("--keep-items must be at least 0")
     project_root = args.project_root.resolve()
+    selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml") if args.category == "skipped" else None
     with workflow_lock(project_root, f"archive:{args.category}"):
         archived = archive(
             project_root,
@@ -267,6 +277,7 @@ def main() -> int:
             args.max_age_days,
             args.min_items,
             args.keep_items,
+            selection_policy=selection_policy,
         )
     return 0 if archived >= 0 else 1
 

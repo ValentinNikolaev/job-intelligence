@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -46,12 +47,180 @@ class PublicationBranchResolutionTests(unittest.TestCase):
                 fin.reviewed_remote_info(Path.cwd(), record)
 
 
+class MatchPolicyFinalizationGateTests(unittest.TestCase):
+    def test_only_relevant_increment_dependencies_are_checked(self) -> None:
+        self.assertEqual(set(), fin.evaluation_dependencies(["docs/unrelated.md"]))
+        matching = fin.evaluation_dependencies(["jobintel/matching.py"])
+        self.assertIn("config/matching-policy.yaml", matching)
+        self.assertIn("tests/fixtures/match-policy-baseline-schema.json", matching)
+        self.assertNotIn("jobintel/matching.py", matching)
+        self.assertNotIn("config/cv-editorial-knowledge.yaml", matching)
+        both = fin.evaluation_dependencies(["prompts/vacancy-match.md"])
+        self.assertIn("config/cv-editorial-knowledge.yaml", both)
+        self.assertIn("jobintel/editorial_eval.py", both)
+
+    def test_dependency_blob_changes_block_even_outside_reviewed_paths(self) -> None:
+        for dependency in fin.evaluation_dependencies(["prompts/vacancy-match.md"]):
+            with self.subTest(dependency=dependency):
+                with self.assertRaisesRegex(fin.FinalizationError, "remote changed evaluation dependencies"):
+                    fin.require_unchanged_evaluation_dependencies(
+                        {dependency: "100644:old"}, {dependency: "100644:new"}, ["prompts/vacancy-match.md"],
+                    )
+        fin.require_unchanged_evaluation_dependencies({}, {"config/matching-policy.yaml": "new"}, ["docs/unrelated.md"])
+
+    def test_unrelated_changes_do_not_run_match_evaluation(self) -> None:
+        with patch.object(fin, "command") as command:
+            fin.require_match_policy_evaluation(Path.cwd(), ["docs/unrelated.md"])
+        command.assert_not_called()
+
+    def test_each_matching_input_requires_exact_decisions_path(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            ignored = root / ".codex-work"
+            ignored.mkdir()
+            (ignored / "match-policy-receipt.json").write_text('{"ok":true}', encoding="utf-8")
+            (ignored / "match-policy-pack.json").write_text('{}', encoding="utf-8")
+            (ignored / "other-decisions.json").write_text('{}', encoding="utf-8")
+            for changed in fin.MATCH_POLICY_PATHS:
+                with self.subTest(changed=changed), patch.object(fin, "command") as command:
+                    with self.assertRaisesRegex(fin.FinalizationError, "match-policy-decisions.json"):
+                        fin.require_match_policy_evaluation(root, [changed])
+                    command.assert_not_called()
+
+    def test_existing_decisions_are_recomputed_with_project_cli(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            decisions = root / ".codex-work/match-policy-decisions.json"
+            decisions.parent.mkdir()
+            decisions.write_text('{}', encoding="utf-8")
+            with patch.object(fin, "command") as command:
+                fin.require_match_policy_evaluation(root, ["jobintel/matching.py"])
+            command.assert_called_once_with(
+                sys.executable, "scripts/evaluate_match_policy.py", "evaluate", "--input", str(decisions),
+                "--output", ".codex-work/match-policy-receipt.json", cwd=root,
+            )
+
+    def test_evaluator_failure_blocks_finalization(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            decisions = root / ".codex-work/match-policy-decisions.json"
+            decisions.parent.mkdir()
+            decisions.write_text('{}', encoding="utf-8")
+            with patch.object(fin, "command", side_effect=fin.FinalizationError("stale decisions")):
+                with self.assertRaisesRegex(fin.FinalizationError, "stale decisions"):
+                    fin.require_match_policy_evaluation(root, ["config/matching-policy.yaml"])
+
+    def test_matching_inputs_also_trigger_editorial_gate(self) -> None:
+        self.assertTrue({"config/matching-policy.yaml", "prompts/vacancy-match.md"}.issubset(fin.EDITORIAL_POLICY_PATHS))
+
+    def test_publication_verification_and_commit_reviews_recheck_decisions(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            record = root / ".codex-work/finalization/api-review.json"
+            record.parent.mkdir(parents=True)
+            record.write_text(json.dumps({"commit": "a" * 40}), encoding="utf-8")
+            with patch.object(fin, "ensure_worktree"), patch.object(fin, "status", return_value=b""), \
+                    patch.object(fin, "head", return_value="a" * 40), \
+                    patch.object(fin, "tree_entries", return_value={}), \
+                    patch.object(fin, "require_complete_project_tree"), \
+                    patch.object(fin, "changed_paths", return_value=["jobintel/matching.py"]):
+                for entrypoint in ("verify_review", "review_committed", "verify_committed_review"):
+                    with self.subTest(entrypoint=entrypoint):
+                        with self.assertRaisesRegex(fin.FinalizationError, "match-policy-decisions.json"):
+                            if entrypoint == "verify_review":
+                                fin.verify_review(root, {"entries": {"jobintel/matching.py": "blob"}})
+                            else:
+                                getattr(fin, entrypoint)(root)
+
+
 class RepositoryFinalizationTests(unittest.TestCase):
+    def test_publish_retry_rechecks_evaluation_before_push(self) -> None:
+        path = self.work / "jobintel/matching.py"
+        path.parent.mkdir(parents=True)
+        path.write_text("# reviewed matching change\n", encoding="utf-8")
+        subject = "Review matching changes"
+        with patch.object(fin, "require_match_policy_evaluation"):
+            fin.review(self.work)
+            with patch.object(fin, "fetch", side_effect=fin.FinalizationError("first publication interrupted")):
+                with self.assertRaisesRegex(fin.FinalizationError, "interrupted"):
+                    fin.publish(self.work, subject, "")
+        with patch.object(fin, "require_match_policy_evaluation", side_effect=fin.FinalizationError("stale evaluation")) as gate:
+            with self.assertRaisesRegex(fin.FinalizationError, "stale evaluation"):
+                fin.publish(self.work, subject, "")
+        gate.assert_called_once()
+        self.assertNotEqual(run("git", "rev-parse", "HEAD", cwd=self.work), self.remote_info(self.work)[2])
+
+    def test_remote_evaluation_dependency_change_stops_before_rebase(self) -> None:
+        path = self.work / "jobintel/matching.py"
+        path.parent.mkdir(parents=True)
+        path.write_text("# reviewed matching change\n", encoding="utf-8")
+        with patch.object(fin, "require_match_policy_evaluation"):
+            fin.review(self.work)
+        remote_policy = self.seed / "config/matching-policy.yaml"
+        remote_policy.write_text("changed remote analysis preferences\n", encoding="utf-8")
+        run("git", "add", "-A", cwd=self.seed)
+        run("git", "commit", "-m", "Change remote analysis preferences", cwd=self.seed)
+        run("git", "push", "origin", "HEAD:main", cwd=self.seed)
+        with patch.object(fin, "require_match_policy_evaluation"):
+            with self.assertRaisesRegex(fin.FinalizationError, r"evaluation dependencies.*config/matching-policy.yaml"):
+                fin.publish(self.work, "Review matching changes", "")
+        self.assertFalse((self.work / "config/matching-policy.yaml").exists())
+
+    def test_evaluation_is_rechecked_immediately_before_push(self) -> None:
+        path = self.work / "jobintel/matching.py"
+        path.parent.mkdir(parents=True)
+        path.write_text("# reviewed matching change\n", encoding="utf-8")
+        with patch.object(fin, "require_match_policy_evaluation"):
+            fin.review(self.work)
+        remote_before = self.remote_info(self.work)[2]
+        with patch.object(fin, "require_match_policy_evaluation", side_effect=[None, fin.FinalizationError("pre-push stale evaluation")]) as gate:
+            with self.assertRaisesRegex(fin.FinalizationError, "pre-push stale evaluation"):
+                fin.publish(self.work, "Review matching changes", "")
+        self.assertEqual(2, gate.call_count)
+        self.assertEqual(remote_before, self.remote_info(self.work)[2])
+
+    def test_api_remote_dependency_change_stops_before_tree_composition(self) -> None:
+        path = self.work / "jobintel/matching.py"
+        path.parent.mkdir(parents=True)
+        path.write_text("# reviewed matching change\n", encoding="utf-8")
+        with patch.object(fin, "require_match_policy_evaluation"):
+            fin.review(self.work)
+            with patch.object(fin, "fetch", side_effect=fin.FinalizationError("interrupted")):
+                with self.assertRaises(fin.FinalizationError):
+                    fin.publish(self.work, "Review matching changes", "")
+            fin.review_committed(self.work)
+            record = fin.verify_committed_review(self.work)
+        paths = run("git", "ls-files", cwd=self.work).splitlines()
+        remote_tree = fin.tree_entries(self.work, "HEAD^", paths)
+        remote_tree["config/matching-policy.yaml"] = "100644:changed-policy"
+        requests = []
+
+        def api(_root, method, endpoint, payload=None):
+            requests.append((method, endpoint))
+            if endpoint.endswith("/git/blobs"):
+                return {"sha": record["entries"]["jobintel/matching.py"].split(":")[1]}
+            if method == "GET" and "/git/commits/" in endpoint:
+                return {"tree": {"sha": "remote-tree"}}
+            self.fail(f"API mutation reached after changed dependency: {method} {endpoint}")
+
+        with patch.object(fin, "verify_committed_review", return_value=record), \
+                patch.object(fin, "gh_api", side_effect=api), patch.object(fin, "api_tree", return_value=remote_tree):
+            with self.assertRaisesRegex(fin.FinalizationError, r"evaluation dependencies.*config/matching-policy.yaml"):
+                fin.publish_api(self.work)
+        self.assertFalse(any(endpoint.endswith(("/git/trees", "/git/commits", "/git/refs")) for _, endpoint in requests))
+
     def test_editorial_policy_change_requires_executable_evaluation(self) -> None:
         path = self.work / 'config/cv-editorial-knowledge.yaml'
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text('schema_version: 1\n', encoding='utf-8')
         with self.assertRaisesRegex(fin.FinalizationError, 'editorial decisions'):
+            fin.review(self.work)
+
+    def test_matching_runtime_change_requires_independent_evaluation_on_review(self) -> None:
+        path = self.work / "jobintel/matching.py"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text("# changed runtime matching inputs\n", encoding="utf-8")
+        with self.assertRaisesRegex(fin.FinalizationError, "match-policy-decisions.json"):
             fin.review(self.work)
 
     def setUp(self) -> None:

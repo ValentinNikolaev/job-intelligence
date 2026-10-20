@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from jobintel.editorial_eval import export_pack, evaluate_decisions
+from jobintel.editorial_eval import POLICY_FILES, export_pack, evaluate_decisions
 
 
 class EditorialEvaluationTests(unittest.TestCase):
@@ -20,6 +20,14 @@ class EditorialEvaluationTests(unittest.TestCase):
         self.assertEqual(10, len(self.pack['cases']))
         self.assertTrue(all('expected' not in case for case in self.pack['cases']))
         self.assertTrue(evaluate_decisions(self.root, self.answers)['ok'])
+
+    def test_matching_prompt_and_policy_are_bound_to_editorial_receipt(self):
+        self.assertIn('prompts/vacancy-match.md', POLICY_FILES)
+        self.assertIn('config/matching-policy.yaml', POLICY_FILES)
+        self.assertEqual((self.root / 'prompts/vacancy-match.md').read_text(encoding='utf-8'),
+                         self.pack['policies']['prompts/vacancy-match.md'])
+        self.assertEqual((self.root / 'config/matching-policy.yaml').read_text(encoding='utf-8'),
+                         self.pack['policies']['config/matching-policy.yaml'])
 
     def test_wrong_disposition_or_reason_code_fails(self):
         for field, value in [('decision', 'keep'), ('reason_codes', [])]:

@@ -1,0 +1,181 @@
+# Synthetic characterization of the unchanged pre-extraction implementation.
+schema_version: 1
+reference_time: '2026-07-23T12:00:00Z'
+job_defaults:
+  source: synthetic
+  source_job_id: selection-baseline
+  source_url: https://example.test/selection-baseline
+  title: Senior Backend Engineer
+  company: Example
+  description: Build Go backend services.
+  published_at: '2026-07-22T12:00:00Z'
+prefilter:
+  - id: supported-default
+    job: {}
+    expected: null
+  - id: exact-seven-day-boundary
+    job: {published_at: '2026-07-16T12:00:00Z'}
+    expected: null
+  - id: one-second-too-old-before-role
+    job: {published_at: '2026-07-16T11:59:59Z', title: QA Engineer}
+    expected: {category: stale, reason: 'published_at 2026-07-16T11:59:59Z is older than 7 days'}
+  - id: missing-date-remains-unknown
+    job: {published_at: null}
+    expected: null
+  - id: malformed-date-remains-unknown
+    job: {published_at: not-a-date}
+    expected: null
+  - id: retry-before-age-and-role
+    job: {title: QA Engineer, published_at: '2026-07-01T12:00:00Z'}
+    retry: {company: Example, allow_after: '2026-07-24', reason: Synthetic retry boundary.}
+    expected: {category: company_retry_block, reason: 'Example is blocked until 2026-07-24: Synthetic retry boundary.'}
+  - id: retry-date-inclusive
+    job: {}
+    retry: {company: Example, allow_after: '2026-07-23', reason: Synthetic retry boundary.}
+    expected: null
+  - id: role-before-nonremote
+    job: {title: QA Engineer, remote: false}
+    expected: {category: role_mismatch, reason: title is an obvious mismatch for a backend profile}
+  - id: mobile-title
+    job: {title: Mobile Developer}
+    expected: {category: role_mismatch, reason: title is an obvious mismatch for a backend profile}
+  - id: nonremote-before-language
+    job: {remote: false, description: 'German C1 required. Build Go services.'}
+    expected: {category: location_requirement, reason: vacancy is explicitly non-remote}
+  - id: unknown-remote-is-allowed
+    job: {remote: null}
+    expected: null
+  - id: us-remote-before-language
+    job: {description: 'Remote (U.S.). German C1 required. Build Go services.'}
+    expected: {category: location_requirement, reason: remote role is limited to the United States}
+  - id: us-residence-before-time
+    job: {description: 'United States candidates only. Working US time zones. Build PHP services.'}
+    expected: {category: location_requirement, reason: requires United States location}
+  - id: american-time-before-language
+    job: {description: 'Work US time zones. German C1 required. Build PHP services.'}
+    expected: {category: timezone_requirement, reason: requires American continent work time}
+  - id: american-residence
+    job: {description: 'Candidates must be based in North America. Build Go services.'}
+    expected: {category: location_requirement, reason: requires American continent location}
+  - id: european-hours-exception
+    job: {description: 'Remote (U.S.), but EMEA working hours are available. Build Go services.'}
+    expected: null
+  - id: broad-regions-are-not-a-blocker
+    job: {description: 'Location available in EMEA and the Americas. Build PHP services.'}
+    expected: null
+  - id: european-exception-does-not-cancel-language
+    job: {description: 'US remote with CET hours. German C1 required. Build Go services.'}
+    expected: {category: language_requirement, reason: hard German language requirement}
+  - id: english-does-not-cancel-german
+    job: {description: 'German C1 required. Professional English required. Build Go services.'}
+    expected: {category: language_requirement, reason: hard German language requirement}
+  - id: structured-language-level
+    job: {description: "PHP backend\nEnglish B2\nPolish C1"}
+    expected: {category: language_requirement, reason: hard Polish language requirement}
+  - id: optional-language
+    job: {description: 'German is optional. Build Go services.'}
+    expected: null
+  - id: negated-language
+    job: {description: 'German is not required. Build Go services.'}
+    expected: null
+  - id: allowed-russian
+    job: {description: 'Fluent Russian required. Build Go services.'}
+    expected: null
+  - id: language-order-before-italian
+    job: {description: 'Italian C1 required. German C1 required. Build PHP services.'}
+    expected: {category: language_requirement, reason: hard German language requirement}
+  - id: italian-after-other-languages
+    job: {description: 'Italiano fluente mandatory. Build PHP services.'}
+    expected: {category: language_requirement, reason: hard Italian language requirement}
+  - id: language-before-cms
+    job: {description: 'French C1 required. Maintain WordPress in PHP.'}
+    expected: {category: language_requirement, reason: hard French language requirement}
+  - id: cms-before-blacklisted-stack
+    job: {description: 'Maintain WordPress and Spring Boot services with PHP.'}
+    expected: {category: tech_stack, reason: WordPress vacancies are ignored}
+  - id: cms-order-ignores-text-order
+    job: {description: 'Drupal and WordPress integrate with TYPO3 in PHP.'}
+    expected: {category: tech_stack, reason: TYPO3 vacancies are ignored}
+  - id: word-press-alias
+    job: {description: 'Maintain Word Press plugins in PHP.'}
+    expected: {category: tech_stack, reason: WordPress vacancies are ignored}
+  - id: drupal
+    job: {description: 'Maintain Drupal modules in PHP.'}
+    expected: {category: tech_stack, reason: Drupal vacancies are ignored}
+  - id: spring-before-combinations
+    job: {description: 'Spring Boot, Python, R, Julia and Go backend services.'}
+    expected: {category: tech_stack, reason: Spring Boot is not a target stack}
+  - id: python-r-before-python-julia
+    job: {description: 'Python, R and Julia services with Go backend integrations.'}
+    expected: {category: tech_stack, reason: Python + R is not a target stack}
+  - id: python-julia-mixed-target
+    job: {description: 'Python and Julia data services with PHP APIs.'}
+    expected: {category: tech_stack, reason: Python + Julia is not a target stack}
+  - id: python-alone-with-target
+    job: {description: 'Python and PHP backend services.'}
+    expected: null
+  - id: english-does-not-cancel-missing-target
+    job: {description: 'Professional English required. Build Java backend services.'}
+    expected: {category: tech_stack, reason: role does not mention Go/Golang or PHP}
+  - id: incidental-go-near-engineer-is-accepted
+    job: {description: 'Go to customer meetings. Build Java services.'}
+    expected: null
+  - id: golang-alias
+    job: {description: 'Build Golang APIs.'}
+    expected: null
+  - id: php-version-alias
+    job: {description: 'Maintain PHP8.3 applications.'}
+    expected: null
+  - id: title-go-is-target-evidence
+    job: {title: Go Backend Engineer, description: 'Build distributed systems.'}
+    expected: null
+triage:
+  - id: sales
+    title: Sales Engineer
+    expected: {skip_model: true, reason: sales, confidence: high, matched_title_rules: [sales]}
+  - id: qa
+    title: Test Automation Engineer
+    expected: {skip_model: true, reason: qa, confidence: high, matched_title_rules: [qa]}
+  - id: mobile
+    title: Flutter Developer
+    expected: {skip_model: true, reason: mobile, confidence: high, matched_title_rules: [mobile]}
+  - id: junior
+    title: Junior Backend Engineer
+    expected: {skip_model: true, reason: junior, confidence: high, matched_title_rules: [junior]}
+  - id: sre
+    title: Site Reliability Engineer
+    expected: {skip_model: true, reason: sre, confidence: high, matched_title_rules: [sre]}
+  - id: consulting
+    title: Backend Consultant
+    expected: {skip_model: true, reason: consulting, confidence: high, matched_title_rules: [consulting]}
+  - id: non-backend
+    title: Frontend Engineer
+    expected: {skip_model: true, reason: non_backend, confidence: high, matched_title_rules: [non_backend]}
+  - id: multiple-title-rules-use-policy-order
+    title: Junior QA Sales Engineer
+    expected: {skip_model: true, reason: sales, confidence: high, matched_title_rules: [sales, qa, junior]}
+  - id: title-before-body
+    title: SRE
+    body: Collaborate with sales.
+    expected: {skip_model: true, reason: sre, confidence: high, matched_title_rules: [sre]}
+  - id: incidental-body
+    title: Backend Engineer
+    body: Collaborate with the SRE team.
+    expected: {skip_model: false, reason: sre, confidence: medium, matched_title_rules: []}
+  - id: body-rule-order
+    title: Backend Engineer
+    body: Collaborate with SRE and sales teams.
+    expected: {skip_model: false, reason: sales, confidence: medium, matched_title_rules: []}
+  - id: no-match
+    title: Senior Backend Engineer
+    body: Build Go services.
+    expected: {skip_model: false, reason: null, confidence: low, matched_title_rules: []}
+  - id: short-token-boundary
+    title: Senior Backend Engineer
+    body: Build a mobile-friendly API for an account service.
+    expected: {skip_model: false, reason: null, confidence: low, matched_title_rules: []}
+queue:
+  - {id: priority, title: Backend Engineer, priority: 10, status: found, expected: true}
+  - {id: body, title: Backend Engineer, body: Collaborate with SRE., priority: 0, status: found, expected: true}
+  - {id: title, title: SRE, priority: 100, status: found, expected: false}
+  - {id: applied, title: Backend Engineer, priority: 100, status: applied, expected: false}
