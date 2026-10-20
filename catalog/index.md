@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 52
+Total vacancies: 53
 
-- Found: 27
+- Found: 28
 - Applied: 22
 - Interview: 3
 
@@ -12,10 +12,11 @@ Total vacancies: 52
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-20 | [Fleetio](../registry/jobs/20261020_fleetio_e3d9bdfff41f4e08ad57800d930554f1/) | [Software Engineer, Growth](../registry/jobs/20261020_fleetio_e3d9bdfff41f4e08ad57800d930554f1/job.md) | United States | Jobspresso | Found | 2026-10-20 | [Jobspresso](https://jobspresso.co/job/software-engineer-growth/) | — | — | — | — | — |
 | 2026-10-20 | [YozmaTech](../registry/jobs/20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25/) | [Middle Backend engineer (Golang)](../registry/jobs/20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25/job.md) | Worldwide | Djinni | Found | 2026-10-20 | [Djinni](https://djinni.co/jobs/854098-middle-backend-engineer-golang/) | — | — | — | — | — |
 | 2026-10-20 | [TrueLabel](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/) | [Senior PHP Developer (Core)](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-20 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377174/) | [Open](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/company.md) | — | — | — | — |
 | 2026-10-19 | [TrueLabel](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/) | [Senior PHP Software Engineer (Payments)](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-19 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377139/) | [Open](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/company.md) | — | — | — | — |
-| 2026-10-19 | [Hamsters.pro](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/) | [Middle PHP Developer (CRM / CPA / Integrations)](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853984-middle-php-developer-crm-cpa-integrations/) | — | — | — | — | — |
+| 2026-10-19 | [HAMSTERS](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/) | [Middle PHP Developer (CRM / CPA / Integrations)](../registry/jobs/20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853984-middle-php-developer-crm-cpa-integrations/) | — | — | — | — | — |
 | 2026-10-19 | [Hunt.IT Recruitment](../registry/jobs/20261019_hunt-it-recrui_4ead6da5a3e640af9e0328ded1b270d0/) | [Back-End Developer](../registry/jobs/20261019_hunt-it-recrui_4ead6da5a3e640af9e0328ded1b270d0/job.md) | EU | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/854069-back-end-developer/) | — | — | — | — | — |
 | 2026-10-19 | [New Wave Devs](../registry/jobs/20261019_new-wave-devs_d0fb3d82724e43b3a74676e3cf90ba8c/) | [Senior Backend Engineer (Go), product team](../registry/jobs/20261019_new-wave-devs_d0fb3d82724e43b3a74676e3cf90ba8c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853963-senior-backend-engineer-go-product-team/) | — | — | — | — | — |
 | 2026-10-19 | [alpview it service](../registry/jobs/20261019_alpview-it-ser_5d653ccdc17c41b4ac6429756c805f4c/) | [Senior PHP / Laravel Engineer — AI-native team with Claude Code (long-term)](../registry/jobs/20261019_alpview-it-ser_5d653ccdc17c41b4ac6429756c805f4c/job.md) | Worldwide | Djinni | Found | 2026-10-19 | [Djinni](https://djinni.co/jobs/853872-senior-php-laravel-engineer-ai-native-team-wi/) | — | — | — | — | — |
