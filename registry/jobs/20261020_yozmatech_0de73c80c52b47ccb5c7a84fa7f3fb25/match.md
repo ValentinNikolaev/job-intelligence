@@ -1,34 +1,33 @@
 # Match Analysis
 
-**Score:** 83/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Strong remote Go backend fit; TypeScript and autonomous coding-agent depth remain unverified.
+Strong backend fit through Go, AWS, PostgreSQL, API and system-design experience; TypeScript and the requested development process experience remain unverified.
 
 ## Why it matches
 
-- Production Go
-- AWS
-- Kubernetes
-- microservices
-- event-driven systems
-- ownership
+- Go is an explicit primary candidate technology and the vacancy makes Go mandatory.
+- The candidate has more than 15 years of backend experience and documented API, cloud, database, and system-design work.
+- The worldwide remote format is compatible with the candidate's Italy location.
 
 ## Gaps
 
-- TypeScript is not explicit
-- autonomous coding-agent workflow is not explicit
+- TypeScript is not listed in the Candidate Profile.
+- TDD, Extreme Programming, and Kanban experience is not explicitly documented.
 
 ## Concerns
 
-- Exact client SaaS context and work authorization are unknown
+- The client, compensation, and employment arrangement are not identified in the supplied vacancy.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Hands-on proficiency in Go | critical / stated | strong | Hands-on proficiency in Go — must have; | Backend engineer with 15+ years of experience building and improving production systems across **PHP** and **Go**. | / |
-| Autonomous AI agents for end-to-end coding | high / stated | partial | Agentic Coding: Experience in using autonomous AI agents (e.g., Claude Code, Cursor, Aider) to plan, write, test, and debug code end-to-end; | - Integrated **OpenAI**-powered auto-triage flows, automating or deflecting up to **30%** of inbound tickets. | AI product automation is not explicit coding-agent usage. / Confirm concrete coding-agent examples. |
-| Cloud-platform experience | high / stated | strong | Previous work with cloud platforms such as GCP, AWS, or others; | ### Infrastructure - AWS - Kubernetes | / |
-| Technical-project ownership | high / stated | strong | Proven ability to lead technical projects, set priorities, and own outcomes; | - Designed and owned a Go-based support automation platform connecting **Zendesk**, **Intercom**, and internal services. | / |
-| SaaS architecture and development best practices | high / stated | strong | Deep familiarity with SaaS architecture and development best practices; | - Microservices - Event-driven systems | / |
+| Backend engineering experience of at least four years | critical / stated | strong | An experienced Backend Engineer with a minimum of **4** years in the field | ### Languages - Go - PHP | / |
+| Hands-on Go proficiency | critical / stated | strong | Hands-on proficiency in Go — must have; | ### Languages - Go - PHP | / |
+| High-performance APIs and services | high / stated | strong | Scope, design, and implement high-performance APIs and services | REST APIs \| System Design | / |
+| System architecture and design | high / stated | strong | Experience in system architecture and design - a plus | ### Architecture - Microservices - Event-driven systems | / |
+| English at Upper-Intermediate level or higher | high / stated | strong | English – Upper-Intermediate or higher. | - **English - Upper-intermediate** | / |
+| Cloud provider and PostgreSQL familiarity | meaningful / stated | strong | Experience with GCP, AWS, or other cloud providers - a plus 🔹 Familiarity with database systems (e.g., PostgreSQL)- a big plus. | - AWS - Kubernetes - RabbitMQ ### Databases - MySQL - PostgreSQL - Elasticsearch | / |
+| TypeScript | preferred / stated | unknown | Hands-on proficiency in TypeScript — strong advantage; |  | TypeScript may be tested despite being a strong advantage rather than a must-have. / Verify current TypeScript exposure before applying. |

@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-20T12:42:30Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "YozmaTech",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25",
+      "score": 78,
+      "title": "Middle Backend engineer (Golang)",
+      "url": "https://djinni.co/jobs/854098-middle-backend-engineer-golang/",
+      "vacancy_id": "0de73c80-c52b-47cc-b5c7-a84fa7f3fb25"
+    },
+    {
+      "company": "HAMSTERS",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261019_hamsters-pro_cc37f1f6e359411fbbd95801e96fc95c",
+      "score": 84,
+      "title": "Middle PHP Developer (CRM / CPA / Integrations)",
+      "url": "https://djinni.co/jobs/853984-middle-php-developer-crm-cpa-integrations/",
+      "vacancy_id": "cc37f1f6-e359-411f-bbd9-5801e96fc95c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "e6c9ad56bff97668da1e45d8e181252067375b43741681a70aeb8f3923661d7a",
+  "schema_version": 2
+}

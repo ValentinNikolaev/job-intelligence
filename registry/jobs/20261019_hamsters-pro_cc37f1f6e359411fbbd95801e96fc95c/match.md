@@ -1,31 +1,32 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Good PHP integration and legacy-modernization fit with strong SQL, API, webhook, testing, and e-commerce evidence; the middle-level scope is likely suitable, while JavaScript/jQuery, Linux/PHP-FPM, and direct CRM/CPA experience need confirmation.
+Very strong PHP backend and integration fit with relevant SQL, REST, reliability, testing, and legacy-system experience; JavaScript, Redis, and the company's specialized domain are the main uncertainties.
 
 ## Why it matches
 
-- Deep PHP backend experience and relevant e-commerce, payment, and integration background.
-- Evidence for SQL optimization, REST/API integrations, queues, retries, CI/CD, and production diagnosis.
-- Fully remote format and Kyiv hours do not create a decisive conflict for a candidate in Italy.
+- PHP is central to the vacancy and is a long-standing candidate technology with Laravel and Symfony experience.
+- The candidate has documented production troubleshooting, API, database, testing, CI/CD, and legacy modernization experience.
+- Remote work is explicitly offered and the candidate is based in Italy.
 
 ## Gaps
 
-- JavaScript/jQuery, Node.js/WebSocket, nginx/PHP-FPM, and direct CRM/CPA/fulfillment experience are not explicitly established.
-- Working directly without an ORM and the requested PHP 7.4–8.5 migration scope are not confirmed.
+- JavaScript/jQuery, MariaDB, Redis, Memcached, Puppeteer, and Node.js/WebSocket are not explicitly evidenced.
+- Direct CPA, call-center CRM, advertising, and delivery-integration experience is not established in the supplied profile.
 
 ## Concerns
 
-- The job involves personal and financial data; the profile supports fintech-related work but does not detail this exact compliance context.
+- The vacancy is in Ukrainian and does not state an English requirement or compensation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| SQL, REST APIs, webhooks, retries, and idempotency | critical / stated | partial | Досвід REST API і webhooks, розуміння повторної доставки та ідемпотентності | Build resilient message delivery pipelines with fallback logic, retries, and | Webhook and idempotency terminology is not explicit in the candidate evidence. / Prepare a concrete integration example covering duplicate delivery and replay. |
-| 3+ years commercial PHP and legacy maintenance | critical / stated | strong | Від 3 років комерційної розробки на PHP | Backend engineer with 15+ years of experience building and improving production | Direct legacy-code maintenance is not separately quantified. / Give examples of extending inherited systems. |
-| PHP modernization | high / stated | unknown | Міграція проєктів із PHP 7.x на PHP 8.x |  | Relevant migration work is not documented in the profile. / Ask for a concrete PHP-version migration example. |
-| Automated tests and code review | high / stated | strong | Git, досвід написання автоматизованих тестів | Increased unit-tests coverage. | PHPUnit specifically is not named. / Confirm test framework and coverage practice. |
-| E-commerce and payment integrations | meaningful / stated | strong | CRM/ERP, CPA, e-commerce чи логістика | My background includes document automation, customer operations automation, digital | CPA and logistics are not confirmed. / Emphasize transferable integration and business-process work. |
+| Commercial PHP development experience of at least three years | critical / stated | strong | Від 3 років комерційної розробки на PHP | ### Languages - Go - PHP ### Frameworks - Laravel - Symfony | / |
+| SQL, REST APIs, webhooks, retries, and idempotency | high / stated | partial | Впевнений SQL: об'єднання таблиць, звіти, індекси, транзакції - Досвід REST API і webhooks, розуміння повторної доставки та ідемпотентності | **Skills:** PHP \| Laravel \| MySQL \| Elasticsearch \| RabbitMQ \| AWS \| Kubernetes \| Prometheus \| REST APIs \| CI/CD | Candidate SQL and REST experience is evidenced, but webhook idempotency is not stated verbatim. / Ask for or verify a concrete webhook/retry/idempotency example before preparation. |
+| Automated tests, Git, review, and documented changes | high / stated | partial | Git, досвід написання автоматизованих тестів | Implemented **CI/CD pipelines** that shortened release cycles and improved delivery consistency across services. | Git and automated-test evidence is not directly quoted in the supplied CV excerpt. / Confirm the candidate's testing and code-review examples before drafting. |
+| Maintain and extend legacy code | high / stated | strong | Досвід підтримки чужого коду й готовність працювати з legacy | **Troubleshot** production issues using logs, monitoring, and SRE dashboards; delivered fixes and operational improvements. | / |
+| Remote full-time work | meaningful / stated | strong | Повна зайнятість, дистанційно, 10:00–18:00 за Києвом | Fiumicino, Latium, Italy | Kyiv working hours and availability are not confirmed. / Confirm schedule compatibility before preparation. |
+| CRM, CPA, e-commerce, or logistics domain | preferred / stated | partial | CRM/ERP, CPA, e-commerce чи логістика | My background includes document automation, customer operations automation, digital products, e-commerce, fintech-related systems, and communication-heavy platforms. | E-commerce is supported, but CPA and call-center CRM are not specifically established. / Lead with verified e-commerce and automation evidence and avoid claiming CPA expertise. |
