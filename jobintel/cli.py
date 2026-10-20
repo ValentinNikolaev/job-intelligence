@@ -44,6 +44,7 @@ from .matching import (
 from .matching_policy import MatchingContext
 from .models import CollectorSummary, NormalizedJob
 from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
+from .preparation_context import PreparationContext, load_preparation_context
 from .selection_policy import DEFAULT_SELECTION_POLICY_PATH, SelectionPolicy, load_selection_policy
 from .registry import Registry
 from .storage_contract import StorageError
@@ -331,7 +332,7 @@ def _main(argv: list[str] | None = None) -> int:
             return 1
 
     if target == "lint-application":
-        return _run_application_lint(args, registry_dir)
+        return _run_application_lint(args, registry_dir, project_root)
 
     if target == "validate-application":
         if (
@@ -352,6 +353,7 @@ def _main(argv: list[str] | None = None) -> int:
             )
             return 2
         try:
+            context = load_preparation_context(project_root)
             directories = resolve_job_directories(registry_dir, args.arguments[0])
             if len(directories) != 1:
                 raise ValueError("validate-application requires exactly one vacancy")
@@ -365,6 +367,7 @@ def _main(argv: list[str] | None = None) -> int:
             lint = lint_application_draft(
                 directory, draft_directory, document=args.document,
                 vacancy_text=op.read_text(directory / "job.md"),
+                context=context,
             )
             failures = []
             if not lint["ok"]:
@@ -376,9 +379,7 @@ def _main(argv: list[str] | None = None) -> int:
                     directory,
                     draft_directory,
                     document=args.document,
-                    career_source_path=(registry_dir / "candidate" / "linkedin-profile.md")
-                    if ((registry_dir / "candidate" / "linkedin-profile.md").is_file()
-                        or (registry_dir.parent / ".git").exists()) else None,
+                    context=context,
                 )
             except Exception as exc:
                 failures.append(str(exc))
@@ -1320,6 +1321,22 @@ def _profile_paths(
     return paths
 
 
+def _preparation_profile_paths(
+    cli_paths: list[Path] | None,
+    config: dict[str, str],
+    project_root: Path,
+    registry_dir: Path,
+    context: PreparationContext,
+) -> list[Path]:
+    if cli_paths or config.get("CANDIDATE_PROFILE_PATHS", "").strip():
+        paths = _profile_paths(cli_paths, config, project_root, registry_dir)
+    else:
+        paths = list(context.profile_paths)
+    for path in paths:
+        context.source_path(context.relative(path))
+    return paths
+
+
 def _run_preparation(
     args: argparse.Namespace,
     config: dict[str, str],
@@ -1335,7 +1352,7 @@ def _run_preparation(
         return 1
 
 
-def _run_application_lint(args: argparse.Namespace, registry_dir: Path) -> int:
+def _run_application_lint(args: argparse.Namespace, registry_dir: Path, project_root: Path) -> int:
     """Report cheap, deterministic draft defects before the combined validator."""
     if (
         len(args.arguments) != 1
@@ -1353,6 +1370,7 @@ def _run_application_lint(args: argparse.Namespace, registry_dir: Path) -> int:
         )
         return 2
     try:
+        context = load_preparation_context(project_root)
         directories = resolve_job_directories(registry_dir, args.arguments[0])
         if len(directories) != 1:
             raise ValueError("lint-application requires exactly one vacancy")
@@ -1365,6 +1383,7 @@ def _run_application_lint(args: argparse.Namespace, registry_dir: Path) -> int:
             draft_directory,
             document=args.document,
             vacancy_text=op.read_text(directory / "job.md"),
+            context=context,
         )
     except Exception as exc:
         print(json.dumps({"ok": False, "diagnostics": [{"code": "LINT_ERROR", "message": str(exc)}]}, ensure_ascii=False))
@@ -1417,6 +1436,7 @@ def _preflight_preparation(
     """
     if not args.arguments:
         raise ValueError("preparation requires at least one explicit vacancy selector")
+    context = load_preparation_context(project_root)
     matching_context = matching_context if matching_context is not None else current_matching_context(project_root)
     policy, model_label = _selected_workflow(
         args.workflow, project_root, {"prepare"}, args.model_profile
@@ -1426,7 +1446,9 @@ def _preflight_preparation(
     if getattr(args, "bypass_hard_rejection_cv_refresh", False) and args.document != "cv":
         raise ValueError("--bypass-hard-rejection-cv-refresh requires --document cv")
 
-    profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+    preparation_profiles = _preparation_profile_paths(
+        args.profile, config, project_root, registry_dir, context
+    )
     directories = _resolve_explicit_preparation_directories(
         registry_dir, args.arguments, limit=policy.prepare_batch_size
     )
@@ -1476,7 +1498,7 @@ def _preflight_preparation(
                     f"vacancy is older than prepare_max_age_days {policy.prepare_max_age_days}"
                 )
             if not _analysis_is_current(
-                directory, registry_dir, profile_paths, policy, project_root,
+                directory, registry_dir, preparation_profiles, policy, project_root,
                 matching_context=matching_context,
             ):
                 raise ValueError("match analysis is missing, stale, or from an unapproved analysis model")
@@ -1504,9 +1526,10 @@ def _preflight_preparation(
         "backend": backend,
         "workflow": args.workflow,
         "model": model_label,
+        "preparation_context_version": context.version,
         "vacancies": rows,
         "shared_candidate_context": _shared_candidate_context(
-            project_root, registry_dir, profile_paths
+            project_root, registry_dir, preparation_profiles, context=context
         ),
     }
     if verify_environment:
@@ -1526,26 +1549,37 @@ def _preflight_preparation(
 
 
 def _shared_candidate_context(
-    project_root: Path, registry_dir: Path, profile_paths: Sequence[Path]
+    project_root: Path, registry_dir: Path, profile_paths: Sequence[Path],
+    *, context: PreparationContext | None = None,
 ) -> dict[str, Any]:
     """Materialize verified evidence once for a selected batch, without claims or ranking."""
+    context = context or load_preparation_context(project_root)
+    for path in profile_paths:
+        context.source_path(context.relative(path))
     profiles = [{"path": str(path), "sha256": hashlib.sha256(path.read_bytes()).hexdigest()}
                 for path in profile_paths]
-    bank_path = registry_dir / "evidence" / "achievements.yaml"
-    result: dict[str, Any] = {"profiles": profiles, "verified_evidence": None}
-    if not bank_path.is_file():
-        return result
+    bank_path = context.evidence_bank
+    result: dict[str, Any] = {
+        "preparation_context_version": context.version,
+        "candidate_directory": context.relative(context.candidate_directory),
+        "evidence_bank": context.relative(bank_path),
+        "voice_sources": list(context.voice_sources),
+        "profiles": profiles,
+        "verified_evidence": None,
+    }
     from .evidence import validate_evidence_bank
 
     bank_bytes = bank_path.read_bytes()
     bank = _read_yaml_file(bank_path, "candidate evidence bank")
-    validate_evidence_bank(bank, project_root)
+    validate_evidence_bank(bank, project_root, context=context)
     verified = [entry for entry in bank.get("entries", [])
                 if isinstance(entry, dict) and entry.get("status") == "verified"]
     digest = hashlib.sha256(bank_bytes).hexdigest()
-    packet = project_root / ".codex-work" / "preparation-shared" / f"verified-evidence-{digest[:20]}.json"
+    packet_identity = hashlib.sha256((context.version + "\n" + digest).encode()).hexdigest()
+    packet = context.contained_path(f".codex-work/preparation-shared/verified-evidence-{packet_identity[:20]}.json")
     packet.parent.mkdir(parents=True, exist_ok=True)
-    payload = {"schema_version": 1, "source_bank": str(bank_path),
+    payload = {"schema_version": 1, "preparation_context_version": context.version,
+               "source_bank": str(bank_path),
                "source_sha256": digest, "entries": verified}
     encoded = json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8") + b"\n"
     if not packet.is_file() or packet.read_bytes() != encoded:
@@ -1579,7 +1613,12 @@ def _run_preparation_locked(
     try:
         report = _preflight_preparation(args, config, project_root, registry_dir, matching_context=matching_context)
         policy, model_label = _selected_workflow(args.workflow, project_root, {"prepare"}, args.model_profile)
-        profile_paths = _profile_paths(args.profile, config, project_root, registry_dir)
+        context = load_preparation_context(project_root)
+        if context.version != report["preparation_context_version"]:
+            raise ValueError("preparation configuration changed after preflight")
+        profile_paths = _preparation_profile_paths(
+            args.profile, config, project_root, registry_dir, context
+        )
         directories = [registry_dir / "jobs" / str(row["directory"]) for row in report["vacancies"]]
     except Exception as exc:
         print(f"Preparation configuration error: {exc}", file=sys.stderr)
@@ -1599,6 +1638,7 @@ def _run_preparation_locked(
                 draft_directory,
                 document=args.document,
                 vacancy_text=op.read_text(directory / "job.md"),
+                context=context,
             )
             if not lint["ok"]:
                 raise ValueError(
@@ -1617,6 +1657,7 @@ def _run_preparation_locked(
                 ),
                 HostMarkdownDocxConverter(project_root, timing_vacancy=directory.name),
                 document=args.document,
+                context=context,
             )
             from .preparation_timing import timed_call
             result = timed_call(project_root, "publication", directory.name,
@@ -1758,6 +1799,10 @@ def _run_pending_locked(
             )
             return 0
         if stage == "prepare":
+            context = load_preparation_context(project_root)
+            preparation_profiles = _preparation_profile_paths(
+                args.profile, config, project_root, registry_dir, context
+            )
             if getattr(args, "allow_low_score_cv_refresh", False) and args.document != "cv":
                 raise ValueError("--allow-low-score-cv-refresh requires --document cv")
             if getattr(args, "bypass_hard_rejection_cv_refresh", False) and args.document != "cv":
@@ -1809,7 +1854,7 @@ def _run_pending_locked(
                 if not _analysis_is_current(
                     directory,
                     registry_dir,
-                    profile_paths,
+                    preparation_profiles,
                     policy,
                     project_root,
                     matching_context=matching_context,
@@ -1824,7 +1869,7 @@ def _run_pending_locked(
                     continue
                 checker = ApplicationGenerator(
                     registry_dir,
-                    profile_paths,
+                    preparation_profiles,
                     project_root / "prompts" / "vacancy-application.md",
                     CodexApplicationDraftClient(
                         project_root / ".codex-work" / "unused-application",
@@ -1833,6 +1878,7 @@ def _run_pending_locked(
                     ),
                     HostMarkdownDocxConverter(project_root),
                     document=args.document,
+                    context=context,
                 )
             if not checker.is_current(directory):
                 if stage == "analyze":

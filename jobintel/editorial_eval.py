@@ -9,12 +9,17 @@ from pathlib import Path
 import yaml
 
 from .application_review import review_digest
+from .preparation_context import load_preparation_context
 
 
 POLICY_FILES = ('config/cv-editorial-knowledge.yaml', 'prompts/vacancy-application.md',
                 'config/matching-policy.yaml', 'prompts/vacancy-match.md', 'docs/application-quality.md',
                 'docs/application-review-contract.md', '.agents/skills/job-intelligence-workflow/references/prepare.md',
-                'prompts/job-intelligence-workflow.md')
+                'prompts/job-intelligence-workflow.md', 'prompts/cv-editorial-rebuild-six.md',
+                '.agents/skills/job-intelligence-workflow/SKILL.md', 'AGENTS.md',
+                'prompts/scheduled-prepare.md',
+                '.agents/skills/manual-vacancy-application/SKILL.md',
+                'skills/manual-vacancy-application/SKILL.md')
 CORPUS_PATH = 'tests/fixtures/editorial-corpus.yaml'
 
 
@@ -26,6 +31,11 @@ def _load(root: Path):
     if len(ids) != len(set(ids)):
         raise ValueError('editorial corpus has duplicate cases')
     policies = {path: (root / path).read_text(encoding='utf-8') for path in POLICY_FILES}
+    context = load_preparation_context(root)
+    policies['config/application-profile.yaml#preparation'] = json.dumps({
+        'preparation_context_version': context.version,
+        'career_scope': context.preparation['career_scope'],
+    }, sort_keys=True, ensure_ascii=False)
     return corpus, policies
 
 

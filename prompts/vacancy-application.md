@@ -23,37 +23,24 @@ makes the vacancy eligible for a new package, another document, or automatic wor
 
 ## Isolation and source-of-truth rules
 
+Use the selected preflight's preparation context. Copy its exact
+`preparation_context_version` into new schema-3 `quality.yaml`; changed settings
+require a new preflight and review of the affected drafts. Never relabel an old
+draft with a current identity. Resolve source paths, CV filename owner and career
+scope from `config/application-profile.yaml`, and voice sources from
+`config/application-review.yaml`.
+
 - This package contains exactly one vacancy. Never use knowledge, conclusions,
   keywords, research, or CV changes from another package in the task batch.
 - Treat every supplied candidate document as immutable source-of-truth evidence.
-- For Simple.life / Simple App, read
-  `registry/candidate/user-supplied-simple-life-2025-2026-09-26.md` and
-  `registry/candidate/user-confirmed-simple-life-2026-09-26.md` alongside the
-  earlier career and impact clarifications. Use the two period-specific blocks
-  as candidate-supplied work inventories when selecting vacancy-relevant
-  achievements. Apply their role-specific rendering guidance to the whole
-  Simple.life entry: aim for 5–7 distinct bullets when evidence supports them,
-  never exceed 7, and keep each at most 40 words.
-  Combine overlapping LLM-agent and DeepL work into one bullet each when both
-  periods appear; do not count the same work or outcome twice.
-- Keep candidate-reported delivery facts separate from the blocks' estimates.
-  The cited Jira/Slack records and estimated outcomes were not independently
-  inspected. Do not invent figures, turn a projected effect into an achieved
-  result, or present an estimate as measured. Apply the confirmation and
-  grounding rules below before using a numeric outcome in an employer-facing
-  CV, including the example bullets in either block.
-- Both Simple.life blocks use a Senior Backend Engineer title, while the
-  earlier direct career clarification gives Software Developer and an end date
-  of July 2026. The later block also says `Present`. Resolve these conflicts
-  through a direct candidate clarification before using either newer title or
-  a precise end date in an employer-facing CV; retain the earlier confirmed
-  title and flag the date conflict in the analysis.
-- The candidate's 2026-09-26 follow-up permits the August–September work as
-  past experience and permits PHP only in Simple.life's Technologies line.
-  It does not confirm a specific Simple.life PHP result or an exact end month.
-  Use the earlier confirmed Software Developer title and a year-only 2026 end
-  until the title and end-month conflicts are resolved. Attribute the
-  concurrent PHP delivery results to CRURATED.
+- Resolve candidate sources, evidence bank and reviewed career clarifications from
+  the preparation section of `config/application-profile.yaml`. Read the configured
+  source records; apply their supported title, technology-attribution, rendering and
+  uncertainty boundaries, including constraints in clarification evidence paragraphs.
+  Keep period-specific inventories distinct and never count one result twice.
+- Distinguish candidate-reported delivery from estimates and uninspected external
+  records. Preserve confirmed titles and uncertain date precision when newer imported
+  records conflict; never choose the more favorable interpretation or invent a metric.
 - Review relevant experience inventories to find reusable work history, but keep
   delivered systems, design proposals, general duties, and unconfirmed metrics
   distinct. An inventory is a discovery record; use a verified evidence-bank entry
@@ -65,9 +52,7 @@ makes the vacancy eligible for a new package, another document, or automatic wor
   credential, or the exact phrase "Zend Certified PHP Developer" anywhere in the
   generated CV, cover letter, application analysis, or interview preparation, even
   when source candidate records include it.
-- Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
-  permitted employer; exclude employers whose work started before PDFfiller and roles ending nine or
-  more years before the reference month. Never mention excluded employers in any CV section,
+- Use the preparation career scope in `config/application-profile.yaml` as the CV boundary. Exclude employers outside its configured start and recency limits. Never mention excluded employers in any CV section,
   including Summary or Skills. Preserve every employer within this approved window in one Experience
   section, with consistent H3 employer/role/date headings and source-backed dates. Older permitted
   roles may have a dated heading with an empty body. Keep reverse chronology, overlaps and supported
@@ -316,8 +301,8 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     research, and final claim ledger. Default to the posting language and selected format: standard uses 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
     ATS-friendly formatting. Use the role and company naturally when they improve targeting.
-    Before composing, read the user's current `social-promotion/social-voice.md`
-    and `social-promotion/employer-letter-flow.md`. For a short application email,
+    Before composing, read every current voice source configured in
+    `config/application-review.yaml`, preserving its configured order and source hashes. For a short application email,
      record `cover_letter.channel: email` in quality schema 3: 100–180 words and
     three to four body paragraphs, aiming editorially for 100–130 body words.
     Keep the two supported abilities and evidence stories internal, with at most

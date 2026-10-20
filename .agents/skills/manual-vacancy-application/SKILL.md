@@ -98,7 +98,8 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
 8. The main agent performs one cross-file consistency and claim-grounding pass after
    Wave 2. Before validation, write the required versioned `quality.yaml` receipt with
    `workflow: two-wave`, the invoked `$write-cover-letter` skill version and completed
-   workbench, exactly two evidence stories pointing to `registry/candidate/` sources,
+   workbench, the exact preflight `preparation_context_version`, exactly two evidence
+   stories pointing to sources in the configured preparation candidate directory,
    one sourced company-motivation fact, and both final-review confirmations. Ensure the
    three Wave 1 handoffs meet the minimum depth and required labeled sections from
    `$job-intelligence-workflow`. When a CV is selected, run `python run.py documents

@@ -126,7 +126,8 @@ drafting application artifacts. Preserve both model labels as content provenance
    requirements/risks handoff, and verified research without browsing again; analysis
    receives the vacancy, final CV, and all Wave 1 handoffs.
 4. Before validation, write `.codex-work/application/<directory>/quality.yaml`, schema
-   version 3, with `workflow: two-wave`; cover-letter skill name/version;
+   version 3, with `workflow: two-wave`, the exact preflight
+   `preparation_context_version`; cover-letter skill name/version;
    `workbench_complete: true`; two internal evidence strands with `candidate_source`; a
    company-motivation fact and `source_url`; and final `claim_grounding: true` and
    `cross_file_consistency: true`.
@@ -176,7 +177,13 @@ before model-dependent publication and report the configuration mismatch.
 
 ## Evidence and isolation
 
-- Treat `registry/candidate/*.md` as immutable evidence; never invent claims.
+- Treat the configured preparation candidate directory as immutable evidence;
+  the current default is `registry/candidate/*.md`. Never invent claims.
+- Resolve preparation settings from `config/application-profile.yaml` and voice
+  paths from `config/application-review.yaml`. New schema-3 `quality.yaml` drafts
+  must carry the exact `preparation_context_version` returned by the batch preflight.
+  A configuration change requires a new preflight and affected-draft review;
+  never make an old draft appear current by replacing its context identity.
 - Read only the selected vacancy, configured candidate sources, and the relevant
   specialized prompt (`vacancy-match.md` or `vacancy-application.md`).
 - Keep all model-produced drafts in `.codex-work/` until deterministic publication.

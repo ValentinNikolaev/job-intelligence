@@ -7,9 +7,11 @@ contract. A user-provided vacancy URL must enter through the interactive
 `manual-application` mode and `$manual-vacancy-application`; this Scheduled Task must
 not invent a selection or silently prepare a queue.
 
-When that manual URL flow has no current match, it uses direct `python run.py analyze
-<vacancy-directory> --input <draft.yaml> --workflow analyze`; it must not borrow this
-or the scheduled analysis queue to process unrelated vacancies.
+When that manual URL flow has no current match, export its one-item sealed pack with
+`python run.py analyze <vacancy-directory> --pack <pack.yaml> --workflow analyze`,
+evaluate that item in Codex and publish the complete envelope plus keyed result with
+`python run.py analyze <vacancy-directory> --input <draft.yaml> --workflow analyze`.
+It must not borrow this or the scheduled analysis queue to process unrelated vacancies.
 
 Do not select vacancies automatically, do not run `python run.py api queues prepare`,
 and do not publish application packages from a schedule. Application preparation now
@@ -24,7 +26,10 @@ selection is required. The manual chat workflow is:
    The full four-document package is the default; the user may instead explicitly name
    exactly one document.
 3. A Codex task reads `AGENTS.md`, invokes `$job-intelligence-workflow` in preparation
-   mode, writes one isolated draft set per vacancy under
+   mode and runs the explicit selection's `prepare-preflight`. Resolve preparation
+   paths and career rules from `config/application-profile.yaml`, voice sources from
+   `config/application-review.yaml`, and copy preflight's exact
+   `preparation_context_version` into each new schema-3 quality draft. Write isolated drafts under
    `.codex-work/application/<vacancy-directory>/`, validates each completed draft set
    once with `python run.py validate-application <vacancy-directory> --input
    .codex-work/application/<vacancy-directory> [--document <document>]`, and publishes the verified batch with

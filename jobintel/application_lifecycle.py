@@ -14,6 +14,7 @@ from statistics import median
 import yaml
 
 from . import storage_bridge
+from .preparation_context import load_preparation_context
 
 EVENT_KINDS = frozenset({"auto_ack", "human_reply", "interview_invitation", "interview",
                          "offer", "rejection", "withdrawal", "followup_sent"})
@@ -89,7 +90,7 @@ def profile_questions(root: Path) -> list[dict]:
         elif value is None or isinstance(value, str) and value.strip() in _UNRESOLVED:
             questions.append({"field": prefix, "value": value, "status": "needs_confirmation"})
 
-    walk(_load_profile(root))
+    walk({key: value for key, value in _load_profile(root).items() if key != "preparation"})
     return questions
 
 
@@ -437,6 +438,9 @@ class ApplicationLifecycle:
             raise ValueError("draft must use schema_version 1 and the exact canonical vacancy ID")
         if draft.get("grounding_review") is not True:
             raise ValueError("Codex final grounding review is required")
+        context = load_preparation_context(self.root)
+        if draft.get("preparation_context_version") != context.version:
+            raise ValueError("draft preparation_context_version is missing or stale")
         items = draft.get("items")
         if not isinstance(items, list) or not 1 <= len(items) <= 100:
             raise ValueError("draft must contain 1-100 structured items")
@@ -459,6 +463,8 @@ class ApplicationLifecycle:
             if field:
                 if not isinstance(field, str):
                     raise ValueError("profile_field must be a dot-separated string")
+                if field.split(".", 1)[0] == "preparation":
+                    raise ValueError("preparation settings are not confirmed candidate facts")
                 value = self._profile()
                 for part in field.split("."):
                     value = value.get(part) if isinstance(value, dict) else None
@@ -478,10 +484,12 @@ class ApplicationLifecycle:
                     relative = path.relative_to(self.root).as_posix()
                 except ValueError:
                     raise ValueError("evidence source must stay inside the project") from None
-                candidate = relative.startswith("registry/candidate/") and path.suffix.lower() == ".md"
                 statement = relative.startswith(".codex-work/") and source.get("kind") == "user_statement"
-                if not (candidate or statement):
-                    raise ValueError("use immutable candidate evidence or an explicitly identified user statement")
+                if not statement:
+                    try:
+                        path = context.source_path(str(source.get("path", "")))
+                    except ValueError as exc:
+                        raise ValueError("use configured immutable candidate evidence or an explicitly identified user statement") from exc
                 data = path.read_bytes()
                 if source.get("sha256") != _sha(data):
                     raise ValueError("evidence source hash is stale or incorrect")
@@ -504,5 +512,6 @@ class ApplicationLifecycle:
         with self.store.lease("application-lifecycle:publish-draft"):
             self._bundle(destination, files)
         return {"kind": kind, "vacancy_id": str(vacancy["_id"]), "sha256": digest,
+                "preparation_context_version": context.version,
                 "path": destination.relative_to(self.root).as_posix(),
                 "needs_confirmation": sum(i["status"] == "needs_confirmation" for i in items), "sent": False}

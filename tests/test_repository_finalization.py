@@ -113,6 +113,20 @@ class MatchPolicyFinalizationGateTests(unittest.TestCase):
     def test_matching_inputs_also_trigger_editorial_gate(self) -> None:
         self.assertTrue({"config/matching-policy.yaml", "prompts/vacancy-match.md"}.issubset(fin.EDITORIAL_POLICY_PATHS))
 
+    def test_preparation_changes_require_editorial_evaluation_and_guard_remote_context_dependencies(self) -> None:
+        for path in ('config/application-profile.yaml', 'config/application-review.yaml',
+                     'AGENTS.md', 'prompts/cv-editorial-rebuild-six.md'):
+            with self.subTest(path=path), tempfile.TemporaryDirectory() as temporary:
+                with self.assertRaisesRegex(fin.FinalizationError, 'independent editorial decisions'):
+                    fin.require_editorial_evaluation(Path(temporary), [path])
+                dependencies = fin.evaluation_dependencies([path])
+                self.assertIn('jobintel/preparation_context.py', dependencies)
+                self.assertIn('jobintel/career_coverage.py', dependencies)
+                with self.assertRaisesRegex(fin.FinalizationError, 'remote changed evaluation dependencies'):
+                    fin.require_unchanged_evaluation_dependencies(
+                        {'jobintel/preparation_context.py': '100644:old'},
+                        {'jobintel/preparation_context.py': '100644:new'}, [path])
+
     def test_publication_verification_and_commit_reviews_recheck_decisions(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

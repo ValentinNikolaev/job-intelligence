@@ -11,6 +11,8 @@ from jobintel.applications import ApplicationError, _validate_v2_grounding
 from jobintel.evidence import bootstrap_evidence_bank, validate_claims_ledger, EvidenceError
 from jobintel.application_review import validate_role_inventory, validate_letter_review, review_digest, letter_basis
 from tests.application_review_fixtures import add_letter_review
+from tests.preparation_fixtures import write_preparation_config
+from jobintel.preparation_context import load_preparation_context
 
 
 def digest(text):
@@ -22,6 +24,7 @@ class ApplicationReviewTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        write_preparation_config(self.root, evidence_bank="registry/evidence/bank.yaml")
         self.draft = self.root / '.codex-work/draft'
         self.draft.mkdir(parents=True)
         self.source = self.root / 'registry/candidate/linkedin-profile.md'
@@ -38,7 +41,7 @@ class ApplicationReviewTests(unittest.TestCase):
         cv = cv.strip() + '\n'
         self.package = dict(cv_markdown=cv)
         self.ledger = dict(schema_version=1, claims=[dict(document='cv', text=b, evidence_ids=[f'proof-{i}']) for i, b in enumerate(self.bullets)])
-        self.quality = dict(schema_version=3, evidence_bank='registry/evidence/bank.yaml', claims_ledger='claims.yaml',
+        self.quality = dict(schema_version=3, preparation_context_version=load_preparation_context(self.root).version, evidence_bank='registry/evidence/bank.yaml', claims_ledger='claims.yaml',
             final_review=dict(reviewer='final-editor', quality_gate=True, document_sha256={'cv': digest(cv)}),
             cv_audit=dict(target_role='Senior Backend Engineer', top_third_evidence_ids=['proof-0', 'proof-1'],
                 editorial_review=dict(knowledge_base_version=1, verdict='approve', reviewer='independent-editor', mode='independent'),
@@ -80,8 +83,10 @@ class ApplicationReviewTests(unittest.TestCase):
         fixture = ApplicationTests()
         fixture.setUp()
         self.addCleanup(fixture.temp.cleanup)
+        self.addCleanup(fixture.doCleanups)
         draft, package, quality = fixture.v2_letter_draft()
         quality['schema_version'] = 3
+        quality['preparation_context_version'] = load_preparation_context(fixture.project).version
         with self.assertRaisesRegex(ApplicationError, 'letter.*review'):
             _validate_v2_grounding(quality, package, draft, fixture.project, 'Build Go services.')
 
@@ -104,6 +109,17 @@ class ApplicationReviewTests(unittest.TestCase):
         receipt = self.validate()
         self.assertEqual(audit['role_coverage'], receipt['application_review']['role_coverage'])
         self.assertEqual(self.bullets[0], receipt['claims'][0]['text'])
+
+    def test_cv_editorial_policy_comes_from_the_bound_project(self):
+        self.valid_cv()
+        self.validate()
+        path = self.root / 'config/cv-editorial-knowledge.yaml'
+        policy = yaml.safe_load(path.read_text(encoding='utf-8'))
+        policy['rejected_anti_patterns'].append(dict(id='alternate-project-rule', regex=r'(?i)\bself-service\b'))
+        path.write_text(yaml.safe_dump(policy), encoding='utf-8')
+        self.quality['preparation_context_version'] = load_preparation_context(self.root).version
+        with self.assertRaisesRegex(ApplicationError, 'alternate-project-rule'):
+            self.validate()
 
     def test_inventory_detects_unreviewed_omission_wrong_dates_and_headings(self):
         for field, value, message in [('reviewer', 'unreviewed', 'reviewed'), ('source_period', dict(start=[2023, 1], end=None), 'stale source dates'),
@@ -130,6 +146,7 @@ class ApplicationReviewTests(unittest.TestCase):
         fixture = ApplicationTests()
         fixture.setUp()
         self.addCleanup(fixture.temp.cleanup)
+        self.addCleanup(fixture.doCleanups)
         draft, package, quality = fixture.v2_letter_draft()
         add_letter_review(fixture.project, draft, quality, package)
         ledger = yaml.safe_load((draft / 'claims.yaml').read_text(encoding='utf-8'))
@@ -215,6 +232,7 @@ class ApplicationReviewTests(unittest.TestCase):
         fixture = ApplicationTests()
         fixture.setUp()
         self.addCleanup(fixture.temp.cleanup)
+        self.addCleanup(fixture.doCleanups)
         draft, package, quality = fixture.v2_letter_draft()
         (draft / 'cover-letter.md').write_text(package['cover_letter_markdown'], encoding='utf-8')
         old = fixture.directory / 'application/cover-letter.md'

@@ -22,6 +22,11 @@ REQUIRED_PROJECT_FILES = frozenset({
     "scripts/finalize_repository.py",
 })
 EDITORIAL_POLICY_PATHS = frozenset({
+    'config/application-profile.yaml', 'config/application-review.yaml',
+    'AGENTS.md', 'prompts/cv-editorial-rebuild-six.md',
+    '.agents/skills/job-intelligence-workflow/SKILL.md',
+    'prompts/scheduled-prepare.md', '.agents/skills/manual-vacancy-application/SKILL.md',
+    'skills/manual-vacancy-application/SKILL.md',
     'config/cv-editorial-knowledge.yaml', 'prompts/vacancy-application.md',
     'config/matching-policy.yaml', 'prompts/vacancy-match.md',
     'docs/application-quality.md', 'docs/application-review-contract.md',
@@ -37,6 +42,7 @@ MATCH_POLICY_PATHS = frozenset({
 })
 EDITORIAL_EVALUATION_DEPENDENCIES = EDITORIAL_POLICY_PATHS | {
     'jobintel/editorial_eval.py', 'jobintel/application_review.py',
+    'jobintel/preparation_context.py', 'jobintel/career_coverage.py',
 }
 
 

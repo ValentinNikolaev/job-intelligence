@@ -12,6 +12,14 @@ context, final-letter review and editorial evaluation commands. The v2 examples
 below describe the retained grounding/export foundation, not a complete new draft.
 Do not regenerate existing CVs or receipts merely to introduce this contract.
 
+Preparation paths, filename owner and personal career scope now come from
+[`config/application-profile.yaml`](../config/application-profile.yaml); voice paths
+remain in `config/application-review.yaml`. See
+[preparation configuration](preparation-configuration.md). New schema-3 drafts must
+copy the batch preflight's exact `preparation_context_version` into `quality.yaml`.
+Manifest currentness retains that binding per document; old records without it stay
+readable and are never upgraded by relabeling.
+
 An explicit named-vacancy refresh of an existing CV can use
 `--document cv --allow-low-score-cv-refresh` when its current approved-profile match is
 `possible_match` below the configured preparation threshold. The flag does not apply to
@@ -27,7 +35,9 @@ recorded rejection and the bypass in the user-facing result.
 
 ## Candidate evidence bank
 
-`registry/candidate/*.md` remains immutable. `registry/evidence/achievements.yaml` is a
+The preparation candidate directory configured in `config/application-profile.yaml`
+remains immutable (currently `registry/candidate/*.md`). Its configured evidence bank
+(currently `registry/evidence/achievements.yaml`) is a
 source index, not another source of truth. Its entries include source-reviewed
 excerpts, candidate-confirmed clarifications, and unresolved imported claims;
 use the evidence validation command for current counts. Ambiguous imported dates
@@ -219,15 +229,12 @@ words and three to four substantive body paragraphs. Aim editorially for
 heading, greeting and signature. A natural application opening is permitted.
 Omitted channel retains existing attachment limits; unknown channels fail closed.
 Keep two complementary, source-linked abilities in the skill workbench and
-receipt without requiring two visible project narratives. The user's current
-`social-promotion/employer-letter-flow.md` governs voice, relevance and the
-read-aloud delivery check. Grounding, handoffs and export checks remain required.
+receipt without requiring two visible project narratives. The current voice sources configured in `config/application-review.yaml` govern
+voice, relevance and delivery checks; bind every configured source and its bytes. Grounding, handoffs and export checks remain required.
 The analysis/interview minima and ceilings remain unchanged. Preserve two meaningful
 letter evidence themes in the workbench, credible claims and required sections in either format. Compact is
 selected for the application channel or user preference, never an excuse for generic
-or skeletal content. Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller
-is the earliest permitted employer; exclude employers whose work started before PDFfiller and roles
-ending nine or more years before the reference month. Never mention excluded employers in any CV
+or skeletal content. Use the preparation career scope in `config/application-profile.yaml` as the CV boundary. Exclude employers outside its configured start and recency limits. Never mention excluded employers in any CV
 section, including Summary or Skills. Preserve every employer within this approved window in one
 Experience section, with consistent H3 employer/role/date headings and source-backed dates. Older
 permitted roles may have a dated heading with an empty body. Keep reverse chronology, overlaps and

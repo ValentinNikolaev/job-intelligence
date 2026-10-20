@@ -25,7 +25,9 @@ from jobintel.applications import (
     validate_application_draft,
 )
 from jobintel.cli import _preflight_preparation, main
+from jobintel.matching import MatchAnalyzer
 from tests.test_applications import FakeConverter, application_payload, write_quality_contract
+from tests.preparation_fixtures import write_preparation_config
 
 
 class _Admin:
@@ -100,6 +102,9 @@ class MongoApplicationSnapshotTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        cli_file = patch("jobintel.cli.__file__", str(self.root / "jobintel/cli.py"))
+        cli_file.start()
+        self.addCleanup(cli_file.stop)
         self.registry = self.root / "registry"
         (self.registry / "candidate").mkdir(parents=True)
         (self.registry / "candidate" / "match-profile.md").write_text("Verified candidate evidence.", encoding="utf-8")
@@ -118,8 +123,19 @@ class MongoApplicationSnapshotTests(unittest.TestCase):
             encoding="utf-8",
         )
         (self.root / "sources").mkdir()
+        (self.registry / "candidate/linkedin-profile.md").write_text(
+            "# Candidate\n## Experience\n### Example\nBackend Engineer\nJanuary 2020 - Present\n",
+            encoding="utf-8",
+        )
+        context = write_preparation_config(self.root, profile_sources=["registry/candidate/match-profile.md"])
+        context.evidence_bank.parent.mkdir(parents=True)
+        context.evidence_bank.write_text("schema_version: 1\nentries: []\n", encoding="utf-8")
         self.directory = self.registry / "jobs" / "mongo-only"
         self.store = MongoFixtureStore(self.directory.name)
+        self.profile_version = MatchAnalyzer(
+            self.registry, [self.registry / "candidate/match-profile.md"], SimpleNamespace(model="fixture:model"),
+        )._load_profile()[1]
+        self.store.document["match"]["profile_version"] = self.profile_version
 
     def _draft(self) -> Path:
         draft = self.root / ".codex-work" / "application" / self.directory.name
@@ -213,6 +229,7 @@ class MongoApplicationSnapshotTests(unittest.TestCase):
             document["_id"] = f"fixture-{number}"
             document["directory"] = name
             document["meta"]["id"] = f"fixture-{number}"
+            document["match"]["profile_version"] = self.profile_version
             self.store.documents.append(document)
         self.store.document = self.store.documents[0]
         args = SimpleNamespace(arguments=[f"fixture-{number}" for number in range(1, 6)], workflow="prepare", model_profile=None,

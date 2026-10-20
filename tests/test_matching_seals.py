@@ -26,6 +26,7 @@ from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
 from jobintel.workflow_api import queue_items
 from jobintel.workflows import load_workflow_policy
+from tests.preparation_fixtures import write_preparation_config
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,8 +53,12 @@ class MatchingSealTests(unittest.TestCase):
             (self.root / "config" / name).write_bytes((ROOT / "config" / name).read_bytes())
         (self.root / "prompts").mkdir()
         (self.root / "prompts/vacancy-match.md").write_bytes((ROOT / "prompts/vacancy-match.md").read_bytes())
-        self.profile = self.root / "synthetic-profile.md"
+        self.profile = self.root / "registry/candidate/synthetic-profile.md"
+        self.profile.parent.mkdir(parents=True)
         self.profile.write_text("Synthetic candidate has documented PHP and Go backend experience.", encoding="utf-8")
+        context = write_preparation_config(self.root, profile_sources=["registry/candidate/synthetic-profile.md"])
+        context.evidence_bank.parent.mkdir(parents=True)
+        context.evidence_bank.write_text("schema_version: 1\nentries: []\n", encoding="utf-8")
         self.registry_root = self.root / "registry"
         self.registry = Registry(self.registry_root, id_factory=iter(("one", "two")).__next__)
         self.directories = []
@@ -279,6 +284,28 @@ class MatchingSealTests(unittest.TestCase):
             self.assertIn(directory.name, [row.vacancy.directory.name for row in rows])
         self.assertEqual(before, (directory / "match.yaml").read_bytes())
         self.assertEqual(profile_version, self.analyzer._load_profile()[1])
+
+    def test_preflight_checks_actual_preparation_profiles_and_honors_explicit_override(self):
+        directory = self.directories[0]
+        original = self.profile.with_name("match-profile.md")
+        original.write_bytes(self.profile.read_bytes())
+        analyzer = MatchAnalyzer(self.registry_root, [original], self.client, context=self.context)
+        analyzer.analyze_directory(directory)
+        original_receipt = (directory / "match.yaml").read_bytes()
+        preparation = write_preparation_config(self.root, profile_sources=["registry/candidate/match-profile.md"])
+        args = SimpleNamespace(arguments=[directory.name], workflow="prepare", model_profile=None, document="cv",
+                               profile=None, allow_low_score_cv_refresh=False, bypass_hard_rejection_cv_refresh=False)
+        report = cli._preflight_preparation(args, {}, self.root, self.registry_root)
+        self.assertEqual(preparation.version, report["preparation_context_version"])
+        replacement = self.profile.with_name("replacement.md")
+        replacement.write_text("Different synthetic candidate experience.", encoding="utf-8")
+        write_preparation_config(self.root, profile_sources=["registry/candidate/replacement.md"])
+        with self.assertRaisesRegex(ValueError, "match analysis is missing, stale"):
+            cli._preflight_preparation(args, {}, self.root, self.registry_root)
+        self.assertEqual(original_receipt, (directory / "match.yaml").read_bytes())
+        args.profile = [original]
+        report = cli._preflight_preparation(args, {}, self.root, self.registry_root)
+        self.assertEqual(str(original), report["shared_candidate_context"]["profiles"][0]["path"])
 
     def test_production_legacy_pin_matches_actual_reviewed_default_context(self):
         self.assertEqual(current_matching_context(ROOT).prompt_version, APPROVED_EXTRACTION_VERSION)

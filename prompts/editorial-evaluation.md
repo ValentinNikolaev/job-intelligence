@@ -5,6 +5,10 @@ their review contracts. It creates no application and requires no vacancy select
 Never call a model endpoint from project code. Never read candidate records for these
 synthetic cases and never update an existing CV, evidence bank or package.
 
+The pack also binds the effective preparation context and includes its career scope.
+It does not export contact answers or read candidate source records. Moving a personal
+boundary out of generic editorial YAML still requires a fresh bound assessment.
+
 1. Run `python run.py editorial export --output .codex-work/editorial-pack.json`.
 2. Give that pack to one independent Codex reviewer. The reviewer must not read
    `tests/fixtures/editorial-corpus.yaml` or its answer keys. Read only the exported

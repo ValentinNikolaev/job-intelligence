@@ -41,7 +41,7 @@ explicit single-document request, use the full-package flow below.
    `prompts/vacancy-application.md`. Do not read non-selected vacancies, compare selected
    vacancies, or carry company research, requirements, keywords, or wording from one
    package into another.
-   Consult relevant `registry/candidate/*-experience-inventory-*.md` files during
+   Consult relevant experience inventories in the configured candidate directory during
    evidence review to discover work that may fit the vacancy. Keep delivered work,
    proposals, duties, and unconfirmed figures separate. An inventory note is not
    a verified achievement; anchor every CV claim in a reviewed evidence-bank entry
@@ -77,9 +77,7 @@ explicit single-document request, use the full-package flow below.
    CV; keep those only in handoffs, `claims.yaml`, and `quality.yaml`. Never duplicate
    or lightly paraphrase an Experience bullet to meet a count or word minimum.
    Apply the mandatory **recent-experience editorial gate** before the CV is final:
-   - Use `config/cv-editorial-knowledge.yaml` as the CV career boundary: PDFfiller is the earliest
-     permitted employer; exclude employers whose work started before PDFfiller and roles ending nine
-     or more years before the reference month. Never mention excluded employers in any CV section,
+   - Use the preparation career scope in `config/application-profile.yaml` as the CV boundary. Exclude employers outside its configured start and recency limits. Never mention excluded employers in any CV section,
      including Summary or Skills. Preserve every employer within this approved window in one
      Experience section, with consistent H3 employer/role/date headings and source-backed dates.
      Older permitted roles may have a dated heading with an empty body. Keep reverse chronology,
@@ -155,9 +153,9 @@ explicit single-document request, use the full-package flow below.
      vacancy, and check a rendered PDF against a two-page limit when PDF export
      is available. Keep the optional projects section only if it adds distinct,
      source-backed depth within that limit.
-   - list PHP under Simple.life technologies only when a direct candidate source
-     supports its use there. Do not move a PHP delivery result from concurrent
-     CRURATED into Simple.life, or infer a Simple.life PHP result from a skills list.
+   - keep technologies and delivered results attributed to the employer and
+     contribution supported by configured candidate sources and reviewed career
+     clarifications. A skills list alone never establishes a delivered result.
    Before finalizing, surface any additional relevant numbers found in candidate
    sources that have not been candidate-confirmed. Ask the candidate to select
    which figures they can substantiate and how they were measured. If the
@@ -176,8 +174,8 @@ explicit single-document request, use the full-package flow below.
    - cover letter: receive this vacancy, final CV, verified `parts/research.md`, and only
      the candidate evidence required to ground the selected stories; invoke the
      highest installed version of `$write-cover-letter` in Draft mode and write only
-     `cover-letter.md`. Read the user's current `social-promotion/social-voice.md`
-     and `social-promotion/employer-letter-flow.md` before composing. Select the
+     `cover-letter.md`. Read every current voice source configured in
+     `config/application-review.yaml` before composing, in configured order. Select the
      actual channel: `cover_letter.channel: email` uses 100–180 words and three
      to four body paragraphs, with an editorial target of 100–130 body words.
      Keep two supported abilities in the internal workbench; use at most one
@@ -216,7 +214,9 @@ explicit single-document request, use the full-package flow below.
    or final artifacts from different vacancies. Complete all four final drafts for the
    default scope, or only the explicitly selected draft, under its own
    `.codex-work/application/<vacancy-directory>/`.
-12. Before validation, write `quality.yaml`, schema version 3, in the vacancy draft:
+12. Before validation, write `quality.yaml`, schema version 3, in the vacancy draft.
+    Copy the exact `preparation_context_version` from this batch's preflight; a
+    missing or changed value fails before publication. Never relabel old drafts.
     `workflow: two-wave`; cover-letter skill name, version, and completed workbench;
     two internal evidence strands with candidate sources; company-motivation fact and source URL;
     and final claim grounding plus cross-file consistency results.

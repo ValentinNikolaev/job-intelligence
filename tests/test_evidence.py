@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from jobintel.evidence import EvidenceError, bootstrap_evidence_bank, validate_claims_ledger, validate_evidence_bank
+from tests.preparation_fixtures import write_preparation_config
 
 
 class EvidenceTests(unittest.TestCase):
@@ -81,6 +82,7 @@ class EvidenceTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
+        write_preparation_config(self.root)
         self.path = self.root / "registry/candidate/cv.md"
         self.path.parent.mkdir(parents=True)
         self.quote = "Example РІР‚вЂќ Backend Engineer | 2020 - 2024\nBuilt PHP APIs and reduced latency by 35%."
@@ -115,7 +117,7 @@ class EvidenceTests(unittest.TestCase):
             with self.subTest(path=path):
                 bank = copy.deepcopy(self.bank)
                 bank["entries"][0]["source"]["path"] = path
-                with self.assertRaisesRegex(EvidenceError, "registry/candidate"):
+                with self.assertRaisesRegex(EvidenceError, "evidence|traversal"):
                     validate_evidence_bank(bank, self.root)
 
     def test_unusable_statuses_cannot_ground_claims(self):

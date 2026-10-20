@@ -11,6 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from jobintel.application_lifecycle import ApplicationLifecycle
+from tests.preparation_fixtures import write_preparation_config
 
 
 class MemoryStore:
@@ -52,6 +53,7 @@ class ApplicationLifecycleTests(unittest.TestCase):
         profile = self.root / "config/application-profile.yaml"
         profile.parent.mkdir()
         profile.write_text("candidate:\n  full_name: Example Person\napplication_defaults:\n  notice_period: TODO_CONFIRM\n", encoding="utf-8")
+        self.context = write_preparation_config(self.root, profile_sources=["registry/candidate/cv.md"])
 
     def submit(self, **kwargs):
         options = {"submission_id": "sent-1", "sent_on": "2026-09-01", "artifacts": [self.cv], "confirmed": True}
@@ -63,6 +65,7 @@ class ApplicationLifecycleTests(unittest.TestCase):
 
     def draft(self):
         return {"schema_version": 1, "vacancy_id": "v1", "kind": "answers", "grounding_review": True,
+                "preparation_context_version": self.context.version,
                 "items": [{"prompt": "Relevant experience?", "text": "Built PHP services at Example.", "status": "confirmed",
                            "sources": [{"path": "registry/candidate/cv.md", "sha256": hashlib.sha256(self.source.read_bytes()).hexdigest(),
                                         "quote": "Built PHP services at Example."}]}]}

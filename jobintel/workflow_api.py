@@ -26,6 +26,7 @@ from .matching import (
 from .triage import should_skip_model, snapshot_should_skip
 from .selection_policy import SelectionPolicy, load_selection_policy
 from .matching_policy import MatchingContext, canonical
+from .preparation_context import load_preparation_context
 from .workflows import WorkflowPolicy, load_workflow_policy
 
 
@@ -316,23 +317,25 @@ def queue_items(
             if current:
                 continue
         else:
+            preparation_context = load_preparation_context(project_root)
             if vacancy.score is None:
                 continue
             if not _vacancy_is_fresh(vacancy.discovered_at, policy.prepare_max_age_days):
                 continue
-            if not _analysis_is_current(directory, registry_root, profile_paths, policy, project_root):
+            if not _analysis_is_current(directory, registry_root, preparation_context.profile_paths, policy, project_root):
                 continue
             if not policy.prepare_score_is_eligible(workflow, vacancy.score):
                 continue
             generator = ApplicationGenerator(
                 registry_root,
-                profile_paths,
+                preparation_context.profile_paths,
                 project_root / "prompts" / "vacancy-application.md",
                 CodexApplicationDraftClient(
                     project_root / ".codex-work" / "unused-application",
                     model=policy.workflow(workflow).model_label,
                 ),
                 HostMarkdownDocxConverter(project_root),
+                context=preparation_context,
             )
             if generator.is_current(directory):
                 continue

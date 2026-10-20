@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.preparation_fixtures import write_preparation_config
 
 from functools import partial
 import tempfile
@@ -321,8 +322,22 @@ class ApplicationTests(unittest.TestCase):
         # the production code path itself is exercised (and fixed) in-test.
         self.temp = tempfile.TemporaryDirectory(ignore_cleanup_errors=True)
         self.project = Path(self.temp.name)
+        cli_file = patch("jobintel.cli.__file__", str(self.project / "jobintel/cli.py"))
+        cli_file.start()
+        self.addCleanup(cli_file.stop)
+        (self.project / "prompts").mkdir()
+        original_root = Path(__file__).resolve().parents[1]
+        (self.project / "config").mkdir()
+        for name in ("matching-policy.yaml", "codex-workflows.yaml", "selection-policy.yaml"):
+            (self.project / "config" / name).write_bytes((original_root / "config" / name).read_bytes())
+        for name in ("vacancy-match.md", "vacancy-application.md"):
+            (self.project / "prompts" / name).write_bytes((original_root / "prompts" / name).read_bytes())
         self.registry_root = self.project / "registry"
-        self.profile = self.project / "candidate.md"
+        self.profile = self.registry_root / "candidate/candidate.md"
+        self.profile.parent.mkdir(parents=True)
+        (self.registry_root / "evidence.yaml").write_text("schema_version: 1\nentries: []\n", encoding="utf-8")
+        write_preparation_config(self.project, evidence_bank="registry/evidence.yaml")
+        (self.profile.parent / "linkedin-profile.md").write_text("# Candidate\n## Experience\n### Example\nBackend Engineer\nJanuary 2020 - Present\n", encoding="utf-8")
         self.profile.write_text("# Candidate\n\nBackend engineer using Go.\n", encoding="utf-8")
         self.prompt = self.project / "prompt.md"
         self.prompt.write_text("Prepare exactly one application package.\n", encoding="utf-8")
@@ -429,7 +444,7 @@ class ApplicationTests(unittest.TestCase):
         write_quality_contract(draft)
         package = {"cover_letter_markdown": application_payload()["cover_letter_markdown"]}
         source = self.registry_root / "candidate" / "candidate.md"
-        source.parent.mkdir(parents=True)
+        source.parent.mkdir(parents=True, exist_ok=True)
         source.write_text(package["cover_letter_markdown"], encoding="utf-8")
         quote = "I connect verified backend delivery experience to the role's PHP, Laravel, API, and reliability priorities."
         bank = bootstrap_evidence_bank(self.project, [{"id": "delivery", "source": {"path": "registry/candidate/candidate.md", "quote": quote}}])
@@ -557,7 +572,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual("email", manifest["quality"]["method"]["cover_letter"]["channel"])
         self.assertLess(manifest["quality"]["documents"]["cover-letter"]["word_count"], 150)
 
-    def test_cache_rejects_corrupted_named_cv_export(self):
+    def test_legacy_export_receipts_cannot_make_unreviewed_package_current(self):
         from jobintel.document_quality import file_sha256
         from jobintel.evidence import validate_evidence_bank
 
@@ -571,7 +586,7 @@ class ApplicationTests(unittest.TestCase):
         manifest["quality"]["documents"]["cv"].update(evidence_bank_path="registry/evidence.yaml", evidence_bank_sha256=validate_evidence_bank(bank, self.project)["sha256"])
         manifest["quality"]["exports"] = {"cv": {"artifact_sha256": file_sha256(application / "cv.docx"), "source_sha256": file_sha256(application / "cv.md")}}
         manifest_path.write_text(yaml.safe_dump(manifest), encoding="utf-8")
-        self.assertTrue(generator.is_current(self.directory))
+        self.assertFalse(generator.is_current(self.directory))
         alias = application / f"{manifest['cv_export_stem']}.docx"
         alias.write_bytes(b"corrupted named export")
         self.assertFalse(generator.is_current(self.directory))
@@ -597,7 +612,19 @@ class ApplicationTests(unittest.TestCase):
             allow_legacy_drafts=True,
         )
 
-    def test_generates_complete_package_and_skips_matching_versions(self) -> None:
+    def _current_letter_generator(self):
+        from tests.application_review_fixtures import add_letter_review
+        from tests.test_document_quality import write_docx
+        draft, package, quality = self.v2_letter_draft()
+        add_letter_review(self.project, draft, quality, package)
+        class ReviewedConverter:
+            def convert(self, source, target):
+                write_docx(target, source.read_text(encoding="utf-8").splitlines())
+        return ApplicationGenerator(self.registry_root, [self.profile], self.prompt,
+            CodexApplicationDraftClient(draft, model="test-model", document="cover-letter"), ReviewedConverter(),
+            document="cover-letter", clock=lambda: self.now)
+
+    def test_explicit_legacy_client_exports_complete_package_without_current_provenance(self) -> None:
         client = FakeClient()
         converter = FakeConverter()
         generator = self._generator(client, converter)
@@ -619,10 +646,10 @@ class ApplicationTests(unittest.TestCase):
             "manifest.yaml",
         }
         self.assertEqual("prepared", first.status)
-        self.assertEqual("skipped", second.status)
+        self.assertEqual("prepared", second.status)
         self.assertEqual(expected, {path.name for path in application.iterdir()})
-        self.assertEqual(1, len(client.calls))
-        self.assertEqual(2, len(converter.calls))
+        self.assertEqual(2, len(client.calls))
+        self.assertEqual(4, len(converter.calls))
         self.assertEqual(profile_before, self.profile.read_bytes())
         self.assertEqual(
             "A product company.",
@@ -636,7 +663,11 @@ class ApplicationTests(unittest.TestCase):
             manifest["cv_export_stem"],
         )
         self.assertNotIn("simple_life_end_date", manifest)
-        self.assertEqual(QUALITY_CONTRACT_VERSION, manifest["quality_contract_version"])
+        self.assertEqual(1, manifest["quality_contract_version"])
+        self.assertNotIn("preparation_context_version", manifest)
+        self.assertNotIn("preparation_context_version", manifest["quality"])
+        self.assertNotIn("grounding", manifest["quality"])
+        self.assertFalse(generator.is_current(self.directory))
         self.assertIn("documents", manifest["quality"])
 
     def test_generates_package_under_a_deeply_nested_long_vacancy_directory(self) -> None:
@@ -680,6 +711,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(
             "CV_ValentinNikolaev_grafana_SeniorBackendEngineerDatabasesLokiIngest",
             _cv_export_stem(
+                owner_stem="ValentinNikolaev",
                 company="Grafana Labs",
                 title="Senior Backend Engineer - Databases - Loki Ingest | Germany | Remote",
             ),
@@ -687,10 +719,12 @@ class ApplicationTests(unittest.TestCase):
 
     def test_cv_export_stem_shortens_long_windows_filename_deterministically(self) -> None:
         stem = _cv_export_stem(
+                owner_stem="ValentinNikolaev",
             company="Cuborio Business Click S.r.l.",
             title="Sviluppatore Senior PHP Laravel AI Augmented",
         )
         changed_title = _cv_export_stem(
+                owner_stem="ValentinNikolaev",
             company="Cuborio Business Click S.r.l.",
             title="Sviluppatore Senior PHP Laravel AI Platform",
         )
@@ -700,13 +734,119 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual(
             stem,
             _cv_export_stem(
+                owner_stem="ValentinNikolaev",
                 company="Cuborio Business Click S.r.l.",
                 title="Sviluppatore Senior PHP Laravel AI Augmented",
             ),
         )
         self.assertNotEqual(stem, changed_title)
 
+    def test_partial_legacy_refresh_preserves_other_document_context_without_relabeling(self) -> None:
+        generator = self._current_letter_generator()
+        generator.generate_directory(self.directory)
+        path = self.directory / "application/manifest.yaml"
+        previous = yaml.safe_load(path.read_text(encoding="utf-8"))
+        old_context = previous["documents"]["cover-letter"]["preparation_context_version"]
+        write_preparation_config(self.project, evidence_bank="registry/evidence.yaml", cv_owner_stem="OtherOwner")
+        self.assertFalse(generator.is_current(self.directory))
+        with self.assertRaisesRegex(ApplicationError, "context changed"):
+            generator.generate_directory(self.directory)
+        refresher = self._generator(FakeClient({"cv_markdown": application_payload()["cv_markdown"]}), FakeConverter(), document="cv")
+        refresher.generate_directory(self.directory)
+        updated = yaml.safe_load(path.read_text(encoding="utf-8"))
+        self.assertEqual(old_context, updated["documents"]["cover-letter"]["preparation_context_version"])
+        self.assertEqual(old_context, updated["quality"]["documents"]["cover-letter"]["preparation_context_version"])
+        self.assertNotIn("preparation_context_version", updated["documents"]["cv"])
+        self.assertFalse(refresher.is_current(self.directory))
+        self.assertFalse(self._generator(FakeClient(), FakeConverter(), document="cover-letter").is_current(self.directory))
+
+    def test_public_draft_validator_rejects_stale_and_foreign_supplied_contexts(self) -> None:
+        from jobintel.preparation_context import load_preparation_context
+        from jobintel.applications import validate_application_draft
+        generator = self._current_letter_generator()
+        draft = generator.client.directory
+        old = load_preparation_context(self.project)
+        write_preparation_config(self.project, evidence_bank="registry/evidence.yaml", cv_owner_stem="ChangedOwner")
+        for context in (None, old):
+            with self.assertRaisesRegex(ApplicationError, "stale"):
+                validate_application_draft(self.directory, draft, document="cover-letter", context=context)
+        with tempfile.TemporaryDirectory() as value:
+            foreign = write_preparation_config(Path(value))
+            with self.assertRaisesRegex(ApplicationError, "another project"):
+                validate_application_draft(self.directory, draft, document="cover-letter", context=foreign)
+        self.assertFalse((self.directory / "application").exists())
+
+    def test_generator_rejects_foreign_vacancy_before_client_or_converter_work(self) -> None:
+        generator = self._current_letter_generator()
+        with tempfile.TemporaryDirectory() as value:
+            foreign = Path(value) / "registry/jobs/vacancy"
+            foreign.mkdir(parents=True)
+            with self.assertRaisesRegex(ApplicationError, "another preparation registry"):
+                generator.generate_directory(foreign)
+            self.assertFalse(generator.is_current(foreign))
+            self.assertFalse((foreign / "application").exists())
+
+    def test_default_publication_rejects_raw_and_custom_clients_before_conversion(self) -> None:
+        class CustomClient(FakeClient):
+            directory = Path("pretends-to-have-a-draft")
+        for client in (FakeClient(), CustomClient()):
+            converter = FakeConverter()
+            generator = ApplicationGenerator(self.registry_root, [self.profile], self.prompt, client, converter)
+            with self.assertRaisesRegex(ApplicationError, "validated Codex draft"):
+                generator.generate_directory(self.directory)
+            self.assertFalse(client.calls)
+            self.assertFalse(converter.calls)
+            self.assertFalse((self.directory / "application").exists())
+
+    def test_current_cache_requires_every_document_binding_before_integrity_checks(self) -> None:
+        import copy
+        generator = self._current_letter_generator()
+        generator.generate_directory(self.directory)
+        application = self.directory / "application"
+        path = application / "manifest.yaml"
+        original = yaml.safe_load(path.read_text(encoding="utf-8"))
+        document = application / "cover-letter.md"
+        original_bytes = document.read_bytes()
+        self.assertTrue(generator.is_current(self.directory))
+        mutations = [lambda manifest, key=key: manifest["quality"]["documents"]["cover-letter"].pop(key)
+                     for key in ("evidence_bank_path", "evidence_bank_sha256", "sha256", "preparation_context_version")]
+        mutations.extend([
+            lambda manifest: manifest["quality"]["exports"]["cover-letter"].pop("artifact_sha256"),
+            lambda manifest: manifest["quality"]["grounding"].pop("preparation_context_version"),
+            lambda manifest: manifest.update(quality_contract_version=1),
+        ])
+        for mutation in mutations:
+            modified = copy.deepcopy(original)
+            mutation(modified)
+            path.write_text(yaml.safe_dump(modified), encoding="utf-8")
+            self.assertFalse(generator.is_current(self.directory))
+            document.write_text("Tampered after publication.\n", encoding="utf-8")
+            self.assertFalse(generator.is_current(self.directory))
+            document.write_bytes(original_bytes)
+        path.write_text(yaml.safe_dump(original), encoding="utf-8")
+        self.assertTrue(generator.is_current(self.directory))
+        document.write_text("Tampered after publication.\n", encoding="utf-8")
+        self.assertFalse(generator.is_current(self.directory))
+
+    def test_configuration_change_during_conversion_cannot_publish(self) -> None:
+        root = self.project
+        class ChangingConverter(FakeConverter):
+            def convert(self, source, target):
+                super().convert(source, target)
+                write_preparation_config(root, evidence_bank="registry/evidence.yaml", cv_owner_stem="ChangedDuringConversion")
+        with self.assertRaisesRegex(ApplicationError, "context changed before publication"):
+            self._generator(FakeClient(), ChangingConverter()).generate_directory(self.directory)
+        self.assertFalse((self.directory / "application/manifest.yaml").exists())
+
+    def test_direct_generation_rejects_analysis_bound_to_another_candidate_profile(self) -> None:
+        (self.directory / "match.yaml").write_text("profile_version: another-candidate\n", encoding="utf-8")
+        client = FakeClient()
+        with self.assertRaisesRegex(ApplicationError, "another preparation candidate"):
+            self._generator(client, FakeConverter()).generate_directory(self.directory)
+        self.assertFalse(client.calls)
+
     def test_simple_life_cv_date_range_is_preserved_from_draft(self) -> None:
+        (self.profile.parent / "linkedin-profile.md").write_text("# Candidate\n## Experience\n### Simple.life\nSoftware Developer\nNovember 2023 - July 2026\n### airSlate\nSoftware Developer\nFebruary 2021 - August 2023\n", encoding="utf-8")
         payload = application_payload()
         payload["cv_markdown"] = payload["cv_markdown"].replace(
             "### Example Р Р†Р вЂљРІР‚Сњ Backend Engineer | January 2020 - Present",
@@ -728,14 +868,13 @@ class ApplicationTests(unittest.TestCase):
 
     def test_package_does_not_expire_when_calendar_month_changes(self) -> None:
         client = FakeClient()
-        generator = self._generator(client, FakeConverter())
+        generator = self._current_letter_generator()
         first = generator.generate_directory(self.directory)
         self.now = datetime(2026, 9, 1, tzinfo=timezone.utc)
         second = generator.generate_directory(self.directory)
 
         self.assertEqual("prepared", first.status)
         self.assertEqual("skipped", second.status)
-        self.assertEqual(1, len(client.calls))
 
     def test_conversion_failure_preserves_previous_complete_package(self) -> None:
         original = self._generator(FakeClient(), FakeConverter())
@@ -797,7 +936,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual("application-codex", meta["application_directory"])
         self.assertTrue((fallback / "manifest.yaml").is_file())
         self.assertEqual("old", (target / "cv.md").read_text(encoding="utf-8"))
-        self.assertTrue(self._generator(FakeClient(), FakeConverter()).is_current(self.directory))
+        self.assertFalse(self._generator(FakeClient(), FakeConverter()).is_current(self.directory))
 
     def test_locked_previous_package_backup_is_retained_outside_registry(self) -> None:
         target = self.directory / "application"
@@ -1256,8 +1395,8 @@ class ApplicationTests(unittest.TestCase):
         second = partial.generate_directory(self.directory)
 
         self.assertEqual("prepared", first.status)
-        self.assertEqual("skipped", second.status)
-        self.assertEqual(1, len(partial_converter.calls))
+        self.assertEqual("prepared", second.status)
+        self.assertEqual(2, len(partial_converter.calls))
         self.assertIn("Updated backend engineer", (application / "cv.md").read_text())
         self.assertEqual(
             preserved,
@@ -1682,7 +1821,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual("codex:gpt-5.6-luna:low", manifest["analysis"]["model"])
         self.assertEqual(78, manifest["analysis"]["score"])
         self.assertEqual(generator.model, manifest["model"])
-        self.assertTrue(generator.is_current(self.directory))
+        self.assertFalse(generator.is_current(self.directory))
         match_path = self.directory / "match.yaml"
         match = yaml.safe_load(match_path.read_text(encoding="utf-8"))
         match["score"] = 79

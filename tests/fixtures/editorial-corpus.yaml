@@ -47,8 +47,8 @@ cases:
       reason_codes: [unsupported_metric]
       rationale: The same number describes a different measure and cannot support latency.
   - id: team-result
-    kind: cv-bullet
-    requirement: Senior engineer with accurate individual contribution.
+    kind: claim-grounding
+    requirement: Assess the accuracy of individual contribution and decision ownership in this excerpt, distinguishing the candidate's implementation from the technical lead's architectural decisions. This statement-level grounding check is separate from selecting achievements for a CV.
     source: The team redesigned the service. The candidate implemented the storage adapter. Architecture decisions belonged to the technical lead.
     text: Independently redesigned the service architecture.
     expected:

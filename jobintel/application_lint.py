@@ -8,14 +8,17 @@ from datetime import date
 from pathlib import Path
 from typing import Any
 
+from . import storage_bridge as op
 from .applications import (
-    APPLICATION_DOCUMENTS, APPLICATION_FILES, _HANDOFF_REQUIREMENTS,
+    APPLICATION_DOCUMENTS, APPLICATION_FILES, ApplicationError, _HANDOFF_REQUIREMENTS,
     _EXPERIENCE_DATE_RANGE_RE, _MONTH_NAMES,
     _markdown_section, _read_yaml_mapping, _required_handoffs, _selected_documents,
     _validate_cv_audit_bullet_coverage,
+    _contained_file,
 )
 from .evidence import validate_evidence_bank, validate_claims_ledger
 from .application_review import validate_role_inventory, validate_letter_review
+from .preparation_context import PreparationContext, resolve_preparation_context
 
 
 def _diagnostic(items: list[dict[str, str]], code: str, message: str, path: Path) -> None:
@@ -85,11 +88,18 @@ def lint_application_draft(
     *,
     document: str | None = None,
     vacancy_text: str | None = None,
+    context: PreparationContext | None = None,
 ) -> dict[str, Any]:
     """Return every predictable local defect without publishing or converting a package."""
     vacancy_directory, draft = vacancy_directory.resolve(), draft_directory.resolve()
-    project_root = vacancy_directory.parents[2]
+    project_root = op.project_root(vacancy_directory) or vacancy_directory.parents[2]
     diagnostics: list[dict[str, str]] = []
+    try:
+        context = resolve_preparation_context(project_root, context)
+    except (ValueError, OSError) as exc:
+        _diagnostic(diagnostics, "PREPARATION_CONTEXT", str(exc), project_root / "config/application-profile.yaml")
+        return {"ok": False, "draft": str(draft), "preparation_context_version": None,
+                "diagnostics": diagnostics}
     quality_path = draft / "quality.yaml"
     quality = _load(quality_path, "application quality declaration", diagnostics)
     selected = set(_selected_documents(document))
@@ -103,6 +113,9 @@ def lint_application_draft(
         except OSError:
             _diagnostic(diagnostics, "DOCUMENT_MISSING", f"required draft document is missing: {path.name}", path)
     if quality is not None:
+        if quality.get("schema_version") == 3 and context is not None:
+            if quality.get("preparation_context_version") != context.version:
+                _diagnostic(diagnostics, "PREPARATION_CONTEXT", "draft preparation_context_version is missing or stale", quality_path)
         for filename in _required_handoffs(selected):
             path = draft / "parts" / filename
             try:
@@ -128,23 +141,31 @@ def lint_application_draft(
             bank_path = quality.get("evidence_bank")
             ledger_path = quality.get("claims_ledger")
             bank: dict[str, Any] | None = None
-            if isinstance(bank_path, str):
-                bank = _load(project_root / bank_path, "candidate evidence bank", diagnostics)
-                if bank is not None:
-                    try:
-                        validate_evidence_bank(bank, project_root)
-                    except Exception as exc:
-                        _diagnostic(diagnostics, "EVIDENCE_UNAVAILABLE", str(exc), project_root / bank_path)
-            ledger = _load(draft / ledger_path, "application claims ledger", diagnostics) if isinstance(ledger_path, str) else None
+            if isinstance(bank_path, str) and context is not None:
+                try:
+                    resolved_bank = _contained_file(project_root, bank_path, "evidence_bank")
+                    if resolved_bank != context.evidence_bank:
+                        raise ValueError("evidence_bank must match the configured candidate evidence bank")
+                    bank = _load(resolved_bank, "candidate evidence bank", diagnostics)
+                    if bank is not None:
+                        validate_evidence_bank(bank, project_root, context=context)
+                except Exception as exc:
+                    _diagnostic(diagnostics, "EVIDENCE_UNAVAILABLE", str(exc), quality_path)
+            ledger = None
+            if isinstance(ledger_path, str):
+                try:
+                    ledger = _load(_contained_file(draft, ledger_path, "claims_ledger"), "application claims ledger", diagnostics)
+                except (ApplicationError, ValueError, OSError) as exc:
+                    _diagnostic(diagnostics, "CLAIM_CONTEXT", str(exc), quality_path)
             if isinstance(bank, Mapping) and isinstance(ledger, Mapping):
                 if quality.get('schema_version') == 3:
-                    checks = [("CLAIM_CONTEXT", lambda: validate_claims_ledger(ledger, bank, package, project_root))]
+                    checks = [("CLAIM_CONTEXT", lambda: validate_claims_ledger(ledger, bank, package, project_root, context=context))]
                     if ledger.get('schema_version') != 2:
                         _diagnostic(diagnostics, 'CLAIM_CONTEXT', 'quality v3 requires claims ledger schema_version 2', quality_path)
                     if 'cv_markdown' in package:
-                        checks.append(('ROLE_COVERAGE', lambda: validate_role_inventory(quality.get('cv_audit', {}), package['cv_markdown'], project_root)))
+                        checks.append(('ROLE_COVERAGE', lambda: validate_role_inventory(quality.get('cv_audit', {}), package['cv_markdown'], project_root, context=context)))
                     if 'cover_letter_markdown' in package:
-                        checks.append(('LETTER_REVIEW', lambda: validate_letter_review(quality, package['cover_letter_markdown'], draft, project_root, ledger)))
+                        checks.append(('LETTER_REVIEW', lambda: validate_letter_review(quality, package['cover_letter_markdown'], draft, project_root, ledger, context=context)))
                     for code, check in checks:
                         try:
                             check()
@@ -179,4 +200,6 @@ def lint_application_draft(
                         if jd_quote not in job_text:
                             _diagnostic(diagnostics, "JOB_QUOTE_NOT_EXACT", "jd_quote is not an exact selected-vacancy substring", quality_path)
     diagnostics.sort(key=lambda item: (item["code"], item["path"], item["message"]))
-    return {"ok": not diagnostics, "draft": str(draft), "diagnostics": diagnostics}
+    return {"ok": not diagnostics, "draft": str(draft),
+            "preparation_context_version": context.version if context is not None else None,
+            "diagnostics": diagnostics}

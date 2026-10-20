@@ -10,17 +10,21 @@ from pathlib import Path
 import yaml
 
 from .evidence import EvidenceError, bootstrap_evidence_bank, validate_evidence_bank, evidence_questions
+from .preparation_context import PreparationContext, load_preparation_context
 
 
 def _load(path: Path):
     return yaml.safe_load(path.read_text(encoding="utf-8-sig"))
 
 
-def _output_path(root: Path, path: Path) -> Path:
+def _output_path(root: Path, path: Path, context: PreparationContext) -> Path:
     target = (root / path).resolve()
-    allowed = [(root / ".codex-work").resolve(), (root / "registry" / "evidence").resolve()]
-    if not any(target.is_relative_to(directory) for directory in allowed) or target.suffix not in {".yaml", ".yml"}:
-        raise EvidenceError("evidence outputs must be YAML under .codex-work/ or registry/evidence/")
+    allowed = [(root / ".codex-work").resolve(), context.evidence_bank.parent]
+    if (not target.is_relative_to(root)
+            or not any(target.is_relative_to(directory) for directory in allowed)
+            or target.is_relative_to(context.candidate_directory)
+            or target.suffix not in {".yaml", ".yml"}):
+        raise EvidenceError("evidence outputs must be YAML under .codex-work/ or the configured evidence directory")
     return target
 
 
@@ -28,27 +32,34 @@ def main(argv: list[str] | None = None, *, root: Path) -> int:
     parser = argparse.ArgumentParser(description="Validate and maintain source-backed candidate evidence.")
     commands = parser.add_subparsers(dest="action", required=True)
     validate = commands.add_parser("validate", help="Check source quotes, hashes and verification provenance")
-    validate.add_argument("--bank", type=Path, default=Path("registry/evidence/achievements.yaml"))
+    validate.add_argument("--bank", type=Path)
     questions = commands.add_parser('questions', help='List missing achievement and measurement context without changing evidence')
-    questions.add_argument('--bank', type=Path, default=Path('registry/evidence/achievements.yaml'))
+    questions.add_argument('--bank', type=Path)
     questions.add_argument('--id', dest='identifiers', action='append', default=[])
     bootstrap = commands.add_parser("bootstrap", help="Seal selected source excerpts as unverified; never overwrite")
     bootstrap.add_argument("--input", type=Path, required=True)
     bootstrap.add_argument("--output", type=Path, required=True)
     publish = commands.add_parser("publish", help="Publish a reviewed bank while preserving retractions")
     publish.add_argument("--input", type=Path, required=True)
-    publish.add_argument("--output", type=Path, default=Path("registry/evidence/achievements.yaml"))
+    publish.add_argument("--output", type=Path)
     args = parser.parse_args(argv)
     try:
+        root = root.resolve()
+        context = load_preparation_context(root)
         if args.action == 'questions':
-            receipt = evidence_questions(_load(root / args.bank), root, args.identifiers)
+            receipt = evidence_questions(
+                _load(root / args.bank if args.bank else context.evidence_bank),
+                root, args.identifiers, context=context,
+            )
         elif args.action == "validate":
-            receipt = validate_evidence_bank(_load(root / args.bank), root)
+            receipt = validate_evidence_bank(
+                _load(root / args.bank if args.bank else context.evidence_bank), root, context=context
+            )
         else:
             loaded = _load(root / args.input)
-            bank = bootstrap_evidence_bank(root, loaded) if args.action == "bootstrap" else loaded
-            receipt = validate_evidence_bank(bank, root)
-            output = _output_path(root, args.output)
+            bank = bootstrap_evidence_bank(root, loaded, context=context) if args.action == "bootstrap" else loaded
+            receipt = validate_evidence_bank(bank, root, context=context)
+            output = _output_path(root, args.output or context.evidence_bank, context)
             if output.exists():
                 if args.action == "bootstrap":
                     raise EvidenceError("bootstrap never overwrites an existing bank")
@@ -68,7 +79,8 @@ def main(argv: list[str] | None = None, *, root: Path) -> int:
                 os.replace(temp_name, output)
             finally:
                 Path(temp_name).unlink(missing_ok=True)
-            receipt["output"] = str(output.relative_to(root.resolve()))
+            receipt["output"] = output.relative_to(root).as_posix()
+        receipt["preparation_context_version"] = context.version
         print(json.dumps(receipt, ensure_ascii=False, indent=2))
         return 0
     except (OSError, ValueError, TypeError, KeyError, yaml.YAMLError) as exc:
