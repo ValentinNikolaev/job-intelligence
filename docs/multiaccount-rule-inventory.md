@@ -333,9 +333,9 @@ approved and closed CR-007: index/worktree LF, 66 LF/zero CR, original hash pres
 passed 782 tests in 24.858 seconds with two missing-Poppler PDF skips. The local full
 suite had no skips. Earlier CI's before-test MongoDB startup failure and successful
 retry are retained in the [plan's final synthesis](multiaccount-migration-plan.md).
-The next action is reviewed finalizer publication of the documentation-only acceptance
-increment and final PR handoff. Changed bindings/integrated code, refused publication,
-new review defects or CI failures require reassessment. Phases 4-6 remain deferred.
+Phase 3 was accepted and merged in PR 2. Changed bindings/integrated code, refused
+publication, new review defects or CI failures require reassessment. Later-phase
+status is recorded below and in the migration execution log.
 
 ## Phase-4 preparation configuration
 
@@ -373,7 +373,12 @@ The current Go/PHP/Italy source bundle and Zend-credential exclusion are explici
 scoped to this account. They require a new ownership decision before phase-6
 onboarding; this phase does not claim a generic source set or shared tenancy.
 
-Phase 5 remains in progress pending the integrated release checks and clean
-published-code review recorded in the [execution log](multiaccount-migration-plan.md#execution-log).
+Phase 5 is complete in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4).
+Independent clean cumulative R6 approved published runtime `d66943b6`, closed both
+reviewed findings and passed 186 targeted executions without skips. Exact-head
+push and PR CI passed 900 tests with two missing-Poppler PDF skips each; the local
+full suite passed all 900 without skips. The [execution log](multiaccount-migration-plan.md#execution-log)
+records failed attempts, corrected checks and final council limitations. PR 4 remains
+open and unmerged; phase 6 remains deferred.
 Candidate evidence, canonical records, artifacts, status, catalog inputs and the
 MongoDB storage contract are unchanged by this implementation.

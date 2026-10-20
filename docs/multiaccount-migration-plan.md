@@ -15,8 +15,9 @@ candidate do not require separate accounts.
 Phases **0-3** were implemented in reviewed increments and merged in PR 2. Phase **4**,
 candidate-independent document preparation, is complete in
 [PR 3](https://github.com/ValentinNikolaev/job-intelligence/pull/3) on a new branch
-from the updated main. Phase **5** is now in progress on a new branch from merged
-main; phase 6 and operating a second account remain deferred.
+from the updated main. Phase **5** was implemented on a new branch from merged
+main and is now complete in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4);
+phase 6 and operating a second account remain deferred.
 Existing named-vacancy approval requirements still apply to actual application
 preparation; this implementation iteration uses synthetic fixtures only.
 
@@ -33,8 +34,10 @@ in PR 3. Independent cumulative review R3 approved the clean published code at
 `d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6`; both exact-head CI runs passed.
 The iteration extracts preparation configuration while preserving analysis
 identities, candidate sources and published artifacts. PR 3 was merged as
-`e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Phase 5 is in progress on
-`ValentinNikolaev/multiaccount-p5` from that updated main; phase 6 remains deferred.
+`e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Phase 5 is complete on
+`ValentinNikolaev/multiaccount-p5` from that updated main. Clean cumulative R6
+approved published runtime `d66943b60107a196dc7a04f94429a6932aca058e`; exact-head
+push and PR CI passed. PR 4 remains open and unmerged; phase 6 remains deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
@@ -43,7 +46,7 @@ identities, candidate sources and published artifacts. PR 3 was merged as
 | 2 | Configuration-driven prefilter and triage | 1 | Done |
 | 3 | Configurable match-analysis preferences | 2 | Done |
 | 4 | Candidate-independent document preparation | 3 | Done |
-| 5 | Explicit account description with one live account | 4 | In progress |
+| 5 | Explicit account description with one live account | 4 | Done |
 | 6 | Second account in an isolated environment | 5 | Not started |
 
 Maintain this file in the same change as implementation progress:
@@ -295,8 +298,9 @@ passed 815 tests in 29.397 seconds and
 [PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39442699794)
 passed 815 in 32.250 seconds, both on attempt 1. Each CI run skipped two real-PDF
 checks because Poppler/pdfinfo was unavailable; the local full suite had no skips.
-Phase 4 is done. No real application was generated in this iteration. PR 3 remains
-separate from main; account selection and a second account remain phases 5-6 work.
+Phase 4 is done. No real application was generated in that iteration. PR 3 was
+subsequently merged as `e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Account selection
+is implemented in phase 5 below; a second account remains phase 6 work.
 
 ## Phase 5: explicit account description, one live account
 
@@ -334,6 +338,34 @@ Tasks:
 
 Acceptance gate: implicit default and explicit current-account runs are equivalent;
 unknown accounts fail early. Only one live account is enabled.
+
+Phase 5 is complete in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4).
+The final local full suite passed 900 tests in 284.203 seconds without skips on
+Python 3.14.6/disposable MongoDB 8. R1, corrected R3, R4 and R5 approved their
+increments; clean cumulative R6 approved all 53 published paths at
+[`d66943b`](https://github.com/ValentinNikolaev/job-intelligence/commit/d66943b60107a196dc7a04f94429a6932aca058e).
+P5-001 and P5-002 are closed on that clean Windows checkout with explicit negative
+controls. R6 independently passed 117 tests in 32.709 seconds and 69 in 14.980
+seconds, no skips; actual junction and root-alias checks also passed.
+
+[Runtime push CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39467930438)
+passed 900 tests in 47.868 seconds on attempt 1.
+[Runtime PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39467937515/attempts/2)
+passed 900 in 54.188 seconds on attempt 2; attempt 1 stopped before tests when the
+test MongoDB container exited, with cause unknown. Each successful CI run skipped
+two real-PDF checks because Poppler/pdfinfo was unavailable; the local suite had no
+skips. All required MongoDB, test and cleanup steps actually ran. The PR job checked
+a synthetic merge of the reviewed head into main `629e9597`.
+
+Final council specialists and anonymized peer review accepted bounded publication
+subject to the integrated checks, complete staged inspection, clean published review
+and exact-head CI; these gates passed. Their convergence is not independent proof,
+and sampled boundary coverage does not establish concurrent tenancy or deployed
+Scheduled Task behavior. Agent review records are posted by the author account,
+not separate GitHub-user approvals. The existing source bundle and Zend exclusion
+remain explicitly scoped to the sole current account. No second candidate, production
+operation, application generation, canonical record/artifact rewrite or MongoDB
+migration occurred. The PR stays open and unmerged for handoff.
 
 ## Phase 6: connect the second account last
 
@@ -415,3 +447,4 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | The first integrated runtime suite ran 900 tests in 170.881 seconds and failed five collection-safety cases: their mocked CLI invocation still supplied noncanonical source/registry roots and was correctly rejected before the tested collector. Updated only the fixture invocation to the selected root's sources/registry, preserving all original status, storage, usage and call-order assertions. | The owner then passed 45 focused tests in 5.984 seconds; independent R4 re-review passed all 10 collection-safety tests in 0.432 seconds and confirmed the collectors actually execute. The corrected complete suite is in progress; the failed run is not a passing gate. Three final council specialists found no runtime must-fix and conditionally accepted the bounded architecture pending integrated checks, anonymized peer review, complete staged inspection, publication, clean cumulative review and exact-head CI. The backup prompt received only a mechanical correction describing its explicit isolated-store seam; application/editorial policies and match identities are unchanged. |
 | 2026-10-20 | Corrected integrated verification completed: `python -m unittest discover -v` passed 900 tests in 284.203 seconds on Python 3.14.6 with a disposable MongoDB 8 replica set, no skips. The final project code/configuration API-prohibition search found no prohibited integrations; local links and diff checks passed. | Runtime implementation checklist items are complete, including explicit current-account source/Zend ownership limits. Phase 5 stays in progress until final council synthesis, complete staged inspection, reviewed publication, clean cumulative published-code review and exact-head CI. Canonical catalog inputs did not change, so catalog regeneration is not required. |
 | 2026-10-20 | Final Quick council and anonymized Orca-session peer review conditionally accepted reviewed publication of the frozen single-current-account runtime. Three specialists converged on bounded authority/configuration ownership without a new concrete must-fix; the peer independently observed 17 distinct focused tests, reproduced the five old-fixture failures in memory, restored all 10 collection-safety passes and confirmed the corrected full-suite log. Complete 52-path staged runtime diff inspection followed; no unrelated records, credentials or artifacts are staged. | The strongest argument examines the caller-trusted explicit-store seam and the actual guarded restore caller. The weakest accepted point is future operational callers bypassing account guards when using account-independent primitives; ContextVar scoping does not establish concurrent tenancy. The receipt field `source_files_mutated: false` is an assertion supported by inspected control flow/tests, not independent before/after forensic measurement. Convergence and overlapping counts are not additional proof. Reproduced pre-gate effects, destination drift or substantive published-tree differences require reassessment. Clean published cumulative review and exact-head CI remain mandatory before phase acceptance; deployed Scheduled Task settings have not been inspected or changed. |
+| 2026-10-20 | Accepted phase 5 after independent clean cumulative R6 approved the complete 53-path published delta at `d66943b60107a196dc7a04f94429a6932aca058e`. P5-001 and P5-002 are closed on the actual CRLF Windows checkout; no new confirmed P1/P2 or material missing test. Marked phase 5 Done; phase 6 remains Not started. | R6 passed 117 tests in 32.709 seconds and 69 in 14.980 seconds, no skips; four real configuration/registry junction redirections rejected and root-alias parity passed in 0.586 seconds. In-memory old-behavior negatives reproduced both reviewed defects and restored controls passed in 1.431 seconds. Unrelated Qonto match blob and empty registry diff verified. Exact-head push CI 39467930438 attempt 1 and PR CI 39467937515 attempt 2 passed 900 tests in 47.868/54.188 seconds, each with two missing-Poppler PDF skips; the local complete suite passed all 900 without skips. PR attempt 1 stopped before tests on Mongo container exit of unknown cause; it is retained as failed evidence. Final council release conditions are satisfied for the bounded runtime; this acceptance increment changes documentation only and requires its own review/publication and final-head CI before PR handoff. No runtime full-suite repeat is claimed. |
