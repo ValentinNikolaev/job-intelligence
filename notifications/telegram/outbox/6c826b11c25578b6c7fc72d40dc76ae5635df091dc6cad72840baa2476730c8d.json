@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-20T18:47:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "King Group",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261020_king-group_3da09beaf4ac4fb396a3e9573231af9e",
+      "score": 78,
+      "title": "Middle PHP developer",
+      "url": "https://djinni.co/jobs/854259-middle-php-developer/",
+      "vacancy_id": "3da09bea-f4ac-4fb3-96a3-e9573231af9e"
+    },
+    {
+      "company": "EpicentrK",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261020_epicentrk_9d5a14d3956c427d8f5d3149f864f285",
+      "score": 73,
+      "title": "Developer BackEnd PHP /",
+      "url": "https://djinni.co/jobs/299290-developer-backend-php-/",
+      "vacancy_id": "9d5a14d3-956c-427d-8f5d-3149f864f285"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "6c826b11c25578b6c7fc72d40dc76ae5635df091dc6cad72840baa2476730c8d",
+  "schema_version": 2
+}

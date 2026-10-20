@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 57
 
-- Found: 28
+- Found: 32
 - Applied: 22
 - Interview: 3
 
@@ -12,7 +12,11 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-20 | [Fleetio](../registry/jobs/20261020_fleetio_e3d9bdfff41f4e08ad57800d930554f1/) | [Software Engineer, Growth](../registry/jobs/20261020_fleetio_e3d9bdfff41f4e08ad57800d930554f1/job.md) | United States | Jobspresso | Found | 2026-10-20 | [Jobspresso](https://jobspresso.co/job/software-engineer-growth/) | — | — | — | — | — |
+| 2026-10-20 | [infisical](../registry/jobs/20261020_infisical_35d0717d225046cebfa661878c7ff1fc/) | [Senior Full Stack Engineer](../registry/jobs/20261020_infisical_35d0717d225046cebfa661878c7ff1fc/job.md) | Brazil,  Canada,  Europe,  USA | Jobicy | Found | 2026-10-20 | [Jobicy](https://jobicy.com/jobs/155949-senior-full-stack-engineer-8) | — | — | — | — | — |
+| 2026-10-20 | [infisical](../registry/jobs/20261020_infisical_0f2a4fdec3be4a37a02b9f505708292e/) | [Full Stack Engineer](../registry/jobs/20261020_infisical_0f2a4fdec3be4a37a02b9f505708292e/job.md) | Brazil,  Canada,  Europe,  USA | Jobicy | Found | 2026-10-20 | [Jobicy](https://jobicy.com/jobs/155950-full-stack-engineer-7) | — | — | — | — | — |
+| 2026-10-20 | [EpicentrK](../registry/jobs/20261020_epicentrk_9d5a14d3956c427d8f5d3149f864f285/) | [Developer BackEnd PHP /](../registry/jobs/20261020_epicentrk_9d5a14d3956c427d8f5d3149f864f285/job.md) | Ukraine | Djinni | Found | 2026-10-20 | [Djinni](https://djinni.co/jobs/299290-developer-backend-php-/) | — | — | — | — | — |
+| 2026-10-20 | [New Wave Devs](../registry/jobs/20261020_new-wave-devs_453f588e2c6743c5847e9689307573b5/) | [Senior Backend Engineer (Go + ComfyUI), creative AI product](../registry/jobs/20261020_new-wave-devs_453f588e2c6743c5847e9689307573b5/job.md) | Worldwide | Djinni | Found | 2026-10-20 | [Djinni](https://djinni.co/jobs/854322-senior-backend-engineer-go-comfyui-creative-a/) | — | — | — | — | — |
+| 2026-10-20 | [King Group](../registry/jobs/20261020_king-group_3da09beaf4ac4fb396a3e9573231af9e/) | [Middle PHP developer](../registry/jobs/20261020_king-group_3da09beaf4ac4fb396a3e9573231af9e/job.md) | Ukraine | Djinni | Found | 2026-10-20 | [Djinni](https://djinni.co/jobs/854259-middle-php-developer/) | — | — | — | — | — |
 | 2026-10-20 | [YozmaTech](../registry/jobs/20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25/) | [Middle Backend engineer (Golang)](../registry/jobs/20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25/job.md) | Worldwide | Djinni | Found | 2026-10-20 | [Djinni](https://djinni.co/jobs/854098-middle-backend-engineer-golang/) | — | — | — | — | — |
 | 2026-10-20 | [TrueLabel](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/) | [Senior PHP Developer (Core)](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-20 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377174/) | [Open](../registry/jobs/20261020_truelabel_1a308b68b79540ca9b04e0de1681f43c/company.md) | — | — | — | — |
 | 2026-10-19 | [TrueLabel](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/) | [Senior PHP Software Engineer (Payments)](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/job.md) | Лісабон (Португалія), віддалено | Dou | Found | 2026-10-19 | [Dou](https://jobs.dou.ua/companies/truelabel/vacancies/377139/) | [Open](../registry/jobs/20261019_truelabel_d1b44dd19488436a9cd8c345f638c199/company.md) | — | — | — | — |
