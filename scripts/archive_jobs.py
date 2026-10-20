@@ -3,11 +3,16 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import shutil
+import sys
 import tempfile
 import zipfile
 from pathlib import Path
 
 import yaml
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from jobintel.workflow_lock import workflow_lock
 from jobintel import storage_bridge as op
@@ -254,22 +259,31 @@ def archive(
     return len(candidates)
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser()
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
     parser.add_argument("category", choices=("low-score", "skipped", "stale", "rejected"))
     parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
     parser.add_argument("--low-score", type=int, default=65)
     parser.add_argument("--max-age-days", type=int, default=7)
     parser.add_argument("--min-items", type=int, default=1)
     parser.add_argument("--keep-items", type=int, default=50)
-    args = parser.parse_args()
+    from jobintel.accounts import AccountConfigurationError, resolve_account_arguments
+
+    try:
+        context, remaining = resolve_account_arguments(
+            sys.argv[1:] if argv is None else argv, default_root=Path(__file__).resolve().parents[1],
+        )
+        args = parser.parse_args(remaining)
+    except AccountConfigurationError as exc:
+        parser.error(str(exc))
     if args.min_items < 1:
         parser.error("--min-items must be at least 1")
     if args.keep_items < 0:
         parser.error("--keep-items must be at least 0")
-    project_root = args.project_root.resolve()
-    selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml") if args.category == "skipped" else None
-    with workflow_lock(project_root, f"archive:{args.category}"):
+    project_root = context.project_root
+    selection_policy = load_selection_policy(context.reference("selection_policy")) if args.category == "skipped" else None
+    with op.operation_resources(context), workflow_lock(project_root, f"archive:{args.category}"):
         archived = archive(
             project_root,
             args.category,

@@ -84,14 +84,20 @@ class CatalogSnapshot:
     operational_by_directory: dict[str, dict[str, Any]]
 
 
-def load_catalog_vacancies(registry_root: Path) -> list[CatalogVacancy]:
-    return load_catalog_snapshot(registry_root).vacancies
+def load_catalog_vacancies(registry_root: Path, *, store=None) -> list[CatalogVacancy]:
+    return load_catalog_snapshot(registry_root, store=store).vacancies
 
 
-def load_catalog_snapshot(registry_root: Path) -> CatalogSnapshot:
+def load_catalog_snapshot(registry_root: Path, *, store=None) -> CatalogSnapshot:
+    """Read canonical data, or an explicitly supplied store with local artifact paths.
+
+    Restore verification supplies its validated test store so legacy restored trees
+    never discover account credentials or require a new descriptor.
+    """
     registry_root = registry_root.resolve()
     jobs_dir = registry_root / "jobs"
-    store = op.get_store(registry_root)
+    explicit_store = store is not None
+    store = store if explicit_store else op.get_store(registry_root)
     operational_by_directory: dict[str, dict[str, Any]] = {}
     if store is None:
         entries = [(path, None) for path in sorted(op.metadata_paths(jobs_dir))]
@@ -142,7 +148,7 @@ def load_catalog_snapshot(registry_root: Path) -> CatalogSnapshot:
                 score=match["score"] if match else None,
                 recommendation=match["recommendation"] if match else None,
                 sources=_source_refs(meta["sources"], meta_path),
-                artifacts=_artifacts(directory, meta, document),
+                artifacts=_artifacts(directory, meta, document, file_only=explicit_store),
             )
         )
     rows.sort(key=lambda row: (row.discovered_at, row.vacancy_id), reverse=True)
@@ -174,7 +180,8 @@ def _source_refs(value: Any, path: Path) -> tuple[dict[str, Any], ...]:
 
 
 def _artifacts(
-    directory: Path, meta: dict[str, Any], document: dict[str, Any] | None = None
+    directory: Path, meta: dict[str, Any], document: dict[str, Any] | None = None,
+    *, file_only: bool = False,
 ) -> ArtifactLinks:
     application_name = str(meta.get("application_directory", "application")).strip()
     application = directory / application_name
@@ -187,19 +194,20 @@ def _artifacts(
             directory / "company.md",
             None if document is None else document.get("company_text") is not None,
         ),
-        match_md=_artifact(directory / "match.md"),
-        cv_md=_artifact(application / "cv.md"),
-        cv_docx=_artifact(application / "cv.docx"),
-        cover_letter_md=_artifact(application / "cover-letter.md"),
-        cover_letter_docx=_artifact(application / "cover-letter.docx"),
-        analysis_md=_artifact(application / "analysis.md"),
-        interview_preparation_md=_artifact(application / "interview-preparation.md"),
+        match_md=_artifact(directory / "match.md", file_only=file_only),
+        cv_md=_artifact(application / "cv.md", file_only=file_only),
+        cv_docx=_artifact(application / "cv.docx", file_only=file_only),
+        cover_letter_md=_artifact(application / "cover-letter.md", file_only=file_only),
+        cover_letter_docx=_artifact(application / "cover-letter.docx", file_only=file_only),
+        analysis_md=_artifact(application / "analysis.md", file_only=file_only),
+        interview_preparation_md=_artifact(application / "interview-preparation.md", file_only=file_only),
     )
 
 
-def _artifact(path: Path, present: bool | None = None) -> str | None:
+def _artifact(path: Path, present: bool | None = None, *, file_only: bool = False) -> str | None:
     try:
-        return str(path) if (op.exists(path) if present is None else present) else None
+        exists = present if present is not None else (path.is_file() if file_only else op.exists(path))
+        return str(path) if exists else None
     except OSError:
         return None
 

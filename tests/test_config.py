@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import os
 import unittest
@@ -8,6 +9,8 @@ from unittest.mock import patch
 
 from jobintel.config import apply_env_file, load_env
 from jobintel.storage_cli import cli_main
+from jobintel import storage_bridge as bridge
+from jobintel.accounts import load_account_context
 
 
 class EnvironmentFileTests(unittest.TestCase):
@@ -32,11 +35,13 @@ class EnvironmentFileTests(unittest.TestCase):
         with TemporaryDirectory() as temporary:
             root = Path(temporary) / "worktree"
             root.mkdir()
+            write_file_account_config(root)
             env_path = Path(temporary) / "primary.env"
             env_path.write_text("MONGODB_URI=file-uri\n", encoding="utf-8")
 
             def assert_env(_root: Path) -> None:
-                self.assertEqual("file-uri", os.environ["MONGODB_URI"])
+                self.assertEqual("file-uri", bridge.resource_environment(load_account_context(root))["MONGODB_URI"])
+                self.assertNotIn("MONGODB_URI", os.environ)
                 return None
 
             with patch.dict(os.environ, {}, clear=True), patch(

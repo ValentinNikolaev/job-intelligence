@@ -9,7 +9,7 @@ from pathlib import Path
 
 import yaml
 
-from .config import apply_env_file, load_env
+from .accounts import AccountConfigurationError, AccountContext, require_account_context, resolve_account_arguments
 from . import storage_bridge as bridge
 
 
@@ -19,20 +19,29 @@ def _write(path, value):
         path.write_text(json.dumps(value, ensure_ascii=False, indent=2, default=str) + "\n", encoding="utf-8")
 
 
-def configured_store(root, database=None):
+def configured_store(root, database=None, *, context=None, environment=None):
     from .mongodb_storage import MongoStore
+    context = require_account_context(root, context)
     config = yaml.safe_load((root / "config/data-services.yaml").read_text(encoding="utf-8"))
-    env = load_env(root / "sources/.env")
+    env = bridge.resource_environment(context) if environment is None else environment
     uri = env.get("MONGODB_URI", "")
     if not uri:
         raise ValueError("MONGODB_URI is required; no file fallback is permitted")
     return MongoStore(uri, database or env.get("JOBINTEL_DATABASE_NAME") or config["storage"]["database_name"])
 
 
-def cli_main(argv=None):
-    parser = argparse.ArgumentParser(description=__doc__)
+def cli_main(argv=None, *, root=None, context: AccountContext | None = None):
+    try:
+        context, argv = resolve_account_arguments(
+            list(sys.argv[1:] if argv is None else argv), root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+    parser = argparse.ArgumentParser(description=__doc__, allow_abbrev=False)
     parser.add_argument("operation", choices=["doctor", "inventory", "plan", "migrate", "reconcile", "vacancy-context", "export-applications", "backup", "verify-backup", "restore"])
-    parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--project-root", type=Path, default=context.project_root)
     parser.add_argument(
         "--env",
         type=Path,
@@ -49,13 +58,24 @@ def cli_main(argv=None):
     parser.add_argument("--ci", action="store_true")
     parser.add_argument("--sheets-snapshot", type=Path)
     args = parser.parse_args(argv)
-    if args.env:
-        try:
-            apply_env_file(args.env.resolve(), require_exists=True)
-        except Exception as exc:
-            print(f"Storage operation failed: {exc}", file=sys.stderr)
-            return 1
-    root = args.project_root.resolve()
+    try:
+        selected_root = args.project_root.resolve()
+        if root is not None and Path(root).resolve() != selected_root:
+            raise AccountConfigurationError("conflicting project roots")
+        context = require_account_context(selected_root, context)
+        if args.env is not None and not args.env.is_file():
+            raise FileNotFoundError(f"environment file does not exist: {args.env}")
+        with bridge.operation_resources(context, env_path=args.env):
+            return _run_storage(args, selected_root, context)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+    except FileNotFoundError as exc:
+        print(f"Storage operation failed: {exc}", file=sys.stderr)
+        return 1
+
+
+def _run_storage(args, root: Path, context: AccountContext):
     store = None
     try:
         from .migration import build_plan, import_plan, reconcile, export_applications
@@ -83,7 +103,7 @@ def cli_main(argv=None):
             elif args.operation == "migrate" and not args.apply:
                 result = import_plan(None, plan, dry_run=True)
             else:
-                store = configured_store(root, args.database)
+                store = configured_store(root, args.database, context=context)
                 if args.operation == "migrate":
                     store.ensure_schema()
                     result = import_plan(store, plan, dry_run=False)
@@ -142,7 +162,7 @@ def cli_main(argv=None):
                 raise ValueError("restore requires --input and an isolated jobintel_test_/jobintel_restore_ database")
             from .mongodb_storage import MongoStore
             from .backup import restore_backup
-            uri = load_env(root / "sources/.env").get("JOBINTEL_TEST_MONGODB_URI", "")
+            uri = bridge.resource_environment(context).get("JOBINTEL_TEST_MONGODB_URI", "")
             if not uri:
                 raise ValueError("restore requires a separate JOBINTEL_TEST_MONGODB_URI; production URI is never used")
             store = MongoStore(uri, args.database)

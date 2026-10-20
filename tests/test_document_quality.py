@@ -16,6 +16,7 @@ from jobintel.document_quality import (
     render_pdf_pages, validate_export,
 )
 from jobintel.document_quality_cli import main
+from tests.account_fixtures import write_account_config
 
 
 def write_docx(path: Path, paragraphs: list[str], *, link: str | None = None,
@@ -223,6 +224,7 @@ class ExportQualityTests(unittest.TestCase):
 
     def test_cli_writes_receipt_and_refuses_overwrite(self) -> None:
         with redirect_stdout(StringIO()):
+            write_account_config(self.root)
             self.assertEqual(0, main(["validate", "cv.md", "cv.docx", "--receipt", "receipt.json"], root=self.root))
         receipt = json.loads((self.root / "receipt.json").read_text())
         self.assertEqual("not_reviewed", receipt["visual_review"]["status"])

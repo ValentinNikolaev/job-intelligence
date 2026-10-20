@@ -9,6 +9,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from jobintel.lifecycle_cli import main
+from tests.account_fixtures import write_account_config
 
 
 class LifecycleCliTests(unittest.TestCase):
@@ -17,6 +18,7 @@ class LifecycleCliTests(unittest.TestCase):
             root = Path(temporary)
             (root / "config").mkdir()
             (root / "config/application-profile.yaml").write_text("candidate:\n  notice: TODO_CONFIRM\n", encoding="utf-8")
+            write_account_config(root)
             output = io.StringIO()
             with patch("jobintel.lifecycle_cli.ApplicationLifecycle", side_effect=AssertionError("must not access MongoDB")) as factory, redirect_stdout(output):
                 self.assertEqual(main(["profile-questions"], root=root), 0)

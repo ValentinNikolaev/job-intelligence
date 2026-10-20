@@ -24,6 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 75
     env:
+      JOBINTEL_ACCOUNT: current
       MONGODB_URI: ${{ secrets.MONGODB_URI }}
       JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME || 'job_intelligence' }}
       ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
@@ -48,6 +49,9 @@ jobs:
 
       - name: Install project
         run: python -m pip install -e .
+
+      - name: Validate account configuration
+        run: python -m jobintel.accounts --account current
 
       - name: Select configured storage
         id: storage_backend

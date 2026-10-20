@@ -15,7 +15,9 @@ candidate do not require separate accounts.
 Phases **0-3** were implemented in reviewed increments and merged in PR 2. Phase **4**,
 candidate-independent document preparation, is complete in
 [PR 3](https://github.com/ValentinNikolaev/job-intelligence/pull/3) on a new branch
-from the updated main. Phases 5-6 and operating a second account remain deferred.
+from the updated main. Phase **5** was implemented on a new branch from merged
+main and is now complete in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4);
+phase 6 and operating a second account remain deferred.
 Existing named-vacancy approval requirements still apply to actual application
 preparation; this implementation iteration uses synthetic fixtures only.
 
@@ -31,7 +33,11 @@ PR 2 was merged as `83d812e29fdfbbc1aa942def52011fe5a6bab2d3`. Phase 4 is comple
 in PR 3. Independent cumulative review R3 approved the clean published code at
 `d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6`; both exact-head CI runs passed.
 The iteration extracts preparation configuration while preserving analysis
-identities, candidate sources and published artifacts. Phases 5-6 remain deferred.
+identities, candidate sources and published artifacts. PR 3 was merged as
+`e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Phase 5 is complete on
+`ValentinNikolaev/multiaccount-p5` from that updated main. Clean cumulative R6
+approved published runtime `d66943b60107a196dc7a04f94429a6932aca058e`; exact-head
+push and PR CI passed. PR 4 remains open and unmerged; phase 6 remains deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
@@ -40,7 +46,7 @@ identities, candidate sources and published artifacts. Phases 5-6 remain deferre
 | 2 | Configuration-driven prefilter and triage | 1 | Done |
 | 3 | Configurable match-analysis preferences | 2 | Done |
 | 4 | Candidate-independent document preparation | 3 | Done |
-| 5 | Explicit account description with one live account | 4 | Not started |
+| 5 | Explicit account description with one live account | 4 | Done |
 | 6 | Second account in an isolated environment | 5 | Not started |
 
 Maintain this file in the same change as implementation progress:
@@ -292,34 +298,74 @@ passed 815 tests in 29.397 seconds and
 [PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39442699794)
 passed 815 in 32.250 seconds, both on attempt 1. Each CI run skipped two real-PDF
 checks because Poppler/pdfinfo was unavailable; the local full suite had no skips.
-Phase 4 is done. No real application was generated in this iteration. PR 3 remains
-separate from main; account selection and a second account remain phases 5-6 work.
+Phase 4 is done. No real application was generated in that iteration. PR 3 was
+subsequently merged as `e87e8dd9dd973a963b058abe0a2827c66b6385cb`. Account selection
+is implemented in phase 5 below; a second account remains phase 6 work.
 
 ## Phase 5: explicit account description, one live account
 
+Implementation scope: introduce an enforced single-account contract while keeping
+the supported existing layout. Descriptor references that consumers cannot honor
+must fail closed, rather than silently fall back to their previous defaults.
+Candidate/evidence settings remain owned by the preparation profile; integration
+destinations remain owned by data-services configuration and environment. Do not
+add a mutable process-wide active account or change match/preparation identities
+merely because an account label is introduced. Unknown or conflicting selections
+must fail before operational environment loading, timing, dispatch, locks or writes.
+The [account contract and entrypoint inventory](account-context.md) records the
+ownership boundaries, supported layout and explicit source/editorial limitations.
+
 Tasks:
 
-- [ ] Add a small versioned account descriptor referencing the existing policy,
+- [x] Add a small versioned account descriptor referencing the existing policy,
   profile, source configurations, data paths and integration destinations. Reuse
   configuration already extracted; avoid moving files merely to create a directory.
-- [ ] Introduce one resolver/context for these references and an explicit `--account`
+- [x] Introduce one resolver/context for these references and an explicit `--account`
   selector. Keep the existing account as the documented default.
-- [ ] Resolve account selection before dispatch, including separate handlers for
+- [x] Resolve account selection before dispatch, including separate handlers for
   `storage`, `sheets`, `applications`, `documents`, `evidence` and related commands.
-- [ ] Specify CLI/environment/config precedence and reject conflicting or unknown
+- [x] Specify CLI/environment/config precedence and reject conflicting or unknown
   account selection before data access. Test store caches and credential scoping.
-- [ ] Check current scheduled prompts, GitHub Actions, catalog generation, exports,
+- [x] Check current scheduled prompts, GitHub Actions, catalog generation, exports,
   notifications, backups and repository finalization with the single live account.
-- [ ] Use isolated fixtures to exercise distinct contexts without onboarding a second
+- [x] Use isolated fixtures to exercise distinct contexts without onboarding a second
   live candidate. Retain current MongoDB connection, schema and current file paths.
-- [ ] Review the retained shared Zend-credential exclusion before onboarding another
+- [x] Review the retained shared Zend-credential exclusion before onboarding another
   candidate; explicitly decide its ownership without weakening current candidate rules.
-- [ ] Resolve the deferred source-side Go/PHP/Italy relevance preferences listed in
+- [x] Resolve the deferred source-side Go/PHP/Italy relevance preferences listed in
   the rule inventory, or explicitly scope the supported source set, before claiming
   candidate-independent onboarding. Phases 0-3 leave those source decisions intact.
 
 Acceptance gate: implicit default and explicit current-account runs are equivalent;
 unknown accounts fail early. Only one live account is enabled.
+
+Phase 5 is complete in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4).
+The final local full suite passed 900 tests in 284.203 seconds without skips on
+Python 3.14.6/disposable MongoDB 8. R1, corrected R3, R4 and R5 approved their
+increments; clean cumulative R6 approved all 53 published paths at
+[`d66943b`](https://github.com/ValentinNikolaev/job-intelligence/commit/d66943b60107a196dc7a04f94429a6932aca058e).
+P5-001 and P5-002 are closed on that clean Windows checkout with explicit negative
+controls. R6 independently passed 117 tests in 32.709 seconds and 69 in 14.980
+seconds, no skips; actual junction and root-alias checks also passed.
+
+[Runtime push CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39467930438)
+passed 900 tests in 47.868 seconds on attempt 1.
+[Runtime PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39467937515/attempts/2)
+passed 900 in 54.188 seconds on attempt 2; attempt 1 stopped before tests when the
+test MongoDB container exited, with cause unknown. Each successful CI run skipped
+two real-PDF checks because Poppler/pdfinfo was unavailable; the local suite had no
+skips. All required MongoDB, test and cleanup steps actually ran. The PR job checked
+a synthetic merge of the reviewed head into main `629e9597`.
+
+Final council specialists and anonymized peer review accepted bounded publication
+subject to the integrated checks, complete staged inspection, clean published review
+and exact-head CI; these gates passed. Their convergence is not independent proof,
+and sampled boundary coverage does not establish concurrent tenancy or deployed
+Scheduled Task behavior. Agent review records are posted by the author account,
+not separate GitHub-user approvals. The existing source bundle and Zend exclusion
+remain explicitly scoped to the sole current account. No second candidate, production
+operation, application generation, canonical record/artifact rewrite or MongoDB
+migration occurred. The PR stays open and unmerged for handoff.
 
 ## Phase 6: connect the second account last
 
@@ -393,3 +439,12 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Final council (three separate architecture/risk/execution views and anonymized peer review) accepted bounded draft publication after the full suite and independent R2 closure. The remaining two-fixed-voice-file documentation paragraph was corrected to the configured nonempty list; a complete current-pack semantic reassessment passed 10/10 and coordinator inspected every reason. | Final policy SHA-256 `b912be8bca0b344eb9b283a8262af03766ea494dae5396ff8006c980bbfce3e0`, corpus `94f7fff8a3735f82dd5f343a2e7014273228c998968589cbd16e83e33e287457`, decisions `f63e65fb54a4050628f5b1c0c355412709070fe090728eac4e1eaf514a893217`. The same independent reviewer retained prior conversation context but read only the new pack during reassessment, so this is not a memory-clean replication. Council test counts overlap and are not additive confidence; source semantics remain a reviewed trust boundary. Phase 4 remains in progress pending finalizer publication, clean published-commit review and exact-SHA CI; phases 5-6 stay deferred. |
 | 2026-10-20 | Complete staged-diff inspection found P4-006: CV grounding hashed the bound project policy but still read editorial rules from the module checkout. Passed the explicit context policy path to validation and added an alternate-project anti-pattern regression with complete synthetic policy fixtures. Independent R2 reproduced the original bypass and verified rejection under the bound policy, default/restored passing controls and the expected old-fallback mutation failure. | Owner's 100 focused tests passed; each of the three final council advisors separately inspected the minimal three-file correction and passed its regression. Exact post-correction full suite passed 815 tests in 81.647 seconds, no skips, with disposable MongoDB 8/Python 3.14.6. Current 10/10 semantic receipt revalidated unchanged policy/input hashes; API-prohibition and diff checks passed. All P4-001 through P4-006 findings are closed. Only reviewed publication, clean published review and exact-SHA CI remain before phase-4 completion. |
 | 2026-10-20 | Accepted phase 4 after publication of `d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6` in PR 3. Fresh independent cumulative review R3 approved all 47 changed paths in a clean Windows checkout, supported closure of P4-001 through P4-006 and found no new confirmed P1/P2. Marked phase 4 done; phases 5-6 remain unstarted. | R3 observed 88 passing targeted executions without skips and two expected in-memory negative-control failures with restored passing controls. All nine employer chronologies equal the baseline; six remain within the configured scope. Fresh export/receipt recomputation preserves the recorded 10/10 bindings without independent semantic corroboration. Exact-head push CI 39442642289 and PR CI 39442699794 passed on attempt 1: 815 tests in 29.397/32.250 seconds, each with two missing-Poppler PDF skips. The final local full suite passed 815 in 81.647 seconds without skips. This acceptance increment changes documentation only and requires its own diff/link review and publication; no runtime suite repeat is claimed. Main, candidate sources, applications, statuses, catalog inputs and MongoDB contracts remain unchanged by this iteration. |
+| 2026-10-20 | Started phase 5 from merged phase-4 main `e87e8dd9dd973a963b058abe0a2827c66b6385cb` in new managed branch `ValentinNikolaev/multiaccount-p5`. Three independent architecture/risk/execution advisors inspected actual entrypoints; anonymized peer review is underway before implementation. The bounded design pins unsupported layout references and preserves the existing one-account resources. | Pre-change `python -m unittest discover -v` on Python 3.14.6 with a disposable MongoDB 8 replica set passed 815 tests in 227.222 seconds, no skips. Identified boundaries include pre-dispatch timing, subsidiary CLIs, direct archive/notification/restore scripts, current-directory Sheets routing, environment leakage and destination-scoped store caches. Implementation and acceptance remain pending; no production operations, candidate/artifact/status/catalog changes or phase-6 onboarding. |
+| 2026-10-20 | Preimplementation Quick council completed three independent first-principles/contrarian/execution passes and anonymized Orca-session peer review. Coordinator accepted bounded implementation with concerns converted to explicit gates: one `current` account, pinned unsupported references, operation-local credentials, coherent roots, pre-effect selection and a reviewed entrypoint inventory. | Convergence is not independent proof. The weakest point is distributed resource/root reconstruction, so acceptance requires actual early-rejection, cross-root/destination/credential tests and default/freshness parity. Descriptor/path-metadata reads and runtime dependency bootstrap may precede validation; operational reads/writes may not. CLI/process-environment disagreement rejects, dotenv cannot select an account. Existing source relevance and Zend exclusion remain scoped to the sole current account; broader onboarding stays deferred. No new runtime verification is claimed at this decision checkpoint. |
+| 2026-10-20 | Completed the dormant phase-5 contract increment: strict `config/accounts.yaml`, immutable `jobintel/accounts.py` context/resolver, safe selector extraction, freshness checks and read-only module gate; explicit descriptor-only fixtures and 33 focused tests. Added the account ownership/entrypoint guide. R1 independently approved the complete six-file delta; existing runtime consumers are still unchanged. | Owner's 33 tests passed in 1.602 seconds; independent R1 passed 33 in 1.574 seconds, no skips. R1 additionally verified real Windows internal/external config and registry junction rejection and root-alias parity; removing containment produced nine expected assertions across two tests, restored controls passed. Coordinator's final contract full suite passed 848 tests in 164.792 seconds on Python 3.14.6/disposable MongoDB 8, no skips. Runtime account wiring, operation-local credentials/cache isolation, scripts/Actions and final phase acceptance remain pending. No production, candidate/artifact/status/catalog or storage-contract changes. |
+| 2026-10-20 | Published the contract as `33b004064961c7d02fa40bc9a601c892c5d2d87d` in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4). The reviewed finalizer safely integrated concurrent main `629e95970333e4cc107d7f56727aa06c391eae4d`; its unrelated Qonto match record retained blob `a61e612058c3b35f8dc2d6a92df1e1e8ee42148c`. Clean Windows R2 requested P5-001: an LF-only duplicate-key test mutation became a no-op with checkout CRLF. | R2 observed 33 focused tests with one failure in 1.689 seconds, no skips; correctly duplicated CRLF YAML was rejected, and normalizing only the synthetic input restored the failing test. The owner replaced the brittle construction and added explicit LF/CRLF mutation assertions: 34 focused tests pass in 1.142 seconds, no skips; independent closure remains pending. Push CI 39463783940 attempt 1 passed 848 in 25.667 seconds with two missing-Poppler skips. PR CI 39463820636 attempt 1 stopped before tests on MongoDB container startup exit of unknown cause; same-commit attempt 2 passed. Runtime integration and final acceptance remain in progress. |
+| 2026-10-20 | Completed the phase-5 operational wiring across the main CLI, subsidiary CLIs, storage/workflow boundaries, archive/notification/isolated-restore scripts and seven operational Actions. Selection is resolved before effects; operation-local credentials preserve default dotenv → explicit dotenv → process precedence without mutating process environment. Canonical roots, delivery paths and destination-scoped store caches are enforced. The guide classifies shared repository/infrastructure utilities, pure explicit-input helpers and current-account source/Zend restrictions; no second account or alternate layout is enabled. | Independent R3 approved the script subset after 95 passing focused tests in 18.034 seconds and closed P5-001 locally, including LF/CRLF negative controls. Independent R4 approved central wiring after 62 tests in 23.081 seconds and 29 in 16.393 seconds, including real disposable MongoDB checks; old behavior reproduced P5-002 (partial explicit dotenv lost default URI/database), restored precedence passed. R5 approved leaf entrypoints after 132 tests in 15.505 seconds, 12 conflict probes, actual foreign-cwd module runs and junction rejection. These counts overlap and are not additive confidence. Published-checkout closure and exact-head runtime CI remain pending. |
+| 2026-10-20 | The first integrated runtime suite ran 900 tests in 170.881 seconds and failed five collection-safety cases: their mocked CLI invocation still supplied noncanonical source/registry roots and was correctly rejected before the tested collector. Updated only the fixture invocation to the selected root's sources/registry, preserving all original status, storage, usage and call-order assertions. | The owner then passed 45 focused tests in 5.984 seconds; independent R4 re-review passed all 10 collection-safety tests in 0.432 seconds and confirmed the collectors actually execute. The corrected complete suite is in progress; the failed run is not a passing gate. Three final council specialists found no runtime must-fix and conditionally accepted the bounded architecture pending integrated checks, anonymized peer review, complete staged inspection, publication, clean cumulative review and exact-head CI. The backup prompt received only a mechanical correction describing its explicit isolated-store seam; application/editorial policies and match identities are unchanged. |
+| 2026-10-20 | Corrected integrated verification completed: `python -m unittest discover -v` passed 900 tests in 284.203 seconds on Python 3.14.6 with a disposable MongoDB 8 replica set, no skips. The final project code/configuration API-prohibition search found no prohibited integrations; local links and diff checks passed. | Runtime implementation checklist items are complete, including explicit current-account source/Zend ownership limits. Phase 5 stays in progress until final council synthesis, complete staged inspection, reviewed publication, clean cumulative published-code review and exact-head CI. Canonical catalog inputs did not change, so catalog regeneration is not required. |
+| 2026-10-20 | Final Quick council and anonymized Orca-session peer review conditionally accepted reviewed publication of the frozen single-current-account runtime. Three specialists converged on bounded authority/configuration ownership without a new concrete must-fix; the peer independently observed 17 distinct focused tests, reproduced the five old-fixture failures in memory, restored all 10 collection-safety passes and confirmed the corrected full-suite log. Complete 52-path staged runtime diff inspection followed; no unrelated records, credentials or artifacts are staged. | The strongest argument examines the caller-trusted explicit-store seam and the actual guarded restore caller. The weakest accepted point is future operational callers bypassing account guards when using account-independent primitives; ContextVar scoping does not establish concurrent tenancy. The receipt field `source_files_mutated: false` is an assertion supported by inspected control flow/tests, not independent before/after forensic measurement. Convergence and overlapping counts are not additional proof. Reproduced pre-gate effects, destination drift or substantive published-tree differences require reassessment. Clean published cumulative review and exact-head CI remain mandatory before phase acceptance; deployed Scheduled Task settings have not been inspected or changed. |
+| 2026-10-20 | Accepted phase 5 after independent clean cumulative R6 approved the complete 53-path published delta at `d66943b60107a196dc7a04f94429a6932aca058e`. P5-001 and P5-002 are closed on the actual CRLF Windows checkout; no new confirmed P1/P2 or material missing test. Marked phase 5 Done; phase 6 remains Not started. | R6 passed 117 tests in 32.709 seconds and 69 in 14.980 seconds, no skips; four real configuration/registry junction redirections rejected and root-alias parity passed in 0.586 seconds. In-memory old-behavior negatives reproduced both reviewed defects and restored controls passed in 1.431 seconds. Unrelated Qonto match blob and empty registry diff verified. Exact-head push CI 39467930438 attempt 1 and PR CI 39467937515 attempt 2 passed 900 tests in 47.868/54.188 seconds, each with two missing-Poppler PDF skips; the local complete suite passed all 900 without skips. PR attempt 1 stopped before tests on Mongo container exit of unknown cause; it is retained as failed evidence. Final council release conditions are satisfied for the bounded runtime; this acceptance increment changes documentation only and requires its own review/publication and final-head CI before PR handoff. No runtime full-suite repeat is claimed. |

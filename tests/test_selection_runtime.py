@@ -1,4 +1,5 @@
 from __future__ import annotations
+from tests.account_fixtures import write_file_account_config
 
 import tempfile
 import unittest
@@ -135,6 +136,7 @@ class SelectionRuntimeTests(unittest.TestCase):
 
     def make_project(self, root: Path):
         (root / "config").mkdir()
+        write_file_account_config(root)
         for name in ("selection-policy.yaml", "matching-policy.yaml", "codex-workflows.yaml"):
             (root / "config" / name).write_bytes((ROOT / "config" / name).read_bytes())
         (root / "prompts").mkdir()
@@ -212,6 +214,7 @@ class SelectionRuntimeTests(unittest.TestCase):
             with self.subTest(command=command), tempfile.TemporaryDirectory() as temporary:
                 root = Path(temporary)
                 (root / "config").mkdir()
+                write_file_account_config(root)
                 (root / "config/selection-policy.yaml").write_text("schema_version: 999", encoding="utf-8")
                 with patch("jobintel.cli.__file__", str(root / "jobintel/cli.py")), patch("jobintel.cli.load_env", return_value={}), patch("jobintel.cli.workflow_lock") as lock, patch("jobintel.cli.discover_collectors") as discover, patch("jobintel.cli._collect_selected_jobs") as fetch, patch("jobintel.cli.Registry.migrate_metadata") as migrate, redirect_stdout(StringIO()), redirect_stderr(StringIO()):
                     result = main(command + ["--registry", str(root / "registry")])
@@ -226,6 +229,7 @@ class SelectionRuntimeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "config").mkdir()
+            write_file_account_config(root)
             (root / "config/selection-policy.yaml").write_text("schema_version: 999", encoding="utf-8")
             with patch("scripts.archive_jobs.op.get_store") as store, self.assertRaises(SelectionPolicyError):
                 archive(root, "skipped", 65)
@@ -240,6 +244,7 @@ class SelectionRuntimeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "config").mkdir()
+            write_file_account_config(root)
             path = root / "config/selection-policy.yaml"
             path.write_text("schema_version: 999", encoding="utf-8")
             (root / "config/codex-workflows.yaml").write_bytes((ROOT / "config/codex-workflows.yaml").read_bytes())
@@ -255,6 +260,7 @@ class SelectionRuntimeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "config").mkdir()
+            write_file_account_config(root)
             changed = replace(POLICY, target_technologies=("python",), max_age_days=10 ** 1000)
             (root / "config/selection-policy.yaml").write_text(yaml.safe_dump(asdict(changed)), encoding="utf-8")
             events = []

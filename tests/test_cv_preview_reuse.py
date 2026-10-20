@@ -11,6 +11,7 @@ from unittest.mock import patch
 
 from jobintel.applications import ApplicationError, HostMarkdownDocxConverter, _reuse_cv_preview
 from jobintel.document_quality_cli import main as document_main
+from tests.account_fixtures import write_account_config
 
 
 class CvPreviewReuseTests(unittest.TestCase):
@@ -58,6 +59,7 @@ class CvPreviewReuseTests(unittest.TestCase):
                   patch("jobintel.document_quality_cli.cv_role_page_warnings", return_value=[]),
                   patch("jobintel.document_quality_cli.timed_call", side_effect=lambda root, stage, vacancy, action: action()),
                   redirect_stdout(io.StringIO())):
+                write_account_config(root)
                 self.assertEqual(0, document_main(["preview-cv", str(draft)], root=root))
                 self.assertEqual(0, document_main(["preview-cv", str(draft)], root=root))
 

@@ -16,7 +16,12 @@ from urllib.parse import quote
 
 import yaml
 
-from jobintel.config import load_env
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from jobintel.accounts import AccountConfigurationError, AccountContext, require_account_context, resolve_account_arguments
+from jobintel import storage_bridge as op
 
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/sendMessage"
@@ -28,7 +33,9 @@ _URL_RE = re.compile(r"^\s*URL:\s*(.*)$", re.IGNORECASE)
 
 
 def _parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Send one Telegram notification asynchronously.")
+    parser = argparse.ArgumentParser(description="Send one Telegram notification asynchronously.", allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, default=Path(__file__).resolve().parents[1])
     source = parser.add_mutually_exclusive_group(required=True)
     source.add_argument("--message")
     source.add_argument("--message-file", type=Path)
@@ -39,12 +46,10 @@ def _parser() -> argparse.ArgumentParser:
     return parser
 
 
-def _default_env_path() -> Path:
-    return Path(__file__).resolve().parents[1] / "sources" / ".env"
-
-
-def notification_config() -> tuple[str, str]:
-    config = load_env(_default_env_path())
+def notification_config(*, context: AccountContext | None = None) -> tuple[str, str]:
+    root = context.project_root if context is not None else Path(__file__).resolve().parents[1]
+    context = require_account_context(root, context)
+    config = op.resource_environment(context)
     return (
         config.get("TELEGRAM_BOT_TOKEN", "").strip(),
         config.get("TELEGRAM_CHAT_ID", "").strip(),
@@ -196,8 +201,9 @@ def preserve_unsent_message(
     *,
     source_file: Path | None,
     prefix: str | None = None,
+    directory: Path | None = None,
 ) -> Path:
-    directory = source_file.parent if source_file is not None else Path(".codex-work")
+    directory = directory or (source_file.parent if source_file is not None else Path(".codex-work"))
     directory.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     clean_prefix = re.sub(r"[^A-Za-z0-9_.-]+", "-", (prefix or "unsent").strip()).strip("-")
@@ -212,13 +218,14 @@ def preserve_unsent_message(
     return target
 
 
-async def send_message(message: str, *, token: str, chat_id: str) -> dict[str, object]:
+async def send_message(message: str, *, token: str, chat_id: str,
+                       repository_root: Path | None = None) -> dict[str, object]:
     curl = shutil.which("curl") or shutil.which("curl.exe")
     if not curl:
         raise RuntimeError("curl is required to send Telegram notifications")
     if not message.strip():
         raise ValueError("Telegram message cannot be empty")
-    formatted_message = format_message_html(message)
+    formatted_message = format_message_html(message, repository_root=repository_root)
     command = [
         curl,
         "--silent",
@@ -254,8 +261,9 @@ async def send_message(message: str, *, token: str, chat_id: str) -> dict[str, o
     return response
 
 
-def delivery_fingerprint(message: str, chat_id: str, *, initiator: str | None = None) -> str:
-    payload = f"{chat_id}\0{format_message_html(message)}"
+def delivery_fingerprint(message: str, chat_id: str, *, initiator: str | None = None,
+                         repository_root: Path | None = None) -> str:
+    payload = f"{chat_id}\0{format_message_html(message, repository_root=repository_root)}"
     if initiator:
         payload = f"{initiator}\0{payload}"
     return hashlib.sha256(payload.encode("utf-8")).hexdigest()
@@ -268,9 +276,10 @@ async def send_message_once(
     chat_id: str,
     receipt_dir: Path,
     initiator: str | None = None,
+    repository_root: Path | None = None,
 ) -> tuple[dict[str, object] | None, bool]:
     receipt_dir.mkdir(parents=True, exist_ok=True)
-    fingerprint = delivery_fingerprint(message, chat_id, initiator=initiator)
+    fingerprint = delivery_fingerprint(message, chat_id, initiator=initiator, repository_root=repository_root)
     receipt_path = receipt_dir / f"{fingerprint}.json"
     if receipt_path.is_file():
         return None, False
@@ -285,7 +294,7 @@ async def send_message_once(
     try:
         with os.fdopen(descriptor, "w", encoding="utf-8") as claim:
             claim.write(datetime.now(timezone.utc).isoformat() + "\n")
-        response = await send_message(message, token=token, chat_id=chat_id)
+        response = await send_message(message, token=token, chat_id=chat_id, repository_root=repository_root)
         result = response.get("result")
         message_id = result.get("message_id") if isinstance(result, dict) else None
         receipt = {
@@ -302,16 +311,21 @@ async def send_message_once(
         claim_path.unlink(missing_ok=True)
 
 
-async def _main() -> int:
-    args = _parser().parse_args()
+async def _main(argv: list[str] | None = None) -> int:
+    try:
+        context, remaining = resolve_account_arguments(
+            sys.argv[1:] if argv is None else argv, default_root=Path(__file__).resolve().parents[1],
+        )
+        args = _parser().parse_args(remaining)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
     message = args.message
     if args.message_file is not None:
         message = args.message_file.read_text(encoding="utf-8")
     message = message_with_initiator(message or "", args.initiator)
-    message = enrich_vacancy_urls(
-        message,
-        Path(__file__).resolve().parents[1] / "registry",
-    )
+    with op.operation_resources(context):
+        message = enrich_vacancy_urls(message, context.path("registry"))
     try:
         validate_vacancy_urls(message)
     except ValueError as exc:
@@ -320,16 +334,18 @@ async def _main() -> int:
             message,
             source_file=args.message_file,
             prefix=args.initiator or "invalid-message",
+            directory=context.path("work"),
         )
         print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 1
-    token, chat_id = notification_config()
+    token, chat_id = notification_config(context=context)
     if not token or not chat_id:
         print("TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID are required", file=sys.stderr)
         preserved = preserve_unsent_message(
             message,
             source_file=args.message_file,
             prefix=args.initiator or "missing-secrets",
+            directory=context.path("work"),
         )
         print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 2
@@ -338,8 +354,9 @@ async def _main() -> int:
             message,
             token=token,
             chat_id=chat_id,
-            receipt_dir=Path(__file__).resolve().parents[1] / ".codex-work" / "telegram-deliveries",
+            receipt_dir=context.path("work") / "telegram-deliveries",
             initiator=args.initiator,
+            repository_root=context.project_root,
         )
     except Exception as exc:
         print(f"Telegram notification error: {exc}", file=sys.stderr)
@@ -347,6 +364,7 @@ async def _main() -> int:
             message,
             source_file=args.message_file,
             prefix=args.initiator or "send-failed",
+            directory=context.path("work"),
         )
         print(f"Unsent Telegram message preserved: {preserved}", file=sys.stderr)
         return 1

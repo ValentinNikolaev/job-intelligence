@@ -59,7 +59,10 @@ class CollectionSafetyContractTests(unittest.TestCase):
         ), patch.object(cli.op, "project_root", return_value=self.root), patch.object(
             cli, "workflow_lock", return_value=lock
         ), store_patch:
-            return cli.main(["fake", "--sources", str(self.root), "--registry", str(self.root)])
+            return cli.main([
+                "fake", "--sources", str(self.root / "sources"),
+                "--registry", str(self.root / "registry"),
+            ])
 
     def test_complete_source_outage_is_fatal(self) -> None:
         class Failing:

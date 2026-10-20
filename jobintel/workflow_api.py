@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import inspect
+from functools import wraps
 from collections.abc import Collection
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
@@ -10,6 +12,7 @@ from typing import Any
 import yaml
 
 from . import storage_bridge as op
+from .accounts import AccountConfigurationError, require_account_context
 
 from .applications import ApplicationGenerator, CodexApplicationDraftClient, HostMarkdownDocxConverter
 from .catalog_data import CatalogSnapshot, CatalogVacancy, load_catalog_snapshot
@@ -36,6 +39,24 @@ DEFAULT_PREPARE_MAX_ESTIMATED_INPUT_TOKENS = 18000
 
 class WorkflowApiError(RuntimeError):
     pass
+
+
+def _account_operation(function):
+    signature = inspect.signature(function)
+
+    @wraps(function)
+    def guarded(*args, context=None, **kwargs):
+        arguments = signature.bind(*args, **kwargs).arguments
+        registry = arguments.get("registry_root")
+        root = arguments.get("project_root")
+        root = Path(root).resolve() if root is not None else Path(registry).resolve().parent
+        current = require_account_context(root, context)
+        if registry is not None and Path(registry).resolve() != current.path("registry"):
+            raise AccountConfigurationError("registry must match the selected account path")
+        with op.operation_resources(current):
+            return function(*args, **kwargs)
+
+    return guarded
 
 
 @dataclass(frozen=True, slots=True)
@@ -79,6 +100,7 @@ def _queue_priority(item: QueueItem) -> tuple[int, str, str]:
     )
 
 
+@_account_operation
 def workflow_summary(
     project_root: Path,
     registry_root: Path,
@@ -123,6 +145,7 @@ def _summary_from_snapshot(
     }
 
 
+@_account_operation
 def workflow_limits(project_root: Path, collection_limit: int | None) -> dict[str, Any]:
     return _limits_from_policy(_policy(project_root), collection_limit)
 
@@ -139,6 +162,7 @@ def _limits_from_policy(policy: WorkflowPolicy, collection_limit: int | None) ->
     }
 
 
+@_account_operation
 def source_usage(registry_root: Path) -> dict[str, Any]:
     path = registry_root / "source-api-usage.yaml"
     if not op.exists(path):
@@ -169,6 +193,7 @@ def source_usage(registry_root: Path) -> dict[str, Any]:
     return {"sources": rows}
 
 
+@_account_operation
 def codex_usage(registry_root: Path) -> dict[str, Any]:
     path = registry_root / "codex-usage.yaml"
     if not op.exists(path):
@@ -178,12 +203,14 @@ def codex_usage(registry_root: Path) -> dict[str, Any]:
     return {"runs": runs if isinstance(runs, list) else []}
 
 
+@_account_operation
 def catalog_vacancies(registry_root: Path) -> dict[str, Any]:
     base = registry_root.parent
     rows = [vacancy.to_api_dict(base=base) for vacancy in load_catalog_snapshot(registry_root).vacancies]
     return {"vacancies": rows}
 
 
+@_account_operation
 def top_vacancies(registry_root: Path, *, limit: int = 5) -> list[dict[str, Any]]:
     return _top_from_snapshot(load_catalog_snapshot(registry_root), limit)
 
@@ -217,6 +244,7 @@ def _top_from_snapshot(snapshot: CatalogSnapshot, limit: int) -> list[dict[str, 
     return rows[:limit]
 
 
+@_account_operation
 def workflow_report(
     project_root: Path,
     registry_root: Path,
@@ -254,6 +282,7 @@ def workflow_report(
     }
 
 
+@_account_operation
 def queue_items(
     workflow: str,
     project_root: Path,
@@ -395,6 +424,7 @@ def _serialized_field_bytes(value: Any) -> int:
     return len(content.encode("utf-8"))
 
 
+@_account_operation
 def queue_response(
     workflow: str,
     project_root: Path,
@@ -412,6 +442,7 @@ def queue_response(
     }
 
 
+@_account_operation
 def estimate_input_tokens(
     workflow: str,
     project_root: Path,

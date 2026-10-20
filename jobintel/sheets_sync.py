@@ -14,6 +14,9 @@ import sys
 from datetime import datetime, timezone
 from collections.abc import Mapping, Sequence
 from pathlib import Path
+
+from .accounts import AccountConfigurationError, AccountContext, resolve_account_arguments
+from .storage_bridge import operation_resources
 from typing import Any
 
 import yaml
@@ -434,8 +437,23 @@ def build_batch_requests(plan: Mapping[str, Any], *, sheet_ids: Mapping[str, int
     return requests
 
 
-def cli_main(argv: Sequence[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="sheets")
+def cli_main(argv=None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
+    try:
+        context, arguments = resolve_account_arguments(
+            list(sys.argv[1:] if argv is None else argv), root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+        with operation_resources(context):
+            return _main(arguments, root=context.project_root)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+
+
+def _main(argv=None, *, root: Path) -> int:
+    parser = argparse.ArgumentParser(prog="sheets", allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, help="account project directory")
     commands = parser.add_subparsers(dest="command", required=True)
     for name in ("export", "plan", "verify", "requests", "observed", "read-ranges"):
         command = commands.add_parser(name)
@@ -469,37 +487,37 @@ def cli_main(argv: Sequence[str] | None = None) -> int:
     try:
         if args.command == "setup":
             result = {"requests": build_setup_requests(
-                _read_json(_codex_work_path(args.metadata)),
+                _read_json(_codex_work_path(args.metadata, root=root)),
                 confirmed_blank_sheet1=args.confirmed_blank_sheet1,
             )}
             result["payload_sha256"] = payload_hash(result)
         elif args.command == "export":
-            result = build_export(_read_json(_codex_work_path(args.input)))
+            result = build_export(_read_json(_codex_work_path(args.input, root=root)))
         elif args.command == "observed":
-            result = observe_workbook(_read_json(_codex_work_path(args.metadata)), _read_json(_codex_work_path(args.cells)),
-                                      requested_ranges=_read_json(_codex_work_path(args.ranges))["ranges"])
+            result = observe_workbook(_read_json(_codex_work_path(args.metadata, root=root)), _read_json(_codex_work_path(args.cells, root=root)),
+                                      requested_ranges=_read_json(_codex_work_path(args.ranges, root=root))["ranges"])
         elif args.command == "read-ranges":
-            result = {"ranges": workbook_read_ranges(_read_json(_codex_work_path(args.metadata)))}
+            result = {"ranges": workbook_read_ranges(_read_json(_codex_work_path(args.metadata, root=root)))}
         elif args.command == "plan":
             result = build_sync_plan(
-                _read_json(_codex_work_path(args.export)),
-                _read_json(_codex_work_path(args.observed)),
+                _read_json(_codex_work_path(args.export, root=root)),
+                _read_json(_codex_work_path(args.observed, root=root)),
                 synced_at=args.synced_at,
             )
         elif args.command == "verify":
             result = verify_sync_plan(
-                _read_json(_codex_work_path(args.plan)), _read_json(_codex_work_path(args.observed))
+                _read_json(_codex_work_path(args.plan, root=root)), _read_json(_codex_work_path(args.observed, root=root))
             )
         else:
-            config = load_destination_config(Path.cwd() / "config" / "data-services.yaml")
-            metadata = _read_json(_codex_work_path(args.metadata))
-            observed = _read_json(_codex_work_path(args.observed)) if args.observed else {}
+            config = load_destination_config(root / "config/data-services.yaml")
+            metadata = _read_json(_codex_work_path(args.metadata, root=root))
+            observed = _read_json(_codex_work_path(args.observed, root=root)) if args.observed else {}
             app_next = observed.get("next_row", args.application_next_row)
             history_next = observed.get("history", {}).get("next_row", args.history_next_row)
             if any(not isinstance(value, int) or isinstance(value, bool) or value < 2 for value in (app_next, history_next)):
                 raise SheetsSyncError("requests requires --observed with verified append positions")
             result = {"requests": build_batch_requests(
-                _read_json(_codex_work_path(args.plan)),
+                _read_json(_codex_work_path(args.plan, root=root)),
                 sheet_ids=_sheet_ids_from_metadata(metadata),
                 application_next_row=app_next,
                 history_next_row=history_next,
@@ -515,7 +533,7 @@ def cli_main(argv: Sequence[str] | None = None) -> int:
                     expansions.append({"appendDimension": {"sheetId": sheet_id, "dimension": "ROWS", "length": required_rows - current_rows}})
             result["requests"] = expansions + result["requests"]
             result["payload_sha256"] = payload_hash(result)
-        _write_json(_codex_work_path(args.output), result)
+        _write_json(_codex_work_path(args.output, root=root), result)
         if args.command == "verify" and result.get("verified") is False:
             return 1
     except (OSError, ValueError, SheetsSyncError) as exc:
@@ -791,9 +809,9 @@ def load_destination_config(path: Path) -> dict[str, str]:
     return result
 
 
-def _codex_work_path(path: Path) -> Path:
-    resolved = path.resolve()
-    work = (Path.cwd() / ".codex-work").resolve()
+def _codex_work_path(path: Path, *, root: Path) -> Path:
+    resolved = (root / path).resolve()
+    work = (root / ".codex-work").resolve()
     try:
         resolved.relative_to(work)
     except ValueError as exc:

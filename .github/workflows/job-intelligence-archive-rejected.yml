@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
+      JOBINTEL_ACCOUNT: current
       MONGODB_URI: ${{ secrets.MONGODB_URI }}
       JOBINTEL_DATABASE_NAME: ${{ vars.JOBINTEL_DATABASE_NAME || 'job_intelligence' }}
     steps:
@@ -27,6 +28,9 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install --upgrade pip && python -m pip install -e .
+      - name: Validate account configuration
+        run: python -m jobintel.accounts --account current
+
       - name: Select configured storage
         id: storage_backend
         shell: bash

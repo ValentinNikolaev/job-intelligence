@@ -13,6 +13,9 @@ single-account flow and MongoDB storage; a second account is connected last.
 The [preparation configuration guide](docs/preparation-configuration.md) describes
 phase 4 source resolution, reviewed career corrections and draft/manifest identity.
 
+The [single-account execution contract](docs/account-context.md) describes phase 5
+selection, supported paths, credential precedence and operational entrypoints.
+
 The current MVP implements Adzuna, Arbeitnow, CleanJobData, DOU, Himalayas,
 Jobicy, Jobspresso, Jooble, We Work Remotely, public Ashby and Greenhouse
 job-board collectors, and custom company-board monitoring.

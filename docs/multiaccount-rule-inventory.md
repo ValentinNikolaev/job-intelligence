@@ -333,9 +333,9 @@ approved and closed CR-007: index/worktree LF, 66 LF/zero CR, original hash pres
 passed 782 tests in 24.858 seconds with two missing-Poppler PDF skips. The local full
 suite had no skips. Earlier CI's before-test MongoDB startup failure and successful
 retry are retained in the [plan's final synthesis](multiaccount-migration-plan.md).
-The next action is reviewed finalizer publication of the documentation-only acceptance
-increment and final PR handoff. Changed bindings/integrated code, refused publication,
-new review defects or CI failures require reassessment. Phases 4-6 remain deferred.
+Phase 3 was accepted and merged in PR 2. Changed bindings/integrated code, refused
+publication, new review defects or CI failures require reassessment. Later-phase
+status is recorded below and in the migration execution log.
 
 ## Phase-4 preparation configuration
 
@@ -361,3 +361,24 @@ Independent cumulative R3 approved the clean published code `d8495d0` after 88
 passing targeted executions without skips. Exact-head push and PR CI each passed
 815 tests with two missing-Poppler PDF skips; the local full suite passed all 815
 without skips. No account selector or second live account is enabled in phase 4.
+
+## Phase-5 account ownership
+
+The [account guide](account-context.md) defines the sole supported `current`
+account, pinned descriptor references and resource paths, selector precedence,
+operation-local credential precedence and operational entrypoint inventory.
+Unknown selections and incompatible roots fail before operational access; default
+and explicit current selection share the existing destinations and policies.
+The current Go/PHP/Italy source bundle and Zend-credential exclusion are explicitly
+scoped to this account. They require a new ownership decision before phase-6
+onboarding; this phase does not claim a generic source set or shared tenancy.
+
+Phase 5 is complete in [PR 4](https://github.com/ValentinNikolaev/job-intelligence/pull/4).
+Independent clean cumulative R6 approved published runtime `d66943b6`, closed both
+reviewed findings and passed 186 targeted executions without skips. Exact-head
+push and PR CI passed 900 tests with two missing-Poppler PDF skips each; the local
+full suite passed all 900 without skips. The [execution log](multiaccount-migration-plan.md#execution-log)
+records failed attempts, corrected checks and final council limitations. PR 4 remains
+open and unmerged; phase 6 remains deferred.
+Candidate evidence, canonical records, artifacts, status, catalog inputs and the
+MongoDB storage contract are unchanged by this implementation.

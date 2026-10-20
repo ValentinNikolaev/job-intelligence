@@ -10,6 +10,9 @@ import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
+
+from .accounts import AccountConfigurationError, AccountContext, resolve_account_arguments
+from .storage_bridge import operation_resources
 from typing import Callable, TypeVar
 
 T = TypeVar("T")
@@ -75,13 +78,28 @@ def report(root: Path) -> dict[str, object]:
     return result
 
 
-def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="run.py timing")
+def main(argv=None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
+    try:
+        context, arguments = resolve_account_arguments(
+            list(sys.argv[1:] if argv is None else argv), root=root, context=context,
+            default_root=Path(__file__).resolve().parents[1],
+        )
+        with operation_resources(context):
+            return _main(arguments, root=context.project_root)
+    except AccountConfigurationError as exc:
+        print(f"Account configuration error: {exc}", file=sys.stderr)
+        return 2
+
+
+def _main(argv=None, *, root: Path) -> int:
+    parser = argparse.ArgumentParser(prog="run.py timing", allow_abbrev=False)
+    parser.add_argument("--account", help="account identifier (default: current)")
+    parser.add_argument("--project-root", type=Path, help="account project directory")
     parser.add_argument("action", choices=("start", "stop", "report"))
     parser.add_argument("stage", nargs="?", choices=sorted(MODEL_STAGES))
     parser.add_argument("--vacancy", help="selected vacancy ID or directory; omit for shared work")
     args = parser.parse_args(argv)
-    project_root = Path(root or Path.cwd())
+    project_root = root
     if args.action == "report":
         if args.stage or args.vacancy:
             parser.error("report does not accept a stage or vacancy")
@@ -116,3 +134,7 @@ def main(argv: list[str] | None = None, *, root: Path | None = None) -> int:
     marker.unlink()
     print(json.dumps(event, ensure_ascii=False, sort_keys=True))
     return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

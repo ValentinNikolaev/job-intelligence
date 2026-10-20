@@ -199,16 +199,22 @@ class TelegramNotificationTests(unittest.TestCase):
         self.assertEqual(2, sender.await_count)
 
     def test_loads_credentials_from_sources_env_with_environment_override(self) -> None:
+        from jobintel.accounts import load_account_context
+
         with TemporaryDirectory() as temporary:
-            env_path = Path(temporary) / ".env"
+            root = Path(temporary)
+            (root / "config").mkdir()
+            (root / "config/accounts.yaml").write_bytes((Path(__file__).parents[1] / "config/accounts.yaml").read_bytes())
+            (root / "sources").mkdir()
+            env_path = root / "sources/.env"
             env_path.write_text(
                 "TELEGRAM_BOT_TOKEN=file-token\nTELEGRAM_CHAT_ID=file-chat\n",
                 encoding="utf-8",
             )
-            with patch("scripts.notify_telegram._default_env_path", return_value=env_path), patch.dict(
+            with patch.dict(
                 "os.environ", {"TELEGRAM_CHAT_ID": "env-chat"}, clear=False
             ):
-                token, chat_id = notification_config()
+                token, chat_id = notification_config(context=load_account_context(root))
 
         self.assertEqual("file-token", token)
         self.assertEqual("env-chat", chat_id)
