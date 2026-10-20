@@ -19,19 +19,20 @@ account remain outside this authorization.
 
 ## Progress and maintenance
 
-Phases 0-2 are complete, published and independently reviewed. Phase 3 is in progress:
-analysis preferences, shared freshness and sealed Codex drafts passed core review and
-both independent semantic gates. Full MongoDB verification and architecture review
-passed. The final three-view council and anonymized peer review approved the bounded
-implementation for publication in draft PR 2. Phase 3 remains in progress until clean
-published-worktree review R6 and CI on the exact published commit pass.
+Phases 0-3 are complete in [PR 2](https://github.com/ValentinNikolaev/job-intelligence/pull/2):
+implementation, independent semantic gates, final council, cumulative published-code
+review and the clean-checkout correction review passed. The exact corrected commit
+[`e30d2dc`](https://github.com/ValentinNikolaev/job-intelligence/commit/e30d2dc2941ed79ee87239e2ee7260498151e611)
+passed [PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39428852968/attempts/1).
+The next action is reviewed finalizer publication of this documentation-only acceptance
+increment and final PR handoff. Phases 4-6 remain deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
 | 0 | Inventory and behavioral baseline | None | Done |
 | 1 | Validated configuration for existing selection rules | 0 | Done |
 | 2 | Configuration-driven prefilter and triage | 1 | Done |
-| 3 | Configurable match-analysis preferences | 2 | In progress |
+| 3 | Configurable match-analysis preferences | 2 | Done |
 | 4 | Candidate-independent document preparation | 3 | Not started |
 | 5 | Explicit account description with one live account | 4 | Not started |
 | 6 | Second account in an isolated environment | 5 | Not started |
@@ -190,7 +191,7 @@ Tasks:
 Acceptance gate: personal analysis preferences come from configuration, changed
 inputs invalidate the right results, and evaluation supports the intended behavior.
 
-Working-tree evidence: [matching policy and sealed analysis](matching-policy.md),
+Implementation evidence: [matching policy and sealed analysis](matching-policy.md),
 strict qualitative policy loader, shared runtime effective-input identity and actual
 payload-bound schema-2 drafts. Targeted unit and real-MongoDB checks exercise current
 and stale inputs without rewriting original judgments. R5 core review approved the
@@ -198,9 +199,9 @@ corrected publication boundaries. Actual blind matching evaluation passed and it
 exact effective identity is pinned for legacy compatibility. Fresh independent
 editorial evaluation passed 10/10 after bounded fixture clarification. Final full
 MongoDB verification passed 782 tests without skips; core post-pin and architecture
-R5a reviews approved. Final council and peer review accepted the local implementation
-and gates for publication; phase 3 is `In progress`. Publication, clean R6 review and
-exact-commit CI are future steps.
+R5a reviews approved. Final council and peer review approved; cumulative R6 approved
+the published runtime, and clean R7 closed its sole finding CR-007 after the focused
+LF-preservation correction. CI passed on that exact corrected commit. Phase 3 is done.
 
 ### Final council synthesis
 
@@ -216,13 +217,30 @@ corpus. Identical variant judgments do not prove broad numeric stability or hiri
 effects. Recomputing a receipt checks bindings; it is not independent semantic
 corroboration. The editorial fixture clarification does not establish that the
 original omission judgment was wrong. Underlying semantic artifacts remain ignored;
-the coordinator will preserve the exact current packs, decisions and receipts, copy
-them into the clean R6 checkout and revalidate them through R6 and CI.
+retain the exact packs, decisions and receipts with their recorded hashes for audit
+and repeat binding validation. Ignored artifacts are not durable tracked evidence.
 
-The next action is reviewed finalizer publication into draft PR 2, followed by clean
-R6 and CI on the exact published commit. Finalizer refusal, changed bindings or
-integrated code, R6 defects or CI failures require reassessment. Phase 3 will be
-marked done only after those gates actually pass, in a final documentation increment.
+Published cumulative review R6 approved the 45-path runtime change at `2877883` and
+identified only CR-007, checkout conversion of the frozen baseline prompt to CRLF.
+Commit `e30d2dc` pins that fixture alone to LF. Independent R7 approved a fresh Windows
+checkout with `core.autocrlf=true`: index/worktree LF, 66 LF bytes, zero CR bytes and
+the exact original hash; all 23 executions passed in 2.563 seconds, including the
+formerly failing test and the full 22-test evaluator module. The checkout was clean.
+The council peer retained its approval after inspecting the minimal attributes delta.
+
+[Corrected-commit PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39428852968/attempts/1)
+passed 782 tests in 24.858 seconds with two missing-Poppler PDF skips. The local full
+suite passed all 782 with no skips. Earlier `2877883`
+[push CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39427800350)
+passed 782 with the same two skips; its
+[first PR attempt](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39427805497/attempts/1)
+stopped before tests when the MongoDB container exited, with cause unknown. The
+[second attempt](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39427805497/attempts/2)
+passed 782 with those two skips. No code defect is inferred from that startup failure.
+
+The next action is reviewed finalizer publication of this documentation-only acceptance
+increment and final PR handoff. Changed bindings or integrated code, finalizer refusal,
+new review defects or CI failures require reassessment. Phases 4-6 remain deferred.
 
 ## Phase 4: candidate-independent document preparation
 
@@ -332,3 +350,4 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Fresh independent editorial assessment passed 10/10; coordinator inspected every reason. The earlier 9/10 and defensible omission/adjudication remain recorded above. Core post-pin review approved without new findings. Architecture R5a re-review approved and closed CR-003/004 after 47 independent tests, five expected mutation failures and restored controls; actual matching receipt revalidated. | Editorial corpus SHA-256 `569ee2c6f5b55b9c8fa3e06030e239e11a26d52b0bff4627fc3bcd87a15e1ecc`, policy `222e61ce3544f70f9ef2b463c9b4c911ed5ac19cee11e39878e27d109e8665cd`, decisions `6c109f3db119d58f7b2626da7a6ab5dc01fc4309b9a82f08017d282943596555`. Final `python -m unittest discover -v` on Python 3.14.6 with disposable MongoDB 8 passed 782 tests in 127.566 seconds, no skips; API unit/search and diff checks passed. Two final council views approved bounded draft publication; the third view and anonymized peer review remain pending. Phase 3 stays in progress. Publication, clean R6 and exact-published-commit CI remain future steps. |
 | 2026-10-20 | Final council and anonymized peer review approved bounded publication with no confirmed must-fix; synthesis and accepted evidence limits recorded above. All three views agreed on phases 0-3 boundaries; phases 4-6 remain deferred. Fresh executor verification passed 67 focused tests in 79.035 seconds, independently of the coordinator's full suite. | Local implementation and gates are accepted for publication into draft PR 2. Exact ignored semantic packs/decisions/receipts will be preserved and revalidated in the clean review checkout. Receipt recomputation establishes bindings, not independent semantic corroboration; the one-reviewer synthetic evaluation remains limited. Phase 3 stays in progress pending actual finalizer publication, clean R6 and exact-published-SHA CI. |
 | 2026-10-20 | Published-checkout review R6 identified CR-007: `core.autocrlf=true` converts the frozen baseline prompt fixture to CRLF, breaking its exact original-byte/hash regression. Added one root `.gitattributes` rule setting only `/tests/fixtures/match-policy-baseline-prompt.md` to `text eol=lf`; fixture content and the byte assertion remain unchanged. | `python -m unittest tests.test_match_policy_eval -v` passed all 22 tests in 2.360 seconds. Git's checkout filter with `core.autocrlf=true` now preserves LF and original SHA-256 `98f9d0657557afc0a256b0a2a9140300738d2e38d1cec59ca40bc167acc5cb47`. Diff checks passed. No runtime, configuration, prompt, schema or evaluation-input changes. Phase 3 remains in progress pending publication of this correction, independent corrected R6 review and exact-published-SHA CI. |
+| 2026-10-20 | Accepted phase 3 and marked phases 0-3 complete. Published runtime `2877883f74eaec8583135c11cab1dee4002cbc95` received cumulative R6 approval apart from CR-007. Published LF correction `e30d2dc2941ed79ee87239e2ee7260498151e611` received independent clean R7 approval and closed CR-007: fresh Windows `core.autocrlf=true` checkout, index/worktree LF, 66 LF/zero CR, exact original hash, 23 passing executions in 2.563 seconds and clean state. Council peer retained approval. | Exact corrected-commit PR CI run 39428852968 attempt 1 passed 782 tests in 24.858 seconds, two missing-Poppler PDF skips; prior runtime push CI passed likewise. Prior runtime PR attempt 1 stopped before tests on MongoDB container exit of unknown cause; attempt 2 passed. Local full suite remains 782 passing/no skips in 127.566 seconds. Durable PR/CI links and history are recorded in the final synthesis. This acceptance increment changes documentation only; runtime tests were not rerun. Phases 4-6 remain deferred; reviewed finalizer publication of acceptance docs and final PR handoff are next. |

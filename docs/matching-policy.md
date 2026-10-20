@@ -180,7 +180,17 @@ passed. Core review, including the production pin, approved the corrected code.
 Architecture review R5a closed CR-003/004 after 47 independent tests and five expected
 mutation failures followed by restored passing controls; it also revalidated the
 actual matching receipt. Final council and anonymized peer review accepted bounded
-publication. Phase 3 remains in progress pending publication, clean published-worktree
-review R6 and CI on the published commit. Exact ignored packs, decisions and receipts
-will be preserved for clean-checkout revalidation; recomputation checks bindings,
-separately from the original semantic judgments.
+publication. Cumulative published-code review R6 approved the runtime; its sole finding
+CR-007 concerned checkout line endings in the frozen baseline fixture. The focused
+LF rule in [`e30d2dc`](https://github.com/ValentinNikolaev/job-intelligence/commit/e30d2dc2941ed79ee87239e2ee7260498151e611)
+preserves its original bytes. Fresh Windows R7 review with `core.autocrlf=true`
+approved and closed CR-007 after 23 passing executions in 2.563 seconds, with
+index/worktree LF, 66 LF/zero CR and the original hash. The council peer retained approval.
+[CI on that exact commit](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39428852968/attempts/1)
+passed 782 tests in 24.858 seconds, with two missing-Poppler PDF skips. Phase 3 is
+complete in [PR 2](https://github.com/ValentinNikolaev/job-intelligence/pull/2); phases 4-6
+remain deferred. Earlier CI startup failure/retry evidence remains in the
+[migration plan](multiaccount-migration-plan.md). Retain exact ignored packs, decisions
+and receipts for repeat validation: recomputation checks bindings separately from
+the original semantic judgments. This final acceptance increment changes docs only;
+runtime tests were not rerun.

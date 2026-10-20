@@ -242,11 +242,11 @@ unit and explicit runtime/configuration search checks, local Markdown links and
 `git diff --check` passed. Phase 2 is accepted and done; publication is the coordinator's
 next action. Phase 3 remains unstarted.
 
-## Phase-3 working-tree implementation
+## Phase-3 accepted implementation
 
 Phase 2 was published as `d5711331d032c38d27d995ee6a820f7cdfef8c0c` in PR 2.
 Independent cumulative review R4 approved the clean published worktree after 90 tests
-and a four-failure negative control. Phase 3 is now in progress; its runtime contract
+and a four-failure negative control. Phase 3 is complete; its runtime contract
 is documented in [matching-policy.md](matching-policy.md).
 
 `config/matching-policy.yaml` now owns the former personal preferences from the match
@@ -318,10 +318,21 @@ Accepted limits remain one masked matching reviewer and a small synthetic corpus
 identical judgments do not demonstrate broad numeric stability or hiring effects.
 Receipt recomputation verifies bindings rather than independently corroborating
 semantic judgments. The editorial clarification does not establish that the original
-omission was wrong. The coordinator will preserve the exact ignored evaluation
-packs, decisions and receipts and copy them to the clean R6 checkout for revalidation.
+omission was wrong. Retain the exact ignored evaluation packs, decisions and receipts
+with the recorded hashes for repeat binding validation; these artifacts remain
+outside the tracked evidence.
 
-Phase 3 remains in progress with local implementation/gates accepted for publication
-into draft PR 2. Reviewed finalizer publication, clean R6 and exact-published-commit
-CI remain future steps. Refused publication, changed bindings/integrated code, R6
-defects or CI failures require reassessment. Phases 4-6 remain deferred.
+Phase 3 is complete in [PR 2](https://github.com/ValentinNikolaev/job-intelligence/pull/2).
+Cumulative R6 approved the published runtime and found only CR-007: Windows checkout
+conversion changed frozen baseline bytes. The minimal `.gitattributes` correction
+in [`e30d2dc`](https://github.com/ValentinNikolaev/job-intelligence/commit/e30d2dc2941ed79ee87239e2ee7260498151e611)
+pins only that fixture to LF. Fresh clean Windows R7 review with `core.autocrlf=true`
+approved and closed CR-007: index/worktree LF, 66 LF/zero CR, original hash preserved,
+23 passing executions in 2.563 seconds. The council peer retained approval.
+[Exact-commit PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39428852968/attempts/1)
+passed 782 tests in 24.858 seconds with two missing-Poppler PDF skips. The local full
+suite had no skips. Earlier CI's before-test MongoDB startup failure and successful
+retry are retained in the [plan's final synthesis](multiaccount-migration-plan.md).
+The next action is reviewed finalizer publication of the documentation-only acceptance
+increment and final PR handoff. Changed bindings/integrated code, refused publication,
+new review defects or CI failures require reassessment. Phases 4-6 remain deferred.
