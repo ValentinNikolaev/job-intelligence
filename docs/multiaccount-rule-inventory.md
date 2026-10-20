@@ -339,7 +339,8 @@ new review defects or CI failures require reassessment. Phases 4-6 remain deferr
 
 ## Phase-4 preparation configuration
 
-Phase 4 is in progress. The [preparation guide](preparation-configuration.md) records
+Phase 4 is complete in [PR 3](https://github.com/ValentinNikolaev/job-intelligence/pull/3).
+The [preparation guide](preparation-configuration.md) records
 configuration ownership, source boundaries, profile precedence and legacy behavior.
 Personal filename, path, employer-alias and career-window decisions move to the
 required `preparation` section of `config/application-profile.yaml`; voice paths stay
@@ -356,3 +357,7 @@ relevance preferences. A second live account remains phase 6 work.
 
 See the [migration execution log](multiaccount-migration-plan.md#execution-log) for
 actual baseline disagreements, review findings, corrective work and release gates.
+Independent cumulative R3 approved the clean published code `d8495d0` after 88
+passing targeted executions without skips. Exact-head push and PR CI each passed
+815 tests with two missing-Poppler PDF skips; the local full suite passed all 815
+without skips. No account selector or second live account is enabled in phase 4.

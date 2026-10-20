@@ -12,11 +12,12 @@ An account represents one candidate, their preferences, evidence, application
 history and integration destinations. Multiple search profiles for the same
 candidate do not require separate accounts.
 
-Phases **0-3** were implemented in reviewed increments and merged in PR 2. The next
-authorized iteration covers **phase 4**, candidate-independent document preparation,
-on a new branch from the updated main. Phases 5-6 and operating a second account
-remain deferred. Existing named-vacancy approval requirements still apply to actual
-application preparation; this implementation iteration uses synthetic fixtures only.
+Phases **0-3** were implemented in reviewed increments and merged in PR 2. Phase **4**,
+candidate-independent document preparation, is complete in
+[PR 3](https://github.com/ValentinNikolaev/job-intelligence/pull/3) on a new branch
+from the updated main. Phases 5-6 and operating a second account remain deferred.
+Existing named-vacancy approval requirements still apply to actual application
+preparation; this implementation iteration uses synthetic fixtures only.
 
 ## Progress and maintenance
 
@@ -25,10 +26,12 @@ implementation, independent semantic gates, final council, cumulative published-
 review and the clean-checkout correction review passed. The exact corrected commit
 [`e30d2dc`](https://github.com/ValentinNikolaev/job-intelligence/commit/e30d2dc2941ed79ee87239e2ee7260498151e611)
 passed [PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39428852968/attempts/1).
-PR 2 was merged as `83d812e29fdfbbc1aa942def52011fe5a6bab2d3`. Phase 4 is now in progress
-on `ValentinNikolaev/multiaccount-p4`, created from that updated main. The current
-iteration extracts preparation configuration while preserving analysis identities,
-candidate sources and published artifacts. Phases 5-6 remain deferred.
+PR 2 was merged as `83d812e29fdfbbc1aa942def52011fe5a6bab2d3`. Phase 4 is complete on
+`ValentinNikolaev/multiaccount-p4`, created from that updated main, and published
+in PR 3. Independent cumulative review R3 approved the clean published code at
+`d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6`; both exact-head CI runs passed.
+The iteration extracts preparation configuration while preserving analysis
+identities, candidate sources and published artifacts. Phases 5-6 remain deferred.
 
 | Phase | Deliverable | Depends on | Status |
 | --- | --- | --- | --- |
@@ -36,7 +39,7 @@ candidate sources and published artifacts. Phases 5-6 remain deferred.
 | 1 | Validated configuration for existing selection rules | 0 | Done |
 | 2 | Configuration-driven prefilter and triage | 1 | Done |
 | 3 | Configurable match-analysis preferences | 2 | Done |
-| 4 | Candidate-independent document preparation | 3 | In progress |
+| 4 | Candidate-independent document preparation | 3 | Done |
 | 5 | Explicit account description with one live account | 4 | Not started |
 | 6 | Second account in an isolated environment | 5 | Not started |
 
@@ -274,8 +277,23 @@ P4-001 through P4-006 are closed. Three final council views and anonymized peer
 review accepted bounded draft publication after those local gates passed. The
 final bound editorial assessment passed 10/10; its reused reviewer terminal had
 prior conversation context, so this is not a memory-clean independent replication.
-Phase 4 remains in progress until reviewed publication, clean published-commit
-review and exact-commit CI pass. No real application was generated in this iteration.
+Published code
+[`d8495d0`](https://github.com/ValentinNikolaev/job-intelligence/commit/d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6)
+received independent cumulative R3 approval from a clean Windows checkout after
+inspection of all 47 changed paths and 88 passing targeted executions without skips.
+Two isolated negative controls reproduced the old alternate-policy and invented-month
+defects; restored controls passed. Current chronology matches the baseline across
+nine employers, with six permitted by the configured window. The copied editorial
+pack and receipt exactly match fresh export/recomputation; this verifies bindings
+without adding independent semantic corroboration.
+
+[Push CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39442642289)
+passed 815 tests in 29.397 seconds and
+[PR CI](https://github.com/ValentinNikolaev/job-intelligence/actions/runs/39442699794)
+passed 815 in 32.250 seconds, both on attempt 1. Each CI run skipped two real-PDF
+checks because Poppler/pdfinfo was unavailable; the local full suite had no skips.
+Phase 4 is done. No real application was generated in this iteration. PR 3 remains
+separate from main; account selection and a second account remain phases 5-6 work.
 
 ## Phase 5: explicit account description, one live account
 
@@ -374,3 +392,4 @@ Such work requires a separate decision after the phased migration is useful.
 | 2026-10-20 | Corrected core review R2 approved and closed P4-002 through P4-005 after independent positive/negative reproductions: authoritative fresh project contexts, foreign registry rejection, raw-client rejection/default and honest legacy-only compatibility, source date precision, mandatory cache receipts and tamper detection. Direct lint now rejects foreign/stale contexts before reads. A database-only raw-client fixture explicitly tests legacy behavior instead of expecting current schema-3 provenance. | R2 independently ran ten focused regressions plus original counterexamples; integration owner ran 57 focused tests with actual disposable MongoDB, no skips. A preceding 812-test run had one error in that legacy fixture before its adaptation; this was not treated as a pass. Final post-correction `python -m unittest discover -v` passed 814 tests in 81.118 seconds with no skips. API-prohibition unit/search, all 66 local links and diff checks passed. No source, vacancy, artifact, status or catalog-input changes. |
 | 2026-10-20 | Final council (three separate architecture/risk/execution views and anonymized peer review) accepted bounded draft publication after the full suite and independent R2 closure. The remaining two-fixed-voice-file documentation paragraph was corrected to the configured nonempty list; a complete current-pack semantic reassessment passed 10/10 and coordinator inspected every reason. | Final policy SHA-256 `b912be8bca0b344eb9b283a8262af03766ea494dae5396ff8006c980bbfce3e0`, corpus `94f7fff8a3735f82dd5f343a2e7014273228c998968589cbd16e83e33e287457`, decisions `f63e65fb54a4050628f5b1c0c355412709070fe090728eac4e1eaf514a893217`. The same independent reviewer retained prior conversation context but read only the new pack during reassessment, so this is not a memory-clean replication. Council test counts overlap and are not additive confidence; source semantics remain a reviewed trust boundary. Phase 4 remains in progress pending finalizer publication, clean published-commit review and exact-SHA CI; phases 5-6 stay deferred. |
 | 2026-10-20 | Complete staged-diff inspection found P4-006: CV grounding hashed the bound project policy but still read editorial rules from the module checkout. Passed the explicit context policy path to validation and added an alternate-project anti-pattern regression with complete synthetic policy fixtures. Independent R2 reproduced the original bypass and verified rejection under the bound policy, default/restored passing controls and the expected old-fallback mutation failure. | Owner's 100 focused tests passed; each of the three final council advisors separately inspected the minimal three-file correction and passed its regression. Exact post-correction full suite passed 815 tests in 81.647 seconds, no skips, with disposable MongoDB 8/Python 3.14.6. Current 10/10 semantic receipt revalidated unchanged policy/input hashes; API-prohibition and diff checks passed. All P4-001 through P4-006 findings are closed. Only reviewed publication, clean published review and exact-SHA CI remain before phase-4 completion. |
+| 2026-10-20 | Accepted phase 4 after publication of `d8495d0d64f1d49566a2cdc8cdf11ac547d1e2f6` in PR 3. Fresh independent cumulative review R3 approved all 47 changed paths in a clean Windows checkout, supported closure of P4-001 through P4-006 and found no new confirmed P1/P2. Marked phase 4 done; phases 5-6 remain unstarted. | R3 observed 88 passing targeted executions without skips and two expected in-memory negative-control failures with restored passing controls. All nine employer chronologies equal the baseline; six remain within the configured scope. Fresh export/receipt recomputation preserves the recorded 10/10 bindings without independent semantic corroboration. Exact-head push CI 39442642289 and PR CI 39442699794 passed on attempt 1: 815 tests in 29.397/32.250 seconds, each with two missing-Poppler PDF skips. The final local full suite passed 815 in 81.647 seconds without skips. This acceptance increment changes documentation only and requires its own diff/link review and publication; no runtime suite repeat is claimed. Main, candidate sources, applications, statuses, catalog inputs and MongoDB contracts remain unchanged by this iteration. |
