@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 55
+Total vacancies: 56
 
-- Found: 30
+- Found: 31
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,7 @@ Total vacancies: 55
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-21 | [saas.group](../registry/jobs/20261021_saas-group_18c1540a3eb9481b9f392a788496641c/) | [Senior Software Engineer](../registry/jobs/20261021_saas-group_18c1540a3eb9481b9f392a788496641c/job.md) | Worldwide | Himalayas | Found | 2026-10-21 | [Himalayas](https://himalayas.app/companies/saas-group/jobs/senior-software-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-21 | [Spread Group](../registry/jobs/20261021_spread-group_5407edd71d454a3ebb1842be626a44f5/) | [Platform Engineer (f/m/d)](../registry/jobs/20261021_spread-group_5407edd71d454a3ebb1842be626a44f5/job.md) | Remote job | Arbeitnow | Found | 2026-10-21 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/spread-group/remote-platform-engineer-berlin-8213) | — | — | — | — | — |
 | 2026-10-21 | [RevenueCat](../registry/jobs/20261021_revenuecat_835cceb958c342b29c452c84fb5dd4e1/) | [Senior Software Engineer, Agents](../registry/jobs/20261021_revenuecat_835cceb958c342b29c452c84fb5dd4e1/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-21 | [Jobicy](https://jobicy.com/jobs/156026-senior-software-engineer-agents-2) | — | — | — | — | — |
 | 2026-10-21 | [ElevenLabs](../registry/jobs/20261021_elevenlabs_7cae53021aad492da8196321367da48d/) | [Full-Stack Engineer (Backend Leaning) - CoreMusic](../registry/jobs/20261021_elevenlabs_7cae53021aad492da8196321367da48d/job.md) | Remote | Arbeitnow | Found | 2026-10-21 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-coremusic-118556) | — | — | — | — | — |
