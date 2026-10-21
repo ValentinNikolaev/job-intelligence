@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 57
+Total vacancies: 58
 
-- Found: 32
+- Found: 33
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,7 @@ Total vacancies: 57
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-21 | [DATA.BET](../registry/jobs/20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb/) | [Middle/Middle+ Golang Developer](../registry/jobs/20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb/job.md) | віддалено | Dou | Found | 2026-10-21 | [Dou](https://jobs.dou.ua/companies/databet/vacancies/355152/) | [Open](../registry/jobs/20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb/company.md) | — | — | — | — |
 | 2026-10-21 | [Socium - Teams Done Differently](../registry/jobs/20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf/) | [Senior Software Engineer (Golang)](../registry/jobs/20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf/job.md) | Open to candidates in Italy | Arc | Found | 2026-10-21 | [Arc](https://arc.dev/dashboard/d/remote-jobs/mfa8eq0soa) | — | — | — | — | — |
 | 2026-10-21 | [saas.group](../registry/jobs/20261021_saas-group_18c1540a3eb9481b9f392a788496641c/) | [Senior Software Engineer](../registry/jobs/20261021_saas-group_18c1540a3eb9481b9f392a788496641c/job.md) | Worldwide | Himalayas | Found | 2026-10-21 | [Himalayas](https://himalayas.app/companies/saas-group/jobs/senior-software-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-21 | [Spread Group](../registry/jobs/20261021_spread-group_5407edd71d454a3ebb1842be626a44f5/) | [Platform Engineer (f/m/d)](../registry/jobs/20261021_spread-group_5407edd71d454a3ebb1842be626a44f5/job.md) | Remote job | Arbeitnow | Found | 2026-10-21 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/spread-group/remote-platform-engineer-berlin-8213) | — | — | — | — | — |
