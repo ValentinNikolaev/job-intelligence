@@ -1,0 +1,71 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-21T18:31:23Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "DATA.BET",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb",
+      "score": 86,
+      "title": "Middle/Middle+ Golang Developer",
+      "url": "https://jobs.dou.ua/companies/databet/vacancies/355152/",
+      "vacancy_id": "aa8ff04e-815e-4ca6-8a35-15c38c1c8ceb"
+    },
+    {
+      "company": "Socium - Teams Done Differently",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf",
+      "score": 84,
+      "title": "Senior Software Engineer (Golang)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/mfa8eq0soa",
+      "vacancy_id": "3921cab7-4abc-4a69-9209-2ccbb33170cf"
+    },
+    {
+      "company": "Spread Group",
+      "country_codes": [],
+      "directory": "20261021_spread-group_5407edd71d454a3ebb1842be626a44f5",
+      "score": 78,
+      "title": "Platform Engineer (f/m/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/spread-group/remote-platform-engineer-berlin-8213",
+      "vacancy_id": "5407edd7-1d45-4a3e-bb18-42be626a44f5"
+    },
+    {
+      "company": "RevenueCat",
+      "country_codes": [
+        "CA",
+        "US"
+      ],
+      "directory": "20261021_revenuecat_835cceb958c342b29c452c84fb5dd4e1",
+      "score": 78,
+      "title": "Senior Software Engineer, Agents",
+      "url": "https://jobicy.com/jobs/156026-senior-software-engineer-agents-2",
+      "vacancy_id": "835cceb9-58c3-42b2-9c45-2c84fb5dd4e1"
+    },
+    {
+      "company": "ElevenLabs",
+      "country_codes": [],
+      "directory": "20261021_elevenlabs_7cae53021aad492da8196321367da48d",
+      "score": 77,
+      "title": "Full-Stack Engineer (Backend Leaning) - CoreMusic",
+      "url": "https://www.arbeitnow.com/jobs/companies/elevenlabs/remote-full-stack-engineer-backend-leaning-coremusic-118556",
+      "vacancy_id": "7cae5302-1aad-492d-a819-6321367da48d"
+    },
+    {
+      "company": "Gorin Systems",
+      "country_codes": [],
+      "directory": "20261016_gorin-systems_07bf371a43654f7a942f5f88d647f429",
+      "score": 71,
+      "title": "Full Stack Laravel / React Developer",
+      "url": "https://himalayas.app/companies/gorin-systems/jobs/full-stack-laravel-react-developer-5277609797?utm_source=api",
+      "vacancy_id": "07bf371a-4365-4f7a-942f-5f88d647f429"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "436e62c4b0ac4cfcbcbc302916656da60b97d7d7f58c9947a19a0a366265c430",
+  "schema_version": 2
+}

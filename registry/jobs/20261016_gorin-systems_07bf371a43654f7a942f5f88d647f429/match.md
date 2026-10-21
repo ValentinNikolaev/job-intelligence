@@ -3,29 +3,29 @@
 **Score:** 71/100  
 **Recommendation:** Match
 
-Laravel/PHP, MySQL, Git, and computer-science education align well, with some full-stack relevance; React, JavaScript, CSS, fluent English, EST meeting availability, and identity verification remain unconfirmed.
+Good Laravel/PHP and backend fit with a relevant CS degree, long professional experience, MySQL, Git, REST APIs, and related React-adjacent frontend exposure; JavaScript/CSS, fluent English, and EST meeting availability are not fully confirmed.
 
 ## Why it matches
 
-- Strong PHP/Laravel and MySQL backend experience with a computer-science master's degree.
-- Remote work is explicitly offered and the role is part-time.
-- Recent engineering evidence includes support automation and production systems ownership.
+- PHP/Laravel backend experience, MySQL, Git, REST APIs, and 15+ years of professional development.
+- Computer Science master's degree meets the degree alternative.
+- Remote work, senior delivery, and production troubleshooting are supported.
 
 ## Gaps
 
-- React, JavaScript, CSS, fluent spoken English, and EST meeting availability are not established by the profile.
-- Identity-verification willingness is unknown.
+- React, JavaScript, and CSS are not explicitly listed in the supplied candidate profile.
+- Fluent English and availability for 9am-12pm EST meetings are not confirmed.
 
 ## Concerns
 
-- The requirement for meetings from 9 am to 12 pm EST can be a material schedule issue for Italy depending on the intended overlap and season.
+- Part-time immediate-start conditions and identity-verification willingness require confirmation.
+- The posting asks for a lengthy technical assessment; willingness is unknown.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Laravel, PHP, React, JavaScript, CSS, MySQL, and Git | critical / stated | partial | At least 3 years of experience with Laravel, PHP, React, Javascript, CSS, MySQL, and Git | Developed a Laravel/Symfony-based product-wide logger package | React, JavaScript, and CSS evidence is not present in the current candidate profile excerpt. / Confirm current frontend experience or position the application as backend-focused. |
-| Fluent English communication | high / stated | partial | Fluent English, Written & Verbal. Excellent communication | English - Professional Working | The profile contains conflicting English proficiency entries and does not establish fluency. / Verify spoken-English level before application. |
-| EST meeting availability | high / stated | unknown | Available for meetings between 9 am to 12 pm EST |  | Candidate availability is not recorded. / Confirm schedule compatibility before preparation. |
-| Computer-science degree | high / stated | strong | 4-year Computer Science Degree or Equivalent experience | Master of Computer Applications - MCA, Microprocessors, C, ASM, IT Managment | The degree title differs from a four-year Computer Science degree. / Present the master's degree and equivalent engineering experience accurately. |
-| Remote work | meaningful / stated | strong | We are looking for a remote, part-time Full Stack Laravel / PHP developer | Fiumicino, Latium, Italy | / |
+| At least 3 years of Laravel and PHP | critical / stated | partial | At least 3 years of experience with Laravel, PHP, React, Javascript, CSS, MySQL, and Git | - Laravel | Laravel, PHP, MySQL, and Git are supported, but the combined React, JavaScript, and CSS requirement is not fully evidenced. / Confirm the frontend technologies and quantify Laravel experience. |
+| Fluent written and verbal English | high / stated | unknown | Fluent English, Written & Verbal. Excellent communication | **English - Upper-intermediate** | The profile states upper-intermediate English, not fluent English. / Confirm current spoken and written level before presenting a full match. |
+| Meetings between 9 am and 12 pm EST | high / stated | unknown | Available for meetings between 9 am to 12 pm EST. |  | The candidate's availability is not stated. / Confirm availability before any application preparation. |
+| Four-year Computer Science degree or equivalent | high / stated | strong | 4-year Computer Science Degree or Equivalent experience | **MSc in Computer Science** | None material from the candidate evidence. / |
