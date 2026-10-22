@@ -1,0 +1,30 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-22T11:08:49Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Socium - Teams Done Differently",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf",
+      "score": 86,
+      "title": "Senior Software Engineer (Golang)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/mfa8eq0soa",
+      "vacancy_id": "3921cab7-4abc-4a69-9209-2ccbb33170cf"
+    },
+    {
+      "company": "Native",
+      "country_codes": [],
+      "directory": "20261022_native_e7f02e6f79e54ad5a979797f86fb45e6",
+      "score": 78,
+      "title": "Back-End Engineer",
+      "url": "https://himalayas.app/companies/native/jobs/back-end-engineer?utm_source=api",
+      "vacancy_id": "e7f02e6f-79e5-4ad5-a979-797f86fb45e6"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "bf1503c70b12deca52208f7a98db619f3373912dc41dcd766298ffcc701ef1f1",
+  "schema_version": 2
+}
