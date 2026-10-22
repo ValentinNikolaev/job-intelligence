@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 55
 
-- Found: 28
+- Found: 30
 - Applied: 22
 - Interview: 3
 
@@ -12,8 +12,10 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-22 | [saas.group](../registry/jobs/20261022_saas-group_37b6ee900cd249fb97553d3ced0be2de/) | [Senior Software Engineer](../registry/jobs/20261022_saas-group_37b6ee900cd249fb97553d3ced0be2de/job.md) | Europe | Jobicy | Found | 2026-10-22 | [Jobicy](https://jobicy.com/jobs/156308-senior-software-engineer-15) | — | — | — | — | — |
+| 2026-10-22 | [RecruitGarden](../registry/jobs/20261022_recruitgarden_90c2acfd423c42259179beb09d77c8e3/) | [Senior Golang Developer - US Product Company](../registry/jobs/20261022_recruitgarden_90c2acfd423c42259179beb09d77c8e3/job.md) | Worldwide | Djinni | Found | 2026-10-22 | [Djinni](https://djinni.co/jobs/854706-senior-golang-developer-us-product-company/) | — | — | — | — | — |
+| 2026-10-22 | [RecruitGarden](../registry/jobs/20261022_recruitgarden_437ded73af0340d09d6878b7a936bba4/) | [Backend Engineer (with any language, transitioning to Go)](../registry/jobs/20261022_recruitgarden_437ded73af0340d09d6878b7a936bba4/job.md) | Worldwide | Djinni | Found | 2026-10-22 | [Djinni](https://djinni.co/jobs/854707-backend-engineer-with-any-language-transition/) | — | — | — | — | — |
 | 2026-10-22 | [GlobalLogic](../registry/jobs/20261022_globallogic_d524920848394c60bac0faee41233848/) | [Senior Python and Go Engineer IRC305784](../registry/jobs/20261022_globallogic_d524920848394c60bac0faee41233848/job.md) | Ukraine | Djinni | Found | 2026-10-22 | [Djinni](https://djinni.co/jobs/854581-senior-python-and-go-engineer-irc305784/) | — | — | — | — | — |
-| 2026-10-22 | [GroupBWT](../registry/jobs/20261022_groupbwt_917408b7da4647c19a74f4c76ddcb760/) | [PHP Software Engineer](../registry/jobs/20261022_groupbwt_917408b7da4647c19a74f4c76ddcb760/job.md) | Bulgaria, Georgia, Poland, Romania | Djinni | Found | 2026-10-22 | [Djinni](https://djinni.co/jobs/727362-php-software-engineer/) | — | — | — | — | — |
 | 2026-10-22 | [Native](../registry/jobs/20261022_native_e7f02e6f79e54ad5a979797f86fb45e6/) | [Back-End Engineer](../registry/jobs/20261022_native_e7f02e6f79e54ad5a979797f86fb45e6/job.md) | Worldwide | Himalayas | Found | 2026-10-22 | [Himalayas](https://himalayas.app/companies/native/jobs/back-end-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-21 | [DATA.BET](../registry/jobs/20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb/) | [Middle/Middle+ Golang Developer](../registry/jobs/20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb/job.md) | віддалено | Dou | Found | 2026-10-21 | [Dou](https://jobs.dou.ua/companies/databet/vacancies/355152/) | [Open](../registry/jobs/20261021_data-bet_aa8ff04e815e4ca68a3515c38c1c8ceb/company.md) | — | — | — | — |
 | 2026-10-21 | [Socium - Teams Done Differently](../registry/jobs/20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf/) | [Senior Software Engineer (Golang)](../registry/jobs/20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf/job.md) | Open to candidates in Italy | Arc | Found | 2026-10-21 | [Arc](https://arc.dev/dashboard/d/remote-jobs/mfa8eq0soa) | — | — | — | — | — |
