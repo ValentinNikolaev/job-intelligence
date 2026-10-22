@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-22T13:05:59Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "GlobalLogic",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261022_globallogic_d524920848394c60bac0faee41233848",
+      "score": 70,
+      "title": "Senior Python and Go Engineer IRC305784",
+      "url": "https://djinni.co/jobs/854581-senior-python-and-go-engineer-irc305784/",
+      "vacancy_id": "d5249208-4839-4c60-bac0-faee41233848"
+    },
+    {
+      "company": "YozmaTech",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25",
+      "score": 78,
+      "title": "Middle Backend engineer (Golang)",
+      "url": "https://djinni.co/jobs/854098-middle-backend-engineer-golang/",
+      "vacancy_id": "0de73c80-c52b-47cc-b5c7-a84fa7f3fb25"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "84c403e33a940749b8dd0a8fcaef4ecacac573fa0ec4545897d69fb714f187cf",
+  "schema_version": 2
+}

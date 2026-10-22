@@ -3,31 +3,30 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Strong backend fit through Go, AWS, PostgreSQL, API and system-design experience; TypeScript and the requested development process experience remain unverified.
+Strong Go backend and seniority fit with relevant architecture, cloud, database, and production experience; TypeScript and the specified Ukrainian-time schedule remain to be confirmed.
 
 ## Why it matches
 
-- Go is an explicit primary candidate technology and the vacancy makes Go mandatory.
-- The candidate has more than 15 years of backend experience and documented API, cloud, database, and system-design work.
-- The worldwide remote format is compatible with the candidate's Italy location.
+- Strong Go backend experience and API/service delivery.
+- More than the required backend tenure with architecture, design, and project leadership evidence.
+- AWS, PostgreSQL, testing, and production reliability experience align with the preferred qualifications.
 
 ## Gaps
 
-- TypeScript is not listed in the Candidate Profile.
-- TDD, Extreme Programming, and Kanban experience is not explicitly documented.
+- TypeScript proficiency is not established in the supplied candidate profile.
+- The profile does not explicitly confirm English at Upper-Intermediate or higher in the relevant evidence.
 
 ## Concerns
 
-- The client, compensation, and employment arrangement are not identified in the supplied vacancy.
+- The required 12:00–21:00 Ukrainian-time schedule should be checked against the candidate's availability in Italy.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Backend engineering experience of at least four years | critical / stated | strong | An experienced Backend Engineer with a minimum of **4** years in the field | ### Languages - Go - PHP | / |
-| Hands-on Go proficiency | critical / stated | strong | Hands-on proficiency in Go — must have; | ### Languages - Go - PHP | / |
-| High-performance APIs and services | high / stated | strong | Scope, design, and implement high-performance APIs and services | REST APIs \| System Design | / |
-| System architecture and design | high / stated | strong | Experience in system architecture and design - a plus | ### Architecture - Microservices - Event-driven systems | / |
-| English at Upper-Intermediate level or higher | high / stated | strong | English – Upper-Intermediate or higher. | - **English - Upper-intermediate** | / |
-| Cloud provider and PostgreSQL familiarity | meaningful / stated | strong | Experience with GCP, AWS, or other cloud providers - a plus 🔹 Familiarity with database systems (e.g., PostgreSQL)- a big plus. | - AWS - Kubernetes - RabbitMQ ### Databases - MySQL - PostgreSQL - Elasticsearch | / |
-| TypeScript | preferred / stated | unknown | Hands-on proficiency in TypeScript — strong advantage; |  | TypeScript may be tested despite being a strong advantage rather than a must-have. / Verify current TypeScript exposure before applying. |
+| At least 4 years of backend engineering experience | critical / stated | strong | An experienced Backend Engineer with a minimum of **4** years in the field | over 15 years of expertise. | The profile summary establishes total experience but not every year as backend-specific. / Confirm the backend portion of the career chronology. |
+| Hands-on Go proficiency | critical / stated | strong | Hands-on proficiency in Go — must have; | - Go | None material; recent backend work is also in Go. / Use recent Go service examples in technical screening. |
+| Working hours 12:00 PM to 9:00 PM Ukrainian time | high / stated | unknown | Working hours: 12:00 PM to 9:00 PM (Ukrainian time) | Fiumicino, Latium, Italy | Location alone does not establish availability for the required schedule. / Confirm willingness to work the stated hours. |
+| System architecture and design | high / stated | strong | Experience in system architecture and design - a plus | I architect and lead the development of the platform's internal event analytics | The candidate's strongest explicit architecture example is event analytics rather than B2B payments. / Connect architecture examples to payment-platform constraints. |
+| Cloud provider experience | meaningful / stated | strong | Experience with GCP, AWS, or other cloud providers - a plus | - AWS | The vacancy prefers cloud experience but does not mandate a specific provider. / Confirm recent hands-on cloud scope. |
+| PostgreSQL familiarity | meaningful / stated | strong | Familiarity with database systems (e.g., PostgreSQL)- a big plus. | - PostgreSQL | The profile does not quantify the most recent PostgreSQL usage. / Confirm production PostgreSQL responsibilities. |
