@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 54
+Total vacancies: 56
 
-- Found: 29
+- Found: 31
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,8 @@ Total vacancies: 54
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-23 | [DoiT](../registry/jobs/20261023_doit_25b3eab03b014bc0929656c9b634ca63/) | [Senior Full-Stack Engineer – AI Cost Visibility](../registry/jobs/20261023_doit_25b3eab03b014bc0929656c9b634ca63/job.md) | Europe | Jobspresso | Found | 2026-10-23 | [Jobspresso](https://jobspresso.co/job/senior-full-stack-engineer-ai-cost-visibility/) | — | — | — | — | — |
+| 2026-10-23 | [VirtusLab](../registry/jobs/20261023_virtuslab_0ee68d7aa5de4222b09c71ce2367dda4/) | [Software Systems & Logging Platform Engineer](../registry/jobs/20261023_virtuslab_0ee68d7aa5de4222b09c71ce2367dda4/job.md) | Worldwide | Himalayas | Found | 2026-10-23 | [Himalayas](https://himalayas.app/companies/virtuslab/jobs/software-systems-logging-platform-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-23 | [Short Story](../registry/jobs/20261023_short-story_e85870374ff040a1af52060da3f5fd78/) | [Merchandise Associate](../registry/jobs/20261023_short-story_e85870374ff040a1af52060da3f5fd78/job.md) | Asia-Pacific | Jobspresso | Found | 2026-10-23 | [Jobspresso](https://jobspresso.co/job/merchandise-associate/) | — | — | — | — | — |
 | 2026-10-23 | [NFQ](../registry/jobs/20261023_nfq_9a45d4fd429a4473af61df954ad37ce1/) | [Senior Software Engineer (PHP)](../registry/jobs/20261023_nfq_9a45d4fd429a4473af61df954ad37ce1/job.md) | Poland | Jobicy | Found | 2026-10-23 | [Jobicy](https://jobicy.com/jobs/156456-senior-software-engineer-php) | — | — | — | — | — |
 | 2026-10-22 | [RecruitGarden](../registry/jobs/20261022_recruitgarden_90c2acfd423c42259179beb09d77c8e3/) | [Senior Golang Developer - US Product Company](../registry/jobs/20261022_recruitgarden_90c2acfd423c42259179beb09d77c8e3/job.md) | Worldwide | Djinni | Found | 2026-10-22 | [Djinni](https://djinni.co/jobs/854706-senior-golang-developer-us-product-company/) | — | — | — | — | — |
