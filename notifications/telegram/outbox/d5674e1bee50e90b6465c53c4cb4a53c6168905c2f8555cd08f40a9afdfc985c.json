@@ -1,0 +1,39 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-23T09:27:22Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "DoiT",
+      "country_codes": [],
+      "directory": "20261023_doit_25b3eab03b014bc0929656c9b634ca63",
+      "score": 73,
+      "title": "Senior Full-Stack Engineer – AI Cost Visibility",
+      "url": "https://jobspresso.co/job/senior-full-stack-engineer-ai-cost-visibility/",
+      "vacancy_id": "25b3eab0-3b01-4bc0-9296-56c9b634ca63"
+    },
+    {
+      "company": "VirtusLab",
+      "country_codes": [],
+      "directory": "20261023_virtuslab_0ee68d7aa5de4222b09c71ce2367dda4",
+      "score": 70,
+      "title": "Software Systems & Logging Platform Engineer",
+      "url": "https://himalayas.app/companies/virtuslab/jobs/software-systems-logging-platform-engineer?utm_source=api",
+      "vacancy_id": "0ee68d7a-a5de-4222-b09c-71ce2367dda4"
+    },
+    {
+      "company": "NFQ",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "20261023_nfq_9a45d4fd429a4473af61df954ad37ce1",
+      "score": 87,
+      "title": "Senior Software Engineer (PHP)",
+      "url": "https://jobicy.com/jobs/156456-senior-software-engineer-php",
+      "vacancy_id": "9a45d4fd-429a-4473-af61-df954ad37ce1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d5674e1bee50e90b6465c53c4cb4a53c6168905c2f8555cd08f40a9afdfc985c",
+  "schema_version": 2
+}
