@@ -1,0 +1,41 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-23T13:21:14Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "BetterMe",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261023_betterme_5c8a3e7c2a134130b25f932dd7f1683e",
+      "score": 87,
+      "title": "Backend Engineer Core Team (GoLang + PHP)",
+      "url": "https://djinni.co/jobs/812977-backend-engineer-core-team-golang-php/",
+      "vacancy_id": "5c8a3e7c-2a13-4130-b25f-932dd7f1683e"
+    },
+    {
+      "company": "Allo",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261023_allo_e912bfa80cf248c689e1fb5ec415a50c",
+      "score": 84,
+      "title": "Інженер-програміст PHP (Backend / SOA)",
+      "url": "https://djinni.co/jobs/854790-inzhener-programist-php-backend-soa/",
+      "vacancy_id": "e912bfa8-0cf2-48c6-89e1-fb5ec415a50c"
+    },
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "20261023_canonical_1e93874fdf6545e494ebb250302f4b36",
+      "score": 89,
+      "title": "Lead Golang Software Engineer, Commercial Systems",
+      "url": "https://himalayas.app/companies/canonical/jobs/lead-golang-software-engineer-commercial-systems?utm_source=api",
+      "vacancy_id": "1e93874f-df65-45e4-94eb-b250302f4b36"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "8b5767d227706a4727c5a9680aed8d18e59881421136ac2528df74a078ec858c",
+  "schema_version": 2
+}
