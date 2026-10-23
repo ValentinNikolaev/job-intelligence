@@ -1,0 +1,30 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-23T19:27:22Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Canonical",
+      "country_codes": [],
+      "directory": "20261023_canonical_8128ed3997ae4ba2a6b6ca58e471f2c8",
+      "score": 70,
+      "title": "Engineering Manager, Commercial Systems",
+      "url": "https://jobicy.com/jobs/156572-engineering-manager-commercial-systems",
+      "vacancy_id": "8128ed39-97ae-4ba2-a6b6-ca58e471f2c8"
+    },
+    {
+      "company": "Kong",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261023_kong_7eff3857118d4336935d49021c6e9c55",
+      "score": 84,
+      "title": "Senior Software Engineer, Control Plane",
+      "url": "https://jobs.ashbyhq.com/kong/185f8e98-b9b5-4196-bf2c-d7c5cc84ec09",
+      "vacancy_id": "7eff3857-118d-4336-935d-49021c6e9c55"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "0cf8a305d25c08d7c2fb0a65c23e05cee89185eeb4d77e957e81a6bba0be31ea",
+  "schema_version": 2
+}
