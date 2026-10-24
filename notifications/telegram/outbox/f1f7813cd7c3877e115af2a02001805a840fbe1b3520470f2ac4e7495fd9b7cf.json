@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-24T13:45:13Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Codest Ltd. Company No. 12590542, VAT number: GB363431020",
+      "country_codes": [],
+      "directory": "20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134",
+      "score": 68,
+      "title": "Solution&Fullstack Engineer (Python+ JS) - AI First",
+      "url": "https://himalayas.app/companies/codest-ltd-company-no-12590542-vat-number-gb363431020/jobs/solution-fullstack-engineer-python-js-ai-first?utm_source=api",
+      "vacancy_id": "47c9f0d8-f29b-474d-95ae-0b5244c37134"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "f1f7813cd7c3877e115af2a02001805a840fbe1b3520470f2ac4e7495fd9b7cf",
+  "schema_version": 2
+}
