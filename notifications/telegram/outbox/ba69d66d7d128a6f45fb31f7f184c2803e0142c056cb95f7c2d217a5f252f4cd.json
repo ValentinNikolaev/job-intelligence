@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-24T19:43:51Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Monzo",
+      "country_codes": [
+        "GB"
+      ],
+      "directory": "20261024_monzo_f24619ea1847486dbb98b66085e2fd03",
+      "score": 72,
+      "title": "Senior Backend Engineer",
+      "url": "https://jobicy.com/jobs/156699-senior-backend-engineer-12",
+      "vacancy_id": "f24619ea-1847-486d-bb98-b66085e2fd03"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ba69d66d7d128a6f45fb31f7f184c2803e0142c056cb95f7c2d217a5f252f4cd",
+  "schema_version": 2
+}
