@@ -1,0 +1,37 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-24T11:53:25Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Tabby",
+      "country_codes": [],
+      "directory": "20261024_tabby_567056e0c7f142438e33e0194b422cb9",
+      "score": 76,
+      "title": "Senior Fullstack Engineer",
+      "url": "https://himalayas.app/companies/tabby/jobs/senior-fullstack-engineer?utm_source=api",
+      "vacancy_id": "567056e0-c7f1-4243-8e33-e0194b422cb9"
+    },
+    {
+      "company": "Cubbit",
+      "country_codes": [],
+      "directory": "20261024_cubbit_f54ac6a83383445f9f2ef9be637ed1a4",
+      "score": 72,
+      "title": "Senior Backend Developer GO",
+      "url": "https://www.adzuna.it/details/5938931988?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "f54ac6a8-3383-445f-9f2e-f9be637ed1a4"
+    },
+    {
+      "company": "Cubbit",
+      "country_codes": [],
+      "directory": "20261024_cubbit_38ab7b9bf24f4efb9368224530969367",
+      "score": 72,
+      "title": "Senior Backend Developer GO",
+      "url": "https://www.adzuna.it/details/5938931649?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "38ab7b9b-f24f-4efb-9368-224530969367"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "aa9909147d1a1b6954b787ad0250f9e3f976ff126b33c6344a086d6fb46cfc6b",
+  "schema_version": 2
+}
