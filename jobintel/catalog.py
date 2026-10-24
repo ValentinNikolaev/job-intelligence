@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
+from .rejection_cooldown import load_retry_rules, retry_reason
 from .models import VACANCY_STATUSES
 from .catalog_data import CatalogVacancy, load_catalog_vacancies
 
@@ -77,7 +78,10 @@ def generate_catalog(
 
 def _load_rows(registry_root: Path) -> list[VacancyRow]:
     rows = []
+    retry_rules = load_retry_rules(registry_root)
     for vacancy in load_catalog_vacancies(registry_root):
+        if retry_reason(vacancy.company, retry_rules):
+            continue
         rows.append(
             VacancyRow(
                 vacancy.directory,

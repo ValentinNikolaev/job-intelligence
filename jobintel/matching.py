@@ -14,6 +14,7 @@ from typing import Any, Protocol
 import yaml
 
 from . import storage_bridge as op
+from .rejection_cooldown import load_retry_rules, retry_reason, require_retry_eligible, rejection_day
 from .requirements import validate_requirements, render_requirements
 from .matching_policy import DEFAULT_PROJECT_ROOT, MatchingContext, canonical, digest, load_matching_context
 
@@ -247,6 +248,7 @@ class MatchAnalyzer:
     def analyze_directory(self, directory: Path, *, force: bool = False) -> AnalysisResult:
         context = self.matching_context()
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
+        require_retry_eligible(self.registry_root, str(meta.get("company") or ""), today=rejection_day(self._clock().isoformat()))
 
         if analysis_should_skip_status(meta) and not force:
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
@@ -304,6 +306,7 @@ class MatchAnalyzer:
         if expected_prompt_version != context.prompt_version:
             raise MatchError("analysis prompt or matching policy changed after the draft was created")
         profile_text, profile_version, meta, vacancy, job_version = self._inputs(directory)
+        require_retry_eligible(self.registry_root, str(meta.get("company") or ""), today=rejection_day(self._clock().isoformat()))
         if analysis_should_skip_status(meta) and not force:
             return AnalysisResult("skipped", str(meta.get("id", "")), directory.name)
         if expected_profile_version != profile_version:
@@ -412,12 +415,15 @@ def build_analysis_pack(
     analyzer.context = context
     profile, profile_version = analyzer._load_profile()
     items: list[dict[str, Any]] = []
+    retry_rules = load_retry_rules(registry_root)
     selected_directories = analyzer.resolve("all") if directories is None else [analyzer.checked_directory(path) for path in directories]
     for directory in _priority_sorted_directories(selected_directories):
         analyzer.checked_directory(directory)
         if triage_skip and triage_skip(directory):
             continue
         meta = _read_yaml_mapping(directory / "meta.yaml", "vacancy metadata")
+        if retry_reason(str(meta.get("company") or ""), retry_rules):
+            continue
         if analysis_should_skip_status(meta) and not force:
             continue
         if analyzer.is_current(directory) and not force:

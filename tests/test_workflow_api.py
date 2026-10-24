@@ -151,6 +151,25 @@ class WorkflowApiTests(unittest.TestCase):
 
         self.assertEqual(10, limits["prepare_batch_size"])
 
+    def test_recent_company_rejection_blocks_duplicates_across_selection_paths(self) -> None:
+        from jobintel.catalog import generate_catalog
+        from jobintel.matching import build_analysis_pack
+
+        audit = {"events": [dict(company=company, to_status="rejected",
+                                 changed_at=datetime.now(timezone.utc).isoformat())
+                            for company in ("Example", "Acme")]}
+        (self.registry_root / "manual-status-log.yaml").write_text(
+            yaml.safe_dump(audit), encoding="utf-8")
+        self.assertEqual([], top_vacancies(self.registry_root))
+        self.assertEqual([], queue_response("analyze", self.project, self.registry_root,
+                                            [self.profile])["items"])
+        self.assertEqual([], catalog_vacancies(self.registry_root)["vacancies"])
+        self.assertEqual(0, len(build_analysis_pack(self.registry_root, [self.profile], force=True).items))
+        self.assertEqual(0, generate_catalog(self.registry_root, self.project / "catalog").vacancies)
+        analyzer = MatchAnalyzer(self.registry_root, [self.profile], FakeMatchClient(80))
+        with self.assertRaisesRegex(ValueError, "six-calendar-month"):
+            analyzer.analyze_directory(self.registry_root / "jobs" / self.pending.directory, force=True)
+
     def test_analyze_queue_orders_priority_items_first(self) -> None:
         registry = Registry(
             self.registry_root,
@@ -272,7 +291,7 @@ class WorkflowApiTests(unittest.TestCase):
             def __init__(self) -> None:
                 self.scopes: list[str] = []
 
-            def list_vacancies(self, *, scope: str):
+            def list_vacancies(self, *, scope: str, include_archived: bool = False):
                 self.scopes.append(scope)
                 return documents if scope == "jobs" else []
 
@@ -286,7 +305,7 @@ class WorkflowApiTests(unittest.TestCase):
         with patch("jobintel.catalog_data.op.get_store", return_value=store):
             report = workflow_report(self.project, self.registry_root, {}, [self.profile], 100)
 
-        self.assertEqual(["jobs", "rejected"], store.scopes)
+        self.assertEqual(["jobs", "jobs", "rejected"], store.scopes)
         self.assertEqual(expected_summary, report["summary"])
         self.assertEqual(expected_queue, report["analyze_queue"])
         self.assertEqual(expected_top, report["top"])

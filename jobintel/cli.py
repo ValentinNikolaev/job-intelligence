@@ -44,7 +44,8 @@ from .matching import (
 )
 from .matching_policy import MatchingContext
 from .models import CollectorSummary, NormalizedJob
-from .prefilter import RejectedRegistry, load_company_retry_rules, prefilter_job
+from .prefilter import RejectedRegistry, prefilter_job
+from .rejection_cooldown import load_retry_rules, retry_reason, require_retry_eligible
 from .preparation_context import PreparationContext, load_preparation_context
 from .selection_policy import DEFAULT_SELECTION_POLICY_PATH, SelectionPolicy, load_selection_policy
 from .registry import Registry
@@ -546,9 +547,7 @@ def _main(argv: list[str] | None = None, *, root: Path | None = None, context: A
     registry = Registry(registry_dir, cache_entries=True)
     rejected_registry = RejectedRegistry(registry_dir, cache_entries=True)
     try:
-        company_retry_rules = load_company_retry_rules(
-            project_root / "config" / "application-profile.yaml"
-        )
+        company_retry_rules = load_retry_rules(registry_dir)
     except ValueError as exc:
         print(f"Profile policy error: {exc}", file=sys.stderr)
         return 2
@@ -1524,6 +1523,7 @@ def _preflight_preparation(
             missing = [key for key in required if not str(meta.get(key) or "").strip()]
             if missing:
                 raise ValueError("metadata is missing required fields: " + ", ".join(missing))
+            require_retry_eligible(registry_dir, str(meta.get("company") or ""))
             if str(meta.get("status") or "").casefold() == "rejected":
                 raise ValueError("vacancy is rejected and cannot be prepared")
             job = op.read_text(directory / "job.md").strip()
@@ -1872,7 +1872,11 @@ def _run_pending_locked(
             print(f"Analysis pack: {args.pack.resolve()} ({len(pack.items)} vacancies)")
             return 0
         pending_prepare: list[Path] = []
+        retry_rules = load_retry_rules(registry_dir)
         for directory in directories:
+            meta = _read_yaml_file(directory / "meta.yaml", "vacancy metadata")
+            if retry_reason(str(meta.get("company") or ""), retry_rules):
+                continue
             if stage == "analyze":
                 if _vacancy_status_skips_analysis(directory):
                     continue

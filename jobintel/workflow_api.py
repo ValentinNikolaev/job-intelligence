@@ -27,6 +27,7 @@ from .matching import (
     analysis_should_skip_status,
 )
 from .triage import should_skip_model, snapshot_should_skip
+from .rejection_cooldown import load_retry_rules, retry_reason
 from .selection_policy import SelectionPolicy, load_selection_policy
 from .matching_policy import MatchingContext, canonical
 from .preparation_context import load_preparation_context
@@ -206,20 +207,24 @@ def codex_usage(registry_root: Path) -> dict[str, Any]:
 @_account_operation
 def catalog_vacancies(registry_root: Path) -> dict[str, Any]:
     base = registry_root.parent
-    rows = [vacancy.to_api_dict(base=base) for vacancy in load_catalog_snapshot(registry_root).vacancies]
+    rules = load_retry_rules(registry_root)
+    rows = [vacancy.to_api_dict(base=base) for vacancy in load_catalog_snapshot(registry_root).vacancies
+            if not retry_reason(vacancy.company, rules)]
     return {"vacancies": rows}
 
 
 @_account_operation
 def top_vacancies(registry_root: Path, *, limit: int = 5) -> list[dict[str, Any]]:
-    return _top_from_snapshot(load_catalog_snapshot(registry_root), limit)
+    return _top_from_snapshot(load_catalog_snapshot(registry_root), limit, retry_rules=load_retry_rules(registry_root))
 
 
-def _top_from_snapshot(snapshot: CatalogSnapshot, limit: int) -> list[dict[str, Any]]:
+def _top_from_snapshot(snapshot: CatalogSnapshot, limit: int, *, retry_rules=()) -> list[dict[str, Any]]:
     if isinstance(limit, bool) or not isinstance(limit, int) or limit < 1:
         raise WorkflowApiError("top limit must be a positive integer")
     rows = []
     for vacancy in snapshot.vacancies:
+        if retry_reason(vacancy.company, retry_rules):
+            continue
         if vacancy.status in {"rejected", "withdrawn", "closed"} or vacancy.score is None:
             continue
         source = vacancy.sources[0] if vacancy.sources else {}
@@ -264,7 +269,8 @@ def workflow_report(
     selection_policy = load_selection_policy(project_root / "config/selection-policy.yaml")
     matching_context = current_matching_context(project_root)
     snapshot = load_catalog_snapshot(registry_root)
-    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot, selection_policy=selection_policy, matching_context=matching_context)
+    retry_rules = load_retry_rules(registry_root)
+    analyze_all = queue_items("analyze", project_root, registry_root, profile_paths, policy, _snapshot=snapshot, selection_policy=selection_policy, matching_context=matching_context, _retry_rules=retry_rules)
     analyze = analyze_all[:queue_limit] if queue_limit is not None else analyze_all
     return {
         "summary": _summary_from_snapshot(
@@ -278,7 +284,7 @@ def workflow_report(
         },
         "prepare_queue": {"workflow": "prepare", "limit": queue_limit, "items": []},
         "source_usage": source_usage(registry_root),
-        "top": _top_from_snapshot(snapshot, top_limit),
+        "top": _top_from_snapshot(snapshot, top_limit, retry_rules=retry_rules),
     }
 
 
@@ -292,6 +298,7 @@ def queue_items(
     *,
     limit: int | None = None,
     _snapshot: CatalogSnapshot | None = None,
+    _retry_rules: tuple | None = None,
     selection_policy: SelectionPolicy | None = None,
     matching_context: MatchingContext | None = None,
 ) -> list[QueueItem]:
@@ -322,7 +329,10 @@ def queue_items(
         )
     profile_version: str | None = None
     common_bytes: int | None = None
+    retry_rules = load_retry_rules(registry_root) if _retry_rules is None else _retry_rules
     for vacancy in vacancies:
+        if retry_reason(vacancy.company, retry_rules):
+            continue
         directory = vacancy.directory
         document = snapshot.operational_by_directory.get(directory.name)
         if workflow == "analyze":

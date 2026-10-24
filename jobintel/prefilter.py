@@ -5,6 +5,7 @@ import os
 import uuid
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from typing import Any
 
@@ -33,8 +34,11 @@ class CompanyRetryRule:
 
     def matches(self, company: str) -> bool:
         candidates = (self.company, *self.aliases)
-        normalized = normalize_company(company)
-        return any(normalize_company(candidate) == normalized for candidate in candidates)
+        def identity(value: str) -> str:
+            value = normalize_company(value)
+            return re.sub(r"(?:\s+(?:s r l|s p a|s a s|srl|spa|gmbh|b v|bv))+$", "", value)
+        normalized = identity(company)
+        return bool(normalized) and any(identity(candidate) == normalized for candidate in candidates)
 
 
 def prefilter_job(
@@ -52,7 +56,7 @@ def prefilter_job(
         now = now.replace(tzinfo=timezone.utc)
     now = now.astimezone(timezone.utc)
 
-    retry_rejection = _company_retry_rejection(job.company, company_retry_rules, now.date())
+    retry_rejection = _company_retry_rejection(job.company, company_retry_rules, now.astimezone(ZoneInfo("Europe/Rome")).date())
     if retry_rejection is not None:
         return retry_rejection
 

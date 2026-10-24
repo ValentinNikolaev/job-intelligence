@@ -55,7 +55,7 @@ class CollectionSafetyContractTests(unittest.TestCase):
         ), patch.object(cli, "Registry", return_value=registry), patch.object(
             cli, "RejectedRegistry", return_value=rejected
         ), patch.object(cli, "ApiUsageLog", return_value=usage), patch.object(
-            cli, "load_company_retry_rules", return_value=()
+            cli, "load_retry_rules", return_value=()
         ), patch.object(cli.op, "project_root", return_value=self.root), patch.object(
             cli, "workflow_lock", return_value=lock
         ), store_patch:

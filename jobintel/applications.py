@@ -18,6 +18,7 @@ from typing import Any, Protocol
 import yaml
 
 from . import storage_bridge as op
+from .rejection_cooldown import require_retry_eligible, rejection_day
 from .evidence import EvidenceError, validate_claims_ledger, validate_evidence_bank
 from .career_coverage import CareerCoverageError, validate_career_coverage
 from .preparation_context import PreparationContext, PreparationContextError, load_preparation_context, resolve_preparation_context
@@ -474,6 +475,7 @@ class ApplicationGenerator:
         directory = directory.resolve()
         snapshot = op.materialize_vacancy_snapshot(directory)
         meta = _read_yaml_mapping(snapshot / "meta.yaml", "vacancy metadata")
+        require_retry_eligible(self.registry_root, str(meta.get("company") or ""), today=rejection_day(self._clock().isoformat()))
         vacancy_id = str(meta.get("id", ""))
         if not vacancy_id:
             raise ApplicationError(f"vacancy metadata has no id: {directory / 'meta.yaml'}")

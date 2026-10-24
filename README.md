@@ -308,3 +308,18 @@ real DOCX export checks. Old receipts stay explicitly legacy. The
 records confirmed outcomes, reports descriptive conversion rates and follow-up timing,
 and publishes approved form-answer/interview/follow-up drafts. No application is sent
 and no status changes automatically.
+
+### Employer rejection waiting period
+
+An employer rejection blocks that vacancy and every vacancy at the same company
+for six calendar months, through the day before the six-month anniversary in
+Europe/Rome. End-of-month dates clamp to the last day of the target month.
+Collection, top results, catalog listings, analysis queues/sealed packs and explicit
+preparation/publication all apply this rule, including new duplicate adverts.
+Archived vacancy histories and the retained manual status audit remain inputs.
+The latest rejection and any longer explicit `company_retry_after` deadline win;
+configured aliases and legal-suffix variants identify the same company.
+Model `not_match` results, prefilter exclusions and withdrawals are not employer
+rejections. History, statuses and existing application files remain intact.
+Recording a confirmed past submission stays descriptive and does not authorize a
+new application.
