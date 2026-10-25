@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 52
 
-- Found: 28
+- Found: 27
 - Applied: 22
 - Interview: 3
 
@@ -12,7 +12,6 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-25 | [Cambium Learning Group](../registry/jobs/20261025_cambium-learni_b58c6030d53242acaf4892c9f4b836e7/) | [Senior Database Engineer](../registry/jobs/20261025_cambium-learni_b58c6030d53242acaf4892c9f4b836e7/job.md) | Worldwide | Himalayas | Found | 2026-10-25 | [Himalayas](https://himalayas.app/companies/cambium-learning-group/jobs/senior-database-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-24 | [Monzo](../registry/jobs/20261024_monzo_f24619ea1847486dbb98b66085e2fd03/) | [Senior Backend Engineer](../registry/jobs/20261024_monzo_f24619ea1847486dbb98b66085e2fd03/job.md) | UK | Jobicy | Found | 2026-10-24 | [Jobicy](https://jobicy.com/jobs/156699-senior-backend-engineer-12) | — | — | — | — | — |
 | 2026-10-24 | [Codest Ltd. Company No. 12590542, VAT number: GB363431020](../registry/jobs/20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134/) | [Solution&Fullstack Engineer (Python+ JS) - AI First](../registry/jobs/20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134/job.md) | Worldwide | Himalayas | Found | 2026-10-24 | [Himalayas](https://himalayas.app/companies/codest-ltd-company-no-12590542-vat-number-gb363431020/jobs/solution-fullstack-engineer-python-js-ai-first?utm_source=api) | — | — | — | — | — |
 | 2026-10-24 | [Tabby](../registry/jobs/20261024_tabby_567056e0c7f142438e33e0194b422cb9/) | [Senior Fullstack Engineer](../registry/jobs/20261024_tabby_567056e0c7f142438e33e0194b422cb9/job.md) | Worldwide | Himalayas | Found | 2026-10-24 | [Himalayas](https://himalayas.app/companies/tabby/jobs/senior-fullstack-engineer?utm_source=api) | — | — | — | — | — |
