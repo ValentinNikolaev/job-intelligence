@@ -1,0 +1,55 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-26T15:10:32Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "SoftHouseGroup",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b",
+      "score": 87,
+      "title": "PHP Software Engineer",
+      "url": "https://jobs.dou.ua/companies/softhousegroup/vacancies/377858/",
+      "vacancy_id": "71ce206f-7e7b-44c0-bae6-5f2b95d4a57b"
+    },
+    {
+      "company": "Stealth LLC",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261026_stealth-llc_a1842392452b4fafa8ded338365b65f0",
+      "score": 86,
+      "title": "AI-native Product Engineer (PHP / Go)",
+      "url": "https://djinni.co/jobs/855076-ai-native-product-engineer-php-go/",
+      "vacancy_id": "a1842392-452b-4faf-a8de-d338365b65f0"
+    },
+    {
+      "company": "SoftHouseGroup",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261026_softhousegroup_566386c35b464213836d92d6a7dce050",
+      "score": 87,
+      "title": "PHP Software Engineer",
+      "url": "https://djinni.co/jobs/855124-php-software-engineer/",
+      "vacancy_id": "566386c3-5b46-4213-836d-92d6a7dce050"
+    },
+    {
+      "company": "RevenueCat",
+      "country_codes": [
+        "CA",
+        "US"
+      ],
+      "directory": "20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae",
+      "score": 68,
+      "title": "Senior Software Engineer, Product",
+      "url": "https://jobicy.com/jobs/157109-senior-software-engineer-product",
+      "vacancy_id": "c8459117-defe-4a53-a491-41e57ba4c4ae"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ec499246d9a3e2e617666a940bea396d2fb79fa56cf8f5b8de4485ec9842d1fa",
+  "schema_version": 2
+}
