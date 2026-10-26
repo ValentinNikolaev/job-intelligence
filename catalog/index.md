@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 59
 
-- Found: 28
+- Found: 34
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,12 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-26 | [Airbnb](../registry/jobs/20261026_airbnb_bc9dd53db2654c6593f6ceb1548d46c6/) | [Software Engineer, Payments](../registry/jobs/20261026_airbnb_bc9dd53db2654c6593f6ceb1548d46c6/job.md) | United States | Jobspresso | Found | 2026-10-26 | [Jobspresso](https://jobspresso.co/job/software-engineer-payments/) | — | — | — | — | — |
+| 2026-10-26 | [Sardine](../registry/jobs/20261026_sardine_761cad0677e5429e86dce3f6a7670ac3/) | [Senior Software Engineer, Backend – KYC](../registry/jobs/20261026_sardine_761cad0677e5429e86dce3f6a7670ac3/job.md) | Canada | Jobspresso | Found | 2026-10-26 | [Jobspresso](https://jobspresso.co/job/senior-software-engineer-backend-kyc/) | — | — | — | — | — |
+| 2026-10-26 | [RevenueCat](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/) | [Senior Software Engineer, Product](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-26 | [Jobicy](https://jobicy.com/jobs/157109-senior-software-engineer-product) | — | — | — | — | — |
+| 2026-10-26 | [SoftHouseGroup](../registry/jobs/20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b/) | [PHP Software Engineer](../registry/jobs/20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b/job.md) | Вінниця, за кордоном, віддалено | Dou | Found | 2026-10-26 | [Dou](https://jobs.dou.ua/companies/softhousegroup/vacancies/377858/) | [Open](../registry/jobs/20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b/company.md) | — | — | — | — |
+| 2026-10-26 | [Stealth LLC](../registry/jobs/20261026_stealth-llc_a1842392452b4fafa8ded338365b65f0/) | [AI-native Product Engineer (PHP / Go)](../registry/jobs/20261026_stealth-llc_a1842392452b4fafa8ded338365b65f0/job.md) | Worldwide | Djinni | Found | 2026-10-26 | [Djinni](https://djinni.co/jobs/855076-ai-native-product-engineer-php-go/) | — | — | — | — | — |
+| 2026-10-26 | [SoftHouseGroup](../registry/jobs/20261026_softhousegroup_566386c35b464213836d92d6a7dce050/) | [PHP Software Engineer](../registry/jobs/20261026_softhousegroup_566386c35b464213836d92d6a7dce050/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-26 | [Djinni](https://djinni.co/jobs/855124-php-software-engineer/) | — | — | — | — | — |
 | 2026-10-25 | [FXC Intelligence](../registry/jobs/20261025_fxc-intelligen_e0671183e4844d4d9caf5a37342f12fb/) | [Lead Software Engineer (Golang/TypeScript) - Independent Contractor](../registry/jobs/20261025_fxc-intelligen_e0671183e4844d4d9caf5a37342f12fb/job.md) | Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Georgia, Greece, Hungary, Ireland, Italy, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine | Himalayas | Found | 2026-10-25 | [Himalayas](https://himalayas.app/companies/fxcintel/jobs/lead-software-engineer-golang-typescript-independent-contractor?utm_source=api) | — | — | — | — | — |
 | 2026-10-24 | [Monzo](../registry/jobs/20261024_monzo_f24619ea1847486dbb98b66085e2fd03/) | [Senior Backend Engineer](../registry/jobs/20261024_monzo_f24619ea1847486dbb98b66085e2fd03/job.md) | UK | Jobicy | Found | 2026-10-24 | [Jobicy](https://jobicy.com/jobs/156699-senior-backend-engineer-12) | — | — | — | — | — |
 | 2026-10-24 | [Codest Ltd. Company No. 12590542, VAT number: GB363431020](../registry/jobs/20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134/) | [Solution&Fullstack Engineer (Python+ JS) - AI First](../registry/jobs/20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134/job.md) | Worldwide | Himalayas | Found | 2026-10-24 | [Himalayas](https://himalayas.app/companies/codest-ltd-company-no-12590542-vat-number-gb363431020/jobs/solution-fullstack-engineer-python-js-ai-first?utm_source=api) | — | — | — | — | — |
