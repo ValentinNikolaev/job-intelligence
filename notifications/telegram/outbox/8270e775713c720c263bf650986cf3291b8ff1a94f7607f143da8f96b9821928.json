@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-26T19:06:36Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Hanna Robulets Company",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c",
+      "score": 76,
+      "title": "Senior Golang Backend Developer",
+      "url": "https://djinni.co/jobs/844740-senior-golang-backend-developer/",
+      "vacancy_id": "4b1f2d38-db72-44ae-99b0-cb8331aa315c"
+    },
+    {
+      "company": "RecruitGarden",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261022_recruitgarden_437ded73af0340d09d6878b7a936bba4",
+      "score": 83,
+      "title": "Backend Engineer (with any language, transitioning to Go)",
+      "url": "https://djinni.co/jobs/854707-backend-engineer-with-any-language-transition/",
+      "vacancy_id": "437ded73-af03-40d0-9d68-78b7a936bba4"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "8270e775713c720c263bf650986cf3291b8ff1a94f7607f143da8f96b9821928",
+  "schema_version": 2
+}
