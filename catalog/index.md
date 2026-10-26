@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 54
+Total vacancies: 53
 
-- Found: 29
+- Found: 28
 - Applied: 22
 - Interview: 3
 
@@ -12,7 +12,6 @@ Total vacancies: 54
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-10-25 | [XION](../registry/jobs/20261025_xion_473dca85c9fa445d8d471620c0ba374e/) | [Senior Protocol Engineer](../registry/jobs/20261025_xion_473dca85c9fa445d8d471620c0ba374e/job.md) | Worldwide | Himalayas | Found | 2026-10-25 | [Himalayas](https://himalayas.app/companies/burnt/jobs/senior-protocol-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-25 | [FXC Intelligence](../registry/jobs/20261025_fxc-intelligen_e0671183e4844d4d9caf5a37342f12fb/) | [Lead Software Engineer (Golang/TypeScript) - Independent Contractor](../registry/jobs/20261025_fxc-intelligen_e0671183e4844d4d9caf5a37342f12fb/job.md) | Albania, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland, France, Georgia, Greece, Hungary, Ireland, Italy, Kazakhstan, Kosovo, Latvia, Liechtenstein, Lithuania, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine | Himalayas | Found | 2026-10-25 | [Himalayas](https://himalayas.app/companies/fxcintel/jobs/lead-software-engineer-golang-typescript-independent-contractor?utm_source=api) | — | — | — | — | — |
 | 2026-10-24 | [Monzo](../registry/jobs/20261024_monzo_f24619ea1847486dbb98b66085e2fd03/) | [Senior Backend Engineer](../registry/jobs/20261024_monzo_f24619ea1847486dbb98b66085e2fd03/job.md) | UK | Jobicy | Found | 2026-10-24 | [Jobicy](https://jobicy.com/jobs/156699-senior-backend-engineer-12) | — | — | — | — | — |
 | 2026-10-24 | [Codest Ltd. Company No. 12590542, VAT number: GB363431020](../registry/jobs/20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134/) | [Solution&Fullstack Engineer (Python+ JS) - AI First](../registry/jobs/20261024_codest-ltd-com_47c9f0d8f29b474d95ae0b5244c37134/job.md) | Worldwide | Himalayas | Found | 2026-10-24 | [Himalayas](https://himalayas.app/companies/codest-ltd-company-no-12590542-vat-number-gb363431020/jobs/solution-fullstack-engineer-python-js-ai-first?utm_source=api) | — | — | — | — | — |
