@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 52
+Total vacancies: 53
 
-- Found: 27
+- Found: 28
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,7 @@ Total vacancies: 52
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-27 | [AlfaDocs.com](../registry/jobs/20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0/) | [Senior Full Stack/Backend Engineer (PHP + React)](../registry/jobs/20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0/job.md) | Germany, Italy | Himalayas | Found | 2026-10-27 | [Himalayas](https://himalayas.app/companies/alfadocs-com/jobs/senior-full-stack-backend-engineer-php-react?utm_source=api) | — | — | — | — | — |
 | 2026-10-26 | [Hanna Robulets Company](../registry/jobs/20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c/) | [Senior Golang Backend Developer](../registry/jobs/20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-26 | [Djinni](https://djinni.co/jobs/844740-senior-golang-backend-developer/) | — | — | — | — | — |
 | 2026-10-26 | [RevenueCat](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/) | [Senior Software Engineer, Product](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-26 | [Jobicy](https://jobicy.com/jobs/157109-senior-software-engineer-product) | — | — | — | — | — |
 | 2026-10-26 | [SoftHouseGroup](../registry/jobs/20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b/) | [PHP Software Engineer](../registry/jobs/20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b/job.md) | Вінниця, за кордоном, віддалено | Dou | Found | 2026-10-26 | [Dou](https://jobs.dou.ua/companies/softhousegroup/vacancies/377858/) | [Open](../registry/jobs/20261026_softhousegroup_71ce206f7e7b44c0bae65f2b95d4a57b/company.md) | — | — | — | — |
