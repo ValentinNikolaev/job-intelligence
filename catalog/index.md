@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 55
 
-- Found: 28
+- Found: 30
 - Applied: 22
 - Interview: 3
 
@@ -12,6 +12,8 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-27 | [Gamzix](../registry/jobs/20261027_gamzix_a2668310006041eb8e4ea060b4a2e755/) | [Go Developer](../registry/jobs/20261027_gamzix_a2668310006041eb8e4ea060b4a2e755/job.md) | EU | Djinni | Found | 2026-10-27 | [Djinni](https://djinni.co/jobs/855289-go-developer/) | — | — | — | — | — |
+| 2026-10-27 | [Biz Factory GmbH](../registry/jobs/20261027_biz-factory-gm_aad41baa9b7647ec9b4393cee1da6f0b/) | [DevOps Engineer (m/w/d) für Linux- und Kubernetes-basierte OSS-Infrastrukturen](../registry/jobs/20261027_biz-factory-gm_aad41baa9b7647ec9b4393cee1da6f0b/job.md) | Berlin | Arbeitnow | Found | 2026-10-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/biz-factory-gmbh/devops-engineer-fur-linux-und-kubernetes-basierte-oss-infrastrukturen-berlin-446339) | — | — | — | — | — |
 | 2026-10-27 | [AlfaDocs.com](../registry/jobs/20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0/) | [Senior Full Stack/Backend Engineer (PHP + React)](../registry/jobs/20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0/job.md) | Germany, Italy | Himalayas | Found | 2026-10-27 | [Himalayas](https://himalayas.app/companies/alfadocs-com/jobs/senior-full-stack-backend-engineer-php-react?utm_source=api) | — | — | — | — | — |
 | 2026-10-26 | [Hanna Robulets Company](../registry/jobs/20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c/) | [Senior Golang Backend Developer](../registry/jobs/20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-26 | [Djinni](https://djinni.co/jobs/844740-senior-golang-backend-developer/) | — | — | — | — | — |
 | 2026-10-26 | [RevenueCat](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/) | [Senior Software Engineer, Product](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-26 | [Jobicy](https://jobicy.com/jobs/157109-senior-software-engineer-product) | — | — | — | — | — |
