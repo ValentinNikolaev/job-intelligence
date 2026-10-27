@@ -34,6 +34,48 @@ def batch(source="reteinformaticalavoro", *, html=False):
 
 
 class JobAlertsTests(unittest.TestCase):
+    def test_linkedin_mail_link_is_canonicalized_without_tracking(self):
+        tracking = ("https://www.linkedin.com/comm/jobs/view/4481423757/"
+                    "?trackingId=private&midToken=secret&otpToken=secret")
+        description = "Backend Developer - PHP\nChaberton Professionals\nRome\nPHP"
+        data = {"schema_version": 1, "emails": [{
+            "message_id": "gmail-linkedin", "sender": "LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>",
+            "subject": "Backend Developer - PHP and other jobs", "received_at": "2026-10-27T04:50:44Z",
+            "body_text": description + "\nView job: " + tracking,
+            "jobs": [{"title": "Backend Developer - PHP", "company": "Chaberton Professionals",
+                      "source_url": tracking, "description": description, "location": "Rome"}],
+        }]}
+        job, = normalize_batch(data, "linkedin")
+        self.assertEqual(job.source_job_id, "4481423757")
+        self.assertEqual(job.source_url, "https://www.linkedin.com/jobs/view/4481423757/")
+        self.assertEqual(job.source_metadata["description_scope"], "email_excerpt")
+        self.assertIsNone(job.published_at)
+        self.assertIsNone(job.remote)
+        self.assertNotIn("private", json.dumps(asdict(job)))
+        for sender in ("jobs-noreply@linkedin.com", "jobalerts-noreply@evil.test"):
+            data["emails"][0]["sender"] = sender
+            with self.subTest(sender=sender), self.assertRaises(ValueError):
+                normalize_batch(data, "linkedin")
+
+    def test_linkedin_rejects_account_and_unlinked_job_routes(self):
+        data = {"schema_version": 1, "emails": [{
+            "message_id": "gmail-linkedin", "sender": "jobalerts-noreply@linkedin.com",
+            "subject": "PHP jobs", "received_at": "2026-10-27T04:50:44Z",
+            "body_text": "PHP Engineer\nExample\nhttps://www.linkedin.com/jobs/view/4481423757/",
+            "jobs": [{"title": "PHP Engineer", "company": "Example",
+                      "source_url": "https://www.linkedin.com/jobs/view/4481423757/",
+                      "description": "PHP Engineer\nExample"}],
+        }]}
+        for url in ("https://www.linkedin.com/in/example/", "https://www.linkedin.com/jobs/search/",
+                    "https://evil.test/jobs/view/4481423757/", "https://www.linkedin.com/jobs/view/4481423757/extra"):
+            data["emails"][0]["jobs"][0]["source_url"] = url
+            with self.subTest(url=url), self.assertRaises(ValueError):
+                normalize_batch(data, "linkedin")
+        data["emails"][0]["jobs"][0]["source_url"] = "https://www.linkedin.com/jobs/view/4481423757/"
+        data["emails"][0]["jobs"][0]["company"] = "Invented"
+        with self.assertRaises(ValueError):
+            normalize_batch(data, "linkedin")
+
     def test_arc_resolution_never_follows_final_destination_or_account_links(self):
         from unittest.mock import Mock
         opener = Mock()

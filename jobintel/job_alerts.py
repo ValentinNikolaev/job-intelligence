@@ -77,6 +77,13 @@ def _posting(value: str, source: str) -> tuple[str, str]:
     url = urlsplit(value)
     if url.scheme not in {"http", "https"} or url.username or url.password or url.port not in {None, 443}:
         raise ValueError("invalid vacancy URL")
+    if source == "linkedin":
+        if url.hostname not in {"linkedin.com", "www.linkedin.com"} or url.fragment:
+            raise ValueError("expected a LinkedIn vacancy URL")
+        match = re.fullmatch(r"/(?:comm/)?jobs/view/([1-9][0-9]*)/?", url.path)
+        if not match:
+            raise ValueError("expected a LinkedIn job posting with a numeric ID")
+        return match[1], f"https://www.linkedin.com/jobs/view/{match[1]}/"
     if source == "arc":
         if url.hostname not in {"arc.dev", "www.arc.dev"}:
             raise ValueError("expected a direct Arc vacancy URL; tracking links need resolution")
@@ -128,7 +135,7 @@ def _date(value: str) -> str:
 
 
 def normalize_batch(payload: Any, source: str) -> list[NormalizedJob]:
-    if source not in {"reteinformaticalavoro", "indeed", "arc"}:
+    if source not in {"reteinformaticalavoro", "indeed", "arc", "linkedin"}:
         raise ValueError("unsupported Job Alert source")
     if not isinstance(payload, dict) or set(payload) != {"schema_version", "emails"}:
         raise ValueError("expected schema_version and emails")
@@ -160,7 +167,10 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
     if source == "arc" and sender.lower() != "talent@arc.dev":
         raise ValueError("Arc alerts must come from talent@arc.dev")
     sender_domains = ({"indeed.com", "jobalert.indeed.com", "match.indeed.com"} if source == "indeed"
-                      else {"arc.dev"} if source == "arc" else {"reteinformaticalavoro.it"})
+                      else {"arc.dev"} if source == "arc" else {"linkedin.com"} if source == "linkedin"
+                      else {"reteinformaticalavoro.it"})
+    if source == "linkedin" and sender.lower() != "jobalerts-noreply@linkedin.com":
+        raise ValueError("LinkedIn alerts must come from jobalerts-noreply@linkedin.com")
     if sender.lower().rsplit("@", 1)[-1] not in sender_domains or "@" not in sender:
         raise ValueError("unexpected sender domain")
     _text(email["subject"], "subject")
@@ -228,8 +238,8 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
         remote_value = fields.get("remote_working")
         if remote_value is not None:
             allowed_remote = ({"Remoto", "Da remoto", "Lavoro da casa", "Ibrido", "In presenza"}
-                              if source == "indeed" else {"Remote", "remote", "Hybrid", "hybrid", "On-site", "on-site"}
-                              if source == "arc" else {"Totale", "Parziale", "No"})
+            if source == "indeed" else {"Remote", "remote", "Hybrid", "hybrid", "On-site", "on-site"}
+                              if source in {"arc", "linkedin"} else {"Totale", "Parziale", "No"})
             if remote_value not in allowed_remote:
                 raise ValueError("unsupported remote_working evidence")
             if _spaces(remote_value) not in _spaces(fields["description"]):
