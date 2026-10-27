@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 56
 
-- Found: 28
+- Found: 31
 - Applied: 22
 - Interview: 3
 
@@ -12,8 +12,11 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-27 | [SBC Performance](../registry/jobs/20261027_sbc-performanc_e206e632500f4ca8ba516347dc96c0de/) | [Senior Go Developer](../registry/jobs/20261027_sbc-performanc_e206e632500f4ca8ba516347dc96c0de/job.md) | віддалено | Dou | Found | 2026-10-27 | [Dou](https://jobs.dou.ua/companies/sbc-performance/vacancies/378060/) | [Open](../registry/jobs/20261027_sbc-performanc_e206e632500f4ca8ba516347dc96c0de/company.md) | — | — | — | — |
+| 2026-10-27 | [ObviouslyApps](../registry/jobs/20261027_obviouslyapps_40b28164bcaf4ca7986fdeaeea86c233/) | [Middle Backend Engineer PHP/Laravel](../registry/jobs/20261027_obviouslyapps_40b28164bcaf4ca7986fdeaeea86c233/job.md) | Worldwide | Djinni | Found | 2026-10-27 | [Djinni](https://djinni.co/jobs/855408-middle-backend-engineer-php-laravel/) | — | — | — | — | — |
+| 2026-10-27 | [0G](../registry/jobs/20261027_0g_a8004ed321bb4581ba8e5af9e03b7bde/) | [Senior DevOps Engineer](../registry/jobs/20261027_0g_a8004ed321bb4581ba8e5af9e03b7bde/job.md) | Remote | Arbeitnow | Found | 2026-10-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/0g/remote-senior-devops-engineer-314207) | — | — | — | — | — |
+| 2026-10-27 | [Landsiedel NLP Training](../registry/jobs/20261027_landsiedel-nlp_cc0dd41f1a4245ecaa7062f0550f1b6c/) | [Pflichtpraktikum Informatik (Webprogrammierung + SEO)](../registry/jobs/20261027_landsiedel-nlp_cc0dd41f1a4245ecaa7062f0550f1b6c/job.md) | Kitzingen | Arbeitnow | Found | 2026-10-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/landsiedel-nlp-training/pflichtpraktikum-informatik-webprogrammierung-seo-kitzingen-206022) | — | — | — | — | — |
 | 2026-10-27 | [Gamzix](../registry/jobs/20261027_gamzix_a2668310006041eb8e4ea060b4a2e755/) | [Go Developer](../registry/jobs/20261027_gamzix_a2668310006041eb8e4ea060b4a2e755/job.md) | EU | Djinni | Found | 2026-10-27 | [Djinni](https://djinni.co/jobs/855289-go-developer/) | — | — | — | — | — |
-| 2026-10-27 | [Biz Factory GmbH](../registry/jobs/20261027_biz-factory-gm_aad41baa9b7647ec9b4393cee1da6f0b/) | [DevOps Engineer (m/w/d) für Linux- und Kubernetes-basierte OSS-Infrastrukturen](../registry/jobs/20261027_biz-factory-gm_aad41baa9b7647ec9b4393cee1da6f0b/job.md) | Berlin | Arbeitnow | Found | 2026-10-27 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/biz-factory-gmbh/devops-engineer-fur-linux-und-kubernetes-basierte-oss-infrastrukturen-berlin-446339) | — | — | — | — | — |
 | 2026-10-27 | [AlfaDocs.com](../registry/jobs/20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0/) | [Senior Full Stack/Backend Engineer (PHP + React)](../registry/jobs/20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0/job.md) | Germany, Italy | Himalayas | Found | 2026-10-27 | [Himalayas](https://himalayas.app/companies/alfadocs-com/jobs/senior-full-stack-backend-engineer-php-react?utm_source=api) | — | — | — | — | — |
 | 2026-10-26 | [Hanna Robulets Company](../registry/jobs/20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c/) | [Senior Golang Backend Developer](../registry/jobs/20261026_hanna-robulets_4b1f2d38db7244ae99b0cb8331aa315c/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-10-26 | [Djinni](https://djinni.co/jobs/844740-senior-golang-backend-developer/) | — | — | — | — | — |
 | 2026-10-26 | [RevenueCat](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/) | [Senior Software Engineer, Product](../registry/jobs/20261026_revenuecat_c8459117defe4a53a49141e57ba4c4ae/job.md) | EMEA,  LATAM,  Canada,  USA | Jobicy | Found | 2026-10-26 | [Jobicy](https://jobicy.com/jobs/157109-senior-software-engineer-product) | — | — | — | — | — |
