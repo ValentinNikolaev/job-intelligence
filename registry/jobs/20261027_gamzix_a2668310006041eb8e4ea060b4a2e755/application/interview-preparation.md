@@ -1,0 +1,37 @@
+# Interview preparation — Gamzix, Go Developer
+
+## Recruiter / HR Screening
+
+Lead with the recent Go service and production data work. A truthful short introduction is: “I build and operate backend services in Go and PHP. My recent work includes a multi-tenant Go gateway and production event analytics, and I have earlier experience with database stability under peak traffic. This role appeals to me because the engine has demanding correctness and operating constraints.” Be ready to explain that Simple.life finished in 2026 and that CRURATED was a parallel part-time consulting engagement. The live role is remote in the EU and lists English B1. Ask the recruiter how Gamzix divides responsibility for Go engineering and game mathematics.
+
+## Culture Fit / Behavioral Interview
+
+Prepare concise STAR accounts from real work, with Situation and Task limited to what the source records. Likely questions include: How did you take an unclear service boundary and turn it into a deliverable system? How did you work with product stakeholders when a backend contract affected them? When did you disagree about an architecture choice, and how was it decided? What did you do when production data was incomplete or delayed? How did you balance release speed and a privacy constraint? How did you coordinate across a small backend, frontend and SRE team? What changed after you observed a production issue? How did you handle a requirement in a domain you had not worked in before? For the first two, the Go gateway and CRURATED event system are strong candidates. The calling platform can support a privacy and review story.
+
+## Technical Interview
+
+**High priority — Go concurrency and service design.** The employer explicitly asks for Go concurrency and high-load distributed systems. Rehearse an honest design discussion covering request ownership, bounded worker pools, cancellation, context propagation, idempotency and observability. Distinguish design principles from personal claims. Use the gateway's tenant-aware queues and event model as grounded work, but do not say it ran at 10k+ RPS. Ask whether the advertised figure is current load, a peak target or an acceptance threshold. A useful system-design exercise is to define a game round's state machine and identify which transitions must be atomic, then ask where the ledger and RNG boundaries sit.
+
+**High priority — data consistency and PostgreSQL.** The candidate's profile confirms PostgreSQL use, not a specific complex transaction or partitioning achievement. Prepare to reason about isolation levels, unique constraints, retries, transaction scope, double processing and audit history. Discuss how CRURATED's parallel event versions kept production analytics extensible, while acknowledging that event-versioning is not the same guarantee as ACID settlement.
+
+**High priority — gaming correctness.** Learn the employer's definitions of RNG integration, round settlement, RTP and payout responsibility. Ask how the math model is reviewed and what independent validation or certification is required. Do not claim to have built a slot engine. Explain how you would protect the boundary between deterministic game logic and infrastructure concerns, then ask the CTO which assumptions are actually correct for their platform.
+
+**Medium priority — messaging and operating performance.** RabbitMQ and AWS messaging are in the source profile. Be ready to discuss at-least-once delivery, deduplication, backpressure and failure visibility, using the candidate's production event and gateway work. For performance, describe airSlate's bottleneck removal and improved database stability without inventing an RPS figure. PDFfiller.com shows a separate seasonal-load email context; email counts cannot be converted into gaming request rates. Ask which latency percentile matters for the engine and what tracing and load-test tooling exists.
+
+**Medium priority — migration and infrastructure.** The ad mentions possible Node.js-to-Go migration, Redis, ClickHouse, Kubernetes and AWS. Kubernetes and AWS are supported candidate skills. The other named tools and migration are unverified. Prepare an approach to evaluating a migration: inventory behaviour, write contract tests, identify state boundaries, compare performance under representative load and choose a reversible rollout path. Describe this as a proposal, not a completed past project. Do not cite the airSlate ECS-to-Kubernetes migration, which a later candidate clarification excluded.
+
+## CV Deep-Dive Questions
+
+Expect to explain which pieces of the Go gateway the candidate owned, how tenant-specific data and vendor adapters were separated, and what the first business demonstration proved. Explain the CRURATED consulting period and how production DataLake ownership and event-version publication differed from the Simple.life role. For the modular analytics streams, describe the supported operational observation without embellishing the timing as an independently measured saving. For airSlate, clarify the database bottleneck and how stability improved, avoiding unsupported cost numbers. For PDFfiller.com, explain the team and transactional email workload, keeping the distinction between seasonal traffic and an engine's RPS. State the Simple.life end-date correction consistently with the source and explain the CV's year-only rendering if asked.
+
+## Company-Specific Preparation
+
+The official Gamzix site says its games load quickly on mobile and in regions with weaker connectivity. It also advertises API-ready tournaments and partner promotions. Read the current product pages before the interview and ask how the engine serves those user and operator needs. The vacancy promises collaboration with the CTO and a new slot engine, yet gives no existing design. Form questions about the split between engine, game-math team, wallet/ledger service, platform integration and certification.
+
+## Preparation Plan
+
+Must prepare before screening: a two-minute explanation of the Go gateway, a concise description of the part-time CRURATED overlap, and honest answers on gaming experience and scale. Before technical interview: practise a game-round state machine on paper, review Go concurrency and database transaction fundamentals, and rehearse one real performance example with its actual source limits. Before final or culture conversation: decide whether gambling-domain work is personally acceptable, ask how mathematics and engineering responsibilities are separated, and confirm contract, compensation and working arrangements. Avoid adopting invented confidence about expertise in RNG, payout logic or Redis merely because those terms appear in the advertisement.
+
+## Questions to Ask
+
+What does the advertised 10k+ RPS describe: present production traffic, a tested peak or a future target? Which component owns a round's authoritative state and settlement? Who designs and independently validates RNG and payout mathematics? How are duplicate or replayed requests handled today? What parts of the Node.js estate are candidates for migration, and has that decision already been made? How do PostgreSQL and Redis divide operational state? What are the primary latency and error budgets for the engine? How are game changes tested and certified before release? What would a useful first quarter in this role look like? Which decisions would this engineer make directly with the CTO?
