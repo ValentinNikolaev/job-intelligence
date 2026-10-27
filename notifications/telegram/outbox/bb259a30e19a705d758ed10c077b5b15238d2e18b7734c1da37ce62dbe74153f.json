@@ -1,0 +1,22 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-27T09:36:44Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "AlfaDocs.com",
+      "country_codes": [
+        "DE",
+        "IT"
+      ],
+      "directory": "20261027_alfadocs-com_d34eba384c0045b79eeb68057d0202e0",
+      "score": 76,
+      "title": "Senior Full Stack/Backend Engineer (PHP + React)",
+      "url": "https://himalayas.app/companies/alfadocs-com/jobs/senior-full-stack-backend-engineer-php-react?utm_source=api",
+      "vacancy_id": "d34eba38-4c00-45b7-9eeb-68057d0202e0"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "bb259a30e19a705d758ed10c077b5b15238d2e18b7734c1da37ce62dbe74153f",
+  "schema_version": 2
+}
