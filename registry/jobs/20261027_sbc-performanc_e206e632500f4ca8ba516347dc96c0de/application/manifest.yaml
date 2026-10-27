@@ -1,7 +1,7 @@
 profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
 vacancy_version: sha256:b563bb62b6e6fad828722f5673d8ef2b7d96bc163385e5696714645338f21269
 company_version: sha256:4b5d538c0a2089d8cad7986c3fddaa650a3189038a7c1df674f50e843c5e9ce8
-prompt_version: sha256:3f0e52c6130ad3832860d8f6c837f89471bd98c0068eb92bd1322b6c75ef1ed4
+prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
 model: codex:gpt-6-sol:medium
 analysis: &id001
   model: codex:gpt-5.6-luna:medium
@@ -11,7 +11,7 @@ analysis: &id001
 quality_contract_version: 3
 preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
 cv_export_stem: CV_ValentinNikolaev_sbcperformance_SeniorGoDeveloper
-generated_at: '2026-10-27T20:44:50Z'
+generated_at: '2026-10-27T21:58:15Z'
 documents:
   cv:
     profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
@@ -19,7 +19,11 @@ documents:
     company_version: sha256:4b5d538c0a2089d8cad7986c3fddaa650a3189038a7c1df674f50e843c5e9ce8
     prompt_version: sha256:3f0e52c6130ad3832860d8f6c837f89471bd98c0068eb92bd1322b6c75ef1ed4
     model: codex:gpt-6-sol:medium
-    analysis: *id001
+    analysis: &id002
+      model: codex:gpt-5.6-luna:medium
+      score: 84
+      analyzed_at: '2026-10-27T19:31:29Z'
+      version: sha256:3e93d6da87b4aac9f500a3cfe142f04b88a99e67b175b0dbee1ae924dde38df0
     quality_contract_version: 3
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_sbcperformance_SeniorGoDeveloper
@@ -28,20 +32,20 @@ documents:
     profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
     vacancy_version: sha256:b563bb62b6e6fad828722f5673d8ef2b7d96bc163385e5696714645338f21269
     company_version: sha256:4b5d538c0a2089d8cad7986c3fddaa650a3189038a7c1df674f50e843c5e9ce8
-    prompt_version: sha256:3f0e52c6130ad3832860d8f6c837f89471bd98c0068eb92bd1322b6c75ef1ed4
+    prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
     model: codex:gpt-6-sol:medium
     analysis: *id001
     quality_contract_version: 3
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_sbcperformance_SeniorGoDeveloper
-    generated_at: '2026-10-27T20:44:50Z'
+    generated_at: '2026-10-27T21:58:15Z'
   analysis:
     profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
     vacancy_version: sha256:b563bb62b6e6fad828722f5673d8ef2b7d96bc163385e5696714645338f21269
     company_version: sha256:4b5d538c0a2089d8cad7986c3fddaa650a3189038a7c1df674f50e843c5e9ce8
     prompt_version: sha256:3f0e52c6130ad3832860d8f6c837f89471bd98c0068eb92bd1322b6c75ef1ed4
     model: codex:gpt-6-sol:medium
-    analysis: *id001
+    analysis: *id002
     quality_contract_version: 3
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_sbcperformance_SeniorGoDeveloper
@@ -52,7 +56,7 @@ documents:
     company_version: sha256:4b5d538c0a2089d8cad7986c3fddaa650a3189038a7c1df674f50e843c5e9ce8
     prompt_version: sha256:3f0e52c6130ad3832860d8f6c837f89471bd98c0068eb92bd1322b6c75ef1ed4
     model: codex:gpt-6-sol:medium
-    analysis: *id001
+    analysis: *id002
     quality_contract_version: 3
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_sbcperformance_SeniorGoDeveloper
@@ -67,8 +71,8 @@ quality:
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
     cover-letter:
-      word_count: 355
-      sha256: sha256:c29ac4079ee5bb052936c3ce0fdb96fa16da65a02d6a1dd0805841ef94168118
+      word_count: 166
+      sha256: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
       preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
@@ -84,10 +88,10 @@ quality:
       preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
-  document_format: standard
+  document_format: compact
   grounding:
     schema_version: 2
-    sha256: 0a3026027daeb39890aea9c243cbc5f82b7884e10befdbfd35829ad30fdfcf93
+    sha256: 984d54f12cae6a541ca48f40ee2945a9b84e6615a741e04c1b4dfd1525908750
     evidence_bank:
       schema_version: 1
       sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
@@ -332,7 +336,7 @@ quality:
       review_notes: Source-exact record reviewed; use only the recorded facts. Employment
         sections still obey the ten-year cutoff.
       status: verified
-      verification: &id002
+      verification: &id003
         reviewer: Codex evidence-quality implementation review
         reviewed_at: '2026-09-22T22:01:45.004885+00:00'
         method: Compared verbatim extract and attribution to immutable candidate source;
@@ -354,7 +358,7 @@ quality:
         Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
         and other source records.
       status: verified
-      verification: *id002
+      verification: *id003
     - id: email-team
       employer: PDFfiller
       role: Software Developer
@@ -371,7 +375,7 @@ quality:
         Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
         and other source records.
       status: verified
-      verification: *id002
+      verification: *id003
     - id: hyprr-user-confirmed
       employer: Hyprr
       source:
@@ -454,7 +458,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: &id003
+      attribution_source: &id004
         path: registry/candidate/user-confirmed-career-clarifications.md
         quote: '- **Role:** Software Developer'
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
@@ -487,7 +491,10 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: &id005
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: '- **Role:** Software Developer'
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
       status: verified
       verification:
         reviewer: Codex source review
@@ -526,7 +533,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -555,7 +562,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id005
       status: verified
       verification:
         reviewer: Codex source review
@@ -597,7 +604,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -676,7 +683,7 @@ quality:
         reviewer: Codex root — independent CV editor and final grounding reviewer
         author: Codex sbc_gamzix
         mode: independent
-      role_coverage: &id004
+      role_coverage: &id006
       - employer: Simple App
         source_period:
           start:
@@ -1115,67 +1122,127 @@ quality:
         consequence: Supported dependable transactional-message delivery
         verdict: approve
     application_review:
-      role_coverage: *id004
-      letter_review:
-        reviewer: Codex root — independent CV editor and final grounding reviewer
-        document_sha256: sha256:c29ac4079ee5bb052936c3ce0fdb96fa16da65a02d6a1dd0805841ef94168118
-        basis_sha256: 441b4aa91f667ead3c4276d0106a3651a963f2d25312ba00ec22ff31c1cd046a
+      role_coverage: *id006
+      letter_review: &id007
+        reviewer: Codex root, final English letter editor
+        document_sha256: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
+        basis_sha256: 624fb68ec0730f99c8baf0df72e9a571f5d969fbaaa8b6facb30ec4021841f25
         priority_mapping:
         - requirement: Go backend architecture
           evidence_ids:
           - simple-2026-helpdesk-gateway
           point: Vendor-neutral Go service design and a usable product milestone
           why_priority: The posting asks for senior Go service and platform architecture.
-          letter_quote: I built a Go gateway that put Intercom and Zendesk behind
-            a vendor-neutral model.
+          letter_quote: I built a Go gateway that gave Intercom and Zendesk a common
+            event model. I owned the backend contracts, tenant-aware ingestion and
+            vendor adapters. It enabled the first business demonstration of a support
+            AI product.
         - requirement: Production data pipeline design
           evidence_ids:
           - simple-2026-snowflake-pipelines
           point: Simplification of a production data delivery path
           why_priority: The role includes data modelling and evolving a platform around
             business flows.
-          letter_quote: I consolidated separate Snowflake-to-Intercom feeds into one
-            engine, removing repeated full-history reads and an existing daily item
-            cap.
+          letter_quote: I’ve also simplified production data pipelines, removing repeated
+            full-history reads without changing the existing API.
         distinctness: The Go gateway shows service-boundary design; the Snowflake
           feed work shows consolidation of an operational data path.
-        channel_fit: This is a separate cover-letter attachment with one developed
-          example and a shorter complementary data point.
+        channel_fit: Required form text; 166 words and four short body paragraphs.
+          No optional form field is populated. One short gateway example and one complementary
+          pipeline sentence.
         narrated_examples:
-        - letter_quote: I built a Go gateway that put Intercom and Zendesk behind
-            a vendor-neutral model.
-          adds_value: The concrete gateway illustrates end-to-end service design and
-            the first product demonstration.
-        company_claim: SBC Performance describes a service that combines creative,
-          media buying, and proprietary technology to make growth more measurable.
-        company_grounding: The final sentence paraphrases the captured official homepage
-          statement about in-house creative, expert media buying, proprietary technology
-          and measurable growth.
+        - letter_quote: I built a Go gateway that gave Intercom and Zendesk a common
+            event model.
+          adds_value: Shows concrete Go service boundaries and a supported product
+            demonstration without replaying career history.
+        company_claim: I’d like to bring that experience to SBC Performance’s lead-generation
+          platform, working on backend design and keeping services reliable in production.
+        company_grounding: The captured official job description explicitly recruits
+          this engineer to build a scalable lead generation platform; the letter makes
+          no further company claim.
         voice:
           language: English
-          notes: Checked the final English copy for calm professional wording, concrete
-            claims, and no invented AdTech history. Root final edit checked the exact
-            English copy, narrowed unsupported ownership/learning statements, and
-            retained factual limitations under the current voice.
+          notes: Read the exact English text against both configured voice sources.
+            Replaced the vacancy-recap opening with professional identity, retained
+            the direct AdTech-experience limit and factual engineering example. No
+            invented enthusiasm, metrics or availability.
           rules:
           - path: I:/Development/Git/ValentinNikolaev/social-promotion/social-voice.md
-            sha256: 0b7890192f3b0d51a9be9cda76a85d49bf1fa4b4ca4aadb545a92178c7382119
+            sha256: f8b16d365b651bad84ed90ab6014a95f0e3000dfada572c46f978f3b8847d159
           - path: I:/Development/Git/ValentinNikolaev/social-promotion/employer-letter-flow.md
             sha256: 2ec9140dc47c1ee5e918656f8d6f046913a2fd2356a706dad7429e37d00a59c9
+        humanizer:
+          skill: humanizer
+          version: 22.1.0+codex.20261027190753
+          reviewer: Codex root, final English letter editor
+          document_sha256: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
+          notes: Final local editing removed the previous vacancy-recap opening and
+            CV replay, shortened the letter, and kept the Go gateway and pipeline/API
+            consequence. Kept the candid domain-experience limit and CET location;
+            checked these against source evidence and the application profile.
+        ai_detection:
+          skill: ai-detector
+          version: 22.1.0+codex.20261027190753
+          reviewer: Codex root, final English letter editor
+          mode: external
+          document_sha256: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
+          session_url: https://chatgpt.com/c/6ae11cdf-5764-83eb-b9ff-9fe019c48dc4
+          literal_feedback: 'Наблюдаемая стилистика: Слабые AI-like признаки. Это
+            качественное описание впечатления, не оценка вероятности ИИ-авторства.
+            Приоритет исправлений невысокий.'
+          notes: 'Local assessment and completed external check of the same exact
+            passage. Verified all letter words and first/last sentences in the actual
+            posted message after navigation. Service retained the direct opening,
+            concrete duties, pipeline result and candid limit; identified the transferable
+            closing as the main weak point. Kept the accurate contribution-focused
+            closing: its proposed hear-more alternative shifts the purpose. Kept formal
+            business demonstration for HR. No service number was supplied or inferred.'
+        naturalness:
+          rubric: naturalness-v1
+          reviewer: Codex root, final English letter editor
+          document_sha256: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
+          score: 92
+          dimensions:
+            voice:
+              score: 23
+              reason: Direct I build and operate Go services opening and candid I’d
+                need to learn your lead-generation workflows match the calm professional
+                voice; the courteous closing remains conventional.
+            specificity:
+              score: 24
+              reason: Intercom/Zendesk common event model, tenant-aware ingestion
+                and unchanged API are source-backed, relevant details, with no guessed
+                metrics.
+            flow:
+              score: 23
+              reason: Four short paragraphs progress from contribution to one example,
+                the desired responsibility and a concise invitation; the example paragraph
+                is denser but readable.
+            restraint:
+              score: 22
+              reason: No company praise or exaggerated fit; explicitly preserves lack
+                of lead-generation experience. Closing is transferable but short and
+                appropriate.
         company_source:
           path: parts/company-source.txt
-          url: https://sbc-performance.com/
-          quote: SBC ecosystem combines in-house creative, expert media buying and
-            proprietary technology
-          sha256: 27caf6bb170df472e9fdb1cf7930d7a725f146c3937ccc9cc37302fb82a5d9c5
+          url: https://sbc-performance.breezy.hr/p/690b4b5746bd01-senior-go-developer
+          quote: Right now, we’re looking for a Senior Go Developer to join our Product
+            & Engineering Team and help build a scalable lead generation platform.
+          sha256: 344f58487d192e37c088db8674d4d4f7198011bb10b831c862efce81101a591f
           checked_on: '2026-10-27'
-        company_fact: SBC ecosystem combines in-house creative, expert media buying
-          and proprietary technology
+        company_fact: help build a scalable lead generation platform
+        application_route:
+          channel: form
+          letter_required: true
+          source_url: https://sbc-performance.breezy.hr/p/690b4b5746bd01-senior-go-developer/apply
+          checked_on: '2026-10-27'
+          evidence: Cover Letter*; textarea[name="cCoverLetter"].required is true
+            in the visible apply form.
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
-    reviewer: Codex root — independent CV editor and final grounding reviewer
+    reviewer: Codex root, final English letter editor
     document_sha256:
       cv: sha256:18ec0d7b4f192517821de0daa89735ee5979f2685ba5a2c22f7293776511006e
-      cover-letter: sha256:c29ac4079ee5bb052936c3ce0fdb96fa16da65a02d6a1dd0805841ef94168118
+      cover-letter: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
       analysis: sha256:cd53ea2eecc73f2a825f6e7544c52fdab1a44498d84fdf273db7dabed798eeb8
       interview-preparation: sha256:42252ad02add5c9b44ccdd0c2730865b7350a05d335c98860e70d2e773ed20f6
     requirements:
@@ -1203,28 +1270,6 @@ quality:
       hard_blocker: false
       evidence_ids:
       - simple-2026-snowflake-pipelines
-    - requirement: Hands-on PostgreSQL
-      importance: high
-      basis: stated
-      jd_quote: Hands-on experience with PostgreSQL
-      match: strong
-      candidate_quote: PostgreSQL (GORM)
-      risk: ''
-      mitigation: ''
-      hard_blocker: false
-      evidence_ids:
-      - simple-confirmed-2026-stack
-    - requirement: Marketing or AdTech experience
-      importance: preferred
-      basis: stated
-      jd_quote: Experience in marketing, AdTech, or lead generation
-      match: unknown
-      candidate_quote: ''
-      risk: Direct acquisition-domain work is not established.
-      mitigation: Explain the transferable service and data work without claiming
-        AdTech expertise.
-      hard_blocker: false
-      evidence_ids: []
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
@@ -1886,16 +1931,6 @@ quality:
           quote: "- Made key technical decisions and built deep expertise in email\
             \ infrastructure,\n  including **DNS**, **DKIM**, **SPF**, **DMARC**,\
             \ and **FBLs**."
-    - document: cover-letter
-      text: I built a Go gateway that put Intercom and Zendesk behind a vendor-neutral
-        model.
-      evidence_ids:
-      - simple-2026-helpdesk-gateway
-    - document: cover-letter
-      text: I consolidated separate Snowflake-to-Intercom feeds into one engine, removing
-        repeated full-history reads and an existing daily item cap.
-      evidence_ids:
-      - simple-2026-snowflake-pipelines
     - document: analysis
       text: The confirmed multi-tenant helpdesk gateway is a Go service with a vendor-neutral
         event model, adapters and tenant-aware event handling.
@@ -1929,7 +1964,49 @@ quality:
             Lambda), Kubernetes CronJobs, Terraform, Intercom API, Zendesk API, Snowflake,
             OpenAI/LLM tooling, OpenAPI, DeepL, Braze, AppsFlyer, Microsoft Entra
             ID.'
-  declaration_sha256: sha256:3a0030f9d2909d9ffdeda0b9a66112dbb263d5db11db2f6a2e1e5c19ba0bd13f
+    - document: cover-letter
+      text: I built a Go gateway that gave Intercom and Zendesk a common event model.
+        I owned the backend contracts, tenant-aware ingestion and vendor adapters.
+        It enabled the first business demonstration of a support AI product.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+    - document: cover-letter
+      text: I’ve also simplified production data pipelines, removing repeated full-history
+        reads without changing the existing API.
+      evidence_ids:
+      - simple-2026-snowflake-pipelines
+    document_receipts:
+      cv:
+        document_sha256: sha256:18ec0d7b4f192517821de0daa89735ee5979f2685ba5a2c22f7293776511006e
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: 0a3026027daeb39890aea9c243cbc5f82b7884e10befdbfd35829ad30fdfcf93
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root — independent CV editor and final grounding reviewer
+        declaration_sha256: sha256:3a0030f9d2909d9ffdeda0b9a66112dbb263d5db11db2f6a2e1e5c19ba0bd13f
+      cover-letter:
+        document_sha256: sha256:dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: 984d54f12cae6a541ca48f40ee2945a9b84e6615a741e04c1b4dfd1525908750
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root, final English letter editor
+        declaration_sha256: sha256:0a5892fc2df69a49cd992cd5cded3448ed5577b09107b281ebc905ee09f8bcf1
+        application_review:
+          letter_review: *id007
+      analysis:
+        document_sha256: sha256:cd53ea2eecc73f2a825f6e7544c52fdab1a44498d84fdf273db7dabed798eeb8
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: 0a3026027daeb39890aea9c243cbc5f82b7884e10befdbfd35829ad30fdfcf93
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root — independent CV editor and final grounding reviewer
+        declaration_sha256: sha256:3a0030f9d2909d9ffdeda0b9a66112dbb263d5db11db2f6a2e1e5c19ba0bd13f
+      interview-preparation:
+        document_sha256: sha256:42252ad02add5c9b44ccdd0c2730865b7350a05d335c98860e70d2e773ed20f6
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: 0a3026027daeb39890aea9c243cbc5f82b7884e10befdbfd35829ad30fdfcf93
+        claims_ledger_path: claims.yaml
+        reviewer: Codex root — independent CV editor and final grounding reviewer
+        declaration_sha256: sha256:3a0030f9d2909d9ffdeda0b9a66112dbb263d5db11db2f6a2e1e5c19ba0bd13f
+  declaration_sha256: sha256:0a5892fc2df69a49cd992cd5cded3448ed5577b09107b281ebc905ee09f8bcf1
   method:
     workflow: two-wave
     final_review:
@@ -1941,7 +2018,7 @@ quality:
       version: 22.1.0+codex.20261027190753
       workbench_complete: true
       evidence_story_count: 2
-      company_source_url: https://sbc-performance.com/
+      company_source_url: https://sbc-performance.breezy.hr/p/690b4b5746bd01-senior-go-developer
   handoffs:
     research.md:
       word_count: 283
@@ -1993,11 +2070,11 @@ quality:
       schema_version: 1
       source_file: cover-letter.md
       artifact_file: cover-letter.docx
-      source_sha256: c29ac4079ee5bb052936c3ce0fdb96fa16da65a02d6a1dd0805841ef94168118
-      artifact_sha256: 95847e8bbee3628a3e1148c21602f5e1c2eff053ade7e68139968cdae2749b0f
-      extracted_text_sha256: 3376d70f449634002125ea183daa354a10c0cf66201fecb2a272a7cf8b13ba84
-      canonical_tokens: 369
-      extracted_tokens: 369
+      source_sha256: dc2be503f2d509fe9265289943051b81165437575f4d9cbda3f6b95f517f167b
+      artifact_sha256: 1247423cffc62c0725922a57bbbf9b5fd467ccdc6dfc3f893a5813867bfd23da
+      extracted_text_sha256: 635d4866bdb6678cd258160a5fc5c0e3088df106d4449013d326f605db66bc83
+      canonical_tokens: 172
+      extracted_tokens: 172
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
@@ -2005,14 +2082,14 @@ quality:
         cv_experience_list_formatting: not_checked
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 7
+        readable_paragraphs: 6
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: 95847e8bbee3628a3e1148c21602f5e1c2eff053ade7e68139968cdae2749b0f
+        artifact_sha256: 1247423cffc62c0725922a57bbbf9b5fd467ccdc6dfc3f893a5813867bfd23da
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
 files:

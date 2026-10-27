@@ -1,5 +1,20 @@
 # Evidence-backed application quality
 
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
 New preparation uses quality contract 3. Existing contract-1 and contract-2 packages remain readable
 and explicitly legacy; their existing review declarations are not upgraded to verified
 v3 claims. Reprepare only an explicitly approved vacancy to create a new v3 package. Match

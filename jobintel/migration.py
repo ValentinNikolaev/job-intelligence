@@ -32,7 +32,7 @@ OPERATIONAL_LOGS = (
 )
 REPOSITORY_URL = "https://github.com/ValentinNikolaev/job-intelligence"
 _COMPLETE_PACKAGE_FILES = frozenset({
-    "cv.md", "cv.docx", "cover-letter.md", "cover-letter.docx",
+    "cv.md", "cv.docx",
     "analysis.md", "interview-preparation.md", "manifest.yaml",
 })
 _ACTUAL_DATE = re.compile(r"actual application date[^0-9]*(\d{4}-\d{2}-\d{2})", re.I)
@@ -1125,14 +1125,14 @@ def reconcile(store: DocumentStore, plan: Mapping[str, Any]) -> dict[str, Any]:
 
 
 def _complete_package_locator(application: Mapping[str, Any], root: Path) -> str | None:
-    """Return a package link only when all four generated documents exist."""
+    """Return a package link when the default documents exist; letters are optional."""
     directory = str(application.get("directory") or "")
     if not directory or Path(directory).name != directory or "/" in directory or "\\" in directory:
         return None
     package = root / "registry" / "jobs" / directory / "application"
     if all((package / filename).is_file() for filename in _COMPLETE_PACKAGE_FILES):
         manifest = yaml.safe_load((package / "manifest.yaml").read_text(encoding="utf-8"))
-        current_documents = {"cv", "cover-letter", "analysis", "interview-preparation"}
+        current_documents = {"cv", "analysis", "interview-preparation"}
         if isinstance(manifest, Mapping) and (
             current_documents.issubset(manifest.get("documents") or {})
             or (_COMPLETE_PACKAGE_FILES - {"manifest.yaml"}).issubset(manifest.get("files") or [])

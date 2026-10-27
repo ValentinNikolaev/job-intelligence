@@ -9,7 +9,7 @@ import yaml
 
 from jobintel.applications import ApplicationError, _validate_v2_grounding
 from jobintel.evidence import bootstrap_evidence_bank, validate_claims_ledger, EvidenceError
-from jobintel.application_review import validate_role_inventory, validate_letter_review, review_digest, letter_basis
+from jobintel.application_review import validate_role_inventory, validate_letter_review, validate_letter_delivery, review_digest, letter_basis
 from tests.application_review_fixtures import add_letter_review
 from tests.preparation_fixtures import write_preparation_config
 from jobintel.preparation_context import load_preparation_context
@@ -157,8 +157,46 @@ class ApplicationReviewTests(unittest.TestCase):
         receipt = _validate_v2_grounding(quality, package, draft, root, 'Build Go services.')
         self.assertEqual(1, len(receipt['application_review']['letter_review']['narrated_examples']))
         quality['cover_letter']['channel'] = 'email'
+        quality['cover_letter']['application_route'] = dict(channel='email', email_only=True, source_url='https://example.test/apply', checked_on='2026-10-27', evidence='Apply by email only', company_language='English', language_evidence='English vacancy instructions')
         quality['cover_letter']['editorial_review']['basis_sha256'] = review_digest(letter_basis(quality))
         validate_letter_review(quality, package['cover_letter_markdown'], draft, root, ledger)
+
+    def test_letter_delivery_fails_closed_for_missing_stale_or_low_reviews(self):
+        for mutation, error in [('optional', 'mandatory'), ('email_language', 'company language'),
+                ('humanizer', 'humanizer'), ('detector', 'ai_detection'), ('stale', 'stale'),
+                ('low', '90/100'), ('inflated', '90/100'), ('missing_external', 'literal feedback')]:
+            with self.subTest(mutation=mutation):
+                _, _, quality, package, _ = self.letter_fixture()
+                letter = quality['cover_letter']
+                review = letter['editorial_review']
+                if mutation == 'optional':
+                    letter['application_route']['letter_required'] = False
+                elif mutation == 'email_language':
+                    letter['channel'] = 'email'
+                    letter['application_route'].update(channel='email', email_only=True,
+                        company_language='Italian', language_evidence='Italian vacancy')
+                elif mutation == 'humanizer':
+                    review.pop('humanizer')
+                elif mutation == 'detector':
+                    review.pop('ai_detection')
+                elif mutation == 'stale':
+                    review['naturalness']['document_sha256'] = 'old-text'
+                elif mutation == 'low':
+                    review['naturalness']['dimensions']['restraint']['score'] = 20
+                    review['naturalness']['score'] = 89
+                elif mutation == 'inflated':
+                    review['naturalness']['score'] = 99
+                else:
+                    review['ai_detection'].update(mode='external', session_url='https://example.test/session')
+                with self.assertRaisesRegex(ValueError, error):
+                    validate_letter_delivery(letter, review, package['cover_letter_markdown'])
+
+    def test_letter_naturalness_accepts_exactly_90(self):
+        _, _, quality, package, _ = self.letter_fixture()
+        review = quality['cover_letter']['editorial_review']
+        review['naturalness']['dimensions']['restraint']['score'] = 21
+        review['naturalness']['score'] = 90
+        validate_letter_delivery(quality['cover_letter'], review, package['cover_letter_markdown'])
 
     def test_company_fact_can_be_translated_with_an_explicit_source_mapping(self):
         root, draft, quality, package, ledger = self.letter_fixture()
@@ -168,6 +206,8 @@ class ApplicationReviewTests(unittest.TestCase):
         review.update(company_claim=translation, document_sha256=digest(package['cover_letter_markdown']),
                       company_grounding='The Italian sentence preserves the captured fact about billing software.')
         review['voice']['language'] = 'Italian'
+        for name in ('humanizer', 'ai_detection', 'naturalness'):
+            review[name]['document_sha256'] = digest(package['cover_letter_markdown'])
         validate_letter_review(quality, package['cover_letter_markdown'], draft, root, ledger)
         review.pop('company_grounding')
         with self.assertRaisesRegex(ValueError, 'source-to-final-text'):

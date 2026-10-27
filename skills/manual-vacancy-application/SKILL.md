@@ -3,6 +3,22 @@ name: manual-vacancy-application
 description: Intake and analyze one manually sourced vacancy, and prepare its Job Intelligence application package only after explicit user approval. Use when the user provides a raw vacancy, link, pasted job post, recruiter message, or company careers text; do not infer preparation consent from intake alone.
 ---
 
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
+
 # Manual Vacancy Application
 
 Obey `AGENTS.md` first. Never add or restore OpenAI Platform API calls, SDK usage, API keys, OpenAI-compatible model endpoints, or model-proxy code. This skill is a Codex-only orchestration wrapper over deterministic manual intake commands and `$job-intelligence-workflow`.
@@ -16,7 +32,7 @@ skill owns the manual intake orchestration and vacancy isolation.
 Turn one raw/manual vacancy into an analyzed registry entry, and into a prepared
 application package only after an explicit user gateway decision:
 
-The default preparation scope is the complete four-document package. If the user
+The default preparation scope is the three-document package (CV, analysis and interview preparation). If the user
 explicitly asks for exactly one document, generate and publish only that document with
 the matching `--document` value and preserve other existing artifacts.
 

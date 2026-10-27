@@ -84,7 +84,8 @@ def validate_role_inventory(audit: Mapping, markdown: str, root: Path, *, refere
 def letter_basis(quality: Mapping) -> dict:
     letter = quality['cover_letter']
     return dict(evidence_stories=letter['evidence_stories'], company_motivation=letter['company_motivation'],
-                requirements=quality['requirements'], channel=letter.get('channel', 'attachment'))
+                requirements=quality['requirements'], channel=letter.get('channel', 'attachment'),
+                application_route=letter.get('application_route'))
 
 
 def validate_letter_review(quality: Mapping, markdown: str, draft: Path, root: Path, ledger: Mapping, *, context: PreparationContext | None = None) -> dict:
@@ -159,7 +160,66 @@ def validate_letter_review(quality: Mapping, markdown: str, draft: Path, root: P
         raise ValueError('letter company claim must be present in the final text')
     _text(review.get('company_grounding'), 'letter company source-to-final-text review')
     validate_voice_review(review, root, context=context)
-    return {**review, 'company_source': dict(snapshot), 'company_fact': company['fact']}
+    validate_letter_delivery(letter, review, markdown)
+    return {**review, 'company_source': dict(snapshot), 'company_fact': company['fact'],
+            'application_route': dict(letter['application_route'])}
+
+
+def validate_letter_delivery(letter: Mapping, review: Mapping, markdown: str) -> None:
+    """Check recorded editorial work, not machine-infer authorship or style scores."""
+    route = letter.get('application_route')
+    if not isinstance(route, Mapping):
+        raise ValueError('letter application_route must explain why a letter is required')
+    channel = route.get('channel')
+    if channel == 'form':
+        if route.get('letter_required') is not True or letter.get('channel', 'attachment') != 'attachment':
+            raise ValueError('form letters require a mandatory apply-form field')
+    elif channel == 'email':
+        if route.get('email_only') is not True or letter.get('channel') != 'email':
+            raise ValueError('email letters require an email-only application route')
+        language = _text(route.get('company_language'), 'company language')
+        _text(route.get('language_evidence'), 'company language evidence')
+        if language.casefold() != review['voice']['language'].casefold():
+            raise ValueError('application email must use the company language')
+    else:
+        raise ValueError('letter application_route channel must be form or email')
+    url = _text(route.get('source_url'), 'application route source URL')
+    if not url.startswith(('https://', 'http://')):
+        raise ValueError('application route requires an HTTP(S) source URL')
+    _text(route.get('evidence'), 'application route evidence')
+    date.fromisoformat(_text(route.get('checked_on'), 'application route checked_on'))
+    for name, skill in (('humanizer', 'humanizer'), ('ai_detection', 'ai-detector')):
+        receipt = review.get(name)
+        if not isinstance(receipt, Mapping) or receipt.get('skill') != skill:
+            raise ValueError(f'letter requires {name} skill receipt')
+        _text(receipt.get('version'), f'{name} version')
+        _text(receipt.get('reviewer'), f'{name} reviewer')
+        _text(receipt.get('notes'), f'{name} findings and keep decisions')
+        if receipt.get('document_sha256') != document_digest(markdown):
+            raise ValueError(f'{name} receipt is stale for the final text')
+    detector = review['ai_detection']
+    if detector.get('mode') not in {'local', 'external'}:
+        raise ValueError('ai_detection mode must be local or external')
+    if detector['mode'] == 'external':
+        _text(detector.get('session_url'), 'external detector session URL')
+        _text(detector.get('literal_feedback'), 'external detector literal feedback')
+    rating = review.get('naturalness')
+    if not isinstance(rating, Mapping) or rating.get('rubric') != 'naturalness-v1':
+        raise ValueError('letter requires naturalness-v1 editorial rating')
+    if rating.get('document_sha256') != document_digest(markdown):
+        raise ValueError('naturalness rating is stale for the final text')
+    _text(rating.get('reviewer'), 'naturalness reviewer')
+    dimensions = rating.get('dimensions')
+    expected = {'voice', 'specificity', 'flow', 'restraint'}
+    if not isinstance(dimensions, Mapping) or set(dimensions) != expected:
+        raise ValueError('naturalness rating requires all four rubric dimensions')
+    for item in dimensions.values():
+        if not isinstance(item, Mapping) or type(item.get('score')) is not int or not 0 <= item['score'] <= 25:
+            raise ValueError('naturalness dimension scores must be integers from 0 to 25')
+        _text(item.get('reason'), 'naturalness dimension rationale')
+    score = sum(item['score'] for item in dimensions.values())
+    if type(rating.get('score')) is not int or rating['score'] != score or score < 90:
+        raise ValueError('letter naturalness must total at least 90/100; revise before publication')
 
 
 def validate_voice_review(review: Mapping, root: Path, *, context: PreparationContext | None = None) -> None:

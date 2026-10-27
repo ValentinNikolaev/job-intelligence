@@ -3,6 +3,22 @@ name: job-intelligence-workflow
 description: Run the repository's vacancy collection, match analysis, vacancy-status management, and vacancy-specific application preparation without project code calling the OpenAI Platform API. Use for Job Intelligence scheduled runs, processing pending vacancies, publishing Codex-produced drafts, manually changing vacancy status, and orchestrating the mandatory final independent vacancy-catalog generation.
 ---
 
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
+
 # Job Intelligence Workflow
 
 For application preparation, resolve the `preparation` section of
@@ -59,7 +75,7 @@ work. Preserve unrelated user changes. Do not repeat the initial synchronization
   triage, `pending analyze all`, or the scheduled sealed queue.
 - For application packages, follow `references/prepare.md` with workflow `prepare` and
   process one to 10 fresh vacancies explicitly selected by the user through vacancy IDs
-  or registry directories. Generate the full package by default; when the user
+  or registry directories. Generate the three-document package by default, with letters governed by the conditional delivery gate; when the user
   explicitly names exactly one document, use the matching `--document` mode. Use
   `$write-cover-letter` for every selected letter and never expand the selection to
   `all`.

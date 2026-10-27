@@ -117,7 +117,7 @@ class WorkflowContractTests(unittest.TestCase):
         self.assertIn("Preserve both model labels", combined)
         self.assertRegex(combined, r"(?i)(?:do not|never).{0,100}(?:relabel|model label)")
 
-    def test_preparation_defaults_to_full_package_and_allows_one_explicit_document(self) -> None:
+    def test_preparation_defaults_to_three_documents_and_conditions_letter_work(self) -> None:
         paths = (
             "AGENTS.md",
             ".agents/skills/job-intelligence-workflow/SKILL.md",
@@ -126,7 +126,11 @@ class WorkflowContractTests(unittest.TestCase):
         )
         combined = self._flat("\n".join(self._read(path) for path in paths))
 
-        self.assertRegex(combined, r"(?i)(?:full|four-document).{0,80}default")
+        self.assertIn("Default scope: CV, application analysis and interview preparation", combined)
+        self.assertIn("only for a required form field", combined)
+        self.assertIn("email-only application", combined)
+        self.assertIn("company's evidenced language", combined)
+        self.assertIn("naturalness rating of at least 90/100", combined)
         self.assertIn("--document", combined)
         for document in ("cv", "cover-letter", "analysis", "interview-preparation"):
             self.assertIn(document, combined)

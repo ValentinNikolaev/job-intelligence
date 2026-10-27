@@ -565,9 +565,9 @@ class ApplicationGenerator:
         staging = Path(tempfile.mkdtemp(prefix=".application-", dir=staging_root))
         try:
             previous_manifest = _read_existing_manifest(manifest_path)
-            if self.document is not None:
-                _copy_existing_application_files(application_dir, staging)
-                _remove_selected_outputs(staging, self.document)
+            _copy_existing_application_files(application_dir, staging)
+            for selected_document in _selected_documents(self.document):
+                _remove_selected_outputs(staging, selected_document)
             for field in _selected_fields(self.document):
                 filename = APPLICATION_FILES[field]
                 _write_text(staging / filename, generated[field])
@@ -587,7 +587,7 @@ class ApplicationGenerator:
                     self.converter.convert(staging / "cv.md", staging / "cv.docx")
                 shutil.copyfile(_win_long_path(staging / "cv.md"), _win_long_path(staging / cv_export_files["markdown"]))
                 shutil.copyfile(_win_long_path(staging / "cv.docx"), _win_long_path(staging / cv_export_files["docx"]))
-            if self.document in {None, "cover-letter"}:
+            if self.document == "cover-letter":
                 self.converter.convert(
                     staging / "cover-letter.md", staging / "cover-letter.docx"
                 )
@@ -613,7 +613,7 @@ class ApplicationGenerator:
             document_versions = _document_versions_from_manifest(
                 previous_manifest,
                 application_dir,
-            ) if self.document is not None else {}
+            )
             for selected_document in _selected_documents(self.document):
                 document_versions[selected_document] = {
                     **expected_versions,
@@ -1431,8 +1431,9 @@ def _merge_quality_reports(
     *,
     document: str | None,
 ) -> dict[str, Any]:
-    if document is None or not isinstance(previous, Mapping):
+    if not isinstance(previous, Mapping):
         return dict(current)
+    selected = set(_selected_documents(document))
     merged = dict(previous)
     previous_documents = previous.get("documents")
     current_documents = current.get("documents")
@@ -1468,13 +1469,14 @@ def _merge_quality_reports(
         old_hashes = old_grounding.get("document_sha256")
         new_hashes = new_grounding.get("document_sha256") if isinstance(new_grounding, Mapping) else None
         document_hashes = dict(old_hashes) if isinstance(old_hashes, Mapping) else {}
-        if isinstance(new_hashes, Mapping) and document in new_hashes:
-            document_hashes[document] = new_hashes[document]
-        else:
-            document_hashes.pop(document, None)
+        for selected_document in selected:
+            if isinstance(new_hashes, Mapping) and selected_document in new_hashes:
+                document_hashes[selected_document] = new_hashes[selected_document]
+            else:
+                document_hashes.pop(selected_document, None)
         grounding["document_sha256"] = document_hashes
 
-        selected_names = {document, APPLICATION_DOCUMENTS[document]}
+        selected_names = selected | {APPLICATION_DOCUMENTS[name] for name in selected}
         old_claims = old_grounding.get("claims")
         new_claims = new_grounding.get("claims") if isinstance(new_grounding, Mapping) else None
         claims = [claim for claim in old_claims if isinstance(claim, Mapping)
@@ -1509,20 +1511,21 @@ def _merge_quality_reports(
                 "reviewer": old_grounding.get("reviewer"),
                 "declaration_sha256": previous.get("declaration_sha256"),
             } for name, digest in old_hashes.items()}
-        if isinstance(new_hashes, Mapping) and document in new_hashes:
-            document_receipts[document] = {
-                "document_sha256": new_hashes[document],
-                "preparation_context_version": new_grounding.get("preparation_context_version"),
-                "claims_ledger_sha256": new_grounding.get("sha256"),
-                "claims_ledger_path": new_grounding.get("claims_ledger_path"),
-                "reviewer": new_grounding.get("reviewer"),
-                "declaration_sha256": current.get("declaration_sha256"),
-                "application_review": new_grounding.get('application_review', {}),
-            }
-        else:
-            document_receipts.pop(document, None)
+        for selected_document in selected:
+            if isinstance(new_hashes, Mapping) and selected_document in new_hashes:
+                document_receipts[selected_document] = {
+                    "document_sha256": new_hashes[selected_document],
+                    "preparation_context_version": new_grounding.get("preparation_context_version"),
+                    "claims_ledger_sha256": new_grounding.get("sha256"),
+                    "claims_ledger_path": new_grounding.get("claims_ledger_path"),
+                    "reviewer": new_grounding.get("reviewer"),
+                    "declaration_sha256": current.get("declaration_sha256"),
+                    "application_review": new_grounding.get('application_review', {}),
+                }
+            else:
+                document_receipts.pop(selected_document, None)
         grounding["document_receipts"] = document_receipts
-        if document == "cv" and not isinstance(new_grounding, Mapping):
+        if "cv" in selected and not isinstance(new_grounding, Mapping):
             grounding.pop("cv_audit", None)
         merged["grounding"] = grounding
     return merged
@@ -1540,7 +1543,7 @@ def _normalize_document(document: str | None) -> str | None:
 
 def _selected_documents(document: str | None) -> tuple[str, ...]:
     if document is None:
-        return tuple(APPLICATION_DOCUMENTS)
+        return ("cv", "analysis", "interview-preparation")
     return (document,)
 
 

@@ -50,6 +50,17 @@ def add_letter_review(root, draft, quality, package):
         company_claim=fact, company_grounding='The final company sentence states the same billing-software fact as the captured primary source.',
         voice=dict(language='English', notes='Reviewed the exact final English wording and practical closing.', rules=rules))
     quality['cover_letter']['editorial_review'] = review
+    quality['cover_letter']['application_route'] = dict(channel='form', letter_required=True,
+        source_url='https://example.test/apply', checked_on='2026-10-27', evidence='Cover Letter (required)')
+    review['basis_sha256'] = review_digest(letter_basis(quality))
+    for key, skill in [('humanizer', 'humanizer'), ('ai_detection', 'ai-detector')]:
+        review[key] = dict(skill=skill, version='fixture', reviewer='fixture-editor',
+            document_sha256=document_digest(letter), notes='Synthetic receipt: retain the concrete example and direct closing.')
+    review['ai_detection']['mode'] = 'local'
+    review['naturalness'] = dict(rubric='naturalness-v1', reviewer='fixture-editor',
+        document_sha256=document_digest(letter), score=92,
+        dimensions={key: dict(score=23, reason='Synthetic rubric fixture, not an assessed candidate letter.')
+            for key in ('voice', 'specificity', 'flow', 'restraint')})
     (draft / 'cover-letter.md').write_text(letter, encoding='utf-8')
     (draft / 'quality.yaml').write_text(yaml.safe_dump(quality), encoding='utf-8')
     return review

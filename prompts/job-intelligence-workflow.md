@@ -1,5 +1,20 @@
 # Job Intelligence workflow contract
 
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
 Read `config/data-services.yaml` and run `python run.py storage doctor` before
 operational work. MongoDB is the sole source after cutover; frozen registry YAML and
 description files must not be used as live evidence. Use the sealed pack for scheduled
@@ -73,7 +88,7 @@ separate user-gated action.
    registry directory, or an unambiguous reference to the manually supplied vacancy.
    Follow the two-wave preparation contract below and keep every handoff and final
    draft keyed to this vacancy under `.codex-work/application/<directory>/`.
-   The default is the full four-document package. If the user explicitly requests
+   The default is the three-document package (CV, analysis and interview preparation). If the user explicitly requests
    exactly one document, generate only it and use the matching `--document` value for
    pending, validation, and publication.
 6. When a cover letter is selected, invoke `$write-cover-letter` for `cover-letter.md`; never replace it with inline
@@ -82,7 +97,7 @@ separate user-gated action.
    when company identity, role context, and one defensible motivation point are
    verified. Exceed the budget only for a critical unresolved eligibility or company-
    identity fact, and record the reason.
-8. Complete all four drafts by default, or only the explicitly selected draft, then run
+8. Complete the three non-letter drafts by default, or only the explicitly selected draft, then run
    `python run.py lint-application <directory> --input .codex-work/application/<directory>
    [--document <document>]`, preview any selected CV, and run the combined deterministic
    draft check: `python run.py validate-application <directory> --input

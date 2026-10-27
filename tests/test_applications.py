@@ -40,6 +40,22 @@ from jobintel.applications import (
 
 
 class QualityMergeTests(unittest.TestCase):
+    def test_default_refresh_preserves_letter_provenance_and_claims(self) -> None:
+        previous = {"documents": {"cover-letter": {"sha256": "old-letter"}},
+            "method": {"cover_letter": {"skill": "write-cover-letter"}},
+            "exports": {"cover-letter": {"artifact_sha256": "old-export"}},
+            "grounding": {"claims": [{"document": "cover-letter", "text": "old claim", "evidence_ids": ["letter"]}],
+                "evidence_entries": [{"id": "letter"}], "document_sha256": {"cover-letter": "old-letter"},
+                "application_review": {"letter_review": {"reviewer": "original-editor"}}}}
+        current = {"documents": {"cv": {"sha256": "new-cv"}},
+            "grounding": {"claims": [], "document_sha256": {"cv": "new-cv"}, "evidence_entries": []}}
+        merged = _merge_quality_reports(previous, current, document=None)
+        self.assertEqual(previous['documents']['cover-letter'], merged['documents']['cover-letter'])
+        self.assertEqual('old-letter', merged['grounding']['document_sha256']['cover-letter'])
+        self.assertEqual(previous['grounding']['claims'], merged['grounding']['claims'])
+        self.assertEqual('original-editor', merged['grounding']['application_review']['letter_review']['reviewer'])
+        self.assertEqual('old-export', merged['exports']['cover-letter']['artifact_sha256'])
+
     def test_cv_only_update_preserves_other_document_receipts(self) -> None:
         previous = {
             "documents": {name: {"sha256": f"old-{name}"} for name in
@@ -180,7 +196,7 @@ from jobintel.models import NormalizedJob
 from jobintel.registry import Registry
 
 
-def application_payload() -> dict[str, str]:
+def application_payload(*, include_letter=False) -> dict[str, str]:
     analysis_headings = (
         "Vacancy Summary",
         "Company Research",
@@ -219,7 +235,7 @@ def application_payload() -> dict[str, str]:
     letter_paragraph = " ".join(["I connect verified backend delivery experience to the role's PHP, Laravel, API, and reliability priorities."] * 6)
     analysis_body = " ".join(["Evidence is grounded in the candidate record and the vacancy, with gaps framed as confirmation items rather than claims."] * 5)
     interview_body = " ".join(["Prepare a concise, truthful example, identify the candidate's individual contribution, and connect it to the stated role requirement."] * 7)
-    return {
+    payload = {
         "cv_markdown": "# Candidate\nBackend Engineer\n\nhttps://linkedin.com/in/candidate | https://github.com/candidate\n\n## Summary\n\n" + cv_filler + "\n\n## Skills\n\n" + skills + "\n\n## Experience\n\n### Example Р Р†Р вЂљРІР‚Сњ Backend Engineer | January 2020 - Present\n" + bullets + "\nTechnologies: PHP, Laravel, MySQL\n\n## Education\n\nMSc in Computer Science\n\n## Languages\n\nEnglish\n",
         "cover_letter_markdown": "Dear Hiring Team,\n\n" + "\n\n".join([letter_paragraph] * 4) + "\n\nCandidate\n",
         "analysis_markdown": "# Application Analysis\n\n"
@@ -229,6 +245,10 @@ def application_payload() -> dict[str, str]:
         + "\n\n".join(f"## {heading}\n\n{interview_body}" for heading in interview_headings)
         + "\n",
     }
+
+    if not include_letter:
+        payload.pop("cover_letter_markdown")
+    return payload
 
 
 def write_quality_contract(draft: Path, *, include_cover_letter: bool = True) -> None:
@@ -316,6 +336,19 @@ class FakeMatchClient:
 
 
 class ApplicationTests(unittest.TestCase):
+    def test_default_refresh_does_not_read_convert_or_delete_existing_letter(self) -> None:
+        converter = FakeConverter()
+        generator = self._generator(FakeClient(), converter)
+        generator.generate_directory(self.directory)
+        application = self.directory / 'application'
+        self.assertFalse((application / 'cover-letter.md').exists())
+        (application / 'cover-letter.md').write_bytes(b'Previously prepared letter')
+        (application / 'cover-letter.docx').write_bytes(b'Previously prepared export')
+        generator.generate_directory(self.directory, force=True)
+        self.assertEqual(b'Previously prepared letter', (application / 'cover-letter.md').read_bytes())
+        self.assertEqual(b'Previously prepared export', (application / 'cover-letter.docx').read_bytes())
+        self.assertTrue(all(source.name == 'cv.md' for source, _ in converter.calls))
+
     def setUp(self) -> None:
         # ignore_cleanup_errors: a long vacancy-directory regression test below
         # creates paths deep enough that plain shutil.rmtree can intermittently
@@ -444,7 +477,7 @@ class ApplicationTests(unittest.TestCase):
         draft = self.project / "v2-draft"
         draft.mkdir()
         write_quality_contract(draft)
-        package = {"cover_letter_markdown": application_payload()["cover_letter_markdown"]}
+        package = {"cover_letter_markdown": application_payload(include_letter=True)["cover_letter_markdown"]}
         source = self.registry_root / "candidate" / "candidate.md"
         source.parent.mkdir(parents=True, exist_ok=True)
         source.write_text(package["cover_letter_markdown"], encoding="utf-8")
@@ -522,7 +555,7 @@ class ApplicationTests(unittest.TestCase):
         draft = self.project / "legacy-draft"
         draft.mkdir()
         write_quality_contract(draft)
-        (draft / "cover-letter.md").write_text(application_payload()["cover_letter_markdown"], encoding="utf-8")
+        (draft / "cover-letter.md").write_text(application_payload(include_letter=True)["cover_letter_markdown"], encoding="utf-8")
         generator = ApplicationGenerator(self.registry_root, [self.profile], self.prompt,
             CodexApplicationDraftClient(draft, model="test", document="cover-letter"), FakeConverter(), document="cover-letter")
         with self.assertRaisesRegex(ApplicationError, "publication requires quality schema_version 3"):
@@ -641,8 +674,6 @@ class ApplicationTests(unittest.TestCase):
             "cv.docx",
             "CV_ValentinNikolaev_example_SeniorBackendEngineer.md",
             "CV_ValentinNikolaev_example_SeniorBackendEngineer.docx",
-            "cover-letter.md",
-            "cover-letter.docx",
             "analysis.md",
             "interview-preparation.md",
             "manifest.yaml",
@@ -651,7 +682,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertEqual("prepared", second.status)
         self.assertEqual(expected, {path.name for path in application.iterdir()})
         self.assertEqual(2, len(client.calls))
-        self.assertEqual(4, len(converter.calls))
+        self.assertEqual(2, len(converter.calls))
         self.assertEqual(profile_before, self.profile.read_bytes())
         self.assertEqual(
             "A product company.",
@@ -706,7 +737,7 @@ class ApplicationTests(unittest.TestCase):
 
         self.assertEqual("prepared", result.status)
         application = long_directory / "application"
-        for filename in ("cv.md", "cv.docx", "cover-letter.md", "interview-preparation.md", "analysis.md", "manifest.yaml"):
+        for filename in ("cv.md", "cv.docx", "interview-preparation.md", "analysis.md", "manifest.yaml"):
             self.assertTrue((application / filename).is_file(), f"missing {filename}")
 
     def test_cv_export_stem_keeps_company_and_role_focus_without_location_noise(self) -> None:
@@ -984,12 +1015,14 @@ class ApplicationTests(unittest.TestCase):
         for field, limit in limits.items():
             with self.subTest(field=field):
                 payload = application_payload()
+                if field == "cover_letter_markdown":
+                    payload = {field: application_payload(include_letter=True)[field]}
                 payload[field] += "\n" + "word " * (limit + 1)
                 with self.assertRaisesRegex(
                     ApplicationError,
                     rf"{field} exceeds {limit}-word limit",
                 ):
-                    validate_application_package(payload)
+                    validate_application_package(payload, document="cover-letter" if field == "cover_letter_markdown" else None)
 
     def test_cv_headline_must_immediately_follow_candidate_name(self) -> None:
         payload = application_payload()
@@ -1099,7 +1132,7 @@ class ApplicationTests(unittest.TestCase):
         self.assertIn("**Technologies**: Go | PostgreSQL", result["cv_markdown"])
 
     def test_cover_letter_accepts_target_role_and_company_context(self) -> None:
-        payload = application_payload()
+        payload = {"cover_letter_markdown": application_payload(include_letter=True)["cover_letter_markdown"]}
         payload["cover_letter_markdown"] = payload["cover_letter_markdown"].replace(
             "I connect verified backend delivery experience",
             "My backend delivery experience connects to Example's Senior Backend Engineer priorities; it joins verified backend delivery experience",
@@ -1107,7 +1140,7 @@ class ApplicationTests(unittest.TestCase):
         )
 
         result = validate_application_package(
-            payload,
+            payload, document="cover-letter",
             vacancy={
                 "metadata": {
                     "title": "Senior Backend Engineer",
@@ -1191,7 +1224,6 @@ class ApplicationTests(unittest.TestCase):
         payload = application_payload()
         filenames = {
             "cv_markdown": "cv.md",
-            "cover_letter_markdown": "cover-letter.md",
             "analysis_markdown": "analysis.md",
             "interview_preparation_markdown": "interview-preparation.md",
         }
@@ -1241,6 +1273,8 @@ class ApplicationTests(unittest.TestCase):
         draft.mkdir()
         payload = application_payload()
         for field, filename in APPLICATION_FILES.items():
+            if field not in payload:
+                continue
             (draft / filename).write_text(payload[field], encoding="utf-8")
         write_quality_contract(draft)
         (draft / "parts" / "research.md").write_text("## Fact\nshort", encoding="utf-8")
@@ -1302,7 +1336,6 @@ class ApplicationTests(unittest.TestCase):
         draft.mkdir()
         filenames = {
             "cv_markdown": "cv.md",
-            "cover_letter_markdown": "cover-letter.md",
             "analysis_markdown": "analysis.md",
             "interview_preparation_markdown": "interview-preparation.md",
         }
@@ -1341,8 +1374,9 @@ class ApplicationTests(unittest.TestCase):
                     str(draft),
                 ]
             )
-        self.assertEqual(1, result)
-        self.assertIn("exceeds 450-word limit", errors.getvalue())
+        # Default validation never reads even a malformed, unselected letter.
+        self.assertEqual(0, result)
+        self.assertEqual("", errors.getvalue())
         self.assertFalse((self.directory / "application").exists())
 
     def test_validate_application_cli_accepts_explicit_cv_only_draft(self) -> None:
@@ -1375,8 +1409,6 @@ class ApplicationTests(unittest.TestCase):
         full.generate_directory(self.directory)
         application = self.directory / "application"
         preserved_names = (
-            "cover-letter.md",
-            "cover-letter.docx",
             "analysis.md",
             "interview-preparation.md",
         )
@@ -1406,7 +1438,7 @@ class ApplicationTests(unittest.TestCase):
         )
         manifest = yaml.safe_load((application / "manifest.yaml").read_text(encoding="utf-8"))
         self.assertEqual(
-            {"cv", "cover-letter", "analysis", "interview-preparation"},
+            {"cv", "analysis", "interview-preparation"},
             set(manifest["documents"]),
         )
 
@@ -1448,7 +1480,6 @@ class ApplicationTests(unittest.TestCase):
         draft.mkdir()
         for field, filename in {
             "cv_markdown": "cv.md",
-            "cover_letter_markdown": "cover-letter.md",
             "analysis_markdown": "analysis.md",
             "interview_preparation_markdown": "interview-preparation.md",
         }.items():
@@ -1487,10 +1518,8 @@ class ApplicationTests(unittest.TestCase):
         self.assertIn("Legacy contract 1", manifest["quality"]["migration_note"])
         self.assertEqual("two-wave", manifest["quality"]["method"]["workflow"])
         self.assertEqual(3, len(manifest["quality"]["handoffs"]))
-        self.assertEqual(
-            "write-cover-letter",
-            manifest["quality"]["method"]["cover_letter"]["skill"],
-        )
+        self.assertNotIn("cover_letter", manifest["quality"]["method"])
+        self.assertFalse((manifest_path.parent / "cover-letter.md").exists())
 
     def test_prepare_cli_publishes_explicit_cv_only_draft(self) -> None:
         sources = self.project / "sources"
@@ -1573,7 +1602,6 @@ class ApplicationTests(unittest.TestCase):
             payload["analysis_markdown"] += f"\n{marker}\n"
             for field, filename in {
                 "cv_markdown": "cv.md",
-                "cover_letter_markdown": "cover-letter.md",
                 "analysis_markdown": "analysis.md",
                 "interview_preparation_markdown": "interview-preparation.md",
             }.items():

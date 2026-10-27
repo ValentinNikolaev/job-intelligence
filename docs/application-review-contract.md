@@ -177,3 +177,56 @@ against the current corpus and policy hashes. It reevaluates the decisions befor
 publication and the API fallback, so an old successful receipt is insufficient.
 Continue using confirmed submissions and descriptive lifecycle statistics to assess
 usefulness, without automatic strategy changes from small observational segments.
+
+## Conditional letter generation and delivery gate
+
+The default package contains only CV, application analysis and interview preparation.
+Before assigning any letter work, inspect the actual application route. Record its
+URL, check date and exact relevant wording. Do not draft, research for, delegate,
+score or export a speculative cover letter. An absent or optional letter field is
+not a generation trigger; an unknown form requirement remains unknown until checked.
+Fill only required fields when helping with an apply form.
+
+Generate `cover-letter.md` only when the apply form requires it, or when email is
+the only application channel. For email-only applications, drafting the email body
+is mandatory and uses the company's language, established by its vacancy/application
+instructions. Ask a focused question if those sources conflict or leave the language
+unknown. Do not infer language from headquarters. Record `cover_letter.channel: email`,
+subject and intended CV attachment; drafting never authorizes sending. A form-required
+letter uses `channel: attachment` for validation even when pasted into a text field.
+
+The default three-document draft is validated and published without `--document`.
+Any required letter is a separate, vacancy-specific `--document cover-letter` pass,
+using the existing final CV and research. Complete that pass before calling the
+application package ready. Preserve previously published unselected artifacts and
+their provenance; do not delete old letters or relabel their reviews.
+
+For both letter channels, the mandatory order is: current configured voice sources,
+`write-cover-letter`, local `humanizer`, then `ai-detector` and final naturalness
+rating. Read the installed skills and follow their actual invocation modes. A direct
+human detector request includes its external check; ordinary workflow calls stay
+local. A blocked required external check remains incomplete, never a local substitute.
+Review the exact final text after any edit; do not reroll an unchanged version.
+
+Record `application_route` under `cover_letter`: `channel` (`form` or `email`),
+`source_url`, `checked_on` (ISO date), `evidence` (actual route wording), and
+`letter_required: true` for a form or `email_only: true` for email. Email also records
+`company_language` and `language_evidence`; the reviewed letter language must match.
+
+In `cover_letter.editorial_review`, record `humanizer` and `ai_detection` receipts
+with actual `skill`, installed `version`, `reviewer`, final `document_sha256` and
+substantive `notes` about changes, findings and wording kept. Detector `mode` is
+`local` or `external`; external receipts also retain `session_url` and
+`literal_feedback`. Keep the service's literal verdict separate from the editorial
+rating. Never invent an AI probability, service score or authorship conclusion.
+
+The separate `naturalness` receipt uses `rubric: naturalness-v1`, `reviewer`, final
+`document_sha256`, `score` and four `dimensions`, each with an integer `score` from
+0 to 25 and a concrete `reason`: `voice` (the user's voice and natural language),
+`specificity` (useful, grounded contribution), `flow` (readable progression and rhythm),
+and `restraint` (no stock praise, vacancy recap, CV replay or manufactured enthusiasm).
+The total must be at least 90/100. This is a transparent editorial judgement, not an
+AI-detector probability. Below 90, revise the identified defects and check that new
+version. Missing or stale receipts, optional form letters and lower scores fail
+publication. A numerical pass never overrides evidence or required skill checks.
+

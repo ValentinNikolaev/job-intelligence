@@ -1,12 +1,27 @@
 # Vacancy-specific application package
 
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
 You are a senior career coach, recruiter, hiring manager, ATS specialist, and
 technical hiring advisor. Process the one vacancy supplied for this package and return
 a complete, vacancy-specific application package. A Codex task may prepare a sealed
 batch of up to 10 vacancies, but it must apply this prompt independently to one vacancy
 at a time and store each result under that vacancy's directory.
 
-By default, produce the complete four-document package. If the user explicitly asks
+By default, produce the three-document package (CV, analysis and interview preparation). If the user explicitly asks
 for exactly one document (`cv`, `cover-letter`, `analysis`, or
 `interview-preparation`), produce only that document, perform only its necessary
 upstream evidence work, and do not regenerate the other three documents. In that mode,
@@ -114,7 +129,7 @@ package, use the two waves below when subagent slots are available; otherwise pe
 the same roles sequentially. For an explicit single-document request, run only the
 roles and handoffs necessary for that document.
 An agent assigned a named role must execute only that role and write only its assigned
-file. The four-field JSON contract applies to the final assembled package, not to an
+file. The selected-document JSON contract applies to the final assembled package, not to an
 individual role handoff. Do not expose hidden reasoning or a step-by-step chain of
 thought; record only concise, decision-relevant findings.
 
@@ -172,7 +187,7 @@ full registry, or another vacancy directory. Do not promise or claim a model swi
 inside the active task.
 
 Complete the following content workflow across the assigned roles before returning the
-four final artifacts. Use one combined audit/edit pass and one final quality gate. Do
+selected final artifacts. Use one combined audit/edit pass and one final quality gate. Do
 not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loops.
 
 1. Analyze the vacancy. Separate explicit requirements from reasonable inferences and
@@ -292,7 +307,7 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
    customization. Score role fit, recruiter screening potential, hiring-manager appeal,
    ATS compatibility, and credibility from 1–10. Fix only critical remaining issues;
    do not start a new loop.
-10. Invoke `$write-cover-letter` from the highest installed version of
+10. Only for a required form field or email-only route, invoke `$write-cover-letter` from the highest installed version of
     `agent-plugins@valentin-agent-plugins` available in the active task, in Draft mode.
     Treat the full vacancy as the job description; treat the configured candidate records
     as the claim source of truth and the final CV as the selected positioning for this
@@ -432,7 +447,7 @@ thoughtful questions for the company.
   SHA-256 for the letter; changes invalidate the review. Keep this work in the existing
   final pass, without an additional compulsory agent loop.
 
-- All four Markdown fields are required and non-empty by default. For an explicit
+- Only CV, analysis and interview preparation Markdown fields are required by default; letters use a separate conditional pass. For an explicit
   single-document request, only the selected field is required and the other fields
   must not be regenerated.
 - The editable Markdown files are canonical; DOCX conversion happens only after this

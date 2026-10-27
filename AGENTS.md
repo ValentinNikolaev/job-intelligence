@@ -1,5 +1,20 @@
 # Project instructions
 
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
 ## OpenAI Platform API prohibition
 
 - Never add or restore calls from project code to the OpenAI Platform API or an OpenAI-compatible model endpoint.
@@ -58,7 +73,7 @@ a selected project workflow profile.
   (by vacancy ID, registry directory, or equivalent clear identifier). A manually
   supplied vacancy URL or pasted vacancy text authorizes intake and analysis only;
   it does not by itself authorize preparation.
-- Prepare the full four-document application package by default. When the user
+- Prepare the three-document application package (CV, analysis and interview preparation) by default. When the user
   explicitly requests exactly one document, generate, validate, and publish only that
   document with `--document`; preserve any other existing application artifacts.
 - For every prepared cover letter, invoke `$write-cover-letter` from the highest

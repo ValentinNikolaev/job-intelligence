@@ -105,7 +105,7 @@ def _parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--document",
         choices=("cv", "cover-letter", "analysis", "interview-preparation"),
-        help="prepare or validate exactly one application document; default: full package",
+        help="prepare or validate exactly one application document; default: CV, analysis and interview preparation; required letters use --document cover-letter",
     )
     parser.add_argument(
         "--model-profile",

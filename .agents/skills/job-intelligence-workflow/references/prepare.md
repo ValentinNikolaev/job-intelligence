@@ -1,6 +1,21 @@
 # Prepare one to 10 application packages
 
-The default scope is the complete four-document package. If the user explicitly asks
+## Conditional letter generation
+
+Default scope: CV, application analysis and interview preparation. Inspect the apply
+route before assigning letter work. Generate a letter only for a required form field;
+for an email-only application, always draft the email in the company's evidenced
+language. Skip optional fields. Required letters use a separate `--document cover-letter`
+pass, reusing the final CV and research. Finish it before reporting the package ready.
+Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
+and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
+section "Conditional letter generation and delivery gate". Missing external feedback
+required by the installed detector skill stays incomplete; never fabricate a score.
+
+
+
+The default scope is the three-document package (CV, analysis and interview preparation). If the user explicitly asks
 for exactly one document, set `<document>` to `cv`, `cover-letter`, `analysis`, or
 `interview-preparation`, run only the required evidence/drafting roles, and pass
 `--document <document>` to pending, validation, and publication. Preserve existing
@@ -171,7 +186,7 @@ explicit single-document request, use the full-package flow below.
    and synthesize the final vacancy-specific `cv.md` without repeating the research.
 9. Start Wave 2 only after `cv.md` is final. Run three independent roles in parallel
    when slots are available, with exclusive ownership of one final file each:
-   - cover letter: receive this vacancy, final CV, verified `parts/research.md`, and only
+   - conditional cover letter (only for a required form field or email-only route, in a separate pass): receive this vacancy, final CV, verified `parts/research.md`, and only
      the candidate evidence required to ground the selected stories; invoke the
      highest installed version of `$write-cover-letter` in Draft mode and write only
      `cover-letter.md`. Read every current voice source configured in
@@ -211,7 +226,7 @@ explicit single-document request, use the full-package flow below.
    registry, or another vacancy directory. For a batch, each role still owns exactly
    one vacancy-keyed file. Agents may be
    distributed across vacancies, but no agent may combine evidence, research, handoffs,
-   or final artifacts from different vacancies. Complete all four final drafts for the
+   or final artifacts from different vacancies. Complete the three non-letter final drafts for the
    default scope, or only the explicitly selected draft, under its own
    `.codex-work/application/<vacancy-directory>/`.
 12. Before validation, write `quality.yaml`, schema version 3, in the vacancy draft.
@@ -257,8 +272,7 @@ explicit single-document request, use the full-package flow below.
     each package only from its matching vacancy-keyed draft directory. A legacy
     single-vacancy call may still pass that vacancy's draft directory directly. If DOCX
     conversion fails, correct only that deterministic issue and rerun publication.
-    Current selected documents are skipped. For full scope, confirm all six application
-    artifacts, upload-friendly CV copies, and `manifest.yaml`; for single-document
+    Current selected documents are skipped. For full scope, confirm the three Markdown files and CV DOCX, upload-friendly CV copies, and `manifest.yaml`; for single-document
     scope, confirm only that document's canonical and derived outputs plus the manifest,
     and verify other existing artifacts were unchanged. Confirm the manifest retains the
     quality contract, provenance, word counts, and hashes.

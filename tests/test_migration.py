@@ -89,11 +89,11 @@ class MigrationProjectionTests(unittest.TestCase):
             root = Path(temporary)
             package = root / "registry" / "jobs" / "complete-job" / "application"
             package.mkdir(parents=True)
-            for filename in ("cv.md", "cv.docx", "cover-letter.md", "cover-letter.docx",
+            for filename in ("cv.md", "cv.docx",
                              "analysis.md", "interview-preparation.md"):
                 (package / filename).write_text("draft", encoding="utf-8")
             (package / "manifest.yaml").write_text(yaml.safe_dump({"documents": {
-                name: {} for name in ("cv", "cover-letter", "analysis", "interview-preparation")
+                name: {} for name in ("cv", "analysis", "interview-preparation")
             }}), encoding="utf-8")
             export = export_applications({"collections": {"applications": [
                 application("good", "complete-job"), application("missing", "missing-job")
