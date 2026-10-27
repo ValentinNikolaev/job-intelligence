@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-27T15:35:46Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Gamzix",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261027_gamzix_a2668310006041eb8e4ea060b4a2e755",
+      "score": 78,
+      "title": "Go Developer",
+      "url": "https://djinni.co/jobs/855289-go-developer/",
+      "vacancy_id": "a2668310-0060-41eb-8e4e-a060b4a2e755"
+    },
+    {
+      "company": "YozmaTech",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261020_yozmatech_0de73c80c52b47ccb5c7a84fa7f3fb25",
+      "score": 76,
+      "title": "Middle Backend engineer (Golang)",
+      "url": "https://djinni.co/jobs/854098-middle-backend-engineer-golang/",
+      "vacancy_id": "0de73c80-c52b-47cc-b5c7-a84fa7f3fb25"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "26d96e48adec70e3939fa5b0c3e7793d076f81553eb270349a242bce08e3840c",
+  "schema_version": 2
+}

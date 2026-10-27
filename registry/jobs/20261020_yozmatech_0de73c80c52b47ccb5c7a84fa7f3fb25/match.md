@@ -1,32 +1,37 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-Strong Go backend and seniority fit with relevant architecture, cloud, database, and production experience; TypeScript and the specified Ukrainian-time schedule remain to be confirmed.
+Good match for a middle backend role centered on Go APIs and services, supported by extensive backend experience, Go ownership, architecture, cloud, PostgreSQL, AWS, and English evidence. TypeScript, TDD or XP, and the fixed Ukrainian-hours schedule remain unconfirmed.
 
 ## Why it matches
 
-- Strong Go backend experience and API/service delivery.
-- More than the required backend tenure with architecture, design, and project leadership evidence.
-- AWS, PostgreSQL, testing, and production reliability experience align with the preferred qualifications.
+- Exceeds the stated backend experience minimum and has direct Go backend ownership.
+- Relevant API, event-driven, architecture, AWS, Kubernetes, PostgreSQL, and system-design evidence.
+- English Upper-intermediate evidence and a Master of Computer Applications in Computer Science.
 
 ## Gaps
 
-- TypeScript proficiency is not established in the supplied candidate profile.
-- The profile does not explicitly confirm English at Upper-Intermediate or higher in the relevant evidence.
+- TypeScript, TDD, Extreme Programming, Kanban, and explicit project prioritization evidence are not established.
+- The profile does not confirm availability for 12:00-21:00 Ukrainian time.
 
 ## Concerns
 
-- The required 12:00–21:00 Ukrainian-time schedule should be checked against the candidate's availability in Italy.
+- The fixed Ukrainian working window may be inconvenient from Italy, although no decisive incompatibility is established.
+- The role is middle-level while the candidate profile also contains senior and technical-lead experience.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| At least 4 years of backend engineering experience | critical / stated | strong | An experienced Backend Engineer with a minimum of **4** years in the field | over 15 years of expertise. | The profile summary establishes total experience but not every year as backend-specific. / Confirm the backend portion of the career chronology. |
-| Hands-on Go proficiency | critical / stated | strong | Hands-on proficiency in Go — must have; | - Go | None material; recent backend work is also in Go. / Use recent Go service examples in technical screening. |
-| Working hours 12:00 PM to 9:00 PM Ukrainian time | high / stated | unknown | Working hours: 12:00 PM to 9:00 PM (Ukrainian time) | Fiumicino, Latium, Italy | Location alone does not establish availability for the required schedule. / Confirm willingness to work the stated hours. |
-| System architecture and design | high / stated | strong | Experience in system architecture and design - a plus | I architect and lead the development of the platform's internal event analytics | The candidate's strongest explicit architecture example is event analytics rather than B2B payments. / Connect architecture examples to payment-platform constraints. |
-| Cloud provider experience | meaningful / stated | strong | Experience with GCP, AWS, or other cloud providers - a plus | - AWS | The vacancy prefers cloud experience but does not mandate a specific provider. / Confirm recent hands-on cloud scope. |
-| PostgreSQL familiarity | meaningful / stated | strong | Familiarity with database systems (e.g., PostgreSQL)- a big plus. | - PostgreSQL | The profile does not quantify the most recent PostgreSQL usage. / Confirm production PostgreSQL responsibilities. |
+| Backend engineering experience | critical / stated | strong | minimum of **4** years in the field | 15+ years of experience | / |
+| Go proficiency | critical / stated | strong | Hands-on proficiency in Go — must have | Go-based support automation platform | / |
+| Working-hours compatibility | high / stated | unknown | Working hours: 12:00 PM to 9:00 PM (Ukrainian time) |  | The sealed profile does not state availability for this fixed schedule. / Confirm availability before proceeding. |
+| High-performance APIs and services | high / stated | strong | Scope, design, and implement high-performance APIs and services | Go-based support automation platform | / |
+| System architecture and design | high / stated | strong | Experience in system architecture and design - a plus | event-driven | / |
+| Cloud provider experience | high / stated | strong | Experience with GCP, AWS, or other cloud providers - a plus | AWS | / |
+| PostgreSQL or comparable database experience | high / stated | strong | Familiarity with database systems (e.g., PostgreSQL)- a big plus. | PostgreSQL | / |
+| English level | high / stated | strong | English – Upper-Intermediate or higher. | English - Upper-intermediate | / |
+| TypeScript | meaningful / stated | unknown | Hands-on proficiency in TypeScript — strong advantage |  | / |
+| Developer testing and iterative methods | meaningful / stated | unknown | Experience in designing, prioritizing and leading software projects - a plus |  | / |
