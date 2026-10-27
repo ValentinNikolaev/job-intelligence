@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-27T19:31:27Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "SBC Performance",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261027_sbc-performanc_e206e632500f4ca8ba516347dc96c0de",
+      "score": 84,
+      "title": "Senior Go Developer",
+      "url": "https://jobs.dou.ua/companies/sbc-performance/vacancies/378060/",
+      "vacancy_id": "e206e632-500f-4ca8-ba51-6347dc96c0de"
+    },
+    {
+      "company": "ObviouslyApps",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261027_obviouslyapps_40b28164bcaf4ca7986fdeaeea86c233",
+      "score": 78,
+      "title": "Middle Backend Engineer PHP/Laravel",
+      "url": "https://djinni.co/jobs/855408-middle-backend-engineer-php-laravel/",
+      "vacancy_id": "40b28164-bcaf-4ca7-986f-deaeea86c233"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ff891960616113bfea75db0f7f95323b9ee2b3e80de54049c71499c4418426e2",
+  "schema_version": 2
+}
