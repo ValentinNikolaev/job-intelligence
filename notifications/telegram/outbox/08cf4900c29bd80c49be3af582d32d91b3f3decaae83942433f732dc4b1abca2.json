@@ -1,0 +1,151 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-28T14:27:39Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Nextcloud",
+      "country_codes": [
+        "DE"
+      ],
+      "directory": "20261028_nextcloud_663e169ea00748fabb53c719cae8e348",
+      "score": 82,
+      "title": "Back-end Engineer Integration and AI (PHP/Python)",
+      "url": "https://www.linkedin.com/jobs/view/4480075113/",
+      "vacancy_id": "663e169e-a007-48fa-bb53-c719cae8e348"
+    },
+    {
+      "company": "MediaLab",
+      "country_codes": [],
+      "directory": "20261028_medialab_947caee84a20453a8e36d9d9068504aa",
+      "score": 72,
+      "title": "Medior Full Stack Developer (PHP / TypeScript)",
+      "url": "https://www.linkedin.com/jobs/view/4481073955/",
+      "vacancy_id": "947caee8-4a20-453a-8e36-d9d9068504aa"
+    },
+    {
+      "company": "Joppy",
+      "country_codes": [],
+      "directory": "20261028_joppy_a733ad55d2d142889934145e07f31c1c",
+      "score": 78,
+      "title": "Backend Developer PHP / Symfony | 50–65 K€",
+      "url": "https://www.linkedin.com/jobs/view/4482613495/",
+      "vacancy_id": "a733ad55-d2d1-4288-9934-145e07f31c1c"
+    },
+    {
+      "company": "Jobgether",
+      "country_codes": [
+        "NL"
+      ],
+      "directory": "20261028_jobgether_0fb2612ffab64ff2a99c13b33cea8389",
+      "score": 84,
+      "title": "Senior PHP Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4481631789/",
+      "vacancy_id": "0fb2612f-fab6-4ff2-a99c-13b33cea8389"
+    },
+    {
+      "company": "Jobgether",
+      "country_codes": [
+        "IE"
+      ],
+      "directory": "20261028_jobgether_0facf2b6ffeb4f85ab9efeccf078e2af",
+      "score": 84,
+      "title": "Senior PHP Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4481646004/",
+      "vacancy_id": "0facf2b6-ffeb-4f85-ab9e-feccf078e2af"
+    },
+    {
+      "company": "HomeToGo",
+      "country_codes": [],
+      "directory": "20261028_hometogo_e5ff556c89a54b42a7d6d32605dfe558",
+      "score": 82,
+      "title": "Senior Software Engineer (PHP)",
+      "url": "https://www.linkedin.com/jobs/view/4473171492/",
+      "vacancy_id": "e5ff556c-89a5-4b42-a7d6-d32605dfe558"
+    },
+    {
+      "company": "GetJet Airlines",
+      "country_codes": [],
+      "directory": "20261028_getjet-airline_83f6175b0cf44c5dba0ebf3ce9001274",
+      "score": 78,
+      "title": "Mid-Senior PHP Developer",
+      "url": "https://www.linkedin.com/jobs/view/4456897239/",
+      "vacancy_id": "83f6175b-0cf4-4c5d-ba0e-bf3ce9001274"
+    },
+    {
+      "company": "FTMO",
+      "country_codes": [],
+      "directory": "20261028_ftmo_66618ff3c0504f4a91e31942b03aeb87",
+      "score": 84,
+      "title": "Senior PHP Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4481620827/",
+      "vacancy_id": "66618ff3-c050-4f4a-91e3-1942b03aeb87"
+    },
+    {
+      "company": "FTMO",
+      "country_codes": [],
+      "directory": "20261028_ftmo_646f68872e0e4c5a963d32befda02975",
+      "score": 88,
+      "title": "Senior PHP Engineer, Architecture & Quality",
+      "url": "https://www.linkedin.com/jobs/view/4481634409/",
+      "vacancy_id": "646f6887-2e0e-4c5a-963d-32befda02975"
+    },
+    {
+      "company": "Dyflexis",
+      "country_codes": [],
+      "directory": "20261028_dyflexis_61097e9f2b464e3d8e333175f07a5c43",
+      "score": 84,
+      "title": "Senior Backend Engineer (PHP)",
+      "url": "https://www.linkedin.com/jobs/view/4482883440/",
+      "vacancy_id": "61097e9f-2b46-4e3d-8e33-3175f07a5c43"
+    },
+    {
+      "company": "DOU Polska",
+      "country_codes": [],
+      "directory": "20261028_dou-polska_ad08f0af38c44e61a429155d464e660d",
+      "score": 78,
+      "title": "Senior Node.js / PHP Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4480044906/",
+      "vacancy_id": "ad08f0af-38c4-4e61-a429-155d464e660d"
+    },
+    {
+      "company": "Deliverect",
+      "country_codes": [],
+      "directory": "20261028_deliverect_57261bcf1e2c4550b30286b0401aa5d1",
+      "score": 84,
+      "title": "Senior Backend Engineer (PHP)",
+      "url": "https://www.linkedin.com/jobs/view/4482125134/",
+      "vacancy_id": "57261bcf-1e2c-4550-b302-86b0401aa5d1"
+    },
+    {
+      "company": "ATS4IT",
+      "country_codes": [],
+      "directory": "20261028_ats4it_bb27979a24a64bcfadd14e42ae6d556e",
+      "score": 86,
+      "title": "Senior PHP/Laravel Developer",
+      "url": "https://www.linkedin.com/jobs/view/4483221896/",
+      "vacancy_id": "bb27979a-24a6-4bcf-add1-4e42ae6d556e"
+    },
+    {
+      "company": "Ailin.health",
+      "country_codes": [],
+      "directory": "20261028_ailin-health_b5fb5d1799b14d49aa9937281b997825",
+      "score": 80,
+      "title": "Senior PHP Developer",
+      "url": "https://www.linkedin.com/jobs/view/4483504435/",
+      "vacancy_id": "b5fb5d17-99b1-4d49-aa99-37281b997825"
+    },
+    {
+      "company": "Welyk",
+      "country_codes": [],
+      "directory": "20261028_welyk_362a7348ee3340e4bcd9b82f61fc07e5",
+      "score": 89,
+      "title": "Senior Backend Developer (Go e Python) | Laura",
+      "url": "https://www.linkedin.com/jobs/view/4479509574/",
+      "vacancy_id": "362a7348-ee33-40e4-bcd9-b82f61fc07e5"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "08cf4900c29bd80c49be3af582d32d91b3f3decaae83942433f732dc4b1abca2",
+  "schema_version": 2
+}
