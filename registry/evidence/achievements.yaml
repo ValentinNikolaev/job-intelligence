@@ -1960,3 +1960,17 @@ entries:
 
       **Software Developer**'
     sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+- id: linkedin-russian-language
+  status: verified
+  source:
+    path: registry/candidate/linkedin-profile.md
+    quote: '- Russian - Native or Bilingual'
+    sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+  verification:
+    reviewer: Codex /root source-exact language review
+    reviewed_at: '2026-10-28'
+    method: Compared the two identical Russian language entries in the configured
+      immutable LinkedIn source; source transcription, not a new proficiency examination.
+  review_notes: Both Russian entries state Native or Bilingual. Their duplication
+    does not create a language-level conflict. The separate English entries disagree;
+    keep the candidate CV Upper-intermediate English label.
