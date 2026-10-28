@@ -194,9 +194,80 @@ class ApplicationReviewTests(unittest.TestCase):
     def test_letter_naturalness_accepts_exactly_90(self):
         _, _, quality, package, _ = self.letter_fixture()
         review = quality['cover_letter']['editorial_review']
+        review['council']['reviews'][0]['naturalness']['score'] = 90
         review['naturalness']['dimensions']['restraint']['score'] = 21
         review['naturalness']['score'] = 90
+        review['council']['peer_review']['reviews_sha256'] = review_digest(review['council']['reviews'])
         validate_letter_delivery(quality['cover_letter'], review, package['cover_letter_markdown'])
+
+    def test_letter_council_rejects_self_review_duplicate_and_missing_reviewers(self):
+        for mutation, message in [('self', 'independent'), ('duplicate', 'distinct'),
+                                  ('missing', 'exactly three'), ('editor', 'one of the independent')]:
+            with self.subTest(mutation=mutation):
+                _, draft, quality, package, _ = self.letter_fixture()
+                review = quality['cover_letter']['editorial_review']
+                if mutation == 'self':
+                    review['author'] = ' FIXTURE-REVIEWER-A '
+                elif mutation == 'duplicate':
+                    item = review['council']['reviews'][1]
+                    item['reviewer'] = ' FIXTURE-REVIEWER-A '
+                    item['naturalness']['reviewer'] = ' FIXTURE-REVIEWER-A '
+                elif mutation == 'missing':
+                    review['council']['reviews'].pop()
+                else:
+                    review['reviewer'] = 'fixture-letter-author'
+                with self.assertRaisesRegex(ValueError, message):
+                    validate_letter_delivery(quality['cover_letter'], review,
+                                             package['cover_letter_markdown'], draft=draft)
+
+    def test_letter_council_rejects_stale_text_objections_and_missing_coverage(self):
+        for mutation, message in [('stale', 'stale'), ('review_objection', 'unresolved objections'),
+                                  ('peer_objection', 'unresolved objections'),
+                                  ('paragraph', 'every final paragraph'), ('rule', 'all four rule checks'),
+                                  ('quote', 'exact final text'), ('decision', 'keep decisions')]:
+            with self.subTest(mutation=mutation):
+                _, draft, quality, package, _ = self.letter_fixture()
+                review = quality['cover_letter']['editorial_review']
+                item = review['council']['reviews'][0]
+                if mutation == 'stale':
+                    item['document_sha256'] = 'old'
+                elif mutation == 'review_objection':
+                    item['unresolved_objections'] = ['Evidence remains unclear']
+                elif mutation == 'peer_objection':
+                    review['council']['peer_review']['unresolved_objections'] = ['Voice concern']
+                elif mutation == 'paragraph':
+                    item['paragraph_reviews'].pop()
+                elif mutation == 'rule':
+                    item['rule_checks'].pop('no_cv_replay')
+                elif mutation == 'quote':
+                    item['rule_checks']['natural_voice']['quote'] = 'not in the final letter'
+                else:
+                    item['paragraph_reviews'][0]['decision'] = 'rewrite'
+                with self.assertRaisesRegex(ValueError, message):
+                    validate_letter_delivery(quality['cover_letter'], review,
+                                             package['cover_letter_markdown'], draft=draft)
+
+    def test_letter_council_uses_lowest_rating_and_binds_peer_snapshot(self):
+        for mutation, message in [('inflated', 'lowest independent'), ('altered_snapshot', 'altered'),
+                                  ('missing_snapshot', 'anonymized snapshot'),
+                                  ('changed_reviews', 'stale for the independent review set')]:
+            with self.subTest(mutation=mutation):
+                _, draft, quality, package, _ = self.letter_fixture()
+                review = quality['cover_letter']['editorial_review']
+                if mutation == 'inflated':
+                    rating = review['council']['reviews'][1]['naturalness']
+                    rating['dimensions']['restraint']['score'] = 21
+                    rating['score'] = 90
+                    # The top-level rating still says 92, despite a lower independent score.
+                elif mutation == 'altered_snapshot':
+                    (draft / 'parts/letter-review-snapshot.txt').write_text('Altered review.', encoding='utf-8')
+                elif mutation == 'changed_reviews':
+                    review['council']['reviews'][0]['paragraph_reviews'][0]['reason'] = 'Changed after peer review.'
+                else:
+                    review['council']['peer_review'].pop('snapshot')
+                with self.assertRaisesRegex(ValueError, message):
+                    validate_letter_delivery(quality['cover_letter'], review,
+                                             package['cover_letter_markdown'], draft=draft)
 
     def test_company_fact_can_be_translated_with_an_explicit_source_mapping(self):
         root, draft, quality, package, ledger = self.letter_fixture()
@@ -208,6 +279,15 @@ class ApplicationReviewTests(unittest.TestCase):
         review['voice']['language'] = 'Italian'
         for name in ('humanizer', 'ai_detection', 'naturalness'):
             review[name]['document_sha256'] = digest(package['cover_letter_markdown'])
+        for item in review['council']['reviews']:
+            item['document_sha256'] = digest(package['cover_letter_markdown'])
+            item['naturalness']['document_sha256'] = digest(package['cover_letter_markdown'])
+            for paragraph_review in item['paragraph_reviews']:
+                paragraph_review['quote'] = paragraph_review['quote'].replace('Example builds billing software.', translation)
+            for rule in item['rule_checks'].values():
+                rule['quote'] = translation
+        review['council']['peer_review']['document_sha256'] = digest(package['cover_letter_markdown'])
+        review['council']['peer_review']['reviews_sha256'] = review_digest(review['council']['reviews'])
         validate_letter_review(quality, package['cover_letter_markdown'], draft, root, ledger)
         review.pop('company_grounding')
         with self.assertRaisesRegex(ValueError, 'source-to-final-text'):

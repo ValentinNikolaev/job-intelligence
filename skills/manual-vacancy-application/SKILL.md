@@ -10,8 +10,13 @@ route before assigning letter work. Generate a letter only for a required form f
 for an email-only application, always draft the email in the company's evidenced
 language. Skip optional fields. Required letters use a separate `--document cover-letter`
 pass, reusing the final CV and research. Finish it before reporting the package ready.
-Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
-and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+Both channels require current voice, `write-cover-letter`, local `humanizer`,
+`ai-detector`, and a separate naturalness rating of at least 90/100 from each of
+three independent reviewers. The letter author cannot review or approve it.
+Use one Quick council with three distinct reviewers and an anonymized peer review
+by one of them; reuse these advisors after substantive edits. Every final paragraph
+and employer-flow rule needs an exact-text review. Unresolved objections block delivery
+regardless of score; retain the lowest independent rating. Preserve unselected artifacts.
 The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
 section "Conditional letter generation and delivery gate". Missing external feedback
 required by the installed detector skill stays incomplete; never fabricate a score.

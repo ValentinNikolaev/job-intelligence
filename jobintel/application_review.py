@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from collections.abc import Mapping
 from datetime import date
 from pathlib import Path
@@ -160,12 +161,99 @@ def validate_letter_review(quality: Mapping, markdown: str, draft: Path, root: P
         raise ValueError('letter company claim must be present in the final text')
     _text(review.get('company_grounding'), 'letter company source-to-final-text review')
     validate_voice_review(review, root, context=context)
-    validate_letter_delivery(letter, review, markdown)
+    validate_letter_delivery(letter, review, markdown, draft=draft)
     return {**review, 'company_source': dict(snapshot), 'company_fact': company['fact'],
             'application_route': dict(letter['application_route'])}
 
 
-def validate_letter_delivery(letter: Mapping, review: Mapping, markdown: str) -> None:
+def _letter_paragraphs(markdown: str) -> list[str]:
+    return [paragraph.strip() for paragraph in re.split(r'\n\s*\n', markdown.strip()) if paragraph.strip()]
+
+
+def validate_letter_council(review: Mapping, markdown: str, draft: Path | None = None) -> None:
+    """Validate independent review receipts and their binding to the final text."""
+    author = _text(review.get('author'), 'letter author').casefold()
+    council = review.get('council')
+    if not isinstance(council, Mapping) or council.get('schema_version') != 1 or council.get('mode') != 'quick':
+        raise ValueError('letter council requires schema_version 1 and quick mode')
+    reviews = council.get('reviews')
+    if not isinstance(reviews, list) or len(reviews) != 3:
+        raise ValueError('letter council requires exactly three independent reviews')
+    digest = document_digest(markdown)
+    paragraphs = _letter_paragraphs(markdown)
+    names = set()
+    ratings = []
+    expected_rules = {'contribution_first', 'necessary_evidence', 'no_cv_replay', 'natural_voice'}
+    for item in reviews:
+        if not isinstance(item, Mapping):
+            raise ValueError('letter council reviews must be mappings')
+        name = _text(item.get('reviewer'), 'letter council reviewer').casefold()
+        if name == author or name in names:
+            raise ValueError('letter council reviewers must be distinct and independent of the author')
+        names.add(name)
+        if item.get('document_sha256') != digest:
+            raise ValueError('letter council review is stale for the final text')
+        if item.get('verdict') != 'approve' or item.get('unresolved_objections') != []:
+            raise ValueError('letter council requires approval and no unresolved objections from every reviewer')
+        rating = item.get('naturalness')
+        _validate_naturalness(rating, digest)
+        if rating['reviewer'].strip().casefold() != name:
+            raise ValueError('letter council naturalness reviewer must match its independent reviewer')
+        ratings.append(rating)
+        rules = item.get('rule_checks')
+        if not isinstance(rules, Mapping) or set(rules) != expected_rules:
+            raise ValueError('letter council requires all four rule checks')
+        for rule in rules.values():
+            if not isinstance(rule, Mapping) or rule.get('pass') is not True:
+                raise ValueError('letter council rule checks must pass')
+            if _text(rule.get('quote'), 'letter council rule quote') not in markdown:
+                raise ValueError('letter council rule quote must appear in the exact final text')
+            _text(rule.get('reason'), 'letter council rule rationale')
+        paragraph_reviews = item.get('paragraph_reviews')
+        if not isinstance(paragraph_reviews, list) or len(paragraph_reviews) != len(paragraphs):
+            raise ValueError('letter council paragraph reviews must cover every final paragraph')
+        for paragraph, row in zip(paragraphs, paragraph_reviews):
+            if not isinstance(row, Mapping) or row.get('quote') != paragraph:
+                raise ValueError('letter council paragraph review must quote each exact final paragraph in order')
+            _text(row.get('purpose'), 'letter paragraph purpose')
+            _text(row.get('reason'), 'letter paragraph rationale')
+            if row.get('decision') != 'keep':
+                raise ValueError('approved final letter requires keep decisions for every paragraph')
+    if _text(review.get('reviewer'), 'letter editorial reviewer').casefold() not in names:
+        raise ValueError('letter editorial reviewer must be one of the independent council reviewers')
+    minimum = min(rating['score'] for rating in ratings)
+    if review.get('naturalness') not in [rating for rating in ratings if rating['score'] == minimum]:
+        raise ValueError('letter editorial naturalness must copy the lowest independent council rating')
+    peer = council.get('peer_review')
+    if (not isinstance(peer, Mapping)
+            or _text(peer.get('reviewer'), 'letter peer reviewer').casefold() not in names
+            or peer['reviewer'].strip().casefold() == author):
+        raise ValueError('letter peer review requires one independent council reviewer')
+    if peer.get('reviews_sha256') != review_digest(reviews):
+        raise ValueError('letter peer review is stale for the independent review set')
+    if peer.get('document_sha256') != digest:
+        raise ValueError('letter peer review is stale for the final text')
+    if peer.get('verdict') != 'approve' or peer.get('unresolved_objections') != []:
+        raise ValueError('letter peer review requires approval with no unresolved objections')
+    _text(peer.get('notes'), 'letter peer review notes')
+    _text(peer.get('weakest_point'), 'letter peer review weakest point')
+    snapshot = peer.get('snapshot')
+    if not isinstance(snapshot, Mapping):
+        raise ValueError('letter peer review requires an anonymized snapshot')
+    path_value = _text(snapshot.get('path'), 'letter peer snapshot path')
+    relative = Path(path_value)
+    if relative.is_absolute() or not relative.parts or relative.parts[0] != 'parts' or '..' in relative.parts:
+        raise ValueError('letter peer snapshot must be inside draft parts')
+    if draft is not None:
+        path = (draft / relative).resolve()
+        if not path.is_relative_to((draft / 'parts').resolve()):
+            raise ValueError('letter peer snapshot escapes draft parts')
+        raw = path.read_bytes()
+        if not raw.strip() or snapshot.get('sha256') != hashlib.sha256(raw).hexdigest():
+            raise ValueError('letter peer snapshot is empty or altered')
+
+
+def validate_letter_delivery(letter: Mapping, review: Mapping, markdown: str, *, draft: Path | None = None) -> None:
     """Check recorded editorial work, not machine-infer authorship or style scores."""
     route = letter.get('application_route')
     if not isinstance(route, Mapping):
@@ -204,9 +292,14 @@ def validate_letter_delivery(letter: Mapping, review: Mapping, markdown: str) ->
         _text(detector.get('session_url'), 'external detector session URL')
         _text(detector.get('literal_feedback'), 'external detector literal feedback')
     rating = review.get('naturalness')
+    _validate_naturalness(rating, document_digest(markdown))
+    validate_letter_council(review, markdown, draft)
+
+
+def _validate_naturalness(rating: Any, digest: str) -> None:
     if not isinstance(rating, Mapping) or rating.get('rubric') != 'naturalness-v1':
         raise ValueError('letter requires naturalness-v1 editorial rating')
-    if rating.get('document_sha256') != document_digest(markdown):
+    if rating.get('document_sha256') != digest:
         raise ValueError('naturalness rating is stale for the final text')
     _text(rating.get('reviewer'), 'naturalness reviewer')
     dimensions = rating.get('dimensions')

@@ -7,8 +7,9 @@ route before assigning letter work. Generate a letter only for a required form f
 for an email-only application, always draft the email in the company's evidenced
 language. Skip optional fields. Required letters use a separate `--document cover-letter`
 pass, reusing the final CV and research. Finish it before reporting the package ready.
-Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
-and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+Both channels require current voice, `write-cover-letter`, a local `humanizer` pass,
+`ai-detector`, and a quick council of three distinct independent reviewers on the
+exact final letter. Each naturalness rating must reach 90/100. Preserve unselected artifacts.
 The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
 section "Conditional letter generation and delivery gate". Missing external feedback
 required by the installed detector skill stays incomplete; never fabricate a score.
@@ -20,6 +21,17 @@ and explicitly legacy; their existing review declarations are not upgraded to ve
 v3 claims. Reprepare only an explicitly approved vacancy to create a new v3 package. Match
 analysis and preparation still run inside Codex; project code only validates and
 publishes local drafts.
+
+For every new or explicitly regenerated letter, the author completes the local
+humanizer pass before final assessment. Three other reviewers then inspect every
+paragraph against the configured voice and employer-letter flow, score naturalness
+independently, and approve the same final text with no unresolved objections. The
+author anonymizes all three responses; one original reviewer then peer-reviews the
+anonymized packet, recording the weakest point and a hash-bound snapshot. The receipt
+uses the lowest independent score;
+the author's self-rating cannot satisfy it. Reuse the same reviewers after a
+substantive revision. See [the letter council contract](application-review-contract.md#conditional-letter-generation-and-delivery-gate)
+for exact fields. Legacy receipts retain their original version.
 
 The [review contract](application-review-contract.md) specifies the additional v3
 role inventory, source excerpts for contribution/scope/consequence, measurement

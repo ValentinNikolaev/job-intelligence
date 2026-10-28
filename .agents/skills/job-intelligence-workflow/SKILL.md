@@ -10,8 +10,13 @@ route before assigning letter work. Generate a letter only for a required form f
 for an email-only application, always draft the email in the company's evidenced
 language. Skip optional fields. Required letters use a separate `--document cover-letter`
 pass, reusing the final CV and research. Finish it before reporting the package ready.
-Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
-and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+Both channels require current voice, `write-cover-letter`, local `humanizer`,
+`ai-detector`, and a separate naturalness rating of at least 90/100 from each of
+three independent reviewers. The letter author cannot review or approve it.
+Use one Quick council with three distinct reviewers and an anonymized peer review
+by one of them; reuse these advisors after substantive edits. Every final paragraph
+and employer-flow rule needs an exact-text review. Unresolved objections block delivery
+regardless of score; retain the lowest independent rating. Preserve unselected artifacts.
 The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
 section "Conditional letter generation and delivery gate". Missing external feedback
 required by the installed detector skill stays incomplete; never fabricate a score.
@@ -117,8 +122,12 @@ current Codex surface, tell the user and do not publish under that profile.
    Follow `docs/application-review-contract.md`: claims ledger schema 2, complete
    reviewed career inventory, contextual measurement bindings and a final-letter
    review tied to exact text, priorities, captured company source and current voice.
-   Two evidence strands do not require two narrated examples. Integrate these checks
-   into the existing evidence and final review passes; do not add another agent wave.
+   Two evidence strands do not require two narrated examples. The configured employer
+   flow controls contribution, necessary detail and composition over generic skill
+   story defaults. For letters, the author performs local editing and grounding only;
+   three distinct independent reviewers and an anonymized peer review decide readiness.
+   Reuse the existing advisors; do not add another agent wave. An author-written score,
+   loaded voice hashes or a schema pass never substitutes for their exact-text verdicts.
    Apply the recent-experience and impact/judgment editorial gates in
    `references/prepare.md` before recording that final review. A total bullet
    count never substitutes for a role-by-role hiring-manager review.

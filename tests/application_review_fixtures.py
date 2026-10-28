@@ -1,5 +1,6 @@
 """Synthetic, source-backed review fixtures; never candidate application material."""
 import hashlib
+import re
 from pathlib import Path
 
 import yaml
@@ -40,7 +41,7 @@ def add_letter_review(root, draft, quality, package):
     (config / 'application-review.yaml').write_text(yaml.safe_dump(dict(schema_version=1, voice_sources=[r['path'] for r in rules])), encoding='utf-8')
     quality['preparation_context_version'] = load_preparation_context(root).version
     quote = ledger['claims'][0]['text']
-    review = dict(reviewer='letter-editor', document_sha256=document_digest(letter),
+    review = dict(author='fixture-letter-author', reviewer='fixture-reviewer-a', document_sha256=document_digest(letter),
         basis_sha256=review_digest(letter_basis(quality)),
         priority_mapping=[dict(requirement='Backend', evidence_ids=['delivery'], letter_quote=quote,
             point=point, why_priority='This is a stated high-priority vacancy requirement.') for point in ('Backend delivery', 'Operational reliability')],
@@ -57,10 +58,31 @@ def add_letter_review(root, draft, quality, package):
         review[key] = dict(skill=skill, version='fixture', reviewer='fixture-editor',
             document_sha256=document_digest(letter), notes='Synthetic receipt: retain the concrete example and direct closing.')
     review['ai_detection']['mode'] = 'local'
-    review['naturalness'] = dict(rubric='naturalness-v1', reviewer='fixture-editor',
-        document_sha256=document_digest(letter), score=92,
-        dimensions={key: dict(score=23, reason='Synthetic rubric fixture, not an assessed candidate letter.')
-            for key in ('voice', 'specificity', 'flow', 'restraint')})
+    paragraphs = [paragraph.strip() for paragraph in re.split(r'\n\s*\n', letter.strip())]
+    reviews = []
+    for name in ('fixture-reviewer-a', 'fixture-reviewer-b', 'fixture-reviewer-c'):
+        naturalness = dict(rubric='naturalness-v1', reviewer=name,
+            document_sha256=document_digest(letter), score=92,
+            dimensions={key: dict(score=23, reason='Synthetic fixture rationale for this dimension.')
+                for key in ('voice', 'specificity', 'flow', 'restraint')})
+        reviews.append(dict(reviewer=name, document_sha256=document_digest(letter),
+            verdict='approve', unresolved_objections=[], naturalness=naturalness,
+            rule_checks={key: dict(**{'pass': True}, quote=fact,
+                reason='The final sentence supplies a concrete company fact in this fixture.')
+                for key in ('contribution_first', 'necessary_evidence', 'no_cv_replay', 'natural_voice')},
+            paragraph_reviews=[dict(quote=paragraph, purpose='Contributes to the complete fixture letter.',
+                decision='keep', reason='The paragraph has a distinct place in this fixture.')
+                for paragraph in paragraphs]))
+    peer_snapshot = parts / 'letter-review-snapshot.txt'
+    peer_snapshot.write_text('Anonymized synthetic review: the example and company fact support the letter.\n', encoding='utf-8')
+    review['council'] = dict(schema_version=1, mode='quick', reviews=reviews,
+        peer_review=dict(reviewer='fixture-reviewer-b', document_sha256=document_digest(letter),
+            reviews_sha256=review_digest(reviews),
+            verdict='approve', notes='The exact final fixture letter is coherent.',
+            weakest_point='The synthetic company motivation is short.', unresolved_objections=[],
+            snapshot=dict(path='parts/letter-review-snapshot.txt',
+                sha256=hashlib.sha256(peer_snapshot.read_bytes()).hexdigest())))
+    review['naturalness'] = reviews[0]['naturalness'].copy()
     (draft / 'cover-letter.md').write_text(letter, encoding='utf-8')
     (draft / 'quality.yaml').write_text(yaml.safe_dump(quality), encoding='utf-8')
     return review

@@ -7,8 +7,9 @@ route before assigning letter work. Generate a letter only for a required form f
 for an email-only application, always draft the email in the company's evidenced
 language. Skip optional fields. Required letters use a separate `--document cover-letter`
 pass, reusing the final CV and research. Finish it before reporting the package ready.
-Both channels require current voice, `write-cover-letter`, `humanizer`, `ai-detector`
-and a separate naturalness rating of at least 90/100. Preserve unselected artifacts.
+Both channels require current voice, `write-cover-letter`, a local `humanizer` pass,
+`ai-detector`, and a three-reviewer council on the exact final text. Every independent
+naturalness rating must reach 90/100. Preserve unselected artifacts.
 The mandatory receipt schema and rubric are in `docs/application-review-contract.md`,
 section "Conditional letter generation and delivery gate". Missing external feedback
 required by the installed detector skill stays incomplete; never fabricate a score.
@@ -99,7 +100,7 @@ scope from `config/application-profile.yaml`, and voice sources from
 Choose `document_format: standard` unless the user or application channel calls for a
 compact document. Compact v2 permits a 300–500-word CV with at least six Experience
 bullets and a 150–250-word cover letter with three to six body paragraphs. It retains
-the supported skills, source evidence, two complementary letter stories, company
+the supported skills, source evidence, two complementary internal abilities, company
 hook, all required sections, and full analysis/interview minima. The compact limits
 override the standard CV/letter minima below; never pad either format. Follow the
 selected length instruction when invoking `$write-cover-letter`.
@@ -313,7 +314,8 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     as the claim source of truth and the final CV as the selected positioning for this
     application. Follow the skill's
      requirement-to-evidence mapping, two complementary internal evidence strands, company-motivation
-    research, and final claim ledger. Default to the posting language and selected format: standard uses 300–450 words, four
+    research, and final claim ledger. These two internal abilities do not require
+    two visible employer stories. Default to the posting language and selected format: standard uses 300–450 words, four
     to six short paragraphs, a verified recipient or `Dear Hiring Team`, and plain
     ATS-friendly formatting. Use the role and company naturally when they improve targeting.
     Before composing, read every current voice source configured in
@@ -324,6 +326,19 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
     one brief visible example. State the application purpose naturally, explain
     relevance once and finish with the practical next step. Complete the flow's
     read-aloud delivery check. Channel overrides attachment length and structure.
+    Humanize the complete draft locally before the exact-final-text assessment.
+    Then run the installed detector in its applicable mode. Three distinct reviewers
+    who did not author the letter independently review every final paragraph and
+    the contribution-first, necessary-evidence, no-CV-replay and natural-voice rules.
+    Each records concrete findings, an honest naturalness score of at least 90/100,
+    approval, and no unresolved objections. After all three independent reviews,
+    the author anonymizes their responses. One of the original reviewers receives
+    that anonymized packet and peer-reviews all three assessments, names the weakest
+    point, and approves the same final text and review snapshot. Record the lowest
+    independent naturalness score, never the author's self-rating. After a
+    substantive edit, the same three review
+    the new exact text; do not start another assessment team. The receipt schema is
+    in `docs/application-review-contract.md`.
     Start the body with a vacancy-specific, source-backed proposition rather
      than "I am applying for" for attachments. Normally select one short example; add a second only for a different substantive expectation and
     explain their relevance instead of replaying the CV. Name a former
@@ -445,7 +460,8 @@ thoughtful questions for the company.
   concrete review notes and actual file hashes. Use `letter_basis`/`review_digest`
   from `jobintel.application_review` for the mapping digest and normalized final-text
   SHA-256 for the letter; changes invalidate the review. Keep this work in the existing
-  final pass, without an additional compulsory agent loop.
+  final pass. A generated letter then receives the required three-reviewer council;
+  a self-review cannot replace it.
 
 - Only CV, analysis and interview preparation Markdown fields are required by default; letters use a separate conditional pass. For an explicit
   single-document request, only the selected field is required and the other fields

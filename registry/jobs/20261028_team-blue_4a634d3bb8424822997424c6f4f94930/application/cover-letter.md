@@ -1,12 +1,10 @@
 Dear Hiring Team,
 
-Your PHP (Symfony) Software Engineer role combines backend feature work with internal APIs that other teams depend on. I bring PHP development, production integration work and technical ownership of event systems. The planned rollout of team.blue's hosting platform across the European group gives that API work a clear purpose: helping services and teams exchange information reliably.
+I can help your Platforms team develop PHP/Symfony backend features and internal APIs, taking work from technical analysis through implementation and production release. I also bring experience improving database reliability and release processes, so I can work on the operational side of a feature as well as its application code.
 
-In a part-time PHP consulting engagement at CRURATED, I took technical ownership of production DataLake and event analytics work. I also owned parallel event-version publication and defined a versioned schema that kept events consistent across teams and made new types easier to integrate.
+In a recent PHP consulting project, I owned production publication of parallel event versions and defined a versioned event schema. This kept data consistent across teams and made new event types easier to integrate.
 
-My Symfony experience includes developing a Laravel/Symfony logger package at airSlate. My work there also covered database reliability and release delivery, including reducing peak database load and making releases more consistent through CI/CD.
-
-I am looking for hands-on backend work with room to contribute to architecture and stay involved through delivery. I would welcome a conversation about your Platforms team's priorities and the Symfony experience needed for the role.
+I'd like to work on the services connecting your platform as it rolls out across team.blue's European group. The opportunity to help shape interfaces used by other teams, while continuing to build and maintain them, is what draws me to this role. I'd be glad to discuss your first priorities and how the team shares responsibility for those interfaces.
 
 Kind regards,
 

@@ -1,7 +1,7 @@
 profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
 vacancy_version: sha256:fa1f4d96bbd59ea9e12f91840a42b65f44af766d4982877a2e3283ececf8f947
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
+prompt_version: sha256:665e0ffbb17a90973eda7049ee4c2ff027dc54962aadb1e96a232ef004579e15
 model: codex:gpt-6.1-sol:high
 analysis: &id002
   model: codex:gpt-5.6-luna:medium
@@ -11,7 +11,7 @@ analysis: &id002
 quality_contract_version: 3
 preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
 cv_export_stem: CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer
-generated_at: '2026-10-28T15:00:58Z'
+generated_at: '2026-10-28T16:03:00Z'
 documents:
   cv:
     profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
@@ -54,13 +54,13 @@ documents:
     profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
     vacancy_version: sha256:fa1f4d96bbd59ea9e12f91840a42b65f44af766d4982877a2e3283ececf8f947
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
+    prompt_version: sha256:665e0ffbb17a90973eda7049ee4c2ff027dc54962aadb1e96a232ef004579e15
     model: codex:gpt-6.1-sol:high
     analysis: *id002
     quality_contract_version: 3
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer
-    generated_at: '2026-10-28T15:00:58Z'
+    generated_at: '2026-10-28T16:03:00Z'
 quality:
   contract_version: 3
   documents:
@@ -83,15 +83,15 @@ quality:
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
     cover-letter:
-      word_count: 178
-      sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+      word_count: 152
+      sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
       preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
   document_format: compact
   grounding:
     schema_version: 2
-    sha256: 58a812063b136e5520234e36f8908f5b7091077a8c24198793ef9641c6d08cc9
+    sha256: 483568e940c3e53b894d72aa0415d216cf8f09f5aa7191e83c6bb1c1298e68b4
     evidence_bank:
       schema_version: 1
       sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
@@ -101,7 +101,7 @@ quality:
         retracted: 5
         unverified: 9
         verified: 68
-    claim_count: 20
+    claim_count: 19
     evidence_ids:
     - airslate-cicd-delivery
     - airslate-letter-lead-scope
@@ -983,51 +983,49 @@ quality:
     application_review:
       role_coverage: *id005
       letter_review: &id006
-        reviewer: /root (exact final letter self-review)
-        document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+        reviewer: /root/risk_and_review
+        document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
         priority_mapping:
         - requirement: PHP backend development and production ownership
           evidence_ids:
-          - crurated-confirmed-datalake-production
-          point: Production PHP systems ownership
-          why_priority: Backend PHP feature work is the role focus; the concrete production
-            system shows delivered ownership without borrowing the target hosting
-            domain.
-          letter_quote: In a part-time PHP consulting engagement at CRURATED, I took
-            technical ownership of production DataLake and event analytics work.
+          - crurated-confirmed-event-version-production
+          point: PHP production ownership
+          why_priority: Backend PHP feature development is the role focus; one concise
+            production example establishes scope.
+          letter_quote: In a recent PHP consulting project, I owned production publication
+            of parallel event versions and defined a versioned event schema.
         - requirement: Symfony development
           evidence_ids:
           - airslate-logger-general
-          point: Bounded Symfony implementation experience
-          why_priority: Symfony is explicit in the title. The letter names the actual
-            implementation and avoids claiming extensive framework architecture.
-          letter_quote: My Symfony experience includes developing a Laravel/Symfony
-            logger package at airSlate.
-        distinctness: The first strand concerns ownership of a production PHP data
-          system; the second establishes the narrower named-framework implementation.
-          The latter is not presented as another architecture success.
-        channel_fit: A concise four-paragraph letter suitable for the form text field,
-          with one brief project narrative and a direct invitation to discuss requirements.
+          point: Supported Symfony development capability
+          why_priority: Symfony is explicit in the title; the opening names the contribution
+            without inventing a Symfony hosting project.
+          letter_quote: I can help your Platforms team develop PHP/Symfony backend
+            features and internal APIs, taking work from technical analysis through
+            implementation and production release.
+        distinctness: Production ownership and the named framework capability are
+          complementary internal abilities; the letter has one brief example, not
+          two employer stories.
+        channel_fit: 152-word compact letter for the existing form field, three body
+          paragraphs explaining contribution, one necessary example, and a targeted
+          invitation.
         narrated_examples:
-        - letter_quote: In a part-time PHP consulting engagement at CRURATED, I took
-            technical ownership of production DataLake and event analytics work. I
-            also owned parallel event-version publication and defined a versioned
-            schema that kept events consistent across teams and made new types easier
-            to integrate.
-          adds_value: Shows personal scope and the cross-team event-schema result
-            in one compact account; other paragraphs state capabilities rather than
-            retelling another project.
-        company_claim: 'The planned rollout of team.blue''s hosting platform across
-          the European group gives that API work a clear purpose: helping services
-          and teams exchange information reliably.'
-        company_grounding: The captured official posting states further European platform
-          rollout and internal APIs central to information exchange. The letter paraphrases
-          these two linked facts, without claiming product use or an internal problem.
+        - letter_quote: In a recent PHP consulting project, I owned production publication
+            of parallel event versions and defined a versioned event schema. This
+            kept data consistent across teams and made new event types easier to integrate.
+          adds_value: The short example establishes personal production ownership
+            and cross-team data consistency without replaying employer history.
+        company_claim: I'd like to work on the services connecting your platform as
+          it rolls out across team.blue's European group.
+        company_grounding: The primary posting explicitly plans further rollout across
+          its European group and describes internal APIs central to information exchange.
+          The final sentence expresses a proposed contribution to that future work,
+          without claiming past product use or a known internal defect.
         voice:
           language: English
-          notes: Calm professional English, specific capabilities, one short example,
-            no manufactured enthusiasm or CV chronology. The Symfony wording preserves
-            its narrow evidence boundary.
+          notes: Independent reviewers checked contribution first, every paragraph
+            and necessity of detail against the current employer-letter flow. No employer
+            chronology or technical catalogue; one short event-system example.
           rules:
           - path: I:/Development/Git/ValentinNikolaev/social-promotion/social-voice.md
             sha256: f8b16d365b651bad84ed90ab6014a95f0e3000dfada572c46f978f3b8847d159
@@ -1035,47 +1033,465 @@ quality:
             sha256: 2ec9140dc47c1ee5e918656f8d6f046913a2fd2356a706dad7429e37d00a59c9
         humanizer:
           skill: humanizer
-          version: 22.1.0+codex.20261027190753
+          version: 22.2.0+codex.20261028145822
           reviewer: /root (local edit)
-          document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
-          notes: Removed the redundant sentence "That experience would be useful when
-            changes need to work across several services." The event-schema example
-            already establishes the connection. Kept the concrete Symfony limitation
-            and the plain closing; checked facts and stance after editing.
+          document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+          notes: 'Local edit before council: removed the repeated experience-transfer
+            bridge and generic career-preference sentence, tightened the opening,
+            and kept the single grounded example. After two independent 88/revise
+            objections, revised the exact text and returned it to all three original
+            advisors. They all approved revision2. Facts and scope preserved.'
         ai_detection:
           skill: ai-detector
-          version: 22.1.0+codex.20261027190753
+          version: 22.2.0+codex.20261028145822
           reviewer: /root (local stylistic assessment)
-          document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+          document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
           mode: local
-          notes: No material delayed point, staged contrast or manufactured enthusiasm
-            remains. The short capability list in the opening is useful role targeting
-            and stays. The bounded Symfony sentence is precise rather than a broad
-            expertise claim. This is a local editorial assessment, not an authorship
-            verdict or probability.
+          notes: 'Local check of revision2 before reassessment: contribution stated
+            immediately; one brief example and one company-specific invitation. Opening
+            capability sentence remains somewhat formal, examined by the independent
+            reviewers. No author-probability claim or external service score.'
         naturalness:
           rubric: naturalness-v1
-          reviewer: /root (editorial judgement)
-          document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
-          score: 93
+          reviewer: /root/research_handoffs
+          document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+          score: 91
           dimensions:
             voice:
               score: 23
-              reason: Professional and conversational, with direct first-person claims
-                and a courteous closing; the technical register fits a hiring team.
+              reason: The candidate speaks directly and calmly about work he could
+                take on, without promotional language or a generic admiration claim.
             specificity:
-              score: 24
-              reason: Names the actual PHP event-system ownership and Symfony implementation,
-                and connects them to a sourced platform rollout.
-            flow:
               score: 23
-              reason: Moves from the role to one compact example, a complementary
-                skill and a practical next step; no redundant relevance sentence remains.
+              reason: The production event-version example and its cross-team data
+                consequence are concrete; database reliability and release work are
+                independently sourced.
+            flow:
+              score: 22
+              reason: The three body paragraphs move from contribution to one example
+                to a company-specific reason and conversation. The first paragraph
+                carries several capabilities, but remains readable.
             restraint:
               score: 23
-              reason: No generic praise, product-use claim, numerical inflation or
-                career replay; the framework claim stays within its source.
-        basis_sha256: 670fe27e857a0b96c1ccdd7d64ba1c854940c1674363da6d3e5cbe70e676cb18
+              reason: The letter avoids employer chronology, metrics, unsupported
+                Symfony project stories and a second narrated example.
+        basis_sha256: 228c7fea7eb394dc809ac0061858931aaab092a1f78a641c4a086f8743eba5a1
+        author: /root
+        council:
+          schema_version: 1
+          mode: quick
+          reviews:
+          - reviewer: /root/evidence_handoffs
+            document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+            verdict: approve
+            unresolved_objections: []
+            naturalness:
+              rubric: naturalness-v1
+              reviewer: /root/evidence_handoffs
+              document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+              score: 92
+              dimensions:
+                voice:
+                  score: 23
+                  reason: The letter sounds like a calm engineer speaking directly
+                    to the hiring team, with modest confidence and no fabricated personal
+                    connection.
+                specificity:
+                  score: 23
+                  reason: It names PHP/Symfony APIs, database reliability and release
+                    work, one production event-version example, and the verified European
+                    platform rollout.
+                flow:
+                  score: 23
+                  reason: The progression moves from the contribution to one proof
+                    point and then to a specific reason to join this platform team.
+                restraint:
+                  score: 23
+                  reason: The revised opening no longer repeats broad career claims,
+                    and the letter keeps a single example and an appropriate closing.
+            rule_checks:
+              contribution_first:
+                pass: true
+                quote: I can help your Platforms team develop PHP/Symfony backend
+                  features and internal APIs
+                reason: The first sentence names the exact work the candidate would
+                  contribute to this team.
+              necessary_evidence:
+                pass: true
+                quote: I also bring experience improving database reliability and
+                  release processes
+                reason: This adds a distinct operational ability supported by the
+                  candidate CV, while the later event-version example demonstrates
+                  technical ownership without copying several roles.
+              no_cv_replay:
+                pass: true
+                quote: In a recent PHP consulting project, I owned production publication
+                  of parallel event versions
+                reason: One short example supports the relevant ability; there is
+                  no chronological employer list or copied Experience section.
+              natural_voice:
+                pass: true
+                quote: I'd be glad to discuss your first priorities and how the team
+                  shares responsibility for those interfaces.
+                reason: The close sounds like a concrete professional invitation rather
+                  than a stock enthusiasm statement.
+            paragraph_reviews:
+            - quote: Dear Hiring Team,
+              purpose: Professional greeting.
+              decision: keep
+              reason: Suitable when the hiring contact for this form is not confirmed.
+            - quote: I can help your Platforms team develop PHP/Symfony backend features
+                and internal APIs, taking work from technical analysis through implementation
+                and production release. I also bring experience improving database
+                reliability and release processes, so I can work on the operational
+                side of a feature as well as its application code.
+              purpose: State PHP/Symfony API contribution and a separate operations
+                ability.
+              decision: keep
+              reason: The claims stay within direct user confirmation and source-backed
+                database/release work, and the paragraph makes the role relevance
+                immediate.
+            - quote: In a recent PHP consulting project, I owned production publication
+                of parallel event versions and defined a versioned event schema. This
+                kept data consistent across teams and made new event types easier
+                to integrate.
+              purpose: Give one source-backed production example.
+              decision: keep
+              reason: The candidate confirmed technical ownership and production use
+                of parallel event publication; the versioned schema outcome appears
+                in the candidate source.
+            - quote: I'd like to work on the services connecting your platform as
+                it rolls out across team.blue's European group. The opportunity to
+                help shape interfaces used by other teams, while continuing to build
+                and maintain them, is what draws me to this role. I'd be glad to discuss
+                your first priorities and how the team shares responsibility for those
+                interfaces.
+              purpose: Connect interest to verified platform rollout and invite a
+                practical discussion.
+              decision: keep
+              reason: The rollout is in the official posting, and the wording expresses
+                a current interest without claiming past product use.
+            - quote: Kind regards,
+              purpose: Professional sign-off.
+              decision: keep
+              reason: Plain and proportionate for a form-field letter.
+            - quote: Valentin Nikolaev
+              purpose: Candidate signature.
+              decision: keep
+              reason: The name matches the candidate record.
+            council_analysis:
+              central_assessment: The revision is concise, contribution-led and grounded;
+                it is ready on the evidence and voice dimensions reviewed here.
+              strongest_reason: The letter connects PHP/Symfony API scope to the Platforms
+                team, then uses one verified production event-version example without
+                implying Symfony at CRURATED.
+              weakest_point: The phrase “operational side of a feature” is broad,
+                though the preceding database and release examples keep its scope
+                defensible.
+              risk: The user separately confirmed EU work permit with no sponsorship
+                or restrictions, a November 11 start, professional Symfony experience
+                and delegated salary selection for the form. This letter still must
+                not attribute Symfony to the CRURATED project or imply prior hosting-platform
+                experience.
+              evidence_changing_verdict: A change to the letter, candidate confirmation
+                or official role would require a new exact-text review.
+              proposed_action: Keep this wording and continue the other independent
+                reviews and deterministic receipt checks.
+          - reviewer: /root/research_handoffs
+            document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+            verdict: approve
+            unresolved_objections: []
+            naturalness:
+              rubric: naturalness-v1
+              reviewer: /root/research_handoffs
+              document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+              score: 91
+              dimensions:
+                voice:
+                  score: 23
+                  reason: The candidate speaks directly and calmly about work he could
+                    take on, without promotional language or a generic admiration
+                    claim.
+                specificity:
+                  score: 23
+                  reason: The production event-version example and its cross-team
+                    data consequence are concrete; database reliability and release
+                    work are independently sourced.
+                flow:
+                  score: 22
+                  reason: The three body paragraphs move from contribution to one
+                    example to a company-specific reason and conversation. The first
+                    paragraph carries several capabilities, but remains readable.
+                restraint:
+                  score: 23
+                  reason: The letter avoids employer chronology, metrics, unsupported
+                    Symfony project stories and a second narrated example.
+            rule_checks:
+              contribution_first:
+                pass: true
+                quote: I can help your Platforms team develop PHP/Symfony backend
+                  features and internal APIs
+                reason: The first body sentence names the work offered to this team
+                  before discussing motivation or history.
+              necessary_evidence:
+                pass: true
+                quote: I owned production publication of parallel event versions and
+                  defined a versioned event schema.
+                reason: One production example supports the claim that the candidate
+                  can own interfaces and shared data contracts; the operational claims
+                  are also source-backed.
+              no_cv_replay:
+                pass: true
+                quote: This kept data consistent across teams and made new event types
+                  easier to integrate.
+                reason: The example explains its consequence for dependent teams without
+                  listing employers, dates, tools or achievements from the CV.
+              natural_voice:
+                pass: true
+                quote: I'd be glad to discuss your first priorities and how the team
+                  shares responsibility for those interfaces.
+                reason: The close is a plausible, specific invitation in a conversational
+                  professional voice.
+            paragraph_reviews:
+            - quote: Dear Hiring Team,
+              purpose: Professional salutation
+              decision: keep
+              reason: No named addressee is verified; this is courteous and brief.
+            - quote: I can help your Platforms team develop PHP/Symfony backend features
+                and internal APIs, taking work from technical analysis through implementation
+                and production release. I also bring experience improving database
+                reliability and release processes, so I can work on the operational
+                side of a feature as well as its application code.
+              purpose: State the role-specific contribution and delivery scope
+              decision: keep
+              reason: The posting asks for PHP/Symfony development, APIs and technical
+                analysis. Direct user confirmations support Symfony and PHP API design,
+                while verified airSlate evidence supports database reliability and
+                release-process work. The paragraph is slightly dense but explains
+                a useful end-to-end contribution.
+            - quote: In a recent PHP consulting project, I owned production publication
+                of parallel event versions and defined a versioned event schema. This
+                kept data consistent across teams and made new event types easier
+                to integrate.
+              purpose: Give one relevant production example and consequence
+              decision: keep
+              reason: Verified CRURATED evidence supports production event publication
+                and the schema consequence. The example demonstrates shared-interface
+                ownership without claiming a Symfony implementation for that project.
+            - quote: I'd like to work on the services connecting your platform as
+                it rolls out across team.blue's European group. The opportunity to
+                help shape interfaces used by other teams, while continuing to build
+                and maintain them, is what draws me to this role. I'd be glad to discuss
+                your first priorities and how the team shares responsibility for those
+                interfaces.
+              purpose: Connect motivation to the employer and invite a discussion
+              decision: keep
+              reason: The rollout comes from the official posting. The proposed interface
+                work follows the role, and the final question keeps the conversation
+                focused on the team's actual priorities. The first phrase is broad
+                but understandable in this context.
+            - quote: Kind regards,
+              purpose: Closing courtesy
+              decision: keep
+              reason: Appropriate for the English hiring-team audience.
+            - quote: Valentin Nikolaev
+              purpose: Signature
+              decision: keep
+              reason: Uses the candidate's correct name without adding an unsupported
+                title.
+            council_analysis:
+              central_assessment: Approve this exact letter. It offers supported PHP/API
+                and operational contributions, then gives one production example and
+                a specific reason to discuss the role.
+              strongest_reason: The event-version paragraph shows ownership of a shared
+                contract and states the practical effect for other teams, which makes
+                the proposed internal API contribution credible.
+              weakest_point: The opening combines backend development, database reliability
+                and release processes in two sentences, so its operational claim is
+                less vivid than the example. Each capability is sourced and connected
+                to taking a feature through release.
+              risk: The first sentence could invite a question about which Symfony
+                work the candidate personally designed; direct user confirmation supports
+                that claim, while the letter appropriately leaves the full account
+                to the CV and interview.
+              evidence_changing_verdict: If the direct Symfony and PHP API architecture
+                confirmations or the verified database and release evidence were withdrawn,
+                the opening would need narrowing and a fresh review.
+              proposed_action: Keep the exact revision 2 text for the council packet;
+                no further rewrite is requested.
+          - reviewer: /root/risk_and_review
+            document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+            verdict: approve
+            unresolved_objections: []
+            naturalness:
+              rubric: naturalness-v1
+              reviewer: /root/risk_and_review
+              document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+              score: 91
+              dimensions:
+                voice:
+                  score: 22
+                  reason: Calm first-person professional English that sounds directed
+                    to the team. The opening remains somewhat application-formal,
+                    which suits the field without becoming stiff.
+                specificity:
+                  score: 23
+                  reason: Names PHP/Symfony internal APIs, end-to-end responsibility
+                    and a concrete verified event-schema result; the company motivation
+                    is tied to shared services.
+                flow:
+                  score: 23
+                  reason: Moves from the work the candidate could do, through one
+                    supporting example, to a specific reason to discuss this role.
+                    No redundant transfer sentence remains.
+                restraint:
+                  score: 23
+                  reason: Keeps one short example, avoids employer chronology and
+                    does not turn Symfony exposure into an invented hosting or framework-specialist
+                    achievement.
+            rule_checks:
+              contribution_first:
+                pass: true
+                quote: I can help your Platforms team develop PHP/Symfony backend
+                  features and internal APIs
+                reason: The candidate’s proposed contribution to advertised work is
+                  immediate and concrete.
+              necessary_evidence:
+                pass: true
+                quote: I owned production publication of parallel event versions and
+                  defined a versioned event schema.
+                reason: A short supported example demonstrates responsibility for
+                  interfaces that other teams rely on; the operational capability
+                  sentence has separate source support.
+              no_cv_replay:
+                pass: true
+                quote: In a recent PHP consulting project, I owned production publication
+                  of parallel event versions and defined a versioned event schema.
+                reason: The letter uses one project result without listing employers,
+                  titles or career dates.
+              natural_voice:
+                pass: true
+                quote: I'd be glad to discuss your first priorities and how the team
+                  shares responsibility for those interfaces.
+                reason: The close addresses a real question about ownership in this
+                  team and reads like a person inviting a useful conversation.
+            paragraph_reviews:
+            - quote: Dear Hiring Team,
+              purpose: Address the hiring team
+              decision: keep
+              reason: Appropriate, simple salutation.
+            - quote: I can help your Platforms team develop PHP/Symfony backend features
+                and internal APIs, taking work from technical analysis through implementation
+                and production release. I also bring experience improving database
+                reliability and release processes, so I can work on the operational
+                side of a feature as well as its application code.
+              purpose: Offer backend/API contribution and supporting operating capability
+              decision: keep
+              reason: The contribution comes first; technical-analysis-to-release
+                scope and database/release capabilities are source-backed and proportionate.
+                Slightly dense but still readable.
+            - quote: In a recent PHP consulting project, I owned production publication
+                of parallel event versions and defined a versioned event schema. This
+                kept data consistent across teams and made new event types easier
+                to integrate.
+              purpose: Ground the contribution in one production PHP design result
+              decision: keep
+              reason: The example is short, distinguishes ownership from company-wide
+                outcome, and explains why versioned event design mattered.
+            - quote: I'd like to work on the services connecting your platform as
+                it rolls out across team.blue's European group. The opportunity to
+                help shape interfaces used by other teams, while continuing to build
+                and maintain them, is what draws me to this role. I'd be glad to discuss
+                your first priorities and how the team shares responsibility for those
+                interfaces.
+              purpose: Connect the company rollout to the candidate’s interest and
+                invite dialogue
+              decision: keep
+              reason: The European rollout fact is current primary-source evidence;
+                the interest is in cross-team interfaces and the closing asks about
+                actual team priorities, not generic fit.
+            - quote: Kind regards,
+              purpose: Sign off
+              decision: keep
+              reason: Plain professional closing.
+            - quote: Valentin Nikolaev
+              purpose: Identify the candidate
+              decision: keep
+              reason: Correct name and no added claim.
+            council_analysis:
+              central_assessment: 'This version is ready as an English form-field
+                cover letter: it leads with relevant work, offers one defensible example
+                and gives a specific reason for interest.'
+              strongest_reason: The event-version example proves technical responsibility
+                and cross-team consequence without turning the letter into CV chronology.
+              weakest_point: The second sentence of the opening is a compact capability
+                list and sounds slightly formal, but each item has a useful role connection
+                and it does not dominate.
+              risk: The letter does not prove extensive Symfony depth on its own;
+                the application’s separate Symfony experience questions should use
+                the user’s confirmed facts and source-backed scope.
+              evidence_changing_verdict: A factual conflict in the employer posting
+                or candidate’s newly confirmed framework experience would require
+                another review; none is present in this packet.
+              proposed_action: Keep the exact wording. If downstream deterministic
+                checks identify a separate issue, preserve this contribution-led structure
+                when correcting it.
+          peer_review:
+            reviewer: /root/risk_and_review
+            document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+            reviews_sha256: ef8b28b10772b512ffb2c607a0f33d65e1e43736a4db7f19025c31aee56f4792
+            verdict: approve
+            notes: All three current anonymized assessments independently approve
+              the exact unchanged letter and give concrete paragraph-level reasons.
+              The best-supported reasoning is the link between the advertised PHP/Symfony
+              internal API work, a single verified production event-schema example,
+              and the stated European platform rollout. The author’s claim mapping
+              keeps the Symfony contribution forward-looking and does not misattribute
+              the PHP event project to Symfony. The source-backed database and release
+              capability is distinct from the example. All reviewers notice some density
+              in the opening, but no source or voice blocker remains. The observed
+              optional form field is recorded separately from the user’s explicit
+              letter request, so the receipt should not describe an employer-mandatory
+              letter. The anonymized packet carries the reviews digest; its source-review
+              set must be checked by the root’s deterministic gate because anonymization
+              omits reviewer identities and changes serialization.
+            weakest_point: The second sentence of the opening is a compact list of
+              database and release abilities; it is accurate but less vivid than the
+              following event-system example. This is a minor copy weakness, not a
+              reason for another revision.
+            unresolved_objections: []
+            snapshot:
+              path: parts/council-anonymized.json
+              sha256: 0693b45fbebbc3fbbaace2793f2befd228c8cee35a08789645c0154aff3190f7
+            council_analysis:
+              best_supported_reasoning: Response A most clearly ties the verified
+                event-version consequence to the proposed internal API contribution
+                while testing the dense opening against separate evidence. Responses
+                B and C agree that the letter avoids CV chronology and the close asks
+                about actual team responsibility.
+              largest_unsupported_leap_or_blind_spot: No assessor fully distinguishes
+                the user-requested optional letter from an employer-required field
+                in its verdict; the peer-context route receipt does. Any claim that
+                the employer requires the letter would be unsupported. The other possible
+                leap is reading the PHP consulting event project as Symfony; the text
+                avoids that attribution.
+              weakest_remaining_point: The opening compresses several abilities before
+                its one concrete example, and “operational side of a feature” remains
+                general. Its source support and clear role connection keep it acceptable.
+              anything_all_missed: No shared letter blocker remains. The user has
+                separately confirmed an EU residence permit with no sponsorship or
+                work restrictions, a November 11 start, professional Symfony experience
+                of 3–5 years with architecture/API scope, and delegated selection
+                of a €55,000 annual salary answer. Those form facts are outside this
+                cover letter and should retain their own exact-answer checks.
+              evidence_changing_verdict: Withdrawn candidate confirmation of Symfony
+                or PHP API experience, an inaccurate official rollout fact, a changed
+                final text, or a mismatch in the named review-set hash would require
+                rejection or a fresh review. The updated contextual form note introduces
+                no such conflict.
+              proposed_action: Approve this exact version for the scoped cover-letter
+                artifact; let the deterministic gate bind the named review set, source
+                snapshot and final document hash before publication.
         company_source:
           path: parts/company-source.txt
           url: https://careers.team.blue/jobs/8585325-php-symfony-software-engineer
@@ -1091,33 +1507,34 @@ quality:
           source_url: https://careers.team.blue/jobs/8585325-php-symfony-software-engineer
           checked_on: '2026-10-28'
           letter_required: true
-          requirement_basis: explicit candidate request overriding the optional-field
-            default
+          requirement_basis: explicit user request to regenerate team.blue cover letter
+            overriding the optional-field default
           observed_form_letter_required: false
-          evidence: 'Candidate reply to package-scope clarification: "team.blue only
-            requried cover letter". This pass is required by the candidate. Earlier
-            live-form inspection marked the letter optional; this receipt does not
-            claim independent confirmation of an employer-mandatory field.'
+          evidence: 'Candidate explicitly requested team.blue cover-letter regeneration
+            after reviewing the previous text. Live form inspected 2026-10-28: letter
+            field is optional. User request, not an employer-mandatory field, authorizes
+            this selected document.'
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
-    reviewer: /root (letter self-review against primary evidence and final CV)
+    reviewer: /root (grounding and cross-file check; independent letter council owns
+      editorial approval)
     document_sha256:
       cv: sha256:0120d4d5e2bef7b8ae23be547239935ca4d568d3e5ac959e3933ce978334fd48
       analysis: sha256:ca0b183e1fbe1a5296f3d92be36322aa53f0e56e55dd0ed6e008df5d96cff936
       interview-preparation: sha256:a9ddf867713b1d7f0b14fec20273fe50c4c0332b4d9a926a4d418a78779ec27e
-      cover-letter: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+      cover-letter: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
     requirements:
     - requirement: PHP backend development and production ownership
       importance: critical
       basis: stated
       jd_quote: PHP (Symfony) Software Engineer
       match: strong
-      candidate_quote: 'CRURATED DataLake and event analytics: full technical ownership,
-        production use.'
+      candidate_quote: 'CRURATED parallel event-version publication: full technical
+        ownership, production use.'
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
-      - crurated-confirmed-datalake-production
+      - crurated-confirmed-event-version-production
       - clarification-crurated
     - requirement: Symfony development
       importance: high
@@ -1858,36 +2275,32 @@ quality:
       - crurated-confirmed-datalake-production
       - crurated-analytics
     - document: cover-letter
-      text: I bring PHP development, production integration work and technical ownership
-        of event systems.
+      text: I can help your Platforms team develop PHP/Symfony backend features and
+        internal APIs, taking work from technical analysis through implementation
+        and production release.
       evidence_ids:
       - candidate-supported-backend-skills
-      - crurated-confirmed-datalake-production
-    - document: cover-letter
-      text: In a part-time PHP consulting engagement at CRURATED, I took technical
-        ownership of production DataLake and event analytics work.
-      evidence_ids:
-      - clarification-crurated
-      - crurated-confirmed-datalake-production
-    - document: cover-letter
-      text: I also owned parallel event-version publication and defined a versioned
-        schema that kept events consistent across teams and made new types easier
-        to integrate.
-      evidence_ids:
-      - crurated-confirmed-event-version-production
-      - crurated-event-design
-    - document: cover-letter
-      text: My Symfony experience includes developing a Laravel/Symfony logger package
-        at airSlate.
-      evidence_ids:
       - airslate-logger-general
+      - crurated-confirmed-crutrade-production
     - document: cover-letter
-      text: My work there also covered database reliability and release delivery,
-        including reducing peak database load and making releases more consistent
-        through CI/CD.
+      text: I also bring experience improving database reliability and release processes,
+        so I can work on the operational side of a feature as well as its application
+        code.
       evidence_ids:
       - database-reliability
       - airslate-cicd-delivery
+    - document: cover-letter
+      text: In a recent PHP consulting project, I owned production publication of
+        parallel event versions and defined a versioned event schema.
+      evidence_ids:
+      - clarification-crurated
+      - crurated-confirmed-event-version-production
+      - crurated-event-design
+    - document: cover-letter
+      text: This kept data consistent across teams and made new event types easier
+        to integrate.
+      evidence_ids:
+      - crurated-event-design
     document_receipts:
       cv:
         document_sha256: sha256:0120d4d5e2bef7b8ae23be547239935ca4d568d3e5ac959e3933ce978334fd48
@@ -1911,15 +2324,16 @@ quality:
         reviewer: /root (final cross-document self-review)
         declaration_sha256: sha256:97446704f2283ad8b62c1116acb5e74e44660f414907a347448c6b5e1bda8c01
       cover-letter:
-        document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+        document_sha256: sha256:e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
         preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
-        claims_ledger_sha256: 58a812063b136e5520234e36f8908f5b7091077a8c24198793ef9641c6d08cc9
+        claims_ledger_sha256: 483568e940c3e53b894d72aa0415d216cf8f09f5aa7191e83c6bb1c1298e68b4
         claims_ledger_path: claims.yaml
-        reviewer: /root (letter self-review against primary evidence and final CV)
-        declaration_sha256: sha256:468fe3c501f8ceeb66c3d08e5c32a6dd6cbf60e2f5a0dbd9ce748ee849629dbe
+        reviewer: /root (grounding and cross-file check; independent letter council
+          owns editorial approval)
+        declaration_sha256: sha256:b56a53a28588e3b66fd6cd898bfebc143b8a96a6cb9be3d88f8325f616a0634b
         application_review:
           letter_review: *id006
-  declaration_sha256: sha256:468fe3c501f8ceeb66c3d08e5c32a6dd6cbf60e2f5a0dbd9ce748ee849629dbe
+  declaration_sha256: sha256:b56a53a28588e3b66fd6cd898bfebc143b8a96a6cb9be3d88f8325f616a0634b
   method:
     workflow: two-wave
     final_review:
@@ -1928,7 +2342,7 @@ quality:
     cover_letter:
       channel: attachment
       skill: write-cover-letter
-      version: 22.1.0+codex.20261027190753
+      version: 22.2.0+codex.20261028145822
       workbench_complete: true
       evidence_story_count: 2
       company_source_url: https://careers.team.blue/jobs/8585325-php-symfony-software-engineer
@@ -1983,11 +2397,11 @@ quality:
       schema_version: 1
       source_file: cover-letter.md
       artifact_file: cover-letter.docx
-      source_sha256: a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
-      artifact_sha256: dd425a2579065f0326834098c6c63e94f66f5e3ba796b8bc03ed2afc7975e6e9
-      extracted_text_sha256: 45839a2856164509e1a8e0d0a91d86652c65f4ac176df8d7aa9699beea2a32c3
-      canonical_tokens: 183
-      extracted_tokens: 183
+      source_sha256: e86f5ec88dc17706b089f17d293c82fafe0e2fd6fb5e358137773e6613aaee46
+      artifact_sha256: 551ab38fd7861c43f704f14fdca52d6600ec342a68260c4a3ea33d74d70a77d1
+      extracted_text_sha256: 51a3ae7eae9104e40279e31ef9a12ad6e81d0bb098cf1353f5239ef6eba38d19
+      canonical_tokens: 155
+      extracted_tokens: 155
       checks:
         readable_text: true
         canonical_text_preserved_in_order: true
@@ -1995,14 +2409,14 @@ quality:
         cv_experience_list_formatting: not_checked
         hyperlink_targets: verified
       structure:
-        readable_paragraphs: 7
+        readable_paragraphs: 6
         minimum_declared_font_pt: 12.0
         font_scope: body runs, document defaults, directly applied styles
       page_count: null
       max_pages: null
       visual_review:
         status: not_reviewed
-        artifact_sha256: dd425a2579065f0326834098c6c63e94f66f5e3ba796b8bc03ed2afc7975e6e9
+        artifact_sha256: 551ab38fd7861c43f704f14fdca52d6600ec342a68260c4a3ea33d74d70a77d1
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
 files:

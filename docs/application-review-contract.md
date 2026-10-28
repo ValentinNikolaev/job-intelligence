@@ -4,8 +4,9 @@ New publication requires quality schema 3 and claims-ledger schema 2. Versions 1
 2 remain readable and explicitly legacy; do not upgrade their labels or regenerate
 existing applications. A new single-document publication preserves all other files
 and their original review records. New preparation still needs explicit named-vacancy
-approval and its normal preflight. These controls run inside the existing evidence,
-independent CV edit and final letter passes, without another compulsory agent wave.
+approval and its normal preflight. Evidence and CV controls run inside the existing
+passes. A new or regenerated letter also needs the three independent reviewers below;
+reuse available agents rather than starting another delegation wave.
 
 Resolve preparation settings from `config/application-profile.yaml` and voice sources
 from `config/application-review.yaml`. New schema-3 `quality.yaml` drafts must copy
@@ -112,7 +113,7 @@ source records; the independent editor reviews wording, attribution and relevanc
 ## Two evidence strands and the final letter
 
 Keep the existing `cover_letter.evidence_stories` key with exactly two internal
-complementary evidence strands. Its name does not set the number of visible stories.
+complementary supported abilities. Its name does not set the number of visible stories.
 Normally use one brief narrated example; an email allows zero or one, an attachment
 zero, one or two. A second must add a distinct substantive point. Each ability still
 needs an anchored candidate claim in the final letter. All channel word/paragraph
@@ -202,8 +203,10 @@ application package ready. Preserve previously published unselected artifacts an
 their provenance; do not delete old letters or relabel their reviews.
 
 For both letter channels, the mandatory order is: current configured voice sources,
-`write-cover-letter`, local `humanizer`, then `ai-detector` and final naturalness
-rating. Read the installed skills and follow their actual invocation modes. A direct
+`write-cover-letter`, local `humanizer`, then `ai-detector` and the independent
+three-reviewer council on the exact final text. The author must complete the local
+edit before asking reviewers to score or approve it. Read the installed skills and
+follow their actual invocation modes. A direct
 human detector request includes its external check; ordinary workflow calls stay
 local. A blocked required external check remains incomplete, never a local substitute.
 Review the exact final text after any edit; do not reroll an unchanged version.
@@ -220,13 +223,51 @@ substantive `notes` about changes, findings and wording kept. Detector `mode` is
 `literal_feedback`. Keep the service's literal verdict separate from the editorial
 rating. Never invent an AI probability, service score or authorship conclusion.
 
-The separate `naturalness` receipt uses `rubric: naturalness-v1`, `reviewer`, final
+Each independent `naturalness` receipt uses `rubric: naturalness-v1`, `reviewer`, final
 `document_sha256`, `score` and four `dimensions`, each with an integer `score` from
 0 to 25 and a concrete `reason`: `voice` (the user's voice and natural language),
 `specificity` (useful, grounded contribution), `flow` (readable progression and rhythm),
 and `restraint` (no stock praise, vacancy recap, CV replay or manufactured enthusiasm).
-The total must be at least 90/100. This is a transparent editorial judgement, not an
-AI-detector probability. Below 90, revise the identified defects and check that new
-version. Missing or stale receipts, optional form letters and lower scores fail
-publication. A numerical pass never overrides evidence or required skill checks.
+The total must be at least 90/100 for *every* reviewer. The top-level naturalness
+receipt copies the lowest independent score and its review details; it cannot use
+an author self-rating. This is a transparent editorial judgement, not an AI-detector
+probability. Below 90, revise the identified defects and have the same reviewers
+assess the new exact text. Missing or stale receipts, optional form letters and lower
+scores fail publication. A numerical pass never overrides evidence or required skills.
+
+`cover_letter.editorial_review.author` identifies the writer. Its existing top-level
+`reviewer` must be one of the council reviewers. Add `council` with
+`schema_version: 1`, `mode: quick`, exactly three `reviews`, and `peer_review`.
+The three actual reviewer identities must be distinct from one another and from the
+author. No reviewer may claim independence after drafting the final letter.
+
+Each review records the final normalized `document_sha256`, `verdict: approve`,
+`unresolved_objections: []`, and that reviewer's own `naturalness` receipt with the
+same reviewer and document hash. Its four `rule_checks` are `contribution_first`,
+`necessary_evidence`, `no_cv_replay`, and `natural_voice`. Each check records
+`pass: true`, an exact `quote` from the final letter, and a concrete `reason`.
+Each `paragraph_reviews` list covers every blank-line-separated paragraph of the
+finished Markdown, including salutation and signature, in order. Every row records
+the exact paragraph `quote`, its `purpose`, `decision: keep`, and a reason. This
+paragraph check asks whether the text earns its place with this employer; it does
+not impose a rule against naming employers or giving a useful example. The shared
+employer-letter flow decides how much evidence the reader needs. Two internal
+abilities never force two visible case studies.
+
+After all three independent reviews, the author anonymizes all three responses.
+One original reviewer, having already completed their own independent review,
+receives that anonymized packet and peer-reviews all three assessments. The peer
+reviewer does not anonymize the packet. Record that reviewer's identity, the same
+final document hash, `verdict: approve`, `unresolved_objections: []`, `notes`, and
+`weakest_point`. Record `reviews_sha256` as `review_digest(council.reviews)` so the
+peer assessment is bound to the exact current set of independent reviews.
+The `snapshot` contains a draft-local `path` under `parts/` and its raw-byte
+`sha256`. It preserves the reviewed packet for later inspection without exposing
+reviewer identities to peers during their independent assessment. The peer reviewer
+must identify the weakest supported point and explain why it still passes, or return
+an objection for repair. All three original reviewers must approve the *same* final
+text with no unresolved objections; substantive edits invalidate their old reviews,
+the peer review, and the snapshot. Reuse those same reviewers for reassessment.
+The manifest retains these receipts for newly prepared letters. Existing legacy
+letters keep their recorded provenance and are not upgraded by relabeling.
 
