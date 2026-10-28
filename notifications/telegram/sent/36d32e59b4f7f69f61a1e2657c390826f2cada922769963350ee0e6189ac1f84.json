@@ -1,6 +1,12 @@
 {
   "channel": "telegram",
   "created_at": "2026-10-28T18:30:24Z",
+  "delivered_at": "2026-10-28T18:34:36Z",
+  "delivered_vacancy_ids": [
+    "9078a561-63c2-4170-bb43-6a9e0885eb7a",
+    "5aaecfcb-cceb-4997-b52c-14f908f6ac21"
+  ],
+  "delivery_status": "sent",
   "initiator": "job-intelligence-batch-vacancy-analysis",
   "items": [
     {
@@ -28,5 +34,6 @@
   ],
   "minimum_score": 65,
   "notification_id": "36d32e59b4f7f69f61a1e2657c390826f2cada922769963350ee0e6189ac1f84",
-  "schema_version": 2
+  "schema_version": 2,
+  "telegram_message_id": 320
 }
