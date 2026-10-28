@@ -1,0 +1,120 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-28T12:20:40Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Voodoo",
+      "country_codes": [],
+      "directory": "20261028_voodoo_87a5ed7830fe423994afad31ede01fb8",
+      "score": 77,
+      "title": "Senior Backend Engineer (Golang) - Castle Busters",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pfe08t4eqz",
+      "vacancy_id": "87a5ed78-30fe-4239-94af-ad31ede01fb8"
+    },
+    {
+      "company": "XM",
+      "country_codes": [],
+      "directory": "20261028_xm_fa99435e581d40b996498ceb78a276d2",
+      "score": 75,
+      "title": "Senior PHP Developer",
+      "url": "https://www.linkedin.com/jobs/view/4480042194/",
+      "vacancy_id": "fa99435e-581d-40b9-9649-8ceb78a276d2"
+    },
+    {
+      "company": "XM",
+      "country_codes": [
+        "CY"
+      ],
+      "directory": "20261028_xm_381c9e587ae34225a852cfa6161dda52",
+      "score": 74,
+      "title": "Senior PHP Developer",
+      "url": "https://www.linkedin.com/jobs/view/4480040265/",
+      "vacancy_id": "381c9e58-7ae3-4225-a852-cfa6161dda52"
+    },
+    {
+      "company": "Vesterling AG",
+      "country_codes": [],
+      "directory": "20261028_vesterling-ag_234003252810403db357dc03ce9e790e",
+      "score": 72,
+      "title": "Softwareentwickler Laravel / Backend | PHP, REST, PostgreSQL | Inhouse (mwd)",
+      "url": "https://www.linkedin.com/jobs/view/4447015522/",
+      "vacancy_id": "23400325-2810-403d-b357-dc03ce9e790e"
+    },
+    {
+      "company": "TwenTIC",
+      "country_codes": [],
+      "directory": "20261028_twentic_f4235b1898554fda89742f09764739fb",
+      "score": 70,
+      "title": "Desarrollador de PHP",
+      "url": "https://www.linkedin.com/jobs/view/4483302658/",
+      "vacancy_id": "f4235b18-9855-4fda-8974-2f09764739fb"
+    },
+    {
+      "company": "Techsoulogy",
+      "country_codes": [],
+      "directory": "20261028_techsoulogy_3de03afd948c4b3fa0df808f44c97bb1",
+      "score": 72,
+      "title": "PHP Backend Developer",
+      "url": "https://www.linkedin.com/jobs/view/4480798981/",
+      "vacancy_id": "3de03afd-948c-4b3f-a0df-808f44c97bb1"
+    },
+    {
+      "company": "team.blue",
+      "country_codes": [],
+      "directory": "20261028_team-blue_eaeac27498c247bfbfbe9ed814dba106",
+      "score": 73,
+      "title": "PHP (Symfony) Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4482124370/",
+      "vacancy_id": "eaeac274-98c2-47bf-bfbe-9ed814dba106"
+    },
+    {
+      "company": "team.blue",
+      "country_codes": [],
+      "directory": "20261028_team-blue_4a634d3bb8424822997424c6f4f94930",
+      "score": 79,
+      "title": "PHP (Symfony) Software Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4482113948/",
+      "vacancy_id": "4a634d3b-b842-4822-9974-24c6f4f94930"
+    },
+    {
+      "company": "Surfshark",
+      "country_codes": [],
+      "directory": "20261028_surfshark_b877a64a7f744e73914c5f362a5aea9f",
+      "score": 71,
+      "title": "Senior PHP Developer (Ironwall)",
+      "url": "https://www.linkedin.com/jobs/view/4482447590/",
+      "vacancy_id": "b877a64a-7f74-4e73-914c-5f362a5aea9f"
+    },
+    {
+      "company": "Surfshark",
+      "country_codes": [],
+      "directory": "20261028_surfshark_a9d4e6b3d47c421c8bd0486bdb3930fe",
+      "score": 71,
+      "title": "Senior PHP Developer (Ironwall)",
+      "url": "https://www.linkedin.com/jobs/view/4482454429/",
+      "vacancy_id": "a9d4e6b3-d47c-421c-8bd0-486bdb3930fe"
+    },
+    {
+      "company": "Surfshark",
+      "country_codes": [],
+      "directory": "20261028_surfshark_82d44840798a4b629932e7e51d3abe62",
+      "score": 71,
+      "title": "Senior PHP Developer (Ironwall)",
+      "url": "https://www.linkedin.com/jobs/view/4482448597/",
+      "vacancy_id": "82d44840-798a-4b62-9932-e7e51d3abe62"
+    },
+    {
+      "company": "Qualco Group",
+      "country_codes": [],
+      "directory": "20261028_qualco-group_e9f6aadc8b5e46c3857afc7019dfa905",
+      "score": 76,
+      "title": "Senior Software Engineer (Backend, PHP)",
+      "url": "https://www.linkedin.com/jobs/view/4482048650/",
+      "vacancy_id": "e9f6aadc-8b5e-46c3-857a-fc7019dfa905"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "71a9940018a4661ce5cc1c699ef5e49b60df24549c76640b4c42da02b8d37915",
+  "schema_version": 2
+}
