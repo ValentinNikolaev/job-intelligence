@@ -1,0 +1,2156 @@
+profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+vacancy_version: sha256:d28e82300b2c3dfa9f27d13850a9021261201d8a4a1ece844f23f7d01f68c365
+company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+prompt_version: sha256:665e0ffbb17a90973eda7049ee4c2ff027dc54962aadb1e96a232ef004579e15
+model: codex:gpt-6-sol:medium
+analysis: &id001
+  model: codex:gpt-5.6-luna:medium
+  score: 76
+  analyzed_at: '2026-10-28T16:27:34Z'
+  version: sha256:bbde6ee69f4e5f36a6d9bb7ba9af9cd6b98815b78c79f782e53127441984ba11
+quality_contract_version: 3
+preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+cv_export_stem: CV_ValentinNikolaev_ecarstrade_PHPTeamLead
+generated_at: '2026-10-28T19:03:19Z'
+documents:
+  cv:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:d28e82300b2c3dfa9f27d13850a9021261201d8a4a1ece844f23f7d01f68c365
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:665e0ffbb17a90973eda7049ee4c2ff027dc54962aadb1e96a232ef004579e15
+    model: codex:gpt-6-sol:medium
+    analysis: *id001
+    quality_contract_version: 3
+    preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+    cv_export_stem: CV_ValentinNikolaev_ecarstrade_PHPTeamLead
+    generated_at: '2026-10-28T19:03:19Z'
+  analysis:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:d28e82300b2c3dfa9f27d13850a9021261201d8a4a1ece844f23f7d01f68c365
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:665e0ffbb17a90973eda7049ee4c2ff027dc54962aadb1e96a232ef004579e15
+    model: codex:gpt-6-sol:medium
+    analysis: &id002
+      model: codex:gpt-5.6-luna:medium
+      score: 76
+      analyzed_at: '2026-10-28T16:27:34Z'
+      version: sha256:bbde6ee69f4e5f36a6d9bb7ba9af9cd6b98815b78c79f782e53127441984ba11
+    quality_contract_version: 3
+    preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+    cv_export_stem: CV_ValentinNikolaev_ecarstrade_PHPTeamLead
+    generated_at: '2026-10-28T17:43:42Z'
+  interview-preparation:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:d28e82300b2c3dfa9f27d13850a9021261201d8a4a1ece844f23f7d01f68c365
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:665e0ffbb17a90973eda7049ee4c2ff027dc54962aadb1e96a232ef004579e15
+    model: codex:gpt-6-sol:medium
+    analysis: *id002
+    quality_contract_version: 3
+    preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+    cv_export_stem: CV_ValentinNikolaev_ecarstrade_PHPTeamLead
+    generated_at: '2026-10-28T17:43:42Z'
+quality:
+  contract_version: 3
+  documents:
+    cv:
+      word_count: 511
+      sha256: sha256:734c8a3cc1b7e2e2e4fe756fcce71456b61623c8700d079aeb9d4d2ac124c587
+      preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: b89d7d1f5a03bcbdd90459c18c47890f69d4028765b9fd1ccc7cb55eff56ada2
+    analysis:
+      word_count: 923
+      sha256: sha256:bcc3fe86f2e65cd267154246a49f76f86e3b012a96d2baea1f0cf27f705f5e23
+      preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: b89d7d1f5a03bcbdd90459c18c47890f69d4028765b9fd1ccc7cb55eff56ada2
+    interview-preparation:
+      word_count: 1016
+      sha256: sha256:9b9e0b49917896a0c8e8aa567ac49f84027d3d1db033d5888b4d6763d4d78617
+      preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: b89d7d1f5a03bcbdd90459c18c47890f69d4028765b9fd1ccc7cb55eff56ada2
+  document_format: standard
+  grounding:
+    schema_version: 2
+    sha256: bd406f2a9c323102b7f3d56d749cf1a8fd59c19d01cb62b7241336ee212d19d9
+    evidence_bank:
+      schema_version: 1
+      sha256: b89d7d1f5a03bcbdd90459c18c47890f69d4028765b9fd1ccc7cb55eff56ada2
+      entry_count: 86
+      statuses:
+        cannot-confirm: 3
+        retracted: 5
+        unverified: 9
+        verified: 69
+    claim_count: 33
+    evidence_ids:
+    - airslate-cicd-delivery
+    - airslate-letter-operations-people
+    - airslate-team-lead
+    - airslate-user-confirmed-impact
+    - candidate-education-languages
+    - candidate-public-contact-links
+    - clarification-crurated
+    - crurated-analytics
+    - crurated-confirmed-crutrade-production
+    - crurated-confirmed-datalake-production
+    - crurated-confirmed-event-version-production
+    - crurated-event-design
+    - crurated-reviewed-stream-onboarding
+    - crurated-stream-design
+    - cv-hyprr
+    - database-reliability
+    - hyprr-user-confirmed
+    - linkedin-russian-language
+    - simple-2025-fin-categorization
+    - simple-2025-review-automation
+    - simple-2026-gdpr
+    - simple-2026-helpdesk-gateway
+    - simple-2026-llm-agent
+    - simple-2026-telephony
+    - simple-2026-telephony-privacy
+    evidence_entries:
+    - id: airslate-cicd-delivery
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- Implemented **CI/CD pipelines** that shortened release cycles and\
+          \ improved delivery\n  consistency across services."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source review
+        reviewed_at: '2026-10-04'
+        method: Compared exact candidate-authored CV excerpt and airSlate Software
+          Developer attribution; qualitative release-cycle outcome only.
+    - id: airslate-letter-operations-people
+      employer: airSlate
+      role: Programming Team Lead
+      source:
+        path: registry/candidate/employment-letter-extract-2026-09-25.md
+        quote: 'On-call (health check, duty development, sos-cases investigation)
+
+          > Knowledge sharing in the technical and domain area
+
+          > Technical on-boarding new members
+
+          > Participation in Personal Development Plans
+
+          > Conducting technical interview for new team members.'
+        context_quote: 'A Position: Programming Team Lead Period: from Feb 08, 2021,
+          to Aug 22, 2023 Duties and Responsibilities: Lead epic decomposition (delegation,
+          ownership and participation) Implementation of tasks (direct developing/testing)
+          Tasks delegation alongside with the team Technical monitoring (health check)
+          of the developed system or its separate section Brainstorm potential solutions
+          with the team Active participation in product backlog planning
+
+          > © airSlate, Inc.'
+        sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared candidate-supplied employee-letter transcript; confirms stated
+          duties and role scope, not outcomes.
+    - id: airslate-team-lead
+      employer: airSlate
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Played a key role in Agile planning with Product Management and\
+          \ Development,\n  building feature road maps and supporting release plans.\n\
+          - Was responsible for delivering team assignments on all stages of the project\
+          \ from\n  draft to production release.\n- Performed task evaluation, planning\
+          \ and distribution between team members in\n  accordance with Planning Intervals\
+          \ (PI)."
+        context_quote: '### airSlate
+
+
+          #### Technical Lead'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Technical Lead
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: airslate-user-confirmed-impact
+      employer: airSlate
+      source:
+        path: registry/candidate/user-confirmed-airslate-impact-2026-10-04.md
+        quote: '## Question
+
+
+          > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+          на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+          БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы подтверждаете,
+          как измерялись и каков был ваш личный вклад? Пока использую только подтверждённые
+          качественные формулировки без этих цифр.
+
+
+          ## Candidate reply
+
+
+          > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно рулили
+          всем'
+        sha256: 1a4a1df52116752cb580d12ba494e4b25924ee88c19a947eede2d1d00eac7b12
+      status: verified
+      verification:
+        reviewer: Codex root direct candidate confirmation review
+        reviewed_at: '2026-10-04'
+        method: Compared original LinkedIn airSlate figures with the candidate reply
+          confirming Prometheus measurement and backend-lead contribution.
+      review_notes: API average response time ~30% lower; CI/CD delivery time 11 minutes
+        shorter (~70%); main database maximum workload level 65%, not a reduction
+        of 65%; team feature delivery rate ~20% higher. Leadership contribution, not
+        sole implementation. Keep expense figure out of these CVs.
+      role: Software Developer
+      attribution_source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+    - id: candidate-education-languages
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "## Education\n\n- **MSc in Computer Science**, National Technical\
+          \ University, Kharkiv, Ukraine,\n  **2003 - 2008**\n\n## Languages\n\n-\
+          \ **Ukrainian - native**\n- **English - Upper-intermediate**\n"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source-excerpt review for NordPass package
+        reviewed_at: '2026-10-14'
+        method: source-quote-and-attribution-review
+      review_notes: Transcribed source degree and languages. No new proficiency assessment
+        or credential attestation.
+    - id: candidate-public-contact-links
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "Rome, Italy  \nvaleinikolaev@gmail.com | +39 351 370 1194  \n[LinkedIn](https://linkedin.com/in/valentinnikolaev)\
+          \ |\n[GitHub](https://github.com/ValentinNikolaev)"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      status: verified
+      verification:
+        reviewer: Codex root source-excerpt review for NordPass package
+        reviewed_at: '2026-10-14'
+        method: source-quote-and-attribution-review
+      review_notes: Public application contact links transcribed from immutable candidate
+        CV.
+    - id: clarification-crurated
+      employer: CRURATED
+      source:
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: "## CRURATED\n\n- **Role:** PHP Software Developer — Part-time Subcontract\
+          \ / Consulting Engagement\n- **Dates:** August 2024 - January 2026\n- This\
+          \ engagement ran concurrently with Simple.life. It was a parallel,\n  PHP-oriented\
+          \ subcontract/consulting assignment, not a second standard full-time\n \
+          \ employment position.\n- When both roles appear in an application, label\
+          \ CRURATED explicitly as a\n  concurrent part-time subcontract or consulting\
+          \ engagement so the overlap is not\n  misleading."
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification: &id003
+        reviewer: Codex evidence-quality implementation review
+        reviewed_at: '2026-09-22T22:01:45.004885+00:00'
+        method: Compared verbatim extract and attribution to immutable candidate source;
+          source-grounding verification, not new candidate attestation.
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+    - id: crurated-analytics
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: 'I architect and lead the development of the platform''s internal event
+          analytics
+
+          infrastructure - a mission-critical system that powers product metrics,
+          reporting, and
+
+          business insights.'
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-confirmed-crutrade-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED Crutrade integration: full technical ownership of production
+          authentication/OTP, account linking, collection import/export, purchase-ownership
+          verification, and request/response logging.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-confirmed-datalake-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED DataLake and event analytics: full technical ownership, production
+          use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-confirmed-event-version-production
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/user-confirmed-crurated-2026-09-25.md
+        quote: 'CRURATED parallel event-version publication: full technical ownership,
+          production use.'
+        context_quote: 'Role: PHP Software Developer, concurrent part-time subcontract
+          / consulting engagement'
+        sha256: 85bf41e6bc45179586f2bce4bf30f60fc1d4b05affd9d4dfd5783dbb0ba6a9d0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate confirmation and scoped interpretation; production
+          use and technical ownership only.
+    - id: crurated-event-design
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Define a robust, versioned event schema to enforce consistency across\
+          \ teams and\n  accelerate integration of new event types."
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: crurated-reviewed-stream-onboarding
+      employer: CRURATED
+      role: PHP Software Developer
+      source:
+        path: registry/candidate/crurated-metric-review-2026-09-25.md
+        quote: CRURATED new analytics stream setup dropped from several days to under
+          4 hours through modular design under the candidate's technical ownership;
+          operational observation was identified as the basis.
+        context_quote: 'Role: CRURATED PHP Software Developer, concurrent part-time
+          subcontract / consulting engagement.'
+        sha256: 6a09a8c05240811bad95c16429fd6ba686b161c1cd83fd590a33c76801df8dcf
+      status: verified
+      verification:
+        reviewer: Codex contextual candidate-reply review
+        reviewed_at: '2026-09-25'
+        method: Candidate supplied verification bases for offered LinkedIn metrics
+          without excluding any; not independently audited.
+      review_notes: Use only within stated DataLake/event-system scope and preserve
+        original units. The direct candidate metric review contextually confirms these
+        figures with Grafana, operational observation, or code/data as the stated
+        basis; no independent company-system audit. Any later candidate correction,
+        if supplied, takes precedence; no such correction identified in candidate
+        sources reviewed on 2026-10-14.
+    - id: crurated-stream-design
+      employer: CRURATED
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: "- Build routing logic supporting multiple downstreams (e.g., Webhook,\
+          \ S3) with strong\n  delivery guarantees and backpressure handling."
+        context_quote: '### CRURATED
+
+
+          **Software Developer**'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      role: Software Developer
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Compared exact candidate-source excerpt, employer and role; no new
+          candidate attestation.
+      review_notes: Use only the quoted scope; imported LinkedIn metrics need candidate
+        confirmation before reuse.
+    - id: cv-hyprr
+      employer: Hyprr
+      role: Technical Lead
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\n\
+          Hyprr was a creator-focused digital platform with blockchain/NFT components\
+          \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+          \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+          \ development across project planning, microservice and serverless\n  architecture,\
+          \ CI/CD, and reliability/serviceability concerns.\n- Defined the technology\
+          \ roadmap with the CTO and helped establish the core stack for\n  product\
+          \ delivery.\n- Led backend development and worked on the platform's Ethereum-based\
+          \ digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel | MySQL\
+          \ | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Source-exact record reviewed; use only the recorded facts. Employment
+        sections still obey the ten-year cutoff.
+      status: verified
+      verification: *id003
+    - id: database-reliability
+      employer: airSlate
+      role: Software Developer
+      source:
+        path: registry/candidate/backend-engineer-cv.md
+        quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+          \ and\n  redistributing workload, improving service stability during high-traffic\
+          \ periods."
+        context_quote: '### airSlate
+
+
+          **Software Developer**'
+        sha256: 9ecd2d343f2504635b9f8faa62a62bf6f96b5afe74b894f4daaaff8deaa95c9a
+      review_notes: Only this achievement and its source role attribution are verified.
+        Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
+        and other source records.
+      status: verified
+      verification: *id003
+    - id: hyprr-user-confirmed
+      employer: Hyprr
+      source:
+        path: registry/candidate/user-confirmed-impact-2026-09-25.md
+        quote: 'At Hyprr, the product progressed from prototype to closed
+
+          beta in less than six months.'
+        context_quote: '**Hyprr role:** Technical Lead'
+        sha256: 96f622f764b8be095d19fd2383b5c36485176bac4dcb4a4855d9ed0fd68651a8
+      status: verified
+      verification:
+        reviewer: Codex transcription review
+        reviewed_at: '2026-09-25'
+        method: Transcribed direct candidate correction in this task; measurement
+          system not supplied.
+      review_notes: Direct candidate confirmation; supersedes conflicting imported
+        volume claims.
+      role: Technical Lead
+    - id: linkedin-russian-language
+      status: verified
+      source:
+        path: registry/candidate/linkedin-profile.md
+        quote: '- Russian - Native or Bilingual'
+        sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+      verification:
+        reviewer: Codex /root source-exact language review
+        reviewed_at: '2026-10-28'
+        method: Compared the two identical Russian language entries in the configured
+          immutable LinkedIn source; source transcription, not a new proficiency examination.
+      review_notes: Both Russian entries state Native or Bilingual. Their duplication
+        does not create a language-level conflict. The separate English entries disagree;
+        keep the candidate CV Upper-intermediate English label.
+    - id: simple-2025-fin-categorization
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+        quote: '**B. Ticket categorization: ML model → Intercom Fin A/B test → migration
+          (Jun–Aug 2025)**
+
+          - Designed and launched an A/B test comparing the in-house ML categorization
+          model with Intercom AI Categorization (Fin) via two Intercom attributes
+          (`fin_automation_category`, `general_email_categorization`), with category
+          mapping into the existing billing automation (cancellation / refund / other
+          / billing_other / account deletion).
+
+          - Migrated ticket categorization to Intercom AI Categorization (Aug 2025),
+          then executed the switch to Fin with ML kept as fallback.
+
+          - Added token input/output telemetry for the general categorization action
+          and OpenAI event logging per generated reply.'
+        sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: &id004
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: '- **Role:** Software Developer'
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2025-review-automation
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+        quote: '**C. Public-review automation on App Store, Google Play and TrustPilot
+          (Jan–Jul 2025, epic DEV-23082)**
+
+          - Built from scratch the automation that replies to public reviews (Jan
+          2025), extended it to 2-3★ reviews (Mar 2025) and to 1-3★ App Store / Google
+          Play reviews and TrustPilot 2-3★ / 4-5★ (May 2025).
+
+          - Keyword guardrails: reviews with sensitive/legal keywords are excluded
+          from auto-reply and routed to a human with the review link in an internal
+          note; internal note with the exact payload sent to OpenAI for auditability.
+
+          - Handled rate limiting (HTTP 429) on the review-reply endpoint and Azure
+          OpenAI call-rate limits.'
+        sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source:
+        path: registry/candidate/user-confirmed-career-clarifications.md
+        quote: '- **Role:** Software Developer'
+        sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-gdpr
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+          2026, ~37 tickets)**
+
+          - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+          Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+          analytics (two products). Self-service admin workflow (create / list / detail
+          / status).
+
+          - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+          + lookup), rollback on Data Platform when a request is cancelled, cascade
+          deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+          - Executed an under-18 compliance program: account deletion, subscription
+          cancellation and refunds after two notification waves.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id004
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-helpdesk-gateway
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug 2026)**
+
+          - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+          a vendor-neutral event model; the only repo holding vendor SDKs.
+
+          - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+          ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+          Zendesk adapter with full outbound (reply, note, tags, status), client +
+          service in the support-agent, dev environment and deploy.
+
+          - Enabled the company''s first B2B demo of the support-AI product (golden
+          cases + admin console).'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id004
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-llm-agent
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+          tickets)**
+
+          - Implemented 10+ agent action tools: subscription cancel, cancellation
+          offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+          vision), attachments extraction, useful-links generation for new billing,
+          review processing for a second product.
+
+          - Built the evaluation pipeline: conversation texts + action events + subscription-state
+          snapshots on ticket open/close → Eval JSON.
+
+          - Built email and product-ticket categorization on prompts; retro-mapped
+          500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+          - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+          responses, nil-error wrapping, malformed session data, content_filter errors,
+          duplicate handling, language misdetection).
+
+          - Migrated 3 services to DeepL without language detection.
+
+          - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id004
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-telephony
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+        quote: '**A. Outbound telephony platform on Amazon Connect (Aug–Sep 2026)**
+
+          - Owned architecture and backend end-to-end; wrote the epic/design doc;
+          passed security sign-off; released to production on 2026-09-25.
+
+          - Agent federation via AssumeRole + GetFederationToken: no per-agent AWS
+          accounts, no SAML app, IT removed from the critical path.
+
+          - Connect users created lazily by the backend (moved out of Terraform);
+          stale users cleaned by cron; admin activate/deactivate.
+
+          - PII controls: customer phone number never rendered or logged (masked only),
+          purged from contact record by TTL, DevTools disabled by policy.
+
+          - Compliance logic: call windows with timezones/Sundays/holidays, do-not-call
+          list, queued-callback withdrawal on opt-out, retry policy owned by backend
+          (Connect retries = 0), outcome written to the existing Intercom ticket (no
+          duplicate tickets).
+
+          - Designed load: 10–20 calls/day per agent, max 50. Cross-functional team:
+          backend (Valentin), frontend, SRE.
+
+          - Authored a 30-scenario telephony QA checklist with run journal; 4 documented
+          runs in 2 days before launch; every finding converted to a ticket.'
+        sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
+          Support & Content Platform'
+      attribution_source: *id004
+      status: verified
+      verification:
+        reviewer: Codex source review
+        reviewed_at: '2026-09-26'
+        method: Compared direct candidate-supplied fact section and earlier direct
+          role clarification; Jira and Slack records were not independently inspected.
+      review_notes: Candidate-reported delivered work only; estimates and example
+        bullets are excluded. August-September work confirmed as past in user follow-up;
+        exact end month remains unconfirmed.
+    - id: simple-2026-telephony-privacy
+      employer: Simple.life
+      role: Software Developer
+      source:
+        path: registry/candidate/user-confirmed-simple-life-telephony-2026-09-27.md
+        quote: "## Context and ownership\n\nSimple operates in the medical and health\
+          \ domain, including clinic callback requests;\nevery call carries PII and\
+          \ potentially PHI. The candidate owned the architecture and\nbackend end\
+          \ to end, authored the epic and design document and made the security\n\
+          decisions. The work passed formal security sign-off (DEV-35381) and a BAA\
+          \ and\ncall-recording compliance review (DEV-35382), then reached production\
+          \ on 2026-09-25\nwith a three-person cross-functional team: backend, frontend\
+          \ and SRE.\n\n## Verified privacy, access and audit design\n\n- The customer\
+          \ phone number was resolved server-side, never returned by the API,\n  rendered\
+          \ in the agent UI or written to logs; only a mask reached the browser. There\n\
+          \  was no number-reveal UI.\n"
+        sha256: 0271f8222f33efe96d36f867c3ac11c111f5238a2bd23e956b616d50318b38a5
+        context_quote: "Employer: Simple.life / Simple App  \nRole: Software Developer\n"
+      status: verified
+      verification:
+        reviewer: Candidate direct confirmation and Codex source review
+        reviewed_at: '2026-09-27'
+        method: Recorded the candidate''s direct clarification verbatim and checked
+          the claim scope against its stated project context.
+      review_notes: Internal ticket identifiers, permission names and detailed consent
+        flow are source context. Render only the employer-relevant privacy, security
+        and lawful calling outcome in a CV.
+    checks:
+    - source_quotes
+    - source_hashes
+    - verified_status
+    - numeric_tokens
+    - declared_attribution
+    - cv_bullet_coverage
+    semantic_review_required: true
+    cv_audit:
+      target_role: PHP Team Lead
+      top_third_evidence_ids:
+      - airslate-user-confirmed-impact
+      - crurated-confirmed-datalake-production
+      editorial_review:
+        knowledge_base_version: 1
+        verdict: approve
+        reviewer: Codex /root/research_letters
+        author: Codex /root final synthesis
+        mode: independent
+      bullet_decisions:
+      - text: Designed and launched an Amazon Connect telephony platform for support
+          teams, owning the backend end to end and taking its customer privacy controls
+          through formal security review.
+        decision: rewrite
+        reason: The user explicitly prioritizes end-to-end telephony architecture,
+          production delivery and formal security review over public-review automation.
+        weight: critical
+        signal_type: architecture
+        ordering_rationale: Lead Simple App with the broadest supported architecture,
+          delivery and customer privacy responsibility; the PHP target remains foregrounded
+          in the headline and other roles.
+        contribution: Owned architecture and backend end to end and made the security
+          decisions.
+        affected_scope: Outbound telephony for support teams handling customer personal
+          data.
+        consequence: Passed formal security review and reached production with privacy
+          controls.
+        verdict: approve
+      - text: Created a Go gateway that separates helpdesk vendors from the support
+          product through a common event model, enabling its first B2B demonstration.
+        decision: keep
+        reason: Direct 2026 source supports common event model, vendor separation,
+          and first B2B demo. Shows recent hands-on architecture but does not masquerade
+          as a PHP result.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Direct 2026 source supports common event model, vendor
+          separation, and first B2B demo. Shows recent hands-on architecture but does
+          not masquerade as a PHP result.
+        contribution: Created a Go gateway that separates helpdesk vendors from the
+          support product through a common event model, enabling its first B2B demonstration.
+        affected_scope: Direct 2026 source supports common event model, vendor separation,
+          and first B2B demo. Shows recent hands-on architecture but does not masquerade
+          as a PHP result.
+        consequence: Created a Go gateway that separates helpdesk vendors from the
+          support product through a common event model, enabling its first B2B demonstration.
+        verdict: approve
+      - text: Delivered backend action tools and evaluation data for a production
+          LLM support agent, connecting conversation history with subscription-state
+          information.
+        decision: keep
+        reason: Candidate source supports action tools, evaluation records, and subscription
+          snapshots. Adds a distinct production integration.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Candidate source supports action tools, evaluation records,
+          and subscription snapshots. Adds a distinct production integration.
+        contribution: Delivered backend action tools and evaluation data for a production
+          LLM support agent, connecting conversation history with subscription-state
+          information.
+        affected_scope: Candidate source supports action tools, evaluation records,
+          and subscription snapshots. Adds a distinct production integration.
+        consequence: Delivered backend action tools and evaluation data for a production
+          LLM support agent, connecting conversation history with subscription-state
+          information.
+        verdict: approve
+      - text: Built self-service GDPR export and account-deletion workflows across
+          support and data services, allowing operations to create and track requests.
+        decision: keep
+        reason: Source confirms export and deletion workflow scope and operations
+          self-service. This is separate from the LLM agent.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Source confirms export and deletion workflow scope and
+          operations self-service. This is separate from the LLM agent.
+        contribution: Built self-service GDPR export and account-deletion workflows
+          across support and data services, allowing operations to create and track
+          requests.
+        affected_scope: Source confirms export and deletion workflow scope and operations
+          self-service. This is separate from the LLM agent.
+        consequence: Built self-service GDPR export and account-deletion workflows
+          across support and data services, allowing operations to create and track
+          requests.
+        verdict: approve
+      - text: Led the categorization experiment comparing an in-house model with Intercom
+          AI Categorization and completed the migration with the former model retained
+          as fallback.
+        decision: keep
+        reason: Direct 2025 source supports A/B comparison, migration, and retained
+          ML fallback. Shows a concrete decision, not just experimentation.
+        weight: medium
+        signal_type: architecture
+        ordering_rationale: Direct 2025 source supports A/B comparison, migration,
+          and retained ML fallback. Shows a concrete decision, not just experimentation.
+        contribution: Led the categorization experiment comparing an in-house model
+          with Intercom AI Categorization and completed the migration with the former
+          model retained as fallback.
+        affected_scope: Direct 2025 source supports A/B comparison, migration, and
+          retained ML fallback. Shows a concrete decision, not just experimentation.
+        consequence: Led the categorization experiment comparing an in-house model
+          with Intercom AI Categorization and completed the migration with the former
+          model retained as fallback.
+        verdict: approve
+      - text: Held technical ownership of the production event analytics and DataLake
+          system used for product reporting and business insights.
+        decision: keep
+        reason: Candidate confirms full technical ownership and production use. Leads
+          the PHP section with the broadest sustained system responsibility.
+        weight: critical
+        signal_type: impact
+        ordering_rationale: Candidate confirms full technical ownership and production
+          use. Leads the PHP section with the broadest sustained system responsibility.
+        contribution: Held technical ownership of the production event analytics and
+          DataLake system used for product reporting and business insights.
+        affected_scope: Candidate confirms full technical ownership and production
+          use. Leads the PHP section with the broadest sustained system responsibility.
+        consequence: Held technical ownership of the production event analytics and
+          DataLake system used for product reporting and business insights.
+        verdict: approve
+      - text: Took the production Crutrade integration through authentication, account
+          linking, collection import/export, and purchase-ownership verification under
+          full technical ownership.
+        decision: keep
+        reason: Candidate confirms all listed features in production under technical
+          ownership. Ranked ahead of event-version work for this role's customer-facing
+          PHP system.
+        weight: critical
+        signal_type: impact
+        ordering_rationale: Candidate confirms all listed features in production under
+          technical ownership. Ranked ahead of event-version work for this role's
+          customer-facing PHP system.
+        contribution: Took the production Crutrade integration through authentication,
+          account linking, collection import/export, and purchase-ownership verification
+          under full technical ownership.
+        affected_scope: Candidate confirms all listed features in production under
+          technical ownership. Ranked ahead of event-version work for this role's
+          customer-facing PHP system.
+        consequence: Took the production Crutrade integration through authentication,
+          account linking, collection import/export, and purchase-ownership verification
+          under full technical ownership.
+        verdict: approve
+      - text: Delivered parallel event-version publication in production, allowing
+          the event system to support evolving contracts.
+        decision: keep
+        reason: Confirmed parallel production publication supports contract evolution
+          without invented migration metrics.
+        weight: high
+        signal_type: architecture
+        ordering_rationale: Confirmed parallel production publication supports contract
+          evolution without invented migration metrics.
+        contribution: Delivered parallel event-version publication in production,
+          allowing the event system to support evolving contracts.
+        affected_scope: Confirmed parallel production publication supports contract
+          evolution without invented migration metrics.
+        consequence: Delivered parallel event-version publication in production, allowing
+          the event system to support evolving contracts.
+        verdict: approve
+      - text: Reduced the effort to configure new analytics streams through modular
+          design, with faster setup confirmed by operational observation.
+        decision: keep
+        reason: Original profile and candidate metric review support modular design
+          and faster setup through operational observation. Qualitative wording avoids
+          overstating precision.
+        weight: medium
+        signal_type: impact
+        ordering_rationale: Original profile and candidate metric review support modular
+          design and faster setup through operational observation. Qualitative wording
+          avoids overstating precision.
+        contribution: Reduced the effort to configure new analytics streams through
+          modular design, with faster setup confirmed by operational observation.
+        affected_scope: Original profile and candidate metric review support modular
+          design and faster setup through operational observation. Qualitative wording
+          avoids overstating precision.
+        consequence: Reduced the effort to configure new analytics streams through
+          modular design, with faster setup confirmed by operational observation.
+        verdict: approve
+      - text: Directed backend delivery improvements that increased the team's feature
+          delivery rate, using Prometheus to track the result.
+        decision: keep
+        reason: LinkedIn attributes team planning, metrics and higher feature delivery
+          to the Technical Lead period; candidate confirms backend lead direction
+          and reported Prometheus measurement. It reads as guided team outcome, not
+          sole individual coding or an invented percentage. Leads airSlate because
+          hands-on team leadership is central to the vacancy.
+        weight: high
+        signal_type: team_influence
+        ordering_rationale: LinkedIn attributes team planning, metrics and higher
+          feature delivery to the Technical Lead period; candidate confirms backend
+          lead direction and reported Prometheus measurement. It reads as guided team
+          outcome, not sole individual coding or an invented percentage. Leads airSlate
+          because hands-on team leadership is central to the vacancy.
+        contribution: Directed backend delivery improvements that increased the team's
+          feature delivery rate, using Prometheus to track the result.
+        affected_scope: LinkedIn attributes team planning, metrics and higher feature
+          delivery to the Technical Lead period; candidate confirms backend lead direction
+          and reported Prometheus measurement. It reads as guided team outcome, not
+          sole individual coding or an invented percentage. Leads airSlate because
+          hands-on team leadership is central to the vacancy.
+        consequence: Directed backend delivery improvements that increased the team's
+          feature delivery rate, using Prometheus to track the result.
+        verdict: approve
+      - text: Improved stability during traffic peaks by removing main-database bottlenecks
+          and redistributing backend workload.
+        decision: keep
+        reason: Source CV confirms lower peak main-database load and better stability.
+          The CV does not confuse the 65% maximum with a 65% reduction.
+        weight: high
+        signal_type: reliability
+        ordering_rationale: Source CV confirms lower peak main-database load and better
+          stability. The CV does not confuse the 65% maximum with a 65% reduction.
+        contribution: Improved stability during traffic peaks by removing main-database
+          bottlenecks and redistributing backend workload.
+        affected_scope: Source CV confirms lower peak main-database load and better
+          stability. The CV does not confuse the 65% maximum with a 65% reduction.
+        consequence: Improved stability during traffic peaks by removing main-database
+          bottlenecks and redistributing backend workload.
+        verdict: approve
+      - text: Led API performance improvements that reduced response times, with the
+          change measured through Prometheus.
+        decision: keep
+        reason: LinkedIn and candidate clarification support lower response times;
+          no numeric magnitude is stated without a contextual binding.
+        weight: high
+        signal_type: impact
+        ordering_rationale: LinkedIn and candidate clarification support lower response
+          times; no numeric magnitude is stated without a contextual binding.
+        contribution: Led API performance improvements that reduced response times,
+          with the change measured through Prometheus.
+        affected_scope: LinkedIn and candidate clarification support lower response
+          times; no numeric magnitude is stated without a contextual binding.
+        consequence: Led API performance improvements that reduced response times,
+          with the change measured through Prometheus.
+        verdict: approve
+      - text: Built CI/CD pipelines that made releases faster and more consistent
+          across services.
+        decision: keep
+        reason: Source CV supports shorter, more consistent releases across services.
+          Complements the team-delivery bullet without restating it.
+        weight: medium
+        signal_type: reliability
+        ordering_rationale: Source CV supports shorter, more consistent releases across
+          services. Complements the team-delivery bullet without restating it.
+        contribution: Built CI/CD pipelines that made releases faster and more consistent
+          across services.
+        affected_scope: Source CV supports shorter, more consistent releases across
+          services. Complements the team-delivery bullet without restating it.
+        consequence: Built CI/CD pipelines that made releases faster and more consistent
+          across services.
+        verdict: approve
+      - text: Led backend development through the creator platform's transition from
+          prototype to closed beta.
+        decision: keep
+        reason: Candidate-confirmed product transition and CV backend-lead account
+          support this concise older result.
+        weight: medium
+        signal_type: team_influence
+        ordering_rationale: Candidate-confirmed product transition and CV backend-lead
+          account support this concise older result.
+        contribution: Led backend development through the creator platform's transition
+          from prototype to closed beta.
+        affected_scope: Candidate-confirmed product transition and CV backend-lead
+          account support this concise older result.
+        consequence: Led backend development through the creator platform's transition
+          from prototype to closed beta.
+        verdict: approve
+      - text: Worked with the CTO to define the technology roadmap and establish the
+          platform's delivery stack.
+        decision: keep
+        reason: Source CV supports technical roadmap with CTO and platform stack.
+          It adds a decision signal distinct from the delivery milestone.
+        weight: low
+        signal_type: architecture
+        ordering_rationale: Source CV supports technical roadmap with CTO and platform
+          stack. It adds a decision signal distinct from the delivery milestone.
+        contribution: Worked with the CTO to define the technology roadmap and establish
+          the platform's delivery stack.
+        affected_scope: Source CV supports technical roadmap with CTO and platform
+          stack. It adds a decision signal distinct from the delivery milestone.
+        consequence: Worked with the CTO to define the technology roadmap and establish
+          the platform's delivery stack.
+        verdict: approve
+      role_coverage: &id005
+      - employer: Simple App
+        source_period:
+          start:
+          - 2023
+          - 11
+          end:
+          - 2026
+          - null
+        decision: include
+        reason: Preserve permitted employer chronology. Recent role carries source-backed
+          outcomes; concurrent engagement and known uncertainty remain explicit.
+        heading: Simple App / Simple.life — Software Developer | November 2023–2026
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Simple App\n\n**Software Developer**  \nNovember 2023 - Present\
+            \ (2 years 5 months)"
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        - path: registry/candidate/user-confirmed-career-clarifications.md
+          quote: "## Simple.life\n\n- **Role:** Software Developer\n- **Dates:** November\
+            \ 2023 - July 2026\n- This confirmed end date replaces both the stale\
+            \ March 2026 end date in the\n  Backend Engineer CV registry and the `Present`\
+            \ value in the LinkedIn export."
+          sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+        - path: registry/candidate/user-confirmed-simple-life-follow-up-2026-09-26.md
+          quote: This confirms that the August–September work belongs to past experience
+            and that PHP may appear only in the Simple.life technologies line. It
+            does not establish a specific PHP contribution or confirm the official
+            Simple.life job title or exact employment end date. Preserve the earlier
+            confirmed Software Developer title until a direct clarification resolves
+            the conflicting Senior Backend Engineer title in the later supplied blocks.
+            Do not treat the September work period as an independently confirmed employment
+            end date.
+          sha256: 15edbe5ce107ec7a6db46fb490c3f6185590fe5021b7db0218b43c6bec9398f8
+        - path: registry/candidate/user-supplied-simple-life-2025-2026-09-26.md
+          quote: '1. Output 5–7 bullets max, ordered by relevance to the target vacancy
+            (AI/LLM roles → lead with A, B, C; backend/platform roles → lead with
+            D, E, F; product-engineering roles → lead with A, C).
+
+            2. Every bullet follows: **Built/Led/Architected [X] using [Y], resulting
+            in [Z with a number]**. One sentence, ≤ 40 words.
+
+            3. Use only figures from FACTS and ESTIMATES. FACTS may be stated as-is.
+            ESTIMATES are stated as approximate figures with "~" (e.g. "~35%", "~3×");
+            do not add words like "estimated" or "roughly" to the bullet itself.
+
+            4. Never claim "led a team of N"; use "with a 3-person backend team" or
+            "as backend owner of …".
+
+            5. Preferred verbs: architected, built from scratch, launched, migrated,
+            consolidated, hardened, cut, automated.
+
+            6. Do not mention internal codenames (Emily, support-automation, support-legacy,
+            palta) — use functional names (LLM reply engine, support automation service,
+            legacy support service, legacy billing).'
+          sha256: c0ac11a12c4ee08c4386dbb85851307851910ee337f1aa3831a1ff8d71ecaabc
+        - path: registry/candidate/user-confirmed-simple-life-2026-09-26.md
+          quote: '1. Output 5–7 bullets max, ordered by relevance to the target vacancy
+            (architecture/platform roles → lead with items A, B, D; AI/LLM roles →
+            lead with C; backend-reliability roles → lead with E, D; compliance/fintech
+            → lead with F).
+
+            2. Every bullet follows: **Built/Led/Architected [X] using [Y], resulting
+            in [Z with a number]**. One sentence, ≤ 40 words. No task lists.
+
+            3. Use only figures from the FACTS and ESTIMATES sections. FACTS may be
+            stated as-is. ESTIMATES must be rendered with a softener ("~", "up to",
+            "roughly") or converted to a qualitative claim ("cut turnaround from days
+            to hours"); never present an estimate as an exact measured value.
+
+            4. Never claim "led a team of N" — the honest framing is "with a 3-person
+            cross-functional team" or "as sole backend owner".
+
+            5. Prefer verbs: architected, designed, built from scratch, led backend
+            development, diagnosed and eliminated, consolidated, automated, drove.
+
+            6. Do not mention internal codenames (Kova, med-support, support-automation-ai)
+            — use functional names (support admin panel, LLM support agent, helpdesk
+            gateway).'
+          sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
+        reviewer: Codex /root/research_letters
+      - employer: CRURATED
+        source_period:
+          start:
+          - 2024
+          - 8
+          end:
+          - 2026
+          - 1
+        decision: include
+        reason: Preserve permitted employer chronology. Recent role carries source-backed
+          outcomes; concurrent engagement and known uncertainty remain explicit.
+        heading: CRURATED — PHP Software Developer, concurrent part-time subcontract
+          | August 2024–January 2026
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### CRURATED\n\n**Software Developer**  \nAugust 2024 - January\
+            \ 2026 (1 year 6 months)  "
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        - path: registry/candidate/user-confirmed-career-clarifications.md
+          quote: "## CRURATED\n\n- **Role:** PHP Software Developer — Part-time Subcontract\
+            \ / Consulting Engagement\n- **Dates:** August 2024 - January 2026\n-\
+            \ This engagement ran concurrently with Simple.life. It was a parallel,\n\
+            \  PHP-oriented subcontract/consulting assignment, not a second standard\
+            \ full-time\n  employment position.\n- When both roles appear in an application,\
+            \ label CRURATED explicitly as a\n  concurrent part-time subcontract or\
+            \ consulting engagement so the overlap is not\n  misleading."
+          sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
+        reviewer: Codex /root/research_letters
+      - employer: airSlate
+        source_period:
+          start:
+          - 2021
+          - 2
+          end:
+          - 2023
+          - 8
+        decision: include
+        reason: Preserve permitted employer chronology. Recent role carries source-backed
+          outcomes; concurrent engagement and known uncertainty remain explicit.
+        heading: airSlate — Senior Software Developer / Technical Lead | February
+          2021–August 2023
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: '### airSlate
+
+
+            #### Technical Lead
+
+
+            January 2023 - August 2023 (8 months)  '
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: Codex /root/research_letters
+      - employer: Hyprr
+        source_period:
+          start:
+          - 2019
+          - 11
+          end:
+          - 2021
+          - 1
+        decision: include
+        reason: Preserve permitted employer chronology. Older role is compact; dated
+          empty headings retain chronology without invented outcomes.
+        heading: Hyprr — Technical Lead | November 2019–January 2021
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\
+            \ (1 year 3 months)"
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: Codex /root/research_letters
+      - employer: Sixt
+        source_period:
+          start:
+          - 2018
+          - 12
+          end:
+          - 2019
+          - 11
+        decision: include
+        reason: Preserve permitted employer chronology. Older role is compact; dated
+          empty headings retain chronology without invented outcomes.
+        heading: Sixt — Senior Software Developer | December 2018–November 2019
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Sixt\n\n**Senior Software Developer**  \nDecember 2018 - November\
+            \ 2019 (1 year)  "
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: Codex /root/research_letters
+      - employer: PDFfiller.com
+        source_period:
+          start:
+          - 2016
+          - 10
+          end:
+          - 2019
+          - 11
+        decision: include
+        reason: Preserve permitted employer chronology. Older role is compact; dated
+          empty headings retain chronology without invented outcomes.
+        heading: PDFfiller.com — Software Developer | October 2016–November 2019
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### PDFfiller.com\n\n**Technical Lead**  \nOctober 2016 - December\
+            \ 2018 (2 years 3 months)  "
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        - path: registry/candidate/employment-letter-extract-2026-09-25.md
+          quote: Use November 2019 as the PDFfiller end date in CV chronology. The
+            reason the letter covers a shorter period remains unknown; do not infer
+            a legal-entity transfer or role change.
+          sha256: d4893b4fbcecacbff3b63149c2f07467863592f5e61d1a14033611ff1b72d870
+        reviewer: Codex /root/research_letters
+      - employer: Aurum Software
+        source_period:
+          start:
+          - 2015
+          - 11
+          end:
+          - 2016
+          - 11
+        decision: exclude
+        reason: Outside the configured career window beginning with PDFfiller.com;
+          excluded from every CV section.
+        heading: null
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Aurum Software\n\n**Senior Software Developer**  \nNovember\
+            \ 2015 - November 2016 (1 year 1 month)  "
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: Codex /root/research_letters
+      - employer: Upwork freelance
+        source_period:
+          start:
+          - 2008
+          - 7
+          end:
+          - 2016
+          - 9
+        decision: exclude
+        reason: Outside the configured career window beginning with PDFfiller.com;
+          excluded from every CV section.
+        heading: null
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### Upwork freelance\n\n**Software Developer**  \nJuly 2008 - September\
+            \ 2016 (8 years 3 months)"
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: Codex /root/research_letters
+      - employer: CoinsBank/bit-x
+        source_period:
+          start:
+          - 2014
+          - 1
+          end:
+          - 2015
+          - 11
+        decision: exclude
+        reason: Outside the configured career window beginning with PDFfiller.com;
+          excluded from every CV section.
+        heading: null
+        sources:
+        - path: registry/candidate/linkedin-profile.md
+          quote: "### CoinsBank/bit-x\n\n**Senior Software Developer**  \nJanuary\
+            \ 2014 - November 2015 (1 year 11 months)  "
+          sha256: 7b2d96ec997c252ab641d3dd579b66c52fb65827f6abbb022a45886616ec709f
+        reviewer: Codex /root/research_letters
+    application_review:
+      role_coverage: *id005
+    preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+    reviewer: Codex /root telephony refresh and claim review
+    document_sha256:
+      cv: sha256:734c8a3cc1b7e2e2e4fe756fcce71456b61623c8700d079aeb9d4d2ac124c587
+      analysis: sha256:bcc3fe86f2e65cd267154246a49f76f86e3b012a96d2baea1f0cf27f705f5e23
+      interview-preparation: sha256:9b9e0b49917896a0c8e8aa567ac49f84027d3d1db033d5888b4d6763d4d78617
+    requirements:
+    - requirement: PHP technical leadership
+      importance: critical
+      basis: stated
+      jd_quote: PHP Team Lead
+      match: strong
+      candidate_quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January\
+        \ 2021\n\nHyprr was a creator-focused digital platform with blockchain/NFT\
+        \ components built to\nconnect artists and their audiences.\n\n- **Brought\
+        \ the product from prototype to closed beta in under 6 months.**\n- Influenced\
+        \ product development across project planning, microservice and serverless\n\
+        \  architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+        \ the technology roadmap with the CTO and helped establish the core stack\
+        \ for\n  product delivery.\n- Led backend development and worked on the platform's\
+        \ Ethereum-based digital asset\n  components.\n\n**Skills:** PHP | Go | Laravel\
+        \ | MySQL | AWS | Kubernetes | Microservices | REST APIs |\nCI/CD"
+      risk: Docker proficiency and practical B2B/location eligibility remain unconfirmed;
+        Russian proficiency is explicitly recorded in the candidate LinkedIn source.
+      mitigation: Confirm containerization experience and contract/location terms
+        before submitting; retain source-backed PHP and leadership examples.
+      hard_blocker: false
+      evidence_ids:
+      - cv-hyprr
+    evidence_bank_path: registry/evidence/achievements.yaml
+    claims_ledger_path: claims.yaml
+    claims:
+    - document: analysis
+      text: The candidate has PHP and Technical Lead experience, including consulting,
+        API performance, and event systems
+      evidence_ids:
+      - clarification-crurated
+      - airslate-team-lead
+      - airslate-user-confirmed-impact
+      - crurated-analytics
+    - document: analysis
+      text: The LinkedIn candidate source twice lists Russian as Native or Bilingual
+      evidence_ids:
+      - linkedin-russian-language
+    - document: analysis
+      text: the recent CRURATED engagement proves PHP system ownership in production
+      evidence_ids:
+      - clarification-crurated
+      - crurated-analytics
+      - crurated-confirmed-crutrade-production
+    - document: analysis
+      text: airSlate API and database work supports performance and reliability discussion
+      evidence_ids:
+      - airslate-user-confirmed-impact
+      - database-reliability
+    - document: analysis
+      text: English is recorded as upper-intermediate
+      evidence_ids:
+      - candidate-education-languages
+    - document: analysis
+      text: CRURATED overlaps Simple.life and is labeled a concurrent part-time subcontract
+      evidence_ids:
+      - clarification-crurated
+    - document: interview-preparation
+      text: The candidate lives in Rome.
+      evidence_ids:
+      - candidate-public-contact-links
+    - document: interview-preparation
+      text: The LinkedIn source lists Russian as native or bilingual; prepare to discuss
+        PHP architecture and leadership naturally in Russian.
+      evidence_ids:
+      - linkedin-russian-language
+    - document: interview-preparation
+      text: AirSlate's CI/CD and delivery-rate work need precise contribution and
+        measurement.
+      evidence_ids:
+      - airslate-cicd-delivery
+      - airslate-user-confirmed-impact
+    - document: interview-preparation
+      text: CRURATED's DataLake and event versions are possible examples.
+      evidence_ids:
+      - crurated-confirmed-datalake-production
+      - crurated-confirmed-event-version-production
+    - document: interview-preparation
+      text: AirSlate records onboarding; obtain a person, action and result.
+      evidence_ids:
+      - airslate-letter-operations-people
+    - document: interview-preparation
+      text: Use airSlate database work or CRURATED routing, distinguishing incident
+        from prevention.
+      evidence_ids:
+      - database-reliability
+      - crurated-stream-design
+    - document: interview-preparation
+      text: Simple.life's categorization A/B test may work if criteria are confirmed.
+      evidence_ids:
+      - simple-2025-fin-categorization
+    - document: interview-preparation
+      text: The source confirms production use but not sole authorship or revenue
+        impact.
+      evidence_ids:
+      - crurated-confirmed-datalake-production
+      - crurated-confirmed-event-version-production
+      - crurated-confirmed-crutrade-production
+    - document: interview-preparation
+      text: For Simple.life, name the gateway boundary and first B2B demo result,
+        the agent's action tools and evaluation data, the GDPR request workflow, the
+        categorization A/B test, and public-review escalation.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      - simple-2026-llm-agent
+      - simple-2026-gdpr
+      - simple-2025-fin-categorization
+      - simple-2025-review-automation
+    - document: interview-preparation
+      text: Hyprr's prototype-to-beta and roadmap claims can illustrate technical
+        leadership, but do not inflate an unknown team or commercial outcome.
+      evidence_ids:
+      - cv-hyprr
+      - hyprr-user-confirmed
+    - document: cv
+      text: Designed and launched an Amazon Connect telephony platform for support
+        teams, owning the backend end to end and taking its customer privacy controls
+        through formal security review.
+      evidence_ids:
+      - simple-2026-telephony
+      - simple-2026-telephony-privacy
+      support:
+        contribution:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+        scope:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+        consequence:
+          evidence_id: simple-2026-telephony-privacy
+          quote: "## Context and ownership\n\nSimple operates in the medical and health\
+            \ domain, including clinic callback requests;\nevery call carries PII\
+            \ and potentially PHI. The candidate owned the architecture and\nbackend\
+            \ end to end, authored the epic and design document and made the security\n\
+            decisions. The work passed formal security sign-off (DEV-35381) and a\
+            \ BAA and\ncall-recording compliance review (DEV-35382), then reached\
+            \ production on 2026-09-25\nwith a three-person cross-functional team:\
+            \ backend, frontend and SRE.\n\n## Verified privacy, access and audit\
+            \ design\n\n- The customer phone number was resolved server-side, never\
+            \ returned by the API,\n  rendered in the agent UI or written to logs;\
+            \ only a mask reached the browser. There\n  was no number-reveal UI.\n"
+    - document: cv
+      text: Created a Go gateway that separates helpdesk vendors from the support
+        product through a common event model, enabling its first B2B demonstration.
+      evidence_ids:
+      - simple-2026-helpdesk-gateway
+      support:
+        contribution:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+        scope:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+        consequence:
+          evidence_id: simple-2026-helpdesk-gateway
+          quote: '**B. Multi-tenant helpdesk gateway, built from scratch (Jul–Aug
+            2026)**
+
+            - New Go service abstracting helpdesk vendors (Intercom, Zendesk) behind
+            a vendor-neutral event model; the only repo holding vendor SDKs.
+
+            - Delivered: domain model, OpenAPI contracts + inbound event schema, webhook
+            ingestion with per-tenant store and SQS queues (IRSA), Intercom adapter,
+            Zendesk adapter with full outbound (reply, note, tags, status), client
+            + service in the support-agent, dev environment and deploy.
+
+            - Enabled the company''s first B2B demo of the support-AI product (golden
+            cases + admin console).'
+    - document: cv
+      text: Delivered backend action tools and evaluation data for a production LLM
+        support agent, connecting conversation history with subscription-state information.
+      evidence_ids:
+      - simple-2026-llm-agent
+      support:
+        contribution:
+          evidence_id: simple-2026-llm-agent
+          quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+            tickets)**
+
+            - Implemented 10+ agent action tools: subscription cancel, cancellation
+            offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+            vision), attachments extraction, useful-links generation for new billing,
+            review processing for a second product.
+
+            - Built the evaluation pipeline: conversation texts + action events +
+            subscription-state snapshots on ticket open/close → Eval JSON.
+
+            - Built email and product-ticket categorization on prompts; retro-mapped
+            500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+            - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+            responses, nil-error wrapping, malformed session data, content_filter
+            errors, duplicate handling, language misdetection).
+
+            - Migrated 3 services to DeepL without language detection.
+
+            - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        scope:
+          evidence_id: simple-2026-llm-agent
+          quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+            tickets)**
+
+            - Implemented 10+ agent action tools: subscription cancel, cancellation
+            offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+            vision), attachments extraction, useful-links generation for new billing,
+            review processing for a second product.
+
+            - Built the evaluation pipeline: conversation texts + action events +
+            subscription-state snapshots on ticket open/close → Eval JSON.
+
+            - Built email and product-ticket categorization on prompts; retro-mapped
+            500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+            - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+            responses, nil-error wrapping, malformed session data, content_filter
+            errors, duplicate handling, language misdetection).
+
+            - Migrated 3 services to DeepL without language detection.
+
+            - Working set in production: ~7,000 pending tickets in a 7-day window.'
+        consequence:
+          evidence_id: simple-2026-llm-agent
+          quote: '**C. Production LLM support agent — backend lead (whole year, ~60
+            tickets)**
+
+            - Implemented 10+ agent action tools: subscription cancel, cancellation
+            offer, refund, marketing/Braze unsubscribe, user search (incl. via OpenAI
+            vision), attachments extraction, useful-links generation for new billing,
+            review processing for a second product.
+
+            - Built the evaluation pipeline: conversation texts + action events +
+            subscription-state snapshots on ticket open/close → Eval JSON.
+
+            - Built email and product-ticket categorization on prompts; retro-mapped
+            500+ product tickets and all emails since Jan 2026 as training/eval data.
+
+            - Fixed 15+ production defects in the AI path (swallowed non-2xx Intercom
+            responses, nil-error wrapping, malformed session data, content_filter
+            errors, duplicate handling, language misdetection).
+
+            - Migrated 3 services to DeepL without language detection.
+
+            - Working set in production: ~7,000 pending tickets in a 7-day window.'
+    - document: cv
+      text: Built self-service GDPR export and account-deletion workflows across support
+        and data services, allowing operations to create and track requests.
+      evidence_ids:
+      - simple-2026-gdpr
+      support:
+        contribution:
+          evidence_id: simple-2026-gdpr
+          quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+            2026, ~37 tickets)**
+
+            - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+            Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+            analytics (two products). Self-service admin workflow (create / list /
+            detail / status).
+
+            - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+            + lookup), rollback on Data Platform when a request is cancelled, cascade
+            deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+            - Executed an under-18 compliance program: account deletion, subscription
+            cancellation and refunds after two notification waves.'
+        scope:
+          evidence_id: simple-2026-gdpr
+          quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+            2026, ~37 tickets)**
+
+            - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+            Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+            analytics (two products). Self-service admin workflow (create / list /
+            detail / status).
+
+            - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+            + lookup), rollback on Data Platform when a request is cancelled, cascade
+            deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+            - Executed an under-18 compliance program: account deletion, subscription
+            cancellation and refunds after two notification waves.'
+        consequence:
+          evidence_id: simple-2026-gdpr
+          quote: '**F. GDPR automation and account-deletion contour (Dec 2025 – Sep
+            2026, ~37 tickets)**
+
+            - End-to-end GDPR data-export automation across 7 sources: Users, Payments,
+            Data Platform, AppsFlyer, Intercom + support backends, Slack, Snowflake
+            analytics (two products). Self-service admin workflow (create / list /
+            detail / status).
+
+            - Deletion contour rework: new dp-gdpr-service contract (bulk requestId
+            + lookup), rollback on Data Platform when a request is cancelled, cascade
+            deletion to Braze and avo-ai, cancellation contract with actor + reason.
+
+            - Executed an under-18 compliance program: account deletion, subscription
+            cancellation and refunds after two notification waves.'
+    - document: cv
+      text: Led the categorization experiment comparing an in-house model with Intercom
+        AI Categorization and completed the migration with the former model retained
+        as fallback.
+      evidence_ids:
+      - simple-2025-fin-categorization
+      support:
+        contribution:
+          evidence_id: simple-2025-fin-categorization
+          quote: '**B. Ticket categorization: ML model → Intercom Fin A/B test → migration
+            (Jun–Aug 2025)**
+
+            - Designed and launched an A/B test comparing the in-house ML categorization
+            model with Intercom AI Categorization (Fin) via two Intercom attributes
+            (`fin_automation_category`, `general_email_categorization`), with category
+            mapping into the existing billing automation (cancellation / refund /
+            other / billing_other / account deletion).
+
+            - Migrated ticket categorization to Intercom AI Categorization (Aug 2025),
+            then executed the switch to Fin with ML kept as fallback.
+
+            - Added token input/output telemetry for the general categorization action
+            and OpenAI event logging per generated reply.'
+        scope:
+          evidence_id: simple-2025-fin-categorization
+          quote: '**B. Ticket categorization: ML model → Intercom Fin A/B test → migration
+            (Jun–Aug 2025)**
+
+            - Designed and launched an A/B test comparing the in-house ML categorization
+            model with Intercom AI Categorization (Fin) via two Intercom attributes
+            (`fin_automation_category`, `general_email_categorization`), with category
+            mapping into the existing billing automation (cancellation / refund /
+            other / billing_other / account deletion).
+
+            - Migrated ticket categorization to Intercom AI Categorization (Aug 2025),
+            then executed the switch to Fin with ML kept as fallback.
+
+            - Added token input/output telemetry for the general categorization action
+            and OpenAI event logging per generated reply.'
+        consequence:
+          evidence_id: simple-2025-fin-categorization
+          quote: '**B. Ticket categorization: ML model → Intercom Fin A/B test → migration
+            (Jun–Aug 2025)**
+
+            - Designed and launched an A/B test comparing the in-house ML categorization
+            model with Intercom AI Categorization (Fin) via two Intercom attributes
+            (`fin_automation_category`, `general_email_categorization`), with category
+            mapping into the existing billing automation (cancellation / refund /
+            other / billing_other / account deletion).
+
+            - Migrated ticket categorization to Intercom AI Categorization (Aug 2025),
+            then executed the switch to Fin with ML kept as fallback.
+
+            - Added token input/output telemetry for the general categorization action
+            and OpenAI event logging per generated reply.'
+    - document: cv
+      text: Held technical ownership of the production event analytics and DataLake
+        system used for product reporting and business insights.
+      evidence_ids:
+      - crurated-confirmed-datalake-production
+      - crurated-analytics
+      support:
+        contribution:
+          evidence_id: crurated-analytics
+          quote: 'I architect and lead the development of the platform''s internal
+            event analytics
+
+            infrastructure - a mission-critical system that powers product metrics,
+            reporting, and
+
+            business insights.'
+        scope:
+          evidence_id: crurated-analytics
+          quote: 'I architect and lead the development of the platform''s internal
+            event analytics
+
+            infrastructure - a mission-critical system that powers product metrics,
+            reporting, and
+
+            business insights.'
+        consequence:
+          evidence_id: crurated-analytics
+          quote: 'I architect and lead the development of the platform''s internal
+            event analytics
+
+            infrastructure - a mission-critical system that powers product metrics,
+            reporting, and
+
+            business insights.'
+    - document: cv
+      text: Took the production Crutrade integration through authentication, account
+        linking, collection import/export, and purchase-ownership verification under
+        full technical ownership.
+      evidence_ids:
+      - crurated-confirmed-crutrade-production
+      support:
+        contribution:
+          evidence_id: crurated-confirmed-crutrade-production
+          quote: 'CRURATED Crutrade integration: full technical ownership of production
+            authentication/OTP, account linking, collection import/export, purchase-ownership
+            verification, and request/response logging.'
+        scope:
+          evidence_id: crurated-confirmed-crutrade-production
+          quote: 'CRURATED Crutrade integration: full technical ownership of production
+            authentication/OTP, account linking, collection import/export, purchase-ownership
+            verification, and request/response logging.'
+        consequence:
+          evidence_id: crurated-confirmed-crutrade-production
+          quote: 'CRURATED Crutrade integration: full technical ownership of production
+            authentication/OTP, account linking, collection import/export, purchase-ownership
+            verification, and request/response logging.'
+    - document: cv
+      text: Delivered parallel event-version publication in production, allowing the
+        event system to support evolving contracts.
+      evidence_ids:
+      - crurated-confirmed-event-version-production
+      - crurated-event-design
+      support:
+        contribution:
+          evidence_id: crurated-event-design
+          quote: "- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types."
+        scope:
+          evidence_id: crurated-event-design
+          quote: "- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types."
+        consequence:
+          evidence_id: crurated-event-design
+          quote: "- Define a robust, versioned event schema to enforce consistency\
+            \ across teams and\n  accelerate integration of new event types."
+    - document: cv
+      text: Reduced the effort to configure new analytics streams through modular
+        design, with faster setup confirmed by operational observation.
+      evidence_ids:
+      - crurated-reviewed-stream-onboarding
+      support:
+        contribution:
+          evidence_id: crurated-reviewed-stream-onboarding
+          quote: CRURATED new analytics stream setup dropped from several days to
+            under 4 hours through modular design under the candidate's technical ownership;
+            operational observation was identified as the basis.
+        scope:
+          evidence_id: crurated-reviewed-stream-onboarding
+          quote: CRURATED new analytics stream setup dropped from several days to
+            under 4 hours through modular design under the candidate's technical ownership;
+            operational observation was identified as the basis.
+        consequence:
+          evidence_id: crurated-reviewed-stream-onboarding
+          quote: CRURATED new analytics stream setup dropped from several days to
+            under 4 hours through modular design under the candidate's technical ownership;
+            operational observation was identified as the basis.
+    - document: cv
+      text: Directed backend delivery improvements that increased the team's feature
+        delivery rate, using Prometheus to track the result.
+      evidence_ids:
+      - airslate-user-confirmed-impact
+      - airslate-team-lead
+      support:
+        contribution:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        scope:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        consequence:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+    - document: cv
+      text: Improved stability during traffic peaks by removing main-database bottlenecks
+        and redistributing backend workload.
+      evidence_ids:
+      - database-reliability
+      support:
+        contribution:
+          evidence_id: database-reliability
+          quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+            \ and\n  redistributing workload, improving service stability during high-traffic\
+            \ periods."
+        scope:
+          evidence_id: database-reliability
+          quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+            \ and\n  redistributing workload, improving service stability during high-traffic\
+            \ periods."
+        consequence:
+          evidence_id: database-reliability
+          quote: "- **Reduced** peak load on the main database by removing bottlenecks\
+            \ and\n  redistributing workload, improving service stability during high-traffic\
+            \ periods."
+    - document: cv
+      text: Led API performance improvements that reduced response times, with the
+        change measured through Prometheus.
+      evidence_ids:
+      - airslate-user-confirmed-impact
+      support:
+        contribution:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        scope:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        consequence:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+    - document: cv
+      text: Built CI/CD pipelines that made releases faster and more consistent across
+        services.
+      evidence_ids:
+      - airslate-cicd-delivery
+      support:
+        contribution:
+          evidence_id: airslate-cicd-delivery
+          quote: "- Implemented **CI/CD pipelines** that shortened release cycles\
+            \ and improved delivery\n  consistency across services."
+        scope:
+          evidence_id: airslate-cicd-delivery
+          quote: "- Implemented **CI/CD pipelines** that shortened release cycles\
+            \ and improved delivery\n  consistency across services."
+        consequence:
+          evidence_id: airslate-cicd-delivery
+          quote: "- Implemented **CI/CD pipelines** that shortened release cycles\
+            \ and improved delivery\n  consistency across services."
+    - document: cv
+      text: Led backend development through the creator platform's transition from
+        prototype to closed beta.
+      evidence_ids:
+      - cv-hyprr
+      support:
+        contribution:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        scope:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        consequence:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+    - document: cv
+      text: Worked with the CTO to define the technology roadmap and establish the
+        platform's delivery stack.
+      evidence_ids:
+      - cv-hyprr
+      support:
+        contribution:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        scope:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+        consequence:
+          evidence_id: cv-hyprr
+          quote: "### Hyprr\n\n**Technical Lead**  \nNovember 2019 - January 2021\n\
+            \nHyprr was a creator-focused digital platform with blockchain/NFT components\
+            \ built to\nconnect artists and their audiences.\n\n- **Brought the product\
+            \ from prototype to closed beta in under 6 months.**\n- Influenced product\
+            \ development across project planning, microservice and serverless\n \
+            \ architecture, CI/CD, and reliability/serviceability concerns.\n- Defined\
+            \ the technology roadmap with the CTO and helped establish the core stack\
+            \ for\n  product delivery.\n- Led backend development and worked on the\
+            \ platform's Ethereum-based digital asset\n  components.\n\n**Skills:**\
+            \ PHP | Go | Laravel | MySQL | AWS | Kubernetes | Microservices | REST\
+            \ APIs |\nCI/CD"
+    - document: cv
+      text: I have directed backend work at airSlate and Hyprr and owned production
+        event analytics and integrations in a concurrent PHP consulting engagement.
+      evidence_ids:
+      - airslate-user-confirmed-impact
+      - cv-hyprr
+      - crurated-confirmed-datalake-production
+      - crurated-confirmed-crutrade-production
+      - clarification-crurated
+      support:
+        contribution:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        scope:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+        consequence:
+          evidence_id: airslate-user-confirmed-impact
+          quote: '## Question
+
+
+            > В исходном LinkedIn для airSlate есть результаты: ускорение API примерно
+            на 30%; CI/CD — сокращение времени на 11 минут (около 70%); нагрузка основной
+            БД до 65% и расходы −23%; темп поставки функций +20%. Какие из них вы
+            подтверждаете, как измерялись и каков был ваш личный вклад? Пока использую
+            только подтверждённые качественные формулировки без этих цифр.
+
+
+            ## Candidate reply
+
+
+            > Измерялись через метрики Прометеус, я бэк лид инженер, соответсвенно
+            рулили всем'
+    - document: cv
+      text: 'Russian: Native or Bilingual'
+      evidence_ids:
+      - linkedin-russian-language
+      support:
+        contribution:
+          evidence_id: linkedin-russian-language
+          quote: '- Russian - Native or Bilingual'
+        scope:
+          evidence_id: linkedin-russian-language
+          quote: '- Russian - Native or Bilingual'
+        consequence:
+          evidence_id: linkedin-russian-language
+          quote: '- Russian - Native or Bilingual'
+    document_receipts:
+      cv:
+        document_sha256: sha256:734c8a3cc1b7e2e2e4fe756fcce71456b61623c8700d079aeb9d4d2ac124c587
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: bd406f2a9c323102b7f3d56d749cf1a8fd59c19d01cb62b7241336ee212d19d9
+        claims_ledger_path: claims.yaml
+        reviewer: Codex /root telephony refresh and claim review
+        declaration_sha256: sha256:b3e751a23bf4c2f9ac3f16c0c9c9ec49b00a27e5867c0be63137c7c5fb5b06bd
+        application_review:
+          role_coverage: *id005
+      analysis:
+        document_sha256: sha256:bcc3fe86f2e65cd267154246a49f76f86e3b012a96d2baea1f0cf27f705f5e23
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: c9309fbb2b11c79be806eb0071a3e28256fa10d4cc95f7c82bfdcee49aa58109
+        claims_ledger_path: claims.yaml
+        reviewer: Codex /root final cross-file and source review
+        declaration_sha256: sha256:16626a9e08e972e574f4c683c84f17e3b519e6012bc3737f71246ce365ab87a4
+      interview-preparation:
+        document_sha256: sha256:9b9e0b49917896a0c8e8aa567ac49f84027d3d1db033d5888b4d6763d4d78617
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: c9309fbb2b11c79be806eb0071a3e28256fa10d4cc95f7c82bfdcee49aa58109
+        claims_ledger_path: claims.yaml
+        reviewer: Codex /root final cross-file and source review
+        declaration_sha256: sha256:16626a9e08e972e574f4c683c84f17e3b519e6012bc3737f71246ce365ab87a4
+  declaration_sha256: sha256:b3e751a23bf4c2f9ac3f16c0c9c9ec49b00a27e5867c0be63137c7c5fb5b06bd
+  method:
+    workflow: two-wave
+    final_review:
+      claim_grounding: true
+      cross_file_consistency: true
+  handoffs:
+    research.md:
+      word_count: 366
+      sha256: sha256:e0cb3e08fc20386ba435c235c60abfb40fbe8ec7b35aaa4160ef168d148cbf1a
+    evidence-map.md:
+      word_count: 1672
+      sha256: sha256:4f813cc17fc9766145a77cc47856320d4bfa7afecc4805ec7b3e51438e7e5c2f
+    requirements-risks.md:
+      word_count: 518
+      sha256: sha256:ceb3bcbe5f7235851bda37a52150d7d7e3bee5d5e573b849c67557fa1ab5c7ba
+  preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+  exports:
+    cv:
+      schema_version: 1
+      source_file: cv.md
+      artifact_file: cv.docx
+      source_sha256: 734c8a3cc1b7e2e2e4fe756fcce71456b61623c8700d079aeb9d4d2ac124c587
+      artifact_sha256: 45faf162273da5147023ba499607d995f834fdf0da458a25b08cd55ba3243067
+      extracted_text_sha256: 40795360bcdadb7ea02f1c016929df0d745fcc6d341fee4aef173b25117678a7
+      canonical_tokens: 516
+      extracted_tokens: 516
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        cv_experience_list_formatting: verified
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 40
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: reviewed
+        artifact_sha256: 45faf162273da5147023ba499607d995f834fdf0da458a25b08cd55ba3243067
+        reviewer: Codex /root visual inspection of both rendered CV pages
+        reviewed_at: '2026-10-28T19:03:09.708321+00:00'
+        checks:
+          blank_pages: true
+          overflow: true
+          page_breaks: true
+          readability: true
+        method: recorded reviewer attestation; not an automated visual judgment
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
+      preview_reused: true
+files:
+- CV_ValentinNikolaev_ecarstrade_PHPTeamLead.docx
+- CV_ValentinNikolaev_ecarstrade_PHPTeamLead.md
+- analysis.md
+- cv.docx
+- cv.md
+- interview-preparation.md
