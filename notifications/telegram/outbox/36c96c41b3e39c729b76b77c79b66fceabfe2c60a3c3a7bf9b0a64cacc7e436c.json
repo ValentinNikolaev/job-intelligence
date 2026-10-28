@@ -1,0 +1,99 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-28T16:27:25Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Smoobu - The Vacation Rental Software",
+      "country_codes": [
+        "DE"
+      ],
+      "directory": "20261028_smoobu-the-vac_024b11afbb6c4e769c3646860db37b3d",
+      "score": 72,
+      "title": "Senior PHP Back End Engineer (m/f/d)",
+      "url": "https://www.linkedin.com/jobs/view/4451223139/",
+      "vacancy_id": "024b11af-bb6c-4e76-9c36-46860db37b3d"
+    },
+    {
+      "company": "Shakers",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261028_shakers_b6af4c8600594506b350b7260a53217f",
+      "score": 84,
+      "title": "Senior Backend Engineer (PHP/Laravel)",
+      "url": "https://www.linkedin.com/jobs/view/4481865510/",
+      "vacancy_id": "b6af4c86-0059-4506-b350-b7260a53217f"
+    },
+    {
+      "company": "Qonto",
+      "country_codes": [],
+      "directory": "20261028_qonto_6b327e9614854bf4a7bf10c9d44f7ef4",
+      "score": 85,
+      "title": "Senior/Staff - Go Backend Engineer - remote friendly",
+      "url": "https://www.linkedin.com/jobs/view/4483263623/",
+      "vacancy_id": "6b327e96-1485-4bf4-a7bf-10c9d44f7ef4"
+    },
+    {
+      "company": "FRANK",
+      "country_codes": [],
+      "directory": "20261028_frank_5b3a51d4b895493ab9475225379b63fc",
+      "score": 74,
+      "title": "🧑‍💻 Senior Backend Developer (PHP / Laravel)",
+      "url": "https://www.linkedin.com/jobs/view/4484061755/",
+      "vacancy_id": "5b3a51d4-b895-493a-b947-5225379b63fc"
+    },
+    {
+      "company": "eCarsTrade",
+      "country_codes": [],
+      "directory": "20261028_ecarstrade_7ecd4066f6044015bd0268fd09055563",
+      "score": 76,
+      "title": "PHP Team Lead",
+      "url": "https://www.linkedin.com/jobs/view/4483568469/",
+      "vacancy_id": "7ecd4066-f604-4015-bd02-68fd09055563"
+    },
+    {
+      "company": "Dyflexis",
+      "country_codes": [],
+      "directory": "20261028_dyflexis_f84bdda5858d4d3d93f5a4c346aff9b9",
+      "score": 73,
+      "title": "Senior Backend Engineer (PHP)",
+      "url": "https://www.linkedin.com/jobs/view/4484052476/",
+      "vacancy_id": "f84bdda5-858d-4d3d-93f5-a4c346aff9b9"
+    },
+    {
+      "company": "Dow Jones",
+      "country_codes": [
+        "NL"
+      ],
+      "directory": "20261028_dow-jones_82d65cdf34df4eadb379097c39a802fb",
+      "score": 78,
+      "title": "Lead Software Engineer (PHP)",
+      "url": "https://www.linkedin.com/jobs/view/4484043512/",
+      "vacancy_id": "82d65cdf-34df-4ead-b379-097c39a802fb"
+    },
+    {
+      "company": "Chaberton Professionals",
+      "country_codes": [],
+      "directory": "20261028_chaberton-prof_0cf1fc5ca7c8408e9094227e600c4148",
+      "score": 90,
+      "title": "Backend Developer - PHP",
+      "url": "https://www.linkedin.com/jobs/view/4481423757/",
+      "vacancy_id": "0cf1fc5c-a7c8-408e-9094-227e600c4148"
+    },
+    {
+      "company": "Socium - Teams Done Differently",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261021_socium-teams-d_3921cab74abc4a6992092ccbb33170cf",
+      "score": 83,
+      "title": "Senior Software Engineer (Golang)",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/mfa8eq0soa",
+      "vacancy_id": "3921cab7-4abc-4a69-9209-2ccbb33170cf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "36c96c41b3e39c729b76b77c79b66fceabfe2c60a3c3a7bf9b0a64cacc7e436c",
+  "schema_version": 2
+}
