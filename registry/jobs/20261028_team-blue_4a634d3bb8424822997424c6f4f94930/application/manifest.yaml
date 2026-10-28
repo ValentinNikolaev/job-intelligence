@@ -3,7 +3,7 @@ vacancy_version: sha256:fa1f4d96bbd59ea9e12f91840a42b65f44af766d4982877a2e3283ec
 company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
 model: codex:gpt-6.1-sol:high
-analysis: &id001
+analysis: &id002
   model: codex:gpt-5.6-luna:medium
   score: 79
   analyzed_at: '2026-10-28T12:20:59Z'
@@ -11,7 +11,7 @@ analysis: &id001
 quality_contract_version: 3
 preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
 cv_export_stem: CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer
-generated_at: '2026-10-28T14:46:05Z'
+generated_at: '2026-10-28T15:00:58Z'
 documents:
   cv:
     profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
@@ -19,7 +19,11 @@ documents:
     company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
     prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
     model: codex:gpt-6.1-sol:high
-    analysis: *id001
+    analysis: &id001
+      model: codex:gpt-5.6-luna:medium
+      score: 79
+      analyzed_at: '2026-10-28T12:20:59Z'
+      version: sha256:4d523720a784bc09c02e77a64148052fb370f538804e9fc9c64d97ca3e8e168a
     quality_contract_version: 3
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer
@@ -46,6 +50,17 @@ documents:
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
     cv_export_stem: CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer
     generated_at: '2026-10-28T14:46:05Z'
+  cover-letter:
+    profile_version: sha256:b932257736eb89ed556078eb406bf7e5bd3e75981bd17060574a8da2c8f47464
+    vacancy_version: sha256:fa1f4d96bbd59ea9e12f91840a42b65f44af766d4982877a2e3283ececf8f947
+    company_version: sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    prompt_version: sha256:3ba208519c52b268cf21eefd8c1fe1e41d514ad3633b945ebeef269fdd3896c4
+    model: codex:gpt-6.1-sol:high
+    analysis: *id002
+    quality_contract_version: 3
+    preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+    cv_export_stem: CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer
+    generated_at: '2026-10-28T15:00:58Z'
 quality:
   contract_version: 3
   documents:
@@ -67,10 +82,16 @@ quality:
       preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
       evidence_bank_path: registry/evidence/achievements.yaml
       evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
-  document_format: standard
+    cover-letter:
+      word_count: 178
+      sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+      preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+      evidence_bank_path: registry/evidence/achievements.yaml
+      evidence_bank_sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
+  document_format: compact
   grounding:
     schema_version: 2
-    sha256: cbe165b2817e60e09e02b43cd8a4860c5fd785a25f70f346c5025563cebb8634
+    sha256: 58a812063b136e5520234e36f8908f5b7091077a8c24198793ef9641c6d08cc9
     evidence_bank:
       schema_version: 1
       sha256: a9a73f229154f90846e73f4967d84f59ef09d5c6a4303ca937e015524f99fc12
@@ -80,7 +101,7 @@ quality:
         retracted: 5
         unverified: 9
         verified: 68
-    claim_count: 15
+    claim_count: 20
     evidence_ids:
     - airslate-cicd-delivery
     - airslate-letter-lead-scope
@@ -326,7 +347,7 @@ quality:
           \ engagement so the overlap is not\n  misleading."
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
       status: verified
-      verification: &id002
+      verification: &id003
         reviewer: Codex evidence-quality implementation review
         reviewed_at: '2026-09-22T22:01:45.004885+00:00'
         method: Compared verbatim extract and attribution to immutable candidate source;
@@ -444,7 +465,7 @@ quality:
         Do not infer employment dates; reconcile chronology with user-confirmed-career-clarifications.md
         and other source records.
       status: verified
-      verification: *id002
+      verification: *id003
     - id: simple-2026-gdpr
       employer: Simple.life
       role: Software Developer
@@ -467,7 +488,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: &id003
+      attribution_source: &id004
         path: registry/candidate/user-confirmed-career-clarifications.md
         quote: '- **Role:** Software Developer'
         sha256: d4ca490046922ac02fd4dc2da81037a82dce39ec407fe684cdf652da458c8bf0
@@ -500,7 +521,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -539,7 +560,7 @@ quality:
         sha256: ef83405695384f312ee27ff2ec9e846d8796c42409483c352ff7f72d6accd586
         context_quote: '## ROLE: Senior Backend Engineer — Simple.life (Simple App),
           Support & Content Platform'
-      attribution_source: *id003
+      attribution_source: *id004
       status: verified
       verification:
         reviewer: Codex source review
@@ -620,7 +641,7 @@ quality:
         author: /root
         reviewer: /root/risk_and_review
         mode: independent
-      role_coverage: &id004
+      role_coverage: &id005
       - employer: Simple App
         source_period:
           start:
@@ -960,37 +981,158 @@ quality:
           Prometheus.
         verdict: approve
     application_review:
-      role_coverage: *id004
+      role_coverage: *id005
+      letter_review: &id006
+        reviewer: /root (exact final letter self-review)
+        document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+        priority_mapping:
+        - requirement: PHP backend development and production ownership
+          evidence_ids:
+          - crurated-confirmed-datalake-production
+          point: Production PHP systems ownership
+          why_priority: Backend PHP feature work is the role focus; the concrete production
+            system shows delivered ownership without borrowing the target hosting
+            domain.
+          letter_quote: In a part-time PHP consulting engagement at CRURATED, I took
+            technical ownership of production DataLake and event analytics work.
+        - requirement: Symfony development
+          evidence_ids:
+          - airslate-logger-general
+          point: Bounded Symfony implementation experience
+          why_priority: Symfony is explicit in the title. The letter names the actual
+            implementation and avoids claiming extensive framework architecture.
+          letter_quote: My Symfony experience includes developing a Laravel/Symfony
+            logger package at airSlate.
+        distinctness: The first strand concerns ownership of a production PHP data
+          system; the second establishes the narrower named-framework implementation.
+          The latter is not presented as another architecture success.
+        channel_fit: A concise four-paragraph letter suitable for the form text field,
+          with one brief project narrative and a direct invitation to discuss requirements.
+        narrated_examples:
+        - letter_quote: In a part-time PHP consulting engagement at CRURATED, I took
+            technical ownership of production DataLake and event analytics work. I
+            also owned parallel event-version publication and defined a versioned
+            schema that kept events consistent across teams and made new types easier
+            to integrate.
+          adds_value: Shows personal scope and the cross-team event-schema result
+            in one compact account; other paragraphs state capabilities rather than
+            retelling another project.
+        company_claim: 'The planned rollout of team.blue''s hosting platform across
+          the European group gives that API work a clear purpose: helping services
+          and teams exchange information reliably.'
+        company_grounding: The captured official posting states further European platform
+          rollout and internal APIs central to information exchange. The letter paraphrases
+          these two linked facts, without claiming product use or an internal problem.
+        voice:
+          language: English
+          notes: Calm professional English, specific capabilities, one short example,
+            no manufactured enthusiasm or CV chronology. The Symfony wording preserves
+            its narrow evidence boundary.
+          rules:
+          - path: I:/Development/Git/ValentinNikolaev/social-promotion/social-voice.md
+            sha256: f8b16d365b651bad84ed90ab6014a95f0e3000dfada572c46f978f3b8847d159
+          - path: I:/Development/Git/ValentinNikolaev/social-promotion/employer-letter-flow.md
+            sha256: 2ec9140dc47c1ee5e918656f8d6f046913a2fd2356a706dad7429e37d00a59c9
+        humanizer:
+          skill: humanizer
+          version: 22.1.0+codex.20261027190753
+          reviewer: /root (local edit)
+          document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+          notes: Removed the redundant sentence "That experience would be useful when
+            changes need to work across several services." The event-schema example
+            already establishes the connection. Kept the concrete Symfony limitation
+            and the plain closing; checked facts and stance after editing.
+        ai_detection:
+          skill: ai-detector
+          version: 22.1.0+codex.20261027190753
+          reviewer: /root (local stylistic assessment)
+          document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+          mode: local
+          notes: No material delayed point, staged contrast or manufactured enthusiasm
+            remains. The short capability list in the opening is useful role targeting
+            and stays. The bounded Symfony sentence is precise rather than a broad
+            expertise claim. This is a local editorial assessment, not an authorship
+            verdict or probability.
+        naturalness:
+          rubric: naturalness-v1
+          reviewer: /root (editorial judgement)
+          document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+          score: 93
+          dimensions:
+            voice:
+              score: 23
+              reason: Professional and conversational, with direct first-person claims
+                and a courteous closing; the technical register fits a hiring team.
+            specificity:
+              score: 24
+              reason: Names the actual PHP event-system ownership and Symfony implementation,
+                and connects them to a sourced platform rollout.
+            flow:
+              score: 23
+              reason: Moves from the role to one compact example, a complementary
+                skill and a practical next step; no redundant relevance sentence remains.
+            restraint:
+              score: 23
+              reason: No generic praise, product-use claim, numerical inflation or
+                career replay; the framework claim stays within its source.
+        basis_sha256: 670fe27e857a0b96c1ccdd7d64ba1c854940c1674363da6d3e5cbe70e676cb18
+        company_source:
+          path: parts/company-source.txt
+          url: https://careers.team.blue/jobs/8585325-php-symfony-software-engineer
+          quote: Over the coming years, the platform will be rolled out further across
+            our European team.blue group, and you'll have the opportunity to contribute
+            to that growth.
+          sha256: 636cf46d511895430ad4c73dacdd7729bd2c3f656e8a26dd7621851c65d51257
+          checked_on: '2026-10-28'
+        company_fact: the platform will be rolled out further across our European
+          team.blue group
+        application_route:
+          channel: form
+          source_url: https://careers.team.blue/jobs/8585325-php-symfony-software-engineer
+          checked_on: '2026-10-28'
+          letter_required: true
+          requirement_basis: explicit candidate request overriding the optional-field
+            default
+          observed_form_letter_required: false
+          evidence: 'Candidate reply to package-scope clarification: "team.blue only
+            requried cover letter". This pass is required by the candidate. Earlier
+            live-form inspection marked the letter optional; this receipt does not
+            claim independent confirmation of an employer-mandatory field.'
     preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
-    reviewer: /root (final cross-document self-review)
+    reviewer: /root (letter self-review against primary evidence and final CV)
     document_sha256:
       cv: sha256:0120d4d5e2bef7b8ae23be547239935ca4d568d3e5ac959e3933ce978334fd48
       analysis: sha256:ca0b183e1fbe1a5296f3d92be36322aa53f0e56e55dd0ed6e008df5d96cff936
       interview-preparation: sha256:a9ddf867713b1d7f0b14fec20273fe50c4c0332b4d9a926a4d418a78779ec27e
+      cover-letter: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
     requirements:
-    - requirement: PHP/Symfony engineering
+    - requirement: PHP backend development and production ownership
       importance: critical
       basis: stated
       jd_quote: PHP (Symfony) Software Engineer
       match: strong
-      candidate_quote: '- Symfony'
+      candidate_quote: 'CRURATED DataLake and event analytics: full technical ownership,
+        production use.'
       risk: ''
       mitigation: ''
       hard_blocker: false
       evidence_ids:
-      - candidate-supported-backend-skills
-      - airslate-logger-general
-    - requirement: Florence location and work eligibility
+      - crurated-confirmed-datalake-production
+      - clarification-crurated
+    - requirement: Symfony development
       importance: high
-      basis: structural
-      jd_quote: Florence
-      match: unknown
-      candidate_quote: ''
-      risk: Rome eligibility and legal right to work without sponsorship need confirmation.
-      mitigation: Check the fully remote Italian location policy and candidate work
-        permit before submission.
+      basis: stated
+      jd_quote: PHP (Symfony) Software Engineer
+      match: partial
+      candidate_quote: "- Developed a Laravel/Symfony-based product-wide logger package,\
+        \ adhering to\n  interservice communication standard."
+      risk: The verified example establishes a framework implementation, not extensive
+        end-to-end Symfony product ownership.
+      mitigation: State the concrete logger implementation and discuss actual Symfony
+        depth in screening.
       hard_blocker: false
-      evidence_ids: []
+      evidence_ids:
+      - airslate-logger-general
     evidence_bank_path: registry/evidence/achievements.yaml
     claims_ledger_path: claims.yaml
     claims:
@@ -1715,16 +1857,85 @@ quality:
       evidence_ids:
       - crurated-confirmed-datalake-production
       - crurated-analytics
-  declaration_sha256: sha256:97446704f2283ad8b62c1116acb5e74e44660f414907a347448c6b5e1bda8c01
+    - document: cover-letter
+      text: I bring PHP development, production integration work and technical ownership
+        of event systems.
+      evidence_ids:
+      - candidate-supported-backend-skills
+      - crurated-confirmed-datalake-production
+    - document: cover-letter
+      text: In a part-time PHP consulting engagement at CRURATED, I took technical
+        ownership of production DataLake and event analytics work.
+      evidence_ids:
+      - clarification-crurated
+      - crurated-confirmed-datalake-production
+    - document: cover-letter
+      text: I also owned parallel event-version publication and defined a versioned
+        schema that kept events consistent across teams and made new types easier
+        to integrate.
+      evidence_ids:
+      - crurated-confirmed-event-version-production
+      - crurated-event-design
+    - document: cover-letter
+      text: My Symfony experience includes developing a Laravel/Symfony logger package
+        at airSlate.
+      evidence_ids:
+      - airslate-logger-general
+    - document: cover-letter
+      text: My work there also covered database reliability and release delivery,
+        including reducing peak database load and making releases more consistent
+        through CI/CD.
+      evidence_ids:
+      - database-reliability
+      - airslate-cicd-delivery
+    document_receipts:
+      cv:
+        document_sha256: sha256:0120d4d5e2bef7b8ae23be547239935ca4d568d3e5ac959e3933ce978334fd48
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: cbe165b2817e60e09e02b43cd8a4860c5fd785a25f70f346c5025563cebb8634
+        claims_ledger_path: claims.yaml
+        reviewer: /root (final cross-document self-review)
+        declaration_sha256: sha256:97446704f2283ad8b62c1116acb5e74e44660f414907a347448c6b5e1bda8c01
+      analysis:
+        document_sha256: sha256:ca0b183e1fbe1a5296f3d92be36322aa53f0e56e55dd0ed6e008df5d96cff936
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: cbe165b2817e60e09e02b43cd8a4860c5fd785a25f70f346c5025563cebb8634
+        claims_ledger_path: claims.yaml
+        reviewer: /root (final cross-document self-review)
+        declaration_sha256: sha256:97446704f2283ad8b62c1116acb5e74e44660f414907a347448c6b5e1bda8c01
+      interview-preparation:
+        document_sha256: sha256:a9ddf867713b1d7f0b14fec20273fe50c4c0332b4d9a926a4d418a78779ec27e
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: cbe165b2817e60e09e02b43cd8a4860c5fd785a25f70f346c5025563cebb8634
+        claims_ledger_path: claims.yaml
+        reviewer: /root (final cross-document self-review)
+        declaration_sha256: sha256:97446704f2283ad8b62c1116acb5e74e44660f414907a347448c6b5e1bda8c01
+      cover-letter:
+        document_sha256: sha256:a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+        preparation_context_version: preparation-v1:sha256:4d8d225697c5457adf1619b0db4614d62cce6ee9c937abf035ccb45e07b41775
+        claims_ledger_sha256: 58a812063b136e5520234e36f8908f5b7091077a8c24198793ef9641c6d08cc9
+        claims_ledger_path: claims.yaml
+        reviewer: /root (letter self-review against primary evidence and final CV)
+        declaration_sha256: sha256:468fe3c501f8ceeb66c3d08e5c32a6dd6cbf60e2f5a0dbd9ce748ee849629dbe
+        application_review:
+          letter_review: *id006
+  declaration_sha256: sha256:468fe3c501f8ceeb66c3d08e5c32a6dd6cbf60e2f5a0dbd9ce748ee849629dbe
   method:
     workflow: two-wave
     final_review:
       claim_grounding: true
       cross_file_consistency: true
+    cover_letter:
+      channel: attachment
+      skill: write-cover-letter
+      version: 22.1.0+codex.20261027190753
+      workbench_complete: true
+      evidence_story_count: 2
+      company_source_url: https://careers.team.blue/jobs/8585325-php-symfony-software-engineer
   handoffs:
     research.md:
-      word_count: 568
-      sha256: sha256:9691e36d8f3a8a50de686cc314fa5414b789bd356ac3e1cdfeb4f1e05414e5aa
+      word_count: 656
+      sha256: sha256:c0341079ca571d93f4813bf2dc095800d0a6371a25d53d58368228ed87d7fb8b
     evidence-map.md:
       word_count: 1361
       sha256: sha256:5c0b9c1b9b55b206f560ade0b720188c72f625f1f69822ffb34e4d9444f58346
@@ -1768,10 +1979,38 @@ quality:
       limits: Token comparison checks preservation, not factual truth or visual layout.
         PDF annotations and inherited fonts are not audited.
       preview_reused: true
+    cover-letter:
+      schema_version: 1
+      source_file: cover-letter.md
+      artifact_file: cover-letter.docx
+      source_sha256: a6212a011e0215a0906641b332fa19e05f0e055975318cb348286253986025ae
+      artifact_sha256: dd425a2579065f0326834098c6c63e94f66f5e3ba796b8bc03ed2afc7975e6e9
+      extracted_text_sha256: 45839a2856164509e1a8e0d0a91d86652c65f4ac176df8d7aa9699beea2a32c3
+      canonical_tokens: 183
+      extracted_tokens: 183
+      checks:
+        readable_text: true
+        canonical_text_preserved_in_order: true
+        contacts_and_numeric_values_preserved: true
+        cv_experience_list_formatting: not_checked
+        hyperlink_targets: verified
+      structure:
+        readable_paragraphs: 7
+        minimum_declared_font_pt: 12.0
+        font_scope: body runs, document defaults, directly applied styles
+      page_count: null
+      max_pages: null
+      visual_review:
+        status: not_reviewed
+        artifact_sha256: dd425a2579065f0326834098c6c63e94f66f5e3ba796b8bc03ed2afc7975e6e9
+      limits: Token comparison checks preservation, not factual truth or visual layout.
+        PDF annotations and inherited fonts are not audited.
 files:
 - CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer.docx
 - CV_ValentinNikolaev_teamblue_PHPSymfonySoftwareEngineer.md
 - analysis.md
+- cover-letter.docx
+- cover-letter.md
 - cv.docx
 - cv.md
 - interview-preparation.md
