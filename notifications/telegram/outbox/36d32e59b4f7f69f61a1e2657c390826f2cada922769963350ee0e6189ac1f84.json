@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-28T18:30:24Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Uppeople",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261028_uppeople_9078a56163c24170bb436a9e0885eb7a",
+      "score": 78,
+      "title": "Lead Platform Engineer",
+      "url": "https://jobs.dou.ua/companies/uppeople/vacancies/378205/?from=list_hot",
+      "vacancy_id": "9078a561-63c2-4170-bb43-6a9e0885eb7a"
+    },
+    {
+      "company": "Checkbox Group",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261028_checkbox-group_5aaecfcbcceb4997b52c14f908f6ac21",
+      "score": 84,
+      "title": "PHP Developer (Symfony)",
+      "url": "https://jobs.dou.ua/companies/checkbox/vacancies/378183/",
+      "vacancy_id": "5aaecfcb-cceb-4997-b52c-14f908f6ac21"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "36d32e59b4f7f69f61a1e2657c390826f2cada922769963350ee0e6189ac1f84",
+  "schema_version": 2
+}
