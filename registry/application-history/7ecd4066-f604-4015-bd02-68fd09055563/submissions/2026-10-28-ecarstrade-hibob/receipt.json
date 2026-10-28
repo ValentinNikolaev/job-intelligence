@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "45faf162273da5147023ba499607d995f834fdf0da458a25b08cd55ba3243067",
+      "size": 12400,
+      "snapshot": "files/application-codex/CV_ValentinNikolaev_ecarstrade_PHPTeamLead.docx",
+      "source": "registry/jobs/20261028_ecarstrade_7ecd4066f6044015bd0268fd09055563/application-codex/CV_ValentinNikolaev_ecarstrade_PHPTeamLead.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:2026-10-28-ecarstrade-hibob",
+  "format": "standard",
+  "kind": "submission",
+  "occurred_on": "2026-10-28",
+  "positioning": "php-team-lead",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/7ecd4066-f604-4015-bd02-68fd09055563/submissions/2026-10-28-ecarstrade-hibob",
+  "submission_id": "2026-10-28-ecarstrade-hibob",
+  "vacancy_id": "7ecd4066-f604-4015-bd02-68fd09055563"
+}
