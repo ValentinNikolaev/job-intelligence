@@ -75,6 +75,11 @@ def prefilter_job(
         return Rejection("role_mismatch", "title is an obvious mismatch for a backend profile")
     if policy.reject_explicit_non_remote and job.remote is False:
         return Rejection("location_requirement", "vacancy is explicitly non-remote")
+    if policy.location.hybrid_italy_only and _is_hybrid_job(job):
+        location = job.location or ""
+        if not (re.search(r"\b(?:italy|italia)\b", location, re.I)
+                or re.search(r"(?:^|[,;/]\s*)IT(?:\s*\(Hybrid\))?\s*$", location)):
+            return Rejection("location_requirement", "hybrid work requires a confirmed job location in Italy")
 
     full_text = _normalize_text(
         "\n".join(
@@ -105,6 +110,17 @@ def prefilter_job(
         names = " or ".join(_TECHNOLOGY_NAMES[technology] for technology in policy.target_technologies)
         return Rejection("tech_stack", f"role does not mention {names}")
     return None
+
+
+def _is_hybrid_job(job: NormalizedJob) -> bool:
+    arrangement = str(job.source_metadata.get("remote_working") or "").casefold()
+    return bool(
+        arrangement in {"hybrid", "ibrido", "parziale"}
+        or re.search(r"\b(?:hybrid|ibrido)\b", job.location or "", re.I)
+        or re.fullmatch(r"\s*(?:hybrid|ibrido)\s*", job.employment_type or "", re.I)
+        or re.search(r"^\s*(?:(?:work(?:place)? (?:type|arrangement)|modalit[aà] di lavoro)\s*:\s*)?"
+                     r"(?:hybrid|ibrido)\s*$", job.description, re.I | re.M)
+    )
 
 
 def load_company_retry_rules(profile_path: Path) -> tuple[CompanyRetryRule, ...]:

@@ -36,6 +36,7 @@ blocking_languages:
   - turkish
   - italian
 location:
+  hybrid_italy_only: true
   reject_us_remote: true
   reject_us_location: true
   reject_american_timezones: true

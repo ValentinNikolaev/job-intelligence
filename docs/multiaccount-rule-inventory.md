@@ -33,6 +33,14 @@ choose recognized concepts, never regular expressions, code or replacement messa
 `_has_english_requirement` is currently unused by `prefilter_job`; do not revive it as
 a bypass while extracting language policy.
 
+Since 2026-10-28, `location.hybrid_italy_only: true` adds a hybrid-location gate
+after the explicit non-remote check and before American location/time checks.
+Hybrid evidence in metadata or workplace labels requires `Italy`, `Italia`, or
+a separate uppercase `IT` country code in the job location. Unknown countries
+fail this gate. Company background and European working hours cannot bypass it.
+Hybrid mail labels are retained separately with `remote=None`, including
+`Ibrido` and `Parziale`; they no longer assert fully remote work.
+
 ## Triage, queues and archive consumers
 
 [triage.py](../jobintel/triage.py) applied baseline ordered categories `sales`, `qa`,

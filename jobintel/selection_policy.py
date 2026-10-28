@@ -31,6 +31,7 @@ class SelectionPolicyError(ValueError):
 
 @dataclass(frozen=True, slots=True)
 class LocationPolicy:
+    hybrid_italy_only: bool
     reject_us_remote: bool
     reject_us_location: bool
     reject_american_timezones: bool

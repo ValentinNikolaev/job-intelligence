@@ -213,7 +213,7 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
     for item in email["jobs"]:
         required_job = {"title", "company", "source_url", "description"}
         optional = {"location", "employment_type", "remote_working", "published_date"}
-        page_keys = {"posting_text"} if source == "arc" else set()
+        page_keys = {"posting_text"} if source in {"arc", "linkedin"} else set()
         if not isinstance(item, dict) or not required_job <= set(item) or set(item) - required_job - optional - page_keys:
             raise ValueError("invalid job fields")
         job_id, source_url = _posting(_text(item["source_url"], "source_url"), source)
@@ -236,6 +236,11 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
             if _spaces(fields[key]) not in _spaces(fields["description"]):
                 raise ValueError(f"description must include the vacancy's {key}")
         remote_value = fields.get("remote_working")
+        if remote_value is None and source == "linkedin":
+            label = re.search(r"^\s*(?:(?:Workplace type|Work arrangement)\s*:\s*)?"
+                              r"(Remote|Hybrid|On-site)\s*$", fields["description"], re.I | re.M)
+            if label:
+                remote_value = label[1]
         if remote_value is not None:
             allowed_remote = ({"Remoto", "Da remoto", "Lavoro da casa", "Ibrido", "In presenza"}
             if source == "indeed" else {"Remote", "remote", "Hybrid", "hybrid", "On-site", "on-site"}
@@ -250,7 +255,8 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
             source=source, source_job_id=job_id, source_url=source_url,
             title=fields["title"], company=fields["company"], description=fields["description"],
             location=fields.get("location"), employment_type=fields.get("employment_type"),
-            remote=None if remote_value is None else remote_value not in {"No", "In presenza", "On-site", "on-site"},
+            remote=(None if remote_value is None or remote_value.casefold() in {"hybrid", "ibrido", "parziale"}
+                    else remote_value not in {"No", "In presenza", "On-site", "on-site"}),
             published_at=_date(fields["published_date"]) if "published_date" in fields else None,
             source_metadata={"channel": "job_alert_email", "message_id": message_id,
                              "received_at": received.astimezone(timezone.utc).isoformat(), "description_scope": "posting_text" if posting_text else "email_excerpt",
