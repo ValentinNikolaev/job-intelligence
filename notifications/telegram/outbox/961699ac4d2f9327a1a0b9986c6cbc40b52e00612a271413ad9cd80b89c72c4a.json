@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-29T12:26:52Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Mobilunity",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261029_mobilunity_0cec600ddbfa4bb999a467f820c5370a",
+      "score": 87,
+      "title": "Laravel Engineer",
+      "url": "https://jobs.dou.ua/companies/mobilunity/vacancies/374505/",
+      "vacancy_id": "0cec600d-dbfa-4bb9-99a4-67f820c5370a"
+    },
+    {
+      "company": "AGM SOLUTIONS",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261029_agm-solutions_12908f6ec9014993ad11f26758f87228",
+      "score": 68,
+      "title": "Team Lead PHP",
+      "url": "https://www.linkedin.com/jobs/view/4484459387/",
+      "vacancy_id": "12908f6e-c901-4993-ad11-f26758f87228"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "961699ac4d2f9327a1a0b9986c6cbc40b52e00612a271413ad9cd80b89c72c4a",
+  "schema_version": 2
+}
