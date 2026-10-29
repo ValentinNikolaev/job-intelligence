@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 82
+Total vacancies: 83
 
-- Found: 55
+- Found: 56
 - Applied: 23
 - Interview: 3
 - Withdrawn: 1
@@ -13,6 +13,7 @@ Total vacancies: 82
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-29 | [AGM SOLUTIONS](../registry/jobs/20261029_agm-solutions_12908f6ec9014993ad11f26758f87228/) | [Team Lead PHP](../registry/jobs/20261029_agm-solutions_12908f6ec9014993ad11f26758f87228/job.md) | Milan, Lombardy, Italy | Linkedin | Found | 2026-10-29 | [Linkedin](https://www.linkedin.com/jobs/view/4484459387/) | — | — | — | — | — |
 | 2026-10-29 | [Seedtag](../registry/jobs/20261029_seedtag_0d8814f89d25492284e04973b7409908/) | [Senior Software Engineer](../registry/jobs/20261029_seedtag_0d8814f89d25492284e04973b7409908/job.md) | Belgium, France, Germany, Italy, Netherlands, Spain, United Kingdom | Himalayas | Found | 2026-10-29 | [Himalayas](https://himalayas.app/companies/seedtag/jobs/senior-software-engineer?utm_source=api) | — | — | — | — | — |
 | 2026-10-29 | [Chainguard](../registry/jobs/20261029_chainguard_63a5b11285c6459cb02887e2a7b3a3fa/) | [Senior Software Engineer (Customer Platform)](../registry/jobs/20261029_chainguard_63a5b11285c6459cb02887e2a7b3a3fa/job.md) | UK | Jobicy | Found | 2026-10-29 | [Jobicy](https://jobicy.com/jobs/157675-senior-software-engineer-customer-platform) | — | — | — | — | — |
 | 2026-10-28 | [Uppeople](../registry/jobs/20261028_uppeople_9078a56163c24170bb436a9e0885eb7a/) | [Lead Platform Engineer](../registry/jobs/20261028_uppeople_9078a56163c24170bb436a9e0885eb7a/job.md) | віддалено | Dou | Found | 2026-10-28 | [Dou](https://jobs.dou.ua/companies/uppeople/vacancies/378205/?from=list_hot) | [Open](../registry/jobs/20261028_uppeople_9078a56163c24170bb436a9e0885eb7a/company.md) | — | — | — | — |
