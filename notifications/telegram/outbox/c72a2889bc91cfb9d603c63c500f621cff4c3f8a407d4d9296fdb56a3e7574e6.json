@@ -1,0 +1,38 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-29T08:27:37Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Seedtag",
+      "country_codes": [
+        "BE",
+        "FR",
+        "DE",
+        "IT",
+        "NL",
+        "ES",
+        "GB"
+      ],
+      "directory": "20261029_seedtag_0d8814f89d25492284e04973b7409908",
+      "score": 87,
+      "title": "Senior Software Engineer",
+      "url": "https://himalayas.app/companies/seedtag/jobs/senior-software-engineer?utm_source=api",
+      "vacancy_id": "0d8814f8-9d25-4922-84e0-4973b7409908"
+    },
+    {
+      "company": "Chainguard",
+      "country_codes": [
+        "GB"
+      ],
+      "directory": "20261029_chainguard_63a5b11285c6459cb02887e2a7b3a3fa",
+      "score": 78,
+      "title": "Senior Software Engineer (Customer Platform)",
+      "url": "https://jobicy.com/jobs/157675-senior-software-engineer-customer-platform",
+      "vacancy_id": "63a5b112-85c6-459c-b028-87e2a7b3a3fa"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "c72a2889bc91cfb9d603c63c500f621cff4c3f8a407d4d9296fdb56a3e7574e6",
+  "schema_version": 2
+}
