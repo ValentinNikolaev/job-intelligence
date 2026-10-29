@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "565da505a1997a1c86c49b26cb7105e2ba297c1cfefb4d04d9f65f1c82483c53",
+      "size": 12378,
+      "snapshot": "files/application/CV_ValentinNikolaev_kitrum_SeniorBackendEngineerGolang.docx",
+      "source": "registry/jobs/20261029_kitrum_6cceb63e10a949ec87ba00be500bb697/application/CV_ValentinNikolaev_kitrum_SeniorBackendEngineerGolang.docx"
+    }
+  ],
+  "channel": "dou",
+  "event_id": "submission:2026-10-30-form",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-10-30",
+  "positioning": "senior-backend",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/6cceb63e-10a9-49ec-87ba-00be500bb697/submissions/2026-10-30-form",
+  "submission_id": "2026-10-30-form",
+  "vacancy_id": "6cceb63e-10a9-49ec-87ba-00be500bb697"
+}

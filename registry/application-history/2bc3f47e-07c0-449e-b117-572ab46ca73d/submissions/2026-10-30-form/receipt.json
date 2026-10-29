@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "31758e6c079f546f75c58d2e9e6682aef186559e582797a9921f34b3b02d33b4",
+      "size": 12354,
+      "snapshot": "files/application/CV_ValentinNikolaev_yldio_ContractGolangSoftwareEngineerEurope.docx",
+      "source": "registry/jobs/20261029_yld-io_2bc3f47e07c0449eb117572ab46ca73d/application/CV_ValentinNikolaev_yldio_ContractGolangSoftwareEngineerEurope.docx"
+    }
+  ],
+  "channel": "greenhouse",
+  "event_id": "submission:2026-10-30-form",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-10-30",
+  "positioning": "senior-backend",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/2bc3f47e-07c0-449e-b117-572ab46ca73d/submissions/2026-10-30-form",
+  "submission_id": "2026-10-30-form",
+  "vacancy_id": "2bc3f47e-07c0-449e-b117-572ab46ca73d"
+}

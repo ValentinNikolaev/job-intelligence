@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "94f29dc085756dad2769394b3e36735c1ae65ae3602bb156b801ed54d0e5a8e1",
+      "size": 13077,
+      "snapshot": "files/application/CV_ValentinNikolaev_company_SeniorPHPDeveloperSoftwareArchitect.docx",
+      "source": "registry/jobs/20261029_тов-діалектик_6fd6fe53464246bbab7680fbdd6e8fab/application/CV_ValentinNikolaev_company_SeniorPHPDeveloperSoftwareArchitect.docx"
+    }
+  ],
+  "channel": "dou",
+  "event_id": "submission:2026-10-30-form",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-10-30",
+  "positioning": "senior-backend",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/6fd6fe53-4642-46bb-ab76-80fbdd6e8fab/submissions/2026-10-30-form",
+  "submission_id": "2026-10-30-form",
+  "vacancy_id": "6fd6fe53-4642-46bb-ab76-80fbdd6e8fab"
+}

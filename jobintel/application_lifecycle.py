@@ -22,6 +22,7 @@ HUMAN_KINDS = frozenset({"human_reply", "interview_invitation", "interview", "of
 CLOSED_KINDS = frozenset({"offer", "rejection", "withdrawal"})
 DRAFT_KINDS = frozenset({"answers", "interview-practice", "interview-debrief", "followup"})
 _KEY = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{0,199}$")
+_DIRECTORY_KEY = re.compile(r"^[^\W_][\w-]{0,199}$")
 _UNRESOLVED = {"", "TODO_CONFIRM", "unknown", "not_provided", "needs_confirmation"}
 
 
@@ -33,8 +34,9 @@ def _json(value) -> bytes:
     return (json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n").encode("utf-8")
 
 
-def _key(value: str) -> str:
-    if not isinstance(value, str) or not _KEY.fullmatch(value) or value.casefold() in {
+def _key(value: str, *, allow_unicode: bool = False) -> str:
+    pattern = _DIRECTORY_KEY if allow_unicode else _KEY
+    if not isinstance(value, str) or not pattern.fullmatch(value) or value.casefold() in {
         "con", "prn", "aux", "nul", *(f"com{i}" for i in range(1, 10)), *(f"lpt{i}" for i in range(1, 10))
     }:
         raise ValueError("IDs must be safe, explicit alphanumeric keys (with '-' or '_')")
@@ -121,7 +123,7 @@ class ApplicationLifecycle:
         if len(found) != 1:
             raise ValueError("vacancy selector must resolve to exactly one canonical MongoDB record")
         _key(str(found[0]["_id"]))
-        _key(found[0]["directory"])
+        _key(found[0]["directory"], allow_unicode=True)
         return found[0]
 
     def _log(self, vacancy_id: str) -> tuple[dict | None, list]:

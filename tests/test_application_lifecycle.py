@@ -93,6 +93,25 @@ class ApplicationLifecycleTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "mismatch"):
             self.lifecycle.verify_submission("v1", submission_id="sent-1")
 
+    def test_submission_supports_unicode_vacancy_directory(self):
+        directory = "20261029_тов-діалектик_6fd6fe53464246bbab7680fbdd6e8fab"
+        destination = self.root / "registry/jobs" / directory
+        self.cv.parent.parent.rename(destination)
+        self.cv = destination / "application/cv.md"
+        self.store.vacancies[0]["directory"] = directory
+        result = self.submit()
+        self.assertIn(directory, result["artifacts"][0]["source"])
+        self.assertTrue(self.lifecycle.verify_submission("v1", submission_id="sent-1")["verified"])
+        with self.assertRaises(ValueError):
+            self.submit(submission_id="відправлено")
+
+    def test_vacancy_directory_rejects_unsafe_names(self):
+        for directory in ["../escape", "nested/діалектик", "nested\\діалектик", "C:escape", "CON", "..", "_hidden"]:
+            with self.subTest(directory=directory):
+                self.store.vacancies[0]["directory"] = directory
+                with self.assertRaises(ValueError):
+                    self.lifecycle.vacancy("v1")
+
     def test_receipt_tampering_is_detected(self):
         result = self.submit()
         (self.root / result["snapshot"] / "receipt.json").write_text("{}", encoding="utf-8")

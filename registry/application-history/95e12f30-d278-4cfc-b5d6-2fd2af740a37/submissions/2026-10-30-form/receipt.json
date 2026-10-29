@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "f6674e3a578ae0033f453d0c265de55c833d599adf9e20fa7d080c03312352fd",
+      "size": 12269,
+      "snapshot": "files/application/CV_ValentinNikolaev_jobtome_SeniorBackendDeveloperGoFullEuropea_3fff2945.docx",
+      "source": "registry/jobs/20261029_jobtome_95e12f30d2784cfcb5d62fd2af740a37/application/CV_ValentinNikolaev_jobtome_SeniorBackendDeveloperGoFullEuropea_3fff2945.docx"
+    }
+  ],
+  "channel": "recruitee",
+  "event_id": "submission:2026-10-30-form",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-10-30",
+  "positioning": "senior-backend",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/95e12f30-d278-4cfc-b5d6-2fd2af740a37/submissions/2026-10-30-form",
+  "submission_id": "2026-10-30-form",
+  "vacancy_id": "95e12f30-d278-4cfc-b5d6-2fd2af740a37"
+}
