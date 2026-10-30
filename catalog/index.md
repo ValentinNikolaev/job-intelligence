@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 89
+Total vacancies: 94
 
-- Found: 56
+- Found: 61
 - Applied: 29
 - Interview: 3
 - Withdrawn: 1
@@ -13,6 +13,11 @@ Total vacancies: 89
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-30 | [Salesforce](../registry/jobs/20261030_salesforce_2724f18a1d9249d098f915e2ef562de9/) | [Principal Software Engineer, Site Reliability (Agentforce Ops)](../registry/jobs/20261030_salesforce_2724f18a1d9249d098f915e2ef562de9/job.md) | United States | Jobspresso | Found | 2026-10-30 | [Jobspresso](https://jobspresso.co/job/principal-software-engineer-site-reliability-agentforce-ops/) | — | — | — | — | — |
+| 2026-10-30 | [RestaurantSupply.com](../registry/jobs/20261030_restaurantsupp_a1af4e023bd243d18b787b18f51f8c45/) | [Senior Full Stack PHP Developer, Product Catalogue and Quoting](../registry/jobs/20261030_restaurantsupp_a1af4e023bd243d18b787b18f51f8c45/job.md) | France, Germany, Italy, Spain, United Kingdom | Himalayas | Found | 2026-10-30 | [Himalayas](https://himalayas.app/companies/restaurantsupply-com/jobs/senior-full-stack-php-developer-product-catalogue-and-quoting?utm_source=api) | — | — | — | — | — |
+| 2026-10-30 | [Raiffeisen Bank](../registry/jobs/20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63/) | [Senior Golang Developer](../registry/jobs/20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63/job.md) | Київ, віддалено | Dou | Found | 2026-10-30 | [Dou](https://jobs.dou.ua/companies/raiffeisen/vacancies/360086/) | [Open](../registry/jobs/20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63/company.md) | — | — | — | — |
+| 2026-10-30 | [DATA.BET](../registry/jobs/20261030_data-bet_266167cdc4544a649fc2f86b59efbf4b/) | [Senior Golang Developer](../registry/jobs/20261030_data-bet_266167cdc4544a649fc2f86b59efbf4b/job.md) | віддалено | Dou | Found | 2026-10-30 | [Dou](https://jobs.dou.ua/companies/databet/vacancies/359593/) | [Open](../registry/jobs/20261030_data-bet_266167cdc4544a649fc2f86b59efbf4b/company.md) | — | — | — | — |
+| 2026-10-30 | [StableFlow](../registry/jobs/20261030_stableflow_59972f0966864002a0ed401f135f5086/) | [PHP developer](../registry/jobs/20261030_stableflow_59972f0966864002a0ed401f135f5086/job.md) | Харків, віддалено | Dou | Found | 2026-10-30 | [Dou](https://jobs.dou.ua/companies/stableflow/vacancies/10171/) | [Open](../registry/jobs/20261030_stableflow_59972f0966864002a0ed401f135f5086/company.md) | — | — | — | — |
 | 2026-10-30 | [Luna Labs srl](../registry/jobs/20261030_luna-labs-srl_80fa08979e294f73bb340db5d8f5bc36/) | [PHP Developer](../registry/jobs/20261030_luna-labs-srl_80fa08979e294f73bb340db5d8f5bc36/job.md) | Milan, Lombardy, Italy | Linkedin | Found | 2026-10-30 | [Linkedin](https://www.linkedin.com/jobs/view/4485213194/) | — | — | — | — | — |
 | 2026-10-30 | [REIZ TECH UAB](../registry/jobs/20261030_reiz-tech-uab_d17cc092f2cf408abaf792e57503f8a1/) | [SR. PHP DEVELOPER (LARAVEL OR SYMFONY)](../registry/jobs/20261030_reiz-tech-uab_d17cc092f2cf408abaf792e57503f8a1/job.md) | Worldwide | Himalayas | Found | 2026-10-30 | [Himalayas](https://himalayas.app/companies/reiz-tech-uab/jobs/sr-php-developer-laravel-or-symfony-2365293251?utm_source=api) | — | — | — | — | — |
 | 2026-10-30 | [Zup Innovation](../registry/jobs/20261030_zup-innovation_b423b3fe38134d1f950c4b35248ea192/) | [Pessoa Desenvolvedora Backend Golang Sênior](../registry/jobs/20261030_zup-innovation_b423b3fe38134d1f950c4b35248ea192/job.md) | Worldwide | Himalayas | Found | 2026-10-30 | [Himalayas](https://himalayas.app/companies/zup-innovation/jobs/pessoa-desenvolvedora-backend-golang-senior?utm_source=api) | — | — | — | — | — |
