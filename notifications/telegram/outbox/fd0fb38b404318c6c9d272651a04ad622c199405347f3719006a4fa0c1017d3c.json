@@ -1,0 +1,69 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-30T12:31:43Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Raiffeisen Bank",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63",
+      "score": 70,
+      "title": "Senior Golang Developer",
+      "url": "https://jobs.dou.ua/companies/raiffeisen/vacancies/360086/",
+      "vacancy_id": "c052cc2d-1607-4f70-af0c-9183ef55bd63"
+    },
+    {
+      "company": "DATA.BET",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261030_data-bet_266167cdc4544a649fc2f86b59efbf4b",
+      "score": 84,
+      "title": "Senior Golang Developer",
+      "url": "https://jobs.dou.ua/companies/databet/vacancies/359593/",
+      "vacancy_id": "266167cd-c454-4a64-9fc2-f86b59efbf4b"
+    },
+    {
+      "company": "StableFlow",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261030_stableflow_59972f0966864002a0ed401f135f5086",
+      "score": 68,
+      "title": "PHP developer",
+      "url": "https://jobs.dou.ua/companies/stableflow/vacancies/10171/",
+      "vacancy_id": "59972f09-6686-4002-a0ed-401f135f5086"
+    },
+    {
+      "company": "RestaurantSupply.com",
+      "country_codes": [
+        "FR",
+        "DE",
+        "IT",
+        "ES",
+        "GB"
+      ],
+      "directory": "20261030_restaurantsupp_a1af4e023bd243d18b787b18f51f8c45",
+      "score": 66,
+      "title": "Senior Full Stack PHP Developer, Product Catalogue and Quoting",
+      "url": "https://himalayas.app/companies/restaurantsupply-com/jobs/senior-full-stack-php-developer-product-catalogue-and-quoting?utm_source=api",
+      "vacancy_id": "a1af4e02-3bd2-43d1-8b78-7b18f51f8c45"
+    },
+    {
+      "company": "Kong",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261023_kong_7eff3857118d4336935d49021c6e9c55",
+      "score": 87,
+      "title": "Senior Software Engineer, Control Plane",
+      "url": "https://jobs.ashbyhq.com/kong/185f8e98-b9b5-4196-bf2c-d7c5cc84ec09",
+      "vacancy_id": "7eff3857-118d-4336-935d-49021c6e9c55"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "fd0fb38b404318c6c9d272651a04ad622c199405347f3719006a4fa0c1017d3c",
+  "schema_version": 2
+}
