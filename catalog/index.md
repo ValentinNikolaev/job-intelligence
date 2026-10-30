@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 88
+Total vacancies: 89
 
-- Found: 55
+- Found: 56
 - Applied: 29
 - Interview: 3
 - Withdrawn: 1
@@ -13,6 +13,7 @@ Total vacancies: 88
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-30 | [Luna Labs srl](../registry/jobs/20261030_luna-labs-srl_80fa08979e294f73bb340db5d8f5bc36/) | [PHP Developer](../registry/jobs/20261030_luna-labs-srl_80fa08979e294f73bb340db5d8f5bc36/job.md) | Milan, Lombardy, Italy | Linkedin | Found | 2026-10-30 | [Linkedin](https://www.linkedin.com/jobs/view/4485213194/) | — | — | — | — | — |
 | 2026-10-30 | [REIZ TECH UAB](../registry/jobs/20261030_reiz-tech-uab_d17cc092f2cf408abaf792e57503f8a1/) | [SR. PHP DEVELOPER (LARAVEL OR SYMFONY)](../registry/jobs/20261030_reiz-tech-uab_d17cc092f2cf408abaf792e57503f8a1/job.md) | Worldwide | Himalayas | Found | 2026-10-30 | [Himalayas](https://himalayas.app/companies/reiz-tech-uab/jobs/sr-php-developer-laravel-or-symfony-2365293251?utm_source=api) | — | — | — | — | — |
 | 2026-10-30 | [Zup Innovation](../registry/jobs/20261030_zup-innovation_b423b3fe38134d1f950c4b35248ea192/) | [Pessoa Desenvolvedora Backend Golang Sênior](../registry/jobs/20261030_zup-innovation_b423b3fe38134d1f950c4b35248ea192/job.md) | Worldwide | Himalayas | Found | 2026-10-30 | [Himalayas](https://himalayas.app/companies/zup-innovation/jobs/pessoa-desenvolvedora-backend-golang-senior?utm_source=api) | — | — | — | — | — |
 | 2026-10-29 | [WhiteTech](../registry/jobs/20261029_whitetech_c947de36ede34aaa8e23ddccbfb8e8bd/) | [Lead PHP Developer](../registry/jobs/20261029_whitetech_c947de36ede34aaa8e23ddccbfb8e8bd/job.md) | Afghanistan, Albania, Algeria, Andorra, Angola, Antarctica, Armenia, Austria, Azerbaijan, Bahrain, Belarus, Belgium, Benin, Bosnia and Herzegovina, Botswana, Bouvet Island, Bulgaria, Burkina Faso, Burundi, Cabo Verde, Cameroon, Central African Republic, Chad, Comoros, Congo, Congo, The Democratic Republic of the, Cook Islands, Croatia, Curaçao, Cyprus, Czechia, Côte d'Ivoire, Denmark, Djibouti, Egypt, Equatorial Guinea, Eritrea, Estonia, Eswatini, Ethiopia, Faroe Islands, Finland, France, French Guiana, French Southern Territories, Gabon, Gambia, Georgia, Germany, Ghana, Gibraltar, Greece, Greenland, Guadeloupe, Guernsey, Guinea, Guinea-Bissau, Heard Island and McDonald Islands, Holy See (Vatican City State), Hungary, Iceland, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jersey, Jordan, Kazakhstan, Kenya, Kosovo, Kuwait, Kyrgyzstan, Latvia, Lebanon, Lesotho, Liberia, Libya, Liechtenstein, Lithuania, Luxembourg, Madagascar, Malawi, Mali, Malta, Martinique, Mauritania, Mauritius, Mayotte, Moldova, Monaco, Montenegro, Morocco, Mozambique, Namibia, Netherlands, Niger, Nigeria, North Macedonia, Norway, Oman, Palestine, State of, Poland, Portugal, Qatar, Romania, Rwanda, Réunion, Saint Barthélemy, Saint Helena, Ascension and Tristan da Cunha, Saint Martin (French part), Saint Pierre and Miquelon, San Marino, Sao Tome and Principe, Saudi Arabia, Senegal, Serbia, Seychelles, Sierra Leone, Sint Maarten (Dutch part), Slovakia, Slovenia, Somalia, South Africa, South Sudan, Spain, Sudan, Svalbard and Jan Mayen, Sweden, Switzerland, Syrian Arab Republic, Tajikistan, Tanzania, Togo, Tunisia, Turkey, Turkmenistan, Uganda, Ukraine, United Arab Emirates, United Kingdom, Uzbekistan, Western Sahara, Yemen, Zambia, Zimbabwe, Åland Islands | Himalayas | Found | 2026-10-29 | [Himalayas](https://himalayas.app/companies/whitetech/jobs/lead-php-developer?utm_source=api) | — | — | — | — | — |
