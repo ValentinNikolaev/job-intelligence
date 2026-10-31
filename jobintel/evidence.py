@@ -66,9 +66,9 @@ def evidence_questions(bank: Mapping[str, Any], root: Path, identifiers: Sequenc
     if set(identifiers) - known:
         raise EvidenceError('unknown selected evidence ids')
     prompts = dict(problem='What problem or constraint did this work address?',
-        contribution='What did you personally deliver or decide?', scope='Which system, users or team were affected?',
-        decision='Which approach did you choose, and what constraints influenced it?',
-        consequence='What changed after the work, and what source confirms it?',
+        contribution='What was your personal contribution, if any, and what belonged to others?', scope='Which system, users or team were affected?',
+        decision='Who chose the approach, what was your part, and which constraints are confirmed?',
+        consequence='What change, if any, is confirmed after the work? Unknown or unmeasured results may stay unknown.',
         delivery_status='Was this proposed, implemented or deployed? What confirms that stage?',
         responsibility='Which decisions were yours, which did you influence, and which belonged to others?')
     questions = []

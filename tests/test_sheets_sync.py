@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import unittest
+from copy import deepcopy
 
 from jobintel.sheets_sync import (
     APPLICATION_TAB,
     APPLICATION_HEADERS,
     HISTORY_TAB,
+    HISTORY_COLUMNS,
     SYSTEM_COLUMNS,
     SheetsSyncError,
     build_batch_requests,
@@ -38,23 +40,81 @@ def observed(rows: list[dict]) -> dict:
     return {"schema_version": 1, "sheet_revision": "revision-1", "headers": list(APPLICATION_HEADERS), "rows": rows}
 
 
+def complete_observed(rows: list[dict] | None = None) -> dict:
+    result = observed(rows or [])
+    result.update({"spreadsheet_id": "spreadsheet-1", "sheet_id": 0, "grid_properties": {"rowCount": 1000},
+                   "grid_sha256": "sha256:application", "complete_grid": True,
+                   "next_row": max((row["row_index"] for row in result["rows"]), default=1) + 1})
+    result["history"] = {"schema_version": 1, "headers": list(HISTORY_COLUMNS), "rows": [],
+                         "spreadsheet_id": "spreadsheet-1", "sheet_id": 1001,
+                         "grid_properties": {"rowCount": 1000}, "grid_sha256": "sha256:history",
+                         "complete_grid": True, "next_row": 2}
+    return result
+
+
+def requests_for(plan: dict, planning: dict, fresh: dict | None = None) -> list[dict]:
+    fresh = fresh if fresh is not None else deepcopy(planning)
+    return build_batch_requests(plan, planning_observed=planning, fresh_observed=fresh,
+                                sheet_ids={APPLICATION_TAB: 0, HISTORY_TAB: 1001},
+                                application_next_row=fresh["next_row"], history_next_row=fresh["history"]["next_row"])
+
+
 class SheetsSyncTests(unittest.TestCase):
     def test_observation_preserves_append_space_for_unknown_cells(self) -> None:
-        metadata = {"sheets": [{"properties": {"title": title, "gridProperties": {"rowCount": 1000, "columnCount": 28}}} for title in (APPLICATION_TAB, HISTORY_TAB)]}
+        metadata = {"spreadsheetId": "spreadsheet-1", "sheets": [{"properties": {"title": title, "sheetId": index, "gridProperties": {"rowCount": 1000, "columnCount": 28}}} for index, title in enumerate((APPLICATION_TAB, HISTORY_TAB))]}
         ranges = [f"'{title}'!A1:AB1000" for title in (APPLICATION_TAB, HISTORY_TAB)]
-        cells = {"sheets": [{"properties": {"title": title}, "data": [{"rowData": [
+        cells = {"spreadsheetId": "spreadsheet-1", "sheets": [{"properties": {"title": title, "sheetId": index}, "data": [{"rowData": [
             {"values": [literal_cell_data("application_id"), {}]}, {},
             {"values": [{}, literal_cell_data("unlabelled manual note")]},
-        ]}]} for title in (APPLICATION_TAB, HISTORY_TAB)]}
+        ]}]} for index, title in enumerate((APPLICATION_TAB, HISTORY_TAB))]}
         result = observe_workbook(metadata, cells, requested_ranges=ranges)
         self.assertEqual(4, result["next_row"])
         self.assertEqual(["application_id"], result["headers"])
         self.assertEqual(4, result["history"]["next_row"])
+        changed_cells = deepcopy(cells)
+        changed_cells["sheets"][0]["data"][0]["rowData"][2]["values"][1] = literal_cell_data("edited")
+        changed = observe_workbook(metadata, changed_cells, requested_ranges=ranges)
+        self.assertNotEqual(result["grid_sha256"], changed["grid_sha256"])
+        self.assertEqual(result["rows"], changed["rows"])
         with self.assertRaises(SheetsSyncError):
             observe_workbook(metadata, cells, requested_ranges=[item.replace("1000", "10") for item in ranges])
         cells["sheets"][0]["data"][0]["startRow"] = 2
         with self.assertRaises(SheetsSyncError):
             observe_workbook(metadata, cells, requested_ranges=ranges)
+
+    def test_fresh_cell_response_identity_and_content_drive_prewrite_guard(self) -> None:
+        metadata = {"spreadsheetId": "spreadsheet-1", "sheets": [
+            {"properties": {"title": title, "sheetId": sheet_id,
+                            "gridProperties": {"rowCount": 2, "columnCount": len(headers)}}}
+            for title, sheet_id, headers in ((APPLICATION_TAB, 0, APPLICATION_HEADERS),
+                                             (HISTORY_TAB, 1001, HISTORY_COLUMNS))
+        ]}
+        cells = {"spreadsheetId": "spreadsheet-1", "sheets": [
+            {"properties": {"title": title, "sheetId": sheet_id}, "data": [{"rowData": [
+                {"values": [literal_cell_data(header) for header in headers]},
+            ]}]} for title, sheet_id, headers in ((APPLICATION_TAB, 0, APPLICATION_HEADERS),
+                                                  (HISTORY_TAB, 1001, HISTORY_COLUMNS))
+        ]}
+        ranges = [f"'{title}'!A1:{'AB' if title == APPLICATION_TAB else 'H'}2"
+                  for title in (APPLICATION_TAB, HISTORY_TAB)]
+        planning = observe_workbook(metadata, cells, requested_ranges=ranges)
+        plan = build_sync_plan(source(), planning)
+        self.assertTrue(requests_for(plan, planning))
+
+        foreign = deepcopy(cells)
+        foreign["spreadsheetId"] = "another-spreadsheet"
+        with self.assertRaisesRegex(SheetsSyncError, "different spreadsheet"):
+            observe_workbook(metadata, foreign, requested_ranges=ranges)
+
+        stale_metadata = deepcopy(metadata)
+        stale_metadata["sheets"][0]["data"] = deepcopy(cells["sheets"][0]["data"])
+        fresh_cells = deepcopy(cells)
+        fresh_cells["sheets"][0]["data"][0]["rowData"].append(
+            {"values": [literal_cell_data("manual edit")]})
+        fresh = observe_workbook(stale_metadata, fresh_cells, requested_ranges=ranges)
+        self.assertNotEqual(planning["grid_sha256"], fresh["grid_sha256"])
+        with self.assertRaisesRegex(SheetsSyncError, "sheet changed since planning"):
+            requests_for(plan, planning, fresh)
 
     def test_export_is_canonical_and_hashed(self) -> None:
         exported = build_export(source())
@@ -146,8 +206,9 @@ class SheetsSyncTests(unittest.TestCase):
             build_sync_plan(source(), {**observed([]), "history": history})
 
     def test_incremental_requests_do_not_write_manual_columns(self) -> None:
-        plan = build_sync_plan(source(), observed([]), synced_at="2026-09-21T12:00:00Z")
-        requests = build_batch_requests(plan, sheet_ids={APPLICATION_TAB: 0, HISTORY_TAB: 1001}, application_next_row=2, history_next_row=2)
+        planning = complete_observed()
+        plan = build_sync_plan(source(), planning, synced_at="2026-09-21T12:00:00Z")
+        requests = requests_for(plan, planning)
         written_columns = [item["updateCells"]["range"]["startColumnIndex"] for item in requests if "updateCells" in item]
         self.assertNotIn(len(SYSTEM_COLUMNS) + 4, written_columns)
         self.assertTrue(requests)
@@ -168,16 +229,52 @@ class SheetsSyncTests(unittest.TestCase):
         row = {"row_index": 2, "cells": {"application_id": "app-1", "vacancy_id": "vac-1"}}
         history = {"schema_version": 1, "headers": ["event_id", "application_id", "vacancy_id", "status", "effective_at", "recorded_at", "reason", "note"],
                    "rows": [{"row_index": 2, "cells": {"event_id": "event-1", "application_id": "app-1"}}]}
-        plan = build_sync_plan(exported, {**observed([row]), "history": history})
+        planning = complete_observed([row])
+        planning["history"]["rows"] = history["rows"]
+        planning["history"]["next_row"] = 3
+        plan = build_sync_plan(exported, planning)
         self.assertEqual(1, plan["summary"]["deletes"])
         self.assertEqual(1, plan["summary"]["history_deletes"])
-        requests = build_batch_requests(plan, sheet_ids={APPLICATION_TAB: 0, HISTORY_TAB: 1001},
-                                        application_next_row=3, history_next_row=3)
+        requests = requests_for(plan, planning)
         self.assertEqual(2, sum("deleteDimension" in request for request in requests))
         self.assertTrue(verify_sync_plan(plan, {**observed([]), "history": {**history, "rows": []}})["verified"])
         row["cells"]["my_notes"] = "keep"
         blocked = build_sync_plan(exported, {**observed([row]), "history": history})
         self.assertEqual("excluded_application_has_manual_data", blocked["conflicts"][0]["reason"])
+
+    def test_prewrite_guard_detects_row_manual_history_and_grid_drift(self) -> None:
+        planning = complete_observed([{"row_index": 2, "cells": {"application_id": "other", "my_notes": "keep"}}])
+        plan = build_sync_plan(source(), planning)
+        self.assertTrue(requests_for(plan, planning))
+        changes = [
+            ("row order", lambda fresh: fresh["rows"][0].update(row_index=3)),
+            ("manual cell", lambda fresh: fresh["rows"][0]["cells"].update(my_notes="changed")),
+            ("history", lambda fresh: fresh["history"].update(grid_sha256="sha256:changed")),
+            ("unknown cell", lambda fresh: fresh.update(grid_sha256="sha256:changed")),
+            ("grid identity", lambda fresh: fresh.update(sheet_id=99)),
+        ]
+        for label, change in changes:
+            with self.subTest(label=label):
+                fresh = deepcopy(planning)
+                change(fresh)
+                with self.assertRaises(SheetsSyncError):
+                    requests_for(plan, planning, fresh)
+
+    def test_prewrite_guard_rejects_missing_full_snapshot_and_tampered_plan(self) -> None:
+        planning = complete_observed()
+        plan = build_sync_plan(source(), planning)
+        fresh = deepcopy(planning)
+        del fresh["history"]["complete_grid"]
+        with self.assertRaises(SheetsSyncError):
+            requests_for(plan, planning, fresh)
+        tampered = deepcopy(plan)
+        tampered["operations"][0]["cells"]["company"] = "wrong"
+        with self.assertRaises(SheetsSyncError):
+            requests_for(tampered, planning)
+        changed_planning = deepcopy(planning)
+        changed_planning["grid_sha256"] = "sha256:changed"
+        with self.assertRaises(SheetsSyncError):
+            requests_for(plan, changed_planning)
 
     def test_setup_renames_only_confirmed_blank_sheet1_and_adds_views(self) -> None:
         metadata = {"sheets": [{"properties": {"title": "Sheet1", "sheetId": 0}}]}

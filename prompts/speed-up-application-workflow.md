@@ -1,5 +1,12 @@
 # Speed up application preparation and make repository synchronization reliable
 
+> **Historical task brief — not an active workflow.** The body records an earlier
+> request and may contain superseded selectors, limits or publication commands.
+> Reading it does not authorize rerunning that task. For new work, follow
+> current `AGENTS.md`, `prompts/job-intelligence-workflow.md`,
+> `config/application-profile.yaml` and the reviewed repository finalizer.
+> Do not execute direct GitHub tree/commit/ref writes from historical examples.
+
 Improve the Job Intelligence preparation workflow end to end, with priority on the
 six-CV editorial rebuild path. Read `AGENTS.md`, `config/codex-workflows.yaml`,
 `prompts/job-intelligence-workflow.md`, the `$job-intelligence-workflow` skill, and

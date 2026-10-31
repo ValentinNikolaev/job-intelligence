@@ -106,12 +106,20 @@ scheduled instructions. Only Codex uses the connected Google Drive plugin. Proje
 code prepares plans/checksums/receipts and never calls Google APIs; GitHub Actions has
 no Google credentials.
 
-Each confirmed application with a complete four-document package is one row keyed by hidden `application_id`; the visible vacancy ID connects it to internal resources. User notes,
-contacts, next actions and due dates belong to the user. Sorting rows is safe because
-each run reads IDs again. System status changes use `python run.py status`, not sheet
-edits. Duplicate IDs, newer/conflicting revisions and changed immutable events stop
-sync. External content is written as literal strings. A no-op changes no cells or
-timestamps. Actual writes require exact readback verification.
+Each confirmed application with a complete required package is one row keyed by hidden
+`application_id`; the visible vacancy ID connects it to internal resources. The default
+package requires the CV, analysis and interview preparation; the letter is conditional.
+User notes, contacts, next actions and due dates belong to the user. Before compiling
+row-indexed writes, the task reads both complete managed grids again and compares the
+fresh observation with the snapshot bound to its plan. A changed row order, manual cell,
+history cell or grid identity stops the write and requires a new plan. This detects
+intervening changes but cannot close the race between the last read and the write;
+[Sheets batchUpdate](https://developers.google.com/workspace/sheets/api/reference/rest/v4/spreadsheets/batchUpdate)
+applies its requests atomically without guaranteeing the resulting spreadsheet will
+reflect only those changes when collaborators edit concurrently. System status changes
+use `python run.py status`, not sheet edits. Duplicate IDs, newer/conflicting revisions
+and changed immutable events stop sync. External content is written as literal strings.
+A no-op changes no cells or timestamps. Actual writes require exact readback verification.
 
 Backups preserve all required collections/indexes, status/feedback, vacancy artifacts,
 selected historical submission evidence and independently timestamped Sheets manual

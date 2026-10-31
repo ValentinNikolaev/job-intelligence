@@ -164,7 +164,9 @@ final `cv.md`.
 
 Start only after the main agent fixes the final CV. Assign exclusive ownership:
 
-- Cover letter receives this vacancy, final CV, verified research, and only the
+- Only in the separate `--document cover-letter` pass after the apply route confirms
+  a required form field or email-only application, cover letter receives this
+  vacancy, final CV, verified research, and only the
   candidate evidence needed to ground its selected stories. It invokes
   `$write-cover-letter` and writes only `cover-letter.md`. In standard format it needs four to six body
    paragraphs, two internal complementary evidence strands, and a company-specific research hook.
@@ -214,8 +216,8 @@ not repeat separate hiring-manager, red-flag, bullet, section, or ATS review loo
    XYZ principle where evidence permits it; without a numeric Y, use a supported factual
    outcome. Keep bullets concise, credible, results-oriented, and scannable. Build a
    vacancy-specific Skills section with 12–18 supported hard
-   skills, ordered by relevance. Use exact vacancy terminology only when the candidate
-   evidence supports it. Under every role in Experience, add a concise
+    skills, ordered by relevance. Use exact vacancy terminology only when the candidate
+    evidence supports it. Under every detailed role in Experience, add a concise
     `Technologies: ...` line containing only technologies supported for that specific
     employer or engagement. Never infer a technology across employers, copy the global
     Skills list into each role, or omit these lines as repetition. Do not keyword-stuff.
@@ -360,12 +362,13 @@ must not be wrapped in a Markdown code fence.
 An ATS-friendly tailored CV with simple headings, no tables, columns, graphics, icons, or
 decorative elements. Preserve candidate contact details and factual chronology. Include
 at least Summary, Skills, Experience, Education, and Languages; include Certifications
-when supported. The Experience section must not list roles or employment experience older
-than 10 years. The line immediately after the candidate name must be a
+when supported. The Experience section follows the configured start and recency
+limits in `config/application-profile.yaml`. The line immediately after the candidate name must be a
 vacancy-aligned professional headline derived from `vacancy.metadata.title`, while
 remaining factually supported by the candidate source documents. This is the final
-canonical tailored CV. Every Experience role must include a non-empty,
-evidence-backed `Technologies: ...` line specific to that role.
+canonical tailored CV. Every detailed Experience role must include a non-empty,
+evidence-backed `Technologies: ...` line specific to that role. An older permitted
+heading-only chronology entry has no body.
 
 The `Summary` must be one concise paragraph of 50–110 words. Open with the candidate's
 professional identity and scope, then foreground the most relevant supported strengths
@@ -405,6 +408,9 @@ research fact/inference/unknown labels, source links, the requested initial audi
 meaningful Before → After examples, recruiter concerns, final five scores, and exactly one
 overall recommendation: Strong Apply, Apply, Apply With Reservations, Low Priority, or
 Skip, with a brief explanation.
+Rank material eligibility and recruiter risks by their effect on this vacancy. State
+what evidence is missing and what question would resolve it; do not turn an unknown
+into a claimed gap or pad the analysis with low-signal concerns.
 
 ### `interview_preparation_markdown`
 
@@ -428,11 +434,12 @@ thoughtful questions for the company.
 
 ## Final checks
 
-- Before validating a full package, write `quality.yaml` under its vacancy draft with
-  `schema_version: 3`, `workflow: two-wave`, invoked cover-letter skill name/version,
-  `workbench_complete: true`, two internal evidence strands with `candidate_source`, a
-  company-motivation fact and `source_url`, and final `claim_grounding: true` plus
-  `cross_file_consistency: true`.
+- Before validating, write `quality.yaml` under its vacancy draft with
+  `schema_version: 3`, `workflow: two-wave`, and final `claim_grounding: true`
+  plus `cross_file_consistency: true`. Only when the selected document is a
+  cover letter, record the invoked skill name/version, completed workbench,
+  two internal evidence strands with `candidate_source`, and a company-motivation
+  fact with `source_url`.
 
 - Follow `docs/application-review-contract.md` as the executable v3 field contract.
   During the existing evidence pass, collect exact primary-source excerpts for
@@ -475,7 +482,7 @@ thoughtful questions for the company.
 - Do not mention other vacancies.
 - Do not submit an application or contact the company.
 
-## Quality v2 evidence and final artifact review
+## Quality schema 3 evidence and final artifact review
 
 Follow `docs/application-quality.md` for the exact bank, ledger, and receipt schemas.
 Read the validated `registry/evidence/achievements.yaml` bank in addition to immutable
@@ -497,12 +504,13 @@ role. Do not declare approval to bypass missing facts or fill a bullet quota.
 Senior Backend and hands-on
 Tech Lead are positioning choices, never permission to alter employment titles.
 
-The default is one combined review. For a user-selected priority application, a
-separate reviewer may audit the final CV; record the actual reviewer and never call
-an inline self-review independent. Do not impersonate a named hiring manager.
+The default is one combined audit and edit pass. For Senior, Tech Lead, Staff,
+Principal, or Architect positioning, the independent final CV editorial review
+above is mandatory. Record the actual reviewer and never call an inline self-review
+independent. Do not impersonate a named hiring manager.
 
-After publication, inspect the generated DOCX using `documents validate`. The v2
-publisher already checks text preservation before publishing. Use optional PDF export
+After publication, inspect the generated DOCX using `documents validate`. The
+publisher checks text preservation before publishing. Use optional PDF export
 and page rendering when the delivery channel needs PDF. Inspect rendered pages before
 issuing a hash-bound visual-review receipt. A machine text check is not visual review
 or proof of acceptance by a particular ATS. Keep visual status pending until inspected.

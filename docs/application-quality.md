@@ -249,7 +249,8 @@ source/verification commentary, gap notes, placeholders, or drafting language.
 allows CV 300–800 and letter 150–450, with at least six Experience bullets and three
 body paragraphs. Recommended compact targets are CV 300–500 and letter 150–250.
 
-Channel is independent of CV/document format. With quality schema 2,
+Channel is independent of CV/document format. The channel rules introduced in
+schema 2 remain part of schema 3 for newly selected letters:
 `cover_letter.channel: email` validates a short application email at 100–180
 words and three to four substantive body paragraphs. Aim editorially for
 100–130 body words; the validator counts the complete Markdown, including any

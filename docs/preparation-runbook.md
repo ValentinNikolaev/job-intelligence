@@ -34,9 +34,10 @@ Its `shared_candidate_context` lists the immutable profile sources and a verifie
 evidence packet under ignored `.codex-work/preparation-shared/`. Read those shared
 candidate facts once for the selected batch. Keep each vacancy's posting, match,
 research, claims, CV, and quality receipt independent; never copy a vacancy-specific
-judgment or paragraph into another package. Use `config/cv-editorial-knowledge.yaml` as the CV
-career boundary: PDFfiller is the earliest permitted employer; exclude employers whose work started
-before PDFfiller and roles ending nine or more years before the reference month. Never mention
+judgment or paragraph into another package. Resolve the CV career boundary from
+`config/application-profile.yaml` and preflight's effective preparation context;
+`config/cv-editorial-knowledge.yaml` supplies generic editorial guidance. Exclude
+employers outside the configured start and recency limits. Never mention
 excluded employers in any CV section, including Summary or Skills. Preserve every employer within
 this approved window in one Experience section, with consistent H3 employer/role/date headings and
 source-backed dates. Older permitted roles may have a dated heading with an empty body. Keep reverse

@@ -138,19 +138,21 @@ drafting application artifacts. Preserve both model labels as content provenance
 2. The main agent reconciles the three handoffs, checks every proposed claim against the
    candidate evidence, and writes the final `cv.md`. Wave 2 cannot start before this CV
    is fixed.
-3. In Wave 2, run cover-letter, interview-preparation, and application-analysis roles in
-   parallel when slots are available. They exclusively own `cover-letter.md`,
-   `interview-preparation.md`, and `analysis.md`, respectively. Cover letter receives
-   the vacancy, final CV, verified research, and only required candidate evidence and
-   must invoke `$write-cover-letter`; interview receives the vacancy, final CV,
+3. In default Wave 2, run interview-preparation and application-analysis roles in
+   parallel when slots are available. They exclusively own
+   `interview-preparation.md` and `analysis.md`, respectively. A cover-letter role
+   runs only in a separate `--document cover-letter` pass after the apply route
+   confirms a required form field or email-only application; it receives the vacancy,
+   final CV, verified research, and only required candidate evidence and invokes
+   `$write-cover-letter`. Interview receives the vacancy, final CV,
    requirements/risks handoff, and verified research without browsing again; analysis
    receives the vacancy, final CV, and all Wave 1 handoffs.
 4. Before validation, write `.codex-work/application/<directory>/quality.yaml`, schema
    version 3, with `workflow: two-wave`, the exact preflight
-   `preparation_context_version`; cover-letter skill name/version;
-   `workbench_complete: true`; two internal evidence strands with `candidate_source`; a
-   company-motivation fact and `source_url`; and final `claim_grounding: true` and
-   `cross_file_consistency: true`.
+   `preparation_context_version`, and final `claim_grounding: true` and
+   `cross_file_consistency: true`. For a selected cover letter, also record its
+   skill name/version, completed workbench, two internal evidence strands with
+   `candidate_source`, and a company-motivation fact with `source_url`.
    Apply `docs/application-review-contract.md` in these same passes: claims ledger
    schema 2, complete reviewed role inventory, contextual measurements and a final
    letter review bound to text, priorities, primary-source snapshot and current voice.

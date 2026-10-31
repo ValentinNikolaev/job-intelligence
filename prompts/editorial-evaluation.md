@@ -1,7 +1,9 @@
 # Blind editorial regression evaluation
 
-Run this bounded workflow after changing application prompts, editorial knowledge or
-their review contracts. It creates no application and requires no vacancy selection.
+Run this bounded workflow before changing application prompts, editorial knowledge or
+their review contracts to establish a baseline, then on the final changed policy.
+The final pass needs fresh decisions bound to the final policy hash; never relabel
+baseline decisions. It creates no application and requires no vacancy selection.
 Never call a model endpoint from project code. Never read candidate records for these
 synthetic cases and never update an existing CV, evidence bank or package.
 

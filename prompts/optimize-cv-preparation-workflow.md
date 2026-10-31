@@ -1,5 +1,12 @@
 # Optimize CV preparation throughput without weakening evidence gates
 
+> **Historical task brief — not an active workflow.** The body records an earlier
+> request and may contain superseded selectors, limits or publication commands.
+> Reading it does not authorize rerunning that task. For new work, follow
+> current `AGENTS.md`, `prompts/job-intelligence-workflow.md`,
+> `config/application-profile.yaml` and the reviewed repository finalizer.
+> Do not execute direct GitHub tree/commit/ref writes from historical examples.
+
 ## Objective
 
 Reduce elapsed time and failed reruns for an explicitly selected CV-only preparation

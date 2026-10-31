@@ -123,7 +123,7 @@ explicit single-document request, use the full-package flow below.
    - ensure those recent roles contain at least 60% of all Experience bullets;
    - keep roles ending more than five years ago compact. For a Senior or Tech Lead
      CV, aim for three distinct, non-duplicative bullets for each detailed role
-     within the ten-year window when the sources support them. A role with only one
+      within the configured career window when the sources support them. A role with only one
      or two bullets needs a source review and a deliberate editorial decision; do
      not publish that shape by default or invent another achievement to fill it;
    - count bullets by role and read the finished Experience section as a hiring
@@ -189,8 +189,11 @@ explicit single-document request, use the full-package flow below.
    or company-identity fact and record the reason in its handoff. After all three Wave 1
    handoffs finish, the main agent must reconcile conflicts, reject unsupported claims,
    and synthesize the final vacancy-specific `cv.md` without repeating the research.
-9. Start Wave 2 only after `cv.md` is final. Run three independent roles in parallel
-   when slots are available, with exclusive ownership of one final file each:
+9. Start default Wave 2 only after `cv.md` is final. Run the interview-preparation
+   and application-analysis roles in parallel when slots are available, with
+   exclusive ownership of one final file each. A cover-letter role runs only in
+   a separate `--document cover-letter` pass after the apply route confirms a
+   required form field or email-only application:
    - conditional cover letter (only for a required form field or email-only route, in a separate pass): receive this vacancy, final CV, verified `parts/research.md`, and only
      the candidate evidence required to ground the selected stories; invoke the
      highest installed version of `$write-cover-letter` in Draft mode and write only
@@ -215,7 +218,7 @@ explicit single-document request, use the full-package flow below.
    - application analysis: receive this vacancy, final CV, and all three Wave 1
      handoffs; synthesize the required audit, research, requirements, gaps, changes,
      scores, and recommendation and write only `analysis.md`.
-   No role may edit another role's file. Keep the
+   No role may edit another role's file. When a letter is selected, keep the
    `$write-cover-letter` workbench internal and run its claim-grounding check. If that
    skill is unavailable, stop; never substitute generic or retired inline letter logic.
 10. The main agent must perform one cross-file consistency and claim-grounding pass after
@@ -237,11 +240,12 @@ explicit single-document request, use the full-package flow below.
 12. Before validation, write `quality.yaml`, schema version 3, in the vacancy draft.
     Copy the exact `preparation_context_version` from this batch's preflight; a
     missing or changed value fails before publication. Never relabel old drafts.
-    `workflow: two-wave`; cover-letter skill name, version, and completed workbench;
-    two internal evidence strands with candidate sources; company-motivation fact and source URL;
-    and final claim grounding plus cross-file consistency results.
-    Record the letter channel (email or attachment). Complete the canonical
-    employer-letter delivery check on the exact final text after simplifying.
+    Record `workflow: two-wave` and final claim grounding plus cross-file
+    consistency results. Only for a selected cover letter, record the skill
+    name/version, completed workbench, two internal evidence strands with candidate
+    sources, company-motivation fact and source URL, and letter channel (email or
+    attachment). Complete the canonical employer-letter delivery check on the
+    exact final text after simplifying.
     Apply `docs/application-review-contract.md` in the same passes: enrich only the
     selected evidence with exact contextual excerpts; list unknowns with `evidence
     questions`; use claims ledger schema 2 with attributed measurement records;

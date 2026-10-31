@@ -199,7 +199,7 @@ def build_sync_plan(
     result = {
         "schema_version": SCHEMA_VERSION,
         "export_payload_sha256": source["payload_sha256"],
-        "observed_sheet_revision": sheet["sheet_revision"],
+        "observed_snapshot_sha256": _observation_hash(observed),
         "synced_at": synced_at,
         "manual_columns": list(MANUAL_COLUMNS),
         "operations": operations,
@@ -308,10 +308,17 @@ def observed_from_google(metadata: Mapping[str, Any], cells: Mapping[str, Any], 
     sheet = next((item for item in metadata.get("sheets", []) if item.get("properties", {}).get("title") == tab), None)
     if not isinstance(sheet, Mapping):
         raise SheetsSyncError(f"metadata has no {tab!r} tab")
-    cell_sheet = next((item for item in cells.get("sheets", []) if item.get("properties", {}).get("title") == tab), {})
-    data = sheet.get("data") or cell_sheet.get("data") or cells.get("data")
+    properties = _mapping(sheet.get("properties"), "sheet properties")
+    if not _text(metadata.get("spreadsheetId")) or not isinstance(properties.get("sheetId"), int):
+        raise SheetsSyncError("observation requires spreadsheet and tab IDs")
+    if cells.get("spreadsheetId") != metadata["spreadsheetId"]:
+        raise SheetsSyncError("CellData response belongs to a different spreadsheet")
+    cell_sheet = next((item for item in cells.get("sheets", []) if item.get("properties", {}).get("title") == tab), None)
+    if not isinstance(cell_sheet, Mapping) or cell_sheet.get("properties", {}).get("sheetId") != properties["sheetId"]:
+        raise SheetsSyncError(f"CellData response has no matching {tab} tab identity")
+    data = cell_sheet.get("data")
     if not isinstance(data, list) or not data:
-        return {"schema_version": 1, "sheet_revision": _text(metadata.get("spreadsheetId")), "headers": [], "rows": []}
+        raise SheetsSyncError(f"observation requires complete CellData for {tab}")
     if len(data) != 1 or data[0].get("startRow", 0) != 0 or data[0].get("startColumn", 0) != 0:
         raise SheetsSyncError("read each managed tab as one complete range starting at A1")
     row_data = data[0].get("rowData") or data[0].get("rowData", [])
@@ -329,7 +336,10 @@ def observed_from_google(metadata: Mapping[str, Any], cells: Mapping[str, Any], 
         mapped = {header: _cell_text(values[column]) if column < len(values) else "" for column, header in enumerate(headers) if header}
         if any(mapped.values()):
             rows.append({"row_index": index, "cells": mapped})
-    return {"schema_version": 1, "sheet_revision": _text(metadata.get("spreadsheetId")), "headers": headers, "rows": rows, "next_row": next_row}
+    return {"schema_version": 1, "spreadsheet_id": _text(metadata.get("spreadsheetId")),
+            "sheet_id": properties["sheetId"], "grid_properties": properties.get("gridProperties"),
+            "grid_sha256": _sha256(data), "headers": headers, "rows": rows, "next_row": next_row,
+            "complete_grid": True}
 
 
 def workbook_read_ranges(metadata: Mapping[str, Any]) -> list[str]:
@@ -394,10 +404,16 @@ def build_setup_requests(metadata: Mapping[str, Any], *, confirmed_blank_sheet1:
     return requests
 
 
-def build_batch_requests(plan: Mapping[str, Any], *, sheet_ids: Mapping[str, int], application_next_row: int, history_next_row: int) -> list[dict[str, Any]]:
+def build_batch_requests(plan: Mapping[str, Any], *, planning_observed: Mapping[str, Any],
+                         fresh_observed: Mapping[str, Any], sheet_ids: Mapping[str, int],
+                         application_next_row: int, history_next_row: int) -> list[dict[str, Any]]:
     """Compile a conflict-free plan into raw connector batchUpdate requests."""
     if plan.get("conflicts"):
         raise SheetsSyncError("cannot build requests for a conflicting plan")
+    assert_fresh_observation(plan, planning_observed, fresh_observed, sheet_ids=sheet_ids)
+    if (application_next_row != fresh_observed.get("next_row")
+            or history_next_row != fresh_observed["history"].get("next_row")):
+        raise SheetsSyncError("append positions must come from the fresh observation")
     app_id, history_id = _sheet_id(sheet_ids, APPLICATION_TAB), _sheet_id(sheet_ids, HISTORY_TAB)
     requests: list[dict[str, Any]] = []
     next_app, next_history = application_next_row, history_next_row
@@ -435,6 +451,41 @@ def build_batch_requests(plan: Mapping[str, Any], *, sheet_ids: Mapping[str, int
                                            "fields": "hiddenByUser,pixelSize"}},
         ])
     return requests
+
+
+def _sha256(value: Any) -> str:
+    return "sha256:" + hashlib.sha256(canonical_json(value).encode("utf-8")).hexdigest()
+
+
+def _observation_hash(observed: Mapping[str, Any]) -> str:
+    return _sha256(observed)
+
+
+def assert_fresh_observation(plan: Mapping[str, Any], planning: Mapping[str, Any],
+                             fresh: Mapping[str, Any], *, sheet_ids: Mapping[str, int]) -> None:
+    """Reject known changes between planning and the last complete grid read.
+
+    This is a prewrite check, not an atomic compare-and-swap with Google Sheets.
+    """
+    if plan.get("schema_version") != SCHEMA_VERSION or plan.get("payload_sha256") != payload_hash(plan):
+        raise SheetsSyncError("invalid plan hash or schema")
+    for name, snapshot in (("planning", planning), ("fresh", fresh)):
+        if not isinstance(snapshot, Mapping):
+            raise SheetsSyncError(f"{name} observation is required")
+        for tab, value in ((APPLICATION_TAB, snapshot), (HISTORY_TAB, snapshot.get("history"))):
+            if not isinstance(value, Mapping) or value.get("complete_grid") is not True:
+                raise SheetsSyncError(f"{name} observation requires complete {tab} grid read")
+            _observed_sheet(value, expected_headers=APPLICATION_HEADERS if tab == APPLICATION_TAB else HISTORY_COLUMNS)
+            if not _text(value.get("spreadsheet_id")) or value.get("sheet_id") != _sheet_id(sheet_ids, tab):
+                raise SheetsSyncError(f"{name} observation has different {tab} grid identity")
+            if not isinstance(value.get("grid_sha256"), str) or not value["grid_sha256"].startswith("sha256:"):
+                raise SheetsSyncError(f"{name} observation is missing {tab} grid digest")
+        if snapshot["spreadsheet_id"] != snapshot["history"]["spreadsheet_id"]:
+            raise SheetsSyncError(f"{name} observation mixes spreadsheets")
+    if _observation_hash(planning) != plan.get("observed_snapshot_sha256"):
+        raise SheetsSyncError("planning observation differs from the hashed plan")
+    if _observation_hash(fresh) != plan["observed_snapshot_sha256"]:
+        raise SheetsSyncError("sheet changed since planning; read and plan again")
 
 
 def cli_main(argv=None, *, root: Path | None = None, context: AccountContext | None = None) -> int:
@@ -476,9 +527,8 @@ def _main(argv=None, *, root: Path) -> int:
         else:
             command.add_argument("--plan", required=True, type=Path)
             command.add_argument("--metadata", required=True, type=Path)
-            command.add_argument("--observed", type=Path)
-            command.add_argument("--application-next-row", type=int)
-            command.add_argument("--history-next-row", type=int)
+            command.add_argument("--observed", required=True, type=Path)
+            command.add_argument("--fresh-observed", required=True, type=Path)
     setup = commands.add_parser("setup")
     setup.add_argument("--metadata", required=True, type=Path)
     setup.add_argument("--confirmed-blank-sheet1", action="store_true")
@@ -510,14 +560,29 @@ def _main(argv=None, *, root: Path) -> int:
             )
         else:
             config = load_destination_config(root / "config/data-services.yaml")
+            planning_path = _codex_work_path(args.observed, root=root)
+            fresh_path = _codex_work_path(args.fresh_observed, root=root)
+            if planning_path == fresh_path:
+                raise SheetsSyncError("fresh observation must be a separate read artifact")
             metadata = _read_json(_codex_work_path(args.metadata, root=root))
-            observed = _read_json(_codex_work_path(args.observed, root=root)) if args.observed else {}
-            app_next = observed.get("next_row", args.application_next_row)
-            history_next = observed.get("history", {}).get("next_row", args.history_next_row)
+            observed = _read_json(planning_path)
+            fresh = _read_json(fresh_path)
+            if metadata.get("spreadsheetId") != config["spreadsheet_id"]:
+                raise SheetsSyncError("fresh metadata does not identify configured spreadsheet")
+            for title, snapshot in ((APPLICATION_TAB, fresh), (HISTORY_TAB, fresh.get("history", {}))):
+                properties = next((item.get("properties", {}) for item in metadata.get("sheets", [])
+                                   if item.get("properties", {}).get("title") == title), {})
+                if (snapshot.get("spreadsheet_id") != metadata["spreadsheetId"]
+                        or snapshot.get("sheet_id") != properties.get("sheetId")
+                        or snapshot.get("grid_properties") != properties.get("gridProperties")):
+                    raise SheetsSyncError(f"fresh {title} observation does not match fresh metadata")
+            app_next = fresh.get("next_row")
+            history_next = fresh.get("history", {}).get("next_row")
             if any(not isinstance(value, int) or isinstance(value, bool) or value < 2 for value in (app_next, history_next)):
-                raise SheetsSyncError("requests requires --observed with verified append positions")
+                raise SheetsSyncError("requests requires fresh observed append positions")
             result = {"requests": build_batch_requests(
                 _read_json(_codex_work_path(args.plan, root=root)),
+                planning_observed=observed, fresh_observed=fresh,
                 sheet_ids=_sheet_ids_from_metadata(metadata),
                 application_next_row=app_next,
                 history_next_row=history_next,

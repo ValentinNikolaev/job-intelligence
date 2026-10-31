@@ -26,7 +26,7 @@ from jobintel.accounts import load_account_context
 from jobintel.evidence import bootstrap_evidence_bank
 from tests.account_fixtures import write_file_account_config
 from tests.preparation_fixtures import write_preparation_config
-from tests.test_sheets_sync import source as sheets_source
+from tests.test_sheets_sync import complete_observed, source as sheets_source
 
 
 ENTRIES = (
@@ -164,25 +164,57 @@ class AccountSubsidiaryTests(unittest.TestCase):
         destination = {"google": {"spreadsheet_id": "selected-spreadsheet",
                                   "parent_folder_id": "selected-parent", "backup_folder_id": "selected-backup"}}
         (self.root / "config/data-services.yaml").write_text(yaml.safe_dump(destination), encoding="utf-8")
-        self.write(".codex-work/metadata.json", {"sheets": []})
-        self.write(".codex-work/plan.json", {})
+        metadata = {"spreadsheetId": "selected-spreadsheet", "sheets": [
+            {"properties": {"title": title, "sheetId": sheet_id, "gridProperties": {"rowCount": 1000}}}
+            for title, sheet_id in ((sheets_sync.APPLICATION_TAB, 0), (sheets_sync.HISTORY_TAB, 1001))
+        ]}
+        snapshot = complete_observed()
+        snapshot["spreadsheet_id"] = "selected-spreadsheet"
+        snapshot["history"]["spreadsheet_id"] = "selected-spreadsheet"
+        self.write(".codex-work/metadata.json", metadata)
+        self.write(".codex-work/observed.json", snapshot)
+        self.write(".codex-work/fresh-observed.json", snapshot)
+        self.write(".codex-work/plan.json", sheets_sync.build_sync_plan(sheets_source(), snapshot))
         previous = Path.cwd()
         try:
             os.chdir(self.other)
-            with patch.object(sheets_sync, "build_batch_requests", return_value=[]):
-                code, _, errors = self.call(
-                    sheets_sync.cli_main,
-                    ["requests", "--plan", ".codex-work/plan.json", "--metadata", ".codex-work/metadata.json",
-                     "--application-next-row", "2", "--history-next-row", "2",
-                     "--output", ".codex-work/requests.json"],
-                    context=self.context,
-                )
+            code, _, errors = self.call(
+                sheets_sync.cli_main,
+                ["requests", "--plan", ".codex-work/plan.json", "--metadata", ".codex-work/metadata.json",
+                 "--observed", ".codex-work/observed.json", "--fresh-observed", ".codex-work/fresh-observed.json",
+                 "--output", ".codex-work/requests.json"],
+                context=self.context,
+            )
         finally:
             os.chdir(previous)
         self.assertEqual(0, code, errors)
         result = json.loads((self.root / ".codex-work/requests.json").read_text(encoding="utf-8"))
         self.assertEqual("selected-spreadsheet", result["spreadsheet_id"])
         self.assertFalse((self.other / ".codex-work/requests.json").exists())
+        code, _, errors = self.call(
+            sheets_sync.cli_main,
+            ["requests", "--plan", ".codex-work/plan.json", "--metadata", ".codex-work/metadata.json",
+             "--observed", ".codex-work/observed.json",
+             "--fresh-observed", str(self.root / ".codex-work/observed.json"),
+             "--output", ".codex-work/requests-reused.json"],
+            context=self.context,
+        )
+        self.assertEqual(1, code)
+        self.assertIn("separate read artifact", errors)
+        self.assertFalse((self.root / ".codex-work/requests-reused.json").exists())
+        changed = json.loads((self.root / ".codex-work/fresh-observed.json").read_text(encoding="utf-8"))
+        changed["history"]["grid_sha256"] = "sha256:changed"
+        self.write(".codex-work/fresh-observed.json", changed)
+        code, _, errors = self.call(
+            sheets_sync.cli_main,
+            ["requests", "--plan", ".codex-work/plan.json", "--metadata", ".codex-work/metadata.json",
+             "--observed", ".codex-work/observed.json", "--fresh-observed", ".codex-work/fresh-observed.json",
+             "--output", ".codex-work/requests-drift.json"],
+            context=self.context,
+        )
+        self.assertEqual(1, code)
+        self.assertIn("sheet changed since planning", errors)
+        self.assertFalse((self.root / ".codex-work/requests-drift.json").exists())
 
     def test_sheets_reject_foreign_or_traversing_artifact_paths(self):
         self.write(".codex-work/input.json", sheets_source())

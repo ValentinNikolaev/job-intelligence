@@ -103,11 +103,13 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    `prompts/vacancy-application.md`; route only the subset assigned to each role.
    Research in one pass using the posting plus at most two primary company sources
    unless a critical eligibility or company-identity fact remains unresolved.
-7. For the default full package, start Wave 2 only after the final CV is fixed. Run cover-letter,
-   interview-preparation, and application-analysis roles in parallel when slots are
-   available, with exclusive ownership of `cover-letter.md`,
-   `interview-preparation.md`, and `analysis.md`. Cover letter receives the vacancy,
-   final CV, verified research, and only required candidate evidence; interview receives
+7. For the default full package, start Wave 2 only after the final CV is fixed. Run
+   interview-preparation and application-analysis roles in parallel when slots are
+   available, with exclusive ownership of `interview-preparation.md` and
+   `analysis.md`. A cover-letter role runs only in a separate
+   `--document cover-letter` pass after the apply route confirms a required form
+   field or email-only application; it receives the vacancy, final CV, verified
+   research, and only required candidate evidence. Interview receives
    the vacancy, final CV, requirements/risks, and verified research without browsing
    again; analysis receives the vacancy, final CV, and all Wave 1 handoffs. The
    cover-letter role must invoke
@@ -118,10 +120,11 @@ Do not bypass deterministic project commands. Do not hand-edit published registr
    not claim a model switch inside the active task.
 8. The main agent performs one cross-file consistency and claim-grounding pass after
    Wave 2. Before validation, write the required versioned `quality.yaml` receipt with
-   `workflow: two-wave`, the invoked `$write-cover-letter` skill version and completed
-   workbench, the exact preflight `preparation_context_version`, exactly two evidence
-   stories pointing to sources in the configured preparation candidate directory,
-   one sourced company-motivation fact, and both final-review confirmations. Ensure the
+   `workflow: two-wave`, the exact preflight `preparation_context_version`, and
+   both final-review confirmations. Only for a selected cover letter, also record
+   the invoked `$write-cover-letter` skill version and completed workbench, exactly
+   two evidence stories pointing to configured candidate sources, and one sourced
+   company-motivation fact. Ensure the
    three Wave 1 handoffs meet the minimum depth and required labeled sections from
    `$job-intelligence-workflow`. When a CV is selected, run `python run.py documents
    preview-cv .codex-work/application/<vacancy-directory>/cv.md` and inspect every

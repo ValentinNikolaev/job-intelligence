@@ -2,16 +2,18 @@
 
 ## Goal and boundary
 
-Generate an evidence-backed CV, cover letter, application analysis, and interview plan
+Generate an evidence-backed CV, application analysis, and interview plan
 for an explicitly selected batch of one to 10 registry vacancies without modifying
 candidate source documents or calling the OpenAI Platform API from project code.
+Inspect the application route: add a letter only for a required form field or an
+email-only application, through a separate selected-document pass.
 
 ```text
 Codex task seals 1-10 explicit vacancy selectors
         ↓
 for each vacancy: read only that vacancy + candidate sources + versioned prompt
         ↓
-final CV + verified research → $write-cover-letter
+final CV + verified research → conditional separate $write-cover-letter pass
         ↓
 .codex-work/application/<vacancy>/ isolated Markdown drafts
         ↓
@@ -30,25 +32,27 @@ instead of using a generic fallback when the skill is unavailable.
 `CodexApplicationDraftClient` only reads local Markdown. The deterministic publisher
 validates the selected drafts, converts selected `cv.md` and `cover-letter.md` files,
 and swaps the `application/` directory with rollback so a failure preserves the
-previous package. The default selection is all four documents. An explicit
+previous package. The default selection is CV, analysis and interview preparation.
+An explicit
 `--document` selection updates only `cv`, `cover-letter`, `analysis`, or
 `interview-preparation` while carrying forward other recognized artifacts unchanged.
 
-The quality contract rejects skeletal drafts before conversion. Standard full packages require
-at least 500 CV words, 300 cover-letter words, 700 analysis words, and 800 interview
-preparation words while retaining the existing hard ceilings. It also checks required
-CV sections, real profile URLs, a bounded skills inventory, evidence-backed Experience
-bullets, cover-letter paragraph structure, and minimum handoff depth. `quality.yaml`
-records the two-wave workflow, the installed `$write-cover-letter` version and completed
-workbench, two sourced evidence stories, a sourced company motivation fact, and the
-coordinator's claim-grounding and cross-file review.
+The [quality contract](application-quality.md) rejects skeletal drafts before
+conversion and defines the current standard, compact and email limits. Required
+CV sections, real profile URLs, bounded skills, grounded Experience bullets and
+substantive handoffs apply to selected documents. Schema-3 `quality.yaml` records
+the applicable two-wave work, claim grounding and cross-file review. A selected
+letter additionally records its actual skill/workbench, source-backed evidence and
+company context, voice checks and independent council receipts under the
+[review contract](application-review-contract.md). Minima never authorize filler
+or invented evidence; an unmet substantive gate blocks the affected document.
 
 ## Inputs and isolation
 
 The Codex task reads the configured candidate source-of-truth files and, one selected
-vacancy at a time, its `meta.yaml`, `job.md`, optional `company.md`, and
+vacancy at a time, its canonical preflight snapshot and optional company context, and
 `prompts/vacancy-application.md`. Each task processes no more than 10 explicitly selected
-vacancies. Once the CV and company research are final, `$write-cover-letter` receives
+vacancies. For a selected letter, once the CV and company research are final, `$write-cover-letter` receives
 only that vacancy's evidence and produces the final letter. Its research notes and
 unresolved confirmation items go to `analysis.md`, not `cover-letter.md`. Every draft set
 is keyed by vacancy directory. Research, requirements, keywords, and wording must not
@@ -60,8 +64,8 @@ never a valid preparation selector.
 `manifest.yaml` records candidate, vacancy, company, prompt, actual Codex model label,
 and quality-contract versions per document. Its `quality` section stores document word
 counts and hashes, validated handoff word counts and hashes, declaration hash, and
-method provenance. A full-package cache hit requires all six standard output
-artifacts; a single-document cache hit requires only that document's canonical and
+method provenance. A cache hit requires the selected documents' canonical and
+derived artifacts and current per-document bindings; a single-document cache hit requires only that document's canonical and
 derived outputs. Manual
 `pending prepare <selector-1> [<selector-2> ...]` checks compare those values locally
 without invoking a model. Changing the application prompt changes `prompt_version` and

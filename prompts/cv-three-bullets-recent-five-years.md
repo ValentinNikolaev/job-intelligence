@@ -1,5 +1,12 @@
 # Require three substantial CV bullets for roles ending within five years
 
+> **Historical task brief — not an active workflow.** The body records an earlier
+> request and may contain superseded selectors, limits or publication commands.
+> Reading it does not authorize rerunning that task. For new work, follow
+> current `AGENTS.md`, `prompts/job-intelligence-workflow.md`,
+> `config/application-profile.yaml` and the reviewed repository finalizer.
+> Do not execute direct GitHub tree/commit/ref writes from historical examples.
+
 Update the Job Intelligence CV quality contract and regenerate **all six CVs**
 prepared in the preceding six-CV editorial rebuild, including CVs that already
 meet the new per-role minimum. Read `AGENTS.md`,

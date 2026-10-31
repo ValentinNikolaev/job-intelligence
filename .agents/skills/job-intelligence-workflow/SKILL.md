@@ -115,10 +115,11 @@ current Codex surface, tell the user and do not publish under that profile.
    finalizes selected drafts, performs the applicable claim check, validates, and
    publishes.
 6. A full-package draft must include `.codex-work/application/<vacancy-directory>/quality.yaml`
-   with `schema_version: 3`: `workflow: two-wave`; invoked cover-letter skill name and
-   version; `workbench_complete: true`; two internal evidence strands with `candidate_source`;
-   company-motivation fact with `source_url`; and final-review values
-   `claim_grounding: true` and `cross_file_consistency: true`.
+   with `schema_version: 3`, `workflow: two-wave`, and final-review values
+   `claim_grounding: true` and `cross_file_consistency: true`. Only a selected
+   cover-letter pass records the invoked skill name/version, completed workbench,
+   two internal evidence strands with `candidate_source`, and company-motivation
+   fact with `source_url`.
    Follow `docs/application-review-contract.md`: claims ledger schema 2, complete
    reviewed career inventory, contextual measurement bindings and a final-letter
    review tied to exact text, priorities, captured company source and current voice.

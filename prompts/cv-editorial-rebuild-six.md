@@ -1,5 +1,12 @@
 # Senior+/Architect CV editorial rebuild — six selected vacancies
 
+> **Historical task brief — not an active workflow.** The body records an earlier
+> request and may contain superseded selectors, limits or publication commands.
+> Reading it does not authorize rerunning that task. For new work, follow
+> current `AGENTS.md`, `prompts/job-intelligence-workflow.md`,
+> `config/application-profile.yaml` and the reviewed repository finalizer.
+> Do not execute direct GitHub tree/commit/ref writes from historical examples.
+
 Rebuild **only the CV** for each explicitly selected vacancy below. Do not change a
 vacancy status, submit an application, regenerate a cover letter, or edit interview
 preparation or application analysis. Use `$job-intelligence-workflow`, `AGENTS.md`,
