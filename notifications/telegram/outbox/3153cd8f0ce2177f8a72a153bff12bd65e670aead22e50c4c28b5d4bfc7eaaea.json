@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-31T02:08:40Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "1KOMMA5˚",
+      "country_codes": [],
+      "directory": "20261031_1komma5_b730ee0f64db41b9af4ae1290f9323f1",
+      "score": 67,
+      "title": "Software Engineer - Edge & Cloud (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/1komma50/software-engineer-edge-cloud-berlin-16107",
+      "vacancy_id": "b730ee0f-64db-41b9-af4a-e1290f9323f1"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "3153cd8f0ce2177f8a72a153bff12bd65e670aead22e50c4c28b5d4bfc7eaaea",
+  "schema_version": 2
+}
