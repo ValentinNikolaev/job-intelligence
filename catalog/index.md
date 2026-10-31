@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 90
+Total vacancies: 92
 
-- Found: 57
+- Found: 59
 - Applied: 29
 - Interview: 3
 - Withdrawn: 1
@@ -13,6 +13,8 @@ Total vacancies: 90
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-31 | [Interia.pl Group](../registry/jobs/20261031_interia-pl-gro_1fde45adb9e24803a38660ca536375e7/) | [Senior PHP Developer/ka](../registry/jobs/20261031_interia-pl-gro_1fde45adb9e24803a38660ca536375e7/job.md) | Cracow, Małopolskie, Poland | Linkedin | Found | 2026-10-31 | [Linkedin](https://www.linkedin.com/jobs/view/4484806430/) | — | — | — | — | — |
+| 2026-10-31 | [Tinexta Visura](../registry/jobs/20261031_tinexta-visura_8faf3d54461b4fb6a00aa7ae7d7c1360/) | [PHP Developer](../registry/jobs/20261031_tinexta-visura_8faf3d54461b4fb6a00aa7ae7d7c1360/job.md) | Rome, Latium, Italy | Linkedin | Found | 2026-10-31 | [Linkedin](https://www.linkedin.com/jobs/view/4485335764/) | — | — | — | — | — |
 | 2026-10-31 | [1KOMMA5˚](../registry/jobs/20261031_1komma5_b730ee0f64db41b9af4ae1290f9323f1/) | [Software Engineer - Edge & Cloud (m/w/d)](../registry/jobs/20261031_1komma5_b730ee0f64db41b9af4ae1290f9323f1/job.md) | Berlin | Arbeitnow | Found | 2026-10-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/1komma50/software-engineer-edge-cloud-berlin-16107) | — | — | — | — | — |
 | 2026-10-30 | [RestaurantSupply.com](../registry/jobs/20261030_restaurantsupp_a1af4e023bd243d18b787b18f51f8c45/) | [Senior Full Stack PHP Developer, Product Catalogue and Quoting](../registry/jobs/20261030_restaurantsupp_a1af4e023bd243d18b787b18f51f8c45/job.md) | France, Germany, Italy, Spain, United Kingdom | Himalayas | Found | 2026-10-30 | [Himalayas](https://himalayas.app/companies/restaurantsupply-com/jobs/senior-full-stack-php-developer-product-catalogue-and-quoting?utm_source=api) | — | — | — | — | — |
 | 2026-10-30 | [Raiffeisen Bank](../registry/jobs/20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63/) | [Senior Golang Developer](../registry/jobs/20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63/job.md) | Київ, віддалено | Dou | Found | 2026-10-30 | [Dou](https://jobs.dou.ua/companies/raiffeisen/vacancies/360086/) | [Open](../registry/jobs/20261030_raiffeisen-ban_c052cc2d16074f70af0c9183ef55bd63/company.md) | — | — | — | — |
