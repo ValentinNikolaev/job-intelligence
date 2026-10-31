@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 92
+Total vacancies: 93
 
-- Found: 59
+- Found: 60
 - Applied: 29
 - Interview: 3
 - Withdrawn: 1
@@ -13,6 +13,7 @@ Total vacancies: 92
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-31 | [Chainguard](../registry/jobs/20261031_chainguard_2502748845284f94a44a4f06a56f054f/) | [Senior Software Engineer, Customer Platform](../registry/jobs/20261031_chainguard_2502748845284f94a44a4f06a56f054f/job.md) | United States, Canada | Jobspresso | Found | 2026-10-31 | [Jobspresso](https://jobspresso.co/job/senior-software-engineer-customer-platform/) | — | — | — | — | — |
 | 2026-10-31 | [Interia.pl Group](../registry/jobs/20261031_interia-pl-gro_1fde45adb9e24803a38660ca536375e7/) | [Senior PHP Developer/ka](../registry/jobs/20261031_interia-pl-gro_1fde45adb9e24803a38660ca536375e7/job.md) | Cracow, Małopolskie, Poland | Linkedin | Found | 2026-10-31 | [Linkedin](https://www.linkedin.com/jobs/view/4484806430/) | — | — | — | — | — |
 | 2026-10-31 | [Tinexta Visura](../registry/jobs/20261031_tinexta-visura_8faf3d54461b4fb6a00aa7ae7d7c1360/) | [PHP Developer](../registry/jobs/20261031_tinexta-visura_8faf3d54461b4fb6a00aa7ae7d7c1360/job.md) | Rome, Latium, Italy | Linkedin | Found | 2026-10-31 | [Linkedin](https://www.linkedin.com/jobs/view/4485335764/) | — | — | — | — | — |
 | 2026-10-31 | [1KOMMA5˚](../registry/jobs/20261031_1komma5_b730ee0f64db41b9af4ae1290f9323f1/) | [Software Engineer - Edge & Cloud (m/w/d)](../registry/jobs/20261031_1komma5_b730ee0f64db41b9af4ae1290f9323f1/job.md) | Berlin | Arbeitnow | Found | 2026-10-31 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/1komma50/software-engineer-edge-cloud-berlin-16107) | — | — | — | — | — |
