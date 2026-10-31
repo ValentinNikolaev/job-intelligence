@@ -110,6 +110,10 @@ class OperationalStore(Protocol):
         self, *, scope: str = "jobs", include_archived: bool = False
     ) -> list[dict[str, Any]]: ...
 
+    def find_vacancy_selector(
+        self, selector: str, *, scope: str = "jobs"
+    ) -> list[dict[str, Any]]: ...
+
     def snapshot(self) -> dict[str, Any]: ...
 
     def restore_snapshot(

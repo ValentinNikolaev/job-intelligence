@@ -679,6 +679,24 @@ class MongoStore:
             query["archived"] = False
         return self.list(collection, query, sort=[("directory", ASCENDING)])
 
+    def find_vacancy_selector(self, selector: str, *, scope: str = "jobs") -> list[dict[str, Any]]:
+        """Find active records matching an exact vacancy ID or directory."""
+        collection = self._vacancy_collection(scope)
+        batch = getattr(self._local, "vacancy_batch", None)
+        if batch is not None and collection in batch["documents"]:
+            return sorted(
+                (copy.deepcopy(row) for row in batch["documents"][collection].values()
+                 if row.get("scope") == scope and row.get("archived") is False
+                 and (str(row.get("_id")) == selector or row.get("directory") == selector)),
+                key=lambda row: row["directory"],
+            )
+        return self.list(
+            collection,
+            {"scope": scope, "archived": False,
+             "$or": [{"_id": selector}, {"directory": selector}]},
+            sort=[("directory", ASCENDING)],
+        )
+
     def snapshot(self) -> dict[str, Any]:
         self._require_lease()
         names = sorted(

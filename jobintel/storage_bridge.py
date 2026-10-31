@@ -225,15 +225,11 @@ def resolve_vacancy_directories(registry_root: Path, selector: str) -> list[Path
     if store is None:
         return None
     jobs_dir = registry_root / "jobs"
-    records = store.list_vacancies(scope="jobs")
     if selector.casefold() == "all":
+        records = store.list_vacancies(scope="jobs")
         return [jobs_dir / str(record["directory"]) for record in records]
-    matches = [
-        jobs_dir / str(record["directory"])
-        for record in records
-        if str(record.get("directory")) == selector
-        or str(record.get("meta", {}).get("id", "")) == selector
-    ]
+    records = store.find_vacancy_selector(selector, scope="jobs")
+    matches = [jobs_dir / str(record["directory"]) for record in records]
     return sorted(matches)
 
 
@@ -251,11 +247,17 @@ def materialize_vacancy_snapshot(directory: Path) -> Path:
     root = project_root(directory)
     if root is None:
         raise RuntimeError(f"cannot locate project root for vacancy snapshot: {directory}")
+    address = _address(directory / "meta.yaml")
+    if address is None or address[0] != "vacancy":
+        raise ValueError("vacancy snapshot must be directly inside registry/jobs or registry/rejected")
+    document = store.get_by_directory(address[2], scope=address[1])
     fields: dict[str, str] = {}
     for filename in ("meta.yaml", "job.md", "match.yaml", "company.md"):
-        path = directory / filename
-        if exists(path):
-            fields[filename] = read_text(path)
+        value = document.get(_FIELDS[filename]) if document is not None else None
+        if value is not None:
+            fields[filename] = value if isinstance(value, str) else yaml.safe_dump(
+                value, allow_unicode=True, sort_keys=False
+            )
     digest = hashlib.sha256(
         "".join(f"{name}\0{fields[name]}\0" for name in sorted(fields)).encode("utf-8")
     ).hexdigest()[:20]

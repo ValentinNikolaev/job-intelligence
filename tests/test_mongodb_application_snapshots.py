@@ -79,6 +79,13 @@ class MongoFixtureStore:
     def list_vacancies(self, *, scope="jobs", include_archived=False):
         return list(self.documents) if scope == "jobs" else []
 
+    def find_vacancy_selector(self, selector, *, scope="jobs"):
+        if scope != "jobs":
+            return []
+        return [document for document in self.documents
+                if document.get("archived", False) is False
+                and (document["_id"] == selector or document["directory"] == selector)]
+
     def get(self, collection, key):
         if collection == "storage_schema" and key == "operational":
             return {"schema_version": 1}

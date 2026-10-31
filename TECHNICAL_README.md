@@ -1,5 +1,8 @@
 # Job Intelligence
 
+The [workflow performance review](docs/workflow-performance.md) records measured
+read amplification, implemented optimizations, verification, and follow-up priorities.
+
 A minimal local-first collector that turns source-specific vacancies into one human-readable filesystem registry.
 
 ```text

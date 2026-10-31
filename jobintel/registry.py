@@ -73,6 +73,7 @@ class Registry:
         self._entries_cache: list[dict[str, Any]] | None = None
         self._source_index: dict[tuple[str, str], list[dict[str, Any]]] | None = None
         self._fingerprint_index: dict[str, list[dict[str, Any]]] | None = None
+        self._url_index: dict[str, list[dict[str, Any]]] | None = None
         self.jobs_dir.mkdir(parents=True, exist_ok=True)
 
     def upsert(self, job: NormalizedJob) -> UpsertResult:
@@ -138,7 +139,11 @@ class Registry:
         if exact is not None:
             return self._update_existing(exact, job, fingerprint, is_merge=False)
 
-        url_candidate = self._find_url_candidate(entries, job)
+        url_candidate = (
+            self._find_url_candidate_indexed(job)
+            if self._cache_entries
+            else self._find_url_candidate(entries, job)
+        )
         if url_candidate is not None:
             meta = url_candidate["meta"]
             if meta.get("status") == "rejected":
@@ -156,9 +161,18 @@ class Registry:
         return self._create(job, fingerprint)
 
     def regenerate_index(self) -> bool:
+        store = op.get_store(self.root)
+        documents = store.list_vacancies(scope="jobs") if store is not None else None
+        matches = {doc["directory"]: doc.get("match") for doc in documents or []}
         rows: list[tuple[dict[str, Any], Path, dict[str, Any] | None]] = []
-        for entry in self._scan():
-            rows.append((entry["meta"], entry["path"], _read_match_summary(entry["path"] / "match.yaml")))
+        for entry in self._scan(documents=documents):
+            match_path = entry["path"] / "match.yaml"
+            if documents is None:
+                match = _read_match_summary(match_path)
+            else:
+                value = matches[entry["path"].name]
+                match = _match_summary(value, match_path) if value is not None else None
+            rows.append((entry["meta"], entry["path"], match))
         rows.sort(
             key=lambda item: (
                 item[2]["score"] if item[2] is not None else -1,
@@ -267,15 +281,18 @@ class Registry:
         entry["meta"] = meta
         return True
 
-    def _scan(self) -> list[dict[str, Any]]:
-        if self._cache_entries and self._entries_cache is not None:
+    def _scan(self, *, documents: list[dict[str, Any]] | None = None) -> list[dict[str, Any]]:
+        if documents is None and self._cache_entries and self._entries_cache is not None:
             return self._entries_cache
         entries: list[dict[str, Any]] = []
-        store = op.get_store(self.root)
-        if store is None and not self.jobs_dir.exists():
-            return entries
+        supplied_documents = documents is not None
+        if documents is None:
+            store = op.get_store(self.root)
+            if store is None and not self.jobs_dir.exists():
+                return entries
+            documents = store.list_vacancies(scope="jobs") if store is not None else None
         stored = {self.jobs_dir / doc["directory"] / "meta.yaml": doc["meta"]
-                  for doc in store.list_vacancies(scope="jobs")} if store is not None else None
+                  for doc in documents} if documents is not None else None
         paths = sorted(stored) if stored is not None else sorted(op.metadata_paths(self.jobs_dir))
         for meta_path in paths:
             try:
@@ -304,7 +321,7 @@ class Registry:
             if not isinstance(loaded["sources"], list):
                 raise RegistryError(f"registry sources must be a list: {meta_path}")
             entries.append({"meta": loaded, "path": meta_path.parent})
-        if self._cache_entries:
+        if self._cache_entries and not supplied_documents:
             self._entries_cache = entries
             self._rebuild_lookup_indexes()
         return entries
@@ -312,17 +329,28 @@ class Registry:
     def _rebuild_lookup_indexes(self) -> None:
         self._source_index = defaultdict(list)
         self._fingerprint_index = defaultdict(list)
+        self._url_index = defaultdict(list)
         for entry in self._entries_cache or []:
             self._index_entry(entry)
 
     def _index_entry(self, entry: dict[str, Any]) -> None:
         assert self._source_index is not None
         assert self._fingerprint_index is not None
+        assert self._url_index is not None
         for ref in entry["meta"]["sources"]:
             key = (str(ref.get("source")), str(ref.get("source_job_id")))
             self._source_index[key].append(entry)
         fingerprint = str(entry["meta"].get("fingerprint") or "")
         self._fingerprint_index[fingerprint].append(entry)
+        for url in self._url_keys(entry["meta"]):
+            self._url_index[url].append(entry)
+
+    @staticmethod
+    def _url_keys(meta: dict[str, Any]) -> set[str]:
+        refs = meta.get("sources", [])
+        urls = [str(ref.get("url") or "") for ref in refs]
+        urls.extend(str((ref.get("metadata") or {}).get("apply_url") or "") for ref in refs)
+        return {key for url in urls if (key := canonical_vacancy_url(url))}
 
     def _find_source_indexed(self, source: str, source_job_id: str) -> dict[str, Any] | None:
         assert self._source_index is not None
@@ -355,10 +383,30 @@ class Registry:
             return
         assert self._source_index is not None
         assert self._fingerprint_index is not None
-        for rows in (*self._source_index.values(), *self._fingerprint_index.values()):
-            rows[:] = [candidate for candidate in rows if candidate is not entry]
+        assert self._url_index is not None
+        old_meta = entry["meta"]
+        source_keys = {(str(ref.get("source")), str(ref.get("source_job_id")))
+                       for ref in old_meta["sources"]}
+        for index, keys in (
+            (self._source_index, source_keys),
+            (self._fingerprint_index, {str(old_meta.get("fingerprint") or "")}),
+            (self._url_index, self._url_keys(old_meta)),
+        ):
+            for key in keys:
+                rows = index.get(key)
+                if rows is not None:
+                    rows[:] = [candidate for candidate in rows if candidate is not entry]
+                    if not rows:
+                        del index[key]
         entry["meta"] = meta
         self._index_entry(entry)
+
+    def _find_url_candidate_indexed(self, job: NormalizedJob) -> dict[str, Any] | None:
+        assert self._url_index is not None
+        incoming = canonical_vacancy_url(job.source_url)
+        if not incoming:
+            return None
+        return self._matching_url_candidate(self._url_index.get(incoming, []), job, incoming)
 
     @staticmethod
     def _find_source(entries: list[dict[str, Any]], source: str, source_job_id: str) -> dict[str, Any] | None:
@@ -390,18 +438,24 @@ class Registry:
         incoming = canonical_vacancy_url(job.source_url)
         if not incoming:
             return None
+        return Registry._matching_url_candidate(entries, job, incoming, check_url=True)
+
+    @staticmethod
+    def _matching_url_candidate(entries: list[dict[str, Any]], job: NormalizedJob,
+                                incoming: str, *, check_url: bool = False) -> dict[str, Any] | None:
         role_url = bool(re.search(r"/(?:o/[^/]+|jobs?/[^/]+)(?:$|\?)", incoming))
         candidates = []
+        company = normalize_company(job.company)
+        title = normalize_text(job.title)
         for entry in entries:
             meta = entry["meta"]
-            if normalize_company(str(meta.get("company") or "")) != normalize_company(job.company):
+            if normalize_company(str(meta.get("company") or "")) != company:
                 continue
-            if not role_url and normalize_text(str(meta.get("title") or "")) != normalize_text(job.title):
+            if not role_url and normalize_text(str(meta.get("title") or "")) != title:
                 continue
-            urls = [str(ref.get("url") or "") for ref in meta.get("sources", [])]
-            urls.extend(str((ref.get("metadata") or {}).get("apply_url") or "") for ref in meta.get("sources", []))
-            if incoming in {canonical_vacancy_url(url) for url in urls}:
-                candidates.append(entry)
+            if check_url and incoming not in Registry._url_keys(meta):
+                continue
+            candidates.append(entry)
         return candidates[0] if len(candidates) == 1 else None
 
     def _create(self, job: NormalizedJob, fingerprint: str) -> UpsertResult:
@@ -756,6 +810,10 @@ def _read_match_summary(path: Path) -> dict[str, Any] | None:
         loaded = yaml.safe_load(op.read_text(path))
     except (OSError, yaml.YAMLError) as exc:
         raise RegistryError(f"cannot read match analysis {path}: {exc}") from exc
+    return _match_summary(loaded, path)
+
+
+def _match_summary(loaded: Any, path: Path) -> dict[str, Any]:
     if not isinstance(loaded, dict):
         raise RegistryError(f"match analysis is not a mapping: {path}")
     score = loaded.get("score")

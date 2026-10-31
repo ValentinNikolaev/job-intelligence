@@ -230,6 +230,17 @@ class MatchAnalyzer:
             return sorted(self.checked_directory(path.parent) for path in op.metadata_paths(self.jobs_dir))
 
         _directory_name(selector)
+        stored = op.resolve_vacancy_directories(self.registry_root, selector)
+        if stored is not None:
+            direct = next((path for path in stored if path.name == selector), None)
+            if direct is not None:
+                return [self.checked_directory(direct)]
+            if len(stored) > 1:
+                raise MatchError(f"vacancy id appears in multiple directories: {selector}")
+            if not stored:
+                raise MatchError(f"vacancy not found: {selector}")
+            return [self.checked_directory(stored[0])]
+
         direct = self.checked_directory(self.jobs_dir / selector)
         if op.exists(direct / "meta.yaml"):
             return [direct]
