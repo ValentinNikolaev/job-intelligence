@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-10-31T12:13:17Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Interia.pl Group",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "20261031_interia-pl-gro_1fde45adb9e24803a38660ca536375e7",
+      "score": 86,
+      "title": "Senior PHP Developer/ka",
+      "url": "https://www.linkedin.com/jobs/view/4484806430/",
+      "vacancy_id": "1fde45ad-b9e2-4803-a386-60ca536375e7"
+    },
+    {
+      "company": "Tinexta Visura",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261031_tinexta-visura_8faf3d54461b4fb6a00aa7ae7d7c1360",
+      "score": 84,
+      "title": "PHP Developer",
+      "url": "https://www.linkedin.com/jobs/view/4485335764/",
+      "vacancy_id": "8faf3d54-461b-4fb6-a00a-a7ae7d7c1360"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "f86171f4f1752cc2459bdc4e700a27673eb40f573a974276fa9f11223282fbf3",
+  "schema_version": 2
+}
