@@ -1,21 +1,30 @@
 # Match Analysis
 
-**Score:** 66/100  
+**Score:** 78/100  
 **Recommendation:** Match
 
-Good PHP and reliability overlap for a Europe-remote backend role, but several central PIM, ingestion, scraping, caching, and frontend requirements are not evidenced.
+Good fit for the PHP/Symfony architecture and reliability side of this catalogue platform, with strong evidence in PHP, Symfony, PostgreSQL, event-driven systems, queues, APIs, monitoring, and email/data infrastructure. PIM at million-record scale, web scraping, React, and quoting-domain experience are not established.
 
 ## Why it matches
 
-- PHP, Symfony, relational data modeling, REST APIs, queues, asynchronous event-driven systems, retries, and monitoring are relevant.
-- Production reliability, performance optimization, and architecture ownership are strongly evidenced.
-- Italy is an explicitly accepted location and the stated working-hour overlap is compatible in principle.
+- PHP/Symfony, relational databases, queues, event-driven systems, APIs, and production monitoring align well.
+- The profile includes large-scale email infrastructure, performance work, and technical leadership.
+- Remote EU scope includes Italy.
 
 ## Gaps
 
-- No confirmed PIM or product-catalogue platform, million-record ingestion, web crawling or scraping, Redis, Doctrine, or React experience.
-- Quoting or CPQ and commercial kitchen or foodservice domain experience are not evidenced.
+- No explicit PIM/product-catalogue or million-record ingestion experience.
+- Web crawling/scraping, React, and quoting/CPQ are not established.
 
 ## Concerns
 
-- The role requires expert-level PHP 8 and Symfony plus several specific tools; the profile confirms PHP and Symfony but not every requested version or tool.
+- The role combines backend architecture with a specialized product-data domain that is not visible in the profile.
+
+## Requirement evidence
+
+| Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
+| --- | --- | --- | --- | --- | --- |
+| PIM or comparable product-data platform | critical / stated | unknown | Proven experience building or maintaining product information management (PIM) systems, product catalogue platforms, or comparable product data platforms. |  | No PIM or catalogue platform is named in the profile. / Treat as a major evidence gap. |
+| Large-scale ingestion | critical / stated | partial | Experience designing and operating large-scale data ingestion pipelines, ideally involving 1 million or more records. | I architect and lead the development | The profile does not establish million-record product ingestion. / Ask for scale and normalization examples. |
+| PHP 8 and Symfony | critical / stated | strong | Expert-level hands-on experience with PHP 8 and Symfony. | PHP | / |
+| Queues, background jobs, and reliable APIs | high / stated | strong | Hands-on experience with asynchronous processing, message queues, and background jobs. | Build resilient message delivery pipelines with fallback logic, retries, and | / |
