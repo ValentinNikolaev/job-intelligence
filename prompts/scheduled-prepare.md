@@ -1,5 +1,9 @@
 # Scheduled application preparation
 
+For explicitly selected manual preparation, the default is `sol61_high`
+(`gpt-6.1-sol`, reasoning `high`) from `config/codex-workflows.yaml`.
+This model setting does not enable automatic scheduled preparation.
+
 ## Conditional letter generation
 
 Default scope: CV, application analysis and interview preparation. Inspect the apply

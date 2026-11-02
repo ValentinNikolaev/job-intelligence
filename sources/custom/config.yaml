@@ -23,6 +23,14 @@ default_exclude_title_terms:
   - stage
   - tirocinio
 sources:
+  - name: experis-back-end-developer
+    company: Experis Italia
+    board_url: https://www.experis.it/it/cerca-lavoro/professioni/back-end-developer
+    company_url: https://www.experis.it
+    source_type: recruitment agency careers page
+    title_terms: [back end, back-end, backend, golang, php, laravel, symfony]
+    exclude_title_terms: [/cerca-lavoro/, internship, intern, marketing, sales, stage, tirocinio]
+    notes: Official Italian backend profession board. Follow matching vacancy links only; the board also includes unrelated front-end and other developer roles. Preserve each posting's location and remote policy rather than inferring them from the Italian board.
   - name: hostaway
     company: Hostaway
     board_url: https://careers.hostaway.com/

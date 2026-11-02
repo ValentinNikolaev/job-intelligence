@@ -1,5 +1,9 @@
 # Vacancy-specific application package
 
+Use the preparation default from `config/codex-workflows.yaml`: `sol61_high`
+(`gpt-6.1-sol`, reasoning `high`), unless the user explicitly selects another
+allowed profile. Run the Codex task on that model; never relabel another model's work.
+
 ## Conditional letter generation
 
 Default scope: CV, application analysis and interview preparation. Inspect the apply

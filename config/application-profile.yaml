@@ -14,6 +14,12 @@ candidate:
     ukrainian: native
     english: professional working / upper-intermediate
 application_defaults:
+  b2b:
+    registered_entity: true
+    confirmed_on: '2026-11-02'
+    jurisdiction: not_specified
+    confirmation: Candidate confirmed an existing B2B/sole-proprietor entity; do not ask again or infer registration country or tax regime.
+    database_record: candidate_preferences/current
   remote_work:
     preferred: true
     cet_timezone_compatible: true
@@ -43,6 +49,13 @@ company_retry_after:
     allow_after: 2027-02-01
     reason: Strong Italian language level required for informal communication; retry after six months.
 reusable_answers:
+  b2b_entity: I have a registered B2B entity.
+  kitrum_compensation_policy: >-
+    KITRUM application 6cceb63e-10a9-49ec-87ba-00be500bb697 was made in the Ukrainian
+    market. Benchmark its monthly USD gross expectation against Ukrainian Senior Go
+    roles using current Djinni data, not Italian or EU salary ranges. Refresh the
+    benchmark when needed; do not treat a researched rate as a universally confirmed
+    salary minimum or infer a tax regime from the B2B confirmation.
   motivation: >-
     I am looking for a hands-on technical lead role where I can stay close to
     backend architecture and code while helping a team ship reliable systems. I am

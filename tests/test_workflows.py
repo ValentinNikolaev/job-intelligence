@@ -19,12 +19,13 @@ class WorkflowPolicyTests(unittest.TestCase):
         self.assertEqual(14, policy.prepare_max_age_days)
         self.assertEqual(10, policy.prepare_batch_size)
         self.assertEqual(
-            "codex:gpt-5.6-terra:medium",
+            "codex:gpt-6.1-sol:high",
             policy.workflow("prepare").model_label,
         )
         self.assertEqual("luna_medium", policy.workflow("analyze").default_profile)
         self.assertIn("codex:gpt-5.6-luna:low", policy.approved_analysis_model_labels())
         self.assertIn("codex:gpt-5.6-luna:medium", policy.approved_analysis_model_labels())
+        self.assertIn("codex:gpt-6.1-sol:high", policy.approved_analysis_model_labels())
         self.assertEqual(
             "codex:gpt-5.6-terra:medium",
             policy.resolve_model_profile("analyze", "terra-medium").model_label,

@@ -1,5 +1,10 @@
 # Custom company-board collector
 
+Experis Italia's backend profession board is configured as
+`experis-back-end-developer`. It follows matching vacancy detail links and excludes
+profession-board navigation and pagination. The board mixes backend and unrelated
+developer roles, so each posting retains its own title, location and remote policy.
+
 Hostaway is limited to ten unique matching detail pages per run with
 `max_detail_pages: 10`. The optional limit accepts 1–100; absent limits preserve
 existing source behavior. Repeated links are fetched once.
