@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-02T12:27:26Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "AirAdvisor",
+      "country_codes": [
+        "SI"
+      ],
+      "directory": "20261102_airadvisor_7f00d1581bc54248954341c97073234a",
+      "score": 75,
+      "title": "PHP Laravel Full Stack Developer with jQuery and JavaScript",
+      "url": "https://www.linkedin.com/jobs/view/4483982654/",
+      "vacancy_id": "7f00d158-1bc5-4248-9543-41c97073234a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "778e176d900a7522e058978a66059e1c6e9110671a3cc4ece85596ab569c8fe6",
+  "schema_version": 2
+}
