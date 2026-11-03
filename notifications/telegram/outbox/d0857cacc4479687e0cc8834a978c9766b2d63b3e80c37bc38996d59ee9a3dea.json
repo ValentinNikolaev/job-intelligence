@@ -1,0 +1,41 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-03T06:38:06Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Join UP!",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261103_join-up_01d4b1efb60f43a2a1df049a7336ad7c",
+      "score": 87,
+      "title": "Backend Developer (PHP, Laravel)",
+      "url": "https://jobs.dou.ua/companies/join-up/vacancies/378630/",
+      "vacancy_id": "01d4b1ef-b60f-43a2-a1df-049a7336ad7c"
+    },
+    {
+      "company": "ConveyThis",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261103_conveythis_5f13c641b5174a2d945cd564e831a6de",
+      "score": 72,
+      "title": "Middle PHP Developer",
+      "url": "https://jobs.dou.ua/companies/conveythis/vacancies/378637/",
+      "vacancy_id": "5f13c641-b517-4a2d-945c-d564e831a6de"
+    },
+    {
+      "company": "Recare Deutschland GmbH",
+      "country_codes": [],
+      "directory": "20261103_recare-deutsch_1a1da61f8c2e4e2587a8380a877225bd",
+      "score": 91,
+      "title": "Senior Backend Engineer (Go) (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-senior-backend-engineer-go-berlin-189894",
+      "vacancy_id": "1a1da61f-8c2e-4e25-87a8-380a877225bd"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d0857cacc4479687e0cc8834a978c9766b2d63b3e80c37bc38996d59ee9a3dea",
+  "schema_version": 2
+}
