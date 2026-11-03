@@ -2,10 +2,10 @@
 
 # Vacancy Catalog
 
-Total vacancies: 113
+Total vacancies: 112
 
 - Found: 72
-- Applied: 36
+- Applied: 35
 - Interview: 4
 - Closed: 1
 
