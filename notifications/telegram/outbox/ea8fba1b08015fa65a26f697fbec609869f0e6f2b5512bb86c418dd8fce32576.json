@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-04T14:25:42Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Vodworks",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261104_vodworks_81155b013ac2470c9642b5ae1b0fe003",
+      "score": 91,
+      "title": "Full Stack (PHP / JavaScript / AI)",
+      "url": "https://jobs.dou.ua/companies/vodworks/vacancies/378875/",
+      "vacancy_id": "81155b01-3ac2-470c-9642-b5ae1b0fe003"
+    },
+    {
+      "company": "King Group",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261104_king-group_a6d724d38a064608b43e507275844b2e",
+      "score": 78,
+      "title": "Middle PHP developer",
+      "url": "https://djinni.co/jobs/856601-middle-php-developer/",
+      "vacancy_id": "a6d724d3-8a06-4608-b43e-507275844b2e"
+    },
+    {
+      "company": "INTERACTIVE REEL LTD",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261104_interactive-re_ae19d469309b4cfebd97e7239fdbf5f6",
+      "score": 84,
+      "title": "Tech Lead — Fintech",
+      "url": "https://djinni.co/jobs/856652-tech-lead-fintech/",
+      "vacancy_id": "ae19d469-309b-4cfe-bd97-e7239fdbf5f6"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "ea8fba1b08015fa65a26f697fbec609869f0e6f2b5512bb86c418dd8fce32576",
+  "schema_version": 2
+}
