@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 76
+Total vacancies: 77
 
-- Found: 36
+- Found: 37
 - Applied: 35
 - Interview: 4
 - Closed: 1
@@ -13,6 +13,7 @@ Total vacancies: 76
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-05 | [MC Engineering](../registry/jobs/20261105_mc-engineering_596cee729a7e4aa6b5fcca4b6b1c5dfa/) | [PHP Developer](../registry/jobs/20261105_mc-engineering_596cee729a7e4aa6b5fcca4b6b1c5dfa/job.md) | Rome, Latium, Italy | Linkedin | Found | 2026-11-05 | [Linkedin](https://www.linkedin.com/jobs/view/4487292387/) | — | — | — | — | — |
 | 2026-11-04 | [Vodworks](../registry/jobs/20261104_vodworks_81155b013ac2470c9642b5ae1b0fe003/) | [Full Stack (PHP / JavaScript / AI)](../registry/jobs/20261104_vodworks_81155b013ac2470c9642b5ae1b0fe003/job.md) | віддалено | Dou | Found | 2026-11-04 | [Dou](https://jobs.dou.ua/companies/vodworks/vacancies/378875/) | [Open](../registry/jobs/20261104_vodworks_81155b013ac2470c9642b5ae1b0fe003/company.md) | — | — | — | — |
 | 2026-11-04 | [INTERACTIVE REEL LTD](../registry/jobs/20261104_interactive-re_ae19d469309b4cfebd97e7239fdbf5f6/) | [Tech Lead — Fintech](../registry/jobs/20261104_interactive-re_ae19d469309b4cfebd97e7239fdbf5f6/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-04 | [Djinni](https://djinni.co/jobs/856652-tech-lead-fintech/) | — | — | — | — | — |
 | 2026-11-04 | [King Group](../registry/jobs/20261104_king-group_a6d724d38a064608b43e507275844b2e/) | [Middle PHP developer](../registry/jobs/20261104_king-group_a6d724d38a064608b43e507275844b2e/job.md) | Ukraine | Djinni | Found | 2026-11-04 | [Djinni](https://djinni.co/jobs/856601-middle-php-developer/) | — | — | — | — | — |
