@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "743b2c7a4e930bc13a97efa8af412aa58b04a733c99bffe941f9e2759ac6d1ac",
+      "size": 12548,
+      "snapshot": "files/application/CV_ValentinNikolaev_groupib_SeniorGolangDeveloper.docx",
+      "source": "registry/jobs/20261104_group-ib_6a650fe0f4b742d5b67ee6abb09fb910/application/CV_ValentinNikolaev_groupib_SeniorGolangDeveloper.docx"
+    }
+  ],
+  "channel": "not_provided",
+  "event_id": "submission:2026-11-05-cv",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-05",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/6a650fe0-f4b7-42d5-b67e-e6abb09fb910/submissions/2026-11-05-cv",
+  "submission_id": "2026-11-05-cv",
+  "vacancy_id": "6a650fe0-f4b7-42d5-b67e-e6abb09fb910"
+}

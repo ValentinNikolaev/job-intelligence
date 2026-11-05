@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "965bff1b5398e96355b9c43a84ccaa9aceb28058e442823a38947663e31feb82",
+      "size": 83845,
+      "snapshot": "files/application/CV_ValentinNikolaev_interactivereel_TechLeadFintech.pdf",
+      "source": "registry/jobs/20261104_interactive-re_ae19d469309b4cfebd97e7239fdbf5f6/application/CV_ValentinNikolaev_interactivereel_TechLeadFintech.pdf"
+    }
+  ],
+  "channel": "not_provided",
+  "event_id": "submission:2026-11-05-cv",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-05",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/ae19d469-309b-4cfe-bd97-e7239fdbf5f6/submissions/2026-11-05-cv",
+  "submission_id": "2026-11-05-cv",
+  "vacancy_id": "ae19d469-309b-4cfe-bd97-e7239fdbf5f6"
+}

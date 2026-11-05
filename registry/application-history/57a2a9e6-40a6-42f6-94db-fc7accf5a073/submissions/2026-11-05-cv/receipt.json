@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "8c8a350259848da4614d4f2b83d64fe3b4af6b3b3620ef8796a25d9eef6394ee",
+      "size": 12286,
+      "snapshot": "files/application/CV_ValentinNikolaev_supermoney_PHPDeveloper.docx",
+      "source": "registry/jobs/20261104_supermoney_57a2a9e640a642f694dbfc7accf5a073/application/CV_ValentinNikolaev_supermoney_PHPDeveloper.docx"
+    }
+  ],
+  "channel": "not_provided",
+  "event_id": "submission:2026-11-05-cv",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-05",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/57a2a9e6-40a6-42f6-94db-fc7accf5a073/submissions/2026-11-05-cv",
+  "submission_id": "2026-11-05-cv",
+  "vacancy_id": "57a2a9e6-40a6-42f6-94db-fc7accf5a073"
+}
