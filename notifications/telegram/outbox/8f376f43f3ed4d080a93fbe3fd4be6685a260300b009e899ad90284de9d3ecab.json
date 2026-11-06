@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-06T00:22:12Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "mondogaming srl",
+      "country_codes": [],
+      "directory": "20261105_mondogaming-sr_bf90b691b32e4ec18c2add7b3e076c1a",
+      "score": 70,
+      "title": "Svilupparore Backend Golang",
+      "url": "https://www.adzuna.it/details/5954539515?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "bf90b691-b32e-4ec1-8c2a-dd7b3e076c1a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "8f376f43f3ed4d080a93fbe3fd4be6685a260300b009e899ad90284de9d3ecab",
+  "schema_version": 2
+}
