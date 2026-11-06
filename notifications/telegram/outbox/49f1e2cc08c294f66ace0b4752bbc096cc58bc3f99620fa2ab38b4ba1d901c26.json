@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-06T14:38:12Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "New Wave Devs",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261106_new-wave-devs_b90af3d142084f0fb0e74b69a9e3b763",
+      "score": 70,
+      "title": "Senior Backend Engineer (Go + ComfyUI), a product company with generative image and video features",
+      "url": "https://djinni.co/jobs/857049-senior-backend-engineer-go-comfyui-a-product-/",
+      "vacancy_id": "b90af3d1-4208-4f0f-b0e7-4b69a9e3b763"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "49f1e2cc08c294f66ace0b4752bbc096cc58bc3f99620fa2ab38b4ba1d901c26",
+  "schema_version": 2
+}
