@@ -142,7 +142,7 @@ class CareerCoverageTests(unittest.TestCase):
     def test_project_inventory_requires_six_companies_from_pdffiller(self) -> None:
         project_source = Path(__file__).resolve().parents[1] / "registry/candidate/linkedin-profile.md"
         cv = """## Experience
-### Simple.life | November 2023 - 2026
+### Simple.life | November 2023 - October 2026
 ### CRURATED | August 2024 - January 2026
 ### airSlate | February 2021 - August 2023
 ### Hyprr | November 2019 - January 2021

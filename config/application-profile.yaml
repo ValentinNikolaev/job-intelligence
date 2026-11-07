@@ -118,9 +118,9 @@ preparation:
   career_clarifications:
   - employer: Simple App
     reviewed:
-      reviewer: Codex phase 4 source review
-      reason: Preserve the confirmed start and supported end year. Apply the follow-up title and PHP claim
-        boundaries; the precise employment end month remains unconfirmed. Apply the source-backed role
+      reviewer: Codex /root October 2026 source correction; prior title and scope review retained
+      reason: Preserve the confirmed start and October 2026 end month. Apply the follow-up title and PHP claim
+        boundaries; the November 2026 confirmation supersedes the earlier end-date uncertainty. Apply the source-backed role
         rendering bounds of 5–7 bullets, at most seven, and one sentence of at most 40 words per bullet.
         Generic grounding and measurement requirements override the source formula requiring a number;
         never invent numeric achievements or present unverified estimates as measured outcomes.
@@ -178,16 +178,18 @@ preparation:
     
         6. Do not mention internal codenames (Kova, med-support, support-automation-ai) — use functional names
         (support admin panel, LLM support agent, helpdesk gateway).'
+    - path: registry/candidate/user-confirmed-simple-life-end-date-2026-11-07.md
+      sha256: aaed5a658afcdff3fd0988c2383d8fe8940fc525e4d38371c00df85aebcf9612
+      quote: 'The confirmed employment period for **Simple App / Simple.life** is **November 2023 - October 2026**. This is a completed role.'
     corrections:
       start:
         value: November 2023
         precision: month
         source: 0
       end:
-        value: July 2026
-        precision: year
-        source: 0
-        uncertainty_source: 1
+        value: October 2026
+        precision: month
+        source: 4
   - employer: CRURATED
     reviewed:
       reviewer: Codex phase 4 source review

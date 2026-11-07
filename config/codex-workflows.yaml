@@ -34,7 +34,7 @@ model_profiles:
 workflows:
   analyze:
     default_profile: luna_medium
-    allowed_profiles: [luna_medium, terra_medium, terra_high, sol_medium, sol61_high]
+    allowed_profiles: [luna_medium, terra_medium, terra_high, sol_medium, sol61_high, terra61_medium]
     purpose: High-volume vacancy scoring and initial selection.
   prepare:
     default_profile: terra61_medium
