@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-07T04:45:03Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Datadog",
+      "country_codes": [],
+      "directory": "20261107_datadog_9e00c1ff23004be2bd99a2b7d598ef96",
+      "score": 72,
+      "title": "Senior Partner Solutions Architect (Pan-EMEA GSI)",
+      "url": "https://www.arbeitnow.com/jobs/companies/datadog/remote-senior-partner-solutions-architect-pan-emea-gsi-458815",
+      "vacancy_id": "9e00c1ff-2300-4be2-bd99-a2b7d598ef96"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d6d8bd27e158c30ecd82e265d0ad89bc255ec8c31fc1fa507b70e7db29e1bcf8",
+  "schema_version": 2
+}
