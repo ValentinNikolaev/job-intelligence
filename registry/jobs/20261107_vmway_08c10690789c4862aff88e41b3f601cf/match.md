@@ -1,33 +1,34 @@
 # Match Analysis
 
-**Score:** 79/100  
+**Score:** 75/100  
 **Recommendation:** Match
 
-Strong PHP/Symfony and backend fit for a Rome hybrid role, with frontend and Doctrine depth still unverified.
+Relevant PHP and Symfony backend experience, REST and production delivery fit a Rome hybrid role; Doctrine depth, frontend requirements and practical terms need clarification.
 
 ## Why it matches
 
-- PHP and Symfony are established backend technologies.
-- REST APIs, relational databases, SQL, GitHub Actions, and production backend work are evidenced.
-- Rome-based hybrid work and the local location preference fit the profile.
+- Production PHP backend experience and a documented Laravel/Symfony logger.
+- REST APIs, database reliability and production delivery experience.
+- Rome location matches a preferred city.
 
 ## Gaps
 
-- HTML/CSS, JavaScript with jQuery, and Doctrine ORM are not explicitly evidenced in the profile.
-- SOAP and LAMP/LEMP are not explicitly evidenced.
+- Doctrine ORM and the listed frontend technologies are not evidenced in the supplied profile.
 
 ## Concerns
 
-- The posting requires one or two office days weekly and lists a RAL of 25,000–35,000 EUR, but availability and salary preference are unknown.
+- Hybrid attendance, the client-site location, salary fit and Italian language expectations are unconfirmed.
+- Advanced SQL schema-design depth and Git/SVN repository responsibility need clarification.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP and Symfony | critical / stated | strong | Sviluppare e mantenere applicazioni backend utilizzando PHP e framework Symfony | - PHP | / |
-| Doctrine ORM | high / stated | unknown | Conoscenza approfondita di PHP e framework Symfony con Doctrine ORM |  | Doctrine ORM depth is not stated in the candidate profile. / Verify Doctrine usage in a screening conversation. |
-| Relational database design and SQL | high / stated | partial | Progettare e ottimizzare database relazionali con SQL | - MySQL | SQL design is supported by MySQL/PostgreSQL evidence, but the exact depth of schema design is not explicit. / Clarify representative SQL optimization and schema-design work. |
-| REST or SOAP web services | high / stated | strong | Sviluppare web services basati su architetture REST o SOAP | REST APIs | / |
-| Rome hybrid attendance | high / stated | strong | Sede di lavoro: Roma | Rome, Italy | / |
-| HTML/CSS and JavaScript with jQuery | meaningful / stated | unknown | Conoscenza di HTML/CSS e JavaScript con jQuery |  | No explicit HTML, CSS, JavaScript, or jQuery evidence is present. / Treat as a secondary skill and verify only if used day to day. |
-| Git or SVN repository management | meaningful / stated | partial | Esperienza nella gestione di repository (Git, SVN) | - GitHub Actions | Repository-management experience is suggested by CI/CD tooling but Git/SVN ownership is not explicit. / Confirm repository workflow and branching responsibilities. |
+| PHP and Symfony | critical / stated | strong | Sviluppare e mantenere applicazioni backend utilizzando PHP e framework Symfony | Developed a Laravel/Symfony-based product-wide logger package | / |
+| Doctrine ORM | high / stated | unknown | Conoscenza approfondita di PHP e framework Symfony con Doctrine ORM |  | Doctrine use and depth are not evidenced. / Ask for concrete Doctrine experience and the project version. |
+| Relational database design and SQL | high / stated | partial | Competenze avanzate nella progettazione di database e SQL | - MySQL | The profile lists relational databases but does not establish advanced SQL design depth. / Discuss representative schema and SQL optimisation work. |
+| Rome hybrid working | high / stated | partial | Modalità di lavoro: Ibrida con 1/2 giorni a settimana in presenza presso la sede del cliente | Rome, Italy | Rome location is supported, but willingness to attend weekly and client-site location are unknown. / Confirm the site and attendance with the candidate. |
+| REST or SOAP web services | high / stated | strong | Esperienza solida nello sviluppo di web services REST (o SOAP) | REST APIs | / |
+| Repository management | meaningful / stated | unknown | Esperienza nella gestione di repository (Git, SVN) |  | Git or SVN ownership is not explicit in the supplied evidence. / Confirm the candidate’s actual repository workflow. |
+| Frontend technologies | meaningful / stated | unknown | Conoscenza di HTML/CSS e JavaScript con jQuery |  | The listed frontend skills are not explicitly supported. / Clarify the candidate’s experience and how often the client needs them. |
+| LAMP/LEMP | meaningful / stated | unknown | Familiarità con architetture LAMP/LEMP |  | The specific stack is not explicitly documented. / Confirm the deployment environment and relevant experience. |

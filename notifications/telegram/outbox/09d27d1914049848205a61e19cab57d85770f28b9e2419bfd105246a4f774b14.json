@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-07T22:58:58Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "VMWay",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261107_vmway_08c10690789c4862aff88e41b3f601cf",
+      "score": 75,
+      "title": "Backend Developer PHP",
+      "url": "https://www.linkedin.com/jobs/view/4485840507/",
+      "vacancy_id": "08c10690-789c-4862-aff8-8e41b3f601cf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "09d27d1914049848205a61e19cab57d85770f28b9e2419bfd105246a4f774b14",
+  "schema_version": 2
+}
