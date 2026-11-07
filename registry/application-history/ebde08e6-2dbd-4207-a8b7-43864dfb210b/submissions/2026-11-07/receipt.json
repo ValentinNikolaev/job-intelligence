@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "6b8a100780834a385d4a43531a2afa3646d28d07103f9cc50383d2dc0342bfe4",
+      "size": 12117,
+      "snapshot": "files/application/CV_ValentinNikolaev_nuite_StaffSoftwareEngineerFieldEngineering.docx",
+      "source": "registry/jobs/20261106_nuitée_ebde08e62dbd4207a8b743864dfb210b/application/CV_ValentinNikolaev_nuite_StaffSoftwareEngineerFieldEngineering.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:2026-11-07",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-07",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/ebde08e6-2dbd-4207-a8b7-43864dfb210b/submissions/2026-11-07",
+  "submission_id": "2026-11-07",
+  "vacancy_id": "ebde08e6-2dbd-4207-a8b7-43864dfb210b"
+}

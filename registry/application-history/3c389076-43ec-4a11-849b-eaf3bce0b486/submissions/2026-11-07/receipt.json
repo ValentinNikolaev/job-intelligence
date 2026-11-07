@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "1e0a03d0c2a0c6105ee0e18d232f3ba82dc26c21c74b8f8c86328c050123c82b",
+      "size": 12241,
+      "snapshot": "files/application/CV_ValentinNikolaev_asperbrothers_SymfonyDeveloper.docx",
+      "source": "registry/jobs/20261106_asper-brothers_3c38907643ec4a11849beaf3bce0b486/application/CV_ValentinNikolaev_asperbrothers_SymfonyDeveloper.docx"
+    }
+  ],
+  "channel": "not_provided",
+  "event_id": "submission:2026-11-07",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-07",
+  "positioning": "not_provided",
+  "role_family": "not_provided",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/3c389076-43ec-4a11-849b-eaf3bce0b486/submissions/2026-11-07",
+  "submission_id": "2026-11-07",
+  "vacancy_id": "3c389076-43ec-4a11-849b-eaf3bce0b486"
+}
