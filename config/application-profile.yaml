@@ -71,13 +71,16 @@ reusable_answers:
     explicit, documenting technical decisions, and using in-person meetups for
     alignment, deeper collaboration, and relationship building.
   salary_answer_template: >-
-    Given the role scope and leadership expectations, I would like to discuss the
-    upper part of the published range, depending on the full package,
-    responsibilities, and growth path.
+    Follow docs/compensation-benchmark.md for every vacancy. Research the relevant
+    team's physical working locations and the employer's pay policy, then calculate
+    a rounded central base-pay estimate for the applicable market. Save sources,
+    assumptions and confidence; do not default to the upper band or ask the candidate
+    to supply a salary already delegated to this workflow. Preserve explicit
+    vacancy-specific instructions, including the KITRUM Ukrainian-market exception.
 open_questions_for_candidate:
   - Confirm exact work authorization wording for Italy/EU and whether sponsorship is needed.
   - Confirm notice period and earliest start date.
-  - Confirm expected gross annual salary or acceptable range.
+  - Calculate salary expectations using docs/compensation-benchmark.md; ask only about a material unresolved contract choice that research and existing instructions cannot settle.
   - Confirm whether any production NodeJS, Python, DynamoDB, React, TypeScript, or logistics experience can be added to source evidence.
 
 preparation:

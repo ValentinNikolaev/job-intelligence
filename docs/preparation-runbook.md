@@ -1,5 +1,9 @@
 # One-pass preparation and repository handoff
 
+For salary research and application salary fields, always use the
+[compensation benchmark workflow](compensation-benchmark.md). Keep its dated,
+vacancy-keyed calculation separate from approved CV artifacts and candidate facts.
+
 New selected drafts use [quality contract 3](application-review-contract.md).
 Collect source context and measurement bindings during the existing evidence pass,
 review the complete career inventory during the independent CV edit, and bind the
