@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 78
+Total vacancies: 81
 
-- Found: 39
+- Found: 42
 - Applied: 34
 - Interview: 4
 - Closed: 1
@@ -13,6 +13,9 @@ Total vacancies: 78
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-07 | [Docebo](../registry/jobs/20261107_docebo_986c530eca5e43c1b3401526ad619ede/) | [Senior Product Engineer I - Go/PHP + Angular](../registry/jobs/20261107_docebo_986c530eca5e43c1b3401526ad619ede/job.md) | Biassono, Lombardy, Italy | Linkedin | Found | 2026-11-07 | [Linkedin](https://www.linkedin.com/jobs/view/4462438168/) | — | — | — | — | — |
+| 2026-11-07 | [Docebo](../registry/jobs/20261107_docebo_469c2197be6040888bc7bdddccfe0785/) | [Senior Product Engineer I - Go/PHP + Angular](../registry/jobs/20261107_docebo_469c2197be6040888bc7bdddccfe0785/job.md) | Milan, Lombardy, Italy | Linkedin | Found | 2026-11-07 | [Linkedin](https://www.linkedin.com/jobs/view/4462438154/) | — | — | — | — | — |
+| 2026-11-07 | [VMWay](../registry/jobs/20261107_vmway_08c10690789c4862aff88e41b3f601cf/) | [Backend Developer PHP](../registry/jobs/20261107_vmway_08c10690789c4862aff88e41b3f601cf/job.md) | Rome, Latium, Italy | Linkedin | Found | 2026-11-07 | [Linkedin](https://www.linkedin.com/jobs/view/4485840507/) | — | — | — | — | — |
 | 2026-11-07 | [Datadog](../registry/jobs/20261107_datadog_9e00c1ff23004be2bd99a2b7d598ef96/) | [Senior Partner Solutions Architect (Pan-EMEA GSI)](../registry/jobs/20261107_datadog_9e00c1ff23004be2bd99a2b7d598ef96/job.md) | Remote | Arbeitnow | Found | 2026-11-07 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/datadog/remote-senior-partner-solutions-architect-pan-emea-gsi-458815) | — | — | — | — | — |
 | 2026-11-06 | [New Wave Devs](../registry/jobs/20261106_new-wave-devs_b90af3d142084f0fb0e74b69a9e3b763/) | [Senior Backend Engineer (Go + ComfyUI), a product company with generative image and video features](../registry/jobs/20261106_new-wave-devs_b90af3d142084f0fb0e74b69a9e3b763/job.md) | Worldwide | Djinni | Found | 2026-11-06 | [Djinni](https://djinni.co/jobs/857049-senior-backend-engineer-go-comfyui-a-product-/) | — | — | — | — | — |
 | 2026-11-06 | [Nuitée](../registry/jobs/20261106_nuit%C3%A9e_ebde08e62dbd4207a8b743864dfb210b/) | [Staff Software Engineer, Field Engineering](../registry/jobs/20261106_nuit%C3%A9e_ebde08e62dbd4207a8b743864dfb210b/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-06 | [Himalayas](https://himalayas.app/companies/nuitee/jobs/staff-software-engineer-field-engineering?utm_source=api) | — | [MD](../registry/jobs/20261106_nuit%C3%A9e_ebde08e62dbd4207a8b743864dfb210b/application/cv.md) / [DOCX](../registry/jobs/20261106_nuit%C3%A9e_ebde08e62dbd4207a8b743864dfb210b/application/cv.docx) | — | [Open](../registry/jobs/20261106_nuit%C3%A9e_ebde08e62dbd4207a8b743864dfb210b/application/analysis.md) | [Open](../registry/jobs/20261106_nuit%C3%A9e_ebde08e62dbd4207a8b743864dfb210b/application/interview-preparation.md) |
