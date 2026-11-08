@@ -1,31 +1,32 @@
 # Match Analysis
 
-**Score:** 72/100  
-**Recommendation:** Match
+**Score:** 20/100  
+**Recommendation:** Not Match
 
-Good PHP/Laravel remote SaaS fit with substantial backend experience and API/database work; JavaScript, Bootstrap, NoSQL, New York hours, and Telegram contact availability remain uncertain.
+Strong PHP and Laravel background, but the posting requires 10:00 AM–7:00 PM EST and no European-hours exception is stated.
 
 ## Why it matches
 
-- Strong PHP/Laravel and backend experience exceeds the stated minimum.
-- Remote collaboration and Git/REST-oriented work are supported.
-- Performance and scalable service work is relevant to the SaaS role.
+- PHP and Laravel experience
+- Remote SaaS and performance work
 
 ## Gaps
 
-- JavaScript, Bootstrap, and NoSQL are not explicitly evidenced.
-- New York time availability is not stated.
+- Required New York working hours conflict with the candidate's Italy-based availability
+- JavaScript, Bootstrap, and SQL/NoSQL depth are not established in the candidate profile
 
 ## Concerns
 
-- The role requires 10:00 AM–7:00 PM EST; compatibility with the candidate's local schedule is unknown.
-- The requested Telegram application link is not established by the sealed profile.
+- The schedule is an explicit decisive location and timezone conflict
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP and Laravel experience | critical / stated | strong | 3+ years | **Skills:** PHP \| Laravel \| MySQL \| Elasticsearch \| RabbitMQ \| AWS \| Kubernetes \| | / |
-| SQL or NoSQL data experience | high / stated | partial | Strong understanding of **SQL/NoSQL databases** and data architecture. | - MySQL | NoSQL breadth and data-architecture scope are not explicit. / Clarify production NoSQL and schema-design experience. |
-| JavaScript and Bootstrap | high / stated | unknown | Proficiency in **JavaScript** and front-end frameworks, with experience using **Bootstrap**. |  | Required frontend technologies are not evidenced in the profile. / Verify hands-on JavaScript and Bootstrap work before preparation. |
-| Work schedule in New York time | high / stated | unknown | candidates must be available to work New York time (10:00 AM — 7:00 PM EST). |  | Local-hours compatibility is unknown. / Confirm availability before applying. |
+| New York working hours | critical / stated | missing | must be available to work New York time (10:00 AM — 7:00 PM EST) | Fiumicino, Latium, Italy | Required hours are not compatible with the candidate's stated location. / Confirm a written European-hours exception before considering the role. |
+| PHP and Laravel | critical / stated | strong | PHP (Laravel), SQL/NoSQL, JavaScript, and Bootstrap | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+| 3+ years PHP development | high / stated | strong | **Experience:** 3+ years | I have a strong track record in PHP, with 5 years of leadership experience. | / |
+
+## Hard rejection
+
+- Explicit New York time requirement is incompatible with the candidate's Italy-based work constraints and no European-hours exception is stated.

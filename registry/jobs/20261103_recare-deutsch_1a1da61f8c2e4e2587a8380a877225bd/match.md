@@ -1,31 +1,29 @@
 # Match Analysis
 
-**Score:** 91/100  
+**Score:** 88/100  
 **Recommendation:** Strong Match
 
-Very strong Go backend match with direct evidence for ownership, PostgreSQL, CI/CD, automation, performance work, mentoring, and remote work from Italy; healthcare domain remains a bonus gap.
+Italy-eligible remote Go role with strong overlap in backend ownership, event-driven systems, APIs, reliability, databases, CI/CD, and AI-adjacent automation.
 
 ## Why it matches
 
-- Production Go ownership, APIs, automation, and reliability work directly match the role.
-- PostgreSQL/GORM, CI/CD, Kubernetes, testing, and database optimization evidence is relevant.
-- Remote work from Italy is explicitly allowed and the senior IC scope fits.
+- Production Go and backend ownership
+- Event-driven systems, queues, reliability, monitoring, and database optimization
+- Italy is explicitly included in the remote countries
 
 ## Gaps
 
-- Healthcare interoperability standards and domain experience are not evidenced.
-- CircleCI, SonarCloud, and GORM are not all explicit in the vacancy-specific evidence, though PostgreSQL/GORM appears in the profile.
+- Healthcare, FHIR, HL7, and DICOM are not present, but healthcare is only a bonus
+- GORM and CircleCI are not explicit
 
 ## Concerns
 
-- The role expects confident synchronous communication and written documentation; the profile supports communication broadly but does not measure these behaviors directly.
+- German healthcare domain and secure patient-data context require domain onboarding
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Production Go backend experience | critical / stated | strong | We're looking for someone with production experience in Golang | I design and own a support automation platform that connects Zendesk, Intercom, and | / |
-| Technical ownership and senior IC leadership | critical / stated | strong | Own a domain inside our core Go codebase, contributing to architecture decisions and code quality within your area | Valentin is the sole backend owner of the telephony, helpdesk-gateway and GDPR-automation domains. | / |
-| PostgreSQL, CI, testing, and optimization | high / stated | strong | We use Postgres for our databases and GORM to interface with it. | Stack: Go, PostgreSQL (GORM), AWS (Amazon Connect, SQS, IAM/IRSA, Lambda), Kubernetes CronJobs, Terraform, Intercom API, Zendesk API, Snowflake, OpenAI/LLM tooling, OpenAPI, DeepL, Braze, AppsFlyer, Microsoft Entra ID. | / |
-| Remote work from Italy | meaningful / stated | strong | we offer the flexibility to work 100% remotely from Germany, Spain, Portugal, Italy, Poland, France and Austria. | Fiumicino, Latium, Italy | / |
-| Healthcare experience | preferred / stated | unknown | Healthcare experience is a bonus, not a requirement. |  | No healthcare evidence is present in the profile. / Position transferable compliance-heavy and secure-communications experience. |
+| Production Golang backend | critical / stated | strong | Our entire backend codebase is in Golang | I design and own a support automation platform | / |
+| Technical ownership and architecture | high / stated | strong | Own a domain inside our core Go codebase, contributing to architecture decisions and code quality within your area | I architect and lead the development of the platform's internal event analytics | / |
+| Italy remote eligibility | high / stated | strong | work 100% remotely from Germany, Spain, Portugal, Italy, Poland, France and Austria | Fiumicino, Latium, Italy | / |

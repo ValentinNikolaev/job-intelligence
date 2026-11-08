@@ -1,31 +1,29 @@
 # Match Analysis
 
-**Score:** 88/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Strong fit for a remote Go backend role in Italy: the profile shows Go service ownership, REST API work, PostgreSQL, and senior backend delivery. Docker is not explicitly evidenced, and the Italian salary range has no stated candidate preference.
+The concise listing directly matches the candidate's Go backend and REST API experience; Docker and PostgreSQL are not fully evidenced in the profile.
 
 ## Why it matches
 
-- Go backend ownership and production service delivery are directly evidenced.
-- REST API and PostgreSQL experience are supported by the candidate profile.
-- Remote work from Italy is compatible with the vacancy location and remote arrangement.
+- Go backend development
+- REST/API and database experience
+- Italy-based remote eligibility
 
 ## Gaps
 
-- Docker is required by the vacancy but is not explicitly evidenced in the candidate profile.
+- Docker is not explicit in the candidate evidence
+- Exact role scope and seniority expectations are underspecified
 
 ## Concerns
 
-- The vacancy is a short Italian-language extract and does not state a language requirement or detailed responsibilities.
+- The source description is too short to assess architecture, testing, and domain requirements
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go backend development | critical / stated | strong | GO Developer | Senior Software Engineer \| Tech Lead \| Backend \| AWS \| Golang \| PHP | / |
-| Docker | high / stated | unknown | Il candidato ideale ha competenze in Go, Docker e gestione di database PostgreSQL. |  | Docker experience is not explicit in the supplied profile. / Confirm Docker usage during screening. |
-| Backend services and REST APIs | high / stated | strong | REST API | Additional skills: PostgreSQL, Restfull API. | / |
-| PostgreSQL database management | high / stated | strong | gestione di database PostgreSQL | Additional skills: PHP frameworks Mezzio + Phalcon, PostgreSQL, Prometheus/Jaeger. | / |
-| Permanent contract and RAL 40,000-45,000 | meaningful / stated | unknown | contratto a tempo indeterminato con RAL indicativa di 40.000-45.000 |  | Contract and salary preference are not stated in the profile. / Clarify expectations before application. |
-| Remote work in Italy | meaningful / structural | strong | Remote | Fiumicino, Latium, Italy | / |
+| Go backend services | critical / stated | strong | GO Developer | I design and own a support automation platform | / |
+| Docker and PostgreSQL | high / stated | partial | competenze in Go, Docker e gestione di database PostgreSQL | ### Databases - MySQL - PostgreSQL - Elasticsearch | Docker is not established. / Verify containerization experience. |
+| REST APIs | high / stated | strong | implementazione di REST API | Engineer a unified API orchestration layer | / |

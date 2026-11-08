@@ -1,35 +1,29 @@
 # Match Analysis
 
-**Score:** 68/100  
-**Recommendation:** Match
+**Score:** 60/100  
+**Recommendation:** Possible Match
 
-The candidate matches senior backend, SaaS integration, Go/PHP, REST, AI automation, observability, and EMEA remote requirements. Strong Python proficiency is a central gap because the profile documents Go and PHP but no Python experience.
+Remote EMEA eligibility, Go/PHP, APIs, automation, and production AI integration help, but strong Python is a stated central requirement and is not supported.
 
 ## Why it matches
 
-- 15+ years of backend engineering with production APIs and integrations.
-- Direct AI-assisted support automation and LLM workflow experience.
-- Go and PHP are explicitly listed as nice-to-have technologies.
-- Remote EMEA location and collaboration fit are explicit.
+- Italy is within the explicitly allowed EMEA region
+- Backend APIs and support automation experience
+- Production AI-powered auto-triage experience
 
 ## Gaps
 
-- Strong Python proficiency is not established in the candidate profile.
-- LangChain, Vercel AI SDK, MCP servers, and Python SDK experience are not established.
+- Strong Python proficiency is not present in the candidate evidence
+- MCP, LangChain, and Python SDK experience are unknown
 
 ## Concerns
 
-- The role may require substantial day-to-day Python ownership despite the candidate's adjacent AI and backend experience.
-- Compensation is not stated.
+- The role is specifically on a Python-centered AI platform team
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Strong Python proficiency | critical / stated | unknown | Strong Python proficiency |  | The supplied profile does not establish Python experience, while Python is central to the AI platform role. / Confirm current Python proficiency and production examples before preparation. |
-| 5+ years backend engineering, ideally SaaS | critical / stated | strong | 5+ years in backend engineering, ideally SaaS. | Backend engineer with 15+ years of experience building and improving production | / |
-| LLM/AI tools and AI service integration | high / stated | partial | Familiarity with LLM/AI tools (LangChain, Vercel AI SDK, MCP servers). | Integrate OpenAI-powered auto-triage flows, resulting in the automated handling or | The named LangChain, Vercel AI SDK, and MCP technologies are not evidenced. / Map the candidate's actual LLM orchestration stack and verify any adjacent tools. |
-| REST APIs and SaaS integrations | high / stated | strong | Experience with REST APIs and SaaS integrations. | REST APIs | / |
-| Observability, monitoring, and production error handling | high / stated | strong | Implement observability, monitoring, and error handling for AI services in production. | message delivery pipelines with fallback logic, retries, and | / |
-| Remote within EMEA | high / stated | strong | the candidate must be within EMEA | Rome, Italy | / |
-| Nice-to-have PHP and Golang | preferred / stated | strong | Nice to have: experience with PHP + Golang | PHP | / |
+| Strong Python proficiency | critical / stated | missing | Strong Python proficiency | ## Languages - Go - PHP | Python is the primary implementation language for the AI services. / Confirm whether adjacent Go/PHP experience can satisfy the role. |
+| LLM or AI tooling | high / stated | partial | Familiarity with LLM/AI tools (LangChain, Vercel AI SDK, MCP servers). | Integrate OpenAI-powered auto-triage flows | Specific tools and MCP are not established. / Clarify production AI integration scope and adjacent tooling. |
+| REST APIs and SaaS integrations | high / stated | strong | Experience with REST APIs and SaaS integrations. | Engineer a unified API orchestration layer | / |

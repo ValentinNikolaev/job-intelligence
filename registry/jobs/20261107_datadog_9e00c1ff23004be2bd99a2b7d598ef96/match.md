@@ -1,33 +1,29 @@
 # Match Analysis
 
-**Score:** 72/100  
-**Recommendation:** Match
+**Score:** 57/100  
+**Recommendation:** Possible Match
 
-Strong EU-resident cloud, Kubernetes, Go/PHP, and monitoring foundation, with Datadog product, partner-channel, and presentation evidence unknown.
+EU residency and cloud/container/development experience fit the platform context, but partner enablement, presentations, and observability-product expertise are not demonstrated.
 
 ## Why it matches
 
-- The candidate is resident in Italy, an EU country.
-- AWS, Kubernetes, PHP, Go, CI/CD, monitoring, troubleshooting, and production reliability are evidenced.
-- Technical leadership and cross-functional collaboration support advisor-level work.
+- EU resident in Italy
+- AWS, Kubernetes, PHP, and Go background
+- Troubleshooting and monitoring experience
 
 ## Gaps
 
-- Datadog or equivalent named observability product usage is not explicit.
-- Partner-channel enablement, customer demonstrations, presentation skills, and business-acumen evidence are not explicit.
+- Partner-facing architecture, demos, certification, and presentation work are not established
+- Datadog or equivalent observability product experience is not explicit
 
 ## Concerns
 
-- The role is customer- and partner-facing, so communication and presentation expectations may be materially higher than the candidate profile demonstrates.
+- This is a solutions-architecture and partner role rather than a backend engineering role
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
 | Current EU residency | critical / stated | strong | Must be a current EU resident | Fiumicino, Latium, Italy | / |
-| Technical development or operations grounding | critical / stated | strong | solid technical grounding with hands-on experience of IT Development and/or Operations | operational reliability | / |
-| Observability experience | high / stated | partial | Observability: Datadog, Splunk, AppD, New Relic or Dynatrace | - Prometheus | Prometheus and monitoring are evidenced, but no listed Datadog/Splunk/New Relic product is named. / Clarify production observability tooling and transferable APM/logs experience. |
-| Confident presentations and partner enablement | high / stated | unknown | Confident presentation skills; |  | The profile shows mentoring and collaboration but not customer presentations or partner training. / Validate presentation and partner-facing examples in screening. |
-| Cloud and containerization | high / stated | strong | Public Cloud: AWS, Azure, GCP, or Alibaba - Containerization: Docker, Kubernetes, OpenShift, Cloud Foundry | - Kubernetes | / |
-| Dev or scripting languages | high / stated | strong | Dev/Scripting: Python, Javascript, Ruby, Perl, PHP, Go | ### Languages - Go - PHP | / |
-| Channel partner experience | preferred / stated | unknown | Previous experience working in a technical role for or supporting channel partners |  | Partner-channel work is not stated. / Treat as a bonus and assess transferable stakeholder work. |
+| Cloud and container experience | high / stated | partial | Public Cloud: AWS, Azure, GCP | ## Infrastructure - AWS - Kubernetes - RabbitMQ | Azure/GCP and partner transformation delivery are unknown. / Position AWS/Kubernetes evidence and verify customer-facing work. |
+| Confident presentation skills | high / stated | unknown | Confident presentation skills |  | Partner enablement and boardroom communication are central to the role. / Confirm presentation and external stakeholder experience. |
