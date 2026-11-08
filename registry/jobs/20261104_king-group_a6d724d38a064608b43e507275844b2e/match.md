@@ -1,30 +1,27 @@
 # Match Analysis
 
-**Score:** 78/100  
-**Recommendation:** Match
+**Score:** 63/100  
+**Recommendation:** Possible Match
 
-Strong PHP and framework fit for the product backend, with relevant PostgreSQL, RabbitMQ, high-load, and microservice evidence; remote eligibility and relocation support reduce the Ukraine location concern.
+PHP, Symfony/Yii, PostgreSQL, Redis/RabbitMQ, high-load, and product ownership fit well, while the Kyiv office context and relocation need remain unresolved.
 
 ## Why it matches
 
-- Strong PHP experience with Symfony, Yii, Laravel, PostgreSQL, RabbitMQ, and REST APIs.
-- Direct experience with high-load systems, microservices, database optimization, and payment integrations.
-- Seniority exceeds the stated middle-level range and includes technical leadership.
+- The candidate has PHP, Laravel/Symfony, PostgreSQL, RabbitMQ, AWS, and high-load production experience.
+- The candidate has product and technical-lead experience relevant to a scaling platform.
 
 ## Gaps
 
-- Kafka, Redis, DDD, and Ukrainian work-context specifics are not fully evidenced.
+- Explicit Yii experience, DDD, and PHP 7.4 are not clearly established in the sealed profile.
 
 ## Concerns
 
-- The role is associated with an office in Kyiv and a Ukraine-based team; the candidate is in Italy.
+- The vacancy describes a Kyiv office and offers relocation support, but no remote arrangement is stated.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Product PHP experience with Yii or Symfony | critical / stated | strong | 3-4+ років продуктового досвіду з PHP, Yii, Symfony | Additional skills: Symfony2 & Yii2 | / |
-| PostgreSQL | critical / stated | strong | PHP, Yii, Symfony | - MySQL - PostgreSQL - Elasticsearch | / |
-| REST APIs and Git | high / stated | strong | Розуміння REST API | REST APIs | Git is not quoted in the same evidence excerpt. / Confirm day-to-day Git workflow in screening. |
-| High-load and microservice work | high / stated | strong | high load systems | Kubernetes | / |
-| Remote or relocation compatibility | meaningful / stated | partial | Підтримка при релокейті. | Fiumicino, Latium, Italy | The role also describes a Kyiv office; the exact remote arrangement is not explicit. / Confirm whether the role can be performed remotely from Italy or requires relocation. |
+| Product PHP with Symfony/Yii and PostgreSQL | critical / stated | partial | 3-4+ років продуктового досвіду з PHP, Yii, Symfony (також розглядаємо зі знанням Laravel), PostgreSQL | PHP | Yii and explicit PostgreSQL evidence are not both established in the compact CV excerpt. / Verify Yii and PostgreSQL examples. |
+| Kyiv office or relocation | high / stated | unknown | Підтримка при релокейті. | Fiumicino, Latium, Italy | Relocation willingness is not stated. / Confirm remote eligibility or relocation preference. |
+| High-load and message-broker work | high / stated | strong | high load systems | Scaled | / |

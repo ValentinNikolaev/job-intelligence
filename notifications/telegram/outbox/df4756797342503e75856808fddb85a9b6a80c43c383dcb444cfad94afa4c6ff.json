@@ -1,0 +1,109 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-08T03:05:50Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Docebo",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261107_docebo_986c530eca5e43c1b3401526ad619ede",
+      "score": 68,
+      "title": "Senior Product Engineer I - Go/PHP + Angular",
+      "url": "https://www.linkedin.com/jobs/view/4462438168/",
+      "vacancy_id": "986c530e-ca5e-43c1-b340-1526ad619ede"
+    },
+    {
+      "company": "Docebo",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261107_docebo_469c2197be6040888bc7bdddccfe0785",
+      "score": 67,
+      "title": "Senior Product Engineer I - Go/PHP + Angular",
+      "url": "https://www.linkedin.com/jobs/view/4462438154/",
+      "vacancy_id": "469c2197-be60-4088-8bc7-bdddccfe0785"
+    },
+    {
+      "company": "Edsson Ukraine",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261105_edsson-ukraine_57867f89b57b4bd6a4b687202e4e9191",
+      "score": 82,
+      "title": "Senior Software Developer",
+      "url": "https://djinni.co/jobs/856836-senior-software-developer/",
+      "vacancy_id": "57867f89-b57b-4bd6-a4b6-87202e4e9191"
+    },
+    {
+      "company": "INTERACTIVE REEL LTD",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261104_interactive-re_ae19d469309b4cfebd97e7239fdbf5f6",
+      "score": 86,
+      "title": "Tech Lead — Fintech",
+      "url": "https://djinni.co/jobs/856652-tech-lead-fintech/",
+      "vacancy_id": "ae19d469-309b-4cfe-bd97-e7239fdbf5f6"
+    },
+    {
+      "company": "Group-IB",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261104_group-ib_6a650fe0f4b742d5b67ee6abb09fb910",
+      "score": 84,
+      "title": "Senior Golang Developer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pvbqm8ad0j",
+      "vacancy_id": "6a650fe0-f4b7-42d5-b67e-e6abb09fb910"
+    },
+    {
+      "company": "Supermoney",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261104_supermoney_57a2a9e640a642f694dbfc7accf5a073",
+      "score": 78,
+      "title": "PHP Developer",
+      "url": "https://www.linkedin.com/jobs/view/4484679789/",
+      "vacancy_id": "57a2a9e6-40a6-42f6-94db-fc7accf5a073"
+    },
+    {
+      "company": "Readeat",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261103_readeat_2f46dd4844494a4eb8f0c75800bae6c9",
+      "score": 70,
+      "title": "Middle Backend Developer Concert.ua",
+      "url": "https://jobs.dou.ua/companies/readeat/vacancies/378598/",
+      "vacancy_id": "2f46dd48-4449-4a4e-b8f0-c75800bae6c9"
+    },
+    {
+      "company": "Company under NDA",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261103_company-under_650f9caac8054a6086879fa1b6125f1e",
+      "score": 81,
+      "title": "Senior Backend Engineer (Go)",
+      "url": "https://djinni.co/jobs/856464-senior-backend-engineer-go/",
+      "vacancy_id": "650f9caa-c805-4a60-8687-9fa1b6125f1e"
+    },
+    {
+      "company": "Join UP!",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261103_join-up_01d4b1efb60f43a2a1df049a7336ad7c",
+      "score": 78,
+      "title": "Backend Developer (PHP, Laravel)",
+      "url": "https://jobs.dou.ua/companies/join-up/vacancies/378630/",
+      "vacancy_id": "01d4b1ef-b60f-43a2-a1df-049a7336ad7c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "df4756797342503e75856808fddb85a9b6a80c43c383dcb444cfad94afa4c6ff",
+  "schema_version": 2
+}

@@ -1,31 +1,28 @@
 # Match Analysis
 
-**Score:** 73/100  
+**Score:** 68/100  
 **Recommendation:** Match
 
-Very good Go/PHP/AWS backend alignment for Docebo, offset by unknown Angular depth and a three-day Lombardy office requirement.
+Strong Go/PHP backend alignment and AI/automation relevance, offset by a three-day Lombardy hybrid requirement for a candidate based near Rome and unspecified Angular depth.
 
 ## Why it matches
 
-- Go and PHP are central to the candidate profile.
-- AWS and cloud-native backend infrastructure are evidenced.
-- Senior product/backend ownership and AI automation experience are relevant to the SaaS mission.
+- Go and PHP are both central to the role and explicitly present in the candidate profile.
+- The candidate owns a Go support-automation platform and has production AWS, API, reliability, and AI-automation experience.
 
 ## Gaps
 
-- Angular is not evidenced.
-- Node.js/TypeScript is not explicitly evidenced.
+- Angular and Node.js/TypeScript experience are not established in the sealed profile.
+- The required Lombardy office presence is not confirmed as workable.
 
 ## Concerns
 
-- The role requires three office days weekly in Biassono, Lombardy, while the candidate is based in Rome and relocation or commuting willingness is unknown.
+- The role requires three office days each week in Biassono, Lombardy, while the profile lists Fiumicino, Latium, Italy.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go and PHP backend development | critical / stated | strong | your day-to-day will be mainly focused on Golang and PHP development | - Go | / |
-| Angular frontend support | high / stated | unknown | when needed supporting on Frontend development using Angular |  | Angular experience is not stated. / Confirm whether the role permits backend specialization and assess Angular expectations. |
-| Three days weekly in Biassono office | high / stated | unknown | Our team spends three days a week in the office (Tuesday-Thursday) |  | Attendance feasibility from Rome is unknown and no relocation evidence is supplied. / Confirm location and relocation expectations before proceeding. |
-| AWS cloud-native infrastructure | high / stated | strong | Our entire infrastructure is fully cloud-native and hosted on AWS. | - AWS | / |
-| SaaS product engineering | meaningful / structural | partial | an AI-powered learning platform | support automation platform | The candidate has production platform ownership, but learning-platform domain experience is not stated. / Frame transferable platform and automation outcomes during screening. |
+| Primary backend development in Go and PHP | critical / stated | strong | your day-to-day will be mainly focused on Golang and PHP development | Go | / |
+| Three office days weekly in Lombardy | high / stated | unknown | Our team spends three days a week in the office (Tuesday-Thursday) | Fiumicino, Latium, Italy | Regular attendance in Biassono is not established. / Confirm relocation or commute expectations before proceeding. |
+| Angular support | meaningful / stated | unknown | supporting on Frontend development using Angular |  | Frontend contribution scope may exceed the evidenced profile. / Clarify the expected Angular ownership and assess transferable frontend experience. |

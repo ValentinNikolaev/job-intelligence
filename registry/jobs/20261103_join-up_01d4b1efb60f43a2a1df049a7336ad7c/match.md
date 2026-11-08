@@ -1,30 +1,27 @@
 # Match Analysis
 
-**Score:** 87/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-Strong PHP/Laravel backend fit with relevant API, PostgreSQL, scalability, queues, CI/CD, and remote experience; exact requested framework versions and Docker are not confirmed.
+Strong PHP/Laravel backend, API, queues, reliability, CI/CD, and team-collaboration fit for a worldwide remote role, with Laravel-version depth and PostgreSQL concurrency details to verify.
 
 ## Why it matches
 
-- Long-term PHP and Laravel backend experience with production APIs.
-- Relevant PostgreSQL, queues, caching, scalability, and CI/CD background.
-- Remote work is compatible with the stated remote location.
+- The candidate has production PHP/Laravel, APIs, queues, CI/CD, AWS, and reliability experience.
+- The role is explicitly remote from any location, which fits the Italy-based profile.
 
 ## Gaps
 
-- PHP 8.3+ and Laravel 11+ versions are not explicitly evidenced.
-- Docker and Kafka are not explicitly evidenced in the candidate profile.
+- PHP 8.3/Laravel 11 versions, Docker, PostgreSQL locking, and automated testing are not all explicitly evidenced.
 
 ## Concerns
 
-- The vacancy is Ukrainian-language and the profile does not state Ukrainian-language working requirements beyond language records.
+- The vacancy uses a Middle title while requiring at least five years of backend experience, so seniority calibration may matter.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP and Laravel production backend development | critical / stated | strong | Від 5 років досвіду в backend-розробці, з яких щонайменше 3 роки — з Laravel як основним стеком. | Backend engineer with 15+ years of experience building and improving production | / |
-| PostgreSQL transactions and query optimization | high / stated | partial | Впевненого володіння PostgreSQL: транзакції, блокування при конкурентному записі, індекси та оптимізація запитів. | - PostgreSQL | Specific concurrency and indexing depth is not established. / Verify database optimization examples in interview. |
-| APIs, queues, caching, and background processing | high / stated | strong | Досвіду проєктування та розробки API. | **Skills:** PHP \| Go \| Laravel \| MySQL \| AWS \| Kubernetes \| Microservices \| REST APIs \| | / |
-| Remote work | meaningful / stated | strong | Ми дружні до ремоуту: ти можеш працювати з будь-якої точки України чи навіть планети. | Fiumicino, Latium, Italy | / |
+| PHP/Laravel backend | critical / stated | strong | Від 5 років досвіду в backend-розробці, з яких щонайменше 3 роки — з Laravel як основним стеком. | PHP | / |
+| PostgreSQL transactions and concurrency | high / stated | partial | Впевненого володіння PostgreSQL: транзакції, блокування при конкурентному записі, індекси та оптимізація запитів. | ownership | The sealed profile does not quote the requested PostgreSQL concurrency details. / Verify transaction, locking, and query-optimization examples. |
+| Worldwide remote work | high / stated | strong | ти можеш працювати з будь-якої точки України чи навіть планети. | Fiumicino, Latium, Italy | / |

@@ -1,30 +1,26 @@
 # Match Analysis
 
-**Score:** 86/100  
+**Score:** 84/100  
 **Recommendation:** Strong Match
 
-Senior Golang role in Italy aligns closely with the candidate's senior backend and Go experience; the sparse posting leaves some responsibility and data-domain details uncertain.
+The Italy-open Senior Golang role aligns strongly with the candidate's senior backend profile and Italy location, though the sealed posting omits detailed responsibilities and requirements.
 
 ## Why it matches
 
-- Senior backend and technical-lead profile with explicit Go backend ownership.
-- Italy eligibility and remote arrangement align with the candidate's location and remote preference.
-- Testing and event/data infrastructure evidence support the visible stack signals.
+- The role is explicitly open to candidates in Italy and names Golang.
+- The candidate has 15+ years of production backend experience and recent Go ownership.
 
 ## Gaps
 
-- The supplied posting does not describe the responsibilities behind its testing and data labels.
+- The sparse posting does not expose its detailed stack, responsibilities, or language requirements.
 
 ## Concerns
 
-- Salary, team context, and the full requirement set are unavailable in the supplied posting.
+- The source has insufficient detail to assess domain-specific expectations beyond Go and location.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Golang | critical / stated | strong | Golang | robust, scalable backend in Go | / |
-| Senior seniority | high / stated | strong | Senior | Senior Software Engineer \| Tech Lead | / |
-| Candidate location in Italy | meaningful / stated | strong | Open to candidates in Italy | Fiumicino, Latium, Italy | / |
-| Testing | meaningful / stated | strong | Testing | Increased unit-tests coverage. | / |
-| Data | preferred / stated | partial | Data | event analytics infrastructure | The visible posting does not define the data responsibilities. / Confirm the data domain and expected ownership with the employer. |
+| Senior Go development | high / stated | strong | Golang | Go | / |
+| Italy location | high / stated | strong | Open to candidates in Italy | Fiumicino, Latium, Italy | / |
