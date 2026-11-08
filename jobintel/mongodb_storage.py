@@ -330,6 +330,7 @@ class MongoStore:
         *,
         scope: str = "jobs",
         expected_revisions: Mapping[str, int] | None = None,
+        reason: Mapping[str, Any] | None = None,
     ) -> int:
         if len(set(directories)) != len(directories):
             raise StorageConfigurationError("archive directories must be unique")
@@ -349,6 +350,8 @@ class MongoStore:
                     if doc.get("archived") is True and doc.get("archive_path") == archive_relative:
                         continue
                     payload = {**doc, "archived": True, "archive_path": archive_relative}
+                    if reason is not None:
+                        payload["archive_reason"] = dict(reason)
                     self.put(self._vacancy_collection(scope), doc["_id"], payload, expected_revision=doc["revision"])
                     changed += 1
         return changed

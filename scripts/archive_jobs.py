@@ -191,7 +191,16 @@ def archive(
             print(f"{category}: eligible={len(candidates)} minimum={min_items}")
             if len(candidates) < min_items:
                 return 0
-            archived = op.archive_vacancies(candidates, None, expected_revisions=expected_revisions)
+            reason = {"category": category}
+            if category == "low-score":
+                reason["score_below"] = low_score
+            elif category == "stale":
+                reason["older_than_days"] = max_age_days
+            elif category == "rejected":
+                reason["keep_items"] = keep_items
+            archived = op.archive_vacancies(
+                candidates, None, expected_revisions=expected_revisions, reason=reason,
+            )
             if archived != len(candidates):
                 raise RuntimeError("bulk archive did not update every selected vacancy")
             print(f"Archived {len(candidates)} records in MongoDB; original artifacts retained.")

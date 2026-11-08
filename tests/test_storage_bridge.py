@@ -482,6 +482,7 @@ class StorageBridgeIntegrationTests(unittest.TestCase):
         doc = self.store.get("vacancies", "vacancy-1")
         self.assertTrue(doc["archived"])
         self.assertIsNone(doc["archive_path"])
+        self.assertEqual({"category": "low-score", "score_below": 101}, doc["archive_reason"])
 
 
 class StorageBridgeNoFallbackTests(unittest.TestCase):

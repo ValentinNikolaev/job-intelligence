@@ -215,6 +215,7 @@ class ArchiveJobsTests(unittest.TestCase):
             bulk.assert_called_once_with(
                 [root / "registry" / "jobs" / "low"], None,
                 expected_revisions={"low": 3},
+                reason={"category": "low-score", "score_below": 65},
             )
 
 

@@ -433,6 +433,8 @@ def archive_vacancies(
     directories: Sequence[Path],
     archive_relative: str | None,
     expected_revisions: Mapping[str, int] | None = None,
+    *,
+    reason: Mapping[str, Any] | None = None,
 ) -> int:
     if not directories:
         return 0
@@ -448,7 +450,8 @@ def archive_vacancies(
     if store is None:
         return 0
     return store.archive_vacancies([path.name for path in paths], archive_relative,
-                                   scope=scope, expected_revisions=expected_revisions)
+                                   scope=scope, expected_revisions=expected_revisions,
+                                   reason=reason)
 
 
 def record_package(directory: Path, application: Path) -> None:

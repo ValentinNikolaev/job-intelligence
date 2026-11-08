@@ -29,11 +29,13 @@ separate, as do uncertain company/title matches. Archived identities and applica
 history are retained after their artifact directory is archived.
 
 MongoDB archival is logical: it hides records from active queues and keeps their
-original Git-managed artifacts in place. Only legacy YAML archival creates ZIPs and
-removes directories. The initial migration retains historical ZIP data only for
-confirmed submissions, as requested by the owner. Other archived vacancies and
-prefilter records are excluded from the new database and backups. Historical ZIP
-cleanup now retains complete applied-vacancy directories, with six unverified legacy
+original Git-managed artifacts in place. New archive operations store an
+`archive_reason` object with the category and its applicable threshold or retention
+limit in each record. Older archived records may lack this field. Only legacy YAML
+archival creates ZIPs and removes directories. The initial migration retains
+historical ZIP data only for confirmed submissions, as requested by the owner.
+Other archived vacancies and prefilter records are excluded from the new database
+and backups. Historical ZIP cleanup now retains complete applied-vacancy directories, with six unverified legacy
 application histories preserved conservatively; see the
 [filesystem retention record](archived-vacancy-retention.md). Retained ZIP paths and
 member bytes stay unchanged, while complete original ZIPs remain in Git history.
