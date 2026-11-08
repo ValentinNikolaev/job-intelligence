@@ -1,0 +1,19 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-08T13:14:04Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "ClickHouse",
+      "country_codes": [],
+      "directory": "20261108_clickhouse_f9d898dd11be45cb938fa4cebfcfe59a",
+      "score": 72,
+      "title": "Senior Technical Customer Support Engineer",
+      "url": "https://jobspresso.co/job/senior-technical-customer-support-engineer/",
+      "vacancy_id": "f9d898dd-11be-45cb-938f-a4cebfcfe59a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "82b8e559acd34355ab7f05a4c2f9cc43ded28d3cb5ec74c68228ef37378edbd4",
+  "schema_version": 2
+}
