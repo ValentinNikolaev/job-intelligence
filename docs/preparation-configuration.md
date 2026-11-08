@@ -48,10 +48,11 @@ the previous hardcoded candidate. Synthetic tests create explicit configuration.
 
 Career corrections identify an existing employer and endpoint, a reviewed reason,
 and exact source paths, hashes and excerpts. The validator rejects missing or stale
-evidence, conflicting corrections and unsupported date precision. A year-only end
-must retain the explicit source-backed uncertainty rather than acquire a month.
-Source hashes and excerpts establish provenance; they do not replace review of what
-the evidence means. Corrected sources are read without modifying them.
+evidence, conflicting corrections and unsupported date precision. When a source
+gives only an end year, retain that uncertainty and do not add a month.
+Source hashes and excerpts identify the evidence, but its meaning still needs
+review. Apply the reviewed date corrections when reading the evidence,
+without editing the source files.
 
 Evidence, role inventories, ancillary factual answers and preparation validation use
 the same configured candidate boundary. Traversal and resolved link escapes fail.

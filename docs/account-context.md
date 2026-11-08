@@ -127,7 +127,8 @@ before granting access. Project-bound match evaluators remain read-only consumer
 the fixed current project's policy; fully explicit evaluator inputs select artifacts,
 not an operational account. Their existing semantic/binding checks remain required.
 
-Checked-in prompt/workflow inspection does not prove deployed Scheduled Task settings.
+Inspecting checked-in prompts and workflows does not verify the settings of
+deployed Scheduled Tasks.
 No deployed automation settings are changed as part of repository implementation.
 
 ## Remaining source and editorial limits

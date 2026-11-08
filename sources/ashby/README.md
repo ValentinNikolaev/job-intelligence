@@ -70,8 +70,9 @@ type, secondary locations, and compensation are retained under that source's
 `metadata` mapping in `meta.yaml`. `descriptionPlain` is preferred for `job.md`;
 HTML is converted to Markdown only when plain text is unavailable.
 
-A failed, removed, timed-out, or malformed board is logged and counted as an
-error without preventing later boards from being collected. The command exits
+If a board fails, has been removed, times out, or returns malformed data, the
+collector logs and counts the error, then continues with the remaining boards.
+The command exits
 non-zero when any board failed, following the common collector convention.
 
 The collector performs a full public-board fetch on each run. Discovery sources

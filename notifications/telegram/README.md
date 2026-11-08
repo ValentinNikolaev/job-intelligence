@@ -5,9 +5,9 @@ publication writes one validated JSON manifest to `outbox/` when at least one ne
 analyzed vacancy has a score at or above `prepare_min_score` and is not a hard
 rejection.
 
-New manifests use schema version 2 and snapshot the explicit countries in each
-vacancy's `location` as `country_codes`. Messages show up to five distinct flag
-emoji before the company and title, in location order. Additional countries are
+New manifests use schema version 2 and record the countries explicitly named
+in each vacancy's `location` as `country_codes`. Messages show up to five distinct
+flag emoji before the company and title, in location order. Additional countries are
 stored but not rendered. No icon downloads or external image hosting are needed.
 
 Country names come from the local `pycountry` ISO database, including English,

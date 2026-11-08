@@ -28,8 +28,8 @@ Fingerprint indexes are nonunique. Existing same-source parallel roles remain
 separate, as do uncertain company/title matches. Archived identities and application
 history are retained after their artifact directory is archived.
 
-MongoDB archival is logical: it hides records from active queues and keeps their
-original Git-managed artifacts in place. New archive operations store an
+Archiving a MongoDB record hides it from active queues and leaves its original
+Git-managed artifacts in place. New archive operations store an
 `archive_reason` object with the category and its applicable threshold or retention
 limit in each record. Older archived records may lack this field. Only legacy YAML
 archival creates ZIPs and removes directories. The initial migration retains
@@ -39,8 +39,7 @@ and backups. Historical ZIP cleanup now retains complete applied-vacancy directo
 application histories preserved conservatively; see the
 [filesystem retention record](archived-vacancy-retention.md). Retained ZIP paths and
 member bytes stay unchanged, while complete original ZIPs remain in Git history.
-Required evidence and documents are extracted individually.
-This prevents a failed
+Required evidence and documents are extracted individually. This prevents a failed
 Git push from leaving database references to a ZIP that existed only on a runner.
 
 Configs, candidate evidence and source discovery configuration remain YAML/Markdown
@@ -126,10 +125,10 @@ A no-op changes no cells or timestamps. Actual writes require exact readback ver
 Backups preserve all required collections/indexes, status/feedback, vacancy artifacts,
 selected historical submission evidence and independently timestamped Sheets manual
 fields. Old ZIPs are never copied wholesale. Manifests include
-schema, source Git revision, UTC time, object counts, sizes and SHA-256. Files and DB
-data are captured within the global writer exclusion window; Sheets is a separate
-snapshot. Every delivered backup is downloaded, verified and restored into an isolated
-database. No retention deletion is enabled. Upload retry uses the same backup ID and
+schema, source Git revision, UTC time, object counts, sizes and SHA-256. Files
+and database data are captured while the global lease excludes other writers.
+Sheets is captured separately. Every delivered backup is downloaded, verified
+and restored into an isolated database. No retention deletion is enabled. Upload retry uses the same backup ID and
 verified manifest instead of creating duplicate copies.
 
 Atlas Free counts uncompressed BSON and indexes against its 0.5 GB quota. Free/Flex do

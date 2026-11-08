@@ -21,6 +21,6 @@ unknown unless the structured posting explicitly declares `TELECOMMUTE`.
 
 Settings in `config.yaml` control the request timeout and maximum listing pages
 (default 10). `TECHYON_CONFIG` can point to another config. Requests retry HTTP
-429, server errors, and network timeouts up to three times. An initial listing
-failure fails the collector; later page/card failures are logged and reported
-as partial collection errors while valid records continue.
+429, server errors, and network timeouts up to three times. If the initial listing
+request fails, the collector stops. Later page or card failures are logged and
+reported as partial collection errors, while valid records continue to be processed.

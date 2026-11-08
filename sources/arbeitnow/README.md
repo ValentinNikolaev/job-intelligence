@@ -42,9 +42,9 @@ configuration file.
 
 The collector starts at the public endpoint and follows the URL in
 `links.next`, matching the API's actual response envelope. It stops at the
-configured page limit, an empty `data` list, or a null next link. Repeated or
-off-domain pagination URLs fail the collection clearly instead of looping or
-fetching an unexpected host.
+configured page limit, an empty `data` list, or a null next link. The collector
+reports an error for repeated or off-domain pagination URLs,
+preventing loops and requests to unexpected hosts.
 
 The full available description is converted from HTML to the registry's
 Markdown format. The original Arbeitnow job URL is retained. Useful feed-only

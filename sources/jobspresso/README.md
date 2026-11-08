@@ -10,7 +10,7 @@ python run.py jobspresso
 `config.yaml` supports a positive `timeout_seconds`; `JOBSPRESSO_CONFIG` may
 point to an alternate local config. The adapter makes exactly one request to
 the latest-jobs feed: it does not add query-string pagination or scrape detail
-pages. The feed therefore defines the collector's latest-vacancy scope.
+pages. Only vacancies in that feed are collected.
 
 The stable post ID identifies a listing, the full encoded body is converted to
 Markdown, and `dc:creator` supplies company and location. Each registry source

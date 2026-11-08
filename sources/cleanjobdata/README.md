@@ -61,8 +61,8 @@ run.
 
 ## Request budget
 
-The free trial tier communicated for this benchmark allows 250 `/jobs` requests
-per month and a rate limit of 1 request per second. The checked-in
+The free trial limits supplied for this benchmark are 250 `/jobs` requests
+per month and 1 request per second. The checked-in
 `request_budget: 4` is a conservative per-run guard, and retries also consume
 that budget. The collector enforces `min_request_interval_seconds: 1` between
 HTTP attempts.

@@ -12,8 +12,8 @@ JOOBLE_API_KEY=your-api-key
 ```
 
 Scheduled tasks that use CodexSandboxOnline for sandboxed command execution should
-provide the same name as an environment secret for the task or host. `JOOBLE_CONFIG`
-may optionally point to another YAML configuration file.
+provide the API key as an environment secret for the task or host.
+`JOOBLE_CONFIG` can point to another YAML configuration file.
 
 ## Multiple query profiles
 

@@ -2,7 +2,11 @@
 
 ## 1. Recommended Language
 
-Use Python 3.11 or newer. Python runs consistently on Windows, macOS, and Linux; its standard library covers HTTP, JSON, filesystem work, HTML parsing, hashing, and the CLI. PyYAML is the only runtime dependency because YAML is the registry's structured format. A small local `.env` reader avoids adding a second dependency.
+Use Python 3.11 or newer. It runs consistently on Windows, macOS, and Linux,
+and its standard library covers HTTP, JSON, filesystem work, HTML parsing,
+hashing, and the CLI. PyYAML is the only runtime dependency because the registry
+stores structured data in YAML. A small local `.env` reader avoids a second
+dependency.
 
 ## 2. Minimal Architecture
 
@@ -63,7 +67,8 @@ job-intelligence/
 └── .gitignore
 ```
 
-There is one small common package, not a layered framework. Unimplemented source folders document their future configuration without pretending to work.
+One small package holds the shared code. Source folders without an implementation
+document their planned configuration and remain clearly marked as unimplemented.
 
 ## 4. Normalized Source Job
 
@@ -198,7 +203,12 @@ Scan metadata into an in-memory lookup keyed by `(source, source_job_id)`. This 
 4. Hash `normalized_company|normalized_title|normalized_location` with SHA-256 and store it with a `sha256:` prefix.
 5. Treat equal fingerprints as candidate duplicates only when the incoming record is from a different source. Merge it into the existing vacancy and add its source reference.
 
-This can false-merge two same-title openings at the same company and location. The implementation isolates candidate selection in one method so a later deterministic discriminator can be added. A canonicalized employer job URL is the best next signal when aggregators expose it; a description hash is not used as a hard key because aggregators often truncate or rewrite descriptions. Fingerprints do not merge two distinct IDs from the same source, reducing the most obvious collision.
+This can incorrectly merge two openings with the same title, company and location.
+Candidate selection lives in one method, where a later deterministic check can
+be added. A canonicalized employer job URL is the best next signal when
+aggregators expose it. Description hashes are unsuitable as hard keys because
+aggregators often truncate or rewrite descriptions. Fingerprints keep distinct
+IDs from the same source separate, reducing the most obvious collision.
 
 ## 8. Canonical Source Precedence
 
@@ -214,7 +224,9 @@ custom company boards
 
 An incoming higher-ranked source may replace canonical title, company, company URL, location, remote flag, employment type, published date, and Markdown content. An equal-ranked source fills missing values but does not cause values to oscillate. A lower-ranked source only fills missing values. All source references are retained and sorted by `(source, source_job_id)`.
 
-For `job.md`, a higher-ranked description wins; at equal rank, the longer non-empty description wins. The same rule independently governs `company.md`. This is deterministic and intentionally not a merge engine.
+For `job.md`, a higher-ranked description wins. At equal rank, the longer
+non-empty description wins. The same rule applies independently to `company.md`.
+The selection is deterministic and does not combine descriptions.
 
 ## 9. Registry Upsert Algorithm
 
@@ -245,7 +257,7 @@ Each `sources/<name>/collector.py` exposes `create_collector(config)`. The CLI d
 
 ## 11. Index Generation
 
-The registry scans `registry/jobs/*/meta.yaml`, validates required fields, sorts by `discovered_at` descending and then canonical ID, and rewrites the whole index atomically. Markdown table cells escape pipes and line breaks. Each row contains discovery date, company, title, location, source links where available, and a relative link to `job.md`. An empty registry still has a valid header. The index is always disposable and rebuildable.
+The registry scans `registry/jobs/*/meta.yaml`, validates required fields, sorts by `discovered_at` descending and then canonical ID, and rewrites the whole index atomically. Markdown table cells escape pipes and line breaks. Each row contains discovery date, company, title, location, source links where available, and a relative link to `job.md`. An empty registry still has a valid header. The index can always be discarded and regenerated.
 
 ## 12. CLI Execution
 
@@ -276,7 +288,7 @@ python run.py reindex
 10. Additional collectors: Jooble uses named query profiles; Ashby uses a public board registry and separate validated discovery command.
 11. `run all`: failure-isolation and aggregate-exit-code tests.
 
-Every milestone leaves a runnable or directly testable increment.
+Each milestone produces something that can be run or tested directly.
 
 ## 14. Key Decisions
 

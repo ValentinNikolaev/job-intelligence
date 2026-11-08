@@ -5,7 +5,7 @@ vacancies in the local registry. It uses
 `https://himalayas.app/jobs/api/search`, requires no API key or account, and is
 intended for private job discovery.
 
-The shipped four-query configuration includes worldwide jobs alongside roles
+The included four-query configuration covers worldwide jobs alongside roles
 explicitly available in Italy (`country: IT`, `exclude_worldwide: false`). This
 country parameter describes where a candidate can work, not employer headquarters.
 UK/Germany/Netherlands and additional Swiss employers can therefore be discovered
@@ -95,8 +95,9 @@ the common location value; an empty list becomes `Worldwide`. All Himalayas
 jobs are marked remote.
 
 Salary, expiry, categories, timezones, company identifiers, and the configured
-queries that found a vacancy remain in the Himalayas source metadata. Duplicate
-GUIDs returned by several queries are yielded once with every matching query in
+queries that found a vacancy remain in the Himalayas source metadata. When
+several queries return the same GUID, the collector yields it once and records
+every matching query in
 `discovered_by`. The registry's exact source identity check makes repeated runs
 idempotent.
 

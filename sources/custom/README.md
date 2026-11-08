@@ -14,8 +14,8 @@ API is available. Jobs collected here are treated as direct company-board leads:
 they use `source: custom`, receive `analysis_priority: 100`, and have the highest
 source precedence because these pages are more authoritative than aggregators.
 
-Linked detail pages retain matching JSON-LD `JobPosting` metadata, including
-`datePosted`, instead of losing it in the visible-text fallback. Sources configured
+The collector retains matching JSON-LD `JobPosting` metadata from linked detail
+pages, including `datePosted`, when falling back to visible text. Sources configured
 with `ats: bizneo` also parse Italian `Pubblicata <day> di <month> [year]` text.
 When the year is absent, `published_at` uses the latest non-future occurrence
 (an upper bound on the actual date), with the original text and inference basis
@@ -59,15 +59,16 @@ sources:
 
 For each source, the collector fetches the board page, reads JSON-LD
 `JobPosting` blocks, follows links whose text or URL matches the configured
-title terms, and optionally fetches explicit `seed_jobs`. By default links must
-remain on the board hostname; `allowed_job_hosts` admits only exact additional
-hostnames, such as a public ATS. With `extract_headings: true`, each matching
+title terms, and optionally fetches explicit `seed_jobs`. By default, links must
+stay on the board hostname. `allowed_job_hosts` permits only the exact additional
+hostnames listed, such as a public ATS. With `extract_headings: true`, each matching
 `h1`–`h6` on the board is treated as a separate inline role.
 `heading_title_terms` is mandatory in that mode and should contain specific
 current role titles rather than broad words such as `developer`. The role
 identity is a hash of the canonical board URL and normalized heading, so
-multiple roles on one page remain distinct. It stores the fetched HTML as
-Markdown, so downstream validation and publishing remain deterministic.
+multiple roles on one page remain distinct. The collector converts the fetched
+HTML to Markdown for storage, so downstream validation and publishing remain
+deterministic.
 
 Set `enabled: false` only for an explicitly retired source, retaining its original
 URL and the verification reason in `notes`. Disabled sources make no requests
@@ -122,9 +123,8 @@ Up to eight sources are fetched concurrently. Pages within a source are fetched
 in their existing order, and the collector emits jobs and resolves duplicates
 in config order even when later sources finish first. Each source owns its own
 `urllib` opener, and each page uses a fresh request; no HTTP session is shared
-between workers. The
-per-source and per-page JSON logs include timings and failures, while request
-and error totals include every attempted page across workers.
+between workers. JSON logs record timings and failures for each source and page.
+Request and error totals include every attempted page across workers.
 
 ## Yeb
 

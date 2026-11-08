@@ -5,12 +5,10 @@ job applications. It collects vacancies from public sources, stores them in a
 readable registry, checks each role against my candidate evidence, and prepares
 vacancy-specific application packages through Codex tasks.
 
-This README is a review of how my flow works. It is not a generic project README
-written to market a product. I use it to show the process in the open: what code
-does, where Codex helps, where I keep human judgment, and how reviewers can audit
-the result.
+This README explains how I use the workflow: what the code does, where Codex
+helps, which decisions I make, and how reviewers can check the result.
 
-The full technical README has been preserved in
+The full technical operating guide is in
 [`TECHNICAL_README.md`](TECHNICAL_README.md).
 
 ```text
@@ -20,12 +18,12 @@ Source API -> collector -> normalized vacancy -> deduplication -> registry
 
 ## Who This Is For
 
-HR readers can use this repository to understand how I search, filter, compare,
-and prepare applications without hiding behind generic career language.
+HR readers can see how I search for roles, filter and compare vacancies, and
+prepare each application.
 
 Senior developers can review the architecture, data boundaries, tests, model-use
-policy, and failure handling. The goal is transparency: every important step leaves
-files, hashes, commands, or reviewable Markdown behind.
+policy, and failure handling. Files, hashes, commands and Markdown records let
+them trace each important step.
 
 ## What The Workflow Does
 
@@ -49,8 +47,8 @@ files, hashes, commands, or reviewable Markdown behind.
 - It does not infer application status from artifacts or external events.
 - It does not require a database, service process, Docker setup, or UI.
 
-This boundary matters. Deterministic code handles repeatable work. Codex handles
-tasks that need language judgment. The repository keeps the handoff visible.
+Deterministic code handles repeatable work, while Codex handles tasks that need
+language judgment. The repository records the handoff between them.
 
 ## Repository Map
 
@@ -111,7 +109,7 @@ tasks that need language judgment. The repository keeps the handoff visible.
    same ownership and vacancy-isolation rules apply when concurrency is unavailable
    and the waves run sequentially.
 
-   Validation is a content gate, not just a file-existence check. The draft must meet
+   Validation checks the content of each draft. The draft must meet
    the document word ranges and required sections, include substantive Wave 1
    handoffs, and provide `quality.yaml` with the exact cover-letter skill version, two
    grounded evidence stories, a sourced company hook, and the final consistency
@@ -174,9 +172,9 @@ Project code must stay deterministic. It can collect, normalize, deduplicate,
 validate, index, convert, and publish local files. It must not call the OpenAI
 Platform API or an OpenAI-compatible model endpoint.
 
-Codex runs model-dependent work in separate interactive or scheduled tasks. The
-repository then validates and publishes Codex-produced local drafts. This keeps the
-model boundary explicit and auditable.
+Codex runs model-dependent work in separate interactive or scheduled tasks.
+Project code then validates and publishes the local drafts, leaving a record
+of the handoff.
 
 Scheduled analysis also publishes eligible Telegram notifications as tracked JSON
 manifests under `notifications/telegram/outbox/`. GitHub Actions sends those manifests
@@ -280,14 +278,11 @@ configuration, queue APIs, workflow routing, and collector authoring guide.
 
 ## Review Notes
 
-This repository is meant to be inspected. A reviewer can open a vacancy directory
-and see the original job text, metadata, match analysis, generated application
-files, and publication manifest. A developer can run the tests and trace the
-deterministic path from source record to registry entry.
+A reviewer can open a vacancy directory and inspect the original job text,
+metadata, match analysis, application files and publication manifest. A developer
+can run the tests and trace a source record through to its registry entry.
 
-That is the point of the project. I want the workflow to be useful, but I also want
-it to show how I work: transparent about tools, careful with evidence, willing to
-automate repetitive steps, and honest about where human judgment still matters.
+I want the workflow to help with applications and show how I work.
 
 ## Scope
 

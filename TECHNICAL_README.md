@@ -1,9 +1,11 @@
 # Job Intelligence
 
-The [workflow performance review](docs/workflow-performance.md) records measured
-read amplification, implemented optimizations, verification, and follow-up priorities.
+The [workflow performance review](docs/workflow-performance.md) records excess
+reads measured in the workflow, the optimizations made, their verification, and
+priorities for further work.
 
-A minimal local-first collector that turns source-specific vacancies into one human-readable filesystem registry.
+A minimal local-first collector that brings vacancies from different sources
+into one readable filesystem registry.
 
 ```text
 Source API → collector → normalized job → deduplication → registry/jobs → registry/index.md
@@ -170,11 +172,11 @@ Configured category feeds live in
 are deduplicated by stable job identity. See the
 [We Work Remotely collector guide](sources/weworkremotely/README.md) for details.
 
-Wellfound, Built In, and Remote 100K were evaluated as requested but are not
-automated collectors. Their current public terms do not authorize the required
-automated extraction, and no supported public job feed was found. Their source
-guides under `sources/` record the verification and the authorization needed to
-enable a future adapter without pretending that an unsupported scraper works.
+Wellfound, Built In, and Remote 100K were evaluated as requested, but no automated
+collectors are enabled for them. Their current public terms do not authorize the
+required extraction, and no supported public job feed was found. The source
+guides under `sources/` record those findings and the authorization needed
+before an adapter can be enabled.
 
 Custom company-board monitoring lives in
 [`sources/custom/config.yaml`](sources/custom/config.yaml). It tracks selected
@@ -421,8 +423,9 @@ model or search API.
 
 #### Two-wave Codex orchestration
 
-Preparation can reduce elapsed model time without weakening package isolation. For
-each selected vacancy, the coordinating agent creates only this vacancy's handoff area:
+Preparation can run independent model work in parallel while keeping packages
+isolated. For each selected vacancy, the coordinating agent creates a separate
+handoff area:
 
 ```text
 .codex-work/application/<vacancy-directory>/parts/
@@ -442,10 +445,10 @@ That finalized file is the barrier between the waves.
 Wave 2 can then run the cover letter, interview preparation, and application analysis
 in parallel. Each worker owns exactly one final output, and the cover-letter worker
 must invoke `$write-cover-letter`. Each receives only the finalized CV and the specific
-handoffs required for its output, rather than every first-wave context. Once all
+handoffs required for its output, rather than all first-wave context. Once all
 outputs are present, the coordinator runs one cross-file consistency check, one
-`validate-application` command, and one `prepare` command. A failed check is repaired
-at its source and only the necessary check is repeated.
+`validate-application` command, and one `prepare` command. The coordinator
+fixes the cause of a failed check and repeats only the necessary check.
 
 If subagent capacity is unavailable, the same passes run sequentially with unchanged
 inputs, file ownership, barrier, and validation rules. Every handoff path is keyed to
@@ -593,7 +596,10 @@ def create_collector(config):
     return ExampleCollector(config)
 ```
 
-The CLI discovers the module automatically. Collectors must not read or write the registry; they only yield `jobintel.models.NormalizedJob` values. Put placeholder configuration names in `sources/.env.example`, keep secrets in `sources/.env`, and add fixture-based adapter tests.
+The CLI discovers the module automatically. Collectors must not read or write
+the registry. They only yield `jobintel.models.NormalizedJob` values. Put
+placeholder configuration names in `sources/.env.example`, keep secrets in
+`sources/.env`, and add fixture-based adapter tests.
 
 ## Test
 
