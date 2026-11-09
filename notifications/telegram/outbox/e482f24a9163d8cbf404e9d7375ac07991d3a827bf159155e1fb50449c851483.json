@@ -1,0 +1,43 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-09T16:34:29Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "TerraForce",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261109_terraforce_97d09804f066495a95b0b30ebc629c5d",
+      "score": 67,
+      "title": "Full-Stack Developer (Laravel, React/Angular)",
+      "url": "https://jobs.dou.ua/companies/terraforce/vacancies/379232/",
+      "vacancy_id": "97d09804-f066-495a-95b0-b30ebc629c5d"
+    },
+    {
+      "company": "Sombra",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261109_sombra_e6fc14314dab4f9cafcbca1b864a346a",
+      "score": 77,
+      "title": "Middle Backend (Golang+TypeScript) Engineer",
+      "url": "https://jobs.dou.ua/companies/sombra/vacancies/379256/",
+      "vacancy_id": "e6fc1431-4dab-4f9c-afcb-ca1b864a346a"
+    },
+    {
+      "company": "Smart Working",
+      "country_codes": [
+        "PT"
+      ],
+      "directory": "20261109_smart-working_879edf975e2e45078ac5ebd1b8bbd762",
+      "score": 78,
+      "title": "Sr. PHP Symfony Engineer (Remote, Full-Time) [AR024]",
+      "url": "https://www.linkedin.com/jobs/view/4486672572/",
+      "vacancy_id": "879edf97-5e2e-4507-8ac5-ebd1b8bbd762"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "e482f24a9163d8cbf404e9d7375ac07991d3a827bf159155e1fb50449c851483",
+  "schema_version": 2
+}
