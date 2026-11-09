@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 62
+Total vacancies: 63
 
-- Found: 20
+- Found: 21
 - Applied: 36
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,7 @@ Total vacancies: 62
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-09 | [Smart Working](../registry/jobs/20261109_smart-working_879edf975e2e45078ac5ebd1b8bbd762/) | [Sr. PHP Symfony Engineer (Remote, Full-Time) [AR024]](../registry/jobs/20261109_smart-working_879edf975e2e45078ac5ebd1b8bbd762/job.md) | Portugal | Linkedin | Found | 2026-11-09 | [Linkedin](https://www.linkedin.com/jobs/view/4486672572/) | — | — | — | — | — |
 | 2026-11-08 | [ClickHouse](../registry/jobs/20261108_clickhouse_f9d898dd11be45cb938fa4cebfcfe59a/) | [Senior Technical Customer Support Engineer](../registry/jobs/20261108_clickhouse_f9d898dd11be45cb938fa4cebfcfe59a/job.md) | Asia-Pacific | Jobspresso | Found | 2026-11-08 | [Jobspresso](https://jobspresso.co/job/senior-technical-customer-support-engineer/) | — | — | — | — | — |
 | 2026-11-07 | [VMWAY SRL](../registry/jobs/20261107_vmway-srl_f7e8134f48044a44b71e551a03abcda7/) | [Backend Developer PHP](../registry/jobs/20261107_vmway-srl_f7e8134f48044a44b71e551a03abcda7/job.md) | Roma, Provincia di Roma | Adzuna | Found | 2026-11-07 | [Adzuna](https://www.adzuna.it/details/5955423079?utm_medium=api&utm_source=b6674f60) | — | [MD](../registry/jobs/20261107_vmway-srl_f7e8134f48044a44b71e551a03abcda7/application/cv.md) / [DOCX](../registry/jobs/20261107_vmway-srl_f7e8134f48044a44b71e551a03abcda7/application/cv.docx) | — | [Open](../registry/jobs/20261107_vmway-srl_f7e8134f48044a44b71e551a03abcda7/application/analysis.md) | [Open](../registry/jobs/20261107_vmway-srl_f7e8134f48044a44b71e551a03abcda7/application/interview-preparation.md) |
 | 2026-11-07 | [Docebo](../registry/jobs/20261107_docebo_986c530eca5e43c1b3401526ad619ede/) | [Senior Product Engineer I - Go/PHP + Angular](../registry/jobs/20261107_docebo_986c530eca5e43c1b3401526ad619ede/job.md) | Biassono, Lombardy, Italy | Linkedin | Found | 2026-11-07 | [Linkedin](https://www.linkedin.com/jobs/view/4462438168/) | — | — | — | — | — |
