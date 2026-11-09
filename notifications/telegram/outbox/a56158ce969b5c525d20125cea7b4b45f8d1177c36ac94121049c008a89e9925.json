@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-09T12:17:12Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Smart Working",
+      "country_codes": [
+        "PT"
+      ],
+      "directory": "20261109_smart-working_879edf975e2e45078ac5ebd1b8bbd762",
+      "score": 78,
+      "title": "Sr. PHP Symfony Engineer (Remote, Full-Time) [AR024]",
+      "url": "https://www.linkedin.com/jobs/view/4486672572/",
+      "vacancy_id": "879edf97-5e2e-4507-8ac5-ebd1b8bbd762"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a56158ce969b5c525d20125cea7b4b45f8d1177c36ac94121049c008a89e9925",
+  "schema_version": 2
+}
