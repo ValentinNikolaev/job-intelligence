@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 63
+Total vacancies: 64
 
-- Found: 22
+- Found: 23
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,7 @@ Total vacancies: 63
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-10 | [Algolia](../registry/jobs/20261110_algolia_4e20ae687b7b47929eca39262cf17e3f/) | [Developer Support Engineer](../registry/jobs/20261110_algolia_4e20ae687b7b47929eca39262cf17e3f/job.md) | Asia-Pacific | Jobspresso | Found | 2026-11-10 | [Jobspresso](https://jobspresso.co/job/developer-support-engineer/) | — | — | — | — | — |
 | 2026-11-10 | [XBOW](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/) | [Software Engineer - Console](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/job.md) | Argentina,  Europe,  USA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160794-software-engineer-console) | — | — | — | — | — |
 | 2026-11-10 | [Olive](../registry/jobs/20261110_olive_819d5b3ae3ce47b3860165e45ca591c0/) | [Senior Full Stack Engineer, AI-First (Go and React)](../registry/jobs/20261110_olive_819d5b3ae3ce47b3860165e45ca591c0/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-10 | [Djinni](https://djinni.co/jobs/857452-senior-full-stack-engineer-ai-first-go-and-re/) | — | — | — | — | — |
 | 2026-11-10 | [Notabene](../registry/jobs/20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a/) | [Staff Backend Software Engineer](../registry/jobs/20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a/job.md) | EMEA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160701-staff-backend-software-engineer) | — | — | — | — | — |
