@@ -1,0 +1,33 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-10T14:52:44Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Olive",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261110_olive_819d5b3ae3ce47b3860165e45ca591c0",
+      "score": 78,
+      "title": "Senior Full Stack Engineer, AI-First (Go and React)",
+      "url": "https://djinni.co/jobs/857452-senior-full-stack-engineer-ai-first-go-and-re/",
+      "vacancy_id": "819d5b3a-e3ce-47b3-8601-65e45ca591c0"
+    },
+    {
+      "company": "XBOW",
+      "country_codes": [
+        "AR",
+        "US"
+      ],
+      "directory": "20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c",
+      "score": 70,
+      "title": "Software Engineer - Console",
+      "url": "https://jobicy.com/jobs/160794-software-engineer-console",
+      "vacancy_id": "6858a250-12f1-4fb9-a996-5c6fa4678c1c"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "805ded7b14b3e0f8c0e32532f16fa4d43c64ec6f5a45bcdcc59450280f31cbdb",
+  "schema_version": 2
+}
