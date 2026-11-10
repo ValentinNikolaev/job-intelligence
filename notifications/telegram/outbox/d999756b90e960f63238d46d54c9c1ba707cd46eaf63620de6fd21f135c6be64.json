@@ -1,0 +1,30 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-10T10:49:20Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Soft Techies",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261110_soft-techies_2f783ede61be42bdbf1bb75028252d4b",
+      "score": 88,
+      "title": "Golang Backend Engineer",
+      "url": "https://djinni.co/jobs/857346-golang-backend-engineer/",
+      "vacancy_id": "2f783ede-61be-42bd-bf1b-b75028252d4b"
+    },
+    {
+      "company": "Notabene",
+      "country_codes": [],
+      "directory": "20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a",
+      "score": 78,
+      "title": "Staff Backend Software Engineer",
+      "url": "https://jobicy.com/jobs/160701-staff-backend-software-engineer",
+      "vacancy_id": "d9dbbb8a-8744-4c91-91cd-f9f108b5803a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "d999756b90e960f63238d46d54c9c1ba707cd46eaf63620de6fd21f135c6be64",
+  "schema_version": 2
+}
