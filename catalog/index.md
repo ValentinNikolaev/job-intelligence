@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 62
+Total vacancies: 63
 
-- Found: 21
+- Found: 22
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,8 +14,9 @@ Total vacancies: 62
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-10 | [XBOW](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/) | [Software Engineer - Console](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/job.md) | Argentina,  Europe,  USA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160794-software-engineer-console) | — | — | — | — | — |
+| 2026-11-10 | [Olive](../registry/jobs/20261110_olive_819d5b3ae3ce47b3860165e45ca591c0/) | [Senior Full Stack Engineer, AI-First (Go and React)](../registry/jobs/20261110_olive_819d5b3ae3ce47b3860165e45ca591c0/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-10 | [Djinni](https://djinni.co/jobs/857452-senior-full-stack-engineer-ai-first-go-and-re/) | — | — | — | — | — |
 | 2026-11-10 | [Notabene](../registry/jobs/20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a/) | [Staff Backend Software Engineer](../registry/jobs/20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a/job.md) | EMEA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160701-staff-backend-software-engineer) | — | — | — | — | — |
-| 2026-11-10 | [Pantala](../registry/jobs/20261110_pantala_c5006ee1d6314bf1a4c7d24ea46d816c/) | [Python Developer .](../registry/jobs/20261110_pantala_c5006ee1d6314bf1a4c7d24ea46d816c/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-10 | [Himalayas](https://himalayas.app/companies/pantala/jobs/python-developer?utm_source=api) | — | — | — | — | — |
 | 2026-11-10 | [Soft Techies](../registry/jobs/20261110_soft-techies_2f783ede61be42bdbf1bb75028252d4b/) | [Golang Backend Engineer](../registry/jobs/20261110_soft-techies_2f783ede61be42bdbf1bb75028252d4b/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-10 | [Djinni](https://djinni.co/jobs/857346-golang-backend-engineer/) | — | — | — | — | — |
 | 2026-11-09 | [Sombra](../registry/jobs/20261109_sombra_e6fc14314dab4f9cafcbca1b864a346a/) | [Middle Backend (Golang+TypeScript) Engineer](../registry/jobs/20261109_sombra_e6fc14314dab4f9cafcbca1b864a346a/job.md) | віддалено | Dou | Found | 2026-11-09 | [Dou](https://jobs.dou.ua/companies/sombra/vacancies/379256/) | [Open](../registry/jobs/20261109_sombra_e6fc14314dab4f9cafcbca1b864a346a/company.md) | — | — | — | — |
 | 2026-11-09 | [TerraForce](../registry/jobs/20261109_terraforce_97d09804f066495a95b0b30ebc629c5d/) | [Full-Stack Developer (Laravel, React/Angular)](../registry/jobs/20261109_terraforce_97d09804f066495a95b0b30ebc629c5d/job.md) | Хмельницький, віддалено | Dou | Found | 2026-11-09 | [Dou](https://jobs.dou.ua/companies/terraforce/vacancies/379232/) | [Open](../registry/jobs/20261109_terraforce_97d09804f066495a95b0b30ebc629c5d/company.md) | — | — | — | — |
