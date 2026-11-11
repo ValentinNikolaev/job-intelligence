@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 60
+Total vacancies: 62
 
-- Found: 19
+- Found: 21
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,8 @@ Total vacancies: 60
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-11 | [Yalantis](../registry/jobs/20261111_yalantis_29db23e12aad480fb8e33cd613d0c965/) | [Golang Developer](../registry/jobs/20261111_yalantis_29db23e12aad480fb8e33cd613d0c965/job.md) | Дніпро, Варшава (Польща), віддалено | Dou | Found | 2026-11-11 | [Dou](https://jobs.dou.ua/companies/yalantis/vacancies/379591/) | [Open](../registry/jobs/20261111_yalantis_29db23e12aad480fb8e33cd613d0c965/company.md) | — | — | — | — |
+| 2026-11-11 | [Nextcloud](../registry/jobs/20261111_nextcloud_a0c026df90a74153ace63a03fbaefe89/) | [Developer Relations Engineer](../registry/jobs/20261111_nextcloud_a0c026df90a74153ace63a03fbaefe89/job.md) | Stuttgart | Arbeitnow | Found | 2026-11-11 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/nextcloud/developer-relations-engineer-stuttgart-409029) | — | — | — | — | — |
 | 2026-11-11 | [Bet On Talent](../registry/jobs/20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f/) | [Senior Golang Developer](../registry/jobs/20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f/job.md) | — | Arc | Found | 2026-11-11 | [Arc](https://arc.dev/dashboard/d/remote-jobs/pwobasz0lk) | — | — | — | — | — |
 | 2026-11-11 | [Welyk](../registry/jobs/20261111_welyk_12c071409a3442b487890ae90b97ed20/) | [Senior Backend Developer (Go e Python) \| Laura](../registry/jobs/20261111_welyk_12c071409a3442b487890ae90b97ed20/job.md) | Italy | Linkedin | Found | 2026-11-11 | [Linkedin](https://www.linkedin.com/jobs/view/4489426884/) | — | — | — | — | — |
 | 2026-11-10 | [XBOW](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/) | [Software Engineer - Console](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/job.md) | Argentina,  Europe,  USA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160794-software-engineer-console) | — | — | — | — | — |
