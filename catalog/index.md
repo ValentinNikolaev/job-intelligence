@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 58
+Total vacancies: 60
 
-- Found: 17
+- Found: 19
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,8 @@ Total vacancies: 58
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-11 | [Bet On Talent](../registry/jobs/20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f/) | [Senior Golang Developer](../registry/jobs/20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f/job.md) | — | Arc | Found | 2026-11-11 | [Arc](https://arc.dev/dashboard/d/remote-jobs/pwobasz0lk) | — | — | — | — | — |
+| 2026-11-11 | [Welyk](../registry/jobs/20261111_welyk_12c071409a3442b487890ae90b97ed20/) | [Senior Backend Developer (Go e Python) \| Laura](../registry/jobs/20261111_welyk_12c071409a3442b487890ae90b97ed20/job.md) | Italy | Linkedin | Found | 2026-11-11 | [Linkedin](https://www.linkedin.com/jobs/view/4489426884/) | — | — | — | — | — |
 | 2026-11-10 | [XBOW](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/) | [Software Engineer - Console](../registry/jobs/20261110_xbow_6858a25012f14fb9a9965c6fa4678c1c/job.md) | Argentina,  Europe,  USA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160794-software-engineer-console) | — | — | — | — | — |
 | 2026-11-10 | [Olive](../registry/jobs/20261110_olive_819d5b3ae3ce47b3860165e45ca591c0/) | [Senior Full Stack Engineer, AI-First (Go and React)](../registry/jobs/20261110_olive_819d5b3ae3ce47b3860165e45ca591c0/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-10 | [Djinni](https://djinni.co/jobs/857452-senior-full-stack-engineer-ai-first-go-and-re/) | — | — | — | — | — |
 | 2026-11-10 | [Notabene](../registry/jobs/20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a/) | [Staff Backend Software Engineer](../registry/jobs/20261110_notabene_d9dbbb8a87444c9191cdf9f108b5803a/job.md) | EMEA | Jobicy | Found | 2026-11-10 | [Jobicy](https://jobicy.com/jobs/160701-staff-backend-software-engineer) | — | — | — | — | — |
