@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 60
+Total vacancies: 64
 
-- Found: 19
+- Found: 23
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,10 @@ Total vacancies: 60
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-12 | [Dilanti Media](../registry/jobs/20261112_dilanti-media_ce52ee96d2c642299827b3e55577c633/) | [Senior Backend Developer (PHP/Laravel)](../registry/jobs/20261112_dilanti-media_ce52ee96d2c642299827b3e55577c633/job.md) | Gzira, Malta | Linkedin | Found | 2026-11-12 | [Linkedin](https://www.linkedin.com/jobs/view/4487896794/) | — | — | — | — | — |
+| 2026-11-12 | [PLC Group - Global Automotive Auctions & Digital Solutions](../registry/jobs/20261112_plc-group-glob_7d9900226eed4614a75722d98ce79c06/) | [PHP Full Stack Developer (Laravel / Vue / Next.js)](../registry/jobs/20261112_plc-group-glob_7d9900226eed4614a75722d98ce79c06/job.md) | Vilnius | Linkedin | Found | 2026-11-12 | [Linkedin](https://www.linkedin.com/jobs/view/4488624503/) | — | — | — | — | — |
+| 2026-11-12 | [VetBizz](../registry/jobs/20261112_vetbizz_64dd690f002a4f358a99be6be36a417f/) | [PHP Developer (mid-level)](../registry/jobs/20261112_vetbizz_64dd690f002a4f358a99be6be36a417f/job.md) | Vila Nova de Gaia | Linkedin | Found | 2026-11-12 | [Linkedin](https://www.linkedin.com/jobs/view/4488605850/) | — | — | — | — | — |
+| 2026-11-12 | [Webware](../registry/jobs/20261112_webware_2bdbaad898e846f081c84eccdb30f615/) | [Product Engineer (PHP / React)](../registry/jobs/20261112_webware_2bdbaad898e846f081c84eccdb30f615/job.md) | Tallinn | Linkedin | Found | 2026-11-12 | [Linkedin](https://www.linkedin.com/jobs/view/4488200334/) | — | — | — | — | — |
 | 2026-11-12 | [Hostaway](../registry/jobs/20261112_hostaway_f265e49fe53f449392cf7fd607dc5aaf/) | [Senior Backend Engineer, Integrations - 100% Remote - Europe](../registry/jobs/20261112_hostaway_f265e49fe53f449392cf7fd607dc5aaf/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/hostaway/jobs/senior-backend-engineer-integrations-100-remote-europe?utm_source=api) | — | — | — | — | — |
 | 2026-11-12 | [Hostaway](../registry/jobs/20261112_hostaway_4bb2ef6931314a089fa68345a64f4c3a/) | [Senior Backend Engineer, AI Platform - 100% Remote - Europe](../registry/jobs/20261112_hostaway_4bb2ef6931314a089fa68345a64f4c3a/job.md) | Albania, Algeria, Andorra, Austria, Bahrain, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Egypt, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jersey, Jordan, Kosovo, Kuwait, Latvia, Lebanon, Libya, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Morocco, Netherlands, North Macedonia, Norway, Oman, Palestine, State of, Poland, Portugal, Qatar, Romania, San Marino, Saudi Arabia, Serbia, Slovakia, Slovenia, Spain, Sudan, Svalbard and Jan Mayen, Sweden, Switzerland, Syrian Arab Republic, Tunisia, Ukraine, United Arab Emirates, United Kingdom, Yemen, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/hostaway/jobs/senior-backend-engineer-ai-platform-100-remote-europe?utm_source=api) | — | — | — | — | — |
 | 2026-11-11 | [D2B](../registry/jobs/20261111_d2b_f335a8cc0bf64e889340e314cb187874/) | [Customer Service Admin - (AU Experience Required)](../registry/jobs/20261111_d2b_f335a8cc0bf64e889340e314cb187874/job.md) | Asia Only | Weworkremotely | Found | 2026-11-11 | [Weworkremotely](https://weworkremotely.com/remote-jobs/d2b-customer-service-admin-au-experience-required) | — | — | — | — | — |
