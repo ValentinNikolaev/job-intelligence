@@ -7,7 +7,7 @@ Rome, Italy | +39 351 370 1194 | valeinikolaev@gmail.com
 
 ## Summary
 
-Backend engineer with 15+ years of experience and a strong PHP background across Laravel and Symfony systems, APIs, automation platforms, high-volume communications, and event-driven services. Brings hands-on expertise in performance optimization, production reliability, cloud migrations, and CI/CD, together with five years of leadership experience. Comfortable owning backend systems from architecture and delivery through monitoring and operational improvement.
+Backend engineer with 15+ years of experience, a PHP background in Laravel and Symfony, and five years building production systems in Go. Work includes APIs, automation, high-volume communications and event-driven services. Brings hands-on expertise in performance optimization, production reliability, cloud migrations, and CI/CD, together with five years of leadership experience. Comfortable owning backend systems from architecture and delivery through monitoring and operational improvement.
 
 ## Skills
 
@@ -20,10 +20,10 @@ Backend engineer with 15+ years of experience and a strong PHP background across
 
 ### Simple.life | Software Developer
 
-**November 2023 - August 2026**
+**November 2023 - October 2026**
 
 - Designed and owned a backend support automation platform connecting Zendesk, Intercom, and internal services through a unified API orchestration layer.
-- Integrated automated triage flows that handled or deflected up to 30% of inbound tickets and supported the rollout of new automation scenarios.
+- Implemented automated triage workflows and helped roll out new support automation scenarios.
 - Migrated business-critical workflows from Zendesk to Intercom's real-time engine and improved routing consistency and operational responsiveness.
 - Built resilient message-delivery pipelines with fallback logic, retries, and monitoring for continuity during incidents and peak load.
 
@@ -46,7 +46,6 @@ Backend engineer with 15+ years of experience and a strong PHP background across
 
 - Identified and optimized API, query, and database bottlenecks, improving backend performance and stability during peak load.
 - Developed a Laravel/Symfony logging package aligned with interservice communication standards.
-- Migrated services from ECS to Kubernetes and prepared Helm, GitHub Actions, and ArgoCD delivery workflows.
 - Supported planning and release delivery, distributed team assignments, tracked engineering performance, and conducted more than 20 technical interviews.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, Elasticsearch, RabbitMQ, AWS, Kubernetes, Prometheus, Helm, GitHub Actions, ArgoCD
@@ -65,9 +64,9 @@ Backend engineer with 15+ years of experience and a strong PHP background across
 
 **October 2016 - November 2019**
 
-- Led five backend engineers building a transactional email service that scaled to approximately 50 million messages per month.
+- Led five backend engineers building a transactional email service that handled about 3 million messages in a typical month.
 - Made key technical decisions across development and production reliability, with deep ownership of DNS, DKIM, SPF, DMARC, and feedback loops.
-- Guided the team through BFCM periods with more than 10x traffic growth while maintaining service continuity.
+- Guided the team through Black Friday and Cyber Monday peaks of up to 10 times the usual traffic while maintaining service continuity.
 
 **Technologies:** PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, Email Infrastructure, SRE
 

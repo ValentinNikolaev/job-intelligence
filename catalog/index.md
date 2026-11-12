@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 66
+Total vacancies: 67
 
-- Found: 25
+- Found: 26
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,7 @@ Total vacancies: 66
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-12 | [Bet On Talent](../registry/jobs/20261112_bet-on-talent_e5ae9885d1964b3ca6dd95fd1e7e25cf/) | [Sr. Golang Developer](../registry/jobs/20261112_bet-on-talent_e5ae9885d1964b3ca6dd95fd1e7e25cf/job.md) | Remote from Europe | Manual | Found | 2026-11-12 | [Manual](https://careers.betontalent.io/jobs/7987139-sr-golang-developer) | — | — | — | — | — |
 | 2026-11-12 | [Nearform](../registry/jobs/20261112_nearform_a91d4ea107e24493bee787099be8e83c/) | [Forward Deployed Engineer](../registry/jobs/20261112_nearform_a91d4ea107e24493bee787099be8e83c/job.md) | Italy | Jobicy | Found | 2026-11-12 | [Jobicy](https://jobicy.com/jobs/161642-forward-deployed-engineer-10) | — | — | — | — | — |
 | 2026-11-12 | [FYUL](../registry/jobs/20261112_fyul_c31ead5c24ee43fcbe3831bc803c7aea/) | [Staff Full Stack Engineer – Production team (remote within Europe)](../registry/jobs/20261112_fyul_c31ead5c24ee43fcbe3831bc803c7aea/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/fyul/jobs/staff-full-stack-engineer-production-team-remote-within-europe?utm_source=api) | — | — | — | — | — |
 | 2026-11-12 | [FYUL](../registry/jobs/20261112_fyul_64778800de954557a6954683ebdf2aaf/) | [Staff Full Stack Engineer - Inventory team (remote within Europe)](../registry/jobs/20261112_fyul_64778800de954557a6954683ebdf2aaf/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/fyul/jobs/staff-full-stack-engineer-inventory-team-remote-within-europe?utm_source=api) | — | — | — | — | — |

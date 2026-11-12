@@ -7,7 +7,7 @@ Rome, Italy | +39 351 370 1194 | valeinikolaev@gmail.com
 
 ## Summary
 
-Hands-on backend engineering leader with 15+ years of software development experience and five years of leadership across PHP and Go systems. Combines technical direction, architecture, planning, mentoring, and delivery ownership with direct contribution to production code. Experienced in guiding teams through product launches, cloud migrations, high-traffic events, and operational improvements while keeping reliability, maintainability, and business outcomes visible.
+Hands-on backend engineering lead with 15+ years in software development, five years of technical leadership and five years building production systems in Go. Combines technical direction, architecture, planning, mentoring, and delivery ownership with direct contribution to production code. Experienced in guiding teams through product launches, cloud migrations, high-traffic events, and operational improvements while keeping reliability, maintainability, and business outcomes visible.
 
 ## Leadership & Technical Skills
 
@@ -20,11 +20,11 @@ Hands-on backend engineering leader with 15+ years of software development exper
 
 ### Simple.life | Software Developer
 
-**November 2023 - August 2026**
+**November 2023 - October 2026**
 
 - Designed and owned a Go-based support automation platform connecting Zendesk, Intercom, and internal services.
 - Translated operational needs into a unified API orchestration layer, automated triage workflows, and reliable message-delivery pipelines.
-- Integrated flows that handled or deflected up to 30% of inbound tickets, helping the support organization scale automation coverage.
+- Implemented support automation flows that helped the team expand coverage across ticket types.
 - Collaborated with Support Operations, Product, and engineering stakeholders while retaining end-to-end technical ownership of a business-critical platform.
 
 **Technologies:** Go, REST APIs, Zendesk, Intercom, Monitoring, Backend Integrations
@@ -46,7 +46,7 @@ Hands-on backend engineering leader with 15+ years of software development exper
 - Supported Agile planning with Product Management and engineering, building feature roadmaps and release plans and owning team assignments through production delivery.
 - Evaluated and distributed work across the team, tracked engineering performance, and contributed to an approximately 20% increase in feature delivery rate.
 - Conducted more than 20 technical interviews and helped raise the technical bar through planning and delivery oversight.
-- Remained hands-on with database and API optimization, ECS-to-Kubernetes migration, CI/CD, and production troubleshooting.
+- Remained hands-on with database and API optimization, CI/CD, and production troubleshooting.
 
 **Technologies:** PHP, Laravel, Symfony, MySQL, Elasticsearch, RabbitMQ, AWS, Kubernetes, Prometheus, Helm, GitHub Actions, ArgoCD
 
@@ -64,9 +64,9 @@ Hands-on backend engineering leader with 15+ years of software development exper
 
 **October 2016 - November 2019**
 
-- Led five backend engineers developing a transactional email service that scaled to approximately 50 million messages per month.
+- Led five backend engineers developing a transactional email service that handled about 3 million messages in a typical month.
 - Made key technical decisions, coached engineers, and developed deep ownership of email-delivery infrastructure and production reliability.
-- Guided the team through BFCM periods with more than 10x traffic growth while maintaining service continuity.
+- Guided the team through Black Friday and Cyber Monday peaks of up to 10 times the usual traffic while maintaining service continuity.
 
 **Technologies:** PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, Email Infrastructure, SRE
 

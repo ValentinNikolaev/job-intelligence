@@ -7,7 +7,7 @@ Rome, Italy | +39 351 370 1194 | valeinikolaev@gmail.com
 
 ## Summary
 
-Backend engineer with 15+ years of experience building production systems and recent focus on Go services, APIs, automation platforms, event-driven pipelines, and operational reliability. Combines hands-on delivery with system design, performance optimization, cloud infrastructure, and pragmatic technical leadership. Experienced in taking ownership of business-critical services and collaborating with product, operations, and engineering stakeholders.
+Backend engineer with 15+ years in software development, including five years building production systems in Go. Focuses on APIs, automation platforms, event-driven pipelines and operational reliability. Combines hands-on delivery with system design, performance optimization, cloud infrastructure, and pragmatic technical leadership. Experienced in taking ownership of business-critical services and collaborating with product, operations, and engineering stakeholders.
 
 ## Skills
 
@@ -20,10 +20,10 @@ Backend engineer with 15+ years of experience building production systems and re
 
 ### Simple.life | Software Developer
 
-**November 2023 - August 2026**
+**November 2023 - October 2026**
 
 - Designed and owned a Go-based support automation platform connecting Zendesk, Intercom, and internal services through a scalable backend and unified API orchestration layer.
-- Integrated automated triage flows that handled or deflected up to 30% of inbound tickets, enabling the support organization to expand automation coverage.
+- Implemented automated triage workflows that expanded the support team's automation coverage.
 - Migrated business-critical workflows from Zendesk to Intercom's real-time engine and improved routing consistency and operational responsiveness.
 - Built resilient message-delivery pipelines with fallback logic, retries, and monitoring to protect customer communication during incidents and peak load.
 - Collaborated with Support Operations, Product, and engineering stakeholders to turn operational needs into reliable backend workflows.
@@ -35,7 +35,6 @@ Backend engineer with 15+ years of experience building production systems and re
 **February 2021 - August 2023**
 
 - Reduced peak load on the main database by removing bottlenecks and redistributing workload, improving stability during high-traffic periods.
-- Migrated services from ECS to Kubernetes and prepared the delivery stack with Helm, GitHub Actions, and ArgoCD.
 - Implemented CI/CD pipelines, investigated API and query bottlenecks, and troubleshot production issues through logs, monitoring, and SRE dashboards.
 - Supported Agile planning, release delivery, task evaluation, and work distribution; conducted more than 20 technical interviews.
 
@@ -56,7 +55,7 @@ Backend engineer with 15+ years of experience building production systems and re
 **October 2016 - November 2019**
 
 - Led five backend engineers developing a high-volume transactional and lifecycle email service.
-- Scaled the service to approximately 50 million emails per month and guided the team through BFCM periods with more than 10x traffic growth.
+- Guided the team through Black Friday and Cyber Monday peaks, when traffic reached up to 10 times the usual volume of about 3 million emails per month.
 - Made key technical decisions across delivery and reliability, developing deep expertise in DNS, DKIM, SPF, DMARC, and feedback loops.
 
 **Technologies:** PHP, Laravel, MySQL, Elasticsearch, RabbitMQ, AWS, REST APIs, Email Infrastructure, SRE
