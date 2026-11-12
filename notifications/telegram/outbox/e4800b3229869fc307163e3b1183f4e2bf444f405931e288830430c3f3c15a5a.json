@@ -1,0 +1,30 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-12T17:36:45Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "PLC Group - Global Automotive Auctions & Digital Solutions",
+      "country_codes": [],
+      "directory": "20261112_plc-group-glob_7d9900226eed4614a75722d98ce79c06",
+      "score": 68,
+      "title": "PHP Full Stack Developer (Laravel / Vue / Next.js)",
+      "url": "https://www.linkedin.com/jobs/view/4488624503/",
+      "vacancy_id": "7d990022-6eed-4614-a757-22d98ce79c06"
+    },
+    {
+      "company": "Dilanti Media",
+      "country_codes": [
+        "MT"
+      ],
+      "directory": "20261112_dilanti-media_ce52ee96d2c642299827b3e55577c633",
+      "score": 78,
+      "title": "Senior Backend Developer (PHP/Laravel)",
+      "url": "https://www.linkedin.com/jobs/view/4487896794/",
+      "vacancy_id": "ce52ee96-d2c6-4229-9827-b3e55577c633"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "e4800b3229869fc307163e3b1183f4e2bf444f405931e288830430c3f3c15a5a",
+  "schema_version": 2
+}
