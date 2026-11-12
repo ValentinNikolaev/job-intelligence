@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 58
+Total vacancies: 60
 
-- Found: 17
+- Found: 19
 - Applied: 35
 - Interview: 4
 - Withdrawn: 1
@@ -14,6 +14,8 @@ Total vacancies: 58
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-12 | [Hostaway](../registry/jobs/20261112_hostaway_f265e49fe53f449392cf7fd607dc5aaf/) | [Senior Backend Engineer, Integrations - 100% Remote - Europe](../registry/jobs/20261112_hostaway_f265e49fe53f449392cf7fd607dc5aaf/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/hostaway/jobs/senior-backend-engineer-integrations-100-remote-europe?utm_source=api) | — | — | — | — | — |
+| 2026-11-12 | [Hostaway](../registry/jobs/20261112_hostaway_4bb2ef6931314a089fa68345a64f4c3a/) | [Senior Backend Engineer, AI Platform - 100% Remote - Europe](../registry/jobs/20261112_hostaway_4bb2ef6931314a089fa68345a64f4c3a/job.md) | Albania, Algeria, Andorra, Austria, Bahrain, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Egypt, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Iran, Iraq, Ireland, Isle of Man, Israel, Italy, Jersey, Jordan, Kosovo, Kuwait, Latvia, Lebanon, Libya, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Morocco, Netherlands, North Macedonia, Norway, Oman, Palestine, State of, Poland, Portugal, Qatar, Romania, San Marino, Saudi Arabia, Serbia, Slovakia, Slovenia, Spain, Sudan, Svalbard and Jan Mayen, Sweden, Switzerland, Syrian Arab Republic, Tunisia, Ukraine, United Arab Emirates, United Kingdom, Yemen, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/hostaway/jobs/senior-backend-engineer-ai-platform-100-remote-europe?utm_source=api) | — | — | — | — | — |
 | 2026-11-11 | [D2B](../registry/jobs/20261111_d2b_f335a8cc0bf64e889340e314cb187874/) | [Customer Service Admin - (AU Experience Required)](../registry/jobs/20261111_d2b_f335a8cc0bf64e889340e314cb187874/job.md) | Asia Only | Weworkremotely | Found | 2026-11-11 | [Weworkremotely](https://weworkremotely.com/remote-jobs/d2b-customer-service-admin-au-experience-required) | — | — | — | — | — |
 | 2026-11-11 | [Yalantis](../registry/jobs/20261111_yalantis_29db23e12aad480fb8e33cd613d0c965/) | [Golang Developer](../registry/jobs/20261111_yalantis_29db23e12aad480fb8e33cd613d0c965/job.md) | Дніпро, Варшава (Польща), віддалено | Dou | Found | 2026-11-11 | [Dou](https://jobs.dou.ua/companies/yalantis/vacancies/379591/) | [Open](../registry/jobs/20261111_yalantis_29db23e12aad480fb8e33cd613d0c965/company.md) | — | — | — | — |
 | 2026-11-11 | [Bet On Talent](../registry/jobs/20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f/) | [Senior Golang Developer](../registry/jobs/20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f/job.md) | — | Arc | Found | 2026-11-11 | [Arc](https://arc.dev/dashboard/d/remote-jobs/pwobasz0lk) | — | — | — | — | — |
