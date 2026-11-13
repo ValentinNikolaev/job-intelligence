@@ -1,28 +1,29 @@
 # Match Analysis
 
-**Score:** 68/100  
-**Recommendation:** Match
+**Score:** 52/100  
+**Recommendation:** Possible Match
 
-Strong Go/PHP backend alignment and AI/automation relevance, offset by a three-day Lombardy hybrid requirement for a candidate based near Rome and unspecified Angular depth.
+Go/PHP/AWS evidence is strong, but three weekly office days in Biassono are a major practical uncertainty for an Italy-based candidate in Fiumicino.
 
 ## Why it matches
 
-- Go and PHP are both central to the role and explicitly present in the candidate profile.
-- The candidate owns a Go support-automation platform and has production AWS, API, reliability, and AI-automation experience.
+- Go and PHP backend experience.
+- AWS, cloud-native delivery, architecture, and operational improvement evidence.
 
 ## Gaps
 
-- Angular and Node.js/TypeScript experience are not established in the sealed profile.
-- The required Lombardy office presence is not confirmed as workable.
+- Angular is not explicitly evidenced.
+- The required office attendance is not clearly feasible from the candidate profile.
 
 ## Concerns
 
-- The role requires three office days each week in Biassono, Lombardy, while the profile lists Fiumicino, Latium, Italy.
+- The posting requires three office days weekly in Biassono.
+- No relocation or commute feasibility is established.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Primary backend development in Go and PHP | critical / stated | strong | your day-to-day will be mainly focused on Golang and PHP development | Go | / |
-| Three office days weekly in Lombardy | high / stated | unknown | Our team spends three days a week in the office (Tuesday-Thursday) | Fiumicino, Latium, Italy | Regular attendance in Biassono is not established. / Confirm relocation or commute expectations before proceeding. |
-| Angular support | meaningful / stated | unknown | supporting on Frontend development using Angular |  | Frontend contribution scope may exceed the evidenced profile. / Clarify the expected Angular ownership and assess transferable frontend experience. |
+| Three office days in Biassono | critical / stated | unknown | team spends three days a week in the office (Tuesday-Thursday) | Fiumicino, Latium, Italy | Commute or relocation feasibility is unknown. / Verify attendance requirement before preparation. |
+| Go and PHP | critical / stated | strong | Golang and PHP development | Senior Software Engineer \| Tech Lead \| Backend \| AWS \| Golang \| PHP | / |
+| AWS/cloud-native | high / stated | strong | entire infrastructure is fully cloud-native and hosted on AWS | Migrated managed services from ECS to Kubernetes. | / |

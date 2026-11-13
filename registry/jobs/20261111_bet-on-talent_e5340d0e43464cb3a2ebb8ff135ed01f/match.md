@@ -1,31 +1,28 @@
 # Match Analysis
 
-**Score:** 84/100  
-**Recommendation:** Strong Match
+**Score:** 78/100  
+**Recommendation:** Match
 
-The sealed posting identifies a senior European remote Go role with AWS, PostgreSQL, and MySQL, aligning closely with the candidate profile; the abbreviated source leaves detailed responsibilities and other requirements unknown.
+Senior Go backend ownership, event-driven architecture, reliability, and delivery evidence fit well; the vacancy’s work arrangement is the main remaining uncertainty.
 
 ## Why it matches
 
-- Senior Go backend experience is directly supported.
-- AWS, PostgreSQL, and MySQL are present in the candidate profile.
-- Remote from Europe aligns with the candidate being based in Italy.
+- Recent Go backend ownership at scale.
+- Event-driven architecture, queues, retries, observability, and measurable impact.
 
 ## Gaps
 
-- The abbreviated posting does not expose its full requirements, so detailed responsibilities and stack expectations remain unknown.
+- Vacancy location and authorization details are not established in the supplied record.
+- Exact domain requirements may need confirmation.
 
 ## Concerns
 
-- The sealed source contains only an abbreviated job description beginning with “Design, ...”.
+- Remote and timezone expectations are not explicit.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go. | critical / stated | strong | Go | - Go | / |
-| Senior experience level. | high / stated | strong | Experience level: Senior | Senior Software Engineer \| Tech Lead \| Backend \| AWS \| Golang \| PHP | / |
-| Amazon Web Service. | high / stated | strong | Amazon Web Service | - AWS | / |
-| PostgreSQL. | high / stated | strong | PostgreSQL | - PostgreSQL | / |
-| MySQL. | high / stated | strong | MySQL | - MySQL | / |
-| Remote from Europe. | high / stated | strong | Location: Remote from Europe | Rome, Italy | / |
+| Senior Golang development | critical / stated | strong | Senior Golang Developer | backend in Go. | / |
+| Scalable distributed systems | high / structural | strong | Senior Golang Developer | Architect a scalable, event-driven system using queues and EventBridge | / |
+| Remote / location fit | high / structural | strong | Location: Remote from Europe | Fiumicino, Latium, Italy | / Verify remote and timezone terms. |

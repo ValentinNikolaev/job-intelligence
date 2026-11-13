@@ -1,0 +1,96 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-13T08:48:29Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Dilanti Media",
+      "country_codes": [
+        "MT"
+      ],
+      "directory": "20261112_dilanti-media_ce52ee96d2c642299827b3e55577c633",
+      "score": 70,
+      "title": "Senior Backend Developer (PHP/Laravel)",
+      "url": "https://www.linkedin.com/jobs/view/4487896794/",
+      "vacancy_id": "ce52ee96-d2c6-4229-9827-b3e55577c633"
+    },
+    {
+      "company": "Yalantis",
+      "country_codes": [
+        "PL"
+      ],
+      "directory": "20261111_yalantis_29db23e12aad480fb8e33cd613d0c965",
+      "score": 70,
+      "title": "Golang Developer",
+      "url": "https://jobs.dou.ua/companies/yalantis/vacancies/379591/",
+      "vacancy_id": "29db23e1-2aad-480f-b8e3-3cd613d0c965"
+    },
+    {
+      "company": "Bet On Talent",
+      "country_codes": [],
+      "directory": "20261111_bet-on-talent_e5340d0e43464cb3a2ebb8ff135ed01f",
+      "score": 78,
+      "title": "Senior Golang Developer",
+      "url": "https://arc.dev/dashboard/d/remote-jobs/pwobasz0lk",
+      "vacancy_id": "e5340d0e-4346-4cb3-a2eb-b8ff135ed01f"
+    },
+    {
+      "company": "Olive",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261110_olive_819d5b3ae3ce47b3860165e45ca591c0",
+      "score": 78,
+      "title": "Senior Full Stack Engineer, AI-First (Go and React)",
+      "url": "https://djinni.co/jobs/857452-senior-full-stack-engineer-ai-first-go-and-re/",
+      "vacancy_id": "819d5b3a-e3ce-47b3-8601-65e45ca591c0"
+    },
+    {
+      "company": "Soft Techies",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261110_soft-techies_2f783ede61be42bdbf1bb75028252d4b",
+      "score": 82,
+      "title": "Golang Backend Engineer",
+      "url": "https://djinni.co/jobs/857346-golang-backend-engineer/",
+      "vacancy_id": "2f783ede-61be-42bd-bf1b-b75028252d4b"
+    },
+    {
+      "company": "Sombra",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261109_sombra_e6fc14314dab4f9cafcbca1b864a346a",
+      "score": 72,
+      "title": "Middle Backend (Golang+TypeScript) Engineer",
+      "url": "https://jobs.dou.ua/companies/sombra/vacancies/379256/",
+      "vacancy_id": "e6fc1431-4dab-4f9c-afcb-ca1b864a346a"
+    },
+    {
+      "company": "Smart Working",
+      "country_codes": [
+        "PT"
+      ],
+      "directory": "20261109_smart-working_879edf975e2e45078ac5ebd1b8bbd762",
+      "score": 76,
+      "title": "Sr. PHP Symfony Engineer (Remote, Full-Time) [AR024]",
+      "url": "https://www.linkedin.com/jobs/view/4486672572/",
+      "vacancy_id": "879edf97-5e2e-4507-8ac5-ebd1b8bbd762"
+    },
+    {
+      "company": "VMWay",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261107_vmway_08c10690789c4862aff88e41b3f601cf",
+      "score": 88,
+      "title": "Backend Developer PHP",
+      "url": "https://www.linkedin.com/jobs/view/4485840507/",
+      "vacancy_id": "08c10690-789c-4862-aff8-8e41b3f601cf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4149b4241a19b7e158a525b5e31278bd00303655f6f9d2c6be8f007475b8c20b",
+  "schema_version": 2
+}

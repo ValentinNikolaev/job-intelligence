@@ -1,27 +1,29 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 70/100  
 **Recommendation:** Match
 
-The senior PHP and Laravel backend focus aligns well with the candidate's documented experience, with only work conditions and the employer's deeper requirements left unknown.
+Senior PHP/Laravel backend work aligns with the candidate’s recent production experience; Malta logistics and exact scope remain to verify.
 
 ## Why it matches
 
-- PHP is a documented core strength with extensive backend experience.
-- Laravel and senior backend delivery are directly evidenced.
+- PHP backend and Laravel/Symfony experience.
+- Architecture, reliability, and cross-functional delivery evidence.
 
 ## Gaps
 
-- The sealed vacancy does not describe specific responsibilities, domain, or secondary requirements.
+- Exact Malta work arrangement and authorization are not established.
+- Any required frontend or domain-specific skills are unclear.
 
 ## Concerns
 
-- Gzira, Malta is listed without remote, relocation, language, or working-hours terms.
+- The role is in Malta while the profile is Italy-based.
+- Remote policy is not explicit in the supplied context.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior backend PHP development | critical / stated | strong | Senior Backend Developer (PHP/Laravel) | Senior Software Engineer \| Tech Lead \| Backend \| AWS \| Golang \| PHP | / |
-| Laravel | high / stated | strong | Senior Backend Developer (PHP/Laravel) | Laravel/Symfony-based product-wide logger package | / |
-| Gzira, Malta location compatibility | meaningful / stated | unknown | Gzira, Malta |  | Remote or relocation terms are absent. / Verify location and remote conditions. |
+| Senior PHP/Laravel backend | critical / stated | strong | Senior Backend Developer (PHP/Laravel) | Developed a Laravel/Symfony-based product-wide logger package | / |
+| Malta work arrangement | high / stated | unknown | Gzira, Malta |  | Location and remote eligibility are not explicit. / Verify Italy-based eligibility or relocation support. |
+| Backend architecture | high / structural | strong | Senior Backend Developer | I architect and lead the development | / |

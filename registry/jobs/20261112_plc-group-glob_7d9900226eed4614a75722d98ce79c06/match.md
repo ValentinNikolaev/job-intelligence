@@ -1,29 +1,29 @@
 # Match Analysis
 
-**Score:** 68/100  
-**Recommendation:** Match
+**Score:** 54/100  
+**Recommendation:** Possible Match
 
-PHP and backend experience fit the named stack, while Vue, Next.js, full-stack scope, and Vilnius work conditions remain unverified in the sealed vacancy.
+Laravel backend experience is relevant, but the frontend mix and Vilnius location create meaningful fit and logistics uncertainty.
 
 ## Why it matches
 
-- PHP and Laravel experience are documented in the candidate profile.
-- The candidate has senior software development and technical leadership experience.
+- PHP/Laravel backend evidence.
+- Event-driven and scalable system design experience.
 
 ## Gaps
 
-- Vue and Next.js experience is not established in the Candidate Profile.
-- Frontend ownership is not evidenced by the vacancy payload.
+- Vue and Next.js are not explicitly evidenced in the candidate profile.
+- Vilnius work arrangement and relocation terms are unclear.
 
 ## Concerns
 
-- Vilnius is listed without remote, relocation, language, or working-hours terms.
+- The role combines backend and multiple frontend technologies.
+- Location is outside the candidate profile location.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP | critical / stated | strong | PHP Full Stack Developer (Laravel / Vue / Next.js) | I have a strong track record in PHP, with 5 years of leadership experience. | / |
-| Vue / Next.js frontend | high / stated | unknown | PHP Full Stack Developer (Laravel / Vue / Next.js) |  | Frontend framework capability cannot be confirmed. / Verify Vue or Next.js experience before preparation. |
-| Laravel | high / stated | strong | PHP Full Stack Developer (Laravel / Vue / Next.js) | Laravel/Symfony-based product-wide logger package | / |
-| Vilnius location compatibility | meaningful / stated | unknown | Vilnius |  | Remote or relocation terms are absent. / Verify location and remote conditions. |
+| PHP/Laravel | critical / stated | strong | PHP Full Stack Developer (Laravel / Vue / Next.js) | Developed a Laravel/Symfony-based product-wide logger package | / |
+| Vue / Next.js | high / stated | unknown | Laravel / Vue / Next.js |  | Frontend stack evidence is absent. / Confirm expected frontend ownership. |
+| Vilnius location | high / stated | unknown | Vilnius |  | Relocation or remote eligibility is not stated. / Verify work arrangement. |

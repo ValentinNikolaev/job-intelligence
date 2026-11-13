@@ -1,31 +1,28 @@
 # Match Analysis
 
-**Score:** 88/100  
+**Score:** 82/100  
 **Recommendation:** Strong Match
 
-Strong fit for a Europe-remote Go backend role with direct evidence across Go, AWS, Kubernetes, Helm, REST APIs, CI/CD, scalable systems, and performance work.
+Go backend ownership, distributed systems, reliability, and Europe-compatible geography make this a strong fit, subject to confirming the exact remote arrangement.
 
 ## Why it matches
 
-- Commercial Go backend ownership in a support automation platform.
-- Direct AWS, Kubernetes, Helm, GitHub Actions, ArgoCD, REST API, and PostgreSQL evidence.
-- Architecture, reliability, throughput, and performance optimisation experience.
+- Recent production Go ownership and resilient delivery pipelines.
+- Architecture, performance, observability, and support automation evidence.
 
 ## Gaps
 
-- Python is listed only as a nice-to-have and is not established in the candidate profile.
-- React.js or Vue.js experience is not established.
+- Exact company-specific domain and hiring constraints are not fully known.
+- Remote policy details remain to verify.
 
 ## Concerns
 
-- The posting gives limited detail about product domain and seniority expectations.
+- The role spans Europe or Ukraine; candidate-local working hours should be confirmed.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Commercial Golang experience | critical / stated | strong | Strong commercial experience with **Golang**. | robust, scalable backend in Go | / |
-| RESTful API development | high / stated | strong | Experience designing and developing RESTful APIs. | unified API orchestration layer | / |
-| Cloud platform experience | high / stated | strong | Hands-on experience with at least one cloud platform: **AWS, GCP, or Azure**. | AWS | / |
-| Kubernetes and Helm | high / stated | strong | Experience with **Kubernetes and Helm**. | Kubernetes | / |
-| Python | preferred / stated | unknown | Experience with Python. |  | Python experience is not established in the sealed candidate profile. / Confirm Python exposure during screening if relevant. |
+| Golang backend engineering | critical / stated | strong | Golang Backend Engineer | backend in Go. | / |
+| Reliability and scalability | high / structural | strong | Backend Engineer | Build resilient message delivery pipelines | / |
+| Europe or Ukraine location | high / stated | strong | Golang Backend Engineer | Fiumicino, Latium, Italy | / |
