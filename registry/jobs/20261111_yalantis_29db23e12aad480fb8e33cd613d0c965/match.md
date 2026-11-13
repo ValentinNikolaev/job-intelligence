@@ -1,28 +1,30 @@
 # Match Analysis
 
-**Score:** 77/100  
+**Score:** 67/100  
 **Recommendation:** Match
 
-Strong Go backend alignment with remote work, PostgreSQL, AWS, Docker, and Kubernetes evidence, while the specific AWS services, Terraform, Azure migration, and English level are not established in the profile.
+Good Go backend and AWS fit with direct PostgreSQL, Kubernetes and cloud-migration evidence, but endpoint-agent/MDM, Terraform and several named AWS services are not established.
 
 ## Why it matches
 
-- Go backend work is directly supported by the current support-automation platform.
-- AWS event-driven infrastructure and ECS-to-Kubernetes migration are documented.
-- Remote work is stated in the sealed vacancy metadata.
+- Recent Go backend ownership and event-driven AWS systems.
+- PostgreSQL, ECS, Kubernetes, Terraform-adjacent infrastructure and CI/CD experience are partly supported.
+- Rome-region and remote-compatible profile context.
 
 ## Gaps
 
-- Terraform, Azure, the named AWS services, and English B2 are not explicitly evidenced.
+- Endpoint agents or daemons with Intune/Jamf/MDM are not evidenced.
+- Azure migration, Terraform and the exact Amplify/Aurora/Secrets Manager stack are not all explicit.
 
 ## Concerns
 
-- The vacancy asks for AWS-to-Azure migration participation, which remains unverified.
+- The vacancy combines backend development with a substantial endpoint-management and cloud-migration requirement.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Strong knowledge of Go | critical / stated | strong | Strong knowledge of Go (Golang). | robust, scalable backend in Go. | / |
-| PostgreSQL and AWS services | high / stated | partial | Practical experience with PostgreSQL. | Architect a scalable, event-driven system using queues and EventBridge | PostgreSQL and the exact AWS service set are not all named in the candidate evidence. / Verify the database and AWS service history before preparation. |
-| AWS-to-Azure migration and Terraform | high / stated | unknown | Practical experience participating in cloud infrastructure migration projects, preferably from AWS to Azure. |  | Migration and Terraform evidence is absent from the sealed candidate profile. / Ask for or verify concrete migration and IaC examples. |
+| Endpoint agents and MDM | critical / stated | missing | Experience in developing and deploying endpoint agents, daemons, or CLI tools, |  | The candidate profile does not establish endpoint-agent or MDM experience. / Treat as a major screening risk unless additional evidence exists. |
+| Strong Go and backend development | critical / stated | strong | Strong knowledge of Go (Golang). | robust, scalable backend in Go. | / |
+| Terraform and AWS-to-Azure migration | high / stated | partial | Experience working with Terraform and Infrastructure as Code (IaC). | Migrated managed services from ECS to Kubernetes. | The profile supports infrastructure migration but not Terraform or AWS-to-Azure specifically. / Verify Terraform and Azure migration experience. |
+| PostgreSQL and AWS | high / stated | strong | Practical experience with PostgreSQL. | Architect a scalable, event-driven system using queues and EventBridge | AWS services are present in the profile, while PostgreSQL is named in supporting evidence. / |

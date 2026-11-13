@@ -3,25 +3,28 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Go/backend, Kubernetes, cloud-native systems, observability, distributed systems, and mentoring align well, while the Milan location and open-source/API-gateway specifics need confirmation.
+Strong senior Go, distributed-systems, Kubernetes and AWS alignment for a Milan role. The main uncertainties are Kong/open-source contribution, L4/L7 networking depth and exact cloud-native product experience.
 
 ## Why it matches
 
-- Go, Kubernetes migration, cloud operations, observability, and performance work are documented.
-- Senior technical leadership, mentoring, architecture, and distributed systems experience are supported.
+- Milan location matches the explicit location requirement.
+- Go, Kubernetes migration, AWS, event-driven systems, performance, observability and reliability are supported.
+- Technical leadership and mentoring evidence fit the collaboration expectations.
 
 ## Gaps
 
-- Open-source project contribution and API-gateway/networking depth are not explicitly evidenced.
+- Kong Gateway Operator, Ingress Controller, service mesh and open-source contribution are not evidenced.
+- L4/L7 networking is not explicit.
 
 ## Concerns
 
-- The position is open to candidates located in Milan, while the profile states Fiumicino near Rome.
+- The posting metadata says remote true but the body explicitly limits the position to Milan, which is satisfied by the profile.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Golang and Kubernetes | critical / stated | strong | Proficiency in Golang | a robust, scalable backend in Go | / |
-| Located in Milan | high / stated | unknown | This position is open to candidates located in Milan (Italy). | Fiumicino, Latium, Italy | The posting may require Milan residence or relocation. / Confirm whether remote work or relocation from Rome is accepted. |
-| High-performance distributed systems and cloud | high / stated | strong | Experience designing and building high-performance, scalable distributed systems. | Architect a scalable, event-driven system using queues and EventBridge | / |
+| Go and Kubernetes/cloud-native | critical / stated | partial | Proficiency in Golang (or strong experience in another modern programming language with the ability to ramp up in Golang). | Migrated managed services from ECS to Kubernetes. | Go and Kubernetes are supported, but deep Kong/service-mesh experience is not shown. / Validate Kubernetes depth and networking during screening. |
+| 5+ years backend engineering | critical / stated | strong | 5+ years of software engineering experience, with a strong focus on backend development. | I'm a highly experienced developer with over 15 years of expertise. | / |
+| Milan location | critical / stated | strong | This position is open to candidates located in Milan (Italy). | Rome, Latium, Italy | The profile says Fiumicino/Rome area rather than Milan. / Confirm willingness to work from Milan if office presence is required. |
+| Distributed systems and performance | high / stated | strong | Experience designing and building high-performance, scalable distributed systems. | Architect a scalable, event-driven system using queues and EventBridge | / |
