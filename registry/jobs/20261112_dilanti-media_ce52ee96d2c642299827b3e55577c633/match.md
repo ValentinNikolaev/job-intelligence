@@ -1,29 +1,26 @@
 # Match Analysis
 
-**Score:** 70/100  
-**Recommendation:** Match
+**Score:** 58/100  
+**Recommendation:** Possible Match
 
-Senior PHP/Laravel backend work aligns with the candidate’s recent production experience; Malta logistics and exact scope remain to verify.
+The title indicates a PHP/Laravel backend role, which aligns with the candidate's PHP and Symfony/Laravel evidence, but the sealed posting contains almost no requirements or working-arrangement detail.
 
 ## Why it matches
 
-- PHP backend and Laravel/Symfony experience.
-- Architecture, reliability, and cross-functional delivery evidence.
+- PHP backend alignment is supported by the candidate's documented PHP background.
+- Laravel and Symfony experience is explicitly documented.
 
 ## Gaps
 
-- Exact Malta work arrangement and authorization are not established.
-- Any required frontend or domain-specific skills are unclear.
+- The supplied posting does not establish the actual seniority, responsibilities, or required stack beyond the title.
 
 ## Concerns
 
-- The role is in Malta while the profile is Italy-based.
-- Remote policy is not explicit in the supplied context.
+- The metadata places the role in Gzira, Malta, while the candidate profile places him in Fiumicino, Italy and does not state Malta relocation or work authorization.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior PHP/Laravel backend | critical / stated | strong | Senior Backend Developer (PHP/Laravel) | Developed a Laravel/Symfony-based product-wide logger package | / |
-| Malta work arrangement | high / stated | unknown | Gzira, Malta |  | Location and remote eligibility are not explicit. / Verify Italy-based eligibility or relocation support. |
-| Backend architecture | high / structural | strong | Senior Backend Developer | I architect and lead the development | / |
+| Location in Malta | high / stated | unknown | Gzira, Malta | Fiumicino, Latium, Italy | Candidate location and Malta work or relocation eligibility are not established. / Confirm remote eligibility or relocation and work authorization before applying. |
+| PHP/Laravel backend development | high / stated | strong | Senior Backend Developer (PHP/Laravel) | I have a strong track record in PHP, with 5 years of leadership experience. | / |

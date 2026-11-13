@@ -1,28 +1,28 @@
 # Match Analysis
 
-**Score:** 70/100  
+**Score:** 77/100  
 **Recommendation:** Match
 
-Go development and senior delivery evidence are relevant, with the main uncertainty around the supplied Ukrainian location and exact role level.
+Strong Go backend alignment with remote work, PostgreSQL, AWS, Docker, and Kubernetes evidence, while the specific AWS services, Terraform, Azure migration, and English level are not established in the profile.
 
 ## Why it matches
 
-- Recent Go platform ownership and resilient service design.
-- Leadership and architecture experience.
+- Go backend work is directly supported by the current support-automation platform.
+- AWS event-driven infrastructure and ECS-to-Kubernetes migration are documented.
+- Remote work is stated in the sealed vacancy metadata.
 
 ## Gaps
 
-- Exact location and remote terms need confirmation.
-- Role-specific product domain is not established.
+- Terraform, Azure, the named AWS services, and English B2 are not explicitly evidenced.
 
 ## Concerns
 
-- The supplied location is in Ukraine while the candidate profile is Italy-based.
+- The vacancy asks for AWS-to-Azure migration participation, which remains unverified.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Golang development | critical / stated | strong | Golang Developer | backend in Go. | / |
-| Location / remote | high / structural | unknown | Golang Developer |  | Candidate location and vacancy location do not clearly align. / Verify remote eligibility. |
-| Production backend ownership | high / structural | strong | Golang Developer | Build resilient message delivery pipelines | / |
+| Strong knowledge of Go | critical / stated | strong | Strong knowledge of Go (Golang). | robust, scalable backend in Go. | / |
+| PostgreSQL and AWS services | high / stated | partial | Practical experience with PostgreSQL. | Architect a scalable, event-driven system using queues and EventBridge | PostgreSQL and the exact AWS service set are not all named in the candidate evidence. / Verify the database and AWS service history before preparation. |
+| AWS-to-Azure migration and Terraform | high / stated | unknown | Practical experience participating in cloud infrastructure migration projects, preferably from AWS to Azure. |  | Migration and Terraform evidence is absent from the sealed candidate profile. / Ask for or verify concrete migration and IaC examples. |

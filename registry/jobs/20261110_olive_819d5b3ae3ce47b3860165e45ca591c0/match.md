@@ -1,28 +1,29 @@
 # Match Analysis
 
-**Score:** 78/100  
+**Score:** 76/100  
 **Recommendation:** Match
 
-The EU remote full-stack role matches strong Go backend and architecture evidence; React and AI-specific expectations remain partial or unknown.
+The Europe-remote role combines Go backend work, support and messaging automation, distributed systems, and production ownership, closely matching the candidate's support-automation and event-driven experience; React/TypeScript and daily AI coding-tool use are unverified.
 
 ## Why it matches
 
-- Go backend ownership and scalable service architecture.
-- Cross-functional platform delivery and measurable reliability impact.
+- The product domain is close to the candidate's documented support automation and customer communication work.
+- Go services, integrations, reliability, and performance work are supported.
+- Europe-remote location fits the candidate's Italy-based profile.
 
 ## Gaps
 
-- React is not explicitly supported by the profile evidence.
-- AI-first product experience is not independently established beyond the supplied profile text.
+- React and TypeScript are core requirements but are not evidenced in the profile.
+- Daily use of AI coding tools is not established.
 
 ## Concerns
 
-- Exact EU employment and timezone terms are not detailed.
+- The role spans full-stack delivery and real-time communications, while the candidate profile is primarily backend-focused.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Go backend | critical / stated | strong | Senior Full Stack Engineer, AI-First (Go and React) | backend in Go. | / |
-| React | high / stated | unknown | Go and React |  | React evidence is not present in the sealed candidate profile. / Confirm frontend share of the role. |
-| EU remote | high / stated | partial | Senior Full Stack Engineer | Fiumicino, Latium, Italy | Remote policy details and local-hours expectations are incomplete. / Verify terms. |
+| React and TypeScript | critical / stated | unknown | Working experience with React and TypeScript. |  | The profile does not establish frontend TypeScript experience. / Verify hands-on React and TypeScript work before preparation. |
+| Production Go experience | critical / stated | strong | Around 4 years of production experience with Go. | a robust, scalable backend in Go | / |
+| Remote within Europe | high / stated | strong | This is a full-time remote role for someone based in Europe | Fiumicino, Latium, Italy | / |

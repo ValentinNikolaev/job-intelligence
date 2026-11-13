@@ -3,26 +3,25 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Senior Go backend ownership, event-driven architecture, reliability, and delivery evidence fit well; the vacancy’s work arrangement is the main remaining uncertainty.
+The abbreviated sealed posting identifies a senior Go role remote from Europe with AWS and PostgreSQL, matching the candidate's backend, Go, AWS, and event-driven experience; detailed responsibilities are unavailable.
 
 ## Why it matches
 
-- Recent Go backend ownership at scale.
-- Event-driven architecture, queues, retries, observability, and measurable impact.
+- Go backend experience is directly documented.
+- AWS and PostgreSQL-related backend work is supported by the profile.
+- The candidate is in Italy and the role is remote from Europe.
 
 ## Gaps
 
-- Vacancy location and authorization details are not established in the supplied record.
-- Exact domain requirements may need confirmation.
+- The pack does not contain enough detail to assess the complete requirements.
 
 ## Concerns
 
-- Remote and timezone expectations are not explicit.
+- The abbreviated source text prevents verification of seniority expectations and domain fit.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Senior Golang development | critical / stated | strong | Senior Golang Developer | backend in Go. | / |
-| Scalable distributed systems | high / structural | strong | Senior Golang Developer | Architect a scalable, event-driven system using queues and EventBridge | / |
-| Remote / location fit | high / structural | strong | Location: Remote from Europe | Fiumicino, Latium, Italy | / Verify remote and timezone terms. |
+| Senior Go development | high / stated | strong | Senior Golang Developer | robust, scalable backend in Go | / |
+| Remote from Europe | high / stated | strong | Location: Remote from Europe | Fiumicino, Latium, Italy | / |

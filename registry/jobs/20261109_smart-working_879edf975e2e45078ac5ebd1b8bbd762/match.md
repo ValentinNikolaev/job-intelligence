@@ -1,29 +1,27 @@
 # Match Analysis
 
-**Score:** 76/100  
+**Score:** 79/100  
 **Recommendation:** Match
 
-Senior Symfony/PHP backend work fits strongly, with the Portugal employment and no-sponsorship condition requiring explicit eligibility confirmation.
+Strong PHP/Symfony backend alignment with senior ownership, architecture, and remote work, while the Portugal location and right-to-work condition require confirmation for an Italy-based candidate.
 
 ## Why it matches
 
-- PHP and Symfony backend experience.
-- Architectural ownership, reliability, and production optimization evidence.
+- PHP and Symfony/Laravel experience is directly documented.
+- Senior backend ownership, architecture, performance, and production support align well.
+- Remote work is explicitly stated.
 
 ## Gaps
 
-- The exact Angular/TypeScript/Python mix is not fully evidenced.
-- Right-to-work in Portugal is not established.
+- The profile does not establish the candidate's right to work in Portugal without sponsorship.
 
 ## Concerns
 
-- The posting requires working from the applying country without sponsorship.
-- Candidate profile is Italy-based.
+- The posting names Portugal and requires work authorization in the country of application.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| PHP/Symfony | critical / stated | strong | Senior PHP/Symfony Engineer | Developed a Laravel/Symfony-based product-wide logger package | / |
-| Portugal right to work | high / stated | unknown | Applicants must have the right to work in the country they are applying from |  | Candidate evidence does not establish Portugal work authorization. / Verify before any preparation. |
-| Architect mindset and independence | high / stated | strong | architect mindset, strong independence | I architect and lead the development | / |
+| Senior PHP/Symfony engineering | critical / stated | strong | As a Senior PHP/Symfony Engineer | Developed a Laravel/Symfony-based product-wide logger package | / |
+| Right to work without sponsorship | high / stated | unknown | Applicants must have the right to work in the country they are applying from and be able to work without employer sponsorship. | Fiumicino, Latium, Italy | The profile does not state Portuguese work authorization or sponsorship status. / Confirm the permitted hiring country and work authorization before preparation. |
