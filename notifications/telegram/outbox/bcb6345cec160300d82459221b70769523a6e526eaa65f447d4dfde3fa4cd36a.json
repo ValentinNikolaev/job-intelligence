@@ -1,0 +1,28 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-14T14:47:38Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Recare Deutschland GmbH",
+      "country_codes": [],
+      "directory": "20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a",
+      "score": 76,
+      "title": "Software Engineer (Computer Use & Integrations) (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-software-engineer-computer-use-integrations-berlin-434731",
+      "vacancy_id": "2a3beb8b-41dd-4be7-987f-497dcb05418a"
+    },
+    {
+      "company": "Recare Deutschland GmbH",
+      "country_codes": [],
+      "directory": "20261114_recare-deutsch_0946ef55b1b54a02bfb2030dc7de6991",
+      "score": 82,
+      "title": "Tech Lead (Medical Coding Agents) (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-tech-lead-medical-coding-agents-berlin-279658",
+      "vacancy_id": "0946ef55-b1b5-4a02-bfb2-030dc7de6991"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "bcb6345cec160300d82459221b70769523a6e526eaa65f447d4dfde3fa4cd36a",
+  "schema_version": 2
+}
