@@ -1,0 +1,21 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-14T16:44:08Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Enginium",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261114_enginium_34264581b1e145f7aa06f0860283a132",
+      "score": 74,
+      "title": "Senior Golang Backend Engineer",
+      "url": "https://www.linkedin.com/jobs/view/4477714022/",
+      "vacancy_id": "34264581-b1e1-45f7-aa06-f0860283a132"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "a4a654f1a652c690a9920c73c95a5abbe8f6a5efca3f3459347e16af9e6fdcb2",
+  "schema_version": 2
+}
