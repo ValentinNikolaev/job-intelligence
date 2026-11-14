@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 53
+Total vacancies: 56
 
-- Found: 14
+- Found: 17
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,9 @@ Total vacancies: 53
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 | [Nearform](../registry/jobs/20261114_nearform_486232506e534cdebdd61e60be33b857/) | [Technical Lead - Golang](../registry/jobs/20261114_nearform_486232506e534cdebdd61e60be33b857/job.md) | UK | Jobicy | Found | 2026-11-14 | [Jobicy](https://jobicy.com/jobs/162099-technical-lead-golang) | — | — | — | — | — |
+| 2026-11-14 | [Recare Deutschland GmbH](../registry/jobs/20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a/) | [Software Engineer (Computer Use & Integrations) (m/w/d)](../registry/jobs/20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a/job.md) | Remote job | Arbeitnow | Found | 2026-11-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-software-engineer-computer-use-integrations-berlin-434731) | — | — | — | — | — |
+| 2026-11-14 | [Recare Deutschland GmbH](../registry/jobs/20261114_recare-deutsch_0946ef55b1b54a02bfb2030dc7de6991/) | [Tech Lead (Medical Coding Agents) (m/w/d)](../registry/jobs/20261114_recare-deutsch_0946ef55b1b54a02bfb2030dc7de6991/job.md) | Remote job | Arbeitnow | Found | 2026-11-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-tech-lead-medical-coding-agents-berlin-279658) | — | — | — | — | — |
 | 2026-11-13 | [Binariks](../registry/jobs/20261113_binariks_4273425129f4462ea5757241693a5034/) | [Senior Backend Engineer (Go)](../registry/jobs/20261113_binariks_4273425129f4462ea5757241693a5034/job.md) | віддалено | Dou | Found | 2026-11-13 | [Dou](https://jobs.dou.ua/companies/binariks/vacancies/379911/) | [Open](../registry/jobs/20261113_binariks_4273425129f4462ea5757241693a5034/company.md) | — | — | — | — |
 | 2026-11-13 | [PulseRise Technologies](../registry/jobs/20261113_pulserise-tech_69a9c39c4ff1479da41b459bddc7052f/) | [Golang Developer](../registry/jobs/20261113_pulserise-tech_69a9c39c4ff1479da41b459bddc7052f/job.md) | EU | Djinni | Found | 2026-11-13 | [Djinni](https://djinni.co/jobs/858112-golang-developer/) | — | — | — | — | — |
 | 2026-11-12 | [FYUL](../registry/jobs/20261112_fyul_c31ead5c24ee43fcbe3831bc803c7aea/) | [Staff Full Stack Engineer – Production team (remote within Europe)](../registry/jobs/20261112_fyul_c31ead5c24ee43fcbe3831bc803c7aea/job.md) | Albania, Andorra, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Gibraltar, Greece, Guernsey, Holy See (Vatican City State), Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Kosovo, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Ukraine, United Kingdom, Åland Islands | Himalayas | Found | 2026-11-12 | [Himalayas](https://himalayas.app/companies/fyul/jobs/staff-full-stack-engineer-production-team-remote-within-europe?utm_source=api) | — | — | — | — | — |
