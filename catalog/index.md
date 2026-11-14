@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 56
+Total vacancies: 57
 
-- Found: 17
+- Found: 18
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 56
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-14 | [Enginium](../registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/) | [Senior Golang Backend Engineer](../registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/job.md) | Bologna, Emilia-Romagna, Italy | Linkedin | Found | 2026-11-14 | [Linkedin](https://www.linkedin.com/jobs/view/4477714022/) | — | — | — | — | — |
 | 2026-11-14 | [Nearform](../registry/jobs/20261114_nearform_486232506e534cdebdd61e60be33b857/) | [Technical Lead - Golang](../registry/jobs/20261114_nearform_486232506e534cdebdd61e60be33b857/job.md) | UK | Jobicy | Found | 2026-11-14 | [Jobicy](https://jobicy.com/jobs/162099-technical-lead-golang) | — | — | — | — | — |
 | 2026-11-14 | [Recare Deutschland GmbH](../registry/jobs/20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a/) | [Software Engineer (Computer Use & Integrations) (m/w/d)](../registry/jobs/20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a/job.md) | Remote job | Arbeitnow | Found | 2026-11-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-software-engineer-computer-use-integrations-berlin-434731) | — | — | — | — | — |
 | 2026-11-14 | [Recare Deutschland GmbH](../registry/jobs/20261114_recare-deutsch_0946ef55b1b54a02bfb2030dc7de6991/) | [Tech Lead (Medical Coding Agents) (m/w/d)](../registry/jobs/20261114_recare-deutsch_0946ef55b1b54a02bfb2030dc7de6991/job.md) | Remote job | Arbeitnow | Found | 2026-11-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-tech-lead-medical-coding-agents-berlin-279658) | — | — | — | — | — |
