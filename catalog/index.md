@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 55
+Total vacancies: 57
 
-- Found: 16
+- Found: 18
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,8 @@ Total vacancies: 55
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-15 | [D2B](../registry/jobs/20261115_d2b_9403f36604c94d899f50b5810098aa0e/) | [Service Delivery and Operations Manager - Dayshift Remote](../registry/jobs/20261115_d2b_9403f36604c94d899f50b5810098aa0e/job.md) | Asia Only | Weworkremotely | Found | 2026-11-15 | [Weworkremotely](https://weworkremotely.com/remote-jobs/d2b-service-delivery-and-operations-manager-dayshift-remote) | — | — | — | — | — |
+| 2026-11-15 | [Xperteez Technology](../registry/jobs/20261115_xperteez-techn_eae7286e2ca34dd8ba9f20b414a4e926/) | [🌍 Sr. Full-Stack Software Engineer, Remote- Contract](../registry/jobs/20261115_xperteez-techn_eae7286e2ca34dd8ba9f20b414a4e926/job.md) | Worldwide | Himalayas | Found | 2026-11-15 | [Himalayas](https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract?utm_source=api) | — | — | — | — | — |
 | 2026-11-14 | [ClickHouse](../registry/jobs/20261114_clickhouse_0bcc3d69baa84d69a9a9fed389014917/) | [Senior Cloud Engineer – Product Metrics](../registry/jobs/20261114_clickhouse_0bcc3d69baa84d69a9a9fed389014917/job.md) | Canada | Jobspresso | Found | 2026-11-14 | [Jobspresso](https://jobspresso.co/job/senior-cloud-engineer-product-metrics/) | — | — | — | — | — |
 | 2026-11-14 | [Enginium](../registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/) | [Senior Golang Backend Engineer](../registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/job.md) | Bologna, Emilia-Romagna, Italy | Linkedin | Found | 2026-11-14 | [Linkedin](https://www.linkedin.com/jobs/view/4477714022/) | — | — | — | — | — |
 | 2026-11-14 | [Recare Deutschland GmbH](../registry/jobs/20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a/) | [Software Engineer (Computer Use & Integrations) (m/w/d)](../registry/jobs/20261114_recare-deutsch_2a3beb8b41dd4be7987f497dcb05418a/job.md) | Remote job | Arbeitnow | Found | 2026-11-14 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/recare-deutschland-gmbh/remote-software-engineer-computer-use-integrations-berlin-434731) | — | — | — | — | — |
