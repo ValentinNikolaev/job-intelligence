@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 56
+Total vacancies: 59
 
-- Found: 17
+- Found: 20
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,9 @@ Total vacancies: 56
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-16 | [Sezzle](../registry/jobs/20261116_sezzle_e841f50cd4bb4429951b5539eff6e797/) | [Senior Security Engineer, Detection & Response](../registry/jobs/20261116_sezzle_e841f50cd4bb4429951b5539eff6e797/job.md) | Asia-Pacific | Jobspresso | Found | 2026-11-16 | [Jobspresso](https://jobspresso.co/job/senior-security-engineer-detection-and-response/) | — | — | — | — | — |
+| 2026-11-16 | [Lytvynov Production](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/) | [Senior Golang Developer](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/job.md) | Ukraine | Djinni | Found | 2026-11-16 | [Djinni](https://djinni.co/jobs/858356-senior-golang-developer/) | — | — | — | — | — |
+| 2026-11-16 | [PraxisConcierge](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/) | [Software Engineer (m/w/d) – Produkt & Schnittstellen](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/job.md) | Berlin | Arbeitnow | Found | 2026-11-16 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/praxisconcierge/software-engineer-produkt-schnittstellen-berlin-485408) | — | — | — | — | — |
 | 2026-11-15 | [Xperteez Technology](../registry/jobs/20261115_xperteez-techn_eae7286e2ca34dd8ba9f20b414a4e926/) | [🌍 Sr. Full-Stack Software Engineer, Remote- Contract](../registry/jobs/20261115_xperteez-techn_eae7286e2ca34dd8ba9f20b414a4e926/job.md) | Worldwide | Himalayas | Found | 2026-11-15 | [Himalayas](https://himalayas.app/companies/xperteez-technology/jobs/sr-full-stack-software-engineer-remote-contract?utm_source=api) | — | — | — | — | — |
 | 2026-11-14 | [ClickHouse](../registry/jobs/20261114_clickhouse_0bcc3d69baa84d69a9a9fed389014917/) | [Senior Cloud Engineer – Product Metrics](../registry/jobs/20261114_clickhouse_0bcc3d69baa84d69a9a9fed389014917/job.md) | Canada | Jobspresso | Found | 2026-11-14 | [Jobspresso](https://jobspresso.co/job/senior-cloud-engineer-product-metrics/) | — | — | — | — | — |
 | 2026-11-14 | [Enginium](../registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/) | [Senior Golang Backend Engineer](../registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/job.md) | Bologna, Emilia-Romagna, Italy | Linkedin | Found | 2026-11-14 | [Linkedin](https://www.linkedin.com/jobs/view/4477714022/) | — | — | — | — | — |
