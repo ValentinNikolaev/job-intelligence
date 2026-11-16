@@ -1,0 +1,41 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-16T15:15:22Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Lytvynov Production",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947",
+      "score": 78,
+      "title": "Senior Golang Developer",
+      "url": "https://djinni.co/jobs/858356-senior-golang-developer/",
+      "vacancy_id": "a201a94a-d413-4165-8125-8c0ec1618947"
+    },
+    {
+      "company": "PraxisConcierge",
+      "country_codes": [],
+      "directory": "20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea",
+      "score": 78,
+      "title": "Software Engineer (m/w/d) – Produkt & Schnittstellen",
+      "url": "https://www.arbeitnow.com/jobs/companies/praxisconcierge/software-engineer-produkt-schnittstellen-berlin-485408",
+      "vacancy_id": "32dfe277-867a-482f-adcc-ab2a7a7b24ea"
+    },
+    {
+      "company": "Kong",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261112_kong_288c492813894cd09f764f2d8d3bed70",
+      "score": 73,
+      "title": "Senior Software Engineer - Kubernetes",
+      "url": "https://jobs.ashbyhq.com/kong/5b396e19-e312-401b-97f3-018ea6d15980",
+      "vacancy_id": "288c4928-1389-4cd0-9f76-4f2d8d3bed70"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "28aee8940e1237e82af8c7e82f2a296fba6d2bf47fa6dcb58ada8795bcc224db",
+  "schema_version": 2
+}
