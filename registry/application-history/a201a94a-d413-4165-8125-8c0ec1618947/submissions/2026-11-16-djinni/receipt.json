@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "9ee8fc4223b36be8a411bd2f6acd29e400fe0f6311958811e007d4524c94eaf6",
+      "size": 79787,
+      "snapshot": "files/application-sent-20261116/Lytvynov-Production-CV-Valentin-Nikolaev.pdf",
+      "source": "registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application-sent-20261116/Lytvynov-Production-CV-Valentin-Nikolaev.pdf"
+    }
+  ],
+  "channel": "djinni",
+  "event_id": "submission:2026-11-16-djinni",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-16",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/a201a94a-d413-4165-8125-8c0ec1618947/submissions/2026-11-16-djinni",
+  "submission_id": "2026-11-16-djinni",
+  "vacancy_id": "a201a94a-d413-4165-8125-8c0ec1618947"
+}

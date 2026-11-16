@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "0551bb7e98e8f25a4b93bfebbd7566e85fcfaf291a25b1012bea3534a1244c6b",
+      "size": 79659,
+      "snapshot": "files/application-sent-20261116/Enginium-CV-Valentin-Nikolaev.pdf",
+      "source": "registry/jobs/20261114_enginium_34264581b1e145f7aa06f0860283a132/application-sent-20261116/Enginium-CV-Valentin-Nikolaev.pdf"
+    }
+  ],
+  "channel": "allibo",
+  "event_id": "submission:2026-11-16-allibo",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-16",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/34264581-b1e1-45f7-aa06-f0860283a132/submissions/2026-11-16-allibo",
+  "submission_id": "2026-11-16-allibo",
+  "vacancy_id": "34264581-b1e1-45f7-aa06-f0860283a132"
+}

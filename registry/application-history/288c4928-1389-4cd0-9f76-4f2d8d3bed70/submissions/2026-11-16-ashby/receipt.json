@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "378dc70e3b72c0278cacf6eb0860dabcd15810f4374a2a7638602e6c042ce628",
+      "size": 79956,
+      "snapshot": "files/application-sent-20261116/Kong-CV-Valentin-Nikolaev.pdf",
+      "source": "registry/jobs/20261112_kong_288c492813894cd09f764f2d8d3bed70/application-sent-20261116/Kong-CV-Valentin-Nikolaev.pdf"
+    }
+  ],
+  "channel": "ashby",
+  "event_id": "submission:2026-11-16-ashby",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-16",
+  "positioning": "not_provided",
+  "role_family": "platform",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/288c4928-1389-4cd0-9f76-4f2d8d3bed70/submissions/2026-11-16-ashby",
+  "submission_id": "2026-11-16-ashby",
+  "vacancy_id": "288c4928-1389-4cd0-9f76-4f2d8d3bed70"
+}

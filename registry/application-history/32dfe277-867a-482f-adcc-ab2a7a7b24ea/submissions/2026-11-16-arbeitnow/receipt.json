@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "9f6df0721c84124fc680da651a67fb4787d8191de811d75eb7a875325f302e5e",
+      "size": 79480,
+      "snapshot": "files/application-sent-20261116/PraxisConcierge-CV-Valentin-Nikolaev.pdf",
+      "source": "registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application-sent-20261116/PraxisConcierge-CV-Valentin-Nikolaev.pdf"
+    }
+  ],
+  "channel": "arbeitnow",
+  "event_id": "submission:2026-11-16-arbeitnow",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-16",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/32dfe277-867a-482f-adcc-ab2a7a7b24ea/submissions/2026-11-16-arbeitnow",
+  "submission_id": "2026-11-16-arbeitnow",
+  "vacancy_id": "32dfe277-867a-482f-adcc-ab2a7a7b24ea"
+}

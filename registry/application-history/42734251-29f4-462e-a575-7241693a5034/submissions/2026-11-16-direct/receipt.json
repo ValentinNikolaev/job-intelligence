@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "3408543d345463cb6078ccc1869f4fb300cf2a5b607bcb4bbff41b67b6c61520",
+      "size": 79653,
+      "snapshot": "files/application-sent-20261116/Binariks-CV-Valentin-Nikolaev.pdf",
+      "source": "registry/jobs/20261113_binariks_4273425129f4462ea5757241693a5034/application-sent-20261116/Binariks-CV-Valentin-Nikolaev.pdf"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:2026-11-16-direct",
+  "format": "not_provided",
+  "kind": "submission",
+  "occurred_on": "2026-11-16",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/42734251-29f4-462e-a575-7241693a5034/submissions/2026-11-16-direct",
+  "submission_id": "2026-11-16-direct",
+  "vacancy_id": "42734251-29f4-462e-a575-7241693a5034"
+}
