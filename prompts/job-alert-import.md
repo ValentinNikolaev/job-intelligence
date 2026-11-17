@@ -107,12 +107,22 @@ Write a fresh JSON batch for each source under the ignored directory
 `.codex-work/job-alerts/`, named `reteinformaticalavoro.json`, `indeed.json`,
 `linkedin.json` and `arc.json`.
 Overwrite only these task-owned staging files; never reuse stale data after a failed
-Gmail read. All envelopes are `{ "schema_version": 1, "emails": [...] }`; no alerts
-means an empty emails list. Do not include an incomplete message in a valid batch.
+Gmail read. Use schema 1 for Reteinformaticalavoro, Indeed and Arc. LinkedIn may
+use schema 2 with sanitized card evidence. No alerts means an empty emails list.
+Do not include an incomplete message in a valid batch.
 
 Each email has `message_id`, `sender`, `subject`, `received_at` (ISO time with zone),
-exactly one original decoded `body_text` or `body_html`, and `jobs`. Copy the original
-MIME body unchanged, including links; these ignored files stay local. Each job has
+exactly one decoded `body_text` or `body_html`, and `jobs`. For schema 1, copy the
+original MIME body unchanged; these ignored files stay local. For LinkedIn schema 2,
+use only `body_text`: copy each selected card's title, company and continuous card
+excerpt, then replace its job-card URL with the canonical
+`https://www.linkedin.com/jobs/view/<numeric-id>/` URL obtained by stripping the
+original link locally. Omit greetings, account details, footers and all other links.
+Verify the original link has a supported LinkedIn job-card route before cleaning it.
+Never write personal mail tracking parameters, tokens or unrelated URLs to staging.
+The validator accepts only canonical job URLs and records a sanitized-evidence hash
+and scope. Authentication still comes from the Gmail metadata check, not the
+sanitized card text. Each job has
 `title`, `company`, `source_url`, `description`, with optional `location`,
 `employment_type`, `remote_working`, `published_date`. Copy text fields as exact
 excerpts; `description` is the continuous vacancy card, excluding greeting, account
@@ -134,7 +144,8 @@ incomplete cards unresolved.
 `published_date` accepts YYYY-MM-DD or DD/MM/YYYY, DD-MM-YYYY and
 two-digit-year variants copied from the card. Omit it when absent; never use the
 email receipt date. Arc relative ages such as `4 days ago` are not exact dates;
-retain them only in the excerpt. Source URLs must occur in the mail, or for Arc have
+retain them only in the excerpt. Source URLs must occur in the mail (or be the
+canonical form of a verified LinkedIn job-card URL in schema 2), or for Arc have
 a checked `resolved_links` mapping from the exact original job-card link; supported Indeed tracking
 destinations are decoded locally. Follow personal tracking links only through the
 authorized Arc resolver; never store them in canonical vacancy records.

@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 58
+Total vacancies: 59
 
-- Found: 19
+- Found: 20
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 58
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-17 | [Proxify](../registry/jobs/20261117_proxify_f0c06715842a46c382b10fe16fb27580/) | [Senior Golang Developer (Fullstack, BE-Heavy)](../registry/jobs/20261117_proxify_f0c06715842a46c382b10fe16fb27580/job.md) | Italy | Linkedin | Found | 2026-11-17 | [Linkedin](https://www.linkedin.com/jobs/view/4418939800/) | — | — | — | — | — |
 | 2026-11-17 | [WebLab Technology](../registry/jobs/20261117_weblab-technol_72522224ad604e9a906f561b1db557b2/) | [Senior Golang Developer](../registry/jobs/20261117_weblab-technol_72522224ad604e9a906f561b1db557b2/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-17 | [Djinni](https://djinni.co/jobs/820786-senior-golang-developer/) | — | — | — | — | — |
 | 2026-11-16 | [Lytvynov Production](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/) | [Senior Golang Developer](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-16 | [Djinni](https://djinni.co/jobs/858356-senior-golang-developer/) | — | [MD](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/cv.md) / [DOCX](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/cv.docx) | — | [Open](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/analysis.md) | [Open](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/interview-preparation.md) |
 | 2026-11-16 | [PraxisConcierge](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/) | [Software Engineer (m/w/d) – Produkt & Schnittstellen](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/job.md) | Berlin | Arbeitnow | Found | 2026-11-16 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/praxisconcierge/software-engineer-produkt-schnittstellen-berlin-485408) | — | [MD](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/cv.md) / [DOCX](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/cv.docx) | — | [Open](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/analysis.md) | [Open](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/interview-preparation.md) |

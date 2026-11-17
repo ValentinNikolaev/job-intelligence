@@ -34,6 +34,35 @@ def batch(source="reteinformaticalavoro", *, html=False):
 
 
 class JobAlertsTests(unittest.TestCase):
+    def test_linkedin_sanitized_card_evidence_keeps_only_stable_job_url(self):
+        url = "https://www.linkedin.com/jobs/view/4418939800/"
+        card = "Senior Golang Developer\nProxify\nItaly\nView job: " + url
+        posting = "Proxify\nSenior Golang Developer\nItaly\nRemote\nGo services"
+        data = {"schema_version": 2, "emails": [{
+            "message_id": "gmail-sanitized", "sender": "jobalerts-noreply@linkedin.com",
+            "subject": "Senior Golang Developer at Proxify", "received_at": "2026-11-17T08:50:44Z",
+            "body_text": card,
+            "jobs": [{"title": "Senior Golang Developer", "company": "Proxify",
+                      "source_url": url, "description": posting, "posting_text": posting,
+                      "location": "Italy", "remote_working": "Remote"}],
+        }]}
+        job, = normalize_batch(data, "linkedin")
+        self.assertEqual(job.source_job_id, "4418939800")
+        self.assertEqual(job.source_metadata["email_evidence_scope"], "sanitized_cards")
+        self.assertIn("email_evidence_sha256", job.source_metadata)
+        self.assertNotIn("email_body_sha256", job.source_metadata)
+        self.assertTrue(job.remote)
+        for invalid in (card.replace(url, url + "?midToken=private"),
+                        card + "\nhttps://www.linkedin.com/in/private/",
+                        card + "\nuser@example.com", card + "\nmidToken=private"):
+            data["emails"][0]["body_text"] = invalid
+            with self.subTest(invalid=invalid[-30:]), self.assertRaises(ValueError):
+                normalize_batch(data, "linkedin")
+        data["emails"][0]["body_text"] = card
+        data["emails"][0]["body_html"] = "<p>extra</p>"
+        with self.assertRaises(ValueError):
+            normalize_batch(data, "linkedin")
+
     def test_linkedin_mail_link_is_canonicalized_without_tracking(self):
         tracking = ("https://www.linkedin.com/comm/jobs/view/4481423757/"
                     "?trackingId=private&midToken=secret&otpToken=secret")

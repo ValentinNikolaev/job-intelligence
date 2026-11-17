@@ -139,14 +139,15 @@ def normalize_batch(payload: Any, source: str) -> list[NormalizedJob]:
         raise ValueError("unsupported Job Alert source")
     if not isinstance(payload, dict) or set(payload) != {"schema_version", "emails"}:
         raise ValueError("expected schema_version and emails")
-    if type(payload["schema_version"]) is not int or payload["schema_version"] != 1:
+    version = payload["schema_version"]
+    if type(version) is not int or version not in ({1, 2} if source == "linkedin" else {1}):
         raise ValueError("unsupported Job Alert schema")
     if not isinstance(payload["emails"], list):
         raise ValueError("emails must be a list")
     jobs_by_id: dict[str, NormalizedJob] = {}
     for index, email in enumerate(payload["emails"], 1):
         try:
-            jobs = _normalize_email(email, source)
+            jobs = _normalize_email(email, source, version)
         except (ValueError, TypeError, KeyError) as exc:
             raise ValueError(f"Job Alert email {index}: {exc}") from exc
         for job in jobs:
@@ -157,7 +158,7 @@ def normalize_batch(payload: Any, source: str) -> list[NormalizedJob]:
     return list(jobs_by_id.values())
 
 
-def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
+def _normalize_email(email: Any, source: str, version: int) -> list[NormalizedJob]:
     required = {"message_id", "sender", "subject", "received_at", "jobs"}
     allowed_email = {"body_html", "body_text"} | ({"resolved_links"} if source == "arc" else set())
     if not isinstance(email, dict) or not required <= set(email) or set(email) - required - allowed_email:
@@ -177,8 +178,8 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
     received = datetime.fromisoformat(_text(email["received_at"], "received_at").replace("Z", "+00:00"))
     if received.tzinfo is None:
         raise ValueError("received_at requires a timezone")
-    if ("body_html" in email) == ("body_text" in email):
-        raise ValueError("supply exactly one original body_html or body_text")
+    if ("body_html" in email) == ("body_text" in email) or (version == 2 and "body_html" in email):
+        raise ValueError("supply exactly one body; sanitized LinkedIn evidence requires body_text")
     if "body_html" in email:
         body = _text(email["body_html"], "body_html")
         parser = _MailHTML()
@@ -189,6 +190,15 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
         body = _text(email["body_text"], "body_text")
         evidence = _spaces(body)
         links = [url.rstrip(".,;)>]") for url in re.findall(r"https?://[^\s<]+", body)]
+    if version == 2:
+        if (re.search(r"\b[^\s@]+@[^\s@]+\.[^\s@]+", body)
+                or re.search(r"\b(?:midToken|otpToken|trackingId|midSig|unsubscribe)\b", body, re.I)
+                or not links):
+            raise ValueError("sanitized LinkedIn evidence must contain job links and no personal tokens or addresses")
+        for link in links:
+            _, canonical = _posting(link, "linkedin")
+            if link != canonical:
+                raise ValueError("sanitized LinkedIn evidence permits only canonical job links")
     resolved = email.get("resolved_links", {})
     if not isinstance(resolved, dict):
         raise ValueError("resolved_links must map original Arc card links to checked destinations")
@@ -251,6 +261,15 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
                 raise ValueError("remote_working is absent from this vacancy excerpt")
             if source == "reteinformaticalavoro" and not re.search(r"Remote working\s*:\s*" + re.escape(remote_value) + r"\b", fields["description"], re.I):
                 raise ValueError("remote_working needs a label in this vacancy excerpt")
+        source_metadata = {"channel": "job_alert_email", "message_id": message_id,
+                           "received_at": received.astimezone(timezone.utc).isoformat(),
+                           "description_scope": "posting_text" if posting_text else "email_excerpt",
+                           "remote_working": remote_value}
+        if version == 2:
+            source_metadata["email_evidence_sha256"] = hashlib.sha256(body.encode()).hexdigest()
+            source_metadata["email_evidence_scope"] = "sanitized_cards"
+        else:
+            source_metadata["email_body_sha256"] = hashlib.sha256(body.encode()).hexdigest()
         job = NormalizedJob(
             source=source, source_job_id=job_id, source_url=source_url,
             title=fields["title"], company=fields["company"], description=fields["description"],
@@ -258,9 +277,7 @@ def _normalize_email(email: Any, source: str) -> list[NormalizedJob]:
             remote=(None if remote_value is None or remote_value.casefold() in {"hybrid", "ibrido", "parziale"}
                     else remote_value not in {"No", "In presenza", "On-site", "on-site"}),
             published_at=_date(fields["published_date"]) if "published_date" in fields else None,
-            source_metadata={"channel": "job_alert_email", "message_id": message_id,
-                             "received_at": received.astimezone(timezone.utc).isoformat(), "description_scope": "posting_text" if posting_text else "email_excerpt",
-                             "remote_working": remote_value, "email_body_sha256": hashlib.sha256(body.encode()).hexdigest()},
+            source_metadata=source_metadata,
             analysis_priority=100,
         )
         if posting_text is not None:
