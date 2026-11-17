@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 60
+Total vacancies: 58
 
-- Found: 21
+- Found: 19
 - Applied: 35
 - Interview: 4
 
@@ -12,8 +12,6 @@ Total vacancies: 60
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 2026-11-17 | [Jadeclass Education](../registry/jobs/20261117_jadeclass-educ_960c15c12e5247bebe1c8e0f83c516a2/) | [Online English Writing and Analysis Course Developer - All Levels](../registry/jobs/20261117_jadeclass-educ_960c15c12e5247bebe1c8e0f83c516a2/job.md) | Canada Only | Weworkremotely | Found | 2026-11-17 | [Weworkremotely](https://weworkremotely.com/remote-jobs/jadeclass-education-online-english-writing-and-analysis-course-developer-all-levels) | — | — | — | — | — |
-| 2026-11-17 | [EPAM Systems](../registry/jobs/20261117_epam-systems_09bc430f9e4f4862b9270bd0e00e59f5/) | [Senior DevOps Engineer](../registry/jobs/20261117_epam-systems_09bc430f9e4f4862b9270bd0e00e59f5/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-11-17 | [Weworkremotely](https://weworkremotely.com/remote-jobs/epam-systems-senior-devops-engineer) | — | — | — | — | — |
 | 2026-11-17 | [WebLab Technology](../registry/jobs/20261117_weblab-technol_72522224ad604e9a906f561b1db557b2/) | [Senior Golang Developer](../registry/jobs/20261117_weblab-technol_72522224ad604e9a906f561b1db557b2/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-17 | [Djinni](https://djinni.co/jobs/820786-senior-golang-developer/) | — | — | — | — | — |
 | 2026-11-16 | [Lytvynov Production](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/) | [Senior Golang Developer](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-16 | [Djinni](https://djinni.co/jobs/858356-senior-golang-developer/) | — | [MD](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/cv.md) / [DOCX](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/cv.docx) | — | [Open](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/analysis.md) | [Open](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/interview-preparation.md) |
 | 2026-11-16 | [PraxisConcierge](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/) | [Software Engineer (m/w/d) – Produkt & Schnittstellen](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/job.md) | Berlin | Arbeitnow | Found | 2026-11-16 | [Arbeitnow](https://www.arbeitnow.com/jobs/companies/praxisconcierge/software-engineer-produkt-schnittstellen-berlin-485408) | — | [MD](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/cv.md) / [DOCX](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/cv.docx) | — | [Open](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/analysis.md) | [Open](../registry/jobs/20261116_praxisconcierg_32dfe277867a482fadccab2a7a7b24ea/application/interview-preparation.md) |
