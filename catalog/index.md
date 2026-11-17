@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 59
+Total vacancies: 62
 
-- Found: 20
+- Found: 23
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,9 @@ Total vacancies: 59
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-17 | [Altherias](../registry/jobs/20261117_altherias_5e16fb80d0034030b8ff0d62eefdd10f/) | [PHP Developer](../registry/jobs/20261117_altherias_5e16fb80d0034030b8ff0d62eefdd10f/job.md) | Italian Republic | Jooble | Found | 2026-11-17 | [Jooble](https://jooble.org/away/-4609561652624378295?p=1&pos=2&rgn=55179&cid=15922&ckey=senior+php+backend+developer&jobAge=105&brelb=10&scr=208.20532&bscr=208.20532&aq=-7953905747597172136&elckey=-7582120461618769755) | — | — | — | — | — |
+| 2026-11-17 | [Jamworks](../registry/jobs/20261117_jamworks_baa1d2a857894b63adaf60d44f7387a1/) | [Senior PHP Backend Engineer](../registry/jobs/20261117_jamworks_baa1d2a857894b63adaf60d44f7387a1/job.md) | за кордоном, віддалено | Dou | Found | 2026-11-17 | [Dou](https://jobs.dou.ua/companies/jamworks/vacancies/380191/) | [Open](../registry/jobs/20261117_jamworks_baa1d2a857894b63adaf60d44f7387a1/company.md) | — | — | — | — |
+| 2026-11-17 | [SoftWars](../registry/jobs/20261117_softwars_464ed8f512e94375b0a4b53ebe9cd1ff/) | [Middle PHP Developer](../registry/jobs/20261117_softwars_464ed8f512e94375b0a4b53ebe9cd1ff/job.md) | Ukraine | Djinni | Found | 2026-11-17 | [Djinni](https://djinni.co/jobs/858585-middle-php-developer/) | — | — | — | — | — |
 | 2026-11-17 | [Proxify](../registry/jobs/20261117_proxify_f0c06715842a46c382b10fe16fb27580/) | [Senior Golang Developer (Fullstack, BE-Heavy)](../registry/jobs/20261117_proxify_f0c06715842a46c382b10fe16fb27580/job.md) | Italy | Linkedin | Found | 2026-11-17 | [Linkedin](https://www.linkedin.com/jobs/view/4418939800/) | — | — | — | — | — |
 | 2026-11-17 | [WebLab Technology](../registry/jobs/20261117_weblab-technol_72522224ad604e9a906f561b1db557b2/) | [Senior Golang Developer](../registry/jobs/20261117_weblab-technol_72522224ad604e9a906f561b1db557b2/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-17 | [Djinni](https://djinni.co/jobs/820786-senior-golang-developer/) | — | — | — | — | — |
 | 2026-11-16 | [Lytvynov Production](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/) | [Senior Golang Developer](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-16 | [Djinni](https://djinni.co/jobs/858356-senior-golang-developer/) | — | [MD](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/cv.md) / [DOCX](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/cv.docx) | — | [Open](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/analysis.md) | [Open](../registry/jobs/20261116_lytvynov-produ_a201a94ad413416581258c0ec1618947/application/interview-preparation.md) |
