@@ -1,0 +1,38 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-19T08:02:05Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Altherias",
+      "country_codes": [
+        "IT"
+      ],
+      "directory": "20261119_altherias_d9292d99a9ab4d028f52cdd68a5077cf",
+      "score": 72,
+      "title": "PHP Developer",
+      "url": "https://jooble.org/away/9175579208124283548?p=1&pos=2&rgn=55179&cid=15922&ckey=senior+php+backend+developer&jobAge=5&brelb=10&scr=179.88498&bscr=179.88498&aq=4641084320700472417&elckey=6232967702413689504",
+      "vacancy_id": "d9292d99-a9ab-4d02-8f52-cdd68a5077cf"
+    },
+    {
+      "company": "Seedtag",
+      "country_codes": [
+        "BE",
+        "FR",
+        "DE",
+        "IT",
+        "NL",
+        "ES",
+        "GB"
+      ],
+      "directory": "20261118_seedtag_0870cdd7b3194da094e03a69f6e02ecf",
+      "score": 77,
+      "title": "Senior Go Engineer",
+      "url": "https://himalayas.app/companies/seedtag/jobs/senior-go-engineer?utm_source=api",
+      "vacancy_id": "0870cdd7-b319-4da0-94e0-3a69f6e02ecf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "4453d36393b132b93d4aebda2cdb9f3be288c367e9d1680c05a3e96df28d4f70",
+  "schema_version": 2
+}
