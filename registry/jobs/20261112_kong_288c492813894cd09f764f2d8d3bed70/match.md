@@ -1,32 +1,31 @@
 # Match Analysis
 
-**Score:** 73/100  
-**Recommendation:** Match
+**Score:** 84/100  
+**Recommendation:** Strong Match
 
-Relevant senior Go backend and distributed-systems fit for Kong’s API connectivity work, with Milan location as a positive. Deep Kubernetes and cloud-provider experience are not confirmed and need verification.
+Very strong overlap across Go, Kubernetes, AWS, distributed systems, APIs, observability, performance, reliability, mentoring, and Milan location; open-source contribution and L4/L7 networking depth are not explicit.
 
 ## Why it matches
 
-- Go is central to the role and matches the candidate profile.
-- Backend, APIs and microservices are relevant to Kong Gateway and Ingress Controller work.
-- The position is open in Milan, matching the preferred city.
+- Go backend ownership and API orchestration are directly supported by recent production work.
+- Kubernetes migration, Helm, ArgoCD, AWS, distributed event systems, monitoring, and production troubleshooting align closely.
+- Technical leadership, mentoring, roadmap work, and performance optimization are supported by the candidate profile.
 
 ## Gaps
 
-- Deep Kubernetes and service-mesh experience are not confirmed.
-- AWS, GCP or Azure hands-on depth is not confirmed.
-- Open-source community contribution is not confirmed.
+- Open-source project contribution is not explicit.
+- L4/L7 networking and service-mesh experience are not explicit.
 
 ## Concerns
 
-- The role expects high-performance distributed systems and Kubernetes depth beyond general backend experience.
+- The role is a cloud-native connectivity product role, so the unverified Kubernetes-controller and networking depth should be checked during preparation.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Kubernetes and cloud-native ecosystem | critical / stated | unknown | Deep knowledge of Kubernetes and the wider cloud-native ecosystem. |  | Deep Kubernetes ownership is not confirmed. / Verify production Kubernetes responsibilities before preparation. |
-| Golang backend development | critical / stated | strong | Writing clean, efficient, and well-tested code in Golang while ensuring high code quality through automated testing and peer reviews. | Go | / |
-| High-performance scalable distributed systems | high / stated | partial | Experience designing and building high-performance, scalable distributed systems. | Go | The profile supports backend scalability, but the exact Kong-scale distributed-systems scope needs verification. / Use a verified high-load/microservices example during screening. |
-| AWS, GCP or Azure | high / stated | unknown | Experience working with cloud platforms such as AWS, GCP, or Azure. |  | Cloud-provider depth is not confirmed in the sealed candidate evidence. / Confirm the provider and services used in production. |
-| Milan location | meaningful / stated | unknown | This position is open to candidates located in Milan (Italy). |  | / |
+| 5+ years of software engineering experience, with a strong focus on backend development | critical / stated | strong | 5+ years of software engineering experience, with a strong focus on backend development. | I'm a highly experienced developer with over 15 years of expertise. | No material risk for this requirement. / Lead with the recent Go backend and production systems evidence. |
+| Proficiency in Golang | critical / stated | strong | Proficiency in Golang (or strong experience in another modern programming language with the ability to ramp up in Golang). | I design and own a support automation platform | The profile does not provide a separate exact Go-year count. / Use dated production Go ownership without inventing a duration. |
+| Deep knowledge of Kubernetes and the wider cloud-native ecosystem | critical / stated | strong | Deep knowledge of Kubernetes and the wider cloud-native ecosystem. | Migrated managed services from ECS to Kubernetes. | Kubernetes operator/controller implementation is not explicit. / Distinguish verified Kubernetes platform work from the unverified controller scope. |
+| Experience designing and building high-performance, scalable distributed systems | critical / stated | strong | Experience designing and building high-performance, scalable distributed systems. | Architect a scalable, event-driven system using queues and EventBridge, | Kong-specific gateway and service-mesh experience is not explicit. / Use verified event-driven architecture, throughput, backpressure, and reliability outcomes. |
+| This position is open to candidates located in Milan (Italy) | high / stated | partial | This position is open to candidates located in Milan (Italy). | Fiumicino, Latium, Italy | The candidate is in the Rome metropolitan area rather than Milan. / Confirm whether the employer accepts Italy-based remote or relocation arrangements before preparation. |
