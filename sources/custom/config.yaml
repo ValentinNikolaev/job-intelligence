@@ -23,6 +23,12 @@ default_exclude_title_terms:
   - stage
   - tirocinio
 sources:
+  - name: altherias
+    company: Altherias
+    board_url: https://altherias.com/it/carriere/
+    company_url: https://altherias.com
+    source_type: recruitment agency careers page
+    notes: The Italian board links vacancy titles to individual JobPosting pages. Each posting supplies its own location and contract details.
   - name: experis-back-end-developer
     company: Experis Italia
     board_url: https://www.experis.it/it/cerca-lavoro/professioni/back-end-developer
