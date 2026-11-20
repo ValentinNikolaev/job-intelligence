@@ -3,38 +3,33 @@
 **Score:** 78/100  
 **Recommendation:** Match
 
-Strong recent production Go, event-driven integration and operational ownership suit the role. Low-latency p99 or serving-cost evidence, ad exchange experience and daily AI-tool usage remain material uncertainties. Italy is listed for remote contracts.
+Strong senior backend and distributed-systems fit for a remote Italy-eligible Go role, with confirmed five years of production Go, event pipelines, queues, retries, fallback paths, Kubernetes, Terraform, AWS, observability, and end-to-end ownership. The main gaps are AdTech/auction expertise, Kafka, GCP, Redis/MongoDB, measured p99 latency or serving cost, and daily AI coding-tool usage. Remote Italy eligibility and English communication fit the stated location options.
 
 ## Why it matches
 
-- Five years of hands-on production Go confirmed.
-- Go support-platform ownership, production incident recovery, and event-driven routing with backpressure.
-- Remote contract locations include Italy.
+- The candidate confirmed five years of hands-on experience developing production systems in Go.
+- Recent Go work includes a vendor-neutral event model, OpenAPI contracts, SQS queues, Terraform, Kubernetes CronJobs, and production ownership.
+- The profile documents backpressure, delivery guarantees, retries, fallback logic, partial-success semantics, monitoring, and production incident diagnosis.
+- The role's remote Italy option aligns with the candidate's location in Rome, and the candidate has senior backend and technical-lead experience.
 
 ## Gaps
 
-- No substantiated p99 improvement or ad exchange and auction experience.
-- Kafka, Google Cloud and the full set of listed resilience patterns are not established.
-- Daily AI coding-tool use is not documented.
+- AdTech, OpenRTB, auction pricing, bid floors, SSP/DSP integrations, and CTV are not evidenced.
+- Kafka, Redis, MongoDB, Google Cloud, Grafana/Victoria Metrics, BigQuery, and Trino are not evidenced in the sealed profile.
+- Measured p99 latency or serving-cost improvement and daily AI coding-tool usage are not established.
 
 ## Concerns
 
-- Ticket volume cannot be equated to real-time bidding request rates.
-- The airSlate ECS-to-Kubernetes migration attribution was withdrawn.
+- The vacancy describes ultra-low-latency real-time bidding at millisecond decision times; the profile shows high-volume and resilient systems but does not establish this specific latency regime.
+- Cross-border contract details are not provided, although Italy is listed among the available remote-contract countries.
 
 ## Requirement evidence
 
 | Requirement | Priority / basis | Match | Posting evidence | Candidate evidence | Risk / action |
 | --- | --- | --- | --- | --- | --- |
-| Distributed systems and backpressure | critical / stated | partial | Distributed systems: message queues, caches, data stores, and how they fail. Concurrency, consistency and backpressure. | delivery guarantees and backpressure handling. | Queue and backpressure evidence is present, but detailed cache, concurrency and consistency experience is not established. / Discuss actual event-delivery and failure choices without extrapolating. |
-| Backend and recent production Go | critical / stated | strong | 5+ years building backend systems, with recent years writing Go in production. | five years of hands-on experience developing production systems in Go (Golang) | / |
-| Measured p99 or serving cost in high-throughput, low-latency systems | high / stated | partial | Experience with high-throughput, low-latency services. You have measured and improved p99 latency or serving cost on a real system. | The system now supports tens of thousands of user interactions per month | P99 measurement and exchange-scale traffic are not established. / Discuss supported workload and clarify latency or serving-cost measurements. |
-| Kubernetes, cloud, CI/CD and observability | high / stated | partial | Kubernetes and cloud deployments, CI/CD and production observability. | Kubernetes CronJobs | The profile lists technologies but the airSlate migration attribution was withdrawn. / Use separately supported CronJob, deployment and monitoring examples. |
-| Data-driven validation | high / stated | partial | A data-driven mindset. You validate hypotheses with real data. | Grafana and operational observation | A concrete hypothesis-to-result measurement process is not fully described. / Explain an actual supported measurement and its limits. |
-| Resilient low-latency service patterns | high / stated | partial | Resilient design: You have designed scalable, robust and self-healing services for high-transactional, low-latency workloads | partial-success semantics | Not all listed patterns or transactional latency requirements are evidenced. / Describe the actual scan recovery and its boundaries. |
-| Production architecture and recovery | high / stated | partial | Architecture patterns in production. | Designed and owned a Go-based support automation platform | Autoscaling, sharding and canary ownership as described in the vacancy are not established. / Clarify production architecture experience using specific examples. |
-| Daily AI coding tools | high / stated | unknown | AI-native workflow. You use AI coding tools daily |  | Daily use and review practices are not documented. / Confirm actual usage and frequency. |
-| English communication | high / stated | partial | Clear communication with engineers, Product and non-technical stakeholders, in English. | English - Upper-intermediate | The specific cross-functional English scope is not documented. / Discuss actual communication experience. |
-| End-to-end ownership | high / stated | strong | Ownership. You take a fuzzy problem to a measured outcome and keep the service healthy after launch. | Owned architecture and backend end-to-end | / |
-| Remote Italy | meaningful / stated | strong | Remote contracts available in Spain, Italy, the UK, Belgium, the Netherlands, France, and Germany. | Rome, Italy | / |
-| AdTech domain | preferred / stated | unknown | AdTech experience: OpenRTB, auctions, bid floors, SSP/DSP integrations or CTV |  | Direct exchange-domain experience is not established. / Treat as a learning area. |
+| High-throughput, low-latency services with measured p99 latency or serving cost improvement | critical / stated | partial | Experience with high-throughput, low-latency services. You have measured and improved p99 latency or serving cost on a real system. | Confirmed scope for application claims: the Go support platform handled at | High-volume ownership is evidenced, but p99 latency or serving-cost measurement is not. / Confirm a measured latency or cost example before relying on this requirement as a core claim. |
+| Distributed systems, queues, caches, data stores, concurrency, consistency, and backpressure | critical / stated | partial | Distributed systems: message queues, caches, data stores, and how they fail. Concurrency, consistency and backpressure. | Build routing logic supporting multiple downstreams (e.g., Webhook, S3) with strong | Queues, stores, delivery guarantees, and backpressure are evidenced, but cache and concurrency examples are not explicit. / Use the verified event-pipeline and queue examples, and confirm cache/concurrency depth. |
+| Five or more years building backend systems with recent production Go | critical / stated | strong | 5+ years building backend systems, with recent years writing Go in production. | On 2026-11-12, Valentin Nikolaev confirmed five years of hands-on experience developing production systems in Go (Golang). | The five-year duration is aggregate, so employer-by-employer dates should not be inferred. / Present the confirmed aggregate duration and verify the exact role chronology if required. |
+| Resilient self-healing design patterns for high-transactional workloads | high / stated | partial | circuit breakers, timeouts, retries with backoff and jitter, bulkheads, load shedding, graceful degradation and fallback paths, idempotent event processing and caching strategies | Build resilient message delivery pipelines with fallback logic, retries, and | Fallbacks and retries are evidenced, but every named pattern is not. / Clarify which patterns were implemented and how they were validated in production. |
+| Kubernetes, cloud deployments, CI/CD, and production observability | high / stated | strong | Kubernetes and cloud deployments, CI/CD and production observability. | - Migrated managed services from ECS to Kubernetes. Prepared infrastructure for | The profile's cloud evidence is AWS rather than Google Cloud. / Confirm transferability to GCP and the vacancy's observability stack. |
+| AI-native workflow using coding tools daily and reviewing their output | meaningful / stated | unknown | AI-native workflow. You use AI coding tools daily, automate where you can and review their output critically when necessary. | OpenAI-powered auto-triage flows | LLM automation work is evidenced, but daily AI coding-tool use is not. / Discuss current AI-assisted development workflow and review practices. |

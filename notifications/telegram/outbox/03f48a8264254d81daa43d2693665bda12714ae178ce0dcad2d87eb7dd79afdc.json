@@ -1,0 +1,36 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-20T15:18:39Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Biz Factory GmbH",
+      "country_codes": [],
+      "directory": "20261120_biz-factory-gm_d9015074fe41427a8dd7974b3d115e9d",
+      "score": 82,
+      "title": "Backend Entwickler:in (m/w/d)",
+      "url": "https://www.arbeitnow.com/jobs/companies/biz-factory-gmbh/backend-entwicklerin-munich-378173",
+      "vacancy_id": "d9015074-fe41-427a-8dd7-974b3d115e9d"
+    },
+    {
+      "company": "Seedtag",
+      "country_codes": [
+        "BE",
+        "FR",
+        "DE",
+        "IT",
+        "NL",
+        "ES",
+        "GB"
+      ],
+      "directory": "20261118_seedtag_0870cdd7b3194da094e03a69f6e02ecf",
+      "score": 78,
+      "title": "Senior Go Engineer",
+      "url": "https://himalayas.app/companies/seedtag/jobs/senior-go-engineer?utm_source=api",
+      "vacancy_id": "0870cdd7-b319-4da0-94e0-3a69f6e02ecf"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "03f48a8264254d81daa43d2693665bda12714ae178ce0dcad2d87eb7dd79afdc",
+  "schema_version": 2
+}
