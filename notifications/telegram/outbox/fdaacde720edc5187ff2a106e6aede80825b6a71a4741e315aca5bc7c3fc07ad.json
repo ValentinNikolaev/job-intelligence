@@ -1,0 +1,48 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-21T13:50:50Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Stripe",
+      "country_codes": [
+        "US"
+      ],
+      "directory": "20261121_stripe_2bbc8e7b82c24bda8bd2c5e1ff7e8ca3",
+      "score": 79,
+      "title": "Technical Solutions Engineer",
+      "url": "https://jobspresso.co/job/technical-solutions-engineer/",
+      "vacancy_id": "2bbc8e7b-82c2-4bda-8bd2-c5e1ff7e8ca3"
+    },
+    {
+      "company": "Fincons Group",
+      "country_codes": [],
+      "directory": "20261120_fincons-group_5242eb5239c74b8e8255dbaaf515e570",
+      "score": 75,
+      "title": "Senior Go Developer / Technical Lead (con inglese)",
+      "url": "https://www.adzuna.it/details/5973150960?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "5242eb52-39c7-4b8e-8255-dbaaf515e570"
+    },
+    {
+      "company": "Fincons Group",
+      "country_codes": [],
+      "directory": "20261120_fincons-group_7417f7bdcdcd46caa92d40e66f87274f",
+      "score": 82,
+      "title": "Senior Go Developer / Technical Lead (con inglese)",
+      "url": "https://www.adzuna.it/details/5973150965?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "7417f7bd-cdcd-46ca-a92d-40e66f87274f"
+    },
+    {
+      "company": "Fincons Group",
+      "country_codes": [],
+      "directory": "20261120_fincons-group_2c2b56c5e33047daa0173883b6c9bf6a",
+      "score": 74,
+      "title": "Senior Go Developer / Technical Lead (con inglese)",
+      "url": "https://www.adzuna.it/details/5973150993?utm_medium=api&utm_source=b6674f60",
+      "vacancy_id": "2c2b56c5-e330-47da-a017-3883b6c9bf6a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "fdaacde720edc5187ff2a106e6aede80825b6a71a4741e315aca5bc7c3fc07ad",
+  "schema_version": 2
+}
