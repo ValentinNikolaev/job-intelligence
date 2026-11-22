@@ -178,6 +178,10 @@ required extraction, and no supported public job feed was found. The source
 guides under `sources/` record those findings and the authorization needed
 before an adapter can be enabled.
 
+[Career Hound](sources/careerhound/README.md) and
+[Remote.co](sources/remoteco/README.md) are listed for manual discovery.
+Their source guides document the restrictions on automated collection.
+
 Custom company-board monitoring lives in
 [`sources/custom/config.yaml`](sources/custom/config.yaml). It tracks selected
 remote-first or full-remote company career pages, including ShippyPro, Madisoft /
