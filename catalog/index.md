@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 65
+Total vacancies: 63
 
-- Found: 26
+- Found: 24
 - Applied: 35
 - Interview: 4
 
@@ -14,8 +14,6 @@ Total vacancies: 65
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 2026-11-22 | [AirAdvisor](../registry/jobs/20261122_airadvisor_11ab3f0fcf0e40779740821579648f45/) | [PHP Laravel Full Stack Developer with Alpine.JS, JavaScript & Tailwind CSS](../registry/jobs/20261122_airadvisor_11ab3f0fcf0e40779740821579648f45/job.md) | Poland | Linkedin | Found | 2026-11-22 | [Linkedin](https://www.linkedin.com/jobs/view/4492331218/) | — | — | — | — | — |
 | 2026-11-22 | [Fincons Group](../registry/jobs/20261122_fincons-group_8204ba794c9f40c1ab1ada25fceff533/) | [Senior Go Developer / Technical Lead (con inglese)](../registry/jobs/20261122_fincons-group_8204ba794c9f40c1ab1ada25fceff533/job.md) | Roma, Provincia di Roma | Adzuna | Found | 2026-11-22 | [Adzuna](https://www.adzuna.it/details/5974333737?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
-| 2026-11-21 | [Tailscale](../registry/jobs/20261121_tailscale_ee9ab717d6904881b7f2954d166b9b98/) | [Billing Engineer](../registry/jobs/20261121_tailscale_ee9ab717d6904881b7f2954d166b9b98/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-11-21 | [Weworkremotely](https://weworkremotely.com/remote-jobs/tailscale-billing-engineer) | — | — | — | — | — |
-| 2026-11-21 | [Smartsheet](../registry/jobs/20261121_smartsheet_9f0f5efe172a4164a143b6dcb07cdbb8/) | [Software Engineer (Remote Eligible in Bulgaria)](../registry/jobs/20261121_smartsheet_9f0f5efe172a4164a143b6dcb07cdbb8/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-11-21 | [Weworkremotely](https://weworkremotely.com/remote-jobs/smartsheet-software-engineer-remote-eligible-in-bulgaria) | — | — | — | — | — |
 | 2026-11-21 | [Acronis](../registry/jobs/20261121_acronis_52dc949575984e17911d90402b740dbc/) | [Senior Software Developer-Python/Go](../registry/jobs/20261121_acronis_52dc949575984e17911d90402b740dbc/job.md) | Bulgaria, Czechia, Greece, Italy, Poland, Portugal, Serbia, Spain, Turkey | Himalayas | Found | 2026-11-21 | [Himalayas](https://himalayas.app/companies/acronis/jobs/senior-software-developer-python-go?utm_source=api) | — | — | — | — | — |
 | 2026-11-21 | [Fincons Group](../registry/jobs/20261121_fincons-group_b91b3073057e474a950551f80baa9a40/) | [Senior Go Developer / Technical Lead (con inglese)](../registry/jobs/20261121_fincons-group_b91b3073057e474a950551f80baa9a40/job.md) | Vimercate, Provincia di Monza e Brianza | Adzuna | Found | 2026-11-21 | [Adzuna](https://www.adzuna.it/details/5974333744?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-11-21 | [Fincons Group](../registry/jobs/20261121_fincons-group_32e475d3b58e45f49af6238e176065b2/) | [Senior Go Developer / Technical Lead (con inglese)](../registry/jobs/20261121_fincons-group_32e475d3b58e45f49af6238e176065b2/job.md) | Verona, Provincia di Verona | Adzuna | Found | 2026-11-21 | [Adzuna](https://www.adzuna.it/details/5974333742?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
