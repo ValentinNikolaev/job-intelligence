@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-23T20:49:19Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Payward",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261123_payward_7afa86d2a0ed4373b9a58157e338d944",
+      "score": 82,
+      "title": "Go Developer",
+      "url": "https://djinni.co/jobs/859359-go-developer/",
+      "vacancy_id": "7afa86d2-a0ed-4373-b9a5-8157e338d944"
+    },
+    {
+      "company": "Confitech Dienstleistungs GmbH",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a",
+      "score": 77,
+      "title": "PHP Engineer",
+      "url": "https://djinni.co/jobs/859402-php-engineer/",
+      "vacancy_id": "ac8d03c3-452a-4c29-ac00-3a368e31482a"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "914ac51784cd7f6781878a4ae0e533757c52a346e6868ca2c5cce36a767f2aaa",
+  "schema_version": 2
+}
