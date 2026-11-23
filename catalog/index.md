@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 63
+Total vacancies: 67
 
-- Found: 24
+- Found: 28
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,10 @@ Total vacancies: 63
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-23 | [JumpCloud](../registry/jobs/20261123_jumpcloud_ac81671441df407a8dba947c4f68cea4/) | [Principal Cloud Platform Engineer](../registry/jobs/20261123_jumpcloud_ac81671441df407a8dba947c4f68cea4/job.md) | Asia-Pacific | Jobspresso | Found | 2026-11-23 | [Jobspresso](https://jobspresso.co/job/principal-cloud-platform-engineer-jumpcloud/) | — | — | — | — | — |
+| 2026-11-23 | [Elevenlabs](../registry/jobs/20261123_elevenlabs_1e1a23623f004d99a337f50f96c3dcf5/) | [SIP Expert](../registry/jobs/20261123_elevenlabs_1e1a23623f004d99a337f50f96c3dcf5/job.md) | Europe | Jobicy | Found | 2026-11-23 | [Jobicy](https://jobicy.com/jobs/163233-sip-expert) | — | — | — | — | — |
+| 2026-11-23 | [Confitech Dienstleistungs GmbH](../registry/jobs/20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a/) | [PHP Engineer](../registry/jobs/20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-23 | [Djinni](https://djinni.co/jobs/859402-php-engineer/) | — | — | — | — | — |
+| 2026-11-23 | [Payward](../registry/jobs/20261123_payward_7afa86d2a0ed4373b9a58157e338d944/) | [Go Developer](../registry/jobs/20261123_payward_7afa86d2a0ed4373b9a58157e338d944/job.md) | Worldwide | Djinni | Found | 2026-11-23 | [Djinni](https://djinni.co/jobs/859359-go-developer/) | — | — | — | — | — |
 | 2026-11-22 | [AirAdvisor](../registry/jobs/20261122_airadvisor_11ab3f0fcf0e40779740821579648f45/) | [PHP Laravel Full Stack Developer with Alpine.JS, JavaScript & Tailwind CSS](../registry/jobs/20261122_airadvisor_11ab3f0fcf0e40779740821579648f45/job.md) | Poland | Linkedin | Found | 2026-11-22 | [Linkedin](https://www.linkedin.com/jobs/view/4492331218/) | — | — | — | — | — |
 | 2026-11-22 | [Fincons Group](../registry/jobs/20261122_fincons-group_8204ba794c9f40c1ab1ada25fceff533/) | [Senior Go Developer / Technical Lead (con inglese)](../registry/jobs/20261122_fincons-group_8204ba794c9f40c1ab1ada25fceff533/job.md) | Roma, Provincia di Roma | Adzuna | Found | 2026-11-22 | [Adzuna](https://www.adzuna.it/details/5974333737?utm_medium=api&utm_source=b6674f60) | — | — | — | — | — |
 | 2026-11-21 | [Acronis](../registry/jobs/20261121_acronis_52dc949575984e17911d90402b740dbc/) | [Senior Software Developer-Python/Go](../registry/jobs/20261121_acronis_52dc949575984e17911d90402b740dbc/job.md) | Bulgaria, Czechia, Greece, Italy, Poland, Portugal, Serbia, Spain, Turkey | Himalayas | Found | 2026-11-21 | [Himalayas](https://himalayas.app/companies/acronis/jobs/senior-software-developer-python-go?utm_source=api) | — | — | — | — | — |
