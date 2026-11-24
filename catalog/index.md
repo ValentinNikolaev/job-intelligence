@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 65
+Total vacancies: 68
 
-- Found: 26
+- Found: 29
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,9 @@ Total vacancies: 65
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-24 | [Requestum](../registry/jobs/20261124_requestum_f8c8506a3f4644a799ef2d8548503e92/) | [Backend Software Engineer (Python / Go)](../registry/jobs/20261124_requestum_f8c8506a3f4644a799ef2d8548503e92/job.md) | за кордоном, віддалено | Dou | Found | 2026-11-24 | [Dou](https://jobs.dou.ua/companies/requestum/vacancies/380896/) | [Open](../registry/jobs/20261124_requestum_f8c8506a3f4644a799ef2d8548503e92/company.md) | — | — | — | — |
+| 2026-11-24 | [Checkbox Group](../registry/jobs/20261124_checkbox-group_715cdcd619574745bff6aa3ee9f4c08d/) | [Senior Fullstack Developer (AI-Driven Development)](../registry/jobs/20261124_checkbox-group_715cdcd619574745bff6aa3ee9f4c08d/job.md) | Київ, віддалено | Dou | Found | 2026-11-24 | [Dou](https://jobs.dou.ua/companies/checkbox/vacancies/380914/) | [Open](../registry/jobs/20261124_checkbox-group_715cdcd619574745bff6aa3ee9f4c08d/company.md) | — | — | — | — |
+| 2026-11-24 | [Uptowin](../registry/jobs/20261124_uptowin_4313d43ffbaf4cbba74a7af010c1ea37/) | [Backend Developer (PHP / Laravel)](../registry/jobs/20261124_uptowin_4313d43ffbaf4cbba74a7af010c1ea37/job.md) | Київ, віддалено | Dou | Found | 2026-11-24 | [Dou](https://jobs.dou.ua/companies/uptowin/vacancies/380885/) | [Open](../registry/jobs/20261124_uptowin_4313d43ffbaf4cbba74a7af010c1ea37/company.md) | — | — | — | — |
 | 2026-11-24 | [agap2 Italia](../registry/jobs/20261124_agap2-italia_424a5b5757064dbd8f402b1b41e106b2/) | [Senior software engineer- PHP](../registry/jobs/20261124_agap2-italia_424a5b5757064dbd8f402b1b41e106b2/job.md) | Naples, Campania, Italy | Linkedin | Found | 2026-11-24 | [Linkedin](https://www.linkedin.com/jobs/view/4492604258/) | — | — | — | — | — |
 | 2026-11-23 | [Confitech Dienstleistungs GmbH](../registry/jobs/20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a/) | [PHP Engineer](../registry/jobs/20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-23 | [Djinni](https://djinni.co/jobs/859402-php-engineer/) | — | — | — | — | — |
 | 2026-11-23 | [Payward](../registry/jobs/20261123_payward_7afa86d2a0ed4373b9a58157e338d944/) | [Go Developer](../registry/jobs/20261123_payward_7afa86d2a0ed4373b9a58157e338d944/job.md) | Worldwide | Djinni | Found | 2026-11-23 | [Djinni](https://djinni.co/jobs/859359-go-developer/) | — | — | — | — | — |
