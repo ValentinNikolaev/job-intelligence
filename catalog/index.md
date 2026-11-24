@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 64
+Total vacancies: 65
 
-- Found: 25
+- Found: 26
 - Applied: 35
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 64
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-24 | [agap2 Italia](../registry/jobs/20261124_agap2-italia_424a5b5757064dbd8f402b1b41e106b2/) | [Senior software engineer- PHP](../registry/jobs/20261124_agap2-italia_424a5b5757064dbd8f402b1b41e106b2/job.md) | Naples, Campania, Italy | Linkedin | Found | 2026-11-24 | [Linkedin](https://www.linkedin.com/jobs/view/4492604258/) | — | — | — | — | — |
 | 2026-11-23 | [Confitech Dienstleistungs GmbH](../registry/jobs/20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a/) | [PHP Engineer](../registry/jobs/20261123_confitech-dien_ac8d03c3452a4c29ac003a368e31482a/job.md) | Countries of Europe or Ukraine | Djinni | Found | 2026-11-23 | [Djinni](https://djinni.co/jobs/859402-php-engineer/) | — | — | — | — | — |
 | 2026-11-23 | [Payward](../registry/jobs/20261123_payward_7afa86d2a0ed4373b9a58157e338d944/) | [Go Developer](../registry/jobs/20261123_payward_7afa86d2a0ed4373b9a58157e338d944/job.md) | Worldwide | Djinni | Found | 2026-11-23 | [Djinni](https://djinni.co/jobs/859359-go-developer/) | — | — | — | — | — |
 | 2026-11-22 | [AirAdvisor](../registry/jobs/20261122_airadvisor_11ab3f0fcf0e40779740821579648f45/) | [PHP Laravel Full Stack Developer with Alpine.JS, JavaScript & Tailwind CSS](../registry/jobs/20261122_airadvisor_11ab3f0fcf0e40779740821579648f45/job.md) | Poland | Linkedin | Found | 2026-11-22 | [Linkedin](https://www.linkedin.com/jobs/view/4492331218/) | — | — | — | — | — |
