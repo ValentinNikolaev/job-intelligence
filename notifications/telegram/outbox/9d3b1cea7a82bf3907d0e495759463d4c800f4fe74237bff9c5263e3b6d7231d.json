@@ -1,0 +1,28 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-26T17:26:26Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Dropbox",
+      "country_codes": [],
+      "directory": "20261126_dropbox_7c9304cb37e944ee968f677c77ffd26b",
+      "score": 78,
+      "title": "Infrastructure Software Engineer, Orchestration",
+      "url": "https://weworkremotely.com/remote-jobs/dropbox-infrastructure-software-engineer-orchestration",
+      "vacancy_id": "7c9304cb-37e9-44ee-968f-677c77ffd26b"
+    },
+    {
+      "company": "Customer.io",
+      "country_codes": [],
+      "directory": "20261126_customer-io_f41d8f42b84f4cbe9238db1c379d34b2",
+      "score": 71,
+      "title": "Senior Software Engineer, Product/AI",
+      "url": "https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-product-ai",
+      "vacancy_id": "f41d8f42-b84f-4cbe-9238-db1c379d34b2"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "9d3b1cea7a82bf3907d0e495759463d4c800f4fe74237bff9c5263e3b6d7231d",
+  "schema_version": 2
+}
