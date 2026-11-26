@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "a39983730ba5a32ad7702ae6e127d2aae700c130a99ae1e5f8fd04eea3e6b855",
+      "size": 12000,
+      "snapshot": "files/application/CV_ValentinNikolaev_giraffesoftware_SeniorGolangDeveloper.docx",
+      "source": "registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/application/CV_ValentinNikolaev_giraffesoftware_SeniorGolangDeveloper.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:2026-11-26",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-11-26",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/75ac2d97-48ed-4b04-b5e1-252941c687a2/submissions/2026-11-26",
+  "submission_id": "2026-11-26",
+  "vacancy_id": "75ac2d97-48ed-4b04-b5e1-252941c687a2"
+}

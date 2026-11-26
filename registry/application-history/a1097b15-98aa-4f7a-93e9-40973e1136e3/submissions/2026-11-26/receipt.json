@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "24e1659c04fd27fdbdbee0a7c5c7e2acb586c78c94ac9e9ec6285bf909f01408",
+      "size": 12072,
+      "snapshot": "files/application/CV_ValentinNikolaev_kindgeek_PHPDeveloperSymfony.docx",
+      "source": "registry/jobs/20261126_kindgeek_a1097b1598aa4f7a93e940973e1136e3/application/CV_ValentinNikolaev_kindgeek_PHPDeveloperSymfony.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:2026-11-26",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-11-26",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/a1097b15-98aa-4f7a-93e9-40973e1136e3/submissions/2026-11-26",
+  "submission_id": "2026-11-26",
+  "vacancy_id": "a1097b15-98aa-4f7a-93e9-40973e1136e3"
+}

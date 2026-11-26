@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "sha256": "d5d6723d35d398b2914a5145a9c1478b4187edd9327df82d7df4b4ac515e40cd",
+      "size": 12098,
+      "snapshot": "files/application/CV_ValentinNikolaev_giraffesoftware_SeniorPHPDeveloper.docx",
+      "source": "registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/application/CV_ValentinNikolaev_giraffesoftware_SeniorPHPDeveloper.docx"
+    }
+  ],
+  "channel": "direct",
+  "event_id": "submission:2026-11-26",
+  "format": "compact",
+  "kind": "submission",
+  "occurred_on": "2026-11-26",
+  "positioning": "not_provided",
+  "role_family": "backend",
+  "schema_version": 1,
+  "snapshot": "registry/application-history/4aabe70c-83e8-4fbd-955a-e7c7c01157a0/submissions/2026-11-26",
+  "submission_id": "2026-11-26",
+  "vacancy_id": "4aabe70c-83e8-4fbd-955a-e7c7c01157a0"
+}
