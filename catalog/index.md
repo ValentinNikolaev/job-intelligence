@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 60
+Total vacancies: 62
 
-- Found: 15
+- Found: 17
 - Applied: 41
 - Interview: 4
 
@@ -12,6 +12,8 @@ Total vacancies: 60
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-26 | [Customer.io](../registry/jobs/20261126_customer-io_f41d8f42b84f4cbe9238db1c379d34b2/) | [Senior Software Engineer, Product/AI](../registry/jobs/20261126_customer-io_f41d8f42b84f4cbe9238db1c379d34b2/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-11-26 | [Weworkremotely](https://weworkremotely.com/remote-jobs/customer-io-senior-software-engineer-product-ai) | — | — | — | — | — |
+| 2026-11-26 | [Dropbox](../registry/jobs/20261126_dropbox_7c9304cb37e944ee968f677c77ffd26b/) | [Infrastructure Software Engineer, Orchestration](../registry/jobs/20261126_dropbox_7c9304cb37e944ee968f677c77ffd26b/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-11-26 | [Weworkremotely](https://weworkremotely.com/remote-jobs/dropbox-infrastructure-software-engineer-orchestration) | — | — | — | — | — |
 | 2026-11-26 | [Giraffe Software](../registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/) | [Senior PHP Developer](../registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/job.md) | — | Manual | Applied | 2026-11-26 | [Manual](https://giraffesoftware.hurma.work/public-vacancies/81) | — | [MD](../registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/application/cv.md) / [DOCX](../registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/application/cv.docx) | — | [Open](../registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/application/analysis.md) | [Open](../registry/jobs/20261126_giraffe-softwa_4aabe70c83e84fbd955ae7c7c01157a0/application/interview-preparation.md) |
 | 2026-11-26 | [Giraffe Software](../registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/) | [Senior Golang Developer](../registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/job.md) | — | Manual | Applied | 2026-11-26 | [Manual](https://giraffesoftware.hurma.work/public-vacancies/78) | — | [MD](../registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/application/cv.md) / [DOCX](../registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/application/cv.docx) | — | [Open](../registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/application/analysis.md) | [Open](../registry/jobs/20261126_giraffe-softwa_75ac2d9748ed4b04b5e1252941c687a2/application/interview-preparation.md) |
 | 2026-11-26 | [Cin7](../registry/jobs/20261126_cin7_81aa5ac0e58a4fce8d0a0d3174972ac7/) | [Senior PHP/Python Developer](../registry/jobs/20261126_cin7_81aa5ac0e58a4fce8d0a0d3174972ac7/job.md) | Poland | Linkedin | Found | 2026-11-26 | [Linkedin](https://www.linkedin.com/jobs/view/4494410499/) | — | — | — | — | — |
