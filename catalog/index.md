@@ -2,9 +2,9 @@
 
 # Vacancy Catalog
 
-Total vacancies: 58
+Total vacancies: 59
 
-- Found: 16
+- Found: 17
 - Applied: 38
 - Interview: 4
 
@@ -12,6 +12,7 @@ Total vacancies: 58
 
 | Date | Company | Vacancy | Location | Source | Status | Changed | External | Company research | CV | Cover letter | Analysis | Interview |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-11-26 | [Cin7](../registry/jobs/20261126_cin7_81aa5ac0e58a4fce8d0a0d3174972ac7/) | [Senior PHP/Python Developer](../registry/jobs/20261126_cin7_81aa5ac0e58a4fce8d0a0d3174972ac7/job.md) | Poland | Linkedin | Found | 2026-11-26 | [Linkedin](https://www.linkedin.com/jobs/view/4494410499/) | — | — | — | — | — |
 | 2026-11-26 | [Instacart](../registry/jobs/20261126_instacart_4d413d058699431aac2dd8a9971bb3c6/) | [Detection Engineer II](../registry/jobs/20261126_instacart_4d413d058699431aac2dd8a9971bb3c6/job.md) | Anywhere in the World | Weworkremotely | Found | 2026-11-26 | [Weworkremotely](https://weworkremotely.com/remote-jobs/instacart-detection-engineer-ii) | — | — | — | — | — |
 | 2026-11-26 | [Kindgeek](../registry/jobs/20261126_kindgeek_a1097b1598aa4f7a93e940973e1136e3/) | [PHP Developer (Symfony)](../registry/jobs/20261126_kindgeek_a1097b1598aa4f7a93e940973e1136e3/job.md) | Львів, віддалено | Dou | Found | 2026-11-26 | [Dou](https://jobs.dou.ua/companies/kindgeek/vacancies/381104/) | [Open](../registry/jobs/20261126_kindgeek_a1097b1598aa4f7a93e940973e1136e3/company.md) | — | — | — | — |
 | 2026-11-25 | [Samsara](../registry/jobs/20261125_samsara_8f024c1a99f54221ac34f84c662c1f1b/) | [Sr. Software Engineer II / Tech lead, Agentic Platform (Poland, Remote, B2B)](../registry/jobs/20261125_samsara_8f024c1a99f54221ac34f84c662c1f1b/job.md) | Poland | Jobicy | Found | 2026-11-25 | [Jobicy](https://jobicy.com/jobs/163874-sr-software-engineer-ii-tech-lead-agentic-platform-poland-remote-b2b-2) | — | — | — | — | — |
