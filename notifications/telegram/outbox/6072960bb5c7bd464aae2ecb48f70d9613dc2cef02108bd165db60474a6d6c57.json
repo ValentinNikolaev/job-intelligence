@@ -1,0 +1,32 @@
+{
+  "channel": "telegram",
+  "created_at": "2026-11-27T17:30:01Z",
+  "initiator": "job-intelligence-batch-vacancy-analysis",
+  "items": [
+    {
+      "company": "Teamvoy",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261127_teamvoy_1dc0e3578ead413e9c66d03e7fd84ca2",
+      "score": 82,
+      "title": "Middle Backend Developer (Golang)",
+      "url": "https://jobs.dou.ua/companies/teamvoy/vacancies/381249/",
+      "vacancy_id": "1dc0e357-8ead-413e-9c66-d03e7fd84ca2"
+    },
+    {
+      "company": "N-iX",
+      "country_codes": [
+        "UA"
+      ],
+      "directory": "20261127_n-ix_db3559f2b49748229b708e97ae6294a0",
+      "score": 76,
+      "title": "Senior PHP Full-Stack Engineer (3 months involvement) (#6095)",
+      "url": "https://jobs.dou.ua/companies/n-ix/vacancies/374556/",
+      "vacancy_id": "db3559f2-b497-4822-9b70-8e97ae6294a0"
+    }
+  ],
+  "minimum_score": 65,
+  "notification_id": "6072960bb5c7bd464aae2ecb48f70d9613dc2cef02108bd165db60474a6d6c57",
+  "schema_version": 2
+}
